@@ -1,0 +1,2537 @@
+{
+  "topic": {
+    "id": "tieng-viet-1-van-va-tieng",
+    "subjectId": "tieng-viet",
+    "grade": 1,
+    "slug": "van-va-tieng",
+    "name": "Vần và tiếng",
+    "sortOrder": 2
+  },
+  "questions": [
+    {
+      "id": "tieng-viet-1-van-va-tieng-001",
+      "type": "single_choice",
+      "prompt": "Tiếng 'bà' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "a"
+        },
+        {
+          "key": "b",
+          "text": "an"
+        },
+        {
+          "key": "c",
+          "text": "iên"
+        },
+        {
+          "key": "d",
+          "text": "ây"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Tiếng 'bà' có vần 'a'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-002",
+      "type": "single_choice",
+      "prompt": "Tiếng 'mẹ' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "im"
+        },
+        {
+          "key": "b",
+          "text": "e"
+        },
+        {
+          "key": "c",
+          "text": "en"
+        },
+        {
+          "key": "d",
+          "text": "oa"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Tiếng 'mẹ' có vần 'e'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-003",
+      "type": "single_choice",
+      "prompt": "Tiếng 'cô' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ương"
+        },
+        {
+          "key": "b",
+          "text": "ach"
+        },
+        {
+          "key": "c",
+          "text": "ô"
+        },
+        {
+          "key": "d",
+          "text": "ưa"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Tiếng 'cô' có vần 'ô'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-004",
+      "type": "single_choice",
+      "prompt": "Tiếng 'cây' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "an"
+        },
+        {
+          "key": "b",
+          "text": "ê"
+        },
+        {
+          "key": "c",
+          "text": "iên"
+        },
+        {
+          "key": "d",
+          "text": "ây"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Tiếng 'cây' có vần 'ây'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-005",
+      "type": "single_choice",
+      "prompt": "Tiếng 'hoa' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "oa"
+        },
+        {
+          "key": "b",
+          "text": "en"
+        },
+        {
+          "key": "c",
+          "text": "u"
+        },
+        {
+          "key": "d",
+          "text": "im"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Tiếng 'hoa' có vần 'oa'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-006",
+      "type": "single_choice",
+      "prompt": "Tiếng 'sách' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ưa"
+        },
+        {
+          "key": "b",
+          "text": "ach"
+        },
+        {
+          "key": "c",
+          "text": "ư"
+        },
+        {
+          "key": "d",
+          "text": "ương"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Tiếng 'sách' có vần 'ach'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-007",
+      "type": "single_choice",
+      "prompt": "Tiếng 'bàn' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ông"
+        },
+        {
+          "key": "b",
+          "text": "ê"
+        },
+        {
+          "key": "c",
+          "text": "an"
+        },
+        {
+          "key": "d",
+          "text": "iên"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Tiếng 'bàn' có vần 'an'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-008",
+      "type": "single_choice",
+      "prompt": "Tiếng 'chim' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "anh"
+        },
+        {
+          "key": "b",
+          "text": "en"
+        },
+        {
+          "key": "c",
+          "text": "u"
+        },
+        {
+          "key": "d",
+          "text": "im"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Tiếng 'chim' có vần 'im'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-009",
+      "type": "single_choice",
+      "prompt": "Tiếng 'trường' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ương"
+        },
+        {
+          "key": "b",
+          "text": "ưa"
+        },
+        {
+          "key": "c",
+          "text": "a"
+        },
+        {
+          "key": "d",
+          "text": "ư"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Tiếng 'trường' có vần 'ương'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-010",
+      "type": "single_choice",
+      "prompt": "Tiếng 'biển' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "e"
+        },
+        {
+          "key": "b",
+          "text": "iên"
+        },
+        {
+          "key": "c",
+          "text": "ê"
+        },
+        {
+          "key": "d",
+          "text": "ông"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Tiếng 'biển' có vần 'iên'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-011",
+      "type": "single_choice",
+      "prompt": "Tiếng 'đèn' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "u"
+        },
+        {
+          "key": "b",
+          "text": "ô"
+        },
+        {
+          "key": "c",
+          "text": "en"
+        },
+        {
+          "key": "d",
+          "text": "anh"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Tiếng 'đèn' có vần 'en'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-012",
+      "type": "single_choice",
+      "prompt": "Tiếng 'mưa' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ư"
+        },
+        {
+          "key": "b",
+          "text": "ây"
+        },
+        {
+          "key": "c",
+          "text": "a"
+        },
+        {
+          "key": "d",
+          "text": "ưa"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Tiếng 'mưa' có vần 'ưa'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-013",
+      "type": "single_choice",
+      "prompt": "Tiếng 'cá' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "a"
+        },
+        {
+          "key": "b",
+          "text": "ê"
+        },
+        {
+          "key": "c",
+          "text": "ông"
+        },
+        {
+          "key": "d",
+          "text": "e"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Tiếng 'cá' có vần 'a'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-014",
+      "type": "single_choice",
+      "prompt": "Tiếng 'nhà' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "u"
+        },
+        {
+          "key": "b",
+          "text": "a"
+        },
+        {
+          "key": "c",
+          "text": "ô"
+        },
+        {
+          "key": "d",
+          "text": "anh"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Tiếng 'nhà' có vần 'a'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-015",
+      "type": "single_choice",
+      "prompt": "Tiếng 'lá' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "an"
+        },
+        {
+          "key": "b",
+          "text": "ư"
+        },
+        {
+          "key": "c",
+          "text": "a"
+        },
+        {
+          "key": "d",
+          "text": "ây"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Tiếng 'lá' có vần 'a'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-016",
+      "type": "single_choice",
+      "prompt": "Tiếng 'xe' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ông"
+        },
+        {
+          "key": "b",
+          "text": "im"
+        },
+        {
+          "key": "c",
+          "text": "oa"
+        },
+        {
+          "key": "d",
+          "text": "e"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Tiếng 'xe' có vần 'e'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-017",
+      "type": "single_choice",
+      "prompt": "Tiếng 'ghế' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ê"
+        },
+        {
+          "key": "b",
+          "text": "anh"
+        },
+        {
+          "key": "c",
+          "text": "ô"
+        },
+        {
+          "key": "d",
+          "text": "ach"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Tiếng 'ghế' có vần 'ê'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-018",
+      "type": "single_choice",
+      "prompt": "Tiếng 'tủ' có vần là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "a"
+        },
+        {
+          "key": "b",
+          "text": "u"
+        },
+        {
+          "key": "c",
+          "text": "ây"
+        },
+        {
+          "key": "d",
+          "text": "an"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Tiếng 'tủ' có vần 'u'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-019",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'a'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mẹ"
+        },
+        {
+          "key": "b",
+          "text": "chim"
+        },
+        {
+          "key": "c",
+          "text": "cá"
+        },
+        {
+          "key": "d",
+          "text": "hoa"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'cá' có vần 'a'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-020",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'e'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bàn"
+        },
+        {
+          "key": "b",
+          "text": "bánh"
+        },
+        {
+          "key": "c",
+          "text": "cây"
+        },
+        {
+          "key": "d",
+          "text": "mẹ"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'mẹ' có vần 'e'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-021",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'ê'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ghế"
+        },
+        {
+          "key": "b",
+          "text": "cô"
+        },
+        {
+          "key": "c",
+          "text": "sách"
+        },
+        {
+          "key": "d",
+          "text": "bánh"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'ghế' có vần 'ê'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-022",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'i'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cô"
+        },
+        {
+          "key": "b",
+          "text": "bi"
+        },
+        {
+          "key": "c",
+          "text": "sách"
+        },
+        {
+          "key": "d",
+          "text": "bánh"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'bi' có vần 'i'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-023",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'o'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cây"
+        },
+        {
+          "key": "b",
+          "text": "bàn"
+        },
+        {
+          "key": "c",
+          "text": "cò"
+        },
+        {
+          "key": "d",
+          "text": "bà"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'cò' có vần 'o'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-024",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'ô'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cây"
+        },
+        {
+          "key": "b",
+          "text": "bàn"
+        },
+        {
+          "key": "c",
+          "text": "biển"
+        },
+        {
+          "key": "d",
+          "text": "cô"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'cô' có vần 'ô'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-025",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'ơ'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mơ"
+        },
+        {
+          "key": "b",
+          "text": "trường"
+        },
+        {
+          "key": "c",
+          "text": "cô"
+        },
+        {
+          "key": "d",
+          "text": "sách"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'mơ' có vần 'ơ'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-026",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'u'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "hoa"
+        },
+        {
+          "key": "b",
+          "text": "tủ"
+        },
+        {
+          "key": "c",
+          "text": "chim"
+        },
+        {
+          "key": "d",
+          "text": "đèn"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'tủ' có vần 'u'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-027",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'ư'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "trường"
+        },
+        {
+          "key": "b",
+          "text": "sách"
+        },
+        {
+          "key": "c",
+          "text": "thư"
+        },
+        {
+          "key": "d",
+          "text": "mưa"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'thư' có vần 'ư'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-028",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'ay'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "trường"
+        },
+        {
+          "key": "b",
+          "text": "mưa"
+        },
+        {
+          "key": "c",
+          "text": "sách"
+        },
+        {
+          "key": "d",
+          "text": "tay"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'tay' có vần 'ay'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-029",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'ây'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cây"
+        },
+        {
+          "key": "b",
+          "text": "cá"
+        },
+        {
+          "key": "c",
+          "text": "biển"
+        },
+        {
+          "key": "d",
+          "text": "xe"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'cây' có vần 'ây'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-030",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'ao'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "đèn"
+        },
+        {
+          "key": "b",
+          "text": "áo"
+        },
+        {
+          "key": "c",
+          "text": "chim"
+        },
+        {
+          "key": "d",
+          "text": "nhà"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'áo' có vần 'ao'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-031",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'an'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nhà"
+        },
+        {
+          "key": "b",
+          "text": "đèn"
+        },
+        {
+          "key": "c",
+          "text": "bàn"
+        },
+        {
+          "key": "d",
+          "text": "ghế"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'bàn' có vần 'an'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-032",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'ach'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mưa"
+        },
+        {
+          "key": "b",
+          "text": "lá"
+        },
+        {
+          "key": "c",
+          "text": "tủ"
+        },
+        {
+          "key": "d",
+          "text": "sách"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'sách' có vần 'ach'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-033",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'ương'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "trường"
+        },
+        {
+          "key": "b",
+          "text": "xe"
+        },
+        {
+          "key": "c",
+          "text": "cá"
+        },
+        {
+          "key": "d",
+          "text": "thư"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'trường' có vần 'ương'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-034",
+      "type": "single_choice",
+      "prompt": "Tiếng nào dưới đây có vần 'ông'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "xe"
+        },
+        {
+          "key": "b",
+          "text": "sông"
+        },
+        {
+          "key": "c",
+          "text": "thư"
+        },
+        {
+          "key": "d",
+          "text": "cá"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'sông' có vần 'ông'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-035",
+      "type": "single_choice",
+      "prompt": "Ghép âm đầu 'b' với vần 'a' được tiếng nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ga"
+        },
+        {
+          "key": "b",
+          "text": "meo"
+        },
+        {
+          "key": "c",
+          "text": "ba"
+        },
+        {
+          "key": "d",
+          "text": "đen"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Ghép 'b' với 'a' được 'ba'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-036",
+      "type": "single_choice",
+      "prompt": "Ghép âm đầu 'c' với vần 'a' được tiếng nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ga"
+        },
+        {
+          "key": "b",
+          "text": "non"
+        },
+        {
+          "key": "c",
+          "text": "hoa"
+        },
+        {
+          "key": "d",
+          "text": "ca"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Ghép 'c' với 'a' được 'ca'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-037",
+      "type": "single_choice",
+      "prompt": "Ghép âm đầu 'd' với vần 'ê' được tiếng nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "dê"
+        },
+        {
+          "key": "b",
+          "text": "la"
+        },
+        {
+          "key": "c",
+          "text": "hoa"
+        },
+        {
+          "key": "d",
+          "text": "tay"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Ghép 'd' với 'ê' được 'dê'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-038",
+      "type": "single_choice",
+      "prompt": "Ghép âm đầu 'đ' với vần 'en' được tiếng nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ba"
+        },
+        {
+          "key": "b",
+          "text": "đen"
+        },
+        {
+          "key": "c",
+          "text": "meo"
+        },
+        {
+          "key": "d",
+          "text": "la"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Ghép 'đ' với 'en' được 'đen'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-039",
+      "type": "single_choice",
+      "prompt": "Ghép âm đầu 'g' với vần 'a' được tiếng nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "meo"
+        },
+        {
+          "key": "b",
+          "text": "non"
+        },
+        {
+          "key": "c",
+          "text": "ga"
+        },
+        {
+          "key": "d",
+          "text": "ca"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Ghép 'g' với 'a' được 'ga'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-040",
+      "type": "single_choice",
+      "prompt": "Ghép âm đầu 'h' với vần 'oa' được tiếng nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "tay"
+        },
+        {
+          "key": "b",
+          "text": "dê"
+        },
+        {
+          "key": "c",
+          "text": "non"
+        },
+        {
+          "key": "d",
+          "text": "hoa"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Ghép 'h' với 'oa' được 'hoa'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-041",
+      "type": "single_choice",
+      "prompt": "Ghép âm đầu 'l' với vần 'a' được tiếng nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "la"
+        },
+        {
+          "key": "b",
+          "text": "đen"
+        },
+        {
+          "key": "c",
+          "text": "ba"
+        },
+        {
+          "key": "d",
+          "text": "tay"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Ghép 'l' với 'a' được 'la'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-042",
+      "type": "single_choice",
+      "prompt": "Ghép âm đầu 'm' với vần 'eo' được tiếng nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ca"
+        },
+        {
+          "key": "b",
+          "text": "meo"
+        },
+        {
+          "key": "c",
+          "text": "ga"
+        },
+        {
+          "key": "d",
+          "text": "ba"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Ghép 'm' với 'eo' được 'meo'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-043",
+      "type": "single_choice",
+      "prompt": "Ghép âm đầu 'n' với vần 'on' được tiếng nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "dê"
+        },
+        {
+          "key": "b",
+          "text": "ca"
+        },
+        {
+          "key": "c",
+          "text": "non"
+        },
+        {
+          "key": "d",
+          "text": "hoa"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Ghép 'n' với 'on' được 'non'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-044",
+      "type": "single_choice",
+      "prompt": "Ghép âm đầu 't' với vần 'ay' được tiếng nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "dê"
+        },
+        {
+          "key": "b",
+          "text": "đen"
+        },
+        {
+          "key": "c",
+          "text": "la"
+        },
+        {
+          "key": "d",
+          "text": "tay"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Ghép 't' với 'ay' được 'tay'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-045",
+      "type": "single_choice",
+      "prompt": "Trong các tiếng sau, tiếng nào không có âm đầu: ăn, nhà, cá, mèo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ăn"
+        },
+        {
+          "key": "b",
+          "text": "cá"
+        },
+        {
+          "key": "c",
+          "text": "mèo"
+        },
+        {
+          "key": "d",
+          "text": "nhà"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'ăn' chỉ gồm vần, không có âm đầu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-046",
+      "type": "single_choice",
+      "prompt": "Trong các tiếng sau, tiếng nào không có âm đầu: uống, bàn, hoa, chim?",
+      "options": [
+        {
+          "key": "a",
+          "text": "hoa"
+        },
+        {
+          "key": "b",
+          "text": "uống"
+        },
+        {
+          "key": "c",
+          "text": "bàn"
+        },
+        {
+          "key": "d",
+          "text": "chim"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'uống' chỉ gồm vần, không có âm đầu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-047",
+      "type": "single_choice",
+      "prompt": "Trong các tiếng sau, tiếng nào không có âm đầu: em, bố, mẹ, cô?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mẹ"
+        },
+        {
+          "key": "b",
+          "text": "cô"
+        },
+        {
+          "key": "c",
+          "text": "em"
+        },
+        {
+          "key": "d",
+          "text": "bố"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'em' chỉ gồm vần, không có âm đầu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-048",
+      "type": "single_choice",
+      "prompt": "Trong các tiếng sau, tiếng nào không có âm đầu: ai, Lan, Mai, Nam?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Mai"
+        },
+        {
+          "key": "b",
+          "text": "Lan"
+        },
+        {
+          "key": "c",
+          "text": "Nam"
+        },
+        {
+          "key": "d",
+          "text": "ai"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'ai' chỉ gồm vần, không có âm đầu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-049",
+      "type": "single_choice",
+      "prompt": "Trong các tiếng sau, tiếng nào không có âm đầu: ong, gà, vịt, cá?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ong"
+        },
+        {
+          "key": "b",
+          "text": "cá"
+        },
+        {
+          "key": "c",
+          "text": "gà"
+        },
+        {
+          "key": "d",
+          "text": "vịt"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'ong' chỉ gồm vần, không có âm đầu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-050",
+      "type": "single_choice",
+      "prompt": "Trong các tiếng sau, tiếng nào không có âm đầu: ôm, tôm, cua, bò?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cua"
+        },
+        {
+          "key": "b",
+          "text": "ôm"
+        },
+        {
+          "key": "c",
+          "text": "bò"
+        },
+        {
+          "key": "d",
+          "text": "tôm"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'ôm' chỉ gồm vần, không có âm đầu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-051",
+      "type": "single_choice",
+      "prompt": "Trong các tiếng sau, tiếng nào không có âm đầu: ước, mưa, nắng, gió?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nắng"
+        },
+        {
+          "key": "b",
+          "text": "mưa"
+        },
+        {
+          "key": "c",
+          "text": "ước"
+        },
+        {
+          "key": "d",
+          "text": "gió"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'ước' chỉ gồm vần, không có âm đầu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-052",
+      "type": "single_choice",
+      "prompt": "Trong các tiếng sau, tiếng nào không có âm đầu: yêu, thương, nhớ, quý?",
+      "options": [
+        {
+          "key": "a",
+          "text": "thương"
+        },
+        {
+          "key": "b",
+          "text": "nhớ"
+        },
+        {
+          "key": "c",
+          "text": "quý"
+        },
+        {
+          "key": "d",
+          "text": "yêu"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'yêu' chỉ gồm vần, không có âm đầu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-053",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'a' trong nhóm: bà, mẹ, cá, cô.",
+      "options": [
+        {
+          "key": "a",
+          "text": "mẹ"
+        },
+        {
+          "key": "b",
+          "text": "cá"
+        },
+        {
+          "key": "c",
+          "text": "bà"
+        },
+        {
+          "key": "d",
+          "text": "cô"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các tiếng bà, cá có vần 'a'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-054",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'e' trong nhóm: mẹ, bà, xe, cô.",
+      "options": [
+        {
+          "key": "a",
+          "text": "bà"
+        },
+        {
+          "key": "b",
+          "text": "cô"
+        },
+        {
+          "key": "c",
+          "text": "mẹ"
+        },
+        {
+          "key": "d",
+          "text": "xe"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng mẹ, xe có vần 'e'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-055",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'ê' trong nhóm: ghế, cá, kê, tủ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "kê"
+        },
+        {
+          "key": "b",
+          "text": "tủ"
+        },
+        {
+          "key": "c",
+          "text": "ghế"
+        },
+        {
+          "key": "d",
+          "text": "cá"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các tiếng ghế, kê có vần 'ê'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-056",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'i' trong nhóm: bi, hoa, đi, mưa.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hoa"
+        },
+        {
+          "key": "b",
+          "text": "mưa"
+        },
+        {
+          "key": "c",
+          "text": "bi"
+        },
+        {
+          "key": "d",
+          "text": "đi"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng bi, đi có vần 'i'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-057",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'o' trong nhóm: cò, cây, to, thư.",
+      "options": [
+        {
+          "key": "a",
+          "text": "thư"
+        },
+        {
+          "key": "b",
+          "text": "cây"
+        },
+        {
+          "key": "c",
+          "text": "to"
+        },
+        {
+          "key": "d",
+          "text": "cò"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng cò, to có vần 'o'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-058",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'ô' trong nhóm: cô, bà, hô, xe.",
+      "options": [
+        {
+          "key": "a",
+          "text": "bà"
+        },
+        {
+          "key": "b",
+          "text": "hô"
+        },
+        {
+          "key": "c",
+          "text": "cô"
+        },
+        {
+          "key": "d",
+          "text": "xe"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các tiếng cô, hô có vần 'ô'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-059",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'ơ' trong nhóm: mơ, cá, chờ, tủ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "chờ"
+        },
+        {
+          "key": "b",
+          "text": "tủ"
+        },
+        {
+          "key": "c",
+          "text": "mơ"
+        },
+        {
+          "key": "d",
+          "text": "cá"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các tiếng mơ, chờ có vần 'ơ'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-060",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'u' trong nhóm: tủ, mẹ, thu, hoa.",
+      "options": [
+        {
+          "key": "a",
+          "text": "tủ"
+        },
+        {
+          "key": "b",
+          "text": "hoa"
+        },
+        {
+          "key": "c",
+          "text": "mẹ"
+        },
+        {
+          "key": "d",
+          "text": "thu"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng tủ, thu có vần 'u'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-061",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'ư' trong nhóm: thư, cô, hư, bàn.",
+      "options": [
+        {
+          "key": "a",
+          "text": "cô"
+        },
+        {
+          "key": "b",
+          "text": "bàn"
+        },
+        {
+          "key": "c",
+          "text": "thư"
+        },
+        {
+          "key": "d",
+          "text": "hư"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng thư, hư có vần 'ư'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-062",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'ay' trong nhóm: tay, mưa, bay, sông.",
+      "options": [
+        {
+          "key": "a",
+          "text": "bay"
+        },
+        {
+          "key": "b",
+          "text": "tay"
+        },
+        {
+          "key": "c",
+          "text": "mưa"
+        },
+        {
+          "key": "d",
+          "text": "sông"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các tiếng tay, bay có vần 'ay'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-063",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'ây' trong nhóm: cây, cá, mây, nhà.",
+      "options": [
+        {
+          "key": "a",
+          "text": "nhà"
+        },
+        {
+          "key": "b",
+          "text": "cây"
+        },
+        {
+          "key": "c",
+          "text": "mây"
+        },
+        {
+          "key": "d",
+          "text": "cá"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các tiếng cây, mây có vần 'ây'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-064",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'ao' trong nhóm: áo, bàn, sao, ghế.",
+      "options": [
+        {
+          "key": "a",
+          "text": "sao"
+        },
+        {
+          "key": "b",
+          "text": "ghế"
+        },
+        {
+          "key": "c",
+          "text": "bàn"
+        },
+        {
+          "key": "d",
+          "text": "áo"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng áo, sao có vần 'ao'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-065",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'an' trong nhóm: bàn, cô, lan, mưa.",
+      "options": [
+        {
+          "key": "a",
+          "text": "cô"
+        },
+        {
+          "key": "b",
+          "text": "mưa"
+        },
+        {
+          "key": "c",
+          "text": "bàn"
+        },
+        {
+          "key": "d",
+          "text": "lan"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng bàn, lan có vần 'an'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-066",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'ach' trong nhóm: sách, hoa, sạch, chim.",
+      "options": [
+        {
+          "key": "a",
+          "text": "chim"
+        },
+        {
+          "key": "b",
+          "text": "sách"
+        },
+        {
+          "key": "c",
+          "text": "sạch"
+        },
+        {
+          "key": "d",
+          "text": "hoa"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các tiếng sách, sạch có vần 'ach'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-067",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'ương' trong nhóm: trường, cá, hương, tủ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hương"
+        },
+        {
+          "key": "b",
+          "text": "tủ"
+        },
+        {
+          "key": "c",
+          "text": "trường"
+        },
+        {
+          "key": "d",
+          "text": "cá"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các tiếng trường, hương có vần 'ương'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-068",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'ông' trong nhóm: sông, mẹ, hồng, lá.",
+      "options": [
+        {
+          "key": "a",
+          "text": "lá"
+        },
+        {
+          "key": "b",
+          "text": "hồng"
+        },
+        {
+          "key": "c",
+          "text": "sông"
+        },
+        {
+          "key": "d",
+          "text": "mẹ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các tiếng sông, hồng có vần 'ông'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-069",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng có vần 'iên' trong nhóm: biển, bà, tiên, cây.",
+      "options": [
+        {
+          "key": "a",
+          "text": "cây"
+        },
+        {
+          "key": "b",
+          "text": "bà"
+        },
+        {
+          "key": "c",
+          "text": "tiên"
+        },
+        {
+          "key": "d",
+          "text": "biển"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng biển, tiên có vần 'iên'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-070",
+      "type": "true_false",
+      "prompt": "Tiếng 'bà' có vần 'a'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'bà' có vần 'a'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-071",
+      "type": "true_false",
+      "prompt": "Tiếng 'mẹ' có vần 'ô'.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'mẹ' có vần 'e'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-072",
+      "type": "true_false",
+      "prompt": "Tiếng 'cô' có vần 'ô'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'cô' có vần 'ô'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-073",
+      "type": "true_false",
+      "prompt": "Tiếng 'cây' có vần 'oa'.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'cây' có vần 'ây'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-074",
+      "type": "true_false",
+      "prompt": "Tiếng 'hoa' có vần 'oa'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'hoa' có vần 'oa'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-075",
+      "type": "true_false",
+      "prompt": "Tiếng 'sách' có vần 'an'.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'sách' có vần 'ach'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-076",
+      "type": "true_false",
+      "prompt": "Tiếng 'bàn' có vần 'an'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'bàn' có vần 'an'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-077",
+      "type": "true_false",
+      "prompt": "Tiếng 'chim' có vần 'ương'.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'chim' có vần 'im'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-078",
+      "type": "true_false",
+      "prompt": "Tiếng 'trường' có vần 'ương'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'trường' có vần 'ương'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-079",
+      "type": "true_false",
+      "prompt": "Tiếng 'biển' có vần 'en'.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'biển' có vần 'iên'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-080",
+      "type": "true_false",
+      "prompt": "Tiếng 'đèn' có vần 'en'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'đèn' có vần 'en'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-081",
+      "type": "true_false",
+      "prompt": "Tiếng 'mưa' có vần 'ê'.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'mưa' có vần 'ưa'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-082",
+      "type": "true_false",
+      "prompt": "Tiếng 'cá' có vần 'a'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'cá' có vần 'a'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-083",
+      "type": "true_false",
+      "prompt": "Tiếng 'nhà' có vần 'ư'.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'nhà' có vần 'a'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-084",
+      "type": "true_false",
+      "prompt": "Tiếng 'lá' có vần 'a'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'lá' có vần 'a'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-085",
+      "type": "true_false",
+      "prompt": "Tiếng 'xe' có vần 'anh'.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'xe' có vần 'e'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-086",
+      "type": "true_false",
+      "prompt": "Tiếng 'ghế' có vần 'ê'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'ghế' có vần 'ê'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-087",
+      "type": "fill_in",
+      "prompt": "Tiếng 'bà' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "a"
+        ]
+      },
+      "explanation": "Tiếng 'bà' có vần 'a'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-088",
+      "type": "fill_in",
+      "prompt": "Tiếng 'mẹ' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "e"
+        ]
+      },
+      "explanation": "Tiếng 'mẹ' có vần 'e'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-089",
+      "type": "fill_in",
+      "prompt": "Tiếng 'cô' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "ô"
+        ]
+      },
+      "explanation": "Tiếng 'cô' có vần 'ô'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-090",
+      "type": "fill_in",
+      "prompt": "Tiếng 'cây' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "ây"
+        ]
+      },
+      "explanation": "Tiếng 'cây' có vần 'ây'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-091",
+      "type": "fill_in",
+      "prompt": "Tiếng 'hoa' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "oa"
+        ]
+      },
+      "explanation": "Tiếng 'hoa' có vần 'oa'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-092",
+      "type": "fill_in",
+      "prompt": "Tiếng 'sách' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "ach"
+        ]
+      },
+      "explanation": "Tiếng 'sách' có vần 'ach'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-093",
+      "type": "fill_in",
+      "prompt": "Tiếng 'bàn' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "an"
+        ]
+      },
+      "explanation": "Tiếng 'bàn' có vần 'an'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-094",
+      "type": "fill_in",
+      "prompt": "Tiếng 'chim' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "im"
+        ]
+      },
+      "explanation": "Tiếng 'chim' có vần 'im'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-095",
+      "type": "fill_in",
+      "prompt": "Tiếng 'trường' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "ương"
+        ]
+      },
+      "explanation": "Tiếng 'trường' có vần 'ương'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-096",
+      "type": "fill_in",
+      "prompt": "Tiếng 'biển' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "iên"
+        ]
+      },
+      "explanation": "Tiếng 'biển' có vần 'iên'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-097",
+      "type": "fill_in",
+      "prompt": "Tiếng 'đèn' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "en"
+        ]
+      },
+      "explanation": "Tiếng 'đèn' có vần 'en'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-098",
+      "type": "fill_in",
+      "prompt": "Tiếng 'mưa' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "ưa"
+        ]
+      },
+      "explanation": "Tiếng 'mưa' có vần 'ưa'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-099",
+      "type": "fill_in",
+      "prompt": "Tiếng 'cá' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "a"
+        ]
+      },
+      "explanation": "Tiếng 'cá' có vần 'a'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-100",
+      "type": "fill_in",
+      "prompt": "Tiếng 'nhà' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "a"
+        ]
+      },
+      "explanation": "Tiếng 'nhà' có vần 'a'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-101",
+      "type": "fill_in",
+      "prompt": "Tiếng 'lá' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "a"
+        ]
+      },
+      "explanation": "Tiếng 'lá' có vần 'a'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-102",
+      "type": "fill_in",
+      "prompt": "Tiếng 'xe' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "e"
+        ]
+      },
+      "explanation": "Tiếng 'xe' có vần 'e'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-103",
+      "type": "fill_in",
+      "prompt": "Tiếng 'ghế' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "ê"
+        ]
+      },
+      "explanation": "Tiếng 'ghế' có vần 'ê'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-104",
+      "type": "fill_in",
+      "prompt": "Tiếng 'tủ' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "u"
+        ]
+      },
+      "explanation": "Tiếng 'tủ' có vần 'u'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-105",
+      "type": "fill_in",
+      "prompt": "Tiếng 'thư' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "ư"
+        ]
+      },
+      "explanation": "Tiếng 'thư' có vần 'ư'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-106",
+      "type": "fill_in",
+      "prompt": "Tiếng 'mây' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "ây"
+        ]
+      },
+      "explanation": "Tiếng 'mây' có vần 'ây'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-107",
+      "type": "fill_in",
+      "prompt": "Tiếng 'sông' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "ông"
+        ]
+      },
+      "explanation": "Tiếng 'sông' có vần 'ông'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-van-va-tieng-108",
+      "type": "fill_in",
+      "prompt": "Tiếng 'bánh' có vần là ___.",
+      "answer": {
+        "accepted": [
+          "anh"
+        ]
+      },
+      "explanation": "Tiếng 'bánh' có vần 'anh'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

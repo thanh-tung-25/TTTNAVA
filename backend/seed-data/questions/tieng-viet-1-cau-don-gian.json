@@ -1,0 +1,2537 @@
+{
+  "topic": {
+    "id": "tieng-viet-1-cau-don-gian",
+    "subjectId": "tieng-viet",
+    "grade": 1,
+    "slug": "cau-don-gian",
+    "name": "Câu đơn giản",
+    "sortOrder": 4
+  },
+  "questions": [
+    {
+      "id": "tieng-viet-1-cau-don-gian-001",
+      "type": "single_choice",
+      "prompt": "Chọn từ thích hợp điền vào chỗ trống: \"Mẹ ___ cơm trong bếp.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "nấu"
+        },
+        {
+          "key": "b",
+          "text": "quét"
+        },
+        {
+          "key": "c",
+          "text": "tưới"
+        },
+        {
+          "key": "d",
+          "text": "đọc"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"Mẹ nấu cơm trong bếp.\"",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-002",
+      "type": "single_choice",
+      "prompt": "Chọn từ thích hợp điền vào chỗ trống: \"Bé ___ răng trước khi đi ngủ.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "lau"
+        },
+        {
+          "key": "b",
+          "text": "đánh"
+        },
+        {
+          "key": "c",
+          "text": "quét"
+        },
+        {
+          "key": "d",
+          "text": "rửa"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"Bé đánh răng trước khi đi ngủ.\"",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-003",
+      "type": "single_choice",
+      "prompt": "Chọn từ thích hợp điền vào chỗ trống: \"Chú mèo ___ chuột.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "cưỡi"
+        },
+        {
+          "key": "b",
+          "text": "thả"
+        },
+        {
+          "key": "c",
+          "text": "bắt"
+        },
+        {
+          "key": "d",
+          "text": "nuôi"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"Chú mèo bắt chuột.\"",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-004",
+      "type": "single_choice",
+      "prompt": "Chọn từ thích hợp điền vào chỗ trống: \"Em ___ bài tập về nhà.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "nghe"
+        },
+        {
+          "key": "b",
+          "text": "hái"
+        },
+        {
+          "key": "c",
+          "text": "xem"
+        },
+        {
+          "key": "d",
+          "text": "làm"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"Em làm bài tập về nhà.\"",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-005",
+      "type": "single_choice",
+      "prompt": "Chọn từ thích hợp điền vào chỗ trống: \"Bố ___ cây trong vườn.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "tưới"
+        },
+        {
+          "key": "b",
+          "text": "nấu"
+        },
+        {
+          "key": "c",
+          "text": "may"
+        },
+        {
+          "key": "d",
+          "text": "đọc"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"Bố tưới cây trong vườn.\"",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-006",
+      "type": "single_choice",
+      "prompt": "Chọn từ thích hợp điền vào chỗ trống: \"Cô giáo ___ bài trên bảng.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "tưới"
+        },
+        {
+          "key": "b",
+          "text": "giảng"
+        },
+        {
+          "key": "c",
+          "text": "cưỡi"
+        },
+        {
+          "key": "d",
+          "text": "quét"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"Cô giáo giảng bài trên bảng.\"",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-007",
+      "type": "single_choice",
+      "prompt": "Chọn từ thích hợp điền vào chỗ trống: \"Bạn Lan ___ sách.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "trồng"
+        },
+        {
+          "key": "b",
+          "text": "nấu"
+        },
+        {
+          "key": "c",
+          "text": "đọc"
+        },
+        {
+          "key": "d",
+          "text": "bơi"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"Bạn Lan đọc sách.\"",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-008",
+      "type": "single_choice",
+      "prompt": "Chọn từ thích hợp điền vào chỗ trống: \"Ông ___ trà.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "quét"
+        },
+        {
+          "key": "b",
+          "text": "viết"
+        },
+        {
+          "key": "c",
+          "text": "bơi"
+        },
+        {
+          "key": "d",
+          "text": "uống"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"Ông uống trà.\"",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-009",
+      "type": "single_choice",
+      "prompt": "Chọn từ thích hợp điền vào chỗ trống: \"Con chim ___ trên cành.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "hót"
+        },
+        {
+          "key": "b",
+          "text": "nấu"
+        },
+        {
+          "key": "c",
+          "text": "bơi"
+        },
+        {
+          "key": "d",
+          "text": "chạy"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"Con chim hót trên cành.\"",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-010",
+      "type": "single_choice",
+      "prompt": "Chọn từ thích hợp điền vào chỗ trống: \"Đàn cá ___ dưới ao.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "trồng"
+        },
+        {
+          "key": "b",
+          "text": "bơi"
+        },
+        {
+          "key": "c",
+          "text": "hót"
+        },
+        {
+          "key": "d",
+          "text": "bay"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"Đàn cá bơi dưới ao.\"",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-011",
+      "type": "single_choice",
+      "prompt": "Chọn từ thích hợp điền vào chỗ trống: \"Bà ___ áo.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "bơi"
+        },
+        {
+          "key": "b",
+          "text": "hót"
+        },
+        {
+          "key": "c",
+          "text": "may"
+        },
+        {
+          "key": "d",
+          "text": "cưỡi"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"Bà may áo.\"",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-012",
+      "type": "single_choice",
+      "prompt": "Chọn từ thích hợp điền vào chỗ trống: \"Bé ___ tranh.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "nấu"
+        },
+        {
+          "key": "b",
+          "text": "quét"
+        },
+        {
+          "key": "c",
+          "text": "bơi"
+        },
+        {
+          "key": "d",
+          "text": "vẽ"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"Bé vẽ tranh.\"",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-013",
+      "type": "single_choice",
+      "prompt": "Chọn từ thích hợp điền vào chỗ trống: \"Anh ___ xe đạp.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "đi"
+        },
+        {
+          "key": "b",
+          "text": "nấu"
+        },
+        {
+          "key": "c",
+          "text": "hót"
+        },
+        {
+          "key": "d",
+          "text": "trồng"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"Anh đi xe đạp.\"",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-014",
+      "type": "single_choice",
+      "prompt": "Câu nào dưới đây giới thiệu Lan là học sinh lớp 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Lan rất vui."
+        },
+        {
+          "key": "b",
+          "text": "Lan là học sinh lớp 1."
+        },
+        {
+          "key": "c",
+          "text": "Lan đang chơi bóng."
+        },
+        {
+          "key": "d",
+          "text": "Bạn Nam là học sinh lớp 1."
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"Lan là học sinh lớp 1.\" giới thiệu Lan.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-015",
+      "type": "single_choice",
+      "prompt": "Câu nào dưới đây giới thiệu Nam là học sinh lớp 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nam đang chơi bóng."
+        },
+        {
+          "key": "b",
+          "text": "Bạn Mai là học sinh lớp 1."
+        },
+        {
+          "key": "c",
+          "text": "Nam là học sinh lớp 1."
+        },
+        {
+          "key": "d",
+          "text": "Nam rất vui."
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"Nam là học sinh lớp 1.\" giới thiệu Nam.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-016",
+      "type": "single_choice",
+      "prompt": "Câu nào dưới đây giới thiệu Mai là học sinh lớp 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bạn Minh là học sinh lớp 1."
+        },
+        {
+          "key": "b",
+          "text": "Mai rất vui."
+        },
+        {
+          "key": "c",
+          "text": "Mai đang chơi bóng."
+        },
+        {
+          "key": "d",
+          "text": "Mai là học sinh lớp 1."
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"Mai là học sinh lớp 1.\" giới thiệu Mai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-017",
+      "type": "single_choice",
+      "prompt": "Câu nào dưới đây giới thiệu Minh là học sinh lớp 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Minh là học sinh lớp 1."
+        },
+        {
+          "key": "b",
+          "text": "Minh rất vui."
+        },
+        {
+          "key": "c",
+          "text": "Bạn Hoa là học sinh lớp 1."
+        },
+        {
+          "key": "d",
+          "text": "Minh đang chơi bóng."
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"Minh là học sinh lớp 1.\" giới thiệu Minh.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-018",
+      "type": "single_choice",
+      "prompt": "Câu nào dưới đây giới thiệu Hoa là học sinh lớp 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Hoa rất vui."
+        },
+        {
+          "key": "b",
+          "text": "Hoa là học sinh lớp 1."
+        },
+        {
+          "key": "c",
+          "text": "Hoa đang chơi bóng."
+        },
+        {
+          "key": "d",
+          "text": "Bạn Hùng là học sinh lớp 1."
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"Hoa là học sinh lớp 1.\" giới thiệu Hoa.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-019",
+      "type": "single_choice",
+      "prompt": "Câu nào dưới đây giới thiệu Hùng là học sinh lớp 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Hùng đang chơi bóng."
+        },
+        {
+          "key": "b",
+          "text": "Bạn Thảo là học sinh lớp 1."
+        },
+        {
+          "key": "c",
+          "text": "Hùng là học sinh lớp 1."
+        },
+        {
+          "key": "d",
+          "text": "Hùng rất vui."
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"Hùng là học sinh lớp 1.\" giới thiệu Hùng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-020",
+      "type": "single_choice",
+      "prompt": "Câu nào dưới đây giới thiệu Thảo là học sinh lớp 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Thảo rất vui."
+        },
+        {
+          "key": "b",
+          "text": "Thảo đang chơi bóng."
+        },
+        {
+          "key": "c",
+          "text": "Bạn Phúc là học sinh lớp 1."
+        },
+        {
+          "key": "d",
+          "text": "Thảo là học sinh lớp 1."
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"Thảo là học sinh lớp 1.\" giới thiệu Thảo.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-021",
+      "type": "single_choice",
+      "prompt": "Câu nào dưới đây giới thiệu Phúc là học sinh lớp 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Phúc là học sinh lớp 1."
+        },
+        {
+          "key": "b",
+          "text": "Phúc rất vui."
+        },
+        {
+          "key": "c",
+          "text": "Phúc đang chơi bóng."
+        },
+        {
+          "key": "d",
+          "text": "Bạn Linh là học sinh lớp 1."
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"Phúc là học sinh lớp 1.\" giới thiệu Phúc.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-022",
+      "type": "single_choice",
+      "prompt": "Câu nào dưới đây giới thiệu Linh là học sinh lớp 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Linh rất vui."
+        },
+        {
+          "key": "b",
+          "text": "Linh là học sinh lớp 1."
+        },
+        {
+          "key": "c",
+          "text": "Bạn An là học sinh lớp 1."
+        },
+        {
+          "key": "d",
+          "text": "Linh đang chơi bóng."
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"Linh là học sinh lớp 1.\" giới thiệu Linh.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-023",
+      "type": "single_choice",
+      "prompt": "Câu nào dưới đây giới thiệu An là học sinh lớp 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "An đang chơi bóng."
+        },
+        {
+          "key": "b",
+          "text": "An rất vui."
+        },
+        {
+          "key": "c",
+          "text": "An là học sinh lớp 1."
+        },
+        {
+          "key": "d",
+          "text": "Bạn Bình là học sinh lớp 1."
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"An là học sinh lớp 1.\" giới thiệu An.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-024",
+      "type": "single_choice",
+      "prompt": "Câu nào dưới đây giới thiệu Bình là học sinh lớp 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bạn Nhi là học sinh lớp 1."
+        },
+        {
+          "key": "b",
+          "text": "Bình đang chơi bóng."
+        },
+        {
+          "key": "c",
+          "text": "Bình rất vui."
+        },
+        {
+          "key": "d",
+          "text": "Bình là học sinh lớp 1."
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"Bình là học sinh lớp 1.\" giới thiệu Bình.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-025",
+      "type": "single_choice",
+      "prompt": "Câu nào dưới đây giới thiệu Nhi là học sinh lớp 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nhi là học sinh lớp 1."
+        },
+        {
+          "key": "b",
+          "text": "Nhi đang chơi bóng."
+        },
+        {
+          "key": "c",
+          "text": "Nhi rất vui."
+        },
+        {
+          "key": "d",
+          "text": "Bạn Vy là học sinh lớp 1."
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"Nhi là học sinh lớp 1.\" giới thiệu Nhi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-026",
+      "type": "single_choice",
+      "prompt": "Câu nào dưới đây giới thiệu Vy là học sinh lớp 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bạn Lan là học sinh lớp 1."
+        },
+        {
+          "key": "b",
+          "text": "Vy là học sinh lớp 1."
+        },
+        {
+          "key": "c",
+          "text": "Vy đang chơi bóng."
+        },
+        {
+          "key": "d",
+          "text": "Vy rất vui."
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"Vy là học sinh lớp 1.\" giới thiệu Vy.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-027",
+      "type": "single_choice",
+      "prompt": "Câu \"Hôm nay trời đẹp\" cần dùng dấu gì ở cuối?",
+      "options": [
+        {
+          "key": "a",
+          "text": "?"
+        },
+        {
+          "key": "b",
+          "text": "!"
+        },
+        {
+          "key": "c",
+          "text": "."
+        },
+        {
+          "key": "d",
+          "text": ","
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Câu kể kết thúc bằng dấu chấm.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-028",
+      "type": "single_choice",
+      "prompt": "Câu \"Bạn có khỏe không\" cần dùng dấu gì ở cuối?",
+      "options": [
+        {
+          "key": "a",
+          "text": "."
+        },
+        {
+          "key": "b",
+          "text": "!"
+        },
+        {
+          "key": "c",
+          "text": ","
+        },
+        {
+          "key": "d",
+          "text": "?"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Câu hỏi kết thúc bằng dấu chấm hỏi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-029",
+      "type": "single_choice",
+      "prompt": "Câu \"Mẹ em là giáo viên\" cần dùng dấu gì ở cuối?",
+      "options": [
+        {
+          "key": "a",
+          "text": "."
+        },
+        {
+          "key": "b",
+          "text": "?"
+        },
+        {
+          "key": "c",
+          "text": ","
+        },
+        {
+          "key": "d",
+          "text": "!"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Câu kể kết thúc bằng dấu chấm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-030",
+      "type": "single_choice",
+      "prompt": "Câu \"Bạn tên là gì\" cần dùng dấu gì ở cuối?",
+      "options": [
+        {
+          "key": "a",
+          "text": "."
+        },
+        {
+          "key": "b",
+          "text": "?"
+        },
+        {
+          "key": "c",
+          "text": ","
+        },
+        {
+          "key": "d",
+          "text": "!"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Câu hỏi kết thúc bằng dấu chấm hỏi.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-031",
+      "type": "single_choice",
+      "prompt": "Câu \"Lan đang đọc sách\" cần dùng dấu gì ở cuối?",
+      "options": [
+        {
+          "key": "a",
+          "text": ","
+        },
+        {
+          "key": "b",
+          "text": "?"
+        },
+        {
+          "key": "c",
+          "text": "."
+        },
+        {
+          "key": "d",
+          "text": "!"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Câu kể kết thúc bằng dấu chấm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-032",
+      "type": "single_choice",
+      "prompt": "Câu \"Cậu có đi học không\" cần dùng dấu gì ở cuối?",
+      "options": [
+        {
+          "key": "a",
+          "text": ","
+        },
+        {
+          "key": "b",
+          "text": "."
+        },
+        {
+          "key": "c",
+          "text": "!"
+        },
+        {
+          "key": "d",
+          "text": "?"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Câu hỏi kết thúc bằng dấu chấm hỏi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-033",
+      "type": "single_choice",
+      "prompt": "Câu \"Bé Mai rất ngoan\" cần dùng dấu gì ở cuối?",
+      "options": [
+        {
+          "key": "a",
+          "text": "."
+        },
+        {
+          "key": "b",
+          "text": "!"
+        },
+        {
+          "key": "c",
+          "text": "?"
+        },
+        {
+          "key": "d",
+          "text": ","
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Câu kể kết thúc bằng dấu chấm.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-034",
+      "type": "single_choice",
+      "prompt": "Câu \"Trời ơi, đẹp quá\" cần dùng dấu gì ở cuối?",
+      "options": [
+        {
+          "key": "a",
+          "text": "?"
+        },
+        {
+          "key": "b",
+          "text": "!"
+        },
+        {
+          "key": "c",
+          "text": "."
+        },
+        {
+          "key": "d",
+          "text": ","
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Câu cảm thán kết thúc bằng dấu chấm than.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-035",
+      "type": "single_choice",
+      "prompt": "Câu \"Ông đang tưới cây\" cần dùng dấu gì ở cuối?",
+      "options": [
+        {
+          "key": "a",
+          "text": ","
+        },
+        {
+          "key": "b",
+          "text": "!"
+        },
+        {
+          "key": "c",
+          "text": "."
+        },
+        {
+          "key": "d",
+          "text": "?"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Câu kể kết thúc bằng dấu chấm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-036",
+      "type": "single_choice",
+      "prompt": "Câu \"Ai là lớp trưởng\" cần dùng dấu gì ở cuối?",
+      "options": [
+        {
+          "key": "a",
+          "text": "."
+        },
+        {
+          "key": "b",
+          "text": "!"
+        },
+        {
+          "key": "c",
+          "text": ","
+        },
+        {
+          "key": "d",
+          "text": "?"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Câu hỏi kết thúc bằng dấu chấm hỏi.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-037",
+      "type": "single_choice",
+      "prompt": "Câu \"Chúng em chăm chỉ học tập\" cần dùng dấu gì ở cuối?",
+      "options": [
+        {
+          "key": "a",
+          "text": "."
+        },
+        {
+          "key": "b",
+          "text": "!"
+        },
+        {
+          "key": "c",
+          "text": ","
+        },
+        {
+          "key": "d",
+          "text": "?"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Câu kể kết thúc bằng dấu chấm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-038",
+      "type": "single_choice",
+      "prompt": "Câu \"Ôi, cầu vồng đẹp quá\" cần dùng dấu gì ở cuối?",
+      "options": [
+        {
+          "key": "a",
+          "text": "?"
+        },
+        {
+          "key": "b",
+          "text": "!"
+        },
+        {
+          "key": "c",
+          "text": "."
+        },
+        {
+          "key": "d",
+          "text": ","
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Câu cảm thán kết thúc bằng dấu chấm than.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-039",
+      "type": "single_choice",
+      "prompt": "Câu \"Bạn thích màu gì\" cần dùng dấu gì ở cuối?",
+      "options": [
+        {
+          "key": "a",
+          "text": ","
+        },
+        {
+          "key": "b",
+          "text": "."
+        },
+        {
+          "key": "c",
+          "text": "?"
+        },
+        {
+          "key": "d",
+          "text": "!"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Câu hỏi kết thúc bằng dấu chấm hỏi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-040",
+      "type": "single_choice",
+      "prompt": "Sắp xếp các từ sau thành câu đúng: Mẹ, nấu, cơm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "nấu Mẹ cơm."
+        },
+        {
+          "key": "b",
+          "text": "Mẹ cơm nấu."
+        },
+        {
+          "key": "c",
+          "text": "cơm Mẹ nấu."
+        },
+        {
+          "key": "d",
+          "text": "Mẹ nấu cơm."
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Câu đúng là \"Mẹ nấu cơm.\"",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-041",
+      "type": "single_choice",
+      "prompt": "Sắp xếp các từ sau thành câu đúng: Lan, đọc, sách.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Lan đọc sách."
+        },
+        {
+          "key": "b",
+          "text": "đọc Lan sách."
+        },
+        {
+          "key": "c",
+          "text": "sách Lan đọc."
+        },
+        {
+          "key": "d",
+          "text": "Lan sách đọc."
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Câu đúng là \"Lan đọc sách.\"",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-042",
+      "type": "single_choice",
+      "prompt": "Sắp xếp các từ sau thành câu đúng: Bố, tưới, cây.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bố cây tưới."
+        },
+        {
+          "key": "b",
+          "text": "Bố tưới cây."
+        },
+        {
+          "key": "c",
+          "text": "tưới Bố cây."
+        },
+        {
+          "key": "d",
+          "text": "cây Bố tưới."
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Câu đúng là \"Bố tưới cây.\"",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-043",
+      "type": "single_choice",
+      "prompt": "Sắp xếp các từ sau thành câu đúng: Bé, vẽ, tranh.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bé tranh vẽ."
+        },
+        {
+          "key": "b",
+          "text": "tranh Bé vẽ."
+        },
+        {
+          "key": "c",
+          "text": "Bé vẽ tranh."
+        },
+        {
+          "key": "d",
+          "text": "vẽ Bé tranh."
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Câu đúng là \"Bé vẽ tranh.\"",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-044",
+      "type": "single_choice",
+      "prompt": "Sắp xếp các từ sau thành câu đúng: Cô, giảng, bài.",
+      "options": [
+        {
+          "key": "a",
+          "text": "bài Cô giảng."
+        },
+        {
+          "key": "b",
+          "text": "Cô bài giảng."
+        },
+        {
+          "key": "c",
+          "text": "giảng Cô bài."
+        },
+        {
+          "key": "d",
+          "text": "Cô giảng bài."
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Câu đúng là \"Cô giảng bài.\"",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-045",
+      "type": "single_choice",
+      "prompt": "Sắp xếp các từ sau thành câu đúng: Chú mèo, bắt, chuột.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Chú mèo bắt chuột."
+        },
+        {
+          "key": "b",
+          "text": "chuột Chú mèo bắt."
+        },
+        {
+          "key": "c",
+          "text": "Chú mèo chuột bắt."
+        },
+        {
+          "key": "d",
+          "text": "bắt Chú mèo chuột."
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Câu đúng là \"Chú mèo bắt chuột.\"",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-046",
+      "type": "single_choice",
+      "prompt": "Sắp xếp các từ sau thành câu đúng: Đàn cá, bơi, dưới ao.",
+      "options": [
+        {
+          "key": "a",
+          "text": "dưới ao Đàn cá bơi."
+        },
+        {
+          "key": "b",
+          "text": "Đàn cá bơi dưới ao."
+        },
+        {
+          "key": "c",
+          "text": "Đàn cá dưới ao bơi."
+        },
+        {
+          "key": "d",
+          "text": "bơi Đàn cá dưới ao."
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Câu đúng là \"Đàn cá bơi dưới ao.\"",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-047",
+      "type": "single_choice",
+      "prompt": "Sắp xếp các từ sau thành câu đúng: Chim, hót, líu lo.",
+      "options": [
+        {
+          "key": "a",
+          "text": "líu lo Chim hót."
+        },
+        {
+          "key": "b",
+          "text": "Chim líu lo hót."
+        },
+        {
+          "key": "c",
+          "text": "Chim hót líu lo."
+        },
+        {
+          "key": "d",
+          "text": "hót Chim líu lo."
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Câu đúng là \"Chim hót líu lo.\"",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-048",
+      "type": "single_choice",
+      "prompt": "Sắp xếp các từ sau thành câu đúng: Ông, uống, trà.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Ông trà uống."
+        },
+        {
+          "key": "b",
+          "text": "uống Ông trà."
+        },
+        {
+          "key": "c",
+          "text": "trà Ông uống."
+        },
+        {
+          "key": "d",
+          "text": "Ông uống trà."
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Câu đúng là \"Ông uống trà.\"",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-049",
+      "type": "single_choice",
+      "prompt": "Sắp xếp các từ sau thành câu đúng: Bà, may, áo.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bà may áo."
+        },
+        {
+          "key": "b",
+          "text": "Bà áo may."
+        },
+        {
+          "key": "c",
+          "text": "áo Bà may."
+        },
+        {
+          "key": "d",
+          "text": "may Bà áo."
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Câu đúng là \"Bà may áo.\"",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-050",
+      "type": "single_choice",
+      "prompt": "Sắp xếp các từ sau thành câu đúng: Anh, đi, xe đạp.",
+      "options": [
+        {
+          "key": "a",
+          "text": "xe đạp Anh đi."
+        },
+        {
+          "key": "b",
+          "text": "Anh đi xe đạp."
+        },
+        {
+          "key": "c",
+          "text": "Anh xe đạp đi."
+        },
+        {
+          "key": "d",
+          "text": "đi Anh xe đạp."
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Câu đúng là \"Anh đi xe đạp.\"",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-051",
+      "type": "single_choice",
+      "prompt": "Sắp xếp các từ sau thành câu đúng: Bạn Mai, hát, rất hay.",
+      "options": [
+        {
+          "key": "a",
+          "text": "rất hay Bạn Mai hát."
+        },
+        {
+          "key": "b",
+          "text": "Bạn Mai rất hay hát."
+        },
+        {
+          "key": "c",
+          "text": "Bạn Mai hát rất hay."
+        },
+        {
+          "key": "d",
+          "text": "hát Bạn Mai rất hay."
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Câu đúng là \"Bạn Mai hát rất hay.\"",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-052",
+      "type": "single_choice",
+      "prompt": "Sắp xếp các từ sau thành câu đúng: Em bé, cười, tươi.",
+      "options": [
+        {
+          "key": "a",
+          "text": "tươi Em bé cười."
+        },
+        {
+          "key": "b",
+          "text": "Em bé tươi cười."
+        },
+        {
+          "key": "c",
+          "text": "cười Em bé tươi."
+        },
+        {
+          "key": "d",
+          "text": "Em bé cười tươi."
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Câu đúng là \"Em bé cười tươi.\"",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-053",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu giới thiệu: Lan là học sinh lớp 1. Lan đang đọc sách. Bố em là bác sĩ. Bố em tưới cây.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Lan là học sinh lớp 1."
+        },
+        {
+          "key": "b",
+          "text": "Bố em tưới cây."
+        },
+        {
+          "key": "c",
+          "text": "Lan đang đọc sách."
+        },
+        {
+          "key": "d",
+          "text": "Bố em là bác sĩ."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các câu giới thiệu là: Lan là học sinh lớp 1. Bố em là bác sĩ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-054",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu giới thiệu: Mẹ em là giáo viên. Mẹ em nấu cơm. Nam là lớp trưởng. Nam chơi bóng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nam chơi bóng."
+        },
+        {
+          "key": "b",
+          "text": "Mẹ em nấu cơm."
+        },
+        {
+          "key": "c",
+          "text": "Mẹ em là giáo viên."
+        },
+        {
+          "key": "d",
+          "text": "Nam là lớp trưởng."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các câu giới thiệu là: Mẹ em là giáo viên. Nam là lớp trưởng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-055",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu kể: Bé Mai vẽ tranh. Bạn tên là gì? Chú mèo bắt chuột. Ôi, đẹp quá!",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bạn tên là gì?"
+        },
+        {
+          "key": "b",
+          "text": "Ôi, đẹp quá!"
+        },
+        {
+          "key": "c",
+          "text": "Chú mèo bắt chuột."
+        },
+        {
+          "key": "d",
+          "text": "Bé Mai vẽ tranh."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các câu kể là: Bé Mai vẽ tranh. Chú mèo bắt chuột.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-056",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu kể: Bố tưới cây. Bạn có khỏe không? Chim hót líu lo. Ôi, đẹp quá!",
+      "options": [
+        {
+          "key": "a",
+          "text": "Ôi, đẹp quá!"
+        },
+        {
+          "key": "b",
+          "text": "Bố tưới cây."
+        },
+        {
+          "key": "c",
+          "text": "Chim hót líu lo."
+        },
+        {
+          "key": "d",
+          "text": "Bạn có khỏe không?"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các câu kể là: Bố tưới cây. Chim hót líu lo.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-057",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu hỏi: Bạn tên là gì? Mẹ nấu cơm. Cậu có đi học không? Bé Mai rất ngoan.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bé Mai rất ngoan."
+        },
+        {
+          "key": "b",
+          "text": "Bạn tên là gì?"
+        },
+        {
+          "key": "c",
+          "text": "Cậu có đi học không?"
+        },
+        {
+          "key": "d",
+          "text": "Mẹ nấu cơm."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các câu hỏi là: Bạn tên là gì? Cậu có đi học không?",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-058",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu hỏi: Ai là lớp trưởng? Lan đọc sách. Bạn thích màu gì? Trời hôm nay đẹp.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bạn thích màu gì?"
+        },
+        {
+          "key": "b",
+          "text": "Lan đọc sách."
+        },
+        {
+          "key": "c",
+          "text": "Ai là lớp trưởng?"
+        },
+        {
+          "key": "d",
+          "text": "Trời hôm nay đẹp."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các câu hỏi là: Ai là lớp trưởng? Bạn thích màu gì?",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-059",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu dùng dấu chấm đúng: Hôm nay trời đẹp. Bạn có khỏe không? Mẹ em là giáo viên. Ôi, đẹp quá!",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bạn có khỏe không?"
+        },
+        {
+          "key": "b",
+          "text": "Mẹ em là giáo viên."
+        },
+        {
+          "key": "c",
+          "text": "Hôm nay trời đẹp."
+        },
+        {
+          "key": "d",
+          "text": "Ôi, đẹp quá!"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các câu dùng dấu chấm đúng là: Hôm nay trời đẹp. Mẹ em là giáo viên.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-060",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu dùng dấu chấm than đúng: Ôi, đẹp quá! Em đi học. Trời ơi, nóng quá! Bạn tên là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bạn tên là gì?"
+        },
+        {
+          "key": "b",
+          "text": "Em đi học."
+        },
+        {
+          "key": "c",
+          "text": "Trời ơi, nóng quá!"
+        },
+        {
+          "key": "d",
+          "text": "Ôi, đẹp quá!"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các câu dùng dấu chấm than đúng là: Ôi, đẹp quá! Trời ơi, nóng quá!",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-061",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu dùng dấu chấm hỏi đúng: Bạn tên là gì? Em đi học. Cậu có đi học không? Ôi, đẹp quá!",
+      "options": [
+        {
+          "key": "a",
+          "text": "Ôi, đẹp quá!"
+        },
+        {
+          "key": "b",
+          "text": "Bạn tên là gì?"
+        },
+        {
+          "key": "c",
+          "text": "Cậu có đi học không?"
+        },
+        {
+          "key": "d",
+          "text": "Em đi học."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các câu dùng dấu chấm hỏi đúng là: Bạn tên là gì? Cậu có đi học không?",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-062",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu giới thiệu: Cô giáo là người dạy học. Cô giáo giảng bài. Bác sĩ là người chữa bệnh. Bác sĩ khám bệnh.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cô giáo giảng bài."
+        },
+        {
+          "key": "b",
+          "text": "Bác sĩ là người chữa bệnh."
+        },
+        {
+          "key": "c",
+          "text": "Bác sĩ khám bệnh."
+        },
+        {
+          "key": "d",
+          "text": "Cô giáo là người dạy học."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các câu giới thiệu là: Cô giáo là người dạy học. Bác sĩ là người chữa bệnh.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-063",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu kể hoạt động: Mẹ quét nhà. Bà có khỏe không? Bà may áo. Ôi, vui quá!",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bà may áo."
+        },
+        {
+          "key": "b",
+          "text": "Bà có khỏe không?"
+        },
+        {
+          "key": "c",
+          "text": "Ôi, vui quá!"
+        },
+        {
+          "key": "d",
+          "text": "Mẹ quét nhà."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các câu kể hoạt động là: Mẹ quét nhà. Bà may áo.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-064",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu giới thiệu: Hùng là anh trai em. Hùng đang học bài. Mai là chị gái em. Mai đang nấu cơm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Hùng là anh trai em."
+        },
+        {
+          "key": "b",
+          "text": "Mai đang nấu cơm."
+        },
+        {
+          "key": "c",
+          "text": "Mai là chị gái em."
+        },
+        {
+          "key": "d",
+          "text": "Hùng đang học bài."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các câu giới thiệu là: Hùng là anh trai em. Mai là chị gái em.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-065",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu kể: Đàn cá bơi dưới ao. Đàn cá có bơi không? Ông uống trà. Ông ơi, trà ngon quá!",
+      "options": [
+        {
+          "key": "a",
+          "text": "Ông uống trà."
+        },
+        {
+          "key": "b",
+          "text": "Ông ơi, trà ngon quá!"
+        },
+        {
+          "key": "c",
+          "text": "Đàn cá bơi dưới ao."
+        },
+        {
+          "key": "d",
+          "text": "Đàn cá có bơi không?"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các câu kể là: Đàn cá bơi dưới ao. Ông uống trà.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-066",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu hỏi: Trời hôm nay có mưa không? Trời hôm nay mưa to. Mẹ đã về chưa? Mẹ đang nấu cơm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Trời hôm nay mưa to."
+        },
+        {
+          "key": "b",
+          "text": "Mẹ đang nấu cơm."
+        },
+        {
+          "key": "c",
+          "text": "Mẹ đã về chưa?"
+        },
+        {
+          "key": "d",
+          "text": "Trời hôm nay có mưa không?"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các câu hỏi là: Trời hôm nay có mưa không? Mẹ đã về chưa?",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-067",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu dùng dấu chấm đúng: Chúng em chăm chỉ học tập. Chúng em có chăm không? Lan viết văn rất hay. Lan ơi, hay quá!",
+      "options": [
+        {
+          "key": "a",
+          "text": "Lan viết văn rất hay."
+        },
+        {
+          "key": "b",
+          "text": "Chúng em có chăm không?"
+        },
+        {
+          "key": "c",
+          "text": "Lan ơi, hay quá!"
+        },
+        {
+          "key": "d",
+          "text": "Chúng em chăm chỉ học tập."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các câu dùng dấu chấm đúng là: Chúng em chăm chỉ học tập. Lan viết văn rất hay.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-068",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu giới thiệu: Em là học sinh lớp 1. Em đang học bài. Chị em là y tá. Chị em đang nấu ăn.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Chị em là y tá."
+        },
+        {
+          "key": "b",
+          "text": "Chị em đang nấu ăn."
+        },
+        {
+          "key": "c",
+          "text": "Em đang học bài."
+        },
+        {
+          "key": "d",
+          "text": "Em là học sinh lớp 1."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các câu giới thiệu là: Em là học sinh lớp 1. Chị em là y tá.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-069",
+      "type": "multiple_choice",
+      "prompt": "Trong các câu sau, chọn tất cả các câu kể: Bé Hà hát rất hay. Bé Hà có hát không? Cây bàng tỏa bóng mát. Cây bàng ơi, mát quá!",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cây bàng tỏa bóng mát."
+        },
+        {
+          "key": "b",
+          "text": "Bé Hà hát rất hay."
+        },
+        {
+          "key": "c",
+          "text": "Cây bàng ơi, mát quá!"
+        },
+        {
+          "key": "d",
+          "text": "Bé Hà có hát không?"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các câu kể là: Bé Hà hát rất hay. Cây bàng tỏa bóng mát.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-070",
+      "type": "true_false",
+      "prompt": "Câu 'Mẹ nấu cơm.' là câu kể.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, đây là câu kể.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-071",
+      "type": "true_false",
+      "prompt": "Câu 'Bạn có khỏe không?' là câu hỏi.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, đây là câu hỏi.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-072",
+      "type": "true_false",
+      "prompt": "Cuối câu kể dùng dấu chấm hỏi.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, cuối câu kể dùng dấu chấm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-073",
+      "type": "true_false",
+      "prompt": "Cuối câu hỏi dùng dấu chấm hỏi.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, câu hỏi dùng dấu chấm hỏi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-074",
+      "type": "true_false",
+      "prompt": "Câu 'Lan là học sinh lớp 1.' là câu giới thiệu.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, câu giới thiệu có dạng Ai là gì.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-075",
+      "type": "true_false",
+      "prompt": "Câu 'Bé Mai vẽ tranh.' là câu giới thiệu.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, đây là câu kể hoạt động.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-076",
+      "type": "true_false",
+      "prompt": "Câu 'Ôi, đẹp quá!' dùng dấu chấm than.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, câu cảm thán dùng dấu chấm than.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-077",
+      "type": "true_false",
+      "prompt": "Câu 'Bố tưới cây.' là câu hỏi.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, đây là câu kể.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-078",
+      "type": "true_false",
+      "prompt": "Câu kể thường kết thúc bằng dấu chấm.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, câu kể kết thúc bằng dấu chấm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-079",
+      "type": "true_false",
+      "prompt": "Câu 'Bạn tên là gì?' là câu kể.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, đây là câu hỏi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-080",
+      "type": "true_false",
+      "prompt": "Câu 'Chim hót líu lo.' là câu kể.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, đây là câu kể.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-081",
+      "type": "true_false",
+      "prompt": "Câu 'Mẹ may áo.' là câu hỏi.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, đây là câu kể.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-082",
+      "type": "true_false",
+      "prompt": "Câu 'Em bé cười tươi.' kể về em bé.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, câu kể về em bé.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-083",
+      "type": "true_false",
+      "prompt": "Câu 'Đàn cá bơi dưới ao.' kể về đàn cá.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, câu kể về đàn cá.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-084",
+      "type": "true_false",
+      "prompt": "Câu 'Bà uống trà.' kể về việc bà uống trà.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, câu kể về việc bà uống trà.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-085",
+      "type": "true_false",
+      "prompt": "Câu 'Bạn thích màu gì?' là câu kể.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, đây là câu hỏi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-086",
+      "type": "true_false",
+      "prompt": "Dấu phẩy dùng để kết thúc câu.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, dấu phẩy dùng để ngăn cách các bộ phận trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-087",
+      "type": "fill_in",
+      "prompt": "Điền dấu câu thích hợp vào cuối câu: \"Bạn có khỏe không ___\"",
+      "answer": {
+        "accepted": [
+          "?"
+        ]
+      },
+      "explanation": "Câu hỏi dùng dấu chấm hỏi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-088",
+      "type": "fill_in",
+      "prompt": "Điền dấu câu thích hợp vào cuối câu: \"Mẹ em là giáo viên ___\"",
+      "answer": {
+        "accepted": [
+          "."
+        ]
+      },
+      "explanation": "Câu kể dùng dấu chấm.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-089",
+      "type": "fill_in",
+      "prompt": "Điền dấu câu thích hợp vào cuối câu: \"Bạn tên là gì ___\"",
+      "answer": {
+        "accepted": [
+          "?"
+        ]
+      },
+      "explanation": "Câu hỏi dùng dấu chấm hỏi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-090",
+      "type": "fill_in",
+      "prompt": "Điền dấu câu thích hợp vào cuối câu: \"Lan đang đọc sách ___\"",
+      "answer": {
+        "accepted": [
+          "."
+        ]
+      },
+      "explanation": "Câu kể dùng dấu chấm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-091",
+      "type": "fill_in",
+      "prompt": "Điền dấu câu thích hợp vào cuối câu: \"Ôi, đẹp quá ___\"",
+      "answer": {
+        "accepted": [
+          "!"
+        ]
+      },
+      "explanation": "Câu cảm thán dùng dấu chấm than.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-092",
+      "type": "fill_in",
+      "prompt": "Điền dấu câu thích hợp vào cuối câu: \"Cậu có đi học không ___\"",
+      "answer": {
+        "accepted": [
+          "?"
+        ]
+      },
+      "explanation": "Câu hỏi dùng dấu chấm hỏi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-093",
+      "type": "fill_in",
+      "prompt": "Điền dấu câu thích hợp vào cuối câu: \"Bé Mai rất ngoan ___\"",
+      "answer": {
+        "accepted": [
+          "."
+        ]
+      },
+      "explanation": "Câu kể dùng dấu chấm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-094",
+      "type": "fill_in",
+      "prompt": "Điền dấu câu thích hợp vào cuối câu: \"Trời ơi, nóng quá ___\"",
+      "answer": {
+        "accepted": [
+          "!"
+        ]
+      },
+      "explanation": "Câu cảm thán dùng dấu chấm than.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-095",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: \"Mẹ ___ cơm.\"",
+      "answer": {
+        "accepted": [
+          "nấu"
+        ]
+      },
+      "explanation": "Từ còn thiếu là \"nấu\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-096",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: \"Bé ___ răng.\"",
+      "answer": {
+        "accepted": [
+          "đánh"
+        ]
+      },
+      "explanation": "Từ còn thiếu là \"đánh\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-097",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: \"Chú mèo ___ chuột.\"",
+      "answer": {
+        "accepted": [
+          "bắt"
+        ]
+      },
+      "explanation": "Từ còn thiếu là \"bắt\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-098",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: \"Em ___ bài tập.\"",
+      "answer": {
+        "accepted": [
+          "làm"
+        ]
+      },
+      "explanation": "Từ còn thiếu là \"làm\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-099",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: \"Bố ___ cây.\"",
+      "answer": {
+        "accepted": [
+          "tưới"
+        ]
+      },
+      "explanation": "Từ còn thiếu là \"tưới\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-100",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: \"Cô giáo ___ bài.\"",
+      "answer": {
+        "accepted": [
+          "giảng"
+        ]
+      },
+      "explanation": "Từ còn thiếu là \"giảng\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-101",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: \"Bạn Lan ___ sách.\"",
+      "answer": {
+        "accepted": [
+          "đọc"
+        ]
+      },
+      "explanation": "Từ còn thiếu là \"đọc\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-102",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: \"Ông ___ trà.\"",
+      "answer": {
+        "accepted": [
+          "uống"
+        ]
+      },
+      "explanation": "Từ còn thiếu là \"uống\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-103",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: \"Bạn Lan ___ học sinh.\"",
+      "answer": {
+        "accepted": [
+          "là"
+        ]
+      },
+      "explanation": "\"Bạn Lan là học sinh.\"",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-104",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: \"Bạn Nam ___ học sinh.\"",
+      "answer": {
+        "accepted": [
+          "là"
+        ]
+      },
+      "explanation": "\"Bạn Nam là học sinh.\"",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-105",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: \"Cô giáo ___ học sinh.\"",
+      "answer": {
+        "accepted": [
+          "là"
+        ]
+      },
+      "explanation": "\"Cô giáo là học sinh.\"",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-106",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: \"Bố em ___ học sinh.\"",
+      "answer": {
+        "accepted": [
+          "là"
+        ]
+      },
+      "explanation": "\"Bố em là học sinh.\"",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-107",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: \"Mẹ em ___ học sinh.\"",
+      "answer": {
+        "accepted": [
+          "là"
+        ]
+      },
+      "explanation": "\"Mẹ em là học sinh.\"",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-cau-don-gian-108",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: \"Anh em ___ học sinh.\"",
+      "answer": {
+        "accepted": [
+          "là"
+        ]
+      },
+      "explanation": "\"Anh em là học sinh.\"",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

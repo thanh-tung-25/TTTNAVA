@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quản lý học sinh — Bé Học Vui</title>
+  <link rel="icon" href="/assets/avatars/cu.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
+</head>
+<body>
+  <header id="app-header"></header>
+  <main class="page">
+    <div class="page-head">
+      <div>
+        <p class="eyebrow">Quản trị</p>
+        <h1>Học sinh</h1>
+        <p>Tạo tài khoản, đặt lại mật khẩu và quản lý trạng thái học sinh.</p>
+      </div>
+      <button class="btn" id="create-button" type="button">+ Thêm học sinh</button>
+    </div>
+
+    <section class="card">
+      <div class="filter-bar">
+        <input class="input" id="search-input" type="search" placeholder="Tìm theo tên hoặc tên đăng nhập…" maxlength="100">
+        <button class="btn btn-ghost btn-sm" id="search-button" type="button">Tìm</button>
+      </div>
+      <div id="students-table"><div class="loading">Đang tải danh sách…</div></div>
+      <div class="quiz-actions" style="justify-content:space-between;margin-top:1rem">
+        <button class="btn btn-ghost btn-sm" id="prev-page" type="button">← Trang trước</button>
+        <span class="muted" id="page-label"></span>
+        <button class="btn btn-ghost btn-sm" id="next-page" type="button">Trang sau →</button>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="/assets/js/admin-students.js"></script>
+</body>
+</html>

@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "toan-2-hinh-hoc",
+    "subjectId": "toan",
+    "grade": 2,
+    "slug": "hinh-hoc",
+    "name": "Hình học cơ bản",
+    "sortOrder": 5
+  },
+  "questions": [
+    {
+      "id": "toan-2-hinh-hoc-001",
+      "type": "single_choice",
+      "prompt": "Hình tam giác có mấy cạnh?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 3.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-hinh-hoc-002",
+      "type": "single_choice",
+      "prompt": "Hình vuông có mấy cạnh?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 4.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-hinh-hoc-003",
+      "type": "single_choice",
+      "prompt": "Hình chữ nhật có mấy góc?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 4.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-2-hinh-hoc-004",
+      "type": "single_choice",
+      "prompt": "Hình tứ giác có mấy cạnh?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 4.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-hinh-hoc-005",
+      "type": "single_choice",
+      "prompt": "Hình vuông có mấy góc?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "6"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 4.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-2-hinh-hoc-006",
+      "type": "single_choice",
+      "prompt": "Hình tam giác có mấy góc?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 3.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-hinh-hoc-007",
+      "type": "single_choice",
+      "prompt": "Hình vuông có cạnh 3 cm. Chu vi hình vuông là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "14"
+        },
+        {
+          "key": "b",
+          "text": "13"
+        },
+        {
+          "key": "c",
+          "text": "12"
+        },
+        {
+          "key": "d",
+          "text": "11"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 12.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-2-hinh-hoc-008",
+      "type": "single_choice",
+      "prompt": "Hình chữ nhật dài 5 cm, rộng 3 cm. Chu vi là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "17"
+        },
+        {
+          "key": "b",
+          "text": "18"
+        },
+        {
+          "key": "c",
+          "text": "15"
+        },
+        {
+          "key": "d",
+          "text": "16"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 16.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-hinh-hoc-009",
+      "type": "single_choice",
+      "prompt": "Hình tam giác có ba cạnh 3 cm, 4 cm, 5 cm. Chu vi là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "12"
+        },
+        {
+          "key": "b",
+          "text": "14"
+        },
+        {
+          "key": "c",
+          "text": "13"
+        },
+        {
+          "key": "d",
+          "text": "11"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 12.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-2-hinh-hoc-010",
+      "type": "single_choice",
+      "prompt": "Hình vuông có cạnh 5 cm. Chu vi là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "19"
+        },
+        {
+          "key": "b",
+          "text": "20"
+        },
+        {
+          "key": "c",
+          "text": "21"
+        },
+        {
+          "key": "d",
+          "text": "22"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 20.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-hinh-hoc-011",
+      "type": "single_choice",
+      "prompt": "Hình chữ nhật dài 6 cm, rộng 4 cm. Chu vi là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "19"
+        },
+        {
+          "key": "b",
+          "text": "22"
+        },
+        {
+          "key": "c",
+          "text": "20"
+        },
+        {
+          "key": "d",
+          "text": "21"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 20.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-2-hinh-hoc-012",
+      "type": "single_choice",
+      "prompt": "Hình nào có 3 cạnh?",
+      "options": [
+        {
+          "key": "a",
+          "text": "hình vuông"
+        },
+        {
+          "key": "b",
+          "text": "hình chữ nhật"
+        },
+        {
+          "key": "c",
+          "text": "hình tròn"
+        },
+        {
+          "key": "d",
+          "text": "hình tam giác"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là hình tam giác.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-hinh-hoc-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các hình có 4 cạnh.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hình chữ nhật"
+        },
+        {
+          "key": "b",
+          "text": "hình vuông"
+        },
+        {
+          "key": "c",
+          "text": "hình tròn"
+        },
+        {
+          "key": "d",
+          "text": "hình tam giác"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Hình vuông và hình chữ nhật đều có 4 cạnh.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-hinh-hoc-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các hình có 4 cạnh bằng nhau.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hình tròn"
+        },
+        {
+          "key": "b",
+          "text": "hình vuông"
+        },
+        {
+          "key": "c",
+          "text": "hình thoi"
+        },
+        {
+          "key": "d",
+          "text": "hình tam giác"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Hình vuông và hình thoi đều có 4 cạnh bằng nhau.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-hinh-hoc-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các hình có chu vi 12 cm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hình chữ nhật 2 cm × 3 cm"
+        },
+        {
+          "key": "b",
+          "text": "hình tam giác đều cạnh 4 cm"
+        },
+        {
+          "key": "c",
+          "text": "hình tròn"
+        },
+        {
+          "key": "d",
+          "text": "hình vuông cạnh 3 cm"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Hình vuông cạnh 3 cm có chu vi 12 cm; tam giác đều cạnh 4 cm có chu vi 12 cm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-hinh-hoc-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các hình có các cạnh.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hình tròn"
+        },
+        {
+          "key": "b",
+          "text": "đoạn thẳng"
+        },
+        {
+          "key": "c",
+          "text": "hình tam giác"
+        },
+        {
+          "key": "d",
+          "text": "hình tứ giác"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Hình tam giác và hình tứ giác là các hình có cạnh.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-hinh-hoc-017",
+      "type": "true_false",
+      "prompt": "Hình vuông có 4 cạnh bằng nhau.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Hình vuông có 4 cạnh bằng nhau. là đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-hinh-hoc-018",
+      "type": "true_false",
+      "prompt": "Hình tam giác có 4 cạnh.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Hình tam giác có 3 cạnh, không phải 4 cạnh.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-hinh-hoc-019",
+      "type": "true_false",
+      "prompt": "Hình chữ nhật có 4 góc vuông.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Hình chữ nhật có 4 góc vuông. là đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-hinh-hoc-020",
+      "type": "true_false",
+      "prompt": "Hình vuông cạnh 2 cm có chu vi 8 cm.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Hình vuông cạnh 2 cm có chu vi 8 cm. là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-hinh-hoc-021",
+      "type": "fill_in",
+      "prompt": "Hình vuông có cạnh 4 cm. Chu vi là ___ cm.",
+      "answer": {
+        "accepted": [
+          "16"
+        ]
+      },
+      "explanation": "Đáp án là 16.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-hinh-hoc-022",
+      "type": "fill_in",
+      "prompt": "Hình chữ nhật dài 6 cm, rộng 4 cm. Chu vi là ___ cm.",
+      "answer": {
+        "accepted": [
+          "20"
+        ]
+      },
+      "explanation": "Đáp án là 20.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-hinh-hoc-023",
+      "type": "fill_in",
+      "prompt": "Hình tam giác có ba cạnh 3 cm, 4 cm, 5 cm. Chu vi là ___ cm.",
+      "answer": {
+        "accepted": [
+          "12"
+        ]
+      },
+      "explanation": "Đáp án là 12.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-hinh-hoc-024",
+      "type": "fill_in",
+      "prompt": "Hình vuông có ___ cạnh.",
+      "answer": {
+        "accepted": [
+          "4"
+        ]
+      },
+      "explanation": "Đáp án là 4.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-hinh-hoc-025",
+      "type": "fill_in",
+      "prompt": "Hình tam giác có ___ góc.",
+      "answer": {
+        "accepted": [
+          "3"
+        ]
+      },
+      "explanation": "Đáp án là 3.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

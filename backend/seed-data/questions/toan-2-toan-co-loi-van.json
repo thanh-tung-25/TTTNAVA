@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "toan-2-toan-co-loi-van",
+    "subjectId": "toan",
+    "grade": 2,
+    "slug": "toan-co-loi-van",
+    "name": "Toán có lời văn",
+    "sortOrder": 6
+  },
+  "questions": [
+    {
+      "id": "toan-2-toan-co-loi-van-001",
+      "type": "single_choice",
+      "prompt": "Lớp 2A có 28 bạn, lớp 2B có 27 bạn. Cả hai lớp có bao nhiêu bạn?",
+      "options": [
+        {
+          "key": "a",
+          "text": "55"
+        },
+        {
+          "key": "b",
+          "text": "57"
+        },
+        {
+          "key": "c",
+          "text": "56"
+        },
+        {
+          "key": "d",
+          "text": "54"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 55.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-002",
+      "type": "single_choice",
+      "prompt": "Mẹ mua 45 quả trứng, dùng 18 quả. Còn lại bao nhiêu quả?",
+      "options": [
+        {
+          "key": "a",
+          "text": "28"
+        },
+        {
+          "key": "b",
+          "text": "27"
+        },
+        {
+          "key": "c",
+          "text": "29"
+        },
+        {
+          "key": "d",
+          "text": "26"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 27.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-003",
+      "type": "single_choice",
+      "prompt": "Một cửa hàng có 63 cái áo, bán 29 cái. Còn lại bao nhiêu cái áo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "35"
+        },
+        {
+          "key": "b",
+          "text": "36"
+        },
+        {
+          "key": "c",
+          "text": "34"
+        },
+        {
+          "key": "d",
+          "text": "33"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 34.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-004",
+      "type": "single_choice",
+      "prompt": "Hà có 36 nhãn vở, Mai có ít hơn Hà 8 nhãn vở. Mai có bao nhiêu nhãn vở?",
+      "options": [
+        {
+          "key": "a",
+          "text": "27"
+        },
+        {
+          "key": "b",
+          "text": "29"
+        },
+        {
+          "key": "c",
+          "text": "30"
+        },
+        {
+          "key": "d",
+          "text": "28"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 28.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-005",
+      "type": "single_choice",
+      "prompt": "Nam có 24 viên bi, Bình có nhiều hơn Nam 9 viên. Bình có bao nhiêu viên bi?",
+      "options": [
+        {
+          "key": "a",
+          "text": "33"
+        },
+        {
+          "key": "b",
+          "text": "34"
+        },
+        {
+          "key": "c",
+          "text": "35"
+        },
+        {
+          "key": "d",
+          "text": "32"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 33.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-006",
+      "type": "single_choice",
+      "prompt": "Mỗi hộp có 5 chiếc bánh. 6 hộp có bao nhiêu chiếc bánh?",
+      "options": [
+        {
+          "key": "a",
+          "text": "31"
+        },
+        {
+          "key": "b",
+          "text": "30"
+        },
+        {
+          "key": "c",
+          "text": "32"
+        },
+        {
+          "key": "d",
+          "text": "29"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 30.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-007",
+      "type": "single_choice",
+      "prompt": "Có 20 học sinh xếp đều thành 4 hàng. Mỗi hàng có bao nhiêu học sinh?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 5.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-008",
+      "type": "single_choice",
+      "prompt": "Một sợi dây dài 80 cm, cắt đi 35 cm. Còn lại bao nhiêu xăng-ti-mét?",
+      "options": [
+        {
+          "key": "a",
+          "text": "46"
+        },
+        {
+          "key": "b",
+          "text": "47"
+        },
+        {
+          "key": "c",
+          "text": "44"
+        },
+        {
+          "key": "d",
+          "text": "45"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 45.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-009",
+      "type": "single_choice",
+      "prompt": "Có 3 giỏ, mỗi giỏ đựng 9 quả táo. Có tất cả bao nhiêu quả táo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "27"
+        },
+        {
+          "key": "b",
+          "text": "26"
+        },
+        {
+          "key": "c",
+          "text": "28"
+        },
+        {
+          "key": "d",
+          "text": "29"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 27.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-010",
+      "type": "single_choice",
+      "prompt": "Có 32 quyển vở chia đều cho 4 bạn. Mỗi bạn được bao nhiêu quyển?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "8"
+        },
+        {
+          "key": "c",
+          "text": "9"
+        },
+        {
+          "key": "d",
+          "text": "10"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 8.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-011",
+      "type": "single_choice",
+      "prompt": "Buổi sáng bán 26 kg gạo, buổi chiều bán 37 kg. Cả ngày bán bao nhiêu ki-lô-gam gạo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "64"
+        },
+        {
+          "key": "b",
+          "text": "65"
+        },
+        {
+          "key": "c",
+          "text": "63"
+        },
+        {
+          "key": "d",
+          "text": "62"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 63.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-012",
+      "type": "single_choice",
+      "prompt": "Một lớp có 35 học sinh, trong đó 16 bạn nữ. Có bao nhiêu bạn nam?",
+      "options": [
+        {
+          "key": "a",
+          "text": "20"
+        },
+        {
+          "key": "b",
+          "text": "18"
+        },
+        {
+          "key": "c",
+          "text": "21"
+        },
+        {
+          "key": "d",
+          "text": "19"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 19.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính cộng, trừ đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "63 - 29 = 35"
+        },
+        {
+          "key": "b",
+          "text": "45 - 18 = 27"
+        },
+        {
+          "key": "c",
+          "text": "28 + 27 = 55"
+        },
+        {
+          "key": "d",
+          "text": "36 + 29 = 64"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "28 + 27 = 55 và 45 - 18 = 27 là đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính nhân, chia đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "5 × 6 = 30"
+        },
+        {
+          "key": "b",
+          "text": "18 : 3 = 5"
+        },
+        {
+          "key": "c",
+          "text": "4 × 7 = 30"
+        },
+        {
+          "key": "d",
+          "text": "20 : 4 = 5"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "5 × 6 = 30 và 20 : 4 = 5 là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "24 + 9 = 33"
+        },
+        {
+          "key": "b",
+          "text": "30 - 12 = 17"
+        },
+        {
+          "key": "c",
+          "text": "36 - 8 = 28"
+        },
+        {
+          "key": "d",
+          "text": "15 + 8 = 24"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "36 - 8 = 28 và 24 + 9 = 33 là đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính đúng trong các đáp án sau.",
+      "options": [
+        {
+          "key": "a",
+          "text": "3 × 9 = 27"
+        },
+        {
+          "key": "b",
+          "text": "50 - 15 = 30"
+        },
+        {
+          "key": "c",
+          "text": "80 - 35 = 45"
+        },
+        {
+          "key": "d",
+          "text": "4 × 8 = 36"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "80 - 35 = 45 và 3 × 9 = 27 là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-017",
+      "type": "true_false",
+      "prompt": "Có 20 cái kẹo chia đều cho 4 bạn thì mỗi bạn được 5 cái.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Có 20 cái kẹo chia đều cho 4 bạn thì mỗi bạn được 5 cái. là đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-018",
+      "type": "true_false",
+      "prompt": "Mỗi hộp 3 bút, 5 hộp có 15 bút.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Mỗi hộp 3 bút, 5 hộp có 15 bút. là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-019",
+      "type": "true_false",
+      "prompt": "Có 45 quả, bán 20 quả thì còn 35 quả.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "45 - 20 = 25, không phải 35.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-020",
+      "type": "true_false",
+      "prompt": "32 học sinh xếp 4 hàng thì mỗi hàng có 8 học sinh.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "32 học sinh xếp 4 hàng thì mỗi hàng có 8 học sinh. là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-021",
+      "type": "fill_in",
+      "prompt": "Có 24 quả bóng, thêm 18 quả. Có tất cả ___ quả bóng.",
+      "answer": {
+        "accepted": [
+          "42"
+        ]
+      },
+      "explanation": "Đáp án là 42.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-022",
+      "type": "fill_in",
+      "prompt": "Có 50 cái kẹo, chia đều cho 5 bạn. Mỗi bạn được ___ cái kẹo.",
+      "answer": {
+        "accepted": [
+          "10"
+        ]
+      },
+      "explanation": "Đáp án là 10.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-023",
+      "type": "fill_in",
+      "prompt": "Mỗi hộp có 4 bút chì. 7 hộp có ___ bút chì.",
+      "answer": {
+        "accepted": [
+          "28"
+        ]
+      },
+      "explanation": "Đáp án là 28.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-024",
+      "type": "fill_in",
+      "prompt": "Có 60 quả cam, bán 25 quả. Còn ___ quả cam.",
+      "answer": {
+        "accepted": [
+          "35"
+        ]
+      },
+      "explanation": "Đáp án là 35.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-toan-co-loi-van-025",
+      "type": "fill_in",
+      "prompt": "Lớp có 31 học sinh, thêm 8 học sinh. Có ___ học sinh.",
+      "answer": {
+        "accepted": [
+          "39"
+        ]
+      },
+      "explanation": "Đáp án là 39.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

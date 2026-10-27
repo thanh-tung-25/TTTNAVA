@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thách đấu — Bé Học Vui</title>
+  <link rel="icon" href="/assets/avatars/cu.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
+</head>
+<body>
+  <header id="app-header"></header>
+  <main class="page">
+    <section id="lobby-view">
+      <div class="page-head">
+        <div>
+          <p class="eyebrow">Thách đấu 1 – 1</p>
+          <h1>Cùng thi tài với bạn bè</h1>
+          <p>Trả lời đúng nhiều hơn để thắng. Sai ít hơn sẽ thắng khi số câu đúng bằng nhau.</p>
+        </div>
+        <button class="btn btn-ghost btn-sm" id="refresh-lobby" type="button">↻ Làm mới</button>
+      </div>
+
+      <div id="active-banner"></div>
+
+      <div class="grid grid-2">
+        <section class="card">
+          <div class="card-head"><h2>Lời mời đến</h2></div>
+          <div id="incoming-list"><div class="loading">Đang tải…</div></div>
+        </section>
+        <section class="card">
+          <div class="card-head"><h2>Lời mời đã gửi</h2></div>
+          <div id="outgoing-list"><div class="loading">Đang tải…</div></div>
+        </section>
+      </div>
+
+      <section class="card">
+        <div class="card-head"><h2>Mời bạn thi đấu</h2></div>
+        <form id="invite-form">
+          <div class="grid grid-2">
+            <div class="field">
+              <label for="opponent-username">Tên đăng nhập của bạn</label>
+              <input class="input" id="opponent-username" name="username" placeholder="Ví dụ: be_minh" maxlength="20" required>
+            </div>
+            <div class="field">
+              <label for="invite-duration">Thời gian</label>
+              <select class="select" id="invite-duration" name="duration">
+                <option value="300">5 phút</option>
+                <option value="600" selected>10 phút</option>
+                <option value="900">15 phút</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="invite-topic">Chủ đề</label>
+            <select class="select" id="invite-topic" name="topic" required></select>
+          </div>
+          <div class="form-error hidden" id="invite-error" role="alert"></div>
+          <button class="btn" type="submit" id="invite-button">Gửi lời mời</button>
+        </form>
+      </section>
+
+      <section class="card robot-card">
+        <div class="card-head">
+          <div>
+            <h2>🤖 Thách đấu Robot</h2>
+            <p class="muted" style="margin:0;font-size:.85rem">Robot Thách Đấu luôn sẵn sàng. Con chọn mức độ nhé!</p>
+          </div>
+        </div>
+        <div class="field">
+          <label for="robot-topic">Chủ đề</label>
+          <select class="select" id="robot-topic" required></select>
+        </div>
+        <div class="field">
+          <label>Mức độ</label>
+          <div class="level-grid" id="robot-levels" role="group" aria-label="Mức độ Robot">
+            <button class="level-btn" type="button" data-level="easy" aria-pressed="true"><strong>Dễ</strong><span>Đúng 50%</span></button>
+            <button class="level-btn" type="button" data-level="medium" aria-pressed="false"><strong>Vừa</strong><span>Đúng 70%</span></button>
+            <button class="level-btn" type="button" data-level="hard" aria-pressed="false"><strong>Khó</strong><span>Đúng 85%</span></button>
+          </div>
+        </div>
+        <div class="field">
+          <label for="robot-duration">Thời gian</label>
+          <select class="select" id="robot-duration">
+            <option value="300">5 phút</option>
+            <option value="600" selected>10 phút</option>
+            <option value="900">15 phút</option>
+          </select>
+        </div>
+        <button class="btn" type="button" id="robot-button">Thi với Robot</button>
+      </section>
+
+      <section class="card">
+        <div class="card-head"><h2>Trận gần đây</h2></div>
+        <div id="recent-list"><div class="loading">Đang tải…</div></div>
+      </section>
+    </section>
+
+    <section id="match-view" class="hidden">
+      <div class="duel-banner">
+        <div class="duel-players" style="flex:1">
+          <div class="duel-player" id="me-player"></div>
+          <div class="duel-vs">VS</div>
+          <div class="duel-player" id="opponent-player"></div>
+        </div>
+      </div>
+      <div class="quiz-top">
+        <div class="quiz-meta">
+          <span class="badge" id="match-topic">Trận đấu</span>
+          <span class="badge badge-muted" id="match-status">Đang chờ</span>
+        </div>
+        <div class="timer" id="match-timer">--:--</div>
+      </div>
+      <div id="match-body"></div>
+      <div class="quiz-actions" style="justify-content:space-between;margin-top:1rem">
+        <button class="btn btn-ghost btn-sm" id="leave-match" type="button">← Về sảnh</button>
+        <button class="btn btn-danger btn-sm" id="forfeit-button" type="button">Bỏ trận</button>
+      </div>
+    </section>
+  </main>
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="module" src="/assets/js/challenge.js"></script>
+</body>
+</html>

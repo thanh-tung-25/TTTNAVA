@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thi — Bé Học Vui</title>
+  <link rel="icon" href="/assets/avatars/cu.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
+</head>
+<body>
+  <header id="app-header"></header>
+  <main class="page">
+    <section id="setup-view">
+      <div class="page-head">
+        <div>
+          <p class="eyebrow">Bài thi</p>
+          <h1>Thử sức với bài thi 15 phút</h1>
+          <p>20 câu hỏi. Chưa biết đúng sai cho đến khi nộp bài. Con bình tĩnh nhé!</p>
+        </div>
+      </div>
+      <div class="tabs" id="subject-tabs" role="tablist" aria-label="Chọn môn học"></div>
+      <div id="topic-list" class="topic-list"><div class="loading">Đang tải chủ đề…</div></div>
+    </section>
+
+    <section id="exam-view" class="hidden">
+      <div class="quiz-top">
+        <div class="quiz-meta">
+          <span class="badge" id="exam-topic">Bài thi</span>
+          <span class="badge badge-muted" id="exam-progress">Câu 1/20</span>
+          <span class="badge badge-success" id="exam-answered">Đã làm 0/20</span>
+        </div>
+        <div class="timer" id="exam-timer" aria-live="off">15:00</div>
+      </div>
+      <div class="progress" aria-hidden="true"><span id="exam-bar"></span></div>
+      <article class="card question-card">
+        <span class="question-type" id="question-type"></span>
+        <h2 class="question-prompt" id="question-prompt"></h2>
+        <div id="answer-area"></div>
+        <div class="quiz-actions">
+          <button class="btn btn-ghost" id="prev-button" type="button">← Câu trước</button>
+          <button class="btn" id="next-button" type="button">Câu tiếp →</button>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-head">
+          <h2>Danh sách câu</h2>
+          <button class="btn btn-danger btn-sm" id="submit-button" type="button">Nộp bài</button>
+        </div>
+        <div class="tabs" id="question-palette" style="flex-wrap:wrap;overflow:visible"></div>
+      </article>
+    </section>
+
+    <section id="result-view" class="hidden">
+      <article class="card">
+        <div class="result-hero">
+          <span class="result-emoji" id="result-emoji">🎉</span>
+          <h1 id="result-title">Đã nộp bài!</h1>
+          <p class="muted" id="result-message"></p>
+          <div class="result-score"><span id="result-percent">0</span><small>%</small></div>
+          <div class="result-stats">
+            <span class="badge badge-success" id="result-correct"></span>
+            <span class="badge badge-warning" id="result-diamonds"></span>
+          </div>
+        </div>
+        <div class="quiz-actions" style="justify-content:center">
+          <a class="btn" href="/pages/student/exam/">Thi chủ đề khác</a>
+          <a class="btn btn-ghost" href="/pages/student/history/?tab=exam">Lịch sử thi</a>
+        </div>
+      </article>
+      <article class="card">
+        <h2>Xem lại bài làm</h2>
+        <div id="review-list" class="review-list"></div>
+      </article>
+    </section>
+  </main>
+  <script type="module" src="/assets/js/exam.js"></script>
+</body>
+</html>

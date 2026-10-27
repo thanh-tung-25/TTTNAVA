@@ -1,0 +1,2537 @@
+{
+  "topic": {
+    "id": "tieng-viet-5-tu-loai",
+    "subjectId": "tieng-viet",
+    "grade": 5,
+    "slug": "tu-loai",
+    "name": "Từ loại",
+    "sortOrder": 6
+  },
+  "questions": [
+    {
+      "id": "tieng-viet-5-tu-loai-001",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: bàn, chạy, đẹp, rất?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bàn"
+        },
+        {
+          "key": "b",
+          "text": "đẹp"
+        },
+        {
+          "key": "c",
+          "text": "rất"
+        },
+        {
+          "key": "d",
+          "text": "chạy"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'bàn' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-002",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: sách, học, xanh, và?",
+      "options": [
+        {
+          "key": "a",
+          "text": "xanh"
+        },
+        {
+          "key": "b",
+          "text": "sách"
+        },
+        {
+          "key": "c",
+          "text": "và"
+        },
+        {
+          "key": "d",
+          "text": "học"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'sách' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-003",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: mèo, bơi, cao, của?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cao"
+        },
+        {
+          "key": "b",
+          "text": "của"
+        },
+        {
+          "key": "c",
+          "text": "mèo"
+        },
+        {
+          "key": "d",
+          "text": "bơi"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'mèo' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-004",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: mẹ, hát, nhanh, tôi?",
+      "options": [
+        {
+          "key": "a",
+          "text": "tôi"
+        },
+        {
+          "key": "b",
+          "text": "hát"
+        },
+        {
+          "key": "c",
+          "text": "nhanh"
+        },
+        {
+          "key": "d",
+          "text": "mẹ"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'mẹ' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-005",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: cây, viết, tốt, nhưng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cây"
+        },
+        {
+          "key": "b",
+          "text": "viết"
+        },
+        {
+          "key": "c",
+          "text": "tốt"
+        },
+        {
+          "key": "d",
+          "text": "nhưng"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'cây' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-006",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: trường, đi, vui, để?",
+      "options": [
+        {
+          "key": "a",
+          "text": "vui"
+        },
+        {
+          "key": "b",
+          "text": "trường"
+        },
+        {
+          "key": "c",
+          "text": "đi"
+        },
+        {
+          "key": "d",
+          "text": "để"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'trường' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-007",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: hoa, nở, thơm, rất?",
+      "options": [
+        {
+          "key": "a",
+          "text": "thơm"
+        },
+        {
+          "key": "b",
+          "text": "nở"
+        },
+        {
+          "key": "c",
+          "text": "hoa"
+        },
+        {
+          "key": "d",
+          "text": "rất"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'hoa' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-008",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: nước, uống, mát, với?",
+      "options": [
+        {
+          "key": "a",
+          "text": "uống"
+        },
+        {
+          "key": "b",
+          "text": "với"
+        },
+        {
+          "key": "c",
+          "text": "mát"
+        },
+        {
+          "key": "d",
+          "text": "nước"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'nước' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-009",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: chim, bay, nhỏ, nó?",
+      "options": [
+        {
+          "key": "a",
+          "text": "chim"
+        },
+        {
+          "key": "b",
+          "text": "nhỏ"
+        },
+        {
+          "key": "c",
+          "text": "nó"
+        },
+        {
+          "key": "d",
+          "text": "bay"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'chim' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-010",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: bút, vẽ, đỏ, mà?",
+      "options": [
+        {
+          "key": "a",
+          "text": "vẽ"
+        },
+        {
+          "key": "b",
+          "text": "bút"
+        },
+        {
+          "key": "c",
+          "text": "đỏ"
+        },
+        {
+          "key": "d",
+          "text": "mà"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'bút' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-011",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: nhà, xây, rộng, cho?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cho"
+        },
+        {
+          "key": "b",
+          "text": "xây"
+        },
+        {
+          "key": "c",
+          "text": "nhà"
+        },
+        {
+          "key": "d",
+          "text": "rộng"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'nhà' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-012",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: cơm, nấu, ngon, vì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nấu"
+        },
+        {
+          "key": "b",
+          "text": "vì"
+        },
+        {
+          "key": "c",
+          "text": "ngon"
+        },
+        {
+          "key": "d",
+          "text": "cơm"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'cơm' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-013",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: bạn, đọc, chăm, họ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bạn"
+        },
+        {
+          "key": "b",
+          "text": "đọc"
+        },
+        {
+          "key": "c",
+          "text": "họ"
+        },
+        {
+          "key": "d",
+          "text": "chăm"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'bạn' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-014",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: bố, làm, khỏe, nếu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "khỏe"
+        },
+        {
+          "key": "b",
+          "text": "bố"
+        },
+        {
+          "key": "c",
+          "text": "nếu"
+        },
+        {
+          "key": "d",
+          "text": "làm"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'bố' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-015",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: ghế, ngồi, mới, và?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mới"
+        },
+        {
+          "key": "b",
+          "text": "và"
+        },
+        {
+          "key": "c",
+          "text": "ghế"
+        },
+        {
+          "key": "d",
+          "text": "ngồi"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'ghế' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-016",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là danh từ: em bé, cười, ngoan, của?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cười"
+        },
+        {
+          "key": "b",
+          "text": "ngoan"
+        },
+        {
+          "key": "c",
+          "text": "của"
+        },
+        {
+          "key": "d",
+          "text": "em bé"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'em bé' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-017",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: chạy, bàn, đẹp, rất?",
+      "options": [
+        {
+          "key": "a",
+          "text": "chạy"
+        },
+        {
+          "key": "b",
+          "text": "bàn"
+        },
+        {
+          "key": "c",
+          "text": "rất"
+        },
+        {
+          "key": "d",
+          "text": "đẹp"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'chạy' là động từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-018",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: học, sách, xanh, và?",
+      "options": [
+        {
+          "key": "a",
+          "text": "và"
+        },
+        {
+          "key": "b",
+          "text": "học"
+        },
+        {
+          "key": "c",
+          "text": "xanh"
+        },
+        {
+          "key": "d",
+          "text": "sách"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'học' là động từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-019",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: bơi, cá, cao, của?",
+      "options": [
+        {
+          "key": "a",
+          "text": "của"
+        },
+        {
+          "key": "b",
+          "text": "cá"
+        },
+        {
+          "key": "c",
+          "text": "bơi"
+        },
+        {
+          "key": "d",
+          "text": "cao"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'bơi' là động từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-020",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: hát, mẹ, nhanh, tôi?",
+      "options": [
+        {
+          "key": "a",
+          "text": "tôi"
+        },
+        {
+          "key": "b",
+          "text": "nhanh"
+        },
+        {
+          "key": "c",
+          "text": "mẹ"
+        },
+        {
+          "key": "d",
+          "text": "hát"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'hát' là động từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-021",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: viết, cây, tốt, nhưng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "viết"
+        },
+        {
+          "key": "b",
+          "text": "cây"
+        },
+        {
+          "key": "c",
+          "text": "tốt"
+        },
+        {
+          "key": "d",
+          "text": "nhưng"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'viết' là động từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-022",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: đi, trường, vui, để?",
+      "options": [
+        {
+          "key": "a",
+          "text": "vui"
+        },
+        {
+          "key": "b",
+          "text": "đi"
+        },
+        {
+          "key": "c",
+          "text": "để"
+        },
+        {
+          "key": "d",
+          "text": "trường"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'đi' là động từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-023",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: nở, hoa, thơm, với?",
+      "options": [
+        {
+          "key": "a",
+          "text": "thơm"
+        },
+        {
+          "key": "b",
+          "text": "hoa"
+        },
+        {
+          "key": "c",
+          "text": "nở"
+        },
+        {
+          "key": "d",
+          "text": "với"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'nở' là động từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-024",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: uống, nước, mát, nó?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nước"
+        },
+        {
+          "key": "b",
+          "text": "nó"
+        },
+        {
+          "key": "c",
+          "text": "mát"
+        },
+        {
+          "key": "d",
+          "text": "uống"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'uống' là động từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-025",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: bay, chim, nhỏ, mà?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bay"
+        },
+        {
+          "key": "b",
+          "text": "mà"
+        },
+        {
+          "key": "c",
+          "text": "chim"
+        },
+        {
+          "key": "d",
+          "text": "nhỏ"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'bay' là động từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-026",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: vẽ, bút, đỏ, cho?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cho"
+        },
+        {
+          "key": "b",
+          "text": "vẽ"
+        },
+        {
+          "key": "c",
+          "text": "đỏ"
+        },
+        {
+          "key": "d",
+          "text": "bút"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'vẽ' là động từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-027",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: xây, nhà, rộng, vì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nhà"
+        },
+        {
+          "key": "b",
+          "text": "rộng"
+        },
+        {
+          "key": "c",
+          "text": "xây"
+        },
+        {
+          "key": "d",
+          "text": "vì"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'xây' là động từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-028",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: nấu, cơm, ngon, họ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "họ"
+        },
+        {
+          "key": "b",
+          "text": "ngon"
+        },
+        {
+          "key": "c",
+          "text": "cơm"
+        },
+        {
+          "key": "d",
+          "text": "nấu"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'nấu' là động từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-029",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: đọc, bạn, chăm, nếu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "đọc"
+        },
+        {
+          "key": "b",
+          "text": "bạn"
+        },
+        {
+          "key": "c",
+          "text": "nếu"
+        },
+        {
+          "key": "d",
+          "text": "chăm"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'đọc' là động từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-030",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: làm, bố, khỏe, và?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bố"
+        },
+        {
+          "key": "b",
+          "text": "làm"
+        },
+        {
+          "key": "c",
+          "text": "và"
+        },
+        {
+          "key": "d",
+          "text": "khỏe"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'làm' là động từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-031",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: ngồi, ghế, mới, của?",
+      "options": [
+        {
+          "key": "a",
+          "text": "của"
+        },
+        {
+          "key": "b",
+          "text": "mới"
+        },
+        {
+          "key": "c",
+          "text": "ngồi"
+        },
+        {
+          "key": "d",
+          "text": "ghế"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'ngồi' là động từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-032",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là động từ: cười, em bé, ngoan, rất?",
+      "options": [
+        {
+          "key": "a",
+          "text": "em bé"
+        },
+        {
+          "key": "b",
+          "text": "rất"
+        },
+        {
+          "key": "c",
+          "text": "ngoan"
+        },
+        {
+          "key": "d",
+          "text": "cười"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'cười' là động từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-033",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là tính từ: đẹp, bàn, chạy, và?",
+      "options": [
+        {
+          "key": "a",
+          "text": "đẹp"
+        },
+        {
+          "key": "b",
+          "text": "và"
+        },
+        {
+          "key": "c",
+          "text": "bàn"
+        },
+        {
+          "key": "d",
+          "text": "chạy"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'đẹp' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-034",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là tính từ: xanh, sách, học, của?",
+      "options": [
+        {
+          "key": "a",
+          "text": "sách"
+        },
+        {
+          "key": "b",
+          "text": "xanh"
+        },
+        {
+          "key": "c",
+          "text": "học"
+        },
+        {
+          "key": "d",
+          "text": "của"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'xanh' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-035",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là tính từ: cao, mèo, bơi, tôi?",
+      "options": [
+        {
+          "key": "a",
+          "text": "tôi"
+        },
+        {
+          "key": "b",
+          "text": "mèo"
+        },
+        {
+          "key": "c",
+          "text": "cao"
+        },
+        {
+          "key": "d",
+          "text": "bơi"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'cao' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-036",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là tính từ: nhanh, mẹ, hát, nhưng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mẹ"
+        },
+        {
+          "key": "b",
+          "text": "hát"
+        },
+        {
+          "key": "c",
+          "text": "nhưng"
+        },
+        {
+          "key": "d",
+          "text": "nhanh"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'nhanh' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-037",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là tính từ: tốt, cây, viết, để?",
+      "options": [
+        {
+          "key": "a",
+          "text": "tốt"
+        },
+        {
+          "key": "b",
+          "text": "để"
+        },
+        {
+          "key": "c",
+          "text": "viết"
+        },
+        {
+          "key": "d",
+          "text": "cây"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'tốt' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-038",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là tính từ: vui, trường, đi, với?",
+      "options": [
+        {
+          "key": "a",
+          "text": "đi"
+        },
+        {
+          "key": "b",
+          "text": "vui"
+        },
+        {
+          "key": "c",
+          "text": "trường"
+        },
+        {
+          "key": "d",
+          "text": "với"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'vui' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-039",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là tính từ: thơm, hoa, nở, nó?",
+      "options": [
+        {
+          "key": "a",
+          "text": "hoa"
+        },
+        {
+          "key": "b",
+          "text": "nó"
+        },
+        {
+          "key": "c",
+          "text": "thơm"
+        },
+        {
+          "key": "d",
+          "text": "nở"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'thơm' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-040",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là tính từ: mát, nước, uống, mà?",
+      "options": [
+        {
+          "key": "a",
+          "text": "uống"
+        },
+        {
+          "key": "b",
+          "text": "nước"
+        },
+        {
+          "key": "c",
+          "text": "mà"
+        },
+        {
+          "key": "d",
+          "text": "mát"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'mát' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-041",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là tính từ: nhỏ, chim, bay, cho?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nhỏ"
+        },
+        {
+          "key": "b",
+          "text": "cho"
+        },
+        {
+          "key": "c",
+          "text": "bay"
+        },
+        {
+          "key": "d",
+          "text": "chim"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'nhỏ' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-042",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là tính từ: đỏ, bút, vẽ, vì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bút"
+        },
+        {
+          "key": "b",
+          "text": "đỏ"
+        },
+        {
+          "key": "c",
+          "text": "vì"
+        },
+        {
+          "key": "d",
+          "text": "vẽ"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'đỏ' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-043",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là tính từ: rộng, nhà, xây, họ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "họ"
+        },
+        {
+          "key": "b",
+          "text": "xây"
+        },
+        {
+          "key": "c",
+          "text": "rộng"
+        },
+        {
+          "key": "d",
+          "text": "nhà"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'rộng' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-044",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là tính từ: ngon, cơm, nấu, nếu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nấu"
+        },
+        {
+          "key": "b",
+          "text": "nếu"
+        },
+        {
+          "key": "c",
+          "text": "cơm"
+        },
+        {
+          "key": "d",
+          "text": "ngon"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'ngon' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-045",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là đại từ: tôi, bàn, chạy, đẹp?",
+      "options": [
+        {
+          "key": "a",
+          "text": "tôi"
+        },
+        {
+          "key": "b",
+          "text": "chạy"
+        },
+        {
+          "key": "c",
+          "text": "bàn"
+        },
+        {
+          "key": "d",
+          "text": "đẹp"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'tôi' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-046",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là đại từ: họ, sách, học, xanh?",
+      "options": [
+        {
+          "key": "a",
+          "text": "học"
+        },
+        {
+          "key": "b",
+          "text": "họ"
+        },
+        {
+          "key": "c",
+          "text": "sách"
+        },
+        {
+          "key": "d",
+          "text": "xanh"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'họ' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-047",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là đại từ: chúng tôi, mèo, bơi, cao?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mèo"
+        },
+        {
+          "key": "b",
+          "text": "bơi"
+        },
+        {
+          "key": "c",
+          "text": "chúng tôi"
+        },
+        {
+          "key": "d",
+          "text": "cao"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'chúng tôi' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-048",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là đại từ: nó, mẹ, hát, nhanh?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nhanh"
+        },
+        {
+          "key": "b",
+          "text": "mẹ"
+        },
+        {
+          "key": "c",
+          "text": "hát"
+        },
+        {
+          "key": "d",
+          "text": "nó"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'nó' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-049",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là quan hệ từ: và, cây, viết, tốt?",
+      "options": [
+        {
+          "key": "a",
+          "text": "và"
+        },
+        {
+          "key": "b",
+          "text": "cây"
+        },
+        {
+          "key": "c",
+          "text": "viết"
+        },
+        {
+          "key": "d",
+          "text": "tốt"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'và' là quan hệ từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-050",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là quan hệ từ: nhưng, trường, đi, vui?",
+      "options": [
+        {
+          "key": "a",
+          "text": "trường"
+        },
+        {
+          "key": "b",
+          "text": "nhưng"
+        },
+        {
+          "key": "c",
+          "text": "đi"
+        },
+        {
+          "key": "d",
+          "text": "vui"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'nhưng' là quan hệ từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-051",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là quan hệ từ: của, hoa, nở, thơm?",
+      "options": [
+        {
+          "key": "a",
+          "text": "hoa"
+        },
+        {
+          "key": "b",
+          "text": "nở"
+        },
+        {
+          "key": "c",
+          "text": "của"
+        },
+        {
+          "key": "d",
+          "text": "thơm"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'của' là quan hệ từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-052",
+      "type": "single_choice",
+      "prompt": "Trong các từ sau, từ nào là quan hệ từ: để, nước, uống, mát?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mát"
+        },
+        {
+          "key": "b",
+          "text": "uống"
+        },
+        {
+          "key": "c",
+          "text": "nước"
+        },
+        {
+          "key": "d",
+          "text": "để"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'để' là quan hệ từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-053",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các danh từ trong nhóm: bàn, chạy, sách, đẹp.",
+      "options": [
+        {
+          "key": "a",
+          "text": "đẹp"
+        },
+        {
+          "key": "b",
+          "text": "sách"
+        },
+        {
+          "key": "c",
+          "text": "chạy"
+        },
+        {
+          "key": "d",
+          "text": "bàn"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các danh từ là bàn, sách.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-054",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các danh từ trong nhóm: mèo, bơi, mẹ, cao.",
+      "options": [
+        {
+          "key": "a",
+          "text": "cao"
+        },
+        {
+          "key": "b",
+          "text": "mẹ"
+        },
+        {
+          "key": "c",
+          "text": "mèo"
+        },
+        {
+          "key": "d",
+          "text": "bơi"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các danh từ là mèo, mẹ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-055",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các danh từ trong nhóm: cây, viết, trường, tốt.",
+      "options": [
+        {
+          "key": "a",
+          "text": "viết"
+        },
+        {
+          "key": "b",
+          "text": "tốt"
+        },
+        {
+          "key": "c",
+          "text": "trường"
+        },
+        {
+          "key": "d",
+          "text": "cây"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các danh từ là cây, trường.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-056",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các danh từ trong nhóm: hoa, nở, nước, mát.",
+      "options": [
+        {
+          "key": "a",
+          "text": "mát"
+        },
+        {
+          "key": "b",
+          "text": "hoa"
+        },
+        {
+          "key": "c",
+          "text": "nước"
+        },
+        {
+          "key": "d",
+          "text": "nở"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các danh từ là hoa, nước.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-057",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các danh từ trong nhóm: chim, bay, bút, đỏ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "bút"
+        },
+        {
+          "key": "b",
+          "text": "đỏ"
+        },
+        {
+          "key": "c",
+          "text": "chim"
+        },
+        {
+          "key": "d",
+          "text": "bay"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các danh từ là chim, bút.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-058",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các động từ trong nhóm: chạy, bàn, học, xanh.",
+      "options": [
+        {
+          "key": "a",
+          "text": "chạy"
+        },
+        {
+          "key": "b",
+          "text": "học"
+        },
+        {
+          "key": "c",
+          "text": "xanh"
+        },
+        {
+          "key": "d",
+          "text": "bàn"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các động từ là chạy, học.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-059",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các động từ trong nhóm: bơi, cá, hát, nhanh.",
+      "options": [
+        {
+          "key": "a",
+          "text": "cá"
+        },
+        {
+          "key": "b",
+          "text": "bơi"
+        },
+        {
+          "key": "c",
+          "text": "nhanh"
+        },
+        {
+          "key": "d",
+          "text": "hát"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các động từ là bơi, hát.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-060",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các động từ trong nhóm: viết, cây, đi, vui.",
+      "options": [
+        {
+          "key": "a",
+          "text": "viết"
+        },
+        {
+          "key": "b",
+          "text": "đi"
+        },
+        {
+          "key": "c",
+          "text": "vui"
+        },
+        {
+          "key": "d",
+          "text": "cây"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các động từ là viết, đi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-061",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các động từ trong nhóm: nở, hoa, uống, mát.",
+      "options": [
+        {
+          "key": "a",
+          "text": "nở"
+        },
+        {
+          "key": "b",
+          "text": "mát"
+        },
+        {
+          "key": "c",
+          "text": "hoa"
+        },
+        {
+          "key": "d",
+          "text": "uống"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các động từ là nở, uống.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-062",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các động từ trong nhóm: bay, chim, vẽ, đỏ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "đỏ"
+        },
+        {
+          "key": "b",
+          "text": "vẽ"
+        },
+        {
+          "key": "c",
+          "text": "bay"
+        },
+        {
+          "key": "d",
+          "text": "chim"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các động từ là bay, vẽ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-063",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tính từ trong nhóm: đẹp, bàn, xanh, học.",
+      "options": [
+        {
+          "key": "a",
+          "text": "học"
+        },
+        {
+          "key": "b",
+          "text": "bàn"
+        },
+        {
+          "key": "c",
+          "text": "đẹp"
+        },
+        {
+          "key": "d",
+          "text": "xanh"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các tính từ là đẹp, xanh.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-064",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tính từ trong nhóm: cao, mèo, nhanh, bơi.",
+      "options": [
+        {
+          "key": "a",
+          "text": "bơi"
+        },
+        {
+          "key": "b",
+          "text": "mèo"
+        },
+        {
+          "key": "c",
+          "text": "nhanh"
+        },
+        {
+          "key": "d",
+          "text": "cao"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các tính từ là cao, nhanh.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-065",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tính từ trong nhóm: tốt, cây, vui, viết.",
+      "options": [
+        {
+          "key": "a",
+          "text": "cây"
+        },
+        {
+          "key": "b",
+          "text": "viết"
+        },
+        {
+          "key": "c",
+          "text": "vui"
+        },
+        {
+          "key": "d",
+          "text": "tốt"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các tính từ là tốt, vui.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-066",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tính từ trong nhóm: thơm, hoa, mát, uống.",
+      "options": [
+        {
+          "key": "a",
+          "text": "thơm"
+        },
+        {
+          "key": "b",
+          "text": "uống"
+        },
+        {
+          "key": "c",
+          "text": "mát"
+        },
+        {
+          "key": "d",
+          "text": "hoa"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các tính từ là thơm, mát.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-067",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tính từ trong nhóm: nhỏ, chim, đỏ, vẽ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "đỏ"
+        },
+        {
+          "key": "b",
+          "text": "vẽ"
+        },
+        {
+          "key": "c",
+          "text": "nhỏ"
+        },
+        {
+          "key": "d",
+          "text": "chim"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các tính từ là nhỏ, đỏ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-068",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các đại từ trong nhóm: tôi, bàn, họ, chạy.",
+      "options": [
+        {
+          "key": "a",
+          "text": "tôi"
+        },
+        {
+          "key": "b",
+          "text": "họ"
+        },
+        {
+          "key": "c",
+          "text": "chạy"
+        },
+        {
+          "key": "d",
+          "text": "bàn"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các đại từ là tôi, họ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-069",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các quan hệ từ trong nhóm: và, sách, nhưng, đẹp.",
+      "options": [
+        {
+          "key": "a",
+          "text": "nhưng"
+        },
+        {
+          "key": "b",
+          "text": "đẹp"
+        },
+        {
+          "key": "c",
+          "text": "sách"
+        },
+        {
+          "key": "d",
+          "text": "và"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các quan hệ từ là và, nhưng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-070",
+      "type": "true_false",
+      "prompt": "Từ 'bàn' là danh từ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'bàn' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-071",
+      "type": "true_false",
+      "prompt": "Từ 'chạy' là danh từ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, 'chạy' là động từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-072",
+      "type": "true_false",
+      "prompt": "Từ 'sách' là danh từ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'sách' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-073",
+      "type": "true_false",
+      "prompt": "Từ 'đẹp' là động từ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, 'đẹp' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-074",
+      "type": "true_false",
+      "prompt": "Từ 'học' là động từ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'học' là động từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-075",
+      "type": "true_false",
+      "prompt": "Từ 'mèo' là động từ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, 'mèo' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-076",
+      "type": "true_false",
+      "prompt": "Từ 'xanh' là tính từ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'xanh' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-077",
+      "type": "true_false",
+      "prompt": "Từ 'nhanh' là danh từ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, 'nhanh' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-078",
+      "type": "true_false",
+      "prompt": "Từ 'tôi' là đại từ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'tôi' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-079",
+      "type": "true_false",
+      "prompt": "Từ 'và' là tính từ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, 'và' là quan hệ từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-080",
+      "type": "true_false",
+      "prompt": "Từ 'nhưng' là quan hệ từ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'nhưng' là quan hệ từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-081",
+      "type": "true_false",
+      "prompt": "Từ 'của' là đại từ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, 'của' là quan hệ từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-082",
+      "type": "true_false",
+      "prompt": "Từ 'họ' là đại từ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'họ' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-083",
+      "type": "true_false",
+      "prompt": "Từ 'cây' là tính từ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, 'cây' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-084",
+      "type": "true_false",
+      "prompt": "Từ 'vui' là tính từ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'vui' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-085",
+      "type": "true_false",
+      "prompt": "Từ 'uống' là danh từ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, 'uống' là động từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-086",
+      "type": "true_false",
+      "prompt": "Từ 'để' là quan hệ từ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'để' là quan hệ từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-087",
+      "type": "fill_in",
+      "prompt": "Từ 'bàn' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "danh"
+        ]
+      },
+      "explanation": "'bàn' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-088",
+      "type": "fill_in",
+      "prompt": "Từ 'sách' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "danh"
+        ]
+      },
+      "explanation": "'sách' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-089",
+      "type": "fill_in",
+      "prompt": "Từ 'mèo' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "danh"
+        ]
+      },
+      "explanation": "'mèo' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-090",
+      "type": "fill_in",
+      "prompt": "Từ 'mẹ' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "danh"
+        ]
+      },
+      "explanation": "'mẹ' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-091",
+      "type": "fill_in",
+      "prompt": "Từ 'cây' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "danh"
+        ]
+      },
+      "explanation": "'cây' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-092",
+      "type": "fill_in",
+      "prompt": "Từ 'chạy' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "động"
+        ]
+      },
+      "explanation": "'chạy' là động từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-093",
+      "type": "fill_in",
+      "prompt": "Từ 'học' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "động"
+        ]
+      },
+      "explanation": "'học' là động từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-094",
+      "type": "fill_in",
+      "prompt": "Từ 'bơi' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "động"
+        ]
+      },
+      "explanation": "'bơi' là động từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-095",
+      "type": "fill_in",
+      "prompt": "Từ 'hát' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "động"
+        ]
+      },
+      "explanation": "'hát' là động từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-096",
+      "type": "fill_in",
+      "prompt": "Từ 'viết' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "động"
+        ]
+      },
+      "explanation": "'viết' là động từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-097",
+      "type": "fill_in",
+      "prompt": "Từ 'đẹp' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "tính"
+        ]
+      },
+      "explanation": "'đẹp' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-098",
+      "type": "fill_in",
+      "prompt": "Từ 'xanh' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "tính"
+        ]
+      },
+      "explanation": "'xanh' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-099",
+      "type": "fill_in",
+      "prompt": "Từ 'cao' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "tính"
+        ]
+      },
+      "explanation": "'cao' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-100",
+      "type": "fill_in",
+      "prompt": "Từ 'nhanh' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "tính"
+        ]
+      },
+      "explanation": "'nhanh' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-101",
+      "type": "fill_in",
+      "prompt": "Từ 'tốt' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "tính"
+        ]
+      },
+      "explanation": "'tốt' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-102",
+      "type": "fill_in",
+      "prompt": "Từ 'tôi' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "đại"
+        ]
+      },
+      "explanation": "'tôi' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-103",
+      "type": "fill_in",
+      "prompt": "Từ 'họ' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "đại"
+        ]
+      },
+      "explanation": "'họ' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-104",
+      "type": "fill_in",
+      "prompt": "Từ 'chúng tôi' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "đại"
+        ]
+      },
+      "explanation": "'chúng tôi' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-105",
+      "type": "fill_in",
+      "prompt": "Từ 'nó' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "đại"
+        ]
+      },
+      "explanation": "'nó' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-106",
+      "type": "fill_in",
+      "prompt": "Từ 'và' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "quan hệ"
+        ]
+      },
+      "explanation": "'và' là quan hệ từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-107",
+      "type": "fill_in",
+      "prompt": "Từ 'nhưng' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "quan hệ"
+        ]
+      },
+      "explanation": "'nhưng' là quan hệ từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-tu-loai-108",
+      "type": "fill_in",
+      "prompt": "Từ 'của' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "quan hệ"
+        ]
+      },
+      "explanation": "'của' là quan hệ từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

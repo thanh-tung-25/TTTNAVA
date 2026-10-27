@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "toan-4-phan-so",
+    "subjectId": "toan",
+    "grade": 4,
+    "slug": "phan-so",
+    "name": "Phân số",
+    "sortOrder": 4
+  },
+  "questions": [
+    {
+      "id": "toan-4-phan-so-001",
+      "type": "single_choice",
+      "prompt": "Phân số 3/4 có tử số là số nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 3.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-phan-so-002",
+      "type": "single_choice",
+      "prompt": "Phân số 5/7 có mẫu số là số nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "9"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "6"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 7.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-phan-so-003",
+      "type": "single_choice",
+      "prompt": "Phân số nào lớn hơn: 3/4 hay 2/4?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2/4"
+        },
+        {
+          "key": "b",
+          "text": "bằng nhau"
+        },
+        {
+          "key": "c",
+          "text": "3/4"
+        },
+        {
+          "key": "d",
+          "text": "1/4"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 3/4.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-phan-so-004",
+      "type": "single_choice",
+      "prompt": "Phân số 2/4 bằng phân số nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2/3"
+        },
+        {
+          "key": "b",
+          "text": "3/4"
+        },
+        {
+          "key": "c",
+          "text": "1/4"
+        },
+        {
+          "key": "d",
+          "text": "1/2"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 1/2.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-phan-so-005",
+      "type": "single_choice",
+      "prompt": "1/3 của 12 là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "6"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 4.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-phan-so-006",
+      "type": "single_choice",
+      "prompt": "2/5 của 20 là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "8"
+        },
+        {
+          "key": "c",
+          "text": "9"
+        },
+        {
+          "key": "d",
+          "text": "10"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 8.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-phan-so-007",
+      "type": "single_choice",
+      "prompt": "Tính: 2/7 + 3/7 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5/14"
+        },
+        {
+          "key": "b",
+          "text": "1/7"
+        },
+        {
+          "key": "c",
+          "text": "5/7"
+        },
+        {
+          "key": "d",
+          "text": "6/7"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 5/7.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-phan-so-008",
+      "type": "single_choice",
+      "prompt": "Tính: 5/9 - 2/9 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7/9"
+        },
+        {
+          "key": "b",
+          "text": "3/0"
+        },
+        {
+          "key": "c",
+          "text": "3/18"
+        },
+        {
+          "key": "d",
+          "text": "3/9"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 3/9.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-phan-so-009",
+      "type": "single_choice",
+      "prompt": "Rút gọn phân số 6/8 được phân số nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3/4"
+        },
+        {
+          "key": "b",
+          "text": "3/8"
+        },
+        {
+          "key": "c",
+          "text": "6/4"
+        },
+        {
+          "key": "d",
+          "text": "2/4"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 3/4.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-phan-so-010",
+      "type": "single_choice",
+      "prompt": "Phân số nào bé hơn 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5/5"
+        },
+        {
+          "key": "b",
+          "text": "4/5"
+        },
+        {
+          "key": "c",
+          "text": "7/5"
+        },
+        {
+          "key": "d",
+          "text": "6/5"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 4/5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-phan-so-011",
+      "type": "single_choice",
+      "prompt": "Số nào là phân số?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4 - 3"
+        },
+        {
+          "key": "b",
+          "text": "3 + 4"
+        },
+        {
+          "key": "c",
+          "text": "3/4"
+        },
+        {
+          "key": "d",
+          "text": "34"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 3/4.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-phan-so-012",
+      "type": "single_choice",
+      "prompt": "Một cái bánh chia 8 phần bằng nhau, ăn 3 phần. Đã ăn bao nhiêu phần cái bánh?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3/5"
+        },
+        {
+          "key": "b",
+          "text": "5/8"
+        },
+        {
+          "key": "c",
+          "text": "8/3"
+        },
+        {
+          "key": "d",
+          "text": "3/8"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 3/8.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-phan-so-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phân số bằng 1/2.",
+      "options": [
+        {
+          "key": "a",
+          "text": "2/3"
+        },
+        {
+          "key": "b",
+          "text": "4/8"
+        },
+        {
+          "key": "c",
+          "text": "3/4"
+        },
+        {
+          "key": "d",
+          "text": "2/4"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "2/4 và 4/8 đều bằng 1/2.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-phan-so-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phân số lớn hơn 1.",
+      "options": [
+        {
+          "key": "a",
+          "text": "3/5"
+        },
+        {
+          "key": "b",
+          "text": "5/4"
+        },
+        {
+          "key": "c",
+          "text": "4/4"
+        },
+        {
+          "key": "d",
+          "text": "7/3"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "5/4 và 7/3 đều lớn hơn 1.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-phan-so-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phân số bé hơn 1.",
+      "options": [
+        {
+          "key": "a",
+          "text": "5/9"
+        },
+        {
+          "key": "b",
+          "text": "9/8"
+        },
+        {
+          "key": "c",
+          "text": "7/5"
+        },
+        {
+          "key": "d",
+          "text": "2/3"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "2/3 và 5/9 đều bé hơn 1.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-phan-so-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phân số có mẫu số là 7.",
+      "options": [
+        {
+          "key": "a",
+          "text": "7/5"
+        },
+        {
+          "key": "b",
+          "text": "5/7"
+        },
+        {
+          "key": "c",
+          "text": "7/3"
+        },
+        {
+          "key": "d",
+          "text": "3/7"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "3/7 và 5/7 có mẫu số là 7.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-phan-so-017",
+      "type": "true_false",
+      "prompt": "Phân số 3/5 có tử số là 3.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Phân số 3/5 có tử số là 3. là đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-phan-so-018",
+      "type": "true_false",
+      "prompt": "Phân số 2/4 bằng phân số 1/2.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Phân số 2/4 bằng phân số 1/2. là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-phan-so-019",
+      "type": "true_false",
+      "prompt": "1/2 của 10 là 20.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "1/2 của 10 là 5, không phải 20.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-phan-so-020",
+      "type": "true_false",
+      "prompt": "Phân số 7/7 bằng 1.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Phân số 7/7 bằng 1. là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-phan-so-021",
+      "type": "fill_in",
+      "prompt": "Rút gọn 4/8 được ___.",
+      "answer": {
+        "accepted": [
+          "1/2"
+        ]
+      },
+      "explanation": "Đáp án là 1/2.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-phan-so-022",
+      "type": "fill_in",
+      "prompt": "1/4 của 20 là ___.",
+      "answer": {
+        "accepted": [
+          "5"
+        ]
+      },
+      "explanation": "Đáp án là 5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-phan-so-023",
+      "type": "fill_in",
+      "prompt": "2/6 + 3/6 = ___.",
+      "answer": {
+        "accepted": [
+          "5/6"
+        ]
+      },
+      "explanation": "Đáp án là 5/6.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-phan-so-024",
+      "type": "fill_in",
+      "prompt": "5/8 - 2/8 = ___.",
+      "answer": {
+        "accepted": [
+          "3/8"
+        ]
+      },
+      "explanation": "Đáp án là 3/8.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-phan-so-025",
+      "type": "fill_in",
+      "prompt": "Phân số 7/9 có tử số là ___.",
+      "answer": {
+        "accepted": [
+          "7"
+        ]
+      },
+      "explanation": "Đáp án là 7.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

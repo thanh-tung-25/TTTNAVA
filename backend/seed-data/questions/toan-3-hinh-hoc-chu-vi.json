@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "toan-3-hinh-hoc-chu-vi",
+    "subjectId": "toan",
+    "grade": 3,
+    "slug": "hinh-hoc-chu-vi",
+    "name": "Hình học và chu vi",
+    "sortOrder": 5
+  },
+  "questions": [
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-001",
+      "type": "single_choice",
+      "prompt": "Hình chữ nhật dài 8 cm, rộng 5 cm. Chu vi là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "26"
+        },
+        {
+          "key": "b",
+          "text": "27"
+        },
+        {
+          "key": "c",
+          "text": "28"
+        },
+        {
+          "key": "d",
+          "text": "25"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 26 cm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-002",
+      "type": "single_choice",
+      "prompt": "Hình vuông cạnh 7 cm. Chu vi là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "29"
+        },
+        {
+          "key": "b",
+          "text": "28"
+        },
+        {
+          "key": "c",
+          "text": "30"
+        },
+        {
+          "key": "d",
+          "text": "27"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 28 cm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-003",
+      "type": "single_choice",
+      "prompt": "Hình tam giác có ba cạnh 6 cm, 8 cm, 10 cm. Chu vi là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "25"
+        },
+        {
+          "key": "b",
+          "text": "23"
+        },
+        {
+          "key": "c",
+          "text": "24"
+        },
+        {
+          "key": "d",
+          "text": "26"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 24 cm.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-004",
+      "type": "single_choice",
+      "prompt": "Hình chữ nhật dài 12 cm, rộng 6 cm. Chu vi là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "38"
+        },
+        {
+          "key": "b",
+          "text": "37"
+        },
+        {
+          "key": "c",
+          "text": "35"
+        },
+        {
+          "key": "d",
+          "text": "36"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 36 cm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-005",
+      "type": "single_choice",
+      "prompt": "Hình vuông có chu vi 20 cm. Cạnh của hình vuông dài bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "7"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 5 cm.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-006",
+      "type": "single_choice",
+      "prompt": "Hình chữ nhật có chu vi 30 cm, chiều dài 10 cm. Chiều rộng là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "6"
+        },
+        {
+          "key": "d",
+          "text": "7"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 5 cm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-007",
+      "type": "single_choice",
+      "prompt": "Hình vuông cạnh 9 cm. Chu vi là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "37"
+        },
+        {
+          "key": "b",
+          "text": "38"
+        },
+        {
+          "key": "c",
+          "text": "36"
+        },
+        {
+          "key": "d",
+          "text": "35"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 36 cm.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-008",
+      "type": "single_choice",
+      "prompt": "Hình tam giác đều cạnh 8 cm. Chu vi là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "26"
+        },
+        {
+          "key": "b",
+          "text": "23"
+        },
+        {
+          "key": "c",
+          "text": "25"
+        },
+        {
+          "key": "d",
+          "text": "24"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 24 cm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-009",
+      "type": "single_choice",
+      "prompt": "Hình chữ nhật dài 15 cm, rộng 10 cm. Chu vi là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "50"
+        },
+        {
+          "key": "b",
+          "text": "52"
+        },
+        {
+          "key": "c",
+          "text": "51"
+        },
+        {
+          "key": "d",
+          "text": "49"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 50 cm.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-010",
+      "type": "single_choice",
+      "prompt": "Hình vuông có chu vi 36 cm. Cạnh của hình vuông dài bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "8"
+        },
+        {
+          "key": "b",
+          "text": "9"
+        },
+        {
+          "key": "c",
+          "text": "11"
+        },
+        {
+          "key": "d",
+          "text": "10"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 9 cm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-011",
+      "type": "single_choice",
+      "prompt": "Hình chữ nhật có chu vi 40 cm, chiều rộng 8 cm. Chiều dài là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "13"
+        },
+        {
+          "key": "b",
+          "text": "11"
+        },
+        {
+          "key": "c",
+          "text": "12"
+        },
+        {
+          "key": "d",
+          "text": "14"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 12 cm.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-012",
+      "type": "single_choice",
+      "prompt": "Hình tam giác có ba cạnh 5 cm, 7 cm, 9 cm. Chu vi là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "22"
+        },
+        {
+          "key": "b",
+          "text": "23"
+        },
+        {
+          "key": "c",
+          "text": "20"
+        },
+        {
+          "key": "d",
+          "text": "21"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 21 cm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các hình có chu vi 20 cm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hình chữ nhật dài 6 cm, rộng 4 cm"
+        },
+        {
+          "key": "b",
+          "text": "hình vuông cạnh 6 cm"
+        },
+        {
+          "key": "c",
+          "text": "hình vuông cạnh 5 cm"
+        },
+        {
+          "key": "d",
+          "text": "hình chữ nhật dài 8 cm, rộng 3 cm"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Hình vuông cạnh 5 cm và hình chữ nhật 6 cm × 4 cm đều có chu vi 20 cm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các hình có chu vi 24 cm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hình chữ nhật dài 7 cm, rộng 4 cm"
+        },
+        {
+          "key": "b",
+          "text": "hình vuông cạnh 6 cm"
+        },
+        {
+          "key": "c",
+          "text": "hình tam giác đều cạnh 8 cm"
+        },
+        {
+          "key": "d",
+          "text": "hình vuông cạnh 5 cm"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Hình vuông cạnh 6 cm và tam giác đều cạnh 8 cm đều có chu vi 24 cm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các hình có chu vi 30 cm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hình chữ nhật dài 12 cm, rộng 4 cm"
+        },
+        {
+          "key": "b",
+          "text": "hình vuông cạnh 8 cm"
+        },
+        {
+          "key": "c",
+          "text": "hình chữ nhật dài 10 cm, rộng 5 cm"
+        },
+        {
+          "key": "d",
+          "text": "hình tam giác đều cạnh 10 cm"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Hình chữ nhật 10 cm × 5 cm và tam giác đều cạnh 10 cm đều có chu vi 30 cm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các hình có chu vi 36 cm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hình chữ nhật dài 10 cm, rộng 7 cm"
+        },
+        {
+          "key": "b",
+          "text": "hình vuông cạnh 8 cm"
+        },
+        {
+          "key": "c",
+          "text": "hình vuông cạnh 9 cm"
+        },
+        {
+          "key": "d",
+          "text": "hình chữ nhật dài 12 cm, rộng 6 cm"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Hình vuông cạnh 9 cm và hình chữ nhật 12 cm × 6 cm đều có chu vi 36 cm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-017",
+      "type": "true_false",
+      "prompt": "Hình vuông cạnh 5 cm có chu vi 20 cm.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Hình vuông cạnh 5 cm có chu vi 20 cm. là đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-018",
+      "type": "true_false",
+      "prompt": "Hình chữ nhật dài 6 cm, rộng 3 cm có chu vi 18 cm.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Hình chữ nhật dài 6 cm, rộng 3 cm có chu vi 18 cm. là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-019",
+      "type": "true_false",
+      "prompt": "Hình tam giác có ba cạnh 2 cm, 3 cm, 4 cm có chu vi 10 cm.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "2 + 3 + 4 = 9 cm, không phải 10 cm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-020",
+      "type": "true_false",
+      "prompt": "Hình vuông có chu vi 24 cm thì cạnh dài 6 cm.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Hình vuông có chu vi 24 cm thì cạnh dài 6 cm. là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-021",
+      "type": "fill_in",
+      "prompt": "Hình chữ nhật dài 9 cm, rộng 4 cm có chu vi ___ cm.",
+      "answer": {
+        "accepted": [
+          "26"
+        ]
+      },
+      "explanation": "Đáp án là 26.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-022",
+      "type": "fill_in",
+      "prompt": "Hình vuông cạnh 6 cm có chu vi ___ cm.",
+      "answer": {
+        "accepted": [
+          "24"
+        ]
+      },
+      "explanation": "Đáp án là 24.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-023",
+      "type": "fill_in",
+      "prompt": "Hình tam giác có ba cạnh 3 cm, 4 cm, 5 cm có chu vi ___ cm.",
+      "answer": {
+        "accepted": [
+          "12"
+        ]
+      },
+      "explanation": "Đáp án là 12.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-024",
+      "type": "fill_in",
+      "prompt": "Hình vuông có chu vi 32 cm thì cạnh dài ___ cm.",
+      "answer": {
+        "accepted": [
+          "8"
+        ]
+      },
+      "explanation": "Đáp án là 8.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-hinh-hoc-chu-vi-025",
+      "type": "fill_in",
+      "prompt": "Hình chữ nhật dài 10 cm, rộng 5 cm có chu vi ___ cm.",
+      "answer": {
+        "accepted": [
+          "30"
+        ]
+      },
+      "explanation": "Đáp án là 30.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

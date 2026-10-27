@@ -1,0 +1,600 @@
+{
+  "topic": {
+    "id": "tieng-viet-2-tu-chi-hoat-dong",
+    "subjectId": "tieng-viet",
+    "grade": 2,
+    "slug": "tu-chi-hoat-dong",
+    "name": "Từ chỉ hoạt động",
+    "sortOrder": 2
+  },
+  "questions": [
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-001",
+      "type": "single_choice",
+      "prompt": "Trong câu “Bé quét nhà giúp mẹ”, từ nào chỉ hoạt động?",
+      "options": [
+        {
+          "key": "a",
+          "text": "quét"
+        },
+        {
+          "key": "b",
+          "text": "nhà"
+        },
+        {
+          "key": "c",
+          "text": "Bé"
+        },
+        {
+          "key": "d",
+          "text": "mẹ"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Quét” là việc làm của bé.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-002",
+      "type": "single_choice",
+      "prompt": "Trong câu “Chú gà trống gáy vang”, từ nào chỉ hoạt động?",
+      "options": [
+        {
+          "key": "a",
+          "text": "vang"
+        },
+        {
+          "key": "b",
+          "text": "gáy"
+        },
+        {
+          "key": "c",
+          "text": "gà trống"
+        },
+        {
+          "key": "d",
+          "text": "Chú"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Gáy” là hoạt động của gà trống.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-003",
+      "type": "single_choice",
+      "prompt": "Trong câu “Cá bơi dưới ao”, từ nào chỉ hoạt động?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cá"
+        },
+        {
+          "key": "b",
+          "text": "ao"
+        },
+        {
+          "key": "c",
+          "text": "bơi"
+        },
+        {
+          "key": "d",
+          "text": "dưới"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Bơi” là hoạt động của cá.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-004",
+      "type": "single_choice",
+      "prompt": "Trong câu “Lan đọc sách mỗi tối”, từ nào chỉ hoạt động?",
+      "options": [
+        {
+          "key": "a",
+          "text": "tối"
+        },
+        {
+          "key": "b",
+          "text": "sách"
+        },
+        {
+          "key": "c",
+          "text": "Lan"
+        },
+        {
+          "key": "d",
+          "text": "đọc"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Đọc” là hoạt động của Lan.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-005",
+      "type": "single_choice",
+      "prompt": "Trong câu “Mẹ nấu cơm ở bếp”, từ nào chỉ hoạt động?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nấu"
+        },
+        {
+          "key": "b",
+          "text": "cơm"
+        },
+        {
+          "key": "c",
+          "text": "bếp"
+        },
+        {
+          "key": "d",
+          "text": "Mẹ"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Nấu” là hoạt động của mẹ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-006",
+      "type": "single_choice",
+      "prompt": "Trong câu “Đàn chim bay lượn trên trời”, từ nào chỉ hoạt động?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Đàn chim"
+        },
+        {
+          "key": "b",
+          "text": "bay lượn"
+        },
+        {
+          "key": "c",
+          "text": "trên"
+        },
+        {
+          "key": "d",
+          "text": "trời"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Bay lượn” là hoạt động của đàn chim.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-007",
+      "type": "single_choice",
+      "prompt": "Từ nào dưới đây chỉ hoạt động học tập?",
+      "options": [
+        {
+          "key": "a",
+          "text": "quyển vở"
+        },
+        {
+          "key": "b",
+          "text": "bút chì"
+        },
+        {
+          "key": "c",
+          "text": "viết bài"
+        },
+        {
+          "key": "d",
+          "text": "bàn học"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Viết bài” là hoạt động học tập.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-008",
+      "type": "single_choice",
+      "prompt": "Từ nào dưới đây chỉ hoạt động vui chơi?",
+      "options": [
+        {
+          "key": "a",
+          "text": "sân trường"
+        },
+        {
+          "key": "b",
+          "text": "đồ chơi"
+        },
+        {
+          "key": "c",
+          "text": "bạn bè"
+        },
+        {
+          "key": "d",
+          "text": "nhảy dây"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Nhảy dây” là hoạt động vui chơi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-009",
+      "type": "single_choice",
+      "prompt": "Từ nào dưới đây chỉ hoạt động lao động?",
+      "options": [
+        {
+          "key": "a",
+          "text": "tưới cây"
+        },
+        {
+          "key": "b",
+          "text": "bình nước"
+        },
+        {
+          "key": "c",
+          "text": "vườn rau"
+        },
+        {
+          "key": "d",
+          "text": "cái cuốc"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Tưới cây” là việc làm chăm sóc cây.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-010",
+      "type": "single_choice",
+      "prompt": "Từ nào dưới đây chỉ hoạt động di chuyển?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bến xe"
+        },
+        {
+          "key": "b",
+          "text": "đi bộ"
+        },
+        {
+          "key": "c",
+          "text": "đôi chân"
+        },
+        {
+          "key": "d",
+          "text": "con đường"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Đi bộ” là hoạt động di chuyển bằng chân.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-011",
+      "type": "single_choice",
+      "prompt": "Trong câu “Ông tưới cây trong vườn”, từ nào chỉ hoạt động?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Ông"
+        },
+        {
+          "key": "b",
+          "text": "vườn"
+        },
+        {
+          "key": "c",
+          "text": "tưới"
+        },
+        {
+          "key": "d",
+          "text": "cây"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Tưới” là việc làm của ông.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-012",
+      "type": "single_choice",
+      "prompt": "Trong câu “Bé hát một bài thật hay”, từ nào chỉ hoạt động?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bé"
+        },
+        {
+          "key": "b",
+          "text": "bài"
+        },
+        {
+          "key": "c",
+          "text": "hay"
+        },
+        {
+          "key": "d",
+          "text": "hát"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Hát” là hoạt động của bé.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ hoạt động trong câu: “Bé chạy ra sân và nhặt quả bóng.”",
+      "options": [
+        {
+          "key": "a",
+          "text": "sân"
+        },
+        {
+          "key": "b",
+          "text": "chạy"
+        },
+        {
+          "key": "c",
+          "text": "nhặt"
+        },
+        {
+          "key": "d",
+          "text": "bóng"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "“Chạy” và “nhặt” là hoạt động; “sân”, “bóng” là sự vật.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ hoạt động của học sinh trong lớp.",
+      "options": [
+        {
+          "key": "a",
+          "text": "bảng đen"
+        },
+        {
+          "key": "b",
+          "text": "nghe giảng"
+        },
+        {
+          "key": "c",
+          "text": "ghế ngồi"
+        },
+        {
+          "key": "d",
+          "text": "ghi bài"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "“Nghe giảng”, “ghi bài” là hoạt động; bảng và ghế là đồ vật.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ hoạt động của con vật.",
+      "options": [
+        {
+          "key": "a",
+          "text": "cánh"
+        },
+        {
+          "key": "b",
+          "text": "gáy"
+        },
+        {
+          "key": "c",
+          "text": "bơi"
+        },
+        {
+          "key": "d",
+          "text": "ao"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "“Bơi”, “gáy” là hoạt động; “ao”, “cánh” là sự vật.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ hoạt động trong câu: “Mẹ vo gạo rồi nấu cơm.”",
+      "options": [
+        {
+          "key": "a",
+          "text": "vo"
+        },
+        {
+          "key": "b",
+          "text": "nấu"
+        },
+        {
+          "key": "c",
+          "text": "gạo"
+        },
+        {
+          "key": "d",
+          "text": "cơm"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "“Vo” và “nấu” là việc mẹ làm; gạo và cơm là sự vật.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-017",
+      "type": "true_false",
+      "prompt": "Trong câu “Chim hót líu lo”, từ “hót” là từ chỉ hoạt động.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "“Hót” là hoạt động của chim.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-018",
+      "type": "true_false",
+      "prompt": "Trong câu “Chiếc lá rơi”, từ “lá” là từ chỉ hoạt động.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "“Lá” chỉ sự vật; “rơi” mới là hoạt động.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-019",
+      "type": "true_false",
+      "prompt": "“Chạy”, “nhảy”, “bơi” đều là từ chỉ hoạt động.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Cả ba từ đều chỉ việc làm, cử động.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-020",
+      "type": "true_false",
+      "prompt": "“Bàn ghế”, “sách vở” là các từ chỉ hoạt động.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Đây là các từ chỉ đồ vật.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-021",
+      "type": "fill_in",
+      "prompt": "Điền từ chỉ hoạt động: “Bé ___ răng trước khi đi ngủ.”",
+      "answer": {
+        "accepted": [
+          "đánh"
+        ]
+      },
+      "explanation": "“Đánh răng” là hoạt động vệ sinh.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-022",
+      "type": "fill_in",
+      "prompt": "Điền từ chỉ hoạt động: “Chú mèo ___ chuột.”",
+      "answer": {
+        "accepted": [
+          "bắt",
+          "vồ"
+        ]
+      },
+      "explanation": "“Bắt chuột” hoặc “vồ chuột” đều đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-023",
+      "type": "fill_in",
+      "prompt": "Điền từ chỉ hoạt động: “Cô giáo ___ bài trên bảng.”",
+      "answer": {
+        "accepted": [
+          "viết",
+          "giảng"
+        ]
+      },
+      "explanation": "Cô giáo viết bài hoặc giảng bài.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-024",
+      "type": "fill_in",
+      "prompt": "Điền từ chỉ hoạt động: “Các bạn ___ cầu ở sân trường.”",
+      "answer": {
+        "accepted": [
+          "đá"
+        ]
+      },
+      "explanation": "“Đá cầu” là trò chơi quen thuộc.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-chi-hoat-dong-025",
+      "type": "fill_in",
+      "prompt": "Điền từ chỉ hoạt động: “Em ___ áo giúp mẹ.”",
+      "answer": {
+        "accepted": [
+          "gấp",
+          "phơi"
+        ]
+      },
+      "explanation": "“Gấp áo”, “phơi áo” đều là việc làm giúp mẹ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

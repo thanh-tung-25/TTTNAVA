@@ -1,0 +1,23 @@
+[
+  {
+    "id": "toan",
+    "name": "Toán",
+    "slug": "toan",
+    "color": "#1A5FD0",
+    "sortOrder": 1
+  },
+  {
+    "id": "tieng-viet",
+    "name": "Tiếng Việt",
+    "slug": "tieng-viet",
+    "color": "#FF8A1F",
+    "sortOrder": 2
+  },
+  {
+    "id": "tieng-anh",
+    "name": "Tiếng Anh",
+    "slug": "tieng-anh",
+    "color": "#C2255C",
+    "sortOrder": 3
+  }
+]

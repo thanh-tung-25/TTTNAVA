@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ngân hàng câu hỏi — Bé Học Vui</title>
+  <link rel="icon" href="/assets/avatars/cu.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
+</head>
+<body>
+  <header id="app-header"></header>
+  <main class="page">
+    <div class="page-head">
+      <div>
+        <p class="eyebrow">Quản trị</p>
+        <h1>Ngân hàng câu hỏi</h1>
+        <p>Xem, sửa nội dung và ẩn câu hỏi. Mọi thay đổi đều được ghi lại.</p>
+      </div>
+    </div>
+
+    <section class="card">
+      <div class="filter-bar">
+        <select class="select" id="filter-subject" aria-label="Môn học">
+          <option value="">Tất cả môn</option>
+          <option value="toan">Toán</option>
+          <option value="tieng-viet">Tiếng Việt</option>
+          <option value="tieng-anh">Tiếng Anh</option>
+        </select>
+        <select class="select" id="filter-grade" aria-label="Lớp">
+          <option value="">Tất cả lớp</option>
+          <option value="1">Lớp 1</option>
+          <option value="2">Lớp 2</option>
+          <option value="3">Lớp 3</option>
+          <option value="4">Lớp 4</option>
+          <option value="5">Lớp 5</option>
+        </select>
+        <select class="select" id="filter-type" aria-label="Loại câu">
+          <option value="">Tất cả loại</option>
+          <option value="single_choice">Một đáp án</option>
+          <option value="multiple_choice">Nhiều đáp án</option>
+          <option value="true_false">Đúng/Sai</option>
+          <option value="fill_in">Điền</option>
+        </select>
+        <select class="select" id="filter-status" aria-label="Trạng thái">
+          <option value="">Tất cả trạng thái</option>
+          <option value="visible">Đang hiện</option>
+          <option value="hidden">Đang ẩn</option>
+        </select>
+        <input class="input" id="filter-q" type="search" placeholder="Tìm trong đề bài…" maxlength="100">
+        <button class="btn btn-sm" id="filter-button" type="button">Lọc</button>
+      </div>
+      <div id="questions-table"><div class="loading">Đang tải câu hỏi…</div></div>
+      <div class="quiz-actions" style="justify-content:space-between;margin-top:1rem">
+        <button class="btn btn-ghost btn-sm" id="prev-page" type="button">← Trang trước</button>
+        <span class="muted" id="page-label"></span>
+        <button class="btn btn-ghost btn-sm" id="next-page" type="button">Trang sau →</button>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="/assets/js/admin-questions.js"></script>
+</body>
+</html>

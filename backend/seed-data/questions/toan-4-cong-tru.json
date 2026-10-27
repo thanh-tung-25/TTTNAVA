@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "toan-4-cong-tru",
+    "subjectId": "toan",
+    "grade": 4,
+    "slug": "cong-tru",
+    "name": "Cộng trừ số tự nhiên",
+    "sortOrder": 2
+  },
+  "questions": [
+    {
+      "id": "toan-4-cong-tru-001",
+      "type": "single_choice",
+      "prompt": "Tính: 23 456 + 12 345 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "35801"
+        },
+        {
+          "key": "b",
+          "text": "35800"
+        },
+        {
+          "key": "c",
+          "text": "35803"
+        },
+        {
+          "key": "d",
+          "text": "35802"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 35801.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-cong-tru-002",
+      "type": "single_choice",
+      "prompt": "Tính: 78 905 - 34 672 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "44234"
+        },
+        {
+          "key": "b",
+          "text": "44233"
+        },
+        {
+          "key": "c",
+          "text": "44232"
+        },
+        {
+          "key": "d",
+          "text": "44235"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 44233.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-cong-tru-003",
+      "type": "single_choice",
+      "prompt": "Tính: 45 678 + 32 109 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "77786"
+        },
+        {
+          "key": "b",
+          "text": "77788"
+        },
+        {
+          "key": "c",
+          "text": "77787"
+        },
+        {
+          "key": "d",
+          "text": "77789"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 77787.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-cong-tru-004",
+      "type": "single_choice",
+      "prompt": "Tính: 100 000 - 45 678 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "54321"
+        },
+        {
+          "key": "b",
+          "text": "54323"
+        },
+        {
+          "key": "c",
+          "text": "54324"
+        },
+        {
+          "key": "d",
+          "text": "54322"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 54322.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-cong-tru-005",
+      "type": "single_choice",
+      "prompt": "Tính: 123 456 + 87 654 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "211110"
+        },
+        {
+          "key": "b",
+          "text": "211109"
+        },
+        {
+          "key": "c",
+          "text": "211111"
+        },
+        {
+          "key": "d",
+          "text": "211112"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 211110.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-cong-tru-006",
+      "type": "single_choice",
+      "prompt": "Tính: 500 000 - 123 456 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "376546"
+        },
+        {
+          "key": "b",
+          "text": "376544"
+        },
+        {
+          "key": "c",
+          "text": "376543"
+        },
+        {
+          "key": "d",
+          "text": "376545"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 376544.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-cong-tru-007",
+      "type": "single_choice",
+      "prompt": "Một kho có 45 670 kg gạo, nhập thêm 23 450 kg. Có tất cả bao nhiêu ki-lô-gam?",
+      "options": [
+        {
+          "key": "a",
+          "text": "69121"
+        },
+        {
+          "key": "b",
+          "text": "69119"
+        },
+        {
+          "key": "c",
+          "text": "69120"
+        },
+        {
+          "key": "d",
+          "text": "69122"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 69120.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-cong-tru-008",
+      "type": "single_choice",
+      "prompt": "Một quỹ có 120 000 đồng, chi 45 500 đồng. Còn lại bao nhiêu đồng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "74499"
+        },
+        {
+          "key": "b",
+          "text": "74502"
+        },
+        {
+          "key": "c",
+          "text": "74501"
+        },
+        {
+          "key": "d",
+          "text": "74500"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 74500.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-cong-tru-009",
+      "type": "single_choice",
+      "prompt": "Tính: 34 567 + 23 456 + 12 345 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "70368"
+        },
+        {
+          "key": "b",
+          "text": "70370"
+        },
+        {
+          "key": "c",
+          "text": "70367"
+        },
+        {
+          "key": "d",
+          "text": "70369"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 70368.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-cong-tru-010",
+      "type": "single_choice",
+      "prompt": "Tính: 90 000 - 12 345 - 23 456 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "54201"
+        },
+        {
+          "key": "b",
+          "text": "54199"
+        },
+        {
+          "key": "c",
+          "text": "54200"
+        },
+        {
+          "key": "d",
+          "text": "54198"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 54199.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-cong-tru-011",
+      "type": "single_choice",
+      "prompt": "Số nào cộng với 34 567 bằng 80 000?",
+      "options": [
+        {
+          "key": "a",
+          "text": "45432"
+        },
+        {
+          "key": "b",
+          "text": "45435"
+        },
+        {
+          "key": "c",
+          "text": "45433"
+        },
+        {
+          "key": "d",
+          "text": "45434"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 45433.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-cong-tru-012",
+      "type": "single_choice",
+      "prompt": "Số nào trừ 23 456 bằng 45 678?",
+      "options": [
+        {
+          "key": "a",
+          "text": "69136"
+        },
+        {
+          "key": "b",
+          "text": "69135"
+        },
+        {
+          "key": "c",
+          "text": "69133"
+        },
+        {
+          "key": "d",
+          "text": "69134"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 69134.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-cong-tru-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 100 000.",
+      "options": [
+        {
+          "key": "a",
+          "text": "60 000 + 30 000"
+        },
+        {
+          "key": "b",
+          "text": "120 000 - 30 000"
+        },
+        {
+          "key": "c",
+          "text": "45 678 + 54 322"
+        },
+        {
+          "key": "d",
+          "text": "150 000 - 50 000"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "45 678 + 54 322 = 100 000 và 150 000 - 50 000 = 100 000.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-cong-tru-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả lớn hơn 200 000.",
+      "options": [
+        {
+          "key": "a",
+          "text": "123 456 + 100 000"
+        },
+        {
+          "key": "b",
+          "text": "500 000 - 250 000"
+        },
+        {
+          "key": "c",
+          "text": "300 000 - 120 000"
+        },
+        {
+          "key": "d",
+          "text": "90 000 + 100 000"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "123 456 + 100 000 = 223 456 và 500 000 - 250 000 = 250 000.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-cong-tru-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bé hơn 50 000.",
+      "options": [
+        {
+          "key": "a",
+          "text": "100 000 - 45 000"
+        },
+        {
+          "key": "b",
+          "text": "30 000 + 25 000"
+        },
+        {
+          "key": "c",
+          "text": "20 000 + 25 000"
+        },
+        {
+          "key": "d",
+          "text": "90 000 - 45 000"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "20 000 + 25 000 = 45 000 và 90 000 - 45 000 = 45 000.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-cong-tru-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "600 000 - 234 567 = 365 433"
+        },
+        {
+          "key": "b",
+          "text": "500 000 - 234 567 = 265 433"
+        },
+        {
+          "key": "c",
+          "text": "234 567 + 123 456 = 358 023"
+        },
+        {
+          "key": "d",
+          "text": "345 678 + 123 456 = 468 134"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "234 567 + 123 456 = 358 023 và 500 000 - 234 567 = 265 433 là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-cong-tru-017",
+      "type": "true_false",
+      "prompt": "23 456 + 12 345 = 35 801.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "23 456 + 12 345 = 35 801. là đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-cong-tru-018",
+      "type": "true_false",
+      "prompt": "90 000 - 45 678 = 44 322.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "90 000 - 45 678 = 44 322. là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-cong-tru-019",
+      "type": "true_false",
+      "prompt": "56 789 + 23 456 = 80 345.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "56 789 + 23 456 = 80 245, không phải 80 345.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-cong-tru-020",
+      "type": "true_false",
+      "prompt": "123 456 + 234 567 = 358 023.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "123 456 + 234 567 = 358 023. là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-cong-tru-021",
+      "type": "fill_in",
+      "prompt": "34 567 + 12 345 = ___.",
+      "answer": {
+        "accepted": [
+          "46912"
+        ]
+      },
+      "explanation": "Đáp án là 46912.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-cong-tru-022",
+      "type": "fill_in",
+      "prompt": "90 000 - 45 678 = ___.",
+      "answer": {
+        "accepted": [
+          "44322"
+        ]
+      },
+      "explanation": "Đáp án là 44322.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-cong-tru-023",
+      "type": "fill_in",
+      "prompt": "56 789 + ___ = 80 000.",
+      "answer": {
+        "accepted": [
+          "23211"
+        ]
+      },
+      "explanation": "Đáp án là 23211.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-cong-tru-024",
+      "type": "fill_in",
+      "prompt": "___ - 23 456 = 34 567.",
+      "answer": {
+        "accepted": [
+          "58023"
+        ]
+      },
+      "explanation": "Đáp án là 58023.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-cong-tru-025",
+      "type": "fill_in",
+      "prompt": "123 456 + 234 567 = ___.",
+      "answer": {
+        "accepted": [
+          "358023"
+        ]
+      },
+      "explanation": "Đáp án là 358023.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

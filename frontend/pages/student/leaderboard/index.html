@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bảng xếp hạng — Bé Học Vui</title>
+  <link rel="icon" href="/assets/avatars/cu.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
+</head>
+<body>
+  <header id="app-header"></header>
+  <main class="page">
+    <div class="page-head">
+      <div>
+        <p class="eyebrow">Bảng xếp hạng</p>
+        <h1>Ai là người chăm chỉ nhất?</h1>
+        <p>Xếp theo số kim cương nhận được trong tuần, tháng hoặc tất cả.</p>
+      </div>
+    </div>
+    <div class="tabs" id="range-tabs" role="tablist" aria-label="Khoảng thời gian">
+      <button class="tab" type="button" data-range="week">Tuần này</button>
+      <button class="tab" type="button" data-range="month">Tháng này</button>
+      <button class="tab" type="button" data-range="all">Tất cả</button>
+    </div>
+    <div class="filter-bar">
+      <select class="select" id="grade-filter" aria-label="Lọc theo lớp">
+        <option value="">Tất cả các lớp</option>
+        <option value="1">Lớp 1</option>
+        <option value="2">Lớp 2</option>
+        <option value="3">Lớp 3</option>
+        <option value="4">Lớp 4</option>
+        <option value="5">Lớp 5</option>
+      </select>
+    </div>
+    <section class="card">
+      <div id="rank-list"><div class="loading">Đang tải bảng xếp hạng…</div></div>
+    </section>
+  </main>
+  <script type="module" src="/assets/js/leaderboard.js"></script>
+</body>
+</html>

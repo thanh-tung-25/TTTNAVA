@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cáo cam">
+  <title>Cáo cam</title>
+  <circle cx="32" cy="32" r="32" fill="#ffe8d1"/>
+  <path d="M12 26 10 7l16 9zM52 26 54 7 38 16z" fill="#e8722c"/>
+  <path d="M15 22 14 12l9 5zM49 22 50 12l-9 5z" fill="#3a2a1a"/>
+  <path d="M32 14c11 0 19 10 19 21 0 12-9 18-19 18s-19-6-19-18c0-11 8-21 19-21z" fill="#f08a3c"/>
+  <path d="M32 50c-6 0-12-5-12-12 3 4 7 5 12 5s9-1 12-5c0 7-6 12-12 12z" fill="#fff4e6"/>
+  <circle cx="25" cy="31" r="2.5" fill="#2f2419"/>
+  <circle cx="39" cy="31" r="2.5" fill="#2f2419"/>
+  <path d="M29 40h6l-3 3z" fill="#2f2419"/>
+  <path d="M26 45q6 4 12 0" stroke="#2f2419" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "tieng-anh-4-days-months",
+    "subjectId": "tieng-anh",
+    "grade": 4,
+    "slug": "days-months",
+    "name": "Ngày và tháng",
+    "sortOrder": 2
+  },
+  "questions": [
+    {
+      "id": "tieng-anh-4-days-months-001",
+      "type": "single_choice",
+      "prompt": "“Thứ Hai” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Monday"
+        },
+        {
+          "key": "b",
+          "text": "Saturday"
+        },
+        {
+          "key": "c",
+          "text": "Tuesday"
+        },
+        {
+          "key": "d",
+          "text": "Sunday"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Monday” là thứ Hai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-days-months-002",
+      "type": "single_choice",
+      "prompt": "“Thứ Ba” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Thursday"
+        },
+        {
+          "key": "b",
+          "text": "Tuesday"
+        },
+        {
+          "key": "c",
+          "text": "Monday"
+        },
+        {
+          "key": "d",
+          "text": "Wednesday"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Tuesday” là thứ Ba.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-days-months-003",
+      "type": "single_choice",
+      "prompt": "“Thứ Tư” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Tuesday"
+        },
+        {
+          "key": "b",
+          "text": "Thursday"
+        },
+        {
+          "key": "c",
+          "text": "Wednesday"
+        },
+        {
+          "key": "d",
+          "text": "Friday"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Wednesday” là thứ Tư.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-4-days-months-004",
+      "type": "single_choice",
+      "prompt": "“Thứ Năm” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Tuesday"
+        },
+        {
+          "key": "b",
+          "text": "Friday"
+        },
+        {
+          "key": "c",
+          "text": "Saturday"
+        },
+        {
+          "key": "d",
+          "text": "Thursday"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Thursday” là thứ Năm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-days-months-005",
+      "type": "single_choice",
+      "prompt": "“Thứ Sáu” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Friday"
+        },
+        {
+          "key": "b",
+          "text": "Thursday"
+        },
+        {
+          "key": "c",
+          "text": "Monday"
+        },
+        {
+          "key": "d",
+          "text": "Sunday"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Friday” là thứ Sáu.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-4-days-months-006",
+      "type": "single_choice",
+      "prompt": "“Thứ Bảy” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Sunday"
+        },
+        {
+          "key": "b",
+          "text": "Saturday"
+        },
+        {
+          "key": "c",
+          "text": "Friday"
+        },
+        {
+          "key": "d",
+          "text": "Wednesday"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Saturday” là thứ Bảy.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-days-months-007",
+      "type": "single_choice",
+      "prompt": "“Chủ nhật” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Saturday"
+        },
+        {
+          "key": "b",
+          "text": "Monday"
+        },
+        {
+          "key": "c",
+          "text": "Sunday"
+        },
+        {
+          "key": "d",
+          "text": "Tuesday"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Sunday” là Chủ nhật.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-4-days-months-008",
+      "type": "single_choice",
+      "prompt": "“Tháng Một” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "March"
+        },
+        {
+          "key": "b",
+          "text": "July"
+        },
+        {
+          "key": "c",
+          "text": "June"
+        },
+        {
+          "key": "d",
+          "text": "January"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“January” là tháng Một.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-days-months-009",
+      "type": "single_choice",
+      "prompt": "“Tháng Năm” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "May"
+        },
+        {
+          "key": "b",
+          "text": "March"
+        },
+        {
+          "key": "c",
+          "text": "April"
+        },
+        {
+          "key": "d",
+          "text": "June"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“May” là tháng Năm.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-4-days-months-010",
+      "type": "single_choice",
+      "prompt": "“Tháng Chín” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "November"
+        },
+        {
+          "key": "b",
+          "text": "September"
+        },
+        {
+          "key": "c",
+          "text": "October"
+        },
+        {
+          "key": "d",
+          "text": "December"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“September” là tháng Chín.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-days-months-011",
+      "type": "single_choice",
+      "prompt": "“Tháng Mười Hai” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "October"
+        },
+        {
+          "key": "b",
+          "text": "November"
+        },
+        {
+          "key": "c",
+          "text": "December"
+        },
+        {
+          "key": "d",
+          "text": "September"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“December” là tháng Mười Hai.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-4-days-months-012",
+      "type": "single_choice",
+      "prompt": "Ngày nào đứng ngay sau “Wednesday” trong tuần?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Sunday"
+        },
+        {
+          "key": "b",
+          "text": "Tuesday"
+        },
+        {
+          "key": "c",
+          "text": "Friday"
+        },
+        {
+          "key": "d",
+          "text": "Thursday"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Sau thứ Tư là thứ Năm – “Thursday”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-days-months-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn các ngày trong tuần.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Friday"
+        },
+        {
+          "key": "b",
+          "text": "January"
+        },
+        {
+          "key": "c",
+          "text": "July"
+        },
+        {
+          "key": "d",
+          "text": "Monday"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "“Monday” và “Friday” là ngày trong tuần.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-days-months-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn các tháng trong năm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "August"
+        },
+        {
+          "key": "b",
+          "text": "Sunday"
+        },
+        {
+          "key": "c",
+          "text": "Tuesday"
+        },
+        {
+          "key": "d",
+          "text": "March"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "“March” và “August” là các tháng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-days-months-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn các tháng thuộc mùa hè ở Việt Nam.",
+      "options": [
+        {
+          "key": "a",
+          "text": "December"
+        },
+        {
+          "key": "b",
+          "text": "January"
+        },
+        {
+          "key": "c",
+          "text": "June"
+        },
+        {
+          "key": "d",
+          "text": "July"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Tháng Sáu, tháng Bảy là mùa hè ở Việt Nam.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-days-months-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn các cặp từ tiếng Anh – tiếng Việt đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "May – Tháng Năm"
+        },
+        {
+          "key": "b",
+          "text": "Monday – Thứ Ba"
+        },
+        {
+          "key": "c",
+          "text": "Sunday – Chủ nhật"
+        },
+        {
+          "key": "d",
+          "text": "April – Tháng Sáu"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "“Sunday” là Chủ nhật, “May” là tháng Năm; “Monday” là thứ Hai, “April” là tháng Tư.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-days-months-017",
+      "type": "true_false",
+      "prompt": "“Monday” là thứ Hai.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, “Monday” là thứ Hai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-days-months-018",
+      "type": "true_false",
+      "prompt": "“December” là tháng Mười.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, “December” là tháng Mười Hai; tháng Mười là “October”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-days-months-019",
+      "type": "true_false",
+      "prompt": "“Sunday” là Chủ nhật.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, “Sunday” là Chủ nhật.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-days-months-020",
+      "type": "true_false",
+      "prompt": "“April” là tháng Tám.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, “April” là tháng Tư; tháng Tám là “August”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-days-months-021",
+      "type": "fill_in",
+      "prompt": "Điền ngày còn thiếu trong tuần: “Monday, Tuesday, ___, Thursday”.",
+      "answer": {
+        "accepted": [
+          "Wednesday"
+        ]
+      },
+      "explanation": "Sau thứ Ba là thứ Tư – “Wednesday”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-days-months-022",
+      "type": "fill_in",
+      "prompt": "Điền tháng còn thiếu: “March, April, ___”.",
+      "answer": {
+        "accepted": [
+          "May"
+        ]
+      },
+      "explanation": "Sau tháng Tư là tháng Năm – “May”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-days-months-023",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “The first month of the year is ___.”",
+      "answer": {
+        "accepted": [
+          "January"
+        ]
+      },
+      "explanation": "Tháng đầu năm là tháng Một – “January”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-days-months-024",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “The last month of the year is ___.”",
+      "answer": {
+        "accepted": [
+          "December"
+        ]
+      },
+      "explanation": "Tháng cuối năm là tháng Mười Hai – “December”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-days-months-025",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “We do not go to school on ___.” (Chủ nhật)",
+      "answer": {
+        "accepted": [
+          "Sunday"
+        ]
+      },
+      "explanation": "Chủ nhật là “Sunday”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

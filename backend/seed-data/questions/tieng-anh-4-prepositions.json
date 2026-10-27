@@ -1,0 +1,598 @@
+{
+  "topic": {
+    "id": "tieng-anh-4-prepositions",
+    "subjectId": "tieng-anh",
+    "grade": 4,
+    "slug": "prepositions",
+    "name": "Giới từ chỉ vị trí",
+    "sortOrder": 6
+  },
+  "questions": [
+    {
+      "id": "tieng-anh-4-prepositions-001",
+      "type": "single_choice",
+      "prompt": "“Ở trong” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "in"
+        },
+        {
+          "key": "b",
+          "text": "on"
+        },
+        {
+          "key": "c",
+          "text": "near"
+        },
+        {
+          "key": "d",
+          "text": "under"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“In” nghĩa là ở trong.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-002",
+      "type": "single_choice",
+      "prompt": "“Ở trên” (bề mặt) trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "behind"
+        },
+        {
+          "key": "b",
+          "text": "on"
+        },
+        {
+          "key": "c",
+          "text": "under"
+        },
+        {
+          "key": "d",
+          "text": "in"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“On” nghĩa là ở trên bề mặt.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-003",
+      "type": "single_choice",
+      "prompt": "“Ở dưới” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "in"
+        },
+        {
+          "key": "b",
+          "text": "on"
+        },
+        {
+          "key": "c",
+          "text": "under"
+        },
+        {
+          "key": "d",
+          "text": "above"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Under” nghĩa là ở dưới.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-004",
+      "type": "single_choice",
+      "prompt": "“Phía sau” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "between"
+        },
+        {
+          "key": "b",
+          "text": "on"
+        },
+        {
+          "key": "c",
+          "text": "in front of"
+        },
+        {
+          "key": "d",
+          "text": "behind"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Behind” nghĩa là phía sau.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-005",
+      "type": "single_choice",
+      "prompt": "“Phía trước” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "in front of"
+        },
+        {
+          "key": "b",
+          "text": "behind"
+        },
+        {
+          "key": "c",
+          "text": "under"
+        },
+        {
+          "key": "d",
+          "text": "next to"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“In front of” nghĩa là phía trước.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-006",
+      "type": "single_choice",
+      "prompt": "“Ở giữa” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "near"
+        },
+        {
+          "key": "b",
+          "text": "between"
+        },
+        {
+          "key": "c",
+          "text": "on"
+        },
+        {
+          "key": "d",
+          "text": "behind"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Between” nghĩa là ở giữa hai vật.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-007",
+      "type": "single_choice",
+      "prompt": "“Bên cạnh” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "under"
+        },
+        {
+          "key": "b",
+          "text": "in"
+        },
+        {
+          "key": "c",
+          "text": "next to"
+        },
+        {
+          "key": "d",
+          "text": "above"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Next to” nghĩa là bên cạnh.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-008",
+      "type": "single_choice",
+      "prompt": "“Gần” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "on"
+        },
+        {
+          "key": "b",
+          "text": "far"
+        },
+        {
+          "key": "c",
+          "text": "behind"
+        },
+        {
+          "key": "d",
+          "text": "near"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Near” nghĩa là gần.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-009",
+      "type": "single_choice",
+      "prompt": "Điền từ: “The cat is ___ the table.” (con mèo ở dưới gầm bàn)",
+      "options": [
+        {
+          "key": "a",
+          "text": "under"
+        },
+        {
+          "key": "b",
+          "text": "above"
+        },
+        {
+          "key": "c",
+          "text": "on"
+        },
+        {
+          "key": "d",
+          "text": "in"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Con mèo ở dưới bàn nên dùng “under”.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-010",
+      "type": "single_choice",
+      "prompt": "Điền từ: “The book is ___ the desk.” (quyển sách ở trên mặt bàn)",
+      "options": [
+        {
+          "key": "a",
+          "text": "in"
+        },
+        {
+          "key": "b",
+          "text": "on"
+        },
+        {
+          "key": "c",
+          "text": "behind"
+        },
+        {
+          "key": "d",
+          "text": "under"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Sách ở trên mặt bàn nên dùng “on”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-011",
+      "type": "single_choice",
+      "prompt": "Điền từ: “The pen is ___ the box.” (bút ở trong hộp)",
+      "options": [
+        {
+          "key": "a",
+          "text": "under"
+        },
+        {
+          "key": "b",
+          "text": "on"
+        },
+        {
+          "key": "c",
+          "text": "in"
+        },
+        {
+          "key": "d",
+          "text": "near"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Bút ở trong hộp nên dùng “in”.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-012",
+      "type": "single_choice",
+      "prompt": "Điền từ: “Nam sits ___ Hoa and Lan.” (ở giữa hai bạn)",
+      "options": [
+        {
+          "key": "a",
+          "text": "under"
+        },
+        {
+          "key": "b",
+          "text": "next to"
+        },
+        {
+          "key": "c",
+          "text": "behind"
+        },
+        {
+          "key": "d",
+          "text": "between"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Ở giữa hai người dùng “between”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn các giới từ chỉ vị trí.",
+      "options": [
+        {
+          "key": "a",
+          "text": "and"
+        },
+        {
+          "key": "b",
+          "text": "in"
+        },
+        {
+          "key": "c",
+          "text": "but"
+        },
+        {
+          "key": "d",
+          "text": "under"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "“In” và “under” là giới từ chỉ vị trí.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ chỉ vị trí phía sau hoặc phía trước.",
+      "options": [
+        {
+          "key": "a",
+          "text": "in"
+        },
+        {
+          "key": "b",
+          "text": "on"
+        },
+        {
+          "key": "c",
+          "text": "in front of"
+        },
+        {
+          "key": "d",
+          "text": "behind"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "“Behind” là phía sau, “in front of” là phía trước.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn các cặp từ tiếng Anh – tiếng Việt đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "on – ở trong"
+        },
+        {
+          "key": "b",
+          "text": "under – ở dưới"
+        },
+        {
+          "key": "c",
+          "text": "between – ở giữa"
+        },
+        {
+          "key": "d",
+          "text": "near – ở trên"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "“Under” là ở dưới, “between” là ở giữa; “on” là ở trên, “near” là gần.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn các câu đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "The cat is on the sofa."
+        },
+        {
+          "key": "b",
+          "text": "The ball is under of the chair."
+        },
+        {
+          "key": "c",
+          "text": "The cat is on of the sofa."
+        },
+        {
+          "key": "d",
+          "text": "The ball is under the chair."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Giới từ chỉ vị trí không đi với “of” trong các câu này.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-017",
+      "type": "true_false",
+      "prompt": "“Under” nghĩa là “ở dưới”.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, “under” là ở dưới.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-018",
+      "type": "true_false",
+      "prompt": "“Behind” nghĩa là “phía trước”.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, “behind” là phía sau; phía trước là “in front of”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-019",
+      "type": "true_false",
+      "prompt": "“Between” nghĩa là “ở giữa”.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, “between” là ở giữa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-020",
+      "type": "true_false",
+      "prompt": "“Next to” nghĩa là “ở trên”.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, “next to” là bên cạnh; ở trên là “on/above”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-021",
+      "type": "fill_in",
+      "prompt": "Điền giới từ: “The picture is ___ the wall.”",
+      "answer": {
+        "accepted": [
+          "on"
+        ]
+      },
+      "explanation": "Tranh treo trên tường nên dùng “on”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-022",
+      "type": "fill_in",
+      "prompt": "Điền giới từ: “The dog is ___ the table.” (ở dưới)",
+      "answer": {
+        "accepted": [
+          "under"
+        ]
+      },
+      "explanation": "Ở dưới dùng “under”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-023",
+      "type": "fill_in",
+      "prompt": "Điền giới từ: “The pencils are ___ the bag.” (ở trong)",
+      "answer": {
+        "accepted": [
+          "in"
+        ]
+      },
+      "explanation": "Ở trong dùng “in”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-024",
+      "type": "fill_in",
+      "prompt": "Điền giới từ: “Lan is standing ___ Nam.” (bên cạnh)",
+      "answer": {
+        "accepted": [
+          "next to",
+          "beside"
+        ]
+      },
+      "explanation": "Bên cạnh dùng “next to” hoặc “beside”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-prepositions-025",
+      "type": "fill_in",
+      "prompt": "Điền giới từ: “The shop is ___ the school and the park.” (ở giữa)",
+      "answer": {
+        "accepted": [
+          "between"
+        ]
+      },
+      "explanation": "Ở giữa hai vật dùng “between”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

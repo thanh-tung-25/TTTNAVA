@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kim cương — Bé Học Vui</title>
+  <link rel="icon" href="/assets/avatars/cu.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
+</head>
+<body>
+  <header id="app-header"></header>
+  <main class="page">
+    <div class="page-head">
+      <div>
+        <p class="eyebrow">Kim cương</p>
+        <h1>Kho báu của con</h1>
+        <p>Con nhận kim cương khi hoàn thành luyện tập, bài thi và trận thách đấu.</p>
+      </div>
+      <a class="btn btn-ghost btn-sm" href="/pages/student/leaderboard/">🏆 Bảng xếp hạng</a>
+    </div>
+
+    <section class="diamond-hero">
+      <div class="diamond-total" id="diamond-total">0</div>
+      <p class="muted" style="margin:.2rem 0 0">kim cương</p>
+      <div class="result-stats">
+        <span class="badge badge-warning" id="diamond-week">Tuần này: 0</span>
+        <span class="badge badge-warning" id="diamond-month">Tháng này: 0</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-head"><h2>Hoạt động nhận kim cương</h2></div>
+      <div id="ledger-list"><div class="loading">Đang tải…</div></div>
+    </section>
+  </main>
+  <script type="module" src="/assets/js/diamonds.js"></script>
+</body>
+</html>

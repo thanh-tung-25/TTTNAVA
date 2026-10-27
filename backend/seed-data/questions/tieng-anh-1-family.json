@@ -1,0 +1,2557 @@
+{
+  "topic": {
+    "id": "tieng-anh-1-family",
+    "subjectId": "tieng-anh",
+    "grade": 1,
+    "slug": "family",
+    "name": "Gia đình",
+    "sortOrder": 5
+  },
+  "questions": [
+    {
+      "id": "tieng-anh-1-family-001",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'father' có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bố"
+        },
+        {
+          "key": "b",
+          "text": "bà"
+        },
+        {
+          "key": "c",
+          "text": "bố mẹ"
+        },
+        {
+          "key": "d",
+          "text": "anh trai"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'father' nghĩa là bố.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-002",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'mother' có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "chị gái"
+        },
+        {
+          "key": "b",
+          "text": "mẹ"
+        },
+        {
+          "key": "c",
+          "text": "em bé"
+        },
+        {
+          "key": "d",
+          "text": "chú"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'mother' nghĩa là mẹ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-003",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'brother' có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ông"
+        },
+        {
+          "key": "b",
+          "text": "cô"
+        },
+        {
+          "key": "c",
+          "text": "anh trai"
+        },
+        {
+          "key": "d",
+          "text": "gia đình"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'brother' nghĩa là anh trai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-004",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'sister' có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bố mẹ"
+        },
+        {
+          "key": "b",
+          "text": "bà"
+        },
+        {
+          "key": "c",
+          "text": "anh em họ"
+        },
+        {
+          "key": "d",
+          "text": "chị gái"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'sister' nghĩa là chị gái.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-005",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'grandfather' có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ông"
+        },
+        {
+          "key": "b",
+          "text": "em bé"
+        },
+        {
+          "key": "c",
+          "text": "chú"
+        },
+        {
+          "key": "d",
+          "text": "con trai"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'grandfather' nghĩa là ông.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-006",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'grandmother' có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con gái"
+        },
+        {
+          "key": "b",
+          "text": "bà"
+        },
+        {
+          "key": "c",
+          "text": "cô"
+        },
+        {
+          "key": "d",
+          "text": "gia đình"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'grandmother' nghĩa là bà.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-007",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'baby' có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bố"
+        },
+        {
+          "key": "b",
+          "text": "anh em họ"
+        },
+        {
+          "key": "c",
+          "text": "em bé"
+        },
+        {
+          "key": "d",
+          "text": "bố mẹ"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'baby' nghĩa là em bé.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-008",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'family' có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "chú"
+        },
+        {
+          "key": "b",
+          "text": "con trai"
+        },
+        {
+          "key": "c",
+          "text": "mẹ"
+        },
+        {
+          "key": "d",
+          "text": "gia đình"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'family' nghĩa là gia đình.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-009",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'parents' có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bố mẹ"
+        },
+        {
+          "key": "b",
+          "text": "anh trai"
+        },
+        {
+          "key": "c",
+          "text": "cô"
+        },
+        {
+          "key": "d",
+          "text": "con gái"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'parents' nghĩa là bố mẹ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-010",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'uncle' có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "anh em họ"
+        },
+        {
+          "key": "b",
+          "text": "chú"
+        },
+        {
+          "key": "c",
+          "text": "bố"
+        },
+        {
+          "key": "d",
+          "text": "chị gái"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'uncle' nghĩa là chú.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-011",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'aunt' có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ông"
+        },
+        {
+          "key": "b",
+          "text": "con trai"
+        },
+        {
+          "key": "c",
+          "text": "cô"
+        },
+        {
+          "key": "d",
+          "text": "mẹ"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'aunt' nghĩa là cô.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-012",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'cousin' có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bà"
+        },
+        {
+          "key": "b",
+          "text": "anh trai"
+        },
+        {
+          "key": "c",
+          "text": "con gái"
+        },
+        {
+          "key": "d",
+          "text": "anh em họ"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'cousin' nghĩa là anh em họ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-013",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'son' có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con trai"
+        },
+        {
+          "key": "b",
+          "text": "em bé"
+        },
+        {
+          "key": "c",
+          "text": "bố"
+        },
+        {
+          "key": "d",
+          "text": "chị gái"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'son' nghĩa là con trai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-014",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'daughter' có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "gia đình"
+        },
+        {
+          "key": "b",
+          "text": "con gái"
+        },
+        {
+          "key": "c",
+          "text": "ông"
+        },
+        {
+          "key": "d",
+          "text": "mẹ"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'daughter' nghĩa là con gái.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-015",
+      "type": "single_choice",
+      "prompt": "'bố' trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "grandfather"
+        },
+        {
+          "key": "b",
+          "text": "family"
+        },
+        {
+          "key": "c",
+          "text": "father"
+        },
+        {
+          "key": "d",
+          "text": "aunt"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'bố' trong tiếng Anh là 'father'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-016",
+      "type": "single_choice",
+      "prompt": "'mẹ' trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cousin"
+        },
+        {
+          "key": "b",
+          "text": "parents"
+        },
+        {
+          "key": "c",
+          "text": "grandmother"
+        },
+        {
+          "key": "d",
+          "text": "mother"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'mẹ' trong tiếng Anh là 'mother'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-017",
+      "type": "single_choice",
+      "prompt": "'anh trai' trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "brother"
+        },
+        {
+          "key": "b",
+          "text": "son"
+        },
+        {
+          "key": "c",
+          "text": "uncle"
+        },
+        {
+          "key": "d",
+          "text": "baby"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'anh trai' trong tiếng Anh là 'brother'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-018",
+      "type": "single_choice",
+      "prompt": "'chị gái' trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "family"
+        },
+        {
+          "key": "b",
+          "text": "sister"
+        },
+        {
+          "key": "c",
+          "text": "daughter"
+        },
+        {
+          "key": "d",
+          "text": "aunt"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'chị gái' trong tiếng Anh là 'sister'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-019",
+      "type": "single_choice",
+      "prompt": "'ông' trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "parents"
+        },
+        {
+          "key": "b",
+          "text": "father"
+        },
+        {
+          "key": "c",
+          "text": "grandfather"
+        },
+        {
+          "key": "d",
+          "text": "cousin"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'ông' trong tiếng Anh là 'grandfather'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-020",
+      "type": "single_choice",
+      "prompt": "'bà' trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "son"
+        },
+        {
+          "key": "b",
+          "text": "uncle"
+        },
+        {
+          "key": "c",
+          "text": "mother"
+        },
+        {
+          "key": "d",
+          "text": "grandmother"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'bà' trong tiếng Anh là 'grandmother'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-021",
+      "type": "single_choice",
+      "prompt": "'em bé' trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "baby"
+        },
+        {
+          "key": "b",
+          "text": "aunt"
+        },
+        {
+          "key": "c",
+          "text": "brother"
+        },
+        {
+          "key": "d",
+          "text": "daughter"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'em bé' trong tiếng Anh là 'baby'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-022",
+      "type": "single_choice",
+      "prompt": "'gia đình' trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cousin"
+        },
+        {
+          "key": "b",
+          "text": "family"
+        },
+        {
+          "key": "c",
+          "text": "father"
+        },
+        {
+          "key": "d",
+          "text": "sister"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'gia đình' trong tiếng Anh là 'family'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-023",
+      "type": "single_choice",
+      "prompt": "'bố mẹ' trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mother"
+        },
+        {
+          "key": "b",
+          "text": "grandfather"
+        },
+        {
+          "key": "c",
+          "text": "parents"
+        },
+        {
+          "key": "d",
+          "text": "son"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'bố mẹ' trong tiếng Anh là 'parents'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-024",
+      "type": "single_choice",
+      "prompt": "'chú' trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "daughter"
+        },
+        {
+          "key": "b",
+          "text": "grandmother"
+        },
+        {
+          "key": "c",
+          "text": "brother"
+        },
+        {
+          "key": "d",
+          "text": "uncle"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'chú' trong tiếng Anh là 'uncle'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-025",
+      "type": "single_choice",
+      "prompt": "'cô' trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "aunt"
+        },
+        {
+          "key": "b",
+          "text": "father"
+        },
+        {
+          "key": "c",
+          "text": "baby"
+        },
+        {
+          "key": "d",
+          "text": "sister"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'cô' trong tiếng Anh là 'aunt'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-026",
+      "type": "single_choice",
+      "prompt": "'anh em họ' trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "family"
+        },
+        {
+          "key": "b",
+          "text": "cousin"
+        },
+        {
+          "key": "c",
+          "text": "grandfather"
+        },
+        {
+          "key": "d",
+          "text": "mother"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'anh em họ' trong tiếng Anh là 'cousin'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-027",
+      "type": "single_choice",
+      "prompt": "'con trai' trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "grandmother"
+        },
+        {
+          "key": "b",
+          "text": "parents"
+        },
+        {
+          "key": "c",
+          "text": "son"
+        },
+        {
+          "key": "d",
+          "text": "brother"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'con trai' trong tiếng Anh là 'son'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-028",
+      "type": "single_choice",
+      "prompt": "'con gái' trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "uncle"
+        },
+        {
+          "key": "b",
+          "text": "baby"
+        },
+        {
+          "key": "c",
+          "text": "sister"
+        },
+        {
+          "key": "d",
+          "text": "daughter"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'con gái' trong tiếng Anh là 'daughter'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-029",
+      "type": "single_choice",
+      "prompt": "Mẹ của bố con gọi là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bà nội"
+        },
+        {
+          "key": "b",
+          "text": "ông nội"
+        },
+        {
+          "key": "c",
+          "text": "ông ngoại"
+        },
+        {
+          "key": "d",
+          "text": "bà ngoại"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Người đó gọi là bà nội.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-030",
+      "type": "single_choice",
+      "prompt": "Mẹ của mẹ con gọi là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bà nội"
+        },
+        {
+          "key": "b",
+          "text": "bà ngoại"
+        },
+        {
+          "key": "c",
+          "text": "ông ngoại"
+        },
+        {
+          "key": "d",
+          "text": "ông nội"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Người đó gọi là bà ngoại.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-031",
+      "type": "single_choice",
+      "prompt": "Bố của bố con gọi là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bà ngoại"
+        },
+        {
+          "key": "b",
+          "text": "bà nội"
+        },
+        {
+          "key": "c",
+          "text": "ông nội"
+        },
+        {
+          "key": "d",
+          "text": "ông ngoại"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Người đó gọi là ông nội.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-032",
+      "type": "single_choice",
+      "prompt": "Bố của mẹ con gọi là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ông nội"
+        },
+        {
+          "key": "b",
+          "text": "bà ngoại"
+        },
+        {
+          "key": "c",
+          "text": "bà nội"
+        },
+        {
+          "key": "d",
+          "text": "ông ngoại"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Người đó gọi là ông ngoại.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-033",
+      "type": "single_choice",
+      "prompt": "Gia đình con có bố, mẹ và con. Có tất cả mấy người?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "1"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Con đếm được tất cả 3 người.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-034",
+      "type": "single_choice",
+      "prompt": "Gia đình con có bố, mẹ, anh trai và con. Có tất cả mấy người?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Con đếm được tất cả 4 người.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-035",
+      "type": "single_choice",
+      "prompt": "Gia đình con có bố, mẹ, chị gái và con. Có tất cả mấy người?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "9"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Con đếm được tất cả 4 người.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-036",
+      "type": "single_choice",
+      "prompt": "Gia đình con có bố, mẹ, ông nội và con. Có tất cả mấy người?",
+      "options": [
+        {
+          "key": "a",
+          "text": "10"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "7"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Con đếm được tất cả 4 người.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-037",
+      "type": "single_choice",
+      "prompt": "Gia đình con có bố, mẹ, bà ngoại, em bé và con. Có tất cả mấy người?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "8"
+        },
+        {
+          "key": "d",
+          "text": "1"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Con đếm được tất cả 5 người.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-038",
+      "type": "single_choice",
+      "prompt": "Gia đình con có bố, mẹ, anh trai, chị gái và con. Có tất cả mấy người?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "9"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Con đếm được tất cả 5 người.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-039",
+      "type": "single_choice",
+      "prompt": "Gia đình con có bố, mẹ, ông nội, bà nội và con. Có tất cả mấy người?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "10"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "7"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Con đếm được tất cả 5 người.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-040",
+      "type": "single_choice",
+      "prompt": "Gia đình con có bố, mẹ, ông nội, bà nội, em bé và con. Có tất cả mấy người?",
+      "options": [
+        {
+          "key": "a",
+          "text": "8"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "1"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Con đếm được tất cả 6 người.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-041",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'father' có mấy chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "10"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Từ 'father' có 6 chữ cái.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-042",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'mother' có mấy chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "8"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "11"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Từ 'mother' có 6 chữ cái.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-043",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'brother' có mấy chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "1"
+        },
+        {
+          "key": "c",
+          "text": "7"
+        },
+        {
+          "key": "d",
+          "text": "9"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Từ 'brother' có 7 chữ cái.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-044",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'sister' có mấy chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "10"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Từ 'sister' có 6 chữ cái.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-045",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'grandfather' có mấy chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "11"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "9"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Từ 'grandfather' có 11 chữ cái.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-046",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'grandmother' có mấy chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "11"
+        },
+        {
+          "key": "c",
+          "text": "7"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Từ 'grandmother' có 11 chữ cái.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-047",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'baby' có mấy chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "8"
+        },
+        {
+          "key": "b",
+          "text": "2"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Từ 'baby' có 4 chữ cái.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-048",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'family' có mấy chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "9"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Từ 'family' có 6 chữ cái.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-049",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'parents' có mấy chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "2"
+        },
+        {
+          "key": "c",
+          "text": "10"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Từ 'parents' có 7 chữ cái.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-050",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'uncle' có mấy chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "8"
+        },
+        {
+          "key": "d",
+          "text": "11"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Từ 'uncle' có 5 chữ cái.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-051",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'aunt' có mấy chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "1"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "9"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Từ 'aunt' có 4 chữ cái.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-052",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'cousin' có mấy chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "10"
+        },
+        {
+          "key": "c",
+          "text": "7"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Từ 'cousin' có 6 chữ cái.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-053",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ người trong gia đình trong nhóm: mother, book, father, table.",
+      "options": [
+        {
+          "key": "a",
+          "text": "table"
+        },
+        {
+          "key": "b",
+          "text": "father"
+        },
+        {
+          "key": "c",
+          "text": "mother"
+        },
+        {
+          "key": "d",
+          "text": "book"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các từ mother, father chỉ người trong gia đình; book, table không phải.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-054",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ người trong gia đình trong nhóm: sister, chair, brother, pen.",
+      "options": [
+        {
+          "key": "a",
+          "text": "brother"
+        },
+        {
+          "key": "b",
+          "text": "pen"
+        },
+        {
+          "key": "c",
+          "text": "sister"
+        },
+        {
+          "key": "d",
+          "text": "chair"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các từ sister, brother chỉ người trong gia đình; chair, pen không phải.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-055",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ người trong gia đình trong nhóm: grandmother, bag, grandfather, ball.",
+      "options": [
+        {
+          "key": "a",
+          "text": "grandmother"
+        },
+        {
+          "key": "b",
+          "text": "ball"
+        },
+        {
+          "key": "c",
+          "text": "grandfather"
+        },
+        {
+          "key": "d",
+          "text": "bag"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các từ grandmother, grandfather chỉ người trong gia đình; bag, ball không phải.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-056",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ người trong gia đình trong nhóm: aunt, tree, uncle, house.",
+      "options": [
+        {
+          "key": "a",
+          "text": "aunt"
+        },
+        {
+          "key": "b",
+          "text": "tree"
+        },
+        {
+          "key": "c",
+          "text": "house"
+        },
+        {
+          "key": "d",
+          "text": "uncle"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các từ aunt, uncle chỉ người trong gia đình; tree, house không phải.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-057",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ người trong gia đình trong nhóm: baby, car, cousin, doll.",
+      "options": [
+        {
+          "key": "a",
+          "text": "baby"
+        },
+        {
+          "key": "b",
+          "text": "car"
+        },
+        {
+          "key": "c",
+          "text": "cousin"
+        },
+        {
+          "key": "d",
+          "text": "doll"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các từ baby, cousin chỉ người trong gia đình; car, doll không phải.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-058",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ người trong gia đình trong nhóm: son, milk, daughter, rice.",
+      "options": [
+        {
+          "key": "a",
+          "text": "rice"
+        },
+        {
+          "key": "b",
+          "text": "son"
+        },
+        {
+          "key": "c",
+          "text": "daughter"
+        },
+        {
+          "key": "d",
+          "text": "milk"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các từ son, daughter chỉ người trong gia đình; milk, rice không phải.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-059",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ người trong gia đình trong nhóm: parents, door, family, window.",
+      "options": [
+        {
+          "key": "a",
+          "text": "window"
+        },
+        {
+          "key": "b",
+          "text": "door"
+        },
+        {
+          "key": "c",
+          "text": "family"
+        },
+        {
+          "key": "d",
+          "text": "parents"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các từ parents, family chỉ người trong gia đình; door, window không phải.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-060",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ người trong gia đình trong nhóm: mother, shoe, sister, hat.",
+      "options": [
+        {
+          "key": "a",
+          "text": "mother"
+        },
+        {
+          "key": "b",
+          "text": "sister"
+        },
+        {
+          "key": "c",
+          "text": "shoe"
+        },
+        {
+          "key": "d",
+          "text": "hat"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các từ mother, sister chỉ người trong gia đình; shoe, hat không phải.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-061",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ người trong gia đình trong nhóm: father, spoon, brother, plate.",
+      "options": [
+        {
+          "key": "a",
+          "text": "brother"
+        },
+        {
+          "key": "b",
+          "text": "spoon"
+        },
+        {
+          "key": "c",
+          "text": "plate"
+        },
+        {
+          "key": "d",
+          "text": "father"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các từ father, brother chỉ người trong gia đình; spoon, plate không phải.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-062",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là 'bố' và 'mẹ' trong nhóm: father, sister, mother, brother.",
+      "options": [
+        {
+          "key": "a",
+          "text": "sister"
+        },
+        {
+          "key": "b",
+          "text": "father"
+        },
+        {
+          "key": "c",
+          "text": "brother"
+        },
+        {
+          "key": "d",
+          "text": "mother"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "'father' là bố, 'mother' là mẹ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-063",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là 'ông' và 'bà' trong nhóm: grandfather, aunt, grandmother, uncle.",
+      "options": [
+        {
+          "key": "a",
+          "text": "grandfather"
+        },
+        {
+          "key": "b",
+          "text": "aunt"
+        },
+        {
+          "key": "c",
+          "text": "grandmother"
+        },
+        {
+          "key": "d",
+          "text": "uncle"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "'grandfather' là ông, 'grandmother' là bà.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-064",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là 'anh trai' và 'chị gái' trong nhóm: brother, father, sister, mother.",
+      "options": [
+        {
+          "key": "a",
+          "text": "mother"
+        },
+        {
+          "key": "b",
+          "text": "father"
+        },
+        {
+          "key": "c",
+          "text": "brother"
+        },
+        {
+          "key": "d",
+          "text": "sister"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "'brother' là anh trai, 'sister' là chị gái.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-065",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là 'chú' và 'cô' trong nhóm: uncle, baby, aunt, cousin.",
+      "options": [
+        {
+          "key": "a",
+          "text": "baby"
+        },
+        {
+          "key": "b",
+          "text": "aunt"
+        },
+        {
+          "key": "c",
+          "text": "uncle"
+        },
+        {
+          "key": "d",
+          "text": "cousin"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "'uncle' là chú, 'aunt' là cô.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-066",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là 'bố mẹ' và 'gia đình' trong nhóm: parents, son, family, daughter.",
+      "options": [
+        {
+          "key": "a",
+          "text": "daughter"
+        },
+        {
+          "key": "b",
+          "text": "son"
+        },
+        {
+          "key": "c",
+          "text": "family"
+        },
+        {
+          "key": "d",
+          "text": "parents"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "'parents' là bố mẹ, 'family' là gia đình.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-067",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là 'em bé' và 'con trai' trong nhóm: baby, mother, son, father.",
+      "options": [
+        {
+          "key": "a",
+          "text": "father"
+        },
+        {
+          "key": "b",
+          "text": "son"
+        },
+        {
+          "key": "c",
+          "text": "baby"
+        },
+        {
+          "key": "d",
+          "text": "mother"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "'baby' là em bé, 'son' là con trai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-068",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là 'anh em họ' và 'con gái' trong nhóm: cousin, brother, daughter, sister.",
+      "options": [
+        {
+          "key": "a",
+          "text": "sister"
+        },
+        {
+          "key": "b",
+          "text": "daughter"
+        },
+        {
+          "key": "c",
+          "text": "brother"
+        },
+        {
+          "key": "d",
+          "text": "cousin"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "'cousin' là anh em họ, 'daughter' là con gái.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-069",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là 'bà' và 'cô' trong nhóm: grandmother, grandfather, aunt, uncle.",
+      "options": [
+        {
+          "key": "a",
+          "text": "grandmother"
+        },
+        {
+          "key": "b",
+          "text": "grandfather"
+        },
+        {
+          "key": "c",
+          "text": "uncle"
+        },
+        {
+          "key": "d",
+          "text": "aunt"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "'grandmother' là bà, 'aunt' là cô.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-070",
+      "type": "true_false",
+      "prompt": "Từ 'father' có nghĩa là 'bố'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'father' nghĩa là 'bố'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-071",
+      "type": "true_false",
+      "prompt": "Từ 'mother' có nghĩa là 'gia đình'.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'mother' nghĩa là 'mẹ'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-072",
+      "type": "true_false",
+      "prompt": "Từ 'brother' có nghĩa là 'anh trai'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'brother' nghĩa là 'anh trai'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-073",
+      "type": "true_false",
+      "prompt": "Từ 'sister' có nghĩa là 'chú'.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'sister' nghĩa là 'chị gái'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-074",
+      "type": "true_false",
+      "prompt": "Từ 'grandfather' có nghĩa là 'ông'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'grandfather' nghĩa là 'ông'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-075",
+      "type": "true_false",
+      "prompt": "Từ 'grandmother' có nghĩa là 'anh em họ'.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'grandmother' nghĩa là 'bà'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-076",
+      "type": "true_false",
+      "prompt": "Từ 'baby' có nghĩa là 'em bé'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'baby' nghĩa là 'em bé'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-077",
+      "type": "true_false",
+      "prompt": "Từ 'family' có nghĩa là 'con gái'.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'family' nghĩa là 'gia đình'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-078",
+      "type": "true_false",
+      "prompt": "Từ 'parents' có nghĩa là 'bố mẹ'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'parents' nghĩa là 'bố mẹ'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-079",
+      "type": "true_false",
+      "prompt": "Bố của bố con gọi là ông nội.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng theo cách gọi trong gia đình.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-080",
+      "type": "true_false",
+      "prompt": "Bố của mẹ con gọi là ông nội.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: Bố của mẹ con gọi là ông ngoại.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-081",
+      "type": "true_false",
+      "prompt": "Mẹ của mẹ con gọi là bà ngoại.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng theo cách gọi trong gia đình.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-082",
+      "type": "true_false",
+      "prompt": "Mẹ của bố con gọi là bà ngoại.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: Mẹ của bố con gọi là bà nội.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-083",
+      "type": "true_false",
+      "prompt": "Bố của mẹ con gọi là ông ngoại.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng theo cách gọi trong gia đình.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-084",
+      "type": "true_false",
+      "prompt": "Bố của bố con gọi là ông ngoại.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: Bố của bố con gọi là ông nội.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-085",
+      "type": "true_false",
+      "prompt": "Mẹ của bố con gọi là bà nội.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng theo cách gọi trong gia đình.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-086",
+      "type": "true_false",
+      "prompt": "Mẹ của mẹ con gọi là bà nội.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: Mẹ của mẹ con gọi là bà ngoại.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-087",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ 'bố': ___.",
+      "answer": {
+        "accepted": [
+          "father",
+          "FATHER"
+        ]
+      },
+      "explanation": "'bố' là 'father'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-088",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ 'mẹ': ___.",
+      "answer": {
+        "accepted": [
+          "mother",
+          "MOTHER"
+        ]
+      },
+      "explanation": "'mẹ' là 'mother'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-089",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ 'anh trai': ___.",
+      "answer": {
+        "accepted": [
+          "brother",
+          "BROTHER"
+        ]
+      },
+      "explanation": "'anh trai' là 'brother'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-090",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ 'chị gái': ___.",
+      "answer": {
+        "accepted": [
+          "sister",
+          "SISTER"
+        ]
+      },
+      "explanation": "'chị gái' là 'sister'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-091",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ 'ông': ___.",
+      "answer": {
+        "accepted": [
+          "grandfather",
+          "GRANDFATHER"
+        ]
+      },
+      "explanation": "'ông' là 'grandfather'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-092",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ 'bà': ___.",
+      "answer": {
+        "accepted": [
+          "grandmother",
+          "GRANDMOTHER"
+        ]
+      },
+      "explanation": "'bà' là 'grandmother'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-093",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ 'em bé': ___.",
+      "answer": {
+        "accepted": [
+          "baby",
+          "BABY"
+        ]
+      },
+      "explanation": "'em bé' là 'baby'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-094",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ 'gia đình': ___.",
+      "answer": {
+        "accepted": [
+          "family",
+          "FAMILY"
+        ]
+      },
+      "explanation": "'gia đình' là 'family'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-095",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ 'bố mẹ': ___.",
+      "answer": {
+        "accepted": [
+          "parents",
+          "PARENTS"
+        ]
+      },
+      "explanation": "'bố mẹ' là 'parents'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-096",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ 'chú': ___.",
+      "answer": {
+        "accepted": [
+          "uncle",
+          "UNCLE"
+        ]
+      },
+      "explanation": "'chú' là 'uncle'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-097",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: bố của con là ___.",
+      "answer": {
+        "accepted": [
+          "father",
+          "FATHER"
+        ]
+      },
+      "explanation": "bố là 'father'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-098",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: mẹ của con là ___.",
+      "answer": {
+        "accepted": [
+          "mother",
+          "MOTHER"
+        ]
+      },
+      "explanation": "mẹ là 'mother'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-099",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: anh trai của con là ___.",
+      "answer": {
+        "accepted": [
+          "brother",
+          "BROTHER"
+        ]
+      },
+      "explanation": "anh trai là 'brother'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-100",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: chị gái của con là ___.",
+      "answer": {
+        "accepted": [
+          "sister",
+          "SISTER"
+        ]
+      },
+      "explanation": "chị gái là 'sister'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-101",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: ông của con là ___.",
+      "answer": {
+        "accepted": [
+          "grandfather",
+          "GRANDFATHER"
+        ]
+      },
+      "explanation": "ông là 'grandfather'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-102",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: bà của con là ___.",
+      "answer": {
+        "accepted": [
+          "grandmother",
+          "GRANDMOTHER"
+        ]
+      },
+      "explanation": "bà là 'grandmother'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-103",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: em bé của con là ___.",
+      "answer": {
+        "accepted": [
+          "baby",
+          "BABY"
+        ]
+      },
+      "explanation": "em bé là 'baby'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-104",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: gia đình của con là ___.",
+      "answer": {
+        "accepted": [
+          "family",
+          "FAMILY"
+        ]
+      },
+      "explanation": "gia đình là 'family'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-105",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: bố mẹ của con là ___.",
+      "answer": {
+        "accepted": [
+          "parents",
+          "PARENTS"
+        ]
+      },
+      "explanation": "bố mẹ là 'parents'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-family-106",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: chú của con là ___.",
+      "answer": {
+        "accepted": [
+          "uncle",
+          "UNCLE"
+        ]
+      },
+      "explanation": "chú là 'uncle'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-family-107",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: I love my ___. (gia đình của con)",
+      "answer": {
+        "accepted": [
+          "family"
+        ]
+      },
+      "explanation": "Gia đình là 'family'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-family-108",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: My little ___ is sleeping. (em bé)",
+      "answer": {
+        "accepted": [
+          "baby"
+        ]
+      },
+      "explanation": "Em bé là 'baby'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

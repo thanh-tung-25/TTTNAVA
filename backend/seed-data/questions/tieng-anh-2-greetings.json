@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "tieng-anh-2-greetings",
+    "subjectId": "tieng-anh",
+    "grade": 2,
+    "slug": "greetings",
+    "name": "Chào hỏi và giới thiệu",
+    "sortOrder": 6
+  },
+  "questions": [
+    {
+      "id": "tieng-anh-2-greetings-001",
+      "type": "single_choice",
+      "prompt": "Câu nào dùng để chào buổi sáng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Good morning"
+        },
+        {
+          "key": "b",
+          "text": "Good night"
+        },
+        {
+          "key": "c",
+          "text": "Good afternoon"
+        },
+        {
+          "key": "d",
+          "text": "Goodbye"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Good morning” là chào buổi sáng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-greetings-002",
+      "type": "single_choice",
+      "prompt": "Câu nào dùng để chào buổi tối?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Good afternoon"
+        },
+        {
+          "key": "b",
+          "text": "Good evening"
+        },
+        {
+          "key": "c",
+          "text": "Good morning"
+        },
+        {
+          "key": "d",
+          "text": "Goodbye"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Good evening” là chào buổi tối.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-greetings-003",
+      "type": "single_choice",
+      "prompt": "“Hello” nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cảm ơn"
+        },
+        {
+          "key": "b",
+          "text": "Xin lỗi"
+        },
+        {
+          "key": "c",
+          "text": "Xin chào"
+        },
+        {
+          "key": "d",
+          "text": "Tạm biệt"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Hello” là lời chào.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-2-greetings-004",
+      "type": "single_choice",
+      "prompt": "“Goodbye” nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Mời bạn"
+        },
+        {
+          "key": "b",
+          "text": "Xin chào"
+        },
+        {
+          "key": "c",
+          "text": "Cảm ơn"
+        },
+        {
+          "key": "d",
+          "text": "Tạm biệt"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Goodbye” là lời tạm biệt.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-greetings-005",
+      "type": "single_choice",
+      "prompt": "Câu nào dùng để hỏi tên?",
+      "options": [
+        {
+          "key": "a",
+          "text": "What is your name?"
+        },
+        {
+          "key": "b",
+          "text": "How are you?"
+        },
+        {
+          "key": "c",
+          "text": "Where are you from?"
+        },
+        {
+          "key": "d",
+          "text": "How old are you?"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Câu này hỏi tên của bạn.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-2-greetings-006",
+      "type": "single_choice",
+      "prompt": "Câu nào dùng để trả lời khi được hỏi tên?",
+      "options": [
+        {
+          "key": "a",
+          "text": "I am nine."
+        },
+        {
+          "key": "b",
+          "text": "My name is Lan."
+        },
+        {
+          "key": "c",
+          "text": "I am fine."
+        },
+        {
+          "key": "d",
+          "text": "I am from Viet Nam."
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Câu này giới thiệu tên mình.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-greetings-007",
+      "type": "single_choice",
+      "prompt": "“How are you?” nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bạn bao nhiêu tuổi?"
+        },
+        {
+          "key": "b",
+          "text": "Bạn tên là gì?"
+        },
+        {
+          "key": "c",
+          "text": "Bạn có khỏe không?"
+        },
+        {
+          "key": "d",
+          "text": "Bạn đến từ đâu?"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Câu này dùng để hỏi thăm sức khỏe.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-2-greetings-008",
+      "type": "single_choice",
+      "prompt": "“Nice to meet you.” nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Tạm biệt bạn."
+        },
+        {
+          "key": "b",
+          "text": "Xin lỗi bạn."
+        },
+        {
+          "key": "c",
+          "text": "Cảm ơn bạn."
+        },
+        {
+          "key": "d",
+          "text": "Rất vui được gặp bạn."
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Câu này dùng khi lần đầu gặp ai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-greetings-009",
+      "type": "single_choice",
+      "prompt": "Câu nào dùng để cảm ơn?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Thank you."
+        },
+        {
+          "key": "b",
+          "text": "Sorry."
+        },
+        {
+          "key": "c",
+          "text": "Please."
+        },
+        {
+          "key": "d",
+          "text": "Goodbye."
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Thank you” là lời cảm ơn.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-2-greetings-010",
+      "type": "single_choice",
+      "prompt": "Câu nào dùng để xin lỗi?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Good night."
+        },
+        {
+          "key": "b",
+          "text": "I am sorry."
+        },
+        {
+          "key": "c",
+          "text": "Thank you."
+        },
+        {
+          "key": "d",
+          "text": "Hello."
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“I am sorry” là lời xin lỗi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-greetings-011",
+      "type": "single_choice",
+      "prompt": "Câu nào dùng để chào tạm biệt trước khi ra về?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Good morning."
+        },
+        {
+          "key": "b",
+          "text": "How are you?"
+        },
+        {
+          "key": "c",
+          "text": "Goodbye. See you tomorrow."
+        },
+        {
+          "key": "d",
+          "text": "What is your name?"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đây là lời chào tạm biệt.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-2-greetings-012",
+      "type": "single_choice",
+      "prompt": "“How old are you?” dùng để hỏi điều gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Tên của bạn"
+        },
+        {
+          "key": "b",
+          "text": "Màu bạn thích"
+        },
+        {
+          "key": "c",
+          "text": "Trường của bạn"
+        },
+        {
+          "key": "d",
+          "text": "Tuổi của bạn"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Câu này hỏi tuổi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-greetings-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn các câu dùng để chào hỏi.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Hello!"
+        },
+        {
+          "key": "b",
+          "text": "I am sorry."
+        },
+        {
+          "key": "c",
+          "text": "Good morning!"
+        },
+        {
+          "key": "d",
+          "text": "Thank you."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "“Hello!” và “Good morning!” là lời chào.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-greetings-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn các câu dùng để tạm biệt.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Good morning!"
+        },
+        {
+          "key": "b",
+          "text": "Goodbye!"
+        },
+        {
+          "key": "c",
+          "text": "See you later!"
+        },
+        {
+          "key": "d",
+          "text": "Nice to meet you."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "“Goodbye!” và “See you later!” dùng khi chia tay.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-greetings-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn các câu nói lời cảm ơn hoặc xin lỗi.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Hello."
+        },
+        {
+          "key": "b",
+          "text": "Thank you."
+        },
+        {
+          "key": "c",
+          "text": "I am sorry."
+        },
+        {
+          "key": "d",
+          "text": "My name is Nam."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "“Thank you” là cảm ơn, “I am sorry” là xin lỗi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-greetings-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn các câu trả lời đúng khi được hỏi “How are you?”",
+      "options": [
+        {
+          "key": "a",
+          "text": "I am fine, thank you."
+        },
+        {
+          "key": "b",
+          "text": "I am nine years old."
+        },
+        {
+          "key": "c",
+          "text": "My name is Lan."
+        },
+        {
+          "key": "d",
+          "text": "I am very well."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Hai câu đầu trả lời về sức khỏe.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-greetings-017",
+      "type": "true_false",
+      "prompt": "“Good morning” dùng để chào buổi sáng.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, dùng vào buổi sáng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-greetings-018",
+      "type": "true_false",
+      "prompt": "“Goodbye” dùng để chào khi gặp nhau.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, “goodbye” dùng khi chia tay; khi gặp nhau dùng “hello”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-greetings-019",
+      "type": "true_false",
+      "prompt": "“Thank you” dùng để cảm ơn.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, “thank you” là cảm ơn.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-greetings-020",
+      "type": "true_false",
+      "prompt": "“What is your name?” dùng để hỏi tuổi.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, câu đó hỏi tên; hỏi tuổi là “How old are you?”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-greetings-021",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: “___ morning, Miss Hoa.”",
+      "answer": {
+        "accepted": [
+          "Good"
+        ]
+      },
+      "explanation": "“Good morning” là chào buổi sáng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-greetings-022",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: “My ___ is Nam.”",
+      "answer": {
+        "accepted": [
+          "name"
+        ]
+      },
+      "explanation": "“My name is Nam” là tôi tên Nam.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-greetings-023",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: “Nice to ___ you.”",
+      "answer": {
+        "accepted": [
+          "meet"
+        ]
+      },
+      "explanation": "Cụm “nice to meet you” nghĩa là rất vui được gặp bạn.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-greetings-024",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: “How ___ you?”",
+      "answer": {
+        "accepted": [
+          "are"
+        ]
+      },
+      "explanation": "Câu hỏi thăm là “How are you?”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-greetings-025",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: “I am nine years ___.”",
+      "answer": {
+        "accepted": [
+          "old"
+        ]
+      },
+      "explanation": "“Years old” dùng để chỉ tuổi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,607 @@
+{
+  "topic": {
+    "id": "tieng-viet-2-dau-cau",
+    "subjectId": "tieng-viet",
+    "grade": 2,
+    "slug": "dau-cau",
+    "name": "Dấu câu",
+    "sortOrder": 4
+  },
+  "questions": [
+    {
+      "id": "tieng-viet-2-dau-cau-001",
+      "type": "single_choice",
+      "prompt": "Cuối câu hỏi “Bạn tên là gì” cần dấu gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Dấu chấm hỏi"
+        },
+        {
+          "key": "b",
+          "text": "Dấu chấm"
+        },
+        {
+          "key": "c",
+          "text": "Dấu phẩy"
+        },
+        {
+          "key": "d",
+          "text": "Dấu chấm than"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Câu hỏi kết thúc bằng dấu chấm hỏi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-002",
+      "type": "single_choice",
+      "prompt": "Cuối câu “Ôi, đẹp quá” cần dấu gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Dấu chấm hỏi"
+        },
+        {
+          "key": "b",
+          "text": "Dấu chấm than"
+        },
+        {
+          "key": "c",
+          "text": "Dấu chấm"
+        },
+        {
+          "key": "d",
+          "text": "Dấu phẩy"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Câu bộc lộ cảm xúc dùng dấu chấm than.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-003",
+      "type": "single_choice",
+      "prompt": "Cuối câu kể “Hôm nay trời nắng” cần dấu gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Dấu chấm hỏi"
+        },
+        {
+          "key": "b",
+          "text": "Dấu hai chấm"
+        },
+        {
+          "key": "c",
+          "text": "Dấu chấm"
+        },
+        {
+          "key": "d",
+          "text": "Dấu chấm than"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Câu kể kết thúc bằng dấu chấm.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-004",
+      "type": "single_choice",
+      "prompt": "Dấu phẩy trong câu “Em thích đọc sách, vẽ tranh và hát.” có tác dụng gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Kết thúc câu"
+        },
+        {
+          "key": "b",
+          "text": "Thể hiện cảm xúc"
+        },
+        {
+          "key": "c",
+          "text": "Báo hiệu lời nói"
+        },
+        {
+          "key": "d",
+          "text": "Ngăn cách các từ cùng loại"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Dấu phẩy tách các hoạt động được liệt kê.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-005",
+      "type": "single_choice",
+      "prompt": "Câu nào dùng dấu câu đúng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Mẹ ơi, con đi học đây ạ!"
+        },
+        {
+          "key": "b",
+          "text": "Mẹ ơi, con đi học đây ạ?"
+        },
+        {
+          "key": "c",
+          "text": "Mẹ ơi con, đi học đây ạ!"
+        },
+        {
+          "key": "d",
+          "text": "Mẹ ơi? con đi học đây ạ!"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Câu có dấu phẩy sau tiếng gọi và dấu chấm than cuối câu.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-006",
+      "type": "single_choice",
+      "prompt": "Dấu hai chấm thường được dùng để làm gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Kết thúc câu hỏi"
+        },
+        {
+          "key": "b",
+          "text": "Báo hiệu lời nói của nhân vật"
+        },
+        {
+          "key": "c",
+          "text": "Ngăn cách trạng ngữ"
+        },
+        {
+          "key": "d",
+          "text": "Thay cho dấu chấm"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Dấu hai chấm đứng trước lời nói trực tiếp.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-007",
+      "type": "single_choice",
+      "prompt": "Câu “Bạn có khỏe không” cần điền dấu gì ở cuối?",
+      "options": [
+        {
+          "key": "a",
+          "text": ","
+        },
+        {
+          "key": "b",
+          "text": "!"
+        },
+        {
+          "key": "c",
+          "text": "?"
+        },
+        {
+          "key": "d",
+          "text": "."
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đây là câu hỏi nên dùng dấu chấm hỏi.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-008",
+      "type": "single_choice",
+      "prompt": "Câu nào là câu hỏi?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Con làm bài rất nhanh."
+        },
+        {
+          "key": "b",
+          "text": "Con làm bài rồi."
+        },
+        {
+          "key": "c",
+          "text": "Con làm bài đi!"
+        },
+        {
+          "key": "d",
+          "text": "Con đã làm bài chưa?"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Câu hỏi dùng để hỏi và kết thúc bằng dấu chấm hỏi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-009",
+      "type": "single_choice",
+      "prompt": "Câu nào là câu cảm?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Chao ôi, bông hoa đẹp quá!"
+        },
+        {
+          "key": "b",
+          "text": "Bông hoa nở khi nào?"
+        },
+        {
+          "key": "c",
+          "text": "Em hái bông hoa."
+        },
+        {
+          "key": "d",
+          "text": "Bông hoa này màu đỏ."
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Câu cảm bộc lộ cảm xúc, kết thúc bằng dấu chấm than.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-010",
+      "type": "single_choice",
+      "prompt": "Trong câu “Lan, Hoa và Mai đều học giỏi.”, dấu phẩy dùng để làm gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Kết thúc câu"
+        },
+        {
+          "key": "b",
+          "text": "Ngăn cách các tên riêng"
+        },
+        {
+          "key": "c",
+          "text": "Báo hiệu câu hỏi"
+        },
+        {
+          "key": "d",
+          "text": "Bộc lộ cảm xúc"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Dấu phẩy tách các tên riêng được liệt kê.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-011",
+      "type": "single_choice",
+      "prompt": "Cuối câu “Hôm nay là thứ mấy” cần dấu gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Dấu chấm than"
+        },
+        {
+          "key": "b",
+          "text": "Dấu chấm"
+        },
+        {
+          "key": "c",
+          "text": "Dấu chấm hỏi"
+        },
+        {
+          "key": "d",
+          "text": "Dấu phẩy"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đây là câu hỏi.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-012",
+      "type": "single_choice",
+      "prompt": "Dấu chấm than thường dùng ở cuối câu nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Câu kể"
+        },
+        {
+          "key": "b",
+          "text": "Câu giới thiệu"
+        },
+        {
+          "key": "c",
+          "text": "Câu hỏi"
+        },
+        {
+          "key": "d",
+          "text": "Câu bộc lộ cảm xúc"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Dấu chấm than dùng cho câu cảm, câu khiến.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các câu cần dùng dấu chấm hỏi ở cuối.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Trời hôm nay đẹp."
+        },
+        {
+          "key": "b",
+          "text": "Em đi học."
+        },
+        {
+          "key": "c",
+          "text": "Bạn đang làm gì?"
+        },
+        {
+          "key": "d",
+          "text": "Mấy giờ rồi?"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Hai câu đầu là câu hỏi; hai câu sau là câu kể.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các câu cần dùng dấu chấm than ở cuối.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Ôi, nóng quá!"
+        },
+        {
+          "key": "b",
+          "text": "Bạn tên là gì?"
+        },
+        {
+          "key": "c",
+          "text": "Em ăn cơm."
+        },
+        {
+          "key": "d",
+          "text": "Tuyệt vời!"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Hai câu đầu bộc lộ cảm xúc mạnh.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các câu dùng dấu phẩy đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Mẹ, mua rau cá thịt."
+        },
+        {
+          "key": "b",
+          "text": "Em thích táo cam, và nho."
+        },
+        {
+          "key": "c",
+          "text": "Mẹ mua rau, cá, thịt."
+        },
+        {
+          "key": "d",
+          "text": "Em thích táo, cam và nho."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Dấu phẩy đặt giữa các từ cùng loại được liệt kê.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các dấu câu dùng để kết thúc câu.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Dấu chấm"
+        },
+        {
+          "key": "b",
+          "text": "Dấu chấm hỏi"
+        },
+        {
+          "key": "c",
+          "text": "Dấu phẩy"
+        },
+        {
+          "key": "d",
+          "text": "Dấu hai chấm"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Dấu chấm và dấu chấm hỏi đứng cuối câu; dấu phẩy, dấu hai chấm dùng trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-017",
+      "type": "true_false",
+      "prompt": "Cuối câu hỏi ta dùng dấu chấm hỏi.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Dấu chấm hỏi là dấu kết thúc câu hỏi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-018",
+      "type": "true_false",
+      "prompt": "Cuối câu kể ta dùng dấu chấm than.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Câu kể kết thúc bằng dấu chấm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-019",
+      "type": "true_false",
+      "prompt": "Dấu phẩy dùng để ngăn cách các bộ phận trong câu.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Dấu phẩy giúp câu rõ ràng hơn.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-020",
+      "type": "true_false",
+      "prompt": "Dấu hai chấm dùng để kết thúc câu hỏi.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Câu hỏi kết thúc bằng dấu chấm hỏi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-021",
+      "type": "fill_in",
+      "prompt": "Điền dấu câu thích hợp vào cuối câu: “Bạn có thích đọc sách không ___”",
+      "answer": {
+        "accepted": [
+          "?",
+          "dấu chấm hỏi",
+          "Dấu chấm hỏi"
+        ]
+      },
+      "explanation": "Đây là câu hỏi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-022",
+      "type": "fill_in",
+      "prompt": "Điền dấu câu thích hợp vào cuối câu: “Ôi, cầu vồng đẹp quá ___”",
+      "answer": {
+        "accepted": [
+          "!",
+          "dấu chấm than",
+          "Dấu chấm than"
+        ]
+      },
+      "explanation": "Câu cảm dùng dấu chấm than.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-023",
+      "type": "fill_in",
+      "prompt": "Điền dấu câu thích hợp vào cuối câu: “Hôm nay em được điểm mười ___”",
+      "answer": {
+        "accepted": [
+          ".",
+          "dấu chấm",
+          "Dấu chấm"
+        ]
+      },
+      "explanation": "Đây là câu kể.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-024",
+      "type": "fill_in",
+      "prompt": "Điền dấu câu vào chỗ trống: “Em thích ăn táo ___ cam và nho.”",
+      "answer": {
+        "accepted": [
+          ",",
+          "dấu phẩy",
+          "Dấu phẩy"
+        ]
+      },
+      "explanation": "Dấu phẩy ngăn cách các từ cùng loại.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-dau-cau-025",
+      "type": "fill_in",
+      "prompt": "Điền dấu câu vào chỗ trống: “Cô giáo nói ___ “Các em hãy giữ vệ sinh.””",
+      "answer": {
+        "accepted": [
+          ":",
+          "dấu hai chấm",
+          "Dấu hai chấm"
+        ]
+      },
+      "explanation": "Dấu hai chấm báo hiệu lời nói trực tiếp.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

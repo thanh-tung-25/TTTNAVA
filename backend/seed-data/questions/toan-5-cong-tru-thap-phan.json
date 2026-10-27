@@ -1,0 +1,2559 @@
+{
+  "topic": {
+    "id": "toan-5-cong-tru-thap-phan",
+    "subjectId": "toan",
+    "grade": 5,
+    "slug": "cong-tru-thap-phan",
+    "name": "Cộng trừ số thập phân",
+    "sortOrder": 2
+  },
+  "questions": [
+    {
+      "id": "toan-5-cong-tru-thap-phan-001",
+      "type": "single_choice",
+      "prompt": "Tính: 1,2 + 2,5 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3,7"
+        },
+        {
+          "key": "b",
+          "text": "3,8"
+        },
+        {
+          "key": "c",
+          "text": "3,6"
+        },
+        {
+          "key": "d",
+          "text": "3,9"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "1,2 + 2,5 = 3,7.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-002",
+      "type": "single_choice",
+      "prompt": "Tính: 1,9 + 3 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "4,9"
+        },
+        {
+          "key": "c",
+          "text": "4,8"
+        },
+        {
+          "key": "d",
+          "text": "5,1"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "1,9 + 3 = 4,9.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-003",
+      "type": "single_choice",
+      "prompt": "Tính: 2,6 + 3,5 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "6,3"
+        },
+        {
+          "key": "c",
+          "text": "6,1"
+        },
+        {
+          "key": "d",
+          "text": "6,2"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "2,6 + 3,5 = 6,1.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-004",
+      "type": "single_choice",
+      "prompt": "Tính: 3,3 + 4 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7,5"
+        },
+        {
+          "key": "b",
+          "text": "7,4"
+        },
+        {
+          "key": "c",
+          "text": "7,2"
+        },
+        {
+          "key": "d",
+          "text": "7,3"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "3,3 + 4 = 7,3.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-005",
+      "type": "single_choice",
+      "prompt": "Tính: 4 + 4,5 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "8,5"
+        },
+        {
+          "key": "b",
+          "text": "8,6"
+        },
+        {
+          "key": "c",
+          "text": "8,4"
+        },
+        {
+          "key": "d",
+          "text": "8,7"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "4 + 4,5 = 8,5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-006",
+      "type": "single_choice",
+      "prompt": "Tính: 4,7 + 5 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "9,9"
+        },
+        {
+          "key": "b",
+          "text": "9,7"
+        },
+        {
+          "key": "c",
+          "text": "9,6"
+        },
+        {
+          "key": "d",
+          "text": "9,8"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "4,7 + 5 = 9,7.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-007",
+      "type": "single_choice",
+      "prompt": "Tính: 5,4 + 5,5 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "11,1"
+        },
+        {
+          "key": "b",
+          "text": "11"
+        },
+        {
+          "key": "c",
+          "text": "10,9"
+        },
+        {
+          "key": "d",
+          "text": "10,8"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "5,4 + 5,5 = 10,9.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-008",
+      "type": "single_choice",
+      "prompt": "Tính: 6,1 + 6 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "12"
+        },
+        {
+          "key": "b",
+          "text": "12,3"
+        },
+        {
+          "key": "c",
+          "text": "12,2"
+        },
+        {
+          "key": "d",
+          "text": "12,1"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "6,1 + 6 = 12,1.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-009",
+      "type": "single_choice",
+      "prompt": "Tính: 6,8 + 6,5 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "13,3"
+        },
+        {
+          "key": "b",
+          "text": "13,4"
+        },
+        {
+          "key": "c",
+          "text": "13,2"
+        },
+        {
+          "key": "d",
+          "text": "13,5"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "6,8 + 6,5 = 13,3.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-010",
+      "type": "single_choice",
+      "prompt": "Tính: 7,5 + 7 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "14,6"
+        },
+        {
+          "key": "b",
+          "text": "14,5"
+        },
+        {
+          "key": "c",
+          "text": "14,4"
+        },
+        {
+          "key": "d",
+          "text": "14,7"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "7,5 + 7 = 14,5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-011",
+      "type": "single_choice",
+      "prompt": "Một cuộn dây dài 10,5 m, người ta cắt đi 2,25 m. Hỏi còn lại bao nhiêu mét dây?",
+      "options": [
+        {
+          "key": "a",
+          "text": "8,24"
+        },
+        {
+          "key": "b",
+          "text": "8,27"
+        },
+        {
+          "key": "c",
+          "text": "8,25"
+        },
+        {
+          "key": "d",
+          "text": "8,26"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "10,5 - 2,25 = 8,25 (m).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-012",
+      "type": "single_choice",
+      "prompt": "Một cuộn dây dài 11,9 m, người ta cắt đi 2,6 m. Hỏi còn lại bao nhiêu mét dây?",
+      "options": [
+        {
+          "key": "a",
+          "text": "9,29"
+        },
+        {
+          "key": "b",
+          "text": "9,32"
+        },
+        {
+          "key": "c",
+          "text": "9,31"
+        },
+        {
+          "key": "d",
+          "text": "9,3"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "11,9 - 2,6 = 9,3 (m).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-013",
+      "type": "single_choice",
+      "prompt": "Một cuộn dây dài 13,3 m, người ta cắt đi 2,95 m. Hỏi còn lại bao nhiêu mét dây?",
+      "options": [
+        {
+          "key": "a",
+          "text": "10,35"
+        },
+        {
+          "key": "b",
+          "text": "10,34"
+        },
+        {
+          "key": "c",
+          "text": "10,37"
+        },
+        {
+          "key": "d",
+          "text": "10,36"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "13,3 - 2,95 = 10,35 (m).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-014",
+      "type": "single_choice",
+      "prompt": "Một cuộn dây dài 14,7 m, người ta cắt đi 3,3 m. Hỏi còn lại bao nhiêu mét dây?",
+      "options": [
+        {
+          "key": "a",
+          "text": "11,39"
+        },
+        {
+          "key": "b",
+          "text": "11,4"
+        },
+        {
+          "key": "c",
+          "text": "11,41"
+        },
+        {
+          "key": "d",
+          "text": "11,42"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "14,7 - 3,3 = 11,4 (m).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-015",
+      "type": "single_choice",
+      "prompt": "Một cuộn dây dài 16,1 m, người ta cắt đi 3,65 m. Hỏi còn lại bao nhiêu mét dây?",
+      "options": [
+        {
+          "key": "a",
+          "text": "12,46"
+        },
+        {
+          "key": "b",
+          "text": "12,47"
+        },
+        {
+          "key": "c",
+          "text": "12,45"
+        },
+        {
+          "key": "d",
+          "text": "12,44"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "16,1 - 3,65 = 12,45 (m).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-016",
+      "type": "single_choice",
+      "prompt": "Một cuộn dây dài 17,5 m, người ta cắt đi 4 m. Hỏi còn lại bao nhiêu mét dây?",
+      "options": [
+        {
+          "key": "a",
+          "text": "13,52"
+        },
+        {
+          "key": "b",
+          "text": "13,51"
+        },
+        {
+          "key": "c",
+          "text": "13,49"
+        },
+        {
+          "key": "d",
+          "text": "13,5"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "17,5 - 4 = 13,5 (m).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-017",
+      "type": "single_choice",
+      "prompt": "Một cuộn dây dài 18,9 m, người ta cắt đi 4,35 m. Hỏi còn lại bao nhiêu mét dây?",
+      "options": [
+        {
+          "key": "a",
+          "text": "14,55"
+        },
+        {
+          "key": "b",
+          "text": "14,56"
+        },
+        {
+          "key": "c",
+          "text": "14,57"
+        },
+        {
+          "key": "d",
+          "text": "14,54"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "18,9 - 4,35 = 14,55 (m).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-018",
+      "type": "single_choice",
+      "prompt": "Một cuộn dây dài 20,3 m, người ta cắt đi 4,7 m. Hỏi còn lại bao nhiêu mét dây?",
+      "options": [
+        {
+          "key": "a",
+          "text": "15,62"
+        },
+        {
+          "key": "b",
+          "text": "15,6"
+        },
+        {
+          "key": "c",
+          "text": "15,61"
+        },
+        {
+          "key": "d",
+          "text": "15,59"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "20,3 - 4,7 = 15,6 (m).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-019",
+      "type": "single_choice",
+      "prompt": "Một cuộn dây dài 21,7 m, người ta cắt đi 5,05 m. Hỏi còn lại bao nhiêu mét dây?",
+      "options": [
+        {
+          "key": "a",
+          "text": "16,64"
+        },
+        {
+          "key": "b",
+          "text": "16,67"
+        },
+        {
+          "key": "c",
+          "text": "16,65"
+        },
+        {
+          "key": "d",
+          "text": "16,66"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "21,7 - 5,05 = 16,65 (m).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-020",
+      "type": "single_choice",
+      "prompt": "Một cuộn dây dài 23,1 m, người ta cắt đi 5,4 m. Hỏi còn lại bao nhiêu mét dây?",
+      "options": [
+        {
+          "key": "a",
+          "text": "17,72"
+        },
+        {
+          "key": "b",
+          "text": "17,71"
+        },
+        {
+          "key": "c",
+          "text": "17,69"
+        },
+        {
+          "key": "d",
+          "text": "17,7"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "23,1 - 5,4 = 17,7 (m).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-021",
+      "type": "single_choice",
+      "prompt": "Tính: 12,75 - 3,4 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "9,35"
+        },
+        {
+          "key": "b",
+          "text": "9,37"
+        },
+        {
+          "key": "c",
+          "text": "9,34"
+        },
+        {
+          "key": "d",
+          "text": "9,36"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "12,75 - 3,4 = 9,35.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-022",
+      "type": "single_choice",
+      "prompt": "Tính: 14,1 - 3,95 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "10,16"
+        },
+        {
+          "key": "b",
+          "text": "10,15"
+        },
+        {
+          "key": "c",
+          "text": "10,14"
+        },
+        {
+          "key": "d",
+          "text": "10,17"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "14,1 - 3,95 = 10,15.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-023",
+      "type": "single_choice",
+      "prompt": "Tính: 15,45 - 4,5 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "10,97"
+        },
+        {
+          "key": "b",
+          "text": "10,96"
+        },
+        {
+          "key": "c",
+          "text": "10,95"
+        },
+        {
+          "key": "d",
+          "text": "10,94"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "15,45 - 4,5 = 10,95.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-024",
+      "type": "single_choice",
+      "prompt": "Tính: 16,8 - 5,05 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "11,74"
+        },
+        {
+          "key": "b",
+          "text": "11,77"
+        },
+        {
+          "key": "c",
+          "text": "11,76"
+        },
+        {
+          "key": "d",
+          "text": "11,75"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "16,8 - 5,05 = 11,75.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-025",
+      "type": "single_choice",
+      "prompt": "Tính: 18,15 - 5,6 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "12,55"
+        },
+        {
+          "key": "b",
+          "text": "12,57"
+        },
+        {
+          "key": "c",
+          "text": "12,56"
+        },
+        {
+          "key": "d",
+          "text": "12,54"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "18,15 - 5,6 = 12,55.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-026",
+      "type": "single_choice",
+      "prompt": "Tính: 19,5 - 6,15 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "13,37"
+        },
+        {
+          "key": "b",
+          "text": "13,35"
+        },
+        {
+          "key": "c",
+          "text": "13,36"
+        },
+        {
+          "key": "d",
+          "text": "13,34"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "19,5 - 6,15 = 13,35.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-027",
+      "type": "single_choice",
+      "prompt": "Tính: 20,85 - 6,7 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "14,17"
+        },
+        {
+          "key": "b",
+          "text": "14,14"
+        },
+        {
+          "key": "c",
+          "text": "14,15"
+        },
+        {
+          "key": "d",
+          "text": "14,16"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "20,85 - 6,7 = 14,15.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-028",
+      "type": "single_choice",
+      "prompt": "Tính: 22,2 - 7,25 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "14,97"
+        },
+        {
+          "key": "b",
+          "text": "14,94"
+        },
+        {
+          "key": "c",
+          "text": "14,96"
+        },
+        {
+          "key": "d",
+          "text": "14,95"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "22,2 - 7,25 = 14,95.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-029",
+      "type": "single_choice",
+      "prompt": "Tính: 23,55 - 7,8 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "15,75"
+        },
+        {
+          "key": "b",
+          "text": "15,76"
+        },
+        {
+          "key": "c",
+          "text": "15,74"
+        },
+        {
+          "key": "d",
+          "text": "15,77"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "23,55 - 7,8 = 15,75.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-030",
+      "type": "single_choice",
+      "prompt": "Tính: 24,9 - 8,35 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "16,57"
+        },
+        {
+          "key": "b",
+          "text": "16,55"
+        },
+        {
+          "key": "c",
+          "text": "16,56"
+        },
+        {
+          "key": "d",
+          "text": "16,54"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "24,9 - 8,35 = 16,55.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-031",
+      "type": "single_choice",
+      "prompt": "Số nào cộng với 2,35 bằng 3,95?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1,62"
+        },
+        {
+          "key": "b",
+          "text": "1,59"
+        },
+        {
+          "key": "c",
+          "text": "1,6"
+        },
+        {
+          "key": "d",
+          "text": "1,61"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "3,95 - 2,35 = 1,6.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-032",
+      "type": "single_choice",
+      "prompt": "Số nào cộng với 3,15 bằng 5,2?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2,04"
+        },
+        {
+          "key": "b",
+          "text": "2,06"
+        },
+        {
+          "key": "c",
+          "text": "2,07"
+        },
+        {
+          "key": "d",
+          "text": "2,05"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "5,2 - 3,15 = 2,05.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-033",
+      "type": "single_choice",
+      "prompt": "Số nào cộng với 3,95 bằng 6,45?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2,5"
+        },
+        {
+          "key": "b",
+          "text": "2,51"
+        },
+        {
+          "key": "c",
+          "text": "2,52"
+        },
+        {
+          "key": "d",
+          "text": "2,49"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "6,45 - 3,95 = 2,5.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-034",
+      "type": "single_choice",
+      "prompt": "Số nào cộng với 4,75 bằng 7,7?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2,97"
+        },
+        {
+          "key": "b",
+          "text": "2,95"
+        },
+        {
+          "key": "c",
+          "text": "2,94"
+        },
+        {
+          "key": "d",
+          "text": "2,96"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "7,7 - 4,75 = 2,95.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-035",
+      "type": "single_choice",
+      "prompt": "Số nào cộng với 5,55 bằng 8,95?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3,42"
+        },
+        {
+          "key": "b",
+          "text": "3,41"
+        },
+        {
+          "key": "c",
+          "text": "3,4"
+        },
+        {
+          "key": "d",
+          "text": "3,39"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "8,95 - 5,55 = 3,4.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-036",
+      "type": "single_choice",
+      "prompt": "Số nào cộng với 6,35 bằng 10,2?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3,87"
+        },
+        {
+          "key": "b",
+          "text": "3,84"
+        },
+        {
+          "key": "c",
+          "text": "3,86"
+        },
+        {
+          "key": "d",
+          "text": "3,85"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "10,2 - 6,35 = 3,85.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-037",
+      "type": "single_choice",
+      "prompt": "Số nào cộng với 7,15 bằng 11,45?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4,3"
+        },
+        {
+          "key": "b",
+          "text": "4,29"
+        },
+        {
+          "key": "c",
+          "text": "4,31"
+        },
+        {
+          "key": "d",
+          "text": "4,32"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "11,45 - 7,15 = 4,3.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-038",
+      "type": "single_choice",
+      "prompt": "Số nào cộng với 7,95 bằng 12,7?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4,76"
+        },
+        {
+          "key": "b",
+          "text": "4,75"
+        },
+        {
+          "key": "c",
+          "text": "4,74"
+        },
+        {
+          "key": "d",
+          "text": "4,77"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "12,7 - 7,95 = 4,75.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-039",
+      "type": "single_choice",
+      "prompt": "Buổi sáng cửa hàng bán được 45,5 kg gạo, buổi chiều bán nhiều hơn buổi sáng 6,75 kg. Hỏi buổi chiều cửa hàng bán được bao nhiêu ki-lô-gam gạo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "52,24"
+        },
+        {
+          "key": "b",
+          "text": "52,26"
+        },
+        {
+          "key": "c",
+          "text": "52,25"
+        },
+        {
+          "key": "d",
+          "text": "52,27"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "45,5 + 6,75 = 52,25 (kg).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-040",
+      "type": "single_choice",
+      "prompt": "Buổi sáng cửa hàng bán được 48,75 kg gạo, buổi chiều bán nhiều hơn buổi sáng 7,25 kg. Hỏi buổi chiều cửa hàng bán được bao nhiêu ki-lô-gam gạo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "56,02"
+        },
+        {
+          "key": "b",
+          "text": "56,01"
+        },
+        {
+          "key": "c",
+          "text": "55,99"
+        },
+        {
+          "key": "d",
+          "text": "56"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "48,75 + 7,25 = 56 (kg).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-041",
+      "type": "single_choice",
+      "prompt": "Buổi sáng cửa hàng bán được 52 kg gạo, buổi chiều bán nhiều hơn buổi sáng 7,75 kg. Hỏi buổi chiều cửa hàng bán được bao nhiêu ki-lô-gam gạo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "59,75"
+        },
+        {
+          "key": "b",
+          "text": "59,76"
+        },
+        {
+          "key": "c",
+          "text": "59,77"
+        },
+        {
+          "key": "d",
+          "text": "59,74"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "52 + 7,75 = 59,75 (kg).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-042",
+      "type": "single_choice",
+      "prompt": "Buổi sáng cửa hàng bán được 55,25 kg gạo, buổi chiều bán nhiều hơn buổi sáng 8,25 kg. Hỏi buổi chiều cửa hàng bán được bao nhiêu ki-lô-gam gạo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "63,49"
+        },
+        {
+          "key": "b",
+          "text": "63,5"
+        },
+        {
+          "key": "c",
+          "text": "63,52"
+        },
+        {
+          "key": "d",
+          "text": "63,51"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "55,25 + 8,25 = 63,5 (kg).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-043",
+      "type": "single_choice",
+      "prompt": "Buổi sáng cửa hàng bán được 58,5 kg gạo, buổi chiều bán nhiều hơn buổi sáng 8,75 kg. Hỏi buổi chiều cửa hàng bán được bao nhiêu ki-lô-gam gạo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "67,27"
+        },
+        {
+          "key": "b",
+          "text": "67,24"
+        },
+        {
+          "key": "c",
+          "text": "67,25"
+        },
+        {
+          "key": "d",
+          "text": "67,26"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "58,5 + 8,75 = 67,25 (kg).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-044",
+      "type": "single_choice",
+      "prompt": "Buổi sáng cửa hàng bán được 61,75 kg gạo, buổi chiều bán nhiều hơn buổi sáng 9,25 kg. Hỏi buổi chiều cửa hàng bán được bao nhiêu ki-lô-gam gạo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "71,02"
+        },
+        {
+          "key": "b",
+          "text": "70,99"
+        },
+        {
+          "key": "c",
+          "text": "71,01"
+        },
+        {
+          "key": "d",
+          "text": "71"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "61,75 + 9,25 = 71 (kg).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-045",
+      "type": "single_choice",
+      "prompt": "Buổi sáng cửa hàng bán được 65 kg gạo, buổi chiều bán nhiều hơn buổi sáng 9,75 kg. Hỏi buổi chiều cửa hàng bán được bao nhiêu ki-lô-gam gạo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "74,75"
+        },
+        {
+          "key": "b",
+          "text": "74,77"
+        },
+        {
+          "key": "c",
+          "text": "74,74"
+        },
+        {
+          "key": "d",
+          "text": "74,76"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "65 + 9,75 = 74,75 (kg).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-046",
+      "type": "single_choice",
+      "prompt": "Buổi sáng cửa hàng bán được 68,25 kg gạo, buổi chiều bán nhiều hơn buổi sáng 10,25 kg. Hỏi buổi chiều cửa hàng bán được bao nhiêu ki-lô-gam gạo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "78,52"
+        },
+        {
+          "key": "b",
+          "text": "78,5"
+        },
+        {
+          "key": "c",
+          "text": "78,51"
+        },
+        {
+          "key": "d",
+          "text": "78,49"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "68,25 + 10,25 = 78,5 (kg).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-047",
+      "type": "single_choice",
+      "prompt": "Tính: 5,4 + 2,6 - 1,35 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6,64"
+        },
+        {
+          "key": "b",
+          "text": "6,66"
+        },
+        {
+          "key": "c",
+          "text": "6,65"
+        },
+        {
+          "key": "d",
+          "text": "6,67"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "5,4 + 2,6 = 8; 8 - 1,35 = 6,65.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-048",
+      "type": "single_choice",
+      "prompt": "Tính: 6,55 + 3 - 1,6 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7,96"
+        },
+        {
+          "key": "b",
+          "text": "7,97"
+        },
+        {
+          "key": "c",
+          "text": "7,94"
+        },
+        {
+          "key": "d",
+          "text": "7,95"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "6,55 + 3 = 9,55; 9,55 - 1,6 = 7,95.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-049",
+      "type": "single_choice",
+      "prompt": "Tính: 7,7 + 3,4 - 1,85 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "9,25"
+        },
+        {
+          "key": "b",
+          "text": "9,26"
+        },
+        {
+          "key": "c",
+          "text": "9,24"
+        },
+        {
+          "key": "d",
+          "text": "9,27"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "7,7 + 3,4 = 11,1; 11,1 - 1,85 = 9,25.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-050",
+      "type": "single_choice",
+      "prompt": "Tính: 8,85 + 3,8 - 2,1 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "10,54"
+        },
+        {
+          "key": "b",
+          "text": "10,55"
+        },
+        {
+          "key": "c",
+          "text": "10,57"
+        },
+        {
+          "key": "d",
+          "text": "10,56"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "8,85 + 3,8 = 12,65; 12,65 - 2,1 = 10,55.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-051",
+      "type": "single_choice",
+      "prompt": "Tính: 10 + 4,2 - 2,35 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "11,87"
+        },
+        {
+          "key": "b",
+          "text": "11,84"
+        },
+        {
+          "key": "c",
+          "text": "11,85"
+        },
+        {
+          "key": "d",
+          "text": "11,86"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "10 + 4,2 = 14,2; 14,2 - 2,35 = 11,85.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-052",
+      "type": "single_choice",
+      "prompt": "Tính: 11,15 + 4,6 - 2,6 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "13,16"
+        },
+        {
+          "key": "b",
+          "text": "13,17"
+        },
+        {
+          "key": "c",
+          "text": "13,14"
+        },
+        {
+          "key": "d",
+          "text": "13,15"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "11,15 + 4,6 = 15,75; 15,75 - 2,6 = 13,15.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-053",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 1,5.",
+      "options": [
+        {
+          "key": "a",
+          "text": "0,4 + 1,1"
+        },
+        {
+          "key": "b",
+          "text": "1,4 + 0,4"
+        },
+        {
+          "key": "c",
+          "text": "0,4 + 1,25"
+        },
+        {
+          "key": "d",
+          "text": "1,4 + 0,1"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "0,4 + 1,1 = 1,5 và 1,4 + 0,1 = 1,5.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-054",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 2.",
+      "options": [
+        {
+          "key": "a",
+          "text": "0,4 + 1,6"
+        },
+        {
+          "key": "b",
+          "text": "1,4 + 0,9"
+        },
+        {
+          "key": "c",
+          "text": "1,4 + 0,6"
+        },
+        {
+          "key": "d",
+          "text": "0,4 + 1,75"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "0,4 + 1,6 = 2 và 1,4 + 0,6 = 2.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-055",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 2,5.",
+      "options": [
+        {
+          "key": "a",
+          "text": "1,4 + 1,1"
+        },
+        {
+          "key": "b",
+          "text": "0,4 + 2,1"
+        },
+        {
+          "key": "c",
+          "text": "0,4 + 2,25"
+        },
+        {
+          "key": "d",
+          "text": "1,4 + 1,4"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "0,4 + 2,1 = 2,5 và 1,4 + 1,1 = 2,5.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-056",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 3.",
+      "options": [
+        {
+          "key": "a",
+          "text": "1,4 + 1,6"
+        },
+        {
+          "key": "b",
+          "text": "1,4 + 1,9"
+        },
+        {
+          "key": "c",
+          "text": "0,4 + 2,6"
+        },
+        {
+          "key": "d",
+          "text": "0,4 + 2,75"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "0,4 + 2,6 = 3 và 1,4 + 1,6 = 3.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-057",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 3,5.",
+      "options": [
+        {
+          "key": "a",
+          "text": "1,4 + 2,1"
+        },
+        {
+          "key": "b",
+          "text": "0,4 + 3,25"
+        },
+        {
+          "key": "c",
+          "text": "0,4 + 3,1"
+        },
+        {
+          "key": "d",
+          "text": "1,4 + 2,4"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "0,4 + 3,1 = 3,5 và 1,4 + 2,1 = 3,5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-058",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 4.",
+      "options": [
+        {
+          "key": "a",
+          "text": "1,4 + 2,6"
+        },
+        {
+          "key": "b",
+          "text": "0,4 + 3,6"
+        },
+        {
+          "key": "c",
+          "text": "1,4 + 2,9"
+        },
+        {
+          "key": "d",
+          "text": "0,4 + 3,75"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "0,4 + 3,6 = 4 và 1,4 + 2,6 = 4.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-059",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 4,5.",
+      "options": [
+        {
+          "key": "a",
+          "text": "0,4 + 4,1"
+        },
+        {
+          "key": "b",
+          "text": "1,4 + 3,1"
+        },
+        {
+          "key": "c",
+          "text": "1,4 + 3,4"
+        },
+        {
+          "key": "d",
+          "text": "0,4 + 4,25"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "0,4 + 4,1 = 4,5 và 1,4 + 3,1 = 4,5.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-060",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 5.",
+      "options": [
+        {
+          "key": "a",
+          "text": "0,4 + 4,75"
+        },
+        {
+          "key": "b",
+          "text": "1,4 + 3,6"
+        },
+        {
+          "key": "c",
+          "text": "0,4 + 4,6"
+        },
+        {
+          "key": "d",
+          "text": "1,4 + 3,9"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "0,4 + 4,6 = 5 và 1,4 + 3,6 = 5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-061",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 5,5.",
+      "options": [
+        {
+          "key": "a",
+          "text": "1,4 + 4,1"
+        },
+        {
+          "key": "b",
+          "text": "0,4 + 5,25"
+        },
+        {
+          "key": "c",
+          "text": "0,4 + 5,1"
+        },
+        {
+          "key": "d",
+          "text": "1,4 + 4,4"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "0,4 + 5,1 = 5,5 và 1,4 + 4,1 = 5,5.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-062",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 6.",
+      "options": [
+        {
+          "key": "a",
+          "text": "0,4 + 5,75"
+        },
+        {
+          "key": "b",
+          "text": "0,4 + 5,6"
+        },
+        {
+          "key": "c",
+          "text": "1,4 + 4,6"
+        },
+        {
+          "key": "d",
+          "text": "1,4 + 4,9"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "0,4 + 5,6 = 6 và 1,4 + 4,6 = 6.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-063",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 6,5.",
+      "options": [
+        {
+          "key": "a",
+          "text": "1,4 + 5,4"
+        },
+        {
+          "key": "b",
+          "text": "0,4 + 6,1"
+        },
+        {
+          "key": "c",
+          "text": "1,4 + 5,1"
+        },
+        {
+          "key": "d",
+          "text": "0,4 + 6,25"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "0,4 + 6,1 = 6,5 và 1,4 + 5,1 = 6,5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-064",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 7.",
+      "options": [
+        {
+          "key": "a",
+          "text": "1,4 + 5,6"
+        },
+        {
+          "key": "b",
+          "text": "0,4 + 6,6"
+        },
+        {
+          "key": "c",
+          "text": "0,4 + 6,75"
+        },
+        {
+          "key": "d",
+          "text": "1,4 + 5,9"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "0,4 + 6,6 = 7 và 1,4 + 5,6 = 7.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-065",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 7,5.",
+      "options": [
+        {
+          "key": "a",
+          "text": "0,4 + 7,25"
+        },
+        {
+          "key": "b",
+          "text": "0,4 + 7,1"
+        },
+        {
+          "key": "c",
+          "text": "1,4 + 6,4"
+        },
+        {
+          "key": "d",
+          "text": "1,4 + 6,1"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "0,4 + 7,1 = 7,5 và 1,4 + 6,1 = 7,5.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-066",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 8.",
+      "options": [
+        {
+          "key": "a",
+          "text": "0,4 + 7,75"
+        },
+        {
+          "key": "b",
+          "text": "1,4 + 6,6"
+        },
+        {
+          "key": "c",
+          "text": "1,4 + 6,9"
+        },
+        {
+          "key": "d",
+          "text": "0,4 + 7,6"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "0,4 + 7,6 = 8 và 1,4 + 6,6 = 8.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-067",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 8,5.",
+      "options": [
+        {
+          "key": "a",
+          "text": "1,4 + 7,1"
+        },
+        {
+          "key": "b",
+          "text": "0,4 + 8,1"
+        },
+        {
+          "key": "c",
+          "text": "1,4 + 7,4"
+        },
+        {
+          "key": "d",
+          "text": "0,4 + 8,25"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "0,4 + 8,1 = 8,5 và 1,4 + 7,1 = 8,5.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-068",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 9.",
+      "options": [
+        {
+          "key": "a",
+          "text": "0,4 + 8,6"
+        },
+        {
+          "key": "b",
+          "text": "0,4 + 8,75"
+        },
+        {
+          "key": "c",
+          "text": "1,4 + 7,9"
+        },
+        {
+          "key": "d",
+          "text": "1,4 + 7,6"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "0,4 + 8,6 = 9 và 1,4 + 7,6 = 9.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-069",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 9,5.",
+      "options": [
+        {
+          "key": "a",
+          "text": "0,4 + 9,25"
+        },
+        {
+          "key": "b",
+          "text": "0,4 + 9,1"
+        },
+        {
+          "key": "c",
+          "text": "1,4 + 8,1"
+        },
+        {
+          "key": "d",
+          "text": "1,4 + 8,4"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "0,4 + 9,1 = 9,5 và 1,4 + 8,1 = 9,5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-070",
+      "type": "true_false",
+      "prompt": "3,6 + 1,25 = 4,85.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "3,6 + 1,25 = 4,85, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-071",
+      "type": "true_false",
+      "prompt": "4,45 + 1,6 = 6,25.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "4,45 + 1,6 = 6,05, không phải 6,25, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-072",
+      "type": "true_false",
+      "prompt": "5,3 + 1,95 = 7,25.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "5,3 + 1,95 = 7,25, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-073",
+      "type": "true_false",
+      "prompt": "6,15 + 2,3 = 8,65.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "6,15 + 2,3 = 8,45, không phải 8,65, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-074",
+      "type": "true_false",
+      "prompt": "7 + 2,65 = 9,65.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "7 + 2,65 = 9,65, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-075",
+      "type": "true_false",
+      "prompt": "7,85 + 3 = 11,05.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "7,85 + 3 = 10,85, không phải 11,05, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-076",
+      "type": "true_false",
+      "prompt": "8,7 + 3,35 = 12,05.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "8,7 + 3,35 = 12,05, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-077",
+      "type": "true_false",
+      "prompt": "9,55 + 3,7 = 13,45.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "9,55 + 3,7 = 13,25, không phải 13,45, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-078",
+      "type": "true_false",
+      "prompt": "10,4 + 4,05 = 14,45.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "10,4 + 4,05 = 14,45, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-079",
+      "type": "true_false",
+      "prompt": "11,25 + 4,4 = 15,85.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "11,25 + 4,4 = 15,65, không phải 15,85, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-080",
+      "type": "true_false",
+      "prompt": "12,1 + 4,75 = 16,85.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "12,1 + 4,75 = 16,85, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-081",
+      "type": "true_false",
+      "prompt": "12,95 + 5,1 = 18,25.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "12,95 + 5,1 = 18,05, không phải 18,25, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-082",
+      "type": "true_false",
+      "prompt": "9,5 - 2,8 = 7,2.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "9,5 - 2,8 = 6,7, không phải 7,2, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-083",
+      "type": "true_false",
+      "prompt": "10,8 - 3,4 = 7,4.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "10,8 - 3,4 = 7,4, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-084",
+      "type": "true_false",
+      "prompt": "12,1 - 4 = 8,6.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "12,1 - 4 = 8,1, không phải 8,6, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-085",
+      "type": "true_false",
+      "prompt": "13,4 - 4,6 = 8,8.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "13,4 - 4,6 = 8,8, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-086",
+      "type": "true_false",
+      "prompt": "14,7 - 5,2 = 10.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "14,7 - 5,2 = 9,5, không phải 10, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-087",
+      "type": "fill_in",
+      "prompt": "Tính: 3,25 + 1,4 = ___.",
+      "answer": {
+        "accepted": [
+          "4,65",
+          "4.65"
+        ]
+      },
+      "explanation": "3,25 + 1,4 = 4,65.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-088",
+      "type": "fill_in",
+      "prompt": "Tính: 3,9 + 1,85 = ___.",
+      "answer": {
+        "accepted": [
+          "5,75",
+          "5.75"
+        ]
+      },
+      "explanation": "3,9 + 1,85 = 5,75.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-089",
+      "type": "fill_in",
+      "prompt": "Tính: 4,55 + 2,3 = ___.",
+      "answer": {
+        "accepted": [
+          "6,85",
+          "6.85"
+        ]
+      },
+      "explanation": "4,55 + 2,3 = 6,85.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-090",
+      "type": "fill_in",
+      "prompt": "Tính: 5,2 + 2,75 = ___.",
+      "answer": {
+        "accepted": [
+          "7,95",
+          "7.95"
+        ]
+      },
+      "explanation": "5,2 + 2,75 = 7,95.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-091",
+      "type": "fill_in",
+      "prompt": "Tính: 5,85 + 3,2 = ___.",
+      "answer": {
+        "accepted": [
+          "9,05",
+          "9.05"
+        ]
+      },
+      "explanation": "5,85 + 3,2 = 9,05.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-092",
+      "type": "fill_in",
+      "prompt": "Tính: 6,5 + 3,65 = ___.",
+      "answer": {
+        "accepted": [
+          "10,15",
+          "10.15"
+        ]
+      },
+      "explanation": "6,5 + 3,65 = 10,15.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-093",
+      "type": "fill_in",
+      "prompt": "Tính: 7,15 + 4,1 = ___.",
+      "answer": {
+        "accepted": [
+          "11,25",
+          "11.25"
+        ]
+      },
+      "explanation": "7,15 + 4,1 = 11,25.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-094",
+      "type": "fill_in",
+      "prompt": "Tính: 7,8 + 4,55 = ___.",
+      "answer": {
+        "accepted": [
+          "12,35",
+          "12.35"
+        ]
+      },
+      "explanation": "7,8 + 4,55 = 12,35.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-095",
+      "type": "fill_in",
+      "prompt": "Tính: 15,6 - 4,25 = ___.",
+      "answer": {
+        "accepted": [
+          "11,35",
+          "11.35"
+        ]
+      },
+      "explanation": "15,6 - 4,25 = 11,35.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-096",
+      "type": "fill_in",
+      "prompt": "Tính: 16,75 - 4,7 = ___.",
+      "answer": {
+        "accepted": [
+          "12,05",
+          "12.05"
+        ]
+      },
+      "explanation": "16,75 - 4,7 = 12,05.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-097",
+      "type": "fill_in",
+      "prompt": "Tính: 17,9 - 5,15 = ___.",
+      "answer": {
+        "accepted": [
+          "12,75",
+          "12.75"
+        ]
+      },
+      "explanation": "17,9 - 5,15 = 12,75.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-098",
+      "type": "fill_in",
+      "prompt": "Tính: 19,05 - 5,6 = ___.",
+      "answer": {
+        "accepted": [
+          "13,45",
+          "13.45"
+        ]
+      },
+      "explanation": "19,05 - 5,6 = 13,45.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-099",
+      "type": "fill_in",
+      "prompt": "Tính: 20,2 - 6,05 = ___.",
+      "answer": {
+        "accepted": [
+          "14,15",
+          "14.15"
+        ]
+      },
+      "explanation": "20,2 - 6,05 = 14,15.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-100",
+      "type": "fill_in",
+      "prompt": "Tính: 21,35 - 6,5 = ___.",
+      "answer": {
+        "accepted": [
+          "14,85",
+          "14.85"
+        ]
+      },
+      "explanation": "21,35 - 6,5 = 14,85.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-101",
+      "type": "fill_in",
+      "prompt": "___ + 3,8 = 5,95.",
+      "answer": {
+        "accepted": [
+          "2,15",
+          "2.15"
+        ]
+      },
+      "explanation": "5,95 - 3,8 = 2,15.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-102",
+      "type": "fill_in",
+      "prompt": "___ + 4,85 = 7,6.",
+      "answer": {
+        "accepted": [
+          "2,75",
+          "2.75"
+        ]
+      },
+      "explanation": "7,6 - 4,85 = 2,75.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-103",
+      "type": "fill_in",
+      "prompt": "___ + 5,9 = 9,25.",
+      "answer": {
+        "accepted": [
+          "3,35",
+          "3.35"
+        ]
+      },
+      "explanation": "9,25 - 5,9 = 3,35.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-104",
+      "type": "fill_in",
+      "prompt": "___ + 6,95 = 10,9.",
+      "answer": {
+        "accepted": [
+          "3,95",
+          "3.95"
+        ]
+      },
+      "explanation": "10,9 - 6,95 = 3,95.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-105",
+      "type": "fill_in",
+      "prompt": "___ + 8 = 12,55.",
+      "answer": {
+        "accepted": [
+          "4,55",
+          "4.55"
+        ]
+      },
+      "explanation": "12,55 - 8 = 4,55.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-106",
+      "type": "fill_in",
+      "prompt": "Tính: 8,5 + 3,75 - 2,1 = ___.",
+      "answer": {
+        "accepted": [
+          "10,15",
+          "10.15"
+        ]
+      },
+      "explanation": "8,5 + 3,75 = 12,25; 12,25 - 2,1 = 10,15.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-107",
+      "type": "fill_in",
+      "prompt": "Tính: 9,75 + 4,25 - 2,45 = ___.",
+      "answer": {
+        "accepted": [
+          "11,55",
+          "11.55"
+        ]
+      },
+      "explanation": "9,75 + 4,25 = 14; 14 - 2,45 = 11,55.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-cong-tru-thap-phan-108",
+      "type": "fill_in",
+      "prompt": "Tính: 11 + 4,75 - 2,8 = ___.",
+      "answer": {
+        "accepted": [
+          "12,95",
+          "12.95"
+        ]
+      },
+      "explanation": "11 + 4,75 = 15,75; 15,75 - 2,8 = 12,95.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

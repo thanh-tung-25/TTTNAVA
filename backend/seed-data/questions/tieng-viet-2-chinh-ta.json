@@ -1,0 +1,601 @@
+{
+  "topic": {
+    "id": "tieng-viet-2-chinh-ta",
+    "subjectId": "tieng-viet",
+    "grade": 2,
+    "slug": "chinh-ta",
+    "name": "Chính tả",
+    "sortOrder": 1
+  },
+  "questions": [
+    {
+      "id": "tieng-viet-2-chinh-ta-001",
+      "type": "single_choice",
+      "prompt": "Từ nào viết đúng chính tả, chỉ khoảng thời gian đầu buổi sáng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "sớm"
+        },
+        {
+          "key": "b",
+          "text": "sớng"
+        },
+        {
+          "key": "c",
+          "text": "xớm"
+        },
+        {
+          "key": "d",
+          "text": "xớng"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Sớm” viết với s, chỉ lúc đầu ngày.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-002",
+      "type": "single_choice",
+      "prompt": "Cách viết đúng của từ chỉ vẻ ngoài dễ thương, đáng yêu là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "sinh xắn"
+        },
+        {
+          "key": "b",
+          "text": "xinh xắn"
+        },
+        {
+          "key": "c",
+          "text": "sinh sắn"
+        },
+        {
+          "key": "d",
+          "text": "xinh sắn"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Xinh xắn” viết với x ở cả hai tiếng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-003",
+      "type": "single_choice",
+      "prompt": "Từ nào viết đúng để gọi loại quả chua dùng pha nước giải khát?",
+      "options": [
+        {
+          "key": "a",
+          "text": "quả trành"
+        },
+        {
+          "key": "b",
+          "text": "quả chành"
+        },
+        {
+          "key": "c",
+          "text": "quả chanh"
+        },
+        {
+          "key": "d",
+          "text": "quả tranh"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Chanh” viết với ch, là loại quả có vị chua.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-004",
+      "type": "single_choice",
+      "prompt": "Từ nào viết đúng để gọi con vật kéo cày ở ruộng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con châu"
+        },
+        {
+          "key": "b",
+          "text": "con trau"
+        },
+        {
+          "key": "c",
+          "text": "con châo"
+        },
+        {
+          "key": "d",
+          "text": "con trâu"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Trâu” viết với tr, là con vật quen thuộc ở làng quê.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-005",
+      "type": "single_choice",
+      "prompt": "Từ nào viết đúng để chỉ một lượng nước rất nhỏ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "giọt nước"
+        },
+        {
+          "key": "b",
+          "text": "dọt nước"
+        },
+        {
+          "key": "c",
+          "text": "giọt nướt"
+        },
+        {
+          "key": "d",
+          "text": "dọt nướt"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Giọt” viết với gi, “nước” viết với ư.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-006",
+      "type": "single_choice",
+      "prompt": "Từ nào viết đúng để chỉ dải nước chảy dài ra biển?",
+      "options": [
+        {
+          "key": "a",
+          "text": "dòng xông"
+        },
+        {
+          "key": "b",
+          "text": "dòng sông"
+        },
+        {
+          "key": "c",
+          "text": "giòng sông"
+        },
+        {
+          "key": "d",
+          "text": "giòng xông"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Dòng” viết với d, “sông” viết với s.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-007",
+      "type": "single_choice",
+      "prompt": "Từ nào viết đúng để chỉ đồ đội lên đầu che nắng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cái lón"
+        },
+        {
+          "key": "b",
+          "text": "cái nống"
+        },
+        {
+          "key": "c",
+          "text": "cái nón"
+        },
+        {
+          "key": "d",
+          "text": "cái lống"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Nón” viết với n, là đồ dùng che nắng.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-008",
+      "type": "single_choice",
+      "prompt": "Từ nào viết đúng để chỉ người luôn hết lòng với tập thể?",
+      "options": [
+        {
+          "key": "a",
+          "text": "trung thàn"
+        },
+        {
+          "key": "b",
+          "text": "chung thàn"
+        },
+        {
+          "key": "c",
+          "text": "chung thành"
+        },
+        {
+          "key": "d",
+          "text": "trung thành"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Trung thành” viết với tr, nghĩa là một lòng, không thay đổi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-009",
+      "type": "single_choice",
+      "prompt": "Từ nào viết đúng để tả màu sắc tươi sáng, đẹp đẽ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "rực rỡ"
+        },
+        {
+          "key": "b",
+          "text": "rực dỡ"
+        },
+        {
+          "key": "c",
+          "text": "dực rỡ"
+        },
+        {
+          "key": "d",
+          "text": "dực dỡ"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Rực rỡ” viết với r, tả vẻ tươi sáng nổi bật.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-010",
+      "type": "single_choice",
+      "prompt": "Từ nào viết đúng để chỉ việc thư giãn sau khi làm việc?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nghĩ ngơi"
+        },
+        {
+          "key": "b",
+          "text": "nghỉ ngơi"
+        },
+        {
+          "key": "c",
+          "text": "nghĩ ngôi"
+        },
+        {
+          "key": "d",
+          "text": "nghỉ ngôi"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Nghỉ” viết dấu hỏi, “ngơi” viết với ơ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-011",
+      "type": "single_choice",
+      "prompt": "Từ nào viết đúng để chỉ việc làm lại cho tốt hơn?",
+      "options": [
+        {
+          "key": "a",
+          "text": "xửa chữa"
+        },
+        {
+          "key": "b",
+          "text": "sửa chửa"
+        },
+        {
+          "key": "c",
+          "text": "sửa chữa"
+        },
+        {
+          "key": "d",
+          "text": "xửa chửa"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Sửa chữa” viết với s ở tiếng đầu và ch ở tiếng sau.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-012",
+      "type": "single_choice",
+      "prompt": "Từ nào viết đúng để chỉ loài hoa có gai, thường màu đỏ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "hoa hòng"
+        },
+        {
+          "key": "b",
+          "text": "hoa hóng"
+        },
+        {
+          "key": "c",
+          "text": "hoa hồn"
+        },
+        {
+          "key": "d",
+          "text": "hoa hồng"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Hoa hồng” viết với h, tiếng “hồng” có dấu huyền.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ viết đúng chính tả (đức tính chăm làm).",
+      "options": [
+        {
+          "key": "a",
+          "text": "siêng lăng"
+        },
+        {
+          "key": "b",
+          "text": "chăm chĩ"
+        },
+        {
+          "key": "c",
+          "text": "chăm chỉ"
+        },
+        {
+          "key": "d",
+          "text": "siêng năng"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "“Chăm chỉ” và “siêng năng” đều viết đúng; “chĩ” và “lăng” là cách viết sai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ viết đúng chính tả (đồ vật trong lớp học).",
+      "options": [
+        {
+          "key": "a",
+          "text": "phấn trắng"
+        },
+        {
+          "key": "b",
+          "text": "bảng con"
+        },
+        {
+          "key": "c",
+          "text": "bản con"
+        },
+        {
+          "key": "d",
+          "text": "phấng trắng"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "“Bảng con” viết với bảng, “phấn trắng” viết với phấn.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ viết đúng chính tả (hoạt động vui chơi).",
+      "options": [
+        {
+          "key": "a",
+          "text": "đá cầu"
+        },
+        {
+          "key": "b",
+          "text": "nhảy dầy"
+        },
+        {
+          "key": "c",
+          "text": "nhảy dây"
+        },
+        {
+          "key": "d",
+          "text": "đá càu"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "“Nhảy dây” và “đá cầu” là cách viết đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ viết đúng chính tả (cây cối, thiên nhiên).",
+      "options": [
+        {
+          "key": "a",
+          "text": "rặng che"
+        },
+        {
+          "key": "b",
+          "text": "dòng suối"
+        },
+        {
+          "key": "c",
+          "text": "giòng suối"
+        },
+        {
+          "key": "d",
+          "text": "rặng tre"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "“Rặng tre” viết với tr, “dòng suối” viết với d.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-017",
+      "type": "true_false",
+      "prompt": "Từ “quyển sách” được viết đúng chính tả.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "“Quyển sách” viết đúng, không phải “quyễn sách”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-018",
+      "type": "true_false",
+      "prompt": "Từ “nghỉ ngơi” phải viết là “nghĩ ngơi”.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Đúng là “nghỉ ngơi”, viết dấu hỏi ở tiếng “nghỉ”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-019",
+      "type": "true_false",
+      "prompt": "Tên riêng của người phải viết hoa chữ cái đầu mỗi tiếng.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Ví dụ: Nguyễn Thị Lan.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-020",
+      "type": "true_false",
+      "prompt": "Từ “trung thành” được viết với chữ “ch”.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "“Trung thành” viết với tr.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-021",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: “Chúng em giữ lớp học ___ sẽ.”",
+      "answer": {
+        "accepted": [
+          "sạch"
+        ]
+      },
+      "explanation": "“Sạch sẽ” chỉ sự gọn gàng, không bẩn.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-022",
+      "type": "fill_in",
+      "prompt": "Điền ch hoặc tr vào chỗ trống: “Con ___âu đang kéo cày.”",
+      "answer": {
+        "accepted": [
+          "tr",
+          "trâu"
+        ]
+      },
+      "explanation": "“Trâu” viết với tr.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-023",
+      "type": "fill_in",
+      "prompt": "Điền d, gi hoặc r vào chỗ trống: “___òng sông quê em rất đẹp.”",
+      "answer": {
+        "accepted": [
+          "d",
+          "dòng"
+        ]
+      },
+      "explanation": "“Dòng sông” viết với d.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-024",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: “Các bạn đang ___ ngơi dưới gốc cây.”",
+      "answer": {
+        "accepted": [
+          "nghỉ"
+        ]
+      },
+      "explanation": "“Nghỉ ngơi” viết dấu hỏi ở tiếng “nghỉ”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-chinh-ta-025",
+      "type": "fill_in",
+      "prompt": "Viết hoa tên riêng trong câu: “bạn lan là lớp trưởng”.",
+      "answer": {
+        "accepted": [
+          "Bạn Lan là lớp trưởng",
+          "bạn Lan là lớp trưởng",
+          "Bạn Lan là lớp trưởng."
+        ]
+      },
+      "explanation": "Tên riêng “Lan” phải viết hoa chữ L.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

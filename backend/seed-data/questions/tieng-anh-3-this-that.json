@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "tieng-anh-3-this-that",
+    "subjectId": "tieng-anh",
+    "grade": 3,
+    "slug": "this-that",
+    "name": "This, that, these, those",
+    "sortOrder": 5
+  },
+  "questions": [
+    {
+      "id": "tieng-anh-3-this-that-001",
+      "type": "single_choice",
+      "prompt": "Chọn từ đúng: “___ is my book.” (quyển sách ở gần)",
+      "options": [
+        {
+          "key": "a",
+          "text": "This"
+        },
+        {
+          "key": "b",
+          "text": "These"
+        },
+        {
+          "key": "c",
+          "text": "Those"
+        },
+        {
+          "key": "d",
+          "text": "That"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Danh từ số ít ở gần dùng “this”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-this-that-002",
+      "type": "single_choice",
+      "prompt": "Chọn từ đúng: “___ are my books.” (nhiều sách ở gần)",
+      "options": [
+        {
+          "key": "a",
+          "text": "Those"
+        },
+        {
+          "key": "b",
+          "text": "These"
+        },
+        {
+          "key": "c",
+          "text": "This"
+        },
+        {
+          "key": "d",
+          "text": "That"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Danh từ số nhiều ở gần dùng “these”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-this-that-003",
+      "type": "single_choice",
+      "prompt": "Chọn từ đúng: “___ is my school.” (ngôi trường ở xa)",
+      "options": [
+        {
+          "key": "a",
+          "text": "Those"
+        },
+        {
+          "key": "b",
+          "text": "This"
+        },
+        {
+          "key": "c",
+          "text": "That"
+        },
+        {
+          "key": "d",
+          "text": "These"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Danh từ số ít ở xa dùng “that”.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-3-this-that-004",
+      "type": "single_choice",
+      "prompt": "Chọn từ đúng: “___ are my friends.” (nhiều bạn ở xa)",
+      "options": [
+        {
+          "key": "a",
+          "text": "These"
+        },
+        {
+          "key": "b",
+          "text": "This"
+        },
+        {
+          "key": "c",
+          "text": "That"
+        },
+        {
+          "key": "d",
+          "text": "Those"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Danh từ số nhiều ở xa dùng “those”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-this-that-005",
+      "type": "single_choice",
+      "prompt": "Từ nào đi với danh từ số ít ở gần?",
+      "options": [
+        {
+          "key": "a",
+          "text": "this"
+        },
+        {
+          "key": "b",
+          "text": "these"
+        },
+        {
+          "key": "c",
+          "text": "those"
+        },
+        {
+          "key": "d",
+          "text": "them"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“This” đi với danh từ số ít ở gần.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-3-this-that-006",
+      "type": "single_choice",
+      "prompt": "Từ nào đi với danh từ số nhiều ở gần?",
+      "options": [
+        {
+          "key": "a",
+          "text": "it"
+        },
+        {
+          "key": "b",
+          "text": "these"
+        },
+        {
+          "key": "c",
+          "text": "this"
+        },
+        {
+          "key": "d",
+          "text": "that"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“These” đi với danh từ số nhiều ở gần.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-this-that-007",
+      "type": "single_choice",
+      "prompt": "Từ nào đi với danh từ số ít ở xa?",
+      "options": [
+        {
+          "key": "a",
+          "text": "this"
+        },
+        {
+          "key": "b",
+          "text": "they"
+        },
+        {
+          "key": "c",
+          "text": "that"
+        },
+        {
+          "key": "d",
+          "text": "these"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“That” đi với danh từ số ít ở xa.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-3-this-that-008",
+      "type": "single_choice",
+      "prompt": "Từ nào đi với danh từ số nhiều ở xa?",
+      "options": [
+        {
+          "key": "a",
+          "text": "that"
+        },
+        {
+          "key": "b",
+          "text": "these"
+        },
+        {
+          "key": "c",
+          "text": "this"
+        },
+        {
+          "key": "d",
+          "text": "those"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Those” đi với danh từ số nhiều ở xa.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-this-that-009",
+      "type": "single_choice",
+      "prompt": "“This” nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cái này"
+        },
+        {
+          "key": "b",
+          "text": "Những cái này"
+        },
+        {
+          "key": "c",
+          "text": "Cái kia"
+        },
+        {
+          "key": "d",
+          "text": "Những cái kia"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“This” chỉ vật ở gần, số ít.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-3-this-that-010",
+      "type": "single_choice",
+      "prompt": "“Those” nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cái này"
+        },
+        {
+          "key": "b",
+          "text": "Những cái kia"
+        },
+        {
+          "key": "c",
+          "text": "Những cái này"
+        },
+        {
+          "key": "d",
+          "text": "Cái kia"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Those” chỉ nhiều vật ở xa.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-this-that-011",
+      "type": "single_choice",
+      "prompt": "Chọn câu đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "This are a pen."
+        },
+        {
+          "key": "b",
+          "text": "Those is a pen."
+        },
+        {
+          "key": "c",
+          "text": "This is a pen."
+        },
+        {
+          "key": "d",
+          "text": "These is a pen."
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“This” đi với “is” và danh từ số ít.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-3-this-that-012",
+      "type": "single_choice",
+      "prompt": "Câu nào đúng khi nói về nhiều vật ở gần?",
+      "options": [
+        {
+          "key": "a",
+          "text": "That are my pencils."
+        },
+        {
+          "key": "b",
+          "text": "This are my pencils."
+        },
+        {
+          "key": "c",
+          "text": "These is my pencils."
+        },
+        {
+          "key": "d",
+          "text": "These are my pencils."
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“These” đi với “are” và danh từ số nhiều.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-this-that-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ dùng với danh từ số nhiều.",
+      "options": [
+        {
+          "key": "a",
+          "text": "these"
+        },
+        {
+          "key": "b",
+          "text": "this"
+        },
+        {
+          "key": "c",
+          "text": "those"
+        },
+        {
+          "key": "d",
+          "text": "that"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "“These” và “those” dùng với số nhiều.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-this-that-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ dùng với danh từ số ít.",
+      "options": [
+        {
+          "key": "a",
+          "text": "these"
+        },
+        {
+          "key": "b",
+          "text": "that"
+        },
+        {
+          "key": "c",
+          "text": "this"
+        },
+        {
+          "key": "d",
+          "text": "those"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "“This” và “that” dùng với số ít.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-this-that-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ chỉ vật ở gần người nói.",
+      "options": [
+        {
+          "key": "a",
+          "text": "this"
+        },
+        {
+          "key": "b",
+          "text": "those"
+        },
+        {
+          "key": "c",
+          "text": "that"
+        },
+        {
+          "key": "d",
+          "text": "these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "“This” và “these” chỉ vật ở gần.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-this-that-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn các câu đúng ngữ pháp.",
+      "options": [
+        {
+          "key": "a",
+          "text": "These is my bag."
+        },
+        {
+          "key": "b",
+          "text": "That are my shoes."
+        },
+        {
+          "key": "c",
+          "text": "Those are my shoes."
+        },
+        {
+          "key": "d",
+          "text": "This is my bag."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "“This” đi với “is”, “those” đi với “are”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-this-that-017",
+      "type": "true_false",
+      "prompt": "“This” dùng cho danh từ số ít ở gần.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, “this” dùng cho số ít ở gần.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-this-that-018",
+      "type": "true_false",
+      "prompt": "“These” dùng cho danh từ số ít.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, “these” dùng cho danh từ số nhiều ở gần.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-this-that-019",
+      "type": "true_false",
+      "prompt": "“That” dùng cho danh từ số ít ở xa.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, “that” dùng cho số ít ở xa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-this-that-020",
+      "type": "true_false",
+      "prompt": "“Those is my books.” là câu đúng.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, đúng phải là “Those are my books.”",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-this-that-021",
+      "type": "fill_in",
+      "prompt": "Điền this hoặc these: “___ is my ruler.”",
+      "answer": {
+        "accepted": [
+          "This"
+        ]
+      },
+      "explanation": "Danh từ số ít nên dùng “this”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-this-that-022",
+      "type": "fill_in",
+      "prompt": "Điền this hoặc these: “___ are my crayons.”",
+      "answer": {
+        "accepted": [
+          "These"
+        ]
+      },
+      "explanation": "Danh từ số nhiều nên dùng “these”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-this-that-023",
+      "type": "fill_in",
+      "prompt": "Điền that hoặc those: “___ is my house.” (ở xa)",
+      "answer": {
+        "accepted": [
+          "That"
+        ]
+      },
+      "explanation": "Số ít ở xa dùng “that”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-this-that-024",
+      "type": "fill_in",
+      "prompt": "Điền that hoặc those: “___ are my shoes.” (ở xa)",
+      "answer": {
+        "accepted": [
+          "Those"
+        ]
+      },
+      "explanation": "Số nhiều ở xa dùng “those”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-this-that-025",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: “___ is my friend, Nam.” (bạn ở gần)",
+      "answer": {
+        "accepted": [
+          "This"
+        ]
+      },
+      "explanation": "Bạn ở gần dùng “this”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

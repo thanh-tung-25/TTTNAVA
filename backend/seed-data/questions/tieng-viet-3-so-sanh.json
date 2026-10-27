@@ -1,0 +1,605 @@
+{
+  "topic": {
+    "id": "tieng-viet-3-so-sanh",
+    "subjectId": "tieng-viet",
+    "grade": 3,
+    "slug": "so-sanh",
+    "name": "Biện pháp so sánh",
+    "sortOrder": 2
+  },
+  "questions": [
+    {
+      "id": "tieng-viet-3-so-sanh-001",
+      "type": "single_choice",
+      "prompt": "Trong câu “Trăng tròn như cái đĩa”, sự vật nào được so sánh với cái đĩa?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Trăng"
+        },
+        {
+          "key": "b",
+          "text": "Trời"
+        },
+        {
+          "key": "c",
+          "text": "Ngôi sao"
+        },
+        {
+          "key": "d",
+          "text": "Cái đĩa"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Trăng được so sánh với cái đĩa tròn.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-002",
+      "type": "single_choice",
+      "prompt": "Từ so sánh trong câu “Mắt bé đen như hạt nhãn” là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mắt"
+        },
+        {
+          "key": "b",
+          "text": "như"
+        },
+        {
+          "key": "c",
+          "text": "hạt"
+        },
+        {
+          "key": "d",
+          "text": "đen"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Như” là từ nối hai sự vật được so sánh.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-003",
+      "type": "single_choice",
+      "prompt": "Câu nào có hình ảnh so sánh?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Mặt trời mọc ở đằng đông."
+        },
+        {
+          "key": "b",
+          "text": "Mặt trời đã lặn."
+        },
+        {
+          "key": "c",
+          "text": "Mặt trời đỏ như quả cầu lửa."
+        },
+        {
+          "key": "d",
+          "text": "Mặt trời chiếu sáng."
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Câu dùng “như” để so sánh mặt trời với quả cầu lửa.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-004",
+      "type": "single_choice",
+      "prompt": "Trong câu “Cây cau cao như cột nhà”, từ nào là từ so sánh?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cây cau"
+        },
+        {
+          "key": "b",
+          "text": "cao"
+        },
+        {
+          "key": "c",
+          "text": "cột nhà"
+        },
+        {
+          "key": "d",
+          "text": "như"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Như” nối cây cau với cột nhà.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-005",
+      "type": "single_choice",
+      "prompt": "Câu “Dòng sông uốn lượn như một dải lụa” so sánh dòng sông với gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Dải lụa"
+        },
+        {
+          "key": "b",
+          "text": "Con đường"
+        },
+        {
+          "key": "c",
+          "text": "Con rắn"
+        },
+        {
+          "key": "d",
+          "text": "Tấm gương"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Dòng sông được ví với dải lụa mềm mại.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-006",
+      "type": "single_choice",
+      "prompt": "Câu nào dùng từ so sánh “là”?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bạn Mai đi học sớm."
+        },
+        {
+          "key": "b",
+          "text": "Bạn Mai là một bông hoa của lớp."
+        },
+        {
+          "key": "c",
+          "text": "Bạn Mai học giỏi."
+        },
+        {
+          "key": "d",
+          "text": "Bạn Mai rất xinh."
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Là” nối bạn Mai với hình ảnh bông hoa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-007",
+      "type": "single_choice",
+      "prompt": "Trong câu “Tiếng suối trong như tiếng hát xa”, âm thanh nào được so sánh?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Tiếng hát"
+        },
+        {
+          "key": "b",
+          "text": "Tiếng gió"
+        },
+        {
+          "key": "c",
+          "text": "Tiếng suối"
+        },
+        {
+          "key": "d",
+          "text": "Tiếng chim"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Tiếng suối được so sánh với tiếng hát xa.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-008",
+      "type": "single_choice",
+      "prompt": "Câu nào không có hình ảnh so sánh?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nắng vàng như mật ong."
+        },
+        {
+          "key": "b",
+          "text": "Mây trắng như bông."
+        },
+        {
+          "key": "c",
+          "text": "Trời xanh như ngọc."
+        },
+        {
+          "key": "d",
+          "text": "Em đi học bằng xe đạp."
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Câu chỉ nêu hoạt động, không có hình ảnh so sánh.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-009",
+      "type": "single_choice",
+      "prompt": "Từ so sánh nào thường đứng giữa hai sự vật?",
+      "options": [
+        {
+          "key": "a",
+          "text": "như"
+        },
+        {
+          "key": "b",
+          "text": "để"
+        },
+        {
+          "key": "c",
+          "text": "nên"
+        },
+        {
+          "key": "d",
+          "text": "vì"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Như” thường dùng để nối hai sự vật so sánh.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-010",
+      "type": "single_choice",
+      "prompt": "Trong câu “Lá cờ đỏ thắm như ngọn lửa”, lá cờ được so sánh với gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Đám mây"
+        },
+        {
+          "key": "b",
+          "text": "Ngọn lửa"
+        },
+        {
+          "key": "c",
+          "text": "Bông hoa"
+        },
+        {
+          "key": "d",
+          "text": "Mặt trời"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Lá cờ được ví với ngọn lửa đỏ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-011",
+      "type": "single_choice",
+      "prompt": "Câu nào so sánh chú gà trống với một người?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Chú gà trống gáy vang."
+        },
+        {
+          "key": "b",
+          "text": "Chú gà trống mổ thóc."
+        },
+        {
+          "key": "c",
+          "text": "Chú gà trống oai vệ như một chàng vệ sĩ."
+        },
+        {
+          "key": "d",
+          "text": "Chú gà trống có bộ lông đẹp."
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Gà trống được so sánh với chàng vệ sĩ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-012",
+      "type": "single_choice",
+      "prompt": "Trong câu “Tóc bà trắng như mây”, tóc bà được so sánh với sự vật nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Tuyết"
+        },
+        {
+          "key": "b",
+          "text": "Bông"
+        },
+        {
+          "key": "c",
+          "text": "Sương"
+        },
+        {
+          "key": "d",
+          "text": "Mây"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Tóc bà trắng được ví với mây.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ so sánh thường gặp.",
+      "options": [
+        {
+          "key": "a",
+          "text": "và"
+        },
+        {
+          "key": "b",
+          "text": "của"
+        },
+        {
+          "key": "c",
+          "text": "như"
+        },
+        {
+          "key": "d",
+          "text": "tựa"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "“Như”, “tựa” thường dùng để so sánh.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các câu có hình ảnh so sánh.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Đôi mắt bé sáng như sao."
+        },
+        {
+          "key": "b",
+          "text": "Mặt hồ rộng lớn."
+        },
+        {
+          "key": "c",
+          "text": "Đôi mắt bé rất sáng."
+        },
+        {
+          "key": "d",
+          "text": "Mặt hồ phẳng lặng như tấm gương."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Hai câu đầu dùng từ “như” để so sánh.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn các sự vật được so sánh với nhau trong câu “Trăng tròn như quả bóng vàng”.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Trăng"
+        },
+        {
+          "key": "b",
+          "text": "Bầu trời"
+        },
+        {
+          "key": "c",
+          "text": "Quả bóng vàng"
+        },
+        {
+          "key": "d",
+          "text": "Ngôi sao"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Trăng được so sánh với quả bóng vàng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các câu so sánh âm thanh với âm thanh.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Tiếng suối như tiếng hát."
+        },
+        {
+          "key": "b",
+          "text": "Tiếng gió như tiếng đàn."
+        },
+        {
+          "key": "c",
+          "text": "Tiếng gió thổi mạnh."
+        },
+        {
+          "key": "d",
+          "text": "Tiếng suối chảy xiết."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Hai câu đầu so sánh âm thanh này với âm thanh khác.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-017",
+      "type": "true_false",
+      "prompt": "Trong câu “Mây trắng như bông”, từ “như” là từ so sánh.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "“Như” nối mây với bông.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-018",
+      "type": "true_false",
+      "prompt": "Câu “Em thích đọc sách.” có hình ảnh so sánh.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Câu không có từ so sánh hay hình ảnh so sánh.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-019",
+      "type": "true_false",
+      "prompt": "So sánh giúp câu văn gợi tả và sinh động hơn.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "So sánh làm hình ảnh hiện lên rõ hơn.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-020",
+      "type": "true_false",
+      "prompt": "Trong câu “Mặt trời đỏ như quả cầu lửa”, mặt trời được so sánh với quả bóng.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Mặt trời được so sánh với quả cầu lửa.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-021",
+      "type": "fill_in",
+      "prompt": "Điền từ so sánh vào chỗ trống: “Trăng tròn ___ cái đĩa.”",
+      "answer": {
+        "accepted": [
+          "như",
+          "tựa",
+          "tựa như"
+        ]
+      },
+      "explanation": "Dùng “như” để so sánh.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-022",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu để hoàn thành hình ảnh so sánh: “Mây trắng ___ bông.”",
+      "answer": {
+        "accepted": [
+          "như",
+          "tựa"
+        ]
+      },
+      "explanation": "Mây trắng được so sánh với bông.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-023",
+      "type": "fill_in",
+      "prompt": "Điền sự vật còn thiếu: “Mặt hồ phẳng lặng như ___.”",
+      "answer": {
+        "accepted": [
+          "tấm gương",
+          "gương",
+          "tấm kính"
+        ]
+      },
+      "explanation": "Mặt hồ phẳng như tấm gương.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-024",
+      "type": "fill_in",
+      "prompt": "Điền sự vật còn thiếu: “Đôi mắt bé sáng như ___.”",
+      "answer": {
+        "accepted": [
+          "sao",
+          "ngôi sao",
+          "vì sao"
+        ]
+      },
+      "explanation": "Đôi mắt sáng được ví với sao.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-so-sanh-025",
+      "type": "fill_in",
+      "prompt": "Điền từ so sánh: “Cây cau cao ___ cột nhà.”",
+      "answer": {
+        "accepted": [
+          "như",
+          "tựa"
+        ]
+      },
+      "explanation": "Dùng “như” để so sánh.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

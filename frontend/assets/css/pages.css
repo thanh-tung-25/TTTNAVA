@@ -1,0 +1,338 @@
+/* ===== Đăng nhập ===== */
+.login-body {
+  display: grid;
+  place-items: center;
+  padding: 1.2rem;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(91, 52, 214, 0.12), transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(255, 138, 31, 0.14), transparent 45%),
+    repeating-linear-gradient(0deg, transparent 0 31px, var(--line) 31px 32px);
+}
+.login-card {
+  width: min(430px, 100%);
+  background: rgba(255, 255, 255, 0.96);
+  border: 2px solid var(--line);
+  border-radius: 26px;
+  padding: 1.6rem 1.2rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.login-card h1 { font-size: 1.9rem; color: var(--primary-dark); margin-bottom: 0.15rem; }
+.login-mascot {
+  width: 92px;
+  height: 92px;
+  margin: 0 auto 0.6rem;
+  border-radius: 50%;
+  background: var(--primary-soft);
+  display: grid;
+  place-items: center;
+  border: 3px dashed #cdbffb;
+  font-size: 2.6rem;
+}
+.login-card .field { text-align: left; }
+.login-note { font-size: 0.78rem; color: var(--muted); margin-top: 0.8rem; }
+
+/* ===== Trang chủ ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: linear-gradient(120deg, #ffffff, #f4efff);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1rem;
+}
+.hero-text { min-width: 0; }
+.hero-text h1 { font-size: 1.35rem; margin-bottom: 0.1rem; }
+.hero-text p { margin: 0; color: var(--muted); font-size: 0.85rem; }
+
+.quick-list { display: grid; gap: 0.5rem; }
+.quick-link {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem 0.85rem;
+  border-radius: 14px;
+  border: 2px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+}
+.quick-link:hover { border-color: var(--primary); background: var(--primary-soft); text-decoration: none; }
+.quick-link .quick-icon { font-size: 1.25rem; }
+.quick-link .quick-arrow { margin-left: auto; color: var(--muted); }
+
+/* ===== Chọn chủ đề ===== */
+.tabs {
+  display: flex;
+  gap: 0.4rem;
+  overflow-x: auto;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.9rem;
+  scrollbar-width: none;
+}
+.tabs::-webkit-scrollbar { display: none; }
+.tab {
+  flex: none;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 2px solid var(--line);
+  background: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.tab[aria-selected="true"] { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+.topic-list { display: grid; gap: 0.55rem; }
+.topic-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.75rem;
+  background: #fff;
+  border: 2px solid var(--line);
+  border-radius: 14px;
+}
+.topic-item .topic-index {
+  width: 34px;
+  height: 34px;
+  flex: none;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+.topic-item h3 { font-size: 0.98rem; margin: 0; }
+.topic-item p { margin: 0; font-size: 0.76rem; color: var(--muted); }
+.topic-item .btn { margin-left: auto; }
+
+/* ===== Làm bài ===== */
+.quiz-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
+  flex-wrap: wrap;
+}
+.quiz-meta { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.timer {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.05rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: #fff;
+  border: 2px solid var(--line);
+}
+.timer.is-urgent { border-color: var(--danger); color: var(--danger); animation: pulse 1s infinite; }
+@keyframes pulse { 50% { transform: scale(1.04); } }
+
+.question-card { margin-top: 0.8rem; }
+.question-type { font-size: 0.75rem; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+.question-prompt {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0.35rem 0 1rem;
+  white-space: pre-wrap;
+}
+.options { display: grid; gap: 0.55rem; }
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.65rem 0.75rem;
+  border-radius: 14px;
+  border: 2px solid var(--line);
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s;
+}
+.option:hover:not([disabled]) { border-color: var(--primary); background: var(--primary-soft); }
+.option .opt-key {
+  width: 30px;
+  height: 30px;
+  flex: none;
+  border-radius: 9px;
+  background: var(--line-soft);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+.option.is-selected { border-color: var(--primary); background: var(--primary-soft); }
+.option.is-correct { border-color: var(--success); background: #e3f7ed; }
+.option.is-wrong { border-color: var(--danger); background: #ffe3ec; }
+.option[disabled] { cursor: default; }
+
+.tf-row { grid-template-columns: 1fr 1fr; display: grid; gap: 0.55rem; }
+.fill-row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.fill-row .input { flex: 1; min-width: 180px; }
+
+.feedback {
+  margin-top: 0.9rem;
+  padding: 0.8rem;
+  border-radius: 14px;
+  border: 2px solid;
+  font-size: 0.9rem;
+}
+.feedback.is-correct { border-color: #9adfc2; background: #ecfbf4; }
+.feedback.is-wrong { border-color: #f4a7c2; background: #fff0f5; }
+.feedback strong { display: block; margin-bottom: 0.15rem; }
+
+.quiz-actions { display: flex; gap: 0.5rem; justify-content: flex-end; margin-top: 0.9rem; flex-wrap: wrap; }
+
+.result-hero { text-align: center; padding: 1.3rem 0.6rem; }
+.result-hero .result-emoji { font-size: 3rem; display: block; }
+.result-hero h1 { margin: 0.2rem 0; }
+.result-score {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  line-height: 1;
+}
+.result-score small { font-size: 1rem; color: var(--muted); font-weight: 600; }
+.result-stats { display: flex; justify-content: center; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.8rem; }
+
+.review-list { display: grid; gap: 0.6rem; margin-top: 0.8rem; }
+.review-item { padding: 0.75rem; border-radius: 12px; border: 1px solid var(--line); background: #fff; font-size: 0.86rem; }
+.review-item.is-correct { border-left: 5px solid var(--success); }
+.review-item.is-wrong { border-left: 5px solid var(--danger); }
+.review-item p { margin: 0.2rem 0; }
+
+/* ===== Lịch sử ===== */
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.75rem;
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+}
+.history-item + .history-item { margin-top: 0.5rem; }
+.history-item .history-main { min-width: 0; flex: 1; }
+.history-item h3 { font-size: 0.92rem; margin: 0; }
+.history-item p { margin: 0; color: var(--muted); font-size: 0.75rem; }
+.history-score { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; }
+.history-score small { display: block; font-size: 0.66rem; color: var(--muted); font-weight: 500; }
+
+/* ===== Thách đấu ===== */
+.duel-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.9rem;
+  border-radius: var(--radius);
+  background: linear-gradient(120deg, #3d258f, #5b34d6 55%, #7a5cf0);
+  color: #fff;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow);
+}
+.duel-banner h2 { color: #fff; margin: 0; font-size: 1.15rem; }
+.duel-banner p { margin: 0; opacity: 0.85; font-size: 0.8rem; }
+.duel-players { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 0.5rem; text-align: center; }
+.duel-player img { width: 54px; height: 54px; margin: 0 auto 0.2rem; }
+.duel-player strong { display: block; font-size: 0.85rem; }
+.duel-player span { font-size: 0.72rem; opacity: 0.8; }
+.duel-vs { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; }
+
+.countdown-big {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  text-align: center;
+  line-height: 1;
+}
+.countdown-label { text-align: center; color: var(--muted); }
+
+.invite-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem;
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+}
+.invite-item + .invite-item { margin-top: 0.5rem; }
+.invite-item .invite-main { flex: 1; min-width: 0; }
+.invite-item h3 { font-size: 0.9rem; margin: 0; }
+.invite-item p { font-size: 0.75rem; margin: 0; color: var(--muted); }
+.invite-actions { display: flex; gap: 0.3rem; }
+
+.robot-card { border: 2px dashed #c9baf8; background: #fbf8ff; }
+.level-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.45rem; }
+.level-btn {
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  padding: 0.55rem 0.3rem;
+  cursor: pointer;
+  text-align: center;
+}
+.level-btn strong { display: block; font-size: 0.9rem; }
+.level-btn span { font-size: 0.7rem; color: var(--muted); }
+.level-btn[aria-pressed="true"] { border-color: var(--primary); background: var(--primary-soft); }
+
+/* ===== Bảng xếp hạng ===== */
+.rank-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.7rem;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+.rank-row + .rank-row { margin-top: 0.4rem; }
+.rank-row.is-me { border-color: var(--primary); background: var(--primary-soft); }
+.rank-number { width: 28px; font-family: var(--font-display); font-weight: 800; font-size: 1rem; text-align: center; }
+.rank-row .rank-main { flex: 1; min-width: 0; }
+.rank-row strong { display: block; font-size: 0.9rem; }
+.rank-row span { font-size: 0.72rem; color: var(--muted); }
+.rank-diamonds { font-weight: 800; color: #8a5a00; }
+
+/* ===== Kim cương ===== */
+.diamond-hero {
+  background: linear-gradient(120deg, #fff8e6, #ffe9b0);
+  border: 2px solid #f5d27a;
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.diamond-hero .diamond-total { font-family: var(--font-display); font-size: 3rem; font-weight: 800; color: #8a5a00; line-height: 1; }
+.ledger-row { display: flex; align-items: center; gap: 0.6rem; padding: 0.55rem 0; border-bottom: 1px dashed var(--line); font-size: 0.86rem; }
+.ledger-row:last-child { border-bottom: 0; }
+.ledger-row .ledger-amount { margin-left: auto; font-weight: 800; color: var(--success); }
+.ledger-row time { font-size: 0.72rem; color: var(--muted); }
+
+/* ===== Quản trị ===== */
+.admin-table .prompt-cell { max-width: 340px; }
+.admin-table .prompt-cell span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.filter-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem; }
+.filter-bar .input, .filter-bar .select { min-width: 130px; flex: 1; min-height: 40px; }
+.audit-list { font-size: 0.82rem; margin: 0; padding-left: 1.1rem; }
+.audit-list li { margin-bottom: 0.2rem; }
+
+@media (min-width: 768px) {
+  .hero { padding: 1.3rem; }
+  .hero-text h1 { font-size: 1.7rem; }
+  .question-prompt { font-size: 1.4rem; }
+  .option { padding: 0.8rem 1rem; }
+}

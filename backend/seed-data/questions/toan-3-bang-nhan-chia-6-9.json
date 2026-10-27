@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "toan-3-bang-nhan-chia-6-9",
+    "subjectId": "toan",
+    "grade": 3,
+    "slug": "bang-nhan-chia-6-9",
+    "name": "Bảng nhân chia 6–9",
+    "sortOrder": 2
+  },
+  "questions": [
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-001",
+      "type": "single_choice",
+      "prompt": "Tính: 6 × 7 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "42"
+        },
+        {
+          "key": "b",
+          "text": "44"
+        },
+        {
+          "key": "c",
+          "text": "41"
+        },
+        {
+          "key": "d",
+          "text": "43"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 42.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-002",
+      "type": "single_choice",
+      "prompt": "Tính: 7 × 8 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "55"
+        },
+        {
+          "key": "b",
+          "text": "56"
+        },
+        {
+          "key": "c",
+          "text": "58"
+        },
+        {
+          "key": "d",
+          "text": "57"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 56.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-003",
+      "type": "single_choice",
+      "prompt": "Tính: 8 × 9 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "71"
+        },
+        {
+          "key": "b",
+          "text": "74"
+        },
+        {
+          "key": "c",
+          "text": "72"
+        },
+        {
+          "key": "d",
+          "text": "73"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 72.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-004",
+      "type": "single_choice",
+      "prompt": "Tính: 9 × 9 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "82"
+        },
+        {
+          "key": "b",
+          "text": "80"
+        },
+        {
+          "key": "c",
+          "text": "83"
+        },
+        {
+          "key": "d",
+          "text": "81"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 81.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-005",
+      "type": "single_choice",
+      "prompt": "Tính: 42 : 6 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "9"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 7.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-006",
+      "type": "single_choice",
+      "prompt": "Tính: 56 : 8 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "9"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "6"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 7.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-007",
+      "type": "single_choice",
+      "prompt": "Tính: 63 : 9 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "8"
+        },
+        {
+          "key": "c",
+          "text": "7"
+        },
+        {
+          "key": "d",
+          "text": "9"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 7.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-008",
+      "type": "single_choice",
+      "prompt": "Tính: 72 : 8 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "11"
+        },
+        {
+          "key": "b",
+          "text": "8"
+        },
+        {
+          "key": "c",
+          "text": "10"
+        },
+        {
+          "key": "d",
+          "text": "9"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 9.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-009",
+      "type": "single_choice",
+      "prompt": "Mỗi hộp có 6 cái bánh. 8 hộp có bao nhiêu cái bánh?",
+      "options": [
+        {
+          "key": "a",
+          "text": "48"
+        },
+        {
+          "key": "b",
+          "text": "50"
+        },
+        {
+          "key": "c",
+          "text": "47"
+        },
+        {
+          "key": "d",
+          "text": "49"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 48.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-010",
+      "type": "single_choice",
+      "prompt": "Có 54 quả cam chia đều vào 9 rổ. Mỗi rổ có bao nhiêu quả?",
+      "options": [
+        {
+          "key": "a",
+          "text": "8"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "7"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 6.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-011",
+      "type": "single_choice",
+      "prompt": "Số nào nhân với 7 bằng 49?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "8"
+        },
+        {
+          "key": "c",
+          "text": "7"
+        },
+        {
+          "key": "d",
+          "text": "9"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 7.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-012",
+      "type": "single_choice",
+      "prompt": "63 : ___ = 7. Số cần điền là số nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "11"
+        },
+        {
+          "key": "b",
+          "text": "8"
+        },
+        {
+          "key": "c",
+          "text": "10"
+        },
+        {
+          "key": "d",
+          "text": "9"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 9.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 48.",
+      "options": [
+        {
+          "key": "a",
+          "text": "7 × 7"
+        },
+        {
+          "key": "b",
+          "text": "9 × 5"
+        },
+        {
+          "key": "c",
+          "text": "8 × 6"
+        },
+        {
+          "key": "d",
+          "text": "6 × 8"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "6 × 8 và 8 × 6 đều bằng 48.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép chia có kết quả bằng 8.",
+      "options": [
+        {
+          "key": "a",
+          "text": "64 : 8"
+        },
+        {
+          "key": "b",
+          "text": "54 : 6"
+        },
+        {
+          "key": "c",
+          "text": "48 : 6"
+        },
+        {
+          "key": "d",
+          "text": "72 : 9"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "48 : 6 = 8 và 64 : 8 = 8.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả lớn hơn 60.",
+      "options": [
+        {
+          "key": "a",
+          "text": "7 × 8"
+        },
+        {
+          "key": "b",
+          "text": "6 × 9"
+        },
+        {
+          "key": "c",
+          "text": "8 × 8"
+        },
+        {
+          "key": "d",
+          "text": "7 × 9"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "7 × 9 = 63 và 8 × 8 = 64 đều lớn hơn 60.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "9 × 7 = 63"
+        },
+        {
+          "key": "b",
+          "text": "63 : 9 = 8"
+        },
+        {
+          "key": "c",
+          "text": "54 : 6 = 9"
+        },
+        {
+          "key": "d",
+          "text": "8 × 9 = 71"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "9 × 7 = 63 và 54 : 6 = 9 là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-017",
+      "type": "true_false",
+      "prompt": "7 × 8 = 56.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "7 × 8 = 56. là đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-018",
+      "type": "true_false",
+      "prompt": "9 × 6 = 55.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Phép tính đã cho là sai; hãy tính lại theo bảng nhân, chia 6–9.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-019",
+      "type": "true_false",
+      "prompt": "72 : 8 = 9.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "72 : 8 = 9. là đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-020",
+      "type": "true_false",
+      "prompt": "63 : 7 = 8.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Phép tính đã cho là sai; hãy tính lại theo bảng nhân, chia 6–9.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-021",
+      "type": "fill_in",
+      "prompt": "6 × 9 = ___.",
+      "answer": {
+        "accepted": [
+          "54"
+        ]
+      },
+      "explanation": "Đáp án là 54.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-022",
+      "type": "fill_in",
+      "prompt": "7 × ___ = 56.",
+      "answer": {
+        "accepted": [
+          "8"
+        ]
+      },
+      "explanation": "Đáp án là 8.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-023",
+      "type": "fill_in",
+      "prompt": "___ × 8 = 64.",
+      "answer": {
+        "accepted": [
+          "8"
+        ]
+      },
+      "explanation": "Đáp án là 8.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-024",
+      "type": "fill_in",
+      "prompt": "81 : 9 = ___.",
+      "answer": {
+        "accepted": [
+          "9"
+        ]
+      },
+      "explanation": "Đáp án là 9.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-3-bang-nhan-chia-6-9-025",
+      "type": "fill_in",
+      "prompt": "48 : ___ = 6.",
+      "answer": {
+        "accepted": [
+          "8"
+        ]
+      },
+      "explanation": "Đáp án là 8.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

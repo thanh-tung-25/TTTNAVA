@@ -1,0 +1,2537 @@
+{
+  "topic": {
+    "id": "tieng-viet-1-doc-hieu",
+    "subjectId": "tieng-viet",
+    "grade": 1,
+    "slug": "doc-hieu",
+    "name": "Đọc hiểu đoạn ngắn",
+    "sortOrder": 5
+  },
+  "questions": [
+    {
+      "id": "tieng-viet-1-doc-hieu-001",
+      "type": "single_choice",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Ai ra vườn tưới hoa?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Lan"
+        },
+        {
+          "key": "b",
+          "text": "Ông Lan"
+        },
+        {
+          "key": "c",
+          "text": "Bạn Mai"
+        },
+        {
+          "key": "d",
+          "text": "Mẹ Lan"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Lan\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-002",
+      "type": "single_choice",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Lan tưới hoa vào lúc nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Tối chủ nhật"
+        },
+        {
+          "key": "b",
+          "text": "Sáng chủ nhật"
+        },
+        {
+          "key": "c",
+          "text": "Sáng thứ hai"
+        },
+        {
+          "key": "d",
+          "text": "Chiều thứ bảy"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Sáng chủ nhật\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-003",
+      "type": "single_choice",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Lan tưới hoa ở đâu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bên bờ sông"
+        },
+        {
+          "key": "b",
+          "text": "Trong nhà"
+        },
+        {
+          "key": "c",
+          "text": "Trong vườn"
+        },
+        {
+          "key": "d",
+          "text": "Trên sân trường"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Trong vườn\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-004",
+      "type": "single_choice",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Lan làm gì trong vườn?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Hái quả"
+        },
+        {
+          "key": "b",
+          "text": "Nhổ cỏ"
+        },
+        {
+          "key": "c",
+          "text": "Tưới rau"
+        },
+        {
+          "key": "d",
+          "text": "Tưới hoa"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Tưới hoa\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-005",
+      "type": "single_choice",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Áo của Lan có màu gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Màu đỏ"
+        },
+        {
+          "key": "b",
+          "text": "Màu vàng"
+        },
+        {
+          "key": "c",
+          "text": "Màu hồng"
+        },
+        {
+          "key": "d",
+          "text": "Màu xanh"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Màu đỏ\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-006",
+      "type": "single_choice",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Bình nước của Lan màu gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Màu tím"
+        },
+        {
+          "key": "b",
+          "text": "Màu xanh"
+        },
+        {
+          "key": "c",
+          "text": "Màu trắng"
+        },
+        {
+          "key": "d",
+          "text": "Màu đỏ"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Màu xanh\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-007",
+      "type": "single_choice",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Những bông hoa trong vườn màu gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Màu trắng"
+        },
+        {
+          "key": "b",
+          "text": "Màu vàng"
+        },
+        {
+          "key": "c",
+          "text": "Màu hồng"
+        },
+        {
+          "key": "d",
+          "text": "Màu đỏ"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Màu hồng\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-008",
+      "type": "single_choice",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Lan cầm gì trên tay?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cuốc"
+        },
+        {
+          "key": "b",
+          "text": "Chiếc ô"
+        },
+        {
+          "key": "c",
+          "text": "Giỏ hoa"
+        },
+        {
+          "key": "d",
+          "text": "Bình nước"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Bình nước\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-009",
+      "type": "single_choice",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Loài hoa nào nở thắm trong vườn?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Hoa hồng"
+        },
+        {
+          "key": "b",
+          "text": "Hoa mai"
+        },
+        {
+          "key": "c",
+          "text": "Hoa sen"
+        },
+        {
+          "key": "d",
+          "text": "Hoa cúc"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Hoa hồng\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-010",
+      "type": "single_choice",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Buổi sáng chủ nhật, Lan ra đâu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Ra sông"
+        },
+        {
+          "key": "b",
+          "text": "Ra vườn"
+        },
+        {
+          "key": "c",
+          "text": "Ra trường"
+        },
+        {
+          "key": "d",
+          "text": "Ra chợ"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Ra vườn\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-011",
+      "type": "single_choice",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Lan tưới hoa vào ngày nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Thứ ba"
+        },
+        {
+          "key": "b",
+          "text": "Thứ bảy"
+        },
+        {
+          "key": "c",
+          "text": "Chủ nhật"
+        },
+        {
+          "key": "d",
+          "text": "Thứ hai"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Chủ nhật\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-012",
+      "type": "single_choice",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Giờ ra chơi, các bạn chơi trò gì dưới gốc cây bàng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Đá bóng"
+        },
+        {
+          "key": "b",
+          "text": "Đọc truyện"
+        },
+        {
+          "key": "c",
+          "text": "Đá cầu"
+        },
+        {
+          "key": "d",
+          "text": "Nhảy dây"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Nhảy dây\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-013",
+      "type": "single_choice",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Các bạn chơi nhảy dây ở đâu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Dưới gốc cây bàng"
+        },
+        {
+          "key": "b",
+          "text": "Bên bờ ao"
+        },
+        {
+          "key": "c",
+          "text": "Trên ghế đá"
+        },
+        {
+          "key": "d",
+          "text": "Trong lớp học"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Dưới gốc cây bàng\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-014",
+      "type": "single_choice",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Ai đá cầu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nam và Lan"
+        },
+        {
+          "key": "b",
+          "text": "Nam và Minh"
+        },
+        {
+          "key": "c",
+          "text": "Minh và Lan"
+        },
+        {
+          "key": "d",
+          "text": "Lan và Mai"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Nam và Minh\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-015",
+      "type": "single_choice",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Lan làm gì trong giờ ra chơi?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nhảy dây"
+        },
+        {
+          "key": "b",
+          "text": "Hát"
+        },
+        {
+          "key": "c",
+          "text": "Đọc truyện"
+        },
+        {
+          "key": "d",
+          "text": "Đá cầu"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Đọc truyện\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-016",
+      "type": "single_choice",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Lan ngồi ở đâu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Dưới gốc bàng"
+        },
+        {
+          "key": "b",
+          "text": "Trên sân khấu"
+        },
+        {
+          "key": "c",
+          "text": "Trong lớp"
+        },
+        {
+          "key": "d",
+          "text": "Trên ghế đá"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Trên ghế đá\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-017",
+      "type": "single_choice",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Tiếng gì vang khắp sân trường?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Tiếng cười"
+        },
+        {
+          "key": "b",
+          "text": "Tiếng trống"
+        },
+        {
+          "key": "c",
+          "text": "Tiếng giảng bài"
+        },
+        {
+          "key": "d",
+          "text": "Tiếng hát"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Tiếng cười\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-018",
+      "type": "single_choice",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Nam và Minh chơi trò gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nhảy dây"
+        },
+        {
+          "key": "b",
+          "text": "Đá cầu"
+        },
+        {
+          "key": "c",
+          "text": "Đọc truyện"
+        },
+        {
+          "key": "d",
+          "text": "Đá bóng"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Đá cầu\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-019",
+      "type": "single_choice",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Ai ngồi đọc truyện?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nam"
+        },
+        {
+          "key": "b",
+          "text": "Mai"
+        },
+        {
+          "key": "c",
+          "text": "Lan"
+        },
+        {
+          "key": "d",
+          "text": "Minh"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Lan\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-020",
+      "type": "single_choice",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Các bạn chơi nhảy dây vào lúc nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Sáng chủ nhật"
+        },
+        {
+          "key": "b",
+          "text": "Giờ học"
+        },
+        {
+          "key": "c",
+          "text": "Buổi tối"
+        },
+        {
+          "key": "d",
+          "text": "Giờ ra chơi"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Giờ ra chơi\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-021",
+      "type": "single_choice",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Lan ngồi trên đồ vật gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Ghế đá"
+        },
+        {
+          "key": "b",
+          "text": "Chiếu"
+        },
+        {
+          "key": "c",
+          "text": "Ghế gỗ"
+        },
+        {
+          "key": "d",
+          "text": "Bàn học"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Ghế đá\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-022",
+      "type": "single_choice",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Sân trường hôm đó thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Vắng vẻ"
+        },
+        {
+          "key": "b",
+          "text": "Rộn ràng tiếng cười"
+        },
+        {
+          "key": "c",
+          "text": "Mưa to"
+        },
+        {
+          "key": "d",
+          "text": "Im lặng"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Rộn ràng tiếng cười\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-023",
+      "type": "single_choice",
+      "prompt": "Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ. Bé Mai có con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Chú chó"
+        },
+        {
+          "key": "b",
+          "text": "Chú gà"
+        },
+        {
+          "key": "c",
+          "text": "Chú thỏ trắng"
+        },
+        {
+          "key": "d",
+          "text": "Chú mèo"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Chú thỏ trắng\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-024",
+      "type": "single_choice",
+      "prompt": "Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ. Chú thỏ của bé Mai có màu gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Màu nâu"
+        },
+        {
+          "key": "b",
+          "text": "Màu vàng"
+        },
+        {
+          "key": "c",
+          "text": "Màu đen"
+        },
+        {
+          "key": "d",
+          "text": "Màu trắng"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Màu trắng\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-025",
+      "type": "single_choice",
+      "prompt": "Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ. Mỗi sáng, bé Mai làm gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cho thỏ ăn"
+        },
+        {
+          "key": "b",
+          "text": "Dắt thỏ đi chơi"
+        },
+        {
+          "key": "c",
+          "text": "Tắm cho thỏ"
+        },
+        {
+          "key": "d",
+          "text": "Vuốt ve thỏ"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Cho thỏ ăn\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-026",
+      "type": "single_choice",
+      "prompt": "Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ. Thỏ ăn gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Rau muống"
+        },
+        {
+          "key": "b",
+          "text": "Cà rốt"
+        },
+        {
+          "key": "c",
+          "text": "Khoai lang"
+        },
+        {
+          "key": "d",
+          "text": "Cỏ khô"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Cà rốt\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-027",
+      "type": "single_choice",
+      "prompt": "Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ. Đôi tai của thỏ thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nhỏ"
+        },
+        {
+          "key": "b",
+          "text": "Ngắn"
+        },
+        {
+          "key": "c",
+          "text": "Dài"
+        },
+        {
+          "key": "d",
+          "text": "To"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Dài\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-028",
+      "type": "single_choice",
+      "prompt": "Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ. Mắt thỏ có màu gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Màu xanh"
+        },
+        {
+          "key": "b",
+          "text": "Màu nâu"
+        },
+        {
+          "key": "c",
+          "text": "Màu đen"
+        },
+        {
+          "key": "d",
+          "text": "Màu đỏ"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Màu đỏ\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-029",
+      "type": "single_choice",
+      "prompt": "Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ. Ai cho thỏ ăn?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bé Mai"
+        },
+        {
+          "key": "b",
+          "text": "Bạn Lan"
+        },
+        {
+          "key": "c",
+          "text": "Ông bé Mai"
+        },
+        {
+          "key": "d",
+          "text": "Mẹ bé Mai"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Bé Mai\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-030",
+      "type": "single_choice",
+      "prompt": "Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ. Bé Mai cho thỏ ăn vào lúc nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Mỗi tối"
+        },
+        {
+          "key": "b",
+          "text": "Mỗi sáng"
+        },
+        {
+          "key": "c",
+          "text": "Mỗi chiều"
+        },
+        {
+          "key": "d",
+          "text": "Mỗi trưa"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Mỗi sáng\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-031",
+      "type": "single_choice",
+      "prompt": "Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ. Ngoài đôi tai dài, thỏ còn có gì màu đỏ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Đôi chân"
+        },
+        {
+          "key": "b",
+          "text": "Cái đuôi"
+        },
+        {
+          "key": "c",
+          "text": "Đôi mắt"
+        },
+        {
+          "key": "d",
+          "text": "Bộ lông"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Đôi mắt\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-032",
+      "type": "single_choice",
+      "prompt": "Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ. Bé Mai chăm sóc thỏ vào lúc nào trong ngày?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Buổi trưa"
+        },
+        {
+          "key": "b",
+          "text": "Buổi tối"
+        },
+        {
+          "key": "c",
+          "text": "Buổi chiều"
+        },
+        {
+          "key": "d",
+          "text": "Buổi sáng"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Buổi sáng\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-033",
+      "type": "single_choice",
+      "prompt": "Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên. Chiều nay, bố chở Hùng đi đâu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Đi thả diều"
+        },
+        {
+          "key": "b",
+          "text": "Đi câu cá"
+        },
+        {
+          "key": "c",
+          "text": "Đi chợ"
+        },
+        {
+          "key": "d",
+          "text": "Đi học"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Đi thả diều\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-034",
+      "type": "single_choice",
+      "prompt": "Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên. Hai bố con thả diều ở đâu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Trên sân trường"
+        },
+        {
+          "key": "b",
+          "text": "Trên cánh đồng"
+        },
+        {
+          "key": "c",
+          "text": "Bên bờ sông"
+        },
+        {
+          "key": "d",
+          "text": "Trong công viên"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Trên cánh đồng\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-035",
+      "type": "single_choice",
+      "prompt": "Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên. Cánh diều có màu gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Màu đỏ"
+        },
+        {
+          "key": "b",
+          "text": "Màu trắng"
+        },
+        {
+          "key": "c",
+          "text": "Màu vàng"
+        },
+        {
+          "key": "d",
+          "text": "Màu xanh"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Màu vàng\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-036",
+      "type": "single_choice",
+      "prompt": "Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên. Bầu trời hôm đó màu gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Màu vàng"
+        },
+        {
+          "key": "b",
+          "text": "Màu xám"
+        },
+        {
+          "key": "c",
+          "text": "Màu đỏ"
+        },
+        {
+          "key": "d",
+          "text": "Màu xanh"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Màu xanh\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-037",
+      "type": "single_choice",
+      "prompt": "Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên. Ai chở Hùng đi thả diều?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bố"
+        },
+        {
+          "key": "b",
+          "text": "Anh trai"
+        },
+        {
+          "key": "c",
+          "text": "Ông"
+        },
+        {
+          "key": "d",
+          "text": "Mẹ"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Bố\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-038",
+      "type": "single_choice",
+      "prompt": "Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên. Ai reo lên vui vẻ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Mẹ"
+        },
+        {
+          "key": "b",
+          "text": "Hùng"
+        },
+        {
+          "key": "c",
+          "text": "Bạn Nam"
+        },
+        {
+          "key": "d",
+          "text": "Bố"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Hùng\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-039",
+      "type": "single_choice",
+      "prompt": "Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên. Cánh diều bay ở đâu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Trên cành cây"
+        },
+        {
+          "key": "b",
+          "text": "Dưới mặt đất"
+        },
+        {
+          "key": "c",
+          "text": "Giữa bầu trời"
+        },
+        {
+          "key": "d",
+          "text": "Trên mái nhà"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Giữa bầu trời\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-040",
+      "type": "single_choice",
+      "prompt": "Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên. Hùng cảm thấy thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Tức giận"
+        },
+        {
+          "key": "b",
+          "text": "Lo lắng"
+        },
+        {
+          "key": "c",
+          "text": "Buồn bã"
+        },
+        {
+          "key": "d",
+          "text": "Vui vẻ"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Vui vẻ\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-041",
+      "type": "single_choice",
+      "prompt": "Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên. Cánh diều bay cao hay thấp?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bay cao"
+        },
+        {
+          "key": "b",
+          "text": "Không bay"
+        },
+        {
+          "key": "c",
+          "text": "Bay thấp"
+        },
+        {
+          "key": "d",
+          "text": "Bay sát mặt đất"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Bay cao\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-042",
+      "type": "single_choice",
+      "prompt": "Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên. Bố chở Hùng đi thả diều vào lúc nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Sáng nay"
+        },
+        {
+          "key": "b",
+          "text": "Chiều nay"
+        },
+        {
+          "key": "c",
+          "text": "Tối nay"
+        },
+        {
+          "key": "d",
+          "text": "Trưa nay"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Chiều nay\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-043",
+      "type": "single_choice",
+      "prompt": "Trong lớp, cô giáo đang giảng bài. Các bạn học sinh chăm chú nghe giảng. Bạn Hoa giơ tay phát biểu. Cô giáo khen Hoa ngoan. Cô giáo đang làm gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Đọc truyện"
+        },
+        {
+          "key": "b",
+          "text": "Chấm bài"
+        },
+        {
+          "key": "c",
+          "text": "Giảng bài"
+        },
+        {
+          "key": "d",
+          "text": "Viết bảng"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Giảng bài\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-044",
+      "type": "single_choice",
+      "prompt": "Trong lớp, cô giáo đang giảng bài. Các bạn học sinh chăm chú nghe giảng. Bạn Hoa giơ tay phát biểu. Cô giáo khen Hoa ngoan. Các bạn học sinh làm gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Chơi đùa"
+        },
+        {
+          "key": "b",
+          "text": "Vẽ tranh"
+        },
+        {
+          "key": "c",
+          "text": "Hát"
+        },
+        {
+          "key": "d",
+          "text": "Nghe giảng"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Nghe giảng\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-045",
+      "type": "single_choice",
+      "prompt": "Trong lớp, cô giáo đang giảng bài. Các bạn học sinh chăm chú nghe giảng. Bạn Hoa giơ tay phát biểu. Cô giáo khen Hoa ngoan. Ai giơ tay phát biểu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bạn Hoa"
+        },
+        {
+          "key": "b",
+          "text": "Cô giáo"
+        },
+        {
+          "key": "c",
+          "text": "Bạn Nam"
+        },
+        {
+          "key": "d",
+          "text": "Bạn Lan"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Bạn Hoa\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-046",
+      "type": "single_choice",
+      "prompt": "Trong lớp, cô giáo đang giảng bài. Các bạn học sinh chăm chú nghe giảng. Bạn Hoa giơ tay phát biểu. Cô giáo khen Hoa ngoan. Cô giáo khen ai?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bạn Nam"
+        },
+        {
+          "key": "b",
+          "text": "Bạn Hoa"
+        },
+        {
+          "key": "c",
+          "text": "Bạn Lan"
+        },
+        {
+          "key": "d",
+          "text": "Cả lớp"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Bạn Hoa\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-047",
+      "type": "single_choice",
+      "prompt": "Trong lớp, cô giáo đang giảng bài. Các bạn học sinh chăm chú nghe giảng. Bạn Hoa giơ tay phát biểu. Cô giáo khen Hoa ngoan. Cô giáo khen Hoa thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Giỏi toán"
+        },
+        {
+          "key": "b",
+          "text": "Chăm làm"
+        },
+        {
+          "key": "c",
+          "text": "Ngoan"
+        },
+        {
+          "key": "d",
+          "text": "Hát hay"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Ngoan\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-048",
+      "type": "single_choice",
+      "prompt": "Trong lớp, cô giáo đang giảng bài. Các bạn học sinh chăm chú nghe giảng. Bạn Hoa giơ tay phát biểu. Cô giáo khen Hoa ngoan. Việc các bạn nghe giảng diễn ra ở đâu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Thư viện"
+        },
+        {
+          "key": "b",
+          "text": "Ngoài vườn"
+        },
+        {
+          "key": "c",
+          "text": "Sân trường"
+        },
+        {
+          "key": "d",
+          "text": "Trong lớp"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Trong lớp\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-049",
+      "type": "single_choice",
+      "prompt": "Trong lớp, cô giáo đang giảng bài. Các bạn học sinh chăm chú nghe giảng. Bạn Hoa giơ tay phát biểu. Cô giáo khen Hoa ngoan. Ai đang giảng bài?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cô giáo"
+        },
+        {
+          "key": "b",
+          "text": "Bạn Hoa"
+        },
+        {
+          "key": "c",
+          "text": "Cô thủ thư"
+        },
+        {
+          "key": "d",
+          "text": "Bạn Nam"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Cô giáo\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-050",
+      "type": "single_choice",
+      "prompt": "Trong lớp, cô giáo đang giảng bài. Các bạn học sinh chăm chú nghe giảng. Bạn Hoa giơ tay phát biểu. Cô giáo khen Hoa ngoan. Bạn Hoa đã làm gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Ngủ gật"
+        },
+        {
+          "key": "b",
+          "text": "Giơ tay phát biểu"
+        },
+        {
+          "key": "c",
+          "text": "Ra ngoài chơi"
+        },
+        {
+          "key": "d",
+          "text": "Đứng lên hát"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Giơ tay phát biểu\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-051",
+      "type": "single_choice",
+      "prompt": "Trong lớp, cô giáo đang giảng bài. Các bạn học sinh chăm chú nghe giảng. Bạn Hoa giơ tay phát biểu. Cô giáo khen Hoa ngoan. Các bạn nghe giảng với thái độ thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nghịch ngợm"
+        },
+        {
+          "key": "b",
+          "text": "Lơ đãng"
+        },
+        {
+          "key": "c",
+          "text": "Chăm chú"
+        },
+        {
+          "key": "d",
+          "text": "Buồn ngủ"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Chăm chú\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-052",
+      "type": "single_choice",
+      "prompt": "Trong lớp, cô giáo đang giảng bài. Các bạn học sinh chăm chú nghe giảng. Bạn Hoa giơ tay phát biểu. Cô giáo khen Hoa ngoan. Vì sao cô giáo khen Hoa ngoan?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Vì Hoa nói chuyện"
+        },
+        {
+          "key": "b",
+          "text": "Vì Hoa hát hay"
+        },
+        {
+          "key": "c",
+          "text": "Vì Hoa đi học muộn"
+        },
+        {
+          "key": "d",
+          "text": "Vì Hoa giơ tay phát biểu"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Vì Hoa giơ tay phát biểu\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-053",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm.\" Chọn tất cả các ý đúng về nhân vật Lan: Lan ra vườn tưới hoa. Lan mặc áo xanh. Lan mặc áo đỏ. Lan ra vườn hái quả.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Lan ra vườn tưới hoa."
+        },
+        {
+          "key": "b",
+          "text": "Lan mặc áo xanh."
+        },
+        {
+          "key": "c",
+          "text": "Lan mặc áo đỏ."
+        },
+        {
+          "key": "d",
+          "text": "Lan ra vườn hái quả."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các ý đúng về nhân vật Lan là: Lan ra vườn tưới hoa. Lan mặc áo đỏ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-054",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm.\" Chọn tất cả các ý đúng về cảnh buổi sáng: Trời sáng chủ nhật. Trời mưa to. Hoa hồng nở thắm. Hoa đã tàn.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Trời mưa to."
+        },
+        {
+          "key": "b",
+          "text": "Hoa hồng nở thắm."
+        },
+        {
+          "key": "c",
+          "text": "Hoa đã tàn."
+        },
+        {
+          "key": "d",
+          "text": "Trời sáng chủ nhật."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về cảnh buổi sáng là: Trời sáng chủ nhật. Hoa hồng nở thắm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-055",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm.\" Chọn tất cả các ý đúng về màu sắc trong đoạn văn: Áo Lan màu đỏ. Áo Lan màu vàng. Bình nước màu xanh. Bình nước màu tím.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Áo Lan màu vàng."
+        },
+        {
+          "key": "b",
+          "text": "Bình nước màu xanh."
+        },
+        {
+          "key": "c",
+          "text": "Bình nước màu tím."
+        },
+        {
+          "key": "d",
+          "text": "Áo Lan màu đỏ."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về màu sắc trong đoạn văn là: Áo Lan màu đỏ. Bình nước màu xanh.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-056",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm.\" Chọn tất cả các ý đúng về đồ vật Lan cầm: Lan cầm bình nước. Lan cầm chiếc ô. Bình nước màu xanh. Lan cầm giỏ hoa.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Lan cầm bình nước."
+        },
+        {
+          "key": "b",
+          "text": "Bình nước màu xanh."
+        },
+        {
+          "key": "c",
+          "text": "Lan cầm giỏ hoa."
+        },
+        {
+          "key": "d",
+          "text": "Lan cầm chiếc ô."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các ý đúng về đồ vật Lan cầm là: Lan cầm bình nước. Bình nước màu xanh.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-057",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường.\" Chọn tất cả các ý đúng về giờ ra chơi: Các bạn chơi nhảy dây. Các bạn ngồi học bài. Sân trường rộn tiếng cười. Sân trường vắng lặng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Sân trường rộn tiếng cười."
+        },
+        {
+          "key": "b",
+          "text": "Sân trường vắng lặng."
+        },
+        {
+          "key": "c",
+          "text": "Các bạn ngồi học bài."
+        },
+        {
+          "key": "d",
+          "text": "Các bạn chơi nhảy dây."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về giờ ra chơi là: Các bạn chơi nhảy dây. Sân trường rộn tiếng cười.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-058",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường.\" Chọn tất cả các ý đúng về các trò chơi: Nam và Minh đá cầu. Lan đá cầu. Các bạn chơi nhảy dây. Các bạn đá bóng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nam và Minh đá cầu."
+        },
+        {
+          "key": "b",
+          "text": "Các bạn chơi nhảy dây."
+        },
+        {
+          "key": "c",
+          "text": "Lan đá cầu."
+        },
+        {
+          "key": "d",
+          "text": "Các bạn đá bóng."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các ý đúng về các trò chơi là: Nam và Minh đá cầu. Các bạn chơi nhảy dây.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-059",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường.\" Chọn tất cả các ý đúng về bạn Lan: Lan ngồi trên ghế đá. Lan chơi nhảy dây. Lan đọc truyện. Lan đá cầu.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Lan đá cầu."
+        },
+        {
+          "key": "b",
+          "text": "Lan ngồi trên ghế đá."
+        },
+        {
+          "key": "c",
+          "text": "Lan chơi nhảy dây."
+        },
+        {
+          "key": "d",
+          "text": "Lan đọc truyện."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về bạn Lan là: Lan ngồi trên ghế đá. Lan đọc truyện.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-060",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường.\" Chọn tất cả các ý đúng về sân trường: Sân trường có cây bàng. Sân trường không có cây nào. Sân trường vang tiếng cười. Sân trường im lặng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Sân trường có cây bàng."
+        },
+        {
+          "key": "b",
+          "text": "Sân trường im lặng."
+        },
+        {
+          "key": "c",
+          "text": "Sân trường vang tiếng cười."
+        },
+        {
+          "key": "d",
+          "text": "Sân trường không có cây nào."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các ý đúng về sân trường là: Sân trường có cây bàng. Sân trường vang tiếng cười.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-061",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ.\" Chọn tất cả các ý đúng về chú thỏ: Thỏ có bộ lông trắng. Thỏ có bộ lông đen. Thỏ có đôi tai dài. Thỏ có đôi tai ngắn.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Thỏ có bộ lông đen."
+        },
+        {
+          "key": "b",
+          "text": "Thỏ có đôi tai dài."
+        },
+        {
+          "key": "c",
+          "text": "Thỏ có đôi tai ngắn."
+        },
+        {
+          "key": "d",
+          "text": "Thỏ có bộ lông trắng."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về chú thỏ là: Thỏ có bộ lông trắng. Thỏ có đôi tai dài.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-062",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ.\" Chọn tất cả các ý đúng về bữa ăn của thỏ: Thỏ ăn cà rốt. Thỏ ăn cá. Bé Mai cho thỏ ăn mỗi sáng. Bé Mai cho thỏ ăn mỗi tối.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Thỏ ăn cà rốt."
+        },
+        {
+          "key": "b",
+          "text": "Bé Mai cho thỏ ăn mỗi sáng."
+        },
+        {
+          "key": "c",
+          "text": "Thỏ ăn cá."
+        },
+        {
+          "key": "d",
+          "text": "Bé Mai cho thỏ ăn mỗi tối."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các ý đúng về bữa ăn của thỏ là: Thỏ ăn cà rốt. Bé Mai cho thỏ ăn mỗi sáng.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-063",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ.\" Chọn tất cả các ý đúng về đặc điểm của thỏ: Thỏ có mắt đỏ. Thỏ có mắt xanh. Thỏ có tai dài. Thỏ có đuôi dài.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Thỏ có mắt đỏ."
+        },
+        {
+          "key": "b",
+          "text": "Thỏ có mắt xanh."
+        },
+        {
+          "key": "c",
+          "text": "Thỏ có đuôi dài."
+        },
+        {
+          "key": "d",
+          "text": "Thỏ có tai dài."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về đặc điểm của thỏ là: Thỏ có mắt đỏ. Thỏ có tai dài.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-064",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ.\" Chọn tất cả các ý đúng về chuyến đi thả diều: Bố chở Hùng đi thả diều. Mẹ chở Hùng đi thả diều. Hai bố con thả diều trên cánh đồng. Hai bố con thả diều trong công viên.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bố chở Hùng đi thả diều."
+        },
+        {
+          "key": "b",
+          "text": "Mẹ chở Hùng đi thả diều."
+        },
+        {
+          "key": "c",
+          "text": "Hai bố con thả diều trên cánh đồng."
+        },
+        {
+          "key": "d",
+          "text": "Hai bố con thả diều trong công viên."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các ý đúng về chuyến đi thả diều là: Bố chở Hùng đi thả diều. Hai bố con thả diều trên cánh đồng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-065",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên.\" Chọn tất cả các ý đúng về cánh diều: Cánh diều màu vàng. Cánh diều màu đỏ. Cánh diều bay cao. Cánh diều bay thấp.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cánh diều màu đỏ."
+        },
+        {
+          "key": "b",
+          "text": "Cánh diều bay thấp."
+        },
+        {
+          "key": "c",
+          "text": "Cánh diều màu vàng."
+        },
+        {
+          "key": "d",
+          "text": "Cánh diều bay cao."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về cánh diều là: Cánh diều màu vàng. Cánh diều bay cao.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-066",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên.\" Chọn tất cả các ý đúng về cảm xúc của Hùng: Hùng vui vẻ. Hùng buồn bã. Hùng reo lên. Hùng khóc.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Hùng khóc."
+        },
+        {
+          "key": "b",
+          "text": "Hùng vui vẻ."
+        },
+        {
+          "key": "c",
+          "text": "Hùng reo lên."
+        },
+        {
+          "key": "d",
+          "text": "Hùng buồn bã."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các ý đúng về cảm xúc của Hùng là: Hùng vui vẻ. Hùng reo lên.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-067",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên.\" Chọn tất cả các ý đúng về giờ học trong lớp: Cô giáo giảng bài. Cô giáo hát. Học sinh chăm chú nghe. Học sinh ngủ gật.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Học sinh chăm chú nghe."
+        },
+        {
+          "key": "b",
+          "text": "Cô giáo giảng bài."
+        },
+        {
+          "key": "c",
+          "text": "Cô giáo hát."
+        },
+        {
+          "key": "d",
+          "text": "Học sinh ngủ gật."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các ý đúng về giờ học trong lớp là: Cô giáo giảng bài. Học sinh chăm chú nghe.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-068",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên.\" Chọn tất cả các ý đúng về bạn Hoa: Hoa giơ tay phát biểu. Hoa nói chuyện riêng. Hoa được cô khen ngoan. Hoa bị cô nhắc nhở.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Hoa bị cô nhắc nhở."
+        },
+        {
+          "key": "b",
+          "text": "Hoa nói chuyện riêng."
+        },
+        {
+          "key": "c",
+          "text": "Hoa giơ tay phát biểu."
+        },
+        {
+          "key": "d",
+          "text": "Hoa được cô khen ngoan."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về bạn Hoa là: Hoa giơ tay phát biểu. Hoa được cô khen ngoan.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-069",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Trong lớp, cô giáo đang giảng bài. Các bạn học sinh chăm chú nghe giảng. Bạn Hoa giơ tay phát biểu. Cô giáo khen Hoa ngoan.\" Chọn tất cả các ý đúng về cô giáo: Cô giáo đang giảng bài. Cô giáo đang chấm bài. Cô giáo khen Hoa ngoan. Cô giáo phê bình Hoa.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cô giáo phê bình Hoa."
+        },
+        {
+          "key": "b",
+          "text": "Cô giáo đang giảng bài."
+        },
+        {
+          "key": "c",
+          "text": "Cô giáo đang chấm bài."
+        },
+        {
+          "key": "d",
+          "text": "Cô giáo khen Hoa ngoan."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về cô giáo là: Cô giáo đang giảng bài. Cô giáo khen Hoa ngoan.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-070",
+      "type": "true_false",
+      "prompt": "Lan ra vườn tưới hoa vào sáng chủ nhật.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ nhất.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-071",
+      "type": "true_false",
+      "prompt": "Lan mặc áo màu xanh.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: Lan mặc áo màu đỏ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-072",
+      "type": "true_false",
+      "prompt": "Bình nước của Lan màu xanh.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ nhất.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-073",
+      "type": "true_false",
+      "prompt": "Hoa trong vườn là hoa cúc.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: hoa trong vườn là hoa hồng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-074",
+      "type": "true_false",
+      "prompt": "Nam và Minh đá cầu trong giờ ra chơi.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ hai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-075",
+      "type": "true_false",
+      "prompt": "Lan chơi nhảy dây cùng các bạn.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: Lan ngồi đọc truyện.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-076",
+      "type": "true_false",
+      "prompt": "Lan ngồi đọc truyện trên ghế đá.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ hai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-077",
+      "type": "true_false",
+      "prompt": "Sân trường im lặng, không có tiếng cười.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: tiếng cười vang khắp sân trường.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-078",
+      "type": "true_false",
+      "prompt": "Bé Mai có một chú thỏ trắng.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ ba.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-079",
+      "type": "true_false",
+      "prompt": "Thỏ ăn cà rốt vào mỗi sáng.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ ba.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-080",
+      "type": "true_false",
+      "prompt": "Thỏ có đôi tai ngắn.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: thỏ có đôi tai dài.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-081",
+      "type": "true_false",
+      "prompt": "Bố chở Hùng đi thả diều trên cánh đồng.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ tư.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-082",
+      "type": "true_false",
+      "prompt": "Cánh diều màu đỏ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: cánh diều màu vàng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-083",
+      "type": "true_false",
+      "prompt": "Hùng buồn bã khi thả diều.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: Hùng vui vẻ reo lên.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-084",
+      "type": "true_false",
+      "prompt": "Cô giáo đang giảng bài trong lớp.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ năm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-085",
+      "type": "true_false",
+      "prompt": "Bạn Hoa giơ tay phát biểu.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ năm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-086",
+      "type": "true_false",
+      "prompt": "Cô giáo khen Hoa vì Hoa hát hay.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: cô khen Hoa ngoan vì Hoa phát biểu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-087",
+      "type": "fill_in",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Sáng chủ nhật, Lan ra vườn tưới ___.",
+      "answer": {
+        "accepted": [
+          "hoa"
+        ]
+      },
+      "explanation": "Lan tưới hoa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-088",
+      "type": "fill_in",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Lan mặc áo màu ___.",
+      "answer": {
+        "accepted": [
+          "đỏ"
+        ]
+      },
+      "explanation": "Lan mặc áo đỏ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-089",
+      "type": "fill_in",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Bình nước của Lan màu ___.",
+      "answer": {
+        "accepted": [
+          "xanh"
+        ]
+      },
+      "explanation": "Bình nước màu xanh.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-090",
+      "type": "fill_in",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Những bông hoa hồng nở ___.",
+      "answer": {
+        "accepted": [
+          "thắm"
+        ]
+      },
+      "explanation": "Hoa hồng nở thắm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-091",
+      "type": "fill_in",
+      "prompt": "Sáng chủ nhật, Lan ra vườn tưới hoa. Lan mặc áo đỏ, tay cầm bình nước màu xanh. Những bông hoa hồng nở thắm. Lan ra vườn vào buổi ___.",
+      "answer": {
+        "accepted": [
+          "sáng"
+        ]
+      },
+      "explanation": "Lan ra vườn vào buổi sáng.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-092",
+      "type": "fill_in",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Các bạn chơi nhảy dây dưới gốc cây ___.",
+      "answer": {
+        "accepted": [
+          "bàng"
+        ]
+      },
+      "explanation": "Các bạn chơi dưới gốc cây bàng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-093",
+      "type": "fill_in",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Nam và Minh ___ cầu.",
+      "answer": {
+        "accepted": [
+          "đá"
+        ]
+      },
+      "explanation": "Nam và Minh đá cầu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-094",
+      "type": "fill_in",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Lan ngồi đọc truyện trên ___ đá.",
+      "answer": {
+        "accepted": [
+          "ghế"
+        ]
+      },
+      "explanation": "Lan ngồi trên ghế đá.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-095",
+      "type": "fill_in",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Tiếng ___ vang khắp sân trường.",
+      "answer": {
+        "accepted": [
+          "cười"
+        ]
+      },
+      "explanation": "Tiếng cười vang khắp sân trường.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-096",
+      "type": "fill_in",
+      "prompt": "Trong giờ ra chơi, các bạn chơi nhảy dây dưới gốc cây bàng. Nam và Minh đá cầu. Lan ngồi đọc truyện trên ghế đá. Tiếng cười vang khắp sân trường. Giờ ra chơi, các bạn chơi ___ dây.",
+      "answer": {
+        "accepted": [
+          "nhảy"
+        ]
+      },
+      "explanation": "Các bạn chơi nhảy dây.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-097",
+      "type": "fill_in",
+      "prompt": "Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ. Bé Mai có một chú thỏ ___.",
+      "answer": {
+        "accepted": [
+          "trắng"
+        ]
+      },
+      "explanation": "Bé Mai có chú thỏ trắng.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-098",
+      "type": "fill_in",
+      "prompt": "Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ. Mỗi sáng, bé cho thỏ ăn ___.",
+      "answer": {
+        "accepted": [
+          "cà rốt"
+        ]
+      },
+      "explanation": "Thỏ ăn cà rốt.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-099",
+      "type": "fill_in",
+      "prompt": "Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ. Thỏ có đôi tai ___.",
+      "answer": {
+        "accepted": [
+          "dài"
+        ]
+      },
+      "explanation": "Thỏ có đôi tai dài.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-100",
+      "type": "fill_in",
+      "prompt": "Bé Mai có một chú thỏ trắng. Mỗi sáng, bé cho thỏ ăn cà rốt. Chú thỏ có đôi tai dài và đôi mắt đỏ. Mắt thỏ màu ___.",
+      "answer": {
+        "accepted": [
+          "đỏ"
+        ]
+      },
+      "explanation": "Mắt thỏ màu đỏ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-101",
+      "type": "fill_in",
+      "prompt": "Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên. Bố chở Hùng đi thả ___ trên cánh đồng.",
+      "answer": {
+        "accepted": [
+          "diều"
+        ]
+      },
+      "explanation": "Bố chở Hùng đi thả diều.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-102",
+      "type": "fill_in",
+      "prompt": "Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên. Cánh diều màu ___ bay cao.",
+      "answer": {
+        "accepted": [
+          "vàng"
+        ]
+      },
+      "explanation": "Cánh diều màu vàng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-103",
+      "type": "fill_in",
+      "prompt": "Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên. Bầu trời màu ___.",
+      "answer": {
+        "accepted": [
+          "xanh"
+        ]
+      },
+      "explanation": "Bầu trời màu xanh.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-104",
+      "type": "fill_in",
+      "prompt": "Chiều nay, bố chở Hùng đi thả diều trên cánh đồng. Cánh diều màu vàng bay cao giữa bầu trời xanh. Hùng vui vẻ reo lên. Hùng vui vẻ ___ lên.",
+      "answer": {
+        "accepted": [
+          "reo"
+        ]
+      },
+      "explanation": "Hùng reo lên.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-105",
+      "type": "fill_in",
+      "prompt": "Trong lớp, cô giáo đang giảng bài. Các bạn học sinh chăm chú nghe giảng. Bạn Hoa giơ tay phát biểu. Cô giáo khen Hoa ngoan. Trong lớp, cô giáo đang ___ bài.",
+      "answer": {
+        "accepted": [
+          "giảng"
+        ]
+      },
+      "explanation": "Cô giáo giảng bài.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-106",
+      "type": "fill_in",
+      "prompt": "Trong lớp, cô giáo đang giảng bài. Các bạn học sinh chăm chú nghe giảng. Bạn Hoa giơ tay phát biểu. Cô giáo khen Hoa ngoan. Các bạn học sinh chăm chú ___ giảng.",
+      "answer": {
+        "accepted": [
+          "nghe"
+        ]
+      },
+      "explanation": "Các bạn nghe giảng.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-107",
+      "type": "fill_in",
+      "prompt": "Trong lớp, cô giáo đang giảng bài. Các bạn học sinh chăm chú nghe giảng. Bạn Hoa giơ tay phát biểu. Cô giáo khen Hoa ngoan. Bạn Hoa giơ tay ___ biểu.",
+      "answer": {
+        "accepted": [
+          "phát"
+        ]
+      },
+      "explanation": "Bạn Hoa giơ tay phát biểu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-doc-hieu-108",
+      "type": "fill_in",
+      "prompt": "Trong lớp, cô giáo đang giảng bài. Các bạn học sinh chăm chú nghe giảng. Bạn Hoa giơ tay phát biểu. Cô giáo khen Hoa ngoan. Cô giáo khen Hoa ___.",
+      "answer": {
+        "accepted": [
+          "ngoan"
+        ]
+      },
+      "explanation": "Cô giáo khen Hoa ngoan.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

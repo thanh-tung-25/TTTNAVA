@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lịch sử học tập — Bé Học Vui</title>
+  <link rel="icon" href="/assets/avatars/cu.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
+</head>
+<body>
+  <header id="app-header"></header>
+  <main class="page">
+    <div class="page-head">
+      <div>
+        <p class="eyebrow">Lịch sử</p>
+        <h1>Những lần con đã học</h1>
+        <p>Xem lại kết quả luyện tập và các bài thi của mình.</p>
+      </div>
+    </div>
+    <div class="tabs" id="history-tabs" role="tablist" aria-label="Loại hoạt động">
+      <button class="tab" type="button" role="tab" data-tab="practice">✏️ Luyện tập</button>
+      <button class="tab" type="button" role="tab" data-tab="exam">⏱️ Bài thi</button>
+    </div>
+    <section class="card">
+      <div id="history-list"><div class="loading">Đang tải lịch sử…</div></div>
+      <div class="quiz-actions" style="justify-content:space-between;margin-top:1rem">
+        <button class="btn btn-ghost btn-sm" id="prev-page" type="button">← Trang trước</button>
+        <span class="muted" id="page-label"></span>
+        <button class="btn btn-ghost btn-sm" id="next-page" type="button">Trang sau →</button>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="/assets/js/history.js"></script>
+</body>
+</html>

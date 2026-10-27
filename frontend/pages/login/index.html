@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng nhập — Bé Học Vui</title>
+  <meta name="description" content="Bé Học Vui — cùng con luyện tập Toán, Tiếng Việt và Tiếng Anh mỗi ngày.">
+  <link rel="icon" href="/assets/avatars/cu.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
+</head>
+<body class="login-body">
+  <main class="login-card">
+    <div class="login-mascot" aria-hidden="true">🦉</div>
+    <h1>Bé Học Vui</h1>
+    <p class="muted" style="margin-bottom:1.2rem">Cùng con học giỏi mỗi ngày</p>
+
+    <form id="login-form" novalidate>
+      <div class="form-error hidden" id="login-error" role="alert"></div>
+      <div class="field">
+        <label for="username">Tên đăng nhập</label>
+        <input class="input" id="username" name="username" type="text" autocomplete="username"
+               placeholder="Ví dụ: be_lan" maxlength="20" required>
+      </div>
+      <div class="field">
+        <label for="password">Mật khẩu</label>
+        <input class="input" id="password" name="password" type="password" autocomplete="current-password"
+               placeholder="Nhập mật khẩu" maxlength="72" required>
+      </div>
+      <button class="btn btn-block" id="login-button" type="submit">Vào học thôi! 🚀</button>
+    </form>
+
+    <p class="login-note">Tài khoản do thầy cô hoặc bố mẹ cấp. Nếu quên mật khẩu, con hãy nhờ người lớn nhé!</p>
+  </main>
+
+  <script type="module" src="/assets/js/login.js"></script>
+</body>
+</html>

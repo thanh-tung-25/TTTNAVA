@@ -1,0 +1,598 @@
+{
+  "topic": {
+    "id": "tieng-viet-2-tu-trai-nghia",
+    "subjectId": "tieng-viet",
+    "grade": 2,
+    "slug": "tu-trai-nghia",
+    "name": "Từ trái nghĩa",
+    "sortOrder": 6
+  },
+  "questions": [
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-001",
+      "type": "single_choice",
+      "prompt": "Từ trái nghĩa với “cao” là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "thấp"
+        },
+        {
+          "key": "b",
+          "text": "to"
+        },
+        {
+          "key": "c",
+          "text": "rộng"
+        },
+        {
+          "key": "d",
+          "text": "dài"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Cao và thấp là hai từ trái nghĩa.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-002",
+      "type": "single_choice",
+      "prompt": "Từ trái nghĩa với “nóng” là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cháy"
+        },
+        {
+          "key": "b",
+          "text": "lạnh"
+        },
+        {
+          "key": "c",
+          "text": "khô"
+        },
+        {
+          "key": "d",
+          "text": "nắng"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Nóng và lạnh trái ngược nhau.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-003",
+      "type": "single_choice",
+      "prompt": "Từ trái nghĩa với “nhanh” là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "gấp"
+        },
+        {
+          "key": "b",
+          "text": "mau"
+        },
+        {
+          "key": "c",
+          "text": "chậm"
+        },
+        {
+          "key": "d",
+          "text": "vội"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Nhanh và chậm trái ngược nhau.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-004",
+      "type": "single_choice",
+      "prompt": "Từ trái nghĩa với “đen” là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "vàng"
+        },
+        {
+          "key": "b",
+          "text": "đỏ"
+        },
+        {
+          "key": "c",
+          "text": "xanh"
+        },
+        {
+          "key": "d",
+          "text": "trắng"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đen và trắng là hai màu trái nghĩa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-005",
+      "type": "single_choice",
+      "prompt": "Từ trái nghĩa với “vui” là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "buồn"
+        },
+        {
+          "key": "b",
+          "text": "hát"
+        },
+        {
+          "key": "c",
+          "text": "cười"
+        },
+        {
+          "key": "d",
+          "text": "sung sướng"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Vui và buồn trái ngược nhau.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-006",
+      "type": "single_choice",
+      "prompt": "Từ trái nghĩa với “khỏe” là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "béo"
+        },
+        {
+          "key": "b",
+          "text": "yếu"
+        },
+        {
+          "key": "c",
+          "text": "mạnh"
+        },
+        {
+          "key": "d",
+          "text": "gầy"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Khỏe và yếu trái ngược nhau.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-007",
+      "type": "single_choice",
+      "prompt": "Từ trái nghĩa với “dài” là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "to"
+        },
+        {
+          "key": "b",
+          "text": "rộng"
+        },
+        {
+          "key": "c",
+          "text": "ngắn"
+        },
+        {
+          "key": "d",
+          "text": "cao"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Dài và ngắn trái ngược nhau.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-008",
+      "type": "single_choice",
+      "prompt": "Từ trái nghĩa với “sáng” là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nắng"
+        },
+        {
+          "key": "b",
+          "text": "trưa"
+        },
+        {
+          "key": "c",
+          "text": "chiều"
+        },
+        {
+          "key": "d",
+          "text": "tối"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Sáng và tối trái ngược nhau.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-009",
+      "type": "single_choice",
+      "prompt": "Từ trái nghĩa với “đầy” là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "vơi"
+        },
+        {
+          "key": "b",
+          "text": "chật"
+        },
+        {
+          "key": "c",
+          "text": "nhiều"
+        },
+        {
+          "key": "d",
+          "text": "đông"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đầy và vơi trái ngược nhau.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-010",
+      "type": "single_choice",
+      "prompt": "Từ trái nghĩa với “giỏi” là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "hay"
+        },
+        {
+          "key": "b",
+          "text": "kém"
+        },
+        {
+          "key": "c",
+          "text": "chăm"
+        },
+        {
+          "key": "d",
+          "text": "tốt"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Giỏi và kém trái ngược nhau.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-011",
+      "type": "single_choice",
+      "prompt": "Từ trái nghĩa với “trước” là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "trên"
+        },
+        {
+          "key": "b",
+          "text": "dưới"
+        },
+        {
+          "key": "c",
+          "text": "sau"
+        },
+        {
+          "key": "d",
+          "text": "giữa"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Trước và sau chỉ hai phía thời gian trái ngược.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-012",
+      "type": "single_choice",
+      "prompt": "Từ trái nghĩa với “ra” là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "đi"
+        },
+        {
+          "key": "b",
+          "text": "lên"
+        },
+        {
+          "key": "c",
+          "text": "xuống"
+        },
+        {
+          "key": "d",
+          "text": "vào"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Ra và vào là hai hướng trái ngược.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn các cặp từ trái nghĩa.",
+      "options": [
+        {
+          "key": "a",
+          "text": "nóng – lạnh"
+        },
+        {
+          "key": "b",
+          "text": "nóng – ấm"
+        },
+        {
+          "key": "c",
+          "text": "cao – to"
+        },
+        {
+          "key": "d",
+          "text": "cao – thấp"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Cao – thấp, nóng – lạnh là các cặp trái nghĩa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn các cặp từ trái nghĩa (tả tính tình).",
+      "options": [
+        {
+          "key": "a",
+          "text": "chăm – lười"
+        },
+        {
+          "key": "b",
+          "text": "hiền – tốt"
+        },
+        {
+          "key": "c",
+          "text": "hiền – dữ"
+        },
+        {
+          "key": "d",
+          "text": "chăm – siêng"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Hiền – dữ, chăm – lười trái ngược nhau.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn các cặp từ trái nghĩa (tả kích thước).",
+      "options": [
+        {
+          "key": "a",
+          "text": "to – nhỏ"
+        },
+        {
+          "key": "b",
+          "text": "to – lớn"
+        },
+        {
+          "key": "c",
+          "text": "dài – xa"
+        },
+        {
+          "key": "d",
+          "text": "dài – ngắn"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "To – nhỏ, dài – ngắn là các cặp trái nghĩa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn các cặp từ trái nghĩa (chỉ thời gian).",
+      "options": [
+        {
+          "key": "a",
+          "text": "sớm – muộn"
+        },
+        {
+          "key": "b",
+          "text": "trước – trên"
+        },
+        {
+          "key": "c",
+          "text": "trước – sau"
+        },
+        {
+          "key": "d",
+          "text": "sớm – mau"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Sớm – muộn, trước – sau trái ngược nhau.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-017",
+      "type": "true_false",
+      "prompt": "“Cao” và “thấp” là hai từ trái nghĩa.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Hai từ chỉ hai mức độ trái ngược.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-018",
+      "type": "true_false",
+      "prompt": "“Vui” và “buồn” là hai từ cùng nghĩa.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Chúng là hai từ trái nghĩa.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-019",
+      "type": "true_false",
+      "prompt": "Từ trái nghĩa với “đen” là “trắng”.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đen và trắng trái ngược nhau.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-020",
+      "type": "true_false",
+      "prompt": "“Nhanh” và “chậm” là hai từ đồng nghĩa.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Chúng là hai từ trái nghĩa.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-021",
+      "type": "fill_in",
+      "prompt": "Điền từ trái nghĩa với “nóng”: “Nước trong tủ lạnh rất ___.”",
+      "answer": {
+        "accepted": [
+          "lạnh"
+        ]
+      },
+      "explanation": "Nóng và lạnh trái nghĩa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-022",
+      "type": "fill_in",
+      "prompt": "Điền từ trái nghĩa với “cao”: “Cái ghế này rất ___.”",
+      "answer": {
+        "accepted": [
+          "thấp"
+        ]
+      },
+      "explanation": "Cao và thấp trái nghĩa.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-023",
+      "type": "fill_in",
+      "prompt": "Điền từ trái nghĩa với “vui”: “Nghe tin buồn, mẹ rất ___.”",
+      "answer": {
+        "accepted": [
+          "buồn"
+        ]
+      },
+      "explanation": "Vui và buồn trái nghĩa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-024",
+      "type": "fill_in",
+      "prompt": "Điền từ trái nghĩa với “sáng”: “Trời đã ___ nên em bật đèn.”",
+      "answer": {
+        "accepted": [
+          "tối"
+        ]
+      },
+      "explanation": "Sáng và tối trái nghĩa.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-2-tu-trai-nghia-025",
+      "type": "fill_in",
+      "prompt": "Điền từ trái nghĩa với “giỏi”: “Bạn ấy học còn ___ nên cần cố gắng.”",
+      "answer": {
+        "accepted": [
+          "kém",
+          "yếu"
+        ]
+      },
+      "explanation": "Giỏi và kém trái nghĩa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

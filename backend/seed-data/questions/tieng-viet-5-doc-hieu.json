@@ -1,0 +1,2537 @@
+{
+  "topic": {
+    "id": "tieng-viet-5-doc-hieu",
+    "subjectId": "tieng-viet",
+    "grade": 5,
+    "slug": "doc-hieu",
+    "name": "Đọc hiểu",
+    "sortOrder": 4
+  },
+  "questions": [
+    {
+      "id": "tieng-viet-5-doc-hieu-001",
+      "type": "single_choice",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Chuyện xảy ra vào lúc nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Tan học"
+        },
+        {
+          "key": "b",
+          "text": "Giờ ra chơi"
+        },
+        {
+          "key": "c",
+          "text": "Đêm khuya"
+        },
+        {
+          "key": "d",
+          "text": "Buổi sáng chủ nhật"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Tan học\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-002",
+      "type": "single_choice",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Lúc đó thời tiết thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nắng đẹp"
+        },
+        {
+          "key": "b",
+          "text": "Mưa rất to"
+        },
+        {
+          "key": "c",
+          "text": "Gió nhẹ"
+        },
+        {
+          "key": "d",
+          "text": "Trời lạnh"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Mưa rất to\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-003",
+      "type": "single_choice",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Nam thấy ai đang trú mưa bên gốc cây?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Một em bé"
+        },
+        {
+          "key": "b",
+          "text": "Một cô giáo"
+        },
+        {
+          "key": "c",
+          "text": "Một cụ già"
+        },
+        {
+          "key": "d",
+          "text": "Một bác nông dân"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Một cụ già\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-004",
+      "type": "single_choice",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Cụ già đang làm gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bán hàng"
+        },
+        {
+          "key": "b",
+          "text": "Ngồi nghỉ chân"
+        },
+        {
+          "key": "c",
+          "text": "Tưới cây"
+        },
+        {
+          "key": "d",
+          "text": "Ôm túi đồ và đứng trú mưa"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Ôm túi đồ và đứng trú mưa\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-005",
+      "type": "single_choice",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Nam đã làm gì để giúp cụ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Che ô và đưa cụ về nhà"
+        },
+        {
+          "key": "b",
+          "text": "Mời cụ vào lớp"
+        },
+        {
+          "key": "c",
+          "text": "Cho cụ tiền"
+        },
+        {
+          "key": "d",
+          "text": "Gọi người đến giúp"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Che ô và đưa cụ về nhà\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-006",
+      "type": "single_choice",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Cụ già khen Nam thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Là người khỏe mạnh"
+        },
+        {
+          "key": "b",
+          "text": "Là cậu bé ngoan"
+        },
+        {
+          "key": "c",
+          "text": "Là bạn tốt"
+        },
+        {
+          "key": "d",
+          "text": "Là học sinh giỏi"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Là cậu bé ngoan\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-007",
+      "type": "single_choice",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Vì sao cụ già cảm động?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Vì Nam học giỏi"
+        },
+        {
+          "key": "b",
+          "text": "Vì Nam tặng cụ quà"
+        },
+        {
+          "key": "c",
+          "text": "Vì Nam giúp cụ khi trời mưa"
+        },
+        {
+          "key": "d",
+          "text": "Vì Nam là hàng xóm"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Vì Nam giúp cụ khi trời mưa\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-008",
+      "type": "single_choice",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Sau khi giúp cụ, Nam cảm thấy thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Lo lắng"
+        },
+        {
+          "key": "b",
+          "text": "Buồn bã"
+        },
+        {
+          "key": "c",
+          "text": "Mệt mỏi"
+        },
+        {
+          "key": "d",
+          "text": "Lòng ấm áp"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Lòng ấm áp\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-009",
+      "type": "single_choice",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Ý chính của đoạn văn là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nam giúp cụ già khi trời mưa"
+        },
+        {
+          "key": "b",
+          "text": "Trời mưa rất to"
+        },
+        {
+          "key": "c",
+          "text": "Cụ già bị ốm"
+        },
+        {
+          "key": "d",
+          "text": "Nam đi học muộn"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Nam giúp cụ già khi trời mưa\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-010",
+      "type": "single_choice",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Qua đoạn văn, em thấy Nam là người thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Ích kỉ"
+        },
+        {
+          "key": "b",
+          "text": "Tốt bụng, biết giúp đỡ người khác"
+        },
+        {
+          "key": "c",
+          "text": "Nhút nhát"
+        },
+        {
+          "key": "d",
+          "text": "Lười biếng"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Tốt bụng, biết giúp đỡ người khác\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-011",
+      "type": "single_choice",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Chi tiết nào cho thấy Nam quan tâm đến cụ già?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cụ ôm túi đồ"
+        },
+        {
+          "key": "b",
+          "text": "Nam đi học về"
+        },
+        {
+          "key": "c",
+          "text": "Chạy đến che ô cho cụ"
+        },
+        {
+          "key": "d",
+          "text": "Trời mưa rất to"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Chạy đến che ô cho cụ\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-012",
+      "type": "single_choice",
+      "prompt": "Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ. Cây bàng trong đoạn văn được tả ở đâu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Công viên"
+        },
+        {
+          "key": "b",
+          "text": "Trước cửa nhà"
+        },
+        {
+          "key": "c",
+          "text": "Bên bờ sông"
+        },
+        {
+          "key": "d",
+          "text": "Sân trường"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Sân trường\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-013",
+      "type": "single_choice",
+      "prompt": "Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ. Mùa xuân, cành bàng thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nảy những lộc non xanh mướt"
+        },
+        {
+          "key": "b",
+          "text": "Nở hoa đỏ"
+        },
+        {
+          "key": "c",
+          "text": "Trút hết lá"
+        },
+        {
+          "key": "d",
+          "text": "Khô héo"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Nảy những lộc non xanh mướt\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-014",
+      "type": "single_choice",
+      "prompt": "Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ. Mùa hè, tán bàng được so sánh với gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cái quạt"
+        },
+        {
+          "key": "b",
+          "text": "Chiếc ô khổng lồ"
+        },
+        {
+          "key": "c",
+          "text": "Tấm thảm xanh"
+        },
+        {
+          "key": "d",
+          "text": "Mái nhà"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Chiếc ô khổng lồ\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-015",
+      "type": "single_choice",
+      "prompt": "Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ. Tán bàng che mát ở đâu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Trước cổng"
+        },
+        {
+          "key": "b",
+          "text": "Bên bờ ao"
+        },
+        {
+          "key": "c",
+          "text": "Cả khoảng sân"
+        },
+        {
+          "key": "d",
+          "text": "Cả ngôi trường"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Cả khoảng sân\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-016",
+      "type": "single_choice",
+      "prompt": "Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ. Giờ ra chơi, các bạn thường làm gì dưới gốc bàng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nhảy dây"
+        },
+        {
+          "key": "b",
+          "text": "Đá bóng"
+        },
+        {
+          "key": "c",
+          "text": "Học bài"
+        },
+        {
+          "key": "d",
+          "text": "Đọc truyện, chơi ô ăn quan"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Đọc truyện, chơi ô ăn quan\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-017",
+      "type": "single_choice",
+      "prompt": "Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ. Mùa đông, cây bàng thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Trút lá, còn cành khẳng khiu"
+        },
+        {
+          "key": "b",
+          "text": "Nở hoa"
+        },
+        {
+          "key": "c",
+          "text": "Xanh tốt"
+        },
+        {
+          "key": "d",
+          "text": "Ra quả"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Trút lá, còn cành khẳng khiu\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-018",
+      "type": "single_choice",
+      "prompt": "Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ. Vì sao bạn nhỏ yêu cây bàng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Vì cây cho quả ngọt"
+        },
+        {
+          "key": "b",
+          "text": "Vì cây gắn với kỉ niệm tuổi thơ"
+        },
+        {
+          "key": "c",
+          "text": "Vì cây có hoa đẹp"
+        },
+        {
+          "key": "d",
+          "text": "Vì cây rất thấp"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Vì cây gắn với kỉ niệm tuổi thơ\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-019",
+      "type": "single_choice",
+      "prompt": "Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ. Ý chính của đoạn văn là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Kể về mùa đông"
+        },
+        {
+          "key": "b",
+          "text": "Kể chuyện trồng cây"
+        },
+        {
+          "key": "c",
+          "text": "Tả cây bàng và tình cảm của bạn nhỏ với cây"
+        },
+        {
+          "key": "d",
+          "text": "Tả sân trường giờ ra chơi"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Tả cây bàng và tình cảm của bạn nhỏ với cây\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-020",
+      "type": "single_choice",
+      "prompt": "Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ. Từ 'khổng lồ' cho thấy tán bàng thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Rất cao"
+        },
+        {
+          "key": "b",
+          "text": "Rất nhỏ"
+        },
+        {
+          "key": "c",
+          "text": "Rất thấp"
+        },
+        {
+          "key": "d",
+          "text": "Rất lớn"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Rất lớn\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-021",
+      "type": "single_choice",
+      "prompt": "Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ. Đoạn văn tả cây bàng vào những mùa nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Xuân, hè, đông"
+        },
+        {
+          "key": "b",
+          "text": "Xuân, hạ, thu"
+        },
+        {
+          "key": "c",
+          "text": "Chỉ mùa hè"
+        },
+        {
+          "key": "d",
+          "text": "Hè, thu, đông"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Xuân, hè, đông\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-022",
+      "type": "single_choice",
+      "prompt": "Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ. Tình cảm của bạn nhỏ với cây bàng là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Ghét bỏ"
+        },
+        {
+          "key": "b",
+          "text": "Yêu quý"
+        },
+        {
+          "key": "c",
+          "text": "Thờ ơ"
+        },
+        {
+          "key": "d",
+          "text": "Sợ hãi"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Yêu quý\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-023",
+      "type": "single_choice",
+      "prompt": "Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo. Thỏ và Rùa thi gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Kéo co"
+        },
+        {
+          "key": "b",
+          "text": "Bơi thi"
+        },
+        {
+          "key": "c",
+          "text": "Chạy thi"
+        },
+        {
+          "key": "d",
+          "text": "Nhảy thi"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Chạy thi\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-024",
+      "type": "single_choice",
+      "prompt": "Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo. Thỏ nghĩ gì về khả năng của mình?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Mình yếu"
+        },
+        {
+          "key": "b",
+          "text": "Mình thông minh"
+        },
+        {
+          "key": "c",
+          "text": "Mình chạy chậm"
+        },
+        {
+          "key": "d",
+          "text": "Mình chạy nhanh"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Mình chạy nhanh\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-025",
+      "type": "single_choice",
+      "prompt": "Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo. Thỏ làm gì trong cuộc thi?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nằm ngủ dưới gốc cây"
+        },
+        {
+          "key": "b",
+          "text": "Nghỉ uống nước"
+        },
+        {
+          "key": "c",
+          "text": "Cổ vũ cho Rùa"
+        },
+        {
+          "key": "d",
+          "text": "Chạy không ngừng"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Nằm ngủ dưới gốc cây\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-026",
+      "type": "single_choice",
+      "prompt": "Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo. Rùa chạy với thái độ thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nhanh nhẹn"
+        },
+        {
+          "key": "b",
+          "text": "Chậm rãi nhưng không nản chí"
+        },
+        {
+          "key": "c",
+          "text": "Lo lắng"
+        },
+        {
+          "key": "d",
+          "text": "Kiêu ngạo"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Chậm rãi nhưng không nản chí\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-027",
+      "type": "single_choice",
+      "prompt": "Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo. Ai thắng cuộc?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cả hai"
+        },
+        {
+          "key": "b",
+          "text": "Thỏ"
+        },
+        {
+          "key": "c",
+          "text": "Rùa"
+        },
+        {
+          "key": "d",
+          "text": "Không ai"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Rùa\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-028",
+      "type": "single_choice",
+      "prompt": "Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo. Vì sao Thỏ thua?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Vì bị ốm"
+        },
+        {
+          "key": "b",
+          "text": "Vì không biết đường"
+        },
+        {
+          "key": "c",
+          "text": "Vì chạy chậm"
+        },
+        {
+          "key": "d",
+          "text": "Vì chủ quan, kiêu ngạo"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Vì chủ quan, kiêu ngạo\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-029",
+      "type": "single_choice",
+      "prompt": "Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo. Khi thua, Thỏ cảm thấy thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Xấu hổ"
+        },
+        {
+          "key": "b",
+          "text": "Bình thản"
+        },
+        {
+          "key": "c",
+          "text": "Tự hào"
+        },
+        {
+          "key": "d",
+          "text": "Vui vẻ"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Xấu hổ\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-030",
+      "type": "single_choice",
+      "prompt": "Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo. Ý chính của câu chuyện là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Thỏ chạy nhanh hơn Rùa"
+        },
+        {
+          "key": "b",
+          "text": "Kiên trì sẽ thắng, không nên kiêu ngạo"
+        },
+        {
+          "key": "c",
+          "text": "Rùa rất chậm"
+        },
+        {
+          "key": "d",
+          "text": "Thỏ ngủ rất ngon"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Kiên trì sẽ thắng, không nên kiêu ngạo\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-031",
+      "type": "single_choice",
+      "prompt": "Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo. Chi tiết 'ung dung nằm ngủ' cho thấy Thỏ thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cẩn thận"
+        },
+        {
+          "key": "b",
+          "text": "Chăm chỉ"
+        },
+        {
+          "key": "c",
+          "text": "Chủ quan"
+        },
+        {
+          "key": "d",
+          "text": "Khiêm tốn"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Chủ quan\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-032",
+      "type": "single_choice",
+      "prompt": "Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo. Từ nào tả bước đi của Rùa?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nhanh nhẹn"
+        },
+        {
+          "key": "b",
+          "text": "Vội vàng"
+        },
+        {
+          "key": "c",
+          "text": "Hấp tấp"
+        },
+        {
+          "key": "d",
+          "text": "Chậm rãi"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Chậm rãi\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-033",
+      "type": "single_choice",
+      "prompt": "Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng. Buổi sáng, biển được so sánh với gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Tấm thảm khổng lồ"
+        },
+        {
+          "key": "b",
+          "text": "Cánh đồng"
+        },
+        {
+          "key": "c",
+          "text": "Mái nhà"
+        },
+        {
+          "key": "d",
+          "text": "Chiếc gương"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Tấm thảm khổng lồ\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-034",
+      "type": "single_choice",
+      "prompt": "Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng. Buổi sáng, biển có màu gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Vàng óng"
+        },
+        {
+          "key": "b",
+          "text": "Xanh biếc"
+        },
+        {
+          "key": "c",
+          "text": "Trắng xóa"
+        },
+        {
+          "key": "d",
+          "text": "Đỏ thắm"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Xanh biếc\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-035",
+      "type": "single_choice",
+      "prompt": "Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng. Những con sóng vỗ vào đâu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bãi cỏ"
+        },
+        {
+          "key": "b",
+          "text": "Mũi thuyền"
+        },
+        {
+          "key": "c",
+          "text": "Bờ cát trắng"
+        },
+        {
+          "key": "d",
+          "text": "Ghềnh đá"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Bờ cát trắng\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-036",
+      "type": "single_choice",
+      "prompt": "Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng. Ngư dân đang làm gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Chèo thuyền"
+        },
+        {
+          "key": "b",
+          "text": "Xây nhà"
+        },
+        {
+          "key": "c",
+          "text": "Trồng cây"
+        },
+        {
+          "key": "d",
+          "text": "Kéo lưới"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Kéo lưới\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-037",
+      "type": "single_choice",
+      "prompt": "Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng. Xa xa có gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Những cánh buồm trắng"
+        },
+        {
+          "key": "b",
+          "text": "Những ngọn núi"
+        },
+        {
+          "key": "c",
+          "text": "Đàn cá"
+        },
+        {
+          "key": "d",
+          "text": "Cánh diều"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Những cánh buồm trắng\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-038",
+      "type": "single_choice",
+      "prompt": "Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng. Em cảm nhận được gì khi đứng trên bờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Mùi cỏ"
+        },
+        {
+          "key": "b",
+          "text": "Làn gió mặn mòi"
+        },
+        {
+          "key": "c",
+          "text": "Hơi nóng"
+        },
+        {
+          "key": "d",
+          "text": "Mùi hoa thơm"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Làn gió mặn mòi\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-039",
+      "type": "single_choice",
+      "prompt": "Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng. Tình cảm của em với biển thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Sợ biển"
+        },
+        {
+          "key": "b",
+          "text": "Thờ ơ"
+        },
+        {
+          "key": "c",
+          "text": "Yêu biển vô cùng"
+        },
+        {
+          "key": "d",
+          "text": "Không thích biển"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Yêu biển vô cùng\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-040",
+      "type": "single_choice",
+      "prompt": "Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng. Ý chính của đoạn văn là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Tả cánh đồng"
+        },
+        {
+          "key": "b",
+          "text": "Kể chuyện đi đánh cá"
+        },
+        {
+          "key": "c",
+          "text": "Kể về người ngư dân"
+        },
+        {
+          "key": "d",
+          "text": "Tả cảnh biển buổi sáng và tình cảm của em"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Tả cảnh biển buổi sáng và tình cảm của em\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-041",
+      "type": "single_choice",
+      "prompt": "Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng. Chi tiết nào cho thấy biển rất rộng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Biển như tấm thảm khổng lồ"
+        },
+        {
+          "key": "b",
+          "text": "Gió mặn"
+        },
+        {
+          "key": "c",
+          "text": "Cát trắng"
+        },
+        {
+          "key": "d",
+          "text": "Sóng lăn tăn"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Biển như tấm thảm khổng lồ\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-042",
+      "type": "single_choice",
+      "prompt": "Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng. Không khí ở bờ biển thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Im lặng"
+        },
+        {
+          "key": "b",
+          "text": "Rộn ràng"
+        },
+        {
+          "key": "c",
+          "text": "Buồn bã"
+        },
+        {
+          "key": "d",
+          "text": "Lạnh lẽo"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Rộn ràng\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-043",
+      "type": "single_choice",
+      "prompt": "Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích. Thư viện trường nằm ở đâu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Đầu dãy nhà"
+        },
+        {
+          "key": "b",
+          "text": "Bên bờ ao"
+        },
+        {
+          "key": "c",
+          "text": "Cuối dãy nhà"
+        },
+        {
+          "key": "d",
+          "text": "Trong sân"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Cuối dãy nhà\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-044",
+      "type": "single_choice",
+      "prompt": "Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích. Mỗi giờ ra chơi, các bạn đến thư viện làm gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Học vẽ"
+        },
+        {
+          "key": "b",
+          "text": "Chơi bóng"
+        },
+        {
+          "key": "c",
+          "text": "Tập hát"
+        },
+        {
+          "key": "d",
+          "text": "Đọc sách"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Đọc sách\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-045",
+      "type": "single_choice",
+      "prompt": "Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích. Ai hướng dẫn các bạn tìm sách?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cô thủ thư"
+        },
+        {
+          "key": "b",
+          "text": "Bạn lớp trưởng"
+        },
+        {
+          "key": "c",
+          "text": "Cô giáo chủ nhiệm"
+        },
+        {
+          "key": "d",
+          "text": "Bác bảo vệ"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Cô thủ thư\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-046",
+      "type": "single_choice",
+      "prompt": "Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích. Nhờ đọc nhiều, Lan tiến bộ thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Chạy nhanh hơn"
+        },
+        {
+          "key": "b",
+          "text": "Viết văn ngày càng hay"
+        },
+        {
+          "key": "c",
+          "text": "Hát hay hơn"
+        },
+        {
+          "key": "d",
+          "text": "Học toán giỏi hơn"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Viết văn ngày càng hay\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-047",
+      "type": "single_choice",
+      "prompt": "Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích. Lan được ai khen?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cô thủ thư"
+        },
+        {
+          "key": "b",
+          "text": "Bố mẹ"
+        },
+        {
+          "key": "c",
+          "text": "Cô giáo"
+        },
+        {
+          "key": "d",
+          "text": "Bạn bè"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Cô giáo\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-048",
+      "type": "single_choice",
+      "prompt": "Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích. Vì sao em thích đến thư viện?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Vì ở đó rất ồn ào"
+        },
+        {
+          "key": "b",
+          "text": "Vì ở đó có nhiều đồ ăn"
+        },
+        {
+          "key": "c",
+          "text": "Vì ở đó có sân chơi"
+        },
+        {
+          "key": "d",
+          "text": "Vì ở đó có nhiều điều bổ ích"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Vì ở đó có nhiều điều bổ ích\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-049",
+      "type": "single_choice",
+      "prompt": "Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích. Ý chính của đoạn văn là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Thư viện và lợi ích của việc đọc sách"
+        },
+        {
+          "key": "b",
+          "text": "Tả sân trường"
+        },
+        {
+          "key": "c",
+          "text": "Tả lớp học"
+        },
+        {
+          "key": "d",
+          "text": "Kể về giờ ra chơi"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Thư viện và lợi ích của việc đọc sách\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-050",
+      "type": "single_choice",
+      "prompt": "Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích. Cô thủ thư là người thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Khó khăn"
+        },
+        {
+          "key": "b",
+          "text": "Nhẹ nhàng"
+        },
+        {
+          "key": "c",
+          "text": "Nóng tính"
+        },
+        {
+          "key": "d",
+          "text": "Lạnh lùng"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Nhẹ nhàng\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-051",
+      "type": "single_choice",
+      "prompt": "Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích. Việc đọc sách đem lại điều gì cho Lan?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Chạy nhanh hơn"
+        },
+        {
+          "key": "b",
+          "text": "Vẽ đẹp hơn"
+        },
+        {
+          "key": "c",
+          "text": "Viết văn hay hơn"
+        },
+        {
+          "key": "d",
+          "text": "Nấu ăn giỏi hơn"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Viết văn hay hơn\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-052",
+      "type": "single_choice",
+      "prompt": "Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích. Đoạn văn nói về nơi nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Lớp học"
+        },
+        {
+          "key": "b",
+          "text": "Công viên"
+        },
+        {
+          "key": "c",
+          "text": "Sân trường"
+        },
+        {
+          "key": "d",
+          "text": "Thư viện trường"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Theo đoạn văn, đáp án là \"Thư viện trường\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-053",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa.\" Chọn tất cả các ý đúng về nhân vật Nam: Nam che ô cho cụ. Nam bỏ đi. Nam đưa cụ về nhà. Nam trêu cụ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nam đưa cụ về nhà."
+        },
+        {
+          "key": "b",
+          "text": "Nam bỏ đi."
+        },
+        {
+          "key": "c",
+          "text": "Nam trêu cụ."
+        },
+        {
+          "key": "d",
+          "text": "Nam che ô cho cụ."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về nhân vật Nam là: Nam che ô cho cụ. Nam đưa cụ về nhà.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-054",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa.\" Chọn tất cả các ý đúng về cụ già: Cụ đứng trú bên gốc cây. Cụ đi xe đạp. Cụ ôm túi đồ nặng. Cụ ngồi trong nhà.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cụ ôm túi đồ nặng."
+        },
+        {
+          "key": "b",
+          "text": "Cụ ngồi trong nhà."
+        },
+        {
+          "key": "c",
+          "text": "Cụ đứng trú bên gốc cây."
+        },
+        {
+          "key": "d",
+          "text": "Cụ đi xe đạp."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các ý đúng về cụ già là: Cụ đứng trú bên gốc cây. Cụ ôm túi đồ nặng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-055",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa.\" Chọn tất cả các ý đúng về việc làm của Nam: Che ô cho cụ. Cho cụ tiền. Đưa cụ về nhà. Mời cụ vào lớp.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Mời cụ vào lớp."
+        },
+        {
+          "key": "b",
+          "text": "Che ô cho cụ."
+        },
+        {
+          "key": "c",
+          "text": "Cho cụ tiền."
+        },
+        {
+          "key": "d",
+          "text": "Đưa cụ về nhà."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về việc làm của Nam là: Che ô cho cụ. Đưa cụ về nhà.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-056",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa.\" Chọn tất cả các ý đúng về cảm xúc sau câu chuyện: Cụ cảm động. Cụ tức giận. Nam thấy lòng ấm áp. Nam thấy buồn.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cụ tức giận."
+        },
+        {
+          "key": "b",
+          "text": "Nam thấy lòng ấm áp."
+        },
+        {
+          "key": "c",
+          "text": "Nam thấy buồn."
+        },
+        {
+          "key": "d",
+          "text": "Cụ cảm động."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về cảm xúc sau câu chuyện là: Cụ cảm động. Nam thấy lòng ấm áp.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-057",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ.\" Chọn tất cả các ý đúng về cây bàng: Cây bàng già ở sân trường. Cây bàng ở bờ sông. Mùa hè tán bàng xòe rộng. Mùa hè bàng trút lá.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Mùa hè tán bàng xòe rộng."
+        },
+        {
+          "key": "b",
+          "text": "Mùa hè bàng trút lá."
+        },
+        {
+          "key": "c",
+          "text": "Cây bàng ở bờ sông."
+        },
+        {
+          "key": "d",
+          "text": "Cây bàng già ở sân trường."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về cây bàng là: Cây bàng già ở sân trường. Mùa hè tán bàng xòe rộng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-058",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ.\" Chọn tất cả các ý đúng về cảnh mùa xuân: Cành bàng vươn dài. Lá bàng chuyển đỏ. Lộc non xanh mướt. Cành bàng khô héo.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cành bàng vươn dài."
+        },
+        {
+          "key": "b",
+          "text": "Lá bàng chuyển đỏ."
+        },
+        {
+          "key": "c",
+          "text": "Lộc non xanh mướt."
+        },
+        {
+          "key": "d",
+          "text": "Cành bàng khô héo."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các ý đúng về cảnh mùa xuân là: Cành bàng vươn dài. Lộc non xanh mướt.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-059",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ.\" Chọn tất cả các ý đúng về hoạt động giờ ra chơi: Các bạn đọc truyện dưới gốc bàng. Các bạn đá bóng. Các bạn chơi ô ăn quan. Các bạn chơi nhảy dây.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Các bạn chơi ô ăn quan."
+        },
+        {
+          "key": "b",
+          "text": "Các bạn đá bóng."
+        },
+        {
+          "key": "c",
+          "text": "Các bạn chơi nhảy dây."
+        },
+        {
+          "key": "d",
+          "text": "Các bạn đọc truyện dưới gốc bàng."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về hoạt động giờ ra chơi là: Các bạn đọc truyện dưới gốc bàng. Các bạn chơi ô ăn quan.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-060",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ.\" Chọn tất cả các ý đúng về tình cảm của bạn nhỏ: Yêu cây bàng. Ghét cây bàng. Nhớ kỉ niệm tuổi thơ. Muốn chặt cây bàng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Ghét cây bàng."
+        },
+        {
+          "key": "b",
+          "text": "Nhớ kỉ niệm tuổi thơ."
+        },
+        {
+          "key": "c",
+          "text": "Yêu cây bàng."
+        },
+        {
+          "key": "d",
+          "text": "Muốn chặt cây bàng."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các ý đúng về tình cảm của bạn nhỏ là: Yêu cây bàng. Nhớ kỉ niệm tuổi thơ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-061",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo.\" Chọn tất cả các ý đúng về cuộc thi: Thỏ và Rùa chạy thi. Thỏ và Rùa bơi thi. Rùa chậm rãi bước từng bước. Rùa chạy rất nhanh.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Rùa chậm rãi bước từng bước."
+        },
+        {
+          "key": "b",
+          "text": "Thỏ và Rùa chạy thi."
+        },
+        {
+          "key": "c",
+          "text": "Rùa chạy rất nhanh."
+        },
+        {
+          "key": "d",
+          "text": "Thỏ và Rùa bơi thi."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các ý đúng về cuộc thi là: Thỏ và Rùa chạy thi. Rùa chậm rãi bước từng bước.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-062",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo.\" Chọn tất cả các ý đúng về Thỏ: Thỏ chủ quan nằm ngủ. Thỏ kiên trì. Thỏ thua cuộc. Thỏ thắng cuộc.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Thỏ thua cuộc."
+        },
+        {
+          "key": "b",
+          "text": "Thỏ chủ quan nằm ngủ."
+        },
+        {
+          "key": "c",
+          "text": "Thỏ kiên trì."
+        },
+        {
+          "key": "d",
+          "text": "Thỏ thắng cuộc."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các ý đúng về Thỏ là: Thỏ chủ quan nằm ngủ. Thỏ thua cuộc.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-063",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo.\" Chọn tất cả các ý đúng về bài học: Không nên kiêu ngạo. Nên ngủ trong cuộc thi. Cần kiên trì. Nên coi thường bạn.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nên coi thường bạn."
+        },
+        {
+          "key": "b",
+          "text": "Nên ngủ trong cuộc thi."
+        },
+        {
+          "key": "c",
+          "text": "Không nên kiêu ngạo."
+        },
+        {
+          "key": "d",
+          "text": "Cần kiên trì."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về bài học là: Không nên kiêu ngạo. Cần kiên trì.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-064",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng.\" Chọn tất cả các ý đúng về cảnh biển: Biển xanh biếc. Biển đỏ rực. Sóng vỗ vào bờ cát trắng. Sóng vỗ vào mái nhà.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Biển đỏ rực."
+        },
+        {
+          "key": "b",
+          "text": "Biển xanh biếc."
+        },
+        {
+          "key": "c",
+          "text": "Sóng vỗ vào mái nhà."
+        },
+        {
+          "key": "d",
+          "text": "Sóng vỗ vào bờ cát trắng."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về cảnh biển là: Biển xanh biếc. Sóng vỗ vào bờ cát trắng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-065",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng.\" Chọn tất cả các ý đúng về ngư dân: Ngư dân kéo lưới. Ngư dân trồng lúa. Tiếng cười nói rộn ràng. Bờ biển im lặng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Ngư dân trồng lúa."
+        },
+        {
+          "key": "b",
+          "text": "Tiếng cười nói rộn ràng."
+        },
+        {
+          "key": "c",
+          "text": "Bờ biển im lặng."
+        },
+        {
+          "key": "d",
+          "text": "Ngư dân kéo lưới."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về ngư dân là: Ngư dân kéo lưới. Tiếng cười nói rộn ràng.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-066",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng.\" Chọn tất cả các ý đúng về tình cảm của em: Yêu biển vô cùng. Sợ biển. Thích gió mặn mòi. Không thích biển.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Thích gió mặn mòi."
+        },
+        {
+          "key": "b",
+          "text": "Yêu biển vô cùng."
+        },
+        {
+          "key": "c",
+          "text": "Sợ biển."
+        },
+        {
+          "key": "d",
+          "text": "Không thích biển."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các ý đúng về tình cảm của em là: Yêu biển vô cùng. Thích gió mặn mòi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-067",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích.\" Chọn tất cả các ý đúng về thư viện: Nằm ở cuối dãy nhà. Nằm giữa sân. Có nhiều sách. Không có sách.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Không có sách."
+        },
+        {
+          "key": "b",
+          "text": "Có nhiều sách."
+        },
+        {
+          "key": "c",
+          "text": "Nằm ở cuối dãy nhà."
+        },
+        {
+          "key": "d",
+          "text": "Nằm giữa sân."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các ý đúng về thư viện là: Nằm ở cuối dãy nhà. Có nhiều sách.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-068",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích.\" Chọn tất cả các ý đúng về cô thủ thư: Nhẹ nhàng. Nóng tính. Hướng dẫn các bạn tìm sách. Không giúp đỡ ai.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Hướng dẫn các bạn tìm sách."
+        },
+        {
+          "key": "b",
+          "text": "Không giúp đỡ ai."
+        },
+        {
+          "key": "c",
+          "text": "Nóng tính."
+        },
+        {
+          "key": "d",
+          "text": "Nhẹ nhàng."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về cô thủ thư là: Nhẹ nhàng. Hướng dẫn các bạn tìm sách.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-069",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: \"Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích.\" Chọn tất cả các ý đúng về lợi ích của việc đọc sách: Giúp Lan viết văn hay. Giúp Lan chạy nhanh. Đem lại nhiều điều bổ ích. Làm Lan buồn ngủ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Giúp Lan viết văn hay."
+        },
+        {
+          "key": "b",
+          "text": "Giúp Lan chạy nhanh."
+        },
+        {
+          "key": "c",
+          "text": "Làm Lan buồn ngủ."
+        },
+        {
+          "key": "d",
+          "text": "Đem lại nhiều điều bổ ích."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các ý đúng về lợi ích của việc đọc sách là: Giúp Lan viết văn hay. Đem lại nhiều điều bổ ích.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-070",
+      "type": "true_false",
+      "prompt": "Tan học, trời đổ mưa rất to.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ nhất.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-071",
+      "type": "true_false",
+      "prompt": "Nam thấy một em bé đứng trú mưa.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: Nam thấy một cụ già.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-072",
+      "type": "true_false",
+      "prompt": "Nam che ô và đưa cụ già về nhà.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ nhất.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-073",
+      "type": "true_false",
+      "prompt": "Cụ già khen Nam là học sinh giỏi.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: cụ khen Nam là cậu bé ngoan.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-074",
+      "type": "true_false",
+      "prompt": "Sân trường có một cây bàng già.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ hai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-075",
+      "type": "true_false",
+      "prompt": "Mùa hè, tán bàng trút hết lá.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: mùa đông bàng mới trút lá.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-076",
+      "type": "true_false",
+      "prompt": "Mùa đông, cây bàng chỉ còn cành khẳng khiu.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ hai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-077",
+      "type": "true_false",
+      "prompt": "Bạn nhỏ không yêu cây bàng.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: bạn nhỏ rất yêu cây bàng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-078",
+      "type": "true_false",
+      "prompt": "Thỏ và Rùa cùng chạy thi.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ ba.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-079",
+      "type": "true_false",
+      "prompt": "Rùa nản chí nên dừng lại.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: Rùa không nản chí.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-080",
+      "type": "true_false",
+      "prompt": "Rùa thắng cuộc vì kiên trì.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ ba.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-081",
+      "type": "true_false",
+      "prompt": "Buổi sáng, biển xanh biếc.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ tư.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-082",
+      "type": "true_false",
+      "prompt": "Ngư dân đang trồng cây.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: ngư dân đang kéo lưới.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-083",
+      "type": "true_false",
+      "prompt": "Em rất yêu biển.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ tư.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-084",
+      "type": "true_false",
+      "prompt": "Thư viện trường nằm ở cuối dãy nhà.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ năm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-085",
+      "type": "true_false",
+      "prompt": "Cô thủ thư rất nóng tính.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: cô thủ thư nhẹ nhàng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-086",
+      "type": "true_false",
+      "prompt": "Nhờ đọc nhiều, Lan viết văn ngày càng hay.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đoạn văn thứ năm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-087",
+      "type": "fill_in",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Nam thấy một cụ già đang đứng trú bên gốc ___.",
+      "answer": {
+        "accepted": [
+          "cây"
+        ]
+      },
+      "explanation": "Cụ già đứng trú bên gốc cây.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-088",
+      "type": "fill_in",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Nam liền chạy đến ___ ô cho cụ.",
+      "answer": {
+        "accepted": [
+          "che"
+        ]
+      },
+      "explanation": "Nam chạy đến che ô cho cụ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-089",
+      "type": "fill_in",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Cụ khen Nam là một cậu bé ___.",
+      "answer": {
+        "accepted": [
+          "ngoan"
+        ]
+      },
+      "explanation": "Cụ khen Nam là cậu bé ngoan.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-090",
+      "type": "fill_in",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Nam thấy lòng ___ áp.",
+      "answer": {
+        "accepted": [
+          "ấm"
+        ]
+      },
+      "explanation": "Nam thấy lòng ấm áp.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-091",
+      "type": "fill_in",
+      "prompt": "Tan học, trời bỗng đổ mưa rất to. Nam thấy một cụ già đang đứng trú bên gốc cây, tay ôm túi đồ nặng. Nam liền chạy đến, che ô cho cụ và đưa cụ về tận nhà. Cụ cảm động nắm tay Nam, khen em là một cậu bé ngoan. Nam thấy lòng ấm áp dù trời vẫn mưa. Tan học, trời bỗng đổ ___ rất to.",
+      "answer": {
+        "accepted": [
+          "mưa"
+        ]
+      },
+      "explanation": "Trời đổ mưa rất to.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-092",
+      "type": "fill_in",
+      "prompt": "Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ. Sân trường em có một cây ___ già.",
+      "answer": {
+        "accepted": [
+          "bàng"
+        ]
+      },
+      "explanation": "Sân trường có cây bàng già.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-093",
+      "type": "fill_in",
+      "prompt": "Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ. Mùa hè, tán bàng xòe rộng như chiếc ___ khổng lồ.",
+      "answer": {
+        "accepted": [
+          "ô"
+        ]
+      },
+      "explanation": "Tán bàng như chiếc ô khổng lồ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-094",
+      "type": "fill_in",
+      "prompt": "Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ. Mùa đông, bàng trút ___.",
+      "answer": {
+        "accepted": [
+          "lá"
+        ]
+      },
+      "explanation": "Mùa đông bàng trút lá.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-095",
+      "type": "fill_in",
+      "prompt": "Sân trường em có một cây bàng già. Mùa xuân, cành bàng vươn dài, nảy những lộc non xanh mướt. Mùa hè, tán bàng xòe rộng như chiếc ô khổng lồ, che mát cả khoảng sân. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện, chơi ô ăn quan. Mùa đông, bàng trút lá, chỉ còn những cành khẳng khiu. Em rất yêu cây bàng ấy vì nó gắn với bao kỉ niệm tuổi thơ. Em rất ___ cây bàng.",
+      "answer": {
+        "accepted": [
+          "yêu"
+        ]
+      },
+      "explanation": "Em rất yêu cây bàng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-096",
+      "type": "fill_in",
+      "prompt": "Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo. Thỏ và Rùa cùng ___ thi.",
+      "answer": {
+        "accepted": [
+          "chạy"
+        ]
+      },
+      "explanation": "Thỏ và Rùa cùng chạy thi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-097",
+      "type": "fill_in",
+      "prompt": "Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo. Thỏ ung dung nằm ___ dưới gốc cây.",
+      "answer": {
+        "accepted": [
+          "ngủ"
+        ]
+      },
+      "explanation": "Thỏ nằm ngủ dưới gốc cây.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-098",
+      "type": "fill_in",
+      "prompt": "Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo. Rùa không ___ chí.",
+      "answer": {
+        "accepted": [
+          "nản"
+        ]
+      },
+      "explanation": "Rùa không nản chí.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-099",
+      "type": "fill_in",
+      "prompt": "Thỏ và Rùa cùng chạy thi. Thỏ nghĩ mình chạy nhanh nên ung dung nằm ngủ dưới gốc cây. Rùa không nản chí, cứ chậm rãi bước từng bước. Khi Thỏ tỉnh dậy thì Rùa đã gần đến đích. Cuối cùng, Rùa về trước và thắng cuộc. Thỏ xấu hổ vì đã chủ quan, kiêu ngạo. Cuối cùng, ___ về trước và thắng cuộc.",
+      "answer": {
+        "accepted": [
+          "Rùa"
+        ]
+      },
+      "explanation": "Rùa về trước và thắng cuộc.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-100",
+      "type": "fill_in",
+      "prompt": "Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng. Buổi sáng, biển xanh biếc như tấm ___ khổng lồ.",
+      "answer": {
+        "accepted": [
+          "thảm"
+        ]
+      },
+      "explanation": "Biển như tấm thảm khổng lồ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-101",
+      "type": "fill_in",
+      "prompt": "Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng. Ngư dân kéo ___.",
+      "answer": {
+        "accepted": [
+          "lưới"
+        ]
+      },
+      "explanation": "Ngư dân kéo lưới.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-102",
+      "type": "fill_in",
+      "prompt": "Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng. Xa xa, những cánh ___ trắng nối nhau ra khơi.",
+      "answer": {
+        "accepted": [
+          "buồm"
+        ]
+      },
+      "explanation": "Những cánh buồm trắng ra khơi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-103",
+      "type": "fill_in",
+      "prompt": "Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng. Em thấy yêu biển vô ___.",
+      "answer": {
+        "accepted": [
+          "cùng"
+        ]
+      },
+      "explanation": "Em yêu biển vô cùng.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-104",
+      "type": "fill_in",
+      "prompt": "Buổi sáng, biển xanh biếc như tấm thảm khổng lồ. Những con sóng nhỏ lăn tăn vỗ vào bờ cát trắng. Ngư dân kéo lưới, tiếng cười nói rộn ràng. Xa xa, những cánh buồm trắng nối nhau ra khơi. Em đứng trên bờ, hít căng lồng ngực làn gió mặn mòi và thấy yêu biển vô cùng. Những con sóng nhỏ lăn tăn vỗ vào bờ ___ trắng.",
+      "answer": {
+        "accepted": [
+          "cát"
+        ]
+      },
+      "explanation": "Sóng vỗ vào bờ cát trắng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-105",
+      "type": "fill_in",
+      "prompt": "Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích. Thư viện trường em nằm ở cuối ___ nhà.",
+      "answer": {
+        "accepted": [
+          "dãy"
+        ]
+      },
+      "explanation": "Thư viện nằm ở cuối dãy nhà.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-106",
+      "type": "fill_in",
+      "prompt": "Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích. Cô thủ thư luôn ___ nhàng hướng dẫn các bạn.",
+      "answer": {
+        "accepted": [
+          "nhẹ"
+        ]
+      },
+      "explanation": "Cô thủ thư nhẹ nhàng hướng dẫn.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-107",
+      "type": "fill_in",
+      "prompt": "Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích. Nhờ đọc nhiều, Lan viết ___ ngày càng hay.",
+      "answer": {
+        "accepted": [
+          "văn"
+        ]
+      },
+      "explanation": "Lan viết văn ngày càng hay.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-doc-hieu-108",
+      "type": "fill_in",
+      "prompt": "Thư viện trường em nằm ở cuối dãy nhà. Mỗi giờ ra chơi, nhiều bạn lại đến đây đọc sách. Cô thủ thư luôn nhẹ nhàng hướng dẫn các bạn tìm sách. Nhờ đọc nhiều, Lan viết văn ngày càng hay và được cô giáo khen. Em cũng thích đến thư viện vì ở đó có nhiều điều bổ ích. Em thích đến thư viện vì ở đó có nhiều điều ___ ích.",
+      "answer": {
+        "accepted": [
+          "bổ"
+        ]
+      },
+      "explanation": "Ở thư viện có nhiều điều bổ ích.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

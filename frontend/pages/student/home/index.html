@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trang chủ — Bé Học Vui</title>
+  <link rel="icon" href="/assets/avatars/cu.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
+</head>
+<body>
+  <header id="app-header"></header>
+  <main class="page">
+    <section class="hero">
+      <img class="avatar avatar-lg" id="hero-avatar" src="/assets/avatars/meo.svg" alt="">
+      <div class="hero-text">
+        <p class="eyebrow">Chào con!</p>
+        <h1 id="greeting">Chào con, bạn nhỏ!</h1>
+        <p id="grade-line">Hôm nay mình cùng học nhé!</p>
+      </div>
+    </section>
+
+    <section class="grid grid-3" aria-label="Chọn môn học">
+      <a class="subject-card subject-toan" href="/pages/student/practice/?subject=toan">
+        <div><h3>Toán</h3><p>Luyện tính toán và tư duy</p></div>
+        <span aria-hidden="true">🔢 →</span>
+      </a>
+      <a class="subject-card subject-tieng-viet" href="/pages/student/practice/?subject=tieng-viet">
+        <div><h3>Tiếng Việt</h3><p>Đọc hiểu và từ ngữ</p></div>
+        <span aria-hidden="true">📖 →</span>
+      </a>
+      <a class="subject-card subject-tieng-anh" href="/pages/student/practice/?subject=tieng-anh">
+        <div><h3>Tiếng Anh</h3><p>Từ vựng và mẫu câu</p></div>
+        <span aria-hidden="true">🌍 →</span>
+      </a>
+    </section>
+
+    <div class="grid grid-2" style="margin-top:1rem">
+      <section class="card">
+        <div class="card-head"><h2>Kim cương của con</h2><a href="/pages/student/diamonds/">Xem</a></div>
+        <div class="grid grid-3">
+          <div class="stat"><strong id="diamond-total">0</strong><span>Tổng</span></div>
+          <div class="stat"><strong id="diamond-week">0</strong><span>Tuần này</span></div>
+          <div class="stat"><strong id="diamond-month">0</strong><span>Tháng này</span></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-head"><h2>Mau vào học</h2></div>
+        <div class="quick-list">
+          <a class="quick-link" href="/pages/student/practice/"><span class="quick-icon">✏️</span> Luyện tập 10 câu <span class="quick-arrow">→</span></a>
+          <a class="quick-link" href="/pages/student/exam/"><span class="quick-icon">⏱️</span> Thi 20 câu / 15 phút <span class="quick-arrow">→</span></a>
+          <a class="quick-link" href="/pages/student/challenge/"><span class="quick-icon">⚔️</span> Thách đấu bạn bè hoặc Robot <span class="quick-arrow">→</span></a>
+          <a class="quick-link" href="/pages/student/leaderboard/"><span class="quick-icon">🏆</span> Bảng xếp hạng <span class="quick-arrow">→</span></a>
+        </div>
+      </section>
+    </div>
+
+    <section class="card">
+      <div class="card-head"><h2>Hoạt động gần đây</h2><a href="/pages/student/history/">Tất cả</a></div>
+      <div id="recent-activity"><div class="loading">Đang tải…</div></div>
+    </section>
+  </main>
+  <script type="module" src="/assets/js/home.js"></script>
+</body>
+</html>

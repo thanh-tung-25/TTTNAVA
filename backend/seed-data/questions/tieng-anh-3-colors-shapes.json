@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "tieng-anh-3-colors-shapes",
+    "subjectId": "tieng-anh",
+    "grade": 3,
+    "slug": "colors-shapes",
+    "name": "Màu sắc và hình khối",
+    "sortOrder": 1
+  },
+  "questions": [
+    {
+      "id": "tieng-anh-3-colors-shapes-001",
+      "type": "single_choice",
+      "prompt": "“Màu đỏ” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "red"
+        },
+        {
+          "key": "b",
+          "text": "green"
+        },
+        {
+          "key": "c",
+          "text": "yellow"
+        },
+        {
+          "key": "d",
+          "text": "blue"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Red” là màu đỏ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-002",
+      "type": "single_choice",
+      "prompt": "“Màu xanh dương” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "green"
+        },
+        {
+          "key": "b",
+          "text": "blue"
+        },
+        {
+          "key": "c",
+          "text": "red"
+        },
+        {
+          "key": "d",
+          "text": "black"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Blue” là màu xanh dương.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-003",
+      "type": "single_choice",
+      "prompt": "“Màu xanh lá” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "blue"
+        },
+        {
+          "key": "b",
+          "text": "brown"
+        },
+        {
+          "key": "c",
+          "text": "green"
+        },
+        {
+          "key": "d",
+          "text": "yellow"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Green” là màu xanh lá.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-004",
+      "type": "single_choice",
+      "prompt": "“Màu vàng” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "white"
+        },
+        {
+          "key": "b",
+          "text": "orange"
+        },
+        {
+          "key": "c",
+          "text": "red"
+        },
+        {
+          "key": "d",
+          "text": "yellow"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Yellow” là màu vàng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-005",
+      "type": "single_choice",
+      "prompt": "“Màu tím” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "purple"
+        },
+        {
+          "key": "b",
+          "text": "blue"
+        },
+        {
+          "key": "c",
+          "text": "brown"
+        },
+        {
+          "key": "d",
+          "text": "pink"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Purple” là màu tím.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-006",
+      "type": "single_choice",
+      "prompt": "“Màu hồng” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "red"
+        },
+        {
+          "key": "b",
+          "text": "pink"
+        },
+        {
+          "key": "c",
+          "text": "purple"
+        },
+        {
+          "key": "d",
+          "text": "white"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Pink” là màu hồng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-007",
+      "type": "single_choice",
+      "prompt": "“Màu nâu” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "black"
+        },
+        {
+          "key": "b",
+          "text": "orange"
+        },
+        {
+          "key": "c",
+          "text": "brown"
+        },
+        {
+          "key": "d",
+          "text": "green"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Brown” là màu nâu.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-008",
+      "type": "single_choice",
+      "prompt": "“Màu trắng” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "pink"
+        },
+        {
+          "key": "b",
+          "text": "black"
+        },
+        {
+          "key": "c",
+          "text": "yellow"
+        },
+        {
+          "key": "d",
+          "text": "white"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“White” là màu trắng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-009",
+      "type": "single_choice",
+      "prompt": "“Hình tròn” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "circle"
+        },
+        {
+          "key": "b",
+          "text": "triangle"
+        },
+        {
+          "key": "c",
+          "text": "star"
+        },
+        {
+          "key": "d",
+          "text": "square"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Circle” là hình tròn.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-010",
+      "type": "single_choice",
+      "prompt": "“Hình vuông” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "circle"
+        },
+        {
+          "key": "b",
+          "text": "square"
+        },
+        {
+          "key": "c",
+          "text": "rectangle"
+        },
+        {
+          "key": "d",
+          "text": "star"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Square” là hình vuông.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-011",
+      "type": "single_choice",
+      "prompt": "“Hình tam giác” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "circle"
+        },
+        {
+          "key": "b",
+          "text": "square"
+        },
+        {
+          "key": "c",
+          "text": "triangle"
+        },
+        {
+          "key": "d",
+          "text": "rectangle"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Triangle” là hình tam giác.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-012",
+      "type": "single_choice",
+      "prompt": "“Ngôi sao” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "circle"
+        },
+        {
+          "key": "b",
+          "text": "square"
+        },
+        {
+          "key": "c",
+          "text": "triangle"
+        },
+        {
+          "key": "d",
+          "text": "star"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Star” là ngôi sao.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ chỉ màu sắc.",
+      "options": [
+        {
+          "key": "a",
+          "text": "circle"
+        },
+        {
+          "key": "b",
+          "text": "square"
+        },
+        {
+          "key": "c",
+          "text": "yellow"
+        },
+        {
+          "key": "d",
+          "text": "red"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "“Red” và “yellow” là màu sắc.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ chỉ hình khối.",
+      "options": [
+        {
+          "key": "a",
+          "text": "purple"
+        },
+        {
+          "key": "b",
+          "text": "blue"
+        },
+        {
+          "key": "c",
+          "text": "rectangle"
+        },
+        {
+          "key": "d",
+          "text": "triangle"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "“Triangle” và “rectangle” là hình khối.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn các màu thường thấy ở lá cây và bầu trời.",
+      "options": [
+        {
+          "key": "a",
+          "text": "brown"
+        },
+        {
+          "key": "b",
+          "text": "green"
+        },
+        {
+          "key": "c",
+          "text": "pink"
+        },
+        {
+          "key": "d",
+          "text": "blue"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Lá cây màu xanh lá, bầu trời màu xanh dương.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn các cặp từ tiếng Anh – tiếng Việt đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "black – đen"
+        },
+        {
+          "key": "b",
+          "text": "white – trắng"
+        },
+        {
+          "key": "c",
+          "text": "red – xanh"
+        },
+        {
+          "key": "d",
+          "text": "green – vàng"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "“White” là trắng, “black” là đen; “red” là đỏ, “green” là xanh lá.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-017",
+      "type": "true_false",
+      "prompt": "“Red” là màu đỏ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, “red” là màu đỏ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-018",
+      "type": "true_false",
+      "prompt": "“Blue” là màu vàng.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, “blue” là xanh dương; vàng là “yellow”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-019",
+      "type": "true_false",
+      "prompt": "“Square” là hình vuông.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, “square” là hình vuông.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-020",
+      "type": "true_false",
+      "prompt": "“Circle” là hình tam giác.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, “circle” là hình tròn; tam giác là “triangle”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-021",
+      "type": "fill_in",
+      "prompt": "Điền màu còn thiếu: “The sun is ___.” (vàng)",
+      "answer": {
+        "accepted": [
+          "yellow"
+        ]
+      },
+      "explanation": "Mặt trời màu vàng – “yellow”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-022",
+      "type": "fill_in",
+      "prompt": "Điền màu còn thiếu: “The leaf is ___.” (xanh lá)",
+      "answer": {
+        "accepted": [
+          "green"
+        ]
+      },
+      "explanation": "Lá cây màu xanh lá – “green”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-023",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “A ___ has three sides.” (hình tam giác)",
+      "answer": {
+        "accepted": [
+          "triangle"
+        ]
+      },
+      "explanation": "“Triangle” có ba cạnh.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-024",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “My ball is round like a ___.” (hình tròn)",
+      "answer": {
+        "accepted": [
+          "circle"
+        ]
+      },
+      "explanation": "“Circle” là hình tròn.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-colors-shapes-025",
+      "type": "fill_in",
+      "prompt": "Điền màu còn thiếu: “Snow is ___.” (trắng)",
+      "answer": {
+        "accepted": [
+          "white"
+        ]
+      },
+      "explanation": "Tuyết màu trắng – “white”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

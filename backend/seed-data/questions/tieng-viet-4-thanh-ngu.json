@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "tieng-viet-4-thanh-ngu",
+    "subjectId": "tieng-viet",
+    "grade": 4,
+    "slug": "thanh-ngu",
+    "name": "Thành ngữ, tục ngữ",
+    "sortOrder": 6
+  },
+  "questions": [
+    {
+      "id": "tieng-viet-4-thanh-ngu-001",
+      "type": "single_choice",
+      "prompt": "Câu “Có công mài sắt, có ngày nên kim” khuyên ta điều gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Kiên trì thì sẽ thành công"
+        },
+        {
+          "key": "b",
+          "text": "Phải làm việc thật nhanh"
+        },
+        {
+          "key": "c",
+          "text": "Không cần cố gắng"
+        },
+        {
+          "key": "d",
+          "text": "Chỉ nên làm việc dễ"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Câu tục ngữ khuyên phải bền bỉ, không nản.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-002",
+      "type": "single_choice",
+      "prompt": "Thành ngữ “đồng cam cộng khổ” nói về điều gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cùng ăn cam"
+        },
+        {
+          "key": "b",
+          "text": "Cùng chia sẻ vui buồn, khó khăn"
+        },
+        {
+          "key": "c",
+          "text": "Sống xa cách nhau"
+        },
+        {
+          "key": "d",
+          "text": "Mỗi người một việc"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Đồng cam cộng khổ” là cùng chịu đựng, chia sẻ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-003",
+      "type": "single_choice",
+      "prompt": "Câu “Uống nước nhớ nguồn” khuyên ta điều gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Giữ nguồn nước sạch"
+        },
+        {
+          "key": "b",
+          "text": "Uống nhiều nước"
+        },
+        {
+          "key": "c",
+          "text": "Biết ơn người đi trước"
+        },
+        {
+          "key": "d",
+          "text": "Nhớ đường về nhà"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Câu tục ngữ nói về lòng biết ơn.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-004",
+      "type": "single_choice",
+      "prompt": "“Lá lành đùm lá rách” nói về truyền thống nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Hiếu học"
+        },
+        {
+          "key": "b",
+          "text": "Tôn sư trọng đạo"
+        },
+        {
+          "key": "c",
+          "text": "Yêu lao động"
+        },
+        {
+          "key": "d",
+          "text": "Tương thân tương ái"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Câu tục ngữ khuyên người khá giúp người khó.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-005",
+      "type": "single_choice",
+      "prompt": "Câu “Một nắng hai sương” tả điều gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Sự vất vả, chịu thương chịu khó"
+        },
+        {
+          "key": "b",
+          "text": "Công việc nhàn hạ"
+        },
+        {
+          "key": "c",
+          "text": "Một ngày có nắng"
+        },
+        {
+          "key": "d",
+          "text": "Thời tiết thay đổi"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Thành ngữ tả nỗi vất vả của người lao động.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-006",
+      "type": "single_choice",
+      "prompt": "“Nhanh như cắt” thường dùng để tả gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Rất khỏe"
+        },
+        {
+          "key": "b",
+          "text": "Rất nhanh"
+        },
+        {
+          "key": "c",
+          "text": "Rất khéo"
+        },
+        {
+          "key": "d",
+          "text": "Rất chậm"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Cắt” là loài chim bay rất nhanh.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-007",
+      "type": "single_choice",
+      "prompt": "Câu “Đi một ngày đàng, học một sàng khôn” khuyên ta điều gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Học nhiều sách vở"
+        },
+        {
+          "key": "b",
+          "text": "Đi thật nhanh"
+        },
+        {
+          "key": "c",
+          "text": "Đi đây đi đó để mở mang hiểu biết"
+        },
+        {
+          "key": "d",
+          "text": "Ở nhà học bài"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đi nhiều nơi giúp ta học được nhiều điều.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-008",
+      "type": "single_choice",
+      "prompt": "Thành ngữ “chậm như rùa” dùng để tả ai?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Người chạy rất nhanh"
+        },
+        {
+          "key": "b",
+          "text": "Người rất khỏe"
+        },
+        {
+          "key": "c",
+          "text": "Người rất khéo"
+        },
+        {
+          "key": "d",
+          "text": "Người làm việc rất chậm"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Rùa vốn chậm chạp nên được dùng để so sánh.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-009",
+      "type": "single_choice",
+      "prompt": "“Ăn quả nhớ kẻ trồng cây” gần nghĩa với câu nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Uống nước nhớ nguồn"
+        },
+        {
+          "key": "b",
+          "text": "Có công mài sắt, có ngày nên kim"
+        },
+        {
+          "key": "c",
+          "text": "Lá lành đùm lá rách"
+        },
+        {
+          "key": "d",
+          "text": "Đi một ngày đàng, học một sàng khôn"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Cả hai câu đều nói về lòng biết ơn.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-010",
+      "type": "single_choice",
+      "prompt": "Câu “Tấc đất tấc vàng” nói về điều gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Vàng ở trong đất"
+        },
+        {
+          "key": "b",
+          "text": "Đất đai rất quý giá"
+        },
+        {
+          "key": "c",
+          "text": "Đất rất rộng"
+        },
+        {
+          "key": "d",
+          "text": "Vàng rất đắt"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Câu tục ngữ đề cao giá trị của đất.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-011",
+      "type": "single_choice",
+      "prompt": "Thành ngữ “như cá gặp nước” tả tâm trạng nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Buồn bã, lo lắng"
+        },
+        {
+          "key": "b",
+          "text": "Sợ hãi"
+        },
+        {
+          "key": "c",
+          "text": "Vui vẻ, thoải mái"
+        },
+        {
+          "key": "d",
+          "text": "Mệt mỏi"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Cá gặp nước thì tung tăng, thích hợp.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-012",
+      "type": "single_choice",
+      "prompt": "Câu “Thương người như thể thương thân” khuyên ta điều gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Không cần giúp ai"
+        },
+        {
+          "key": "b",
+          "text": "Chỉ lo cho bản thân"
+        },
+        {
+          "key": "c",
+          "text": "Thương mình trước tiên"
+        },
+        {
+          "key": "d",
+          "text": "Yêu thương người khác như chính mình"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Câu tục ngữ dạy lòng nhân ái.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các câu tục ngữ nói về lòng biết ơn.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Uống nước nhớ nguồn"
+        },
+        {
+          "key": "b",
+          "text": "Ăn quả nhớ kẻ trồng cây"
+        },
+        {
+          "key": "c",
+          "text": "Đi một ngày đàng, học một sàng khôn"
+        },
+        {
+          "key": "d",
+          "text": "Có công mài sắt, có ngày nên kim"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Hai câu đầu nói về lòng biết ơn.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các thành ngữ chỉ sự chăm chỉ, chịu khó.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nhàn hạ như tiên"
+        },
+        {
+          "key": "b",
+          "text": "Thức khuya dậy sớm"
+        },
+        {
+          "key": "c",
+          "text": "Ngủ ngày cày đêm"
+        },
+        {
+          "key": "d",
+          "text": "Một nắng hai sương"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "“Một nắng hai sương”, “thức khuya dậy sớm” chỉ sự vất vả, chăm chỉ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các câu nói về tình yêu thương con người.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Thương người như thể thương thân"
+        },
+        {
+          "key": "b",
+          "text": "Tấc đất tấc vàng"
+        },
+        {
+          "key": "c",
+          "text": "Nhanh như cắt"
+        },
+        {
+          "key": "d",
+          "text": "Lá lành đùm lá rách"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Hai câu đầu nói về tình thương người.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các thành ngữ so sánh.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Uống nước nhớ nguồn"
+        },
+        {
+          "key": "b",
+          "text": "Chậm như rùa"
+        },
+        {
+          "key": "c",
+          "text": "Một nắng hai sương"
+        },
+        {
+          "key": "d",
+          "text": "Nhanh như cắt"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Hai thành ngữ đầu có từ “như” để so sánh.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-017",
+      "type": "true_false",
+      "prompt": "“Có công mài sắt, có ngày nên kim” khuyên ta kiên trì.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Câu tục ngữ đề cao sự bền bỉ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-018",
+      "type": "true_false",
+      "prompt": "“Uống nước nhớ nguồn” nói về lòng biết ơn.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Câu tục ngữ nhắc nhớ người đi trước.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-019",
+      "type": "true_false",
+      "prompt": "“Nhanh như cắt” dùng để tả người đi rất chậm.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "“Nhanh như cắt” tả sự rất nhanh.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-020",
+      "type": "true_false",
+      "prompt": "“Lá lành đùm lá rách” nói về sự ích kỉ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Câu tục ngữ nói về sự tương thân tương ái.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-021",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: “Uống nước nhớ ___.”",
+      "answer": {
+        "accepted": [
+          "nguồn"
+        ]
+      },
+      "explanation": "Câu đầy đủ là “Uống nước nhớ nguồn”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-022",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: “Có công mài ___, có ngày nên kim.”",
+      "answer": {
+        "accepted": [
+          "sắt"
+        ]
+      },
+      "explanation": "Câu đầy đủ là “Có công mài sắt, có ngày nên kim”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-023",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: “Lá lành ___ lá rách.”",
+      "answer": {
+        "accepted": [
+          "đùm"
+        ]
+      },
+      "explanation": "Câu đầy đủ là “Lá lành đùm lá rách”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-024",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: “Đi một ngày ___, học một sàng khôn.”",
+      "answer": {
+        "accepted": [
+          "đàng"
+        ]
+      },
+      "explanation": "Câu đầy đủ là “Đi một ngày đàng, học một sàng khôn”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-4-thanh-ngu-025",
+      "type": "fill_in",
+      "prompt": "Điền từ còn thiếu: “Nhanh như ___.”",
+      "answer": {
+        "accepted": [
+          "cắt"
+        ]
+      },
+      "explanation": "Thành ngữ là “Nhanh như cắt”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

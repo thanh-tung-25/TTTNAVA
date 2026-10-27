@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "toan-2-cong-tru-100",
+    "subjectId": "toan",
+    "grade": 2,
+    "slug": "cong-tru-100",
+    "name": "Cộng trừ trong phạm vi 100",
+    "sortOrder": 1
+  },
+  "questions": [
+    {
+      "id": "toan-2-cong-tru-100-001",
+      "type": "single_choice",
+      "prompt": "Tính: 34 + 25 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "59"
+        },
+        {
+          "key": "b",
+          "text": "58"
+        },
+        {
+          "key": "c",
+          "text": "61"
+        },
+        {
+          "key": "d",
+          "text": "60"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "34 + 25 = 59.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-cong-tru-100-002",
+      "type": "single_choice",
+      "prompt": "Tính: 68 - 24 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "45"
+        },
+        {
+          "key": "b",
+          "text": "44"
+        },
+        {
+          "key": "c",
+          "text": "46"
+        },
+        {
+          "key": "d",
+          "text": "43"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "68 - 24 = 44.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-cong-tru-100-003",
+      "type": "single_choice",
+      "prompt": "Tính: 47 + 38 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "87"
+        },
+        {
+          "key": "b",
+          "text": "84"
+        },
+        {
+          "key": "c",
+          "text": "85"
+        },
+        {
+          "key": "d",
+          "text": "86"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "47 + 38 = 85.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-2-cong-tru-100-004",
+      "type": "single_choice",
+      "prompt": "Tính: 90 - 56 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "35"
+        },
+        {
+          "key": "b",
+          "text": "33"
+        },
+        {
+          "key": "c",
+          "text": "36"
+        },
+        {
+          "key": "d",
+          "text": "34"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "90 - 56 = 34.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-cong-tru-100-005",
+      "type": "single_choice",
+      "prompt": "Có 35 viên bi, thêm 27 viên bi. Có tất cả bao nhiêu viên bi?",
+      "options": [
+        {
+          "key": "a",
+          "text": "62"
+        },
+        {
+          "key": "b",
+          "text": "63"
+        },
+        {
+          "key": "c",
+          "text": "61"
+        },
+        {
+          "key": "d",
+          "text": "64"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "35 + 27 = 62 viên bi.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-2-cong-tru-100-006",
+      "type": "single_choice",
+      "prompt": "Có 72 quả cam, bán đi 38 quả. Còn lại bao nhiêu quả cam?",
+      "options": [
+        {
+          "key": "a",
+          "text": "33"
+        },
+        {
+          "key": "b",
+          "text": "34"
+        },
+        {
+          "key": "c",
+          "text": "35"
+        },
+        {
+          "key": "d",
+          "text": "36"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "72 - 38 = 34 quả cam.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-cong-tru-100-007",
+      "type": "single_choice",
+      "prompt": "Tính: 56 + 7 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "65"
+        },
+        {
+          "key": "b",
+          "text": "64"
+        },
+        {
+          "key": "c",
+          "text": "63"
+        },
+        {
+          "key": "d",
+          "text": "62"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "56 + 7 = 63.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-2-cong-tru-100-008",
+      "type": "single_choice",
+      "prompt": "Tính: 80 - 9 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "73"
+        },
+        {
+          "key": "b",
+          "text": "72"
+        },
+        {
+          "key": "c",
+          "text": "70"
+        },
+        {
+          "key": "d",
+          "text": "71"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "80 - 9 = 71.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-cong-tru-100-009",
+      "type": "single_choice",
+      "prompt": "Tính: 23 + 45 + 12 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "80"
+        },
+        {
+          "key": "b",
+          "text": "81"
+        },
+        {
+          "key": "c",
+          "text": "82"
+        },
+        {
+          "key": "d",
+          "text": "79"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "23 + 45 = 68; 68 + 12 = 80.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-2-cong-tru-100-010",
+      "type": "single_choice",
+      "prompt": "Tính: 100 - 37 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "65"
+        },
+        {
+          "key": "b",
+          "text": "63"
+        },
+        {
+          "key": "c",
+          "text": "64"
+        },
+        {
+          "key": "d",
+          "text": "62"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "100 - 37 = 63.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-cong-tru-100-011",
+      "type": "single_choice",
+      "prompt": "Số nào cộng với 28 bằng 65?",
+      "options": [
+        {
+          "key": "a",
+          "text": "38"
+        },
+        {
+          "key": "b",
+          "text": "36"
+        },
+        {
+          "key": "c",
+          "text": "37"
+        },
+        {
+          "key": "d",
+          "text": "39"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "65 - 28 = 37.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-2-cong-tru-100-012",
+      "type": "single_choice",
+      "prompt": "Số nào trừ 19 bằng 46?",
+      "options": [
+        {
+          "key": "a",
+          "text": "66"
+        },
+        {
+          "key": "b",
+          "text": "64"
+        },
+        {
+          "key": "c",
+          "text": "67"
+        },
+        {
+          "key": "d",
+          "text": "65"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "46 + 19 = 65.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-cong-tru-100-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 50.",
+      "options": [
+        {
+          "key": "a",
+          "text": "80 - 30"
+        },
+        {
+          "key": "b",
+          "text": "40 + 15"
+        },
+        {
+          "key": "c",
+          "text": "25 + 25"
+        },
+        {
+          "key": "d",
+          "text": "70 - 25"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả bằng 50 là 25 + 25 và 80 - 30.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-cong-tru-100-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả lớn hơn 60.",
+      "options": [
+        {
+          "key": "a",
+          "text": "90 - 35"
+        },
+        {
+          "key": "b",
+          "text": "35 + 29"
+        },
+        {
+          "key": "c",
+          "text": "80 - 15"
+        },
+        {
+          "key": "d",
+          "text": "40 + 18"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả lớn hơn 60 là 35 + 29 và 80 - 15.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-cong-tru-100-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bé hơn 30.",
+      "options": [
+        {
+          "key": "a",
+          "text": "20 + 15"
+        },
+        {
+          "key": "b",
+          "text": "15 + 12"
+        },
+        {
+          "key": "c",
+          "text": "50 - 25"
+        },
+        {
+          "key": "d",
+          "text": "60 - 25"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả bé hơn 30 là 15 + 12 và 50 - 25.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-cong-tru-100-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "63 - 19 = 44"
+        },
+        {
+          "key": "b",
+          "text": "52 + 19 = 70"
+        },
+        {
+          "key": "c",
+          "text": "84 - 37 = 48"
+        },
+        {
+          "key": "d",
+          "text": "47 + 28 = 75"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "47 + 28 = 75 và 63 - 19 = 44 là hai phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-cong-tru-100-017",
+      "type": "true_false",
+      "prompt": "48 + 35 = 83.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "48 + 35 = 83.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-cong-tru-100-018",
+      "type": "true_false",
+      "prompt": "72 - 26 = 48.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "72 - 26 = 46, không phải 48.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-cong-tru-100-019",
+      "type": "true_false",
+      "prompt": "54 + 29 = 83.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "54 + 29 = 83.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-cong-tru-100-020",
+      "type": "true_false",
+      "prompt": "90 - 45 = 45.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "90 - 45 = 45.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-cong-tru-100-021",
+      "type": "fill_in",
+      "prompt": "45 + 27 = ___.",
+      "answer": {
+        "accepted": [
+          "72"
+        ]
+      },
+      "explanation": "45 + 27 = 72.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-cong-tru-100-022",
+      "type": "fill_in",
+      "prompt": "83 - 48 = ___.",
+      "answer": {
+        "accepted": [
+          "35"
+        ]
+      },
+      "explanation": "83 - 48 = 35.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-cong-tru-100-023",
+      "type": "fill_in",
+      "prompt": "36 + ___ = 64.",
+      "answer": {
+        "accepted": [
+          "28"
+        ]
+      },
+      "explanation": "64 - 36 = 28.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-2-cong-tru-100-024",
+      "type": "fill_in",
+      "prompt": "___ - 25 = 47.",
+      "answer": {
+        "accepted": [
+          "72"
+        ]
+      },
+      "explanation": "47 + 25 = 72.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-2-cong-tru-100-025",
+      "type": "fill_in",
+      "prompt": "60 - ___ = 18.",
+      "answer": {
+        "accepted": [
+          "42"
+        ]
+      },
+      "explanation": "60 - 18 = 42.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,2537 @@
+{
+  "topic": {
+    "id": "toan-1-tru-trong-10",
+    "subjectId": "toan",
+    "grade": 1,
+    "slug": "tru-trong-10",
+    "name": "Phép trừ trong phạm vi 10",
+    "sortOrder": 3
+  },
+  "questions": [
+    {
+      "id": "toan-1-tru-trong-10-001",
+      "type": "single_choice",
+      "prompt": "Tính: 1 - 0 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "0"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "1 - 0 = 1.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-002",
+      "type": "single_choice",
+      "prompt": "Có 1 cái kẹo, ăn hết 1 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "10"
+        },
+        {
+          "key": "b",
+          "text": "0"
+        },
+        {
+          "key": "c",
+          "text": "1"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "1 - 1 = 0.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-003",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 2 - 0 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "1"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "2 - 0 = 2.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-004",
+      "type": "single_choice",
+      "prompt": "Tính: 2 - 1 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "2"
+        },
+        {
+          "key": "c",
+          "text": "0"
+        },
+        {
+          "key": "d",
+          "text": "1"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "2 - 1 = 1.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-005",
+      "type": "single_choice",
+      "prompt": "Có 2 cái kẹo, ăn hết 2 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "0"
+        },
+        {
+          "key": "b",
+          "text": "1"
+        },
+        {
+          "key": "c",
+          "text": "10"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "2 - 2 = 0.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-006",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 3 - 0 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "3 - 0 = 3.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-007",
+      "type": "single_choice",
+      "prompt": "Tính: 3 - 1 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "1"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "3 - 1 = 2.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-008",
+      "type": "single_choice",
+      "prompt": "Có 3 cái kẹo, ăn hết 2 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "2"
+        },
+        {
+          "key": "c",
+          "text": "0"
+        },
+        {
+          "key": "d",
+          "text": "1"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "3 - 2 = 1.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-009",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 3 - 3 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "0"
+        },
+        {
+          "key": "b",
+          "text": "1"
+        },
+        {
+          "key": "c",
+          "text": "10"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "3 - 3 = 0.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-010",
+      "type": "single_choice",
+      "prompt": "Tính: 4 - 0 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "4 - 0 = 4.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-011",
+      "type": "single_choice",
+      "prompt": "Có 4 cái kẹo, ăn hết 1 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "2"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "4 - 1 = 3.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-012",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 4 - 2 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "1"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "4 - 2 = 2.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-013",
+      "type": "single_choice",
+      "prompt": "Tính: 4 - 3 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "0"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "4 - 3 = 1.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-014",
+      "type": "single_choice",
+      "prompt": "Có 4 cái kẹo, ăn hết 4 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "10"
+        },
+        {
+          "key": "b",
+          "text": "0"
+        },
+        {
+          "key": "c",
+          "text": "1"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "4 - 4 = 0.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-015",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 5 - 0 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "5 - 0 = 5.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-016",
+      "type": "single_choice",
+      "prompt": "Tính: 5 - 1 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "5 - 1 = 4.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-017",
+      "type": "single_choice",
+      "prompt": "Có 5 cái kẹo, ăn hết 2 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "2"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "5 - 2 = 3.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-018",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 5 - 3 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "2"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "5 - 3 = 2.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-019",
+      "type": "single_choice",
+      "prompt": "Tính: 5 - 4 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "0"
+        },
+        {
+          "key": "c",
+          "text": "1"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "5 - 4 = 1.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-020",
+      "type": "single_choice",
+      "prompt": "Có 5 cái kẹo, ăn hết 5 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "1"
+        },
+        {
+          "key": "c",
+          "text": "10"
+        },
+        {
+          "key": "d",
+          "text": "0"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "5 - 5 = 0.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-021",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 6 - 0 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "6 - 0 = 6.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-022",
+      "type": "single_choice",
+      "prompt": "Tính: 6 - 1 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "7"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "6 - 1 = 5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-023",
+      "type": "single_choice",
+      "prompt": "Có 6 cái kẹo, ăn hết 2 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "6 - 2 = 4.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-024",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 6 - 3 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "6 - 3 = 3.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-025",
+      "type": "single_choice",
+      "prompt": "Tính: 6 - 4 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "1"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "6 - 4 = 2.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-026",
+      "type": "single_choice",
+      "prompt": "Có 6 cái kẹo, ăn hết 5 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "0"
+        },
+        {
+          "key": "b",
+          "text": "1"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "6 - 5 = 1.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-027",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 6 - 6 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "2"
+        },
+        {
+          "key": "c",
+          "text": "0"
+        },
+        {
+          "key": "d",
+          "text": "10"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "6 - 6 = 0.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-028",
+      "type": "single_choice",
+      "prompt": "Tính: 7 - 0 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "9"
+        },
+        {
+          "key": "c",
+          "text": "8"
+        },
+        {
+          "key": "d",
+          "text": "7"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "7 - 0 = 7.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-029",
+      "type": "single_choice",
+      "prompt": "Có 7 cái kẹo, ăn hết 1 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "8"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "7 - 1 = 6.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-030",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 7 - 2 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "7 - 2 = 5.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-031",
+      "type": "single_choice",
+      "prompt": "Tính: 7 - 3 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "7 - 3 = 4.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-032",
+      "type": "single_choice",
+      "prompt": "Có 7 cái kẹo, ăn hết 4 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "7 - 4 = 3.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-033",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 7 - 5 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "1"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "7 - 5 = 2.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-034",
+      "type": "single_choice",
+      "prompt": "Tính: 7 - 6 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "0"
+        },
+        {
+          "key": "b",
+          "text": "1"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "7 - 6 = 1.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-035",
+      "type": "single_choice",
+      "prompt": "Có 7 cái kẹo, ăn hết 7 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "2"
+        },
+        {
+          "key": "c",
+          "text": "0"
+        },
+        {
+          "key": "d",
+          "text": "10"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "7 - 7 = 0.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-036",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 8 - 0 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "10"
+        },
+        {
+          "key": "c",
+          "text": "9"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "8 - 0 = 8.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-037",
+      "type": "single_choice",
+      "prompt": "Tính: 8 - 1 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "8"
+        },
+        {
+          "key": "c",
+          "text": "9"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "8 - 1 = 7.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-038",
+      "type": "single_choice",
+      "prompt": "Có 8 cái kẹo, ăn hết 2 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "8 - 2 = 6.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-039",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 8 - 3 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "8 - 3 = 5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-040",
+      "type": "single_choice",
+      "prompt": "Tính: 8 - 4 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "8 - 4 = 4.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-041",
+      "type": "single_choice",
+      "prompt": "Có 8 cái kẹo, ăn hết 5 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "2"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "8 - 5 = 3.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-042",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 8 - 6 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "2"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "8 - 6 = 2.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-043",
+      "type": "single_choice",
+      "prompt": "Tính: 8 - 7 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "0"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "1"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "8 - 7 = 1.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-044",
+      "type": "single_choice",
+      "prompt": "Có 8 cái kẹo, ăn hết 8 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "10"
+        },
+        {
+          "key": "b",
+          "text": "1"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "0"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "8 - 8 = 0.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-045",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 9 - 0 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "9"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "10"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "9 - 0 = 9.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-046",
+      "type": "single_choice",
+      "prompt": "Tính: 9 - 1 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "10"
+        },
+        {
+          "key": "b",
+          "text": "8"
+        },
+        {
+          "key": "c",
+          "text": "9"
+        },
+        {
+          "key": "d",
+          "text": "7"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "9 - 1 = 8.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-047",
+      "type": "single_choice",
+      "prompt": "Có 9 cái kẹo, ăn hết 2 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "8"
+        },
+        {
+          "key": "c",
+          "text": "7"
+        },
+        {
+          "key": "d",
+          "text": "9"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "9 - 2 = 7.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-048",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 9 - 3 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "8"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "9 - 3 = 6.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-049",
+      "type": "single_choice",
+      "prompt": "Tính: 9 - 4 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "6"
+        },
+        {
+          "key": "d",
+          "text": "7"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "9 - 4 = 5.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-050",
+      "type": "single_choice",
+      "prompt": "Có 9 cái kẹo, ăn hết 5 cái. Còn lại bao nhiêu cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "6"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "9 - 5 = 4.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-051",
+      "type": "single_choice",
+      "prompt": "Điền kết quả: 9 - 6 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "9 - 6 = 3.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-052",
+      "type": "single_choice",
+      "prompt": "Tính: 9 - 7 = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "9 - 7 = 2.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-053",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 0.",
+      "options": [
+        {
+          "key": "a",
+          "text": "2 - 0"
+        },
+        {
+          "key": "b",
+          "text": "2 - 2"
+        },
+        {
+          "key": "c",
+          "text": "1 - 0"
+        },
+        {
+          "key": "d",
+          "text": "1 - 1"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả bằng 0 được chọn.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-054",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 1.",
+      "options": [
+        {
+          "key": "a",
+          "text": "2 - 2"
+        },
+        {
+          "key": "b",
+          "text": "1 - 0"
+        },
+        {
+          "key": "c",
+          "text": "2 - 0"
+        },
+        {
+          "key": "d",
+          "text": "2 - 1"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả bằng 1 được chọn.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-055",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 2.",
+      "options": [
+        {
+          "key": "a",
+          "text": "2 - 0"
+        },
+        {
+          "key": "b",
+          "text": "2 - 2"
+        },
+        {
+          "key": "c",
+          "text": "3 - 1"
+        },
+        {
+          "key": "d",
+          "text": "2 - 1"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả bằng 2 được chọn.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-056",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 3.",
+      "options": [
+        {
+          "key": "a",
+          "text": "3 - 0"
+        },
+        {
+          "key": "b",
+          "text": "2 - 1"
+        },
+        {
+          "key": "c",
+          "text": "4 - 1"
+        },
+        {
+          "key": "d",
+          "text": "2 - 2"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả bằng 3 được chọn.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-057",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 4.",
+      "options": [
+        {
+          "key": "a",
+          "text": "4 - 0"
+        },
+        {
+          "key": "b",
+          "text": "3 - 0"
+        },
+        {
+          "key": "c",
+          "text": "5 - 1"
+        },
+        {
+          "key": "d",
+          "text": "2 - 2"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả bằng 4 được chọn.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-058",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 5.",
+      "options": [
+        {
+          "key": "a",
+          "text": "1 - 0"
+        },
+        {
+          "key": "b",
+          "text": "5 - 0"
+        },
+        {
+          "key": "c",
+          "text": "6 - 1"
+        },
+        {
+          "key": "d",
+          "text": "1 - 1"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả bằng 5 được chọn.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-059",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 6.",
+      "options": [
+        {
+          "key": "a",
+          "text": "7 - 1"
+        },
+        {
+          "key": "b",
+          "text": "6 - 0"
+        },
+        {
+          "key": "c",
+          "text": "1 - 1"
+        },
+        {
+          "key": "d",
+          "text": "2 - 0"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả bằng 6 được chọn.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-060",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 7.",
+      "options": [
+        {
+          "key": "a",
+          "text": "7 - 0"
+        },
+        {
+          "key": "b",
+          "text": "8 - 1"
+        },
+        {
+          "key": "c",
+          "text": "2 - 1"
+        },
+        {
+          "key": "d",
+          "text": "2 - 0"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả bằng 7 được chọn.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-061",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả bằng 8.",
+      "options": [
+        {
+          "key": "a",
+          "text": "8 - 0"
+        },
+        {
+          "key": "b",
+          "text": "2 - 2"
+        },
+        {
+          "key": "c",
+          "text": "9 - 1"
+        },
+        {
+          "key": "d",
+          "text": "2 - 1"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả bằng 8 được chọn.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-062",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả lớn hơn 0.",
+      "options": [
+        {
+          "key": "a",
+          "text": "3 - 2"
+        },
+        {
+          "key": "b",
+          "text": "3 - 1"
+        },
+        {
+          "key": "c",
+          "text": "3 - 3"
+        },
+        {
+          "key": "d",
+          "text": "2 - 2"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả lớn hơn 0 được chọn.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-063",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả lớn hơn 1.",
+      "options": [
+        {
+          "key": "a",
+          "text": "2 - 1"
+        },
+        {
+          "key": "b",
+          "text": "2 - 2"
+        },
+        {
+          "key": "c",
+          "text": "3 - 0"
+        },
+        {
+          "key": "d",
+          "text": "2 - 0"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả lớn hơn 1 được chọn.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-064",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả lớn hơn 2.",
+      "options": [
+        {
+          "key": "a",
+          "text": "4 - 0"
+        },
+        {
+          "key": "b",
+          "text": "2 - 2"
+        },
+        {
+          "key": "c",
+          "text": "2 - 1"
+        },
+        {
+          "key": "d",
+          "text": "4 - 1"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả lớn hơn 2 được chọn.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-065",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả lớn hơn 3.",
+      "options": [
+        {
+          "key": "a",
+          "text": "5 - 1"
+        },
+        {
+          "key": "b",
+          "text": "1 - 1"
+        },
+        {
+          "key": "c",
+          "text": "6 - 0"
+        },
+        {
+          "key": "d",
+          "text": "1 - 0"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả lớn hơn 3 được chọn.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-066",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả lớn hơn 4.",
+      "options": [
+        {
+          "key": "a",
+          "text": "7 - 1"
+        },
+        {
+          "key": "b",
+          "text": "1 - 1"
+        },
+        {
+          "key": "c",
+          "text": "7 - 0"
+        },
+        {
+          "key": "d",
+          "text": "2 - 0"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả lớn hơn 4 được chọn.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-067",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả lớn hơn 5.",
+      "options": [
+        {
+          "key": "a",
+          "text": "2 - 0"
+        },
+        {
+          "key": "b",
+          "text": "8 - 2"
+        },
+        {
+          "key": "c",
+          "text": "2 - 1"
+        },
+        {
+          "key": "d",
+          "text": "8 - 1"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả lớn hơn 5 được chọn.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-068",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả lớn hơn 6.",
+      "options": [
+        {
+          "key": "a",
+          "text": "8 - 0"
+        },
+        {
+          "key": "b",
+          "text": "7 - 0"
+        },
+        {
+          "key": "c",
+          "text": "2 - 2"
+        },
+        {
+          "key": "d",
+          "text": "2 - 1"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả lớn hơn 6 được chọn.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-069",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính có kết quả lớn hơn 7.",
+      "options": [
+        {
+          "key": "a",
+          "text": "9 - 0"
+        },
+        {
+          "key": "b",
+          "text": "1 - 0"
+        },
+        {
+          "key": "c",
+          "text": "1 - 1"
+        },
+        {
+          "key": "d",
+          "text": "9 - 1"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các phép tính có kết quả lớn hơn 7 được chọn.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-070",
+      "type": "true_false",
+      "prompt": "Phép tính 1 - 0 = 1 là đúng.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "1 - 0 = 1, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-071",
+      "type": "true_false",
+      "prompt": "Phép tính 2 - 1 = 2 là đúng.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "2 - 1 = 1, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-072",
+      "type": "true_false",
+      "prompt": "Phép tính 3 - 1 = 2 là đúng.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "3 - 1 = 2, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-073",
+      "type": "true_false",
+      "prompt": "Phép tính 4 - 0 = 5 là đúng.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "4 - 0 = 4, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-074",
+      "type": "true_false",
+      "prompt": "Phép tính 4 - 3 = 1 là đúng.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "4 - 3 = 1, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-075",
+      "type": "true_false",
+      "prompt": "Phép tính 5 - 1 = 5 là đúng.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "5 - 1 = 4, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-076",
+      "type": "true_false",
+      "prompt": "Phép tính 5 - 4 = 1 là đúng.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "5 - 4 = 1, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-077",
+      "type": "true_false",
+      "prompt": "Phép tính 6 - 1 = 6 là đúng.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "6 - 1 = 5, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-078",
+      "type": "true_false",
+      "prompt": "Phép tính 6 - 4 = 2 là đúng.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "6 - 4 = 2, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-079",
+      "type": "true_false",
+      "prompt": "Phép tính 7 - 0 = 8 là đúng.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "7 - 0 = 7, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-080",
+      "type": "true_false",
+      "prompt": "Phép tính 7 - 3 = 4 là đúng.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "7 - 3 = 4, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-081",
+      "type": "true_false",
+      "prompt": "Phép tính 7 - 6 = 2 là đúng.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "7 - 6 = 1, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-082",
+      "type": "true_false",
+      "prompt": "Phép tính 8 - 1 = 7 là đúng.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "8 - 1 = 7, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-083",
+      "type": "true_false",
+      "prompt": "Phép tính 8 - 4 = 5 là đúng.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "8 - 4 = 4, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-084",
+      "type": "true_false",
+      "prompt": "Phép tính 8 - 7 = 1 là đúng.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "8 - 7 = 1, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-085",
+      "type": "true_false",
+      "prompt": "Phép tính 9 - 1 = 9 là đúng.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "9 - 1 = 8, nên phép tính sai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-086",
+      "type": "true_false",
+      "prompt": "Phép tính 9 - 4 = 5 là đúng.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "9 - 4 = 5, nên phép tính đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-087",
+      "type": "fill_in",
+      "prompt": "5 - 1 = ___.",
+      "answer": {
+        "accepted": [
+          "4"
+        ]
+      },
+      "explanation": "5 trừ 1 bằng 4.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-088",
+      "type": "fill_in",
+      "prompt": "5 - 2 = ___.",
+      "answer": {
+        "accepted": [
+          "3"
+        ]
+      },
+      "explanation": "5 trừ 2 bằng 3.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-089",
+      "type": "fill_in",
+      "prompt": "5 - 3 = ___.",
+      "answer": {
+        "accepted": [
+          "2"
+        ]
+      },
+      "explanation": "5 trừ 3 bằng 2.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-090",
+      "type": "fill_in",
+      "prompt": "5 - 4 = ___.",
+      "answer": {
+        "accepted": [
+          "1"
+        ]
+      },
+      "explanation": "5 trừ 4 bằng 1.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-091",
+      "type": "fill_in",
+      "prompt": "5 - 5 = ___.",
+      "answer": {
+        "accepted": [
+          "0"
+        ]
+      },
+      "explanation": "5 trừ 5 bằng 0.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-092",
+      "type": "fill_in",
+      "prompt": "6 - 0 = ___.",
+      "answer": {
+        "accepted": [
+          "6"
+        ]
+      },
+      "explanation": "6 trừ 0 bằng 6.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-093",
+      "type": "fill_in",
+      "prompt": "6 - 1 = ___.",
+      "answer": {
+        "accepted": [
+          "5"
+        ]
+      },
+      "explanation": "6 trừ 1 bằng 5.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-094",
+      "type": "fill_in",
+      "prompt": "6 - 2 = ___.",
+      "answer": {
+        "accepted": [
+          "4"
+        ]
+      },
+      "explanation": "6 trừ 2 bằng 4.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-095",
+      "type": "fill_in",
+      "prompt": "6 - 3 = ___.",
+      "answer": {
+        "accepted": [
+          "3"
+        ]
+      },
+      "explanation": "6 trừ 3 bằng 3.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-096",
+      "type": "fill_in",
+      "prompt": "6 - 4 = ___.",
+      "answer": {
+        "accepted": [
+          "2"
+        ]
+      },
+      "explanation": "6 trừ 4 bằng 2.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-097",
+      "type": "fill_in",
+      "prompt": "6 - 5 = ___.",
+      "answer": {
+        "accepted": [
+          "1"
+        ]
+      },
+      "explanation": "6 trừ 5 bằng 1.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-098",
+      "type": "fill_in",
+      "prompt": "4 - ___ = 2.",
+      "answer": {
+        "accepted": [
+          "2"
+        ]
+      },
+      "explanation": "4 trừ 2 bằng 2.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-099",
+      "type": "fill_in",
+      "prompt": "4 - ___ = 1.",
+      "answer": {
+        "accepted": [
+          "3"
+        ]
+      },
+      "explanation": "4 trừ 1 bằng 3.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-100",
+      "type": "fill_in",
+      "prompt": "4 - ___ = 0.",
+      "answer": {
+        "accepted": [
+          "4"
+        ]
+      },
+      "explanation": "4 trừ 0 bằng 4.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-101",
+      "type": "fill_in",
+      "prompt": "5 - ___ = 5.",
+      "answer": {
+        "accepted": [
+          "0"
+        ]
+      },
+      "explanation": "5 trừ 5 bằng 0.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-102",
+      "type": "fill_in",
+      "prompt": "5 - ___ = 4.",
+      "answer": {
+        "accepted": [
+          "1"
+        ]
+      },
+      "explanation": "5 trừ 4 bằng 1.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-103",
+      "type": "fill_in",
+      "prompt": "5 - ___ = 3.",
+      "answer": {
+        "accepted": [
+          "2"
+        ]
+      },
+      "explanation": "5 trừ 3 bằng 2.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-104",
+      "type": "fill_in",
+      "prompt": "5 - ___ = 2.",
+      "answer": {
+        "accepted": [
+          "3"
+        ]
+      },
+      "explanation": "5 trừ 2 bằng 3.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-105",
+      "type": "fill_in",
+      "prompt": "5 - ___ = 1.",
+      "answer": {
+        "accepted": [
+          "4"
+        ]
+      },
+      "explanation": "5 trừ 1 bằng 4.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-1-tru-trong-10-106",
+      "type": "fill_in",
+      "prompt": "5 - ___ = 0.",
+      "answer": {
+        "accepted": [
+          "5"
+        ]
+      },
+      "explanation": "5 trừ 0 bằng 5.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-1-tru-trong-10-107",
+      "type": "fill_in",
+      "prompt": "6 - ___ = 6.",
+      "answer": {
+        "accepted": [
+          "0"
+        ]
+      },
+      "explanation": "6 trừ 6 bằng 0.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-1-tru-trong-10-108",
+      "type": "fill_in",
+      "prompt": "6 - ___ = 5.",
+      "answer": {
+        "accepted": [
+          "1"
+        ]
+      },
+      "explanation": "6 trừ 5 bằng 1.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

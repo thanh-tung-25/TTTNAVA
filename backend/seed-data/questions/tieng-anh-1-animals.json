@@ -1,0 +1,2549 @@
+{
+  "topic": {
+    "id": "tieng-anh-1-animals",
+    "subjectId": "tieng-anh",
+    "grade": 1,
+    "slug": "animals",
+    "name": "Động vật",
+    "sortOrder": 4
+  },
+  "questions": [
+    {
+      "id": "tieng-anh-1-animals-001",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'cat' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con mèo"
+        },
+        {
+          "key": "b",
+          "text": "con chim"
+        },
+        {
+          "key": "c",
+          "text": "con voi"
+        },
+        {
+          "key": "d",
+          "text": "con lợn"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'cat' nghĩa là con mèo.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-002",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'dog' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con cá"
+        },
+        {
+          "key": "b",
+          "text": "con chó"
+        },
+        {
+          "key": "c",
+          "text": "con vịt"
+        },
+        {
+          "key": "d",
+          "text": "con hổ"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'dog' nghĩa là con chó.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-003",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'bird' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con gà"
+        },
+        {
+          "key": "b",
+          "text": "con sư tử"
+        },
+        {
+          "key": "c",
+          "text": "con chim"
+        },
+        {
+          "key": "d",
+          "text": "con bò"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'bird' nghĩa là con chim.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-004",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'fish' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con khỉ"
+        },
+        {
+          "key": "b",
+          "text": "con lợn"
+        },
+        {
+          "key": "c",
+          "text": "con voi"
+        },
+        {
+          "key": "d",
+          "text": "con cá"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'fish' nghĩa là con cá.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-005",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'cow' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con bò"
+        },
+        {
+          "key": "b",
+          "text": "con thỏ"
+        },
+        {
+          "key": "c",
+          "text": "con hổ"
+        },
+        {
+          "key": "d",
+          "text": "con vịt"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'cow' nghĩa là con bò.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-006",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'pig' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con sư tử"
+        },
+        {
+          "key": "b",
+          "text": "con lợn"
+        },
+        {
+          "key": "c",
+          "text": "con gà"
+        },
+        {
+          "key": "d",
+          "text": "con ngựa"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'pig' nghĩa là con lợn.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-007",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'duck' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con cừu"
+        },
+        {
+          "key": "b",
+          "text": "con khỉ"
+        },
+        {
+          "key": "c",
+          "text": "con vịt"
+        },
+        {
+          "key": "d",
+          "text": "con voi"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'duck' nghĩa là con vịt.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-008",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'chicken' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con ếch"
+        },
+        {
+          "key": "b",
+          "text": "con hổ"
+        },
+        {
+          "key": "c",
+          "text": "con thỏ"
+        },
+        {
+          "key": "d",
+          "text": "con gà"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'chicken' nghĩa là con gà.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-009",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'elephant' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con voi"
+        },
+        {
+          "key": "b",
+          "text": "con rắn"
+        },
+        {
+          "key": "c",
+          "text": "con ngựa"
+        },
+        {
+          "key": "d",
+          "text": "con sư tử"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'elephant' nghĩa là con voi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-010",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'tiger' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con cừu"
+        },
+        {
+          "key": "b",
+          "text": "con hổ"
+        },
+        {
+          "key": "c",
+          "text": "con khỉ"
+        },
+        {
+          "key": "d",
+          "text": "con chuột"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'tiger' nghĩa là con hổ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-011",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'lion' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con ếch"
+        },
+        {
+          "key": "b",
+          "text": "con thỏ"
+        },
+        {
+          "key": "c",
+          "text": "con sư tử"
+        },
+        {
+          "key": "d",
+          "text": "con gấu"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'lion' nghĩa là con sư tử.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-012",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'monkey' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con ngựa"
+        },
+        {
+          "key": "b",
+          "text": "con rùa"
+        },
+        {
+          "key": "c",
+          "text": "con rắn"
+        },
+        {
+          "key": "d",
+          "text": "con khỉ"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'monkey' nghĩa là con khỉ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-013",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'rabbit' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con thỏ"
+        },
+        {
+          "key": "b",
+          "text": "con mèo"
+        },
+        {
+          "key": "c",
+          "text": "con cừu"
+        },
+        {
+          "key": "d",
+          "text": "con chuột"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'rabbit' nghĩa là con thỏ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-014",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'horse' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con gấu"
+        },
+        {
+          "key": "b",
+          "text": "con ngựa"
+        },
+        {
+          "key": "c",
+          "text": "con ếch"
+        },
+        {
+          "key": "d",
+          "text": "con chó"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'horse' nghĩa là con ngựa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-015",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'sheep' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con rắn"
+        },
+        {
+          "key": "b",
+          "text": "con chim"
+        },
+        {
+          "key": "c",
+          "text": "con cừu"
+        },
+        {
+          "key": "d",
+          "text": "con rùa"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'sheep' nghĩa là con cừu.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-016",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'frog' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con chuột"
+        },
+        {
+          "key": "b",
+          "text": "con cá"
+        },
+        {
+          "key": "c",
+          "text": "con mèo"
+        },
+        {
+          "key": "d",
+          "text": "con ếch"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'frog' nghĩa là con ếch.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-017",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'snake' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con rắn"
+        },
+        {
+          "key": "b",
+          "text": "con bò"
+        },
+        {
+          "key": "c",
+          "text": "con chó"
+        },
+        {
+          "key": "d",
+          "text": "con gấu"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'snake' nghĩa là con rắn.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-018",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'mouse' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con chim"
+        },
+        {
+          "key": "b",
+          "text": "con chuột"
+        },
+        {
+          "key": "c",
+          "text": "con lợn"
+        },
+        {
+          "key": "d",
+          "text": "con rùa"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'mouse' nghĩa là con chuột.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-019",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'bear' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con mèo"
+        },
+        {
+          "key": "b",
+          "text": "con cá"
+        },
+        {
+          "key": "c",
+          "text": "con gấu"
+        },
+        {
+          "key": "d",
+          "text": "con vịt"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'bear' nghĩa là con gấu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-020",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'turtle' là con gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con gà"
+        },
+        {
+          "key": "b",
+          "text": "con chó"
+        },
+        {
+          "key": "c",
+          "text": "con bò"
+        },
+        {
+          "key": "d",
+          "text": "con rùa"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'turtle' nghĩa là con rùa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-021",
+      "type": "single_choice",
+      "prompt": "Con mèo trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cat"
+        },
+        {
+          "key": "b",
+          "text": "chicken"
+        },
+        {
+          "key": "c",
+          "text": "lion"
+        },
+        {
+          "key": "d",
+          "text": "cow"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "con mèo trong tiếng Anh là 'cat'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-022",
+      "type": "single_choice",
+      "prompt": "Con chó trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "pig"
+        },
+        {
+          "key": "b",
+          "text": "dog"
+        },
+        {
+          "key": "c",
+          "text": "elephant"
+        },
+        {
+          "key": "d",
+          "text": "monkey"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "con chó trong tiếng Anh là 'dog'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-023",
+      "type": "single_choice",
+      "prompt": "Con chim trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "rabbit"
+        },
+        {
+          "key": "b",
+          "text": "duck"
+        },
+        {
+          "key": "c",
+          "text": "bird"
+        },
+        {
+          "key": "d",
+          "text": "tiger"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "con chim trong tiếng Anh là 'bird'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-024",
+      "type": "single_choice",
+      "prompt": "Con cá trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "horse"
+        },
+        {
+          "key": "b",
+          "text": "chicken"
+        },
+        {
+          "key": "c",
+          "text": "lion"
+        },
+        {
+          "key": "d",
+          "text": "fish"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "con cá trong tiếng Anh là 'fish'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-025",
+      "type": "single_choice",
+      "prompt": "Con bò trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cow"
+        },
+        {
+          "key": "b",
+          "text": "monkey"
+        },
+        {
+          "key": "c",
+          "text": "elephant"
+        },
+        {
+          "key": "d",
+          "text": "sheep"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "con bò trong tiếng Anh là 'cow'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-026",
+      "type": "single_choice",
+      "prompt": "Con lợn trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "frog"
+        },
+        {
+          "key": "b",
+          "text": "pig"
+        },
+        {
+          "key": "c",
+          "text": "tiger"
+        },
+        {
+          "key": "d",
+          "text": "rabbit"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "con lợn trong tiếng Anh là 'pig'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-027",
+      "type": "single_choice",
+      "prompt": "Con vịt trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "lion"
+        },
+        {
+          "key": "b",
+          "text": "horse"
+        },
+        {
+          "key": "c",
+          "text": "duck"
+        },
+        {
+          "key": "d",
+          "text": "snake"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "con vịt trong tiếng Anh là 'duck'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-028",
+      "type": "single_choice",
+      "prompt": "Con gà trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "sheep"
+        },
+        {
+          "key": "b",
+          "text": "mouse"
+        },
+        {
+          "key": "c",
+          "text": "monkey"
+        },
+        {
+          "key": "d",
+          "text": "chicken"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "con gà trong tiếng Anh là 'chicken'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-029",
+      "type": "single_choice",
+      "prompt": "Con voi trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "elephant"
+        },
+        {
+          "key": "b",
+          "text": "rabbit"
+        },
+        {
+          "key": "c",
+          "text": "frog"
+        },
+        {
+          "key": "d",
+          "text": "bear"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "con voi trong tiếng Anh là 'elephant'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-030",
+      "type": "single_choice",
+      "prompt": "Con hổ trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "snake"
+        },
+        {
+          "key": "b",
+          "text": "tiger"
+        },
+        {
+          "key": "c",
+          "text": "horse"
+        },
+        {
+          "key": "d",
+          "text": "turtle"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "con hổ trong tiếng Anh là 'tiger'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-031",
+      "type": "single_choice",
+      "prompt": "Con sư tử trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mouse"
+        },
+        {
+          "key": "b",
+          "text": "sheep"
+        },
+        {
+          "key": "c",
+          "text": "lion"
+        },
+        {
+          "key": "d",
+          "text": "cat"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "con sư tử trong tiếng Anh là 'lion'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-032",
+      "type": "single_choice",
+      "prompt": "Con khỉ trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "dog"
+        },
+        {
+          "key": "b",
+          "text": "bear"
+        },
+        {
+          "key": "c",
+          "text": "frog"
+        },
+        {
+          "key": "d",
+          "text": "monkey"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "con khỉ trong tiếng Anh là 'monkey'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-033",
+      "type": "single_choice",
+      "prompt": "Con thỏ trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "rabbit"
+        },
+        {
+          "key": "b",
+          "text": "snake"
+        },
+        {
+          "key": "c",
+          "text": "turtle"
+        },
+        {
+          "key": "d",
+          "text": "bird"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "con thỏ trong tiếng Anh là 'rabbit'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-034",
+      "type": "single_choice",
+      "prompt": "Con ngựa trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mouse"
+        },
+        {
+          "key": "b",
+          "text": "horse"
+        },
+        {
+          "key": "c",
+          "text": "cat"
+        },
+        {
+          "key": "d",
+          "text": "fish"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "con ngựa trong tiếng Anh là 'horse'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-035",
+      "type": "single_choice",
+      "prompt": "Con cừu trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bear"
+        },
+        {
+          "key": "b",
+          "text": "dog"
+        },
+        {
+          "key": "c",
+          "text": "sheep"
+        },
+        {
+          "key": "d",
+          "text": "cow"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "con cừu trong tiếng Anh là 'sheep'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-036",
+      "type": "single_choice",
+      "prompt": "Con ếch trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bird"
+        },
+        {
+          "key": "b",
+          "text": "pig"
+        },
+        {
+          "key": "c",
+          "text": "turtle"
+        },
+        {
+          "key": "d",
+          "text": "frog"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "con ếch trong tiếng Anh là 'frog'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-037",
+      "type": "single_choice",
+      "prompt": "Con rắn trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "snake"
+        },
+        {
+          "key": "b",
+          "text": "fish"
+        },
+        {
+          "key": "c",
+          "text": "duck"
+        },
+        {
+          "key": "d",
+          "text": "cat"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "con rắn trong tiếng Anh là 'snake'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-038",
+      "type": "single_choice",
+      "prompt": "Con chuột trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "dog"
+        },
+        {
+          "key": "b",
+          "text": "mouse"
+        },
+        {
+          "key": "c",
+          "text": "chicken"
+        },
+        {
+          "key": "d",
+          "text": "cow"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "con chuột trong tiếng Anh là 'mouse'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-039",
+      "type": "single_choice",
+      "prompt": "Con gấu trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "pig"
+        },
+        {
+          "key": "b",
+          "text": "elephant"
+        },
+        {
+          "key": "c",
+          "text": "bear"
+        },
+        {
+          "key": "d",
+          "text": "bird"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "con gấu trong tiếng Anh là 'bear'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-040",
+      "type": "single_choice",
+      "prompt": "Con rùa trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "tiger"
+        },
+        {
+          "key": "b",
+          "text": "duck"
+        },
+        {
+          "key": "c",
+          "text": "fish"
+        },
+        {
+          "key": "d",
+          "text": "turtle"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "con rùa trong tiếng Anh là 'turtle'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-041",
+      "type": "single_choice",
+      "prompt": "Con vật nào kêu 'meo meo'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con mèo"
+        },
+        {
+          "key": "b",
+          "text": "con hổ"
+        },
+        {
+          "key": "c",
+          "text": "con vịt"
+        },
+        {
+          "key": "d",
+          "text": "con thỏ"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đó là con mèo.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-042",
+      "type": "single_choice",
+      "prompt": "Con vật nào kêu 'gâu gâu'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con sư tử"
+        },
+        {
+          "key": "b",
+          "text": "con chó"
+        },
+        {
+          "key": "c",
+          "text": "con gà"
+        },
+        {
+          "key": "d",
+          "text": "con ngựa"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đó là con chó.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-043",
+      "type": "single_choice",
+      "prompt": "Con vật nào kêu 'ủn ỉn'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con cừu"
+        },
+        {
+          "key": "b",
+          "text": "con khỉ"
+        },
+        {
+          "key": "c",
+          "text": "con lợn"
+        },
+        {
+          "key": "d",
+          "text": "con voi"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đó là con lợn.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-044",
+      "type": "single_choice",
+      "prompt": "Con vật nào kêu 'cạc cạc'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con hổ"
+        },
+        {
+          "key": "b",
+          "text": "con thỏ"
+        },
+        {
+          "key": "c",
+          "text": "con ếch"
+        },
+        {
+          "key": "d",
+          "text": "con vịt"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đó là con vịt.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-045",
+      "type": "single_choice",
+      "prompt": "Con vật nào kêu 'be be'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con cừu"
+        },
+        {
+          "key": "b",
+          "text": "con rắn"
+        },
+        {
+          "key": "c",
+          "text": "con ngựa"
+        },
+        {
+          "key": "d",
+          "text": "con sư tử"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đó là con cừu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-046",
+      "type": "single_choice",
+      "prompt": "Con vật nào kêu 'hí hí'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con khỉ"
+        },
+        {
+          "key": "b",
+          "text": "con ngựa"
+        },
+        {
+          "key": "c",
+          "text": "con chuột"
+        },
+        {
+          "key": "d",
+          "text": "con cừu"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đó là con ngựa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-047",
+      "type": "single_choice",
+      "prompt": "Con vật nào kêu 'gừ gừ'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con thỏ"
+        },
+        {
+          "key": "b",
+          "text": "con ếch"
+        },
+        {
+          "key": "c",
+          "text": "con hổ"
+        },
+        {
+          "key": "d",
+          "text": "con gấu"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đó là con hổ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-048",
+      "type": "single_choice",
+      "prompt": "Con vật nào kêu 'ộp ộp'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con rùa"
+        },
+        {
+          "key": "b",
+          "text": "con rắn"
+        },
+        {
+          "key": "c",
+          "text": "con ngựa"
+        },
+        {
+          "key": "d",
+          "text": "con ếch"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đó là con ếch.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-049",
+      "type": "single_choice",
+      "prompt": "Con vật nào sống dưới nước?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con cá"
+        },
+        {
+          "key": "b",
+          "text": "con rắn"
+        },
+        {
+          "key": "c",
+          "text": "con rùa"
+        },
+        {
+          "key": "d",
+          "text": "con chim"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đó là con cá.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-050",
+      "type": "single_choice",
+      "prompt": "Con vật nào có cánh và biết bay?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con chuột"
+        },
+        {
+          "key": "b",
+          "text": "con chim"
+        },
+        {
+          "key": "c",
+          "text": "con cá"
+        },
+        {
+          "key": "d",
+          "text": "con mèo"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đó là con chim.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-051",
+      "type": "single_choice",
+      "prompt": "Con vật nào có vòi dài và đôi tai to?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con bò"
+        },
+        {
+          "key": "b",
+          "text": "con chó"
+        },
+        {
+          "key": "c",
+          "text": "con voi"
+        },
+        {
+          "key": "d",
+          "text": "con gấu"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đó là con voi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-052",
+      "type": "single_choice",
+      "prompt": "Con vật nào mang mai cứng trên lưng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "con voi"
+        },
+        {
+          "key": "b",
+          "text": "con chim"
+        },
+        {
+          "key": "c",
+          "text": "con lợn"
+        },
+        {
+          "key": "d",
+          "text": "con rùa"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đó là con rùa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-053",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật trong nhóm: cat, table, dog, book.",
+      "options": [
+        {
+          "key": "a",
+          "text": "dog"
+        },
+        {
+          "key": "b",
+          "text": "book"
+        },
+        {
+          "key": "c",
+          "text": "cat"
+        },
+        {
+          "key": "d",
+          "text": "table"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các từ cat, dog chỉ con vật; table, book không phải con vật.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-054",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật trong nhóm: bird, chair, fish, pen.",
+      "options": [
+        {
+          "key": "a",
+          "text": "chair"
+        },
+        {
+          "key": "b",
+          "text": "pen"
+        },
+        {
+          "key": "c",
+          "text": "fish"
+        },
+        {
+          "key": "d",
+          "text": "bird"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các từ bird, fish chỉ con vật; chair, pen không phải con vật.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-055",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật trong nhóm: cow, bag, pig, ball.",
+      "options": [
+        {
+          "key": "a",
+          "text": "bag"
+        },
+        {
+          "key": "b",
+          "text": "pig"
+        },
+        {
+          "key": "c",
+          "text": "cow"
+        },
+        {
+          "key": "d",
+          "text": "ball"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các từ cow, pig chỉ con vật; bag, ball không phải con vật.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-056",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật trong nhóm: duck, tree, chicken, house.",
+      "options": [
+        {
+          "key": "a",
+          "text": "tree"
+        },
+        {
+          "key": "b",
+          "text": "house"
+        },
+        {
+          "key": "c",
+          "text": "duck"
+        },
+        {
+          "key": "d",
+          "text": "chicken"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các từ duck, chicken chỉ con vật; tree, house không phải con vật.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-057",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật trong nhóm: tiger, car, lion, doll.",
+      "options": [
+        {
+          "key": "a",
+          "text": "tiger"
+        },
+        {
+          "key": "b",
+          "text": "doll"
+        },
+        {
+          "key": "c",
+          "text": "lion"
+        },
+        {
+          "key": "d",
+          "text": "car"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các từ tiger, lion chỉ con vật; car, doll không phải con vật.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-058",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật trong nhóm: rabbit, milk, horse, rice.",
+      "options": [
+        {
+          "key": "a",
+          "text": "horse"
+        },
+        {
+          "key": "b",
+          "text": "milk"
+        },
+        {
+          "key": "c",
+          "text": "rice"
+        },
+        {
+          "key": "d",
+          "text": "rabbit"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các từ rabbit, horse chỉ con vật; milk, rice không phải con vật.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-059",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật trong nhóm: sheep, door, frog, window.",
+      "options": [
+        {
+          "key": "a",
+          "text": "window"
+        },
+        {
+          "key": "b",
+          "text": "sheep"
+        },
+        {
+          "key": "c",
+          "text": "frog"
+        },
+        {
+          "key": "d",
+          "text": "door"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các từ sheep, frog chỉ con vật; door, window không phải con vật.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-060",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật trong nhóm: snake, shoe, mouse, hat.",
+      "options": [
+        {
+          "key": "a",
+          "text": "shoe"
+        },
+        {
+          "key": "b",
+          "text": "snake"
+        },
+        {
+          "key": "c",
+          "text": "hat"
+        },
+        {
+          "key": "d",
+          "text": "mouse"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các từ snake, mouse chỉ con vật; shoe, hat không phải con vật.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-061",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật trong nhóm: bear, spoon, turtle, plate.",
+      "options": [
+        {
+          "key": "a",
+          "text": "plate"
+        },
+        {
+          "key": "b",
+          "text": "turtle"
+        },
+        {
+          "key": "c",
+          "text": "spoon"
+        },
+        {
+          "key": "d",
+          "text": "bear"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các từ bear, turtle chỉ con vật; spoon, plate không phải con vật.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-062",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật có bốn chân trong nhóm: dog, bird, cat, fish.",
+      "options": [
+        {
+          "key": "a",
+          "text": "fish"
+        },
+        {
+          "key": "b",
+          "text": "cat"
+        },
+        {
+          "key": "c",
+          "text": "bird"
+        },
+        {
+          "key": "d",
+          "text": "dog"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các từ dog, cat chỉ con vật có bốn chân.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-063",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật có bốn chân trong nhóm: cow, duck, pig, snake.",
+      "options": [
+        {
+          "key": "a",
+          "text": "cow"
+        },
+        {
+          "key": "b",
+          "text": "pig"
+        },
+        {
+          "key": "c",
+          "text": "duck"
+        },
+        {
+          "key": "d",
+          "text": "snake"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các từ cow, pig chỉ con vật có bốn chân.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-064",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật có bốn chân trong nhóm: horse, chicken, sheep, fish.",
+      "options": [
+        {
+          "key": "a",
+          "text": "sheep"
+        },
+        {
+          "key": "b",
+          "text": "fish"
+        },
+        {
+          "key": "c",
+          "text": "chicken"
+        },
+        {
+          "key": "d",
+          "text": "horse"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các từ horse, sheep chỉ con vật có bốn chân.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-065",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật có bốn chân trong nhóm: tiger, bird, lion, snake.",
+      "options": [
+        {
+          "key": "a",
+          "text": "lion"
+        },
+        {
+          "key": "b",
+          "text": "bird"
+        },
+        {
+          "key": "c",
+          "text": "snake"
+        },
+        {
+          "key": "d",
+          "text": "tiger"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các từ tiger, lion chỉ con vật có bốn chân.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-066",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật có bốn chân trong nhóm: rabbit, duck, mouse, fish.",
+      "options": [
+        {
+          "key": "a",
+          "text": "mouse"
+        },
+        {
+          "key": "b",
+          "text": "duck"
+        },
+        {
+          "key": "c",
+          "text": "rabbit"
+        },
+        {
+          "key": "d",
+          "text": "fish"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các từ rabbit, mouse chỉ con vật có bốn chân.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-067",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật có bốn chân trong nhóm: bear, chicken, elephant, bird.",
+      "options": [
+        {
+          "key": "a",
+          "text": "bear"
+        },
+        {
+          "key": "b",
+          "text": "elephant"
+        },
+        {
+          "key": "c",
+          "text": "bird"
+        },
+        {
+          "key": "d",
+          "text": "chicken"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các từ bear, elephant chỉ con vật có bốn chân.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-068",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật có bốn chân trong nhóm: monkey, fish, frog, duck.",
+      "options": [
+        {
+          "key": "a",
+          "text": "monkey"
+        },
+        {
+          "key": "b",
+          "text": "frog"
+        },
+        {
+          "key": "c",
+          "text": "duck"
+        },
+        {
+          "key": "d",
+          "text": "fish"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các từ monkey, frog chỉ con vật có bốn chân.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-069",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ con vật có bốn chân trong nhóm: turtle, bird, cat, chicken.",
+      "options": [
+        {
+          "key": "a",
+          "text": "turtle"
+        },
+        {
+          "key": "b",
+          "text": "chicken"
+        },
+        {
+          "key": "c",
+          "text": "bird"
+        },
+        {
+          "key": "d",
+          "text": "cat"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các từ turtle, cat chỉ con vật có bốn chân.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-070",
+      "type": "true_false",
+      "prompt": "Từ 'cat' có nghĩa là con mèo.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'cat' là con mèo.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-071",
+      "type": "true_false",
+      "prompt": "Từ 'dog' có nghĩa là con vịt.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'dog' là con chó.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-072",
+      "type": "true_false",
+      "prompt": "Từ 'bird' có nghĩa là con chim.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'bird' là con chim.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-073",
+      "type": "true_false",
+      "prompt": "Từ 'fish' có nghĩa là con voi.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'fish' là con cá.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-074",
+      "type": "true_false",
+      "prompt": "Từ 'cow' có nghĩa là con bò.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'cow' là con bò.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-075",
+      "type": "true_false",
+      "prompt": "Từ 'pig' có nghĩa là con sư tử.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'pig' là con lợn.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-076",
+      "type": "true_false",
+      "prompt": "Từ 'duck' có nghĩa là con vịt.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'duck' là con vịt.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-077",
+      "type": "true_false",
+      "prompt": "Từ 'chicken' có nghĩa là con thỏ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'chicken' là con gà.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-078",
+      "type": "true_false",
+      "prompt": "Từ 'elephant' có nghĩa là con voi.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'elephant' là con voi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-079",
+      "type": "true_false",
+      "prompt": "Con chim biết bay.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đặc điểm của con vật này.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-080",
+      "type": "true_false",
+      "prompt": "Con cá sống trên cạn.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: Con cá sống dưới nước.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-081",
+      "type": "true_false",
+      "prompt": "Con mèo kêu 'meo meo'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đặc điểm của con vật này.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-082",
+      "type": "true_false",
+      "prompt": "Con cá có cánh.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: Con cá không có cánh; con chim mới có cánh.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-083",
+      "type": "true_false",
+      "prompt": "Con voi có vòi dài.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đặc điểm của con vật này.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-084",
+      "type": "true_false",
+      "prompt": "Con chim sống dưới nước.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: Con chim sống trên cạn và biết bay.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-085",
+      "type": "true_false",
+      "prompt": "Con thỏ có đôi tai dài.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng với đặc điểm của con vật này.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-086",
+      "type": "true_false",
+      "prompt": "Con rùa chạy nhanh hơn con ngựa.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: Con rùa bò rất chậm, không nhanh hơn con ngựa.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-087",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ con mèo: ___.",
+      "answer": {
+        "accepted": [
+          "cat",
+          "CAT"
+        ]
+      },
+      "explanation": "Đáp án là 'cat', nghĩa là con mèo.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-088",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ con chó: ___.",
+      "answer": {
+        "accepted": [
+          "dog",
+          "DOG"
+        ]
+      },
+      "explanation": "Đáp án là 'dog', nghĩa là con chó.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-089",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ con chim: ___.",
+      "answer": {
+        "accepted": [
+          "bird",
+          "BIRD"
+        ]
+      },
+      "explanation": "Đáp án là 'bird', nghĩa là con chim.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-090",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ con cá: ___.",
+      "answer": {
+        "accepted": [
+          "fish",
+          "FISH"
+        ]
+      },
+      "explanation": "Đáp án là 'fish', nghĩa là con cá.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-091",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ con bò: ___.",
+      "answer": {
+        "accepted": [
+          "cow",
+          "COW"
+        ]
+      },
+      "explanation": "Đáp án là 'cow', nghĩa là con bò.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-092",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ con lợn: ___.",
+      "answer": {
+        "accepted": [
+          "pig",
+          "PIG"
+        ]
+      },
+      "explanation": "Đáp án là 'pig', nghĩa là con lợn.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-093",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ con vịt: ___.",
+      "answer": {
+        "accepted": [
+          "duck",
+          "DUCK"
+        ]
+      },
+      "explanation": "Đáp án là 'duck', nghĩa là con vịt.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-094",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ con gà: ___.",
+      "answer": {
+        "accepted": [
+          "chicken",
+          "CHICKEN"
+        ]
+      },
+      "explanation": "Đáp án là 'chicken', nghĩa là con gà.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-095",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ con voi: ___.",
+      "answer": {
+        "accepted": [
+          "elephant",
+          "ELEPHANT"
+        ]
+      },
+      "explanation": "Đáp án là 'elephant', nghĩa là con voi.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-096",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ con hổ: ___.",
+      "answer": {
+        "accepted": [
+          "tiger",
+          "TIGER"
+        ]
+      },
+      "explanation": "Đáp án là 'tiger', nghĩa là con hổ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-097",
+      "type": "fill_in",
+      "prompt": "Điền tên con vật còn thiếu: Con ___ kêu 'meo meo'.",
+      "answer": {
+        "accepted": [
+          "mèo"
+        ]
+      },
+      "explanation": "Con mèo kêu 'meo meo'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-098",
+      "type": "fill_in",
+      "prompt": "Điền tên con vật còn thiếu: Con ___ kêu 'gâu gâu'.",
+      "answer": {
+        "accepted": [
+          "chó"
+        ]
+      },
+      "explanation": "Con chó kêu 'gâu gâu'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-099",
+      "type": "fill_in",
+      "prompt": "Điền tên con vật còn thiếu: Con ___ kêu 'ủn ỉn'.",
+      "answer": {
+        "accepted": [
+          "lợn"
+        ]
+      },
+      "explanation": "Con lợn kêu 'ủn ỉn'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-100",
+      "type": "fill_in",
+      "prompt": "Điền tên con vật còn thiếu: Con ___ kêu 'cạc cạc'.",
+      "answer": {
+        "accepted": [
+          "vịt"
+        ]
+      },
+      "explanation": "Con vịt kêu 'cạc cạc'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-101",
+      "type": "fill_in",
+      "prompt": "Điền tên con vật còn thiếu: Con ___ kêu 'be be'.",
+      "answer": {
+        "accepted": [
+          "cừu"
+        ]
+      },
+      "explanation": "Con cừu kêu 'be be'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-102",
+      "type": "fill_in",
+      "prompt": "Điền tên con vật còn thiếu: Con ___ kêu 'hí hí'.",
+      "answer": {
+        "accepted": [
+          "ngựa"
+        ]
+      },
+      "explanation": "Con ngựa kêu 'hí hí'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-103",
+      "type": "fill_in",
+      "prompt": "Điền tên con vật còn thiếu: Con ___ kêu 'gừ gừ'.",
+      "answer": {
+        "accepted": [
+          "hổ"
+        ]
+      },
+      "explanation": "Con hổ kêu 'gừ gừ'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-104",
+      "type": "fill_in",
+      "prompt": "Điền tên con vật còn thiếu: Con ___ kêu 'ộp ộp'.",
+      "answer": {
+        "accepted": [
+          "ếch"
+        ]
+      },
+      "explanation": "Con ếch kêu 'ộp ộp'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-105",
+      "type": "fill_in",
+      "prompt": "Điền tên con vật còn thiếu: Con ___ kêu 'chiếp chiếp'.",
+      "answer": {
+        "accepted": [
+          "gà"
+        ]
+      },
+      "explanation": "Con gà kêu 'chiếp chiếp'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-animals-106",
+      "type": "fill_in",
+      "prompt": "Điền tên con vật còn thiếu: Con ___ kêu 'ụm bò'.",
+      "answer": {
+        "accepted": [
+          "bò"
+        ]
+      },
+      "explanation": "Con bò kêu 'ụm bò'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-animals-107",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ con vật có vòi dài: ___.",
+      "answer": {
+        "accepted": [
+          "elephant",
+          "ELEPHANT"
+        ]
+      },
+      "explanation": "Con voi là 'elephant'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-animals-108",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh chỉ con vật có mai cứng trên lưng: ___.",
+      "answer": {
+        "accepted": [
+          "turtle",
+          "TURTLE"
+        ]
+      },
+      "explanation": "Con rùa là 'turtle'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

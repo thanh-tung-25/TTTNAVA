@@ -1,0 +1,599 @@
+{
+  "topic": {
+    "id": "tieng-anh-3-family-home",
+    "subjectId": "tieng-anh",
+    "grade": 3,
+    "slug": "family-home",
+    "name": "Gia đình và ngôi nhà",
+    "sortOrder": 2
+  },
+  "questions": [
+    {
+      "id": "tieng-anh-3-family-home-001",
+      "type": "single_choice",
+      "prompt": "“Bố” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "father"
+        },
+        {
+          "key": "b",
+          "text": "mother"
+        },
+        {
+          "key": "c",
+          "text": "brother"
+        },
+        {
+          "key": "d",
+          "text": "uncle"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Father” nghĩa là bố.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-family-home-002",
+      "type": "single_choice",
+      "prompt": "“Mẹ” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "sister"
+        },
+        {
+          "key": "b",
+          "text": "mother"
+        },
+        {
+          "key": "c",
+          "text": "aunt"
+        },
+        {
+          "key": "d",
+          "text": "father"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Mother” nghĩa là mẹ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-family-home-003",
+      "type": "single_choice",
+      "prompt": "“Anh trai, em trai” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "father"
+        },
+        {
+          "key": "b",
+          "text": "baby"
+        },
+        {
+          "key": "c",
+          "text": "brother"
+        },
+        {
+          "key": "d",
+          "text": "sister"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Brother” nghĩa là anh/em trai.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-3-family-home-004",
+      "type": "single_choice",
+      "prompt": "“Chị gái, em gái” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "brother"
+        },
+        {
+          "key": "b",
+          "text": "grandmother"
+        },
+        {
+          "key": "c",
+          "text": "mother"
+        },
+        {
+          "key": "d",
+          "text": "sister"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Sister” nghĩa là chị/em gái.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-family-home-005",
+      "type": "single_choice",
+      "prompt": "“Ông” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "grandfather"
+        },
+        {
+          "key": "b",
+          "text": "father"
+        },
+        {
+          "key": "c",
+          "text": "brother"
+        },
+        {
+          "key": "d",
+          "text": "grandmother"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Grandfather” nghĩa là ông.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-3-family-home-006",
+      "type": "single_choice",
+      "prompt": "“Bà” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "grandfather"
+        },
+        {
+          "key": "b",
+          "text": "grandmother"
+        },
+        {
+          "key": "c",
+          "text": "mother"
+        },
+        {
+          "key": "d",
+          "text": "sister"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Grandmother” nghĩa là bà.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-family-home-007",
+      "type": "single_choice",
+      "prompt": "“Ngôi nhà” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "room"
+        },
+        {
+          "key": "b",
+          "text": "garden"
+        },
+        {
+          "key": "c",
+          "text": "house"
+        },
+        {
+          "key": "d",
+          "text": "school"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“House” nghĩa là ngôi nhà.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-3-family-home-008",
+      "type": "single_choice",
+      "prompt": "“Phòng ngủ” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "garden"
+        },
+        {
+          "key": "b",
+          "text": "kitchen"
+        },
+        {
+          "key": "c",
+          "text": "bathroom"
+        },
+        {
+          "key": "d",
+          "text": "bedroom"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Bedroom” nghĩa là phòng ngủ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-family-home-009",
+      "type": "single_choice",
+      "prompt": "“Nhà bếp” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "kitchen"
+        },
+        {
+          "key": "b",
+          "text": "bedroom"
+        },
+        {
+          "key": "c",
+          "text": "living room"
+        },
+        {
+          "key": "d",
+          "text": "bathroom"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Kitchen” nghĩa là nhà bếp.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-3-family-home-010",
+      "type": "single_choice",
+      "prompt": "“Phòng tắm” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "kitchen"
+        },
+        {
+          "key": "b",
+          "text": "bathroom"
+        },
+        {
+          "key": "c",
+          "text": "garden"
+        },
+        {
+          "key": "d",
+          "text": "bedroom"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Bathroom” nghĩa là phòng tắm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-family-home-011",
+      "type": "single_choice",
+      "prompt": "“Phòng khách” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bathroom"
+        },
+        {
+          "key": "b",
+          "text": "kitchen"
+        },
+        {
+          "key": "c",
+          "text": "living room"
+        },
+        {
+          "key": "d",
+          "text": "bedroom"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Living room” nghĩa là phòng khách.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-3-family-home-012",
+      "type": "single_choice",
+      "prompt": "“Cửa sổ” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "door"
+        },
+        {
+          "key": "b",
+          "text": "wall"
+        },
+        {
+          "key": "c",
+          "text": "roof"
+        },
+        {
+          "key": "d",
+          "text": "window"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Window” nghĩa là cửa sổ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-family-home-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ chỉ thành viên trong gia đình.",
+      "options": [
+        {
+          "key": "a",
+          "text": "father"
+        },
+        {
+          "key": "b",
+          "text": "window"
+        },
+        {
+          "key": "c",
+          "text": "sister"
+        },
+        {
+          "key": "d",
+          "text": "kitchen"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "“Father” và “sister” là thành viên gia đình.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-family-home-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ chỉ các phòng trong nhà.",
+      "options": [
+        {
+          "key": "a",
+          "text": "brother"
+        },
+        {
+          "key": "b",
+          "text": "mother"
+        },
+        {
+          "key": "c",
+          "text": "kitchen"
+        },
+        {
+          "key": "d",
+          "text": "bedroom"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "“Bedroom” và “kitchen” là các phòng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-family-home-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ chỉ đồ vật, bộ phận của ngôi nhà.",
+      "options": [
+        {
+          "key": "a",
+          "text": "father"
+        },
+        {
+          "key": "b",
+          "text": "window"
+        },
+        {
+          "key": "c",
+          "text": "door"
+        },
+        {
+          "key": "d",
+          "text": "baby"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "“Door” và “window” thuộc ngôi nhà.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-family-home-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn các cặp từ tiếng Anh – tiếng Việt đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "brother – anh trai"
+        },
+        {
+          "key": "b",
+          "text": "father – bà"
+        },
+        {
+          "key": "c",
+          "text": "mother – mẹ"
+        },
+        {
+          "key": "d",
+          "text": "sister – ông"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "“Mother” là mẹ, “brother” là anh trai; “father” là bố, “sister” là chị gái.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-family-home-017",
+      "type": "true_false",
+      "prompt": "“Mother” nghĩa là “mẹ”.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, “mother” là mẹ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-family-home-018",
+      "type": "true_false",
+      "prompt": "“Brother” nghĩa là “chị gái”.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, “brother” là anh/em trai; chị/em gái là “sister”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-family-home-019",
+      "type": "true_false",
+      "prompt": "“Kitchen” là “nhà bếp”.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, “kitchen” là nhà bếp.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-family-home-020",
+      "type": "true_false",
+      "prompt": "“Bedroom” là “phòng khách”.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, “bedroom” là phòng ngủ; phòng khách là “living room”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-family-home-021",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “This is my ___. She is a teacher.” (mẹ)",
+      "answer": {
+        "accepted": [
+          "mother",
+          "mum",
+          "mom"
+        ]
+      },
+      "explanation": "“Mother” là mẹ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-family-home-022",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “I sleep in the ___.” (phòng ngủ)",
+      "answer": {
+        "accepted": [
+          "bedroom"
+        ]
+      },
+      "explanation": "“Bedroom” là phòng ngủ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-family-home-023",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “There are five ___ in my family.” (thành viên)",
+      "answer": {
+        "accepted": [
+          "members"
+        ]
+      },
+      "explanation": "“Members” là các thành viên.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-3-family-home-024",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “We cook in the ___.” (nhà bếp)",
+      "answer": {
+        "accepted": [
+          "kitchen"
+        ]
+      },
+      "explanation": "“Kitchen” là nhà bếp.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-3-family-home-025",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “Open the ___ to see the garden.” (cửa sổ)",
+      "answer": {
+        "accepted": [
+          "window"
+        ]
+      },
+      "explanation": "“Window” là cửa sổ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

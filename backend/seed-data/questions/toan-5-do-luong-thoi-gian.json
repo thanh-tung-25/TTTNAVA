@@ -1,0 +1,2537 @@
+{
+  "topic": {
+    "id": "toan-5-do-luong-thoi-gian",
+    "subjectId": "toan",
+    "grade": 5,
+    "slug": "do-luong-thoi-gian",
+    "name": "Đo lường và thời gian",
+    "sortOrder": 6
+  },
+  "questions": [
+    {
+      "id": "toan-5-do-luong-thoi-gian-001",
+      "type": "single_choice",
+      "prompt": "Đổi: 1 thế kỷ = ? năm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "100"
+        },
+        {
+          "key": "b",
+          "text": "102"
+        },
+        {
+          "key": "c",
+          "text": "99"
+        },
+        {
+          "key": "d",
+          "text": "101"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "1 × 100 = 100 (năm).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-002",
+      "type": "single_choice",
+      "prompt": "Đổi: 2 thế kỷ = ? năm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "202"
+        },
+        {
+          "key": "b",
+          "text": "200"
+        },
+        {
+          "key": "c",
+          "text": "199"
+        },
+        {
+          "key": "d",
+          "text": "201"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "2 × 100 = 200 (năm).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-003",
+      "type": "single_choice",
+      "prompt": "Đổi: 3 thế kỷ = ? năm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "301"
+        },
+        {
+          "key": "b",
+          "text": "299"
+        },
+        {
+          "key": "c",
+          "text": "300"
+        },
+        {
+          "key": "d",
+          "text": "302"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "3 × 100 = 300 (năm).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-004",
+      "type": "single_choice",
+      "prompt": "Đổi: 4 thế kỷ = ? năm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "401"
+        },
+        {
+          "key": "b",
+          "text": "402"
+        },
+        {
+          "key": "c",
+          "text": "399"
+        },
+        {
+          "key": "d",
+          "text": "400"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "4 × 100 = 400 (năm).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-005",
+      "type": "single_choice",
+      "prompt": "Đổi: 5 thế kỷ = ? năm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "500"
+        },
+        {
+          "key": "b",
+          "text": "499"
+        },
+        {
+          "key": "c",
+          "text": "501"
+        },
+        {
+          "key": "d",
+          "text": "502"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "5 × 100 = 500 (năm).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-006",
+      "type": "single_choice",
+      "prompt": "Đổi: 6 thế kỷ = ? năm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "601"
+        },
+        {
+          "key": "b",
+          "text": "600"
+        },
+        {
+          "key": "c",
+          "text": "602"
+        },
+        {
+          "key": "d",
+          "text": "599"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "6 × 100 = 600 (năm).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-007",
+      "type": "single_choice",
+      "prompt": "Đổi: 1 thế kỷ 11 năm = ? năm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "112"
+        },
+        {
+          "key": "b",
+          "text": "113"
+        },
+        {
+          "key": "c",
+          "text": "111"
+        },
+        {
+          "key": "d",
+          "text": "110"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "1 thế kỷ = 100 năm; thêm 11 năm được 111 năm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-008",
+      "type": "single_choice",
+      "prompt": "Đổi: 2 thế kỷ 12 năm = ? năm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "213"
+        },
+        {
+          "key": "b",
+          "text": "214"
+        },
+        {
+          "key": "c",
+          "text": "211"
+        },
+        {
+          "key": "d",
+          "text": "212"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "2 thế kỷ = 200 năm; thêm 12 năm được 212 năm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-009",
+      "type": "single_choice",
+      "prompt": "Đổi: 3 thế kỷ 13 năm = ? năm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "313"
+        },
+        {
+          "key": "b",
+          "text": "312"
+        },
+        {
+          "key": "c",
+          "text": "315"
+        },
+        {
+          "key": "d",
+          "text": "314"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "3 thế kỷ = 300 năm; thêm 13 năm được 313 năm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-010",
+      "type": "single_choice",
+      "prompt": "Đổi: 4 thế kỷ 14 năm = ? năm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "413"
+        },
+        {
+          "key": "b",
+          "text": "414"
+        },
+        {
+          "key": "c",
+          "text": "416"
+        },
+        {
+          "key": "d",
+          "text": "415"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "4 thế kỷ = 400 năm; thêm 14 năm được 414 năm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-011",
+      "type": "single_choice",
+      "prompt": "Đổi: 1 năm 3 tháng = ? tháng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "17"
+        },
+        {
+          "key": "b",
+          "text": "16"
+        },
+        {
+          "key": "c",
+          "text": "15"
+        },
+        {
+          "key": "d",
+          "text": "14"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "1 năm = 12 tháng; thêm 3 tháng được 15 tháng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-012",
+      "type": "single_choice",
+      "prompt": "Đổi: 2 năm 5 tháng = ? tháng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "31"
+        },
+        {
+          "key": "b",
+          "text": "30"
+        },
+        {
+          "key": "c",
+          "text": "28"
+        },
+        {
+          "key": "d",
+          "text": "29"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "2 năm = 24 tháng; thêm 5 tháng được 29 tháng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-013",
+      "type": "single_choice",
+      "prompt": "Đổi: 3 năm 7 tháng = ? tháng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "43"
+        },
+        {
+          "key": "b",
+          "text": "42"
+        },
+        {
+          "key": "c",
+          "text": "45"
+        },
+        {
+          "key": "d",
+          "text": "44"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "3 năm = 36 tháng; thêm 7 tháng được 43 tháng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-014",
+      "type": "single_choice",
+      "prompt": "Đổi: 4 năm 9 tháng = ? tháng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "56"
+        },
+        {
+          "key": "b",
+          "text": "57"
+        },
+        {
+          "key": "c",
+          "text": "59"
+        },
+        {
+          "key": "d",
+          "text": "58"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "4 năm = 48 tháng; thêm 9 tháng được 57 tháng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-015",
+      "type": "single_choice",
+      "prompt": "Đổi: 2 ngày = ? giờ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "50"
+        },
+        {
+          "key": "b",
+          "text": "49"
+        },
+        {
+          "key": "c",
+          "text": "48"
+        },
+        {
+          "key": "d",
+          "text": "47"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "1 ngày = 24 giờ, nên 2 ngày = 48 giờ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-016",
+      "type": "single_choice",
+      "prompt": "Đổi: 3 ngày = ? giờ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "71"
+        },
+        {
+          "key": "b",
+          "text": "74"
+        },
+        {
+          "key": "c",
+          "text": "73"
+        },
+        {
+          "key": "d",
+          "text": "72"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "1 ngày = 24 giờ, nên 3 ngày = 72 giờ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-017",
+      "type": "single_choice",
+      "prompt": "Đổi: 5 ngày = ? giờ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "120"
+        },
+        {
+          "key": "b",
+          "text": "119"
+        },
+        {
+          "key": "c",
+          "text": "121"
+        },
+        {
+          "key": "d",
+          "text": "122"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "1 ngày = 24 giờ, nên 5 ngày = 120 giờ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-018",
+      "type": "single_choice",
+      "prompt": "Đổi: 2 tuần = ? ngày.",
+      "options": [
+        {
+          "key": "a",
+          "text": "16"
+        },
+        {
+          "key": "b",
+          "text": "14"
+        },
+        {
+          "key": "c",
+          "text": "13"
+        },
+        {
+          "key": "d",
+          "text": "15"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "1 tuần = 7 ngày, nên 2 tuần = 14 ngày.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-019",
+      "type": "single_choice",
+      "prompt": "Đổi: 3 tuần = ? ngày.",
+      "options": [
+        {
+          "key": "a",
+          "text": "22"
+        },
+        {
+          "key": "b",
+          "text": "23"
+        },
+        {
+          "key": "c",
+          "text": "21"
+        },
+        {
+          "key": "d",
+          "text": "20"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "1 tuần = 7 ngày, nên 3 tuần = 21 ngày.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-020",
+      "type": "single_choice",
+      "prompt": "Đổi: 4 tuần = ? ngày.",
+      "options": [
+        {
+          "key": "a",
+          "text": "27"
+        },
+        {
+          "key": "b",
+          "text": "30"
+        },
+        {
+          "key": "c",
+          "text": "29"
+        },
+        {
+          "key": "d",
+          "text": "28"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "1 tuần = 7 ngày, nên 4 tuần = 28 ngày.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-021",
+      "type": "single_choice",
+      "prompt": "Đổi: 2 giờ = ? phút.",
+      "options": [
+        {
+          "key": "a",
+          "text": "120"
+        },
+        {
+          "key": "b",
+          "text": "122"
+        },
+        {
+          "key": "c",
+          "text": "121"
+        },
+        {
+          "key": "d",
+          "text": "119"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "1 giờ = 60 phút, nên 2 giờ = 120 phút.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-022",
+      "type": "single_choice",
+      "prompt": "Đổi: 3 giờ = ? phút.",
+      "options": [
+        {
+          "key": "a",
+          "text": "182"
+        },
+        {
+          "key": "b",
+          "text": "180"
+        },
+        {
+          "key": "c",
+          "text": "179"
+        },
+        {
+          "key": "d",
+          "text": "181"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "1 giờ = 60 phút, nên 3 giờ = 180 phút.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-023",
+      "type": "single_choice",
+      "prompt": "Đổi: 4 giờ = ? phút.",
+      "options": [
+        {
+          "key": "a",
+          "text": "239"
+        },
+        {
+          "key": "b",
+          "text": "241"
+        },
+        {
+          "key": "c",
+          "text": "240"
+        },
+        {
+          "key": "d",
+          "text": "242"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "1 giờ = 60 phút, nên 4 giờ = 240 phút.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-024",
+      "type": "single_choice",
+      "prompt": "Đổi: 5 giờ = ? phút.",
+      "options": [
+        {
+          "key": "a",
+          "text": "301"
+        },
+        {
+          "key": "b",
+          "text": "299"
+        },
+        {
+          "key": "c",
+          "text": "302"
+        },
+        {
+          "key": "d",
+          "text": "300"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "1 giờ = 60 phút, nên 5 giờ = 300 phút.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-025",
+      "type": "single_choice",
+      "prompt": "Đổi: 3 phút = ? giây.",
+      "options": [
+        {
+          "key": "a",
+          "text": "180"
+        },
+        {
+          "key": "b",
+          "text": "179"
+        },
+        {
+          "key": "c",
+          "text": "181"
+        },
+        {
+          "key": "d",
+          "text": "182"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "1 phút = 60 giây, nên 3 phút = 180 giây.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-026",
+      "type": "single_choice",
+      "prompt": "Đổi: 4 phút = ? giây.",
+      "options": [
+        {
+          "key": "a",
+          "text": "239"
+        },
+        {
+          "key": "b",
+          "text": "240"
+        },
+        {
+          "key": "c",
+          "text": "242"
+        },
+        {
+          "key": "d",
+          "text": "241"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "1 phút = 60 giây, nên 4 phút = 240 giây.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-027",
+      "type": "single_choice",
+      "prompt": "Đổi: 6 phút = ? giây.",
+      "options": [
+        {
+          "key": "a",
+          "text": "361"
+        },
+        {
+          "key": "b",
+          "text": "359"
+        },
+        {
+          "key": "c",
+          "text": "360"
+        },
+        {
+          "key": "d",
+          "text": "362"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "1 phút = 60 giây, nên 6 phút = 360 giây.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-028",
+      "type": "single_choice",
+      "prompt": "Đổi: 2 giờ 15 phút = ? phút.",
+      "options": [
+        {
+          "key": "a",
+          "text": "136"
+        },
+        {
+          "key": "b",
+          "text": "137"
+        },
+        {
+          "key": "c",
+          "text": "134"
+        },
+        {
+          "key": "d",
+          "text": "135"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "2 giờ = 120 phút; thêm 15 phút được 135 phút.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-029",
+      "type": "single_choice",
+      "prompt": "Đổi: 3 giờ 20 phút = ? phút.",
+      "options": [
+        {
+          "key": "a",
+          "text": "200"
+        },
+        {
+          "key": "b",
+          "text": "201"
+        },
+        {
+          "key": "c",
+          "text": "199"
+        },
+        {
+          "key": "d",
+          "text": "202"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "3 giờ = 180 phút; thêm 20 phút được 200 phút.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-030",
+      "type": "single_choice",
+      "prompt": "Đổi: 1 giờ 45 phút = ? phút.",
+      "options": [
+        {
+          "key": "a",
+          "text": "104"
+        },
+        {
+          "key": "b",
+          "text": "105"
+        },
+        {
+          "key": "c",
+          "text": "107"
+        },
+        {
+          "key": "d",
+          "text": "106"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "1 giờ = 60 phút; thêm 45 phút được 105 phút.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-031",
+      "type": "single_choice",
+      "prompt": "Tính: 2 giờ 20 phút + 1 giờ 45 phút = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4 giờ 15 phút"
+        },
+        {
+          "key": "b",
+          "text": "5 giờ 5 phút"
+        },
+        {
+          "key": "c",
+          "text": "4 giờ 5 phút"
+        },
+        {
+          "key": "d",
+          "text": "6 giờ 5 phút"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "2 giờ 20 phút + 1 giờ 45 phút = 4 giờ 5 phút.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-032",
+      "type": "single_choice",
+      "prompt": "Tính: 3 giờ 25 phút + 1 giờ 45 phút = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5 giờ 20 phút"
+        },
+        {
+          "key": "b",
+          "text": "6 giờ 10 phút"
+        },
+        {
+          "key": "c",
+          "text": "7 giờ 10 phút"
+        },
+        {
+          "key": "d",
+          "text": "5 giờ 10 phút"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "3 giờ 25 phút + 1 giờ 45 phút = 5 giờ 10 phút.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-033",
+      "type": "single_choice",
+      "prompt": "Tính: 4 giờ 30 phút + 1 giờ 45 phút = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6 giờ 15 phút"
+        },
+        {
+          "key": "b",
+          "text": "8 giờ 15 phút"
+        },
+        {
+          "key": "c",
+          "text": "7 giờ 15 phút"
+        },
+        {
+          "key": "d",
+          "text": "6 giờ 25 phút"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "4 giờ 30 phút + 1 giờ 45 phút = 6 giờ 15 phút.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-034",
+      "type": "single_choice",
+      "prompt": "Tính: 5 giờ 35 phút + 1 giờ 45 phút = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "9 giờ 20 phút"
+        },
+        {
+          "key": "b",
+          "text": "7 giờ 20 phút"
+        },
+        {
+          "key": "c",
+          "text": "8 giờ 20 phút"
+        },
+        {
+          "key": "d",
+          "text": "7 giờ 30 phút"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "5 giờ 35 phút + 1 giờ 45 phút = 7 giờ 20 phút.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-035",
+      "type": "single_choice",
+      "prompt": "Tính: 5 giờ 10 phút - 2 giờ 35 phút = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2 giờ 45 phút"
+        },
+        {
+          "key": "b",
+          "text": "1 giờ 35 phút"
+        },
+        {
+          "key": "c",
+          "text": "2 giờ 35 phút"
+        },
+        {
+          "key": "d",
+          "text": "3 giờ 35 phút"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "5 giờ 10 phút = 4 giờ 70 phút; trừ 2 giờ 35 phút được 2 giờ 35 phút.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-036",
+      "type": "single_choice",
+      "prompt": "Tính: 6 giờ 10 phút - 2 giờ 35 phút = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2 giờ 35 phút"
+        },
+        {
+          "key": "b",
+          "text": "3 giờ 45 phút"
+        },
+        {
+          "key": "c",
+          "text": "4 giờ 35 phút"
+        },
+        {
+          "key": "d",
+          "text": "3 giờ 35 phút"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "6 giờ 10 phút = 5 giờ 70 phút; trừ 2 giờ 35 phút được 3 giờ 35 phút.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-037",
+      "type": "single_choice",
+      "prompt": "Tính: 7 giờ 10 phút - 2 giờ 35 phút = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4 giờ 35 phút"
+        },
+        {
+          "key": "b",
+          "text": "5 giờ 35 phút"
+        },
+        {
+          "key": "c",
+          "text": "3 giờ 35 phút"
+        },
+        {
+          "key": "d",
+          "text": "4 giờ 45 phút"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "7 giờ 10 phút = 6 giờ 70 phút; trừ 2 giờ 35 phút được 4 giờ 35 phút.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-038",
+      "type": "single_choice",
+      "prompt": "Tính: 8 giờ 10 phút - 2 giờ 35 phút = ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6 giờ 35 phút"
+        },
+        {
+          "key": "b",
+          "text": "5 giờ 35 phút"
+        },
+        {
+          "key": "c",
+          "text": "5 giờ 45 phút"
+        },
+        {
+          "key": "d",
+          "text": "4 giờ 35 phút"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "8 giờ 10 phút = 7 giờ 70 phút; trừ 2 giờ 35 phút được 5 giờ 35 phút.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-039",
+      "type": "single_choice",
+      "prompt": "Một buổi học bắt đầu lúc 7 giờ 20 phút và kết thúc lúc 9 giờ 5 phút. Buổi học kéo dài bao lâu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2 giờ 45 phút"
+        },
+        {
+          "key": "b",
+          "text": "1 giờ 25 phút"
+        },
+        {
+          "key": "c",
+          "text": "1 giờ 45 phút"
+        },
+        {
+          "key": "d",
+          "text": "1 giờ 15 phút"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Từ 7 giờ 20 phút đến 9 giờ 5 phút là 1 giờ 45 phút.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-040",
+      "type": "single_choice",
+      "prompt": "Một chuyến tàu khởi hành lúc 21 giờ 15 phút và đến nơi lúc 22 giờ 5 phút. Chuyến tàu đi hết bao lâu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1 giờ 10 phút"
+        },
+        {
+          "key": "b",
+          "text": "45 phút"
+        },
+        {
+          "key": "c",
+          "text": "1 giờ 50 phút"
+        },
+        {
+          "key": "d",
+          "text": "50 phút"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Từ 21 giờ 15 phút đến 22 giờ 5 phút là 50 phút.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-041",
+      "type": "single_choice",
+      "prompt": "Tháng 4 có bao nhiêu ngày?",
+      "options": [
+        {
+          "key": "a",
+          "text": "30"
+        },
+        {
+          "key": "b",
+          "text": "28"
+        },
+        {
+          "key": "c",
+          "text": "29"
+        },
+        {
+          "key": "d",
+          "text": "31"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Tháng 4 có 30 ngày.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-042",
+      "type": "single_choice",
+      "prompt": "Tháng 6 có bao nhiêu ngày?",
+      "options": [
+        {
+          "key": "a",
+          "text": "31"
+        },
+        {
+          "key": "b",
+          "text": "30"
+        },
+        {
+          "key": "c",
+          "text": "29"
+        },
+        {
+          "key": "d",
+          "text": "28"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Tháng 6 có 30 ngày.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-043",
+      "type": "single_choice",
+      "prompt": "Tháng 9 có bao nhiêu ngày?",
+      "options": [
+        {
+          "key": "a",
+          "text": "31"
+        },
+        {
+          "key": "b",
+          "text": "28"
+        },
+        {
+          "key": "c",
+          "text": "30"
+        },
+        {
+          "key": "d",
+          "text": "29"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Tháng 9 có 30 ngày.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-044",
+      "type": "single_choice",
+      "prompt": "Tháng 11 có bao nhiêu ngày?",
+      "options": [
+        {
+          "key": "a",
+          "text": "31"
+        },
+        {
+          "key": "b",
+          "text": "29"
+        },
+        {
+          "key": "c",
+          "text": "28"
+        },
+        {
+          "key": "d",
+          "text": "30"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Tháng 11 có 30 ngày.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-045",
+      "type": "single_choice",
+      "prompt": "Năm 2020 là năm nhuận. Năm đó có bao nhiêu ngày?",
+      "options": [
+        {
+          "key": "a",
+          "text": "366"
+        },
+        {
+          "key": "b",
+          "text": "368"
+        },
+        {
+          "key": "c",
+          "text": "367"
+        },
+        {
+          "key": "d",
+          "text": "365"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Năm nhuận có 366 ngày.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-046",
+      "type": "single_choice",
+      "prompt": "Năm 2019 không phải năm nhuận. Năm đó có bao nhiêu ngày?",
+      "options": [
+        {
+          "key": "a",
+          "text": "367"
+        },
+        {
+          "key": "b",
+          "text": "365"
+        },
+        {
+          "key": "c",
+          "text": "364"
+        },
+        {
+          "key": "d",
+          "text": "366"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Năm không nhuận có 365 ngày.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-047",
+      "type": "single_choice",
+      "prompt": "Một năm nhuận có bao nhiêu ngày?",
+      "options": [
+        {
+          "key": "a",
+          "text": "367"
+        },
+        {
+          "key": "b",
+          "text": "368"
+        },
+        {
+          "key": "c",
+          "text": "366"
+        },
+        {
+          "key": "d",
+          "text": "365"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Năm nhuận có 366 ngày (tháng 2 có 29 ngày).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-048",
+      "type": "single_choice",
+      "prompt": "1/2 thế kỷ = ? năm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "49"
+        },
+        {
+          "key": "b",
+          "text": "51"
+        },
+        {
+          "key": "c",
+          "text": "52"
+        },
+        {
+          "key": "d",
+          "text": "50"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "1 thế kỷ = 100 năm, nên đáp án là 50 năm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-049",
+      "type": "single_choice",
+      "prompt": "1/4 thế kỷ = ? năm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "25"
+        },
+        {
+          "key": "b",
+          "text": "27"
+        },
+        {
+          "key": "c",
+          "text": "26"
+        },
+        {
+          "key": "d",
+          "text": "24"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "1 thế kỷ = 100 năm, nên đáp án là 25 năm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-050",
+      "type": "single_choice",
+      "prompt": "3/4 thế kỷ = ? năm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "74"
+        },
+        {
+          "key": "b",
+          "text": "75"
+        },
+        {
+          "key": "c",
+          "text": "77"
+        },
+        {
+          "key": "d",
+          "text": "76"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "1 thế kỷ = 100 năm, nên đáp án là 75 năm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-051",
+      "type": "single_choice",
+      "prompt": "Một ngày có bao nhiêu giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "23"
+        },
+        {
+          "key": "b",
+          "text": "25"
+        },
+        {
+          "key": "c",
+          "text": "24"
+        },
+        {
+          "key": "d",
+          "text": "26"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Một ngày có 24 giờ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-052",
+      "type": "single_choice",
+      "prompt": "Một ngày có bao nhiêu phút?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1439"
+        },
+        {
+          "key": "b",
+          "text": "1441"
+        },
+        {
+          "key": "c",
+          "text": "1442"
+        },
+        {
+          "key": "d",
+          "text": "1440"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "24 × 60 = 1440 (phút).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-053",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo bằng 90 phút.",
+      "options": [
+        {
+          "key": "a",
+          "text": "120 phút"
+        },
+        {
+          "key": "b",
+          "text": "5400 giây"
+        },
+        {
+          "key": "c",
+          "text": "2 giờ"
+        },
+        {
+          "key": "d",
+          "text": "1,5 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "90 phút = 1,5 giờ = 5400 giây.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-054",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo bằng 120 phút.",
+      "options": [
+        {
+          "key": "a",
+          "text": "2,5 giờ"
+        },
+        {
+          "key": "b",
+          "text": "150 phút"
+        },
+        {
+          "key": "c",
+          "text": "7200 giây"
+        },
+        {
+          "key": "d",
+          "text": "2 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "120 phút = 2 giờ = 7200 giây.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-055",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo bằng 150 phút.",
+      "options": [
+        {
+          "key": "a",
+          "text": "3 giờ"
+        },
+        {
+          "key": "b",
+          "text": "180 phút"
+        },
+        {
+          "key": "c",
+          "text": "9000 giây"
+        },
+        {
+          "key": "d",
+          "text": "2,5 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "150 phút = 2,5 giờ = 9000 giây.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-056",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo bằng 180 phút.",
+      "options": [
+        {
+          "key": "a",
+          "text": "3,5 giờ"
+        },
+        {
+          "key": "b",
+          "text": "3 giờ"
+        },
+        {
+          "key": "c",
+          "text": "10800 giây"
+        },
+        {
+          "key": "d",
+          "text": "210 phút"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "180 phút = 3 giờ = 10800 giây.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-057",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo bằng 210 phút.",
+      "options": [
+        {
+          "key": "a",
+          "text": "4 giờ"
+        },
+        {
+          "key": "b",
+          "text": "12600 giây"
+        },
+        {
+          "key": "c",
+          "text": "240 phút"
+        },
+        {
+          "key": "d",
+          "text": "3,5 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "210 phút = 3,5 giờ = 12600 giây.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-058",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo bằng 240 phút.",
+      "options": [
+        {
+          "key": "a",
+          "text": "4 giờ"
+        },
+        {
+          "key": "b",
+          "text": "14400 giây"
+        },
+        {
+          "key": "c",
+          "text": "270 phút"
+        },
+        {
+          "key": "d",
+          "text": "4,5 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "240 phút = 4 giờ = 14400 giây.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-059",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo bằng 1 ngày.",
+      "options": [
+        {
+          "key": "a",
+          "text": "24 phút"
+        },
+        {
+          "key": "b",
+          "text": "12 giờ"
+        },
+        {
+          "key": "c",
+          "text": "24 giờ"
+        },
+        {
+          "key": "d",
+          "text": "1440 phút"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "1 ngày = 24 giờ = 1440 phút.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-060",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo bằng 2 ngày.",
+      "options": [
+        {
+          "key": "a",
+          "text": "2880 phút"
+        },
+        {
+          "key": "b",
+          "text": "24 giờ"
+        },
+        {
+          "key": "c",
+          "text": "48 phút"
+        },
+        {
+          "key": "d",
+          "text": "48 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "2 ngày = 48 giờ = 2880 phút.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-061",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo bằng 3 ngày.",
+      "options": [
+        {
+          "key": "a",
+          "text": "4320 phút"
+        },
+        {
+          "key": "b",
+          "text": "72 phút"
+        },
+        {
+          "key": "c",
+          "text": "36 giờ"
+        },
+        {
+          "key": "d",
+          "text": "72 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "3 ngày = 72 giờ = 4320 phút.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-062",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo bằng 4 ngày.",
+      "options": [
+        {
+          "key": "a",
+          "text": "5760 phút"
+        },
+        {
+          "key": "b",
+          "text": "48 giờ"
+        },
+        {
+          "key": "c",
+          "text": "96 phút"
+        },
+        {
+          "key": "d",
+          "text": "96 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "4 ngày = 96 giờ = 5760 phút.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-063",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo bằng 5 ngày.",
+      "options": [
+        {
+          "key": "a",
+          "text": "120 phút"
+        },
+        {
+          "key": "b",
+          "text": "60 giờ"
+        },
+        {
+          "key": "c",
+          "text": "7200 phút"
+        },
+        {
+          "key": "d",
+          "text": "120 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "5 ngày = 120 giờ = 7200 phút.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-064",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo bằng 6 ngày.",
+      "options": [
+        {
+          "key": "a",
+          "text": "144 giờ"
+        },
+        {
+          "key": "b",
+          "text": "8640 phút"
+        },
+        {
+          "key": "c",
+          "text": "144 phút"
+        },
+        {
+          "key": "d",
+          "text": "72 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "6 ngày = 144 giờ = 8640 phút.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-065",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo bằng 1 thế kỷ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "10 thập kỷ"
+        },
+        {
+          "key": "b",
+          "text": "10 năm"
+        },
+        {
+          "key": "c",
+          "text": "1000 năm"
+        },
+        {
+          "key": "d",
+          "text": "100 năm"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "1 thế kỷ = 100 năm = 10 thập kỷ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-066",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo bằng 1 năm thường.",
+      "options": [
+        {
+          "key": "a",
+          "text": "100 ngày"
+        },
+        {
+          "key": "b",
+          "text": "10 tháng"
+        },
+        {
+          "key": "c",
+          "text": "365 ngày"
+        },
+        {
+          "key": "d",
+          "text": "12 tháng"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "1 năm thường có 12 tháng và 365 ngày.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-067",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo bé hơn 1 giờ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "2 giờ"
+        },
+        {
+          "key": "b",
+          "text": "90 phút"
+        },
+        {
+          "key": "c",
+          "text": "45 phút"
+        },
+        {
+          "key": "d",
+          "text": "30 phút"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "30 phút và 45 phút đều bé hơn 60 phút.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-068",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số đo lớn hơn 1 ngày.",
+      "options": [
+        {
+          "key": "a",
+          "text": "30 giờ"
+        },
+        {
+          "key": "b",
+          "text": "12 giờ"
+        },
+        {
+          "key": "c",
+          "text": "25 giờ"
+        },
+        {
+          "key": "d",
+          "text": "20 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "1 ngày = 24 giờ nên 25 giờ và 30 giờ đều lớn hơn 1 ngày.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-069",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tháng có 30 ngày.",
+      "options": [
+        {
+          "key": "a",
+          "text": "tháng 5"
+        },
+        {
+          "key": "b",
+          "text": "tháng 4"
+        },
+        {
+          "key": "c",
+          "text": "tháng 7"
+        },
+        {
+          "key": "d",
+          "text": "tháng 6"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Tháng 4 và tháng 6 có 30 ngày; tháng 5 và tháng 7 có 31 ngày.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-070",
+      "type": "true_false",
+      "prompt": "2 thế kỷ = 200 năm.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "2 × 100 = 200 (năm), nên đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-071",
+      "type": "true_false",
+      "prompt": "3 thế kỷ = 400 năm.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "3 × 100 = 300 (năm), không phải 400, nên sai.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-072",
+      "type": "true_false",
+      "prompt": "4 thế kỷ = 400 năm.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "4 × 100 = 400 (năm), nên đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-073",
+      "type": "true_false",
+      "prompt": "5 thế kỷ = 600 năm.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "5 × 100 = 500 (năm), không phải 600, nên sai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-074",
+      "type": "true_false",
+      "prompt": "6 thế kỷ = 600 năm.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "6 × 100 = 600 (năm), nên đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-075",
+      "type": "true_false",
+      "prompt": "7 thế kỷ = 800 năm.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "7 × 100 = 700 (năm), không phải 800, nên sai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-076",
+      "type": "true_false",
+      "prompt": "8 thế kỷ = 800 năm.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "8 × 100 = 800 (năm), nên đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-077",
+      "type": "true_false",
+      "prompt": "9 thế kỷ = 1000 năm.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "9 × 100 = 900 (năm), không phải 1000, nên sai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-078",
+      "type": "true_false",
+      "prompt": "10 thế kỷ = 1000 năm.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "10 × 100 = 1000 (năm), nên đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-079",
+      "type": "true_false",
+      "prompt": "2 giờ 30 phút + 45 phút = 3 giờ 15 phút.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "2 giờ 30 phút + 45 phút = 3 giờ 15 phút.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-080",
+      "type": "true_false",
+      "prompt": "5 giờ 20 phút - 1 giờ 45 phút = 3 giờ 35 phút.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "5 giờ 20 phút = 4 giờ 80 phút; trừ 1 giờ 45 phút được 3 giờ 35 phút.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-081",
+      "type": "true_false",
+      "prompt": "1 giờ 15 phút = 75 phút.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "1 giờ = 60 phút, thêm 15 phút được 75 phút.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-082",
+      "type": "true_false",
+      "prompt": "2 giờ 30 phút + 45 phút = 3 giờ 5 phút.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "2 giờ 30 phút + 45 phút = 3 giờ 15 phút, không phải 3 giờ 5 phút.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-083",
+      "type": "true_false",
+      "prompt": "1 thế kỷ = 100 năm.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đây là quy đổi đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-084",
+      "type": "true_false",
+      "prompt": "Tháng 2 luôn có 28 ngày.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Năm nhuận tháng 2 có 29 ngày.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-085",
+      "type": "true_false",
+      "prompt": "1 ngày = 24 giờ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đây là quy đổi đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-086",
+      "type": "true_false",
+      "prompt": "3 ngày = 72 giờ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "3 × 24 = 72 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-087",
+      "type": "fill_in",
+      "prompt": "Đổi: 7 thế kỷ = ___ năm.",
+      "answer": {
+        "accepted": [
+          "700"
+        ]
+      },
+      "explanation": "7 × 100 = 700 (năm).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-088",
+      "type": "fill_in",
+      "prompt": "Đổi: 8 thế kỷ = ___ năm.",
+      "answer": {
+        "accepted": [
+          "800"
+        ]
+      },
+      "explanation": "8 × 100 = 800 (năm).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-089",
+      "type": "fill_in",
+      "prompt": "Đổi: 9 thế kỷ = ___ năm.",
+      "answer": {
+        "accepted": [
+          "900"
+        ]
+      },
+      "explanation": "9 × 100 = 900 (năm).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-090",
+      "type": "fill_in",
+      "prompt": "Đổi: 10 thế kỷ = ___ năm.",
+      "answer": {
+        "accepted": [
+          "1000"
+        ]
+      },
+      "explanation": "10 × 100 = 1000 (năm).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-091",
+      "type": "fill_in",
+      "prompt": "Đổi: 11 thế kỷ = ___ năm.",
+      "answer": {
+        "accepted": [
+          "1100"
+        ]
+      },
+      "explanation": "11 × 100 = 1100 (năm).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-092",
+      "type": "fill_in",
+      "prompt": "Đổi: 12 thế kỷ = ___ năm.",
+      "answer": {
+        "accepted": [
+          "1200"
+        ]
+      },
+      "explanation": "12 × 100 = 1200 (năm).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-093",
+      "type": "fill_in",
+      "prompt": "Đổi: 6 giờ = ___ phút.",
+      "answer": {
+        "accepted": [
+          "360"
+        ]
+      },
+      "explanation": "6 × 60 = 360 (phút).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-094",
+      "type": "fill_in",
+      "prompt": "Đổi: 7 giờ = ___ phút.",
+      "answer": {
+        "accepted": [
+          "420"
+        ]
+      },
+      "explanation": "7 × 60 = 420 (phút).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-095",
+      "type": "fill_in",
+      "prompt": "Đổi: 8 giờ = ___ phút.",
+      "answer": {
+        "accepted": [
+          "480"
+        ]
+      },
+      "explanation": "8 × 60 = 480 (phút).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-096",
+      "type": "fill_in",
+      "prompt": "Đổi: 9 giờ = ___ phút.",
+      "answer": {
+        "accepted": [
+          "540"
+        ]
+      },
+      "explanation": "9 × 60 = 540 (phút).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-097",
+      "type": "fill_in",
+      "prompt": "Đổi: 10 giờ = ___ phút.",
+      "answer": {
+        "accepted": [
+          "600"
+        ]
+      },
+      "explanation": "10 × 60 = 600 (phút).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-098",
+      "type": "fill_in",
+      "prompt": "Đổi: 7 phút = ___ giây.",
+      "answer": {
+        "accepted": [
+          "420"
+        ]
+      },
+      "explanation": "7 × 60 = 420 (giây).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-099",
+      "type": "fill_in",
+      "prompt": "Đổi: 8 phút = ___ giây.",
+      "answer": {
+        "accepted": [
+          "480"
+        ]
+      },
+      "explanation": "8 × 60 = 480 (giây).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-100",
+      "type": "fill_in",
+      "prompt": "Đổi: 9 phút = ___ giây.",
+      "answer": {
+        "accepted": [
+          "540"
+        ]
+      },
+      "explanation": "9 × 60 = 540 (giây).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-101",
+      "type": "fill_in",
+      "prompt": "Đổi: 10 phút = ___ giây.",
+      "answer": {
+        "accepted": [
+          "600"
+        ]
+      },
+      "explanation": "10 × 60 = 600 (giây).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-102",
+      "type": "fill_in",
+      "prompt": "Đổi: 12 phút = ___ giây.",
+      "answer": {
+        "accepted": [
+          "720"
+        ]
+      },
+      "explanation": "12 × 60 = 720 (giây).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-103",
+      "type": "fill_in",
+      "prompt": "Đổi: 4 ngày = ___ giờ.",
+      "answer": {
+        "accepted": [
+          "96"
+        ]
+      },
+      "explanation": "4 × 24 = 96 (giờ).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-104",
+      "type": "fill_in",
+      "prompt": "Đổi: 6 ngày = ___ giờ.",
+      "answer": {
+        "accepted": [
+          "144"
+        ]
+      },
+      "explanation": "6 × 24 = 144 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-105",
+      "type": "fill_in",
+      "prompt": "Đổi: 7 ngày = ___ giờ.",
+      "answer": {
+        "accepted": [
+          "168"
+        ]
+      },
+      "explanation": "7 × 24 = 168 (giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-106",
+      "type": "fill_in",
+      "prompt": "Tính: 3 giờ 25 phút + 1 giờ 40 phút = ___.",
+      "answer": {
+        "accepted": [
+          "5 giờ 5 phút"
+        ]
+      },
+      "explanation": "3 giờ 25 phút + 1 giờ 40 phút = 5 giờ 5 phút.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-107",
+      "type": "fill_in",
+      "prompt": "Tính: 6 giờ 10 phút - 2 giờ 45 phút = ___.",
+      "answer": {
+        "accepted": [
+          "3 giờ 25 phút"
+        ]
+      },
+      "explanation": "6 giờ 10 phút = 5 giờ 70 phút; trừ 2 giờ 45 phút được 3 giờ 25 phút.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-do-luong-thoi-gian-108",
+      "type": "fill_in",
+      "prompt": "Tính: 4 giờ 50 phút + 2 giờ 35 phút = ___.",
+      "answer": {
+        "accepted": [
+          "7 giờ 25 phút"
+        ]
+      },
+      "explanation": "4 giờ 50 phút + 2 giờ 35 phút = 7 giờ 25 phút.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

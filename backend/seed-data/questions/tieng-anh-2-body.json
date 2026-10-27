@@ -1,0 +1,602 @@
+{
+  "topic": {
+    "id": "tieng-anh-2-body",
+    "subjectId": "tieng-anh",
+    "grade": 2,
+    "slug": "body",
+    "name": "Cơ thể",
+    "sortOrder": 3
+  },
+  "questions": [
+    {
+      "id": "tieng-anh-2-body-001",
+      "type": "single_choice",
+      "prompt": "“Cái đầu” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "head"
+        },
+        {
+          "key": "b",
+          "text": "hair"
+        },
+        {
+          "key": "c",
+          "text": "hand"
+        },
+        {
+          "key": "d",
+          "text": "hat"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Head” nghĩa là cái đầu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-body-002",
+      "type": "single_choice",
+      "prompt": "“Mắt” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ear"
+        },
+        {
+          "key": "b",
+          "text": "eye"
+        },
+        {
+          "key": "c",
+          "text": "mouth"
+        },
+        {
+          "key": "d",
+          "text": "nose"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Eye” nghĩa là con mắt.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-body-003",
+      "type": "single_choice",
+      "prompt": "“Tai” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "leg"
+        },
+        {
+          "key": "b",
+          "text": "arm"
+        },
+        {
+          "key": "c",
+          "text": "ear"
+        },
+        {
+          "key": "d",
+          "text": "eye"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Ear” nghĩa là cái tai.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-2-body-004",
+      "type": "single_choice",
+      "prompt": "“Mũi” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "hair"
+        },
+        {
+          "key": "b",
+          "text": "mouth"
+        },
+        {
+          "key": "c",
+          "text": "neck"
+        },
+        {
+          "key": "d",
+          "text": "nose"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Nose” nghĩa là cái mũi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-body-005",
+      "type": "single_choice",
+      "prompt": "“Miệng” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mouth"
+        },
+        {
+          "key": "b",
+          "text": "tooth"
+        },
+        {
+          "key": "c",
+          "text": "nose"
+        },
+        {
+          "key": "d",
+          "text": "ear"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Mouth” nghĩa là cái miệng.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-2-body-006",
+      "type": "single_choice",
+      "prompt": "“Bàn tay” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "foot"
+        },
+        {
+          "key": "b",
+          "text": "hand"
+        },
+        {
+          "key": "c",
+          "text": "arm"
+        },
+        {
+          "key": "d",
+          "text": "leg"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Hand” nghĩa là bàn tay.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-body-007",
+      "type": "single_choice",
+      "prompt": "“Cánh tay” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "hand"
+        },
+        {
+          "key": "b",
+          "text": "leg"
+        },
+        {
+          "key": "c",
+          "text": "arm"
+        },
+        {
+          "key": "d",
+          "text": "ear"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Arm” nghĩa là cánh tay.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-2-body-008",
+      "type": "single_choice",
+      "prompt": "“Bàn chân” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "hand"
+        },
+        {
+          "key": "b",
+          "text": "leg"
+        },
+        {
+          "key": "c",
+          "text": "head"
+        },
+        {
+          "key": "d",
+          "text": "foot"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Foot” nghĩa là bàn chân.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-body-009",
+      "type": "single_choice",
+      "prompt": "“Ngón tay” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "finger"
+        },
+        {
+          "key": "b",
+          "text": "toe"
+        },
+        {
+          "key": "c",
+          "text": "arm"
+        },
+        {
+          "key": "d",
+          "text": "hand"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Finger” nghĩa là ngón tay.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-2-body-010",
+      "type": "single_choice",
+      "prompt": "“Tóc” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "hat"
+        },
+        {
+          "key": "b",
+          "text": "hair"
+        },
+        {
+          "key": "c",
+          "text": "hand"
+        },
+        {
+          "key": "d",
+          "text": "head"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Hair” nghĩa là mái tóc.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-body-011",
+      "type": "single_choice",
+      "prompt": "Từ nào chỉ bộ phận dùng để nhìn?",
+      "options": [
+        {
+          "key": "a",
+          "text": "hands"
+        },
+        {
+          "key": "b",
+          "text": "feet"
+        },
+        {
+          "key": "c",
+          "text": "eyes"
+        },
+        {
+          "key": "d",
+          "text": "ears"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Chúng ta nhìn bằng “eyes” (đôi mắt).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-2-body-012",
+      "type": "single_choice",
+      "prompt": "Từ nào chỉ bộ phận dùng để nghe?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nose"
+        },
+        {
+          "key": "b",
+          "text": "mouth"
+        },
+        {
+          "key": "c",
+          "text": "eyes"
+        },
+        {
+          "key": "d",
+          "text": "ears"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Chúng ta nghe bằng “ears” (đôi tai).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-body-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ chỉ bộ phận trên khuôn mặt.",
+      "options": [
+        {
+          "key": "a",
+          "text": "leg"
+        },
+        {
+          "key": "b",
+          "text": "eye"
+        },
+        {
+          "key": "c",
+          "text": "hand"
+        },
+        {
+          "key": "d",
+          "text": "nose"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "“Eye” và “nose” ở trên mặt.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-body-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ chỉ bộ phận ở tay.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hand"
+        },
+        {
+          "key": "b",
+          "text": "finger"
+        },
+        {
+          "key": "c",
+          "text": "foot"
+        },
+        {
+          "key": "d",
+          "text": "head"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "“Hand” và “finger” thuộc bàn tay.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-body-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ chỉ bộ phận ở chân.",
+      "options": [
+        {
+          "key": "a",
+          "text": "leg"
+        },
+        {
+          "key": "b",
+          "text": "foot"
+        },
+        {
+          "key": "c",
+          "text": "ear"
+        },
+        {
+          "key": "d",
+          "text": "arm"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "“Leg” và “foot” thuộc phần chân.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-body-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn các cặp từ tiếng Anh – tiếng Việt đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "nose – tai"
+        },
+        {
+          "key": "b",
+          "text": "hand – chân"
+        },
+        {
+          "key": "c",
+          "text": "mouth – miệng"
+        },
+        {
+          "key": "d",
+          "text": "hair – tóc"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "“Hair” là tóc, “mouth” là miệng; “nose” là mũi, “hand” là tay.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-body-017",
+      "type": "true_false",
+      "prompt": "“Eye” nghĩa là “con mắt”.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, “eye” là con mắt.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-body-018",
+      "type": "true_false",
+      "prompt": "“Leg” nghĩa là “cánh tay”.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, “leg” là cái chân; cánh tay là “arm”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-body-019",
+      "type": "true_false",
+      "prompt": "“Hand” là “bàn tay”.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, “hand” là bàn tay.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-body-020",
+      "type": "true_false",
+      "prompt": "“Hair” là “cái mũi”.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, “hair” là tóc; cái mũi là “nose”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-body-021",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “I have two ___.” (mắt)",
+      "answer": {
+        "accepted": [
+          "eyes",
+          "eye"
+        ]
+      },
+      "explanation": "“Eyes” là đôi mắt.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-body-022",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “I hear with my ___.” (tai)",
+      "answer": {
+        "accepted": [
+          "ears",
+          "ear"
+        ]
+      },
+      "explanation": "“Ears” là đôi tai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-body-023",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “I smell with my ___.” (mũi)",
+      "answer": {
+        "accepted": [
+          "nose"
+        ]
+      },
+      "explanation": "“Nose” là cái mũi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-2-body-024",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “I clap with my ___.” (bàn tay)",
+      "answer": {
+        "accepted": [
+          "hands",
+          "hand"
+        ]
+      },
+      "explanation": "“Hands” là bàn tay.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-2-body-025",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “I walk with my ___.” (đôi chân)",
+      "answer": {
+        "accepted": [
+          "feet",
+          "foot",
+          "legs"
+        ]
+      },
+      "explanation": "“Feet” là đôi chân.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

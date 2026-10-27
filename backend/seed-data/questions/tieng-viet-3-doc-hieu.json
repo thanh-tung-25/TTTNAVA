@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "tieng-viet-3-doc-hieu",
+    "subjectId": "tieng-viet",
+    "grade": 3,
+    "slug": "doc-hieu",
+    "name": "Đọc hiểu",
+    "sortOrder": 6
+  },
+  "questions": [
+    {
+      "id": "tieng-viet-3-doc-hieu-001",
+      "type": "single_choice",
+      "prompt": "Đọc đoạn văn: “Sáng sớm, bác nông dân ra đồng. Bác dắt trâu ra cày ruộng. Sau mỗi đường cày, đất tơi xốp như được vỗ về. Trưa đến, bác nghỉ dưới gốc đa, ăn cơm nắm và uống nước mát.” Bác nông dân ra đồng vào lúc nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Sáng sớm"
+        },
+        {
+          "key": "b",
+          "text": "Buổi tối"
+        },
+        {
+          "key": "c",
+          "text": "Buổi trưa"
+        },
+        {
+          "key": "d",
+          "text": "Buổi chiều"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Câu đầu ghi bác ra đồng từ sáng sớm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-002",
+      "type": "single_choice",
+      "prompt": "Đọc đoạn văn: “Sáng sớm, bác nông dân ra đồng. Bác dắt trâu ra cày ruộng. Sau mỗi đường cày, đất tơi xốp như được vỗ về. Trưa đến, bác nghỉ dưới gốc đa, ăn cơm nắm và uống nước mát.” Bác dắt con vật nào ra cày ruộng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Con ngựa"
+        },
+        {
+          "key": "b",
+          "text": "Con trâu"
+        },
+        {
+          "key": "c",
+          "text": "Con bò"
+        },
+        {
+          "key": "d",
+          "text": "Con dê"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Bác dắt trâu ra cày ruộng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-003",
+      "type": "single_choice",
+      "prompt": "Đọc đoạn văn: “Cây bàng già đứng giữa sân trường. Mùa hè, tán lá xòe rộng như chiếc ô khổng lồ. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện. Tiếng cười của bạn bè làm khu vườn thêm rộn ràng.” Tán lá bàng mùa hè được so sánh với gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cái quạt"
+        },
+        {
+          "key": "b",
+          "text": "Mái nhà"
+        },
+        {
+          "key": "c",
+          "text": "Chiếc ô khổng lồ"
+        },
+        {
+          "key": "d",
+          "text": "Tấm gương"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Tán lá xòe rộng như chiếc ô khổng lồ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-004",
+      "type": "single_choice",
+      "prompt": "Đọc đoạn văn: “Cây bàng già đứng giữa sân trường. Mùa hè, tán lá xòe rộng như chiếc ô khổng lồ. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện. Tiếng cười của bạn bè làm khu vườn thêm rộn ràng.” Giờ ra chơi, các bạn làm gì dưới gốc bàng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Đá bóng"
+        },
+        {
+          "key": "b",
+          "text": "Tưới cây"
+        },
+        {
+          "key": "c",
+          "text": "Nhảy dây"
+        },
+        {
+          "key": "d",
+          "text": "Đọc truyện"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Chúng em ngồi dưới gốc bàng đọc truyện.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-005",
+      "type": "single_choice",
+      "prompt": "Đọc đoạn văn: “Ngày chủ nhật, Hà theo mẹ ra chợ. Chợ đông vui, tiếng rao hàng vang khắp nơi. Mẹ mua rau, cá và một ít trái cây. Hà giúp mẹ xách giỏ, thấy vui vì được san sẻ việc nhà.” Hà theo mẹ đi đâu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Ra chợ"
+        },
+        {
+          "key": "b",
+          "text": "Ra công viên"
+        },
+        {
+          "key": "c",
+          "text": "Đến trường"
+        },
+        {
+          "key": "d",
+          "text": "Về quê"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Hà theo mẹ ra chợ ngày chủ nhật.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-006",
+      "type": "single_choice",
+      "prompt": "Đọc đoạn văn: “Ngày chủ nhật, Hà theo mẹ ra chợ. Chợ đông vui, tiếng rao hàng vang khắp nơi. Mẹ mua rau, cá và một ít trái cây. Hà giúp mẹ xách giỏ, thấy vui vì được san sẻ việc nhà.” Mẹ mua những gì ở chợ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Rau, thịt và bánh"
+        },
+        {
+          "key": "b",
+          "text": "Rau, cá và trái cây"
+        },
+        {
+          "key": "c",
+          "text": "Cá, gạo và sữa"
+        },
+        {
+          "key": "d",
+          "text": "Trái cây và quần áo"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Mẹ mua rau, cá và một ít trái cây.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-007",
+      "type": "single_choice",
+      "prompt": "Đọc đoạn văn: “Đêm rằm, trăng sáng vằng vặc. Bọn trẻ trong xóm rủ nhau ra sân đình chơi. Chúng vừa múa lân vừa hát, tiếng trống vang xa. Ông trăng như cũng mỉm cười nhìn xuống.” Đêm rằm, trăng như thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bị mây che"
+        },
+        {
+          "key": "b",
+          "text": "Đỏ như lửa"
+        },
+        {
+          "key": "c",
+          "text": "Sáng vằng vặc"
+        },
+        {
+          "key": "d",
+          "text": "Mờ ảo"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đoạn văn mở đầu bằng “trăng sáng vằng vặc”.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-008",
+      "type": "single_choice",
+      "prompt": "Đọc đoạn văn: “Đêm rằm, trăng sáng vằng vặc. Bọn trẻ trong xóm rủ nhau ra sân đình chơi. Chúng vừa múa lân vừa hát, tiếng trống vang xa. Ông trăng như cũng mỉm cười nhìn xuống.” Bọn trẻ chơi trò gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Kéo co"
+        },
+        {
+          "key": "b",
+          "text": "Bịt mắt bắt dê"
+        },
+        {
+          "key": "c",
+          "text": "Đá cầu"
+        },
+        {
+          "key": "d",
+          "text": "Múa lân"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Bọn trẻ vừa múa lân vừa hát.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-009",
+      "type": "single_choice",
+      "prompt": "Đọc đoạn văn: “Mùa xuân, vườn nhà bà bừng tỉnh. Những chồi non mơn mởn vươn mình. Đàn ong bay đi tìm mật, đàn bướm rập rờn bên hoa cúc. Bà bảo: “Mùa xuân là món quà đẹp nhất của đất trời.”” Mùa xuân, vườn nhà bà như thế nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bừng tỉnh, tươi mới"
+        },
+        {
+          "key": "b",
+          "text": "Vắng lặng"
+        },
+        {
+          "key": "c",
+          "text": "Khô héo"
+        },
+        {
+          "key": "d",
+          "text": "Ngập nước"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Vườn nhà bà bừng tỉnh khi xuân về.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-010",
+      "type": "single_choice",
+      "prompt": "Đọc đoạn văn: “Mùa xuân, vườn nhà bà bừng tỉnh. Những chồi non mơn mởn vươn mình. Đàn ong bay đi tìm mật, đàn bướm rập rờn bên hoa cúc. Bà bảo: “Mùa xuân là món quà đẹp nhất của đất trời.”” Đàn ong bay đi làm gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Xây tổ"
+        },
+        {
+          "key": "b",
+          "text": "Tìm mật"
+        },
+        {
+          "key": "c",
+          "text": "Bắt bướm"
+        },
+        {
+          "key": "d",
+          "text": "Hút nước"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đàn ong bay đi tìm mật.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-011",
+      "type": "single_choice",
+      "prompt": "Đọc đoạn văn: “Mùa xuân, vườn nhà bà bừng tỉnh. Những chồi non mơn mởn vươn mình. Đàn ong bay đi tìm mật, đàn bướm rập rờn bên hoa cúc. Bà bảo: “Mùa xuân là món quà đẹp nhất của đất trời.”” Bà nói mùa xuân là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Mùa mưa nhiều"
+        },
+        {
+          "key": "b",
+          "text": "Mùa lạnh nhất"
+        },
+        {
+          "key": "c",
+          "text": "Món quà đẹp nhất của đất trời"
+        },
+        {
+          "key": "d",
+          "text": "Mùa thu hoạch"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Bà bảo mùa xuân là món quà đẹp nhất của đất trời.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-012",
+      "type": "single_choice",
+      "prompt": "Đọc đoạn văn: “Mùa xuân, vườn nhà bà bừng tỉnh. Những chồi non mơn mởn vươn mình. Đàn ong bay đi tìm mật, đàn bướm rập rờn bên hoa cúc. Bà bảo: “Mùa xuân là món quà đẹp nhất của đất trời.”” Đàn bướm làm gì bên hoa cúc?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Hút nước trên lá"
+        },
+        {
+          "key": "b",
+          "text": "Đậu im không động"
+        },
+        {
+          "key": "c",
+          "text": "Bay đi tránh nắng"
+        },
+        {
+          "key": "d",
+          "text": "Rập rờn bay lượn"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đàn bướm rập rờn bên hoa cúc.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-013",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: “Sáng sớm, bác nông dân ra đồng. Bác dắt trâu ra cày ruộng. Sau mỗi đường cày, đất tơi xốp như được vỗ về. Trưa đến, bác nghỉ dưới gốc đa, ăn cơm nắm và uống nước mát.” Chọn các chi tiết đúng về bác nông dân.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Ngủ trong nhà cả ngày"
+        },
+        {
+          "key": "b",
+          "text": "Nghỉ trưa dưới gốc đa"
+        },
+        {
+          "key": "c",
+          "text": "Ra đồng từ sáng sớm"
+        },
+        {
+          "key": "d",
+          "text": "Đi cày lúc buổi trưa"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Bác ra đồng sáng sớm và nghỉ trưa dưới gốc đa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-014",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: “Cây bàng già đứng giữa sân trường. Mùa hè, tán lá xòe rộng như chiếc ô khổng lồ. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện. Tiếng cười của bạn bè làm khu vườn thêm rộn ràng.” Chọn các chi tiết đúng về cây bàng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Đứng giữa sân trường"
+        },
+        {
+          "key": "b",
+          "text": "Tán lá xòe rộng mùa hè"
+        },
+        {
+          "key": "c",
+          "text": "Mọc bên bờ biển"
+        },
+        {
+          "key": "d",
+          "text": "Không có lá"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Cây bàng đứng giữa sân trường, mùa hè xòe tán rộng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-015",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: “Ngày chủ nhật, Hà theo mẹ ra chợ. Chợ đông vui, tiếng rao hàng vang khắp nơi. Mẹ mua rau, cá và một ít trái cây. Hà giúp mẹ xách giỏ, thấy vui vì được san sẻ việc nhà.” Chọn các chi tiết đúng trong đoạn.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Mẹ chỉ mua quần áo"
+        },
+        {
+          "key": "b",
+          "text": "Hà vui vì được san sẻ việc nhà"
+        },
+        {
+          "key": "c",
+          "text": "Chợ rất đông vui"
+        },
+        {
+          "key": "d",
+          "text": "Hà đi chợ một mình"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Chợ đông vui, Hà giúp mẹ và thấy vui.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-016",
+      "type": "multiple_choice",
+      "prompt": "Đọc đoạn văn: “Đêm rằm, trăng sáng vằng vặc. Bọn trẻ trong xóm rủ nhau ra sân đình chơi. Chúng vừa múa lân vừa hát, tiếng trống vang xa. Ông trăng như cũng mỉm cười nhìn xuống.” Chọn các chi tiết đúng về đêm rằm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Trăng sáng vằng vặc"
+        },
+        {
+          "key": "b",
+          "text": "Bọn trẻ múa lân, hát"
+        },
+        {
+          "key": "c",
+          "text": "Bọn trẻ ngủ sớm"
+        },
+        {
+          "key": "d",
+          "text": "Trời mưa to"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Trăng sáng và bọn trẻ múa lân, hát.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-017",
+      "type": "true_false",
+      "prompt": "Đọc đoạn văn: “Sáng sớm, bác nông dân ra đồng. Bác dắt trâu ra cày ruộng. Sau mỗi đường cày, đất tơi xốp như được vỗ về. Trưa đến, bác nghỉ dưới gốc đa, ăn cơm nắm và uống nước mát.” Bác nông dân nghỉ trưa dưới gốc đa.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Bác nghỉ dưới gốc đa và ăn cơm nắm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-018",
+      "type": "true_false",
+      "prompt": "Đọc đoạn văn: “Cây bàng già đứng giữa sân trường. Mùa hè, tán lá xòe rộng như chiếc ô khổng lồ. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện. Tiếng cười của bạn bè làm khu vườn thêm rộn ràng.” Cây bàng đứng giữa sân trường.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Câu đầu đoạn văn cho biết điều đó.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-019",
+      "type": "true_false",
+      "prompt": "Đọc đoạn văn: “Ngày chủ nhật, Hà theo mẹ ra chợ. Chợ đông vui, tiếng rao hàng vang khắp nơi. Mẹ mua rau, cá và một ít trái cây. Hà giúp mẹ xách giỏ, thấy vui vì được san sẻ việc nhà.” Chợ hôm đó vắng vẻ, yên tĩnh.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Chợ đông vui, tiếng rao hàng vang khắp nơi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-020",
+      "type": "true_false",
+      "prompt": "Đọc đoạn văn: “Đêm rằm, trăng sáng vằng vặc. Bọn trẻ trong xóm rủ nhau ra sân đình chơi. Chúng vừa múa lân vừa hát, tiếng trống vang xa. Ông trăng như cũng mỉm cười nhìn xuống.” Tiếng trống vang xa trong đêm rằm.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Bọn trẻ múa lân, tiếng trống vang xa.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-021",
+      "type": "fill_in",
+      "prompt": "Đọc đoạn văn: “Sáng sớm, bác nông dân ra đồng. Bác dắt trâu ra cày ruộng. Sau mỗi đường cày, đất tơi xốp như được vỗ về. Trưa đến, bác nghỉ dưới gốc đa, ăn cơm nắm và uống nước mát.” Điền từ còn thiếu: “Sau mỗi đường cày, đất ___ như được vỗ về.”",
+      "answer": {
+        "accepted": [
+          "tơi xốp"
+        ]
+      },
+      "explanation": "Đất được cày trở nên tơi xốp.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-022",
+      "type": "fill_in",
+      "prompt": "Đọc đoạn văn: “Cây bàng già đứng giữa sân trường. Mùa hè, tán lá xòe rộng như chiếc ô khổng lồ. Giờ ra chơi, chúng em thường ngồi dưới gốc bàng đọc truyện. Tiếng cười của bạn bè làm khu vườn thêm rộn ràng.” Điền từ còn thiếu: “Tiếng cười của bạn bè làm khu vườn thêm ___.”",
+      "answer": {
+        "accepted": [
+          "rộn ràng"
+        ]
+      },
+      "explanation": "Tiếng cười làm khu vườn rộn ràng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-023",
+      "type": "fill_in",
+      "prompt": "Đọc đoạn văn: “Ngày chủ nhật, Hà theo mẹ ra chợ. Chợ đông vui, tiếng rao hàng vang khắp nơi. Mẹ mua rau, cá và một ít trái cây. Hà giúp mẹ xách giỏ, thấy vui vì được san sẻ việc nhà.” Điền từ còn thiếu: “Hà giúp mẹ ___ giỏ.”",
+      "answer": {
+        "accepted": [
+          "xách"
+        ]
+      },
+      "explanation": "Hà xách giỏ giúp mẹ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-024",
+      "type": "fill_in",
+      "prompt": "Đọc đoạn văn: “Đêm rằm, trăng sáng vằng vặc. Bọn trẻ trong xóm rủ nhau ra sân đình chơi. Chúng vừa múa lân vừa hát, tiếng trống vang xa. Ông trăng như cũng mỉm cười nhìn xuống.” Điền từ còn thiếu: “Ông trăng như cũng ___ nhìn xuống.”",
+      "answer": {
+        "accepted": [
+          "mỉm cười"
+        ]
+      },
+      "explanation": "Trăng được nhân hóa như đang mỉm cười.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-doc-hieu-025",
+      "type": "fill_in",
+      "prompt": "Đọc đoạn văn: “Mùa xuân, vườn nhà bà bừng tỉnh. Những chồi non mơn mởn vươn mình. Đàn ong bay đi tìm mật, đàn bướm rập rờn bên hoa cúc. Bà bảo: “Mùa xuân là món quà đẹp nhất của đất trời.”” Điền từ còn thiếu: “Những chồi non mơn mởn ___ mình.”",
+      "answer": {
+        "accepted": [
+          "vươn"
+        ]
+      },
+      "explanation": "Chồi non vươn mình đón xuân.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "tieng-anh-4-weather",
+    "subjectId": "tieng-anh",
+    "grade": 4,
+    "slug": "weather",
+    "name": "Thời tiết",
+    "sortOrder": 3
+  },
+  "questions": [
+    {
+      "id": "tieng-anh-4-weather-001",
+      "type": "single_choice",
+      "prompt": "“Trời nắng” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "sunny"
+        },
+        {
+          "key": "b",
+          "text": "snowy"
+        },
+        {
+          "key": "c",
+          "text": "rainy"
+        },
+        {
+          "key": "d",
+          "text": "cloudy"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Sunny” nghĩa là trời nắng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-weather-002",
+      "type": "single_choice",
+      "prompt": "“Trời mưa” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "sunny"
+        },
+        {
+          "key": "b",
+          "text": "rainy"
+        },
+        {
+          "key": "c",
+          "text": "windy"
+        },
+        {
+          "key": "d",
+          "text": "hot"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Rainy” nghĩa là trời mưa.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-weather-003",
+      "type": "single_choice",
+      "prompt": "“Nhiều mây” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "windy"
+        },
+        {
+          "key": "b",
+          "text": "sunny"
+        },
+        {
+          "key": "c",
+          "text": "cloudy"
+        },
+        {
+          "key": "d",
+          "text": "snowy"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Cloudy” nghĩa là nhiều mây.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-4-weather-004",
+      "type": "single_choice",
+      "prompt": "“Có gió” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cloudy"
+        },
+        {
+          "key": "b",
+          "text": "hot"
+        },
+        {
+          "key": "c",
+          "text": "rainy"
+        },
+        {
+          "key": "d",
+          "text": "windy"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Windy” nghĩa là có gió.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-weather-005",
+      "type": "single_choice",
+      "prompt": "“Có tuyết” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "snowy"
+        },
+        {
+          "key": "b",
+          "text": "sunny"
+        },
+        {
+          "key": "c",
+          "text": "rainy"
+        },
+        {
+          "key": "d",
+          "text": "warm"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Snowy” nghĩa là có tuyết.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-4-weather-006",
+      "type": "single_choice",
+      "prompt": "“Nóng” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cold"
+        },
+        {
+          "key": "b",
+          "text": "hot"
+        },
+        {
+          "key": "c",
+          "text": "cool"
+        },
+        {
+          "key": "d",
+          "text": "warm"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Hot” nghĩa là nóng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-weather-007",
+      "type": "single_choice",
+      "prompt": "“Lạnh” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "hot"
+        },
+        {
+          "key": "b",
+          "text": "warm"
+        },
+        {
+          "key": "c",
+          "text": "cold"
+        },
+        {
+          "key": "d",
+          "text": "sunny"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Cold” nghĩa là lạnh.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-4-weather-008",
+      "type": "single_choice",
+      "prompt": "“Ấm” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "snowy"
+        },
+        {
+          "key": "b",
+          "text": "cold"
+        },
+        {
+          "key": "c",
+          "text": "cool"
+        },
+        {
+          "key": "d",
+          "text": "warm"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Warm” nghĩa là ấm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-weather-009",
+      "type": "single_choice",
+      "prompt": "“Mát” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cool"
+        },
+        {
+          "key": "b",
+          "text": "hot"
+        },
+        {
+          "key": "c",
+          "text": "cold"
+        },
+        {
+          "key": "d",
+          "text": "warm"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "“Cool” nghĩa là mát.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-4-weather-010",
+      "type": "single_choice",
+      "prompt": "“Thời tiết” trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "water"
+        },
+        {
+          "key": "b",
+          "text": "weather"
+        },
+        {
+          "key": "c",
+          "text": "wind"
+        },
+        {
+          "key": "d",
+          "text": "winter"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Weather” nghĩa là thời tiết.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-weather-011",
+      "type": "single_choice",
+      "prompt": "Đồ dùng nào em mang khi trời mưa?",
+      "options": [
+        {
+          "key": "a",
+          "text": "fan"
+        },
+        {
+          "key": "b",
+          "text": "book"
+        },
+        {
+          "key": "c",
+          "text": "umbrella"
+        },
+        {
+          "key": "d",
+          "text": "sunglasses"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Umbrella” là cái ô để che mưa.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-4-weather-012",
+      "type": "single_choice",
+      "prompt": "Hôm nay trời mưa. Em nên mặc gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "T-shirt"
+        },
+        {
+          "key": "b",
+          "text": "sandals"
+        },
+        {
+          "key": "c",
+          "text": "shorts"
+        },
+        {
+          "key": "d",
+          "text": "raincoat"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Raincoat” là áo mưa.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-weather-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ chỉ thời tiết.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Monday"
+        },
+        {
+          "key": "b",
+          "text": "cloudy"
+        },
+        {
+          "key": "c",
+          "text": "kitchen"
+        },
+        {
+          "key": "d",
+          "text": "sunny"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "“Sunny” và “cloudy” chỉ thời tiết.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-weather-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ chỉ trời lạnh.",
+      "options": [
+        {
+          "key": "a",
+          "text": "cold"
+        },
+        {
+          "key": "b",
+          "text": "hot"
+        },
+        {
+          "key": "c",
+          "text": "snowy"
+        },
+        {
+          "key": "d",
+          "text": "sunny"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "“Cold” và “snowy” chỉ trời lạnh.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-weather-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ chỉ thời tiết đẹp để đi chơi.",
+      "options": [
+        {
+          "key": "a",
+          "text": "rainy"
+        },
+        {
+          "key": "b",
+          "text": "warm"
+        },
+        {
+          "key": "c",
+          "text": "sunny"
+        },
+        {
+          "key": "d",
+          "text": "stormy"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Trời nắng, ấm là thời tiết đẹp để đi chơi.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-weather-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn các cặp từ tiếng Anh – tiếng Việt đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "rainy – có tuyết"
+        },
+        {
+          "key": "b",
+          "text": "hot – mát"
+        },
+        {
+          "key": "c",
+          "text": "cold – lạnh"
+        },
+        {
+          "key": "d",
+          "text": "windy – có gió"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "“Windy” là có gió, “cold” là lạnh; “hot” là nóng, “rainy” là trời mưa.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-weather-017",
+      "type": "true_false",
+      "prompt": "“Sunny” nghĩa là “trời nắng”.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, “sunny” là trời nắng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-weather-018",
+      "type": "true_false",
+      "prompt": "“Cold” nghĩa là “nóng”.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, “cold” là lạnh; nóng là “hot”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-weather-019",
+      "type": "true_false",
+      "prompt": "“Cloudy” là “nhiều mây”.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, “cloudy” là nhiều mây.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-weather-020",
+      "type": "true_false",
+      "prompt": "“Windy” là “có tuyết”.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, “windy” là có gió; có tuyết là “snowy”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-weather-021",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “It is ___ today. I need an umbrella.” (trời mưa)",
+      "answer": {
+        "accepted": [
+          "rainy"
+        ]
+      },
+      "explanation": "Trời mưa là “rainy”, nên cần ô.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-weather-022",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “It is very ___ in summer.” (nóng)",
+      "answer": {
+        "accepted": [
+          "hot"
+        ]
+      },
+      "explanation": "Mùa hè trời nóng – “hot”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-weather-023",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “It is ___ in winter.” (lạnh)",
+      "answer": {
+        "accepted": [
+          "cold"
+        ]
+      },
+      "explanation": "Mùa đông trời lạnh – “cold”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-4-weather-024",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “The sky has many clouds. It is ___.” (nhiều mây)",
+      "answer": {
+        "accepted": [
+          "cloudy"
+        ]
+      },
+      "explanation": "Nhiều mây là “cloudy”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-4-weather-025",
+      "type": "fill_in",
+      "prompt": "Điền từ tiếng Anh: “What is the ___ like today?”",
+      "answer": {
+        "accepted": [
+          "weather"
+        ]
+      },
+      "explanation": "Câu hỏi về thời tiết dùng “weather”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

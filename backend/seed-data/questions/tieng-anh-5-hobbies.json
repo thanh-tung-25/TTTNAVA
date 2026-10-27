@@ -1,0 +1,2537 @@
+{
+  "topic": {
+    "id": "tieng-anh-5-hobbies",
+    "subjectId": "tieng-anh",
+    "grade": 5,
+    "slug": "hobbies",
+    "name": "Sở thích",
+    "sortOrder": 5
+  },
+  "questions": [
+    {
+      "id": "tieng-anh-5-hobbies-001",
+      "type": "single_choice",
+      "prompt": "\"đọc sách\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "reading books"
+        },
+        {
+          "key": "b",
+          "text": "drawing pictures"
+        },
+        {
+          "key": "c",
+          "text": "playing football"
+        },
+        {
+          "key": "d",
+          "text": "swimming"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"đọc sách\" trong tiếng Anh là \"reading books\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-002",
+      "type": "single_choice",
+      "prompt": "\"chơi bóng đá\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "swimming"
+        },
+        {
+          "key": "b",
+          "text": "playing football"
+        },
+        {
+          "key": "c",
+          "text": "drawing pictures"
+        },
+        {
+          "key": "d",
+          "text": "singing"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"chơi bóng đá\" trong tiếng Anh là \"playing football\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-003",
+      "type": "single_choice",
+      "prompt": "\"bơi lội\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "singing"
+        },
+        {
+          "key": "b",
+          "text": "dancing"
+        },
+        {
+          "key": "c",
+          "text": "swimming"
+        },
+        {
+          "key": "d",
+          "text": "drawing pictures"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"bơi lội\" trong tiếng Anh là \"swimming\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-004",
+      "type": "single_choice",
+      "prompt": "\"vẽ tranh\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "singing"
+        },
+        {
+          "key": "b",
+          "text": "cooking"
+        },
+        {
+          "key": "c",
+          "text": "dancing"
+        },
+        {
+          "key": "d",
+          "text": "drawing pictures"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"vẽ tranh\" trong tiếng Anh là \"drawing pictures\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-005",
+      "type": "single_choice",
+      "prompt": "\"ca hát\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "singing"
+        },
+        {
+          "key": "b",
+          "text": "cooking"
+        },
+        {
+          "key": "c",
+          "text": "dancing"
+        },
+        {
+          "key": "d",
+          "text": "gardening"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"ca hát\" trong tiếng Anh là \"singing\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-006",
+      "type": "single_choice",
+      "prompt": "\"nhảy múa\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cooking"
+        },
+        {
+          "key": "b",
+          "text": "dancing"
+        },
+        {
+          "key": "c",
+          "text": "collecting stamps"
+        },
+        {
+          "key": "d",
+          "text": "gardening"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"nhảy múa\" trong tiếng Anh là \"dancing\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-007",
+      "type": "single_choice",
+      "prompt": "\"nấu ăn\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "playing chess"
+        },
+        {
+          "key": "b",
+          "text": "collecting stamps"
+        },
+        {
+          "key": "c",
+          "text": "cooking"
+        },
+        {
+          "key": "d",
+          "text": "gardening"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"nấu ăn\" trong tiếng Anh là \"cooking\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-008",
+      "type": "single_choice",
+      "prompt": "\"làm vườn\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "collecting stamps"
+        },
+        {
+          "key": "b",
+          "text": "playing chess"
+        },
+        {
+          "key": "c",
+          "text": "listening to music"
+        },
+        {
+          "key": "d",
+          "text": "gardening"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"làm vườn\" trong tiếng Anh là \"gardening\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-009",
+      "type": "single_choice",
+      "prompt": "\"sưu tầm tem\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "collecting stamps"
+        },
+        {
+          "key": "b",
+          "text": "playing chess"
+        },
+        {
+          "key": "c",
+          "text": "watching TV"
+        },
+        {
+          "key": "d",
+          "text": "listening to music"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"sưu tầm tem\" trong tiếng Anh là \"collecting stamps\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-010",
+      "type": "single_choice",
+      "prompt": "\"chơi cờ vua\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "riding a bike"
+        },
+        {
+          "key": "b",
+          "text": "playing chess"
+        },
+        {
+          "key": "c",
+          "text": "watching TV"
+        },
+        {
+          "key": "d",
+          "text": "listening to music"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"chơi cờ vua\" trong tiếng Anh là \"playing chess\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-011",
+      "type": "single_choice",
+      "prompt": "\"nghe nhạc\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "watching TV"
+        },
+        {
+          "key": "b",
+          "text": "flying kites"
+        },
+        {
+          "key": "c",
+          "text": "listening to music"
+        },
+        {
+          "key": "d",
+          "text": "riding a bike"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"nghe nhạc\" trong tiếng Anh là \"listening to music\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-012",
+      "type": "single_choice",
+      "prompt": "\"xem ti vi\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "taking photos"
+        },
+        {
+          "key": "b",
+          "text": "riding a bike"
+        },
+        {
+          "key": "c",
+          "text": "flying kites"
+        },
+        {
+          "key": "d",
+          "text": "watching TV"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"xem ti vi\" trong tiếng Anh là \"watching TV\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-013",
+      "type": "single_choice",
+      "prompt": "\"đi xe đạp\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "riding a bike"
+        },
+        {
+          "key": "b",
+          "text": "taking photos"
+        },
+        {
+          "key": "c",
+          "text": "playing the piano"
+        },
+        {
+          "key": "d",
+          "text": "flying kites"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"đi xe đạp\" trong tiếng Anh là \"riding a bike\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-014",
+      "type": "single_choice",
+      "prompt": "\"thả diều\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "taking photos"
+        },
+        {
+          "key": "b",
+          "text": "flying kites"
+        },
+        {
+          "key": "c",
+          "text": "doing puzzles"
+        },
+        {
+          "key": "d",
+          "text": "playing the piano"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"thả diều\" trong tiếng Anh là \"flying kites\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-015",
+      "type": "single_choice",
+      "prompt": "\"chụp ảnh\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "doing puzzles"
+        },
+        {
+          "key": "b",
+          "text": "fishing"
+        },
+        {
+          "key": "c",
+          "text": "taking photos"
+        },
+        {
+          "key": "d",
+          "text": "playing the piano"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"chụp ảnh\" trong tiếng Anh là \"taking photos\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-016",
+      "type": "single_choice",
+      "prompt": "\"chơi đàn piano\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "doing puzzles"
+        },
+        {
+          "key": "b",
+          "text": "reading books"
+        },
+        {
+          "key": "c",
+          "text": "fishing"
+        },
+        {
+          "key": "d",
+          "text": "playing the piano"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"chơi đàn piano\" trong tiếng Anh là \"playing the piano\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-017",
+      "type": "single_choice",
+      "prompt": "\"chơi xếp hình\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "doing puzzles"
+        },
+        {
+          "key": "b",
+          "text": "reading books"
+        },
+        {
+          "key": "c",
+          "text": "fishing"
+        },
+        {
+          "key": "d",
+          "text": "playing football"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"chơi xếp hình\" trong tiếng Anh là \"doing puzzles\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-018",
+      "type": "single_choice",
+      "prompt": "\"câu cá\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "playing football"
+        },
+        {
+          "key": "b",
+          "text": "fishing"
+        },
+        {
+          "key": "c",
+          "text": "swimming"
+        },
+        {
+          "key": "d",
+          "text": "reading books"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"câu cá\" trong tiếng Anh là \"fishing\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-019",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"reading books\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "chơi bóng đá"
+        },
+        {
+          "key": "b",
+          "text": "vẽ tranh"
+        },
+        {
+          "key": "c",
+          "text": "đọc sách"
+        },
+        {
+          "key": "d",
+          "text": "bơi lội"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"reading books\" nghĩa là \"đọc sách\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-020",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"playing football\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bơi lội"
+        },
+        {
+          "key": "b",
+          "text": "vẽ tranh"
+        },
+        {
+          "key": "c",
+          "text": "ca hát"
+        },
+        {
+          "key": "d",
+          "text": "chơi bóng đá"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"playing football\" nghĩa là \"chơi bóng đá\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-021",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"swimming\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bơi lội"
+        },
+        {
+          "key": "b",
+          "text": "nhảy múa"
+        },
+        {
+          "key": "c",
+          "text": "ca hát"
+        },
+        {
+          "key": "d",
+          "text": "vẽ tranh"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"swimming\" nghĩa là \"bơi lội\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-022",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"drawing pictures\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ca hát"
+        },
+        {
+          "key": "b",
+          "text": "vẽ tranh"
+        },
+        {
+          "key": "c",
+          "text": "nhảy múa"
+        },
+        {
+          "key": "d",
+          "text": "nấu ăn"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"drawing pictures\" nghĩa là \"vẽ tranh\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-023",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"singing\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "làm vườn"
+        },
+        {
+          "key": "b",
+          "text": "nhảy múa"
+        },
+        {
+          "key": "c",
+          "text": "ca hát"
+        },
+        {
+          "key": "d",
+          "text": "nấu ăn"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"singing\" nghĩa là \"ca hát\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-024",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"dancing\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nấu ăn"
+        },
+        {
+          "key": "b",
+          "text": "làm vườn"
+        },
+        {
+          "key": "c",
+          "text": "sưu tầm tem"
+        },
+        {
+          "key": "d",
+          "text": "nhảy múa"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"dancing\" nghĩa là \"nhảy múa\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-025",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"cooking\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nấu ăn"
+        },
+        {
+          "key": "b",
+          "text": "sưu tầm tem"
+        },
+        {
+          "key": "c",
+          "text": "làm vườn"
+        },
+        {
+          "key": "d",
+          "text": "chơi cờ vua"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"cooking\" nghĩa là \"nấu ăn\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-026",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"gardening\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "sưu tầm tem"
+        },
+        {
+          "key": "b",
+          "text": "làm vườn"
+        },
+        {
+          "key": "c",
+          "text": "nghe nhạc"
+        },
+        {
+          "key": "d",
+          "text": "chơi cờ vua"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"gardening\" nghĩa là \"làm vườn\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-027",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"collecting stamps\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "chơi cờ vua"
+        },
+        {
+          "key": "b",
+          "text": "xem ti vi"
+        },
+        {
+          "key": "c",
+          "text": "sưu tầm tem"
+        },
+        {
+          "key": "d",
+          "text": "nghe nhạc"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"collecting stamps\" nghĩa là \"sưu tầm tem\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-028",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"playing chess\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "đi xe đạp"
+        },
+        {
+          "key": "b",
+          "text": "nghe nhạc"
+        },
+        {
+          "key": "c",
+          "text": "xem ti vi"
+        },
+        {
+          "key": "d",
+          "text": "chơi cờ vua"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"playing chess\" nghĩa là \"chơi cờ vua\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-029",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"listening to music\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nghe nhạc"
+        },
+        {
+          "key": "b",
+          "text": "thả diều"
+        },
+        {
+          "key": "c",
+          "text": "xem ti vi"
+        },
+        {
+          "key": "d",
+          "text": "đi xe đạp"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"listening to music\" nghĩa là \"nghe nhạc\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-030",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"watching TV\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "thả diều"
+        },
+        {
+          "key": "b",
+          "text": "xem ti vi"
+        },
+        {
+          "key": "c",
+          "text": "chụp ảnh"
+        },
+        {
+          "key": "d",
+          "text": "đi xe đạp"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"watching TV\" nghĩa là \"xem ti vi\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-031",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"riding a bike\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "chơi đàn piano"
+        },
+        {
+          "key": "b",
+          "text": "chụp ảnh"
+        },
+        {
+          "key": "c",
+          "text": "đi xe đạp"
+        },
+        {
+          "key": "d",
+          "text": "thả diều"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"riding a bike\" nghĩa là \"đi xe đạp\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-032",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"flying kites\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "chơi đàn piano"
+        },
+        {
+          "key": "b",
+          "text": "chơi xếp hình"
+        },
+        {
+          "key": "c",
+          "text": "chụp ảnh"
+        },
+        {
+          "key": "d",
+          "text": "thả diều"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"flying kites\" nghĩa là \"thả diều\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-033",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"taking photos\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "chụp ảnh"
+        },
+        {
+          "key": "b",
+          "text": "chơi xếp hình"
+        },
+        {
+          "key": "c",
+          "text": "câu cá"
+        },
+        {
+          "key": "d",
+          "text": "chơi đàn piano"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"taking photos\" nghĩa là \"chụp ảnh\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-034",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"playing the piano\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "chơi xếp hình"
+        },
+        {
+          "key": "b",
+          "text": "chơi đàn piano"
+        },
+        {
+          "key": "c",
+          "text": "đọc sách"
+        },
+        {
+          "key": "d",
+          "text": "câu cá"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"playing the piano\" nghĩa là \"chơi đàn piano\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-035",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"doing puzzles\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "câu cá"
+        },
+        {
+          "key": "b",
+          "text": "đọc sách"
+        },
+        {
+          "key": "c",
+          "text": "chơi xếp hình"
+        },
+        {
+          "key": "d",
+          "text": "chơi bóng đá"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"doing puzzles\" nghĩa là \"chơi xếp hình\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-036",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"fishing\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "đọc sách"
+        },
+        {
+          "key": "b",
+          "text": "bơi lội"
+        },
+        {
+          "key": "c",
+          "text": "chơi bóng đá"
+        },
+        {
+          "key": "d",
+          "text": "câu cá"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"fishing\" nghĩa là \"câu cá\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-037",
+      "type": "single_choice",
+      "prompt": "Chọn dạng đúng để hoàn thành câu: \"I enjoy ___ books in my free time.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "reading"
+        },
+        {
+          "key": "b",
+          "text": "read"
+        },
+        {
+          "key": "c",
+          "text": "to read"
+        },
+        {
+          "key": "d",
+          "text": "reads"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng động từ thêm -ing: \"read\" → \"reading\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-038",
+      "type": "single_choice",
+      "prompt": "Chọn dạng đúng để hoàn thành câu: \"My brother likes ___ football after school.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "to play"
+        },
+        {
+          "key": "b",
+          "text": "playing"
+        },
+        {
+          "key": "c",
+          "text": "play"
+        },
+        {
+          "key": "d",
+          "text": "plays"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng động từ thêm -ing: \"play\" → \"playing\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-039",
+      "type": "single_choice",
+      "prompt": "Chọn dạng đúng để hoàn thành câu: \"Lan loves ___ in the sea.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "swims"
+        },
+        {
+          "key": "b",
+          "text": "swim"
+        },
+        {
+          "key": "c",
+          "text": "swimming"
+        },
+        {
+          "key": "d",
+          "text": "to swim"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng động từ thêm -ing: \"swim\" → \"swimming\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-040",
+      "type": "single_choice",
+      "prompt": "Chọn dạng đúng để hoàn thành câu: \"I like ___ pictures of animals.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "to draw"
+        },
+        {
+          "key": "b",
+          "text": "draw"
+        },
+        {
+          "key": "c",
+          "text": "draws"
+        },
+        {
+          "key": "d",
+          "text": "drawing"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng động từ thêm -ing: \"draw\" → \"drawing\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-041",
+      "type": "single_choice",
+      "prompt": "Chọn dạng đúng để hoàn thành câu: \"My sister enjoys ___ English songs.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "singing"
+        },
+        {
+          "key": "b",
+          "text": "sing"
+        },
+        {
+          "key": "c",
+          "text": "to sing"
+        },
+        {
+          "key": "d",
+          "text": "sings"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng động từ thêm -ing: \"sing\" → \"singing\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-042",
+      "type": "single_choice",
+      "prompt": "Chọn dạng đúng để hoàn thành câu: \"They love ___ at the party.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "to dance"
+        },
+        {
+          "key": "b",
+          "text": "dancing"
+        },
+        {
+          "key": "c",
+          "text": "dances"
+        },
+        {
+          "key": "d",
+          "text": "dance"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng động từ thêm -ing: \"dance\" → \"dancing\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-043",
+      "type": "single_choice",
+      "prompt": "Chọn dạng đúng để hoàn thành câu: \"My mother likes ___ dinner for us.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "cooks"
+        },
+        {
+          "key": "b",
+          "text": "cook"
+        },
+        {
+          "key": "c",
+          "text": "cooking"
+        },
+        {
+          "key": "d",
+          "text": "to cook"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng động từ thêm -ing: \"cook\" → \"cooking\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-044",
+      "type": "single_choice",
+      "prompt": "Chọn dạng đúng để hoàn thành câu: \"I enjoy ___ to music before bed.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "listens"
+        },
+        {
+          "key": "b",
+          "text": "to listen"
+        },
+        {
+          "key": "c",
+          "text": "listen"
+        },
+        {
+          "key": "d",
+          "text": "listening"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng động từ thêm -ing: \"listen\" → \"listening\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-045",
+      "type": "single_choice",
+      "prompt": "Chọn dạng đúng để hoàn thành câu: \"Nam likes ___ his bike in the park.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "riding"
+        },
+        {
+          "key": "b",
+          "text": "rides"
+        },
+        {
+          "key": "c",
+          "text": "ride"
+        },
+        {
+          "key": "d",
+          "text": "to ride"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng động từ thêm -ing: \"ride\" → \"riding\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-046",
+      "type": "single_choice",
+      "prompt": "Chọn dạng đúng để hoàn thành câu: \"The children love ___ kites in the afternoon.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "fly"
+        },
+        {
+          "key": "b",
+          "text": "flying"
+        },
+        {
+          "key": "c",
+          "text": "flys"
+        },
+        {
+          "key": "d",
+          "text": "to fly"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng động từ thêm -ing: \"fly\" → \"flying\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-047",
+      "type": "single_choice",
+      "prompt": "Chọn câu đúng để nói rằng bạn thích đọc sách:",
+      "options": [
+        {
+          "key": "a",
+          "text": "I like read books."
+        },
+        {
+          "key": "b",
+          "text": "I am like reading books."
+        },
+        {
+          "key": "c",
+          "text": "I like reading books."
+        },
+        {
+          "key": "d",
+          "text": "I likes reading books."
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Nói về sở thích: \"I like reading books\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-048",
+      "type": "single_choice",
+      "prompt": "Chọn câu đúng để nói rằng bạn thích chơi bóng đá:",
+      "options": [
+        {
+          "key": "a",
+          "text": "I like play football."
+        },
+        {
+          "key": "b",
+          "text": "I am like playing football."
+        },
+        {
+          "key": "c",
+          "text": "I likes playing football."
+        },
+        {
+          "key": "d",
+          "text": "I like playing football."
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Nói về sở thích: \"I like playing football\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-049",
+      "type": "single_choice",
+      "prompt": "Chọn câu đúng để nói rằng bạn thích bơi lội:",
+      "options": [
+        {
+          "key": "a",
+          "text": "I like swimming."
+        },
+        {
+          "key": "b",
+          "text": "I am like swimming."
+        },
+        {
+          "key": "c",
+          "text": "I likes swimming."
+        },
+        {
+          "key": "d",
+          "text": "I like swim."
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Nói về sở thích: \"I like swimming\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-050",
+      "type": "single_choice",
+      "prompt": "Chọn câu đúng để nói rằng bạn thích vẽ tranh:",
+      "options": [
+        {
+          "key": "a",
+          "text": "I likes drawing pictures."
+        },
+        {
+          "key": "b",
+          "text": "I like drawing pictures."
+        },
+        {
+          "key": "c",
+          "text": "I am like drawing pictures."
+        },
+        {
+          "key": "d",
+          "text": "I like draw pictures."
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Nói về sở thích: \"I like drawing pictures\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-051",
+      "type": "single_choice",
+      "prompt": "Chọn câu đúng để nói rằng bạn thích ca hát:",
+      "options": [
+        {
+          "key": "a",
+          "text": "I am like singing."
+        },
+        {
+          "key": "b",
+          "text": "I likes singing."
+        },
+        {
+          "key": "c",
+          "text": "I like singing."
+        },
+        {
+          "key": "d",
+          "text": "I like sing."
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Nói về sở thích: \"I like singing\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-052",
+      "type": "single_choice",
+      "prompt": "Chọn câu đúng để nói rằng bạn thích nhảy múa:",
+      "options": [
+        {
+          "key": "a",
+          "text": "I like dance."
+        },
+        {
+          "key": "b",
+          "text": "I am like dancing."
+        },
+        {
+          "key": "c",
+          "text": "I likes dancing."
+        },
+        {
+          "key": "d",
+          "text": "I like dancing."
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Nói về sở thích: \"I like dancing\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-053",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 sở thích trong nhà: reading books, playing football, watching TV, swimming.",
+      "options": [
+        {
+          "key": "a",
+          "text": "swimming"
+        },
+        {
+          "key": "b",
+          "text": "playing football"
+        },
+        {
+          "key": "c",
+          "text": "reading books"
+        },
+        {
+          "key": "d",
+          "text": "watching TV"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "\"reading books\" và \"watching TV\" là sở thích trong nhà.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-054",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 sở thích ngoài trời: playing football, reading books, flying kites, cooking.",
+      "options": [
+        {
+          "key": "a",
+          "text": "cooking"
+        },
+        {
+          "key": "b",
+          "text": "flying kites"
+        },
+        {
+          "key": "c",
+          "text": "playing football"
+        },
+        {
+          "key": "d",
+          "text": "reading books"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "\"playing football\" và \"flying kites\" là sở thích ngoài trời.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-055",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 sở thích vận động: swimming, watching TV, riding a bike, listening to music.",
+      "options": [
+        {
+          "key": "a",
+          "text": "watching TV"
+        },
+        {
+          "key": "b",
+          "text": "swimming"
+        },
+        {
+          "key": "c",
+          "text": "listening to music"
+        },
+        {
+          "key": "d",
+          "text": "riding a bike"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "\"swimming\" và \"riding a bike\" là sở thích vận động.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-056",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 sở thích nghệ thuật: drawing pictures, playing chess, singing, fishing.",
+      "options": [
+        {
+          "key": "a",
+          "text": "drawing pictures"
+        },
+        {
+          "key": "b",
+          "text": "fishing"
+        },
+        {
+          "key": "c",
+          "text": "playing chess"
+        },
+        {
+          "key": "d",
+          "text": "singing"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "\"drawing pictures\" và \"singing\" là sở thích nghệ thuật.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-057",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 sở thích âm nhạc: singing, gardening, listening to music, fishing.",
+      "options": [
+        {
+          "key": "a",
+          "text": "listening to music"
+        },
+        {
+          "key": "b",
+          "text": "singing"
+        },
+        {
+          "key": "c",
+          "text": "fishing"
+        },
+        {
+          "key": "d",
+          "text": "gardening"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "\"singing\" và \"listening to music\" là sở thích âm nhạc.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-058",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 sở thích yên tĩnh: reading books, playing football, doing puzzles, dancing.",
+      "options": [
+        {
+          "key": "a",
+          "text": "dancing"
+        },
+        {
+          "key": "b",
+          "text": "reading books"
+        },
+        {
+          "key": "c",
+          "text": "playing football"
+        },
+        {
+          "key": "d",
+          "text": "doing puzzles"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "\"reading books\" và \"doing puzzles\" là sở thích yên tĩnh.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-059",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 sở thích sáng tạo: drawing pictures, watching TV, cooking, playing chess.",
+      "options": [
+        {
+          "key": "a",
+          "text": "drawing pictures"
+        },
+        {
+          "key": "b",
+          "text": "cooking"
+        },
+        {
+          "key": "c",
+          "text": "playing chess"
+        },
+        {
+          "key": "d",
+          "text": "watching TV"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "\"drawing pictures\" và \"cooking\" là sở thích sáng tạo.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-060",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 sở thích làm một mình: doing puzzles, playing football, fishing, dancing.",
+      "options": [
+        {
+          "key": "a",
+          "text": "fishing"
+        },
+        {
+          "key": "b",
+          "text": "dancing"
+        },
+        {
+          "key": "c",
+          "text": "doing puzzles"
+        },
+        {
+          "key": "d",
+          "text": "playing football"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "\"doing puzzles\" và \"fishing\" là sở thích làm một mình.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-061",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 sở thích dưới nước: swimming, drawing pictures, fishing, singing.",
+      "options": [
+        {
+          "key": "a",
+          "text": "drawing pictures"
+        },
+        {
+          "key": "b",
+          "text": "fishing"
+        },
+        {
+          "key": "c",
+          "text": "singing"
+        },
+        {
+          "key": "d",
+          "text": "swimming"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "\"swimming\" và \"fishing\" là sở thích dưới nước.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-062",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng khi nói về sở thích với động từ \"like\" và \"reading books\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "I like read books."
+        },
+        {
+          "key": "b",
+          "text": "She likes reading books."
+        },
+        {
+          "key": "c",
+          "text": "I like reading books."
+        },
+        {
+          "key": "d",
+          "text": "She like reading books."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Sau \"like/likes\" dùng -ing: \"I like reading books\", \"She likes reading books\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-063",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng khi nói về sở thích với động từ \"like\" và \"playing football\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "She likes playing football."
+        },
+        {
+          "key": "b",
+          "text": "I like playing football."
+        },
+        {
+          "key": "c",
+          "text": "I like play football."
+        },
+        {
+          "key": "d",
+          "text": "She like playing football."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Sau \"like/likes\" dùng -ing: \"I like playing football\", \"She likes playing football\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-064",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng khi nói về sở thích với động từ \"like\" và \"swimming\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "I like swimming."
+        },
+        {
+          "key": "b",
+          "text": "I like swim."
+        },
+        {
+          "key": "c",
+          "text": "She like swimming."
+        },
+        {
+          "key": "d",
+          "text": "She likes swimming."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Sau \"like/likes\" dùng -ing: \"I like swimming\", \"She likes swimming\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-065",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng khi nói về sở thích với động từ \"like\" và \"drawing pictures\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "I like draw pictures."
+        },
+        {
+          "key": "b",
+          "text": "I like drawing pictures."
+        },
+        {
+          "key": "c",
+          "text": "She likes drawing pictures."
+        },
+        {
+          "key": "d",
+          "text": "She like drawing pictures."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Sau \"like/likes\" dùng -ing: \"I like drawing pictures\", \"She likes drawing pictures\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-066",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng khi nói về sở thích với động từ \"like\" và \"singing\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "She likes singing."
+        },
+        {
+          "key": "b",
+          "text": "I like singing."
+        },
+        {
+          "key": "c",
+          "text": "She like singing."
+        },
+        {
+          "key": "d",
+          "text": "I like sing."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Sau \"like/likes\" dùng -ing: \"I like singing\", \"She likes singing\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-067",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng khi nói về sở thích với động từ \"like\" và \"dancing\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "She likes dancing."
+        },
+        {
+          "key": "b",
+          "text": "I like dancing."
+        },
+        {
+          "key": "c",
+          "text": "I like dance."
+        },
+        {
+          "key": "d",
+          "text": "She like dancing."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Sau \"like/likes\" dùng -ing: \"I like dancing\", \"She likes dancing\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-068",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng khi nói về sở thích với động từ \"like\" và \"cooking\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "She like cooking."
+        },
+        {
+          "key": "b",
+          "text": "She likes cooking."
+        },
+        {
+          "key": "c",
+          "text": "I like cook."
+        },
+        {
+          "key": "d",
+          "text": "I like cooking."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Sau \"like/likes\" dùng -ing: \"I like cooking\", \"She likes cooking\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-069",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng khi nói về sở thích với động từ \"like\" và \"gardening\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "I like gardening."
+        },
+        {
+          "key": "b",
+          "text": "She like gardening."
+        },
+        {
+          "key": "c",
+          "text": "She likes gardening."
+        },
+        {
+          "key": "d",
+          "text": "I like do gardening."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Sau \"like/likes\" dùng -ing: \"I like gardening\", \"She likes gardening\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-070",
+      "type": "true_false",
+      "prompt": "\"reading books\" có nghĩa là \"đọc sách\".",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: \"reading books\" nghĩa là \"đọc sách\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-071",
+      "type": "true_false",
+      "prompt": "\"playing football\" có nghĩa là \"nhảy múa\".",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: \"playing football\" nghĩa là \"chơi bóng đá\", không phải \"nhảy múa\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-072",
+      "type": "true_false",
+      "prompt": "\"swimming\" có nghĩa là \"bơi lội\".",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: \"swimming\" nghĩa là \"bơi lội\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-073",
+      "type": "true_false",
+      "prompt": "\"drawing pictures\" có nghĩa là \"làm vườn\".",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: \"drawing pictures\" nghĩa là \"vẽ tranh\", không phải \"làm vườn\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-074",
+      "type": "true_false",
+      "prompt": "\"singing\" có nghĩa là \"ca hát\".",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: \"singing\" nghĩa là \"ca hát\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-075",
+      "type": "true_false",
+      "prompt": "\"dancing\" có nghĩa là \"chơi cờ vua\".",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: \"dancing\" nghĩa là \"nhảy múa\", không phải \"chơi cờ vua\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-076",
+      "type": "true_false",
+      "prompt": "\"cooking\" có nghĩa là \"nấu ăn\".",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: \"cooking\" nghĩa là \"nấu ăn\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-077",
+      "type": "true_false",
+      "prompt": "\"gardening\" có nghĩa là \"xem ti vi\".",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: \"gardening\" nghĩa là \"làm vườn\", không phải \"xem ti vi\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-078",
+      "type": "true_false",
+      "prompt": "\"collecting stamps\" có nghĩa là \"sưu tầm tem\".",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: \"collecting stamps\" nghĩa là \"sưu tầm tem\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-079",
+      "type": "true_false",
+      "prompt": "\"playing chess\" có nghĩa là \"thả diều\".",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: \"playing chess\" nghĩa là \"chơi cờ vua\", không phải \"thả diều\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-080",
+      "type": "true_false",
+      "prompt": "Sau động từ \"like\" ta có thể dùng động từ thêm -ing.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: \"I like reading books\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-081",
+      "type": "true_false",
+      "prompt": "Sau động từ \"like\" ta phải dùng động từ nguyên mẫu, không dùng -ing.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: \"I like playing football\" mới đúng, sau \"like\" dùng -ing.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-082",
+      "type": "true_false",
+      "prompt": "Câu \"She enjoys swimming\" dùng đúng dạng -ing sau \"enjoys\".",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: sau \"enjoy\" dùng động từ thêm -ing.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-083",
+      "type": "true_false",
+      "prompt": "Câu \"She enjoy swimming\" là câu đúng.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: chủ ngữ \"she\" phải dùng \"enjoys\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-084",
+      "type": "true_false",
+      "prompt": "Câu hỏi \"What is your hobby?\" dùng để hỏi về sở thích.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: câu này hỏi \"Sở thích của bạn là gì?\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-085",
+      "type": "true_false",
+      "prompt": "Động từ \"swim\" thêm -ing thành \"swiming\".",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: phải gấp đôi phụ âm cuối: \"swimming\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-086",
+      "type": "true_false",
+      "prompt": "Động từ \"dance\" thêm -ing thành \"dancing\".",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: bỏ -e rồi thêm -ing: \"dance\" → \"dancing\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-087",
+      "type": "fill_in",
+      "prompt": "Sở thích \"đọc sách\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "reading books"
+        ]
+      },
+      "explanation": "\"đọc sách\" trong tiếng Anh là \"reading books\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-088",
+      "type": "fill_in",
+      "prompt": "Sở thích \"chơi bóng đá\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "playing football"
+        ]
+      },
+      "explanation": "\"chơi bóng đá\" trong tiếng Anh là \"playing football\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-089",
+      "type": "fill_in",
+      "prompt": "Sở thích \"bơi lội\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "swimming"
+        ]
+      },
+      "explanation": "\"bơi lội\" trong tiếng Anh là \"swimming\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-090",
+      "type": "fill_in",
+      "prompt": "Sở thích \"vẽ tranh\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "drawing pictures"
+        ]
+      },
+      "explanation": "\"vẽ tranh\" trong tiếng Anh là \"drawing pictures\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-091",
+      "type": "fill_in",
+      "prompt": "Sở thích \"ca hát\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "singing"
+        ]
+      },
+      "explanation": "\"ca hát\" trong tiếng Anh là \"singing\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-092",
+      "type": "fill_in",
+      "prompt": "Sở thích \"nhảy múa\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "dancing"
+        ]
+      },
+      "explanation": "\"nhảy múa\" trong tiếng Anh là \"dancing\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-093",
+      "type": "fill_in",
+      "prompt": "Sở thích \"nấu ăn\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "cooking"
+        ]
+      },
+      "explanation": "\"nấu ăn\" trong tiếng Anh là \"cooking\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-094",
+      "type": "fill_in",
+      "prompt": "Sở thích \"làm vườn\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "gardening"
+        ]
+      },
+      "explanation": "\"làm vườn\" trong tiếng Anh là \"gardening\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-095",
+      "type": "fill_in",
+      "prompt": "Sở thích \"sưu tầm tem\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "collecting stamps"
+        ]
+      },
+      "explanation": "\"sưu tầm tem\" trong tiếng Anh là \"collecting stamps\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-096",
+      "type": "fill_in",
+      "prompt": "Sở thích \"chơi cờ vua\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "playing chess"
+        ]
+      },
+      "explanation": "\"chơi cờ vua\" trong tiếng Anh là \"playing chess\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-097",
+      "type": "fill_in",
+      "prompt": "Điền dạng -ing của động từ \"read\": ___ .",
+      "answer": {
+        "accepted": [
+          "reading"
+        ]
+      },
+      "explanation": "\"read\" thêm -ing thành \"reading\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-098",
+      "type": "fill_in",
+      "prompt": "Điền dạng -ing của động từ \"play\": ___ .",
+      "answer": {
+        "accepted": [
+          "playing"
+        ]
+      },
+      "explanation": "\"play\" thêm -ing thành \"playing\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-099",
+      "type": "fill_in",
+      "prompt": "Điền dạng -ing của động từ \"swim\": ___ .",
+      "answer": {
+        "accepted": [
+          "swimming"
+        ]
+      },
+      "explanation": "\"swim\" thêm -ing thành \"swimming\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-100",
+      "type": "fill_in",
+      "prompt": "Điền dạng -ing của động từ \"draw\": ___ .",
+      "answer": {
+        "accepted": [
+          "drawing"
+        ]
+      },
+      "explanation": "\"draw\" thêm -ing thành \"drawing\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-101",
+      "type": "fill_in",
+      "prompt": "Điền dạng -ing của động từ \"sing\": ___ .",
+      "answer": {
+        "accepted": [
+          "singing"
+        ]
+      },
+      "explanation": "\"sing\" thêm -ing thành \"singing\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-102",
+      "type": "fill_in",
+      "prompt": "Điền dạng -ing của động từ \"dance\": ___ .",
+      "answer": {
+        "accepted": [
+          "dancing"
+        ]
+      },
+      "explanation": "\"dance\" thêm -ing thành \"dancing\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-103",
+      "type": "fill_in",
+      "prompt": "Điền dạng đúng của \"read\" vào chỗ trống: \"I enjoy ___ books in my free time.\"",
+      "answer": {
+        "accepted": [
+          "reading"
+        ]
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng \"reading\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-104",
+      "type": "fill_in",
+      "prompt": "Điền dạng đúng của \"play\" vào chỗ trống: \"My brother likes ___ football after school.\"",
+      "answer": {
+        "accepted": [
+          "playing"
+        ]
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng \"playing\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-105",
+      "type": "fill_in",
+      "prompt": "Điền dạng đúng của \"swim\" vào chỗ trống: \"Lan loves ___ in the sea.\"",
+      "answer": {
+        "accepted": [
+          "swimming"
+        ]
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng \"swimming\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-106",
+      "type": "fill_in",
+      "prompt": "Điền dạng đúng của \"draw\" vào chỗ trống: \"I like ___ pictures of animals.\"",
+      "answer": {
+        "accepted": [
+          "drawing"
+        ]
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng \"drawing\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-107",
+      "type": "fill_in",
+      "prompt": "Điền dạng đúng của \"sing\" vào chỗ trống: \"My sister enjoys ___ English songs.\"",
+      "answer": {
+        "accepted": [
+          "singing"
+        ]
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng \"singing\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-hobbies-108",
+      "type": "fill_in",
+      "prompt": "Điền dạng đúng của \"dance\" vào chỗ trống: \"They love ___ at the party.\"",
+      "answer": {
+        "accepted": [
+          "dancing"
+        ]
+      },
+      "explanation": "Sau \"like/enjoy/love\" dùng \"dancing\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

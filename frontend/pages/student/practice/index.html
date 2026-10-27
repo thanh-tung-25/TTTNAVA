@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luyện tập — Bé Học Vui</title>
+  <link rel="icon" href="/assets/avatars/cu.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
+</head>
+<body>
+  <header id="app-header"></header>
+  <main class="page">
+    <section id="setup-view">
+      <div class="page-head">
+        <div>
+          <p class="eyebrow">Luyện tập</p>
+          <h1>Chọn chủ đề con muốn học</h1>
+          <p>Mỗi lượt có 10 câu, có giải thích ngay sau mỗi câu.</p>
+        </div>
+      </div>
+      <div class="tabs" id="subject-tabs" role="tablist" aria-label="Chọn môn học"></div>
+      <div id="topic-list" class="topic-list"><div class="loading">Đang tải chủ đề…</div></div>
+    </section>
+
+    <section id="quiz-view" class="hidden">
+      <div class="quiz-top">
+        <button class="btn btn-ghost btn-sm" id="quit-button" type="button">← Chọn chủ đề khác</button>
+        <div class="quiz-meta">
+          <span class="badge" id="quiz-topic">Luyện tập</span>
+          <span class="badge badge-muted" id="quiz-progress">Câu 1/10</span>
+        </div>
+      </div>
+      <div class="progress" aria-hidden="true"><span id="quiz-bar"></span></div>
+      <article class="card question-card">
+        <span class="question-type" id="question-type"></span>
+        <h2 class="question-prompt" id="question-prompt"></h2>
+        <div id="answer-area"></div>
+        <div class="feedback hidden" id="feedback" role="status"></div>
+        <div class="quiz-actions">
+          <button class="btn" id="check-button" type="button">Kiểm tra</button>
+          <button class="btn btn-ghost hidden" id="next-button" type="button">Câu tiếp →</button>
+        </div>
+      </article>
+    </section>
+
+    <section id="result-view" class="hidden">
+      <article class="card">
+        <div class="result-hero">
+          <span class="result-emoji" id="result-emoji">🎉</span>
+          <h1 id="result-title">Hoàn thành!</h1>
+          <p class="muted" id="result-message"></p>
+          <div class="result-score"><span id="result-percent">0</span><small>%</small></div>
+          <div class="result-stats">
+            <span class="badge badge-success" id="result-correct"></span>
+            <span class="badge badge-warning" id="result-diamonds"></span>
+          </div>
+        </div>
+        <div class="quiz-actions" style="justify-content:center">
+          <a class="btn" href="/pages/student/practice/" id="again-link">Luyện chủ đề khác</a>
+          <a class="btn btn-ghost" href="/pages/student/home/">Về trang chủ</a>
+        </div>
+      </article>
+      <article class="card">
+        <h2>Xem lại câu làm sai</h2>
+        <div id="review-list" class="review-list"></div>
+      </article>
+    </section>
+  </main>
+  <script type="module" src="/assets/js/practice.js"></script>
+</body>
+</html>

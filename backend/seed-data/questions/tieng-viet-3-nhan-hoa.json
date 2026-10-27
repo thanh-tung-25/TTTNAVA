@@ -1,0 +1,605 @@
+{
+  "topic": {
+    "id": "tieng-viet-3-nhan-hoa",
+    "subjectId": "tieng-viet",
+    "grade": 3,
+    "slug": "nhan-hoa",
+    "name": "Biện pháp nhân hóa",
+    "sortOrder": 3
+  },
+  "questions": [
+    {
+      "id": "tieng-viet-3-nhan-hoa-001",
+      "type": "single_choice",
+      "prompt": "Trong câu “Chị gió chăm chỉ quét lá”, sự vật nào được nhân hóa?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Gió"
+        },
+        {
+          "key": "b",
+          "text": "Chị"
+        },
+        {
+          "key": "c",
+          "text": "Sân"
+        },
+        {
+          "key": "d",
+          "text": "Lá"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Gió được gọi là “chị” và biết quét lá.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-002",
+      "type": "single_choice",
+      "prompt": "Câu nào có hình ảnh nhân hóa?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nắng chiếu xuống mái nhà."
+        },
+        {
+          "key": "b",
+          "text": "Anh nắng tinh nghịch nhảy trên mái nhà."
+        },
+        {
+          "key": "c",
+          "text": "Trời hôm nay nắng."
+        },
+        {
+          "key": "d",
+          "text": "Mái nhà rất cao."
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Nắng được gọi là “anh” và “nhảy” như người.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-003",
+      "type": "single_choice",
+      "prompt": "Trong câu “Bác bàng dang tay che mát sân trường”, sự vật nào được gọi bằng từ chỉ người?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bóng mát"
+        },
+        {
+          "key": "b",
+          "text": "cái lá"
+        },
+        {
+          "key": "c",
+          "text": "Bác bàng"
+        },
+        {
+          "key": "d",
+          "text": "sân trường"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Cây bàng được gọi là “bác”.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-004",
+      "type": "single_choice",
+      "prompt": "Trong câu “Mèo con nũng nịu bên mẹ”, con mèo được nhân hóa qua từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bên"
+        },
+        {
+          "key": "b",
+          "text": "mèo con"
+        },
+        {
+          "key": "c",
+          "text": "mẹ"
+        },
+        {
+          "key": "d",
+          "text": "nũng nịu"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Nũng nịu” là từ tả người, dùng để tả mèo.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-005",
+      "type": "single_choice",
+      "prompt": "Câu nào không có hình ảnh nhân hóa?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Con sông dài và rộng."
+        },
+        {
+          "key": "b",
+          "text": "Ông mặt trời thức dậy."
+        },
+        {
+          "key": "c",
+          "text": "Chị mây áo trắng đi chơi."
+        },
+        {
+          "key": "d",
+          "text": "Dòng sông hiền hòa chảy."
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Câu chỉ tả đặc điểm, không gọi sự vật như người.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-006",
+      "type": "single_choice",
+      "prompt": "Cách nhân hóa trong câu “Những chị lúa phất phơ mái tóc vàng” là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Dùng từ chỉ màu sắc"
+        },
+        {
+          "key": "b",
+          "text": "Gọi lúa là “chị”"
+        },
+        {
+          "key": "c",
+          "text": "Tả lúa như đồ vật"
+        },
+        {
+          "key": "d",
+          "text": "So sánh lúa với người"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Lúa được gọi bằng từ chỉ người.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-007",
+      "type": "single_choice",
+      "prompt": "Trong câu “Chú gà trống kiêu hãnh gáy vang”, từ nào thể hiện nhân hóa?",
+      "options": [
+        {
+          "key": "a",
+          "text": "gà trống"
+        },
+        {
+          "key": "b",
+          "text": "gáy vang"
+        },
+        {
+          "key": "c",
+          "text": "kiêu hãnh"
+        },
+        {
+          "key": "d",
+          "text": "sân"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "“Kiêu hãnh” là từ chỉ tính cách của người.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-008",
+      "type": "single_choice",
+      "prompt": "Câu nào gọi sự vật bằng từ chỉ người?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Hoa hồng nở đẹp."
+        },
+        {
+          "key": "b",
+          "text": "Hoa hồng có gai."
+        },
+        {
+          "key": "c",
+          "text": "Em tưới hoa hồng."
+        },
+        {
+          "key": "d",
+          "text": "Chị Hoa hồng khoe sắc."
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Hoa hồng được gọi là “chị”.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-009",
+      "type": "single_choice",
+      "prompt": "Nhân hóa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Gọi hoặc tả sự vật bằng từ ngữ dùng cho người"
+        },
+        {
+          "key": "b",
+          "text": "Kể lại một câu chuyện"
+        },
+        {
+          "key": "c",
+          "text": "So sánh hai sự vật"
+        },
+        {
+          "key": "d",
+          "text": "Dùng từ trái nghĩa"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Nhân hóa làm sự vật trở nên gần gũi.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-010",
+      "type": "single_choice",
+      "prompt": "Trong câu “Mặt trời thức dậy rất sớm”, từ nào cho thấy nhân hóa?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mặt trời"
+        },
+        {
+          "key": "b",
+          "text": "thức dậy"
+        },
+        {
+          "key": "c",
+          "text": "sớm"
+        },
+        {
+          "key": "d",
+          "text": "rất"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "“Thức dậy” là hoạt động của người.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-011",
+      "type": "single_choice",
+      "prompt": "Câu nào có hình ảnh nhân hóa về con vật?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Em bắt chuồn chuồn."
+        },
+        {
+          "key": "b",
+          "text": "Chuồn chuồn bay thấp."
+        },
+        {
+          "key": "c",
+          "text": "Chị chuồn chuồn ớt áo đỏ đi chơi."
+        },
+        {
+          "key": "d",
+          "text": "Chuồn chuồn có cánh mỏng."
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Chuồn chuồn được gọi là “chị”, mặc áo và đi chơi.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-012",
+      "type": "single_choice",
+      "prompt": "Trong câu “Cây phượng khoác áo đỏ rực”, từ nào dùng để tả người?",
+      "options": [
+        {
+          "key": "a",
+          "text": "cây phượng"
+        },
+        {
+          "key": "b",
+          "text": "áo"
+        },
+        {
+          "key": "c",
+          "text": "đỏ rực"
+        },
+        {
+          "key": "d",
+          "text": "khoác áo"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "“Khoác áo” là hoạt động của người.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các sự vật được nhân hóa trong câu “Chị gió và anh nắng cùng đi chơi”.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nhà"
+        },
+        {
+          "key": "b",
+          "text": "Nắng"
+        },
+        {
+          "key": "c",
+          "text": "Gió"
+        },
+        {
+          "key": "d",
+          "text": "Cây"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Gió được gọi là “chị”, nắng được gọi là “anh”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ thường dùng để nhân hóa sự vật.",
+      "options": [
+        {
+          "key": "a",
+          "text": "chị"
+        },
+        {
+          "key": "b",
+          "text": "anh"
+        },
+        {
+          "key": "c",
+          "text": "cái"
+        },
+        {
+          "key": "d",
+          "text": "những"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "“Chị”, “anh” là từ chỉ người dùng để gọi sự vật.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các câu có hình ảnh nhân hóa.",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bác mặt trời tỏa nắng ấm."
+        },
+        {
+          "key": "b",
+          "text": "Mặt trời tỏa nắng ấm."
+        },
+        {
+          "key": "c",
+          "text": "Mây trắng bay trên trời."
+        },
+        {
+          "key": "d",
+          "text": "Chị mây khoác áo trắng."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Hai câu đầu gọi sự vật bằng từ chỉ người.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn các từ chỉ hoạt động của người được dùng để tả sự vật trong câu “Dòng sông hát ru bờ cát”.",
+      "options": [
+        {
+          "key": "a",
+          "text": "ru"
+        },
+        {
+          "key": "b",
+          "text": "bờ cát"
+        },
+        {
+          "key": "c",
+          "text": "dòng sông"
+        },
+        {
+          "key": "d",
+          "text": "hát"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "“Hát”, “ru” là hoạt động của người.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-017",
+      "type": "true_false",
+      "prompt": "Nhân hóa là gọi sự vật bằng từ ngữ dùng cho người.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đó là cách làm sự vật trở nên sinh động.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-018",
+      "type": "true_false",
+      "prompt": "Câu “Con mèo nằm ngủ.” có hình ảnh nhân hóa.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Câu chỉ tả hoạt động bình thường của mèo.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-019",
+      "type": "true_false",
+      "prompt": "Câu “Chị nắng nhảy múa trên sân” có hình ảnh nhân hóa.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Nắng được gọi là “chị” và “nhảy múa”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-020",
+      "type": "true_false",
+      "prompt": "Nhân hóa làm câu văn khô khan hơn.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Nhân hóa làm câu văn sinh động, gần gũi hơn.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-021",
+      "type": "fill_in",
+      "prompt": "Điền từ chỉ người để nhân hóa mặt trời: “___ mặt trời thức dậy.”",
+      "answer": {
+        "accepted": [
+          "Ông",
+          "Chị",
+          "Anh",
+          "Bác"
+        ]
+      },
+      "explanation": "Có thể gọi mặt trời là ông, chị, anh, bác.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-022",
+      "type": "fill_in",
+      "prompt": "Điền hoạt động của người để nhân hóa dòng sông: “Dòng sông ___ ru bờ cát.”",
+      "answer": {
+        "accepted": [
+          "hát",
+          "thì thầm"
+        ]
+      },
+      "explanation": "Dòng sông được tả như người hát ru.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-023",
+      "type": "fill_in",
+      "prompt": "Điền từ chỉ người để nhân hóa gió: “___ gió chăm chỉ quét lá.”",
+      "answer": {
+        "accepted": [
+          "Chị",
+          "Anh",
+          "Bác"
+        ]
+      },
+      "explanation": "Gió được gọi bằng từ chỉ người.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-024",
+      "type": "fill_in",
+      "prompt": "Điền hoạt động của người: “Cây phượng ___ áo đỏ rực.”",
+      "answer": {
+        "accepted": [
+          "khoác",
+          "mặc"
+        ]
+      },
+      "explanation": "Cây phượng được tả như người mặc áo.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-3-nhan-hoa-025",
+      "type": "fill_in",
+      "prompt": "Điền từ chỉ người: “___ gà trống kiêu hãnh gáy vang.”",
+      "answer": {
+        "accepted": [
+          "Chú",
+          "Anh"
+        ]
+      },
+      "explanation": "Gà trống được gọi là “chú” hoặc “anh”.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

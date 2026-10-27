@@ -1,0 +1,2537 @@
+{
+  "topic": {
+    "id": "tieng-anh-5-daily-routines",
+    "subjectId": "tieng-anh",
+    "grade": 5,
+    "slug": "daily-routines",
+    "name": "Thói quen hằng ngày",
+    "sortOrder": 6
+  },
+  "questions": [
+    {
+      "id": "tieng-anh-5-daily-routines-001",
+      "type": "single_choice",
+      "prompt": "\"thức dậy\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "get up"
+        },
+        {
+          "key": "b",
+          "text": "wash my face"
+        },
+        {
+          "key": "c",
+          "text": "brush my teeth"
+        },
+        {
+          "key": "d",
+          "text": "have breakfast"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"thức dậy\" trong tiếng Anh là \"get up\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-002",
+      "type": "single_choice",
+      "prompt": "\"đánh răng\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "go to school"
+        },
+        {
+          "key": "b",
+          "text": "brush my teeth"
+        },
+        {
+          "key": "c",
+          "text": "wash my face"
+        },
+        {
+          "key": "d",
+          "text": "have breakfast"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"đánh răng\" trong tiếng Anh là \"brush my teeth\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-003",
+      "type": "single_choice",
+      "prompt": "\"rửa mặt\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "go to school"
+        },
+        {
+          "key": "b",
+          "text": "do my homework"
+        },
+        {
+          "key": "c",
+          "text": "wash my face"
+        },
+        {
+          "key": "d",
+          "text": "have breakfast"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"rửa mặt\" trong tiếng Anh là \"wash my face\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-004",
+      "type": "single_choice",
+      "prompt": "\"ăn sáng\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "do my homework"
+        },
+        {
+          "key": "b",
+          "text": "go to school"
+        },
+        {
+          "key": "c",
+          "text": "have lunch"
+        },
+        {
+          "key": "d",
+          "text": "have breakfast"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"ăn sáng\" trong tiếng Anh là \"have breakfast\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-005",
+      "type": "single_choice",
+      "prompt": "\"đi học\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "go to school"
+        },
+        {
+          "key": "b",
+          "text": "have lunch"
+        },
+        {
+          "key": "c",
+          "text": "take a shower"
+        },
+        {
+          "key": "d",
+          "text": "do my homework"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"đi học\" trong tiếng Anh là \"go to school\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-006",
+      "type": "single_choice",
+      "prompt": "\"làm bài tập về nhà\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "go to bed"
+        },
+        {
+          "key": "b",
+          "text": "do my homework"
+        },
+        {
+          "key": "c",
+          "text": "take a shower"
+        },
+        {
+          "key": "d",
+          "text": "have lunch"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"làm bài tập về nhà\" trong tiếng Anh là \"do my homework\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-007",
+      "type": "single_choice",
+      "prompt": "\"ăn trưa\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "take a shower"
+        },
+        {
+          "key": "b",
+          "text": "go to bed"
+        },
+        {
+          "key": "c",
+          "text": "have lunch"
+        },
+        {
+          "key": "d",
+          "text": "watch TV"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"ăn trưa\" trong tiếng Anh là \"have lunch\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-008",
+      "type": "single_choice",
+      "prompt": "\"tắm vòi sen\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "play sports"
+        },
+        {
+          "key": "b",
+          "text": "watch TV"
+        },
+        {
+          "key": "c",
+          "text": "go to bed"
+        },
+        {
+          "key": "d",
+          "text": "take a shower"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"tắm vòi sen\" trong tiếng Anh là \"take a shower\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-009",
+      "type": "single_choice",
+      "prompt": "\"đi ngủ\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "go to bed"
+        },
+        {
+          "key": "b",
+          "text": "play sports"
+        },
+        {
+          "key": "c",
+          "text": "watch TV"
+        },
+        {
+          "key": "d",
+          "text": "help my mom"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"đi ngủ\" trong tiếng Anh là \"go to bed\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-010",
+      "type": "single_choice",
+      "prompt": "\"xem ti vi\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "help my mom"
+        },
+        {
+          "key": "b",
+          "text": "watch TV"
+        },
+        {
+          "key": "c",
+          "text": "clean my room"
+        },
+        {
+          "key": "d",
+          "text": "play sports"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"xem ti vi\" trong tiếng Anh là \"watch TV\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-011",
+      "type": "single_choice",
+      "prompt": "\"chơi thể thao\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "feed the cat"
+        },
+        {
+          "key": "b",
+          "text": "clean my room"
+        },
+        {
+          "key": "c",
+          "text": "play sports"
+        },
+        {
+          "key": "d",
+          "text": "help my mom"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"chơi thể thao\" trong tiếng Anh là \"play sports\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-012",
+      "type": "single_choice",
+      "prompt": "\"giúp mẹ\" trong tiếng Anh là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "clean my room"
+        },
+        {
+          "key": "b",
+          "text": "walk to school"
+        },
+        {
+          "key": "c",
+          "text": "feed the cat"
+        },
+        {
+          "key": "d",
+          "text": "help my mom"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"giúp mẹ\" trong tiếng Anh là \"help my mom\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-013",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"have lunch\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ăn trưa"
+        },
+        {
+          "key": "b",
+          "text": "đi bộ đến trường"
+        },
+        {
+          "key": "c",
+          "text": "dọn phòng"
+        },
+        {
+          "key": "d",
+          "text": "cho mèo ăn"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"have lunch\" nghĩa là \"ăn trưa\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-014",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"take a shower\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "đi bộ đến trường"
+        },
+        {
+          "key": "b",
+          "text": "tắm vòi sen"
+        },
+        {
+          "key": "c",
+          "text": "cho mèo ăn"
+        },
+        {
+          "key": "d",
+          "text": "học tiếng Anh"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"take a shower\" nghĩa là \"tắm vòi sen\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-015",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"go to bed\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nghe nhạc"
+        },
+        {
+          "key": "b",
+          "text": "đi bộ đến trường"
+        },
+        {
+          "key": "c",
+          "text": "đi ngủ"
+        },
+        {
+          "key": "d",
+          "text": "học tiếng Anh"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"go to bed\" nghĩa là \"đi ngủ\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-016",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"watch TV\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nghe nhạc"
+        },
+        {
+          "key": "b",
+          "text": "học tiếng Anh"
+        },
+        {
+          "key": "c",
+          "text": "ăn tối"
+        },
+        {
+          "key": "d",
+          "text": "xem ti vi"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"watch TV\" nghĩa là \"xem ti vi\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-017",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"play sports\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "chơi thể thao"
+        },
+        {
+          "key": "b",
+          "text": "nghe nhạc"
+        },
+        {
+          "key": "c",
+          "text": "thức dậy"
+        },
+        {
+          "key": "d",
+          "text": "ăn tối"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"play sports\" nghĩa là \"chơi thể thao\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-018",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"help my mom\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ăn tối"
+        },
+        {
+          "key": "b",
+          "text": "giúp mẹ"
+        },
+        {
+          "key": "c",
+          "text": "đánh răng"
+        },
+        {
+          "key": "d",
+          "text": "thức dậy"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"help my mom\" nghĩa là \"giúp mẹ\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-019",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"clean my room\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "thức dậy"
+        },
+        {
+          "key": "b",
+          "text": "đánh răng"
+        },
+        {
+          "key": "c",
+          "text": "dọn phòng"
+        },
+        {
+          "key": "d",
+          "text": "rửa mặt"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"clean my room\" nghĩa là \"dọn phòng\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-020",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"feed the cat\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "đánh răng"
+        },
+        {
+          "key": "b",
+          "text": "rửa mặt"
+        },
+        {
+          "key": "c",
+          "text": "ăn sáng"
+        },
+        {
+          "key": "d",
+          "text": "cho mèo ăn"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"feed the cat\" nghĩa là \"cho mèo ăn\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-021",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"walk to school\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "đi bộ đến trường"
+        },
+        {
+          "key": "b",
+          "text": "rửa mặt"
+        },
+        {
+          "key": "c",
+          "text": "đi học"
+        },
+        {
+          "key": "d",
+          "text": "ăn sáng"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"walk to school\" nghĩa là \"đi bộ đến trường\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-022",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"study English\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "làm bài tập về nhà"
+        },
+        {
+          "key": "b",
+          "text": "học tiếng Anh"
+        },
+        {
+          "key": "c",
+          "text": "đi học"
+        },
+        {
+          "key": "d",
+          "text": "ăn sáng"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"study English\" nghĩa là \"học tiếng Anh\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-023",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"listen to music\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "đi học"
+        },
+        {
+          "key": "b",
+          "text": "ăn trưa"
+        },
+        {
+          "key": "c",
+          "text": "nghe nhạc"
+        },
+        {
+          "key": "d",
+          "text": "làm bài tập về nhà"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"listen to music\" nghĩa là \"nghe nhạc\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-024",
+      "type": "single_choice",
+      "prompt": "Cụm từ \"have dinner\" có nghĩa là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "làm bài tập về nhà"
+        },
+        {
+          "key": "b",
+          "text": "tắm vòi sen"
+        },
+        {
+          "key": "c",
+          "text": "ăn trưa"
+        },
+        {
+          "key": "d",
+          "text": "ăn tối"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"have dinner\" nghĩa là \"ăn tối\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-025",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 6:00 a.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "get up"
+        },
+        {
+          "key": "b",
+          "text": "have lunch"
+        },
+        {
+          "key": "c",
+          "text": "go to bed"
+        },
+        {
+          "key": "d",
+          "text": "take a shower"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 6:00 a.m. là \"get up\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-026",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 6:15 a.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "go to bed"
+        },
+        {
+          "key": "b",
+          "text": "brush my teeth"
+        },
+        {
+          "key": "c",
+          "text": "watch TV"
+        },
+        {
+          "key": "d",
+          "text": "take a shower"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 6:15 a.m. là \"brush my teeth\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-027",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 6:20 a.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "go to bed"
+        },
+        {
+          "key": "b",
+          "text": "play sports"
+        },
+        {
+          "key": "c",
+          "text": "wash my face"
+        },
+        {
+          "key": "d",
+          "text": "watch TV"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 6:20 a.m. là \"wash my face\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-028",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 6:30 a.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "help my mom"
+        },
+        {
+          "key": "b",
+          "text": "play sports"
+        },
+        {
+          "key": "c",
+          "text": "watch TV"
+        },
+        {
+          "key": "d",
+          "text": "have breakfast"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 6:30 a.m. là \"have breakfast\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-029",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 7:00 a.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "go to school"
+        },
+        {
+          "key": "b",
+          "text": "play sports"
+        },
+        {
+          "key": "c",
+          "text": "clean my room"
+        },
+        {
+          "key": "d",
+          "text": "help my mom"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 7:00 a.m. là \"go to school\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-030",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 11:30 a.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "feed the cat"
+        },
+        {
+          "key": "b",
+          "text": "have lunch"
+        },
+        {
+          "key": "c",
+          "text": "help my mom"
+        },
+        {
+          "key": "d",
+          "text": "clean my room"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 11:30 a.m. là \"have lunch\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-031",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 2:00 p.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "walk to school"
+        },
+        {
+          "key": "b",
+          "text": "clean my room"
+        },
+        {
+          "key": "c",
+          "text": "study English"
+        },
+        {
+          "key": "d",
+          "text": "feed the cat"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 2:00 p.m. là \"study English\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-032",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 3:00 p.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "walk to school"
+        },
+        {
+          "key": "b",
+          "text": "study English"
+        },
+        {
+          "key": "c",
+          "text": "feed the cat"
+        },
+        {
+          "key": "d",
+          "text": "play sports"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 3:00 p.m. là \"play sports\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-033",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 4:00 p.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "feed the cat"
+        },
+        {
+          "key": "b",
+          "text": "listen to music"
+        },
+        {
+          "key": "c",
+          "text": "walk to school"
+        },
+        {
+          "key": "d",
+          "text": "study English"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 4:00 p.m. là \"feed the cat\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-034",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 4:30 p.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "listen to music"
+        },
+        {
+          "key": "b",
+          "text": "do my homework"
+        },
+        {
+          "key": "c",
+          "text": "have dinner"
+        },
+        {
+          "key": "d",
+          "text": "study English"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 4:30 p.m. là \"do my homework\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-035",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 5:00 p.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "listen to music"
+        },
+        {
+          "key": "b",
+          "text": "have dinner"
+        },
+        {
+          "key": "c",
+          "text": "clean my room"
+        },
+        {
+          "key": "d",
+          "text": "get up"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 5:00 p.m. là \"clean my room\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-036",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 6:00 p.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "get up"
+        },
+        {
+          "key": "b",
+          "text": "wash my face"
+        },
+        {
+          "key": "c",
+          "text": "brush my teeth"
+        },
+        {
+          "key": "d",
+          "text": "have dinner"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 6:00 p.m. là \"have dinner\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-037",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 7:00 p.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "watch TV"
+        },
+        {
+          "key": "b",
+          "text": "wash my face"
+        },
+        {
+          "key": "c",
+          "text": "brush my teeth"
+        },
+        {
+          "key": "d",
+          "text": "get up"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 7:00 p.m. là \"watch TV\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-038",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 7:30 p.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "wash my face"
+        },
+        {
+          "key": "b",
+          "text": "help my mom"
+        },
+        {
+          "key": "c",
+          "text": "brush my teeth"
+        },
+        {
+          "key": "d",
+          "text": "have breakfast"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 7:30 p.m. là \"help my mom\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-039",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 8:30 p.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "have breakfast"
+        },
+        {
+          "key": "b",
+          "text": "wash my face"
+        },
+        {
+          "key": "c",
+          "text": "take a shower"
+        },
+        {
+          "key": "d",
+          "text": "go to school"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 8:30 p.m. là \"take a shower\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-040",
+      "type": "single_choice",
+      "prompt": "Chọn cụm từ đúng để hoàn thành câu: \"I ___ at 9:00 p.m. every day.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "have breakfast"
+        },
+        {
+          "key": "b",
+          "text": "do my homework"
+        },
+        {
+          "key": "c",
+          "text": "go to school"
+        },
+        {
+          "key": "d",
+          "text": "go to bed"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Hoạt động phù hợp với mốc 9:00 p.m. là \"go to bed\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-041",
+      "type": "single_choice",
+      "prompt": "Chọn từ nối thích hợp: \"I get up, ___ I brush my teeth.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "then"
+        },
+        {
+          "key": "b",
+          "text": "but"
+        },
+        {
+          "key": "c",
+          "text": "because"
+        },
+        {
+          "key": "d",
+          "text": "or"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"Then\" dùng để nối hai hoạt động diễn ra liên tiếp.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-042",
+      "type": "single_choice",
+      "prompt": "Chọn từ nối thích hợp: \"I brush my teeth, ___ I have breakfast.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "or"
+        },
+        {
+          "key": "b",
+          "text": "then"
+        },
+        {
+          "key": "c",
+          "text": "but"
+        },
+        {
+          "key": "d",
+          "text": "because"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"Then\" dùng để nối hai hoạt động diễn ra liên tiếp.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-043",
+      "type": "single_choice",
+      "prompt": "Chọn từ nối thích hợp: \"I have breakfast, ___ I go to school.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "but"
+        },
+        {
+          "key": "b",
+          "text": "or"
+        },
+        {
+          "key": "c",
+          "text": "then"
+        },
+        {
+          "key": "d",
+          "text": "because"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"Then\" dùng để nối hai hoạt động diễn ra liên tiếp.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-044",
+      "type": "single_choice",
+      "prompt": "Chọn từ nối thích hợp: \"I have lunch, ___ I take a shower.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "because"
+        },
+        {
+          "key": "b",
+          "text": "but"
+        },
+        {
+          "key": "c",
+          "text": "or"
+        },
+        {
+          "key": "d",
+          "text": "then"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"Then\" dùng để nối hai hoạt động diễn ra liên tiếp.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-045",
+      "type": "single_choice",
+      "prompt": "Chọn từ nối thích hợp: \"I do my homework, ___ I watch TV.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "then"
+        },
+        {
+          "key": "b",
+          "text": "or"
+        },
+        {
+          "key": "c",
+          "text": "because"
+        },
+        {
+          "key": "d",
+          "text": "but"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"Then\" dùng để nối hai hoạt động diễn ra liên tiếp.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-046",
+      "type": "single_choice",
+      "prompt": "Chọn từ nối thích hợp: \"I have dinner, ___ I listen to music.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "because"
+        },
+        {
+          "key": "b",
+          "text": "then"
+        },
+        {
+          "key": "c",
+          "text": "but"
+        },
+        {
+          "key": "d",
+          "text": "or"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"Then\" dùng để nối hai hoạt động diễn ra liên tiếp.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-047",
+      "type": "single_choice",
+      "prompt": "Chọn từ nối thích hợp: \"I take a shower, ___ I go to bed.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "because"
+        },
+        {
+          "key": "b",
+          "text": "or"
+        },
+        {
+          "key": "c",
+          "text": "then"
+        },
+        {
+          "key": "d",
+          "text": "but"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"Then\" dùng để nối hai hoạt động diễn ra liên tiếp.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-048",
+      "type": "single_choice",
+      "prompt": "Chọn từ nối thích hợp: \"I clean my room, ___ I play sports.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "or"
+        },
+        {
+          "key": "b",
+          "text": "but"
+        },
+        {
+          "key": "c",
+          "text": "because"
+        },
+        {
+          "key": "d",
+          "text": "then"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"Then\" dùng để nối hai hoạt động diễn ra liên tiếp.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-049",
+      "type": "single_choice",
+      "prompt": "Chọn từ nối thích hợp: \"I feed the cat, ___ I study English.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "then"
+        },
+        {
+          "key": "b",
+          "text": "or"
+        },
+        {
+          "key": "c",
+          "text": "because"
+        },
+        {
+          "key": "d",
+          "text": "but"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "\"Then\" dùng để nối hai hoạt động diễn ra liên tiếp.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-050",
+      "type": "single_choice",
+      "prompt": "Chọn từ nối thích hợp: \"I wash my face, ___ I have breakfast.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "because"
+        },
+        {
+          "key": "b",
+          "text": "then"
+        },
+        {
+          "key": "c",
+          "text": "but"
+        },
+        {
+          "key": "d",
+          "text": "or"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "\"Then\" dùng để nối hai hoạt động diễn ra liên tiếp.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-051",
+      "type": "single_choice",
+      "prompt": "Chọn từ nối thích hợp: \"I study English, ___ I help my mom.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "because"
+        },
+        {
+          "key": "b",
+          "text": "but"
+        },
+        {
+          "key": "c",
+          "text": "then"
+        },
+        {
+          "key": "d",
+          "text": "or"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "\"Then\" dùng để nối hai hoạt động diễn ra liên tiếp.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-052",
+      "type": "single_choice",
+      "prompt": "Chọn từ nối thích hợp: \"I play sports, ___ I have dinner.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "or"
+        },
+        {
+          "key": "b",
+          "text": "because"
+        },
+        {
+          "key": "c",
+          "text": "but"
+        },
+        {
+          "key": "d",
+          "text": "then"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "\"Then\" dùng để nối hai hoạt động diễn ra liên tiếp.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-053",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 hoạt động buổi sáng: get up, go to bed, have breakfast, watch TV.",
+      "options": [
+        {
+          "key": "a",
+          "text": "watch TV"
+        },
+        {
+          "key": "b",
+          "text": "have breakfast"
+        },
+        {
+          "key": "c",
+          "text": "go to bed"
+        },
+        {
+          "key": "d",
+          "text": "get up"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "\"get up\" và \"have breakfast\" là hoạt động buổi sáng.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-054",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 hoạt động buổi tối: go to bed, get up, have dinner, go to school.",
+      "options": [
+        {
+          "key": "a",
+          "text": "have dinner"
+        },
+        {
+          "key": "b",
+          "text": "go to bed"
+        },
+        {
+          "key": "c",
+          "text": "get up"
+        },
+        {
+          "key": "d",
+          "text": "go to school"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "\"go to bed\" và \"have dinner\" là hoạt động buổi tối.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-055",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 hoạt động ở trường: go to school, take a shower, study English, go to bed.",
+      "options": [
+        {
+          "key": "a",
+          "text": "go to bed"
+        },
+        {
+          "key": "b",
+          "text": "go to school"
+        },
+        {
+          "key": "c",
+          "text": "study English"
+        },
+        {
+          "key": "d",
+          "text": "take a shower"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "\"go to school\" và \"study English\" là hoạt động ở trường.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-056",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 hoạt động ở nhà: clean my room, go to school, help my mom, study English.",
+      "options": [
+        {
+          "key": "a",
+          "text": "go to school"
+        },
+        {
+          "key": "b",
+          "text": "help my mom"
+        },
+        {
+          "key": "c",
+          "text": "study English"
+        },
+        {
+          "key": "d",
+          "text": "clean my room"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "\"clean my room\" và \"help my mom\" là hoạt động ở nhà.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-057",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 hoạt động giúp đỡ gia đình: help my mom, play sports, clean my room, listen to music.",
+      "options": [
+        {
+          "key": "a",
+          "text": "help my mom"
+        },
+        {
+          "key": "b",
+          "text": "listen to music"
+        },
+        {
+          "key": "c",
+          "text": "clean my room"
+        },
+        {
+          "key": "d",
+          "text": "play sports"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "\"help my mom\" và \"clean my room\" là hoạt động giúp đỡ gia đình.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-058",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 hoạt động chăm sóc bản thân: brush my teeth, watch TV, wash my face, study English.",
+      "options": [
+        {
+          "key": "a",
+          "text": "study English"
+        },
+        {
+          "key": "b",
+          "text": "watch TV"
+        },
+        {
+          "key": "c",
+          "text": "brush my teeth"
+        },
+        {
+          "key": "d",
+          "text": "wash my face"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "\"brush my teeth\" và \"wash my face\" là hoạt động chăm sóc bản thân.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-059",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 hoạt động học tập: do my homework, play sports, study English, feed the cat.",
+      "options": [
+        {
+          "key": "a",
+          "text": "do my homework"
+        },
+        {
+          "key": "b",
+          "text": "study English"
+        },
+        {
+          "key": "c",
+          "text": "feed the cat"
+        },
+        {
+          "key": "d",
+          "text": "play sports"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "\"do my homework\" và \"study English\" là hoạt động học tập.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-060",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 hoạt động thư giãn: watch TV, wash my face, listen to music, go to school.",
+      "options": [
+        {
+          "key": "a",
+          "text": "listen to music"
+        },
+        {
+          "key": "b",
+          "text": "wash my face"
+        },
+        {
+          "key": "c",
+          "text": "go to school"
+        },
+        {
+          "key": "d",
+          "text": "watch TV"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "\"watch TV\" và \"listen to music\" là hoạt động thư giãn.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-061",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 hoạt động trước khi đi ngủ: brush my teeth, go to school, take a shower, have breakfast.",
+      "options": [
+        {
+          "key": "a",
+          "text": "go to school"
+        },
+        {
+          "key": "b",
+          "text": "have breakfast"
+        },
+        {
+          "key": "c",
+          "text": "take a shower"
+        },
+        {
+          "key": "d",
+          "text": "brush my teeth"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "\"brush my teeth\" và \"take a shower\" là hoạt động trước khi đi ngủ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-062",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng về thói quen hằng ngày với \"get up\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "She get up every day."
+        },
+        {
+          "key": "b",
+          "text": "I gets up every day."
+        },
+        {
+          "key": "c",
+          "text": "She gets up every day."
+        },
+        {
+          "key": "d",
+          "text": "I get up every day."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Chủ ngữ \"I\" dùng \"get up\", chủ ngữ \"she\" dùng \"gets up\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-063",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng về thói quen hằng ngày với \"brush my teeth\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "I brushes my teeth every day."
+        },
+        {
+          "key": "b",
+          "text": "She brushes her teeth every day."
+        },
+        {
+          "key": "c",
+          "text": "I brush my teeth every day."
+        },
+        {
+          "key": "d",
+          "text": "She brush my teeth every day."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Chủ ngữ \"I\" dùng \"brush my teeth\", chủ ngữ \"she\" dùng \"brushes her teeth\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-064",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng về thói quen hằng ngày với \"wash my face\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "I washes my face every day."
+        },
+        {
+          "key": "b",
+          "text": "I wash my face every day."
+        },
+        {
+          "key": "c",
+          "text": "She washes her face every day."
+        },
+        {
+          "key": "d",
+          "text": "She wash my face every day."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Chủ ngữ \"I\" dùng \"wash my face\", chủ ngữ \"she\" dùng \"washes her face\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-065",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng về thói quen hằng ngày với \"have breakfast\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "I has breakfast every day."
+        },
+        {
+          "key": "b",
+          "text": "I have breakfast every day."
+        },
+        {
+          "key": "c",
+          "text": "She has breakfast every day."
+        },
+        {
+          "key": "d",
+          "text": "She have breakfast every day."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Chủ ngữ \"I\" dùng \"have breakfast\", chủ ngữ \"she\" dùng \"has breakfast\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-066",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng về thói quen hằng ngày với \"go to school\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "She goes to school every day."
+        },
+        {
+          "key": "b",
+          "text": "She go to school every day."
+        },
+        {
+          "key": "c",
+          "text": "I goes to school every day."
+        },
+        {
+          "key": "d",
+          "text": "I go to school every day."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Chủ ngữ \"I\" dùng \"go to school\", chủ ngữ \"she\" dùng \"goes to school\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-067",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng về thói quen hằng ngày với \"do my homework\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "She does her homework every day."
+        },
+        {
+          "key": "b",
+          "text": "I do my homework every day."
+        },
+        {
+          "key": "c",
+          "text": "I does my homework every day."
+        },
+        {
+          "key": "d",
+          "text": "She do my homework every day."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Chủ ngữ \"I\" dùng \"do my homework\", chủ ngữ \"she\" dùng \"does her homework\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-068",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng về thói quen hằng ngày với \"have lunch\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "She have lunch every day."
+        },
+        {
+          "key": "b",
+          "text": "She has lunch every day."
+        },
+        {
+          "key": "c",
+          "text": "I have lunch every day."
+        },
+        {
+          "key": "d",
+          "text": "I has lunch every day."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Chủ ngữ \"I\" dùng \"have lunch\", chủ ngữ \"she\" dùng \"has lunch\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-069",
+      "type": "multiple_choice",
+      "prompt": "Chọn 2 câu đúng về thói quen hằng ngày với \"take a shower\".",
+      "options": [
+        {
+          "key": "a",
+          "text": "I take a shower every day."
+        },
+        {
+          "key": "b",
+          "text": "She take a shower every day."
+        },
+        {
+          "key": "c",
+          "text": "I takes a shower every day."
+        },
+        {
+          "key": "d",
+          "text": "She takes a shower every day."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Chủ ngữ \"I\" dùng \"take a shower\", chủ ngữ \"she\" dùng \"takes a shower\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-070",
+      "type": "true_false",
+      "prompt": "\"get up\" có nghĩa là \"thức dậy\".",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: \"get up\" nghĩa là \"thức dậy\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-071",
+      "type": "true_false",
+      "prompt": "\"brush my teeth\" có nghĩa là \"tắm vòi sen\".",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: \"brush my teeth\" nghĩa là \"đánh răng\", không phải \"tắm vòi sen\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-072",
+      "type": "true_false",
+      "prompt": "\"wash my face\" có nghĩa là \"rửa mặt\".",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: \"wash my face\" nghĩa là \"rửa mặt\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-073",
+      "type": "true_false",
+      "prompt": "\"have breakfast\" có nghĩa là \"xem ti vi\".",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: \"have breakfast\" nghĩa là \"ăn sáng\", không phải \"xem ti vi\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-074",
+      "type": "true_false",
+      "prompt": "\"go to school\" có nghĩa là \"đi học\".",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: \"go to school\" nghĩa là \"đi học\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-075",
+      "type": "true_false",
+      "prompt": "\"do my homework\" có nghĩa là \"giúp mẹ\".",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: \"do my homework\" nghĩa là \"làm bài tập về nhà\", không phải \"giúp mẹ\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-076",
+      "type": "true_false",
+      "prompt": "\"have lunch\" có nghĩa là \"ăn trưa\".",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: \"have lunch\" nghĩa là \"ăn trưa\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-077",
+      "type": "true_false",
+      "prompt": "\"take a shower\" có nghĩa là \"cho mèo ăn\".",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: \"take a shower\" nghĩa là \"tắm vòi sen\", không phải \"cho mèo ăn\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-078",
+      "type": "true_false",
+      "prompt": "\"go to bed\" có nghĩa là \"đi ngủ\".",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: \"go to bed\" nghĩa là \"đi ngủ\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-079",
+      "type": "true_false",
+      "prompt": "\"watch TV\" có nghĩa là \"học tiếng Anh\".",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: \"watch TV\" nghĩa là \"xem ti vi\", không phải \"học tiếng Anh\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-080",
+      "type": "true_false",
+      "prompt": "Câu \"She gets up at six o'clock\" chia đúng thì hiện tại đơn.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: chủ ngữ \"she\" dùng \"gets up\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-081",
+      "type": "true_false",
+      "prompt": "Câu \"She get up at six o'clock\" chia đúng thì hiện tại đơn.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: phải dùng \"gets up\" vì chủ ngữ \"she\" là số ít.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-082",
+      "type": "true_false",
+      "prompt": "Trạng từ \"usually\" đứng trước động từ thường trong câu.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: \"I usually go to school at seven\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-083",
+      "type": "true_false",
+      "prompt": "Cụm từ \"go to bed\" nghĩa là \"đi học\".",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: \"go to bed\" nghĩa là \"đi ngủ\", \"đi học\" là \"go to school\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-084",
+      "type": "true_false",
+      "prompt": "Cụm từ \"have breakfast\" nghĩa là \"ăn sáng\".",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: \"have breakfast\" là ăn sáng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-085",
+      "type": "true_false",
+      "prompt": "Câu \"I has breakfast at six\" là câu đúng.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: chủ ngữ \"I\" dùng \"have breakfast\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-086",
+      "type": "true_false",
+      "prompt": "Câu hỏi \"What time do you get up?\" dùng để hỏi giờ thức dậy.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: câu này hỏi \"Bạn thức dậy lúc mấy giờ?\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-087",
+      "type": "fill_in",
+      "prompt": "\"thức dậy\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "get up"
+        ]
+      },
+      "explanation": "\"thức dậy\" trong tiếng Anh là \"get up\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-088",
+      "type": "fill_in",
+      "prompt": "\"đánh răng\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "brush my teeth"
+        ]
+      },
+      "explanation": "\"đánh răng\" trong tiếng Anh là \"brush my teeth\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-089",
+      "type": "fill_in",
+      "prompt": "\"rửa mặt\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "wash my face"
+        ]
+      },
+      "explanation": "\"rửa mặt\" trong tiếng Anh là \"wash my face\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-090",
+      "type": "fill_in",
+      "prompt": "\"ăn sáng\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "have breakfast"
+        ]
+      },
+      "explanation": "\"ăn sáng\" trong tiếng Anh là \"have breakfast\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-091",
+      "type": "fill_in",
+      "prompt": "\"đi học\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "go to school"
+        ]
+      },
+      "explanation": "\"đi học\" trong tiếng Anh là \"go to school\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-092",
+      "type": "fill_in",
+      "prompt": "\"làm bài tập về nhà\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "do my homework"
+        ]
+      },
+      "explanation": "\"làm bài tập về nhà\" trong tiếng Anh là \"do my homework\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-093",
+      "type": "fill_in",
+      "prompt": "\"ăn trưa\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "have lunch"
+        ]
+      },
+      "explanation": "\"ăn trưa\" trong tiếng Anh là \"have lunch\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-094",
+      "type": "fill_in",
+      "prompt": "\"tắm vòi sen\" trong tiếng Anh là ___.",
+      "answer": {
+        "accepted": [
+          "take a shower"
+        ]
+      },
+      "explanation": "\"tắm vòi sen\" trong tiếng Anh là \"take a shower\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-095",
+      "type": "fill_in",
+      "prompt": "Chia cụm từ \"go to bed\" cho chủ ngữ \"She\": She ___ every day.",
+      "answer": {
+        "accepted": [
+          "goes to bed"
+        ]
+      },
+      "explanation": "Chủ ngữ \"she\" dùng \"goes to bed\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-096",
+      "type": "fill_in",
+      "prompt": "Chia cụm từ \"watch TV\" cho chủ ngữ \"She\": She ___ every day.",
+      "answer": {
+        "accepted": [
+          "watches TV"
+        ]
+      },
+      "explanation": "Chủ ngữ \"she\" dùng \"watches TV\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-097",
+      "type": "fill_in",
+      "prompt": "Chia cụm từ \"play sports\" cho chủ ngữ \"She\": She ___ every day.",
+      "answer": {
+        "accepted": [
+          "plays sports"
+        ]
+      },
+      "explanation": "Chủ ngữ \"she\" dùng \"plays sports\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-098",
+      "type": "fill_in",
+      "prompt": "Chia cụm từ \"help my mom\" cho chủ ngữ \"She\" (đổi my thành her): She ___ every day.",
+      "answer": {
+        "accepted": [
+          "helps her mom"
+        ]
+      },
+      "explanation": "Chủ ngữ \"she\" dùng \"helps her mom\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-099",
+      "type": "fill_in",
+      "prompt": "Chia cụm từ \"clean my room\" cho chủ ngữ \"She\" (đổi my thành her): She ___ every day.",
+      "answer": {
+        "accepted": [
+          "cleans her room"
+        ]
+      },
+      "explanation": "Chủ ngữ \"she\" dùng \"cleans her room\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-100",
+      "type": "fill_in",
+      "prompt": "Chia cụm từ \"feed the cat\" cho chủ ngữ \"She\": She ___ every day.",
+      "answer": {
+        "accepted": [
+          "feeds the cat"
+        ]
+      },
+      "explanation": "Chủ ngữ \"she\" dùng \"feeds the cat\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-101",
+      "type": "fill_in",
+      "prompt": "Điền hoạt động phù hợp: \"I ___ at 6:00 a.m. every day.\"",
+      "answer": {
+        "accepted": [
+          "get up"
+        ]
+      },
+      "explanation": "Mốc 6:00 a.m. phù hợp với hoạt động \"get up\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-102",
+      "type": "fill_in",
+      "prompt": "Điền hoạt động phù hợp: \"I ___ at 6:15 a.m. every day.\"",
+      "answer": {
+        "accepted": [
+          "brush my teeth"
+        ]
+      },
+      "explanation": "Mốc 6:15 a.m. phù hợp với hoạt động \"brush my teeth\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-103",
+      "type": "fill_in",
+      "prompt": "Điền hoạt động phù hợp: \"I ___ at 6:20 a.m. every day.\"",
+      "answer": {
+        "accepted": [
+          "wash my face"
+        ]
+      },
+      "explanation": "Mốc 6:20 a.m. phù hợp với hoạt động \"wash my face\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-104",
+      "type": "fill_in",
+      "prompt": "Điền hoạt động phù hợp: \"I ___ at 6:30 a.m. every day.\"",
+      "answer": {
+        "accepted": [
+          "have breakfast"
+        ]
+      },
+      "explanation": "Mốc 6:30 a.m. phù hợp với hoạt động \"have breakfast\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-105",
+      "type": "fill_in",
+      "prompt": "Điền hoạt động phù hợp: \"I ___ at 7:00 a.m. every day.\"",
+      "answer": {
+        "accepted": [
+          "go to school"
+        ]
+      },
+      "explanation": "Mốc 7:00 a.m. phù hợp với hoạt động \"go to school\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-106",
+      "type": "fill_in",
+      "prompt": "Điền hoạt động phù hợp: \"I ___ at 11:30 a.m. every day.\"",
+      "answer": {
+        "accepted": [
+          "have lunch"
+        ]
+      },
+      "explanation": "Mốc 11:30 a.m. phù hợp với hoạt động \"have lunch\".",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-107",
+      "type": "fill_in",
+      "prompt": "Điền hoạt động phù hợp: \"I ___ at 2:00 p.m. every day.\"",
+      "answer": {
+        "accepted": [
+          "study English"
+        ]
+      },
+      "explanation": "Mốc 2:00 p.m. phù hợp với hoạt động \"study English\".",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-5-daily-routines-108",
+      "type": "fill_in",
+      "prompt": "Điền hoạt động phù hợp: \"I ___ at 3:00 p.m. every day.\"",
+      "answer": {
+        "accepted": [
+          "play sports"
+        ]
+      },
+      "explanation": "Mốc 3:00 p.m. phù hợp với hoạt động \"play sports\".",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

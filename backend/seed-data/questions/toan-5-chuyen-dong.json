@@ -1,0 +1,2537 @@
+{
+  "topic": {
+    "id": "toan-5-chuyen-dong",
+    "subjectId": "toan",
+    "grade": 5,
+    "slug": "chuyen-dong",
+    "name": "Toán chuyển động",
+    "sortOrder": 7
+  },
+  "questions": [
+    {
+      "id": "toan-5-chuyen-dong-001",
+      "type": "single_choice",
+      "prompt": "Một người đi xe đạp với vận tốc 12 km/giờ trong 2 giờ. Người đó đi được bao nhiêu ki-lô-mét?",
+      "options": [
+        {
+          "key": "a",
+          "text": "24"
+        },
+        {
+          "key": "b",
+          "text": "26"
+        },
+        {
+          "key": "c",
+          "text": "23"
+        },
+        {
+          "key": "d",
+          "text": "25"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Quãng đường là 12 × 2 = 24 (km).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-002",
+      "type": "single_choice",
+      "prompt": "Một người đi xe đạp với vận tốc 16 km/giờ trong 3 giờ. Người đó đi được bao nhiêu ki-lô-mét?",
+      "options": [
+        {
+          "key": "a",
+          "text": "49"
+        },
+        {
+          "key": "b",
+          "text": "48"
+        },
+        {
+          "key": "c",
+          "text": "47"
+        },
+        {
+          "key": "d",
+          "text": "50"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Quãng đường là 16 × 3 = 48 (km).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-003",
+      "type": "single_choice",
+      "prompt": "Một người đi xe đạp với vận tốc 20 km/giờ trong 4 giờ. Người đó đi được bao nhiêu ki-lô-mét?",
+      "options": [
+        {
+          "key": "a",
+          "text": "82"
+        },
+        {
+          "key": "b",
+          "text": "81"
+        },
+        {
+          "key": "c",
+          "text": "80"
+        },
+        {
+          "key": "d",
+          "text": "79"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Quãng đường là 20 × 4 = 80 (km).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-004",
+      "type": "single_choice",
+      "prompt": "Một người đi xe đạp với vận tốc 24 km/giờ trong 5 giờ. Người đó đi được bao nhiêu ki-lô-mét?",
+      "options": [
+        {
+          "key": "a",
+          "text": "119"
+        },
+        {
+          "key": "b",
+          "text": "122"
+        },
+        {
+          "key": "c",
+          "text": "121"
+        },
+        {
+          "key": "d",
+          "text": "120"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Quãng đường là 24 × 5 = 120 (km).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-005",
+      "type": "single_choice",
+      "prompt": "Một người đi xe đạp với vận tốc 28 km/giờ trong 2 giờ. Người đó đi được bao nhiêu ki-lô-mét?",
+      "options": [
+        {
+          "key": "a",
+          "text": "56"
+        },
+        {
+          "key": "b",
+          "text": "55"
+        },
+        {
+          "key": "c",
+          "text": "57"
+        },
+        {
+          "key": "d",
+          "text": "58"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Quãng đường là 28 × 2 = 56 (km).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-006",
+      "type": "single_choice",
+      "prompt": "Một người đi xe đạp với vận tốc 32 km/giờ trong 3 giờ. Người đó đi được bao nhiêu ki-lô-mét?",
+      "options": [
+        {
+          "key": "a",
+          "text": "97"
+        },
+        {
+          "key": "b",
+          "text": "96"
+        },
+        {
+          "key": "c",
+          "text": "98"
+        },
+        {
+          "key": "d",
+          "text": "95"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Quãng đường là 32 × 3 = 96 (km).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-007",
+      "type": "single_choice",
+      "prompt": "Một người đi xe đạp với vận tốc 36 km/giờ trong 4 giờ. Người đó đi được bao nhiêu ki-lô-mét?",
+      "options": [
+        {
+          "key": "a",
+          "text": "143"
+        },
+        {
+          "key": "b",
+          "text": "146"
+        },
+        {
+          "key": "c",
+          "text": "144"
+        },
+        {
+          "key": "d",
+          "text": "145"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Quãng đường là 36 × 4 = 144 (km).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-008",
+      "type": "single_choice",
+      "prompt": "Một người đi xe đạp với vận tốc 40 km/giờ trong 5 giờ. Người đó đi được bao nhiêu ki-lô-mét?",
+      "options": [
+        {
+          "key": "a",
+          "text": "199"
+        },
+        {
+          "key": "b",
+          "text": "201"
+        },
+        {
+          "key": "c",
+          "text": "202"
+        },
+        {
+          "key": "d",
+          "text": "200"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Quãng đường là 40 × 5 = 200 (km).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-009",
+      "type": "single_choice",
+      "prompt": "Một người đi xe đạp với vận tốc 44 km/giờ trong 2 giờ. Người đó đi được bao nhiêu ki-lô-mét?",
+      "options": [
+        {
+          "key": "a",
+          "text": "88"
+        },
+        {
+          "key": "b",
+          "text": "89"
+        },
+        {
+          "key": "c",
+          "text": "90"
+        },
+        {
+          "key": "d",
+          "text": "87"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Quãng đường là 44 × 2 = 88 (km).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-010",
+      "type": "single_choice",
+      "prompt": "Một người đi xe đạp với vận tốc 48 km/giờ trong 3 giờ. Người đó đi được bao nhiêu ki-lô-mét?",
+      "options": [
+        {
+          "key": "a",
+          "text": "143"
+        },
+        {
+          "key": "b",
+          "text": "144"
+        },
+        {
+          "key": "c",
+          "text": "146"
+        },
+        {
+          "key": "d",
+          "text": "145"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Quãng đường là 48 × 3 = 144 (km).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-011",
+      "type": "single_choice",
+      "prompt": "Một người đi xe đạp với vận tốc 52 km/giờ trong 4 giờ. Người đó đi được bao nhiêu ki-lô-mét?",
+      "options": [
+        {
+          "key": "a",
+          "text": "209"
+        },
+        {
+          "key": "b",
+          "text": "210"
+        },
+        {
+          "key": "c",
+          "text": "208"
+        },
+        {
+          "key": "d",
+          "text": "207"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Quãng đường là 52 × 4 = 208 (km).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-012",
+      "type": "single_choice",
+      "prompt": "Một người đi xe đạp với vận tốc 56 km/giờ trong 5 giờ. Người đó đi được bao nhiêu ki-lô-mét?",
+      "options": [
+        {
+          "key": "a",
+          "text": "281"
+        },
+        {
+          "key": "b",
+          "text": "282"
+        },
+        {
+          "key": "c",
+          "text": "279"
+        },
+        {
+          "key": "d",
+          "text": "280"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Quãng đường là 56 × 5 = 280 (km).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-013",
+      "type": "single_choice",
+      "prompt": "Một ô tô đi được 30 km trong 2 giờ. Vận tốc của ô tô là bao nhiêu ki-lô-mét trên giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "15"
+        },
+        {
+          "key": "b",
+          "text": "17"
+        },
+        {
+          "key": "c",
+          "text": "16"
+        },
+        {
+          "key": "d",
+          "text": "14"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Vận tốc là 30 : 2 = 15 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-014",
+      "type": "single_choice",
+      "prompt": "Một ô tô đi được 54 km trong 3 giờ. Vận tốc của ô tô là bao nhiêu ki-lô-mét trên giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "17"
+        },
+        {
+          "key": "b",
+          "text": "18"
+        },
+        {
+          "key": "c",
+          "text": "20"
+        },
+        {
+          "key": "d",
+          "text": "19"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Vận tốc là 54 : 3 = 18 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-015",
+      "type": "single_choice",
+      "prompt": "Một ô tô đi được 84 km trong 4 giờ. Vận tốc của ô tô là bao nhiêu ki-lô-mét trên giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "20"
+        },
+        {
+          "key": "b",
+          "text": "23"
+        },
+        {
+          "key": "c",
+          "text": "21"
+        },
+        {
+          "key": "d",
+          "text": "22"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Vận tốc là 84 : 4 = 21 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-016",
+      "type": "single_choice",
+      "prompt": "Một ô tô đi được 120 km trong 5 giờ. Vận tốc của ô tô là bao nhiêu ki-lô-mét trên giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "26"
+        },
+        {
+          "key": "b",
+          "text": "25"
+        },
+        {
+          "key": "c",
+          "text": "23"
+        },
+        {
+          "key": "d",
+          "text": "24"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Vận tốc là 120 : 5 = 24 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-017",
+      "type": "single_choice",
+      "prompt": "Một ô tô đi được 54 km trong 2 giờ. Vận tốc của ô tô là bao nhiêu ki-lô-mét trên giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "27"
+        },
+        {
+          "key": "b",
+          "text": "29"
+        },
+        {
+          "key": "c",
+          "text": "26"
+        },
+        {
+          "key": "d",
+          "text": "28"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Vận tốc là 54 : 2 = 27 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-018",
+      "type": "single_choice",
+      "prompt": "Một ô tô đi được 90 km trong 3 giờ. Vận tốc của ô tô là bao nhiêu ki-lô-mét trên giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "32"
+        },
+        {
+          "key": "b",
+          "text": "30"
+        },
+        {
+          "key": "c",
+          "text": "29"
+        },
+        {
+          "key": "d",
+          "text": "31"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Vận tốc là 90 : 3 = 30 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-019",
+      "type": "single_choice",
+      "prompt": "Một ô tô đi được 132 km trong 4 giờ. Vận tốc của ô tô là bao nhiêu ki-lô-mét trên giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "34"
+        },
+        {
+          "key": "b",
+          "text": "35"
+        },
+        {
+          "key": "c",
+          "text": "33"
+        },
+        {
+          "key": "d",
+          "text": "32"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Vận tốc là 132 : 4 = 33 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-020",
+      "type": "single_choice",
+      "prompt": "Một ô tô đi được 180 km trong 5 giờ. Vận tốc của ô tô là bao nhiêu ki-lô-mét trên giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "38"
+        },
+        {
+          "key": "b",
+          "text": "35"
+        },
+        {
+          "key": "c",
+          "text": "37"
+        },
+        {
+          "key": "d",
+          "text": "36"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Vận tốc là 180 : 5 = 36 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-021",
+      "type": "single_choice",
+      "prompt": "Một ô tô đi được 78 km trong 2 giờ. Vận tốc của ô tô là bao nhiêu ki-lô-mét trên giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "39"
+        },
+        {
+          "key": "b",
+          "text": "40"
+        },
+        {
+          "key": "c",
+          "text": "38"
+        },
+        {
+          "key": "d",
+          "text": "41"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Vận tốc là 78 : 2 = 39 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-022",
+      "type": "single_choice",
+      "prompt": "Một ô tô đi được 126 km trong 3 giờ. Vận tốc của ô tô là bao nhiêu ki-lô-mét trên giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "41"
+        },
+        {
+          "key": "b",
+          "text": "42"
+        },
+        {
+          "key": "c",
+          "text": "43"
+        },
+        {
+          "key": "d",
+          "text": "44"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Vận tốc là 126 : 3 = 42 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-023",
+      "type": "single_choice",
+      "prompt": "Một ô tô đi được 180 km trong 4 giờ. Vận tốc của ô tô là bao nhiêu ki-lô-mét trên giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "47"
+        },
+        {
+          "key": "b",
+          "text": "44"
+        },
+        {
+          "key": "c",
+          "text": "45"
+        },
+        {
+          "key": "d",
+          "text": "46"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Vận tốc là 180 : 4 = 45 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-024",
+      "type": "single_choice",
+      "prompt": "Một ô tô đi được 240 km trong 5 giờ. Vận tốc của ô tô là bao nhiêu ki-lô-mét trên giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "50"
+        },
+        {
+          "key": "b",
+          "text": "47"
+        },
+        {
+          "key": "c",
+          "text": "49"
+        },
+        {
+          "key": "d",
+          "text": "48"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Vận tốc là 240 : 5 = 48 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-025",
+      "type": "single_choice",
+      "prompt": "Quãng đường dài 40 km, một ô tô đi với vận tốc 20 km/giờ. Thời gian ô tô đi hết quãng đường là bao nhiêu giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "1"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Thời gian là 40 : 20 = 2 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-026",
+      "type": "single_choice",
+      "prompt": "Quãng đường dài 75 km, một ô tô đi với vận tốc 25 km/giờ. Thời gian ô tô đi hết quãng đường là bao nhiêu giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Thời gian là 75 : 25 = 3 (giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-027",
+      "type": "single_choice",
+      "prompt": "Quãng đường dài 120 km, một ô tô đi với vận tốc 30 km/giờ. Thời gian ô tô đi hết quãng đường là bao nhiêu giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Thời gian là 120 : 30 = 4 (giờ).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-028",
+      "type": "single_choice",
+      "prompt": "Quãng đường dài 175 km, một ô tô đi với vận tốc 35 km/giờ. Thời gian ô tô đi hết quãng đường là bao nhiêu giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Thời gian là 175 : 35 = 5 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-029",
+      "type": "single_choice",
+      "prompt": "Quãng đường dài 80 km, một ô tô đi với vận tốc 40 km/giờ. Thời gian ô tô đi hết quãng đường là bao nhiêu giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "1"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Thời gian là 80 : 40 = 2 (giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-030",
+      "type": "single_choice",
+      "prompt": "Quãng đường dài 135 km, một ô tô đi với vận tốc 45 km/giờ. Thời gian ô tô đi hết quãng đường là bao nhiêu giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Thời gian là 135 : 45 = 3 (giờ).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-031",
+      "type": "single_choice",
+      "prompt": "Quãng đường dài 200 km, một ô tô đi với vận tốc 50 km/giờ. Thời gian ô tô đi hết quãng đường là bao nhiêu giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Thời gian là 200 : 50 = 4 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-032",
+      "type": "single_choice",
+      "prompt": "Quãng đường dài 275 km, một ô tô đi với vận tốc 55 km/giờ. Thời gian ô tô đi hết quãng đường là bao nhiêu giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Thời gian là 275 : 55 = 5 (giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-033",
+      "type": "single_choice",
+      "prompt": "Quãng đường dài 120 km, một ô tô đi với vận tốc 60 km/giờ. Thời gian ô tô đi hết quãng đường là bao nhiêu giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "1"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Thời gian là 120 : 60 = 2 (giờ).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-034",
+      "type": "single_choice",
+      "prompt": "Quãng đường dài 195 km, một ô tô đi với vận tốc 65 km/giờ. Thời gian ô tô đi hết quãng đường là bao nhiêu giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Thời gian là 195 : 65 = 3 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-035",
+      "type": "single_choice",
+      "prompt": "Quãng đường dài 280 km, một ô tô đi với vận tốc 70 km/giờ. Thời gian ô tô đi hết quãng đường là bao nhiêu giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Thời gian là 280 : 70 = 4 (giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-036",
+      "type": "single_choice",
+      "prompt": "Quãng đường dài 375 km, một ô tô đi với vận tốc 75 km/giờ. Thời gian ô tô đi hết quãng đường là bao nhiêu giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Thời gian là 375 : 75 = 5 (giờ).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-037",
+      "type": "single_choice",
+      "prompt": "Hai xe khởi hành cùng lúc từ hai địa điểm cách nhau 140 km, đi ngược chiều nhau với vận tốc 40 km/giờ và 30 km/giờ. Sau bao lâu hai xe gặp nhau?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "1"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Mỗi giờ hai xe đi được 40 + 30 = 70 (km); thời gian gặp nhau là 140 : 70 = 2 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-038",
+      "type": "single_choice",
+      "prompt": "Hai xe khởi hành cùng lúc từ hai địa điểm cách nhau 240 km, đi ngược chiều nhau với vận tốc 45 km/giờ và 35 km/giờ. Sau bao lâu hai xe gặp nhau?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Mỗi giờ hai xe đi được 45 + 35 = 80 (km); thời gian gặp nhau là 240 : 80 = 3 (giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-039",
+      "type": "single_choice",
+      "prompt": "Hai xe khởi hành cùng lúc từ hai địa điểm cách nhau 360 km, đi ngược chiều nhau với vận tốc 50 km/giờ và 40 km/giờ. Sau bao lâu hai xe gặp nhau?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Mỗi giờ hai xe đi được 50 + 40 = 90 (km); thời gian gặp nhau là 360 : 90 = 4 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-040",
+      "type": "single_choice",
+      "prompt": "Hai xe khởi hành cùng lúc từ hai địa điểm cách nhau 200 km, đi ngược chiều nhau với vận tốc 55 km/giờ và 45 km/giờ. Sau bao lâu hai xe gặp nhau?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "1"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Mỗi giờ hai xe đi được 55 + 45 = 100 (km); thời gian gặp nhau là 200 : 100 = 2 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-041",
+      "type": "single_choice",
+      "prompt": "Hai xe khởi hành cùng lúc từ hai địa điểm cách nhau 330 km, đi ngược chiều nhau với vận tốc 60 km/giờ và 50 km/giờ. Sau bao lâu hai xe gặp nhau?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Mỗi giờ hai xe đi được 60 + 50 = 110 (km); thời gian gặp nhau là 330 : 110 = 3 (giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-042",
+      "type": "single_choice",
+      "prompt": "Hai xe khởi hành cùng lúc từ hai địa điểm cách nhau 480 km, đi ngược chiều nhau với vận tốc 65 km/giờ và 55 km/giờ. Sau bao lâu hai xe gặp nhau?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Mỗi giờ hai xe đi được 65 + 55 = 120 (km); thời gian gặp nhau là 480 : 120 = 4 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-043",
+      "type": "single_choice",
+      "prompt": "Hai xe khởi hành cùng lúc từ hai địa điểm cách nhau 260 km, đi ngược chiều nhau với vận tốc 70 km/giờ và 60 km/giờ. Sau bao lâu hai xe gặp nhau?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Mỗi giờ hai xe đi được 70 + 60 = 130 (km); thời gian gặp nhau là 260 : 130 = 2 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-044",
+      "type": "single_choice",
+      "prompt": "Hai xe khởi hành cùng lúc từ hai địa điểm cách nhau 420 km, đi ngược chiều nhau với vận tốc 75 km/giờ và 65 km/giờ. Sau bao lâu hai xe gặp nhau?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Mỗi giờ hai xe đi được 75 + 65 = 140 (km); thời gian gặp nhau là 420 : 140 = 3 (giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-045",
+      "type": "single_choice",
+      "prompt": "Xe thứ nhất đi với vận tốc 40 km/giờ. Xe thứ hai xuất phát sau, đi cùng đường với vận tốc 50 km/giờ. Lúc xuất phát, xe thứ hai cách xe thứ nhất 20 km. Sau bao lâu xe thứ hai đuổi kịp xe thứ nhất?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "1"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Mỗi giờ xe thứ hai rút ngắn khoảng cách 50 - 40 = 10 (km); thời gian đuổi kịp là 20 : 10 = 2 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-046",
+      "type": "single_choice",
+      "prompt": "Xe thứ nhất đi với vận tốc 40 km/giờ. Xe thứ hai xuất phát sau, đi cùng đường với vận tốc 50 km/giờ. Lúc xuất phát, xe thứ hai cách xe thứ nhất 30 km. Sau bao lâu xe thứ hai đuổi kịp xe thứ nhất?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Mỗi giờ xe thứ hai rút ngắn khoảng cách 50 - 40 = 10 (km); thời gian đuổi kịp là 30 : 10 = 3 (giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-047",
+      "type": "single_choice",
+      "prompt": "Xe thứ nhất đi với vận tốc 40 km/giờ. Xe thứ hai xuất phát sau, đi cùng đường với vận tốc 50 km/giờ. Lúc xuất phát, xe thứ hai cách xe thứ nhất 40 km. Sau bao lâu xe thứ hai đuổi kịp xe thứ nhất?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Mỗi giờ xe thứ hai rút ngắn khoảng cách 50 - 40 = 10 (km); thời gian đuổi kịp là 40 : 10 = 4 (giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-048",
+      "type": "single_choice",
+      "prompt": "Xe thứ nhất đi với vận tốc 40 km/giờ. Xe thứ hai xuất phát sau, đi cùng đường với vận tốc 50 km/giờ. Lúc xuất phát, xe thứ hai cách xe thứ nhất 50 km. Sau bao lâu xe thứ hai đuổi kịp xe thứ nhất?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Mỗi giờ xe thứ hai rút ngắn khoảng cách 50 - 40 = 10 (km); thời gian đuổi kịp là 50 : 10 = 5 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-049",
+      "type": "single_choice",
+      "prompt": "Một người đi bộ 12 km trong 3 giờ. Vận tốc của người đó là bao nhiêu ki-lô-mét trên giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "12 : 3 = 4 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-050",
+      "type": "single_choice",
+      "prompt": "Một xe máy đi 90 km với vận tốc 45 km/giờ. Thời gian đi là bao nhiêu giờ?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "2"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "1"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "90 : 45 = 2 (giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-051",
+      "type": "single_choice",
+      "prompt": "Hai bạn xuất phát cùng lúc từ hai đầu quãng đường dài 18 km, đi ngược chiều nhau với vận tốc 4 km/giờ và 5 km/giờ. Sau bao lâu hai bạn gặp nhau?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Mỗi giờ hai bạn đi được 4 + 5 = 9 (km); 18 : 9 = 2 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-052",
+      "type": "single_choice",
+      "prompt": "Một đoàn tàu dài 200 m đi qua một cột mốc với vận tốc 20 m/giây. Thời gian đoàn tàu đi qua cột mốc là bao nhiêu giây?",
+      "options": [
+        {
+          "key": "a",
+          "text": "12"
+        },
+        {
+          "key": "b",
+          "text": "11"
+        },
+        {
+          "key": "c",
+          "text": "9"
+        },
+        {
+          "key": "d",
+          "text": "10"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "200 : 20 = 10 (giây).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-053",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính cho quãng đường 120 km.",
+      "options": [
+        {
+          "key": "a",
+          "text": "40 km/giờ × 3 giờ"
+        },
+        {
+          "key": "b",
+          "text": "50 km/giờ × 3 giờ"
+        },
+        {
+          "key": "c",
+          "text": "60 km/giờ × 2 giờ"
+        },
+        {
+          "key": "d",
+          "text": "70 km/giờ × 2 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "40 × 3 = 120 (km) và 60 × 2 = 120 (km).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-054",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính cho quãng đường 150 km.",
+      "options": [
+        {
+          "key": "a",
+          "text": "60 km/giờ × 3 giờ"
+        },
+        {
+          "key": "b",
+          "text": "50 km/giờ × 3 giờ"
+        },
+        {
+          "key": "c",
+          "text": "75 km/giờ × 2 giờ"
+        },
+        {
+          "key": "d",
+          "text": "85 km/giờ × 2 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "50 × 3 = 150 (km) và 75 × 2 = 150 (km).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-055",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính cho quãng đường 180 km.",
+      "options": [
+        {
+          "key": "a",
+          "text": "100 km/giờ × 2 giờ"
+        },
+        {
+          "key": "b",
+          "text": "60 km/giờ × 3 giờ"
+        },
+        {
+          "key": "c",
+          "text": "70 km/giờ × 3 giờ"
+        },
+        {
+          "key": "d",
+          "text": "90 km/giờ × 2 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "60 × 3 = 180 (km) và 90 × 2 = 180 (km).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-056",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính cho quãng đường 210 km.",
+      "options": [
+        {
+          "key": "a",
+          "text": "115 km/giờ × 2 giờ"
+        },
+        {
+          "key": "b",
+          "text": "80 km/giờ × 3 giờ"
+        },
+        {
+          "key": "c",
+          "text": "105 km/giờ × 2 giờ"
+        },
+        {
+          "key": "d",
+          "text": "70 km/giờ × 3 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "70 × 3 = 210 (km) và 105 × 2 = 210 (km).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-057",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính cho quãng đường 240 km.",
+      "options": [
+        {
+          "key": "a",
+          "text": "130 km/giờ × 2 giờ"
+        },
+        {
+          "key": "b",
+          "text": "120 km/giờ × 2 giờ"
+        },
+        {
+          "key": "c",
+          "text": "80 km/giờ × 3 giờ"
+        },
+        {
+          "key": "d",
+          "text": "90 km/giờ × 3 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "80 × 3 = 240 (km) và 120 × 2 = 240 (km).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-058",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các phép tính cho quãng đường 270 km.",
+      "options": [
+        {
+          "key": "a",
+          "text": "100 km/giờ × 3 giờ"
+        },
+        {
+          "key": "b",
+          "text": "145 km/giờ × 2 giờ"
+        },
+        {
+          "key": "c",
+          "text": "90 km/giờ × 3 giờ"
+        },
+        {
+          "key": "d",
+          "text": "135 km/giờ × 2 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "90 × 3 = 270 (km) và 135 × 2 = 270 (km).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-059",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các trường hợp có vận tốc 30 km/giờ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "90 km trong 3 giờ"
+        },
+        {
+          "key": "b",
+          "text": "105 km trong 3 giờ"
+        },
+        {
+          "key": "c",
+          "text": "60 km trong 2 giờ"
+        },
+        {
+          "key": "d",
+          "text": "70 km trong 2 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "60 : 2 = 30 và 90 : 3 = 30 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-060",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các trường hợp có vận tốc 35 km/giờ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "105 km trong 3 giờ"
+        },
+        {
+          "key": "b",
+          "text": "120 km trong 3 giờ"
+        },
+        {
+          "key": "c",
+          "text": "80 km trong 2 giờ"
+        },
+        {
+          "key": "d",
+          "text": "70 km trong 2 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "70 : 2 = 35 và 105 : 3 = 35 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-061",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các trường hợp có vận tốc 40 km/giờ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "90 km trong 2 giờ"
+        },
+        {
+          "key": "b",
+          "text": "80 km trong 2 giờ"
+        },
+        {
+          "key": "c",
+          "text": "135 km trong 3 giờ"
+        },
+        {
+          "key": "d",
+          "text": "120 km trong 3 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "80 : 2 = 40 và 120 : 3 = 40 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-062",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các trường hợp có vận tốc 45 km/giờ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "90 km trong 2 giờ"
+        },
+        {
+          "key": "b",
+          "text": "135 km trong 3 giờ"
+        },
+        {
+          "key": "c",
+          "text": "100 km trong 2 giờ"
+        },
+        {
+          "key": "d",
+          "text": "150 km trong 3 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "90 : 2 = 45 và 135 : 3 = 45 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-063",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các trường hợp có vận tốc 50 km/giờ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "165 km trong 3 giờ"
+        },
+        {
+          "key": "b",
+          "text": "110 km trong 2 giờ"
+        },
+        {
+          "key": "c",
+          "text": "150 km trong 3 giờ"
+        },
+        {
+          "key": "d",
+          "text": "100 km trong 2 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "100 : 2 = 50 và 150 : 3 = 50 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-064",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các trường hợp có vận tốc 55 km/giờ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "180 km trong 3 giờ"
+        },
+        {
+          "key": "b",
+          "text": "165 km trong 3 giờ"
+        },
+        {
+          "key": "c",
+          "text": "120 km trong 2 giờ"
+        },
+        {
+          "key": "d",
+          "text": "110 km trong 2 giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "110 : 2 = 55 và 165 : 3 = 55 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-065",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các cách tính đúng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "quãng đường = vận tốc : thời gian"
+        },
+        {
+          "key": "b",
+          "text": "thời gian = quãng đường × vận tốc"
+        },
+        {
+          "key": "c",
+          "text": "vận tốc = quãng đường : thời gian"
+        },
+        {
+          "key": "d",
+          "text": "quãng đường = vận tốc × thời gian"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Quãng đường = vận tốc × thời gian; vận tốc = quãng đường : thời gian.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-066",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các đơn vị có thể dùng để đo vận tốc.",
+      "options": [
+        {
+          "key": "a",
+          "text": "m/giây"
+        },
+        {
+          "key": "b",
+          "text": "km"
+        },
+        {
+          "key": "c",
+          "text": "giờ"
+        },
+        {
+          "key": "d",
+          "text": "km/giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Vận tốc được đo bằng đơn vị độ dài chia cho đơn vị thời gian.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-067",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các kết quả đúng khi đi 60 km trong 2 giờ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "mỗi giờ đi được 60 km"
+        },
+        {
+          "key": "b",
+          "text": "mỗi giờ đi được 30 km"
+        },
+        {
+          "key": "c",
+          "text": "vận tốc 30 km/giờ"
+        },
+        {
+          "key": "d",
+          "text": "vận tốc 120 km/giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "60 : 2 = 30, nên vận tốc là 30 km/giờ, tức mỗi giờ đi được 30 km.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-068",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các trường hợp hai xe gặp nhau sau 2 giờ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "cách nhau 100 km, tổng vận tốc 50 km/giờ"
+        },
+        {
+          "key": "b",
+          "text": "cách nhau 120 km, tổng vận tốc 80 km/giờ"
+        },
+        {
+          "key": "c",
+          "text": "cách nhau 120 km, tổng vận tốc 60 km/giờ"
+        },
+        {
+          "key": "d",
+          "text": "cách nhau 100 km, tổng vận tốc 40 km/giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "100 : 50 = 2 (giờ) và 120 : 60 = 2 (giờ).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-069",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các trường hợp xe sau đuổi kịp xe trước sau 3 giờ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "cách nhau 30 km, hiệu vận tốc 10 km/giờ"
+        },
+        {
+          "key": "b",
+          "text": "cách nhau 45 km, hiệu vận tốc 15 km/giờ"
+        },
+        {
+          "key": "c",
+          "text": "cách nhau 45 km, hiệu vận tốc 10 km/giờ"
+        },
+        {
+          "key": "d",
+          "text": "cách nhau 30 km, hiệu vận tốc 15 km/giờ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "30 : 10 = 3 (giờ) và 45 : 15 = 3 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-070",
+      "type": "true_false",
+      "prompt": "Một người đi với vận tốc 12 km/giờ trong 2 giờ thì đi được 24 km.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "12 × 2 = 24 (km), nên đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-071",
+      "type": "true_false",
+      "prompt": "Một người đi với vận tốc 15 km/giờ trong 3 giờ thì đi được 55 km.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "15 × 3 = 45 (km), không phải 55 km, nên sai.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-072",
+      "type": "true_false",
+      "prompt": "Một người đi với vận tốc 18 km/giờ trong 4 giờ thì đi được 72 km.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "18 × 4 = 72 (km), nên đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-073",
+      "type": "true_false",
+      "prompt": "Một người đi với vận tốc 21 km/giờ trong 5 giờ thì đi được 115 km.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "21 × 5 = 105 (km), không phải 115 km, nên sai.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-074",
+      "type": "true_false",
+      "prompt": "Một người đi với vận tốc 24 km/giờ trong 2 giờ thì đi được 48 km.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "24 × 2 = 48 (km), nên đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-075",
+      "type": "true_false",
+      "prompt": "Một người đi với vận tốc 27 km/giờ trong 3 giờ thì đi được 91 km.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "27 × 3 = 81 (km), không phải 91 km, nên sai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-076",
+      "type": "true_false",
+      "prompt": "Một người đi với vận tốc 30 km/giờ trong 4 giờ thì đi được 120 km.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "30 × 4 = 120 (km), nên đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-077",
+      "type": "true_false",
+      "prompt": "Một người đi với vận tốc 33 km/giờ trong 5 giờ thì đi được 175 km.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "33 × 5 = 165 (km), không phải 175 km, nên sai.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-078",
+      "type": "true_false",
+      "prompt": "Một người đi với vận tốc 36 km/giờ trong 2 giờ thì đi được 72 km.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "36 × 2 = 72 (km), nên đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-079",
+      "type": "true_false",
+      "prompt": "Một ô tô đi 120 km trong 2 giờ thì vận tốc là 60 km/giờ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "120 : 2 = 60 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-080",
+      "type": "true_false",
+      "prompt": "Một người đi 15 km trong 3 giờ thì vận tốc là 6 km/giờ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "15 : 3 = 5 (km/giờ), không phải 6 km/giờ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-081",
+      "type": "true_false",
+      "prompt": "Vận tốc 50 km/giờ nghĩa là mỗi giờ đi được 50 km.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đây là ý nghĩa của vận tốc 50 km/giờ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-082",
+      "type": "true_false",
+      "prompt": "Hai xe đi ngược chiều với vận tốc 40 km/giờ và 30 km/giờ thì mỗi giờ gần nhau thêm 70 km.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "40 + 30 = 70 (km).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-083",
+      "type": "true_false",
+      "prompt": "Hai xe đi cùng chiều với vận tốc 45 km/giờ và 35 km/giờ thì mỗi giờ gần nhau thêm 80 km.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "45 - 35 = 10 (km), không phải 80 km.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-084",
+      "type": "true_false",
+      "prompt": "Muốn tính quãng đường ta lấy vận tốc nhân với thời gian.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Quãng đường = vận tốc × thời gian.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-085",
+      "type": "true_false",
+      "prompt": "Muốn tính thời gian ta lấy quãng đường nhân với vận tốc.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Thời gian = quãng đường : vận tốc.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-086",
+      "type": "true_false",
+      "prompt": "Đơn vị của vận tốc có thể là km/giờ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "km/giờ là một đơn vị đo vận tốc.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-087",
+      "type": "fill_in",
+      "prompt": "Một người đi với vận tốc 15 km/giờ trong 2 giờ. Người đó đi được ___ km.",
+      "answer": {
+        "accepted": [
+          "30"
+        ]
+      },
+      "explanation": "15 × 2 = 30 (km).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-088",
+      "type": "fill_in",
+      "prompt": "Một người đi với vận tốc 20 km/giờ trong 3 giờ. Người đó đi được ___ km.",
+      "answer": {
+        "accepted": [
+          "60"
+        ]
+      },
+      "explanation": "20 × 3 = 60 (km).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-089",
+      "type": "fill_in",
+      "prompt": "Một người đi với vận tốc 25 km/giờ trong 4 giờ. Người đó đi được ___ km.",
+      "answer": {
+        "accepted": [
+          "100"
+        ]
+      },
+      "explanation": "25 × 4 = 100 (km).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-090",
+      "type": "fill_in",
+      "prompt": "Một người đi với vận tốc 30 km/giờ trong 2 giờ. Người đó đi được ___ km.",
+      "answer": {
+        "accepted": [
+          "60"
+        ]
+      },
+      "explanation": "30 × 2 = 60 (km).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-091",
+      "type": "fill_in",
+      "prompt": "Một người đi với vận tốc 35 km/giờ trong 3 giờ. Người đó đi được ___ km.",
+      "answer": {
+        "accepted": [
+          "105"
+        ]
+      },
+      "explanation": "35 × 3 = 105 (km).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-092",
+      "type": "fill_in",
+      "prompt": "Một người đi với vận tốc 40 km/giờ trong 4 giờ. Người đó đi được ___ km.",
+      "answer": {
+        "accepted": [
+          "160"
+        ]
+      },
+      "explanation": "40 × 4 = 160 (km).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-093",
+      "type": "fill_in",
+      "prompt": "Một người đi 20 km trong 2 giờ. Vận tốc của người đó là ___ km/giờ.",
+      "answer": {
+        "accepted": [
+          "10"
+        ]
+      },
+      "explanation": "20 : 2 = 10 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-094",
+      "type": "fill_in",
+      "prompt": "Một người đi 42 km trong 3 giờ. Vận tốc của người đó là ___ km/giờ.",
+      "answer": {
+        "accepted": [
+          "14"
+        ]
+      },
+      "explanation": "42 : 3 = 14 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-095",
+      "type": "fill_in",
+      "prompt": "Một người đi 72 km trong 4 giờ. Vận tốc của người đó là ___ km/giờ.",
+      "answer": {
+        "accepted": [
+          "18"
+        ]
+      },
+      "explanation": "72 : 4 = 18 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-096",
+      "type": "fill_in",
+      "prompt": "Một người đi 110 km trong 5 giờ. Vận tốc của người đó là ___ km/giờ.",
+      "answer": {
+        "accepted": [
+          "22"
+        ]
+      },
+      "explanation": "110 : 5 = 22 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-097",
+      "type": "fill_in",
+      "prompt": "Một người đi 52 km trong 2 giờ. Vận tốc của người đó là ___ km/giờ.",
+      "answer": {
+        "accepted": [
+          "26"
+        ]
+      },
+      "explanation": "52 : 2 = 26 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-098",
+      "type": "fill_in",
+      "prompt": "Quãng đường dài 24 km, vận tốc 12 km/giờ. Thời gian đi là ___ giờ.",
+      "answer": {
+        "accepted": [
+          "2"
+        ]
+      },
+      "explanation": "24 : 12 = 2 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-099",
+      "type": "fill_in",
+      "prompt": "Quãng đường dài 45 km, vận tốc 15 km/giờ. Thời gian đi là ___ giờ.",
+      "answer": {
+        "accepted": [
+          "3"
+        ]
+      },
+      "explanation": "45 : 15 = 3 (giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-100",
+      "type": "fill_in",
+      "prompt": "Quãng đường dài 72 km, vận tốc 18 km/giờ. Thời gian đi là ___ giờ.",
+      "answer": {
+        "accepted": [
+          "4"
+        ]
+      },
+      "explanation": "72 : 18 = 4 (giờ).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-101",
+      "type": "fill_in",
+      "prompt": "Quãng đường dài 42 km, vận tốc 21 km/giờ. Thời gian đi là ___ giờ.",
+      "answer": {
+        "accepted": [
+          "2"
+        ]
+      },
+      "explanation": "42 : 21 = 2 (giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-102",
+      "type": "fill_in",
+      "prompt": "Quãng đường dài 72 km, vận tốc 24 km/giờ. Thời gian đi là ___ giờ.",
+      "answer": {
+        "accepted": [
+          "3"
+        ]
+      },
+      "explanation": "72 : 24 = 3 (giờ).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-103",
+      "type": "fill_in",
+      "prompt": "Hai xe đi ngược chiều với vận tốc 40 km/giờ và 35 km/giờ. Mỗi giờ hai xe lại gần nhau ___ km.",
+      "answer": {
+        "accepted": [
+          "75"
+        ]
+      },
+      "explanation": "40 + 35 = 75 (km).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-104",
+      "type": "fill_in",
+      "prompt": "Hai xe đi cùng chiều với vận tốc 50 km/giờ và 40 km/giờ. Mỗi giờ xe nhanh hơn rút ngắn khoảng cách ___ km.",
+      "answer": {
+        "accepted": [
+          "10"
+        ]
+      },
+      "explanation": "50 - 40 = 10 (km).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-105",
+      "type": "fill_in",
+      "prompt": "Hai xe đi ngược chiều với vận tốc 45 km/giờ và 30 km/giờ. Sau 2 giờ hai xe gặp nhau. Lúc đầu hai xe cách nhau ___ km.",
+      "answer": {
+        "accepted": [
+          "150"
+        ]
+      },
+      "explanation": "(45 + 30) × 2 = 150 (km).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-5-chuyen-dong-106",
+      "type": "fill_in",
+      "prompt": "Một người đi xe đạp 36 km trong 3 giờ. Trung bình mỗi giờ người đó đi được ___ km.",
+      "answer": {
+        "accepted": [
+          "12"
+        ]
+      },
+      "explanation": "36 : 3 = 12 (km).",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-5-chuyen-dong-107",
+      "type": "fill_in",
+      "prompt": "Một ô tô đi 150 km trong 2,5 giờ. Vận tốc của ô tô là ___ km/giờ.",
+      "answer": {
+        "accepted": [
+          "60"
+        ]
+      },
+      "explanation": "150 : 2,5 = 60 (km/giờ).",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-5-chuyen-dong-108",
+      "type": "fill_in",
+      "prompt": "Một người chạy 400 m trong 80 giây. Vận tốc của người đó là ___ m/giây.",
+      "answer": {
+        "accepted": [
+          "5"
+        ]
+      },
+      "explanation": "400 : 80 = 5 (m/giây).",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

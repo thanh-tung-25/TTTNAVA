@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "toan-4-so-lon",
+    "subjectId": "toan",
+    "grade": 4,
+    "slug": "so-lon",
+    "name": "Số lớn, hàng và lớp",
+    "sortOrder": 1
+  },
+  "questions": [
+    {
+      "id": "toan-4-so-lon-001",
+      "type": "single_choice",
+      "prompt": "Số 456 789 có chữ số hàng trăm nghìn là chữ số nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "6"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 4.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-so-lon-002",
+      "type": "single_choice",
+      "prompt": "Số 305 672 có chữ số hàng chục nghìn là chữ số nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "0"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "10"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 0.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-so-lon-003",
+      "type": "single_choice",
+      "prompt": "Số nào lớn hơn: 708 450 hay 708 405?",
+      "options": [
+        {
+          "key": "a",
+          "text": "708451"
+        },
+        {
+          "key": "b",
+          "text": "708452"
+        },
+        {
+          "key": "c",
+          "text": "708450"
+        },
+        {
+          "key": "d",
+          "text": "708449"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 708450.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-so-lon-004",
+      "type": "single_choice",
+      "prompt": "Số nào bé hơn: 99 999 hay 100 000?",
+      "options": [
+        {
+          "key": "a",
+          "text": "100001"
+        },
+        {
+          "key": "b",
+          "text": "99998"
+        },
+        {
+          "key": "c",
+          "text": "100000"
+        },
+        {
+          "key": "d",
+          "text": "99999"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 99999.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-so-lon-005",
+      "type": "single_choice",
+      "prompt": "Làm tròn số 47 638 đến hàng nghìn được số nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "48000"
+        },
+        {
+          "key": "b",
+          "text": "48002"
+        },
+        {
+          "key": "c",
+          "text": "47999"
+        },
+        {
+          "key": "d",
+          "text": "48001"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 48000.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-so-lon-006",
+      "type": "single_choice",
+      "prompt": "Làm tròn số 82 451 đến hàng trăm được số nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "82499"
+        },
+        {
+          "key": "b",
+          "text": "82500"
+        },
+        {
+          "key": "c",
+          "text": "82501"
+        },
+        {
+          "key": "d",
+          "text": "82502"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 82500.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-so-lon-007",
+      "type": "single_choice",
+      "prompt": "Số gồm 5 trăm nghìn, 3 chục nghìn, 2 trăm, 7 đơn vị là số nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "530206"
+        },
+        {
+          "key": "b",
+          "text": "530209"
+        },
+        {
+          "key": "c",
+          "text": "530207"
+        },
+        {
+          "key": "d",
+          "text": "530208"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 530207.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-so-lon-008",
+      "type": "single_choice",
+      "prompt": "Số 120 000 gồm bao nhiêu chục nghìn?",
+      "options": [
+        {
+          "key": "a",
+          "text": "11"
+        },
+        {
+          "key": "b",
+          "text": "13"
+        },
+        {
+          "key": "c",
+          "text": "14"
+        },
+        {
+          "key": "d",
+          "text": "12"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 12.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-so-lon-009",
+      "type": "single_choice",
+      "prompt": "Số 7 000 000 được đọc là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bảy triệu"
+        },
+        {
+          "key": "b",
+          "text": "bảy mươi nghìn"
+        },
+        {
+          "key": "c",
+          "text": "bảy tỉ"
+        },
+        {
+          "key": "d",
+          "text": "bảy trăm nghìn"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là bảy triệu.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-so-lon-010",
+      "type": "single_choice",
+      "prompt": "Số liền sau của 999 999 là số nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "999999"
+        },
+        {
+          "key": "b",
+          "text": "1000000"
+        },
+        {
+          "key": "c",
+          "text": "1000002"
+        },
+        {
+          "key": "d",
+          "text": "1000001"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 1000000.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-so-lon-011",
+      "type": "single_choice",
+      "prompt": "Số liền trước của 1 000 000 là số nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1000000"
+        },
+        {
+          "key": "b",
+          "text": "999998"
+        },
+        {
+          "key": "c",
+          "text": "999999"
+        },
+        {
+          "key": "d",
+          "text": "1000001"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 999999.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-so-lon-012",
+      "type": "single_choice",
+      "prompt": "Trong số 8 642 135, chữ số 8 thuộc hàng nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "hàng nghìn"
+        },
+        {
+          "key": "b",
+          "text": "hàng chục nghìn"
+        },
+        {
+          "key": "c",
+          "text": "hàng trăm nghìn"
+        },
+        {
+          "key": "d",
+          "text": "hàng triệu"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là hàng triệu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-so-lon-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số có chữ số hàng chục nghìn là 4.",
+      "options": [
+        {
+          "key": "a",
+          "text": "234 567"
+        },
+        {
+          "key": "b",
+          "text": "415 230"
+        },
+        {
+          "key": "c",
+          "text": "342 718"
+        },
+        {
+          "key": "d",
+          "text": "145 230"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "145 230 và 342 718 có chữ số hàng chục nghìn là 4.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-so-lon-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số lớn hơn 500 000.",
+      "options": [
+        {
+          "key": "a",
+          "text": "499 999"
+        },
+        {
+          "key": "b",
+          "text": "600 120"
+        },
+        {
+          "key": "c",
+          "text": "789 000"
+        },
+        {
+          "key": "d",
+          "text": "500 000"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "600 120 và 789 000 đều lớn hơn 500 000.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-so-lon-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số làm tròn đến hàng nghìn bằng 46 000.",
+      "options": [
+        {
+          "key": "a",
+          "text": "46 200"
+        },
+        {
+          "key": "b",
+          "text": "47 600"
+        },
+        {
+          "key": "c",
+          "text": "44 500"
+        },
+        {
+          "key": "d",
+          "text": "45 600"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "45 600 và 46 200 đều làm tròn đến hàng nghìn bằng 46 000.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-so-lon-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các số có 6 chữ số.",
+      "options": [
+        {
+          "key": "a",
+          "text": "123 456"
+        },
+        {
+          "key": "b",
+          "text": "12 345"
+        },
+        {
+          "key": "c",
+          "text": "1 000 000"
+        },
+        {
+          "key": "d",
+          "text": "999 999"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "123 456 và 999 999 đều có 6 chữ số.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-so-lon-017",
+      "type": "true_false",
+      "prompt": "Số 999 999 lớn hơn số 1 000 000.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "999 999 bé hơn 1 000 000.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-so-lon-018",
+      "type": "true_false",
+      "prompt": "Số 405 320 có chữ số hàng nghìn là 5.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Số 405 320 có chữ số hàng nghìn là 5. là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-so-lon-019",
+      "type": "true_false",
+      "prompt": "Làm tròn 67 500 đến hàng nghìn được 68 000.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Làm tròn 67 500 đến hàng nghìn được 68 000. là đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-so-lon-020",
+      "type": "true_false",
+      "prompt": "Số 100 000 gồm 10 chục nghìn.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Số 100 000 gồm 10 chục nghìn. là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-so-lon-021",
+      "type": "fill_in",
+      "prompt": "Số liền sau của 999 999 là ___.",
+      "answer": {
+        "accepted": [
+          "1000000"
+        ]
+      },
+      "explanation": "Đáp án là 1000000.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-so-lon-022",
+      "type": "fill_in",
+      "prompt": "Làm tròn 34 567 đến hàng nghìn được ___.",
+      "answer": {
+        "accepted": [
+          "35000"
+        ]
+      },
+      "explanation": "Đáp án là 35000.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-so-lon-023",
+      "type": "fill_in",
+      "prompt": "Số gồm 2 trăm nghìn, 4 chục nghìn, 5 trăm và 9 đơn vị là ___.",
+      "answer": {
+        "accepted": [
+          "240509"
+        ]
+      },
+      "explanation": "Đáp án là 240509.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-so-lon-024",
+      "type": "fill_in",
+      "prompt": "Số 580 000 gồm ___ chục nghìn.",
+      "answer": {
+        "accepted": [
+          "58"
+        ]
+      },
+      "explanation": "Đáp án là 58.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-so-lon-025",
+      "type": "fill_in",
+      "prompt": "Số liền trước của 700 000 là ___.",
+      "answer": {
+        "accepted": [
+          "699999"
+        ]
+      },
+      "explanation": "Đáp án là 699999.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

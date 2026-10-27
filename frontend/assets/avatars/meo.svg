@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mèo cam">
+  <title>Mèo cam</title>
+  <circle cx="32" cy="32" r="32" fill="#ffe3c2"/>
+  <path d="M14 24 12 8l14 8zM50 24 52 8 38 16z" fill="#f59f4b"/>
+  <path d="M17 21 16 13l8 5zM47 21 48 13l-8 5z" fill="#ffd6b0"/>
+  <circle cx="32" cy="34" r="20" fill="#f9b45f"/>
+  <path d="M26 18h12M28 14h8" stroke="#e08b2f" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="25" cy="32" r="2.6" fill="#3a2a1a"/>
+  <circle cx="39" cy="32" r="2.6" fill="#3a2a1a"/>
+  <path d="M30 38q2 2 4 0" stroke="#3a2a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M28 40h8l-4 3z" fill="#e0708e"/>
+  <path d="M18 36h8M18 41h8M46 36h-8M46 41h-8" stroke="#8a5a2b" stroke-width="1.6" stroke-linecap="round"/>
+</svg>

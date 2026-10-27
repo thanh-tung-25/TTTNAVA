@@ -1,0 +1,2537 @@
+{
+  "topic": {
+    "id": "tieng-viet-5-dai-tu-quan-he-tu",
+    "subjectId": "tieng-viet",
+    "grade": 5,
+    "slug": "dai-tu-quan-he-tu",
+    "name": "Đại từ và quan hệ từ",
+    "sortOrder": 2
+  },
+  "questions": [
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-001",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Tôi thích đọc sách.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "Tôi"
+        },
+        {
+          "key": "b",
+          "text": "đẹp"
+        },
+        {
+          "key": "c",
+          "text": "sách"
+        },
+        {
+          "key": "d",
+          "text": "mưa"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'Tôi' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-002",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Nó đang chơi ngoài sân.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "học"
+        },
+        {
+          "key": "b",
+          "text": "Nó"
+        },
+        {
+          "key": "c",
+          "text": "chạy"
+        },
+        {
+          "key": "d",
+          "text": "hoa"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'Nó' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-003",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Chúng tôi cùng nhau dọn lớp.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "sân"
+        },
+        {
+          "key": "b",
+          "text": "nắng"
+        },
+        {
+          "key": "c",
+          "text": "Chúng tôi"
+        },
+        {
+          "key": "d",
+          "text": "bàn"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'Chúng tôi' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-004",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Họ là học sinh lớp 5A.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "gió"
+        },
+        {
+          "key": "b",
+          "text": "mưa"
+        },
+        {
+          "key": "c",
+          "text": "đẹp"
+        },
+        {
+          "key": "d",
+          "text": "Họ"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'Họ' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-005",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Cô ấy hát rất hay.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cô ấy"
+        },
+        {
+          "key": "b",
+          "text": "chạy"
+        },
+        {
+          "key": "c",
+          "text": "hoa"
+        },
+        {
+          "key": "d",
+          "text": "cây"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'Cô ấy' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-006",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Anh ấy là bác sĩ.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "nắng"
+        },
+        {
+          "key": "b",
+          "text": "Anh ấy"
+        },
+        {
+          "key": "c",
+          "text": "bàn"
+        },
+        {
+          "key": "d",
+          "text": "nhà"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'Anh ấy' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-007",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Ông ấy đang đọc báo.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "xe"
+        },
+        {
+          "key": "b",
+          "text": "gió"
+        },
+        {
+          "key": "c",
+          "text": "Ông ấy"
+        },
+        {
+          "key": "d",
+          "text": "mưa"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'Ông ấy' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-008",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Bà ấy nấu ăn rất ngon.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "cây"
+        },
+        {
+          "key": "b",
+          "text": "hoa"
+        },
+        {
+          "key": "c",
+          "text": "bút"
+        },
+        {
+          "key": "d",
+          "text": "Bà ấy"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'Bà ấy' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-009",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Chúng em yêu quý cô giáo.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "Chúng em"
+        },
+        {
+          "key": "b",
+          "text": "nhà"
+        },
+        {
+          "key": "c",
+          "text": "vở"
+        },
+        {
+          "key": "d",
+          "text": "nắng"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'Chúng em' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-010",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Các bạn ấy chơi rất vui.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "cơm"
+        },
+        {
+          "key": "b",
+          "text": "Các bạn ấy"
+        },
+        {
+          "key": "c",
+          "text": "xe"
+        },
+        {
+          "key": "d",
+          "text": "gió"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'Các bạn ấy' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-011",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Mình thích màu xanh.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "cây"
+        },
+        {
+          "key": "b",
+          "text": "bút"
+        },
+        {
+          "key": "c",
+          "text": "Mình"
+        },
+        {
+          "key": "d",
+          "text": "trà"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'Mình' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-012",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Chúng ta cùng cố gắng nhé.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "nhà"
+        },
+        {
+          "key": "b",
+          "text": "chim"
+        },
+        {
+          "key": "c",
+          "text": "vở"
+        },
+        {
+          "key": "d",
+          "text": "Chúng ta"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'Chúng ta' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-013",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Bạn ấy học rất giỏi.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bạn ấy"
+        },
+        {
+          "key": "b",
+          "text": "xe"
+        },
+        {
+          "key": "c",
+          "text": "cơm"
+        },
+        {
+          "key": "d",
+          "text": "sách"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'Bạn ấy' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-014",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Chị ấy làm y tá.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "bút"
+        },
+        {
+          "key": "b",
+          "text": "Chị ấy"
+        },
+        {
+          "key": "c",
+          "text": "học"
+        },
+        {
+          "key": "d",
+          "text": "trà"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'Chị ấy' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-015",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Chú ấy là bộ đội.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "chim"
+        },
+        {
+          "key": "b",
+          "text": "vở"
+        },
+        {
+          "key": "c",
+          "text": "Chú ấy"
+        },
+        {
+          "key": "d",
+          "text": "sân"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'Chú ấy' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-016",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Họ đã đến thăm trường em.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "sách"
+        },
+        {
+          "key": "b",
+          "text": "đẹp"
+        },
+        {
+          "key": "c",
+          "text": "cơm"
+        },
+        {
+          "key": "d",
+          "text": "Họ"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'Họ' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-017",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Nó có bộ lông màu vàng.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "Nó"
+        },
+        {
+          "key": "b",
+          "text": "học"
+        },
+        {
+          "key": "c",
+          "text": "chạy"
+        },
+        {
+          "key": "d",
+          "text": "trà"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'Nó' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-018",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là đại từ? \"Chúng tôi đang tập thể dục.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "chim"
+        },
+        {
+          "key": "b",
+          "text": "Chúng tôi"
+        },
+        {
+          "key": "c",
+          "text": "sân"
+        },
+        {
+          "key": "d",
+          "text": "bàn"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'Chúng tôi' là đại từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-019",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Vì trời mưa, em mang áo mưa.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "đẹp"
+        },
+        {
+          "key": "b",
+          "text": "mưa"
+        },
+        {
+          "key": "c",
+          "text": "Vì"
+        },
+        {
+          "key": "d",
+          "text": "sách"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'Vì' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-020",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Lan học giỏi nhờ chăm chỉ.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "học"
+        },
+        {
+          "key": "b",
+          "text": "chạy"
+        },
+        {
+          "key": "c",
+          "text": "hoa"
+        },
+        {
+          "key": "d",
+          "text": "nhờ"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'nhờ' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-021",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Tôi đi học bằng xe đạp.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "bằng"
+        },
+        {
+          "key": "b",
+          "text": "bàn"
+        },
+        {
+          "key": "c",
+          "text": "nắng"
+        },
+        {
+          "key": "d",
+          "text": "sân"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'bằng' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-022",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Cái bàn này làm bằng gỗ.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "đẹp"
+        },
+        {
+          "key": "b",
+          "text": "bằng"
+        },
+        {
+          "key": "c",
+          "text": "gió"
+        },
+        {
+          "key": "d",
+          "text": "mưa"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'bằng' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-023",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Bố mua cho em một quyển sách.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "chạy"
+        },
+        {
+          "key": "b",
+          "text": "cây"
+        },
+        {
+          "key": "c",
+          "text": "cho"
+        },
+        {
+          "key": "d",
+          "text": "hoa"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'cho' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-024",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Mẹ nấu cơm với cá.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "nắng"
+        },
+        {
+          "key": "b",
+          "text": "nhà"
+        },
+        {
+          "key": "c",
+          "text": "bàn"
+        },
+        {
+          "key": "d",
+          "text": "với"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'với' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-025",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Em thích màu xanh và màu đỏ.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "và"
+        },
+        {
+          "key": "b",
+          "text": "xe"
+        },
+        {
+          "key": "c",
+          "text": "mưa"
+        },
+        {
+          "key": "d",
+          "text": "gió"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'và' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-026",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Bạn Lan và bạn Mai đều giỏi.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "bút"
+        },
+        {
+          "key": "b",
+          "text": "và"
+        },
+        {
+          "key": "c",
+          "text": "hoa"
+        },
+        {
+          "key": "d",
+          "text": "cây"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'và' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-027",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Em không đi chơi mà ở nhà học bài.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "nhà"
+        },
+        {
+          "key": "b",
+          "text": "nắng"
+        },
+        {
+          "key": "c",
+          "text": "mà"
+        },
+        {
+          "key": "d",
+          "text": "vở"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'mà' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-028",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Em vẫn đi học dù trời mưa.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "cơm"
+        },
+        {
+          "key": "b",
+          "text": "xe"
+        },
+        {
+          "key": "c",
+          "text": "gió"
+        },
+        {
+          "key": "d",
+          "text": "dù"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'dù' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-029",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Trời mưa nên em ở nhà.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "nên"
+        },
+        {
+          "key": "b",
+          "text": "bút"
+        },
+        {
+          "key": "c",
+          "text": "cây"
+        },
+        {
+          "key": "d",
+          "text": "trà"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'nên' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-030",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Em ở nhà để làm bài tập.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "chim"
+        },
+        {
+          "key": "b",
+          "text": "để"
+        },
+        {
+          "key": "c",
+          "text": "vở"
+        },
+        {
+          "key": "d",
+          "text": "nhà"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'để' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-031",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Cuốn sách này của Lan.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "xe"
+        },
+        {
+          "key": "b",
+          "text": "sách"
+        },
+        {
+          "key": "c",
+          "text": "của"
+        },
+        {
+          "key": "d",
+          "text": "cơm"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'của' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-032",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Cây bút này của tôi.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "bút"
+        },
+        {
+          "key": "b",
+          "text": "trà"
+        },
+        {
+          "key": "c",
+          "text": "học"
+        },
+        {
+          "key": "d",
+          "text": "của"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'của' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-033",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Em nói chuyện với bạn.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "với"
+        },
+        {
+          "key": "b",
+          "text": "chim"
+        },
+        {
+          "key": "c",
+          "text": "vở"
+        },
+        {
+          "key": "d",
+          "text": "sân"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'với' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-034",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Bạn ấy giỏi về toán.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "sách"
+        },
+        {
+          "key": "b",
+          "text": "về"
+        },
+        {
+          "key": "c",
+          "text": "cơm"
+        },
+        {
+          "key": "d",
+          "text": "đẹp"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'về' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-035",
+      "type": "single_choice",
+      "prompt": "Từ nào trong câu sau là quan hệ từ? \"Em thích đọc truyện như bạn Nam.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "học"
+        },
+        {
+          "key": "b",
+          "text": "chạy"
+        },
+        {
+          "key": "c",
+          "text": "như"
+        },
+        {
+          "key": "d",
+          "text": "trà"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'như' là quan hệ từ trong câu.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-036",
+      "type": "single_choice",
+      "prompt": "Đại từ 'Bạn ấy' trong hai câu \"Lan học giỏi. Bạn ấy được cô khen.\" thay thế cho từ ngữ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Hoa"
+        },
+        {
+          "key": "b",
+          "text": "Nam"
+        },
+        {
+          "key": "c",
+          "text": "Mai"
+        },
+        {
+          "key": "d",
+          "text": "Lan"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'Bạn ấy' thay thế cho 'Lan'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-037",
+      "type": "single_choice",
+      "prompt": "Đại từ 'Nó' trong hai câu \"Con mèo đang ngủ. Nó rất lười.\" thay thế cho từ ngữ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Con mèo"
+        },
+        {
+          "key": "b",
+          "text": "Con cá"
+        },
+        {
+          "key": "c",
+          "text": "Con gà"
+        },
+        {
+          "key": "d",
+          "text": "Con chó"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'Nó' thay thế cho 'Con mèo'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-038",
+      "type": "single_choice",
+      "prompt": "Đại từ 'Ông ấy' trong hai câu \"Bố em là bác sĩ. Ông ấy làm việc ở bệnh viện.\" thay thế cho từ ngữ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Chú em"
+        },
+        {
+          "key": "b",
+          "text": "Bố em"
+        },
+        {
+          "key": "c",
+          "text": "Anh trai"
+        },
+        {
+          "key": "d",
+          "text": "Ông nội"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'Ông ấy' thay thế cho 'Bố em'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-039",
+      "type": "single_choice",
+      "prompt": "Đại từ 'Bà ấy' trong hai câu \"Mẹ em là giáo viên. Bà ấy dạy lớp 5A.\" thay thế cho từ ngữ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Chị gái"
+        },
+        {
+          "key": "b",
+          "text": "Cô giáo"
+        },
+        {
+          "key": "c",
+          "text": "Mẹ em"
+        },
+        {
+          "key": "d",
+          "text": "Bà nội"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'Bà ấy' thay thế cho 'Mẹ em'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-040",
+      "type": "single_choice",
+      "prompt": "Đại từ 'Họ' trong hai câu \"Nam và Minh là bạn thân. Họ cùng học lớp 5B.\" thay thế cho từ ngữ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cô và trò"
+        },
+        {
+          "key": "b",
+          "text": "Bố và mẹ"
+        },
+        {
+          "key": "c",
+          "text": "Lan và Mai"
+        },
+        {
+          "key": "d",
+          "text": "Nam và Minh"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'Họ' thay thế cho 'Nam và Minh'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-041",
+      "type": "single_choice",
+      "prompt": "Đại từ 'Nó' trong hai câu \"Cây bàng rất cao. Nó tỏa bóng mát cả sân.\" thay thế cho từ ngữ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Cây bàng"
+        },
+        {
+          "key": "b",
+          "text": "Cây tre"
+        },
+        {
+          "key": "c",
+          "text": "Cây xoài"
+        },
+        {
+          "key": "d",
+          "text": "Cây mít"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'Nó' thay thế cho 'Cây bàng'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-042",
+      "type": "single_choice",
+      "prompt": "Đại từ 'Chị ấy' trong hai câu \"Chị em làm y tá. Chị ấy rất dịu dàng.\" thay thế cho từ ngữ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bà em"
+        },
+        {
+          "key": "b",
+          "text": "Chị em"
+        },
+        {
+          "key": "c",
+          "text": "Cô em"
+        },
+        {
+          "key": "d",
+          "text": "Mẹ em"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'Chị ấy' thay thế cho 'Chị em'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-043",
+      "type": "single_choice",
+      "prompt": "Đại từ 'Bạn ấy' trong hai câu \"Bạn Mai hát rất hay. Bạn ấy được cả lớp khen.\" thay thế cho từ ngữ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Bạn Hoa"
+        },
+        {
+          "key": "b",
+          "text": "Bạn Lan"
+        },
+        {
+          "key": "c",
+          "text": "Bạn Mai"
+        },
+        {
+          "key": "d",
+          "text": "Bạn Nhi"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'Bạn ấy' thay thế cho 'Bạn Mai'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-044",
+      "type": "single_choice",
+      "prompt": "Đại từ 'Chúng' trong hai câu \"Đàn cá bơi dưới ao. Chúng bơi rất nhanh.\" thay thế cho từ ngữ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Đàn bò"
+        },
+        {
+          "key": "b",
+          "text": "Đàn vịt"
+        },
+        {
+          "key": "c",
+          "text": "Đàn chim"
+        },
+        {
+          "key": "d",
+          "text": "Đàn cá"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'Chúng' thay thế cho 'Đàn cá'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-045",
+      "type": "single_choice",
+      "prompt": "Cặp quan hệ từ 'Vì ... nên' trong câu \"Vì trời mưa nên em đi học muộn.\" biểu thị quan hệ gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nguyên nhân – kết quả"
+        },
+        {
+          "key": "b",
+          "text": "điều kiện – kết quả"
+        },
+        {
+          "key": "c",
+          "text": "tương phản"
+        },
+        {
+          "key": "d",
+          "text": "tăng tiến"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Cặp 'Vì ... nên' biểu thị quan hệ nguyên nhân – kết quả.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-046",
+      "type": "single_choice",
+      "prompt": "Cặp quan hệ từ 'Tuy ... nhưng' trong câu \"Tuy nhà nghèo nhưng bạn ấy học rất giỏi.\" biểu thị quan hệ gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "tăng tiến"
+        },
+        {
+          "key": "b",
+          "text": "tương phản"
+        },
+        {
+          "key": "c",
+          "text": "nguyên nhân – kết quả"
+        },
+        {
+          "key": "d",
+          "text": "điều kiện – kết quả"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Cặp 'Tuy ... nhưng' biểu thị quan hệ tương phản.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-047",
+      "type": "single_choice",
+      "prompt": "Cặp quan hệ từ 'Nếu ... thì' trong câu \"Nếu em chăm chỉ thì em sẽ tiến bộ.\" biểu thị quan hệ gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "tương phản"
+        },
+        {
+          "key": "b",
+          "text": "tăng tiến"
+        },
+        {
+          "key": "c",
+          "text": "điều kiện – kết quả"
+        },
+        {
+          "key": "d",
+          "text": "nguyên nhân – kết quả"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Cặp 'Nếu ... thì' biểu thị quan hệ điều kiện – kết quả.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-048",
+      "type": "single_choice",
+      "prompt": "Cặp quan hệ từ 'Không những ... mà' trong câu \"Không những Lan học giỏi mà bạn ấy còn hát hay.\" biểu thị quan hệ gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "điều kiện – kết quả"
+        },
+        {
+          "key": "b",
+          "text": "nguyên nhân – kết quả"
+        },
+        {
+          "key": "c",
+          "text": "tương phản"
+        },
+        {
+          "key": "d",
+          "text": "tăng tiến"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Cặp 'Không những ... mà' biểu thị quan hệ tăng tiến.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-049",
+      "type": "single_choice",
+      "prompt": "Cặp quan hệ từ 'để' trong câu \"Em học chăm để đạt kết quả tốt.\" biểu thị quan hệ gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mục đích"
+        },
+        {
+          "key": "b",
+          "text": "điều kiện – kết quả"
+        },
+        {
+          "key": "c",
+          "text": "nguyên nhân – kết quả"
+        },
+        {
+          "key": "d",
+          "text": "tương phản"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Cặp 'để' biểu thị quan hệ mục đích.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-050",
+      "type": "single_choice",
+      "prompt": "Cặp quan hệ từ 'Vì ... nên' trong câu \"Vì trời lạnh nên em mặc áo ấm.\" biểu thị quan hệ gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "tương phản"
+        },
+        {
+          "key": "b",
+          "text": "nguyên nhân – kết quả"
+        },
+        {
+          "key": "c",
+          "text": "tăng tiến"
+        },
+        {
+          "key": "d",
+          "text": "điều kiện – kết quả"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Cặp 'Vì ... nên' biểu thị quan hệ nguyên nhân – kết quả.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-051",
+      "type": "single_choice",
+      "prompt": "Cặp quan hệ từ 'Dù ... nhưng' trong câu \"Dù trời mưa nhưng em vẫn đến lớp.\" biểu thị quan hệ gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "điều kiện – kết quả"
+        },
+        {
+          "key": "b",
+          "text": "tăng tiến"
+        },
+        {
+          "key": "c",
+          "text": "tương phản"
+        },
+        {
+          "key": "d",
+          "text": "nguyên nhân – kết quả"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Cặp 'Dù ... nhưng' biểu thị quan hệ tương phản.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-052",
+      "type": "single_choice",
+      "prompt": "Cặp quan hệ từ 'Hễ ... thì' trong câu \"Hễ trời nắng thì chúng em đi cắm trại.\" biểu thị quan hệ gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "nguyên nhân – kết quả"
+        },
+        {
+          "key": "b",
+          "text": "tương phản"
+        },
+        {
+          "key": "c",
+          "text": "tăng tiến"
+        },
+        {
+          "key": "d",
+          "text": "điều kiện – kết quả"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Cặp 'Hễ ... thì' biểu thị quan hệ điều kiện – kết quả.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-053",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các đại từ trong nhóm: tôi, bàn, chúng tôi, chạy.",
+      "options": [
+        {
+          "key": "a",
+          "text": "chạy"
+        },
+        {
+          "key": "b",
+          "text": "bàn"
+        },
+        {
+          "key": "c",
+          "text": "chúng tôi"
+        },
+        {
+          "key": "d",
+          "text": "tôi"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các đại từ là tôi, chúng tôi.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-054",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các đại từ trong nhóm: nó, sách, họ, đẹp.",
+      "options": [
+        {
+          "key": "a",
+          "text": "đẹp"
+        },
+        {
+          "key": "b",
+          "text": "sách"
+        },
+        {
+          "key": "c",
+          "text": "họ"
+        },
+        {
+          "key": "d",
+          "text": "nó"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các đại từ là nó, họ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-055",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các đại từ trong nhóm: mình, mưa, ta, gió.",
+      "options": [
+        {
+          "key": "a",
+          "text": "ta"
+        },
+        {
+          "key": "b",
+          "text": "mưa"
+        },
+        {
+          "key": "c",
+          "text": "mình"
+        },
+        {
+          "key": "d",
+          "text": "gió"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các đại từ là mình, ta.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-056",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các đại từ trong nhóm: bạn ấy, nhà, cô ấy, xe.",
+      "options": [
+        {
+          "key": "a",
+          "text": "nhà"
+        },
+        {
+          "key": "b",
+          "text": "xe"
+        },
+        {
+          "key": "c",
+          "text": "bạn ấy"
+        },
+        {
+          "key": "d",
+          "text": "cô ấy"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các đại từ là bạn ấy, cô ấy.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-057",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các đại từ trong nhóm: chúng em, hoa, các bạn ấy, cây.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hoa"
+        },
+        {
+          "key": "b",
+          "text": "các bạn ấy"
+        },
+        {
+          "key": "c",
+          "text": "chúng em"
+        },
+        {
+          "key": "d",
+          "text": "cây"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các đại từ là chúng em, các bạn ấy.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-058",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các đại từ trong nhóm: anh ấy, cơm, ông ấy, trà.",
+      "options": [
+        {
+          "key": "a",
+          "text": "ông ấy"
+        },
+        {
+          "key": "b",
+          "text": "cơm"
+        },
+        {
+          "key": "c",
+          "text": "trà"
+        },
+        {
+          "key": "d",
+          "text": "anh ấy"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các đại từ là anh ấy, ông ấy.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-059",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các đại từ trong nhóm: bà ấy, bút, chị ấy, vở.",
+      "options": [
+        {
+          "key": "a",
+          "text": "bà ấy"
+        },
+        {
+          "key": "b",
+          "text": "vở"
+        },
+        {
+          "key": "c",
+          "text": "chị ấy"
+        },
+        {
+          "key": "d",
+          "text": "bút"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các đại từ là bà ấy, chị ấy.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-060",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các đại từ trong nhóm: chúng ta, chim, họ, cá.",
+      "options": [
+        {
+          "key": "a",
+          "text": "cá"
+        },
+        {
+          "key": "b",
+          "text": "họ"
+        },
+        {
+          "key": "c",
+          "text": "chim"
+        },
+        {
+          "key": "d",
+          "text": "chúng ta"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các đại từ là chúng ta, họ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-061",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các đại từ trong nhóm: tôi, chạy, bạn, học.",
+      "options": [
+        {
+          "key": "a",
+          "text": "tôi"
+        },
+        {
+          "key": "b",
+          "text": "chạy"
+        },
+        {
+          "key": "c",
+          "text": "học"
+        },
+        {
+          "key": "d",
+          "text": "bạn"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các đại từ là tôi, bạn.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-062",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các quan hệ từ trong nhóm: và, bàn, với, hoa.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hoa"
+        },
+        {
+          "key": "b",
+          "text": "và"
+        },
+        {
+          "key": "c",
+          "text": "với"
+        },
+        {
+          "key": "d",
+          "text": "bàn"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các quan hệ từ là và, với.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-063",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các quan hệ từ trong nhóm: vì, sách, nên, bút.",
+      "options": [
+        {
+          "key": "a",
+          "text": "vì"
+        },
+        {
+          "key": "b",
+          "text": "sách"
+        },
+        {
+          "key": "c",
+          "text": "bút"
+        },
+        {
+          "key": "d",
+          "text": "nên"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các quan hệ từ là vì, nên.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-064",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các quan hệ từ trong nhóm: nhưng, mưa, tuy, nắng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "tuy"
+        },
+        {
+          "key": "b",
+          "text": "nhưng"
+        },
+        {
+          "key": "c",
+          "text": "mưa"
+        },
+        {
+          "key": "d",
+          "text": "nắng"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các quan hệ từ là nhưng, tuy.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-065",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các quan hệ từ trong nhóm: của, xe, cho, cây.",
+      "options": [
+        {
+          "key": "a",
+          "text": "xe"
+        },
+        {
+          "key": "b",
+          "text": "cho"
+        },
+        {
+          "key": "c",
+          "text": "cây"
+        },
+        {
+          "key": "d",
+          "text": "của"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các quan hệ từ là của, cho.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-066",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các quan hệ từ trong nhóm: để, cơm, bằng, trà.",
+      "options": [
+        {
+          "key": "a",
+          "text": "cơm"
+        },
+        {
+          "key": "b",
+          "text": "để"
+        },
+        {
+          "key": "c",
+          "text": "trà"
+        },
+        {
+          "key": "d",
+          "text": "bằng"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các quan hệ từ là để, bằng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-067",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các quan hệ từ trong nhóm: nếu, nhà, thì, cửa.",
+      "options": [
+        {
+          "key": "a",
+          "text": "thì"
+        },
+        {
+          "key": "b",
+          "text": "nhà"
+        },
+        {
+          "key": "c",
+          "text": "nếu"
+        },
+        {
+          "key": "d",
+          "text": "cửa"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các quan hệ từ là nếu, thì.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-068",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các quan hệ từ trong nhóm: về, chim, như, cá.",
+      "options": [
+        {
+          "key": "a",
+          "text": "như"
+        },
+        {
+          "key": "b",
+          "text": "về"
+        },
+        {
+          "key": "c",
+          "text": "chim"
+        },
+        {
+          "key": "d",
+          "text": "cá"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các quan hệ từ là về, như.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-069",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các quan hệ từ trong nhóm: dù, hoa, mà, lá.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hoa"
+        },
+        {
+          "key": "b",
+          "text": "mà"
+        },
+        {
+          "key": "c",
+          "text": "dù"
+        },
+        {
+          "key": "d",
+          "text": "lá"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các quan hệ từ là dù, mà.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-070",
+      "type": "true_false",
+      "prompt": "Từ 'tôi' là đại từ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'tôi' là đại từ xưng hô.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-071",
+      "type": "true_false",
+      "prompt": "Từ 'bàn' là đại từ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, 'bàn' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-072",
+      "type": "true_false",
+      "prompt": "Từ 'chúng tôi' là đại từ xưng hô.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'chúng tôi' là đại từ xưng hô.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-073",
+      "type": "true_false",
+      "prompt": "Từ 'và' là quan hệ từ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'và' là quan hệ từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-074",
+      "type": "true_false",
+      "prompt": "Từ 'chạy' là quan hệ từ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, 'chạy' là động từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-075",
+      "type": "true_false",
+      "prompt": "Quan hệ từ dùng để nối các từ ngữ hoặc các câu.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, đó là chức năng của quan hệ từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-076",
+      "type": "true_false",
+      "prompt": "Từ 'của' là quan hệ từ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'của' là quan hệ từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-077",
+      "type": "true_false",
+      "prompt": "Từ 'đẹp' là đại từ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, 'đẹp' là tính từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-078",
+      "type": "true_false",
+      "prompt": "Từ 'nó' có thể thay thế cho danh từ đã nêu trước đó.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'nó' là đại từ thay thế.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-079",
+      "type": "true_false",
+      "prompt": "Từ 'nhưng' biểu thị quan hệ tương phản.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'nhưng' biểu thị tương phản.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-080",
+      "type": "true_false",
+      "prompt": "Từ 'vì' biểu thị quan hệ tương phản.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, 'vì' biểu thị nguyên nhân.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-081",
+      "type": "true_false",
+      "prompt": "Từ 'nếu' thường dùng trong câu ghép chỉ điều kiện.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'nếu' chỉ điều kiện.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-082",
+      "type": "true_false",
+      "prompt": "Từ 'họ' là quan hệ từ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, 'họ' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-083",
+      "type": "true_false",
+      "prompt": "Từ 'để' có thể biểu thị mục đích.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'để' biểu thị mục đích.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-084",
+      "type": "true_false",
+      "prompt": "Đại từ chỉ dùng để gọi tên sự vật.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, đại từ còn dùng để xưng hô hoặc thay thế.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-085",
+      "type": "true_false",
+      "prompt": "Từ 'với' là quan hệ từ.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng, 'với' là quan hệ từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-086",
+      "type": "true_false",
+      "prompt": "Từ 'sách' là đại từ.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai, 'sách' là danh từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-087",
+      "type": "fill_in",
+      "prompt": "Từ 'tôi' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "đại"
+        ]
+      },
+      "explanation": "'tôi' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-088",
+      "type": "fill_in",
+      "prompt": "Từ 'chúng tôi' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "đại"
+        ]
+      },
+      "explanation": "'chúng tôi' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-089",
+      "type": "fill_in",
+      "prompt": "Từ 'nó' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "đại"
+        ]
+      },
+      "explanation": "'nó' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-090",
+      "type": "fill_in",
+      "prompt": "Từ 'họ' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "đại"
+        ]
+      },
+      "explanation": "'họ' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-091",
+      "type": "fill_in",
+      "prompt": "Từ 'mình' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "đại"
+        ]
+      },
+      "explanation": "'mình' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-092",
+      "type": "fill_in",
+      "prompt": "Từ 'chúng ta' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "đại"
+        ]
+      },
+      "explanation": "'chúng ta' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-093",
+      "type": "fill_in",
+      "prompt": "Từ 'bạn ấy' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "đại"
+        ]
+      },
+      "explanation": "'bạn ấy' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-094",
+      "type": "fill_in",
+      "prompt": "Từ 'cô ấy' là ___ từ.",
+      "answer": {
+        "accepted": [
+          "đại"
+        ]
+      },
+      "explanation": "'cô ấy' là đại từ.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-095",
+      "type": "fill_in",
+      "prompt": "Trong câu \"Vì trời mưa, em mang áo mưa.\", quan hệ từ là ___.",
+      "answer": {
+        "accepted": [
+          "Vì"
+        ]
+      },
+      "explanation": "Quan hệ từ trong câu là 'Vì'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-096",
+      "type": "fill_in",
+      "prompt": "Trong câu \"Lan học giỏi nhờ chăm chỉ.\", quan hệ từ là ___.",
+      "answer": {
+        "accepted": [
+          "nhờ"
+        ]
+      },
+      "explanation": "Quan hệ từ trong câu là 'nhờ'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-097",
+      "type": "fill_in",
+      "prompt": "Trong câu \"Tôi đi học bằng xe đạp.\", quan hệ từ là ___.",
+      "answer": {
+        "accepted": [
+          "bằng"
+        ]
+      },
+      "explanation": "Quan hệ từ trong câu là 'bằng'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-098",
+      "type": "fill_in",
+      "prompt": "Trong câu \"Cái bàn này làm bằng gỗ.\", quan hệ từ là ___.",
+      "answer": {
+        "accepted": [
+          "bằng"
+        ]
+      },
+      "explanation": "Quan hệ từ trong câu là 'bằng'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-099",
+      "type": "fill_in",
+      "prompt": "Trong câu \"Bố mua cho em một quyển sách.\", quan hệ từ là ___.",
+      "answer": {
+        "accepted": [
+          "cho"
+        ]
+      },
+      "explanation": "Quan hệ từ trong câu là 'cho'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-100",
+      "type": "fill_in",
+      "prompt": "Trong câu \"Mẹ nấu cơm với cá.\", quan hệ từ là ___.",
+      "answer": {
+        "accepted": [
+          "với"
+        ]
+      },
+      "explanation": "Quan hệ từ trong câu là 'với'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-101",
+      "type": "fill_in",
+      "prompt": "Trong câu \"Em thích màu xanh và màu đỏ.\", quan hệ từ là ___.",
+      "answer": {
+        "accepted": [
+          "và"
+        ]
+      },
+      "explanation": "Quan hệ từ trong câu là 'và'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-102",
+      "type": "fill_in",
+      "prompt": "Cặp quan hệ từ 'Vì ... nên' trong câu \"Vì trời mưa nên em đi học muộn.\" biểu thị quan hệ ___.",
+      "answer": {
+        "accepted": [
+          "nguyên nhân – kết quả"
+        ]
+      },
+      "explanation": "Cặp 'Vì ... nên' biểu thị quan hệ nguyên nhân – kết quả.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-103",
+      "type": "fill_in",
+      "prompt": "Cặp quan hệ từ 'Tuy ... nhưng' trong câu \"Tuy nhà nghèo nhưng bạn ấy học rất giỏi.\" biểu thị quan hệ ___.",
+      "answer": {
+        "accepted": [
+          "tương phản"
+        ]
+      },
+      "explanation": "Cặp 'Tuy ... nhưng' biểu thị quan hệ tương phản.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-104",
+      "type": "fill_in",
+      "prompt": "Cặp quan hệ từ 'Nếu ... thì' trong câu \"Nếu em chăm chỉ thì em sẽ tiến bộ.\" biểu thị quan hệ ___.",
+      "answer": {
+        "accepted": [
+          "điều kiện – kết quả"
+        ]
+      },
+      "explanation": "Cặp 'Nếu ... thì' biểu thị quan hệ điều kiện – kết quả.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-105",
+      "type": "fill_in",
+      "prompt": "Cặp quan hệ từ 'Không những ... mà' trong câu \"Không những Lan học giỏi mà bạn ấy còn hát hay.\" biểu thị quan hệ ___.",
+      "answer": {
+        "accepted": [
+          "tăng tiến"
+        ]
+      },
+      "explanation": "Cặp 'Không những ... mà' biểu thị quan hệ tăng tiến.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-106",
+      "type": "fill_in",
+      "prompt": "Cặp quan hệ từ 'để' trong câu \"Em học chăm để đạt kết quả tốt.\" biểu thị quan hệ ___.",
+      "answer": {
+        "accepted": [
+          "mục đích"
+        ]
+      },
+      "explanation": "Cặp 'để' biểu thị quan hệ mục đích.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-107",
+      "type": "fill_in",
+      "prompt": "Cặp quan hệ từ 'Vì ... nên' trong câu \"Vì trời lạnh nên em mặc áo ấm.\" biểu thị quan hệ ___.",
+      "answer": {
+        "accepted": [
+          "nguyên nhân – kết quả"
+        ]
+      },
+      "explanation": "Cặp 'Vì ... nên' biểu thị quan hệ nguyên nhân – kết quả.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-5-dai-tu-quan-he-tu-108",
+      "type": "fill_in",
+      "prompt": "Cặp quan hệ từ 'Dù ... nhưng' trong câu \"Dù trời mưa nhưng em vẫn đến lớp.\" biểu thị quan hệ ___.",
+      "answer": {
+        "accepted": [
+          "tương phản"
+        ]
+      },
+      "explanation": "Cặp 'Dù ... nhưng' biểu thị quan hệ tương phản.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

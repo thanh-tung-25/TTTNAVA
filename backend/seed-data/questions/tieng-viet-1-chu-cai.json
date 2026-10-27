@@ -1,0 +1,2537 @@
+{
+  "topic": {
+    "id": "tieng-viet-1-chu-cai",
+    "subjectId": "tieng-viet",
+    "grade": 1,
+    "slug": "chu-cai",
+    "name": "Chữ cái và âm đầu",
+    "sortOrder": 1
+  },
+  "questions": [
+    {
+      "id": "tieng-viet-1-chu-cai-001",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay sau chữ 'a' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ă"
+        },
+        {
+          "key": "b",
+          "text": "c"
+        },
+        {
+          "key": "c",
+          "text": "e"
+        },
+        {
+          "key": "d",
+          "text": "h"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Trong bảng chữ cái, sau 'a' là 'ă'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-002",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay sau chữ 'â' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ê"
+        },
+        {
+          "key": "b",
+          "text": "b"
+        },
+        {
+          "key": "c",
+          "text": "d"
+        },
+        {
+          "key": "d",
+          "text": "i"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Trong bảng chữ cái, sau 'â' là 'b'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-003",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay sau chữ 'c' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "đ"
+        },
+        {
+          "key": "b",
+          "text": "k"
+        },
+        {
+          "key": "c",
+          "text": "d"
+        },
+        {
+          "key": "d",
+          "text": "g"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Trong bảng chữ cái, sau 'c' là 'd'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-004",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay sau chữ 'đ' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "h"
+        },
+        {
+          "key": "b",
+          "text": "o"
+        },
+        {
+          "key": "c",
+          "text": "l"
+        },
+        {
+          "key": "d",
+          "text": "e"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Trong bảng chữ cái, sau 'đ' là 'e'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-005",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay sau chữ 'ê' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "g"
+        },
+        {
+          "key": "b",
+          "text": "i"
+        },
+        {
+          "key": "c",
+          "text": "ê"
+        },
+        {
+          "key": "d",
+          "text": "m"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Trong bảng chữ cái, sau 'ê' là 'g'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-006",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay sau chữ 'h' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "k"
+        },
+        {
+          "key": "b",
+          "text": "i"
+        },
+        {
+          "key": "c",
+          "text": "n"
+        },
+        {
+          "key": "d",
+          "text": "g"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Trong bảng chữ cái, sau 'h' là 'i'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-007",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay sau chữ 'k' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "h"
+        },
+        {
+          "key": "b",
+          "text": "o"
+        },
+        {
+          "key": "c",
+          "text": "l"
+        },
+        {
+          "key": "d",
+          "text": "p"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Trong bảng chữ cái, sau 'k' là 'l'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-008",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay sau chữ 'm' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "m"
+        },
+        {
+          "key": "b",
+          "text": "ô"
+        },
+        {
+          "key": "c",
+          "text": "i"
+        },
+        {
+          "key": "d",
+          "text": "n"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Trong bảng chữ cái, sau 'm' là 'n'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-009",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay sau chữ 'o' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ô"
+        },
+        {
+          "key": "b",
+          "text": "k"
+        },
+        {
+          "key": "c",
+          "text": "n"
+        },
+        {
+          "key": "d",
+          "text": "ơ"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Trong bảng chữ cái, sau 'o' là 'ô'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-010",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay sau chữ 'ơ' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "o"
+        },
+        {
+          "key": "b",
+          "text": "p"
+        },
+        {
+          "key": "c",
+          "text": "l"
+        },
+        {
+          "key": "d",
+          "text": "s"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Trong bảng chữ cái, sau 'ơ' là 'p'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-011",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay trước chữ 'b' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ư"
+        },
+        {
+          "key": "b",
+          "text": "p"
+        },
+        {
+          "key": "c",
+          "text": "â"
+        },
+        {
+          "key": "d",
+          "text": "s"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Trong bảng chữ cái, trước 'b' là 'â'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-012",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay trước chữ 'đ' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "v"
+        },
+        {
+          "key": "b",
+          "text": "t"
+        },
+        {
+          "key": "c",
+          "text": "q"
+        },
+        {
+          "key": "d",
+          "text": "d"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Trong bảng chữ cái, trước 'đ' là 'd'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-013",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay trước chữ 'g' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ê"
+        },
+        {
+          "key": "b",
+          "text": "r"
+        },
+        {
+          "key": "c",
+          "text": "x"
+        },
+        {
+          "key": "d",
+          "text": "u"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Trong bảng chữ cái, trước 'g' là 'ê'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-014",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay trước chữ 'k' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "y"
+        },
+        {
+          "key": "b",
+          "text": "i"
+        },
+        {
+          "key": "c",
+          "text": "ư"
+        },
+        {
+          "key": "d",
+          "text": "s"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Trong bảng chữ cái, trước 'k' là 'i'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-015",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay trước chữ 'n' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "v"
+        },
+        {
+          "key": "b",
+          "text": "t"
+        },
+        {
+          "key": "c",
+          "text": "m"
+        },
+        {
+          "key": "d",
+          "text": "a"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Trong bảng chữ cái, trước 'n' là 'm'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-016",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay trước chữ 'ơ' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ă"
+        },
+        {
+          "key": "b",
+          "text": "x"
+        },
+        {
+          "key": "c",
+          "text": "u"
+        },
+        {
+          "key": "d",
+          "text": "ô"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Trong bảng chữ cái, trước 'ơ' là 'ô'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-017",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay trước chữ 'r' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "q"
+        },
+        {
+          "key": "b",
+          "text": "â"
+        },
+        {
+          "key": "c",
+          "text": "ư"
+        },
+        {
+          "key": "d",
+          "text": "y"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Trong bảng chữ cái, trước 'r' là 'q'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-018",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay trước chữ 'u' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "b"
+        },
+        {
+          "key": "b",
+          "text": "t"
+        },
+        {
+          "key": "c",
+          "text": "a"
+        },
+        {
+          "key": "d",
+          "text": "v"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Trong bảng chữ cái, trước 'u' là 't'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-019",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay trước chữ 'x' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ă"
+        },
+        {
+          "key": "b",
+          "text": "x"
+        },
+        {
+          "key": "c",
+          "text": "v"
+        },
+        {
+          "key": "d",
+          "text": "c"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Trong bảng chữ cái, trước 'x' là 'v'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-020",
+      "type": "single_choice",
+      "prompt": "Chữ nào đứng ngay trước chữ 'â' trong bảng chữ cái?",
+      "options": [
+        {
+          "key": "a",
+          "text": "â"
+        },
+        {
+          "key": "b",
+          "text": "y"
+        },
+        {
+          "key": "c",
+          "text": "d"
+        },
+        {
+          "key": "d",
+          "text": "ă"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Trong bảng chữ cái, trước 'â' là 'ă'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-021",
+      "type": "single_choice",
+      "prompt": "Từ nào dưới đây bắt đầu bằng âm 'b'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "bà"
+        },
+        {
+          "key": "b",
+          "text": "lửa"
+        },
+        {
+          "key": "c",
+          "text": "kèn"
+        },
+        {
+          "key": "d",
+          "text": "kẹo"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'bà' bắt đầu bằng âm 'b'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-022",
+      "type": "single_choice",
+      "prompt": "Từ nào dưới đây bắt đầu bằng âm 'c'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "lá"
+        },
+        {
+          "key": "b",
+          "text": "cò"
+        },
+        {
+          "key": "c",
+          "text": "kem"
+        },
+        {
+          "key": "d",
+          "text": "lược"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'cò' bắt đầu bằng âm 'c'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-023",
+      "type": "single_choice",
+      "prompt": "Từ nào dưới đây bắt đầu bằng âm 'd'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mèo"
+        },
+        {
+          "key": "b",
+          "text": "lê"
+        },
+        {
+          "key": "c",
+          "text": "dép"
+        },
+        {
+          "key": "d",
+          "text": "kiến"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'dép' bắt đầu bằng âm 'd'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-024",
+      "type": "single_choice",
+      "prompt": "Từ nào dưới đây bắt đầu bằng âm 'đ'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "kèn"
+        },
+        {
+          "key": "b",
+          "text": "mưa"
+        },
+        {
+          "key": "c",
+          "text": "lửa"
+        },
+        {
+          "key": "d",
+          "text": "đào"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'đào' bắt đầu bằng âm 'đ'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-025",
+      "type": "single_choice",
+      "prompt": "Từ nào dưới đây bắt đầu bằng âm 'g'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "gà"
+        },
+        {
+          "key": "b",
+          "text": "lá"
+        },
+        {
+          "key": "c",
+          "text": "lược"
+        },
+        {
+          "key": "d",
+          "text": "mía"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'gà' bắt đầu bằng âm 'g'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-026",
+      "type": "single_choice",
+      "prompt": "Từ nào dưới đây bắt đầu bằng âm 'h'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mèo"
+        },
+        {
+          "key": "b",
+          "text": "hồ"
+        },
+        {
+          "key": "c",
+          "text": "lê"
+        },
+        {
+          "key": "d",
+          "text": "mũ"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'hồ' bắt đầu bằng âm 'h'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-027",
+      "type": "single_choice",
+      "prompt": "Từ nào dưới đây bắt đầu bằng âm 'k'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mưa"
+        },
+        {
+          "key": "b",
+          "text": "lửa"
+        },
+        {
+          "key": "c",
+          "text": "kiến"
+        },
+        {
+          "key": "d",
+          "text": "nón"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'kiến' bắt đầu bằng âm 'k'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-028",
+      "type": "single_choice",
+      "prompt": "Từ nào dưới đây bắt đầu bằng âm 'l'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "kèn"
+        },
+        {
+          "key": "b",
+          "text": "nho"
+        },
+        {
+          "key": "c",
+          "text": "mía"
+        },
+        {
+          "key": "d",
+          "text": "lược"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'lược' bắt đầu bằng âm 'l'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-029",
+      "type": "single_choice",
+      "prompt": "Từ nào dưới đây bắt đầu bằng âm 'm'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mèo"
+        },
+        {
+          "key": "b",
+          "text": "lược"
+        },
+        {
+          "key": "c",
+          "text": "lá"
+        },
+        {
+          "key": "d",
+          "text": "nồi"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'mèo' bắt đầu bằng âm 'm'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-030",
+      "type": "single_choice",
+      "prompt": "Từ nào dưới đây bắt đầu bằng âm 'n'?",
+      "options": [
+        {
+          "key": "a",
+          "text": "mèo"
+        },
+        {
+          "key": "b",
+          "text": "nho"
+        },
+        {
+          "key": "c",
+          "text": "lê"
+        },
+        {
+          "key": "d",
+          "text": "mũ"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'nho' bắt đầu bằng âm 'n'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-031",
+      "type": "single_choice",
+      "prompt": "Tiếng 'bánh' có âm đầu là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "c"
+        },
+        {
+          "key": "b",
+          "text": "g"
+        },
+        {
+          "key": "c",
+          "text": "b"
+        },
+        {
+          "key": "d",
+          "text": "v"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Tiếng 'bánh' có âm đầu là 'b'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-032",
+      "type": "single_choice",
+      "prompt": "Tiếng 'cây' có âm đầu là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "d"
+        },
+        {
+          "key": "b",
+          "text": "h"
+        },
+        {
+          "key": "c",
+          "text": "x"
+        },
+        {
+          "key": "d",
+          "text": "c"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Tiếng 'cây' có âm đầu là 'c'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-033",
+      "type": "single_choice",
+      "prompt": "Tiếng 'dê' có âm đầu là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "d"
+        },
+        {
+          "key": "b",
+          "text": "k"
+        },
+        {
+          "key": "c",
+          "text": "b"
+        },
+        {
+          "key": "d",
+          "text": "đ"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Tiếng 'dê' có âm đầu là 'd'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-034",
+      "type": "single_choice",
+      "prompt": "Tiếng 'đất' có âm đầu là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "g"
+        },
+        {
+          "key": "b",
+          "text": "đ"
+        },
+        {
+          "key": "c",
+          "text": "c"
+        },
+        {
+          "key": "d",
+          "text": "l"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Tiếng 'đất' có âm đầu là 'đ'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-035",
+      "type": "single_choice",
+      "prompt": "Tiếng 'gạo' có âm đầu là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "d"
+        },
+        {
+          "key": "b",
+          "text": "h"
+        },
+        {
+          "key": "c",
+          "text": "g"
+        },
+        {
+          "key": "d",
+          "text": "m"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Tiếng 'gạo' có âm đầu là 'g'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-036",
+      "type": "single_choice",
+      "prompt": "Tiếng 'hẹ' có âm đầu là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "đ"
+        },
+        {
+          "key": "b",
+          "text": "n"
+        },
+        {
+          "key": "c",
+          "text": "k"
+        },
+        {
+          "key": "d",
+          "text": "h"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Tiếng 'hẹ' có âm đầu là 'h'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-037",
+      "type": "single_choice",
+      "prompt": "Tiếng 'kẹo' có âm đầu là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "k"
+        },
+        {
+          "key": "b",
+          "text": "g"
+        },
+        {
+          "key": "c",
+          "text": "ph"
+        },
+        {
+          "key": "d",
+          "text": "l"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Tiếng 'kẹo' có âm đầu là 'k'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-038",
+      "type": "single_choice",
+      "prompt": "Tiếng 'lê' có âm đầu là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "r"
+        },
+        {
+          "key": "b",
+          "text": "l"
+        },
+        {
+          "key": "c",
+          "text": "h"
+        },
+        {
+          "key": "d",
+          "text": "m"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Tiếng 'lê' có âm đầu là 'l'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-039",
+      "type": "single_choice",
+      "prompt": "Tiếng 'mía' có âm đầu là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "k"
+        },
+        {
+          "key": "b",
+          "text": "s"
+        },
+        {
+          "key": "c",
+          "text": "m"
+        },
+        {
+          "key": "d",
+          "text": "n"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Tiếng 'mía' có âm đầu là 'm'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-040",
+      "type": "single_choice",
+      "prompt": "Tiếng 'nắng' có âm đầu là gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "t"
+        },
+        {
+          "key": "b",
+          "text": "l"
+        },
+        {
+          "key": "c",
+          "text": "ph"
+        },
+        {
+          "key": "d",
+          "text": "n"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Tiếng 'nắng' có âm đầu là 'n'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-041",
+      "type": "single_choice",
+      "prompt": "Trong nhóm chữ a, m, r, v, chữ nào là nguyên âm?",
+      "options": [
+        {
+          "key": "a",
+          "text": "a"
+        },
+        {
+          "key": "b",
+          "text": "v"
+        },
+        {
+          "key": "c",
+          "text": "m"
+        },
+        {
+          "key": "d",
+          "text": "r"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'a' là nguyên âm; các chữ còn lại là phụ âm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-042",
+      "type": "single_choice",
+      "prompt": "Trong nhóm chữ ă, n, s, x, chữ nào là nguyên âm?",
+      "options": [
+        {
+          "key": "a",
+          "text": "s"
+        },
+        {
+          "key": "b",
+          "text": "ă"
+        },
+        {
+          "key": "c",
+          "text": "x"
+        },
+        {
+          "key": "d",
+          "text": "n"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'ă' là nguyên âm; các chữ còn lại là phụ âm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-043",
+      "type": "single_choice",
+      "prompt": "Trong nhóm chữ â, ph, t, b, chữ nào là nguyên âm?",
+      "options": [
+        {
+          "key": "a",
+          "text": "b"
+        },
+        {
+          "key": "b",
+          "text": "t"
+        },
+        {
+          "key": "c",
+          "text": "â"
+        },
+        {
+          "key": "d",
+          "text": "ph"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'â' là nguyên âm; các chữ còn lại là phụ âm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-044",
+      "type": "single_choice",
+      "prompt": "Trong nhóm chữ e, r, v, c, chữ nào là nguyên âm?",
+      "options": [
+        {
+          "key": "a",
+          "text": "v"
+        },
+        {
+          "key": "b",
+          "text": "c"
+        },
+        {
+          "key": "c",
+          "text": "r"
+        },
+        {
+          "key": "d",
+          "text": "e"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'e' là nguyên âm; các chữ còn lại là phụ âm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-045",
+      "type": "single_choice",
+      "prompt": "Trong nhóm chữ ê, s, x, d, chữ nào là nguyên âm?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ê"
+        },
+        {
+          "key": "b",
+          "text": "d"
+        },
+        {
+          "key": "c",
+          "text": "s"
+        },
+        {
+          "key": "d",
+          "text": "x"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'ê' là nguyên âm; các chữ còn lại là phụ âm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-046",
+      "type": "single_choice",
+      "prompt": "Trong nhóm chữ i, t, b, đ, chữ nào là nguyên âm?",
+      "options": [
+        {
+          "key": "a",
+          "text": "t"
+        },
+        {
+          "key": "b",
+          "text": "i"
+        },
+        {
+          "key": "c",
+          "text": "đ"
+        },
+        {
+          "key": "d",
+          "text": "b"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'i' là nguyên âm; các chữ còn lại là phụ âm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-047",
+      "type": "single_choice",
+      "prompt": "Trong nhóm chữ o, v, c, g, chữ nào là nguyên âm?",
+      "options": [
+        {
+          "key": "a",
+          "text": "v"
+        },
+        {
+          "key": "b",
+          "text": "g"
+        },
+        {
+          "key": "c",
+          "text": "o"
+        },
+        {
+          "key": "d",
+          "text": "c"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'o' là nguyên âm; các chữ còn lại là phụ âm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-048",
+      "type": "single_choice",
+      "prompt": "Trong nhóm chữ ô, x, d, h, chữ nào là nguyên âm?",
+      "options": [
+        {
+          "key": "a",
+          "text": "d"
+        },
+        {
+          "key": "b",
+          "text": "h"
+        },
+        {
+          "key": "c",
+          "text": "x"
+        },
+        {
+          "key": "d",
+          "text": "ô"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'ô' là nguyên âm; các chữ còn lại là phụ âm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-049",
+      "type": "single_choice",
+      "prompt": "Trong nhóm chữ ơ, b, đ, k, chữ nào là nguyên âm?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ơ"
+        },
+        {
+          "key": "b",
+          "text": "b"
+        },
+        {
+          "key": "c",
+          "text": "k"
+        },
+        {
+          "key": "d",
+          "text": "đ"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'ơ' là nguyên âm; các chữ còn lại là phụ âm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-050",
+      "type": "single_choice",
+      "prompt": "Trong nhóm chữ u, c, g, l, chữ nào là nguyên âm?",
+      "options": [
+        {
+          "key": "a",
+          "text": "c"
+        },
+        {
+          "key": "b",
+          "text": "u"
+        },
+        {
+          "key": "c",
+          "text": "l"
+        },
+        {
+          "key": "d",
+          "text": "g"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'u' là nguyên âm; các chữ còn lại là phụ âm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-051",
+      "type": "single_choice",
+      "prompt": "Trong nhóm chữ ư, d, h, m, chữ nào là nguyên âm?",
+      "options": [
+        {
+          "key": "a",
+          "text": "h"
+        },
+        {
+          "key": "b",
+          "text": "d"
+        },
+        {
+          "key": "c",
+          "text": "ư"
+        },
+        {
+          "key": "d",
+          "text": "m"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'ư' là nguyên âm; các chữ còn lại là phụ âm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-052",
+      "type": "single_choice",
+      "prompt": "Trong nhóm chữ y, đ, k, n, chữ nào là nguyên âm?",
+      "options": [
+        {
+          "key": "a",
+          "text": "n"
+        },
+        {
+          "key": "b",
+          "text": "k"
+        },
+        {
+          "key": "c",
+          "text": "đ"
+        },
+        {
+          "key": "d",
+          "text": "y"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'y' là nguyên âm; các chữ còn lại là phụ âm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-053",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 'b' trong nhóm: bà, hoa, bò, hồ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "bà"
+        },
+        {
+          "key": "b",
+          "text": "hồ"
+        },
+        {
+          "key": "c",
+          "text": "bò"
+        },
+        {
+          "key": "d",
+          "text": "hoa"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các tiếng bà, bò bắt đầu bằng âm 'b'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-054",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 'c' trong nhóm: cá, kẹo, cò, kem.",
+      "options": [
+        {
+          "key": "a",
+          "text": "kẹo"
+        },
+        {
+          "key": "b",
+          "text": "kem"
+        },
+        {
+          "key": "c",
+          "text": "cá"
+        },
+        {
+          "key": "d",
+          "text": "cò"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng cá, cò bắt đầu bằng âm 'c'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-055",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 'd' trong nhóm: dê, lá, dừa, lê.",
+      "options": [
+        {
+          "key": "a",
+          "text": "dê"
+        },
+        {
+          "key": "b",
+          "text": "dừa"
+        },
+        {
+          "key": "c",
+          "text": "lá"
+        },
+        {
+          "key": "d",
+          "text": "lê"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các tiếng dê, dừa bắt đầu bằng âm 'd'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-056",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 'đ' trong nhóm: đèn, mèo, đất, mưa.",
+      "options": [
+        {
+          "key": "a",
+          "text": "đèn"
+        },
+        {
+          "key": "b",
+          "text": "mưa"
+        },
+        {
+          "key": "c",
+          "text": "mèo"
+        },
+        {
+          "key": "d",
+          "text": "đất"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng đèn, đất bắt đầu bằng âm 'đ'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-057",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 'g' trong nhóm: gà, nón, gấu, nho.",
+      "options": [
+        {
+          "key": "a",
+          "text": "gấu"
+        },
+        {
+          "key": "b",
+          "text": "gà"
+        },
+        {
+          "key": "c",
+          "text": "nón"
+        },
+        {
+          "key": "d",
+          "text": "nho"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các tiếng gà, gấu bắt đầu bằng âm 'g'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-058",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 'h' trong nhóm: hoa, phở, hồ, phố.",
+      "options": [
+        {
+          "key": "a",
+          "text": "phở"
+        },
+        {
+          "key": "b",
+          "text": "phố"
+        },
+        {
+          "key": "c",
+          "text": "hồ"
+        },
+        {
+          "key": "d",
+          "text": "hoa"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng hoa, hồ bắt đầu bằng âm 'h'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-059",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 'k' trong nhóm: kẹo, rùa, kem, rổ.",
+      "options": [
+        {
+          "key": "a",
+          "text": "rùa"
+        },
+        {
+          "key": "b",
+          "text": "rổ"
+        },
+        {
+          "key": "c",
+          "text": "kem"
+        },
+        {
+          "key": "d",
+          "text": "kẹo"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng kẹo, kem bắt đầu bằng âm 'k'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-060",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 'l' trong nhóm: lá, sông, lê, sen.",
+      "options": [
+        {
+          "key": "a",
+          "text": "lá"
+        },
+        {
+          "key": "b",
+          "text": "sen"
+        },
+        {
+          "key": "c",
+          "text": "lê"
+        },
+        {
+          "key": "d",
+          "text": "sông"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các tiếng lá, lê bắt đầu bằng âm 'l'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-061",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 'm' trong nhóm: mèo, táo, mưa, tôm.",
+      "options": [
+        {
+          "key": "a",
+          "text": "tôm"
+        },
+        {
+          "key": "b",
+          "text": "mèo"
+        },
+        {
+          "key": "c",
+          "text": "táo"
+        },
+        {
+          "key": "d",
+          "text": "mưa"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng mèo, mưa bắt đầu bằng âm 'm'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-062",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 'n' trong nhóm: nón, vịt, nho, võng.",
+      "options": [
+        {
+          "key": "a",
+          "text": "võng"
+        },
+        {
+          "key": "b",
+          "text": "vịt"
+        },
+        {
+          "key": "c",
+          "text": "nho"
+        },
+        {
+          "key": "d",
+          "text": "nón"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng nón, nho bắt đầu bằng âm 'n'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-063",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 'ph' trong nhóm: phở, xe, phố, xem.",
+      "options": [
+        {
+          "key": "a",
+          "text": "phở"
+        },
+        {
+          "key": "b",
+          "text": "phố"
+        },
+        {
+          "key": "c",
+          "text": "xem"
+        },
+        {
+          "key": "d",
+          "text": "xe"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các tiếng phở, phố bắt đầu bằng âm 'ph'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-064",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 'r' trong nhóm: rùa, bà, rổ, bò.",
+      "options": [
+        {
+          "key": "a",
+          "text": "bà"
+        },
+        {
+          "key": "b",
+          "text": "bò"
+        },
+        {
+          "key": "c",
+          "text": "rùa"
+        },
+        {
+          "key": "d",
+          "text": "rổ"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng rùa, rổ bắt đầu bằng âm 'r'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-065",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 's' trong nhóm: sông, cá, sen, cò.",
+      "options": [
+        {
+          "key": "a",
+          "text": "sen"
+        },
+        {
+          "key": "b",
+          "text": "cò"
+        },
+        {
+          "key": "c",
+          "text": "sông"
+        },
+        {
+          "key": "d",
+          "text": "cá"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các tiếng sông, sen bắt đầu bằng âm 's'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-066",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 't' trong nhóm: táo, dê, tôm, dừa.",
+      "options": [
+        {
+          "key": "a",
+          "text": "táo"
+        },
+        {
+          "key": "b",
+          "text": "dừa"
+        },
+        {
+          "key": "c",
+          "text": "tôm"
+        },
+        {
+          "key": "d",
+          "text": "dê"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các tiếng táo, tôm bắt đầu bằng âm 't'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-067",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 'v' trong nhóm: vịt, đèn, võng, đất.",
+      "options": [
+        {
+          "key": "a",
+          "text": "đất"
+        },
+        {
+          "key": "b",
+          "text": "vịt"
+        },
+        {
+          "key": "c",
+          "text": "võng"
+        },
+        {
+          "key": "d",
+          "text": "đèn"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các tiếng vịt, võng bắt đầu bằng âm 'v'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-068",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng bắt đầu bằng âm 'x' trong nhóm: xe, gà, xem, gấu.",
+      "options": [
+        {
+          "key": "a",
+          "text": "gà"
+        },
+        {
+          "key": "b",
+          "text": "gấu"
+        },
+        {
+          "key": "c",
+          "text": "xe"
+        },
+        {
+          "key": "d",
+          "text": "xem"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các tiếng xe, xem bắt đầu bằng âm 'x'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-069",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các tiếng không có âm đầu trong nhóm: ăn, uống, nhà, cá.",
+      "options": [
+        {
+          "key": "a",
+          "text": "cá"
+        },
+        {
+          "key": "b",
+          "text": "nhà"
+        },
+        {
+          "key": "c",
+          "text": "ăn"
+        },
+        {
+          "key": "d",
+          "text": "uống"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "'ăn' và 'uống' không có âm đầu; 'nhà' và 'cá' có âm đầu.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-070",
+      "type": "true_false",
+      "prompt": "Chữ 'ă' đứng sau chữ 'a' trong bảng chữ cái.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'ă' đứng sau 'a'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-071",
+      "type": "true_false",
+      "prompt": "Chữ 'â' đứng trước chữ 'ă' trong bảng chữ cái.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'â' đứng sau 'ă'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-072",
+      "type": "true_false",
+      "prompt": "Chữ 'b' đứng sau chữ 'â' trong bảng chữ cái.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'b' đứng sau 'â'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-073",
+      "type": "true_false",
+      "prompt": "Chữ 'c' đứng trước chữ 'b' trong bảng chữ cái.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'c' đứng sau 'b'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-074",
+      "type": "true_false",
+      "prompt": "Chữ 'd' đứng sau chữ 'c' trong bảng chữ cái.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'd' đứng sau 'c'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-075",
+      "type": "true_false",
+      "prompt": "Chữ 'đ' đứng trước chữ 'd' trong bảng chữ cái.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'đ' đứng sau 'd'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-076",
+      "type": "true_false",
+      "prompt": "Chữ 'e' đứng sau chữ 'đ' trong bảng chữ cái.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'e' đứng sau 'đ'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-077",
+      "type": "true_false",
+      "prompt": "Chữ 'ê' đứng trước chữ 'e' trong bảng chữ cái.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'ê' đứng sau 'e'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-078",
+      "type": "true_false",
+      "prompt": "Tiếng 'bà' bắt đầu bằng âm 'b'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'bà' bắt đầu bằng 'b'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-079",
+      "type": "true_false",
+      "prompt": "Tiếng 'cá' bắt đầu bằng âm 'ph'.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'cá' bắt đầu bằng 'c'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-080",
+      "type": "true_false",
+      "prompt": "Tiếng 'dê' bắt đầu bằng âm 'd'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'dê' bắt đầu bằng 'd'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-081",
+      "type": "true_false",
+      "prompt": "Tiếng 'đèn' bắt đầu bằng âm 's'.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'đèn' bắt đầu bằng 'đ'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-082",
+      "type": "true_false",
+      "prompt": "Tiếng 'gà' bắt đầu bằng âm 'g'.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'gà' bắt đầu bằng 'g'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-083",
+      "type": "true_false",
+      "prompt": "Chữ 'a' là nguyên âm.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'a' là nguyên âm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-084",
+      "type": "true_false",
+      "prompt": "Chữ 'b' là nguyên âm.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'b' là phụ âm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-085",
+      "type": "true_false",
+      "prompt": "Chữ 'e' là nguyên âm.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'e' là nguyên âm.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-086",
+      "type": "true_false",
+      "prompt": "Chữ 'm' là nguyên âm.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'm' là phụ âm.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-087",
+      "type": "fill_in",
+      "prompt": "Điền chữ cái còn thiếu: a, ă, ___, b.",
+      "answer": {
+        "accepted": [
+          "â"
+        ]
+      },
+      "explanation": "Sau 'ă' là 'â'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-088",
+      "type": "fill_in",
+      "prompt": "Điền chữ cái còn thiếu: d, đ, ___, ê.",
+      "answer": {
+        "accepted": [
+          "e"
+        ]
+      },
+      "explanation": "Sau 'đ' là 'e'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-089",
+      "type": "fill_in",
+      "prompt": "Điền chữ cái còn thiếu: l, m, ___, o.",
+      "answer": {
+        "accepted": [
+          "n"
+        ]
+      },
+      "explanation": "Sau 'm' là 'n'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-090",
+      "type": "fill_in",
+      "prompt": "Điền chữ cái còn thiếu: q, r, ___, t.",
+      "answer": {
+        "accepted": [
+          "s"
+        ]
+      },
+      "explanation": "Sau 'r' là 's'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-091",
+      "type": "fill_in",
+      "prompt": "Điền chữ cái còn thiếu: u, ư, ___, y.",
+      "answer": {
+        "accepted": [
+          "v"
+        ]
+      },
+      "explanation": "Sau 'ư' là 'v'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-092",
+      "type": "fill_in",
+      "prompt": "Điền chữ cái còn thiếu: e, ê, ___, h.",
+      "answer": {
+        "accepted": [
+          "g"
+        ]
+      },
+      "explanation": "Sau 'ê' là 'g'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-093",
+      "type": "fill_in",
+      "prompt": "Từ 'bà' bắt đầu bằng âm ___.",
+      "answer": {
+        "accepted": [
+          "b"
+        ]
+      },
+      "explanation": "Từ 'bà' bắt đầu bằng âm 'b'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-094",
+      "type": "fill_in",
+      "prompt": "Từ 'cá' bắt đầu bằng âm ___.",
+      "answer": {
+        "accepted": [
+          "c"
+        ]
+      },
+      "explanation": "Từ 'cá' bắt đầu bằng âm 'c'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-095",
+      "type": "fill_in",
+      "prompt": "Từ 'dê' bắt đầu bằng âm ___.",
+      "answer": {
+        "accepted": [
+          "d"
+        ]
+      },
+      "explanation": "Từ 'dê' bắt đầu bằng âm 'd'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-096",
+      "type": "fill_in",
+      "prompt": "Từ 'đèn' bắt đầu bằng âm ___.",
+      "answer": {
+        "accepted": [
+          "đ"
+        ]
+      },
+      "explanation": "Từ 'đèn' bắt đầu bằng âm 'đ'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-097",
+      "type": "fill_in",
+      "prompt": "Từ 'gà' bắt đầu bằng âm ___.",
+      "answer": {
+        "accepted": [
+          "g"
+        ]
+      },
+      "explanation": "Từ 'gà' bắt đầu bằng âm 'g'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-098",
+      "type": "fill_in",
+      "prompt": "Từ 'hoa' bắt đầu bằng âm ___.",
+      "answer": {
+        "accepted": [
+          "h"
+        ]
+      },
+      "explanation": "Từ 'hoa' bắt đầu bằng âm 'h'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-099",
+      "type": "fill_in",
+      "prompt": "Từ 'kẹo' bắt đầu bằng âm ___.",
+      "answer": {
+        "accepted": [
+          "k"
+        ]
+      },
+      "explanation": "Từ 'kẹo' bắt đầu bằng âm 'k'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-100",
+      "type": "fill_in",
+      "prompt": "Từ 'lá' bắt đầu bằng âm ___.",
+      "answer": {
+        "accepted": [
+          "l"
+        ]
+      },
+      "explanation": "Từ 'lá' bắt đầu bằng âm 'l'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-101",
+      "type": "fill_in",
+      "prompt": "Tiếng 'mèo' có âm đầu là ___.",
+      "answer": {
+        "accepted": [
+          "m"
+        ]
+      },
+      "explanation": "Tiếng 'mèo' có âm đầu là 'm'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-102",
+      "type": "fill_in",
+      "prompt": "Tiếng 'nón' có âm đầu là ___.",
+      "answer": {
+        "accepted": [
+          "n"
+        ]
+      },
+      "explanation": "Tiếng 'nón' có âm đầu là 'n'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-103",
+      "type": "fill_in",
+      "prompt": "Tiếng 'vở' có âm đầu là ___.",
+      "answer": {
+        "accepted": [
+          "v"
+        ]
+      },
+      "explanation": "Tiếng 'vở' có âm đầu là 'v'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-104",
+      "type": "fill_in",
+      "prompt": "Tiếng 'rùa' có âm đầu là ___.",
+      "answer": {
+        "accepted": [
+          "r"
+        ]
+      },
+      "explanation": "Tiếng 'rùa' có âm đầu là 'r'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-105",
+      "type": "fill_in",
+      "prompt": "Tiếng 'sông' có âm đầu là ___.",
+      "answer": {
+        "accepted": [
+          "s"
+        ]
+      },
+      "explanation": "Tiếng 'sông' có âm đầu là 's'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-106",
+      "type": "fill_in",
+      "prompt": "Tiếng 'táo' có âm đầu là ___.",
+      "answer": {
+        "accepted": [
+          "t"
+        ]
+      },
+      "explanation": "Tiếng 'táo' có âm đầu là 't'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-107",
+      "type": "fill_in",
+      "prompt": "Chữ ___ đứng ngay sau chữ 'm' trong bảng chữ cái.",
+      "answer": {
+        "accepted": [
+          "n"
+        ]
+      },
+      "explanation": "Sau 'm' là 'n'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-viet-1-chu-cai-108",
+      "type": "fill_in",
+      "prompt": "Chữ ___ đứng ngay trước chữ 'e' trong bảng chữ cái.",
+      "answer": {
+        "accepted": [
+          "đ"
+        ]
+      },
+      "explanation": "Trước 'e' là 'đ'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

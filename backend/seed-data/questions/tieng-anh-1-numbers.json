@@ -1,0 +1,2551 @@
+{
+  "topic": {
+    "id": "tieng-anh-1-numbers",
+    "subjectId": "tieng-anh",
+    "grade": 1,
+    "slug": "numbers",
+    "name": "Số 1–10",
+    "sortOrder": 2
+  },
+  "questions": [
+    {
+      "id": "tieng-anh-1-numbers-001",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'one' là số mấy?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "9"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'one' là số 1.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-002",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'two' là số mấy?",
+      "options": [
+        {
+          "key": "a",
+          "text": "10"
+        },
+        {
+          "key": "b",
+          "text": "2"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "7"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'two' là số 2.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-003",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'three' là số mấy?",
+      "options": [
+        {
+          "key": "a",
+          "text": "8"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "1"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'three' là số 3.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-004",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'four' là số mấy?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "9"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'four' là số 4.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-005",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'five' là số mấy?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "10"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "7"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'five' là số 5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-006",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'six' là số mấy?",
+      "options": [
+        {
+          "key": "a",
+          "text": "8"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "1"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'six' là số 6.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-007",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'seven' là số mấy?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "7"
+        },
+        {
+          "key": "d",
+          "text": "9"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "'seven' là số 7.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-008",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'eight' là số mấy?",
+      "options": [
+        {
+          "key": "a",
+          "text": "10"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "'eight' là số 8.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-009",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'nine' là số mấy?",
+      "options": [
+        {
+          "key": "a",
+          "text": "9"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "1"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "'nine' là số 9.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-010",
+      "type": "single_choice",
+      "prompt": "Từ tiếng Anh 'ten' là số mấy?",
+      "options": [
+        {
+          "key": "a",
+          "text": "8"
+        },
+        {
+          "key": "b",
+          "text": "10"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "'ten' là số 10.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-011",
+      "type": "single_choice",
+      "prompt": "Số 1 trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "eight"
+        },
+        {
+          "key": "b",
+          "text": "four"
+        },
+        {
+          "key": "c",
+          "text": "one"
+        },
+        {
+          "key": "d",
+          "text": "five"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Số 1 trong tiếng Anh là 'one'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-012",
+      "type": "single_choice",
+      "prompt": "Số 2 trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "five"
+        },
+        {
+          "key": "b",
+          "text": "nine"
+        },
+        {
+          "key": "c",
+          "text": "six"
+        },
+        {
+          "key": "d",
+          "text": "two"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Số 2 trong tiếng Anh là 'two'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-013",
+      "type": "single_choice",
+      "prompt": "Số 3 trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "three"
+        },
+        {
+          "key": "b",
+          "text": "six"
+        },
+        {
+          "key": "c",
+          "text": "seven"
+        },
+        {
+          "key": "d",
+          "text": "ten"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Số 3 trong tiếng Anh là 'three'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-014",
+      "type": "single_choice",
+      "prompt": "Số 4 trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "eight"
+        },
+        {
+          "key": "b",
+          "text": "four"
+        },
+        {
+          "key": "c",
+          "text": "seven"
+        },
+        {
+          "key": "d",
+          "text": "one"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Số 4 trong tiếng Anh là 'four'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-015",
+      "type": "single_choice",
+      "prompt": "Số 5 trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "eight"
+        },
+        {
+          "key": "b",
+          "text": "two"
+        },
+        {
+          "key": "c",
+          "text": "five"
+        },
+        {
+          "key": "d",
+          "text": "nine"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Số 5 trong tiếng Anh là 'five'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-016",
+      "type": "single_choice",
+      "prompt": "Số 6 trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "ten"
+        },
+        {
+          "key": "b",
+          "text": "nine"
+        },
+        {
+          "key": "c",
+          "text": "three"
+        },
+        {
+          "key": "d",
+          "text": "six"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Số 6 trong tiếng Anh là 'six'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-017",
+      "type": "single_choice",
+      "prompt": "Số 7 trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "seven"
+        },
+        {
+          "key": "b",
+          "text": "one"
+        },
+        {
+          "key": "c",
+          "text": "four"
+        },
+        {
+          "key": "d",
+          "text": "ten"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Số 7 trong tiếng Anh là 'seven'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-018",
+      "type": "single_choice",
+      "prompt": "Số 8 trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "five"
+        },
+        {
+          "key": "b",
+          "text": "eight"
+        },
+        {
+          "key": "c",
+          "text": "one"
+        },
+        {
+          "key": "d",
+          "text": "two"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Số 8 trong tiếng Anh là 'eight'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-019",
+      "type": "single_choice",
+      "prompt": "Số 9 trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "three"
+        },
+        {
+          "key": "b",
+          "text": "six"
+        },
+        {
+          "key": "c",
+          "text": "nine"
+        },
+        {
+          "key": "d",
+          "text": "two"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Số 9 trong tiếng Anh là 'nine'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-020",
+      "type": "single_choice",
+      "prompt": "Số 10 trong tiếng Anh là từ nào?",
+      "options": [
+        {
+          "key": "a",
+          "text": "seven"
+        },
+        {
+          "key": "b",
+          "text": "three"
+        },
+        {
+          "key": "c",
+          "text": "four"
+        },
+        {
+          "key": "d",
+          "text": "ten"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Số 10 trong tiếng Anh là 'ten'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-021",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay sau số 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "10"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Sau số 1 là số 2.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-022",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay sau số 2?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "8"
+        },
+        {
+          "key": "d",
+          "text": "1"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Sau số 2 là số 3.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-023",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay sau số 3?",
+      "options": [
+        {
+          "key": "a",
+          "text": "9"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Sau số 3 là số 4.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-024",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay sau số 4?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "10"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Sau số 4 là số 5.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-025",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay sau số 5?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "1"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Sau số 5 là số 6.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-026",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay sau số 6?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "8"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Sau số 6 là số 7.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-027",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay sau số 7?",
+      "options": [
+        {
+          "key": "a",
+          "text": "9"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "8"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Sau số 7 là số 8.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-028",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay sau số 8?",
+      "options": [
+        {
+          "key": "a",
+          "text": "10"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "7"
+        },
+        {
+          "key": "d",
+          "text": "9"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Sau số 8 là số 9.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-029",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay sau số 9?",
+      "options": [
+        {
+          "key": "a",
+          "text": "10"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "1"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Sau số 9 là số 10.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-030",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay trước số 2?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "1"
+        },
+        {
+          "key": "c",
+          "text": "8"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Trước số 2 là số 1.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-031",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay trước số 3?",
+      "options": [
+        {
+          "key": "a",
+          "text": "9"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Trước số 3 là số 2.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-032",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay trước số 4?",
+      "options": [
+        {
+          "key": "a",
+          "text": "9"
+        },
+        {
+          "key": "b",
+          "text": "10"
+        },
+        {
+          "key": "c",
+          "text": "6"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Trước số 4 là số 3.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-033",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay trước số 5?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "10"
+        },
+        {
+          "key": "c",
+          "text": "7"
+        },
+        {
+          "key": "d",
+          "text": "1"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Trước số 5 là số 4.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-034",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay trước số 6?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Trước số 6 là số 5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-035",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay trước số 7?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "3"
+        },
+        {
+          "key": "c",
+          "text": "6"
+        },
+        {
+          "key": "d",
+          "text": "9"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Trước số 7 là số 6.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-036",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay trước số 8?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "10"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "7"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Trước số 8 là số 7.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-037",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay trước số 9?",
+      "options": [
+        {
+          "key": "a",
+          "text": "8"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "1"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Trước số 9 là số 8.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-038",
+      "type": "single_choice",
+      "prompt": "Số nào đứng ngay trước số 10?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "9"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Trước số 10 là số 9.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-039",
+      "type": "single_choice",
+      "prompt": "Con có 3 cái kẹo, mẹ cho thêm 2 cái. Con có tất cả mấy cái kẹo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "9"
+        },
+        {
+          "key": "c",
+          "text": "5"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Con đếm được tất cả 5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-040",
+      "type": "single_choice",
+      "prompt": "Trên bàn có 4 quả táo, mẹ mua thêm 3 quả. Có tất cả mấy quả táo?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "10"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "7"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Con đếm được tất cả 7.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-041",
+      "type": "single_choice",
+      "prompt": "Trong vườn có 2 con gà, thêm 6 con gà nữa chạy vào. Có tất cả mấy con gà?",
+      "options": [
+        {
+          "key": "a",
+          "text": "8"
+        },
+        {
+          "key": "b",
+          "text": "1"
+        },
+        {
+          "key": "c",
+          "text": "7"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Con đếm được tất cả 8.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-042",
+      "type": "single_choice",
+      "prompt": "Con có 1 quả bóng, bạn cho thêm 5 quả. Con có mấy quả bóng?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "6"
+        },
+        {
+          "key": "c",
+          "text": "2"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Con đếm được tất cả 6.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-043",
+      "type": "single_choice",
+      "prompt": "Trong hộp có 5 cái bút, con lấy thêm 4 cái. Có tất cả mấy cái bút?",
+      "options": [
+        {
+          "key": "a",
+          "text": "3"
+        },
+        {
+          "key": "b",
+          "text": "2"
+        },
+        {
+          "key": "c",
+          "text": "9"
+        },
+        {
+          "key": "d",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Con đếm được tất cả 9.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-044",
+      "type": "single_choice",
+      "prompt": "Trên cây có 4 con chim, bay đến thêm 4 con. Có tất cả mấy con chim?",
+      "options": [
+        {
+          "key": "a",
+          "text": "7"
+        },
+        {
+          "key": "b",
+          "text": "4"
+        },
+        {
+          "key": "c",
+          "text": "10"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Con đếm được tất cả 8.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-045",
+      "type": "single_choice",
+      "prompt": "Số nào lớn hơn: 2 hay 5?",
+      "options": [
+        {
+          "key": "a",
+          "text": "5"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "10"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Số 5 lớn hơn số 2.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-046",
+      "type": "single_choice",
+      "prompt": "Số nào lớn hơn: 7 hay 3?",
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Số 7 lớn hơn số 3.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-047",
+      "type": "single_choice",
+      "prompt": "Số nào lớn hơn: 8 hay 1?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "9"
+        },
+        {
+          "key": "c",
+          "text": "8"
+        },
+        {
+          "key": "d",
+          "text": "5"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Số 8 lớn hơn số 1.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-048",
+      "type": "single_choice",
+      "prompt": "Số nào lớn hơn: 4 hay 9?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "10"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "9"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Số 9 lớn hơn số 4.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-049",
+      "type": "single_choice",
+      "prompt": "Số nào lớn hơn: 6 hay 10?",
+      "options": [
+        {
+          "key": "a",
+          "text": "10"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "1"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Số 10 lớn hơn số 6.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-050",
+      "type": "single_choice",
+      "prompt": "Số nào lớn hơn: 1 hay 5?",
+      "options": [
+        {
+          "key": "a",
+          "text": "2"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "8"
+        },
+        {
+          "key": "d",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Số 5 lớn hơn số 1.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-051",
+      "type": "single_choice",
+      "prompt": "Số nào lớn hơn: 3 hay 9?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "9"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Số 9 lớn hơn số 3.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-052",
+      "type": "single_choice",
+      "prompt": "Số nào lớn hơn: 2 hay 8?",
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "7"
+        },
+        {
+          "key": "c",
+          "text": "10"
+        },
+        {
+          "key": "d",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Số 8 lớn hơn số 2.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-053",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ số lớn hơn 5 trong nhóm: six, two, seven, four.",
+      "options": [
+        {
+          "key": "a",
+          "text": "four"
+        },
+        {
+          "key": "b",
+          "text": "seven"
+        },
+        {
+          "key": "c",
+          "text": "six"
+        },
+        {
+          "key": "d",
+          "text": "two"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các từ six, seven chỉ số lớn hơn 5.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-054",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ số lớn hơn 5 trong nhóm: eight, one, nine, three.",
+      "options": [
+        {
+          "key": "a",
+          "text": "eight"
+        },
+        {
+          "key": "b",
+          "text": "nine"
+        },
+        {
+          "key": "c",
+          "text": "three"
+        },
+        {
+          "key": "d",
+          "text": "one"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các từ eight, nine chỉ số lớn hơn 5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-055",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ số lớn hơn 5 trong nhóm: ten, five, six, two.",
+      "options": [
+        {
+          "key": "a",
+          "text": "six"
+        },
+        {
+          "key": "b",
+          "text": "five"
+        },
+        {
+          "key": "c",
+          "text": "two"
+        },
+        {
+          "key": "d",
+          "text": "ten"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các từ ten, six chỉ số lớn hơn 5.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-056",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ số lớn hơn 5 trong nhóm: seven, three, ten, four.",
+      "options": [
+        {
+          "key": "a",
+          "text": "three"
+        },
+        {
+          "key": "b",
+          "text": "four"
+        },
+        {
+          "key": "c",
+          "text": "seven"
+        },
+        {
+          "key": "d",
+          "text": "ten"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Các từ seven, ten chỉ số lớn hơn 5.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-057",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ số lớn hơn 5 trong nhóm: nine, one, eight, two.",
+      "options": [
+        {
+          "key": "a",
+          "text": "nine"
+        },
+        {
+          "key": "b",
+          "text": "two"
+        },
+        {
+          "key": "c",
+          "text": "eight"
+        },
+        {
+          "key": "d",
+          "text": "one"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các từ nine, eight chỉ số lớn hơn 5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-058",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ số lớn hơn 5 trong nhóm: six, five, eight, four.",
+      "options": [
+        {
+          "key": "a",
+          "text": "five"
+        },
+        {
+          "key": "b",
+          "text": "eight"
+        },
+        {
+          "key": "c",
+          "text": "six"
+        },
+        {
+          "key": "d",
+          "text": "four"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Các từ six, eight chỉ số lớn hơn 5.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-059",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ số lớn hơn 5 trong nhóm: ten, two, seven, three.",
+      "options": [
+        {
+          "key": "a",
+          "text": "seven"
+        },
+        {
+          "key": "b",
+          "text": "two"
+        },
+        {
+          "key": "c",
+          "text": "ten"
+        },
+        {
+          "key": "d",
+          "text": "three"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Các từ ten, seven chỉ số lớn hơn 5.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-060",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ số lớn hơn 5 trong nhóm: nine, four, six, one.",
+      "options": [
+        {
+          "key": "a",
+          "text": "six"
+        },
+        {
+          "key": "b",
+          "text": "nine"
+        },
+        {
+          "key": "c",
+          "text": "one"
+        },
+        {
+          "key": "d",
+          "text": "four"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Các từ nine, six chỉ số lớn hơn 5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-061",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ chỉ số lớn hơn 5 trong nhóm: eight, three, ten, five.",
+      "options": [
+        {
+          "key": "a",
+          "text": "eight"
+        },
+        {
+          "key": "b",
+          "text": "three"
+        },
+        {
+          "key": "c",
+          "text": "five"
+        },
+        {
+          "key": "d",
+          "text": "ten"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Các từ eight, ten chỉ số lớn hơn 5.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-062",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là số 4 và số 6 trong nhóm: four, two, six, one.",
+      "options": [
+        {
+          "key": "a",
+          "text": "six"
+        },
+        {
+          "key": "b",
+          "text": "two"
+        },
+        {
+          "key": "c",
+          "text": "four"
+        },
+        {
+          "key": "d",
+          "text": "one"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "'four' là số 4, 'six' là số 6.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-063",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là số 3 và số 5 trong nhóm: three, seven, five, nine.",
+      "options": [
+        {
+          "key": "a",
+          "text": "three"
+        },
+        {
+          "key": "b",
+          "text": "five"
+        },
+        {
+          "key": "c",
+          "text": "seven"
+        },
+        {
+          "key": "d",
+          "text": "nine"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "'three' là số 3, 'five' là số 5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-064",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là số 2 và số 8 trong nhóm: two, six, eight, one.",
+      "options": [
+        {
+          "key": "a",
+          "text": "eight"
+        },
+        {
+          "key": "b",
+          "text": "two"
+        },
+        {
+          "key": "c",
+          "text": "one"
+        },
+        {
+          "key": "d",
+          "text": "six"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "'two' là số 2, 'eight' là số 8.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-065",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là số 1 và số 10 trong nhóm: one, four, ten, three.",
+      "options": [
+        {
+          "key": "a",
+          "text": "three"
+        },
+        {
+          "key": "b",
+          "text": "ten"
+        },
+        {
+          "key": "c",
+          "text": "four"
+        },
+        {
+          "key": "d",
+          "text": "one"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "'one' là số 1, 'ten' là số 10.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-066",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là số 5 và số 7 trong nhóm: five, two, seven, eight.",
+      "options": [
+        {
+          "key": "a",
+          "text": "five"
+        },
+        {
+          "key": "b",
+          "text": "two"
+        },
+        {
+          "key": "c",
+          "text": "seven"
+        },
+        {
+          "key": "d",
+          "text": "eight"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "'five' là số 5, 'seven' là số 7.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-067",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là số 9 và số 3 trong nhóm: nine, one, three, six.",
+      "options": [
+        {
+          "key": "a",
+          "text": "six"
+        },
+        {
+          "key": "b",
+          "text": "three"
+        },
+        {
+          "key": "c",
+          "text": "one"
+        },
+        {
+          "key": "d",
+          "text": "nine"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "'nine' là số 9, 'three' là số 3.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-068",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là số 8 và số 4 trong nhóm: eight, ten, four, two.",
+      "options": [
+        {
+          "key": "a",
+          "text": "two"
+        },
+        {
+          "key": "b",
+          "text": "ten"
+        },
+        {
+          "key": "c",
+          "text": "four"
+        },
+        {
+          "key": "d",
+          "text": "eight"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "'eight' là số 8, 'four' là số 4.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-069",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các từ có nghĩa là số 10 và số 6 trong nhóm: ten, three, six, seven.",
+      "options": [
+        {
+          "key": "a",
+          "text": "ten"
+        },
+        {
+          "key": "b",
+          "text": "seven"
+        },
+        {
+          "key": "c",
+          "text": "six"
+        },
+        {
+          "key": "d",
+          "text": "three"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "'ten' là số 10, 'six' là số 6.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-070",
+      "type": "true_false",
+      "prompt": "Từ 'one' có nghĩa là số 1.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'one' là số 1.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-071",
+      "type": "true_false",
+      "prompt": "Từ 'two' có nghĩa là số 3.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'two' là số 2.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-072",
+      "type": "true_false",
+      "prompt": "Từ 'three' có nghĩa là số 3.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'three' là số 3.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-073",
+      "type": "true_false",
+      "prompt": "Từ 'four' có nghĩa là số 5.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'four' là số 4.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-074",
+      "type": "true_false",
+      "prompt": "Từ 'five' có nghĩa là số 5.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'five' là số 5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-075",
+      "type": "true_false",
+      "prompt": "Từ 'six' có nghĩa là số 7.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'six' là số 6.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-076",
+      "type": "true_false",
+      "prompt": "Từ 'seven' có nghĩa là số 7.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'seven' là số 7.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-077",
+      "type": "true_false",
+      "prompt": "Từ 'eight' có nghĩa là số 9.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: 'eight' là số 8.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-078",
+      "type": "true_false",
+      "prompt": "Từ 'nine' có nghĩa là số 9.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: 'nine' là số 9.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-079",
+      "type": "true_false",
+      "prompt": "Số 2 bé hơn số 5.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: số 2 bé hơn số 5.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-080",
+      "type": "true_false",
+      "prompt": "Số 7 bé hơn số 3.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: số 7 lớn hơn số 3.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-081",
+      "type": "true_false",
+      "prompt": "Số 1 bé hơn số 8.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: số 1 bé hơn số 8.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-082",
+      "type": "true_false",
+      "prompt": "Số 9 bé hơn số 4.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: số 9 lớn hơn số 4.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-083",
+      "type": "true_false",
+      "prompt": "Số 6 bé hơn số 10.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: số 6 bé hơn số 10.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-084",
+      "type": "true_false",
+      "prompt": "Số 5 bé hơn số 1.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: số 5 lớn hơn số 1.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-085",
+      "type": "true_false",
+      "prompt": "Số 3 bé hơn số 9.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Đúng: số 3 bé hơn số 9.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-086",
+      "type": "true_false",
+      "prompt": "Số 8 bé hơn số 2.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Sai: số 8 lớn hơn số 2.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-087",
+      "type": "fill_in",
+      "prompt": "Viết số 1 bằng tiếng Anh: ___.",
+      "answer": {
+        "accepted": [
+          "one",
+          "ONE"
+        ]
+      },
+      "explanation": "Số 1 viết là 'one'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-088",
+      "type": "fill_in",
+      "prompt": "Viết số 2 bằng tiếng Anh: ___.",
+      "answer": {
+        "accepted": [
+          "two",
+          "TWO"
+        ]
+      },
+      "explanation": "Số 2 viết là 'two'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-089",
+      "type": "fill_in",
+      "prompt": "Viết số 3 bằng tiếng Anh: ___.",
+      "answer": {
+        "accepted": [
+          "three",
+          "THREE"
+        ]
+      },
+      "explanation": "Số 3 viết là 'three'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-090",
+      "type": "fill_in",
+      "prompt": "Viết số 4 bằng tiếng Anh: ___.",
+      "answer": {
+        "accepted": [
+          "four",
+          "FOUR"
+        ]
+      },
+      "explanation": "Số 4 viết là 'four'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-091",
+      "type": "fill_in",
+      "prompt": "Viết số 5 bằng tiếng Anh: ___.",
+      "answer": {
+        "accepted": [
+          "five",
+          "FIVE"
+        ]
+      },
+      "explanation": "Số 5 viết là 'five'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-092",
+      "type": "fill_in",
+      "prompt": "Viết số 6 bằng tiếng Anh: ___.",
+      "answer": {
+        "accepted": [
+          "six",
+          "SIX"
+        ]
+      },
+      "explanation": "Số 6 viết là 'six'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-093",
+      "type": "fill_in",
+      "prompt": "Viết số 7 bằng tiếng Anh: ___.",
+      "answer": {
+        "accepted": [
+          "seven",
+          "SEVEN"
+        ]
+      },
+      "explanation": "Số 7 viết là 'seven'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-094",
+      "type": "fill_in",
+      "prompt": "Viết số 8 bằng tiếng Anh: ___.",
+      "answer": {
+        "accepted": [
+          "eight",
+          "EIGHT"
+        ]
+      },
+      "explanation": "Số 8 viết là 'eight'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-095",
+      "type": "fill_in",
+      "prompt": "Viết số 9 bằng tiếng Anh: ___.",
+      "answer": {
+        "accepted": [
+          "nine",
+          "NINE"
+        ]
+      },
+      "explanation": "Số 9 viết là 'nine'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-096",
+      "type": "fill_in",
+      "prompt": "Viết số 10 bằng tiếng Anh: ___.",
+      "answer": {
+        "accepted": [
+          "ten",
+          "TEN"
+        ]
+      },
+      "explanation": "Số 10 viết là 'ten'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-097",
+      "type": "fill_in",
+      "prompt": "Điền chữ số: từ 'one' nghĩa là số ___.",
+      "answer": {
+        "accepted": [
+          "1"
+        ]
+      },
+      "explanation": "'one' là số 1.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-098",
+      "type": "fill_in",
+      "prompt": "Điền chữ số: từ 'two' nghĩa là số ___.",
+      "answer": {
+        "accepted": [
+          "2"
+        ]
+      },
+      "explanation": "'two' là số 2.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-099",
+      "type": "fill_in",
+      "prompt": "Điền chữ số: từ 'three' nghĩa là số ___.",
+      "answer": {
+        "accepted": [
+          "3"
+        ]
+      },
+      "explanation": "'three' là số 3.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-100",
+      "type": "fill_in",
+      "prompt": "Điền chữ số: từ 'four' nghĩa là số ___.",
+      "answer": {
+        "accepted": [
+          "4"
+        ]
+      },
+      "explanation": "'four' là số 4.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-101",
+      "type": "fill_in",
+      "prompt": "Điền chữ số: từ 'five' nghĩa là số ___.",
+      "answer": {
+        "accepted": [
+          "5"
+        ]
+      },
+      "explanation": "'five' là số 5.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-102",
+      "type": "fill_in",
+      "prompt": "Điền chữ số: từ 'six' nghĩa là số ___.",
+      "answer": {
+        "accepted": [
+          "6"
+        ]
+      },
+      "explanation": "'six' là số 6.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-103",
+      "type": "fill_in",
+      "prompt": "Điền chữ số: từ 'seven' nghĩa là số ___.",
+      "answer": {
+        "accepted": [
+          "7"
+        ]
+      },
+      "explanation": "'seven' là số 7.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-104",
+      "type": "fill_in",
+      "prompt": "Điền chữ số: từ 'eight' nghĩa là số ___.",
+      "answer": {
+        "accepted": [
+          "8"
+        ]
+      },
+      "explanation": "'eight' là số 8.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-105",
+      "type": "fill_in",
+      "prompt": "Đếm tiếp bằng tiếng Anh: one, two, three, ___.",
+      "answer": {
+        "accepted": [
+          "four",
+          "FOUR"
+        ]
+      },
+      "explanation": "Đếm tiếp sau 'three' là 'four'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "tieng-anh-1-numbers-106",
+      "type": "fill_in",
+      "prompt": "Đếm tiếp bằng tiếng Anh: two, three, four, ___.",
+      "answer": {
+        "accepted": [
+          "five",
+          "FIVE"
+        ]
+      },
+      "explanation": "Đếm tiếp sau 'four' là 'five'.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "tieng-anh-1-numbers-107",
+      "type": "fill_in",
+      "prompt": "Đếm tiếp bằng tiếng Anh: five, six, seven, ___.",
+      "answer": {
+        "accepted": [
+          "eight",
+          "EIGHT"
+        ]
+      },
+      "explanation": "Đếm tiếp sau 'seven' là 'eight'.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "tieng-anh-1-numbers-108",
+      "type": "fill_in",
+      "prompt": "Đếm tiếp bằng tiếng Anh: seven, eight, nine, ___.",
+      "answer": {
+        "accepted": [
+          "ten",
+          "TEN"
+        ]
+      },
+      "explanation": "Đếm tiếp sau 'nine' là 'ten'.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

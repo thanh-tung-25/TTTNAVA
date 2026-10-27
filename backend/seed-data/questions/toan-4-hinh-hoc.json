@@ -1,0 +1,597 @@
+{
+  "topic": {
+    "id": "toan-4-hinh-hoc",
+    "subjectId": "toan",
+    "grade": 4,
+    "slug": "hinh-hoc",
+    "name": "Hình học",
+    "sortOrder": 5
+  },
+  "questions": [
+    {
+      "id": "toan-4-hinh-hoc-001",
+      "type": "single_choice",
+      "prompt": "Góc có số đo 90° là góc gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "góc vuông"
+        },
+        {
+          "key": "b",
+          "text": "góc nhọn"
+        },
+        {
+          "key": "c",
+          "text": "góc bẹt"
+        },
+        {
+          "key": "d",
+          "text": "góc tù"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là góc vuông.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-hinh-hoc-002",
+      "type": "single_choice",
+      "prompt": "Góc có số đo bé hơn 90° là góc gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "góc tù"
+        },
+        {
+          "key": "b",
+          "text": "góc nhọn"
+        },
+        {
+          "key": "c",
+          "text": "góc vuông"
+        },
+        {
+          "key": "d",
+          "text": "góc bẹt"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là góc nhọn.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-hinh-hoc-003",
+      "type": "single_choice",
+      "prompt": "Góc có số đo lớn hơn 90° và bé hơn 180° là góc gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "góc bẹt"
+        },
+        {
+          "key": "b",
+          "text": "góc nhọn"
+        },
+        {
+          "key": "c",
+          "text": "góc tù"
+        },
+        {
+          "key": "d",
+          "text": "góc vuông"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là góc tù.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-hinh-hoc-004",
+      "type": "single_choice",
+      "prompt": "Góc có số đo 180° là góc gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "góc tù"
+        },
+        {
+          "key": "b",
+          "text": "góc vuông"
+        },
+        {
+          "key": "c",
+          "text": "góc nhọn"
+        },
+        {
+          "key": "d",
+          "text": "góc bẹt"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là góc bẹt.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-hinh-hoc-005",
+      "type": "single_choice",
+      "prompt": "Hai đường thẳng cắt nhau tạo thành 4 góc vuông là hai đường thẳng gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "vuông góc"
+        },
+        {
+          "key": "b",
+          "text": "trùng nhau"
+        },
+        {
+          "key": "c",
+          "text": "cong"
+        },
+        {
+          "key": "d",
+          "text": "song song"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là vuông góc.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-hinh-hoc-006",
+      "type": "single_choice",
+      "prompt": "Hai đường thẳng không bao giờ cắt nhau là hai đường thẳng gì?",
+      "options": [
+        {
+          "key": "a",
+          "text": "trùng nhau"
+        },
+        {
+          "key": "b",
+          "text": "song song"
+        },
+        {
+          "key": "c",
+          "text": "vuông góc"
+        },
+        {
+          "key": "d",
+          "text": "cắt nhau"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là song song.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-hinh-hoc-007",
+      "type": "single_choice",
+      "prompt": "Hình bình hành có đáy 8 cm, chiều cao 5 cm. Diện tích là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "39"
+        },
+        {
+          "key": "b",
+          "text": "41"
+        },
+        {
+          "key": "c",
+          "text": "40"
+        },
+        {
+          "key": "d",
+          "text": "42"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 40.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-hinh-hoc-008",
+      "type": "single_choice",
+      "prompt": "Hình bình hành có đáy 12 cm, chiều cao 6 cm. Diện tích là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "71"
+        },
+        {
+          "key": "b",
+          "text": "73"
+        },
+        {
+          "key": "c",
+          "text": "74"
+        },
+        {
+          "key": "d",
+          "text": "72"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 72.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-hinh-hoc-009",
+      "type": "single_choice",
+      "prompt": "Hình thoi có hai đường chéo 6 cm và 8 cm. Diện tích là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "24"
+        },
+        {
+          "key": "b",
+          "text": "23"
+        },
+        {
+          "key": "c",
+          "text": "26"
+        },
+        {
+          "key": "d",
+          "text": "25"
+        }
+      ],
+      "answer": {
+        "key": "a"
+      },
+      "explanation": "Đáp án là 24.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-hinh-hoc-010",
+      "type": "single_choice",
+      "prompt": "Hình thoi có hai đường chéo 10 cm và 12 cm. Diện tích là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "61"
+        },
+        {
+          "key": "b",
+          "text": "60"
+        },
+        {
+          "key": "c",
+          "text": "59"
+        },
+        {
+          "key": "d",
+          "text": "62"
+        }
+      ],
+      "answer": {
+        "key": "b"
+      },
+      "explanation": "Đáp án là 60.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-hinh-hoc-011",
+      "type": "single_choice",
+      "prompt": "Hình bình hành có diện tích 36 cm², đáy 9 cm. Chiều cao là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "6"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "4"
+        },
+        {
+          "key": "d",
+          "text": "3"
+        }
+      ],
+      "answer": {
+        "key": "c"
+      },
+      "explanation": "Đáp án là 4.",
+      "imageUrl": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "toan-4-hinh-hoc-012",
+      "type": "single_choice",
+      "prompt": "Hình chữ nhật dài 9 cm, rộng 4 cm. Chu vi là bao nhiêu?",
+      "options": [
+        {
+          "key": "a",
+          "text": "25"
+        },
+        {
+          "key": "b",
+          "text": "27"
+        },
+        {
+          "key": "c",
+          "text": "28"
+        },
+        {
+          "key": "d",
+          "text": "26"
+        }
+      ],
+      "answer": {
+        "key": "d"
+      },
+      "explanation": "Đáp án là 26.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-hinh-hoc-013",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các góc có số đo bé hơn 90°.",
+      "options": [
+        {
+          "key": "a",
+          "text": "30°"
+        },
+        {
+          "key": "b",
+          "text": "60°"
+        },
+        {
+          "key": "c",
+          "text": "90°"
+        },
+        {
+          "key": "d",
+          "text": "120°"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "30° và 60° đều bé hơn 90°.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-hinh-hoc-014",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các góc có số đo lớn hơn 90°.",
+      "options": [
+        {
+          "key": "a",
+          "text": "150°"
+        },
+        {
+          "key": "b",
+          "text": "90°"
+        },
+        {
+          "key": "c",
+          "text": "120°"
+        },
+        {
+          "key": "d",
+          "text": "45°"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "120° và 150° đều lớn hơn 90°.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-hinh-hoc-015",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các hình có hai cặp cạnh đối diện song song.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hình thang"
+        },
+        {
+          "key": "b",
+          "text": "hình chữ nhật"
+        },
+        {
+          "key": "c",
+          "text": "hình tam giác"
+        },
+        {
+          "key": "d",
+          "text": "hình bình hành"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Hình bình hành và hình chữ nhật có hai cặp cạnh đối diện song song.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-hinh-hoc-016",
+      "type": "multiple_choice",
+      "prompt": "Chọn tất cả các hình có bốn cạnh bằng nhau.",
+      "options": [
+        {
+          "key": "a",
+          "text": "hình bình hành"
+        },
+        {
+          "key": "b",
+          "text": "hình chữ nhật"
+        },
+        {
+          "key": "c",
+          "text": "hình vuông"
+        },
+        {
+          "key": "d",
+          "text": "hình thoi"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Hình vuông và hình thoi có bốn cạnh bằng nhau.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-hinh-hoc-017",
+      "type": "true_false",
+      "prompt": "Góc vuông có số đo 90°.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Góc vuông có số đo 90°. là đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-hinh-hoc-018",
+      "type": "true_false",
+      "prompt": "Góc nhọn lớn hơn góc vuông.",
+      "answer": {
+        "value": false
+      },
+      "explanation": "Góc nhọn bé hơn góc vuông.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-hinh-hoc-019",
+      "type": "true_false",
+      "prompt": "Hình bình hành có hai cặp cạnh đối diện song song.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Hình bình hành có hai cặp cạnh đối diện song song. là đúng.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-hinh-hoc-020",
+      "type": "true_false",
+      "prompt": "Hình thoi có bốn cạnh bằng nhau.",
+      "answer": {
+        "value": true
+      },
+      "explanation": "Hình thoi có bốn cạnh bằng nhau. là đúng.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-hinh-hoc-021",
+      "type": "fill_in",
+      "prompt": "Hình bình hành đáy 10 cm, chiều cao 4 cm có diện tích ___ cm².",
+      "answer": {
+        "accepted": [
+          "40"
+        ]
+      },
+      "explanation": "Đáp án là 40.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-hinh-hoc-022",
+      "type": "fill_in",
+      "prompt": "Hình thoi có hai đường chéo 4 cm và 6 cm có diện tích ___ cm².",
+      "answer": {
+        "accepted": [
+          "12"
+        ]
+      },
+      "explanation": "Đáp án là 12.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-hinh-hoc-023",
+      "type": "fill_in",
+      "prompt": "Góc vuông có số đo ___ độ.",
+      "answer": {
+        "accepted": [
+          "90"
+        ]
+      },
+      "explanation": "Đáp án là 90.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "toan-4-hinh-hoc-024",
+      "type": "fill_in",
+      "prompt": "Hai đường thẳng song song không bao giờ ___.",
+      "answer": {
+        "accepted": [
+          "cắt nhau"
+        ]
+      },
+      "explanation": "Đáp án là cắt nhau.",
+      "imageUrl": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "toan-4-hinh-hoc-025",
+      "type": "fill_in",
+      "prompt": "Hình chữ nhật dài 7 cm, rộng 3 cm có chu vi ___ cm.",
+      "answer": {
+        "accepted": [
+          "20"
+        ]
+      },
+      "explanation": "Đáp án là 20.",
+      "imageUrl": null,
+      "difficulty": "medium"
+    }
+  ]
+}

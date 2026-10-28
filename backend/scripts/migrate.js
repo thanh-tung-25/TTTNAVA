@@ -21,6 +21,7 @@ async function main() {
   });
 
   try {
+    await connection.query("SET time_zone = '+00:00'");
     await connection.query(`
       CREATE TABLE IF NOT EXISTS schema_migrations (
         name VARCHAR(160) NOT NULL,

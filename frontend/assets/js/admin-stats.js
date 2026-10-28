@@ -39,9 +39,13 @@ function render(data) {
       <div class="grid grid-4">
         ${stat(data.bank.subjects, 'Môn học')}
         ${stat(data.bank.topics, 'Chủ đề')}
-        ${stat(data.bank.questions, 'Câu hỏi')}
-        ${stat(data.bank.visibleQuestions, 'Đang hiện')}
+        ${stat(data.bank.questions, 'Tổng câu hỏi')}
+        ${stat(data.bank.publishedQuestions, 'Đã đăng')}
       </div>
+      <p class="muted" style="margin:.75rem 0 0;font-size:.82rem">
+        Nháp: ${data.bank.draftQuestions.toLocaleString('vi-VN')} ·
+        Đang ẩn: ${data.bank.hiddenQuestions.toLocaleString('vi-VN')}
+      </p>
     </section>
 
     <section class="card">

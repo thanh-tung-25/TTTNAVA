@@ -66,9 +66,9 @@ export async function getTopicWithSubject(topicId) {
   return rows[0];
 }
 
-export async function countVisibleQuestions(topicId) {
+export async function countPublishedQuestions(topicId) {
   const rows = await query(
-    'SELECT COUNT(*) AS total FROM questions WHERE topic_id = ? AND status = \'visible\'',
+    'SELECT COUNT(*) AS total FROM questions WHERE topic_id = ? AND status = \'published\'',
     [topicId],
   );
   return Number(rows[0]?.total ?? 0);
@@ -103,12 +103,12 @@ async function recentQuestionIds(studentId, topicId, limitRefs = 3) {
 export async function selectQuestionsForRound({ studentId, topicId, count, seed }) {
   const topic = await getTopicWithSubject(topicId);
   const rows = await query(
-    'SELECT id FROM questions WHERE topic_id = ? AND status = \'visible\' ORDER BY id ASC',
+    'SELECT id FROM questions WHERE topic_id = ? AND status = \'published\' ORDER BY id ASC',
     [topicId],
   );
   const allIds = rows.map((row) => row.id);
   if (allIds.length === 0) {
-    throw new AppError(409, 'TOPIC_EMPTY', 'Chủ đề này chưa có câu hỏi');
+    throw new AppError(409, 'TOPIC_EMPTY', 'Chủ đề này chưa có câu hỏi nào được đăng');
   }
 
   const recent = await recentQuestionIds(studentId, topicId);
@@ -122,25 +122,29 @@ export async function selectQuestionsForRound({ studentId, topicId, count, seed 
   }
 
   if (selected.length < count) {
-    throw new AppError(409, 'NOT_ENOUGH_QUESTIONS', `Chủ đề chỉ có ${selected.length} câu hỏi, cần ${count} câu`);
+    throw new AppError(
+      409,
+      'NOT_ENOUGH_QUESTIONS',
+      `Chủ đề chỉ có ${selected.length} câu hỏi đã đăng, cần ${count} câu. Cô giáo cần đăng thêm câu hỏi.`,
+    );
   }
   return { topic, questionIds: selected };
 }
 
 export async function buildChallengeQuestionIds(topic, seed) {
   const topicRows = await query(
-    'SELECT id FROM questions WHERE topic_id = ? AND status = \'visible\' ORDER BY id ASC',
+    'SELECT id FROM questions WHERE topic_id = ? AND status = \'published\' ORDER BY id ASC',
     [topic.id],
   );
   if (topicRows.length < 5) {
-    throw new AppError(409, 'TOPIC_TOO_SMALL', 'Chủ đề cần ít nhất 5 câu hỏi để thách đấu');
+    throw new AppError(409, 'TOPIC_TOO_SMALL', 'Chủ đề cần ít nhất 5 câu hỏi đã đăng để thách đấu');
   }
 
   const otherRows = await query(
     `SELECT q.id
      FROM questions q
      JOIN topics t ON t.id = q.topic_id
-     WHERE t.subject_id = ? AND t.grade = ? AND t.id <> ? AND q.status = 'visible'
+     WHERE t.subject_id = ? AND t.grade = ? AND t.id <> ? AND q.status = 'published'
      ORDER BY q.id ASC`,
     [topic.subject_id, topic.grade, topic.id],
   );

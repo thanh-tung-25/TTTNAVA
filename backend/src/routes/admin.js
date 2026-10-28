@@ -7,6 +7,11 @@ import {
   updateStudentHandler,
 } from '../controllers/admin-student-controller.js';
 import {
+  createQuestionHandler,
+  importAiHandler,
+  importConfigHandler,
+  importDocxHandler,
+  importDraftsHandler,
   listQuestionsHandler,
   questionAuditHandler,
   questionDetailHandler,
@@ -14,6 +19,7 @@ import {
 } from '../controllers/admin-question-controller.js';
 import { adminStatsHandler } from '../controllers/admin-stats-controller.js';
 import { authenticateToken, requireAdmin } from '../middlewares/auth.js';
+import { uploadDocx } from '../middlewares/upload-docx.js';
 
 const router = Router();
 
@@ -28,6 +34,11 @@ router.post('/students/:id/password', resetPasswordHandler);
 router.post('/students/:id/lock', lockStudentHandler);
 
 router.get('/questions', listQuestionsHandler);
+router.get('/questions/import/config', importConfigHandler);
+router.post('/questions/import', importDraftsHandler);
+router.post('/questions/import/docx', uploadDocx, importDocxHandler);
+router.post('/questions/import/ai', uploadDocx, importAiHandler);
+router.post('/questions', createQuestionHandler);
 router.get('/questions/:id', questionDetailHandler);
 router.patch('/questions/:id', updateQuestionHandler);
 router.get('/questions/:id/audit', questionAuditHandler);

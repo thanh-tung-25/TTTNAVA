@@ -11,7 +11,9 @@ export async function getAdminStats() {
        (SELECT COUNT(*) FROM subjects) AS subjects,
        (SELECT COUNT(*) FROM topics) AS topics,
        (SELECT COUNT(*) FROM questions) AS questions,
-       (SELECT COUNT(*) FROM questions WHERE status = 'visible') AS visible_questions`,
+       (SELECT COUNT(*) FROM questions WHERE status = 'published') AS published_questions,
+       (SELECT COUNT(*) FROM questions WHERE status IN ('draft', 'visible')) AS draft_questions,
+       (SELECT COUNT(*) FROM questions WHERE status = 'hidden') AS hidden_questions`,
   );
   const [practice] = await query(
     'SELECT COUNT(*) AS total FROM practice_sessions WHERE status = \'finished\'',
@@ -55,7 +57,9 @@ export async function getAdminStats() {
       subjects: Number(bank.subjects),
       topics: Number(bank.topics),
       questions: Number(bank.questions),
-      visibleQuestions: Number(bank.visible_questions),
+      publishedQuestions: Number(bank.published_questions),
+      draftQuestions: Number(bank.draft_questions),
+      hiddenQuestions: Number(bank.hidden_questions),
     },
     practiceSessions: Number(practice.total),
     examAttempts: Number(exam.total),

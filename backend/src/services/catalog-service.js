@@ -16,7 +16,7 @@ export async function listTopics(subjectId, grade) {
   const rows = await query(
     `SELECT t.*,
             (SELECT COUNT(*) FROM questions q
-             WHERE q.topic_id = t.id AND q.status = 'visible') AS question_count
+             WHERE q.topic_id = t.id AND q.status = 'published') AS question_count
      FROM topics t
      WHERE t.subject_id = ? AND t.grade = ?
      ORDER BY t.sort_order ASC, t.name ASC`,
@@ -29,7 +29,7 @@ export async function getTopicDetail(topicId) {
   const rows = await query(
     `SELECT t.*, s.name AS subject_name, s.color AS subject_color,
             (SELECT COUNT(*) FROM questions q
-             WHERE q.topic_id = t.id AND q.status = 'visible') AS question_count
+             WHERE q.topic_id = t.id AND q.status = 'published') AS question_count
      FROM topics t JOIN subjects s ON s.id = t.subject_id
      WHERE t.id = ? LIMIT 1`,
     [topicId],

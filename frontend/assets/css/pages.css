@@ -323,6 +323,19 @@
 .ledger-row time { font-size: 0.72rem; color: var(--muted); }
 
 /* ===== Quản trị ===== */
+.page-head .actions { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+.question-option-row { display: flex; align-items: center; gap: 0.45rem; margin-bottom: 0.35rem; }
+.question-option-row .input { flex: 1; min-height: 38px; }
+.question-option-row .badge { min-width: 28px; text-align: center; }
+.import-question-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.7rem 0.8rem;
+  margin-bottom: 0.7rem;
+  background: #fff;
+}
+.import-question-card summary { cursor: pointer; display: flex; gap: 0.5rem; align-items: center; }
+.import-issues { color: #9c1c4e; font-size: 0.8rem; margin: 0.4rem 0; padding-left: 1.1rem; }
 .admin-table .prompt-cell { max-width: 340px; }
 .admin-table .prompt-cell span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .filter-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem; }

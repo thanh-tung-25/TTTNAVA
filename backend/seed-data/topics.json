@@ -1,0 +1,730 @@
+[
+  {
+    "id": "toan-1-dem-va-so-sanh",
+    "subjectId": "toan",
+    "grade": 1,
+    "name": "Đếm và so sánh trong phạm vi 10",
+    "slug": "dem-va-so-sanh",
+    "sortOrder": 1
+  },
+  {
+    "id": "toan-1-cong-trong-10",
+    "subjectId": "toan",
+    "grade": 1,
+    "name": "Phép cộng trong phạm vi 10",
+    "slug": "cong-trong-10",
+    "sortOrder": 2
+  },
+  {
+    "id": "toan-1-tru-trong-10",
+    "subjectId": "toan",
+    "grade": 1,
+    "name": "Phép trừ trong phạm vi 10",
+    "slug": "tru-trong-10",
+    "sortOrder": 3
+  },
+  {
+    "id": "toan-1-so-den-100",
+    "subjectId": "toan",
+    "grade": 1,
+    "name": "Số đến 100",
+    "slug": "so-den-100",
+    "sortOrder": 4
+  },
+  {
+    "id": "toan-1-hinh-va-vi-tri",
+    "subjectId": "toan",
+    "grade": 1,
+    "name": "Hình học và vị trí",
+    "slug": "hinh-va-vi-tri",
+    "sortOrder": 5
+  },
+  {
+    "id": "tieng-viet-1-chu-cai",
+    "subjectId": "tieng-viet",
+    "grade": 1,
+    "name": "Chữ cái và âm đầu",
+    "slug": "chu-cai",
+    "sortOrder": 1
+  },
+  {
+    "id": "tieng-viet-1-van-va-tieng",
+    "subjectId": "tieng-viet",
+    "grade": 1,
+    "name": "Vần và tiếng",
+    "slug": "van-va-tieng",
+    "sortOrder": 2
+  },
+  {
+    "id": "tieng-viet-1-tu-chi-su-vat",
+    "subjectId": "tieng-viet",
+    "grade": 1,
+    "name": "Từ chỉ sự vật",
+    "slug": "tu-chi-su-vat",
+    "sortOrder": 3
+  },
+  {
+    "id": "tieng-viet-1-cau-don-gian",
+    "subjectId": "tieng-viet",
+    "grade": 1,
+    "name": "Câu đơn giản",
+    "slug": "cau-don-gian",
+    "sortOrder": 4
+  },
+  {
+    "id": "tieng-viet-1-doc-hieu",
+    "subjectId": "tieng-viet",
+    "grade": 1,
+    "name": "Đọc hiểu đoạn ngắn",
+    "slug": "doc-hieu",
+    "sortOrder": 5
+  },
+  {
+    "id": "tieng-anh-1-alphabet",
+    "subjectId": "tieng-anh",
+    "grade": 1,
+    "name": "Alphabet và chào hỏi",
+    "slug": "alphabet",
+    "sortOrder": 1
+  },
+  {
+    "id": "tieng-anh-1-numbers",
+    "subjectId": "tieng-anh",
+    "grade": 1,
+    "name": "Số 1–10",
+    "slug": "numbers",
+    "sortOrder": 2
+  },
+  {
+    "id": "tieng-anh-1-colors",
+    "subjectId": "tieng-anh",
+    "grade": 1,
+    "name": "Màu sắc",
+    "slug": "colors",
+    "sortOrder": 3
+  },
+  {
+    "id": "tieng-anh-1-animals",
+    "subjectId": "tieng-anh",
+    "grade": 1,
+    "name": "Động vật",
+    "slug": "animals",
+    "sortOrder": 4
+  },
+  {
+    "id": "tieng-anh-1-family",
+    "subjectId": "tieng-anh",
+    "grade": 1,
+    "name": "Gia đình",
+    "slug": "family",
+    "sortOrder": 5
+  },
+  {
+    "id": "toan-2-cong-tru-100",
+    "subjectId": "toan",
+    "grade": 2,
+    "name": "Cộng trừ trong phạm vi 100",
+    "slug": "cong-tru-100",
+    "sortOrder": 1
+  },
+  {
+    "id": "toan-2-bang-nhan-2-5",
+    "subjectId": "toan",
+    "grade": 2,
+    "name": "Bảng nhân 2–5",
+    "slug": "bang-nhan-2-5",
+    "sortOrder": 2
+  },
+  {
+    "id": "toan-2-bang-chia-2-5",
+    "subjectId": "toan",
+    "grade": 2,
+    "name": "Bảng chia 2–5",
+    "slug": "bang-chia-2-5",
+    "sortOrder": 3
+  },
+  {
+    "id": "toan-2-do-dai",
+    "subjectId": "toan",
+    "grade": 2,
+    "name": "Đo độ dài",
+    "slug": "do-dai",
+    "sortOrder": 4
+  },
+  {
+    "id": "toan-2-hinh-hoc",
+    "subjectId": "toan",
+    "grade": 2,
+    "name": "Hình học cơ bản",
+    "slug": "hinh-hoc",
+    "sortOrder": 5
+  },
+  {
+    "id": "toan-2-toan-co-loi-van",
+    "subjectId": "toan",
+    "grade": 2,
+    "name": "Toán có lời văn",
+    "slug": "toan-co-loi-van",
+    "sortOrder": 6
+  },
+  {
+    "id": "tieng-viet-2-chinh-ta",
+    "subjectId": "tieng-viet",
+    "grade": 2,
+    "name": "Chính tả",
+    "slug": "chinh-ta",
+    "sortOrder": 1
+  },
+  {
+    "id": "tieng-viet-2-tu-chi-hoat-dong",
+    "subjectId": "tieng-viet",
+    "grade": 2,
+    "name": "Từ chỉ hoạt động",
+    "slug": "tu-chi-hoat-dong",
+    "sortOrder": 2
+  },
+  {
+    "id": "tieng-viet-2-cau-ai-la-gi",
+    "subjectId": "tieng-viet",
+    "grade": 2,
+    "name": "Câu kiểu Ai là gì?",
+    "slug": "cau-ai-la-gi",
+    "sortOrder": 3
+  },
+  {
+    "id": "tieng-viet-2-dau-cau",
+    "subjectId": "tieng-viet",
+    "grade": 2,
+    "name": "Dấu câu",
+    "slug": "dau-cau",
+    "sortOrder": 4
+  },
+  {
+    "id": "tieng-viet-2-doc-hieu",
+    "subjectId": "tieng-viet",
+    "grade": 2,
+    "name": "Đọc hiểu",
+    "slug": "doc-hieu",
+    "sortOrder": 5
+  },
+  {
+    "id": "tieng-viet-2-tu-trai-nghia",
+    "subjectId": "tieng-viet",
+    "grade": 2,
+    "name": "Từ trái nghĩa",
+    "slug": "tu-trai-nghia",
+    "sortOrder": 6
+  },
+  {
+    "id": "tieng-anh-2-numbers-20",
+    "subjectId": "tieng-anh",
+    "grade": 2,
+    "name": "Số 11–20",
+    "slug": "numbers-20",
+    "sortOrder": 1
+  },
+  {
+    "id": "tieng-anh-2-school",
+    "subjectId": "tieng-anh",
+    "grade": 2,
+    "name": "Trường học",
+    "slug": "school",
+    "sortOrder": 2
+  },
+  {
+    "id": "tieng-anh-2-body",
+    "subjectId": "tieng-anh",
+    "grade": 2,
+    "name": "Cơ thể",
+    "slug": "body",
+    "sortOrder": 3
+  },
+  {
+    "id": "tieng-anh-2-food",
+    "subjectId": "tieng-anh",
+    "grade": 2,
+    "name": "Đồ ăn",
+    "slug": "food",
+    "sortOrder": 4
+  },
+  {
+    "id": "tieng-anh-2-verbs",
+    "subjectId": "tieng-anh",
+    "grade": 2,
+    "name": "Động từ thường gặp",
+    "slug": "verbs",
+    "sortOrder": 5
+  },
+  {
+    "id": "tieng-anh-2-greetings",
+    "subjectId": "tieng-anh",
+    "grade": 2,
+    "name": "Chào hỏi và giới thiệu",
+    "slug": "greetings",
+    "sortOrder": 6
+  },
+  {
+    "id": "toan-3-cong-tru-1000",
+    "subjectId": "toan",
+    "grade": 3,
+    "name": "Cộng trừ trong phạm vi 1000",
+    "slug": "cong-tru-1000",
+    "sortOrder": 1
+  },
+  {
+    "id": "toan-3-bang-nhan-chia-6-9",
+    "subjectId": "toan",
+    "grade": 3,
+    "name": "Bảng nhân chia 6–9",
+    "slug": "bang-nhan-chia-6-9",
+    "sortOrder": 2
+  },
+  {
+    "id": "toan-3-nhan-chia-ba-chu-so",
+    "subjectId": "toan",
+    "grade": 3,
+    "name": "Nhân chia số có ba chữ số",
+    "slug": "nhan-chia-ba-chu-so",
+    "sortOrder": 3
+  },
+  {
+    "id": "toan-3-gap-va-giam",
+    "subjectId": "toan",
+    "grade": 3,
+    "name": "Gấp và giảm số lần",
+    "slug": "gap-va-giam",
+    "sortOrder": 4
+  },
+  {
+    "id": "toan-3-hinh-hoc-chu-vi",
+    "subjectId": "toan",
+    "grade": 3,
+    "name": "Hình học và chu vi",
+    "slug": "hinh-hoc-chu-vi",
+    "sortOrder": 5
+  },
+  {
+    "id": "toan-3-do-luong",
+    "subjectId": "toan",
+    "grade": 3,
+    "name": "Đo lường",
+    "slug": "do-luong",
+    "sortOrder": 6
+  },
+  {
+    "id": "tieng-viet-3-tu-chi-dac-diem",
+    "subjectId": "tieng-viet",
+    "grade": 3,
+    "name": "Từ chỉ đặc điểm",
+    "slug": "tu-chi-dac-diem",
+    "sortOrder": 1
+  },
+  {
+    "id": "tieng-viet-3-so-sanh",
+    "subjectId": "tieng-viet",
+    "grade": 3,
+    "name": "Biện pháp so sánh",
+    "slug": "so-sanh",
+    "sortOrder": 2
+  },
+  {
+    "id": "tieng-viet-3-nhan-hoa",
+    "subjectId": "tieng-viet",
+    "grade": 3,
+    "name": "Biện pháp nhân hóa",
+    "slug": "nhan-hoa",
+    "sortOrder": 3
+  },
+  {
+    "id": "tieng-viet-3-cau-ai-lam-gi",
+    "subjectId": "tieng-viet",
+    "grade": 3,
+    "name": "Câu kiểu Ai làm gì?",
+    "slug": "cau-ai-lam-gi",
+    "sortOrder": 4
+  },
+  {
+    "id": "tieng-viet-3-chinh-ta",
+    "subjectId": "tieng-viet",
+    "grade": 3,
+    "name": "Chính tả",
+    "slug": "chinh-ta",
+    "sortOrder": 5
+  },
+  {
+    "id": "tieng-viet-3-doc-hieu",
+    "subjectId": "tieng-viet",
+    "grade": 3,
+    "name": "Đọc hiểu",
+    "slug": "doc-hieu",
+    "sortOrder": 6
+  },
+  {
+    "id": "tieng-viet-3-dau-cau",
+    "subjectId": "tieng-viet",
+    "grade": 3,
+    "name": "Dấu câu",
+    "slug": "dau-cau",
+    "sortOrder": 7
+  },
+  {
+    "id": "tieng-anh-3-colors-shapes",
+    "subjectId": "tieng-anh",
+    "grade": 3,
+    "name": "Màu sắc và hình khối",
+    "slug": "colors-shapes",
+    "sortOrder": 1
+  },
+  {
+    "id": "tieng-anh-3-family-home",
+    "subjectId": "tieng-anh",
+    "grade": 3,
+    "name": "Gia đình và ngôi nhà",
+    "slug": "family-home",
+    "sortOrder": 2
+  },
+  {
+    "id": "tieng-anh-3-animals",
+    "subjectId": "tieng-anh",
+    "grade": 3,
+    "name": "Động vật",
+    "slug": "animals",
+    "sortOrder": 3
+  },
+  {
+    "id": "tieng-anh-3-food-drinks",
+    "subjectId": "tieng-anh",
+    "grade": 3,
+    "name": "Đồ ăn và thức uống",
+    "slug": "food-drinks",
+    "sortOrder": 4
+  },
+  {
+    "id": "tieng-anh-3-this-that",
+    "subjectId": "tieng-anh",
+    "grade": 3,
+    "name": "This, that, these, those",
+    "slug": "this-that",
+    "sortOrder": 5
+  },
+  {
+    "id": "tieng-anh-3-present-simple",
+    "subjectId": "tieng-anh",
+    "grade": 3,
+    "name": "Thì hiện tại đơn",
+    "slug": "present-simple",
+    "sortOrder": 6
+  },
+  {
+    "id": "toan-4-so-lon",
+    "subjectId": "toan",
+    "grade": 4,
+    "name": "Số lớn, hàng và lớp",
+    "slug": "so-lon",
+    "sortOrder": 1
+  },
+  {
+    "id": "toan-4-cong-tru",
+    "subjectId": "toan",
+    "grade": 4,
+    "name": "Cộng trừ số tự nhiên",
+    "slug": "cong-tru",
+    "sortOrder": 2
+  },
+  {
+    "id": "toan-4-nhan-chia",
+    "subjectId": "toan",
+    "grade": 4,
+    "name": "Nhân chia số tự nhiên",
+    "slug": "nhan-chia",
+    "sortOrder": 3
+  },
+  {
+    "id": "toan-4-phan-so",
+    "subjectId": "toan",
+    "grade": 4,
+    "name": "Phân số",
+    "slug": "phan-so",
+    "sortOrder": 4
+  },
+  {
+    "id": "toan-4-hinh-hoc",
+    "subjectId": "toan",
+    "grade": 4,
+    "name": "Hình học",
+    "slug": "hinh-hoc",
+    "sortOrder": 5
+  },
+  {
+    "id": "toan-4-trung-binh-cong",
+    "subjectId": "toan",
+    "grade": 4,
+    "name": "Trung bình cộng và biểu đồ",
+    "slug": "trung-binh-cong",
+    "sortOrder": 6
+  },
+  {
+    "id": "tieng-viet-4-tu-don-tu-ghep",
+    "subjectId": "tieng-viet",
+    "grade": 4,
+    "name": "Từ đơn và từ ghép",
+    "slug": "tu-don-tu-ghep",
+    "sortOrder": 1
+  },
+  {
+    "id": "tieng-viet-4-danh-tu-dong-tu-tinh-tu",
+    "subjectId": "tieng-viet",
+    "grade": 4,
+    "name": "Danh từ, động từ, tính từ",
+    "slug": "danh-tu-dong-tu-tinh-tu",
+    "sortOrder": 2
+  },
+  {
+    "id": "tieng-viet-4-cau-ai-the-nao",
+    "subjectId": "tieng-viet",
+    "grade": 4,
+    "name": "Câu kiểu Ai thế nào?",
+    "slug": "cau-ai-the-nao",
+    "sortOrder": 3
+  },
+  {
+    "id": "tieng-viet-4-chinh-ta",
+    "subjectId": "tieng-viet",
+    "grade": 4,
+    "name": "Chính tả",
+    "slug": "chinh-ta",
+    "sortOrder": 4
+  },
+  {
+    "id": "tieng-viet-4-doc-hieu",
+    "subjectId": "tieng-viet",
+    "grade": 4,
+    "name": "Đọc hiểu",
+    "slug": "doc-hieu",
+    "sortOrder": 5
+  },
+  {
+    "id": "tieng-viet-4-thanh-ngu",
+    "subjectId": "tieng-viet",
+    "grade": 4,
+    "name": "Thành ngữ, tục ngữ",
+    "slug": "thanh-ngu",
+    "sortOrder": 6
+  },
+  {
+    "id": "tieng-anh-4-school-subjects",
+    "subjectId": "tieng-anh",
+    "grade": 4,
+    "name": "Môn học ở trường",
+    "slug": "school-subjects",
+    "sortOrder": 1
+  },
+  {
+    "id": "tieng-anh-4-days-months",
+    "subjectId": "tieng-anh",
+    "grade": 4,
+    "name": "Ngày và tháng",
+    "slug": "days-months",
+    "sortOrder": 2
+  },
+  {
+    "id": "tieng-anh-4-weather",
+    "subjectId": "tieng-anh",
+    "grade": 4,
+    "name": "Thời tiết",
+    "slug": "weather",
+    "sortOrder": 3
+  },
+  {
+    "id": "tieng-anh-4-jobs",
+    "subjectId": "tieng-anh",
+    "grade": 4,
+    "name": "Nghề nghiệp",
+    "slug": "jobs",
+    "sortOrder": 4
+  },
+  {
+    "id": "tieng-anh-4-present-continuous",
+    "subjectId": "tieng-anh",
+    "grade": 4,
+    "name": "Thì hiện tại tiếp diễn",
+    "slug": "present-continuous",
+    "sortOrder": 5
+  },
+  {
+    "id": "tieng-anh-4-prepositions",
+    "subjectId": "tieng-anh",
+    "grade": 4,
+    "name": "Giới từ chỉ vị trí",
+    "slug": "prepositions",
+    "sortOrder": 6
+  },
+  {
+    "id": "toan-5-so-thap-phan",
+    "subjectId": "toan",
+    "grade": 5,
+    "name": "Số thập phân",
+    "slug": "so-thap-phan",
+    "sortOrder": 1
+  },
+  {
+    "id": "toan-5-cong-tru-thap-phan",
+    "subjectId": "toan",
+    "grade": 5,
+    "name": "Cộng trừ số thập phân",
+    "slug": "cong-tru-thap-phan",
+    "sortOrder": 2
+  },
+  {
+    "id": "toan-5-nhan-chia-thap-phan",
+    "subjectId": "toan",
+    "grade": 5,
+    "name": "Nhân chia số thập phân",
+    "slug": "nhan-chia-thap-phan",
+    "sortOrder": 3
+  },
+  {
+    "id": "toan-5-ti-so-phan-tram",
+    "subjectId": "toan",
+    "grade": 5,
+    "name": "Tỉ số phần trăm",
+    "slug": "ti-so-phan-tram",
+    "sortOrder": 4
+  },
+  {
+    "id": "toan-5-hinh-hoc",
+    "subjectId": "toan",
+    "grade": 5,
+    "name": "Diện tích và thể tích",
+    "slug": "hinh-hoc",
+    "sortOrder": 5
+  },
+  {
+    "id": "toan-5-do-luong-thoi-gian",
+    "subjectId": "toan",
+    "grade": 5,
+    "name": "Đo lường và thời gian",
+    "slug": "do-luong-thoi-gian",
+    "sortOrder": 6
+  },
+  {
+    "id": "toan-5-chuyen-dong",
+    "subjectId": "toan",
+    "grade": 5,
+    "name": "Toán chuyển động",
+    "slug": "chuyen-dong",
+    "sortOrder": 7
+  },
+  {
+    "id": "tieng-viet-5-tu-dong-nghia-trai-nghia",
+    "subjectId": "tieng-viet",
+    "grade": 5,
+    "name": "Từ đồng nghĩa, trái nghĩa",
+    "slug": "tu-dong-nghia-trai-nghia",
+    "sortOrder": 1
+  },
+  {
+    "id": "tieng-viet-5-dai-tu-quan-he-tu",
+    "subjectId": "tieng-viet",
+    "grade": 5,
+    "name": "Đại từ và quan hệ từ",
+    "slug": "dai-tu-quan-he-tu",
+    "sortOrder": 2
+  },
+  {
+    "id": "tieng-viet-5-cau-ghep",
+    "subjectId": "tieng-viet",
+    "grade": 5,
+    "name": "Câu ghép",
+    "slug": "cau-ghep",
+    "sortOrder": 3
+  },
+  {
+    "id": "tieng-viet-5-doc-hieu",
+    "subjectId": "tieng-viet",
+    "grade": 5,
+    "name": "Đọc hiểu",
+    "slug": "doc-hieu",
+    "sortOrder": 4
+  },
+  {
+    "id": "tieng-viet-5-chinh-ta",
+    "subjectId": "tieng-viet",
+    "grade": 5,
+    "name": "Chính tả",
+    "slug": "chinh-ta",
+    "sortOrder": 5
+  },
+  {
+    "id": "tieng-viet-5-tu-loai",
+    "subjectId": "tieng-viet",
+    "grade": 5,
+    "name": "Từ loại",
+    "slug": "tu-loai",
+    "sortOrder": 6
+  },
+  {
+    "id": "tieng-viet-5-thanh-ngu-tuc-ngu",
+    "subjectId": "tieng-viet",
+    "grade": 5,
+    "name": "Thành ngữ, tục ngữ",
+    "slug": "thanh-ngu-tuc-ngu",
+    "sortOrder": 7
+  },
+  {
+    "id": "tieng-anh-5-present-simple",
+    "subjectId": "tieng-anh",
+    "grade": 5,
+    "name": "Thì hiện tại đơn",
+    "slug": "present-simple",
+    "sortOrder": 1
+  },
+  {
+    "id": "tieng-anh-5-past-simple",
+    "subjectId": "tieng-anh",
+    "grade": 5,
+    "name": "Thì quá khứ đơn",
+    "slug": "past-simple",
+    "sortOrder": 2
+  },
+  {
+    "id": "tieng-anh-5-comparatives",
+    "subjectId": "tieng-anh",
+    "grade": 5,
+    "name": "So sánh hơn và so sánh nhất",
+    "slug": "comparatives",
+    "sortOrder": 3
+  },
+  {
+    "id": "tieng-anh-5-weather-seasons",
+    "subjectId": "tieng-anh",
+    "grade": 5,
+    "name": "Thời tiết và mùa",
+    "slug": "weather-seasons",
+    "sortOrder": 4
+  },
+  {
+    "id": "tieng-anh-5-hobbies",
+    "subjectId": "tieng-anh",
+    "grade": 5,
+    "name": "Sở thích",
+    "slug": "hobbies",
+    "sortOrder": 5
+  },
+  {
+    "id": "tieng-anh-5-daily-routines",
+    "subjectId": "tieng-anh",
+    "grade": 5,
+    "name": "Thói quen hằng ngày",
+    "slug": "daily-routines",
+    "sortOrder": 6
+  },
+  {
+    "id": "tieng-anh-5-prepositions",
+    "subjectId": "tieng-anh",
+    "grade": 5,
+    "name": "Giới từ",
+    "slug": "prepositions",
+    "sortOrder": 7
+  }
+]

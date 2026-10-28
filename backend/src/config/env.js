@@ -40,6 +40,12 @@ export const env = {
     name: 'tttnava_token',
     secure: process.env.COOKIE_SECURE === 'true',
   },
+  ai: {
+    enabled: process.env.AI_QUESTION_ENABLED === 'true',
+    url: process.env.AI_QUESTION_API_URL ?? '',
+    key: process.env.AI_QUESTION_API_KEY ?? '',
+    model: process.env.AI_QUESTION_MODEL ?? '',
+  },
   backendRoot,
 };
 

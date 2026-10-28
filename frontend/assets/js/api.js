@@ -48,7 +48,9 @@ export async function api(path, options = {}) {
     credentials: 'same-origin',
     headers: { Accept: 'application/json', ...headers },
   };
-  if (body !== undefined) {
+  if (body instanceof FormData) {
+    init.body = body;
+  } else if (body !== undefined) {
     init.headers['Content-Type'] = 'application/json';
     init.body = JSON.stringify(body);
   }

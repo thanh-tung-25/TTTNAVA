@@ -297,6 +297,7 @@
   padding: 1.2rem;
   box-shadow: 0 24px 60px rgba(20, 10, 50, 0.35);
 }
+.modal.modal-wide { width: min(900px, 100%); }
 .modal-head { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.8rem; }
 .modal-head h2 { margin: 0; font-size: 1.2rem; }
 .modal-actions { display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }

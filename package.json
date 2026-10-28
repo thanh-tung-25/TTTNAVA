@@ -10,9 +10,11 @@
     "test": "npm --prefix backend test",
     "test:e2e": "playwright test",
     "db:migrate": "npm --prefix backend run db:migrate",
-    "seed:questions": "npm --prefix backend run seed:questions",
-    "seed:admin": "npm --prefix backend run seed:admin",
-    "validate:questions": "npm --prefix backend run validate:questions",
-    "generate:questions": "npm --prefix backend run generate:questions"
+    "db:seed-catalog": "npm --prefix backend run db:seed-catalog",
+    "questions:legacy": "npm --prefix backend run questions:legacy",
+    "seed:admin": "npm --prefix backend run seed:admin"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1"
   }
 }

@@ -16,7 +16,12 @@
       <div>
         <p class="eyebrow">Quản trị</p>
         <h1>Ngân hàng câu hỏi</h1>
-        <p>Xem, sửa nội dung và ẩn câu hỏi. Mọi thay đổi đều được ghi lại.</p>
+        <p>Thêm, sửa, duyệt và ẩn câu hỏi. Học sinh chỉ nhận câu hỏi <strong>Đã đăng</strong>.</p>
+      </div>
+      <div class="actions">
+        <button class="btn" id="create-question" type="button">+ Thêm câu hỏi</button>
+        <button class="btn btn-ghost" id="import-questions" type="button">Nhập từ Word</button>
+        <a class="btn btn-ghost btn-sm" href="/assets/templates/mau-nhap-cau-hoi.docx" download>Tải file mẫu</a>
       </div>
     </div>
 
@@ -45,7 +50,8 @@
         </select>
         <select class="select" id="filter-status" aria-label="Trạng thái">
           <option value="">Tất cả trạng thái</option>
-          <option value="visible">Đang hiện</option>
+          <option value="draft">Nháp</option>
+          <option value="published">Đã đăng</option>
           <option value="hidden">Đang ẩn</option>
         </select>
         <input class="input" id="filter-q" type="search" placeholder="Tìm trong đề bài…" maxlength="100">

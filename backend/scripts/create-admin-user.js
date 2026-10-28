@@ -14,9 +14,14 @@ function randomPassword() {
 }
 
 async function main() {
-  const username = normalizeUsername(readArgument('username') ?? 'admin');
-  const password = readArgument('password') ?? process.env.ADMIN_PASSWORD ?? randomPassword();
-  const displayName = readArgument('name') ?? 'Cô giáo';
+  const username = normalizeUsername(
+    readArgument('username') || process.env.BOOTSTRAP_ADMIN_USERNAME || 'admin',
+  );
+  const password = readArgument('password')
+    || process.env.BOOTSTRAP_ADMIN_PASSWORD
+    || process.env.ADMIN_PASSWORD
+    || randomPassword();
+  const displayName = readArgument('name') || process.env.BOOTSTRAP_ADMIN_NAME || 'Cô giáo';
   const avatarKey = readArgument('avatar') ?? 'cu';
 
   if (!/^[a-z0-9_]{3,20}$/.test(username)) {
@@ -40,7 +45,7 @@ async function main() {
   );
 
   console.log(`Đã tạo quản trị viên "${username}" (${displayName}).`);
-  if (!readArgument('password') && !process.env.ADMIN_PASSWORD) {
+  if (!readArgument('password') && !process.env.BOOTSTRAP_ADMIN_PASSWORD && !process.env.ADMIN_PASSWORD) {
     console.log(`Mật khẩu tạm: ${password}`);
   }
   console.log('Hãy đổi mật khẩu sau lần đăng nhập đầu tiên.');

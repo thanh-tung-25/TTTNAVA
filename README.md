@@ -1,4 +1,4 @@
-# Bé Học Vui (TTTNAVA)
+# TTNAVA
 
 Ứng dụng web trắc nghiệm dành cho học sinh tiểu học, giao diện tiếng Việt, xây dựng bằng HTML/CSS/JavaScript thuần, Express, MySQL/MariaDB và Socket.IO.
 

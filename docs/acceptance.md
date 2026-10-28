@@ -1,4 +1,4 @@
-# Kiểm thử và nghiệm thu – Bé Học Vui
+# Kiểm thử và nghiệm thu – TTNAVA
 
 - Ngày nghiệm thu: **27/10/2026**
 - Môi trường: Windows, Node **v24.15.0**, npm **11.12.1**, MariaDB **10.4.32-MariaDB** (XAMPP), Chromium do Playwright quản lý.

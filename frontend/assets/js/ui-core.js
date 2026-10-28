@@ -34,7 +34,7 @@ function renderHeader(profile, role, active) {
   header.className = 'topbar';
   header.innerHTML = `
     <div class="topbar-inner">
-      <a class="brand" href="${home}"><span class="brand-mark" aria-hidden="true">✏️</span> Bé Học Vui</a>
+      <a class="brand" href="${home}"><img class="brand-mark" src="/assets/images/ttnava-logo.png" alt="" width="44" height="44"> TTNAVA</a>
       <div class="topbar-user">
         ${role === 'student' ? '<span class="diamond-chip" id="diamond-chip" title="Kim cương của con">💎 <span>…</span></span>' : ''}
         <img class="avatar" src="${avatarUrl(profile.avatarKey)}" alt="Ảnh đại diện của ${escapeHtml(profile.displayName)}">

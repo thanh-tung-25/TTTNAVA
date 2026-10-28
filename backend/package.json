@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "API Express + MySQL cho Be Hoc Vui",
+  "description": "API Express + MySQL cho TTNAVA",
   "engines": {
     "node": ">=22"
   },

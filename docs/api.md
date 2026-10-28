@@ -1,4 +1,4 @@
-# API – Bé Học Vui
+# API – TTNAVA
 
 Base URL: `http://localhost:3000/api/v1`
 

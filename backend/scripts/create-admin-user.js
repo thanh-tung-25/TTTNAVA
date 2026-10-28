@@ -10,7 +10,7 @@ function readArgument(name) {
 }
 
 function randomPassword() {
-  return `BeHocVui-${Math.random().toString(36).slice(2, 10)}`;
+  return `TTNAVA-${Math.random().toString(36).slice(2, 10)}`;
 }
 
 async function main() {

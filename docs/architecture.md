@@ -1,4 +1,4 @@
-# Kiến trúc – Bé Học Vui
+# Kiến trúc – TTNAVA
 
 ## 1. Tổng quan
 

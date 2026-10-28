@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Be Hoc Vui - web app trac nghiem cho hoc sinh tieu hoc (HTML/CSS/JS thuan + Express + MySQL)",
+  "description": "TTNAVA - web app trac nghiem cho hoc sinh tieu hoc (HTML/CSS/JS thuan + Express + MySQL)",
   "scripts": {
     "dev": "npm --prefix backend run dev",
     "start": "npm --prefix backend start",

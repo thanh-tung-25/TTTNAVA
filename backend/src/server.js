@@ -9,7 +9,7 @@ const server = http.createServer(app);
 const io = createRealtimeServer(server);
 
 server.listen(env.port, () => {
-  console.log(`Bé Học Vui đang chạy tại ${env.appOrigin} (cổng ${env.port})`);
+  console.log(`TTNAVA đang chạy tại ${env.appOrigin} (cổng ${env.port})`);
 });
 
 function shutdown(signal) {

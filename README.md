@@ -3,8 +3,8 @@
 Ứng dụng web trắc nghiệm dành cho học sinh tiểu học, giao diện tiếng Việt, xây dựng bằng HTML/CSS/JavaScript thuần, Express, MySQL/MariaDB và Socket.IO.
 
 - **Học sinh:** luyện tập theo chủ đề, thi thử có giới hạn thời gian, thách đấu Robot hoặc bạn bè 1–1 theo thời gian thực, xem lịch sử, kim cương và bảng xếp hạng.
-- **Quản trị viên:** tạo và quản lý tài khoản học sinh, khoá/mở khoá, đặt lại mật khẩu, duyệt và sửa ngân hàng câu hỏi, xem thống kê.
-- **Không có:** đăng ký tự do, cửa hàng, cá cược, gọi AI lúc chạy, học phí hoặc nội dung Kĩ năng sống.
+- **Quản trị viên:** tạo và quản lý tài khoản học sinh, khoá/mở khoá, đặt lại mật khẩu; tổ chức ngân hàng câu hỏi theo năm học → khối lớp → học kỳ → môn → chương → bài học; tạo/sửa/nhập/duyệt/ẩn câu hỏi; xem thống kê.
+- **Không có:** đăng ký tự do, cửa hàng, cá cược, học phí hoặc nội dung Kĩ năng sống. AI chỉ chạy khi admin bấm nút và đã cấu hình riêng; mặc định tắt.
 
 Tài liệu chi tiết: [Kiến trúc](docs/architecture.md) · [API](docs/api.md) · [Kiểm thử và nghiệm thu](docs/acceptance.md)
 
@@ -35,23 +35,23 @@ Tài liệu chi tiết: [Kiến trúc](docs/architecture.md) · [API](docs/api.m
 ```text
 TTTNAVA/
 ├─ backend/
-│  ├─ scripts/              # migrate, sinh/nhập/kiểm tra câu hỏi, tạo admin
-│  ├─ seed-data/            # subjects.json + 91 module câu hỏi theo chủ đề
-│  ├─ sql/migrations/       # 7 migration SQL
+│  ├─ scripts/              # migrate, đồng bộ danh mục, xử lý câu hỏi cũ, tạo admin
+│  ├─ seed-data/            # subjects.json, topics.json, curriculum.json
+│  ├─ sql/migrations/       # 12 migration SQL
 │  ├─ src/
 │  │  ├─ config/            # env, mysql2 pool
 │  │  ├─ controllers/       # xử lý HTTP
-│  │  ├─ middlewares/       # auth, phân quyền, same-origin, rate limit, lỗi
+│  │  ├─ middlewares/       # auth, phân quyền, same-origin, upload, rate limit, lỗi
 │  │  ├─ realtime/          # Socket.IO và emit sự kiện
 │  │  ├─ routes/            # /api/v1/*
 │  │  ├─ services/          # nghiệp vụ, chia nhỏ theo miền
 │  │  ├─ utils/             # JWT, chuẩn hoá, thời gian, serializers
 │  │  └─ validators/        # schema Zod
-│  └─ tests/                # 9 file Vitest + fixture/helper
+│  └─ tests/                # 12 file Vitest + fixture/helper
 ├─ frontend/
-│  ├─ assets/{css,js,avatars}/
+│  ├─ assets/{css,js,avatars,templates}/
 │  └─ pages/{login,student,admin}/
-├─ e2e/                     # 16 test Playwright desktop + mobile
+├─ e2e/                     # 22 test Playwright desktop + mobile
 ├─ docs/
 ├─ playwright.config.js
 └─ package.json
@@ -82,13 +82,15 @@ node -e "console.log(require('node:crypto').randomBytes(48).toString('hex'))"
 # 4. Tạo cơ sở dữ liệu chính (migration không tự tạo database)
 & 'E:\xampp_server\mysql\bin\mysql.exe' -u root -e "CREATE DATABASE IF NOT EXISTS kids_learning CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
 
-# 5. Chạy migration, nhập câu hỏi và tạo admin đầu tiên
+# 5. Chạy migration, đồng bộ danh mục/chương trình và tạo admin đầu tiên
 npm run db:migrate
-npm run seed:questions
+npm run db:seed-catalog
 cd backend
 npm run seed:admin -- --username=admin --password="MatKhauManh123" --name="Cô giáo"
 cd ..
 ```
+
+`db:seed-catalog` chỉ đồng bộ 3 môn, 91 chủ đề, năm học và cây chương trình (30 chương, 91 bài học). Lệnh này **không nhập câu hỏi mẫu**.
 
 Có thể đặt sẵn `BOOTSTRAP_ADMIN_USERNAME`, `BOOTSTRAP_ADMIN_PASSWORD`, `BOOTSTRAP_ADMIN_NAME` trong `backend/.env` thay cho tham số dòng lệnh. Không commit `backend/.env`.
 
@@ -104,6 +106,10 @@ Có thể đặt sẵn `BOOTSTRAP_ADMIN_USERNAME`, `BOOTSTRAP_ADMIN_PASSWORD`, `
 | `JWT_SECRET` | Bắt buộc, tối thiểu 32 ký tự |
 | `JWT_EXPIRES_IN` | Thời hạn token, mặc định `7d` |
 | `COOKIE_SECURE` | `true` khi chạy HTTPS production |
+| `AI_QUESTION_ENABLED` | Bật/tắt nút tạo câu hỏi bằng AI, mặc định `false` |
+| `AI_QUESTION_API_URL` | Endpoint Chat Completions tương thích OpenAI; chỉ dùng khi admin bấm nút |
+| `AI_QUESTION_API_KEY` | Khoá dịch vụ AI, không trả về frontend |
+| `AI_QUESTION_MODEL` | Tên model AI |
 | `BOOTSTRAP_ADMIN_*` | Chỉ dùng cho script tạo admin đầu tiên |
 
 ## Chạy ứng dụng
@@ -116,20 +122,42 @@ npm start
 
 Mở <http://localhost:3000>. Đăng nhập bằng tài khoản admin vừa tạo, sau đó tạo học sinh tại **Quản trị → Học sinh**. Không có màn hình đăng ký công khai.
 
-### Câu hỏi
+### Ngân hàng câu hỏi
 
-- Ngân hàng hiện có **3 môn, 91 chủ đề, 5.263 câu hỏi**.
-- `npm run validate:questions` kiểm tra cấu trúc, số lượng và tính duy nhất.
-- `npm run generate:questions` sinh lại nội dung xác định ở thời điểm phát triển; không gọi AI lúc chạy.
+Trang **Quản trị → Câu hỏi** dùng cây chương trình thật từ MySQL:
+
+```text
+Năm học → Khối lớp 1–5 → Học kỳ → Môn học → Chương/chủ đề → Bài học
+```
+
+- Số cạnh mỗi nhánh là số câu hỏi đã truy vấn theo đúng phạm vi; nhánh thu gọn/mở rộng được.
+- Khi chưa chọn mục, trang chỉ hiển thị hướng dẫn, không tải toàn bộ câu hỏi của mọi lớp.
+- Chọn chương/bài học để xem breadcrumb, tìm theo nội dung hoặc mã, lọc độ khó/loại/trạng thái và phân trang.
+- **Tạo câu hỏi** mở form theo đúng thứ tự cấp chương trình; đổi cấp trên sẽ tải lại và loại bỏ lựa chọn cấp dưới không còn hợp lệ.
+- **Nhập từ Word** dùng mẫu `frontend/assets/templates/mau-nhap-cau-hoi.docx`; admin xem/sửa bản xem trước, chọn đúng bài học rồi lưu. Mọi câu nhập đều ở trạng thái **Nháp**.
+- Chỉ câu **Đã đăng** được học sinh nhận. Câu Nháp/Đang ẩn không xuất hiện trong luyện tập, thi hoặc thách đấu.
+- Câu hỏi cũ trong database vẫn được giữ nguyên. Nếu muốn xem/khôi phục trạng thái câu cũ, dùng công cụ riêng:
+
+```powershell
+npm run questions:legacy -- --preview
+npm run questions:legacy -- --archive
+npm run questions:legacy -- --restore="backend/backups/legacy-question-status-....json"
+```
+
+`--archive` là thao tác chủ động, có xuất JSON sao lưu trước khi thay đổi; migration không tự xoá hay đổi trạng thái hàng loạt.
+
+### AI (tuỳ chọn)
+
+AI không chạy tự động và không tạo câu hỏi ngầm. Nếu bật `AI_QUESTION_ENABLED=true` và cấu hình endpoint/model, admin có thể chủ động gửi tài liệu Word chỉ có kiến thức để tạo bản nháp; kết quả vẫn phải qua bước xem/sửa và lưu Nháp. Khi chưa cấu hình, API trả `503 AI_NOT_CONFIGURED` và giao diện hiển thị thông báo.
 
 ## Kiểm thử
 
 ```powershell
-# Backend: 9 file, 69 test; tự tạo/migrate/seed database kids_learning_test
+# Backend: 12 file, 93 test; tự tạo/migrate/seed database kids_learning_test
 cd backend
 npx vitest run --config vitest.config.js
 
-# E2E: 16 test trên Chromium desktop + mobile 360 px
+# E2E: 22 test trên Chromium desktop + mobile 360 px
 cd ..
 npx playwright test
 ```
@@ -149,6 +177,7 @@ Playwright tự tạo người dùng `e2e_admin`, `e2e_lan`, `e2e_minh`, storage
 - Phân quyền: `authenticateToken`, `requireStudent`, `requireAdmin`.
 - Mọi thao tác ghi yêu cầu same-origin; request JSON được kiểm tra bằng Zod.
 - Socket.IO dùng chung cookie đăng nhập và phát sự kiện `challenge:invite`, `challenge:updated`, `challenge:finished`.
+- Trang câu hỏi dùng `GET /api/v1/admin/curriculum/tree?yearId=2026-2027` để lấy cây và số đếm, và `GET /api/v1/admin/questions?chapterId=...` hoặc `?lessonId=...` kèm phạm vi năm/lớp/học kỳ/môn. API danh sách từ chối request không có phạm vi (`VALIDATION_ERROR`).
 
 Danh sách endpoint đầy đủ ở [docs/api.md](docs/api.md).
 
@@ -171,3 +200,7 @@ Danh sách endpoint đầy đủ ở [docs/api.md](docs/api.md).
 ## Trạng thái nghiệm thu
 
 Xem [docs/acceptance.md](docs/acceptance.md) để biết phạm vi đã kiểm chứng, kết quả lệnh và các mục còn lại.
+
+## Lộ trình Tiếng Trung
+
+Lộ trình HSK 1–9 độc lập: quản trị bài/bộ theo từng file Word, thẻ lật, sổ từ, ôn cách quãng, luyện tập, kiểm tra và tiến độ theo tài khoản. Xem [hướng dẫn Tiếng Trung](docs/chinese.md) để chạy migration, sử dụng mẫu Word, xem danh sách file và kết quả kiểm thử.

@@ -11,6 +11,7 @@ export async function load() {
   try {
     const params = new URLSearchParams({ page: store.page, limit: 20 });
     if (store.search) params.set('q', store.search);
+    if (store.program) params.set('program', store.program);
     const payload = await api(`/api/v1/admin/students?${params}`);
     store.studentsById = new Map(payload.data.map((student) => [student.id, student]));
     store.totalPages = Math.max(1, Math.ceil(payload.pagination.total / payload.pagination.limit));

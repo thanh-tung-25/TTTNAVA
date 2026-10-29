@@ -9,9 +9,11 @@ import {
   updateQuestion,
 } from '../services/admin-service.js';
 import { aiQuestionConfig, generateQuestionsWithAi } from '../services/ai-question-service.js';
+import { getCurriculumTree } from '../services/curriculum-service.js';
 import { extractDocxQuestions, extractDocxText } from '../services/docx-import-service.js';
 import {
   createQuestionSchema,
+  curriculumTreeQuerySchema,
   importQuestionsSchema,
   questionListQuerySchema,
   updateQuestionSchema,
@@ -21,7 +23,16 @@ export const listQuestionsHandler = asyncHandler(async (request, response) => {
   const { page, limit } = parsePagination(request.query);
   const filters = questionListQuerySchema.parse(request.query);
   const result = await listQuestions(filters, page, limit);
-  response.json({ data: result.items, pagination: { page, limit, total: result.total } });
+  response.json({
+    data: result.items,
+    pagination: { page, limit, total: result.total },
+    scope: result.scope,
+  });
+});
+
+export const curriculumTreeHandler = asyncHandler(async (request, response) => {
+  const { yearId } = curriculumTreeQuerySchema.parse(request.query);
+  response.json({ data: await getCurriculumTree(yearId) });
 });
 
 export const questionDetailHandler = asyncHandler(async (request, response) => {
@@ -46,7 +57,7 @@ export const importConfigHandler = asyncHandler(async (_request, response) => {
   response.json({
     data: {
       ai: aiQuestionConfig(),
-      maxFileBytes: 5 * 1024 * 1024,
+      maxFileBytes: 20 * 1024 * 1024,
       acceptedExtension: '.docx',
       maxQuestionsPerImport: 100,
     },

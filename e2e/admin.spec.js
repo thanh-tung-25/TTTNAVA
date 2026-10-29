@@ -4,6 +4,21 @@ import { test, expect } from '@playwright/test';
 test.use({ storageState: 'e2e/.auth/admin.json' });
 
 const DOCX_PATH = path.resolve('frontend/assets/templates/mau-nhap-cau-hoi.docx');
+const FIXTURE_CHAPTER_ID = 'chapter-toan-3-hk1';
+const FIXTURE_LESSON_ID = 'lesson-toan-3-cong-tru-1000';
+
+async function openFixtureLesson(page) {
+  await page.goto('/pages/admin/questions/');
+  await page.locator('.tree-grade[data-tree-grade="3"]').evaluate((node) => { node.open = true; });
+  const semester = page.locator('.tree-semester[data-tree-grade="3"][data-tree-semester="hk1"]');
+  await semester.evaluate((node) => { node.open = true; });
+  const subject = semester.locator('.tree-subject[data-tree-subject="toan"]');
+  await subject.evaluate((node) => { node.open = true; });
+  const chapter = page.locator(`.tree-chapter[data-tree-chapter="${FIXTURE_CHAPTER_ID}"]`);
+  await chapter.evaluate((node) => { node.open = true; });
+  await page.locator(`[data-select-lesson="${FIXTURE_LESSON_ID}"]`).click();
+  await expect(page.locator('#question-breadcrumb')).toContainText('Lớp 3');
+}
 
 test.describe('Quản trị', () => {
   test('test_e2e_admin_students_page_creates_and_lists_student', async ({ page }) => {
@@ -27,8 +42,16 @@ test.describe('Quản trị', () => {
     await expect(page.locator('#students-table')).toContainText(`@${username}`);
   });
 
-  test('test_e2e_admin_questions_page_lists_and_opens_detail', async ({ page }) => {
+  test('test_e2e_admin_questions_page_requires_scope_selection', async ({ page }) => {
     await page.goto('/pages/admin/questions/');
+    await expect(page.locator('#scope-empty')).toBeVisible();
+    await expect(page.locator('#scope-empty')).toContainText('Chọn mục chương trình');
+    await expect(page.locator('#scope-content')).toBeHidden();
+    await expect(page.locator('#curriculum-tree .tree-year')).toBeVisible();
+  });
+
+  test('test_e2e_admin_questions_page_lists_and_opens_detail', async ({ page }) => {
+    await openFixtureLesson(page);
     await expect(page.locator('#questions-table tbody tr').first()).toBeVisible();
     await expect(page.locator('#page-label')).toContainText('câu');
     await page.locator('#filter-type').selectOption('single_choice');
@@ -45,13 +68,10 @@ test.describe('Quản trị', () => {
 
   test('test_e2e_admin_question_create_draft_and_publish', async ({ page }) => {
     const prompt = `E2E câu hỏi ${Date.now().toString().slice(-6)}: 12 + 8 = ?`;
-    await page.goto('/pages/admin/questions/');
+    await openFixtureLesson(page);
     await page.locator('#create-question').click();
-    await expect(page.locator('.modal [data-topic]')).toBeVisible();
-    await page.locator('.modal [data-subject]').selectOption('toan');
-    await page.locator('.modal [data-grade]').selectOption('3');
-    await expect(page.locator('.modal [data-topic] option[value="toan-3-cong-tru-1000"]')).toBeAttached();
-    await page.locator('.modal [data-topic]').selectOption('toan-3-cong-tru-1000');
+    await expect(page.locator('.modal [data-scope="lessonId"]')).toBeVisible();
+    await expect(page.locator('.modal [data-scope="lessonId"]')).toHaveValue(FIXTURE_LESSON_ID);
     await page.locator('.modal [data-prompt]').fill(prompt);
     const options = page.locator('.modal [data-option-text]');
     await options.nth(0).fill('20');
@@ -77,15 +97,14 @@ test.describe('Quản trị', () => {
   });
 
   test('test_e2e_admin_question_import_docx_saves_drafts', async ({ page }) => {
-    await page.goto('/pages/admin/questions/');
+    await openFixtureLesson(page);
     await page.locator('#import-questions').click();
     await expect(page.locator('#docx-file')).toBeVisible();
     await page.locator('#docx-file').setInputFiles(DOCX_PATH);
     await page.locator('[data-read]').click();
     await expect(page.locator('[data-import-status]')).toContainText('Đọc được 4 câu hỏi nháp');
     await expect(page.locator('.import-question-card')).toHaveCount(4);
-    await expect(page.locator('[data-topic] option[value="toan-3-cong-tru-1000"]')).toBeAttached();
-    await page.locator('[data-topic]').selectOption('toan-3-cong-tru-1000');
+    await page.locator('.modal [data-scope="lessonId"]').selectOption(FIXTURE_LESSON_ID);
     await page.locator('[data-save]').click();
 
     await expect(page.locator('.modal')).toHaveCount(0);

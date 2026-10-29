@@ -5,6 +5,12 @@ export const elements = {
   pageLabel: document.getElementById('page-label'),
   prevButton: document.getElementById('prev-page'),
   nextButton: document.getElementById('next-page'),
+  tree: document.getElementById('curriculum-tree'),
+  treeYear: document.getElementById('tree-year'),
+  treeRefresh: document.getElementById('tree-refresh'),
+  breadcrumb: document.getElementById('question-breadcrumb'),
+  empty: document.getElementById('scope-empty'),
+  content: document.getElementById('scope-content'),
 };
 
 export const TYPE_LABELS = {
@@ -27,13 +33,14 @@ export const AUDIT_LABELS = {
 export const store = {
   page: 1,
   totalPages: 1,
-  subjects: [],
+  tree: null,
+  selectedScope: null,
+  loading: false,
 };
 
 export function filters() {
   return {
-    subjectId: document.getElementById('filter-subject').value,
-    grade: document.getElementById('filter-grade').value,
+    difficulty: document.getElementById('filter-difficulty').value,
     type: document.getElementById('filter-type').value,
     status: document.getElementById('filter-status').value,
     q: document.getElementById('filter-q').value.trim(),
@@ -52,14 +59,17 @@ export function row(question) {
     ? `<button class="btn btn-danger btn-sm" data-hide="${escapeHtml(question.id)}" type="button">Ẩn</button>`
     : `<button class="btn btn-ghost btn-sm" data-publish="${escapeHtml(question.id)}" type="button">${question.status === 'hidden' ? 'Đăng lại' : 'Đăng'}</button>`;
   const updated = question.updaterName
-    ? `${escapeHtml(question.updaterName)} · ${formatDate(question.updatedAt)}`
+    ? `${escapeHtml(question.updaterName)}<br><span class="muted">${formatDate(question.updatedAt)}</span>`
     : formatDate(question.updatedAt);
+  const chapter = question.chapterName ?? question.topicName;
   return `
     <tr>
+      <td><span class="question-code" title="${escapeHtml(question.id)}">#${escapeHtml(question.id.slice(0, 8).toUpperCase())}</span></td>
       <td class="prompt-cell" title="${escapeHtml(question.prompt)}"><span>${escapeHtml(question.prompt)}</span></td>
-      <td>${escapeHtml(question.topicName)}<br><span class="muted">Lớp ${question.grade} · ${escapeHtml(question.subjectName)}</span></td>
-      <td>${TYPE_LABELS[question.type] ?? question.type}<br><span class="muted">${DIFFICULTY_LABELS[question.difficulty]}</span></td>
-      <td>${statusBadge(question.status)}<br><span class="muted" style="font-size:.75rem">${updated}</span></td>
+      <td>${escapeHtml(question.subjectName ?? '')}<br><span class="muted">${escapeHtml(chapter ?? '')}</span></td>
+      <td><span class="badge badge-muted">${DIFFICULTY_LABELS[question.difficulty] ?? question.difficulty}</span></td>
+      <td>${statusBadge(question.status)}</td>
+      <td>${updated}</td>
       <td>
         <div class="actions">
           <button class="btn btn-ghost btn-sm" data-view="${escapeHtml(question.id)}" type="button">Xem / Sửa</button>

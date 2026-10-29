@@ -1,18 +1,24 @@
-import { api, escapeHtml } from '/assets/js/api.js';
+import { escapeHtml } from '/assets/js/api.js';
 import { toast } from '/assets/js/ui.js';
 import { DIFFICULTY_LABELS, TYPE_LABELS } from './admin-questions-context.js';
+import {
+  bindScopeControls,
+  defaultScopeIds,
+  readScopeIds,
+  scopeControlsHtml,
+} from './admin-question-scope.js';
 
 const STATUS_LABELS = { draft: 'Nháp', published: 'Đã đăng', hidden: 'Đang ẩn' };
 const DEFAULT_OPTIONS = [
   { key: 'a', text: '' }, { key: 'b', text: '' }, { key: 'c', text: '' }, { key: 'd', text: '' },
 ];
 
-function optionRow(option, index, type, checked) {
-  const inputType = type === 'single_choice' ? 'radio' : 'checkbox';
-  const name = type === 'single_choice' ? 'answerKey' : 'answerKeys';
+function optionRow(option, type, checked) {
   return `
     <div class="question-option-row" data-option-row data-option-key="${option.key}">
-      <input type="${inputType}" name="${name}" value="${option.key}"${checked ? ' checked' : ''}
+      <input type="${type === 'single_choice' ? 'radio' : 'checkbox'}"
+             name="${type === 'single_choice' ? 'answerKey' : 'answerKeys'}"
+             value="${option.key}"${checked ? ' checked' : ''}
              aria-label="Đáp án đúng ${option.key.toUpperCase()}">
       <span class="badge" data-option-label>${option.key.toUpperCase()}</span>
       <input class="input" data-option-text maxlength="500" value="${escapeHtml(option.text)}" placeholder="Nội dung phương án">
@@ -44,44 +50,11 @@ function answerArea(type, question) {
     <fieldset class="field" style="border:0;padding:0;margin:0 0 .85rem">
       <legend style="font-weight:600;font-size:.88rem;margin-bottom:.3rem">Phương án và đáp án đúng</legend>
       <div data-option-list>
-        ${options.map((option, index) => optionRow(option, index, type, answers.includes(option.key))).join('')}
+        ${options.map((option) => optionRow(option, type, answers.includes(option.key))).join('')}
       </div>
       <button class="btn btn-ghost btn-sm" type="button" data-add-option>+ Thêm phương án</button>
       <p class="hint">${type === 'single_choice' ? 'Chọn một đáp án đúng (2–4 phương án).' : 'Chọn 2 đáp án trở lên, không chọn tất cả (3–5 phương án).'}</p>
     </fieldset>`;
-}
-
-function fillTopics(form, topics, selectedId) {
-  const select = form.querySelector('[data-topic]');
-  select.innerHTML = topics.length
-    ? topics.map((topic) => `<option value="${escapeHtml(topic.id)}"${topic.id === selectedId ? ' selected' : ''}>${escapeHtml(topic.name)} (${topic.questionCount} đã đăng)</option>`).join('')
-    : '<option value="">Chủ đề này chưa có câu hỏi</option>';
-}
-
-export async function refreshTopics(form, selectedId = '') {
-  const subjectId = form.querySelector('[data-subject]').value;
-  const grade = form.querySelector('[data-grade]').value;
-  const select = form.querySelector('[data-topic]');
-  select.innerHTML = '<option value="">Đang tải chủ đề…</option>';
-  try {
-    const payload = await api(`/api/v1/catalog/topics?subjectId=${encodeURIComponent(subjectId)}&grade=${grade}`);
-    fillTopics(form, payload.data, selectedId);
-  } catch (error) {
-    select.innerHTML = `<option value="">Không tải được chủ đề: ${escapeHtml(error.message)}</option>`;
-  }
-}
-
-function bindDynamicFields(form) {
-  form.addEventListener('click', (event) => {
-    if (event.target.closest('[data-add-option]')) addOption(form);
-    const remove = event.target.closest('[data-remove-option]');
-    if (remove) removeOption(form, remove.closest('[data-option-row]'));
-  });
-  form.querySelector('[data-type]').addEventListener('change', (event) => {
-    form.querySelector('[data-answer-area]').innerHTML = answerArea(event.target.value, {});
-  });
-  form.querySelector('[data-subject]').addEventListener('change', () => refreshTopics(form));
-  form.querySelector('[data-grade]').addEventListener('change', () => refreshTopics(form));
 }
 
 function reindexOptions(form) {
@@ -101,7 +74,7 @@ function addOption(form) {
     return;
   }
   const key = String.fromCharCode(97 + form.querySelectorAll('[data-option-row]').length);
-  form.querySelector('[data-option-list]').insertAdjacentHTML('beforeend', optionRow({ key, text: '' }, 0, type, false));
+  form.querySelector('[data-option-list]').insertAdjacentHTML('beforeend', optionRow({ key, text: '' }, type, false));
 }
 
 function removeOption(form, row) {
@@ -109,26 +82,28 @@ function removeOption(form, row) {
   reindexOptions(form);
 }
 
-export function createQuestionForm(question, subjects) {
+function bindDynamicFields(form) {
+  form.addEventListener('click', (event) => {
+    if (event.target.closest('[data-add-option]')) addOption(form);
+    const remove = event.target.closest('[data-remove-option]');
+    if (remove) removeOption(form, remove.closest('[data-option-row]'));
+  });
+  form.querySelector('[data-type]').addEventListener('change', (event) => {
+    form.querySelector('[data-answer-area]').innerHTML = answerArea(event.target.value, {});
+  });
+}
+
+export function createQuestionForm(question, tree) {
   const data = {
-    subjectId: 'toan', grade: 3, topicId: '', type: 'single_choice', prompt: '',
-    options: DEFAULT_OPTIONS, answer: { key: 'a' }, explanation: '',
-    difficulty: 'medium', status: 'draft', ...question,
+    type: 'single_choice', prompt: '', options: DEFAULT_OPTIONS, answer: { key: 'a' },
+    explanation: '', difficulty: 'medium', status: 'draft', ...question,
   };
   const form = document.createElement('form');
   form.className = 'question-form';
   form.dataset.imageUrl = data.imageUrl ?? '';
   form.innerHTML = `
     <div class="form-error hidden" data-error role="alert"></div>
-    <div class="grid grid-3">
-      <div class="field"><label>Môn học</label><select class="select" data-subject>
-        ${subjects.map((subject) => `<option value="${subject.id}"${subject.id === data.subjectId ? ' selected' : ''}>${escapeHtml(subject.name)}</option>`).join('')}
-      </select></div>
-      <div class="field"><label>Khối lớp</label><select class="select" data-grade>
-        ${[1, 2, 3, 4, 5].map((grade) => `<option value="${grade}"${grade === data.grade ? ' selected' : ''}>Lớp ${grade}</option>`).join('')}
-      </select></div>
-      <div class="field"><label>Chủ đề</label><select class="select" data-topic><option value="${escapeHtml(data.topicId)}">Đang tải chủ đề…</option></select></div>
-    </div>
+    ${scopeControlsHtml(tree, defaultScopeIds(tree, data))}
     <div class="grid grid-2">
       <div class="field"><label>Loại câu hỏi</label><select class="select" data-type>
         ${Object.entries(TYPE_LABELS).map(([value, label]) => `<option value="${value}"${value === data.type ? ' selected' : ''}>${label}</option>`).join('')}
@@ -144,16 +119,14 @@ export function createQuestionForm(question, subjects) {
       ${Object.entries(STATUS_LABELS).map(([value, label]) => `<option value="${value}"${value === data.status ? ' selected' : ''}>${label}</option>`).join('')}
     </select><p class="hint">Học sinh chỉ nhận câu hỏi “Đã đăng”.</p></div>`;
   bindDynamicFields(form);
-  refreshTopics(form, data.topicId);
+  bindScopeControls(form, tree, readScopeIds(form));
   return form;
 }
 
 export function collectQuestionPayload(form) {
   const type = form.querySelector('[data-type]').value;
   const payload = {
-    topicId: form.querySelector('[data-topic]').value,
-    subjectId: form.querySelector('[data-subject]').value,
-    grade: Number(form.querySelector('[data-grade]').value),
+    ...readScopeIds(form),
     type,
     prompt: form.querySelector('[data-prompt]').value.trim(),
     explanation: form.querySelector('[data-explanation]').value.trim(),
@@ -182,6 +155,6 @@ export function collectQuestionPayload(form) {
       accepted: form.querySelector('[data-answer-fill]').value.split('\n').map((line) => line.trim()).filter(Boolean),
     };
   }
-  if (!payload.topicId) throw new Error('Vui lòng chọn chủ đề cho câu hỏi');
+  if (!payload.lessonId) throw new Error('Vui lòng chọn bài học cho câu hỏi');
   return payload;
 }

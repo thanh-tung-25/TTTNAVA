@@ -1,25 +1,9 @@
-import { query } from '../config/db.js';
 import { AppError } from '../utils/errors.js';
 
 export function normalizeQuestionStatus(row) {
   if (row.status === 'hidden') return 'hidden';
   if (row.status === 'published') return 'published';
   return 'draft';
-}
-
-export async function assertTopicSelection({ topicId, subjectId, grade }) {
-  const rows = await query(
-    'SELECT id, subject_id, grade FROM topics WHERE id = ? LIMIT 1',
-    [topicId],
-  );
-  if (!rows[0]) throw new AppError(404, 'TOPIC_NOT_FOUND', 'Chủ đề không tồn tại');
-  if (subjectId && rows[0].subject_id !== subjectId) {
-    throw new AppError(400, 'TOPIC_SUBJECT_MISMATCH', 'Chủ đề không thuộc môn học đã chọn');
-  }
-  if (grade && Number(rows[0].grade) !== Number(grade)) {
-    throw new AppError(400, 'TOPIC_GRADE_MISMATCH', 'Chủ đề không thuộc khối lớp đã chọn');
-  }
-  return rows[0];
 }
 
 export function validateQuestionPayload(type, payload) {

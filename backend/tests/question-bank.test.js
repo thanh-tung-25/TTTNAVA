@@ -39,6 +39,21 @@ describe('Danh mục và dữ liệu kiểm thử câu hỏi', () => {
     expect(subjects.map((row) => row.subject_id)).toEqual(['tieng-anh', 'tieng-viet', 'toan']);
   });
 
+  test('test_question_bank_curriculum_tree_covers_catalog', async () => {
+    const years = await query('SELECT COUNT(*) AS total FROM school_years');
+    const chapters = await query('SELECT COUNT(*) AS total FROM curriculum_chapters');
+    const lessons = await query('SELECT COUNT(*) AS total FROM curriculum_lessons');
+    const uncovered = await query(
+      `SELECT COUNT(*) AS total FROM topics t
+       LEFT JOIN curriculum_lessons l ON l.topic_id = t.id
+       WHERE l.id IS NULL`,
+    );
+    expect(Number(years[0].total)).toBe(1);
+    expect(Number(chapters[0].total)).toBe(30);
+    expect(Number(lessons[0].total)).toBe(91);
+    expect(Number(uncovered[0].total)).toBe(0);
+  });
+
   test('test_question_bank_fixture_every_question_has_answer_and_options', async () => {
     const missing = await query(
       `SELECT COUNT(*) AS total FROM questions q

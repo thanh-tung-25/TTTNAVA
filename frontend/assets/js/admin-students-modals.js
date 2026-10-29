@@ -21,10 +21,11 @@ export function openCreate() {
       <input class="input" id="new-password" name="password" type="text" maxlength="72" minlength="6" placeholder="Ít nhất 6 ký tự" required></div>
     <div class="grid grid-2">
       <div class="field"><label for="new-grade">Lớp</label>
-        <select class="select" id="new-grade" name="grade">${[1, 2, 3, 4, 5].map((grade) => `<option value="${grade}">Lớp ${grade}</option>`).join('')}</select></div>
+        <select class="select" id="new-grade" name="grade"><option value="">Tiếng Trung — không theo lớp 1–5</option>${[1, 2, 3, 4, 5].map((grade) => `<option value="${grade}">Lớp ${grade}</option>`).join('')}</select></div>
       <div class="field"><label for="new-avatar">Ảnh đại diện</label>
         <select class="select" id="new-avatar" name="avatarKey">${avatarOptions('meo')}</select></div>
     </div>`;
+  form.querySelector('#new-grade').value = new URLSearchParams(location.search).get('program') === 'chinese' ? '' : '1';
   const modal = openModal({
     title: 'Thêm học sinh',
     content: form,
@@ -43,7 +44,7 @@ export function openCreate() {
                 username: form.username.value.trim(),
                 displayName: form.displayName.value.trim(),
                 password: form.password.value,
-                grade: Number(form.grade.value),
+                grade: form.grade.value === '' ? null : Number(form.grade.value),
                 avatarKey: form.avatarKey.value,
               },
             });
@@ -72,11 +73,12 @@ export async function openEdit(id) {
         <input class="input" id="edit-name" name="displayName" maxlength="60" value="${escapeHtml(student.displayName)}" required></div>
       <div class="grid grid-2">
         <div class="field"><label for="edit-grade">Lớp</label>
-          <select class="select" id="edit-grade" name="grade">${[1, 2, 3, 4, 5].map((grade) => `<option value="${grade}"${grade === student.grade ? ' selected' : ''}>Lớp ${grade}</option>`).join('')}</select></div>
+          <select class="select" id="edit-grade" name="grade"><option value="">Tiếng Trung — không theo lớp 1–5</option>${[1, 2, 3, 4, 5].map((grade) => `<option value="${grade}"${grade === student.grade ? ' selected' : ''}>Lớp ${grade}</option>`).join('')}</select></div>
         <div class="field"><label for="edit-avatar">Ảnh đại diện</label>
           <select class="select" id="edit-avatar" name="avatarKey">${avatarOptions(student.avatarKey)}</select></div>
       </div>
       <p class="hint">Tên đăng nhập @${escapeHtml(student.username)} không thay đổi.</p>`;
+    form.querySelector('#edit-grade').value = student.grade === null ? '' : String(student.grade);
     const modal = openModal({
       title: 'Sửa học sinh',
       content: form,
@@ -93,7 +95,7 @@ export async function openEdit(id) {
                 method: 'PATCH',
                 body: {
                   displayName: form.displayName.value.trim(),
-                  grade: Number(form.grade.value),
+                  grade: form.grade.value === '' ? null : Number(form.grade.value),
                   avatarKey: form.avatarKey.value,
                 },
               });

@@ -1,9 +1,7 @@
 import { randomUUID } from 'node:crypto';
 import { withTransaction } from '../config/db.js';
-import {
-  assertTopicSelection,
-  validateQuestionPayload,
-} from './admin-question-validation.js';
+import { validateQuestionPayload } from './admin-question-validation.js';
+import { resolveQuestionScope } from './curriculum-scope.js';
 import { getQuestionDetail } from './admin-questions.js';
 
 async function insertQuestion(connection, adminId, topicId, payload, forcedStatus = null) {
@@ -59,19 +57,19 @@ async function insertQuestion(connection, adminId, topicId, payload, forcedStatu
 }
 
 export async function createQuestion(adminId, payload) {
-  await assertTopicSelection(payload);
+  const scope = await resolveQuestionScope(payload);
   const questionId = await withTransaction((connection) => (
-    insertQuestion(connection, adminId, payload.topicId, payload)
+    insertQuestion(connection, adminId, scope.topicId, payload)
   ));
   return getQuestionDetail(questionId);
 }
 
 export async function importQuestionDrafts(adminId, payload) {
-  await assertTopicSelection(payload);
+  const scope = await resolveQuestionScope(payload);
   const ids = await withTransaction(async (connection) => {
     const created = [];
     for (const question of payload.questions) {
-      created.push(await insertQuestion(connection, adminId, payload.topicId, question, 'draft'));
+      created.push(await insertQuestion(connection, adminId, scope.topicId, question, 'draft'));
     }
     return created;
   });

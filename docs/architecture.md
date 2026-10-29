@@ -60,6 +60,7 @@ Socket.IO dùng chung cookie, xác thực ở middleware `io.use`, tham gia room
 | --- | --- |
 | Tài khoản | `profiles` |
 | Danh mục | `subjects`, `topics` |
+| Chương trình | `school_years`, `curriculum_chapters`, `curriculum_lessons` |
 | Câu hỏi | `questions`, `question_options`, `question_answers`, `atomic_question_writes` |
 | Luyện tập | `practice_sessions`, `practice_questions`, `practice_answers` |
 | Thi thử | `exam_attempts`, `exam_questions`, `exam_answers` |
@@ -75,13 +76,16 @@ Socket.IO dùng chung cookie, xác thực ở middleware `io.use`, tham gia room
 - `finish_guard` hỗ trợ chốt lượt/trận idempotent khi có request đồng thời.
 - `atomic_question_writes` lưu `before_json`, `after_json`, admin và hành động (`update`, `hide`, `show`).
 
-## 5. Sinh và nhập câu hỏi
+## 5. Cây chương trình, soạn và nhập câu hỏi
 
-- `seed-data/subjects.json` mô tả 3 môn.
-- `backend/seed-data/questions/*.json` chứa 91 module chủ đề; tổng cộng 5.263 câu.
-- `generate-questions.js` sinh nội dung xác định ở thời điểm phát triển; không gọi mạng/AI lúc chạy.
-- `validate-question-files.js` kiểm tra schema, quota và tính hợp lệ.
-- `seed-questions.js` nhập theo transaction, dùng `ON DUPLICATE KEY UPDATE`, không xoá câu ngoài bộ seed.
+- `seed-data/subjects.json` mô tả 3 môn; `topics.json` mô tả 91 chủ đề.
+- `seed-data/curriculum.json` ánh xạ 91 chủ đề vào 1 năm học, 30 chương và 91 bài học. Bài học liên kết `curriculum_lessons.topic_id` tới `topics.id`; câu hỏi vẫn liên kết qua `questions.topic_id`.
+- `seed-catalog.js` dùng transaction + `ON DUPLICATE KEY UPDATE` để đồng bộ danh mục; không nhập câu hỏi mẫu.
+- `curriculum-service.js` dựng cây năm → lớp → học kỳ → môn → chương → bài học, đếm câu và câu đã đăng bằng SQL.
+- `curriculum-scope.js` xác minh tổ hợp phạm vi; API danh sách bắt buộc `chapterId` hoặc `lessonId` (hoặc `topicId` tương thích) và trả `SCOPE_REQUIRED`, `SCOPE_NOT_FOUND`, `SCOPE_MISMATCH` khi cần.
+- Admin tạo/sửa câu hỏi theo đúng bài học; form tải cấp con từ cây và loại bỏ lựa chọn không hợp lệ khi đổi cấp trên.
+- Nhập Word đọc `.docx` theo mẫu, cho admin xem/sửa, rồi lưu tất cả ở trạng thái **Nháp**; không tự đăng.
+- AI là tuỳ chọn, mặc định tắt, chỉ chạy khi admin chủ động bấm nút; kết quả vẫn là bản nháp.
 - Nội dung hỗ trợ 4 loại: `single_choice`, `multiple_choice`, `true_false`, `fill_in`.
 
 ## 6. Luồng luyện tập
@@ -133,13 +137,14 @@ Socket.IO dùng chung cookie, xác thực ở middleware `io.use`, tham gia room
 - `ui-content.js`: nhãn loại câu, định dạng đáp án, trạng thái rỗng, lời khen.
 - `ui.js` re-export để các trang dùng một điểm vào.
 - Mỗi trang lớn tách context (state + DOM), render, actions, realtime/event.
+- Ngân hàng câu hỏi admin tách `admin-questions-context`, `admin-questions-tree`, `admin-questions-list`, `admin-question-editor`, `admin-question-form`, `admin-questions-import`.
 - API wrapper tự xử lý JSON, lỗi và chuyển hướng khi phiên hết hạn.
 - CSS mobile-first; avatar SVG tĩnh; không có framework UI.
 
 ## 10. Kiểm thử
 
-- **Vitest + Supertest:** 9 file, 69 test; database `kids_learning_test` tạo riêng, migrate/seed trong global setup.
-- **Playwright:** 16 test, project desktop Chromium và mobile 360 px; storage state được sinh từ token để tránh rate limit đăng nhập.
+- **Vitest + Supertest:** 12 file, 93 test; database `kids_learning_test` tạo riêng, migrate/seed trong global setup.
+- **Playwright:** 22 test, project desktop Chromium và mobile 360 px; storage state được sinh từ token để tránh rate limit đăng nhập.
 - Test bao phủ: auth, catalog, practice, exam, challenge (Robot và 1–1), socket auth, admin, thống kê, kim cương/xếp hạng, bất biến ngân hàng câu hỏi và tiện ích.
 - Quy ước tên test: `test_<hệ thống>_<tình huống>_<kết quả>`.
 

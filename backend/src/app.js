@@ -27,7 +27,8 @@ export function createApp() {
         // Giao diện dùng vài thuộc tính style động (màu môn học, khoảng cách nhỏ).
         styleSrcAttr: ["'unsafe-inline'"],
         fontSrc: ["'self'", 'https://fonts.gstatic.com', 'data:'],
-        imgSrc: ["'self'", 'data:'],
+        imgSrc: ["'self'", 'data:', 'https:'],
+        mediaSrc: ["'self'", 'blob:', 'https:'],
         connectSrc: ["'self'", 'ws:', 'wss:'],
         objectSrc: ["'none'"],
         baseUri: ["'self'"],
@@ -38,6 +39,7 @@ export function createApp() {
     crossOriginEmbedderPolicy: false,
   }));
 
+  app.use('/api/v1/chinese', express.json({ limit: '2mb' }));
   app.use(express.json({ limit: '100kb' }));
   app.use(express.urlencoded({ extended: false, limit: '100kb' }));
   app.use(cookieParser());

@@ -44,6 +44,17 @@ elements.nextButton.addEventListener('click', () => {
 
 async function main() {
   await initPage('admin', 'students');
+  const filter = document.getElementById('program-filter');
+  filter.value = store.program;
+  filter.addEventListener('change', () => {
+    store.program = filter.value;
+    const url = new URL(location.href);
+    if (store.program) url.searchParams.set('program', store.program);
+    else url.searchParams.delete('program');
+    history.replaceState(null, '', url);
+    store.page = 1;
+    load();
+  });
   await load();
 }
 

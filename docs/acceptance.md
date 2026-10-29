@@ -1,6 +1,6 @@
 # Kiểm thử và nghiệm thu – TTNAVA
 
-- Ngày nghiệm thu: **27/10/2026**
+- Ngày nghiệm thu: **29/10/2026**
 - Môi trường: Windows, Node **v24.15.0**, npm **11.12.1**, MariaDB **10.4.32-MariaDB** (XAMPP), Chromium do Playwright quản lý.
 - Database chính: `kids_learning`; database kiểm thử: `kids_learning_test`.
 
@@ -19,31 +19,36 @@
 ### Quản trị viên
 
 - Tạo, tìm kiếm, sửa học sinh; khoá/mở khoá; đặt lại mật khẩu.
-- Xem danh sách câu hỏi, lọc theo môn/lớp/chủ đề/loại/trạng thái/từ khoá.
-- Xem chi tiết, sửa đề/phương án/đáp án/lời giải/độ khó/trạng thái; ghi audit.
-- Ẩn/hiện câu hỏi, xem thống kê ngân hàng câu hỏi, lượt chơi, kim cương và top học sinh.
+- Cây chương trình năm học → lớp 1–5 → học kỳ → môn → chương → bài học; số câu đếm từ MySQL, thu gọn/mở rộng.
+- Chọn chương/bài học để xem breadcrumb, tìm theo nội dung/mã, lọc độ khó/loại/trạng thái, phân trang, tải lại và xử lý lỗi/rỗng.
+- Tạo/sửa câu hỏi theo đúng cấp chương trình; đổi cấp trên tự tải lại và loại bỏ lựa chọn không hợp lệ.
+- Nhập `.docx` theo mẫu, xem trước/chỉnh sửa, chọn bài học và lưu Nháp; không tự xuất bản.
+- Ẩn/hiện/đăng câu hỏi, xem audit, xem thống kê ngân hàng câu hỏi, lượt chơi, kim cương và top học sinh.
+- Công cụ riêng xem trước/sao lưu/khôi phục trạng thái câu hỏi cũ; migration không xoá hàng loạt.
 
 ### Hệ thống
 
-- 7 migration, 3 môn, 91 chủ đề, 5.263 câu, 13.455 phương án.
-- JWT HttpOnly, bcrypt, phân quyền, same-origin, Helmet/CSP, rate limit, Zod.
+- 12 migration; danh mục 3 môn, 91 chủ đề, 1 năm học, 30 chương, 91 bài học; giữ nguyên 5.263 câu hỏi cũ.
+- Câu hỏi có trạng thái Nháp/Đã đăng/Đang ẩn; học sinh chỉ nhận câu Đã đăng; câu cũ `visible` không tự đổi trạng thái.
+- JWT HttpOnly, bcrypt, phân quyền, same-origin, Helmet/CSP, rate limit, Zod, upload `.docx` giới hạn.
 - Socket.IO xác thực cookie, sự kiện lời mời/cập nhật/kết thúc trận.
 - Chống thưởng trùng, chống nộp trùng, thời gian do máy chủ quyết định.
-- Không có đăng ký công khai, cửa hàng, cá cược, gọi AI lúc chạy, học phí, Kĩ năng sống.
+- Không có đăng ký công khai, cửa hàng, cá cược, học phí, Kĩ năng sống. AI mặc định tắt và chỉ chạy khi admin chủ động bấm nút sau khi cấu hình.
 
 ## 2. Kết quả kiểm chứng
 
-### 2.1. Kiểm tra ngân hàng câu hỏi
+### 2.1. Kiểm tra danh mục và cây chương trình
 
 ```powershell
-npm run validate:questions
+npm run db:migrate
+npm run db:seed-catalog
 ```
 
 Kết quả:
 
 ```text
-Kiểm tra thành công: 91/91 chủ đề, 5263 câu hỏi.
-VALIDATE_EXIT=0
+Migrate hoàn tất: 12 tổng cộng.
+Đã đồng bộ 3 môn, 91 chủ đề, 30 chương và 91 bài học. Không nhập câu hỏi mẫu.
 ```
 
 Truy vấn database:
@@ -51,10 +56,14 @@ Truy vấn database:
 ```text
 subjects = 3
 topics = 91
-questions = 5263
-question_options = 13455
-schema_migrations = 7
+school_years = 1
+curriculum_chapters = 30
+curriculum_lessons = 91
+questions = 5263 (dữ liệu cũ được giữ nguyên)
+schema_migrations = 12
 ```
+
+Kiểm tra cây qua API admin: `GET /api/v1/admin/curriculum/tree` trả 5 khối lớp, số câu từng bài/chương và tổng câu của năm. Không có số liệu tự sinh ở frontend.
 
 ### 2.2. Backend – Vitest + Supertest
 
@@ -66,9 +75,9 @@ npx vitest run --config vitest.config.js
 Kết quả:
 
 ```text
-Test Files  9 passed (9)
-Tests       69 passed (69)
-Duration    ~10.4s
+Test Files  12 passed (12)
+Tests       93 passed (93)
+Duration    ~38s
 VITEST_EXIT=0
 ```
 
@@ -82,9 +91,12 @@ Các vùng được kiểm thử:
 | `challenge.test.js` | Robot thắng/thua/hoà, thưởng một lần, lời mời, hết hạn, từ chối, bỏ trận, 1–1 |
 | `socket.test.js` | Từ chối socket không cookie, chấp nhận sinh viên/admin, từ chối bot |
 | `admin-students.test.js` | CRUD học sinh, khoá, reset mật khẩu, tìm kiếm, phân trang |
-| `admin-questions.test.js` | Lọc, chi tiết, sửa, audit, ẩn/hiện, validation |
-| `question-bank.test.js` | Bất biến 91 chủ đề/5.263 câu, quota, đáp án, lời giải |
-| `utilities.test.js` | Chuẩn hoá, thời gian, serializer, các hàm dùng chung |
+| `admin-questions.test.js` | Cây chương trình, bắt buộc phạm vi, tạo/sửa/đăng/ẩn, audit, import, AI chưa cấu hình |
+| `question-bank.test.js` | Danh mục 91 chủ đề, 30 chương, 91 bài học, fixture câu hỏi, quota |
+| `question-availability.test.js` | Chủ đề thiếu câu, luyện/thi/thách đấu trả lỗi phù hợp |
+| `question-import-parser.test.js` | Phân tích mẫu `.docx`, lỗi thiếu dữ liệu và định dạng |
+| `chinese.test.js` | Module tiếng Trung: import Word, bài học độc lập khối, luyện/flashcard, đề và bảo mật đáp án |
+| `utils.test.js` | Chuẩn hoá, thời gian, serializer, các hàm dùng chung |
 
 Test chạy trên `kids_learning_test`; global setup tự tạo database, migrate, seed và dọn dữ liệu. Không ghi vào `kids_learning`.
 
@@ -97,19 +109,20 @@ npx playwright test
 Kết quả:
 
 ```text
-16 passed (39.0s)
+22 passed
 PLAYWRIGHT_EXIT=0
 ```
 
 | Khu vực | Số test | Nội dung |
 | --- | --- | --- |
 | Xác thực | 4 | Khách bị chuyển hướng, sai mật khẩu, đăng nhập, đăng xuất |
-| Quản trị | 3 | Tạo/tìm học sinh, mở chi tiết câu hỏi, xem thống kê |
+| Quản trị | 6 | Hướng dẫn khi chưa chọn mục; cây chương trình + chi tiết; tạo nháp rồi đăng; nhập Word; học sinh; thống kê |
+| Tiếng Trung | 2 | Tạo học sinh không khối chính; duyệt Word, đăng, flashcard, đề và bố cục di động |
 | Luyện tập | 2 | Hoàn thành vòng 10 câu có phản hồi/kết quả; lịch sử |
 | Thi thử | 1 | Bắt đầu, trả lời, nộp, xem lại |
 | Thách đấu | 2 | Robot trả lời/bỏ trận; 1–1 mời/nhận/đấu/bỏ trận |
 | Kim cương – xếp hạng | 2 | Tổng/ledger; bảng xếp hạng và lọc |
-| Di động 360 px | 2 | Trang chủ và màn hình luyện tập không tràn ngang |
+| Di động 360 px | 3 | Trang chủ, màn hình luyện tập và ngân hàng câu hỏi admin không tràn ngang |
 
 E2E dùng storage state sinh từ JWT để tránh giới hạn đăng nhập 10 lần/phút. Người dùng `e2e_admin`, `e2e_lan`, `e2e_minh` và dữ liệu liên quan được tạo trước, dọn sau khi chạy.
 
@@ -118,25 +131,25 @@ E2E dùng storage state sinh từ JWT để tránh giới hạn đăng nhập 10
 ```text
 GET http://localhost:3000/api/v1/health
 HTTP 200
-{"data":{"status":"ok","time":"2026-10-27T14:57:35.052Z"}}
+{"data":{"status":"ok","time":"2026-10-29T12:28:26.960Z"}}
 ```
 
 ### 2.5. Kích thước mã nguồn
 
 ```text
-SOURCE_JS_FILES=104
+SOURCE_JS_FILES=126
 SOURCE_JS_OVER_200=0
-SOURCE_JS_MAX_LINES=178
+SOURCE_JS_MAX_LINES=199
 ```
 
-Đã kiểm tra toàn bộ `backend/src/**/*.js` và `frontend/assets/js/**/*.js`: không file nào từ 200 dòng; file lớn nhất 178 dòng. Các module nội dung seed trong `backend/scripts/content/` là dữ liệu sinh câu hỏi ở thời điểm phát triển, không chạy trong ứng dụng.
+Đã kiểm tra toàn bộ `backend/src/**/*.js` và `frontend/assets/js/**/*.js`: không file nào từ 200 dòng; file lớn nhất 199 dòng. Không còn module sinh nội dung câu hỏi ở thời điểm phát triển; danh mục và cây chương trình lấy từ `backend/seed-data/`.
 
 ### 2.6. Kiểm tra thủ công / trình duyệt
 
 Trong quá trình phát triển đã kiểm tra bằng trình duyệt thật trên máy:
 
 - Đăng nhập, trang chủ, luyện tập, thi, thách đấu Robot, lời mời 1–1, kim cương, xếp hạng, lịch sử.
-- Quản trị học sinh, danh sách/chi tiết/lọc/audit câu hỏi, thống kê.
+- Quản trị học sinh, cây chương trình, chọn đúng bài học, danh sách/chi tiết/lọc/audit câu hỏi, tạo nháp/đăng, nhập Word, thống kê.
 - Console không có lỗi CSP/import sau khi tách module.
 - Các luồng lỗi: hết hạn lời mời, bỏ trận, nộp bài khi hết giờ, truy cập sai vai trò.
 
@@ -163,7 +176,7 @@ Không còn hạng mục chức năng bắt buộc bị chặn. Các việc khuy
 
 ```powershell
 # Từ thư mục gốc
-npm run validate:questions
+npm run db:seed-catalog
 npm --prefix backend test
 npx playwright test
 ```

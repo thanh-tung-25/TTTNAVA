@@ -5,9 +5,12 @@ import {
   loginStudent,
   topicWithEnoughQuestions,
 } from './helpers/index.js';
+import { FIXTURE_CHAPTER_ID, FIXTURE_LESSON_ID, FIXTURE_TOPIC_ID } from './fixtures/questions.js';
 
 const DOCX_PATH = new URL('../../frontend/assets/templates/mau-nhap-cau-hoi.docx', import.meta.url);
 const DOCX_TYPE = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+const SCOPE = `yearId=2026-2027&grade=3&semester=hk1&subjectId=toan&chapterId=${FIXTURE_CHAPTER_ID}`;
+const LESSON_SCOPE = `${SCOPE}&lessonId=${FIXTURE_LESSON_ID}`;
 
 function detailPayload(question, overrides = {}) {
   return {
@@ -62,15 +65,45 @@ describe('Quản trị câu hỏi và thống kê', () => {
   });
 
   test('test_admin_question_list_returns_paginated_fixture', async () => {
-    const response = await adminAgent.get('/api/v1/admin/questions?limit=5');
+    const response = await adminAgent.get(`/api/v1/admin/questions?${SCOPE}&limit=5`);
     expect(response.status).toBe(200);
     expect(response.body.data).toHaveLength(5);
     expect(response.body.pagination.total).toBeGreaterThanOrEqual(28);
     expect(response.body.data[0].status).toMatch(/draft|published|hidden/);
+    expect(response.body.data[0].chapterName).toBeTruthy();
+    expect(response.body.data.every((row) => row.grade === 3 && row.subjectId === 'toan')).toBe(true);
+
+    const lessonResponse = await adminAgent.get(`/api/v1/admin/questions?${LESSON_SCOPE}&limit=50`);
+    expect(lessonResponse.status).toBe(200);
+    expect(lessonResponse.body.data.length).toBeGreaterThan(0);
+    expect(lessonResponse.body.data.every((row) => row.topicId === FIXTURE_TOPIC_ID)).toBe(true);
+    expect(lessonResponse.body.scope.lessonId).toBe(FIXTURE_LESSON_ID);
+  });
+
+  test('test_admin_question_list_requires_curriculum_scope', async () => {
+    const response = await adminAgent.get('/api/v1/admin/questions?limit=5');
+    expect(response.status).toBe(400);
+    expect(response.body.error.code).toBe('VALIDATION_ERROR');
+  });
+
+  test('test_admin_curriculum_tree_returns_scoped_counts', async () => {
+    const response = await adminAgent.get('/api/v1/admin/curriculum/tree');
+    expect(response.status).toBe(200);
+    expect(response.body.data.year.id).toBe('2026-2027');
+    expect(response.body.data.grades).toHaveLength(5);
+    const grade3 = response.body.data.grades.find((row) => row.grade === 3);
+    const chapter = grade3.semesters
+      .flatMap((row) => row.subjects)
+      .flatMap((row) => row.chapters)
+      .find((row) => row.id === FIXTURE_CHAPTER_ID);
+    expect(chapter.questionCount).toBeGreaterThanOrEqual(28);
+    expect(chapter.lessons.length).toBe(3);
+    expect(chapter.lessons.reduce((total, row) => total + row.questionCount, 0))
+      .toBe(chapter.questionCount);
   });
 
   test('test_admin_question_detail_returns_answer_and_owner_fields', async () => {
-    const list = await adminAgent.get('/api/v1/admin/questions?type=single_choice&limit=1');
+    const list = await adminAgent.get(`/api/v1/admin/questions?${SCOPE}&type=single_choice&limit=1`);
     const questionId = list.body.data[0].id;
     const response = await adminAgent.get(`/api/v1/admin/questions/${questionId}`);
     expect(response.status).toBe(200);
@@ -143,7 +176,7 @@ describe('Quản trị câu hỏi và thống kê', () => {
       ...singleChoice(),
     });
     expect(response.status).toBe(400);
-    expect(response.body.error.code).toBe('TOPIC_SUBJECT_MISMATCH');
+    expect(response.body.error.code).toBe('SCOPE_MISMATCH');
   });
 
   test('test_admin_question_import_docx_returns_editable_drafts', async () => {

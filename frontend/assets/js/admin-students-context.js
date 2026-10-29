@@ -12,6 +12,7 @@ export const store = {
   page: 1,
   totalPages: 1,
   search: '',
+  program: new URLSearchParams(location.search).get('program') === 'chinese' ? 'chinese' : '',
   studentsById: new Map(),
 };
 
@@ -29,7 +30,7 @@ export function row(student) {
           <div><strong>${escapeHtml(student.displayName)}</strong><br><span class="muted">@${escapeHtml(student.username)}</span></div>
         </div>
       </td>
-      <td>Lớp ${student.grade}</td>
+      <td>${student.grade === null ? 'Tiếng Trung' : `Lớp ${student.grade}`}</td>
       <td>${locked ? '<span class="badge badge-danger">Đã khoá</span>' : '<span class="badge badge-success">Hoạt động</span>'}</td>
       <td>${formatDate(student.createdAt, false)}</td>
       <td>

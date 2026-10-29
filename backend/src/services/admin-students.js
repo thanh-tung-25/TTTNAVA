@@ -5,19 +5,21 @@ import { hashPassword } from './auth-service.js';
 import { usernameToEmail } from '../utils/normalize.js';
 import { publicProfile } from '../utils/serializers.js';
 
-export async function listStudents(page, limit, search = '') {
+export async function listStudents(page, limit, search = '', program = '') {
   const offset = (page - 1) * limit;
   const like = `%${search}%`;
   const rows = await query(
     `SELECT * FROM profiles
      WHERE role = 'student' AND (username LIKE ? OR display_name LIKE ?)
+     AND (? = '' OR (? = 'chinese' AND grade IS NULL) OR (? = 'primary' AND grade IS NOT NULL))
      ORDER BY created_at DESC
      LIMIT ? OFFSET ?`,
-    [like, like, limit, offset],
+    [like, like, program, program, program, limit, offset],
   );
   const [total] = await query(
-    'SELECT COUNT(*) AS total FROM profiles WHERE role = \'student\' AND (username LIKE ? OR display_name LIKE ?)',
-    [like, like],
+    `SELECT COUNT(*) AS total FROM profiles WHERE role = 'student' AND (username LIKE ? OR display_name LIKE ?)
+     AND (? = '' OR (? = 'chinese' AND grade IS NULL) OR (? = 'primary' AND grade IS NOT NULL))`,
+    [like, like, program, program, program],
   );
   return { items: rows.map(publicProfile), total: Number(total.total) };
 }

@@ -13,12 +13,13 @@ import { resetPasswordSchema } from '../validators/auth.js';
 
 const listQuery = z.object({
   q: z.string().trim().max(100).optional(),
+  program: z.enum(['chinese', 'primary']).optional(),
 });
 
 export const listStudentsHandler = asyncHandler(async (request, response) => {
   const { page, limit } = parsePagination(request.query);
-  const { q } = listQuery.parse(request.query);
-  const result = await listStudents(page, limit, q ?? '');
+  const { q, program } = listQuery.parse(request.query);
+  const result = await listStudents(page, limit, q ?? '', program ?? '');
   response.json({ data: result.items, pagination: { page, limit, total: result.total } });
 });
 

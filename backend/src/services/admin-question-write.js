@@ -2,11 +2,8 @@ import { query, withTransaction } from '../config/db.js';
 import { AppError } from '../utils/errors.js';
 import { parseJson } from '../utils/normalize.js';
 import { toIso } from '../utils/time.js';
-import {
-  assertTopicSelection,
-  normalizeQuestionStatus,
-  validateQuestionPayload,
-} from './admin-question-validation.js';
+import { normalizeQuestionStatus, validateQuestionPayload } from './admin-question-validation.js';
+import { resolveQuestionScope } from './curriculum-scope.js';
 import { getQuestionDetail } from './admin-questions.js';
 
 function statusAction(currentStatus, nextStatus) {
@@ -26,12 +23,13 @@ export async function updateQuestion(questionId, adminId, payload) {
   if (!currentRows[0]) throw new AppError(404, 'QUESTION_NOT_FOUND', 'Câu hỏi không tồn tại');
   const current = currentRows[0];
 
-  const topicId = payload.topicId ?? current.topic_id;
-  await assertTopicSelection({
-    topicId,
-    subjectId: payload.subjectId,
-    grade: payload.grade,
-  });
+  const hasScope = Boolean(payload.lessonId || payload.chapterId || payload.topicId);
+  let topicId = current.topic_id;
+  if (hasScope) {
+    const scope = await resolveQuestionScope(payload);
+    if (!scope.topicId) throw new AppError(400, 'SCOPE_REQUIRED', 'Vui lòng chọn bài học cho câu hỏi');
+    topicId = scope.topicId;
+  }
 
   const type = payload.type ?? current.type;
   const clean = validateQuestionPayload(type, payload);

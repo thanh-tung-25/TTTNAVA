@@ -1,0 +1,953 @@
+{
+  "years": [
+    {
+      "id": "2026-2027",
+      "name": "Năm học 2026–2027",
+      "startsOn": "2026-08-01",
+      "endsOn": "2027-05-31",
+      "isActive": true,
+      "sortOrder": 1
+    }
+  ],
+  "chapters": [
+    {
+      "id": "chapter-toan-1-hk1",
+      "schoolYearId": "2026-2027",
+      "grade": 1,
+      "semester": "hk1",
+      "subjectId": "toan",
+      "name": "Các số và phép tính trong phạm vi 10",
+      "slug": "cac-so-va-phep-tinh-trong-pham-vi-10",
+      "sortOrder": 1
+    },
+    {
+      "id": "chapter-toan-1-hk2",
+      "schoolYearId": "2026-2027",
+      "grade": 1,
+      "semester": "hk2",
+      "subjectId": "toan",
+      "name": "Các số đến 100 và hình học",
+      "slug": "cac-so-den-100-va-hinh-hoc",
+      "sortOrder": 2
+    },
+    {
+      "id": "chapter-toan-2-hk1",
+      "schoolYearId": "2026-2027",
+      "grade": 2,
+      "semester": "hk1",
+      "subjectId": "toan",
+      "name": "Cộng, trừ, nhân, chia",
+      "slug": "cong-tru-nhan-chia",
+      "sortOrder": 1
+    },
+    {
+      "id": "chapter-toan-2-hk2",
+      "schoolYearId": "2026-2027",
+      "grade": 2,
+      "semester": "hk2",
+      "subjectId": "toan",
+      "name": "Đo lường, hình học và giải toán",
+      "slug": "do-luong-hinh-hoc-va-giai-toan",
+      "sortOrder": 2
+    },
+    {
+      "id": "chapter-toan-3-hk1",
+      "schoolYearId": "2026-2027",
+      "grade": 3,
+      "semester": "hk1",
+      "subjectId": "toan",
+      "name": "Số và phép tính",
+      "slug": "so-va-phep-tinh",
+      "sortOrder": 1
+    },
+    {
+      "id": "chapter-toan-3-hk2",
+      "schoolYearId": "2026-2027",
+      "grade": 3,
+      "semester": "hk2",
+      "subjectId": "toan",
+      "name": "Hình học, đo lường và gấp, giảm",
+      "slug": "hinh-hoc-do-luong-va-gap-giam",
+      "sortOrder": 2
+    },
+    {
+      "id": "chapter-toan-4-hk1",
+      "schoolYearId": "2026-2027",
+      "grade": 4,
+      "semester": "hk1",
+      "subjectId": "toan",
+      "name": "Số tự nhiên và bốn phép tính",
+      "slug": "so-tu-nhien-va-bon-phep-tinh",
+      "sortOrder": 1
+    },
+    {
+      "id": "chapter-toan-4-hk2",
+      "schoolYearId": "2026-2027",
+      "grade": 4,
+      "semester": "hk2",
+      "subjectId": "toan",
+      "name": "Phân số, hình học và thống kê",
+      "slug": "phan-so-hinh-hoc-va-thong-ke",
+      "sortOrder": 2
+    },
+    {
+      "id": "chapter-toan-5-hk1",
+      "schoolYearId": "2026-2027",
+      "grade": 5,
+      "semester": "hk1",
+      "subjectId": "toan",
+      "name": "Số thập phân và các phép tính",
+      "slug": "so-thap-phan-va-cac-phep-tinh",
+      "sortOrder": 1
+    },
+    {
+      "id": "chapter-toan-5-hk2",
+      "schoolYearId": "2026-2027",
+      "grade": 5,
+      "semester": "hk2",
+      "subjectId": "toan",
+      "name": "Tỉ số, hình học, đo lường và chuyển động",
+      "slug": "ti-so-hinh-hoc-do-luong-va-chuyen-dong",
+      "sortOrder": 2
+    },
+    {
+      "id": "chapter-tieng-viet-1-hk1",
+      "schoolYearId": "2026-2027",
+      "grade": 1,
+      "semester": "hk1",
+      "subjectId": "tieng-viet",
+      "name": "Chữ cái, vần và từ ngữ",
+      "slug": "chu-cai-van-va-tu-ngu",
+      "sortOrder": 1
+    },
+    {
+      "id": "chapter-tieng-viet-1-hk2",
+      "schoolYearId": "2026-2027",
+      "grade": 1,
+      "semester": "hk2",
+      "subjectId": "tieng-viet",
+      "name": "Câu và đọc hiểu",
+      "slug": "cau-va-doc-hieu",
+      "sortOrder": 2
+    },
+    {
+      "id": "chapter-tieng-viet-2-hk1",
+      "schoolYearId": "2026-2027",
+      "grade": 2,
+      "semester": "hk1",
+      "subjectId": "tieng-viet",
+      "name": "Chính tả, từ ngữ và câu",
+      "slug": "chinh-ta-tu-ngu-va-cau",
+      "sortOrder": 1
+    },
+    {
+      "id": "chapter-tieng-viet-2-hk2",
+      "schoolYearId": "2026-2027",
+      "grade": 2,
+      "semester": "hk2",
+      "subjectId": "tieng-viet",
+      "name": "Dấu câu, đọc hiểu và từ trái nghĩa",
+      "slug": "dau-cau-doc-hieu-va-tu-trai-nghia",
+      "sortOrder": 2
+    },
+    {
+      "id": "chapter-tieng-viet-3-hk1",
+      "schoolYearId": "2026-2027",
+      "grade": 3,
+      "semester": "hk1",
+      "subjectId": "tieng-viet",
+      "name": "Từ ngữ và biện pháp tu từ",
+      "slug": "tu-ngu-va-bien-phap-tu-tu",
+      "sortOrder": 1
+    },
+    {
+      "id": "chapter-tieng-viet-3-hk2",
+      "schoolYearId": "2026-2027",
+      "grade": 3,
+      "semester": "hk2",
+      "subjectId": "tieng-viet",
+      "name": "Câu, chính tả, đọc hiểu và dấu câu",
+      "slug": "cau-chinh-ta-doc-hieu-va-dau-cau",
+      "sortOrder": 2
+    },
+    {
+      "id": "chapter-tieng-viet-4-hk1",
+      "schoolYearId": "2026-2027",
+      "grade": 4,
+      "semester": "hk1",
+      "subjectId": "tieng-viet",
+      "name": "Từ và từ loại",
+      "slug": "tu-va-tu-loai",
+      "sortOrder": 1
+    },
+    {
+      "id": "chapter-tieng-viet-4-hk2",
+      "schoolYearId": "2026-2027",
+      "grade": 4,
+      "semester": "hk2",
+      "subjectId": "tieng-viet",
+      "name": "Chính tả, đọc hiểu và thành ngữ",
+      "slug": "chinh-ta-doc-hieu-va-thanh-ngu",
+      "sortOrder": 2
+    },
+    {
+      "id": "chapter-tieng-viet-5-hk1",
+      "schoolYearId": "2026-2027",
+      "grade": 5,
+      "semester": "hk1",
+      "subjectId": "tieng-viet",
+      "name": "Từ ngữ và câu",
+      "slug": "tu-ngu-va-cau",
+      "sortOrder": 1
+    },
+    {
+      "id": "chapter-tieng-viet-5-hk2",
+      "schoolYearId": "2026-2027",
+      "grade": 5,
+      "semester": "hk2",
+      "subjectId": "tieng-viet",
+      "name": "Đọc hiểu, chính tả, từ loại và thành ngữ",
+      "slug": "doc-hieu-chinh-ta-tu-loai-va-thanh-ngu",
+      "sortOrder": 2
+    },
+    {
+      "id": "chapter-tieng-anh-1-hk1",
+      "schoolYearId": "2026-2027",
+      "grade": 1,
+      "semester": "hk1",
+      "subjectId": "tieng-anh",
+      "name": "Alphabet, numbers and colours",
+      "slug": "alphabet-numbers-and-colours",
+      "sortOrder": 1
+    },
+    {
+      "id": "chapter-tieng-anh-1-hk2",
+      "schoolYearId": "2026-2027",
+      "grade": 1,
+      "semester": "hk2",
+      "subjectId": "tieng-anh",
+      "name": "Animals and family",
+      "slug": "animals-and-family",
+      "sortOrder": 2
+    },
+    {
+      "id": "chapter-tieng-anh-2-hk1",
+      "schoolYearId": "2026-2027",
+      "grade": 2,
+      "semester": "hk1",
+      "subjectId": "tieng-anh",
+      "name": "Numbers, school and body",
+      "slug": "numbers-school-and-body",
+      "sortOrder": 1
+    },
+    {
+      "id": "chapter-tieng-anh-2-hk2",
+      "schoolYearId": "2026-2027",
+      "grade": 2,
+      "semester": "hk2",
+      "subjectId": "tieng-anh",
+      "name": "Food, verbs and greetings",
+      "slug": "food-verbs-and-greetings",
+      "sortOrder": 2
+    },
+    {
+      "id": "chapter-tieng-anh-3-hk1",
+      "schoolYearId": "2026-2027",
+      "grade": 3,
+      "semester": "hk1",
+      "subjectId": "tieng-anh",
+      "name": "Colours, family and animals",
+      "slug": "colours-family-and-animals",
+      "sortOrder": 1
+    },
+    {
+      "id": "chapter-tieng-anh-3-hk2",
+      "schoolYearId": "2026-2027",
+      "grade": 3,
+      "semester": "hk2",
+      "subjectId": "tieng-anh",
+      "name": "Food, demonstratives and present simple",
+      "slug": "food-demonstratives-and-present-simple",
+      "sortOrder": 2
+    },
+    {
+      "id": "chapter-tieng-anh-4-hk1",
+      "schoolYearId": "2026-2027",
+      "grade": 4,
+      "semester": "hk1",
+      "subjectId": "tieng-anh",
+      "name": "School, dates and weather",
+      "slug": "school-dates-and-weather",
+      "sortOrder": 1
+    },
+    {
+      "id": "chapter-tieng-anh-4-hk2",
+      "schoolYearId": "2026-2027",
+      "grade": 4,
+      "semester": "hk2",
+      "subjectId": "tieng-anh",
+      "name": "Jobs, present continuous and prepositions",
+      "slug": "jobs-present-continuous-and-prepositions",
+      "sortOrder": 2
+    },
+    {
+      "id": "chapter-tieng-anh-5-hk1",
+      "schoolYearId": "2026-2027",
+      "grade": 5,
+      "semester": "hk1",
+      "subjectId": "tieng-anh",
+      "name": "Present and past simple",
+      "slug": "present-and-past-simple",
+      "sortOrder": 1
+    },
+    {
+      "id": "chapter-tieng-anh-5-hk2",
+      "schoolYearId": "2026-2027",
+      "grade": 5,
+      "semester": "hk2",
+      "subjectId": "tieng-anh",
+      "name": "Comparisons, weather, hobbies, routines and prepositions",
+      "slug": "comparisons-weather-hobbies-routines-and-prepositions",
+      "sortOrder": 2
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson-toan-1-dem-va-so-sanh",
+      "chapterId": "chapter-toan-1-hk1",
+      "topicId": "toan-1-dem-va-so-sanh",
+      "name": "Đếm và so sánh trong phạm vi 10",
+      "sortOrder": 1
+    },
+    {
+      "id": "lesson-toan-1-cong-trong-10",
+      "chapterId": "chapter-toan-1-hk1",
+      "topicId": "toan-1-cong-trong-10",
+      "name": "Phép cộng trong phạm vi 10",
+      "sortOrder": 2
+    },
+    {
+      "id": "lesson-toan-1-tru-trong-10",
+      "chapterId": "chapter-toan-1-hk1",
+      "topicId": "toan-1-tru-trong-10",
+      "name": "Phép trừ trong phạm vi 10",
+      "sortOrder": 3
+    },
+    {
+      "id": "lesson-toan-1-so-den-100",
+      "chapterId": "chapter-toan-1-hk2",
+      "topicId": "toan-1-so-den-100",
+      "name": "Số đến 100",
+      "sortOrder": 4
+    },
+    {
+      "id": "lesson-toan-1-hinh-va-vi-tri",
+      "chapterId": "chapter-toan-1-hk2",
+      "topicId": "toan-1-hinh-va-vi-tri",
+      "name": "Hình học và vị trí",
+      "sortOrder": 5
+    },
+    {
+      "id": "lesson-toan-2-cong-tru-100",
+      "chapterId": "chapter-toan-2-hk1",
+      "topicId": "toan-2-cong-tru-100",
+      "name": "Cộng trừ trong phạm vi 100",
+      "sortOrder": 1
+    },
+    {
+      "id": "lesson-toan-2-bang-nhan-2-5",
+      "chapterId": "chapter-toan-2-hk1",
+      "topicId": "toan-2-bang-nhan-2-5",
+      "name": "Bảng nhân 2–5",
+      "sortOrder": 2
+    },
+    {
+      "id": "lesson-toan-2-bang-chia-2-5",
+      "chapterId": "chapter-toan-2-hk1",
+      "topicId": "toan-2-bang-chia-2-5",
+      "name": "Bảng chia 2–5",
+      "sortOrder": 3
+    },
+    {
+      "id": "lesson-toan-2-do-dai",
+      "chapterId": "chapter-toan-2-hk2",
+      "topicId": "toan-2-do-dai",
+      "name": "Đo độ dài",
+      "sortOrder": 4
+    },
+    {
+      "id": "lesson-toan-2-hinh-hoc",
+      "chapterId": "chapter-toan-2-hk2",
+      "topicId": "toan-2-hinh-hoc",
+      "name": "Hình học cơ bản",
+      "sortOrder": 5
+    },
+    {
+      "id": "lesson-toan-2-toan-co-loi-van",
+      "chapterId": "chapter-toan-2-hk2",
+      "topicId": "toan-2-toan-co-loi-van",
+      "name": "Toán có lời văn",
+      "sortOrder": 6
+    },
+    {
+      "id": "lesson-toan-3-cong-tru-1000",
+      "chapterId": "chapter-toan-3-hk1",
+      "topicId": "toan-3-cong-tru-1000",
+      "name": "Cộng trừ trong phạm vi 1000",
+      "sortOrder": 1
+    },
+    {
+      "id": "lesson-toan-3-bang-nhan-chia-6-9",
+      "chapterId": "chapter-toan-3-hk1",
+      "topicId": "toan-3-bang-nhan-chia-6-9",
+      "name": "Bảng nhân chia 6–9",
+      "sortOrder": 2
+    },
+    {
+      "id": "lesson-toan-3-nhan-chia-ba-chu-so",
+      "chapterId": "chapter-toan-3-hk1",
+      "topicId": "toan-3-nhan-chia-ba-chu-so",
+      "name": "Nhân chia số có ba chữ số",
+      "sortOrder": 3
+    },
+    {
+      "id": "lesson-toan-3-gap-va-giam",
+      "chapterId": "chapter-toan-3-hk2",
+      "topicId": "toan-3-gap-va-giam",
+      "name": "Gấp và giảm số lần",
+      "sortOrder": 4
+    },
+    {
+      "id": "lesson-toan-3-hinh-hoc-chu-vi",
+      "chapterId": "chapter-toan-3-hk2",
+      "topicId": "toan-3-hinh-hoc-chu-vi",
+      "name": "Hình học và chu vi",
+      "sortOrder": 5
+    },
+    {
+      "id": "lesson-toan-3-do-luong",
+      "chapterId": "chapter-toan-3-hk2",
+      "topicId": "toan-3-do-luong",
+      "name": "Đo lường",
+      "sortOrder": 6
+    },
+    {
+      "id": "lesson-toan-4-so-lon",
+      "chapterId": "chapter-toan-4-hk1",
+      "topicId": "toan-4-so-lon",
+      "name": "Số lớn, hàng và lớp",
+      "sortOrder": 1
+    },
+    {
+      "id": "lesson-toan-4-cong-tru",
+      "chapterId": "chapter-toan-4-hk1",
+      "topicId": "toan-4-cong-tru",
+      "name": "Cộng trừ số tự nhiên",
+      "sortOrder": 2
+    },
+    {
+      "id": "lesson-toan-4-nhan-chia",
+      "chapterId": "chapter-toan-4-hk1",
+      "topicId": "toan-4-nhan-chia",
+      "name": "Nhân chia số tự nhiên",
+      "sortOrder": 3
+    },
+    {
+      "id": "lesson-toan-4-phan-so",
+      "chapterId": "chapter-toan-4-hk2",
+      "topicId": "toan-4-phan-so",
+      "name": "Phân số",
+      "sortOrder": 4
+    },
+    {
+      "id": "lesson-toan-4-hinh-hoc",
+      "chapterId": "chapter-toan-4-hk2",
+      "topicId": "toan-4-hinh-hoc",
+      "name": "Hình học",
+      "sortOrder": 5
+    },
+    {
+      "id": "lesson-toan-4-trung-binh-cong",
+      "chapterId": "chapter-toan-4-hk2",
+      "topicId": "toan-4-trung-binh-cong",
+      "name": "Trung bình cộng và biểu đồ",
+      "sortOrder": 6
+    },
+    {
+      "id": "lesson-toan-5-so-thap-phan",
+      "chapterId": "chapter-toan-5-hk1",
+      "topicId": "toan-5-so-thap-phan",
+      "name": "Số thập phân",
+      "sortOrder": 1
+    },
+    {
+      "id": "lesson-toan-5-cong-tru-thap-phan",
+      "chapterId": "chapter-toan-5-hk1",
+      "topicId": "toan-5-cong-tru-thap-phan",
+      "name": "Cộng trừ số thập phân",
+      "sortOrder": 2
+    },
+    {
+      "id": "lesson-toan-5-nhan-chia-thap-phan",
+      "chapterId": "chapter-toan-5-hk1",
+      "topicId": "toan-5-nhan-chia-thap-phan",
+      "name": "Nhân chia số thập phân",
+      "sortOrder": 3
+    },
+    {
+      "id": "lesson-toan-5-ti-so-phan-tram",
+      "chapterId": "chapter-toan-5-hk2",
+      "topicId": "toan-5-ti-so-phan-tram",
+      "name": "Tỉ số phần trăm",
+      "sortOrder": 4
+    },
+    {
+      "id": "lesson-toan-5-hinh-hoc",
+      "chapterId": "chapter-toan-5-hk2",
+      "topicId": "toan-5-hinh-hoc",
+      "name": "Diện tích và thể tích",
+      "sortOrder": 5
+    },
+    {
+      "id": "lesson-toan-5-do-luong-thoi-gian",
+      "chapterId": "chapter-toan-5-hk2",
+      "topicId": "toan-5-do-luong-thoi-gian",
+      "name": "Đo lường và thời gian",
+      "sortOrder": 6
+    },
+    {
+      "id": "lesson-toan-5-chuyen-dong",
+      "chapterId": "chapter-toan-5-hk2",
+      "topicId": "toan-5-chuyen-dong",
+      "name": "Toán chuyển động",
+      "sortOrder": 7
+    },
+    {
+      "id": "lesson-tieng-viet-1-chu-cai",
+      "chapterId": "chapter-tieng-viet-1-hk1",
+      "topicId": "tieng-viet-1-chu-cai",
+      "name": "Chữ cái và âm đầu",
+      "sortOrder": 1
+    },
+    {
+      "id": "lesson-tieng-viet-1-van-va-tieng",
+      "chapterId": "chapter-tieng-viet-1-hk1",
+      "topicId": "tieng-viet-1-van-va-tieng",
+      "name": "Vần và tiếng",
+      "sortOrder": 2
+    },
+    {
+      "id": "lesson-tieng-viet-1-tu-chi-su-vat",
+      "chapterId": "chapter-tieng-viet-1-hk1",
+      "topicId": "tieng-viet-1-tu-chi-su-vat",
+      "name": "Từ chỉ sự vật",
+      "sortOrder": 3
+    },
+    {
+      "id": "lesson-tieng-viet-1-cau-don-gian",
+      "chapterId": "chapter-tieng-viet-1-hk2",
+      "topicId": "tieng-viet-1-cau-don-gian",
+      "name": "Câu đơn giản",
+      "sortOrder": 4
+    },
+    {
+      "id": "lesson-tieng-viet-1-doc-hieu",
+      "chapterId": "chapter-tieng-viet-1-hk2",
+      "topicId": "tieng-viet-1-doc-hieu",
+      "name": "Đọc hiểu đoạn ngắn",
+      "sortOrder": 5
+    },
+    {
+      "id": "lesson-tieng-viet-2-chinh-ta",
+      "chapterId": "chapter-tieng-viet-2-hk1",
+      "topicId": "tieng-viet-2-chinh-ta",
+      "name": "Chính tả",
+      "sortOrder": 1
+    },
+    {
+      "id": "lesson-tieng-viet-2-tu-chi-hoat-dong",
+      "chapterId": "chapter-tieng-viet-2-hk1",
+      "topicId": "tieng-viet-2-tu-chi-hoat-dong",
+      "name": "Từ chỉ hoạt động",
+      "sortOrder": 2
+    },
+    {
+      "id": "lesson-tieng-viet-2-cau-ai-la-gi",
+      "chapterId": "chapter-tieng-viet-2-hk1",
+      "topicId": "tieng-viet-2-cau-ai-la-gi",
+      "name": "Câu kiểu Ai là gì?",
+      "sortOrder": 3
+    },
+    {
+      "id": "lesson-tieng-viet-2-dau-cau",
+      "chapterId": "chapter-tieng-viet-2-hk2",
+      "topicId": "tieng-viet-2-dau-cau",
+      "name": "Dấu câu",
+      "sortOrder": 4
+    },
+    {
+      "id": "lesson-tieng-viet-2-doc-hieu",
+      "chapterId": "chapter-tieng-viet-2-hk2",
+      "topicId": "tieng-viet-2-doc-hieu",
+      "name": "Đọc hiểu",
+      "sortOrder": 5
+    },
+    {
+      "id": "lesson-tieng-viet-2-tu-trai-nghia",
+      "chapterId": "chapter-tieng-viet-2-hk2",
+      "topicId": "tieng-viet-2-tu-trai-nghia",
+      "name": "Từ trái nghĩa",
+      "sortOrder": 6
+    },
+    {
+      "id": "lesson-tieng-viet-3-tu-chi-dac-diem",
+      "chapterId": "chapter-tieng-viet-3-hk1",
+      "topicId": "tieng-viet-3-tu-chi-dac-diem",
+      "name": "Từ chỉ đặc điểm",
+      "sortOrder": 1
+    },
+    {
+      "id": "lesson-tieng-viet-3-so-sanh",
+      "chapterId": "chapter-tieng-viet-3-hk1",
+      "topicId": "tieng-viet-3-so-sanh",
+      "name": "Biện pháp so sánh",
+      "sortOrder": 2
+    },
+    {
+      "id": "lesson-tieng-viet-3-nhan-hoa",
+      "chapterId": "chapter-tieng-viet-3-hk1",
+      "topicId": "tieng-viet-3-nhan-hoa",
+      "name": "Biện pháp nhân hóa",
+      "sortOrder": 3
+    },
+    {
+      "id": "lesson-tieng-viet-3-cau-ai-lam-gi",
+      "chapterId": "chapter-tieng-viet-3-hk2",
+      "topicId": "tieng-viet-3-cau-ai-lam-gi",
+      "name": "Câu kiểu Ai làm gì?",
+      "sortOrder": 4
+    },
+    {
+      "id": "lesson-tieng-viet-3-chinh-ta",
+      "chapterId": "chapter-tieng-viet-3-hk2",
+      "topicId": "tieng-viet-3-chinh-ta",
+      "name": "Chính tả",
+      "sortOrder": 5
+    },
+    {
+      "id": "lesson-tieng-viet-3-doc-hieu",
+      "chapterId": "chapter-tieng-viet-3-hk2",
+      "topicId": "tieng-viet-3-doc-hieu",
+      "name": "Đọc hiểu",
+      "sortOrder": 6
+    },
+    {
+      "id": "lesson-tieng-viet-3-dau-cau",
+      "chapterId": "chapter-tieng-viet-3-hk2",
+      "topicId": "tieng-viet-3-dau-cau",
+      "name": "Dấu câu",
+      "sortOrder": 7
+    },
+    {
+      "id": "lesson-tieng-viet-4-tu-don-tu-ghep",
+      "chapterId": "chapter-tieng-viet-4-hk1",
+      "topicId": "tieng-viet-4-tu-don-tu-ghep",
+      "name": "Từ đơn và từ ghép",
+      "sortOrder": 1
+    },
+    {
+      "id": "lesson-tieng-viet-4-danh-tu-dong-tu-tinh-tu",
+      "chapterId": "chapter-tieng-viet-4-hk1",
+      "topicId": "tieng-viet-4-danh-tu-dong-tu-tinh-tu",
+      "name": "Danh từ, động từ, tính từ",
+      "sortOrder": 2
+    },
+    {
+      "id": "lesson-tieng-viet-4-cau-ai-the-nao",
+      "chapterId": "chapter-tieng-viet-4-hk1",
+      "topicId": "tieng-viet-4-cau-ai-the-nao",
+      "name": "Câu kiểu Ai thế nào?",
+      "sortOrder": 3
+    },
+    {
+      "id": "lesson-tieng-viet-4-chinh-ta",
+      "chapterId": "chapter-tieng-viet-4-hk2",
+      "topicId": "tieng-viet-4-chinh-ta",
+      "name": "Chính tả",
+      "sortOrder": 4
+    },
+    {
+      "id": "lesson-tieng-viet-4-doc-hieu",
+      "chapterId": "chapter-tieng-viet-4-hk2",
+      "topicId": "tieng-viet-4-doc-hieu",
+      "name": "Đọc hiểu",
+      "sortOrder": 5
+    },
+    {
+      "id": "lesson-tieng-viet-4-thanh-ngu",
+      "chapterId": "chapter-tieng-viet-4-hk2",
+      "topicId": "tieng-viet-4-thanh-ngu",
+      "name": "Thành ngữ, tục ngữ",
+      "sortOrder": 6
+    },
+    {
+      "id": "lesson-tieng-viet-5-tu-dong-nghia-trai-nghia",
+      "chapterId": "chapter-tieng-viet-5-hk1",
+      "topicId": "tieng-viet-5-tu-dong-nghia-trai-nghia",
+      "name": "Từ đồng nghĩa, trái nghĩa",
+      "sortOrder": 1
+    },
+    {
+      "id": "lesson-tieng-viet-5-dai-tu-quan-he-tu",
+      "chapterId": "chapter-tieng-viet-5-hk1",
+      "topicId": "tieng-viet-5-dai-tu-quan-he-tu",
+      "name": "Đại từ và quan hệ từ",
+      "sortOrder": 2
+    },
+    {
+      "id": "lesson-tieng-viet-5-cau-ghep",
+      "chapterId": "chapter-tieng-viet-5-hk1",
+      "topicId": "tieng-viet-5-cau-ghep",
+      "name": "Câu ghép",
+      "sortOrder": 3
+    },
+    {
+      "id": "lesson-tieng-viet-5-doc-hieu",
+      "chapterId": "chapter-tieng-viet-5-hk2",
+      "topicId": "tieng-viet-5-doc-hieu",
+      "name": "Đọc hiểu",
+      "sortOrder": 4
+    },
+    {
+      "id": "lesson-tieng-viet-5-chinh-ta",
+      "chapterId": "chapter-tieng-viet-5-hk2",
+      "topicId": "tieng-viet-5-chinh-ta",
+      "name": "Chính tả",
+      "sortOrder": 5
+    },
+    {
+      "id": "lesson-tieng-viet-5-tu-loai",
+      "chapterId": "chapter-tieng-viet-5-hk2",
+      "topicId": "tieng-viet-5-tu-loai",
+      "name": "Từ loại",
+      "sortOrder": 6
+    },
+    {
+      "id": "lesson-tieng-viet-5-thanh-ngu-tuc-ngu",
+      "chapterId": "chapter-tieng-viet-5-hk2",
+      "topicId": "tieng-viet-5-thanh-ngu-tuc-ngu",
+      "name": "Thành ngữ, tục ngữ",
+      "sortOrder": 7
+    },
+    {
+      "id": "lesson-tieng-anh-1-alphabet",
+      "chapterId": "chapter-tieng-anh-1-hk1",
+      "topicId": "tieng-anh-1-alphabet",
+      "name": "Alphabet và chào hỏi",
+      "sortOrder": 1
+    },
+    {
+      "id": "lesson-tieng-anh-1-numbers",
+      "chapterId": "chapter-tieng-anh-1-hk1",
+      "topicId": "tieng-anh-1-numbers",
+      "name": "Số 1–10",
+      "sortOrder": 2
+    },
+    {
+      "id": "lesson-tieng-anh-1-colors",
+      "chapterId": "chapter-tieng-anh-1-hk1",
+      "topicId": "tieng-anh-1-colors",
+      "name": "Màu sắc",
+      "sortOrder": 3
+    },
+    {
+      "id": "lesson-tieng-anh-1-animals",
+      "chapterId": "chapter-tieng-anh-1-hk2",
+      "topicId": "tieng-anh-1-animals",
+      "name": "Động vật",
+      "sortOrder": 4
+    },
+    {
+      "id": "lesson-tieng-anh-1-family",
+      "chapterId": "chapter-tieng-anh-1-hk2",
+      "topicId": "tieng-anh-1-family",
+      "name": "Gia đình",
+      "sortOrder": 5
+    },
+    {
+      "id": "lesson-tieng-anh-2-numbers-20",
+      "chapterId": "chapter-tieng-anh-2-hk1",
+      "topicId": "tieng-anh-2-numbers-20",
+      "name": "Số 11–20",
+      "sortOrder": 1
+    },
+    {
+      "id": "lesson-tieng-anh-2-school",
+      "chapterId": "chapter-tieng-anh-2-hk1",
+      "topicId": "tieng-anh-2-school",
+      "name": "Trường học",
+      "sortOrder": 2
+    },
+    {
+      "id": "lesson-tieng-anh-2-body",
+      "chapterId": "chapter-tieng-anh-2-hk1",
+      "topicId": "tieng-anh-2-body",
+      "name": "Cơ thể",
+      "sortOrder": 3
+    },
+    {
+      "id": "lesson-tieng-anh-2-food",
+      "chapterId": "chapter-tieng-anh-2-hk2",
+      "topicId": "tieng-anh-2-food",
+      "name": "Đồ ăn",
+      "sortOrder": 4
+    },
+    {
+      "id": "lesson-tieng-anh-2-verbs",
+      "chapterId": "chapter-tieng-anh-2-hk2",
+      "topicId": "tieng-anh-2-verbs",
+      "name": "Động từ thường gặp",
+      "sortOrder": 5
+    },
+    {
+      "id": "lesson-tieng-anh-2-greetings",
+      "chapterId": "chapter-tieng-anh-2-hk2",
+      "topicId": "tieng-anh-2-greetings",
+      "name": "Chào hỏi và giới thiệu",
+      "sortOrder": 6
+    },
+    {
+      "id": "lesson-tieng-anh-3-colors-shapes",
+      "chapterId": "chapter-tieng-anh-3-hk1",
+      "topicId": "tieng-anh-3-colors-shapes",
+      "name": "Màu sắc và hình khối",
+      "sortOrder": 1
+    },
+    {
+      "id": "lesson-tieng-anh-3-family-home",
+      "chapterId": "chapter-tieng-anh-3-hk1",
+      "topicId": "tieng-anh-3-family-home",
+      "name": "Gia đình và ngôi nhà",
+      "sortOrder": 2
+    },
+    {
+      "id": "lesson-tieng-anh-3-animals",
+      "chapterId": "chapter-tieng-anh-3-hk1",
+      "topicId": "tieng-anh-3-animals",
+      "name": "Động vật",
+      "sortOrder": 3
+    },
+    {
+      "id": "lesson-tieng-anh-3-food-drinks",
+      "chapterId": "chapter-tieng-anh-3-hk2",
+      "topicId": "tieng-anh-3-food-drinks",
+      "name": "Đồ ăn và thức uống",
+      "sortOrder": 4
+    },
+    {
+      "id": "lesson-tieng-anh-3-this-that",
+      "chapterId": "chapter-tieng-anh-3-hk2",
+      "topicId": "tieng-anh-3-this-that",
+      "name": "This, that, these, those",
+      "sortOrder": 5
+    },
+    {
+      "id": "lesson-tieng-anh-3-present-simple",
+      "chapterId": "chapter-tieng-anh-3-hk2",
+      "topicId": "tieng-anh-3-present-simple",
+      "name": "Thì hiện tại đơn",
+      "sortOrder": 6
+    },
+    {
+      "id": "lesson-tieng-anh-4-school-subjects",
+      "chapterId": "chapter-tieng-anh-4-hk1",
+      "topicId": "tieng-anh-4-school-subjects",
+      "name": "Môn học ở trường",
+      "sortOrder": 1
+    },
+    {
+      "id": "lesson-tieng-anh-4-days-months",
+      "chapterId": "chapter-tieng-anh-4-hk1",
+      "topicId": "tieng-anh-4-days-months",
+      "name": "Ngày và tháng",
+      "sortOrder": 2
+    },
+    {
+      "id": "lesson-tieng-anh-4-weather",
+      "chapterId": "chapter-tieng-anh-4-hk1",
+      "topicId": "tieng-anh-4-weather",
+      "name": "Thời tiết",
+      "sortOrder": 3
+    },
+    {
+      "id": "lesson-tieng-anh-4-jobs",
+      "chapterId": "chapter-tieng-anh-4-hk2",
+      "topicId": "tieng-anh-4-jobs",
+      "name": "Nghề nghiệp",
+      "sortOrder": 4
+    },
+    {
+      "id": "lesson-tieng-anh-4-present-continuous",
+      "chapterId": "chapter-tieng-anh-4-hk2",
+      "topicId": "tieng-anh-4-present-continuous",
+      "name": "Thì hiện tại tiếp diễn",
+      "sortOrder": 5
+    },
+    {
+      "id": "lesson-tieng-anh-4-prepositions",
+      "chapterId": "chapter-tieng-anh-4-hk2",
+      "topicId": "tieng-anh-4-prepositions",
+      "name": "Giới từ chỉ vị trí",
+      "sortOrder": 6
+    },
+    {
+      "id": "lesson-tieng-anh-5-present-simple",
+      "chapterId": "chapter-tieng-anh-5-hk1",
+      "topicId": "tieng-anh-5-present-simple",
+      "name": "Thì hiện tại đơn",
+      "sortOrder": 1
+    },
+    {
+      "id": "lesson-tieng-anh-5-past-simple",
+      "chapterId": "chapter-tieng-anh-5-hk1",
+      "topicId": "tieng-anh-5-past-simple",
+      "name": "Thì quá khứ đơn",
+      "sortOrder": 2
+    },
+    {
+      "id": "lesson-tieng-anh-5-comparatives",
+      "chapterId": "chapter-tieng-anh-5-hk2",
+      "topicId": "tieng-anh-5-comparatives",
+      "name": "So sánh hơn và so sánh nhất",
+      "sortOrder": 3
+    },
+    {
+      "id": "lesson-tieng-anh-5-weather-seasons",
+      "chapterId": "chapter-tieng-anh-5-hk2",
+      "topicId": "tieng-anh-5-weather-seasons",
+      "name": "Thời tiết và mùa",
+      "sortOrder": 4
+    },
+    {
+      "id": "lesson-tieng-anh-5-hobbies",
+      "chapterId": "chapter-tieng-anh-5-hk2",
+      "topicId": "tieng-anh-5-hobbies",
+      "name": "Sở thích",
+      "sortOrder": 5
+    },
+    {
+      "id": "lesson-tieng-anh-5-daily-routines",
+      "chapterId": "chapter-tieng-anh-5-hk2",
+      "topicId": "tieng-anh-5-daily-routines",
+      "name": "Thói quen hằng ngày",
+      "sortOrder": 6
+    },
+    {
+      "id": "lesson-tieng-anh-5-prepositions",
+      "chapterId": "chapter-tieng-anh-5-hk2",
+      "topicId": "tieng-anh-5-prepositions",
+      "name": "Giới từ",
+      "sortOrder": 7
+    }
+  ]
+}

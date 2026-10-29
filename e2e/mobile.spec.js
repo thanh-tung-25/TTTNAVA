@@ -32,3 +32,14 @@ test.describe('Giao diện di động 360px', () => {
     await expectNoHorizontalOverflow(page);
   });
 });
+
+test.describe('Ngân hàng câu hỏi trên di động 360px', () => {
+  test.use({ storageState: 'e2e/.auth/admin.json' });
+
+  test('test_e2e_mobile_admin_question_bank_fits_viewport', async ({ page }) => {
+    await page.goto('/pages/admin/questions/');
+    await expect(page.locator('#curriculum-tree .tree-year')).toBeVisible();
+    await expect(page.locator('#scope-empty')).toBeVisible();
+    await expectNoHorizontalOverflow(page);
+  });
+});

@@ -6,8 +6,10 @@ import examRouter from './exam.js';
 import challengeRouter from './challenge.js';
 import diamondRouter from './diamond.js';
 import adminRouter from './admin.js';
+import chineseRouter from './chinese.js';
 
 const router = Router();
+router.use('/chinese', chineseRouter);
 
 router.use('/auth', authRouter);
 router.use('/catalog', catalogRouter);

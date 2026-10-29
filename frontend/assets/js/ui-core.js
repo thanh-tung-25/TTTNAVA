@@ -1,6 +1,7 @@
 import { api, avatarUrl, escapeHtml } from './api.js';
 
 const STUDENT_NAV = [
+  ['chinese', '/pages/student/chinese/', 'Tiếng Trung'],
   ['home', '/pages/student/home/', 'Trang chủ'],
   ['practice', '/pages/student/practice/', 'Luyện tập'],
   ['exam', '/pages/student/exam/', 'Thi'],
@@ -11,6 +12,7 @@ const STUDENT_NAV = [
 ];
 
 const ADMIN_NAV = [
+  ['chinese', '/pages/admin/chinese/', 'Quản lý Tiếng Trung'],
   ['students', '/pages/admin/students/', 'Học sinh'],
   ['questions', '/pages/admin/questions/', 'Câu hỏi'],
   ['stats', '/pages/admin/stats/', 'Thống kê'],
@@ -24,7 +26,7 @@ function renderHeader(profile, role, active) {
   const home = role === 'admin' ? '/pages/admin/students/' : '/pages/student/home/';
   const subtitle = role === 'admin'
     ? 'Quản trị viên'
-    : (profile.grade ? `Học sinh lớp ${profile.grade}` : 'Học sinh');
+    : (profile.grade ? `Học sinh lớp ${profile.grade}` : 'Học sinh Tiếng Trung');
 
   const links = nav.map(([key, href, label]) => (
     `<a class="nav-link" href="${href}"${key === active ? ' aria-current="page"' : ''}>${label}</a>`

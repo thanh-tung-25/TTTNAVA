@@ -123,4 +123,25 @@ describe('Quản trị học sinh', () => {
     expect(response.status).toBe(403);
     expect(response.body.error.code).toBe('FORBIDDEN');
   });
+
+  test('creates and edits Chinese learners without a primary grade', async () => {
+    const created = await adminAgent.post('/api/v1/admin/students').send({
+      username: 'test_chinese_learner', password: 'Chinese@123', displayName: 'Học viên Trung', grade: null,
+    });
+    expect(created.status).toBe(201);
+    expect(created.body.data.grade).toBeNull();
+    const login = await loginAs('test_chinese_learner', 'Chinese@123');
+    expect(login.response.status).toBe(200);
+    expect((await login.agent.get('/api/v1/chinese/catalog')).status).toBe(200);
+    expect((await login.agent.post('/api/v1/admin/students').send({})).status).toBe(403);
+    const filtered = await adminAgent.get('/api/v1/admin/students?program=chinese');
+    expect(filtered.body.data.some(s => s.id === created.body.data.id)).toBe(true);
+    expect(filtered.body.data.every(s => s.grade === null)).toBe(true);
+    const changed = await adminAgent.patch(`/api/v1/admin/students/${created.body.data.id}`).send({ grade: 3 });
+    expect(changed.body.data.grade).toBe(3);
+    const back = await adminAgent.patch(`/api/v1/admin/students/${created.body.data.id}`).send({ grade: null });
+    expect(back.body.data.grade).toBeNull();
+    const bad = await adminAgent.post('/api/v1/admin/students').send({username:'test_bad_grade',password:'Chinese@123',displayName:'Sai lớp',grade:6});
+    expect(bad.status).toBe(400);
+  });
 });

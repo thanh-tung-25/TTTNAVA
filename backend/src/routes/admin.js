@@ -8,6 +8,7 @@ import {
 } from '../controllers/admin-student-controller.js';
 import {
   createQuestionHandler,
+  curriculumTreeHandler,
   importAiHandler,
   importConfigHandler,
   importDocxHandler,
@@ -33,6 +34,7 @@ router.patch('/students/:id', updateStudentHandler);
 router.post('/students/:id/password', resetPasswordHandler);
 router.post('/students/:id/lock', lockStudentHandler);
 
+router.get('/curriculum/tree', curriculumTreeHandler);
 router.get('/questions', listQuestionsHandler);
 router.get('/questions/import/config', importConfigHandler);
 router.post('/questions/import', importDraftsHandler);

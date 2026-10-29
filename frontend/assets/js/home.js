@@ -22,6 +22,10 @@ function activityRow(item, kind) {
 
 async function load() {
   const profile = await initPage('student', 'home');
+  if (profile.grade === null) {
+    window.location.replace('/pages/student/chinese/');
+    return;
+  }
   const hour = new Date().getHours();
   const salute = hour < 11 ? 'Chào buổi sáng' : hour < 18 ? 'Chào buổi chiều' : 'Chào buổi tối';
   greeting.textContent = `${salute}, ${profile.displayName}!`;

@@ -11,58 +11,79 @@
 </head>
 <body>
   <header id="app-header"></header>
-  <main class="page">
+  <main class="page question-bank-page">
     <div class="page-head">
       <div>
         <p class="eyebrow">Quản trị</p>
         <h1>Ngân hàng câu hỏi</h1>
-        <p>Thêm, sửa, duyệt và ẩn câu hỏi. Học sinh chỉ nhận câu hỏi <strong>Đã đăng</strong>.</p>
+        <p>Tổ chức câu hỏi theo năm học, khối lớp, học kỳ, môn học, chương và bài học. Học sinh chỉ nhận câu hỏi <strong>Đã đăng</strong>.</p>
       </div>
       <div class="actions">
-        <button class="btn" id="create-question" type="button">+ Thêm câu hỏi</button>
+        <button class="btn" id="create-question" type="button">+ Tạo câu hỏi</button>
         <button class="btn btn-ghost" id="import-questions" type="button">Nhập từ Word</button>
         <a class="btn btn-ghost btn-sm" href="/assets/templates/mau-nhap-cau-hoi.docx" download>Tải file mẫu</a>
       </div>
     </div>
 
-    <section class="card">
-      <div class="filter-bar">
-        <select class="select" id="filter-subject" aria-label="Môn học">
-          <option value="">Tất cả môn</option>
-          <option value="toan">Toán</option>
-          <option value="tieng-viet">Tiếng Việt</option>
-          <option value="tieng-anh">Tiếng Anh</option>
-        </select>
-        <select class="select" id="filter-grade" aria-label="Lớp">
-          <option value="">Tất cả lớp</option>
-          <option value="1">Lớp 1</option>
-          <option value="2">Lớp 2</option>
-          <option value="3">Lớp 3</option>
-          <option value="4">Lớp 4</option>
-          <option value="5">Lớp 5</option>
-        </select>
-        <select class="select" id="filter-type" aria-label="Loại câu">
-          <option value="">Tất cả loại</option>
-          <option value="single_choice">Một đáp án</option>
-          <option value="multiple_choice">Nhiều đáp án</option>
-          <option value="true_false">Đúng/Sai</option>
-          <option value="fill_in">Điền</option>
-        </select>
-        <select class="select" id="filter-status" aria-label="Trạng thái">
-          <option value="">Tất cả trạng thái</option>
-          <option value="draft">Nháp</option>
-          <option value="published">Đã đăng</option>
-          <option value="hidden">Đang ẩn</option>
-        </select>
-        <input class="input" id="filter-q" type="search" placeholder="Tìm trong đề bài…" maxlength="100">
-        <button class="btn btn-sm" id="filter-button" type="button">Lọc</button>
-      </div>
-      <div id="questions-table"><div class="loading">Đang tải câu hỏi…</div></div>
-      <div class="quiz-actions" style="justify-content:space-between;margin-top:1rem">
-        <button class="btn btn-ghost btn-sm" id="prev-page" type="button">← Trang trước</button>
-        <span class="muted" id="page-label"></span>
-        <button class="btn btn-ghost btn-sm" id="next-page" type="button">Trang sau →</button>
-      </div>
+    <section class="question-bank-layout">
+      <aside class="card curriculum-panel" aria-label="Cây chương trình học">
+        <div class="card-head">
+          <div>
+            <h2>Chương trình học</h2>
+            <p class="muted">Chọn đúng mục để xem ngân hàng câu hỏi.</p>
+          </div>
+          <button class="icon-btn" id="tree-refresh" type="button" aria-label="Tải lại cây chương trình" title="Tải lại cây chương trình">↻</button>
+        </div>
+        <label class="tree-year-field">
+          <span>Năm học</span>
+          <select class="select" id="tree-year" aria-label="Chọn năm học"></select>
+        </label>
+        <div id="curriculum-tree" class="curriculum-tree">
+          <div class="loading">Đang tải chương trình…</div>
+        </div>
+      </aside>
+
+      <section class="card question-panel" aria-label="Danh sách câu hỏi">
+        <div id="scope-empty" class="scope-guidance">
+          <div class="scope-guidance-icon" aria-hidden="true">🗂️</div>
+          <h2>Chọn mục chương trình để bắt đầu</h2>
+          <p>Chọn khối lớp, học kỳ, môn học, chương hoặc bài học ở cây bên trái. Danh sách chỉ hiển thị câu hỏi thuộc đúng mục đang chọn.</p>
+        </div>
+
+        <div id="scope-content" class="hidden">
+          <nav id="question-breadcrumb" class="question-breadcrumb" aria-label="Đường dẫn chương trình"></nav>
+          <div class="filter-bar question-filter-bar">
+            <input class="input" id="filter-q" type="search" placeholder="Tìm nội dung hoặc mã câu hỏi…" maxlength="100" aria-label="Tìm câu hỏi">
+            <select class="select" id="filter-difficulty" aria-label="Độ khó">
+              <option value="">Tất cả độ khó</option>
+              <option value="easy">Dễ</option>
+              <option value="medium">Vừa</option>
+              <option value="hard">Khó</option>
+            </select>
+            <select class="select" id="filter-type" aria-label="Loại câu">
+              <option value="">Tất cả loại</option>
+              <option value="single_choice">Một đáp án</option>
+              <option value="multiple_choice">Nhiều đáp án</option>
+              <option value="true_false">Đúng/Sai</option>
+              <option value="fill_in">Điền</option>
+            </select>
+            <select class="select" id="filter-status" aria-label="Trạng thái">
+              <option value="">Tất cả trạng thái</option>
+              <option value="draft">Nháp</option>
+              <option value="published">Đã đăng</option>
+              <option value="hidden">Đang ẩn</option>
+            </select>
+            <button class="btn btn-sm" id="filter-button" type="button">Lọc</button>
+            <button class="btn btn-ghost btn-sm" id="refresh-questions" type="button">↻ Tải lại</button>
+          </div>
+          <div id="questions-table"><div class="loading">Đang tải câu hỏi…</div></div>
+          <div class="quiz-actions" style="justify-content:space-between;margin-top:1rem">
+            <button class="btn btn-ghost btn-sm" id="prev-page" type="button">← Trang trước</button>
+            <span class="muted" id="page-label"></span>
+            <button class="btn btn-ghost btn-sm" id="next-page" type="button">Trang sau →</button>
+          </div>
+        </div>
+      </section>
     </section>
   </main>
   <script type="module" src="/assets/js/admin-questions.js"></script>

@@ -1,4 +1,6 @@
 export const FIXTURE_TOPIC_ID = 'toan-3-cong-tru-1000';
+export const FIXTURE_CHAPTER_ID = 'chapter-toan-3-hk1';
+export const FIXTURE_LESSON_ID = 'lesson-toan-3-cong-tru-1000';
 export const FIXTURE_PREFIX = 'fixture-q-';
 
 function choice(index) {

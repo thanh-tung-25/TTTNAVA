@@ -1,53 +1,33 @@
 import { api, escapeHtml, toast } from '/assets/js/api.js';
 import { confirmAction, openModal, setBusy, showError } from '/assets/js/ui.js';
-import { load } from './admin-questions-actions.js';
-import { refreshTopics } from './admin-question-form.js';
+import { loadQuestions } from './admin-questions-actions.js';
+import {
+  bindScopeControls,
+  defaultScopeIds,
+  readScopeIds,
+  renderScopeSelects,
+  scopeControlsHtml,
+  scopeIdsFromMetadata,
+  scopeLabels,
+} from './admin-question-scope.js';
 import { renderImportPreview, syncImportPreview } from './admin-import-preview.js';
-import { store } from './admin-questions-context.js';
+import { findScope, loadTree, showScope } from './admin-questions-tree.js';
 
-function statusLine(message, type = 'info') {
+function statusLine(message) {
   const box = document.querySelector('[data-import-status]');
   if (!box) return;
-  box.className = type === 'error' ? 'form-error' : 'muted';
+  box.className = 'muted';
   box.textContent = message;
 }
-function metadataValues(container) {
-  return {
-    subjectId: container.querySelector('[data-subject]').value,
-    grade: Number(container.querySelector('[data-grade]').value),
-    topicId: container.querySelector('[data-topic]').value,
-    subjectName: container.querySelector('[data-subject]').selectedOptions[0]?.text ?? '',
-    topicName: container.querySelector('[data-topic]').selectedOptions[0]?.text ?? '',
-  };
-}
 
-async function applyMetadata(container, metadata) {
-  if (metadata.subjectId) container.querySelector('[data-subject]').value = metadata.subjectId;
-  if (metadata.grade) container.querySelector('[data-grade]').value = String(metadata.grade);
-  await refreshTopics(container);
-  if (metadata.topicName) {
-    const option = [...container.querySelectorAll('[data-topic] option')]
-      .find((item) => item.text.toLocaleLowerCase('vi').includes(metadata.topicName.toLocaleLowerCase('vi')));
-    if (option) container.querySelector('[data-topic]').value = option.value;
-  }
-}
-
-function previewHtml(config) {
+function previewHtml(config, tree) {
   return `
     <div class="form-error hidden" data-error role="alert"></div>
     <p class="muted" style="font-size:.84rem;margin:0 0 .75rem">
-      Chọn môn, khối lớp và chủ đề trước khi lưu. Câu hỏi nhập từ Word luôn được lưu ở trạng thái <strong>Nháp</strong>.
+      Chọn đúng cấp chương trình trước khi lưu. Câu hỏi nhập từ Word luôn được lưu ở trạng thái <strong>Nháp</strong>.
     </p>
-    <div class="grid grid-3">
-      <div class="field"><label>Môn học</label><select class="select" data-subject>
-        ${store.subjects.map((subject) => `<option value="${subject.id}">${escapeHtml(subject.name)}</option>`).join('')}
-      </select></div>
-      <div class="field"><label>Khối lớp</label><select class="select" data-grade>
-        ${[1, 2, 3, 4, 5].map((grade) => `<option value="${grade}"${grade === 3 ? ' selected' : ''}>Lớp ${grade}</option>`).join('')}
-      </select></div>
-      <div class="field"><label>Chủ đề</label><select class="select" data-topic></select></div>
-    </div>
-    <div class="field"><label for="docx-file">Tệp tài liệu .docx (tối đa 5 MB)</label>
+    ${scopeControlsHtml(tree, defaultScopeIds(tree))}
+    <div class="field"><label for="docx-file">Tệp tài liệu .docx (tối đa 20 MB)</label>
       <input class="input" id="docx-file" type="file" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
       <p class="hint">Mẫu: <strong>Câu 1.</strong> … <strong>A.</strong> … <strong>Đáp án:</strong> A · <strong>Lời giải:</strong> …</p>
     </div>
@@ -72,14 +52,14 @@ function previewHtml(config) {
 
 export async function openImport() {
   try {
-    const [configPayload, subjectPayload] = await Promise.all([
+    const [configPayload, treePayload] = await Promise.all([
       api('/api/v1/admin/questions/import/config'),
-      api('/api/v1/catalog/subjects'),
+      api('/api/v1/admin/curriculum/tree'),
     ]);
     const config = configPayload.data;
-    store.subjects = subjectPayload.data;
+    const tree = treePayload.data;
     const container = document.createElement('div');
-    container.innerHTML = previewHtml(config);
+    container.innerHTML = previewHtml(config, tree);
     let file = null;
     let questions = [];
     const preview = container.querySelector('[data-preview]');
@@ -87,10 +67,8 @@ export async function openImport() {
     const aiPanel = container.querySelector('[data-ai-panel]');
     const errorBox = container.querySelector('[data-error]');
     const fileInput = container.querySelector('#docx-file');
+    bindScopeControls(container, tree, readScopeIds(container));
 
-    refreshTopics(container);
-    container.querySelector('[data-subject]').addEventListener('change', () => refreshTopics(container));
-    container.querySelector('[data-grade]').addEventListener('change', () => refreshTopics(container));
     fileInput.addEventListener('change', () => {
       file = fileInput.files[0] ?? null;
       statusLine(file ? `Đã chọn ${file.name}` : 'Chưa chọn tệp.');
@@ -101,8 +79,7 @@ export async function openImport() {
       renderImportPreview(preview, questions);
       saveButton.disabled = questions.length === 0;
       aiPanel.classList.toggle('hidden', questions.length > 0);
-      const warnings = data.extractionWarnings?.length ? ` Một số định dạng có thể bị bỏ qua.` : '';
-      statusLine(`Đọc được ${questions.length} câu hỏi nháp.${warnings}`);
+      statusLine(`Đọc được ${questions.length} câu hỏi nháp.${data.extractionWarnings?.length ? ' Một số định dạng có thể bị bỏ qua.' : ''}`);
       if (data.issues?.length) {
         errorBox.classList.remove('hidden');
         errorBox.textContent = data.issues.join(' ');
@@ -115,7 +92,7 @@ export async function openImport() {
         return;
       }
       if (file.size > config.maxFileBytes) {
-        showError(errorBox, new Error('Tệp .docx tối đa 5 MB.'));
+        showError(errorBox, new Error('Tệp .docx tối đa 20 MB.'));
         return;
       }
       errorBox.classList.add('hidden');
@@ -124,7 +101,7 @@ export async function openImport() {
         const formData = new FormData();
         formData.append('file', file);
         const payload = await api('/api/v1/admin/questions/import/docx', { method: 'POST', body: formData });
-        await applyMetadata(container, payload.data.metadata ?? {});
+        renderScopeSelects(container, tree, scopeIdsFromMetadata(tree, payload.data.metadata ?? {}));
         showQuestions(payload.data);
       } catch (error) {
         showError(errorBox, error);
@@ -142,12 +119,13 @@ export async function openImport() {
       if (!confirmed) return;
       setBusy(event.currentTarget, true, 'AI đang tạo…');
       try {
-        const meta = metadataValues(container);
+        const ids = readScopeIds(container);
+        const labels = scopeLabels(tree, ids);
         const formData = new FormData();
         formData.append('file', file);
-        formData.append('subjectName', meta.subjectName);
-        formData.append('grade', String(meta.grade));
-        formData.append('topicName', meta.topicName);
+        formData.append('subjectName', labels.subjectName);
+        formData.append('grade', String(ids.grade));
+        formData.append('topicName', labels.lessonName);
         const payload = await api('/api/v1/admin/questions/import/ai', { method: 'POST', body: formData });
         showQuestions(payload.data);
       } catch (error) {
@@ -158,10 +136,10 @@ export async function openImport() {
     });
 
     saveButton.addEventListener('click', async () => {
-      const meta = metadataValues(container);
       if (!questions.length) return;
-      if (!meta.topicId) {
-        showError(errorBox, new Error('Vui lòng chọn chủ đề trước khi lưu.'));
+      const ids = readScopeIds(container);
+      if (!ids.lessonId) {
+        showError(errorBox, new Error('Vui lòng chọn bài học trước khi lưu.'));
         return;
       }
       syncImportPreview(preview, questions);
@@ -171,15 +149,16 @@ export async function openImport() {
         const result = await api('/api/v1/admin/questions/import', {
           method: 'POST',
           body: {
-            subjectId: meta.subjectId,
-            grade: meta.grade,
-            topicId: meta.topicId,
+            ...ids,
             questions: questions.map(({ sourceNumber, issues, ...question }) => question),
           },
         });
         toast(`Đã lưu ${result.data.created} câu hỏi nháp.`, 'success');
         document.querySelector('[data-close]')?.click();
-        load();
+        const scope = findScope('lesson', ids.lessonId);
+        if (scope) showScope(scope);
+        await loadTree();
+        await loadQuestions();
       } catch (error) {
         showError(errorBox, error);
         setBusy(saveButton, false);

@@ -1,7 +1,7 @@
 import multer from 'multer';
 import { AppError } from '../utils/errors.js';
 
-const MAX_FILE_BYTES = 5 * 1024 * 1024;
+const MAX_FILE_BYTES = 20 * 1024 * 1024;
 const ALLOWED_MIME = new Set([
   'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
   'application/octet-stream',
@@ -28,7 +28,7 @@ export function uploadDocx(request, response, next) {
   upload(request, response, (error) => {
     if (error instanceof multer.MulterError) {
       if (error.code === 'LIMIT_FILE_SIZE') {
-        next(new AppError(413, 'FILE_TOO_LARGE', 'Tệp .docx tối đa 5 MB'));
+        next(new AppError(413, 'FILE_TOO_LARGE', 'Tệp .docx tối đa 20 MB'));
       } else {
         next(new AppError(400, 'UPLOAD_INVALID', `Tải tệp thất bại: ${error.message}`));
       }

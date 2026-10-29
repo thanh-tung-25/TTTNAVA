@@ -3,33 +3,49 @@ import { AppError } from '../utils/errors.js';
 import { parseJson } from '../utils/normalize.js';
 import { toIso } from '../utils/time.js';
 import { normalizeQuestionStatus } from './admin-question-validation.js';
+import { currentQuestionScope, resolveQuestionScope } from './curriculum-scope.js';
 
-function addStatusFilter(where, params, status) {
-  if (status === 'published') {
-    where.push("q.status = 'published'");
-  } else if (status === 'hidden') {
-    where.push("q.status = 'hidden'");
-  } else if (status === 'draft') {
-    where.push("q.status IN ('draft', 'visible')");
-  }
+function addStatusFilter(where, status) {
+  if (status === 'published') where.push("q.status = 'published'");
+  else if (status === 'hidden') where.push("q.status = 'hidden'");
+  else if (status === 'draft') where.push("q.status IN ('draft', 'visible')");
+}
+
+async function scopeFilter(filters) {
+  const scope = await resolveQuestionScope(filters);
+  if (scope.lessonId) return { sql: 'q.topic_id = ?', params: [scope.topicId], scope };
+  return {
+    sql: 'q.topic_id IN (SELECT topic_id FROM curriculum_lessons WHERE chapter_id = ?)',
+    params: [scope.chapterId],
+    scope,
+  };
 }
 
 export async function listQuestions(filters, page, limit) {
   const where = [];
   const params = [];
-  if (filters.topicId) { where.push('q.topic_id = ?'); params.push(filters.topicId); }
-  if (filters.subjectId) { where.push('t.subject_id = ?'); params.push(filters.subjectId); }
-  if (filters.grade) { where.push('t.grade = ?'); params.push(filters.grade); }
-  addStatusFilter(where, params, filters.status);
+  const scoped = await scopeFilter(filters);
+  where.push(scoped.sql);
+  params.push(...scoped.params);
+  addStatusFilter(where, filters.status);
   if (filters.type) { where.push('q.type = ?'); params.push(filters.type); }
-  if (filters.q) { where.push('q.prompt LIKE ?'); params.push(`%${filters.q}%`); }
-  const whereSql = where.length ? `WHERE ${where.join(' AND ')}` : '';
+  if (filters.difficulty) { where.push('q.difficulty = ?'); params.push(filters.difficulty); }
+  if (filters.q) {
+    where.push('(q.prompt LIKE ? OR q.id LIKE ?)');
+    params.push(`%${filters.q}%`, `%${filters.q}%`);
+  }
+  const whereSql = `WHERE ${where.join(' AND ')}`;
   const offset = (page - 1) * limit;
 
   const rows = await query(
     `SELECT q.id, q.type, q.prompt, q.difficulty, q.status, q.topic_id,
             q.created_at, q.updated_at, q.published_at,
             t.name AS topic_name, t.grade, t.subject_id, s.name AS subject_name,
+            (SELECT cl.name FROM curriculum_lessons cl WHERE cl.topic_id = q.topic_id
+             ORDER BY cl.sort_order ASC LIMIT 1) AS lesson_name,
+            (SELECT cc.name FROM curriculum_lessons cl
+             JOIN curriculum_chapters cc ON cc.id = cl.chapter_id
+             WHERE cl.topic_id = q.topic_id ORDER BY cc.sort_order ASC LIMIT 1) AS chapter_name,
             cp.display_name AS creator_name, up.display_name AS updater_name,
             (SELECT COUNT(*) FROM question_options qo WHERE qo.question_id = q.id) AS option_count
      FROM questions q
@@ -43,10 +59,7 @@ export async function listQuestions(filters, page, limit) {
     [...params, limit, offset],
   );
   const [total] = await query(
-    `SELECT COUNT(*) AS total FROM questions q
-     JOIN topics t ON t.id = q.topic_id
-     JOIN subjects s ON s.id = t.subject_id
-     ${whereSql}`,
+    `SELECT COUNT(*) AS total FROM questions q ${whereSql}`,
     params,
   );
   return {
@@ -58,6 +71,8 @@ export async function listQuestions(filters, page, limit) {
       status: normalizeQuestionStatus(row),
       topicId: row.topic_id,
       topicName: row.topic_name,
+      lessonName: row.lesson_name,
+      chapterName: row.chapter_name,
       grade: Number(row.grade),
       subjectId: row.subject_id,
       subjectName: row.subject_name,
@@ -69,6 +84,7 @@ export async function listQuestions(filters, page, limit) {
       publishedAt: toIso(row.published_at),
     })),
     total: Number(total.total),
+    scope: scoped.scope,
   };
 }
 
@@ -92,6 +108,7 @@ export async function getQuestionDetail(questionId) {
     [questionId],
   );
   const row = rows[0];
+  const scope = await currentQuestionScope(row.topic_id);
   return {
     id: row.id,
     type: row.type,
@@ -104,6 +121,7 @@ export async function getQuestionDetail(questionId) {
     grade: Number(row.grade),
     subjectId: row.subject_id,
     subjectName: row.subject_name,
+    ...scope,
     options: options.map((option) => ({ key: option.opt_key, text: option.option_text })),
     answer: parseJson(row.answer_json),
     explanation: row.explanation,

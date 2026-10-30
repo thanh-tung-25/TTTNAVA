@@ -54,7 +54,7 @@ export function createApp() {
       const user = await resolveUser(request);
       response.redirect(user.role === 'admin' ? '/pages/admin/students/' : '/pages/student/home/');
     } catch {
-      response.redirect('/pages/login/');
+      response.sendFile(path.join(pagesRoot, 'welcome', 'index.html'));
     }
   });
 

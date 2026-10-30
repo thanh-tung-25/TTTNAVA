@@ -1,0 +1,41 @@
+﻿import {beforeAll,afterAll,describe,it,expect} from 'vitest';
+import {randomUUID} from 'node:crypto';
+import {createTestUser,loginStudent} from './helpers/index.js';
+import {query} from '../src/config/db.js';
+const base='/api/v1/chinese';let admin,student;const users=[];
+beforeAll(async()=>{for(const role of ['admin','student'])users.push(await createTestUser({role,username:'crud_'+randomUUID().replaceAll('-','').slice(0,12)}));admin=await loginStudent(users[0]);student=await loginStudent(users[1]);});
+afterAll(async()=>{for(const user of users)await query('DELETE FROM profiles WHERE id=?',[user.id]);});
+describe('Chinese content management',()=>{
+ it('creates, edits and deletes published content while preserving attempt snapshots',async()=>{
+  const body={level_id:1,title:'CRUD lesson',position:1,status:'published'};
+  const lesson=(await admin.post(base+'/lessons').send(body)).body.data.id;
+  const created=await admin.post(base+'/sets').send({lesson_id:lesson,title:'Manual content'});
+  expect(created.status).toBe(200);const set=created.body.data.id;
+  const items=[{kind:'question',data:{prompt:'1 + 1?',type:'choice',options:['1','2'],accepted:['2'],approved:true}}];
+  expect((await admin.put(base+'/sets/'+set).send({title:'Published',status:'published',items})).status).toBe(200);
+  const question=(await admin.get(base+'/sets/'+set)).body.data.items[0];
+  const attempt=await student.post(base+'/attempts').send({set_id:set});expect(attempt.status).toBe(200);
+  expect((await student.post(`${base}/attempts/${attempt.body.data.id}/answers`).send({item_id:question.id,value:'2',lock:true})).status).toBe(200);
+  expect((await student.post(`${base}/attempts/${attempt.body.data.id}/finish`)).status).toBe(200);
+  const test=(await admin.post(base+'/tests').send({title:'Source test',set_ids:[set],status:'published',duration_seconds:null,pass_percent:70})).body.data.id;
+  const testAttempt=await student.post(base+'/attempts').send({test_id:test});expect(testAttempt.status).toBe(200);
+  expect((await student.delete(base+'/sets/'+set)).status).toBe(403);
+  expect((await student.delete(base+'/lessons/'+lesson)).status).toBe(403);
+  expect((await student.delete(base+'/tests/'+test)).status).toBe(403);
+  expect((await admin.put(base+'/sets/'+set).send({title:'Edited after publication',status:'published',items:[{...question,data:{...question.data,prompt:'One plus one?'}}]})).status).toBe(200);
+  expect((await admin.delete(base+'/sets/'+set)).status).toBe(200);
+  expect((await admin.get(base+'/sets/'+set)).status).toBe(404);
+  const preserved=await student.get(`${base}/attempts/${attempt.body.data.id}`);expect(preserved.status).toBe(200);expect(preserved.body.data.score).toBe(100);expect(preserved.body.data.items[0].data.prompt).toBe('1 + 1?');
+  const sourceTest=(await admin.get(base+'/tests')).body.data.find(t=>t.id===test);expect(sourceTest.status).toBe('draft');expect(sourceTest.set_ids).toEqual([]);
+  expect((await admin.delete(base+'/tests/'+test)).status).toBe(200);
+  expect((await student.get(`${base}/attempts/${testAttempt.body.data.id}`)).status).toBe(200);
+  const extra=(await admin.post(base+'/sets').send({lesson_id:lesson,title:'Nested content'})).body.data.id;
+  expect((await admin.delete(base+'/lessons/'+lesson)).status).toBe(200);
+  expect((await admin.get(base+'/sets/'+extra)).status).toBe(404);
+  expect((await query('SELECT id FROM chinese_lessons WHERE id=?',[lesson])).length).toBe(0);
+  expect((await admin.delete(base+'/lessons/'+lesson)).status).toBe(404);
+  expect((await admin.delete(base+'/sets/not-an-id')).status).toBe(400);
+  expect((await admin.delete(base+'/tests/'+randomUUID())).status).toBe(404);
+ });
+});
+

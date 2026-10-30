@@ -1,10 +1,20 @@
 import mammoth from 'mammoth';
 import { badRequest } from '../utils/errors.js';
+import { cleanChineseLine, isQuestionStart, isChineseSection, parseChineseQuestion } from './chinese-question-text.js';
 // Only explicit source data is recognized. Unrecognized paragraphs remain editable.
 export function parseChineseText(raw) {
  const items = []; let section = 'unknown';
  const sections = { '[TU VUNG]':'vocabulary','[NGU PHAP]':'grammar','[HOI THOAI]':'dialogue','[BAI DOC]':'reading','[CAU HOI]':'question' };
- for (const line of raw.split(/\r?\n/).map(s => s.trim()).filter(Boolean)) {
+ const lines=raw.split(/\r?\n/).map(cleanChineseLine).filter(Boolean);
+ for (let n=0;n<lines.length;n++) {
+  const line=lines[n];
+  if(isQuestionStart(line)) {
+   const block=[line];
+   while(n+1<lines.length&&!isQuestionStart(lines[n+1])&&!isChineseSection(lines[n+1]))block.push(lines[++n]);
+   items.push(...parseChineseQuestion(block));continue;
+  }
+  // These are document metadata, retained in raw_text, not learning activities.
+  if(/^(MÔN|MON|LỚP|LOP|CHỦ ĐỀ|CHU DE)\s*[:：]/iu.test(line))continue;
   if (sections[line.toUpperCase()]) { section = sections[line.toUpperCase()]; continue; }
   const cells = line.split(/\t|\s*\|\s*/).map(s => s.trim());
   if (/^(Hanzi|Chữ Hán|Loại|Type)\s*$/iu.test(cells[0]) && cells.length > 1) continue;
@@ -39,7 +49,7 @@ export async function extractChinese(buffer) {
   // Mammoth HTML preserves table cells; convert only structural separators to plain text.
   const result = await mammoth.convertToHtml({buffer});
   const html = result.value.replace(/<t[dh][^>]*>[\s\S]*?<\/t[dh]>/gi,cell=>cell.replace(/<\/p>/gi,' ').replace(/<p[^>]*>/gi,''));
-  const raw = html.replace(/<\/t[dh]>\s*<t[dh][^>]*>/gi,'\t').replace(/<\/p>\s*<p[^>]*>/gi,'\n')
+  const raw = html.replace(/<br\s*\/?>/gi,'\n').replace(/<\/t[dh]>\s*<t[dh][^>]*>/gi,'\t').replace(/<\/p>\s*<p[^>]*>/gi,'\n')
    .replace(/<\/tr>|<\/h[1-6]>|<\/p>/gi,'\n').replace(/<[^>]*>/g,'')
    .replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'");
   if (raw.length > 500000) throw badRequest('Nội dung giải nén quá lớn (tối đa 500.000 ký tự)');

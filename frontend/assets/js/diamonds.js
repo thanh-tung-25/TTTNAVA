@@ -9,6 +9,9 @@ const REASONS = {
   challenge_win: ['⚔️', 'Thắng trận thách đấu'],
   challenge_loss: ['🤝', 'Hoàn thành trận thách đấu'],
   challenge_draw: ['🤝', 'Hoà trận thách đấu'],
+  chinese_complete: ['📚', 'Tiếng Trung: đạt từ 70%'],
+  chinese_perfect: ['🌟', 'Tiếng Trung: đúng hết'],
+  chinese_low: ['📘', 'Tiếng Trung: kết quả dưới 70%'],
 };
 
 function row(item) {
@@ -20,7 +23,7 @@ function row(item) {
         <strong>${escapeHtml(label)}</strong><br>
         <time>${formatDate(item.createdAt)}</time>
       </div>
-      <span class="ledger-amount">+${item.amount}</span>
+      <span class="ledger-amount">${item.amount > 0 ? '+' : ''}${item.amount}</span>
     </div>`;
 }
 

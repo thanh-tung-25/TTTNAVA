@@ -1,1 +1,29 @@
 @import url('/assets/css/chinese.css');
+
+.page{max-width:1040px;padding-bottom:110px}
+.simple-intro{color:#52697d;margin:1rem 0;font-size:1.05rem}
+.simple-scope,.simple-upload{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.simple-upload button{grid-column:1/-1;justify-self:start}
+.simple-extra{margin:1rem 0;padding:.8rem 1rem;border:1px solid #dbe5ee;border-radius:10px;background:#fff}
+.simple-extra>summary{cursor:pointer;color:#27546d;font-weight:600}
+.simple-extra form{margin-top:.8rem}
+.simple-document{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 0;border-top:1px solid #e3eaf1}
+.simple-document>div{min-width:0;overflow-wrap:anywhere}
+.simple-document p{margin:.3rem 0}
+.simple-document>a{flex-shrink:0}
+.simple-status{display:inline-block;padding:.3rem .65rem;border-radius:8px;background:#fff1d8;color:#785012;font-size:.9rem}
+.simple-status.published{background:#e3f6ec;color:#22613f}
+.simple-empty{padding:1.3rem;color:#52697d;background:#fff;border-radius:12px}
+.simple-question{padding:1.2rem;background:#fff;border:1px solid #dae5ef;border-radius:12px;margin:1rem 0;overflow-wrap:anywhere}
+.simple-question h3{font-size:1.12rem;margin:0 0 1rem}
+.simple-options{padding-left:1.8rem;line-height:1.9}
+.simple-answer{color:#205f43;font-weight:600;background:#eff9f3;padding:.7rem;border-radius:8px}
+.simple-pagination{display:flex;align-items:center;justify-content:center;gap:1rem;margin:1rem 0}
+.simple-footer{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);width:min(1000px,calc(100% - 2rem));display:flex;justify-content:flex-end;gap:.7rem;padding:1rem;background:#fff;border:1px solid #dbe5ee;border-radius:12px;box-shadow:0 -4px 20px #142d4610;z-index:5}
+.chinese-field input[type=file]{width:100%;max-width:100%}
+.simple-extra[open]>summary{margin-bottom:.7rem}
+.simple-footer{flex-wrap:wrap}
+.page{padding-bottom:180px}
+.simple-footer button{white-space:normal}
+#notice:empty{display:none}
+@media(max-width:640px){.simple-scope,.simple-upload{grid-template-columns:1fr}.simple-document{align-items:flex-start;flex-direction:column}.simple-footer{justify-content:center;padding:.7rem}.simple-footer button{font-size:.9rem}.simple-pagination{gap:.4rem}}

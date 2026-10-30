@@ -1,8 +1,9 @@
 import {test,expect} from '@playwright/test';
 import {query,closePool} from '../backend/src/config/db.js';
-let lesson,setId,documentId;
+let lesson,setId,documentId,testId;
 test.use({storageState:'e2e/.auth/admin.json'});
 test.afterAll(async()=>{
+ if(testId){await query('DELETE FROM chinese_attempts WHERE test_id=?',[testId]);await query('DELETE FROM chinese_tests WHERE id=?',[testId]);}
  if(setId){
   await query('DELETE FROM chinese_attempts WHERE set_id=?',[setId]);await query('DELETE FROM chinese_progress WHERE set_id=?',[setId]);
   const rows=await query('SELECT id FROM chinese_items WHERE set_id=?',[setId]);for(const i of rows){await query('DELETE FROM chinese_review_events WHERE item_id=?',[i.id]);await query('DELETE FROM chinese_reviews WHERE item_id=?',[i.id]);}
@@ -10,22 +11,45 @@ test.afterAll(async()=>{
  }if(lesson)await query('DELETE FROM chinese_lessons WHERE id=?',[lesson]);await closePool();
 });
 test('Chinese: Word review, publish, flashcard resume, exam and mobile layout',async({page,browser})=>{
- const created=await page.request.post('/api/v1/chinese/lessons',{data:{level_id:1,title:'E2E Chinese',position:999,description:'',image_url:'',status:'published'}});expect(created.ok(),await created.text()).toBeTruthy();lesson=(await created.json()).data.id;
- await page.goto('/pages/admin/chinese/?view=sets');
- await page.locator('[name=level_id]').selectOption('1');await page.locator('[name=lesson_id]').selectOption(lesson);await page.locator('[name=title]').fill('E2E Word set');await page.locator('[name=file]').setInputFiles('frontend/assets/templates/chinese-template.docx');
- page.on('dialog',d=>d.accept());await page.getByRole('button',{name:'Phân tích và tạo bản nháp'}).click();await page.waitForURL(/\?set=/);setId=new URL(page.url()).searchParams.get('set');
+ await page.goto('/pages/admin/chinese/?level=9');
+ await expect(page.locator('#chinese-nav a')).toHaveCount(3);
+ await page.getByText('+ Thêm bài học',{exact:true}).click();await page.getByLabel('Tên bài mới',{exact:true}).fill('E2E Chinese');
+ await page.getByRole('button',{name:'Tạo bài',exact:true}).click();await page.waitForURL(/\?lesson=/);lesson=new URL(page.url()).searchParams.get('lesson');
+ await page.locator('[name=file]').setInputFiles('frontend/assets/templates/chinese-template.docx');
+ await expect(page.locator('.simple-upload [name=title]')).toHaveValue('chinese-template');
+ page.on('dialog',d=>d.accept());await page.getByRole('button',{name:'Tải lên và kiểm tra'}).click();await page.waitForURL(/\?set=/);setId=new URL(page.url()).searchParams.get('set');
  const detail=(await (await page.request.get('/api/v1/chinese/sets/'+setId)).json()).data;documentId=detail.set.document_id;
- await page.getByRole('button',{name:'Chưa xác định',exact:true}).click();while(await page.getByRole('button',{name:'Xóa mục',exact:true}).count())await page.getByRole('button',{name:'Xóa mục',exact:true}).first().click();
- await page.getByRole('button',{name:'Câu hỏi',exact:true}).click();await page.getByRole('button',{name:'Mở tất cả mục'}).click();for(const approve of await page.locator('.item-editor [name=approved]').all())await approve.selectOption('true');
- await page.locator('[name=status]').selectOption('published');await page.getByRole('button',{name:'Kiểm tra & lưu'}).click();await expect(page.locator('#notice')).toHaveText('');
+ await page.getByRole('button',{name:'Cho học sinh xem',exact:true}).click();await expect(page.locator('#notice')).toContainText('Cần sửa');
+ expect((await (await page.request.get('/api/v1/chinese/sets/'+setId)).json()).data.set.status).toBe('draft');
+ await page.getByRole('button',{name:/^Chưa xác định \(/}).click();
+ while(await page.locator('.simple-question').count()){
+  await page.locator('.simple-question').first().getByText('Sửa nội dung',{exact:true}).click();
+  await page.getByRole('button',{name:'Bỏ mục này',exact:true}).first().click();
+ }
+ await page.getByRole('button',{name:'Cho học sinh xem',exact:true}).click();await page.waitForURL(/\?lesson=/);
  const published=(await (await page.request.get('/api/v1/chinese/sets/'+setId)).json()).data;expect(published.set.status).toBe('published');
+ expect(published.set.lesson_status).toBe('published');expect(published.items.filter(i=>i.kind==='question').every(i=>i.data.approved)).toBe(true);
+ const exam=await page.request.post('/api/v1/chinese/tests',{data:{title:'E2E class exam',set_ids:[setId],duration_seconds:null,pass_percent:70,status:'published'}});expect(exam.ok()).toBe(true);testId=(await exam.json()).data.id;
+ await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
  const ctx=await browser.newContext({storageState:'e2e/.auth/lan.json'});const student=await ctx.newPage();const errors=[];student.on('pageerror',e=>errors.push(e.message));
  await student.goto('/pages/student/chinese/?set='+setId);await expect(student.locator('.flashcard')).toContainText('你好');
  await student.getByRole('button',{name:'Lật thẻ',exact:true}).first().click();await expect(student.locator('.flashcard')).toContainText('nǐ hǎo');
  await student.getByRole('button',{name:'Đã nhớ',exact:true}).click();await expect(student.locator('#notice')).toContainText('Đã lưu tự đánh giá');
  await student.reload();await expect(student.locator('.flashcard')).toContainText('你好');
+ await student.getByText('Tùy chọn thẻ',{exact:true}).click();
+ const savedSource=student.waitForResponse(r=>r.url().endsWith('/progress')&&r.request().method()==='PUT');await student.locator('[name=source]').selectOption('question');await savedSource;
+ await student.reload();await expect(student.locator('.learn-caption')).toContainText('Thẻ câu hỏi');
+ await student.getByText('Tùy chọn thẻ',{exact:true}).click();await student.locator('[name=source]').selectOption('vocabulary');await expect(student.locator('.flashcard')).toContainText('你好');
  await student.setViewportSize({width:390,height:844});expect(await student.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
- await student.getByRole('button',{name:'Bắt đầu luyện tập'}).click();await student.waitForURL(/\?attempt=/);await student.getByRole('radio',{name:'Xin chào',exact:true}).check();await student.getByRole('button',{name:'Chốt',exact:true}).first().click();await expect(student.locator('#content')).toContainText('Đáp án: Xin chào');
- await student.getByRole('textbox',{name:'Câu trả lời',exact:true}).fill('nǐ hǎo');await student.getByRole('button',{name:'Chốt',exact:true}).click();student.once('dialog',d=>d.accept());await student.getByRole('button',{name:'Nộp bài & xem kết quả'}).click();await expect(student.locator('#content')).toContainText('Điểm: 100/100');
- await student.getByRole('link',{name:'Lịch sử & kết quả'}).click();await expect(student.locator('table')).toContainText('100/100');expect(errors).toEqual([]);await ctx.close();
+ await expect(student.getByRole('button',{name:'Quiz 20 câu',exact:true})).toBeDisabled();
+ await student.goto('/pages/student/chinese/?view=tests');await student.locator('section').filter({has:student.getByRole('heading',{name:'E2E class exam',exact:true})}).getByRole('button',{name:'Bắt đầu',exact:true}).click();await student.waitForURL(/\?attempt=/);
+ for(let n=0;n<2;n++){
+  await expect(student.locator('.quiz-prompt')).toBeVisible();
+  if(await student.getByRole('radio',{name:'Xin chào',exact:false}).count())await student.getByRole('radio',{name:'Xin chào',exact:false}).check();
+  else await student.getByRole('textbox',{name:'Câu trả lời',exact:true}).fill('nǐ hǎo');
+  await student.getByRole('button',{name:'Kiểm tra',exact:true}).click();if(n===0)await expect(student.locator('#content')).toContainText('Đúng rồi!');
+  if(n===0)await student.getByRole('button',{name:'Câu tiếp theo →',exact:true}).click();
+ }
+ await expect(student.locator('.quiz-score')).toHaveText('100/100');await expect(student.locator('#content')).toContainText('+3 Kim Cương');
+ await student.getByRole('link',{name:'Kết quả',exact:true}).click();await expect(student.locator('table')).toContainText('100/100');expect(errors).toEqual([]);await ctx.close();
 });

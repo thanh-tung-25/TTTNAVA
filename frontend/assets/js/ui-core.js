@@ -1,15 +1,5 @@
 import { api, avatarUrl, escapeHtml } from './api.js';
-
-const STUDENT_NAV = [
-  ['chinese', '/pages/student/chinese/', 'Tiếng Trung'],
-  ['home', '/pages/student/home/', 'Trang chủ'],
-  ['practice', '/pages/student/practice/', 'Luyện tập'],
-  ['exam', '/pages/student/exam/', 'Thi'],
-  ['challenge', '/pages/student/challenge/', 'Thách đấu'],
-  ['leaderboard', '/pages/student/leaderboard/', 'Xếp hạng'],
-  ['diamonds', '/pages/student/diamonds/', 'Kim cương'],
-  ['history', '/pages/student/history/', 'Lịch sử'],
-];
+import { studentNavigation, setupStudentNavigation, studentAccount } from './student-navigation.js';
 
 const ADMIN_NAV = [
   ['chinese', '/pages/admin/chinese/', 'Quản lý Tiếng Trung'],
@@ -22,7 +12,7 @@ let currentProfile = null;
 let diamondTotal = null;
 
 function renderHeader(profile, role, active) {
-  const nav = role === 'admin' ? ADMIN_NAV : STUDENT_NAV;
+  const nav = ADMIN_NAV;
   const home = role === 'admin' ? '/pages/admin/students/' : '/pages/student/home/';
   const subtitle = role === 'admin'
     ? 'Quản trị viên'
@@ -39,13 +29,14 @@ function renderHeader(profile, role, active) {
       <a class="brand" href="${home}"><img class="brand-mark" src="/assets/images/ttnava-logo.png" alt="" width="44" height="44"> TTNAVA</a>
       <div class="topbar-user">
         ${role === 'student' ? '<span class="diamond-chip" id="diamond-chip" title="Kim cương của con">💎 <span>…</span></span>' : ''}
-        <img class="avatar" src="${avatarUrl(profile.avatarKey)}" alt="Ảnh đại diện của ${escapeHtml(profile.displayName)}">
+        ${role === 'student' ? studentAccount(profile, avatarUrl(profile.avatarKey), subtitle) : `<img class="avatar" src="${avatarUrl(profile.avatarKey)}" alt="Ảnh đại diện của ${escapeHtml(profile.displayName)}">
         <span class="user-meta"><strong>${escapeHtml(profile.displayName)}</strong><span>${subtitle}</span></span>
-        <button class="btn btn-ghost btn-sm" type="button" id="logout-button">Thoát</button>
+        <button class="btn btn-ghost btn-sm" type="button" id="logout-button">Thoát</button>`}
       </div>
     </div>
-    <nav class="nav-scroll" aria-label="Điều hướng chính">${links}</nav>
+    ${role === 'student' ? studentNavigation(active) : `<nav class="nav-scroll" aria-label="Điều hướng chính">${links}</nav>`}
   `;
+  if (role === 'student') setupStudentNavigation(header, profile);
 
   header.querySelector('#logout-button').addEventListener('click', async () => {
     try {

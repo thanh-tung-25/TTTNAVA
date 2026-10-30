@@ -29,8 +29,8 @@ export function issues(items) {
   }
   if (['grammar','dialogue','reading'].includes(item.kind) && !d.text) add('Thiếu nội dung');
   if (item.kind === 'unknown') add('Nội dung chưa xác định: cần phân loại hoặc chủ động xóa');
-  const key = `${item.kind}:${normalizeAnswer(d.hanzi || d.prompt || d.text)}`;
-  if (seen.has(key)) add('Nội dung trùng trong bộ'); seen.add(key);
+  const key = `${item.kind}:${normalizeAnswer(d.hanzi || d.prompt || d.text)}${item.kind==='question'?JSON.stringify([d.options||[],d.accepted||[]]):''}`;
+  if (item.kind!=='unknown' && seen.has(key)) add('Nội dung trùng trong bộ'); seen.add(key);
  });
  if (!items.length) errors.push({ index: 0, message: 'Bộ chưa có nội dung' });
  return errors;

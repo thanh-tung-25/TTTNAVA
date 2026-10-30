@@ -1,4 +1,4 @@
-import { randomUUID, createHash } from 'node:crypto';
+import { randomUUID, createHash, randomInt } from 'node:crypto';
 import { z } from 'zod';
 import { query, withTransaction } from '../config/db.js';
 import { badRequest, AppError, notFound } from '../utils/errors.js';
@@ -32,6 +32,31 @@ export async function detail(id,admin,user) {
  const set=await getSet(id,admin), items=await getItems(id);
  const progress=admin?[]:await query('SELECT * FROM chinese_progress WHERE student_id=? AND set_id=?',[user,id]);
  return {set,items:admin?items:items.map(publicItem),issues:admin?issues(items):undefined,progress:progress[0]||null};
+}
+// The learner explicitly flips a study card. Attempt APIs continue to hide uncommitted answers.
+export async function studyCard(setId,itemId) {
+ await getSet(setId);
+ const item=await one("SELECT data FROM chinese_items WHERE id=? AND set_id=? AND kind='question' AND active=1",[itemId,setId]);
+ const data=json(item.data);if(!data.approved)throw notFound();
+ return {accepted:data.accepted,explanation:data.explanation||''};
+}
+export async function reparseWord(id) {
+ const set=await getSet(id,true);
+ if(!set.document_id)throw badRequest('Bộ không có tài liệu Word nguồn');
+ const doc=await one('SELECT original FROM chinese_documents WHERE id=?',[set.document_id]);
+ const extracted=await extractChinese(doc.original);
+ return withTransaction(async c=>{
+  const run=txRun(c), locked=await one('SELECT status FROM chinese_sets WHERE id=? FOR UPDATE',[id],run);
+  if(locked.status!=='draft')throw badRequest('Chỉ phân tích lại bộ đang ở bản nháp');
+  const progress=await run('SELECT student_id FROM chinese_progress WHERE set_id=? LIMIT 1',[id]);
+  const attempts=await run(`SELECT id FROM chinese_attempts WHERE set_id=? OR JSON_SEARCH(snapshot,'one',?,NULL,'$.items[*].set_id') IS NOT NULL LIMIT 1`,[id,id]);
+  const reviews=await run('SELECT r.item_id FROM chinese_reviews r JOIN chinese_items i ON i.id=r.item_id WHERE i.set_id=? LIMIT 1',[id]);
+  if(progress.length||attempts.length||reviews.length)throw badRequest('Bộ đã có lượt học; hãy nhập thành bộ mới để giữ lịch sử');
+  await run('UPDATE chinese_items SET active=0 WHERE set_id=?',[id]);
+  for(const [p,i]of extracted.items.entries())await run('INSERT INTO chinese_items (id,set_id,kind,position,data) VALUES (?,?,?,?,?)',[randomUUID(),id,i.kind,p+1,JSON.stringify(i.data)]);
+  await run("UPDATE chinese_sets SET processing_status='review' WHERE id=?",[id]);
+  return {id,count:extracted.items.length,issues:issues(extracted.items)};
+ });
 }
 export async function saveSet(id,body) {
  const d=parse(setSchema,body), errors=issues(d.items);
@@ -90,34 +115,61 @@ export async function tests(admin) {
  for(const row of rows) { row.set_ids=json(row.set_ids); if(!admin) { try { for(const s of row.set_ids) await getSet(s); } catch { continue; } } result.push(row); } return result;
 }
 export async function start(user,body) {
- const d=parse(z.object({test_id:z.string().uuid().optional(),set_id:z.string().uuid().optional()}),body);
+ const d=parse(z.object({test_id:z.string().uuid().optional(),set_id:z.string().uuid().optional(),count:z.number().int().min(1).max(20).optional()}),body);
  if(Boolean(d.test_id)===Boolean(d.set_id)) throw badRequest('Chọn bài kiểm tra hoặc bộ luyện tập');
+ if(d.test_id&&d.count)throw badRequest('Không thay đổi số câu của bài kiểm tra');
+ if(d.count&&d.count!==20)throw badRequest('Mỗi quiz phải có đúng 20 câu');
  let sources, duration=null, title='Luyện tập', pass=70;
  if(d.test_id) { const t=await one("SELECT * FROM chinese_tests WHERE id=? AND status='published'",[d.test_id]); sources=json(t.set_ids);duration=t.duration_seconds;title=t.title;pass=t.pass_percent; } else sources=[d.set_id];
  let items=[]; for(const s of sources) {await getSet(s);items.push(...(await getItems(s)).filter(i=>i.kind==='question'&&i.data.approved));}
  if(!items.length||items.length>1000||issues(items).length) throw badRequest('Chưa đủ câu hỏi hợp lệ');
- const id=randomUUID(); await withTransaction(async c=>{
+ if(d.count){
+  if(items.length<20)throw badRequest('Tài liệu chưa đủ 20 câu hỏi để làm quiz. Con có thể học thẻ lật trước.');
+  // Select once at creation and persist the actual selection in the attempt snapshot.
+  for(let n=items.length-1;n>0;n--){const j=randomInt(n+1);[items[n],items[j]]=[items[j],items[n]];}
+  items=items.slice(0,d.count);title='Quiz '+items.length+' câu';
+ }
+ let existingId;const id=randomUUID(); await withTransaction(async c=>{
   const run=txRun(c);
-  await run('INSERT INTO chinese_attempts (id,student_id,test_id,set_id,snapshot,answers,ends_at) VALUES (?,?,?,?,?,?,?)',[id,user,d.test_id??null,d.set_id??null,JSON.stringify({title,pass,items}),JSON.stringify({}),duration?new Date(Date.now()+duration*1000):null]);
+  await one('SELECT id FROM profiles WHERE id=? FOR UPDATE',[user],run);
+  const open=await run(`SELECT * FROM chinese_attempts WHERE student_id=? AND finished_at IS NULL AND abandoned_at IS NULL AND ${d.test_id?'test_id=?':'set_id=? AND test_id IS NULL'} ORDER BY started_at DESC,id DESC`,[user,d.test_id||d.set_id]);
+  for(const a of open){
+   if(a.ends_at&&new Date(a.ends_at)<=new Date())await finalize(a,run);
+   else if(!d.count||json(a.snapshot).items.length===20){
+    // Return the same active attempt even when start requests arrive concurrently.
+    existingId=a.id;break;
+   }else await run('UPDATE chinese_attempts SET abandoned_at=CURRENT_TIMESTAMP(3) WHERE id=?',[a.id]);
+  }
+  if(existingId)return;
+  const diamonds_policy=d.test_id||d.count===20?'v1':null;
+  await run('INSERT INTO chinese_attempts (id,student_id,test_id,set_id,snapshot,answers,ends_at) VALUES (?,?,?,?,?,?,?)',[id,user,d.test_id??null,d.set_id??null,JSON.stringify({title,pass,items,diamonds_policy}),JSON.stringify({}),duration?new Date(Date.now()+duration*1000):null]);
   for(const source of sources)await run(`INSERT INTO chinese_progress (student_id,set_id,last_item,read_items) VALUES (?,?,NULL,'[]') ON DUPLICATE KEY UPDATE updated_at=CURRENT_TIMESTAMP(3)`,[user,source]);
- });return attempt(user,id);
+ });return attempt(user,existingId||id);
 }
 function state(a) {
  const snapshot=json(a.snapshot), answers=json(a.answers), items=snapshot.items.map(i=>{
   const answer=answers[i.id]; return {...publicItem(i),result:answer?.locked||a.finished_at?{...answer,accepted:i.data.accepted,explanation:i.data.explanation}:undefined,selection:answer?.value};
  });
- return {id:a.id,title:snapshot.title,started_at:a.started_at,ends_at:a.ends_at,finished_at:a.finished_at,score:a.score,pass_percent:snapshot.pass,items};
+ return {id:a.id,set_id:a.set_id,test_id:a.test_id,title:snapshot.title,started_at:a.started_at,ends_at:a.ends_at,finished_at:a.finished_at,score:a.score,pass_percent:snapshot.pass,diamonds_policy:snapshot.diamonds_policy||null,diamonds_delta:a.diamonds_delta,items};
 }
 async function finalize(a,run) {
  const snap=json(a.snapshot), answers=json(a.answers);
  for(const i of snap.items) { if(!answers[i.id]?.locked) answers[i.id]={value:answers[i.id]?.value??'',locked:true,correct:false}; }
  const score=Math.round(snap.items.filter(i=>answers[i.id].correct).length/snap.items.length*10000)/100;
- await run('UPDATE chinese_attempts SET answers=?,score=?,finished_at=CURRENT_TIMESTAMP(3) WHERE id=?',[JSON.stringify(answers),score,a.id]);
+ let delta=null;
+ if(snap.diamonds_policy==='v1'){
+  const balance=(await run('SELECT COALESCE(SUM(amount),0) total FROM diamond_ledger WHERE profile_id=?',[a.student_id]))[0].total;
+  delta=score===100?3:score>=70?1:Math.max(0,Number(balance))>=1?-1:0;
+  if(delta)await run('INSERT INTO diamond_ledger (profile_id,amount,reason,ref_type,ref_id) VALUES (?,?,?,?,?)',[a.student_id,delta,score===100?'chinese_perfect':score>=70?'chinese_complete':'chinese_low','chinese',a.id]);
+ }
+ await run('UPDATE chinese_attempts SET answers=?,score=?,diamonds_delta=?,finished_at=CURRENT_TIMESTAMP(3) WHERE id=?',[JSON.stringify(answers),score,delta,a.id]);
  return one('SELECT * FROM chinese_attempts WHERE id=?',[a.id],run);
 }
 export async function attempt(user,id,action=null,body={}) {
  return withTransaction(async c=>{
-  const run=txRun(c); let a=await one('SELECT * FROM chinese_attempts WHERE id=? AND student_id=? FOR UPDATE',[id,user],run);
+  const run=txRun(c);await one('SELECT id FROM profiles WHERE id=? FOR UPDATE',[user],run);
+  let a=await one('SELECT * FROM chinese_attempts WHERE id=? AND student_id=? FOR UPDATE',[id,user],run);
+  if(a.abandoned_at)throw new AppError(409,'ATTEMPT_CLOSED','Lượt cũ đã được đóng. Con mở Quiz 20 câu từ bài học để bắt đầu.');
   if(!a.finished_at&&a.ends_at&&new Date(a.ends_at)<=new Date()) a=await finalize(a,run);
   if(a.finished_at||!action) return state(a);
   if(action==='finish') return state(await finalize(a,run));
@@ -132,10 +184,11 @@ export async function attempt(user,id,action=null,body={}) {
    const v=await run("SELECT id FROM chinese_items WHERE id=? AND set_id=? AND kind='vocabulary'",[q.data.vocabulary_id,q.set_id]);
    if(v.length) await run(`INSERT INTO chinese_reviews (student_id,item_id,memory,wrong_count,next_review) VALUES (?,?,'review',1,CURRENT_TIMESTAMP(3)) ON DUPLICATE KEY UPDATE memory='review',wrong_count=wrong_count+1,next_review=CURRENT_TIMESTAMP(3)`,[user,q.data.vocabulary_id]);
   }
+  if(json(a.snapshot).diamonds_policy==='v1'&&snap.items.every(i=>answers[i.id]?.locked))return state(await finalize(a,run));
   return state(a);
  });
 }
-export async function history(user) {return query('SELECT id,test_id,set_id,started_at,ends_at,finished_at,score FROM chinese_attempts WHERE student_id=? ORDER BY started_at DESC LIMIT 200',[user]);}
+export async function history(user) {return query('SELECT id,test_id,set_id,started_at,ends_at,finished_at,score,diamonds_delta FROM chinese_attempts WHERE student_id=? AND abandoned_at IS NULL ORDER BY started_at DESC LIMIT 200',[user]);}
 export async function stats(filters={}) {
  const totals={}; for(const [name,sql] of Object.entries({lessons:'SELECT COUNT(*) n FROM chinese_lessons',sets:'SELECT COUNT(*) n FROM chinese_sets',vocabulary:"SELECT COUNT(*) n FROM chinese_items WHERE active=1 AND kind='vocabulary'",questions:"SELECT COUNT(*) n FROM chinese_items WHERE active=1 AND kind='question'",pending:"SELECT COUNT(*) n FROM chinese_sets WHERE processing_status='review'",attempts:'SELECT COUNT(*) n FROM chinese_attempts'})) totals[name]=(await query(sql))[0].n;
  const progress=await query(`SELECT p.*,u.display_name,s.title,l.level_id,l.id lesson_id FROM chinese_progress p JOIN profiles u ON u.id=p.student_id JOIN chinese_sets s ON s.id=p.set_id JOIN chinese_lessons l ON l.id=s.lesson_id WHERE (?='' OR p.student_id=?) AND (?='' OR l.level_id=?) AND (?='' OR l.id=?) AND (?='' OR s.id=?) ORDER BY p.updated_at DESC LIMIT 500`,[filters.student_id||'',filters.student_id||'',filters.level_id||'',filters.level_id||'',filters.lesson_id||'',filters.lesson_id||'',filters.set_id||'',filters.set_id||'']);

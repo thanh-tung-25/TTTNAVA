@@ -8,10 +8,12 @@ import { one } from '../repositories/chinese.js';
 import { asyncHandler } from '../utils/errors.js';
 import { parse } from '../validators/chinese.js';
 import { z } from 'zod';
+import { createSet, removeContent } from '../services/chinese-manage.js';
 const router=Router();
 router.use(authenticateToken,requirePlayer);
 router.get('/catalog',c.catalog);
 router.get('/sets/:id',c.detail);
+router.get('/sets/:id/study/:itemId',requireStudent,c.studyCard);
 router.get('/tests',c.tests);
 router.get('/notebook',requireStudent,c.notebook);
 router.put('/reviews/:id',requireStudent,c.review);
@@ -29,9 +31,14 @@ router.put('/levels/:id',c.handler(async r=>{
  await query('UPDATE chinese_levels SET title=?,description=? WHERE id=?',[d.title,d.description,id]);return {id};
 }));
 router.post('/lessons',c.saveLesson);
+router.delete('/lessons/:id',c.handler(r=>removeContent('lesson',r.params.id)));
+router.post('/sets',c.handler(r=>createSet(r.body)));
+router.delete('/sets/:id',c.handler(r=>removeContent('set',r.params.id)));
+router.delete('/tests/:id',c.handler(r=>removeContent('test',r.params.id)));
 router.put('/lessons/:id',c.saveLesson);
 router.post('/imports',rateLimit({windowMs:60000,max:10,keyPrefix:'chinese-import'}),uploadDocx,c.importWord);
 router.put('/sets/:id',c.saveSet);
+router.post('/sets/:id/reparse',c.reparseWord);
 router.post('/tests',c.saveTest);
 router.put('/tests/:id',c.saveTest);
 router.get('/documents/:id',asyncHandler(async(r,res)=>{

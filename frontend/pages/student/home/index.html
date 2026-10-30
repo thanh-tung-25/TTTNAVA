@@ -21,26 +21,40 @@
       </div>
     </section>
 
-    <section class="grid grid-3" aria-label="Chọn môn học">
+    <section class="home-section" aria-labelledby="subjects-heading">
+      <div class="home-section-head"><h2 id="subjects-heading">Hôm nay mình học gì?</h2><p>Chọn một môn để bắt đầu nhé!</p></div>
+      <div class="subject-grid" aria-label="Chọn môn học">
       <a class="subject-card" href="/pages/student/chinese/">
-        <div><h3>Tiếng Trung</h3><p>Lộ trình HSK 1–9 · Thẻ từ và ôn tập</p></div>
-        <span aria-hidden="true">你好 →</span>
+        <span class="subject-icon" aria-hidden="true">文</span>
+        <div><h3>Tiếng Trung</h3><p>Học từ mới qua thẻ lật</p></div>
+        <span class="subject-bottom">Khám phá HSK <b aria-hidden="true">→</b></span>
       </a>
       <a class="subject-card subject-toan" href="/pages/student/practice/?subject=toan">
-        <div><h3>Toán</h3><p>Luyện tính toán và tư duy</p></div>
-        <span aria-hidden="true">🔢 →</span>
+        <span class="subject-icon" aria-hidden="true">＋</span>
+        <div><h3>Toán</h3><p>Tính toán và tư duy</p></div>
+        <span class="subject-bottom">Vào học <b aria-hidden="true">→</b></span>
       </a>
       <a class="subject-card subject-tieng-viet" href="/pages/student/practice/?subject=tieng-viet">
+        <span class="subject-icon" aria-hidden="true">Aa</span>
         <div><h3>Tiếng Việt</h3><p>Đọc hiểu và từ ngữ</p></div>
-        <span aria-hidden="true">📖 →</span>
+        <span class="subject-bottom">Vào học <b aria-hidden="true">→</b></span>
       </a>
       <a class="subject-card subject-tieng-anh" href="/pages/student/practice/?subject=tieng-anh">
+        <span class="subject-icon" aria-hidden="true">Abc</span>
         <div><h3>Tiếng Anh</h3><p>Từ vựng và mẫu câu</p></div>
-        <span aria-hidden="true">🌍 →</span>
+        <span class="subject-bottom">Vào học <b aria-hidden="true">→</b></span>
       </a>
+      </div>
     </section>
-
-    <div class="grid grid-2" style="margin-top:1rem">
+    <section class="home-section" aria-labelledby="modes-heading">
+      <div class="home-section-head"><h2 id="modes-heading">Thử sức theo cách của mình</h2><p>Học một chút, tự tin thêm một chút.</p></div>
+      <div class="home-modes">
+        <a class="home-mode" href="/pages/student/practice/"><span aria-hidden="true">✎</span><div><h3>Luyện tập</h3><p>10 câu · Có lời giải từng câu</p></div></a>
+        <a class="home-mode" href="/pages/student/exam/"><span aria-hidden="true">◷</span><div><h3>Thi thử</h3><p>20 câu · Thử sức trong 15 phút</p></div></a>
+        <a class="home-mode" href="/pages/student/challenge/"><span aria-hidden="true">⚑</span><div><h3>Thách đấu</h3><p>Cùng bạn bè hoặc bạn Robot</p></div></a>
+      </div>
+    </section>
+    <div class="home-bottom">
       <section class="card">
         <div class="card-head"><h2>Kim cương của con</h2><a href="/pages/student/diamonds/">Xem</a></div>
         <div class="grid grid-3">
@@ -50,21 +64,11 @@
         </div>
       </section>
 
-      <section class="card">
-        <div class="card-head"><h2>Mau vào học</h2></div>
-        <div class="quick-list">
-          <a class="quick-link" href="/pages/student/practice/"><span class="quick-icon">✏️</span> Luyện tập 10 câu <span class="quick-arrow">→</span></a>
-          <a class="quick-link" href="/pages/student/exam/"><span class="quick-icon">⏱️</span> Thi 20 câu / 15 phút <span class="quick-arrow">→</span></a>
-          <a class="quick-link" href="/pages/student/challenge/"><span class="quick-icon">⚔️</span> Thách đấu bạn bè hoặc Robot <span class="quick-arrow">→</span></a>
-          <a class="quick-link" href="/pages/student/leaderboard/"><span class="quick-icon">🏆</span> Bảng xếp hạng <span class="quick-arrow">→</span></a>
-        </div>
-      </section>
-    </div>
-
     <section class="card">
       <div class="card-head"><h2>Hoạt động gần đây</h2><a href="/pages/student/history/">Tất cả</a></div>
       <div id="recent-activity"><div class="loading">Đang tải…</div></div>
     </section>
+    </div>
   </main>
   <script type="module" src="/assets/js/home.js"></script>
 </body>

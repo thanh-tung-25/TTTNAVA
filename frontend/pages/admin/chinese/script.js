@@ -1,76 +1,90 @@
 import {initPage} from '/assets/js/ui-core.js';
-import {request,el,root,button,link,card,field,statuses,kinds,table,values,formSubmit,error,notice} from '/assets/js/chinese-common.js';
-const params=new URLSearchParams(location.search), view=params.get('view')||'overview';let data;
-const adminLink=(text,p)=>link(text,p,'admin');
-const levelOptions=()=>data.levels.map(l=>[l.id,l.title]);
-const lessonOptions=level=>data.lessons.filter(l=>!level||l.level_id===Number(level)).map(l=>[l.id,l.title]);
-const setOptions=()=>data.sets.map(s=>[s.id,`HSK ${s.level_id} / ${s.lesson_title} / ${s.title}`]);
-const statusLabel=value=>({draft:'Bản nháp',published:'Đã xuất bản',archived:'Đã lưu trữ',review:'Cần kiểm tra',ready:'Sẵn sàng'})[value]||value;
-function workflow(){return card('Bắt đầu với 3 bước đơn giản',[
- el('div',{class:'admin-workflow'},[
-  el('div',{},[el('strong',{text:'1. Tạo bài học'}),el('p',{text:'Chọn HSK và đặt tên bài. Mỗi bài có thể chứa nhiều file Word.'}),adminLink('Tạo bài học',{view:'lessons'})]),
-  el('div',{},[el('strong',{text:'2. Tải tài liệu Word'}),el('p',{text:'Chọn bài, tải file tối đa 20 MB. Mỗi file tạo một bộ nội dung riêng.'}),adminLink('Nhập tài liệu',{view:'sets'})]),
-  el('div',{},[el('strong',{text:'3. Kiểm tra & xuất bản'}),el('p',{text:'Mở bộ, kiểm tra từ và đáp án, xử lý mục chưa xác định rồi xuất bản.'}),adminLink('Xem các bộ cần duyệt',{view:'sets',status:'draft'})])
- ])]);}
-async function boot(){await initPage('admin','chinese');data=await request('/catalog');
- document.querySelector('#chinese-nav').append(el('a',{class:'btn btn-secondary',href:'/pages/admin/students/?program=chinese',text:'Học sinh Tiếng Trung'}));
- document.querySelector('#chinese-nav').append(...[['overview','Tổng quan'],['levels','Cấp HSK'],['lessons','Bài học'],['sets','Tài liệu & bộ nội dung'],['questions','Ngân hàng câu hỏi'],['tests','Bài kiểm tra'],['progress','Tiến độ học sinh']].map(([v,t])=>adminLink(t,{view:v})));
- notice('');if(params.has('set'))return editSet(params.get('set'));if(view==='levels')return levels();if(view==='lessons')return lessons();if(view==='sets'||view==='questions')return sets();if(view==='tests')return tests();if(view==='progress')return progress();
- const s=await request('/stats');root().append(workflow(),card('Tổng quan', [table(['Bài học','Bộ','Từ vựng','Câu hỏi','Chờ duyệt','Lượt làm'],[Object.values(s.totals)])]));
+import {request,el,root,button,link,card,field,values,formSubmit,error,notice,kinds,table} from '/assets/js/chinese-common.js';
+const params=new URLSearchParams(location.search),adminLink=(text,p={})=>link(text,p,'admin');
+const extra=(title,children)=>el('details',{class:'simple-extra'},[el('summary',{text:title}),...children]);
+const statusText=s=>s==='published'?'Học sinh đang xem được':s==='archived'?'Đã lưu trữ':'Chưa cho học sinh xem';
+let catalog;
+function message(e){
+ if(Array.isArray(e.details)){const errors=e.details.filter(i=>i.message!=='Câu hỏi chưa được duyệt');if(errors.length)e=new Error('Cần sửa trước khi cho học sinh xem:\n'+errors.slice(0,6).map(i=>`Mục ${i.index}: ${i.message}`).join('\n')+(errors.length>6?`\nCòn ${errors.length-6} lỗi khác.`:''));}
+ error(e);document.querySelector('#notice').scrollIntoView({block:'center',behavior:'smooth'});
 }
-function levels(){for(const l of data.levels){const f=el('form',{},[field('Tên cấp','title',l.title),field('Mô tả','description',l.description,'textarea')]);root().append(card(`HSK ${l.id}`,[formSubmit(f,d=>request('/levels/'+l.id,'PUT',d))]));}}
-function lessons(){
- const selected=params.get('lesson'), existing=data.lessons.find(l=>l.id===selected);
- const filter=field('Lọc HSK','level',params.get('level')||'', 'text',[['','Tất cả'],...levelOptions()]);root().append(filter);
- const list=el('div');root().append(list);const render=()=>{list.replaceChildren(table(['HSK','Bài','Thứ tự','Trạng thái','Thao tác'],data.lessons.filter(l=>!filter.querySelector('select').value||String(l.level_id)===filter.querySelector('select').value).map(l=>[l.level_id,l.title,l.position,statusLabel(l.status),el('div',{},[adminLink('Sửa',{view:'lessons',lesson:l.id}),adminLink('Bộ nội dung',{view:'sets',lesson:l.id})])])));};filter.onchange=render;render();
- const f=el('form',{},[field('HSK','level_id',existing?.level_id||params.get('level')||1,'text',levelOptions()),field('Tên bài','title',existing?.title),field('Thứ tự','position',existing?.position||1,'number'),field('Mô tả','description',existing?.description,'textarea'),field('Ảnh (đường dẫn nội bộ hoặc HTTPS)','image_url',existing?.image_url),field('Trạng thái','status',existing?.status||'draft','text',statuses)]);
- root().append(card(existing?'Sửa bài':'Tạo bài', [formSubmit(f,async d=>{await request('/lessons'+(existing?'/'+existing.id:''),existing?'PUT':'POST',d);location.href='?view=lessons';})]));
+function action(text,fn,primary=false){const b=button(text,async()=>{b.disabled=true;try{await fn();}catch(e){message(e);}finally{b.disabled=false;}});if(primary)b.className='btn btn-primary';if(text.startsWith('Xóa'))b.classList.add('btn-danger');return b;}
+async function boot(){
+ if(['levels','tests'].includes(params.get('view'))){await import('./advanced.js');return;}
+ await initPage('admin','chinese');catalog=await request('/catalog');notice('');
+ document.querySelector('#chinese-nav').append(adminLink('Bài học'),el('a',{class:'btn btn-secondary',href:'/pages/admin/students/?program=chinese',text:'Học sinh Tiếng Trung'}),adminLink('Bài kiểm tra',{view:'tests'}),adminLink('Tiến độ',{view:'progress'}));
+ if(params.has('set'))return editor(params.get('set'));if(params.get('view')==='progress')return progress();workspace();
 }
-function sets(){
- const filters=el('form',{},[field('Tìm tên bộ / file','search'),field('HSK','level','','text',[['','Tất cả'],...levelOptions()]),field('Bài','lesson',params.get('lesson')||'','text',[['','Tất cả'],...lessonOptions()]),field('Trạng thái','status',params.get('status')||'','text',[['','Tất cả'],...statuses])]);
- const list=el('div');let page=0;
- const render=()=>{const f=values(filters);const rows=data.sets.filter(s=>(!f.search||(s.title+' '+s.filename).toLowerCase().includes(f.search.toLowerCase()))&&(!f.level||s.level_id===Number(f.level))&&(!f.lesson||s.lesson_id===f.lesson)&&(!f.status||s.status===f.status));
- page=Math.max(0,Math.min(page,Math.ceil(rows.length/15)-1));
- list.replaceChildren(table(['Bộ / file','HSK / bài','Từ / câu hỏi','Ngày tải','Trạng thái','Thao tác'],rows.slice(page*15,page*15+15).map(s=>[`${s.title} / ${s.filename||'—'}`,`HSK ${s.level_id} / ${s.lesson_title}`,['vocabulary','question'].map(k=>data.counts.find(c=>c.set_id===s.id&&c.kind===k)?.total||0).join(' / '),new Date(s.created_at).toLocaleString('vi-VN'),`${statusLabel(s.processing_status)} · ${statusLabel(s.status)}`,adminLink('Mở bộ',{set:s.id,tab:view==='questions'?'question':'info'})])),el('p',{text:`Trang ${page+1} · ${rows.length} bộ`}),button('Trước',()=>{page--;render();}),button('Sau',()=>{page++;render();}));};filters.oninput=()=>{page=0;render();};root().append(filters,list);render();
- if(view==='questions')return;
- const selectedLesson=data.lessons.find(l=>l.id===params.get('lesson')), initialLevel=selectedLesson?.level_id||1;
- const f=el('form',{class:'import-form'},[field('1. Chọn cấp HSK','level_id',initialLevel,'text',levelOptions()),field('2. Chọn bài học','lesson_id',selectedLesson?.id||'','text',lessonOptions(initialLevel)),field('3. Tên bộ nội dung','title'),field('4. Chọn file Word (.docx, tối đa 20 MB)','file','','file')]);f.querySelector('[name=file]').accept='.docx';
- const hint=el('p',{class:'muted'});
- const updateLesson=()=>{const select=f.querySelector('[name=lesson_id]');const options=lessonOptions(f.querySelector('[name=level_id]').value);select.replaceChildren(...options.map(([v,t])=>el('option',{value:v,text:t})));select.disabled=!options.length;hint.replaceChildren(...(options.length?['Chọn file để tự điền tên bộ. Bạn có thể sửa tên trước khi nhập.']:['Cấp này chưa có bài học. ',adminLink('Tạo bài cho cấp này',{view:'lessons',level:f.querySelector('[name=level_id]').value})]));};
- f.querySelector('[name=level_id]').onchange=updateLesson;updateLesson();if(selectedLesson)f.querySelector('[name=lesson_id]').value=selectedLesson.id;
- f.querySelector('[name=file]').onchange=e=>{const file=e.target.files[0];if(file&&!f.querySelector('[name=title]').value)f.querySelector('[name=title]').value=file.name.replace(/\.docx$/i,'');};
- const importCard=card('Nhập tài liệu Word',[el('p',{text:'File được lưu thành bản nháp để bạn kiểm tra. Học sinh chưa nhìn thấy nội dung cho đến khi xuất bản.'}),el('a',{href:'/assets/templates/chinese-template.docx',text:'↓ Tải mẫu Word và hướng dẫn'}),hint,formSubmit(f,async()=>{
- const file=f.querySelector('[name=file]').files[0];if(!file)throw Error('Vui lòng chọn file Word.');if(file.size>20*1024*1024)throw Error('Tệp .docx tối đa 20 MB.');if(!f.querySelector('[name=lesson_id]').value)throw Error('Hãy tạo hoặc chọn bài học trước khi nhập.');notice('Đang tải và phân tích tài liệu, vui lòng chờ…');
- const body=new FormData(f);let result;try{result=await request('/imports','POST',body);}catch(e){if(e.code!=='DUPLICATE_DOCUMENT')throw e;if(!confirm('File này đã được nhập. Tạo một bộ mới độc lập? Chọn Hủy để dừng.'))return;body.set('allow_duplicate','true');result=await request('/imports','POST',body);}location.href='?set='+result.id;
- },'Phân tích và tạo bản nháp')]);root().prepend(importCard);
+function workspace(){
+ const selected=catalog.lessons.find(l=>l.id===params.get('lesson')),level=selected?.level_id||Number(params.get('level'))||1;
+ const lessons=catalog.lessons.filter(l=>l.level_id===level&&l.status!=='archived'),lesson=selected||lessons[0];
+ root().append(el('p',{class:'simple-intro',text:'Chọn bài, tải file Word, rồi kiểm tra để cho học sinh học.'}));
+ const scope=el('div',{class:'simple-scope'},[field('Cấp HSK','level_id',level,'text',catalog.levels.map(l=>[l.id,l.title])),field('Bài học','lesson_id',lesson?.id||'','text',lessons.length?lessons.map(l=>[l.id,l.title]):[['','Chưa có bài học']])]);
+ scope.querySelector('[name=level_id]').onchange=e=>{location.href='?level='+e.target.value;};scope.querySelector('[name=lesson_id]').onchange=e=>{location.href='?lesson='+e.target.value;};
+ const create=el('form',{},[field('Tên bài mới','title')]);create.querySelector('input').placeholder='Ví dụ: Bài 1 – Xin chào';create.querySelector('input').required=true;
+ formSubmit(create,async d=>{const position=Math.max(0,...catalog.lessons.filter(l=>l.level_id===level).map(l=>l.position))+1;const saved=await request('/lessons','POST',{...d,level_id:level,position,description:'',image_url:'',status:'draft'});location.href='?lesson='+saved.id;},'Tạo bài');
+ root().append(card('1. Chọn bài học',[scope,extra('+ Thêm bài học',[create])]));
+ if(!lesson){root().append(el('p',{class:'simple-empty',text:'Chưa có bài học ở cấp này. Bấm “+ Thêm bài học” để bắt đầu.'}));return;}
+ const upload=el('form',{class:'simple-upload'},[field('File Word (.docx, tối đa 20 MB)','file','','file'),field('Tên tài liệu','title')]);
+ const fileInput=upload.querySelector('[name=file]');fileInput.accept='.docx';fileInput.required=true;upload.querySelector('[name=title]').placeholder='Tự lấy theo tên file';
+ fileInput.onchange=()=>{if(fileInput.files[0]&&!upload.querySelector('[name=title]').value)upload.querySelector('[name=title]').value=fileInput.files[0].name.replace(/\.docx$/i,'');};
+ formSubmit(upload,async()=>{
+  const file=fileInput.files[0];if(!file)throw Error('Bạn chưa chọn file Word.');if(file.size>20*1024*1024)throw Error('File Word tối đa 20 MB.');
+  const body=new FormData(upload);body.set('level_id',String(level));body.set('lesson_id',lesson.id);if(!body.get('title'))body.set('title',file.name.replace(/\.docx$/i,''));notice('Đang đọc file Word…');let result;
+  try{result=await request('/imports','POST',body);}catch(e){if(e.code!=='DUPLICATE_DOCUMENT')throw e;if(!confirm('File này đã được nhập. Bạn có muốn tạo thêm một tài liệu riêng?')){notice('Đã hủy nhập file.');return;}body.set('allow_duplicate','true');result=await request('/imports','POST',body);}
+  location.href='?set='+result.id;
+ },'Tải lên và kiểm tra');
+ root().append(card('2. Thêm tài liệu cho '+lesson.title,[upload,el('a',{href:'/assets/templates/chinese-template.docx',text:'Tải mẫu Word'})]));
+ const documents=catalog.sets.filter(s=>s.lesson_id===lesson.id&&s.status!=='archived');
+ root().append(card('Tài liệu trong bài',documents.length?documents.map(s=>{
+  const countLabel=catalog.counts.filter(c=>c.set_id===s.id).map(c=>`${c.total} ${kinds.find(([key])=>key===c.kind)?.[1].toLowerCase()||'mục'}`).join(' · ');
+  return el('div',{class:'simple-document'},[el('div',{},[el('strong',{text:s.title}),el('p',{class:'muted',text:countLabel||'Chưa có nội dung'}),el('span',{class:s.status==='published'?'simple-status published':'simple-status',text:s.status==='published'&&lesson.status!=='published'?'Bài học chưa mở cho học sinh':statusText(s.status)})]),adminLink('Mở tài liệu',{set:s.id})]);
+ }):[el('p',{class:'muted',text:'Chưa có tài liệu. Tải file Word ở phía trên.'})]));
+ const manual=el('form',{},[field('Tên tài liệu mới','title')]);formSubmit(manual,async d=>{const s=await request('/sets','POST',{...d,lesson_id:lesson.id});location.href='?set='+s.id;},'Tạo tài liệu');root().append(extra('+ Tạo tài liệu trực tiếp (không cần Word)',[manual]));
+ const rename=el('form',{},[field('Tên bài','title',lesson.title),field('Trạng thái','status',lesson.status,'text',[['draft','Bản nháp'],['published','Đã đăng'],['archived','Lưu trữ']])]);formSubmit(rename,async d=>{await request('/lessons/'+lesson.id,'PUT',{...lesson,...d,description:lesson.description||'',image_url:lesson.image_url||''});location.reload();},'Lưu bài học');root().append(card('Quản lý bài học',[rename,action('Xóa bài học',async()=>{if(!confirm(`Xóa bài “${lesson.title}” cùng toàn bộ tài liệu, nội dung và tiến độ học trong bài? Lịch sử làm bài vẫn được giữ. Không thể hoàn tác.`))return;await request('/lessons/'+lesson.id,'DELETE');location.href='?level='+level;})]));
 }
-const vocabFields=[['hanzi','Chữ Hán'],['pinyin','Pinyin'],['meaning','Nghĩa'],['part_of_speech','Từ loại'],['example','Ví dụ'],['example_pinyin','Pinyin ví dụ'],['example_meaning','Nghĩa ví dụ'],['audio_url','URL âm thanh'],['image_url','URL hình'],['mnemonic','Mẹo nhớ'],['radicals','Bộ thủ']];
-async function editSet(id){const result=await request('/sets/'+id);let items=result.items.map(i=>({id:i.id,kind:i.kind,data:i.data}));const s=result.set;
- root().append(el('p',{text:`Tiếng Trung / HSK ${s.level_id} / ${s.lesson_title} / ${s.title}`}),el('p',{text:`Nguồn: ${s.filename||'—'}`}),...(s.document_id?[el('a',{href:'/api/v1/chinese/documents/'+s.document_id,text:'Tải tài liệu gốc (admin)'})]:[]));
- const f=el('form',{},[field('Tên bộ','title',s.title),field('Trạng thái','status',s.status,'text',statuses)]);let tab=params.get('tab')||'info';const panels=el('div');
- const collect=()=>{panels.querySelectorAll('[data-item-index]').forEach(node=>{const item=items[Number(node.dataset.itemIndex)];const vals=values(node);const d={};for(const [key,value]of Object.entries(vals)){if(key==='kind')continue;if(['options','accepted','targets'].includes(key))d[key]=value.split('\n').map(s=>s.trim()).filter(Boolean);else if(key==='approved')d[key]=value==='true';else d[key]=value;}item.kind=vals.kind;item.data=d;});};
- const tabs=el('nav',{class:'chinese-tools'});for(const [v,t]of [['info','Thông tin'],...kinds,['preview','Xem trước học sinh']])tabs.append(button(t,()=>{collect();tab=v;questionFilters.hidden=tab!=='question';render();}));
- const questionFilters=el('form',{class:'chinese-grid'},[field('Lọc loại câu','type','','text',[['','Tất cả'],...['choice','text','pinyin','matching','ordering','listening','dictation','fill'].map(t=>[t,t])]),field('Lọc độ khó','difficulty','','text',[['','Tất cả'],['easy','Dễ'],['medium','Vừa'],['hard','Khó']]),field('Lọc duyệt','approved','','text',[['','Tất cả'],['true','Đã duyệt'],['false','Chờ duyệt']])]);questionFilters.hidden=tab!=='question';questionFilters.onchange=()=>{collect();render();};
- const render=()=>{panels.replaceChildren();if(tab==='info'){panels.append(el('p',{text:'Mỗi bộ chỉ chứa dữ liệu của file nguồn này. Thay đổi thứ tự bằng nút Lên/Xuống. Xóa sẽ lưu trữ mục cũ để giữ lịch sử.'}));return;}if(tab==='preview'){panels.append(...items.map(i=>card(i.kind,[el('p',{class:i.kind==='vocabulary'?'hanzi':'read-text',text:i.data.hanzi||i.data.prompt||i.data.text}),el('p',{text:i.data.pinyin||''}),el('p',{text:i.data.meaning||''})])));return;}
- items.forEach((i,index)=>{if(i.kind!==tab)return;if(tab==='question'){const f=values(questionFilters);if(f.type&&i.data.type!==f.type||f.difficulty&&i.data.difficulty!==f.difficulty||f.approved&&String(Boolean(i.data.approved))!==f.approved)return;}const node=el('form',{'data-item-index':index,class:'item-editor'});node.append(el('small',{text:'ID: '+(i.id||'Lưu rồi mở lại để xem ID')}),field('Loại nội dung','kind',i.kind,'text',kinds));
- if(i.kind==='vocabulary'){for(const [key,label]of vocabFields)node.append(field(label,key,i.data[key]));node.append(field('Nhóm','group',i.data.group||'main','text',[['main','Từ chính'],['extended','Mở rộng']]));}
- else if(i.kind==='question'){
- node.append(field('Loại câu hỏi','type',i.data.type||'choice','text',[['choice','Chọn đáp án'],['text','Nhập chữ / nghĩa'],['pinyin','Gõ pinyin (giữ dấu thanh)'],['matching','Ghép (nhập các cặp theo mẫu)'],['ordering','Sắp xếp từ thành câu'],['listening','Nghe và chọn'],['dictation','Nghe và chép'],['fill','Điền chỗ trống']]),field('Nội dung câu hỏi / hướng dẫn định dạng trả lời','prompt',i.data.prompt,'textarea'),field('Các lựa chọn (mỗi dòng một lựa chọn)','options',i.data.options?.join('\n'),'textarea'),field('Đáp án chấp nhận (mỗi dòng một đáp án)','accepted',i.data.accepted?.join('\n'),'textarea'),field('Giải thích','explanation',i.data.explanation,'textarea'),field('Âm thanh','audio_url',i.data.audio_url),field('Hình ảnh','image_url',i.data.image_url),field('Độ khó','difficulty',i.data.difficulty||'medium','text',[['easy','Dễ'],['medium','Vừa'],['hard','Khó']]),field('Duyệt câu hỏi','approved',String(Boolean(i.data.approved)),'text',[['false','Chờ duyệt'],['true','Đã duyệt']]));
- node.append(field('Vế phải để ghép (mỗi dòng một mục, không xếp theo đáp án)','targets',i.data.targets?.join('\n'),'textarea'),el('p',{text:'Ghép cặp: đáp án ghi theo thứ tự vế trái, dạng chữ=nghĩa | chữ=nghĩa. Sắp xếp: mỗi lựa chọn là một từ; đáp án là câu hoàn chỉnh.'}),field('ID từ liên quan (tùy chọn, từ trong bộ này)','vocabulary_id',i.data.vocabulary_id));
- }else node.append(field('Nội dung gốc','text',i.data.text,'textarea'));
- node.append(button('Xóa mục',()=>{collect();items.splice(index,1);render();}),button('Lên',()=>{collect();if(index>0)[items[index-1],items[index]]=[items[index],items[index-1]];render();}),button('Xuống',()=>{collect();if(index+1<items.length)[items[index+1],items[index]]=[items[index],items[index+1]];render();}));
- const itemCard=el('details',{class:'item-card'},[el('summary',{text:`${index+1}. ${(i.data.hanzi||i.data.prompt||i.data.text||'Mục mới').slice(0,100)}`}),node]);itemCard.open=index===0||tab==='unknown';panels.append(itemCard);
- });panels.prepend(button('Mở tất cả mục',()=>panels.querySelectorAll('details.item-card').forEach(n=>n.open=true)),button('Thu gọn tất cả',()=>panels.querySelectorAll('details.item-card').forEach(n=>n.open=false)));panels.append(button('Thêm mục',()=>{collect();items.push({kind:tab,data:{}});render();const last=panels.querySelector('details.item-card:last-of-type');if(last){last.open=true;last.scrollIntoView({block:'center',behavior:'smooth'});}}));};
- const issueText=errors=>errors.map(e=>`Mục ${e.index}: ${e.message}`).join('\n');
- const save=async status=>{collect();const payload={...values(f),items};if(status)payload.status=status;const saved=await request('/sets/'+id,'PUT',payload);notice(saved.issues.length?'Đã lưu bản nháp. Cần kiểm tra:\n'+issueText(saved.issues):'Đã lưu thành công');if(!saved.issues.length)location.reload();};
- const actions=el('div',{class:'chinese-actions admin-savebar'},[button('Lưu bản nháp',()=>save('draft')),button('Kiểm tra & lưu',()=>save()),button('Xuất bản bộ',()=>save('published'))]);
- actions.lastElementChild.className='btn btn-primary';
- root().append(el('p',{class:'muted',text:'Kiểm tra từng nhóm nội dung bên dưới. Lưu bản nháp để tiếp tục sau, hoặc Xuất bản bộ khi nội dung đã sẵn sàng.'}),f,tabs,questionFilters,panels,actions);render();if(result.issues.length)notice('Cần kiểm tra:\n'+issueText(result.issues));
+async function editor(id){
+ const result=await request('/sets/'+id),set=result.set;let items=result.items.map(i=>({id:i.id,kind:i.kind,data:{...i.data}})),page=0;
+ const available=kinds;let tab=params.get('tab')|| (items.some(i=>i.kind==='question')?'question':items[0]?.kind||'question');
+ root().append(adminLink('← Quay lại bài học',{lesson:set.lesson_id}),el('h2',{text:set.title}),el('p',{class:'muted',text:`HSK ${set.level_id} / ${set.lesson_title}`}),el('p',{class:'simple-status',text:set.status==='published'&&set.lesson_status!=='published'?'Tài liệu đã duyệt, nhưng bài học chưa mở cho học sinh.':statusText(set.status)}));
+ const panels=el('div'),tabs=el('div',{class:'chinese-tools'});
+ const collect=()=>{panels.querySelectorAll('form[data-index]').forEach(form=>{const i=items[Number(form.dataset.index)];for(const [key,value]of Object.entries(values(form)))i.data[key]=['options','accepted'].includes(key)?value.split('\n').map(t=>t.trim()).filter(Boolean):value;});};
+ const render=()=>{
+  panels.replaceChildren();const filtered=items.map((i,index)=>({i,index})).filter(({i})=>i.kind===tab),pages=Math.max(1,Math.ceil(filtered.length/15));page=Math.min(page,pages-1);
+  available.forEach(([key,title],n)=>{if(tabs.children[n])tabs.children[n].textContent=`${title} (${items.filter(i=>i.kind===key).length})`;});
+  for(const {i,index}of filtered.slice(page*15,page*15+15)){
+   const d=i.data,box=el('section',{class:'simple-question'});box.append(el('h3',{class:'read-text',text:`${index+1}. ${d.prompt||d.hanzi||d.title||'Nội dung cần kiểm tra'}`}));
+   if(i.kind==='question'){if(d.options?.length)box.append(el('ol',{type:'A',class:'simple-options'},d.options.map(option=>el('li',{text:option}))));box.append(el('p',{class:'simple-answer',text:'Đáp án: '+(d.accepted?.join(' / ')||'Chưa có đáp án')}));if(d.explanation)box.append(el('p',{class:'read-text muted',text:d.explanation}));}
+   else if(i.kind==='vocabulary')box.append(el('p',{class:'pinyin',text:d.pinyin||''}),el('p',{text:d.meaning||''}));else box.append(el('p',{class:'read-text',text:d.text||''}));
+   if(d.audio_url)box.append(el('audio',{src:d.audio_url,controls:true}));if(d.image_url)box.append(el('img',{src:d.image_url,alt:'Hình minh họa',width:200}));
+   const form=el('form',{'data-index':index});
+   if(i.kind==='question'){form.append(field('Câu hỏi','prompt',d.prompt,'textarea'));if(d.options?.length||['choice','listening','ordering','matching'].includes(d.type))form.append(field('Các lựa chọn (mỗi dòng một lựa chọn)','options',d.options?.join('\n'),'textarea'));form.append(field('Đáp án đúng (ghi nguyên nội dung, mỗi dòng một đáp án)','accepted',d.accepted?.join('\n'),'textarea'),field('Giải thích','explanation',d.explanation,'textarea'));}
+   else if(i.kind==='vocabulary')form.append(field('Chữ Hán','hanzi',d.hanzi),field('Pinyin','pinyin',d.pinyin),field('Nghĩa tiếng Việt','meaning',d.meaning));else form.append(field('Nội dung','text',d.text,'textarea'));
+   box.append(extra(i.kind==='question'?'Sửa câu hỏi':'Sửa nội dung',[form]));
+   if(i.kind==='unknown')box.append(el('p',{class:'muted',text:'Đoạn này chưa được nhận diện. Nếu là câu hỏi, hãy sửa định dạng file gốc rồi đọc lại.'}));
+   box.querySelector('details').append(action('Bỏ mục này',()=>{if(!confirm('Bỏ mục này khỏi tài liệu? Thay đổi chỉ được lưu khi bạn bấm nút Lưu.'))return;collect();items.splice(index,1);render();notice('Đã bỏ mục khỏi bản đang sửa. Bấm Lưu để lưu thay đổi.');}));panels.append(box);
+  }
+  if(!filtered.length)panels.append(el('p',{class:'simple-empty',text:'Không có nội dung trong nhóm này.'}));
+  if(pages>1){const prev=action('← Trước',()=>{collect();page--;render();}),next=action('Tiếp →',()=>{collect();page++;render();});prev.disabled=page===0;next.disabled=page>=pages-1;panels.append(el('div',{class:'simple-pagination'},[prev,el('span',{text:`Trang ${page+1}/${pages}`}),next]));}
+ };
+ for(const [key,title]of available)tabs.append(action(`${title} (${items.filter(i=>i.kind===key).length})`,()=>{collect();tab=key;page=0;render();}));
+ const addForm=el('form',{},[field('Loại nội dung','kind','question','text',kinds.filter(([k])=>k!=='unknown'))]);formSubmit(addForm,()=>{collect();const kind=values(addForm).kind;items.push({kind,data:kind==='question'?{type:'choice',prompt:'',options:['Lựa chọn A','Lựa chọn B'],accepted:[],approved:false}:kind==='vocabulary'?{hanzi:'',pinyin:'',meaning:''}:{text:''}});tab=kind;page=Math.floor((items.filter(i=>i.kind===kind).length-1)/15);render();notice('Đã thêm mục mới. Mở “Sửa nội dung” hoặc “Sửa câu hỏi”, điền thông tin rồi bấm Lưu.');},'Thêm nội dung');
+ const titleForm=el('form',{},[field('Tên tài liệu','title',set.title)]),settings=[titleForm,action('Xóa tài liệu',async()=>{if(!confirm(`Xóa tài liệu “${set.title}” cùng nội dung và tiến độ học? Lịch sử làm bài vẫn được giữ. Không thể hoàn tác.`))return;await request('/sets/'+id,'DELETE');location.href='?lesson='+set.lesson_id;})];
+ if(set.document_id){settings.push(el('a',{href:'/api/v1/chinese/documents/'+set.document_id,text:'Tải lại file Word gốc'}));if(set.status==='draft')settings.push(action('Đọc lại file Word',async()=>{if(!confirm('Đọc lại file gốc sẽ thay nội dung bản nháp và các chỉnh sửa hiện tại. Tiếp tục?'))return;await request('/sets/'+id+'/reparse','POST');location.reload();}));}
+ const save=async (publish,draft=false)=>{
+  collect();let savedItems=items;
+  if(publish){if(!confirm(`Bạn xác nhận đã kiểm tra nội dung và đáp án? Tài liệu “${titleForm.querySelector('input').value}” sẽ được duyệt và cho học sinh xem. Bài “${set.lesson_title}” cũng sẽ được mở nếu chưa mở.`))return;savedItems=items.map(i=>i.kind==='question'?{...i,data:{...i.data,approved:true}}:i);}
+  await request('/sets/'+id,'PUT',{title:values(titleForm).title,status:publish?'published':draft?'draft':set.status,items:savedItems});
+  if(publish&&set.lesson_status!=='published'){const lesson=catalog.lessons.find(l=>l.id===set.lesson_id);try{await request('/lessons/'+lesson.id,'PUT',{...lesson,description:lesson.description||'',image_url:lesson.image_url||'',status:'published'});}catch(e){throw new Error('Đã lưu tài liệu, nhưng chưa mở được bài học. Bấm “Cho học sinh xem” để thử lại. '+e.message);}}
+  location.href='?lesson='+set.lesson_id;
+ };
+ root().append(el('p',{class:'simple-intro',text:'Thêm, sửa hoặc bỏ nội dung bên dưới rồi bấm Lưu. Tài liệu đã đăng vẫn chỉnh sửa được.'}),extra('+ Thêm nội dung',[addForm]),tabs,panels,card('Quản lý tài liệu',settings),el('div',{class:'simple-footer'},[action('Lưu bản nháp',()=>save(false,true)),action('Lưu thay đổi',()=>save(false)),action('Cho học sinh xem',()=>save(true),true)]));render();
+ const other=result.issues.filter(e=>e.message!=='Câu hỏi chưa được duyệt');if(other.length)notice(`${other.length} nội dung cần kiểm tra. `+other.slice(0,4).map(e=>`Mục ${e.index}: ${e.message}`).join('\n'));
 }
-async function tests(){const rows=await request('/tests');root().append(table(['Tên','Nguồn','Trạng thái','Sửa'],rows.map(t=>[t.title,t.set_ids.map(id=>data.sets.find(s=>s.id===id)?.title||id).join(', '),t.status,adminLink('Sửa',{view:'tests',test:t.id})])));
- const t=rows.find(t=>t.id===params.get('test'));const f=el('form',{},[field('Tên bài kiểm tra','title',t?.title),field('Thời gian (giây, trống = không giới hạn)','duration_seconds',t?.duration_seconds,'number'),field('Phần trăm đạt','pass_percent',t?.pass_percent||70,'number'),field('Trạng thái','status',t?.status||'draft','text',statuses)]);
- const sources=el('fieldset',{},[el('legend',{text:'Chọn rõ các bộ nguồn (câu hỏi theo thứ tự bộ và thứ tự trong bộ)'})]);for(const [id,label]of setOptions()){const input=el('input',{type:'checkbox',value:id});input.checked=t?.set_ids.includes(id)||false;sources.append(el('label',{class:'chinese-field'},[input,label]));}f.append(sources);
- root().append(card(t?'Sửa bài kiểm tra':'Tạo bài kiểm tra',[formSubmit(f,async d=>{d.set_ids=[...sources.querySelectorAll('input:checked')].map(i=>i.value);d.duration_seconds=d.duration_seconds?Number(d.duration_seconds):null;await request('/tests'+(t?'/'+t.id:''),t?'PUT':'POST',d);location.href='?view=tests';})]));
+async function progress(){
+ const {progress:rows}=await request('/stats'),students=[...new Map(rows.map(r=>[r.student_id,r.display_name])).entries()];
+ const filter=field('Học sinh','student','','text',[['','Tất cả học sinh'],...students]),list=el('div');
+ const render=()=>{const id=filter.querySelector('select').value;const filtered=rows.filter(r=>!id||r.student_id===id);list.replaceChildren(table(['Học sinh','Cấp','Tài liệu','Đã học'],filtered.map(r=>[r.display_name,'HSK '+r.level_id,r.title,r.percent+'%'])));};
+ filter.onchange=render;root().append(card('Tiến độ học',[filter,list]));render();if(!rows.length)notice('Chưa có lượt học. Tiến độ sẽ xuất hiện khi học sinh bắt đầu học tài liệu.');
 }
-async function progress(){const f=el('form',{},[field('ID học sinh (trống = tất cả)','student_id'),field('HSK','level_id','','text',[['','Tất cả'],...levelOptions()]),field('Bài','lesson_id','','text',[['','Tất cả'],...lessonOptions()]),field('Bộ','set_id','','text',[['','Tất cả'],...setOptions()])]);const list=el('div');const load=async()=>{const s=await request('/stats?'+new URLSearchParams(values(f)));list.replaceChildren(table(['Học sinh','HSK','Bộ','Hoàn thành','Từ đã học / tự nhớ','Điểm các lượt làm','Hoạt động gần nhất'],s.progress.map(p=>[p.display_name,p.level_id,p.title,p.percent+'%',`${p.learned_words} / ${p.remembered_words}`,p.test_scores.join(', '),new Date(p.updated_at).toLocaleString('vi-VN')])));};root().append(formSubmit(f,load,'Lọc'),list);await load();}
-boot().catch(error);
+boot().catch(message);

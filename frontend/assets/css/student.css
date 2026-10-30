@@ -1,0 +1,123 @@
+/* Shared student workspace. Higher specificity keeps admin screens unchanged. */
+body[data-role=student]{--student-border:#e2e0eb;--student-soft:#f2edff;--student-text:#36304f;background-color:#fffdf7;color:var(--student-text);font-size:16px}
+body[data-role=student] .topbar{background:#fffefb;backdrop-filter:none;border-bottom:1px solid var(--student-border)}
+body[data-role=student] .topbar-inner{max-width:none;min-height:80px;padding:14px 30px}
+body[data-role=student] .brand{font-size:1.4rem;gap:12px}
+body[data-role=student] .brand-mark{width:44px;height:44px;border-radius:12px}
+body[data-role=student] .topbar-user{gap:20px}
+body[data-role=student] .diamond-chip{background:#fff5d9;border-color:#f2dea4;min-height:40px;padding:7px 12px;font-size:.9rem}
+body[data-role=student] .student-account{position:relative}
+body[data-role=student] .student-account>summary{display:flex;align-items:center;gap:10px;min-height:46px;cursor:pointer;list-style:none;border-radius:12px;padding:3px 6px}
+body[data-role=student] summary::-webkit-details-marker{display:none}
+body[data-role=student] .user-meta{line-height:1.5;max-width:180px}
+body[data-role=student] .user-meta strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+body[data-role=student] .account-chevron{color:#776f8b}
+body[data-role=student] .student-account-menu{position:absolute;top:calc(100% + 12px);right:0;width:240px;background:#fff;border:1px solid var(--student-border);border-radius:18px;box-shadow:0 12px 36px #30204418;padding:20px;display:grid;gap:10px;z-index:55;overflow-wrap:anywhere}
+body[data-role=student] .student-account-menu>span{font-size:.8rem;color:var(--muted)}
+body[data-role=student] .student-navigation{padding:20px 16px}
+body[data-role=student] .student-nav-label{font-size:10px;font-weight:700;letter-spacing:1.4px;color:#827b93;margin:8px 14px 16px}
+body[data-role=student] .student-primary-nav,body[data-role=student] .student-personal-nav{display:grid;gap:8px}
+body[data-role=student] .student-navigation .nav-link{display:flex;align-items:center;gap:14px;min-height:52px;border-radius:14px;padding:10px 14px;color:#686179;font-size:.9rem;font-weight:600;border:1px solid transparent;white-space:nowrap}
+body[data-role=student] .student-navigation .nav-link:hover{background:#f4f0fc;color:#5136a1}
+body[data-role=student] .student-navigation .nav-link[aria-current=page]{background:#ece5fd;border-color:#ded2fa;color:#5331b2;box-shadow:inset 3px 0 #7854d7}
+body[data-role=student] .student-nav-icon{font:600 24px/1 var(--font-display);width:30px;text-align:center}
+body[data-role=student] .student-more{margin-top:20px}
+body[data-role=student] .student-more>summary{display:flex;align-items:center;gap:10px;list-style:none;cursor:pointer;color:#686179;font-weight:600;padding:12px 14px;min-height:48px;border-radius:12px}
+body[data-role=student] .student-more-arrow{margin-left:auto}
+body[data-role=student] .student-personal-nav .student-nav-label{margin-top:18px;margin-bottom:5px}
+body[data-role=student] .student-sidebar-note{margin:30px 10px 0;background:#f4f1e6;border:1px solid #eae5d7;padding:20px 12px;border-radius:18px;text-align:center;font-size:12px;color:#716b5b}
+body[data-role=student] .student-sidebar-note img{margin:0 auto 12px}
+body[data-role=student] .student-sidebar-note strong,body[data-role=student] .student-sidebar-note span{display:block;line-height:1.8}
+body[data-role=student] .page{width:min(1100px,100%);max-width:1100px;padding:32px 32px 60px}
+body[data-role=student] h1{font-size:clamp(1.7rem,2.8vw,2.25rem);line-height:1.3}
+body[data-role=student] h2{font-size:1.45rem;line-height:1.35}
+body[data-role=student] h3{line-height:1.4}
+body[data-role=student] .page-head{margin-bottom:26px;background:#fffdf8ed;border:1px solid var(--student-border);padding:24px;border-radius:20px}
+body[data-role=student] .page-head p{line-height:1.8;font-size:.9rem}
+body[data-role=student] .card{background:#fffefc;border:1px solid var(--student-border);border-radius:20px;box-shadow:0 4px 16px #39265c06;padding:24px}
+body[data-role=student] .card+.card{margin-top:20px}
+body[data-role=student] .card-head{margin-bottom:20px;align-items:center}
+body[data-role=student] .card-head>a{font-size:.8rem;font-weight:600}
+body[data-role=student] .btn{border-radius:13px;min-height:48px;padding:11px 18px;box-shadow:0 3px 0 #4523b326;font-size:.9rem;line-height:1.5;margin:0}
+body[data-role=student] .btn-ghost,body[data-role=student] .btn-secondary{background:#fff;color:#5d458d;border:1px solid #ded7ed;box-shadow:none}
+body[data-role=student] .btn-secondary:hover,body[data-role=student] .btn-ghost:hover{background:#f1ebfd;color:#4523b3}
+body[data-role=student] .btn-primary{background:var(--primary);border-color:transparent;color:white}
+body[data-role=student] .tabs{gap:10px;margin-bottom:22px;padding:4px 0 8px;flex-wrap:wrap;overflow:visible}
+body[data-role=student] .tab{border:1px solid var(--student-border);border-radius:12px;padding:12px 20px;min-height:48px;background:#fff}
+body[data-role=student] .tab[aria-selected=true]{background:var(--primary);border-color:var(--primary);color:#fff}
+body[data-role=student] .topic-item{padding:18px;border-radius:16px;border-width:1px;min-height:76px;background:#fffefc}
+body[data-role=student] .topic-list{gap:14px}
+body[data-role=student] .input,body[data-role=student] .select,body[data-role=student] .chinese-field select{min-height:48px;border-radius:12px}
+body[data-role=student] .hero{background:#f0eafb;border:1px solid #e0d6f3;border-radius:24px;padding:28px;box-shadow:none;gap:22px;margin-bottom:30px;position:relative;overflow:hidden}
+body[data-role=student] .hero h1{font-size:clamp(1.6rem,2.4vw,2rem);overflow-wrap:anywhere}
+body[data-role=student] .hero .avatar-lg{width:84px;height:84px;background:#fff9ef;border:5px solid #ffffffb3;box-shadow:none}
+body[data-role=student] .hero-text{position:relative;z-index:1}
+body[data-role=student] .hero-text>p:last-child{font-size:.85rem;line-height:1.8;color:#6c5e83}
+body[data-role=student] .hero .eyebrow{font-size:10px;letter-spacing:1.5px;margin-bottom:6px}
+body[data-role=student] .home-section{margin-bottom:30px}
+body[data-role=student] .home-section-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}
+body[data-role=student] .home-section-head h2{margin:0}
+body[data-role=student] .home-section-head>p{font-size:12px;color:#777084;margin:0}
+body[data-role=student] .subject-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+body[data-role=student] .subject-card{background:#fff4e5;border:1px solid #f0dfc5;box-shadow:0 4px 0 #f0e0c9;border-radius:20px;min-height:205px;padding:22px;color:#805820;gap:18px;transition:transform .15s,box-shadow .15s}
+body[data-role=student] .subject-card:hover{transform:translateY(-4px);text-decoration:none;box-shadow:0 8px 0 #f0e0c9}
+body[data-role=student] .subject-card::after{display:none}
+body[data-role=student] .subject-card h3{color:inherit;font-size:1.3rem;margin:0 0 6px}
+body[data-role=student] .subject-card p{font-size:12px;color:inherit;opacity:1;line-height:1.7}
+body[data-role=student] .subject-icon{display:grid;place-items:center;width:51px;height:51px;border-radius:15px;background:#ffffffa6;font:700 26px var(--font-display)}
+body[data-role=student] .subject-toan{background:#eaf2ff;color:#285c9d;border-color:#d6e3f6;box-shadow:0 4px 0 #d6e3f6}
+body[data-role=student] .subject-tieng-viet{background:#eaf3e7;color:#3c6d39;border-color:#d5e5cf;box-shadow:0 4px 0 #d5e5cf}
+body[data-role=student] .subject-tieng-anh{background:#f8eaf0;color:#9a476a;border-color:#eed5e1;box-shadow:0 4px 0 #eed5e1}
+body[data-role=student] .subject-bottom{display:flex;align-items:center;justify-content:space-between;font-size:11px;font-weight:600}
+body[data-role=student] .subject-bottom b{font-size:20px}
+body[data-role=student] .home-modes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+body[data-role=student] .home-mode{display:flex;align-items:center;gap:15px;padding:21px;border:1px solid var(--student-border);border-radius:18px;background:#fffefc;color:var(--ink);transition:border-color .2s}
+body[data-role=student] .home-mode:hover{border-color:#aa8ce4;text-decoration:none}
+body[data-role=student] .home-mode>span{font-size:28px;color:#8963c3;width:36px;flex-shrink:0;text-align:center}
+body[data-role=student] .home-mode h3{font-size:1.1rem;margin:0 0 4px}
+body[data-role=student] .home-mode p{font-size:11px;color:#777084;line-height:1.7;margin:0}
+body[data-role=student] .home-bottom{display:grid;grid-template-columns:.9fr 1.3fr;gap:20px;align-items:start}
+body[data-role=student] .home-bottom>.card{margin-top:0;min-width:0}
+body[data-role=student] .home-bottom .grid-3{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+body[data-role=student] .stat{border:0;background:#f6f3fb;border-radius:14px;padding:16px 5px}
+body[data-role=student] .stat strong{font-size:1.7rem;margin-bottom:5px}
+body[data-role=student] .stat span{font-size:11px}
+body[data-role=student] .history-item{padding:15px 0}
+body[data-role=student] .chinese-pagebar{align-items:center;margin:0 0 22px;gap:18px}
+body[data-role=student] .chinese-pagebar h1{font-family:var(--font-display);font-size:2rem}
+body[data-role=student] .chinese-pagebar .chinese-tools{background:#fffefc;padding:5px;border:1px solid var(--student-border);border-radius:14px;gap:4px}
+body[data-role=student] .chinese-pagebar .chinese-tools a{padding:10px 16px;font-size:.85rem;border-radius:10px;min-height:44px;display:flex;align-items:center;color:#70657f}
+body[data-role=student] .chinese-pagebar .chinese-tools a[aria-current=page]{background:#eee7fb;color:#5936a0;font-weight:700}
+body[data-role=student] .learn-intro{font-size:1rem;color:#6b617a;margin:0 0 20px}
+body[data-role=student] .chinese-welcome{display:flex;align-items:center;gap:20px;background:#f2eafb;border:1px solid #e2d7f3;border-radius:22px;padding:24px;margin-bottom:24px}
+body[data-role=student] .chinese-welcome>img{flex-shrink:0;background:#fff8ec;border-radius:20px;padding:7px}
+body[data-role=student] .chinese-welcome h2{font-size:1.65rem;margin-bottom:8px}
+body[data-role=student] .chinese-welcome p{font-size:.9rem;color:#70617f;margin:0;line-height:1.8}
+body[data-role=student] .chinese-level-picker{max-width:360px;margin:24px 0;font-size:.9rem}
+body[data-role=student] .learn-document{background:#fff;border:1px solid #e9e3ef;border-radius:15px;padding:20px;margin-top:14px;gap:18px}
+body[data-role=student] .learn-document strong{font-size:1.05rem}
+body[data-role=student] .learn-document .muted{font-size:.8rem;line-height:1.8;color:#766b85}
+body[data-role=student] .learn-actions{gap:10px;flex-shrink:0}
+body[data-role=student] .learn-extra{border:1px solid var(--student-border);border-radius:15px;padding:16px 20px;background:#fffefa;font-size:.85rem;line-height:1.9}
+body[data-role=student] .learn-extra>summary{min-height:30px;color:#756980;font-weight:600}
+body[data-role=student] .learn-extra[open]>summary{margin-bottom:14px}
+body[data-role=student] .study-bar{padding:16px 0;margin-bottom:16px}
+body[data-role=student] .study-back{width:48px;height:48px;border-radius:14px;color:#65499b;border-color:#dfd5ee}
+body[data-role=student] .study-bar h1{font:700 1.4rem/1.5 var(--font-display)}
+body[data-role=student] .study-modes{background:#eee8f6;border-color:#e0d6ed;border-radius:14px;margin-bottom:22px;padding:5px;max-width:100%;flex-wrap:wrap;justify-content:center}
+body[data-role=student] .study-modes .btn{border:0;background:transparent;box-shadow:none;font-size:.85rem;min-height:44px;color:#756584;padding:10px 18px}
+body[data-role=student] .study-modes .btn[aria-current=page]{background:#fff;color:#583799;box-shadow:0 2px 6px #3a234c0d}
+body[data-role=student] .flashcard{background:linear-gradient(135deg,#fffefb,#f4effb);border:2px solid #ddd0f0;border-radius:26px;box-shadow:0 7px 0 #e9e0f4;min-height:340px;padding:32px;color:#39304c}
+body[data-role=student] .flashcard[aria-pressed=true]{background:#f0f7ec;border-color:#c1d6b5;box-shadow:0 7px 0 #dce8d5}
+body[data-role=student] .card-controls{gap:14px;margin-top:26px}
+body[data-role=student] .quiz-option{border-radius:16px;border-color:#e5deee;padding:18px;font-size:1rem;background:#fff}
+body[data-role=student] .quiz-option.selected{background:#f0eafb;border-color:#8f6cc6}
+body[data-role=student] progress{accent-color:#8660c3}
+body[data-role=student] .question-card{padding:28px}
+body[data-role=student] .question-prompt{font-size:1.45rem;line-height:1.8}
+body[data-role=student] .toast-root{bottom:90px}
+@media(min-width:1100px){body[data-role=student]{padding-left:232px}body[data-role=student] .topbar{position:sticky}body[data-role=student] .topbar-inner{padding-left:32px}body[data-role=student] .topbar-inner>.brand{position:fixed;left:26px;top:23px;z-index:42}body[data-role=student] .student-navigation{position:fixed;left:0;top:0;bottom:0;width:232px;background:#fffefb;border-right:1px solid #e6e0ed;padding-top:104px;overflow-y:auto;z-index:41}body[data-role=student] .topbar-user{margin-left:auto}body[data-role=student] .student-more>summary{display:none}body[data-role=student] .student-more{margin-top:26px}body[data-role=student] .student-more .student-nav-label{margin-top:0}}
+@media(max-width:1099px){body[data-role=student] .student-navigation{position:fixed;bottom:0;left:0;right:0;height:78px;height:calc(78px + env(safe-area-inset-bottom));padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:#fffefb;border-top:1px solid var(--student-border);display:flex;gap:6px;z-index:45;box-shadow:0 -4px 20px #3b245808}body[data-role=student] .student-primary-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));flex:1;gap:4px}body[data-role=student] .student-navigation>.student-nav-label,body[data-role=student] .student-sidebar-note{display:none}body[data-role=student] .student-navigation .nav-link{flex-direction:column;justify-content:center;gap:3px;min-height:58px;font-size:11px;padding:5px 3px;border-radius:12px;white-space:normal;text-align:center;line-height:1.4}body[data-role=student] .student-navigation .nav-link[aria-current=page]{box-shadow:none}body[data-role=student] .student-nav-icon{font-size:24px;height:26px}body[data-role=student] .student-more{margin:0;flex:0 0 18%;position:static}body[data-role=student] .student-more>summary{height:100%;padding:5px;display:flex;flex-direction:column;justify-content:center;gap:3px;font-size:11px;line-height:1.4;text-align:center}body[data-role=student] .student-more>summary>span:first-child{font-size:24px;line-height:26px}body[data-role=student] .student-more-arrow{display:none}body[data-role=student] .student-more[data-active=true]>summary,body[data-role=student] .student-more[open]>summary{background:#eee7fb;color:#5c37a6}body[data-role=student] .student-personal-nav{position:absolute;bottom:calc(100% + 10px);right:12px;width:min(330px,calc(100vw - 24px));grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:18px;background:#fffefc;border:1px solid var(--student-border);border-radius:20px;box-shadow:0 -8px 30px #39204b15}body[data-role=student] .student-personal-nav .student-nav-label{grid-column:1/-1;margin:0 0 4px}body[data-role=student] .student-personal-nav .nav-link{min-height:82px;background:#f7f4fb;font-size:13px;gap:8px}body[data-role=student] .page{padding-bottom:110px}}
+@media(min-width:1100px) and (max-width:1300px){body[data-role=student] .subject-grid{gap:12px}body[data-role=student] .subject-card{padding:18px}body[data-role=student] .home-mode{padding:17px;gap:10px}body[data-role=student] .home-mode h3{font-size:1rem}}
+@media(max-width:760px){body[data-role=student] .topbar-inner{min-height:72px;padding:12px 18px}body[data-role=student] .brand{font-size:1.15rem;gap:8px}body[data-role=student] .brand-mark{width:38px;height:38px}body[data-role=student] .topbar-user{gap:10px}body[data-role=student] .user-meta{display:none}body[data-role=student] .avatar{width:37px;height:37px}body[data-role=student] .account-chevron{display:none}body[data-role=student] .diamond-chip{font-size:.8rem;padding:6px 10px;min-height:36px}body[data-role=student] .page{padding:24px 18px 110px}body[data-role=student] .hero{padding:22px 18px;gap:15px;margin-bottom:26px}body[data-role=student] .hero .avatar-lg{width:62px;height:62px}body[data-role=student] .hero h1{font-size:1.4rem}body[data-role=student] .hero-text>p:last-child{font-size:12px}body[data-role=student] .home-section-head{align-items:start}body[data-role=student] .home-section-head>p{display:none}body[data-role=student] .subject-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}body[data-role=student] .subject-card{min-height:205px;padding:18px}body[data-role=student] .subject-card h3{font-size:1.3rem}body[data-role=student] .home-modes{grid-template-columns:1fr;gap:12px}body[data-role=student] .home-mode{padding:18px 20px}body[data-role=student] .home-mode>span{margin-right:4px}body[data-role=student] .home-mode p{font-size:12px}body[data-role=student] .home-bottom{grid-template-columns:1fr}body[data-role=student] .card{padding:20px;border-radius:18px}body[data-role=student] .page-head{padding:20px}body[data-role=student] .chinese-pagebar{display:block;margin-bottom:20px}body[data-role=student] .chinese-pagebar h1{font-size:1.8rem;margin-bottom:14px}body[data-role=student] .chinese-pagebar .chinese-tools{display:flex;width:fit-content;max-width:100%;flex-wrap:wrap}body[data-role=student] .chinese-pagebar .chinese-tools a{font-size:13px;padding:10px 15px}body[data-role=student] .chinese-welcome{padding:20px 16px;gap:15px}body[data-role=student] .chinese-welcome img{width:60px;height:60px;border-radius:16px}body[data-role=student] .chinese-welcome h2{font-size:1.35rem}body[data-role=student] .chinese-welcome p{font-size:12px}body[data-role=student] .learn-document{display:block;padding:16px}body[data-role=student] .learn-actions{margin-bottom:0}body[data-role=student] .learn-actions .btn{flex:1;min-width:90px;font-size:13px}body[data-role=student] .study-bar h1{font-size:1.2rem}body[data-role=student] .study-modes .btn{padding:10px 13px;font-size:13px}body[data-role=student] .flashcard{min-height:300px;padding:22px}body[data-role=student] .card-controls{gap:8px}body[data-role=student] .card-controls .btn{font-size:13px;padding:10px 14px}body[data-role=student] .question-card{padding:20px}body[data-role=student] .grid-2{grid-template-columns:1fr}body[data-role=student] .study-menu-content{max-width:calc(100vw - 48px)}}
+@media(prefers-reduced-motion:reduce){body[data-role=student] *,body[data-role=student] *::before,body[data-role=student] *::after{animation:none!important;transition:none!important}}

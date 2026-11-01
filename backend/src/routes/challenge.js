@@ -11,10 +11,12 @@ import {
 } from '../controllers/challenge-controller.js';
 import { authenticateToken, requireStudent } from '../middlewares/auth.js';
 import { rateLimit } from '../middlewares/rate-limit.js';
+import { primaryCourseGuard } from '../middlewares/course-access.js';
 
 const router = Router();
 
 router.use(authenticateToken, requireStudent);
+router.use(primaryCourseGuard('challenges'));
 router.get('/lobby', lobbyHandler);
 router.post('/invites', rateLimit({ windowMs: 60_000, max: 12, keyPrefix: 'challenge-invite' }), inviteHandler);
 router.post('/robot', rateLimit({ windowMs: 60_000, max: 12, keyPrefix: 'challenge-robot' }), robotHandler);

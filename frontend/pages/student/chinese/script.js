@@ -1,20 +1,24 @@
 import {initPage,syncDiamondTotal} from '/assets/js/ui-core.js';
 import {request,el,root,button,link,card,field,table,error,notice,percentage} from '/assets/js/chinese-common.js';
 import {writing,recording} from './learning-tools.js';
+import {renderHistory} from './history-view.js';
 const params=new URLSearchParams(location.search);let catalog,timer;
 const json=v=>typeof v==='string'?JSON.parse(v):v;
 const extra=(title,children)=>el('details',{class:'learn-extra'},[el('summary',{text:title}),...children]);
 function action(text,fn,primary=false){const b=button(text,async()=>{b.disabled=true;try{await fn();}catch(e){error(e);}finally{b.disabled=false;}});if(primary)b.className='btn btn-primary';return b;}
-const diamondRule='100%: +3 💎 · 70–99%: +1 💎 · dưới 70%: −1 💎 (không âm)';
 const quiz=async id=>{const a=await request('/attempts','POST',{set_id:id,count:20});location.href='?attempt='+a.id;};
 async function boot(){
  document.body.classList.toggle('is-studying',params.has('set'));
- await initPage('student','chinese');catalog=await request('/catalog');notice('');
+ const profile=await initPage('student',params.get('view')==='practice'?'practice':params.get('view')==='tests'?'exam':'chinese');
+ if(profile.course?.kind==='primary'){location.replace('/pages/student/courses/?program=chinese');return;}
+ if(profile.course?.kind==='chinese')params.set('level',String(profile.course.level));
+ catalog=await request('/catalog');notice('');
+ if(params.get('view')==='practice')document.querySelector('.chinese-title h1').textContent='Luyện tập Tiếng Trung';
  document.querySelectorAll('.chinese-pagebar .chinese-tools a').forEach(a=>{const view=new URL(a.href).searchParams.get('view');if(view===(params.get('view')||null))a.setAttribute('aria-current','page');});
  if(params.has('attempt'))return showAttempt(await request('/attempts/'+params.get('attempt')));
  if(params.has('set'))return learn(params.get('set'));
  if(params.get('view')==='notebook')return notebook();
- if(params.get('view')==='history')return history();
+ if(params.get('view')==='history')return renderHistory(catalog);
  if(params.get('view')==='tests')return tests();
  lessons();
 }
@@ -22,25 +26,28 @@ function lessons(){
  const last=catalog.progress.find(p=>catalog.sets.some(s=>s.id===p.set_id)),lastSet=catalog.sets.find(s=>s.id===last?.set_id);
  const selectedLesson=catalog.lessons.find(l=>l.id===params.get('lesson'));
  const level=Number(params.get('level'))||selectedLesson?.level_id||lastSet?.level_id||catalog.sets[0]?.level_id||1;
- root().append(el('section',{class:'chinese-welcome'},[el('img',{src:'/assets/avatars/cu.svg',alt:'',width:80,height:80}),el('div',{},[el('h2',{text:'Mỗi ngày một từ mới!'}),el('p',{text:'Chọn cấp HSK, tìm bài học và cùng khám phá nhé.'})])]));
- if(lastSet)root().append(link('Tiếp tục: '+lastSet.lesson_title,{set:lastSet.id,mode:'cards'}));
- const select=field('Con đang học cấp nào?','level',level,'text',catalog.levels.map(l=>[l.id,l.title]));select.classList.add('chinese-level-picker');select.onchange=e=>{location.href='?level='+e.target.value;};root().append(select);
+ root().append(el('section',{class:'chinese-welcome'},[el('img',{src:'/assets/images/mascot-panda.svg',alt:'',width:154,height:154}),el('div',{},[el('h2',{text:'Mỗi ngày một từ mới!'}),el('p',{text:'Chọn cấp HSK, tìm bài học và cùng khám phá nhé.'})])]));
+ if(lastSet){const resume=link('Tiếp tục: '+lastSet.lesson_title,{set:lastSet.id,mode:'cards'});resume.classList.add('resume-lesson');resume.replaceChildren(el('img',{src:'/assets/images/mascot-bunny.svg',alt:'',width:50,height:54}),el('span',{text:'Tiếp tục: '+lastSet.lesson_title}));root().append(resume);}
+ const select=field('Con đang học cấp nào?','level',level,'text',catalog.levels.map(l=>[l.id,l.title]));select.classList.add('chinese-level-picker');select.onchange=e=>{params.delete('lesson');params.set('level',e.target.value);window.history.replaceState(null,'','?'+params);root().replaceChildren();lessons();root().querySelector('select')?.focus({preventScroll:true});};root().append(select);
+ select.prepend(el('img',{src:'/assets/images/mascot-owl.svg',alt:'',width:60,height:74}));
  const rows=catalog.lessons.filter(l=>l.level_id===level);
- for(const lesson of rows){
+ for(const [lessonIndex,lesson] of rows.entries()){
   const sets=catalog.sets.filter(s=>s.lesson_id===lesson.id);
-  root().append(card(lesson.title,sets.length?sets.map(s=>{
+  const island=card(lesson.title,sets.length?sets.map(s=>{
    const counts=catalog.counts.filter(c=>c.set_id===s.id),words=Number(counts.find(c=>c.kind==='vocabulary')?.total||0),questions=Number(counts.find(c=>c.kind==='question')?.total||0),reads=counts.some(c=>['reading','grammar','dialogue'].includes(c.kind));
    const actions=el('div',{class:'learn-actions'});
    if(words||questions){const start=link('Thẻ lật',{set:s.id,mode:'cards'});start.classList.add('btn-primary');actions.append(start);}
-   if(questions){const q=action('Quiz 20 câu',()=>quiz(s.id),true);q.disabled=questions<20;q.title=questions<20?'Cần đủ 20 câu hỏi để làm quiz':diamondRule;actions.append(q);}
+   if(questions){const q=action('Quiz 20 câu',()=>quiz(s.id),true);q.disabled=questions<20;q.title=questions<20?'Cần đủ 20 câu hỏi để làm quiz':'';actions.append(q);}
    if(reads)actions.append(link('Bài đọc',{set:s.id,mode:'read'}));
-   return el('div',{class:'learn-document'},[el('div',{},[el('strong',{text:s.title}),el('p',{class:'muted',text:[words?words+' từ':'',questions?questions+' câu hỏi':'',percentage(s.id,catalog)+'% đã học'].filter(Boolean).join(' · ')}),...(questions>0&&questions<20?[el('p',{class:'muted',text:'Chưa đủ 20 câu để làm quiz; con có thể học thẻ lật.'})]:[])]),actions]);
-  }):[el('p',{class:'muted',text:'Chưa có nội dung.'})]));
+   const progress=percentage(s.id,catalog),meter=el('div',{class:'lesson-progress',role:'progressbar','aria-label':'Tiến độ '+s.title,'aria-valuenow':progress,'aria-valuemin':0,'aria-valuemax':100},[el('span')]);meter.firstElementChild.style.width=progress+'%';
+   return el('div',{class:'learn-document'},[el('div',{},[el('strong',{text:s.title}),el('p',{class:'muted',text:[words?words+' từ':'',questions?questions+' câu hỏi':'',progress+'% đã học'].filter(Boolean).join(' · ')}),meter,...(questions>0&&questions<20?[el('p',{class:'muted',text:'Chưa đủ 20 câu để làm quiz; con có thể học thẻ lật.'})]:[])]),actions]);
+  }):[el('p',{class:'muted',text:'Chưa có nội dung.'})]);
+  island.classList.add('lesson-island');const heading=island.querySelector('h2');heading.replaceWith(el('header',{class:'lesson-heading'},[el('img',{src:'/assets/images/mascot-'+['panda','bunny','owl'][lessonIndex%3]+'.svg',alt:'',width:70,height:76}),el('div',{},[el('span',{class:'lesson-eyebrow',text:'CÙNG NHAU KHÁM PHÁ'}),el('h2',{text:lesson.title})])]));root().append(island);
  }
  if(!rows.length)root().append(card('Chưa có nội dung',[el('p',{text:'Cấp này chưa có bài học. Con có thể chọn cấp khác.'})]));
  const due=catalog.reviews.filter(r=>r.next_review&&new Date(r.next_review)<=new Date()).length;
  if(due)root().append(link('Ôn '+due+' từ đến hạn',{view:'notebook',filter:'due'}));
- root().append(extra('Kim cương và tiến độ học',[el('p',{text:diamondRule}),el('p',{text:'Mỗi quiz gồm 20 câu. Tiến độ dựa trên từ đã tự đánh giá, đoạn đã đọc và câu quiz đã chốt.'})]));
+ root().append(extra('Tiến độ học',[el('p',{text:'Mỗi quiz gồm 20 câu. Tiến độ dựa trên từ đã tự đánh giá, đoạn đã đọc và câu quiz đã chốt.'})]));
 }
 async function learn(id){
  const {set,items,progress}=await request('/sets/'+id);let read=json(progress?.read_items||[]),last=progress?.last_item||null;
@@ -49,14 +56,14 @@ async function learn(id){
   el('a',{class:'study-back',href:'?level='+set.level_id,text:'←','aria-label':'Bài học',title:'Quay lại bài học'}),
   el('h1',{text:set.lesson_title}),
   el('details',{class:'study-menu'},[el('summary',{text:'⋯','aria-label':'Thêm tùy chọn'}),el('div',{class:'study-menu-content'},[
-   link('Sổ từ',{view:'notebook'}),link('Kết quả',{view:'history'}),el('p',{class:'study-source',text:set.title}),el('p',{class:'study-source',text:diamondRule})
+   link('Sổ từ',{view:'notebook'}),link('Kết quả',{view:'history'}),el('p',{class:'study-source',text:set.title})
   ])])
  ]));
  const words=items.filter(i=>i.kind==='vocabulary'),questions=items.filter(i=>i.kind==='question'),reads=items.filter(i=>['grammar','reading','dialogue'].includes(i.kind));
  const mode=params.get('mode')||(words.length||questions.length?'cards':'read');
  const nav=el('nav',{class:'study-modes','aria-label':'Cách học'});
  if(words.length||questions.length){const cards=link('Thẻ lật',{set:id,mode:'cards'});if(mode!=='read')cards.setAttribute('aria-current','page');nav.append(cards);}
- if(questions.length){const q=action('Quiz 20 câu',()=>quiz(id));q.disabled=questions.length<20;q.title=questions.length<20?'Cần ít nhất 20 câu hỏi':diamondRule;nav.append(q);}
+ if(questions.length){const q=action('Quiz 20 câu',()=>quiz(id));q.disabled=questions.length<20;q.title=questions.length<20?'Cần ít nhất 20 câu hỏi':'';nav.append(q);}
  if(reads.length){const reading=link('Bài đọc',{set:id,mode:'read'});if(mode==='read')reading.setAttribute('aria-current','page');nav.append(reading);}root().append(nav);
  if(mode==='read'){
   for(const i of reads)root().append(card(i.data.title||'Bài đọc',[el('p',{class:'read-text',text:i.data.text}),action(read.includes(i.id)?'Đã đọc':'Đánh dấu đã đọc',async()=>{if(!read.includes(i.id))read.push(i.id);await save(i.id);notice('Đã lưu tiến độ đọc.');})]));
@@ -71,7 +78,8 @@ async function learn(id){
    if(deck[current]?.id===item.id){flipped=!flipped;render();}
   };
   const move=async delta=>{current=(current+delta+deck.length)%deck.length;flipped=false;render();await save(deck[current].id);};
-  const render=()=>{
+ const render=()=>{
+   const focusLabel=area.contains(document.activeElement)?document.activeElement.matches('.flashcard')?'flashcard':document.activeElement.textContent:null;
    area.replaceChildren();if(!deck.length){area.append(el('p',{text:'Nhóm này chưa có từ.'}));return;}
    const item=deck[current],d=item.data,answer=answers.get(item.id);
    const face=action('',flip);face.className='flashcard';face.setAttribute('aria-label','Lật thẻ');face.setAttribute('aria-pressed',String(flipped));
@@ -86,6 +94,7 @@ async function learn(id){
     for(const [memory,label]of [['new','Chưa nhớ'],['review','Cần ôn'],['remembered','Đã nhớ']])tools.append(action(label,async()=>{const r=await request('/reviews/'+item.id,'PUT',{event_id:crypto.randomUUID(),memory});upsert(r);await save(item.id);notice('Đã lưu tự đánh giá và lịch ôn.');await move(1);}));
     area.append(tools,extra('Yêu thích',[action(review?.favorite?'★ Bỏ yêu thích':'☆ Yêu thích',async()=>{upsert(await request('/reviews/'+item.id,'PUT',{event_id:crypto.randomUUID(),favorite:!review?.favorite}));render();})]));
    }
+   if(focusLabel){const target=focusLabel==='flashcard'?face:[...area.querySelectorAll('button:not(.flashcard)')].find(b=>b.textContent===focusLabel);target?.focus({preventScroll:true});}
   };
   const shuffle=action('Trộn thẻ',async()=>{for(let n=deck.length-1;n>0;n--){const j=Math.floor(Math.random()*(n+1));[deck[n],deck[j]]=[deck[j],deck[n]];}current=0;flipped=false;render();await save(deck[0].id);});
   const settings=[shuffle];
@@ -107,19 +116,13 @@ function upsert(r){const n=catalog.reviews.findIndex(v=>v.item_id===r.item_id);i
 function audioButton(d){
  if(d.audio_url)return action('▶ Nghe mẫu',()=>new Audio(d.audio_url).play());
  const voice=window.speechSynthesis?.getVoices().find(v=>/^zh(-|_)/i.test(v.lang));if(!voice||!d.hanzi)return null;
- return action('▶ Nghe mẫu',()=>{const u=new SpeechSynthesisUtterance(d.hanzi);u.voice=voice;u.lang=voice.lang;speechSynthesis.speak(u);});
+ return action('▶ Nghe mẫu',()=>{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(d.hanzi);u.voice=voice;u.lang=voice.lang;speechSynthesis.speak(u);});
 }
 async function notebook(){
  const f=el('form',{},[field('Từ cần ôn','filter',params.get('filter')||'','text',[['','Tất cả'],['favorite','Yêu thích'],['new','Chưa nhớ'],['wrong','Thường nhầm'],['due','Đến hạn ôn']])]),list=el('div');
  const load=async()=>{const rows=await request('/notebook?'+new URLSearchParams(new FormData(f)));list.replaceChildren(...(rows.length?rows.map(w=>card(w.data.hanzi,[el('p',{class:'pinyin',text:w.data.pinyin||''}),el('p',{text:w.data.meaning}),link('Ôn từ này',{set:w.set_id,word:w.id})])):[el('p',{text:'Chưa có từ trong danh sách này.'})]));};f.onchange=()=>load().catch(error);root().append(f,list);await load();
 }
 async function tests(){const rows=await request('/tests');root().append(...rows.map(t=>card(t.title,[el('p',{text:t.duration_seconds?`${Math.round(t.duration_seconds/60)} phút`:'Không giới hạn thời gian'}),action('Bắt đầu',async()=>{const a=await request('/attempts','POST',{test_id:t.id});location.href='?attempt='+a.id;},true)])));if(!rows.length)root().append(el('p',{text:'Chưa có bài kiểm tra. Con có thể làm quiz ngay trong bài học.'}));}
-async function history(){
- const rows=await request('/history'),active=rows.filter(a=>!a.finished_at),done=rows.filter(a=>a.finished_at);
- root().append(link('Bài kiểm tra của lớp',{view:'tests'}));
- if(active.length)root().append(card('Tiếp tục học',active.map(a=>el('div',{class:'learn-document'},[el('span',{text:catalog.sets.find(s=>s.id===a.set_id)?.lesson_title||'Bài kiểm tra'}),link('Tiếp tục',{attempt:a.id})]))));
- root().append(card('Đã hoàn thành',[table(['Ngày học','Điểm','Kim Cương',''],done.map(a=>[new Date(a.started_at).toLocaleString('vi-VN'),a.score+'/100',a.diamonds_delta===null?'—':(a.diamonds_delta>0?'+':'')+a.diamonds_delta+' 💎',link('Xem kết quả',{attempt:a.id})]))]));
-}
 async function showAttempt(a,index){
  clearInterval(timer);notice('');root().replaceChildren(link('← Bài học',{}),el('h2',{text:a.title}));
  if(a.finished_at){
@@ -130,7 +133,6 @@ async function showAttempt(a,index){
   root().append(action('Ôn câu sai',()=>render(true)),action('Xem tất cả',()=>render(false)),reviews);render(true);return;
  }
  if(index===undefined){index=a.items.findIndex(i=>!i.result);if(index<0)index=a.items.length-1;}
- if(a.diamonds_policy)root().append(el('p',{class:'muted reward-rule',text:diamondRule}));
  const i=a.items[index],q=i.data;let selection=i.selection||'';
  const completed=a.items.filter(i=>i.result).length;
  root().append(el('p',{class:'quiz-position',text:`Câu ${index+1} / ${a.items.length}`}),el('progress',{max:a.items.length,value:completed,'aria-label':'Tiến độ quiz'}));

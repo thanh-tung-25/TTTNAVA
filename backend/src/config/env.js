@@ -31,6 +31,8 @@ export const env = {
     password: process.env.DB_PASS ?? '',
     database: process.env.DB_NAME ?? 'kids_learning',
     poolSize: readNumber('DB_POOL_SIZE', 10),
+    ssl: process.env.DB_SSL === 'true'
+      || (process.env.DB_SSL !== 'false' && (process.env.DB_HOST ?? '').endsWith('.aivencloud.com')),
     caPath: process.env.DB_CA_PATH
       ? path.resolve(backendRoot, process.env.DB_CA_PATH)
       : path.join(backendRoot, 'certs', 'aiven-ca.pem'),

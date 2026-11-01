@@ -8,10 +8,12 @@ import {
 } from '../controllers/exam-controller.js';
 import { authenticateToken, requireStudent } from '../middlewares/auth.js';
 import { rateLimit } from '../middlewares/rate-limit.js';
+import { primaryCourseGuard } from '../middlewares/course-access.js';
 
 const router = Router();
 
 router.use(authenticateToken, requireStudent);
+router.use(primaryCourseGuard('exams'));
 router.get('/history', examHistoryHandler);
 router.post('/', rateLimit({ windowMs: 60_000, max: 10, keyPrefix: 'exam-start' }), startExamHandler);
 router.get('/:id', getExamHandler);

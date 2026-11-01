@@ -16,7 +16,10 @@ export async function login(page, account, expectedPath) {
 }
 
 export async function loginStudent(page, account = accounts.lan) {
-  await login(page, account, '/pages/student/home/');
+  await login(page, account, '/pages/student/courses/');
+  await page.locator('[data-kind=primary]').click();
+  await page.locator('.course-tile').filter({has:page.getByRole('heading',{name:'Lớp 3',exact:true})}).getByRole('button',{name:'Vào học',exact:true}).click();
+  await page.waitForURL('**/pages/student/home/');
 }
 
 export async function loginAdmin(page, account = accounts.admin) {

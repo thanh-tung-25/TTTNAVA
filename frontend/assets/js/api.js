@@ -48,6 +48,8 @@ export async function api(path, options = {}) {
     credentials: 'same-origin',
     headers: { Accept: 'application/json', ...headers },
   };
+  const courseId=localStorage.getItem('ttnava-course');
+  if(courseId)init.headers['X-Course-Id']=courseId;
   if (body instanceof FormData) {
     init.body = body;
   } else if (body !== undefined) {
@@ -87,6 +89,9 @@ export async function api(path, options = {}) {
 
   if (!response.ok) {
     const error = payload?.error ?? {};
+    if(error.code==='COURSE_LOCKED'&&location.pathname.startsWith('/pages/student/')&&!location.pathname.startsWith('/pages/student/courses/')) {
+      location.replace('/pages/student/courses/?locked='+encodeURIComponent(error.details?.courseId||''));
+    }
     throw new ApiError(error.message ?? 'Có lỗi xảy ra, con thử lại nhé!', response.status, error.code, error.details);
   }
   return payload;

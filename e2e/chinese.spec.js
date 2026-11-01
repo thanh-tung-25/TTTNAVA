@@ -31,7 +31,7 @@ test('Chinese: Word review, publish, flashcard resume, exam and mobile layout',a
  expect(published.set.lesson_status).toBe('published');expect(published.items.filter(i=>i.kind==='question').every(i=>i.data.approved)).toBe(true);
  const exam=await page.request.post('/api/v1/chinese/tests',{data:{title:'E2E class exam',set_ids:[setId],duration_seconds:null,pass_percent:70,status:'published'}});expect(exam.ok()).toBe(true);testId=(await exam.json()).data.id;
  await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
- const ctx=await browser.newContext({storageState:'e2e/.auth/lan.json'});const student=await ctx.newPage();const errors=[];student.on('pageerror',e=>errors.push(e.message));
+ const ctx=await browser.newContext({storageState:'e2e/.auth/lan-hsk.json'});const student=await ctx.newPage();const errors=[];student.on('pageerror',e=>errors.push(e.message));
  await student.goto('/pages/student/chinese/?set='+setId);await expect(student.locator('.flashcard')).toContainText('你好');
  await student.getByRole('button',{name:'Lật thẻ',exact:true}).first().click();await expect(student.locator('.flashcard')).toContainText('nǐ hǎo');
  await student.getByRole('button',{name:'Đã nhớ',exact:true}).click();await expect(student.locator('#notice')).toContainText('Đã lưu tự đánh giá');
@@ -51,5 +51,5 @@ test('Chinese: Word review, publish, flashcard resume, exam and mobile layout',a
   if(n===0)await student.getByRole('button',{name:'Câu tiếp theo →',exact:true}).click();
  }
  await expect(student.locator('.quiz-score')).toHaveText('100/100');await expect(student.locator('#content')).toContainText('+3 Kim Cương');
- await student.getByRole('link',{name:'Kết quả',exact:true}).click();await expect(student.locator('table')).toContainText('100/100');expect(errors).toEqual([]);await ctx.close();
+ await student.getByRole('link',{name:'Kết quả',exact:true}).click();await expect(student.locator('.history-score').first()).toContainText('100/100');expect(errors).toEqual([]);await ctx.close();
 });

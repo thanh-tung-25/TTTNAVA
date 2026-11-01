@@ -12,10 +12,10 @@ function showError(message) {
 function destinationFor(profile) {
   const params = new URLSearchParams(window.location.search);
   const next = params.get('next');
-  const fallback = profile.role === 'admin' ? '/pages/admin/students/' : '/pages/student/home/';
+  const fallback = profile.role === 'admin' ? '/pages/admin/students/' : '/pages/student/courses/';
   if (!next || !next.startsWith('/pages/')) return fallback;
   if (profile.role === 'admin' && next.startsWith('/pages/admin/')) return next;
-  if (profile.role === 'student' && next.startsWith('/pages/student/')) return next;
+  if (profile.role === 'student') return fallback;
   return fallback;
 }
 
@@ -33,6 +33,8 @@ form.addEventListener('submit', async (event) => {
   button.textContent = 'Đang mở cửa lớp…';
   try {
     const payload = await api('/api/v1/auth/login', { method: 'POST', body: { username, password } });
+    localStorage.removeItem('ttnava-course');
+    document.cookie='ttnava_course=; Path=/; Max-Age=0; SameSite=Lax';
     window.location.replace(destinationFor(payload.data.profile));
   } catch (error) {
     if (error instanceof ApiError && error.status === 429) {

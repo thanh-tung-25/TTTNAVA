@@ -5,8 +5,10 @@ import {
   topicsHandler,
 } from '../controllers/catalog-controller.js';
 import { authenticateToken } from '../middlewares/auth.js';
+import { primaryCourseGuard } from '../middlewares/course-access.js';
 
 const router = Router();
+router.use(authenticateToken, primaryCourseGuard('catalog'));
 
 router.get('/subjects', authenticateToken, subjectsHandler);
 router.get('/topics', authenticateToken, topicsHandler);

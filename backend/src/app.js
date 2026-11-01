@@ -7,6 +7,7 @@ import apiRouter from './routes/index.js';
 import { requirePageRole, redirectIfAuthenticated, resolveUser } from './middlewares/auth.js';
 import { requireSameOrigin } from './middlewares/same-origin.js';
 import { errorHandler, notFoundHandler } from './middlewares/error.js';
+import { coursePageGuard } from './middlewares/course-page.js';
 
 const frontendRoot = path.join(env.backendRoot, '..', 'frontend');
 const pagesRoot = path.join(frontendRoot, 'pages');
@@ -52,7 +53,7 @@ export function createApp() {
   app.get('/', async (request, response) => {
     try {
       const user = await resolveUser(request);
-      response.redirect(user.role === 'admin' ? '/pages/admin/students/' : '/pages/student/home/');
+      response.redirect(user.role === 'admin' ? '/pages/admin/students/' : '/pages/student/courses/');
     } catch {
       response.sendFile(path.join(pagesRoot, 'welcome', 'index.html'));
     }
@@ -63,7 +64,7 @@ export function createApp() {
     response.sendFile(path.join(pagesRoot, 'login', 'index.html'));
   });
 
-  app.use('/pages/student', requirePageRole('student'), express.static(path.join(pagesRoot, 'student'), {
+  app.use('/pages/student', requirePageRole('student'), coursePageGuard, express.static(path.join(pagesRoot, 'student'), {
     extensions: ['html'],
   }));
   app.use('/pages/admin', requirePageRole('admin'), express.static(path.join(pagesRoot, 'admin'), {

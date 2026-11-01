@@ -11,10 +11,11 @@ import {
 
 const AUTH_DIR = path.resolve('e2e', '.auth');
 
-async function writeStorageState(name, profile) {
+async function writeStorageState(name, profile, course='grade-3') {
   await fs.mkdir(AUTH_DIR, { recursive: true });
   const state = {
     cookies: [
+      { name:'ttnava_course',value:course,domain:'localhost',path:'/',expires:-1,httpOnly:false,secure:false,sameSite:'Lax' },
       {
         name: 'tttnava_token',
         value: signToken(profile),
@@ -119,9 +120,11 @@ export default async function globalSetup() {
     `SELECT id, username, role FROM profiles
      WHERE username IN ('e2e_admin', 'e2e_lan', 'e2e_minh')`,
   );
+  for(const user of profileRows.filter(p=>p.role==='student'))await query("INSERT IGNORE INTO course_enrollments(student_id,course_id,source) SELECT ?,id,'admin' FROM courses",[user.id]);
   for (const profile of profileRows) {
     const name = profile.username.replace('e2e_', '');
     await writeStorageState(name, profile);
+    if(profile.role==='student')await writeStorageState(name+'-hsk',profile,'hsk-9');
   }
   const lan = profileRows.find((row) => row.username === 'e2e_lan');
   await query(

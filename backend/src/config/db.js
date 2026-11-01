@@ -12,10 +12,10 @@ export function getPool() {
       user: env.db.user,
       password: env.db.password,
       database: env.db.database,
-      ssl: {
+      ssl: env.db.ssl ? {
         ca: fs.readFileSync(env.db.caPath, 'utf8'),
         rejectUnauthorized: true,
-      },
+      } : undefined,
       waitForConnections: true,
       connectionLimit: env.db.poolSize,
       queueLimit: 0,

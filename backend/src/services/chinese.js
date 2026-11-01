@@ -121,7 +121,8 @@ export async function start(user,body) {
  if(d.count&&d.count!==20)throw badRequest('Mỗi quiz phải có đúng 20 câu');
  let sources, duration=null, title='Luyện tập', pass=70;
  if(d.test_id) { const t=await one("SELECT * FROM chinese_tests WHERE id=? AND status='published'",[d.test_id]); sources=json(t.set_ids);duration=t.duration_seconds;title=t.title;pass=t.pass_percent; } else sources=[d.set_id];
- let items=[]; for(const s of sources) {await getSet(s);items.push(...(await getItems(s)).filter(i=>i.kind==='question'&&i.data.approved));}
+ const course_ids=[];
+ let items=[]; for(const s of sources) {const set=await getSet(s);course_ids.push('hsk-'+set.level_id);items.push(...(await getItems(s)).filter(i=>i.kind==='question'&&i.data.approved));}
  if(!items.length||items.length>1000||issues(items).length) throw badRequest('Chưa đủ câu hỏi hợp lệ');
  if(d.count){
   if(items.length<20)throw badRequest('Tài liệu chưa đủ 20 câu hỏi để làm quiz. Con có thể học thẻ lật trước.');
@@ -142,7 +143,7 @@ export async function start(user,body) {
   }
   if(existingId)return;
   const diamonds_policy=d.test_id||d.count===20?'v1':null;
-  await run('INSERT INTO chinese_attempts (id,student_id,test_id,set_id,snapshot,answers,ends_at) VALUES (?,?,?,?,?,?,?)',[id,user,d.test_id??null,d.set_id??null,JSON.stringify({title,pass,items,diamonds_policy}),JSON.stringify({}),duration?new Date(Date.now()+duration*1000):null]);
+  await run('INSERT INTO chinese_attempts (id,student_id,test_id,set_id,snapshot,answers,ends_at) VALUES (?,?,?,?,?,?,?)',[id,user,d.test_id??null,d.set_id??null,JSON.stringify({title,pass,items,diamonds_policy,course_ids:[...new Set(course_ids)]}),JSON.stringify({}),duration?new Date(Date.now()+duration*1000):null]);
   for(const source of sources)await run(`INSERT INTO chinese_progress (student_id,set_id,last_item,read_items) VALUES (?,?,NULL,'[]') ON DUPLICATE KEY UPDATE updated_at=CURRENT_TIMESTAMP(3)`,[user,source]);
  });return attempt(user,existingId||id);
 }

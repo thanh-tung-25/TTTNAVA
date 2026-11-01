@@ -1,5 +1,7 @@
 /* Shared student workspace. Higher specificity keeps admin screens unchanged. */
-body[data-role=student]{--student-border:#e2e0eb;--student-soft:#f2edff;--student-text:#36304f;background-color:#fffdf7;color:var(--student-text);font-size:16px}
+body[data-role=student]{--student-border:#e2e0eb;--student-soft:#f2edff;--student-text:#36304f;background:#f8f6fc;color:var(--student-text);font-size:16px;overflow-wrap:break-word}
+body[data-role=student] #app-header{min-height:80px}
+html:has(body[data-role=student]){scrollbar-gutter:stable}
 body[data-role=student] .topbar{background:#fffefb;backdrop-filter:none;border-bottom:1px solid var(--student-border)}
 body[data-role=student] .topbar-inner{max-width:none;min-height:80px;padding:14px 30px}
 body[data-role=student] .brand{font-size:1.4rem;gap:12px}
@@ -108,7 +110,7 @@ body[data-role=student] .study-modes{background:#eee8f6;border-color:#e0d6ed;bor
 body[data-role=student] .study-modes .btn{border:0;background:transparent;box-shadow:none;font-size:.85rem;min-height:44px;color:#756584;padding:10px 18px}
 body[data-role=student] .study-modes .btn[aria-current=page]{background:#fff;color:#583799;box-shadow:0 2px 6px #3a234c0d}
 body[data-role=student] .flashcard{background:linear-gradient(135deg,#fffefb,#f4effb);border:2px solid #ddd0f0;border-radius:26px;box-shadow:0 7px 0 #e9e0f4;min-height:340px;padding:32px;color:#39304c}
-body[data-role=student] .flashcard[aria-pressed=true]{background:#f0f7ec;border-color:#c1d6b5;box-shadow:0 7px 0 #dce8d5}
+body[data-role=student] .flashcard[aria-pressed=true]{background:linear-gradient(135deg,#fffefb,#f4effb);border-color:#b49ad9;box-shadow:0 7px 0 #e9e0f4}
 body[data-role=student] .card-controls{gap:14px;margin-top:26px}
 body[data-role=student] .quiz-option{border-radius:16px;border-color:#e5deee;padding:18px;font-size:1rem;background:#fff}
 body[data-role=student] .quiz-option.selected{background:#f0eafb;border-color:#8f6cc6}

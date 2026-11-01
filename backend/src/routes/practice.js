@@ -8,10 +8,12 @@ import {
 } from '../controllers/practice-controller.js';
 import { authenticateToken, requireStudent } from '../middlewares/auth.js';
 import { rateLimit } from '../middlewares/rate-limit.js';
+import { primaryCourseGuard } from '../middlewares/course-access.js';
 
 const router = Router();
 
 router.use(authenticateToken, requireStudent);
+router.use(primaryCourseGuard('practice'));
 router.get('/history', practiceHistoryHandler);
 router.post('/', rateLimit({ windowMs: 60_000, max: 20, keyPrefix: 'practice-start' }), startPracticeHandler);
 router.get('/:id', getPracticeHandler);

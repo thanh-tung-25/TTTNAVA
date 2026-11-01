@@ -51,6 +51,10 @@ window.addEventListener('beforeunload', (event) => {
 
 async function main() {
   store.profile = await initPage('student', 'exam');
+  if (store.profile.grade === null) {
+    window.location.replace('/pages/student/chinese/?view=tests');
+    return;
+  }
   store.subjectId = subjectFromUrl();
   await loadTopics();
   show(elements.setupView);

@@ -17,6 +17,7 @@ export async function createTestUser({
   avatarKey = 'meo',
   locked = false,
   password = PASSWORD,
+  enrolled = true,
 } = {}) {
   userCounter += 1;
   const finalUsername = username ?? `test_${role}_${userCounter}`;
@@ -37,6 +38,8 @@ export async function createTestUser({
       locked ? '2999-01-01 00:00:00' : null,
     ],
   );
+  // Business-flow fixtures are explicitly enrolled; access-control tests opt out.
+  if(role==='student'&&enrolled)await query("INSERT INTO course_enrollments(student_id,course_id,source) SELECT ?,id,'admin' FROM courses",[id]);
   return { id, username: finalUsername, password, role, grade, displayName };
 }
 

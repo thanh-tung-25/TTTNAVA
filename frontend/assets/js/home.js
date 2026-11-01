@@ -1,5 +1,6 @@
 import { api, avatarUrl, escapeHtml, formatDate, formatPercent } from '/assets/js/api.js';
 import { emptyState, initPage } from '/assets/js/ui.js';
+import { configureChineseHome, chineseActivityRow } from './home-chinese.js';
 
 const greeting = document.getElementById('greeting');
 const gradeLine = document.getElementById('grade-line');
@@ -22,21 +23,19 @@ function activityRow(item, kind) {
 
 async function load() {
   const profile = await initPage('student', 'home');
-  if (profile.grade === null) {
-    window.location.replace('/pages/student/chinese/');
-    return;
-  }
+  const isChinese = profile.grade === null;
+  if (isChinese) configureChineseHome();
   const hour = new Date().getHours();
   const salute = hour < 11 ? 'Chào buổi sáng' : hour < 18 ? 'Chào buổi chiều' : 'Chào buổi tối';
   greeting.textContent = `${salute}, ${profile.displayName}!`;
-  gradeLine.textContent = profile.grade ? `Học sinh lớp ${profile.grade} · Hôm nay mình cùng tiến bộ nhé!` : 'Hôm nay mình cùng học nhé!';
+  gradeLine.textContent = profile.grade ? `Học sinh lớp ${profile.grade} · Hôm nay mình cùng tiến bộ nhé!` : 'Góc học Tiếng Trung · Mỗi ngày một chút, mình sẽ giỏi hơn!';
   document.getElementById('hero-avatar').src = avatarUrl(profile.avatarKey);
   document.getElementById('hero-avatar').alt = `Ảnh đại diện của ${profile.displayName}`;
 
   const [diamondResult, practiceResult, examResult] = await Promise.allSettled([
     api('/api/v1/diamonds/summary'),
-    api('/api/v1/practice/history?limit=3'),
-    api('/api/v1/exams/history?limit=3'),
+    api(isChinese ? '/api/v1/chinese/history' : '/api/v1/practice/history?limit=3'),
+    isChinese ? Promise.resolve(null) : api('/api/v1/exams/history?limit=3'),
   ]);
 
   if (diamondResult.status === 'fulfilled') {
@@ -47,6 +46,14 @@ async function load() {
   }
 
   const activities = [];
+  const container = document.getElementById('recent-activity');
+  if (isChinese) {
+    container.innerHTML = practiceResult.status === 'fulfilled'
+      ? (practiceResult.value.data.slice(0, 5).map(chineseActivityRow).join('')
+        || emptyState('🌱', 'Mình bắt đầu học nhé!', 'Chọn Bài học HSK để khám phá Tiếng Trung.'))
+      : emptyState('😿', 'Chưa tải được hoạt động', practiceResult.reason.message);
+    return;
+  }
   if (practiceResult.status === 'fulfilled') {
     for (const item of practiceResult.value.data) activities.push({ item, kind: 'practice' });
   }
@@ -54,7 +61,6 @@ async function load() {
     for (const item of examResult.value.data) activities.push({ item, kind: 'exam' });
   }
   activities.sort((a, b) => new Date(b.item.startedAt) - new Date(a.item.startedAt));
-  const container = document.getElementById('recent-activity');
   container.innerHTML = activities.length
     ? activities.slice(0, 5).map(({ item, kind }) => activityRow(item, kind)).join('')
     : emptyState('🌱', 'Chưa có hoạt động nào', 'Con bắt đầu luyện tập để nhận kim cương nhé!');

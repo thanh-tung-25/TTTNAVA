@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 260" fill="none">
+<defs><radialGradient id="fur" cx=".3" cy=".2" r=".9"><stop stop-color="#fffefb"/><stop offset=".6" stop-color="#ffe8dc"/><stop offset="1" stop-color="#d6a5aa"/></radialGradient><radialGradient id="pink" cx=".3" cy=".2" r=".9"><stop stop-color="#ffd6db"/><stop offset="1" stop-color="#d9809a"/></radialGradient><radialGradient id="eye"><stop stop-color="#766079"/><stop offset="1" stop-color="#302539"/></radialGradient><linearGradient id="carrot" x2="1" y2="1"><stop stop-color="#ffcc7c"/><stop offset="1" stop-color="#ea833b"/></linearGradient></defs>
+<ellipse cx="120" cy="245" rx="70" ry="10" fill="#684268" opacity=".12"/>
+<ellipse cx="87" cy="66" rx="23" ry="59" transform="rotate(-12 87 66)" fill="url(#fur)"/><ellipse cx="151" cy="65" rx="23" ry="60" transform="rotate(12 151 65)" fill="url(#fur)"/>
+<ellipse cx="87" cy="62" rx="10" ry="42" transform="rotate(-12 87 62)" fill="url(#pink)"/><ellipse cx="151" cy="61" rx="10" ry="43" transform="rotate(12 151 61)" fill="url(#pink)"/>
+<ellipse cx="121" cy="195" rx="54" ry="48" fill="url(#fur)"/><ellipse cx="82" cy="234" rx="27" ry="15" fill="url(#fur)"/><ellipse cx="157" cy="234" rx="27" ry="15" fill="url(#fur)"/>
+<ellipse cx="120" cy="130" rx="74" ry="64" fill="url(#fur)"/>
+<ellipse cx="94" cy="126" rx="10" ry="14" fill="url(#eye)"/><ellipse cx="146" cy="126" rx="10" ry="14" fill="url(#eye)"/><circle cx="91" cy="121" r="4" fill="white"/><circle cx="143" cy="121" r="4" fill="white"/>
+<ellipse cx="74" cy="148" rx="14" ry="7" fill="#f1b1bb" opacity=".65"/><ellipse cx="166" cy="148" rx="14" ry="7" fill="#f1b1bb" opacity=".65"/>
+<path d="M113 145Q120 141 127 145L120 152Z" fill="#c77f97"/><path d="M120 152V157M108 157Q120 167 132 157" stroke="#8b6178" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M131 185Q163 168 171 191L151 233Q147 239 143 232Z" fill="url(#carrot)"/><path d="M153 181Q138 155 149 151Q162 155 160 179Q173 155 179 162Q183 171 164 184" fill="#80a965"/>
+<ellipse cx="85" cy="194" rx="16" ry="26" transform="rotate(-25 85 194)" fill="url(#fur)"/><ellipse cx="157" cy="199" rx="15" ry="23" transform="rotate(30 157 199)" fill="url(#fur)"/>
+</svg>

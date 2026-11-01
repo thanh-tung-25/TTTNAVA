@@ -1,7 +1,9 @@
 import { api, avatarUrl, escapeHtml } from './api.js';
 import { studentNavigation, setupStudentNavigation, studentAccount } from './student-navigation.js';
+import { courseProfile } from './course-context.js';
 
 const ADMIN_NAV = [
+  ['courses', '/pages/admin/courses/', 'Khóa học & thanh toán'],
   ['chinese', '/pages/admin/chinese/', 'Quản lý Tiếng Trung'],
   ['students', '/pages/admin/students/', 'Học sinh'],
   ['questions', '/pages/admin/questions/', 'Câu hỏi'],
@@ -13,10 +15,10 @@ let diamondTotal = null;
 
 function renderHeader(profile, role, active) {
   const nav = ADMIN_NAV;
-  const home = role === 'admin' ? '/pages/admin/students/' : '/pages/student/home/';
+  const home = role === 'admin' ? '/pages/admin/students/' : '/pages/student/courses/';
   const subtitle = role === 'admin'
     ? 'Quản trị viên'
-    : (profile.grade ? `Học sinh lớp ${profile.grade}` : 'Học sinh Tiếng Trung');
+    : (profile.course?.title ?? (profile.grade ? `Học sinh lớp ${profile.grade}` : 'Học sinh Tiếng Trung'));
 
   const links = nav.map(([key, href, label]) => (
     `<a class="nav-link" href="${href}"${key === active ? ' aria-current="page"' : ''}>${label}</a>`
@@ -28,17 +30,20 @@ function renderHeader(profile, role, active) {
     <div class="topbar-inner">
       <a class="brand" href="${home}"><img class="brand-mark" src="/assets/images/ttnava-logo.png" alt="" width="44" height="44"> TTNAVA</a>
       <div class="topbar-user">
+        ${role==='student'?'<a class="btn btn-ghost btn-sm course-switch" href="/pages/student/courses/">Đổi khóa</a>':''}
         ${role === 'student' ? '<span class="diamond-chip" id="diamond-chip" title="Kim cương của con">💎 <span>…</span></span>' : ''}
         ${role === 'student' ? studentAccount(profile, avatarUrl(profile.avatarKey), subtitle) : `<img class="avatar" src="${avatarUrl(profile.avatarKey)}" alt="Ảnh đại diện của ${escapeHtml(profile.displayName)}">
         <span class="user-meta"><strong>${escapeHtml(profile.displayName)}</strong><span>${subtitle}</span></span>
         <button class="btn btn-ghost btn-sm" type="button" id="logout-button">Thoát</button>`}
       </div>
     </div>
-    ${role === 'student' ? studentNavigation(active) : `<nav class="nav-scroll" aria-label="Điều hướng chính">${links}</nav>`}
+    ${role === 'student' ? studentNavigation(active, profile) : `<nav class="nav-scroll" aria-label="Điều hướng chính">${links}</nav>`}
   `;
   if (role === 'student') setupStudentNavigation(header, profile);
 
   header.querySelector('#logout-button').addEventListener('click', async () => {
+    localStorage.removeItem('ttnava-course');
+    document.cookie='ttnava_course=; Path=/; Max-Age=0; SameSite=Lax';
     try {
       await api('/api/v1/auth/logout', { method: 'POST' });
     } catch {
@@ -49,6 +54,7 @@ function renderHeader(profile, role, active) {
 }
 
 export async function initPage(role, active) {
+  document.body.dataset.role = role;
   const payload = await api('/api/v1/auth/me');
   const profile = payload.data.profile;
   if (profile.role !== role) {
@@ -56,8 +62,8 @@ export async function initPage(role, active) {
     throw new Error('SAI_VAI_TRO');
   }
   currentProfile = profile;
+  if(role==='student')await courseProfile(profile,active);
   renderHeader(profile, role, active);
-  document.body.dataset.role = role;
   if (role === 'student') loadDiamonds();
   return profile;
 }

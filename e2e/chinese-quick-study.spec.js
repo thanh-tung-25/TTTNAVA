@@ -14,7 +14,7 @@ test('question-only lessons open flashcards and a twenty-question quiz directly'
  documentId=(await (await page.request.get(base+'/sets/'+setId)).json()).data.set.document_id;
  const items=Array.from({length:24},(_,n)=>({kind:'question',data:{type:'choice',prompt:'Câu hỏi E2E '+(n+1),options:['Đúng','Sai'],accepted:['Đúng'],explanation:'Lời giải từ tài liệu nguồn.',approved:true}}));
  expect((await page.request.put(base+'/sets/'+setId,{data:{title:'E2E Question cards',status:'published',items}})).ok()).toBe(true);
- const ctx=await browser.newContext({storageState:'e2e/.auth/lan.json'}),student=await ctx.newPage(),errors=[];student.on('pageerror',e=>errors.push(e.message));
+ const ctx=await browser.newContext({storageState:'e2e/.auth/lan-hsk.json'}),student=await ctx.newPage(),errors=[];student.on('pageerror',e=>errors.push(e.message));
  await student.goto('/pages/student/chinese/?level=9');
  const row=student.locator('.learn-document').filter({hasText:'E2E Question cards'});await expect(row).toContainText('24 câu hỏi');
  await row.getByRole('link',{name:'Thẻ lật',exact:true}).click();await expect(student.locator('.learn-caption')).toContainText('Thẻ câu hỏi');await expect(student.locator('.card-meaning')).toHaveCount(0);

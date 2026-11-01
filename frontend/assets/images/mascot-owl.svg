@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 260" fill="none">
+<defs>
+ <radialGradient id="body" cx=".3" cy=".2" r=".9"><stop stop-color="#ccb4fa"/><stop offset=".6" stop-color="#9774d2"/><stop offset="1" stop-color="#61408d"/></radialGradient>
+ <radialGradient id="face" cx=".3" cy=".25" r=".85"><stop stop-color="#fffef6"/><stop offset="1" stop-color="#e3cfae"/></radialGradient>
+ <radialGradient id="eye" cx=".35" cy=".25" r=".9"><stop stop-color="#706078"/><stop offset="1" stop-color="#20172b"/></radialGradient>
+ <linearGradient id="gold" x1="90" y1="130" x2="140" y2="245" gradientUnits="userSpaceOnUse"><stop stop-color="#ffe2a1"/><stop offset="1" stop-color="#d68c35"/></linearGradient>
+</defs>
+<ellipse cx="120" cy="243" rx="77" ry="11" fill="#4d386d" opacity=".14"/>
+<path d="M52 88L45 29Q70 30 88 51Q120 40 151 51Q171 29 196 29L188 88Z" fill="url(#body)"/>
+<ellipse cx="120" cy="142" rx="82" ry="94" fill="url(#body)"/>
+<ellipse cx="120" cy="179" rx="50" ry="50" fill="url(#face)"/>
+<path d="M51 123Q9 151 44 201Q61 211 63 189L72 140" fill="url(#body)"/>
+<path d="M187 126Q213 114 218 80Q220 65 228 74Q244 120 203 168L184 164" fill="url(#body)"/>
+<ellipse cx="86" cy="107" rx="43" ry="47" fill="url(#face)"/><ellipse cx="153" cy="107" rx="43" ry="47" fill="url(#face)"/>
+<ellipse cx="90" cy="108" rx="21" ry="26" fill="url(#eye)"/><ellipse cx="150" cy="108" rx="21" ry="26" fill="url(#eye)"/>
+<ellipse cx="83" cy="98" rx="7" ry="9" fill="#fff"/><ellipse cx="143" cy="98" rx="7" ry="9" fill="#fff"/>
+<circle cx="98" cy="118" r="3" fill="#fff" opacity=".7"/><circle cx="158" cy="118" r="3" fill="#fff" opacity=".7"/>
+<ellipse cx="65" cy="137" rx="12" ry="6" fill="#e9a6a7" opacity=".6"/><ellipse cx="175" cy="137" rx="12" ry="6" fill="#e9a6a7" opacity=".6"/>
+<path d="M109 133Q120 125 131 133L120 150Z" fill="url(#gold)"/>
+<path d="M98 172L103 177L108 172M119 185L124 190L129 185M140 171L145 176L150 171M104 202L109 207L114 202M135 204L140 209L145 204" stroke="#c7b08f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="89" cy="234" rx="24" ry="10" fill="url(#gold)"/><ellipse cx="151" cy="234" rx="24" ry="10" fill="url(#gold)"/>
+</svg>

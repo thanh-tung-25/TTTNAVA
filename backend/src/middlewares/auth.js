@@ -83,7 +83,7 @@ export function requirePageRole(role) {
     try {
       const user = await resolveUser(request);
       if (role === 'admin' && user.role !== 'admin') {
-        response.redirect('/pages/student/home/');
+        response.redirect('/pages/student/courses/');
         return;
       }
       if (role === 'student' && user.role !== 'student') {
@@ -101,7 +101,7 @@ export function requirePageRole(role) {
 export function redirectIfAuthenticated(request, response, next) {
   resolveUser(request)
     .then((user) => {
-      response.redirect(user.role === 'admin' ? '/pages/admin/students/' : '/pages/student/home/');
+      response.redirect(user.role === 'admin' ? '/pages/admin/students/' : '/pages/student/courses/');
     })
     .catch(() => next());
 }

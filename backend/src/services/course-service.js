@@ -11,6 +11,7 @@ export async function requireCourse(student, courseId, run=query) {
 }
 export async function listCourses(student) {
  return query(`SELECT c.*,e.source,e.starts_at,e.expires_at,e.revoked_at,
+ EXISTS(SELECT 1 FROM course_payment_qr qr WHERE qr.course_key IN(c.id,'default')) has_payment_qr,
  IF(e.student_id IS NOT NULL AND ${activeEnrollment} AND c.active=1,1,0) unlocked,
  (SELECT o.status FROM course_orders o WHERE o.student_id=? AND o.course_id=c.id ORDER BY o.created_at DESC,o.id DESC LIMIT 1) order_status
  FROM courses c LEFT JOIN course_enrollments e ON e.course_id=c.id AND e.student_id=? ORDER BY c.kind DESC,c.level`,[student,student]);

@@ -8,8 +8,12 @@ import diamondRouter from './diamond.js';
 import adminRouter from './admin.js';
 import chineseRouter from './chinese.js';
 import courseRouter from './courses.js';
+import worksheetRouter from './worksheets.js';
+import adminContentRouter from './admin-content.js';
 
 const router = Router();
+router.use('/admin/content', adminContentRouter);
+router.use('/worksheets', worksheetRouter);
 router.use('/courses', courseRouter);
 router.use('/chinese', chineseRouter);
 

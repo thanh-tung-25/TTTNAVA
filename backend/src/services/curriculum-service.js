@@ -27,7 +27,7 @@ export async function getCurriculumTree(yearId = null) {
   if (!selectedYear) throw new AppError(404, 'YEAR_NOT_FOUND', 'Năm học không tồn tại');
 
   const rows = await query(
-    `SELECT c.id AS chapter_id, c.name AS chapter_name, c.grade, c.semester,
+    `SELECT c.id AS chapter_id, c.name AS chapter_name, c.grade, c.semester,c.is_legacy,c.book_label,
             c.subject_id, c.sort_order AS chapter_sort,
             s.name AS subject_name, s.color AS subject_color, s.sort_order AS subject_sort,
             l.id AS lesson_id, l.name AS lesson_name, l.topic_id, l.sort_order AS lesson_sort,
@@ -38,7 +38,7 @@ export async function getCurriculumTree(yearId = null) {
      LEFT JOIN curriculum_lessons l ON l.chapter_id = c.id
      LEFT JOIN questions q ON q.topic_id = l.topic_id
      WHERE c.school_year_id = ?
-     GROUP BY c.id, c.name, c.grade, c.semester, c.subject_id, c.sort_order,
+     GROUP BY c.id, c.name, c.grade, c.semester,c.is_legacy,c.book_label, c.subject_id, c.sort_order,
               s.name, s.color, s.sort_order, l.id, l.name, l.topic_id, l.sort_order
      ORDER BY c.grade ASC, c.semester ASC, s.sort_order ASC, c.sort_order ASC, l.sort_order ASC`,
     [selectedId],
@@ -75,6 +75,8 @@ export async function getCurriculumTree(yearId = null) {
       chapter = {
         id: row.chapter_id,
         name: row.chapter_name,
+        isLegacy: Boolean(row.is_legacy),
+        bookLabel: row.book_label,
         questionCount: 0,
         publishedCount: 0,
         lessons: [],
@@ -102,6 +104,15 @@ export async function getCurriculumTree(yearId = null) {
     grade.publishedCount += published;
   }
 
+  const worksheets=await query(`SELECT w.lesson_id,COUNT(*) n FROM worksheets w JOIN curriculum_lessons l ON l.id=w.lesson_id JOIN curriculum_chapters c ON c.id=l.chapter_id WHERE c.school_year_id=? GROUP BY w.lesson_id`,[selectedId]);
+  const counts=new Map(worksheets.map(row=>[row.lesson_id,Number(row.n)]));
+  const addCounts=node=>{
+    const children=node.semesters||node.subjects||node.chapters||node.lessons;
+    node.worksheetCount=children?children.reduce((sum,child)=>sum+addCounts(child),0):(counts.get(node.id)||0);
+    node.contentCount=node.questionCount+node.worksheetCount;
+    return node.worksheetCount;
+  };
+  for(const grade of grades.values())addCounts(grade);
   return {
     years: yearRows.map((row) => ({
       id: row.id,

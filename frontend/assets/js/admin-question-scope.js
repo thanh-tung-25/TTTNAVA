@@ -1,3 +1,4 @@
+import {escapeHtml} from './api.js';
 function value(select, fallback = '') {
   return select?.value || fallback;
 }
@@ -69,7 +70,7 @@ function optionList(items, selected, label, countKey = 'questionCount') {
     const text = typeof label === 'function' ? label(item) : item[label];
     const count = item[countKey];
     return `<option value="${item.id ?? item.grade}"${String(item.id ?? item.grade) === String(selected) ? ' selected' : ''}>`
-      + `${text}${count === undefined ? '' : ` (${count} câu)`}</option>`;
+      + `${escapeHtml(text)}${count === undefined ? '' : ` (${count} câu)`}</option>`;
   }).join('');
 }
 

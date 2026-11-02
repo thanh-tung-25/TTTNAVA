@@ -1,0 +1,23 @@
+body.admin-courses{background:#f7f6fb;background-image:none;color:#342b49}
+.admin-courses .page{width:min(1120px,100%);padding:32px 24px 60px}
+.admin-course-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:24px}
+.admin-course-heading h1{margin:0 0 8px;font-size:2rem}.admin-course-heading p{margin:0;color:#86768f}.admin-course-heading .eyebrow{font-size:.7rem;margin-bottom:8px;letter-spacing:1.5px}.admin-course-heading>img{object-fit:contain;flex-shrink:0}
+.admin-course-tabs{display:flex;gap:8px;padding:6px;margin-bottom:24px;background:#ede7f5;border-radius:16px}
+.admin-course-tabs>button{flex:1;border:0;border-radius:12px;padding:14px 16px;background:transparent;color:#796989;cursor:pointer;font:600 .9rem var(--font-body);min-height:48px}
+.admin-course-tabs>button[aria-selected=true]{background:#fff;color:#7047aa;box-shadow:0 3px 0 #dcd0e9}
+.admin-courses [hidden]{display:none!important}
+.learner-enrollments{border-bottom:1px solid #ece5f2}.learner-enrollments:last-child{border-bottom:0}
+.learner-enrollments>summary{display:flex;align-items:center;gap:12px;list-style:none;cursor:pointer;min-height:64px;padding:16px 4px;color:#5b426f}
+.learner-enrollments>summary::-webkit-details-marker{display:none}.learner-enrollments>summary::before{content:'▸';color:#9b81b4;flex-shrink:0}.learner-enrollments[open]>summary::before{content:'▾'}
+.learner-name{flex:1;min-width:0;overflow-wrap:anywhere;font-weight:600;font-size:.95rem}.learner-course-count{flex-shrink:0;padding:5px 10px;border-radius:10px;background:#f1eaf9;color:#85659c;font-size:.8rem}
+.learner-enrollments .course-admin-enrollment{padding:16px;margin-left:20px;border-bottom:0;border-top:1px solid #eee8f4;background:#fcfaff}.learner-enrollments .course-admin-enrollment strong{font-size:.9rem}
+.admin-courses .course-admin-enrollment{display:flex;align-items:center;justify-content:space-between;gap:16px}.course-admin-enrollment>div{min-width:0;overflow-wrap:anywhere}.course-admin-enrollment>.btn{flex-shrink:0}
+.admin-courses .card{background:#fff;border:1px solid #e6dfee;border-radius:20px;box-shadow:0 4px 0 #ece6f3;padding:26px;margin-bottom:22px}
+.admin-courses .card-head h2{margin:0 0 6px}.admin-courses .card-head p,.admin-courses .card>p{font-size:.85rem;color:#8b7e96;line-height:1.8;margin:0 0 12px}.admin-courses .card-head p{margin:0}
+.admin-courses .btn{border-radius:12px;box-shadow:0 3px 0 #563284;font-size:.85rem}.admin-courses .btn-ghost{box-shadow:none;border:1px solid #e1d7ec}.admin-courses .course-form{max-width:680px}
+.order-filter-label{display:flex;align-items:center;gap:10px;color:#8a7a95;font-size:.85rem}.order-filter-label select{padding:9px 14px;border:1px solid #e1d6ed;border-radius:10px;background:#faf7ff;font:inherit;color:#674b87}
+.admin-extra>summary{cursor:pointer;font-weight:600;color:#72548e;min-height:36px;line-height:1.7}.admin-extra[open]>summary{margin-bottom:20px}.admin-courses .course-form .admin-extra{padding:12px 16px;background:#faf7fd;border:1px solid #e9e1f1;border-radius:12px}.admin-extra>p{color:#8b7c97;font-size:.85rem}
+.admin-order-empty{text-align:center;padding:40px 16px;color:#95859f}.admin-order-empty>img{width:90px;height:98px;object-fit:contain;margin:0 auto 16px}.admin-order-empty strong{display:block;color:#6e547e;font-size:1.1rem;margin-bottom:8px}.admin-order-empty p{font-size:.85rem;margin:0;line-height:1.8}
+.admin-courses .admin-order{border-radius:16px;background:#fcfaff;padding:20px}.admin-order .admin-extra{margin-top:16px}.admin-order .admin-extra textarea{width:100%;min-height:75px;font:inherit;border:1px solid #dfd1eb;padding:12px;border-radius:12px}.admin-order .order-actions{margin-top:18px}
+#admin-course-notice:not(:empty){padding:14px 18px;background:#f0e8fb;border:1px solid #e1d3ef;border-radius:12px;color:#73518f}
+@media(max-width:600px){.admin-courses .page{padding:22px 16px 45px}.admin-course-heading h1{font-size:1.6rem}.admin-course-heading>img{width:60px;height:68px}.admin-courses .card{padding:20px 16px}.admin-course-tabs{gap:4px}.admin-course-tabs>button{padding:12px 6px;font-size:.75rem}.admin-courses .card-head{gap:10px}.admin-courses .card-head h2{font-size:1.2rem}.admin-courses .admin-order{padding:16px}.admin-order .order-actions .btn{flex:1}}

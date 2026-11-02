@@ -1,0 +1,481 @@
+{
+  "book": "Kết nối tri thức với cuộc sống",
+  "grade": 5,
+  "yearId": "2026-2027",
+  "sources": [
+    "https://vietjack.com/toan-5-kn/index.jsp"
+  ],
+  "chapters": [
+    {
+      "id": "kntt-toan-5-c01",
+      "name": "Chủ đề 1: Ôn tập và bổ sung",
+      "semester": "hk1",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "id": "kntt-toan-5-b01",
+          "name": "Bài 1. Ôn tập số tự nhiên",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-toan-5-b02",
+          "name": "Bài 2. Ôn tập các phép tính với số tự nhiên",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-toan-5-b03",
+          "name": "Bài 3. Ôn tập phân số",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-toan-5-b04",
+          "name": "Bài 4. Phân số thập phân",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-toan-5-b05",
+          "name": "Bài 5. Ôn tập các phép tính với phân số",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-toan-5-b06",
+          "name": "Bài 6. Cộng, trừ hai phân số khác mẫu số",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-toan-5-b07",
+          "name": "Bài 7. Hỗn số",
+          "sortOrder": 7
+        },
+        {
+          "id": "kntt-toan-5-b08",
+          "name": "Bài 8. Ôn tập hình học và đo lường",
+          "sortOrder": 8
+        },
+        {
+          "id": "kntt-toan-5-b09",
+          "name": "Bài 9. Luyện tập chung",
+          "sortOrder": 9
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-5-c02",
+      "name": "Chủ đề 2: Số thập phân",
+      "semester": "hk1",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "id": "kntt-toan-5-b10",
+          "name": "Bài 10. Khái niệm số thập phân",
+          "sortOrder": 10
+        },
+        {
+          "id": "kntt-toan-5-b11",
+          "name": "Bài 11. So sánh các số thập phân",
+          "sortOrder": 11
+        },
+        {
+          "id": "kntt-toan-5-b12",
+          "name": "Bài 12. Viết số đo đại lượng dưới dạng số thập phân",
+          "sortOrder": 12
+        },
+        {
+          "id": "kntt-toan-5-b13",
+          "name": "Bài 13. Làm tròn số thập phân",
+          "sortOrder": 13
+        },
+        {
+          "id": "kntt-toan-5-b14",
+          "name": "Bài 14. Luyện tập chung",
+          "sortOrder": 14
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-5-c03",
+      "name": "Chủ đề 3: Một số đơn vị đo diện tích",
+      "semester": "hk1",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "id": "kntt-toan-5-b15",
+          "name": "Bài 15. Ki-lô-mét vuông. Héc-ta",
+          "sortOrder": 15
+        },
+        {
+          "id": "kntt-toan-5-b16",
+          "name": "Bài 16. Các đơn vị đo diện tích",
+          "sortOrder": 16
+        },
+        {
+          "id": "kntt-toan-5-b17",
+          "name": "Bài 17. Thực hành và trải nghiệm với một số đơn vị đo đại lượng",
+          "sortOrder": 17
+        },
+        {
+          "id": "kntt-toan-5-b18",
+          "name": "Bài 18. Luyện tập chung",
+          "sortOrder": 18
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-5-c04",
+      "name": "Chủ đề 4: Các phép tính với số thập phân",
+      "semester": "hk1",
+      "sortOrder": 4,
+      "lessons": [
+        {
+          "id": "kntt-toan-5-b19",
+          "name": "Bài 19. Phép cộng số thập phân",
+          "sortOrder": 19
+        },
+        {
+          "id": "kntt-toan-5-b20",
+          "name": "Bài 20. Phép trừ số thập phân",
+          "sortOrder": 20
+        },
+        {
+          "id": "kntt-toan-5-b21",
+          "name": "Bài 21. Phép nhân số thập phân",
+          "sortOrder": 21
+        },
+        {
+          "id": "kntt-toan-5-b22",
+          "name": "Bài 22. Phép chia số thập phân",
+          "sortOrder": 22
+        },
+        {
+          "id": "kntt-toan-5-b23",
+          "name": "Bài 23. Nhân, chia số thập phân với 10; 100; 1000; ... hoặc với 0,1; 0,01; 0,001; ...",
+          "sortOrder": 23
+        },
+        {
+          "id": "kntt-toan-5-b24",
+          "name": "Bài 24. Luyện tập chung",
+          "sortOrder": 24
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-5-c05",
+      "name": "Chủ đề 5: Một số hình phẳng. Chu vi và diện tích",
+      "semester": "hk1",
+      "sortOrder": 5,
+      "lessons": [
+        {
+          "id": "kntt-toan-5-b25",
+          "name": "Bài 25. Hình tam giác. Diện tích hình tam giác",
+          "sortOrder": 25
+        },
+        {
+          "id": "kntt-toan-5-b26",
+          "name": "Bài 26. Hình thang. Diện tích hình thang",
+          "sortOrder": 26
+        },
+        {
+          "id": "kntt-toan-5-b27",
+          "name": "Bài 27. Đường tròn. Chu vi và diện tích hình tròn",
+          "sortOrder": 27
+        },
+        {
+          "id": "kntt-toan-5-b28",
+          "name": "Bài 28. Thực hành và trải nghiệm đo, vẽ, lắp ghép, tạo hình",
+          "sortOrder": 28
+        },
+        {
+          "id": "kntt-toan-5-b29",
+          "name": "Bài 29. Luyện tập chung",
+          "sortOrder": 29
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-5-c06",
+      "name": "Chủ đề 6: Ôn tập học kì 1",
+      "semester": "hk1",
+      "sortOrder": 6,
+      "lessons": [
+        {
+          "id": "kntt-toan-5-b30",
+          "name": "Bài 30. Ôn tập số thập phân",
+          "sortOrder": 30
+        },
+        {
+          "id": "kntt-toan-5-b31",
+          "name": "Bài 31. Ôn tập các phép tính với số thập phân",
+          "sortOrder": 31
+        },
+        {
+          "id": "kntt-toan-5-b32",
+          "name": "Bài 32. Ôn tập một số hình phẳng",
+          "sortOrder": 32
+        },
+        {
+          "id": "kntt-toan-5-b33",
+          "name": "Bài 33. Ôn tập diện tích, chu vi một số hình phẳng",
+          "sortOrder": 33
+        },
+        {
+          "id": "kntt-toan-5-b34",
+          "name": "Bài 34. Ôn tập đo lường",
+          "sortOrder": 34
+        },
+        {
+          "id": "kntt-toan-5-b35",
+          "name": "Bài 35. Ôn tập chung",
+          "sortOrder": 35
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-5-c07",
+      "name": "Chủ đề 7: Tỉ số và các bài toán liên quan",
+      "semester": "hk2",
+      "sortOrder": 7,
+      "lessons": [
+        {
+          "id": "kntt-toan-5-b36",
+          "name": "Bài 36. Tỉ số. Tỉ số phần trăm",
+          "sortOrder": 36
+        },
+        {
+          "id": "kntt-toan-5-b37",
+          "name": "Bài 37. Tỉ lệ bản đồ và ứng dụng",
+          "sortOrder": 37
+        },
+        {
+          "id": "kntt-toan-5-b38",
+          "name": "Bài 38. Tìm hai số khi biết tổng và tỉ số của hai số đó",
+          "sortOrder": 38
+        },
+        {
+          "id": "kntt-toan-5-b39",
+          "name": "Bài 39. Tìm hai số khi biết hiệu và tỉ số của hai số đó",
+          "sortOrder": 39
+        },
+        {
+          "id": "kntt-toan-5-b40",
+          "name": "Bài 40. Tìm tỉ số phần trăm của hai số",
+          "sortOrder": 40
+        },
+        {
+          "id": "kntt-toan-5-b41",
+          "name": "Bài 41. Tìm giá trị phần trăm của một số",
+          "sortOrder": 41
+        },
+        {
+          "id": "kntt-toan-5-b42",
+          "name": "Bài 42. Máy tính cầm tay",
+          "sortOrder": 42
+        },
+        {
+          "id": "kntt-toan-5-b43",
+          "name": "Bài 43. Thực hành và trải nghiệm sử dụng máy tính cầm tay",
+          "sortOrder": 43
+        },
+        {
+          "id": "kntt-toan-5-b44",
+          "name": "Bài 44. Luyện tập chung",
+          "sortOrder": 44
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-5-c08",
+      "name": "Chủ đề 8: Thể tích. Đơn vị đo thể tích",
+      "semester": "hk2",
+      "sortOrder": 8,
+      "lessons": [
+        {
+          "id": "kntt-toan-5-b45",
+          "name": "Bài 45. Thể tích của một hình",
+          "sortOrder": 45
+        },
+        {
+          "id": "kntt-toan-5-b46",
+          "name": "Bài 46. Xăng-ti-mét khối. Đề-xi-mét khối",
+          "sortOrder": 46
+        },
+        {
+          "id": "kntt-toan-5-b47",
+          "name": "Bài 47. Mét khối",
+          "sortOrder": 47
+        },
+        {
+          "id": "kntt-toan-5-b48",
+          "name": "Bài 48. Luyện tập chung",
+          "sortOrder": 48
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-5-c09",
+      "name": "Chủ đề 9: Diện tích và thể tích của một số hình khối",
+      "semester": "hk2",
+      "sortOrder": 9,
+      "lessons": [
+        {
+          "id": "kntt-toan-5-b49",
+          "name": "Bài 49. Hình khai triển của hình lập phương, hình hộp chữ nhật và hình trụ",
+          "sortOrder": 49
+        },
+        {
+          "id": "kntt-toan-5-b50",
+          "name": "Bài 50. Diện tích xung quanh và diện tích toàn phần của hình hộp chữ nhật",
+          "sortOrder": 50
+        },
+        {
+          "id": "kntt-toan-5-b51",
+          "name": "Bài 51. Diện tích xung quanh và diện tích toàn phần của hình lập phương",
+          "sortOrder": 51
+        },
+        {
+          "id": "kntt-toan-5-b52",
+          "name": "Bài 52. Thể tích của hình hộp chữ nhật",
+          "sortOrder": 52
+        },
+        {
+          "id": "kntt-toan-5-b53",
+          "name": "Bài 53. Thể tích của hình lập phương",
+          "sortOrder": 53
+        },
+        {
+          "id": "kntt-toan-5-b54",
+          "name": "Bài 54. Thực hành tính toán và ước lượng thể tích một số hình khối",
+          "sortOrder": 54
+        },
+        {
+          "id": "kntt-toan-5-b55",
+          "name": "Bài 55. Luyện tập chung",
+          "sortOrder": 55
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-5-c10",
+      "name": "Chủ đề 10: Số đo thời gian, vận tốc. Các bài toán liên quan đến chuyển động đều",
+      "semester": "hk2",
+      "sortOrder": 10,
+      "lessons": [
+        {
+          "id": "kntt-toan-5-b56",
+          "name": "Bài 56. Các đơn vị đo thời gian",
+          "sortOrder": 56
+        },
+        {
+          "id": "kntt-toan-5-b57",
+          "name": "Bài 57. Cộng, trừ số đo thời gian",
+          "sortOrder": 57
+        },
+        {
+          "id": "kntt-toan-5-b58",
+          "name": "Bài 58. Nhân, chia số đo thời gian với một số",
+          "sortOrder": 58
+        },
+        {
+          "id": "kntt-toan-5-b59",
+          "name": "Bài 59. Vận tốc của một chuyển động đều",
+          "sortOrder": 59
+        },
+        {
+          "id": "kntt-toan-5-b60",
+          "name": "Bài 60. Quãng đường, thời gian của một chuyển động đều",
+          "sortOrder": 60
+        },
+        {
+          "id": "kntt-toan-5-b61",
+          "name": "Bài 61. Thực hành tính toán và ước lượng về vận tốc, quãng đường, thời gian trong chuyển động đều",
+          "sortOrder": 61
+        },
+        {
+          "id": "kntt-toan-5-b62",
+          "name": "Bài 62. Luyện tập chung",
+          "sortOrder": 62
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-5-c11",
+      "name": "Chủ đề 11: Một số yếu tố thống kê và xác suất",
+      "semester": "hk2",
+      "sortOrder": 11,
+      "lessons": [
+        {
+          "id": "kntt-toan-5-b63",
+          "name": "Bài 63. Thu thập, phân loại, sắp xếp các số liệu",
+          "sortOrder": 63
+        },
+        {
+          "id": "kntt-toan-5-b64",
+          "name": "Bài 64. Biểu đồ hình quạt tròn",
+          "sortOrder": 64
+        },
+        {
+          "id": "kntt-toan-5-b65",
+          "name": "Bài 65. Tỉ số của số lần lặp lại một sự kiện so với tổng số lần thực hiện",
+          "sortOrder": 65
+        },
+        {
+          "id": "kntt-toan-5-b66",
+          "name": "Bài 66. Thực hành và trải nghiệm thu thập, phân tích, biểu diễn các số liệu thống kê",
+          "sortOrder": 66
+        },
+        {
+          "id": "kntt-toan-5-b67",
+          "name": "Bài 67. Luyện tập chung",
+          "sortOrder": 67
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-5-c12",
+      "name": "Chủ đề 12: Ôn tập cuối năm",
+      "semester": "hk2",
+      "sortOrder": 12,
+      "lessons": [
+        {
+          "id": "kntt-toan-5-b68",
+          "name": "Bài 68. Ôn tập số tự nhiên, phân số, số thập phân",
+          "sortOrder": 68
+        },
+        {
+          "id": "kntt-toan-5-b69",
+          "name": "Bài 69. Ôn tập các phép tính với số tự nhiên, phân số, số thập phân",
+          "sortOrder": 69
+        },
+        {
+          "id": "kntt-toan-5-b70",
+          "name": "Bài 70. Ôn tập tỉ số, tỉ số phần trăm",
+          "sortOrder": 70
+        },
+        {
+          "id": "kntt-toan-5-b71",
+          "name": "Bài 71. Ôn tập hình học",
+          "sortOrder": 71
+        },
+        {
+          "id": "kntt-toan-5-b72",
+          "name": "Bài 72. Ôn tập đo lường",
+          "sortOrder": 72
+        },
+        {
+          "id": "kntt-toan-5-b73",
+          "name": "Bài 73. Ôn tập toán chuyển động đều",
+          "sortOrder": 73
+        },
+        {
+          "id": "kntt-toan-5-b74",
+          "name": "Bài 74. Ôn tập một số yếu tố thống kê và xác suất",
+          "sortOrder": 74
+        },
+        {
+          "id": "kntt-toan-5-b75",
+          "name": "Bài 75. Ôn tập chung",
+          "sortOrder": 75
+        }
+      ]
+    }
+  ]
+}

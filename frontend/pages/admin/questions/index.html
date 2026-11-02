@@ -3,20 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ngân hàng câu hỏi — TTNAVA</title>
+  <title>Nội dung học tập — TTNAVA</title>
   <link rel="icon" href="/assets/images/ttnava-logo.png" type="image/png">
   <link rel="stylesheet" href="/assets/css/base.css">
   <link rel="stylesheet" href="/assets/css/components.css">
   <link rel="stylesheet" href="/assets/css/pages.css">
+  <link rel="stylesheet" href="/assets/css/worksheets.css">
+  <link rel="stylesheet" href="/assets/css/admin-content.css">
 </head>
-<body>
+<body class="admin-content worksheet-admin" data-content-hub="unified">
   <header id="app-header"></header>
   <main class="page question-bank-page">
+    <header class="content-hub-heading"><p class="eyebrow">SOẠN & ĐĂNG BÀI</p><h1>Nội dung học tập</h1><p>Quản lý theo lớp, học kì, chủ đề và từng bài học.</p></header>
+    <section id="content-curriculum" class="card content-curriculum" aria-label="Chọn chương trình học"></section>
+    <section class="card content-manager" aria-label="Danh sách nội dung">
+      <nav id="content-placement" class="content-placement" aria-label="Vị trí nội dung"></nav><p id="content-placement-hint" class="muted"></p>
+      <div class="content-create-bar"><select id="content-create-kind" class="select" aria-label="Nội dung cần tạo"><option value="worksheet">Bộ bài tập</option><option value="question">Câu hỏi đơn</option></select><button type="button" class="btn" id="content-create">+ Tạo nội dung</button><button type="button" class="btn btn-ghost" id="content-import">Nhập Word</button><button type="button" class="btn btn-ghost" id="content-reviews">Bài chờ chấm</button></div>
+      <form id="content-filters" class="content-filters"><input class="input" name="q" placeholder="Tìm tên hoặc nội dung…" aria-label="Tìm nội dung" maxlength="100"><select class="select" name="kind" aria-label="Loại nội dung"><option value="">Tất cả nội dung</option><option value="worksheet">Bộ bài tập</option><option value="question">Câu hỏi đơn</option></select><select class="select" name="status" aria-label="Trạng thái nội dung"><option value="">Tất cả trạng thái</option><option value="draft">Nháp</option><option value="published">Đã đăng</option><option value="hidden">Đang ẩn</option></select><button class="btn btn-ghost" type="submit">Lọc</button></form>
+      <div id="content-list"><p>Đang tải nội dung…</p></div><div class="content-pagination"><button class="btn btn-ghost btn-sm" id="content-prev" type="button">← Trước</button><span id="content-page"></span><button class="btn btn-ghost btn-sm" id="content-next" type="button">Sau →</button></div>
+    </section>
+    <p id="content-hub-error" role="alert"></p>
+    <div id="content-question-bank" hidden>
     <div class="page-head">
       <div>
         <p class="eyebrow">Quản trị</p>
-        <h1>Ngân hàng câu hỏi</h1>
-        <p>Tổ chức câu hỏi theo năm học, khối lớp, học kỳ, môn học, chương và bài học. Học sinh chỉ nhận câu hỏi <strong>Đã đăng</strong>.</p>
+        <h2>Câu hỏi luyện tập & thi thử</h2>
+        <p>Tạo từng câu hoặc nhập từ Word. Chỉ câu <strong>Đã đăng</strong> được dùng trong luyện tập và thi thử.</p>
       </div>
       <div class="actions">
         <button class="btn" id="create-question" type="button">+ Tạo câu hỏi</button>
@@ -85,7 +97,14 @@
         </div>
       </section>
     </section>
+    </div>
+    <div id="content-worksheets" hidden><div class="content-editor-heading"><h2>Soạn nội dung</h2><button id="content-close-editor" class="btn btn-ghost btn-sm" type="button">Đóng soạn bài</button></div><p id="ws-notice" class="worksheet-notice" role="status" aria-live="polite"></p>
+<div class="worksheet-toolbar"><button type="button" class="btn" id="ws-new">+ Tạo bộ bài</button><button type="button" class="btn btn-ghost" id="ws-edit-tab">Soạn bài</button><button type="button" class="btn btn-ghost" id="ws-review-tab">Bài chờ chấm</button></div>
+<div id="ws-authoring" class="worksheet-layout"><aside class="card"><h2>Bộ bài của bạn</h2><div id="ws-list" class="worksheet-sidebar"></div></aside>
+<section class="card" id="ws-workspace"><p>Chọn một bộ bài hoặc bấm Tạo bộ bài để bắt đầu.</p></section></div><section class="card" id="ws-reviews" hidden></section>
+</div>
   </main>
-  <script type="module" src="/assets/js/admin-questions.js"></script>
+<dialog id="ws-preview" class="worksheet-dialog"><div class="worksheet-dialog-head"><h2>Học sinh sẽ thấy như sau</h2><button type="button" class="btn btn-ghost" id="ws-preview-close">Đóng</button></div><div id="ws-preview-content"></div><button type="button" class="btn" id="ws-preview-check">Kiểm tra thử</button><div id="ws-preview-feedback"></div></dialog>
+  <script type="module" src="/assets/js/admin-content.js"></script>
 </body>
 </html>

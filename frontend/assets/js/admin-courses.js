@@ -1,5 +1,8 @@
 import {api,el,formatDate} from './api.js';
 import {initPage} from './ui-core.js';
+import {refreshPaymentQr} from './admin-payment-qr.js';
+import './admin-course-tabs.js';
+import {renderEnrollments} from './admin-enrollments.js';
 const notice=document.querySelector('#admin-course-notice');let courses=[],orders=[];
 const money=n=>new Intl.NumberFormat('vi-VN',{style:'currency',currency:'VND'}).format(n);
 const labels={pending:'Chờ xác nhận',approved:'Đã duyệt',rejected:'Đã từ chối',cancelled:'Đã hủy'};
@@ -15,34 +18,38 @@ function renderCatalog(){
   formAction(form,d=>api('/api/v1/courses/admin/catalog/'+c.id,{method:'PATCH',body:{...d,price_vnd:d.price_vnd===''?null:Number(d.price_vnd),duration_days:d.duration_days===''?null:Number(d.duration_days),active:d.active==='true'}}));
   return el('details',{class:'card'},[el('summary',{},[el('strong',{text:c.title+' · '+(c.price_vnd==null?'Chưa đặt giá':money(c.price_vnd))})]),form]);
  }));
- const select=document.querySelector('#access-course'),current=select.value;select.replaceChildren(...courses.map(c=>el('option',{value:c.id,text:c.title})));if(current)select.value=current;
 }
 function renderOrders(){
  const filter=document.querySelector('#order-filter').value;
  const rows=orders.filter(o=>filter==='all'||o.status==='pending');
  document.querySelector('#admin-course-orders').replaceChildren(...(rows.length?rows.map(o=>{
   const note=el('textarea',{placeholder:'Ghi chú đối soát / lý do từ chối (bắt buộc)',maxlength:1000,'aria-label':'Ghi chú cho yêu cầu '+o.id});
-  const box=el('article',{class:'admin-order'},[el('strong',{text:o.title+' — '+money(o.amount_vnd)}),el('p',{text:o.display_name+' (@'+o.username+') · '+labels[o.status]}),el('p',{text:'Mã đơn: '+o.id}),el('p',{text:'Ngày gửi: '+formatDate(o.created_at)}),el('p',{text:'Người chuyển: '+o.payer_name}),el('p',{text:'Mã / nội dung chuyển khoản: '+o.payment_reference}),el('p',{text:'Thời hạn đã chốt: '+(o.duration_days?o.duration_days+' ngày':'Vĩnh viễn')}),el('p',{class:'course-admin-note',text:o.note||''}),...(o.review_note?[el('p',{text:'Kết quả: '+o.review_note+' · '+(o.reviewer||'')})]:[])]);
+  const box=el('article',{class:'admin-order'},[el('strong',{text:o.title+' — '+money(o.amount_vnd)}),el('p',{text:o.display_name+' (@'+o.username+') · '+labels[o.status]}),el('p',{text:'Chuyển khoản: '+o.payment_reference}),el('details',{class:'admin-extra'},[el('summary',{text:'Xem chi tiết đăng ký'}),el('p',{text:'Người chuyển: '+o.payer_name}),el('p',{text:'Ngày gửi: '+formatDate(o.created_at)}),el('p',{text:'Thời hạn: '+(o.duration_days?o.duration_days+' ngày':'Vĩnh viễn')}),el('p',{text:'Mã đơn: '+o.id}),el('p',{class:'course-admin-note',text:o.note||''})]),...(o.review_note?[el('p',{text:'Kết quả: '+o.review_note+' · '+(o.reviewer||'')})]:[])]);
   if(o.status==='pending'){
-   const actions=el('div',{class:'order-actions'});box.append(note,actions);
-   for(const [decision,label]of [['approved','Đã nhận tiền — mở khóa'],['rejected','Từ chối yêu cầu']])actions.append(el('button',{type:'button',class:'btn '+(decision==='rejected'?'btn-ghost':''),text:label,onclick:async()=>{
-    if(!note.value.trim()){notice.textContent='Nhập ghi chú đối soát hoặc lý do từ chối.';note.focus();return;}
+   const actions=el('div',{class:'order-actions'}),notes=el('details',{class:'admin-extra'},[el('summary',{text:'Thêm ghi chú / lý do từ chối'}),note]);box.append(notes,actions);
+   for(const [decision,label]of [['approved','Mở khóa'],['rejected','Từ chối']])actions.append(el('button',{type:'button',class:'btn '+(decision==='rejected'?'btn-ghost':''),text:label,onclick:async()=>{
+    if(decision==='rejected'&&!note.value.trim()){notice.textContent='Nhập lý do từ chối để học sinh biết.';notes.open=true;note.focus();return;}
     if(!confirm((decision==='approved'?'Xác nhận đã nhận đúng số tiền và mở khóa cho ':'Từ chối yêu cầu của ')+o.username+'?'))return;
     actions.querySelectorAll('button').forEach(b=>b.disabled=true);
-    try{await api('/api/v1/courses/admin/orders/'+o.id+'/review',{method:'POST',body:{decision,note:note.value}});notice.textContent='Đã xử lý yêu cầu.';await refresh();}catch(e){notice.textContent=e.message;actions.querySelectorAll('button').forEach(b=>b.disabled=false);}
+    try{await api('/api/v1/courses/admin/orders/'+o.id+'/review',{method:'POST',body:{decision,note:note.value.trim()||'Đã đối soát và xác nhận thanh toán.'}});notice.textContent='Đã xử lý yêu cầu.';await refresh();}catch(e){notice.textContent=e.message;actions.querySelectorAll('button').forEach(b=>b.disabled=false);}
    }}));
   }return box;
- }):[el('p',{text:'Không có yêu cầu ở trạng thái này.'})]));
+ }):[el('div',{class:'admin-order-empty'},[el('img',{src:'/assets/images/mascot-owl.svg',alt:'',width:90,height:98}),el('strong',{text:'Chưa có đăng ký cần duyệt'}),el('p',{text:'Khi học sinh gửi đăng ký, yêu cầu sẽ xuất hiện ở đây.'})])]));
 }
 async function refresh(){
  const [catalog,requests,enrollments,audit]=await Promise.all(['catalog','orders','enrollments','audit'].map(path=>api('/api/v1/courses/admin/'+path)));
  courses=catalog.data;orders=requests.data;renderCatalog();renderOrders();
+ await refreshPaymentQr(courses);
+ document.dispatchEvent(new Event('courses:orders-changed'));
  const instructions=document.querySelector('#payment-settings textarea');if(!instructions.value)instructions.value=courses[0]?.payment_instructions||'';
- document.querySelector('#admin-enrollments').replaceChildren(...enrollments.data.map(e=>el('div',{class:'course-admin-enrollment'},[el('strong',{text:e.username+' · '+e.title}),el('p',{text:(e.revoked_at?'Đã thu hồi':e.expires_at&&new Date(e.expires_at)<=new Date()?'Đã hết hạn':'Đang có quyền')+' · '+(e.expires_at?'Đến '+formatDate(e.expires_at):'Vĩnh viễn')+' · Nguồn: '+e.source})])));
+ renderEnrollments(enrollments.data,async(e,b)=>{
+  if(!confirm('Thu hồi quyền học '+e.title+' của '+e.username+'? Học sinh sẽ không vào được khóa này.'))return;
+  b.disabled=true;
+  try{await api('/api/v1/courses/admin/access',{method:'POST',body:{username:e.username,course_id:e.course_id,action:'revoke',note:'Admin thu hồi từ danh sách khóa đã mở.'}});notice.textContent='Đã thu hồi quyền học.';await refresh();}catch(error){notice.textContent=error.message;b.disabled=false;}
+ });
  document.querySelector('#admin-course-audit').replaceChildren(...audit.data.map(a=>el('p',{text:formatDate(a.created_at)+' · '+(a.actor||'Hệ thống')+' · '+a.username+' · '+a.title+' · '+a.action+' · '+a.note})));
 }
 formAction(document.querySelector('#payment-settings'),d=>api('/api/v1/courses/admin/payment-instructions',{method:'POST',body:d}));
-formAction(document.querySelector('#access-form'),d=>api('/api/v1/courses/admin/access',{method:'POST',body:{...d,duration_days:d.duration_days?Number(d.duration_days):null}}));
 document.querySelector('#order-filter').onchange=renderOrders;
 document.querySelector('#admin-refresh').onclick=()=>refresh().catch(e=>notice.textContent=e.message);
 initPage('admin','courses').then(refresh).catch(e=>notice.textContent=e.message);

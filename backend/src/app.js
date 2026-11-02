@@ -41,6 +41,7 @@ export function createApp() {
   }));
 
   app.use('/api/v1/chinese', express.json({ limit: '2mb' }));
+  app.use('/api/v1/worksheets', express.json({ limit: '2mb' }));
   app.use(express.json({ limit: '100kb' }));
   app.use(express.urlencoded({ extended: false, limit: '100kb' }));
   app.use(cookieParser());
@@ -67,6 +68,7 @@ export function createApp() {
   app.use('/pages/student', requirePageRole('student'), coursePageGuard, express.static(path.join(pagesRoot, 'student'), {
     extensions: ['html'],
   }));
+  app.get(['/pages/admin/worksheets','/pages/admin/worksheets/','/pages/admin/worksheets/index.html'],requirePageRole('admin'),(_request,response)=>response.redirect('/pages/admin/questions/'));
   app.use('/pages/admin', requirePageRole('admin'), express.static(path.join(pagesRoot, 'admin'), {
     extensions: ['html'],
   }));

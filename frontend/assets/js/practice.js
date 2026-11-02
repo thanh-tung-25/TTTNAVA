@@ -51,7 +51,7 @@ elements.topicList.addEventListener('click', (event) => {
 async function main() {
   store.profile = await initPage('student', 'practice');
   if (store.profile.grade === null) {
-    window.location.replace('/pages/student/chinese/?view=practice');
+    window.location.replace('/pages/student/chinese/');
     return;
   }
   store.subjectId = subjectFromUrl();

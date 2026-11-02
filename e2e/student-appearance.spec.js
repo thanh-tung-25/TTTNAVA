@@ -57,11 +57,12 @@ for(const [entry,view] of [['practice','practice'],['exam','tests']]) {
   await page.route('**/api/v1/auth/me',async route=>route.fulfill({json:{data:{profile:{id:'student',role:'student',displayName:'Bạn nhỏ',avatarKey:'meo',grade:null}}}}));
   const requests=[];page.on('request',r=>{if(r.url().includes('/catalog/topics'))requests.push(r.url());});
   await page.goto(`/pages/student/${entry}/`);
-  await expect(page).toHaveURL(new RegExp('view='+view));
+  await expect(page).toHaveURL(entry==='practice'?/\/chinese\/$/:new RegExp('view='+view));
   if(entry==='practice')await expect(page.locator('.lesson-island')).toHaveCount(1);
   else await expect(page.locator('#content')).toContainText('Chưa có bài kiểm tra');
   expect(requests).toEqual([]);
-  await expect(page.getByRole('link',{name:entry==='practice'?'Luyện tập':'Thi thử',exact:true})).toHaveAttribute('aria-current','page');
+  await expect(page.getByRole('link',{name:'Luyện tập',exact:true})).toHaveCount(0);
+  await expect(page.getByRole('link',{name:entry==='practice'?'Tiếng Trung':'Thi thử',exact:true})).toHaveAttribute('aria-current','page');
   await expect(page.locator('#notice')).toBeEmpty();
  });
 }

@@ -1,12 +1,13 @@
 import { api, avatarUrl, escapeHtml } from './api.js';
 import { studentNavigation, setupStudentNavigation, studentAccount } from './student-navigation.js';
 import { courseProfile } from './course-context.js';
+import { setupCourseNotifications } from './admin-course-notifications.js';
 
 const ADMIN_NAV = [
   ['courses', '/pages/admin/courses/', 'Khóa học & thanh toán'],
   ['chinese', '/pages/admin/chinese/', 'Quản lý Tiếng Trung'],
   ['students', '/pages/admin/students/', 'Học sinh'],
-  ['questions', '/pages/admin/questions/', 'Câu hỏi'],
+  ['questions', '/pages/admin/questions/', 'Nội dung học tập'],
   ['stats', '/pages/admin/stats/', 'Thống kê'],
 ];
 
@@ -14,6 +15,7 @@ let currentProfile = null;
 let diamondTotal = null;
 
 function renderHeader(profile, role, active) {
+  if(active==='worksheets')active='questions';
   const nav = ADMIN_NAV;
   const home = role === 'admin' ? '/pages/admin/students/' : '/pages/student/courses/';
   const subtitle = role === 'admin'
@@ -21,7 +23,7 @@ function renderHeader(profile, role, active) {
     : (profile.course?.title ?? (profile.grade ? `Học sinh lớp ${profile.grade}` : 'Học sinh Tiếng Trung'));
 
   const links = nav.map(([key, href, label]) => (
-    `<a class="nav-link" href="${href}"${key === active ? ' aria-current="page"' : ''}>${label}</a>`
+    `<a class="nav-link" href="${href}"${key === active ? ' aria-current="page"' : ''}>${label}${key==='courses'?'<span id="course-pending-count" class="course-pending-count" hidden></span>':''}</a>`
   )).join('');
 
   const header = document.getElementById('app-header');
@@ -40,6 +42,7 @@ function renderHeader(profile, role, active) {
     ${role === 'student' ? studentNavigation(active, profile) : `<nav class="nav-scroll" aria-label="Điều hướng chính">${links}</nav>`}
   `;
   if (role === 'student') setupStudentNavigation(header, profile);
+  else setupCourseNotifications();
 
   header.querySelector('#logout-button').addEventListener('click', async () => {
     localStorage.removeItem('ttnava-course');

@@ -4,7 +4,7 @@ import {enterCourse} from './course-context.js';
 const grid=document.querySelector('#course-grid'),orders=document.querySelector('#course-orders'),dialog=document.querySelector('#course-dialog'),detail=document.querySelector('#course-detail'),notice=document.querySelector('#course-notice');
 const status={pending:'⏳ Chờ admin xác nhận',approved:'✓ Đã xác nhận',rejected:'Chưa được xác nhận',cancelled:'Đã hủy'};
 const money=v=>v==null?'Đang cập nhật học phí':new Intl.NumberFormat('vi-VN',{style:'currency',currency:'VND'}).format(v);
-let courses=[],filter='';
+let courses=[],filter='',profile;
 const button=(text,fn,primary=false)=>el('button',{type:'button',class:'btn '+(primary?'btn-primary':'btn-ghost'),text,onclick:fn});
 function renderCourses(){
  grid.replaceChildren(...courses.filter(c=>!filter||c.kind===filter).map(c=>el('article',{class:'course-tile'},[
@@ -22,7 +22,12 @@ function showCourse(c){
  if(pending)detail.append(el('p',{text:'Yêu cầu đang chờ admin kiểm tra thanh toán. Con xem trạng thái tại mục Đăng ký của con.'}));
  else if(c.price_vnd==null||!c.payment_instructions.trim()||!c.active)detail.append(el('p',{text:'Khóa học đang chờ admin cập nhật thông tin thanh toán hoặc đang tạm ngừng. Con vui lòng liên hệ quản trị viên.'}));
  else {
-  detail.append(el('h3',{text:'Hướng dẫn thanh toán'}),el('div',{class:'payment-instructions',text:c.payment_instructions}),el('p',{text:'Sau khi chuyển khoản, phụ huynh điền thông tin bên dưới. Khóa học chỉ mở khi admin đối soát và xác nhận.'}));
+  const reference='TTNAVA '+profile.username+' '+c.id;
+  detail.append(el('ol',{class:'payment-steps'},['Quét QR hoặc chuyển khoản theo hướng dẫn','Nhập đúng số tiền và nội dung chuyển khoản','Bấm gửi yêu cầu, chờ admin xác nhận'].map(text=>el('li',{text}))));
+  detail.append(el('h3',{text:'Hướng dẫn thanh toán'}),el('div',{class:'payment-instructions',text:c.payment_instructions}));
+  if(c.has_payment_qr)detail.append(el('figure',{class:'payment-qr-box'},[el('img',{class:'payment-qr-image',src:'/api/v1/courses/payment-qr/'+encodeURIComponent(c.id)+'?v='+Date.now(),alt:'QR nhận thanh toán của admin cho '+c.title,width:260,height:260}),el('figcaption',{text:'Dùng ứng dụng ngân hàng quét QR. Kiểm tra người nhận; nhập đúng số tiền và nội dung bên dưới nếu QR chưa điền sẵn.'})]));
+  const copy=button('Sao chép nội dung',async()=>{try{await navigator.clipboard.writeText(reference);copy.textContent='Đã sao chép';}catch{error.textContent='Con có thể chọn và sao chép dòng nội dung chuyển khoản bên trên.';}});
+  detail.append(el('div',{class:'payment-summary'},[el('p',{text:'Số tiền: '+money(c.price_vnd)}),el('p',{text:'Nội dung chuyển khoản:'}),el('code',{text:reference}),copy]),el('p',{text:'Sau khi chuyển khoản, phụ huynh điền thông tin bên dưới. Khóa học chỉ mở khi admin đối soát và xác nhận. Đăng ký thêm khóa không ảnh hưởng những khóa con đang học.'}));
   const form=el('form',{class:'course-form'});
   for(const [name,label,max]of [['payer_name','Tên người chuyển khoản',120],['payment_reference','Mã giao dịch / nội dung chuyển khoản',150],['note','Ghi chú thêm (không bắt buộc)',1000]])form.append(el('label',{},[el('span',{text:label}),el(name==='note'?'textarea':'input',{name,maxlength:max,...(name!=='note'?{required:'',minlength:name==='payer_name'?2:3}:{})})]));
   const submit=el('button',{type:'submit',class:'btn btn-primary',text:'Gửi yêu cầu xác nhận'});form.append(error,submit);
@@ -43,4 +48,4 @@ document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{filter=b.data
 document.querySelector('#all-courses').onclick=()=>{filter='';document.querySelectorAll('[data-kind]').forEach(b=>b.setAttribute('aria-pressed','false'));document.querySelector('#course-heading').textContent='Tất cả khóa học';renderCourses();};
 document.querySelector('.dialog-close').onclick=()=>dialog.close();
 document.querySelector('#refresh-orders').onclick=()=>refresh().catch(e=>notice.textContent=e.message);
-initPage('student','courses').then(async()=>{const params=new URLSearchParams(location.search);if(params.has('locked'))notice.textContent='Khóa học này chưa được mở hoặc đã hết hạn. Con chọn khóa học để đăng ký nhé!';await refresh();const kind=params.get('program');if(['primary','chinese'].includes(kind))document.querySelector('[data-kind='+kind+']').click();}).catch(e=>notice.textContent=e.message);
+initPage('student','courses').then(async user=>{profile=user;const params=new URLSearchParams(location.search);if(params.has('locked'))notice.textContent='Khóa học này chưa được mở hoặc đã hết hạn. Con chọn khóa học để đăng ký nhé!';await refresh();const kind=params.get('program');if(['primary','chinese'].includes(kind))document.querySelector('[data-kind='+kind+']').click();}).catch(e=>notice.textContent=e.message);

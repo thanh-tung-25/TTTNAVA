@@ -33,6 +33,8 @@ function selectedFields() {
 }
 
 async function afterSave(data) {
+  document.dispatchEvent(new Event('content:changed'));
+  if(document.body.dataset.contentHub==='unified')return;
   const scope = findScope('lesson', data.lessonId);
   if (scope) {
     store.page = 1;
@@ -157,6 +159,8 @@ export async function changeStatus(id, status) {
       body: statusPayload(payload.data, status),
     });
     toast(status === 'published' ? 'Đã đăng câu hỏi cho học sinh.' : 'Đã ẩn câu hỏi.', 'success');
+    document.dispatchEvent(new Event('content:changed'));
+    if(document.body.dataset.contentHub==='unified')return;
     await loadTree();
     await loadQuestions();
   } catch (error) {

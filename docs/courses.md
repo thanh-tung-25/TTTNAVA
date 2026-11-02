@@ -13,13 +13,20 @@ Học sinh đăng nhập vào `/pages/student/courses/`, chọn Tiểu học ho�
 1. Chạy `npm run db:migrate` rồi khởi động lại backend.
 2. Vào **Quản trị → Khóa học & thanh toán** (`/pages/admin/courses/`).
 3. Nhập hướng dẫn chuyển khoản thực tế: ngân hàng, tài khoản, chủ tài khoản, mẫu nội dung chuyển tiền; áp dụng cho các khóa hoặc sửa riêng từng khóa.
+   Trong tab **QR & học phí**, ở mục **Ảnh QR của bạn**, tải ảnh QR từ ứng dụng ngân hàng (PNG/JPEG/WebP, tối đa 2 MB). Chọn QR chung hoặc QR riêng cho từng khóa; QR riêng được ưu tiên. QR được lưu trong database, không cần dịch vụ QR bên ngoài.
 4. Học sinh/phụ huynh chuyển tiền theo hướng dẫn rồi gửi tên người chuyển, mã/nội dung giao dịch, ghi chú.
-5. Admin đối soát trong ngân hàng và bấm **Đã nhận tiền — mở khóa**, kèm ghi chú xác nhận. Hệ thống không xác minh giao dịch ngân hàng tự động.
+5. Admin đối soát trong ngân hàng và ở mục **Duyệt đăng ký** bấm **Mở khóa**; có thể thêm ghi chú, hoặc dùng ghi chú xác nhận mặc định. Hệ thống không xác minh giao dịch ngân hàng tự động.
 6. Học sinh bấm **Cập nhật** hoặc tải lại trang chọn khóa, sau đó **Vào học**. Có thể dùng **Đổi khóa** để chuyển sang khóa khác.
 
 Chưa có hướng dẫn chuyển khoản thì chưa nhận đăng ký. Yêu cầu chờ duyệt không cấp quyền. Mỗi người chỉ có một yêu cầu đang chờ cho mỗi khóa; hủy hoặc từ chối xong có thể đăng ký lại. Việc duyệt và cấp quyền nằm trong cùng transaction, chống duyệt trùng. Từ chối cần ghi lý do; học sinh xem được phản hồi của chính mình.
 
-Admin có thể cấp quyền thủ công (học bổng, tài khoản cũ), thu hồi quyền, đặt thời hạn hoặc tạm ngừng khóa. Thay đổi quyền và kết quả xét duyệt được lưu nhật ký. Khi hết hạn/thu hồi, API nội dung, thẻ, quiz, đáp án, bài luyện và bài thi bị chặn; lịch sử kết quả vẫn được giữ.
+Một tài khoản có thể sở hữu đồng thời nhiều khóa ở cả Tiểu học và Tiếng Trung. Mỗi khóa có yêu cầu và trạng thái riêng. Mua thêm không thu hồi quyền hoặc xóa tiến độ ở khóa cũ. Trong khóa đang học, bấm **Đổi khóa** để chọn hoặc đăng ký khóa khác.
+
+Số yêu cầu chờ duyệt được hiển thị trên menu admin **Khóa học & thanh toán**, cập nhật mỗi 30 giây khi trang đang hiển thị. Admin mở trang này, bấm **Cập nhật** để xem đầy đủ người gửi, khóa, tiền, mã/nội dung giao dịch và ghi chú. Không gửi email/SMS và không yêu cầu ứng dụng ngân hàng kết nối website trong chế độ này.
+
+Ảnh QR tĩnh chỉ chứa thông tin do admin cung cấp; website không tự sửa số tiền hoặc nội dung trong ảnh. Màn hình thanh toán hiển thị riêng số tiền và nội dung gợi ý `TTNAVA <tên đăng nhập> <mã khóa>` để phụ huynh nhập trong ứng dụng ngân hàng. Tiền đi trực tiếp tới ngân hàng của admin, không đi qua website. Admin phải đối chiếu người nhận, số tiền và giao dịch thực tế trước khi mở khóa. Để xác nhận tự động cần tích hợp dịch vụ thanh toán/ngân hàng có thông báo giao dịch được xác thực; tải QR lên không tạo ra kết nối đó.
+
+Duyệt đăng ký tự động cấp quyền, không cần nhập lại thông tin học sinh. Tab Quyền học hiển thị các khóa đã mở và nút Thu hồi cho từng dòng; form cấp quyền thủ công đã được bỏ khỏi giao diện. Admin vẫn có thể đặt thời hạn hoặc tạm ngừng khóa trong cấu hình khóa. Thay đổi quyền và kết quả xét duyệt được lưu nhật ký. Khi hết hạn/thu hồi, API nội dung, thẻ, quiz, đáp án, bài luyện và bài thi bị chặn; lịch sử kết quả vẫn được giữ.
 
 ## Tài khoản cũ
 

@@ -1,0 +1,291 @@
+{
+  "book": "Kết nối tri thức với cuộc sống",
+  "yearId": "2026-2027",
+  "chapters": [
+    {
+      "id": "kntt-toan-1-c01",
+      "name": "Chủ đề 1: Các số từ 0 đến 10",
+      "semester": "hk1",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "id": "kntt-toan-1-b01",
+          "name": "Bài 1. Các số 0, 1, 2, 3, 4, 5",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-toan-1-b02",
+          "name": "Bài 2. Các số 6, 7, 8, 9, 10",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-toan-1-b03",
+          "name": "Bài 3. Nhiều hơn, ít hơn, bằng nhau",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-toan-1-b04",
+          "name": "Bài 4. So sánh số",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-toan-1-b05",
+          "name": "Bài 5. Mấy và mấy",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-toan-1-b06",
+          "name": "Bài 6. Luyện tập chung",
+          "sortOrder": 6
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-1-c02",
+      "name": "Chủ đề 2: Làm quen với một số hình phẳng",
+      "semester": "hk1",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "id": "kntt-toan-1-b07",
+          "name": "Bài 7. Hình vuông, hình tròn, hình tam giác, hình chữ nhật",
+          "sortOrder": 7
+        },
+        {
+          "id": "kntt-toan-1-b08",
+          "name": "Bài 8. Thực hành lắp ghép, xếp hình",
+          "sortOrder": 8
+        },
+        {
+          "id": "kntt-toan-1-b09",
+          "name": "Bài 9. Luyện tập chung",
+          "sortOrder": 9
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-1-c03",
+      "name": "Chủ đề 3: Phép cộng, phép trừ trong phạm vi 10",
+      "semester": "hk1",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "id": "kntt-toan-1-b10",
+          "name": "Bài 10. Phép cộng trong phạm vi 10",
+          "sortOrder": 10
+        },
+        {
+          "id": "kntt-toan-1-b11",
+          "name": "Bài 11. Phép trừ trong phạm vi 10",
+          "sortOrder": 11
+        },
+        {
+          "id": "kntt-toan-1-b12",
+          "name": "Bài 12. Bảng cộng, bảng trừ trong phạm vi 10",
+          "sortOrder": 12
+        },
+        {
+          "id": "kntt-toan-1-b13",
+          "name": "Bài 13. Luyện tập chung",
+          "sortOrder": 13
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-1-c04",
+      "name": "Chủ đề 4: Làm quen với một số hình khối",
+      "semester": "hk1",
+      "sortOrder": 4,
+      "lessons": [
+        {
+          "id": "kntt-toan-1-b14",
+          "name": "Bài 14. Khối lập phương, khối hộp chữ nhật",
+          "sortOrder": 14
+        },
+        {
+          "id": "kntt-toan-1-b15",
+          "name": "Bài 15. Vị trí, định hướng trong không gian",
+          "sortOrder": 15
+        },
+        {
+          "id": "kntt-toan-1-b16",
+          "name": "Bài 16. Luyện tập chung",
+          "sortOrder": 16
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-1-c05",
+      "name": "Chủ đề 5: Ôn tập học kì 1",
+      "semester": "hk1",
+      "sortOrder": 5,
+      "lessons": [
+        {
+          "id": "kntt-toan-1-b17",
+          "name": "Bài 17. Ôn tập các số trong phạm vi 10",
+          "sortOrder": 17
+        },
+        {
+          "id": "kntt-toan-1-b18",
+          "name": "Bài 18. Ôn tập phép cộng, phép trừ trong phạm vi 10",
+          "sortOrder": 18
+        },
+        {
+          "id": "kntt-toan-1-b19",
+          "name": "Bài 19. Ôn tập hình học",
+          "sortOrder": 19
+        },
+        {
+          "id": "kntt-toan-1-b20",
+          "name": "Bài 20. Ôn tập chung",
+          "sortOrder": 20
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-1-c06",
+      "name": "Chủ đề 6: Các số đến 100",
+      "semester": "hk2",
+      "sortOrder": 6,
+      "lessons": [
+        {
+          "id": "kntt-toan-1-b21",
+          "name": "Bài 21. Số có hai chữ số",
+          "sortOrder": 21
+        },
+        {
+          "id": "kntt-toan-1-b22",
+          "name": "Bài 22. So sánh số có hai chữ số",
+          "sortOrder": 22
+        },
+        {
+          "id": "kntt-toan-1-b23",
+          "name": "Bài 23. Bảng các số từ 1 đến 100",
+          "sortOrder": 23
+        },
+        {
+          "id": "kntt-toan-1-b24",
+          "name": "Bài 24. Luyện tập chung",
+          "sortOrder": 24
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-1-c07",
+      "name": "Chủ đề 7: Độ dài và đo độ dài",
+      "semester": "hk2",
+      "sortOrder": 7,
+      "lessons": [
+        {
+          "id": "kntt-toan-1-b25",
+          "name": "Bài 25. Dài hơn, ngắn hơn",
+          "sortOrder": 25
+        },
+        {
+          "id": "kntt-toan-1-b26",
+          "name": "Bài 26. Đơn vị đo độ dài",
+          "sortOrder": 26
+        },
+        {
+          "id": "kntt-toan-1-b27",
+          "name": "Bài 27. Thực hành ước lượng và đo độ dài",
+          "sortOrder": 27
+        },
+        {
+          "id": "kntt-toan-1-b28",
+          "name": "Bài 28. Luyện tập chung",
+          "sortOrder": 28
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-1-c08",
+      "name": "Chủ đề 8: Phép cộng, phép trừ (không nhớ) trong phạm vi 100",
+      "semester": "hk2",
+      "sortOrder": 8,
+      "lessons": [
+        {
+          "id": "kntt-toan-1-b29",
+          "name": "Bài 29. Phép cộng số có hai chữ số với số có một chữ số",
+          "sortOrder": 29
+        },
+        {
+          "id": "kntt-toan-1-b30",
+          "name": "Bài 30. Phép cộng số có hai chữ số với số có hai chữ số",
+          "sortOrder": 30
+        },
+        {
+          "id": "kntt-toan-1-b31",
+          "name": "Bài 31. Phép trừ số có hai chữ số cho số có một chữ số",
+          "sortOrder": 31
+        },
+        {
+          "id": "kntt-toan-1-b32",
+          "name": "Bài 32. Phép trừ số có hai chữ số cho số có hai chữ số",
+          "sortOrder": 32
+        },
+        {
+          "id": "kntt-toan-1-b33",
+          "name": "Bài 33. Luyện tập chung",
+          "sortOrder": 33
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-1-c09",
+      "name": "Chủ đề 9: Thời gian, giờ và lịch",
+      "semester": "hk2",
+      "sortOrder": 9,
+      "lessons": [
+        {
+          "id": "kntt-toan-1-b34",
+          "name": "Bài 34. Xem giờ đúng trên đồng hồ",
+          "sortOrder": 34
+        },
+        {
+          "id": "kntt-toan-1-b35",
+          "name": "Bài 35. Các ngày trong tuần",
+          "sortOrder": 35
+        },
+        {
+          "id": "kntt-toan-1-b36",
+          "name": "Bài 36. Thực hành xem lịch và giờ",
+          "sortOrder": 36
+        },
+        {
+          "id": "kntt-toan-1-b37",
+          "name": "Bài 37. Luyện tập chung",
+          "sortOrder": 37
+        }
+      ]
+    },
+    {
+      "id": "kntt-toan-1-c10",
+      "name": "Chủ đề 10: Ôn tập cuối năm",
+      "semester": "hk2",
+      "sortOrder": 10,
+      "lessons": [
+        {
+          "id": "kntt-toan-1-b38",
+          "name": "Bài 38. Ôn tập các số và phép tính trong phạm vi 10",
+          "sortOrder": 38
+        },
+        {
+          "id": "kntt-toan-1-b39",
+          "name": "Bài 39. Ôn tập các số và phép tính trong phạm vi 100",
+          "sortOrder": 39
+        },
+        {
+          "id": "kntt-toan-1-b40",
+          "name": "Bài 40. Ôn tập hình học và đo lường",
+          "sortOrder": 40
+        },
+        {
+          "id": "kntt-toan-1-b41",
+          "name": "Bài 41. Ôn tập chung",
+          "sortOrder": 41
+        }
+      ]
+    }
+  ]
+}

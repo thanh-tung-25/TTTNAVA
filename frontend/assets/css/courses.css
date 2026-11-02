@@ -5,3 +5,10 @@
 .course-selector[data-role=student] .student-navigation,.course-selector[data-role=student] .course-switch{display:none}
 .course-selector[data-role=student] .topbar-inner>.brand{position:static}
 .course-selector[data-role=student] .page{padding-bottom:50px}
+.payment-qr-image{display:block;width:min(100%,260px);height:auto;max-height:360px;object-fit:contain;margin:16px auto;background:#fff;border:1px solid #e2d8ed;border-radius:14px;padding:12px}
+.payment-qr-box{margin:20px 0;padding:16px;background:#f7f2fd;border:1px solid #e4d8f0;border-radius:18px;text-align:center}
+.payment-qr-box figcaption{font-size:.8rem;line-height:1.8;color:#7b6b8b}
+.payment-steps{padding:16px 16px 16px 36px;background:#f6f0fc;border-radius:14px;line-height:1.9;font-size:.85rem;color:#735a8b}
+.payment-summary{display:grid;gap:10px;padding:18px;border:1px solid #e4d5ef;border-radius:14px;background:#fffdf7}
+.payment-summary p{margin:0}.payment-summary code{overflow-wrap:anywhere;user-select:all;font-size:.9rem;padding:10px;background:#f3edf9;border-radius:10px}.payment-summary .btn{justify-self:start}
+.course-pending-count{display:inline-block;min-width:22px;margin-left:6px;padding:2px 6px;border-radius:999px;background:#bd365c;color:white;font-size:.75rem;text-align:center}.course-pending-count[hidden]{display:none}

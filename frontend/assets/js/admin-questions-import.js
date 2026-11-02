@@ -12,6 +12,7 @@ import {
 } from './admin-question-scope.js';
 import { renderImportPreview, syncImportPreview } from './admin-import-preview.js';
 import { findScope, loadTree, showScope } from './admin-questions-tree.js';
+import {store} from './admin-questions-context.js';
 
 function statusLine(message) {
   const box = document.querySelector('[data-import-status]');
@@ -20,13 +21,15 @@ function statusLine(message) {
   box.textContent = message;
 }
 
-function previewHtml(config, tree) {
+function previewHtml(config, tree, selectedIds) {
+  const labels=selectedIds?scopeLabels(tree,selectedIds):null;
+  const destination=labels?[tree.year.name,labels.grade,labels.semester,labels.subjectName,labels.chapterName,labels.lessonName].filter(Boolean).join(' › '):'';
   return `
     <div class="form-error hidden" data-error role="alert"></div>
     <p class="muted" style="font-size:.84rem;margin:0 0 .75rem">
-      Chọn đúng cấp chương trình trước khi lưu. Câu hỏi nhập từ Word luôn được lưu ở trạng thái <strong>Nháp</strong>.
+      ${selectedIds?'Câu hỏi sẽ được lưu vào bài đã chọn bên ngoài.':'Chọn đúng cấp chương trình trước khi lưu.'} Câu hỏi nhập từ Word luôn được lưu ở trạng thái <strong>Nháp</strong>.
     </p>
-    ${scopeControlsHtml(tree, defaultScopeIds(tree))}
+    ${selectedIds?`<div class="worksheet-placement" data-import-destination><strong>Bài học nhận câu hỏi</strong><p>${escapeHtml(destination)}</p></div>`:scopeControlsHtml(tree, defaultScopeIds(tree))}
     <div class="field"><label for="docx-file">Tệp tài liệu .docx (tối đa 20 MB)</label>
       <input class="input" id="docx-file" type="file" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
       <p class="hint">Mẫu: <strong>Câu 1.</strong> … <strong>A.</strong> … <strong>Đáp án:</strong> A · <strong>Lời giải:</strong> …</p>
@@ -52,14 +55,25 @@ function previewHtml(config, tree) {
 
 export async function openImport() {
   try {
+    const selected=store.selectedScope?.lessonId?structuredClone(store.selectedScope):null;
+    if(document.body.dataset.contentHub==='unified'&&!selected)throw new Error('Chọn bài học ở ngoài trước khi nhập Word.');
     const [configPayload, treePayload] = await Promise.all([
       api('/api/v1/admin/questions/import/config'),
-      api('/api/v1/admin/curriculum/tree'),
+      api('/api/v1/admin/curriculum/tree'+(selected?.yearId?'?yearId='+encodeURIComponent(selected.yearId):'')),
     ]);
     const config = configPayload.data;
     const tree = treePayload.data;
+    const selectedIds=selected?{yearId:selected.yearId,grade:selected.grade,semester:selected.semester,subjectId:selected.subjectId,chapterId:selected.chapterId,lessonId:selected.lessonId}:null;
+    if(selectedIds){
+      const grade=tree.grades.find(g=>g.grade===selectedIds.grade);
+      const semester=grade?.semesters.find(s=>s.id===selectedIds.semester);
+      const subject=semester?.subjects.find(s=>s.id===selectedIds.subjectId);
+      const chapter=subject?.chapters.find(c=>c.id===selectedIds.chapterId);
+      if(!chapter?.lessons.some(l=>l.id===selectedIds.lessonId))throw new Error('Bài học đã chọn không còn trong chương trình. Vui lòng chọn lại bài ở ngoài.');
+    }
     const container = document.createElement('div');
-    container.innerHTML = previewHtml(config, tree);
+    container.innerHTML = previewHtml(config, tree, selectedIds);
+    const getIds=()=>selectedIds?{...selectedIds}:readScopeIds(container);
     let file = null;
     let questions = [];
     const preview = container.querySelector('[data-preview]');
@@ -67,7 +81,7 @@ export async function openImport() {
     const aiPanel = container.querySelector('[data-ai-panel]');
     const errorBox = container.querySelector('[data-error]');
     const fileInput = container.querySelector('#docx-file');
-    bindScopeControls(container, tree, readScopeIds(container));
+    if(!selectedIds)bindScopeControls(container, tree, readScopeIds(container));
 
     fileInput.addEventListener('change', () => {
       file = fileInput.files[0] ?? null;
@@ -101,7 +115,7 @@ export async function openImport() {
         const formData = new FormData();
         formData.append('file', file);
         const payload = await api('/api/v1/admin/questions/import/docx', { method: 'POST', body: formData });
-        renderScopeSelects(container, tree, scopeIdsFromMetadata(tree, payload.data.metadata ?? {}));
+        if(!selectedIds)renderScopeSelects(container, tree, scopeIdsFromMetadata(tree, payload.data.metadata ?? {}));
         showQuestions(payload.data);
       } catch (error) {
         showError(errorBox, error);
@@ -119,7 +133,7 @@ export async function openImport() {
       if (!confirmed) return;
       setBusy(event.currentTarget, true, 'AI đang tạo…');
       try {
-        const ids = readScopeIds(container);
+        const ids = getIds();
         const labels = scopeLabels(tree, ids);
         const formData = new FormData();
         formData.append('file', file);
@@ -137,7 +151,7 @@ export async function openImport() {
 
     saveButton.addEventListener('click', async () => {
       if (!questions.length) return;
-      const ids = readScopeIds(container);
+      const ids = getIds();
       if (!ids.lessonId) {
         showError(errorBox, new Error('Vui lòng chọn bài học trước khi lưu.'));
         return;
@@ -154,7 +168,9 @@ export async function openImport() {
           },
         });
         toast(`Đã lưu ${result.data.created} câu hỏi nháp.`, 'success');
+        document.dispatchEvent(new Event('content:changed'));
         document.querySelector('[data-close]')?.click();
+          if(document.body.dataset.contentHub==='unified')return;
         const scope = findScope('lesson', ids.lessonId);
         if (scope) showScope(scope);
         await loadTree();

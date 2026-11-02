@@ -8,12 +8,12 @@ const extra=(title,children)=>el('details',{class:'learn-extra'},[el('summary',{
 function action(text,fn,primary=false){const b=button(text,async()=>{b.disabled=true;try{await fn();}catch(e){error(e);}finally{b.disabled=false;}});if(primary)b.className='btn btn-primary';return b;}
 const quiz=async id=>{const a=await request('/attempts','POST',{set_id:id,count:20});location.href='?attempt='+a.id;};
 async function boot(){
+ if(params.get('view')==='practice'){params.delete('view');window.history.replaceState(null,'',location.pathname+(params.size?'?'+params:''));}
  document.body.classList.toggle('is-studying',params.has('set'));
- const profile=await initPage('student',params.get('view')==='practice'?'practice':params.get('view')==='tests'?'exam':'chinese');
+ const profile=await initPage('student',params.get('view')==='tests'?'exam':'chinese');
  if(profile.course?.kind==='primary'){location.replace('/pages/student/courses/?program=chinese');return;}
  if(profile.course?.kind==='chinese')params.set('level',String(profile.course.level));
  catalog=await request('/catalog');notice('');
- if(params.get('view')==='practice')document.querySelector('.chinese-title h1').textContent='Luyện tập Tiếng Trung';
  document.querySelectorAll('.chinese-pagebar .chinese-tools a').forEach(a=>{const view=new URL(a.href).searchParams.get('view');if(view===(params.get('view')||null))a.setAttribute('aria-current','page');});
  if(params.has('attempt'))return showAttempt(await request('/attempts/'+params.get('attempt')));
  if(params.has('set'))return learn(params.get('set'));

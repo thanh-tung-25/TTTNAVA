@@ -1,8 +1,5 @@
-export const SUBJECTS = [
-  ['toan', 'Toán', '🔢'],
-  ['tieng-viet', 'Tiếng Việt', '📖'],
-  ['tieng-anh', 'Tiếng Anh', '🌍'],
-];
+export {SUBJECTS} from './primary-subjects.js';
+import {subjectFromSearch} from './primary-subjects.js';
 
 export const elements = {
   setupView: document.getElementById('setup-view'),
@@ -26,8 +23,7 @@ export const store = {
 };
 
 export function subjectFromUrl() {
-  const value = new URLSearchParams(window.location.search).get('subject');
-  return SUBJECTS.some(([id]) => id === value) ? value : 'toan';
+  return subjectFromSearch();
 }
 
 export function show(view) {

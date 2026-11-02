@@ -5,6 +5,7 @@ import {answerFields,collectFields} from './worksheet-fields.js';
 import {loadReviews} from './admin-worksheet-reviews.js';
 import {store} from './admin-questions-context.js';
 import {selectedScope} from './admin-content-curriculum.js';
+import {SUBJECTS} from './primary-subjects.js';
 const base='/api/v1/worksheets',workspace=document.querySelector('#ws-workspace'),notice=document.querySelector('#ws-notice'),dialog=document.querySelector('#ws-preview');
 let sheet=null,index=0,dirty=false,previewAnswer,previewItem;
 const button=(text,fn,ghost=false)=>el('button',{type:'button',class:'btn'+(ghost?' btn-ghost':''),text,onclick:()=>Promise.resolve().then(fn).catch(fail)});
@@ -40,7 +41,7 @@ function render(){
  if(!sheet.lesson_id)placement.append(el('p',{class:'muted',text:'Chọn đến bài học trong chương trình ở trên, mở lại bộ bài và bấm Xếp vào bài đang chọn.'}));
  const meta=el('div',{class:'worksheet-meta'},[field('Tên bộ bài','title',sheet.title),field('Lớp','grade','','select'),field('Môn học','subject_id','','select')]);
  const grades=meta.querySelector('[name=grade]');for(let n=1;n<=5;n++)grades.append(el('option',{value:n,text:'Lớp '+n}));grades.value=sheet.grade;
- const subjects=meta.querySelector('[name=subject_id]');for(const [id,title]of [['toan','Toán'],['tieng-viet','Tiếng Việt'],['tieng-anh','Tiếng Anh']])subjects.append(el('option',{value:id,text:title}));subjects.value=sheet.subject_id;
+ const subjects=meta.querySelector('[name=subject_id]');for(const [id,title]of SUBJECTS)subjects.append(el('option',{value:id,text:title}));subjects.value=sheet.subject_id;
  if(sheet.lesson_id){grades.disabled=true;subjects.disabled=true;}
  const tabs=el('div',{class:'worksheet-question-tabs','aria-label':'Các câu hỏi'});
  sheet.items.forEach((item,n)=>{const b=button('Câu '+(n+1),()=>{commit();index=n;render();},true);if(n===index)b.setAttribute('aria-current','true');tabs.append(b);});

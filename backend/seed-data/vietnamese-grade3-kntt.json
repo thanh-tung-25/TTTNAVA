@@ -1,0 +1,667 @@
+{
+  "book": "Tiếng Việt 3 – Kết nối tri thức với cuộc sống",
+  "subjectId": "tieng-viet",
+  "grade": 3,
+  "yearId": "2026-2027",
+  "note": "Mục lục đối chiếu sách; bài tập và văn bản đọc hiểu bổ trợ tự soạn, không chép nguyên văn SGK. Mỗi bài 50 câu; có thêm các bộ ôn tập giữa/cuối học kì.",
+  "sources": [
+    "https://olm.vn/thu-vien-so/doc-sach/sgv-tieng-viet-tap-1.4502952146",
+    "https://test12.olm.vn/index.php/thu-vien-so/doc-sach/shs-tieng-viet-tap-2.4502981707"
+  ],
+  "chapters": [
+    {
+      "id": "kntt-tv-3-hk1-c01",
+      "name": "Những trải nghiệm thú vị",
+      "semester": "hk1",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "id": "kntt-tv-3-hk1-b01",
+          "name": "Bài 1. Ngày gặp lại",
+          "title": "Ngày gặp lại",
+          "numberInVolume": 1,
+          "volume": 1,
+          "sortOrder": 1,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b02",
+          "name": "Bài 2. Về thăm quê",
+          "title": "Về thăm quê",
+          "numberInVolume": 2,
+          "volume": 1,
+          "sortOrder": 2,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b03",
+          "name": "Bài 3. Cánh rừng trong nắng",
+          "title": "Cánh rừng trong nắng",
+          "numberInVolume": 3,
+          "volume": 1,
+          "sortOrder": 3,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b04",
+          "name": "Bài 4. Lần đầu ra biển",
+          "title": "Lần đầu ra biển",
+          "numberInVolume": 4,
+          "volume": 1,
+          "sortOrder": 4,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b05",
+          "name": "Bài 5. Nhật kí tập bơi",
+          "title": "Nhật kí tập bơi",
+          "numberInVolume": 5,
+          "volume": 1,
+          "sortOrder": 5,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b06",
+          "name": "Bài 6. Tập nấu ăn",
+          "title": "Tập nấu ăn",
+          "numberInVolume": 6,
+          "volume": 1,
+          "sortOrder": 6,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b07",
+          "name": "Bài 7. Mùa hè lấp lánh",
+          "title": "Mùa hè lấp lánh",
+          "numberInVolume": 7,
+          "volume": 1,
+          "sortOrder": 7,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b08",
+          "name": "Bài 8. Tạm biệt mùa hè",
+          "title": "Tạm biệt mùa hè",
+          "numberInVolume": 8,
+          "volume": 1,
+          "sortOrder": 8,
+          "kind": "lesson"
+        }
+      ]
+    },
+    {
+      "id": "kntt-tv-3-hk1-c02",
+      "name": "Cổng trường rộng mở",
+      "semester": "hk1",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "id": "kntt-tv-3-hk1-b09",
+          "name": "Bài 9. Đi học vui sao",
+          "title": "Đi học vui sao",
+          "numberInVolume": 9,
+          "volume": 1,
+          "sortOrder": 9,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b10",
+          "name": "Bài 10. Con đường đến trường",
+          "title": "Con đường đến trường",
+          "numberInVolume": 10,
+          "volume": 1,
+          "sortOrder": 10,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b11",
+          "name": "Bài 11. Lời giải toán đặc biệt",
+          "title": "Lời giải toán đặc biệt",
+          "numberInVolume": 11,
+          "volume": 1,
+          "sortOrder": 11,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b12",
+          "name": "Bài 12. Bài tập làm văn",
+          "title": "Bài tập làm văn",
+          "numberInVolume": 12,
+          "volume": 1,
+          "sortOrder": 12,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b13",
+          "name": "Bài 13. Bàn tay cô giáo",
+          "title": "Bàn tay cô giáo",
+          "numberInVolume": 13,
+          "volume": 1,
+          "sortOrder": 13,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b14",
+          "name": "Bài 14. Cuộc họp của chữ viết",
+          "title": "Cuộc họp của chữ viết",
+          "numberInVolume": 14,
+          "volume": 1,
+          "sortOrder": 14,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b15",
+          "name": "Bài 15. Thư viện",
+          "title": "Thư viện",
+          "numberInVolume": 15,
+          "volume": 1,
+          "sortOrder": 15,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b16",
+          "name": "Bài 16. Ngày em vào Đội",
+          "title": "Ngày em vào Đội",
+          "numberInVolume": 16,
+          "volume": 1,
+          "sortOrder": 16,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-review-mid",
+          "name": "Ôn tập và đánh giá giữa học kì 1",
+          "title": "Ôn tập giữa học kì",
+          "volume": 1,
+          "sortOrder": 17,
+          "kind": "review"
+        }
+      ]
+    },
+    {
+      "id": "kntt-tv-3-hk1-c03",
+      "name": "Mái nhà yêu thương",
+      "semester": "hk1",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "id": "kntt-tv-3-hk1-b17",
+          "name": "Bài 17. Ngưỡng cửa",
+          "title": "Ngưỡng cửa",
+          "numberInVolume": 17,
+          "volume": 1,
+          "sortOrder": 18,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b18",
+          "name": "Bài 18. Món quà đặc biệt",
+          "title": "Món quà đặc biệt",
+          "numberInVolume": 18,
+          "volume": 1,
+          "sortOrder": 19,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b19",
+          "name": "Bài 19. Khi cả nhà bé tí",
+          "title": "Khi cả nhà bé tí",
+          "numberInVolume": 19,
+          "volume": 1,
+          "sortOrder": 20,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b20",
+          "name": "Bài 20. Trò chuyện cùng mẹ",
+          "title": "Trò chuyện cùng mẹ",
+          "numberInVolume": 20,
+          "volume": 1,
+          "sortOrder": 21,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b21",
+          "name": "Bài 21. Tia nắng bé nhỏ",
+          "title": "Tia nắng bé nhỏ",
+          "numberInVolume": 21,
+          "volume": 1,
+          "sortOrder": 22,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b22",
+          "name": "Bài 22. Để cháu nắm tay ông",
+          "title": "Để cháu nắm tay ông",
+          "numberInVolume": 22,
+          "volume": 1,
+          "sortOrder": 23,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b23",
+          "name": "Bài 23. Tôi yêu em tôi",
+          "title": "Tôi yêu em tôi",
+          "numberInVolume": 23,
+          "volume": 1,
+          "sortOrder": 24,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b24",
+          "name": "Bài 24. Bạn nhỏ trong nhà",
+          "title": "Bạn nhỏ trong nhà",
+          "numberInVolume": 24,
+          "volume": 1,
+          "sortOrder": 25,
+          "kind": "lesson"
+        }
+      ]
+    },
+    {
+      "id": "kntt-tv-3-hk1-c04",
+      "name": "Cộng đồng gắn bó",
+      "semester": "hk1",
+      "sortOrder": 4,
+      "lessons": [
+        {
+          "id": "kntt-tv-3-hk1-b25",
+          "name": "Bài 25. Những bậc đá chạm mây",
+          "title": "Những bậc đá chạm mây",
+          "numberInVolume": 25,
+          "volume": 1,
+          "sortOrder": 26,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b26",
+          "name": "Bài 26. Đi tìm mặt trời",
+          "title": "Đi tìm mặt trời",
+          "numberInVolume": 26,
+          "volume": 1,
+          "sortOrder": 27,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b27",
+          "name": "Bài 27. Những chiếc áo ấm",
+          "title": "Những chiếc áo ấm",
+          "numberInVolume": 27,
+          "volume": 1,
+          "sortOrder": 28,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b28",
+          "name": "Bài 28. Con đường của bé",
+          "title": "Con đường của bé",
+          "numberInVolume": 28,
+          "volume": 1,
+          "sortOrder": 29,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b29",
+          "name": "Bài 29. Ngôi nhà trong cỏ",
+          "title": "Ngôi nhà trong cỏ",
+          "numberInVolume": 29,
+          "volume": 1,
+          "sortOrder": 30,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b30",
+          "name": "Bài 30. Những ngọn hải đăng",
+          "title": "Những ngọn hải đăng",
+          "numberInVolume": 30,
+          "volume": 1,
+          "sortOrder": 31,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b31",
+          "name": "Bài 31. Người làm đồ chơi",
+          "title": "Người làm đồ chơi",
+          "numberInVolume": 31,
+          "volume": 1,
+          "sortOrder": 32,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-b32",
+          "name": "Bài 32. Cây bút thần",
+          "title": "Cây bút thần",
+          "numberInVolume": 32,
+          "volume": 1,
+          "sortOrder": 33,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk1-review-end",
+          "name": "Ôn tập và đánh giá cuối học kì 1",
+          "title": "Ôn tập cuối học kì",
+          "volume": 1,
+          "sortOrder": 34,
+          "kind": "review"
+        }
+      ]
+    },
+    {
+      "id": "kntt-tv-3-hk2-c05",
+      "name": "Những sắc màu thiên nhiên",
+      "semester": "hk2",
+      "sortOrder": 5,
+      "lessons": [
+        {
+          "id": "kntt-tv-3-hk2-b01",
+          "name": "Bài 1. Bầu trời · Tập 2",
+          "title": "Bầu trời",
+          "numberInVolume": 1,
+          "volume": 2,
+          "sortOrder": 35,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b02",
+          "name": "Bài 2. Mưa · Tập 2",
+          "title": "Mưa",
+          "numberInVolume": 2,
+          "volume": 2,
+          "sortOrder": 36,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b03",
+          "name": "Bài 3. Cóc kiện trời · Tập 2",
+          "title": "Cóc kiện trời",
+          "numberInVolume": 3,
+          "volume": 2,
+          "sortOrder": 37,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b04",
+          "name": "Bài 4. Những cái tên đáng yêu · Tập 2",
+          "title": "Những cái tên đáng yêu",
+          "numberInVolume": 4,
+          "volume": 2,
+          "sortOrder": 38,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b05",
+          "name": "Bài 5. Ngày hội rừng xanh · Tập 2",
+          "title": "Ngày hội rừng xanh",
+          "numberInVolume": 5,
+          "volume": 2,
+          "sortOrder": 39,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b06",
+          "name": "Bài 6. Cây gạo · Tập 2",
+          "title": "Cây gạo",
+          "numberInVolume": 6,
+          "volume": 2,
+          "sortOrder": 40,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b07",
+          "name": "Bài 7. Mặt trời xanh của tôi · Tập 2",
+          "title": "Mặt trời xanh của tôi",
+          "numberInVolume": 7,
+          "volume": 2,
+          "sortOrder": 41,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b08",
+          "name": "Bài 8. Bầy voi rừng Trường Sơn · Tập 2",
+          "title": "Bầy voi rừng Trường Sơn",
+          "numberInVolume": 8,
+          "volume": 2,
+          "sortOrder": 42,
+          "kind": "lesson"
+        }
+      ]
+    },
+    {
+      "id": "kntt-tv-3-hk2-c06",
+      "name": "Bài học từ cuộc sống",
+      "semester": "hk2",
+      "sortOrder": 6,
+      "lessons": [
+        {
+          "id": "kntt-tv-3-hk2-b09",
+          "name": "Bài 9. Lời kêu gọi toàn dân tập thể dục · Tập 2",
+          "title": "Lời kêu gọi toàn dân tập thể dục",
+          "numberInVolume": 9,
+          "volume": 2,
+          "sortOrder": 43,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b10",
+          "name": "Bài 10. Quả hồng của thỏ con · Tập 2",
+          "title": "Quả hồng của thỏ con",
+          "numberInVolume": 10,
+          "volume": 2,
+          "sortOrder": 44,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b11",
+          "name": "Bài 11. Chuyện bên cửa sổ · Tập 2",
+          "title": "Chuyện bên cửa sổ",
+          "numberInVolume": 11,
+          "volume": 2,
+          "sortOrder": 45,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b12",
+          "name": "Bài 12. Tay trái và tay phải · Tập 2",
+          "title": "Tay trái và tay phải",
+          "numberInVolume": 12,
+          "volume": 2,
+          "sortOrder": 46,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b13",
+          "name": "Bài 13. Mèo đi câu cá · Tập 2",
+          "title": "Mèo đi câu cá",
+          "numberInVolume": 13,
+          "volume": 2,
+          "sortOrder": 47,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b14",
+          "name": "Bài 14. Học nghề · Tập 2",
+          "title": "Học nghề",
+          "numberInVolume": 14,
+          "volume": 2,
+          "sortOrder": 48,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b15",
+          "name": "Bài 15. Ngày như thế nào là đẹp? · Tập 2",
+          "title": "Ngày như thế nào là đẹp?",
+          "numberInVolume": 15,
+          "volume": 2,
+          "sortOrder": 49,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b16",
+          "name": "Bài 16. A lô, tớ đây! · Tập 2",
+          "title": "A lô, tớ đây!",
+          "numberInVolume": 16,
+          "volume": 2,
+          "sortOrder": 50,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-review-mid",
+          "name": "Ôn tập và đánh giá giữa học kì 2",
+          "title": "Ôn tập giữa học kì",
+          "volume": 2,
+          "sortOrder": 51,
+          "kind": "review"
+        }
+      ]
+    },
+    {
+      "id": "kntt-tv-3-hk2-c07",
+      "name": "Đất nước ngàn năm",
+      "semester": "hk2",
+      "sortOrder": 7,
+      "lessons": [
+        {
+          "id": "kntt-tv-3-hk2-b17",
+          "name": "Bài 17. Đất nước là gì? · Tập 2",
+          "title": "Đất nước là gì?",
+          "numberInVolume": 17,
+          "volume": 2,
+          "sortOrder": 52,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b18",
+          "name": "Bài 18. Núi quê tôi · Tập 2",
+          "title": "Núi quê tôi",
+          "numberInVolume": 18,
+          "volume": 2,
+          "sortOrder": 53,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b19",
+          "name": "Bài 19. Sông Hương · Tập 2",
+          "title": "Sông Hương",
+          "numberInVolume": 19,
+          "volume": 2,
+          "sortOrder": 54,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b20",
+          "name": "Bài 20. Tiếng nước mình · Tập 2",
+          "title": "Tiếng nước mình",
+          "numberInVolume": 20,
+          "volume": 2,
+          "sortOrder": 55,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b21",
+          "name": "Bài 21. Nhà rông · Tập 2",
+          "title": "Nhà rông",
+          "numberInVolume": 21,
+          "volume": 2,
+          "sortOrder": 56,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b22",
+          "name": "Bài 22. Sự tích ông Đùng, bà Đùng · Tập 2",
+          "title": "Sự tích ông Đùng, bà Đùng",
+          "numberInVolume": 22,
+          "volume": 2,
+          "sortOrder": 57,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b23",
+          "name": "Bài 23. Hai Bà Trưng · Tập 2",
+          "title": "Hai Bà Trưng",
+          "numberInVolume": 23,
+          "volume": 2,
+          "sortOrder": 58,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b24",
+          "name": "Bài 24. Cùng Bác qua suối · Tập 2",
+          "title": "Cùng Bác qua suối",
+          "numberInVolume": 24,
+          "volume": 2,
+          "sortOrder": 59,
+          "kind": "lesson"
+        }
+      ]
+    },
+    {
+      "id": "kntt-tv-3-hk2-c08",
+      "name": "Trái Đất của chúng mình",
+      "semester": "hk2",
+      "sortOrder": 8,
+      "lessons": [
+        {
+          "id": "kntt-tv-3-hk2-b25",
+          "name": "Bài 25. Ngọn lửa Ô-lim-pích · Tập 2",
+          "title": "Ngọn lửa Ô-lim-pích",
+          "numberInVolume": 25,
+          "volume": 2,
+          "sortOrder": 60,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b26",
+          "name": "Bài 26. Rô-bốt ở quanh ta · Tập 2",
+          "title": "Rô-bốt ở quanh ta",
+          "numberInVolume": 26,
+          "volume": 2,
+          "sortOrder": 61,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b27",
+          "name": "Bài 27. Thư của ông Trái Đất gửi các bạn nhỏ · Tập 2",
+          "title": "Thư của ông Trái Đất gửi các bạn nhỏ",
+          "numberInVolume": 27,
+          "volume": 2,
+          "sortOrder": 62,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b28",
+          "name": "Bài 28. Những điều nhỏ tớ làm cho Trái Đất · Tập 2",
+          "title": "Những điều nhỏ tớ làm cho Trái Đất",
+          "numberInVolume": 28,
+          "volume": 2,
+          "sortOrder": 63,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b29",
+          "name": "Bài 29. Bác sĩ Y-éc-xanh · Tập 2",
+          "title": "Bác sĩ Y-éc-xanh",
+          "numberInVolume": 29,
+          "volume": 2,
+          "sortOrder": 64,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-b30",
+          "name": "Bài 30. Một mái nhà chung · Tập 2",
+          "title": "Một mái nhà chung",
+          "numberInVolume": 30,
+          "volume": 2,
+          "sortOrder": 65,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-3-hk2-review-end",
+          "name": "Ôn tập và đánh giá cuối năm học",
+          "title": "Ôn tập cuối học kì",
+          "volume": 2,
+          "sortOrder": 66,
+          "kind": "review"
+        }
+      ]
+    }
+  ]
+}

@@ -100,10 +100,52 @@ async function main() {
         }
       }
     }
+    const vietnamese = await readJson('vietnamese-grade1-a.json');
+    const vietnameseLessons = vietnamese.chapters.flatMap(chapter => chapter.lessons);
+    if (new Set(vietnameseLessons.map(lesson => lesson.id)).size !== vietnameseLessons.length
+        || vietnamese.chapters.some(chapter => !chapter.lessons.length)) {
+      throw new Error('Mục lục Tiếng Việt 1 không hợp lệ');
+    }
+    await connection.query('UPDATE curriculum_chapters SET is_legacy=1 WHERE id IN (?,?)',
+      ['chapter-tieng-viet-1-hk1', 'chapter-tieng-viet-1-hk2']);
+    for (const chapter of vietnamese.chapters) {
+      await connection.query(`INSERT INTO curriculum_chapters
+        (id,school_year_id,grade,semester,subject_id,name,slug,sort_order,book_label)
+        VALUES (?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE book_label=VALUES(book_label)`,
+        [chapter.id,vietnamese.yearId,1,chapter.semester,'tieng-viet',chapter.name,
+          chapter.id,chapter.sortOrder,vietnamese.book]);
+      for (const lesson of chapter.lessons) {
+        await connection.query(`INSERT IGNORE INTO topics (id,subject_id,grade,name,slug,sort_order)
+          VALUES (?,'tieng-viet',1,?,?,?)`,[lesson.id,lesson.name,lesson.id,lesson.sortOrder]);
+        await connection.query(`INSERT IGNORE INTO curriculum_lessons (id,chapter_id,topic_id,name,sort_order)
+          VALUES (?,?,?,?,?)`,[lesson.id,chapter.id,lesson.id,lesson.name,lesson.sortOrder]);
+      }
+    }
+    let vietnamesePrimaryChapters=0,vietnamesePrimaryLessons=0;
+    for(const grade of [2,3,4,5]) {
+      const book=await readJson(`vietnamese-grade${grade}-kntt.json`);
+      const lessons=book.chapters.flatMap(c=>c.lessons);
+      if(lessons.length!==66 || new Set(lessons.map(l=>l.id)).size!==66)throw new Error(`Mục lục Tiếng Việt ${grade} không hợp lệ`);
+      vietnamesePrimaryChapters+=book.chapters.length;vietnamesePrimaryLessons+=lessons.length;
+      await connection.query('UPDATE curriculum_chapters SET is_legacy=1 WHERE id IN (?,?)',
+        [`chapter-tieng-viet-${grade}-hk1`,`chapter-tieng-viet-${grade}-hk2`]);
+      for(const chapter of book.chapters) {
+        await connection.query(`INSERT INTO curriculum_chapters
+          (id,school_year_id,grade,semester,subject_id,name,slug,sort_order,book_label)
+          VALUES (?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE book_label=VALUES(book_label)`,
+          [chapter.id,book.yearId,grade,chapter.semester,'tieng-viet',chapter.name,chapter.id,chapter.sortOrder,book.book]);
+        for(const lesson of chapter.lessons) {
+          await connection.query(`INSERT IGNORE INTO topics (id,subject_id,grade,name,slug,sort_order)
+            VALUES (?,'tieng-viet',?,?,?,?)`,[lesson.id,grade,lesson.name,lesson.id,lesson.sortOrder]);
+          await connection.query(`INSERT IGNORE INTO curriculum_lessons (id,chapter_id,topic_id,name,sort_order)
+            VALUES (?,?,?,?,?)`,[lesson.id,chapter.id,lesson.id,lesson.name,lesson.sortOrder]);
+        }
+      }
+    }
     await connection.commit();
     console.log(
       `Đã đồng bộ ${subjects.length} môn, ${topics.length} chủ đề, `
-      + `${curriculum.chapters.length} chương và ${curriculum.lessons.length} bài học cũ; khung Toán 1–5 Kết nối tri thức gồm ${bookChapterCount} chủ đề, ${bookLessonCount} bài. Không nhập câu hỏi mẫu.`,
+      + `${curriculum.chapters.length} chương và ${curriculum.lessons.length} bài học cũ; khung Toán 1–5 Kết nối tri thức gồm ${bookChapterCount} chủ đề, ${bookLessonCount} bài; Tiếng Việt 1 gồm ${vietnamese.chapters.length} chủ đề, ${vietnameseLessons.length} bài; Tiếng Việt 2–5 gồm ${vietnamesePrimaryChapters} chủ đề, ${vietnamesePrimaryLessons} bài/bộ ôn tập. Không nhập câu hỏi mẫu.`,
     );
   } catch (error) {
     await connection.rollback();

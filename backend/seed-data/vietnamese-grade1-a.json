@@ -1,0 +1,1182 @@
+{
+  "book": "Tiếng Việt 1 – Lộ trình gộp bài phương án A",
+  "subjectId": "tieng-viet",
+  "grade": 1,
+  "yearId": "2026-2027",
+  "sources": [
+    "Cấu trúc do người dùng cung cấp",
+    "https://loigiaihay.com/sgk-tieng-viet-1-ket-noi-tri-thuc-voi-cuoc-song-c1181.html"
+  ],
+  "chapters": [
+    {
+      "id": "tv1-a-c01",
+      "name": "Chủ đề 1: Làm quen âm, chữ và dấu thanh",
+      "semester": "hk1",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "id": "tv1-a-b01",
+          "name": "Bài 1. a, b, c, e, ê – Dấu sắc và dấu huyền",
+          "sortOrder": 1,
+          "kind": "letters",
+          "targets": [
+            "a",
+            "b",
+            "c",
+            "e",
+            "ê"
+          ]
+        },
+        {
+          "id": "tv1-a-b02",
+          "name": "Bài 2. o, ô, ơ – Dấu hỏi, dấu ngã, dấu nặng",
+          "sortOrder": 2,
+          "kind": "letters",
+          "targets": [
+            "o",
+            "ô",
+            "ơ"
+          ]
+        },
+        {
+          "id": "tv1-a-b03",
+          "name": "Bài 3. d, đ, i, k",
+          "sortOrder": 3,
+          "kind": "letters",
+          "targets": [
+            "d",
+            "đ",
+            "i",
+            "k"
+          ]
+        },
+        {
+          "id": "tv1-a-b04",
+          "name": "Bài 4. l, m, n, h",
+          "sortOrder": 4,
+          "kind": "letters",
+          "targets": [
+            "l",
+            "m",
+            "n",
+            "h"
+          ]
+        },
+        {
+          "id": "tv1-a-b05",
+          "name": "Bài 5. u, ư, ch, kh",
+          "sortOrder": 5,
+          "kind": "letters",
+          "targets": [
+            "u",
+            "ư",
+            "ch",
+            "kh"
+          ]
+        },
+        {
+          "id": "tv1-a-b06",
+          "name": "Bài 6. Ôn tập âm, chữ và sáu thanh",
+          "sortOrder": 6,
+          "kind": "letters",
+          "targets": [
+            "a",
+            "b",
+            "c",
+            "e",
+            "ê",
+            "o",
+            "ô",
+            "ơ",
+            "d",
+            "đ",
+            "i",
+            "k",
+            "l",
+            "m",
+            "n",
+            "h",
+            "u",
+            "ư",
+            "ch",
+            "kh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c02",
+      "name": "Chủ đề 2: Âm ghép và quy tắc chính tả",
+      "semester": "hk1",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "id": "tv1-a-b07",
+          "name": "Bài 7. Phân biệt g và gh",
+          "sortOrder": 7,
+          "kind": "spelling",
+          "targets": [
+            "g",
+            "gh"
+          ]
+        },
+        {
+          "id": "tv1-a-b08",
+          "name": "Bài 8. gi và ph",
+          "sortOrder": 8,
+          "kind": "letters",
+          "targets": [
+            "gi",
+            "ph"
+          ]
+        },
+        {
+          "id": "tv1-a-b09",
+          "name": "Bài 9. nh và th",
+          "sortOrder": 9,
+          "kind": "letters",
+          "targets": [
+            "nh",
+            "th"
+          ]
+        },
+        {
+          "id": "tv1-a-b10",
+          "name": "Bài 10. Phân biệt ng và ngh",
+          "sortOrder": 10,
+          "kind": "spelling",
+          "targets": [
+            "ng",
+            "ngh"
+          ]
+        },
+        {
+          "id": "tv1-a-b11",
+          "name": "Bài 11. r, s, t, tr",
+          "sortOrder": 11,
+          "kind": "letters",
+          "targets": [
+            "r",
+            "s",
+            "t",
+            "tr"
+          ]
+        },
+        {
+          "id": "tv1-a-b12",
+          "name": "Bài 12. v, x, y, p và qu",
+          "sortOrder": 12,
+          "kind": "letters",
+          "targets": [
+            "v",
+            "x",
+            "y",
+            "p",
+            "qu"
+          ]
+        },
+        {
+          "id": "tv1-a-b13",
+          "name": "Bài 13. ia, ua, ưa",
+          "sortOrder": 13,
+          "kind": "rimes",
+          "targets": [
+            "ia",
+            "ua",
+            "ưa"
+          ]
+        },
+        {
+          "id": "tv1-a-b14",
+          "name": "Bài 14. Ôn tập âm ghép và chính tả",
+          "sortOrder": 14,
+          "kind": "spelling",
+          "targets": [
+            "g",
+            "gh",
+            "ng",
+            "ngh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c03",
+      "name": "Chủ đề 3: Vần kết thúc bằng i, y, u, o",
+      "semester": "hk1",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "id": "tv1-a-b15",
+          "name": "Bài 15. oi, ai, ôi, ơi",
+          "sortOrder": 15,
+          "kind": "rimes",
+          "targets": [
+            "oi",
+            "ai",
+            "ôi",
+            "ơi"
+          ]
+        },
+        {
+          "id": "tv1-a-b16",
+          "name": "Bài 16. ui, ưi, ay, ây",
+          "sortOrder": 16,
+          "kind": "rimes",
+          "targets": [
+            "ui",
+            "ưi",
+            "ay",
+            "ây"
+          ]
+        },
+        {
+          "id": "tv1-a-b17",
+          "name": "Bài 17. ao, eo, au, âu",
+          "sortOrder": 17,
+          "kind": "rimes",
+          "targets": [
+            "ao",
+            "eo",
+            "au",
+            "âu"
+          ]
+        },
+        {
+          "id": "tv1-a-b18",
+          "name": "Bài 18. iu, ưu và ôn các vần kết thúc bằng u",
+          "sortOrder": 18,
+          "kind": "rimes",
+          "targets": [
+            "iu",
+            "ưu",
+            "au",
+            "âu"
+          ]
+        },
+        {
+          "id": "tv1-a-b19",
+          "name": "Bài 19. Ôn tập các vần đã học",
+          "sortOrder": 19,
+          "kind": "rimes",
+          "targets": [
+            "oi",
+            "ai",
+            "ôi",
+            "ơi",
+            "ui",
+            "ưi",
+            "ay",
+            "ây",
+            "ao",
+            "eo",
+            "au",
+            "âu",
+            "iu",
+            "ưu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c04",
+      "name": "Chủ đề 4: Vần kết thúc bằng n, m",
+      "semester": "hk1",
+      "sortOrder": 4,
+      "lessons": [
+        {
+          "id": "tv1-a-b20",
+          "name": "Bài 20. on, an, ôn, ơn",
+          "sortOrder": 20,
+          "kind": "rimes",
+          "targets": [
+            "on",
+            "an",
+            "ôn",
+            "ơn"
+          ]
+        },
+        {
+          "id": "tv1-a-b21",
+          "name": "Bài 21. un, en, ên, in",
+          "sortOrder": 21,
+          "kind": "rimes",
+          "targets": [
+            "un",
+            "en",
+            "ên",
+            "in"
+          ]
+        },
+        {
+          "id": "tv1-a-b22",
+          "name": "Bài 22. am, ăm, âm, em, êm, im",
+          "sortOrder": 22,
+          "kind": "rimes",
+          "targets": [
+            "am",
+            "ăm",
+            "âm",
+            "em",
+            "êm",
+            "im"
+          ]
+        },
+        {
+          "id": "tv1-a-b23",
+          "name": "Bài 23. om, ôm, ơm, um, ưm",
+          "sortOrder": 23,
+          "kind": "rimes",
+          "targets": [
+            "om",
+            "ôm",
+            "ơm",
+            "um",
+            "ưm"
+          ]
+        },
+        {
+          "id": "tv1-a-b24",
+          "name": "Bài 24. Ôn tập vần kết thúc bằng n, m",
+          "sortOrder": 24,
+          "kind": "rimes",
+          "targets": [
+            "on",
+            "an",
+            "ôn",
+            "ơn",
+            "un",
+            "en",
+            "ên",
+            "in",
+            "am",
+            "ăm",
+            "âm",
+            "em",
+            "êm",
+            "im",
+            "om",
+            "ôm",
+            "ơm",
+            "um"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c05",
+      "name": "Chủ đề 5: Vần kết thúc bằng t, p",
+      "semester": "hk1",
+      "sortOrder": 5,
+      "lessons": [
+        {
+          "id": "tv1-a-b25",
+          "name": "Bài 25. ot, at, ôt, ơt",
+          "sortOrder": 25,
+          "kind": "rimes",
+          "targets": [
+            "ot",
+            "at",
+            "ôt",
+            "ơt"
+          ]
+        },
+        {
+          "id": "tv1-a-b26",
+          "name": "Bài 26. ut, ưt, et, êt, it",
+          "sortOrder": 26,
+          "kind": "rimes",
+          "targets": [
+            "ut",
+            "ưt",
+            "et",
+            "êt",
+            "it"
+          ]
+        },
+        {
+          "id": "tv1-a-b27",
+          "name": "Bài 27. op, ap, ôp, ơp",
+          "sortOrder": 27,
+          "kind": "rimes",
+          "targets": [
+            "op",
+            "ap",
+            "ôp",
+            "ơp"
+          ]
+        },
+        {
+          "id": "tv1-a-b28",
+          "name": "Bài 28. up, ep, êp, ip",
+          "sortOrder": 28,
+          "kind": "rimes",
+          "targets": [
+            "up",
+            "ep",
+            "êp",
+            "ip"
+          ]
+        },
+        {
+          "id": "tv1-a-b29",
+          "name": "Bài 29. Ôn tập vần kết thúc bằng t, p",
+          "sortOrder": 29,
+          "kind": "rimes",
+          "targets": [
+            "ot",
+            "at",
+            "ôt",
+            "ơt",
+            "ut",
+            "ưt",
+            "et",
+            "êt",
+            "it",
+            "op",
+            "ap",
+            "ôp",
+            "ơp",
+            "up",
+            "ep",
+            "êp",
+            "ip"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c06",
+      "name": "Chủ đề 6: Vần kết thúc bằng c, ch, ng, nh",
+      "semester": "hk1",
+      "sortOrder": 6,
+      "lessons": [
+        {
+          "id": "tv1-a-b30",
+          "name": "Bài 30. ach, ich, êch",
+          "sortOrder": 30,
+          "kind": "rimes",
+          "targets": [
+            "ach",
+            "ich",
+            "êch"
+          ]
+        },
+        {
+          "id": "tv1-a-b31",
+          "name": "Bài 31. ang, ăng, âng",
+          "sortOrder": 31,
+          "kind": "rimes",
+          "targets": [
+            "ang",
+            "ăng",
+            "âng"
+          ]
+        },
+        {
+          "id": "tv1-a-b32",
+          "name": "Bài 32. ong, ông, ung, ưng",
+          "sortOrder": 32,
+          "kind": "rimes",
+          "targets": [
+            "ong",
+            "ông",
+            "ung",
+            "ưng"
+          ]
+        },
+        {
+          "id": "tv1-a-b33",
+          "name": "Bài 33. eng, iêng, anh, inh",
+          "sortOrder": 33,
+          "kind": "rimes",
+          "targets": [
+            "eng",
+            "iêng",
+            "anh",
+            "inh"
+          ]
+        },
+        {
+          "id": "tv1-a-b34",
+          "name": "Bài 34. iêc, ươc và luyện đọc mở rộng",
+          "sortOrder": 34,
+          "kind": "rimes",
+          "targets": [
+            "iêc",
+            "ươc",
+            "iêng",
+            "anh"
+          ]
+        },
+        {
+          "id": "tv1-a-b35",
+          "name": "Bài 35. Ôn tập c, ch, ng, nh",
+          "sortOrder": 35,
+          "kind": "rimes",
+          "targets": [
+            "ach",
+            "ich",
+            "êch",
+            "ang",
+            "ăng",
+            "âng",
+            "ong",
+            "ông",
+            "ung",
+            "ưng",
+            "eng",
+            "iêng",
+            "anh",
+            "inh",
+            "iêc",
+            "ươc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c07",
+      "name": "Chủ đề 7: Vần có nguyên âm đôi",
+      "semester": "hk1",
+      "sortOrder": 7,
+      "lessons": [
+        {
+          "id": "tv1-a-b36",
+          "name": "Bài 36. uôi, ươi, uôm, ươm",
+          "sortOrder": 36,
+          "kind": "rimes",
+          "targets": [
+            "uôi",
+            "ươi",
+            "uôm",
+            "ươm"
+          ]
+        },
+        {
+          "id": "tv1-a-b37",
+          "name": "Bài 37. uôn, ươn, uông, ương",
+          "sortOrder": 37,
+          "kind": "rimes",
+          "targets": [
+            "uôn",
+            "ươn",
+            "uông",
+            "ương"
+          ]
+        },
+        {
+          "id": "tv1-a-b38",
+          "name": "Bài 38. uôt, ươt, uôp, ươp",
+          "sortOrder": 38,
+          "kind": "rimes",
+          "targets": [
+            "uôt",
+            "ươt",
+            "uôp",
+            "ươp"
+          ]
+        },
+        {
+          "id": "tv1-a-b39",
+          "name": "Bài 39. Ôn tập vần có nguyên âm đôi",
+          "sortOrder": 39,
+          "kind": "rimes",
+          "targets": [
+            "uôi",
+            "ươi",
+            "uôm",
+            "ươm",
+            "uôn",
+            "ươn",
+            "uông",
+            "ương",
+            "uôt",
+            "ươt",
+            "uôp",
+            "ươp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c08",
+      "name": "Chủ đề 8: Vần có âm đệm và luyện đọc tổng hợp",
+      "semester": "hk1",
+      "sortOrder": 8,
+      "lessons": [
+        {
+          "id": "tv1-a-b40",
+          "name": "Bài 40. oang, oac, oanh, oach",
+          "sortOrder": 40,
+          "kind": "rimes",
+          "targets": [
+            "oang",
+            "oac",
+            "oanh",
+            "oach"
+          ]
+        },
+        {
+          "id": "tv1-a-b41",
+          "name": "Bài 41. oat, oăt, uân, uât",
+          "sortOrder": 41,
+          "kind": "rimes",
+          "targets": [
+            "oat",
+            "oăt",
+            "uân",
+            "uât"
+          ]
+        },
+        {
+          "id": "tv1-a-b42",
+          "name": "Bài 42. oai, oay, uya, uyên, uyêt",
+          "sortOrder": 42,
+          "kind": "rimes",
+          "targets": [
+            "oai",
+            "oay",
+            "uya",
+            "uyên",
+            "uyêt"
+          ]
+        },
+        {
+          "id": "tv1-a-b43",
+          "name": "Bài 43. Ôn tập âm đệm",
+          "sortOrder": 43,
+          "kind": "rimes",
+          "targets": [
+            "oang",
+            "oac",
+            "oanh",
+            "oach",
+            "oat",
+            "oăt",
+            "uân",
+            "uât",
+            "oai",
+            "oay",
+            "uya",
+            "uyên",
+            "uyêt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c09",
+      "name": "Chủ đề 9: Ôn tập học kì 1",
+      "semester": "hk1",
+      "sortOrder": 9,
+      "lessons": [
+        {
+          "id": "tv1-a-b44",
+          "name": "Bài 44. Ôn tập âm, vần và dấu thanh",
+          "sortOrder": 44,
+          "kind": "rimes",
+          "targets": [
+            "a",
+            "e",
+            "ê",
+            "o",
+            "ô",
+            "ơ",
+            "i",
+            "u",
+            "ư",
+            "ia",
+            "ua",
+            "ưa",
+            "oi",
+            "ai",
+            "ôi",
+            "ơi",
+            "ui",
+            "ưi",
+            "ay",
+            "ây",
+            "ao",
+            "eo",
+            "au",
+            "âu",
+            "iu",
+            "ưu",
+            "on",
+            "an",
+            "ôn",
+            "ơn",
+            "un",
+            "en",
+            "ên",
+            "in",
+            "am",
+            "ăm",
+            "âm",
+            "em",
+            "êm",
+            "im",
+            "om",
+            "ôm",
+            "ơm",
+            "um",
+            "ưm",
+            "ot",
+            "at",
+            "ôt",
+            "ơt",
+            "ut",
+            "ưt",
+            "et",
+            "êt",
+            "it",
+            "op",
+            "ap",
+            "ôp",
+            "ơp",
+            "up",
+            "ep",
+            "êp",
+            "ip",
+            "ach",
+            "ich",
+            "êch",
+            "ang",
+            "ăng",
+            "âng",
+            "ong",
+            "ông",
+            "ung",
+            "ưng",
+            "eng",
+            "iêng",
+            "anh",
+            "inh",
+            "iêc",
+            "ươc",
+            "uôi",
+            "ươi",
+            "uôm",
+            "ươm",
+            "uôn",
+            "ươn",
+            "uông",
+            "ương",
+            "uôt",
+            "ươt",
+            "uôp",
+            "ươp",
+            "oang",
+            "oac",
+            "oanh",
+            "oach",
+            "oat",
+            "oăt",
+            "uân",
+            "uât",
+            "oai",
+            "oay",
+            "uya",
+            "uyên",
+            "uyêt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c10",
+      "name": "Chủ đề 10: Tôi và các bạn",
+      "semester": "hk2",
+      "sortOrder": 10,
+      "lessons": [
+        {
+          "id": "tv1-a-b45",
+          "name": "Bài 45. Luyện đọc và đọc hiểu – Tôi và các bạn",
+          "sortOrder": 45,
+          "kind": "reading",
+          "targets": {
+            "theme": 0,
+            "part": 1
+          }
+        },
+        {
+          "id": "tv1-a-b46",
+          "name": "Bài 46. Từ ngữ và câu – Tôi và các bạn",
+          "sortOrder": 46,
+          "kind": "language",
+          "targets": {
+            "theme": 0
+          }
+        },
+        {
+          "id": "tv1-a-b47",
+          "name": "Bài 47. Đọc hiểu mở rộng – Tôi và các bạn",
+          "sortOrder": 47,
+          "kind": "reading",
+          "targets": {
+            "theme": 0,
+            "part": 2
+          }
+        },
+        {
+          "id": "tv1-a-b48",
+          "name": "Bài 48. Ôn tập chủ đề – Tôi và các bạn",
+          "sortOrder": 48,
+          "kind": "reading",
+          "targets": {
+            "theme": 0,
+            "part": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c11",
+      "name": "Chủ đề 11: Mái ấm gia đình",
+      "semester": "hk2",
+      "sortOrder": 11,
+      "lessons": [
+        {
+          "id": "tv1-a-b49",
+          "name": "Bài 49. Luyện đọc và đọc hiểu – Mái ấm gia đình",
+          "sortOrder": 49,
+          "kind": "reading",
+          "targets": {
+            "theme": 1,
+            "part": 1
+          }
+        },
+        {
+          "id": "tv1-a-b50",
+          "name": "Bài 50. Từ ngữ và câu – Mái ấm gia đình",
+          "sortOrder": 50,
+          "kind": "language",
+          "targets": {
+            "theme": 1
+          }
+        },
+        {
+          "id": "tv1-a-b51",
+          "name": "Bài 51. Đọc hiểu mở rộng – Mái ấm gia đình",
+          "sortOrder": 51,
+          "kind": "reading",
+          "targets": {
+            "theme": 1,
+            "part": 2
+          }
+        },
+        {
+          "id": "tv1-a-b52",
+          "name": "Bài 52. Ôn tập chủ đề – Mái ấm gia đình",
+          "sortOrder": 52,
+          "kind": "reading",
+          "targets": {
+            "theme": 1,
+            "part": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c12",
+      "name": "Chủ đề 12: Mái trường mến yêu",
+      "semester": "hk2",
+      "sortOrder": 12,
+      "lessons": [
+        {
+          "id": "tv1-a-b53",
+          "name": "Bài 53. Luyện đọc và đọc hiểu – Mái trường mến yêu",
+          "sortOrder": 53,
+          "kind": "reading",
+          "targets": {
+            "theme": 2,
+            "part": 1
+          }
+        },
+        {
+          "id": "tv1-a-b54",
+          "name": "Bài 54. Từ ngữ và câu – Mái trường mến yêu",
+          "sortOrder": 54,
+          "kind": "language",
+          "targets": {
+            "theme": 2
+          }
+        },
+        {
+          "id": "tv1-a-b55",
+          "name": "Bài 55. Đọc hiểu mở rộng – Mái trường mến yêu",
+          "sortOrder": 55,
+          "kind": "reading",
+          "targets": {
+            "theme": 2,
+            "part": 2
+          }
+        },
+        {
+          "id": "tv1-a-b56",
+          "name": "Bài 56. Ôn tập chủ đề – Mái trường mến yêu",
+          "sortOrder": 56,
+          "kind": "reading",
+          "targets": {
+            "theme": 2,
+            "part": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c13",
+      "name": "Chủ đề 13: Điều em cần biết",
+      "semester": "hk2",
+      "sortOrder": 13,
+      "lessons": [
+        {
+          "id": "tv1-a-b57",
+          "name": "Bài 57. Luyện đọc và đọc hiểu – Điều em cần biết",
+          "sortOrder": 57,
+          "kind": "reading",
+          "targets": {
+            "theme": 3,
+            "part": 1
+          }
+        },
+        {
+          "id": "tv1-a-b58",
+          "name": "Bài 58. Từ ngữ và câu – Điều em cần biết",
+          "sortOrder": 58,
+          "kind": "language",
+          "targets": {
+            "theme": 3
+          }
+        },
+        {
+          "id": "tv1-a-b59",
+          "name": "Bài 59. Đọc hiểu mở rộng – Điều em cần biết",
+          "sortOrder": 59,
+          "kind": "reading",
+          "targets": {
+            "theme": 3,
+            "part": 2
+          }
+        },
+        {
+          "id": "tv1-a-b60",
+          "name": "Bài 60. Ôn tập chủ đề – Điều em cần biết",
+          "sortOrder": 60,
+          "kind": "reading",
+          "targets": {
+            "theme": 3,
+            "part": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c14",
+      "name": "Chủ đề 14: Bài học từ cuộc sống",
+      "semester": "hk2",
+      "sortOrder": 14,
+      "lessons": [
+        {
+          "id": "tv1-a-b61",
+          "name": "Bài 61. Luyện đọc và đọc hiểu – Bài học từ cuộc sống",
+          "sortOrder": 61,
+          "kind": "reading",
+          "targets": {
+            "theme": 4,
+            "part": 1
+          }
+        },
+        {
+          "id": "tv1-a-b62",
+          "name": "Bài 62. Từ ngữ và câu – Bài học từ cuộc sống",
+          "sortOrder": 62,
+          "kind": "language",
+          "targets": {
+            "theme": 4
+          }
+        },
+        {
+          "id": "tv1-a-b63",
+          "name": "Bài 63. Đọc hiểu mở rộng – Bài học từ cuộc sống",
+          "sortOrder": 63,
+          "kind": "reading",
+          "targets": {
+            "theme": 4,
+            "part": 2
+          }
+        },
+        {
+          "id": "tv1-a-b64",
+          "name": "Bài 64. Ôn tập chủ đề – Bài học từ cuộc sống",
+          "sortOrder": 64,
+          "kind": "reading",
+          "targets": {
+            "theme": 4,
+            "part": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c15",
+      "name": "Chủ đề 15: Thiên nhiên kì thú",
+      "semester": "hk2",
+      "sortOrder": 15,
+      "lessons": [
+        {
+          "id": "tv1-a-b65",
+          "name": "Bài 65. Luyện đọc và đọc hiểu – Thiên nhiên kì thú",
+          "sortOrder": 65,
+          "kind": "reading",
+          "targets": {
+            "theme": 5,
+            "part": 1
+          }
+        },
+        {
+          "id": "tv1-a-b66",
+          "name": "Bài 66. Từ ngữ và câu – Thiên nhiên kì thú",
+          "sortOrder": 66,
+          "kind": "language",
+          "targets": {
+            "theme": 5
+          }
+        },
+        {
+          "id": "tv1-a-b67",
+          "name": "Bài 67. Đọc hiểu mở rộng – Thiên nhiên kì thú",
+          "sortOrder": 67,
+          "kind": "reading",
+          "targets": {
+            "theme": 5,
+            "part": 2
+          }
+        },
+        {
+          "id": "tv1-a-b68",
+          "name": "Bài 68. Ôn tập chủ đề – Thiên nhiên kì thú",
+          "sortOrder": 68,
+          "kind": "reading",
+          "targets": {
+            "theme": 5,
+            "part": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c16",
+      "name": "Chủ đề 16: Thế giới trong mắt em",
+      "semester": "hk2",
+      "sortOrder": 16,
+      "lessons": [
+        {
+          "id": "tv1-a-b69",
+          "name": "Bài 69. Luyện đọc và đọc hiểu – Thế giới trong mắt em",
+          "sortOrder": 69,
+          "kind": "reading",
+          "targets": {
+            "theme": 6,
+            "part": 1
+          }
+        },
+        {
+          "id": "tv1-a-b70",
+          "name": "Bài 70. Từ ngữ và câu – Thế giới trong mắt em",
+          "sortOrder": 70,
+          "kind": "language",
+          "targets": {
+            "theme": 6
+          }
+        },
+        {
+          "id": "tv1-a-b71",
+          "name": "Bài 71. Đọc hiểu mở rộng – Thế giới trong mắt em",
+          "sortOrder": 71,
+          "kind": "reading",
+          "targets": {
+            "theme": 6,
+            "part": 2
+          }
+        },
+        {
+          "id": "tv1-a-b72",
+          "name": "Bài 72. Ôn tập chủ đề – Thế giới trong mắt em",
+          "sortOrder": 72,
+          "kind": "reading",
+          "targets": {
+            "theme": 6,
+            "part": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c17",
+      "name": "Chủ đề 17: Đất nước và con người",
+      "semester": "hk2",
+      "sortOrder": 17,
+      "lessons": [
+        {
+          "id": "tv1-a-b73",
+          "name": "Bài 73. Luyện đọc và đọc hiểu – Đất nước và con người",
+          "sortOrder": 73,
+          "kind": "reading",
+          "targets": {
+            "theme": 7,
+            "part": 1
+          }
+        },
+        {
+          "id": "tv1-a-b74",
+          "name": "Bài 74. Từ ngữ và câu – Đất nước và con người",
+          "sortOrder": 74,
+          "kind": "language",
+          "targets": {
+            "theme": 7
+          }
+        },
+        {
+          "id": "tv1-a-b75",
+          "name": "Bài 75. Đọc hiểu mở rộng – Đất nước và con người",
+          "sortOrder": 75,
+          "kind": "reading",
+          "targets": {
+            "theme": 7,
+            "part": 2
+          }
+        },
+        {
+          "id": "tv1-a-b76",
+          "name": "Bài 76. Ôn tập chủ đề – Đất nước và con người",
+          "sortOrder": 76,
+          "kind": "reading",
+          "targets": {
+            "theme": 7,
+            "part": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "tv1-a-c18",
+      "name": "Chủ đề 18: Ôn tập cuối năm",
+      "semester": "hk2",
+      "sortOrder": 18,
+      "lessons": [
+        {
+          "id": "tv1-a-b77",
+          "name": "Bài 77. Ôn tập đọc hiểu, từ và câu",
+          "sortOrder": 77,
+          "kind": "reading",
+          "targets": {
+            "theme": -1,
+            "part": 4
+          }
+        }
+      ]
+    }
+  ]
+}

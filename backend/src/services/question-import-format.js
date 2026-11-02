@@ -52,6 +52,11 @@ function splitAnswerLines(value) {
 function answerToChoiceKeys(answerText, options) {
   const answer = clean(answerText);
   if (!answer) return [];
+  // A–E in the answer field denote option labels, even when a Vietnamese
+  // letter exercise has an option whose text is itself "A", "B", etc.
+  if (/^[a-e](?:\s*[,;/]\s*[a-e])*$/i.test(answer)) {
+    return [...new Set(answer.toLowerCase().match(/[a-e]/g))];
+  }
   const directText = options.find((option) => normalizeLabel(option.text) === normalizeLabel(answer));
   if (directText) return [directText.key];
   const letters = [...answer.matchAll(/(?:^|[\s,;/(])([a-e])(?=$|[\s,;/)])/gi)]

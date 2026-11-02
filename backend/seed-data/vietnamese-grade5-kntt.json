@@ -1,0 +1,667 @@
+{
+  "book": "Tiếng Việt 5 – Kết nối tri thức với cuộc sống",
+  "subjectId": "tieng-viet",
+  "grade": 5,
+  "yearId": "2026-2027",
+  "note": "Mục lục đối chiếu sách; bài tập và văn bản đọc hiểu bổ trợ tự soạn, không chép nguyên văn SGK. Mỗi bài 50 câu; có thêm các bộ ôn tập giữa/cuối học kì.",
+  "sources": [
+    "https://sachdientu.nxbgd.vn/thu-vien-so/doc-sach/sgv-tieng-viet-tap-1.4502984966",
+    "https://sachdientu.nxbgd.vn/thu-vien-so/doc-sach/sgv-tieng-viet-tap-2.4502985144"
+  ],
+  "chapters": [
+    {
+      "id": "kntt-tv-5-hk1-c01",
+      "name": "Thế giới tuổi thơ",
+      "semester": "hk1",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "id": "kntt-tv-5-hk1-b01",
+          "name": "Bài 1. Thanh âm của gió",
+          "title": "Thanh âm của gió",
+          "numberInVolume": 1,
+          "volume": 1,
+          "sortOrder": 1,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b02",
+          "name": "Bài 2. Cánh đồng hoa",
+          "title": "Cánh đồng hoa",
+          "numberInVolume": 2,
+          "volume": 1,
+          "sortOrder": 2,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b03",
+          "name": "Bài 3. Tuổi Ngựa",
+          "title": "Tuổi Ngựa",
+          "numberInVolume": 3,
+          "volume": 1,
+          "sortOrder": 3,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b04",
+          "name": "Bài 4. Bến sông tuổi thơ",
+          "title": "Bến sông tuổi thơ",
+          "numberInVolume": 4,
+          "volume": 1,
+          "sortOrder": 4,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b05",
+          "name": "Bài 5. Tiếng hạt nảy mầm",
+          "title": "Tiếng hạt nảy mầm",
+          "numberInVolume": 5,
+          "volume": 1,
+          "sortOrder": 5,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b06",
+          "name": "Bài 6. Ngôi sao sân cỏ",
+          "title": "Ngôi sao sân cỏ",
+          "numberInVolume": 6,
+          "volume": 1,
+          "sortOrder": 6,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b07",
+          "name": "Bài 7. Bộ sưu tập độc đáo",
+          "title": "Bộ sưu tập độc đáo",
+          "numberInVolume": 7,
+          "volume": 1,
+          "sortOrder": 7,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b08",
+          "name": "Bài 8. Hành tinh kì lạ",
+          "title": "Hành tinh kì lạ",
+          "numberInVolume": 8,
+          "volume": 1,
+          "sortOrder": 8,
+          "kind": "lesson"
+        }
+      ]
+    },
+    {
+      "id": "kntt-tv-5-hk1-c02",
+      "name": "Thiên nhiên kì thú",
+      "semester": "hk1",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "id": "kntt-tv-5-hk1-b09",
+          "name": "Bài 9. Trước cổng trời",
+          "title": "Trước cổng trời",
+          "numberInVolume": 9,
+          "volume": 1,
+          "sortOrder": 9,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b10",
+          "name": "Bài 10. Kì diệu rừng xanh",
+          "title": "Kì diệu rừng xanh",
+          "numberInVolume": 10,
+          "volume": 1,
+          "sortOrder": 10,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b11",
+          "name": "Bài 11. Hang Sơn Đoòng - những điều kì thú",
+          "title": "Hang Sơn Đoòng - những điều kì thú",
+          "numberInVolume": 11,
+          "volume": 1,
+          "sortOrder": 11,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b12",
+          "name": "Bài 12. Những hòn đảo trên vịnh Hạ Long",
+          "title": "Những hòn đảo trên vịnh Hạ Long",
+          "numberInVolume": 12,
+          "volume": 1,
+          "sortOrder": 12,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b13",
+          "name": "Bài 13. Mầm non",
+          "title": "Mầm non",
+          "numberInVolume": 13,
+          "volume": 1,
+          "sortOrder": 13,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b14",
+          "name": "Bài 14. Những ngọn núi nóng rẫy",
+          "title": "Những ngọn núi nóng rẫy",
+          "numberInVolume": 14,
+          "volume": 1,
+          "sortOrder": 14,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b15",
+          "name": "Bài 15. Bài ca về mặt trời",
+          "title": "Bài ca về mặt trời",
+          "numberInVolume": 15,
+          "volume": 1,
+          "sortOrder": 15,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b16",
+          "name": "Bài 16. Xin chào, Xa-ha-ra",
+          "title": "Xin chào, Xa-ha-ra",
+          "numberInVolume": 16,
+          "volume": 1,
+          "sortOrder": 16,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-review-mid",
+          "name": "Ôn tập và đánh giá giữa học kì 1",
+          "title": "Ôn tập giữa học kì",
+          "volume": 1,
+          "sortOrder": 17,
+          "kind": "review"
+        }
+      ]
+    },
+    {
+      "id": "kntt-tv-5-hk1-c03",
+      "name": "Trên con đường học tập",
+      "semester": "hk1",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "id": "kntt-tv-5-hk1-b17",
+          "name": "Bài 17. Thư gửi các học sinh",
+          "title": "Thư gửi các học sinh",
+          "numberInVolume": 17,
+          "volume": 1,
+          "sortOrder": 18,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b18",
+          "name": "Bài 18. Tấm gương tự học",
+          "title": "Tấm gương tự học",
+          "numberInVolume": 18,
+          "volume": 1,
+          "sortOrder": 19,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b19",
+          "name": "Bài 19. Trải nghiệm để sáng tạo",
+          "title": "Trải nghiệm để sáng tạo",
+          "numberInVolume": 19,
+          "volume": 1,
+          "sortOrder": 20,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b20",
+          "name": "Bài 20. Khổ luyện thành tài",
+          "title": "Khổ luyện thành tài",
+          "numberInVolume": 20,
+          "volume": 1,
+          "sortOrder": 21,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b21",
+          "name": "Bài 21. Thế giới trong trang sách",
+          "title": "Thế giới trong trang sách",
+          "numberInVolume": 21,
+          "volume": 1,
+          "sortOrder": 22,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b22",
+          "name": "Bài 22. Từ những câu chuyện ấu thơ",
+          "title": "Từ những câu chuyện ấu thơ",
+          "numberInVolume": 22,
+          "volume": 1,
+          "sortOrder": 23,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b23",
+          "name": "Bài 23. Giới thiệu sách Dế Mèn phiêu lưu kí",
+          "title": "Giới thiệu sách Dế Mèn phiêu lưu kí",
+          "numberInVolume": 23,
+          "volume": 1,
+          "sortOrder": 24,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b24",
+          "name": "Bài 24. Tinh thần học tập của nhà Phi-lít",
+          "title": "Tinh thần học tập của nhà Phi-lít",
+          "numberInVolume": 24,
+          "volume": 1,
+          "sortOrder": 25,
+          "kind": "lesson"
+        }
+      ]
+    },
+    {
+      "id": "kntt-tv-5-hk1-c04",
+      "name": "Nghệ thuật muôn màu",
+      "semester": "hk1",
+      "sortOrder": 4,
+      "lessons": [
+        {
+          "id": "kntt-tv-5-hk1-b25",
+          "name": "Bài 25. Tiếng đàn ba-la-lai-ca trên sông Đà",
+          "title": "Tiếng đàn ba-la-lai-ca trên sông Đà",
+          "numberInVolume": 25,
+          "volume": 1,
+          "sortOrder": 26,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b26",
+          "name": "Bài 26. Trí tưởng tượng phong phú",
+          "title": "Trí tưởng tượng phong phú",
+          "numberInVolume": 26,
+          "volume": 1,
+          "sortOrder": 27,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b27",
+          "name": "Bài 27. Tranh làng Hồ",
+          "title": "Tranh làng Hồ",
+          "numberInVolume": 27,
+          "volume": 1,
+          "sortOrder": 28,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b28",
+          "name": "Bài 28. Tập hát quan họ",
+          "title": "Tập hát quan họ",
+          "numberInVolume": 28,
+          "volume": 1,
+          "sortOrder": 29,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b29",
+          "name": "Bài 29. Phim hoạt hình Chú ốc sên bay",
+          "title": "Phim hoạt hình Chú ốc sên bay",
+          "numberInVolume": 29,
+          "volume": 1,
+          "sortOrder": 30,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b30",
+          "name": "Bài 30. Nghệ thuật múa ba lê",
+          "title": "Nghệ thuật múa ba lê",
+          "numberInVolume": 30,
+          "volume": 1,
+          "sortOrder": 31,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b31",
+          "name": "Bài 31. Một ngôi chùa độc đáo",
+          "title": "Một ngôi chùa độc đáo",
+          "numberInVolume": 31,
+          "volume": 1,
+          "sortOrder": 32,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-b32",
+          "name": "Bài 32. Sự tích chú Tễu",
+          "title": "Sự tích chú Tễu",
+          "numberInVolume": 32,
+          "volume": 1,
+          "sortOrder": 33,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk1-review-end",
+          "name": "Ôn tập và đánh giá cuối học kì 1",
+          "title": "Ôn tập cuối học kì",
+          "volume": 1,
+          "sortOrder": 34,
+          "kind": "review"
+        }
+      ]
+    },
+    {
+      "id": "kntt-tv-5-hk2-c05",
+      "name": "Vẻ đẹp cuộc sống",
+      "semester": "hk2",
+      "sortOrder": 5,
+      "lessons": [
+        {
+          "id": "kntt-tv-5-hk2-b01",
+          "name": "Bài 1. Tiếng hát của người đá · Tập 2",
+          "title": "Tiếng hát của người đá",
+          "numberInVolume": 1,
+          "volume": 2,
+          "sortOrder": 35,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b02",
+          "name": "Bài 2. Khúc hát ru những em bé lớn trên lưng mẹ · Tập 2",
+          "title": "Khúc hát ru những em bé lớn trên lưng mẹ",
+          "numberInVolume": 2,
+          "volume": 2,
+          "sortOrder": 36,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b03",
+          "name": "Bài 3. Hạt gạo làng ta · Tập 2",
+          "title": "Hạt gạo làng ta",
+          "numberInVolume": 3,
+          "volume": 2,
+          "sortOrder": 37,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b04",
+          "name": "Bài 4. Hộp quà màu thiên thanh · Tập 2",
+          "title": "Hộp quà màu thiên thanh",
+          "numberInVolume": 4,
+          "volume": 2,
+          "sortOrder": 38,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b05",
+          "name": "Bài 5. Giỏ hoa tháng Năm · Tập 2",
+          "title": "Giỏ hoa tháng Năm",
+          "numberInVolume": 5,
+          "volume": 2,
+          "sortOrder": 39,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b06",
+          "name": "Bài 6. Thư của bố · Tập 2",
+          "title": "Thư của bố",
+          "numberInVolume": 6,
+          "volume": 2,
+          "sortOrder": 40,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b07",
+          "name": "Bài 7. Đoàn thuyền đánh cá · Tập 2",
+          "title": "Đoàn thuyền đánh cá",
+          "numberInVolume": 7,
+          "volume": 2,
+          "sortOrder": 41,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b08",
+          "name": "Bài 8. Khu rừng của Mát · Tập 2",
+          "title": "Khu rừng của Mát",
+          "numberInVolume": 8,
+          "volume": 2,
+          "sortOrder": 42,
+          "kind": "lesson"
+        }
+      ]
+    },
+    {
+      "id": "kntt-tv-5-hk2-c06",
+      "name": "Hương sắc trăm miền",
+      "semester": "hk2",
+      "sortOrder": 6,
+      "lessons": [
+        {
+          "id": "kntt-tv-5-hk2-b09",
+          "name": "Bài 9. Hội thổi cơm thi ở Đồng Vân · Tập 2",
+          "title": "Hội thổi cơm thi ở Đồng Vân",
+          "numberInVolume": 9,
+          "volume": 2,
+          "sortOrder": 43,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b10",
+          "name": "Bài 10. Những búp chè trên cây cổ thụ · Tập 2",
+          "title": "Những búp chè trên cây cổ thụ",
+          "numberInVolume": 10,
+          "volume": 2,
+          "sortOrder": 44,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b11",
+          "name": "Bài 11. Hương cốm mùa thu · Tập 2",
+          "title": "Hương cốm mùa thu",
+          "numberInVolume": 11,
+          "volume": 2,
+          "sortOrder": 45,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b12",
+          "name": "Bài 12. Vũ điệu trên nền thổ cẩm · Tập 2",
+          "title": "Vũ điệu trên nền thổ cẩm",
+          "numberInVolume": 12,
+          "volume": 2,
+          "sortOrder": 46,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b13",
+          "name": "Bài 13. Đàn t'rưng - tiếng ca đại ngàn · Tập 2",
+          "title": "Đàn t'rưng - tiếng ca đại ngàn",
+          "numberInVolume": 13,
+          "volume": 2,
+          "sortOrder": 47,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b14",
+          "name": "Bài 14. Đường quê Đồng Tháp Mười · Tập 2",
+          "title": "Đường quê Đồng Tháp Mười",
+          "numberInVolume": 14,
+          "volume": 2,
+          "sortOrder": 48,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b15",
+          "name": "Bài 15. Xuồng ba lá quê tôi · Tập 2",
+          "title": "Xuồng ba lá quê tôi",
+          "numberInVolume": 15,
+          "volume": 2,
+          "sortOrder": 49,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b16",
+          "name": "Bài 16. Về thăm Đất Mũi · Tập 2",
+          "title": "Về thăm Đất Mũi",
+          "numberInVolume": 16,
+          "volume": 2,
+          "sortOrder": 50,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-review-mid",
+          "name": "Ôn tập và đánh giá giữa học kì 2",
+          "title": "Ôn tập giữa học kì",
+          "volume": 2,
+          "sortOrder": 51,
+          "kind": "review"
+        }
+      ]
+    },
+    {
+      "id": "kntt-tv-5-hk2-c07",
+      "name": "Tiếp bước cha ông",
+      "semester": "hk2",
+      "sortOrder": 7,
+      "lessons": [
+        {
+          "id": "kntt-tv-5-hk2-b17",
+          "name": "Bài 17. Nghìn năm văn hiến · Tập 2",
+          "title": "Nghìn năm văn hiến",
+          "numberInVolume": 17,
+          "volume": 2,
+          "sortOrder": 52,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b18",
+          "name": "Bài 18. Người thầy của muôn đời · Tập 2",
+          "title": "Người thầy của muôn đời",
+          "numberInVolume": 18,
+          "volume": 2,
+          "sortOrder": 53,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b19",
+          "name": "Bài 19. Danh y Tuệ Tĩnh · Tập 2",
+          "title": "Danh y Tuệ Tĩnh",
+          "numberInVolume": 19,
+          "volume": 2,
+          "sortOrder": 54,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b20",
+          "name": "Bài 20. Cụ Đồ Chiểu · Tập 2",
+          "title": "Cụ Đồ Chiểu",
+          "numberInVolume": 20,
+          "volume": 2,
+          "sortOrder": 55,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b21",
+          "name": "Bài 21. Anh hùng Lao động Trần Đại Nghĩa · Tập 2",
+          "title": "Anh hùng Lao động Trần Đại Nghĩa",
+          "numberInVolume": 21,
+          "volume": 2,
+          "sortOrder": 56,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b22",
+          "name": "Bài 22. Bộ đội về làng · Tập 2",
+          "title": "Bộ đội về làng",
+          "numberInVolume": 22,
+          "volume": 2,
+          "sortOrder": 57,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b23",
+          "name": "Bài 23. Về ngôi nhà đang xây · Tập 2",
+          "title": "Về ngôi nhà đang xây",
+          "numberInVolume": 23,
+          "volume": 2,
+          "sortOrder": 58,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b24",
+          "name": "Bài 24. Việt Nam quê hương ta · Tập 2",
+          "title": "Việt Nam quê hương ta",
+          "numberInVolume": 24,
+          "volume": 2,
+          "sortOrder": 59,
+          "kind": "lesson"
+        }
+      ]
+    },
+    {
+      "id": "kntt-tv-5-hk2-c08",
+      "name": "Thế giới của chúng ta",
+      "semester": "hk2",
+      "sortOrder": 8,
+      "lessons": [
+        {
+          "id": "kntt-tv-5-hk2-b25",
+          "name": "Bài 25. Bài ca trái đất · Tập 2",
+          "title": "Bài ca trái đất",
+          "numberInVolume": 25,
+          "volume": 2,
+          "sortOrder": 60,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b26",
+          "name": "Bài 26. Những con hạc giấy · Tập 2",
+          "title": "Những con hạc giấy",
+          "numberInVolume": 26,
+          "volume": 2,
+          "sortOrder": 61,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b27",
+          "name": "Bài 27. Một người hùng thầm lặng · Tập 2",
+          "title": "Một người hùng thầm lặng",
+          "numberInVolume": 27,
+          "volume": 2,
+          "sortOrder": 62,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b28",
+          "name": "Bài 28. Giờ Trái Đất · Tập 2",
+          "title": "Giờ Trái Đất",
+          "numberInVolume": 28,
+          "volume": 2,
+          "sortOrder": 63,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b29",
+          "name": "Bài 29. Điện thoại di động · Tập 2",
+          "title": "Điện thoại di động",
+          "numberInVolume": 29,
+          "volume": 2,
+          "sortOrder": 64,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-b30",
+          "name": "Bài 30. Thành phố thông minh Mát-xđa · Tập 2",
+          "title": "Thành phố thông minh Mát-xđa",
+          "numberInVolume": 30,
+          "volume": 2,
+          "sortOrder": 65,
+          "kind": "lesson"
+        },
+        {
+          "id": "kntt-tv-5-hk2-review-end",
+          "name": "Ôn tập và đánh giá cuối năm học",
+          "title": "Ôn tập cuối học kì",
+          "volume": 2,
+          "sortOrder": 66,
+          "kind": "review"
+        }
+      ]
+    }
+  ]
+}

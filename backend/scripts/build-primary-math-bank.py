@@ -714,8 +714,10 @@ def paragraph(text,style=None):
     return f'<w:p>{prop}<w:r><w:t xml:space="preserve">{escape(text)}</w:t></w:r></w:p>'
 
 
-def write_docx(file,grade,chapter,lesson,questions):
-    lines=[paragraph(f'TOÁN LỚP {grade} — {lesson["name"]}', 'Title'),paragraph('Bộ 50 câu hỏi tự soạn — Bản nháp để giáo viên duyệt'),paragraph(f'Môn: Toán'),paragraph(f'Lớp: {grade}'),paragraph('Học kì: '+('1' if chapter['semester']=='hk1' else '2')),paragraph('Chủ đề: '+chapter['name']),paragraph('Bài học: '+lesson['name']),paragraph('Gồm trắc nghiệm và điền đáp án; có đáp án và lời giải ngay sau mỗi câu.'),paragraph('')]
+def write_docx(file,grade,chapter,lesson,questions,subject_label='Toán',extra_notes=None):
+    lines=[paragraph(f'{subject_label.upper()} LỚP {grade} — {lesson["name"]}', 'Title'),paragraph('Bộ 50 câu hỏi tự soạn — Bản nháp để giáo viên duyệt'),paragraph(f'Môn: {subject_label}'),paragraph(f'Lớp: {grade}'),paragraph('Học kì: '+('1' if chapter['semester']=='hk1' else '2')),paragraph('Chủ đề: '+chapter['name']),paragraph('Bài học: '+lesson['name']),paragraph('Gồm trắc nghiệm và điền đáp án; có đáp án và lời giải ngay sau mỗi câu.'),paragraph('')]
+    if subject_label=='Tiếng Việt':lines.extend([paragraph('Văn bản và câu hỏi luyện tập bổ trợ tự soạn; không phải bản chép nguyên văn bài đọc trong SGK.'+(' Phụ huynh có thể đọc đề cho trẻ ở giai đoạn học âm/chữ.' if grade==1 else '')),paragraph('')])
+    for note in extra_notes or []:lines.append(paragraph(note))
     for i,q in enumerate(questions,1):
         lines.append(paragraph(f'Câu {i}. {q["prompt"]}','Heading2'))
         for o in q['options']:lines.append(paragraph(o['key'].upper()+'. '+o['text']))

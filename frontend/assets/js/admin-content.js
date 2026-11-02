@@ -6,9 +6,10 @@ import {initCurriculum,selectedScope,loadCurriculum,selectContentLesson} from '.
 import {store} from './admin-questions-context.js';
 import {openImport} from './admin-questions-import.js';
 import {openWordHistory} from './admin-word-history.js';
+import {SUBJECT_NAMES as subjects} from './primary-subjects.js';
 const root=document.querySelector('#content-list'),notice=document.querySelector('#content-hub-error'),editor=document.querySelector('#content-worksheets'),filters=document.querySelector('#content-filters');
 let page=1,pages=1,requestNumber=0,openedLesson=null;
-const status={draft:'Nháp',published:'Đã đăng',hidden:'Đang ẩn'},subjects={toan:'Toán','tieng-viet':'Tiếng Việt','tieng-anh':'Tiếng Anh'};
+const status={draft:'Nháp',published:'Đã đăng',hidden:'Đang ẩn'};
 const button=(text,fn)=>el('button',{type:'button',class:'btn btn-ghost btn-sm',text,onclick:async event=>{const b=event.currentTarget;b.disabled=true;try{await fn();}catch(e){notice.textContent=e.message;}finally{b.disabled=false;}}});
 function showEditor(){editor.hidden=false;document.querySelector('#ws-authoring').hidden=false;document.querySelector('#ws-reviews').hidden=true;editor.scrollIntoView({block:'start',behavior:'smooth'});}
 async function publishAll(lessonId){

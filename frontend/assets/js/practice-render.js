@@ -7,6 +7,7 @@ import {
   store,
 } from './practice-context.js';
 
+let topicRequest=0;
 function renderTabs() {
   elements.subjectTabs.innerHTML = SUBJECTS.map(([id, name, icon]) => (
     `<button class="tab" type="button" role="tab" data-subject="${id}" aria-selected="${id === store.subjectId}">${icon} ${name}</button>`
@@ -14,11 +15,13 @@ function renderTabs() {
 }
 
 export async function loadTopics() {
+  const currentRequest=++topicRequest;
   renderTabs();
   const gradeLabel=document.getElementById('practice-grade');if(gradeLabel)gradeLabel.textContent='· LỚP '+store.profile.grade;
   elements.topicList.innerHTML = '<div class="loading">Đang tải chủ đề…</div>';
   try {
     const payload = await api(`/api/v1/catalog/topics?subjectId=${store.subjectId}&grade=${store.profile.grade}`);
+    if(currentRequest!==topicRequest)return;
     if (payload.data.length === 0) {
       elements.topicList.innerHTML = '<div class="empty">Chưa có chủ đề cho môn này.</div>';
       return;
@@ -41,6 +44,7 @@ export async function loadTopics() {
           </article>`;
       }).join('')}`;
   } catch (error) {
+    if(currentRequest!==topicRequest)return;
     elements.topicList.innerHTML = `<div class="empty">😿 ${escapeHtml(error.message)}</div>`;
   }
 }

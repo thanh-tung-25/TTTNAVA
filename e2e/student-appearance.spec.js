@@ -11,14 +11,15 @@ const attempt = {
  id:'sample',title:'Sắp xếp câu',items:[{id:'question',data:{type:'ordering',prompt:'Sắp xếp câu',options:['你好','朋友']}}],
 };
 
-test('primary lesson cards keep every start button aligned on the right',async({page})=>{
- await page.route('**/pages/student/practice/',async route=>route.fulfill({contentType:'text/html',body:await fs.readFile('frontend/pages/student/practice/index.html','utf8')}));
+for(const subject of ['toan','tieng-viet','tieng-anh']) {
+test(`primary ${subject} lesson cards keep every start button aligned on the right`,async({page})=>{
+ await page.route('**/pages/student/practice/**',async route=>route.fulfill({contentType:'text/html',body:await fs.readFile('frontend/pages/student/practice/index.html','utf8')}));
  await page.route('**/api/v1/courses/grade-1/access',route=>route.fulfill({json:{data:{id:'grade-1',kind:'primary',level:1,title:'Lớp 1'}}}));
  const names=['Bài 1. Các số 0, 1, 2, 3, 4, 5','Bài 2. Các số 6, 7, 8, 9, 10','Bài 3. Nhiều hơn, ít hơn, bằng nhau','Bài 7. Hình vuông, hình tròn, hình tam giác, hình chữ nhật','Bài đang chuẩn bị'];
  await page.route('**/api/v1/catalog/topics?**',route=>route.fulfill({json:{data:names.map((name,i)=>({id:'lesson-'+i,name,grade:1,questionCount:i===4?0:30}))}}));
  await page.route('**/api/v1/practice',route=>route.fulfill({json:{data:{id:'practice',topic:{name:names[0]},currentIndex:0,questions:[{id:'one',type:'single_choice',prompt:'1 + 1 = ?',options:[{key:'a',text:'2'},{key:'b',text:'3'}]}]}}}));
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto('/pages/student/practice/');
+ await page.goto('/pages/student/practice/?subject='+subject);
  await expect(page.locator('.topic-item')).toHaveCount(5);
  await expect(page.locator('#practice-grade')).toHaveText('· LỚP 1');
  await expect(page.locator('.practice-welcome-mascot')).toBeVisible();
@@ -33,14 +34,14 @@ test('primary lesson cards keep every start button aligned on the right',async({
  expect(errors).toEqual([]);
 });
 
-test('primary exam scopes switch between chapter semester and annual without mixing their settings',async({page})=>{
- await page.route('**/pages/student/exam/',async route=>route.fulfill({contentType:'text/html',body:await fs.readFile('frontend/pages/student/exam/index.html','utf8')}));
+test(`primary ${subject} exam scopes switch between chapter semester and annual without mixing their settings`,async({page})=>{
+ await page.route('**/pages/student/exam/**',async route=>route.fulfill({contentType:'text/html',body:await fs.readFile('frontend/pages/student/exam/index.html','utf8')}));
  await page.route('**/api/v1/courses/grade-1/access',route=>route.fulfill({json:{data:{id:'grade-1',kind:'primary',level:1,title:'Lớp 1'}}}));
  await page.route('**/api/v1/exams/catalog?**',route=>route.fulfill({json:{data:{year:{id:'2026-2027',name:'Năm học 2026–2027'},chapters:[{id:'chapter-1',name:'Chủ đề 1: Các số từ 0 đến 10',semester:'hk1',questionCount:180,count:30,durationSeconds:1800},{id:'chapter-6',name:'Chủ đề 6: Các số đến 100',semester:'hk2',questionCount:40,count:30,durationSeconds:1800}],semesters:[{id:'hk1',name:'Học kì 1',questionCount:180,count:50,durationSeconds:3000},{id:'hk2',name:'Học kì 2',questionCount:40,count:50,durationSeconds:3000}],annual:{questionCount:220,count:50,durationSeconds:3600}}}}));
  let submitted;
  await page.route('**/api/v1/exams',async route=>{submitted=route.request().postDataJSON();await route.fulfill({json:{data:{id:'exam-scoped',topic:{name:'Kiểm tra chủ đề 1'},status:'in_progress',remainingSeconds:1800,questions:Array.from({length:30},(_,i)=>({id:'question-'+i,type:'single_choice',prompt:'1 + 1 = ?',options:[{key:'a',label:'A',text:'2'},{key:'b',label:'B',text:'3'}]}))}}});});
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto('/pages/student/exam/');await expect(page.locator('.assessment-topic')).toHaveCount(2);
+ await page.goto('/pages/student/exam/?subject='+subject);await expect(page.locator('.assessment-topic')).toHaveCount(2);
  await expect(page.locator('.assessment-topic').first()).toContainText('30 câu ngẫu nhiên');
  await page.locator('[data-exam-mode=semester]').click();await expect(page.locator('.assessment-topic')).toHaveCount(1);await expect(page.locator('.assessment-topic')).toContainText('học kì 1');await expect(page.locator('.assessment-topic')).toContainText('50 câu ngẫu nhiên');
  await page.locator('#exam-semester').selectOption('hk2');await expect(page.locator('[data-exam-kind=semester]')).toBeDisabled();
@@ -49,10 +50,36 @@ test('primary exam scopes switch between chapter semester and annual without mix
  await page.screenshot({path:`test-results/primary-exam-${test.info().project.name}.png`,fullPage:true});
  await page.locator('[data-exam-mode=chapter]').click();await page.locator('#exam-semester').selectOption('all');
  await page.locator('[data-exam-kind=chapter]').first().click();await page.locator('.modal-actions').getByRole('button',{name:'Bắt đầu',exact:true}).click();
- await expect(page.locator('#exam-view')).toBeVisible();await expect(page.locator('#question-palette button')).toHaveCount(30);expect(submitted).toMatchObject({mode:'chapter',chapterId:'chapter-1',subjectId:'toan',yearId:'2026-2027'});expect(errors).toEqual([]);
+ await expect(page.locator('#exam-view')).toBeVisible();await expect(page.locator('#question-palette button')).toHaveCount(30);expect(submitted).toMatchObject({mode:'chapter',chapterId:'chapter-1',subjectId:subject,yearId:'2026-2027'});expect(errors).toEqual([]);
 });
 
+}
+
 // Serve repository HTML and stub API responses; these regressions never modify local student data.
+test('primary rapid subject switching keeps the latest subject lesson list',async({page})=>{
+ await page.route('**/pages/student/practice/**',async route=>route.fulfill({contentType:'text/html',body:await fs.readFile('frontend/pages/student/practice/index.html','utf8')}));
+ await page.route('**/api/v1/courses/grade-1/access',route=>route.fulfill({json:{data:{id:'grade-1',kind:'primary',level:1,title:'Lớp 1'}}}));
+ let release,started;
+ const pending=new Promise(resolve=>{release=resolve;});
+ const englishStarted=new Promise(resolve=>{started=resolve;});
+ await page.route('**/api/v1/catalog/topics?**',async route=>{
+  const subject=new URL(route.request().url()).searchParams.get('subjectId');
+  if(subject==='tieng-anh'){started();await pending;}
+  await route.fulfill({json:{data:[{id:subject,name:'Bài của '+subject,grade:1,questionCount:50}]}});
+ });
+ await page.goto('/pages/student/practice/');
+ await expect(page.locator('#topic-list')).toContainText('Bài của toan');
+ await page.locator('[data-subject=tieng-anh]').click();await englishStarted;
+ await page.locator('[data-subject=tieng-viet]').click();
+ await expect(page.locator('#topic-list')).toContainText('Bài của tieng-viet');
+ const response=page.waitForResponse(r=>r.url().includes('/catalog/topics?subjectId=tieng-anh'));
+ release();await response;
+ // Let the late response's JS handler complete before checking the list.
+ await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+ await expect(page.locator('#topic-list')).toContainText('Bài của tieng-viet');
+ await expect(page.locator('[data-subject=tieng-viet]')).toHaveAttribute('aria-selected','true');
+});
+
 test.beforeEach(async({page},testInfo)=>{
  await page.addInitScript(course=>localStorage.setItem('ttnava-course',course),testInfo.title.startsWith('primary ')?'grade-1':'hsk-1');
  await page.route('**/pages/student/chinese/**',async route=>{

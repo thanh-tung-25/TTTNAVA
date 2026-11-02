@@ -32,6 +32,11 @@ Lời giải: Có thể dùng “làm” hoặc “hoàn thành”.
 Độ khó: Vừa`;
 
 describe('Bộ đọc câu hỏi từ tài liệu Word', () => {
+  test('option labels take precedence over letter-valued Vietnamese options', () => {
+    const result = parseQuestionDocument('Câu 1. Chữ in hoa của i là gì?\nA. I\nB. Ă\nC. A\nĐáp án: A\nLời giải: i viết hoa là I.\nCâu 2. Chọn hai chữ.\nA. E\nB. D\nC. A\nĐáp án: A, C\nLời giải: Chọn nhãn A và C.');
+    expect(result.questions[0].answer).toEqual({key:'a'});
+    expect(result.questions[1].answer).toEqual({keys:['a','c']});
+  });
   test('test_question_import_parser_reads_sample_types', () => {
     const result = parseQuestionDocument(SAMPLE);
     expect(result.questions).toHaveLength(4);

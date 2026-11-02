@@ -11,9 +11,50 @@ const attempt = {
  id:'sample',title:'Sắp xếp câu',items:[{id:'question',data:{type:'ordering',prompt:'Sắp xếp câu',options:['你好','朋友']}}],
 };
 
+test('primary lesson cards keep every start button aligned on the right',async({page})=>{
+ await page.route('**/pages/student/practice/',async route=>route.fulfill({contentType:'text/html',body:await fs.readFile('frontend/pages/student/practice/index.html','utf8')}));
+ await page.route('**/api/v1/courses/grade-1/access',route=>route.fulfill({json:{data:{id:'grade-1',kind:'primary',level:1,title:'Lớp 1'}}}));
+ const names=['Bài 1. Các số 0, 1, 2, 3, 4, 5','Bài 2. Các số 6, 7, 8, 9, 10','Bài 3. Nhiều hơn, ít hơn, bằng nhau','Bài 7. Hình vuông, hình tròn, hình tam giác, hình chữ nhật','Bài đang chuẩn bị'];
+ await page.route('**/api/v1/catalog/topics?**',route=>route.fulfill({json:{data:names.map((name,i)=>({id:'lesson-'+i,name,grade:1,questionCount:i===4?0:30}))}}));
+ await page.route('**/api/v1/practice',route=>route.fulfill({json:{data:{id:'practice',topic:{name:names[0]},currentIndex:0,questions:[{id:'one',type:'single_choice',prompt:'1 + 1 = ?',options:[{key:'a',text:'2'},{key:'b',text:'3'}]}]}}}));
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('/pages/student/practice/');
+ await expect(page.locator('.topic-item')).toHaveCount(5);
+ await expect(page.locator('#practice-grade')).toHaveText('· LỚP 1');
+ await expect(page.locator('.practice-welcome-mascot')).toBeVisible();
+ const bounds=await page.locator('.practice-topic-start').evaluateAll(buttons=>buttons.map(b=>{const r=b.getBoundingClientRect();return {left:r.left,right:r.right,width:r.width};}));
+ expect(Math.max(...bounds.map(b=>b.right))-Math.min(...bounds.map(b=>b.right))).toBeLessThan(1);
+ expect(Math.max(...bounds.map(b=>b.width))-Math.min(...bounds.map(b=>b.width))).toBeLessThan(1);
+ await expect(page.locator('[data-topic="lesson-4"]')).toBeDisabled();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.screenshot({path:`test-results/primary-practice-${test.info().project.name}.png`,fullPage:true});
+ await page.locator('[data-topic="lesson-0"]').click();
+ await expect(page.locator('#quiz-view')).toBeVisible();await expect(page.locator('#question-prompt')).toHaveText('1 + 1 = ?');
+ expect(errors).toEqual([]);
+});
+
+test('primary exam scopes switch between chapter semester and annual without mixing their settings',async({page})=>{
+ await page.route('**/pages/student/exam/',async route=>route.fulfill({contentType:'text/html',body:await fs.readFile('frontend/pages/student/exam/index.html','utf8')}));
+ await page.route('**/api/v1/courses/grade-1/access',route=>route.fulfill({json:{data:{id:'grade-1',kind:'primary',level:1,title:'Lớp 1'}}}));
+ await page.route('**/api/v1/exams/catalog?**',route=>route.fulfill({json:{data:{year:{id:'2026-2027',name:'Năm học 2026–2027'},chapters:[{id:'chapter-1',name:'Chủ đề 1: Các số từ 0 đến 10',semester:'hk1',questionCount:180,count:30,durationSeconds:1800},{id:'chapter-6',name:'Chủ đề 6: Các số đến 100',semester:'hk2',questionCount:40,count:30,durationSeconds:1800}],semesters:[{id:'hk1',name:'Học kì 1',questionCount:180,count:50,durationSeconds:3000},{id:'hk2',name:'Học kì 2',questionCount:40,count:50,durationSeconds:3000}],annual:{questionCount:220,count:50,durationSeconds:3600}}}}));
+ let submitted;
+ await page.route('**/api/v1/exams',async route=>{submitted=route.request().postDataJSON();await route.fulfill({json:{data:{id:'exam-scoped',topic:{name:'Kiểm tra chủ đề 1'},status:'in_progress',remainingSeconds:1800,questions:Array.from({length:30},(_,i)=>({id:'question-'+i,type:'single_choice',prompt:'1 + 1 = ?',options:[{key:'a',label:'A',text:'2'},{key:'b',label:'B',text:'3'}]}))}}});});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('/pages/student/exam/');await expect(page.locator('.assessment-topic')).toHaveCount(2);
+ await expect(page.locator('.assessment-topic').first()).toContainText('30 câu ngẫu nhiên');
+ await page.locator('[data-exam-mode=semester]').click();await expect(page.locator('.assessment-topic')).toHaveCount(1);await expect(page.locator('.assessment-topic')).toContainText('học kì 1');await expect(page.locator('.assessment-topic')).toContainText('50 câu ngẫu nhiên');
+ await page.locator('#exam-semester').selectOption('hk2');await expect(page.locator('[data-exam-kind=semester]')).toBeDisabled();
+ await page.locator('[data-exam-mode=annual]').click();await expect(page.locator('#exam-semester-filter')).toBeHidden();await expect(page.locator('.assessment-topic')).toContainText('cả năm');await expect(page.locator('.assessment-topic')).toContainText('60 phút');
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.screenshot({path:`test-results/primary-exam-${test.info().project.name}.png`,fullPage:true});
+ await page.locator('[data-exam-mode=chapter]').click();await page.locator('#exam-semester').selectOption('all');
+ await page.locator('[data-exam-kind=chapter]').first().click();await page.locator('.modal-actions').getByRole('button',{name:'Bắt đầu',exact:true}).click();
+ await expect(page.locator('#exam-view')).toBeVisible();await expect(page.locator('#question-palette button')).toHaveCount(30);expect(submitted).toMatchObject({mode:'chapter',chapterId:'chapter-1',subjectId:'toan',yearId:'2026-2027'});expect(errors).toEqual([]);
+});
+
 // Serve repository HTML and stub API responses; these regressions never modify local student data.
-test.beforeEach(async({page})=>{
- await page.addInitScript(()=>localStorage.setItem('ttnava-course','hsk-1'));
+test.beforeEach(async({page},testInfo)=>{
+ await page.addInitScript(course=>localStorage.setItem('ttnava-course',course),testInfo.title.startsWith('primary ')?'grade-1':'hsk-1');
  await page.route('**/pages/student/chinese/**',async route=>{
   const filename=route.request().resourceType()==='document'?'index.html':new URL(route.request().url()).pathname.split('/').pop();
   if(!['index.html','script.js','style.css','playful.css','learning-tools.js','history-view.js'].includes(filename))return route.continue();

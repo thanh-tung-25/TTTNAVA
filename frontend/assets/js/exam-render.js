@@ -1,3 +1,4 @@
+import {loadExamCatalog} from './exam-catalog-view.js';
 import { api, escapeHtml } from '/assets/js/api.js';
 import { TYPE_LABELS } from '/assets/js/ui.js';
 import {
@@ -15,33 +16,7 @@ function renderTabs() {
 
 export async function loadTopics() {
   renderTabs();
-  elements.topicList.innerHTML = '<div class="loading">Đang tải chủ đề…</div>';
-  try {
-    const payload = await api(`/api/v1/catalog/topics?subjectId=${store.subjectId}&grade=${store.profile.grade}`);
-    if (!payload.data.length) {
-      elements.topicList.innerHTML = '<div class="empty">Chưa có chủ đề cho môn này.</div>';
-      return;
-    }
-    const noPublished = payload.data.every((topic) => topic.questionCount === 0);
-    elements.topicList.innerHTML = `
-      ${noPublished ? '<div class="empty">Môn này chưa có câu hỏi nào được đăng nên chưa thể thi thử.</div>' : ''}
-      ${payload.data.map((topic, index) => {
-        const enough = topic.questionCount >= 20;
-        return `
-          <div class="topic-item">
-            <span class="topic-index">${index + 1}</span>
-            <div>
-              <h3>${escapeHtml(topic.name)}</h3>
-              <p>${topic.questionCount} câu đã đăng · Bài thi 20 câu / 15 phút${enough ? '' : ' · chưa đủ 20 câu'}</p>
-            </div>
-            <button class="btn btn-sm" type="button" data-topic="${escapeHtml(topic.id)}"${enough ? '' : ' disabled'}>
-              ${enough ? 'Thi thử' : 'Chưa đủ câu'}
-            </button>
-          </div>`;
-      }).join('')}`;
-  } catch (error) {
-    elements.topicList.innerHTML = `<div class="empty">😿 ${escapeHtml(error.message)}</div>`;
-  }
+  await loadExamCatalog();
 }
 
 function selectedKeysOf(question) {

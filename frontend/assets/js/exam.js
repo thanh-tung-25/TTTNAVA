@@ -4,6 +4,7 @@ import { startExam, submitExam } from './exam-actions.js';
 import { elements, show, store, subjectFromUrl } from './exam-context.js';
 import { loadTopics, renderPalette, renderQuestion } from './exam-render.js';
 import { flushSave } from './exam-save.js';
+import {renderExamCatalog} from './exam-catalog-view.js';
 
 document.getElementById('prev-button').addEventListener('click', async () => {
   await flushSave();
@@ -38,9 +39,15 @@ elements.subjectTabs.addEventListener('click', (event) => {
 });
 
 elements.topicList.addEventListener('click', (event) => {
+  const scoped=event.target.closest('[data-exam-kind]');
+  if(scoped){startExam({mode:scoped.dataset.examKind,subjectId:store.subjectId,yearId:store.catalog.year.id,...(scoped.dataset.chapter?{chapterId:scoped.dataset.chapter}:{}),...(scoped.dataset.semester?{semester:scoped.dataset.semester}:{})},scoped);return;}
   const button = event.target.closest('[data-topic]');
   if (button) startExam(button.dataset.topic, button);
 });
+document.querySelectorAll('[data-exam-mode]').forEach(button=>button.onclick=()=>{
+ store.mode=button.dataset.examMode;if(store.mode==='semester'&&store.semester==='all')store.semester='hk1';renderExamCatalog();
+});
+document.querySelector('#exam-semester').onchange=event=>{store.semester=event.target.value;renderExamCatalog();};
 
 window.addEventListener('beforeunload', (event) => {
   if (store.attempt?.status === 'in_progress' && !store.attempt.submitted) {

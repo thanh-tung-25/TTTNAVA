@@ -20,7 +20,7 @@ export async function listExamHistory(studentId, page, limit) {
   await finalizeOverdueForStudent(studentId);
   const offset = (page - 1) * limit;
   const rows = await query(
-    `SELECT ea.*, t.name AS topic_name, t.grade, s.name AS subject_name,
+    `SELECT ea.*, COALESCE(ea.exam_title,t.name) AS topic_name, t.grade, s.name AS subject_name,
             COALESCE((SELECT SUM(dl.amount) FROM diamond_ledger dl
                       WHERE dl.profile_id = ea.student_id AND dl.ref_type = 'exam' AND dl.ref_id = ea.id), 0) AS diamonds
      FROM exam_attempts ea

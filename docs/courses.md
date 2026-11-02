@@ -39,3 +39,14 @@ Migration 014 chỉ chạy một lần: giữ khóa đúng lớp hiện tại ch
 - `npm run test:courses`: đăng nhập → chọn khóa → gửi yêu cầu → admin duyệt → vào học lớp khác lớp hồ sơ → thu hồi. Chạy trên `kids_learning_test`, cổng 3110, không giao dịch tiền thật. Cần chạy `npm test` trước để chuẩn bị schema test.
 
 `.env` không được đưa lên Git. Môi trường triển khai cần chạy migration trên database riêng và cấu hình hướng dẫn thanh toán trước khi nhận đăng ký.
+# Hiển thị QR và cửa sổ thanh toán
+
+Migration `019_payment_qr_crop.sql` thêm `course_payment_qr.crop_json` để chỉ
+hiển thị vùng mã QR của ảnh chụp màn hình. Ảnh gốc trong cơ sở dữ liệu giữ nguyên;
+giao diện cắt khung nhìn bằng tọa độ, không vẽ lại mã. Tải ảnh mới sẽ xóa tọa độ
+của ảnh cũ để tránh cắt sai. Khóa có QR riêng dùng đúng tọa độ của QR riêng,
+không dùng nhầm tọa độ của QR chung.
+
+Cửa sổ đăng ký khóa học chia QR và thông tin chuyển khoản thành hai cột trên
+máy tính, một cột trên điện thoại. Ghi chú là phần thu gọn không bắt buộc.
+Luồng gửi yêu cầu và xác nhận thủ công bởi admin giữ nguyên.

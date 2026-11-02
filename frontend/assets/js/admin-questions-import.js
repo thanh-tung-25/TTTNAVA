@@ -75,6 +75,7 @@ export async function openImport() {
     container.innerHTML = previewHtml(config, tree, selectedIds);
     const getIds=()=>selectedIds?{...selectedIds}:readScopeIds(container);
     let file = null;
+    let extractedFile=null;
     let questions = [];
     const preview = container.querySelector('[data-preview]');
     const saveButton = container.querySelector('[data-save]');
@@ -85,6 +86,7 @@ export async function openImport() {
 
     fileInput.addEventListener('change', () => {
       file = fileInput.files[0] ?? null;
+      extractedFile=null;questions=[];preview.replaceChildren();saveButton.disabled=true;aiPanel.classList.add('hidden');
       statusLine(file ? `Đã chọn ${file.name}` : 'Chưa chọn tệp.');
     });
 
@@ -111,10 +113,13 @@ export async function openImport() {
       }
       errorBox.classList.add('hidden');
       setBusy(event.currentTarget, true, 'Đang đọc…');
+      const readingFile=file;
       try {
         const formData = new FormData();
-        formData.append('file', file);
+        formData.append('file', readingFile);
         const payload = await api('/api/v1/admin/questions/import/docx', { method: 'POST', body: formData });
+        if(file!==readingFile)return;
+        extractedFile=readingFile;
         if(!selectedIds)renderScopeSelects(container, tree, scopeIdsFromMetadata(tree, payload.data.metadata ?? {}));
         showQuestions(payload.data);
       } catch (error) {
@@ -126,6 +131,7 @@ export async function openImport() {
 
     container.querySelector('[data-ai]').addEventListener('click', async (event) => {
       if (!file || !config.ai.configured) return;
+      const readingFile=file;
       const confirmed = await confirmAction(
         'Nội dung tệp sẽ được gửi tới dịch vụ AI đã cấu hình để tạo câu hỏi nháp. Cô đồng ý chứ?',
         { title: 'Tạo câu hỏi bằng AI', confirmText: 'Gửi tài liệu' },
@@ -136,11 +142,13 @@ export async function openImport() {
         const ids = getIds();
         const labels = scopeLabels(tree, ids);
         const formData = new FormData();
-        formData.append('file', file);
+        formData.append('file', readingFile);
         formData.append('subjectName', labels.subjectName);
         formData.append('grade', String(ids.grade));
         formData.append('topicName', labels.lessonName);
         const payload = await api('/api/v1/admin/questions/import/ai', { method: 'POST', body: formData });
+        if(file!==readingFile)return;
+        extractedFile=readingFile;
         showQuestions(payload.data);
       } catch (error) {
         showError(errorBox, error);
@@ -150,7 +158,7 @@ export async function openImport() {
     });
 
     saveButton.addEventListener('click', async () => {
-      if (!questions.length) return;
+      if (!questions.length||!extractedFile) return;
       const ids = getIds();
       if (!ids.lessonId) {
         showError(errorBox, new Error('Vui lòng chọn bài học trước khi lưu.'));
@@ -160,13 +168,12 @@ export async function openImport() {
       errorBox.classList.add('hidden');
       setBusy(saveButton, true, 'Đang lưu…');
       try {
-        const result = await api('/api/v1/admin/questions/import', {
-          method: 'POST',
-          body: {
+        const body=new FormData();body.append('file',extractedFile);
+        body.append('payload',JSON.stringify({
             ...ids,
             questions: questions.map(({ sourceNumber, issues, ...question }) => question),
-          },
-        });
+          }));
+        const result = await api('/api/v1/admin/questions/import/file', {method:'POST',body});
         toast(`Đã lưu ${result.data.created} câu hỏi nháp.`, 'success');
         document.dispatchEvent(new Event('content:changed'));
         document.querySelector('[data-close]')?.click();

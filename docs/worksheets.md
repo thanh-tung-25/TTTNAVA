@@ -45,6 +45,19 @@ Trong bài học, **Đăng tất cả câu hỏi nháp** đăng toàn bộ câu 
 kể cả các trang tiếp theo. Câu đang ẩn và nội dung bài khác giữ nguyên.
 Máy chủ kiểm tra câu hỏi, ghi lịch sử đăng và thực hiện trong một giao dịch:
 nếu có câu không hợp lệ thì chưa đăng câu nào, thông báo câu cần sửa.
+
+**Word đã nạp** nằm cạnh nút Nhập Word. Danh sách mặc định hiển thị mọi lần
+nhập Word cấp 1 đã lưu thành công, có tìm kiếm tên tệp/bài học, lọc lớp/học kì
+và phân trang. Mỗi dòng có tệp gốc, đường dẫn bài học, thời gian, người nhập,
+số câu đã lưu và nút tải lại. Chỉ admin xem và tải được.
+
+Migration `018_word_import_history.sql` tạo kho tệp trong MySQL
+(`word_import_documents.original`) và liên kết câu hỏi qua `import_document_id`.
+API lưu từ giao diện: multipart `POST /api/v1/admin/questions/import/file`,
+gồm `file` và `payload` JSON. Tệp gốc và câu hỏi được lưu trong cùng giao dịch.
+Các API nhập JSON cũ vẫn hoạt động, nhưng không thể lưu tệp gốc khi không gửi tệp.
+Chỉ đọc/xem thử Word chưa tạo lịch sử; tệp được lưu khi bấm Lưu tất cả dưới dạng nháp.
+Tệp nhập trước khi có tính năng này không thể tự khôi phục bản gốc.
 Chọn đến bài học rồi tạo nội dung; lớp và môn của bộ bài được lấy từ bài học.
 Có thể xem tổng hợp tại từng cấp, thêm chủ đề trong môn và thêm bài trong chủ đề.
 

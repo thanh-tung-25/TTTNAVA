@@ -5,6 +5,7 @@ import {openCreate,openDetail,changeStatus} from './admin-question-editor.js';
 import {initCurriculum,selectedScope,loadCurriculum,selectContentLesson} from './admin-content-curriculum.js';
 import {store} from './admin-questions-context.js';
 import {openImport} from './admin-questions-import.js';
+import {openWordHistory} from './admin-word-history.js';
 const root=document.querySelector('#content-list'),notice=document.querySelector('#content-hub-error'),editor=document.querySelector('#content-worksheets'),filters=document.querySelector('#content-filters');
 let page=1,pages=1,requestNumber=0,openedLesson=null;
 const status={draft:'Nháp',published:'Đã đăng',hidden:'Đang ẩn'},subjects={toan:'Toán','tieng-viet':'Tiếng Việt','tieng-anh':'Tiếng Anh'};
@@ -63,6 +64,7 @@ document.querySelector('#content-create').onclick=async()=>{try{
  else{if(!closeWorksheet())return;editor.hidden=true;await openCreate();}
 }catch(e){notice.textContent=e.message;}};
 document.querySelector('#content-import').onclick=()=>openImport();
+document.querySelector('#content-word-history').onclick=openWordHistory;
 document.querySelector('#content-reviews').onclick=()=>{editor.hidden=false;document.querySelector('#ws-review-tab').click();editor.scrollIntoView({block:'start',behavior:'smooth'});};
 document.querySelector('#content-close-editor').onclick=()=>{if(closeWorksheet())editor.hidden=true;};
 document.querySelector('#content-prev').onclick=()=>{if(page>1){page--;load().catch(e=>notice.textContent=e.message);}};

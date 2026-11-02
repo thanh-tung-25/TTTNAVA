@@ -19,6 +19,10 @@ export async function listTopics(subjectId, grade) {
              WHERE q.topic_id = t.id AND q.status = 'published') AS question_count
      FROM topics t
      WHERE t.subject_id = ? AND t.grade = ?
+       AND (EXISTS (SELECT 1 FROM questions published WHERE published.topic_id=t.id AND published.status='published')
+            OR NOT EXISTS (SELECT 1 FROM curriculum_lessons old_lesson
+                           JOIN curriculum_chapters old_chapter ON old_chapter.id=old_lesson.chapter_id
+                           WHERE old_lesson.topic_id=t.id AND old_chapter.is_legacy=1))
      ORDER BY t.sort_order ASC, t.name ASC`,
     [subjectId, grade],
   );

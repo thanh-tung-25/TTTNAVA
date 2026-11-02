@@ -8,10 +8,20 @@ import {
 } from '../services/exam-service.js';
 import { parsePagination } from '../utils/pagination.js';
 import { asyncHandler } from '../utils/errors.js';
+import {z} from 'zod';
+import {examCatalog,scopedExamSchema} from '../services/exam-scope-service.js';
 
 export const startExamHandler = asyncHandler(async (request, response) => {
+  if(request.body.mode!==undefined){
+    const payload=scopedExamSchema.parse(request.body);
+    response.status(201).json({data:await startExam(request.user.id,null,payload,request.primaryGrade)});return;
+  }
   const { topicId } = startTopicSchema.parse(request.body);
   response.status(201).json({ data: await startExam(request.user.id, topicId) });
+});
+export const examCatalogHandler=asyncHandler(async(request,response)=>{
+ const subjectId=z.enum(['toan','tieng-viet','tieng-anh']).parse(request.query.subjectId);
+ response.json({data:await examCatalog(request.primaryGrade,subjectId)});
 });
 
 export const getExamHandler = asyncHandler(async (request, response) => {

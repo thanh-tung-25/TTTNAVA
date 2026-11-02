@@ -33,6 +33,13 @@ describe('Admin QR and independent purchases',()=>{
   response=await student.get(base+'/payment-qr/grade-1');expect(response.body.equals(own)).toBe(true);
   response=await student.get(base+'/payment-qr/grade-2');expect(response.body.equals(png)).toBe(true);
   const catalog=(await student.get(base)).body.data;expect(catalog.find(c=>c.id==='grade-1').has_payment_qr).toBe(1);expect(catalog.find(c=>c.id==='grade-1').unlocked).toBe(0);
+  const crop={x:10,y:20,width:100,height:100,sourceWidth:200,sourceHeight:400};
+  await query("UPDATE course_payment_qr SET crop_json=? WHERE course_key='default'",[JSON.stringify(crop)]);
+  const cropped=(await student.get(base)).body.data;
+  expect(JSON.parse(cropped.find(c=>c.id==='grade-2').payment_qr_crop)).toEqual(crop);
+  expect(cropped.find(c=>c.id==='grade-1').payment_qr_crop).toBeNull();
+  expect((await admin.post(base+'/admin/payment-qr/default').attach('qr',png,'qr.png')).status).toBe(200);
+  expect((await query("SELECT crop_json FROM course_payment_qr WHERE course_key='default'"))[0].crop_json).toBeNull();
   expect((await student.get(base+'/grade-1/access')).status).toBe(403);
   expect((await student.get(base+'/admin/payment-qr')).status).toBe(403);
  });

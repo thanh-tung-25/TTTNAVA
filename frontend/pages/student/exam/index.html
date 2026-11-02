@@ -3,24 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thi — TTNAVA</title>
+  <title>Kiểm tra & thi thử — TTNAVA</title>
   <link rel="icon" href="/assets/images/ttnava-logo.png" type="image/png">
   <link rel="stylesheet" href="/assets/css/base.css">
   <link rel="stylesheet" href="/assets/css/components.css">
   <link rel="stylesheet" href="/assets/css/pages.css">
-<link rel="stylesheet" href="/assets/css/student-depth.css"></head>
-<body data-role="student">
+<link rel="stylesheet" href="/assets/css/student-depth.css"><link rel="stylesheet" href="/assets/css/primary-practice.css"><link rel="stylesheet" href="/assets/css/student-assessment.css"></head>
+<body data-role="student" class="primary-practice primary-exam student-polished">
   <header id="app-header"></header>
   <main class="page">
     <section id="setup-view">
-      <div class="page-head">
+      <div class="page-head practice-welcome">
         <div>
-          <p class="eyebrow">Bài thi</p>
-          <h1>Thử sức với bài thi 15 phút</h1>
-          <p>20 câu hỏi. Chưa biết đúng sai cho đến khi nộp bài. Con bình tĩnh nhé!</p>
+          <p class="eyebrow">THỬ THÁCH KIẾN THỨC <span id="exam-grade"></span></p>
+          <h1>Tự tin chinh phục bài kiểm tra</h1>
+          <p>Chọn kiểm tra chủ đề, thi học kì hoặc cả năm. Mỗi lần làm là một đề ngẫu nhiên mới.</p>
         </div>
+        <img src="/assets/images/mascot-bunny.svg" class="practice-welcome-mascot" width="140" height="148" alt="Thỏ nhỏ đồng hành cùng con">
+      </div>
+      <div class="assessment-modes" aria-label="Chọn loại bài kiểm tra">
+        <button type="button" data-exam-mode="chapter" aria-pressed="true"><span>📚</span><strong>Kiểm tra chủ đề</strong><small>30 câu · 30 phút</small></button>
+        <button type="button" data-exam-mode="semester" aria-pressed="false"><span>🌟</span><strong>Thi học kì</strong><small>50 câu · 50 phút</small></button>
+        <button type="button" data-exam-mode="annual" aria-pressed="false"><span>🏆</span><strong>Thi cả năm</strong><small>50 câu · 60 phút</small></button>
       </div>
       <div class="tabs" id="subject-tabs" role="tablist" aria-label="Chọn môn học"></div>
+      <div class="assessment-list-head"><h2 id="exam-list-heading">Chọn chủ đề con muốn kiểm tra</h2><label id="exam-semester-filter"><span>Phạm vi học</span><select class="select" id="exam-semester"><option value="all">Cả năm</option><option value="hk1">Học kì 1</option><option value="hk2">Học kì 2</option></select></label></div>
+      <p class="assessment-help">Câu hỏi không lặp trong cùng một đề. Đáp án và lời giải chỉ hiện sau khi nộp bài.</p>
       <div id="topic-list" class="topic-list"><div class="loading">Đang tải chủ đề…</div></div>
     </section>
 

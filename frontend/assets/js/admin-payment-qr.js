@@ -1,11 +1,12 @@
 import {api,el} from './api.js';
+import {paymentQrView} from './payment-qr-view.js';
 const form=document.querySelector('#payment-qr-form'),preview=document.querySelector('#payment-qr-preview'),notice=document.querySelector('#admin-course-notice');
 let files=[];
 function showPreview(){
  const key=form.elements.course_key.value,own=files.find(f=>f.course_key===key),shared=files.find(f=>f.course_key==='default');
  const selected=own||shared;
  preview.replaceChildren(el('p',{text:selected?(own?'QR đã lưu cho lựa chọn này.':'Khóa này đang dùng QR chung. Tải ảnh lên để dùng QR riêng.'):'Chưa có QR. Admin có thể tải ảnh QR nhận tiền từ ứng dụng ngân hàng.'}));
- if(selected)preview.append(el('img',{class:'payment-qr-image',src:'/api/v1/courses/payment-qr/'+encodeURIComponent(key)+'?v='+Date.now(),alt:'Ảnh QR thanh toán đã lưu',width:240,height:240}));
+ if(selected)preview.append(paymentQrView('/api/v1/courses/payment-qr/'+encodeURIComponent(key)+'?v='+Date.now(),selected.crop_json,'Ảnh QR thanh toán đã lưu'));
  document.querySelector('#delete-payment-qr').disabled=!own;
 }
 export async function refreshPaymentQr(courses){

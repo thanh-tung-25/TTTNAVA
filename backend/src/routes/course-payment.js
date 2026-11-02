@@ -24,11 +24,11 @@ router.get('/admin/pending-count',requireAdmin,asyncHandler(async(_req,res)=>{
  const [row]=await query("SELECT COUNT(*) total FROM course_orders WHERE status='pending'");res.json({data:{total:Number(row.total)}});
 }));
 router.get('/admin/payment-qr',requireAdmin,asyncHandler(async(_req,res)=>{
- res.json({data:await query('SELECT course_key,mime_type,updated_at FROM course_payment_qr ORDER BY course_key')});
+ res.json({data:await query('SELECT course_key,mime_type,updated_at,crop_json FROM course_payment_qr ORDER BY course_key')});
 }));
 router.post('/admin/payment-qr/:key',requireAdmin,imageUpload,asyncHandler(async(req,res)=>{
  await validateKey(req.params.key);
- await query('INSERT INTO course_payment_qr(course_key,image,mime_type,uploaded_by) VALUES (?,?,?,?) ON DUPLICATE KEY UPDATE image=VALUES(image),mime_type=VALUES(mime_type),uploaded_by=VALUES(uploaded_by)',[req.params.key,req.file.buffer,req.qrMime,req.user.id]);
+ await query('INSERT INTO course_payment_qr(course_key,image,mime_type,uploaded_by) VALUES (?,?,?,?) ON DUPLICATE KEY UPDATE image=VALUES(image),mime_type=VALUES(mime_type),uploaded_by=VALUES(uploaded_by),crop_json=NULL',[req.params.key,req.file.buffer,req.qrMime,req.user.id]);
  res.json({data:{saved:true}});
 }));
 router.delete('/admin/payment-qr/:key',requireAdmin,asyncHandler(async(req,res)=>{

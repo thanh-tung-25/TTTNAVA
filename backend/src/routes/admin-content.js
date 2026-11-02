@@ -6,6 +6,22 @@ import {asyncHandler,notFound} from '../utils/errors.js';
 import {randomUUID} from 'node:crypto';
 import {publishLessonQuestions} from '../services/question-bulk-publish.js';
 const router=Router();router.use(authenticateToken,requireAdmin);
+router.get('/word-documents',asyncHandler(async(req,res)=>{
+ const f=z.object({q:z.string().trim().max(100).default(''),grade:z.coerce.number().int().min(1).max(5).optional(),semester:z.enum(['hk1','hk2']).optional(),page:z.coerce.number().int().min(1).default(1)}).parse(req.query);
+ const where=[],params=[];
+ if(f.q){where.push('(d.filename LIKE ? OR l.name LIKE ?)');params.push('%'+f.q+'%','%'+f.q+'%');}
+ if(f.grade){where.push('c.grade=?');params.push(f.grade);}if(f.semester){where.push('c.semester=?');params.push(f.semester);}
+ const from=' FROM word_import_documents d JOIN curriculum_lessons l ON l.id=d.lesson_id JOIN curriculum_chapters c ON c.id=l.chapter_id LEFT JOIN profiles p ON p.id=d.imported_by'+(where.length?' WHERE '+where.join(' AND '):'');
+ const [count]=await query('SELECT COUNT(*) total'+from,params);
+ const rows=await query('SELECT d.id,d.filename,d.byte_size,d.question_count,d.imported_at,d.lesson_id,l.name lesson_name,c.grade,c.semester,c.subject_id,c.name chapter_name,c.school_year_id,p.display_name imported_by_name'+from+' ORDER BY d.imported_at DESC,d.id LIMIT 20 OFFSET ?',[...params,(f.page-1)*20]);
+ res.json({data:rows,pagination:{page:f.page,total:Number(count.total),limit:20}});
+}));
+router.get('/word-documents/:id/download',asyncHandler(async(req,res)=>{
+ const id=z.string().uuid().parse(req.params.id);
+ const [document]=await query('SELECT filename,original,byte_size FROM word_import_documents WHERE id=?',[id]);if(!document)throw notFound();
+ res.set({'Content-Type':'application/vnd.openxmlformats-officedocument.wordprocessingml.document','Content-Disposition':`attachment; filename="document.docx"; filename*=UTF-8''${encodeURIComponent(document.filename).replace(/['()*]/g,c=>'%'+c.charCodeAt(0).toString(16))}`,'Cache-Control':'private, no-store'});
+ res.send(document.original);
+}));
 router.post('/publish-questions',asyncHandler(async(req,res)=>{
  const {lessonId}=z.object({lessonId:z.string().trim().min(1).max(90)}).parse(req.body);
  res.json({data:await publishLessonQuestions(lessonId,req.user.id)});

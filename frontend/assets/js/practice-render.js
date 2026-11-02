@@ -15,6 +15,7 @@ function renderTabs() {
 
 export async function loadTopics() {
   renderTabs();
+  const gradeLabel=document.getElementById('practice-grade');if(gradeLabel)gradeLabel.textContent='· LỚP '+store.profile.grade;
   elements.topicList.innerHTML = '<div class="loading">Đang tải chủ đề…</div>';
   try {
     const payload = await api(`/api/v1/catalog/topics?subjectId=${store.subjectId}&grade=${store.profile.grade}`);
@@ -28,16 +29,16 @@ export async function loadTopics() {
       ${payload.data.map((topic, index) => {
         const enough = topic.questionCount >= 10;
         return `
-          <div class="topic-item">
-            <span class="topic-index">${index + 1}</span>
-            <div>
+          <article class="topic-item${enough?'':' topic-not-ready'}">
+            <div class="practice-topic-mascot" aria-hidden="true"><img src="/assets/images/mascot-${store.subjectId==='toan'?'owl':store.subjectId==='tieng-viet'?'bunny':'panda'}.svg" width="54" height="58" alt=""><span class="topic-index">${index + 1}</span></div>
+            <div class="practice-topic-info">
               <h3>${escapeHtml(topic.name)}</h3>
-              <p>${topic.questionCount} câu đã đăng · Lớp ${topic.grade}${enough ? '' : ' · cần 10 câu để luyện tập'}</p>
+              <p>${topic.questionCount} câu hỏi · Lớp ${topic.grade}${enough ? '' : ' · Đang chuẩn bị thêm câu'}</p>
             </div>
-            <button class="btn btn-sm" type="button" data-topic="${escapeHtml(topic.id)}"${enough ? '' : ' disabled'}>
+            <button class="btn btn-sm practice-topic-start" type="button" data-topic="${escapeHtml(topic.id)}" aria-label="${enough?'Học ngay':'Chưa đủ câu'}: ${escapeHtml(topic.name)}"${enough ? '' : ' disabled'}>
               ${enough ? 'Học ngay' : 'Chưa đủ câu'}
             </button>
-          </div>`;
+          </article>`;
       }).join('')}`;
   } catch (error) {
     elements.topicList.innerHTML = `<div class="empty">😿 ${escapeHtml(error.message)}</div>`;

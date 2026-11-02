@@ -9,7 +9,7 @@ test.describe('Worksheet builder and student exercises',()=>{
   if(process.env.DB_NAME!=='kids_learning_test')throw new Error('Test database required');
   for(const role of ['admin','student']){const id=randomUUID(),username='ws_'+role+'_'+id.slice(0,6);await query('INSERT INTO profiles(id,username,email,password_hash,role,display_name,avatar_key,grade) VALUES (?,?,?,?,?,?,?,?)',[id,username,username+'@test.invalid',await hashPassword(password),role,'Bạn kiểm thử','meo',role==='student'?3:null]);if(role==='admin')admin={id,username};else{student={id,username};await query("INSERT INTO course_enrollments(student_id,course_id,source) VALUES (?,'grade-1','admin')",[id]);}}
  });
- test.afterAll(async()=>{if(sheetId){await query('DELETE FROM worksheet_attempts WHERE worksheet_id=?',[sheetId]);await query('DELETE FROM worksheets WHERE id=?',[sheetId]);}if(admin)await query('DELETE FROM questions WHERE created_by=?',[admin.id]);for(const user of [student,admin])if(user)await query('DELETE FROM profiles WHERE id=?',[user.id]);await closePool();});
+ test.afterAll(async()=>{if(sheetId){await query('DELETE FROM worksheet_attempts WHERE worksheet_id=?',[sheetId]);await query('DELETE FROM worksheets WHERE id=?',[sheetId]);}if(admin){await query('DELETE FROM questions WHERE created_by=?',[admin.id]);await query('DELETE FROM word_import_documents WHERE imported_by=?',[admin.id]);}for(const user of [student,admin])if(user)await query('DELETE FROM profiles WHERE id=?',[user.id]);await closePool();});
  async function login(page,user){await page.goto('/pages/login/');await page.locator('[name=username]').fill(user.username);await page.locator('[name=password]').fill(password);await page.locator('#login-button').click();await page.waitForURL(user===admin?/\/admin\/students\//:/\/student\/courses\//);}
  test('author nine exercise types, preview, publish, student submits and teacher grades',async({page,browser,baseURL})=>{
   const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('dialog',d=>d.accept());await login(page,admin);await page.goto('/pages/admin/worksheets/');
@@ -40,10 +40,17 @@ test.describe('Worksheet builder and student exercises',()=>{
   await page.locator('[data-read]').click();
   await expect(page.locator('[data-import-destination]')).toContainText('Bài 1. Các số 0, 1, 2, 3, 4, 5');
   await expect(page.locator('[data-save]')).toBeEnabled();
-  const imported=page.waitForResponse(r=>r.url().endsWith('/admin/questions/import')&&r.request().method()==='POST');
+  const imported=page.waitForResponse(r=>r.url().endsWith('/admin/questions/import/file')&&r.request().method()==='POST');
   await page.locator('[data-save]').click();
   const importedResponse=await imported;expect(importedResponse.ok()).toBe(true);
-  expect(importedResponse.request().postDataJSON()).toMatchObject({grade:1,semester:'hk1',subjectId:'toan',chapterId:'kntt-toan-1-c01',lessonId:'kntt-toan-1-b01'});
+  const importedBody=await importedResponse.json();expect(importedBody.data.documentId).toBeTruthy();
+  await expect(page.locator('.modal')).toHaveCount(0);
+  await page.locator('#content-word-history').click();
+  const documentRow=page.locator('[data-word-document="'+importedBody.data.documentId+'"]');
+  await expect(documentRow).toContainText('mau-nhap-cau-hoi.docx');await expect(documentRow).toContainText('Bài 1. Các số 0, 1, 2, 3, 4, 5');
+  const downloading=page.waitForEvent('download');await documentRow.getByRole('link',{name:'Tải Word gốc',exact:true}).click();
+  expect((await downloading).suggestedFilename()).toBe('mau-nhap-cau-hoi.docx');
+  await page.locator('.modal-actions').getByRole('button',{name:'Đóng',exact:true}).click();
   await expect(page.locator('.modal')).toHaveCount(0);
   await expect(page.locator('[data-content-lesson="kntt-toan-1-b01"]')).toContainText('câu hỏi');
   await expect(page.locator('.content-row')).toHaveCount(0);

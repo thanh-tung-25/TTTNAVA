@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import {
   examHistoryHandler,
+  examCatalogHandler,
   getExamHandler,
   saveExamAnswerHandler,
   startExamHandler,
@@ -15,6 +16,7 @@ const router = Router();
 router.use(authenticateToken, requireStudent);
 router.use(primaryCourseGuard('exams'));
 router.get('/history', examHistoryHandler);
+router.get('/catalog',examCatalogHandler);
 router.post('/', rateLimit({ windowMs: 60_000, max: 10, keyPrefix: 'exam-start' }), startExamHandler);
 router.get('/:id', getExamHandler);
 router.post('/:id/answers', saveExamAnswerHandler);

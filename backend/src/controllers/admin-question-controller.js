@@ -1,5 +1,5 @@
 import { parsePagination } from '../utils/pagination.js';
-import { asyncHandler } from '../utils/errors.js';
+import { asyncHandler,badRequest } from '../utils/errors.js';
 import {
   createQuestion,
   getQuestionDetail,
@@ -82,4 +82,12 @@ export const importAiHandler = asyncHandler(async (request, response) => {
 export const importDraftsHandler = asyncHandler(async (request, response) => {
   const payload = importQuestionsSchema.parse(request.body);
   response.status(201).json({ data: await importQuestionDrafts(request.user.id, payload) });
+});
+
+export const importFileDraftsHandler=asyncHandler(async(request,response)=>{
+ let body;
+ try{body=JSON.parse(request.body.payload);}catch{throw badRequest('Thông tin câu hỏi không hợp lệ.');}
+ const payload=importQuestionsSchema.parse(body);
+ await extractDocxText(request.file.buffer);
+ response.status(201).json({data:await importQuestionDrafts(request.user.id,payload,request.file)});
 });

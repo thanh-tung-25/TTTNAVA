@@ -61,6 +61,7 @@ export default async function globalSetup() {
     await connection.query(`DELETE FROM \`${table}\``);
   }
   await connection.query('DELETE FROM questions');
+  await connection.query('DELETE FROM word_import_documents');
   await connection.query("DELETE FROM profiles WHERE role IN ('student', 'admin')");
 
   const { insertFixtureQuestions } = await import('../fixtures/questions.js');

@@ -64,12 +64,16 @@ export async function createQuestion(adminId, payload) {
   return getQuestionDetail(questionId);
 }
 
-export async function importQuestionDrafts(adminId, payload) {
+export async function importQuestionDrafts(adminId, payload, sourceFile=null) {
   const scope = await resolveQuestionScope(payload);
+  const documentId=sourceFile?randomUUID():null;
   const ids = await withTransaction(async (connection) => {
+    if(sourceFile)await connection.query('INSERT INTO word_import_documents (id,filename,original,byte_size,lesson_id,question_count,imported_by) VALUES (?,?,?,?,?,?,?)',[documentId,sourceFile.originalname.slice(0,255),sourceFile.buffer,sourceFile.buffer.length,scope.lessonId,payload.questions.length,adminId]);
     const created = [];
     for (const question of payload.questions) {
-      created.push(await insertQuestion(connection, adminId, scope.topicId, question, 'draft'));
+      const id=await insertQuestion(connection, adminId, scope.topicId, question, 'draft');
+      if(documentId)await connection.query('UPDATE questions SET import_document_id=? WHERE id=?',[documentId,id]);
+      created.push(id);
     }
     return created;
   });
@@ -77,5 +81,6 @@ export async function importQuestionDrafts(adminId, payload) {
     created: ids.length,
     status: 'draft',
     ids,
+    documentId,
   };
 }

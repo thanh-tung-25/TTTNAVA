@@ -6,6 +6,7 @@ import { renderResult } from './exam-result.js';
 import { flushSave } from './exam-save.js';
 
 export async function startExam(topicId, button) {
+  const originalLabel=button.textContent;
   button.disabled = true;
   button.textContent = 'Đang mở đề…';
   const confirmed = await confirmAction('Bài thi sẽ bắt đầu tính giờ ngay. Con sẵn sàng chưa?', {
@@ -14,11 +15,11 @@ export async function startExam(topicId, button) {
   });
   if (!confirmed) {
     button.disabled = false;
-    button.textContent = 'Thi thử';
+    button.textContent = originalLabel;
     return;
   }
   try {
-    const payload = await api('/api/v1/exams', { method: 'POST', body: { topicId } });
+    const payload = await api('/api/v1/exams', { method: 'POST', body: typeof topicId==='object'?topicId:{topicId} });
     store.attempt = payload.data;
     store.current = 0;
     const now = Date.now();
@@ -29,7 +30,7 @@ export async function startExam(topicId, button) {
     startTicker();
   } catch (error) {
     button.disabled = false;
-    button.textContent = 'Thi thử';
+    button.textContent = originalLabel;
     window.alert(error.message);
   }
 }

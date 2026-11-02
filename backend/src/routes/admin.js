@@ -13,6 +13,7 @@ import {
   importConfigHandler,
   importDocxHandler,
   importDraftsHandler,
+  importFileDraftsHandler,
   listQuestionsHandler,
   questionAuditHandler,
   questionDetailHandler,
@@ -38,6 +39,7 @@ router.get('/curriculum/tree', curriculumTreeHandler);
 router.get('/questions', listQuestionsHandler);
 router.get('/questions/import/config', importConfigHandler);
 router.post('/questions/import', importDraftsHandler);
+router.post('/questions/import/file', uploadDocx, importFileDraftsHandler);
 router.post('/questions/import/docx', uploadDocx, importDocxHandler);
 router.post('/questions/import/ai', uploadDocx, importAiHandler);
 router.post('/questions', createQuestionHandler);

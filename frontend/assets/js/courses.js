@@ -1,6 +1,7 @@
 import {api,el,formatDate} from './api.js';
 import {initPage} from './ui-core.js';
 import {enterCourse} from './course-context.js';
+import {paymentQrView} from './payment-qr-view.js';
 const grid=document.querySelector('#course-grid'),orders=document.querySelector('#course-orders'),dialog=document.querySelector('#course-dialog'),detail=document.querySelector('#course-detail'),notice=document.querySelector('#course-notice');
 const status={pending:'⏳ Chờ admin xác nhận',approved:'✓ Đã xác nhận',rejected:'Chưa được xác nhận',cancelled:'Đã hủy'};
 const money=v=>v==null?'Đang cập nhật học phí':new Intl.NumberFormat('vi-VN',{style:'currency',currency:'VND'}).format(v);
@@ -17,24 +18,34 @@ function renderCourses(){
 }
 function showCourse(c){
  const error=el('p',{class:'course-form-error',role:'alert'});
- detail.replaceChildren(el('h2',{text:c.title}),el('p',{text:c.description}),el('p',{class:'course-price',text:money(c.price_vnd)}),el('p',{text:c.duration_days?'Thời hạn: '+c.duration_days+' ngày sau khi admin xác nhận.':'Thời hạn: vĩnh viễn.'}));
+ const heading=el('header',{class:'checkout-heading'},[
+  el('div',{},[el('p',{class:'checkout-eyebrow',text:'ĐĂNG KÝ KHÓA HỌC'}),el('h2',{id:'checkout-title',text:c.title}),el('p',{class:'checkout-description',text:c.description})]),
+  el('div',{class:'checkout-price'},[el('strong',{text:money(c.price_vnd)}),el('span',{text:c.duration_days?c.duration_days+' ngày sau khi xác nhận':'Học trọn đời · Thanh toán một lần'})]),
+ ]);
+ detail.replaceChildren(heading);dialog.setAttribute('aria-labelledby','checkout-title');
  const pending=c.order_status==='pending';
- if(pending)detail.append(el('p',{text:'Yêu cầu đang chờ admin kiểm tra thanh toán. Con xem trạng thái tại mục Đăng ký của con.'}));
- else if(c.price_vnd==null||!c.payment_instructions.trim()||!c.active)detail.append(el('p',{text:'Khóa học đang chờ admin cập nhật thông tin thanh toán hoặc đang tạm ngừng. Con vui lòng liên hệ quản trị viên.'}));
+ if(pending)detail.append(el('p',{class:'checkout-message',text:'Yêu cầu đang chờ admin kiểm tra thanh toán. Bạn có thể xem trạng thái tại mục Đăng ký của con.'}));
+ else if(c.price_vnd==null||!c.payment_instructions.trim()||!c.active)detail.append(el('p',{class:'checkout-message',text:'Khóa học đang chờ cập nhật thông tin thanh toán. Vui lòng liên hệ quản trị viên.'}));
  else {
   const reference='TTNAVA '+profile.username+' '+c.id;
-  detail.append(el('ol',{class:'payment-steps'},['Quét QR hoặc chuyển khoản theo hướng dẫn','Nhập đúng số tiền và nội dung chuyển khoản','Bấm gửi yêu cầu, chờ admin xác nhận'].map(text=>el('li',{text}))));
-  detail.append(el('h3',{text:'Hướng dẫn thanh toán'}),el('div',{class:'payment-instructions',text:c.payment_instructions}));
-  if(c.has_payment_qr)detail.append(el('figure',{class:'payment-qr-box'},[el('img',{class:'payment-qr-image',src:'/api/v1/courses/payment-qr/'+encodeURIComponent(c.id)+'?v='+Date.now(),alt:'QR nhận thanh toán của admin cho '+c.title,width:260,height:260}),el('figcaption',{text:'Dùng ứng dụng ngân hàng quét QR. Kiểm tra người nhận; nhập đúng số tiền và nội dung bên dưới nếu QR chưa điền sẵn.'})]));
-  const copy=button('Sao chép nội dung',async()=>{try{await navigator.clipboard.writeText(reference);copy.textContent='Đã sao chép';}catch{error.textContent='Con có thể chọn và sao chép dòng nội dung chuyển khoản bên trên.';}});
-  detail.append(el('div',{class:'payment-summary'},[el('p',{text:'Số tiền: '+money(c.price_vnd)}),el('p',{text:'Nội dung chuyển khoản:'}),el('code',{text:reference}),copy]),el('p',{text:'Sau khi chuyển khoản, phụ huynh điền thông tin bên dưới. Khóa học chỉ mở khi admin đối soát và xác nhận. Đăng ký thêm khóa không ảnh hưởng những khóa con đang học.'}));
-  const form=el('form',{class:'course-form'});
-  for(const [name,label,max]of [['payer_name','Tên người chuyển khoản',120],['payment_reference','Mã giao dịch / nội dung chuyển khoản',150],['note','Ghi chú thêm (không bắt buộc)',1000]])form.append(el('label',{},[el('span',{text:label}),el(name==='note'?'textarea':'input',{name,maxlength:max,...(name!=='note'?{required:'',minlength:name==='payer_name'?2:3}:{})})]));
-  const submit=el('button',{type:'submit',class:'btn btn-primary',text:'Gửi yêu cầu xác nhận'});form.append(error,submit);
+  const scan=el('section',{class:'checkout-scan'},[el('span',{class:'checkout-step',text:'1 · CHUYỂN KHOẢN'}),el('h3',{text:'Quét mã để thanh toán'})]);
+  if(c.has_payment_qr)scan.append(el('figure',{class:'payment-qr-box'},[paymentQrView('/api/v1/courses/payment-qr/'+encodeURIComponent(c.id)+'?v='+Date.now(),c.payment_qr_crop,'QR nhận thanh toán của admin cho '+c.title),el('figcaption',{text:'Mở ứng dụng ngân hàng để quét mã'})]));
+  else scan.append(el('p',{class:'muted',text:'Chuyển khoản theo thông tin người nhận bên cạnh.'}));
+  scan.append(el('p',{class:'checkout-scan-note',text:'Kiểm tra đúng người nhận, số tiền và nội dung trước khi xác nhận trên ứng dụng ngân hàng.'}));
+  const right=el('div',{class:'checkout-information'});
+  const recipient=el('section',{class:'checkout-recipient'},[el('span',{class:'checkout-label',text:'THÔNG TIN NHẬN TIỀN'}),el('div',{class:'payment-instructions',text:c.payment_instructions})]);
+  const copy=button('Sao chép',async()=>{try{await navigator.clipboard.writeText(reference);copy.textContent='Đã sao chép';}catch{error.textContent='Bạn có thể chọn và sao chép nội dung chuyển khoản bên trên.';}});
+  recipient.append(el('div',{class:'payment-summary'},[el('div',{class:'checkout-amount'},[el('span',{text:'Số tiền cần chuyển'}),el('strong',{text:money(c.price_vnd)})]),el('span',{class:'checkout-label',text:'NỘI DUNG CHUYỂN KHOẢN'}),el('div',{class:'checkout-reference'},[el('code',{text:reference}),copy])]));
+  const form=el('form',{class:'course-form checkout-confirm'});
+  form.append(el('span',{class:'checkout-step',text:'2 · SAU KHI CHUYỂN KHOẢN'}),el('h3',{text:'Gửi thông tin xác nhận'}));
+  const fields=el('div',{class:'checkout-fields'});
+  for(const [name,label,max,placeholder]of [['payer_name','Tên người chuyển khoản',120,'Họ và tên chủ tài khoản'],['payment_reference','Mã giao dịch / nội dung chuyển khoản',150,'Mã giao dịch hoặc nội dung đã ghi']])fields.append(el('label',{},[el('span',{text:label}),el('input',{name,maxlength:max,required:'',minlength:name==='payer_name'?2:3,placeholder,autocomplete:name==='payer_name'?'name':'off'})]));
+  form.append(fields,el('details',{class:'checkout-note'},[el('summary',{text:'Thêm ghi chú (không bắt buộc)'}),el('textarea',{name:'note',maxlength:1000,'aria-label':'Ghi chú thêm',placeholder:'Thông tin cần nhắn cho admin…'})]));
+  const submit=el('button',{type:'submit',class:'btn btn-primary',text:'Gửi yêu cầu xác nhận'});form.append(error,submit,el('p',{class:'checkout-approval',text:'Khóa học được mở sau khi admin kiểm tra và xác nhận khoản thanh toán.'}));
   form.onsubmit=async event=>{event.preventDefault();submit.disabled=true;error.textContent='';try{await api('/api/v1/courses/orders',{method:'POST',body:{course_id:c.id,...Object.fromEntries(new FormData(form))}});dialog.close();notice.textContent='Đã gửi yêu cầu. Khóa học sẽ mở sau khi admin xác nhận thanh toán.';await refresh();}catch(e){error.textContent=e.message;}finally{submit.disabled=false;}};
-  detail.append(form);
+  right.append(recipient,form);detail.append(el('div',{class:'checkout-layout'},[scan,right]));
  }
- dialog.showModal();
+ dialog.showModal();dialog.scrollTop=0;
 }
 async function refresh(){
  const [catalog,history]=await Promise.all([api('/api/v1/courses'),api('/api/v1/courses/orders')]);courses=catalog.data;renderCourses();

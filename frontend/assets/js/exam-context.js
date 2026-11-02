@@ -18,6 +18,9 @@ export const elements = {
 export const store = {
   profile: null,
   subjectId: 'toan',
+  mode:'chapter',
+  semester:'all',
+  catalog:null,
   attempt: null,
   current: 0,
   selection: null,

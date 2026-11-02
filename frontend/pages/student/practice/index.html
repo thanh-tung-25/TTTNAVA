@@ -8,17 +8,18 @@
   <link rel="stylesheet" href="/assets/css/base.css">
   <link rel="stylesheet" href="/assets/css/components.css">
   <link rel="stylesheet" href="/assets/css/pages.css">
-<link rel="stylesheet" href="/assets/css/student-depth.css"></head>
-<body data-role="student">
+<link rel="stylesheet" href="/assets/css/student-depth.css"><link rel="stylesheet" href="/assets/css/primary-practice.css"><link rel="stylesheet" href="/assets/css/student-assessment.css"></head>
+<body data-role="student" class="primary-practice student-polished">
   <header id="app-header"></header>
   <main class="page">
     <section id="setup-view">
-      <div class="page-head">
+      <div class="page-head practice-welcome">
         <div>
-          <p class="eyebrow">Luyện tập</p>
+          <p class="eyebrow">GÓC LUYỆN TẬP <span id="practice-grade"></span></p>
           <h1>Chọn chủ đề con muốn học</h1>
           <p>Mỗi lượt có 10 câu, có giải thích ngay sau mỗi câu.</p>
         </div>
+        <img src="/assets/images/mascot-owl.svg" class="practice-welcome-mascot" width="140" height="148" alt="Cú nhỏ đồng hành cùng con">
       </div>
       <div class="tabs" id="subject-tabs" role="tablist" aria-label="Chọn môn học"></div>
       <div id="topic-list" class="topic-list"><div class="loading">Đang tải chủ đề…</div></div>

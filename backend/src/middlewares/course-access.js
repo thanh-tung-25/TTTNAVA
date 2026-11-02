@@ -40,6 +40,11 @@ export function primaryCourseGuard(area) {
    if(parts[0]==='subjects')return next();
    if(parts[0]==='topics'&&parts[1]){const [topic]=await query('SELECT grade FROM topics WHERE id=?',[parts[1]]);grade=topic?.grade;}
    else grade=Number(r.query.grade);
+  } else if(area==='exams'&&parts[0]==='catalog'){
+   const id=r.get('X-Course-Id');grade=id?.startsWith('grade-')?Number(id.slice(6)):r.user.grade;
+  } else if(area==='exams'&&r.body?.mode==='chapter'&&r.body?.chapterId){
+   const [chapter]=await query('SELECT grade FROM curriculum_chapters WHERE id=?',[r.body.chapterId]);
+   if(!chapter)throw new AppError(404,'CHAPTER_NOT_FOUND','Không tìm thấy chủ đề.');grade=chapter.grade;
   } else if(r.body?.topicId){const [topic]=await query('SELECT grade FROM topics WHERE id=?',[r.body.topicId]);grade=topic?.grade;}
   else if(parts[0]&&parts[0]!=='lobby'){
    const table={practice:'practice_sessions',exams:'exam_attempts',challenges:'challenges'}[area];
@@ -53,6 +58,7 @@ export function primaryCourseGuard(area) {
   if(area==='catalog'&&(!Number.isInteger(Number(grade))||Number(grade)<1||Number(grade)>5))return next();
   if(!Number.isInteger(Number(grade))||Number(grade)<1||Number(grade)>5)throw new AppError(403,'COURSE_LOCKED','Con chọn khóa Lớp 1–5 trước khi vào học.');
   await requireCourse(r.user.id,'grade-'+grade);
+  r.primaryGrade=Number(grade);
   if(area==='challenges'&&r.body?.opponentUsername){
    const [opponent]=await query('SELECT id FROM profiles WHERE username=?',[r.body.opponentUsername]);
    if(opponent)await requireCourse(opponent.id,'grade-'+grade);

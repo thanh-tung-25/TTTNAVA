@@ -9,7 +9,7 @@ import { finalizeAttempt } from './exam-finalize.js';
 
 export async function ownedAttempt(studentId, attemptId) {
   const rows = await query(
-    `SELECT ea.*, t.name AS topic_name, t.grade, t.subject_id, s.name AS subject_name
+    `SELECT ea.*, COALESCE(ea.exam_title,t.name) AS topic_name, t.grade, t.subject_id, s.name AS subject_name
      FROM exam_attempts ea
      JOIN topics t ON t.id = ea.topic_id
      JOIN subjects s ON s.id = t.subject_id
@@ -112,6 +112,7 @@ export async function buildState(studentId, attemptId) {
       subjectName: attempt.subject_name,
     },
     totalQuestions: total,
+    scope:parseJson(attempt.scope_json),
     durationSeconds: Number(attempt.duration_seconds),
     answeredCount: Number(attempt.answered_count),
     correctCount: submitted ? correct : null,

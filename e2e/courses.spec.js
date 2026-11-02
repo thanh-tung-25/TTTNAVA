@@ -21,7 +21,7 @@ test.describe('Purchase approval end to end in isolated test database',()=>{
   for(const user of [student,admin])if(user)await query('DELETE FROM profiles WHERE id=?',[user.id]);
   if(original)for(const row of original)await query('UPDATE courses SET price_vnd=?,duration_days=?,payment_instructions=?,active=? WHERE id=?',[row.price_vnd,row.duration_days,row.payment_instructions,row.active,row.id]);
   await query("DELETE FROM course_payment_qr WHERE course_key='default'");
-  if(originalQr)await query('INSERT INTO course_payment_qr(course_key,image,mime_type,uploaded_by) VALUES (?,?,?,?)',['default',originalQr.image,originalQr.mime_type,originalQr.uploaded_by]);
+  if(originalQr)await query('INSERT INTO course_payment_qr(course_key,image,mime_type,uploaded_by,crop_json) VALUES (?,?,?,?,?)',['default',originalQr.image,originalQr.mime_type,originalQr.uploaded_by,originalQr.crop_json]);
   await closePool();
  });
  test('admin uploads and previews shared QR',async({page})=>{
@@ -35,6 +35,7 @@ test.describe('Purchase approval end to end in isolated test database',()=>{
   await expect(page.locator('#admin-course-notice')).toContainText('Đã lưu ảnh QR');
   await expect(page.locator('#payment-qr-preview img')).toBeVisible();
   expect(await page.locator('#payment-qr-preview img').evaluate(i=>i.complete&&i.naturalWidth>0)).toBe(true);
+  await query("UPDATE course_payment_qr SET crop_json=? WHERE course_key='default'",[JSON.stringify({x:0,y:0,width:1,height:1,sourceWidth:1,sourceHeight:1})]);
  });
  test('locked course → QR registration → approval → purchase another course → revoke',async({page,browser,baseURL})=>{
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -49,6 +50,10 @@ test.describe('Purchase approval end to end in isolated test database',()=>{
   await tile.getByRole('button',{name:'Xem khóa học'}).click();
   await expect(page.locator('#course-dialog')).toBeVisible();
   await expect(page.locator('#course-dialog .payment-qr-image')).toBeVisible();
+  await expect(page.locator('#course-dialog .payment-qr-crop')).toBeVisible();
+  await expect(page.locator('#course-dialog .checkout-layout')).toBeVisible();
+  expect(await page.locator('#course-dialog').evaluate(d=>d.scrollWidth<=d.clientWidth)).toBe(true);
+  await page.screenshot({path:`test-results/course-checkout-${test.info().project.name}.png`,fullPage:true});
   await expect(page.locator('.payment-summary code')).toContainText(student.username+' grade-2');
   await page.locator('[name=payer_name]').fill('Phụ huynh kiểm thử');await page.locator('[name=payment_reference]').fill('TEST-'+student.username);await page.getByRole('button',{name:'Gửi yêu cầu xác nhận'}).click();
   await expect(page.locator('#course-dialog')).not.toBeVisible();

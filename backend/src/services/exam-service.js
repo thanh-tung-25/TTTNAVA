@@ -6,6 +6,7 @@ import { parseJson } from '../utils/normalize.js';
 import { validateClientAnswer, isAnswerCorrect } from '../utils/answers.js';
 import { addSeconds, toIso } from '../utils/time.js';
 import { selectQuestionsForRound } from './question-service.js';
+import {selectScopedExam} from './exam-scope-service.js';
 import {
   EXAM_DURATION_SECONDS,
   EXAM_GRACE_SECONDS,
@@ -14,24 +15,27 @@ import {
 import { finalizeAttempt } from './exam-finalize.js';
 import { buildState, ownedAttempt } from './exam-state.js';
 
-export async function startExam(studentId, topicId) {
+export async function startExam(studentId, topicId, scopedRequest=null, grade=null) {
   const id = randomUUID();
   const seed = sha256Hex(`${id}|exam`);
   const now = new Date();
-  const endsAt = addSeconds(now, EXAM_DURATION_SECONDS);
-  const { questionIds } = await selectQuestionsForRound({
+  const selection = scopedRequest?await selectScopedExam(grade,scopedRequest,seed):await selectQuestionsForRound({
     studentId,
     topicId,
     count: EXAM_SIZE,
     seed,
   });
+  const {questionIds}=selection;
+  const duration=selection.durationSeconds||EXAM_DURATION_SECONDS;
+  const endsAt=addSeconds(now,duration);
+  topicId=selection.topicId||topicId;
 
   await withTransaction(async (connection) => {
     await connection.query(
       `INSERT INTO exam_attempts
-       (id, student_id, topic_id, total_questions, duration_seconds, seed, started_at, ends_at)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
-      [id, studentId, topicId, questionIds.length, EXAM_DURATION_SECONDS, seed, now, endsAt],
+       (id, student_id, topic_id, total_questions, duration_seconds, seed, started_at, ends_at,exam_title,scope_json)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?,?,?)`,
+      [id, studentId, topicId, questionIds.length, duration, seed, now, endsAt,selection.title||null,selection.scope?JSON.stringify(selection.scope):null],
     );
     for (let index = 0; index < questionIds.length; index += 1) {
       await connection.query(

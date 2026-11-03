@@ -9,7 +9,7 @@ describe('Danh mục và dữ liệu kiểm thử câu hỏi', () => {
       "SELECT COUNT(*) AS total FROM questions WHERE id LIKE 'fixture-q-%'",
     );
     expect(Number(subjects[0].total)).toBe(3);
-    expect(Number(topics[0].total)).toBe(777);
+    expect(Number(topics[0].total)).toBe(912);
     expect(Number(fixtures[0].total)).toBe(28);
   });
 
@@ -49,8 +49,8 @@ describe('Danh mục và dữ liệu kiểm thử câu hỏi', () => {
        WHERE l.id IS NULL`,
     );
     expect(Number(years[0].total)).toBe(1);
-    expect(Number(chapters[0].total)).toBe(146);
-    expect(Number(lessons[0].total)).toBe(777);
+    expect(Number(chapters[0].total)).toBe(166);
+    expect(Number(lessons[0].total)).toBe(912);
     expect(Number(uncovered[0].total)).toBe(0);
   });
 
@@ -76,7 +76,7 @@ describe('Danh mục và dữ liệu kiểm thử câu hỏi', () => {
       'SELECT subject_id, COUNT(*) AS total FROM topics GROUP BY subject_id ORDER BY subject_id',
     );
     expect(rows.map((row) => [row.subject_id, Number(row.total)])).toEqual([
-      ['tieng-anh', 30],
+      ['tieng-anh', 165],
       ['tieng-viet', 372],
       ['toan', 375],
     ]);

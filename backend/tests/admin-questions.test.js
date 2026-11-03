@@ -228,7 +228,7 @@ describe('Quản trị câu hỏi và thống kê', () => {
     expect(stats.status).toBe(200);
     expect(stats.body.data.bank.questions).toBeGreaterThanOrEqual(28);
     expect(stats.body.data.bank.publishedQuestions).toBeGreaterThanOrEqual(28);
-    expect(stats.body.data.bank.topics).toBe(777);
+    expect(stats.body.data.bank.topics).toBe(912);
     expect(stats.body.data.students.total).toBeGreaterThanOrEqual(1);
     expect(stats.body.data.challenges.robot).toBeGreaterThanOrEqual(1);
     expect(stats.body.data.bySubject).toHaveLength(3);

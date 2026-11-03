@@ -1,0 +1,370 @@
+{
+  "book": "Tiếng Anh 5 – Global Success",
+  "grade": 5,
+  "subjectId": "tieng-anh",
+  "yearId": "2026-2027",
+  "sources": [
+    "https://cuppy.hoclieu.vn/book/g5-english-global-success"
+  ],
+  "note": "Mục lục theo sách; từ vựng và câu hỏi bổ trợ tự soạn, có từ mở rộng. Không thay thế bài nghe, luyện nói và các bài tập nguyên bản SGK.",
+  "chapters": [
+    {
+      "id": "gs-en-5-c01",
+      "name": "Chủ đề 1: Unit 1–5",
+      "semester": "hk1",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "id": "gs-en-5-starter",
+          "name": "Starter – Ôn tập khởi động",
+          "title": "Starter – Ôn tập khởi động",
+          "kind": "starter",
+          "unitNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-en-5-u01",
+          "name": "Unit 1. All about me!",
+          "title": "Unit 1. All about me!",
+          "kind": "unit",
+          "unitNumbers": [
+            1
+          ],
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-en-5-u02",
+          "name": "Unit 2. Our homes",
+          "title": "Unit 2. Our homes",
+          "kind": "unit",
+          "unitNumbers": [
+            2
+          ],
+          "sortOrder": 3
+        },
+        {
+          "id": "gs-en-5-u03",
+          "name": "Unit 3. My foreign friends",
+          "title": "Unit 3. My foreign friends",
+          "kind": "unit",
+          "unitNumbers": [
+            3
+          ],
+          "sortOrder": 4
+        },
+        {
+          "id": "gs-en-5-u04",
+          "name": "Unit 4. Our free-time activities",
+          "title": "Unit 4. Our free-time activities",
+          "kind": "unit",
+          "unitNumbers": [
+            4
+          ],
+          "sortOrder": 5
+        },
+        {
+          "id": "gs-en-5-u05",
+          "name": "Unit 5. My future job",
+          "title": "Unit 5. My future job",
+          "kind": "unit",
+          "unitNumbers": [
+            5
+          ],
+          "sortOrder": 6
+        },
+        {
+          "id": "gs-en-5-review1",
+          "name": "Review 1 – Unit 1–5",
+          "title": "Review 1 – Unit 1–5",
+          "kind": "review",
+          "unitNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "sortOrder": 7
+        },
+        {
+          "id": "gs-en-5-fun1",
+          "name": "Extension activities 1 – Unit 1–5",
+          "title": "Extension activities 1 – Unit 1–5",
+          "kind": "extension",
+          "unitNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "sortOrder": 8
+        }
+      ]
+    },
+    {
+      "id": "gs-en-5-c02",
+      "name": "Chủ đề 2: Unit 6–10",
+      "semester": "hk1",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "id": "gs-en-5-u06",
+          "name": "Unit 6. Our school rooms",
+          "title": "Unit 6. Our school rooms",
+          "kind": "unit",
+          "unitNumbers": [
+            6
+          ],
+          "sortOrder": 9
+        },
+        {
+          "id": "gs-en-5-u07",
+          "name": "Unit 7. Our favourite school activities",
+          "title": "Unit 7. Our favourite school activities",
+          "kind": "unit",
+          "unitNumbers": [
+            7
+          ],
+          "sortOrder": 10
+        },
+        {
+          "id": "gs-en-5-u08",
+          "name": "Unit 8. In our classroom",
+          "title": "Unit 8. In our classroom",
+          "kind": "unit",
+          "unitNumbers": [
+            8
+          ],
+          "sortOrder": 11
+        },
+        {
+          "id": "gs-en-5-u09",
+          "name": "Unit 9. Our outdoor activities",
+          "title": "Unit 9. Our outdoor activities",
+          "kind": "unit",
+          "unitNumbers": [
+            9
+          ],
+          "sortOrder": 12
+        },
+        {
+          "id": "gs-en-5-u10",
+          "name": "Unit 10. Our school trip",
+          "title": "Unit 10. Our school trip",
+          "kind": "unit",
+          "unitNumbers": [
+            10
+          ],
+          "sortOrder": 13
+        },
+        {
+          "id": "gs-en-5-review2",
+          "name": "Review 2 – Unit 6–10",
+          "title": "Review 2 – Unit 6–10",
+          "kind": "review",
+          "unitNumbers": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "sortOrder": 14
+        },
+        {
+          "id": "gs-en-5-fun2",
+          "name": "Extension activities 2 – Unit 6–10",
+          "title": "Extension activities 2 – Unit 6–10",
+          "kind": "extension",
+          "unitNumbers": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "sortOrder": 15
+        }
+      ]
+    },
+    {
+      "id": "gs-en-5-c03",
+      "name": "Chủ đề 3: Unit 11–15",
+      "semester": "hk2",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "id": "gs-en-5-u11",
+          "name": "Unit 11. Family time",
+          "title": "Unit 11. Family time",
+          "kind": "unit",
+          "unitNumbers": [
+            11
+          ],
+          "sortOrder": 16
+        },
+        {
+          "id": "gs-en-5-u12",
+          "name": "Unit 12. Our Tet holiday",
+          "title": "Unit 12. Our Tet holiday",
+          "kind": "unit",
+          "unitNumbers": [
+            12
+          ],
+          "sortOrder": 17
+        },
+        {
+          "id": "gs-en-5-u13",
+          "name": "Unit 13. Our special days",
+          "title": "Unit 13. Our special days",
+          "kind": "unit",
+          "unitNumbers": [
+            13
+          ],
+          "sortOrder": 18
+        },
+        {
+          "id": "gs-en-5-u14",
+          "name": "Unit 14. Staying healthy",
+          "title": "Unit 14. Staying healthy",
+          "kind": "unit",
+          "unitNumbers": [
+            14
+          ],
+          "sortOrder": 19
+        },
+        {
+          "id": "gs-en-5-u15",
+          "name": "Unit 15. Our health",
+          "title": "Unit 15. Our health",
+          "kind": "unit",
+          "unitNumbers": [
+            15
+          ],
+          "sortOrder": 20
+        },
+        {
+          "id": "gs-en-5-review3",
+          "name": "Review 3 – Unit 11–15",
+          "title": "Review 3 – Unit 11–15",
+          "kind": "review",
+          "unitNumbers": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "sortOrder": 21
+        },
+        {
+          "id": "gs-en-5-fun3",
+          "name": "Extension activities 3 – Unit 11–15",
+          "title": "Extension activities 3 – Unit 11–15",
+          "kind": "extension",
+          "unitNumbers": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "sortOrder": 22
+        }
+      ]
+    },
+    {
+      "id": "gs-en-5-c04",
+      "name": "Chủ đề 4: Unit 16–20",
+      "semester": "hk2",
+      "sortOrder": 4,
+      "lessons": [
+        {
+          "id": "gs-en-5-u16",
+          "name": "Unit 16. Seasons and the weather",
+          "title": "Unit 16. Seasons and the weather",
+          "kind": "unit",
+          "unitNumbers": [
+            16
+          ],
+          "sortOrder": 23
+        },
+        {
+          "id": "gs-en-5-u17",
+          "name": "Unit 17. Stories for children",
+          "title": "Unit 17. Stories for children",
+          "kind": "unit",
+          "unitNumbers": [
+            17
+          ],
+          "sortOrder": 24
+        },
+        {
+          "id": "gs-en-5-u18",
+          "name": "Unit 18. Means of transport",
+          "title": "Unit 18. Means of transport",
+          "kind": "unit",
+          "unitNumbers": [
+            18
+          ],
+          "sortOrder": 25
+        },
+        {
+          "id": "gs-en-5-u19",
+          "name": "Unit 19. Places of interest",
+          "title": "Unit 19. Places of interest",
+          "kind": "unit",
+          "unitNumbers": [
+            19
+          ],
+          "sortOrder": 26
+        },
+        {
+          "id": "gs-en-5-u20",
+          "name": "Unit 20. Our summer holidays",
+          "title": "Unit 20. Our summer holidays",
+          "kind": "unit",
+          "unitNumbers": [
+            20
+          ],
+          "sortOrder": 27
+        },
+        {
+          "id": "gs-en-5-review4",
+          "name": "Review 4 – Unit 16–20",
+          "title": "Review 4 – Unit 16–20",
+          "kind": "review",
+          "unitNumbers": [
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "sortOrder": 28
+        },
+        {
+          "id": "gs-en-5-fun4",
+          "name": "Extension activities 4 – Unit 16–20",
+          "title": "Extension activities 4 – Unit 16–20",
+          "kind": "extension",
+          "unitNumbers": [
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "sortOrder": 29
+        }
+      ]
+    }
+  ]
+}

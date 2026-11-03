@@ -142,10 +142,32 @@ async function main() {
         }
       }
     }
+    let englishChapters=0,englishLessons=0;
+    for(const grade of [1,2,3,4,5]) {
+      const book=await readJson(`english-grade${grade}-gs.json`);
+      const lessons=book.chapters.flatMap(c=>c.lessons);
+      const expected=grade<=2?24:29;
+      if(lessons.length!==expected || new Set(lessons.map(l=>l.id)).size!==expected)throw new Error(`Mục lục Tiếng Anh ${grade} không hợp lệ`);
+      englishChapters+=book.chapters.length;englishLessons+=lessons.length;
+      await connection.query('UPDATE curriculum_chapters SET is_legacy=1 WHERE id IN (?,?)',
+        [`chapter-tieng-anh-${grade}-hk1`,`chapter-tieng-anh-${grade}-hk2`]);
+      for(const chapter of book.chapters) {
+        await connection.query(`INSERT INTO curriculum_chapters
+          (id,school_year_id,grade,semester,subject_id,name,slug,sort_order,book_label)
+          VALUES (?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE book_label=VALUES(book_label)`,
+          [chapter.id,book.yearId,grade,chapter.semester,'tieng-anh',chapter.name,chapter.id,chapter.sortOrder,book.book]);
+        for(const lesson of chapter.lessons) {
+          await connection.query(`INSERT IGNORE INTO topics (id,subject_id,grade,name,slug,sort_order)
+            VALUES (?,'tieng-anh',?,?,?,?)`,[lesson.id,grade,lesson.name,lesson.id,lesson.sortOrder]);
+          await connection.query(`INSERT IGNORE INTO curriculum_lessons (id,chapter_id,topic_id,name,sort_order)
+            VALUES (?,?,?,?,?)`,[lesson.id,chapter.id,lesson.id,lesson.name,lesson.sortOrder]);
+        }
+      }
+    }
     await connection.commit();
     console.log(
       `Đã đồng bộ ${subjects.length} môn, ${topics.length} chủ đề, `
-      + `${curriculum.chapters.length} chương và ${curriculum.lessons.length} bài học cũ; khung Toán 1–5 Kết nối tri thức gồm ${bookChapterCount} chủ đề, ${bookLessonCount} bài; Tiếng Việt 1 gồm ${vietnamese.chapters.length} chủ đề, ${vietnameseLessons.length} bài; Tiếng Việt 2–5 gồm ${vietnamesePrimaryChapters} chủ đề, ${vietnamesePrimaryLessons} bài/bộ ôn tập. Không nhập câu hỏi mẫu.`,
+      + `${curriculum.chapters.length} chương và ${curriculum.lessons.length} bài học cũ; khung Toán 1–5 Kết nối tri thức gồm ${bookChapterCount} chủ đề, ${bookLessonCount} bài; Tiếng Việt 1 gồm ${vietnamese.chapters.length} chủ đề, ${vietnameseLessons.length} bài; Tiếng Việt 2–5 gồm ${vietnamesePrimaryChapters} chủ đề, ${vietnamesePrimaryLessons} bài/bộ ôn tập; Tiếng Anh 1–5 gồm ${englishChapters} chủ đề, ${englishLessons} bộ. Không nhập câu hỏi mẫu.`,
     );
   } catch (error) {
     await connection.rollback();

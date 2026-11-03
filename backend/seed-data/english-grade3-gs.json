@@ -1,0 +1,370 @@
+{
+  "book": "Tiếng Anh 3 – Global Success",
+  "grade": 3,
+  "subjectId": "tieng-anh",
+  "yearId": "2026-2027",
+  "sources": [
+    "https://cuppy.hoclieu.vn/book/g3-english-global-success"
+  ],
+  "note": "Mục lục theo sách; từ vựng và câu hỏi bổ trợ tự soạn, có từ mở rộng. Không thay thế bài nghe, luyện nói và các bài tập nguyên bản SGK.",
+  "chapters": [
+    {
+      "id": "gs-en-3-c01",
+      "name": "Chủ đề 1: Unit 1–5",
+      "semester": "hk1",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "id": "gs-en-3-starter",
+          "name": "Starter – Ôn tập khởi động",
+          "title": "Starter – Ôn tập khởi động",
+          "kind": "starter",
+          "unitNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-en-3-u01",
+          "name": "Unit 1. Hello",
+          "title": "Unit 1. Hello",
+          "kind": "unit",
+          "unitNumbers": [
+            1
+          ],
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-en-3-u02",
+          "name": "Unit 2. Our names",
+          "title": "Unit 2. Our names",
+          "kind": "unit",
+          "unitNumbers": [
+            2
+          ],
+          "sortOrder": 3
+        },
+        {
+          "id": "gs-en-3-u03",
+          "name": "Unit 3. Our friends",
+          "title": "Unit 3. Our friends",
+          "kind": "unit",
+          "unitNumbers": [
+            3
+          ],
+          "sortOrder": 4
+        },
+        {
+          "id": "gs-en-3-u04",
+          "name": "Unit 4. Our bodies",
+          "title": "Unit 4. Our bodies",
+          "kind": "unit",
+          "unitNumbers": [
+            4
+          ],
+          "sortOrder": 5
+        },
+        {
+          "id": "gs-en-3-u05",
+          "name": "Unit 5. My hobbies",
+          "title": "Unit 5. My hobbies",
+          "kind": "unit",
+          "unitNumbers": [
+            5
+          ],
+          "sortOrder": 6
+        },
+        {
+          "id": "gs-en-3-review1",
+          "name": "Review 1 – Unit 1–5",
+          "title": "Review 1 – Unit 1–5",
+          "kind": "review",
+          "unitNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "sortOrder": 7
+        },
+        {
+          "id": "gs-en-3-fun1",
+          "name": "Fun time 1 – Unit 1–5",
+          "title": "Fun time 1 – Unit 1–5",
+          "kind": "fun",
+          "unitNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "sortOrder": 8
+        }
+      ]
+    },
+    {
+      "id": "gs-en-3-c02",
+      "name": "Chủ đề 2: Unit 6–10",
+      "semester": "hk1",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "id": "gs-en-3-u06",
+          "name": "Unit 6. Our school",
+          "title": "Unit 6. Our school",
+          "kind": "unit",
+          "unitNumbers": [
+            6
+          ],
+          "sortOrder": 9
+        },
+        {
+          "id": "gs-en-3-u07",
+          "name": "Unit 7. Classroom instructions",
+          "title": "Unit 7. Classroom instructions",
+          "kind": "unit",
+          "unitNumbers": [
+            7
+          ],
+          "sortOrder": 10
+        },
+        {
+          "id": "gs-en-3-u08",
+          "name": "Unit 8. My school things",
+          "title": "Unit 8. My school things",
+          "kind": "unit",
+          "unitNumbers": [
+            8
+          ],
+          "sortOrder": 11
+        },
+        {
+          "id": "gs-en-3-u09",
+          "name": "Unit 9. Colours",
+          "title": "Unit 9. Colours",
+          "kind": "unit",
+          "unitNumbers": [
+            9
+          ],
+          "sortOrder": 12
+        },
+        {
+          "id": "gs-en-3-u10",
+          "name": "Unit 10. Break time activities",
+          "title": "Unit 10. Break time activities",
+          "kind": "unit",
+          "unitNumbers": [
+            10
+          ],
+          "sortOrder": 13
+        },
+        {
+          "id": "gs-en-3-review2",
+          "name": "Review 2 – Unit 6–10",
+          "title": "Review 2 – Unit 6–10",
+          "kind": "review",
+          "unitNumbers": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "sortOrder": 14
+        },
+        {
+          "id": "gs-en-3-fun2",
+          "name": "Fun time 2 – Unit 6–10",
+          "title": "Fun time 2 – Unit 6–10",
+          "kind": "fun",
+          "unitNumbers": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "sortOrder": 15
+        }
+      ]
+    },
+    {
+      "id": "gs-en-3-c03",
+      "name": "Chủ đề 3: Unit 11–15",
+      "semester": "hk2",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "id": "gs-en-3-u11",
+          "name": "Unit 11. My family",
+          "title": "Unit 11. My family",
+          "kind": "unit",
+          "unitNumbers": [
+            11
+          ],
+          "sortOrder": 16
+        },
+        {
+          "id": "gs-en-3-u12",
+          "name": "Unit 12. Jobs",
+          "title": "Unit 12. Jobs",
+          "kind": "unit",
+          "unitNumbers": [
+            12
+          ],
+          "sortOrder": 17
+        },
+        {
+          "id": "gs-en-3-u13",
+          "name": "Unit 13. My house",
+          "title": "Unit 13. My house",
+          "kind": "unit",
+          "unitNumbers": [
+            13
+          ],
+          "sortOrder": 18
+        },
+        {
+          "id": "gs-en-3-u14",
+          "name": "Unit 14. My bedroom",
+          "title": "Unit 14. My bedroom",
+          "kind": "unit",
+          "unitNumbers": [
+            14
+          ],
+          "sortOrder": 19
+        },
+        {
+          "id": "gs-en-3-u15",
+          "name": "Unit 15. At the dining table",
+          "title": "Unit 15. At the dining table",
+          "kind": "unit",
+          "unitNumbers": [
+            15
+          ],
+          "sortOrder": 20
+        },
+        {
+          "id": "gs-en-3-review3",
+          "name": "Review 3 – Unit 11–15",
+          "title": "Review 3 – Unit 11–15",
+          "kind": "review",
+          "unitNumbers": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "sortOrder": 21
+        },
+        {
+          "id": "gs-en-3-fun3",
+          "name": "Fun time 3 – Unit 11–15",
+          "title": "Fun time 3 – Unit 11–15",
+          "kind": "fun",
+          "unitNumbers": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "sortOrder": 22
+        }
+      ]
+    },
+    {
+      "id": "gs-en-3-c04",
+      "name": "Chủ đề 4: Unit 16–20",
+      "semester": "hk2",
+      "sortOrder": 4,
+      "lessons": [
+        {
+          "id": "gs-en-3-u16",
+          "name": "Unit 16. My pets",
+          "title": "Unit 16. My pets",
+          "kind": "unit",
+          "unitNumbers": [
+            16
+          ],
+          "sortOrder": 23
+        },
+        {
+          "id": "gs-en-3-u17",
+          "name": "Unit 17. Our toys",
+          "title": "Unit 17. Our toys",
+          "kind": "unit",
+          "unitNumbers": [
+            17
+          ],
+          "sortOrder": 24
+        },
+        {
+          "id": "gs-en-3-u18",
+          "name": "Unit 18. Playing and doing",
+          "title": "Unit 18. Playing and doing",
+          "kind": "unit",
+          "unitNumbers": [
+            18
+          ],
+          "sortOrder": 25
+        },
+        {
+          "id": "gs-en-3-u19",
+          "name": "Unit 19. Outdoor activities",
+          "title": "Unit 19. Outdoor activities",
+          "kind": "unit",
+          "unitNumbers": [
+            19
+          ],
+          "sortOrder": 26
+        },
+        {
+          "id": "gs-en-3-u20",
+          "name": "Unit 20. At the zoo",
+          "title": "Unit 20. At the zoo",
+          "kind": "unit",
+          "unitNumbers": [
+            20
+          ],
+          "sortOrder": 27
+        },
+        {
+          "id": "gs-en-3-review4",
+          "name": "Review 4 – Unit 16–20",
+          "title": "Review 4 – Unit 16–20",
+          "kind": "review",
+          "unitNumbers": [
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "sortOrder": 28
+        },
+        {
+          "id": "gs-en-3-fun4",
+          "name": "Fun time 4 – Unit 16–20",
+          "title": "Fun time 4 – Unit 16–20",
+          "kind": "fun",
+          "unitNumbers": [
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "sortOrder": 29
+        }
+      ]
+    }
+  ]
+}

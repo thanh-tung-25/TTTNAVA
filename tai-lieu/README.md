@@ -1,5 +1,10 @@
 # Bộ câu hỏi Toán lớp 2–5 — 50 câu mỗi bài
 
+Tiếng Anh lớp 1–5 theo Global Success: **135 Word / 6.750 câu**, 50 câu cho mỗi Unit, Starter, Review hoặc bộ mở rộng (Fun time / Extension activities).
+Xem [mục lục Tiếng Anh](../cacbaitienganh1-5.md), tải [toàn bộ Word](tieng-anh-lop-1-den-5-50-cau.zip).
+Tải riêng: [Lớp 1](tieng-anh-lop-1-50-cau.zip), [Lớp 2](tieng-anh-lop-2-50-cau.zip), [Lớp 3](tieng-anh-lop-3-50-cau.zip), [Lớp 4](tieng-anh-lop-4-50-cau.zip), [Lớp 5](tieng-anh-lop-5-50-cau.zip).
+Bài tập bổ trợ tự soạn, có từ vựng mở rộng, đáp án và lời giải; không thay thế luyện nghe/nói của sách. Tất cả bộ mới được nhập dạng Nháp và lưu Word gốc tại **Word đã nạp**.
+
 Tiếng Việt lớp 1 cũng đã có bộ riêng theo phương án A: **77 bài, mỗi bài 50 câu**.
 Xem [lộ trình Tiếng Việt](../cacbaitiengviet1.md) và tải [77 Word Tiếng Việt](tieng-viet-lop-1-phuong-an-a-50-cau.zip).
 Các bài Tiếng Việt được nhập dưới dạng nháp vào đúng học kì/chủ đề/bài học; dùng cùng trang quản lý, đăng hàng loạt, luyện tập và thi thử như Toán.

@@ -1,12 +1,13 @@
 import { Router } from 'express';
 import { z } from 'zod';
-import { authenticateToken, requireStudent, requireAdmin } from '../middlewares/auth.js';
+import { authenticateToken, requireStudent, requireAdmin, requireSuperAdmin } from '../middlewares/auth.js';
 import { asyncHandler, AppError } from '../utils/errors.js';
 import { query, withTransaction, dialectSql } from '../config/db.js';
 import { listCourses, requireCourse, createOrder, updateCourse, reviewOrder } from '../services/course-service.js';
 import { rateLimit } from '../middlewares/rate-limit.js';
 import paymentRouter from './course-payment.js';
 const router=Router();router.use(authenticateToken);
+router.use('/admin',requireSuperAdmin);
 router.use(paymentRouter);
 const handle=fn=>asyncHandler(async(req,res)=>res.json({data:await fn(req)}));
 router.get('/',requireStudent,handle(r=>listCourses(r.user.id)));

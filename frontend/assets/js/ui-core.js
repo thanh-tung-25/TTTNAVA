@@ -2,6 +2,7 @@ import { api, avatarUrl, escapeHtml } from './api.js';
 import { studentNavigation, setupStudentNavigation, studentAccount } from './student-navigation.js';
 import { courseProfile } from './course-context.js';
 import { setupCourseNotifications } from './admin-course-notifications.js';
+import { adminHome, adminScope, adminLabels, adminSections, isSuperAdmin } from './admin-permissions.js';
 
 const ADMIN_NAV = [
   ['courses', '/pages/admin/courses/', 'Khóa học & thanh toán'],
@@ -9,6 +10,7 @@ const ADMIN_NAV = [
   ['students', '/pages/admin/students/', 'Học sinh'],
   ['questions', '/pages/admin/questions/', 'Nội dung học tập'],
   ['stats', '/pages/admin/stats/', 'Thống kê'],
+  ['team', '/pages/admin/team/', 'Quản trị viên'],
 ];
 
 let currentProfile = null;
@@ -16,10 +18,10 @@ let diamondTotal = null;
 
 function renderHeader(profile, role, active) {
   if(active==='worksheets')active='questions';
-  const nav = ADMIN_NAV;
-  const home = role === 'admin' ? '/pages/admin/students/' : '/pages/student/courses/';
+  const nav = role==='admin'?ADMIN_NAV.filter(([key])=>adminSections(profile).includes(key)):ADMIN_NAV;
+  const home = role === 'admin' ? adminHome(profile) : '/pages/student/courses/';
   const subtitle = role === 'admin'
-    ? 'Quản trị viên'
+    ? adminLabels[adminScope(profile)]
     : (profile.course?.title ?? (profile.grade ? `Học sinh lớp ${profile.grade}` : 'Học sinh Tiếng Trung'));
 
   const links = nav.map(([key, href, label]) => (
@@ -42,7 +44,7 @@ function renderHeader(profile, role, active) {
     ${role === 'student' ? studentNavigation(active, profile) : `<nav class="nav-scroll" aria-label="Điều hướng chính">${links}</nav>`}
   `;
   if (role === 'student') setupStudentNavigation(header, profile);
-  else setupCourseNotifications();
+  else if(isSuperAdmin(profile)) setupCourseNotifications();
 
   header.querySelector('#logout-button').addEventListener('click', async () => {
     localStorage.removeItem('ttnava-course');
@@ -61,10 +63,14 @@ export async function initPage(role, active) {
   const payload = await api('/api/v1/auth/me');
   const profile = payload.data.profile;
   if (profile.role !== role) {
-    window.location.replace(profile.role === 'admin' ? '/pages/admin/students/' : '/pages/student/home/');
+    window.location.replace(profile.role === 'admin' ? adminHome(profile) : '/pages/student/home/');
     throw new Error('SAI_VAI_TRO');
   }
   currentProfile = profile;
+  if(role==='admin'&&!adminSections(profile).includes(active==='worksheets'?'questions':active)) {
+    window.location.replace(adminHome(profile));
+    throw new Error('Bạn không có quyền quản lý phần này.');
+  }
   if(role==='student')await courseProfile(profile,active);
   renderHeader(profile, role, active);
   if (role === 'student') loadDiamonds();

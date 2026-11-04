@@ -360,3 +360,11 @@
   .card { padding: 1.4rem; }
   .grid-2 { gap: 1.1rem; }
 }
+
+/* Password visibility control */
+.password-control { position: relative; }
+.password-control .input { padding-right: 3.4rem; }
+.password-toggle { position: absolute; right: .35rem; top: 50%; transform: translateY(-50%); display: grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 12px; background: transparent; color: var(--primary-dark); cursor: pointer; }
+.password-toggle:hover { background: var(--primary-soft, #f0eaff); }
+.password-toggle:focus-visible { outline: 3px solid var(--primary); outline-offset: 1px; }
+.password-toggle [hidden] { display: none; }

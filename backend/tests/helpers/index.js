@@ -7,8 +7,6 @@ import { hashPassword } from '../../src/services/auth-service.js';
 export const PASSWORD = 'Test@123';
 export const app = createApp();
 
-let userCounter = 0;
-
 export async function createTestUser({
   username,
   role = 'student',
@@ -18,14 +16,15 @@ export async function createTestUser({
   locked = false,
   password = PASSWORD,
   enrolled = true,
+  adminScope = 'super',
 } = {}) {
-  userCounter += 1;
-  const finalUsername = username ?? `test_${role}_${userCounter}`;
+  // Test files share a database; module-local counters restart between files.
+  const finalUsername = username ?? `t_${role}_${randomUUID().replaceAll('-','').slice(0,10)}`;
   const id = randomUUID();
   const hash = await hashPassword(password);
   await query(
-    `INSERT INTO profiles (id, username, email, password_hash, role, display_name, avatar_key, grade, banned_until)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    `INSERT INTO profiles (id, username, email, password_hash, role, display_name, avatar_key, grade, banned_until, admin_scope)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [
       id,
       finalUsername,
@@ -36,6 +35,7 @@ export async function createTestUser({
       avatarKey,
       role === 'student' ? grade : null,
       locked ? '2999-01-01 00:00:00' : null,
+      adminScope,
     ],
   );
   // Business-flow fixtures are explicitly enrolled; access-control tests opt out.

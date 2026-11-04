@@ -28,7 +28,7 @@ async function load() {
   const hour = new Date().getHours();
   const salute = hour < 11 ? 'Chào buổi sáng' : hour < 18 ? 'Chào buổi chiều' : 'Chào buổi tối';
   greeting.textContent = `${salute}, ${profile.displayName}!`;
-  gradeLine.textContent = profile.grade ? `Học sinh lớp ${profile.grade} · Hôm nay mình cùng tiến bộ nhé!` : 'Góc học Tiếng Trung · Mỗi ngày một chút, mình sẽ giỏi hơn!';
+  gradeLine.textContent = `${profile.course?.title || (profile.grade ? 'Lớp '+profile.grade : 'Khóa HSK')} · Hôm nay mình cùng tiến bộ nhé!`;
   document.getElementById('hero-avatar').src = avatarUrl(profile.avatarKey);
   document.getElementById('hero-avatar').alt = `Ảnh đại diện của ${profile.displayName}`;
 

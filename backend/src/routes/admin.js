@@ -20,21 +20,24 @@ import {
   updateQuestionHandler,
 } from '../controllers/admin-question-controller.js';
 import { adminStatsHandler } from '../controllers/admin-stats-controller.js';
-import { authenticateToken, requireAdmin } from '../middlewares/auth.js';
+import { authenticateToken, requireAdmin, requireAdminScope, requireSuperAdmin } from '../middlewares/auth.js';
+import adminTeamRouter from './admin-team.js';
 import { uploadDocx } from '../middlewares/upload-docx.js';
 
 const router = Router();
 
 router.use(authenticateToken, requireAdmin);
 
-router.get('/stats', adminStatsHandler);
+router.use('/team',adminTeamRouter);
+router.get('/stats', requireAdminScope('primary'), adminStatsHandler);
 
 router.get('/students', listStudentsHandler);
-router.post('/students', createStudentHandler);
-router.patch('/students/:id', updateStudentHandler);
-router.post('/students/:id/password', resetPasswordHandler);
-router.post('/students/:id/lock', lockStudentHandler);
+router.post('/students', requireSuperAdmin, createStudentHandler);
+router.patch('/students/:id', requireSuperAdmin, updateStudentHandler);
+router.post('/students/:id/password', requireSuperAdmin, resetPasswordHandler);
+router.post('/students/:id/lock', requireSuperAdmin, lockStudentHandler);
 
+router.use(requireAdminScope('primary'));
 router.get('/curriculum/tree', curriculumTreeHandler);
 router.get('/questions', listQuestionsHandler);
 router.get('/questions/import/config', importConfigHandler);

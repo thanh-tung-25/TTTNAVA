@@ -45,6 +45,7 @@ export default async function globalSetup() {
   });
   await connection.query("SET time_zone = '+00:00'");
   for (const table of [
+    'admin_audit_log',
     'finish_guard',
     'challenge_rewards',
     'challenge_answers',

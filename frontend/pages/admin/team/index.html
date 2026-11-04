@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quản trị viên — TTNAVA</title><link rel="icon" href="/assets/images/ttnava-logo.png">
+<link rel="stylesheet" href="/assets/css/base.css"><link rel="stylesheet" href="/assets/css/components.css"><link rel="stylesheet" href="/assets/css/pages.css"><link rel="stylesheet" href="/assets/css/admin-team.css"></head>
+<body><header id="app-header"></header><main class="page admin-team-page">
+  <div class="page-head"><div><p class="eyebrow">DÀNH CHO ADMIN TỔNG</p><h1>Quản trị viên</h1><p>Phân công người quản lý đúng chương trình, giữ tài khoản học sinh dùng chung.</p></div></div>
+  <p id="team-notice" role="status" aria-live="polite"></p>
+  <div class="team-scope-cards" id="team-summary"></div>
+  <details class="card team-create"><summary>+ Thêm quản trị viên</summary>
+    <form id="create-admin" class="team-form">
+      <label>Tên hiển thị<input class="input" name="displayName" maxlength="60" required></label>
+      <label>Tên đăng nhập<input class="input" name="username" minlength="3" maxlength="20" pattern="[a-z0-9_]+" autocomplete="off" required><small>Chữ thường, số và dấu gạch dưới.</small></label>
+      <label for="team-new-password">Mật khẩu ban đầu</label><div><input class="input" id="team-new-password" name="password" type="password" minlength="10" maxlength="72" autocomplete="new-password" required><small>Ít nhất 10 ký tự. Không dùng chung tài khoản.</small></div>
+      <label>Phạm vi quản lý<select class="select" name="adminScope"><option value="chinese">Admin Tiếng Trung</option><option value="primary">Admin Tiểu học</option><option value="super">Admin tổng</option></select></label>
+      <button class="btn" type="submit">Tạo quản trị viên</button>
+    </form>
+  </details>
+  <section class="card"><div class="card-head"><h2>Đội ngũ quản trị</h2><button class="btn btn-ghost btn-sm" type="button" id="team-refresh">Cập nhật</button></div><div id="team-list"><p>Đang tải…</p></div></section>
+  <details class="card"><summary>Nhật ký quản trị</summary><p class="muted">Các thao tác quản trị được ghi lại theo tài khoản. Nhật ký không chứa mật khẩu hoặc nội dung Word.</p><div id="team-audit"></div><div class="team-log-pages"><button class="btn btn-ghost btn-sm" type="button" id="audit-prev">Mới hơn</button><span id="audit-page">Trang 1</span><button class="btn btn-ghost btn-sm" type="button" id="audit-next">Cũ hơn</button></div></details>
+</main><script type="module" src="/assets/js/admin-team.js"></script></body></html>

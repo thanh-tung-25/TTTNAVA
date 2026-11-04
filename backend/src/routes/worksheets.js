@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import {authenticateToken,requireAdmin,requireStudent} from '../middlewares/auth.js';
+import {authenticateToken,requireAdmin,requireStudent,requireAdminScope} from '../middlewares/auth.js';
 import {asyncHandler,notFound,badRequest} from '../utils/errors.js';
 import {query,jsonArrayLength,jsonText} from '../config/db.js';
 import {requireCourse} from '../services/course-service.js';
@@ -8,7 +8,9 @@ import {validateSheet,gradeItem,validateResponses,publicItem} from '../services/
 import imageRouter from './worksheet-images.js';
 import {rateLimit} from '../middlewares/rate-limit.js';
 import {deleteWorksheet} from '../services/worksheet-delete.js';
-const router=Router();router.use(authenticateToken);router.use(imageRouter);
+const router=Router();router.use(authenticateToken);
+router.use((req,res,next)=>req.user.role==='admin'?requireAdminScope('primary')(req,res,next):next());
+router.use(imageRouter);
 const handle=fn=>asyncHandler(async(req,res)=>res.json({data:await fn(req)}));
 router.get('/admin',requireAdmin,handle(()=>query(`SELECT id,title,grade,subject_id,status,version,${jsonArrayLength('items')} item_count FROM worksheets ORDER BY updated_at DESC`)));
 router.post('/admin',requireAdmin,handle(r=>service.save(r.user.id,null,r.body)));

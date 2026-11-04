@@ -136,7 +136,10 @@ describe('Quản trị học sinh', () => {
     expect((await login.agent.post('/api/v1/admin/students').send({})).status).toBe(403);
     const filtered = await adminAgent.get('/api/v1/admin/students?program=chinese');
     expect(filtered.body.data.some(s => s.id === created.body.data.id)).toBe(true);
-    expect(filtered.body.data.every(s => s.grade === null)).toBe(true);
+    // Program membership can include a primary learner enrolled in Chinese too.
+    const dual = await createTestUser({ username: 'test_dual_program', grade: 2 });
+    const refreshed = await adminAgent.get('/api/v1/admin/students?program=chinese&q=test_dual_program');
+    expect(refreshed.body.data.map(s => s.id)).toContain(dual.id);
     const changed = await adminAgent.patch(`/api/v1/admin/students/${created.body.data.id}`).send({ grade: 3 });
     expect(changed.body.data.grade).toBe(3);
     const back = await adminAgent.patch(`/api/v1/admin/students/${created.body.data.id}`).send({ grade: null });

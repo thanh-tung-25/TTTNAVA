@@ -3,7 +3,7 @@ import env from '../config/env.js';
 
 export function signToken(profile) {
   return jwt.sign(
-    { sub: profile.id, role: profile.role, username: profile.username },
+    { sub: profile.id, role: profile.role, username: profile.username, ...(profile.role === 'admin' ? { av: Number(profile.admin_auth_version || 0) } : {}) },
     env.jwt.secret,
     { expiresIn: env.jwt.expiresIn },
   );

@@ -2,6 +2,7 @@ import { emptyState, initPage } from '/assets/js/ui.js';
 import { elements, store } from './admin-students-context.js';
 import { load, toggleLock } from './admin-students-load.js';
 import { openCreate, openEdit, openPassword } from './admin-students-modals.js';
+import { adminScope, isSuperAdmin } from './admin-permissions.js';
 
 elements.table.addEventListener('click', (event) => {
   const edit = event.target.closest('[data-edit]');
@@ -43,9 +44,18 @@ elements.nextButton.addEventListener('click', () => {
 });
 
 async function main() {
-  await initPage('admin', 'students');
+  const profile=await initPage('admin', 'students');
+  store.canManageAccounts=isSuperAdmin(profile);
+  store.adminScope=adminScope(profile);
+  document.getElementById('create-button').hidden=!store.canManageAccounts;
+  document.getElementById('create-button').classList.toggle('hidden',!store.canManageAccounts);
+  if(!store.canManageAccounts) {
+    store.program=adminScope(profile);
+    document.querySelector('.page-head p:not(.eyebrow)').textContent='Danh sách học sinh thuộc chương trình của bạn. Việc thay đổi tài khoản do admin tổng quản lý.';
+  }
   const filter = document.getElementById('program-filter');
   filter.value = store.program;
+  filter.disabled=!store.canManageAccounts;
   filter.addEventListener('change', () => {
     store.program = filter.value;
     const url = new URL(location.href);

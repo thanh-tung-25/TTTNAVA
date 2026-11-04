@@ -1,6 +1,7 @@
 import { query } from '../config/db.js';
 import { AppError, asyncHandler } from '../utils/errors.js';
 import { requireCourse } from '../services/course-service.js';
+import { requireAdminScope } from './auth.js';
 
 export async function requireSetAccess(student,ids) {
  for(const id of [...new Set(ids)]) {
@@ -10,7 +11,7 @@ export async function requireSetAccess(student,ids) {
  }
 }
 export const chineseCourseGuard=asyncHandler(async(r,_res,next)=>{
- if(r.user.role==='admin')return next();
+ if(r.user.role==='admin')return requireAdminScope('chinese')(r,_res,next);
  const segments=r.path.split('/').filter(Boolean),kind=segments[0],id=segments[1];let ids=[];
  if(kind==='sets'&&id)ids=[id];
  else if(kind==='reviews'&&id) {
@@ -33,7 +34,7 @@ export const chineseCourseGuard=asyncHandler(async(r,_res,next)=>{
 
 export function primaryCourseGuard(area) {
  return asyncHandler(async(r,_res,next)=>{
-  if(r.user.role==='admin')return next();
+  if(r.user.role==='admin')return requireAdminScope('primary')(r,_res,next);
   const parts=r.path.split('/').filter(Boolean);let grade;
   if(parts[0]==='history')return next();
   if(area==='catalog') {

@@ -4,22 +4,23 @@ import { AppError } from '../utils/errors.js';
 import { hashPassword } from './auth-service.js';
 import { usernameToEmail } from '../utils/normalize.js';
 import { publicProfile } from '../utils/serializers.js';
+import { studentProgramCondition } from '../utils/admin-permissions.js';
 
 export async function listStudents(page, limit, search = '', program = '') {
   const offset = (page - 1) * limit;
   const like = `%${search}%`;
+  const programWhere = program ? ' AND '+studentProgramCondition('p',program) : '';
   const rows = await query(
-    `SELECT * FROM profiles
+    `SELECT p.* FROM profiles p
      WHERE role = 'student' AND (username LIKE ? OR display_name LIKE ?)
-     AND (? = '' OR (? = 'chinese' AND grade IS NULL) OR (? = 'primary' AND grade IS NOT NULL))
+     ${programWhere}
      ORDER BY created_at DESC
      LIMIT ? OFFSET ?`,
-    [like, like, program, program, program, limit, offset],
+    [like, like, limit, offset],
   );
   const [total] = await query(
-    `SELECT COUNT(*) AS total FROM profiles WHERE role = 'student' AND (username LIKE ? OR display_name LIKE ?)
-     AND (? = '' OR (? = 'chinese' AND grade IS NULL) OR (? = 'primary' AND grade IS NOT NULL))`,
-    [like, like, program, program, program],
+    `SELECT COUNT(*) AS total FROM profiles p WHERE role = 'student' AND (username LIKE ? OR display_name LIKE ?) ${programWhere}`,
+    [like, like],
   );
   return { items: rows.map(publicProfile), total: Number(total.total) };
 }

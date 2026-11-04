@@ -10,7 +10,8 @@ const quiz=async id=>{const a=await request('/attempts','POST',{set_id:id,count:
 async function boot(){
  if(params.get('view')==='practice'){params.delete('view');window.history.replaceState(null,'',location.pathname+(params.size?'?'+params:''));}
  document.body.classList.toggle('is-studying',params.has('set'));
- const profile=await initPage('student',params.get('view')==='tests'?'exam':'chinese');
+ const activeView={tests:'exam',notebook:'notebook',history:'history'}[params.get('view')]||'learning';
+ const profile=await initPage('student',activeView);
  if(profile.course?.kind==='primary'){location.replace('/pages/student/courses/?program=chinese');return;}
  if(profile.course?.kind==='chinese')params.set('level',String(profile.course.level));
  catalog=await request('/catalog');notice('');

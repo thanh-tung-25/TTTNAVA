@@ -7,6 +7,7 @@ import {
 } from '/assets/js/ui.js';
 import { avatarOptions, store } from './admin-students-context.js';
 import { load } from './admin-students-load.js';
+import { setupPasswordToggle } from './password-toggle.js';
 
 export function openCreate() {
   const form = document.createElement('form');
@@ -18,13 +19,14 @@ export function openCreate() {
     <div class="field"><label for="new-display-name">Tên hiển thị</label>
       <input class="input" id="new-display-name" name="displayName" maxlength="60" placeholder="Bé Lan" required></div>
     <div class="field"><label for="new-password">Mật khẩu ban đầu</label>
-      <input class="input" id="new-password" name="password" type="text" maxlength="72" minlength="6" placeholder="Ít nhất 6 ký tự" required></div>
+      <input class="input" id="new-password" name="password" type="password" autocomplete="new-password" maxlength="72" minlength="6" placeholder="Ít nhất 6 ký tự" required></div>
     <div class="grid grid-2">
       <div class="field"><label for="new-grade">Lớp</label>
         <select class="select" id="new-grade" name="grade"><option value="">Tiếng Trung — không theo lớp 1–5</option>${[1, 2, 3, 4, 5].map((grade) => `<option value="${grade}">Lớp ${grade}</option>`).join('')}</select></div>
       <div class="field"><label for="new-avatar">Ảnh đại diện</label>
         <select class="select" id="new-avatar" name="avatarKey">${avatarOptions('meo')}</select></div>
     </div>`;
+  setupPasswordToggle(form.querySelector('#new-password'));
   form.querySelector('#new-grade').value = new URLSearchParams(location.search).get('program') === 'chinese' ? '' : '1';
   const modal = openModal({
     title: 'Thêm học sinh',
@@ -120,8 +122,9 @@ export function openPassword(id) {
   form.innerHTML = `
     <div class="form-error hidden" data-error role="alert"></div>
     <div class="field"><label for="reset-password">Mật khẩu mới</label>
-      <input class="input" id="reset-password" name="newPassword" type="text" minlength="6" maxlength="72" required>
+      <input class="input" id="reset-password" name="newPassword" type="password" autocomplete="new-password" minlength="6" maxlength="72" required>
       <span class="hint">6–72 ký tự. Học sinh đang đăng nhập trên thiết bị khác sẽ không bị đăng xuất.</span></div>`;
+  setupPasswordToggle(form.querySelector('#reset-password'));
   const modal = openModal({
     title: 'Đặt lại mật khẩu',
     content: form,

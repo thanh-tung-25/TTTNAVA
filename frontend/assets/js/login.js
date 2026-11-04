@@ -1,8 +1,13 @@
 import { api, ApiError } from '/assets/js/api.js';
+import { setupPasswordToggle } from './password-toggle.js';
+import { adminHome, adminSections } from './admin-permissions.js';
 
 const form = document.getElementById('login-form');
 const errorBox = document.getElementById('login-error');
 const button = document.getElementById('login-button');
+const passwordInput = document.getElementById('password');
+const passwordToggle = document.getElementById('password-toggle');
+setupPasswordToggle(passwordInput, passwordToggle);
 
 function showError(message) {
   errorBox.textContent = message;
@@ -12,9 +17,12 @@ function showError(message) {
 function destinationFor(profile) {
   const params = new URLSearchParams(window.location.search);
   const next = params.get('next');
-  const fallback = profile.role === 'admin' ? '/pages/admin/students/' : '/pages/student/courses/';
+  const fallback = profile.role === 'admin' ? adminHome(profile) : '/pages/student/courses/';
   if (!next || !next.startsWith('/pages/')) return fallback;
-  if (profile.role === 'admin' && next.startsWith('/pages/admin/')) return next;
+  if (profile.role === 'admin' && next.startsWith('/pages/admin/')) {
+    const section = new URL(next,location.origin).pathname.split('/').filter(Boolean)[2];
+    if(adminSections(profile).includes(section))return next;
+  }
   if (profile.role === 'student') return fallback;
   return fallback;
 }

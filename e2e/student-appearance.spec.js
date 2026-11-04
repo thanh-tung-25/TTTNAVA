@@ -82,6 +82,7 @@ test('primary rapid subject switching keeps the latest subject lesson list',asyn
 
 test.beforeEach(async({page},testInfo)=>{
  await page.addInitScript(course=>localStorage.setItem('ttnava-course',course),testInfo.title.startsWith('primary ')?'grade-1':'hsk-1');
+ for(const name of ['home','learning'])await page.route('**/pages/student/'+name+'/**',async route=>route.fulfill({contentType:'text/html',body:await fs.readFile('frontend/pages/student/'+name+'/index.html','utf8')}));
  await page.route('**/pages/student/chinese/**',async route=>{
   const filename=route.request().resourceType()==='document'?'index.html':new URL(route.request().url()).pathname.split('/').pop();
   if(!['index.html','script.js','style.css','playful.css','learning-tools.js','history-view.js'].includes(filename))return route.continue();
@@ -130,12 +131,12 @@ for(const [entry,view] of [['practice','practice'],['exam','tests']]) {
   else await expect(page.locator('#content')).toContainText('Chưa có bài kiểm tra');
   expect(requests).toEqual([]);
   await expect(page.getByRole('link',{name:'Luyện tập',exact:true})).toHaveCount(0);
-  await expect(page.getByRole('link',{name:entry==='practice'?'Tiếng Trung':'Thi thử',exact:true})).toHaveAttribute('aria-current','page');
+  await expect(page.getByRole('link',{name:entry==='practice'?'Học tập':'Thi thử',exact:true})).toHaveAttribute('aria-current','page');
   await expect(page.locator('#notice')).toBeEmpty();
  });
 }
 
-test('Chinese students can open home and use their own learning shortcuts',async({page})=>{
+test('Chinese students keep home tidy and open their own learning page',async({page})=>{
  await page.route('**/pages/student/home/',async route=>route.fulfill({contentType:'text/html',body:await fs.readFile('frontend/pages/student/home/index.html','utf8')}));
  await page.route('**/api/v1/auth/me',async route=>route.fulfill({json:{data:{profile:{id:'student',role:'student',displayName:'Bạn nhỏ',avatarKey:'meo',grade:null}}}}));
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -143,15 +144,79 @@ test('Chinese students can open home and use their own learning shortcuts',async
  await expect(page.locator('#greeting')).toContainText('Bạn nhỏ');
  await expect(page.locator('#recent-activity')).toContainText('Mình bắt đầu học nhé!');
  await expect(page).toHaveURL(/\/student\/home\/$/);
- await expect(page.locator('.subject-grid')).toContainText('Bài học HSK');
- await expect(page.locator('.subject-grid')).not.toContainText('Toán');
+ await expect(page.locator('.subject-grid')).toHaveCount(0);
  await expect(page.locator('#diamond-total')).toHaveText('3');
  await page.getByRole('link',{name:'Trang chủ',exact:true}).click();
- await expect(page.locator('#grade-line')).toContainText('Góc học Tiếng Trung');
+ await expect(page.locator('#grade-line')).toContainText('HSK');
  await expect(page).toHaveURL(/\/student\/home\/$/);
- await page.locator('.subject-card').filter({hasText:'Sổ từ của con'}).click();
+ await page.getByRole('link',{name:'Đến trang học tập'}).click();
+ await expect(page).toHaveURL(/\/student\/learning\/$/);
+ await expect(page.locator('#learning-subjects')).toContainText('Bài học HSK 1');
+ await expect(page.locator('#learning-subjects')).not.toContainText('Toán');
+ await expect(page.getByRole('link',{name:'Học tập',exact:true})).toHaveAttribute('aria-current','page');
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.screenshot({path:`test-results/chinese-learning-${test.info().project.name}.png`,fullPage:true});
+ await page.locator('.learning-subject').filter({hasText:'Sổ từ của con'}).click();
  await expect(page).toHaveURL(/view=notebook/);
  expect(errors).toEqual([]);
+});
+
+test('primary learning page lists only its three subjects and working study links',async({page})=>{
+ await page.route('**/pages/student/practice/**',async route=>route.fulfill({contentType:'text/html',body:await fs.readFile('frontend/pages/student/practice/index.html','utf8')}));
+ await page.route('**/api/v1/courses/grade-1/access',route=>route.fulfill({json:{data:{id:'grade-1',kind:'primary',level:1,title:'Lớp 1'}}}));
+ const errors=[];page.on('pageerror',error=>errors.push(error.message));
+ await page.goto('/pages/student/learning/');
+ await expect(page.locator('.learning-subject')).toHaveCount(3);
+ for(const title of ['Toán','Tiếng Việt','Tiếng Anh'])await expect(page.locator('#learning-subjects').getByRole('heading',{name:title,exact:true})).toBeVisible();
+ await expect(page.locator('#learning-subjects')).not.toContainText('Tiếng Trung');
+ await expect(page.locator('.learning-tool')).toHaveCount(4);
+ await expect(page.getByRole('link',{name:'Học tập',exact:true})).toHaveAttribute('aria-current','page');
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.screenshot({path:`test-results/primary-learning-${test.info().project.name}.png`,fullPage:true});
+ await page.locator('.learning-subject').filter({hasText:'Toán'}).click();
+ await expect(page).toHaveURL(/\/practice\/\?subject=toan$/);
+ expect(errors).toEqual([]);
+});
+
+test('password eye toggles visibility with keyboard without submitting the form',async({page})=>{
+ await page.goto('/pages/login/');
+ await page.locator('#password').fill('ExamplePassword123!');
+ await page.evaluate(()=>{window.testSubmissions=0;document.querySelector('#login-form').addEventListener('submit',()=>{window.testSubmissions++;});});
+ const toggle=page.locator('#password-toggle');
+ await expect(page.locator('#password')).toHaveAttribute('type','password');
+ await toggle.click();
+ await expect(page.locator('#password')).toHaveAttribute('type','text');
+ await expect(toggle).toHaveAttribute('aria-label','Ẩn mật khẩu');
+ await expect(toggle).toHaveAttribute('aria-pressed','true');
+ await toggle.focus();await page.keyboard.press('Space');
+ await expect(page.locator('#password')).toHaveAttribute('type','password');
+ await expect(page.locator('#password')).toHaveValue('ExamplePassword123!');
+ await expect(toggle).toHaveAttribute('aria-label','Hiện mật khẩu');
+ expect(await page.evaluate(()=>window.testSubmissions)).toBe(0);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.screenshot({path:`test-results/password-eye-${test.info().project.name}.png`});
+});
+
+test('admin password eyes work in create and reset dialogs without saving changes',async({page})=>{
+ await page.route('**/pages/admin/students/**',async route=>route.fulfill({contentType:'text/html',body:await fs.readFile('frontend/pages/admin/students/index.html','utf8')}));
+ await page.route('**/api/v1/auth/me',route=>route.fulfill({json:{data:{profile:{id:'admin',role:'admin',displayName:'Cô giáo',avatarKey:'cu',grade:null}}}}));
+ await page.route('**/api/v1/admin/students?**',route=>route.fulfill({json:{data:[{id:'sample-student',username:'be_lan',displayName:'Bé Lan',grade:1,avatarKey:'meo',createdAt:'2026-11-01T00:00:00Z',locked:false}],pagination:{total:1,limit:20}}}));
+ const writes=[];page.on('request',request=>{if(['POST','PUT','PATCH','DELETE'].includes(request.method()))writes.push(request.method());});
+ await page.goto('/pages/admin/students/');
+ await page.locator('#create-button').click();
+ await page.locator('#new-password').fill('ExamplePassword123!');
+ await expect(page.locator('#new-password')).toHaveAttribute('type','password');
+ await page.getByRole('button',{name:'Hiện mật khẩu',exact:true}).click();
+ await expect(page.locator('#new-password')).toHaveAttribute('type','text');
+ await page.getByRole('button',{name:'Huỷ',exact:true}).click();
+ await page.locator('[data-password="sample-student"]').click();
+ await page.locator('#reset-password').fill('ExamplePassword456!');
+ await expect(page.locator('#reset-password')).toHaveAttribute('type','password');
+ await page.getByRole('button',{name:'Hiện mật khẩu',exact:true}).click();
+ await expect(page.locator('#reset-password')).toHaveAttribute('type','text');
+ await page.getByRole('button',{name:'Ẩn mật khẩu',exact:true}).click();
+ await expect(page.locator('#reset-password')).toHaveAttribute('type','password');
+ expect(writes).toEqual([]);
 });
 
 test('student colors and layout are ready before account loading finishes',async({page})=>{

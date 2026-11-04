@@ -70,7 +70,7 @@ test.describe('Purchase approval end to end in isolated test database',()=>{
    await order.getByRole('button',{name:'Mở khóa',exact:true}).click();await expect(order).toHaveCount(0);
    await page.getByRole('button',{name:'Cập nhật',exact:true}).click();await expect(tile.getByRole('button',{name:'Vào học',exact:true})).toBeVisible();
    await tile.getByRole('button',{name:'Vào học',exact:true}).click();
-   await expect(page).toHaveURL(/\/student\/home\/$/);await expect(page.locator('#grade-line')).toContainText('lớp 2');
+   await expect(page).toHaveURL(/\/student\/learning\/$/);await expect(page.locator('#learning-course')).toContainText(/lớp 2/i);
    expect((await page.request.get('/api/v1/catalog/topics?subjectId=toan&grade=3')).status()).toBe(403);
    await page.getByRole('link',{name:'Đổi khóa',exact:true}).click();await page.locator('[data-kind=chinese]').click();
    const hsk=page.locator('.course-tile').filter({has:page.getByRole('heading',{name:'Tiếng Trung HSK 1',exact:true})});await hsk.getByRole('button',{name:'Xem khóa học'}).click();

@@ -9,6 +9,8 @@ import { requireSameOrigin } from './middlewares/same-origin.js';
 import { errorHandler, notFoundHandler } from './middlewares/error.js';
 import { coursePageGuard } from './middlewares/course-page.js';
 import { protectedHtml } from './middlewares/protected-html.js';
+import { adminHome, adminPageScope } from './utils/admin-permissions.js';
+import { adminAudit } from './middlewares/admin-audit.js';
 
 const frontendRoot = path.join(env.backendRoot, '..', 'frontend');
 const pagesRoot = path.join(frontendRoot, 'pages');
@@ -56,7 +58,7 @@ export function createApp() {
   app.get('/', async (request, response) => {
     try {
       const user = await resolveUser(request);
-      response.redirect(user.role === 'admin' ? '/pages/admin/students/' : '/pages/student/courses/');
+      response.redirect(user.role === 'admin' ? adminHome(user) : '/pages/student/courses/');
     } catch {
       response.sendFile(path.join(pagesRoot, 'welcome', 'index.html'));
     }
@@ -69,7 +71,7 @@ export function createApp() {
 
   app.use('/pages/student', requirePageRole('student'), coursePageGuard, protectedHtml(path.join(pagesRoot, 'student')));
   app.get(['/pages/admin/worksheets','/pages/admin/worksheets/','/pages/admin/worksheets/index.html'],requirePageRole('admin'),(_request,response)=>response.redirect('/pages/admin/questions/'));
-  app.use('/pages/admin', requirePageRole('admin'), protectedHtml(path.join(pagesRoot, 'admin')));
+  app.use('/pages/admin', requirePageRole('admin'), adminPageScope, protectedHtml(path.join(pagesRoot, 'admin')));
 
   app.get('/api/v1/health', (_request, response) => {
     response.json({ data: { status: 'ok', time: new Date().toISOString() } });
@@ -81,7 +83,7 @@ export function createApp() {
     } });
   });
 
-  app.use('/api/v1', requireSameOrigin, apiRouter);
+  app.use('/api/v1', requireSameOrigin, adminAudit, apiRouter);
   app.use('/api', notFoundHandler);
 
   app.use((request, response, next) => {

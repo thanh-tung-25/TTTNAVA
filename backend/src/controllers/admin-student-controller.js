@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import { parsePagination } from '../utils/pagination.js';
-import { asyncHandler } from '../utils/errors.js';
+import { asyncHandler, AppError } from '../utils/errors.js';
+import { adminScopeOf } from '../utils/admin-permissions.js';
 import {
   createStudent,
   listStudents,
@@ -19,7 +20,10 @@ const listQuery = z.object({
 export const listStudentsHandler = asyncHandler(async (request, response) => {
   const { page, limit } = parsePagination(request.query);
   const { q, program } = listQuery.parse(request.query);
-  const result = await listStudents(page, limit, q ?? '', program ?? '');
+  const scope = adminScopeOf(request.user);
+  if (scope!=='super' && program && program!==scope) throw new AppError(403,'ADMIN_SCOPE_FORBIDDEN','Bạn chỉ được xem học sinh thuộc chương trình mình quản lý.');
+  const result = await listStudents(page, limit, q ?? '', scope==='super' ? program ?? '' : scope);
+  if (scope!=='super') result.items = result.items.map(student=>({...student,email:undefined,...(scope==='chinese'?{grade:null}:{})}));
   response.json({ data: result.items, pagination: { page, limit, total: result.total } });
 });
 

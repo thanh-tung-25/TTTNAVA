@@ -1,12 +1,12 @@
 import {Router} from 'express';
 import {z} from 'zod';
-import {authenticateToken,requireAdmin} from '../middlewares/auth.js';
+import {authenticateToken,requireAdminScope} from '../middlewares/auth.js';
 import {query,withTransaction,jsonArrayLength} from '../config/db.js';
 import {asyncHandler,notFound} from '../utils/errors.js';
 import {randomUUID} from 'node:crypto';
 import {publishLessonQuestions} from '../services/question-bulk-publish.js';
 import {sendArchive,DOCX_MIME} from '../services/private-storage.js';
-const router=Router();router.use(authenticateToken,requireAdmin);
+const router=Router();router.use(authenticateToken,requireAdminScope('primary'));
 router.get('/word-documents',asyncHandler(async(req,res)=>{
  const f=z.object({q:z.string().trim().max(100).default(''),grade:z.coerce.number().int().min(1).max(5).optional(),semester:z.enum(['hk1','hk2']).optional(),page:z.coerce.number().int().min(1).default(1)}).parse(req.query);
  const where=[],params=[];

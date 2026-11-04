@@ -2,7 +2,7 @@ import { escapeHtml } from './api.js';
 
 const primary = [
  ['home', '/pages/student/home/', 'Trang chủ', '⌂'],
- ['chinese', '/pages/student/chinese/', 'Tiếng Trung', '文'],
+ ['learning', '/pages/student/learning/', 'Học tập', '▤'],
  ['practice', '/pages/student/practice/', 'Luyện tập', '✎'],
  ['exam', '/pages/student/exam/', 'Thi thử', '◷'],
 ];
@@ -13,14 +13,16 @@ const personal = [
  ['history', '/pages/student/history/', 'Lịch sử học', '↺'],
 ];
 export function studentNavigation(active, profile) {
- const main=profile?.grade===null?primary.filter(([key])=>key!=='practice'):primary;
+ const isChinese = profile?.course?.kind === 'chinese' || profile?.grade === null;
+ if (active === 'chinese') active = 'learning';
+ const main=isChinese?[primary[0],primary[1],['notebook','/pages/student/chinese/?view=notebook','Sổ từ','✎'],primary[3]]:primary;
+ const extras=isChinese?personal.filter(([key])=>!['challenge','leaderboard'].includes(key)):personal;
  const resolve = items => items.map(([key, href, label, icon]) => {
   const view = {exam:'tests',history:'history'}[key];
-  if(key==='chinese'&&profile?.course?.kind==='primary')return [key,'/pages/student/courses/?program=chinese',label,icon];
   return [key, profile?.grade === null && view ? '/pages/student/chinese/?view='+view : href, label, icon];
  });
  const item = ([key, href, label, icon]) => `<a class="nav-link" href="${href}"${active === key ? ' aria-current="page"' : ''}><span class="student-nav-icon" aria-hidden="true">${icon}</span><span>${label}</span></a>`;
- return `<nav class="student-navigation" aria-label="Điều hướng chính"><p class="student-nav-label">GÓC HỌC TẬP</p><div class="student-primary-nav" data-count="${main.length}">${resolve(main).map(item).join('')}</div><details class="student-more"${personal.some(([key]) => key === active) ? ' data-active="true"' : ''}><summary><span aria-hidden="true">▦</span> Thêm <span class="student-more-arrow" aria-hidden="true">⌄</span></summary><div class="student-personal-nav"><p class="student-nav-label">KHÁM PHÁ & TIẾN BỘ</p>${resolve(personal).map(item).join('')}</div></details><div class="student-sidebar-note"><img src="/assets/images/mascot-owl.svg" width="100" height="108" alt=""><strong>Mỗi ngày một chút,</strong><span>mình sẽ giỏi hơn!</span></div></nav>`;
+ return `<nav class="student-navigation" aria-label="Điều hướng chính"><p class="student-nav-label">GÓC HỌC TẬP</p><div class="student-primary-nav" data-count="${main.length}">${resolve(main).map(item).join('')}</div><details class="student-more"${extras.some(([key]) => key === active) ? ' data-active="true"' : ''}><summary><span aria-hidden="true">▦</span> Thêm <span class="student-more-arrow" aria-hidden="true">⌄</span></summary><div class="student-personal-nav"><p class="student-nav-label">KHÁM PHÁ & TIẾN BỘ</p>${resolve(extras).map(item).join('')}</div></details><div class="student-sidebar-note"><img src="/assets/images/mascot-owl.svg" width="100" height="108" alt=""><strong>Mỗi ngày một chút,</strong><span>mình sẽ giỏi hơn!</span></div></nav>`;
 }
 export function setupStudentNavigation(header, profile) {
  const details = header.querySelector('.student-more');

@@ -13,5 +13,5 @@ export async function courseProfile(profile,active) {
 export function enterCourse(course) {
  localStorage.setItem('ttnava-course',course.id);
  document.cookie='ttnava_course='+encodeURIComponent(course.id)+'; Path=/; SameSite=Lax';
- location.assign('/pages/student/home/');
+ location.assign('/pages/student/learning/');
 }

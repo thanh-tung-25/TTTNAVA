@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Học tập — TTNAVA</title>
+  <link rel="icon" href="/assets/images/ttnava-logo.png" type="image/png">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
+  <link rel="stylesheet" href="/assets/css/student-depth.css">
+  <link rel="stylesheet" href="/assets/css/learning.css">
+</head>
+<body data-role="student" class="learning-page">
+  <header id="app-header"></header>
+  <main class="page">
+    <section class="learning-welcome" aria-labelledby="learning-title">
+      <div><p class="eyebrow" id="learning-course">GÓC HỌC CỦA CON</p><h1 id="learning-title">Học tập</h1><p id="learning-description">Chọn nội dung mình muốn khám phá hôm nay nhé!</p></div>
+      <img id="learning-mascot" src="/assets/images/mascot-owl.svg" width="148" height="158" alt="">
+    </section>
+    <p id="learning-notice" class="form-error hidden" role="alert"></p>
+    <section class="home-section" aria-labelledby="learning-subjects-title">
+      <div class="home-section-head"><h2 id="learning-subjects-title">Môn học của con</h2><p id="learning-subjects-hint">Bắt đầu từ môn con yêu thích.</p></div>
+      <div id="learning-subjects" class="learning-subject-grid" aria-label="Nội dung học tập"><p class="loading">Đang mở góc học tập…</p></div>
+    </section>
+    <section class="home-section" aria-labelledby="learning-tools-title">
+      <div class="home-section-head"><h2 id="learning-tools-title">Luyện tập và thử sức</h2><p>Mỗi lần cố gắng là một lần tiến bộ.</p></div>
+      <div id="learning-tools" class="learning-tool-grid"></div>
+    </section>
+    <a class="learning-course-link" href="/pages/student/courses/">Xem các khóa học khác <span aria-hidden="true">→</span></a>
+  </main>
+  <script type="module" src="/assets/js/learning.js"></script>
+</body>
+</html>

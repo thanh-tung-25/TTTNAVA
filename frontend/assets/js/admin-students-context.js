@@ -14,6 +14,8 @@ export const store = {
   search: '',
   program: new URLSearchParams(location.search).get('program') === 'chinese' ? 'chinese' : '',
   studentsById: new Map(),
+  canManageAccounts: true,
+  adminScope: 'super',
 };
 
 export const avatarOptions = (selected) => AVATARS.map((avatar) => (
@@ -30,15 +32,15 @@ export function row(student) {
           <div><strong>${escapeHtml(student.displayName)}</strong><br><span class="muted">@${escapeHtml(student.username)}</span></div>
         </div>
       </td>
-      <td>${student.grade === null ? 'Tiếng Trung' : `Lớp ${student.grade}`}</td>
+      <td>${store.adminScope==='chinese'?'Tiếng Trung':store.adminScope==='primary'?'Tiểu học':student.grade === null ? 'Tiếng Trung' : `Lớp ${student.grade}`}</td>
       <td>${locked ? '<span class="badge badge-danger">Đã khoá</span>' : '<span class="badge badge-success">Hoạt động</span>'}</td>
       <td>${formatDate(student.createdAt, false)}</td>
       <td>
-        <div class="actions">
+        ${store.canManageAccounts?`<div class="actions">
           <button class="btn btn-ghost btn-sm" data-edit="${student.id}" type="button">Sửa</button>
           <button class="btn btn-ghost btn-sm" data-password="${student.id}" type="button">Mật khẩu</button>
           <button class="btn ${locked ? 'btn-ghost' : 'btn-danger'} btn-sm" data-lock="${student.id}" data-locked="${locked}" type="button">${locked ? 'Mở khoá' : 'Khoá'}</button>
-        </div>
+        </div>`:'<span class="muted">Chỉ xem</span>'}
       </td>
     </tr>`;
 }

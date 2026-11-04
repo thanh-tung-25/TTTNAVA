@@ -2,6 +2,8 @@ import env from '../config/env.js';
 import { query } from '../config/db.js';
 import { verifyToken } from '../utils/jwt.js';
 import { AppError } from '../utils/errors.js';
+import { adminHome } from '../utils/admin-permissions.js';
+export { requireAdminScope, requireSuperAdmin } from '../utils/admin-permissions.js';
 
 export function readToken(request) {
   const cookieValue = request.cookies?.[env.cookie.name];
@@ -28,6 +30,9 @@ export async function resolveUser(request) {
   );
   const profile = rows[0];
   if (!profile) throw new AppError(401, 'UNAUTHENTICATED', 'Tài khoản không tồn tại');
+  if (profile.role === 'admin' && Number(payload.av || 0) !== Number(profile.admin_auth_version || 0)) {
+    throw new AppError(401, 'INVALID_TOKEN', 'Quyền hoặc mật khẩu quản trị đã thay đổi. Vui lòng đăng nhập lại.');
+  }
   if (profile.banned_until && new Date(profile.banned_until) > new Date()) {
     throw new AppError(403, 'ACCOUNT_LOCKED', 'Tài khoản đã bị khoá. Con hãy nhờ bố mẹ nhé');
   }
@@ -87,7 +92,7 @@ export function requirePageRole(role) {
         return;
       }
       if (role === 'student' && user.role !== 'student') {
-        response.redirect('/pages/admin/students/');
+        response.redirect(adminHome(user));
         return;
       }
       request.user = user;
@@ -101,7 +106,7 @@ export function requirePageRole(role) {
 export function redirectIfAuthenticated(request, response, next) {
   resolveUser(request)
     .then((user) => {
-      response.redirect(user.role === 'admin' ? '/pages/admin/students/' : '/pages/student/courses/');
+      response.redirect(user.role === 'admin' ? adminHome(user) : '/pages/student/courses/');
     })
     .catch(() => next());
 }

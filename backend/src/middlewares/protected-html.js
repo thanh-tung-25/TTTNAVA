@@ -1,12 +1,14 @@
 import path from 'node:path';
 
-// Serve protected HTML through Express itself. Only public assets go to CDN.
+// Local page modules may live beside HTML. The CDN build copies JS/CSS only;
+// HTML continues to require authentication through Express.
 export function protectedHtml(directory) {
   const root = path.resolve(directory);
   return (request, response, next) => {
     let relative;
     try { relative = decodeURIComponent(request.path); } catch { return next(); }
     if (relative.includes('\0') || relative.includes('\\')) return next();
+    if (relative.split('/').some(segment => segment.startsWith('.'))) return next();
     let file = path.resolve(root, '.' + relative);
     if (file !== root && !file.startsWith(root + path.sep)) return next();
     if (relative.endsWith('/')) file = path.join(file, 'index.html');
@@ -16,7 +18,7 @@ export function protectedHtml(directory) {
       response.redirect(308, url.pathname + url.search);
       return;
     }
-    if (path.extname(file) !== '.html') return next();
+    if (!['.html', '.js', '.css'].includes(path.extname(file))) return next();
     response.set('Cache-Control', 'private, no-store');
     response.sendFile(file, { cacheControl: false, lastModified: false }, error => {
       if (error?.code === 'ENOENT' || error?.status === 404) next();

@@ -13,6 +13,7 @@
     }
   },
   "routes": [
+    { "src": "/pages/(admin|student)/chinese/([^/]+\\.(?:js|css))", "dest": "/assets/page-local/$1/chinese/$2" },
     { "src": "/socket.io/socket.io.js", "dest": "/assets/vendor/socket.io.min.js" },
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/api/index.js" }

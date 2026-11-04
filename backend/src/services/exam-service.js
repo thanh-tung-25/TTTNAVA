@@ -1,5 +1,5 @@
-﻿import { randomUUID } from 'node:crypto';
-import { query, withTransaction } from '../config/db.js';
+import { randomUUID } from 'node:crypto';
+import { query, withTransaction, dialectSql } from '../config/db.js';
 import { AppError } from '../utils/errors.js';
 import { sha256Hex } from '../utils/hash.js';
 import { parseJson } from '../utils/normalize.js';
@@ -86,10 +86,11 @@ export async function saveExamAnswer(studentId, attemptId, questionId, rawAnswer
   const correct = isAnswerCorrect(question, answer);
 
   await query(
-    `INSERT INTO exam_answers (attempt_id, question_id, answer_json, is_correct)
+    dialectSql(`INSERT INTO exam_answers (attempt_id, question_id, answer_json, is_correct)
      VALUES (?, ?, ?, ?)
      ON DUPLICATE KEY UPDATE answer_json = VALUES(answer_json),
-       is_correct = VALUES(is_correct), answered_at = UTC_TIMESTAMP(3)`,
+       is_correct = VALUES(is_correct), answered_at = CURRENT_TIMESTAMP(3)`,
+    `INSERT INTO exam_answers(attempt_id,question_id,answer_json,is_correct) VALUES (?,?,?,?) ON CONFLICT(attempt_id,question_id) DO UPDATE SET answer_json=EXCLUDED.answer_json,is_correct=EXCLUDED.is_correct,answered_at=CURRENT_TIMESTAMP(3)`),
     [attemptId, questionId, JSON.stringify(answer), correct ? 1 : 0],
   );
   const [counts] = await query(

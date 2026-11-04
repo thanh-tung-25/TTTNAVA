@@ -1,7 +1,7 @@
 import {Router} from 'express';
 import {authenticateToken,requireAdmin,requireStudent} from '../middlewares/auth.js';
 import {asyncHandler,notFound,badRequest} from '../utils/errors.js';
-import {query} from '../config/db.js';
+import {query,jsonArrayLength,jsonText} from '../config/db.js';
 import {requireCourse} from '../services/course-service.js';
 import * as service from '../services/worksheets.js';
 import {validateSheet,gradeItem,validateResponses,publicItem} from '../services/worksheet-rules.js';
@@ -10,9 +10,9 @@ import {rateLimit} from '../middlewares/rate-limit.js';
 import {deleteWorksheet} from '../services/worksheet-delete.js';
 const router=Router();router.use(authenticateToken);router.use(imageRouter);
 const handle=fn=>asyncHandler(async(req,res)=>res.json({data:await fn(req)}));
-router.get('/admin',requireAdmin,handle(()=>query('SELECT id,title,grade,subject_id,status,version,JSON_LENGTH(items) item_count FROM worksheets ORDER BY updated_at DESC')));
+router.get('/admin',requireAdmin,handle(()=>query(`SELECT id,title,grade,subject_id,status,version,${jsonArrayLength('items')} item_count FROM worksheets ORDER BY updated_at DESC`)));
 router.post('/admin',requireAdmin,handle(r=>service.save(r.user.id,null,r.body)));
-router.get('/admin/reviews',requireAdmin,handle(()=>query("SELECT a.id,a.student_id,a.status,a.submitted_at,p.display_name,p.username,JSON_UNQUOTE(JSON_EXTRACT(a.snapshot,'$.title')) title FROM worksheet_attempts a JOIN profiles p ON p.id=a.student_id WHERE a.status='pending_review' ORDER BY a.submitted_at LIMIT 200")));
+router.get('/admin/reviews',requireAdmin,handle(()=>query(`SELECT a.id,a.student_id,a.status,a.submitted_at,p.display_name,p.username,${jsonText('a.snapshot','title')} title FROM worksheet_attempts a JOIN profiles p ON p.id=a.student_id WHERE a.status='pending_review' ORDER BY a.submitted_at LIMIT 200`)));
 router.get('/admin/reviews/:id',requireAdmin,handle(async r=>{const [a]=await query('SELECT * FROM worksheet_attempts WHERE id=?',[r.params.id]);if(!a)throw notFound();return {...a,snapshot:service.json(a.snapshot),answers:service.json(a.answers),results:service.json(a.results)};}));
 router.post('/admin/reviews/:id',requireAdmin,handle(r=>service.review(r.user.id,r.params.id,r.body)));
 router.post('/admin/preview',requireAdmin,handle(r=>{
@@ -25,9 +25,9 @@ router.delete('/admin/:id',requireAdmin,handle(r=>deleteWorksheet(r.params.id,r.
 router.get('/',requireStudent,handle(async r=>{
  const course=await requireCourse(r.user.id,r.get('X-Course-Id')||'grade-'+r.user.grade);
  if(course.kind!=='primary')throw badRequest('Bài tập này dành cho khóa Tiểu học.');
- return query(`SELECT w.id,w.title,w.subject_id,c.semester,c.id chapter_id,c.name chapter_name,l.name lesson_name,JSON_LENGTH(w.items) item_count,(SELECT a.id FROM worksheet_attempts a WHERE a.worksheet_id=w.id AND a.student_id=? AND a.status='in_progress' LIMIT 1) active_attempt FROM worksheets w LEFT JOIN curriculum_lessons l ON l.id=w.lesson_id LEFT JOIN curriculum_chapters c ON c.id=l.chapter_id WHERE w.grade=? AND w.status='published' ORDER BY c.semester,c.sort_order,l.sort_order,w.updated_at DESC`,[r.user.id,course.level]);
+ return query(`SELECT w.id,w.title,w.subject_id,c.semester,c.id chapter_id,c.name chapter_name,l.name lesson_name,${jsonArrayLength('w.items')} item_count,(SELECT a.id FROM worksheet_attempts a WHERE a.worksheet_id=w.id AND a.student_id=? AND a.status='in_progress' LIMIT 1) active_attempt FROM worksheets w LEFT JOIN curriculum_lessons l ON l.id=w.lesson_id LEFT JOIN curriculum_chapters c ON c.id=l.chapter_id WHERE w.grade=? AND w.status='published' ORDER BY c.semester,c.sort_order,l.sort_order,w.updated_at DESC`,[r.user.id,course.level]);
 }));
-router.get('/history',requireStudent,handle(r=>query("SELECT id,worksheet_id,status,score,submitted_at,started_at,grade,JSON_UNQUOTE(JSON_EXTRACT(snapshot,'$.title')) title FROM worksheet_attempts WHERE student_id=? ORDER BY started_at DESC LIMIT 200",[r.user.id])));
+router.get('/history',requireStudent,handle(r=>query(`SELECT id,worksheet_id,status,score,submitted_at,started_at,grade,${jsonText('snapshot','title')} title FROM worksheet_attempts WHERE student_id=? ORDER BY started_at DESC LIMIT 200`,[r.user.id])));
 router.get('/attempts/:id',requireStudent,handle(r=>service.attempt(r.user.id,r.params.id)));
 router.put('/attempts/:id',requireStudent,handle(r=>service.answer(r.user.id,r.params.id,r.body.answers)));
 router.post('/attempts/:id/submit',requireStudent,handle(r=>service.answer(r.user.id,r.params.id,r.body.answers,true)));

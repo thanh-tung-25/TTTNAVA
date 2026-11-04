@@ -7,7 +7,8 @@ export function requireSameOrigin(request, _response, next) {
     return;
   }
   const origin = request.get('origin');
-  if (origin && origin !== env.appOrigin) {
+  const allowed = [env.appOrigin, ...(process.env.VERCEL && process.env.VERCEL_URL ? ['https://' + process.env.VERCEL_URL] : [])];
+  if (origin && !allowed.includes(origin)) {
     next(new AppError(403, 'CSRF_ORIGIN', 'Yêu cầu không đến từ ứng dụng hợp lệ'));
     return;
   }

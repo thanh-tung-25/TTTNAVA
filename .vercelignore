@@ -1,0 +1,13 @@
+.git
+.env
+backend/.env*
+backend/backups
+backend/tests
+node_modules
+backend/node_modules
+tai-lieu
+docs
+test-results
+playwright-report
+*.zip
+*.log

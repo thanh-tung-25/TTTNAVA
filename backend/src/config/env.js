@@ -15,6 +15,8 @@ function readNumber(name, fallback) {
 }
 
 const jwtSecret = process.env.JWT_SECRET ?? '';
+const dbDriver = process.env.DB_DRIVER ?? 'mysql';
+if (!['mysql', 'postgres'].includes(dbDriver)) throw new Error('DB_DRIVER must be mysql or postgres');
 if (jwtSecret.length < 32) {
   throw new Error('JWT_SECRET phải có ít nhất 32 ký tự. Kiểm tra backend/.env');
 }
@@ -23,8 +25,16 @@ export const env = {
   nodeEnv: process.env.NODE_ENV ?? 'development',
   isProduction: process.env.NODE_ENV === 'production',
   port: readNumber('PORT', 3000),
-  appOrigin: process.env.APP_ORIGIN ?? 'http://localhost:3000',
+  appOrigin: process.env.APP_ORIGIN || (process.env.VERCEL_PROJECT_PRODUCTION_URL || process.env.VERCEL_URL
+    ? 'https://' + (process.env.VERCEL_PROJECT_PRODUCTION_URL || process.env.VERCEL_URL) : 'http://localhost:3000'),
+  storage: {
+    enabled: process.env.STORAGE_PROVIDER === 'supabase',
+    url: process.env.SUPABASE_URL || '',
+    key: process.env.SUPABASE_SECRET_KEY || '',
+    bucket: process.env.SUPABASE_STORAGE_BUCKET || 'ttnava-private',
+  },
   db: {
+    driver: dbDriver,
     host: process.env.DB_HOST ?? '127.0.0.1',
     port: readNumber('DB_PORT', 3306),
     user: process.env.DB_USER ?? 'root',

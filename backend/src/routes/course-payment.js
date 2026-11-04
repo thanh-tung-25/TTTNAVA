@@ -1,6 +1,7 @@
 import {Router} from 'express';
 import multer from 'multer';
-import {query} from '../config/db.js';
+import {query,dialectSql,withTransaction} from '../config/db.js';
+import {archiveFile,sendArchive} from '../services/private-storage.js';
 import {requireAdmin} from '../middlewares/auth.js';
 import {AppError,asyncHandler} from '../utils/errors.js';
 const router=Router();
@@ -28,7 +29,14 @@ router.get('/admin/payment-qr',requireAdmin,asyncHandler(async(_req,res)=>{
 }));
 router.post('/admin/payment-qr/:key',requireAdmin,imageUpload,asyncHandler(async(req,res)=>{
  await validateKey(req.params.key);
- await query('INSERT INTO course_payment_qr(course_key,image,mime_type,uploaded_by) VALUES (?,?,?,?) ON DUPLICATE KEY UPDATE image=VALUES(image),mime_type=VALUES(mime_type),uploaded_by=VALUES(uploaded_by),crop_json=NULL',[req.params.key,req.file.buffer,req.qrMime,req.user.id]);
+ await withTransaction(async connection=>{
+ const run=async(sql,p=[]) => (await connection.query(sql,p))[0];
+ await run(dialectSql(
+  'INSERT INTO course_payment_qr(course_key,image,mime_type,uploaded_by) VALUES (?,?,?,?) ON DUPLICATE KEY UPDATE image=VALUES(image),mime_type=VALUES(mime_type),uploaded_by=VALUES(uploaded_by),crop_json=NULL',
+  'INSERT INTO course_payment_qr(course_key,image,mime_type,uploaded_by) VALUES (?,?,?,?) ON CONFLICT(course_key) DO UPDATE SET image=EXCLUDED.image,mime_type=EXCLUDED.mime_type,uploaded_by=EXCLUDED.uploaded_by,crop_json=NULL,updated_at=CURRENT_TIMESTAMP(3)',
+ ),[req.params.key,req.file.buffer,req.qrMime,req.user.id]);
+ await archiveFile('course_payment_qr/'+req.params.key,req.file.buffer,req.qrMime,'payment-qr',run);
+ });
  res.json({data:{saved:true}});
 }));
 router.delete('/admin/payment-qr/:key',requireAdmin,asyncHandler(async(req,res)=>{
@@ -36,8 +44,8 @@ router.delete('/admin/payment-qr/:key',requireAdmin,asyncHandler(async(req,res)=
 }));
 router.get('/payment-qr/:key',asyncHandler(async(req,res)=>{
  await validateKey(req.params.key);
- const [row]=await query("SELECT image,mime_type FROM course_payment_qr WHERE course_key IN (?,'default') ORDER BY course_key=? DESC LIMIT 1",[req.params.key,req.params.key]);
+ const [row]=await query("SELECT course_key,image,mime_type FROM course_payment_qr WHERE course_key IN (?,'default') ORDER BY (course_key=?) DESC LIMIT 1",[req.params.key,req.params.key]);
  if(!row)throw new AppError(404,'QR_NOT_CONFIGURED','Admin chưa thêm ảnh QR.');
- res.set('Cache-Control','private, no-store');res.set('X-Content-Type-Options','nosniff');res.type(row.mime_type).send(row.image);
+ await sendArchive(res,'course_payment_qr/'+row.course_key,row.image,row.mime_type);
 }));
 export default router;

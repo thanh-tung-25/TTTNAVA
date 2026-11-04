@@ -86,8 +86,9 @@ export function renderLobby() {
 export async function loadLobby() {
   try {
     const payload = await api('/api/v1/challenges/lobby');
+    const changed = JSON.stringify(store.lobby) !== JSON.stringify(payload.data);
     store.lobby = payload.data;
-    renderLobby();
+    if (changed) renderLobby();
   } catch (error) {
     elements.incomingList.innerHTML = emptyState('😿', 'Không tải được sảnh', error.message);
   }

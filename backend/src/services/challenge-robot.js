@@ -1,4 +1,4 @@
-import { query } from '../config/db.js';
+import { query, dialectSql } from '../config/db.js';
 import { sha256Hex } from '../utils/hash.js';
 import { loadQuestionsByIds } from './question-service.js';
 
@@ -81,9 +81,10 @@ export async function insertDueRobotAnswers(challenge, now = new Date()) {
     if (!question) continue;
     const answer = item.plan.correct ? correctAnswer(question) : wrongAnswer(question, item.plan.hash);
     const result = await query(
-      `INSERT IGNORE INTO challenge_answers
+      dialectSql(`INSERT IGNORE INTO challenge_answers
        (challenge_id, profile_id, q_index, question_id, answer_json, is_correct, answered_at)
        VALUES (?, ?, ?, ?, ?, ?, ?)`,
+      `INSERT INTO challenge_answers(challenge_id,profile_id,q_index,question_id,answer_json,is_correct,answered_at) VALUES (?,?,?,?,?,?,?) ON CONFLICT(challenge_id,profile_id,q_index) DO NOTHING`),
       [
         challenge.id,
         ROBOT_ID,

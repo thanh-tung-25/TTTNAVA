@@ -16,7 +16,7 @@ export async function publishLessonQuestions(lessonId,adminId){
     if(error instanceof AppError)throw new AppError(400,'BULK_PUBLISH_INVALID',`Chưa đăng câu nào. Câu “${question.prompt.slice(0,80)}” cần sửa: ${error.message}`);
     throw error;
    }
-   await connection.query("UPDATE questions SET status='published',published_at=UTC_TIMESTAMP(3),updated_by=? WHERE id=?",[adminId,question.id]);
+   await connection.query("UPDATE questions SET status='published',published_at=CURRENT_TIMESTAMP(3),updated_by=? WHERE id=?",[adminId,question.id]);
    await connection.query("INSERT INTO atomic_question_writes (question_id,admin_id,action,before_json,after_json) VALUES (?,?,'publish',?,?)",[question.id,adminId,JSON.stringify(before),JSON.stringify({...before,status:'published'})]);
   }
   return {published:questions.length};

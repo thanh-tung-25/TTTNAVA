@@ -1,5 +1,5 @@
 import bcrypt from 'bcryptjs';
-import { query } from '../config/db.js';
+import { query, dialectSql } from '../config/db.js';
 import { AppError } from '../utils/errors.js';
 import { normalizeUsername } from '../utils/normalize.js';
 import { signToken } from '../utils/jwt.js';
@@ -7,7 +7,10 @@ import { publicProfile } from '../utils/serializers.js';
 
 export async function login(rawUsername, password) {
   const username = normalizeUsername(rawUsername);
-  const rows = await query('SELECT * FROM profiles WHERE username = ? LIMIT 1', [username]);
+  const rows = await query(dialectSql(
+    'SELECT * FROM profiles WHERE username = ? LIMIT 1',
+    'SELECT * FROM profiles WHERE lower(username) = lower(?) LIMIT 1',
+  ), [username]);
   const profile = rows[0];
 
   // Robot và tài khoản không tồn tại dùng chung một thông báo để không lộ thông tin.

@@ -1,11 +1,13 @@
-import { query } from '../config/db.js';
+import { query, dialectSql } from '../config/db.js';
 import { toIso, vnRange } from '../utils/time.js';
 
 export async function insertLedger(connection, { profileId, amount, reason, refType, refId }) {
   if (!amount) return 0;
   const [result] = await connection.query(
-    `INSERT IGNORE INTO diamond_ledger (profile_id, amount, reason, ref_type, ref_id)
-     VALUES (?, ?, ?, ?, ?)`,
+    dialectSql(
+      `INSERT IGNORE INTO diamond_ledger (profile_id, amount, reason, ref_type, ref_id) VALUES (?, ?, ?, ?, ?)`,
+      `INSERT INTO diamond_ledger (profile_id, amount, reason, ref_type, ref_id) VALUES (?, ?, ?, ?, ?) ON CONFLICT(profile_id,reason,ref_type,ref_id) DO NOTHING`,
+    ),
     [profileId, amount, reason, refType, refId],
   );
   return result.affectedRows;
@@ -69,7 +71,7 @@ export async function getLeaderboard(range = 'week', limit = 50, grade = null) {
      FROM profiles p
      LEFT JOIN diamond_ledger dl ON dl.profile_id = p.id ${dateFilter}
      WHERE p.role = 'student'
-       AND (p.banned_until IS NULL OR p.banned_until <= UTC_TIMESTAMP())
+       AND (p.banned_until IS NULL OR p.banned_until <= CURRENT_TIMESTAMP)
        ${gradeFilter}
      GROUP BY p.id, p.display_name, p.avatar_key, p.grade
      ORDER BY diamonds DESC, p.display_name ASC

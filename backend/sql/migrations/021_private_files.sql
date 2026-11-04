@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS file_assets (
+  asset_key VARCHAR(220) NOT NULL PRIMARY KEY,
+  object_key VARCHAR(500) NOT NULL,
+  sha256 CHAR(64) NOT NULL,
+  byte_size INT UNSIGNED NOT NULL,
+  mime_type VARCHAR(120) NOT NULL,
+  filename VARCHAR(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

@@ -1,4 +1,4 @@
-import { query } from '../config/db.js';
+import { query, dialectSql } from '../config/db.js';
 import { toIso } from '../utils/time.js';
 import { EXAM_GRACE_SECONDS } from './exam-constants.js';
 import { finalizeAttempt } from './exam-finalize.js';
@@ -7,7 +7,7 @@ async function finalizeOverdueForStudent(studentId) {
   const rows = await query(
     `SELECT id FROM exam_attempts
      WHERE student_id = ? AND status = 'in_progress'
-       AND ends_at < DATE_SUB(UTC_TIMESTAMP(3), INTERVAL ${EXAM_GRACE_SECONDS} SECOND)
+       AND ends_at < ${dialectSql(`DATE_SUB(CURRENT_TIMESTAMP(3), INTERVAL ${EXAM_GRACE_SECONDS} SECOND)`, `CURRENT_TIMESTAMP(3) - INTERVAL '${EXAM_GRACE_SECONDS} seconds'`)}
      ORDER BY ends_at ASC LIMIT 10`,
     [studentId],
   );

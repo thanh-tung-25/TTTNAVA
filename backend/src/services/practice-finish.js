@@ -39,8 +39,8 @@ export async function finishPractice(studentId, sessionId) {
     );
     await connection.query(
       `UPDATE practice_sessions
-       SET status = 'finished', finished_at = UTC_TIMESTAMP(3),
-           answered_count = ?, correct_count = ?, rewarded_at = IF(? > 0, UTC_TIMESTAMP(3), NULL)
+       SET status = 'finished', finished_at = CURRENT_TIMESTAMP(3),
+           answered_count = ?, correct_count = ?, rewarded_at = CASE WHEN ? > 0 THEN CURRENT_TIMESTAMP(3) ELSE NULL END
        WHERE id = ?`,
       [answered, correct, amount, sessionId],
     );

@@ -10,6 +10,7 @@ import { parse } from '../validators/chinese.js';
 import { z } from 'zod';
 import { createSet, removeContent } from '../services/chinese-manage.js';
 import { chineseCourseGuard } from '../middlewares/course-access.js';
+import { sendArchive, DOCX_MIME } from '../services/private-storage.js';
 const router=Router();
 router.use(authenticateToken,requirePlayer);
 router.use(chineseCourseGuard);
@@ -45,6 +46,6 @@ router.post('/tests',c.saveTest);
 router.put('/tests/:id',c.saveTest);
 router.get('/documents/:id',asyncHandler(async(r,res)=>{
  const doc=await one('SELECT filename,original FROM chinese_documents WHERE id=?',[r.params.id]);
- res.type('application/vnd.openxmlformats-officedocument.wordprocessingml.document');res.attachment(doc.filename);res.send(doc.original);
+ await sendArchive(res,'chinese_documents/'+r.params.id,doc.original,DOCX_MIME,doc.filename);
 }));
 export default router;

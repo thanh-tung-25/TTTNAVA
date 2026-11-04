@@ -1,9 +1,9 @@
-﻿import { query } from '../config/db.js';
+import { query, dialectSql } from '../config/db.js';
 
 export async function getAdminStats() {
   const [students] = await query(
     `SELECT COUNT(*) AS total,
-            SUM(CASE WHEN banned_until IS NULL OR banned_until <= UTC_TIMESTAMP() THEN 1 ELSE 0 END) AS active
+            SUM(CASE WHEN banned_until IS NULL OR banned_until <= CURRENT_TIMESTAMP THEN 1 ELSE 0 END) AS active
      FROM profiles WHERE role = 'student'`,
   );
   const [bank] = await query(
@@ -22,10 +22,10 @@ export async function getAdminStats() {
     'SELECT COUNT(*) AS total FROM exam_attempts WHERE status = \'submitted\'',
   );
   const [challenge] = await query(
-    `SELECT COUNT(*) AS total, COALESCE(SUM(bot_level IS NOT NULL), 0) AS robot
+    `SELECT COUNT(*) AS total, COALESCE(SUM(CASE WHEN bot_level IS NOT NULL THEN 1 ELSE 0 END), 0) AS robot
      FROM challenges
      WHERE status = 'finished'
-        OR (status = 'in_progress' AND ends_at + INTERVAL 60 SECOND > UTC_TIMESTAMP(3))`,
+        OR (status = 'in_progress' AND ${dialectSql('ends_at + INTERVAL 60 SECOND', "ends_at + INTERVAL '60 seconds'")} > CURRENT_TIMESTAMP(3))`,
   );
   const [diamonds] = await query(
     'SELECT COALESCE(SUM(amount), 0) AS total FROM diamond_ledger WHERE amount > 0',
@@ -46,7 +46,7 @@ export async function getAdminStats() {
     `SELECT p.id, p.display_name, p.avatar_key, p.grade, COALESCE(SUM(dl.amount), 0) AS diamonds
      FROM diamond_ledger dl
      JOIN profiles p ON p.id = dl.profile_id
-     WHERE dl.created_at >= DATE_SUB(UTC_TIMESTAMP(3), INTERVAL 7 DAY) AND dl.amount > 0
+     WHERE dl.created_at >= ${dialectSql('DATE_SUB(CURRENT_TIMESTAMP(3), INTERVAL 7 DAY)', "CURRENT_TIMESTAMP(3) - INTERVAL '7 days'")} AND dl.amount > 0
      GROUP BY p.id, p.display_name, p.avatar_key, p.grade
      ORDER BY diamonds DESC LIMIT 5`,
   );

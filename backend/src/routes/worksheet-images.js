@@ -1,7 +1,8 @@
 import {Router} from 'express';
 import multer from 'multer';
 import {randomUUID} from 'node:crypto';
-import {query} from '../config/db.js';
+import {query,withTransaction} from '../config/db.js';
+import {archiveFile,sendArchive} from '../services/private-storage.js';
 import {requireAdmin} from '../middlewares/auth.js';
 import {requireCourse} from '../services/course-service.js';
 import {AppError,asyncHandler,notFound} from '../utils/errors.js';
@@ -14,7 +15,11 @@ router.post('/admin/:id/images',requireAdmin,(req,res,next)=>upload(req,res,erro
  const [sheet]=await query('SELECT id FROM worksheets WHERE id=?',[req.params.id]);if(!sheet)throw notFound();
  const b=req.file.buffer,mime=b.length>=24&&b.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10]))?'image/png':b.length>=4&&b[0]===255&&b[1]===216&&b[2]===255&&b[b.length-2]===255&&b[b.length-1]===217?'image/jpeg':null;
  if(!mime)throw new AppError(415,'IMAGE_TYPE','Chỉ nhận ảnh PNG hoặc JPEG.');
- const id=randomUUID();await query('INSERT INTO worksheet_images(id,worksheet_id,image,mime_type) VALUES (?,?,?,?)',[id,sheet.id,b,mime]);res.json({data:{id}});
+ const id=randomUUID();await withTransaction(async connection=>{
+  const run=async(sql,p=[]) => (await connection.query(sql,p))[0];
+  await run('INSERT INTO worksheet_images(id,worksheet_id,image,mime_type) VALUES (?,?,?,?)',[id,sheet.id,b,mime]);
+  await archiveFile('worksheet_images/'+id,b,mime,'worksheet-image',run);
+ });res.json({data:{id}});
 }));
 router.get('/images/:id',asyncHandler(async(req,res)=>{
  const [image]=await query('SELECT i.*,w.grade,w.status FROM worksheet_images i JOIN worksheets w ON w.id=i.worksheet_id WHERE i.id=?',[req.params.id]);if(!image)throw notFound();
@@ -22,6 +27,6 @@ router.get('/images/:id',asyncHandler(async(req,res)=>{
   await requireCourse(req.user.id,'grade-'+image.grade);
   if(image.status!=='published'&&!(await query('SELECT id FROM worksheet_attempts WHERE worksheet_id=? AND student_id=? LIMIT 1',[image.worksheet_id,req.user.id])).length)throw notFound();
  }
- res.set('Cache-Control','private, no-store').type(image.mime_type).send(image.image);
+ await sendArchive(res,'worksheet_images/'+image.id,image.image,image.mime_type);
 }));
 export default router;

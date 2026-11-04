@@ -1,4 +1,4 @@
-import { query } from '../config/db.js';
+import { query, dialectSql } from '../config/db.js';
 import { AppError } from '../utils/errors.js';
 import { parseJson } from '../utils/normalize.js';
 import { toIso } from '../utils/time.js';
@@ -43,7 +43,7 @@ export function assertParticipant(challenge, profileId) {
 export async function cleanupExpiredInvitations() {
   await query(
     `UPDATE challenges SET status = 'expired', cancelled_reason = 'expired'
-     WHERE status = 'pending' AND expires_at <= UTC_TIMESTAMP(3)`,
+     WHERE status = 'pending' AND expires_at <= CURRENT_TIMESTAMP(3)`,
   );
 }
 
@@ -52,9 +52,9 @@ export async function findOpenChallenge(profileId) {
     `SELECT id, status FROM challenges
      WHERE (challenger_id = ? OR opponent_id = ?)
        AND (
-         (status = 'pending' AND expires_at > UTC_TIMESTAMP(3))
+         (status = 'pending' AND expires_at > CURRENT_TIMESTAMP(3))
          OR (status IN ('accepted', 'in_progress')
-             AND started_at + INTERVAL duration_seconds SECOND + INTERVAL 60 SECOND > UTC_TIMESTAMP(3))
+             AND ${dialectSql('started_at + INTERVAL duration_seconds SECOND + INTERVAL 60 SECOND', "started_at + (duration_seconds + 60) * INTERVAL '1 second'")} > CURRENT_TIMESTAMP(3))
        )
      LIMIT 1`,
     [profileId, profileId],
@@ -114,7 +114,7 @@ export async function assertNotBusy(profileId, exceptId = null) {
 
 export async function markStarted(challengeId) {
   await query(
-    "UPDATE challenges SET status = 'in_progress' WHERE id = ? AND status = 'accepted' AND started_at <= UTC_TIMESTAMP(3)",
+    "UPDATE challenges SET status = 'in_progress' WHERE id = ? AND status = 'accepted' AND started_at <= CURRENT_TIMESTAMP(3)",
     [challengeId],
   );
 }

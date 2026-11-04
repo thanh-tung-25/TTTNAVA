@@ -1,16 +1,18 @@
 import { randomUUID, createHash, randomInt } from 'node:crypto';
 import { z } from 'zod';
-import { query, withTransaction } from '../config/db.js';
+import { query, withTransaction, dialectSql } from '../config/db.js';
 import { badRequest, AppError, notFound } from '../utils/errors.js';
 import { json, one, getSet, getItems, publicItem, catalog } from '../repositories/chinese.js';
 import { parse, lessonSchema, setSchema, testSchema, issues, normalizeAnswer } from '../validators/chinese.js';
 import { extractChinese } from './chinese-import.js';
+import { archiveFile, readArchive, DOCX_MIME } from './private-storage.js';
 export { catalog };
 const txRun = c => async (sql,p=[]) => (await c.query(sql,p))[0];
 export async function saveLesson(id, body) {
  const d=parse(lessonSchema,body); id ||= randomUUID();
- await query(`INSERT INTO chinese_lessons (id,level_id,title,position,description,image_url,status) VALUES (?,?,?,?,?,?,?)
- ON DUPLICATE KEY UPDATE level_id=VALUES(level_id),title=VALUES(title),position=VALUES(position),description=VALUES(description),image_url=VALUES(image_url),status=VALUES(status)`,[id,d.level_id,d.title,d.position,d.description,d.image_url,d.status]); return {id};
+ await query(dialectSql(`INSERT INTO chinese_lessons (id,level_id,title,position,description,image_url,status) VALUES (?,?,?,?,?,?,?)
+ ON DUPLICATE KEY UPDATE level_id=VALUES(level_id),title=VALUES(title),position=VALUES(position),description=VALUES(description),image_url=VALUES(image_url),status=VALUES(status)`,
+ `INSERT INTO chinese_lessons(id,level_id,title,position,description,image_url,status) VALUES (?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET level_id=EXCLUDED.level_id,title=EXCLUDED.title,position=EXCLUDED.position,description=EXCLUDED.description,image_url=EXCLUDED.image_url,status=EXCLUDED.status`),[id,d.level_id,d.title,d.position,d.description,d.image_url,d.status]); return {id};
 }
 export async function importWord(body,file) {
  const lesson=await one('SELECT * FROM chinese_lessons WHERE id=?',[body.lesson_id]);
@@ -20,6 +22,7 @@ export async function importWord(body,file) {
  const duplicates=await query('SELECT id,filename FROM chinese_documents WHERE sha256=?',[sha]);
  if (duplicates.length && body.allow_duplicate!=='true') throw new AppError(409,'DUPLICATE_DOCUMENT','Tệp đã được nhập. Chọn tạo bộ mới hoặc hủy.',duplicates);
  const extracted=await extractChinese(file.buffer), id=randomUUID(), doc=randomUUID();
+ await archiveFile('chinese_documents/' + doc, file.buffer, DOCX_MIME, file.originalname);
  // Keep invalid/unrecognized source content for review, rather than silently dropping it.
  await withTransaction(async c => {
   const run=txRun(c);
@@ -44,12 +47,13 @@ export async function reparseWord(id) {
  const set=await getSet(id,true);
  if(!set.document_id)throw badRequest('Bộ không có tài liệu Word nguồn');
  const doc=await one('SELECT original FROM chinese_documents WHERE id=?',[set.document_id]);
- const extracted=await extractChinese(doc.original);
+ const extracted=await extractChinese(await readArchive('chinese_documents/' + set.document_id, doc.original));
  return withTransaction(async c=>{
   const run=txRun(c), locked=await one('SELECT status FROM chinese_sets WHERE id=? FOR UPDATE',[id],run);
   if(locked.status!=='draft')throw badRequest('Chỉ phân tích lại bộ đang ở bản nháp');
   const progress=await run('SELECT student_id FROM chinese_progress WHERE set_id=? LIMIT 1',[id]);
-  const attempts=await run(`SELECT id FROM chinese_attempts WHERE set_id=? OR JSON_SEARCH(snapshot,'one',?,NULL,'$.items[*].set_id') IS NOT NULL LIMIT 1`,[id,id]);
+  const attempts=await run(dialectSql(`SELECT id FROM chinese_attempts WHERE set_id=? OR JSON_SEARCH(snapshot,'one',?,NULL,'$.items[*].set_id') IS NOT NULL LIMIT 1`,
+   `SELECT id FROM chinese_attempts WHERE set_id=? OR EXISTS(SELECT 1 FROM jsonb_array_elements(snapshot->'items') item WHERE item->>'set_id'=?) LIMIT 1`),[id,id]);
   const reviews=await run('SELECT r.item_id FROM chinese_reviews r JOIN chinese_items i ON i.id=r.item_id WHERE i.set_id=? LIMIT 1',[id]);
   if(progress.length||attempts.length||reviews.length)throw badRequest('Bộ đã có lượt học; hãy nhập thành bộ mới để giữ lịch sử');
   await run('UPDATE chinese_items SET active=0 WHERE set_id=?',[id]);
@@ -69,7 +73,8 @@ export async function saveSet(id,body) {
   if(new Set(d.items.filter(i=>i.id).map(i=>i.id)).size!==d.items.filter(i=>i.id).length) throw badRequest('ID nội dung trùng');
   await run('UPDATE chinese_sets SET title=?,status=?,processing_status=? WHERE id=?',[d.title,d.status,errors.length?'review':'ready',id]);
   await run('UPDATE chinese_items SET active=0 WHERE set_id=?',[id]);
-  for(const [p,i] of d.items.entries()) await run(`INSERT INTO chinese_items (id,set_id,kind,position,data) VALUES (?,?,?,?,?) ON DUPLICATE KEY UPDATE kind=VALUES(kind),position=VALUES(position),data=VALUES(data),active=1`,[i.id||randomUUID(),id,i.kind,p+1,JSON.stringify(i.data)]);
+  for(const [p,i] of d.items.entries()) await run(dialectSql(`INSERT INTO chinese_items (id,set_id,kind,position,data) VALUES (?,?,?,?,?) ON DUPLICATE KEY UPDATE kind=VALUES(kind),position=VALUES(position),data=VALUES(data),active=1`,
+   `INSERT INTO chinese_items(id,set_id,kind,position,data) VALUES (?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET kind=EXCLUDED.kind,position=EXCLUDED.position,data=EXCLUDED.data,active=1`),[i.id||randomUUID(),id,i.kind,p+1,JSON.stringify(i.data)]);
   return {id,issues:errors};
  });
 }
@@ -78,9 +83,11 @@ export async function review(user,itemId,body) {
  return withTransaction(async c=>{
   const run=txRun(c), item=await one("SELECT * FROM chinese_items WHERE id=? AND kind='vocabulary' AND active=1",[itemId],run);
   await getSet(item.set_id,false,run);
-  await run('INSERT INTO chinese_reviews (student_id,item_id) VALUES (?,?) ON DUPLICATE KEY UPDATE student_id=VALUES(student_id)',[user,itemId]);
+  await run(dialectSql('INSERT INTO chinese_reviews (student_id,item_id) VALUES (?,?) ON DUPLICATE KEY UPDATE student_id=VALUES(student_id)',
+   'INSERT INTO chinese_reviews(student_id,item_id) VALUES (?,?) ON CONFLICT(student_id,item_id) DO NOTHING'),[user,itemId]);
   const r=await one('SELECT * FROM chinese_reviews WHERE student_id=? AND item_id=? FOR UPDATE',[user,itemId],run);
-  const event=await run('INSERT IGNORE INTO chinese_review_events (id,student_id,item_id) VALUES (?,?,?)',[d.event_id,user,itemId]);
+  const event=await run(dialectSql('INSERT IGNORE INTO chinese_review_events (id,student_id,item_id) VALUES (?,?,?)',
+   'INSERT INTO chinese_review_events(id,student_id,item_id) VALUES (?,?,?) ON CONFLICT(id) DO NOTHING'),[d.event_id,user,itemId]);
   if(!event.affectedRows) return r;
   const count=r.review_count+(d.memory?1:0), days=d.memory==='remembered'?Math.min(30,2**Math.min(count,5)):d.memory==='review'?1:0;
   const due=new Date(Date.now()+(days?days*86400000:10*60000));
@@ -94,7 +101,8 @@ export async function progress(user,id,body) {
  if(d.last_item&&!ids.has(d.last_item) || d.read_items.some(v=>!items.some(i=>i.id===v&&['reading','grammar','dialogue'].includes(i.kind)))) throw badRequest('Nội dung không thuộc bộ');
  await withTransaction(async c=>{
   const run=txRun(c);
-  await run(`INSERT INTO chinese_progress (student_id,set_id,last_item,read_items) VALUES (?,?,?,?) ON DUPLICATE KEY UPDATE student_id=VALUES(student_id)`,[user,id,d.last_item,'[]']);
+  await run(dialectSql(`INSERT INTO chinese_progress (student_id,set_id,last_item,read_items) VALUES (?,?,?,?) ON DUPLICATE KEY UPDATE student_id=VALUES(student_id)`,
+   `INSERT INTO chinese_progress(student_id,set_id,last_item,read_items) VALUES (?,?,?,?) ON CONFLICT(student_id,set_id) DO NOTHING`),[user,id,d.last_item,'[]']);
   const previous=await one('SELECT read_items FROM chinese_progress WHERE student_id=? AND set_id=? FOR UPDATE',[user,id],run);
   const merged=[...new Set([...json(previous.read_items),...d.read_items])];
   await run('UPDATE chinese_progress SET last_item=?,read_items=?,updated_at=CURRENT_TIMESTAMP(3) WHERE student_id=? AND set_id=?',[d.last_item,JSON.stringify(merged),user,id]);
@@ -108,7 +116,8 @@ export async function saveTest(id,body) {
  const d=parse(testSchema,body); for(const setId of d.set_ids) await getSet(setId,true);
  const all=(await Promise.all(d.set_ids.map(s=>getItems(s)))).flat().filter(i=>i.kind==='question');
  if(d.status==='published' && (!all.length || issues(all).length)) throw badRequest('Bài kiểm tra cần câu hỏi hợp lệ, đã duyệt');
- id ||= randomUUID(); await query(`INSERT INTO chinese_tests (id,title,set_ids,duration_seconds,pass_percent,status) VALUES (?,?,?,?,?,?) ON DUPLICATE KEY UPDATE title=VALUES(title),set_ids=VALUES(set_ids),duration_seconds=VALUES(duration_seconds),pass_percent=VALUES(pass_percent),status=VALUES(status)`,[id,d.title,JSON.stringify([...new Set(d.set_ids)]),d.duration_seconds,d.pass_percent,d.status]);return {id};
+ id ||= randomUUID(); await query(dialectSql(`INSERT INTO chinese_tests (id,title,set_ids,duration_seconds,pass_percent,status) VALUES (?,?,?,?,?,?) ON DUPLICATE KEY UPDATE title=VALUES(title),set_ids=VALUES(set_ids),duration_seconds=VALUES(duration_seconds),pass_percent=VALUES(pass_percent),status=VALUES(status)`,
+  `INSERT INTO chinese_tests(id,title,set_ids,duration_seconds,pass_percent,status) VALUES (?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=EXCLUDED.title,set_ids=EXCLUDED.set_ids,duration_seconds=EXCLUDED.duration_seconds,pass_percent=EXCLUDED.pass_percent,status=EXCLUDED.status`),[id,d.title,JSON.stringify([...new Set(d.set_ids)]),d.duration_seconds,d.pass_percent,d.status]);return {id};
 }
 export async function tests(admin) {
  const rows=await query(`SELECT * FROM chinese_tests ${admin?'':"WHERE status='published'"}`), result=[];
@@ -144,7 +153,8 @@ export async function start(user,body) {
   if(existingId)return;
   const diamonds_policy=d.test_id||d.count===20?'v1':null;
   await run('INSERT INTO chinese_attempts (id,student_id,test_id,set_id,snapshot,answers,ends_at) VALUES (?,?,?,?,?,?,?)',[id,user,d.test_id??null,d.set_id??null,JSON.stringify({title,pass,items,diamonds_policy,course_ids:[...new Set(course_ids)]}),JSON.stringify({}),duration?new Date(Date.now()+duration*1000):null]);
-  for(const source of sources)await run(`INSERT INTO chinese_progress (student_id,set_id,last_item,read_items) VALUES (?,?,NULL,'[]') ON DUPLICATE KEY UPDATE updated_at=CURRENT_TIMESTAMP(3)`,[user,source]);
+  for(const source of sources)await run(dialectSql(`INSERT INTO chinese_progress (student_id,set_id,last_item,read_items) VALUES (?,?,NULL,'[]') ON DUPLICATE KEY UPDATE updated_at=CURRENT_TIMESTAMP(3)`,
+   `INSERT INTO chinese_progress(student_id,set_id,last_item,read_items) VALUES (?,?,NULL,'[]') ON CONFLICT(student_id,set_id) DO UPDATE SET updated_at=CURRENT_TIMESTAMP(3)`),[user,source]);
  });return attempt(user,existingId||id);
 }
 function state(a) {
@@ -183,7 +193,8 @@ export async function attempt(user,id,action=null,body={}) {
   await run('UPDATE chinese_attempts SET answers=? WHERE id=?',[JSON.stringify(answers),id]);a.answers=answers;
   if(d.lock&&!correct&&q.data.vocabulary_id) {
    const v=await run("SELECT id FROM chinese_items WHERE id=? AND set_id=? AND kind='vocabulary'",[q.data.vocabulary_id,q.set_id]);
-   if(v.length) await run(`INSERT INTO chinese_reviews (student_id,item_id,memory,wrong_count,next_review) VALUES (?,?,'review',1,CURRENT_TIMESTAMP(3)) ON DUPLICATE KEY UPDATE memory='review',wrong_count=wrong_count+1,next_review=CURRENT_TIMESTAMP(3)`,[user,q.data.vocabulary_id]);
+   if(v.length) await run(dialectSql(`INSERT INTO chinese_reviews (student_id,item_id,memory,wrong_count,next_review) VALUES (?,?,'review',1,CURRENT_TIMESTAMP(3)) ON DUPLICATE KEY UPDATE memory='review',wrong_count=wrong_count+1,next_review=CURRENT_TIMESTAMP(3)`,
+    `INSERT INTO chinese_reviews(student_id,item_id,memory,wrong_count,next_review) VALUES (?,?,'review',1,CURRENT_TIMESTAMP(3)) ON CONFLICT(student_id,item_id) DO UPDATE SET memory='review',wrong_count=chinese_reviews.wrong_count+1,next_review=CURRENT_TIMESTAMP(3)`),[user,q.data.vocabulary_id]);
   }
   if(json(a.snapshot).diamonds_policy==='v1'&&snap.items.every(i=>answers[i.id]?.locked))return state(await finalize(a,run));
   return state(a);
@@ -192,7 +203,13 @@ export async function attempt(user,id,action=null,body={}) {
 export async function history(user) {return query('SELECT id,test_id,set_id,started_at,ends_at,finished_at,score,diamonds_delta FROM chinese_attempts WHERE student_id=? AND abandoned_at IS NULL ORDER BY started_at DESC LIMIT 200',[user]);}
 export async function stats(filters={}) {
  const totals={}; for(const [name,sql] of Object.entries({lessons:'SELECT COUNT(*) n FROM chinese_lessons',sets:'SELECT COUNT(*) n FROM chinese_sets',vocabulary:"SELECT COUNT(*) n FROM chinese_items WHERE active=1 AND kind='vocabulary'",questions:"SELECT COUNT(*) n FROM chinese_items WHERE active=1 AND kind='question'",pending:"SELECT COUNT(*) n FROM chinese_sets WHERE processing_status='review'",attempts:'SELECT COUNT(*) n FROM chinese_attempts'})) totals[name]=(await query(sql))[0].n;
- const progress=await query(`SELECT p.*,u.display_name,s.title,l.level_id,l.id lesson_id FROM chinese_progress p JOIN profiles u ON u.id=p.student_id JOIN chinese_sets s ON s.id=p.set_id JOIN chinese_lessons l ON l.id=s.lesson_id WHERE (?='' OR p.student_id=?) AND (?='' OR l.level_id=?) AND (?='' OR l.id=?) AND (?='' OR s.id=?) ORDER BY p.updated_at DESC LIMIT 500`,[filters.student_id||'',filters.student_id||'',filters.level_id||'',filters.level_id||'',filters.lesson_id||'',filters.lesson_id||'',filters.set_id||'',filters.set_id||'']);
+ const where=[],params=[];
+ for(const [key,column] of Object.entries({student_id:'p.student_id',level_id:'l.level_id',lesson_id:'l.id',set_id:'s.id'}))if(filters[key]){
+  const value=key==='level_id'?Number(filters[key]):filters[key];
+  if(key==='level_id'&&(!Number.isInteger(value)||value<1||value>9))throw badRequest('HSK phải từ 1 đến 9');
+  where.push(column+'=?');params.push(value);
+ }
+ const progress=await query(`SELECT p.*,u.display_name,s.title,l.level_id,l.id lesson_id FROM chinese_progress p JOIN profiles u ON u.id=p.student_id JOIN chinese_sets s ON s.id=p.set_id JOIN chinese_lessons l ON l.id=s.lesson_id ${where.length?'WHERE '+where.join(' AND '):''} ORDER BY p.updated_at DESC LIMIT 500`,params);
  const items=await query('SELECT id,set_id,kind FROM chinese_items WHERE active=1');
  const reviews=await query('SELECT student_id,item_id,memory,review_count,wrong_count FROM chinese_reviews');
  const attempts=await query('SELECT id,student_id,snapshot,answers,score,finished_at FROM chinese_attempts');

@@ -1,5 +1,5 @@
 import {randomUUID} from 'node:crypto';
-import {query,withTransaction} from '../config/db.js';
+import {query,withTransaction,dialectSql} from '../config/db.js';
 import {AppError,notFound,badRequest} from '../utils/errors.js';
 import {requireCourse} from './course-service.js';
 import {validateSheet,publicItem,gradeItem,validateResponses} from './worksheet-rules.js';
@@ -19,7 +19,8 @@ export async function save(admin,id,body){
   if(old&&old.version!==d.version)throw new AppError(409,'WORKSHEET_CHANGED','Bộ bài đã thay đổi ở nơi khác. Tải lại trước khi sửa.');
   if(old&&old.grade!==d.grade&&(await run('SELECT id FROM worksheet_attempts WHERE worksheet_id=? LIMIT 1',[id])).length)throw badRequest('Bộ bài đã có học sinh làm. Tạo bộ mới để đổi lớp.');
   for(const item of d.items)if(item.imageId&&!(await run('SELECT id FROM worksheet_images WHERE id=? AND worksheet_id=?',[item.imageId,id])).length)throw badRequest('Hình ảnh không thuộc bộ bài này.');
-  await run(`INSERT INTO worksheets(id,title,grade,subject_id,status,items,created_by,lesson_id) VALUES (?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE title=VALUES(title),grade=VALUES(grade),subject_id=VALUES(subject_id),status=VALUES(status),items=VALUES(items),lesson_id=VALUES(lesson_id),version=version+1`,[id,d.title,d.grade,d.subject_id,d.status,JSON.stringify(d.items),admin,d.lesson_id]);
+  await run(dialectSql(`INSERT INTO worksheets(id,title,grade,subject_id,status,items,created_by,lesson_id) VALUES (?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE title=VALUES(title),grade=VALUES(grade),subject_id=VALUES(subject_id),status=VALUES(status),items=VALUES(items),lesson_id=VALUES(lesson_id),version=version+1`,
+   `INSERT INTO worksheets(id,title,grade,subject_id,status,items,created_by,lesson_id) VALUES (?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=EXCLUDED.title,grade=EXCLUDED.grade,subject_id=EXCLUDED.subject_id,status=EXCLUDED.status,items=EXCLUDED.items,lesson_id=EXCLUDED.lesson_id,version=worksheets.version+1`),[id,d.title,d.grade,d.subject_id,d.status,JSON.stringify(d.items),admin,d.lesson_id]);
   return sheet(id,true,null,run);
  });
 }
@@ -59,6 +60,6 @@ export async function review(admin,id,body){
   if(new Set(marks.map(m=>m.id)).size!==manual.length||marks.length!==manual.length||manual.some(r=>!marks.some(m=>m.id===r.id)))throw badRequest('Chấm đủ các câu tự luận.');
   for(const result of manual)Object.assign(result,marks.find(m=>m.id===result.id));
   const score=Math.round(results.filter(r=>r.correct).length/results.length*10000)/100;
-  await run("UPDATE worksheet_attempts SET results=?,score=?,status='completed',reviewed_by=?,reviewed_at=UTC_TIMESTAMP(3) WHERE id=?",[JSON.stringify(results),score,admin,id]);return {saved:true,score};
+  await run("UPDATE worksheet_attempts SET results=?,score=?,status='completed',reviewed_by=?,reviewed_at=CURRENT_TIMESTAMP(3) WHERE id=?",[JSON.stringify(results),score,admin,id]);return {saved:true,score};
  });
 }

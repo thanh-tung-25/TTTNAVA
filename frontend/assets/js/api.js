@@ -42,7 +42,11 @@ function isLoginPage() {
 }
 
 export async function api(path, options = {}) {
-  const { method = 'GET', body, headers = {}, raw = false } = options;
+  const { method = 'GET', headers = {}, raw = false } = options;
+  let { body } = options;
+  if (body instanceof FormData && body.get('file') instanceof File && /\.docx$/i.test(body.get('file').name)) {
+    body = await prepareWordUpload(body);
+  }
   const init = {
     method,
     credentials: 'same-origin',
@@ -95,6 +99,28 @@ export async function api(path, options = {}) {
     throw new ApiError(error.message ?? 'Có lỗi xảy ra, con thử lại nhé!', response.status, error.code, error.details);
   }
   return payload;
+}
+
+let uploadConfig;
+const uploadedFiles = new WeakMap();
+async function prepareWordUpload(form) {
+  uploadConfig ??= api('/api/v1/runtime').then(result => result.data).catch(error => { uploadConfig = undefined; throw error; });
+  if (!(await uploadConfig).directWordUpload) return form;
+  const file = form.get('file');
+  let uploaded = uploadedFiles.get(file);
+  if (!uploaded || uploaded.expiresAt <= Date.now()) {
+    const bytes = await file.arrayBuffer();
+    const hash = await crypto.subtle.digest('SHA-256', bytes);
+    const digest = [...new Uint8Array(hash)].map(value => value.toString(16).padStart(2, '0')).join('');
+    uploaded = (await api('/api/v1/storage/word-upload', { method: 'POST', body: { filename: file.name, bytes: file.size, sha256: digest } })).data;
+    const response = await fetch(uploaded.signedUrl, { method: 'PUT', credentials: 'omit', headers: { 'Content-Type': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'x-upsert': 'false' }, body: bytes });
+    if (!response.ok) throw new ApiError('Tải Word lên kho tệp chưa thành công. Vui lòng thử lại.', response.status, 'WORD_UPLOAD_FAILED');
+    uploadedFiles.set(file, uploaded);
+  }
+  const body = Object.fromEntries(form.entries());
+  delete body.file;
+  body.fileToken = uploaded.fileToken;
+  return body;
 }
 
 export function toast(message, type = 'info') {

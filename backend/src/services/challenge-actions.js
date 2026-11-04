@@ -114,7 +114,7 @@ export async function declineChallenge(profileId, challengeId) {
   }
   if (challenge.status !== 'pending') return buildState(profileId, challengeId);
   await query(
-    `UPDATE challenges SET status = 'cancelled', cancelled_reason = 'declined', finished_at = UTC_TIMESTAMP(3)
+    `UPDATE challenges SET status = 'cancelled', cancelled_reason = 'declined', finished_at = CURRENT_TIMESTAMP(3)
      WHERE id = ? AND status = 'pending'`,
     [challengeId],
   );
@@ -127,7 +127,7 @@ export async function forfeitChallenge(profileId, challengeId) {
   assertParticipant(challenge, profileId);
   if (challenge.status === 'pending' || challenge.status === 'accepted') {
     await query(
-      `UPDATE challenges SET status = 'cancelled', cancelled_reason = 'forfeit', finished_at = UTC_TIMESTAMP(3)
+      `UPDATE challenges SET status = 'cancelled', cancelled_reason = 'forfeit', finished_at = CURRENT_TIMESTAMP(3)
        WHERE id = ? AND status IN ('pending', 'accepted')`,
       [challengeId],
     );

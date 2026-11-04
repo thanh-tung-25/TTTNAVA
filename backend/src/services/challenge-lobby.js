@@ -9,11 +9,11 @@ import {
 export async function listLobby(profileId) {
   await cleanupExpiredInvitations();
   const incoming = await challengeRowsQuery(
-    "c.opponent_id = ? AND c.status = 'pending' AND c.expires_at > UTC_TIMESTAMP(3) ORDER BY c.created_at DESC",
+    "c.opponent_id = ? AND c.status = 'pending' AND c.expires_at > CURRENT_TIMESTAMP(3) ORDER BY c.created_at DESC",
     [profileId],
   );
   const outgoing = await challengeRowsQuery(
-    "c.challenger_id = ? AND c.status = 'pending' AND c.expires_at > UTC_TIMESTAMP(3) ORDER BY c.created_at DESC",
+    "c.challenger_id = ? AND c.status = 'pending' AND c.expires_at > CURRENT_TIMESTAMP(3) ORDER BY c.created_at DESC",
     [profileId],
   );
   const recent = await challengeRowsQuery(

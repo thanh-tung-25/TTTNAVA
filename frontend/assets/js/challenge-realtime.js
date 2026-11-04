@@ -1,4 +1,4 @@
-import { formatDuration } from '/assets/js/api.js';
+import { api, formatDuration } from '/assets/js/api.js';
 import { toast } from '/assets/js/ui.js';
 import { elements, store } from './challenge-context.js';
 import { loadLobby } from './challenge-lobby.js';
@@ -58,16 +58,21 @@ export function startTicker() {
 }
 
 export function startPolling() {
+  let polling = false;
   setInterval(() => {
-    if (!store.match || !['pending', 'accepted', 'in_progress'].includes(store.match.status)) return;
     if (document.hidden) return;
+    if (polling) return;
     if (Date.now() - store.lastAutoRefresh < 3000) return;
     store.lastAutoRefresh = Date.now();
-    refreshMatch();
+    polling = true;
+    const update = !store.match ? loadLobby() : ['pending', 'accepted', 'in_progress'].includes(store.match.status) ? refreshMatch() : Promise.resolve();
+    Promise.resolve(update).catch(() => {}).finally(() => { polling = false; });
   }, 3000);
 }
 
-export function setupSocket() {
+export async function setupSocket() {
+  try { if ((await api('/api/v1/runtime')).data.realtime === 'polling') return; }
+  catch { return; }
   if (typeof window.io !== 'function') return;
   store.socket = window.io({ withCredentials: true });
   const onUpdate = (payload) => {

@@ -3,6 +3,7 @@ import { withTransaction } from '../config/db.js';
 import { validateQuestionPayload } from './admin-question-validation.js';
 import { resolveQuestionScope } from './curriculum-scope.js';
 import { getQuestionDetail } from './admin-questions.js';
+import { archiveFile, DOCX_MIME } from './private-storage.js';
 
 async function insertQuestion(connection, adminId, topicId, payload, forcedStatus = null) {
   const clean = validateQuestionPayload(payload.type, payload);
@@ -67,6 +68,7 @@ export async function createQuestion(adminId, payload) {
 export async function importQuestionDrafts(adminId, payload, sourceFile=null) {
   const scope = await resolveQuestionScope(payload);
   const documentId=sourceFile?randomUUID():null;
+  if (sourceFile) await archiveFile('word_import_documents/' + documentId, sourceFile.buffer, DOCX_MIME, sourceFile.originalname);
   const ids = await withTransaction(async (connection) => {
     if(sourceFile)await connection.query('INSERT INTO word_import_documents (id,filename,original,byte_size,lesson_id,question_count,imported_by) VALUES (?,?,?,?,?,?,?)',[documentId,sourceFile.originalname.slice(0,255),sourceFile.buffer,sourceFile.buffer.length,scope.lessonId,payload.questions.length,adminId]);
     const created = [];

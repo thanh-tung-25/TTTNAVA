@@ -35,12 +35,13 @@ export function errorHandler(error, request, response, _next) {
     return;
   }
 
-  if (error?.code === 'ER_DUP_ENTRY') {
+  if (error?.code === 'ER_DUP_ENTRY' || error?.code === '23505') {
     response.status(409).json({ error: { code: 'DUPLICATE', message: 'Dữ liệu này đã tồn tại' } });
     return;
   }
 
-  console.error(`[${request.method} ${request.originalUrl}]`, error);
+  console.error(JSON.stringify({ event: 'request_error', method: request.method, path: request.path,
+    code: typeof error?.code === 'string' ? error.code : 'UNKNOWN', errorType: error?.name || 'Error' }));
   response.status(500).json({
     error: {
       code: 'INTERNAL_ERROR',

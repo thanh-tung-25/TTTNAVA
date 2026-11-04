@@ -8,6 +8,7 @@ import { requirePageRole, redirectIfAuthenticated, resolveUser } from './middlew
 import { requireSameOrigin } from './middlewares/same-origin.js';
 import { errorHandler, notFoundHandler } from './middlewares/error.js';
 import { coursePageGuard } from './middlewares/course-page.js';
+import { protectedHtml } from './middlewares/protected-html.js';
 
 const frontendRoot = path.join(env.backendRoot, '..', 'frontend');
 const pagesRoot = path.join(frontendRoot, 'pages');
@@ -30,7 +31,7 @@ export function createApp() {
         fontSrc: ["'self'", 'https://fonts.gstatic.com', 'data:'],
         imgSrc: ["'self'", 'data:', 'https:'],
         mediaSrc: ["'self'", 'blob:', 'https:'],
-        connectSrc: ["'self'", 'ws:', 'wss:'],
+        connectSrc: ["'self'", 'ws:', 'wss:', ...(env.storage.enabled ? [new URL(env.storage.url).origin] : [])],
         objectSrc: ["'none'"],
         baseUri: ["'self'"],
         formAction: ["'self'"],
@@ -42,6 +43,7 @@ export function createApp() {
 
   app.use('/api/v1/chinese', express.json({ limit: '2mb' }));
   app.use('/api/v1/worksheets', express.json({ limit: '2mb' }));
+  app.use('/api/v1/admin/questions/import', express.json({ limit: '2mb' }));
   app.use(express.json({ limit: '100kb' }));
   app.use(express.urlencoded({ extended: false, limit: '100kb' }));
   app.use(cookieParser());
@@ -65,16 +67,18 @@ export function createApp() {
     response.sendFile(path.join(pagesRoot, 'login', 'index.html'));
   });
 
-  app.use('/pages/student', requirePageRole('student'), coursePageGuard, express.static(path.join(pagesRoot, 'student'), {
-    extensions: ['html'],
-  }));
+  app.use('/pages/student', requirePageRole('student'), coursePageGuard, protectedHtml(path.join(pagesRoot, 'student')));
   app.get(['/pages/admin/worksheets','/pages/admin/worksheets/','/pages/admin/worksheets/index.html'],requirePageRole('admin'),(_request,response)=>response.redirect('/pages/admin/questions/'));
-  app.use('/pages/admin', requirePageRole('admin'), express.static(path.join(pagesRoot, 'admin'), {
-    extensions: ['html'],
-  }));
+  app.use('/pages/admin', requirePageRole('admin'), protectedHtml(path.join(pagesRoot, 'admin')));
 
   app.get('/api/v1/health', (_request, response) => {
     response.json({ data: { status: 'ok', time: new Date().toISOString() } });
+  });
+  app.get('/api/v1/runtime', (_request, response) => {
+    response.set('Cache-Control', 'no-store').json({ data: {
+      directWordUpload: env.storage.enabled,
+      realtime: process.env.VERCEL ? 'polling' : 'socket',
+    } });
   });
 
   app.use('/api/v1', requireSameOrigin, apiRouter);

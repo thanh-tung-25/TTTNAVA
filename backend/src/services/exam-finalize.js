@@ -43,9 +43,9 @@ export async function finalizeAttempt(attemptId, { force }) {
     );
     await connection.query(
       `UPDATE exam_attempts
-       SET status = 'submitted', submitted_at = UTC_TIMESTAMP(3),
+       SET status = 'submitted', submitted_at = CURRENT_TIMESTAMP(3),
            answered_count = ?, correct_count = ?, score_percent = ?,
-           rewarded_at = IF(? > 0, UTC_TIMESTAMP(3), NULL)
+           rewarded_at = CASE WHEN ? > 0 THEN CURRENT_TIMESTAMP(3) ELSE NULL END
        WHERE id = ?`,
       [answered, correct, percent, amount, attemptId],
     );

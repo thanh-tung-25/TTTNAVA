@@ -1,6 +1,6 @@
 import { randomUUID } from 'node:crypto';
 import { z } from 'zod';
-import { withTransaction, query } from '../config/db.js';
+import { withTransaction, query, dialectSql } from '../config/db.js';
 import { one, json } from '../repositories/chinese.js';
 import { parse } from '../validators/chinese.js';
 
@@ -30,8 +30,10 @@ export async function removeContent(kind,id) {
    // Attempts contain a complete snapshot, so their results survive source deletion.
    await run('UPDATE chinese_attempts SET set_id=NULL WHERE set_id=?',[set.id]);
    await run('DELETE FROM chinese_progress WHERE set_id=?',[set.id]);
-   await run('DELETE r FROM chinese_review_events r JOIN chinese_items i ON i.id=r.item_id WHERE i.set_id=?',[set.id]);
-   await run('DELETE r FROM chinese_reviews r JOIN chinese_items i ON i.id=r.item_id WHERE i.set_id=?',[set.id]);
+   await run(dialectSql('DELETE r FROM chinese_review_events r JOIN chinese_items i ON i.id=r.item_id WHERE i.set_id=?',
+    'DELETE FROM chinese_review_events WHERE item_id IN (SELECT id FROM chinese_items WHERE set_id=?)'),[set.id]);
+   await run(dialectSql('DELETE r FROM chinese_reviews r JOIN chinese_items i ON i.id=r.item_id WHERE i.set_id=?',
+    'DELETE FROM chinese_reviews WHERE item_id IN (SELECT id FROM chinese_items WHERE set_id=?)'),[set.id]);
    await run('DELETE FROM chinese_items WHERE set_id=?',[set.id]);
    await run('DELETE FROM chinese_sets WHERE id=?',[set.id]);
    if(set.document_id)await run('DELETE FROM chinese_documents WHERE id=? AND NOT EXISTS (SELECT 1 FROM chinese_sets WHERE document_id=?)',[set.document_id,set.document_id]);

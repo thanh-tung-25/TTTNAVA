@@ -1,5 +1,7 @@
 import multer from 'multer';
 import { AppError } from '../utils/errors.js';
+import env from '../config/env.js';
+import { uploadedWord } from '../services/storage-upload.js';
 
 const MAX_FILE_BYTES = 20 * 1024 * 1024;
 const ALLOWED_MIME = new Set([
@@ -25,6 +27,11 @@ const upload = multer({
 }).single('file');
 
 export function uploadDocx(request, response, next) {
+  if (request.is('application/json') && request.body?.fileToken) {
+    if (!env.storage.enabled) return next(new AppError(503, 'STORAGE_DISABLED', 'Chưa bật kho tệp.'));
+    uploadedWord(request.body.fileToken, request.user).then(file => { request.file = file; next(); }, next);
+    return;
+  }
   upload(request, response, (error) => {
     if (error instanceof multer.MulterError) {
       if (error.code === 'LIMIT_FILE_SIZE') {

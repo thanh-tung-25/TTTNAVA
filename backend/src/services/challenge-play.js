@@ -1,4 +1,4 @@
-import { query, withTransaction } from '../config/db.js';
+import { query, withTransaction, dialectSql } from '../config/db.js';
 import { AppError } from '../utils/errors.js';
 import { addSeconds } from '../utils/time.js';
 import { emitToUsers } from '../realtime/emit.js';
@@ -92,12 +92,13 @@ export async function finalizeChallenge(challengeId, { force = false, forfeiterI
     };
 
     await connection.query(
-      `UPDATE challenges SET status = 'finished', finished_at = UTC_TIMESTAMP(3),
+      `UPDATE challenges SET status = 'finished', finished_at = CURRENT_TIMESTAMP(3),
          winner_id = ?, result_json = ? WHERE id = ?`,
       [winnerId, JSON.stringify(resultJson), challengeId],
     );
     await connection.query(
-      'INSERT IGNORE INTO challenge_rewards (challenge_id, detail_json) VALUES (?, ?)',
+      dialectSql('INSERT IGNORE INTO challenge_rewards (challenge_id, detail_json) VALUES (?, ?)',
+        'INSERT INTO challenge_rewards(challenge_id,detail_json) VALUES (?,?) ON CONFLICT(challenge_id) DO NOTHING'),
       [challengeId, JSON.stringify(rewardDetail)],
     );
 

@@ -2,6 +2,8 @@
 
 ## Trạng thái ngày 04/11/2026
 
+Website đã triển khai: **https://tttnava-backend.vercel.app**. Đã kiểm tra trực tiếp trang chủ, trang đăng nhập, API health/runtime, trang khóa học admin/học sinh trên Chromium, phân quyền API và tải Word từ Storage bằng signed URL (đối chiếu SHA-256). POST cùng origin hoạt động, origin lạ bị chặn 403; cookie có Secure và HttpOnly. Dùng tài khoản hiện có để đăng nhập. XAMPP vẫn là bản local, không tự đồng bộ những thay đổi phát sinh sau khi chuyển sang Supabase.
+
 Nguồn dữ liệu đã chọn: **database đang cấu hình trên máy này**, gồm các bộ Toán, Tiếng Việt và Tiếng Anh vừa tạo/đăng. Không lấy dữ liệu Render làm nguồn và không tự gộp hai database.
 
 Đã tạo project Supabase `njaasgcfgjismpmzoncb`, kiểm tra kết nối TLS với chứng chỉ và xuất bản sao nhất quán của MySQL/MariaDB trong XAMPP. Đã nhập và đối chiếu thành công **41 bảng, 275.927 bản ghi**, gồm nội dung nhị phân của tệp Word/ảnh, vào schema riêng `ttnava_stage`. Đã kiểm tra 66 khóa ngoại và bật RLS cho cả 41 bảng. Báo cáo nằm trong `supabase-import-report.json` cạnh snapshot. Chưa đổi kết nối ứng dụng và chưa triển khai Vercel. Website hiện vẫn dùng XAMPP; cần chuyển mã backend và kiểm thử trước khi đổi sang PostgreSQL.
@@ -71,7 +73,7 @@ Nguồn: [WebSocket trên Vercel](https://vercel.com/docs/functions/websockets).
 
 **Storage đã hoàn tất:** bucket `ttnava-private` ở chế độ private, đã chép đủ **824 tệp / 5.647.230 byte** và đọc lại đối chiếu SHA-256. Báo cáo ở `backend/backups/storage-migration/report.json`; bản gốc vẫn còn trong XAMPP và PostgreSQL. Đã thử thành công bằng Chromium tải trực tiếp Word **17.829.562 byte**, API chỉ nhận **575 byte** thông tin tham chiếu và đọc được 4 câu hỏi. Truy cập public bị chặn, signed download trả đúng byte; tệp thử đã được dọn.
 
-File `backend/.env.vercel` đã được tạo với kết quả `ready:true`. Cấu hình `vercel.json` đã được kiểm tra theo schema chính thức. Chưa Deploy lên Vercel; `.env` chạy local vẫn dùng XAMPP.
+File `backend/.env.vercel` đã được tạo với kết quả `ready:true` và dùng cho Vercel. Cấu hình `vercel.json` đã được kiểm tra theo schema chính thức. Website online dùng Supabase; `.env` chạy local vẫn dùng XAMPP.
 
 Đã xuất lại XAMPP ngày 04/11/2026 và đối chiếu với snapshot đã nhập: cả 41 bảng / 275.927 bản ghi vẫn khớp SHA-256. Snapshot kiểm tra mới nằm ở `backend/backups/platform-migration/2026-11-04T05-28-43-253Z/`.
 
@@ -92,7 +94,7 @@ Nguồn: [API keys của Supabase](https://supabase.com/docs/guides/getting-star
 5. **Upload/download:** Word hiện cho phép 20 MB, trong khi Vercel Functions có giới hạn payload 4,5 MB. Browser phải tải trực tiếp lên Storage bằng signed upload URL; backend kiểm tra quyền, tệp và hash rồi mới lưu câu hỏi. Download qua signed URL ngắn hạn sau kiểm tra quyền. Không bật public bucket để né phân quyền.
 6. **Trang và tài nguyên:** tài liệu Express của Vercel lưu ý `express.static()` không phục vụ static assets. Cần build tài nguyên công khai ra `public/**` và giữ các trang cần đăng nhập sau kiểm tra quyền.
 7. **Thách đấu:** xử lý nhiều instance, ngắt/kết nối lại, lời mời mới ở sảnh và thời gian trận dựa trên database; giữ chức năng hiện có.
-8. **Kiểm thử:** bộ kiểm thử MySQL, các luồng PostgreSQL, trình duyệt và Storage thực tế đã đạt. Còn smoke test trên domain Vercel sau Deploy.
+8. **Kiểm thử:** bộ kiểm thử MySQL, các luồng PostgreSQL, trình duyệt, Storage thực tế và smoke test trên domain Vercel đã đạt. Có thể chạy lại kiểm tra online bằng `node --use-system-ca backend/scripts/check-vercel-pages.mjs https://tttnava-backend.vercel.app`.
 
 Nguồn: [giới hạn Vercel Functions](https://vercel.com/docs/functions/limitations), [Express trên Vercel](https://vercel.com/docs/frameworks/backend/express), [kết nối PostgreSQL Supabase](https://supabase.com/docs/guides/database/connecting-to-postgres), [hướng dẫn chuyển MySQL](https://supabase.com/kb/guides/migrate-from-mysql).
 

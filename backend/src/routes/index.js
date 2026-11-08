@@ -13,8 +13,10 @@ import adminContentRouter from './admin-content.js';
 import storageRouter from './storage.js';
 import questionAudioRouter from './question-audio.js';
 import chatRouter from './chat.js';
+import learningSupportRouter from './learning-support.js';
 
 const router = Router();
+router.use('/learning',learningSupportRouter);
 router.use('/chat',chatRouter);
 router.use('/question-audio',questionAudioRouter);
 router.use('/storage', storageRouter);

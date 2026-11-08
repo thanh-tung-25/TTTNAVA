@@ -3,6 +3,10 @@
 .question-audio button{min-height:44px;white-space:normal;max-width:100%;font:inherit}
 .question-audio button[aria-pressed=true]{background:#e6f4f7;color:#15536b}
 .question-audio [role=status]{font-size:.9rem;line-height:1.5;color:#52697d;max-width:100%}
+.choice-with-audio{display:flex;gap:8px;align-items:stretch;min-width:0;flex:1}.choice-with-audio>:first-child{flex:1;min-width:0;margin:0}.choice-audio{margin:0;flex:none;display:flex;flex-direction:column;justify-content:center;max-width:100px}.choice-audio button{width:44px;min-height:44px;padding:7px!important;font-size:19px!important}.choice-audio [role=status]{font-size:10px;line-height:1.3;overflow-wrap:anywhere}.choice-with-audio .quiz-option{width:100%}
+.choice-picture,.choice-count{display:none}.beginner-mode .choice-picture{display:inline-block;object-fit:contain;flex:none;vertical-align:middle;margin-right:8px;filter:drop-shadow(0 4px 3px #78629322)}.beginner-mode .choice-count{display:inline-block;max-width:95px;line-height:1.6;font-size:20px;letter-spacing:3px;color:#9b71ca;vertical-align:middle;margin-right:9px}
+.choice-with-audio[hidden]{display:none}
+.applied-tokens>.choice-with-audio,.worksheet-token-row>.choice-with-audio{flex:0 1 auto;min-width:84px;max-width:100%}
 
 /* ===== Thanh đầu trang ===== */
 .topbar {

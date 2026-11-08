@@ -1,0 +1,16 @@
+.beginner-mode .page{font-size:19px;line-height:1.7}
+.beginner-mode .question-prompt,.beginner-mode .quiz-prompt,.beginner-mode .worksheet-prompt,.beginner-mode .applied-hanzi{font-size:clamp(24px,4vw,32px);line-height:1.7}
+.beginner-mode .option,.beginner-mode .quiz-option,.beginner-mode .worksheet-choices .chat-button,.beginner-mode .worksheet-choices button,.beginner-mode .applied-practice .quiz-choices button:not(.choice-audio button){min-height:68px;font-size:23px;line-height:1.6;padding:16px}
+.beginner-mode .choice-audio button{width:58px;min-height:58px;font-size:25px!important;border-radius:16px}
+.beginner-mode .quiz-text,.beginner-mode .fill-row input,.beginner-mode .worksheet-answer input{font-size:26px;min-height:64px}
+.beginner-mode .question-audio:not(.choice-audio)>button{min-height:52px;font-size:19px}
+.beginner-mode .quiz-actions>.btn,.beginner-mode .worksheet-footer>.btn{min-height:56px;font-size:19px}
+.beginner-mode .opt-key,.beginner-mode .option-letter{font-size:24px}
+.beginner-mode .options,.beginner-mode .quiz-choices{gap:16px}
+.beginner-mode .question-card,.beginner-mode .worksheet-question{max-width:820px;margin-inline:auto}
+.beginner-mode .worksheet-illustration{max-width:100%;max-height:260px;object-fit:contain}
+.beginner-instruction{display:flex;align-items:center;gap:14px;padding:14px;background:#eff8e9;border:1px solid #cfe6bf;border-radius:20px;margin:0 0 18px;color:#426438}
+.beginner-instruction img{flex:none;filter:drop-shadow(0 4px 3px #8cae6b25)}.beginner-instruction strong{font-size:20px}.beginner-instruction p{font-size:15px;margin:3px 0}.beginner-instruction .question-audio{margin:6px 0 0}
+#beginner-toggle[aria-pressed=true]{background:#e5f4dc;color:#3d6831;box-shadow:inset 0 0 0 2px #a5cd8b}
+.beginner-control{display:flex;justify-content:flex-end;margin:8px 0 16px;max-width:100%}.beginner-control #beginner-toggle{white-space:nowrap;min-height:42px;padding:8px 13px;font-size:13px;line-height:1.4}
+@media(max-width:640px){.beginner-instruction{gap:8px;padding:10px}.beginner-instruction img{width:48px;height:48px}.beginner-instruction strong{font-size:17px}.beginner-instruction p{font-size:13px}.beginner-mode .page{font-size:18px}.beginner-mode .choice-with-audio{gap:6px}}

@@ -1,5 +1,5 @@
 import {el} from './api.js';
-import {questionAudio} from './question-audio.js';
+import {questionAudio,withChoiceAudio} from './question-audio.js';
 export const ITEM_TYPES={fill:'Điền đáp án',blanks:'Nhiều ô trống',choice:'Chọn đáp án',compare:'Chọn dấu > < =',ordering:'Sắp xếp',matching:'Nối cặp',column:'Đặt tính',word:'Toán có lời văn',drawing:'Tự luận / vẽ'};
 export const imageUrl=id=>'/api/v1/worksheets/images/'+encodeURIComponent(id);
 const btn=(text,fn)=>el('button',{type:'button',class:'btn btn-ghost',text,onclick:fn});
@@ -14,7 +14,7 @@ export function renderItem(item,value,onChange){
  else if(['choice','compare'].includes(item.type)){
   const choices=item.type==='compare'?['<','>','=']:item.config.options;
   const list=el('div',{class:'worksheet-choices',role:'group','aria-label':'Chọn đáp án'});
-  choices.forEach((label,index)=>{const answer=item.type==='compare'?label:index,b=btn(label,()=>{list.querySelectorAll('button').forEach(n=>n.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');onChange(answer);});b.setAttribute('aria-pressed',String(value===answer));list.append(b);});box.append(list);
+  choices.forEach((label,index)=>{const answer=item.type==='compare'?label:index,b=btn(label,()=>{list.querySelectorAll('button:not(.choice-audio button)').forEach(n=>n.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');onChange(answer);});b.setAttribute('aria-pressed',String(value===answer));list.append(withChoiceAudio(b,label,index+1,{language:item.subjectId==='tieng-anh'?'en-US':'vi-VN'}));});box.append(list);
  }else if(item.type==='blanks'){
   const values=Array.isArray(value)?[...value]:item.config.labels.map(()=> '');
   const list=el('div',{class:'worksheet-blanks'});item.config.labels.forEach((label,index)=>list.append(input(label,values[index],v=>{values[index]=v;onChange([...values]);})));box.append(list);
@@ -22,11 +22,11 @@ export function renderItem(item,value,onChange){
   const values=Array.isArray(value)?[...value]:item.config.left.map(()=> '');
   item.config.left.forEach((label,index)=>{
    const select=el('select',{class:'select','aria-label':'Ghép '+label},[el('option',{value:'',text:'Chọn kết quả'}),...[...new Set(item.config.targets)].sort((a,b)=>a.localeCompare(b,'vi',{numeric:true})).map(target=>el('option',{value:target,text:target}))]);
-   select.value=values[index]||'';select.onchange=()=>{values[index]=select.value;onChange([...values]);};box.append(el('label',{class:'worksheet-pair'},[el('strong',{text:label}),el('span',{text:'→','aria-hidden':'true'}),select]));
+   select.value=values[index]||'';select.onchange=()=>{values[index]=select.value;onChange([...values]);};box.append(withChoiceAudio(el('label',{class:'worksheet-pair'},[el('strong',{text:label}),el('span',{text:'→','aria-hidden':'true'}),select]),()=>label+'. '+(select.value||'Chưa chọn'),index+1));
   });
  }else if(item.type==='ordering'){
   let ordered=Array.isArray(value)?[...value]:[];const selected=el('div',{class:'worksheet-token-row'}),available=el('div',{class:'worksheet-token-row'});
-  const redraw=()=>{selected.replaceChildren(...ordered.map((token,n)=>btn(token,()=>{ordered.splice(n,1);onChange([...ordered]);redraw();})));if(!ordered.length)selected.append(el('span',{class:'muted',text:'Thứ tự con chọn sẽ hiện ở đây'}));available.replaceChildren(...item.config.tokens.filter(t=>!ordered.includes(t)).map(token=>btn(token,()=>{ordered.push(token);onChange([...ordered]);redraw();})));};
+  const redraw=()=>{selected.replaceChildren(...ordered.map((token,n)=>btn(token,()=>{ordered.splice(n,1);onChange([...ordered]);redraw();})));if(!ordered.length)selected.append(el('span',{class:'muted',text:'Thứ tự con chọn sẽ hiện ở đây'}));available.replaceChildren(...item.config.tokens.filter(t=>!ordered.includes(t)).map((token,n)=>withChoiceAudio(btn(token,()=>{ordered.push(token);onChange([...ordered]);redraw();}),token,n+1,{language:item.subjectId==='tieng-anh'?'en-US':'vi-VN'})));};
   box.append(el('p',{class:'muted',text:'Bấm các thẻ theo thứ tự. Bấm lại một thẻ đã chọn để bỏ.'}),selected,available,btn('Chọn lại',()=>{ordered=[];onChange([]);redraw();}));redraw();
  }else if(item.type==='column'){
   const {a,b,operator}=item.config,result=operator==='+'?a+b:a-b,width=Math.max(String(a).length,String(b).length,String(result).length);let digits=String(value??'').padStart(width,' ').slice(-width).split('');

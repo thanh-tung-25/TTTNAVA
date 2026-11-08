@@ -31,6 +31,11 @@ export function setupChat(profile){
   const direct=btn('Nhắn riêng',()=>compose(false),'chat-new');direct.prepend(icon('chat'));const group=btn('Tạo nhóm học',()=>compose(true),'chat-new');group.prepend(icon('people'));
   const incoming=contacts.filter(p=>p.friendship==='incoming').length,friendButton=btn('Bạn bè'+(incoming?' · '+incoming+' lời mời':''),()=>friendsView(),'chat-new');friendButton.prepend(icon('plus'));
   body.replaceChildren(el('div',{class:'chat-actions chat-start'},[direct,group,friendButton]));
+  if(incoming){
+   const requests=el('section',{class:'chat-invitations','aria-label':'Lời mời kết bạn mới'},[el('strong',{text:incoming+' lời mời kết bạn mới'})]);
+   for(const person of contacts.filter(p=>p.friendship==='incoming').slice(0,3))requests.append(el('div',{class:'chat-invitation'},[avatar(person),el('span',{text:person.display_name}),el('div',{class:'chat-actions'},friendActions(person,()=>list()))]));
+   if(incoming>3)requests.append(btn('Xem tất cả lời mời',()=>friendsView()));body.append(requests);
+  }
   const rows=el('div',{class:'chat-rooms'});for(const r of rooms){const b=btn('',()=>openRoom(r.id),'chat-room');b.setAttribute('aria-label',roomTitle(r)+(r.unread?' · '+r.unread+' tin mới':''));b.append(r.kind==='group'?el('span',{class:'chat-group-avatar'},[icon('people')]):avatar(r.peer),el('span',{class:'chat-room-copy'},[el('strong',{text:roomTitle(r)}),el('small',{text:r.blocked?'Đã tạm dừng trò chuyện':r.kind==='group'?r.members.length+' thành viên':'Nhắn một lời chào nhé'})]),...(r.unread?[el('span',{class:'chat-count',text:String(r.unread)})]:[]));rows.append(b);}
   if(!rooms.length)rows.append(el('div',{class:'chat-empty'},[el('img',{src:'/assets/images/mascot-panda.svg',alt:'',width:100,height:100}),el('strong',{text:'Cùng học vui hơn!'}),el('p',{text:'Tìm một người bạn để bắt đầu trò chuyện.'})]));body.append(rows);
  }

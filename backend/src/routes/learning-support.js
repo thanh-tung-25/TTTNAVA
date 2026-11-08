@@ -1,0 +1,11 @@
+import {Router} from 'express';
+import {authenticateToken,requireStudent} from '../middlewares/auth.js';
+import {asyncHandler} from '../utils/errors.js';
+import {rateLimit} from '../middlewares/rate-limit.js';
+import {todayPlan,startToday,familyReport} from '../services/learning-support.js';
+const router=Router(),course=r=>r.get('X-Course-Id')||r.cookies?.ttnava_course||'';
+router.use(authenticateToken,requireStudent);
+router.get('/today',asyncHandler(async(r,res)=>res.json({data:await todayPlan(r.user.id,course(r))})));
+router.post('/today/start',rateLimit({max:10,keyPrefix:'daily-start'}),asyncHandler(async(r,res)=>res.json({data:await startToday(r.user.id,course(r))})));
+router.get('/family-report',asyncHandler(async(r,res)=>res.json({data:await familyReport(r.user.id,course(r))})));
+export default router;

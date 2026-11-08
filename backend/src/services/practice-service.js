@@ -6,7 +6,7 @@ import { sessionState } from './practice-state.js';
 
 const PRACTICE_SIZE = 10;
 
-export async function startPractice(studentId, topicId) {
+export async function startPractice(studentId, topicId,preferredIds=[]) {
   const id = randomUUID();
   const seed = sha256Hex(`${id}|practice`);
   const { questionIds } = await selectQuestionsForRound({
@@ -14,6 +14,7 @@ export async function startPractice(studentId, topicId) {
     topicId,
     count: PRACTICE_SIZE,
     seed,
+    preferredIds,
   });
 
   await withTransaction(async (connection) => {

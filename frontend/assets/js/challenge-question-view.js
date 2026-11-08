@@ -1,5 +1,5 @@
 import { escapeHtml } from '/assets/js/api.js';
-import {attachQuestionAudio} from './question-audio.js';
+import {attachQuestionAudio,withChoiceAudio} from './question-audio.js';
 import { answerText, TYPE_LABELS } from '/assets/js/ui.js';
 import { elements, requestRender, store } from './challenge-context.js';
 import { submitAnswer } from './challenge-match-actions.js';
@@ -42,7 +42,7 @@ export function renderQuestionCard(question) {
           node.classList.toggle('is-selected', selected);
         });
       });
-      list.append(button);
+      list.append(withChoiceAudio(button,option.text,option.label,{language:store.match?.topic?.subjectId==='tieng-anh'?'en-US':'vi-VN'}));
     }
     area.append(list);
   } else if (question.type === 'true_false') {
@@ -59,7 +59,7 @@ export function renderQuestionCard(question) {
         row.querySelectorAll('.option').forEach((node) => { node.className = 'option'; });
         button.className = 'option is-selected';
       });
-      row.append(button);
+      row.append(withChoiceAudio(button,value?'Đúng':'Sai',value?'Đúng':'Sai'));
     }
     area.append(row);
   } else {

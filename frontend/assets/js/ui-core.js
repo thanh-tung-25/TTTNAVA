@@ -11,6 +11,7 @@ const ADMIN_NAV = [
   ['questions', '/pages/admin/questions/', 'Nội dung học tập'],
   ['stats', '/pages/admin/stats/', 'Thống kê'],
   ['team', '/pages/admin/team/', 'Quản trị viên'],
+  ['deployment', '/pages/admin/deployment/', 'Kiểm tra cập nhật'],
 ];
 
 let currentProfile = null;
@@ -73,6 +74,7 @@ export async function initPage(role, active) {
   }
   if(role==='student')await courseProfile(profile,active);
   renderHeader(profile, role, active);
+  if(role==='student')import('./beginner-mode.js').then(({setupBeginnerMode})=>setupBeginnerMode(profile)).catch(()=>{});
   if(role==='student'||role==='admin')import('./chat-widget.js').then(({setupChat})=>setupChat(profile)).catch(()=>{});
   if (role === 'student') loadDiamonds();
   return profile;

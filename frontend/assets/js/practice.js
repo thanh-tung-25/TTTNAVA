@@ -1,4 +1,4 @@
-import { escapeHtml } from '/assets/js/api.js';
+import { api,escapeHtml } from '/assets/js/api.js';
 import { confirmAction, initPage } from '/assets/js/ui.js';
 import { checkAnswer, finishPractice, startPractice } from './practice-actions.js';
 import {
@@ -55,6 +55,8 @@ async function main() {
     return;
   }
   store.subjectId = subjectFromUrl();
+  const session=new URLSearchParams(location.search).get('session');
+  if(session){store.session=(await api('/api/v1/practice/'+encodeURIComponent(session))).data;store.subjectId=store.session.topic.subjectId;store.current=store.session.currentIndex??0;show(elements.quizView);renderQuestion();return;}
   await loadTopics();
   show(elements.setupView);
 }

@@ -1,5 +1,5 @@
 import {el,button,card} from '/assets/js/chinese-common.js';
-import {questionAudio} from './question-audio.js';
+import {questionAudio,withChoiceAudio} from './question-audio.js';
 
 // Only published activities supplied by the lesson API are rendered here.
 export function mountPractice(host,lesson){
@@ -36,7 +36,7 @@ export function mountPractice(host,lesson){
   if(task.type==='order'){
    const output=el('div',{class:'applied-sentence',role:'group','aria-label':'Câu đã xếp'});
    const bank=el('div',{class:'applied-tokens',role:'group','aria-label':'Từ để xếp câu'});
-   const update=()=>{selection=chosen.map(i=>tokens[i]).join('');output.replaceChildren(...chosen.map((id,n)=>{const b=button(tokens[id],()=>{chosen.splice(n,1);update();});b.disabled=checked;b.setAttribute('aria-label','Bỏ từ '+tokens[id]);return b;}));if(!chosen.length)output.append(el('span',{class:'muted',text:'Bấm các từ bên dưới để tạo câu.'}));bank.replaceChildren(...tokens.map((text,id)=>{const b=button(text,()=>{chosen.push(id);update();});b.disabled=checked||chosen.includes(id);return b;}));check.disabled=checked||chosen.length!==tokens.length;};
+   const update=()=>{selection=chosen.map(i=>tokens[i]).join('');output.replaceChildren(...chosen.map((id,n)=>{const b=button(tokens[id],()=>{chosen.splice(n,1);update();});b.disabled=checked;b.setAttribute('aria-label','Bỏ từ '+tokens[id]);return b;}));if(!chosen.length)output.append(el('span',{class:'muted',text:'Bấm các từ bên dưới để tạo câu.'}));bank.replaceChildren(...tokens.map((text,id)=>{const b=button(text,()=>{chosen.push(id);update();});b.disabled=checked||chosen.includes(id);return withChoiceAudio(b,text,id+1);}));check.disabled=checked||chosen.length!==tokens.length;};
    box.append(output,bank);update();
    const reset=button('Xếp lại',()=>{chosen=[];update();});reset.disabled=checked;box.append(reset);
   }else if(task.type==='fill'){
@@ -47,8 +47,8 @@ export function mountPractice(host,lesson){
    else box.append(el('p',{text:task.prompt}),el('div',{class:'applied-bubble'},[el('p',{class:'applied-hanzi',text:task.speech}),el('p',{class:'pinyin',text:task.pinyin})]));
    const options=el('div',{class:'quiz-choices'});
    for(const option of choices){
-    const b=button(option,()=>{selection=option;options.querySelectorAll('button').forEach(other=>other.setAttribute('aria-pressed',String(other===b)));feedback.textContent='';});
-    b.setAttribute('aria-pressed',String(selection===option));b.disabled=checked;options.append(b);
+    const b=button(option,()=>{selection=option;options.querySelectorAll('button:not(.choice-audio button)').forEach(other=>other.setAttribute('aria-pressed',String(other===b)));feedback.textContent='';});
+    b.setAttribute('aria-pressed',String(selection===option));b.disabled=checked;options.append(withChoiceAudio(b,option,options.children.length+1));
    }
    box.append(options);
   }

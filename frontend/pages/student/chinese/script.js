@@ -3,7 +3,7 @@ import {request,el,root,button,link,card,field,table,error,notice,percentage} fr
 import {writing,recording} from './learning-tools.js';
 import {renderHistory} from './history-view.js';
 import {mountPractice} from './applied-practice.js';
-import {questionAudio} from '/assets/js/question-audio.js';
+import {questionAudio,withChoiceAudio} from '/assets/js/question-audio.js';
 const params=new URLSearchParams(location.search);let catalog,timer;
 const json=v=>typeof v==='string'?JSON.parse(v):v;
 const extra=(title,children)=>el('details',{class:'learn-extra'},[el('summary',{text:title}),...children]);
@@ -160,9 +160,9 @@ async function showAttempt(a,index){
   if(['choice','listening'].includes(q.type))for(const [n,option]of q.options.entries()){
    const radio=el('input',{type:'radio',name:'answer',value:option});radio.checked=selection===option;
    const label=el('label',{class:'quiz-option'+(radio.checked?' selected':'')},[radio,el('span',{class:'option-letter',text:String.fromCharCode(65+n)}),el('span',{text:option})]);
-   radio.onchange=()=>{selection=option;controls.querySelectorAll('.quiz-option').forEach(l=>l.classList.remove('selected'));label.classList.add('selected');};controls.append(label);
-  }else if(q.type==='ordering'&&q.options?.length){let chosen=[];const output=el('p',{text:selection});controls.append(output,...q.options.map(o=>{const b=action(o,()=>{chosen.push(o);selection=chosen.join(' ');output.textContent=selection;b.hidden=true;});return b;}),action('Chọn lại',()=>{chosen=[];selection='';output.textContent='';controls.querySelectorAll('button').forEach(b=>b.hidden=false);}));}
-  else if(q.type==='matching'&&q.options?.length){const pairs=new Map();for(const left of q.options){const f=field(left,left,'','text',[['','Chọn nghĩa'],...q.targets.map(t=>[t,t])]);f.onchange=()=>{pairs.set(left,f.querySelector('select').value);selection=q.options.map(l=>l+'='+(pairs.get(l)||'')).join(' | ');};controls.append(f);}}
+   radio.onchange=()=>{selection=option;controls.querySelectorAll('.quiz-option').forEach(l=>l.classList.remove('selected'));label.classList.add('selected');};controls.append(withChoiceAudio(label,option,n+1));
+  }else if(q.type==='ordering'&&q.options?.length){let chosen=[];const output=el('p',{text:selection});controls.append(output,...q.options.map((o,n)=>{const b=action(o,()=>{chosen.push(o);selection=chosen.join(' ');output.textContent=selection;row.hidden=true;}),row=withChoiceAudio(b,o,n+1);return row;}),action('Chọn lại',()=>{chosen=[];selection='';output.textContent='';controls.querySelectorAll('.choice-with-audio').forEach(row=>row.hidden=false);}));}
+  else if(q.type==='matching'&&q.options?.length){const pairs=new Map();for(const [n,left]of q.options.entries()){const f=field(left,left,'','text',[['','Chọn nghĩa'],...q.targets.map(t=>[t,t])]);f.onchange=()=>{pairs.set(left,f.querySelector('select').value);selection=q.options.map(l=>l+'='+(pairs.get(l)||'')).join(' | ');};controls.append(withChoiceAudio(f,left,n+1));}controls.append(extra('Nghe các lựa chọn',q.targets.map((t,n)=>withChoiceAudio(el('span',{text:t}),t,n+1))));}
   else{const input=el('input',{type:'text',class:'quiz-text','aria-label':'Câu trả lời',value:selection});input.oninput=()=>selection=input.value;controls.append(input);if(q.type==='pinyin')controls.append(el('p',{class:'muted',text:'Nhớ nhập đúng dấu thanh.'}));}
   box.append(controls,action('Kiểm tra',async()=>{if(!selection.trim()){notice('Con chọn hoặc nhập một câu trả lời trước nhé.');return;}await showAttempt(await request('/attempts/'+a.id+'/answers','POST',{item_id:i.id,value:selection,lock:true}),index);},true));
  }

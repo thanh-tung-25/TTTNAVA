@@ -100,7 +100,7 @@ async function recentQuestionIds(studentId, topicId, limitRefs = 3) {
   return new Set(ids);
 }
 
-export async function selectQuestionsForRound({ studentId, topicId, count, seed }) {
+export async function selectQuestionsForRound({ studentId, topicId, count, seed,preferredIds=[] }) {
   const topic = await getTopicWithSubject(topicId);
   const rows = await query(
     'SELECT id FROM questions WHERE topic_id = ? AND status = \'published\' ORDER BY id ASC',
@@ -114,7 +114,8 @@ export async function selectQuestionsForRound({ studentId, topicId, count, seed 
   const recent = await recentQuestionIds(studentId, topicId);
   const eligible = allIds.filter((id) => !recent.has(id));
   const ordered = seededShuffle(eligible.length > 0 ? eligible : allIds, seed);
-  const selected = ordered.slice(0, count);
+  const preferred=[...new Set(preferredIds)].filter(id=>allIds.includes(id)).slice(0,count);
+  const selected = [...preferred,...ordered.filter(id=>!preferred.includes(id))].slice(0, count);
 
   if (selected.length < count) {
     const fallback = seededShuffle(allIds.filter((id) => !selected.includes(id)), `${seed}|fallback`);

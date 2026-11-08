@@ -23,10 +23,13 @@ import { adminStatsHandler } from '../controllers/admin-stats-controller.js';
 import { authenticateToken, requireAdmin, requireAdminScope, requireSuperAdmin } from '../middlewares/auth.js';
 import adminTeamRouter from './admin-team.js';
 import { uploadDocx } from '../middlewares/upload-docx.js';
+import {asyncHandler} from '../utils/errors.js';
+import {deploymentCheck} from '../services/deployment-check.js';
 
 const router = Router();
 
 router.use(authenticateToken, requireAdmin);
+router.get('/deployment-check',requireSuperAdmin,asyncHandler(async(_r,res)=>res.json({data:await deploymentCheck()})));
 
 router.use('/team',adminTeamRouter);
 router.get('/stats', requireAdminScope('primary'), adminStatsHandler);

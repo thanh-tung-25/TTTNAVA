@@ -13,19 +13,20 @@ export function speechParts(text,language='vi-VN'){
 }
 export function stopQuestionAudio(){
  sequence++;
- if(active){const old=active;active=null;old.abort?.abort();if(old.audio){old.audio.pause();old.audio.removeAttribute('src');old.audio.load?.();old.audio.remove();}if(old.url)URL.revokeObjectURL(old.url);old.button.textContent='🔊 Nghe câu hỏi';old.button.setAttribute('aria-pressed','false');old.status.textContent='';window.speechSynthesis?.cancel();}
+ if(active){const old=active;active=null;old.abort?.abort();if(old.audio){old.audio.pause();old.audio.removeAttribute('src');old.audio.load?.();old.audio.remove();}if(old.url)URL.revokeObjectURL(old.url);old.button.textContent=old.label;old.button.setAttribute('aria-label',old.ariaLabel);old.button.setAttribute('aria-pressed','false');old.status.textContent='';window.speechSynthesis?.cancel();}
 }
-export function questionAudio(text,{language='vi-VN'}={}){
+export function questionAudio(text,{language='vi-VN',label='🔊 Nghe câu hỏi',compact=false}={}){
  const wrap=document.createElement('div');wrap.className='question-audio';
- const button=document.createElement('button');button.type='button';button.className='btn btn-secondary';button.textContent='🔊 Nghe câu hỏi';button.setAttribute('aria-pressed','false');
+ const button=document.createElement('button');button.type='button';button.className='btn btn-secondary';button.textContent=compact?'🔊':label;button.setAttribute('aria-label',label);button.title=label;button.setAttribute('aria-pressed','false');
+ if(compact)wrap.classList.add('choice-audio');
  const status=document.createElement('span');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  wrap.append(button,status);
  button.onclick=()=>{
   if(active?.button===button){stopQuestionAudio();return;}
   stopQuestionAudio();
-  const parts=speechParts(text,language);if(!parts.length){status.textContent='Câu này chưa có nội dung chữ để đọc.';return;}
+  const parts=speechParts(typeof text==='function'?text():text,language);if(!parts.length){status.textContent='Câu này chưa có nội dung chữ để đọc.';return;}
   const synth=window.speechSynthesis,voices=synth?.getVoices()||[];
-  const token=sequence;active={button,status,wrap};button.textContent='⏹ Dừng đọc';button.setAttribute('aria-pressed','true');status.textContent='Đang đọc…';
+  const token=sequence;active={button,status,wrap,label:compact?'🔊':label,ariaLabel:label};button.textContent=compact?'⏹':'⏹ Dừng đọc';button.setAttribute('aria-label',compact?'Dừng đọc lựa chọn':'Dừng đọc');button.setAttribute('aria-pressed','true');status.textContent='Đang đọc…';
   let index=0;
   const speak=()=>{
    if(token!==sequence||!wrap.isConnected)return;
@@ -54,6 +55,17 @@ export function questionAudio(text,{language='vi-VN'}={}){
   };speak();
  };
  return wrap;
+}
+export function withChoiceAudio(choice,text,index,options={}){
+ const row=document.createElement('div');row.className='choice-with-audio';
+ if(typeof text==='string'){
+  const value=text.trim().toLocaleLowerCase('vi');
+  const pictures={cat:'meo','mèo':'meo','con mèo':'meo','猫':'meo',dog:'cho','chó':'cho','con chó':'cho','狗':'cho',rabbit:'tho','thỏ':'tho','兔子':'tho',bear:'gau','gấu':'gau','熊':'gau',panda:'gau-truc','gấu trúc':'gau-truc','熊猫':'gau-truc',fox:'cao','cáo':'cao','狐狸':'cao',owl:'cu','cú':'cu','猫头鹰':'cu',monkey:'khi','khỉ':'khi','猴子':'khi',elephant:'voi','voi':'voi','大象':'voi',frog:'ech','ếch':'ech','青蛙':'ech',tiger:'ho','hổ':'ho','老虎':'ho',chicken:'ga','gà':'ga','鸡':'ga'};
+  if(pictures[value]){const image=document.createElement('img');image.className='choice-picture';image.src='/assets/avatars/'+pictures[value]+'.svg';image.alt='';image.width=64;image.height=64;choice.prepend(image);}
+  else if(/^[1-9]$|^10$/.test(value)){const dots=document.createElement('span');dots.className='choice-count';dots.setAttribute('aria-hidden','true');dots.textContent='● '.repeat(Number(value)).trim();choice.prepend(dots);}
+ }
+ const audio=questionAudio(text,{...options,label:'Nghe lựa chọn '+index,compact:true});
+ audio.addEventListener('click',e=>e.stopPropagation());row.append(choice,audio);return row;
 }
 export function attachQuestionAudio(prompt,text=prompt?.textContent,options){
  if(!prompt)return;

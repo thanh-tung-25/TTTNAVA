@@ -74,7 +74,7 @@ test('all worksheet types have a read button without speaking on render',async({
   const {renderItem}=await import('/assets/js/worksheet-player.js');const root=document.createElement('div');document.body.append(root);
   const configs={fill:{},word:{},blanks:{labels:['Ô 1']},choice:{options:['A','B']},compare:{},ordering:{tokens:['một','hai']},matching:{left:['A'],targets:['B']},column:{a:2,b:1,operator:'+'},drawing:{}};
   for(const [type,config]of Object.entries(configs))root.append(renderItem({type,prompt:'Đề bài '+type,config},null,()=>{}));
-  return root.querySelectorAll('.question-audio button').length;
+  return root.querySelectorAll('.worksheet-question > .question-audio button').length;
  });
  expect(count).toBe(9);expect(await page.evaluate(()=>window.__spoken)).toBe(0);
 });

@@ -74,7 +74,7 @@ export function createApp() {
   app.use('/pages/admin', requirePageRole('admin'), adminPageScope, protectedHtml(path.join(pagesRoot, 'admin')));
 
   app.get('/api/v1/health', (_request, response) => {
-    response.json({ data: { status: 'ok', time: new Date().toISOString() } });
+    response.json({ data: { status: 'ok', time: new Date().toISOString(),release:process.env.VERCEL_GIT_COMMIT_SHA||'local' } });
   });
   app.get('/api/v1/runtime', (_request, response) => {
     response.set('Cache-Control', 'no-store').json({ data: {

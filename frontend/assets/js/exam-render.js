@@ -1,5 +1,5 @@
 import {loadExamCatalog} from './exam-catalog-view.js';
-import {attachQuestionAudio} from './question-audio.js';
+import {attachQuestionAudio,withChoiceAudio} from './question-audio.js';
 import { api, escapeHtml } from '/assets/js/api.js';
 import { TYPE_LABELS } from '/assets/js/ui.js';
 import {
@@ -102,7 +102,7 @@ export function renderQuestion() {
         });
         queueSave();
       });
-      list.append(button);
+      list.append(withChoiceAudio(button,option.text,option.label,{language:store.subjectId==='tieng-anh'?'en-US':'vi-VN'}));
     }
     elements.answerArea.append(list);
   } else if (question.type === 'true_false') {
@@ -120,7 +120,7 @@ export function renderQuestion() {
         button.className = 'option is-selected';
         queueSave();
       });
-      row.append(button);
+      row.append(withChoiceAudio(button,value?'Đúng':'Sai',value?'Đúng':'Sai'));
     }
     elements.answerArea.append(row);
   } else {

@@ -1,0 +1,3726 @@
+{
+  "lesson": 4,
+  "title": "你去哪儿",
+  "vocabulary": [
+    {
+      "hanzi": "小姐",
+      "pinyin": "xiǎojiě",
+      "meaning": "cô, tiểu thư; cách xưng hô trong bài",
+      "page": 6,
+      "group": "main"
+    },
+    {
+      "hanzi": "师傅",
+      "pinyin": "shīfu",
+      "meaning": "bác tài, thầy; cách gọi người thợ lành nghề",
+      "page": 6,
+      "group": "main"
+    },
+    {
+      "hanzi": "去",
+      "pinyin": "qù",
+      "meaning": "đi, đến; hướng xa người nói",
+      "page": 7,
+      "group": "main"
+    },
+    {
+      "hanzi": "哪儿",
+      "pinyin": "nǎr",
+      "meaning": "ở đâu",
+      "page": 7,
+      "group": "main"
+    },
+    {
+      "hanzi": "哪里",
+      "pinyin": "nǎlǐ",
+      "meaning": "ở đâu, chỗ nào",
+      "page": 7,
+      "group": "main"
+    },
+    {
+      "hanzi": "人民",
+      "pinyin": "rénmín",
+      "meaning": "nhân dân",
+      "page": 8,
+      "group": "main"
+    },
+    {
+      "hanzi": "广场",
+      "pinyin": "guǎngchǎng",
+      "meaning": "quảng trường",
+      "page": 8,
+      "group": "main"
+    },
+    {
+      "hanzi": "人民广场",
+      "pinyin": "Rénmín Guǎngchǎng",
+      "meaning": "Quảng trường Nhân Dân",
+      "page": 16,
+      "group": "main"
+    },
+    {
+      "hanzi": "知道",
+      "pinyin": "zhīdào",
+      "meaning": "biết một thông tin",
+      "page": 10,
+      "group": "main"
+    },
+    {
+      "hanzi": "了",
+      "pinyin": "le",
+      "meaning": "trợ từ; biểu thị thay đổi trạng thái trong bài",
+      "page": 10,
+      "group": "main"
+    },
+    {
+      "hanzi": "远",
+      "pinyin": "yuǎn",
+      "meaning": "xa",
+      "page": 11,
+      "group": "main"
+    },
+    {
+      "hanzi": "近",
+      "pinyin": "jìn",
+      "meaning": "gần",
+      "page": 11,
+      "group": "main"
+    },
+    {
+      "hanzi": "到",
+      "pinyin": "dào",
+      "meaning": "đến, tới; nhấn mạnh điểm đến",
+      "page": 7,
+      "group": "main"
+    },
+    {
+      "hanzi": "多少",
+      "pinyin": "duōshao",
+      "meaning": "bao nhiêu",
+      "page": 12,
+      "group": "main"
+    },
+    {
+      "hanzi": "钱",
+      "pinyin": "qián",
+      "meaning": "tiền",
+      "page": 12,
+      "group": "main"
+    },
+    {
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "meaning": "đồng, tệ; đơn vị tiền trong khẩu ngữ",
+      "page": 12,
+      "group": "main"
+    },
+    {
+      "hanzi": "谢谢",
+      "pinyin": "xièxie",
+      "meaning": "cảm ơn",
+      "page": 14,
+      "group": "main"
+    },
+    {
+      "hanzi": "不客气",
+      "pinyin": "bú kèqi",
+      "meaning": "không có gì; đáp lại lời cảm ơn",
+      "page": 14,
+      "group": "main"
+    },
+    {
+      "hanzi": "再见",
+      "pinyin": "zàijiàn",
+      "meaning": "tạm biệt, hẹn gặp lại",
+      "page": 13,
+      "group": "main"
+    },
+    {
+      "hanzi": "早上",
+      "pinyin": "zǎoshang",
+      "meaning": "buổi sáng sớm",
+      "page": 5,
+      "group": "extended"
+    },
+    {
+      "hanzi": "上午",
+      "pinyin": "shàngwǔ",
+      "meaning": "buổi sáng",
+      "page": 5,
+      "group": "extended"
+    },
+    {
+      "hanzi": "中午",
+      "pinyin": "zhōngwǔ",
+      "meaning": "buổi trưa",
+      "page": 5,
+      "group": "extended"
+    },
+    {
+      "hanzi": "下午",
+      "pinyin": "xiàwǔ",
+      "meaning": "buổi chiều",
+      "page": 5,
+      "group": "extended"
+    },
+    {
+      "hanzi": "晚上",
+      "pinyin": "wǎnshang",
+      "meaning": "buổi tối",
+      "page": 5,
+      "group": "extended"
+    },
+    {
+      "hanzi": "半夜",
+      "pinyin": "bànyè",
+      "meaning": "nửa đêm",
+      "page": 5,
+      "group": "extended"
+    },
+    {
+      "hanzi": "女士",
+      "pinyin": "nǚshì",
+      "meaning": "bà, cô; cách xưng hô lịch sự",
+      "page": 6,
+      "group": "extended"
+    },
+    {
+      "hanzi": "姑娘",
+      "pinyin": "gūniang",
+      "meaning": "cô gái",
+      "page": 6,
+      "group": "extended"
+    },
+    {
+      "hanzi": "妹妹",
+      "pinyin": "mèimei",
+      "meaning": "em gái",
+      "page": 6,
+      "group": "extended"
+    },
+    {
+      "hanzi": "美女",
+      "pinyin": "měinǚ",
+      "meaning": "người đẹp, cô gái đẹp",
+      "page": 6,
+      "group": "extended"
+    },
+    {
+      "hanzi": "小哥哥",
+      "pinyin": "xiǎo gēge",
+      "meaning": "anh trai trẻ; cách gọi thân mật",
+      "page": 6,
+      "group": "extended"
+    },
+    {
+      "hanzi": "帅哥",
+      "pinyin": "shuàigē",
+      "meaning": "chàng trai đẹp trai",
+      "page": 6,
+      "group": "extended"
+    },
+    {
+      "hanzi": "司机",
+      "pinyin": "sījī",
+      "meaning": "tài xế, người lái xe",
+      "page": 6,
+      "group": "extended"
+    },
+    {
+      "hanzi": "来",
+      "pinyin": "lái",
+      "meaning": "đến; hướng về người nói",
+      "page": 7,
+      "group": "extended"
+    },
+    {
+      "hanzi": "人民币",
+      "pinyin": "rénmínbì",
+      "meaning": "nhân dân tệ",
+      "page": 8,
+      "group": "extended"
+    },
+    {
+      "hanzi": "步行街",
+      "pinyin": "bùxíngjiē",
+      "meaning": "phố đi bộ",
+      "page": 8,
+      "group": "extended"
+    },
+    {
+      "hanzi": "河内",
+      "pinyin": "Hénèi",
+      "meaning": "Hà Nội",
+      "page": 8,
+      "group": "extended"
+    },
+    {
+      "hanzi": "巴亭广场",
+      "pinyin": "Bātíng Guǎngchǎng",
+      "meaning": "Quảng trường Ba Đình",
+      "page": 8,
+      "group": "extended"
+    },
+    {
+      "hanzi": "学校",
+      "pinyin": "xuéxiào",
+      "meaning": "trường học",
+      "page": 9,
+      "group": "extended"
+    },
+    {
+      "hanzi": "公司",
+      "pinyin": "gōngsī",
+      "meaning": "công ty",
+      "page": 9,
+      "group": "extended"
+    },
+    {
+      "hanzi": "医院",
+      "pinyin": "yīyuàn",
+      "meaning": "bệnh viện",
+      "page": 9,
+      "group": "extended"
+    },
+    {
+      "hanzi": "超市",
+      "pinyin": "chāoshì",
+      "meaning": "siêu thị",
+      "page": 9,
+      "group": "extended"
+    },
+    {
+      "hanzi": "宿舍",
+      "pinyin": "sùshè",
+      "meaning": "ký túc xá",
+      "page": 9,
+      "group": "extended"
+    },
+    {
+      "hanzi": "电影院",
+      "pinyin": "diànyǐngyuàn",
+      "meaning": "rạp chiếu phim",
+      "page": 9,
+      "group": "extended"
+    },
+    {
+      "hanzi": "明白",
+      "pinyin": "míngbai",
+      "meaning": "hiểu rõ",
+      "page": 10,
+      "group": "extended"
+    },
+    {
+      "hanzi": "离",
+      "pinyin": "lí",
+      "meaning": "cách; chỉ khoảng cách",
+      "page": 11,
+      "group": "extended"
+    },
+    {
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "meaning": "tìm; trả lại tiền thừa",
+      "page": 12,
+      "group": "extended"
+    },
+    {
+      "hanzi": "多",
+      "pinyin": "duō",
+      "meaning": "nhiều",
+      "page": 12,
+      "group": "extended"
+    },
+    {
+      "hanzi": "少",
+      "pinyin": "shǎo",
+      "meaning": "ít",
+      "page": 12,
+      "group": "extended"
+    },
+    {
+      "hanzi": "再",
+      "pinyin": "zài",
+      "meaning": "lại, thêm, nữa",
+      "page": 13,
+      "group": "extended"
+    },
+    {
+      "hanzi": "感谢",
+      "pinyin": "gǎnxiè",
+      "meaning": "cảm ơn, cảm tạ",
+      "page": 14,
+      "group": "extended"
+    },
+    {
+      "hanzi": "不用谢",
+      "pinyin": "bú yòng xiè",
+      "meaning": "không cần cảm ơn, không có gì",
+      "page": 14,
+      "group": "extended"
+    },
+    {
+      "hanzi": "客气",
+      "pinyin": "kèqi",
+      "meaning": "khách sáo",
+      "page": 14,
+      "group": "extended"
+    },
+    {
+      "hanzi": "机场",
+      "pinyin": "jīchǎng",
+      "meaning": "sân bay",
+      "page": 24,
+      "group": "extended"
+    },
+    {
+      "hanzi": "火车站",
+      "pinyin": "huǒchēzhàn",
+      "meaning": "ga tàu hỏa",
+      "page": 24,
+      "group": "extended"
+    },
+    {
+      "hanzi": "博物馆",
+      "pinyin": "bówùguǎn",
+      "meaning": "bảo tàng",
+      "page": 24,
+      "group": "extended"
+    },
+    {
+      "hanzi": "公园",
+      "pinyin": "gōngyuán",
+      "meaning": "công viên",
+      "page": 24,
+      "group": "extended"
+    },
+    {
+      "hanzi": "饭店",
+      "pinyin": "fàndiàn",
+      "meaning": "nhà hàng; khách sạn tùy ngữ cảnh",
+      "page": 26,
+      "group": "extended"
+    },
+    {
+      "hanzi": "杯",
+      "pinyin": "bēi",
+      "meaning": "cốc, ly; lượng từ đồ uống",
+      "page": 27,
+      "group": "extended"
+    },
+    {
+      "hanzi": "可乐",
+      "pinyin": "kělè",
+      "meaning": "nước cô la",
+      "page": 27,
+      "group": "extended"
+    },
+    {
+      "hanzi": "个",
+      "pinyin": "gè",
+      "meaning": "cái; lượng từ thông dụng",
+      "page": 27,
+      "group": "extended"
+    },
+    {
+      "hanzi": "面包",
+      "pinyin": "miànbāo",
+      "meaning": "bánh mì",
+      "page": 27,
+      "group": "extended"
+    },
+    {
+      "hanzi": "瓶",
+      "pinyin": "píng",
+      "meaning": "chai; lượng từ đồ đựng trong chai",
+      "page": 27,
+      "group": "extended"
+    },
+    {
+      "hanzi": "坐",
+      "pinyin": "zuò",
+      "meaning": "ngồi; đi bằng phương tiện",
+      "page": 28,
+      "group": "extended"
+    },
+    {
+      "hanzi": "公共汽车",
+      "pinyin": "gōnggòng qìchē",
+      "meaning": "xe buýt",
+      "page": 28,
+      "group": "extended"
+    },
+    {
+      "hanzi": "地铁",
+      "pinyin": "dìtiě",
+      "meaning": "tàu điện ngầm",
+      "page": 28,
+      "group": "extended"
+    },
+    {
+      "hanzi": "公安局",
+      "pinyin": "gōng'ānjú",
+      "meaning": "cơ quan công an",
+      "page": 28,
+      "group": "extended"
+    },
+    {
+      "hanzi": "邮局",
+      "pinyin": "yóujú",
+      "meaning": "bưu điện",
+      "page": 28,
+      "group": "extended"
+    },
+    {
+      "hanzi": "饭馆儿",
+      "pinyin": "fànguǎnr",
+      "meaning": "quán ăn, nhà hàng",
+      "page": 28,
+      "group": "extended"
+    },
+    {
+      "hanzi": "厕所",
+      "pinyin": "cèsuǒ",
+      "meaning": "nhà vệ sinh",
+      "page": 28,
+      "group": "extended"
+    },
+    {
+      "hanzi": "大概",
+      "pinyin": "dàgài",
+      "meaning": "khoảng, có lẽ",
+      "page": 29,
+      "group": "extended"
+    },
+    {
+      "hanzi": "塞翁失马",
+      "pinyin": "sài wēng shī mǎ",
+      "meaning": "tái ông mất ngựa; họa phúc khó lường",
+      "page": 30,
+      "group": "extended"
+    },
+    {
+      "hanzi": "亡羊补牢",
+      "pinyin": "wáng yáng bǔ láo",
+      "meaning": "mất dê mới sửa chuồng; sửa sai khi còn kịp",
+      "page": 30,
+      "group": "extended"
+    },
+    {
+      "hanzi": "宰相",
+      "pinyin": "zǎixiàng",
+      "meaning": "tể tướng",
+      "page": 30,
+      "group": "extended"
+    },
+    {
+      "hanzi": "肚里",
+      "pinyin": "dù lǐ",
+      "meaning": "trong bụng",
+      "page": 30,
+      "group": "extended"
+    },
+    {
+      "hanzi": "能",
+      "pinyin": "néng",
+      "meaning": "có thể, có khả năng",
+      "page": 30,
+      "group": "extended"
+    },
+    {
+      "hanzi": "撑船",
+      "pinyin": "chēngchuán",
+      "meaning": "chống thuyền, chèo thuyền",
+      "page": 30,
+      "group": "extended"
+    },
+    {
+      "hanzi": "小牛",
+      "pinyin": "Xiǎo Niú",
+      "meaning": "Tiểu Ngưu, tên nhân vật",
+      "page": 31,
+      "group": "extended"
+    },
+    {
+      "hanzi": "小刘",
+      "pinyin": "Xiǎo Liú",
+      "meaning": "Tiểu Lưu, tên nhân vật",
+      "page": 31,
+      "group": "extended"
+    },
+    {
+      "hanzi": "拍球",
+      "pinyin": "pāi qiú",
+      "meaning": "vỗ bóng, đập bóng",
+      "page": 31,
+      "group": "extended"
+    },
+    {
+      "hanzi": "九",
+      "pinyin": "jiǔ",
+      "meaning": "chín",
+      "page": 31,
+      "group": "extended"
+    },
+    {
+      "hanzi": "六",
+      "pinyin": "liù",
+      "meaning": "sáu",
+      "page": 31,
+      "group": "extended"
+    },
+    {
+      "hanzi": "比",
+      "pinyin": "bǐ",
+      "meaning": "so với; dùng trong so sánh",
+      "page": 31,
+      "group": "extended"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "Trong bài học, “小姐” (xiǎojiě) có nghĩa là gì?",
+      "options": [
+        "cảm ơn, cảm tạ",
+        "cô, tiểu thư; cách xưng hô trong bài",
+        "cơ quan công an",
+        "em gái"
+      ],
+      "answer": "B",
+      "explanation": "小姐 đọc là xiǎojiě, nghĩa là cô, tiểu thư; cách xưng hô trong bài. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “xiǎojiě” và nghĩa “cô, tiểu thư; cách xưng hô trong bài”.",
+      "options": [
+        "饭店",
+        "小姐",
+        "多",
+        "来"
+      ],
+      "answer": "B",
+      "explanation": "小姐 đọc là xiǎojiě, nghĩa là cô, tiểu thư; cách xưng hô trong bài. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “小姐” với nghĩa “cô, tiểu thư; cách xưng hô trong bài”.",
+      "options": [
+        "dìtiě",
+        "shuàigē",
+        "xiǎojiě",
+        "fàndiàn"
+      ],
+      "answer": "C",
+      "explanation": "小姐 đọc là xiǎojiě, nghĩa là cô, tiểu thư; cách xưng hô trong bài. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “师傅” (shīfu) có nghĩa là gì?",
+      "options": [
+        "nhà vệ sinh",
+        "đến; hướng về người nói",
+        "đến, tới; nhấn mạnh điểm đến",
+        "bác tài, thầy; cách gọi người thợ lành nghề"
+      ],
+      "answer": "D",
+      "explanation": "师傅 đọc là shīfu, nghĩa là bác tài, thầy; cách gọi người thợ lành nghề. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “shīfu” và nghĩa “bác tài, thầy; cách gọi người thợ lành nghề”.",
+      "options": [
+        "师傅",
+        "六",
+        "电影院",
+        "钱"
+      ],
+      "answer": "A",
+      "explanation": "师傅 đọc là shīfu, nghĩa là bác tài, thầy; cách gọi người thợ lành nghề. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “师傅” với nghĩa “bác tài, thầy; cách gọi người thợ lành nghề”.",
+      "options": [
+        "huǒchēzhàn",
+        "gōngsī",
+        "shīfu",
+        "Rénmín Guǎngchǎng"
+      ],
+      "answer": "C",
+      "explanation": "师傅 đọc là shīfu, nghĩa là bác tài, thầy; cách gọi người thợ lành nghề. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “去” (qù) có nghĩa là gì?",
+      "options": [
+        "tể tướng",
+        "cô gái",
+        "trợ từ; biểu thị thay đổi trạng thái trong bài",
+        "đi, đến; hướng xa người nói"
+      ],
+      "answer": "D",
+      "explanation": "去 đọc là qù, nghĩa là đi, đến; hướng xa người nói. Tham chiếu: PDF bài 4, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “qù” và nghĩa “đi, đến; hướng xa người nói”.",
+      "options": [
+        "学校",
+        "去",
+        "帅哥",
+        "步行街"
+      ],
+      "answer": "B",
+      "explanation": "去 đọc là qù, nghĩa là đi, đến; hướng xa người nói. Tham chiếu: PDF bài 4, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “去” với nghĩa “đi, đến; hướng xa người nói”.",
+      "options": [
+        "qù",
+        "zǎixiàng",
+        "xièxie",
+        "xiǎojiě"
+      ],
+      "answer": "A",
+      "explanation": "去 đọc là qù, nghĩa là đi, đến; hướng xa người nói. Tham chiếu: PDF bài 4, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “哪儿” (nǎr) có nghĩa là gì?",
+      "options": [
+        "cái; lượng từ thông dụng",
+        "ở đâu",
+        "chai; lượng từ đồ đựng trong chai",
+        "quảng trường"
+      ],
+      "answer": "B",
+      "explanation": "哪儿 đọc là nǎr, nghĩa là ở đâu. Tham chiếu: PDF bài 4, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “nǎr” và nghĩa “ở đâu”.",
+      "options": [
+        "钱",
+        "宰相",
+        "巴亭广场",
+        "哪儿"
+      ],
+      "answer": "D",
+      "explanation": "哪儿 đọc là nǎr, nghĩa là ở đâu. Tham chiếu: PDF bài 4, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “哪儿” với nghĩa “ở đâu”.",
+      "options": [
+        "píng",
+        "nǎr",
+        "bú kèqi",
+        "sījī"
+      ],
+      "answer": "B",
+      "explanation": "哪儿 đọc là nǎr, nghĩa là ở đâu. Tham chiếu: PDF bài 4, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “哪里” (nǎlǐ) có nghĩa là gì?",
+      "options": [
+        "nhà vệ sinh",
+        "bao nhiêu",
+        "buổi sáng sớm",
+        "ở đâu, chỗ nào"
+      ],
+      "answer": "D",
+      "explanation": "哪里 đọc là nǎlǐ, nghĩa là ở đâu, chỗ nào. Tham chiếu: PDF bài 4, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “nǎlǐ” và nghĩa “ở đâu, chỗ nào”.",
+      "options": [
+        "哪里",
+        "离",
+        "哪儿",
+        "来"
+      ],
+      "answer": "A",
+      "explanation": "哪里 đọc là nǎlǐ, nghĩa là ở đâu, chỗ nào. Tham chiếu: PDF bài 4, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “哪里” với nghĩa “ở đâu, chỗ nào”.",
+      "options": [
+        "zǎoshang",
+        "bówùguǎn",
+        "nǎlǐ",
+        "rénmín"
+      ],
+      "answer": "C",
+      "explanation": "哪里 đọc là nǎlǐ, nghĩa là ở đâu, chỗ nào. Tham chiếu: PDF bài 4, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “人民” (rénmín) có nghĩa là gì?",
+      "options": [
+        "không có gì; đáp lại lời cảm ơn",
+        "quảng trường",
+        "nhà vệ sinh",
+        "nhân dân"
+      ],
+      "answer": "D",
+      "explanation": "人民 đọc là rénmín, nghĩa là nhân dân. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “rénmín” và nghĩa “nhân dân”.",
+      "options": [
+        "人民",
+        "杯",
+        "超市",
+        "能"
+      ],
+      "answer": "A",
+      "explanation": "人民 đọc là rénmín, nghĩa là nhân dân. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “人民” với nghĩa “nhân dân”.",
+      "options": [
+        "zuò",
+        "rénmín",
+        "jìn",
+        "Rénmín Guǎngchǎng"
+      ],
+      "answer": "B",
+      "explanation": "人民 đọc là rénmín, nghĩa là nhân dân. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “广场” (guǎngchǎng) có nghĩa là gì?",
+      "options": [
+        "quảng trường",
+        "người đẹp, cô gái đẹp",
+        "tàu điện ngầm",
+        "phố đi bộ"
+      ],
+      "answer": "A",
+      "explanation": "广场 đọc là guǎngchǎng, nghĩa là quảng trường. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “guǎngchǎng” và nghĩa “quảng trường”.",
+      "options": [
+        "厕所",
+        "电影院",
+        "广场",
+        "找"
+      ],
+      "answer": "C",
+      "explanation": "广场 đọc là guǎngchǎng, nghĩa là quảng trường. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “广场” với nghĩa “quảng trường”.",
+      "options": [
+        "chāoshì",
+        "zhōngwǔ",
+        "cèsuǒ",
+        "guǎngchǎng"
+      ],
+      "answer": "D",
+      "explanation": "广场 đọc là guǎngchǎng, nghĩa là quảng trường. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “人民广场” (Rénmín Guǎngchǎng) có nghĩa là gì?",
+      "options": [
+        "Quảng trường Nhân Dân",
+        "lại, thêm, nữa",
+        "xe buýt",
+        "cô gái"
+      ],
+      "answer": "A",
+      "explanation": "人民广场 đọc là Rénmín Guǎngchǎng, nghĩa là Quảng trường Nhân Dân. Tham chiếu: PDF bài 4, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “Rénmín Guǎngchǎng” và nghĩa “Quảng trường Nhân Dân”.",
+      "options": [
+        "人民广场",
+        "公园",
+        "明白",
+        "离"
+      ],
+      "answer": "A",
+      "explanation": "人民广场 đọc là Rénmín Guǎngchǎng, nghĩa là Quảng trường Nhân Dân. Tham chiếu: PDF bài 4, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “人民广场” với nghĩa “Quảng trường Nhân Dân”.",
+      "options": [
+        "yóujú",
+        "Rénmín Guǎngchǎng",
+        "gōng'ānjú",
+        "Bātíng Guǎngchǎng"
+      ],
+      "answer": "B",
+      "explanation": "人民广场 đọc là Rénmín Guǎngchǎng, nghĩa là Quảng trường Nhân Dân. Tham chiếu: PDF bài 4, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “知道” (zhīdào) có nghĩa là gì?",
+      "options": [
+        "cách; chỉ khoảng cách",
+        "biết một thông tin",
+        "sáu",
+        "Quảng trường Nhân Dân"
+      ],
+      "answer": "B",
+      "explanation": "知道 đọc là zhīdào, nghĩa là biết một thông tin. Tham chiếu: PDF bài 4, trang 10.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “zhīdào” và nghĩa “biết một thông tin”.",
+      "options": [
+        "火车站",
+        "知道",
+        "钱",
+        "小牛"
+      ],
+      "answer": "B",
+      "explanation": "知道 đọc là zhīdào, nghĩa là biết một thông tin. Tham chiếu: PDF bài 4, trang 10.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “知道” với nghĩa “biết một thông tin”.",
+      "options": [
+        "shuàigē",
+        "gūniang",
+        "zhīdào",
+        "huǒchēzhàn"
+      ],
+      "answer": "C",
+      "explanation": "知道 đọc là zhīdào, nghĩa là biết một thông tin. Tham chiếu: PDF bài 4, trang 10.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “了” (le) có nghĩa là gì?",
+      "options": [
+        "buổi sáng sớm",
+        "mất dê mới sửa chuồng; sửa sai khi còn kịp",
+        "trợ từ; biểu thị thay đổi trạng thái trong bài",
+        "Quảng trường Nhân Dân"
+      ],
+      "answer": "C",
+      "explanation": "了 đọc là le, nghĩa là trợ từ; biểu thị thay đổi trạng thái trong bài. Tham chiếu: PDF bài 4, trang 10.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “le” và nghĩa “trợ từ; biểu thị thay đổi trạng thái trong bài”.",
+      "options": [
+        "个",
+        "了",
+        "离",
+        "小姐"
+      ],
+      "answer": "B",
+      "explanation": "了 đọc là le, nghĩa là trợ từ; biểu thị thay đổi trạng thái trong bài. Tham chiếu: PDF bài 4, trang 10.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “了” với nghĩa “trợ từ; biểu thị thay đổi trạng thái trong bài”.",
+      "options": [
+        "shīfu",
+        "le",
+        "bēi",
+        "jìn"
+      ],
+      "answer": "B",
+      "explanation": "了 đọc là le, nghĩa là trợ từ; biểu thị thay đổi trạng thái trong bài. Tham chiếu: PDF bài 4, trang 10.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “远” (yuǎn) có nghĩa là gì?",
+      "options": [
+        "xa",
+        "nước cô la",
+        "tạm biệt, hẹn gặp lại",
+        "ở đâu"
+      ],
+      "answer": "A",
+      "explanation": "远 đọc là yuǎn, nghĩa là xa. Tham chiếu: PDF bài 4, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “yuǎn” và nghĩa “xa”.",
+      "options": [
+        "再",
+        "公安局",
+        "来",
+        "远"
+      ],
+      "answer": "D",
+      "explanation": "远 đọc là yuǎn, nghĩa là xa. Tham chiếu: PDF bài 4, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “远” với nghĩa “xa”.",
+      "options": [
+        "dàgài",
+        "shàngwǔ",
+        "xièxie",
+        "yuǎn"
+      ],
+      "answer": "D",
+      "explanation": "远 đọc là yuǎn, nghĩa là xa. Tham chiếu: PDF bài 4, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “近” (jìn) có nghĩa là gì?",
+      "options": [
+        "gần",
+        "trong bụng",
+        "lại, thêm, nữa",
+        "trường học"
+      ],
+      "answer": "A",
+      "explanation": "近 đọc là jìn, nghĩa là gần. Tham chiếu: PDF bài 4, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “jìn” và nghĩa “gần”.",
+      "options": [
+        "比",
+        "六",
+        "近",
+        "感谢"
+      ],
+      "answer": "C",
+      "explanation": "近 đọc là jìn, nghĩa là gần. Tham chiếu: PDF bài 4, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “近” với nghĩa “gần”.",
+      "options": [
+        "jìn",
+        "dàgài",
+        "měinǚ",
+        "wǎnshang"
+      ],
+      "answer": "A",
+      "explanation": "近 đọc là jìn, nghĩa là gần. Tham chiếu: PDF bài 4, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “到” (dào) có nghĩa là gì?",
+      "options": [
+        "nhà hàng; khách sạn tùy ngữ cảnh",
+        "không cần cảm ơn, không có gì",
+        "đến, tới; nhấn mạnh điểm đến",
+        "chàng trai đẹp trai"
+      ],
+      "answer": "C",
+      "explanation": "到 đọc là dào, nghĩa là đến, tới; nhấn mạnh điểm đến. Tham chiếu: PDF bài 4, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “dào” và nghĩa “đến, tới; nhấn mạnh điểm đến”.",
+      "options": [
+        "客气",
+        "哪里",
+        "到",
+        "人民"
+      ],
+      "answer": "C",
+      "explanation": "到 đọc là dào, nghĩa là đến, tới; nhấn mạnh điểm đến. Tham chiếu: PDF bài 4, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “到” với nghĩa “đến, tới; nhấn mạnh điểm đến”.",
+      "options": [
+        "bùxíngjiē",
+        "bú kèqi",
+        "shīfu",
+        "dào"
+      ],
+      "answer": "D",
+      "explanation": "到 đọc là dào, nghĩa là đến, tới; nhấn mạnh điểm đến. Tham chiếu: PDF bài 4, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “多少” (duōshao) có nghĩa là gì?",
+      "options": [
+        "nhà vệ sinh",
+        "bao nhiêu",
+        "ký túc xá",
+        "ở đâu"
+      ],
+      "answer": "B",
+      "explanation": "多少 đọc là duōshao, nghĩa là bao nhiêu. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “duōshao” và nghĩa “bao nhiêu”.",
+      "options": [
+        "人民币",
+        "不用谢",
+        "多少",
+        "多"
+      ],
+      "answer": "C",
+      "explanation": "多少 đọc là duōshao, nghĩa là bao nhiêu. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “多少” với nghĩa “bao nhiêu”.",
+      "options": [
+        "Bātíng Guǎngchǎng",
+        "zuò",
+        "duōshao",
+        "rénmín"
+      ],
+      "answer": "C",
+      "explanation": "多少 đọc là duōshao, nghĩa là bao nhiêu. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “钱” (qián) có nghĩa là gì?",
+      "options": [
+        "tiền",
+        "đi, đến; hướng xa người nói",
+        "bà, cô; cách xưng hô lịch sự",
+        "sân bay"
+      ],
+      "answer": "A",
+      "explanation": "钱 đọc là qián, nghĩa là tiền. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “qián” và nghĩa “tiền”.",
+      "options": [
+        "小姐",
+        "钱",
+        "人民币",
+        "下午"
+      ],
+      "answer": "B",
+      "explanation": "钱 đọc là qián, nghĩa là tiền. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “钱” với nghĩa “tiền”.",
+      "options": [
+        "qián",
+        "gūniang",
+        "shīfu",
+        "gōnggòng qìchē"
+      ],
+      "answer": "A",
+      "explanation": "钱 đọc là qián, nghĩa là tiền. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “块” (kuài) có nghĩa là gì?",
+      "options": [
+        "đồng, tệ; đơn vị tiền trong khẩu ngữ",
+        "sân bay",
+        "buổi chiều",
+        "buổi sáng"
+      ],
+      "answer": "A",
+      "explanation": "块 đọc là kuài, nghĩa là đồng, tệ; đơn vị tiền trong khẩu ngữ. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “kuài” và nghĩa “đồng, tệ; đơn vị tiền trong khẩu ngữ”.",
+      "options": [
+        "块",
+        "钱",
+        "不用谢",
+        "人民"
+      ],
+      "answer": "A",
+      "explanation": "块 đọc là kuài, nghĩa là đồng, tệ; đơn vị tiền trong khẩu ngữ. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “块” với nghĩa “đồng, tệ; đơn vị tiền trong khẩu ngữ”.",
+      "options": [
+        "sài wēng shī mǎ",
+        "le",
+        "kuài",
+        "zài"
+      ],
+      "answer": "C",
+      "explanation": "块 đọc là kuài, nghĩa là đồng, tệ; đơn vị tiền trong khẩu ngữ. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “谢谢” (xièxie) có nghĩa là gì?",
+      "options": [
+        "rạp chiếu phim",
+        "cảm ơn",
+        "xa",
+        "buổi trưa"
+      ],
+      "answer": "B",
+      "explanation": "谢谢 đọc là xièxie, nghĩa là cảm ơn. Tham chiếu: PDF bài 4, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “xièxie” và nghĩa “cảm ơn”.",
+      "options": [
+        "人民广场",
+        "谢谢",
+        "小哥哥",
+        "火车站"
+      ],
+      "answer": "B",
+      "explanation": "谢谢 đọc là xièxie, nghĩa là cảm ơn. Tham chiếu: PDF bài 4, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “谢谢” với nghĩa “cảm ơn”.",
+      "options": [
+        "kuài",
+        "xièxie",
+        "gōnggòng qìchē",
+        "zhōngwǔ"
+      ],
+      "answer": "B",
+      "explanation": "谢谢 đọc là xièxie, nghĩa là cảm ơn. Tham chiếu: PDF bài 4, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “不客气” (bú kèqi) có nghĩa là gì?",
+      "options": [
+        "cơ quan công an",
+        "nước cô la",
+        "xe buýt",
+        "không có gì; đáp lại lời cảm ơn"
+      ],
+      "answer": "D",
+      "explanation": "不客气 đọc là bú kèqi, nghĩa là không có gì; đáp lại lời cảm ơn. Tham chiếu: PDF bài 4, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “bú kèqi” và nghĩa “không có gì; đáp lại lời cảm ơn”.",
+      "options": [
+        "公共汽车",
+        "哪里",
+        "不客气",
+        "司机"
+      ],
+      "answer": "C",
+      "explanation": "不客气 đọc là bú kèqi, nghĩa là không có gì; đáp lại lời cảm ơn. Tham chiếu: PDF bài 4, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “不客气” với nghĩa “không có gì; đáp lại lời cảm ơn”.",
+      "options": [
+        "gūniang",
+        "bùxíngjiē",
+        "bú kèqi",
+        "shīfu"
+      ],
+      "answer": "C",
+      "explanation": "不客气 đọc là bú kèqi, nghĩa là không có gì; đáp lại lời cảm ơn. Tham chiếu: PDF bài 4, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “再见” (zàijiàn) có nghĩa là gì?",
+      "options": [
+        "ở đâu",
+        "tạm biệt, hẹn gặp lại",
+        "lại, thêm, nữa",
+        "ký túc xá"
+      ],
+      "answer": "B",
+      "explanation": "再见 đọc là zàijiàn, nghĩa là tạm biệt, hẹn gặp lại. Tham chiếu: PDF bài 4, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “zàijiàn” và nghĩa “tạm biệt, hẹn gặp lại”.",
+      "options": [
+        "晚上",
+        "小姐",
+        "机场",
+        "再见"
+      ],
+      "answer": "D",
+      "explanation": "再见 đọc là zàijiàn, nghĩa là tạm biệt, hẹn gặp lại. Tham chiếu: PDF bài 4, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “再见” với nghĩa “tạm biệt, hẹn gặp lại”.",
+      "options": [
+        "jīchǎng",
+        "gè",
+        "zàijiàn",
+        "Hénèi"
+      ],
+      "answer": "C",
+      "explanation": "再见 đọc là zàijiàn, nghĩa là tạm biệt, hẹn gặp lại. Tham chiếu: PDF bài 4, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “早上” (zǎoshang) có nghĩa là gì?",
+      "options": [
+        "buổi sáng sớm",
+        "cách; chỉ khoảng cách",
+        "bác tài, thầy; cách gọi người thợ lành nghề",
+        "mất dê mới sửa chuồng; sửa sai khi còn kịp"
+      ],
+      "answer": "A",
+      "explanation": "早上 đọc là zǎoshang, nghĩa là buổi sáng sớm. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “zǎoshang” và nghĩa “buổi sáng sớm”.",
+      "options": [
+        "早上",
+        "晚上",
+        "多",
+        "小刘"
+      ],
+      "answer": "A",
+      "explanation": "早上 đọc là zǎoshang, nghĩa là buổi sáng sớm. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “早上” với nghĩa “buổi sáng sớm”.",
+      "options": [
+        "jīchǎng",
+        "zǎoshang",
+        "chēngchuán",
+        "gǎnxiè"
+      ],
+      "answer": "B",
+      "explanation": "早上 đọc là zǎoshang, nghĩa là buổi sáng sớm. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “上午” (shàngwǔ) có nghĩa là gì?",
+      "options": [
+        "buổi sáng",
+        "cô gái",
+        "không cần cảm ơn, không có gì",
+        "cái; lượng từ thông dụng"
+      ],
+      "answer": "A",
+      "explanation": "上午 đọc là shàngwǔ, nghĩa là buổi sáng. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “shàngwǔ” và nghĩa “buổi sáng”.",
+      "options": [
+        "邮局",
+        "厕所",
+        "女士",
+        "上午"
+      ],
+      "answer": "D",
+      "explanation": "上午 đọc là shàngwǔ, nghĩa là buổi sáng. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “上午” với nghĩa “buổi sáng”.",
+      "options": [
+        "bùxíngjiē",
+        "shàngwǔ",
+        "měinǚ",
+        "zài"
+      ],
+      "answer": "B",
+      "explanation": "上午 đọc là shàngwǔ, nghĩa là buổi sáng. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “中午” (zhōngwǔ) có nghĩa là gì?",
+      "options": [
+        "khách sáo",
+        "buổi trưa",
+        "mất dê mới sửa chuồng; sửa sai khi còn kịp",
+        "người đẹp, cô gái đẹp"
+      ],
+      "answer": "B",
+      "explanation": "中午 đọc là zhōngwǔ, nghĩa là buổi trưa. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “zhōngwǔ” và nghĩa “buổi trưa”.",
+      "options": [
+        "少",
+        "能",
+        "中午",
+        "多少"
+      ],
+      "answer": "C",
+      "explanation": "中午 đọc là zhōngwǔ, nghĩa là buổi trưa. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “中午” với nghĩa “buổi trưa”.",
+      "options": [
+        "Xiǎo Liú",
+        "jiǔ",
+        "zhōngwǔ",
+        "jìn"
+      ],
+      "answer": "C",
+      "explanation": "中午 đọc là zhōngwǔ, nghĩa là buổi trưa. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “下午” (xiàwǔ) có nghĩa là gì?",
+      "options": [
+        "buổi chiều",
+        "cách; chỉ khoảng cách",
+        "bác tài, thầy; cách gọi người thợ lành nghề",
+        "nhà hàng; khách sạn tùy ngữ cảnh"
+      ],
+      "answer": "A",
+      "explanation": "下午 đọc là xiàwǔ, nghĩa là buổi chiều. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “xiàwǔ” và nghĩa “buổi chiều”.",
+      "options": [
+        "客气",
+        "下午",
+        "人民",
+        "广场"
+      ],
+      "answer": "B",
+      "explanation": "下午 đọc là xiàwǔ, nghĩa là buổi chiều. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “下午” với nghĩa “buổi chiều”.",
+      "options": [
+        "yóujú",
+        "xiàwǔ",
+        "shīfu",
+        "bú kèqi"
+      ],
+      "answer": "B",
+      "explanation": "下午 đọc là xiàwǔ, nghĩa là buổi chiều. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “晚上” (wǎnshang) có nghĩa là gì?",
+      "options": [
+        "tể tướng",
+        "bệnh viện",
+        "buổi tối",
+        "ở đâu"
+      ],
+      "answer": "C",
+      "explanation": "晚上 đọc là wǎnshang, nghĩa là buổi tối. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “wǎnshang” và nghĩa “buổi tối”.",
+      "options": [
+        "可乐",
+        "找",
+        "妹妹",
+        "晚上"
+      ],
+      "answer": "D",
+      "explanation": "晚上 đọc là wǎnshang, nghĩa là buổi tối. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “晚上” với nghĩa “buổi tối”.",
+      "options": [
+        "měinǚ",
+        "nǎlǐ",
+        "wǎnshang",
+        "zuò"
+      ],
+      "answer": "C",
+      "explanation": "晚上 đọc là wǎnshang, nghĩa là buổi tối. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “半夜” (bànyè) có nghĩa là gì?",
+      "options": [
+        "tiền",
+        "ở đâu",
+        "đến; hướng về người nói",
+        "nửa đêm"
+      ],
+      "answer": "D",
+      "explanation": "半夜 đọc là bànyè, nghĩa là nửa đêm. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “bànyè” và nghĩa “nửa đêm”.",
+      "options": [
+        "女士",
+        "找",
+        "近",
+        "半夜"
+      ],
+      "answer": "D",
+      "explanation": "半夜 đọc là bànyè, nghĩa là nửa đêm. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “半夜” với nghĩa “nửa đêm”.",
+      "options": [
+        "le",
+        "duōshao",
+        "bànyè",
+        "sījī"
+      ],
+      "answer": "C",
+      "explanation": "半夜 đọc là bànyè, nghĩa là nửa đêm. Tham chiếu: PDF bài 4, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “女士” (nǚshì) có nghĩa là gì?",
+      "options": [
+        "sáu",
+        "có thể, có khả năng",
+        "bà, cô; cách xưng hô lịch sự",
+        "ga tàu hỏa"
+      ],
+      "answer": "C",
+      "explanation": "女士 đọc là nǚshì, nghĩa là bà, cô; cách xưng hô lịch sự. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “nǚshì” và nghĩa “bà, cô; cách xưng hô lịch sự”.",
+      "options": [
+        "杯",
+        "学校",
+        "近",
+        "女士"
+      ],
+      "answer": "D",
+      "explanation": "女士 đọc là nǚshì, nghĩa là bà, cô; cách xưng hô lịch sự. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “女士” với nghĩa “bà, cô; cách xưng hô lịch sự”.",
+      "options": [
+        "nǚshì",
+        "nǎlǐ",
+        "bùxíngjiē",
+        "Hénèi"
+      ],
+      "answer": "A",
+      "explanation": "女士 đọc là nǚshì, nghĩa là bà, cô; cách xưng hô lịch sự. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “姑娘” (gūniang) có nghĩa là gì?",
+      "options": [
+        "bác tài, thầy; cách gọi người thợ lành nghề",
+        "so với; dùng trong so sánh",
+        "ga tàu hỏa",
+        "cô gái"
+      ],
+      "answer": "D",
+      "explanation": "姑娘 đọc là gūniang, nghĩa là cô gái. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “gūniang” và nghĩa “cô gái”.",
+      "options": [
+        "塞翁失马",
+        "远",
+        "火车站",
+        "姑娘"
+      ],
+      "answer": "D",
+      "explanation": "姑娘 đọc là gūniang, nghĩa là cô gái. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “姑娘” với nghĩa “cô gái”.",
+      "options": [
+        "chēngchuán",
+        "jīchǎng",
+        "gūniang",
+        "yīyuàn"
+      ],
+      "answer": "C",
+      "explanation": "姑娘 đọc là gūniang, nghĩa là cô gái. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “妹妹” (mèimei) có nghĩa là gì?",
+      "options": [
+        "bệnh viện",
+        "em gái",
+        "ít",
+        "mất dê mới sửa chuồng; sửa sai khi còn kịp"
+      ],
+      "answer": "B",
+      "explanation": "妹妹 đọc là mèimei, nghĩa là em gái. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “mèimei” và nghĩa “em gái”.",
+      "options": [
+        "上午",
+        "妹妹",
+        "了",
+        "六"
+      ],
+      "answer": "B",
+      "explanation": "妹妹 đọc là mèimei, nghĩa là em gái. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “妹妹” với nghĩa “em gái”.",
+      "options": [
+        "mèimei",
+        "rénmín",
+        "yóujú",
+        "zǎoshang"
+      ],
+      "answer": "A",
+      "explanation": "妹妹 đọc là mèimei, nghĩa là em gái. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “美女” (měinǚ) có nghĩa là gì?",
+      "options": [
+        "hiểu rõ",
+        "bệnh viện",
+        "người đẹp, cô gái đẹp",
+        "siêu thị"
+      ],
+      "answer": "C",
+      "explanation": "美女 đọc là měinǚ, nghĩa là người đẹp, cô gái đẹp. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “měinǚ” và nghĩa “người đẹp, cô gái đẹp”.",
+      "options": [
+        "美女",
+        "师傅",
+        "宿舍",
+        "司机"
+      ],
+      "answer": "A",
+      "explanation": "美女 đọc là měinǚ, nghĩa là người đẹp, cô gái đẹp. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “美女” với nghĩa “người đẹp, cô gái đẹp”.",
+      "options": [
+        "měinǚ",
+        "nǎr",
+        "bànyè",
+        "gǎnxiè"
+      ],
+      "answer": "A",
+      "explanation": "美女 đọc là měinǚ, nghĩa là người đẹp, cô gái đẹp. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “小哥哥” (xiǎo gēge) có nghĩa là gì?",
+      "options": [
+        "tài xế, người lái xe",
+        "buổi tối",
+        "anh trai trẻ; cách gọi thân mật",
+        "hiểu rõ"
+      ],
+      "answer": "C",
+      "explanation": "小哥哥 đọc là xiǎo gēge, nghĩa là anh trai trẻ; cách gọi thân mật. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “xiǎo gēge” và nghĩa “anh trai trẻ; cách gọi thân mật”.",
+      "options": [
+        "妹妹",
+        "公司",
+        "六",
+        "小哥哥"
+      ],
+      "answer": "D",
+      "explanation": "小哥哥 đọc là xiǎo gēge, nghĩa là anh trai trẻ; cách gọi thân mật. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “小哥哥” với nghĩa “anh trai trẻ; cách gọi thân mật”.",
+      "options": [
+        "dìtiě",
+        "zuò",
+        "xiǎo gēge",
+        "yīyuàn"
+      ],
+      "answer": "C",
+      "explanation": "小哥哥 đọc là xiǎo gēge, nghĩa là anh trai trẻ; cách gọi thân mật. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “帅哥” (shuàigē) có nghĩa là gì?",
+      "options": [
+        "chàng trai đẹp trai",
+        "hiểu rõ",
+        "có thể, có khả năng",
+        "bánh mì"
+      ],
+      "answer": "A",
+      "explanation": "帅哥 đọc là shuàigē, nghĩa là chàng trai đẹp trai. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “shuàigē” và nghĩa “chàng trai đẹp trai”.",
+      "options": [
+        "近",
+        "帅哥",
+        "人民币",
+        "美女"
+      ],
+      "answer": "B",
+      "explanation": "帅哥 đọc là shuàigē, nghĩa là chàng trai đẹp trai. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “帅哥” với nghĩa “chàng trai đẹp trai”.",
+      "options": [
+        "yóujú",
+        "shuàigē",
+        "shàngwǔ",
+        "jīchǎng"
+      ],
+      "answer": "B",
+      "explanation": "帅哥 đọc là shuàigē, nghĩa là chàng trai đẹp trai. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “司机” (sījī) có nghĩa là gì?",
+      "options": [
+        "so với; dùng trong so sánh",
+        "biết một thông tin",
+        "tài xế, người lái xe",
+        "chai; lượng từ đồ đựng trong chai"
+      ],
+      "answer": "C",
+      "explanation": "司机 đọc là sījī, nghĩa là tài xế, người lái xe. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “sījī” và nghĩa “tài xế, người lái xe”.",
+      "options": [
+        "司机",
+        "到",
+        "广场",
+        "再见"
+      ],
+      "answer": "A",
+      "explanation": "司机 đọc là sījī, nghĩa là tài xế, người lái xe. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “司机” với nghĩa “tài xế, người lái xe”.",
+      "options": [
+        "qù",
+        "mèimei",
+        "wáng yáng bǔ láo",
+        "sījī"
+      ],
+      "answer": "D",
+      "explanation": "司机 đọc là sījī, nghĩa là tài xế, người lái xe. Tham chiếu: PDF bài 4, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “来” (lái) có nghĩa là gì?",
+      "options": [
+        "đến; hướng về người nói",
+        "bưu điện",
+        "cô gái",
+        "nước cô la"
+      ],
+      "answer": "A",
+      "explanation": "来 đọc là lái, nghĩa là đến; hướng về người nói. Tham chiếu: PDF bài 4, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “lái” và nghĩa “đến; hướng về người nói”.",
+      "options": [
+        "亡羊补牢",
+        "姑娘",
+        "来",
+        "公园"
+      ],
+      "answer": "C",
+      "explanation": "来 đọc là lái, nghĩa là đến; hướng về người nói. Tham chiếu: PDF bài 4, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “来” với nghĩa “đến; hướng về người nói”.",
+      "options": [
+        "lái",
+        "Xiǎo Liú",
+        "xuéxiào",
+        "lí"
+      ],
+      "answer": "A",
+      "explanation": "来 đọc là lái, nghĩa là đến; hướng về người nói. Tham chiếu: PDF bài 4, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “人民币” (rénmínbì) có nghĩa là gì?",
+      "options": [
+        "nửa đêm",
+        "Tiểu Lưu, tên nhân vật",
+        "nhân dân tệ",
+        "siêu thị"
+      ],
+      "answer": "C",
+      "explanation": "人民币 đọc là rénmínbì, nghĩa là nhân dân tệ. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “rénmínbì” và nghĩa “nhân dân tệ”.",
+      "options": [
+        "人民币",
+        "知道",
+        "杯",
+        "不用谢"
+      ],
+      "answer": "A",
+      "explanation": "人民币 đọc là rénmínbì, nghĩa là nhân dân tệ. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “人民币” với nghĩa “nhân dân tệ”.",
+      "options": [
+        "zǎoshang",
+        "rénmínbì",
+        "qián",
+        "pāi qiú"
+      ],
+      "answer": "B",
+      "explanation": "人民币 đọc là rénmínbì, nghĩa là nhân dân tệ. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “步行街” (bùxíngjiē) có nghĩa là gì?",
+      "options": [
+        "bảo tàng",
+        "tái ông mất ngựa; họa phúc khó lường",
+        "tài xế, người lái xe",
+        "phố đi bộ"
+      ],
+      "answer": "D",
+      "explanation": "步行街 đọc là bùxíngjiē, nghĩa là phố đi bộ. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “bùxíngjiē” và nghĩa “phố đi bộ”.",
+      "options": [
+        "中午",
+        "步行街",
+        "塞翁失马",
+        "电影院"
+      ],
+      "answer": "B",
+      "explanation": "步行街 đọc là bùxíngjiē, nghĩa là phố đi bộ. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “步行街” với nghĩa “phố đi bộ”.",
+      "options": [
+        "xiǎo gēge",
+        "yóujú",
+        "yuǎn",
+        "bùxíngjiē"
+      ],
+      "answer": "D",
+      "explanation": "步行街 đọc là bùxíngjiē, nghĩa là phố đi bộ. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “河内” (Hénèi) có nghĩa là gì?",
+      "options": [
+        "nửa đêm",
+        "bà, cô; cách xưng hô lịch sự",
+        "nhiều",
+        "Hà Nội"
+      ],
+      "answer": "D",
+      "explanation": "河内 đọc là Hénèi, nghĩa là Hà Nội. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “Hénèi” và nghĩa “Hà Nội”.",
+      "options": [
+        "上午",
+        "河内",
+        "医院",
+        "巴亭广场"
+      ],
+      "answer": "B",
+      "explanation": "河内 đọc là Hénèi, nghĩa là Hà Nội. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “河内” với nghĩa “Hà Nội”.",
+      "options": [
+        "Hénèi",
+        "rénmínbì",
+        "bú yòng xiè",
+        "sījī"
+      ],
+      "answer": "A",
+      "explanation": "河内 đọc là Hénèi, nghĩa là Hà Nội. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “巴亭广场” (Bātíng Guǎngchǎng) có nghĩa là gì?",
+      "options": [
+        "buổi tối",
+        "khoảng, có lẽ",
+        "Quảng trường Ba Đình",
+        "đi, đến; hướng xa người nói"
+      ],
+      "answer": "C",
+      "explanation": "巴亭广场 đọc là Bātíng Guǎngchǎng, nghĩa là Quảng trường Ba Đình. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “Bātíng Guǎngchǎng” và nghĩa “Quảng trường Ba Đình”.",
+      "options": [
+        "小姐",
+        "宰相",
+        "巴亭广场",
+        "多"
+      ],
+      "answer": "C",
+      "explanation": "巴亭广场 đọc là Bātíng Guǎngchǎng, nghĩa là Quảng trường Ba Đình. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “巴亭广场” với nghĩa “Quảng trường Ba Đình”.",
+      "options": [
+        "zuò",
+        "huǒchēzhàn",
+        "Bātíng Guǎngchǎng",
+        "fàndiàn"
+      ],
+      "answer": "C",
+      "explanation": "巴亭广场 đọc là Bātíng Guǎngchǎng, nghĩa là Quảng trường Ba Đình. Tham chiếu: PDF bài 4, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “学校” (xuéxiào) có nghĩa là gì?",
+      "options": [
+        "nhân dân",
+        "trợ từ; biểu thị thay đổi trạng thái trong bài",
+        "công ty",
+        "trường học"
+      ],
+      "answer": "D",
+      "explanation": "学校 đọc là xuéxiào, nghĩa là trường học. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “xuéxiào” và nghĩa “trường học”.",
+      "options": [
+        "学校",
+        "半夜",
+        "能",
+        "亡羊补牢"
+      ],
+      "answer": "A",
+      "explanation": "学校 đọc là xuéxiào, nghĩa là trường học. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “学校” với nghĩa “trường học”.",
+      "options": [
+        "xuéxiào",
+        "zàijiàn",
+        "shǎo",
+        "Xiǎo Niú"
+      ],
+      "answer": "A",
+      "explanation": "学校 đọc là xuéxiào, nghĩa là trường học. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “公司” (gōngsī) có nghĩa là gì?",
+      "options": [
+        "buổi trưa",
+        "ở đâu, chỗ nào",
+        "xe buýt",
+        "công ty"
+      ],
+      "answer": "D",
+      "explanation": "公司 đọc là gōngsī, nghĩa là công ty. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “gōngsī” và nghĩa “công ty”.",
+      "options": [
+        "哪儿",
+        "公司",
+        "美女",
+        "小刘"
+      ],
+      "answer": "B",
+      "explanation": "公司 đọc là gōngsī, nghĩa là công ty. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “公司” với nghĩa “công ty”.",
+      "options": [
+        "bú kèqi",
+        "gūniang",
+        "huǒchēzhàn",
+        "gōngsī"
+      ],
+      "answer": "D",
+      "explanation": "公司 đọc là gōngsī, nghĩa là công ty. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “医院” (yīyuàn) có nghĩa là gì?",
+      "options": [
+        "công viên",
+        "trường học",
+        "bệnh viện",
+        "bưu điện"
+      ],
+      "answer": "C",
+      "explanation": "医院 đọc là yīyuàn, nghĩa là bệnh viện. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “yīyuàn” và nghĩa “bệnh viện”.",
+      "options": [
+        "多少",
+        "杯",
+        "医院",
+        "步行街"
+      ],
+      "answer": "C",
+      "explanation": "医院 đọc là yīyuàn, nghĩa là bệnh viện. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “医院” với nghĩa “bệnh viện”.",
+      "options": [
+        "duōshao",
+        "yīyuàn",
+        "Bātíng Guǎngchǎng",
+        "kèqi"
+      ],
+      "answer": "B",
+      "explanation": "医院 đọc là yīyuàn, nghĩa là bệnh viện. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “超市” (chāoshì) có nghĩa là gì?",
+      "options": [
+        "có thể, có khả năng",
+        "quán ăn, nhà hàng",
+        "siêu thị",
+        "cô gái"
+      ],
+      "answer": "C",
+      "explanation": "超市 đọc là chāoshì, nghĩa là siêu thị. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “chāoshì” và nghĩa “siêu thị”.",
+      "options": [
+        "明白",
+        "师傅",
+        "超市",
+        "司机"
+      ],
+      "answer": "C",
+      "explanation": "超市 đọc là chāoshì, nghĩa là siêu thị. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “超市” với nghĩa “siêu thị”.",
+      "options": [
+        "nǎr",
+        "chēngchuán",
+        "chāoshì",
+        "wǎnshang"
+      ],
+      "answer": "C",
+      "explanation": "超市 đọc là chāoshì, nghĩa là siêu thị. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “宿舍” (sùshè) có nghĩa là gì?",
+      "options": [
+        "xa",
+        "không có gì; đáp lại lời cảm ơn",
+        "ký túc xá",
+        "ít"
+      ],
+      "answer": "C",
+      "explanation": "宿舍 đọc là sùshè, nghĩa là ký túc xá. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “sùshè” và nghĩa “ký túc xá”.",
+      "options": [
+        "上午",
+        "宿舍",
+        "客气",
+        "女士"
+      ],
+      "answer": "B",
+      "explanation": "宿舍 đọc là sùshè, nghĩa là ký túc xá. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “宿舍” với nghĩa “ký túc xá”.",
+      "options": [
+        "bówùguǎn",
+        "sùshè",
+        "wǎnshang",
+        "jìn"
+      ],
+      "answer": "B",
+      "explanation": "宿舍 đọc là sùshè, nghĩa là ký túc xá. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “电影院” (diànyǐngyuàn) có nghĩa là gì?",
+      "options": [
+        "ít",
+        "trường học",
+        "rạp chiếu phim",
+        "ký túc xá"
+      ],
+      "answer": "C",
+      "explanation": "电影院 đọc là diànyǐngyuàn, nghĩa là rạp chiếu phim. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “diànyǐngyuàn” và nghĩa “rạp chiếu phim”.",
+      "options": [
+        "感谢",
+        "坐",
+        "块",
+        "电影院"
+      ],
+      "answer": "D",
+      "explanation": "电影院 đọc là diànyǐngyuàn, nghĩa là rạp chiếu phim. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “电影院” với nghĩa “rạp chiếu phim”.",
+      "options": [
+        "qù",
+        "gōngsī",
+        "nǎr",
+        "diànyǐngyuàn"
+      ],
+      "answer": "D",
+      "explanation": "电影院 đọc là diànyǐngyuàn, nghĩa là rạp chiếu phim. Tham chiếu: PDF bài 4, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “明白” (míngbai) có nghĩa là gì?",
+      "options": [
+        "cảm ơn, cảm tạ",
+        "trường học",
+        "đến, tới; nhấn mạnh điểm đến",
+        "hiểu rõ"
+      ],
+      "answer": "D",
+      "explanation": "明白 đọc là míngbai, nghĩa là hiểu rõ. Tham chiếu: PDF bài 4, trang 10.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “míngbai” và nghĩa “hiểu rõ”.",
+      "options": [
+        "哪儿",
+        "比",
+        "明白",
+        "电影院"
+      ],
+      "answer": "C",
+      "explanation": "明白 đọc là míngbai, nghĩa là hiểu rõ. Tham chiếu: PDF bài 4, trang 10.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “明白” với nghĩa “hiểu rõ”.",
+      "options": [
+        "dìtiě",
+        "míngbai",
+        "Hénèi",
+        "fànguǎnr"
+      ],
+      "answer": "B",
+      "explanation": "明白 đọc là míngbai, nghĩa là hiểu rõ. Tham chiếu: PDF bài 4, trang 10.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “离” (lí) có nghĩa là gì?",
+      "options": [
+        "tìm; trả lại tiền thừa",
+        "cách; chỉ khoảng cách",
+        "tái ông mất ngựa; họa phúc khó lường",
+        "cô gái"
+      ],
+      "answer": "B",
+      "explanation": "离 đọc là lí, nghĩa là cách; chỉ khoảng cách. Tham chiếu: PDF bài 4, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “lí” và nghĩa “cách; chỉ khoảng cách”.",
+      "options": [
+        "小刘",
+        "离",
+        "饭店",
+        "钱"
+      ],
+      "answer": "B",
+      "explanation": "离 đọc là lí, nghĩa là cách; chỉ khoảng cách. Tham chiếu: PDF bài 4, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “离” với nghĩa “cách; chỉ khoảng cách”.",
+      "options": [
+        "lí",
+        "bùxíngjiē",
+        "gōngyuán",
+        "kèqi"
+      ],
+      "answer": "A",
+      "explanation": "离 đọc là lí, nghĩa là cách; chỉ khoảng cách. Tham chiếu: PDF bài 4, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “找” (zhǎo) có nghĩa là gì?",
+      "options": [
+        "tìm; trả lại tiền thừa",
+        "đến, tới; nhấn mạnh điểm đến",
+        "cô, tiểu thư; cách xưng hô trong bài",
+        "bảo tàng"
+      ],
+      "answer": "A",
+      "explanation": "找 đọc là zhǎo, nghĩa là tìm; trả lại tiền thừa. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “zhǎo” và nghĩa “tìm; trả lại tiền thừa”.",
+      "options": [
+        "找",
+        "巴亭广场",
+        "邮局",
+        "学校"
+      ],
+      "answer": "A",
+      "explanation": "找 đọc là zhǎo, nghĩa là tìm; trả lại tiền thừa. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “找” với nghĩa “tìm; trả lại tiền thừa”.",
+      "options": [
+        "xièxie",
+        "gè",
+        "guǎngchǎng",
+        "zhǎo"
+      ],
+      "answer": "D",
+      "explanation": "找 đọc là zhǎo, nghĩa là tìm; trả lại tiền thừa. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “多” (duō) có nghĩa là gì?",
+      "options": [
+        "đến; hướng về người nói",
+        "tể tướng",
+        "nhiều",
+        "chín"
+      ],
+      "answer": "C",
+      "explanation": "多 đọc là duō, nghĩa là nhiều. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “duō” và nghĩa “nhiều”.",
+      "options": [
+        "公共汽车",
+        "晚上",
+        "多",
+        "塞翁失马"
+      ],
+      "answer": "C",
+      "explanation": "多 đọc là duō, nghĩa là nhiều. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “多” với nghĩa “nhiều”.",
+      "options": [
+        "zài",
+        "duō",
+        "gōngsī",
+        "kělè"
+      ],
+      "answer": "B",
+      "explanation": "多 đọc là duō, nghĩa là nhiều. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “少” (shǎo) có nghĩa là gì?",
+      "options": [
+        "xe buýt",
+        "ít",
+        "cảm ơn, cảm tạ",
+        "quán ăn, nhà hàng"
+      ],
+      "answer": "B",
+      "explanation": "少 đọc là shǎo, nghĩa là ít. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “shǎo” và nghĩa “ít”.",
+      "options": [
+        "公安局",
+        "博物馆",
+        "少",
+        "哪儿"
+      ],
+      "answer": "C",
+      "explanation": "少 đọc là shǎo, nghĩa là ít. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “少” với nghĩa “ít”.",
+      "options": [
+        "miànbāo",
+        "nǎlǐ",
+        "wáng yáng bǔ láo",
+        "shǎo"
+      ],
+      "answer": "D",
+      "explanation": "少 đọc là shǎo, nghĩa là ít. Tham chiếu: PDF bài 4, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “再” (zài) có nghĩa là gì?",
+      "options": [
+        "lại, thêm, nữa",
+        "không cần cảm ơn, không có gì",
+        "xa",
+        "buổi sáng sớm"
+      ],
+      "answer": "A",
+      "explanation": "再 đọc là zài, nghĩa là lại, thêm, nữa. Tham chiếu: PDF bài 4, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “zài” và nghĩa “lại, thêm, nữa”.",
+      "options": [
+        "再",
+        "电影院",
+        "饭店",
+        "小刘"
+      ],
+      "answer": "A",
+      "explanation": "再 đọc là zài, nghĩa là lại, thêm, nữa. Tham chiếu: PDF bài 4, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “再” với nghĩa “lại, thêm, nữa”.",
+      "options": [
+        "lí",
+        "zài",
+        "huǒchēzhàn",
+        "wǎnshang"
+      ],
+      "answer": "B",
+      "explanation": "再 đọc là zài, nghĩa là lại, thêm, nữa. Tham chiếu: PDF bài 4, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “感谢” (gǎnxiè) có nghĩa là gì?",
+      "options": [
+        "đến, tới; nhấn mạnh điểm đến",
+        "buổi trưa",
+        "có thể, có khả năng",
+        "cảm ơn, cảm tạ"
+      ],
+      "answer": "D",
+      "explanation": "感谢 đọc là gǎnxiè, nghĩa là cảm ơn, cảm tạ. Tham chiếu: PDF bài 4, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “gǎnxiè” và nghĩa “cảm ơn, cảm tạ”.",
+      "options": [
+        "超市",
+        "感谢",
+        "小哥哥",
+        "电影院"
+      ],
+      "answer": "B",
+      "explanation": "感谢 đọc là gǎnxiè, nghĩa là cảm ơn, cảm tạ. Tham chiếu: PDF bài 4, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “感谢” với nghĩa “cảm ơn, cảm tạ”.",
+      "options": [
+        "zǎixiàng",
+        "rénmín",
+        "yóujú",
+        "gǎnxiè"
+      ],
+      "answer": "D",
+      "explanation": "感谢 đọc là gǎnxiè, nghĩa là cảm ơn, cảm tạ. Tham chiếu: PDF bài 4, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “不用谢” (bú yòng xiè) có nghĩa là gì?",
+      "options": [
+        "không cần cảm ơn, không có gì",
+        "cốc, ly; lượng từ đồ uống",
+        "cơ quan công an",
+        "anh trai trẻ; cách gọi thân mật"
+      ],
+      "answer": "A",
+      "explanation": "不用谢 đọc là bú yòng xiè, nghĩa là không cần cảm ơn, không có gì. Tham chiếu: PDF bài 4, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “bú yòng xiè” và nghĩa “không cần cảm ơn, không có gì”.",
+      "options": [
+        "不用谢",
+        "半夜",
+        "妹妹",
+        "面包"
+      ],
+      "answer": "A",
+      "explanation": "不用谢 đọc là bú yòng xiè, nghĩa là không cần cảm ơn, không có gì. Tham chiếu: PDF bài 4, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “不用谢” với nghĩa “không cần cảm ơn, không có gì”.",
+      "options": [
+        "bùxíngjiē",
+        "chāoshì",
+        "bú yòng xiè",
+        "bówùguǎn"
+      ],
+      "answer": "C",
+      "explanation": "不用谢 đọc là bú yòng xiè, nghĩa là không cần cảm ơn, không có gì. Tham chiếu: PDF bài 4, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “客气” (kèqi) có nghĩa là gì?",
+      "options": [
+        "khách sáo",
+        "nhà hàng; khách sạn tùy ngữ cảnh",
+        "tể tướng",
+        "cô gái"
+      ],
+      "answer": "A",
+      "explanation": "客气 đọc là kèqi, nghĩa là khách sáo. Tham chiếu: PDF bài 4, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “kèqi” và nghĩa “khách sáo”.",
+      "options": [
+        "小姐",
+        "女士",
+        "亡羊补牢",
+        "客气"
+      ],
+      "answer": "D",
+      "explanation": "客气 đọc là kèqi, nghĩa là khách sáo. Tham chiếu: PDF bài 4, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “客气” với nghĩa “khách sáo”.",
+      "options": [
+        "kèqi",
+        "gōnggòng qìchē",
+        "rénmínbì",
+        "dù lǐ"
+      ],
+      "answer": "A",
+      "explanation": "客气 đọc là kèqi, nghĩa là khách sáo. Tham chiếu: PDF bài 4, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “机场” (jīchǎng) có nghĩa là gì?",
+      "options": [
+        "tài xế, người lái xe",
+        "Tiểu Lưu, tên nhân vật",
+        "sân bay",
+        "tái ông mất ngựa; họa phúc khó lường"
+      ],
+      "answer": "C",
+      "explanation": "机场 đọc là jīchǎng, nghĩa là sân bay. Tham chiếu: PDF bài 4, trang 24.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “jīchǎng” và nghĩa “sân bay”.",
+      "options": [
+        "上午",
+        "博物馆",
+        "机场",
+        "哪儿"
+      ],
+      "answer": "C",
+      "explanation": "机场 đọc là jīchǎng, nghĩa là sân bay. Tham chiếu: PDF bài 4, trang 24.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “机场” với nghĩa “sân bay”.",
+      "options": [
+        "jīchǎng",
+        "chēngchuán",
+        "zhǎo",
+        "shīfu"
+      ],
+      "answer": "A",
+      "explanation": "机场 đọc là jīchǎng, nghĩa là sân bay. Tham chiếu: PDF bài 4, trang 24.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “火车站” (huǒchēzhàn) có nghĩa là gì?",
+      "options": [
+        "công viên",
+        "tiền",
+        "ga tàu hỏa",
+        "chống thuyền, chèo thuyền"
+      ],
+      "answer": "C",
+      "explanation": "火车站 đọc là huǒchēzhàn, nghĩa là ga tàu hỏa. Tham chiếu: PDF bài 4, trang 24.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “huǒchēzhàn” và nghĩa “ga tàu hỏa”.",
+      "options": [
+        "大概",
+        "火车站",
+        "比",
+        "半夜"
+      ],
+      "answer": "B",
+      "explanation": "火车站 đọc là huǒchēzhàn, nghĩa là ga tàu hỏa. Tham chiếu: PDF bài 4, trang 24.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “火车站” với nghĩa “ga tàu hỏa”.",
+      "options": [
+        "gè",
+        "yuǎn",
+        "fànguǎnr",
+        "huǒchēzhàn"
+      ],
+      "answer": "D",
+      "explanation": "火车站 đọc là huǒchēzhàn, nghĩa là ga tàu hỏa. Tham chiếu: PDF bài 4, trang 24.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “博物馆” (bówùguǎn) có nghĩa là gì?",
+      "options": [
+        "Quảng trường Ba Đình",
+        "bác tài, thầy; cách gọi người thợ lành nghề",
+        "bảo tàng",
+        "buổi tối"
+      ],
+      "answer": "C",
+      "explanation": "博物馆 đọc là bówùguǎn, nghĩa là bảo tàng. Tham chiếu: PDF bài 4, trang 24.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “bówùguǎn” và nghĩa “bảo tàng”.",
+      "options": [
+        "博物馆",
+        "饭馆儿",
+        "妹妹",
+        "哪里"
+      ],
+      "answer": "A",
+      "explanation": "博物馆 đọc là bówùguǎn, nghĩa là bảo tàng. Tham chiếu: PDF bài 4, trang 24.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “博物馆” với nghĩa “bảo tàng”.",
+      "options": [
+        "sùshè",
+        "shīfu",
+        "bówùguǎn",
+        "liù"
+      ],
+      "answer": "C",
+      "explanation": "博物馆 đọc là bówùguǎn, nghĩa là bảo tàng. Tham chiếu: PDF bài 4, trang 24.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “公园” (gōngyuán) có nghĩa là gì?",
+      "options": [
+        "chín",
+        "hiểu rõ",
+        "công viên",
+        "rạp chiếu phim"
+      ],
+      "answer": "C",
+      "explanation": "公园 đọc là gōngyuán, nghĩa là công viên. Tham chiếu: PDF bài 4, trang 24.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “gōngyuán” và nghĩa “công viên”.",
+      "options": [
+        "超市",
+        "火车站",
+        "公园",
+        "坐"
+      ],
+      "answer": "C",
+      "explanation": "公园 đọc là gōngyuán, nghĩa là công viên. Tham chiếu: PDF bài 4, trang 24.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “公园” với nghĩa “công viên”.",
+      "options": [
+        "zhīdào",
+        "fànguǎnr",
+        "duō",
+        "gōngyuán"
+      ],
+      "answer": "D",
+      "explanation": "公园 đọc là gōngyuán, nghĩa là công viên. Tham chiếu: PDF bài 4, trang 24.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “饭店” (fàndiàn) có nghĩa là gì?",
+      "options": [
+        "lại, thêm, nữa",
+        "sáu",
+        "mất dê mới sửa chuồng; sửa sai khi còn kịp",
+        "nhà hàng; khách sạn tùy ngữ cảnh"
+      ],
+      "answer": "D",
+      "explanation": "饭店 đọc là fàndiàn, nghĩa là nhà hàng; khách sạn tùy ngữ cảnh. Tham chiếu: PDF bài 4, trang 26.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “fàndiàn” và nghĩa “nhà hàng; khách sạn tùy ngữ cảnh”.",
+      "options": [
+        "饭店",
+        "多少",
+        "电影院",
+        "超市"
+      ],
+      "answer": "A",
+      "explanation": "饭店 đọc là fàndiàn, nghĩa là nhà hàng; khách sạn tùy ngữ cảnh. Tham chiếu: PDF bài 4, trang 26.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “饭店” với nghĩa “nhà hàng; khách sạn tùy ngữ cảnh”.",
+      "options": [
+        "zǎoshang",
+        "wáng yáng bǔ láo",
+        "fàndiàn",
+        "zài"
+      ],
+      "answer": "C",
+      "explanation": "饭店 đọc là fàndiàn, nghĩa là nhà hàng; khách sạn tùy ngữ cảnh. Tham chiếu: PDF bài 4, trang 26.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “杯” (bēi) có nghĩa là gì?",
+      "options": [
+        "cốc, ly; lượng từ đồ uống",
+        "tể tướng",
+        "trường học",
+        "ga tàu hỏa"
+      ],
+      "answer": "A",
+      "explanation": "杯 đọc là bēi, nghĩa là cốc, ly; lượng từ đồ uống. Tham chiếu: PDF bài 4, trang 27.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “bēi” và nghĩa “cốc, ly; lượng từ đồ uống”.",
+      "options": [
+        "美女",
+        "河内",
+        "杯",
+        "多少"
+      ],
+      "answer": "C",
+      "explanation": "杯 đọc là bēi, nghĩa là cốc, ly; lượng từ đồ uống. Tham chiếu: PDF bài 4, trang 27.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “杯” với nghĩa “cốc, ly; lượng từ đồ uống”.",
+      "options": [
+        "zuò",
+        "mèimei",
+        "bēi",
+        "bǐ"
+      ],
+      "answer": "C",
+      "explanation": "杯 đọc là bēi, nghĩa là cốc, ly; lượng từ đồ uống. Tham chiếu: PDF bài 4, trang 27.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “可乐” (kělè) có nghĩa là gì?",
+      "options": [
+        "bao nhiêu",
+        "cốc, ly; lượng từ đồ uống",
+        "bảo tàng",
+        "nước cô la"
+      ],
+      "answer": "D",
+      "explanation": "可乐 đọc là kělè, nghĩa là nước cô la. Tham chiếu: PDF bài 4, trang 27.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “kělè” và nghĩa “nước cô la”.",
+      "options": [
+        "博物馆",
+        "可乐",
+        "来",
+        "六"
+      ],
+      "answer": "B",
+      "explanation": "可乐 đọc là kělè, nghĩa là nước cô la. Tham chiếu: PDF bài 4, trang 27.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “可乐” với nghĩa “nước cô la”.",
+      "options": [
+        "qù",
+        "wáng yáng bǔ láo",
+        "kělè",
+        "sùshè"
+      ],
+      "answer": "C",
+      "explanation": "可乐 đọc là kělè, nghĩa là nước cô la. Tham chiếu: PDF bài 4, trang 27.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “个” (gè) có nghĩa là gì?",
+      "options": [
+        "siêu thị",
+        "cái; lượng từ thông dụng",
+        "trường học",
+        "tái ông mất ngựa; họa phúc khó lường"
+      ],
+      "answer": "B",
+      "explanation": "个 đọc là gè, nghĩa là cái; lượng từ thông dụng. Tham chiếu: PDF bài 4, trang 27.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “gè” và nghĩa “cái; lượng từ thông dụng”.",
+      "options": [
+        "宿舍",
+        "找",
+        "博物馆",
+        "个"
+      ],
+      "answer": "D",
+      "explanation": "个 đọc là gè, nghĩa là cái; lượng từ thông dụng. Tham chiếu: PDF bài 4, trang 27.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “个” với nghĩa “cái; lượng từ thông dụng”.",
+      "options": [
+        "dìtiě",
+        "lí",
+        "Rénmín Guǎngchǎng",
+        "gè"
+      ],
+      "answer": "D",
+      "explanation": "个 đọc là gè, nghĩa là cái; lượng từ thông dụng. Tham chiếu: PDF bài 4, trang 27.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “面包” (miànbāo) có nghĩa là gì?",
+      "options": [
+        "bánh mì",
+        "em gái",
+        "Quảng trường Nhân Dân",
+        "tìm; trả lại tiền thừa"
+      ],
+      "answer": "A",
+      "explanation": "面包 đọc là miànbāo, nghĩa là bánh mì. Tham chiếu: PDF bài 4, trang 27.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “miànbāo” và nghĩa “bánh mì”.",
+      "options": [
+        "厕所",
+        "面包",
+        "去",
+        "少"
+      ],
+      "answer": "B",
+      "explanation": "面包 đọc là miànbāo, nghĩa là bánh mì. Tham chiếu: PDF bài 4, trang 27.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “面包” với nghĩa “bánh mì”.",
+      "options": [
+        "xièxie",
+        "guǎngchǎng",
+        "miànbāo",
+        "shǎo"
+      ],
+      "answer": "C",
+      "explanation": "面包 đọc là miànbāo, nghĩa là bánh mì. Tham chiếu: PDF bài 4, trang 27.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “瓶” (píng) có nghĩa là gì?",
+      "options": [
+        "sân bay",
+        "ga tàu hỏa",
+        "bác tài, thầy; cách gọi người thợ lành nghề",
+        "chai; lượng từ đồ đựng trong chai"
+      ],
+      "answer": "D",
+      "explanation": "瓶 đọc là píng, nghĩa là chai; lượng từ đồ đựng trong chai. Tham chiếu: PDF bài 4, trang 27.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “píng” và nghĩa “chai; lượng từ đồ đựng trong chai”.",
+      "options": [
+        "司机",
+        "瓶",
+        "可乐",
+        "小牛"
+      ],
+      "answer": "B",
+      "explanation": "瓶 đọc là píng, nghĩa là chai; lượng từ đồ đựng trong chai. Tham chiếu: PDF bài 4, trang 27.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “瓶” với nghĩa “chai; lượng từ đồ đựng trong chai”.",
+      "options": [
+        "píng",
+        "lí",
+        "zhǎo",
+        "xiǎojiě"
+      ],
+      "answer": "A",
+      "explanation": "瓶 đọc là píng, nghĩa là chai; lượng từ đồ đựng trong chai. Tham chiếu: PDF bài 4, trang 27.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “坐” (zuò) có nghĩa là gì?",
+      "options": [
+        "đến, tới; nhấn mạnh điểm đến",
+        "ngồi; đi bằng phương tiện",
+        "buổi tối",
+        "Quảng trường Ba Đình"
+      ],
+      "answer": "B",
+      "explanation": "坐 đọc là zuò, nghĩa là ngồi; đi bằng phương tiện. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “zuò” và nghĩa “ngồi; đi bằng phương tiện”.",
+      "options": [
+        "面包",
+        "再见",
+        "坐",
+        "公司"
+      ],
+      "answer": "C",
+      "explanation": "坐 đọc là zuò, nghĩa là ngồi; đi bằng phương tiện. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “坐” với nghĩa “ngồi; đi bằng phương tiện”.",
+      "options": [
+        "zuò",
+        "wǎnshang",
+        "cèsuǒ",
+        "zàijiàn"
+      ],
+      "answer": "A",
+      "explanation": "坐 đọc là zuò, nghĩa là ngồi; đi bằng phương tiện. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “公共汽车” (gōnggòng qìchē) có nghĩa là gì?",
+      "options": [
+        "bác tài, thầy; cách gọi người thợ lành nghề",
+        "cảm ơn, cảm tạ",
+        "công ty",
+        "xe buýt"
+      ],
+      "answer": "D",
+      "explanation": "公共汽车 đọc là gōnggòng qìchē, nghĩa là xe buýt. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “gōnggòng qìchē” và nghĩa “xe buýt”.",
+      "options": [
+        "公共汽车",
+        "厕所",
+        "明白",
+        "感谢"
+      ],
+      "answer": "A",
+      "explanation": "公共汽车 đọc là gōnggòng qìchē, nghĩa là xe buýt. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “公共汽车” với nghĩa “xe buýt”.",
+      "options": [
+        "gōngyuán",
+        "gōnggòng qìchē",
+        "néng",
+        "Hénèi"
+      ],
+      "answer": "B",
+      "explanation": "公共汽车 đọc là gōnggòng qìchē, nghĩa là xe buýt. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “地铁” (dìtiě) có nghĩa là gì?",
+      "options": [
+        "cốc, ly; lượng từ đồ uống",
+        "tàu điện ngầm",
+        "vỗ bóng, đập bóng",
+        "buổi chiều"
+      ],
+      "answer": "B",
+      "explanation": "地铁 đọc là dìtiě, nghĩa là tàu điện ngầm. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “dìtiě” và nghĩa “tàu điện ngầm”.",
+      "options": [
+        "邮局",
+        "地铁",
+        "多少",
+        "哪里"
+      ],
+      "answer": "B",
+      "explanation": "地铁 đọc là dìtiě, nghĩa là tàu điện ngầm. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “地铁” với nghĩa “tàu điện ngầm”.",
+      "options": [
+        "gōngyuán",
+        "cèsuǒ",
+        "chēngchuán",
+        "dìtiě"
+      ],
+      "answer": "D",
+      "explanation": "地铁 đọc là dìtiě, nghĩa là tàu điện ngầm. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “公安局” (gōng'ānjú) có nghĩa là gì?",
+      "options": [
+        "sân bay",
+        "rạp chiếu phim",
+        "cơ quan công an",
+        "đi, đến; hướng xa người nói"
+      ],
+      "answer": "C",
+      "explanation": "公安局 đọc là gōng'ānjú, nghĩa là cơ quan công an. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “gōng'ānjú” và nghĩa “cơ quan công an”.",
+      "options": [
+        "公安局",
+        "近",
+        "公共汽车",
+        "饭店"
+      ],
+      "answer": "A",
+      "explanation": "公安局 đọc là gōng'ānjú, nghĩa là cơ quan công an. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “公安局” với nghĩa “cơ quan công an”.",
+      "options": [
+        "fànguǎnr",
+        "gōng'ānjú",
+        "néng",
+        "kèqi"
+      ],
+      "answer": "B",
+      "explanation": "公安局 đọc là gōng'ānjú, nghĩa là cơ quan công an. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “邮局” (yóujú) có nghĩa là gì?",
+      "options": [
+        "quảng trường",
+        "tài xế, người lái xe",
+        "quán ăn, nhà hàng",
+        "bưu điện"
+      ],
+      "answer": "D",
+      "explanation": "邮局 đọc là yóujú, nghĩa là bưu điện. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “yóujú” và nghĩa “bưu điện”.",
+      "options": [
+        "邮局",
+        "公司",
+        "近",
+        "电影院"
+      ],
+      "answer": "A",
+      "explanation": "邮局 đọc là yóujú, nghĩa là bưu điện. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “邮局” với nghĩa “bưu điện”.",
+      "options": [
+        "Bātíng Guǎngchǎng",
+        "yóujú",
+        "zǎixiàng",
+        "Xiǎo Liú"
+      ],
+      "answer": "B",
+      "explanation": "邮局 đọc là yóujú, nghĩa là bưu điện. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “饭馆儿” (fànguǎnr) có nghĩa là gì?",
+      "options": [
+        "bánh mì",
+        "Hà Nội",
+        "quán ăn, nhà hàng",
+        "bảo tàng"
+      ],
+      "answer": "C",
+      "explanation": "饭馆儿 đọc là fànguǎnr, nghĩa là quán ăn, nhà hàng. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “fànguǎnr” và nghĩa “quán ăn, nhà hàng”.",
+      "options": [
+        "饭馆儿",
+        "大概",
+        "机场",
+        "离"
+      ],
+      "answer": "A",
+      "explanation": "饭馆儿 đọc là fànguǎnr, nghĩa là quán ăn, nhà hàng. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “饭馆儿” với nghĩa “quán ăn, nhà hàng”.",
+      "options": [
+        "yīyuàn",
+        "fànguǎnr",
+        "miànbāo",
+        "liù"
+      ],
+      "answer": "B",
+      "explanation": "饭馆儿 đọc là fànguǎnr, nghĩa là quán ăn, nhà hàng. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “厕所” (cèsuǒ) có nghĩa là gì?",
+      "options": [
+        "nhà vệ sinh",
+        "Quảng trường Nhân Dân",
+        "không có gì; đáp lại lời cảm ơn",
+        "khách sáo"
+      ],
+      "answer": "A",
+      "explanation": "厕所 đọc là cèsuǒ, nghĩa là nhà vệ sinh. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “cèsuǒ” và nghĩa “nhà vệ sinh”.",
+      "options": [
+        "美女",
+        "厕所",
+        "不用谢",
+        "面包"
+      ],
+      "answer": "B",
+      "explanation": "厕所 đọc là cèsuǒ, nghĩa là nhà vệ sinh. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “厕所” với nghĩa “nhà vệ sinh”.",
+      "options": [
+        "bēi",
+        "zuò",
+        "pāi qiú",
+        "cèsuǒ"
+      ],
+      "answer": "D",
+      "explanation": "厕所 đọc là cèsuǒ, nghĩa là nhà vệ sinh. Tham chiếu: PDF bài 4, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “大概” (dàgài) có nghĩa là gì?",
+      "options": [
+        "không cần cảm ơn, không có gì",
+        "ở đâu, chỗ nào",
+        "khoảng, có lẽ",
+        "quảng trường"
+      ],
+      "answer": "C",
+      "explanation": "大概 đọc là dàgài, nghĩa là khoảng, có lẽ. Tham chiếu: PDF bài 4, trang 29.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “dàgài” và nghĩa “khoảng, có lẽ”.",
+      "options": [
+        "大概",
+        "师傅",
+        "亡羊补牢",
+        "厕所"
+      ],
+      "answer": "A",
+      "explanation": "大概 đọc là dàgài, nghĩa là khoảng, có lẽ. Tham chiếu: PDF bài 4, trang 29.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “大概” với nghĩa “khoảng, có lẽ”.",
+      "options": [
+        "bùxíngjiē",
+        "píng",
+        "dàgài",
+        "shīfu"
+      ],
+      "answer": "C",
+      "explanation": "大概 đọc là dàgài, nghĩa là khoảng, có lẽ. Tham chiếu: PDF bài 4, trang 29.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “塞翁失马” (sài wēng shī mǎ) có nghĩa là gì?",
+      "options": [
+        "tái ông mất ngựa; họa phúc khó lường",
+        "ngồi; đi bằng phương tiện",
+        "tiền",
+        "tìm; trả lại tiền thừa"
+      ],
+      "answer": "A",
+      "explanation": "塞翁失马 đọc là sài wēng shī mǎ, nghĩa là tái ông mất ngựa; họa phúc khó lường. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “sài wēng shī mǎ” và nghĩa “tái ông mất ngựa; họa phúc khó lường”.",
+      "options": [
+        "塞翁失马",
+        "少",
+        "宰相",
+        "中午"
+      ],
+      "answer": "A",
+      "explanation": "塞翁失马 đọc là sài wēng shī mǎ, nghĩa là tái ông mất ngựa; họa phúc khó lường. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “塞翁失马” với nghĩa “tái ông mất ngựa; họa phúc khó lường”.",
+      "options": [
+        "sài wēng shī mǎ",
+        "wáng yáng bǔ láo",
+        "bùxíngjiē",
+        "zǎixiàng"
+      ],
+      "answer": "A",
+      "explanation": "塞翁失马 đọc là sài wēng shī mǎ, nghĩa là tái ông mất ngựa; họa phúc khó lường. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “亡羊补牢” (wáng yáng bǔ láo) có nghĩa là gì?",
+      "options": [
+        "bà, cô; cách xưng hô lịch sự",
+        "mất dê mới sửa chuồng; sửa sai khi còn kịp",
+        "ở đâu, chỗ nào",
+        "xa"
+      ],
+      "answer": "B",
+      "explanation": "亡羊补牢 đọc là wáng yáng bǔ láo, nghĩa là mất dê mới sửa chuồng; sửa sai khi còn kịp. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “wáng yáng bǔ láo” và nghĩa “mất dê mới sửa chuồng; sửa sai khi còn kịp”.",
+      "options": [
+        "公司",
+        "六",
+        "不客气",
+        "亡羊补牢"
+      ],
+      "answer": "D",
+      "explanation": "亡羊补牢 đọc là wáng yáng bǔ láo, nghĩa là mất dê mới sửa chuồng; sửa sai khi còn kịp. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “亡羊补牢” với nghĩa “mất dê mới sửa chuồng; sửa sai khi còn kịp”.",
+      "options": [
+        "Rénmín Guǎngchǎng",
+        "gōngyuán",
+        "wáng yáng bǔ láo",
+        "huǒchēzhàn"
+      ],
+      "answer": "C",
+      "explanation": "亡羊补牢 đọc là wáng yáng bǔ láo, nghĩa là mất dê mới sửa chuồng; sửa sai khi còn kịp. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “宰相” (zǎixiàng) có nghĩa là gì?",
+      "options": [
+        "buổi sáng sớm",
+        "tể tướng",
+        "rạp chiếu phim",
+        "đến; hướng về người nói"
+      ],
+      "answer": "B",
+      "explanation": "宰相 đọc là zǎixiàng, nghĩa là tể tướng. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “zǎixiàng” và nghĩa “tể tướng”.",
+      "options": [
+        "宰相",
+        "饭馆儿",
+        "厕所",
+        "远"
+      ],
+      "answer": "A",
+      "explanation": "宰相 đọc là zǎixiàng, nghĩa là tể tướng. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “宰相” với nghĩa “tể tướng”.",
+      "options": [
+        "kělè",
+        "yóujú",
+        "dù lǐ",
+        "zǎixiàng"
+      ],
+      "answer": "D",
+      "explanation": "宰相 đọc là zǎixiàng, nghĩa là tể tướng. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “肚里” (dù lǐ) có nghĩa là gì?",
+      "options": [
+        "bảo tàng",
+        "trong bụng",
+        "em gái",
+        "Quảng trường Ba Đình"
+      ],
+      "answer": "B",
+      "explanation": "肚里 đọc là dù lǐ, nghĩa là trong bụng. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “dù lǐ” và nghĩa “trong bụng”.",
+      "options": [
+        "肚里",
+        "司机",
+        "人民广场",
+        "电影院"
+      ],
+      "answer": "A",
+      "explanation": "肚里 đọc là dù lǐ, nghĩa là trong bụng. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “肚里” với nghĩa “trong bụng”.",
+      "options": [
+        "fàndiàn",
+        "dù lǐ",
+        "xiǎo gēge",
+        "gōngsī"
+      ],
+      "answer": "B",
+      "explanation": "肚里 đọc là dù lǐ, nghĩa là trong bụng. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “能” (néng) có nghĩa là gì?",
+      "options": [
+        "ít",
+        "tìm; trả lại tiền thừa",
+        "có thể, có khả năng",
+        "buổi chiều"
+      ],
+      "answer": "C",
+      "explanation": "能 đọc là néng, nghĩa là có thể, có khả năng. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “néng” và nghĩa “có thể, có khả năng”.",
+      "options": [
+        "谢谢",
+        "能",
+        "明白",
+        "晚上"
+      ],
+      "answer": "B",
+      "explanation": "能 đọc là néng, nghĩa là có thể, có khả năng. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “能” với nghĩa “có thể, có khả năng”.",
+      "options": [
+        "zhōngwǔ",
+        "néng",
+        "míngbai",
+        "jiǔ"
+      ],
+      "answer": "B",
+      "explanation": "能 đọc là néng, nghĩa là có thể, có khả năng. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “撑船” (chēngchuán) có nghĩa là gì?",
+      "options": [
+        "đồng, tệ; đơn vị tiền trong khẩu ngữ",
+        "chống thuyền, chèo thuyền",
+        "lại, thêm, nữa",
+        "chai; lượng từ đồ đựng trong chai"
+      ],
+      "answer": "B",
+      "explanation": "撑船 đọc là chēngchuán, nghĩa là chống thuyền, chèo thuyền. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “chēngchuán” và nghĩa “chống thuyền, chèo thuyền”.",
+      "options": [
+        "瓶",
+        "再见",
+        "宰相",
+        "撑船"
+      ],
+      "answer": "D",
+      "explanation": "撑船 đọc là chēngchuán, nghĩa là chống thuyền, chèo thuyền. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “撑船” với nghĩa “chống thuyền, chèo thuyền”.",
+      "options": [
+        "chēngchuán",
+        "kělè",
+        "lí",
+        "bówùguǎn"
+      ],
+      "answer": "A",
+      "explanation": "撑船 đọc là chēngchuán, nghĩa là chống thuyền, chèo thuyền. Tham chiếu: PDF bài 4, trang 30.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “小牛” (Xiǎo Niú) có nghĩa là gì?",
+      "options": [
+        "ở đâu, chỗ nào",
+        "Tiểu Lưu, tên nhân vật",
+        "chín",
+        "Tiểu Ngưu, tên nhân vật"
+      ],
+      "answer": "D",
+      "explanation": "小牛 đọc là Xiǎo Niú, nghĩa là Tiểu Ngưu, tên nhân vật. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “Xiǎo Niú” và nghĩa “Tiểu Ngưu, tên nhân vật”.",
+      "options": [
+        "小牛",
+        "超市",
+        "河内",
+        "感谢"
+      ],
+      "answer": "A",
+      "explanation": "小牛 đọc là Xiǎo Niú, nghĩa là Tiểu Ngưu, tên nhân vật. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “小牛” với nghĩa “Tiểu Ngưu, tên nhân vật”.",
+      "options": [
+        "Xiǎo Liú",
+        "Xiǎo Niú",
+        "píng",
+        "wǎnshang"
+      ],
+      "answer": "B",
+      "explanation": "小牛 đọc là Xiǎo Niú, nghĩa là Tiểu Ngưu, tên nhân vật. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “小刘” (Xiǎo Liú) có nghĩa là gì?",
+      "options": [
+        "tàu điện ngầm",
+        "ở đâu",
+        "quảng trường",
+        "Tiểu Lưu, tên nhân vật"
+      ],
+      "answer": "D",
+      "explanation": "小刘 đọc là Xiǎo Liú, nghĩa là Tiểu Lưu, tên nhân vật. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “Xiǎo Liú” và nghĩa “Tiểu Lưu, tên nhân vật”.",
+      "options": [
+        "半夜",
+        "能",
+        "小刘",
+        "公司"
+      ],
+      "answer": "C",
+      "explanation": "小刘 đọc là Xiǎo Liú, nghĩa là Tiểu Lưu, tên nhân vật. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “小刘” với nghĩa “Tiểu Lưu, tên nhân vật”.",
+      "options": [
+        "zǎoshang",
+        "Xiǎo Liú",
+        "guǎngchǎng",
+        "fànguǎnr"
+      ],
+      "answer": "B",
+      "explanation": "小刘 đọc là Xiǎo Liú, nghĩa là Tiểu Lưu, tên nhân vật. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “拍球” (pāi qiú) có nghĩa là gì?",
+      "options": [
+        "Quảng trường Nhân Dân",
+        "Tiểu Lưu, tên nhân vật",
+        "ít",
+        "vỗ bóng, đập bóng"
+      ],
+      "answer": "D",
+      "explanation": "拍球 đọc là pāi qiú, nghĩa là vỗ bóng, đập bóng. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “pāi qiú” và nghĩa “vỗ bóng, đập bóng”.",
+      "options": [
+        "拍球",
+        "步行街",
+        "公共汽车",
+        "撑船"
+      ],
+      "answer": "A",
+      "explanation": "拍球 đọc là pāi qiú, nghĩa là vỗ bóng, đập bóng. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “拍球” với nghĩa “vỗ bóng, đập bóng”.",
+      "options": [
+        "pāi qiú",
+        "jìn",
+        "bú kèqi",
+        "shǎo"
+      ],
+      "answer": "A",
+      "explanation": "拍球 đọc là pāi qiú, nghĩa là vỗ bóng, đập bóng. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “九” (jiǔ) có nghĩa là gì?",
+      "options": [
+        "chín",
+        "Tiểu Ngưu, tên nhân vật",
+        "gần",
+        "tài xế, người lái xe"
+      ],
+      "answer": "A",
+      "explanation": "九 đọc là jiǔ, nghĩa là chín. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “jiǔ” và nghĩa “chín”.",
+      "options": [
+        "早上",
+        "医院",
+        "九",
+        "公安局"
+      ],
+      "answer": "C",
+      "explanation": "九 đọc là jiǔ, nghĩa là chín. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “九” với nghĩa “chín”.",
+      "options": [
+        "shàngwǔ",
+        "zǎixiàng",
+        "dàgài",
+        "jiǔ"
+      ],
+      "answer": "D",
+      "explanation": "九 đọc là jiǔ, nghĩa là chín. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “六” (liù) có nghĩa là gì?",
+      "options": [
+        "sáu",
+        "xe buýt",
+        "người đẹp, cô gái đẹp",
+        "ngồi; đi bằng phương tiện"
+      ],
+      "answer": "A",
+      "explanation": "六 đọc là liù, nghĩa là sáu. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “liù” và nghĩa “sáu”.",
+      "options": [
+        "六",
+        "撑船",
+        "块",
+        "宰相"
+      ],
+      "answer": "A",
+      "explanation": "六 đọc là liù, nghĩa là sáu. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “六” với nghĩa “sáu”.",
+      "options": [
+        "liù",
+        "Bātíng Guǎngchǎng",
+        "xièxie",
+        "bówùguǎn"
+      ],
+      "answer": "A",
+      "explanation": "六 đọc là liù, nghĩa là sáu. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “比” (bǐ) có nghĩa là gì?",
+      "options": [
+        "bác tài, thầy; cách gọi người thợ lành nghề",
+        "ngồi; đi bằng phương tiện",
+        "so với; dùng trong so sánh",
+        "đến, tới; nhấn mạnh điểm đến"
+      ],
+      "answer": "C",
+      "explanation": "比 đọc là bǐ, nghĩa là so với; dùng trong so sánh. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “bǐ” và nghĩa “so với; dùng trong so sánh”.",
+      "options": [
+        "坐",
+        "中午",
+        "机场",
+        "比"
+      ],
+      "answer": "D",
+      "explanation": "比 đọc là bǐ, nghĩa là so với; dùng trong so sánh. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “比” với nghĩa “so với; dùng trong so sánh”.",
+      "options": [
+        "cèsuǒ",
+        "chēngchuán",
+        "dù lǐ",
+        "bǐ"
+      ],
+      "answer": "D",
+      "explanation": "比 đọc là bǐ, nghĩa là so với; dùng trong so sánh. Tham chiếu: PDF bài 4, trang 31.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn câu hỏi “Bạn đi đâu?”.",
+      "options": [
+        "你哪儿去的？",
+        "你去哪儿？",
+        "哪儿你钱？",
+        "你多少去？"
+      ],
+      "answer": "B",
+      "explanation": "Mẫu hỏi điểm đến là 你去哪儿.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Điền từ: 人民广场远___远？",
+      "options": [
+        "没",
+        "吗",
+        "不",
+        "的"
+      ],
+      "answer": "C",
+      "explanation": "Câu hỏi chính phản lặp tính từ: 远不远.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Đổi 你有名片吗？ sang câu hỏi chính phản.",
+      "options": [
+        "你没不有名片？",
+        "你有不有名片？",
+        "你有没有名片？",
+        "你有名片不吗？"
+      ],
+      "answer": "C",
+      "explanation": "有 có dạng chính phản đặc biệt là 有没有.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Chọn cách hỏi giá.",
+      "options": [
+        "哪儿钱？",
+        "什么远？",
+        "谁钱？",
+        "多少钱？"
+      ],
+      "answer": "D",
+      "explanation": "多少 hỏi số lượng, 多少钱 hỏi bao nhiêu tiền.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "“不远，很近。” nghĩa là gì?",
+      "options": [
+        "Đã tới, rất xa.",
+        "Không biết giá.",
+        "Không xa, rất gần.",
+        "Rất xa, không gần."
+      ],
+      "answer": "C",
+      "explanation": "远 là xa, 近 là gần.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Trong bài khóa 2, tiền đi xe là bao nhiêu?",
+      "options": [
+        "39 tệ",
+        "29 tệ",
+        "19 tệ",
+        "9 tệ"
+      ],
+      "answer": "B",
+      "explanation": "Bài khóa ghi 二十九块.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Đáp lại 谢谢 bằng câu nào?",
+      "options": [
+        "不客气。",
+        "不知道。",
+        "我很忙。",
+        "对不起。"
+      ],
+      "answer": "A",
+      "explanation": "不客气 là lời đáp lịch sự khi được cảm ơn.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "“知道了” trong bài thể hiện điều gì?",
+      "options": [
+        "Đang hỏi họ.",
+        "Bây giờ đã biết, đã hiểu.",
+        "Đã ăn no.",
+        "Chưa từng biết."
+      ],
+      "answer": "B",
+      "explanation": "了 biểu thị sự thay đổi sang trạng thái đã biết.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Chọn từ dùng cho chuyển động hướng về người nói.",
+      "options": [
+        "钱",
+        "去",
+        "来",
+        "远"
+      ],
+      "answer": "C",
+      "explanation": "来 là đến về phía người nói, 去 là đi ra xa phía người nói.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Điền từ: 我家___学校很近。",
+      "options": [
+        "再",
+        "到",
+        "离",
+        "多少"
+      ],
+      "answer": "C",
+      "explanation": "Mẫu khoảng cách: A 离 B + tính từ.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Chọn cách đọc số 53.",
+      "options": [
+        "三十五",
+        "五百三",
+        "十五三",
+        "五十三"
+      ],
+      "answer": "D",
+      "explanation": "五十 là năm mươi, thêm 三 thành năm mươi ba.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Chọn cách đọc số 2009.",
+      "options": [
+        "二千零九",
+        "二百九",
+        "二十九",
+        "二千九百"
+      ],
+      "answer": "A",
+      "explanation": "零 biểu thị phần hàng bị khuyết trong số hai nghìn không trăm linh chín.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Chọn câu hỏi chính phản đúng.",
+      "options": [
+        "你是不是中国人？",
+        "你是中国人是不是吗？",
+        "你不中国人是？",
+        "你是不中国人是？"
+      ],
+      "answer": "A",
+      "explanation": "Động từ 是 được lặp thành 是不是.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "“我坐地铁去学校。” nghĩa là gì?",
+      "options": [
+        "Tôi đi máy bay đến trường.",
+        "Tôi ở trường đọc sách.",
+        "Tôi mua vé xem phim.",
+        "Tôi đi tàu điện ngầm đến trường."
+      ],
+      "answer": "D",
+      "explanation": "坐地铁 là đi bằng tàu điện ngầm.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Trong bài vè, 小牛 đánh chín quả, 小刘 đánh sáu quả. 小牛 nhiều hơn mấy quả?",
+      "options": [
+        "Ba quả",
+        "Sáu quả",
+        "Chín quả",
+        "Hai quả"
+      ],
+      "answer": "A",
+      "explanation": "九减六等于三: 9 trừ 6 bằng 3.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Tục ngữ nào nói về việc kịp thời khắc phục sai lầm?",
+      "options": [
+        "你好",
+        "亡羊补牢",
+        "时间就是金钱",
+        "很高兴认识你"
+      ],
+      "answer": "B",
+      "explanation": "亡羊补牢: mất dê mới sửa chuồng, nhấn mạnh sửa sai khi còn kịp.",
+      "difficulty": "Vừa"
+    }
+  ]
+}

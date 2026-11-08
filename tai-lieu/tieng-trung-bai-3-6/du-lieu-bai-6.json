@@ -1,0 +1,4161 @@
+{
+  "lesson": 6,
+  "title": "你在哪儿工作",
+  "vocabulary": [
+    {
+      "hanzi": "在",
+      "pinyin": "zài",
+      "meaning": "ở; đang",
+      "page": 5,
+      "group": "main"
+    },
+    {
+      "hanzi": "工作",
+      "pinyin": "gōngzuò",
+      "meaning": "làm việc; công việc",
+      "page": 6,
+      "group": "main"
+    },
+    {
+      "hanzi": "苹果",
+      "pinyin": "píngguǒ",
+      "meaning": "quả táo",
+      "page": 6,
+      "group": "main"
+    },
+    {
+      "hanzi": "公司",
+      "pinyin": "gōngsī",
+      "meaning": "công ty",
+      "page": 6,
+      "group": "main"
+    },
+    {
+      "hanzi": "留学生",
+      "pinyin": "liúxuéshēng",
+      "meaning": "du học sinh",
+      "page": 10,
+      "group": "main"
+    },
+    {
+      "hanzi": "留学",
+      "pinyin": "liúxué",
+      "meaning": "du học",
+      "page": 10,
+      "group": "main"
+    },
+    {
+      "hanzi": "学",
+      "pinyin": "xué",
+      "meaning": "học",
+      "page": 11,
+      "group": "main"
+    },
+    {
+      "hanzi": "学习",
+      "pinyin": "xuéxí",
+      "meaning": "học, học tập",
+      "page": 11,
+      "group": "main"
+    },
+    {
+      "hanzi": "汉语",
+      "pinyin": "Hànyǔ",
+      "meaning": "tiếng Hán, tiếng Trung",
+      "page": 11,
+      "group": "main"
+    },
+    {
+      "hanzi": "英语",
+      "pinyin": "Yīngyǔ",
+      "meaning": "tiếng Anh",
+      "page": 26,
+      "group": "main"
+    },
+    {
+      "hanzi": "朋友",
+      "pinyin": "péngyou",
+      "meaning": "bạn bè",
+      "page": 25,
+      "group": "main"
+    },
+    {
+      "hanzi": "男朋友",
+      "pinyin": "nán péngyou",
+      "meaning": "bạn trai",
+      "page": 25,
+      "group": "main"
+    },
+    {
+      "hanzi": "女朋友",
+      "pinyin": "nǚ péngyou",
+      "meaning": "bạn gái",
+      "page": 26,
+      "group": "main"
+    },
+    {
+      "hanzi": "对",
+      "pinyin": "duì",
+      "meaning": "đúng",
+      "page": 13,
+      "group": "main"
+    },
+    {
+      "hanzi": "做",
+      "pinyin": "zuò",
+      "meaning": "làm",
+      "page": 7,
+      "group": "main"
+    },
+    {
+      "hanzi": "大学",
+      "pinyin": "dàxué",
+      "meaning": "đại học",
+      "page": 15,
+      "group": "main"
+    },
+    {
+      "hanzi": "中学",
+      "pinyin": "zhōngxué",
+      "meaning": "trung học",
+      "page": 15,
+      "group": "main"
+    },
+    {
+      "hanzi": "教",
+      "pinyin": "jiāo",
+      "meaning": "dạy",
+      "page": 16,
+      "group": "main"
+    },
+    {
+      "hanzi": "海伦",
+      "pinyin": "Hǎilún",
+      "meaning": "Helen, tên nhân vật",
+      "page": 18,
+      "group": "main"
+    },
+    {
+      "hanzi": "马文",
+      "pinyin": "Mǎ Wén",
+      "meaning": "Mã Văn, tên nhân vật",
+      "page": 18,
+      "group": "main"
+    },
+    {
+      "hanzi": "北京",
+      "pinyin": "Běijīng",
+      "meaning": "Bắc Kinh",
+      "page": 18,
+      "group": "main"
+    },
+    {
+      "hanzi": "上海",
+      "pinyin": "Shànghǎi",
+      "meaning": "Thượng Hải",
+      "page": 18,
+      "group": "main"
+    },
+    {
+      "hanzi": "苹果公司",
+      "pinyin": "Píngguǒ Gōngsī",
+      "meaning": "công ty Apple",
+      "page": 18,
+      "group": "main"
+    },
+    {
+      "hanzi": "正在",
+      "pinyin": "zhèngzài",
+      "meaning": "đang; chỉ hành động diễn ra",
+      "page": 5,
+      "group": "extended"
+    },
+    {
+      "hanzi": "正",
+      "pinyin": "zhèng",
+      "meaning": "đang, đúng lúc",
+      "page": 5,
+      "group": "extended"
+    },
+    {
+      "hanzi": "东西",
+      "pinyin": "dōngxi",
+      "meaning": "đồ, đồ vật",
+      "page": 5,
+      "group": "extended"
+    },
+    {
+      "hanzi": "半",
+      "pinyin": "bàn",
+      "meaning": "nửa",
+      "page": 6,
+      "group": "extended"
+    },
+    {
+      "hanzi": "看",
+      "pinyin": "kàn",
+      "meaning": "nhìn, xem, đọc, thăm, khám",
+      "page": 6,
+      "group": "extended"
+    },
+    {
+      "hanzi": "现在",
+      "pinyin": "xiànzài",
+      "meaning": "bây giờ, hiện tại",
+      "page": 6,
+      "group": "extended"
+    },
+    {
+      "hanzi": "份",
+      "pinyin": "fèn",
+      "meaning": "phần, suất; lượng từ",
+      "page": 6,
+      "group": "extended"
+    },
+    {
+      "hanzi": "干",
+      "pinyin": "gàn",
+      "meaning": "làm, làm việc",
+      "page": 7,
+      "group": "extended"
+    },
+    {
+      "hanzi": "当",
+      "pinyin": "dāng",
+      "meaning": "làm, đảm nhiệm một vai trò",
+      "page": 7,
+      "group": "extended"
+    },
+    {
+      "hanzi": "办",
+      "pinyin": "bàn",
+      "meaning": "làm, giải quyết, tổ chức",
+      "page": 7,
+      "group": "extended"
+    },
+    {
+      "hanzi": "弄",
+      "pinyin": "nòng",
+      "meaning": "làm, xử lý",
+      "page": 7,
+      "group": "extended"
+    },
+    {
+      "hanzi": "搞",
+      "pinyin": "gǎo",
+      "meaning": "làm, tiến hành",
+      "page": 7,
+      "group": "extended"
+    },
+    {
+      "hanzi": "手机",
+      "pinyin": "shǒujī",
+      "meaning": "điện thoại di động",
+      "page": 8,
+      "group": "extended"
+    },
+    {
+      "hanzi": "电话",
+      "pinyin": "diànhuà",
+      "meaning": "điện thoại",
+      "page": 8,
+      "group": "extended"
+    },
+    {
+      "hanzi": "打电话",
+      "pinyin": "dǎ diànhuà",
+      "meaning": "gọi điện thoại",
+      "page": 8,
+      "group": "extended"
+    },
+    {
+      "hanzi": "电话号码",
+      "pinyin": "diànhuà hàomǎ",
+      "meaning": "số điện thoại",
+      "page": 8,
+      "group": "extended"
+    },
+    {
+      "hanzi": "电脑",
+      "pinyin": "diànnǎo",
+      "meaning": "máy tính",
+      "page": 9,
+      "group": "extended"
+    },
+    {
+      "hanzi": "笔记本电脑",
+      "pinyin": "bǐjìběn diànnǎo",
+      "meaning": "máy tính xách tay",
+      "page": 9,
+      "group": "extended"
+    },
+    {
+      "hanzi": "手提电脑",
+      "pinyin": "shǒutí diànnǎo",
+      "meaning": "máy tính xách tay, máy tính cầm tay",
+      "page": 9,
+      "group": "extended"
+    },
+    {
+      "hanzi": "电视",
+      "pinyin": "diànshì",
+      "meaning": "truyền hình, tivi",
+      "page": 9,
+      "group": "extended"
+    },
+    {
+      "hanzi": "电视机",
+      "pinyin": "diànshìjī",
+      "meaning": "máy thu hình, tivi",
+      "page": 9,
+      "group": "extended"
+    },
+    {
+      "hanzi": "难",
+      "pinyin": "nán",
+      "meaning": "khó",
+      "page": 11,
+      "group": "extended"
+    },
+    {
+      "hanzi": "容易",
+      "pinyin": "róngyì",
+      "meaning": "dễ",
+      "page": 11,
+      "group": "extended"
+    },
+    {
+      "hanzi": "上课",
+      "pinyin": "shàngkè",
+      "meaning": "vào lớp, học trên lớp",
+      "page": 11,
+      "group": "extended"
+    },
+    {
+      "hanzi": "下课",
+      "pinyin": "xiàkè",
+      "meaning": "tan lớp, hết giờ học",
+      "page": 11,
+      "group": "extended"
+    },
+    {
+      "hanzi": "上班",
+      "pinyin": "shàngbān",
+      "meaning": "đi làm, vào ca",
+      "page": 11,
+      "group": "extended"
+    },
+    {
+      "hanzi": "下班",
+      "pinyin": "xiàbān",
+      "meaning": "tan làm, hết ca",
+      "page": 11,
+      "group": "extended"
+    },
+    {
+      "hanzi": "同学",
+      "pinyin": "tóngxué",
+      "meaning": "bạn học",
+      "page": 12,
+      "group": "extended"
+    },
+    {
+      "hanzi": "同事",
+      "pinyin": "tóngshì",
+      "meaning": "đồng nghiệp",
+      "page": 12,
+      "group": "extended"
+    },
+    {
+      "hanzi": "坏",
+      "pinyin": "huài",
+      "meaning": "xấu, hư, hỏng",
+      "page": 12,
+      "group": "extended"
+    },
+    {
+      "hanzi": "错",
+      "pinyin": "cuò",
+      "meaning": "sai, nhầm",
+      "page": 13,
+      "group": "extended"
+    },
+    {
+      "hanzi": "不错",
+      "pinyin": "bú cuò",
+      "meaning": "khá tốt, không tệ",
+      "page": 13,
+      "group": "extended"
+    },
+    {
+      "hanzi": "没错",
+      "pinyin": "méi cuò",
+      "meaning": "không sai, đúng vậy",
+      "page": 13,
+      "group": "extended"
+    },
+    {
+      "hanzi": "图书馆",
+      "pinyin": "túshūguǎn",
+      "meaning": "thư viện",
+      "page": 13,
+      "group": "extended"
+    },
+    {
+      "hanzi": "教学楼",
+      "pinyin": "jiàoxuélóu",
+      "meaning": "tòa nhà giảng dạy",
+      "page": 13,
+      "group": "extended"
+    },
+    {
+      "hanzi": "漂亮",
+      "pinyin": "piàoliang",
+      "meaning": "đẹp, xinh đẹp",
+      "page": 14,
+      "group": "extended"
+    },
+    {
+      "hanzi": "好看",
+      "pinyin": "hǎokàn",
+      "meaning": "đẹp, ưa nhìn; hay khi nói về phim, sách",
+      "page": 14,
+      "group": "extended"
+    },
+    {
+      "hanzi": "衣服",
+      "pinyin": "yīfu",
+      "meaning": "quần áo",
+      "page": 14,
+      "group": "extended"
+    },
+    {
+      "hanzi": "套",
+      "pinyin": "tào",
+      "meaning": "bộ; lượng từ cho đồ đi thành bộ",
+      "page": 14,
+      "group": "extended"
+    },
+    {
+      "hanzi": "地方",
+      "pinyin": "dìfang",
+      "meaning": "nơi, chỗ",
+      "page": 14,
+      "group": "extended"
+    },
+    {
+      "hanzi": "长城",
+      "pinyin": "Chángchéng",
+      "meaning": "Vạn Lý Trường Thành",
+      "page": 14,
+      "group": "extended"
+    },
+    {
+      "hanzi": "小学",
+      "pinyin": "xiǎoxué",
+      "meaning": "tiểu học",
+      "page": 15,
+      "group": "extended"
+    },
+    {
+      "hanzi": "初中",
+      "pinyin": "chūzhōng",
+      "meaning": "trung học cơ sở, cấp hai",
+      "page": 15,
+      "group": "extended"
+    },
+    {
+      "hanzi": "高中",
+      "pinyin": "gāozhōng",
+      "meaning": "trung học phổ thông, cấp ba",
+      "page": 15,
+      "group": "extended"
+    },
+    {
+      "hanzi": "读",
+      "pinyin": "dú",
+      "meaning": "đọc; học một cấp học",
+      "page": 15,
+      "group": "extended"
+    },
+    {
+      "hanzi": "外语",
+      "pinyin": "wàiyǔ",
+      "meaning": "ngoại ngữ",
+      "page": 16,
+      "group": "extended"
+    },
+    {
+      "hanzi": "听",
+      "pinyin": "tīng",
+      "meaning": "nghe",
+      "page": 16,
+      "group": "extended"
+    },
+    {
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "meaning": "nói",
+      "page": 16,
+      "group": "extended"
+    },
+    {
+      "hanzi": "写",
+      "pinyin": "xiě",
+      "meaning": "viết",
+      "page": 16,
+      "group": "extended"
+    },
+    {
+      "hanzi": "能",
+      "pinyin": "néng",
+      "meaning": "có thể, có khả năng",
+      "page": 17,
+      "group": "extended"
+    },
+    {
+      "hanzi": "可以",
+      "pinyin": "kěyǐ",
+      "meaning": "có thể, được phép",
+      "page": 17,
+      "group": "extended"
+    },
+    {
+      "hanzi": "会",
+      "pinyin": "huì",
+      "meaning": "biết làm; sẽ",
+      "page": 17,
+      "group": "extended"
+    },
+    {
+      "hanzi": "见面",
+      "pinyin": "jiànmiàn",
+      "meaning": "gặp mặt",
+      "page": 20,
+      "group": "extended"
+    },
+    {
+      "hanzi": "睡觉",
+      "pinyin": "shuìjiào",
+      "meaning": "ngủ",
+      "page": 20,
+      "group": "extended"
+    },
+    {
+      "hanzi": "帮忙",
+      "pinyin": "bāngmáng",
+      "meaning": "giúp đỡ",
+      "page": 20,
+      "group": "extended"
+    },
+    {
+      "hanzi": "请假",
+      "pinyin": "qǐngjià",
+      "meaning": "xin nghỉ phép",
+      "page": 20,
+      "group": "extended"
+    },
+    {
+      "hanzi": "结婚",
+      "pinyin": "jiéhūn",
+      "meaning": "kết hôn",
+      "page": 20,
+      "group": "extended"
+    },
+    {
+      "hanzi": "小时",
+      "pinyin": "xiǎoshí",
+      "meaning": "giờ, tiếng đồng hồ",
+      "page": 20,
+      "group": "extended"
+    },
+    {
+      "hanzi": "天",
+      "pinyin": "tiān",
+      "meaning": "ngày",
+      "page": 20,
+      "group": "extended"
+    },
+    {
+      "hanzi": "这儿",
+      "pinyin": "zhèr",
+      "meaning": "ở đây, chỗ này",
+      "page": 24,
+      "group": "extended"
+    },
+    {
+      "hanzi": "英国人",
+      "pinyin": "Yīngguó rén",
+      "meaning": "người Anh",
+      "page": 25,
+      "group": "extended"
+    },
+    {
+      "hanzi": "出租车",
+      "pinyin": "chūzūchē",
+      "meaning": "xe taxi",
+      "page": 28,
+      "group": "extended"
+    },
+    {
+      "hanzi": "西安",
+      "pinyin": "Xī'ān",
+      "meaning": "Tây An",
+      "page": 28,
+      "group": "extended"
+    },
+    {
+      "hanzi": "医生",
+      "pinyin": "yīshēng",
+      "meaning": "bác sĩ",
+      "page": 32,
+      "group": "extended"
+    },
+    {
+      "hanzi": "病人",
+      "pinyin": "bìngrén",
+      "meaning": "bệnh nhân",
+      "page": 32,
+      "group": "extended"
+    },
+    {
+      "hanzi": "忙",
+      "pinyin": "máng",
+      "meaning": "bận",
+      "page": 32,
+      "group": "extended"
+    },
+    {
+      "hanzi": "听不见",
+      "pinyin": "tīng bu jiàn",
+      "meaning": "không nghe thấy",
+      "page": 33,
+      "group": "extended"
+    },
+    {
+      "hanzi": "手机号",
+      "pinyin": "shǒujī hào",
+      "meaning": "số điện thoại di động",
+      "page": 28,
+      "group": "extended"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "Trong bài học, “在” (zài) có nghĩa là gì?",
+      "options": [
+        "tiếng Anh",
+        "ở; đang",
+        "làm, đảm nhiệm một vai trò",
+        "viết"
+      ],
+      "answer": "B",
+      "explanation": "在 đọc là zài, nghĩa là ở; đang. Tham chiếu: PDF bài 6, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “zài” và nghĩa “ở; đang”.",
+      "options": [
+        "留学生",
+        "在",
+        "教学楼",
+        "小学"
+      ],
+      "answer": "B",
+      "explanation": "在 đọc là zài, nghĩa là ở; đang. Tham chiếu: PDF bài 6, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “在” với nghĩa “ở; đang”.",
+      "options": [
+        "zài",
+        "méi cuò",
+        "liúxuéshēng",
+        "xiǎoshí"
+      ],
+      "answer": "A",
+      "explanation": "在 đọc là zài, nghĩa là ở; đang. Tham chiếu: PDF bài 6, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “工作” (gōngzuò) có nghĩa là gì?",
+      "options": [
+        "đẹp, ưa nhìn; hay khi nói về phim, sách",
+        "làm việc; công việc",
+        "làm, đảm nhiệm một vai trò",
+        "phần, suất; lượng từ"
+      ],
+      "answer": "B",
+      "explanation": "工作 đọc là gōngzuò, nghĩa là làm việc; công việc. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “gōngzuò” và nghĩa “làm việc; công việc”.",
+      "options": [
+        "东西",
+        "工作",
+        "上班",
+        "同事"
+      ],
+      "answer": "B",
+      "explanation": "工作 đọc là gōngzuò, nghĩa là làm việc; công việc. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “工作” với nghĩa “làm việc; công việc”.",
+      "options": [
+        "huì",
+        "Yīngguó rén",
+        "gōngzuò",
+        "zhèng"
+      ],
+      "answer": "C",
+      "explanation": "工作 đọc là gōngzuò, nghĩa là làm việc; công việc. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “苹果” (píngguǒ) có nghĩa là gì?",
+      "options": [
+        "ở đây, chỗ này",
+        "quả táo",
+        "khá tốt, không tệ",
+        "người Anh"
+      ],
+      "answer": "B",
+      "explanation": "苹果 đọc là píngguǒ, nghĩa là quả táo. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “píngguǒ” và nghĩa “quả táo”.",
+      "options": [
+        "份",
+        "苹果",
+        "大学",
+        "正"
+      ],
+      "answer": "B",
+      "explanation": "苹果 đọc là píngguǒ, nghĩa là quả táo. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “苹果” với nghĩa “quả táo”.",
+      "options": [
+        "píngguǒ",
+        "nán",
+        "tīng bu jiàn",
+        "Yīngguó rén"
+      ],
+      "answer": "A",
+      "explanation": "苹果 đọc là píngguǒ, nghĩa là quả táo. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “公司” (gōngsī) có nghĩa là gì?",
+      "options": [
+        "đang; chỉ hành động diễn ra",
+        "tan làm, hết ca",
+        "công ty",
+        "Bắc Kinh"
+      ],
+      "answer": "C",
+      "explanation": "公司 đọc là gōngsī, nghĩa là công ty. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “gōngsī” và nghĩa “công ty”.",
+      "options": [
+        "公司",
+        "汉语",
+        "正",
+        "北京"
+      ],
+      "answer": "A",
+      "explanation": "公司 đọc là gōngsī, nghĩa là công ty. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “公司” với nghĩa “công ty”.",
+      "options": [
+        "gōngsī",
+        "huài",
+        "jiéhūn",
+        "xiàkè"
+      ],
+      "answer": "A",
+      "explanation": "公司 đọc là gōngsī, nghĩa là công ty. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “留学生” (liúxuéshēng) có nghĩa là gì?",
+      "options": [
+        "du học sinh",
+        "tan lớp, hết giờ học",
+        "ngoại ngữ",
+        "xin nghỉ phép"
+      ],
+      "answer": "A",
+      "explanation": "留学生 đọc là liúxuéshēng, nghĩa là du học sinh. Tham chiếu: PDF bài 6, trang 10.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “liúxuéshēng” và nghĩa “du học sinh”.",
+      "options": [
+        "小学",
+        "北京",
+        "电视",
+        "留学生"
+      ],
+      "answer": "D",
+      "explanation": "留学生 đọc là liúxuéshēng, nghĩa là du học sinh. Tham chiếu: PDF bài 6, trang 10.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “留学生” với nghĩa “du học sinh”.",
+      "options": [
+        "wàiyǔ",
+        "liúxuéshēng",
+        "nòng",
+        "piàoliang"
+      ],
+      "answer": "B",
+      "explanation": "留学生 đọc là liúxuéshēng, nghĩa là du học sinh. Tham chiếu: PDF bài 6, trang 10.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “留学” (liúxué) có nghĩa là gì?",
+      "options": [
+        "xin nghỉ phép",
+        "du học",
+        "có thể, được phép",
+        "tiểu học"
+      ],
+      "answer": "B",
+      "explanation": "留学 đọc là liúxué, nghĩa là du học. Tham chiếu: PDF bài 6, trang 10.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “liúxué” và nghĩa “du học”.",
+      "options": [
+        "公司",
+        "留学",
+        "西安",
+        "手机号"
+      ],
+      "answer": "B",
+      "explanation": "留学 đọc là liúxué, nghĩa là du học. Tham chiếu: PDF bài 6, trang 10.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “留学” với nghĩa “du học”.",
+      "options": [
+        "liúxué",
+        "túshūguǎn",
+        "máng",
+        "jiàoxuélóu"
+      ],
+      "answer": "A",
+      "explanation": "留学 đọc là liúxué, nghĩa là du học. Tham chiếu: PDF bài 6, trang 10.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “学” (xué) có nghĩa là gì?",
+      "options": [
+        "đi làm, vào ca",
+        "dễ",
+        "học",
+        "nghe"
+      ],
+      "answer": "C",
+      "explanation": "学 đọc là xué, nghĩa là học. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “xué” và nghĩa “học”.",
+      "options": [
+        "正在",
+        "学",
+        "坏",
+        "西安"
+      ],
+      "answer": "B",
+      "explanation": "学 đọc là xué, nghĩa là học. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “学” với nghĩa “học”.",
+      "options": [
+        "piàoliang",
+        "xué",
+        "dāng",
+        "zhōngxué"
+      ],
+      "answer": "B",
+      "explanation": "学 đọc là xué, nghĩa là học. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “学习” (xuéxí) có nghĩa là gì?",
+      "options": [
+        "học, học tập",
+        "công ty Apple",
+        "kết hôn",
+        "trung học phổ thông, cấp ba"
+      ],
+      "answer": "A",
+      "explanation": "学习 đọc là xuéxí, nghĩa là học, học tập. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “xuéxí” và nghĩa “học, học tập”.",
+      "options": [
+        "朋友",
+        "漂亮",
+        "英国人",
+        "学习"
+      ],
+      "answer": "D",
+      "explanation": "学习 đọc là xuéxí, nghĩa là học, học tập. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “学习” với nghĩa “học, học tập”.",
+      "options": [
+        "shàngbān",
+        "piàoliang",
+        "xuéxí",
+        "zuò"
+      ],
+      "answer": "C",
+      "explanation": "学习 đọc là xuéxí, nghĩa là học, học tập. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “汉语” (Hànyǔ) có nghĩa là gì?",
+      "options": [
+        "Mã Văn, tên nhân vật",
+        "Tây An",
+        "điện thoại di động",
+        "tiếng Hán, tiếng Trung"
+      ],
+      "answer": "D",
+      "explanation": "汉语 đọc là Hànyǔ, nghĩa là tiếng Hán, tiếng Trung. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “Hànyǔ” và nghĩa “tiếng Hán, tiếng Trung”.",
+      "options": [
+        "汉语",
+        "漂亮",
+        "笔记本电脑",
+        "天"
+      ],
+      "answer": "A",
+      "explanation": "汉语 đọc là Hànyǔ, nghĩa là tiếng Hán, tiếng Trung. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “汉语” với nghĩa “tiếng Hán, tiếng Trung”.",
+      "options": [
+        "jiànmiàn",
+        "kěyǐ",
+        "Hànyǔ",
+        "nǚ péngyou"
+      ],
+      "answer": "C",
+      "explanation": "汉语 đọc là Hànyǔ, nghĩa là tiếng Hán, tiếng Trung. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “英语” (Yīngyǔ) có nghĩa là gì?",
+      "options": [
+        "số điện thoại",
+        "tiếng Anh",
+        "du học",
+        "đi làm, vào ca"
+      ],
+      "answer": "B",
+      "explanation": "英语 đọc là Yīngyǔ, nghĩa là tiếng Anh. Tham chiếu: PDF bài 6, trang 26.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “Yīngyǔ” và nghĩa “tiếng Anh”.",
+      "options": [
+        "可以",
+        "手机",
+        "英语",
+        "高中"
+      ],
+      "answer": "C",
+      "explanation": "英语 đọc là Yīngyǔ, nghĩa là tiếng Anh. Tham chiếu: PDF bài 6, trang 26.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “英语” với nghĩa “tiếng Anh”.",
+      "options": [
+        "zhèngzài",
+        "zhèng",
+        "Yīngyǔ",
+        "tóngxué"
+      ],
+      "answer": "C",
+      "explanation": "英语 đọc là Yīngyǔ, nghĩa là tiếng Anh. Tham chiếu: PDF bài 6, trang 26.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “朋友” (péngyou) có nghĩa là gì?",
+      "options": [
+        "ở đây, chỗ này",
+        "xấu, hư, hỏng",
+        "công ty",
+        "bạn bè"
+      ],
+      "answer": "D",
+      "explanation": "朋友 đọc là péngyou, nghĩa là bạn bè. Tham chiếu: PDF bài 6, trang 25.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “péngyou” và nghĩa “bạn bè”.",
+      "options": [
+        "朋友",
+        "留学生",
+        "看",
+        "电脑"
+      ],
+      "answer": "A",
+      "explanation": "朋友 đọc là péngyou, nghĩa là bạn bè. Tham chiếu: PDF bài 6, trang 25.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “朋友” với nghĩa “bạn bè”.",
+      "options": [
+        "liúxuéshēng",
+        "péngyou",
+        "bìngrén",
+        "tīng"
+      ],
+      "answer": "B",
+      "explanation": "朋友 đọc là péngyou, nghĩa là bạn bè. Tham chiếu: PDF bài 6, trang 25.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “男朋友” (nán péngyou) có nghĩa là gì?",
+      "options": [
+        "bạn trai",
+        "điện thoại",
+        "đi làm, vào ca",
+        "sai, nhầm"
+      ],
+      "answer": "A",
+      "explanation": "男朋友 đọc là nán péngyou, nghĩa là bạn trai. Tham chiếu: PDF bài 6, trang 25.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “nán péngyou” và nghĩa “bạn trai”.",
+      "options": [
+        "会",
+        "男朋友",
+        "天",
+        "小时"
+      ],
+      "answer": "B",
+      "explanation": "男朋友 đọc là nán péngyou, nghĩa là bạn trai. Tham chiếu: PDF bài 6, trang 25.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “男朋友” với nghĩa “bạn trai”.",
+      "options": [
+        "Chángchéng",
+        "nán péngyou",
+        "bǐjìběn diànnǎo",
+        "wàiyǔ"
+      ],
+      "answer": "B",
+      "explanation": "男朋友 đọc là nán péngyou, nghĩa là bạn trai. Tham chiếu: PDF bài 6, trang 25.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “女朋友” (nǚ péngyou) có nghĩa là gì?",
+      "options": [
+        "đẹp, ưa nhìn; hay khi nói về phim, sách",
+        "không sai, đúng vậy",
+        "khá tốt, không tệ",
+        "bạn gái"
+      ],
+      "answer": "D",
+      "explanation": "女朋友 đọc là nǚ péngyou, nghĩa là bạn gái. Tham chiếu: PDF bài 6, trang 26.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “nǚ péngyou” và nghĩa “bạn gái”.",
+      "options": [
+        "女朋友",
+        "天",
+        "可以",
+        "病人"
+      ],
+      "answer": "A",
+      "explanation": "女朋友 đọc là nǚ péngyou, nghĩa là bạn gái. Tham chiếu: PDF bài 6, trang 26.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “女朋友” với nghĩa “bạn gái”.",
+      "options": [
+        "xiǎoshí",
+        "liúxué",
+        "zài",
+        "nǚ péngyou"
+      ],
+      "answer": "D",
+      "explanation": "女朋友 đọc là nǚ péngyou, nghĩa là bạn gái. Tham chiếu: PDF bài 6, trang 26.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “对” (duì) có nghĩa là gì?",
+      "options": [
+        "giờ, tiếng đồng hồ",
+        "quần áo",
+        "đúng",
+        "tiếng Anh"
+      ],
+      "answer": "C",
+      "explanation": "对 đọc là duì, nghĩa là đúng. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “duì” và nghĩa “đúng”.",
+      "options": [
+        "公司",
+        "份",
+        "对",
+        "女朋友"
+      ],
+      "answer": "C",
+      "explanation": "对 đọc là duì, nghĩa là đúng. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “对” với nghĩa “đúng”.",
+      "options": [
+        "duì",
+        "shuō",
+        "zhōngxué",
+        "shǒutí diànnǎo"
+      ],
+      "answer": "A",
+      "explanation": "对 đọc là duì, nghĩa là đúng. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “做” (zuò) có nghĩa là gì?",
+      "options": [
+        "Thượng Hải",
+        "làm, tiến hành",
+        "bạn học",
+        "làm"
+      ],
+      "answer": "D",
+      "explanation": "做 đọc là zuò, nghĩa là làm. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “zuò” và nghĩa “làm”.",
+      "options": [
+        "做",
+        "衣服",
+        "大学",
+        "在"
+      ],
+      "answer": "A",
+      "explanation": "做 đọc là zuò, nghĩa là làm. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “做” với nghĩa “làm”.",
+      "options": [
+        "zuò",
+        "tīng bu jiàn",
+        "diànshì",
+        "Hànyǔ"
+      ],
+      "answer": "A",
+      "explanation": "做 đọc là zuò, nghĩa là làm. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “大学” (dàxué) có nghĩa là gì?",
+      "options": [
+        "máy tính",
+        "kết hôn",
+        "đại học",
+        "bộ; lượng từ cho đồ đi thành bộ"
+      ],
+      "answer": "C",
+      "explanation": "大学 đọc là dàxué, nghĩa là đại học. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “dàxué” và nghĩa “đại học”.",
+      "options": [
+        "弄",
+        "苹果",
+        "干",
+        "大学"
+      ],
+      "answer": "D",
+      "explanation": "大学 đọc là dàxué, nghĩa là đại học. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “大学” với nghĩa “đại học”.",
+      "options": [
+        "shǒujī",
+        "chūzūchē",
+        "dàxué",
+        "Yīngyǔ"
+      ],
+      "answer": "C",
+      "explanation": "大学 đọc là dàxué, nghĩa là đại học. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “中学” (zhōngxué) có nghĩa là gì?",
+      "options": [
+        "máy tính xách tay, máy tính cầm tay",
+        "nửa",
+        "sai, nhầm",
+        "trung học"
+      ],
+      "answer": "D",
+      "explanation": "中学 đọc là zhōngxué, nghĩa là trung học. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “zhōngxué” và nghĩa “trung học”.",
+      "options": [
+        "高中",
+        "同学",
+        "中学",
+        "初中"
+      ],
+      "answer": "C",
+      "explanation": "中学 đọc là zhōngxué, nghĩa là trung học. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “中学” với nghĩa “trung học”.",
+      "options": [
+        "shǒutí diànnǎo",
+        "nòng",
+        "zhōngxué",
+        "nán péngyou"
+      ],
+      "answer": "C",
+      "explanation": "中学 đọc là zhōngxué, nghĩa là trung học. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “教” (jiāo) có nghĩa là gì?",
+      "options": [
+        "dạy",
+        "xấu, hư, hỏng",
+        "bạn gái",
+        "bạn bè"
+      ],
+      "answer": "A",
+      "explanation": "教 đọc là jiāo, nghĩa là dạy. Tham chiếu: PDF bài 6, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “jiāo” và nghĩa “dạy”.",
+      "options": [
+        "手提电脑",
+        "教",
+        "忙",
+        "睡觉"
+      ],
+      "answer": "B",
+      "explanation": "教 đọc là jiāo, nghĩa là dạy. Tham chiếu: PDF bài 6, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “教” với nghĩa “dạy”.",
+      "options": [
+        "qǐngjià",
+        "jiāo",
+        "shàngkè",
+        "xiǎoshí"
+      ],
+      "answer": "B",
+      "explanation": "教 đọc là jiāo, nghĩa là dạy. Tham chiếu: PDF bài 6, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “海伦” (Hǎilún) có nghĩa là gì?",
+      "options": [
+        "Helen, tên nhân vật",
+        "đọc; học một cấp học",
+        "tòa nhà giảng dạy",
+        "khó"
+      ],
+      "answer": "A",
+      "explanation": "海伦 đọc là Hǎilún, nghĩa là Helen, tên nhân vật. Tham chiếu: PDF bài 6, trang 18.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “Hǎilún” và nghĩa “Helen, tên nhân vật”.",
+      "options": [
+        "海伦",
+        "电脑",
+        "天",
+        "打电话"
+      ],
+      "answer": "A",
+      "explanation": "海伦 đọc là Hǎilún, nghĩa là Helen, tên nhân vật. Tham chiếu: PDF bài 6, trang 18.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “海伦” với nghĩa “Helen, tên nhân vật”.",
+      "options": [
+        "tóngshì",
+        "yīshēng",
+        "Hǎilún",
+        "Yīngguó rén"
+      ],
+      "answer": "C",
+      "explanation": "海伦 đọc là Hǎilún, nghĩa là Helen, tên nhân vật. Tham chiếu: PDF bài 6, trang 18.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “马文” (Mǎ Wén) có nghĩa là gì?",
+      "options": [
+        "công ty Apple",
+        "đọc; học một cấp học",
+        "làm",
+        "Mã Văn, tên nhân vật"
+      ],
+      "answer": "D",
+      "explanation": "马文 đọc là Mǎ Wén, nghĩa là Mã Văn, tên nhân vật. Tham chiếu: PDF bài 6, trang 18.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “Mǎ Wén” và nghĩa “Mã Văn, tên nhân vật”.",
+      "options": [
+        "医生",
+        "办",
+        "同事",
+        "马文"
+      ],
+      "answer": "D",
+      "explanation": "马文 đọc là Mǎ Wén, nghĩa là Mã Văn, tên nhân vật. Tham chiếu: PDF bài 6, trang 18.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “马文” với nghĩa “Mã Văn, tên nhân vật”.",
+      "options": [
+        "liúxué",
+        "xiàbān",
+        "Mǎ Wén",
+        "shǒujī"
+      ],
+      "answer": "C",
+      "explanation": "马文 đọc là Mǎ Wén, nghĩa là Mã Văn, tên nhân vật. Tham chiếu: PDF bài 6, trang 18.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “北京” (Běijīng) có nghĩa là gì?",
+      "options": [
+        "ngoại ngữ",
+        "Bắc Kinh",
+        "bệnh nhân",
+        "xin nghỉ phép"
+      ],
+      "answer": "B",
+      "explanation": "北京 đọc là Běijīng, nghĩa là Bắc Kinh. Tham chiếu: PDF bài 6, trang 18.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “Běijīng” và nghĩa “Bắc Kinh”.",
+      "options": [
+        "北京",
+        "公司",
+        "帮忙",
+        "苹果公司"
+      ],
+      "answer": "A",
+      "explanation": "北京 đọc là Běijīng, nghĩa là Bắc Kinh. Tham chiếu: PDF bài 6, trang 18.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “北京” với nghĩa “Bắc Kinh”.",
+      "options": [
+        "Běijīng",
+        "kěyǐ",
+        "jiàoxuélóu",
+        "bǐjìběn diànnǎo"
+      ],
+      "answer": "A",
+      "explanation": "北京 đọc là Běijīng, nghĩa là Bắc Kinh. Tham chiếu: PDF bài 6, trang 18.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “上海” (Shànghǎi) có nghĩa là gì?",
+      "options": [
+        "đẹp, xinh đẹp",
+        "học",
+        "Thượng Hải",
+        "công ty Apple"
+      ],
+      "answer": "C",
+      "explanation": "上海 đọc là Shànghǎi, nghĩa là Thượng Hải. Tham chiếu: PDF bài 6, trang 18.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “Shànghǎi” và nghĩa “Thượng Hải”.",
+      "options": [
+        "手提电脑",
+        "教学楼",
+        "上海",
+        "公司"
+      ],
+      "answer": "C",
+      "explanation": "上海 đọc là Shànghǎi, nghĩa là Thượng Hải. Tham chiếu: PDF bài 6, trang 18.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “上海” với nghĩa “Thượng Hải”.",
+      "options": [
+        "xuéxí",
+        "zhèr",
+        "Píngguǒ Gōngsī",
+        "Shànghǎi"
+      ],
+      "answer": "D",
+      "explanation": "上海 đọc là Shànghǎi, nghĩa là Thượng Hải. Tham chiếu: PDF bài 6, trang 18.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “苹果公司” (Píngguǒ Gōngsī) có nghĩa là gì?",
+      "options": [
+        "công ty Apple",
+        "phần, suất; lượng từ",
+        "xấu, hư, hỏng",
+        "người Anh"
+      ],
+      "answer": "A",
+      "explanation": "苹果公司 đọc là Píngguǒ Gōngsī, nghĩa là công ty Apple. Tham chiếu: PDF bài 6, trang 18.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “Píngguǒ Gōngsī” và nghĩa “công ty Apple”.",
+      "options": [
+        "苹果公司",
+        "坏",
+        "上课",
+        "学"
+      ],
+      "answer": "A",
+      "explanation": "苹果公司 đọc là Píngguǒ Gōngsī, nghĩa là công ty Apple. Tham chiếu: PDF bài 6, trang 18.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “苹果公司” với nghĩa “công ty Apple”.",
+      "options": [
+        "shǒujī",
+        "zhèng",
+        "Píngguǒ Gōngsī",
+        "jiéhūn"
+      ],
+      "answer": "C",
+      "explanation": "苹果公司 đọc là Píngguǒ Gōngsī, nghĩa là công ty Apple. Tham chiếu: PDF bài 6, trang 18.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “正在” (zhèngzài) có nghĩa là gì?",
+      "options": [
+        "đang; chỉ hành động diễn ra",
+        "đại học",
+        "bạn học",
+        "ngoại ngữ"
+      ],
+      "answer": "A",
+      "explanation": "正在 đọc là zhèngzài, nghĩa là đang; chỉ hành động diễn ra. Tham chiếu: PDF bài 6, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “zhèngzài” và nghĩa “đang; chỉ hành động diễn ra”.",
+      "options": [
+        "上海",
+        "做",
+        "正在",
+        "地方"
+      ],
+      "answer": "C",
+      "explanation": "正在 đọc là zhèngzài, nghĩa là đang; chỉ hành động diễn ra. Tham chiếu: PDF bài 6, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “正在” với nghĩa “đang; chỉ hành động diễn ra”.",
+      "options": [
+        "zhèngzài",
+        "píngguǒ",
+        "Yīngyǔ",
+        "Shànghǎi"
+      ],
+      "answer": "A",
+      "explanation": "正在 đọc là zhèngzài, nghĩa là đang; chỉ hành động diễn ra. Tham chiếu: PDF bài 6, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “正” (zhèng) có nghĩa là gì?",
+      "options": [
+        "đang, đúng lúc",
+        "Helen, tên nhân vật",
+        "Tây An",
+        "nửa"
+      ],
+      "answer": "A",
+      "explanation": "正 đọc là zhèng, nghĩa là đang, đúng lúc. Tham chiếu: PDF bài 6, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “zhèng” và nghĩa “đang, đúng lúc”.",
+      "options": [
+        "听",
+        "手机",
+        "笔记本电脑",
+        "正"
+      ],
+      "answer": "D",
+      "explanation": "正 đọc là zhèng, nghĩa là đang, đúng lúc. Tham chiếu: PDF bài 6, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “正” với nghĩa “đang, đúng lúc”.",
+      "options": [
+        "tóngshì",
+        "shǒutí diànnǎo",
+        "zhèng",
+        "dāng"
+      ],
+      "answer": "C",
+      "explanation": "正 đọc là zhèng, nghĩa là đang, đúng lúc. Tham chiếu: PDF bài 6, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “东西” (dōngxi) có nghĩa là gì?",
+      "options": [
+        "làm, làm việc",
+        "ngoại ngữ",
+        "ở đây, chỗ này",
+        "đồ, đồ vật"
+      ],
+      "answer": "D",
+      "explanation": "东西 đọc là dōngxi, nghĩa là đồ, đồ vật. Tham chiếu: PDF bài 6, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “dōngxi” và nghĩa “đồ, đồ vật”.",
+      "options": [
+        "东西",
+        "汉语",
+        "容易",
+        "西安"
+      ],
+      "answer": "A",
+      "explanation": "东西 đọc là dōngxi, nghĩa là đồ, đồ vật. Tham chiếu: PDF bài 6, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “东西” với nghĩa “đồ, đồ vật”.",
+      "options": [
+        "néng",
+        "dōngxi",
+        "xué",
+        "xiàbān"
+      ],
+      "answer": "B",
+      "explanation": "东西 đọc là dōngxi, nghĩa là đồ, đồ vật. Tham chiếu: PDF bài 6, trang 5.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “半” (bàn) có nghĩa là gì?",
+      "options": [
+        "viết",
+        "nửa",
+        "máy tính",
+        "bạn trai"
+      ],
+      "answer": "B",
+      "explanation": "半 đọc là bàn, nghĩa là nửa. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “bàn” và nghĩa “nửa”.",
+      "options": [
+        "下课",
+        "半",
+        "小时",
+        "教"
+      ],
+      "answer": "B",
+      "explanation": "半 đọc là bàn, nghĩa là nửa. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “半” với nghĩa “nửa”.",
+      "options": [
+        "bàn",
+        "shǒutí diànnǎo",
+        "xiǎoxué",
+        "nán péngyou"
+      ],
+      "answer": "A",
+      "explanation": "半 đọc là bàn, nghĩa là nửa. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “看” (kàn) có nghĩa là gì?",
+      "options": [
+        "nhìn, xem, đọc, thăm, khám",
+        "Bắc Kinh",
+        "làm, đảm nhiệm một vai trò",
+        "dễ"
+      ],
+      "answer": "A",
+      "explanation": "看 đọc là kàn, nghĩa là nhìn, xem, đọc, thăm, khám. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “kàn” và nghĩa “nhìn, xem, đọc, thăm, khám”.",
+      "options": [
+        "请假",
+        "看",
+        "海伦",
+        "北京"
+      ],
+      "answer": "B",
+      "explanation": "看 đọc là kàn, nghĩa là nhìn, xem, đọc, thăm, khám. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “看” với nghĩa “nhìn, xem, đọc, thăm, khám”.",
+      "options": [
+        "kàn",
+        "shǒutí diànnǎo",
+        "kěyǐ",
+        "yīfu"
+      ],
+      "answer": "A",
+      "explanation": "看 đọc là kàn, nghĩa là nhìn, xem, đọc, thăm, khám. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “现在” (xiànzài) có nghĩa là gì?",
+      "options": [
+        "Vạn Lý Trường Thành",
+        "gọi điện thoại",
+        "máy tính",
+        "bây giờ, hiện tại"
+      ],
+      "answer": "D",
+      "explanation": "现在 đọc là xiànzài, nghĩa là bây giờ, hiện tại. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “xiànzài” và nghĩa “bây giờ, hiện tại”.",
+      "options": [
+        "现在",
+        "电脑",
+        "干",
+        "高中"
+      ],
+      "answer": "A",
+      "explanation": "现在 đọc là xiànzài, nghĩa là bây giờ, hiện tại. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “现在” với nghĩa “bây giờ, hiện tại”.",
+      "options": [
+        "xiànzài",
+        "bāngmáng",
+        "Píngguǒ Gōngsī",
+        "xiǎoshí"
+      ],
+      "answer": "A",
+      "explanation": "现在 đọc là xiànzài, nghĩa là bây giờ, hiện tại. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “份” (fèn) có nghĩa là gì?",
+      "options": [
+        "tòa nhà giảng dạy",
+        "ở; đang",
+        "phần, suất; lượng từ",
+        "bạn gái"
+      ],
+      "answer": "C",
+      "explanation": "份 đọc là fèn, nghĩa là phần, suất; lượng từ. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “fèn” và nghĩa “phần, suất; lượng từ”.",
+      "options": [
+        "不错",
+        "手机号",
+        "同学",
+        "份"
+      ],
+      "answer": "D",
+      "explanation": "份 đọc là fèn, nghĩa là phần, suất; lượng từ. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “份” với nghĩa “phần, suất; lượng từ”.",
+      "options": [
+        "jiàoxuélóu",
+        "bú cuò",
+        "méi cuò",
+        "fèn"
+      ],
+      "answer": "D",
+      "explanation": "份 đọc là fèn, nghĩa là phần, suất; lượng từ. Tham chiếu: PDF bài 6, trang 6.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “干” (gàn) có nghĩa là gì?",
+      "options": [
+        "khá tốt, không tệ",
+        "tòa nhà giảng dạy",
+        "làm, làm việc",
+        "quả táo"
+      ],
+      "answer": "C",
+      "explanation": "干 đọc là gàn, nghĩa là làm, làm việc. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “gàn” và nghĩa “làm, làm việc”.",
+      "options": [
+        "干",
+        "读",
+        "高中",
+        "难"
+      ],
+      "answer": "A",
+      "explanation": "干 đọc là gàn, nghĩa là làm, làm việc. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “干” với nghĩa “làm, làm việc”.",
+      "options": [
+        "píngguǒ",
+        "gàn",
+        "xué",
+        "dàxué"
+      ],
+      "answer": "B",
+      "explanation": "干 đọc là gàn, nghĩa là làm, làm việc. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “当” (dāng) có nghĩa là gì?",
+      "options": [
+        "làm, đảm nhiệm một vai trò",
+        "máy tính xách tay, máy tính cầm tay",
+        "ngoại ngữ",
+        "gặp mặt"
+      ],
+      "answer": "A",
+      "explanation": "当 đọc là dāng, nghĩa là làm, đảm nhiệm một vai trò. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “dāng” và nghĩa “làm, đảm nhiệm một vai trò”.",
+      "options": [
+        "当",
+        "中学",
+        "同事",
+        "女朋友"
+      ],
+      "answer": "A",
+      "explanation": "当 đọc là dāng, nghĩa là làm, đảm nhiệm một vai trò. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “当” với nghĩa “làm, đảm nhiệm một vai trò”.",
+      "options": [
+        "dāng",
+        "xiǎoxué",
+        "zuò",
+        "diànshìjī"
+      ],
+      "answer": "A",
+      "explanation": "当 đọc là dāng, nghĩa là làm, đảm nhiệm một vai trò. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “办” (bàn) có nghĩa là gì?",
+      "options": [
+        "truyền hình, tivi",
+        "xin nghỉ phép",
+        "du học",
+        "làm, giải quyết, tổ chức"
+      ],
+      "answer": "D",
+      "explanation": "办 đọc là bàn, nghĩa là làm, giải quyết, tổ chức. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “bàn” và nghĩa “làm, giải quyết, tổ chức”.",
+      "options": [
+        "办",
+        "现在",
+        "上班",
+        "西安"
+      ],
+      "answer": "A",
+      "explanation": "办 đọc là bàn, nghĩa là làm, giải quyết, tổ chức. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “办” với nghĩa “làm, giải quyết, tổ chức”.",
+      "options": [
+        "diànhuà",
+        "dìfang",
+        "bǐjìběn diànnǎo",
+        "bàn"
+      ],
+      "answer": "D",
+      "explanation": "办 đọc là bàn, nghĩa là làm, giải quyết, tổ chức. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “弄” (nòng) có nghĩa là gì?",
+      "options": [
+        "truyền hình, tivi",
+        "làm, xử lý",
+        "số điện thoại",
+        "gọi điện thoại"
+      ],
+      "answer": "B",
+      "explanation": "弄 đọc là nòng, nghĩa là làm, xử lý. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “nòng” và nghĩa “làm, xử lý”.",
+      "options": [
+        "海伦",
+        "中学",
+        "弄",
+        "东西"
+      ],
+      "answer": "C",
+      "explanation": "弄 đọc là nòng, nghĩa là làm, xử lý. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “弄” với nghĩa “làm, xử lý”.",
+      "options": [
+        "nòng",
+        "zhèr",
+        "chūzhōng",
+        "dǎ diànhuà"
+      ],
+      "answer": "A",
+      "explanation": "弄 đọc là nòng, nghĩa là làm, xử lý. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “搞” (gǎo) có nghĩa là gì?",
+      "options": [
+        "làm, tiến hành",
+        "vào lớp, học trên lớp",
+        "đẹp, ưa nhìn; hay khi nói về phim, sách",
+        "đúng"
+      ],
+      "answer": "A",
+      "explanation": "搞 đọc là gǎo, nghĩa là làm, tiến hành. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “gǎo” và nghĩa “làm, tiến hành”.",
+      "options": [
+        "睡觉",
+        "不错",
+        "图书馆",
+        "搞"
+      ],
+      "answer": "D",
+      "explanation": "搞 đọc là gǎo, nghĩa là làm, tiến hành. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “搞” với nghĩa “làm, tiến hành”.",
+      "options": [
+        "zhèr",
+        "gǎo",
+        "xiànzài",
+        "hǎokàn"
+      ],
+      "answer": "B",
+      "explanation": "搞 đọc là gǎo, nghĩa là làm, tiến hành. Tham chiếu: PDF bài 6, trang 7.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “手机” (shǒujī) có nghĩa là gì?",
+      "options": [
+        "người Anh",
+        "Thượng Hải",
+        "truyền hình, tivi",
+        "điện thoại di động"
+      ],
+      "answer": "D",
+      "explanation": "手机 đọc là shǒujī, nghĩa là điện thoại di động. Tham chiếu: PDF bài 6, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “shǒujī” và nghĩa “điện thoại di động”.",
+      "options": [
+        "手机",
+        "同事",
+        "办",
+        "份"
+      ],
+      "answer": "A",
+      "explanation": "手机 đọc là shǒujī, nghĩa là điện thoại di động. Tham chiếu: PDF bài 6, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “手机” với nghĩa “điện thoại di động”.",
+      "options": [
+        "shǒujī",
+        "liúxuéshēng",
+        "diànnǎo",
+        "péngyou"
+      ],
+      "answer": "A",
+      "explanation": "手机 đọc là shǒujī, nghĩa là điện thoại di động. Tham chiếu: PDF bài 6, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “电话” (diànhuà) có nghĩa là gì?",
+      "options": [
+        "máy tính xách tay",
+        "điện thoại",
+        "vào lớp, học trên lớp",
+        "Tây An"
+      ],
+      "answer": "B",
+      "explanation": "电话 đọc là diànhuà, nghĩa là điện thoại. Tham chiếu: PDF bài 6, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “diànhuà” và nghĩa “điện thoại”.",
+      "options": [
+        "教学楼",
+        "份",
+        "这儿",
+        "电话"
+      ],
+      "answer": "D",
+      "explanation": "电话 đọc là diànhuà, nghĩa là điện thoại. Tham chiếu: PDF bài 6, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “电话” với nghĩa “điện thoại”.",
+      "options": [
+        "diànhuà",
+        "bàn",
+        "dāng",
+        "tīng"
+      ],
+      "answer": "A",
+      "explanation": "电话 đọc là diànhuà, nghĩa là điện thoại. Tham chiếu: PDF bài 6, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “打电话” (dǎ diànhuà) có nghĩa là gì?",
+      "options": [
+        "đẹp, xinh đẹp",
+        "máy tính xách tay, máy tính cầm tay",
+        "gọi điện thoại",
+        "làm, xử lý"
+      ],
+      "answer": "C",
+      "explanation": "打电话 đọc là dǎ diànhuà, nghĩa là gọi điện thoại. Tham chiếu: PDF bài 6, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “dǎ diànhuà” và nghĩa “gọi điện thoại”.",
+      "options": [
+        "难",
+        "结婚",
+        "海伦",
+        "打电话"
+      ],
+      "answer": "D",
+      "explanation": "打电话 đọc là dǎ diànhuà, nghĩa là gọi điện thoại. Tham chiếu: PDF bài 6, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “打电话” với nghĩa “gọi điện thoại”.",
+      "options": [
+        "dǎ diànhuà",
+        "nán péngyou",
+        "yīshēng",
+        "máng"
+      ],
+      "answer": "A",
+      "explanation": "打电话 đọc là dǎ diànhuà, nghĩa là gọi điện thoại. Tham chiếu: PDF bài 6, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “电话号码” (diànhuà hàomǎ) có nghĩa là gì?",
+      "options": [
+        "đồng nghiệp",
+        "số điện thoại",
+        "viết",
+        "đang, đúng lúc"
+      ],
+      "answer": "B",
+      "explanation": "电话号码 đọc là diànhuà hàomǎ, nghĩa là số điện thoại. Tham chiếu: PDF bài 6, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “diànhuà hàomǎ” và nghĩa “số điện thoại”.",
+      "options": [
+        "现在",
+        "弄",
+        "北京",
+        "电话号码"
+      ],
+      "answer": "D",
+      "explanation": "电话号码 đọc là diànhuà hàomǎ, nghĩa là số điện thoại. Tham chiếu: PDF bài 6, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “电话号码” với nghĩa “số điện thoại”.",
+      "options": [
+        "shǒujī",
+        "dú",
+        "tīng bu jiàn",
+        "diànhuà hàomǎ"
+      ],
+      "answer": "D",
+      "explanation": "电话号码 đọc là diànhuà hàomǎ, nghĩa là số điện thoại. Tham chiếu: PDF bài 6, trang 8.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “电脑” (diànnǎo) có nghĩa là gì?",
+      "options": [
+        "ngủ",
+        "số điện thoại di động",
+        "kết hôn",
+        "máy tính"
+      ],
+      "answer": "D",
+      "explanation": "电脑 đọc là diànnǎo, nghĩa là máy tính. Tham chiếu: PDF bài 6, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “diànnǎo” và nghĩa “máy tính”.",
+      "options": [
+        "天",
+        "电脑",
+        "结婚",
+        "当"
+      ],
+      "answer": "B",
+      "explanation": "电脑 đọc là diànnǎo, nghĩa là máy tính. Tham chiếu: PDF bài 6, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “电脑” với nghĩa “máy tính”.",
+      "options": [
+        "diànnǎo",
+        "huài",
+        "zài",
+        "tīng bu jiàn"
+      ],
+      "answer": "A",
+      "explanation": "电脑 đọc là diànnǎo, nghĩa là máy tính. Tham chiếu: PDF bài 6, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “笔记本电脑” (bǐjìběn diànnǎo) có nghĩa là gì?",
+      "options": [
+        "bạn học",
+        "du học sinh",
+        "máy tính xách tay",
+        "số điện thoại di động"
+      ],
+      "answer": "C",
+      "explanation": "笔记本电脑 đọc là bǐjìběn diànnǎo, nghĩa là máy tính xách tay. Tham chiếu: PDF bài 6, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “bǐjìběn diànnǎo” và nghĩa “máy tính xách tay”.",
+      "options": [
+        "笔记本电脑",
+        "忙",
+        "英国人",
+        "现在"
+      ],
+      "answer": "A",
+      "explanation": "笔记本电脑 đọc là bǐjìběn diànnǎo, nghĩa là máy tính xách tay. Tham chiếu: PDF bài 6, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “笔记本电脑” với nghĩa “máy tính xách tay”.",
+      "options": [
+        "bǐjìběn diànnǎo",
+        "gōngzuò",
+        "zhèng",
+        "dāng"
+      ],
+      "answer": "A",
+      "explanation": "笔记本电脑 đọc là bǐjìběn diànnǎo, nghĩa là máy tính xách tay. Tham chiếu: PDF bài 6, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “手提电脑” (shǒutí diànnǎo) có nghĩa là gì?",
+      "options": [
+        "đi làm, vào ca",
+        "máy tính xách tay, máy tính cầm tay",
+        "phần, suất; lượng từ",
+        "đẹp, ưa nhìn; hay khi nói về phim, sách"
+      ],
+      "answer": "B",
+      "explanation": "手提电脑 đọc là shǒutí diànnǎo, nghĩa là máy tính xách tay, máy tính cầm tay. Tham chiếu: PDF bài 6, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “shǒutí diànnǎo” và nghĩa “máy tính xách tay, máy tính cầm tay”.",
+      "options": [
+        "男朋友",
+        "份",
+        "手提电脑",
+        "同事"
+      ],
+      "answer": "C",
+      "explanation": "手提电脑 đọc là shǒutí diànnǎo, nghĩa là máy tính xách tay, máy tính cầm tay. Tham chiếu: PDF bài 6, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “手提电脑” với nghĩa “máy tính xách tay, máy tính cầm tay”.",
+      "options": [
+        "jiàoxuélóu",
+        "zhèngzài",
+        "shǒutí diànnǎo",
+        "xiàkè"
+      ],
+      "answer": "C",
+      "explanation": "手提电脑 đọc là shǒutí diànnǎo, nghĩa là máy tính xách tay, máy tính cầm tay. Tham chiếu: PDF bài 6, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “电视” (diànshì) có nghĩa là gì?",
+      "options": [
+        "dễ",
+        "truyền hình, tivi",
+        "giờ, tiếng đồng hồ",
+        "tiểu học"
+      ],
+      "answer": "B",
+      "explanation": "电视 đọc là diànshì, nghĩa là truyền hình, tivi. Tham chiếu: PDF bài 6, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “diànshì” và nghĩa “truyền hình, tivi”.",
+      "options": [
+        "电视",
+        "天",
+        "不错",
+        "在"
+      ],
+      "answer": "A",
+      "explanation": "电视 đọc là diànshì, nghĩa là truyền hình, tivi. Tham chiếu: PDF bài 6, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “电视” với nghĩa “truyền hình, tivi”.",
+      "options": [
+        "jiāo",
+        "chūzūchē",
+        "diànshì",
+        "Chángchéng"
+      ],
+      "answer": "C",
+      "explanation": "电视 đọc là diànshì, nghĩa là truyền hình, tivi. Tham chiếu: PDF bài 6, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “电视机” (diànshìjī) có nghĩa là gì?",
+      "options": [
+        "gặp mặt",
+        "máy thu hình, tivi",
+        "trung học phổ thông, cấp ba",
+        "bạn học"
+      ],
+      "answer": "B",
+      "explanation": "电视机 đọc là diànshìjī, nghĩa là máy thu hình, tivi. Tham chiếu: PDF bài 6, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “diànshìjī” và nghĩa “máy thu hình, tivi”.",
+      "options": [
+        "在",
+        "衣服",
+        "汉语",
+        "电视机"
+      ],
+      "answer": "D",
+      "explanation": "电视机 đọc là diànshìjī, nghĩa là máy thu hình, tivi. Tham chiếu: PDF bài 6, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “电视机” với nghĩa “máy thu hình, tivi”.",
+      "options": [
+        "diànhuà",
+        "diànshìjī",
+        "zhōngxué",
+        "gōngzuò"
+      ],
+      "answer": "B",
+      "explanation": "电视机 đọc là diànshìjī, nghĩa là máy thu hình, tivi. Tham chiếu: PDF bài 6, trang 9.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “难” (nán) có nghĩa là gì?",
+      "options": [
+        "khó",
+        "dạy",
+        "bác sĩ",
+        "làm, làm việc"
+      ],
+      "answer": "A",
+      "explanation": "难 đọc là nán, nghĩa là khó. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “nán” và nghĩa “khó”.",
+      "options": [
+        "睡觉",
+        "难",
+        "教学楼",
+        "可以"
+      ],
+      "answer": "B",
+      "explanation": "难 đọc là nán, nghĩa là khó. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “难” với nghĩa “khó”.",
+      "options": [
+        "dìfang",
+        "nán",
+        "róngyì",
+        "cuò"
+      ],
+      "answer": "B",
+      "explanation": "难 đọc là nán, nghĩa là khó. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “容易” (róngyì) có nghĩa là gì?",
+      "options": [
+        "Mã Văn, tên nhân vật",
+        "bác sĩ",
+        "dễ",
+        "ở đây, chỗ này"
+      ],
+      "answer": "C",
+      "explanation": "容易 đọc là róngyì, nghĩa là dễ. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “róngyì” và nghĩa “dễ”.",
+      "options": [
+        "容易",
+        "衣服",
+        "西安",
+        "同事"
+      ],
+      "answer": "A",
+      "explanation": "容易 đọc là róngyì, nghĩa là dễ. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “容易” với nghĩa “dễ”.",
+      "options": [
+        "róngyì",
+        "shàngbān",
+        "bú cuò",
+        "gǎo"
+      ],
+      "answer": "A",
+      "explanation": "容易 đọc là róngyì, nghĩa là dễ. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “上课” (shàngkè) có nghĩa là gì?",
+      "options": [
+        "bây giờ, hiện tại",
+        "ngủ",
+        "xấu, hư, hỏng",
+        "vào lớp, học trên lớp"
+      ],
+      "answer": "D",
+      "explanation": "上课 đọc là shàngkè, nghĩa là vào lớp, học trên lớp. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “shàngkè” và nghĩa “vào lớp, học trên lớp”.",
+      "options": [
+        "马文",
+        "手机",
+        "上课",
+        "做"
+      ],
+      "answer": "C",
+      "explanation": "上课 đọc là shàngkè, nghĩa là vào lớp, học trên lớp. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “上课” với nghĩa “vào lớp, học trên lớp”.",
+      "options": [
+        "diànshìjī",
+        "shàngkè",
+        "kàn",
+        "dǎ diànhuà"
+      ],
+      "answer": "B",
+      "explanation": "上课 đọc là shàngkè, nghĩa là vào lớp, học trên lớp. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “下课” (xiàkè) có nghĩa là gì?",
+      "options": [
+        "tan lớp, hết giờ học",
+        "có thể, có khả năng",
+        "nhìn, xem, đọc, thăm, khám",
+        "máy thu hình, tivi"
+      ],
+      "answer": "A",
+      "explanation": "下课 đọc là xiàkè, nghĩa là tan lớp, hết giờ học. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “xiàkè” và nghĩa “tan lớp, hết giờ học”.",
+      "options": [
+        "苹果公司",
+        "下课",
+        "在",
+        "能"
+      ],
+      "answer": "B",
+      "explanation": "下课 đọc là xiàkè, nghĩa là tan lớp, hết giờ học. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “下课” với nghĩa “tan lớp, hết giờ học”.",
+      "options": [
+        "qǐngjià",
+        "xiǎoshí",
+        "bǐjìběn diànnǎo",
+        "xiàkè"
+      ],
+      "answer": "D",
+      "explanation": "下课 đọc là xiàkè, nghĩa là tan lớp, hết giờ học. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “上班” (shàngbān) có nghĩa là gì?",
+      "options": [
+        "truyền hình, tivi",
+        "thư viện",
+        "đi làm, vào ca",
+        "số điện thoại"
+      ],
+      "answer": "C",
+      "explanation": "上班 đọc là shàngbān, nghĩa là đi làm, vào ca. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “shàngbān” và nghĩa “đi làm, vào ca”.",
+      "options": [
+        "出租车",
+        "见面",
+        "上班",
+        "教"
+      ],
+      "answer": "C",
+      "explanation": "上班 đọc là shàngbān, nghĩa là đi làm, vào ca. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “上班” với nghĩa “đi làm, vào ca”.",
+      "options": [
+        "shàngbān",
+        "liúxué",
+        "fèn",
+        "bàn"
+      ],
+      "answer": "A",
+      "explanation": "上班 đọc là shàngbān, nghĩa là đi làm, vào ca. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “下班” (xiàbān) có nghĩa là gì?",
+      "options": [
+        "tan làm, hết ca",
+        "giờ, tiếng đồng hồ",
+        "tòa nhà giảng dạy",
+        "khá tốt, không tệ"
+      ],
+      "answer": "A",
+      "explanation": "下班 đọc là xiàbān, nghĩa là tan làm, hết ca. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “xiàbān” và nghĩa “tan làm, hết ca”.",
+      "options": [
+        "公司",
+        "正",
+        "会",
+        "下班"
+      ],
+      "answer": "D",
+      "explanation": "下班 đọc là xiàbān, nghĩa là tan làm, hết ca. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “下班” với nghĩa “tan làm, hết ca”.",
+      "options": [
+        "nán péngyou",
+        "nǚ péngyou",
+        "xiàbān",
+        "gōngzuò"
+      ],
+      "answer": "C",
+      "explanation": "下班 đọc là xiàbān, nghĩa là tan làm, hết ca. Tham chiếu: PDF bài 6, trang 11.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “同学” (tóngxué) có nghĩa là gì?",
+      "options": [
+        "làm việc; công việc",
+        "Thượng Hải",
+        "bạn học",
+        "ngày"
+      ],
+      "answer": "C",
+      "explanation": "同学 đọc là tóngxué, nghĩa là bạn học. Tham chiếu: PDF bài 6, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “tóngxué” và nghĩa “bạn học”.",
+      "options": [
+        "好看",
+        "办",
+        "干",
+        "同学"
+      ],
+      "answer": "D",
+      "explanation": "同学 đọc là tóngxué, nghĩa là bạn học. Tham chiếu: PDF bài 6, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “同学” với nghĩa “bạn học”.",
+      "options": [
+        "tóngxué",
+        "xiǎoshí",
+        "Chángchéng",
+        "wàiyǔ"
+      ],
+      "answer": "A",
+      "explanation": "同学 đọc là tóngxué, nghĩa là bạn học. Tham chiếu: PDF bài 6, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “同事” (tóngshì) có nghĩa là gì?",
+      "options": [
+        "Vạn Lý Trường Thành",
+        "số điện thoại",
+        "đồng nghiệp",
+        "Tây An"
+      ],
+      "answer": "C",
+      "explanation": "同事 đọc là tóngshì, nghĩa là đồng nghiệp. Tham chiếu: PDF bài 6, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “tóngshì” và nghĩa “đồng nghiệp”.",
+      "options": [
+        "能",
+        "手机号",
+        "汉语",
+        "同事"
+      ],
+      "answer": "D",
+      "explanation": "同事 đọc là tóngshì, nghĩa là đồng nghiệp. Tham chiếu: PDF bài 6, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “同事” với nghĩa “đồng nghiệp”.",
+      "options": [
+        "hǎokàn",
+        "Píngguǒ Gōngsī",
+        "fèn",
+        "tóngshì"
+      ],
+      "answer": "D",
+      "explanation": "同事 đọc là tóngshì, nghĩa là đồng nghiệp. Tham chiếu: PDF bài 6, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “坏” (huài) có nghĩa là gì?",
+      "options": [
+        "làm, tiến hành",
+        "tiếng Anh",
+        "xấu, hư, hỏng",
+        "trung học phổ thông, cấp ba"
+      ],
+      "answer": "C",
+      "explanation": "坏 đọc là huài, nghĩa là xấu, hư, hỏng. Tham chiếu: PDF bài 6, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “huài” và nghĩa “xấu, hư, hỏng”.",
+      "options": [
+        "手机号",
+        "不错",
+        "容易",
+        "坏"
+      ],
+      "answer": "D",
+      "explanation": "坏 đọc là huài, nghĩa là xấu, hư, hỏng. Tham chiếu: PDF bài 6, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “坏” với nghĩa “xấu, hư, hỏng”.",
+      "options": [
+        "huài",
+        "píngguǒ",
+        "róngyì",
+        "dàxué"
+      ],
+      "answer": "A",
+      "explanation": "坏 đọc là huài, nghĩa là xấu, hư, hỏng. Tham chiếu: PDF bài 6, trang 12.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “错” (cuò) có nghĩa là gì?",
+      "options": [
+        "truyền hình, tivi",
+        "sai, nhầm",
+        "ngoại ngữ",
+        "kết hôn"
+      ],
+      "answer": "B",
+      "explanation": "错 đọc là cuò, nghĩa là sai, nhầm. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “cuò” và nghĩa “sai, nhầm”.",
+      "options": [
+        "地方",
+        "苹果",
+        "上课",
+        "错"
+      ],
+      "answer": "D",
+      "explanation": "错 đọc là cuò, nghĩa là sai, nhầm. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “错” với nghĩa “sai, nhầm”.",
+      "options": [
+        "jiànmiàn",
+        "cuò",
+        "tào",
+        "zuò"
+      ],
+      "answer": "B",
+      "explanation": "错 đọc là cuò, nghĩa là sai, nhầm. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “不错” (bú cuò) có nghĩa là gì?",
+      "options": [
+        "Mã Văn, tên nhân vật",
+        "nói",
+        "gặp mặt",
+        "khá tốt, không tệ"
+      ],
+      "answer": "D",
+      "explanation": "不错 đọc là bú cuò, nghĩa là khá tốt, không tệ. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “bú cuò” và nghĩa “khá tốt, không tệ”.",
+      "options": [
+        "病人",
+        "不错",
+        "能",
+        "衣服"
+      ],
+      "answer": "B",
+      "explanation": "不错 đọc là bú cuò, nghĩa là khá tốt, không tệ. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “不错” với nghĩa “khá tốt, không tệ”.",
+      "options": [
+        "diànnǎo",
+        "shàngbān",
+        "Yīngyǔ",
+        "bú cuò"
+      ],
+      "answer": "D",
+      "explanation": "不错 đọc là bú cuò, nghĩa là khá tốt, không tệ. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “没错” (méi cuò) có nghĩa là gì?",
+      "options": [
+        "không sai, đúng vậy",
+        "bạn học",
+        "quả táo",
+        "công ty"
+      ],
+      "answer": "A",
+      "explanation": "没错 đọc là méi cuò, nghĩa là không sai, đúng vậy. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “méi cuò” và nghĩa “không sai, đúng vậy”.",
+      "options": [
+        "听",
+        "大学",
+        "电话号码",
+        "没错"
+      ],
+      "answer": "D",
+      "explanation": "没错 đọc là méi cuò, nghĩa là không sai, đúng vậy. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “没错” với nghĩa “không sai, đúng vậy”.",
+      "options": [
+        "méi cuò",
+        "máng",
+        "xiàkè",
+        "dōngxi"
+      ],
+      "answer": "A",
+      "explanation": "没错 đọc là méi cuò, nghĩa là không sai, đúng vậy. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “图书馆” (túshūguǎn) có nghĩa là gì?",
+      "options": [
+        "thư viện",
+        "trung học cơ sở, cấp hai",
+        "làm",
+        "làm, đảm nhiệm một vai trò"
+      ],
+      "answer": "A",
+      "explanation": "图书馆 đọc là túshūguǎn, nghĩa là thư viện. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “túshūguǎn” và nghĩa “thư viện”.",
+      "options": [
+        "正",
+        "在",
+        "图书馆",
+        "下班"
+      ],
+      "answer": "C",
+      "explanation": "图书馆 đọc là túshūguǎn, nghĩa là thư viện. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “图书馆” với nghĩa “thư viện”.",
+      "options": [
+        "dōngxi",
+        "wàiyǔ",
+        "dú",
+        "túshūguǎn"
+      ],
+      "answer": "D",
+      "explanation": "图书馆 đọc là túshūguǎn, nghĩa là thư viện. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “教学楼” (jiàoxuélóu) có nghĩa là gì?",
+      "options": [
+        "máy thu hình, tivi",
+        "tòa nhà giảng dạy",
+        "viết",
+        "ở; đang"
+      ],
+      "answer": "B",
+      "explanation": "教学楼 đọc là jiàoxuélóu, nghĩa là tòa nhà giảng dạy. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “jiàoxuélóu” và nghĩa “tòa nhà giảng dạy”.",
+      "options": [
+        "教学楼",
+        "下班",
+        "海伦",
+        "手提电脑"
+      ],
+      "answer": "A",
+      "explanation": "教学楼 đọc là jiàoxuélóu, nghĩa là tòa nhà giảng dạy. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “教学楼” với nghĩa “tòa nhà giảng dạy”.",
+      "options": [
+        "Píngguǒ Gōngsī",
+        "jiàoxuélóu",
+        "zhèng",
+        "jiāo"
+      ],
+      "answer": "B",
+      "explanation": "教学楼 đọc là jiàoxuélóu, nghĩa là tòa nhà giảng dạy. Tham chiếu: PDF bài 6, trang 13.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “漂亮” (piàoliang) có nghĩa là gì?",
+      "options": [
+        "Thượng Hải",
+        "bạn bè",
+        "điện thoại di động",
+        "đẹp, xinh đẹp"
+      ],
+      "answer": "D",
+      "explanation": "漂亮 đọc là piàoliang, nghĩa là đẹp, xinh đẹp. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “piàoliang” và nghĩa “đẹp, xinh đẹp”.",
+      "options": [
+        "苹果",
+        "小学",
+        "东西",
+        "漂亮"
+      ],
+      "answer": "D",
+      "explanation": "漂亮 đọc là piàoliang, nghĩa là đẹp, xinh đẹp. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “漂亮” với nghĩa “đẹp, xinh đẹp”.",
+      "options": [
+        "diànshì",
+        "hǎokàn",
+        "piàoliang",
+        "qǐngjià"
+      ],
+      "answer": "C",
+      "explanation": "漂亮 đọc là piàoliang, nghĩa là đẹp, xinh đẹp. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “好看” (hǎokàn) có nghĩa là gì?",
+      "options": [
+        "thư viện",
+        "đúng",
+        "quả táo",
+        "đẹp, ưa nhìn; hay khi nói về phim, sách"
+      ],
+      "answer": "D",
+      "explanation": "好看 đọc là hǎokàn, nghĩa là đẹp, ưa nhìn; hay khi nói về phim, sách. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “hǎokàn” và nghĩa “đẹp, ưa nhìn; hay khi nói về phim, sách”.",
+      "options": [
+        "学",
+        "好看",
+        "这儿",
+        "请假"
+      ],
+      "answer": "B",
+      "explanation": "好看 đọc là hǎokàn, nghĩa là đẹp, ưa nhìn; hay khi nói về phim, sách. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “好看” với nghĩa “đẹp, ưa nhìn; hay khi nói về phim, sách”.",
+      "options": [
+        "jiàoxuélóu",
+        "hǎokàn",
+        "zuò",
+        "diànhuà hàomǎ"
+      ],
+      "answer": "B",
+      "explanation": "好看 đọc là hǎokàn, nghĩa là đẹp, ưa nhìn; hay khi nói về phim, sách. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “衣服” (yīfu) có nghĩa là gì?",
+      "options": [
+        "quần áo",
+        "máy tính xách tay, máy tính cầm tay",
+        "ngủ",
+        "bệnh nhân"
+      ],
+      "answer": "A",
+      "explanation": "衣服 đọc là yīfu, nghĩa là quần áo. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “yīfu” và nghĩa “quần áo”.",
+      "options": [
+        "当",
+        "手机号",
+        "女朋友",
+        "衣服"
+      ],
+      "answer": "D",
+      "explanation": "衣服 đọc là yīfu, nghĩa là quần áo. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “衣服” với nghĩa “quần áo”.",
+      "options": [
+        "chūzhōng",
+        "yīfu",
+        "liúxué",
+        "dāng"
+      ],
+      "answer": "B",
+      "explanation": "衣服 đọc là yīfu, nghĩa là quần áo. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “套” (tào) có nghĩa là gì?",
+      "options": [
+        "điện thoại",
+        "máy thu hình, tivi",
+        "bộ; lượng từ cho đồ đi thành bộ",
+        "bác sĩ"
+      ],
+      "answer": "C",
+      "explanation": "套 đọc là tào, nghĩa là bộ; lượng từ cho đồ đi thành bộ. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “tào” và nghĩa “bộ; lượng từ cho đồ đi thành bộ”.",
+      "options": [
+        "正在",
+        "地方",
+        "在",
+        "套"
+      ],
+      "answer": "D",
+      "explanation": "套 đọc là tào, nghĩa là bộ; lượng từ cho đồ đi thành bộ. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “套” với nghĩa “bộ; lượng từ cho đồ đi thành bộ”.",
+      "options": [
+        "huài",
+        "dōngxi",
+        "jiéhūn",
+        "tào"
+      ],
+      "answer": "D",
+      "explanation": "套 đọc là tào, nghĩa là bộ; lượng từ cho đồ đi thành bộ. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “地方” (dìfang) có nghĩa là gì?",
+      "options": [
+        "gọi điện thoại",
+        "điện thoại di động",
+        "nơi, chỗ",
+        "giúp đỡ"
+      ],
+      "answer": "C",
+      "explanation": "地方 đọc là dìfang, nghĩa là nơi, chỗ. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “dìfang” và nghĩa “nơi, chỗ”.",
+      "options": [
+        "搞",
+        "不错",
+        "地方",
+        "初中"
+      ],
+      "answer": "C",
+      "explanation": "地方 đọc là dìfang, nghĩa là nơi, chỗ. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “地方” với nghĩa “nơi, chỗ”.",
+      "options": [
+        "Chángchéng",
+        "bú cuò",
+        "dìfang",
+        "tóngshì"
+      ],
+      "answer": "C",
+      "explanation": "地方 đọc là dìfang, nghĩa là nơi, chỗ. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “长城” (Chángchéng) có nghĩa là gì?",
+      "options": [
+        "máy tính xách tay, máy tính cầm tay",
+        "Vạn Lý Trường Thành",
+        "thư viện",
+        "tiếng Anh"
+      ],
+      "answer": "B",
+      "explanation": "长城 đọc là Chángchéng, nghĩa là Vạn Lý Trường Thành. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “Chángchéng” và nghĩa “Vạn Lý Trường Thành”.",
+      "options": [
+        "读",
+        "小时",
+        "长城",
+        "上课"
+      ],
+      "answer": "C",
+      "explanation": "长城 đọc là Chángchéng, nghĩa là Vạn Lý Trường Thành. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “长城” với nghĩa “Vạn Lý Trường Thành”.",
+      "options": [
+        "Chángchéng",
+        "dǎ diànhuà",
+        "jiāo",
+        "shàngbān"
+      ],
+      "answer": "A",
+      "explanation": "长城 đọc là Chángchéng, nghĩa là Vạn Lý Trường Thành. Tham chiếu: PDF bài 6, trang 14.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “小学” (xiǎoxué) có nghĩa là gì?",
+      "options": [
+        "phần, suất; lượng từ",
+        "Helen, tên nhân vật",
+        "số điện thoại di động",
+        "tiểu học"
+      ],
+      "answer": "D",
+      "explanation": "小学 đọc là xiǎoxué, nghĩa là tiểu học. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “xiǎoxué” và nghĩa “tiểu học”.",
+      "options": [
+        "小学",
+        "不错",
+        "西安",
+        "小时"
+      ],
+      "answer": "A",
+      "explanation": "小学 đọc là xiǎoxué, nghĩa là tiểu học. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “小学” với nghĩa “tiểu học”.",
+      "options": [
+        "Chángchéng",
+        "jiàoxuélóu",
+        "xiǎoxué",
+        "cuò"
+      ],
+      "answer": "C",
+      "explanation": "小学 đọc là xiǎoxué, nghĩa là tiểu học. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “初中” (chūzhōng) có nghĩa là gì?",
+      "options": [
+        "trung học cơ sở, cấp hai",
+        "Mã Văn, tên nhân vật",
+        "bạn học",
+        "đang, đúng lúc"
+      ],
+      "answer": "A",
+      "explanation": "初中 đọc là chūzhōng, nghĩa là trung học cơ sở, cấp hai. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “chūzhōng” và nghĩa “trung học cơ sở, cấp hai”.",
+      "options": [
+        "学",
+        "当",
+        "初中",
+        "马文"
+      ],
+      "answer": "C",
+      "explanation": "初中 đọc là chūzhōng, nghĩa là trung học cơ sở, cấp hai. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “初中” với nghĩa “trung học cơ sở, cấp hai”.",
+      "options": [
+        "róngyì",
+        "píngguǒ",
+        "shuìjiào",
+        "chūzhōng"
+      ],
+      "answer": "D",
+      "explanation": "初中 đọc là chūzhōng, nghĩa là trung học cơ sở, cấp hai. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “高中” (gāozhōng) có nghĩa là gì?",
+      "options": [
+        "gặp mặt",
+        "trung học phổ thông, cấp ba",
+        "điện thoại di động",
+        "phần, suất; lượng từ"
+      ],
+      "answer": "B",
+      "explanation": "高中 đọc là gāozhōng, nghĩa là trung học phổ thông, cấp ba. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “gāozhōng” và nghĩa “trung học phổ thông, cấp ba”.",
+      "options": [
+        "正在",
+        "高中",
+        "衣服",
+        "搞"
+      ],
+      "answer": "B",
+      "explanation": "高中 đọc là gāozhōng, nghĩa là trung học phổ thông, cấp ba. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “高中” với nghĩa “trung học phổ thông, cấp ba”.",
+      "options": [
+        "liúxuéshēng",
+        "piàoliang",
+        "xiànzài",
+        "gāozhōng"
+      ],
+      "answer": "D",
+      "explanation": "高中 đọc là gāozhōng, nghĩa là trung học phổ thông, cấp ba. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “读” (dú) có nghĩa là gì?",
+      "options": [
+        "học, học tập",
+        "Vạn Lý Trường Thành",
+        "đọc; học một cấp học",
+        "làm việc; công việc"
+      ],
+      "answer": "C",
+      "explanation": "读 đọc là dú, nghĩa là đọc; học một cấp học. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “dú” và nghĩa “đọc; học một cấp học”.",
+      "options": [
+        "听",
+        "英国人",
+        "弄",
+        "读"
+      ],
+      "answer": "D",
+      "explanation": "读 đọc là dú, nghĩa là đọc; học một cấp học. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “读” với nghĩa “đọc; học một cấp học”.",
+      "options": [
+        "dú",
+        "piàoliang",
+        "Hànyǔ",
+        "tào"
+      ],
+      "answer": "A",
+      "explanation": "读 đọc là dú, nghĩa là đọc; học một cấp học. Tham chiếu: PDF bài 6, trang 15.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “外语” (wàiyǔ) có nghĩa là gì?",
+      "options": [
+        "ngoại ngữ",
+        "bệnh nhân",
+        "bạn gái",
+        "Thượng Hải"
+      ],
+      "answer": "A",
+      "explanation": "外语 đọc là wàiyǔ, nghĩa là ngoại ngữ. Tham chiếu: PDF bài 6, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “wàiyǔ” và nghĩa “ngoại ngữ”.",
+      "options": [
+        "外语",
+        "写",
+        "好看",
+        "图书馆"
+      ],
+      "answer": "A",
+      "explanation": "外语 đọc là wàiyǔ, nghĩa là ngoại ngữ. Tham chiếu: PDF bài 6, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “外语” với nghĩa “ngoại ngữ”.",
+      "options": [
+        "kěyǐ",
+        "wàiyǔ",
+        "zhèngzài",
+        "shàngbān"
+      ],
+      "answer": "B",
+      "explanation": "外语 đọc là wàiyǔ, nghĩa là ngoại ngữ. Tham chiếu: PDF bài 6, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “听” (tīng) có nghĩa là gì?",
+      "options": [
+        "nửa",
+        "Bắc Kinh",
+        "nói",
+        "nghe"
+      ],
+      "answer": "D",
+      "explanation": "听 đọc là tīng, nghĩa là nghe. Tham chiếu: PDF bài 6, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “tīng” và nghĩa “nghe”.",
+      "options": [
+        "海伦",
+        "难",
+        "教",
+        "听"
+      ],
+      "answer": "D",
+      "explanation": "听 đọc là tīng, nghĩa là nghe. Tham chiếu: PDF bài 6, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “听” với nghĩa “nghe”.",
+      "options": [
+        "bāngmáng",
+        "tīng",
+        "diànshìjī",
+        "gōngsī"
+      ],
+      "answer": "B",
+      "explanation": "听 đọc là tīng, nghĩa là nghe. Tham chiếu: PDF bài 6, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “说” (shuō) có nghĩa là gì?",
+      "options": [
+        "nói",
+        "máy tính xách tay",
+        "đọc; học một cấp học",
+        "tan lớp, hết giờ học"
+      ],
+      "answer": "A",
+      "explanation": "说 đọc là shuō, nghĩa là nói. Tham chiếu: PDF bài 6, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “shuō” và nghĩa “nói”.",
+      "options": [
+        "套",
+        "说",
+        "难",
+        "帮忙"
+      ],
+      "answer": "B",
+      "explanation": "说 đọc là shuō, nghĩa là nói. Tham chiếu: PDF bài 6, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “说” với nghĩa “nói”.",
+      "options": [
+        "cuò",
+        "shuō",
+        "Běijīng",
+        "piàoliang"
+      ],
+      "answer": "B",
+      "explanation": "说 đọc là shuō, nghĩa là nói. Tham chiếu: PDF bài 6, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “写” (xiě) có nghĩa là gì?",
+      "options": [
+        "đồ, đồ vật",
+        "tòa nhà giảng dạy",
+        "viết",
+        "ngoại ngữ"
+      ],
+      "answer": "C",
+      "explanation": "写 đọc là xiě, nghĩa là viết. Tham chiếu: PDF bài 6, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “xiě” và nghĩa “viết”.",
+      "options": [
+        "写",
+        "正在",
+        "教",
+        "好看"
+      ],
+      "answer": "A",
+      "explanation": "写 đọc là xiě, nghĩa là viết. Tham chiếu: PDF bài 6, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “写” với nghĩa “viết”.",
+      "options": [
+        "diànhuà",
+        "péngyou",
+        "xiě",
+        "Xī'ān"
+      ],
+      "answer": "C",
+      "explanation": "写 đọc là xiě, nghĩa là viết. Tham chiếu: PDF bài 6, trang 16.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “能” (néng) có nghĩa là gì?",
+      "options": [
+        "Bắc Kinh",
+        "tiểu học",
+        "có thể, có khả năng",
+        "Thượng Hải"
+      ],
+      "answer": "C",
+      "explanation": "能 đọc là néng, nghĩa là có thể, có khả năng. Tham chiếu: PDF bài 6, trang 17.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “néng” và nghĩa “có thể, có khả năng”.",
+      "options": [
+        "能",
+        "打电话",
+        "手机",
+        "这儿"
+      ],
+      "answer": "A",
+      "explanation": "能 đọc là néng, nghĩa là có thể, có khả năng. Tham chiếu: PDF bài 6, trang 17.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “能” với nghĩa “có thể, có khả năng”.",
+      "options": [
+        "shuìjiào",
+        "huì",
+        "hǎokàn",
+        "néng"
+      ],
+      "answer": "D",
+      "explanation": "能 đọc là néng, nghĩa là có thể, có khả năng. Tham chiếu: PDF bài 6, trang 17.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “可以” (kěyǐ) có nghĩa là gì?",
+      "options": [
+        "phần, suất; lượng từ",
+        "giờ, tiếng đồng hồ",
+        "có thể, được phép",
+        "nửa"
+      ],
+      "answer": "C",
+      "explanation": "可以 đọc là kěyǐ, nghĩa là có thể, được phép. Tham chiếu: PDF bài 6, trang 17.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “kěyǐ” và nghĩa “có thể, được phép”.",
+      "options": [
+        "可以",
+        "北京",
+        "搞",
+        "现在"
+      ],
+      "answer": "A",
+      "explanation": "可以 đọc là kěyǐ, nghĩa là có thể, được phép. Tham chiếu: PDF bài 6, trang 17.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “可以” với nghĩa “có thể, được phép”.",
+      "options": [
+        "xiǎoshí",
+        "kěyǐ",
+        "diànnǎo",
+        "dìfang"
+      ],
+      "answer": "B",
+      "explanation": "可以 đọc là kěyǐ, nghĩa là có thể, được phép. Tham chiếu: PDF bài 6, trang 17.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “会” (huì) có nghĩa là gì?",
+      "options": [
+        "thư viện",
+        "số điện thoại",
+        "đồng nghiệp",
+        "biết làm; sẽ"
+      ],
+      "answer": "D",
+      "explanation": "会 đọc là huì, nghĩa là biết làm; sẽ. Tham chiếu: PDF bài 6, trang 17.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “huì” và nghĩa “biết làm; sẽ”.",
+      "options": [
+        "说",
+        "会",
+        "初中",
+        "出租车"
+      ],
+      "answer": "B",
+      "explanation": "会 đọc là huì, nghĩa là biết làm; sẽ. Tham chiếu: PDF bài 6, trang 17.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “会” với nghĩa “biết làm; sẽ”.",
+      "options": [
+        "Yīngguó rén",
+        "huì",
+        "xiǎoxué",
+        "nǚ péngyou"
+      ],
+      "answer": "B",
+      "explanation": "会 đọc là huì, nghĩa là biết làm; sẽ. Tham chiếu: PDF bài 6, trang 17.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “见面” (jiànmiàn) có nghĩa là gì?",
+      "options": [
+        "số điện thoại di động",
+        "tan làm, hết ca",
+        "máy tính xách tay, máy tính cầm tay",
+        "gặp mặt"
+      ],
+      "answer": "D",
+      "explanation": "见面 đọc là jiànmiàn, nghĩa là gặp mặt. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “jiànmiàn” và nghĩa “gặp mặt”.",
+      "options": [
+        "帮忙",
+        "大学",
+        "容易",
+        "见面"
+      ],
+      "answer": "D",
+      "explanation": "见面 đọc là jiànmiàn, nghĩa là gặp mặt. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “见面” với nghĩa “gặp mặt”.",
+      "options": [
+        "shǒujī",
+        "nǚ péngyou",
+        "diànshìjī",
+        "jiànmiàn"
+      ],
+      "answer": "D",
+      "explanation": "见面 đọc là jiànmiàn, nghĩa là gặp mặt. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “睡觉” (shuìjiào) có nghĩa là gì?",
+      "options": [
+        "gặp mặt",
+        "ngủ",
+        "làm, tiến hành",
+        "bộ; lượng từ cho đồ đi thành bộ"
+      ],
+      "answer": "B",
+      "explanation": "睡觉 đọc là shuìjiào, nghĩa là ngủ. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “shuìjiào” và nghĩa “ngủ”.",
+      "options": [
+        "没错",
+        "医生",
+        "睡觉",
+        "手机号"
+      ],
+      "answer": "C",
+      "explanation": "睡觉 đọc là shuìjiào, nghĩa là ngủ. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “睡觉” với nghĩa “ngủ”.",
+      "options": [
+        "nòng",
+        "tiān",
+        "shuìjiào",
+        "diànhuà"
+      ],
+      "answer": "C",
+      "explanation": "睡觉 đọc là shuìjiào, nghĩa là ngủ. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “帮忙” (bāngmáng) có nghĩa là gì?",
+      "options": [
+        "học, học tập",
+        "không nghe thấy",
+        "giúp đỡ",
+        "xe taxi"
+      ],
+      "answer": "C",
+      "explanation": "帮忙 đọc là bāngmáng, nghĩa là giúp đỡ. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “bāngmáng” và nghĩa “giúp đỡ”.",
+      "options": [
+        "出租车",
+        "笔记本电脑",
+        "电视机",
+        "帮忙"
+      ],
+      "answer": "D",
+      "explanation": "帮忙 đọc là bāngmáng, nghĩa là giúp đỡ. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “帮忙” với nghĩa “giúp đỡ”.",
+      "options": [
+        "diànshìjī",
+        "nǚ péngyou",
+        "xuéxí",
+        "bāngmáng"
+      ],
+      "answer": "D",
+      "explanation": "帮忙 đọc là bāngmáng, nghĩa là giúp đỡ. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “请假” (qǐngjià) có nghĩa là gì?",
+      "options": [
+        "tan lớp, hết giờ học",
+        "bạn học",
+        "xin nghỉ phép",
+        "dạy"
+      ],
+      "answer": "C",
+      "explanation": "请假 đọc là qǐngjià, nghĩa là xin nghỉ phép. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “qǐngjià” và nghĩa “xin nghỉ phép”.",
+      "options": [
+        "同事",
+        "高中",
+        "留学生",
+        "请假"
+      ],
+      "answer": "D",
+      "explanation": "请假 đọc là qǐngjià, nghĩa là xin nghỉ phép. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “请假” với nghĩa “xin nghỉ phép”.",
+      "options": [
+        "gāozhōng",
+        "qǐngjià",
+        "máng",
+        "bú cuò"
+      ],
+      "answer": "B",
+      "explanation": "请假 đọc là qǐngjià, nghĩa là xin nghỉ phép. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “结婚” (jiéhūn) có nghĩa là gì?",
+      "options": [
+        "máy thu hình, tivi",
+        "kết hôn",
+        "có thể, được phép",
+        "không nghe thấy"
+      ],
+      "answer": "B",
+      "explanation": "结婚 đọc là jiéhūn, nghĩa là kết hôn. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “jiéhūn” và nghĩa “kết hôn”.",
+      "options": [
+        "正",
+        "结婚",
+        "对",
+        "教学楼"
+      ],
+      "answer": "B",
+      "explanation": "结婚 đọc là jiéhūn, nghĩa là kết hôn. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “结婚” với nghĩa “kết hôn”.",
+      "options": [
+        "Yīngyǔ",
+        "gōngsī",
+        "Hǎilún",
+        "jiéhūn"
+      ],
+      "answer": "D",
+      "explanation": "结婚 đọc là jiéhūn, nghĩa là kết hôn. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “小时” (xiǎoshí) có nghĩa là gì?",
+      "options": [
+        "nhìn, xem, đọc, thăm, khám",
+        "giờ, tiếng đồng hồ",
+        "quần áo",
+        "làm, đảm nhiệm một vai trò"
+      ],
+      "answer": "B",
+      "explanation": "小时 đọc là xiǎoshí, nghĩa là giờ, tiếng đồng hồ. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “xiǎoshí” và nghĩa “giờ, tiếng đồng hồ”.",
+      "options": [
+        "当",
+        "小时",
+        "这儿",
+        "女朋友"
+      ],
+      "answer": "B",
+      "explanation": "小时 đọc là xiǎoshí, nghĩa là giờ, tiếng đồng hồ. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “小时” với nghĩa “giờ, tiếng đồng hồ”.",
+      "options": [
+        "xiǎoshí",
+        "Chángchéng",
+        "nán",
+        "fèn"
+      ],
+      "answer": "A",
+      "explanation": "小时 đọc là xiǎoshí, nghĩa là giờ, tiếng đồng hồ. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “天” (tiān) có nghĩa là gì?",
+      "options": [
+        "kết hôn",
+        "ngày",
+        "trung học",
+        "nghe"
+      ],
+      "answer": "B",
+      "explanation": "天 đọc là tiān, nghĩa là ngày. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “tiān” và nghĩa “ngày”.",
+      "options": [
+        "可以",
+        "能",
+        "天",
+        "半"
+      ],
+      "answer": "C",
+      "explanation": "天 đọc là tiān, nghĩa là ngày. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “天” với nghĩa “ngày”.",
+      "options": [
+        "gǎo",
+        "tiān",
+        "nán péngyou",
+        "tīng"
+      ],
+      "answer": "B",
+      "explanation": "天 đọc là tiān, nghĩa là ngày. Tham chiếu: PDF bài 6, trang 20.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “这儿” (zhèr) có nghĩa là gì?",
+      "options": [
+        "dạy",
+        "ở đây, chỗ này",
+        "khó",
+        "du học sinh"
+      ],
+      "answer": "B",
+      "explanation": "这儿 đọc là zhèr, nghĩa là ở đây, chỗ này. Tham chiếu: PDF bài 6, trang 24.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “zhèr” và nghĩa “ở đây, chỗ này”.",
+      "options": [
+        "手机",
+        "漂亮",
+        "这儿",
+        "正在"
+      ],
+      "answer": "C",
+      "explanation": "这儿 đọc là zhèr, nghĩa là ở đây, chỗ này. Tham chiếu: PDF bài 6, trang 24.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “这儿” với nghĩa “ở đây, chỗ này”.",
+      "options": [
+        "xiǎoshí",
+        "huài",
+        "zhèr",
+        "Yīngguó rén"
+      ],
+      "answer": "C",
+      "explanation": "这儿 đọc là zhèr, nghĩa là ở đây, chỗ này. Tham chiếu: PDF bài 6, trang 24.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “英国人” (Yīngguó rén) có nghĩa là gì?",
+      "options": [
+        "người Anh",
+        "nhìn, xem, đọc, thăm, khám",
+        "máy tính xách tay",
+        "giờ, tiếng đồng hồ"
+      ],
+      "answer": "A",
+      "explanation": "英国人 đọc là Yīngguó rén, nghĩa là người Anh. Tham chiếu: PDF bài 6, trang 25.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “Yīngguó rén” và nghĩa “người Anh”.",
+      "options": [
+        "电视机",
+        "听不见",
+        "英国人",
+        "结婚"
+      ],
+      "answer": "C",
+      "explanation": "英国人 đọc là Yīngguó rén, nghĩa là người Anh. Tham chiếu: PDF bài 6, trang 25.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “英国人” với nghĩa “người Anh”.",
+      "options": [
+        "dāng",
+        "shǒujī",
+        "Yīngguó rén",
+        "píngguǒ"
+      ],
+      "answer": "C",
+      "explanation": "英国人 đọc là Yīngguó rén, nghĩa là người Anh. Tham chiếu: PDF bài 6, trang 25.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “出租车” (chūzūchē) có nghĩa là gì?",
+      "options": [
+        "Bắc Kinh",
+        "xe taxi",
+        "công ty",
+        "làm, làm việc"
+      ],
+      "answer": "B",
+      "explanation": "出租车 đọc là chūzūchē, nghĩa là xe taxi. Tham chiếu: PDF bài 6, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “chūzūchē” và nghĩa “xe taxi”.",
+      "options": [
+        "小学",
+        "马文",
+        "出租车",
+        "份"
+      ],
+      "answer": "C",
+      "explanation": "出租车 đọc là chūzūchē, nghĩa là xe taxi. Tham chiếu: PDF bài 6, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “出租车” với nghĩa “xe taxi”.",
+      "options": [
+        "chūzūchē",
+        "méi cuò",
+        "yīfu",
+        "jiéhūn"
+      ],
+      "answer": "A",
+      "explanation": "出租车 đọc là chūzūchē, nghĩa là xe taxi. Tham chiếu: PDF bài 6, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “西安” (Xī'ān) có nghĩa là gì?",
+      "options": [
+        "trung học cơ sở, cấp hai",
+        "khó",
+        "Tây An",
+        "ngoại ngữ"
+      ],
+      "answer": "C",
+      "explanation": "西安 đọc là Xī'ān, nghĩa là Tây An. Tham chiếu: PDF bài 6, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “Xī'ān” và nghĩa “Tây An”.",
+      "options": [
+        "留学生",
+        "西安",
+        "海伦",
+        "东西"
+      ],
+      "answer": "B",
+      "explanation": "西安 đọc là Xī'ān, nghĩa là Tây An. Tham chiếu: PDF bài 6, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “西安” với nghĩa “Tây An”.",
+      "options": [
+        "gǎo",
+        "bāngmáng",
+        "Xī'ān",
+        "diànhuà hàomǎ"
+      ],
+      "answer": "C",
+      "explanation": "西安 đọc là Xī'ān, nghĩa là Tây An. Tham chiếu: PDF bài 6, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “医生” (yīshēng) có nghĩa là gì?",
+      "options": [
+        "bác sĩ",
+        "đẹp, ưa nhìn; hay khi nói về phim, sách",
+        "điện thoại",
+        "đồ, đồ vật"
+      ],
+      "answer": "A",
+      "explanation": "医生 đọc là yīshēng, nghĩa là bác sĩ. Tham chiếu: PDF bài 6, trang 32.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “yīshēng” và nghĩa “bác sĩ”.",
+      "options": [
+        "出租车",
+        "地方",
+        "病人",
+        "医生"
+      ],
+      "answer": "D",
+      "explanation": "医生 đọc là yīshēng, nghĩa là bác sĩ. Tham chiếu: PDF bài 6, trang 32.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “医生” với nghĩa “bác sĩ”.",
+      "options": [
+        "Xī'ān",
+        "róngyì",
+        "yīshēng",
+        "Yīngyǔ"
+      ],
+      "answer": "C",
+      "explanation": "医生 đọc là yīshēng, nghĩa là bác sĩ. Tham chiếu: PDF bài 6, trang 32.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “病人” (bìngrén) có nghĩa là gì?",
+      "options": [
+        "viết",
+        "máy thu hình, tivi",
+        "bệnh nhân",
+        "đẹp, ưa nhìn; hay khi nói về phim, sách"
+      ],
+      "answer": "C",
+      "explanation": "病人 đọc là bìngrén, nghĩa là bệnh nhân. Tham chiếu: PDF bài 6, trang 32.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “bìngrén” và nghĩa “bệnh nhân”.",
+      "options": [
+        "病人",
+        "北京",
+        "天",
+        "会"
+      ],
+      "answer": "A",
+      "explanation": "病人 đọc là bìngrén, nghĩa là bệnh nhân. Tham chiếu: PDF bài 6, trang 32.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “病人” với nghĩa “bệnh nhân”.",
+      "options": [
+        "bìngrén",
+        "diànhuà hàomǎ",
+        "yīshēng",
+        "shǒujī"
+      ],
+      "answer": "A",
+      "explanation": "病人 đọc là bìngrén, nghĩa là bệnh nhân. Tham chiếu: PDF bài 6, trang 32.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “忙” (máng) có nghĩa là gì?",
+      "options": [
+        "làm, đảm nhiệm một vai trò",
+        "điện thoại di động",
+        "bận",
+        "gặp mặt"
+      ],
+      "answer": "C",
+      "explanation": "忙 đọc là máng, nghĩa là bận. Tham chiếu: PDF bài 6, trang 32.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “máng” và nghĩa “bận”.",
+      "options": [
+        "小学",
+        "男朋友",
+        "忙",
+        "正在"
+      ],
+      "answer": "C",
+      "explanation": "忙 đọc là máng, nghĩa là bận. Tham chiếu: PDF bài 6, trang 32.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “忙” với nghĩa “bận”.",
+      "options": [
+        "máng",
+        "tóngxué",
+        "huì",
+        "shuō"
+      ],
+      "answer": "A",
+      "explanation": "忙 đọc là máng, nghĩa là bận. Tham chiếu: PDF bài 6, trang 32.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “听不见” (tīng bu jiàn) có nghĩa là gì?",
+      "options": [
+        "bạn bè",
+        "không nghe thấy",
+        "khá tốt, không tệ",
+        "làm, xử lý"
+      ],
+      "answer": "B",
+      "explanation": "听不见 đọc là tīng bu jiàn, nghĩa là không nghe thấy. Tham chiếu: PDF bài 6, trang 33.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “tīng bu jiàn” và nghĩa “không nghe thấy”.",
+      "options": [
+        "听不见",
+        "请假",
+        "小时",
+        "马文"
+      ],
+      "answer": "A",
+      "explanation": "听不见 đọc là tīng bu jiàn, nghĩa là không nghe thấy. Tham chiếu: PDF bài 6, trang 33.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “听不见” với nghĩa “không nghe thấy”.",
+      "options": [
+        "tiān",
+        "gāozhōng",
+        "tóngshì",
+        "tīng bu jiàn"
+      ],
+      "answer": "D",
+      "explanation": "听不见 đọc là tīng bu jiàn, nghĩa là không nghe thấy. Tham chiếu: PDF bài 6, trang 33.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Trong bài học, “手机号” (shǒujī hào) có nghĩa là gì?",
+      "options": [
+        "số điện thoại di động",
+        "Tây An",
+        "máy thu hình, tivi",
+        "khó"
+      ],
+      "answer": "A",
+      "explanation": "手机号 đọc là shǒujī hào, nghĩa là số điện thoại di động. Tham chiếu: PDF bài 6, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn Hán tự có phiên âm “shǒujī hào” và nghĩa “số điện thoại di động”.",
+      "options": [
+        "大学",
+        "忙",
+        "搞",
+        "手机号"
+      ],
+      "answer": "D",
+      "explanation": "手机号 đọc là shǒujī hào, nghĩa là số điện thoại di động. Tham chiếu: PDF bài 6, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn phiên âm đúng của “手机号” với nghĩa “số điện thoại di động”.",
+      "options": [
+        "shǒujī hào",
+        "Shànghǎi",
+        "shǒujī",
+        "gāozhōng"
+      ],
+      "answer": "A",
+      "explanation": "手机号 đọc là shǒujī hào, nghĩa là số điện thoại di động. Tham chiếu: PDF bài 6, trang 28.",
+      "difficulty": "Dễ"
+    },
+    {
+      "prompt": "Chọn câu “Tôi làm việc ở công ty Apple”.",
+      "options": [
+        "公司在我苹果工作。",
+        "我工作在苹果的。",
+        "苹果我在工作公司。",
+        "我在苹果公司工作。"
+      ],
+      "answer": "D",
+      "explanation": "Mẫu câu: chủ ngữ + 在 + địa điểm + động từ.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Điền từ: 他___看电视。(Anh ấy đang xem tivi.)",
+      "options": [
+        "名片",
+        "多少",
+        "正在",
+        "老师"
+      ],
+      "answer": "C",
+      "explanation": "正在 đứng trước động từ để chỉ hành động đang diễn ra.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Chọn câu phủ định “Tôi không học tiếng Hán ở đây”.",
+      "options": [
+        "我学不这儿在汉语。",
+        "我不在这儿学汉语。",
+        "我不在这儿汉语学。",
+        "我在不这儿学汉语。"
+      ],
+      "answer": "B",
+      "explanation": "Phủ định của mẫu địa điểm dùng 不在 trước địa điểm.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Trong bài khóa 1, 马文 là người ở đâu?",
+      "options": [
+        "Bắc Kinh",
+        "Tây An",
+        "Hà Nội",
+        "Thượng Hải"
+      ],
+      "answer": "D",
+      "explanation": "马文 nói 不是，我是上海人 khi được hỏi có phải người Bắc Kinh không.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Trong bài khóa 1, 海伦 là người nước nào?",
+      "options": [
+        "Anh",
+        "Thái Lan",
+        "Mỹ",
+        "Trung Quốc"
+      ],
+      "answer": "C",
+      "explanation": "海伦 nói 我是美国人.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Trong bài khóa 1, 马文 làm việc ở đâu?",
+      "options": [
+        "Công ty Apple",
+        "Thư viện",
+        "Bệnh viện",
+        "Ga tàu"
+      ],
+      "answer": "A",
+      "explanation": "马文 nói 我在苹果公司工作.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Trong bài khóa 1, 海伦 là ai?",
+      "options": [
+        "Nhân viên bán hàng",
+        "Du học sinh",
+        "Tài xế",
+        "Bác sĩ"
+      ],
+      "answer": "B",
+      "explanation": "海伦 nói 我是留学生.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Trong bài khóa 2, bạn trai của 海伦 là người nước nào?",
+      "options": [
+        "Mỹ",
+        "Anh",
+        "Trung Quốc",
+        "Việt Nam"
+      ],
+      "answer": "B",
+      "explanation": "海伦 nói 他是英国人.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Trong bài khóa 2, bạn trai của 海伦 làm gì?",
+      "options": [
+        "Lái xe taxi",
+        "Bán táo ở siêu thị",
+        "Học tiếng Hán ở trung học",
+        "Dạy tiếng Anh ở đại học"
+      ],
+      "answer": "D",
+      "explanation": "海伦 nói 他在大学教英语.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Trong bài khóa 2, bạn gái của 高小明 là giáo viên cấp nào?",
+      "options": [
+        "Tiểu học",
+        "Trung học",
+        "Mầm non",
+        "Đại học"
+      ],
+      "answer": "B",
+      "explanation": "高小明 nói 她是中学老师.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Điền từ: 你的手机___是多少？",
+      "options": [
+        "本",
+        "号",
+        "碗",
+        "杯"
+      ],
+      "answer": "B",
+      "explanation": "手机号 là số điện thoại di động.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Chọn cặp đối nghĩa về thời gian làm việc.",
+      "options": [
+        "上班 — 上课",
+        "工作 — 学习",
+        "上班 — 下班",
+        "下班 — 下课"
+      ],
+      "answer": "C",
+      "explanation": "上班 là vào ca, đi làm; 下班 là tan làm.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Chọn cặp đối nghĩa.",
+      "options": [
+        "电脑 — 手机",
+        "汉语 — 英语",
+        "同学 — 同事",
+        "难 — 容易"
+      ],
+      "answer": "D",
+      "explanation": "难 là khó, 容易 là dễ.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Trong 我会说汉语, 会 biểu thị điều gì?",
+      "options": [
+        "Số lượng sách",
+        "Lời xin lỗi",
+        "Địa điểm học",
+        "Kỹ năng biết nói tiếng Hán"
+      ],
+      "answer": "D",
+      "explanation": "会 + động từ có thể biểu thị kỹ năng học được.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Chọn câu “Tôi đang ở thư viện”.",
+      "options": [
+        "我图在书馆。",
+        "我图书馆在。",
+        "在我馆图书。",
+        "我在图书馆。"
+      ],
+      "answer": "D",
+      "explanation": "Chủ ngữ + 在 + địa điểm nêu vị trí.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Chọn cách nói “Tôi ngủ một tiếng”.",
+      "options": [
+        "我觉睡个一小时。",
+        "我一个觉小时睡。",
+        "我睡觉一个小时的觉觉。",
+        "我睡一个小时觉。"
+      ],
+      "answer": "D",
+      "explanation": "睡觉 là động từ ly hợp; có thể chèn bổ ngữ thời lượng giữa 睡 và 觉.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "“听不见” nghĩa là gì?",
+      "options": [
+        "Không nghe thấy",
+        "Không nhìn thấy",
+        "Không đọc được",
+        "Không muốn viết"
+      ],
+      "answer": "A",
+      "explanation": "听 là nghe; 不见 trong kết cấu này biểu thị không đạt được kết quả cảm nhận.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Chọn từ chỉ người cùng làm việc.",
+      "options": [
+        "同事",
+        "学生",
+        "同学",
+        "孩子"
+      ],
+      "answer": "A",
+      "explanation": "同事 là đồng nghiệp; 同学 là bạn học.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Điền từ: 老师在大学___英语。",
+      "options": [
+        "买",
+        "喝",
+        "教",
+        "叫"
+      ],
+      "answer": "C",
+      "explanation": "教 jiāo là dạy, khác 叫 jiào là gọi.",
+      "difficulty": "Vừa"
+    },
+    {
+      "prompt": "Chọn câu hỏi nơi làm việc.",
+      "options": [
+        "你什么钱工作？",
+        "你工作谁的哪？",
+        "你工作多少？",
+        "你在哪儿工作？"
+      ],
+      "answer": "D",
+      "explanation": "在 + 哪儿 hỏi địa điểm diễn ra công việc.",
+      "difficulty": "Vừa"
+    }
+  ]
+}

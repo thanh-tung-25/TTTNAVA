@@ -1,5 +1,21 @@
 # Lộ trình Tiếng Trung
 
+## Quản lý hoạt động vận dụng
+
+Khi chuẩn bị các bài tiếng Trung tiếp theo, luôn chuẩn bị cả hoạt động vận dụng phù hợp nội dung nguồn, cùng từ vựng và bộ câu hỏi. Kiểm tra phần vận dụng đã xuất bản ở đúng bài/HSK khi bàn giao; không chỉ lưu file Word. Các bài Q1 1–6 đã có mẫu 7 hoạt động/bài. Tên tiếng Việt “Xin Chào” và “Hỏi tên, Hỏi họ, Quốc tịch” cũng nhận đúng mẫu bài 1–2, không dựa riêng vào số thứ tự để đoán bài.
+
+Vào **Quản lý Tiếng Trung → Bài học → chọn bài → Quản lý hoạt động vận dụng**. Soạn chủ đề, thêm hoạt động theo bốn dạng **Xếp câu, Sửa lỗi, Điền từ, Hội thoại**; nhập đáp án, gợi ý và lời giải. Mỗi bài tối đa 100 hoạt động. Dạng xếp câu nhập từng từ theo thứ tự câu đúng, mỗi dòng một từ, gồm cả dấu câu; đáp án tự ghép và các từ được trộn khi học. Dạng điền từ nhận một từ/cụm từ đáp án, so sánh sau chuẩn hóa Unicode, khoảng trắng ngoài và chữ thường, giữ dấu thanh.
+
+Admin có thể đổi thứ tự, bỏ hoạt động, **Xem thử** mà chưa lưu, **Lưu bản nháp** hoặc **Cho học sinh xem**. Lưu nháp một bộ đang đăng sẽ ẩn bộ đó, có hộp xác nhận. Xuất bản bắt buộc có chủ đề, hoạt động, đáp án và lời giải hợp lệ. Bản lưu có revision để chặn ghi đè từ cửa sổ khác. Những bài Q1 có tên phù hợp có nút **Nạp mẫu Q1 cho bài này**, gồm 7 hoạt động mẫu để chỉnh sửa trước khi lưu. Mẫu không phải nguồn tự động cho giao diện học sinh.
+
+Nội dung lưu trong bảng `chinese_activities`, thuộc bài học và dùng chung cho mọi tài liệu trong bài; dùng được ở mọi cấp HSK. Học sinh chỉ thấy bộ đã xuất bản khi cả bài học, tài liệu đều published và khóa học được mở. API chi tiết tài liệu trả `activities`; catalog trả `activity_count`. Bản nháp không được trả cho học sinh. Xóa bài học xóa luôn bộ hoạt động. Tài liệu không cần chứa câu hỏi quiz để có phần vận dụng.
+
+API admin: GET/PUT `lessons/:id/activities`, POST `lessons/:id/activities/preview`. Mã giao diện dùng chung ở `frontend/assets/js/chinese-applied-practice.js`, biên tập ở `frontend/pages/admin/chinese/activities-editor.js`. Lượt tự luyện vẫn chỉ tính kết quả trong phiên, không lưu lịch sử hay thay đổi Kim Cương.
+
+Cài đặt MySQL: chạy `npm run db:migrate` để thêm migration 023. Có thể chạy `node backend/scripts/migrate-chinese-activities.mjs` một lần để chuyển các mẫu Q1 cũ sang dữ liệu cho các bài có tên phù hợp; không ghi đè bộ đã có. PostgreSQL có SQL tương ứng tại `backend/sql/postgres/023_chinese_activities.sql`, cần áp dụng vào schema ứng dụng trước khi triển khai mã mới.
+
+Kiểm tra: `npm --prefix backend test -- chinese-activities.test.js` kiểm tra quyền admin, draft/publish, preview không lưu, khóa học, bài ẩn, tranh chấp và xóa bài. `npx playwright test --config playwright.applied.config.js` kiểm tra frontend thật với API giả lập: 42 hoạt động mẫu, gợi ý, câu sai, từ trùng, admin soạn cả bốn dạng → xem thử → lưu → tải lại → xuất bản → học sinh điền từ → ẩn lại, ở 390px. Không thay đổi dữ liệu thật của người dùng.
+
 ## Cách dùng admin hiện tại
 
 1. Vào **Quản lý Tiếng Trung → Bài học**, chọn HSK và bài. Chưa có bài thì bấm **+ Thêm bài học**, chỉ cần nhập tên.

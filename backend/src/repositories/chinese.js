@@ -18,6 +18,9 @@ export async function catalog(admin, student) {
  const levels = await query('SELECT * FROM chinese_levels ORDER BY id');
  const lessons = await query(`SELECT * FROM chinese_lessons ${admin ? '' : "WHERE status='published'"} ORDER BY level_id,position,title`);
  const sets = await query(`${setSelect} ${admin ? '' : "WHERE s.status='published' AND l.status='published'"} ORDER BY s.position,s.created_at`);
+ const activities=await query("SELECT lesson_id,data FROM chinese_activities WHERE status='published'");
+ const activityCounts=new Map(activities.map(row=>[row.lesson_id,json(row.data).tasks.length]));
+ for(const set of sets)set.activity_count=activityCounts.get(set.lesson_id)||0;
  const counts = await query(`SELECT i.set_id,i.kind,COUNT(*) total FROM chinese_items i JOIN chinese_sets s ON s.id=i.set_id JOIN chinese_lessons l ON l.id=s.lesson_id WHERE i.active=1 ${admin?'':"AND s.status='published' AND l.status='published'"} GROUP BY i.set_id,i.kind`);
  const reviews = admin ? [] : await query('SELECT r.* FROM chinese_reviews r WHERE student_id=?',[student]);
  const progress = admin ? [] : await query('SELECT * FROM chinese_progress WHERE student_id=? ORDER BY updated_at DESC',[student]);

@@ -1,3 +1,4 @@
+@import url('/assets/css/chinese-activities.css');
 @import url('/assets/css/chinese.css');
 
 .page{max-width:940px}
@@ -47,6 +48,7 @@ audio{max-width:100%}
 .study-menu-content .btn{display:block;text-align:left;box-shadow:none;background:none;border:0;font-weight:500;color:#35536b;padding:.5rem;margin:0;text-decoration:none}
 .study-source{font-size:.75rem;line-height:1.5;overflow-wrap:anywhere;color:#718394;margin:.5rem;padding:.5rem 0 0;border-top:1px solid #e8eef3}
 .study-modes{display:flex;gap:4px;width:fit-content;margin:0 auto .7rem;padding:4px;background:#e7eef5;border:1px solid #dce6ed;border-radius:12px}
+.study-modes{flex-wrap:wrap;max-width:100%;justify-content:center}
 .study-modes .btn{min-height:0;transform:none;box-shadow:none;border:0;border-radius:8px;background:transparent;color:#52697d;font:600 .9rem/1.3 var(--font-body,sans-serif);text-decoration:none;padding:.6rem 1.2rem;margin:0}
 .study-modes .btn[aria-current=page]{background:#fff;color:#203e57;box-shadow:0 1px 4px #193a5012}
 .study-modes .btn:hover{background:#f5f9fc;transform:none;box-shadow:none}

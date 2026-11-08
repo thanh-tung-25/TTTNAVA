@@ -2,6 +2,7 @@ import {initPage,syncDiamondTotal} from '/assets/js/ui-core.js';
 import {request,el,root,button,link,card,field,table,error,notice,percentage} from '/assets/js/chinese-common.js';
 import {writing,recording} from './learning-tools.js';
 import {renderHistory} from './history-view.js';
+import {mountPractice} from './applied-practice.js';
 const params=new URLSearchParams(location.search);let catalog,timer;
 const json=v=>typeof v==='string'?JSON.parse(v):v;
 const extra=(title,children)=>el('details',{class:'learn-extra'},[el('summary',{text:title}),...children]);
@@ -40,6 +41,7 @@ function lessons(){
    if(words||questions){const start=link('Thẻ lật',{set:s.id,mode:'cards'});start.classList.add('btn-primary');actions.append(start);}
    if(questions){const q=action('Quiz 20 câu',()=>quiz(s.id),true);q.disabled=questions<20;q.title=questions<20?'Cần đủ 20 câu hỏi để làm quiz':'';actions.append(q);}
    if(reads)actions.append(link('Bài đọc',{set:s.id,mode:'read'}));
+   if(s.activity_count>0)actions.append(link('Luyện vận dụng',{set:s.id,mode:'apply'}));
    const progress=percentage(s.id,catalog),meter=el('div',{class:'lesson-progress',role:'progressbar','aria-label':'Tiến độ '+s.title,'aria-valuenow':progress,'aria-valuemin':0,'aria-valuemax':100},[el('span')]);meter.firstElementChild.style.width=progress+'%';
    return el('div',{class:'learn-document'},[el('div',{},[el('strong',{text:s.title}),el('p',{class:'muted',text:[words?words+' từ':'',questions?questions+' câu hỏi':'',progress+'% đã học'].filter(Boolean).join(' · ')}),meter,...(questions>0&&questions<20?[el('p',{class:'muted',text:'Chưa đủ 20 câu để làm quiz; con có thể học thẻ lật.'})]:[])]),actions]);
   }):[el('p',{class:'muted',text:'Chưa có nội dung.'})]);
@@ -51,7 +53,7 @@ function lessons(){
  root().append(extra('Tiến độ học',[el('p',{text:'Mỗi quiz gồm 20 câu. Tiến độ dựa trên từ đã tự đánh giá, đoạn đã đọc và câu quiz đã chốt.'})]));
 }
 async function learn(id){
- const {set,items,progress}=await request('/sets/'+id);let read=json(progress?.read_items||[]),last=progress?.last_item||null;
+ const {set,items,progress,activities}=await request('/sets/'+id);let read=json(progress?.read_items||[]),last=progress?.last_item||null;
  const save=async item=>{await request('/sets/'+id+'/progress','PUT',{last_item:item,read_items:read});last=item;};
  root().append(el('header',{class:'study-bar'},[
   el('a',{class:'study-back',href:'?level='+set.level_id,text:'←','aria-label':'Bài học',title:'Quay lại bài học'}),
@@ -62,10 +64,17 @@ async function learn(id){
  ]));
  const words=items.filter(i=>i.kind==='vocabulary'),questions=items.filter(i=>i.kind==='question'),reads=items.filter(i=>['grammar','reading','dialogue'].includes(i.kind));
  const mode=params.get('mode')||(words.length||questions.length?'cards':'read');
+ const applied=activities?.tasks?.length?activities:null;
  const nav=el('nav',{class:'study-modes','aria-label':'Cách học'});
- if(words.length||questions.length){const cards=link('Thẻ lật',{set:id,mode:'cards'});if(mode!=='read')cards.setAttribute('aria-current','page');nav.append(cards);}
+ if(words.length||questions.length){const cards=link('Thẻ lật',{set:id,mode:'cards'});if(!['read','apply'].includes(mode))cards.setAttribute('aria-current','page');nav.append(cards);}
  if(questions.length){const q=action('Quiz 20 câu',()=>quiz(id));q.disabled=questions.length<20;q.title=questions.length<20?'Cần ít nhất 20 câu hỏi':'';nav.append(q);}
- if(reads.length){const reading=link('Bài đọc',{set:id,mode:'read'});if(mode==='read')reading.setAttribute('aria-current','page');nav.append(reading);}root().append(nav);
+ if(reads.length){const reading=link('Bài đọc',{set:id,mode:'read'});if(mode==='read')reading.setAttribute('aria-current','page');nav.append(reading);}
+ if(applied){const practice=link('Luyện vận dụng',{set:id,mode:'apply'});if(mode==='apply')practice.setAttribute('aria-current','page');nav.append(practice);}root().append(nav);
+ if(mode==='apply'){
+  if(applied)mountPractice(root(),applied);
+  else root().append(el('p',{text:'Bài này chưa có hoạt động vận dụng. Hãy chọn Thẻ lật hoặc Bài đọc để tiếp tục.'}));
+  return;
+ }
  if(mode==='read'){
   for(const i of reads)root().append(card(i.data.title||'Bài đọc',[el('p',{class:'read-text',text:i.data.text}),action(read.includes(i.id)?'Đã đọc':'Đánh dấu đã đọc',async()=>{if(!read.includes(i.id))read.push(i.id);await save(i.id);notice('Đã lưu tiến độ đọc.');})]));
   if(!reads.length)root().append(el('p',{text:'Tài liệu này chưa có bài đọc.'}));

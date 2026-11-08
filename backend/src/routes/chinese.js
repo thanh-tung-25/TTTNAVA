@@ -11,6 +11,7 @@ import { z } from 'zod';
 import { createSet, removeContent } from '../services/chinese-manage.js';
 import { chineseCourseGuard } from '../middlewares/course-access.js';
 import { sendArchive, DOCX_MIME } from '../services/private-storage.js';
+import {adminActivities,saveActivities,validateActivities} from '../services/chinese-activities.js';
 const router=Router();
 router.use(authenticateToken,requirePlayer);
 router.use(chineseCourseGuard);
@@ -27,6 +28,9 @@ router.get('/attempts/:id',requireStudent,c.attempt);
 router.post('/attempts/:id/answers',requireStudent,c.answer);
 router.post('/attempts/:id/finish',requireStudent,c.finish);
 router.use(requireAdmin);
+router.get('/lessons/:id/activities',c.handler(r=>adminActivities(r.params.id)));
+router.put('/lessons/:id/activities',c.handler(r=>saveActivities(r.params.id,r.body)));
+router.post('/lessons/:id/activities/preview',c.handler(async r=>{await adminActivities(r.params.id);return validateActivities({...r.body,status:'published'});}));
 router.get('/stats',c.stats);
 router.put('/levels/:id',c.handler(async r=>{
  const id=parse(z.coerce.number().int().min(1).max(9),r.params.id);

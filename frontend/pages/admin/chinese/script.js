@@ -13,6 +13,7 @@ async function boot(){
  if(['levels','tests'].includes(params.get('view'))){await import('./advanced.js');return;}
  await initPage('admin','chinese');catalog=await request('/catalog');notice('');
  document.querySelector('#chinese-nav').append(adminLink('Bài học'),el('a',{class:'btn btn-secondary',href:'/pages/admin/students/?program=chinese',text:'Học sinh Tiếng Trung'}),adminLink('Bài kiểm tra',{view:'tests'}),adminLink('Tiến độ',{view:'progress'}));
+ if(params.has('activities')){const lesson=catalog.lessons.find(l=>l.id===params.get('activities'));if(!lesson)throw Error('Không tìm thấy bài học.');const {activitiesEditor}=await import('./activities-editor.js');return activitiesEditor(lesson);}
  if(params.has('set'))return editor(params.get('set'));if(params.get('view')==='progress')return progress();workspace();
 }
 function workspace(){
@@ -25,6 +26,8 @@ function workspace(){
  formSubmit(create,async d=>{const position=Math.max(0,...catalog.lessons.filter(l=>l.level_id===level).map(l=>l.position))+1;const saved=await request('/lessons','POST',{...d,level_id:level,position,description:'',image_url:'',status:'draft'});location.href='?lesson='+saved.id;},'Tạo bài');
  root().append(card('1. Chọn bài học',[scope,extra('+ Thêm bài học',[create])]));
  if(!lesson){root().append(el('p',{class:'simple-empty',text:'Chưa có bài học ở cấp này. Bấm “+ Thêm bài học” để bắt đầu.'}));return;}
+ const activityCount=Math.max(0,...catalog.sets.filter(s=>s.lesson_id===lesson.id).map(s=>Number(s.activity_count)||0));
+ root().append(card('Hoạt động vận dụng',[el('p',{class:activityCount?'simple-status published':'simple-status',text:activityCount?`${activityCount} hoạt động đã xuất bản`:'Chưa có hoạt động được xuất bản — cần soạn và kiểm tra phần này cho bài học.'}),el('p',{class:'muted',text:'Soạn xếp câu, sửa lỗi, điền từ và hội thoại. Nội dung dùng chung cho các tài liệu trong bài.'}),adminLink('Quản lý hoạt động vận dụng',{activities:lesson.id})]));
  const upload=el('form',{class:'simple-upload'},[field('File Word (.docx, tối đa 20 MB)','file','','file'),field('Tên tài liệu','title')]);
  const fileInput=upload.querySelector('[name=file]');fileInput.accept='.docx';fileInput.required=true;upload.querySelector('[name=title]').placeholder='Tự lấy theo tên file';
  fileInput.onchange=()=>{if(fileInput.files[0]&&!upload.querySelector('[name=title]').value)upload.querySelector('[name=title]').value=fileInput.files[0].name.replace(/\.docx$/i,'');};

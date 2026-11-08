@@ -6,6 +6,7 @@ import { json, one, getSet, getItems, publicItem, catalog } from '../repositorie
 import { parse, lessonSchema, setSchema, testSchema, issues, normalizeAnswer } from '../validators/chinese.js';
 import { extractChinese } from './chinese-import.js';
 import { archiveFile, readArchive, DOCX_MIME } from './private-storage.js';
+import {publishedActivitiesForSet} from './chinese-activities.js';
 export { catalog };
 const txRun = c => async (sql,p=[]) => (await c.query(sql,p))[0];
 export async function saveLesson(id, body) {
@@ -34,7 +35,8 @@ export async function importWord(body,file) {
 export async function detail(id,admin,user) {
  const set=await getSet(id,admin), items=await getItems(id);
  const progress=admin?[]:await query('SELECT * FROM chinese_progress WHERE student_id=? AND set_id=?',[user,id]);
- return {set,items:admin?items:items.map(publicItem),issues:admin?issues(items):undefined,progress:progress[0]||null};
+ const activities=admin?null:await publishedActivitiesForSet(id);
+ return {set,activities,items:admin?items:items.map(publicItem),issues:admin?issues(items):undefined,progress:progress[0]||null};
 }
 // The learner explicitly flips a study card. Attempt APIs continue to hide uncommitted answers.
 export async function studyCard(setId,itemId) {

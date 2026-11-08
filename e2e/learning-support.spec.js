@@ -27,15 +27,15 @@ async function mock(page,role='student'){
   await route.fulfill({json:{data}});
  });
 }
-test('today, option audio and beginner mode work without auto-speaking or selecting an answer',async({page})=>{
+test('today and option audio work without auto-speaking or selecting an answer',async({page})=>{
  await mock(page);const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto(origin+'/pages/student/today/');await expect(page.getByRole('button',{name:'Bắt đầu 10 câu'})).toBeVisible();
  await page.evaluate(async()=>{const {renderItem}=await import('/assets/js/worksheet-player.js');window.__selected=null;const node=renderItem({type:'choice',subjectId:'tieng-anh',prompt:'Chọn con mèo.',config:{options:['cat','dog']}},null,value=>window.__selected=value);node.id='support-fixture';document.querySelector('main').append(node);});
  expect(await page.evaluate(()=>window.__spoken.length)).toBe(0);
  await page.locator('#support-fixture').getByRole('button',{name:'Nghe lựa chọn 1',exact:true}).click();expect(await page.evaluate(()=>window.__spoken.at(-1))).toEqual({text:'cat',lang:'en-US'});expect(await page.evaluate(()=>window.__selected)).toBeNull();
- await page.getByRole('button',{name:'Bé mới học',exact:false}).click();await expect(page.locator('body')).toHaveClass(/beginner-mode/);await expect(page.locator('#support-fixture .choice-picture').first()).toBeVisible();await expect(page.locator('#support-fixture .beginner-instruction')).toBeVisible();
+ await expect(page.locator('#beginner-toggle,.beginner-instruction')).toHaveCount(0);
  await page.locator('#support-fixture .worksheet-choices > .choice-with-audio > button').first().click();expect(await page.evaluate(()=>window.__selected)).toBe(0);
- await page.reload();await expect(page.locator('body')).toHaveClass(/beginner-mode/);expect(await page.evaluate(()=>window.__spoken.length)).toBe(0);
+ await page.reload();await expect(page.locator('body')).not.toHaveClass(/beginner-mode/);expect(await page.evaluate(()=>window.__spoken.length)).toBe(0);
  await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:'test-results/today-mobile.png',fullPage:true});
  expect(errors).toEqual([]);
 });

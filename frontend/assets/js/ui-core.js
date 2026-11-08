@@ -74,7 +74,6 @@ export async function initPage(role, active) {
   }
   if(role==='student')await courseProfile(profile,active);
   renderHeader(profile, role, active);
-  if(role==='student')import('./beginner-mode.js').then(({setupBeginnerMode})=>setupBeginnerMode(profile)).catch(()=>{});
   if(role==='student'||role==='admin')import('./chat-widget.js').then(({setupChat})=>setupChat(profile)).catch(()=>{});
   if (role === 'student') loadDiamonds();
   return profile;

@@ -71,3 +71,22 @@ test('floating chat sends private text between students, persists across reload 
   await launcher.click();await a.getByRole('button',{name:/^Bạn bè/}).click();await a.getByRole('button',{name:'Hủy kết bạn',exact:true}).click();await a.getByRole('button',{name:'← Danh sách',exact:true}).click();await a.getByRole('button',{name:/^Bình/}).click();await expect(a.getByRole('textbox',{name:'Tin nhắn',exact:true})).toBeDisabled();await expect(a.locator('.chat-friend-gate')).toContainText('Cần được chấp nhận kết bạn');
  }finally{await Promise.all(contexts.map(c=>c.close()));}
 });
+
+test('chat clears a temporary sync error after recovery without clearing other notices',async({page})=>{
+ let failing=false,hits=0;
+ await page.route('**/api/v1/chat/**',async route=>{
+  if(failing){hits++;await route.fulfill({status:503,json:{error:{message:'Unavailable'}}});return;}
+  await route.fulfill({json:{data:[]}});
+ });
+ await page.goto(origin+'/chat-test');
+ await page.evaluate(async()=>{const {setupChat}=await import('/assets/js/chat-widget.js');setupChat({id:'recovery-user',role:'student'});});
+ await page.locator('.chat-launcher').click();
+ failing=true;
+ await expect(page.locator('.chat-notice')).toContainText('503',{timeout:15000});
+ failing=false;
+ await expect(page.locator('.chat-notice')).toBeEmpty({timeout:15000});
+ expect(hits).toBeGreaterThan(0);
+ await page.evaluate(()=>document.querySelector('.chat-notice').textContent='Action notice');
+ await page.waitForTimeout(4500);
+ await expect(page.locator('.chat-notice')).toHaveText('Action notice');
+});

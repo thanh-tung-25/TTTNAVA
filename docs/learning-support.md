@@ -4,10 +4,6 @@
 
 Các màn hình luyện tập, thi thử, thách đấu, phiếu bài tập, quiz và vận dụng tiếng Trung có nút loa riêng cạnh lựa chọn. Nút nằm cạnh vùng chọn, không lồng trong nút/radio; nghe không làm chọn đáp án. Đúng/sai, thẻ xếp thứ tự và các nhãn nối cặp cũng có nút nghe phù hợp. Dùng cùng cơ chế đọc đề: chỉ phát khi bấm, có dừng, ưu tiên giọng cài sẵn và dự phòng MP3 qua backend. Không đọc hoặc suy ra đáp án đúng. Đọc đáp án/giải thích sau khi chấm không tự phát.
 
-## Bé mới học
-
-Nút **🌱 Bé mới học** đặt đầu phần nội dung của các trang học sinh. Bật sẽ tăng cỡ chữ/nút, giữ một câu đang làm trên màn hình và thêm hướng dẫn có thể nghe. Các lựa chọn là từ tên con vật được hỗ trợ (Việt/Anh/Trung) có hình đại diện tương ứng; số nguyên 1–10 có nhóm chấm để đếm. Nội dung không nhận diện giữ nguyên chữ, không tự gán tranh phỏng đoán. Giữ nguyên chữ và dữ liệu chấm điểm. Chế độ lưu trên trình duyệt, riêng từng tài khoản; không thay đổi cấp lớp hay quyền khóa học.
-
 ## Học hôm nay
 
 Vào **Học tập → Học hôm nay**, hoặc **Thêm → Học hôm nay**. API chỉ dùng khóa đang chọn và đã được mở.

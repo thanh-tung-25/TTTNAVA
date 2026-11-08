@@ -58,12 +58,6 @@ export function questionAudio(text,{language='vi-VN',label='🔊 Nghe câu hỏi
 }
 export function withChoiceAudio(choice,text,index,options={}){
  const row=document.createElement('div');row.className='choice-with-audio';
- if(typeof text==='string'){
-  const value=text.trim().toLocaleLowerCase('vi');
-  const pictures={cat:'meo','mèo':'meo','con mèo':'meo','猫':'meo',dog:'cho','chó':'cho','con chó':'cho','狗':'cho',rabbit:'tho','thỏ':'tho','兔子':'tho',bear:'gau','gấu':'gau','熊':'gau',panda:'gau-truc','gấu trúc':'gau-truc','熊猫':'gau-truc',fox:'cao','cáo':'cao','狐狸':'cao',owl:'cu','cú':'cu','猫头鹰':'cu',monkey:'khi','khỉ':'khi','猴子':'khi',elephant:'voi','voi':'voi','大象':'voi',frog:'ech','ếch':'ech','青蛙':'ech',tiger:'ho','hổ':'ho','老虎':'ho',chicken:'ga','gà':'ga','鸡':'ga'};
-  if(pictures[value]){const image=document.createElement('img');image.className='choice-picture';image.src='/assets/avatars/'+pictures[value]+'.svg';image.alt='';image.width=64;image.height=64;choice.prepend(image);}
-  else if(/^[1-9]$|^10$/.test(value)){const dots=document.createElement('span');dots.className='choice-count';dots.setAttribute('aria-hidden','true');dots.textContent='● '.repeat(Number(value)).trim();choice.prepend(dots);}
- }
  const audio=questionAudio(text,{...options,label:'Nghe lựa chọn '+index,compact:true});
  audio.addEventListener('click',e=>e.stopPropagation());row.append(choice,audio);return row;
 }

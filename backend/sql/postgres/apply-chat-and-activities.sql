@@ -36,5 +36,17 @@ ALTER TABLE chat_reports ENABLE ROW LEVEL SECURITY;
 REVOKE ALL ON TABLE chat_rooms,chat_members,chat_messages,chat_blocks,chat_reports FROM PUBLIC,anon,authenticated;
 
 
+-- 025_chat_friendships.sql: old conversations are NOT automatically friendships.
+CREATE TABLE IF NOT EXISTS chat_friendships (
+ user_a char(36) NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
+ user_b char(36) NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
+ requester_id char(36) NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
+ status varchar(12) NOT NULL DEFAULT 'pending' CHECK(status IN ('pending','accepted')),
+ created_at timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ PRIMARY KEY(user_a,user_b),CHECK(user_a<>user_b),CHECK(requester_id=user_a OR requester_id=user_b)
+);
+ALTER TABLE chat_friendships ENABLE ROW LEVEL SECURITY;
+REVOKE ALL ON TABLE chat_friendships FROM PUBLIC,anon,authenticated;
+
 COMMIT;
-SELECT table_name FROM information_schema.tables WHERE table_schema='ttnava_stage' AND table_name IN ('chinese_activities','chat_rooms','chat_members','chat_messages','chat_blocks','chat_reports') ORDER BY table_name;
+SELECT table_name FROM information_schema.tables WHERE table_schema='ttnava_stage' AND table_name IN ('chinese_activities','chat_rooms','chat_members','chat_messages','chat_blocks','chat_reports','chat_friendships') ORDER BY table_name;

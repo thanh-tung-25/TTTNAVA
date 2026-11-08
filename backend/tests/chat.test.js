@@ -4,16 +4,20 @@ import {createTestUser,loginStudent,app} from './helpers/index.js';
 import request from 'supertest';
 import {query} from '../src/config/db.js';
 const users=[],agents=[];let direct,group,message,reportId;
-beforeAll(async()=>{for(const options of [{},{},{},{role:'admin'},{role:'admin',adminScope:'primary'}]){const u=await createTestUser(options);users.push(u);agents.push(await loginStudent(u));}});
+beforeAll(async()=>{for(const options of [{},{},{},{role:'admin'},{role:'admin',adminScope:'primary'},{role:'admin',adminScope:'chinese'}]){const u=await createTestUser(options);users.push(u);agents.push(await loginStudent(u));}});
 afterAll(async()=>{for(const u of users)await query('DELETE FROM profiles WHERE id=?',[u.id]);});
 const base='/api/v1/chat';
+const connect=async(a,b)=>{expect((await agents[a].put(base+'/friends/'+users[b].id).send({action:'request'})).status).toBe(200);expect((await agents[b].put(base+'/friends/'+users[a].id).send({action:'accept'})).status).toBe(200);};
 it('requires login and exposes only student names, not contact information',async()=>{
  expect((await request(app).get(base+'/rooms')).status).toBe(401);
  expect((await agents[0].get(base+'/students?q=x')).status).toBe(400);
- const found=await agents[0].get(base+'/students').query({q:users[1].username});expect(found.status).toBe(200);expect(found.body.data.map(u=>u.id)).toContain(users[1].id);expect(Object.keys(found.body.data[0]).sort()).toEqual(['avatar_key','display_name','id','username']);
+ const found=await agents[0].get(base+'/students').query({q:users[1].username});expect(found.status).toBe(200);expect(found.body.data.map(u=>u.id)).toContain(users[1].id);expect(Object.keys(found.body.data[0]).sort()).toEqual(['avatar_key','display_name','friendship','id','role','username']);
  expect((await agents[3].post(base+'/rooms').send({kind:'direct',members:[users[0].id]})).status).toBe(403);
 });
 it('reuses direct rooms, authenticates membership, stores text and retries once',async()=>{
+ expect((await agents[0].post(base+'/rooms').send({kind:'direct',members:[users[1].id]})).status).toBe(403);
+ expect((await agents[0].post(base+'/rooms').send({kind:'group',title:'Not friends',members:[users[1].id]})).status).toBe(403);
+ await connect(0,1);
  const made=await agents[0].post(base+'/rooms').send({kind:'direct',members:[users[1].id]});expect(made.status).toBe(200);direct=made.body.data.id;
  expect((await agents[1].post(base+'/rooms').send({kind:'direct',members:[users[0].id]})).body.data.id).toBe(direct);
  expect((await agents[2].get(`${base}/rooms/${direct}/messages`)).status).toBe(404);
@@ -32,6 +36,8 @@ it('blocks sending in both directions and supports unblocking',async()=>{
  expect((await agents[1].get(`${base}/rooms/${direct}/messages`)).body.data.items).toHaveLength(0);
  expect((await agents[0].post(base+'/rooms').send({kind:'direct',members:[users[1].id]})).status).toBe(403);
  await agents[1].delete(base+'/blocks/'+users[0].id);expect((await agents[1].get(`${base}/rooms/${direct}/messages`)).body.data.items).toHaveLength(1);
+ expect((await agents[1].post(`${base}/rooms/${direct}/messages`).send({text:'not friends after unblock',client_id:randomUUID()})).status).toBe(403);
+ await connect(0,1);
 });
 it('only members can report and only super admins can moderate reported messages',async()=>{
  expect((await agents[2].post(`${base}/messages/${message}/report`).send({reason:'not member'})).status).toBe(404);
@@ -44,6 +50,8 @@ it('only members can report and only super admins can moderate reported messages
 it('manages groups, prevents non-owner changes, revokes removed users and transfers ownership on leave',async()=>{
  group=(await agents[0].post(base+'/rooms').send({kind:'group',title:'Nhóm ôn tập',members:[users[1].id]})).body.data.id;
  expect((await agents[1].put(`${base}/rooms/${group}/members`).send({action:'add',student_id:users[2].id})).status).toBe(403);
+ expect((await agents[0].put(`${base}/rooms/${group}/members`).send({action:'add',student_id:users[2].id})).status).toBe(403);
+ await connect(0,2);
  expect((await agents[0].put(`${base}/rooms/${group}/members`).send({action:'add',student_id:users[2].id})).status).toBe(200);
  expect((await agents[2].get(`${base}/rooms/${group}/messages`)).status).toBe(200);
  await agents[0].put(`${base}/rooms/${group}/members`).send({action:'remove',student_id:users[2].id});
@@ -54,4 +62,27 @@ it('manages groups, prevents non-owner changes, revokes removed users and transf
  expect((await agents[0].get(`${base}/rooms/${group}/messages`)).status).toBe(404);
  await agents[1].put(`${base}/rooms/${group}/members`).send({action:'leave'});
  expect(await query('SELECT id FROM chat_rooms WHERE id=?',[group])).toHaveLength(0);
+});
+it('requires explicit recipient acceptance and supports cancel, reject and unfriend',async()=>{
+ const url=base+'/friends/'+users[2].id;
+ expect((await agents[1].put(url).send({action:'request'})).body.data.friendship).toBe('outgoing');
+ expect((await agents[1].put(url).send({action:'accept'})).status).toBe(403);
+ expect((await agents[2].get(base+'/friends')).body.data.find(p=>p.id===users[1].id).friendship).toBe('incoming');
+ expect((await agents[2].put(base+'/friends/'+users[1].id).send({action:'request'})).body.data.friendship).toBe('incoming');
+ await agents[1].put(url).send({action:'cancel'});expect((await agents[2].put(base+'/friends/'+users[1].id).send({action:'accept'})).status).toBe(403);
+ await agents[1].put(url).send({action:'request'});await agents[2].put(base+'/friends/'+users[1].id).send({action:'reject'});
+ expect((await agents[1].get(base+'/friends')).body.data.some(p=>p.id===users[2].id)).toBe(false);
+ await agents[0].put(base+'/friends/'+users[1].id).send({action:'remove'});
+ expect((await agents[0].post(`${base}/rooms/${direct}/messages`).send({text:'unfriended',client_id:randomUUID()})).status).toBe(403);
+ expect((await agents[0].get(base+'/rooms')).body.data.find(r=>r.id===direct).can_message).toBe(false);
+ await connect(0,1);expect((await agents[0].post(base+'/rooms').send({kind:'direct',members:[users[1].id]})).body.data.id).toBe(direct);
+});
+it('Chinese administrators can be found, befriended and chat without gaining moderation privileges',async()=>{
+ const found=(await agents[0].get(base+'/students').query({q:users[5].username})).body.data;expect(found.some(p=>p.id===users[5].id&&p.role==='admin')).toBe(true);
+ await connect(5,0);const room=(await agents[5].post(base+'/rooms').send({kind:'direct',members:[users[0].id]})).body.data.id;
+ expect((await agents[5].post(`${base}/rooms/${room}/messages`).send({text:'Cùng học tiếng Trung nhé',client_id:randomUUID()})).status).toBe(200);
+ expect((await agents[0].get(`${base}/rooms/${room}/messages`)).body.data.items[0].body).toBe('Cùng học tiếng Trung nhé');
+ expect((await agents[5].get(base+'/reports')).status).toBe(403);
+ expect((await agents[5].post(base+'/rooms').send({kind:'group',title:'Nhóm tiếng Trung',members:[users[0].id,users[1].id]})).status).toBe(403);
+ await connect(5,1);expect((await agents[5].post(base+'/rooms').send({kind:'group',title:'Nhóm tiếng Trung',members:[users[0].id,users[1].id]})).status).toBe(200);
 });

@@ -1,0 +1,8 @@
+CREATE TABLE chat_friendships (
+ user_a CHAR(36) NOT NULL,user_b CHAR(36) NOT NULL,requester_id CHAR(36) NOT NULL,
+ status VARCHAR(12) NOT NULL DEFAULT 'pending',created_at DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+ PRIMARY KEY(user_a,user_b),
+ FOREIGN KEY(user_a) REFERENCES profiles(id) ON DELETE CASCADE,
+ FOREIGN KEY(user_b) REFERENCES profiles(id) ON DELETE CASCADE,
+ FOREIGN KEY(requester_id) REFERENCES profiles(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

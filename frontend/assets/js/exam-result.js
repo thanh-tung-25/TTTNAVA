@@ -1,4 +1,5 @@
 import { escapeHtml } from '/assets/js/api.js';
+import {attachQuestionAudio} from './question-audio.js';
 import { answerText, praiseFor, syncDiamondTotal } from '/assets/js/ui.js';
 import { elements, show, store } from './exam-context.js';
 
@@ -40,5 +41,6 @@ export function renderResult() {
         <p class="muted">${escapeHtml(question.explanation ?? '')}</p>
       </div>`;
   }).join('');
+  document.querySelectorAll('#review-list .review-item > strong').forEach((node,index)=>attachQuestionAudio(node,attempt.questions[index].prompt,{language:store.subjectId==='tieng-anh'?'en-US':'vi-VN'}));
   show(elements.resultView);
 }

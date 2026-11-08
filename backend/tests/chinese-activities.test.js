@@ -29,7 +29,11 @@ it('validates all Q1 templates and rejects incorrect or oversized publication da
  expect(activityTemplate({level_id:1,title:'Bài 1 . Xin Chào'}).topic).toBe('Chào hỏi');
  expect(activityTemplate({level_id:1,title:'Bài 2 . Hỏi tên, Hỏi họ, Quốc tịch,'}).topic).toBe('Làm quen');
  expect(activityTemplate({level_id:1,title:'Bài 1 chưa rõ nội dung'})).toBeNull();
- for(const title of ['你好','你叫什么名字','很高兴认识你','你去哪儿','你要吃什么','你在哪儿工作'])expect(validateActivities({...activityTemplate({level_id:1,title}),status:'published',revision:0}).tasks).toHaveLength(7);
+ for(const title of ['你好','你叫什么名字','很高兴认识你','你去哪儿','你要吃什么','你在哪儿工作']){
+  const tasks=validateActivities({...activityTemplate({level_id:1,title}),status:'published',revision:0}).tasks;
+  expect(tasks).toHaveLength(40);
+  for(const type of ['order','fix','fill','dialogue'])expect(tasks.filter(t=>t.type===type)).toHaveLength(10);
+ }
  const valid={revision:0,status:'published',topic:'Test',tasks:[fill]};
  for(const patch of [
   {tasks:[]},{topic:''},{tasks:[{...fill,answer:''}]},{tasks:[{...fill,type:'fix',options:['没有',' 没有 ']}]},

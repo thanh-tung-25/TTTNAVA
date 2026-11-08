@@ -25,9 +25,9 @@ export async function save(admin,id,body){
  });
 }
 export async function attempt(user,id,run=query){
- const [row]=await run('SELECT * FROM worksheet_attempts WHERE id=? AND student_id=?',[id,user]);if(!row)throw notFound();
+ const [row]=await run('SELECT a.*,w.subject_id FROM worksheet_attempts a LEFT JOIN worksheets w ON w.id=a.worksheet_id WHERE a.id=? AND a.student_id=?',[id,user]);if(!row)throw notFound();
  await requireCourse(user,'grade-'+row.grade,run);
- const snapshot=json(row.snapshot);return {...row,snapshot:undefined,title:snapshot.title,items:snapshot.items.map(publicItem),answers:json(row.answers),results:row.results?json(row.results):null};
+ const snapshot=json(row.snapshot);return {...row,subject_id:snapshot.subject_id||row.subject_id,snapshot:undefined,title:snapshot.title,items:snapshot.items.map(publicItem),answers:json(row.answers),results:row.results?json(row.results):null};
 }
 export async function start(user,id){
  return withTransaction(async c=>{
@@ -36,7 +36,7 @@ export async function start(user,id){
   await sheet(id,false,user,run);const data=await sheet(id,true,null,run);
   const [open]=await run("SELECT id FROM worksheet_attempts WHERE worksheet_id=? AND student_id=? AND status='in_progress' ORDER BY started_at DESC LIMIT 1",[id,user]);
   const attemptId=open?.id||randomUUID();
-  if(!open)await run('INSERT INTO worksheet_attempts(id,worksheet_id,student_id,grade,snapshot,answers) VALUES (?,?,?,?,?,?)',[attemptId,id,user,data.grade,JSON.stringify({title:data.title,items:data.items}),'{}']);
+  if(!open)await run('INSERT INTO worksheet_attempts(id,worksheet_id,student_id,grade,snapshot,answers) VALUES (?,?,?,?,?,?)',[attemptId,id,user,data.grade,JSON.stringify({title:data.title,subject_id:data.subject_id,items:data.items}),'{}']);
   return attempt(user,attemptId,run);
  });
 }

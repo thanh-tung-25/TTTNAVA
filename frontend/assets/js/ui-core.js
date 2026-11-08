@@ -73,6 +73,7 @@ export async function initPage(role, active) {
   }
   if(role==='student')await courseProfile(profile,active);
   renderHeader(profile, role, active);
+  if(role==='student'||isSuperAdmin(profile))import('./chat-widget.js').then(({setupChat})=>setupChat(profile)).catch(()=>{});
   if (role === 'student') loadDiamonds();
   return profile;
 }

@@ -11,8 +11,12 @@ import courseRouter from './courses.js';
 import worksheetRouter from './worksheets.js';
 import adminContentRouter from './admin-content.js';
 import storageRouter from './storage.js';
+import questionAudioRouter from './question-audio.js';
+import chatRouter from './chat.js';
 
 const router = Router();
+router.use('/chat',chatRouter);
+router.use('/question-audio',questionAudioRouter);
 router.use('/storage', storageRouter);
 router.use('/admin/content', adminContentRouter);
 router.use('/worksheets', worksheetRouter);

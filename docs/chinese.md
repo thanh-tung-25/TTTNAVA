@@ -1,12 +1,20 @@
 # Lộ trình Tiếng Trung
 
+## Nghe câu hỏi
+
+Nút **Nghe câu hỏi** dùng chung cho luyện tập, kiểm tra, thi đấu, các dạng phiếu bài tập và tiếng Trung (quiz, thẻ học, vận dụng, ôn kết quả). Chỉ đọc khi bấm; bấm lại để dừng. Nếu thiết bị có giọng phù hợp, dùng giọng đó ở tốc độ 0,8. Nếu thiếu giọng, thiếu API đọc, hoặc giọng báo lỗi, tự tải MP3 qua backend và phát ở tốc độ 0,85; người dùng không cần cài giọng. Câu Việt và chữ Hán chọn ngôn ngữ tương ứng, môn tiếng Anh dùng ngôn ngữ mặc định tiếng Anh. Đọc phần đề được truyền riêng, không đọc đáp án hoặc lời giải. Dừng và hủy tải khi chuyển câu, ẩn màn hình làm bài hoặc rời trang. Dữ liệu chỉ có trong hình ảnh không thể tự đọc; cần đề bằng chữ.
+
+Mã dùng chung: `frontend/assets/js/question-audio.js`; endpoint POST `/api/v1/question-audio` yêu cầu đăng nhập, giới hạn tần suất, đoạn tối đa 180 ký tự và chỉ cho vi-VN/en-US/zh-CN. Backend dùng nguồn MP3 Google Translate cố định, cache tối đa 100 đoạn trong bộ nhớ và gộp yêu cầu đang tải trùng. Chỉ gửi đoạn đề cần đọc sau khi người dùng bấm nghe. Cần mạng từ backend đến nguồn âm thanh; nguồn này không có cam kết SLA và có thể giới hạn truy cập. Nếu trình duyệt chặn phát sau khi tải, hiện điều khiển phát trực tiếp; lỗi mạng được báo và có thể bấm thử lại. Khi triển khai cần cập nhật cả backend và frontend. Phiếu bài tập giữ thông tin môn trong snapshot để chọn giọng đúng, nút nghe vẫn hoạt động khi xem bài đã nộp.
+
 ## Quản lý hoạt động vận dụng
 
-Khi chuẩn bị các bài tiếng Trung tiếp theo, luôn chuẩn bị cả hoạt động vận dụng phù hợp nội dung nguồn, cùng từ vựng và bộ câu hỏi. Kiểm tra phần vận dụng đã xuất bản ở đúng bài/HSK khi bàn giao; không chỉ lưu file Word. Các bài Q1 1–6 đã có mẫu 7 hoạt động/bài. Tên tiếng Việt “Xin Chào” và “Hỏi tên, Hỏi họ, Quốc tịch” cũng nhận đúng mẫu bài 1–2, không dựa riêng vào số thứ tự để đoán bài.
+Khi chuẩn bị các bài tiếng Trung tiếp theo, luôn chuẩn bị cả hoạt động vận dụng phù hợp nội dung nguồn, cùng từ vựng và bộ câu hỏi. Mỗi dạng cần ít nhất 10 câu để có lượt luyện đầy đủ. Kiểm tra phần vận dụng đã xuất bản ở đúng bài/HSK khi bàn giao; không chỉ lưu file Word. Các bài Q1 1–6 có mẫu 40 hoạt động/bài: mỗi dạng xếp câu, sửa lỗi, điền từ, hội thoại có 10 câu. Tên tiếng Việt “Xin Chào” và “Hỏi tên, Hỏi họ, Quốc tịch” cũng nhận đúng mẫu bài 1–2, không dựa riêng vào số thứ tự để đoán bài.
+
+Mỗi lượt lấy ngẫu nhiên tối đa 10 câu không lặp từ dạng được chọn; lượt tổng hợp lấy 10 câu từ toàn bộ nội dung. Luyện lại tạo lượt trộn mới, giữ nguyên dạng đã chọn. Nếu admin chỉ đăng ít hơn 10 câu thì hiển thị đúng số câu sẵn có, không lặp câu để đủ số lượng. Script `node backend/scripts/expand-chinese-activities.mjs` bổ sung ngân hàng câu cho bài Q1 hiện có và giữ nguyên nội dung đã soạn.
 
 Vào **Quản lý Tiếng Trung → Bài học → chọn bài → Quản lý hoạt động vận dụng**. Soạn chủ đề, thêm hoạt động theo bốn dạng **Xếp câu, Sửa lỗi, Điền từ, Hội thoại**; nhập đáp án, gợi ý và lời giải. Mỗi bài tối đa 100 hoạt động. Dạng xếp câu nhập từng từ theo thứ tự câu đúng, mỗi dòng một từ, gồm cả dấu câu; đáp án tự ghép và các từ được trộn khi học. Dạng điền từ nhận một từ/cụm từ đáp án, so sánh sau chuẩn hóa Unicode, khoảng trắng ngoài và chữ thường, giữ dấu thanh.
 
-Admin có thể đổi thứ tự, bỏ hoạt động, **Xem thử** mà chưa lưu, **Lưu bản nháp** hoặc **Cho học sinh xem**. Lưu nháp một bộ đang đăng sẽ ẩn bộ đó, có hộp xác nhận. Xuất bản bắt buộc có chủ đề, hoạt động, đáp án và lời giải hợp lệ. Bản lưu có revision để chặn ghi đè từ cửa sổ khác. Những bài Q1 có tên phù hợp có nút **Nạp mẫu Q1 cho bài này**, gồm 7 hoạt động mẫu để chỉnh sửa trước khi lưu. Mẫu không phải nguồn tự động cho giao diện học sinh.
+Admin có thể đổi thứ tự, bỏ hoạt động, **Xem thử** mà chưa lưu, **Lưu bản nháp** hoặc **Cho học sinh xem**. Lưu nháp một bộ đang đăng sẽ ẩn bộ đó, có hộp xác nhận. Xuất bản bắt buộc có chủ đề, hoạt động, đáp án và lời giải hợp lệ. Bản lưu có revision để chặn ghi đè từ cửa sổ khác. Những bài Q1 có tên phù hợp có nút **Nạp mẫu Q1 cho bài này**, gồm 40 hoạt động mẫu để chỉnh sửa trước khi lưu. Mẫu không phải nguồn tự động cho giao diện học sinh.
 
 Nội dung lưu trong bảng `chinese_activities`, thuộc bài học và dùng chung cho mọi tài liệu trong bài; dùng được ở mọi cấp HSK. Học sinh chỉ thấy bộ đã xuất bản khi cả bài học, tài liệu đều published và khóa học được mở. API chi tiết tài liệu trả `activities`; catalog trả `activity_count`. Bản nháp không được trả cho học sinh. Xóa bài học xóa luôn bộ hoạt động. Tài liệu không cần chứa câu hỏi quiz để có phần vận dụng.
 
@@ -14,7 +22,7 @@ API admin: GET/PUT `lessons/:id/activities`, POST `lessons/:id/activities/previe
 
 Cài đặt MySQL: chạy `npm run db:migrate` để thêm migration 023. Có thể chạy `node backend/scripts/migrate-chinese-activities.mjs` một lần để chuyển các mẫu Q1 cũ sang dữ liệu cho các bài có tên phù hợp; không ghi đè bộ đã có. PostgreSQL có SQL tương ứng tại `backend/sql/postgres/023_chinese_activities.sql`, cần áp dụng vào schema ứng dụng trước khi triển khai mã mới.
 
-Kiểm tra: `npm --prefix backend test -- chinese-activities.test.js` kiểm tra quyền admin, draft/publish, preview không lưu, khóa học, bài ẩn, tranh chấp và xóa bài. `npx playwright test --config playwright.applied.config.js` kiểm tra frontend thật với API giả lập: 42 hoạt động mẫu, gợi ý, câu sai, từ trùng, admin soạn cả bốn dạng → xem thử → lưu → tải lại → xuất bản → học sinh điền từ → ẩn lại, ở 390px. Không thay đổi dữ liệu thật của người dùng.
+Kiểm tra: `npm --prefix backend test -- chinese-activities.test.js` kiểm tra quyền admin, draft/publish, preview không lưu, khóa học, bài ẩn, tranh chấp và xóa bài. `npx playwright test --config playwright.applied.config.js` kiểm tra frontend thật với API giả lập: 240 hoạt động mẫu, gợi ý, câu sai, từ trùng, admin soạn cả bốn dạng → xem thử → lưu → tải lại → xuất bản → học sinh điền từ → ẩn lại, ở 390px. Không thay đổi dữ liệu thật của người dùng.
 
 ## Cách dùng admin hiện tại
 

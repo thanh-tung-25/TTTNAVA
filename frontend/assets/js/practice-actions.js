@@ -1,4 +1,5 @@
 import { api, escapeHtml } from '/assets/js/api.js';
+import {attachQuestionAudio} from './question-audio.js';
 import {
   answerText,
   praiseFor,
@@ -89,6 +90,7 @@ export async function finishPractice() {
         </div>
       `).join('')
       : '<div class="empty"><span class="empty-icon">🌟</span>Con làm đúng hết, không có câu sai!</div>';
+    document.querySelectorAll('#review-list .review-item > strong').forEach((node,index)=>attachQuestionAudio(node,wrong[index].prompt,{language:store.subjectId==='tieng-anh'?'en-US':'vi-VN'}));
     show(elements.resultView);
   } catch (error) {
     window.alert(error.message);

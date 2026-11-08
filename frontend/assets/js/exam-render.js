@@ -1,4 +1,5 @@
 import {loadExamCatalog} from './exam-catalog-view.js';
+import {attachQuestionAudio} from './question-audio.js';
 import { api, escapeHtml } from '/assets/js/api.js';
 import { TYPE_LABELS } from '/assets/js/ui.js';
 import {
@@ -77,6 +78,7 @@ export function renderQuestion() {
   document.getElementById('exam-bar').style.width = `${((store.current + 1) / attempt.questions.length) * 100}%`;
   document.getElementById('question-type').textContent = TYPE_LABELS[question.type] ?? '';
   document.getElementById('question-prompt').textContent = question.prompt;
+  attachQuestionAudio(document.getElementById('question-prompt'),question.prompt,{language:store.subjectId==='tieng-anh'?'en-US':'vi-VN'});
   document.getElementById('prev-button').disabled = store.current === 0;
   document.getElementById('next-button').disabled = store.current + 1 >= attempt.questions.length;
   elements.answerArea.replaceChildren();

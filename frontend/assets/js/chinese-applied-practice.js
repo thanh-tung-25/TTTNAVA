@@ -1,4 +1,5 @@
 import {el,button,card} from '/assets/js/chinese-common.js';
+import {questionAudio} from './question-audio.js';
 
 // Only published activities supplied by the lesson API are rendered here.
 export function mountPractice(host,lesson){
@@ -11,11 +12,11 @@ export function mountPractice(host,lesson){
  const taskHint=task=>task.hint||(task.type==='dialogue'?task.meaning:task.type==='order'?'Bắt đầu bằng: '+task.tokens[0]:task.type==='fill'?'Hãy đọc cả câu trước khi điền từ.':task.explanation);
  const primary=(text,fn)=>{const b=button(text,fn);b.classList.add('btn-primary');return b;};
  const mix=arr=>{const copy=[...arr];for(let i=copy.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];}return copy;};
- let tokens=[],choices=[];
- const start=type=>{queue=tasks.filter(t=>!type||t.type===type);index=0;correct=0;nextTask();};
+ let tokens=[],choices=[],currentType;
+ const start=type=>{currentType=type;queue=mix(tasks.filter(t=>!type||t.type===type)).slice(0,10);index=0;correct=0;nextTask();};
  const nextTask=()=>{helped=false;checked=false;selection='';chosen=[];tokens=mix(queue[index].tokens||[]);choices=mix(queue[index].options||[]);render();const heading=box.querySelector('h2');heading.tabIndex=-1;heading.focus({preventScroll:true});};
  function menu(){
-  box.replaceChildren(el('h2',{text:'Luyện vận dụng'}),el('p',{text:lesson.topic+' · Khoảng '+Math.max(1,Math.ceil(tasks.length*.7))+' phút, '+tasks.length+' hoạt động.'}),
+  box.replaceChildren(el('h2',{text:'Luyện vận dụng'}),el('p',{text:lesson.topic+' · Mỗi lượt tối đa 10 câu, chọn ngẫu nhiên từ '+tasks.length+' hoạt động.'}),
    primary('Bắt đầu lượt ngắn',()=>start()),el('div',{class:'applied-shortcuts'},Object.entries(labels).filter(([type])=>tasks.some(t=>t.type===type)).map(([type,label])=>button(label,()=>start(type)))),
    el('p',{class:'muted',text:'Luyện tự do có gợi ý. Kết quả chỉ tính trong lượt này; không cộng hoặc trừ Kim Cương.'}));
  }
@@ -25,6 +26,7 @@ export function mountPractice(host,lesson){
    el('progress',{max:queue.length,value:index,'aria-label':'Tiến độ lượt luyện'}),
    el('h2',{text:task.type==='order'?task.prompt:task.type==='fix'?'Chọn câu sửa đúng':task.type==='fill'?'Điền từ còn thiếu':'Đến lượt bạn nói'}));
   const feedback=el('div',{'aria-live':'polite',class:'applied-feedback'});
+  box.append(questionAudio((task.type==='fix'?'Chọn câu sửa đúng. ':task.type==='fill'?'Điền từ còn thiếu. ':'')+task.prompt+(task.type==='dialogue'?' '+task.speech:'')));
   const check=primary('Kiểm tra',()=>{
    if(checked)return;
    if(!selection){feedback.textContent='Hãy chọn câu trả lời trước nhé.';return;}
@@ -61,7 +63,7 @@ export function mountPractice(host,lesson){
   }
  }
  function finish(){
-  box.replaceChildren(el('h2',{text:'Hoàn thành lượt luyện!'}),el('p',{class:'quiz-score',text:`${correct}/${queue.length}`}),el('p',{text:'Câu đúng không dùng gợi ý. Đây là kết quả của lượt luyện này.'}),el('div',{class:'learn-actions'},[primary('Luyện lại',()=>start(queue.every(t=>t.type===queue[0].type)?queue[0].type:undefined)),button('Chọn cách luyện',menu)]));
+  box.replaceChildren(el('h2',{text:'Hoàn thành lượt luyện!'}),el('p',{class:'quiz-score',text:`${correct}/${queue.length}`}),el('p',{text:'Câu đúng không dùng gợi ý. Đây là kết quả của lượt luyện này.'}),el('div',{class:'learn-actions'},[primary('Luyện lại',()=>start(currentType)),button('Chọn cách luyện',menu)]));
  }
  menu();
 }

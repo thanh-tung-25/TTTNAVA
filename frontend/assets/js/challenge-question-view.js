@@ -1,4 +1,5 @@
 import { escapeHtml } from '/assets/js/api.js';
+import {attachQuestionAudio} from './question-audio.js';
 import { answerText, TYPE_LABELS } from '/assets/js/ui.js';
 import { elements, requestRender, store } from './challenge-context.js';
 import { submitAnswer } from './challenge-match-actions.js';
@@ -16,6 +17,7 @@ export function renderQuestionCard(question) {
       </div>
     </article>`;
   document.getElementById('match-prompt').textContent = question.prompt;
+  attachQuestionAudio(document.getElementById('match-prompt'),question.prompt,{language:(store.match?.subjectId||store.match?.topic?.subjectId)==='tieng-anh'?'en-US':'vi-VN'});
   document.getElementById('match-bar').style.width = '100%';
   const area = document.getElementById('match-answer-area');
 

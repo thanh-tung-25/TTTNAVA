@@ -1,4 +1,5 @@
 import { api, escapeHtml } from '/assets/js/api.js';
+import {attachQuestionAudio} from './question-audio.js';
 import { answerText, TYPE_LABELS } from '/assets/js/ui.js';
 import {
   SUBJECTS,
@@ -113,6 +114,7 @@ export function renderQuestion() {
   document.getElementById('quiz-bar').style.width = `${((store.current + 1) / session.questions.length) * 100}%`;
   document.getElementById('question-type').textContent = TYPE_LABELS[question.type] ?? '';
   document.getElementById('question-prompt').textContent = question.prompt;
+  attachQuestionAudio(document.getElementById('question-prompt'),question.prompt,{language:store.subjectId==='tieng-anh'?'en-US':'vi-VN'});
   elements.feedback.classList.add('hidden');
   elements.feedback.className = 'feedback hidden';
   elements.answerArea.replaceChildren();

@@ -1,9 +1,11 @@
 import {el} from './api.js';
+import {questionAudio} from './question-audio.js';
 export const ITEM_TYPES={fill:'Điền đáp án',blanks:'Nhiều ô trống',choice:'Chọn đáp án',compare:'Chọn dấu > < =',ordering:'Sắp xếp',matching:'Nối cặp',column:'Đặt tính',word:'Toán có lời văn',drawing:'Tự luận / vẽ'};
 export const imageUrl=id=>'/api/v1/worksheets/images/'+encodeURIComponent(id);
 const btn=(text,fn)=>el('button',{type:'button',class:'btn btn-ghost',text,onclick:fn});
 export function renderItem(item,value,onChange){
  const box=el('section',{class:'worksheet-question'},[el('span',{class:'worksheet-type',text:ITEM_TYPES[item.type]}),el('h2',{class:'worksheet-prompt',text:item.prompt})]);
+ box.append(questionAudio(item.prompt,{language:item.subjectId==='tieng-anh'?'en-US':'vi-VN'}));
  if(item.imageId)box.append(el('img',{class:'worksheet-illustration',src:imageUrl(item.imageId),alt:'Hình minh họa câu hỏi'}));
  const input=(label,current,fn,numeric=false)=>{
   const i=el('input',{class:'input',type:'text',value:current??'','aria-label':label,maxlength:300,...(numeric?{inputmode:'numeric'}:{})});i.oninput=()=>fn(i.value);return el('label',{class:'worksheet-answer'},[el('span',{text:label}),i]);

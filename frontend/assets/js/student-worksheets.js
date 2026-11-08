@@ -34,8 +34,8 @@ function render(){
  const item=current.items[index],finished=current.status!=='in_progress';
  const heading=el('div',{class:'card'},[el('h2',{text:current.title}),el('p',{class:'muted',text:'Câu '+(index+1)+' / '+current.items.length}),el('progress',{class:'worksheet-progress',max:current.items.length,value:index+1,'aria-label':'Tiến độ bài tập'})]);
  if(finished)heading.append(el('p',{class:'worksheet-score',text:current.status==='pending_review'?'Chờ giáo viên chấm':current.score+'/100'}));
- const question=renderItem(item,current.answers[item.id],value=>{if(finished)return;current.answers[item.id]=value;schedule();});
- if(finished){question.querySelectorAll('input,textarea,select,button').forEach(e=>e.disabled=true);question.querySelectorAll('canvas').forEach(e=>e.style.pointerEvents='none');}
+ const question=renderItem({...item,subjectId:current.subject_id||current.subjectId},current.answers[item.id],value=>{if(finished)return;current.answers[item.id]=value;schedule();});
+ if(finished){question.querySelectorAll('input,textarea,select,button:not(.question-audio button)').forEach(e=>e.disabled=true);question.querySelectorAll('canvas').forEach(e=>e.style.pointerEvents='none');}
  const card=el('section',{class:'card'},[question]);const result=current.results?.find(r=>r.id===item.id);if(result)card.append(resultBlock(result));
  const back=button('← Câu trước',async()=>{await save();index--;render();},true);back.disabled=index===0;
  const controls=el('div',{class:'worksheet-footer'},[back]);

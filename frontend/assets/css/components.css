@@ -1,4 +1,8 @@
 @import url('/assets/css/student.css');
+.question-audio{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:.6rem 0 1rem}
+.question-audio button{min-height:44px;white-space:normal;max-width:100%;font:inherit}
+.question-audio button[aria-pressed=true]{background:#e6f4f7;color:#15536b}
+.question-audio [role=status]{font-size:.9rem;line-height:1.5;color:#52697d;max-width:100%}
 
 /* ===== Thanh đầu trang ===== */
 .topbar {

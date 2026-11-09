@@ -5,6 +5,7 @@ export function setupFeedback(profile){
  if(document.getElementById('feedback-open'))return;
  const css=el('link',{rel:'stylesheet',href:'/assets/css/study-hub.css'});document.head.append(css);
  const trigger=el('button',{id:'feedback-open',type:'button',class:'btn btn-ghost btn-sm',text:'Góp ý / Báo lỗi'});
+ if(profile.role==='student'){trigger.textContent='?';trigger.setAttribute('aria-label','Góp ý / Báo lỗi');trigger.title='Góp ý / Báo lỗi';}
  (document.querySelector('.topbar-user')||document.querySelector('main')||document.body).append(trigger);
  const safePath=()=>{const p=new URLSearchParams();for(const key of ['set','attempt','session','topic','mode','view','subject','level']){const value=new URLSearchParams(location.search).get(key);if(value)p.set(key,value);}return location.pathname+(p.size?'?'+p:'');};
  function open(context=''){
@@ -19,7 +20,7 @@ export function setupFeedback(profile){
  trigger.onclick=()=>open();
  const prompts='.question-prompt,.quiz-prompt,.worksheet-prompt,.study-prompt,.applied-practice>h2,.applied-hanzi,.review-item>strong';
  const enhance=()=>{document.querySelectorAll(prompts).forEach(prompt=>{const anchor=prompt.closest('button,label')||prompt;if(anchor.parentElement.querySelector(':scope > .question-feedback'))return;const b=el('button',{type:'button',class:'question-feedback btn btn-ghost btn-sm',text:'Phản ánh câu này',onclick:()=>open((prompt.closest('.applied-practice')?.textContent||prompt.textContent).trim())});anchor.after(b);
-  if(!anchor.parentElement.querySelector('.hub-hint'))b.after(el('details',{class:'hub-hint'},[el('summary',{text:'Gợi ý cách làm'}),el('p',{text:'Nghe hoặc đọc lại đề, tìm điều câu hỏi yêu cầu. Với câu dài, chia thành từng ý nhỏ; so sánh từng lựa chọn trước khi trả lời.'})]));
+  if(!anchor.parentElement.querySelector('.hub-hint')&&!prompt.closest('.applied-practice')&&!anchor.classList.contains('flashcard'))b.after(el('details',{class:'hub-hint'},[el('summary',{text:'Gợi ý cách làm'}),el('p',{text:'Nghe hoặc đọc lại đề, tìm điều câu hỏi yêu cầu. Với câu dài, chia thành từng ý nhỏ; so sánh từng lựa chọn trước khi trả lời.'})]));
  });};
  const observer=new MutationObserver(enhance);observer.observe(document.querySelector('main')||document.body,{childList:true,subtree:true});enhance();window.addEventListener('pagehide',()=>observer.disconnect(),{once:true});
 }

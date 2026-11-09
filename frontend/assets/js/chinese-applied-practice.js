@@ -1,5 +1,6 @@
 import {el,button,card} from '/assets/js/chinese-common.js';
 import {questionAudio,withChoiceAudio} from './question-audio.js';
+import {animalPath} from './animal-path.js';
 
 // Only published activities supplied by the lesson API are rendered here.
 export function mountPractice(host,lesson){
@@ -19,6 +20,7 @@ export function mountPractice(host,lesson){
   box.replaceChildren(el('h2',{text:'Luyện vận dụng'}),el('p',{text:lesson.topic+' · Mỗi lượt tối đa 10 câu, chọn ngẫu nhiên từ '+tasks.length+' hoạt động.'}),
    primary('Bắt đầu lượt ngắn',()=>start()),el('div',{class:'applied-shortcuts'},Object.entries(labels).filter(([type])=>tasks.some(t=>t.type===type)).map(([type,label])=>button(label,()=>start(type)))),
    el('p',{class:'muted',text:'Luyện tự do có gợi ý. Kết quả chỉ tính trong lượt này; không cộng hoặc trừ Kim Cương.'}));
+  animalPath(box.querySelector('.applied-shortcuts'),{selector:':scope > button',title:'Luyện vận dụng',hint:'Bốn cách luyện trong bài. Chọn cách con muốn thử.'});
  }
  function render(){
   const task=queue[index];

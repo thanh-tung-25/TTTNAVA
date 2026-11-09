@@ -62,6 +62,10 @@ function renderHeader(profile, role, active) {
 
 export async function initPage(role, active) {
   document.body.dataset.role = role;
+  if(role==='student'){
+    document.body.classList.add('student-unified');
+    if(!document.querySelector('link[data-student-design]')){const style=document.createElement('link');style.rel='stylesheet';style.href='/assets/css/student-unified.css';style.dataset.studentDesign='true';document.head.append(style);}
+  }
   const payload = await api('/api/v1/auth/me');
   const profile = payload.data.profile;
   if (profile.role !== role) {

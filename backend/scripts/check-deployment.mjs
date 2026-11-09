@@ -5,7 +5,7 @@ import {closePool} from '../src/config/db.js';
 const originIndex=process.argv.indexOf('--origin');
 try{
  const checks=[];
- for(const name of ['question-audio','chat-widget','learning-support','learning-feedback','study-hub','chinese-study-extras','chinese-journey']){
+ for(const name of ['question-audio','chat-widget','learning-support','learning-feedback','study-hub','chinese-study-extras','chinese-journey','animal-path']){
   await readFile(new URL('../../frontend/assets/js/'+name+'.js',import.meta.url));checks.push({asset:name,ready:true});
  }
  if(originIndex>=0){

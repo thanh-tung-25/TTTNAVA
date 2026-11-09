@@ -1,5 +1,13 @@
 # Góc ôn tập, phản ánh và quiz theo nội dung
 
+## Giao diện học sinh dùng chung
+
+Các trang đăng nhập bằng vai trò học sinh tải `student-unified.css` qua `initPage`: cùng màu nền, thẻ có chiều sâu, nút, thanh công cụ, khoảng cách và xử lý màn hình hẹp. Các danh mục luyện tập Toán/Tiếng Việt/Tiếng Anh, đề thi, phiếu bài tập, bài tiếng Trung, sổ từ và menu vận dụng dùng `animal-path.js` để nhóm tối đa bốn mục theo từng bạn động vật. Nhóm cuối chỉ hiện nội dung có thật. Các môn SGK vẫn được chọn bài phù hợp trên lớp; không tự khóa theo thứ tự danh mục. Khóa chặng theo tiến độ chỉ áp dụng bản đồ quiz tiếng Trung đã mô tả bên dưới.
+
+Khung làm câu hỏi, báo cáo, lịch sử, mục tiêu, khóa học và trang chủ dùng cùng nền tảng giao diện, không biến dữ liệu thống kê hoặc thanh toán thành bài chơi. Hiệu ứng xuất hiện ngắn và chuyển động khi trỏ chuột; tắt hiệu ứng khi người dùng bật giảm chuyển động.
+
+Ở giao diện học sinh, nút chat được gắn vào thanh tài khoản trên đầu trang, không nổi che đáp án hoặc thanh điều hướng dưới. Khung chat chỉ mở khi bấm và vẫn kéo di chuyển được. Nút dấu hỏi cạnh đó mở Góp ý/Báo lỗi; nút Phản ánh câu này vẫn có ngay trong nội dung. Màn hình nhỏ chuyển các nhóm bài thành một cột và thu gọn thanh thương hiệu khi cần, giữ nút thao tác xuống dòng.
+
 ## Học sinh
 
 - **Góp ý / Báo lỗi** nằm trên đầu trang của tài khoản đăng nhập. Chọn lỗi câu hỏi, đáp án/lời giải, âm thanh, ảnh, giao diện, tài khoản, thanh toán, đề xuất hoặc lỗi khác. Nút **Phản ánh câu này** gửi kèm nội dung câu và đường dẫn để quản trị viên kiểm tra. Không tự gửi thông tin, ảnh màn hình hay âm thanh khi chưa bấm Gửi. Lịch sử **Phản ánh của tôi** cho xem trạng thái và phản hồi.

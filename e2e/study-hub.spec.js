@@ -75,3 +75,22 @@ test('animal journey groups four stages, locks future stops and stays usable on 
  await page.getByRole('button',{name:'Khám phá cùng bạn nhỏ',exact:true}).click();await page.getByRole('button',{name:'Chặng 1 · Đã hoàn thành',exact:true}).click();await expect(dialog.locator('.journey-detail')).toContainText('Cùng Gấu trúc · Chặng 1');
  await page.getByRole('button',{name:'Đóng bản đồ'}).click();await page.getByRole('button',{name:'Quiz 20 câu',exact:true}).click();await expect(page.getByRole('button',{name:'Chặng 2 · Sẵn sàng khám phá',exact:true})).toHaveAttribute('aria-current','true');
 });
+test('primary subjects, worksheets and exam catalogs share animal groups without mobile overflow',async({page})=>{
+ await mock(page);const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('dialog',d=>d.accept());
+ await page.route('**/api/v1/auth/me',r=>r.fulfill({json:{data:{profile:{id:'primary-user',role:'student',grade:3,displayName:'An'}}}}));
+ await page.route('**/api/v1/courses/*/access',r=>r.fulfill({json:{data:{id:'grade-3',kind:'primary',level:3,title:'Lớp 3',unlocked:true}}}));
+ const topics=Array.from({length:8},(_,n)=>({id:'topic-'+n,name:'Bài học '+(n+1)+' cùng những người bạn',questionCount:n===7?0:30,grade:3}));
+ await page.route('**/api/v1/catalog/topics**',r=>r.fulfill({json:{data:topics}}));
+ await page.route('**/api/v1/exams/catalog**',r=>r.fulfill({json:{data:{year:{id:'year'},chapters:topics.map(t=>({...t,semester:'hk1',count:20,durationSeconds:600})),semesters:[],annual:{questionCount:30,count:20,durationSeconds:600}}}}));
+ await page.route('**/api/v1/worksheets',r=>r.fulfill({json:{data:topics.map((t,n)=>({id:'sheet-'+n,title:t.name,item_count:10,subject_id:'toan',semester:'hk1',chapter_id:'chapter',chapter_name:'Chủ đề 1'}))}}));
+ await page.route('**/api/v1/worksheets/history',r=>r.fulfill({json:{data:[]}}));
+ await page.route('**/api/v1/worksheets/sheet-0/start',r=>r.fulfill({json:{data:{id:'ws-1',title:'Bộ bài 1',status:'in_progress',subject_id:'toan',items:[{id:'item-1',type:'choice',prompt:'Chọn số một',config:{options:['Một','Hai']}}],answers:{}}}}));
+ for(const screen of ['practice','exam','worksheets']){
+  await page.goto(origin+'/pages/student/'+screen+'/');await expect(page.locator('.animal-zone')).toHaveCount(2);await expect(page.locator('.animal-zone').first().locator('.animal-path-stop')).toHaveCount(4);
+  await page.setViewportSize({width:1280,height:900});await page.screenshot({path:'test-results/unified-'+screen+'-desktop.png',animations:'disabled'});
+  for(const width of [390,320]){await page.setViewportSize({width,height:844});const overflow=await page.evaluate(()=>[...document.querySelectorAll('body *')].filter(e=>e.getClientRects().length&&e.getBoundingClientRect().right>innerWidth+1&&getComputedStyle(e).position!=='fixed').map(e=>({tag:e.tagName,cls:e.className,width:e.getBoundingClientRect().width,right:e.getBoundingClientRect().right})).slice(0,12));expect(overflow).toEqual([]);}
+  if(screen==='practice'){for(const label of ['Tiếng Việt','Tiếng Anh']){await page.getByRole('tab',{name:new RegExp(label)}).click();await expect(page.locator('.animal-zone')).toHaveCount(2);}await expect(page.getByRole('button',{name:/Chưa đủ câu:/})).toBeDisabled();}
+  await page.setViewportSize({width:390,height:844});await page.screenshot({path:'test-results/unified-'+screen+'-mobile.png'});
+ }
+ await page.locator('.animal-path-stop').first().getByRole('button',{name:'Bắt đầu',exact:true}).click();await expect(page.locator('.worksheet-question')).toBeVisible();await expect(page.locator('.topbar-user .chat-launcher')).toBeVisible();expect(await page.locator('.chat-launcher').evaluate(n=>getComputedStyle(n).position)).toBe('static');await page.locator('.chat-launcher').click();await expect(page.locator('.chat-panel')).toBeVisible();expect(await page.locator('.chat-panel').evaluate(n=>{const r=n.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth+1&&r.top>=0&&r.bottom<=innerHeight+1;})).toBe(true);await page.locator('.chat-panel').getByRole('button',{name:/^\u0110\u00f3ng$/}).click();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect(errors).toEqual([]);
+});

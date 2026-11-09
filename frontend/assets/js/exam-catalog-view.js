@@ -1,5 +1,6 @@
 import {api,escapeHtml} from './api.js';
 import {elements,store} from './exam-context.js';
+import {animalPath} from './animal-path.js';
 let request=0;
 export function renderExamCatalog(){
  const catalog=store.catalog;if(!catalog)return;
@@ -15,6 +16,7 @@ export function renderExamCatalog(){
   const ready=entry.questionCount>=entry.count;
   return `<article class="topic-item assessment-topic${ready?'':' topic-not-ready'}"><div class="practice-topic-mascot" aria-hidden="true"><img src="/assets/images/mascot-${store.mode==='chapter'?'owl':store.mode==='semester'?'bunny':'panda'}.svg" width="54" height="58" alt=""><span class="topic-index">${index+1}</span></div><div class="practice-topic-info"><h3>${escapeHtml(entry.title)}</h3><p>${escapeHtml(entry.description)}</p><div class="assessment-tags"><span>${entry.count} câu ngẫu nhiên</span><span>${entry.durationSeconds/60} phút</span></div><p class="assessment-pool">Có ${entry.questionCount} câu trong phạm vi${ready?'':' · Đang chuẩn bị thêm câu hỏi'}</p></div><button class="btn btn-sm practice-topic-start" type="button" data-exam-kind="${store.mode}"${entry.chapterId?' data-chapter="'+escapeHtml(entry.chapterId)+'"':''}${entry.semester?' data-semester="'+entry.semester+'"':''}${ready?'':' disabled'}>${ready?'Bắt đầu':'Chưa đủ câu'}</button></article>`;
  }).join(''):'<div class="empty">Chưa có chủ đề trong học kì này. Con thử chọn môn hoặc học kì khác nhé.</div>';
+ animalPath(elements.topicList,{selector:':scope > .assessment-topic',title:'Thử sức',hint:'Xem số câu và thời gian trước khi bắt đầu. Bài chưa đủ câu sẽ chờ cô giáo bổ sung.'});
 }
 export async function loadExamCatalog(){
  const current=++request;elements.topicList.innerHTML='<div class="loading">Đang chuẩn bị danh sách đề…</div>';

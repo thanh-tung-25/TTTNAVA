@@ -1,6 +1,7 @@
 import {api,el,formatDate} from './api.js';
 import {initPage} from './ui-core.js';
 import {renderItem,resultBlock} from './worksheet-player.js';
+import {animalPath} from './animal-path.js';
 const base='/api/v1/worksheets',root=document.querySelector('#ws-content'),notice=document.querySelector('#ws-notice');
 let current,index=0,timer,queue=Promise.resolve(),profile;
 const button=(text,fn,ghost=false)=>el('button',{type:'button',class:'btn'+(ghost?' btn-ghost':''),text,onclick:async event=>{const b=event.currentTarget;b.disabled=true;try{await fn();}catch(e){notice.textContent=e.message;}finally{b.disabled=false;}}});
@@ -17,6 +18,7 @@ async function catalog(){
  const grid=el('div',{class:'worksheet-student-grid'});
  function draw(){grid.replaceChildren();for(const sheet of catalog.data.filter(s=>(!semester.value||s.semester===semester.value)&&(!topic.value||s.chapter_id===topic.value)))grid.append(el('article',{class:'card'},[el('img',{src:'/assets/images/mascot-owl.svg',alt:'',width:70,height:76}),el('h2',{text:sheet.title}),...(sheet.lesson_name?[el('p',{class:'muted',text:(sheet.semester==='hk1'?'Học kì 1':'Học kì 2')+' · '+sheet.chapter_name+' · '+sheet.lesson_name})]:[]),el('p',{class:'muted',text:sheet.item_count+' câu · '+({toan:'Toán','tieng-viet':'Tiếng Việt','tieng-anh':'Tiếng Anh'}[sheet.subject_id])}),button(sheet.active_attempt?'Tiếp tục':'Bắt đầu',()=>open(sheet.id,sheet.active_attempt))]));
  if(!grid.children.length)grid.append(el('section',{class:'card'},[el('h2',{text:'Cô giáo đang chuẩn bị bài'}),el('p',{text:'Khi bài tập được đăng cho lớp của con, bài sẽ xuất hiện ở đây.'})]));
+ animalPath(grid,{selector:':scope > article',title:'Luyện bài tập',hint:'Chọn bộ bài phù hợp với nội dung đã học. Bài đang làm có thể tiếp tục.'});
  }
  const semester=el('select',{class:'select','aria-label':'Học kì'},[el('option',{value:'',text:'Cả năm học'}),el('option',{value:'hk1',text:'Học kì 1'}),el('option',{value:'hk2',text:'Học kì 2'})]);
  const topic=el('select',{class:'select','aria-label':'Chủ đề'});

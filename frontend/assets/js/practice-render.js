@@ -1,5 +1,6 @@
 import { api, escapeHtml } from '/assets/js/api.js';
 import {attachQuestionAudio,withChoiceAudio} from './question-audio.js';
+import {animalPath} from './animal-path.js';
 import { answerText, TYPE_LABELS } from '/assets/js/ui.js';
 import {
   SUBJECTS,
@@ -46,6 +47,7 @@ export async function loadTopics() {
             </button>
           </article>`;
       }).join('')}`;
+    animalPath(elements.topicList,{selector:':scope > .topic-item',title:'Học từng bài',hint:'Mỗi nhóm có tối đa 4 bài. Chọn bài con đang học trên lớp.'});
   } catch (error) {
     if(currentRequest!==topicRequest)return;
     elements.topicList.innerHTML = `<div class="empty">😿 ${escapeHtml(error.message)}</div>`;

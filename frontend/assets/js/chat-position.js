@@ -4,16 +4,17 @@ export function movableChat(bubble,panel,handle,userId){
  try{saved=JSON.parse(localStorage.getItem(key)||'{}')||{};}catch{}
  const valid=p=>p&&Number.isFinite(p.x)&&Number.isFinite(p.y);
  const viewport=()=>({w:window.visualViewport?.width||innerWidth,h:window.visualViewport?.height||innerHeight});
- const clamp=(node,p)=>{const {w,h}=viewport();return {x:Math.max(8,Math.min(p.x,w-node.offsetWidth-8)),y:Math.max(8,Math.min(p.y,h-node.offsetHeight-8))};};
+ const clamp=(node,p)=>{const {w,h}=viewport(),bottom=node===bubble&&w<1100?94:8;return {x:Math.max(8,Math.min(p.x,w-node.offsetWidth-8)),y:Math.max(8,Math.min(p.y,h-node.offsetHeight-bottom))};};
  const place=(node,p)=>{const next=clamp(node,p);Object.assign(node.style,{left:next.x+'px',top:next.y+'px',right:'auto',bottom:'auto'});return next;};
  function save(){try{localStorage.setItem(key,JSON.stringify(saved));}catch{}}
  function fit(){
   const {w,h}=viewport();saved.bubble=place(bubble,valid(saved.bubble)?saved.bubble:{x:w-80,y:h-(w<640?154:80)});
-  if(!panel.hidden){const b=bubble.getBoundingClientRect();saved.panel=place(panel,valid(saved.panel)?saved.panel:{x:b.right-panel.offsetWidth,y:b.top-panel.offsetHeight-12});}
+  if(!panel.hidden){const b=bubble.getBoundingClientRect();saved.panel=place(panel,valid(saved.panel)?saved.panel:{x:b.right-panel.offsetWidth,y:b.top>panel.offsetHeight+12?b.top-panel.offsetHeight-12:b.bottom+12});}
  }
  function drag(grip,node,name){
   let start=null,suppressUntil=0;
   grip.addEventListener('pointerdown',e=>{
+   if(node===bubble&&getComputedStyle(bubble).position==='static')return;
    if(e.button!==0||(grip!==bubble&&e.target.closest('button,details,input,textarea,a')))return;
    suppressUntil=0;
    const r=node.getBoundingClientRect();start={id:e.pointerId,x:e.clientX,y:e.clientY,left:r.left,top:r.top,moved:false};

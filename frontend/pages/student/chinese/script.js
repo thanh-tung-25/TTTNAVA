@@ -5,6 +5,7 @@ import {renderHistory} from './history-view.js';
 import {mountPractice} from './applied-practice.js';
 import {questionAudio,withChoiceAudio} from '/assets/js/question-audio.js';
 import {chooseQuiz,wordTable,listeningPractice,questionHint} from '/assets/js/chinese-study-extras.js';
+import {animalPath} from '/assets/js/animal-path.js';
 const params=new URLSearchParams(location.search);let catalog,timer;
 const json=v=>typeof v==='string'?JSON.parse(v):v;
 const extra=(title,children)=>el('details',{class:'learn-extra'},[el('summary',{text:title}),...children]);
@@ -50,6 +51,7 @@ function lessons(){
   }):[el('p',{class:'muted',text:'Chưa có nội dung.'})]);
   island.classList.add('lesson-island');const heading=island.querySelector('h2');heading.replaceWith(el('header',{class:'lesson-heading'},[el('img',{src:'/assets/images/mascot-'+['panda','bunny','owl'][lessonIndex%3]+'.svg',alt:'',width:70,height:76}),el('div',{},[el('span',{class:'lesson-eyebrow',text:'CÙNG NHAU KHÁM PHÁ'}),el('h2',{text:lesson.title})])]));root().append(island);
  }
+ animalPath(root(),{selector:':scope > .lesson-island',title:'Khám phá bài học',hint:'Chọn bài, học từ rồi chinh phục bản đồ 20 câu.'});
  if(!rows.length)root().append(card('Chưa có nội dung',[el('p',{text:'Cấp này chưa có bài học. Con có thể chọn cấp khác.'})]));
  const due=catalog.reviews.filter(r=>r.next_review&&new Date(r.next_review)<=new Date()).length;
  if(due)root().append(link('Ôn '+due+' từ đến hạn',{view:'notebook',filter:'due'}));
@@ -138,9 +140,9 @@ function audioButton(d){
 }
 async function notebook(){
  const f=el('form',{},[field('Từ cần ôn','filter',params.get('filter')||'','text',[['','Tất cả'],['favorite','Yêu thích'],['new','Chưa nhớ'],['wrong','Thường nhầm'],['due','Đến hạn ôn']])]),list=el('div');
- const load=async()=>{const rows=await request('/notebook?'+new URLSearchParams(new FormData(f)));list.replaceChildren(...(rows.length?rows.map(w=>card(w.data.hanzi,[el('p',{class:'pinyin',text:w.data.pinyin||''}),el('p',{text:w.data.meaning}),link('Ôn từ này',{set:w.set_id,word:w.id})])):[el('p',{text:'Chưa có từ trong danh sách này.'})]));};f.onchange=()=>load().catch(error);root().append(f,list);await load();
+ const load=async()=>{const rows=await request('/notebook?'+new URLSearchParams(new FormData(f)));list.replaceChildren(...(rows.length?rows.map(w=>card(w.data.hanzi,[el('p',{class:'pinyin',text:w.data.pinyin||''}),el('p',{text:w.data.meaning}),link('Ôn từ này',{set:w.set_id,word:w.id})])):[el('p',{text:'Chưa có từ trong danh sách này.'})]));animalPath(list,{selector:':scope > .card',title:'Ôn từ',hint:''});};f.onchange=()=>load().catch(error);root().append(f,list);await load();
 }
-async function tests(){const rows=await request('/tests');root().append(...rows.map(t=>card(t.title,[el('p',{text:t.duration_seconds?`${Math.round(t.duration_seconds/60)} phút`:'Không giới hạn thời gian'}),action('Bắt đầu',async()=>{const a=await request('/attempts','POST',{test_id:t.id});location.href='?attempt='+a.id;},true)])));if(!rows.length)root().append(el('p',{text:'Chưa có bài kiểm tra. Con có thể làm quiz ngay trong bài học.'}));}
+async function tests(){const rows=await request('/tests');root().append(...rows.map(t=>card(t.title,[el('p',{text:t.duration_seconds?`${Math.round(t.duration_seconds/60)} phút`:'Không giới hạn thời gian'}),action('Bắt đầu',async()=>{const a=await request('/attempts','POST',{test_id:t.id});location.href='?attempt='+a.id;},true)])));animalPath(root(),{selector:':scope > .card',title:'Thử sức',hint:'Xem thời gian trước khi bắt đầu bài kiểm tra.'});if(!rows.length)root().append(el('p',{text:'Chưa có bài kiểm tra. Con có thể làm quiz ngay trong bài học.'}));}
 async function showAttempt(a,index){
  clearInterval(timer);notice('');root().replaceChildren(link('← Bài học',{}),el('h2',{text:a.title}));
  if(a.finished_at){

@@ -16,6 +16,8 @@ Mỗi bộ có **Từ mới** với đúng ba cột: nghĩa tiếng Việt, piny
 
 **Quiz 20 câu** mở màn hình chọn cách luyện:
 
+Giao diện chọn phần là **bản đồ động vật**, không dùng danh sách xổ xuống dài. Mỗi bạn đồng hành có tối đa 4 chặng, mỗi chặng 20 câu. Khu cuối có thể ít hơn 4 chặng khi nội dung nguồn không đủ; không tạo thêm câu giả để đủ khu. Nút chặng có trạng thái sẵn sàng, đã hoàn thành và chưa mở; tiến độ/điểm tốt nhất lấy từ các lượt quiz đã lưu. Lộ trình mở lần lượt ở backend: phải thực sự trả lời và chốt đủ 20 câu trong chặng trước mới mở chặng sau. Không bắt buộc điểm đạt tối thiểu. Nộp sớm bỏ câu không mở chặng. Nội dung chặng kiểm tra lại theo các ID câu nguồn hiện tại, không chỉ vị trí cũ. Hoàn thành có thể về bản đồ để học tiếp hoặc luyện lại chặng đã đi qua. Lịch sử cũ vẫn giữ nguyên; quiz trộn trước đây không tự tính thành một chặng theo phần.
+
 1. **Luyện theo phần**: mỗi phần lấy theo thứ tự tài liệu, có xem trước câu hỏi, không lộ đáp án. Phần cuối có thể giao với phần trước để đủ 20 câu duy nhất. Học bảng từ và xem trước trước khi bắt đầu. Đây là chia theo câu hỏi nguồn, chưa phải chia theo từng nhóm từ do giáo viên gắn nhãn.
 2. **Ôn câu đã làm**: chỉ dùng ID câu đã chốt trong các lượt của bộ, ưu tiên câu có kết quả gần nhất sai. Cần đủ 20 câu đã làm, không bù bằng câu mới. “Đã làm” không đồng nghĩa với đã thành thạo. Khi chưa đủ, dùng sổ câu sai hoặc luyện từng phần trước.
 

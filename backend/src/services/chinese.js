@@ -7,7 +7,7 @@ import { parse, lessonSchema, setSchema, testSchema, issues, normalizeAnswer } f
 import { extractChinese } from './chinese-import.js';
 import { archiveFile, readArchive, DOCX_MIME } from './private-storage.js';
 import {publishedActivitiesForSet} from './chinese-activities.js';
-import {reviewedQuestions,sequentialQuestions} from './chinese-quiz-plan.js';
+import {reviewedQuestions,sequentialQuestions,journeyProgress} from './chinese-quiz-plan.js';
 export { catalog };
 const txRun = c => async (sql,p=[]) => (await c.query(sql,p))[0];
 export async function saveLesson(id, body) {
@@ -136,6 +136,7 @@ export async function start(user,body) {
  if(d.test_id) { const t=await one("SELECT * FROM chinese_tests WHERE id=? AND status='published'",[d.test_id]); sources=json(t.set_ids);duration=t.duration_seconds;title=t.title;pass=t.pass_percent; } else sources=[d.set_id];
  const course_ids=[];
  let items=[]; for(const s of sources) {const set=await getSet(s);course_ids.push('hsk-'+set.level_id);items.push(...(await getItems(s)).filter(i=>i.kind==='question'&&i.data.approved));}
+ const sourceItems=[...items];
  if(!items.length||items.length>1000||issues(items).length) throw badRequest('Chưa đủ câu hỏi hợp lệ');
  if(d.count){
   if(items.length<20)throw badRequest('Tài liệu chưa đủ 20 câu hỏi để làm quiz. Con có thể học thẻ lật trước.');
@@ -161,6 +162,10 @@ export async function start(user,body) {
    }else await run('UPDATE chinese_attempts SET abandoned_at=CURRENT_TIMESTAMP(3) WHERE id=?',[a.id]);
   }
   if(existingId)return;
+  if(d.count&&d.selection==='sequential'){
+   const completed=await run('SELECT snapshot,answers,score,finished_at FROM chinese_attempts WHERE student_id=? AND set_id=? AND abandoned_at IS NULL AND finished_at IS NOT NULL ORDER BY started_at DESC LIMIT 1000',[user,d.set_id]);
+   if(!journeyProgress(sourceItems,completed)[d.block]?.unlocked)throw badRequest('Con hoàn thành chặng trước để mở chặng này nhé.');
+  }
   const diamonds_policy=d.test_id||d.count===20?'v1':null;
   await run('INSERT INTO chinese_attempts (id,student_id,test_id,set_id,snapshot,answers,ends_at) VALUES (?,?,?,?,?,?,?)',[id,user,d.test_id??null,d.set_id??null,JSON.stringify({title,pass,items,diamonds_policy,selection:d.selection,block:d.block,course_ids:[...new Set(course_ids)]}),JSON.stringify({}),duration?new Date(Date.now()+duration*1000):null]);
   for(const source of sources)await run(dialectSql(`INSERT INTO chinese_progress (student_id,set_id,last_item,read_items) VALUES (?,?,NULL,'[]') ON DUPLICATE KEY UPDATE updated_at=CURRENT_TIMESTAMP(3)`,

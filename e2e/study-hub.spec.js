@@ -61,3 +61,17 @@ test('administrators can filter feedback and save a reply from the management pa
  await page.getByRole('combobox',{name:'Trạng thái xử lý'}).selectOption('reviewing');await page.getByRole('textbox',{name:'Phản hồi cho người gửi'}).fill('Đang kiểm tra âm thanh');await page.getByRole('button',{name:'Lưu phản hồi'}).click();await expect(page.locator('#feedback-notice')).toContainText('Đã lưu');expect(report.reply).toBe('Đang kiểm tra âm thanh');
  await page.locator('#feedback-filter').selectOption('resolved');await expect(page.locator('#feedback-list')).toContainText('Chưa có phản ánh');
 });
+test('animal journey groups four stages, locks future stops and stays usable on mobile',async({page})=>{
+ await mock(page);
+ const blocks=Array.from({length:9},(_,block)=>({block,from:block*20+1,to:block*20+20,completed:block===0,score:block===0?85:null,unlocked:block<=1,questions:Array.from({length:20},(_,n)=>({id:'part-'+block+'-q-'+n,data:{prompt:'Câu xem trước '+(n+1)}}))}));
+ await page.route('**/api/v1/chinese/sets/set-1/quiz-plan',r=>r.fulfill({json:{data:{total:180,review_count:20,active:null,blocks}}}));
+ await page.goto(origin+'/pages/student/chinese/');await page.getByRole('button',{name:'Quiz 20 câu',exact:true}).click();
+ const dialog=page.getByRole('dialog',{name:'Chọn nội dung quiz'});await expect(dialog.locator('select')).toHaveCount(0);await expect(dialog.locator('.journey-island')).toHaveCount(3);await expect(dialog.locator('.journey-island').first().locator('.journey-stage')).toHaveCount(4);await expect(dialog.locator('.journey-island').last().locator('.journey-stage')).toHaveCount(1);
+ await expect(page.getByRole('button',{name:'Chặng 1 · Đã hoàn thành',exact:true})).toBeEnabled();await expect(page.getByRole('button',{name:'Chặng 2 · Sẵn sàng khám phá',exact:true})).toHaveAttribute('aria-current','true');await expect(page.getByRole('button',{name:'Chặng 3 · Chưa mở',exact:true})).toBeDisabled();await expect(dialog).toContainText('85/100');
+ await page.screenshot({path:'test-results/chinese-animal-journey-desktop.png'});
+ await page.setViewportSize({width:390,height:844});await expect(dialog.locator('.journey-go')).toBeInViewport();expect(await dialog.evaluate(n=>n.scrollWidth<=n.clientWidth)).toBe(true);await page.screenshot({path:'test-results/chinese-animal-journey-mobile.png'});
+ await page.setViewportSize({width:320,height:568});await expect(dialog.locator('.journey-go')).toBeInViewport();expect(await dialog.evaluate(n=>n.scrollWidth<=n.clientWidth)).toBe(true);
+ await page.getByRole('button',{name:'Ôn điều đã học',exact:true}).click();await expect(dialog.locator('.journey-detail')).toContainText('Con đã làm 20 câu');await expect(dialog.locator('.journey-go')).toBeEnabled();
+ await page.getByRole('button',{name:'Khám phá cùng bạn nhỏ',exact:true}).click();await page.getByRole('button',{name:'Chặng 1 · Đã hoàn thành',exact:true}).click();await expect(dialog.locator('.journey-detail')).toContainText('Cùng Gấu trúc · Chặng 1');
+ await page.getByRole('button',{name:'Đóng bản đồ'}).click();await page.getByRole('button',{name:'Quiz 20 câu',exact:true}).click();await expect(page.getByRole('button',{name:'Chặng 2 · Sẵn sàng khám phá',exact:true})).toHaveAttribute('aria-current','true');
+});

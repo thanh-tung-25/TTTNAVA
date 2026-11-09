@@ -26,7 +26,7 @@ test('question-only lessons open flashcards and a twenty-question quiz directly'
  await student.setViewportSize({width:390,height:844});expect(await student.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await student.screenshot({path:'test-results/chinese-study-compact.png',fullPage:true});
  await student.getByRole('link',{name:'Bài học',exact:true}).click();
- await student.locator('.learn-document').filter({hasText:'E2E Question cards'}).getByRole('button',{name:'Quiz 20 câu',exact:true}).click();await student.locator('.feedback-dialog > button.btn-primary').click();await student.waitForURL(/\?attempt=/);
+ await student.locator('.learn-document').filter({hasText:'E2E Question cards'}).getByRole('button',{name:'Quiz 20 câu',exact:true}).click();await student.locator('.journey-go').click();await student.waitForURL(/\?attempt=/);
  await student.setViewportSize({width:390,height:844});expect(await student.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  for(let n=0;n<20;n++){
   await expect(student.locator('.quiz-position')).toHaveText(`Câu ${n+1} / 20`);await expect(student.locator('.quiz-prompt')).toHaveCount(1);
@@ -34,7 +34,7 @@ test('question-only lessons open flashcards and a twenty-question quiz directly'
   if(n<19)await expect(student.locator('#content')).toContainText('Đúng rồi!');
   if(n===0){
    const activeId=new URL(student.url()).searchParams.get('attempt');await student.goto('/pages/student/chinese/?level=9');
-   await student.locator('.learn-document').filter({hasText:'E2E Question cards'}).getByRole('button',{name:'Quiz 20 câu',exact:true}).click();await student.locator('.feedback-dialog > button.btn-primary').click();await student.waitForURL(url=>url.searchParams.get('attempt')===activeId);
+   await student.locator('.learn-document').filter({hasText:'E2E Question cards'}).getByRole('button',{name:'Quiz 20 câu',exact:true}).click();await student.locator('.journey-go').click();await student.waitForURL(url=>url.searchParams.get('attempt')===activeId);
   }else if(n<19)await student.getByRole('button',{name:'Câu tiếp theo →',exact:true}).click();
  }
  await expect(student.locator('.quiz-score')).toHaveText('100/100');await expect(student.locator('#content')).toContainText('+3 Kim Cương');

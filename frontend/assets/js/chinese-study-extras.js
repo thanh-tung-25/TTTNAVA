@@ -1,16 +1,6 @@
-import {el,request} from './chinese-common.js';
+import {el} from './chinese-common.js';
 import {questionAudio,withChoiceAudio} from './question-audio.js';
-export async function chooseQuiz(setId,start,review=false){
- const plan=await request('/sets/'+setId+'/quiz-plan'),dialog=el('dialog',{class:'feedback-dialog','aria-label':'Chọn nội dung quiz'}),notice=el('p',{role:'status'});
- const select=el('select',{'aria-label':'Phần muốn luyện'},plan.blocks.map(b=>el('option',{value:b.block,text:'Phần '+(b.block+1)+' · Câu '+b.from+'–'+b.to})));
- const kind=el('select',{'aria-label':'Cách chọn câu'},[el('option',{value:'sequential',text:'Luyện theo phần — xem trước nội dung'}),el('option',{value:'review',text:'Ôn câu đã làm — ưu tiên câu từng sai'})]);kind.value=review?'review':'sequential';
- const preview=el('details',{},[el('summary',{text:'Xem câu hỏi của phần này trước khi làm'})]),content=el('div');preview.append(content);
- const update=()=>{select.disabled=kind.value==='review';preview.hidden=kind.value==='review';const b=plan.blocks.find(b=>b.block===Number(select.value));content.replaceChildren(...(b?.questions||[]).map((i,n)=>el('p',{text:(n+1)+'. '+i.data.prompt})));go.disabled=kind.value==='review'?plan.review_count<20:!b;notice.textContent=kind.value==='review'?'Đã có '+plan.review_count+' câu đã làm. Lượt ôn chỉ dùng những câu này, không thêm câu mới.':'Các phần đi theo thứ tự tài liệu. Phần cuối có thể giao với phần trước để đủ 20 câu khác nhau. Mở Từ mới để học từ trước khi luyện.';};
- const go=el('button',{type:'button',class:'btn btn-primary',text:'Bắt đầu / tiếp tục 20 câu',onclick:async()=>{go.disabled=true;try{await start({set_id:setId,count:20,selection:kind.value,block:Number(select.value)||0});dialog.close();}catch(e){notice.textContent=e.message;go.disabled=false;}}});
- kind.onchange=select.onchange=update;
- dialog.append(el('h2',{text:'Luyện vừa với bài đang học'}),el('p',{text:'Nếu có lượt đang làm, con sẽ tiếp tục lượt đó. Câu mới chưa chắc đã là từ con biết; hãy xem trước và học từ trước.'}),el('a',{class:'btn btn-secondary',text:'Từ mới của bài',href:'?set='+setId+'&mode=words'}),el('label',{},[el('span',{text:'Cách luyện'}),kind]),el('label',{},[el('span',{text:'Phần nội dung'}),select]),notice,preview,go,el('button',{type:'button',class:'btn btn-ghost',text:'Đóng',onclick:()=>dialog.close()}));
- document.body.append(dialog);dialog.addEventListener('close',()=>dialog.remove());update();dialog.showModal();
-}
+export {chooseQuiz} from './chinese-journey.js';
 export function wordTable(root,words,setId){
  const input=el('input',{type:'search','aria-label':'Tìm từ trong bài',placeholder:'Lọc theo nghĩa, pinyin hoặc chữ Hán'}),wrap=el('div',{class:'hub-table-wrap'}),normalize=v=>String(v||'').normalize('NFD').replace(/\p{M}/gu,'').toLocaleLowerCase('vi');
  const render=()=>{const filtered=words.filter(i=>[i.data.meaning,i.data.pinyin,i.data.hanzi].some(v=>normalize(v).includes(normalize(input.value))));

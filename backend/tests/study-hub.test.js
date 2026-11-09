@@ -2,6 +2,7 @@ import {beforeAll,afterAll,it,expect} from 'vitest';
 import {createTestUser,loginStudent,wrongClientAnswer,questionFor} from './helpers/index.js';
 import {FIXTURE_TOPIC_ID} from './fixtures/questions.js';
 import {query} from '../src/config/db.js';
+import {journeyProgress} from '../src/services/chinese-quiz-plan.js';
 let users=[],student,other,admin,chinese,primary,locked,lesson,set,feedback,session;
 beforeAll(async()=>{
  for(const options of [{},{},{role:'admin'},{role:'admin',adminScope:'chinese'},{role:'admin',adminScope:'primary'},{enrolled:false}])users.push(await createTestUser(options));
@@ -33,6 +34,12 @@ it('plans sequential twenty-question blocks without answers, persists choices, a
  expect(plan.blocks).toHaveLength(3);expect(plan.review_count).toBe(0);
  expect(plan.blocks[0].questions[0].data.prompt).toBe('Hub question 1');expect(plan.blocks[2].questions[0].data.prompt).toBe('Hub question 25');expect(plan.blocks[0].questions[0].data.accepted).toBeUndefined();
  expect((await student.post('/api/v1/chinese/attempts').send({set_id:set,count:20,selection:'review'})).status).toBe(400);
+ expect((await student.post('/api/v1/chinese/attempts').send({set_id:set,count:20,selection:'sequential',block:1})).status).toBe(400);
+ let first=(await student.post('/api/v1/chinese/attempts').send({set_id:set,count:20,selection:'sequential',block:0})).body.data;
+ for(let n=0;n<20;n++)first=(await student.post('/api/v1/chinese/attempts/'+first.id+'/answers').send({item_id:first.items[n].id,value:'yes',lock:true})).body.data;
+ const journey=(await student.get('/api/v1/chinese/sets/'+set+'/quiz-plan')).body.data;
+ expect(journey.blocks.map(b=>b.unlocked)).toEqual([true,true,false]);expect(journey.blocks[0].score).toBe(100);expect(journey.blocks[0].completed).toBe(true);
+ expect((await other.get('/api/v1/chinese/sets/'+set+'/quiz-plan')).body.data.blocks.map(b=>b.unlocked)).toEqual([true,false,false]);
  let a=(await student.post('/api/v1/chinese/attempts').send({set_id:set,count:20,selection:'sequential',block:1})).body.data;
  expect(a.items[0].data.prompt).toBe('Hub question 21');expect(a.items).toHaveLength(20);
  const firstIds=a.items.map(i=>i.id);
@@ -41,7 +48,7 @@ it('plans sequential twenty-question blocks without answers, persists choices, a
  expect(a.finished_at).toBeTruthy();
  const wrong=(await student.get('/api/v1/learning/wrong').set('X-Course-Id','hsk-1')).body.data;expect(wrong).toHaveLength(1);expect(wrong[0].title).toBe('Hub question 21');
  const next=(await student.post('/api/v1/chinese/attempts').send({set_id:set,count:20,selection:'review'})).body.data;
- expect(new Set(next.items.map(i=>i.id))).toEqual(new Set(firstIds));expect(next.items[0].id).toBe(firstIds[0]);
+ expect(next.items.every(i=>firstIds.includes(i.id)||first.items.some(q=>q.id===i.id))).toBe(true);expect(next.items[0].id).toBe(firstIds[0]);
  expect((await other.get('/api/v1/learning/wrong').set('X-Course-Id','hsk-1')).body.data).toHaveLength(0);
 });
 it('includes primary wrong answers, hides other accounts, and stores goals per course',async()=>{
@@ -53,4 +60,13 @@ it('includes primary wrong answers, hides other accounts, and stores goals per c
  const week=(await student.get('/api/v1/learning/week').set('X-Course-Id','hsk-1')).body.data;expect(week.target).toBe(5);expect(week.days).toBe(1);
  expect((await other.get('/api/v1/learning/week').set('X-Course-Id','hsk-1')).body.data.target).toBe(3);
  expect((await student.put('/api/v1/learning/goal').set('X-Course-Id','hsk-1').send({target:10})).status).toBe(400);
+});
+it('does not unlock by early submission or an old question source, and accepts a fully answered low-score stage',()=>{
+ const questions=Array.from({length:40},(_,n)=>({id:'item-'+n})),items=questions.slice(0,20),snapshot={selection:'sequential',block:0,items};
+ const answers=Object.fromEntries(items.map(i=>[i.id,{locked:true,value:'Wrong',correct:false}]));
+ const row={snapshot,answers,score:0,finished_at:new Date()};
+ expect(journeyProgress(questions,[row])[1].unlocked).toBe(true);
+ expect(journeyProgress(questions,[{...row,answers:{...answers,'item-19':{locked:true,value:''}}}])[1].unlocked).toBe(false);
+ expect(journeyProgress([{id:'replacement'},...questions.slice(1)],[row])[1].unlocked).toBe(false);
+ expect(journeyProgress(questions,[{...row,finished_at:null}])[1].unlocked).toBe(false);
 });

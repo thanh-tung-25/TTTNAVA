@@ -1,0 +1,11 @@
+import {Router} from 'express';
+import {authenticateToken,requirePlayer} from '../middlewares/auth.js';
+import {rateLimit} from '../middlewares/rate-limit.js';
+import {asyncHandler} from '../utils/errors.js';
+import {sendFeedback,listFeedback,updateFeedback} from '../services/learning-feedback.js';
+const router=Router(),h=fn=>asyncHandler(async(r,res)=>res.json({data:await fn(r)}));
+router.use(authenticateToken,requirePlayer);
+router.post('/',rateLimit({max:6,keyPrefix:'learning-feedback'}),h(r=>sendFeedback(r.user,r.body)));
+router.get('/',h(r=>listFeedback(r.user,r.query.manage==='true')));
+router.put('/:id',h(r=>updateFeedback(r.user,r.params.id,r.body)));
+export default router;

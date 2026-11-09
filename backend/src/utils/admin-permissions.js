@@ -26,7 +26,7 @@ export function adminPageScope(req, res, next) {
   const scope = adminScopeOf(req.user);
   if (scope === 'super') return next();
   const section = req.path.split('/').filter(Boolean)[0];
-  const allowed = scope === 'chinese' ? ['chinese', 'students'] : scope === 'primary' ? ['questions', 'worksheets', 'students', 'stats'] : [];
+  const allowed = scope === 'chinese' ? ['chinese', 'students', 'feedback'] : scope === 'primary' ? ['questions', 'worksheets', 'students', 'stats', 'feedback'] : [];
   if (!allowed.includes(section)) return res.redirect(adminHome(req.user));
   next();
 }

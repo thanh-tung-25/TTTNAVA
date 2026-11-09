@@ -4,11 +4,12 @@ import {writing,recording} from './learning-tools.js';
 import {renderHistory} from './history-view.js';
 import {mountPractice} from './applied-practice.js';
 import {questionAudio,withChoiceAudio} from '/assets/js/question-audio.js';
+import {chooseQuiz,wordTable,listeningPractice,questionHint} from '/assets/js/chinese-study-extras.js';
 const params=new URLSearchParams(location.search);let catalog,timer;
 const json=v=>typeof v==='string'?JSON.parse(v):v;
 const extra=(title,children)=>el('details',{class:'learn-extra'},[el('summary',{text:title}),...children]);
 function action(text,fn,primary=false){const b=button(text,async()=>{b.disabled=true;try{await fn();}catch(e){error(e);}finally{b.disabled=false;}});if(primary)b.className='btn btn-primary';return b;}
-const quiz=async id=>{const a=await request('/attempts','POST',{set_id:id,count:20});location.href='?attempt='+a.id;};
+const quiz=async(id,review=false)=>chooseQuiz(id,async body=>{const a=await request('/attempts','POST',body);location.href='?attempt='+a.id;},review);
 async function boot(){
  if(params.get('view')==='practice'){params.delete('view');window.history.replaceState(null,'',location.pathname+(params.size?'?'+params:''));}
  document.body.classList.toggle('is-studying',params.has('set'));
@@ -40,6 +41,7 @@ function lessons(){
    const counts=catalog.counts.filter(c=>c.set_id===s.id),words=Number(counts.find(c=>c.kind==='vocabulary')?.total||0),questions=Number(counts.find(c=>c.kind==='question')?.total||0),reads=counts.some(c=>['reading','grammar','dialogue'].includes(c.kind));
    const actions=el('div',{class:'learn-actions'});
    if(words||questions){const start=link('Thẻ lật',{set:s.id,mode:'cards'});start.classList.add('btn-primary');actions.append(start);}
+   if(words)actions.append(link('Từ mới',{set:s.id,mode:'words'}),link('Luyện nghe',{set:s.id,mode:'listen'}));
    if(questions){const q=action('Quiz 20 câu',()=>quiz(s.id),true);q.disabled=questions<20;q.title=questions<20?'Cần đủ 20 câu hỏi để làm quiz':'';actions.append(q);}
    if(reads)actions.append(link('Bài đọc',{set:s.id,mode:'read'}));
    if(s.activity_count>0)actions.append(link('Luyện vận dụng',{set:s.id,mode:'apply'}));
@@ -67,10 +69,14 @@ async function learn(id){
  const mode=params.get('mode')||(words.length||questions.length?'cards':'read');
  const applied=activities?.tasks?.length?activities:null;
  const nav=el('nav',{class:'study-modes','aria-label':'Cách học'});
- if(words.length||questions.length){const cards=link('Thẻ lật',{set:id,mode:'cards'});if(!['read','apply'].includes(mode))cards.setAttribute('aria-current','page');nav.append(cards);}
+ if(words.length||questions.length){const cards=link('Thẻ lật',{set:id,mode:'cards'});if(mode==='cards')cards.setAttribute('aria-current','page');nav.append(cards);}
+ if(words.length)nav.append(link('Từ mới',{set:id,mode:'words'}),link('Luyện nghe',{set:id,mode:'listen'}));
  if(questions.length){const q=action('Quiz 20 câu',()=>quiz(id));q.disabled=questions.length<20;q.title=questions.length<20?'Cần ít nhất 20 câu hỏi':'';nav.append(q);}
  if(reads.length){const reading=link('Bài đọc',{set:id,mode:'read'});if(mode==='read')reading.setAttribute('aria-current','page');nav.append(reading);}
  if(applied){const practice=link('Luyện vận dụng',{set:id,mode:'apply'});if(mode==='apply')practice.setAttribute('aria-current','page');nav.append(practice);}root().append(nav);
+ if(mode==='words'){wordTable(root(),words,id);return;}
+ if(mode==='listen'){listeningPractice(root(),words,id);return;}
+ if(mode==='review'){root().append(action('Ôn 20 câu đã học',()=>quiz(id,true),true));await quiz(id,true);return;}
  if(mode==='apply'){
   if(applied)mountPractice(root(),applied);
   else root().append(el('p',{text:'Bài này chưa có hoạt động vận dụng. Hãy chọn Thẻ lật hoặc Bài đọc để tiếp tục.'}));
@@ -140,20 +146,27 @@ async function showAttempt(a,index){
  if(a.finished_at){
   syncDiamondTotal();
   const correct=a.items.filter(i=>i.result?.correct).length;
-  root().append(card('Đã hoàn thành!',[el('p',{class:'quiz-score',text:a.score+'/100'}),el('p',{text:`${correct} / ${a.items.length} câu đúng · ${Math.max(0,Math.round((new Date(a.finished_at)-new Date(a.started_at))/1000))} giây`}),...(a.diamonds_delta!==null&&a.diamonds_delta!==undefined?[el('p',{class:a.diamonds_delta<0?'answer-wrong':'answer-correct',text:a.diamonds_delta>0?`+${a.diamonds_delta} Kim Cương`:a.diamonds_delta<0?`${a.diamonds_delta} Kim Cương`:'Không trừ Kim Cương vì số dư đã bằng 0.'})]:[]),action('Làm lại',async()=>{const body=a.test_id?{test_id:a.test_id}:{set_id:a.set_id,count:20};const next=await request('/attempts','POST',body);location.href='?attempt='+next.id;},true)]));
-  const reviews=el('div');const render=wrong=>{reviews.replaceChildren(...a.items.filter(i=>!wrong||!i.result?.correct).map((i,n)=>card((i.result?.correct?'✓ ':'✕ ')+i.data.prompt,[questionAudio(i.data.prompt),el('p',{text:'Con chọn: '+(i.result?.value||'Chưa trả lời')}),el('p',{class:'answer-correct',text:'Đáp án: '+i.result.accepted.join(' / ')}),el('p',{text:i.result.explanation||''})])));};
+  root().append(card('Đã hoàn thành!',[el('p',{class:'quiz-score',text:a.score+'/100'}),el('p',{text:`${correct} / ${a.items.length} câu đúng · ${Math.max(0,Math.round((new Date(a.finished_at)-new Date(a.started_at))/1000))} giây`}),...(a.diamonds_delta!==null&&a.diamonds_delta!==undefined?[el('p',{class:a.diamonds_delta<0?'answer-wrong':'answer-correct',text:a.diamonds_delta>0?`+${a.diamonds_delta} Kim Cương`:a.diamonds_delta<0?`${a.diamonds_delta} Kim Cương`:'Không trừ Kim Cương vì số dư đã bằng 0.'})]:[]),action('Làm lại',async()=>{const body=a.test_id?{test_id:a.test_id}:{set_id:a.set_id,count:20,selection:a.selection==='review'?'review':'sequential',block:a.block};const next=await request('/attempts','POST',body);location.href='?attempt='+next.id;},true)]));
+  const reviews=el('div');const render=wrong=>{reviews.replaceChildren(...a.items.filter(i=>!wrong||!i.result?.correct).map((i,n)=>card((i.result?.correct?'✓ ':'✕ ')+i.data.prompt,[questionAudio(i.data.prompt),el('p',{text:'Con chọn: '+(i.result?.value||'Chưa trả lời')}),el('p',{class:'answer-correct',text:'Đáp án: '+i.result.accepted.join(' / ')}),el('p',{text:i.result.explanation||''})])));reviews.querySelectorAll('h2').forEach(h=>h.classList.add('study-prompt'));};
   root().append(action('Ôn câu sai',()=>render(true)),action('Xem tất cả',()=>render(false)),reviews);render(true);return;
  }
  if(index===undefined){index=a.items.findIndex(i=>!i.result);if(index<0)index=a.items.length-1;}
  const i=a.items[index],q=i.data;let selection=i.selection||'';
+ const navigate=async n=>{let current=a;if(!i.result&&selection.trim())current=await request('/attempts/'+a.id+'/answers','POST',{item_id:i.id,value:selection,lock:false});await showAttempt(current,n);};
  const completed=a.items.filter(i=>i.result).length;
+ const navigation=el('nav',{class:'quiz-jump','aria-label':'Danh sách câu hỏi'});
+ const firstOpen=a.items.findIndex(i=>!i.result);
+ for(const [n,item]of a.items.entries()){
+  const jump=action(String(n+1),()=>navigate(n));jump.disabled=!item.result&&n!==firstOpen;jump.classList.add(...(item.result?[item.result.correct?'done':'incorrect']:[]));jump.setAttribute('aria-label','Câu '+(n+1)+(item.result?' · Đã làm':' · Chưa làm'));if(n===index)jump.setAttribute('aria-current','true');navigation.append(jump);
+ }root().append(navigation);
  root().append(el('p',{class:'quiz-position',text:`Câu ${index+1} / ${a.items.length}`}),el('progress',{max:a.items.length,value:completed,'aria-label':'Tiến độ quiz'}));
  if(a.ends_at){const time=el('p',{class:'quiz-time'});root().append(time);const tick=()=>{const seconds=Math.max(0,Math.ceil((new Date(a.ends_at)-Date.now())/1000));time.textContent=`Còn ${Math.floor(seconds/60)}:${String(seconds%60).padStart(2,'0')}`;if(!seconds){clearInterval(timer);request('/attempts/'+a.id).then(next=>showAttempt(next,index)).catch(error);}};timer=setInterval(tick,1000);tick();}
  const box=card('',[el('p',{class:'quiz-prompt',text:q.prompt})]);
  box.append(questionAudio(q.prompt));
+ if(!i.result)box.append(questionHint(q));
  if(q.image_url)box.append(el('img',{src:q.image_url,alt:'Hình câu hỏi',width:220}));if(q.audio_url)box.append(el('audio',{src:q.audio_url,controls:true}));
  if(i.result){
-  box.append(el('p',{class:i.result.correct?'answer-correct':'answer-wrong',text:i.result.correct?'Đúng rồi!':'Chưa đúng, con xem lại nhé.'}),el('p',{class:'answer-correct',text:'Đáp án: '+i.result.accepted.join(' / ')}),el('p',{text:i.result.explanation||''}));
+  box.append(el('p',{class:i.result.correct?'answer-correct':'answer-wrong',text:i.result.correct?'Đúng rồi!':'Chưa đúng, con xem lại nhé.'}),el('p',{text:'Con đã trả lời: '+(i.result.value||'Chưa trả lời')}),el('p',{class:'answer-correct',text:'Đáp án: '+i.result.accepted.join(' / ')}),el('p',{text:i.result.explanation||''}));
   box.append(index<a.items.length-1?action('Câu tiếp theo →',()=>showAttempt(a,index+1),true):action('Xem kết quả',async()=>showAttempt(await request('/attempts/'+a.id+'/finish','POST')),true));
  }else{
   const controls=el('div',{class:'quiz-choices'});
@@ -167,7 +180,8 @@ async function showAttempt(a,index){
   box.append(controls,action('Kiểm tra',async()=>{if(!selection.trim()){notice('Con chọn hoặc nhập một câu trả lời trước nhé.');return;}await showAttempt(await request('/attempts/'+a.id+'/answers','POST',{item_id:i.id,value:selection,lock:true}),index);},true));
  }
  root().append(box);
- const tools=[];if(index>0)tools.push(action('← Câu trước',()=>showAttempt(a,index-1)));
+ const backActions=el('div',{class:'hub-actions'});if(index>0)backActions.append(action('← Câu trước',()=>navigate(index-1)));if(index<firstOpen)backActions.append(action('Về câu đang làm →',()=>navigate(firstOpen),true));root().append(backActions);
+ const tools=[];
  tools.push(action('Nộp bài sớm',async()=>{if(confirm('Nộp bài ngay? Câu chưa kiểm tra sẽ được tính sai.'))await showAttempt(await request('/attempts/'+a.id+'/finish','POST'));}));root().append(extra('Tùy chọn quiz',tools));
 }
 window.addEventListener('pagehide',()=>clearInterval(timer));

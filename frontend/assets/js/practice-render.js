@@ -23,6 +23,8 @@ export async function loadTopics() {
   try {
     const payload = await api(`/api/v1/catalog/topics?subjectId=${store.subjectId}&grade=${store.profile.grade}`);
     if(currentRequest!==topicRequest)return;
+    const requestedTopic=new URLSearchParams(location.search).get('topic');
+    if(requestedTopic&&payload.data.some(t=>t.id===requestedTopic))payload.data=payload.data.filter(t=>t.id===requestedTopic);
     if (payload.data.length === 0) {
       elements.topicList.innerHTML = '<div class="empty">Chưa có chủ đề cho môn này.</div>';
       return;

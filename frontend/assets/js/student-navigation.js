@@ -7,6 +7,7 @@ const primary = [
  ['exam', '/pages/student/exam/', 'Thi thử', '◷'],
 ];
 const personal = [
+ ['study-hub', '/pages/student/study-hub/', 'Góc ôn tập', '⌕'],
  ['today', '/pages/student/today/', 'Học hôm nay', '☀'],
  ['family', '/pages/student/family/', 'Báo cáo phụ huynh', '▥'],
  ['challenge', '/pages/student/challenge/', 'Thách đấu', '⚑'],

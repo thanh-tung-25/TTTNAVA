@@ -5,6 +5,7 @@ import { setupCourseNotifications } from './admin-course-notifications.js';
 import { adminHome, adminScope, adminLabels, adminSections, isSuperAdmin } from './admin-permissions.js';
 
 const ADMIN_NAV = [
+  ['feedback', '/pages/admin/feedback/', 'Phản ánh người dùng'],
   ['courses', '/pages/admin/courses/', 'Khóa học & thanh toán'],
   ['chinese', '/pages/admin/chinese/', 'Quản lý Tiếng Trung'],
   ['students', '/pages/admin/students/', 'Học sinh'],
@@ -74,6 +75,8 @@ export async function initPage(role, active) {
   }
   if(role==='student')await courseProfile(profile,active);
   renderHeader(profile, role, active);
+  import('./learning-feedback.js').then(({setupFeedback})=>setupFeedback(profile)).catch(()=>{});
+  if(role==='student'&&profile.course?.kind==='chinese'&&['home','learning'].includes(active))import('./study-reminders.js').then(({showStudyReminders})=>showStudyReminders()).catch(()=>{});
   if(role==='student'||role==='admin')import('./chat-widget.js').then(({setupChat})=>setupChat(profile)).catch(()=>{});
   if (role === 'student') loadDiamonds();
   return profile;

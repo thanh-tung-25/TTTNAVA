@@ -1,0 +1,63 @@
+import {test,expect} from '@playwright/test';
+import {createServer} from 'node:http';
+import {readFile} from 'node:fs/promises';
+import path from 'node:path';
+let server,origin;
+test.beforeAll(async()=>{const root=path.resolve('frontend');server=createServer(async(req,res)=>{let p=path.resolve(root,'.'+new URL(req.url,'http://localhost').pathname);if(p.endsWith(path.sep))p+='index.html';else if(!path.extname(p))p=path.join(p,'index.html');if(!p.startsWith(root+path.sep)){res.writeHead(403).end();return;}try{res.setHeader('Content-Type',({'.js':'text/javascript','.css':'text/css','.html':'text/html; charset=utf-8','.svg':'image/svg+xml'})[path.extname(p)]||'application/octet-stream');res.end(await readFile(p));}catch{res.writeHead(404).end();}});await new Promise(r=>server.listen(0,'127.0.0.1',r));origin='http://127.0.0.1:'+server.address().port;});
+test.afterAll(async()=>new Promise(r=>server.close(r)));
+async function mock(page){
+ const lesson={id:'lesson-1',level_id:1,title:'Bài 1. Xin chào',status:'published'},set={id:'set-1',lesson_id:lesson.id,level_id:1,title:'Bộ bài 1',lesson_title:lesson.title,activity_count:0};
+ const words=[{id:'word-1',set_id:set.id,kind:'vocabulary',data:{hanzi:'你好',pinyin:'nǐ hǎo',meaning:'Xin chào'}},{id:'word-2',set_id:set.id,kind:'vocabulary',data:{hanzi:'谢谢',pinyin:'xiè xie',meaning:'Cảm ơn'}}];
+ const questions=Array.from({length:20},(_,n)=>({id:'q-'+n,set_id:set.id,kind:'question',data:{type:'choice',prompt:'Câu hỏi '+(n+1),options:['Đúng','Sai']}}));
+ let attempt={id:'attempt-1',set_id:set.id,title:'Quiz 20 câu',items:structuredClone(questions)},reports=[];const requests=[];
+ await page.addInitScript(()=>{localStorage.setItem('ttnava-course','hsk-1');window.__spoken=[];Object.defineProperty(window,'SpeechSynthesisUtterance',{value:class{constructor(text){this.text=text;}}});Object.defineProperty(window,'speechSynthesis',{value:{getVoices:()=>[{lang:'vi-VN'},{lang:'zh-CN'}],cancel:()=>{},speak:u=>window.__spoken.push(u.text)}});});
+ await page.route('**/api/v1/**',async route=>{const req=route.request(),p=new URL(req.url()).pathname;let data={};
+  if(p.endsWith('/auth/me'))data={profile:{id:'hub-user',role:'student',displayName:'An',grade:null}};
+  else if(p.endsWith('/access'))data={id:'hsk-1',kind:'chinese',level:1,title:'HSK1',unlocked:true};
+  else if(p.endsWith('/diamonds/summary'))data={total:0};
+  else if(p.includes('/chat/'))data=[];
+  else if(p.endsWith('/chinese/catalog'))data={levels:[{id:1,title:'HSK1'}],lessons:[lesson],sets:[set],counts:[{set_id:set.id,kind:'vocabulary',total:2},{set_id:set.id,kind:'question',total:20}],reviews:[],progress:[],completion:[]};
+  else if(p.endsWith('/quiz-plan'))data={total:20,review_count:0,blocks:[{block:0,from:1,to:20,questions}]};
+  else if(p.endsWith('/chinese/sets/set-1'))data={set,items:[...words,...questions],activities:null,progress:null};
+  else if(p.endsWith('/chinese/attempts')&&req.method()==='POST'){requests.push(req.postDataJSON());data=attempt;}
+  else if(p.endsWith('/answers')){const b=req.postDataJSON(),item=attempt.items.find(i=>i.id===b.item_id);item.selection=b.value;if(b.lock)item.result={locked:true,value:b.value,correct:b.value==='Đúng',accepted:['Đúng'],explanation:'Lời giải'};data=attempt;}
+  else if(p.endsWith('/chinese/attempts/attempt-1'))data=attempt;
+  else if(p.endsWith('/feedback')){if(req.method()==='POST'){reports.push({id:'feedback-1',...req.postDataJSON(),status:'open',created_at:new Date().toISOString()});data={id:'feedback-1'};}else data=reports;}
+  else if(p.endsWith('/learning/week'))data={days:2,completed:3,target:3};
+  else if(p.endsWith('/learning/search'))data=[{title:'你好 · nǐ hǎo · Xin chào',detail:'Bài 1',href:'/pages/student/chinese/?set=set-1&mode=words'}];
+  else if(p.endsWith('/learning/wrong'))data=[{id:'q-1',title:'Câu từng sai',explanation:'Giải thích',answer:'Đúng',href:'/pages/student/chinese/?attempt=attempt-1',set_id:set.id}];
+  else if(p.endsWith('/learning/goal'))data=req.postDataJSON();
+  await route.fulfill({json:{data}});
+ });return {requests,reports};
+}
+test('word table has three columns, filters pinyin, plays only on click, and listening waits for a click',async({page})=>{
+ await mock(page);const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(origin+'/pages/student/chinese/?set=set-1&mode=words');
+ await expect(page.locator('.hub-table th')).toHaveCount(3);await expect(page.locator('.hub-table tbody tr')).toHaveCount(2);expect(await page.evaluate(()=>window.__spoken)).toEqual([]);
+ await page.getByRole('searchbox',{name:'Tìm từ trong bài'}).fill('ni hao');await expect(page.locator('.hub-table tbody tr')).toHaveCount(1);
+ await page.getByRole('button',{name:'Nghe 你好',exact:true}).click();expect(await page.evaluate(()=>window.__spoken.at(-1))).toBe('你好');
+ await page.goto(origin+'/pages/student/chinese/?set=set-1&mode=listen');await expect(page.getByRole('button',{name:'Nghe từ tiếng Trung',exact:true})).toBeVisible();expect(await page.evaluate(()=>window.__spoken)).toEqual([]);
+ await page.getByRole('button',{name:'Nghe từ tiếng Trung',exact:true}).click();expect((await page.evaluate(()=>window.__spoken)).length).toBe(1);
+ await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect(errors).toEqual([]);
+});
+test('quiz previews its section, revisits locked answers, and keeps an ungraded answer when going back',async({page})=>{
+ const state=await mock(page);await page.goto(origin+'/pages/student/chinese/');await page.getByRole('button',{name:'Quiz 20 câu',exact:true}).click();await expect(page.getByRole('dialog',{name:'Chọn nội dung quiz'})).toBeVisible();
+ await page.getByRole('button',{name:'Bắt đầu / tiếp tục 20 câu'}).click();await expect(page.locator('.quiz-position')).toHaveText('Câu 1 / 20');expect(state.requests[0].selection).toBe('sequential');
+ await page.getByRole('radio',{name:/Đúng/}).check();await page.getByRole('button',{name:'Kiểm tra',exact:true}).click();await page.getByRole('button',{name:'Câu tiếp theo →'}).click();
+ await page.getByRole('radio',{name:/Sai/}).check();await page.getByRole('button',{name:'← Câu trước',exact:true}).click();await expect(page.locator('#content')).toContainText('Con đã trả lời: Đúng');
+ await page.getByRole('button',{name:'Về câu đang làm →'}).click();await expect(page.getByRole('radio',{name:/Sai/})).toBeChecked();await expect(page.getByRole('button',{name:'Câu 3 · Chưa làm',exact:true})).toBeDisabled();
+});
+test('contextual feedback is categorized and its history is readable; hub search, wrong questions and goals work',async({page})=>{
+ const state=await mock(page);await page.goto(origin+'/pages/student/chinese/?attempt=attempt-1');await page.getByRole('button',{name:'Phản ánh câu này',exact:true}).click();
+ await page.getByRole('combobox',{name:'Loại phản ánh'}).selectOption('answer');await page.getByRole('textbox',{name:'Mô tả vấn đề'}).fill('Đáp án của câu này cần kiểm tra lại.');await page.getByRole('button',{name:'Gửi phản ánh',exact:true}).click();await expect(page.getByRole('dialog')).toContainText('Đã gửi.');expect(state.reports[0].context_text).toBe('Câu hỏi 1');expect(state.reports[0].category).toBe('answer');
+ await page.getByRole('button',{name:'Phản ánh của tôi'}).click();await expect(page.getByRole('dialog')).toContainText('Đã tiếp nhận');await page.getByRole('button',{name:'Đóng',exact:true}).last().click();
+ await page.goto(origin+'/pages/student/study-hub/');await page.getByRole('searchbox',{name:'Tìm nội dung',exact:true}).fill('ni hao');await page.getByRole('button',{name:'Tìm',exact:true}).click();await expect(page.locator('#hub-content')).toContainText('你好');
+ await page.goto(origin+'/pages/student/study-hub/?view=wrong');await expect(page.locator('#hub-content')).toContainText('Câu từng sai');await expect(page.getByRole('textbox',{name:'Tự thử lại'})).toBeVisible();
+ await page.goto(origin+'/pages/student/study-hub/?view=goals');await page.getByRole('combobox',{name:'Mục tiêu số ngày'}).selectOption('2');await expect(page.locator('#hub-notice')).toContainText('Đã lưu');await expect(page.locator('.hub-badge')).toBeVisible();
+});
+test('administrators can filter feedback and save a reply from the management page',async({page})=>{
+ let report={id:'report-1',category:'audio',status:'open',message:'Không nghe được câu hỏi',display_name:'An',page_url:'/pages/student/chinese/',context_text:'你好',created_at:new Date().toISOString(),reply:''};
+ await page.route('**/api/v1/**',async route=>{const req=route.request(),p=new URL(req.url()).pathname;let data={};if(p.endsWith('/auth/me'))data={profile:{id:'admin-1',role:'admin',adminScope:'chinese',displayName:'Admin'}};else if(p.endsWith('/feedback'))data=[report];else if(p.endsWith('/feedback/report-1')){report={...report,...req.postDataJSON()};data=report;}else if(p.includes('/chat/'))data=[];await route.fulfill({json:{data}});});
+ await page.goto(origin+'/pages/admin/feedback/');await expect(page.locator('#feedback-list')).toContainText('Không nghe được');
+ await page.getByRole('combobox',{name:'Trạng thái xử lý'}).selectOption('reviewing');await page.getByRole('textbox',{name:'Phản hồi cho người gửi'}).fill('Đang kiểm tra âm thanh');await page.getByRole('button',{name:'Lưu phản hồi'}).click();await expect(page.locator('#feedback-notice')).toContainText('Đã lưu');expect(report.reply).toBe('Đang kiểm tra âm thanh');
+ await page.locator('#feedback-filter').selectOption('resolved');await expect(page.locator('#feedback-list')).toContainText('Chưa có phản ánh');
+});

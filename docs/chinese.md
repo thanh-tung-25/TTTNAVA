@@ -138,6 +138,23 @@ Tiến độ bộ = (số từ đã tự đánh giá ít nhất một lần + s�
 
 Âm thanh dùng URL nội bộ hoặc HTTPS do admin nhập; không có nguồn và không có giọng Trung trên thiết bị thì không hiển thị nút phát âm. Ảnh hỗ trợ đường dẫn nội bộ hoặc HTTPS. Ghi âm yêu cầu người học chủ động cấp quyền microphone; bản ghi chỉ nằm trong trình duyệt, dừng tự động sau 60 giây, không upload. Canvas tự luyện viết không chấm nét, không nhận xét đúng/sai. Chưa tích hợp dịch vụ chấm phát âm hoặc dữ liệu thứ tự nét; không hiển thị điểm giả.
 
+## Đồng bộ nội dung XAMPP và website Vercel
+
+Các tính năng Từ mới ba cột, luyện nghe, quiz theo phần, sổ câu sai và phản ánh người dùng được mô tả trong [Góc ôn tập và phản ánh](study-hub.md).
+
+Deploy code không tự chuyển bài học từ MySQL XAMPP sang PostgreSQL Supabase. Tạo bảng cũng chưa tạo nội dung: cần kiểm tra cả bài published, bộ published và dữ liệu luyện vận dụng.
+
+Các nguồn Word bài 3–6 nằm trong `tai-lieu/tieng-trung-bai-3-6/`. Script `backend/scripts/import-chinese-q1-lessons-3-6.mjs` nhập vào HSK1, kiểm tra trùng theo bài và SHA của tài liệu; không thay bài 1–2. Script `backend/scripts/migrate-chinese-activities.mjs` bổ sung phần vận dụng cho bài chưa có, giữ nguyên phần đã được admin chỉnh sửa. Mỗi dạng trong mẫu hiện tại có 10 câu.
+
+Chỉ khi đã xác nhận `backend/.env.vercel` trỏ đúng database đích, chạy tại thư mục gốc dự án:
+
+```powershell
+node --input-type=module -e "process.loadEnvFile('backend/.env.vercel');await import('./backend/scripts/import-chinese-q1-lessons-3-6.mjs')"
+node --input-type=module -e "process.loadEnvFile('backend/.env.vercel');await import('./backend/scripts/migrate-chinese-activities.mjs')"
+```
+
+Sau đó kiểm tra HSK1 trên website có đủ 6 bài và mỗi bài có Luyện vận dụng. Cập nhật nội dung database không cần redeploy nếu code mới đã có trên website. Không chép đè toàn bộ database XAMPP lên Supabase vì sẽ ảnh hưởng tài khoản và lịch sử online.
+
 ## Kiểm tra
 
 Admin chọn rõ các bộ nguồn cho bài kiểm tra (một bộ, các bộ của bài, hoặc các bộ trong HSK). Câu hỏi lấy theo thứ tự bộ đã chọn và thứ tự trong bộ. Cấu hình tiêu đề, thời gian hoặc không giới hạn, phần trăm đạt, trạng thái. Các câu trọng số bằng nhau; điểm = số đúng / tổng số câu × 100. Kim Cương được tính theo quy tắc nêu trên.

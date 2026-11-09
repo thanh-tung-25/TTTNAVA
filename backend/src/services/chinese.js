@@ -7,6 +7,7 @@ import { parse, lessonSchema, setSchema, testSchema, issues, normalizeAnswer } f
 import { extractChinese } from './chinese-import.js';
 import { archiveFile, readArchive, DOCX_MIME } from './private-storage.js';
 import {publishedActivitiesForSet} from './chinese-activities.js';
+import {reviewedQuestions,sequentialQuestions} from './chinese-quiz-plan.js';
 export { catalog };
 const txRun = c => async (sql,p=[]) => (await c.query(sql,p))[0];
 export async function saveLesson(id, body) {
@@ -126,9 +127,10 @@ export async function tests(admin) {
  for(const row of rows) { row.set_ids=json(row.set_ids); if(!admin) { try { for(const s of row.set_ids) await getSet(s); } catch { continue; } } result.push(row); } return result;
 }
 export async function start(user,body) {
- const d=parse(z.object({test_id:z.string().uuid().optional(),set_id:z.string().uuid().optional(),count:z.number().int().min(1).max(20).optional()}),body);
+ const d=parse(z.object({test_id:z.string().uuid().optional(),set_id:z.string().uuid().optional(),count:z.number().int().min(1).max(20).optional(),selection:z.enum(['mixed','sequential','review']).default('mixed'),block:z.number().int().min(0).max(100).default(0)}),body);
  if(Boolean(d.test_id)===Boolean(d.set_id)) throw badRequest('Chọn bài kiểm tra hoặc bộ luyện tập');
  if(d.test_id&&d.count)throw badRequest('Không thay đổi số câu của bài kiểm tra');
+ if(d.test_id&&d.selection!=='mixed')throw badRequest('Không thay đổi nguồn của bài kiểm tra.');
  if(d.count&&d.count!==20)throw badRequest('Mỗi quiz phải có đúng 20 câu');
  let sources, duration=null, title='Luyện tập', pass=70;
  if(d.test_id) { const t=await one("SELECT * FROM chinese_tests WHERE id=? AND status='published'",[d.test_id]); sources=json(t.set_ids);duration=t.duration_seconds;title=t.title;pass=t.pass_percent; } else sources=[d.set_id];
@@ -137,9 +139,15 @@ export async function start(user,body) {
  if(!items.length||items.length>1000||issues(items).length) throw badRequest('Chưa đủ câu hỏi hợp lệ');
  if(d.count){
   if(items.length<20)throw badRequest('Tài liệu chưa đủ 20 câu hỏi để làm quiz. Con có thể học thẻ lật trước.');
-  // Select once at creation and persist the actual selection in the attempt snapshot.
-  for(let n=items.length-1;n>0;n--){const j=randomInt(n+1);[items[n],items[j]]=[items[j],items[n]];}
-  items=items.slice(0,d.count);title='Quiz '+items.length+' câu';
+  if(d.selection==='sequential')items=sequentialQuestions(items,d.block);
+  else if(d.selection==='review'){
+   const seen=await reviewedQuestions(user,d.set_id);items=items.filter(i=>seen.has(i.id));
+   if(items.length<20)throw badRequest('Cần làm ít nhất 20 câu khác nhau trong bài trước khi ôn 20 câu đã học. Hãy luyện theo phần trước nhé.');
+   const wrong=items.filter(i=>!seen.get(i.id).correct),correct=items.filter(i=>seen.get(i.id).correct);
+   for(const group of [wrong,correct])for(let n=group.length-1;n>0;n--){const j=randomInt(n+1);[group[n],group[j]]=[group[j],group[n]];}
+   items=[...wrong,...correct].slice(0,20);
+  }else{for(let n=items.length-1;n>0;n--){const j=randomInt(n+1);[items[n],items[j]]=[items[j],items[n]];}items=items.slice(0,d.count);}
+  title='Quiz '+items.length+' câu'+(d.selection==='sequential'?' · Phần '+(d.block+1):d.selection==='review'?' · Ôn câu đã học':'');
  }
  let existingId;const id=randomUUID(); await withTransaction(async c=>{
   const run=txRun(c);
@@ -154,7 +162,7 @@ export async function start(user,body) {
   }
   if(existingId)return;
   const diamonds_policy=d.test_id||d.count===20?'v1':null;
-  await run('INSERT INTO chinese_attempts (id,student_id,test_id,set_id,snapshot,answers,ends_at) VALUES (?,?,?,?,?,?,?)',[id,user,d.test_id??null,d.set_id??null,JSON.stringify({title,pass,items,diamonds_policy,course_ids:[...new Set(course_ids)]}),JSON.stringify({}),duration?new Date(Date.now()+duration*1000):null]);
+  await run('INSERT INTO chinese_attempts (id,student_id,test_id,set_id,snapshot,answers,ends_at) VALUES (?,?,?,?,?,?,?)',[id,user,d.test_id??null,d.set_id??null,JSON.stringify({title,pass,items,diamonds_policy,selection:d.selection,block:d.block,course_ids:[...new Set(course_ids)]}),JSON.stringify({}),duration?new Date(Date.now()+duration*1000):null]);
   for(const source of sources)await run(dialectSql(`INSERT INTO chinese_progress (student_id,set_id,last_item,read_items) VALUES (?,?,NULL,'[]') ON DUPLICATE KEY UPDATE updated_at=CURRENT_TIMESTAMP(3)`,
    `INSERT INTO chinese_progress(student_id,set_id,last_item,read_items) VALUES (?,?,NULL,'[]') ON CONFLICT(student_id,set_id) DO UPDATE SET updated_at=CURRENT_TIMESTAMP(3)`),[user,source]);
  });return attempt(user,existingId||id);
@@ -163,7 +171,7 @@ function state(a) {
  const snapshot=json(a.snapshot), answers=json(a.answers), items=snapshot.items.map(i=>{
   const answer=answers[i.id]; return {...publicItem(i),result:answer?.locked||a.finished_at?{...answer,accepted:i.data.accepted,explanation:i.data.explanation}:undefined,selection:answer?.value};
  });
- return {id:a.id,set_id:a.set_id,test_id:a.test_id,title:snapshot.title,started_at:a.started_at,ends_at:a.ends_at,finished_at:a.finished_at,score:a.score,pass_percent:snapshot.pass,diamonds_policy:snapshot.diamonds_policy||null,diamonds_delta:a.diamonds_delta,items};
+ return {id:a.id,set_id:a.set_id,test_id:a.test_id,title:snapshot.title,selection:snapshot.selection||'mixed',block:snapshot.block||0,started_at:a.started_at,ends_at:a.ends_at,finished_at:a.finished_at,score:a.score,pass_percent:snapshot.pass,diamonds_policy:snapshot.diamonds_policy||null,diamonds_delta:a.diamonds_delta,items};
 }
 async function finalize(a,run) {
  const snap=json(a.snapshot), answers=json(a.answers);

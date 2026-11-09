@@ -5,6 +5,9 @@ import { elements, show, store, subjectFromUrl } from './exam-context.js';
 import { loadTopics, renderPalette, renderQuestion } from './exam-render.js';
 import { flushSave } from './exam-save.js';
 import {renderExamCatalog} from './exam-catalog-view.js';
+import {api} from './api.js';
+import {renderResult} from './exam-result.js';
+import {startTicker} from './exam-actions.js';
 
 document.getElementById('prev-button').addEventListener('click', async () => {
   await flushSave();
@@ -63,6 +66,13 @@ async function main() {
     return;
   }
   store.subjectId = subjectFromUrl();
+  const requested=new URLSearchParams(location.search).get('attempt');
+  if(requested){
+    store.attempt=(await api('/api/v1/exams/'+encodeURIComponent(requested))).data;
+    if(store.attempt.submitted)renderResult();
+    else{store.current=0;store.deadline=Date.now()+store.attempt.remainingSeconds*1000;store.graceDeadline=store.deadline+5000;show(elements.examView);renderQuestion();startTicker();}
+    return;
+  }
   await loadTopics();
   show(elements.setupView);
 }

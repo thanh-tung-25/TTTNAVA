@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/assets/css/base.css">
   <link rel="stylesheet" href="/assets/css/components.css">
   <link rel="stylesheet" href="/assets/css/pages.css">
+  <link rel="stylesheet" href="/assets/css/admin-students.css">
 </head>
 <body>
   <header id="app-header"></header>
@@ -22,6 +23,11 @@
     </div>
 
     <section class="card">
+      <div id="student-status-tabs" class="tabs hidden" role="tablist" aria-label="Trạng thái tài khoản học sinh" hidden>
+        <button id="active-students-tab" class="tab" type="button" role="tab" aria-controls="students-table" aria-selected="true" data-student-status="active">Đang sử dụng</button>
+        <button id="deleted-students-tab" class="tab" type="button" role="tab" aria-controls="students-table" aria-selected="false" data-student-status="deleted">Thùng rác</button>
+      </div>
+      <p id="trash-notice" class="muted" hidden>Tài khoản trong thùng rác không thể đăng nhập. Lịch sử học và quyền học được giữ để khôi phục.</p>
       <div class="filter-bar">
         <select id="program-filter" class="select" aria-label="Chương trình học">
           <option value="">Tất cả học sinh</option>

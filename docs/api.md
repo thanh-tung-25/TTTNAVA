@@ -128,6 +128,13 @@ Tất cả yêu cầu vai trò `admin`.
 | PATCH | `/admin/students/:id` | Sửa tên, lớp, avatar |
 | POST | `/admin/students/:id/password` | Body `{ newPassword }` |
 | POST | `/admin/students/:id/lock` | Body `{ locked: true/false }` |
+| GET | `/admin/students?status=deleted` | Thùng rác học sinh, chỉ admin tổng |
+| GET | `/admin/students/:id/deletion-preview` | Kiểm tra đúng học sinh và số dữ liệu liên quan, chỉ admin tổng |
+| POST | `/admin/students/:id/deletion-confirmation` | Body `{ username, reason, password, acknowledged: true }`; xác minh admin, trả token xác nhận và thời gian chờ/hết hạn |
+| DELETE | `/admin/students/:id` | Body `{ confirmationToken }`; chuyển vào thùng rác, chỉ admin tổng |
+| POST | `/admin/students/:id/restore` | Khôi phục học sinh từ thùng rác, chỉ admin tổng |
+
+Các endpoint xóa/khôi phục tương ứng cho admin phụ dùng tiền tố `/admin/team/:id`; danh sách thùng rác dùng `/admin/team?status=deleted`. Mọi tài khoản admin tổng được bảo vệ khỏi xóa. Mặc định danh sách chỉ chứa tài khoản chưa xóa. Xác nhận yêu cầu nhập lại đúng username, lý do 5–500 ký tự, mật khẩu admin hiện tại và `acknowledged: true`; server áp dụng thời gian chờ 5 giây, hạn dùng 5 phút, token một lần gắn với actor và target. Token chỉ lưu băm, không ghi nhật ký. Tài khoản chuyển vào thùng rác không bị xóa dữ liệu lịch sử; khôi phục yêu cầu đăng nhập mới. Xem [phân quyền và xóa an toàn](admin-roles.md).
 
 Tạo học sinh:
 

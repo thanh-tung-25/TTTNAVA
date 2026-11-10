@@ -3,23 +3,25 @@ import {z} from 'zod';
 import {query,withTransaction,dialectSql} from '../config/db.js';
 import {one} from '../repositories/chinese.js';
 import {parse} from '../validators/chinese.js';
-import {badRequest,forbidden} from '../utils/errors.js';
+import {badRequest,forbidden,notFound} from '../utils/errors.js';
 import {friends,friendship,requireFriend} from './chat-friends.js';
 import {assertProfilesCanInteract} from '../utils/student-visibility.js';
 import {chatProfile,chatProfileCondition,chatRoomCondition,assertChatParticipants,assertRoomVisibleTo} from './chat-visibility.js';
 const uuid=z.string().uuid(),runTx=c=>async(sql,p=[]) => (await c.query(sql,p))[0];
-async function student(id,run=query){return one("SELECT id,username,display_name FROM profiles WHERE id=? AND role IN ('student','admin') AND (banned_until IS NULL OR banned_until<CURRENT_TIMESTAMP)",[id],run);}
-async function member(user,id,run=query){const viewer=await chatProfile(user,run);return one(`SELECT r.* FROM chat_rooms r JOIN chat_members m ON m.room_id=r.id WHERE r.id=? AND m.student_id=? AND ${chatRoomCondition(viewer)}`,[parse(uuid,id),user],run);}
+async function student(id,run=query){return one("SELECT id,username,display_name FROM profiles WHERE id=? AND role IN ('student','admin') AND deleted_at IS NULL AND (banned_until IS NULL OR banned_until<CURRENT_TIMESTAMP)",[id],run);}
+async function member(user,id,run=query){const viewer=await chatProfile(user,run);if(viewer.deleted_at)throw notFound();return one(`SELECT r.* FROM chat_rooms r JOIN chat_members m ON m.room_id=r.id WHERE r.id=? AND m.student_id=? AND ${chatRoomCondition(viewer)}`,[parse(uuid,id),user],run);}
 async function blocked(a,b,run=query){return (await run('SELECT student_id FROM chat_blocks WHERE (student_id=? AND peer_id=?) OR (student_id=? AND peer_id=?)',[a,b,b,a])).length>0;}
 export async function search(user,q){
  q=parse(z.string().trim().min(2).max(60),q);
  const pattern='%'+q.toLowerCase().replace(/[!%_]/g,'!$&')+'%';
  const viewer=await chatProfile(user);
- const rows=await query(`SELECT p.id,p.username,p.display_name,p.avatar_key,p.role FROM profiles p WHERE p.role IN ('student','admin') AND p.id<>? AND (p.banned_until IS NULL OR p.banned_until<CURRENT_TIMESTAMP) AND (LOWER(p.username) LIKE ? ESCAPE '!' OR LOWER(p.display_name) LIKE ? ESCAPE '!') AND NOT EXISTS(SELECT 1 FROM chat_blocks b WHERE (b.student_id=? AND b.peer_id=p.id) OR (b.peer_id=? AND b.student_id=p.id)) AND ${chatProfileCondition(viewer)} ORDER BY p.username LIMIT 15`,[user,pattern,pattern,user,user]);
+ if(viewer.deleted_at)throw notFound();
+ const rows=await query(`SELECT p.id,p.username,p.display_name,p.avatar_key,p.role FROM profiles p WHERE p.role IN ('student','admin') AND p.id<>? AND p.deleted_at IS NULL AND (p.banned_until IS NULL OR p.banned_until<CURRENT_TIMESTAMP) AND (LOWER(p.username) LIKE ? ESCAPE '!' OR LOWER(p.display_name) LIKE ? ESCAPE '!') AND NOT EXISTS(SELECT 1 FROM chat_blocks b WHERE (b.student_id=? AND b.peer_id=p.id) OR (b.peer_id=? AND b.student_id=p.id)) AND ${chatProfileCondition(viewer)} ORDER BY p.username LIMIT 15`,[user,pattern,pattern,user,user]);
  const states=new Map((await friends(user)).map(p=>[p.id,p.friendship]));return rows.map(p=>({...p,friendship:states.get(p.id)||'none'}));
 }
 export async function rooms(user){
  const viewer=await chatProfile(user);
+ if(viewer.deleted_at)throw notFound();
  const rows=await query(`SELECT r.* FROM chat_rooms r JOIN chat_members m ON m.room_id=r.id WHERE m.student_id=? AND ${chatRoomCondition(viewer)} ORDER BY r.updated_at DESC,r.id`,[user]);
  if(!rows.length)return rows;
  const members=await query('SELECT m.room_id,p.id,p.username,p.display_name,p.avatar_key FROM chat_members m JOIN profiles p ON p.id=m.student_id JOIN chat_members me ON me.room_id=m.room_id AND me.student_id=? ORDER BY m.joined_at,p.id',[user]);
@@ -85,8 +87,8 @@ export async function changeMembers(user,id,body){
   if(d.action==='rename'){if(!d.title)throw badRequest('Nhập tên nhóm.');await run('UPDATE chat_rooms SET title=? WHERE id=?',[d.title,id]);return {ok:true};}
   const target=parse(uuid,d.student_id);if(target===user)throw badRequest('Dùng nút Rời nhóm nếu muốn rời nhóm.');
   if(d.action==='add'){
-   await student(target,run);const members=await run('SELECT student_id FROM chat_members WHERE room_id=?',[id]);
-   await assertChatParticipants([...members.map(m=>m.student_id),target],run);await assertRoomVisibleTo(target,id,run);
+   await student(target,run);const members=await run('SELECT m.student_id,p.deleted_at FROM chat_members m JOIN profiles p ON p.id=m.student_id WHERE m.room_id=?',[id]);
+   await assertChatParticipants([...members.filter(m=>!m.deleted_at).map(m=>m.student_id),target],run);await assertRoomVisibleTo(target,id,run);
    await requireFriend(user,target,run);
    if(members.some(m=>m.student_id===target))return {ok:true};if(members.length>=20)throw badRequest('Nhóm tối đa 20 người.');
    for(const m of members)if(await blocked(m.student_id,target,run))throw forbidden('Không thể thêm bạn đang có quan hệ chặn với thành viên nhóm.');
@@ -95,7 +97,7 @@ export async function changeMembers(user,id,body){
   return {ok:true};
  });
 }
-export async function blocks(user){const viewer=await chatProfile(user);return query(`SELECT p.id,p.display_name,p.username FROM chat_blocks b JOIN profiles p ON p.id=b.peer_id WHERE b.student_id=? AND ${chatProfileCondition(viewer)}`,[user]);}
+export async function blocks(user){const viewer=await chatProfile(user);if(viewer.deleted_at)throw notFound();return query(`SELECT p.id,p.display_name,p.username FROM chat_blocks b JOIN profiles p ON p.id=b.peer_id WHERE b.student_id=? AND p.deleted_at IS NULL AND ${chatProfileCondition(viewer)}`,[user]);}
 export async function block(user,id,enabled){
  id=parse(uuid,id);if(id===user)throw badRequest('Không thể tự chặn.');await assertProfilesCanInteract(user,id);await student(id);
  return withTransaction(async c=>{const run=runTx(c);for(const who of [user,id].sort())await one('SELECT id FROM profiles WHERE id=? FOR UPDATE',[who],run);

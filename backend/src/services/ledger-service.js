@@ -70,7 +70,7 @@ export async function getLeaderboard(range = 'week', limit = 50, grade = null) {
             COALESCE(SUM(dl.amount), 0) AS diamonds
      FROM profiles p
      LEFT JOIN diamond_ledger dl ON dl.profile_id = p.id ${dateFilter}
-     WHERE p.role = 'student'
+     WHERE p.role = 'student' AND p.deleted_at IS NULL
        AND (p.banned_until IS NULL OR p.banned_until <= CURRENT_TIMESTAMP)
        ${gradeFilter}
      GROUP BY p.id, p.display_name, p.avatar_key, p.grade

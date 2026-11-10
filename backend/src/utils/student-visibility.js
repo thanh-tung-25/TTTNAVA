@@ -22,8 +22,8 @@ export function canProfilesInteract(a,b){
  return Boolean(a&&b)&&isProfileVisible(a,b)&&isProfileVisible(b,a);
 }
 export async function assertProfilesCanInteract(aId,bId,run=query){
- const rows=await run('SELECT id,role,admin_scope,student_creator_scope,student_management_scope,registration_source FROM profiles WHERE id IN (?,?)',[aId,bId]);
+ const rows=await run('SELECT id,role,admin_scope,student_creator_scope,student_management_scope,registration_source,deleted_at FROM profiles WHERE id IN (?,?)',[aId,bId]);
  const a=rows.find(p=>p.id===aId),b=rows.find(p=>p.id===bId);
- if(!canProfilesInteract(a,b))throw notFound();
+ if(a?.deleted_at||b?.deleted_at||!canProfilesInteract(a,b))throw notFound();
  return {a,b};
 }

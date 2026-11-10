@@ -12,15 +12,19 @@ export async function load() {
     const params = new URLSearchParams({ page: store.page, limit: 20 });
     if (store.search) params.set('q', store.search);
     if (store.program) params.set('program', store.program);
+    if (store.canManageAccounts && store.status === 'deleted') params.set('status', 'deleted');
     const payload = await api(`/api/v1/admin/students?${params}`);
     store.studentsById = new Map(payload.data.map((student) => [student.id, student]));
     store.totalPages = Math.max(1, Math.ceil(payload.pagination.total / payload.pagination.limit));
+    if (store.page > store.totalPages) { store.page = store.totalPages; return load(); }
     elements.table.innerHTML = payload.data.length
       ? `<div class="table-wrap"><table class="table admin-table">
-          <thead><tr><th>Học sinh</th><th>Lớp</th><th>Trạng thái</th><th>Ngày tạo</th><th>Thao tác</th></tr></thead>
+          <thead><tr><th>Học sinh</th><th>Lớp</th><th>Trạng thái</th><th>${store.status === 'deleted' ? 'Ngày xóa' : 'Ngày tạo'}</th><th>Thao tác</th></tr></thead>
           <tbody>${payload.data.map(row).join('')}</tbody>
         </table></div>`
-      : emptyState('👧', 'Chưa có học sinh nào', store.canCreateAccounts?'Bấm “Thêm học sinh” để tạo tài khoản đầu tiên.':'Chưa có học sinh trong danh sách này.');
+      : store.status === 'deleted'
+        ? emptyState('↩', 'Thùng rác trống', 'Các tài khoản đã xóa sẽ xuất hiện ở đây để khôi phục.')
+        : emptyState('👧', 'Chưa có học sinh nào', store.canCreateAccounts?'Bấm “Thêm học sinh” để tạo tài khoản đầu tiên.':'Chưa có học sinh trong danh sách này.');
     elements.pageLabel.textContent = `Trang ${store.page}/${store.totalPages} · ${payload.pagination.total} học sinh`;
     elements.prevButton.disabled = store.page <= 1;
     elements.nextButton.disabled = store.page >= store.totalPages;

@@ -100,7 +100,7 @@ export function summary(row) {
 
 export async function profileByUsername(username) {
   const rows = await query(
-    'SELECT * FROM profiles WHERE username = ? AND role = \'student\' LIMIT 1',
+    'SELECT * FROM profiles WHERE username = ? AND role = \'student\' AND deleted_at IS NULL LIMIT 1',
     [username],
   );
   return rows[0] ?? null;

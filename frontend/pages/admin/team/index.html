@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Quản trị viên — TTNAVA</title><link rel="icon" href="/assets/images/ttnava-logo.png">
-<link rel="stylesheet" href="/assets/css/base.css"><link rel="stylesheet" href="/assets/css/components.css"><link rel="stylesheet" href="/assets/css/pages.css"><link rel="stylesheet" href="/assets/css/admin-team.css"></head>
+<link rel="stylesheet" href="/assets/css/base.css"><link rel="stylesheet" href="/assets/css/components.css"><link rel="stylesheet" href="/assets/css/pages.css"><link rel="stylesheet" href="/assets/css/admin-team.css"><link rel="stylesheet" href="/assets/css/admin-students.css"></head>
 <body><header id="app-header"></header><main class="page admin-team-page">
   <div class="page-head"><div><p class="eyebrow">DÀNH CHO ADMIN TỔNG</p><h1>Quản trị viên</h1><p>Phân công người quản lý đúng chương trình, giữ tài khoản học sinh dùng chung.</p></div></div>
   <p id="team-notice" role="status" aria-live="polite"></p>
   <div class="team-scope-cards" id="team-summary"></div>
+  <div id="team-status-tabs" class="tabs hidden" role="tablist" aria-label="Trạng thái quản trị viên" hidden>
+    <button id="active-admins-tab" class="tab" type="button" role="tab" aria-controls="team-list" aria-selected="true" data-team-status="active">Đang sử dụng</button>
+    <button id="deleted-admins-tab" class="tab" type="button" role="tab" aria-controls="team-list" aria-selected="false" data-team-status="deleted">Thùng rác</button>
+  </div>
+  <p id="team-trash-notice" class="muted" hidden>Quản trị viên đã xóa không thể đăng nhập. Có thể khôi phục admin phụ; tài khoản admin tổng được bảo vệ khỏi chức năng xóa.</p>
   <details class="card team-create"><summary>+ Thêm quản trị viên</summary>
     <form id="create-admin" class="team-form">
       <label>Tên hiển thị<input class="input" name="displayName" maxlength="60" required></label>

@@ -12,6 +12,7 @@ Hệ thống phân quyền dùng được với MySQL local và PostgreSQL trên
 | Danh sách học sinh | Tất cả | Tự đăng ký công khai, do admin Tiếng Trung tạo hoặc được giao rõ ràng cho phạm vi Tiếng Trung | Thuộc Tiểu học | Thuộc THCS |
 | Tạo tài khoản học sinh | Có | Chỉ tài khoản Tiếng Trung, không có khối lớp | Không | Không |
 | Sửa tài khoản học sinh, đặt lại mật khẩu, khóa tài khoản | Có | Không | Không | Không |
+| Xóa an toàn và khôi phục học sinh / admin phụ | Có, xác nhận nhiều bước | Không | Không | Không |
 | Giá khóa, QR thanh toán, duyệt đơn, cấp/thu hồi quyền học | Có | Không | Không | Không |
 | Quản lý quản trị viên và xem nhật ký | Có | Không | Không | Không |
 
@@ -103,7 +104,17 @@ Quyền được kiểm tra trên backend cho từng API và trang, không chỉ
 
 1. Bật MySQL trong XAMPP. Nếu server đang chạy, dừng bằng `Ctrl+C` và chạy lại `npm start` để nạp mã mới.
 2. Đăng nhập bằng tài khoản admin hiện có: tài khoản này giữ quyền **Admin tổng**.
-3. Mở mục **Quản trị viên** trên thanh điều hướng, hoặc `/pages/admin/team/`. Tại đây có thể thêm người quản lý, phân quyền, khóa/mở khóa và đặt lại mật khẩu.
+3. Mở mục **Quản trị viên** trên thanh điều hướng, hoặc `/pages/admin/team/`. Tại đây có thể thêm người quản lý, phân quyền, khóa/mở khóa, đặt lại mật khẩu, xóa an toàn và khôi phục admin phụ.
+
+## Xóa an toàn và khôi phục tài khoản
+
+Chỉ admin tổng đang hoạt động có quyền này. Áp dụng cho học sinh và admin phụ; không tài khoản admin tổng nào có thể bị xóa qua chức năng này, kể cả do một admin tổng khác thao tác.
+
+Ở **Học sinh** hoặc **Quản trị viên**, chọn **Xóa**, kiểm tra tên và dữ liệu liên quan, tự nhập đúng tên đăng nhập, lý do tối thiểu 5 ký tự, đánh dấu đã kiểm tra và nhập mật khẩu hiện tại của admin tổng. Sau khi xác minh, chờ ít nhất 5 giây tại bước cuối rồi bấm **Xóa tài khoản này**. Có thể hủy trước thao tác cuối.
+
+Tài khoản được chuyển vào **Thùng rác**, ngừng đăng nhập và các phiên cũ hết hiệu lực. Tên đăng nhập, Gmail, mật khẩu, nội dung, lịch sử học, đơn khóa học, quyền học và tin nhắn được giữ nguyên. Các trận thách đấu đang chờ/đang diễn ra của học sinh được hủy để đối thủ không bị kẹt; trận đã kết thúc và kim cương đã ghi vẫn được giữ. Thùng rác không tự xóa vĩnh viễn. Admin tổng có thể chọn **Khôi phục**; tài khoản dùng lại mật khẩu cũ nhưng phải đăng nhập lại, trạng thái khóa và thời hạn quyền học cũ vẫn áp dụng.
+
+Xác nhận xóa do server phát hành, chỉ dùng một lần, gắn với admin và tài khoản cụ thể, hết hạn sau 5 phút. Database chỉ lưu mã băm token. Server tự kiểm tra thời gian chờ và quyền admin, không dựa riêng vào nút trên giao diện. Xóa/khôi phục và nhật ký nằm trong cùng transaction; không ghi mật khẩu hoặc token vào nhật ký. Migration `031_safe_account_deletion.sql` phải được áp dụng trước triển khai.
 4. Hai tài khoản chuyên môn đã được tạo trên MySQL local:
    - `admin_tiengtrung`: vào thẳng trang quản lý Tiếng Trung.
    - `admin_cap1`: vào thẳng trang Nội dung học tập tiểu học.

@@ -1,0 +1,11 @@
+.student-deletion-reason { max-width: 28rem; margin: .35rem 0 0; font-size: .8rem; overflow-wrap: anywhere; }
+.student-deletion-identity { padding: .8rem; border: 2px solid var(--danger); border-radius: var(--radius-sm); margin: .7rem 0 1rem; overflow-wrap: anywhere; }
+.student-deletion-identity strong, .student-deletion-identity span { display: block; }
+.student-deletion-summary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; padding: 0; list-style: none; margin: .7rem 0 1rem; }
+.student-deletion-summary li { background: var(--primary-soft); border-radius: var(--radius-sm); padding: .55rem; font-size: .82rem; }
+.student-deletion-check { display: flex; gap: .6rem; align-items: flex-start; margin: 1rem 0; text-align: left; }
+.student-deletion-check input { flex: none; margin-top: .25rem; }
+.student-deletion-reason-input { min-height: 5rem; resize: vertical; }
+.student-deletion-countdown { min-height: 1.5rem; font-weight: 700; }
+.student-deletion-form .field, .student-deletion-form .input { min-width: 0; max-width: 100%; }
+#student-status-tabs[hidden], #trash-notice[hidden] { display: none !important; }

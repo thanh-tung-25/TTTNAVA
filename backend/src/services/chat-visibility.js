@@ -21,15 +21,17 @@ export function chatRoomCondition(viewer,alias='r'){
   AND NOT EXISTS(SELECT 1 FROM chat_messages xv JOIN profiles pv ON pv.id=xv.sender_id WHERE xv.room_id=${alias}.id AND ${denied}))`;
 }
 export async function chatProfile(id,run=query){
- return one('SELECT id,role,admin_scope,student_creator_scope,student_management_scope,registration_source FROM profiles WHERE id=?',[id],run);
+ return one('SELECT id,role,admin_scope,student_creator_scope,student_management_scope,registration_source,deleted_at FROM profiles WHERE id=?',[id],run);
 }
 export async function assertChatParticipants(ids,run=query){
  const profiles=[];for(const id of [...new Set(ids)])profiles.push(await chatProfile(id,run));
+ if(profiles.some(profile=>profile.deleted_at))throw notFound();
  for(let i=0;i<profiles.length;i++)for(let j=i+1;j<profiles.length;j++){
   if(!canProfilesInteract(profiles[i],profiles[j]))throw notFound();
  }
 }
 export async function assertRoomVisibleTo(user,id,run=query){
  const viewer=await chatProfile(user,run);
+ if(viewer.deleted_at)throw notFound();
  return one(`SELECT r.id FROM chat_rooms r WHERE r.id=? AND ${chatRoomCondition(viewer)}`,[id],run);
 }

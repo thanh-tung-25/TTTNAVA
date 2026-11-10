@@ -15,7 +15,7 @@ export async function getAdminStats(scope = 'super') {
   const studentFilter = schoolPrograms.includes(scope) ? ' AND '+studentProgramCondition('p',scope) : '';
   const [students] = await query(`SELECT COUNT(*) total,
     SUM(CASE WHEN banned_until IS NULL OR banned_until<=CURRENT_TIMESTAMP THEN 1 ELSE 0 END) active
-    FROM profiles p WHERE role='student'${studentFilter}`);
+    FROM profiles p WHERE role='student' AND p.deleted_at IS NULL${studentFilter}`);
   const [bank] = await query(`SELECT
     (SELECT COUNT(*) FROM subjects s WHERE EXISTS(SELECT 1 FROM topics t WHERE t.subject_id=s.id AND ${grade})) subjects,
     (SELECT COUNT(*) FROM topics t WHERE ${grade}) topics,
@@ -37,7 +37,7 @@ export async function getAdminStats(scope = 'super') {
   const topStudents = await query(`SELECT p.id,p.display_name,p.avatar_key,p.grade,COALESCE(SUM(dl.amount),0) diamonds
     FROM diamond_ledger dl JOIN profiles p ON p.id=dl.profile_id
     WHERE dl.created_at>=${dialectSql('DATE_SUB(CURRENT_TIMESTAMP(3), INTERVAL 7 DAY)',"CURRENT_TIMESTAMP(3) - INTERVAL '7 days'")}
-    AND dl.amount>0 AND ${ledger}
+    AND dl.amount>0 AND p.deleted_at IS NULL AND ${ledger}
     GROUP BY p.id,p.display_name,p.avatar_key,p.grade ORDER BY diamonds DESC LIMIT 5`);
   return {
     students:{total:Number(students.total),active:Number(students.active)},

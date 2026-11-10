@@ -29,9 +29,12 @@ export async function resolveUser(request) {
     [payload.sub],
   );
   const profile = rows[0];
-  if (!profile) throw new AppError(401, 'UNAUTHENTICATED', 'Tài khoản không tồn tại');
+  if (!profile || profile.deleted_at) throw new AppError(401, 'UNAUTHENTICATED', 'Tài khoản không tồn tại');
   if (profile.role === 'admin' && Number(payload.av || 0) !== Number(profile.admin_auth_version || 0)) {
     throw new AppError(401, 'INVALID_TOKEN', 'Quyền hoặc mật khẩu quản trị đã thay đổi. Vui lòng đăng nhập lại.');
+  }
+  if (profile.role === 'student' && Number(payload.sv || 0) !== Number(profile.student_auth_version || 0)) {
+    throw new AppError(401, 'INVALID_TOKEN', 'Phiên đăng nhập đã hết hạn, con đăng nhập lại nhé');
   }
   if (profile.banned_until && new Date(profile.banned_until) > new Date()) {
     throw new AppError(403, 'ACCOUNT_LOCKED', 'Tài khoản đã bị khoá. Con hãy nhờ bố mẹ nhé');

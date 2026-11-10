@@ -16,11 +16,13 @@ const createSchema = z.object({
 }).strict();
 const accessSchema = z.object({ adminScope: scopeSchema.optional(), locked: z.boolean().optional() }).strict()
   .refine(value => value.adminScope !== undefined || value.locked !== undefined, 'Chọn thay đổi cần lưu.');
-export function listAdmins() {
-  return query("SELECT * FROM profiles WHERE role='admin' ORDER BY created_at,id").then(rows => rows.map(publicProfile));
+export function listAdmins(status='active') {
+  const state=z.enum(['active','deleted']).parse(status);
+  return query(`SELECT * FROM profiles WHERE role='admin' AND deleted_at IS ${state==='deleted'?'NOT ':''}NULL ORDER BY created_at,id`)
+    .then(rows => rows.map(row=>({...publicProfile(row),...(state==='deleted'?{deletedAt:new Date(row.deleted_at).toISOString(),deletionReason:row.deletion_reason??''}:{})})));
 }
 async function lockedAdmins(actor, connection) {
-  const [rows] = await connection.query("SELECT * FROM profiles WHERE role='admin' ORDER BY id FOR UPDATE");
+  const [rows] = await connection.query("SELECT * FROM profiles WHERE role='admin' AND deleted_at IS NULL ORDER BY id FOR UPDATE");
   const current = rows.find(row => row.id === actor.id);
   if (!current || adminScopeOf(current) !== 'super' || current.banned_until && new Date(current.banned_until) > new Date()) {
     throw new AppError(403,'ADMIN_SCOPE_FORBIDDEN','Chỉ admin tổng được quản lý quản trị viên.');

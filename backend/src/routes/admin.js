@@ -5,6 +5,7 @@ import {
   lockStudentHandler,
   resetPasswordHandler,
   updateStudentHandler,
+  studentDeletionPreviewHandler,confirmStudentDeletionHandler,deleteStudentHandler,restoreStudentHandler,
 } from '../controllers/admin-student-controller.js';
 import {
   createQuestionHandler,
@@ -26,6 +27,7 @@ import { uploadDocx } from '../middlewares/upload-docx.js';
 import {asyncHandler} from '../utils/errors.js';
 import {deploymentCheck} from '../services/deployment-check.js';
 import {requireSchoolAdmin} from '../middlewares/school-admin.js';
+import {rateLimit} from '../middlewares/rate-limit.js';
 
 const router = Router();
 
@@ -40,6 +42,10 @@ router.post('/students', requireAdminScope('chinese'), createStudentHandler);
 router.patch('/students/:id', requireSuperAdmin, updateStudentHandler);
 router.post('/students/:id/password', requireSuperAdmin, resetPasswordHandler);
 router.post('/students/:id/lock', requireSuperAdmin, lockStudentHandler);
+router.get('/students/:id/deletion-preview',requireSuperAdmin,studentDeletionPreviewHandler);
+router.post('/students/:id/deletion-confirmation',requireSuperAdmin,rateLimit({windowMs:300_000,max:5,keyPrefix:'student-deletion-confirm'}),confirmStudentDeletionHandler);
+router.delete('/students/:id',requireSuperAdmin,rateLimit({windowMs:60_000,max:10,keyPrefix:'student-delete'}),deleteStudentHandler);
+router.post('/students/:id/restore',requireSuperAdmin,restoreStudentHandler);
 
 router.use(requireSchoolAdmin);
 router.get('/curriculum/tree', curriculumTreeHandler);

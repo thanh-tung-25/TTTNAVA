@@ -26,7 +26,9 @@ async function profileFromSocket(socket) {
   }
   const rows = await query('SELECT * FROM profiles WHERE id = ? LIMIT 1', [payload.sub]);
   const profile = rows[0];
-  if (!profile || profile.role === 'bot') return null;
+  if (!profile || profile.deleted_at || profile.role === 'bot') return null;
+  if (profile.role === 'student' && Number(payload.sv || 0) !== Number(profile.student_auth_version || 0)) return null;
+  if (profile.role === 'admin' && Number(payload.av || 0) !== Number(profile.admin_auth_version || 0)) return null;
   if (profile.banned_until && new Date(profile.banned_until) > new Date()) return null;
   return profile;
 }

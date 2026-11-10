@@ -16,4 +16,5 @@
 .team-log time { font-size:.8rem; color:var(--muted); }
 .team-log-pages { justify-content:flex-start; padding-top:16px; }
 .team-success { color:var(--success); }
+.admin-team-page [hidden] { display:none !important; }
 @media(max-width:600px){.team-scope-cards{grid-template-columns:1fr;gap:10px}.team-scope-cards .card{flex-direction:row;align-items:center;gap:16px;padding:16px}.team-member{padding:16px}.team-member-head{align-items:flex-start}.team-log{align-items:flex-start;flex-direction:column;gap:4px}}

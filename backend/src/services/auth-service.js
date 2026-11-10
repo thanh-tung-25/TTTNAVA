@@ -14,7 +14,7 @@ export async function login(rawUsername, password) {
   const profile = rows[0];
 
   // Robot và tài khoản không tồn tại dùng chung một thông báo để không lộ thông tin.
-  if (!profile || profile.role === 'bot' || !profile.password_hash) {
+  if (!profile || profile.deleted_at || profile.role === 'bot' || !profile.password_hash) {
     throw new AppError(401, 'INVALID_CREDENTIALS', 'Tên đăng nhập hoặc mật khẩu chưa đúng');
   }
   const valid = await bcrypt.compare(password, profile.password_hash);
@@ -33,6 +33,6 @@ export async function hashPassword(password) {
 }
 
 export async function getProfileById(id) {
-  const rows = await query('SELECT * FROM profiles WHERE id = ? LIMIT 1', [id]);
+  const rows = await query('SELECT * FROM profiles WHERE id = ? AND deleted_at IS NULL LIMIT 1', [id]);
   return rows[0] ?? null;
 }

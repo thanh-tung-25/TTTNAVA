@@ -36,7 +36,7 @@ export function adminPageScope(req, res, next) {
 export function studentProgramCondition(alias, scope) {
   if (!['primary', 'secondary', 'chinese'].includes(scope) || !/^[a-z]+$/.test(alias)) throw Error('Invalid program scope');
   const legacy = scope === 'chinese' ? `${alias}.grade IS NULL` : `${alias}.grade BETWEEN ${scope === 'primary' ? '1 AND 5' : '6 AND 9'}`;
-  const managedChinese = scope === 'chinese' ? `COALESCE(${alias}.student_management_scope,${alias}.student_creator_scope)='chinese' OR ` : '';
+  const managedChinese = scope === 'chinese' ? `${alias}.registration_source='self' OR COALESCE(${alias}.student_management_scope,${alias}.student_creator_scope)='chinese' OR ` : '';
   return `(${managedChinese}EXISTS(SELECT 1 FROM course_enrollments pe JOIN courses pc ON pc.id=pe.course_id WHERE pe.student_id=${alias}.id AND pc.kind='${scope}')
     OR EXISTS(SELECT 1 FROM course_orders po JOIN courses pc ON pc.id=po.course_id WHERE po.student_id=${alias}.id AND pc.kind='${scope}')
     OR (NOT EXISTS(SELECT 1 FROM course_enrollments pe WHERE pe.student_id=${alias}.id) AND NOT EXISTS(SELECT 1 FROM course_orders po WHERE po.student_id=${alias}.id) AND ${legacy}))`;

@@ -13,7 +13,7 @@ const {query,withTransaction,closePool}=await import('../src/config/db.js');
 const {seedSecondaryCatalog,loadSecondaryBook}=await import('./lib/seed-secondary.mjs');
 const {seedLiteratureCatalog,loadLiteratureBooks}=await import('./lib/seed-literature.mjs');
 const {seedSecondaryEnglishCatalog,loadSecondaryEnglishBooks}=await import('./lib/seed-english-secondary.mjs');
-const migrations=['027_secondary_school.sql','028_student_privacy.sql','029_student_management_scope.sql'];
+const migrations=['027_secondary_school.sql','028_student_privacy.sql','029_student_management_scope.sql','030_public_registration.sql'];
 const counts=async()=> (await query(`SELECT (SELECT COUNT(*) FROM profiles) profiles,
  (SELECT COUNT(*) FROM questions) questions,(SELECT COUNT(*) FROM course_enrollments) enrollments,
  (SELECT COUNT(*) FROM course_orders) orders,(SELECT COUNT(*) FROM diamond_ledger) ledger,
@@ -22,13 +22,15 @@ async function state(){
  const columns=await query("SELECT column_name FROM information_schema.columns WHERE table_schema=current_schema() AND table_name='profiles'");
  const checks=await query("SELECT conname,pg_get_constraintdef(oid) definition FROM pg_constraint WHERE conrelid IN ('courses'::regclass,'profiles'::regclass) AND contype='c'");
  const privacy=columns.filter(c=>['student_created_by','student_creator_scope'].includes(c.column_name));
+ const [otpTable]=await query("SELECT EXISTS(SELECT 1 FROM information_schema.tables WHERE table_schema=current_schema() AND table_name='registration_otps') present");
  if(privacy.length===1)throw Error('Incomplete student privacy migration');
  return {secondary:checks.some(c=>c.conname==='courses_kind_check'&&c.definition.includes('secondary')),
   privacy:privacy.length===2&&checks.some(c=>c.conname==='chk_profiles_student_creator_scope'),
-  management:columns.some(c=>c.column_name==='student_management_scope')&&checks.some(c=>c.conname==='chk_profiles_student_management_scope')};
+  management:columns.some(c=>c.column_name==='student_management_scope')&&checks.some(c=>c.conname==='chk_profiles_student_management_scope'),
+  registration:columns.filter(c=>['registration_source','email_verified_at','gmail_identity'].includes(c.column_name)).length===3&&Boolean(otpTable.present)&&checks.some(c=>c.conname==='chk_profiles_registration_source')};
 }
 async function verify(){
- const current=await state();if(!current.secondary||!current.privacy||!current.management)throw Error('Release schema is not ready');
+ const current=await state();if(!current.secondary||!current.privacy||!current.management||!current.registration)throw Error('Release schema is not ready');
  const {getCurriculumTree}=await import('../src/services/curriculum-service.js');
  const {listStudents}=await import('../src/services/admin-students.js');
  const {stats}=await import('../src/services/chinese.js');
@@ -45,7 +47,7 @@ async function verify(){
 }
 try{
  await loadSecondaryBook();await loadLiteratureBooks();await loadSecondaryEnglishBooks();
- const before=await counts(),current=await state(),pending=migrations.filter((_,i)=>![current.secondary,current.privacy,current.management][i]);
+ const before=await counts(),current=await state(),pending=migrations.filter((_,i)=>![current.secondary,current.privacy,current.management,current.registration][i]);
  if(verifyOnly){console.log(JSON.stringify({ok:true,mode:'verify',...await verify(),protectedCounts:before}));}
  else{
   const rollback=Error('VALIDATION_ROLLBACK');

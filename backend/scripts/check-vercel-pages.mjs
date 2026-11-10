@@ -74,7 +74,7 @@ try {
   if(target){
     stage='student-privacy';
     const [teacher]=await query("SELECT * FROM profiles WHERE role='admin' AND admin_scope='chinese' AND (banned_until IS NULL OR banned_until<=CURRENT_TIMESTAMP) LIMIT 1");
-    const [hidden]=await query("SELECT id,username FROM profiles WHERE role='student' AND COALESCE(student_management_scope,student_creator_scope,'')<>'chinese' LIMIT 1");
+    const [hidden]=await query("SELECT id,username FROM profiles WHERE role='student' AND registration_source<>'self' AND COALESCE(student_management_scope,student_creator_scope,'')<>'chinese' LIMIT 1");
     if(teacher&&hidden){
       const context=await browser.newContext();
       await context.addCookies([{name:env.cookie.name,value:signToken(teacher),url:origin}]);

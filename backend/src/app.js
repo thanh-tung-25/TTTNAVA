@@ -68,6 +68,10 @@ export function createApp() {
   app.get('/pages/login/', redirectIfAuthenticated, (_request, response) => {
     response.sendFile(path.join(pagesRoot, 'login', 'index.html'));
   });
+  app.get('/pages/register',(_request,response)=>response.redirect('/pages/register/'));
+  app.get('/pages/register/',redirectIfAuthenticated,(_request,response)=>{
+    response.set('Cache-Control','no-store').sendFile(path.join(pagesRoot,'register','index.html'));
+  });
 
   app.use('/pages/student', requirePageRole('student'), coursePageGuard, protectedHtml(path.join(pagesRoot, 'student')));
   app.get(['/pages/admin/worksheets','/pages/admin/worksheets/','/pages/admin/worksheets/index.html'],requirePageRole('admin'),(_request,response)=>response.redirect('/pages/admin/questions/'));

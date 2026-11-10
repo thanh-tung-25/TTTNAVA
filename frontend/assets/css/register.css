@@ -1,0 +1,24 @@
+.registration-card { width: min(520px, 100%); }
+.registration-card .login-logo { width: 100px; height: 100px; margin-top: .6rem; }
+.registration-card h1 { font-size: 1.6rem; }
+.registration-card [hidden] { display: none !important; }
+.registration-notice { padding: .8rem; border-radius: var(--radius-sm); background: var(--primary-soft); color: var(--primary-dark); font-size: .9rem; }
+.registration-steps { display: flex; justify-content: center; gap: 1rem; padding: 0; margin: .5rem 0 1.25rem; list-style: none; color: var(--muted); font-size: .8rem; }
+.registration-steps li { display: flex; align-items: center; gap: .4rem; }
+.registration-steps span { display: inline-grid; place-items: center; flex: none; width: 1.7rem; height: 1.7rem; border-radius: 50%; background: var(--line-soft); }
+.registration-steps [aria-current] { color: var(--primary-dark); font-weight: 700; }
+.registration-steps [aria-current] span { background: var(--primary); color: white; }
+.registration-recipient { display: grid; justify-items: start; gap: .5rem; padding: .8rem; margin-bottom: 1rem; border: 1px solid var(--line); border-radius: var(--radius-sm); text-align: left; }
+.registration-recipient p { margin: 0; font-size: .88rem; overflow-wrap: anywhere; }
+.registration-card .hint { display: block; margin-top: .25rem; }
+.registration-otp { max-width: 15rem; font-size: 1.35rem; font-weight: 700; letter-spacing: .45rem; }
+.registration-resend { display: flex; justify-content: flex-start; margin: -.25rem 0 1.1rem; }
+.registration-card .field { min-width: 0; }
+.registration-card .input, .registration-card .select { min-width: 0; max-width: 100%; }
+.registration-card .form-error { text-align: left; overflow-wrap: anywhere; }
+.registration-login { margin: 1.3rem 0 0; font-size: .88rem; }
+@media (max-width: 400px) {
+  .registration-card { padding: 1.2rem .9rem; }
+  .registration-steps { gap: .65rem; font-size: .74rem; }
+  .registration-card h1 { font-size: 1.45rem; }
+}

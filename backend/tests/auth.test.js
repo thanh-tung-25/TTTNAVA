@@ -19,12 +19,12 @@ describe('Xác thực và phân quyền', () => {
     locked = await createTestUser({ username: 'test_auth_locked', locked: true });
   });
 
-  test('test_auth_register_disabled_returns_403', async () => {
+  test('registration stays closed without email configuration', async () => {
     const response = await request(app)
       .post('/api/v1/auth/register')
-      .send({ username: 'tu_dang_ky', password: PASSWORD });
-    expect(response.status).toBe(403);
-    expect(response.body.error.code).toBe('REGISTRATION_DISABLED');
+      .send({challengeId:'a202b34a-61a9-4c8b-8402-23f8dce308d7',otp:'123456',username:'tu_dang_ky',password:PASSWORD,displayName:'Học sinh'});
+    expect(response.status).toBe(503);
+    expect(response.body.error.code).toBe('REGISTRATION_UNAVAILABLE');
   });
 
   test('test_auth_login_success_returns_profile_and_cookie', async () => {

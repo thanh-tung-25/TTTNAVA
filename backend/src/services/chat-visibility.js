@@ -1,12 +1,12 @@
 import {query} from '../config/db.js';
 import {one} from '../repositories/chinese.js';
 import {notFound} from '../utils/errors.js';
-import {studentVisibleCondition,studentManagementScope,canProfilesInteract} from '../utils/student-visibility.js';
+import {studentVisibleCondition,studentManagementScope,isSharedStudent,canProfilesInteract} from '../utils/student-visibility.js';
 
 export function chatProfileCondition(viewer,alias='p'){
  if(!/^[a-z_]+$/.test(alias))throw Error('Invalid profile alias');
  const visible=studentVisibleCondition(viewer,alias);
- if(viewer.role==='student'&&studentManagementScope(viewer)!=='chinese'){
+ if(viewer.role==='student'&&!isSharedStudent(viewer)&&studentManagementScope(viewer)!=='chinese'){
   return `(${visible} AND (${alias}.role<>'admin' OR COALESCE(${alias}.admin_scope,'super')<>'chinese'))`;
  }
  return visible;
@@ -21,7 +21,7 @@ export function chatRoomCondition(viewer,alias='r'){
   AND NOT EXISTS(SELECT 1 FROM chat_messages xv JOIN profiles pv ON pv.id=xv.sender_id WHERE xv.room_id=${alias}.id AND ${denied}))`;
 }
 export async function chatProfile(id,run=query){
- return one('SELECT id,role,admin_scope,student_creator_scope,student_management_scope FROM profiles WHERE id=?',[id],run);
+ return one('SELECT id,role,admin_scope,student_creator_scope,student_management_scope,registration_source FROM profiles WHERE id=?',[id],run);
 }
 export async function assertChatParticipants(ids,run=query){
  const profiles=[];for(const id of [...new Set(ids)])profiles.push(await chatProfile(id,run));

@@ -9,7 +9,7 @@ Hệ thống phân quyền dùng được với MySQL local và PostgreSQL trên
 | Nội dung HSK 1–9, Word, bộ từ, bài kiểm tra | Có | Có | Không | Không |
 | Nội dung, câu hỏi, bài tập và thống kê lớp 1–5 | Có | Không | Có | Không |
 | Nội dung, câu hỏi, bài tập và thống kê lớp 6–9 | Có | Không | Không | Có |
-| Danh sách học sinh | Tất cả | Do admin Tiếng Trung tạo hoặc được giao rõ ràng cho phạm vi Tiếng Trung | Thuộc Tiểu học | Thuộc THCS |
+| Danh sách học sinh | Tất cả | Tự đăng ký công khai, do admin Tiếng Trung tạo hoặc được giao rõ ràng cho phạm vi Tiếng Trung | Thuộc Tiểu học | Thuộc THCS |
 | Tạo tài khoản học sinh | Có | Chỉ tài khoản Tiếng Trung, không có khối lớp | Không | Không |
 | Sửa tài khoản học sinh, đặt lại mật khẩu, khóa tài khoản | Có | Không | Không | Không |
 | Giá khóa, QR thanh toán, duyệt đơn, cấp/thu hồi quyền học | Có | Không | Không | Không |
@@ -20,6 +20,23 @@ Danh sách xét đăng ký/quyền học, kể cả lịch sử; tài khoản c�
 được phân theo khối lớp. Admin chuyên môn không thấy email và không được
 sửa tài khoản chung. Admin Tiếng Trung có thể tạo tài khoản học sinh mới và
 chịu thêm quy tắc riêng tư theo phạm vi quản lý dưới đây.
+
+## Đăng ký công khai bằng Gmail
+
+Hệ thống chỉ có một trang đăng ký chung tại `/pages/register/`, không có
+link mời đăng ký hoặc link riêng của từng admin. Người dùng phải nhận và
+xác minh OTP gửi tới Gmail trước khi tài khoản học sinh được tạo.
+
+Tài khoản tự đăng ký có `registration_source='self'`, `email_verified_at`
+và `gmail_identity` do server ghi. Một Gmail chỉ có một tài khoản; địa chỉ
+Gmail khác chữ hoa/thường, dấu chấm hoặc phần `+tag` được nhận diện là cùng
+một hộp thư. Dữ liệu nguồn tạo và quản lý do người dùng gửi lên không có hiệu lực.
+
+Admin tổng và admin Tiếng Trung đều thấy học sinh tự đăng ký, kể cả khi
+học sinh chọn khối lớp phổ thông hoặc chưa có đăng ký khóa HSK. Quy tắc này
+áp dụng thống nhất cho danh sách, tìm kiếm, phân trang, thống kê, phản ánh
+và chat. Quyền xem học sinh không tự mở quyền sửa tài khoản hoặc cấp khóa học.
+Việc đăng ký không tự cấp quyền học khóa có phí.
 
 ## Tạo tài khoản học sinh Tiếng Trung
 
@@ -43,9 +60,10 @@ không nhận người tạo hay phạm vi giả từ dữ liệu gửi lên. Ch
 trong hồ sơ công khai. Đổi lớp, cấp HSK, đổi quyền hoặc xóa người tạo không
 làm thay đổi phạm vi đã ghi nhận.
 
-Phạm vi quản lý nằm riêng trong `student_management_scope`. Quy tắc hiển
-thị xét `COALESCE(student_management_scope, student_creator_scope)`:
-giá trị `chinese` cho phép admin Tiếng Trung thấy học sinh. Tài khoản mới
+Phạm vi quản lý nằm riêng trong `student_management_scope`. Học sinh tự
+đăng ký công khai luôn được chia sẻ với admin Tiếng Trung. Với các tài khoản
+còn lại, quy tắc hiển thị xét `COALESCE(student_management_scope, student_creator_scope)`:
+giá trị `chinese` cho phép admin Tiếng Trung thấy học sinh. Tài khoản do admin tạo
 nhận phạm vi quản lý của người tạo; tài khoản cũ chưa được gán riêng tiếp
 tục dùng nguồn tạo đã xác minh. Việc giao học sinh cho phạm vi Tiếng Trung
 là thao tác quản trị chủ động đã được cho phép, không suy đoán từ tên tài
@@ -70,9 +88,13 @@ cũ không có bằng chứng nguồn tạo giữ giá trị NULL và được �
 Trung nếu chưa được giao rõ ràng cho phạm vi Tiếng Trung. Migration 029
 thêm trường quản lý riêng, không tự giao tài khoản cũ và không đổi nguồn tạo.
 
+Migration 030 thêm nguồn đăng ký, thời điểm xác minh và khóa Gmail duy nhất,
+cùng bảng OTP chờ xác minh. Tài khoản cũ mặc định có nguồn `admin`; migration
+không thay đổi quyền riêng tư, mật khẩu, lịch sử hoặc quyền học đã có.
+
 Chạy `npm run db:migrate` trên MySQL/MariaDB để áp dụng
-`028_student_privacy.sql` và `029_student_management_scope.sql`.
-PostgreSQL có hai migration tương ứng trong
+`028_student_privacy.sql`, `029_student_management_scope.sql` và `030_public_registration.sql`.
+PostgreSQL có các migration tương ứng trong
 `backend/sql/postgres/`, cần áp dụng vào schema ứng dụng trước khi triển khai mã mới.
 
 Quyền được kiểm tra trên backend cho từng API và trang, không chỉ ẩn menu. Thay đổi phạm vi, khóa tài khoản hoặc đặt lại mật khẩu quản trị viên sẽ hết hạn các phiên đăng nhập quản trị cũ. Không thể khóa hoặc hạ quyền admin tổng cuối cùng đang hoạt động. Muốn thay đổi quyền của chính mình phải nhờ admin tổng khác.

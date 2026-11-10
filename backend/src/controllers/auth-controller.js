@@ -1,6 +1,8 @@
 import env from '../config/env.js';
-import { loginSchema } from '../validators/auth.js';
+import { loginSchema,requestRegistrationOtpSchema,completeRegistrationSchema } from '../validators/auth.js';
 import { login } from '../services/auth-service.js';
+import {registrationAvailable} from '../services/registration-mail.js';
+import {requestRegistrationOtp,completeRegistration} from '../services/public-registration.js';
 import { publicProfile } from '../utils/serializers.js';
 import { asyncHandler } from '../utils/errors.js';
 
@@ -31,11 +33,15 @@ export const meHandler = asyncHandler(async (request, response) => {
   response.json({ data: { profile: publicProfile(request.user) } });
 });
 
-export const registerDisabled = asyncHandler(async (_request, response) => {
-  response.status(403).json({
-    error: {
-      code: 'REGISTRATION_DISABLED',
-      message: 'Ứng dụng không cho phép tự đăng ký. Bố mẹ hãy nhờ quản trị viên cấp tài khoản.',
-    },
-  });
+export const registrationStatusHandler=asyncHandler(async(_request,response)=>{
+ response.set('Cache-Control','no-store').json({data:{available:registrationAvailable()}});
+});
+export const requestRegistrationOtpHandler=asyncHandler(async(request,response)=>{
+ const {email}=requestRegistrationOtpSchema.parse(request.body);
+ response.set('Cache-Control','no-store').json({data:await requestRegistrationOtp(email)});
+});
+export const registerHandler=asyncHandler(async(request,response)=>{
+ const result=await completeRegistration(completeRegistrationSchema.parse(request.body));
+ response.cookie(env.cookie.name,result.token,{...cookieOptions(),maxAge:COOKIE_MAX_AGE});
+ response.set('Cache-Control','no-store').status(201).json({data:{profile:result.profile}});
 });

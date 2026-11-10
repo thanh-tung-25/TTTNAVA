@@ -20,7 +20,7 @@ Base URL: `http://localhost:3000/api/v1`
 }
 ```
 
-Mọi endpoint (trừ đăng nhập và health check) cần cookie `tttnava_token`. Cookie do server đặt sau khi đăng nhập; JavaScript phía trình duyệt không đọc được cookie này.
+Các endpoint được ghi "Công khai" và health check không cần cookie. Những endpoint còn lại cần cookie `tttnava_token`. Cookie do server đặt sau khi đăng nhập hoặc xác minh đăng ký; JavaScript phía trình duyệt không đọc được cookie này.
 
 - `401` chưa đăng nhập / token hết hạn.
 - `403` sai vai trò hoặc thao tác bị chặn.
@@ -36,9 +36,15 @@ Mọi endpoint (trừ đăng nhập và health check) cần cookie `tttnava_toke
 | POST | `/auth/login` | Công khai | Body `{ username, password }`; đặt cookie, trả profile |
 | POST | `/auth/logout` | Công khai | Xoá cookie |
 | GET | `/auth/me` | Đã đăng nhập | Profile hiện tại |
-| POST | `/auth/register` | Công khai | Luôn trả `403 REGISTRATION_DISABLED` |
+| GET | `/auth/registration-status` | Công khai | `{ data: { available } }`, không cache |
+| POST | `/auth/register/request-otp` | Công khai | Body `{ email }` Gmail; trả `{ challengeId, expiresIn: 300, resendAfter: 60 }` sau khi gửi được mã |
+| POST | `/auth/register` | Công khai | Body `{ challengeId, otp, username, password, displayName, grade?, avatarKey? }`; xác minh mã, tạo học sinh, đặt cookie, trả `201 { data: { profile } }` |
 
 `username`: 3–20 ký tự `a-z`, `0-9`, `_`. `password`: 6–72 ký tự. Đăng nhập giới hạn 10 lần/phút/IP.
+
+Đăng ký có một trang chung `/pages/register/`, không có link mời. OTP không trả qua API; hết hạn sau 5 phút, dùng một lần và tối đa 5 lần thử sai. Mỗi hộp Gmail tối đa 5 lần gửi/giờ, cách nhau ít nhất 60 giây; API gửi còn giới hạn 5 lần/10 phút/IP, xác minh 20 lần/10 phút/IP. Địa chỉ Gmail có dấu chấm hoặc `+tag` dùng chung khóa hộp thư duy nhất. `grade` chỉ nhận số nguyên 1–9 hoặc `null`, mặc định `null`.
+
+Khi chưa cấu hình gửi email, trạng thái `available=false`; yêu cầu hợp lệ trả `503 REGISTRATION_UNAVAILABLE`. Lỗi nhà cung cấp trả `503 MAIL_DELIVERY_FAILED`, mã sai/hết hạn trả `400 INVALID_REGISTRATION_OTP`, Gmail hoặc username đã dùng trả `409`. Không tự cấp quyền khóa học. Học sinh tự đăng ký hiện cho admin tổng và admin Tiếng Trung; không nhận nguồn đăng ký/quyền quản trị do client truyền. Xem [cấu hình Gmail](gmail-registration.md).
 
 ## Danh mục
 

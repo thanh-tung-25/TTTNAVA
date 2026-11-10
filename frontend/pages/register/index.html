@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng ký tài khoản — TTNAVA</title>
+  <meta name="description" content="Tạo tài khoản TTNAVA bằng Gmail và mã xác minh để bắt đầu hành trình học tập.">
+  <link rel="icon" href="/assets/images/ttnava-logo.png" type="image/png">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
+  <link rel="stylesheet" href="/assets/css/register.css">
+</head>
+<body class="login-body">
+  <main class="login-card registration-card">
+    <a href="/" class="muted">← Về trang giới thiệu</a>
+    <img class="login-logo" src="/assets/images/ttnava-logo.png" alt="Logo TTNAVA" width="100" height="100">
+    <h1>Tạo tài khoản học sinh</h1>
+    <p class="muted">Bắt đầu hành trình học cùng TTNAVA.</p>
+    <p id="registration-availability" class="registration-notice" role="status" aria-live="polite">Đang kiểm tra đăng ký…</p>
+
+    <div id="registration-content" hidden>
+      <ol class="registration-steps" aria-label="Các bước đăng ký">
+        <li id="email-step-label" aria-current="step"><span>1</span> Xác minh Gmail</li>
+        <li id="account-step-label"><span>2</span> Tạo tài khoản</li>
+      </ol>
+      <div class="form-error hidden" id="registration-error" role="alert" tabindex="-1"></div>
+
+      <form id="registration-email-form" novalidate>
+        <div class="field">
+          <label for="registration-email">Gmail của bạn</label>
+          <input class="input" id="registration-email" name="email" type="email" autocomplete="email" autocapitalize="none" spellcheck="false" maxlength="120" placeholder="tenban@gmail.com" aria-describedby="registration-email-hint" required>
+          <span class="hint" id="registration-email-hint">Mỗi Gmail chỉ đăng ký được một tài khoản. Bạn cần mở hộp thư để nhận mã xác minh.</span>
+        </div>
+        <button class="btn btn-block" id="send-otp-button" type="submit">Gửi mã xác minh</button>
+      </form>
+
+      <section id="registration-account-step" hidden aria-label="Xác minh và tạo tài khoản">
+        <div class="registration-recipient">
+          <p id="registration-sent-message" role="status" aria-live="polite"></p>
+          <button class="btn btn-ghost btn-sm" id="change-email-button" type="button">Đổi Gmail</button>
+        </div>
+        <form id="registration-account-form" novalidate>
+          <div class="field">
+            <label for="registration-otp">Mã xác minh 6 số</label>
+            <input class="input registration-otp" id="registration-otp" name="otp" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" minlength="6" maxlength="6" aria-describedby="otp-expiry otp-help" required>
+            <span class="hint" id="otp-help">Kiểm tra cả mục Spam nếu bạn chưa thấy email.</span>
+            <span class="hint" id="otp-expiry"></span>
+          </div>
+          <div class="registration-resend"><button class="btn btn-ghost btn-sm" id="resend-otp-button" type="button" disabled>Gửi lại mã sau 60 giây</button></div>
+          <div class="field">
+            <label for="registration-username">Tên đăng nhập</label>
+            <input class="input" id="registration-username" name="username" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" minlength="3" maxlength="20" pattern="[a-z0-9_]{3,20}" placeholder="Ví dụ: be_lan" aria-describedby="registration-username-hint" required>
+            <span class="hint" id="registration-username-hint">3–20 ký tự: chữ thường, số và dấu gạch dưới.</span>
+          </div>
+          <div class="field">
+            <label for="registration-display-name">Tên hiển thị</label>
+            <input class="input" id="registration-display-name" name="displayName" type="text" autocomplete="nickname" maxlength="60" placeholder="Tên bạn muốn mọi người gọi" required>
+          </div>
+          <div class="field">
+            <label for="registration-grade">Lớp đang học (nếu có)</label>
+            <select class="select" id="registration-grade" name="grade">
+              <option value="">Không theo khối lớp</option>
+              <option value="1">Lớp 1</option>
+              <option value="2">Lớp 2</option>
+              <option value="3">Lớp 3</option>
+              <option value="4">Lớp 4</option>
+              <option value="5">Lớp 5</option>
+              <option value="6">Lớp 6</option>
+              <option value="7">Lớp 7</option>
+              <option value="8">Lớp 8</option>
+              <option value="9">Lớp 9</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="registration-password">Mật khẩu</label>
+            <input class="input" id="registration-password" name="password" type="password" autocomplete="new-password" minlength="6" maxlength="72" placeholder="Ít nhất 6 ký tự" required>
+          </div>
+          <div class="field">
+            <label for="registration-password-confirm">Nhập lại mật khẩu</label>
+            <input class="input" id="registration-password-confirm" name="passwordConfirm" type="password" autocomplete="new-password" minlength="6" maxlength="72" required>
+          </div>
+          <button class="btn btn-block" id="register-button" type="submit">Xác minh và tạo tài khoản</button>
+        </form>
+      </section>
+    </div>
+
+    <p class="registration-login">Đã có tài khoản? <a href="/pages/login/">Đăng nhập</a></p>
+    <noscript><p class="registration-notice">Bạn cần bật JavaScript để nhận mã xác minh và đăng ký.</p></noscript>
+  </main>
+  <script type="module" src="/assets/js/register.js"></script>
+</body>
+</html>

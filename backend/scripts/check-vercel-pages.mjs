@@ -7,6 +7,7 @@ import express from 'express';
 import { chromium } from '@playwright/test';
 const root = fileURLToPath(new URL('../', import.meta.url));
 dotenv.config({ path: path.join(root, '.env.supabase'), quiet: true });
+dotenv.config({ path: path.join(root, '.env.vercel'), quiet: true });
 process.env.DB_DRIVER = 'postgres';
 process.env.PGPORT = '6543';
 process.env.PG_READ_ONLY = 'true';
@@ -35,7 +36,7 @@ try {
   await fs.mkdir(output, { recursive: true });
   for (const role of ['student', 'admin']) {
     stage = role;
-    const [profile] = await query('SELECT * FROM profiles WHERE role=? AND (banned_until IS NULL OR banned_until<=CURRENT_TIMESTAMP) LIMIT 1', [role]);
+    const [profile] = await query("SELECT * FROM profiles WHERE role=? AND (role<>'admin' OR admin_scope='super') AND (banned_until IS NULL OR banned_until<=CURRENT_TIMESTAMP) LIMIT 1", [role]);
     assert.ok(profile);
     const context = await browser.newContext({ viewport: { width: 1366, height: 900 } });
     await context.addCookies([{ name: env.cookie.name, value: signToken(profile), url: origin }]);
@@ -64,10 +65,27 @@ try {
     await page.goto(origin + '/pages/' + role + '/courses/', { waitUntil: 'domcontentloaded' });
     const selector = role === 'student' ? '#course-grid .course-tile' : '#admin-course-catalog .course-form';
     await page.locator(selector).first().waitFor({ timeout: 60000, state: 'attached' });
-    assert.equal(await page.locator(selector).count(), 14);
+    const [catalogCount]=await query('SELECT COUNT(*) total FROM courses');
+    assert.equal(await page.locator(selector).count(), Number(catalogCount.total));
     assert.deepEqual(errors, []);
     await page.screenshot({ path: path.join(output, role + '.png'), fullPage: true });
     await context.close();
+  }
+  if(target){
+    stage='student-privacy';
+    const [teacher]=await query("SELECT * FROM profiles WHERE role='admin' AND admin_scope='chinese' AND (banned_until IS NULL OR banned_until<=CURRENT_TIMESTAMP) LIMIT 1");
+    const [hidden]=await query("SELECT id,username FROM profiles WHERE role='student' AND COALESCE(student_creator_scope,'')<>'chinese' LIMIT 1");
+    if(teacher&&hidden){
+      const context=await browser.newContext();
+      await context.addCookies([{name:env.cookie.name,value:signToken(teacher),url:origin}]);
+      const list=await context.request.get(origin+'/api/v1/admin/students?q='+encodeURIComponent(hidden.username));
+      assert.equal(list.status(),200);const students=await list.json();assert.equal(students.pagination.total,0);assert.deepEqual(students.data,[]);
+      const stats=await context.request.get(origin+'/api/v1/chinese/stats?student_id='+hidden.id);
+      assert.equal(stats.status(),200);assert.deepEqual((await stats.json()).data.progress,[]);
+      const chat=await context.request.get(origin+'/api/v1/chat/students?q='+encodeURIComponent(hidden.username));
+      assert.equal(chat.status(),200);assert.deepEqual((await chat.json()).data,[]);
+      await context.close();
+    }
   }
   stage = 'anonymous';
   const context = await browser.newContext();
@@ -75,7 +93,7 @@ try {
   await page.goto(origin + '/pages/admin/courses/');
   assert.ok(new URL(page.url()).pathname.startsWith('/pages/login/'));
   await context.close();
-  console.log(JSON.stringify({ ok: true, origin, checked: ['student-courses', 'admin-courses', 'anonymous-redirect', ...(target ? ['live-api-permissions', 'signed-word-download'] : [])], liveDeployment: Boolean(target), publishedByCheck: false, dataChanged: false }));
+  console.log(JSON.stringify({ ok: true, origin, checked: ['student-courses', 'admin-courses', 'anonymous-redirect', ...(target ? ['live-api-permissions', 'signed-word-download','private-student-isolation'] : [])], liveDeployment: Boolean(target), publishedByCheck: false, dataChanged: false }));
 } catch (error) {
   console.error(JSON.stringify({ ok: false, stage, errorType: error.name }));
   process.exitCode = 1;

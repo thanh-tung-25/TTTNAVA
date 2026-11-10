@@ -6,7 +6,7 @@ export async function courseProfile(profile,active) {
  if(!id){location.replace('/pages/student/courses/');throw new Error('Con chọn khóa học trước nhé.');}
  const {data:course}=await api('/api/v1/courses/'+encodeURIComponent(id)+'/access');
  localStorage.setItem('ttnava-course',id);
- profile.grade=course.kind==='primary'?Number(course.level):null;
+ profile.grade=['primary','secondary'].includes(course.kind)?Number(course.level):null;
  profile.course=course;
  return profile;
 }

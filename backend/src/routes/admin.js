@@ -25,6 +25,7 @@ import adminTeamRouter from './admin-team.js';
 import { uploadDocx } from '../middlewares/upload-docx.js';
 import {asyncHandler} from '../utils/errors.js';
 import {deploymentCheck} from '../services/deployment-check.js';
+import {requireSchoolAdmin} from '../middlewares/school-admin.js';
 
 const router = Router();
 
@@ -32,7 +33,7 @@ router.use(authenticateToken, requireAdmin);
 router.get('/deployment-check',requireSuperAdmin,asyncHandler(async(_r,res)=>res.json({data:await deploymentCheck()})));
 
 router.use('/team',adminTeamRouter);
-router.get('/stats', requireAdminScope('primary'), adminStatsHandler);
+router.get('/stats', requireSchoolAdmin, adminStatsHandler);
 
 router.get('/students', listStudentsHandler);
 router.post('/students', requireSuperAdmin, createStudentHandler);
@@ -40,7 +41,7 @@ router.patch('/students/:id', requireSuperAdmin, updateStudentHandler);
 router.post('/students/:id/password', requireSuperAdmin, resetPasswordHandler);
 router.post('/students/:id/lock', requireSuperAdmin, lockStudentHandler);
 
-router.use(requireAdminScope('primary'));
+router.use(requireSchoolAdmin);
 router.get('/curriculum/tree', curriculumTreeHandler);
 router.get('/questions', listQuestionsHandler);
 router.get('/questions/import/config', importConfigHandler);

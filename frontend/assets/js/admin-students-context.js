@@ -12,7 +12,7 @@ export const store = {
   page: 1,
   totalPages: 1,
   search: '',
-  program: new URLSearchParams(location.search).get('program') === 'chinese' ? 'chinese' : '',
+  program: ['primary','secondary','chinese'].includes(new URLSearchParams(location.search).get('program')) ? new URLSearchParams(location.search).get('program') : '',
   studentsById: new Map(),
   canManageAccounts: true,
   adminScope: 'super',
@@ -32,7 +32,7 @@ export function row(student) {
           <div><strong>${escapeHtml(student.displayName)}</strong><br><span class="muted">@${escapeHtml(student.username)}</span></div>
         </div>
       </td>
-      <td>${store.adminScope==='chinese'?'Tiếng Trung':store.adminScope==='primary'?'Tiểu học':student.grade === null ? 'Tiếng Trung' : `Lớp ${student.grade}`}</td>
+      <td>${store.adminScope==='chinese'?'Tiếng Trung':store.adminScope==='primary'?'Tiểu học':store.adminScope==='secondary'?'THCS':student.grade === null ? 'Tiếng Trung' : `Lớp ${student.grade}`}</td>
       <td>${locked ? '<span class="badge badge-danger">Đã khoá</span>' : '<span class="badge badge-success">Hoạt động</span>'}</td>
       <td>${formatDate(student.createdAt, false)}</td>
       <td>

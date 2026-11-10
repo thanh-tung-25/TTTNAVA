@@ -1,8 +1,9 @@
 import { listSubjects, listTopics, getTopicDetail } from '../services/catalog-service.js';
 import { asyncHandler } from '../utils/errors.js';
 
-export const subjectsHandler = asyncHandler(async (_request, response) => {
-  response.json({ data: await listSubjects() });
+export const subjectsHandler = asyncHandler(async (request, response) => {
+  const selected=request.get('X-Course-Id')?.match(/^grade-([1-9])$/)?.[1];
+  response.json({ data: await listSubjects(Number(request.query.grade||selected||request.user.grade)) });
 });
 
 export const topicsHandler = asyncHandler(async (request, response) => {

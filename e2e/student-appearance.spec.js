@@ -12,7 +12,7 @@ const attempt = {
 };
 
 for(const subject of ['toan','tieng-viet','tieng-anh']) {
-test(`primary ${subject} lesson cards keep every start button aligned on the right`,async({page})=>{
+test(`primary ${subject} lesson cards keep every start button aligned inside its card`,async({page})=>{
  await page.route('**/pages/student/practice/**',async route=>route.fulfill({contentType:'text/html',body:await fs.readFile('frontend/pages/student/practice/index.html','utf8')}));
  await page.route('**/api/v1/courses/grade-1/access',route=>route.fulfill({json:{data:{id:'grade-1',kind:'primary',level:1,title:'Lớp 1'}}}));
  const names=['Bài 1. Các số 0, 1, 2, 3, 4, 5','Bài 2. Các số 6, 7, 8, 9, 10','Bài 3. Nhiều hơn, ít hơn, bằng nhau','Bài 7. Hình vuông, hình tròn, hình tam giác, hình chữ nhật','Bài đang chuẩn bị'];
@@ -23,8 +23,8 @@ test(`primary ${subject} lesson cards keep every start button aligned on the rig
  await expect(page.locator('.topic-item')).toHaveCount(5);
  await expect(page.locator('#practice-grade')).toHaveText('· LỚP 1');
  await expect(page.locator('.practice-welcome-mascot')).toBeVisible();
- const bounds=await page.locator('.practice-topic-start').evaluateAll(buttons=>buttons.map(b=>{const r=b.getBoundingClientRect();return {left:r.left,right:r.right,width:r.width};}));
- expect(Math.max(...bounds.map(b=>b.right))-Math.min(...bounds.map(b=>b.right))).toBeLessThan(1);
+ const bounds=await page.locator('.practice-topic-start').evaluateAll(buttons=>buttons.map(b=>{const r=b.getBoundingClientRect(),card=b.closest('.topic-item').getBoundingClientRect();return {inset:card.right-r.right,width:r.width};}));
+ expect(Math.max(...bounds.map(b=>b.inset))-Math.min(...bounds.map(b=>b.inset))).toBeLessThan(1);
  expect(Math.max(...bounds.map(b=>b.width))-Math.min(...bounds.map(b=>b.width))).toBeLessThan(1);
  await expect(page.locator('[data-topic="lesson-4"]')).toBeDisabled();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);

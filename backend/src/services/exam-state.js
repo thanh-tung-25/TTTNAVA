@@ -6,6 +6,7 @@ import { praiseForPercent } from '../utils/answers.js';
 import { addSeconds, toIso } from '../utils/time.js';
 import { EXAM_GRACE_SECONDS } from './exam-constants.js';
 import { finalizeAttempt } from './exam-finalize.js';
+import {schoolSubjectName} from '../utils/school-subjects.js';
 
 export async function ownedAttempt(studentId, attemptId) {
   const rows = await query(
@@ -109,7 +110,7 @@ export async function buildState(studentId, attemptId) {
       name: attempt.topic_name,
       grade: Number(attempt.grade),
       subjectId: attempt.subject_id,
-      subjectName: attempt.subject_name,
+      subjectName: schoolSubjectName(attempt.subject_id,attempt.grade,attempt.subject_name),
     },
     totalQuestions: total,
     scope:parseJson(attempt.scope_json),

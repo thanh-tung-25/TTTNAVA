@@ -1,0 +1,450 @@
+{
+  "book": "Ngữ văn 9 · Kết nối tri thức với cuộc sống",
+  "grade": 9,
+  "subjectId": "tieng-viet",
+  "yearId": "2026-2027",
+  "sourceNote": "Đối chiếu mục lục và các mạch hoạt động trong SGK/SGV và tài liệu bồi dưỡng của Nhà xuất bản Giáo dục Việt Nam. Chỉ tạo khung mục lục văn bản chính và các mạch học, không nhập văn bản tác phẩm, câu hỏi hoặc đáp án. Tên một số nhiệm vụ được rút gọn; mạch chưa xác minh tên nhiệm vụ cụ thể giữ nhãn chung.",
+  "sources": [
+    "https://sachdientu.nxbgd.vn/thu-vien-so/doc-sach/sgv-ngu-van-tap-1.4503046511",
+    "https://school.olm.vn/index.php/thu-vien-so/doc-sach/sach.4503047491.4503047491"
+  ],
+  "volumes": [
+    {
+      "id": "tap-1",
+      "name": "Tập 1",
+      "semester": "hk1"
+    },
+    {
+      "id": "tap-2",
+      "name": "Tập 2",
+      "semester": "hk2"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "kntt-nguvan-9-c01",
+      "name": "Bài 1: Thế giới kì ảo",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-9-b01-doc-01",
+          "name": "Đọc: Chuyện người con gái Nam Xương",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-9-b01-doc-02",
+          "name": "Đọc: Dế chọi",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-9-b01-doc-03",
+          "name": "Đọc: Sơn Tinh - Thủy Tinh",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-9-b01-tv-01",
+          "name": "Thực hành tiếng Việt: Một số yếu tố Hán Việt dễ nhầm lẫn và cách phân biệt",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-9-b01-tv-02",
+          "name": "Thực hành tiếng Việt: Điển tích, điển cố",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-9-b01-viet-01",
+          "name": "Viết: Viết bài văn nghị luận về một vấn đề cần giải quyết (con người với tự nhiên)",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-9-b01-noi-nghe",
+          "name": "Nói và nghe",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-9-c02",
+      "name": "Bài 2: Những cung bậc tâm trạng",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-9-b02-doc-01",
+          "name": "Đọc: Nỗi niềm chinh phụ",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-9-b02-doc-02",
+          "name": "Đọc: Tiếng đàn mưa",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-9-b02-doc-03",
+          "name": "Đọc: Một thể thơ độc đáo của người Việt",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-9-b02-tv-01",
+          "name": "Thực hành tiếng Việt: Biện pháp tu từ chơi chữ",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-9-b02-tv-02",
+          "name": "Thực hành tiếng Việt: Biện pháp tu từ điệp thanh và biện pháp tu từ điệp vần",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-9-b02-viet-01",
+          "name": "Viết: Viết bài văn nghị luận phân tích một tác phẩm văn học (thơ song thất lục bát)",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-9-b02-noi-nghe",
+          "name": "Nói và nghe",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-9-c03",
+      "name": "Bài 3: Hồn nước nằm trong tiếng mẹ cha",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-9-b03-doc-01",
+          "name": "Đọc: Kim - Kiều gặp gỡ",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-9-b03-doc-02",
+          "name": "Đọc: Lục Vân Tiên đánh cướp, cứu Kiều Nguyệt Nga",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-9-b03-doc-03",
+          "name": "Đọc: Tự tình (Bài 2)",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-9-b03-tv-01",
+          "name": "Thực hành tiếng Việt: Chữ quốc ngữ",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-9-b03-tv-02",
+          "name": "Thực hành tiếng Việt: Chữ Nôm",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-9-b03-viet-01",
+          "name": "Viết: Viết bài văn nghị luận về một vấn đề cần giải quyết trong đời sống học sinh hiện nay",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-9-b03-noi-nghe",
+          "name": "Nói và nghe",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-9-c04",
+      "name": "Bài 4: Khám phá vẻ đẹp văn chương",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 4,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-9-b04-doc-01",
+          "name": "Đọc: Người con gái Nam Xương - một bi kịch của con người",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-9-b04-doc-02",
+          "name": "Đọc: Từ Thằng quỷ nhỏ của Nguyễn Nhật Ánh nghĩ về những phẩm chất của một tác phẩm viết cho thiếu nhi",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-9-b04-doc-03",
+          "name": "Đọc: Ngày xưa",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-9-b04-tv-01",
+          "name": "Thực hành tiếng Việt: Cách dẫn trực tiếp và cách dẫn gián tiếp",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-9-b04-tv-02",
+          "name": "Thực hành tiếng Việt: Cách sử dụng tài liệu tham khảo và trích dẫn tài liệu",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-9-b04-viet-01",
+          "name": "Viết: Viết bài văn nghị luận phân tích một tác phẩm văn học (truyện)",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-9-b04-noi-nghe",
+          "name": "Nói và nghe",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-9-c05",
+      "name": "Bài 5: Đối diện với nỗi đau",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 5,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-9-b05-doc-01",
+          "name": "Đọc: Rô-mê-ô và Giu-li-ét",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-9-b05-doc-02",
+          "name": "Đọc: Lơ Xít",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-9-b05-doc-03",
+          "name": "Đọc: Bí ẩn của làn nước",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-9-b05-tv-01",
+          "name": "Thực hành tiếng Việt: Câu đặc biệt",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-9-b05-viet-01",
+          "name": "Viết: Viết bài văn nghị luận phân tích một tác phẩm văn học (kịch)",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-9-b05-noi-nghe",
+          "name": "Nói và nghe",
+          "sortOrder": 6
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-9-c06",
+      "name": "Bài 6: Giải mã những bí mật",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 6,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-9-b06-doc-01",
+          "name": "Đọc: Ba chàng sinh viên",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-9-b06-doc-02",
+          "name": "Đọc: Bài hát đồng sáu xu",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-9-b06-doc-03",
+          "name": "Đọc: Phạm Xuân Ẩn - tên người như cuộc đời",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-9-b06-tv-01",
+          "name": "Thực hành tiếng Việt: Các kiểu câu ghép và phương tiện nối các vế câu ghép",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-9-b06-tv-02",
+          "name": "Thực hành tiếng Việt: Lựa chọn câu đơn hoặc câu ghép",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-9-b06-viet-01",
+          "name": "Viết: Viết truyện kể sáng tạo",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-9-b06-noi-nghe",
+          "name": "Nói và nghe",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-9-c07",
+      "name": "Bài 7: Hồn thơ muôn điệu",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 7,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-9-b07-doc-01",
+          "name": "Đọc: Tiếng Việt",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-9-b07-doc-02",
+          "name": "Đọc: Mưa xuân",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-9-b07-doc-03",
+          "name": "Đọc: Một kiểu phát biểu luận đề độc đáo của Xuân Diệu ở bài thơ Vội vàng",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-9-b07-tv-01",
+          "name": "Thực hành tiếng Việt: Nghĩa của từ ngữ và biện pháp tu từ",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-9-b07-tv-02",
+          "name": "Thực hành tiếng Việt: Sự phát triển của từ vựng",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-9-b07-viet-01",
+          "name": "Viết: Tập làm thơ tám chữ",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-9-b07-viet-02",
+          "name": "Viết: Viết đoạn văn ghi lại cảm nghĩ về một bài thơ tám chữ",
+          "sortOrder": 7
+        },
+        {
+          "id": "kntt-nguvan-9-b07-noi-nghe",
+          "name": "Nói và nghe",
+          "sortOrder": 8
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-9-c08",
+      "name": "Bài 8: Tiếng nói của lương tri",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 8,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-9-b08-doc-01",
+          "name": "Đọc: Đấu tranh cho một thế giới hòa bình",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-9-b08-doc-02",
+          "name": "Đọc: Biến đổi khí hậu - mối đe dọa sự tồn vong của hành tinh chúng ta",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-9-b08-doc-03",
+          "name": "Đọc: Bài ca chúc Tết thanh niên",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-9-b08-tv-01",
+          "name": "Thực hành tiếng Việt: Nghĩa và cách dùng tên viết tắt các tổ chức quốc tế quan trọng",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-9-b08-tv-02",
+          "name": "Thực hành tiếng Việt: Lựa chọn câu đơn hoặc câu ghép, các kiểu câu ghép",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-9-b08-viet-01",
+          "name": "Viết: Viết bài văn nghị luận về một vấn đề cần giải quyết trong đời sống xã hội",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-9-b08-noi-nghe",
+          "name": "Nói và nghe",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-9-c09",
+      "name": "Bài 9: Đi và suy ngẫm",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 9,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-9-b09-doc-01",
+          "name": "Đọc: Yên Tử, núi thiêng",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-9-b09-doc-02",
+          "name": "Đọc: Văn hóa hoa - cây cảnh",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-9-b09-doc-03",
+          "name": "Đọc: Tình sông núi",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-9-b09-tv-01",
+          "name": "Thực hành tiếng Việt: Biến đổi cấu trúc câu",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-9-b09-tv-02",
+          "name": "Thực hành tiếng Việt: Mở rộng cấu trúc câu",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-9-b09-viet-01",
+          "name": "Viết: Viết bài thuyết minh về một danh lam thắng cảnh hoặc một di tích lịch sử",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-9-b09-noi-nghe",
+          "name": "Nói và nghe",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-9-c10",
+      "name": "Bài 10: Văn học - lịch sử tâm hồn",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 10,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-9-b10-doc-01",
+          "name": "Đọc: Văn học Việt Nam từ khu vực ra thế giới, từ truyền thống đến hiện đại",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-9-b10-doc-02",
+          "name": "Đọc: Văn hóa đọc với nhà văn và độc giả trong thời đại công nghệ số",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-9-b10-viet-01",
+          "name": "Viết: Viết bài quảng cáo về sách dưới hình thức văn bản đa phương thức",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-9-b10-noi-nghe",
+          "name": "Nói và nghe: Về đích: Ngày hội với sách",
+          "sortOrder": 4
+        }
+      ]
+    }
+  ]
+}

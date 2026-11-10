@@ -8,6 +8,7 @@ import { extractChinese } from './chinese-import.js';
 import { archiveFile, readArchive, DOCX_MIME } from './private-storage.js';
 import {publishedActivitiesForSet} from './chinese-activities.js';
 import {reviewedQuestions,sequentialQuestions,journeyProgress} from './chinese-quiz-plan.js';
+import {studentVisibleCondition} from '../utils/student-visibility.js';
 export { catalog };
 const txRun = c => async (sql,p=[]) => (await c.query(sql,p))[0];
 export async function saveLesson(id, body) {
@@ -216,9 +217,10 @@ export async function attempt(user,id,action=null,body={}) {
  });
 }
 export async function history(user) {return query('SELECT id,test_id,set_id,started_at,ends_at,finished_at,score,diamonds_delta FROM chinese_attempts WHERE student_id=? AND abandoned_at IS NULL ORDER BY started_at DESC LIMIT 200',[user]);}
-export async function stats(filters={}) {
- const totals={}; for(const [name,sql] of Object.entries({lessons:'SELECT COUNT(*) n FROM chinese_lessons',sets:'SELECT COUNT(*) n FROM chinese_sets',vocabulary:"SELECT COUNT(*) n FROM chinese_items WHERE active=1 AND kind='vocabulary'",questions:"SELECT COUNT(*) n FROM chinese_items WHERE active=1 AND kind='question'",pending:"SELECT COUNT(*) n FROM chinese_sets WHERE processing_status='review'",attempts:'SELECT COUNT(*) n FROM chinese_attempts'})) totals[name]=(await query(sql))[0].n;
- const where=[],params=[];
+export async function stats(filters={},viewer=null) {
+ const privacy=studentVisibleCondition(viewer,'u');
+ const totals={}; for(const [name,sql] of Object.entries({lessons:'SELECT COUNT(*) n FROM chinese_lessons',sets:'SELECT COUNT(*) n FROM chinese_sets',vocabulary:"SELECT COUNT(*) n FROM chinese_items WHERE active=1 AND kind='vocabulary'",questions:"SELECT COUNT(*) n FROM chinese_items WHERE active=1 AND kind='question'",pending:"SELECT COUNT(*) n FROM chinese_sets WHERE processing_status='review'",attempts:`SELECT COUNT(*) n FROM chinese_attempts a JOIN profiles u ON u.id=a.student_id WHERE ${privacy}`})) totals[name]=(await query(sql))[0].n;
+ const where=[privacy],params=[];
  for(const [key,column] of Object.entries({student_id:'p.student_id',level_id:'l.level_id',lesson_id:'l.id',set_id:'s.id'}))if(filters[key]){
   const value=key==='level_id'?Number(filters[key]):filters[key];
   if(key==='level_id'&&(!Number.isInteger(value)||value<1||value>9))throw badRequest('HSK phải từ 1 đến 9');
@@ -226,8 +228,8 @@ export async function stats(filters={}) {
  }
  const progress=await query(`SELECT p.*,u.display_name,s.title,l.level_id,l.id lesson_id FROM chinese_progress p JOIN profiles u ON u.id=p.student_id JOIN chinese_sets s ON s.id=p.set_id JOIN chinese_lessons l ON l.id=s.lesson_id ${where.length?'WHERE '+where.join(' AND '):''} ORDER BY p.updated_at DESC LIMIT 500`,params);
  const items=await query('SELECT id,set_id,kind FROM chinese_items WHERE active=1');
- const reviews=await query('SELECT student_id,item_id,memory,review_count,wrong_count FROM chinese_reviews');
- const attempts=await query('SELECT id,student_id,snapshot,answers,score,finished_at FROM chinese_attempts');
+ const reviews=await query(`SELECT r.student_id,r.item_id,r.memory,r.review_count,r.wrong_count FROM chinese_reviews r JOIN profiles u ON u.id=r.student_id WHERE ${privacy}`);
+ const attempts=await query(`SELECT a.id,a.student_id,a.snapshot,a.answers,a.score,a.finished_at FROM chinese_attempts a JOIN profiles u ON u.id=a.student_id WHERE ${privacy}`);
  for(const p of progress){
   const content=items.filter(i=>i.set_id===p.set_id&&i.kind!=='unknown'), ids=new Set(content.map(i=>i.id));
   const vocabulary=reviews.filter(r=>r.student_id===p.student_id&&ids.has(r.item_id));

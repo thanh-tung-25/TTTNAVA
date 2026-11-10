@@ -14,7 +14,7 @@ import { resetPasswordSchema } from '../validators/auth.js';
 
 const listQuery = z.object({
   q: z.string().trim().max(100).optional(),
-  program: z.enum(['chinese', 'primary']).optional(),
+  program: z.enum(['chinese', 'primary', 'secondary']).optional(),
 });
 
 export const listStudentsHandler = asyncHandler(async (request, response) => {
@@ -22,14 +22,14 @@ export const listStudentsHandler = asyncHandler(async (request, response) => {
   const { q, program } = listQuery.parse(request.query);
   const scope = adminScopeOf(request.user);
   if (scope!=='super' && program && program!==scope) throw new AppError(403,'ADMIN_SCOPE_FORBIDDEN','Bạn chỉ được xem học sinh thuộc chương trình mình quản lý.');
-  const result = await listStudents(page, limit, q ?? '', scope==='super' ? program ?? '' : scope);
+  const result = await listStudents(page, limit, q ?? '', scope==='super' ? program ?? '' : scope,request.user);
   if (scope!=='super') result.items = result.items.map(student=>({...student,email:undefined,...(scope==='chinese'?{grade:null}:{})}));
   response.json({ data: result.items, pagination: { page, limit, total: result.total } });
 });
 
 export const createStudentHandler = asyncHandler(async (request, response) => {
   const payload = createStudentSchema.parse(request.body);
-  response.status(201).json({ data: await createStudent(payload) });
+  response.status(201).json({ data: await createStudent(payload,request.user) });
 });
 
 export const updateStudentHandler = asyncHandler(async (request, response) => {

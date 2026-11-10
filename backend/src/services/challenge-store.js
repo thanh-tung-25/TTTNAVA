@@ -1,4 +1,5 @@
 import { query, dialectSql } from '../config/db.js';
+import {schoolSubjectName} from '../utils/school-subjects.js';
 import { AppError } from '../utils/errors.js';
 import { parseJson } from '../utils/normalize.js';
 import { toIso } from '../utils/time.js';
@@ -70,7 +71,7 @@ export function summary(row) {
     grade: Number(row.grade),
     topicId: row.topic_id,
     topicName: row.topic_name,
-    subjectName: row.subject_name,
+    subjectName: schoolSubjectName(row.subject_id,row.grade,row.subject_name),
     subjectColor: row.subject_color,
     durationSeconds: Number(row.duration_seconds),
     botLevel: row.bot_level,

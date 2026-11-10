@@ -11,6 +11,7 @@ import {
 import { aiQuestionConfig, generateQuestionsWithAi } from '../services/ai-question-service.js';
 import { getCurriculumTree } from '../services/curriculum-service.js';
 import { extractDocxQuestions, extractDocxText } from '../services/docx-import-service.js';
+import { assertSchoolPayload, assertSchoolResource } from '../middlewares/school-admin.js';
 import {
   createQuestionSchema,
   curriculumTreeQuerySchema,
@@ -22,6 +23,7 @@ import {
 export const listQuestionsHandler = asyncHandler(async (request, response) => {
   const { page, limit } = parsePagination(request.query);
   const filters = questionListQuerySchema.parse(request.query);
+  await assertSchoolPayload(request, filters);
   const result = await listQuestions(filters, page, limit);
   response.json({
     data: result.items,
@@ -32,24 +34,29 @@ export const listQuestionsHandler = asyncHandler(async (request, response) => {
 
 export const curriculumTreeHandler = asyncHandler(async (request, response) => {
   const { yearId } = curriculumTreeQuerySchema.parse(request.query);
-  response.json({ data: await getCurriculumTree(yearId) });
+  response.json({ data: await getCurriculumTree(yearId, request.schoolProgram) });
 });
 
 export const questionDetailHandler = asyncHandler(async (request, response) => {
+  await assertSchoolResource(request, 'question', request.params.id);
   response.json({ data: await getQuestionDetail(request.params.id) });
 });
 
 export const createQuestionHandler = asyncHandler(async (request, response) => {
   const payload = createQuestionSchema.parse(request.body);
+  await assertSchoolPayload(request, payload);
   response.status(201).json({ data: await createQuestion(request.user.id, payload) });
 });
 
 export const updateQuestionHandler = asyncHandler(async (request, response) => {
   const payload = updateQuestionSchema.parse(request.body);
+  await assertSchoolResource(request, 'question', request.params.id);
+  await assertSchoolPayload(request, payload);
   response.json({ data: await updateQuestion(request.params.id, request.user.id, payload) });
 });
 
 export const questionAuditHandler = asyncHandler(async (request, response) => {
+  await assertSchoolResource(request, 'question', request.params.id);
   response.json({ data: await listWriteAudit(request.params.id) });
 });
 
@@ -70,6 +77,7 @@ export const importDocxHandler = asyncHandler(async (request, response) => {
 });
 
 export const importAiHandler = asyncHandler(async (request, response) => {
+  await assertSchoolPayload(request, request.body);
   const { text } = await extractDocxText(request.file.buffer);
   const result = await generateQuestionsWithAi(text, {
     subjectName: request.body.subjectName ?? '',
@@ -81,6 +89,7 @@ export const importAiHandler = asyncHandler(async (request, response) => {
 
 export const importDraftsHandler = asyncHandler(async (request, response) => {
   const payload = importQuestionsSchema.parse(request.body);
+  await assertSchoolPayload(request, payload);
   response.status(201).json({ data: await importQuestionDrafts(request.user.id, payload) });
 });
 
@@ -88,6 +97,7 @@ export const importFileDraftsHandler=asyncHandler(async(request,response)=>{
  let body;
  try{body=JSON.parse(request.body.payload);}catch{throw badRequest('Thông tin câu hỏi không hợp lệ.');}
  const payload=importQuestionsSchema.parse(body);
+ await assertSchoolPayload(request,payload);
  await extractDocxText(request.file.buffer);
  response.status(201).json({data:await importQuestionDrafts(request.user.id,payload,request.file)});
 });

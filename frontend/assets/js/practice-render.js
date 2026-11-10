@@ -1,9 +1,9 @@
 import { api, escapeHtml } from '/assets/js/api.js';
 import {attachQuestionAudio,withChoiceAudio} from './question-audio.js';
-import {animalPath} from './animal-path.js';
+import {renderSchoolTopics} from './school-topic-catalog.js';
+import {subjectsFor} from './primary-subjects.js';
 import { answerText, TYPE_LABELS } from '/assets/js/ui.js';
 import {
-  SUBJECTS,
   elements,
   requestCheck,
   store,
@@ -11,7 +11,9 @@ import {
 
 let topicRequest=0;
 function renderTabs() {
-  elements.subjectTabs.innerHTML = SUBJECTS.map(([id, name, icon]) => (
+  const subjects=subjectsFor(store.profile);
+  if(!subjects.some(([id])=>id===store.subjectId))store.subjectId=subjects[0][0];
+  elements.subjectTabs.innerHTML = subjects.map(([id, name, icon]) => (
     `<button class="tab" type="button" role="tab" data-subject="${id}" aria-selected="${id === store.subjectId}">${icon} ${name}</button>`
   )).join('');
 }
@@ -20,6 +22,7 @@ export async function loadTopics() {
   const currentRequest=++topicRequest;
   renderTabs();
   const gradeLabel=document.getElementById('practice-grade');if(gradeLabel)gradeLabel.textContent='· LỚP '+store.profile.grade;
+  elements.topicList.classList.remove('animal-path','secondary-topic-catalog');
   elements.topicList.innerHTML = '<div class="loading">Đang tải chủ đề…</div>';
   try {
     const payload = await api(`/api/v1/catalog/topics?subjectId=${store.subjectId}&grade=${store.profile.grade}`);
@@ -27,27 +30,11 @@ export async function loadTopics() {
     const requestedTopic=new URLSearchParams(location.search).get('topic');
     if(requestedTopic&&payload.data.some(t=>t.id===requestedTopic))payload.data=payload.data.filter(t=>t.id===requestedTopic);
     if (payload.data.length === 0) {
+      elements.topicList.classList.remove('secondary-topic-catalog');
       elements.topicList.innerHTML = '<div class="empty">Chưa có chủ đề cho môn này.</div>';
       return;
     }
-    const noPublished = payload.data.every((topic) => topic.questionCount === 0);
-    elements.topicList.innerHTML = `
-      ${noPublished ? '<div class="empty">Môn này chưa có câu hỏi nào được đăng. Con chờ cô giáo duyệt câu hỏi nhé!</div>' : ''}
-      ${payload.data.map((topic, index) => {
-        const enough = topic.questionCount >= 10;
-        return `
-          <article class="topic-item${enough?'':' topic-not-ready'}">
-            <div class="practice-topic-mascot" aria-hidden="true"><img src="/assets/images/mascot-${store.subjectId==='toan'?'owl':store.subjectId==='tieng-viet'?'bunny':'panda'}.svg" width="54" height="58" alt=""><span class="topic-index">${index + 1}</span></div>
-            <div class="practice-topic-info">
-              <h3>${escapeHtml(topic.name)}</h3>
-              <p>${topic.questionCount} câu hỏi · Lớp ${topic.grade}${enough ? '' : ' · Đang chuẩn bị thêm câu'}</p>
-            </div>
-            <button class="btn btn-sm practice-topic-start" type="button" data-topic="${escapeHtml(topic.id)}" aria-label="${enough?'Học ngay':'Chưa đủ câu'}: ${escapeHtml(topic.name)}"${enough ? '' : ' disabled'}>
-              ${enough ? 'Học ngay' : 'Chưa đủ câu'}
-            </button>
-          </article>`;
-      }).join('')}`;
-    animalPath(elements.topicList,{selector:':scope > .topic-item',title:'Học từng bài',hint:'Mỗi nhóm có tối đa 4 bài. Chọn bài con đang học trên lớp.'});
+    renderSchoolTopics(elements.topicList,payload.data,store.profile,store.subjectId);
   } catch (error) {
     if(currentRequest!==topicRequest)return;
     elements.topicList.innerHTML = `<div class="empty">😿 ${escapeHtml(error.message)}</div>`;

@@ -1,0 +1,349 @@
+{
+  "book": "Tiếng Anh 7 · Global Success",
+  "grade": 7,
+  "subjectId": "tieng-anh",
+  "yearId": "2026-2027",
+  "sourceNote": "Đối chiếu bảng Scope and sequence trong tài liệu tập huấn Tiếng Anh 7 Global Success của NXB Giáo dục Việt Nam và book map trên nền tảng Hoclieu. Chỉ tạo khung chủ đề từ vựng và ngữ pháp cốt lõi, không sao chép toàn văn, từ vựng đầy đủ, câu hỏi hoặc đáp án.",
+  "sources": [
+    "https://medialib.qlgd.edu.vn/Uploads/THU_VIEN/shn/2/37/UserFiles/TLBD-Anh-7---Global-Success-434ab8a9-7aa0-48d3-a228-a433dd62d185.pdf",
+    "https://cuppy.hoclieu.vn/book/g7-english-global-success"
+  ],
+  "volumes": [
+    {
+      "id": "tap-1",
+      "name": "Học kì 1",
+      "semester": "hk1"
+    },
+    {
+      "id": "tap-2",
+      "name": "Học kì 2",
+      "semester": "hk2"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "gs-tieng-anh-7-u01",
+      "name": "Unit 1: Hobbies",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-u01-vocabulary",
+          "name": "Vocabulary: Hobbies and verbs of liking / disliking",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-u01-grammar-01",
+          "name": "Grammar: Present simple",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-7-u02",
+      "name": "Unit 2: Healthy Living",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-u02-vocabulary",
+          "name": "Vocabulary: Healthy activities and health problems",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-u02-grammar-01",
+          "name": "Grammar: Simple sentences",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-7-u03",
+      "name": "Unit 3: Community Service",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-u03-vocabulary",
+          "name": "Vocabulary: Community activities",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-u03-grammar-01",
+          "name": "Grammar: Past simple",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-7-r01",
+      "name": "Review 1: Units 1–3",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 4,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-r01-language",
+          "name": "Language",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-r01-skills",
+          "name": "Skills",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-7-u04",
+      "name": "Unit 4: Music and Arts",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 5,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-u04-vocabulary",
+          "name": "Vocabulary: Music and arts",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-u04-grammar-01",
+          "name": "Grammar: Comparisons: like, different from, (not) as ... as",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-7-u05",
+      "name": "Unit 5: Food and Drink",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 6,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-u05-vocabulary",
+          "name": "Vocabulary: Food and drink",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-u05-grammar-01",
+          "name": "Grammar: Some, a lot of / lots of",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-7-u06",
+      "name": "Unit 6: A Visit to a School",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 7,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-u06-vocabulary",
+          "name": "Vocabulary: Schools, facilities and activities",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-u06-grammar-01",
+          "name": "Grammar: Prepositions of time: at, in, on",
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-tieng-anh-7-u06-grammar-02",
+          "name": "Grammar: Prepositions of place: at, in, on",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-7-r02",
+      "name": "Review 2: Units 4–6",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 8,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-r02-language",
+          "name": "Language",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-r02-skills",
+          "name": "Skills",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-7-u07",
+      "name": "Unit 7: Traffic",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 9,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-u07-vocabulary",
+          "name": "Vocabulary: Means of transport and road signs",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-u07-grammar-01",
+          "name": "Grammar: It indicating distance",
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-tieng-anh-7-u07-grammar-02",
+          "name": "Grammar: Should / shouldn't",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-7-u08",
+      "name": "Unit 8: Films",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 10,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-u08-vocabulary",
+          "name": "Vocabulary: Types of films and adjectives describing films",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-u08-grammar-01",
+          "name": "Grammar: Although / though",
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-tieng-anh-7-u08-grammar-02",
+          "name": "Grammar: However",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-7-u09",
+      "name": "Unit 9: Festivals around the World",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 11,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-u09-vocabulary",
+          "name": "Vocabulary: Types of festivals and festival activities",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-u09-grammar-01",
+          "name": "Grammar: Yes / No questions",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-7-r03",
+      "name": "Review 3: Units 7–9",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 12,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-r03-language",
+          "name": "Language",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-r03-skills",
+          "name": "Skills",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-7-u10",
+      "name": "Unit 10: Energy Sources",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 13,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-u10-vocabulary",
+          "name": "Vocabulary: Types of energy sources",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-u10-grammar-01",
+          "name": "Grammar: Present continuous",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-7-u11",
+      "name": "Unit 11: Travelling in the Future",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 14,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-u11-vocabulary",
+          "name": "Vocabulary: Future means of transport",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-u11-grammar-01",
+          "name": "Grammar: Future simple",
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-tieng-anh-7-u11-grammar-02",
+          "name": "Grammar: Possessive pronouns",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-7-u12",
+      "name": "Unit 12: English-speaking Countries",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 15,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-u12-vocabulary",
+          "name": "Vocabulary: People and places in English-speaking countries",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-u12-grammar-01",
+          "name": "Grammar: Articles: a, an, the",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-7-r04",
+      "name": "Review 4: Units 10–12",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 16,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-7-r04-language",
+          "name": "Language",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-7-r04-skills",
+          "name": "Skills",
+          "sortOrder": 2
+        }
+      ]
+    }
+  ]
+}

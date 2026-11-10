@@ -1,20 +1,20 @@
 import { api, avatarUrl, escapeHtml, formatDate, formatDuration } from '/assets/js/api.js';
 import { emptyState } from '/assets/js/ui.js';
 import { elements, store } from './challenge-context.js';
+import {subjectsFor,subjectName} from './primary-subjects.js';
 
 export async function loadTopicOptions() {
-  const subjects = ['toan', 'tieng-viet', 'tieng-anh'];
+  const subjects = subjectsFor(store.profile).map(([id])=>id);
   const results = await Promise.all(subjects.map((subjectId) => (
     api(`/api/v1/catalog/topics?subjectId=${subjectId}&grade=${store.profile.grade}`).catch(() => ({ data: [] }))
   )));
   store.topics = results
     .flatMap((payload) => payload.data)
     .filter((topic) => topic.questionCount >= 5);
-  const names = { toan: 'Toán', 'tieng-viet': 'Tiếng Việt', 'tieng-anh': 'Tiếng Anh' };
   const options = subjects.map((subjectId) => {
     const items = store.topics.filter((topic) => topic.subjectId === subjectId);
     if (!items.length) return '';
-    return `<optgroup label="${names[subjectId]}">${items.map((topic) => (
+    return `<optgroup label="${escapeHtml(subjectName(subjectId,store.profile))}">${items.map((topic) => (
       `<option value="${escapeHtml(topic.id)}">${escapeHtml(topic.name)} (${topic.questionCount} câu)</option>`
     )).join('')}</optgroup>`;
   }).join('');

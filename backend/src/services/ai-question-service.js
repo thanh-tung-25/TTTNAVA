@@ -15,7 +15,7 @@ export function aiQuestionConfig() {
   };
 }
 
-const SYSTEM_PROMPT = `Bạn là trợ lý soạn câu hỏi tiểu học bằng tiếng Việt.
+const SYSTEM_PROMPT = `Bạn là trợ lý soạn câu hỏi tiểu học và trung học cơ sở bằng tiếng Việt.
 Chỉ tạo câu hỏi dựa trên nội dung tài liệu được cung cấp, không thêm kiến thức ngoài tài liệu.
 Trả về JSON đúng dạng:
 {"questions":[{"prompt":"...","type":"single_choice|multiple_choice|true_false|fill_in",

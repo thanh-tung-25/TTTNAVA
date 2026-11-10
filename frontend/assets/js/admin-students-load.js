@@ -20,7 +20,7 @@ export async function load() {
           <thead><tr><th>Học sinh</th><th>Lớp</th><th>Trạng thái</th><th>Ngày tạo</th><th>Thao tác</th></tr></thead>
           <tbody>${payload.data.map(row).join('')}</tbody>
         </table></div>`
-      : emptyState('👧', 'Chưa có học sinh nào', 'Bấm “Thêm học sinh” để tạo tài khoản đầu tiên.');
+      : emptyState('👧', 'Chưa có học sinh nào', store.canManageAccounts?'Bấm “Thêm học sinh” để tạo tài khoản đầu tiên.':'Chưa có học sinh trong danh sách này.');
     elements.pageLabel.textContent = `Trang ${store.page}/${store.totalPages} · ${payload.pagination.total} học sinh`;
     elements.prevButton.disabled = store.page <= 1;
     elements.nextButton.disabled = store.page >= store.totalPages;

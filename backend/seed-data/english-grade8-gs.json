@@ -1,0 +1,360 @@
+{
+  "book": "Tiếng Anh 8 · Global Success",
+  "grade": 8,
+  "subjectId": "tieng-anh",
+  "yearId": "2026-2027",
+  "sourceNote": "Khung mục lục 12 Unit và 4 Review của Global Success, đối chiếu Book Map/tài liệu NXB và các mục ngữ pháp trong sách. Chỉ lưu chủ đề từ vựng và tên các điểm ngữ pháp trọng tâm; không phải toàn bộ 7 tiết của mỗi Unit, không có danh sách từ đầy đủ, bài giảng, câu hỏi hoặc đáp án. Chia Học kì 1 / Học kì 2 theo hai học kì để dùng chung cấu trúc ứng dụng.",
+  "sources": [
+    "https://medialib.qlgd.edu.vn/Uploads/THU_VIEN/shn/2/37/UserFiles/Tai-lieu-tap-huan-Tieng-Anh-8---Global-Success-f9bddfd6-71c4-40d2-92a8-f3fa937715bd.pdf",
+    "https://taphuan.nxbgd.vn/tap-huan/chi-tiet-sach/tieng-anh-8-global-success-939880560.939880560",
+    "https://cuppy.hoclieu.vn/book/g8-english-global-success"
+  ],
+  "volumes": [
+    {
+      "id": "tap-1",
+      "name": "Học kì 1",
+      "semester": "hk1"
+    },
+    {
+      "id": "tap-2",
+      "name": "Học kì 2",
+      "semester": "hk2"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "gs-tieng-anh-8-u01",
+      "name": "Unit 1: Leisure Time",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-u01-vocabulary",
+          "name": "Vocabulary: Leisure activities (Hoạt động giải trí)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-u01-grammar-01",
+          "name": "Grammar: Verbs of liking/disliking + V-ing",
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-tieng-anh-8-u01-grammar-02",
+          "name": "Grammar: Verbs of liking/disliking + to-infinitives",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-8-u02",
+      "name": "Unit 2: Life in the Countryside",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-u02-vocabulary",
+          "name": "Vocabulary: Life in the countryside (Cuộc sống ở nông thôn)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-u02-grammar-01",
+          "name": "Grammar: Comparative forms of adverbs",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-8-u03",
+      "name": "Unit 3: Teenagers",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-u03-vocabulary",
+          "name": "Vocabulary: Teen life (Cuộc sống tuổi thiếu niên)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-u03-grammar-01",
+          "name": "Grammar: Simple sentences",
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-tieng-anh-8-u03-grammar-02",
+          "name": "Grammar: Compound sentences",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-8-r01",
+      "name": "Review 1: Units 1–3",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 4,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-r01-language",
+          "name": "Language: Ôn tập kiến thức ngôn ngữ",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-r01-skills",
+          "name": "Skills: Ôn tập kĩ năng",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-8-u04",
+      "name": "Unit 4: Ethnic Groups of Viet Nam",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 5,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-u04-vocabulary",
+          "name": "Vocabulary: Ethnic groups and their lifestyles (Các dân tộc và đời sống)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-u04-grammar-01",
+          "name": "Grammar: Yes/No questions and Wh-questions",
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-tieng-anh-8-u04-grammar-02",
+          "name": "Grammar: Countable and uncountable nouns",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-8-u05",
+      "name": "Unit 5: Our Customs and Traditions",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 6,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-u05-vocabulary",
+          "name": "Vocabulary: Customs and traditions (Phong tục và truyền thống)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-u05-grammar-01",
+          "name": "Grammar: Articles: a/an, the and zero article",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-8-u06",
+      "name": "Unit 6: Lifestyles",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 7,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-u06-vocabulary",
+          "name": "Vocabulary: Lifestyles (Các lối sống)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-u06-grammar-01",
+          "name": "Grammar: Future simple",
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-tieng-anh-8-u06-grammar-02",
+          "name": "Grammar: First conditional",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-8-r02",
+      "name": "Review 2: Units 4–6",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 8,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-r02-language",
+          "name": "Language: Ôn tập kiến thức ngôn ngữ",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-r02-skills",
+          "name": "Skills: Ôn tập kĩ năng",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-8-u07",
+      "name": "Unit 7: Environmental Protection",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 9,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-u07-vocabulary",
+          "name": "Vocabulary: Environmental protection (Bảo vệ môi trường)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-u07-grammar-01",
+          "name": "Grammar: Complex sentences with adverb clauses of time",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-8-u08",
+      "name": "Unit 8: Shopping",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 10,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-u08-vocabulary",
+          "name": "Vocabulary: Shopping (Mua sắm)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-u08-grammar-01",
+          "name": "Grammar: Adverbs of frequency",
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-tieng-anh-8-u08-grammar-02",
+          "name": "Grammar: Present simple for future events",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-8-u09",
+      "name": "Unit 9: Natural Disasters",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 11,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-u09-vocabulary",
+          "name": "Vocabulary: Natural disasters (Thiên tai)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-u09-grammar-01",
+          "name": "Grammar: Past continuous",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-8-r03",
+      "name": "Review 3: Units 7–9",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 12,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-r03-language",
+          "name": "Language: Ôn tập kiến thức ngôn ngữ",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-r03-skills",
+          "name": "Skills: Ôn tập kĩ năng",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-8-u10",
+      "name": "Unit 10: Communication in the Future",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 13,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-u10-vocabulary",
+          "name": "Vocabulary: Communication technology (Công nghệ giao tiếp)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-u10-grammar-01",
+          "name": "Grammar: Prepositions of place and time",
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-tieng-anh-8-u10-grammar-02",
+          "name": "Grammar: Possessive pronouns",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-8-u11",
+      "name": "Unit 11: Science and Technology",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 14,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-u11-vocabulary",
+          "name": "Vocabulary: Science and technology (Khoa học và công nghệ)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-u11-grammar-01",
+          "name": "Grammar: Reported speech: statements",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-8-u12",
+      "name": "Unit 12: Life on Other Planets",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 15,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-u12-vocabulary",
+          "name": "Vocabulary: Outer space (Không gian vũ trụ)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-u12-grammar-01",
+          "name": "Grammar: Reported speech: questions",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-8-r04",
+      "name": "Review 4: Units 10–12",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 16,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-8-r04-language",
+          "name": "Language: Ôn tập kiến thức ngôn ngữ",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-8-r04-skills",
+          "name": "Skills: Ôn tập kĩ năng",
+          "sortOrder": 2
+        }
+      ]
+    }
+  ]
+}

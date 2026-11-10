@@ -5,7 +5,7 @@ import {query} from '../src/config/db.js';
 import {journeyProgress} from '../src/services/chinese-quiz-plan.js';
 let users=[],student,other,admin,chinese,primary,locked,lesson,set,feedback,session;
 beforeAll(async()=>{
- for(const options of [{},{},{role:'admin'},{role:'admin',adminScope:'chinese'},{role:'admin',adminScope:'primary'},{enrolled:false}])users.push(await createTestUser(options));
+ for(const options of [{creatorScope:'chinese'},{},{role:'admin'},{role:'admin',adminScope:'chinese'},{role:'admin',adminScope:'primary'},{enrolled:false}])users.push(await createTestUser(options));
  [student,other,admin,chinese,primary,locked]=await Promise.all(users.map(loginStudent));
  lesson=(await admin.post('/api/v1/chinese/lessons').send({level_id:1,title:'Hub fixture',position:999,status:'published'})).body.data.id;
  set=(await admin.post('/api/v1/chinese/sets').send({lesson_id:lesson,title:'Hub set'})).body.data.id;

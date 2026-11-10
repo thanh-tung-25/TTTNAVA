@@ -1,5 +1,7 @@
 import { query } from '../config/db.js';
 import { AppError } from '../utils/errors.js';
+import { schoolGradeCondition } from '../middlewares/school-admin.js';
+import { schoolSubjectName } from '../utils/school-subjects.js';
 
 function number(value) {
   return Number(value ?? 0);
@@ -9,13 +11,14 @@ function emptySemester(id, name) {
   return { id, name, questionCount: 0, publishedCount: 0, subjects: [] };
 }
 
-export async function getCurriculumTree(yearId = null) {
+export async function getCurriculumTree(yearId = null, program = null) {
+  const gradeCondition = schoolGradeCondition(program, 'c.grade');
   const yearRows = await query(
     `SELECT y.id, y.name, y.starts_on, y.ends_on, y.is_active, y.sort_order,
             COUNT(q.id) AS question_count,
             COALESCE(SUM(CASE WHEN q.status = 'published' THEN 1 ELSE 0 END), 0) AS published_count
      FROM school_years y
-     LEFT JOIN curriculum_chapters c ON c.school_year_id = y.id
+     LEFT JOIN curriculum_chapters c ON c.school_year_id = y.id AND ${gradeCondition}
      LEFT JOIN curriculum_lessons l ON l.chapter_id = c.id
      LEFT JOIN questions q ON q.topic_id = l.topic_id
      GROUP BY y.id, y.name, y.starts_on, y.ends_on, y.is_active, y.sort_order
@@ -37,14 +40,15 @@ export async function getCurriculumTree(yearId = null) {
      JOIN subjects s ON s.id = c.subject_id
      LEFT JOIN curriculum_lessons l ON l.chapter_id = c.id
      LEFT JOIN questions q ON q.topic_id = l.topic_id
-     WHERE c.school_year_id = ?
+     WHERE c.school_year_id = ? AND ${gradeCondition}
      GROUP BY c.id, c.name, c.grade, c.semester,c.is_legacy,c.book_label, c.subject_id, c.sort_order,
               s.name, s.color, s.sort_order, l.id, l.name, l.topic_id, l.sort_order
      ORDER BY c.grade ASC, c.semester ASC, s.sort_order ASC, c.sort_order ASC, l.sort_order ASC`,
     [selectedId],
   );
 
-  const grades = new Map([1, 2, 3, 4, 5].map((grade) => [grade, {
+  const gradeNumbers = Array.from({length:9},(_,index)=>index+1).filter(grade=>!program||(program==='primary'?grade<=5:grade>=6));
+  const grades = new Map(gradeNumbers.map((grade) => [grade, {
     grade,
     name: `Lớp ${grade}`,
     questionCount: 0,
@@ -62,7 +66,7 @@ export async function getCurriculumTree(yearId = null) {
     if (!subject) {
       subject = {
         id: row.subject_id,
-        name: row.subject_name,
+        name: schoolSubjectName(row.subject_id,row.grade,row.subject_name),
         color: row.subject_color,
         questionCount: 0,
         publishedCount: 0,
@@ -102,6 +106,14 @@ export async function getCurriculumTree(yearId = null) {
     semester.publishedCount += published;
     grade.questionCount += count;
     grade.publishedCount += published;
+  }
+
+  const [math] = await query("SELECT id,name,color FROM subjects WHERE id='toan'");
+  if (math) for (const grade of grades.values()) {
+    if (grade.grade < 6) continue;
+    for (const semester of grade.semesters) if (!semester.subjects.some(subject=>subject.id===math.id)) {
+      semester.subjects.push({id:math.id,name:math.name,color:math.color,questionCount:0,publishedCount:0,chapters:[]});
+    }
   }
 
   const worksheets=await query(`SELECT w.lesson_id,COUNT(*) n FROM worksheets w JOIN curriculum_lessons l ON l.id=w.lesson_id JOIN curriculum_chapters c ON c.id=l.chapter_id WHERE c.school_year_id=? GROUP BY w.lesson_id`,[selectedId]);

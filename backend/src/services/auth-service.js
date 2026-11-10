@@ -17,13 +17,12 @@ export async function login(rawUsername, password) {
   if (!profile || profile.role === 'bot' || !profile.password_hash) {
     throw new AppError(401, 'INVALID_CREDENTIALS', 'Tên đăng nhập hoặc mật khẩu chưa đúng');
   }
-  if (profile.banned_until && new Date(profile.banned_until) > new Date()) {
-    throw new AppError(403, 'ACCOUNT_LOCKED', 'Tài khoản đã bị khoá. Con hãy nhờ bố mẹ nhé');
-  }
-
   const valid = await bcrypt.compare(password, profile.password_hash);
   if (!valid) {
     throw new AppError(401, 'INVALID_CREDENTIALS', 'Tên đăng nhập hoặc mật khẩu chưa đúng');
+  }
+  if (profile.banned_until && new Date(profile.banned_until) > new Date()) {
+    throw new AppError(403, 'ACCOUNT_LOCKED', 'Tài khoản đã bị khoá. Con hãy nhờ bố mẹ nhé');
   }
 
   return { profile: publicProfile(profile), token: signToken(profile) };

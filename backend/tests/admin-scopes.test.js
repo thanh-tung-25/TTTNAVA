@@ -14,9 +14,9 @@ beforeAll(async()=>{
  rootUser=await createTestUser({username:'scope_boss',role:'admin'});
  chineseUser=await createTestUser({username:'scope_chinese',role:'admin',adminScope:'chinese'});
  primaryUser=await createTestUser({username:'scope_primary',role:'admin',adminScope:'primary'});
- chineseStudent=await createTestUser({username:'scope_case_chinese',grade:null,enrolled:false});
+ chineseStudent=await createTestUser({username:'scope_case_chinese',grade:null,enrolled:false,creatorScope:'chinese'});
  primaryStudent=await createTestUser({username:'scope_case_primary',grade:1,enrolled:false});
- dual=await createTestUser({username:'scope_case_dual',grade:2,enrolled:false});
+ dual=await createTestUser({username:'scope_case_dual',grade:2,enrolled:false,creatorScope:'chinese'});
  for(const [student,course] of [[chineseStudent,'hsk-1'],[primaryStudent,'grade-1'],[dual,'hsk-1'],[dual,'grade-2']])await query("INSERT INTO course_enrollments(student_id,course_id,source) VALUES (?,?,'admin')",[student.id,course]);
  boss=await loginStudent(rootUser);chinese=await loginStudent(chineseUser);primary=await loginStudent(primaryUser);studentAgent=await loginStudent(dual);
 });

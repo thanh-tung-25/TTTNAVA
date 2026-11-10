@@ -10,7 +10,7 @@ const button=(text,fn,primary=false)=>el('button',{type:'button',class:'btn '+(p
 function renderCourses(){
  grid.replaceChildren(...courses.filter(c=>!filter||c.kind===filter).map(c=>el('article',{class:'course-tile'},[
   el('span',{class:'course-lock'+(c.unlocked?' open':''),text:c.unlocked?'✓ Đã mở khóa':c.order_status==='pending'?'⏳ Chờ xác nhận':c.revoked_at?'🔒 Đã thu hồi':c.expires_at&&new Date(c.expires_at)<=new Date()?'🔒 Hết hạn':'🔒 Chưa mở khóa'}),
-  el('img',{src:'/assets/images/mascot-'+(c.kind==='primary'?'owl':'panda')+'.svg',alt:'',width:86,height:92}),
+  el('img',{src:'/assets/images/mascot-'+(c.kind==='chinese'?'panda':'owl')+'.svg',alt:'',width:86,height:92}),
   el('h3',{text:c.title}),el('p',{text:c.description}),el('p',{class:'course-price',text:money(c.price_vnd)}),el('p',{text:c.duration_days?c.duration_days+' ngày kể từ khi được duyệt':'Quyền học vĩnh viễn'}),
   ...(c.unlocked&&c.expires_at?[el('p',{text:'Học đến '+formatDate(c.expires_at,false)})]:[]),
   button(c.unlocked?'Vào học':'Xem khóa học',()=>c.unlocked?enterCourse(c):showCourse(c),Boolean(c.unlocked)),
@@ -55,8 +55,8 @@ async function refresh(){
   ...(o.status==='pending'?[button('Hủy yêu cầu',async event=>{const b=event.currentTarget;b.disabled=true;try{await api('/api/v1/courses/orders/'+o.id+'/cancel',{method:'POST'});await refresh();}catch(e){notice.textContent=e.message;}finally{b.disabled=false;}})]:[]),
  ])):[el('p',{class:'muted',text:'Chưa có yêu cầu đăng ký. Chọn khóa học để xem nội dung và hướng dẫn.'})]));
 }
-document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{filter=b.dataset.kind;document.querySelectorAll('[data-kind]').forEach(other=>other.setAttribute('aria-pressed',String(other===b)));document.querySelector('#course-heading').textContent=filter==='primary'?'Khóa học Tiểu học':'Khóa học Tiếng Trung';renderCourses();});
+document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{filter=b.dataset.kind;document.querySelectorAll('[data-kind]').forEach(other=>other.setAttribute('aria-pressed',String(other===b)));document.querySelector('#course-heading').textContent='Khóa học '+({primary:'Tiểu học',secondary:'THCS',chinese:'Tiếng Trung'}[filter]);renderCourses();});
 document.querySelector('#all-courses').onclick=()=>{filter='';document.querySelectorAll('[data-kind]').forEach(b=>b.setAttribute('aria-pressed','false'));document.querySelector('#course-heading').textContent='Tất cả khóa học';renderCourses();};
 document.querySelector('.dialog-close').onclick=()=>dialog.close();
 document.querySelector('#refresh-orders').onclick=()=>refresh().catch(e=>notice.textContent=e.message);
-initPage('student','courses').then(async user=>{profile=user;const params=new URLSearchParams(location.search);if(params.has('locked'))notice.textContent='Khóa học này chưa được mở hoặc đã hết hạn. Con chọn khóa học để đăng ký nhé!';await refresh();const kind=params.get('program');if(['primary','chinese'].includes(kind))document.querySelector('[data-kind='+kind+']').click();}).catch(e=>notice.textContent=e.message);
+initPage('student','courses').then(async user=>{profile=user;const params=new URLSearchParams(location.search);if(params.has('locked'))notice.textContent='Khóa học này chưa được mở hoặc đã hết hạn. Con chọn khóa học để đăng ký nhé!';await refresh();const kind=params.get('program');if(['primary','secondary','chinese'].includes(kind))document.querySelector('[data-kind='+kind+']').click();}).catch(e=>notice.textContent=e.message);

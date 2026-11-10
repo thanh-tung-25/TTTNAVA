@@ -16,7 +16,7 @@ async function boot(){
  document.body.classList.toggle('is-studying',params.has('set'));
  const activeView={tests:'exam',notebook:'notebook',history:'history'}[params.get('view')]||'learning';
  const profile=await initPage('student',activeView);
- if(profile.course?.kind==='primary'){location.replace('/pages/student/courses/?program=chinese');return;}
+ if(profile.course?.kind!=='chinese'){location.replace('/pages/student/courses/?program=chinese');return;}
  if(profile.course?.kind==='chinese')params.set('level',String(profile.course.level));
  catalog=await request('/catalog');notice('');
  document.querySelectorAll('.chinese-pagebar .chinese-tools a').forEach(a=>{const view=new URL(a.href).searchParams.get('view');if(view===(params.get('view')||null))a.setAttribute('aria-current','page');});

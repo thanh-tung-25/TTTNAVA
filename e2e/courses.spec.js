@@ -41,7 +41,7 @@ test.describe('Purchase approval end to end in isolated test database',()=>{
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto('/pages/login/');await page.locator('[name=username]').fill(student.username);await page.locator('[name=password]').fill(password);await page.locator('#login-button').click();
   await expect(page).toHaveURL(/\/student\/courses\/$/);
-  await expect(page.locator('.course-tile')).toHaveCount(14);
+  await expect(page.locator('.course-tile')).toHaveCount(18);
   await expect(page.getByRole('button',{name:'Vào học',exact:true})).toHaveCount(0);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   await page.screenshot({path:`test-results/courses-chooser-${test.info().project.name}.png`,fullPage:true});

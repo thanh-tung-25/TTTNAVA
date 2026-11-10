@@ -14,7 +14,7 @@ export const challengeInviteSchema = z.object({
   opponentUsername: z.string().trim().min(3).max(20),
   topicId: topicIdSchema,
   durationSeconds: durationSchema.default(600),
-  grade: z.coerce.number().int().min(1).max(5).optional(),
+  grade: z.coerce.number().int().min(1).max(9).optional(),
 });
 
 export const robotChallengeSchema = z.object({

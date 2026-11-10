@@ -4,7 +4,7 @@ import { query } from '../src/config/db.js';
 describe('Danh mục và dữ liệu kiểm thử câu hỏi', () => {
   test('test_question_bank_has_catalog_and_fixture_questions', async () => {
     const subjects = await query('SELECT COUNT(*) AS total FROM subjects');
-    const topics = await query('SELECT COUNT(*) AS total FROM topics');
+    const topics = await query('SELECT COUNT(*) AS total FROM topics WHERE grade BETWEEN 1 AND 5');
     const fixtures = await query(
       "SELECT COUNT(*) AS total FROM questions WHERE id LIKE 'fixture-q-%'",
     );
@@ -29,7 +29,7 @@ describe('Danh mục và dữ liệu kiểm thử câu hỏi', () => {
   test('test_question_bank_catalog_covers_five_grades_per_subject', async () => {
     const rows = await query(
       `SELECT subject_id, grade, COUNT(*) AS topics
-       FROM topics GROUP BY subject_id, grade ORDER BY subject_id, grade`,
+       FROM topics WHERE grade BETWEEN 1 AND 5 GROUP BY subject_id, grade ORDER BY subject_id, grade`,
     );
     expect(rows).toHaveLength(15);
     for (const row of rows) {
@@ -41,8 +41,8 @@ describe('Danh mục và dữ liệu kiểm thử câu hỏi', () => {
 
   test('test_question_bank_curriculum_tree_covers_catalog', async () => {
     const years = await query('SELECT COUNT(*) AS total FROM school_years');
-    const chapters = await query('SELECT COUNT(*) AS total FROM curriculum_chapters');
-    const lessons = await query('SELECT COUNT(*) AS total FROM curriculum_lessons');
+    const chapters = await query('SELECT COUNT(*) AS total FROM curriculum_chapters WHERE grade BETWEEN 1 AND 5');
+    const lessons = await query('SELECT COUNT(*) AS total FROM curriculum_lessons l JOIN curriculum_chapters c ON c.id=l.chapter_id WHERE c.grade BETWEEN 1 AND 5');
     const uncovered = await query(
       `SELECT COUNT(*) AS total FROM topics t
        LEFT JOIN curriculum_lessons l ON l.topic_id = t.id
@@ -73,7 +73,7 @@ describe('Danh mục và dữ liệu kiểm thử câu hỏi', () => {
 
   test('test_question_bank_subject_topic_quotas_match', async () => {
     const rows = await query(
-      'SELECT subject_id, COUNT(*) AS total FROM topics GROUP BY subject_id ORDER BY subject_id',
+      'SELECT subject_id, COUNT(*) AS total FROM topics WHERE grade BETWEEN 1 AND 5 GROUP BY subject_id ORDER BY subject_id',
     );
     expect(rows.map((row) => [row.subject_id, Number(row.total)])).toEqual([
       ['tieng-anh', 165],

@@ -1,11 +1,12 @@
 import { query } from '../config/db.js';
 import { toIso } from '../utils/time.js';
+import {schoolSubjectName} from '../utils/school-subjects.js';
 
 export async function listPracticeHistory(studentId, page, limit) {
   const offset = (page - 1) * limit;
   const rows = await query(
     `SELECT ps.id, ps.status, ps.total_questions, ps.correct_count, ps.started_at, ps.finished_at,
-            t.name AS topic_name, t.grade, s.name AS subject_name,
+            t.name AS topic_name, t.grade, t.subject_id, s.name AS subject_name,
             COALESCE((SELECT SUM(amount) FROM diamond_ledger dl
                       WHERE dl.profile_id = ps.student_id AND dl.ref_type = 'practice' AND dl.ref_id = ps.id), 0) AS diamonds
      FROM practice_sessions ps
@@ -23,7 +24,7 @@ export async function listPracticeHistory(studentId, page, limit) {
       status: row.status,
       topicName: row.topic_name,
       grade: Number(row.grade),
-      subjectName: row.subject_name,
+      subjectName: schoolSubjectName(row.subject_id,row.grade,row.subject_name),
       totalQuestions: Number(row.total_questions),
       correctCount: Number(row.correct_count),
       percent: Number(row.total_questions) ? Math.round((Number(row.correct_count) / Number(row.total_questions)) * 100) : 0,

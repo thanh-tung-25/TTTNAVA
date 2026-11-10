@@ -4,8 +4,8 @@ import {json} from '../repositories/chinese.js';
 import {startPractice} from './practice-service.js';
 import {getPracticeSession} from './practice-service.js';
 import {badRequest} from '../utils/errors.js';
+import {schoolSubjectName} from '../utils/school-subjects.js';
 
-const names={toan:'Toán','tieng-viet':'Tiếng Việt','tieng-anh':'Tiếng Anh',chinese:'Tiếng Trung'};
 function dates(now=new Date()){
  const local=new Date(now.getTime()+7*3600000),day=local.toISOString().slice(0,10);
  return {day,today:new Date(day+'T00:00:00+07:00'),since:new Date(new Date(day+'T00:00:00+07:00').getTime()-6*86400000)};
@@ -25,10 +25,10 @@ export async function todayPlan(user,courseId){
  const topics=await query("SELECT t.id,t.name,t.subject_id,COUNT(q.id) total FROM topics t JOIN questions q ON q.topic_id=t.id AND q.status='published' WHERE t.grade=? GROUP BY t.id,t.name,t.subject_id HAVING COUNT(q.id)>=10 ORDER BY t.subject_id,t.sort_order,t.id",[course.level]);
  const topic=wrong.map(w=>topics.find(t=>t.id===w.topic_id)).find(Boolean)||topics[Number(day.replaceAll('-',''))%Math.max(1,topics.length)]||null;
  const recent=topic?await query("SELECT id,status,answered_count,correct_count,total_questions FROM practice_sessions WHERE student_id=? AND topic_id=? AND started_at>=? ORDER BY started_at DESC LIMIT 1",[user,topic.id,today]):[];
- return {day,course,kind:'primary',minutes:10,topic:topic?{...topic,subject:names[topic.subject_id]}:null,reason:topic&&wrong.some(w=>w.topic_id===topic.id)?'Ưu tiên chủ đề con từng làm sai; lượt luyện sẽ đưa câu cần ôn lên trước.':'Một lượt 10 câu vừa sức trong khóa đang học.',recent:recent[0]||null};
+ return {day,course,kind:course.kind,minutes:10,topic:topic?{...topic,subject:schoolSubjectName(topic.subject_id,course.level)}:null,reason:topic&&wrong.some(w=>w.topic_id===topic.id)?'Ưu tiên chủ đề con từng làm sai; lượt luyện sẽ đưa câu cần ôn lên trước.':'Một lượt 10 câu vừa sức trong khóa đang học.',recent:recent[0]||null};
 }
 export async function startToday(user,courseId){
- const plan=await todayPlan(user,courseId);if(plan.kind!=='primary'||!plan.topic)throw badRequest('Chưa có đủ 10 câu trong khóa này để tạo lượt luyện.');
+ const plan=await todayPlan(user,courseId);if(!['primary','secondary'].includes(plan.kind)||!plan.topic)throw badRequest('Chưa có đủ 10 câu trong khóa này để tạo lượt luyện.');
  let session;
  if(plan.recent?.status==='in_progress')session=await getPracticeSession(user,plan.recent.id);
  else{
@@ -39,7 +39,7 @@ export async function startToday(user,courseId){
 }
 export async function familyReport(user,courseId){
  const course=await requireCourse(user,courseId),{day,since}=dates();let rows=[];
- if(course.kind==='primary'){
+ if(['primary','secondary'].includes(course.kind)){
   const [practice,exams,worksheets,challenges]=await Promise.all([
    query('SELECT p.id,p.status,p.started_at,p.finished_at completed_at,p.correct_count correct,p.total_questions total,t.name title,t.subject_id FROM practice_sessions p JOIN topics t ON t.id=p.topic_id WHERE p.student_id=? AND t.grade=? AND p.started_at>=? ORDER BY p.started_at DESC LIMIT 1000',[user,course.level,since]),
    query('SELECT p.id,p.status,p.started_at,p.submitted_at completed_at,p.correct_count correct,p.total_questions total,t.name title,t.subject_id FROM exam_attempts p JOIN topics t ON t.id=p.topic_id WHERE p.student_id=? AND t.grade=? AND p.started_at>=? ORDER BY p.started_at DESC LIMIT 1000',[user,course.level,since]),
@@ -51,9 +51,9 @@ export async function familyReport(user,courseId){
   const attempts=await query('SELECT a.*,l.level_id FROM chinese_attempts a LEFT JOIN chinese_sets s ON s.id=a.set_id LEFT JOIN chinese_lessons l ON l.id=s.lesson_id WHERE a.student_id=? AND a.abandoned_at IS NULL AND a.started_at>=? ORDER BY a.started_at DESC LIMIT 1000',[user,since]);
   rows=attempts.filter(a=>a.level_id===Number(course.level)||(json(a.snapshot).course_ids||[]).includes(course.id)).map(a=>{const snapshot=json(a.snapshot),answers=Object.values(json(a.answers));return {id:a.id,kind:a.test_id?'Kiểm tra tiếng Trung':'Quiz tiếng Trung',title:snapshot.title,subject_id:'chinese',status:a.finished_at?'finished':'in_progress',started_at:a.started_at,completed_at:a.finished_at,correct:answers.filter(a=>a.locked&&a.correct).length,total:snapshot.items.length,score:a.score};});
  }
- rows=rows.map(r=>({...r,correct:r.correct==null?null:Number(r.correct),total:r.total==null?null:Number(r.total),score:r.score==null?(Number(r.total)>0?Math.round(Number(r.correct)/Number(r.total)*100):null):Number(r.score),subject:names[r.subject_id]||r.subject_id})).sort((a,b)=>new Date(b.started_at)-new Date(a.started_at));
+ rows=rows.map(r=>({...r,correct:r.correct==null?null:Number(r.correct),total:r.total==null?null:Number(r.total),score:r.score==null?(Number(r.total)>0?Math.round(Number(r.correct)/Number(r.total)*100):null):Number(r.score),subject:schoolSubjectName(r.subject_id,course.level)})).sort((a,b)=>new Date(b.started_at)-new Date(a.started_at));
  const completed=rows.filter(r=>r.completed_at&&r.status!=='pending_review'),scored=completed.filter(r=>r.score!=null),subjects=[];
- for(const id of [...new Set(completed.map(r=>r.subject_id))]){const done=completed.filter(r=>r.subject_id===id&&r.score!=null);subjects.push({id,title:names[id]||id,completed:done.length,average:done.length?Math.round(done.reduce((n,r)=>n+r.score,0)/done.length):null});}
+ for(const id of [...new Set(completed.map(r=>r.subject_id))]){const done=completed.filter(r=>r.subject_id===id&&r.score!=null);subjects.push({id,title:schoolSubjectName(id,course.level),completed:done.length,average:done.length?Math.round(done.reduce((n,r)=>n+r.score,0)/done.length):null});}
  const weak=[...completed].filter(r=>r.score!=null&&r.score<70).sort((a,b)=>a.score-b.score).slice(0,3);
  const minutes=Math.round(completed.reduce((n,r)=>n+Math.max(0,Math.min(1800,(new Date(r.completed_at)-new Date(r.started_at))/1000)),0)/60);
  return {day,since:since.toISOString(),course,summary:{active_days:new Set(completed.map(r=>new Date(new Date(r.completed_at).getTime()+7*3600000).toISOString().slice(0,10))).size,completed:completed.length,in_progress:rows.filter(r=>!r.completed_at).length,pending_review:rows.filter(r=>r.status==='pending_review').length,average:scored.length?Math.round(scored.reduce((n,r)=>n+r.score,0)/scored.length):null,estimated_minutes:minutes},subjects,weak,recent:rows.slice(0,30),note:'Báo cáo 7 ngày của khóa đang chọn. Thời lượng là ước tính từ lúc mở đến lúc nộp, tối đa 30 phút mỗi lượt; không phải thời gian tương tác thực. Tự luyện chưa lưu kết quả không tính vào báo cáo.'};

@@ -144,7 +144,21 @@ describe('Quản trị học sinh', () => {
     expect(changed.body.data.grade).toBe(3);
     const back = await adminAgent.patch(`/api/v1/admin/students/${created.body.data.id}`).send({ grade: null });
     expect(back.body.data.grade).toBeNull();
-    const bad = await adminAgent.post('/api/v1/admin/students').send({username:'test_bad_grade',password:'Chinese@123',displayName:'Sai lớp',grade:6});
+    const bad = await adminAgent.post('/api/v1/admin/students').send({username:'test_bad_grade',password:'Chinese@123',displayName:'Sai lớp',grade:10});
     expect(bad.status).toBe(400);
+  });
+
+  test('creates and edits secondary learners and lists them under THCS', async () => {
+    const created = await adminAgent.post('/api/v1/admin/students').send({
+      username:'test_thcs_learner',password:'Secondary@123',displayName:'Học sinh THCS',grade:6,
+    });
+    expect(created.status).toBe(201);
+    expect(created.body.data.grade).toBe(6);
+    const changed = await adminAgent.patch(`/api/v1/admin/students/${created.body.data.id}`).send({grade:9});
+    expect(changed.status).toBe(200);
+    expect(changed.body.data.grade).toBe(9);
+    const list = await adminAgent.get('/api/v1/admin/students?program=secondary&q=test_thcs_learner');
+    expect(list.status).toBe(200);
+    expect(list.body.data.map(s=>s.id)).toContain(created.body.data.id);
   });
 });

@@ -90,7 +90,7 @@ describe('Quản trị câu hỏi và thống kê', () => {
     const response = await adminAgent.get('/api/v1/admin/curriculum/tree');
     expect(response.status).toBe(200);
     expect(response.body.data.year.id).toBe('2026-2027');
-    expect(response.body.data.grades).toHaveLength(5);
+    expect(response.body.data.grades).toHaveLength(9);
     const grade3 = response.body.data.grades.find((row) => row.grade === 3);
     const chapter = grade3.semesters
       .flatMap((row) => row.subjects)
@@ -228,7 +228,7 @@ describe('Quản trị câu hỏi và thống kê', () => {
     expect(stats.status).toBe(200);
     expect(stats.body.data.bank.questions).toBeGreaterThanOrEqual(28);
     expect(stats.body.data.bank.publishedQuestions).toBeGreaterThanOrEqual(28);
-    expect(stats.body.data.bank.topics).toBe(912);
+    expect(stats.body.data.bank.topics).toBeGreaterThanOrEqual(1224);
     expect(stats.body.data.students.total).toBeGreaterThanOrEqual(1);
     expect(stats.body.data.challenges.robot).toBeGreaterThanOrEqual(1);
     expect(stats.body.data.bySubject).toHaveLength(3);

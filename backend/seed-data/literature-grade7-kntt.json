@@ -1,0 +1,466 @@
+{
+  "book": "Ngữ văn 7 · Kết nối tri thức với cuộc sống",
+  "grade": 7,
+  "yearId": "2026-2027",
+  "subjectId": "tieng-viet",
+  "sourceNote": "Mục lục đối chiếu sách và tài liệu giáo viên của NXB Giáo dục Việt Nam. Tên các phần thực hành tiếng Việt được gộp theo chủ đề; tên nhiệm vụ dài được rút gọn. Chỉ lưu tên mục học, không sao chép văn bản tác phẩm, câu hỏi hoặc lời giải.",
+  "sources": [
+    "https://sgk.olm.vn/thu-vien-so/doc-sach/sgv-ngu-van-tap-1.4503031891",
+    "https://sachdientu.nxbgd.vn/thu-vien-so/doc-sach/shs-ngu-van-tap-2.4503035601",
+    "https://c12binhchuongbs.quangngai.edu.vn/wp-content/uploads/2022/09/Tai-lieu-boi-duong-giao-vien-Ngu-van-7.pdf"
+  ],
+  "volumes": [
+    {
+      "id": "tap-1",
+      "name": "Tập 1",
+      "semester": "hk1"
+    },
+    {
+      "id": "tap-2",
+      "name": "Tập 2",
+      "semester": "hk2"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "kntt-nguvan-7-c01",
+      "name": "Bài 1: Bầu trời tuổi thơ",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-7-b01-doc-01",
+          "name": "Đọc: Bầy chim chìa vôi",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-7-b01-doc-02",
+          "name": "Đọc: Đi lấy mật",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-7-b01-doc-03",
+          "name": "Đọc: Ngàn sao làm việc",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-7-b01-tv-01",
+          "name": "Thực hành tiếng Việt: Mở rộng thành phần chính và trạng ngữ của câu bằng cụm từ",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-7-b01-viet-01",
+          "name": "Viết: Tóm tắt văn bản theo những yêu cầu khác nhau về độ dài",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-7-b01-noi-nghe",
+          "name": "Nói và nghe: Trao đổi về một vấn đề mà em quan tâm",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-7-b01-doc-04",
+          "name": "Thực hành đọc: Ngôi nhà trên cây",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-7-c02",
+      "name": "Bài 2: Khúc nhạc tâm hồn",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-7-b02-doc-01",
+          "name": "Đọc: Đồng dao mùa xuân",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-7-b02-doc-02",
+          "name": "Đọc: Gặp lá cơm nếp",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-7-b02-doc-03",
+          "name": "Đọc: Trở gió",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-7-b02-tv-01",
+          "name": "Thực hành tiếng Việt: Nói giảm nói tránh; nghĩa của từ ngữ",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-7-b02-viet-01",
+          "name": "Viết: Tập làm một bài thơ bốn chữ hoặc năm chữ",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-7-b02-viet-02",
+          "name": "Viết: Viết đoạn văn ghi lại cảm xúc sau khi đọc một bài thơ bốn chữ hoặc năm chữ",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-7-b02-noi-nghe",
+          "name": "Nói và nghe: Trình bày suy nghĩ về một vấn đề đời sống gợi ra từ tác phẩm văn học",
+          "sortOrder": 7
+        },
+        {
+          "id": "kntt-nguvan-7-b02-doc-04",
+          "name": "Thực hành đọc: Chiều sông Thương",
+          "sortOrder": 8
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-7-c03",
+      "name": "Bài 3: Cội nguồn yêu thương",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-7-b03-doc-01",
+          "name": "Đọc: Vừa nhắm mắt vừa mở cửa sổ",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-7-b03-doc-02",
+          "name": "Đọc: Người thầy đầu tiên",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-7-b03-doc-03",
+          "name": "Đọc: Quê hương",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-7-b03-tv-01",
+          "name": "Thực hành tiếng Việt: Số từ và phó từ",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-7-b03-viet-01",
+          "name": "Viết: Viết bài văn phân tích đặc điểm nhân vật trong một tác phẩm văn học",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-7-b03-noi-nghe",
+          "name": "Nói và nghe: Trình bày ý kiến về một vấn đề đời sống gợi ra từ một nhân vật văn học",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-7-b03-doc-04",
+          "name": "Thực hành đọc: Trong lòng mẹ",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-7-c04",
+      "name": "Bài 4: Giai điệu đất nước",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 4,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-7-b04-doc-01",
+          "name": "Đọc: Mùa xuân nho nhỏ",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-7-b04-doc-02",
+          "name": "Đọc: Gò Me",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-7-b04-doc-03",
+          "name": "Đọc: Bài thơ Đường núi của Nguyễn Đình Thi",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-7-b04-tv-01",
+          "name": "Thực hành tiếng Việt: Ngữ cảnh và nghĩa của từ ngữ; biện pháp tu từ",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-7-b04-viet-01",
+          "name": "Viết: Viết bài văn biểu cảm về con người hoặc sự việc",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-7-b04-noi-nghe",
+          "name": "Nói và nghe: Trình bày ý kiến về những hoạt động thiện nguyện vì cộng đồng",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-7-b04-doc-04",
+          "name": "Thực hành đọc: Chiều biên giới",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-7-c05",
+      "name": "Bài 5: Màu sắc trăm miền",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 5,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-7-b05-doc-01",
+          "name": "Đọc: Tháng Giêng, mơ về trăng non rét ngọt",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-7-b05-doc-02",
+          "name": "Đọc: Chuyện cơm hến",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-7-b05-doc-03",
+          "name": "Đọc: Hội lồng tồng",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-7-b05-tv-01",
+          "name": "Thực hành tiếng Việt: Ngôn ngữ vùng miền; dấu gạch ngang",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-7-b05-viet-01",
+          "name": "Viết: Viết văn bản tường trình",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-7-b05-noi-nghe",
+          "name": "Nói và nghe: Trình bày ý kiến về vấn đề văn hóa truyền thống trong xã hội hiện đại",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-7-b05-doc-04",
+          "name": "Thực hành đọc: Những khuôn cửa dấu yêu",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-7-c06",
+      "name": "Bài 6: Bài học cuộc sống",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 6,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-7-b06-doc-01",
+          "name": "Đọc: Đẽo cày giữa đường",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-7-b06-doc-02",
+          "name": "Đọc: Ếch ngồi đáy giếng",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-7-b06-doc-03",
+          "name": "Đọc: Con mối và con kiến",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-7-b06-doc-04",
+          "name": "Đọc: Một số câu tục ngữ Việt Nam",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-7-b06-doc-05",
+          "name": "Đọc: Con hổ có nghĩa",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-7-b06-tv-01",
+          "name": "Thực hành tiếng Việt: Thành ngữ; nói quá",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-7-b06-viet-01",
+          "name": "Viết: Viết bài văn nghị luận về một vấn đề trong đời sống, trình bày ý kiến tán thành",
+          "sortOrder": 7
+        },
+        {
+          "id": "kntt-nguvan-7-b06-noi-nghe",
+          "name": "Nói và nghe: Kể lại một truyện ngụ ngôn",
+          "sortOrder": 8
+        },
+        {
+          "id": "kntt-nguvan-7-b06-doc-06",
+          "name": "Thực hành đọc: Thiên nga, cá măng và tôm hùm",
+          "sortOrder": 9
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-7-c07",
+      "name": "Bài 7: Thế giới viễn tưởng",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 7,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-7-b07-doc-01",
+          "name": "Đọc: Cuộc chạm trán trên đại dương",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-7-b07-doc-02",
+          "name": "Đọc: Đường vào trung tâm vũ trụ",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-7-b07-doc-03",
+          "name": "Đọc: Dấu ấn Hồ Khanh",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-7-b07-tv-01",
+          "name": "Thực hành tiếng Việt: Mạch lạc, liên kết; dấu chấm lửng, dấu ngoặc kép",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-7-b07-viet-01",
+          "name": "Viết: Viết bài văn kể lại sự việc có thật liên quan đến một nhân vật lịch sử",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-7-b07-noi-nghe",
+          "name": "Nói và nghe: Thảo luận về vai trò của công nghệ đối với đời sống con người",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-7-b07-doc-04",
+          "name": "Thực hành đọc: Chiếc đũa thần",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-7-c08",
+      "name": "Bài 8: Trải nghiệm để trưởng thành",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 8,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-7-b08-doc-01",
+          "name": "Đọc: Bản đồ dẫn đường",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-7-b08-doc-02",
+          "name": "Đọc: Hãy cầm lấy và đọc",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-7-b08-doc-03",
+          "name": "Đọc: Nói với con",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-7-b08-tv-01",
+          "name": "Thực hành tiếng Việt: Liên kết trong văn bản; thuật ngữ",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-7-b08-viet-01",
+          "name": "Viết: Viết bài văn nghị luận về một vấn đề trong đời sống, trình bày ý kiến phản đối",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-7-b08-noi-nghe",
+          "name": "Nói và nghe: Trình bày ý kiến về một vấn đề đời sống",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-7-b08-doc-04",
+          "name": "Thực hành đọc: Câu chuyện về con đường",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-7-c09",
+      "name": "Bài 9: Hòa điệu với tự nhiên",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 9,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-7-b09-doc-01",
+          "name": "Đọc: Thủy tiên tháng Một",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-7-b09-doc-02",
+          "name": "Đọc: Lễ rửa làng của người Lô Lô",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-7-b09-doc-03",
+          "name": "Đọc: Bản tin về hoa anh đào",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-7-b09-tv-01",
+          "name": "Thực hành tiếng Việt: Cước chú, tài liệu tham khảo; yếu tố Hán Việt",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-7-b09-viet-01",
+          "name": "Viết: Viết bài văn thuyết minh về quy tắc hoặc luật lệ trong trò chơi hay hoạt động",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-7-b09-noi-nghe",
+          "name": "Nói và nghe: Giải thích quy tắc hoặc luật lệ trong một trò chơi hay hoạt động",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-7-b09-doc-04",
+          "name": "Thực hành đọc: Thân thiện với môi trường",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-7-c10",
+      "name": "Bài 10: Trang sách và cuộc sống",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 10,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-7-b10-doc-01",
+          "name": "Đọc: Chinh phục những cuốn sách mới",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-7-b10-doc-02",
+          "name": "Đọc: Vẻ đẹp giản dị và chân thật của Quê nội",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-7-b10-viet-01",
+          "name": "Viết: Phân tích một nhân vật văn học yêu thích trong cuốn sách đã đọc",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-7-b10-noi-nghe",
+          "name": "Nói và nghe: Ngày hội với sách",
+          "sortOrder": 4
+        }
+      ]
+    }
+  ]
+}

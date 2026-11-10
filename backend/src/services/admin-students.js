@@ -4,34 +4,36 @@ import { AppError } from '../utils/errors.js';
 import { hashPassword } from './auth-service.js';
 import { usernameToEmail } from '../utils/normalize.js';
 import { publicProfile } from '../utils/serializers.js';
-import { studentProgramCondition } from '../utils/admin-permissions.js';
+import { studentProgramCondition,adminScopeOf } from '../utils/admin-permissions.js';
+import {studentVisibleCondition} from '../utils/student-visibility.js';
 
-export async function listStudents(page, limit, search = '', program = '') {
+export async function listStudents(page, limit, search = '', program = '', viewer=null) {
   const offset = (page - 1) * limit;
   const like = `%${search}%`;
   const programWhere = program ? ' AND '+studentProgramCondition('p',program) : '';
+  const privacyWhere=' AND '+studentVisibleCondition(viewer,'p');
   const rows = await query(
     `SELECT p.* FROM profiles p
      WHERE role = 'student' AND (username LIKE ? OR display_name LIKE ?)
-     ${programWhere}
+     ${programWhere}${privacyWhere}
      ORDER BY created_at DESC
      LIMIT ? OFFSET ?`,
     [like, like, limit, offset],
   );
   const [total] = await query(
-    `SELECT COUNT(*) AS total FROM profiles p WHERE role = 'student' AND (username LIKE ? OR display_name LIKE ?) ${programWhere}`,
+    `SELECT COUNT(*) AS total FROM profiles p WHERE role = 'student' AND (username LIKE ? OR display_name LIKE ?) ${programWhere}${privacyWhere}`,
     [like, like],
   );
   return { items: rows.map(publicProfile), total: Number(total.total) };
 }
 
-export async function createStudent({ username, password, displayName, grade, avatarKey }) {
+export async function createStudent({ username, password, displayName, grade, avatarKey },actor=null) {
   const id = randomUUID();
   const hash = await hashPassword(password);
   await query(
-    `INSERT INTO profiles (id, username, email, password_hash, role, display_name, avatar_key, grade)
-     VALUES (?, ?, ?, ?, 'student', ?, ?, ?)`,
-    [id, username, usernameToEmail(username), hash, displayName, avatarKey ?? 'meo', grade],
+    `INSERT INTO profiles (id, username, email, password_hash, role, display_name, avatar_key, grade,student_created_by,student_creator_scope)
+     VALUES (?, ?, ?, ?, 'student', ?, ?, ?, ?, ?)`,
+    [id, username, usernameToEmail(username), hash, displayName, avatarKey ?? 'meo', grade,actor?.role==='admin'?actor.id:null,adminScopeOf(actor)],
   );
   const rows = await query('SELECT * FROM profiles WHERE id = ?', [id]);
   return publicProfile(rows[0]);

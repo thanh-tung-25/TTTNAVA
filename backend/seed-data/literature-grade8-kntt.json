@@ -1,0 +1,446 @@
+{
+  "book": "Ngữ văn 8 · Kết nối tri thức với cuộc sống",
+  "grade": 8,
+  "subjectId": "tieng-viet",
+  "yearId": "2026-2027",
+  "sourceNote": "Đối chiếu mục lục và các mạch hoạt động trong SGK/SGV và tài liệu bồi dưỡng của Nhà xuất bản Giáo dục Việt Nam. Chỉ tạo khung mục lục văn bản chính và các mạch học, không nhập văn bản tác phẩm, câu hỏi hoặc đáp án. Tên một số nhiệm vụ được rút gọn; mạch chưa xác minh tên nhiệm vụ cụ thể giữ nhãn chung.",
+  "sources": [
+    "https://sachdientu.nxbgd.vn/thu-vien-so/doc-sach/shs-ngu-van-8-tap-1.4503093279",
+    "https://sachdientu.nxbgd.vn/thu-vien-so/doc-sach/sgv-ngu-van-8-tap-2.4503118564",
+    "https://medialib.qlgd.edu.vn/Uploads/THU_VIEN/shn/2/37/UserFiles/3.-Tai-lieu-BDGV-su-dung-SGK-mon-Ngu-van-8-c79b04b4-0926-4fe0-86d7-d88244a7415d.pdf"
+  ],
+  "volumes": [
+    {
+      "id": "tap-1",
+      "name": "Tập 1",
+      "semester": "hk1"
+    },
+    {
+      "id": "tap-2",
+      "name": "Tập 2",
+      "semester": "hk2"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "kntt-nguvan-8-c01",
+      "name": "Bài 1: Câu chuyện của lịch sử",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-8-b01-doc-01",
+          "name": "Đọc: Lá cờ thêu sáu chữ vàng",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-8-b01-doc-02",
+          "name": "Đọc: Quang Trung đại phá quân Thanh",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-8-b01-doc-03",
+          "name": "Đọc: Ta đi tới",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-8-b01-tv-01",
+          "name": "Thực hành tiếng Việt: Biệt ngữ xã hội",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-8-b01-tv-02",
+          "name": "Thực hành tiếng Việt: Từ ngữ địa phương",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-8-b01-viet-01",
+          "name": "Viết: Viết bài văn kể lại một chuyến đi (tham quan một di tích lịch sử, văn hóa)",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-8-b01-noi-nghe",
+          "name": "Nói và nghe: Giới thiệu ngắn về một cuốn sách (truyện lịch sử)",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-8-c02",
+      "name": "Bài 2: Vẻ đẹp cổ điển",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-8-b02-doc-01",
+          "name": "Đọc: Thu điếu",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-8-b02-doc-02",
+          "name": "Đọc: Thiên Trường vãn vọng",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-8-b02-doc-03",
+          "name": "Đọc: Ca Huế trên sông Hương",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-8-b02-tv-01",
+          "name": "Thực hành tiếng Việt: Từ tượng hình, từ tượng thanh",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-8-b02-tv-02",
+          "name": "Thực hành tiếng Việt: Biện pháp đảo ngữ",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-8-b02-viet-01",
+          "name": "Viết: Viết bài văn phân tích một bài thơ thất ngôn bát cú hoặc tứ tuyệt Đường luật",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-8-b02-noi-nghe",
+          "name": "Nói và nghe: Trình bày ý kiến về một sản phẩm văn hóa truyền thống trong cuộc sống hiện tại",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-8-c03",
+      "name": "Bài 3: Lời sông núi",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-8-b03-doc-01",
+          "name": "Đọc: Hịch tướng sĩ",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-8-b03-doc-02",
+          "name": "Đọc: Tinh thần yêu nước của nhân dân ta",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-8-b03-doc-03",
+          "name": "Đọc: Nam quốc sơn hà",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-8-b03-tv-01",
+          "name": "Thực hành tiếng Việt: Đoạn văn diễn dịch và đoạn văn quy nạp",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-8-b03-tv-02",
+          "name": "Thực hành tiếng Việt: Đoạn văn song song và đoạn văn phối hợp",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-8-b03-viet-01",
+          "name": "Viết: Viết bài văn nghị luận về con người trong mối quan hệ với cộng đồng, đất nước",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-8-b03-noi-nghe",
+          "name": "Nói và nghe: Thảo luận về ý thức trách nhiệm với cộng đồng của học sinh",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-8-c04",
+      "name": "Bài 4: Tiếng cười trào phúng trong thơ",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 4,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-8-b04-doc-01",
+          "name": "Đọc: Lễ xướng danh khoa Đinh Dậu",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-8-b04-doc-02",
+          "name": "Đọc: Lai Tân",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-8-b04-doc-03",
+          "name": "Đọc: Một số giọng điệu của tiếng cười trong thơ trào phúng",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-8-b04-tv-01",
+          "name": "Thực hành tiếng Việt: Nghĩa của một số từ, thành ngữ Hán Việt",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-8-b04-tv-02",
+          "name": "Thực hành tiếng Việt: Sắc thái nghĩa của từ ngữ và việc lựa chọn từ ngữ",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-8-b04-viet-01",
+          "name": "Viết: Viết bài văn phân tích một tác phẩm văn học (thơ trào phúng)",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-8-b04-noi-nghe",
+          "name": "Nói và nghe: Trình bày ý kiến về ý nghĩa của tiếng cười trong đời sống",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-8-c05",
+      "name": "Bài 5: Những câu chuyện hài",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 5,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-8-b05-doc-01",
+          "name": "Đọc: Trưởng giả học làm sang",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-8-b05-doc-02",
+          "name": "Đọc: Chùm truyện cười dân gian Việt Nam",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-8-b05-doc-03",
+          "name": "Đọc: Chùm ca dao trào phúng",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-8-b05-tv-01",
+          "name": "Thực hành tiếng Việt: Câu hỏi tu từ",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-8-b05-tv-02",
+          "name": "Thực hành tiếng Việt: Nghĩa tường minh và nghĩa hàm ẩn của câu",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-8-b05-viet-01",
+          "name": "Viết: Viết bài văn nghị luận về một thói xấu của con người trong xã hội hiện đại",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-8-b05-noi-nghe",
+          "name": "Nói và nghe: Trình bày ý kiến về một thói xấu của con người trong xã hội hiện đại",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-8-c06",
+      "name": "Bài 6: Chân dung cuộc sống",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 6,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-8-b06-doc-01",
+          "name": "Đọc: Mắt sói",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-8-b06-doc-02",
+          "name": "Đọc: Lặng lẽ Sa Pa",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-8-b06-doc-03",
+          "name": "Đọc: Bếp lửa",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-8-b06-tv-01",
+          "name": "Thực hành tiếng Việt: Trợ từ",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-8-b06-tv-02",
+          "name": "Thực hành tiếng Việt: Thán từ",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-8-b06-viet-01",
+          "name": "Viết: Viết bài văn phân tích một tác phẩm văn học (truyện)",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-8-b06-noi-nghe",
+          "name": "Nói và nghe: Giới thiệu về một cuốn sách (truyện)",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-8-c07",
+      "name": "Bài 7: Tin yêu và ước vọng",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 7,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-8-b07-doc-01",
+          "name": "Đọc: Đồng chí",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-8-b07-doc-02",
+          "name": "Đọc: Lá đỏ",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-8-b07-doc-03",
+          "name": "Đọc: Những ngôi sao xa xôi",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-8-b07-tv-01",
+          "name": "Thực hành tiếng Việt",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-8-b07-viet-01",
+          "name": "Viết: Tập làm một bài thơ tự do",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-8-b07-viet-02",
+          "name": "Viết: Viết đoạn văn ghi lại cảm nghĩ về một bài thơ tự do",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-8-b07-noi-nghe",
+          "name": "Nói và nghe: Thảo luận về một vấn đề đời sống được gợi ra từ tác phẩm văn học đã học",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-8-c08",
+      "name": "Bài 8: Nhà văn và trang viết",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 8,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-8-b08-doc-01",
+          "name": "Đọc: Nhà thơ của quê hương làng cảnh Việt Nam",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-8-b08-doc-02",
+          "name": "Đọc: Đọc văn – cuộc chơi tìm ý nghĩa",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-8-b08-doc-03",
+          "name": "Đọc: Xe đêm",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-8-b08-tv-01",
+          "name": "Thực hành tiếng Việt: Thành phần biệt lập",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-8-b08-viet-01",
+          "name": "Viết: Viết bài văn phân tích một tác phẩm văn học (truyện)",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-8-b08-noi-nghe",
+          "name": "Nói và nghe: Trình bày ý kiến về văn học trong đời sống hiện nay",
+          "sortOrder": 6
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-8-c09",
+      "name": "Bài 9: Hôm nay và ngày mai",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 9,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-8-b09-doc-01",
+          "name": "Đọc: Miền châu thổ sông Cửu Long cần chuyển đổi từ sống chung sang chào đón lũ",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-8-b09-doc-02",
+          "name": "Đọc: Choáng ngợp và đau đớn những cảnh báo từ loạt phim Hành tinh của chúng ta",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-8-b09-doc-03",
+          "name": "Đọc: Diễn từ ứng khẩu của thủ lĩnh da đỏ Xi-át-tơn",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-8-b09-tv-01",
+          "name": "Thực hành tiếng Việt: Các kiểu câu phân loại theo mục đích nói",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-8-b09-tv-02",
+          "name": "Thực hành tiếng Việt: Câu phủ định và câu khẳng định",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-8-b09-viet-01",
+          "name": "Viết: Viết văn bản thuyết minh giải thích một hiện tượng tự nhiên",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-8-b09-viet-02",
+          "name": "Viết: Viết văn bản kiến nghị về một vấn đề của đời sống",
+          "sortOrder": 7
+        },
+        {
+          "id": "kntt-nguvan-8-b09-noi-nghe",
+          "name": "Nói và nghe: Thảo luận về việc tổ chức hợp lí nề nếp sinh hoạt của bản thân",
+          "sortOrder": 8
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-8-c10",
+      "name": "Bài 10: Sách - người bạn đồng hành",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 10,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-8-b10-doc-01",
+          "name": "Đọc: Thách thức đầu tiên: Đọc như một hành trình",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-8-b10-viet-01",
+          "name": "Viết: Thách thức thứ hai: Kết nối cộng đồng người đọc",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-8-b10-noi-nghe",
+          "name": "Nói và nghe: Về đích: Ngày hội với sách",
+          "sortOrder": 3
+        }
+      ]
+    }
+  ]
+}

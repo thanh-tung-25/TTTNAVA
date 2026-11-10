@@ -6,7 +6,7 @@ import {initCurriculum,selectedScope,loadCurriculum,selectContentLesson} from '.
 import {store} from './admin-questions-context.js';
 import {openImport} from './admin-questions-import.js';
 import {openWordHistory} from './admin-word-history.js';
-import {SUBJECT_NAMES as subjects} from './primary-subjects.js';
+import {subjectName} from './primary-subjects.js';
 const root=document.querySelector('#content-list'),notice=document.querySelector('#content-hub-error'),editor=document.querySelector('#content-worksheets'),filters=document.querySelector('#content-filters');
 let page=1,pages=1,requestNumber=0,openedLesson=null;
 const status={draft:'Nháp',published:'Đã đăng',hidden:'Đang ẩn'};
@@ -52,7 +52,7 @@ async function load(){
   if(item.kind==='worksheet')actions.append(button('Xóa',async()=>{const result=await removeWorksheet(item.id,item.version);if(result){notice.textContent=result.message;await load();}}));
   else actions.append(button(item.status==='published'?'Ẩn':'Đăng bài',async()=>changeStatus(item.id,item.status==='published'?'hidden':'published')));
   return el('article',{class:'content-row','data-content-id':item.id,'data-content-kind':item.kind},[
-   el('div',{class:'content-row-body'},[el('strong',{text:item.title}),el('p',{text:(item.kind==='worksheet'?'Bộ bài · '+item.item_count+' câu':'Câu hỏi đơn')+' · Lớp '+item.grade+' · '+(subjects[item.subject_id]||item.subject_id)}),el('span',{class:'content-status '+item.status,text:status[item.status]})]),actions,
+   el('div',{class:'content-row-body'},[el('strong',{text:item.title}),el('p',{text:(item.kind==='worksheet'?'Bộ bài · '+item.item_count+' câu':'Câu hỏi đơn')+' · Lớp '+item.grade+' · '+subjectName(item.subject_id,item.grade)}),el('span',{class:'content-status '+item.status,text:status[item.status]})]),actions,
   ]);
  }):[el('div',{class:'content-empty'},[el('h2',{text:'Chưa có nội dung phù hợp'}),el('p',{text:'Bấm Tạo nội dung để thêm câu hỏi hoặc bộ bài.'})])]));
  document.querySelector('#content-page').textContent='Trang '+page+'/'+pages+' · '+payload.pagination.total+' nội dung';document.querySelector('#content-prev').disabled=page<=1;document.querySelector('#content-next').disabled=page>=pages;

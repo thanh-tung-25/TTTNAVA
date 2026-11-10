@@ -2,6 +2,7 @@ import {z} from 'zod';
 import {query} from '../config/db.js';
 import {AppError} from '../utils/errors.js';
 import {seededShuffle} from '../utils/hash.js';
+import {schoolSubjectName} from '../utils/school-subjects.js';
 
 export const scopedExamSchema=z.object({mode:z.enum(['chapter','semester','annual']),subjectId:z.enum(['toan','tieng-viet','tieng-anh']),yearId:z.string().trim().min(1).max(20).optional(),chapterId:z.string().trim().min(1).max(90).optional(),semester:z.enum(['hk1','hk2']).optional()}).superRefine((d,c)=>{
  if(d.mode==='chapter'&&!d.chapterId)c.addIssue({code:'custom',path:['chapterId'],message:'Chọn chủ đề kiểm tra.'});
@@ -39,7 +40,7 @@ export async function selectScopedExam(grade,body,seed){
  const shuffled=seededShuffle([...groups.entries()].map(([id,questions])=>({id,questions:seededShuffle(questions,seed+'|'+id)})),seed+'|chapters');
  const chosen=[];while(chosen.length<count)for(const group of shuffled){const next=group.questions.pop();if(next)chosen.push(next);if(chosen.length===count)break;}
  const ordered=seededShuffle(chosen,seed+'|order');
- const subject={toan:'Toán','tieng-viet':'Tiếng Việt','tieng-anh':'Tiếng Anh'}[scope.subjectId];
+ const subject=schoolSubjectName(scope.subjectId,grade);
  const title=(scope.mode==='chapter'?'Kiểm tra '+rows[0].chapter_name:scope.mode==='semester'?'Thi thử học kì '+(scope.semester==='hk1'?'1':'2'):'Thi thử cả năm')+' · '+subject+' lớp '+grade;
  return {questionIds:ordered.map(q=>q.id),topicId:ordered[0].topic_id,title,durationSeconds:scope.mode==='chapter'?1800:scope.mode==='semester'?3000:3600,scope:{...scope,grade,yearId:selectedYear.id}};
 }

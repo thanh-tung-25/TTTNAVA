@@ -1,0 +1,466 @@
+{
+  "book": "Ngữ văn 6 · Kết nối tri thức với cuộc sống",
+  "grade": 6,
+  "yearId": "2026-2027",
+  "subjectId": "tieng-viet",
+  "sourceNote": "Mục lục đối chiếu sách và tài liệu giáo viên của NXB Giáo dục Việt Nam. Tên các phần thực hành tiếng Việt được gộp theo chủ đề; tên nhiệm vụ dài được rút gọn. Chỉ lưu tên mục học, không sao chép văn bản tác phẩm, câu hỏi hoặc lời giải.",
+  "sources": [
+    "https://sachdientu.nxbgd.vn/thu-vien-so/doc-sach/sgv-ngu-van-6-tap-1.4505054581",
+    "https://sachdientu.nxbgd.vn/thu-vien-so/doc-sach/sgv-ngu-van-6-tap-2.4505103969",
+    "https://medialib.qlgd.edu.vn/Uploads/THU_VIEN/shn/2/37/UserFiles/TLTH-Ngu-van-6-ruot-9-4-2021-KNTT-08640205-64bc-4768-8f7a-8b0a83008efd.pdf"
+  ],
+  "volumes": [
+    {
+      "id": "tap-1",
+      "name": "Tập 1",
+      "semester": "hk1"
+    },
+    {
+      "id": "tap-2",
+      "name": "Tập 2",
+      "semester": "hk2"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "kntt-nguvan-6-c01",
+      "name": "Bài 1: Tôi và các bạn",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-6-b01-doc-01",
+          "name": "Đọc: Bài học đường đời đầu tiên",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-6-b01-doc-02",
+          "name": "Đọc: Nếu cậu muốn có một người bạn...",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-6-b01-doc-03",
+          "name": "Đọc: Bắt nạt",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-6-b01-tv-01",
+          "name": "Thực hành tiếng Việt: Từ đơn, từ phức; nghĩa của từ ngữ",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-6-b01-viet-01",
+          "name": "Viết: Viết bài văn kể lại một trải nghiệm của em",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-6-b01-noi-nghe",
+          "name": "Nói và nghe: Kể lại một trải nghiệm của em",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-6-b01-doc-04",
+          "name": "Thực hành đọc: Những người bạn",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-6-c02",
+      "name": "Bài 2: Gõ cửa trái tim",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-6-b02-doc-01",
+          "name": "Đọc: Chuyện cổ tích về loài người",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-6-b02-doc-02",
+          "name": "Đọc: Mây và sóng",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-6-b02-doc-03",
+          "name": "Đọc: Bức tranh của em gái tôi",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-6-b02-tv-01",
+          "name": "Thực hành tiếng Việt: Ẩn dụ; nghĩa của từ ngữ",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-6-b02-viet-01",
+          "name": "Viết: Viết đoạn văn ghi lại cảm xúc về một bài thơ có yếu tố tự sự và miêu tả",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-6-b02-noi-nghe",
+          "name": "Nói và nghe: Trình bày ý kiến về một vấn đề trong đời sống gia đình",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-6-b02-doc-04",
+          "name": "Thực hành đọc: Những cánh buồm",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-6-c03",
+      "name": "Bài 3: Yêu thương và chia sẻ",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-6-b03-doc-01",
+          "name": "Đọc: Cô bé bán diêm",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-6-b03-doc-02",
+          "name": "Đọc: Gió lạnh đầu mùa",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-6-b03-doc-03",
+          "name": "Đọc: Con chào mào",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-6-b03-tv-01",
+          "name": "Thực hành tiếng Việt: Mở rộng thành phần chính của câu bằng cụm từ",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-6-b03-viet-01",
+          "name": "Viết: Viết bài văn kể lại một trải nghiệm của em",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-6-b03-noi-nghe",
+          "name": "Nói và nghe: Kể về một trải nghiệm của em",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-6-b03-doc-04",
+          "name": "Thực hành đọc: Lắc-ki thực sự may mắn",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-6-c04",
+      "name": "Bài 4: Quê hương yêu dấu",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 4,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-6-b04-doc-01",
+          "name": "Đọc: Chùm ca dao về quê hương đất nước",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-6-b04-doc-02",
+          "name": "Đọc: Chuyện cổ nước mình",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-6-b04-doc-03",
+          "name": "Đọc: Cây tre Việt Nam",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-6-b04-tv-01",
+          "name": "Thực hành tiếng Việt: Từ đồng âm, từ đa nghĩa; hoán dụ",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-6-b04-viet-01",
+          "name": "Viết: Tập làm một bài thơ lục bát",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-6-b04-viet-02",
+          "name": "Viết: Viết đoạn văn thể hiện cảm xúc về một bài thơ lục bát",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-6-b04-noi-nghe",
+          "name": "Nói và nghe: Trình bày suy nghĩ về tình cảm của con người với quê hương",
+          "sortOrder": 7
+        },
+        {
+          "id": "kntt-nguvan-6-b04-doc-04",
+          "name": "Thực hành đọc: Hành trình của bầy ong",
+          "sortOrder": 8
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-6-c05",
+      "name": "Bài 5: Những nẻo đường xứ sở",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 5,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-6-b05-doc-01",
+          "name": "Đọc: Cô Tô",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-6-b05-doc-02",
+          "name": "Đọc: Hang Én",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-6-b05-doc-03",
+          "name": "Đọc: Cửu Long Giang ta ơi",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-6-b05-tv-01",
+          "name": "Thực hành tiếng Việt: Dấu ngoặc kép",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-6-b05-viet-01",
+          "name": "Viết: Viết bài văn tả cảnh sinh hoạt",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-6-b05-noi-nghe",
+          "name": "Nói và nghe: Chia sẻ một trải nghiệm về nơi em sống hoặc từng đến",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-6-b05-doc-04",
+          "name": "Thực hành đọc: Nghìn năm tháp Khương Mỹ",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-6-c06",
+      "name": "Bài 6: Chuyện kể về những người anh hùng",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 6,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-6-b06-doc-01",
+          "name": "Đọc: Thánh Gióng",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-6-b06-doc-02",
+          "name": "Đọc: Sơn Tinh, Thủy Tinh",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-6-b06-doc-03",
+          "name": "Đọc: Ai ơi mồng chín tháng tư",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-6-b06-tv-01",
+          "name": "Thực hành tiếng Việt: Dấu chấm phẩy",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-6-b06-viet-01",
+          "name": "Viết: Viết bài văn thuyết minh thuật lại một sự kiện văn hóa",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-6-b06-noi-nghe",
+          "name": "Nói và nghe: Kể lại một truyền thuyết",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-6-b06-doc-04",
+          "name": "Thực hành đọc: Bánh chưng, bánh giầy",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-6-c07",
+      "name": "Bài 7: Thế giới cổ tích",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 7,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-6-b07-doc-01",
+          "name": "Đọc: Thạch Sanh",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-6-b07-doc-02",
+          "name": "Đọc: Cây khế",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-6-b07-doc-03",
+          "name": "Đọc: Vua chích chòe",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-6-b07-tv-01",
+          "name": "Thực hành tiếng Việt: Nghĩa của từ ngữ; biện pháp tu từ",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-6-b07-viet-01",
+          "name": "Viết: Viết bài văn đóng vai nhân vật kể lại một truyện cổ tích",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-6-b07-noi-nghe",
+          "name": "Nói và nghe: Kể lại một truyện cổ tích bằng lời một nhân vật",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-6-b07-doc-04",
+          "name": "Thực hành đọc: Sọ Dừa",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-6-c08",
+      "name": "Bài 8: Khác biệt và gần gũi",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 8,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-6-b08-doc-01",
+          "name": "Đọc: Xem người ta kìa!",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-6-b08-doc-02",
+          "name": "Đọc: Hai loại khác biệt",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-6-b08-doc-03",
+          "name": "Đọc: Bài tập làm văn",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-6-b08-tv-01",
+          "name": "Thực hành tiếng Việt: Trạng ngữ; lựa chọn từ ngữ và cấu trúc câu",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-6-b08-viet-01",
+          "name": "Viết: Viết bài văn trình bày ý kiến về một hiện tượng đời sống",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-6-b08-noi-nghe",
+          "name": "Nói và nghe: Trình bày ý kiến về một hiện tượng đời sống",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-6-b08-doc-04",
+          "name": "Thực hành đọc: Tiếng cười không muốn nghe",
+          "sortOrder": 7
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-6-c09",
+      "name": "Bài 9: Trái Đất - ngôi nhà chung",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 9,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-6-b09-doc-01",
+          "name": "Đọc: Trái Đất - cái nôi của sự sống",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-6-b09-doc-02",
+          "name": "Đọc: Các loài chung sống với nhau như thế nào?",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-6-b09-doc-03",
+          "name": "Đọc: Trái Đất",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-6-b09-tv-01",
+          "name": "Thực hành tiếng Việt: Văn bản và đoạn văn; từ mượn",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-6-b09-viet-01",
+          "name": "Viết: Viết biên bản một cuộc họp, cuộc thảo luận",
+          "sortOrder": 5
+        },
+        {
+          "id": "kntt-nguvan-6-b09-viet-02",
+          "name": "Viết: Tóm tắt bằng sơ đồ nội dung của một văn bản đơn giản",
+          "sortOrder": 6
+        },
+        {
+          "id": "kntt-nguvan-6-b09-noi-nghe",
+          "name": "Nói và nghe: Thảo luận về giải pháp khắc phục nạn ô nhiễm môi trường",
+          "sortOrder": 7
+        },
+        {
+          "id": "kntt-nguvan-6-b09-doc-04",
+          "name": "Thực hành đọc: Sinh vật trên Trái Đất được hình thành như thế nào?",
+          "sortOrder": 8
+        }
+      ]
+    },
+    {
+      "id": "kntt-nguvan-6-c10",
+      "name": "Bài 10: Cuốn sách tôi yêu",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 10,
+      "lessons": [
+        {
+          "id": "kntt-nguvan-6-b10-doc-01",
+          "name": "Đọc: Mỗi ngày một cuốn sách",
+          "sortOrder": 1
+        },
+        {
+          "id": "kntt-nguvan-6-b10-doc-02",
+          "name": "Đọc: Sách hay cùng đọc",
+          "sortOrder": 2
+        },
+        {
+          "id": "kntt-nguvan-6-b10-doc-03",
+          "name": "Đọc: Nhà thơ Lò Ngân Sủn - người con của núi",
+          "sortOrder": 3
+        },
+        {
+          "id": "kntt-nguvan-6-b10-viet-01",
+          "name": "Viết: Trình bày ý kiến về một hiện tượng đời sống được gợi ra từ cuốn sách đã đọc",
+          "sortOrder": 4
+        },
+        {
+          "id": "kntt-nguvan-6-b10-noi-nghe",
+          "name": "Nói và nghe: Giới thiệu cuốn sách yêu thích",
+          "sortOrder": 5
+        }
+      ]
+    }
+  ]
+}

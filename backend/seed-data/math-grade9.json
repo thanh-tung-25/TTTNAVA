@@ -1,0 +1,149 @@
+{
+  "book": "Toán 9",
+  "grade": 9,
+  "yearId": "2026-2027",
+  "sourceNote": "Mục lục do người dùng cung cấp; chưa nhập câu hỏi hoặc lời giải.",
+  "volumes": [
+    {
+      "id": "tap-1",
+      "name": "Tập 1: Phương trình - Hệ phương trình - Căn thức - Đường tròn",
+      "semester": "hk1"
+    },
+    {
+      "id": "tap-2",
+      "name": "Tập 2: Hàm số bậc hai - Phương trình bậc hai - Hình khối tròn xoay - Thống kê",
+      "semester": "hk2"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "toan-9-c01",
+      "name": "Chương I: Phương trình và hệ hai phương trình bậc nhất hai ẩn",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 1,
+      "lessons": [
+        {"id": "toan-9-b01", "name": "Bài 1: Khái niệm phương trình và hệ hai phương trình bậc nhất hai ẩn", "sortOrder": 1},
+        {"id": "toan-9-b02", "name": "Bài 2: Giải hệ hai phương trình bậc nhất hai ẩn", "sortOrder": 2},
+        {"id": "toan-9-b03", "name": "Bài 3: Giải bài toán bằng cách lập hệ phương trình", "sortOrder": 3},
+        {"id": "toan-9-c01-ltc", "name": "Luyện tập chung", "sortOrder": 4}
+      ]
+    },
+    {
+      "id": "toan-9-c02",
+      "name": "Chương II: Phương trình bậc nhất một ẩn và bất phương trình bậc nhất một ẩn",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 2,
+      "lessons": [
+        {"id": "toan-9-b04", "name": "Bài 4: Phương trình quy về phương trình bậc nhất một ẩn", "sortOrder": 1},
+        {"id": "toan-9-b05", "name": "Bài 5: Bất đẳng thức và tính chất", "sortOrder": 2},
+        {"id": "toan-9-b06", "name": "Bài 6: Bất phương trình bậc nhất một ẩn", "sortOrder": 3},
+        {"id": "toan-9-c02-ltc", "name": "Luyện tập chung", "sortOrder": 4}
+      ]
+    },
+    {
+      "id": "toan-9-c03",
+      "name": "Chương III: Căn thức bậc hai và căn thức bậc ba",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 3,
+      "lessons": [
+        {"id": "toan-9-b07", "name": "Bài 7: Căn bậc hai và căn thức bậc hai", "sortOrder": 1},
+        {"id": "toan-9-b08", "name": "Bài 8: Các phép tính với căn thức bậc hai", "sortOrder": 2},
+        {"id": "toan-9-b09", "name": "Bài 9: Biến đổi đơn giản và rút gọn biểu thức chứa căn thức bậc hai", "sortOrder": 3},
+        {"id": "toan-9-c03-ltc", "name": "Luyện tập chung", "sortOrder": 4},
+        {"id": "toan-9-b10", "name": "Bài 10: Căn bậc ba và căn thức bậc ba", "sortOrder": 5}
+      ]
+    },
+    {
+      "id": "toan-9-c04",
+      "name": "Chương IV: Hệ thức lượng trong tam giác vuông",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 4,
+      "lessons": [
+        {"id": "toan-9-b11", "name": "Bài 11: Tỉ số lượng giác của góc nhọn", "sortOrder": 1},
+        {"id": "toan-9-b12", "name": "Bài 12: Một số hệ thức giữa cạnh và góc trong tam giác vuông", "sortOrder": 2},
+        {"id": "toan-9-c04-ltc", "name": "Luyện tập chung", "sortOrder": 3}
+      ]
+    },
+    {
+      "id": "toan-9-c05",
+      "name": "Chương V: Đường tròn",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 5,
+      "lessons": [
+        {"id": "toan-9-b13", "name": "Bài 13: Đường tròn. Vị trí tương đối của hai đường tròn", "sortOrder": 1},
+        {"id": "toan-9-b14", "name": "Bài 14: Vị trí tương đối của đường thẳng và đường tròn", "sortOrder": 2},
+        {"id": "toan-9-b15", "name": "Bài 15: Độ dài đường tròn và diện tích hình tròn", "sortOrder": 3},
+        {"id": "toan-9-c05-ltc", "name": "Luyện tập chung", "sortOrder": 4}
+      ]
+    },
+    {
+      "id": "toan-9-c06",
+      "name": "Chương VI: Hàm số y = ax² (a ≠ 0). Phương trình bậc hai một ẩn",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 6,
+      "lessons": [
+        {"id": "toan-9-b16", "name": "Bài 16: Hàm số y = ax² (a ≠ 0) và đồ thị", "sortOrder": 1},
+        {"id": "toan-9-b17", "name": "Bài 17: Phương trình bậc hai một ẩn", "sortOrder": 2},
+        {"id": "toan-9-b18", "name": "Bài 18: Định lí Viète và ứng dụng", "sortOrder": 3},
+        {"id": "toan-9-c06-ltc", "name": "Luyện tập chung", "sortOrder": 4},
+        {"id": "toan-9-b19", "name": "Bài 19: Giải bài toán bằng cách lập phương trình bậc hai", "sortOrder": 5}
+      ]
+    },
+    {
+      "id": "toan-9-c07",
+      "name": "Chương VII: Đường tròn ngoại tiếp và đường tròn nội tiếp",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 7,
+      "lessons": [
+        {"id": "toan-9-b20", "name": "Bài 20: Đường tròn ngoại tiếp tam giác. Đường tròn nội tiếp tam giác", "sortOrder": 1},
+        {"id": "toan-9-b21", "name": "Bài 21: Tứ giác nội tiếp đường tròn", "sortOrder": 2},
+        {"id": "toan-9-b22", "name": "Bài 22: Đa giác đều. Đường tròn ngoại tiếp và nội tiếp đa giác đều", "sortOrder": 3},
+        {"id": "toan-9-c07-ltc", "name": "Luyện tập chung", "sortOrder": 4}
+      ]
+    },
+    {
+      "id": "toan-9-c08",
+      "name": "Chương VIII: Một số hình khối trong thực tiễn",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 8,
+      "lessons": [
+        {"id": "toan-9-b23", "name": "Bài 23: Hình trụ", "sortOrder": 1},
+        {"id": "toan-9-b24", "name": "Bài 24: Hình nón", "sortOrder": 2},
+        {"id": "toan-9-b25", "name": "Bài 25: Hình cầu", "sortOrder": 3},
+        {"id": "toan-9-c08-ltc", "name": "Luyện tập chung", "sortOrder": 4}
+      ]
+    },
+    {
+      "id": "toan-9-c09",
+      "name": "Chương IX: Tần số và tần số tương đối",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 9,
+      "lessons": [
+        {"id": "toan-9-b26", "name": "Bài 26: Tần số và biểu đồ tần số", "sortOrder": 1},
+        {"id": "toan-9-b27", "name": "Bài 27: Tần số tương đối và biểu đồ tần số tương đối", "sortOrder": 2},
+        {"id": "toan-9-c09-ltc", "name": "Luyện tập chung", "sortOrder": 3}
+      ]
+    },
+    {
+      "id": "toan-9-c10",
+      "name": "Chương X: Xác suất của biến cố trong một số mô hình đơn giản",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 10,
+      "lessons": [
+        {"id": "toan-9-b28", "name": "Bài 28: Phép thử ngẫu nhiên và không gian mẫu", "sortOrder": 1},
+        {"id": "toan-9-b29", "name": "Bài 29: Xác suất của biến cố", "sortOrder": 2},
+        {"id": "toan-9-c10-ltc", "name": "Luyện tập chung", "sortOrder": 3}
+      ]
+    }
+  ]
+}

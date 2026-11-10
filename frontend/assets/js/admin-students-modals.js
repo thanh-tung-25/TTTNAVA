@@ -22,12 +22,12 @@ export function openCreate() {
       <input class="input" id="new-password" name="password" type="password" autocomplete="new-password" maxlength="72" minlength="6" placeholder="Ít nhất 6 ký tự" required></div>
     <div class="grid grid-2">
       <div class="field"><label for="new-grade">Lớp</label>
-        <select class="select" id="new-grade" name="grade"><option value="">Tiếng Trung — không theo lớp 1–5</option>${[1, 2, 3, 4, 5].map((grade) => `<option value="${grade}">Lớp ${grade}</option>`).join('')}</select></div>
+        <select class="select" id="new-grade" name="grade"><option value="">Tiếng Trung — không theo khối lớp</option>${Array.from({length:9},(_,i)=>i+1).map((grade) => `<option value="${grade}">Lớp ${grade}${grade>5?' · THCS':''}</option>`).join('')}</select></div>
       <div class="field"><label for="new-avatar">Ảnh đại diện</label>
         <select class="select" id="new-avatar" name="avatarKey">${avatarOptions('meo')}</select></div>
     </div>`;
   setupPasswordToggle(form.querySelector('#new-password'));
-  form.querySelector('#new-grade').value = new URLSearchParams(location.search).get('program') === 'chinese' ? '' : '1';
+  form.querySelector('#new-grade').value = store.program==='chinese'?'':store.program==='secondary'?'6':'1';
   const modal = openModal({
     title: 'Thêm học sinh',
     content: form,
@@ -75,7 +75,7 @@ export async function openEdit(id) {
         <input class="input" id="edit-name" name="displayName" maxlength="60" value="${escapeHtml(student.displayName)}" required></div>
       <div class="grid grid-2">
         <div class="field"><label for="edit-grade">Lớp</label>
-          <select class="select" id="edit-grade" name="grade"><option value="">Tiếng Trung — không theo lớp 1–5</option>${[1, 2, 3, 4, 5].map((grade) => `<option value="${grade}"${grade === student.grade ? ' selected' : ''}>Lớp ${grade}</option>`).join('')}</select></div>
+          <select class="select" id="edit-grade" name="grade"><option value="">Tiếng Trung — không theo khối lớp</option>${Array.from({length:9},(_,i)=>i+1).map((grade) => `<option value="${grade}"${grade === student.grade ? ' selected' : ''}>Lớp ${grade}${grade>5?' · THCS':''}</option>`).join('')}</select></div>
         <div class="field"><label for="edit-avatar">Ảnh đại diện</label>
           <select class="select" id="edit-avatar" name="avatarKey">${avatarOptions(student.avatarKey)}</select></div>
       </div>

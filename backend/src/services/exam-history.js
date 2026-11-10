@@ -2,6 +2,7 @@ import { query, dialectSql } from '../config/db.js';
 import { toIso } from '../utils/time.js';
 import { EXAM_GRACE_SECONDS } from './exam-constants.js';
 import { finalizeAttempt } from './exam-finalize.js';
+import {schoolSubjectName} from '../utils/school-subjects.js';
 
 async function finalizeOverdueForStudent(studentId) {
   const rows = await query(
@@ -20,7 +21,7 @@ export async function listExamHistory(studentId, page, limit) {
   await finalizeOverdueForStudent(studentId);
   const offset = (page - 1) * limit;
   const rows = await query(
-    `SELECT ea.*, COALESCE(ea.exam_title,t.name) AS topic_name, t.grade, s.name AS subject_name,
+    `SELECT ea.*, COALESCE(ea.exam_title,t.name) AS topic_name, t.grade, t.subject_id, s.name AS subject_name,
             COALESCE((SELECT SUM(dl.amount) FROM diamond_ledger dl
                       WHERE dl.profile_id = ea.student_id AND dl.ref_type = 'exam' AND dl.ref_id = ea.id), 0) AS diamonds
      FROM exam_attempts ea
@@ -38,7 +39,7 @@ export async function listExamHistory(studentId, page, limit) {
       status: row.status,
       topicName: row.topic_name,
       grade: Number(row.grade),
-      subjectName: row.subject_name,
+      subjectName: schoolSubjectName(row.subject_id,row.grade,row.subject_name),
       totalQuestions: Number(row.total_questions),
       answeredCount: Number(row.answered_count),
       correctCount: Number(row.correct_count),

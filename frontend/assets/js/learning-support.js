@@ -8,7 +8,7 @@ let report;
 async function today(){
  const d=(await api('/api/v1/learning/today')).data;
  out.replaceChildren(el('div',{class:'support-hero'},[el('img',{src:'/assets/images/mascot-panda.svg',alt:'',width:100,height:100}),el('div',{},[el('h2',{text:d.course.title}),el('p',{text:d.reason})])]));
- if(d.kind==='primary'){
+ if(['primary','secondary'].includes(d.kind)){
   if(!d.topic){out.append(card('Đang chờ nội dung',[el('p',{text:'Khóa này chưa có chủ đề đủ 10 câu. Hãy quay lại mục Học tập để xem nội dung đã có.'}),link('Về học tập','/pages/student/learning/')]));return;}
   const start=el('button',{class:'btn btn-primary',type:'button',text:d.recent?.status==='in_progress'?'Tiếp tục 10 câu':d.recent?.status==='finished'?'Luyện thêm 10 câu':'Bắt đầu 10 câu'});
   start.onclick=async()=>{start.disabled=true;try{location.assign((await api('/api/v1/learning/today/start',{method:'POST'})).data.href);}catch(e){notice.textContent=e.message;start.disabled=false;}};

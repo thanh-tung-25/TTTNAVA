@@ -1,0 +1,350 @@
+{
+  "book": "Tiếng Anh 9 · Global Success",
+  "grade": 9,
+  "subjectId": "tieng-anh",
+  "yearId": "2026-2027",
+  "sourceNote": "Khung mục lục 12 Unit và 4 Review của Global Success, đối chiếu Book Map/tài liệu NXB và các mục ngữ pháp trong sách. Chỉ lưu chủ đề từ vựng và tên các điểm ngữ pháp trọng tâm; không phải toàn bộ 7 tiết của mỗi Unit, không có danh sách từ đầy đủ, bài giảng, câu hỏi hoặc đáp án. Chia Học kì 1 / Học kì 2 theo hai học kì để dùng chung cấu trúc ứng dụng.",
+  "sources": [
+    "https://medialib.qlgd.edu.vn/Uploads/THU_VIEN/shn/2/931/UserFiles/Tieng-Anh-9-Sach-Hoc-Sinh-Global-Success---Ket-Noi-Tri-Thuc-Voi-Cuoc-Song-4f0528d5-8278-49b7-8e21-a82a18d3ccf5.pdf",
+    "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-tieng-anh-9-global-success.4879734378",
+    "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgv-tieng-anh-9-global-success.4923774109"
+  ],
+  "volumes": [
+    {
+      "id": "tap-1",
+      "name": "Học kì 1",
+      "semester": "hk1"
+    },
+    {
+      "id": "tap-2",
+      "name": "Học kì 2",
+      "semester": "hk2"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "gs-tieng-anh-9-u01",
+      "name": "Unit 1: Local Community",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-u01-vocabulary",
+          "name": "Vocabulary: Community helpers and traditional handicrafts",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-u01-grammar-01",
+          "name": "Grammar: Question words before to-infinitives",
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-tieng-anh-9-u01-grammar-02",
+          "name": "Grammar: Phrasal verbs (1)",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-9-u02",
+      "name": "Unit 2: City Life",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-u02-vocabulary",
+          "name": "Vocabulary: City life (Cuộc sống thành thị)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-u02-grammar-01",
+          "name": "Grammar: Double comparatives",
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-tieng-anh-9-u02-grammar-02",
+          "name": "Grammar: Phrasal verbs (2)",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-9-u03",
+      "name": "Unit 3: Healthy Living for Teens",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-u03-vocabulary",
+          "name": "Vocabulary: Students' life and schoolwork",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-u03-grammar-01",
+          "name": "Grammar: Modal verbs in first conditional sentences",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-9-r01",
+      "name": "Review 1: Units 1–3",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 4,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-r01-language",
+          "name": "Language: Ôn tập kiến thức ngôn ngữ",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-r01-skills",
+          "name": "Skills: Ôn tập kĩ năng",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-9-u04",
+      "name": "Unit 4: Remembering the Past",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 5,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-u04-vocabulary",
+          "name": "Vocabulary: Life in the past and preserving past values",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-u04-grammar-01",
+          "name": "Grammar: Past continuous",
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-tieng-anh-9-u04-grammar-02",
+          "name": "Grammar: Wish + past simple",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-9-u05",
+      "name": "Unit 5: Our Experiences",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 6,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-u05-vocabulary",
+          "name": "Vocabulary: Experiences and adjectives describing experiences",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-u05-grammar-01",
+          "name": "Grammar: Present perfect",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-9-u06",
+      "name": "Unit 6: Vietnamese Lifestyle: Then and Now",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 7,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-u06-vocabulary",
+          "name": "Vocabulary: Changes in lifestyles (Thay đổi lối sống)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-u06-grammar-01",
+          "name": "Grammar: Verbs + to-infinitive",
+          "sortOrder": 2
+        },
+        {
+          "id": "gs-tieng-anh-9-u06-grammar-02",
+          "name": "Grammar: Verbs + V-ing",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-9-r02",
+      "name": "Review 2: Units 4–6",
+      "volumeId": "tap-1",
+      "semester": "hk1",
+      "sortOrder": 8,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-r02-language",
+          "name": "Language: Ôn tập kiến thức ngôn ngữ",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-r02-skills",
+          "name": "Skills: Ôn tập kĩ năng",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-9-u07",
+      "name": "Unit 7: Natural Wonders of the World",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 9,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-u07-vocabulary",
+          "name": "Vocabulary: Natural wonders (Kì quan thiên nhiên)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-u07-grammar-01",
+          "name": "Grammar: Reported speech: Yes/No questions",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-9-u08",
+      "name": "Unit 8: Tourism",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 10,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-u08-vocabulary",
+          "name": "Vocabulary: Tourism (Du lịch)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-u08-grammar-01",
+          "name": "Grammar: Relative pronouns",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-9-u09",
+      "name": "Unit 9: World Englishes",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 11,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-u09-vocabulary",
+          "name": "Vocabulary: Languages and English language learning",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-u09-grammar-01",
+          "name": "Grammar: Defining relative clauses",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-9-r03",
+      "name": "Review 3: Units 7–9",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 12,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-r03-language",
+          "name": "Language: Ôn tập kiến thức ngôn ngữ",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-r03-skills",
+          "name": "Skills: Ôn tập kĩ năng",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-9-u10",
+      "name": "Unit 10: Planet Earth",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 13,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-u10-vocabulary",
+          "name": "Vocabulary: Planet Earth, habitats, flora and fauna",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-u10-grammar-01",
+          "name": "Grammar: Non-defining relative clauses",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-9-u11",
+      "name": "Unit 11: Electronic Devices",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 14,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-u11-vocabulary",
+          "name": "Vocabulary: Electronic devices (Thiết bị điện tử)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-u11-grammar-01",
+          "name": "Grammar: suggest / advise / recommend + V-ing or a clause with should",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-9-u12",
+      "name": "Unit 12: Career Choices",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 15,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-u12-vocabulary",
+          "name": "Vocabulary: Jobs and career choices (Nghề nghiệp)",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-u12-grammar-01",
+          "name": "Grammar: Adverbial clauses of concession, result and reason",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gs-tieng-anh-9-r04",
+      "name": "Review 4: Units 10–12",
+      "volumeId": "tap-2",
+      "semester": "hk2",
+      "sortOrder": 16,
+      "lessons": [
+        {
+          "id": "gs-tieng-anh-9-r04-language",
+          "name": "Language: Ôn tập kiến thức ngôn ngữ",
+          "sortOrder": 1
+        },
+        {
+          "id": "gs-tieng-anh-9-r04-skills",
+          "name": "Skills: Ôn tập kĩ năng",
+          "sortOrder": 2
+        }
+      ]
+    }
+  ]
+}

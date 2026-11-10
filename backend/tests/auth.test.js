@@ -47,6 +47,13 @@ describe('Xác thực và phân quyền', () => {
     expect(response.body.error.code).toBe('ACCOUNT_LOCKED');
   });
 
+  test('does not reveal a locked account without the correct password', async () => {
+    const wrong = await loginAs(locked.username, 'NotThePassword123!');
+    const missing = await loginAs('missing_auth_student', 'NotThePassword123!');
+    expect(wrong.response.status).toBe(401);
+    expect(wrong.response.body).toEqual(missing.response.body);
+  });
+
   test('test_auth_me_requires_cookie', async () => {
     const response = await request(app).get('/api/v1/auth/me');
     expect(response.status).toBe(401);

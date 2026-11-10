@@ -14,9 +14,11 @@ function toolCard([title, text, href, symbol]) {
 async function load() {
   const profile = await initPage('student', 'learning');
   const chinese = profile.course?.kind === 'chinese';
+  const secondary = profile.course?.kind === 'secondary';
+  document.body.dataset.program=profile.course?.kind||'';
   const title = profile.course?.title || (chinese ? 'Tiếng Trung HSK '+profile.course.level : 'Lớp '+profile.grade);
   document.getElementById('learning-course').textContent = title;
-  document.getElementById('learning-description').textContent = chinese ? 'Học từ mới, ôn thẻ và tự tin chinh phục tiếng Trung.' : 'Toán, Tiếng Việt và Tiếng Anh — cùng khám phá từng bài học.';
+  document.getElementById('learning-description').textContent = chinese ? 'Học từ mới, ôn thẻ và tự tin chinh phục tiếng Trung.' : secondary ? 'Toán, Ngữ văn và Tiếng Anh — khám phá bài học và luyện tập trong khối THCS.' : 'Toán, Tiếng Việt và Tiếng Anh — cùng khám phá từng bài học.';
   document.getElementById('learning-mascot').src = '/assets/images/mascot-'+(chinese?'panda':'owl')+'.svg';
   const subjects = chinese ? [
     {title:'Bài học HSK '+profile.course.level,text:'Khám phá bài học và học bằng thẻ lật.',href:'/pages/student/chinese/',animal:'panda',symbol:'文',tone:'learning-purple'},
@@ -30,6 +32,14 @@ async function load() {
     document.getElementById('learning-subjects-title').textContent = 'Cùng học Tiếng Trung';
     document.getElementById('learning-subjects-hint').textContent = 'Nội dung thuộc khóa '+title+' của con.';
     document.getElementById('learning-tools-title').textContent = 'Kiểm tra và theo dõi tiến bộ';
+  }
+  if(secondary){
+    document.getElementById('learning-subjects-title').textContent='Môn học THCS';
+    document.getElementById('learning-subjects-hint').textContent=profile.grade===9?'Toán, Ngữ văn học theo tập sách; Tiếng Anh học theo học kì, Unit và Review.':'Ngữ văn học theo tập sách; Tiếng Anh học theo học kì, Unit và Review. Nội dung Toán đang được bổ sung.';
+    subjects[0].text=profile.grade===9?'Phương trình, căn thức, hình học, thống kê và xác suất.':'Xem các bài Toán đã được chuẩn bị cho lớp của bạn.';
+    subjects[1].title='Ngữ văn';
+    subjects[1].text='Đọc hiểu, thực hành tiếng Việt, viết, nói và nghe theo từng bài học.';
+    subjects[2].text='Từ vựng, ngữ pháp và ôn tập theo Unit, Review của Global Success.';
   }
   document.getElementById('learning-subjects').replaceChildren(...subjects.map(subjectCard));
   const tools = chinese ? [

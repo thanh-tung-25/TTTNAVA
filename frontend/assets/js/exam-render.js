@@ -2,15 +2,17 @@ import {loadExamCatalog} from './exam-catalog-view.js';
 import {attachQuestionAudio,withChoiceAudio} from './question-audio.js';
 import { api, escapeHtml } from '/assets/js/api.js';
 import { TYPE_LABELS } from '/assets/js/ui.js';
+import {subjectsFor} from './primary-subjects.js';
 import {
-  SUBJECTS,
   elements,
   store,
 } from './exam-context.js';
 import { flushSave, queueSave } from './exam-save.js';
 
 function renderTabs() {
-  elements.subjectTabs.innerHTML = SUBJECTS.map(([id, name, icon]) => (
+  const subjects=subjectsFor(store.profile);
+  if(!subjects.some(([id])=>id===store.subjectId))store.subjectId=subjects[0][0];
+  elements.subjectTabs.innerHTML = subjects.map(([id, name, icon]) => (
     `<button class="tab" type="button" role="tab" data-subject="${id}" aria-selected="${id === store.subjectId}">${icon} ${name}</button>`
   )).join('');
 }

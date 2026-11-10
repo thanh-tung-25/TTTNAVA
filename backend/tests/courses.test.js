@@ -19,8 +19,8 @@ describe('Course purchases and enforced access',()=>{
   await query('DELETE FROM chinese_attempts WHERE id=?',[attempt]);await query('DELETE FROM chinese_items WHERE id=?',[item]);await query('DELETE FROM chinese_sets WHERE id=?',[set]);await query('DELETE FROM chinese_lessons WHERE id=?',[lesson]);
   for(const c of saved)await query('UPDATE courses SET price_vnd=?,duration_days=?,payment_instructions=?,active=? WHERE id=?',[c.price_vnd,c.duration_days,c.payment_instructions,c.active,c.id]);
  });
- it('new students see all fourteen courses but have no rights; APIs and direct pages block',async()=>{
-  const catalog=await student.get(base);expect(catalog.status).toBe(200);expect(catalog.body.data).toHaveLength(14);expect(catalog.body.data.every(c=>!c.unlocked)).toBe(true);
+ it('new students see all eighteen courses but have no rights; APIs and direct pages block',async()=>{
+  const catalog=await student.get(base);expect(catalog.status).toBe(200);expect(catalog.body.data).toHaveLength(18);expect(catalog.body.data.every(c=>!c.unlocked)).toBe(true);
   expect((await student.get(base+'/grade-2/access')).status).toBe(403);
   expect((await student.get('/pages/student/home/')).headers.location).toBe('/pages/student/courses/');
   expect((await student.get('/api/v1/catalog/topics?subjectId=toan&grade=2')).status).toBe(403);

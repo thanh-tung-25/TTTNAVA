@@ -4,6 +4,7 @@ import { shuffleQuestionForClient } from '../utils/hash.js';
 import { parseJson } from '../utils/normalize.js';
 import { praiseForPercent } from '../utils/answers.js';
 import { toIso } from '../utils/time.js';
+import {schoolSubjectName} from '../utils/school-subjects.js';
 
 export async function ownedSession(studentId, sessionId) {
   const rows = await query(
@@ -98,7 +99,7 @@ export async function sessionState(studentId, sessionId) {
       name: session.topic_name,
       grade: Number(session.grade),
       subjectId: session.subject_id,
-      subjectName: session.subject_name,
+      subjectName: schoolSubjectName(session.subject_id,session.grade,session.subject_name),
     },
     totalQuestions: total,
     answeredCount: Number(session.answered_count),

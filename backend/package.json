@@ -12,6 +12,7 @@
     "start": "node src/server.js",
     "db:migrate": "node scripts/migrate.js",
     "db:seed-catalog": "node scripts/seed-catalog.js",
+    "db:seed-secondary": "node scripts/seed-secondary.js",
     "migration:inventory": "node scripts/platform-migration-export.mjs",
     "migration:export": "node scripts/platform-migration-export.mjs --export",
     "migration:verify": "node scripts/platform-migration-verify.mjs",

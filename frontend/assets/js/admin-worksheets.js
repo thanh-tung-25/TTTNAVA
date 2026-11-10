@@ -5,9 +5,10 @@ import {answerFields,collectFields} from './worksheet-fields.js';
 import {loadReviews} from './admin-worksheet-reviews.js';
 import {store} from './admin-questions-context.js';
 import {selectedScope} from './admin-content-curriculum.js';
-import {SUBJECTS} from './primary-subjects.js';
+import {SUBJECTS,subjectName} from './primary-subjects.js';
+import {adminGrades} from './admin-permissions.js';
 const base='/api/v1/worksheets',workspace=document.querySelector('#ws-workspace'),notice=document.querySelector('#ws-notice'),dialog=document.querySelector('#ws-preview');
-let sheet=null,index=0,dirty=false,previewAnswer,previewItem;
+let sheet=null,index=0,dirty=false,previewAnswer,previewItem,availableGrades=adminGrades();
 const button=(text,fn,ghost=false)=>el('button',{type:'button',class:'btn'+(ghost?' btn-ghost':''),text,onclick:()=>Promise.resolve().then(fn).catch(fail)});
 function fail(e){notice.textContent=e.message+(e.details?.some?.(d=>d.path?.[0]==='items')?' — Kiểm tra đề bài và đáp án của từng câu.':'');}
 async function list(){
@@ -40,8 +41,10 @@ function render(){
  if(scope?.lessonId&&scope.lessonId!==sheet.lesson_id)placement.append(button('Xếp vào bài đang chọn',()=>{commit();sheet.lesson_id=scope.lessonId;sheet.grade=scope.grade;sheet.subject_id=scope.subjectId;dirty=true;render();},true));
  if(!sheet.lesson_id)placement.append(el('p',{class:'muted',text:'Chọn đến bài học trong chương trình ở trên, mở lại bộ bài và bấm Xếp vào bài đang chọn.'}));
  const meta=el('div',{class:'worksheet-meta'},[field('Tên bộ bài','title',sheet.title),field('Lớp','grade','','select'),field('Môn học','subject_id','','select')]);
- const grades=meta.querySelector('[name=grade]');for(let n=1;n<=5;n++)grades.append(el('option',{value:n,text:'Lớp '+n}));grades.value=sheet.grade;
- const subjects=meta.querySelector('[name=subject_id]');for(const [id,title]of SUBJECTS)subjects.append(el('option',{value:id,text:title}));subjects.value=sheet.subject_id;
+ const grades=meta.querySelector('[name=grade]');for(const n of store.tree?.grades.map(g=>g.grade)||availableGrades)grades.append(el('option',{value:n,text:'Lớp '+n}));grades.value=sheet.grade;
+ const subjects=meta.querySelector('[name=subject_id]');
+ const labelSubjects=()=>{const selected=subjects.value||sheet.subject_id;subjects.replaceChildren(...SUBJECTS.map(([id])=>el('option',{value:id,text:subjectName(id,grades.value)})));subjects.value=selected;};
+ labelSubjects();grades.onchange=labelSubjects;
  if(sheet.lesson_id){grades.disabled=true;subjects.disabled=true;}
  const tabs=el('div',{class:'worksheet-question-tabs','aria-label':'Các câu hỏi'});
  sheet.items.forEach((item,n)=>{const b=button('Câu '+(n+1),()=>{commit();index=n;render();},true);if(n===index)b.setAttribute('aria-current','true');tabs.append(b);});
@@ -71,7 +74,7 @@ document.querySelector('#ws-preview-close').onclick=()=>dialog.close();
 document.querySelector('#ws-preview-check').onclick=async()=>{try{const {data}=await api(base+'/admin/preview',{method:'POST',body:{item:previewItem,answer:previewAnswer}});document.querySelector('#ws-preview-feedback').replaceChildren(resultBlock(data));}catch(e){document.querySelector('#ws-preview-feedback').textContent=e.message+' — Nhập đủ đề bài, cấu hình và đáp án trước khi xem thử.';}};
 export async function createWorksheet(scope=selectedScope()){
  if(dirty&&!confirm('Bỏ thay đổi chưa lưu để tạo bộ mới?'))return;
- sheet=(await api(base+'/admin',{method:'POST',body:{title:'Bộ bài tập mới',grade:scope?.grade||1,subject_id:scope?.subjectId||'toan',lesson_id:scope?.lessonId||null,status:'draft',items:[]}})).data;index=0;dirty=false;render();await list();
+ sheet=(await api(base+'/admin',{method:'POST',body:{title:'Bộ bài tập mới',grade:scope?.grade||store.tree?.grades[0]?.grade||availableGrades[0],subject_id:scope?.subjectId||'toan',lesson_id:scope?.lessonId||null,status:'draft',items:[]}})).data;index=0;dirty=false;render();await list();
  return true;
 }
 document.querySelector('#ws-new').onclick=()=>createWorksheet().catch(fail);
@@ -79,4 +82,4 @@ document.querySelector('#ws-review-tab').onclick=()=>{document.querySelector('#w
 document.querySelector('#ws-edit-tab').onclick=()=>{document.querySelector('#ws-authoring').hidden=false;document.querySelector('#ws-reviews').hidden=true;};
 window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
 document.addEventListener('curriculum:selected',()=>{if(sheet){commit();render();}});
-if(document.body.dataset.contentHub!=='unified')initPage('admin','worksheets').then(list).catch(fail);
+if(document.body.dataset.contentHub!=='unified')initPage('admin','worksheets').then(profile=>{availableGrades=adminGrades(profile);return list();}).catch(fail);

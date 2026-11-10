@@ -8,7 +8,7 @@ import { adminScopeOf } from '../utils/admin-permissions.js';
 import { usernameToEmail } from '../utils/normalize.js';
 import { writeAdminAudit } from './admin-audit.js';
 
-const scopeSchema = z.enum(['super','chinese','primary']);
+const scopeSchema = z.enum(['super','chinese','primary','secondary']);
 const passwordSchema = z.string().min(10).max(72).refine(value => Buffer.byteLength(value,'utf8') <= 72, 'Mật khẩu tối đa 72 byte.');
 const createSchema = z.object({
   username: z.string().trim().toLowerCase().min(3).max(20).regex(/^[a-z0-9_]+$/),

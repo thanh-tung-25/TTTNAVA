@@ -4,7 +4,7 @@ import {createTestUser,loginStudent,app} from './helpers/index.js';
 import request from 'supertest';
 import {query} from '../src/config/db.js';
 const users=[],agents=[];let direct,group,message,reportId;
-beforeAll(async()=>{for(const options of [{},{},{},{role:'admin'},{role:'admin',adminScope:'primary'},{role:'admin',adminScope:'chinese'}]){const u=await createTestUser(options);users.push(u);agents.push(await loginStudent(u));}});
+beforeAll(async()=>{for(const options of [{creatorScope:'chinese'},{creatorScope:'chinese'},{creatorScope:'chinese'},{role:'admin'},{role:'admin',adminScope:'primary'},{role:'admin',adminScope:'chinese'}]){const u=await createTestUser(options);users.push(u);agents.push(await loginStudent(u));}});
 afterAll(async()=>{for(const u of users)await query('DELETE FROM profiles WHERE id=?',[u.id]);});
 const base='/api/v1/chat';
 const connect=async(a,b)=>{expect((await agents[a].put(base+'/friends/'+users[b].id).send({action:'request'})).status).toBe(200);expect((await agents[b].put(base+'/friends/'+users[a].id).send({action:'accept'})).status).toBe(200);};

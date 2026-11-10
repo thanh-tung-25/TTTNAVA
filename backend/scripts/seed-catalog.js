@@ -2,6 +2,9 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import mysql from 'mysql2/promise';
 import env from '../src/config/env.js';
+import { seedSecondaryCatalog } from './lib/seed-secondary.mjs';
+import { seedLiteratureCatalog } from './lib/seed-literature.mjs';
+import { seedSecondaryEnglishCatalog } from './lib/seed-english-secondary.mjs';
 
 async function readJson(file) {
   return JSON.parse(await fs.readFile(path.join(env.backendRoot, 'seed-data', file), 'utf8'));
@@ -164,10 +167,13 @@ async function main() {
         }
       }
     }
+    const secondary = await seedSecondaryCatalog((sql,params)=>connection.query(sql,params));
+    const literature = await seedLiteratureCatalog((sql,params)=>connection.query(sql,params));
+    const secondaryEnglish = await seedSecondaryEnglishCatalog((sql,params)=>connection.query(sql,params));
     await connection.commit();
     console.log(
       `Đã đồng bộ ${subjects.length} môn, ${topics.length} chủ đề, `
-      + `${curriculum.chapters.length} chương và ${curriculum.lessons.length} bài học cũ; khung Toán 1–5 Kết nối tri thức gồm ${bookChapterCount} chủ đề, ${bookLessonCount} bài; Tiếng Việt 1 gồm ${vietnamese.chapters.length} chủ đề, ${vietnameseLessons.length} bài; Tiếng Việt 2–5 gồm ${vietnamesePrimaryChapters} chủ đề, ${vietnamesePrimaryLessons} bài/bộ ôn tập; Tiếng Anh 1–5 gồm ${englishChapters} chủ đề, ${englishLessons} bộ. Không nhập câu hỏi mẫu.`,
+      + `${curriculum.chapters.length} chương và ${curriculum.lessons.length} bài học cũ; khung Toán 1–5 Kết nối tri thức gồm ${bookChapterCount} chủ đề, ${bookLessonCount} bài; Tiếng Việt 1 gồm ${vietnamese.chapters.length} chủ đề, ${vietnameseLessons.length} bài; Tiếng Việt 2–5 gồm ${vietnamesePrimaryChapters} chủ đề, ${vietnamesePrimaryLessons} bài/bộ ôn tập; Tiếng Anh 1–5 gồm ${englishChapters} chủ đề, ${englishLessons} bộ; THCS có ${secondary.courses} khóa lớp 6–9 và Toán 9 có ${secondary.chapters} chương, ${secondary.lessons} bài/mục luyện tập; Ngữ văn 6–9 có ${literature.chapters} bài, ${literature.lessons} mục học; Tiếng Anh 6–9 có ${secondaryEnglish.chapters} Unit/Review, ${secondaryEnglish.lessons} mục học. Không nhập câu hỏi mẫu.`,
     );
   } catch (error) {
     await connection.rollback();

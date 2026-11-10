@@ -12,7 +12,7 @@ const configs={
  drawing:z.object({}),
 };
 const answers={fill:z.object({accepted:list}),word:z.object({accepted:list}),choice:z.object({index:z.number().int().min(0).max(5)}),compare:z.object({value:z.enum(['<','>','='])}),blanks:z.object({values:list}),ordering:z.object({values:list}),matching:z.object({values:list}),column:z.object({}),drawing:z.object({})};
-export const sheetSchema=z.object({title:z.string().trim().min(1).max(180),grade:z.number().int().min(1).max(5),subject_id:z.enum(['toan','tieng-viet','tieng-anh']),status:z.enum(['draft','published','hidden']),version:z.number().int().min(1).optional(),items:z.array(z.object({id:z.string().uuid(),type:z.enum(Object.keys(configs)),prompt:z.string().trim().min(1).max(3000),explanation:z.string().trim().max(4000).default(''),imageId:z.string().uuid().nullable().default(null),config:z.any(),answer:z.any()})).max(50)});
+export const sheetSchema=z.object({title:z.string().trim().min(1).max(180),grade:z.number().int().min(1).max(9),subject_id:z.enum(['toan','tieng-viet','tieng-anh']),status:z.enum(['draft','published','hidden']),version:z.number().int().min(1).optional(),items:z.array(z.object({id:z.string().uuid(),type:z.enum(Object.keys(configs)),prompt:z.string().trim().min(1).max(3000),explanation:z.string().trim().max(4000).default(''),imageId:z.string().uuid().nullable().default(null),config:z.any(),answer:z.any()})).max(50)});
 export function validateSheet(body){
  const d=sheetSchema.parse(body);
  d.lesson_id=z.string().trim().min(1).max(90).nullable().optional().parse(body.lesson_id)??null;

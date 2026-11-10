@@ -1,5 +1,15 @@
 # TTNAVA
 
+Đã bổ sung **khối THCS (lớp 6–9)**, với mục lục Toán 9 gồm 2 tập, 10 chương,
+29 bài và 10 mục Luyện tập chung theo nội dung người dùng cung cấp.
+Xem [hướng dẫn THCS và cập nhật dữ liệu](docs/secondary-school.md).
+
+Khối THCS có thêm **Ngữ văn 6–9 — Kết nối tri thức với cuộc sống**:
+40 chủ đề và 273 mục học, được đối chiếu lại từ nguồn sách/tài liệu NXB.
+
+**Tiếng Anh 6–9 — Global Success** có 12 Unit và 4 Review mỗi lớp,
+tách 151 mục từ vựng/ngữ pháp trọng tâm và ôn tập theo hai học kì.
+
 Ứng dụng web trắc nghiệm dành cho học sinh tiểu học, giao diện tiếng Việt, xây dựng bằng HTML/CSS/JavaScript thuần, Express, MySQL/MariaDB và Socket.IO.
 
 - **Học sinh:** luyện tập theo chủ đề, thi thử có giới hạn thời gian, thách đấu Robot hoặc bạn bè 1–1 theo thời gian thực, xem lịch sử, kim cương và bảng xếp hạng.

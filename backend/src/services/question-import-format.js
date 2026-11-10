@@ -30,12 +30,12 @@ export function parseMetadata(lines) {
       metadata.subjectName = value;
       const slug = normalizeLabel(value);
       if (slug.includes('toán') || slug === 'toan') metadata.subjectId = 'toan';
-      if (slug.includes('việt') || slug.includes('viet')) metadata.subjectId = 'tieng-viet';
+      if (slug.includes('việt') || slug.includes('viet') || /ngữ\s*văn|ngu\s*van/.test(slug)) metadata.subjectId = 'tieng-viet';
       if (slug.includes('anh')) metadata.subjectId = 'tieng-anh';
     } else if (key.startsWith('chủ') || key.startsWith('chu') || key === 'topic') {
       metadata.topicName = value;
     } else {
-      const grade = Number(value.match(/[1-5]/)?.[0]);
+      const grade = Number(value.match(/\b([1-9])\b/)?.[1]);
       if (grade) metadata.grade = grade;
     }
   }

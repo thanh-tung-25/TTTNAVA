@@ -12,6 +12,7 @@ import {
   markStarted,
 } from './challenge-store.js';
 import { finalizeChallenge } from './challenge-play.js';
+import {schoolSubjectName} from '../utils/school-subjects.js';
 
 async function markRows(challengeId, profileId) {
   const rows = await query(
@@ -121,7 +122,7 @@ export async function buildState(profileId, challengeId) {
       id: challenge.topic_id,
       name: challenge.topic_name,
       subjectId: challenge.subject_id,
-      subjectName: challenge.subject_name,
+      subjectName: schoolSubjectName(challenge.subject_id,challenge.grade,challenge.subject_name),
       subjectColor: challenge.subject_color,
       grade: Number(challenge.grade),
     },

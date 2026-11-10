@@ -36,7 +36,7 @@ async function stub(page,scope){
 for(const scope of ['chinese','primary'])test(`${scope} sees only their program and cannot edit student accounts`,async({page})=>{
  await stub(page,scope);const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/pages/admin/students/');
- await expect(page.locator('#app-header .nav-link')).toHaveCount(scope==='chinese'?3:4);
+ await expect(page.locator('#app-header .nav-link')).toHaveCount(scope==='chinese'?4:5);
  await expect(page.locator('#app-header')).not.toContainText('Khóa học & thanh toán');
  await expect(page.locator('#app-header')).not.toContainText('Quản trị viên');
  if(scope==='chinese')await expect(page.locator('#create-button')).toBeVisible();
@@ -72,7 +72,7 @@ test('super admin management shows scopes, protects own access controls and supp
  await stub(page,'super');const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/pages/admin/team/');
  await expect(page.locator('.team-member')).toHaveCount(3);
- await expect(page.locator('#app-header .nav-link')).toHaveCount(8);
+ await expect(page.locator('#app-header .nav-link')).toHaveCount(9);
  await expect(page.locator('.team-member').first().locator('select')).toBeDisabled();
  await expect(page.locator('.team-member').nth(1).locator('select')).toHaveValue('chinese');
  await page.locator('.team-create summary').click();

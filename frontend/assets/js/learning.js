@@ -51,7 +51,7 @@ async function load() {
     ['Thi thử','Kiểm tra chủ đề, học kì hoặc cả năm.','/pages/student/exam/','◷'],
     ['Thách đấu','Cùng bạn bè hoặc thử sức với Robot.','/pages/student/challenge/','⚑'],
   ];
-  tools.unshift(['Học hôm nay','Khoảng 10 phút, ưu tiên nội dung cần ôn.','/pages/student/today/','☀'],['Báo cáo cho phụ huynh','Xem kết quả và nội dung nên ôn trong 7 ngày.','/pages/student/family/','▥']);
+  tools.unshift(['Hoạt động tương tác','Quan sát, nghe, ghi âm và tự luyện theo môn.','/pages/student/lab/','✦'],['Bài được giao','Làm bài và nhận phản hồi của giáo viên.','/pages/student/assignments/','▤'],['Bản đồ tiến bộ','Xem kiến thức cần ôn và đến lịch nhắc lại.','/pages/student/progress/','↗'],['Học hôm nay','Khoảng 10 phút, ưu tiên nội dung cần ôn.','/pages/student/today/','☀'],['Báo cáo cho phụ huynh','Xem kết quả và nội dung nên ôn trong 7 ngày.','/pages/student/family/','▥']);
   document.getElementById('learning-tools').replaceChildren(...tools.map(toolCard));
 }
 load().catch(error => {

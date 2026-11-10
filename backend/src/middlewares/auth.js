@@ -109,7 +109,7 @@ export function requirePageRole(role) {
 export function redirectIfAuthenticated(request, response, next) {
   resolveUser(request)
     .then((user) => {
-      response.redirect(user.role === 'admin' ? adminHome(user) : '/pages/student/courses/');
+      response.redirect(user.role === 'admin' ? adminHome(user) : user.account_kind==='guardian'?'/pages/guardian/':'/pages/student/courses/');
     })
     .catch(() => next());
 }

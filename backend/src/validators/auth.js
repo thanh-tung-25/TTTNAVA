@@ -12,6 +12,7 @@ export const resetPasswordSchema = z.object({
 
 export const requestRegistrationOtpSchema=z.object({email:z.string().trim().min(1).max(120)});
 export const completeRegistrationSchema=z.object({
+ accountKind:z.enum(['student','guardian']).default('student'),
  challengeId:z.uuid(),
  otp:z.string().regex(/^\d{6}$/,'Mã xác minh phải gồm 6 chữ số.'),
  username:usernameSchema,

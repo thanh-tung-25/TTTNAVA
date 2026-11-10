@@ -5,6 +5,7 @@ import { setupCourseNotifications } from './admin-course-notifications.js';
 import { adminHome, adminScope, adminLabels, adminSections, isSuperAdmin } from './admin-permissions.js';
 
 const ADMIN_NAV = [
+  ['assignments','/pages/admin/assignments/','Giao bài & phản hồi'],
   ['feedback', '/pages/admin/feedback/', 'Phản ánh người dùng'],
   ['courses', '/pages/admin/courses/', 'Khóa học & thanh toán'],
   ['chinese', '/pages/admin/chinese/', 'Quản lý Tiếng Trung'],
@@ -78,6 +79,11 @@ export async function initPage(role, active) {
     throw new Error('Bạn không có quyền quản lý phần này.');
   }
   if(role==='student')await courseProfile(profile,active);
+  if(role==='student'){
+    document.body.dataset.program=profile.course?.kind||'';
+    if(!document.querySelector('link[data-experience-style]')){const style=document.createElement('link');style.rel='stylesheet';style.href='/assets/css/student-experience.css';style.dataset.experienceStyle='true';document.head.append(style);}
+    import('./experience-ui.js').then(async({request,applyPreferences})=>applyPreferences(await request('/preferences'))).catch(()=>{});
+  }
   renderHeader(profile, role, active);
   import('./learning-feedback.js').then(({setupFeedback})=>setupFeedback(profile)).catch(()=>{});
   if(role==='student'&&profile.course?.kind==='chinese'&&['home','learning'].includes(active))import('./study-reminders.js').then(({showStudyReminders})=>showStudyReminders()).catch(()=>{});

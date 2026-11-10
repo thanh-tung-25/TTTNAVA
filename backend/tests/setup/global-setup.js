@@ -45,6 +45,8 @@ export default async function globalSetup() {
   });
   await connection.query("SET time_zone = '+00:00'");
   for (const table of [
+    'guardian_links','guardian_pair_codes','async_learning_duels','study_assignment_members','study_assignments',
+    'student_gallery','student_badges','student_inventory','student_quest_claims','learning_events','learning_skill_state','student_focus','student_preferences','learning_runs',
     'account_deletion_confirmations',
     'registration_otps',
     'admin_audit_log',

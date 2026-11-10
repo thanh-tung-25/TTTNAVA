@@ -12,6 +12,8 @@ const REASONS = {
   chinese_complete: ['📚', 'Tiếng Trung: đạt từ 70%'],
   chinese_perfect: ['🌟', 'Tiếng Trung: đúng hết'],
   chinese_low: ['📘', 'Tiếng Trung: kết quả dưới 70%'],
+  quest_reward: ['★', 'Thưởng nhiệm vụ học tập'],
+  store_purchase: ['🎨', 'Đổi vật phẩm góc học'],
 };
 
 function row(item) {

@@ -18,6 +18,7 @@ function destinationFor(profile) {
   const params = new URLSearchParams(window.location.search);
   const next = params.get('next');
   const fallback = profile.role === 'admin' ? adminHome(profile) : '/pages/student/courses/';
+  if(profile.accountKind==='guardian')return '/pages/guardian/';
   if (!next || !next.startsWith('/pages/')) return fallback;
   if (profile.role === 'admin' && next.startsWith('/pages/admin/')) {
     const section = new URL(next,location.origin).pathname.split('/').filter(Boolean)[2];

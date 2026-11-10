@@ -34,7 +34,7 @@ export function questionAudio(text,{language='vi-VN',label='🔊 Nghe câu hỏi
    const part=parts[index++];
    const voice=voices.find(v=>v.lang.toLowerCase()===part.lang.toLowerCase())||voices.find(v=>v.lang.toLowerCase().startsWith(part.lang.slice(0,2)));
    if(!voice||!window.SpeechSynthesisUtterance){playOnline(part);return;}
-   const utterance=new SpeechSynthesisUtterance(part.text);utterance.lang=part.lang;utterance.rate=.8;utterance.pitch=1;utterance.voice=voice;
+   const utterance=new SpeechSynthesisUtterance(part.text);utterance.lang=part.lang;utterance.rate=Math.max(.5,Math.min(1.5,Number(window.ttnavaSpeechRate)||.8));utterance.pitch=1;utterance.voice=voice;
    utterance.onend=speak;utterance.onerror=()=>{if(token===sequence)playOnline(part);};
    // Retain the utterance while it is being spoken (some engines need this).
    active.utterance=utterance;synth.speak(utterance);
@@ -46,7 +46,7 @@ export function questionAudio(text,{language='vi-VN',label='🔊 Nghe câu hỏi
     const result=await fetch('/api/v1/question-audio',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:part.text,lang:part.lang}),signal:controller.signal});
     if(!result.ok)throw Error('audio');
     const blob=await result.blob();if(token!==sequence)return;
-    const url=URL.createObjectURL(blob),audio=new Audio(url);active.url=url;active.audio=audio;audio.playbackRate=.85;
+    const url=URL.createObjectURL(blob),audio=new Audio(url);active.url=url;active.audio=audio;audio.playbackRate=Math.max(.5,Math.min(1.5,Number(window.ttnavaSpeechRate)||.85));
     audio.onended=()=>{if(token!==sequence)return;audio.remove();URL.revokeObjectURL(url);active.url=null;active.audio=null;speak();};
     audio.onerror=()=>{if(token===sequence){stopQuestionAudio();status.textContent='Chưa phát được âm thanh. Con bấm nghe lại nhé.';}};
     try{await audio.play();if(token===sequence)status.textContent='Đang đọc…';}

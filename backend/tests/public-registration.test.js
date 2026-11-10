@@ -122,6 +122,12 @@ it('commits failed OTP attempts and blocks even the correct code after five fail
   expect((await register({ ...payload, otp: challenge.otp })).status).toBe(400);
   expect(await query('SELECT id FROM profiles WHERE username=?', [payload.username])).toEqual([]);
 });
+it('registers a verified guardian on the same Gmail flow without granting administrator or course access',async()=>{
+ const challenge=await issue(),agent=request.agent(app),payload=details(challenge.challengeId,challenge.otp,{accountKind:'guardian',grade:9,role:'admin',adminScope:'super'});
+ const result=await agent.post('/api/v1/auth/register').send(payload);expect(result.status).toBe(201);expect(result.body.data.profile).toMatchObject({role:'student',accountKind:'guardian',grade:null});
+ const [row]=await query('SELECT account_kind,email_verified_at,registration_source FROM profiles WHERE id=?',[result.body.data.profile.id]);expect(row.account_kind).toBe('guardian');expect(row.email_verified_at).toBeTruthy();expect(row.registration_source).toBe('self');expect((await agent.get('/pages/login/')).headers.location).toBe('/pages/guardian/');expect((await agent.get('/api/v1/admin/students')).status).toBe(403);expect((await agent.get('/api/v1/courses/hsk-1/access')).status).toBe(403);
+ expect((await request(app).post('/api/v1/auth/register/request-otp').send({email:challenge.email.replace('@','+second@')})).status).toBe(409);
+});
 
 it('rejects expired, missing and malformed challenges without creating an account', async () => {
   const challenge = await issue();

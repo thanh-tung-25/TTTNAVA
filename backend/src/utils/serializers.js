@@ -7,6 +7,7 @@ export function publicProfile(row) {
     username: row.username,
     displayName: row.display_name,
     role: row.role,
+    ...(row.account_kind==='guardian'?{accountKind:'guardian'}:{}),
     ...(row.role === 'admin' ? { adminScope: row.admin_scope ?? 'super' } : {}),
     avatarKey: row.avatar_key,
     grade: row.grade === null ? null : Number(row.grade),

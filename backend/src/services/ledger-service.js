@@ -17,8 +17,8 @@ export async function diamondTotals(profileId) {
   const rows = await query(
     `SELECT
        COALESCE(SUM(amount), 0) AS total,
-       COALESCE(SUM(CASE WHEN created_at >= ? THEN amount ELSE 0 END), 0) AS week,
-       COALESCE(SUM(CASE WHEN created_at >= ? THEN amount ELSE 0 END), 0) AS month
+       COALESCE(SUM(CASE WHEN created_at >= ? AND amount>0 THEN amount ELSE 0 END), 0) AS week,
+       COALESCE(SUM(CASE WHEN created_at >= ? AND amount>0 THEN amount ELSE 0 END), 0) AS month
      FROM diamond_ledger WHERE profile_id = ?`,
     [vnRange('week').start, vnRange('month').start, profileId],
   );
@@ -67,7 +67,7 @@ export async function getLeaderboard(range = 'week', limit = 50, grade = null) {
 
   const rows = await query(
     `SELECT p.id, p.display_name, p.avatar_key, p.grade,
-            COALESCE(SUM(dl.amount), 0) AS diamonds
+            COALESCE(SUM(CASE WHEN dl.amount>0 THEN dl.amount ELSE 0 END), 0) AS diamonds
      FROM profiles p
      LEFT JOIN diamond_ledger dl ON dl.profile_id = p.id ${dateFilter}
      WHERE p.role = 'student' AND p.deleted_at IS NULL

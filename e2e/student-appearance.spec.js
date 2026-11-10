@@ -85,7 +85,7 @@ test.beforeEach(async({page},testInfo)=>{
  for(const name of ['home','learning'])await page.route('**/pages/student/'+name+'/**',async route=>route.fulfill({contentType:'text/html',body:await fs.readFile('frontend/pages/student/'+name+'/index.html','utf8')}));
  await page.route('**/pages/student/chinese/**',async route=>{
   const filename=route.request().resourceType()==='document'?'index.html':new URL(route.request().url()).pathname.split('/').pop();
-  if(!['index.html','script.js','style.css','playful.css','learning-tools.js','history-view.js'].includes(filename))return route.continue();
+  if(!['index.html','script.js','style.css','playful.css','learning-tools.js','history-view.js','applied-practice.js'].includes(filename))return route.continue();
   const contentType=filename.endsWith('.js')?'text/javascript':filename.endsWith('.css')?'text/css':'text/html';
   await route.fulfill({contentType,body:await fs.readFile('frontend/pages/student/chinese/'+filename,'utf8')});
  });
@@ -96,8 +96,11 @@ test.beforeEach(async({page},testInfo)=>{
   else if(pathname.endsWith('/diamonds/summary'))data={total:3,week:1,month:3};
   else if(pathname.endsWith('/history'))data=[];
   else if(pathname.endsWith('/tests'))data=[];
-  else if(pathname.endsWith('/courses/hsk-1/access'))data={id:'hsk-1',kind:'chinese',level:1};
+  else if(pathname.endsWith('/courses/hsk-1/access'))data={id:'hsk-1',kind:'chinese',level:1,title:'Tiếng Trung HSK 1'};
   else if(pathname.endsWith('/catalog/topics'))data=[];
+  else if(pathname.endsWith('/experience/preferences'))data={minutes:10,onboarding_at:'2026-11-01',companion:'owl',companion_name:'Cú nhỏ'};
+  else if(pathname.endsWith('/experience/dashboard'))data={prefs:{minutes:10,onboarding_at:'2026-11-01',companion:'owl',companion_name:'Cú nhỏ'},week:{completed:0,active_days:0,average:null},resume:null,suggestion:null};
+  else if(pathname.endsWith('/experience/rewards'))data={tasks:[],wallet:{total:3}};
   else if(pathname.endsWith('/catalog'))data=catalog;
   else if(pathname.endsWith('/attempts/sample'))data=attempt;
   else if(pathname.endsWith('/sets/sample'))data={set:catalog.sets[0],progress:null,items:[{id:'one',kind:'vocabulary',data:{hanzi:'你好',pinyin:'nǐ hǎo',meaning:'Xin chào'}},{id:'two',kind:'vocabulary',data:{hanzi:'朋友',meaning:'Bạn bè'}}]};
@@ -131,7 +134,7 @@ for(const [entry,view] of [['practice','practice'],['exam','tests']]) {
   else await expect(page.locator('#content')).toContainText('Chưa có bài kiểm tra');
   expect(requests).toEqual([]);
   await expect(page.getByRole('link',{name:'Luyện tập',exact:true})).toHaveCount(0);
-  await expect(page.getByRole('link',{name:entry==='practice'?'Học tập':'Thi thử',exact:true})).toHaveAttribute('aria-current','page');
+  await expect(page.locator('#app-header').getByRole('link',{name:entry==='practice'?'Bài học':'Thử sức',exact:true})).toHaveAttribute('aria-current','page');
   await expect(page.locator('#notice')).toBeEmpty();
  });
 }
@@ -142,18 +145,18 @@ test('Chinese students keep home tidy and open their own learning page',async({p
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/pages/student/home/');
  await expect(page.locator('#greeting')).toContainText('Bạn nhỏ');
- await expect(page.locator('#recent-activity')).toContainText('Mình bắt đầu học nhé!');
+ await expect(page.getByRole('heading',{name:'Tuần này của mình'})).toBeVisible();
  await expect(page).toHaveURL(/\/student\/home\/$/);
  await expect(page.locator('.subject-grid')).toHaveCount(0);
- await expect(page.locator('#diamond-total')).toHaveText('3');
+ await expect(page.locator('#diamond-chip')).toContainText('3');
  await page.getByRole('link',{name:'Trang chủ',exact:true}).click();
- await expect(page.locator('#grade-line')).toContainText('HSK');
+ await expect(page.locator('.experience-hero')).toContainText('HSK');
  await expect(page).toHaveURL(/\/student\/home\/$/);
- await page.getByRole('link',{name:'Đến trang học tập'}).click();
+ await page.getByRole('link',{name:'Bài học của mình'}).click();
  await expect(page).toHaveURL(/\/student\/learning\/$/);
  await expect(page.locator('#learning-subjects')).toContainText('Bài học HSK 1');
  await expect(page.locator('#learning-subjects')).not.toContainText('Toán');
- await expect(page.getByRole('link',{name:'Học tập',exact:true})).toHaveAttribute('aria-current','page');
+ await expect(page.getByRole('link',{name:'Bài học',exact:true})).toHaveAttribute('aria-current','page');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await page.screenshot({path:`test-results/chinese-learning-${test.info().project.name}.png`,fullPage:true});
  await page.locator('.learning-subject').filter({hasText:'Sổ từ của con'}).click();
@@ -169,8 +172,8 @@ test('primary learning page lists only its three subjects and working study link
  await expect(page.locator('.learning-subject')).toHaveCount(3);
  for(const title of ['Toán','Tiếng Việt','Tiếng Anh'])await expect(page.locator('#learning-subjects').getByRole('heading',{name:title,exact:true})).toBeVisible();
  await expect(page.locator('#learning-subjects')).not.toContainText('Tiếng Trung');
- await expect(page.locator('.learning-tool')).toHaveCount(4);
- await expect(page.getByRole('link',{name:'Học tập',exact:true})).toHaveAttribute('aria-current','page');
+ await expect(page.locator('.learning-tool')).toHaveCount(9);
+ await expect(page.getByRole('link',{name:'Bài học',exact:true})).toHaveAttribute('aria-current','page');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await page.screenshot({path:`test-results/primary-learning-${test.info().project.name}.png`,fullPage:true});
  await page.locator('.learning-subject').filter({hasText:'Toán'}).click();

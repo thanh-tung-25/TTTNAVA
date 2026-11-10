@@ -59,7 +59,7 @@ export async function requestRegistrationOtp(rawEmail){
  return {challengeId:id,expiresIn:OTP_LIFETIME/1000,resendAfter:RESEND_DELAY/1000};
 }
 
-export async function completeRegistration({challengeId,otp,username,password,displayName,grade=null,avatarKey='meo'}){
+export async function completeRegistration({challengeId,otp,username,password,displayName,grade=null,avatarKey='meo',accountKind='student'}){
  if(!registrationAvailable())throw unavailable();
  const result=await withTransaction(async connection=>{
   const run=async(sql,params=[])=>(await connection.query(sql,params))[0];
@@ -78,9 +78,9 @@ export async function completeRegistration({challengeId,otp,username,password,di
   if(used.length)return {error:new AppError(409,'USERNAME_TAKEN','Tên đăng nhập đã được sử dụng. Bạn hãy chọn tên khác.')};
   const id=randomUUID(),passwordHash=await hashPassword(password);
   await run(`INSERT INTO profiles(id,username,email,password_hash,role,display_name,avatar_key,grade,
-   registration_source,email_verified_at,gmail_identity,student_created_by,student_creator_scope,student_management_scope)
-   VALUES (?,?,?,?,'student',?,?,?,'self',?,?,NULL,NULL,NULL)`,
-   [id,username,pending.email,passwordHash,displayName,avatarKey,grade,now,pending.gmail_identity]);
+   registration_source,email_verified_at,gmail_identity,student_created_by,student_creator_scope,student_management_scope,account_kind)
+   VALUES (?,?,?,?,'student',?,?,?,'self',?,?,NULL,NULL,NULL,?)`,
+   [id,username,pending.email,passwordHash,displayName,avatarKey,accountKind==='guardian'?null:grade,now,pending.gmail_identity,accountKind]);
   await run('UPDATE registration_otps SET consumed_at=? WHERE id=?',[now,challengeId]);
   const [profile]=await run('SELECT * FROM profiles WHERE id=?',[id]);
   return {profile};

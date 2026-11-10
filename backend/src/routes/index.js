@@ -15,8 +15,10 @@ import questionAudioRouter from './question-audio.js';
 import chatRouter from './chat.js';
 import learningSupportRouter from './learning-support.js';
 import learningFeedbackRouter from './learning-feedback.js';
+import studentExperienceRouter from './student-experience.js';
 
 const router = Router();
+router.use('/experience',studentExperienceRouter);
 router.use('/feedback',learningFeedbackRouter);
 router.use('/learning',learningSupportRouter);
 router.use('/chat',chatRouter);

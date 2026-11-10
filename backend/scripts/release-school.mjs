@@ -13,7 +13,7 @@ const {query,withTransaction,closePool}=await import('../src/config/db.js');
 const {seedSecondaryCatalog,loadSecondaryBook}=await import('./lib/seed-secondary.mjs');
 const {seedLiteratureCatalog,loadLiteratureBooks}=await import('./lib/seed-literature.mjs');
 const {seedSecondaryEnglishCatalog,loadSecondaryEnglishBooks}=await import('./lib/seed-english-secondary.mjs');
-const migrations=['027_secondary_school.sql','028_student_privacy.sql','029_student_management_scope.sql','030_public_registration.sql','031_safe_account_deletion.sql'];
+const migrations=['027_secondary_school.sql','028_student_privacy.sql','029_student_management_scope.sql','030_public_registration.sql','031_safe_account_deletion.sql','032_student_experience.sql'];
 const counts=async()=> (await query(`SELECT (SELECT COUNT(*) FROM profiles) profiles,
  (SELECT COUNT(*) FROM questions) questions,(SELECT COUNT(*) FROM course_enrollments) enrollments,
  (SELECT COUNT(*) FROM course_orders) orders,(SELECT COUNT(*) FROM diamond_ledger) ledger,
@@ -25,14 +25,15 @@ async function state(){
  const [otpTable]=await query("SELECT EXISTS(SELECT 1 FROM information_schema.tables WHERE table_schema=current_schema() AND table_name='registration_otps') present");
  const [deletionTable]=await query("SELECT EXISTS(SELECT 1 FROM information_schema.tables WHERE table_schema=current_schema() AND table_name='account_deletion_confirmations') present");
  if(privacy.length===1)throw Error('Incomplete student privacy migration');
- return {secondary:checks.some(c=>c.conname==='courses_kind_check'&&c.definition.includes('secondary')),
+ const [experience]=await query("SELECT COUNT(*) total FROM information_schema.tables WHERE table_schema=current_schema() AND table_name IN ('student_preferences','student_focus','learning_runs','learning_skill_state','learning_events','student_quest_claims','student_inventory','student_badges','student_gallery','study_assignments','study_assignment_members','async_learning_duels','guardian_pair_codes','guardian_links')");
+ return {experience:columns.some(c=>c.column_name==='account_kind')&&Number(experience.total)===14,secondary:checks.some(c=>c.conname==='courses_kind_check'&&c.definition.includes('secondary')),
   privacy:privacy.length===2&&checks.some(c=>c.conname==='chk_profiles_student_creator_scope'),
   management:columns.some(c=>c.column_name==='student_management_scope')&&checks.some(c=>c.conname==='chk_profiles_student_management_scope'),
   registration:columns.filter(c=>['registration_source','email_verified_at','gmail_identity'].includes(c.column_name)).length===3&&Boolean(otpTable.present)&&checks.some(c=>c.conname==='chk_profiles_registration_source'),
   deletion:columns.filter(c=>['deleted_at','deleted_by','deletion_reason','student_auth_version'].includes(c.column_name)).length===4&&Boolean(deletionTable.present)};
 }
 async function verify(){
- const current=await state();if(!current.secondary||!current.privacy||!current.management||!current.registration||!current.deletion)throw Error('Release schema is not ready');
+ const current=await state();if(!current.secondary||!current.privacy||!current.management||!current.registration||!current.deletion||!current.experience)throw Error('Release schema is not ready');
  const {getCurriculumTree}=await import('../src/services/curriculum-service.js');
  const {listStudents}=await import('../src/services/admin-students.js');
  const {stats}=await import('../src/services/chinese.js');
@@ -49,7 +50,7 @@ async function verify(){
 }
 try{
  await loadSecondaryBook();await loadLiteratureBooks();await loadSecondaryEnglishBooks();
- const before=await counts(),current=await state(),pending=migrations.filter((_,i)=>![current.secondary,current.privacy,current.management,current.registration,current.deletion][i]);
+ const before=await counts(),current=await state(),pending=migrations.filter((_,i)=>![current.secondary,current.privacy,current.management,current.registration,current.deletion,current.experience][i]);
  if(verifyOnly){console.log(JSON.stringify({ok:true,mode:'verify',...await verify(),protectedCounts:before}));}
  else{
   const rollback=Error('VALIDATION_ROLLBACK');
@@ -62,6 +63,7 @@ try{
      await connection.query(sql);
      await connection.query('INSERT INTO schema_migrations(name) VALUES (?) ON CONFLICT(name) DO NOTHING',[name]);
     }
+    if(current.experience)await connection.query('INSERT INTO schema_migrations(name) VALUES (?) ON CONFLICT(name) DO NOTHING',['032_student_experience.sql']);
     if(!apply)throw rollback;
    });
   }catch(error){if(error!==rollback)throw error;}

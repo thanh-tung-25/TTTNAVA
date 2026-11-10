@@ -58,7 +58,7 @@ export function createApp() {
   app.get('/', async (request, response) => {
     try {
       const user = await resolveUser(request);
-      response.redirect(user.role === 'admin' ? adminHome(user) : '/pages/student/courses/');
+      response.redirect(user.role === 'admin' ? adminHome(user) : user.account_kind==='guardian'?'/pages/guardian/':'/pages/student/courses/');
     } catch {
       response.sendFile(path.join(pagesRoot, 'welcome', 'index.html'));
     }
@@ -72,6 +72,10 @@ export function createApp() {
   app.get('/pages/register/',redirectIfAuthenticated,(_request,response)=>{
     response.set('Cache-Control','no-store').sendFile(path.join(pagesRoot,'register','index.html'));
   });
+  app.get('/pages/demo',(_req,res)=>res.redirect('/pages/demo/'));
+  app.get('/pages/demo/',(_req,res)=>res.sendFile(path.join(pagesRoot,'demo','index.html')));
+  app.get('/pages/guardian',(_req,res)=>res.redirect('/pages/guardian/'));
+  app.use('/pages/guardian',requirePageRole('student'),protectedHtml(path.join(pagesRoot,'guardian')));
 
   app.use('/pages/student', requirePageRole('student'), coursePageGuard, protectedHtml(path.join(pagesRoot, 'student')));
   app.get(['/pages/admin/worksheets','/pages/admin/worksheets/','/pages/admin/worksheets/index.html'],requirePageRole('admin'),(_request,response)=>response.redirect('/pages/admin/questions/'));

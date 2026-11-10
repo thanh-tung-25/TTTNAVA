@@ -136,14 +136,14 @@ accountForm.addEventListener('submit', async event => {
   try {
     await api('/api/v1/auth/register', {
       method: 'POST',
-      body: { challengeId, otp, username, displayName, password, grade: accountForm.grade.value === '' ? null : Number(accountForm.grade.value) },
+      body: { challengeId, otp, username, displayName, password, accountKind:accountForm.accountKind.value,grade: accountForm.grade.value === '' ? null : Number(accountForm.grade.value) },
     });
     byId('registration-password').value = '';
     byId('registration-password-confirm').value = '';
     otpInput.value = '';
     localStorage.removeItem('ttnava-course');
     document.cookie = 'ttnava_course=; Path=/; Max-Age=0; SameSite=Lax';
-    window.location.replace('/pages/student/courses/');
+    window.location.replace(accountForm.accountKind.value==='guardian'?'/pages/guardian/':'/pages/student/courses/');
   } catch (error) {
     applyRetryDelay(error);
     showError(error.message || 'Chưa tạo được tài khoản. Bạn hãy thử lại.');

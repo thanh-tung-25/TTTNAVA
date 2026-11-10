@@ -47,11 +47,14 @@ async function main() {
   const profile=await initPage('admin', 'students');
   store.canManageAccounts=isSuperAdmin(profile);
   store.adminScope=adminScope(profile);
-  document.getElementById('create-button').hidden=!store.canManageAccounts;
-  document.getElementById('create-button').classList.toggle('hidden',!store.canManageAccounts);
+  store.canCreateAccounts=store.canManageAccounts||(profile.role==='admin'&&store.adminScope==='chinese');
+  document.getElementById('create-button').hidden=!store.canCreateAccounts;
+  document.getElementById('create-button').classList.toggle('hidden',!store.canCreateAccounts);
   if(!store.canManageAccounts) {
-    store.program=adminScope(profile);
-    document.querySelector('.page-head p:not(.eyebrow)').textContent='Danh sách học sinh thuộc chương trình của bạn. Việc thay đổi tài khoản do admin tổng quản lý.';
+    store.program=store.adminScope;
+    document.querySelector('.page-head p:not(.eyebrow)').textContent=store.canCreateAccounts
+      ? 'Tạo tài khoản học sinh Tiếng Trung và xem học sinh thuộc quyền quản lý của bạn. Việc sửa tài khoản do admin tổng quản lý.'
+      : 'Danh sách học sinh thuộc chương trình của bạn. Việc thay đổi tài khoản do admin tổng quản lý.';
   }
   const filter = document.getElementById('program-filter');
   filter.value = store.program;

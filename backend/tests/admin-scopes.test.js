@@ -60,8 +60,9 @@ it('keeps payment, global account changes and admin management with the super ad
   expect((await agent.patch('/api/v1/admin/students/'+dual.id).send({displayName:'Changed'})).status).toBe(403);
   expect((await agent.post('/api/v1/admin/students/'+dual.id+'/password').send({newPassword:'OtherPassword123'})).status).toBe(403);
   expect((await agent.post('/api/v1/admin/students/'+dual.id+'/lock').send({locked:true})).status).toBe(403);
-  expect((await agent.post('/api/v1/admin/students').send({})).status).toBe(403);
  }
+ expect((await primary.post('/api/v1/admin/students').send({})).status).toBe(403);
+ expect((await chinese.post('/api/v1/admin/students').send({})).status).toBe(400);
  expect((await boss.get('/api/v1/courses/admin/catalog')).status).toBe(200);
  expect((await studentAgent.get('/api/v1/admin/team')).status).toBe(403);
 });

@@ -28,12 +28,14 @@ export async function listStudents(page, limit, search = '', program = '', viewe
 }
 
 export async function createStudent({ username, password, displayName, grade, avatarKey },actor=null) {
+  const actorScope = adminScopeOf(actor);
+  if (actorScope === 'chinese' && grade != null) throw new AppError(400, 'INVALID_STUDENT_GRADE', 'Học sinh Tiếng Trung không có khối lớp phổ thông.');
   const id = randomUUID();
   const hash = await hashPassword(password);
   await query(
-    `INSERT INTO profiles (id, username, email, password_hash, role, display_name, avatar_key, grade,student_created_by,student_creator_scope)
-     VALUES (?, ?, ?, ?, 'student', ?, ?, ?, ?, ?)`,
-    [id, username, usernameToEmail(username), hash, displayName, avatarKey ?? 'meo', grade,actor?.role==='admin'?actor.id:null,adminScopeOf(actor)],
+    `INSERT INTO profiles (id, username, email, password_hash, role, display_name, avatar_key, grade,student_created_by,student_creator_scope,student_management_scope)
+     VALUES (?, ?, ?, ?, 'student', ?, ?, ?, ?, ?, ?)`,
+    [id, username, usernameToEmail(username), hash, displayName, avatarKey ?? 'meo', actorScope === 'chinese' ? null : grade,actor?.role==='admin'?actor.id:null,actorScope,actorScope],
   );
   const rows = await query('SELECT * FROM profiles WHERE id = ?', [id]);
   return publicProfile(rows[0]);

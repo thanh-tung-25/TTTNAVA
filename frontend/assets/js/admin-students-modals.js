@@ -5,11 +5,16 @@ import {
   showError,
   toast,
 } from '/assets/js/ui.js';
-import { avatarOptions, store } from './admin-students-context.js';
+import { avatarOptions, elements, store } from './admin-students-context.js';
 import { load } from './admin-students-load.js';
 import { setupPasswordToggle } from './password-toggle.js';
 
 export function openCreate() {
+  if (!store.canCreateAccounts) return;
+  const chineseOnly = store.adminScope === 'chinese';
+  const gradeOptions = '<option value="">Tiếng Trung — không theo khối lớp</option>'
+    + (chineseOnly ? '' : Array.from({ length: 9 }, (_, i) => i + 1)
+      .map((grade) => `<option value="${grade}">Lớp ${grade}${grade > 5 ? ' · THCS' : ''}</option>`).join(''));
   const form = document.createElement('form');
   form.innerHTML = `
     <div class="form-error hidden" data-error role="alert"></div>
@@ -21,13 +26,13 @@ export function openCreate() {
     <div class="field"><label for="new-password">Mật khẩu ban đầu</label>
       <input class="input" id="new-password" name="password" type="password" autocomplete="new-password" maxlength="72" minlength="6" placeholder="Ít nhất 6 ký tự" required></div>
     <div class="grid grid-2">
-      <div class="field"><label for="new-grade">Lớp</label>
-        <select class="select" id="new-grade" name="grade"><option value="">Tiếng Trung — không theo khối lớp</option>${Array.from({length:9},(_,i)=>i+1).map((grade) => `<option value="${grade}">Lớp ${grade}${grade>5?' · THCS':''}</option>`).join('')}</select></div>
+      <div class="field"><label for="new-grade">${chineseOnly ? 'Chương trình' : 'Lớp'}</label>
+        <select class="select" id="new-grade" name="grade"${chineseOnly ? ' disabled' : ''}>${gradeOptions}</select></div>
       <div class="field"><label for="new-avatar">Ảnh đại diện</label>
         <select class="select" id="new-avatar" name="avatarKey">${avatarOptions('meo')}</select></div>
     </div>`;
   setupPasswordToggle(form.querySelector('#new-password'));
-  form.querySelector('#new-grade').value = store.program==='chinese'?'':store.program==='secondary'?'6':'1';
+  form.querySelector('#new-grade').value = chineseOnly||store.program==='chinese'?'':store.program==='secondary'?'6':'1';
   const modal = openModal({
     title: 'Thêm học sinh',
     content: form,
@@ -46,13 +51,15 @@ export function openCreate() {
                 username: form.username.value.trim(),
                 displayName: form.displayName.value.trim(),
                 password: form.password.value,
-                grade: form.grade.value === '' ? null : Number(form.grade.value),
+                grade: chineseOnly || form.grade.value === '' ? null : Number(form.grade.value),
                 avatarKey: form.avatarKey.value,
               },
             });
             toast('Đã tạo tài khoản học sinh.', 'success');
             close();
             store.page = 1;
+            store.search = '';
+            elements.searchInput.value = '';
             load();
           } catch (error) {
             showError(errorBox, error);

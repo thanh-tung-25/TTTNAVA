@@ -24,7 +24,7 @@ beforeAll(async()=>{
  for(const options of [{role:'admin'},{role:'admin',adminScope:'chinese'},{role:'admin',adminScope:'primary'},{role:'admin'}])users.push(await createTestUser(options));
  [rootUser,chineseUser,,maker]=users;
  [boss,teacher,primary]=await Promise.all(users.slice(0,3).map(loginStudent));
- const created=await boss.post('/api/v1/admin/students').send({username:prefix+'secret',password,displayName:'PRIVATE_SUPER_'+prefix,grade:null,student_created_by:chineseUser.id,student_creator_scope:'chinese',createdBy:chineseUser.id,creatorScope:'chinese'});
+ const created=await boss.post('/api/v1/admin/students').send({username:prefix+'secret',password,displayName:'PRIVATE_SUPER_'+prefix,grade:null,student_created_by:chineseUser.id,student_creator_scope:'chinese',student_management_scope:'chinese',createdBy:chineseUser.id,creatorScope:'chinese',managementScope:'chinese'});
  expect(created.status).toBe(201);secret={...created.body.data,password};users.push(secret);
  visible=await createTestUser({username:prefix+'visible',displayName:'VISIBLE_CHINESE_'+prefix,grade:null,enrolled:false});users.push(visible);
  unknown=await createTestUser({username:prefix+'old',displayName:'PRIVATE_UNKNOWN_'+prefix,grade:3,enrolled:false});users.push(unknown);
@@ -69,14 +69,40 @@ afterAll(async()=>{
  if(lesson)await query('DELETE FROM chinese_lessons WHERE id=?',[lesson]);
 });
 
-it('records actual creator provenance, ignores forged fields and retains super-only student account administration',async()=>{
- const [row]=await query('SELECT student_created_by,student_creator_scope FROM profiles WHERE id=?',[secret.id]);
- expect(row).toEqual({student_created_by:rootUser.id,student_creator_scope:'super'});
- const edit=await boss.patch('/api/v1/admin/students/'+secret.id).send({displayName:secret.displayName,student_creator_scope:'chinese',student_created_by:chineseUser.id});
+it('records actual creator provenance and management, ignores forged fields and retains super-only account changes',async()=>{
+ const [row]=await query('SELECT student_created_by,student_creator_scope,student_management_scope FROM profiles WHERE id=?',[secret.id]);
+ expect(row).toEqual({student_created_by:rootUser.id,student_creator_scope:'super',student_management_scope:'super'});
+ const edit=await boss.patch('/api/v1/admin/students/'+secret.id).send({displayName:secret.displayName,student_creator_scope:'chinese',student_created_by:chineseUser.id,student_management_scope:'chinese'});
  expect(edit.status).toBe(200);
- expect((await query('SELECT student_creator_scope FROM profiles WHERE id=?',[secret.id]))[0].student_creator_scope).toBe('super');
- expect((await teacher.post('/api/v1/admin/students').send({username:prefix+'nope',password,displayName:'No grant',grade:null})).status).toBe(403);
+ expect((await query('SELECT student_created_by,student_creator_scope,student_management_scope FROM profiles WHERE id=?',[secret.id]))[0]).toEqual(row);
  for(const id of [secret.id,randomUUID()])expect((await teacher.patch('/api/v1/admin/students/'+id).send({displayName:'No grant'})).status).toBe(403);
+});
+
+it('lets Chinese admins create their own students with null or omitted grade without granting courses or payment access',async()=>{
+ for(const includeGrade of [true,false]){
+  const username='cnew_'+randomUUID().replaceAll('-','').slice(0,12);
+  const result=await teacher.post('/api/v1/admin/students').send({username,password,displayName:'Chinese-created student',...(includeGrade?{grade:null}:{}),role:'admin',adminScope:'super',student_created_by:rootUser.id,student_creator_scope:'super',student_management_scope:'super',createdBy:rootUser.id,creatorScope:'super',managementScope:'super',courseId:'hsk-1',enrolled:true});
+  expect(result.status).toBe(201);
+  const student={...result.body.data,password};users.push(student);
+  expect(student).toMatchObject({username,role:'student',grade:null});
+  const [stored]=await query('SELECT role,grade,student_created_by,student_creator_scope,student_management_scope FROM profiles WHERE id=?',[student.id]);
+  expect(stored).toEqual({role:'student',grade:null,student_created_by:chineseUser.id,student_creator_scope:'chinese',student_management_scope:'chinese'});
+  const owned=await teacher.get('/api/v1/admin/students').query({q:username,program:'chinese'});
+  expect(owned.status).toBe(200);expect(owned.body.pagination.total).toBe(1);expect(owned.body.data.map(u=>u.id)).toEqual([student.id]);
+  expect((await boss.get('/api/v1/admin/students').query({q:username})).body.data.map(u=>u.id)).toEqual([student.id]);
+  for(const table of ['course_enrollments','course_orders'])expect(await query(`SELECT * FROM ${table} WHERE student_id=?`,[student.id])).toEqual([]);
+  expect(await query('SELECT * FROM diamond_ledger WHERE profile_id=?',[student.id])).toEqual([]);
+  const studentAgent=await loginStudent(student);
+  expect((await studentAgent.get('/api/v1/chinese/sets/'+set)).status).toBe(403);
+  for(const route of ['/api/v1/admin/team','/api/v1/courses/admin/catalog'])expect((await studentAgent.get(route)).status).toBe(403);
+  expect((await teacher.post('/api/v1/admin/students/'+student.id+'/password').send({newPassword:'OtherPassword123'})).status).toBe(403);
+  expect((await teacher.post('/api/v1/admin/students/'+student.id+'/lock').send({locked:true})).status).toBe(403);
+ }
+ for(const grade of [1,9,'9',false,'']){
+  const username='cbad_'+randomUUID().replaceAll('-','').slice(0,12);
+  const result=await teacher.post('/api/v1/admin/students').send({username,password,displayName:'Rejected grade',grade});
+  expect(result.status).toBe(400);expect(await query('SELECT id FROM profiles WHERE username=?',[username])).toEqual([]);
+ }
 });
 
 it('hides super-created and unattributed HSK students from Chinese search, list and pagination without hiding them from super admins',async()=>{
@@ -153,6 +179,43 @@ it('does not expose a private student after their creator changes scope or is de
  expect(stored).toEqual({student_created_by:null,student_creator_scope:'super'});
  expect((await teacher.get('/api/v1/admin/students').query({q:origin.username})).body.data).toEqual([]);
  expect((await boss.get('/api/v1/admin/students').query({q:origin.username})).body.data.map(u=>u.id)).toContain(origin.id);
+});
+
+it('uses explicit Chinese management without changing creator history, credentials, enrollments or learning progress',async()=>{
+ const username='managed_'+randomUUID().replaceAll('-','').slice(0,12);
+ const made=await boss.post('/api/v1/admin/students').send({username,password,displayName:'Assigned Chinese learner',grade:3});
+ expect(made.status).toBe(201);const student={...made.body.data,password};users.push(student);
+ await query("INSERT INTO course_enrollments(student_id,course_id,source) VALUES (?,'grade-3','admin')",[student.id]);
+ await query("INSERT INTO chinese_progress(student_id,set_id,read_items) VALUES (?,?,'[]')",[student.id,set]);
+ const [before]=await query('SELECT grade,student_created_by,student_creator_scope,created_at FROM profiles WHERE id=?',[student.id]);
+ const enrollments=await query('SELECT * FROM course_enrollments WHERE student_id=?',[student.id]);
+ const history=await query('SELECT * FROM chinese_progress WHERE student_id=?',[student.id]);
+ expect((await teacher.get('/api/v1/admin/students').query({q:username})).body.data).toEqual([]);
+ await query("UPDATE profiles SET student_management_scope='chinese' WHERE id=?",[student.id]);
+ const listed=await teacher.get('/api/v1/admin/students').query({q:username,program:'chinese'});
+ expect(listed.status).toBe(200);expect(listed.body.data.map(u=>u.id)).toEqual([student.id]);expect(listed.body.pagination.total).toBe(1);
+ expect((await teacher.get('/api/v1/chinese/stats').query({set_id:set,student_id:student.id})).body.data.progress.map(p=>p.student_id)).toEqual([student.id]);
+ expect((await teacher.get('/api/v1/chat/students').query({q:username})).body.data.map(u=>u.id)).toContain(student.id);
+ expect((await primary.get('/api/v1/admin/students').query({q:username})).body.data.map(u=>u.id)).toEqual([student.id]);
+ expect((await query('SELECT grade,student_created_by,student_creator_scope,created_at FROM profiles WHERE id=?',[student.id]))[0]).toEqual(before);
+ expect(await query('SELECT * FROM course_enrollments WHERE student_id=?',[student.id])).toEqual(enrollments);
+ expect(await query('SELECT * FROM chinese_progress WHERE student_id=?',[student.id])).toEqual(history);
+ expect(await query('SELECT * FROM course_orders WHERE student_id=?',[student.id])).toEqual([]);
+ await loginStudent(student);
+ await query("UPDATE profiles SET student_management_scope='super' WHERE id=?",[student.id]);
+ expect((await teacher.get('/api/v1/admin/students').query({q:username})).body.data).toEqual([]);
+ expect((await teacher.get('/api/v1/chinese/stats').query({set_id:set,student_id:student.id})).body.data.progress).toEqual([]);
+ expect((await teacher.get('/api/v1/chat/students').query({q:username})).body.data).toEqual([]);
+ expect((await boss.get('/api/v1/admin/students').query({q:username})).body.data.map(u=>u.id)).toEqual([student.id]);
+ // Explicit management also takes priority over a legacy Chinese creator snapshot.
+ const [legacy]=await query('SELECT student_management_scope,student_creator_scope,student_created_by FROM profiles WHERE id=?',[visible.id]);
+ try{
+  await query("UPDATE profiles SET student_management_scope='super' WHERE id=?",[visible.id]);
+  expect((await teacher.get('/api/v1/admin/students').query({q:visible.username})).body.data).toEqual([]);
+  expect((await teacher.get('/api/v1/chinese/stats').query({set_id:set,student_id:visible.id})).body.data.progress).toEqual([]);
+  expect((await teacher.get('/api/v1/chat/students').query({q:visible.username})).body.data).toEqual([]);
+  expect((await query('SELECT student_creator_scope,student_created_by FROM profiles WHERE id=?',[visible.id]))[0]).toEqual({student_creator_scope:legacy.student_creator_scope,student_created_by:legacy.student_created_by});
+ }finally{await query('UPDATE profiles SET student_management_scope=? WHERE id=?',[legacy.student_management_scope,visible.id]);}
 });
 
 it('backfills legacy provenance only from the first verified student-creation audit snapshot',async()=>{

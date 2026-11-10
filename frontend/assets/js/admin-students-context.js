@@ -14,6 +14,7 @@ export const store = {
   search: '',
   program: ['primary','secondary','chinese'].includes(new URLSearchParams(location.search).get('program')) ? new URLSearchParams(location.search).get('program') : '',
   studentsById: new Map(),
+  canCreateAccounts: false,
   canManageAccounts: true,
   adminScope: 'super',
 };

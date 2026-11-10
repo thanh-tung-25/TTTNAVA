@@ -9,7 +9,7 @@ import {
   setStudentLocked,
   updateStudent,
 } from '../services/admin-service.js';
-import { createStudentSchema, lockStudentSchema, updateStudentSchema } from '../validators/student.js';
+import { createChineseStudentSchema, createStudentSchema, lockStudentSchema, updateStudentSchema } from '../validators/student.js';
 import { resetPasswordSchema } from '../validators/auth.js';
 
 const listQuery = z.object({
@@ -28,7 +28,8 @@ export const listStudentsHandler = asyncHandler(async (request, response) => {
 });
 
 export const createStudentHandler = asyncHandler(async (request, response) => {
-  const payload = createStudentSchema.parse(request.body);
+  const schema = adminScopeOf(request.user) === 'chinese' ? createChineseStudentSchema : createStudentSchema;
+  const payload = schema.parse(request.body);
   response.status(201).json({ data: await createStudent(payload,request.user) });
 });
 

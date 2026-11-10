@@ -36,7 +36,7 @@ router.use('/team',adminTeamRouter);
 router.get('/stats', requireSchoolAdmin, adminStatsHandler);
 
 router.get('/students', listStudentsHandler);
-router.post('/students', requireSuperAdmin, createStudentHandler);
+router.post('/students', requireAdminScope('chinese'), createStudentHandler);
 router.patch('/students/:id', requireSuperAdmin, updateStudentHandler);
 router.post('/students/:id/password', requireSuperAdmin, resetPasswordHandler);
 router.post('/students/:id/lock', requireSuperAdmin, lockStudentHandler);

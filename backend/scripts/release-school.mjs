@@ -1,18 +1,19 @@
 // Additive PostgreSQL release for THCS and private student cohorts.
 // Default: validate schema migrations then roll back. --apply commits and seeds.
+// --schema-only skips curriculum seeding when releasing an account-only change.
 import fs from 'node:fs/promises';
 import dotenv from 'dotenv';
 dotenv.config({path:new URL('../.env.supabase',import.meta.url),quiet:true});
 process.env.DB_DRIVER='postgres';
 process.env.PGPOOL_SIZE='1';
-const apply=process.argv.includes('--apply'),verifyOnly=process.argv.includes('--verify');
+const apply=process.argv.includes('--apply'),verifyOnly=process.argv.includes('--verify'),schemaOnly=process.argv.includes('--schema-only');
 if((process.env.PGSCHEMA||'ttnava_stage')!=='ttnava_stage'||!process.env.PGHOST?.endsWith('.supabase.com'))throw Error('Expected the configured Supabase application schema');
 if(verifyOnly)process.env.PG_READ_ONLY='true';
 const {query,withTransaction,closePool}=await import('../src/config/db.js');
 const {seedSecondaryCatalog,loadSecondaryBook}=await import('./lib/seed-secondary.mjs');
 const {seedLiteratureCatalog,loadLiteratureBooks}=await import('./lib/seed-literature.mjs');
 const {seedSecondaryEnglishCatalog,loadSecondaryEnglishBooks}=await import('./lib/seed-english-secondary.mjs');
-const migrations=['027_secondary_school.sql','028_student_privacy.sql'];
+const migrations=['027_secondary_school.sql','028_student_privacy.sql','029_student_management_scope.sql'];
 const counts=async()=> (await query(`SELECT (SELECT COUNT(*) FROM profiles) profiles,
  (SELECT COUNT(*) FROM questions) questions,(SELECT COUNT(*) FROM course_enrollments) enrollments,
  (SELECT COUNT(*) FROM course_orders) orders,(SELECT COUNT(*) FROM diamond_ledger) ledger,
@@ -23,10 +24,11 @@ async function state(){
  const privacy=columns.filter(c=>['student_created_by','student_creator_scope'].includes(c.column_name));
  if(privacy.length===1)throw Error('Incomplete student privacy migration');
  return {secondary:checks.some(c=>c.conname==='courses_kind_check'&&c.definition.includes('secondary')),
-  privacy:privacy.length===2&&checks.some(c=>c.conname==='chk_profiles_student_creator_scope')};
+  privacy:privacy.length===2&&checks.some(c=>c.conname==='chk_profiles_student_creator_scope'),
+  management:columns.some(c=>c.column_name==='student_management_scope')&&checks.some(c=>c.conname==='chk_profiles_student_management_scope')};
 }
 async function verify(){
- const current=await state();if(!current.secondary||!current.privacy)throw Error('Release schema is not ready');
+ const current=await state();if(!current.secondary||!current.privacy||!current.management)throw Error('Release schema is not ready');
  const {getCurriculumTree}=await import('../src/services/curriculum-service.js');
  const {listStudents}=await import('../src/services/admin-students.js');
  const {stats}=await import('../src/services/chinese.js');
@@ -43,7 +45,7 @@ async function verify(){
 }
 try{
  await loadSecondaryBook();await loadLiteratureBooks();await loadSecondaryEnglishBooks();
- const before=await counts(),current=await state(),pending=migrations.filter((_,i)=>i===0?!current.secondary:!current.privacy);
+ const before=await counts(),current=await state(),pending=migrations.filter((_,i)=>![current.secondary,current.privacy,current.management][i]);
  if(verifyOnly){console.log(JSON.stringify({ok:true,mode:'verify',...await verify(),protectedCounts:before}));}
  else{
   const rollback=Error('VALIDATION_ROLLBACK');
@@ -61,7 +63,7 @@ try{
   }catch(error){if(error!==rollback)throw error;}
   if(apply){
    console.log(JSON.stringify({stage:'schema',applied:pending}));
-   const seeded=await withTransaction(async connection=>{
+   const seeded=schemaOnly?null:await withTransaction(async connection=>{
     await connection.query("SET LOCAL lock_timeout='5s'");
     const run=async(sql,params=[])=>(await connection.query(sql,params))[0];
     return {math:await seedSecondaryCatalog(run,{postgres:true}),literature:await seedLiteratureCatalog(run,{postgres:true}),english:await seedSecondaryEnglishCatalog(run,{postgres:true})};

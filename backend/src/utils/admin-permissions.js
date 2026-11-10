@@ -31,12 +31,13 @@ export function adminPageScope(req, res, next) {
   next();
 }
 
-// A learner can belong to both programs regardless of their profile grade.
+// A learner can belong to multiple programs regardless of their profile grade.
 // Include past enrollments/orders to keep historical progress visible.
 export function studentProgramCondition(alias, scope) {
   if (!['primary', 'secondary', 'chinese'].includes(scope) || !/^[a-z]+$/.test(alias)) throw Error('Invalid program scope');
   const legacy = scope === 'chinese' ? `${alias}.grade IS NULL` : `${alias}.grade BETWEEN ${scope === 'primary' ? '1 AND 5' : '6 AND 9'}`;
-  return `(EXISTS(SELECT 1 FROM course_enrollments pe JOIN courses pc ON pc.id=pe.course_id WHERE pe.student_id=${alias}.id AND pc.kind='${scope}')
+  const managedChinese = scope === 'chinese' ? `COALESCE(${alias}.student_management_scope,${alias}.student_creator_scope)='chinese' OR ` : '';
+  return `(${managedChinese}EXISTS(SELECT 1 FROM course_enrollments pe JOIN courses pc ON pc.id=pe.course_id WHERE pe.student_id=${alias}.id AND pc.kind='${scope}')
     OR EXISTS(SELECT 1 FROM course_orders po JOIN courses pc ON pc.id=po.course_id WHERE po.student_id=${alias}.id AND pc.kind='${scope}')
     OR (NOT EXISTS(SELECT 1 FROM course_enrollments pe WHERE pe.student_id=${alias}.id) AND NOT EXISTS(SELECT 1 FROM course_orders po WHERE po.student_id=${alias}.id) AND ${legacy}))`;
 }

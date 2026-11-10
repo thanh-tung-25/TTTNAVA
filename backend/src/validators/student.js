@@ -9,6 +9,10 @@ export const createStudentSchema = z.object({
   avatarKey: avatarSchema.optional(),
 });
 
+export const createChineseStudentSchema = createStudentSchema.extend({
+  grade: z.null().optional().transform(() => null),
+});
+
 export const updateStudentSchema = z.object({
   displayName: displayNameSchema.optional(),
   grade: z.coerce.number().int().min(1).max(9).nullable().optional(),

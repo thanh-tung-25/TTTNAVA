@@ -9,15 +9,30 @@ Hệ thống phân quyền dùng được với MySQL local và PostgreSQL trên
 | Nội dung HSK 1–9, Word, bộ từ, bài kiểm tra | Có | Có | Không | Không |
 | Nội dung, câu hỏi, bài tập và thống kê lớp 1–5 | Có | Không | Có | Không |
 | Nội dung, câu hỏi, bài tập và thống kê lớp 6–9 | Có | Không | Không | Có |
-| Danh sách học sinh | Tất cả | Thuộc Tiếng Trung và có nguồn tạo Tiếng Trung đã xác minh | Thuộc Tiểu học | Thuộc THCS |
-| Tạo/sửa tài khoản học sinh, đặt lại mật khẩu, khóa tài khoản | Có | Không | Không | Không |
+| Danh sách học sinh | Tất cả | Do admin Tiếng Trung tạo hoặc được giao rõ ràng cho phạm vi Tiếng Trung | Thuộc Tiểu học | Thuộc THCS |
+| Tạo tài khoản học sinh | Có | Chỉ tài khoản Tiếng Trung, không có khối lớp | Không | Không |
+| Sửa tài khoản học sinh, đặt lại mật khẩu, khóa tài khoản | Có | Không | Không | Không |
 | Giá khóa, QR thanh toán, duyệt đơn, cấp/thu hồi quyền học | Có | Không | Không | Không |
 | Quản lý quản trị viên và xem nhật ký | Có | Không | Không | Không |
 
 Học sinh vẫn dùng một tài khoản chung và có thể tham gia nhiều chương trình.
 Danh sách xét đăng ký/quyền học, kể cả lịch sử; tài khoản cũ chưa có đăng ký
 được phân theo khối lớp. Admin chuyên môn không thấy email và không được
-sửa tài khoản chung. Admin Tiếng Trung chịu thêm quy tắc riêng tư theo nguồn tạo dưới đây.
+sửa tài khoản chung. Admin Tiếng Trung có thể tạo tài khoản học sinh mới và
+chịu thêm quy tắc riêng tư theo phạm vi quản lý dưới đây.
+
+## Tạo tài khoản học sinh Tiếng Trung
+
+Admin Tiếng Trung có nút **Thêm học sinh** trong danh sách học sinh.
+Biểu mẫu cố định chương trình Tiếng Trung, chỉ gửi `grade: null` và không
+cho chọn lớp 1–9. Backend cũng từ chối khối lớp phổ thông khi người tạo là
+admin Tiếng Trung. Tài khoản mới được ghi nguồn tạo và phạm vi quản lý
+Tiếng Trung từ tài khoản admin đang đăng nhập, rồi xuất hiện ngay trong
+danh sách của admin Tiếng Trung, kể cả khi chưa được cấp khóa HSK.
+Tìm kiếm cũ được xóa và danh sách trở về trang đầu sau khi tạo thành công.
+
+Việc tạo tài khoản không tự cấp quyền học khóa có phí. Quyền sửa hồ sơ,
+đặt lại mật khẩu, khóa/mở khóa và cấp/thu hồi quyền học vẫn thuộc admin tổng.
 
 ## Học sinh riêng do admin tổng tạo
 
@@ -28,8 +43,20 @@ không nhận người tạo hay phạm vi giả từ dữ liệu gửi lên. Ch
 trong hồ sơ công khai. Đổi lớp, cấp HSK, đổi quyền hoặc xóa người tạo không
 làm thay đổi phạm vi đã ghi nhận.
 
-Admin Tiếng Trung không thấy học sinh do admin tổng tạo, kể cả học sinh chỉ
-học HSK. Quy tắc áp dụng cho danh sách, tìm kiếm, tổng số/phân trang, tiến độ,
+Phạm vi quản lý nằm riêng trong `student_management_scope`. Quy tắc hiển
+thị xét `COALESCE(student_management_scope, student_creator_scope)`:
+giá trị `chinese` cho phép admin Tiếng Trung thấy học sinh. Tài khoản mới
+nhận phạm vi quản lý của người tạo; tài khoản cũ chưa được gán riêng tiếp
+tục dùng nguồn tạo đã xác minh. Việc giao học sinh cho phạm vi Tiếng Trung
+là thao tác quản trị chủ động đã được cho phép, không suy đoán từ tên tài
+khoản, khối lớp hoặc đăng ký HSK. Gán phạm vi quản lý không viết lại
+`student_created_by` hay `student_creator_scope`.
+
+Admin Tiếng Trung không thấy học sinh do admin tổng tạo và chưa được giao
+cho phạm vi Tiếng Trung, kể cả học sinh chỉ học HSK. Học sinh được giao rõ
+ràng cho Tiếng Trung xuất hiện trong danh sách, tìm kiếm và chat mà vẫn
+giữ nguyên nguồn tạo, mật khẩu, lịch sử và quyền học. Quy tắc áp dụng cho
+danh sách, tìm kiếm, tổng số/phân trang, tiến độ,
 thống kê lượt làm bài, phản ánh, tìm bạn, lời mời, danh sách chặn và chat.
 Phòng chat cũ có người bị ẩn ở chủ phòng, thành viên hoặc lịch sử người gửi
 được ẩn khỏi admin Trung. Truy cập trực tiếp tài nguyên bị ẩn trả 404 giống
@@ -39,12 +66,13 @@ Admin tổng vẫn quản lý và học sinh vẫn đăng nhập, học các kh�
 Migration 028 chỉ xác minh tài khoản cũ từ sự kiện tạo đầu tiên
 `POST /api/v1/admin/students` trong nhật ký và phạm vi lưu cùng sự kiện đó.
 Không suy đoán người tạo từ lớp học, quyền HSK hoặc người cấp khóa. Tài khoản
-cũ không có bằng chứng nguồn tạo giữ giá trị NULL và được ẩn khỏi admin Trung.
-Chỉ học sinh có nguồn tạo được xác minh là `chinese` mới có thể xuất hiện
-trong danh sách của admin Trung. Quyền tạo/sửa tài khoản vẫn thuộc admin tổng.
+cũ không có bằng chứng nguồn tạo giữ giá trị NULL và được ẩn khỏi admin
+Trung nếu chưa được giao rõ ràng cho phạm vi Tiếng Trung. Migration 029
+thêm trường quản lý riêng, không tự giao tài khoản cũ và không đổi nguồn tạo.
 
 Chạy `npm run db:migrate` trên MySQL/MariaDB để áp dụng
-`028_student_privacy.sql`. PostgreSQL có migration tương ứng trong
+`028_student_privacy.sql` và `029_student_management_scope.sql`.
+PostgreSQL có hai migration tương ứng trong
 `backend/sql/postgres/`, cần áp dụng vào schema ứng dụng trước khi triển khai mã mới.
 
 Quyền được kiểm tra trên backend cho từng API và trang, không chỉ ẩn menu. Thay đổi phạm vi, khóa tài khoản hoặc đặt lại mật khẩu quản trị viên sẽ hết hạn các phiên đăng nhập quản trị cũ. Không thể khóa hoặc hạ quyền admin tổng cuối cùng đang hoạt động. Muốn thay đổi quyền của chính mình phải nhờ admin tổng khác.
@@ -77,4 +105,6 @@ npm --prefix backend test -- --pool=threads student-privacy.test.js
 npx playwright test --config playwright.student-privacy.config.js
 ```
 
-Kiểm thử API dùng cơ sở dữ liệu test riêng. Kiểm thử giao diện dùng API giả lập, không sửa dữ liệu học sinh local.
+Kiểm thử API và giao diện riêng tư dùng cơ sở dữ liệu test riêng; các tài
+khoản kiểm thử được xóa sau khi chạy. Bộ giao diện phân quyền dùng API
+giả lập. Các bộ này không sửa dữ liệu học sinh local.

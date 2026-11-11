@@ -11,6 +11,7 @@ import { coursePageGuard } from './middlewares/course-page.js';
 import { protectedHtml } from './middlewares/protected-html.js';
 import { adminHome, adminPageScope } from './utils/admin-permissions.js';
 import { adminAudit } from './middlewares/admin-audit.js';
+import {sendAppHtml} from './utils/app-html.js';
 
 const frontendRoot = path.join(env.backendRoot, '..', 'frontend');
 const pagesRoot = path.join(frontendRoot, 'pages');
@@ -54,26 +55,29 @@ export function createApp() {
     maxAge: env.isProduction ? '7d' : 0,
     fallthrough: true,
   }));
+  app.get('/manifest.webmanifest',(_request,response)=>response.type('application/manifest+json').sendFile(path.join(frontendRoot,'assets','manifest.webmanifest')));
+  app.get('/apple-touch-icon.png',(_request,response)=>response.sendFile(path.join(frontendRoot,'assets','icons','apple-touch-icon.png')));
+  app.get('/favicon.ico',(_request,response)=>response.sendFile(path.join(frontendRoot,'assets','icons','favicon.ico')));
 
   app.get('/', async (request, response) => {
     try {
       const user = await resolveUser(request);
       response.redirect(user.role === 'admin' ? adminHome(user) : user.account_kind==='guardian'?'/pages/guardian/':'/pages/student/courses/');
     } catch {
-      response.sendFile(path.join(pagesRoot, 'welcome', 'index.html'));
+      await sendAppHtml(response,path.join(pagesRoot, 'welcome', 'index.html'));
     }
   });
 
   app.get('/pages/login', (_request, response) => response.redirect('/pages/login/'));
-  app.get('/pages/login/', redirectIfAuthenticated, (_request, response) => {
-    response.sendFile(path.join(pagesRoot, 'login', 'index.html'));
+  app.get('/pages/login/', redirectIfAuthenticated, async (_request, response) => {
+    await sendAppHtml(response,path.join(pagesRoot, 'login', 'index.html'));
   });
   app.get('/pages/register',(_request,response)=>response.redirect('/pages/register/'));
-  app.get('/pages/register/',redirectIfAuthenticated,(_request,response)=>{
-    response.set('Cache-Control','no-store').sendFile(path.join(pagesRoot,'register','index.html'));
+  app.get('/pages/register/',redirectIfAuthenticated,async(_request,response)=>{
+    response.set('Cache-Control','no-store');await sendAppHtml(response,path.join(pagesRoot,'register','index.html'));
   });
   app.get('/pages/demo',(_req,res)=>res.redirect('/pages/demo/'));
-  app.get('/pages/demo/',(_req,res)=>res.sendFile(path.join(pagesRoot,'demo','index.html')));
+  app.get('/pages/demo/',async(_req,res)=>sendAppHtml(res,path.join(pagesRoot,'demo','index.html')));
   app.get('/pages/guardian',(_req,res)=>res.redirect('/pages/guardian/'));
   app.use('/pages/guardian',requirePageRole('student'),protectedHtml(path.join(pagesRoot,'guardian')));
 
@@ -94,14 +98,12 @@ export function createApp() {
   app.use('/api/v1', requireSameOrigin, adminAudit, apiRouter);
   app.use('/api', notFoundHandler);
 
-  app.use((request, response, next) => {
+  app.use(async (request, response, next) => {
     if (!request.accepts('html')) {
       notFoundHandler(request, response);
       return;
     }
-    response.status(404).sendFile(path.join(pagesRoot, 'not-found.html'), (error) => {
-      if (error) next(error);
-    });
+    response.status(404);await sendAppHtml(response,path.join(pagesRoot,'not-found.html'));
   });
 
   app.use(errorHandler);

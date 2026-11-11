@@ -13,6 +13,9 @@
     }
   },
   "routes": [
+    { "src": "/manifest.webmanifest", "dest": "/assets/manifest.webmanifest" },
+    { "src": "/apple-touch-icon.png", "dest": "/assets/icons/apple-touch-icon.png" },
+    { "src": "/favicon.ico", "dest": "/assets/icons/favicon.ico" },
     { "src": "/pages/(admin|student)/chinese/([^/]+\\.(?:js|css))", "dest": "/assets/page-local/$1/chinese/$2" },
     { "src": "/socket.io/socket.io.js", "dest": "/assets/vendor/socket.io.min.js" },
     { "handle": "filesystem" },

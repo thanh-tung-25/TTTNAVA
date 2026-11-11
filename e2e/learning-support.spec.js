@@ -20,6 +20,8 @@ async function mock(page,role='student'){
   else if(p.endsWith('/access'))data=course;
   else if(p.endsWith('/diamonds/summary'))data={total:0};
   else if(p.endsWith('/chat/rooms')||p.endsWith('/chat/friends'))data=[];
+  else if(p.endsWith('/experience/dashboard'))data={prefs:{minutes:10},resume:null};
+  else if(p.endsWith('/experience/catalog'))data={items:[{id:'topic-1',name:'Cộng trừ',total:10}],focus:{topic_id:'topic-1',set_id:null}};
   else if(p.endsWith('/learning/today'))data={day:'2026-11-08',course,kind:'primary',minutes:10,reason:'Ưu tiên nội dung cần ôn',topic:{id:'topic-1',name:'Cộng trừ',subject_id:'toan',subject:'Toán'},recent:null};
   else if(p.endsWith('/learning/today/start'))data={href:'/pages/student/practice/?session=daily-round&subject=toan'};
   else if(p.endsWith('/learning/family-report'))data={day:'2026-11-08',course,summary:{completed:1,average:40,estimated_minutes:6,in_progress:1,pending_review:0},subjects:[{id:'toan',title:'Toán',completed:1,average:40}],weak:[{subject:'Toán',title:'Cộng trừ',score:40}],recent:[{kind:'Luyện tập',subject:'Toán',title:'=SUM(1,2)',status:'finished',started_at:'2026-11-08T01:00:00Z',completed_at:'2026-11-08T01:06:00Z',score:40,correct:4,total:10}],note:'Thời lượng ước tính, không phải thời gian tương tác thực.'};
@@ -29,7 +31,7 @@ async function mock(page,role='student'){
 }
 test('today and option audio work without auto-speaking or selecting an answer',async({page})=>{
  await mock(page);const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto(origin+'/pages/student/today/');await expect(page.getByRole('button',{name:'Bắt đầu 10 câu'})).toBeVisible();
+ await page.goto(origin+'/pages/student/today/');await expect(page.getByRole('button',{name:'Bắt đầu buổi học',exact:true})).toBeVisible();
  await page.evaluate(async()=>{const {renderItem}=await import('/assets/js/worksheet-player.js');window.__selected=null;const node=renderItem({type:'choice',subjectId:'tieng-anh',prompt:'Chọn con mèo.',config:{options:['cat','dog']}},null,value=>window.__selected=value);node.id='support-fixture';document.querySelector('main').append(node);});
  expect(await page.evaluate(()=>window.__spoken.length)).toBe(0);
  await page.locator('#support-fixture').getByRole('button',{name:'Nghe lựa chọn 1',exact:true}).click();expect(await page.evaluate(()=>window.__spoken.at(-1))).toEqual({text:'cat',lang:'en-US'});expect(await page.evaluate(()=>window.__selected)).toBeNull();

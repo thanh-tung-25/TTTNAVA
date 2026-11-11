@@ -20,10 +20,6 @@ export function listeningPractice(root,words,setId){
   for(const [n,o]of options.entries()){
    const b=el('button',{type:'button',class:'btn btn-secondary',text:o.data.meaning,onclick:()=>{const correct=o.id===item.id;if(correct)score++;for(const c of choices.querySelectorAll('button'))if(!c.closest('.question-audio'))c.disabled=true;status.textContent=(correct?'Đúng rồi! ':'Chưa đúng. ')+item.data.hanzi+' · '+(item.data.pinyin||'')+' · '+item.data.meaning;next.hidden=false;}});choices.append(withChoiceAudio(b,o.data.meaning,n+1));
   }
-  area.replaceChildren(el('h3',{class:'quiz-prompt',text:'Nghe và chọn nghĩa · '+(index+1)+'/'+deck.length}),questionAudio(item.data.hanzi,{label:'Nghe từ tiếng Trung'}),el('details',{class:'hub-hint'},[el('summary',{text:'Gợi ý'}),el('p',{text:'Nghe lại âm đầu và thanh điệu. So sánh với các từ trong bảng từ mới của bài.'})]),choices,status,next);
+  area.replaceChildren(el('h3',{class:'quiz-prompt',text:'Nghe và chọn nghĩa · '+(index+1)+'/'+deck.length}),questionAudio(item.data.hanzi,{label:'Nghe từ tiếng Trung'}),choices,status,next);
  };render();
-}
-export function questionHint(data){
- const hints={pinyin:'Nhớ âm đầu, âm cuối và dấu thanh của từ. Có thể gõ từ từ rồi kiểm tra lại.',ordering:'Tìm chủ ngữ trước, sau đó đến động từ và phần bổ sung. Đặt dấu câu ở cuối.',matching:'Đọc từng vế trái rồi tìm nghĩa tương ứng; kiểm tra để không bỏ sót cặp nào.',dictation:'Nghe lại từng cụm, chú ý âm đầu và dấu thanh trước khi viết.',listening:'Nghe hết câu rồi so sánh ý nghĩa của từng lựa chọn.',fill:'Đọc cả câu trước và sau chỗ trống để nhận ra từ loại cần điền.'};
- return el('details',{class:'hub-hint'},[el('summary',{text:'Gợi ý cách làm'}),el('p',{text:data.hint||hints[data.type]||'Đọc chậm câu hỏi, xác định yêu cầu về nghĩa, chữ Hán hay phiên âm rồi so sánh từng lựa chọn.'})]);
 }

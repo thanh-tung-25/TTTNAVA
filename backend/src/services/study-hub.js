@@ -5,6 +5,7 @@ import {json} from '../repositories/chinese.js';
 import {familyReport} from './learning-support.js';
 import {z} from 'zod';
 import {parse} from '../validators/chinese.js';
+import {chineseQuestionPrompt} from '../../../frontend/assets/js/chinese-question-prompt.js';
 
 export async function searchLearning(user,courseId,value){
  const term=parse(z.string().trim().min(1).max(80),value).normalize('NFC').toLocaleLowerCase('vi');
@@ -29,7 +30,7 @@ export async function wrongNotebook(user,courseId){
   const allowed=await studentCatalog(user,courseId),ids=new Set(allowed.sets.map(s=>s.id));
   const attempts=await query('SELECT id,snapshot,answers,finished_at,started_at FROM chinese_attempts WHERE student_id=? AND abandoned_at IS NULL ORDER BY started_at DESC LIMIT 300',[user]);
   const seen=new Set();
-  for(const a of attempts){const answers=json(a.answers);for(const i of json(a.snapshot).items){const answer=answers[i.id];if(!ids.has(i.set_id)||!answer?.locked||seen.has(i.id))continue;seen.add(i.id);latest.set(i.id,new Date(a.finished_at||a.started_at).getTime());if(answer.correct)continue;rows.push({id:i.id,title:i.data.prompt,explanation:i.data.explanation||'',answer:i.data.accepted.join(' / '),selected:answer.value,href:'/pages/student/chinese/?attempt='+a.id,set_id:i.set_id,kind:'chinese'});}}
+  for(const a of attempts){const answers=json(a.answers);for(const i of json(a.snapshot).items){const answer=answers[i.id];if(!ids.has(i.set_id)||!answer?.locked||seen.has(i.id))continue;seen.add(i.id);latest.set(i.id,new Date(a.finished_at||a.started_at).getTime());if(answer.correct)continue;rows.push({id:i.id,title:chineseQuestionPrompt(i.data.prompt),explanation:i.data.explanation||'',answer:i.data.accepted.join(' / '),selected:answer.value,href:'/pages/student/chinese/?attempt='+a.id,set_id:i.set_id,kind:'chinese'});}}
  }else{
   const attempts=await query("SELECT a.question_id,a.is_correct,a.answered_at event_at,p.id,p.topic_id,q.prompt,t.subject_id,qa.explanation FROM practice_answers a JOIN practice_sessions p ON p.id=a.session_id JOIN questions q ON q.id=a.question_id JOIN topics t ON t.id=q.topic_id JOIN question_answers qa ON qa.question_id=q.id WHERE p.student_id=? AND t.grade=? AND q.status='published' ORDER BY a.answered_at DESC LIMIT 1000",[user,course.level]);
   // Exam answers are shown only after submission; never reveal an active exam.
@@ -43,7 +44,7 @@ export async function wrongNotebook(user,courseId){
  const guided=await query('SELECT id,items_json,answers_json,created_at FROM learning_runs WHERE profile_id=? AND course_id=? ORDER BY created_at DESC LIMIT 500',[user,courseId]);
  const result=new Map(rows.map(r=>[r.id,r]));
  for(const run of guided)for(const item of json(run.items_json)||[]){const answer=json(run.answers_json)[item.id];if(!answer)continue;const at=new Date(answer.at||run.created_at).getTime();if((latest.get(item.id)||0)>at)continue;latest.set(item.id,at);if(answer.correct){result.delete(item.id);continue;}
- result.set(item.id,{id:item.id,title:item.prompt,explanation:item.explanation||'',topic_id:course.kind==='chinese'?undefined:item.skill,set_id:course.kind==='chinese'?item.skill:undefined,kind:course.kind==='chinese'?'chinese':'guided',href:'/pages/student/session/?run='+encodeURIComponent(run.id)});
+ result.set(item.id,{id:item.id,title:course.kind==='chinese'?chineseQuestionPrompt(item.prompt):item.prompt,explanation:item.explanation||'',topic_id:course.kind==='chinese'?undefined:item.skill,set_id:course.kind==='chinese'?item.skill:undefined,kind:course.kind==='chinese'?'chinese':'guided',href:'/pages/student/session/?run='+encodeURIComponent(run.id)});
  }
  return [...result.values()].slice(0,200);
 }

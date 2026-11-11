@@ -17,9 +17,9 @@ test.beforeAll(async()=>{
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));origin=`http://127.0.0.1:${server.address().port}`;
 });
 test.afterAll(async()=>{await new Promise(resolve=>server.close(resolve));});
-async function mock(page,lesson=0,level=1,title=titles[lesson]){
+async function mock(page,lesson=0,level=1,title=titles[lesson],savedActivities){
  await page.route('**/assets/js/ui-core.js',r=>r.fulfill({contentType:'text/javascript',body:'export async function initPage(){return {course:{kind:"chinese",level:1}}} export function syncDiamondTotal(){}'}));
- const activities=activityTemplate({level_id:level,title});
+ const activities=savedActivities||activityTemplate({level_id:level,title});
  const set={id:'sample',lesson_id:'lesson',level_id:level,lesson_title:title,title:'Q1 Word',activity_count:activities?.tasks.length||0};
  await page.route('**/api/v1/chinese/**',r=>{
   const p=new URL(r.request().url()).pathname;
@@ -98,6 +98,60 @@ test('online audio plays on devices without installed Vietnamese voices, includi
  await expect(page.locator('.question-audio')).not.toContainText('cài đặt');
 });
 
+for(const online of [false,true])test(`saved dialogue answers are not translated in prompts, hints or ${online?'online':'device'} audio`,async({page})=>{
+ await page.addInitScript(({online})=>{
+  window.__spoken=[];window.__plays=[];
+  Object.defineProperty(window,'SpeechSynthesisUtterance',{value:class{constructor(text){this.text=text;}}});
+  Object.defineProperty(window,'speechSynthesis',{value:{getVoices:()=>online?[]:['vi-VN','zh-CN'].map(lang=>({lang})),cancel:()=>{},speak:u=>{window.__spoken.push({text:u.text,lang:u.lang});queueMicrotask(()=>u.onend?.());}}});
+  Object.defineProperty(window,'Audio',{value:class{async play(){window.__plays.push(this.src);queueMicrotask(()=>this.onended?.());}pause(){}load(){}removeAttribute(){}remove(){}}});
+ },{online});
+ const requests=[];
+ await page.route('**/api/v1/question-audio',r=>{requests.push(r.request().postDataJSON());return r.fulfill({contentType:'audio/mpeg',body:Buffer.alloc(1024)});});
+ const translation='Tôi cũng rất vui.';
+ const task={type:'dialogue',prompt:'Hãy đáp lại với ý: '+translation,speech:'我很高兴，你呢？',pinyin:'wǒ hěn gāoxìng, nǐ ne?',meaning:'Gợi ý trả lời: '+translation,hint:'Đáp lại: '+translation,options:['我也很高兴。','他是我的朋友。'],answer:'我也很高兴。',explanation:'也 đứng trước 很高兴. '+translation};
+ await mock(page,2,1,titles[2],{topic:'Trao danh thiếp',tasks:[task]});
+ await page.goto(origin+'/pages/student/chinese/?set=sample&mode=apply');
+ await page.getByRole('button',{name:'Hội thoại',exact:true}).click();
+ const practice=page.locator('.applied-practice');
+ await expect(practice).toContainText('Nghe câu thoại và chọn câu đáp lại phù hợp.');
+ await expect(practice.locator('.applied-bubble .applied-hanzi')).toHaveText(task.speech);
+ await expect(practice).not.toContainText(translation);
+ await expect(practice.getByRole('button',{name:'Gợi ý',exact:true})).toHaveCount(0);
+ await expect(practice.locator('.pinyin')).toHaveCount(0);
+ expect(await page.evaluate(()=>window.__spoken)).toEqual([]);expect(requests).toEqual([]);
+ await page.getByRole('button',{name:'Nghe câu hỏi',exact:false}).click();
+ await expect.poll(async()=>online?requests.map(p=>p.text).join(''):page.evaluate(()=>window.__spoken.map(p=>p.text).join(''))).toBe(task.speech);
+ const spoken=online?requests:await page.evaluate(()=>window.__spoken);
+ expect(spoken.every(p=>p.lang==='zh-CN')).toBe(true);
+ if(online)await expect.poll(()=>page.evaluate(()=>window.__plays.length)).toBe(spoken.length);
+ await page.getByRole('button',{name:task.answer,exact:true}).click();
+ await expect(practice).not.toContainText(translation);
+ await page.getByRole('button',{name:'Kiểm tra',exact:true}).click();
+ await expect(practice.locator('.applied-feedback')).toContainText('Đúng rồi!');
+ await expect(practice.locator('.applied-feedback')).toContainText(task.explanation);
+ await expect(practice.locator('.applied-feedback .pinyin')).toHaveText(task.pinyin);
+ await page.getByRole('button',{name:'Xem kết quả',exact:true}).click();await expect(practice.locator('.quiz-score')).toHaveText('1/1');
+ await page.setViewportSize({width:390,height:844});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+
+test('saved activities keep required context and show correction explanations only after checking',async({page})=>{
+ const tasks=[
+  {type:'fill',prompt:'我___名片。 (Tôi không có danh thiếp.)',hint:'Nghĩa cả câu: Tôi không có danh thiếp.',answer:'没有',explanation:'Phủ định của 有 là 没有.'},
+  {type:'fix',prompt:'我不有名片。',hint:'Chọn 我没有名片。',options:['我没有名片。','我不有名片。'],answer:'我没有名片。',explanation:'Phủ định của 有 là 没有.'}
+ ];
+ await mock(page,2,1,titles[2],{topic:'Trao danh thiếp',tasks});
+ for(const [type,label]of [['fill','Điền từ'],['fix','Sửa lỗi']]){
+  await page.goto(origin+'/pages/student/chinese/?set=sample&mode=apply');await page.getByRole('button',{name:label,exact:true}).click();
+  const practice=page.locator('.applied-practice'),task=tasks.find(t=>t.type===type);
+  await expect(practice.getByRole('button',{name:'Gợi ý',exact:true})).toHaveCount(0);
+  await expect(practice).not.toContainText(task.explanation);await expect(practice).not.toContainText(task.hint);
+  if(type==='fill'){await expect(practice.locator('.applied-hanzi')).toHaveText(task.prompt);await page.getByRole('textbox',{name:'Từ cần điền'}).fill(task.answer);}
+  else await page.getByRole('button',{name:task.answer,exact:true}).click();
+  await page.getByRole('button',{name:'Kiểm tra',exact:true}).click();await expect(practice.locator('.applied-feedback')).toContainText(task.explanation);
+ }
+});
+
 test('each lesson offers ten distinct questions per activity type and mixed sessions stay at ten',async({page})=>{
  test.setTimeout(180000);
  const labels={order:'Xếp câu',fix:'Sửa lỗi',fill:'Điền từ',dialogue:'Hội thoại'};
@@ -111,12 +165,25 @@ test('each lesson offers ten distinct questions per activity type and mixed sess
    for(let n=0;n<10;n++){
     await expect(page.locator('.quiz-position')).toHaveText(`${label} · ${n+1}/10`);
     const candidates=pack.tasks.filter(t=>t.type===type);
-    let prompt;
+    await expect(page.locator('.applied-practice').getByRole('button',{name:'Gợi ý',exact:true})).toHaveCount(0);
+    await expect(page.locator('.applied-practice .applied-feedback')).toBeEmpty();
+    let prompt,task;
     if(type==='order')prompt=await page.locator('.applied-practice h2').textContent();
     else if(type==='fix')prompt=await page.locator('.applied-error').textContent();
     else if(type==='fill')prompt=await page.locator('.applied-hanzi').textContent();
-    else {const body=await page.locator('.applied-practice').textContent();prompt=candidates.find(t=>body.includes(t.prompt))?.prompt;}
-    const task=candidates.find(t=>t.prompt===prompt);expect(task).toBeTruthy();expect(seen.has(prompt)).toBe(false);seen.add(prompt);
+    else {
+     const speech=await page.locator('.applied-bubble .applied-hanzi').textContent();
+     const options=await page.locator('.quiz-choices .choice-with-audio > button').allTextContents();
+     task=candidates.find(t=>t.speech===speech&&t.options.length===options.length&&t.options.every(o=>options.includes(o)));
+     prompt=JSON.stringify([speech,[...options].sort()]);
+     const translation=pack.tasks.find(t=>t.type==='order'&&t.answer===task?.answer)?.prompt;
+     expect(translation).toBeTruthy();
+     await expect(page.locator('.applied-practice')).not.toContainText(translation);
+     expect(task?.prompt).toBe('Nghe câu thoại và chọn câu đáp lại phù hợp.');
+     expect(task?.hint).toBeUndefined();
+     expect(task?.meaning).toBeUndefined();
+    }
+    task=task||candidates.find(t=>t.prompt===prompt);expect(task).toBeTruthy();expect(seen.has(prompt)).toBe(false);seen.add(prompt);
     if(type==='order')for(const word of task.tokens)await page.getByRole('group',{name:'Từ để xếp câu'}).getByRole('button',{name:word,exact:true,disabled:false}).first().click();
     else if(type==='fill')await page.getByRole('textbox',{name:'Từ cần điền'}).fill(task.answer);
     else await page.getByRole('button',{name:task.answer,exact:true}).click();
@@ -154,7 +221,7 @@ test('admin authors all four types, previews, saves, reloads and controls studen
  for(const [type,fields] of [
   ['order',{prompt:'Tôi ở trường.',tokens:'我\n在\n学校\n。',explanation:'在 đứng trước địa điểm.'}],
   ['fix',{prompt:'我不有名片。',options:'我没有名片。\n我不有名片。',answer:'我没有名片。',explanation:'Phủ định của 有 là 没有.'}],
-  ['fill',{prompt:'我___名片。',answer:'没有',hint:'Phủ định của 有',explanation:'没有 nghĩa là không có.'}],
+  ['fill',{prompt:'我___名片。',answer:'没有',explanation:'没有 nghĩa là không có.'}],
   ['dialogue',{prompt:'Nói nơi muốn đến.',speech:'你去哪儿？',pinyin:'nǐ qù nǎr',meaning:'Bạn đi đâu?',options:'我去学校。\n我叫小明。',answer:'我去学校。',explanation:'去 đứng trước điểm đến.'}]
  ]){
   await page.getByLabel('Dạng hoạt động').selectOption(type);await page.getByRole('button',{name:'Thêm hoạt động',exact:true}).click();

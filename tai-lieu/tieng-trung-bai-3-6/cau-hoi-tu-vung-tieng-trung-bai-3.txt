@@ -1,7 +1,7 @@
 MÔN: Tiếng Trung
 LỚP: HSK 1
 CHỦ ĐỀ: Bài 3 很高兴认识你 - Từ vựng chính và từ mở rộng
-Câu 1. Trong bài học, “请问” (qǐngwèn) có nghĩa là gì?
+Câu 1. Trong bài học, “请问” có nghĩa là gì?
 A. xin hỏi
 B. sách
 C. bố
@@ -25,7 +25,7 @@ D. qiàn
 Đáp án: A
 Lời giải: 请问 đọc là qǐngwèn, nghĩa là xin hỏi. Tham chiếu: PDF bài 3, trang 5.
 Độ khó: Dễ
-Câu 4. Trong bài học, “请” (qǐng) có nghĩa là gì?
+Câu 4. Trong bài học, “请” có nghĩa là gì?
 A. sách
 B. Việt Nam
 C. xin, mời
@@ -49,7 +49,7 @@ D. gōngsī
 Đáp án: A
 Lời giải: 请 đọc là qǐng, nghĩa là xin, mời. Tham chiếu: PDF bài 3, trang 5.
 Độ khó: Dễ
-Câu 7. Trong bài học, “问” (wèn) có nghĩa là gì?
+Câu 7. Trong bài học, “问” có nghĩa là gì?
 A. ông, ngài; cách xưng hô lịch sự
 B. một
 C. hỏi
@@ -73,7 +73,7 @@ D. wèn
 Đáp án: D
 Lời giải: 问 đọc là wèn, nghĩa là hỏi. Tham chiếu: PDF bài 3, trang 5.
 Độ khó: Dễ
-Câu 10. Trong bài học, “觉得” (juéde) có nghĩa là gì?
+Câu 10. Trong bài học, “觉得” có nghĩa là gì?
 A. người Trung Quốc
 B. họ Mã; con ngựa
 C. tiền bạc
@@ -97,7 +97,7 @@ D. máng
 Đáp án: A
 Lời giải: 觉得 đọc là juéde, nghĩa là cảm thấy, cho rằng. Tham chiếu: PDF bài 3, trang 6.
 Độ khó: Dễ
-Câu 13. Trong bài học, “这” (zhè) có nghĩa là gì?
+Câu 13. Trong bài học, “这” có nghĩa là gì?
 A. sách tiếng Anh
 B. trợ từ; dùng để hỏi lại trong bài
 C. vẫn, còn; cũng khá
@@ -121,7 +121,7 @@ D. máobǐ
 Đáp án: A
 Lời giải: 这 đọc là zhè, nghĩa là này, đây. Tham chiếu: PDF bài 3, trang 7.
 Độ khó: Dễ
-Câu 16. Trong bài học, “那” (nà) có nghĩa là gì?
+Câu 16. Trong bài học, “那” có nghĩa là gì?
 A. kia, đó
 B. gọi, tên là
 C. vui mừng
@@ -145,7 +145,7 @@ D. nà
 Đáp án: D
 Lời giải: 那 đọc là nà, nghĩa là kia, đó. Tham chiếu: PDF bài 3, trang 8.
 Độ khó: Dễ
-Câu 19. Trong bài học, “的” (de) có nghĩa là gì?
+Câu 19. Trong bài học, “的” có nghĩa là gì?
 A. những cái này
 B. nhỏ, bé
 C. đi, bước đi
@@ -169,7 +169,7 @@ D. wǎng
 Đáp án: C
 Lời giải: 的 đọc là de, nghĩa là của; trợ từ nối định ngữ. Tham chiếu: PDF bài 3, trang 9.
 Độ khó: Dễ
-Câu 22. Trong bài học, “名片” (míngpiàn) có nghĩa là gì?
+Câu 22. Trong bài học, “名片” có nghĩa là gì?
 A. sách
 B. vịt quay
 C. danh thiếp
@@ -193,7 +193,7 @@ D. míngpiàn
 Đáp án: D
 Lời giải: 名片 đọc là míngpiàn, nghĩa là danh thiếp. Tham chiếu: PDF bài 3, trang 10.
 Độ khó: Dễ
-Câu 25. Trong bài học, “身体” (shēntǐ) có nghĩa là gì?
+Câu 25. Trong bài học, “身体” có nghĩa là gì?
 A. nhỏ, bé
 B. cơ thể, sức khỏe
 C. mới
@@ -217,7 +217,7 @@ D. fēijī
 Đáp án: B
 Lời giải: 身体 đọc là shēntǐ, nghĩa là cơ thể, sức khỏe. Tham chiếu: PDF bài 3, trang 10.
 Độ khó: Dễ
-Câu 28. Trong bài học, “对不起” (duìbuqǐ) có nghĩa là gì?
+Câu 28. Trong bài học, “对不起” có nghĩa là gì?
 A. không sao, không có việc gì
 B. không; từ phủ định
 C. xin lỗi
@@ -241,7 +241,7 @@ D. rén
 Đáp án: C
 Lời giải: 对不起 đọc là duìbuqǐ, nghĩa là xin lỗi. Tham chiếu: PDF bài 3, trang 11.
 Độ khó: Dễ
-Câu 31. Trong bài học, “没关系” (méi guānxi) có nghĩa là gì?
+Câu 31. Trong bài học, “没关系” có nghĩa là gì?
 A. không sao, không có gì
 B. đắt; quý trong cách nói kính trọng
 C. chính là
@@ -265,7 +265,7 @@ D. shū
 Đáp án: B
 Lời giải: 没关系 đọc là méi guānxi, nghĩa là không sao, không có gì. Tham chiếu: PDF bài 3, trang 11.
 Độ khó: Dễ
-Câu 34. Trong bài học, “没事” (méi shì) có nghĩa là gì?
+Câu 34. Trong bài học, “没事” có nghĩa là gì?
 A. họ Hoàng
 B. cảm thấy, cho rằng
 C. không sao, không có việc gì
@@ -289,7 +289,7 @@ D. zhì
 Đáp án: B
 Lời giải: 没事 đọc là méi shì, nghĩa là không sao, không có việc gì. Tham chiếu: PDF bài 3, trang 11.
 Độ khó: Dễ
-Câu 37. Trong bài học, “有” (yǒu) có nghĩa là gì?
+Câu 37. Trong bài học, “有” có nghĩa là gì?
 A. gì, cái gì
 B. những cái kia
 C. có
@@ -313,7 +313,7 @@ D. shénme
 Đáp án: C
 Lời giải: 有 đọc là yǒu, nghĩa là có. Tham chiếu: PDF bài 3, trang 12.
 Độ khó: Dễ
-Câu 40. Trong bài học, “没有” (méiyǒu) có nghĩa là gì?
+Câu 40. Trong bài học, “没有” có nghĩa là gì?
 A. chính là
 B. không có, chưa có
 C. đắt; quý trong cách nói kính trọng
@@ -337,7 +337,7 @@ D. máng
 Đáp án: B
 Lời giải: 没有 đọc là méiyǒu, nghĩa là không có, chưa có. Tham chiếu: PDF bài 3, trang 12.
 Độ khó: Dễ
-Câu 43. Trong bài học, “朋友” (péngyou) có nghĩa là gì?
+Câu 43. Trong bài học, “朋友” có nghĩa là gì?
 A. bạn bè
 B. đều
 C. ngồi
@@ -361,7 +361,7 @@ D. péngyou
 Đáp án: D
 Lời giải: 朋友 đọc là péngyou, nghĩa là bạn bè. Tham chiếu: PDF bài 3, trang 13.
 Độ khó: Dễ
-Câu 46. Trong bài học, “高兴” (gāoxìng) có nghĩa là gì?
+Câu 46. Trong bài học, “高兴” có nghĩa là gì?
 A. vui mừng
 B. bút lông
 C. trí tuệ, sự khôn ngoan
@@ -385,7 +385,7 @@ D. māma
 Đáp án: A
 Lời giải: 高兴 đọc là gāoxìng, nghĩa là vui mừng. Tham chiếu: PDF bài 3, trang 13.
 Độ khó: Dễ
-Câu 49. Trong bài học, “认识” (rènshi) có nghĩa là gì?
+Câu 49. Trong bài học, “认识” có nghĩa là gì?
 A. máy bay
 B. quen, biết một người
 C. ông, ngài; cách xưng hô lịch sự
@@ -409,7 +409,7 @@ D. rènshi
 Đáp án: D
 Lời giải: 认识 đọc là rènshi, nghĩa là quen, biết một người. Tham chiếu: PDF bài 3, trang 14.
 Độ khó: Dễ
-Câu 52. Trong bài học, “先生” (xiānsheng) có nghĩa là gì?
+Câu 52. Trong bài học, “先生” có nghĩa là gì?
 A. tiền bạc
 B. ông, ngài; cách xưng hô lịch sự
 C. người
@@ -433,7 +433,7 @@ D. yī
 Đáp án: C
 Lời giải: 先生 đọc là xiānsheng, nghĩa là ông, ngài; cách xưng hô lịch sự. Tham chiếu: PDF bài 3, trang 15.
 Độ khó: Dễ
-Câu 55. Trong bài học, “女士” (nǚshì) có nghĩa là gì?
+Câu 55. Trong bài học, “女士” có nghĩa là gì?
 A. tăng trưởng, tăng thêm
 B. rất
 C. bà, cô; cách xưng hô lịch sự
@@ -457,7 +457,7 @@ D. nǚshì
 Đáp án: D
 Lời giải: 女士 đọc là nǚshì, nghĩa là bà, cô; cách xưng hô lịch sự. Tham chiếu: PDF bài 3, trang 15.
 Độ khó: Dễ
-Câu 58. Trong bài học, “马” (mǎ) có nghĩa là gì?
+Câu 58. Trong bài học, “马” có nghĩa là gì?
 A. ông, ngài; cách xưng hô lịch sự
 B. họ Mã; con ngựa
 C. không; từ phủ định
@@ -481,7 +481,7 @@ D. xuésheng
 Đáp án: C
 Lời giải: 马 đọc là mǎ, nghĩa là họ Mã; con ngựa. Tham chiếu: PDF bài 3, trang 15.
 Độ khó: Dễ
-Câu 61. Trong bài học, “黄文丽” (Huáng Wénlì) có nghĩa là gì?
+Câu 61. Trong bài học, “黄文丽” có nghĩa là gì?
 A. công ty
 B. bà, cô; cách xưng hô lịch sự
 C. Hoàng Văn Lệ, tên nhân vật
@@ -505,7 +505,7 @@ D. xiānsheng
 Đáp án: C
 Lời giải: 黄文丽 đọc là Huáng Wénlì, nghĩa là Hoàng Văn Lệ, tên nhân vật. Tham chiếu: PDF bài 3, trang 15.
 Độ khó: Dễ
-Câu 64. Trong bài học, “也” (yě) có nghĩa là gì?
+Câu 64. Trong bài học, “也” có nghĩa là gì?
 A. cũng
 B. nơi thấp
 C. đắt; quý trong cách nói kính trọng
@@ -529,7 +529,7 @@ D. zuò
 Đáp án: A
 Lời giải: 也 đọc là yě, nghĩa là cũng. Tham chiếu: PDF bài 3, trang 16.
 Độ khó: Dễ
-Câu 67. Trong bài học, “小” (xiǎo) có nghĩa là gì?
+Câu 67. Trong bài học, “小” có nghĩa là gì?
 A. không sao, không có việc gì
 B. không có, chưa có
 C. vui mừng
@@ -553,7 +553,7 @@ D. xiǎo
 Đáp án: D
 Lời giải: 小 đọc là xiǎo, nghĩa là nhỏ, bé. Tham chiếu: PDF bài 3, trang 16.
 Độ khó: Dễ
-Câu 70. Trong bài học, “大” (dà) có nghĩa là gì?
+Câu 70. Trong bài học, “大” có nghĩa là gì?
 A. họ Mã; con ngựa
 B. chính là
 C. sách tiếng Anh
@@ -577,7 +577,7 @@ D. qǐngwèn
 Đáp án: B
 Lời giải: 大 đọc là dà, nghĩa là to, lớn. Tham chiếu: PDF bài 3, trang 16.
 Độ khó: Dễ
-Câu 73. Trong bài học, “都” (dōu) có nghĩa là gì?
+Câu 73. Trong bài học, “都” có nghĩa là gì?
 A. hỏi
 B. người Anh
 C. đều
@@ -601,7 +601,7 @@ D. dōu
 Đáp án: D
 Lời giải: 都 đọc là dōu, nghĩa là đều. Tham chiếu: PDF bài 3, trang 17.
 Độ khó: Dễ
-Câu 76. Trong bài học, “忙” (máng) có nghĩa là gì?
+Câu 76. Trong bài học, “忙” có nghĩa là gì?
 A. họ Hoàng
 B. bận
 C. bạn tốt, bạn thân
@@ -625,7 +625,7 @@ D. máng
 Đáp án: D
 Lời giải: 忙 đọc là máng, nghĩa là bận. Tham chiếu: PDF bài 3, trang 17.
 Độ khó: Dễ
-Câu 79. Trong bài học, “进” (jìn) có nghĩa là gì?
+Câu 79. Trong bài học, “进” có nghĩa là gì?
 A. vào
 B. nước, quốc gia
 C. không có, chưa có
@@ -649,7 +649,7 @@ D. xuésheng
 Đáp án: C
 Lời giải: 进 đọc là jìn, nghĩa là vào. Tham chiếu: PDF bài 3, trang 5.
 Độ khó: Dễ
-Câu 82. Trong bài học, “坐” (zuò) có nghĩa là gì?
+Câu 82. Trong bài học, “坐” có nghĩa là gì?
 A. học sinh, sinh viên
 B. cà phê
 C. ngồi
@@ -673,7 +673,7 @@ D. máng
 Đáp án: A
 Lời giải: 坐 đọc là zuò, nghĩa là ngồi. Tham chiếu: PDF bài 3, trang 5.
 Độ khó: Dễ
-Câu 85. Trong bài học, “请假” (qǐngjià) có nghĩa là gì?
+Câu 85. Trong bài học, “请假” có nghĩa là gì?
 A. máy bay
 B. không có, chưa có
 C. xin nghỉ phép
@@ -697,7 +697,7 @@ D. dīchù
 Đáp án: C
 Lời giải: 请假 đọc là qǐngjià, nghĩa là xin nghỉ phép. Tham chiếu: PDF bài 3, trang 5.
 Độ khó: Dễ
-Câu 88. Trong bài học, “还” (hái) có nghĩa là gì?
+Câu 88. Trong bài học, “还” có nghĩa là gì?
 A. bút lông
 B. chảy
 C. không sao, không có gì
@@ -721,7 +721,7 @@ D. zhè
 Đáp án: A
 Lời giải: 还 đọc là hái, nghĩa là vẫn, còn; cũng khá. Tham chiếu: PDF bài 3, trang 6.
 Độ khó: Dễ
-Câu 91. Trong bài học, “好吃” (hǎochī) có nghĩa là gì?
+Câu 91. Trong bài học, “好吃” có nghĩa là gì?
 A. học sinh, sinh viên
 B. thời gian
 C. tiền bạc
@@ -745,7 +745,7 @@ D. wǎng
 Đáp án: B
 Lời giải: 好吃 đọc là hǎochī, nghĩa là ngon, dùng cho đồ ăn. Tham chiếu: PDF bài 3, trang 6.
 Độ khó: Dễ
-Câu 94. Trong bài học, “烤鸭” (kǎoyā) có nghĩa là gì?
+Câu 94. Trong bài học, “烤鸭” có nghĩa là gì?
 A. cảm thấy, cho rằng
 B. không sao, không có gì
 C. vịt quay
@@ -769,7 +769,7 @@ D. dà
 Đáp án: B
 Lời giải: 烤鸭 đọc là kǎoyā, nghĩa là vịt quay. Tham chiếu: PDF bài 3, trang 6.
 Độ khó: Dễ
-Câu 97. Trong bài học, “便宜” (piányi) có nghĩa là gì?
+Câu 97. Trong bài học, “便宜” có nghĩa là gì?
 A. mua
 B. họ Hoàng
 C. một
@@ -793,7 +793,7 @@ D. piányi
 Đáp án: D
 Lời giải: 便宜 đọc là piányi, nghĩa là rẻ. Tham chiếu: PDF bài 3, trang 6.
 Độ khó: Dễ
-Câu 100. Trong bài học, “这些” (zhèxiē) có nghĩa là gì?
+Câu 100. Trong bài học, “这些” có nghĩa là gì?
 A. những cái này
 B. xin, mời
 C. bận
@@ -817,7 +817,7 @@ D. ne
 Đáp án: A
 Lời giải: 这些 đọc là zhèxiē, nghĩa là những cái này. Tham chiếu: PDF bài 3, trang 7.
 Độ khó: Dễ
-Câu 103. Trong bài học, “那些” (nàxiē) có nghĩa là gì?
+Câu 103. Trong bài học, “那些” có nghĩa là gì?
 A. xin nghỉ phép
 B. rất
 C. những cái kia
@@ -841,7 +841,7 @@ D. shū
 Đáp án: C
 Lời giải: 那些 đọc là nàxiē, nghĩa là những cái kia. Tham chiếu: PDF bài 3, trang 8.
 Độ khó: Dễ
-Câu 106. Trong bài học, “书” (shū) có nghĩa là gì?
+Câu 106. Trong bài học, “书” có nghĩa là gì?
 A. công ty
 B. sách
 C. ăn
@@ -865,7 +865,7 @@ D. shū
 Đáp án: D
 Lời giải: 书 đọc là shū, nghĩa là sách. Tham chiếu: PDF bài 3, trang 8.
 Độ khó: Dễ
-Câu 109. Trong bài học, “汉语书” (Hànyǔ shū) có nghĩa là gì?
+Câu 109. Trong bài học, “汉语书” có nghĩa là gì?
 A. gì, cái gì
 B. của; trợ từ nối định ngữ
 C. sách tiếng Hán
@@ -889,7 +889,7 @@ D. zhè
 Đáp án: A
 Lời giải: 汉语书 đọc là Hànyǔ shū, nghĩa là sách tiếng Hán. Tham chiếu: PDF bài 3, trang 12.
 Độ khó: Dễ
-Câu 112. Trong bài học, “英语书” (Yīngyǔ shū) có nghĩa là gì?
+Câu 112. Trong bài học, “英语书” có nghĩa là gì?
 A. đi, bước đi
 B. người Trung Quốc
 C. sách tiếng Anh
@@ -913,7 +913,7 @@ D. hǎochī
 Đáp án: A
 Lời giải: 英语书 đọc là Yīngyǔ shū, nghĩa là sách tiếng Anh. Tham chiếu: PDF bài 3, trang 12.
 Độ khó: Dễ
-Câu 115. Trong bài học, “女朋友” (nǚ péngyou) có nghĩa là gì?
+Câu 115. Trong bài học, “女朋友” có nghĩa là gì?
 A. bạn gái
 B. gì, cái gì
 C. quý tính; hỏi họ một cách lịch sự
@@ -937,7 +937,7 @@ D. měi
 Đáp án: B
 Lời giải: 女朋友 đọc là nǚ péngyou, nghĩa là bạn gái. Tham chiếu: PDF bài 3, trang 13.
 Độ khó: Dễ
-Câu 118. Trong bài học, “男朋友” (nán péngyou) có nghĩa là gì?
+Câu 118. Trong bài học, “男朋友” có nghĩa là gì?
 A. họ Mã; con ngựa
 B. bạn trai
 C. nơi cao
@@ -961,7 +961,7 @@ D. rén
 Đáp án: A
 Lời giải: 男朋友 đọc là nán péngyou, nghĩa là bạn trai. Tham chiếu: PDF bài 3, trang 13.
 Độ khó: Dễ
-Câu 121. Trong bài học, “好朋友” (hǎo péngyou) có nghĩa là gì?
+Câu 121. Trong bài học, “好朋友” có nghĩa là gì?
 A. người Anh
 B. chính là
 C. bạn tốt, bạn thân
@@ -985,7 +985,7 @@ D. hǎo péngyou
 Đáp án: D
 Lời giải: 好朋友 đọc là hǎo péngyou, nghĩa là bạn tốt, bạn thân. Tham chiếu: PDF bài 3, trang 13.
 Độ khó: Dễ
-Câu 124. Trong bài học, “王” (Wáng) có nghĩa là gì?
+Câu 124. Trong bài học, “王” có nghĩa là gì?
 A. Trung Quốc
 B. chúng tôi, chúng ta
 C. họ Vương
@@ -1009,7 +1009,7 @@ D. máobǐ
 Đáp án: C
 Lời giải: 王 đọc là Wáng, nghĩa là họ Vương. Tham chiếu: PDF bài 3, trang 15.
 Độ khó: Dễ
-Câu 127. Trong bài học, “黄” (Huáng) có nghĩa là gì?
+Câu 127. Trong bài học, “黄” có nghĩa là gì?
 A. người Anh
 B. họ Hoàng
 C. Hoàng Văn Lệ, tên nhân vật
@@ -1033,7 +1033,7 @@ D. Huáng
 Đáp án: D
 Lời giải: 黄 đọc là Huáng, nghĩa là họ Hoàng. Tham chiếu: PDF bài 3, trang 15.
 Độ khó: Dễ
-Câu 130. Trong bài học, “老师” (lǎoshī) có nghĩa là gì?
+Câu 130. Trong bài học, “老师” có nghĩa là gì?
 A. trợ từ; dùng để hỏi lại trong bài
 B. giáo viên
 C. mua
@@ -1057,7 +1057,7 @@ D. gāochù
 Đáp án: A
 Lời giải: 老师 đọc là lǎoshī, nghĩa là giáo viên. Tham chiếu: PDF bài 3, trang 15.
 Độ khó: Dễ
-Câu 133. Trong bài học, “名字” (míngzi) có nghĩa là gì?
+Câu 133. Trong bài học, “名字” có nghĩa là gì?
 A. tên
 B. công ty
 C. gì, cái gì
@@ -1081,7 +1081,7 @@ D. míngzi
 Đáp án: D
 Lời giải: 名字 đọc là míngzi, nghĩa là tên. Tham chiếu: PDF bài 3, trang 19.
 Độ khó: Dễ
-Câu 136. Trong bài học, “爸爸” (bàba) có nghĩa là gì?
+Câu 136. Trong bài học, “爸爸” có nghĩa là gì?
 A. Việt Nam
 B. bố
 C. xin hỏi
@@ -1105,7 +1105,7 @@ D. duìbuqǐ
 Đáp án: C
 Lời giải: 爸爸 đọc là bàba, nghĩa là bố. Tham chiếu: PDF bài 3, trang 21.
 Độ khó: Dễ
-Câu 139. Trong bài học, “妈妈” (māma) có nghĩa là gì?
+Câu 139. Trong bài học, “妈妈” có nghĩa là gì?
 A. mẹ
 B. học sinh, sinh viên
 C. không có, chưa có
@@ -1129,7 +1129,7 @@ D. Yīngguó rén
 Đáp án: A
 Lời giải: 妈妈 đọc là māma, nghĩa là mẹ. Tham chiếu: PDF bài 3, trang 21.
 Độ khó: Dễ
-Câu 142. Trong bài học, “公司” (gōngsī) có nghĩa là gì?
+Câu 142. Trong bài học, “公司” có nghĩa là gì?
 A. bạn trai
 B. công ty
 C. cũng
@@ -1153,7 +1153,7 @@ D. shū
 Đáp án: B
 Lời giải: 公司 đọc là gōngsī, nghĩa là công ty. Tham chiếu: PDF bài 3, trang 21.
 Độ khó: Dễ
-Câu 145. Trong bài học, “买” (mǎi) có nghĩa là gì?
+Câu 145. Trong bài học, “买” có nghĩa là gì?
 A. tiền bạc
 B. rẻ
 C. mua
@@ -1177,7 +1177,7 @@ D. qǐngjià
 Đáp án: B
 Lời giải: 买 đọc là mǎi, nghĩa là mua. Tham chiếu: PDF bài 3, trang 25.
 Độ khó: Dễ
-Câu 148. Trong bài học, “我们” (wǒmen) có nghĩa là gì?
+Câu 148. Trong bài học, “我们” có nghĩa là gì?
 A. đều
 B. sách tiếng Hán
 C. chúng tôi, chúng ta
@@ -1201,7 +1201,7 @@ D. wǒmen
 Đáp án: D
 Lời giải: 我们 đọc là wǒmen, nghĩa là chúng tôi, chúng ta. Tham chiếu: PDF bài 3, trang 26.
 Độ khó: Dễ
-Câu 151. Trong bài học, “谁” (shéi) có nghĩa là gì?
+Câu 151. Trong bài học, “谁” có nghĩa là gì?
 A. xin, mời
 B. ai
 C. đắt; quý trong cách nói kính trọng
@@ -1225,7 +1225,7 @@ D. shéi
 Đáp án: D
 Lời giải: 谁 đọc là shéi, nghĩa là ai. Tham chiếu: PDF bài 3, trang 29.
 Độ khó: Dễ
-Câu 154. Trong bài học, “学生” (xuésheng) có nghĩa là gì?
+Câu 154. Trong bài học, “学生” có nghĩa là gì?
 A. họ Vương
 B. không có, chưa có
 C. quý tính; hỏi họ một cách lịch sự
@@ -1249,7 +1249,7 @@ D. xuésheng
 Đáp án: D
 Lời giải: 学生 đọc là xuésheng, nghĩa là học sinh, sinh viên. Tham chiếu: PDF bài 3, trang 29.
 Độ khó: Dễ
-Câu 157. Trong bài học, “中国人” (Zhōngguó rén) có nghĩa là gì?
+Câu 157. Trong bài học, “中国人” có nghĩa là gì?
 A. bố
 B. cảm thấy, cho rằng
 C. người Trung Quốc
@@ -1273,7 +1273,7 @@ D. péngyou
 Đáp án: A
 Lời giải: 中国人 đọc là Zhōngguó rén, nghĩa là người Trung Quốc. Tham chiếu: PDF bài 3, trang 32.
 Độ khó: Dễ
-Câu 160. Trong bài học, “英国人” (Yīngguó rén) có nghĩa là gì?
+Câu 160. Trong bài học, “英国人” có nghĩa là gì?
 A. bố
 B. đắt; quý trong cách nói kính trọng
 C. quen, biết một người
@@ -1297,7 +1297,7 @@ D. Huáng Wénlì
 Đáp án: B
 Lời giải: 英国人 đọc là Yīngguó rén, nghĩa là người Anh. Tham chiếu: PDF bài 3, trang 36.
 Độ khó: Dễ
-Câu 163. Trong bài học, “美国人” (Měiguó rén) có nghĩa là gì?
+Câu 163. Trong bài học, “美国人” có nghĩa là gì?
 A. mẹ
 B. tăng trưởng, tăng thêm
 C. người Mỹ
@@ -1321,7 +1321,7 @@ D. Měiguó rén
 Đáp án: D
 Lời giải: 美国人 đọc là Měiguó rén, nghĩa là người Mỹ. Tham chiếu: PDF bài 3, trang 36.
 Độ khó: Dễ
-Câu 166. Trong bài học, “泰国人” (Tàiguó rén) có nghĩa là gì?
+Câu 166. Trong bài học, “泰国人” có nghĩa là gì?
 A. sách tiếng Anh
 B. xin hỏi
 C. tăng trưởng, tăng thêm
@@ -1345,7 +1345,7 @@ D. qǐng
 Đáp án: B
 Lời giải: 泰国人 đọc là Tàiguó rén, nghĩa là người Thái Lan. Tham chiếu: PDF bài 3, trang 38.
 Độ khó: Dễ
-Câu 169. Trong bài học, “时间” (shíjiān) có nghĩa là gì?
+Câu 169. Trong bài học, “时间” có nghĩa là gì?
 A. đẹp; yếu tố chỉ Mỹ trong tên nước
 B. ngồi
 C. sách tiếng Anh
@@ -1369,7 +1369,7 @@ D. Zhōngguó
 Đáp án: A
 Lời giải: 时间 đọc là shíjiān, nghĩa là thời gian. Tham chiếu: PDF bài 3, trang 40.
 Độ khó: Dễ
-Câu 172. Trong bài học, “就是” (jiùshì) có nghĩa là gì?
+Câu 172. Trong bài học, “就是” có nghĩa là gì?
 A. chính là
 B. nhỏ, bé
 C. mua
@@ -1393,7 +1393,7 @@ D. nǚshì
 Đáp án: C
 Lời giải: 就是 đọc là jiùshì, nghĩa là chính là. Tham chiếu: PDF bài 3, trang 40.
 Độ khó: Dễ
-Câu 175. Trong bài học, “金钱” (jīnqián) có nghĩa là gì?
+Câu 175. Trong bài học, “金钱” có nghĩa là gì?
 A. tiền bạc
 B. gì, cái gì
 C. quen, biết một người
@@ -1417,7 +1417,7 @@ D. Yīngguó rén
 Đáp án: C
 Lời giải: 金钱 đọc là jīnqián, nghĩa là tiền bạc. Tham chiếu: PDF bài 3, trang 40.
 Độ khó: Dễ
-Câu 178. Trong bài học, “吃” (chī) có nghĩa là gì?
+Câu 178. Trong bài học, “吃” có nghĩa là gì?
 A. này, đây
 B. của; trợ từ nối định ngữ
 C. ăn
@@ -1441,7 +1441,7 @@ D. rènshi
 Đáp án: C
 Lời giải: 吃 đọc là chī, nghĩa là ăn. Tham chiếu: PDF bài 3, trang 40.
 Độ khó: Dễ
-Câu 181. Trong bài học, “一” (yī) có nghĩa là gì?
+Câu 181. Trong bài học, “一” có nghĩa là gì?
 A. tăng trưởng, tăng thêm
 B. hướng về, đi về phía
 C. một
@@ -1465,7 +1465,7 @@ D. yī
 Đáp án: D
 Lời giải: 一 đọc là yī, nghĩa là một. Tham chiếu: PDF bài 3, trang 40.
 Độ khó: Dễ
-Câu 184. Trong bài học, “堑” (qiàn) có nghĩa là gì?
+Câu 184. Trong bài học, “堑” có nghĩa là gì?
 A. người Mỹ
 B. bà, cô; cách xưng hô lịch sự
 C. hào, hố; trở ngại trong câu tục ngữ
@@ -1489,7 +1489,7 @@ D. guó
 Đáp án: B
 Lời giải: 堑 đọc là qiàn, nghĩa là hào, hố; trở ngại trong câu tục ngữ. Tham chiếu: PDF bài 3, trang 40.
 Độ khó: Dễ
-Câu 187. Trong bài học, “长” (zhǎng) có nghĩa là gì?
+Câu 187. Trong bài học, “长” có nghĩa là gì?
 A. tăng trưởng, tăng thêm
 B. Việt Nam
 C. trí tuệ, sự khôn ngoan
@@ -1513,7 +1513,7 @@ D. hǎo péngyou
 Đáp án: B
 Lời giải: 长 đọc là zhǎng, nghĩa là tăng trưởng, tăng thêm. Tham chiếu: PDF bài 3, trang 40.
 Độ khó: Dễ
-Câu 190. Trong bài học, “智” (zhì) có nghĩa là gì?
+Câu 190. Trong bài học, “智” có nghĩa là gì?
 A. trí tuệ, sự khôn ngoan
 B. danh thiếp
 C. nơi cao
@@ -1537,7 +1537,7 @@ D. guì
 Đáp án: B
 Lời giải: 智 đọc là zhì, nghĩa là trí tuệ, sự khôn ngoan. Tham chiếu: PDF bài 3, trang 40.
 Độ khó: Dễ
-Câu 193. Trong bài học, “人” (rén) có nghĩa là gì?
+Câu 193. Trong bài học, “人” có nghĩa là gì?
 A. kia, đó
 B. to, lớn
 C. hỏi
@@ -1561,7 +1561,7 @@ D. nǎ
 Đáp án: A
 Lời giải: 人 đọc là rén, nghĩa là người. Tham chiếu: PDF bài 3, trang 40.
 Độ khó: Dễ
-Câu 196. Trong bài học, “往” (wǎng) có nghĩa là gì?
+Câu 196. Trong bài học, “往” có nghĩa là gì?
 A. giáo viên
 B. cũng
 C. hướng về, đi về phía
@@ -1585,7 +1585,7 @@ D. jìn
 Đáp án: B
 Lời giải: 往 đọc là wǎng, nghĩa là hướng về, đi về phía. Tham chiếu: PDF bài 3, trang 40.
 Độ khó: Dễ
-Câu 199. Trong bài học, “高处” (gāochù) có nghĩa là gì?
+Câu 199. Trong bài học, “高处” có nghĩa là gì?
 A. nhỏ, bé
 B. nơi cao
 C. nước, quốc gia
@@ -1609,7 +1609,7 @@ D. wǎng
 Đáp án: B
 Lời giải: 高处 đọc là gāochù, nghĩa là nơi cao. Tham chiếu: PDF bài 3, trang 40.
 Độ khó: Dễ
-Câu 202. Trong bài học, “走” (zǒu) có nghĩa là gì?
+Câu 202. Trong bài học, “走” có nghĩa là gì?
 A. bà, cô; cách xưng hô lịch sự
 B. nhỏ, bé
 C. tiền bạc
@@ -1633,7 +1633,7 @@ D. zǒu
 Đáp án: D
 Lời giải: 走 đọc là zǒu, nghĩa là đi, bước đi. Tham chiếu: PDF bài 3, trang 40.
 Độ khó: Dễ
-Câu 205. Trong bài học, “水” (shuǐ) có nghĩa là gì?
+Câu 205. Trong bài học, “水” có nghĩa là gì?
 A. nước
 B. đi, bước đi
 C. ngon, dùng cho đồ ăn
@@ -1657,7 +1657,7 @@ D. Yuènán
 Đáp án: C
 Lời giải: 水 đọc là shuǐ, nghĩa là nước. Tham chiếu: PDF bài 3, trang 40.
 Độ khó: Dễ
-Câu 208. Trong bài học, “低处” (dīchù) có nghĩa là gì?
+Câu 208. Trong bài học, “低处” có nghĩa là gì?
 A. gì, cái gì
 B. mua
 C. không; từ phủ định
@@ -1681,7 +1681,7 @@ D. měi
 Đáp án: C
 Lời giải: 低处 đọc là dīchù, nghĩa là nơi thấp. Tham chiếu: PDF bài 3, trang 40.
 Độ khó: Dễ
-Câu 211. Trong bài học, “流” (liú) có nghĩa là gì?
+Câu 211. Trong bài học, “流” có nghĩa là gì?
 A. chính là
 B. chảy
 C. trí tuệ, sự khôn ngoan
@@ -1705,7 +1705,7 @@ D. nǚ péngyou
 Đáp án: C
 Lời giải: 流 đọc là liú, nghĩa là chảy. Tham chiếu: PDF bài 3, trang 40.
 Độ khó: Dễ
-Câu 214. Trong bài học, “叫” (jiào) có nghĩa là gì?
+Câu 214. Trong bài học, “叫” có nghĩa là gì?
 A. tên
 B. chúng tôi, chúng ta
 C. những cái này
@@ -1729,7 +1729,7 @@ D. shéi
 Đáp án: B
 Lời giải: 叫 đọc là jiào, nghĩa là gọi, tên là. Tham chiếu: PDF bài 3, trang 2.
 Độ khó: Dễ
-Câu 217. Trong bài học, “什么” (shénme) có nghĩa là gì?
+Câu 217. Trong bài học, “什么” có nghĩa là gì?
 A. công ty
 B. quý tính; hỏi họ một cách lịch sự
 C. mẹ
@@ -1753,7 +1753,7 @@ D. méi guānxi
 Đáp án: A
 Lời giải: 什么 đọc là shénme, nghĩa là gì, cái gì. Tham chiếu: PDF bài 3, trang 2.
 Độ khó: Dễ
-Câu 220. Trong bài học, “新” (xīn) có nghĩa là gì?
+Câu 220. Trong bài học, “新” có nghĩa là gì?
 A. mới
 B. tiền bạc
 C. quý tính; hỏi họ một cách lịch sự
@@ -1777,7 +1777,7 @@ D. xīn
 Đáp án: D
 Lời giải: 新 đọc là xīn, nghĩa là mới. Tham chiếu: PDF bài 3, trang 2.
 Độ khó: Dễ
-Câu 223. Trong bài học, “很” (hěn) có nghĩa là gì?
+Câu 223. Trong bài học, “很” có nghĩa là gì?
 A. mua
 B. nơi thấp
 C. xin hỏi
@@ -1801,7 +1801,7 @@ D. Zhōngguó rén
 Đáp án: B
 Lời giải: 很 đọc là hěn, nghĩa là rất. Tham chiếu: PDF bài 3, trang 2.
 Độ khó: Dễ
-Câu 226. Trong bài học, “毛笔” (máobǐ) có nghĩa là gì?
+Câu 226. Trong bài học, “毛笔” có nghĩa là gì?
 A. ngon, dùng cho đồ ăn
 B. ông, ngài; cách xưng hô lịch sự
 C. bút lông
@@ -1825,7 +1825,7 @@ D. péngyou
 Đáp án: A
 Lời giải: 毛笔 đọc là máobǐ, nghĩa là bút lông. Tham chiếu: PDF bài 3, trang 2.
 Độ khó: Dễ
-Câu 229. Trong bài học, “哪” (nǎ) có nghĩa là gì?
+Câu 229. Trong bài học, “哪” có nghĩa là gì?
 A. nào
 B. mẹ
 C. bút lông
@@ -1849,7 +1849,7 @@ D. nǎ
 Đáp án: D
 Lời giải: 哪 đọc là nǎ, nghĩa là nào. Tham chiếu: PDF bài 3, trang 2.
 Độ khó: Dễ
-Câu 232. Trong bài học, “飞机” (fēijī) có nghĩa là gì?
+Câu 232. Trong bài học, “飞机” có nghĩa là gì?
 A. người
 B. bạn trai
 C. những cái này
@@ -1873,7 +1873,7 @@ D. zhì
 Đáp án: B
 Lời giải: 飞机 đọc là fēijī, nghĩa là máy bay. Tham chiếu: PDF bài 3, trang 2.
 Độ khó: Dễ
-Câu 235. Trong bài học, “国” (guó) có nghĩa là gì?
+Câu 235. Trong bài học, “国” có nghĩa là gì?
 A. giáo viên
 B. ai
 C. nước, quốc gia
@@ -1897,7 +1897,7 @@ D. nà
 Đáp án: C
 Lời giải: 国 đọc là guó, nghĩa là nước, quốc gia. Tham chiếu: PDF bài 3, trang 2.
 Độ khó: Dễ
-Câu 238. Trong bài học, “越南” (Yuènán) có nghĩa là gì?
+Câu 238. Trong bài học, “越南” có nghĩa là gì?
 A. những cái kia
 B. không sao, không có việc gì
 C. Việt Nam
@@ -1921,7 +1921,7 @@ D. juéde
 Đáp án: B
 Lời giải: 越南 đọc là Yuènán, nghĩa là Việt Nam. Tham chiếu: PDF bài 3, trang 2.
 Độ khó: Dễ
-Câu 241. Trong bài học, “美” (měi) có nghĩa là gì?
+Câu 241. Trong bài học, “美” có nghĩa là gì?
 A. đẹp; yếu tố chỉ Mỹ trong tên nước
 B. một
 C. gọi, tên là
@@ -1945,7 +1945,7 @@ D. dà
 Đáp án: B
 Lời giải: 美 đọc là měi, nghĩa là đẹp; yếu tố chỉ Mỹ trong tên nước. Tham chiếu: PDF bài 3, trang 2.
 Độ khó: Dễ
-Câu 244. Trong bài học, “咖啡” (kāfēi) có nghĩa là gì?
+Câu 244. Trong bài học, “咖啡” có nghĩa là gì?
 A. xin lỗi
 B. cũng
 C. quý tính; hỏi họ một cách lịch sự
@@ -1969,7 +1969,7 @@ D. kāfēi
 Đáp án: D
 Lời giải: 咖啡 đọc là kāfēi, nghĩa là cà phê. Tham chiếu: PDF bài 3, trang 2.
 Độ khó: Dễ
-Câu 247. Trong bài học, “不” (bù) có nghĩa là gì?
+Câu 247. Trong bài học, “不” có nghĩa là gì?
 A. nước
 B. sách tiếng Anh
 C. không; từ phủ định
@@ -1993,7 +1993,7 @@ D. bàba
 Đáp án: A
 Lời giải: 不 đọc là bù, nghĩa là không; từ phủ định. Tham chiếu: PDF bài 3, trang 2.
 Độ khó: Dễ
-Câu 250. Trong bài học, “贵姓” (guìxìng) có nghĩa là gì?
+Câu 250. Trong bài học, “贵姓” có nghĩa là gì?
 A. bố
 B. quý tính; hỏi họ một cách lịch sự
 C. sách tiếng Anh
@@ -2017,7 +2017,7 @@ D. guìxìng
 Đáp án: D
 Lời giải: 贵姓 đọc là guìxìng, nghĩa là quý tính; hỏi họ một cách lịch sự. Tham chiếu: PDF bài 3, trang 2.
 Độ khó: Dễ
-Câu 253. Trong bài học, “中国” (Zhōngguó) có nghĩa là gì?
+Câu 253. Trong bài học, “中国” có nghĩa là gì?
 A. bút lông
 B. hướng về, đi về phía
 C. rẻ
@@ -2041,7 +2041,7 @@ D. bù
 Đáp án: A
 Lời giải: 中国 đọc là Zhōngguó, nghĩa là Trung Quốc. Tham chiếu: PDF bài 3, trang 2.
 Độ khó: Dễ
-Câu 256. Trong bài học, “呢” (ne) có nghĩa là gì?
+Câu 256. Trong bài học, “呢” có nghĩa là gì?
 A. không sao, không có việc gì
 B. nơi cao
 C. trợ từ; dùng để hỏi lại trong bài
@@ -2065,7 +2065,7 @@ D. ne
 Đáp án: D
 Lời giải: 呢 đọc là ne, nghĩa là trợ từ; dùng để hỏi lại trong bài. Tham chiếu: PDF bài 3, trang 2.
 Độ khó: Dễ
-Câu 259. Trong bài học, “贵” (guì) có nghĩa là gì?
+Câu 259. Trong bài học, “贵” có nghĩa là gì?
 A. đắt; quý trong cách nói kính trọng
 B. Trung Quốc
 C. những cái này

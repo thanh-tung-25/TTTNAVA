@@ -1,6 +1,7 @@
 import mammoth from 'mammoth';
 import { badRequest } from '../utils/errors.js';
 import { cleanChineseLine, isQuestionStart, isChineseSection, parseChineseQuestion } from './chinese-question-text.js';
+import {chineseQuestionPrompt} from '../../../frontend/assets/js/chinese-question-prompt.js';
 // Only explicit source data is recognized. Unrecognized paragraphs remain editable.
 export function parseChineseText(raw) {
  const items = []; let section = 'unknown';
@@ -24,7 +25,7 @@ export function parseChineseText(raw) {
    data = {hanzi,pinyin,meaning,part_of_speech,example,example_pinyin,example_meaning,audio_url,image_url,mnemonic,radicals,group};
   } else if (section === 'question' && cells.length >= 4) {
    const [type,prompt,options,accepted,explanation='',audio_url='',difficulty='medium',targets=''] = cells;
-   data = {type,prompt,options:options.split(';;').filter(Boolean),targets:targets.split(';;').filter(Boolean),accepted:accepted.split(';;').filter(Boolean),explanation,audio_url,difficulty,approved:false};
+   data = {type,prompt:chineseQuestionPrompt(prompt),options:options.split(';;').filter(Boolean),targets:targets.split(';;').filter(Boolean),accepted:accepted.split(';;').filter(Boolean),explanation,audio_url,difficulty,approved:false};
   } else if (['grammar','dialogue','reading'].includes(section)) data = {text:line};
   else { items.push({kind:'unknown', data:{text:line}}); continue; }
   items.push({kind:section,data});

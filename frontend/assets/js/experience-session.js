@@ -1,5 +1,6 @@
 import {request,boot,el,card,action,link,message} from './experience-ui.js';
 import {questionAudio} from './question-audio.js';
+import {chineseQuestionPrompt} from './chinese-question-prompt.js';
 const id=new URLSearchParams(location.search).get('run'),root=document.getElementById('experience-root');
 let state,profile,saveTimer,saveChain=Promise.resolve(),collect=()=>({}),generation=0,busy=false,localKey;
 const expected=f=>{const a=f.expected;if(f.type==='single_choice')return f.options.find(o=>o.key===a.key)?.text||a.key;if(f.type==='multiple_choice')return f.options.filter(o=>a.keys.includes(o.key)).map(o=>o.text).join(' · ');return a?.accepted?.join(' / ')??(typeof a?.value==='boolean'?(a.value?'Đúng':'Sai'):'');};
@@ -34,11 +35,11 @@ function render(){
   for(const f of state.feedback)root.append(el('div',{class:'experience-feedback'+(f.correct?'':' is-wrong')},[el('strong',{text:f.prompt}),el('p',{text:(f.correct?'Đúng':'Cần ôn lại')+' · '+f.explanation}),el('details',{},[el('summary',{text:'Xem đáp án'}),el('p',{text:String(expected(f))})])]));return;
  }
  if(!state.question){root.append(card('Cùng chốt buổi học',el('p',{text:'Bạn đã trả lời đủ câu. Hoàn thành để lưu kết quả và cập nhật tiến bộ.'}),action('Hoàn thành buổi học',async()=>{state=await request('/runs/'+id+'/finish',{method:'POST'});render();},true)));return;}
- const q=state.question,form=questionForm(q),hint=el('p',{class:'experience-status',role:'status'}),saveStatus=el('p',{id:'session-save-status',class:'experience-status',role:'status',text:'Bài được lưu theo tài khoản. Bản nháp được giữ khi tải lại cùng thẻ.'});
+ const q=state.question,form=questionForm(q),hint=el('p',{class:'experience-status',role:'status'}),saveStatus=el('p',{id:'session-save-status',class:'experience-status',role:'status',text:'Bài được lưu theo tài khoản. Bản nháp được giữ khi tải lại cùng thẻ.'}),prompt=q.subject==='chinese'?chineseQuestionPrompt(q.prompt):q.prompt;
  const submit=action('Chốt câu trả lời',async()=>{if(busy)return;clearTimeout(saveTimer);await queueSave();await saveChain;const answer=collect();busy=true;
   try{state=await request('/runs/'+id+'/answer',{method:'POST',body:{questionId:q.id,answer,revision:state.revision}});sessionStorage.removeItem(localKey);render();}finally{busy=false;}
  },true);
- root.append(card(q.label,el('p',{class:'experience-question',text:q.prompt}),questionAudio(q.prompt,{language:q.subject==='tieng-anh'?'en-US':q.subject==='chinese'?'zh-CN':'vi-VN'}),form,saveStatus,el('div',{class:'experience-actions'},[submit,...[1,2].map(level=>action('Gợi ý '+level,async()=>{const r=await request('/runs/'+id+'/hint?level='+level);hint.textContent=r.text;}))]),hint));
+ root.append(card(q.label,el('p',{class:'experience-question',text:prompt}),questionAudio(prompt,{language:q.subject==='tieng-anh'?'en-US':q.subject==='chinese'?'zh-CN':'vi-VN'}),form,saveStatus,el('div',{class:'experience-actions'},[submit,...(q.subject==='chinese'?[]:[1,2]).map(level=>action('Gợi ý '+level,async()=>{const r=await request('/runs/'+id+'/hint?level='+level);hint.textContent=r.text;}))]),hint));
  const previous=state.feedback.at(-1);if(previous)root.append(el('div',{class:'experience-feedback'+(previous.correct?'':' is-wrong')},[el('strong',{text:previous.correct?'Câu trước đã đúng':'Câu trước cần ôn lại'}),el('p',{text:previous.prompt}),el('p',{text:previous.explanation||'Hãy xem đáp án và tự giải thích lại cách làm.'}),el('p',{text:'Đáp án: '+expected(previous)})]));
 }
 window.addEventListener('online',()=>{if(state?.question)queueSave();});window.addEventListener('pagehide',()=>clearTimeout(saveTimer));

@@ -5,10 +5,10 @@ import path from 'node:path';
 let server,origin;
 test.beforeAll(async()=>{const root=path.resolve('frontend');server=createServer(async(req,res)=>{let p=path.resolve(root,'.'+new URL(req.url,'http://localhost').pathname);if(p.endsWith(path.sep))p+='index.html';else if(!path.extname(p))p=path.join(p,'index.html');if(!p.startsWith(root+path.sep)){res.writeHead(403).end();return;}try{res.setHeader('Content-Type',({'.js':'text/javascript','.css':'text/css','.html':'text/html; charset=utf-8','.svg':'image/svg+xml'})[path.extname(p)]||'application/octet-stream');res.end(await readFile(p));}catch{res.writeHead(404).end();}});await new Promise(r=>server.listen(0,'127.0.0.1',r));origin='http://127.0.0.1:'+server.address().port;});
 test.afterAll(async()=>new Promise(r=>server.close(r)));
-async function mock(page){
+async function mock(page,{prompt}={}){
  const lesson={id:'lesson-1',level_id:1,title:'Bài 1. Xin chào',status:'published'},set={id:'set-1',lesson_id:lesson.id,level_id:1,title:'Bộ bài 1',lesson_title:lesson.title,activity_count:0};
  const words=[{id:'word-1',set_id:set.id,kind:'vocabulary',data:{hanzi:'你好',pinyin:'nǐ hǎo',meaning:'Xin chào'}},{id:'word-2',set_id:set.id,kind:'vocabulary',data:{hanzi:'谢谢',pinyin:'xiè xie',meaning:'Cảm ơn'}}];
- const questions=Array.from({length:20},(_,n)=>({id:'q-'+n,set_id:set.id,kind:'question',data:{type:'choice',prompt:'Câu hỏi '+(n+1),options:['Đúng','Sai']}}));
+ const questions=Array.from({length:20},(_,n)=>({id:'q-'+n,set_id:set.id,kind:'question',data:{type:'choice',prompt:n===0&&prompt?prompt:'Câu hỏi '+(n+1),options:['Đúng','Sai']}}));
  let attempt={id:'attempt-1',set_id:set.id,title:'Quiz 20 câu',items:structuredClone(questions)},reports=[];const requests=[];
  await page.addInitScript(()=>{localStorage.setItem('ttnava-course','hsk-1');window.__spoken=[];Object.defineProperty(window,'SpeechSynthesisUtterance',{value:class{constructor(text){this.text=text;}}});Object.defineProperty(window,'speechSynthesis',{value:{getVoices:()=>[{lang:'vi-VN'},{lang:'zh-CN'}],cancel:()=>{},speak:u=>window.__spoken.push(u.text)}});});
  await page.route('**/api/v1/**',async route=>{const req=route.request(),p=new URL(req.url()).pathname;let data={};
@@ -28,14 +28,54 @@ async function mock(page){
   else if(p.endsWith('/learning/wrong'))data=[{id:'q-1',title:'Câu từng sai',explanation:'Giải thích',answer:'Đúng',href:'/pages/student/chinese/?attempt=attempt-1',set_id:set.id}];
   else if(p.endsWith('/learning/goal'))data=req.postDataJSON();
   await route.fulfill({json:{data}});
- });return {requests,reports};
+ });return {requests,reports,attempt};
 }
+
+test('old pinyin annotations stay out of quiz prompts, audio, cards, previews and completed attempts',async({page})=>{
+ const raw='Trong bài học, “请问” (qǐngwèn) có nghĩa là gì?',clean='Trong bài học, “请问” có nghĩa là gì?';
+ const state=await mock(page,{prompt:raw}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(origin+'/pages/student/chinese/?attempt=attempt-1');
+ await expect(page.locator('.quiz-prompt')).toHaveText(clean);
+ await expect(page.locator('.hub-hint')).toHaveCount(0);
+ await page.evaluate(()=>{speechSynthesis.speak=u=>{window.__spoken.push(u.text);queueMicrotask(()=>u.onend?.());};});
+ await page.getByRole('button',{name:'Nghe câu hỏi',exact:false}).click();
+ await expect.poll(()=>page.evaluate(()=>window.__spoken.join(''))).toBe(clean);
+ await page.getByRole('radio',{name:/Đúng/}).check();await page.getByRole('button',{name:'Kiểm tra',exact:true}).click();
+ await expect(page.locator('.quiz-prompt')).toHaveText(clean);
+ state.attempt.finished_at=new Date().toISOString();state.attempt.started_at=state.attempt.finished_at;state.attempt.score=100;
+ for(const item of state.attempt.items)item.result||={correct:false,value:'',accepted:['Đúng'],explanation:'Lời giải'};
+ await page.goto(origin+'/pages/student/chinese/?attempt=attempt-1');await page.getByRole('button',{name:'Xem tất cả',exact:true}).click();
+ await expect(page.locator('.study-prompt').first()).toContainText(clean);await expect(page.locator('.study-prompt').first()).not.toContainText('qǐngwèn');
+ await page.goto(origin+'/pages/student/chinese/?set=set-1&mode=cards');
+ await page.getByText('Tùy chọn thẻ',{exact:true}).click();await page.getByLabel('Loại thẻ').selectOption('question');await expect(page.locator('.flashcard .study-prompt')).toHaveText(clean);
+ await expect(page.locator('.hub-hint')).toHaveCount(0);
+ await page.goto(origin+'/pages/student/chinese/');await page.getByRole('button',{name:'Quiz 20 câu',exact:true}).click();
+ await page.locator('.journey-preview summary').click();await expect(page.locator('.journey-preview')).toContainText(clean);await expect(page.locator('.journey-preview')).not.toContainText('qǐngwèn');
+ await page.goto(origin+'/pages/student/chinese/?set=set-1&mode=words');await expect(page.locator('.hub-table')).toContainText('nǐ hǎo');
+ await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect(errors).toEqual([]);
+});
+test('Chinese personal sessions omit hint controls and saved word hints while other subjects retain their controls',async({page})=>{
+ await mock(page);const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const state={id:'no-hints',title:'Buổi học tiếng Trung',status:'open',total:1,answered:0,revision:0,draft:{},feedback:[],question:{id:'q',type:'fill_in',subject:'chinese',label:'Điền từ',prompt:'我___名片。\nTừ/cụm từ gợi ý: 没有 · 有',options:[]}};
+ await page.route('**/api/v1/experience/runs/no-hints',r=>r.fulfill({json:{data:state}}));
+ await page.goto(origin+'/pages/student/session/?run=no-hints');
+ await expect(page.locator('.experience-question')).toHaveText('我___名片。');
+ await expect(page.getByRole('button',{name:/^Gợi ý/})).toHaveCount(0);await expect(page.getByRole('button',{name:'Chốt câu trả lời',exact:true})).toBeVisible();
+ await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.route('**/api/v1/experience/dashboard',r=>r.fulfill({json:{data:{prefs:{minutes:10},resume:null}}}));
+ await page.route('**/api/v1/experience/catalog',r=>r.fulfill({json:{data:{items:[{id:'set-1',name:'Xin chào',total:20}],focus:{set_id:'set-1'}}}}));
+ await page.goto(origin+'/pages/student/today/');await expect(page.locator('#experience-root')).toContainText('Ôn lại những từ đã học.');await expect(page.locator('#experience-root')).not.toContainText('gợi ý');
+ state.question.subject='toan';state.question.prompt='Tính 1 + 1 = ___';
+ await page.goto(origin+'/pages/student/session/?run=no-hints');await expect(page.getByRole('button',{name:'Gợi ý 1',exact:true})).toBeVisible();await expect(page.getByRole('button',{name:'Gợi ý 2',exact:true})).toBeVisible();expect(errors).toEqual([]);
+});
+
 test('word table has three columns, filters pinyin, plays only on click, and listening waits for a click',async({page})=>{
  await mock(page);const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(origin+'/pages/student/chinese/?set=set-1&mode=words');
  await expect(page.locator('.hub-table th')).toHaveCount(3);await expect(page.locator('.hub-table tbody tr')).toHaveCount(2);expect(await page.evaluate(()=>window.__spoken)).toEqual([]);
  await page.getByRole('searchbox',{name:'Tìm từ trong bài'}).fill('ni hao');await expect(page.locator('.hub-table tbody tr')).toHaveCount(1);
  await page.getByRole('button',{name:'Nghe 你好',exact:true}).click();expect(await page.evaluate(()=>window.__spoken.at(-1))).toBe('你好');
  await page.goto(origin+'/pages/student/chinese/?set=set-1&mode=listen');await expect(page.getByRole('button',{name:'Nghe từ tiếng Trung',exact:true})).toBeVisible();expect(await page.evaluate(()=>window.__spoken)).toEqual([]);
+ await expect(page.locator('.hub-hint')).toHaveCount(0);await expect(page.getByRole('button',{name:'Phản ánh câu này',exact:true})).toBeVisible();
  await page.getByRole('button',{name:'Nghe từ tiếng Trung',exact:true}).click();expect((await page.evaluate(()=>window.__spoken)).length).toBe(1);
  await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect(errors).toEqual([]);
 });

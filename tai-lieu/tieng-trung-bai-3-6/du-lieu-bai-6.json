@@ -642,7 +642,7 @@
   ],
   "questions": [
     {
-      "prompt": "Trong bài học, “在” (zài) có nghĩa là gì?",
+      "prompt": "Trong bài học, “在” có nghĩa là gì?",
       "options": [
         "tiếng Anh",
         "ở; đang",
@@ -678,7 +678,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “工作” (gōngzuò) có nghĩa là gì?",
+      "prompt": "Trong bài học, “工作” có nghĩa là gì?",
       "options": [
         "đẹp, ưa nhìn; hay khi nói về phim, sách",
         "làm việc; công việc",
@@ -714,7 +714,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “苹果” (píngguǒ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “苹果” có nghĩa là gì?",
       "options": [
         "ở đây, chỗ này",
         "quả táo",
@@ -750,7 +750,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “公司” (gōngsī) có nghĩa là gì?",
+      "prompt": "Trong bài học, “公司” có nghĩa là gì?",
       "options": [
         "đang; chỉ hành động diễn ra",
         "tan làm, hết ca",
@@ -786,7 +786,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “留学生” (liúxuéshēng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “留学生” có nghĩa là gì?",
       "options": [
         "du học sinh",
         "tan lớp, hết giờ học",
@@ -822,7 +822,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “留学” (liúxué) có nghĩa là gì?",
+      "prompt": "Trong bài học, “留学” có nghĩa là gì?",
       "options": [
         "xin nghỉ phép",
         "du học",
@@ -858,7 +858,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “学” (xué) có nghĩa là gì?",
+      "prompt": "Trong bài học, “学” có nghĩa là gì?",
       "options": [
         "đi làm, vào ca",
         "dễ",
@@ -894,7 +894,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “学习” (xuéxí) có nghĩa là gì?",
+      "prompt": "Trong bài học, “学习” có nghĩa là gì?",
       "options": [
         "học, học tập",
         "công ty Apple",
@@ -930,7 +930,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “汉语” (Hànyǔ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “汉语” có nghĩa là gì?",
       "options": [
         "Mã Văn, tên nhân vật",
         "Tây An",
@@ -966,7 +966,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “英语” (Yīngyǔ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “英语” có nghĩa là gì?",
       "options": [
         "số điện thoại",
         "tiếng Anh",
@@ -1002,7 +1002,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “朋友” (péngyou) có nghĩa là gì?",
+      "prompt": "Trong bài học, “朋友” có nghĩa là gì?",
       "options": [
         "ở đây, chỗ này",
         "xấu, hư, hỏng",
@@ -1038,7 +1038,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “男朋友” (nán péngyou) có nghĩa là gì?",
+      "prompt": "Trong bài học, “男朋友” có nghĩa là gì?",
       "options": [
         "bạn trai",
         "điện thoại",
@@ -1074,7 +1074,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “女朋友” (nǚ péngyou) có nghĩa là gì?",
+      "prompt": "Trong bài học, “女朋友” có nghĩa là gì?",
       "options": [
         "đẹp, ưa nhìn; hay khi nói về phim, sách",
         "không sai, đúng vậy",
@@ -1110,7 +1110,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “对” (duì) có nghĩa là gì?",
+      "prompt": "Trong bài học, “对” có nghĩa là gì?",
       "options": [
         "giờ, tiếng đồng hồ",
         "quần áo",
@@ -1146,7 +1146,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “做” (zuò) có nghĩa là gì?",
+      "prompt": "Trong bài học, “做” có nghĩa là gì?",
       "options": [
         "Thượng Hải",
         "làm, tiến hành",
@@ -1182,7 +1182,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “大学” (dàxué) có nghĩa là gì?",
+      "prompt": "Trong bài học, “大学” có nghĩa là gì?",
       "options": [
         "máy tính",
         "kết hôn",
@@ -1218,7 +1218,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “中学” (zhōngxué) có nghĩa là gì?",
+      "prompt": "Trong bài học, “中学” có nghĩa là gì?",
       "options": [
         "máy tính xách tay, máy tính cầm tay",
         "nửa",
@@ -1254,7 +1254,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “教” (jiāo) có nghĩa là gì?",
+      "prompt": "Trong bài học, “教” có nghĩa là gì?",
       "options": [
         "dạy",
         "xấu, hư, hỏng",
@@ -1290,7 +1290,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “海伦” (Hǎilún) có nghĩa là gì?",
+      "prompt": "Trong bài học, “海伦” có nghĩa là gì?",
       "options": [
         "Helen, tên nhân vật",
         "đọc; học một cấp học",
@@ -1326,7 +1326,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “马文” (Mǎ Wén) có nghĩa là gì?",
+      "prompt": "Trong bài học, “马文” có nghĩa là gì?",
       "options": [
         "công ty Apple",
         "đọc; học một cấp học",
@@ -1362,7 +1362,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “北京” (Běijīng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “北京” có nghĩa là gì?",
       "options": [
         "ngoại ngữ",
         "Bắc Kinh",
@@ -1398,7 +1398,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “上海” (Shànghǎi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “上海” có nghĩa là gì?",
       "options": [
         "đẹp, xinh đẹp",
         "học",
@@ -1434,7 +1434,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “苹果公司” (Píngguǒ Gōngsī) có nghĩa là gì?",
+      "prompt": "Trong bài học, “苹果公司” có nghĩa là gì?",
       "options": [
         "công ty Apple",
         "phần, suất; lượng từ",
@@ -1470,7 +1470,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “正在” (zhèngzài) có nghĩa là gì?",
+      "prompt": "Trong bài học, “正在” có nghĩa là gì?",
       "options": [
         "đang; chỉ hành động diễn ra",
         "đại học",
@@ -1506,7 +1506,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “正” (zhèng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “正” có nghĩa là gì?",
       "options": [
         "đang, đúng lúc",
         "Helen, tên nhân vật",
@@ -1542,7 +1542,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “东西” (dōngxi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “东西” có nghĩa là gì?",
       "options": [
         "làm, làm việc",
         "ngoại ngữ",
@@ -1578,7 +1578,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “半” (bàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “半” có nghĩa là gì?",
       "options": [
         "viết",
         "nửa",
@@ -1614,7 +1614,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “看” (kàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “看” có nghĩa là gì?",
       "options": [
         "nhìn, xem, đọc, thăm, khám",
         "Bắc Kinh",
@@ -1650,7 +1650,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “现在” (xiànzài) có nghĩa là gì?",
+      "prompt": "Trong bài học, “现在” có nghĩa là gì?",
       "options": [
         "Vạn Lý Trường Thành",
         "gọi điện thoại",
@@ -1686,7 +1686,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “份” (fèn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “份” có nghĩa là gì?",
       "options": [
         "tòa nhà giảng dạy",
         "ở; đang",
@@ -1722,7 +1722,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “干” (gàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “干” có nghĩa là gì?",
       "options": [
         "khá tốt, không tệ",
         "tòa nhà giảng dạy",
@@ -1758,7 +1758,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “当” (dāng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “当” có nghĩa là gì?",
       "options": [
         "làm, đảm nhiệm một vai trò",
         "máy tính xách tay, máy tính cầm tay",
@@ -1794,7 +1794,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “办” (bàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “办” có nghĩa là gì?",
       "options": [
         "truyền hình, tivi",
         "xin nghỉ phép",
@@ -1830,7 +1830,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “弄” (nòng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “弄” có nghĩa là gì?",
       "options": [
         "truyền hình, tivi",
         "làm, xử lý",
@@ -1866,7 +1866,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “搞” (gǎo) có nghĩa là gì?",
+      "prompt": "Trong bài học, “搞” có nghĩa là gì?",
       "options": [
         "làm, tiến hành",
         "vào lớp, học trên lớp",
@@ -1902,7 +1902,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “手机” (shǒujī) có nghĩa là gì?",
+      "prompt": "Trong bài học, “手机” có nghĩa là gì?",
       "options": [
         "người Anh",
         "Thượng Hải",
@@ -1938,7 +1938,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “电话” (diànhuà) có nghĩa là gì?",
+      "prompt": "Trong bài học, “电话” có nghĩa là gì?",
       "options": [
         "máy tính xách tay",
         "điện thoại",
@@ -1974,7 +1974,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “打电话” (dǎ diànhuà) có nghĩa là gì?",
+      "prompt": "Trong bài học, “打电话” có nghĩa là gì?",
       "options": [
         "đẹp, xinh đẹp",
         "máy tính xách tay, máy tính cầm tay",
@@ -2010,7 +2010,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “电话号码” (diànhuà hàomǎ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “电话号码” có nghĩa là gì?",
       "options": [
         "đồng nghiệp",
         "số điện thoại",
@@ -2046,7 +2046,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “电脑” (diànnǎo) có nghĩa là gì?",
+      "prompt": "Trong bài học, “电脑” có nghĩa là gì?",
       "options": [
         "ngủ",
         "số điện thoại di động",
@@ -2082,7 +2082,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “笔记本电脑” (bǐjìběn diànnǎo) có nghĩa là gì?",
+      "prompt": "Trong bài học, “笔记本电脑” có nghĩa là gì?",
       "options": [
         "bạn học",
         "du học sinh",
@@ -2118,7 +2118,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “手提电脑” (shǒutí diànnǎo) có nghĩa là gì?",
+      "prompt": "Trong bài học, “手提电脑” có nghĩa là gì?",
       "options": [
         "đi làm, vào ca",
         "máy tính xách tay, máy tính cầm tay",
@@ -2154,7 +2154,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “电视” (diànshì) có nghĩa là gì?",
+      "prompt": "Trong bài học, “电视” có nghĩa là gì?",
       "options": [
         "dễ",
         "truyền hình, tivi",
@@ -2190,7 +2190,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “电视机” (diànshìjī) có nghĩa là gì?",
+      "prompt": "Trong bài học, “电视机” có nghĩa là gì?",
       "options": [
         "gặp mặt",
         "máy thu hình, tivi",
@@ -2226,7 +2226,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “难” (nán) có nghĩa là gì?",
+      "prompt": "Trong bài học, “难” có nghĩa là gì?",
       "options": [
         "khó",
         "dạy",
@@ -2262,7 +2262,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “容易” (róngyì) có nghĩa là gì?",
+      "prompt": "Trong bài học, “容易” có nghĩa là gì?",
       "options": [
         "Mã Văn, tên nhân vật",
         "bác sĩ",
@@ -2298,7 +2298,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “上课” (shàngkè) có nghĩa là gì?",
+      "prompt": "Trong bài học, “上课” có nghĩa là gì?",
       "options": [
         "bây giờ, hiện tại",
         "ngủ",
@@ -2334,7 +2334,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “下课” (xiàkè) có nghĩa là gì?",
+      "prompt": "Trong bài học, “下课” có nghĩa là gì?",
       "options": [
         "tan lớp, hết giờ học",
         "có thể, có khả năng",
@@ -2370,7 +2370,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “上班” (shàngbān) có nghĩa là gì?",
+      "prompt": "Trong bài học, “上班” có nghĩa là gì?",
       "options": [
         "truyền hình, tivi",
         "thư viện",
@@ -2406,7 +2406,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “下班” (xiàbān) có nghĩa là gì?",
+      "prompt": "Trong bài học, “下班” có nghĩa là gì?",
       "options": [
         "tan làm, hết ca",
         "giờ, tiếng đồng hồ",
@@ -2442,7 +2442,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “同学” (tóngxué) có nghĩa là gì?",
+      "prompt": "Trong bài học, “同学” có nghĩa là gì?",
       "options": [
         "làm việc; công việc",
         "Thượng Hải",
@@ -2478,7 +2478,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “同事” (tóngshì) có nghĩa là gì?",
+      "prompt": "Trong bài học, “同事” có nghĩa là gì?",
       "options": [
         "Vạn Lý Trường Thành",
         "số điện thoại",
@@ -2514,7 +2514,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “坏” (huài) có nghĩa là gì?",
+      "prompt": "Trong bài học, “坏” có nghĩa là gì?",
       "options": [
         "làm, tiến hành",
         "tiếng Anh",
@@ -2550,7 +2550,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “错” (cuò) có nghĩa là gì?",
+      "prompt": "Trong bài học, “错” có nghĩa là gì?",
       "options": [
         "truyền hình, tivi",
         "sai, nhầm",
@@ -2586,7 +2586,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “不错” (bú cuò) có nghĩa là gì?",
+      "prompt": "Trong bài học, “不错” có nghĩa là gì?",
       "options": [
         "Mã Văn, tên nhân vật",
         "nói",
@@ -2622,7 +2622,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “没错” (méi cuò) có nghĩa là gì?",
+      "prompt": "Trong bài học, “没错” có nghĩa là gì?",
       "options": [
         "không sai, đúng vậy",
         "bạn học",
@@ -2658,7 +2658,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “图书馆” (túshūguǎn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “图书馆” có nghĩa là gì?",
       "options": [
         "thư viện",
         "trung học cơ sở, cấp hai",
@@ -2694,7 +2694,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “教学楼” (jiàoxuélóu) có nghĩa là gì?",
+      "prompt": "Trong bài học, “教学楼” có nghĩa là gì?",
       "options": [
         "máy thu hình, tivi",
         "tòa nhà giảng dạy",
@@ -2730,7 +2730,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “漂亮” (piàoliang) có nghĩa là gì?",
+      "prompt": "Trong bài học, “漂亮” có nghĩa là gì?",
       "options": [
         "Thượng Hải",
         "bạn bè",
@@ -2766,7 +2766,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “好看” (hǎokàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “好看” có nghĩa là gì?",
       "options": [
         "thư viện",
         "đúng",
@@ -2802,7 +2802,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “衣服” (yīfu) có nghĩa là gì?",
+      "prompt": "Trong bài học, “衣服” có nghĩa là gì?",
       "options": [
         "quần áo",
         "máy tính xách tay, máy tính cầm tay",
@@ -2838,7 +2838,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “套” (tào) có nghĩa là gì?",
+      "prompt": "Trong bài học, “套” có nghĩa là gì?",
       "options": [
         "điện thoại",
         "máy thu hình, tivi",
@@ -2874,7 +2874,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “地方” (dìfang) có nghĩa là gì?",
+      "prompt": "Trong bài học, “地方” có nghĩa là gì?",
       "options": [
         "gọi điện thoại",
         "điện thoại di động",
@@ -2910,7 +2910,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “长城” (Chángchéng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “长城” có nghĩa là gì?",
       "options": [
         "máy tính xách tay, máy tính cầm tay",
         "Vạn Lý Trường Thành",
@@ -2946,7 +2946,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “小学” (xiǎoxué) có nghĩa là gì?",
+      "prompt": "Trong bài học, “小学” có nghĩa là gì?",
       "options": [
         "phần, suất; lượng từ",
         "Helen, tên nhân vật",
@@ -2982,7 +2982,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “初中” (chūzhōng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “初中” có nghĩa là gì?",
       "options": [
         "trung học cơ sở, cấp hai",
         "Mã Văn, tên nhân vật",
@@ -3018,7 +3018,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “高中” (gāozhōng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “高中” có nghĩa là gì?",
       "options": [
         "gặp mặt",
         "trung học phổ thông, cấp ba",
@@ -3054,7 +3054,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “读” (dú) có nghĩa là gì?",
+      "prompt": "Trong bài học, “读” có nghĩa là gì?",
       "options": [
         "học, học tập",
         "Vạn Lý Trường Thành",
@@ -3090,7 +3090,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “外语” (wàiyǔ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “外语” có nghĩa là gì?",
       "options": [
         "ngoại ngữ",
         "bệnh nhân",
@@ -3126,7 +3126,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “听” (tīng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “听” có nghĩa là gì?",
       "options": [
         "nửa",
         "Bắc Kinh",
@@ -3162,7 +3162,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “说” (shuō) có nghĩa là gì?",
+      "prompt": "Trong bài học, “说” có nghĩa là gì?",
       "options": [
         "nói",
         "máy tính xách tay",
@@ -3198,7 +3198,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “写” (xiě) có nghĩa là gì?",
+      "prompt": "Trong bài học, “写” có nghĩa là gì?",
       "options": [
         "đồ, đồ vật",
         "tòa nhà giảng dạy",
@@ -3234,7 +3234,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “能” (néng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “能” có nghĩa là gì?",
       "options": [
         "Bắc Kinh",
         "tiểu học",
@@ -3270,7 +3270,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “可以” (kěyǐ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “可以” có nghĩa là gì?",
       "options": [
         "phần, suất; lượng từ",
         "giờ, tiếng đồng hồ",
@@ -3306,7 +3306,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “会” (huì) có nghĩa là gì?",
+      "prompt": "Trong bài học, “会” có nghĩa là gì?",
       "options": [
         "thư viện",
         "số điện thoại",
@@ -3342,7 +3342,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “见面” (jiànmiàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “见面” có nghĩa là gì?",
       "options": [
         "số điện thoại di động",
         "tan làm, hết ca",
@@ -3378,7 +3378,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “睡觉” (shuìjiào) có nghĩa là gì?",
+      "prompt": "Trong bài học, “睡觉” có nghĩa là gì?",
       "options": [
         "gặp mặt",
         "ngủ",
@@ -3414,7 +3414,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “帮忙” (bāngmáng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “帮忙” có nghĩa là gì?",
       "options": [
         "học, học tập",
         "không nghe thấy",
@@ -3450,7 +3450,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “请假” (qǐngjià) có nghĩa là gì?",
+      "prompt": "Trong bài học, “请假” có nghĩa là gì?",
       "options": [
         "tan lớp, hết giờ học",
         "bạn học",
@@ -3486,7 +3486,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “结婚” (jiéhūn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “结婚” có nghĩa là gì?",
       "options": [
         "máy thu hình, tivi",
         "kết hôn",
@@ -3522,7 +3522,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “小时” (xiǎoshí) có nghĩa là gì?",
+      "prompt": "Trong bài học, “小时” có nghĩa là gì?",
       "options": [
         "nhìn, xem, đọc, thăm, khám",
         "giờ, tiếng đồng hồ",
@@ -3558,7 +3558,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “天” (tiān) có nghĩa là gì?",
+      "prompt": "Trong bài học, “天” có nghĩa là gì?",
       "options": [
         "kết hôn",
         "ngày",
@@ -3594,7 +3594,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “这儿” (zhèr) có nghĩa là gì?",
+      "prompt": "Trong bài học, “这儿” có nghĩa là gì?",
       "options": [
         "dạy",
         "ở đây, chỗ này",
@@ -3630,7 +3630,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “英国人” (Yīngguó rén) có nghĩa là gì?",
+      "prompt": "Trong bài học, “英国人” có nghĩa là gì?",
       "options": [
         "người Anh",
         "nhìn, xem, đọc, thăm, khám",
@@ -3666,7 +3666,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “出租车” (chūzūchē) có nghĩa là gì?",
+      "prompt": "Trong bài học, “出租车” có nghĩa là gì?",
       "options": [
         "Bắc Kinh",
         "xe taxi",
@@ -3702,7 +3702,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “西安” (Xī'ān) có nghĩa là gì?",
+      "prompt": "Trong bài học, “西安” có nghĩa là gì?",
       "options": [
         "trung học cơ sở, cấp hai",
         "khó",
@@ -3738,7 +3738,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “医生” (yīshēng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “医生” có nghĩa là gì?",
       "options": [
         "bác sĩ",
         "đẹp, ưa nhìn; hay khi nói về phim, sách",
@@ -3774,7 +3774,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “病人” (bìngrén) có nghĩa là gì?",
+      "prompt": "Trong bài học, “病人” có nghĩa là gì?",
       "options": [
         "viết",
         "máy thu hình, tivi",
@@ -3810,7 +3810,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “忙” (máng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “忙” có nghĩa là gì?",
       "options": [
         "làm, đảm nhiệm một vai trò",
         "điện thoại di động",
@@ -3846,7 +3846,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “听不见” (tīng bu jiàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “听不见” có nghĩa là gì?",
       "options": [
         "bạn bè",
         "không nghe thấy",
@@ -3882,7 +3882,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “手机号” (shǒujī hào) có nghĩa là gì?",
+      "prompt": "Trong bài học, “手机号” có nghĩa là gì?",
       "options": [
         "số điện thoại di động",
         "Tây An",

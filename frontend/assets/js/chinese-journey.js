@@ -1,4 +1,5 @@
 import {el,request} from './chinese-common.js';
+import {chineseQuestionPrompt} from './chinese-question-prompt.js';
 
 const companions=[
  {name:'Gấu trúc',place:'Rừng trúc xanh',image:'/assets/images/mascot-panda.svg',color:'#278b70',soft:'#e5f5ec'},
@@ -62,7 +63,7 @@ export async function chooseQuiz(setId,start,review=false){
    go.disabled=plan.review_count<20;go.textContent='Cùng cú ôn lại →';
   }else if(selected){
    detail.append(el('img',{class:'journey-detail-mascot',src:friend.image,alt:'',width:100,height:100}),el('span',{class:'journey-eyebrow',text:selected.completed?'MÌNH CÙNG LUYỆN LẠI':'CHẶNG HỌC CỦA CON'}),el('h3',{text:'Cùng '+friend.name+' · Chặng '+(selected.block+1)}),el('p',{text:selected.completed?'Con đã đi qua chặng này. Thử lại để nhớ chắc hơn nhé!':'20 câu nhỏ đang chờ. Hoàn thành để mở chặng tiếp theo.'}));
-   const preview=el('details',{class:'journey-preview'},[el('summary',{text:'Nhìn trước 20 câu'}),el('p',{class:'journey-source',text:'Nội dung câu '+selected.from+'–'+selected.to+' trong bài. Chặng cuối có thể ôn lại một số câu của chặng trước.'}),...selected.questions.map((q,n)=>el('p',{text:(n+1)+'. '+q.data.prompt}))]);detail.append(preview);
+   const preview=el('details',{class:'journey-preview'},[el('summary',{text:'Nhìn trước 20 câu'}),el('p',{class:'journey-source',text:'Nội dung câu '+selected.from+'–'+selected.to+' trong bài. Chặng cuối có thể ôn lại một số câu của chặng trước.'}),...selected.questions.map((q,n)=>el('p',{text:(n+1)+'. '+chineseQuestionPrompt(q.data.prompt)}))]);detail.append(preview);
    go.disabled=selected.unlocked===false&&!selected.completed;go.textContent=plan.active?'Tiếp tục chặng đang học →':selected.completed?'Khám phá lại chặng này →':'Bắt đầu khám phá →';
   }else{go.disabled=true;detail.append(el('h3',{text:'Cùng học từ trước nhé'}));}
   if(plan.active)detail.append(el('p',{class:'journey-tip',text:plan.active.block!=null?'Con đang có lượt ở chặng '+(plan.active.block+1)+'. Mình hoàn thành lượt đó trước nhé.':'Con đang có một lượt quiz. Mình tiếp tục lượt đó trước nhé.'}));

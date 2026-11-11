@@ -1,4 +1,5 @@
 // Paragraph-based Word questions. Answers are resolved only from explicit source labels.
+import {chineseQuestionPrompt} from '../../../frontend/assets/js/chinese-question-prompt.js';
 const start = /^(?:câu|cau)\s*(\d+)\s*[.:)\-]\s*(.*)$/iu;
 const section = /^\[(TU VUNG|NGU PHAP|HOI THOAI|BAI DOC|CAU HOI)\]$/i;
 export function cleanChineseLine(line) {
@@ -35,5 +36,5 @@ export function parseChineseQuestion(lines) {
   if(difficulty&&!resolvedDifficulty)extras.push('Độ khó chưa xác định: '+difficulty);
   const keys=options.map(o=>o.key);
   if(new Set(keys).size!==keys.length) {accepted.length=0;extras.push('Ký hiệu lựa chọn bị trùng; cần kiểm tra: '+keys.join(', '));}
-  return [{kind:'question',data:{type:'choice',prompt,options:options.map(o=>o.text),accepted,explanation,...(resolvedDifficulty?{difficulty:resolvedDifficulty}:{}),approved:false}},...extras.map(text=>({kind:'unknown',data:{text}}))];
+  return [{kind:'question',data:{type:'choice',prompt:chineseQuestionPrompt(prompt),options:options.map(o=>o.text),accepted,explanation,...(resolvedDifficulty?{difficulty:resolvedDifficulty}:{}),approved:false}},...extras.map(text=>({kind:'unknown',data:{text}}))];
 }

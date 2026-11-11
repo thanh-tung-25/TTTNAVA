@@ -698,7 +698,7 @@
   ],
   "questions": [
     {
-      "prompt": "Trong bài học, “要” (yào) có nghĩa là gì?",
+      "prompt": "Trong bài học, “要” có nghĩa là gì?",
       "options": [
         "bánh bao có nhân",
         "muốn, cần, phải",
@@ -734,7 +734,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “想” (xiǎng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “想” có nghĩa là gì?",
       "options": [
         "lựu",
         "cái; lượng từ thông dụng",
@@ -770,7 +770,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “吃” (chī) có nghĩa là gì?",
+      "prompt": "Trong bài học, “吃” có nghĩa là gì?",
       "options": [
         "ăn",
         "suất, phần; lượng từ",
@@ -806,7 +806,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “一点儿” (yìdiǎnr) có nghĩa là gì?",
+      "prompt": "Trong bài học, “一点儿” có nghĩa là gì?",
       "options": [
         "ngọt",
         "một chút",
@@ -842,7 +842,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “个” (gè) có nghĩa là gì?",
+      "prompt": "Trong bài học, “个” có nghĩa là gì?",
       "options": [
         "sủi cảo",
         "nhà hàng; khách sạn tùy ngữ cảnh",
@@ -878,7 +878,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “牛肉” (niúròu) có nghĩa là gì?",
+      "prompt": "Trong bài học, “牛肉” có nghĩa là gì?",
       "options": [
         "con; lượng từ cho nhiều loài vật",
         "dân lấy cái ăn làm đầu",
@@ -914,7 +914,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “青菜” (qīngcài) có nghĩa là gì?",
+      "prompt": "Trong bài học, “青菜” có nghĩa là gì?",
       "options": [
         "suất, phần; lượng từ",
         "cay",
@@ -950,7 +950,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “还” (hái) có nghĩa là gì?",
+      "prompt": "Trong bài học, “还” có nghĩa là gì?",
       "options": [
         "còn, thêm, vẫn",
         "cà rốt",
@@ -986,7 +986,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “碗” (wǎn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “碗” có nghĩa là gì?",
       "options": [
         "bát; lượng từ đồ đựng trong bát",
         "nhân viên bán hàng",
@@ -1022,7 +1022,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “米饭” (mǐfàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “米饭” có nghĩa là gì?",
       "options": [
         "no",
         "tổng cộng, tất cả",
@@ -1058,7 +1058,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “其他” (qítā) có nghĩa là gì?",
+      "prompt": "Trong bài học, “其他” có nghĩa là gì?",
       "options": [
         "bông, đóa; lượng từ cho hoa",
         "khác, những cái khác",
@@ -1094,7 +1094,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “有点儿” (yǒudiǎnr) có nghĩa là gì?",
+      "prompt": "Trong bài học, “有点儿” có nghĩa là gì?",
       "options": [
         "đói",
         "vị; lượng từ kính trọng cho người",
@@ -1130,7 +1130,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “饿” (è) có nghĩa là gì?",
+      "prompt": "Trong bài học, “饿” có nghĩa là gì?",
       "options": [
         "đói",
         "chậm, trễ",
@@ -1166,7 +1166,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “饱” (bǎo) có nghĩa là gì?",
+      "prompt": "Trong bài học, “饱” có nghĩa là gì?",
       "options": [
         "rau xanh",
         "nhanh, sắp",
@@ -1202,7 +1202,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “喝” (hē) có nghĩa là gì?",
+      "prompt": "Trong bài học, “喝” có nghĩa là gì?",
       "options": [
         "kilôgam, bằng 1000 gam",
         "tươi, tươi mới",
@@ -1238,7 +1238,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “杯” (bēi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “杯” có nghĩa là gì?",
       "options": [
         "món ăn, rau",
         "cốc, ly; lượng từ đồ uống",
@@ -1274,7 +1274,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “奶茶” (nǎichá) có nghĩa là gì?",
+      "prompt": "Trong bài học, “奶茶” có nghĩa là gì?",
       "options": [
         "người; lượng từ đếm thành viên gia đình",
         "cốc lớn",
@@ -1310,7 +1310,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “茶” (chá) có nghĩa là gì?",
+      "prompt": "Trong bài học, “茶” có nghĩa là gì?",
       "options": [
         "trà",
         "cái khác, thứ khác",
@@ -1346,7 +1346,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “快” (kuài) có nghĩa là gì?",
+      "prompt": "Trong bài học, “快” có nghĩa là gì?",
       "options": [
         "mít",
         "cái; lượng từ thông dụng",
@@ -1382,7 +1382,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “慢” (màn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “慢” có nghĩa là gì?",
       "options": [
         "lựu",
         "quần áo",
@@ -1418,7 +1418,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “还是” (háishi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “还是” có nghĩa là gì?",
       "options": [
         "một chút",
         "bán",
@@ -1454,7 +1454,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “一共” (yígòng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “一共” có nghĩa là gì?",
       "options": [
         "ngon, dùng cho đồ ăn",
         "du lịch",
@@ -1490,7 +1490,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “馒头” (mántou) có nghĩa là gì?",
+      "prompt": "Trong bài học, “馒头” có nghĩa là gì?",
       "options": [
         "mấy, bao nhiêu; thường hỏi số lượng nhỏ",
         "bánh màn thầu",
@@ -1526,7 +1526,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “包子” (bāozi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “包子” có nghĩa là gì?",
       "options": [
         "đừng; dùng trong lời ngăn cản",
         "nhanh, sắp",
@@ -1562,7 +1562,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “记得” (jìde) có nghĩa là gì?",
+      "prompt": "Trong bài học, “记得” có nghĩa là gì?",
       "options": [
         "vị; lượng từ kính trọng cho người",
         "nhân viên bán hàng",
@@ -1598,7 +1598,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “菜” (cài) có nghĩa là gì?",
+      "prompt": "Trong bài học, “菜” có nghĩa là gì?",
       "options": [
         "nhớ, ghi nhớ",
         "quyển; lượng từ sách",
@@ -1634,7 +1634,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “新鲜” (xīnxiān) có nghĩa là gì?",
+      "prompt": "Trong bài học, “新鲜” có nghĩa là gì?",
       "options": [
         "muốn, cần, phải",
         "đừng; dùng trong lời ngăn cản",
@@ -1670,7 +1670,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “饺子” (jiǎozi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “饺子” có nghĩa là gì?",
       "options": [
         "mít",
         "thứ nhất",
@@ -1706,7 +1706,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “蔬菜” (shūcài) có nghĩa là gì?",
+      "prompt": "Trong bài học, “蔬菜” có nghĩa là gì?",
       "options": [
         "món ăn, rau",
         "xoài",
@@ -1742,7 +1742,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “牛奶” (niúnǎi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “牛奶” có nghĩa là gì?",
       "options": [
         "sữa bò",
         "thứ ba",
@@ -1778,7 +1778,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “杯子” (bēizi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “杯子” có nghĩa là gì?",
       "options": [
         "cơm, bữa ăn",
         "cái cốc, cái ly",
@@ -1814,7 +1814,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “和” (hé) có nghĩa là gì?",
+      "prompt": "Trong bài học, “和” có nghĩa là gì?",
       "options": [
         "hơi, có chút",
         "và",
@@ -1850,7 +1850,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “好吃” (hǎochī) có nghĩa là gì?",
+      "prompt": "Trong bài học, “好吃” có nghĩa là gì?",
       "options": [
         "quần áo",
         "ngon, dùng cho đồ ăn",
@@ -1886,7 +1886,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “好喝” (hǎohē) có nghĩa là gì?",
+      "prompt": "Trong bài học, “好喝” có nghĩa là gì?",
       "options": [
         "ngon, dùng cho đồ uống",
         "cái cốc, cái ly",
@@ -1922,7 +1922,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “泡茶” (pào chá) có nghĩa là gì?",
+      "prompt": "Trong bài học, “泡茶” có nghĩa là gì?",
       "options": [
         "pha trà",
         "mấy, bao nhiêu; thường hỏi số lượng nhỏ",
@@ -1958,7 +1958,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “买” (mǎi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “买” có nghĩa là gì?",
       "options": [
         "có chí thì nên",
         "lựu",
@@ -1994,7 +1994,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “卖” (mài) có nghĩa là gì?",
+      "prompt": "Trong bài học, “卖” có nghĩa là gì?",
       "options": [
         "kilôgam, bằng 1000 gam",
         "rau xanh",
@@ -2030,7 +2030,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “位” (wèi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “位” có nghĩa là gì?",
       "options": [
         "rau xanh",
         "mua",
@@ -2066,7 +2066,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “口” (kǒu) có nghĩa là gì?",
+      "prompt": "Trong bài học, “口” có nghĩa là gì?",
       "options": [
         "người; lượng từ đếm thành viên gia đình",
         "quần áo",
@@ -2102,7 +2102,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “本” (běn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “本” có nghĩa là gì?",
       "options": [
         "quyển; lượng từ sách",
         "cơm, bữa ăn",
@@ -2138,7 +2138,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “饭” (fàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “饭” có nghĩa là gì?",
       "options": [
         "quần áo",
         "còn, thêm, vẫn",
@@ -2174,7 +2174,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “饭馆儿” (fànguǎnr) có nghĩa là gì?",
+      "prompt": "Trong bài học, “饭馆儿” có nghĩa là gì?",
       "options": [
         "sầu riêng",
         "quán ăn",
@@ -2210,7 +2210,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “饭店” (fàndiàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “饭店” có nghĩa là gì?",
       "options": [
         "quần áo",
         "nhà hàng; khách sạn tùy ngữ cảnh",
@@ -2246,7 +2246,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “斤” (jīn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “斤” có nghĩa là gì?",
       "options": [
         "cay",
         "dưa chuột",
@@ -2282,7 +2282,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “公斤” (gōngjīn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “公斤” có nghĩa là gì?",
       "options": [
         "tiền tố chỉ thứ tự",
         "cây",
@@ -2318,7 +2318,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “或者” (huòzhě) có nghĩa là gì?",
+      "prompt": "Trong bài học, “或者” có nghĩa là gì?",
       "options": [
         "ổi",
         "chuối",
@@ -2354,7 +2354,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “份” (fèn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “份” có nghĩa là gì?",
       "options": [
         "ngon, dùng cho đồ ăn",
         "loại; lượng từ chỉ chủng loại",
@@ -2390,7 +2390,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “咖啡” (kāfēi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “咖啡” có nghĩa là gì?",
       "options": [
         "ăn",
         "con; lượng từ cho nhiều loài vật",
@@ -2426,7 +2426,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “孩子” (háizi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “孩子” có nghĩa là gì?",
       "options": [
         "con, trẻ con",
         "và",
@@ -2462,7 +2462,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “几” (jǐ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “几” có nghĩa là gì?",
       "options": [
         "cốc nhỏ",
         "chậm, trễ",
@@ -2498,7 +2498,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “第” (dì) có nghĩa là gì?",
+      "prompt": "Trong bài học, “第” có nghĩa là gì?",
       "options": [
         "chậm, trễ",
         "tiền tố chỉ thứ tự",
@@ -2534,7 +2534,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “第一” (dì yī) có nghĩa là gì?",
+      "prompt": "Trong bài học, “第一” có nghĩa là gì?",
       "options": [
         "cà phê",
         "cái cốc, cái ly",
@@ -2570,7 +2570,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “第三” (dì sān) có nghĩa là gì?",
+      "prompt": "Trong bài học, “第三” có nghĩa là gì?",
       "options": [
         "thứ ba",
         "trà sữa",
@@ -2606,7 +2606,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “别的” (biéde) có nghĩa là gì?",
+      "prompt": "Trong bài học, “别的” có nghĩa là gì?",
       "options": [
         "thịt bò",
         "quần áo",
@@ -2642,7 +2642,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “别” (bié) có nghĩa là gì?",
+      "prompt": "Trong bài học, “别” có nghĩa là gì?",
       "options": [
         "thứ nhất",
         "đừng; dùng trong lời ngăn cản",
@@ -2678,7 +2678,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “水果” (shuǐguǒ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “水果” có nghĩa là gì?",
       "options": [
         "hoa quả, trái cây",
         "thứ nhất",
@@ -2714,7 +2714,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “种” (zhǒng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “种” có nghĩa là gì?",
       "options": [
         "cái khác, thứ khác",
         "loại; lượng từ chỉ chủng loại",
@@ -2750,7 +2750,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “种” (zhòng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “种” có nghĩa là gì?",
       "options": [
         "trồng",
         "sủi cảo",
@@ -2786,7 +2786,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “树” (shù) có nghĩa là gì?",
+      "prompt": "Trong bài học, “树” có nghĩa là gì?",
       "options": [
         "cây",
         "dân lấy cái ăn làm đầu",
@@ -2822,7 +2822,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “苹果” (píngguǒ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “苹果” có nghĩa là gì?",
       "options": [
         "ngọt",
         "táo",
@@ -2858,7 +2858,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “芒果” (mángguǒ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “芒果” có nghĩa là gì?",
       "options": [
         "uống",
         "quyển; lượng từ sách",
@@ -2894,7 +2894,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “香蕉” (xiāngjiāo) có nghĩa là gì?",
+      "prompt": "Trong bài học, “香蕉” có nghĩa là gì?",
       "options": [
         "du lịch",
         "chuối",
@@ -2930,7 +2930,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “椰子” (yēzi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “椰子” có nghĩa là gì?",
       "options": [
         "dừa",
         "người; lượng từ đếm thành viên gia đình",
@@ -2966,7 +2966,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “番石榴” (fānshíliu) có nghĩa là gì?",
+      "prompt": "Trong bài học, “番石榴” có nghĩa là gì?",
       "options": [
         "còn, thêm, vẫn",
         "pha trà",
@@ -3002,7 +3002,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “石榴” (shíliu) có nghĩa là gì?",
+      "prompt": "Trong bài học, “石榴” có nghĩa là gì?",
       "options": [
         "tổng cộng, tất cả",
         "lựu",
@@ -3038,7 +3038,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “榴莲” (liúlián) có nghĩa là gì?",
+      "prompt": "Trong bài học, “榴莲” có nghĩa là gì?",
       "options": [
         "táo",
         "sầu riêng",
@@ -3074,7 +3074,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “菠萝蜜” (bōluómì) có nghĩa là gì?",
+      "prompt": "Trong bài học, “菠萝蜜” có nghĩa là gì?",
       "options": [
         "cà rốt",
         "mít",
@@ -3110,7 +3110,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “菠萝” (bōluó) có nghĩa là gì?",
+      "prompt": "Trong bài học, “菠萝” có nghĩa là gì?",
       "options": [
         "cốc, ly; lượng từ đồ uống",
         "còn, thêm, vẫn",
@@ -3146,7 +3146,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “西瓜” (xīguā) có nghĩa là gì?",
+      "prompt": "Trong bài học, “西瓜” có nghĩa là gì?",
       "options": [
         "dưa hấu",
         "tổng cộng, tất cả",
@@ -3182,7 +3182,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “橙子” (chéngzi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “橙子” có nghĩa là gì?",
       "options": [
         "hay là; nối lựa chọn trong câu hỏi",
         "cam",
@@ -3218,7 +3218,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “橘子” (júzi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “橘子” có nghĩa là gì?",
       "options": [
         "tiền tố chỉ thứ tự",
         "cốc nhỏ",
@@ -3254,7 +3254,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “黄瓜” (huángguā) có nghĩa là gì?",
+      "prompt": "Trong bài học, “黄瓜” có nghĩa là gì?",
       "options": [
         "ba",
         "người; lượng từ đếm thành viên gia đình",
@@ -3290,7 +3290,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “胡萝卜” (húluóbo) có nghĩa là gì?",
+      "prompt": "Trong bài học, “胡萝卜” có nghĩa là gì?",
       "options": [
         "nhớ, ghi nhớ",
         "trà",
@@ -3326,7 +3326,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “两” (liǎng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “两” có nghĩa là gì?",
       "options": [
         "ăn",
         "cơm trắng",
@@ -3362,7 +3362,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “三” (sān) có nghĩa là gì?",
+      "prompt": "Trong bài học, “三” có nghĩa là gì?",
       "options": [
         "ba",
         "bát; lượng từ đồ đựng trong bát",
@@ -3398,7 +3398,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “张” (zhāng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “张” có nghĩa là gì?",
       "options": [
         "tờ, chiếc; lượng từ vật có bề mặt phẳng",
         "thứ nhất",
@@ -3434,7 +3434,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “棵” (kē) có nghĩa là gì?",
+      "prompt": "Trong bài học, “棵” có nghĩa là gì?",
       "options": [
         "cái khác, thứ khác",
         "cây; lượng từ cho cây",
@@ -3470,7 +3470,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “朵” (duǒ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “朵” có nghĩa là gì?",
       "options": [
         "bông, đóa; lượng từ cho hoa",
         "no",
@@ -3506,7 +3506,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “条” (tiáo) có nghĩa là gì?",
+      "prompt": "Trong bài học, “条” có nghĩa là gì?",
       "options": [
         "bán",
         "con, chiếc; lượng từ vật dài",
@@ -3542,7 +3542,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “只” (zhī) có nghĩa là gì?",
+      "prompt": "Trong bài học, “只” có nghĩa là gì?",
       "options": [
         "con; lượng từ cho nhiều loài vật",
         "bán",
@@ -3578,7 +3578,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “幅” (fú) có nghĩa là gì?",
+      "prompt": "Trong bài học, “幅” có nghĩa là gì?",
       "options": [
         "bức; lượng từ cho tranh",
         "no",
@@ -3614,7 +3614,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “面” (miàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “面” có nghĩa là gì?",
       "options": [
         "dưa hấu",
         "mặt; lượng từ cho vật có mặt phẳng như gương",
@@ -3650,7 +3650,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “大杯” (dà bēi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “大杯” có nghĩa là gì?",
       "options": [
         "cơm, bữa ăn",
         "táo",
@@ -3686,7 +3686,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “小杯” (xiǎo bēi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “小杯” có nghĩa là gì?",
       "options": [
         "quà tặng",
         "táo",
@@ -3722,7 +3722,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “旅游” (lǚyóu) có nghĩa là gì?",
+      "prompt": "Trong bài học, “旅游” có nghĩa là gì?",
       "options": [
         "cốc nhỏ",
         "cơm, bữa ăn",
@@ -3758,7 +3758,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “礼物” (lǐwù) có nghĩa là gì?",
+      "prompt": "Trong bài học, “礼物” có nghĩa là gì?",
       "options": [
         "và",
         "hoa quả, trái cây",
@@ -3794,7 +3794,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “服务员” (fúwùyuán) có nghĩa là gì?",
+      "prompt": "Trong bài học, “服务员” có nghĩa là gì?",
       "options": [
         "quán ăn",
         "táo",
@@ -3830,7 +3830,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “售货员” (shòuhuòyuán) có nghĩa là gì?",
+      "prompt": "Trong bài học, “售货员” có nghĩa là gì?",
       "options": [
         "chua",
         "nhân viên bán hàng",
@@ -3866,7 +3866,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “真” (zhēn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “真” có nghĩa là gì?",
       "options": [
         "mặt; lượng từ cho vật có mặt phẳng như gương",
         "xoài",
@@ -3902,7 +3902,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “衣服” (yīfu) có nghĩa là gì?",
+      "prompt": "Trong bài học, “衣服” có nghĩa là gì?",
       "options": [
         "cái cốc, cái ly",
         "cây",
@@ -3938,7 +3938,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “件” (jiàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “件” có nghĩa là gì?",
       "options": [
         "đói",
         "ba",
@@ -3974,7 +3974,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “民以食为天” (mín yǐ shí wéi tiān) có nghĩa là gì?",
+      "prompt": "Trong bài học, “民以食为天” có nghĩa là gì?",
       "options": [
         "sữa bò",
         "mua",
@@ -4010,7 +4010,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “车到山前必有路” (chē dào shān qián bì yǒu lù) có nghĩa là gì?",
+      "prompt": "Trong bài học, “车到山前必有路” có nghĩa là gì?",
       "options": [
         "xe đến trước núi ắt có đường; rồi sẽ có cách",
         "cái; lượng từ thông dụng",
@@ -4046,7 +4046,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “有志者事竟成” (yǒu zhì zhě shì jìng chéng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “有志者事竟成” có nghĩa là gì?",
       "options": [
         "vị; lượng từ kính trọng cho người",
         "rau củ",
@@ -4082,7 +4082,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “喜欢” (xǐhuan) có nghĩa là gì?",
+      "prompt": "Trong bài học, “喜欢” có nghĩa là gì?",
       "options": [
         "bông, đóa; lượng từ cho hoa",
         "quán ăn",
@@ -4118,7 +4118,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “甜” (tián) có nghĩa là gì?",
+      "prompt": "Trong bài học, “甜” có nghĩa là gì?",
       "options": [
         "chua",
         "nhân viên phục vụ",
@@ -4154,7 +4154,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “辣” (là) có nghĩa là gì?",
+      "prompt": "Trong bài học, “辣” có nghĩa là gì?",
       "options": [
         "cốc nhỏ",
         "thứ ba",
@@ -4190,7 +4190,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “酸” (suān) có nghĩa là gì?",
+      "prompt": "Trong bài học, “酸” có nghĩa là gì?",
       "options": [
         "uống",
         "chua",
@@ -4226,7 +4226,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “苦” (kǔ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “苦” có nghĩa là gì?",
       "options": [
         "hoa quả, trái cây",
         "đói",

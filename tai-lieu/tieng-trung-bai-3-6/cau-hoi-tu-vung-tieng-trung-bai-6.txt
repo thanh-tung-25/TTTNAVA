@@ -1,7 +1,7 @@
 MÔN: Tiếng Trung
 LỚP: HSK 1
 CHỦ ĐỀ: Bài 6 你在哪儿工作 - Từ vựng chính và từ mở rộng
-Câu 1. Trong bài học, “在” (zài) có nghĩa là gì?
+Câu 1. Trong bài học, “在” có nghĩa là gì?
 A. tiếng Anh
 B. ở; đang
 C. làm, đảm nhiệm một vai trò
@@ -25,7 +25,7 @@ D. xiǎoshí
 Đáp án: A
 Lời giải: 在 đọc là zài, nghĩa là ở; đang. Tham chiếu: PDF bài 6, trang 5.
 Độ khó: Dễ
-Câu 4. Trong bài học, “工作” (gōngzuò) có nghĩa là gì?
+Câu 4. Trong bài học, “工作” có nghĩa là gì?
 A. đẹp, ưa nhìn; hay khi nói về phim, sách
 B. làm việc; công việc
 C. làm, đảm nhiệm một vai trò
@@ -49,7 +49,7 @@ D. zhèng
 Đáp án: C
 Lời giải: 工作 đọc là gōngzuò, nghĩa là làm việc; công việc. Tham chiếu: PDF bài 6, trang 6.
 Độ khó: Dễ
-Câu 7. Trong bài học, “苹果” (píngguǒ) có nghĩa là gì?
+Câu 7. Trong bài học, “苹果” có nghĩa là gì?
 A. ở đây, chỗ này
 B. quả táo
 C. khá tốt, không tệ
@@ -73,7 +73,7 @@ D. Yīngguó rén
 Đáp án: A
 Lời giải: 苹果 đọc là píngguǒ, nghĩa là quả táo. Tham chiếu: PDF bài 6, trang 6.
 Độ khó: Dễ
-Câu 10. Trong bài học, “公司” (gōngsī) có nghĩa là gì?
+Câu 10. Trong bài học, “公司” có nghĩa là gì?
 A. đang; chỉ hành động diễn ra
 B. tan làm, hết ca
 C. công ty
@@ -97,7 +97,7 @@ D. xiàkè
 Đáp án: A
 Lời giải: 公司 đọc là gōngsī, nghĩa là công ty. Tham chiếu: PDF bài 6, trang 6.
 Độ khó: Dễ
-Câu 13. Trong bài học, “留学生” (liúxuéshēng) có nghĩa là gì?
+Câu 13. Trong bài học, “留学生” có nghĩa là gì?
 A. du học sinh
 B. tan lớp, hết giờ học
 C. ngoại ngữ
@@ -121,7 +121,7 @@ D. piàoliang
 Đáp án: B
 Lời giải: 留学生 đọc là liúxuéshēng, nghĩa là du học sinh. Tham chiếu: PDF bài 6, trang 10.
 Độ khó: Dễ
-Câu 16. Trong bài học, “留学” (liúxué) có nghĩa là gì?
+Câu 16. Trong bài học, “留学” có nghĩa là gì?
 A. xin nghỉ phép
 B. du học
 C. có thể, được phép
@@ -145,7 +145,7 @@ D. jiàoxuélóu
 Đáp án: A
 Lời giải: 留学 đọc là liúxué, nghĩa là du học. Tham chiếu: PDF bài 6, trang 10.
 Độ khó: Dễ
-Câu 19. Trong bài học, “学” (xué) có nghĩa là gì?
+Câu 19. Trong bài học, “学” có nghĩa là gì?
 A. đi làm, vào ca
 B. dễ
 C. học
@@ -169,7 +169,7 @@ D. zhōngxué
 Đáp án: B
 Lời giải: 学 đọc là xué, nghĩa là học. Tham chiếu: PDF bài 6, trang 11.
 Độ khó: Dễ
-Câu 22. Trong bài học, “学习” (xuéxí) có nghĩa là gì?
+Câu 22. Trong bài học, “学习” có nghĩa là gì?
 A. học, học tập
 B. công ty Apple
 C. kết hôn
@@ -193,7 +193,7 @@ D. zuò
 Đáp án: C
 Lời giải: 学习 đọc là xuéxí, nghĩa là học, học tập. Tham chiếu: PDF bài 6, trang 11.
 Độ khó: Dễ
-Câu 25. Trong bài học, “汉语” (Hànyǔ) có nghĩa là gì?
+Câu 25. Trong bài học, “汉语” có nghĩa là gì?
 A. Mã Văn, tên nhân vật
 B. Tây An
 C. điện thoại di động
@@ -217,7 +217,7 @@ D. nǚ péngyou
 Đáp án: C
 Lời giải: 汉语 đọc là Hànyǔ, nghĩa là tiếng Hán, tiếng Trung. Tham chiếu: PDF bài 6, trang 11.
 Độ khó: Dễ
-Câu 28. Trong bài học, “英语” (Yīngyǔ) có nghĩa là gì?
+Câu 28. Trong bài học, “英语” có nghĩa là gì?
 A. số điện thoại
 B. tiếng Anh
 C. du học
@@ -241,7 +241,7 @@ D. tóngxué
 Đáp án: C
 Lời giải: 英语 đọc là Yīngyǔ, nghĩa là tiếng Anh. Tham chiếu: PDF bài 6, trang 26.
 Độ khó: Dễ
-Câu 31. Trong bài học, “朋友” (péngyou) có nghĩa là gì?
+Câu 31. Trong bài học, “朋友” có nghĩa là gì?
 A. ở đây, chỗ này
 B. xấu, hư, hỏng
 C. công ty
@@ -265,7 +265,7 @@ D. tīng
 Đáp án: B
 Lời giải: 朋友 đọc là péngyou, nghĩa là bạn bè. Tham chiếu: PDF bài 6, trang 25.
 Độ khó: Dễ
-Câu 34. Trong bài học, “男朋友” (nán péngyou) có nghĩa là gì?
+Câu 34. Trong bài học, “男朋友” có nghĩa là gì?
 A. bạn trai
 B. điện thoại
 C. đi làm, vào ca
@@ -289,7 +289,7 @@ D. wàiyǔ
 Đáp án: B
 Lời giải: 男朋友 đọc là nán péngyou, nghĩa là bạn trai. Tham chiếu: PDF bài 6, trang 25.
 Độ khó: Dễ
-Câu 37. Trong bài học, “女朋友” (nǚ péngyou) có nghĩa là gì?
+Câu 37. Trong bài học, “女朋友” có nghĩa là gì?
 A. đẹp, ưa nhìn; hay khi nói về phim, sách
 B. không sai, đúng vậy
 C. khá tốt, không tệ
@@ -313,7 +313,7 @@ D. nǚ péngyou
 Đáp án: D
 Lời giải: 女朋友 đọc là nǚ péngyou, nghĩa là bạn gái. Tham chiếu: PDF bài 6, trang 26.
 Độ khó: Dễ
-Câu 40. Trong bài học, “对” (duì) có nghĩa là gì?
+Câu 40. Trong bài học, “对” có nghĩa là gì?
 A. giờ, tiếng đồng hồ
 B. quần áo
 C. đúng
@@ -337,7 +337,7 @@ D. shǒutí diànnǎo
 Đáp án: A
 Lời giải: 对 đọc là duì, nghĩa là đúng. Tham chiếu: PDF bài 6, trang 13.
 Độ khó: Dễ
-Câu 43. Trong bài học, “做” (zuò) có nghĩa là gì?
+Câu 43. Trong bài học, “做” có nghĩa là gì?
 A. Thượng Hải
 B. làm, tiến hành
 C. bạn học
@@ -361,7 +361,7 @@ D. Hànyǔ
 Đáp án: A
 Lời giải: 做 đọc là zuò, nghĩa là làm. Tham chiếu: PDF bài 6, trang 7.
 Độ khó: Dễ
-Câu 46. Trong bài học, “大学” (dàxué) có nghĩa là gì?
+Câu 46. Trong bài học, “大学” có nghĩa là gì?
 A. máy tính
 B. kết hôn
 C. đại học
@@ -385,7 +385,7 @@ D. Yīngyǔ
 Đáp án: C
 Lời giải: 大学 đọc là dàxué, nghĩa là đại học. Tham chiếu: PDF bài 6, trang 15.
 Độ khó: Dễ
-Câu 49. Trong bài học, “中学” (zhōngxué) có nghĩa là gì?
+Câu 49. Trong bài học, “中学” có nghĩa là gì?
 A. máy tính xách tay, máy tính cầm tay
 B. nửa
 C. sai, nhầm
@@ -409,7 +409,7 @@ D. nán péngyou
 Đáp án: C
 Lời giải: 中学 đọc là zhōngxué, nghĩa là trung học. Tham chiếu: PDF bài 6, trang 15.
 Độ khó: Dễ
-Câu 52. Trong bài học, “教” (jiāo) có nghĩa là gì?
+Câu 52. Trong bài học, “教” có nghĩa là gì?
 A. dạy
 B. xấu, hư, hỏng
 C. bạn gái
@@ -433,7 +433,7 @@ D. xiǎoshí
 Đáp án: B
 Lời giải: 教 đọc là jiāo, nghĩa là dạy. Tham chiếu: PDF bài 6, trang 16.
 Độ khó: Dễ
-Câu 55. Trong bài học, “海伦” (Hǎilún) có nghĩa là gì?
+Câu 55. Trong bài học, “海伦” có nghĩa là gì?
 A. Helen, tên nhân vật
 B. đọc; học một cấp học
 C. tòa nhà giảng dạy
@@ -457,7 +457,7 @@ D. Yīngguó rén
 Đáp án: C
 Lời giải: 海伦 đọc là Hǎilún, nghĩa là Helen, tên nhân vật. Tham chiếu: PDF bài 6, trang 18.
 Độ khó: Dễ
-Câu 58. Trong bài học, “马文” (Mǎ Wén) có nghĩa là gì?
+Câu 58. Trong bài học, “马文” có nghĩa là gì?
 A. công ty Apple
 B. đọc; học một cấp học
 C. làm
@@ -481,7 +481,7 @@ D. shǒujī
 Đáp án: C
 Lời giải: 马文 đọc là Mǎ Wén, nghĩa là Mã Văn, tên nhân vật. Tham chiếu: PDF bài 6, trang 18.
 Độ khó: Dễ
-Câu 61. Trong bài học, “北京” (Běijīng) có nghĩa là gì?
+Câu 61. Trong bài học, “北京” có nghĩa là gì?
 A. ngoại ngữ
 B. Bắc Kinh
 C. bệnh nhân
@@ -505,7 +505,7 @@ D. bǐjìběn diànnǎo
 Đáp án: A
 Lời giải: 北京 đọc là Běijīng, nghĩa là Bắc Kinh. Tham chiếu: PDF bài 6, trang 18.
 Độ khó: Dễ
-Câu 64. Trong bài học, “上海” (Shànghǎi) có nghĩa là gì?
+Câu 64. Trong bài học, “上海” có nghĩa là gì?
 A. đẹp, xinh đẹp
 B. học
 C. Thượng Hải
@@ -529,7 +529,7 @@ D. Shànghǎi
 Đáp án: D
 Lời giải: 上海 đọc là Shànghǎi, nghĩa là Thượng Hải. Tham chiếu: PDF bài 6, trang 18.
 Độ khó: Dễ
-Câu 67. Trong bài học, “苹果公司” (Píngguǒ Gōngsī) có nghĩa là gì?
+Câu 67. Trong bài học, “苹果公司” có nghĩa là gì?
 A. công ty Apple
 B. phần, suất; lượng từ
 C. xấu, hư, hỏng
@@ -553,7 +553,7 @@ D. jiéhūn
 Đáp án: C
 Lời giải: 苹果公司 đọc là Píngguǒ Gōngsī, nghĩa là công ty Apple. Tham chiếu: PDF bài 6, trang 18.
 Độ khó: Dễ
-Câu 70. Trong bài học, “正在” (zhèngzài) có nghĩa là gì?
+Câu 70. Trong bài học, “正在” có nghĩa là gì?
 A. đang; chỉ hành động diễn ra
 B. đại học
 C. bạn học
@@ -577,7 +577,7 @@ D. Shànghǎi
 Đáp án: A
 Lời giải: 正在 đọc là zhèngzài, nghĩa là đang; chỉ hành động diễn ra. Tham chiếu: PDF bài 6, trang 5.
 Độ khó: Dễ
-Câu 73. Trong bài học, “正” (zhèng) có nghĩa là gì?
+Câu 73. Trong bài học, “正” có nghĩa là gì?
 A. đang, đúng lúc
 B. Helen, tên nhân vật
 C. Tây An
@@ -601,7 +601,7 @@ D. dāng
 Đáp án: C
 Lời giải: 正 đọc là zhèng, nghĩa là đang, đúng lúc. Tham chiếu: PDF bài 6, trang 5.
 Độ khó: Dễ
-Câu 76. Trong bài học, “东西” (dōngxi) có nghĩa là gì?
+Câu 76. Trong bài học, “东西” có nghĩa là gì?
 A. làm, làm việc
 B. ngoại ngữ
 C. ở đây, chỗ này
@@ -625,7 +625,7 @@ D. xiàbān
 Đáp án: B
 Lời giải: 东西 đọc là dōngxi, nghĩa là đồ, đồ vật. Tham chiếu: PDF bài 6, trang 5.
 Độ khó: Dễ
-Câu 79. Trong bài học, “半” (bàn) có nghĩa là gì?
+Câu 79. Trong bài học, “半” có nghĩa là gì?
 A. viết
 B. nửa
 C. máy tính
@@ -649,7 +649,7 @@ D. nán péngyou
 Đáp án: A
 Lời giải: 半 đọc là bàn, nghĩa là nửa. Tham chiếu: PDF bài 6, trang 6.
 Độ khó: Dễ
-Câu 82. Trong bài học, “看” (kàn) có nghĩa là gì?
+Câu 82. Trong bài học, “看” có nghĩa là gì?
 A. nhìn, xem, đọc, thăm, khám
 B. Bắc Kinh
 C. làm, đảm nhiệm một vai trò
@@ -673,7 +673,7 @@ D. yīfu
 Đáp án: A
 Lời giải: 看 đọc là kàn, nghĩa là nhìn, xem, đọc, thăm, khám. Tham chiếu: PDF bài 6, trang 6.
 Độ khó: Dễ
-Câu 85. Trong bài học, “现在” (xiànzài) có nghĩa là gì?
+Câu 85. Trong bài học, “现在” có nghĩa là gì?
 A. Vạn Lý Trường Thành
 B. gọi điện thoại
 C. máy tính
@@ -697,7 +697,7 @@ D. xiǎoshí
 Đáp án: A
 Lời giải: 现在 đọc là xiànzài, nghĩa là bây giờ, hiện tại. Tham chiếu: PDF bài 6, trang 6.
 Độ khó: Dễ
-Câu 88. Trong bài học, “份” (fèn) có nghĩa là gì?
+Câu 88. Trong bài học, “份” có nghĩa là gì?
 A. tòa nhà giảng dạy
 B. ở; đang
 C. phần, suất; lượng từ
@@ -721,7 +721,7 @@ D. fèn
 Đáp án: D
 Lời giải: 份 đọc là fèn, nghĩa là phần, suất; lượng từ. Tham chiếu: PDF bài 6, trang 6.
 Độ khó: Dễ
-Câu 91. Trong bài học, “干” (gàn) có nghĩa là gì?
+Câu 91. Trong bài học, “干” có nghĩa là gì?
 A. khá tốt, không tệ
 B. tòa nhà giảng dạy
 C. làm, làm việc
@@ -745,7 +745,7 @@ D. dàxué
 Đáp án: B
 Lời giải: 干 đọc là gàn, nghĩa là làm, làm việc. Tham chiếu: PDF bài 6, trang 7.
 Độ khó: Dễ
-Câu 94. Trong bài học, “当” (dāng) có nghĩa là gì?
+Câu 94. Trong bài học, “当” có nghĩa là gì?
 A. làm, đảm nhiệm một vai trò
 B. máy tính xách tay, máy tính cầm tay
 C. ngoại ngữ
@@ -769,7 +769,7 @@ D. diànshìjī
 Đáp án: A
 Lời giải: 当 đọc là dāng, nghĩa là làm, đảm nhiệm một vai trò. Tham chiếu: PDF bài 6, trang 7.
 Độ khó: Dễ
-Câu 97. Trong bài học, “办” (bàn) có nghĩa là gì?
+Câu 97. Trong bài học, “办” có nghĩa là gì?
 A. truyền hình, tivi
 B. xin nghỉ phép
 C. du học
@@ -793,7 +793,7 @@ D. bàn
 Đáp án: D
 Lời giải: 办 đọc là bàn, nghĩa là làm, giải quyết, tổ chức. Tham chiếu: PDF bài 6, trang 7.
 Độ khó: Dễ
-Câu 100. Trong bài học, “弄” (nòng) có nghĩa là gì?
+Câu 100. Trong bài học, “弄” có nghĩa là gì?
 A. truyền hình, tivi
 B. làm, xử lý
 C. số điện thoại
@@ -817,7 +817,7 @@ D. dǎ diànhuà
 Đáp án: A
 Lời giải: 弄 đọc là nòng, nghĩa là làm, xử lý. Tham chiếu: PDF bài 6, trang 7.
 Độ khó: Dễ
-Câu 103. Trong bài học, “搞” (gǎo) có nghĩa là gì?
+Câu 103. Trong bài học, “搞” có nghĩa là gì?
 A. làm, tiến hành
 B. vào lớp, học trên lớp
 C. đẹp, ưa nhìn; hay khi nói về phim, sách
@@ -841,7 +841,7 @@ D. hǎokàn
 Đáp án: B
 Lời giải: 搞 đọc là gǎo, nghĩa là làm, tiến hành. Tham chiếu: PDF bài 6, trang 7.
 Độ khó: Dễ
-Câu 106. Trong bài học, “手机” (shǒujī) có nghĩa là gì?
+Câu 106. Trong bài học, “手机” có nghĩa là gì?
 A. người Anh
 B. Thượng Hải
 C. truyền hình, tivi
@@ -865,7 +865,7 @@ D. péngyou
 Đáp án: A
 Lời giải: 手机 đọc là shǒujī, nghĩa là điện thoại di động. Tham chiếu: PDF bài 6, trang 8.
 Độ khó: Dễ
-Câu 109. Trong bài học, “电话” (diànhuà) có nghĩa là gì?
+Câu 109. Trong bài học, “电话” có nghĩa là gì?
 A. máy tính xách tay
 B. điện thoại
 C. vào lớp, học trên lớp
@@ -889,7 +889,7 @@ D. tīng
 Đáp án: A
 Lời giải: 电话 đọc là diànhuà, nghĩa là điện thoại. Tham chiếu: PDF bài 6, trang 8.
 Độ khó: Dễ
-Câu 112. Trong bài học, “打电话” (dǎ diànhuà) có nghĩa là gì?
+Câu 112. Trong bài học, “打电话” có nghĩa là gì?
 A. đẹp, xinh đẹp
 B. máy tính xách tay, máy tính cầm tay
 C. gọi điện thoại
@@ -913,7 +913,7 @@ D. máng
 Đáp án: A
 Lời giải: 打电话 đọc là dǎ diànhuà, nghĩa là gọi điện thoại. Tham chiếu: PDF bài 6, trang 8.
 Độ khó: Dễ
-Câu 115. Trong bài học, “电话号码” (diànhuà hàomǎ) có nghĩa là gì?
+Câu 115. Trong bài học, “电话号码” có nghĩa là gì?
 A. đồng nghiệp
 B. số điện thoại
 C. viết
@@ -937,7 +937,7 @@ D. diànhuà hàomǎ
 Đáp án: D
 Lời giải: 电话号码 đọc là diànhuà hàomǎ, nghĩa là số điện thoại. Tham chiếu: PDF bài 6, trang 8.
 Độ khó: Dễ
-Câu 118. Trong bài học, “电脑” (diànnǎo) có nghĩa là gì?
+Câu 118. Trong bài học, “电脑” có nghĩa là gì?
 A. ngủ
 B. số điện thoại di động
 C. kết hôn
@@ -961,7 +961,7 @@ D. tīng bu jiàn
 Đáp án: A
 Lời giải: 电脑 đọc là diànnǎo, nghĩa là máy tính. Tham chiếu: PDF bài 6, trang 9.
 Độ khó: Dễ
-Câu 121. Trong bài học, “笔记本电脑” (bǐjìběn diànnǎo) có nghĩa là gì?
+Câu 121. Trong bài học, “笔记本电脑” có nghĩa là gì?
 A. bạn học
 B. du học sinh
 C. máy tính xách tay
@@ -985,7 +985,7 @@ D. dāng
 Đáp án: A
 Lời giải: 笔记本电脑 đọc là bǐjìběn diànnǎo, nghĩa là máy tính xách tay. Tham chiếu: PDF bài 6, trang 9.
 Độ khó: Dễ
-Câu 124. Trong bài học, “手提电脑” (shǒutí diànnǎo) có nghĩa là gì?
+Câu 124. Trong bài học, “手提电脑” có nghĩa là gì?
 A. đi làm, vào ca
 B. máy tính xách tay, máy tính cầm tay
 C. phần, suất; lượng từ
@@ -1009,7 +1009,7 @@ D. xiàkè
 Đáp án: C
 Lời giải: 手提电脑 đọc là shǒutí diànnǎo, nghĩa là máy tính xách tay, máy tính cầm tay. Tham chiếu: PDF bài 6, trang 9.
 Độ khó: Dễ
-Câu 127. Trong bài học, “电视” (diànshì) có nghĩa là gì?
+Câu 127. Trong bài học, “电视” có nghĩa là gì?
 A. dễ
 B. truyền hình, tivi
 C. giờ, tiếng đồng hồ
@@ -1033,7 +1033,7 @@ D. Chángchéng
 Đáp án: C
 Lời giải: 电视 đọc là diànshì, nghĩa là truyền hình, tivi. Tham chiếu: PDF bài 6, trang 9.
 Độ khó: Dễ
-Câu 130. Trong bài học, “电视机” (diànshìjī) có nghĩa là gì?
+Câu 130. Trong bài học, “电视机” có nghĩa là gì?
 A. gặp mặt
 B. máy thu hình, tivi
 C. trung học phổ thông, cấp ba
@@ -1057,7 +1057,7 @@ D. gōngzuò
 Đáp án: B
 Lời giải: 电视机 đọc là diànshìjī, nghĩa là máy thu hình, tivi. Tham chiếu: PDF bài 6, trang 9.
 Độ khó: Dễ
-Câu 133. Trong bài học, “难” (nán) có nghĩa là gì?
+Câu 133. Trong bài học, “难” có nghĩa là gì?
 A. khó
 B. dạy
 C. bác sĩ
@@ -1081,7 +1081,7 @@ D. cuò
 Đáp án: B
 Lời giải: 难 đọc là nán, nghĩa là khó. Tham chiếu: PDF bài 6, trang 11.
 Độ khó: Dễ
-Câu 136. Trong bài học, “容易” (róngyì) có nghĩa là gì?
+Câu 136. Trong bài học, “容易” có nghĩa là gì?
 A. Mã Văn, tên nhân vật
 B. bác sĩ
 C. dễ
@@ -1105,7 +1105,7 @@ D. gǎo
 Đáp án: A
 Lời giải: 容易 đọc là róngyì, nghĩa là dễ. Tham chiếu: PDF bài 6, trang 11.
 Độ khó: Dễ
-Câu 139. Trong bài học, “上课” (shàngkè) có nghĩa là gì?
+Câu 139. Trong bài học, “上课” có nghĩa là gì?
 A. bây giờ, hiện tại
 B. ngủ
 C. xấu, hư, hỏng
@@ -1129,7 +1129,7 @@ D. dǎ diànhuà
 Đáp án: B
 Lời giải: 上课 đọc là shàngkè, nghĩa là vào lớp, học trên lớp. Tham chiếu: PDF bài 6, trang 11.
 Độ khó: Dễ
-Câu 142. Trong bài học, “下课” (xiàkè) có nghĩa là gì?
+Câu 142. Trong bài học, “下课” có nghĩa là gì?
 A. tan lớp, hết giờ học
 B. có thể, có khả năng
 C. nhìn, xem, đọc, thăm, khám
@@ -1153,7 +1153,7 @@ D. xiàkè
 Đáp án: D
 Lời giải: 下课 đọc là xiàkè, nghĩa là tan lớp, hết giờ học. Tham chiếu: PDF bài 6, trang 11.
 Độ khó: Dễ
-Câu 145. Trong bài học, “上班” (shàngbān) có nghĩa là gì?
+Câu 145. Trong bài học, “上班” có nghĩa là gì?
 A. truyền hình, tivi
 B. thư viện
 C. đi làm, vào ca
@@ -1177,7 +1177,7 @@ D. bàn
 Đáp án: A
 Lời giải: 上班 đọc là shàngbān, nghĩa là đi làm, vào ca. Tham chiếu: PDF bài 6, trang 11.
 Độ khó: Dễ
-Câu 148. Trong bài học, “下班” (xiàbān) có nghĩa là gì?
+Câu 148. Trong bài học, “下班” có nghĩa là gì?
 A. tan làm, hết ca
 B. giờ, tiếng đồng hồ
 C. tòa nhà giảng dạy
@@ -1201,7 +1201,7 @@ D. gōngzuò
 Đáp án: C
 Lời giải: 下班 đọc là xiàbān, nghĩa là tan làm, hết ca. Tham chiếu: PDF bài 6, trang 11.
 Độ khó: Dễ
-Câu 151. Trong bài học, “同学” (tóngxué) có nghĩa là gì?
+Câu 151. Trong bài học, “同学” có nghĩa là gì?
 A. làm việc; công việc
 B. Thượng Hải
 C. bạn học
@@ -1225,7 +1225,7 @@ D. wàiyǔ
 Đáp án: A
 Lời giải: 同学 đọc là tóngxué, nghĩa là bạn học. Tham chiếu: PDF bài 6, trang 12.
 Độ khó: Dễ
-Câu 154. Trong bài học, “同事” (tóngshì) có nghĩa là gì?
+Câu 154. Trong bài học, “同事” có nghĩa là gì?
 A. Vạn Lý Trường Thành
 B. số điện thoại
 C. đồng nghiệp
@@ -1249,7 +1249,7 @@ D. tóngshì
 Đáp án: D
 Lời giải: 同事 đọc là tóngshì, nghĩa là đồng nghiệp. Tham chiếu: PDF bài 6, trang 12.
 Độ khó: Dễ
-Câu 157. Trong bài học, “坏” (huài) có nghĩa là gì?
+Câu 157. Trong bài học, “坏” có nghĩa là gì?
 A. làm, tiến hành
 B. tiếng Anh
 C. xấu, hư, hỏng
@@ -1273,7 +1273,7 @@ D. dàxué
 Đáp án: A
 Lời giải: 坏 đọc là huài, nghĩa là xấu, hư, hỏng. Tham chiếu: PDF bài 6, trang 12.
 Độ khó: Dễ
-Câu 160. Trong bài học, “错” (cuò) có nghĩa là gì?
+Câu 160. Trong bài học, “错” có nghĩa là gì?
 A. truyền hình, tivi
 B. sai, nhầm
 C. ngoại ngữ
@@ -1297,7 +1297,7 @@ D. zuò
 Đáp án: B
 Lời giải: 错 đọc là cuò, nghĩa là sai, nhầm. Tham chiếu: PDF bài 6, trang 13.
 Độ khó: Dễ
-Câu 163. Trong bài học, “不错” (bú cuò) có nghĩa là gì?
+Câu 163. Trong bài học, “不错” có nghĩa là gì?
 A. Mã Văn, tên nhân vật
 B. nói
 C. gặp mặt
@@ -1321,7 +1321,7 @@ D. bú cuò
 Đáp án: D
 Lời giải: 不错 đọc là bú cuò, nghĩa là khá tốt, không tệ. Tham chiếu: PDF bài 6, trang 13.
 Độ khó: Dễ
-Câu 166. Trong bài học, “没错” (méi cuò) có nghĩa là gì?
+Câu 166. Trong bài học, “没错” có nghĩa là gì?
 A. không sai, đúng vậy
 B. bạn học
 C. quả táo
@@ -1345,7 +1345,7 @@ D. dōngxi
 Đáp án: A
 Lời giải: 没错 đọc là méi cuò, nghĩa là không sai, đúng vậy. Tham chiếu: PDF bài 6, trang 13.
 Độ khó: Dễ
-Câu 169. Trong bài học, “图书馆” (túshūguǎn) có nghĩa là gì?
+Câu 169. Trong bài học, “图书馆” có nghĩa là gì?
 A. thư viện
 B. trung học cơ sở, cấp hai
 C. làm
@@ -1369,7 +1369,7 @@ D. túshūguǎn
 Đáp án: D
 Lời giải: 图书馆 đọc là túshūguǎn, nghĩa là thư viện. Tham chiếu: PDF bài 6, trang 13.
 Độ khó: Dễ
-Câu 172. Trong bài học, “教学楼” (jiàoxuélóu) có nghĩa là gì?
+Câu 172. Trong bài học, “教学楼” có nghĩa là gì?
 A. máy thu hình, tivi
 B. tòa nhà giảng dạy
 C. viết
@@ -1393,7 +1393,7 @@ D. jiāo
 Đáp án: B
 Lời giải: 教学楼 đọc là jiàoxuélóu, nghĩa là tòa nhà giảng dạy. Tham chiếu: PDF bài 6, trang 13.
 Độ khó: Dễ
-Câu 175. Trong bài học, “漂亮” (piàoliang) có nghĩa là gì?
+Câu 175. Trong bài học, “漂亮” có nghĩa là gì?
 A. Thượng Hải
 B. bạn bè
 C. điện thoại di động
@@ -1417,7 +1417,7 @@ D. qǐngjià
 Đáp án: C
 Lời giải: 漂亮 đọc là piàoliang, nghĩa là đẹp, xinh đẹp. Tham chiếu: PDF bài 6, trang 14.
 Độ khó: Dễ
-Câu 178. Trong bài học, “好看” (hǎokàn) có nghĩa là gì?
+Câu 178. Trong bài học, “好看” có nghĩa là gì?
 A. thư viện
 B. đúng
 C. quả táo
@@ -1441,7 +1441,7 @@ D. diànhuà hàomǎ
 Đáp án: B
 Lời giải: 好看 đọc là hǎokàn, nghĩa là đẹp, ưa nhìn; hay khi nói về phim, sách. Tham chiếu: PDF bài 6, trang 14.
 Độ khó: Dễ
-Câu 181. Trong bài học, “衣服” (yīfu) có nghĩa là gì?
+Câu 181. Trong bài học, “衣服” có nghĩa là gì?
 A. quần áo
 B. máy tính xách tay, máy tính cầm tay
 C. ngủ
@@ -1465,7 +1465,7 @@ D. dāng
 Đáp án: B
 Lời giải: 衣服 đọc là yīfu, nghĩa là quần áo. Tham chiếu: PDF bài 6, trang 14.
 Độ khó: Dễ
-Câu 184. Trong bài học, “套” (tào) có nghĩa là gì?
+Câu 184. Trong bài học, “套” có nghĩa là gì?
 A. điện thoại
 B. máy thu hình, tivi
 C. bộ; lượng từ cho đồ đi thành bộ
@@ -1489,7 +1489,7 @@ D. tào
 Đáp án: D
 Lời giải: 套 đọc là tào, nghĩa là bộ; lượng từ cho đồ đi thành bộ. Tham chiếu: PDF bài 6, trang 14.
 Độ khó: Dễ
-Câu 187. Trong bài học, “地方” (dìfang) có nghĩa là gì?
+Câu 187. Trong bài học, “地方” có nghĩa là gì?
 A. gọi điện thoại
 B. điện thoại di động
 C. nơi, chỗ
@@ -1513,7 +1513,7 @@ D. tóngshì
 Đáp án: C
 Lời giải: 地方 đọc là dìfang, nghĩa là nơi, chỗ. Tham chiếu: PDF bài 6, trang 14.
 Độ khó: Dễ
-Câu 190. Trong bài học, “长城” (Chángchéng) có nghĩa là gì?
+Câu 190. Trong bài học, “长城” có nghĩa là gì?
 A. máy tính xách tay, máy tính cầm tay
 B. Vạn Lý Trường Thành
 C. thư viện
@@ -1537,7 +1537,7 @@ D. shàngbān
 Đáp án: A
 Lời giải: 长城 đọc là Chángchéng, nghĩa là Vạn Lý Trường Thành. Tham chiếu: PDF bài 6, trang 14.
 Độ khó: Dễ
-Câu 193. Trong bài học, “小学” (xiǎoxué) có nghĩa là gì?
+Câu 193. Trong bài học, “小学” có nghĩa là gì?
 A. phần, suất; lượng từ
 B. Helen, tên nhân vật
 C. số điện thoại di động
@@ -1561,7 +1561,7 @@ D. cuò
 Đáp án: C
 Lời giải: 小学 đọc là xiǎoxué, nghĩa là tiểu học. Tham chiếu: PDF bài 6, trang 15.
 Độ khó: Dễ
-Câu 196. Trong bài học, “初中” (chūzhōng) có nghĩa là gì?
+Câu 196. Trong bài học, “初中” có nghĩa là gì?
 A. trung học cơ sở, cấp hai
 B. Mã Văn, tên nhân vật
 C. bạn học
@@ -1585,7 +1585,7 @@ D. chūzhōng
 Đáp án: D
 Lời giải: 初中 đọc là chūzhōng, nghĩa là trung học cơ sở, cấp hai. Tham chiếu: PDF bài 6, trang 15.
 Độ khó: Dễ
-Câu 199. Trong bài học, “高中” (gāozhōng) có nghĩa là gì?
+Câu 199. Trong bài học, “高中” có nghĩa là gì?
 A. gặp mặt
 B. trung học phổ thông, cấp ba
 C. điện thoại di động
@@ -1609,7 +1609,7 @@ D. gāozhōng
 Đáp án: D
 Lời giải: 高中 đọc là gāozhōng, nghĩa là trung học phổ thông, cấp ba. Tham chiếu: PDF bài 6, trang 15.
 Độ khó: Dễ
-Câu 202. Trong bài học, “读” (dú) có nghĩa là gì?
+Câu 202. Trong bài học, “读” có nghĩa là gì?
 A. học, học tập
 B. Vạn Lý Trường Thành
 C. đọc; học một cấp học
@@ -1633,7 +1633,7 @@ D. tào
 Đáp án: A
 Lời giải: 读 đọc là dú, nghĩa là đọc; học một cấp học. Tham chiếu: PDF bài 6, trang 15.
 Độ khó: Dễ
-Câu 205. Trong bài học, “外语” (wàiyǔ) có nghĩa là gì?
+Câu 205. Trong bài học, “外语” có nghĩa là gì?
 A. ngoại ngữ
 B. bệnh nhân
 C. bạn gái
@@ -1657,7 +1657,7 @@ D. shàngbān
 Đáp án: B
 Lời giải: 外语 đọc là wàiyǔ, nghĩa là ngoại ngữ. Tham chiếu: PDF bài 6, trang 16.
 Độ khó: Dễ
-Câu 208. Trong bài học, “听” (tīng) có nghĩa là gì?
+Câu 208. Trong bài học, “听” có nghĩa là gì?
 A. nửa
 B. Bắc Kinh
 C. nói
@@ -1681,7 +1681,7 @@ D. gōngsī
 Đáp án: B
 Lời giải: 听 đọc là tīng, nghĩa là nghe. Tham chiếu: PDF bài 6, trang 16.
 Độ khó: Dễ
-Câu 211. Trong bài học, “说” (shuō) có nghĩa là gì?
+Câu 211. Trong bài học, “说” có nghĩa là gì?
 A. nói
 B. máy tính xách tay
 C. đọc; học một cấp học
@@ -1705,7 +1705,7 @@ D. piàoliang
 Đáp án: B
 Lời giải: 说 đọc là shuō, nghĩa là nói. Tham chiếu: PDF bài 6, trang 16.
 Độ khó: Dễ
-Câu 214. Trong bài học, “写” (xiě) có nghĩa là gì?
+Câu 214. Trong bài học, “写” có nghĩa là gì?
 A. đồ, đồ vật
 B. tòa nhà giảng dạy
 C. viết
@@ -1729,7 +1729,7 @@ D. Xī'ān
 Đáp án: C
 Lời giải: 写 đọc là xiě, nghĩa là viết. Tham chiếu: PDF bài 6, trang 16.
 Độ khó: Dễ
-Câu 217. Trong bài học, “能” (néng) có nghĩa là gì?
+Câu 217. Trong bài học, “能” có nghĩa là gì?
 A. Bắc Kinh
 B. tiểu học
 C. có thể, có khả năng
@@ -1753,7 +1753,7 @@ D. néng
 Đáp án: D
 Lời giải: 能 đọc là néng, nghĩa là có thể, có khả năng. Tham chiếu: PDF bài 6, trang 17.
 Độ khó: Dễ
-Câu 220. Trong bài học, “可以” (kěyǐ) có nghĩa là gì?
+Câu 220. Trong bài học, “可以” có nghĩa là gì?
 A. phần, suất; lượng từ
 B. giờ, tiếng đồng hồ
 C. có thể, được phép
@@ -1777,7 +1777,7 @@ D. dìfang
 Đáp án: B
 Lời giải: 可以 đọc là kěyǐ, nghĩa là có thể, được phép. Tham chiếu: PDF bài 6, trang 17.
 Độ khó: Dễ
-Câu 223. Trong bài học, “会” (huì) có nghĩa là gì?
+Câu 223. Trong bài học, “会” có nghĩa là gì?
 A. thư viện
 B. số điện thoại
 C. đồng nghiệp
@@ -1801,7 +1801,7 @@ D. nǚ péngyou
 Đáp án: B
 Lời giải: 会 đọc là huì, nghĩa là biết làm; sẽ. Tham chiếu: PDF bài 6, trang 17.
 Độ khó: Dễ
-Câu 226. Trong bài học, “见面” (jiànmiàn) có nghĩa là gì?
+Câu 226. Trong bài học, “见面” có nghĩa là gì?
 A. số điện thoại di động
 B. tan làm, hết ca
 C. máy tính xách tay, máy tính cầm tay
@@ -1825,7 +1825,7 @@ D. jiànmiàn
 Đáp án: D
 Lời giải: 见面 đọc là jiànmiàn, nghĩa là gặp mặt. Tham chiếu: PDF bài 6, trang 20.
 Độ khó: Dễ
-Câu 229. Trong bài học, “睡觉” (shuìjiào) có nghĩa là gì?
+Câu 229. Trong bài học, “睡觉” có nghĩa là gì?
 A. gặp mặt
 B. ngủ
 C. làm, tiến hành
@@ -1849,7 +1849,7 @@ D. diànhuà
 Đáp án: C
 Lời giải: 睡觉 đọc là shuìjiào, nghĩa là ngủ. Tham chiếu: PDF bài 6, trang 20.
 Độ khó: Dễ
-Câu 232. Trong bài học, “帮忙” (bāngmáng) có nghĩa là gì?
+Câu 232. Trong bài học, “帮忙” có nghĩa là gì?
 A. học, học tập
 B. không nghe thấy
 C. giúp đỡ
@@ -1873,7 +1873,7 @@ D. bāngmáng
 Đáp án: D
 Lời giải: 帮忙 đọc là bāngmáng, nghĩa là giúp đỡ. Tham chiếu: PDF bài 6, trang 20.
 Độ khó: Dễ
-Câu 235. Trong bài học, “请假” (qǐngjià) có nghĩa là gì?
+Câu 235. Trong bài học, “请假” có nghĩa là gì?
 A. tan lớp, hết giờ học
 B. bạn học
 C. xin nghỉ phép
@@ -1897,7 +1897,7 @@ D. bú cuò
 Đáp án: B
 Lời giải: 请假 đọc là qǐngjià, nghĩa là xin nghỉ phép. Tham chiếu: PDF bài 6, trang 20.
 Độ khó: Dễ
-Câu 238. Trong bài học, “结婚” (jiéhūn) có nghĩa là gì?
+Câu 238. Trong bài học, “结婚” có nghĩa là gì?
 A. máy thu hình, tivi
 B. kết hôn
 C. có thể, được phép
@@ -1921,7 +1921,7 @@ D. jiéhūn
 Đáp án: D
 Lời giải: 结婚 đọc là jiéhūn, nghĩa là kết hôn. Tham chiếu: PDF bài 6, trang 20.
 Độ khó: Dễ
-Câu 241. Trong bài học, “小时” (xiǎoshí) có nghĩa là gì?
+Câu 241. Trong bài học, “小时” có nghĩa là gì?
 A. nhìn, xem, đọc, thăm, khám
 B. giờ, tiếng đồng hồ
 C. quần áo
@@ -1945,7 +1945,7 @@ D. fèn
 Đáp án: A
 Lời giải: 小时 đọc là xiǎoshí, nghĩa là giờ, tiếng đồng hồ. Tham chiếu: PDF bài 6, trang 20.
 Độ khó: Dễ
-Câu 244. Trong bài học, “天” (tiān) có nghĩa là gì?
+Câu 244. Trong bài học, “天” có nghĩa là gì?
 A. kết hôn
 B. ngày
 C. trung học
@@ -1969,7 +1969,7 @@ D. tīng
 Đáp án: B
 Lời giải: 天 đọc là tiān, nghĩa là ngày. Tham chiếu: PDF bài 6, trang 20.
 Độ khó: Dễ
-Câu 247. Trong bài học, “这儿” (zhèr) có nghĩa là gì?
+Câu 247. Trong bài học, “这儿” có nghĩa là gì?
 A. dạy
 B. ở đây, chỗ này
 C. khó
@@ -1993,7 +1993,7 @@ D. Yīngguó rén
 Đáp án: C
 Lời giải: 这儿 đọc là zhèr, nghĩa là ở đây, chỗ này. Tham chiếu: PDF bài 6, trang 24.
 Độ khó: Dễ
-Câu 250. Trong bài học, “英国人” (Yīngguó rén) có nghĩa là gì?
+Câu 250. Trong bài học, “英国人” có nghĩa là gì?
 A. người Anh
 B. nhìn, xem, đọc, thăm, khám
 C. máy tính xách tay
@@ -2017,7 +2017,7 @@ D. píngguǒ
 Đáp án: C
 Lời giải: 英国人 đọc là Yīngguó rén, nghĩa là người Anh. Tham chiếu: PDF bài 6, trang 25.
 Độ khó: Dễ
-Câu 253. Trong bài học, “出租车” (chūzūchē) có nghĩa là gì?
+Câu 253. Trong bài học, “出租车” có nghĩa là gì?
 A. Bắc Kinh
 B. xe taxi
 C. công ty
@@ -2041,7 +2041,7 @@ D. jiéhūn
 Đáp án: A
 Lời giải: 出租车 đọc là chūzūchē, nghĩa là xe taxi. Tham chiếu: PDF bài 6, trang 28.
 Độ khó: Dễ
-Câu 256. Trong bài học, “西安” (Xī'ān) có nghĩa là gì?
+Câu 256. Trong bài học, “西安” có nghĩa là gì?
 A. trung học cơ sở, cấp hai
 B. khó
 C. Tây An
@@ -2065,7 +2065,7 @@ D. diànhuà hàomǎ
 Đáp án: C
 Lời giải: 西安 đọc là Xī'ān, nghĩa là Tây An. Tham chiếu: PDF bài 6, trang 28.
 Độ khó: Dễ
-Câu 259. Trong bài học, “医生” (yīshēng) có nghĩa là gì?
+Câu 259. Trong bài học, “医生” có nghĩa là gì?
 A. bác sĩ
 B. đẹp, ưa nhìn; hay khi nói về phim, sách
 C. điện thoại
@@ -2089,7 +2089,7 @@ D. Yīngyǔ
 Đáp án: C
 Lời giải: 医生 đọc là yīshēng, nghĩa là bác sĩ. Tham chiếu: PDF bài 6, trang 32.
 Độ khó: Dễ
-Câu 262. Trong bài học, “病人” (bìngrén) có nghĩa là gì?
+Câu 262. Trong bài học, “病人” có nghĩa là gì?
 A. viết
 B. máy thu hình, tivi
 C. bệnh nhân
@@ -2113,7 +2113,7 @@ D. shǒujī
 Đáp án: A
 Lời giải: 病人 đọc là bìngrén, nghĩa là bệnh nhân. Tham chiếu: PDF bài 6, trang 32.
 Độ khó: Dễ
-Câu 265. Trong bài học, “忙” (máng) có nghĩa là gì?
+Câu 265. Trong bài học, “忙” có nghĩa là gì?
 A. làm, đảm nhiệm một vai trò
 B. điện thoại di động
 C. bận
@@ -2137,7 +2137,7 @@ D. shuō
 Đáp án: A
 Lời giải: 忙 đọc là máng, nghĩa là bận. Tham chiếu: PDF bài 6, trang 32.
 Độ khó: Dễ
-Câu 268. Trong bài học, “听不见” (tīng bu jiàn) có nghĩa là gì?
+Câu 268. Trong bài học, “听不见” có nghĩa là gì?
 A. bạn bè
 B. không nghe thấy
 C. khá tốt, không tệ
@@ -2161,7 +2161,7 @@ D. tīng bu jiàn
 Đáp án: D
 Lời giải: 听不见 đọc là tīng bu jiàn, nghĩa là không nghe thấy. Tham chiếu: PDF bài 6, trang 33.
 Độ khó: Dễ
-Câu 271. Trong bài học, “手机号” (shǒujī hào) có nghĩa là gì?
+Câu 271. Trong bài học, “手机号” có nghĩa là gì?
 A. số điện thoại di động
 B. Tây An
 C. máy thu hình, tivi

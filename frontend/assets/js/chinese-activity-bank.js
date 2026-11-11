@@ -74,10 +74,10 @@ export function expandedActivities(title){
   const fillTokens=[...r.tokens],answer=fillTokens[target];fillTokens[target]='___';
   const alternatives=[r.answer,rows[(index+1)%rows.length].answer,rows[(index+3)%rows.length].answer];
   return [
-   {type:'order',prompt:r.meaning,tokens:r.tokens,answer:r.answer,explanation:r.explanation,hint:'Bắt đầu bằng: '+r.tokens[0]},
+   {type:'order',prompt:r.meaning,tokens:r.tokens,answer:r.answer,explanation:r.explanation},
    {type:'fix',prompt:r.wrong,options:[r.answer,r.wrong],answer:r.answer,explanation:r.explanation},
-   {type:'fill',prompt:fillTokens.join('')+' ('+r.meaning+')',answer,explanation:r.explanation,hint:'Nghĩa cả câu: '+r.meaning},
-   {type:'dialogue',prompt:'Hãy đáp lại với ý: '+r.meaning,speech:r.speech,options:alternatives,answer:r.answer,explanation:r.explanation,meaning:'Gợi ý trả lời: '+r.meaning}
+   {type:'fill',prompt:fillTokens.join('')+' ('+r.meaning+')',answer,explanation:r.explanation},
+   {type:'dialogue',prompt:'Nghe câu thoại và chọn câu đáp lại phù hợp.',speech:r.speech,options:alternatives,answer:r.answer,explanation:r.explanation}
   ];
  });
 }

@@ -4,8 +4,9 @@ import {writing,recording} from './learning-tools.js';
 import {renderHistory} from './history-view.js';
 import {mountPractice} from './applied-practice.js';
 import {questionAudio,withChoiceAudio} from '/assets/js/question-audio.js';
-import {chooseQuiz,wordTable,listeningPractice,questionHint} from '/assets/js/chinese-study-extras.js';
+import {chooseQuiz,wordTable,listeningPractice} from '/assets/js/chinese-study-extras.js';
 import {animalPath} from '/assets/js/animal-path.js';
+import {chineseQuestionPrompt} from '/assets/js/chinese-question-prompt.js';
 const params=new URLSearchParams(location.search);let catalog,timer;
 const json=v=>typeof v==='string'?JSON.parse(v):v;
 const extra=(title,children)=>el('details',{class:'learn-extra'},[el('summary',{text:title}),...children]);
@@ -105,10 +106,10 @@ async function learn(id){
    if(vocab){
     if(!flipped)face.append(el('div',{class:'hanzi',text:d[frontMode]||'Chưa có dữ liệu cho mặt thẻ này'}));
     else face.append(el('div',{class:'hanzi',text:d.hanzi}),el('div',{class:'pinyin',text:d.pinyin||''}),el('p',{class:'card-meaning',text:d.meaning}),...['example','example_pinyin','example_meaning','mnemonic','radicals'].filter(k=>d[k]).map(k=>el('p',{text:d[k]})),...(d.image_url?[el('img',{src:d.image_url,alt:d.meaning})]:[]));
-   }else if(!flipped)face.append(el('p',{class:'study-prompt',text:d.prompt}));
+   }else if(!flipped)face.append(el('p',{class:'study-prompt',text:chineseQuestionPrompt(d.prompt)}));
    else face.append(el('p',{class:'card-meaning',text:answer?.accepted?.join(' / ')||''}),el('p',{class:'study-explanation',text:answer?.explanation||''}));
    area.append(el('p',{class:'card-count',text:`Thẻ ${current+1} / ${deck.length}`}),face,el('div',{class:'card-controls'},[action('← Trước',()=>move(-1)),action('Lật thẻ',flip,true),action('Tiếp →',()=>move(1))]));
-   area.append(questionAudio(vocab?(flipped?[d.hanzi,d.meaning].filter(Boolean).join('. '):d[frontMode]||''):d.prompt));
+   area.append(questionAudio(vocab?(flipped?[d.hanzi,d.meaning].filter(Boolean).join('. '):d[frontMode]||''):chineseQuestionPrompt(d.prompt)));
    if(vocab){
     const review=catalog.reviews.find(r=>r.item_id===item.id),tools=el('div',{class:'learn-actions'}),audio=audioButton(d);if(audio)tools.append(audio);else area.append(el('p',{class:'muted',text:'Thẻ này chưa có âm thanh hoặc thiết bị chưa có giọng đọc tiếng Trung.'}));
     for(const [memory,label]of [['new','Chưa nhớ'],['review','Cần ôn'],['remembered','Đã nhớ']])tools.append(action(label,async()=>{const r=await request('/reviews/'+item.id,'PUT',{event_id:crypto.randomUUID(),memory});upsert(r);await save(item.id);notice('Đã lưu tự đánh giá và lịch ôn.');await move(1);}));
@@ -150,7 +151,7 @@ async function showAttempt(a,index){
   const correct=a.items.filter(i=>i.result?.correct).length;
   root().append(card('Đã hoàn thành!',[el('p',{class:'quiz-score',text:a.score+'/100'}),el('p',{text:`${correct} / ${a.items.length} câu đúng · ${Math.max(0,Math.round((new Date(a.finished_at)-new Date(a.started_at))/1000))} giây`}),...(a.diamonds_delta!==null&&a.diamonds_delta!==undefined?[el('p',{class:a.diamonds_delta<0?'answer-wrong':'answer-correct',text:a.diamonds_delta>0?`+${a.diamonds_delta} Kim Cương`:a.diamonds_delta<0?`${a.diamonds_delta} Kim Cương`:'Không trừ Kim Cương vì số dư đã bằng 0.'})]:[]),action('Làm lại',async()=>{const body=a.test_id?{test_id:a.test_id}:{set_id:a.set_id,count:20,selection:a.selection==='review'?'review':'sequential',block:a.block};const next=await request('/attempts','POST',body);location.href='?attempt='+next.id;},true)]));
   if(a.set_id&&!a.test_id)root().append(action('Về bản đồ khám phá →',()=>quiz(a.set_id),true));
-  const reviews=el('div');const render=wrong=>{reviews.replaceChildren(...a.items.filter(i=>!wrong||!i.result?.correct).map((i,n)=>card((i.result?.correct?'✓ ':'✕ ')+i.data.prompt,[questionAudio(i.data.prompt),el('p',{text:'Con chọn: '+(i.result?.value||'Chưa trả lời')}),el('p',{class:'answer-correct',text:'Đáp án: '+i.result.accepted.join(' / ')}),el('p',{text:i.result.explanation||''})])));reviews.querySelectorAll('h2').forEach(h=>h.classList.add('study-prompt'));};
+  const reviews=el('div');const render=wrong=>{reviews.replaceChildren(...a.items.filter(i=>!wrong||!i.result?.correct).map((i,n)=>card((i.result?.correct?'✓ ':'✕ ')+chineseQuestionPrompt(i.data.prompt),[questionAudio(chineseQuestionPrompt(i.data.prompt)),el('p',{text:'Con chọn: '+(i.result?.value||'Chưa trả lời')}),el('p',{class:'answer-correct',text:'Đáp án: '+i.result.accepted.join(' / ')}),el('p',{text:i.result.explanation||''})])));reviews.querySelectorAll('h2').forEach(h=>h.classList.add('study-prompt'));};
   root().append(action('Ôn câu sai',()=>render(true)),action('Xem tất cả',()=>render(false)),reviews);render(true);return;
  }
  if(index===undefined){index=a.items.findIndex(i=>!i.result);if(index<0)index=a.items.length-1;}
@@ -164,9 +165,8 @@ async function showAttempt(a,index){
  }root().append(navigation);
  root().append(el('p',{class:'quiz-position',text:`Câu ${index+1} / ${a.items.length}`}),el('progress',{max:a.items.length,value:completed,'aria-label':'Tiến độ quiz'}));
  if(a.ends_at){const time=el('p',{class:'quiz-time'});root().append(time);const tick=()=>{const seconds=Math.max(0,Math.ceil((new Date(a.ends_at)-Date.now())/1000));time.textContent=`Còn ${Math.floor(seconds/60)}:${String(seconds%60).padStart(2,'0')}`;if(!seconds){clearInterval(timer);request('/attempts/'+a.id).then(next=>showAttempt(next,index)).catch(error);}};timer=setInterval(tick,1000);tick();}
- const box=card('',[el('p',{class:'quiz-prompt',text:q.prompt})]);
- box.append(questionAudio(q.prompt));
- if(!i.result)box.append(questionHint(q));
+ const prompt=chineseQuestionPrompt(q.prompt),box=card('',[el('p',{class:'quiz-prompt',text:prompt})]);
+ box.append(questionAudio(prompt));
  if(q.image_url)box.append(el('img',{src:q.image_url,alt:'Hình câu hỏi',width:220}));if(q.audio_url)box.append(el('audio',{src:q.audio_url,controls:true}));
  if(i.result){
   box.append(el('p',{class:i.result.correct?'answer-correct':'answer-wrong',text:i.result.correct?'Đúng rồi!':'Chưa đúng, con xem lại nhé.'}),el('p',{text:'Con đã trả lời: '+(i.result.value||'Chưa trả lời')}),el('p',{class:'answer-correct',text:'Đáp án: '+i.result.accepted.join(' / ')}),el('p',{text:i.result.explanation||''}));

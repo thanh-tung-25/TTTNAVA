@@ -24,7 +24,7 @@ export async function activitiesEditor(lesson){
    if(['fix','dialogue'].includes(item.type))form.append(field('Các lựa chọn (mỗi dòng một câu; có cả câu đúng)','options',(item.options||[]).join('\n'),'textarea'));
    form.append(field(item.type==='fill'?'Từ / cụm từ đáp án':'Đáp án đúng (ghi nguyên nội dung)','answer',item.answer||'','textarea'));
    if(item.type==='order')form.append(field('Pinyin câu đúng','pinyin',item.pinyin||''));
-   form.append(field('Gợi ý (không bắt buộc)','hint',item.hint||'','textarea'),field('Lời giải sau khi kiểm tra','explanation',item.explanation||'','textarea'));
+   form.append(field('Lời giải sau khi kiểm tra','explanation',item.explanation||'','textarea'));
    if(item.type==='order'){
     const answer=form.querySelector('[name=answer]'),tokens=form.querySelector('[name=tokens]');answer.readOnly=true;
     tokens.addEventListener('input',()=>{answer.value=lines(tokens.value).join('');});

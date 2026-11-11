@@ -1,5 +1,6 @@
 import { query } from '../config/db.js';
 import { notFound } from '../utils/errors.js';
+import { chineseQuestionPrompt } from '../../../frontend/assets/js/chinese-question-prompt.js';
 export const json = value => typeof value === 'string' ? JSON.parse(value) : value;
 export async function one(sql, params = [], run = query) { const rows = await run(sql,params); if (!rows[0]) throw notFound(); return rows[0]; }
 export const setSelect = `SELECT s.*, l.level_id, l.title lesson_title, l.status lesson_status, d.filename, d.created_at uploaded_at
@@ -12,7 +13,7 @@ export async function getItems(id, run = query) {
 }
 export function publicItem(i) {
  if (i.kind !== 'question') return i;
- const {accepted,explanation,...data} = i.data; return {...i,data};
+ const {accepted,explanation,...data} = i.data; return {...i,data:{...data,prompt:chineseQuestionPrompt(data.prompt)}};
 }
 export async function catalog(admin, student) {
  const levels = await query('SELECT * FROM chinese_levels ORDER BY id');

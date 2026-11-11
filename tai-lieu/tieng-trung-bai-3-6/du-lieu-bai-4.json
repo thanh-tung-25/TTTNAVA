@@ -579,7 +579,7 @@
   ],
   "questions": [
     {
-      "prompt": "Trong bài học, “小姐” (xiǎojiě) có nghĩa là gì?",
+      "prompt": "Trong bài học, “小姐” có nghĩa là gì?",
       "options": [
         "cảm ơn, cảm tạ",
         "cô, tiểu thư; cách xưng hô trong bài",
@@ -615,7 +615,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “师傅” (shīfu) có nghĩa là gì?",
+      "prompt": "Trong bài học, “师傅” có nghĩa là gì?",
       "options": [
         "nhà vệ sinh",
         "đến; hướng về người nói",
@@ -651,7 +651,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “去” (qù) có nghĩa là gì?",
+      "prompt": "Trong bài học, “去” có nghĩa là gì?",
       "options": [
         "tể tướng",
         "cô gái",
@@ -687,7 +687,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “哪儿” (nǎr) có nghĩa là gì?",
+      "prompt": "Trong bài học, “哪儿” có nghĩa là gì?",
       "options": [
         "cái; lượng từ thông dụng",
         "ở đâu",
@@ -723,7 +723,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “哪里” (nǎlǐ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “哪里” có nghĩa là gì?",
       "options": [
         "nhà vệ sinh",
         "bao nhiêu",
@@ -759,7 +759,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “人民” (rénmín) có nghĩa là gì?",
+      "prompt": "Trong bài học, “人民” có nghĩa là gì?",
       "options": [
         "không có gì; đáp lại lời cảm ơn",
         "quảng trường",
@@ -795,7 +795,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “广场” (guǎngchǎng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “广场” có nghĩa là gì?",
       "options": [
         "quảng trường",
         "người đẹp, cô gái đẹp",
@@ -831,7 +831,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “人民广场” (Rénmín Guǎngchǎng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “人民广场” có nghĩa là gì?",
       "options": [
         "Quảng trường Nhân Dân",
         "lại, thêm, nữa",
@@ -867,7 +867,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “知道” (zhīdào) có nghĩa là gì?",
+      "prompt": "Trong bài học, “知道” có nghĩa là gì?",
       "options": [
         "cách; chỉ khoảng cách",
         "biết một thông tin",
@@ -903,7 +903,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “了” (le) có nghĩa là gì?",
+      "prompt": "Trong bài học, “了” có nghĩa là gì?",
       "options": [
         "buổi sáng sớm",
         "mất dê mới sửa chuồng; sửa sai khi còn kịp",
@@ -939,7 +939,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “远” (yuǎn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “远” có nghĩa là gì?",
       "options": [
         "xa",
         "nước cô la",
@@ -975,7 +975,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “近” (jìn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “近” có nghĩa là gì?",
       "options": [
         "gần",
         "trong bụng",
@@ -1011,7 +1011,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “到” (dào) có nghĩa là gì?",
+      "prompt": "Trong bài học, “到” có nghĩa là gì?",
       "options": [
         "nhà hàng; khách sạn tùy ngữ cảnh",
         "không cần cảm ơn, không có gì",
@@ -1047,7 +1047,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “多少” (duōshao) có nghĩa là gì?",
+      "prompt": "Trong bài học, “多少” có nghĩa là gì?",
       "options": [
         "nhà vệ sinh",
         "bao nhiêu",
@@ -1083,7 +1083,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “钱” (qián) có nghĩa là gì?",
+      "prompt": "Trong bài học, “钱” có nghĩa là gì?",
       "options": [
         "tiền",
         "đi, đến; hướng xa người nói",
@@ -1119,7 +1119,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “块” (kuài) có nghĩa là gì?",
+      "prompt": "Trong bài học, “块” có nghĩa là gì?",
       "options": [
         "đồng, tệ; đơn vị tiền trong khẩu ngữ",
         "sân bay",
@@ -1155,7 +1155,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “谢谢” (xièxie) có nghĩa là gì?",
+      "prompt": "Trong bài học, “谢谢” có nghĩa là gì?",
       "options": [
         "rạp chiếu phim",
         "cảm ơn",
@@ -1191,7 +1191,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “不客气” (bú kèqi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “不客气” có nghĩa là gì?",
       "options": [
         "cơ quan công an",
         "nước cô la",
@@ -1227,7 +1227,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “再见” (zàijiàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “再见” có nghĩa là gì?",
       "options": [
         "ở đâu",
         "tạm biệt, hẹn gặp lại",
@@ -1263,7 +1263,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “早上” (zǎoshang) có nghĩa là gì?",
+      "prompt": "Trong bài học, “早上” có nghĩa là gì?",
       "options": [
         "buổi sáng sớm",
         "cách; chỉ khoảng cách",
@@ -1299,7 +1299,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “上午” (shàngwǔ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “上午” có nghĩa là gì?",
       "options": [
         "buổi sáng",
         "cô gái",
@@ -1335,7 +1335,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “中午” (zhōngwǔ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “中午” có nghĩa là gì?",
       "options": [
         "khách sáo",
         "buổi trưa",
@@ -1371,7 +1371,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “下午” (xiàwǔ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “下午” có nghĩa là gì?",
       "options": [
         "buổi chiều",
         "cách; chỉ khoảng cách",
@@ -1407,7 +1407,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “晚上” (wǎnshang) có nghĩa là gì?",
+      "prompt": "Trong bài học, “晚上” có nghĩa là gì?",
       "options": [
         "tể tướng",
         "bệnh viện",
@@ -1443,7 +1443,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “半夜” (bànyè) có nghĩa là gì?",
+      "prompt": "Trong bài học, “半夜” có nghĩa là gì?",
       "options": [
         "tiền",
         "ở đâu",
@@ -1479,7 +1479,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “女士” (nǚshì) có nghĩa là gì?",
+      "prompt": "Trong bài học, “女士” có nghĩa là gì?",
       "options": [
         "sáu",
         "có thể, có khả năng",
@@ -1515,7 +1515,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “姑娘” (gūniang) có nghĩa là gì?",
+      "prompt": "Trong bài học, “姑娘” có nghĩa là gì?",
       "options": [
         "bác tài, thầy; cách gọi người thợ lành nghề",
         "so với; dùng trong so sánh",
@@ -1551,7 +1551,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “妹妹” (mèimei) có nghĩa là gì?",
+      "prompt": "Trong bài học, “妹妹” có nghĩa là gì?",
       "options": [
         "bệnh viện",
         "em gái",
@@ -1587,7 +1587,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “美女” (měinǚ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “美女” có nghĩa là gì?",
       "options": [
         "hiểu rõ",
         "bệnh viện",
@@ -1623,7 +1623,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “小哥哥” (xiǎo gēge) có nghĩa là gì?",
+      "prompt": "Trong bài học, “小哥哥” có nghĩa là gì?",
       "options": [
         "tài xế, người lái xe",
         "buổi tối",
@@ -1659,7 +1659,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “帅哥” (shuàigē) có nghĩa là gì?",
+      "prompt": "Trong bài học, “帅哥” có nghĩa là gì?",
       "options": [
         "chàng trai đẹp trai",
         "hiểu rõ",
@@ -1695,7 +1695,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “司机” (sījī) có nghĩa là gì?",
+      "prompt": "Trong bài học, “司机” có nghĩa là gì?",
       "options": [
         "so với; dùng trong so sánh",
         "biết một thông tin",
@@ -1731,7 +1731,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “来” (lái) có nghĩa là gì?",
+      "prompt": "Trong bài học, “来” có nghĩa là gì?",
       "options": [
         "đến; hướng về người nói",
         "bưu điện",
@@ -1767,7 +1767,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “人民币” (rénmínbì) có nghĩa là gì?",
+      "prompt": "Trong bài học, “人民币” có nghĩa là gì?",
       "options": [
         "nửa đêm",
         "Tiểu Lưu, tên nhân vật",
@@ -1803,7 +1803,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “步行街” (bùxíngjiē) có nghĩa là gì?",
+      "prompt": "Trong bài học, “步行街” có nghĩa là gì?",
       "options": [
         "bảo tàng",
         "tái ông mất ngựa; họa phúc khó lường",
@@ -1839,7 +1839,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “河内” (Hénèi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “河内” có nghĩa là gì?",
       "options": [
         "nửa đêm",
         "bà, cô; cách xưng hô lịch sự",
@@ -1875,7 +1875,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “巴亭广场” (Bātíng Guǎngchǎng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “巴亭广场” có nghĩa là gì?",
       "options": [
         "buổi tối",
         "khoảng, có lẽ",
@@ -1911,7 +1911,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “学校” (xuéxiào) có nghĩa là gì?",
+      "prompt": "Trong bài học, “学校” có nghĩa là gì?",
       "options": [
         "nhân dân",
         "trợ từ; biểu thị thay đổi trạng thái trong bài",
@@ -1947,7 +1947,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “公司” (gōngsī) có nghĩa là gì?",
+      "prompt": "Trong bài học, “公司” có nghĩa là gì?",
       "options": [
         "buổi trưa",
         "ở đâu, chỗ nào",
@@ -1983,7 +1983,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “医院” (yīyuàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “医院” có nghĩa là gì?",
       "options": [
         "công viên",
         "trường học",
@@ -2019,7 +2019,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “超市” (chāoshì) có nghĩa là gì?",
+      "prompt": "Trong bài học, “超市” có nghĩa là gì?",
       "options": [
         "có thể, có khả năng",
         "quán ăn, nhà hàng",
@@ -2055,7 +2055,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “宿舍” (sùshè) có nghĩa là gì?",
+      "prompt": "Trong bài học, “宿舍” có nghĩa là gì?",
       "options": [
         "xa",
         "không có gì; đáp lại lời cảm ơn",
@@ -2091,7 +2091,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “电影院” (diànyǐngyuàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “电影院” có nghĩa là gì?",
       "options": [
         "ít",
         "trường học",
@@ -2127,7 +2127,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “明白” (míngbai) có nghĩa là gì?",
+      "prompt": "Trong bài học, “明白” có nghĩa là gì?",
       "options": [
         "cảm ơn, cảm tạ",
         "trường học",
@@ -2163,7 +2163,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “离” (lí) có nghĩa là gì?",
+      "prompt": "Trong bài học, “离” có nghĩa là gì?",
       "options": [
         "tìm; trả lại tiền thừa",
         "cách; chỉ khoảng cách",
@@ -2199,7 +2199,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “找” (zhǎo) có nghĩa là gì?",
+      "prompt": "Trong bài học, “找” có nghĩa là gì?",
       "options": [
         "tìm; trả lại tiền thừa",
         "đến, tới; nhấn mạnh điểm đến",
@@ -2235,7 +2235,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “多” (duō) có nghĩa là gì?",
+      "prompt": "Trong bài học, “多” có nghĩa là gì?",
       "options": [
         "đến; hướng về người nói",
         "tể tướng",
@@ -2271,7 +2271,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “少” (shǎo) có nghĩa là gì?",
+      "prompt": "Trong bài học, “少” có nghĩa là gì?",
       "options": [
         "xe buýt",
         "ít",
@@ -2307,7 +2307,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “再” (zài) có nghĩa là gì?",
+      "prompt": "Trong bài học, “再” có nghĩa là gì?",
       "options": [
         "lại, thêm, nữa",
         "không cần cảm ơn, không có gì",
@@ -2343,7 +2343,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “感谢” (gǎnxiè) có nghĩa là gì?",
+      "prompt": "Trong bài học, “感谢” có nghĩa là gì?",
       "options": [
         "đến, tới; nhấn mạnh điểm đến",
         "buổi trưa",
@@ -2379,7 +2379,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “不用谢” (bú yòng xiè) có nghĩa là gì?",
+      "prompt": "Trong bài học, “不用谢” có nghĩa là gì?",
       "options": [
         "không cần cảm ơn, không có gì",
         "cốc, ly; lượng từ đồ uống",
@@ -2415,7 +2415,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “客气” (kèqi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “客气” có nghĩa là gì?",
       "options": [
         "khách sáo",
         "nhà hàng; khách sạn tùy ngữ cảnh",
@@ -2451,7 +2451,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “机场” (jīchǎng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “机场” có nghĩa là gì?",
       "options": [
         "tài xế, người lái xe",
         "Tiểu Lưu, tên nhân vật",
@@ -2487,7 +2487,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “火车站” (huǒchēzhàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “火车站” có nghĩa là gì?",
       "options": [
         "công viên",
         "tiền",
@@ -2523,7 +2523,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “博物馆” (bówùguǎn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “博物馆” có nghĩa là gì?",
       "options": [
         "Quảng trường Ba Đình",
         "bác tài, thầy; cách gọi người thợ lành nghề",
@@ -2559,7 +2559,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “公园” (gōngyuán) có nghĩa là gì?",
+      "prompt": "Trong bài học, “公园” có nghĩa là gì?",
       "options": [
         "chín",
         "hiểu rõ",
@@ -2595,7 +2595,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “饭店” (fàndiàn) có nghĩa là gì?",
+      "prompt": "Trong bài học, “饭店” có nghĩa là gì?",
       "options": [
         "lại, thêm, nữa",
         "sáu",
@@ -2631,7 +2631,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “杯” (bēi) có nghĩa là gì?",
+      "prompt": "Trong bài học, “杯” có nghĩa là gì?",
       "options": [
         "cốc, ly; lượng từ đồ uống",
         "tể tướng",
@@ -2667,7 +2667,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “可乐” (kělè) có nghĩa là gì?",
+      "prompt": "Trong bài học, “可乐” có nghĩa là gì?",
       "options": [
         "bao nhiêu",
         "cốc, ly; lượng từ đồ uống",
@@ -2703,7 +2703,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “个” (gè) có nghĩa là gì?",
+      "prompt": "Trong bài học, “个” có nghĩa là gì?",
       "options": [
         "siêu thị",
         "cái; lượng từ thông dụng",
@@ -2739,7 +2739,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “面包” (miànbāo) có nghĩa là gì?",
+      "prompt": "Trong bài học, “面包” có nghĩa là gì?",
       "options": [
         "bánh mì",
         "em gái",
@@ -2775,7 +2775,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “瓶” (píng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “瓶” có nghĩa là gì?",
       "options": [
         "sân bay",
         "ga tàu hỏa",
@@ -2811,7 +2811,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “坐” (zuò) có nghĩa là gì?",
+      "prompt": "Trong bài học, “坐” có nghĩa là gì?",
       "options": [
         "đến, tới; nhấn mạnh điểm đến",
         "ngồi; đi bằng phương tiện",
@@ -2847,7 +2847,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “公共汽车” (gōnggòng qìchē) có nghĩa là gì?",
+      "prompt": "Trong bài học, “公共汽车” có nghĩa là gì?",
       "options": [
         "bác tài, thầy; cách gọi người thợ lành nghề",
         "cảm ơn, cảm tạ",
@@ -2883,7 +2883,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “地铁” (dìtiě) có nghĩa là gì?",
+      "prompt": "Trong bài học, “地铁” có nghĩa là gì?",
       "options": [
         "cốc, ly; lượng từ đồ uống",
         "tàu điện ngầm",
@@ -2919,7 +2919,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “公安局” (gōng'ānjú) có nghĩa là gì?",
+      "prompt": "Trong bài học, “公安局” có nghĩa là gì?",
       "options": [
         "sân bay",
         "rạp chiếu phim",
@@ -2955,7 +2955,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “邮局” (yóujú) có nghĩa là gì?",
+      "prompt": "Trong bài học, “邮局” có nghĩa là gì?",
       "options": [
         "quảng trường",
         "tài xế, người lái xe",
@@ -2991,7 +2991,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “饭馆儿” (fànguǎnr) có nghĩa là gì?",
+      "prompt": "Trong bài học, “饭馆儿” có nghĩa là gì?",
       "options": [
         "bánh mì",
         "Hà Nội",
@@ -3027,7 +3027,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “厕所” (cèsuǒ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “厕所” có nghĩa là gì?",
       "options": [
         "nhà vệ sinh",
         "Quảng trường Nhân Dân",
@@ -3063,7 +3063,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “大概” (dàgài) có nghĩa là gì?",
+      "prompt": "Trong bài học, “大概” có nghĩa là gì?",
       "options": [
         "không cần cảm ơn, không có gì",
         "ở đâu, chỗ nào",
@@ -3099,7 +3099,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “塞翁失马” (sài wēng shī mǎ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “塞翁失马” có nghĩa là gì?",
       "options": [
         "tái ông mất ngựa; họa phúc khó lường",
         "ngồi; đi bằng phương tiện",
@@ -3135,7 +3135,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “亡羊补牢” (wáng yáng bǔ láo) có nghĩa là gì?",
+      "prompt": "Trong bài học, “亡羊补牢” có nghĩa là gì?",
       "options": [
         "bà, cô; cách xưng hô lịch sự",
         "mất dê mới sửa chuồng; sửa sai khi còn kịp",
@@ -3171,7 +3171,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “宰相” (zǎixiàng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “宰相” có nghĩa là gì?",
       "options": [
         "buổi sáng sớm",
         "tể tướng",
@@ -3207,7 +3207,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “肚里” (dù lǐ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “肚里” có nghĩa là gì?",
       "options": [
         "bảo tàng",
         "trong bụng",
@@ -3243,7 +3243,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “能” (néng) có nghĩa là gì?",
+      "prompt": "Trong bài học, “能” có nghĩa là gì?",
       "options": [
         "ít",
         "tìm; trả lại tiền thừa",
@@ -3279,7 +3279,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “撑船” (chēngchuán) có nghĩa là gì?",
+      "prompt": "Trong bài học, “撑船” có nghĩa là gì?",
       "options": [
         "đồng, tệ; đơn vị tiền trong khẩu ngữ",
         "chống thuyền, chèo thuyền",
@@ -3315,7 +3315,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “小牛” (Xiǎo Niú) có nghĩa là gì?",
+      "prompt": "Trong bài học, “小牛” có nghĩa là gì?",
       "options": [
         "ở đâu, chỗ nào",
         "Tiểu Lưu, tên nhân vật",
@@ -3351,7 +3351,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “小刘” (Xiǎo Liú) có nghĩa là gì?",
+      "prompt": "Trong bài học, “小刘” có nghĩa là gì?",
       "options": [
         "tàu điện ngầm",
         "ở đâu",
@@ -3387,7 +3387,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “拍球” (pāi qiú) có nghĩa là gì?",
+      "prompt": "Trong bài học, “拍球” có nghĩa là gì?",
       "options": [
         "Quảng trường Nhân Dân",
         "Tiểu Lưu, tên nhân vật",
@@ -3423,7 +3423,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “九” (jiǔ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “九” có nghĩa là gì?",
       "options": [
         "chín",
         "Tiểu Ngưu, tên nhân vật",
@@ -3459,7 +3459,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “六” (liù) có nghĩa là gì?",
+      "prompt": "Trong bài học, “六” có nghĩa là gì?",
       "options": [
         "sáu",
         "xe buýt",
@@ -3495,7 +3495,7 @@
       "difficulty": "Dễ"
     },
     {
-      "prompt": "Trong bài học, “比” (bǐ) có nghĩa là gì?",
+      "prompt": "Trong bài học, “比” có nghĩa là gì?",
       "options": [
         "bác tài, thầy; cách gọi người thợ lành nghề",
         "ngồi; đi bằng phương tiện",

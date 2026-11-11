@@ -9,6 +9,7 @@ import {requireCourse} from './course-service.js';
 import {loadQuestionsByIds} from './question-service.js';
 import {wrongNotebook} from './study-hub.js';
 import {familyReport} from './learning-support.js';
+import {chineseQuestionPrompt} from '../../../frontend/assets/js/chinese-question-prompt.js';
 
 export const json=value=>parseJson(value)||{};
 export const txRun=c=>async(sql,p=[])=>(await c.query(sql,p))[0];
@@ -60,12 +61,13 @@ export async function sourceItems(user,courseId,{itemId=null,review=false,count=
    if(row.kind==='question'&&Array.isArray(d.accepted)&&d.accepted.length){
     const choices=Array.isArray(d.options)?d.options.filter(o=>typeof o==='string'):[],correct=choices.filter(o=>d.accepted.includes(o));
     const options=d.type==='choice'&&choices.length>=2&&correct.length===1?seededShuffle(choices,randomUUID()).map((text,i)=>({key:String(i),text})):[];
-    items.push({id:row.id,type:options.length?'single_choice':'fill_in',prompt:d.prompt+(!options.length&&choices.length?'\nTừ/cụm từ gợi ý: '+choices.join(' · '):''),options,answer:options.length?{key:options.find(o=>o.text===correct[0]).key}:{accepted:d.accepted},explanation:d.explanation||'',skill:row.set_id,label:row.set_title,subject:'chinese'});
+    const taskWords=!options.length&&choices.length&&['ordering','matching'].includes(d.type)?'\nCác mục trong bài: '+choices.join(' · ')+(d.type==='matching'&&d.targets?.length?'\nCác nghĩa cần ghép: '+d.targets.join(' · '):''):'';
+    items.push({id:row.id,type:options.length?'single_choice':'fill_in',prompt:chineseQuestionPrompt(d.prompt)+taskWords,options,answer:options.length?{key:options.find(o=>o.text===correct[0]).key}:{accepted:d.accepted},explanation:d.explanation||'',skill:row.set_id,label:row.set_title,subject:'chinese'});
    }
    else if(row.kind==='vocabulary'&&d.hanzi&&d.meaning){
     const others=[...new Set(vocabulary.map(v=>v.data.meaning).filter(m=>m&&m!==d.meaning))].slice(0,3);if(!others.length)continue;
     const options=seededShuffle([d.meaning,...others],randomUUID()).map((text,i)=>({key:String(i),text}));
-    items.push({id:row.id,type:'single_choice',prompt:'Chọn nghĩa của '+d.hanzi+(d.pinyin?' ('+d.pinyin+')':''),options,answer:{key:options.find(o=>o.text===d.meaning).key},explanation:d.hanzi+' · '+(d.pinyin||'')+' · '+d.meaning,skill:row.set_id,label:row.set_title,subject:'chinese'});
+    items.push({id:row.id,type:'single_choice',prompt:'Chọn nghĩa của '+d.hanzi,options,answer:{key:options.find(o=>o.text===d.meaning).key},explanation:d.hanzi+' · '+(d.pinyin||'')+' · '+d.meaning,skill:row.set_id,label:row.set_title,subject:'chinese'});
    }
   }
  }else{
@@ -106,7 +108,7 @@ export async function ownedLearningRun(user,id,run=query,lock=false){
 function publicRun(row){
  const items=json(row.items_json),answers=json(row.answers_json),done=Object.keys(answers).length,index=items.findIndex(q=>!Object.hasOwn(answers,q.id));
  const correct=Object.values(answers).filter(a=>a.correct).length;
- const clean=q=>({id:q.id,type:q.type,prompt:q.prompt,options:q.options,subject:q.subject,skill:q.skill,label:q.label});
+ const clean=q=>({id:q.id,type:q.type,prompt:q.subject==='chinese'?chineseQuestionPrompt(q.prompt):q.prompt,options:q.options,subject:q.subject,skill:q.skill,label:q.label});
  return {id:row.id,courseId:row.course_id,title:row.title,kind:row.run_kind,status:row.status,total:items.length,answered:done,correct,percent:items.length?Math.round(correct/items.length*100):0,index:index<0?items.length:index,revision:Number(row.revision||0),draft:json(row.draft_json),question:index<0?null:clean(items[index]),finishedAt:row.finished_at,
   feedback:items.filter(q=>answers[q.id]).map(q=>({...clean(q),selected:answers[q.id].answer,correct:answers[q.id].correct,expected:q.answer,explanation:q.explanation})),next:row.status==='finished'?{review:'/pages/student/study-hub/?view=wrong',progress:'/pages/student/progress/'}:null};
 }

@@ -472,7 +472,7 @@ def make_questions(lesson, rows):
         pool=[r for r in rows if r['hanzi']!=h and r['pinyin']!=p and r['meaning']!=m]
         explanation=f'{h} đọc là {p}, nghĩa là {m}. Tham chiếu: PDF bài {lesson}, trang {row["page"]}.'
         for field,prompt,correct in [
-            ('meaning',f'Trong bài học, “{h}” ({p}) có nghĩa là gì?',m),
+            ('meaning',f'Trong bài học, “{h}” có nghĩa là gì?',m),
             ('hanzi',f'Chọn Hán tự có phiên âm “{p}” và nghĩa “{m}”.',h),
             ('pinyin',f'Chọn phiên âm đúng của “{h}” với nghĩa “{m}”.',p)]:
             candidates=list(dict.fromkeys(r[field] for r in pool if r[field]!=correct))

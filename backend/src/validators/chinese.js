@@ -7,7 +7,7 @@ const url = z.string().max(1000).refine(v => !v || /^\/(?!\/)[^\\]*$/.test(v) ||
 export const lessonSchema = z.object({ level_id: z.coerce.number().int().min(1).max(9), title: text.min(1).max(255), position: z.coerce.number().int().min(1).max(100000), description: text.default(''), image_url: url.default(''), status });
 export const itemSchema = z.object({ id: z.string().uuid().optional(), kind: z.enum(['vocabulary','grammar','dialogue','reading','question','unknown']), data: z.object({
  hanzi: text.optional(), pinyin: text.optional(), meaning: text.optional(), part_of_speech: text.optional(), example: text.optional(), example_pinyin: text.optional(), example_meaning: text.optional(), audio_url: url.optional(), image_url: url.optional(), mnemonic: text.optional(), radicals: text.optional(), group: z.enum(['main','extended']).optional(),
- text: text.optional(), title: text.optional(), prompt: text.transform(chineseQuestionPrompt).optional(), type: z.enum(['choice','text','pinyin','matching','ordering','listening','dictation','fill']).optional(), options: z.array(text.min(1)).max(30).optional(), targets: z.array(text.min(1)).max(30).optional(), accepted: z.array(text.min(1)).max(30).optional(), explanation: text.optional(), difficulty: z.enum(['easy','medium','hard']).optional(), approved: z.boolean().optional(), vocabulary_id: z.union([z.string().uuid(), z.literal('')]).optional(),
+ text: text.optional(), title: text.optional(), practice: z.literal('speaking').optional(), prompt: text.transform(chineseQuestionPrompt).optional(), type: z.enum(['choice','text','pinyin','matching','ordering','listening','dictation','fill']).optional(), options: z.array(text.min(1)).max(30).optional(), targets: z.array(text.min(1)).max(30).optional(), accepted: z.array(text.min(1)).max(30).optional(), explanation: text.optional(), difficulty: z.enum(['easy','medium','hard']).optional(), approved: z.boolean().optional(), vocabulary_id: z.union([z.string().uuid(), z.literal('')]).optional(),
  }) });
 export const setSchema = z.object({ title: text.min(1).max(255), status, items: z.array(itemSchema).max(1000) });
 export const testSchema = z.object({ title: text.min(1).max(255), set_ids: z.array(z.string().uuid()).min(1).max(100), duration_seconds: z.coerce.number().int().min(30).max(86400).nullable(), pass_percent: z.coerce.number().int().min(1).max(100), status });
@@ -29,6 +29,7 @@ export function issues(items) {
    if (!d.approved) add('Câu hỏi chưa được duyệt');
   }
   if (['grammar','dialogue','reading'].includes(item.kind) && !d.text) add('Thiếu nội dung');
+  if(d.practice==='speaking'&&(item.kind!=='dialogue'||! /\p{Script=Han}/u.test(d.text||'')||(d.text||'').length>180))add('Câu luyện nói cần là câu tiếng Trung, tối đa 180 ký tự.');
   if (item.kind === 'unknown') add('Nội dung chưa xác định: cần phân loại hoặc chủ động xóa');
   const key = `${item.kind}:${normalizeAnswer(d.hanzi || d.prompt || d.text)}${item.kind==='question'?JSON.stringify([d.options||[],d.accepted||[]]):''}`;
   if (item.kind!=='unknown' && seen.has(key)) add('Nội dung trùng trong bộ'); seen.add(key);

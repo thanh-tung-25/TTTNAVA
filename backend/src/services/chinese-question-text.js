@@ -1,7 +1,7 @@
 // Paragraph-based Word questions. Answers are resolved only from explicit source labels.
 import {chineseQuestionPrompt} from '../../../frontend/assets/js/chinese-question-prompt.js';
 const start = /^(?:câu|cau)\s*(\d+)\s*[.:)\-]\s*(.*)$/iu;
-const section = /^\[(TU VUNG|NGU PHAP|HOI THOAI|BAI DOC|CAU HOI)\]$/i;
+const section = /^\[(TU VUNG|NGU PHAP|HOI THOAI|BAI DOC|CAU HOI|LUYEN NOI|LUYỆN NÓI|SPEAKING)\]$/iu;
 export function cleanChineseLine(line) {
   return line.replace(/\u00a0/g,' ').replace(/\*\*/g,'').trim();
 }

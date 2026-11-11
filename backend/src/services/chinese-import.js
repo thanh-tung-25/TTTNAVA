@@ -2,13 +2,19 @@ import mammoth from 'mammoth';
 import { badRequest } from '../utils/errors.js';
 import { cleanChineseLine, isQuestionStart, isChineseSection, parseChineseQuestion } from './chinese-question-text.js';
 import {chineseQuestionPrompt} from '../../../frontend/assets/js/chinese-question-prompt.js';
+import {parseSpeakingText,speakingSection} from './chinese-speaking-import.js';
 // Only explicit source data is recognized. Unrecognized paragraphs remain editable.
-export function parseChineseText(raw) {
- const items = []; let section = 'unknown';
+export function parseChineseText(raw,{destination='general'}={}) {
+ if(destination==='speaking')return parseSpeakingText(raw);
+ const items = []; let section = {vocabulary:'vocabulary',question:'question',reading:'reading'}[destination]||'unknown';
  const sections = { '[TU VUNG]':'vocabulary','[NGU PHAP]':'grammar','[HOI THOAI]':'dialogue','[BAI DOC]':'reading','[CAU HOI]':'question' };
  const lines=raw.split(/\r?\n/).map(cleanChineseLine).filter(Boolean);
  for (let n=0;n<lines.length;n++) {
   const line=lines[n];
+  if(speakingSection.test(line)){
+   const block=[];while(n+1<lines.length&&!isChineseSection(lines[n+1]))block.push(lines[++n]);
+   items.push(...parseSpeakingText(block.join('\n')));continue;
+  }
   if(isQuestionStart(line)) {
    const block=[line];
    while(n+1<lines.length&&!isQuestionStart(lines[n+1])&&!isChineseSection(lines[n+1]))block.push(lines[++n]);
@@ -32,7 +38,7 @@ export function parseChineseText(raw) {
  }
  return items;
 }
-export async function extractChinese(buffer) {
+export async function extractChinese(buffer,options={}) {
  if (buffer.length<4 || buffer.readUInt16LE(0) !== 0x4b50) throw badRequest('Tệp không phải tài liệu .docx hợp lệ');
  // Bound declared decompressed ZIP size before Mammoth allocates document/media buffers.
  let end=-1;
@@ -51,9 +57,9 @@ export async function extractChinese(buffer) {
   const result = await mammoth.convertToHtml({buffer});
   const html = result.value.replace(/<t[dh][^>]*>[\s\S]*?<\/t[dh]>/gi,cell=>cell.replace(/<\/p>/gi,' ').replace(/<p[^>]*>/gi,''));
   const raw = html.replace(/<br\s*\/?>/gi,'\n').replace(/<\/t[dh]>\s*<t[dh][^>]*>/gi,'\t').replace(/<\/p>\s*<p[^>]*>/gi,'\n')
-   .replace(/<\/tr>|<\/h[1-6]>|<\/p>/gi,'\n').replace(/<[^>]*>/g,'')
+   .replace(/<\/tr>|<\/li>|<\/h[1-6]>|<\/p>/gi,'\n').replace(/<[^>]*>/g,'')
    .replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'");
   if (raw.length > 500000) throw badRequest('Nội dung giải nén quá lớn (tối đa 500.000 ký tự)');
-  return {raw,items:parseChineseText(raw),warnings:result.messages.map(m => m.message)};
+  return {raw,items:parseChineseText(raw,options),warnings:result.messages.map(m => m.message)};
  } catch(e) { if (e.status) throw e; throw badRequest('Không đọc được .docx. Hãy chuyển .doc sang .docx và dùng mẫu nhập liệu.'); }
 }

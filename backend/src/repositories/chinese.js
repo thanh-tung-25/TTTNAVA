@@ -1,4 +1,4 @@
-import { query } from '../config/db.js';
+import { query,jsonText } from '../config/db.js';
 import { notFound } from '../utils/errors.js';
 import { chineseQuestionPrompt } from '../../../frontend/assets/js/chinese-question-prompt.js';
 export const json = value => typeof value === 'string' ? JSON.parse(value) : value;
@@ -12,6 +12,7 @@ export async function getItems(id, run = query) {
  return (await run('SELECT * FROM chinese_items WHERE set_id=? AND active=1 ORDER BY position,id',[id])).map(i => ({...i,data:json(i.data)}));
 }
 export function publicItem(i) {
+ if(i.kind==='dialogue'&&i.data.practice==='speaking'){const {meaning,pinyin,example,example_pinyin,example_meaning,explanation,...data}=i.data;return {...i,data};}
  if (i.kind !== 'question') return i;
  const {accepted,explanation,...data} = i.data; return {...i,data:{...data,prompt:chineseQuestionPrompt(data.prompt)}};
 }
@@ -22,7 +23,8 @@ export async function catalog(admin, student) {
  const activities=await query("SELECT lesson_id,data FROM chinese_activities WHERE status='published'");
  const activityCounts=new Map(activities.map(row=>[row.lesson_id,json(row.data).tasks.length]));
  for(const set of sets)set.activity_count=activityCounts.get(set.lesson_id)||0;
- const counts = await query(`SELECT i.set_id,i.kind,COUNT(*) total FROM chinese_items i JOIN chinese_sets s ON s.id=i.set_id JOIN chinese_lessons l ON l.id=s.lesson_id WHERE i.active=1 ${admin?'':"AND s.status='published' AND l.status='published'"} GROUP BY i.set_id,i.kind`);
+ const counts = await query(`SELECT i.set_id,i.kind,COUNT(*) total,SUM(CASE WHEN i.kind='dialogue' AND ${jsonText('i.data','practice')}='speaking' THEN 1 ELSE 0 END) speaking_total FROM chinese_items i JOIN chinese_sets s ON s.id=i.set_id JOIN chinese_lessons l ON l.id=s.lesson_id WHERE i.active=1 ${admin?'':"AND s.status='published' AND l.status='published'"} GROUP BY i.set_id,i.kind`);
+ for(const set of sets)set.speaking_count=Number(counts.find(c=>c.set_id===set.id&&c.kind==='dialogue')?.speaking_total)||0;
  const reviews = admin ? [] : await query('SELECT r.* FROM chinese_reviews r WHERE student_id=?',[student]);
  const progress = admin ? [] : await query('SELECT * FROM chinese_progress WHERE student_id=? ORDER BY updated_at DESC',[student]);
  const completion=[];

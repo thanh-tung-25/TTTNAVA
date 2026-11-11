@@ -1,0 +1,31 @@
+import {beforeAll,afterAll,it,expect} from 'vitest';
+import {randomUUID} from 'node:crypto';
+import {readFile} from 'node:fs/promises';
+import {createTestUser,loginStudent} from './helpers/index.js';
+import {query} from '../src/config/db.js';
+const base='/api/v1/chinese';let admin,student,lesson;const users=[];
+beforeAll(async()=>{
+ for(const role of ['admin','student'])users.push(await createTestUser({role,username:'speaking_'+randomUUID().replaceAll('-','').slice(0,10)}));
+ admin=await loginStudent(users[0]);student=await loginStudent(users[1]);
+ lesson=(await admin.post(base+'/lessons').send({level_id:1,title:'Word → Speaking',position:1,status:'draft'})).body.data.id;
+});
+afterAll(async()=>{if(lesson)await admin.delete(base+'/lessons/'+lesson);for(const u of users)await query('DELETE FROM profiles WHERE id=?',[u.id]);});
+it('imports, previews, reparses and publishes Chinese questions without quiz answers or student-facing translations',async()=>{
+ const buffer=await readFile(new URL('../../frontend/assets/templates/chinese-speaking-template.docx',import.meta.url));
+ const upload=agent=>agent.post(base+'/imports').field('level_id','1').field('lesson_id',lesson).field('title','Oral questions').field('destination','speaking').attach('file',buffer,'oral.docx');
+ expect((await upload(student)).status).toBe(403);
+ const imported=await upload(admin);expect(imported.status).toBe(200);expect(imported.body.data.issues).toEqual([]);const id=imported.body.data.id;
+ expect((await student.get(base+'/sets/'+id)).status).toBe(404);
+ let draft=(await admin.get(base+'/sets/'+id)).body.data;expect(draft.items).toHaveLength(3);expect(draft.items[0].data.meaning).toBeTruthy();
+ const reparsed=await admin.post(base+'/sets/'+id+'/reparse').send({});expect(reparsed.status).toBe(200);expect(reparsed.body.data.issues).toEqual([]);
+ draft=(await admin.get(base+'/sets/'+id)).body.data;expect(draft.items.every(i=>i.data.practice==='speaking')).toBe(true);
+ expect((await admin.put(base+'/sets/'+id).send({title:'Oral questions',status:'published',items:draft.items})).status).toBe(200);
+ expect((await student.get(base+'/sets/'+id)).status).toBe(404);
+ expect((await admin.put(base+'/lessons/'+lesson).send({level_id:1,title:'Word → Speaking',position:1,status:'published'})).status).toBe(200);
+ const catalog=(await student.get(base+'/catalog')).body.data;expect(catalog.sets.find(s=>s.id===id).speaking_count).toBe(3);
+ expect(Number(catalog.counts.find(c=>c.set_id===id&&c.kind==='dialogue').speaking_total)).toBe(3);expect(catalog.counts.some(c=>c.set_id===id&&c.kind==='question')).toBe(false);
+ const detail=await student.get(base+'/sets/'+id);expect(detail.status).toBe(200);expect(detail.body.data.items[0].data).toEqual({practice:'speaking',text:'你叫什么名字？'});
+ expect((await student.post(base+'/attempts').send({set_id:id})).status).toBe(400);
+ expect((await admin.post(base+'/sets/'+id+'/reparse').send({destination:'speaking'})).status).toBe(400);
+ const invalid=await admin.put(base+'/sets/'+id).send({title:'Oral questions',status:'published',items:[{kind:'dialogue',data:{practice:'speaking',text:'không phải tiếng Trung'}}]});expect(invalid.status).toBe(400);
+});

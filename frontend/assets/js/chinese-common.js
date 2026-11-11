@@ -22,7 +22,7 @@ export const values=form=>Object.fromEntries(new FormData(form));
 export function formSubmit(form,action,text='Lưu'){form.append(el('button',{class:'btn btn-primary',type:'submit',text}));form.addEventListener('submit',async e=>{e.preventDefault();const b=form.querySelector('[type=submit]');b.disabled=true;try{await action(values(form));notice('Đã lưu thành công');}catch(e){error(e);}finally{b.disabled=false;}});return form;}
 export function percentage(setId,data){
  const p=data.progress.find(p=>p.set_id===setId), reads=p?(typeof p.read_items==='string'?JSON.parse(p.read_items):p.read_items):[];
- const counts=data.counts.filter(c=>c.set_id===setId), total=counts.filter(c=>c.kind!=='unknown').reduce((n,c)=>n+Number(c.total),0);
+ const counts=data.counts.filter(c=>c.set_id===setId), total=counts.filter(c=>c.kind!=='unknown').reduce((n,c)=>n+Number(c.total)-Number(c.speaking_total||0),0);
  // Filled by server: unique reviewed vocabulary, read passages and locked practice questions.
  const done=data.completion?.find(c=>c.set_id===setId)?.done??reads.length;
  return total?Math.min(100,Math.round(done/total*100)):0;

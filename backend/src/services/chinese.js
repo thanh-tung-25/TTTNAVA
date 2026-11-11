@@ -18,13 +18,16 @@ export async function saveLesson(id, body) {
  `INSERT INTO chinese_lessons(id,level_id,title,position,description,image_url,status) VALUES (?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET level_id=EXCLUDED.level_id,title=EXCLUDED.title,position=EXCLUDED.position,description=EXCLUDED.description,image_url=EXCLUDED.image_url,status=EXCLUDED.status`),[id,d.level_id,d.title,d.position,d.description,d.image_url,d.status]); return {id};
 }
 export async function importWord(body,file) {
+ const destination=parse(z.enum(['general','vocabulary','question','reading','speaking']).default('general'),body.destination);
  const lesson=await one('SELECT * FROM chinese_lessons WHERE id=?',[body.lesson_id]);
  if (Number(body.level_id)!==lesson.level_id) throw badRequest('Bài không thuộc HSK đã chọn');
  const title=parse(z.string().trim().min(1).max(255),body.title);
  const sha=createHash('sha256').update(file.buffer).digest('hex');
  const duplicates=await query('SELECT id,filename FROM chinese_documents WHERE sha256=?',[sha]);
  if (duplicates.length && body.allow_duplicate!=='true') throw new AppError(409,'DUPLICATE_DOCUMENT','Tệp đã được nhập. Chọn tạo bộ mới hoặc hủy.',duplicates);
- const extracted=await extractChinese(file.buffer), id=randomUUID(), doc=randomUUID();
+ const extracted=await extractChinese(file.buffer,{destination}), id=randomUUID(), doc=randomUUID();
+ const allowed={vocabulary:['vocabulary','unknown'],question:['question','unknown'],reading:['grammar','reading','dialogue','unknown']}[destination];
+ if(allowed&&extracted.items.some(i=>!allowed.includes(i.kind)))throw badRequest('Nội dung Word chưa đúng mục đang chọn. Hãy chọn mục phù hợp hoặc nhập tài liệu tổng hợp.');
  await archiveFile('chinese_documents/' + doc, file.buffer, DOCX_MIME, file.originalname);
  // Keep invalid/unrecognized source content for review, rather than silently dropping it.
  await withTransaction(async c => {
@@ -32,7 +35,7 @@ export async function importWord(body,file) {
   await run('INSERT INTO chinese_documents (id,filename,sha256,original,raw_text) VALUES (?,?,?,?,?)',[doc,file.originalname.slice(0,255),sha,file.buffer,extracted.raw]);
   await run('INSERT INTO chinese_sets (id,lesson_id,document_id,title) VALUES (?,?,?,?)',[id,lesson.id,doc,title]);
   for (const [p,i] of extracted.items.entries()) await run('INSERT INTO chinese_items (id,set_id,kind,position,data) VALUES (?,?,?,?,?)',[randomUUID(),id,i.kind,p+1,JSON.stringify(i.data)]);
- }); return {id,warnings:extracted.warnings,issues:issues(extracted.items)};
+ }); return {id,destination,warnings:extracted.warnings,issues:issues(extracted.items)};
 }
 export async function detail(id,admin,user) {
  const set=await getSet(id,admin), items=await getItems(id);
@@ -47,11 +50,14 @@ export async function studyCard(setId,itemId) {
  const data=json(item.data);if(!data.approved)throw notFound();
  return {accepted:data.accepted,explanation:data.explanation||''};
 }
-export async function reparseWord(id) {
+export async function reparseWord(id,body={}) {
  const set=await getSet(id,true);
+ const previous=await getItems(id);
+ const inferred=previous.some(i=>i.data.practice==='speaking')&&previous.every(i=>i.data.practice==='speaking'||i.kind==='unknown')?'speaking':'general';
+ const destination=parse(z.enum(['general','vocabulary','question','reading','speaking']).default(inferred),body.destination);
  if(!set.document_id)throw badRequest('Bộ không có tài liệu Word nguồn');
  const doc=await one('SELECT original FROM chinese_documents WHERE id=?',[set.document_id]);
- const extracted=await extractChinese(await readArchive('chinese_documents/' + set.document_id, doc.original));
+ const extracted=await extractChinese(await readArchive('chinese_documents/' + set.document_id, doc.original),{destination});
  return withTransaction(async c=>{
   const run=txRun(c), locked=await one('SELECT status FROM chinese_sets WHERE id=? FOR UPDATE',[id],run);
   if(locked.status!=='draft')throw badRequest('Chỉ phân tích lại bộ đang ở bản nháp');

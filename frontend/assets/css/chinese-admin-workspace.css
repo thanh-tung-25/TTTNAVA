@@ -1,0 +1,45 @@
+body.chinese-admin{--primary:#815cc5;--primary-dark:#6643a3;--primary-soft:#f1ebfb;--line:#e5dcef;background:radial-gradient(ellipse at 0 0,#f1eafa,transparent 55%),radial-gradient(ellipse at 100% 50%,#fff4e5,transparent 45%),#faf8fd;color:#514262}
+.chinese-admin .page{max-width:1120px;padding-bottom:170px}
+.chinese-admin :is(.card,.simple-question){border:1px solid #e5d9ef;border-radius:23px;background:linear-gradient(145deg,#fffefa,#fcf8ff);box-shadow:inset 0 2px 0 #fff,0 5px 0 #e8dff1;padding:23px}
+.chinese-admin :is(.btn,.chinese-field input,.chinese-field textarea,.chinese-field select){border-radius:13px}
+.chinese-admin .chinese-field :is(input,textarea,select){border-color:#ded0e9;background:#fffefd;color:#514262}
+.chinese-admin .chinese-field textarea{line-height:1.8}
+.chinese-admin .chinese-tools a{background:#f1eafa;color:#76519d;text-decoration:none}
+.admin-chinese-hero{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 28px;margin:24px 0;border:1px solid #e1d3ee;border-radius:25px;background:linear-gradient(120deg,#f1e9fc,#fff5e4);box-shadow:inset 0 2px 0 white,0 5px 0 #e7dcef}
+.admin-chinese-hero h2{font-size:1.55rem;line-height:1.5;margin:7px 0 9px;overflow-wrap:anywhere}
+.admin-chinese-hero p{font-size:.82rem;line-height:1.9;color:#9684a4;margin:0}
+.admin-chinese-hero img{width:86px;height:94px;object-fit:contain;flex:none}
+.admin-mode-eyebrow{font-size:10px;font-weight:800;color:#9b77b9;letter-spacing:1.3px}
+.admin-study-modes{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0;padding:7px;border:1px solid #e0d3ee;border-radius:19px;background:#f0e9f8}
+.admin-study-modes .btn{margin:0;min-width:105px;flex:1;flex-direction:column;gap:2px;text-decoration:none;box-shadow:none;border:0;background:transparent;color:#8a729e;font-size:12px;padding:12px 10px;text-align:center}
+.admin-study-modes .btn small{display:block;font-size:10px;margin-top:4px;color:#a18aae;font-weight:400}
+.admin-study-modes .btn[aria-current=page]{background:white;color:#7853ac;box-shadow:0 3px 0 #e0d4ec}
+.admin-destination{display:flex;flex-direction:column;gap:9px;padding:19px 23px;margin:20px 0;border:1px solid #cfe8dd;border-radius:18px;background:#f1faf5}
+.admin-destination .admin-mode-eyebrow{color:#73a08a}.admin-destination strong{font-size:1rem;line-height:1.8;color:#4a836b;overflow-wrap:anywhere}.admin-destination p{font-size:.78rem;line-height:1.8;color:#7c9a8a;margin:0}
+.admin-import-note{color:#887696;font-size:.85rem;line-height:1.9}
+.admin-word-example{white-space:pre-wrap;font:1rem/2 'Microsoft YaHei',sans-serif;background:#f5eefb;border:1px solid #e3d6ef;border-radius:14px;padding:16px;color:#73538d}
+.admin-document-destination,.admin-item-destination{font-size:.72rem;line-height:1.8;color:#9c7eb1;background:#f5effa;padding:6px 10px;border-radius:8px;display:inline-block}
+.admin-preview-caption{display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap;margin:22px 0 14px;padding:13px 18px;border:1px solid #e1d3ee;border-radius:14px;background:#f3ecfb;color:#8059a5;font-size:.8rem}
+.admin-preview-caption span{font-size:.7rem;color:#a08bac}
+.admin-preview-studybar{display:flex;align-items:center;gap:15px;padding:14px 0}.admin-preview-studybar h3{margin:0;font-size:1.15rem}.admin-preview-studybar>span{display:grid;place-items:center;width:38px;height:38px;border:1px solid #e2d5ed;border-radius:13px;background:white;color:#8b65b4}
+.admin-student-preview{margin:24px 0;padding:24px;border:1px solid #dfd1eb;border-radius:26px;background:linear-gradient(135deg,#faf6ff,#fffaf2);box-shadow:0 5px 0 #e8dff0}
+.admin-student-preview[hidden],.admin-speaking-edit[hidden]{display:none!important}
+.admin-student-preview .learn-caption,.admin-student-preview .card-count{font-size:.8rem;text-align:center;color:#a28bad}
+.admin-student-preview .flashcard{border-color:#deceec;color:#61497a;background:linear-gradient(135deg,#fffefa,#f1e8fc)}
+.admin-student-preview .learn-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.admin-student-preview .quiz-prompt{font-size:1.4rem;line-height:1.8;color:#634b78;white-space:pre-wrap}
+.admin-student-preview .quiz-choices{display:grid;gap:12px;margin:20px 0}.admin-student-preview .quiz-option{display:flex;align-items:center;gap:12px;border:2px solid #e2d7ed;border-radius:17px;padding:16px;background:#fff;cursor:pointer}.admin-student-preview .quiz-text{width:100%;padding:14px;border:1px solid #d8c5e9;border-radius:14px;font:inherit}
+.admin-student-preview .speaking-studio .card{margin:0;padding:23px;border:1px solid #e4d8ee;border-radius:24px;background:linear-gradient(145deg,#fffefa,#fdfaff);box-shadow:inset 0 2px 0 #fff,0 5px 0 #e8dff0}
+.admin-student-preview .speaking-studio .speaking-result{margin-top:24px}
+.admin-speaking-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:19px 0}
+.admin-speaking-count{font-size:.8rem;color:#9b7fb0;background:#f2eafa;padding:7px 12px;border-radius:9px}
+.admin-speaking-question{margin:18px 0;padding:19px;border:1px solid #e5d9ef;border-radius:18px;background:#fffdfb}
+.admin-speaking-question-head{display:flex;align-items:center;justify-content:space-between;gap:12px;color:#8a67a6}.admin-speaking-question-head>.btn{font-size:11px;padding:5px 10px;min-height:30px;box-shadow:none}
+.admin-speaking-question .chinese-field:first-child textarea{font:1.25rem/1.8 'Microsoft YaHei',sans-serif;min-height:88px}
+.admin-speaking-question small{display:block;font-size:.7rem;line-height:1.8;color:#a18aad;margin-top:9px}
+.admin-source-warning{background:#fff2df;color:#986b3c;padding:13px;border-radius:12px;line-height:1.9;white-space:pre-wrap}
+.chinese-admin .simple-footer{border-color:#e1d3ed;border-radius:20px;background:#fffcff;box-shadow:0 -5px 24px #70518b0b}
+.chinese-admin .simple-footer .btn{margin:0;font-size:12px}
+.chinese-admin [hidden]{display:none!important}
+.chinese-admin input[type=file]::file-selector-button{border:1px solid #d5bfea;border-radius:10px;padding:9px 13px;background:#f1e8fb;color:#8059a5;margin-right:10px;font:inherit}
+@media(max-width:680px){.chinese-admin .page{padding-inline:13px}.admin-chinese-hero{padding:20px;gap:12px}.admin-chinese-hero h2{font-size:1.2rem}.admin-chinese-hero img{width:60px;height:72px}.admin-chinese-hero p{font-size:.74rem}.admin-study-modes{gap:5px}.admin-study-modes .btn{min-width:85px;font-size:11px;padding:10px 6px}.admin-study-modes .btn small{font-size:9px}.admin-destination{padding:17px}.admin-student-preview{padding:13px}.admin-preview-studybar h3{font-size:1rem}.admin-speaking-question{padding:14px}.chinese-admin :is(.card,.simple-question){padding:18px}.admin-student-preview .speaking-grid{grid-template-columns:1fr}.admin-speaking-toolbar .btn{font-size:11px}.admin-mode-eyebrow{font-size:9px}}

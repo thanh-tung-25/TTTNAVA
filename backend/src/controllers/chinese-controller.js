@@ -7,7 +7,7 @@ export const detail = handler(r=>service.detail(r.params.id,r.user.role==='admin
 export const studyCard = handler(r=>service.studyCard(r.params.id,r.params.itemId));
 export const saveLesson = handler(r=>service.saveLesson(r.params.id,r.body));
 export const importWord = handler(r=>service.importWord(r.body,r.file));
-export const reparseWord = handler(r=>service.reparseWord(r.params.id));
+export const reparseWord = handler(r=>service.reparseWord(r.params.id,r.body));
 export const saveSet = handler(r=>service.saveSet(r.params.id,r.body));
 export const review = handler(r=>service.review(r.user.id,r.params.id,r.body));
 export const progress = handler(r=>service.progress(r.user.id,r.params.id,r.body));

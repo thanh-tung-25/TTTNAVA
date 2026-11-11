@@ -1,10 +1,11 @@
 import {request,el,root,button,card,field,values,notice} from '/assets/js/chinese-common.js';
 import {activityTemplate} from '/assets/js/chinese-activity-templates.js';
 import {mountPractice} from '/assets/js/chinese-applied-practice.js';
+import {adminModeHeader} from '/assets/js/chinese-admin-modes.js';
 
 const types=[['order','Xếp câu'],['fix','Sửa lỗi'],['fill','Điền từ'],['dialogue','Hội thoại']];
 const lines=value=>String(value||'').split('\n').map(s=>s.trim()).filter(Boolean);
-export async function activitiesEditor(lesson){
+export async function activitiesEditor(lesson,catalog){
  let pack=await request('/lessons/'+lesson.id+'/activities'),dirty=false;
  const list=el('div'),preview=el('div'),topic=field('Chủ đề lượt luyện','topic',pack.topic),status=el('p',{class:'simple-status'});
  const collect=()=>{pack.topic=topic.querySelector('input').value;list.querySelectorAll('form[data-index]').forEach(form=>{const item=pack.tasks[Number(form.dataset.index)],data=values(form);for(const [key,value]of Object.entries(data))item[key]=['tokens','options'].includes(key)?lines(value):value;});};
@@ -48,7 +49,8 @@ export async function activitiesEditor(lesson){
  const tryPreview=async()=>{
   collect();const validated=await request('/lessons/'+lesson.id+'/activities/preview','POST',{...pack,status:'published'});preview.replaceChildren(el('h2',{text:'Xem thử như học sinh'}));mountPractice(preview,validated);preview.scrollIntoView({block:'start',behavior:'smooth'});
  };
- root().append(el('a',{class:'btn btn-secondary',href:'?lesson='+lesson.id,text:'← Quay lại bài học'}),el('h2',{text:'Hoạt động vận dụng — '+lesson.title}),status,
+ adminModeHeader(root(),lesson,catalog,'apply');document.querySelector('main>h1').textContent='Luyện vận dụng';
+ root().append(el('div',{class:'admin-source-heading'},[el('h2',{text:'Soạn hoạt động vận dụng'}),status]),
   el('p',{class:'simple-intro',text:'Nội dung dùng chung cho các tài liệu trong bài. Lưu nháp để soạn tiếp; xem thử rồi cho học sinh xem khi đã kiểm tra đáp án.'}),
   card('Nội dung lượt luyện',[topic,list,form,...(template?[act('Nạp mẫu Q1 cho bài này',()=>{collect();if(pack.tasks.length&&!confirm('Thay nội dung đang soạn bằng mẫu Q1? Chỉ thay bản đang sửa, chưa lưu.'))return;pack={...pack,...structuredClone(template)};topic.querySelector('input').value=pack.topic;changed();render();notice('Đã nạp mẫu vào bản đang sửa. Xem thử rồi bấm Lưu.');})]:[])]),
   el('div',{class:'simple-footer activities-actions'},[act('Lưu bản nháp',()=>save('draft')),act('Xem thử',tryPreview),act('Cho học sinh xem',()=>save('published'),true)]),preview);

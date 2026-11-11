@@ -17,8 +17,8 @@ export function setupChat(profile){
  const header=el('header',{class:'chat-header',title:'Kéo thanh này để di chuyển khung trò chuyện'},[back,el('div',{class:'chat-identity'},[headerAvatar,el('div',{},[heading,subtitle])]),tools,iconButton('Đóng','close',close)]);
  panel.append(header,notice,body);
  const widget=el('div',{id:'chat-widget'},[toggle,panel]);
- const dock=profile.role==='student'&&document.body.classList.contains('student-unified')?document.querySelector('.topbar-user'):null;
- (dock||document.body).append(widget);if(dock)toggle.title='Trò chuyện';
+ const dock=(profile.role==='student'&&document.body.classList.contains('student-unified')||profile.role==='admin'&&document.body.classList.contains('admin-unified'))?document.querySelector('.topbar-user'):null;
+ (dock||document.body).append(widget);if(dock){widget.dataset.docked='true';toggle.title='Trò chuyện';}
  const position=movableChat(toggle,panel,header,profile.id);
  let rooms=[],contacts=[],room=null,mode='list',messages=[],hasMore=false,polling=false,readable=true,stopped=false;
  const drafts=new Map();let input,thread,sendButton,sending=false,pending=null;

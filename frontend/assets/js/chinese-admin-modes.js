@@ -1,15 +1,15 @@
 import {el,link} from './chinese-common.js';
 import {chineseModes,chineseMode,modeCounts} from './chinese-learning-modes.js';
 
-export function adminModeHeader(host,lesson,catalog,active){
- const sets=catalog.sets.filter(s=>s.lesson_id===lesson.id),selected=chineseMode(active);
- host.append(el('header',{class:'admin-chinese-hero'},[
-  el('div',{},[el('span',{class:'admin-mode-eyebrow',text:`SOẠN BÀI · HSK ${lesson.level_id}`}),el('h2',{text:lesson.title}),el('p',{text:'Chọn đúng mục như trên trang học sinh. Nội dung thêm ở đây sẽ đến mục tương ứng trong bài.'})]),el('img',{src:'/assets/images/mascot-panda.svg',alt:'',width:86,height:94})
+export function adminModeHeader(host,lesson,catalog,active,setId){
+ const sets=catalog.sets.filter(s=>s.lesson_id===lesson.id),selected=chineseMode(active)||chineseModes[0];
+ host.append(el('div',{class:'admin-study-bar'},[
+  link('←',{level:lesson.level_id},'admin'),el('div',{},[el('span',{class:'admin-mode-eyebrow',text:`HSK ${lesson.level_id} · SOẠN BÀI`}),el('h2',{text:lesson.title})]),el('span',{class:'admin-role-badge',text:'Chế độ giáo viên'})
  ]));
  const nav=el('nav',{class:'admin-study-modes','aria-label':'Các mục học giống trang học sinh'});
  for(const mode of chineseModes){
   const all=sets.map(s=>modeCounts(s,catalog.counts)[mode.key]),total=mode.key==='apply'?Math.max(0,...all):all.reduce((n,v)=>n+v,0);
-  const entry=link(mode.label,{lesson:lesson.id,mode:mode.key},'admin');entry.classList.add('admin-mode-link');
+  const entry=link(mode.label,mode.key==='apply'?{activities:lesson.id}:{lesson:lesson.id,...(setId?{set:setId}:{}),mode:mode.key},'admin');entry.classList.add('admin-mode-link');
   entry.replaceChildren(el('span',{text:mode.label}),el('small',{text:total?`${total} ${mode.key==='apply'?'hoạt động':'nội dung'}`:'Thêm nội dung'}));
   if(selected?.key===mode.key)entry.setAttribute('aria-current','page');nav.append(entry);
  }

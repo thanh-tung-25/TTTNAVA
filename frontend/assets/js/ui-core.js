@@ -3,6 +3,7 @@ import { studentNavigation, setupStudentNavigation, studentAccount } from './stu
 import { courseProfile } from './course-context.js';
 import { setupCourseNotifications } from './admin-course-notifications.js';
 import { adminHome, adminScope, adminLabels, adminSections, isSuperAdmin } from './admin-permissions.js';
+import {adminNavigation,setupAdminNavigation} from './admin-navigation.js';
 
 const ADMIN_NAV = [
   ['assignments','/pages/admin/assignments/','Giao bài & phản hồi'],
@@ -27,14 +28,11 @@ function renderHeader(profile, role, active) {
     ? adminLabels[adminScope(profile)]
     : (profile.course?.title ?? (profile.grade ? `Học sinh lớp ${profile.grade}` : 'Học sinh Tiếng Trung'));
 
-  const links = nav.map(([key, href, label]) => (
-    `<a class="nav-link" href="${href}"${key === active ? ' aria-current="page"' : ''}>${label}${key==='courses'?'<span id="course-pending-count" class="course-pending-count" hidden></span>':''}</a>`
-  )).join('');
-
   const header = document.getElementById('app-header');
   header.className = 'topbar';
   header.innerHTML = `
     <div class="topbar-inner">
+      ${role==='admin'?'<button type="button" class="admin-menu-toggle" aria-label="Mở điều hướng quản trị" aria-expanded="false" aria-controls="admin-sidebar">☰</button><span class="admin-topbar-title">Không gian quản trị</span>':''}
       <a class="brand" href="${home}"><img class="brand-mark" src="/assets/images/ttnava-logo.png" alt="" width="44" height="44"> TTNAVA</a>
       <div class="topbar-user">
         ${role==='student'?'<a class="btn btn-ghost btn-sm course-switch" href="/pages/student/courses/">Đổi khóa</a>':''}
@@ -44,10 +42,10 @@ function renderHeader(profile, role, active) {
         <button class="btn btn-ghost btn-sm" type="button" id="logout-button">Thoát</button>`}
       </div>
     </div>
-    ${role === 'student' ? studentNavigation(active, profile) : `<nav class="nav-scroll" aria-label="Điều hướng chính">${links}</nav>`}
+    ${role === 'student' ? studentNavigation(active, profile) : adminNavigation(nav,active,home)}
   `;
   if (role === 'student') setupStudentNavigation(header, profile);
-  else if(isSuperAdmin(profile)) setupCourseNotifications();
+  else {setupAdminNavigation(header);if(isSuperAdmin(profile)) setupCourseNotifications();}
 
   header.querySelector('#logout-button').addEventListener('click', async () => {
     localStorage.removeItem('ttnava-course');
@@ -63,6 +61,10 @@ function renderHeader(profile, role, active) {
 
 export async function initPage(role, active) {
   document.body.dataset.role = role;
+  if(role==='admin'){
+    document.body.classList.add('admin-unified');
+    if(!document.querySelector('link[data-admin-design]')){const style=document.createElement('link');style.rel='stylesheet';style.href='/assets/css/admin-unified.css';style.dataset.adminDesign='true';document.head.append(style);}
+  }
   if(role==='student'){
     document.body.classList.add('student-unified');
     if(!document.querySelector('link[data-student-design]')){const style=document.createElement('link');style.rel='stylesheet';style.href='/assets/css/student-unified.css';style.dataset.studentDesign='true';document.head.append(style);}

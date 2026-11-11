@@ -1,8 +1,9 @@
 import {request,el,root,button,card,field,values,notice,error} from './chinese-common.js';
 import {questionAudio,stopQuestionAudio} from './question-audio.js';
 import {mountAdminStudentPreview} from './chinese-admin-preview.js';
+import {adminModeHeader} from './chinese-admin-modes.js';
 
-export function speakingEditor(result,{lesson,profile}){
+export function speakingEditor(result,{lesson,profile,catalog,add=false}){
  const set=result.set;let items=result.items.map(i=>({...i,data:{...i.data}})),dirty=false,dispose;
  const host=root(),list=el('div',{class:'admin-speaking-list'}),preview=el('div',{hidden:true}),status=el('p',{class:'simple-status'}),title=field('Tên tài liệu luyện nói','title',set.title);
  const edit=el('div',{class:'admin-speaking-edit'}),count=el('span',{class:'admin-speaking-count'});
@@ -40,9 +41,8 @@ export function speakingEditor(result,{lesson,profile}){
  };
  edit.append(card('Câu hỏi cô đã nhập từ Word',[...(set.document_id?[el('p',{class:'admin-import-note',text:'Nguồn Word: '+(set.filename||set.title)}),el('a',{href:'/api/v1/chinese/documents/'+set.document_id,text:'Tải file Word gốc'})]:[]),title,el('div',{class:'admin-speaking-toolbar'},[count,act('+ Thêm câu tiếng Trung',()=>{collect();items.push({kind:'dialogue',data:{practice:'speaking',text:'',meaning:''}});changed();render();list.lastElementChild?.querySelector('textarea')?.focus();})]),list]));
  const footer=el('div',{class:'simple-footer'},[act('Lưu bản nháp',()=>save(false)),act('Xem như học sinh',show),act('Cho học sinh xem',()=>save(true),true)]);
- host.append(el('a',{class:'btn btn-secondary',href:'?lesson='+set.lesson_id+'&mode=speak',text:'← Quay lại Luyện nói của bài'}),el('header',{class:'admin-chinese-hero'},[
-  el('div',{},[el('span',{class:'admin-mode-eyebrow',text:`HSK ${set.level_id} → ${set.lesson_title} → LUYỆN NÓI`}),el('h2',{text:'Soạn câu hỏi, xem đúng màn học sinh'}),el('p',{text:'Giữ nguyên tiếng Trung trong Word. Cô nghe thử, sửa câu rồi xem trước khi đăng.'})]),el('img',{src:'/assets/images/mascot-panda.svg',alt:'',width:82,height:92})
- ]),el('div',{class:'admin-speaking-toolbar'},[status,act('Xem như học sinh',show),act('Tiếp tục soạn',back)]),edit,preview,footer);
+ adminModeHeader(host,lesson,catalog,'speak',set.id);document.querySelector('main>h1').textContent='Luyện nói';
+ host.append(el('div',{class:'admin-speaking-toolbar'},[status,el('a',{class:'btn btn-secondary',href:'?lesson='+set.lesson_id+'&mode=speak&upload=1',text:'Thêm tài liệu Word'}),act('Xem như học sinh',show),act('Tiếp tục soạn',back)]),edit,preview,footer);
  edit.addEventListener('input',changed);window.addEventListener('beforeunload',event=>{if(dirty){event.preventDefault();event.returnValue='';}});
- notice('');render();
+ if(add){items.push({kind:'dialogue',data:{practice:'speaking',text:'',meaning:''}});dirty=true;}notice('');render();
 }

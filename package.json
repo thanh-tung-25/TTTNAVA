@@ -13,6 +13,7 @@
     "test": "npm --prefix backend test",
     "test:e2e": "playwright test",
     "test:speaking": "playwright test --config playwright.speaking.config.js",
+    "test:admin-ui": "playwright test --config playwright.admin.config.js",
     "test:student-ui": "playwright test --config playwright.student.config.js",
     "test:courses": "playwright test --config playwright.courses.config.js",
     "test:worksheets": "playwright test --config playwright.worksheets.config.js",

@@ -12,7 +12,7 @@ test.afterAll(async()=>{
 });
 test('Chinese: Word review, publish, flashcard resume, exam and mobile layout',async({page,browser})=>{
  await page.goto('/pages/admin/chinese/?level=9');
- await expect(page.locator('#chinese-nav a')).toHaveCount(3);
+ await expect(page.locator('.admin-chinese-navigation .admin-section-link')).toHaveCount(4);
  await page.getByText('+ Thêm bài học',{exact:true}).click();await page.getByLabel('Tên bài mới',{exact:true}).fill('E2E Chinese');
  await page.getByRole('button',{name:'Tạo bài',exact:true}).click();await page.waitForURL(/\?lesson=/);lesson=new URL(page.url()).searchParams.get('lesson');
  await page.locator('[name=file]').setInputFiles('frontend/assets/templates/chinese-template.docx');

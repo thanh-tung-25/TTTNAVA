@@ -26,6 +26,14 @@ Cần HTTPS hoặc localhost, quyền camera/microphone và trình duyệt hỗ 
 
 ## Quản lý hoạt động vận dụng
 
+Giao diện admin dùng thanh bên chung tại `admin-navigation.js` và `admin-unified.css`, giữ đúng menu theo phạm vi quản trị. Riêng mục Học sinh khi đang soạn Tiếng Trung giữ bộ lọc `program=chinese`. Trên điện thoại, menu mở bằng nút điều hướng, hỗ trợ Escape và giữ focus trong menu.
+
+Trang Bài học admin và học sinh dùng chung `renderChineseLessons`: cùng chọn HSK, nhóm linh vật, các chặng và thẻ tài liệu. Admin thấy cả bài nháp và mọi mục nội dung, kể cả mục trống; mỗi nút mở đúng màn soạn của tài liệu. Thanh tiến độ học được thay bằng số nội dung và trạng thái đăng. Thêm bài, sửa tên, thứ tự, trạng thái và khôi phục bài lưu trữ thực hiện ngay tại danh sách bài.
+
+Trong tài liệu, chọn **Từ mới / Luyện nghe / Quiz / Bài đọc / Luyện nói** chỉ sửa nội dung thuộc phần đó. **Thêm từ mới**, **Thêm câu hỏi**, **Thêm bài đọc** tạo đúng loại dữ liệu và mở ngay ô nhập. Khi lưu, các phần khác được giữ nguyên. Nhập Word tạo một tài liệu mới trong đúng bài/phần và đưa tới bước kiểm tra. Lưu hoặc đăng xong trở lại đúng phần đang soạn; thay đổi chưa lưu có nhắc khi rời trang. Màn soạn vận dụng, luyện nói, bài kiểm tra, cấp HSK và tiến độ dùng chung khung quản trị mới. **Xem như học sinh** dùng bản đang sửa và không ghi kết quả học.
+
+Kiểm tra giao diện mới bằng `npm run test:admin-ui` (API giả lập, không ghi database), gồm ánh xạ admin–học sinh, thêm nội dung không làm mất phần khác, soạn từ bài trống, đăng bài, giao diện điện thoại và quyền menu. Luồng nhập Word, vận dụng và ghi hình vẫn có trong `playwright.applied.config.js`.
+
 Khi chuẩn bị các bài tiếng Trung tiếp theo, luôn chuẩn bị cả hoạt động vận dụng phù hợp nội dung nguồn, cùng từ vựng và bộ câu hỏi. Mỗi dạng cần ít nhất 10 câu để có lượt luyện đầy đủ. Kiểm tra phần vận dụng đã xuất bản ở đúng bài/HSK khi bàn giao; không chỉ lưu file Word. Các bài Q1 1–6 có mẫu 40 hoạt động/bài: mỗi dạng xếp câu, sửa lỗi, điền từ, hội thoại có 10 câu. Tên tiếng Việt “Xin Chào” và “Hỏi tên, Hỏi họ, Quốc tịch” cũng nhận đúng mẫu bài 1–2, không dựa riêng vào số thứ tự để đoán bài.
 
 Mỗi lượt lấy ngẫu nhiên tối đa 10 câu không lặp từ dạng được chọn; lượt tổng hợp lấy 10 câu từ toàn bộ nội dung. Luyện lại tạo lượt trộn mới, giữ nguyên dạng đã chọn. Nếu admin chỉ đăng ít hơn 10 câu thì hiển thị đúng số câu sẵn có, không lặp câu để đủ số lượng. Script `node backend/scripts/expand-chinese-activities.mjs` bổ sung ngân hàng câu cho bài Q1 hiện có và giữ nguyên nội dung đã soạn.

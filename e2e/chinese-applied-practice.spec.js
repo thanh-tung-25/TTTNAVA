@@ -216,7 +216,7 @@ test('admin authors all four types, previews, saves, reloads and controls studen
   return r.fulfill({json:{data}});
  });
  await page.goto(origin+'/pages/admin/chinese/?lesson=lesson');
- await page.getByRole('link',{name:'Quản lý hoạt động vận dụng'}).click();
+ await page.locator('.admin-study-modes').getByRole('link',{name:/^Luyện vận dụng/}).click();
  await page.getByLabel('Chủ đề lượt luyện').fill('Tự giới thiệu');
  for(const [type,fields] of [
   ['order',{prompt:'Tôi ở trường.',tokens:'我\n在\n学校\n。',explanation:'在 đứng trước địa điểm.'}],

@@ -6,8 +6,9 @@ export async function one(sql, params = [], run = query) { const rows = await ru
 export const setSelect = `SELECT s.*, l.level_id, l.title lesson_title, l.status lesson_status, d.filename, d.created_at uploaded_at
  FROM chinese_sets s JOIN chinese_lessons l ON l.id=s.lesson_id LEFT JOIN chinese_documents d ON d.id=s.document_id`;
 export async function getSet(id, admin = false, run = query) {
- return one(`${setSelect} WHERE s.id=? ${admin ? '' : "AND s.status='published' AND l.status='published'"}`, [id],run);
+ const set=await one(`${setSelect} WHERE s.id=? ${admin ? '' : "AND s.status='published' AND l.status='published'"}`, [id],run);set.speaking_settings=json(set.speaking_settings)||null;return set;
 }
+export function assignedSpeakingItems(items){const bank=items.filter(i=>i.kind==='dialogue'&&i.data.practice==='speaking');return bank.some(i=>i.data.speaking_selected!==undefined)?bank.filter(i=>i.data.speaking_selected!==false):bank.slice(0,3);}
 export async function getItems(id, run = query) {
  return (await run('SELECT * FROM chinese_items WHERE set_id=? AND active=1 ORDER BY position,id',[id])).map(i => ({...i,data:json(i.data)}));
 }
@@ -23,8 +24,9 @@ export async function catalog(admin, student) {
  const activities=await query("SELECT lesson_id,data FROM chinese_activities WHERE status='published'");
  const activityCounts=new Map(activities.map(row=>[row.lesson_id,json(row.data).tasks.length]));
  for(const set of sets)set.activity_count=activityCounts.get(set.lesson_id)||0;
- const counts = await query(`SELECT i.set_id,i.kind,COUNT(*) total,SUM(CASE WHEN i.kind='dialogue' AND ${jsonText('i.data','practice')}='speaking' THEN 1 ELSE 0 END) speaking_total FROM chinese_items i JOIN chinese_sets s ON s.id=i.set_id JOIN chinese_lessons l ON l.id=s.lesson_id WHERE i.active=1 ${admin?'':"AND s.status='published' AND l.status='published'"} GROUP BY i.set_id,i.kind`);
- for(const set of sets)set.speaking_count=Number(counts.find(c=>c.set_id===set.id&&c.kind==='dialogue')?.speaking_total)||0;
+ const spoken=`i.kind='dialogue' AND ${jsonText('i.data','practice')}='speaking'`,selected=jsonText('i.data','speaking_selected');
+ const counts = await query(`SELECT i.set_id,i.kind,COUNT(*) total,SUM(CASE WHEN ${spoken} THEN 1 ELSE 0 END) speaking_total,SUM(CASE WHEN ${spoken} AND ${selected} IS NOT NULL THEN 1 ELSE 0 END) speaking_configured,SUM(CASE WHEN ${spoken} AND COALESCE(${selected},'true')<>'false' THEN 1 ELSE 0 END) speaking_assigned FROM chinese_items i JOIN chinese_sets s ON s.id=i.set_id JOIN chinese_lessons l ON l.id=s.lesson_id WHERE i.active=1 ${admin?'':"AND s.status='published' AND l.status='published'"} GROUP BY i.set_id,i.kind`);
+ for(const set of sets){const row=counts.find(c=>c.set_id===set.id&&c.kind==='dialogue');set.speaking_count=Number(row?.speaking_configured)?Number(row.speaking_assigned):Math.min(3,Number(row?.speaking_total)||0);set.speaking_settings=json(set.speaking_settings)||null;}
  const reviews = admin ? [] : await query('SELECT r.* FROM chinese_reviews r WHERE student_id=?',[student]);
  const progress = admin ? [] : await query('SELECT * FROM chinese_progress WHERE student_id=? ORDER BY updated_at DESC',[student]);
  const completion=[];

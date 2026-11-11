@@ -16,7 +16,7 @@ test.beforeAll(async()=>{
 });
 test.afterAll(async()=>{server.closeAllConnections();await new Promise(resolve=>server.close(resolve));});
 
-async function mock(page,{mixed=false}={}){
+async function mock(page,{mixed=false,legacy=false}={}){
  const state={role:'admin',requests:[],destination:null,set:null,items:[]};
  const lesson={id:randomUUID(),level_id:1,title:'Bài 3 · 很高兴认识你',position:3,status:'draft',description:'',image_url:''};state.lesson=lesson;
  if(mixed){state.set={id:randomUUID(),lesson_id:lesson.id,level_id:1,title:'Từ vựng và câu hỏi',lesson_title:lesson.title,status:'published',lesson_status:'published'};lesson.status='published';state.items=[{id:randomUUID(),kind:'vocabulary',data:{hanzi:'你好',pinyin:'nǐ hǎo',meaning:'xin chào'}},{id:randomUUID(),kind:'question',data:{prompt:'“请问” (qǐngwèn) có nghĩa là gì?',type:'choice',options:['xin hỏi','sách'],accepted:['xin hỏi'],explanation:'Lời giải kín',approved:true}},{id:randomUUID(),kind:'reading',data:{text:'你好！很高兴认识你。'}}];}
@@ -36,7 +36,8 @@ async function mock(page,{mixed=false}={}){
   else if(p.endsWith('/chinese/catalog')){
    const visible=state.set&&(state.role==='admin'||state.set.status==='published'&&lesson.status==='published');
    const counts=state.items.reduce((all,i)=>{let row=all.find(c=>c.kind===i.kind);if(!row){row={set_id:state.set.id,kind:i.kind,total:0,speaking_total:0};all.push(row);}row.total++;if(i.data.practice==='speaking')row.speaking_total++;return all;},[]);
-   data={levels:[{id:1,title:'HSK 1'}],lessons:[lesson],sets:visible?[{...state.set,speaking_count:state.items.filter(i=>i.data.practice==='speaking').length,activity_count:0}]:[],counts:visible?counts:[],progress:[],reviews:[],completion:[]};
+   const bank=state.items.filter(i=>i.data.practice==='speaking'),assigned=bank.some(i=>i.data.speaking_selected!==undefined)?bank.filter(i=>i.data.speaking_selected!==false):bank.slice(0,3);
+   data={levels:[{id:1,title:'HSK 1'}],lessons:[lesson],sets:visible?[{...state.set,speaking_count:assigned.length,activity_count:0}]:[],counts:visible?counts:[],progress:[],reviews:[],completion:[]};
   }else if(p.endsWith('/imports')&&method==='POST'){
    // The API integration test exercises binary multipart. Here use the selected
    // real fixture, since CDP's intercepted multipart text can replace ZIP bytes.
@@ -46,10 +47,10 @@ async function mock(page,{mixed=false}={}){
   }else if(p.endsWith('/sets/'+state.set?.id)){
    if(method==='PUT'){
     const body=setSchema.parse(req.postDataJSON()),errors=issues(body.items);if(body.status==='published'&&errors.length)return route.fulfill({status:400,json:{error:{message:'Chưa thể xuất bản',details:errors}}});
-    state.set={...state.set,title:body.title,status:body.status};state.items=body.items;data={id:state.set.id};
-   }else data={set:{...state.set,lesson_status:lesson.status},items:state.items.map(i=>state.role==='admin'?i:i.data.practice==='speaking'?{...i,data:{practice:'speaking',text:i.data.text}}:i),issues:issues(state.items),activities:null,progress:null};
+    state.set={...state.set,title:body.title,status:body.status,...(body.speaking_settings!==undefined?{speaking_settings:body.speaking_settings}:{})};state.items=body.items;data={id:state.set.id};
+   }else data={set:{...state.set,lesson_status:lesson.status},items:state.items.filter(i=>state.role==='admin'||i.data.practice!=='speaking'||i.data.speaking_selected!==false).map(i=>state.role==='admin'?i:i.data.practice==='speaking'?{...i,data:{practice:'speaking',text:i.data.text,speaking_selected:i.data.speaking_selected}}:i),issues:issues(state.items),activities:null,progress:null};
   }else if(p.endsWith('/lessons/'+lesson.id)&&method==='PUT'){Object.assign(lesson,req.postDataJSON());data={id:lesson.id};}
-  else if(p.endsWith('/activities'))data={topic:'',status:'draft',tasks:[]};
+  else if(p.endsWith('/activities'))data={topic:'',status:legacy?'published':'draft',tasks:legacy?['你叫什么名字？','你是哪国人？','你今天好吗？'].map(speech=>({type:'dialogue',speech})):[]};
   return route.fulfill({json:{data}});
  });return state;
 }
@@ -85,7 +86,7 @@ test('teacher imports Chinese Word, listens, previews an unsaved draft, then pub
  await expect(page.getByRole('link',{name:'Luyện nói',exact:true})).toBeVisible();
  await expect(page.getByRole('button',{name:'Quiz 20 câu',exact:true})).toHaveCount(0);await expect(page.getByRole('link',{name:'Bài đọc',exact:true})).toHaveCount(0);
  await page.getByRole('link',{name:'Luyện nói',exact:true}).click();
- await expect(page.getByRole('heading',{name:'Nghe một câu, nói thật tự tin!'})).toBeVisible();await expect(page.locator('.speaking-studio')).toContainText('Câu 1 / 3');
+ await expect(page.getByRole('heading',{name:'Nghe từng câu, trả lời trong một video'})).toBeVisible();await expect(page.locator('.speaking-studio')).toContainText('Đã nghe 0 / 3 câu');
  await expect(page.locator('#content')).not.toContainText('Bạn tên là gì?');expect(errors).toEqual([]);
 });
 
@@ -103,4 +104,18 @@ test('admin sections map to the same student destinations and preview current ed
  await preview.getByRole('button',{name:'Từ mới',exact:true}).click();await expect(preview.locator('.hub-table')).toContainText('你好');
  await preview.getByRole('link',{name:'xin chào',exact:true}).click();await expect(preview.locator('.flashcard')).toContainText('你好');
  expect(state.requests.filter(r=>r.method==='PUT'||r.method==='POST')).toEqual([]);
+});
+
+test('teacher selects, reorders and saves a two-question video assignment with a custom duration and free listening order',async({page})=>{
+ const state=await mock(page);page.on('dialog',d=>d.accept());await page.goto(origin+'/pages/admin/chinese/?lesson='+state.lesson.id+'&mode=speak');await page.locator('input[type=file]').setInputFiles('frontend/assets/templates/chinese-speaking-template.docx');await page.getByRole('button',{name:'Tải lên và kiểm tra',exact:true}).click();await expect(page.locator('.admin-speaking-question')).toHaveCount(3);
+ await page.getByRole('combobox',{name:'Thời lượng một video',exact:true}).selectOption('120');await page.getByRole('combobox',{name:'Thứ tự học sinh nghe',exact:true}).selectOption('free');await page.getByLabel('Chọn nhanh số câu đầu',{exact:true}).fill('2');await page.getByRole('button',{name:'Áp dụng số câu',exact:true}).click();await expect(page.locator('.admin-speaking-count')).toHaveText('2/3 câu được giao');
+ await page.getByRole('checkbox',{name:'Giao câu 2',exact:true}).uncheck();await page.getByRole('checkbox',{name:'Giao câu 3',exact:true}).check();const thirdText=await page.locator('textarea[name=text]').nth(2).inputValue();await page.locator('.admin-speaking-question').nth(2).getByRole('button',{name:'↑ Lên',exact:true}).click();await page.locator('.admin-speaking-question').nth(1).getByRole('button',{name:'↑ Lên',exact:true}).click();await expect(page.locator('textarea[name=text]').first()).toHaveValue(thirdText);
+ await page.getByRole('button',{name:'Xem như học sinh',exact:true}).first().click();await expect(page.locator('.admin-student-preview .speaking-question-button')).toHaveCount(2);await expect(page.locator('.admin-student-preview .speaking-clock')).toHaveText('Còn 02:00');await expect(page.locator('.admin-student-preview')).toContainText('Được chọn thứ tự nghe');expect(state.requests.filter(r=>r.method==='PUT')).toHaveLength(0);
+ await page.getByRole('button',{name:'Tiếp tục soạn',exact:true}).click();await page.getByRole('button',{name:'Cho học sinh xem',exact:true}).click();await expect(page.locator('.simple-document')).toContainText('2 câu luyện nói');expect(state.set.speaking_settings).toEqual({duration_seconds:120,order:'free'});expect(state.items[0].data.text).toBe(thirdText);
+ await page.getByRole('link',{name:'Mở tài liệu',exact:true}).click();await expect(page.getByRole('combobox',{name:'Thời lượng một video',exact:true})).toHaveValue('120');await expect(page.getByRole('checkbox',{name:'Giao câu 3',exact:true})).not.toBeChecked();
+ state.role='student';await page.goto(origin+'/pages/student/chinese/?set='+state.set.id+'&mode=speak');await expect(page.locator('.speaking-question-button')).toHaveCount(2);await expect(page.locator('.speaking-clock')).toHaveText('Còn 02:00');await expect(page.locator('.speaking-counter')).toHaveText('Đã nghe 0 / 2 câu');
+});
+
+test('legacy lesson dialogue can become a configurable speaking assignment without losing quiz content',async({page})=>{
+ const state=await mock(page,{mixed:true,legacy:true});page.on('dialog',d=>d.accept());await page.goto(origin+'/pages/admin/chinese/?set='+state.set.id+'&mode=speak');await expect(page.locator('.admin-speaking-question')).toHaveCount(3);await expect(page.locator('.admin-speaking-edit')).toContainText('Hội thoại đang đăng');await page.getByRole('checkbox',{name:'Giao câu 3',exact:true}).uncheck();await page.getByRole('button',{name:'Cho học sinh xem',exact:true}).click();await expect(page.locator('.simple-document')).toContainText('2 câu luyện nói');expect(state.items.filter(i=>i.kind==='question')).toHaveLength(1);expect(state.items.filter(i=>i.kind==='vocabulary')).toHaveLength(1);expect(state.items.filter(i=>i.data.practice==='speaking'&&i.data.speaking_selected)).toHaveLength(2);
 });

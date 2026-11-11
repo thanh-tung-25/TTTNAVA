@@ -10,7 +10,7 @@ export async function adminSetEditor(id,{catalog,profile:adminProfile,params}){
  const modeParams={lesson:set.lesson_id,mode:mode.key};
  document.querySelector('main>h1').textContent=mode.label;
  const onlySpeaking=items.every(i=>i.data.practice==='speaking'||i.kind==='unknown');
- if(onlySpeaking&&(params.get('mode')==='speak'||!params.get('mode')&&items.some(i=>i.data.practice==='speaking'))){const {speakingEditor}=await import('/assets/js/chinese-speaking-editor.js');return speakingEditor(result,{lesson,profile:adminProfile,catalog,add:params.get('add')==='1'});}
+ if(params.get('mode')==='speak'||onlySpeaking&&!params.get('mode')&&items.some(i=>i.data.practice==='speaking')){const {speakingEditor}=await import('/assets/js/chinese-speaking-editor.js');return speakingEditor(result,{lesson,profile:adminProfile,catalog,add:params.get('add')==='1'});}
  const belongs=i=>mode.key==='cards'?['vocabulary','question','unknown'].includes(i.kind):i.kind==='unknown'||itemMode(i)===(['words','listen'].includes(mode.key)?'words':mode.key);
  const allowedKinds={cards:['vocabulary','question'],words:['vocabulary'],listen:['vocabulary'],quiz:['question'],read:['reading','grammar','dialogue'],speak:['dialogue']}[mode.key]||['question'];
  const available=kinds.filter(([k])=>allowedKinds.includes(k)||k==='unknown'&&items.some(i=>i.kind==='unknown'));let tab=params.get('tab')||available.find(([k])=>items.some(i=>i.kind===k&&belongs(i)))?.[0]||allowedKinds[0];

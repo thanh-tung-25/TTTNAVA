@@ -17,11 +17,12 @@ export function drawSpeakingFrame(ctx,video,meta,elapsed){
  name.forEach((line,n)=>ctx.fillText(line,38,101+n*25));
  let y=110+name.length*25;
  ctx.font='17px Arial';ctx.fillStyle='#786c84';
- const lesson=lines(ctx,`HSK ${meta.level} · ${meta.lesson} · Câu ${meta.index}`,720).slice(0,2);
+ const lesson=lines(ctx,`HSK ${meta.level} · ${meta.lesson} · Câu ${meta.index}/${meta.total} · Đã nghe ${meta.heard_count||0}/${meta.total}`,720).slice(0,2);
  lesson.forEach(line=>{ctx.fillText(line,38,y);y+=24;});
  y+=9;
- ctx.font=`bold ${meta.question.length>80?25:33}px "Microsoft YaHei",Arial,sans-serif`;
- const question=lines(ctx,meta.question,682),lineHeight=meta.question.length>80?33:43;
+ const text=meta.question||'Chưa phát câu hỏi';
+ ctx.font=`bold ${text.length>80?25:33}px "Microsoft YaHei",Arial,sans-serif`;
+ const question=lines(ctx,text,682),lineHeight=text.length>80?33:43;
  panel(ctx,34,y,732,question.length*lineHeight+32,16,'#f0e9fb');
  ctx.fillStyle='#493760';question.forEach((line,n)=>ctx.fillText(line,54,y+34+n*lineHeight));
  y+=question.length*lineHeight+49;

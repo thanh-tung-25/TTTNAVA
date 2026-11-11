@@ -1,4 +1,4 @@
-import {beforeAll,afterAll,it,expect} from 'vitest';
+import {beforeAll,beforeEach,afterAll,it,expect} from 'vitest';
 import {randomUUID} from 'node:crypto';
 import {readFile} from 'node:fs/promises';
 import {createTestUser,loginStudent} from './helpers/index.js';
@@ -9,7 +9,24 @@ beforeAll(async()=>{
  admin=await loginStudent(users[0]);student=await loginStudent(users[1]);
  lesson=(await admin.post(base+'/lessons').send({level_id:1,title:'Word → Speaking',position:1,status:'draft'})).body.data.id;
 });
+it('persists the video assignment, preserves it when another section saves, and sends students only assigned questions',async()=>{
+ const created=await admin.post(base+'/sets').send({lesson_id:lesson,title:'Whole video assignment'});const id=created.body.data.id;
+ const items=[{kind:'vocabulary',data:{hanzi:'你好',meaning:'xin chào'}},{kind:'reading',data:{text:'你好！'}}];
+ for(let n=0;n<6;n++)items.push({kind:'dialogue',data:{practice:'speaking',speaking_selected:n===1||n===4,text:`请回答第${n+1}个问题。`,meaning:'Nghĩa chỉ để cô kiểm tra'}});
+ const settings={duration_seconds:120,order:'free'};
+ expect((await admin.put(base+'/sets/'+id).send({title:'Whole video assignment',status:'published',speaking_settings:settings,items})).status).toBe(200);
+ expect((await admin.put(base+'/lessons/'+lesson).send({level_id:1,title:'Word → Speaking',position:1,status:'published'})).status).toBe(200);
+ const authored=(await admin.get(base+'/sets/'+id)).body.data;expect(authored.set.speaking_settings).toEqual(settings);expect(authored.items).toHaveLength(8);
+ const publicData=(await student.get(base+'/sets/'+id)).body.data;expect(publicData.set.speaking_settings).toEqual(settings);expect(publicData.items.filter(i=>i.data.practice==='speaking').map(i=>i.data.text)).toEqual(['请回答第2个问题。','请回答第5个问题。']);expect(JSON.stringify(publicData.items)).not.toContain('Nghĩa chỉ để cô kiểm tra');
+ const catalog=(await student.get(base+'/catalog')).body.data;expect(catalog.sets.find(s=>s.id===id).speaking_count).toBe(2);expect(Number(catalog.counts.find(c=>c.set_id===id&&c.kind==='dialogue').speaking_total)).toBe(6);
+ expect((await admin.put(base+'/sets/'+id).send({title:'Other section saved',status:'published',items:authored.items})).status).toBe(200);expect((await admin.get(base+'/sets/'+id)).body.data.set.speaking_settings).toEqual(settings);
+ for(const config of [{duration_seconds:91,order:'free'},{duration_seconds:330,order:'free'},{duration_seconds:90,order:'random'}])expect((await admin.put(base+'/sets/'+id).send({title:'Invalid settings',status:'published',items:authored.items,speaking_settings:config})).status).toBe(400);
+ const none=authored.items.map(i=>i.data.practice==='speaking'?{...i,data:{...i.data,speaking_selected:false}}:i);expect((await admin.put(base+'/sets/'+id).send({title:'No questions',status:'published',items:none})).status).toBe(400);
+ expect((await admin.put(base+'/sets/'+id).send({title:'Draft without selection',status:'draft',items:none,speaking_settings:{duration_seconds:90,order:'sequential'}})).status).toBe(200);
+ expect((await student.get(base+'/sets/'+id)).status).toBe(404);
+});
 afterAll(async()=>{if(lesson)await admin.delete(base+'/lessons/'+lesson);for(const u of users)await query('DELETE FROM profiles WHERE id=?',[u.id]);});
+beforeEach(async()=>{await admin.put(base+'/lessons/'+lesson).send({level_id:1,title:'Word → Speaking',position:1,status:'draft'});});
 it('imports, previews, reparses and publishes Chinese questions without quiz answers or student-facing translations',async()=>{
  const buffer=await readFile(new URL('../../frontend/assets/templates/chinese-speaking-template.docx',import.meta.url));
  const upload=agent=>agent.post(base+'/imports').field('level_id','1').field('lesson_id',lesson).field('title','Oral questions').field('destination','speaking').attach('file',buffer,'oral.docx');

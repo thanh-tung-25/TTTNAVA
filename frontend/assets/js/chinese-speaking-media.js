@@ -4,7 +4,7 @@ export function speakingSupported(){
  return Boolean(window.isSecureContext&&navigator.mediaDevices?.getUserMedia&&window.MediaRecorder&&(window.AudioContext||window.webkitAudioContext)&&HTMLCanvasElement.prototype.captureStream);
 }
 export function createSpeakingMedia(video,{onRecorded,onFailure}){
- let input,context,mix,microphone,source,buffer,recorder,capture,frame=0,disposed=false,opening=0;
+ let input,context,mix,microphone,source,recorder,capture,frame=0,disposed=false,opening=0,buffers=new Map();
  const canvas=document.createElement('canvas');canvas.width=800;canvas.height=800;
  const ctx=canvas.getContext('2d',{alpha:false});
  function stopQuestion(){if(source){const old=source;source=null;try{old.stop();}catch{}old.disconnect();}}
@@ -12,7 +12,7 @@ export function createSpeakingMedia(video,{onRecorded,onFailure}){
  function close(){
   opening++;stop();input?.getTracks().forEach(t=>t.stop());input=null;video.srcObject=null;
   mix?.stream.getTracks().forEach(t=>t.stop());
-  microphone?.disconnect();microphone=null;buffer=null;
+  microphone?.disconnect();microphone=null;buffers.clear();
   const previous=context;context=null;mix=null;previous?.close().catch(()=>{});
  }
  async function open(){
@@ -28,22 +28,26 @@ export function createSpeakingMedia(video,{onRecorded,onFailure}){
    return true;
   }catch(error){acquired.getTracks().forEach(t=>t.stop());close();throw error;}
  }
- async function prepare(text,signal){
+ async function prepare(questions,signal){
   const audio=context;if(!audio)throw Error('Hãy bật camera và microphone trước.');
   await audio.resume();
   const request=new AbortController(),cancel=()=>request.abort();signal.addEventListener('abort',cancel,{once:true});
-  if(signal.aborted)request.abort();const timeout=setTimeout(cancel,18000);
+  if(signal.aborted)request.abort();const timeout=setTimeout(cancel,30000);
   try{
-   const result=await fetch('/api/v1/question-audio',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify({text,lang:'zh-CN'}),signal:request.signal});
-   if(!result.ok)throw Error('Chưa tải được giọng đọc câu hỏi. Hãy kiểm tra mạng và bấm quay lại.');
-   const bytes=await result.arrayBuffer();if(signal.aborted)throw new DOMException('Aborted','AbortError');
-   let decoded;try{decoded=await audio.decodeAudioData(bytes);}catch{throw Error('Chưa đọc được âm thanh câu hỏi. Hãy bấm quay lại để thử lần nữa.');}
-   if(signal.aborted||disposed||audio!==context)throw new DOMException('Aborted','AbortError');buffer=decoded;
-  }catch(error){if(request.signal.aborted&&!signal.aborted)throw Error('Tải giọng đọc quá lâu. Hãy kiểm tra mạng và bấm quay lại.');throw error;}
+   const pending=[...new Set(questions.map(q=>q.text))],prepared=new Map();let next=0;
+   const worker=async()=>{while(next<pending.length){
+    const text=pending[next++];if(request.signal.aborted)throw new DOMException('Aborted','AbortError');
+    const result=await fetch('/api/v1/question-audio',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify({text,lang:'zh-CN'}),signal:request.signal});
+    if(!result.ok)throw Error('Chưa tải được giọng đọc câu hỏi. Hãy kiểm tra mạng và bấm quay lại.');
+    const bytes=await result.arrayBuffer();let decoded;try{decoded=await audio.decodeAudioData(bytes);}catch{throw Error('Chưa đọc được âm thanh câu hỏi. Hãy bấm quay lại để thử lần nữa.');}
+    if(request.signal.aborted||disposed||audio!==context)throw new DOMException('Aborted','AbortError');prepared.set(text,decoded);
+   }};
+   await Promise.all(Array.from({length:Math.min(3,pending.length)},worker));buffers=prepared;
+  }catch(error){const timedOut=request.signal.aborted&&!signal.aborted;request.abort();if(timedOut)throw Error('Tải giọng đọc quá lâu. Hãy kiểm tra mạng và bấm quay lại.');throw error;}
   finally{clearTimeout(timeout);signal.removeEventListener('abort',cancel);}
  }
- function playQuestion(){
-  if(!buffer||!context||!mix)return Promise.reject(Error('Giọng đọc chưa sẵn sàng.'));
+ function playQuestion(text){
+  const buffer=buffers.get(text);if(!buffer||!context||!mix)return Promise.reject(Error('Giọng đọc chưa sẵn sàng.'));
   stopQuestion();
   return new Promise(resolve=>{
    const current=context.createBufferSource();source=current;current.buffer=buffer;current.playbackRate.value=.85;

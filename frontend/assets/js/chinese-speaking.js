@@ -1,49 +1,60 @@
 import {el,link} from './chinese-common.js';
 import {stopQuestionAudio} from './question-audio.js';
-import {speakingQuestions,shuffledQuestions,speakingStamp,speakingFilename,speakingError,SPEAKING_SECONDS} from './chinese-speaking-data.js';
+import {speakingQuestions,speakingSettings,speakingTime,speakingStamp,speakingFilename,speakingError} from './chinese-speaking-data.js';
 import {speakingSupported,createSpeakingMedia} from './chinese-speaking-media.js';
 import {speakingView} from './chinese-speaking-view.js';
 
 export function mountSpeaking(host,{set,activities,items=[],profile}){
  if(!document.querySelector('link[data-speaking-style]'))document.head.append(el('link',{rel:'stylesheet',href:'/assets/css/chinese-speaking.css','data-speaking-style':'true'}));
- const source=speakingQuestions(activities,items);
- if(!source.length){host.append(el('section',{class:'card'},[el('h2',{text:'Luyện nói theo bài'}),el('p',{text:'Bài này chưa có câu hỏi phù hợp để luyện nói. Giáo viên cần thêm và đăng câu hỏi tiếng Trung trong mục Luyện nói.'}),link('Về bài học',{set:set.id})]));return;}
- let deck=shuffledQuestions(source),index=0,phase='idle',listens=0,playing=false,result=null,downloaded=false,timer,started=0,disposed=false,generation=0,abort,reason='';
- const ui=speakingView(host,{profile,set,count:deck.length}),supported=speakingSupported();
+ const questions=speakingQuestions(activities,items),settings=speakingSettings(set);
+ if(!questions.length){host.append(el('section',{class:'card'},[el('h2',{text:'Luyện nói theo bài'}),el('p',{text:'Bài này chưa có câu hỏi phù hợp để luyện nói. Giáo viên cần thêm và đăng câu hỏi tiếng Trung trong mục Luyện nói.'}),link('Về bài học',{set:set.id})]));return;}
+ let phase='idle',counts=questions.map(()=>0),heard=new Set(),current=-1,playing=false,result=null,downloaded=false,timer,started=0,disposed=false,generation=0,abort,reason='',meta=null,takeFailed=false;
+ const ui=speakingView(host,{profile,set,count:questions.length,settings}),supported=speakingSupported();
  const busy=()=>['opening','loading','recording','saving'].includes(phase);
+ const media=createSpeakingMedia(ui.live,{onRecorded:ended,onFailure:failed});
  function update(text){
-  if(disposed)return;ui.shell.dataset.phase=phase;
-  ui.result.hidden=!result||['loading','recording','saving'].includes(phase);
-  ui.camera.disabled=!supported||busy()||phase==='complete';ui.camera.textContent=media.ready?'Tắt camera':'Bật camera & micro';ui.placeholder.hidden=media.ready;
-  ui.record.disabled=!supported||!media.ready||busy()||phase==='complete';ui.record.textContent=result?'Quay lại câu này':'Bắt đầu quay';ui.record.hidden=['recording','saving'].includes(phase);
-  ui.stop.hidden=phase!=='recording';ui.stop.disabled=phase!=='recording';
-  ui.listen.disabled=phase!=='recording'||playing||listens>=2;
-  ui.listenCount.textContent=listens?`Đã nghe ${listens}/2 lần trong bản ghi này.`:'Bắt đầu quay để nghe câu hỏi.';
-  ui.state.textContent={opening:'Đang mở camera…',loading:'Đang chuẩn bị…',recording:'● Đang quay',saving:'Đang tạo video…',review:'Đã có bản ghi',complete:'Đã hoàn thành'}[phase]||(media.ready?'Camera đã sẵn sàng':'Sẵn sàng luyện tập');
-  ui.next.disabled=!result||!downloaded||busy();ui.next.textContent=phase==='complete'?'Luyện lượt mới':index===deck.length-1?'Hoàn thành lượt luyện':'Câu tiếp theo →';
+  if(disposed)return;ui.shell.dataset.phase=phase;ui.result.hidden=!result||busy();
+  ui.camera.disabled=!supported||busy();ui.camera.textContent=media.ready?'Tắt camera':'Bật camera & micro';ui.placeholder.hidden=media.ready;
+  ui.record.hidden=Boolean(result)||['recording','saving'].includes(phase);ui.record.disabled=!supported||!media.ready||busy();
+  ui.stop.hidden=phase!=='recording';ui.stop.disabled=phase!=='recording';ui.retake.disabled=!supported||busy();
+  const next=questions.findIndex((_,n)=>!heard.has(n));
+  for(const [n,row]of ui.questionButtons.entries()){
+   row.button.disabled=phase!=='recording'||playing||counts[n]>=2||(settings.order==='sequential'&&next>=0&&n>next);
+   row.button.setAttribute('aria-current',n===current?'step':'false');row.button.classList.toggle('has-heard',heard.has(n));
+   row.detail.textContent=(heard.has(n)?'Đã nghe':'Chưa nghe')+` · ${counts[n]}/2`;
+  }
+  ui.counter.textContent=`Đã nghe ${heard.size} / ${questions.length} câu`;
+  ui.listenCount.textContent=settings.order==='free'?'Chọn câu muốn nghe. Mỗi câu tối đa 2 lần.':'Nghe theo thứ tự cô giao. Mỗi câu tối đa 2 lần.';
+  ui.state.textContent={opening:'Đang mở camera…',loading:'Đang tải giọng đọc…',recording:'● Đang quay',saving:'Đang tạo video…',review:'Đã có bản ghi'}[phase]||(media.ready?'Camera đã sẵn sàng':'Sẵn sàng luyện tập');
   ui.download.setAttribute('aria-disabled',String(busy()));if(text!==undefined)ui.status.textContent=text;
  }
  function clearTimer(){clearInterval(timer);timer=null;}
- function ended(blob,meta){
+ function ended(blob,recordedMeta){
   clearTimer();playing=false;if(disposed)return;
-  if(!blob.size){phase=result?'review':'idle';update('Chưa tạo được bản ghi. Hãy thử quay lại.');return;}
+  if(!blob.size||takeFailed&&result){phase=result?'review':'idle';update(result?'Bản quay mới bị gián đoạn. Bản ghi trước vẫn được giữ để tải về.':'Chưa tạo được bản ghi. Hãy thử quay lại.');return;}
   if(result)URL.revokeObjectURL(result.url);
-  result={url:URL.createObjectURL(blob),blob,meta};downloaded=false;phase='review';
-  ui.result.hidden=false;ui.resultVideo.src=result.url;ui.download.href=result.url;ui.download.download=speakingFilename(meta,blob.type);
-  ui.resultQuestion.textContent=meta.question;ui.resultInfo.textContent=`Mã lượt ${meta.code} · ${meta.date} · ${(blob.size/1024/1024).toFixed(1)} MB · ${blob.type.includes('mp4')?'MP4':'WebM'}`;
-  update((reason?reason+' ':'')+'Video đã sẵn sàng. Hãy xem lại và tải về máy.');
+  const snapshot=structuredClone(recordedMeta);result={url:URL.createObjectURL(blob),blob,meta:snapshot};downloaded=false;phase='review';
+  ui.resultVideo.src=result.url;ui.download.href=result.url;ui.download.download=speakingFilename(snapshot,blob.type);
+  ui.resultQuestion.textContent=`Đã nghe ${snapshot.heard_count}/${snapshot.total} câu`+(snapshot.heard_count<snapshot.total?' · Chưa nghe đủ câu hỏi cô giao':' · Bạn xem lại phần trả lời nhé!');
+  ui.timeline.replaceChildren(...snapshot.questions.map((question,n)=>{const event=snapshot.timeline.find(e=>e.index===n+1);return el('li',{text:`${event?speakingTime(event.seconds):'Chưa nghe'} · Câu ${n+1}: ${question}`});}));
+  ui.resultInfo.textContent=`Mã lượt ${snapshot.code} · ${snapshot.date} · ${(blob.size/1024/1024).toFixed(1)} MB · ${blob.type.includes('mp4')?'MP4':'WebM'}`;
+  update((reason?reason+' ':'')+'Video đã sẵn sàng. Xem lại, quay lại nếu cần hoặc tải về máy.');
  }
  function failed(error){
-  if(disposed||error.name==='AbortError')return;clearTimer();playing=false;
-  if(phase==='recording'){reason=speakingError(error);phase='saving';media.stop();update(reason);}
-  else{phase=result?'review':'idle';update(speakingError(error));}
+  if(disposed||error.name==='AbortError')return;playing=false;
+  if(phase==='recording'){takeFailed=true;stop(speakingError(error));}
+  else{clearTimer();phase=result?'review':'idle';update(speakingError(error));}
  }
- const media=createSpeakingMedia(ui.live,{onRecorded:ended,onFailure:failed});
- async function listen(){
-  if(phase!=='recording'||playing||listens>=2)return;
-  const token=generation;playing=true;listens++;update('Đang đọc câu hỏi. Bạn nghe nhé…');
-  try{await media.playQuestion();if(!disposed&&token===generation&&phase==='recording')update('Đến lượt bạn! Trả lời bằng tiếng Trung rồi bấm Dừng quay.');}
-  catch(error){failed(error);}finally{if(token===generation){playing=false;update();}}
+ async function listen(index){
+  if(ui.questionButtons[index].button.disabled||phase!=='recording')return;
+  const token=generation;playing=true;current=index;counts[index]++;meta.index=index+1;meta.question=questions[index].text;
+  meta.timeline.push({index:index+1,seconds:Math.floor((performance.now()-started)/1000)});ui.heading.textContent='Đang nghe câu '+(index+1);update('Đang đọc câu '+(index+1)+'. Bạn nghe nhé…');
+  try{
+   await media.playQuestion(questions[index].text);
+   if(disposed||token!==generation||phase!=='recording')return;
+   heard.add(index);meta.heard_count=heard.size;ui.heading.textContent='Trả lời câu '+(index+1);
+   update(heard.size===questions.length?'Đến lượt bạn! Trả lời câu cuối rồi bấm Dừng quay.':'Đến lượt bạn! Trả lời bằng tiếng Trung rồi bấm nghe câu tiếp theo.');
+  }catch(error){failed(error);}finally{if(token===generation){playing=false;update();}}
  }
  function stop(message=''){
   if(phase!=='recording')return;reason=message;clearTimer();phase='saving';media.stop();update('Đang tạo video để tải về…');
@@ -52,36 +63,27 @@ export function mountSpeaking(host,{set,activities,items=[],profile}){
   if(busy()||disposed)return;
   if(media.ready){media.close();phase=result?'review':'idle';update('Camera và microphone đã tắt.');return;}
   phase='opening';update('Hãy cho phép camera và microphone trong trình duyệt.');
-  try{if(await media.open()){phase=result?'review':'idle';update('Camera đã sẵn sàng. Bấm Bắt đầu quay để nghe câu hỏi.');}}catch(error){failed(error);}
+  try{if(await media.open()){phase=result?'review':'idle';update('Camera đã sẵn sàng. Bấm Bắt đầu quay rồi nghe từng câu hỏi.');}}catch(error){failed(error);}
  };
- ui.record.onclick=async()=>{
-  if(!media.ready||busy()||disposed||phase==='complete')return;
-  const token=++generation;abort?.abort();abort=new AbortController();reason='';listens=0;playing=false;phase='loading';stopQuestionAudio();ui.resultVideo.pause();update('Đang chuẩn bị giọng đọc tiếng Trung…');
+ const start=async()=>{
+  if(busy()||disposed||!supported)return;const token=++generation;abort?.abort();abort=new AbortController();reason='';takeFailed=false;playing=false;
+  stopQuestionAudio();ui.resultVideo.pause();
   try{
-   await media.prepare(deck[index].text,abort.signal);if(disposed||token!==generation)return;
-   const meta={...speakingStamp(profile,set,index),question:deck[index].text};
-   started=performance.now();media.record(meta);phase='recording';ui.progress.value=0;ui.clock.textContent='00:00 / 00:30';update();
-   timer=setInterval(()=>{const seconds=Math.min(SPEAKING_SECONDS,Math.floor((performance.now()-started)/1000));ui.progress.value=seconds;ui.clock.textContent=`00:${String(seconds).padStart(2,'0')} / 00:30`;if(seconds>=SPEAKING_SECONDS)stop('Đã đủ 30 giây.');},100);
-   await listen();
+   if(!media.ready){phase='opening';update('Đang bật camera để quay lại toàn bộ bài…');if(!await media.open())return;}
+   if(disposed||token!==generation)return;phase='loading';update('Đang chuẩn bị âm thanh cho tất cả câu hỏi…');
+   await media.prepare(questions,abort.signal);if(disposed||token!==generation)return;
+   meta={...speakingStamp(profile,set,0),index:0,total:questions.length,question:'',questions:questions.map(q=>q.text),heard_count:0,timeline:[],duration_seconds:settings.duration_seconds};
+   started=performance.now();media.record(meta);counts=questions.map(()=>0);heard=new Set();current=-1;phase='recording';ui.progress.value=0;ui.clock.textContent='Còn '+speakingTime(settings.duration_seconds);ui.heading.textContent='Bấm nghe câu hỏi để bắt đầu';
+   update(settings.order==='free'?'Video đang quay. Chọn câu muốn nghe rồi trả lời bằng tiếng Trung.':'Video đang quay. Bấm Nghe câu 1 rồi trả lời bằng tiếng Trung.');
+   timer=setInterval(()=>{const seconds=Math.min(settings.duration_seconds,Math.floor((performance.now()-started)/1000));ui.progress.value=seconds;ui.clock.textContent='Còn '+speakingTime(settings.duration_seconds-seconds);if(seconds>=settings.duration_seconds)stop(`Đã đủ ${settings.duration_seconds} giây.`);},100);
   }catch(error){failed(error);}
  };
- ui.stop.onclick=()=>stop();ui.listen.onclick=listen;
- ui.download.onclick=event=>{
-  if(busy()||!result){event.preventDefault();return;}
-  downloaded=true;update('Đã yêu cầu tải video. Kiểm tra tệp trong máy rồi gửi qua Zalo cho giáo viên.');
- };
- function clearResult(){if(result)URL.revokeObjectURL(result.url);result=null;downloaded=false;ui.resultVideo.pause();ui.resultVideo.removeAttribute('src');ui.resultVideo.load();ui.result.hidden=true;}
- ui.next.onclick=()=>{
-  if(!result||!downloaded||busy())return;
-  if(phase==='complete'){clearResult();deck=shuffledQuestions(source);index=0;phase='idle';ui.heading.textContent='Đến lượt bạn nói';}
-  else if(index===deck.length-1){phase='complete';media.close();ui.heading.textContent=`Bạn đã luyện xong ${deck.length} câu!`;update('Bạn đã hoàn thành lượt luyện. Hãy gửi các video đã tải qua Zalo.');return;}
-  else{index++;clearResult();phase='idle';}
-  listens=0;ui.progress.value=0;ui.clock.textContent='00:00 / 00:30';ui.counter.textContent=`Câu ${index+1} / ${deck.length}`;update(media.ready?'Bấm Bắt đầu quay để nghe câu tiếp theo.':'Bật camera để bắt đầu lượt luyện.');ui.record.focus({preventScroll:true});
- };
+ ui.record.onclick=start;ui.retake.onclick=start;ui.stop.onclick=()=>stop();
+ ui.questionButtons.forEach((row,index)=>{row.button.onclick=()=>listen(index);});
+ ui.download.onclick=event=>{if(busy()||!result){event.preventDefault();return;}downloaded=true;update('Đã yêu cầu tải video. Kiểm tra tệp trong máy rồi gửi qua Zalo cho giáo viên.');};
  const unload=event=>{if(phase==='recording'||result&&!downloaded){event.preventDefault();event.returnValue='';}};
  const visibility=()=>{
-  if(!document.hidden||disposed)return;
-  generation++;abort?.abort();ui.resultVideo.pause();
+  if(!document.hidden||disposed)return;generation++;abort?.abort();ui.resultVideo.pause();
   if(phase==='recording')stop('Bản ghi dừng vì bạn rời màn hình.');
   else if(phase==='loading'||phase==='opening'){phase=result?'review':'idle';update('Đã dừng chuẩn bị. Bật lại camera để tiếp tục.');}
   media.close();update();
@@ -89,6 +91,5 @@ export function mountSpeaking(host,{set,activities,items=[],profile}){
  function dispose(){if(disposed)return;disposed=true;generation++;abort?.abort();clearTimer();media.dispose();ui.resultVideo.pause();if(result)URL.revokeObjectURL(result.url);observer.disconnect();window.removeEventListener('beforeunload',unload);window.removeEventListener('pagehide',dispose);document.removeEventListener('visibilitychange',visibility);}
  const observer=new MutationObserver(()=>{if(!ui.shell.isConnected)dispose();});observer.observe(document.documentElement,{childList:true,subtree:true});
  window.addEventListener('beforeunload',unload);window.addEventListener('pagehide',dispose);document.addEventListener('visibilitychange',visibility);
- update(supported?undefined:'Trình duyệt này chưa hỗ trợ quay video. Hãy mở website HTTPS bằng Chrome hoặc Safari mới và cho phép camera, microphone.');
- return dispose;
+ update(supported?undefined:'Trình duyệt này chưa hỗ trợ quay video. Hãy mở website HTTPS bằng Chrome hoặc Safari mới và cho phép camera, microphone.');return dispose;
 }

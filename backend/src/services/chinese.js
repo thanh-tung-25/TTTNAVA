@@ -2,7 +2,7 @@ import { randomUUID, createHash, randomInt } from 'node:crypto';
 import { z } from 'zod';
 import { query, withTransaction, dialectSql } from '../config/db.js';
 import { badRequest, AppError, notFound } from '../utils/errors.js';
-import { json, one, getSet, getItems, publicItem, catalog } from '../repositories/chinese.js';
+import { json, one, getSet, getItems, publicItem, catalog,assignedSpeakingItems } from '../repositories/chinese.js';
 import { parse, lessonSchema, setSchema, testSchema, issues, normalizeAnswer } from '../validators/chinese.js';
 import { extractChinese } from './chinese-import.js';
 import { archiveFile, readArchive, DOCX_MIME } from './private-storage.js';
@@ -41,7 +41,8 @@ export async function detail(id,admin,user) {
  const set=await getSet(id,admin), items=await getItems(id);
  const progress=admin?[]:await query('SELECT * FROM chinese_progress WHERE student_id=? AND set_id=?',[user,id]);
  const activities=admin?null:await publishedActivitiesForSet(id);
- return {set,activities,items:admin?items:items.map(publicItem),issues:admin?issues(items):undefined,progress:progress[0]||null};
+ const assigned=new Set(assignedSpeakingItems(items).map(i=>i.id));
+ return {set,activities,items:admin?items:items.filter(i=>i.data.practice!=='speaking'||assigned.has(i.id)).map(publicItem),issues:admin?issues(items):undefined,progress:progress[0]||null};
 }
 // The learner explicitly flips a study card. Attempt APIs continue to hide uncommitted answers.
 export async function studyCard(setId,itemId) {
@@ -82,6 +83,7 @@ export async function saveSet(id,body) {
   for(const i of d.items) if(i.id && !allowed.has(i.id)) throw badRequest('Mục nội dung không thuộc bộ đang mở');
   if(new Set(d.items.filter(i=>i.id).map(i=>i.id)).size!==d.items.filter(i=>i.id).length) throw badRequest('ID nội dung trùng');
   await run('UPDATE chinese_sets SET title=?,status=?,processing_status=? WHERE id=?',[d.title,d.status,errors.length?'review':'ready',id]);
+  if(d.speaking_settings!==undefined)await run('UPDATE chinese_sets SET speaking_settings=? WHERE id=?',[d.speaking_settings===null?null:JSON.stringify(d.speaking_settings),id]);
   await run('UPDATE chinese_items SET active=0 WHERE set_id=?',[id]);
   for(const [p,i] of d.items.entries()) await run(dialectSql(`INSERT INTO chinese_items (id,set_id,kind,position,data) VALUES (?,?,?,?,?) ON DUPLICATE KEY UPDATE kind=VALUES(kind),position=VALUES(position),data=VALUES(data),active=1`,
    `INSERT INTO chinese_items(id,set_id,kind,position,data) VALUES (?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET kind=EXCLUDED.kind,position=EXCLUDED.position,data=EXCLUDED.data,active=1`),[i.id||randomUUID(),id,i.kind,p+1,JSON.stringify(i.data)]);

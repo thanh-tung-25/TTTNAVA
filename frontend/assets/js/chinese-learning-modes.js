@@ -10,8 +10,8 @@ export const chineseModes=[
 export const chineseMode=key=>chineseModes.find(m=>m.key===key);
 export function modeCounts(set,counts=[]){
  const rows=counts.filter(c=>c.set_id===set.id),count=kind=>Number(rows.find(c=>c.kind===kind)?.total)||0;
- const spoken=Number(set.speaking_count)||Number(rows.find(c=>c.kind==='dialogue')?.speaking_total)||0;
- return {cards:count('vocabulary')+count('question'),words:count('vocabulary'),listen:count('vocabulary'),quiz:count('question'),read:count('reading')+count('grammar')+count('dialogue')-spoken,apply:Number(set.activity_count)||0,speak:spoken};
+ const spoken=Number(rows.find(c=>c.kind==='dialogue')?.speaking_total)||Number(set.speaking_count)||0;
+ return {cards:count('vocabulary')+count('question'),words:count('vocabulary'),listen:count('vocabulary'),quiz:count('question'),read:count('reading')+count('grammar')+count('dialogue')-spoken,apply:Number(set.activity_count)||0,speak:Number(set.speaking_count)||spoken};
 }
 export function itemMode(item){
  if(item.kind==='dialogue'&&item.data?.practice==='speaking')return 'speak';

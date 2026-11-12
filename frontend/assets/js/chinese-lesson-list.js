@@ -23,6 +23,7 @@ export function renderChineseLessons({catalog,params,quiz,role='student',manageT
     const totals=modeCounts(s,catalog.counts);
     for(const m of chineseModes){const entry=link(m.label,m.key==='apply'?{activities:lesson.id}:{lesson:lesson.id,set:s.id,mode:m.key},'admin');if(['cards','quiz'].includes(m.key))entry.classList.add('btn-primary');entry.title=totals[m.key]?`Sửa ${totals[m.key]} nội dung · ${m.label}`:'Thêm nội dung · '+m.label;actions.append(entry);}
     actions.append(link('Giao tiếp với AI',{view:'ai-chat',level:lesson.level_id,lesson:lesson.id},role));
+    if(lesson.level_id===1)actions.append(link('Phố tiếng Trung',{view:'street',level:lesson.level_id,lesson:lesson.id},role));
     return el('div',{class:'learn-document admin-document-card'},[el('strong',{text:s.title}),el('p',{class:'muted',text:[words?words+' từ':'',questions?questions+' câu hỏi':'',s.speaking_count?s.speaking_count+' câu luyện nói':''].filter(Boolean).join(' · ')||'Chưa có nội dung'}),el('span',{class:'admin-content-status '+(s.status==='published'&&lesson.status==='published'?'published':''),text:s.status==='published'&&lesson.status==='published'?'Đã cho học sinh xem':s.status==='published'?'Đã duyệt · bài học chưa mở':'Bản nháp'}),actions]);
    }
    if(words||questions){const start=link('Thẻ lật',{set:s.id,mode:'cards'});start.classList.add('btn-primary');actions.append(start);}
@@ -32,6 +33,7 @@ export function renderChineseLessons({catalog,params,quiz,role='student',manageT
    if(s.activity_count>0)actions.append(link('Luyện vận dụng',{set:s.id,mode:'apply'}));
    if(s.activity_count>0||s.speaking_count>0)actions.append(link('Luyện nói',{set:s.id,mode:'speak'}));
    actions.append(link('Giao tiếp với AI',{view:'ai-chat',level:lesson.level_id,lesson:lesson.id}));
+   if(lesson.level_id===1)actions.append(link('Phố tiếng Trung',{view:'street',level:lesson.level_id,lesson:lesson.id}));
    const progress=percentage(s.id,catalog),meter=el('div',{class:'lesson-progress',role:'progressbar','aria-label':'Tiến độ '+s.title,'aria-valuenow':progress,'aria-valuemin':0,'aria-valuemax':100},[el('span')]);meter.firstElementChild.style.width=progress+'%';
    return el('div',{class:'learn-document'},[el('div',{},[el('strong',{text:s.title}),el('p',{class:'muted',text:[words?words+' từ':'',questions?questions+' câu hỏi':'',s.speaking_count?s.speaking_count+' câu luyện nói':'',words||questions||reads?progress+'% đã học':''].filter(Boolean).join(' · ')}),...(words||questions||reads?[meter]:[]),...(questions>0&&questions<20?[el('p',{class:'muted',text:'Chưa đủ 20 câu để làm quiz; con có thể học thẻ lật.'})]:[])]),actions]);
   }):[el('p',{class:'muted',text:admin?'Chọn một phần bên dưới để thêm nội dung đầu tiên.':'Chưa có nội dung.'}),...(admin?[el('div',{class:'learn-actions'},chineseModes.map(m=>link(m.label,m.key==='apply'?{activities:lesson.id}:{lesson:lesson.id,mode:m.key},'admin')))]:[])]);

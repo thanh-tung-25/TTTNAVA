@@ -1,0 +1,12 @@
+import {Router} from 'express';
+import {requireAdmin,requireStudent} from '../middlewares/auth.js';
+import {rateLimit} from '../middlewares/rate-limit.js';
+import {asyncHandler} from '../utils/errors.js';
+import {streetCatalog,streetLesson,saveStreetLesson,answerStreet,streetResults} from '../services/chinese-street.js';
+const router=Router(),handle=fn=>asyncHandler(async(req,res)=>{res.set('Cache-Control','private, no-store');res.json({data:await fn(req)});});
+router.get('/street',handle(r=>streetCatalog(r.user,r.query.level||1)));
+router.get('/street/results',requireAdmin,handle(r=>streetResults(r.user,r.query.level||1)));
+router.get('/street/lessons/:id',handle(r=>streetLesson(r.user,r.params.id)));
+router.put('/street/lessons/:id',requireAdmin,handle(r=>saveStreetLesson(r.user,r.params.id,r.body)));
+router.post('/street/lessons/:id/missions/:mission/answers',requireStudent,rateLimit({windowMs:60000,max:60,keyPrefix:'chinese-street-answer'}),handle(r=>answerStreet(r.user,r.params.id,r.params.mission,r.body)));
+export default router;

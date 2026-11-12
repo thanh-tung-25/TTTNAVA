@@ -15,11 +15,13 @@ import {adminActivities,saveActivities,validateActivities} from '../services/chi
 import {quizPlan} from '../services/chinese-quiz-plan.js';
 import speakingAssessmentRouter from './chinese-speaking-assessment.js';
 import aiChatRouter from './chinese-ai-chat.js';
+import streetRouter from './chinese-street.js';
 const router=Router();
 router.use(authenticateToken,requirePlayer);
 router.use(chineseCourseGuard);
 router.use(speakingAssessmentRouter);
 router.use(aiChatRouter);
+router.use(streetRouter);
 router.get('/catalog',c.catalog);
 router.get('/sets/:id',c.detail);
 router.get('/sets/:id/quiz-plan',requireStudent,c.handler(r=>quizPlan(r.user.id,r.params.id)));

@@ -1,4 +1,5 @@
 import {request,boot,el,card,action,link,input,message,applyPreferences,onboarding} from './experience-ui.js';
+import {companionVisual} from './companion-visual.js';
 const root=document.getElementById('experience-root');let profile,releaseEditor=async()=>{};
 async function connections(){
  const rows=await request('/guardian/links'),box=card('Liên kết phụ huynh',el('p',{text:'Tạo mã ghép để đưa cho phụ huynh có Gmail đã xác minh. Phụ huynh gửi yêu cầu, bạn kiểm tra và xác nhận trước khi họ xem báo cáo.'}));
@@ -36,9 +37,10 @@ async function galleryEditor(){
 }
 async function main(){
  await releaseEditor();profile||=await boot('personal');await request('/rewards/sync',{method:'POST'});const [rewards,prefs]=await Promise.all([request('/rewards'),request('/preferences')]);applyPreferences(prefs);message('');root.replaceChildren();
- root.append(el('section',{class:'experience-hero'},[el('div',{},[el('h2',{text:rewards.companion.name}),el('p',{text:'Bạn đồng hành cấp '+rewards.companion.level}),el('strong',{id:'diamond-total',text:rewards.wallet.total+' kim cương đang có'})]),el('img',{src:'/assets/images/mascot-'+rewards.companion.animal+'.svg',alt:rewards.companion.name})]));
- const companion=el('select',{class:'select','aria-label':'Bạn đồng hành'},[['owl','Cú thông thái'],['panda','Gấu trúc'],['bunny','Thỏ nhỏ']].map(([value,text])=>el('option',{value,text})));companion.value=prefs.companion;
- const name=input('Tên bạn đồng hành',{value:prefs.companion_name,maxlength:40}),minutes=el('select',{class:'select','aria-label':'Thời lượng buổi học'},[5,10,15].map(n=>el('option',{value:n,text:n+' phút'})));minutes.value=String(prefs.minutes);
+ const friend=companionVisual(rewards.companion.animal,rewards.companion.name);
+ root.append(el('section',{class:'experience-hero'},[el('div',{},[el('h2',{text:friend.name}),el('p',{text:'Bạn đồng hành cấp '+rewards.companion.level}),el('strong',{id:'diamond-total',text:rewards.wallet.total+' kim cương đang có'})]),el('img',{src:friend.image,alt:friend.name})]));
+ const companion=el('select',{class:'select','aria-label':'Bạn đồng hành'},[['owl','Sư tử thông thái'],['panda','Gấu trúc'],['bunny','Thỏ nhỏ']].map(([value,text])=>el('option',{value,text})));companion.value=prefs.companion;
+ const name=input('Tên bạn đồng hành',{value:companionVisual(prefs.companion,prefs.companion_name).name,maxlength:40}),minutes=el('select',{class:'select','aria-label':'Thời lượng buổi học'},[5,10,15].map(n=>el('option',{value:n,text:n+' phút'})));minutes.value=String(prefs.minutes);
  const font=el('select',{class:'select','aria-label':'Cỡ chữ'},[el('option',{value:'normal',text:'Chữ tiêu chuẩn'}),el('option',{value:'large',text:'Chữ lớn'})]);font.value=prefs.font_scale;
  const rate=el('select',{class:'select','aria-label':'Tốc độ đọc'},[.5,.7,.8,1,1.2,1.5].map(n=>el('option',{value:n,text:'Tốc độ đọc '+n+'×'})));rate.value=String(prefs.speech_rate);
  const effects=el('input',{type:'checkbox',id:'student-effects'});effects.checked=Boolean(Number(prefs.effects_enabled));

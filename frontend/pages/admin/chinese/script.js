@@ -22,7 +22,7 @@ async function progress(){
  const {progress:rows}=await request('/stats'),students=[...new Map(rows.map(r=>[r.student_id,r.display_name])).entries()];
  const filter=field('Học sinh','student','','text',[['','Tất cả học sinh'],...students]),list=el('div');
  const render=()=>{const id=filter.querySelector('select').value;const filtered=rows.filter(r=>!id||r.student_id===id);list.replaceChildren(table(['Học sinh','Cấp','Tài liệu','Đã học'],filtered.map(r=>[r.display_name,'HSK '+r.level_id,r.title,r.percent+'%'])));};
- root().append(el('header',{class:'admin-section-intro'},[el('img',{src:'/assets/images/mascot-owl.svg',width:76,height:84,alt:''}),el('div',{},[el('span',{class:'admin-mode-eyebrow',text:'ĐỒNG HÀNH CÙNG HỌC TRÒ'}),el('h2',{text:students.length+' học sinh · '+rows.length+' tài liệu đã học'}),el('p',{text:'Chọn học sinh để theo dõi tiến độ theo bài và cấp HSK.'})])]));
+ root().append(el('header',{class:'admin-section-intro'},[el('img',{src:'/assets/images/mascot-lion.svg',width:76,height:84,alt:''}),el('div',{},[el('span',{class:'admin-mode-eyebrow',text:'ĐỒNG HÀNH CÙNG HỌC TRÒ'}),el('h2',{text:students.length+' học sinh · '+rows.length+' tài liệu đã học'}),el('p',{text:'Chọn học sinh để theo dõi tiến độ theo bài và cấp HSK.'})])]));
  filter.onchange=render;root().append(card('Tiến độ theo tài liệu',[filter,list]));render();if(!rows.length)notice('Chưa có lượt học. Tiến độ sẽ xuất hiện khi học sinh bắt đầu học tài liệu.');
 }
 boot().catch(error);

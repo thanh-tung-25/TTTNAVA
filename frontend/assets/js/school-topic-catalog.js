@@ -4,7 +4,7 @@ import {animalPath} from './animal-path.js';
 function topicCard(topic,index,subjectId){
  const ready=topic.questionCount>=10;
  return `<article class="topic-item${ready?'':' topic-not-ready'}">
-  <div class="practice-topic-mascot" aria-hidden="true"><img src="/assets/images/mascot-${subjectId==='toan'?'owl':subjectId==='tieng-viet'?'bunny':'panda'}.svg" width="54" height="58" alt=""><span class="topic-index">${index+1}</span></div>
+  <div class="practice-topic-mascot" aria-hidden="true"><img src="/assets/images/mascot-${subjectId==='toan'?'lion':subjectId==='tieng-viet'?'bunny':'panda'}.svg" width="54" height="58" alt=""><span class="topic-index">${index+1}</span></div>
   <div class="practice-topic-info"><h3>${escapeHtml(topic.name)}</h3><p>${topic.questionCount} câu hỏi · Lớp ${topic.grade}${ready?'':' · Đang chuẩn bị thêm câu'}</p></div>
   <button class="btn btn-sm practice-topic-start" type="button" data-topic="${escapeHtml(topic.id)}" aria-label="${ready?'Học ngay':'Chưa đủ câu'}: ${escapeHtml(topic.name)}"${ready?'':' disabled'}>${ready?'Học ngay':'Chưa đủ câu'}</button>
  </article>`;

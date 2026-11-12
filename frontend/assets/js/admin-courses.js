@@ -35,7 +35,7 @@ function renderOrders(){
     try{await api('/api/v1/courses/admin/orders/'+o.id+'/review',{method:'POST',body:{decision,note:note.value.trim()||'Đã đối soát và xác nhận thanh toán.'}});notice.textContent='Đã xử lý yêu cầu.';await refresh();}catch(e){notice.textContent=e.message;actions.querySelectorAll('button').forEach(b=>b.disabled=false);}
    }}));
   }return box;
- }):[el('div',{class:'admin-order-empty'},[el('img',{src:'/assets/images/mascot-owl.svg',alt:'',width:90,height:98}),el('strong',{text:'Chưa có đăng ký cần duyệt'}),el('p',{text:'Khi học sinh gửi đăng ký, yêu cầu sẽ xuất hiện ở đây.'})])]));
+ }):[el('div',{class:'admin-order-empty'},[el('img',{src:'/assets/images/mascot-lion.svg',alt:'',width:90,height:98}),el('strong',{text:'Chưa có đăng ký cần duyệt'}),el('p',{text:'Khi học sinh gửi đăng ký, yêu cầu sẽ xuất hiện ở đây.'})])]));
 }
 async function refresh(){
  const [requests,enrollments,audit,catalog]=await Promise.all(['orders','enrollments','audit',...(canConfigure?['catalog']:[])].map(path=>api('/api/v1/courses/admin/'+path)));

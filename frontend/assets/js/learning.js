@@ -19,13 +19,13 @@ async function load() {
   const title = profile.course?.title || (chinese ? 'Tiếng Trung HSK '+profile.course.level : 'Lớp '+profile.grade);
   document.getElementById('learning-course').textContent = title;
   document.getElementById('learning-description').textContent = chinese ? 'Học từ mới, ôn thẻ và tự tin chinh phục tiếng Trung.' : secondary ? 'Toán, Ngữ văn và Tiếng Anh — khám phá bài học và luyện tập trong khối THCS.' : 'Toán, Tiếng Việt và Tiếng Anh — cùng khám phá từng bài học.';
-  document.getElementById('learning-mascot').src = '/assets/images/mascot-'+(chinese?'panda':'owl')+'.svg';
+  document.getElementById('learning-mascot').src = '/assets/images/mascot-'+(chinese?'panda':'lion')+'.svg';
   const subjects = chinese ? [
     {title:'Bài học HSK '+profile.course.level,text:'Khám phá bài học và học bằng thẻ lật.',href:'/pages/student/chinese/',animal:'panda',symbol:'文',tone:'learning-purple'},
     {title:'Sổ từ của con',text:'Ôn từ đã học, từ yêu thích và từ cần nhớ.',href:'/pages/student/chinese/?view=notebook',animal:'bunny',symbol:'Aa',tone:'learning-peach'},
-    {title:'Giao tiếp với AI',text:'Hệ thống đang nâng cấp.',href:'/pages/student/chinese/?view=ai-chat',animal:'owl',symbol:'AI',tone:'learning-mint',cta:'Xem tính năng →'},
+    {title:'Giao tiếp với AI',text:'Hệ thống đang nâng cấp.',href:'/pages/student/chinese/?view=ai-chat',animal:'lion',symbol:'AI',tone:'learning-mint',cta:'Xem tính năng →'},
   ] : [
-    {title:'Toán',text:'Khám phá con số, phép tính và hình học.',href:'/pages/student/practice/?subject=toan',animal:'owl',symbol:'＋',tone:'learning-purple'},
+    {title:'Toán',text:'Khám phá con số, phép tính và hình học.',href:'/pages/student/practice/?subject=toan',animal:'lion',symbol:'＋',tone:'learning-purple'},
     {title:'Tiếng Việt',text:'Cùng đọc hiểu, luyện từ và đặt câu.',href:'/pages/student/practice/?subject=tieng-viet',animal:'bunny',symbol:'Aa',tone:'learning-peach'},
     {title:'Tiếng Anh',text:'Học từ vựng và những mẫu câu mới.',href:'/pages/student/practice/?subject=tieng-anh',animal:'panda',symbol:'Abc',tone:'learning-mint'},
   ];

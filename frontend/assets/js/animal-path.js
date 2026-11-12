@@ -1,5 +1,5 @@
 import {el} from './api.js';
-const friends=[['Gấu trúc','Rừng trúc','panda','#e9f6ef','#3a8c74'],['Thỏ ngọc','Vườn hoa','bunny','#fff2e4','#b97849'],['Cú thông thái','Đồi sao','owl','#f0eafa','#8969b0']];
+const friends=[['Gấu trúc','Rừng trúc','panda','#e9f6ef','#3a8c74'],['Thỏ ngọc','Vườn hoa','bunny','#fff2e4','#b97849'],['Sư tử thông thái','Đồi sao','lion','#f0eafa','#8969b0']];
 export function animalPath(container,{selector=':scope > article',title='Cùng khám phá',hint='Chọn bài phù hợp với điều con đang học.',completed=()=>false}={}){
  if(!document.querySelector('link[data-student-design]')){const css=el('link',{rel:'stylesheet',href:'/assets/css/student-unified.css','data-student-design':'true'});document.head.append(css);}
  const cards=[...container.querySelectorAll(selector)];if(!cards.length)return;

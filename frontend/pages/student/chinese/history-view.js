@@ -10,7 +10,7 @@ function panel(title,animal,children) {
 export async function renderHistory(catalog) {
  const rows=await request('/history'),active=rows.filter(a=>!a.finished_at),done=rows.filter(a=>a.finished_at);
  const testLink=link('Bài kiểm tra của lớp',{view:'tests'});testLink.classList.add('history-tests-link');
- testLink.prepend(el('img',{src:'/assets/images/mascot-owl.svg',alt:'',width:42,height:46}));root().append(testLink);
+ testLink.prepend(el('img',{src:'/assets/images/mascot-lion.svg',alt:'',width:42,height:46}));root().append(testLink);
  const title=a=>catalog.sets.find(s=>s.id===a.set_id)?.lesson_title||'Bài kiểm tra Tiếng Trung';
  if(active.length)root().append(panel('Tiếp tục học','bunny',active.map(a=>{
   const resume=link('Tiếp tục',{attempt:a.id});resume.classList.add('btn-primary');

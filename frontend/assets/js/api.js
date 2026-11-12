@@ -4,7 +4,7 @@ export const AVATARS = [
   { key: 'tho', name: 'Thỏ trắng' },
   { key: 'gau', name: 'Gấu nâu' },
   { key: 'cao', name: 'Cáo cam' },
-  { key: 'cu', name: 'Cú mèo' },
+  { key: 'cu', name: 'Sư tử' },
   { key: 'ech', name: 'Ếch xanh' },
   { key: 'ga', name: 'Gà con' },
   { key: 'voi', name: 'Voi xanh' },
@@ -14,6 +14,7 @@ export const AVATARS = [
 ];
 
 export function avatarUrl(key) {
+  if(key==='cu'||key==='lion')return '/assets/avatars/lion.svg';
   const known = AVATARS.some((avatar) => avatar.key === key);
   return `/assets/avatars/${known ? key : 'meo'}.svg`;
 }

@@ -1,10 +1,10 @@
 export const chineseModes=[
  {key:'cards',label:'Thẻ lật',destination:'general',image:'panda',description:'Từ vựng và câu hỏi để lật thẻ ôn tập.'},
  {key:'words',label:'Từ mới',destination:'vocabulary',image:'bunny',description:'Chữ Hán, pinyin và nghĩa trong bảng từ mới.'},
- {key:'listen',label:'Luyện nghe',destination:'vocabulary',image:'owl',description:'Dùng từ mới của bài để nghe và chọn nghĩa.'},
+ {key:'listen',label:'Luyện nghe',destination:'vocabulary',image:'lion',description:'Dùng từ mới của bài để nghe và chọn nghĩa.'},
  {key:'quiz',label:'Quiz 20 câu',destination:'question',image:'panda',description:'Câu hỏi có lựa chọn, đáp án và lời giải.'},
  {key:'read',label:'Bài đọc',destination:'reading',image:'bunny',description:'Bài đọc, ngữ pháp và hội thoại để đọc hiểu.'},
- {key:'apply',label:'Luyện vận dụng',destination:null,image:'owl',description:'Xếp câu, sửa lỗi, điền từ và hội thoại.'},
+ {key:'apply',label:'Luyện vận dụng',destination:null,image:'lion',description:'Xếp câu, sửa lỗi, điền từ và hội thoại.'},
  {key:'speak',label:'Luyện nói',destination:'speaking',image:'panda',description:'Nghe câu hỏi tiếng Trung, ghi âm trả lời và gửi AI chấm bài.'}
 ];
 export const chineseMode=key=>chineseModes.find(m=>m.key===key);

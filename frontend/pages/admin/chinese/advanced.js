@@ -3,7 +3,7 @@ import {request,el,root,link,card,field,statuses,formSubmit,error,notice} from '
 import {adminAction} from '/assets/js/chinese-admin-ui.js';
 const params=new URLSearchParams(location.search);let data;
 const adminLink=(text,p)=>link(text,p,'admin');
-const heading=(title,description,animal='owl')=>el('header',{class:'admin-section-intro'},[el('img',{src:'/assets/images/mascot-'+animal+'.svg',width:78,height:86,alt:''}),el('div',{},[el('span',{class:'admin-mode-eyebrow',text:'QUẢN TRỊ TIẾNG TRUNG'}),el('h2',{text:title}),el('p',{text:description})])]);
+const heading=(title,description,animal='lion')=>el('header',{class:'admin-section-intro'},[el('img',{src:'/assets/images/mascot-'+animal+'.svg',width:78,height:86,alt:''}),el('div',{},[el('span',{class:'admin-mode-eyebrow',text:'QUẢN TRỊ TIẾNG TRUNG'}),el('h2',{text:title}),el('p',{text:description})])]);
 async function boot(){
  await initPage('admin','chinese');data=await request('/catalog');notice('');
  if(params.get('view')==='levels')return levels();return tests();

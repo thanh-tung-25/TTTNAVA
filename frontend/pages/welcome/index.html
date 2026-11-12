@@ -3,57 +3,76 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TTNAVA — Mỗi ngày học, một điều hay</title>
-  <meta name="description" content="Cùng TTNAVA khám phá Toán, Tiếng Việt, Tiếng Anh và Tiếng Trung. Luyện tập, thử sức và tiến bộ mỗi ngày.">
+  <meta name="theme-color" content="#fbf8ff">
+  <title>TTNAVA — Mỗi ngày học, một thế giới mới</title>
+  <meta name="description" content="Khám phá Tiểu học, THCS và Tiếng Trung cùng TTNAVA. Học theo bài, luyện nghe nói, nhận phản hồi và theo dõi tiến bộ. Học thử 5 câu không cần tài khoản.">
   <link rel="icon" href="/assets/images/ttnava-logo.png" type="image/png">
   <link rel="stylesheet" href="/assets/css/base.css">
   <link rel="stylesheet" href="/assets/css/welcome.css">
 </head>
-<body>
+<body class="welcome-page">
   <a class="skip-link" href="#main">Đến nội dung chính</a>
   <header class="site-header wrap">
-    <a class="brand" href="/" aria-label="TTNAVA — Trang chủ"><img src="/assets/images/ttnava-logo.png" width="48" height="48" alt=""><span>TTNAVA<span class="brand-note">KHU VƯỜN TRI THỨC</span></span></a>
-    <nav aria-label="Điều hướng chính"><a href="#kham-pha">Khám phá</a><a href="#hanh-trinh">Cách học</a><a class="button small" href="/pages/login/">Đăng nhập <span aria-hidden="true">↗</span></a></nav>
+    <a class="brand" href="/" aria-label="TTNAVA — Trang chủ"><img src="/assets/images/ttnava-logo.png" width="44" height="44" alt=""><span>TTNAVA</span></a>
+    <nav class="site-nav" id="site-navigation" aria-label="Điều hướng chính"><a href="#chuong-trinh">Chương trình</a><a href="#trai-nghiem">Trải nghiệm</a><a href="#bat-dau">Bắt đầu</a></nav>
+    <div class="header-actions"><a class="button button-outline button-small" href="/pages/login/">Đăng nhập <span aria-hidden="true">↗</span></a><button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span></button></div>
   </header>
   <main id="main">
-    <section class="hero wrap">
+    <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="kicker"><span></span> NIỀM VUI HỌC TẬP BẮT ĐẦU TỪ ĐÂY</p>
-        <h1>Mỗi ngày học,<br>một điều <em>hay<span class="spark" aria-hidden="true">✳</span></em></h1>
-        <p class="intro">Một chút tò mò, một chút thử thách, thật nhiều niềm vui. Cùng TTNAVA khám phá kiến thức và tự tin lớn lên mỗi ngày!</p>
-        <div class="hero-actions"><a class="button" href="/pages/login/">Vào học thôi! <span aria-hidden="true">↗</span></a><a class="text-link" href="/pages/register/">Đăng ký tài khoản <span aria-hidden="true">↗</span></a></div>
-        <p><a class="text-link" href="/pages/demo/">Học thử 5 câu miễn phí, không cần tài khoản ↗</a></p><div class="hero-foot"><span class="mini-avatars" aria-hidden="true"><img src="/assets/avatars/tho.svg" alt=""><img src="/assets/avatars/gau.svg" alt=""><img src="/assets/avatars/meo.svg" alt=""></span><p>Học theo nhịp của con.<br><strong>Tiến bộ theo cách của con.</strong></p></div>
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> MỘT KHÔNG GIAN HỌC TẬP MỚI</p>
+        <h1 id="hero-title">Mỗi ngày học.<br><span>Một thế giới mới.</span></h1>
+        <p class="hero-description">Từ bài học đầu tiên đến những điều lớn hơn.<br>Khám phá, luyện tập và tiến bộ cùng TTNAVA.</p>
+        <div class="hero-actions"><a class="button button-primary" href="/pages/login/">Bắt đầu học <span aria-hidden="true">↗</span></a><a class="button button-white" href="/pages/demo/"><span class="play-icon" aria-hidden="true">▷</span> Học thử</a></div>
+        <p class="hero-note"><span aria-hidden="true">✓</span> Thử 5 câu · Không cần tài khoản</p>
+        <div class="hero-programs" aria-label="Các chương trình"><span>Tiểu học</span><span>THCS</span><span>Tiếng Trung</span></div>
       </div>
-      <div class="hero-art" role="img" aria-label="Bạn cú trong khu vườn kiến thức với những cuốn sách và các môn học">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <span class="art-star star-one">✦</span><span class="art-star star-two">✳</span><span class="art-dot"></span>
-        <div class="floating label-math"><span>＋</span> Toán học <b>× ÷</b></div>
-        <div class="floating label-english"><span>Aa</span> Hello, world!</div>
-        <div class="floating label-chinese"><span>你好</span> Xin chào!</div>
-        <div class="owl-circle"><img class="hero-owl" src="/assets/avatars/cu.svg" alt=""></div>
-        <div class="book book-one"><span>MỞ TRANG SÁCH</span><b>Mở thế giới</b><i>✦</i></div>
-        <div class="book book-two">Một điều hay mỗi ngày <span>✿</span></div>
-        <div class="floating encouragement"><span>✓</span><div>Thêm một điều mới!<small>Con làm tốt lắm.</small></div></div>
-        <span class="art-caption">TÒ MÒ HÔM NAY · TỰ TIN NGÀY MAI</span>
+      <div class="hero-art">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <img class="hero-illustration" src="/assets/images/welcome/hero-3d-960.webp" srcset="/assets/images/welcome/hero-3d-480.webp 480w, /assets/images/welcome/hero-3d-960.webp 960w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 48vw, 580px" width="960" height="960" fetchpriority="high" alt="Sư tử nhỏ đeo kính bên những cuốn sách, các hình khối và lời chào tiếng Trung">
+        <div class="floating-note note-discover"><span class="note-icon" aria-hidden="true">✦</span><div>Thêm một điều mới<small>Mỗi ngày, một bước tiến.</small></div></div>
+        <div class="floating-note note-lesson"><span class="lesson-check" aria-hidden="true">✓</span> Học theo nhịp của bạn</div>
+        <span class="hero-caption">TÒ MÒ HÔM NAY. TỰ TIN NGÀY MAI.</span>
       </div>
     </section>
-    <div class="subject-strip"><div class="wrap"><span>Những điều hay đang chờ con</span><b>Toán học <i>✦</i></b><b>Tiếng Việt <i>✦</i></b><b>Tiếng Anh <i>✦</i></b><b>Tiếng Trung <i>✦</i></b></div></div>
-    <section class="explore wrap section" id="kham-pha">
-      <div class="section-heading"><div><p class="kicker">HỌC MÀ CHƠI, CHƠI MÀ HỌC</p><h2>Một khu vườn.<br>Thật nhiều cách khám phá.</h2></div><p>Mỗi lần ghé thăm là một cơ hội để hiểu thêm,<br>thử sức và vui với những tiến bộ nhỏ.</p></div>
-      <div class="feature-grid">
-        <a class="feature practice" href="/pages/login/"><span class="feature-number">01 / LUYỆN TẬP</span><div class="feature-art" aria-hidden="true">✎<span>✓</span></div><h3>Hiểu bài từng chút một</h3><p>Luyện tập theo chủ đề, xem lời giải và tìm ra điều hay sau mỗi câu hỏi.</p><span class="feature-link">Cùng luyện tập <b>↗</b></span></a>
-        <a class="feature exam" href="/pages/login/"><span class="feature-number">02 / THI THỬ</span><div class="feature-art" aria-hidden="true">◷<span>★</span></div><h3>Thử sức, thêm tự tin</h3><p>Chinh phục bài thi có giới hạn thời gian và nhìn lại những gì mình đã học.</p><span class="feature-link">Sẵn sàng thử sức <b>↗</b></span></a>
-        <a class="feature challenge" href="/pages/login/"><span class="feature-number">03 / THÁCH ĐẤU</span><div class="feature-art" aria-hidden="true">⚑<span>ϟ</span></div><h3>Có bạn, vui gấp đôi</h3><p>Thách đấu cùng Robot hoặc bạn bè, tích lũy kim cương và cùng nhau tiến bộ.</p><span class="feature-link">Gặp bạn trong lớp <b>↗</b></span></a>
+    <section class="programs wrap section" id="chuong-trinh" aria-labelledby="programs-title">
+      <div class="section-heading"><div><p class="eyebrow">MỖI NGƯỜI, MỘT HÀNH TRÌNH</p><h2 id="programs-title">Chọn thế giới<br>bạn muốn khám phá.</h2></div><p>Đúng bài học.<br>Vừa nhịp tiến bộ.</p></div>
+      <div class="program-grid">
+        <a class="program-card program-primary" href="/pages/student/courses/?program=primary">
+          <div class="program-art"><span class="program-level">LỚP 1–5</span><img src="/assets/images/welcome/primary-3d.webp" width="700" height="700" loading="lazy" decoding="async" alt="Sách mở, bút chì và dấu cộng được tạo hình 3D"></div>
+          <div class="program-copy"><span class="program-index">01</span><h3>Tiểu học</h3><p>Toán · Tiếng Việt · Tiếng Anh</p><span class="program-link">Khám phá chương trình <span aria-hidden="true">↗</span></span></div>
+        </a>
+        <a class="program-card program-secondary" href="/pages/student/courses/?program=secondary">
+          <div class="program-art"><span class="program-level">LỚP 6–9</span><img src="/assets/images/welcome/secondary-3d.webp" width="700" height="700" loading="lazy" decoding="async" alt="Chồng sách, thước và mô hình hình học 3D màu xanh bạc hà"></div>
+          <div class="program-copy"><span class="program-index">02</span><h3>THCS</h3><p>Toán · Ngữ văn · Tiếng Anh</p><span class="program-link">Khám phá chương trình <span aria-hidden="true">↗</span></span></div>
+        </a>
+        <a class="program-card program-chinese" href="/pages/student/courses/?program=chinese">
+          <div class="program-art"><span class="program-level">TIẾNG TRUNG · HSK</span><img src="/assets/images/welcome/chinese-3d.webp" width="700" height="700" loading="lazy" decoding="async" alt="Gấu trúc 3D cùng lời chào 你好 và micro màu tím"></div>
+          <div class="program-copy"><span class="program-index">03</span><h3>Tiếng Trung</h3><p>Từ mới · Luyện nghe · Luyện nói</p><span class="program-link">Khám phá chương trình <span aria-hidden="true">↗</span></span></div>
+        </a>
       </div>
     </section>
-    <section class="try-section wrap" aria-labelledby="try-heading">
-      <div><p class="kicker">MỘT CHÚT KHỞI ĐỘNG</p><h2 id="try-heading">Nhà thám hiểm nhỏ,<br>thử một câu nhé?</h2><p>Không cần điểm số. Cứ tò mò và thử sức thôi!</p><img src="/assets/avatars/tho.svg" alt="Bạn thỏ đồng hành" width="100" height="100" loading="lazy"></div>
-      <div class="quiz"><span class="quiz-tag">TOÁN HỌC · CÂU HỎI MINH HỌA</span><h3>Con có 3 quả táo, được tặng thêm 2 quả.<br>Con có tất cả bao nhiêu quả táo?</h3><div class="apples" aria-hidden="true">🍎 🍎 🍎 <span>+</span> 🍎 🍎</div><div class="answers" role="group" aria-label="Chọn số quả táo"><button type="button" data-answer="4">4 quả</button><button type="button" data-answer="5">5 quả</button><button type="button" data-answer="6">6 quả</button></div><p id="quiz-feedback" role="status" aria-live="polite">Chọn đáp án con nghĩ là đúng nhé.</p></div>
+    <section class="experience wrap section" id="trai-nghiem" aria-labelledby="experience-title">
+      <div class="section-heading"><div><p class="eyebrow">KHÔNG CHỈ LÀ NHỮNG CÂU HỎI</p><h2 id="experience-title">Chạm vào bài học.<br>Nhìn thấy tiến bộ.</h2></div><a class="section-link" href="/pages/demo/">Tự mình trải nghiệm <span aria-hidden="true">↗</span></a></div>
+      <div class="feature-bento">
+        <article class="feature-card feature-language">
+          <div class="feature-copy"><span class="feature-tag">HỌC TIẾNG TRUNG</span><h3>Nghe. Nói.<br>Tự tin hơn mỗi ngày.</h3><p>Ghi âm trả lời. AI góp ý.<br>Giáo viên theo dõi kết quả.</p><span class="criteria-note">Đúng ý · Từ & ngữ pháp</span></div>
+          <div class="lesson-preview" aria-label="Thẻ từ minh họa có thể lật">
+            <div class="preview-top"><span class="preview-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>XEM TRƯỚC · THẺ TỪ</span><span class="preview-badge">HSK 1</span></div>
+            <button class="word-flip" type="button" aria-label="Lật thẻ từ 你好" aria-pressed="false"><span class="word-rotator"><span class="word-face word-front"><span lang="zh-CN">你好</span><small>Chạm để khám phá</small></span><span class="word-face word-back" aria-hidden="true"><strong>Xin chào</strong><span lang="zh-Latn">Nǐ hǎo</span><small>Một lời chào, một khởi đầu.</small></span></span></button>
+            <div class="preview-bottom"><span>Thẻ từ theo bài</span><span aria-hidden="true">↻ Lật thẻ</span></div><p id="word-feedback" class="sr-only" role="status" aria-live="polite"></p>
+          </div><span class="language-decoration" aria-hidden="true">✦</span>
+        </article>
+        <article class="feature-card feature-progress"><div class="feature-copy"><span class="feature-tag">THEO DÕI TIẾN BỘ</span><h3>Thấy rõ<br>mỗi bước tiến.</h3><p>Lịch ôn, kết quả và<br>báo cáo học tập.</p></div><div class="progress-sculpture" aria-hidden="true"><span class="progress-column column-one"></span><span class="progress-column column-two"></span><span class="progress-column column-three"></span><span class="progress-star">✦</span><span class="progress-orbit"></span></div></article>
+        <article class="feature-card feature-teacher"><div class="feature-copy"><span class="feature-tag">GIÁO VIÊN ĐỒNG HÀNH</span><h3>Luôn có người<br>đồng hành.</h3><p>Nhận bài được giao và<br>phản hồi từ giáo viên.</p></div><div class="assignment-sculpture" aria-hidden="true"><span class="paper-back"></span><span class="paper-front"><i></i><i></i><i></i></span><span class="paper-check">✓</span></div></article>
+      </div>
     </section>
-    <section class="section journey wrap" id="hanh-trinh"><p class="kicker">HÀNH TRÌNH CỦA CON</p><h2>Những bước nhỏ, niềm vui lớn.</h2><div class="steps"><article><span>1</span><h3>Mở cửa khu vườn</h3><p>Đăng ký bằng Gmail hoặc đăng nhập tài khoản đã có.</p></article><article><span>2</span><h3>Chọn điều mình thích</h3><p>Chọn môn học, chủ đề và cách học phù hợp với con.</p></article><article><span>3</span><h3>Vui với mỗi tiến bộ</h3><p>Xem kết quả, tích lũy kim cương và tiếp tục khám phá.</p></article></div></section>
-    <section class="closing wrap"><span class="closing-flower" aria-hidden="true">✳</span><p>MỘT HÀNH TRÌNH HAY ĐANG CHỜ</p><h2>Hôm nay, con muốn<br>khám phá điều gì?</h2><a class="button" href="/pages/login/">Bắt đầu hành trình <span aria-hidden="true">↗</span></a><small>Chưa có tài khoản? <a href="/pages/register/">Đăng ký bằng Gmail</a>.</small></section>
+    <section class="start-section wrap" id="bat-dau" aria-labelledby="start-title">
+      <div class="start-copy"><p class="eyebrow">SẴN SÀNG CHO ĐIỀU TIẾP THEO?</p><h2 id="start-title">Một chút hôm nay.<br><span>Xa hơn mỗi ngày.</span></h2><p>Tạo tài khoản. Chọn chương trình. Bắt đầu khám phá.</p><div class="start-actions"><a class="button button-primary" href="/pages/register/">Tạo tài khoản <span aria-hidden="true">↗</span></a><a class="text-link" href="/pages/demo/">Học thử trước <span aria-hidden="true">→</span></a></div></div>
+      <div class="start-art" aria-hidden="true"><div class="start-ring"></div><span class="start-sphere"></span><span class="start-star">✦</span><span class="start-step step-one"></span><span class="start-step step-two"></span><span class="start-step step-three"></span></div>
+    </section>
   </main>
-  <footer class="wrap"><a class="footer-brand" href="/">TTNAVA<span>Học vui. Hiểu sâu. Lớn mỗi ngày.</span></a><p>Được tạo nên cho những trí tò mò nhỏ.</p><a href="/pages/login/">Vào lớp học ↗</a></footer>
+  <footer class="site-footer wrap"><a class="brand footer-brand" href="/"><img src="/assets/images/ttnava-logo.png" width="36" height="36" alt=""><span>TTNAVA</span></a><p>Một không gian. Nhiều khởi đầu.</p><nav aria-label="Liên kết cuối trang"><a href="/pages/demo/">Học thử</a><a href="/pages/register/">Đăng ký</a><a href="/pages/login/">Đăng nhập ↗</a></nav></footer>
   <script src="/assets/js/welcome.js" defer></script>
 </body>
 </html>

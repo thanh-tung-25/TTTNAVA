@@ -10,7 +10,7 @@ const button=(text,fn,primary=false)=>el('button',{type:'button',class:'btn '+(p
 function renderCourses(){
  grid.replaceChildren(...courses.filter(c=>!filter||c.kind===filter).map(c=>el('article',{class:'course-tile'},[
   el('span',{class:'course-lock'+(c.unlocked?' open':''),text:c.unlocked?'✓ Đã mở khóa':c.order_status==='pending'?'⏳ Chờ xác nhận':c.revoked_at?'🔒 Đã thu hồi':c.expires_at&&new Date(c.expires_at)<=new Date()?'🔒 Hết hạn':'🔒 Chưa mở khóa'}),
-  el('img',{src:'/assets/images/mascot-'+(c.kind==='chinese'?'panda':'owl')+'.svg',alt:'',width:86,height:92}),
+  el('img',{src:'/assets/images/mascot-'+(c.kind==='chinese'?'panda':'lion')+'.svg',alt:'',width:86,height:92}),
   el('h3',{text:c.title}),el('p',{text:c.description}),el('p',{class:'course-price',text:money(c.price_vnd)}),el('p',{text:c.duration_days?c.duration_days+' ngày kể từ khi được duyệt':'Quyền học vĩnh viễn'}),
   ...(c.unlocked&&c.expires_at?[el('p',{text:'Học đến '+formatDate(c.expires_at,false)})]:[]),
   button(c.unlocked?'Vào học':'Xem khóa học',()=>c.unlocked?enterCourse(c):showCourse(c),Boolean(c.unlocked)),

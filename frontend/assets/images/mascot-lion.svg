@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 260" fill="none" role="img" aria-labelledby="lion-title">
+<title id="lion-title">Sư tử nhỏ</title>
+<defs>
+ <radialGradient id="lion-gold" cx=".28" cy=".18" r=".95"><stop stop-color="#fff0bb"/><stop offset=".58" stop-color="#f7c76f"/><stop offset="1" stop-color="#d99542"/></radialGradient>
+ <radialGradient id="lion-mane" cx=".29" cy=".17" r=".96"><stop stop-color="#f2be78"/><stop offset=".54" stop-color="#cc8647"/><stop offset="1" stop-color="#97562f"/></radialGradient>
+ <radialGradient id="lion-cream" cx=".3" cy=".2" r=".9"><stop stop-color="#fffdf2"/><stop offset="1" stop-color="#f1d9a9"/></radialGradient>
+ <radialGradient id="lion-eye" cx=".3" cy=".2" r=".9"><stop stop-color="#73605c"/><stop offset="1" stop-color="#342b32"/></radialGradient>
+ <linearGradient id="lion-tail" x1="176" y1="200" x2="221" y2="150" gradientUnits="userSpaceOnUse"><stop stop-color="#d99c48"/><stop offset="1" stop-color="#f9d28a"/></linearGradient>
+</defs>
+<ellipse cx="119" cy="245" rx="75" ry="10" fill="#604575" opacity=".12"/>
+<path d="M165 216Q213 234 211 191Q207 164 224 157" stroke="url(#lion-tail)" stroke-width="11" stroke-linecap="round"/>
+<path d="M218 163Q205 146 226 138Q239 144 233 158Q229 164 218 163" fill="url(#lion-mane)"/>
+<ellipse cx="119" cy="191" rx="55" ry="49" fill="url(#lion-gold)"/>
+<ellipse cx="119" cy="192" rx="33" ry="35" fill="url(#lion-cream)"/>
+<ellipse cx="69" cy="190" rx="16" ry="28" fill="url(#lion-gold)" transform="rotate(-15 69 190)"/>
+<ellipse cx="169" cy="185" rx="16" ry="28" fill="url(#lion-gold)" transform="rotate(17 169 185)"/>
+<ellipse cx="85" cy="233" rx="27" ry="14" fill="url(#lion-gold)"/>
+<ellipse cx="152" cy="233" rx="27" ry="14" fill="url(#lion-gold)"/>
+<path d="M75 233V238M85 233V239M143 233V239M153 233V238" stroke="#ce9149" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M119 22Q137 10 151 28Q176 20 185 42Q211 43 210 68Q232 82 220 105Q232 129 210 145Q211 171 185 174Q176 197 152 188Q137 208 118 193Q97 207 82 188Q57 196 49 173Q23 170 26 145Q5 127 18 105Q6 82 28 68Q26 42 52 41Q61 20 85 28Q100 10 119 22Z" fill="url(#lion-mane)"/>
+<path d="M44 85Q39 58 61 47M181 48Q202 60 198 83M51 145Q53 164 72 169M166 169Q188 164 190 146" stroke="#f5c58b" stroke-width="5" stroke-linecap="round" opacity=".36"/>
+<circle cx="68" cy="64" r="20" fill="url(#lion-gold)"/><circle cx="170" cy="64" r="20" fill="url(#lion-gold)"/>
+<circle cx="68" cy="65" r="11" fill="#dfa173"/><circle cx="170" cy="65" r="11" fill="#dfa173"/>
+<ellipse cx="119" cy="107" rx="62" ry="62" fill="url(#lion-gold)"/>
+<path d="M99 54Q108 42 120 52Q130 41 141 54" stroke="#e1a44d" stroke-width="5" stroke-linecap="round"/>
+<path d="M84 90Q94 83 103 89M135 89Q144 83 154 90" stroke="#b77b43" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="96" cy="105" rx="10" ry="13" fill="url(#lion-eye)"/><ellipse cx="143" cy="105" rx="10" ry="13" fill="url(#lion-eye)"/>
+<ellipse cx="93" cy="101" rx="3.5" ry="4.5" fill="#fff"/><ellipse cx="140" cy="101" rx="3.5" ry="4.5" fill="#fff"/>
+<circle cx="100" cy="111" r="1.8" fill="#fff" opacity=".65"/><circle cx="147" cy="111" r="1.8" fill="#fff" opacity=".65"/>
+<ellipse cx="77" cy="125" rx="12" ry="6" fill="#e7a38a" opacity=".6"/><ellipse cx="162" cy="125" rx="12" ry="6" fill="#e7a38a" opacity=".6"/>
+<ellipse cx="106" cy="135" rx="22" ry="18" fill="url(#lion-cream)"/><ellipse cx="132" cy="135" rx="22" ry="18" fill="url(#lion-cream)"/>
+<path d="M110 120Q119 116 128 120Q130 124 124 129L119 132L113 129Q108 125 110 120Z" fill="#65443b"/>
+<path d="M119 132V139M104 139Q110 146 119 139Q128 146 135 139" stroke="#80604a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="96" cy="130" r="1.5" fill="#bd9871"/><circle cx="100" cy="136" r="1.5" fill="#bd9871"/><circle cx="141" cy="130" r="1.5" fill="#bd9871"/><circle cx="137" cy="136" r="1.5" fill="#bd9871"/>
+</svg>

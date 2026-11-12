@@ -9,7 +9,7 @@ export function adminNavigation(entries,active,home){
  <div class="admin-sidebar-brand"><a class="brand" href="${home}"><img class="brand-mark" src="/assets/images/ttnava-logo.png" width="40" height="40" alt="">TTNAVA</a><button type="button" class="admin-sidebar-close" aria-label="Đóng điều hướng">×</button></div>
  <nav aria-label="Điều hướng chính"><p class="admin-nav-label">GÓC QUẢN TRỊ</p><div class="admin-primary-nav">${entries.map(item).join('')}</div></nav>
  ${active==='chinese'?`<nav class="admin-chinese-navigation" aria-label="Quản trị Tiếng Trung"><p class="admin-nav-label">TIẾNG TRUNG</p>${sub.map(([key,label,suffix])=>`<a class="admin-section-link" href="/pages/admin/chinese/${suffix}"${view===key?' aria-current="page"':''}><span aria-hidden="true">·</span>${label}</a>`).join('')}</nav>`:''}
- <div class="admin-sidebar-note"><img src="/assets/images/mascot-owl.svg" width="94" height="102" alt=""><strong>Mỗi bài học được chăm chút,</strong><span>thêm một bước tiến cho học trò.</span></div></aside>`;
+ <div class="admin-sidebar-note"><img src="/assets/images/mascot-lion.svg" width="94" height="102" alt=""><strong>Mỗi bài học được chăm chút,</strong><span>thêm một bước tiến cho học trò.</span></div></aside>`;
 }
 export function setupAdminNavigation(header){
  const trigger=header.querySelector('.admin-menu-toggle'),aside=header.querySelector('.admin-sidebar'),backdrop=header.querySelector('.admin-nav-backdrop'),desktop=matchMedia('(min-width:1100px)');

@@ -19,9 +19,16 @@ export async function activeStudent(id,run=query,lock=false){
  const [student]=await run("SELECT * FROM profiles WHERE id=? AND role='student' AND deleted_at IS NULL"+(lock?' FOR UPDATE':''),[id]);
  if(!student)throw notFound();return student;
 }
+const legacyCompanionNames=new Map([['Cú nhỏ','Sư tử nhỏ'],['Cú thông thái','Sư tử thông thái'],['Cú mèo','Sư tử nhỏ']]);
+export function preferenceView(user,row){
+ const prefs=row||{profile_id:user,minutes:10,font_scale:'normal',speech_rate:1,effects_enabled:1,companion:'owl',companion_name:'Sư tử nhỏ',equipped_frame:null,equipped_background:null,onboarding_at:null};
+ // Keep the stored companion key compatible with existing database constraints.
+ const name=prefs.companion==='owl'&&typeof prefs.companion_name==='string'?legacyCompanionNames.get(prefs.companion_name.normalize('NFC').trim()):null;
+ return name?{...prefs,companion_name:name}:prefs;
+}
 export async function preferences(user){
  const [row]=await query('SELECT * FROM student_preferences WHERE profile_id=?',[user]);
- return row||{profile_id:user,minutes:10,font_scale:'normal',speech_rate:1,effects_enabled:1,companion:'owl',companion_name:'Cú nhỏ',equipped_frame:null,equipped_background:null,onboarding_at:null};
+ return preferenceView(user,row);
 }
 export async function savePreferences(user,body){
  const d=z.object({minutes:z.union([z.literal(5),z.literal(10),z.literal(15)]).optional(),font_scale:z.enum(['normal','large']).optional(),speech_rate:z.number().min(.5).max(1.5).optional(),effects_enabled:z.boolean().optional(),companion:z.enum(['owl','panda','bunny']).optional(),companion_name:z.string().trim().min(1).max(40).optional(),onboarded:z.boolean().optional()}).strict().parse(body);

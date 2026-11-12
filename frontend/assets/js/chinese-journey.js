@@ -4,7 +4,7 @@ import {chineseQuestionPrompt} from './chinese-question-prompt.js';
 const companions=[
  {name:'Gấu trúc',place:'Rừng trúc xanh',image:'/assets/images/mascot-panda.svg',color:'#278b70',soft:'#e5f5ec'},
  {name:'Thỏ ngọc',place:'Vườn hoa nắng',image:'/assets/images/mascot-bunny.svg',color:'#c16d40',soft:'#fff0df'},
- {name:'Cú thông thái',place:'Đồi sao tím',image:'/assets/images/mascot-owl.svg',color:'#8962bf',soft:'#f0e9fb'},
+ {name:'Sư tử thông thái',place:'Đồi sao tím',image:'/assets/images/mascot-lion.svg',color:'#8962bf',soft:'#f0e9fb'},
  {name:'Mèo nhỏ',place:'Đồng cỏ dịu êm',image:'/assets/avatars/meo.svg',color:'#bd7930',soft:'#fff4d9'},
  {name:'Cáo lanh lợi',place:'Thung lũng hồng',image:'/assets/avatars/cao.svg',color:'#bb6083',soft:'#fbe9ef'},
  {name:'Voi tốt bụng',place:'Suối mây trong',image:'/assets/avatars/voi.svg',color:'#548ca8',soft:'#e6f3fa'}
@@ -58,9 +58,9 @@ export async function chooseQuiz(setId,start,review=false){
   const friend=companions[Math.floor((selected?.block||0)/4)%companions.length];
   status.textContent='';detail.replaceChildren();
   if(mode==='review'){
-   detail.append(el('img',{class:'journey-detail-mascot',src:'/assets/images/mascot-owl.svg',alt:'Cú thông thái',width:100,height:100}),el('span',{class:'journey-eyebrow',text:'NHỚ THÊM MỘT CHÚT'}),el('h3',{text:'Đi lại những dấu chân cũ'}),el('p',{text:'Con đã làm '+plan.review_count+' câu. Lượt ôn chỉ dùng những câu này, ưu tiên câu từng sai.'}));
+   detail.append(el('img',{class:'journey-detail-mascot',src:'/assets/images/mascot-lion.svg',alt:'Sư tử thông thái',width:100,height:100}),el('span',{class:'journey-eyebrow',text:'NHỚ THÊM MỘT CHÚT'}),el('h3',{text:'Đi lại những dấu chân cũ'}),el('p',{text:'Con đã làm '+plan.review_count+' câu. Lượt ôn chỉ dùng những câu này, ưu tiên câu từng sai.'}));
    if(plan.review_count<20)detail.append(el('p',{class:'journey-tip',text:'Hãy khám phá đủ 20 câu trước nhé. Không thêm câu lạ vào lượt ôn của con.'}));
-   go.disabled=plan.review_count<20;go.textContent='Cùng cú ôn lại →';
+   go.disabled=plan.review_count<20;go.textContent='Cùng sư tử ôn lại →';
   }else if(selected){
    detail.append(el('img',{class:'journey-detail-mascot',src:friend.image,alt:'',width:100,height:100}),el('span',{class:'journey-eyebrow',text:selected.completed?'MÌNH CÙNG LUYỆN LẠI':'CHẶNG HỌC CỦA CON'}),el('h3',{text:'Cùng '+friend.name+' · Chặng '+(selected.block+1)}),el('p',{text:selected.completed?'Con đã đi qua chặng này. Thử lại để nhớ chắc hơn nhé!':'20 câu nhỏ đang chờ. Hoàn thành để mở chặng tiếp theo.'}));
    const preview=el('details',{class:'journey-preview'},[el('summary',{text:'Nhìn trước 20 câu'}),el('p',{class:'journey-source',text:'Nội dung câu '+selected.from+'–'+selected.to+' trong bài. Chặng cuối có thể ôn lại một số câu của chặng trước.'}),...selected.questions.map((q,n)=>el('p',{text:(n+1)+'. '+chineseQuestionPrompt(q.data.prompt)}))]);detail.append(preview);

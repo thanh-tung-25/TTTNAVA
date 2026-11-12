@@ -19,7 +19,7 @@ export function renderEnrollments(enrollments,onRevoke){
    const row=el('div',{class:'course-admin-enrollment','data-student':student.username,'data-course':enrollment.course_id},[
     el('div',{},[el('strong',{text:enrollment.title}),el('p',{text:(enrollment.revoked_at?'Đã thu hồi':expired?'Đã hết hạn':'Đã mở khóa')+' · '+(enrollment.expires_at?'Đến '+formatDate(enrollment.expires_at):'Vĩnh viễn')})]),
    ]);
-   if(!enrollment.revoked_at&&!expired)row.append(el('button',{type:'button',class:'btn btn-ghost btn-sm',text:'Thu hồi',onclick:event=>onRevoke(enrollment,event.currentTarget)}));
+   if(onRevoke&&!enrollment.revoked_at&&!expired)row.append(el('button',{type:'button',class:'btn btn-ghost btn-sm',text:'Thu hồi',onclick:event=>onRevoke(enrollment,event.currentTarget)}));
    group.append(row);
   }
   return group;

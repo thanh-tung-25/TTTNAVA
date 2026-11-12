@@ -61,6 +61,12 @@ export const env = {
     key: process.env.AI_QUESTION_API_KEY ?? '',
     model: process.env.AI_QUESTION_MODEL ?? '',
   },
+  speakingAi: {
+    enabled: process.env.CHINESE_SPEAKING_AI_ENABLED === 'true',
+    key: process.env.GROQ_API_KEY ?? '',
+    zeroRetentionConfirmed: process.env.GROQ_ZERO_DATA_RETENTION_CONFIRMED === 'true',
+    dailyLimit: readNumber('CHINESE_SPEAKING_DAILY_LIMIT', 5),
+  },
   backendRoot,
 };
 

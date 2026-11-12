@@ -2,6 +2,7 @@ import {chineseQuestionPrompt} from './chinese-question-prompt.js';
 
 export const SPEAKING_SECONDS=90;
 export const SPEAKING_LIMIT=20;
+export function speakingAssessmentEnabled(set){let value=set?.speaking_settings;try{if(typeof value==='string')value=JSON.parse(value);}catch{return false;}return value?.ai_assessment===true;}
 export function speakingSettings(set){
  let value=set?.speaking_settings;try{if(typeof value==='string')value=JSON.parse(value);}catch{value=null;}
  const seconds=Number(value?.duration_seconds);return {duration_seconds:Number.isInteger(seconds)&&seconds>=30&&seconds<=300&&seconds%30===0?seconds:SPEAKING_SECONDS,order:value?.order==='free'?'free':'sequential'};
@@ -19,19 +20,19 @@ export function speakingQuestions(activities,items=[]){
   seen.add(text);return [{text}];
  }).slice(0,imported.length?SPEAKING_LIMIT:3);
 }
-export function speakingStamp(profile,set,index){
- const now=new Date(),code=crypto.randomUUID().slice(0,8).toUpperCase();
+export function speakingStamp(profile,set){
+ const now=new Date(),recording_id=crypto.randomUUID(),code=recording_id.slice(0,8).toUpperCase();
  const name=String(profile.displayName||profile.display_name||profile.username||'Học sinh');
  const date=new Intl.DateTimeFormat('vi-VN',{timeZone:'Asia/Ho_Chi_Minh',dateStyle:'short',timeStyle:'medium'}).format(now);
- return {name,username:profile.username||'',lesson:set.lesson_title||set.title,level:set.level_id,index:index+1,code,date,origin:location.host};
+ return {name,level:set.level_id,code,date,recording_id,recorded_at:now.toISOString()};
 }
 export function speakingFilename(stamp,mime){
  const name=stamp.name.normalize('NFD').replace(/\p{M}/gu,'').replace(/[đĐ]/gu,'d').replace(/[^a-z0-9]+/giu,'_').replace(/^_|_$/gu,'').slice(0,45)||'HocSinh';
- return `TTNAVA_HSK${stamp.level}_BaiNoi_${stamp.total||1}Cau_${name}_${stamp.code}.${mime.includes('mp4')?'mp4':'webm'}`;
+ return `TTNAVA_HSK${stamp.level}_BaiNoi_${stamp.total||1}Cau_${name}_${stamp.code}.${mime.includes('mp4')?'m4a':mime.includes('ogg')?'ogg':'webm'}`;
 }
 export function speakingError(error){
- if(['NotAllowedError','PermissionDeniedError'].includes(error.name))return 'Camera hoặc microphone đang bị chặn. Hãy cho phép trong trình duyệt rồi bấm bật lại.';
- if(['NotFoundError','DevicesNotFoundError'].includes(error.name))return 'Chưa tìm thấy camera và microphone. Hãy kết nối thiết bị rồi thử lại.';
- if(['NotReadableError','TrackStartError'].includes(error.name))return 'Camera hoặc microphone đang được ứng dụng khác sử dụng. Hãy đóng ứng dụng đó rồi thử lại.';
- return error.message||'Chưa quay được video. Hãy thử bật lại camera.';
+ if(['NotAllowedError','PermissionDeniedError'].includes(error.name))return 'Micro đang bị chặn. Hãy cho phép trong trình duyệt rồi bấm bật lại.';
+ if(['NotFoundError','DevicesNotFoundError'].includes(error.name))return 'Chưa tìm thấy micro. Hãy kết nối thiết bị rồi thử lại.';
+ if(['NotReadableError','TrackStartError'].includes(error.name))return 'Micro đang được ứng dụng khác sử dụng. Hãy đóng ứng dụng đó rồi thử lại.';
+ return error.message||'Chưa ghi âm được. Hãy thử bật lại micro.';
 }

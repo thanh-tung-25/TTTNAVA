@@ -7,6 +7,7 @@ const params=new URLSearchParams(location.search);let catalog;
 async function boot(){
  if(['levels','tests'].includes(params.get('view'))){await import('./advanced.js');return;}
  const profile=await initPage('admin','chinese');catalog=await request('/catalog');notice('');
+ if(params.get('view')==='speaking-results'){const {adminSpeakingResults}=await import('/assets/js/chinese-speaking-admin-results.js');return adminSpeakingResults();}
  if(params.has('activities')){const lesson=catalog.lessons.find(l=>l.id===params.get('activities'));if(!lesson)throw Error('Không tìm thấy bài học.');const {activitiesEditor}=await import('./activities-editor.js');return activitiesEditor(lesson,catalog);}
  if(params.has('set'))return adminSetEditor(params.get('set'),{catalog,profile,params});
  if(params.get('view')==='progress')return progress();

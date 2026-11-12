@@ -3,7 +3,8 @@ import {initPage} from './ui-core.js';
 import {refreshPaymentQr} from './admin-payment-qr.js';
 import './admin-course-tabs.js';
 import {renderEnrollments} from './admin-enrollments.js';
-const notice=document.querySelector('#admin-course-notice');let courses=[],orders=[];
+import {isSuperAdmin} from './admin-permissions.js';
+const notice=document.querySelector('#admin-course-notice');let courses=[],orders=[],canConfigure=false;
 const money=n=>new Intl.NumberFormat('vi-VN',{style:'currency',currency:'VND'}).format(n);
 const labels={pending:'Chờ xác nhận',approved:'Đã duyệt',rejected:'Đã từ chối',cancelled:'Đã hủy'};
 const field=(label,name,value,type='text',required=false)=>el('label',{},[el('span',{text:label}),el(type==='textarea'?'textarea':'input',{name,...(type!=='textarea'?{type}:{}),value:type==='textarea'?undefined:value,...(required?{required:''}:{}),...(type==='number'?{min:'0',max:name==='duration_days'?'3650':'100000000'}:{maxlength:name==='title'?120:5000})},type==='textarea'?[value]:[])]);
@@ -37,19 +38,29 @@ function renderOrders(){
  }):[el('div',{class:'admin-order-empty'},[el('img',{src:'/assets/images/mascot-owl.svg',alt:'',width:90,height:98}),el('strong',{text:'Chưa có đăng ký cần duyệt'}),el('p',{text:'Khi học sinh gửi đăng ký, yêu cầu sẽ xuất hiện ở đây.'})])]));
 }
 async function refresh(){
- const [catalog,requests,enrollments,audit]=await Promise.all(['catalog','orders','enrollments','audit'].map(path=>api('/api/v1/courses/admin/'+path)));
- courses=catalog.data;orders=requests.data;renderCatalog();renderOrders();
- await refreshPaymentQr(courses);
+ const [requests,enrollments,audit,catalog]=await Promise.all(['orders','enrollments','audit',...(canConfigure?['catalog']:[])].map(path=>api('/api/v1/courses/admin/'+path)));
+ orders=requests.data;renderOrders();
+ if(canConfigure){
+  courses=catalog.data;renderCatalog();await refreshPaymentQr(courses);
+  const instructions=document.querySelector('#payment-settings textarea');if(!instructions.value)instructions.value=courses[0]?.payment_instructions||'';
+ }
  document.dispatchEvent(new Event('courses:orders-changed'));
- const instructions=document.querySelector('#payment-settings textarea');if(!instructions.value)instructions.value=courses[0]?.payment_instructions||'';
- renderEnrollments(enrollments.data,async(e,b)=>{
+ renderEnrollments(enrollments.data,canConfigure?async(e,b)=>{
   if(!confirm('Thu hồi quyền học '+e.title+' của '+e.username+'? Học sinh sẽ không vào được khóa này.'))return;
   b.disabled=true;
   try{await api('/api/v1/courses/admin/access',{method:'POST',body:{username:e.username,course_id:e.course_id,action:'revoke',note:'Admin thu hồi từ danh sách khóa đã mở.'}});notice.textContent='Đã thu hồi quyền học.';await refresh();}catch(error){notice.textContent=error.message;b.disabled=false;}
- });
+ }:null);
  document.querySelector('#admin-course-audit').replaceChildren(...audit.data.map(a=>el('p',{text:formatDate(a.created_at)+' · '+(a.actor||'Hệ thống')+' · '+a.username+' · '+a.title+' · '+a.action+' · '+a.note})));
 }
 formAction(document.querySelector('#payment-settings'),d=>api('/api/v1/courses/admin/payment-instructions',{method:'POST',body:d}));
 document.querySelector('#order-filter').onchange=renderOrders;
 document.querySelector('#admin-refresh').onclick=()=>refresh().catch(e=>notice.textContent=e.message);
-initPage('admin','courses').then(refresh).catch(e=>notice.textContent=e.message);
+initPage('admin','courses').then(async profile=>{
+ canConfigure=isSuperAdmin(profile);document.querySelector('#tab-settings').hidden=!canConfigure;
+ if(!canConfigure){
+  document.title='Đăng ký Tiếng Trung — TTNAVA';
+  document.querySelector('.admin-course-heading h1').textContent='Duyệt đăng ký Tiếng Trung';
+  document.querySelector('.admin-course-heading h1 + p').textContent='Xét duyệt đăng ký các học phần HSK và theo dõi quyền học của học sinh.';
+ }
+ await refresh();
+}).catch(e=>notice.textContent=e.message);

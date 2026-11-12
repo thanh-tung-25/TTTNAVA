@@ -2,7 +2,7 @@ import { api, avatarUrl, escapeHtml } from './api.js';
 import { studentNavigation, setupStudentNavigation, studentAccount } from './student-navigation.js';
 import { courseProfile } from './course-context.js';
 import { setupCourseNotifications } from './admin-course-notifications.js';
-import { adminHome, adminScope, adminLabels, adminSections, isSuperAdmin } from './admin-permissions.js';
+import { adminHome, adminScope, adminLabels, adminSections } from './admin-permissions.js';
 import {adminNavigation,setupAdminNavigation} from './admin-navigation.js';
 
 const ADMIN_NAV = [
@@ -22,7 +22,7 @@ let diamondTotal = null;
 
 function renderHeader(profile, role, active) {
   if(active==='worksheets')active='questions';
-  const nav = role==='admin'?ADMIN_NAV.filter(([key])=>adminSections(profile).includes(key)):ADMIN_NAV;
+  const nav = role==='admin'?ADMIN_NAV.filter(([key])=>adminSections(profile).includes(key)).map(entry=>entry[0]==='courses'&&adminScope(profile)==='chinese'?[entry[0],entry[1],'Đăng ký Tiếng Trung']:entry):ADMIN_NAV;
   const home = role === 'admin' ? adminHome(profile) : '/pages/student/courses/';
   const subtitle = role === 'admin'
     ? adminLabels[adminScope(profile)]
@@ -45,7 +45,7 @@ function renderHeader(profile, role, active) {
     ${role === 'student' ? studentNavigation(active, profile) : adminNavigation(nav,active,home)}
   `;
   if (role === 'student') setupStudentNavigation(header, profile);
-  else {setupAdminNavigation(header);if(isSuperAdmin(profile)) setupCourseNotifications();}
+  else {setupAdminNavigation(header);if(adminSections(profile).includes('courses')) setupCourseNotifications();}
 
   header.querySelector('#logout-button').addEventListener('click', async () => {
     localStorage.removeItem('ttnava-course');

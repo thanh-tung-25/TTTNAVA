@@ -51,6 +51,7 @@ export async function api(path, options = {}) {
     method,
     credentials: 'same-origin',
     headers: { Accept: 'application/json', ...headers },
+    ...(options.signal?{signal:options.signal}:{}),
   };
   const courseId=localStorage.getItem('ttnava-course');
   if(courseId)init.headers['X-Course-Id']=courseId;
@@ -64,7 +65,8 @@ export async function api(path, options = {}) {
   let response;
   try {
     response = await fetch(path, init);
-  } catch {
+  } catch (error) {
+    if(error.name==='AbortError')throw error;
     throw new ApiError('Không kết nối được máy chủ. Con kiểm tra mạng nhé!', 0, 'NETWORK');
   }
 

@@ -13,10 +13,12 @@ Hệ thống phân quyền dùng được với MySQL local và PostgreSQL trên
 | Tạo tài khoản học sinh | Có | Chỉ tài khoản Tiếng Trung, không có khối lớp | Không | Không |
 | Sửa tài khoản học sinh, đặt lại mật khẩu, khóa tài khoản | Có | Không | Không | Không |
 | Xóa an toàn và khôi phục học sinh / admin phụ | Có, xác nhận nhiều bước | Không | Không | Không |
-| Giá khóa, QR thanh toán, duyệt đơn, cấp/thu hồi quyền học | Có | Không | Không | Không |
+| Duyệt / từ chối đăng ký, xem quyền học và nhật ký | Tất cả học phần | Chỉ học phần Tiếng Trung HSK 1–9 | Không | Không |
+| Giá khóa, QR thanh toán, cấp/thu hồi quyền học thủ công | Có | Không | Không | Không |
 | Quản lý quản trị viên và xem nhật ký | Có | Không | Không | Không |
 
 Học sinh vẫn dùng một tài khoản chung và có thể tham gia nhiều chương trình.
+Admin Tiếng Trung vào **Đăng ký Tiếng Trung** trên menu để duyệt học phần HSK. Số yêu cầu chờ, danh sách đăng ký, quyền học và nhật ký được lọc theo chương trình của khóa, kể cả khi học sinh có cả khóa Tiểu học hoặc THCS. Duyệt đúng đơn tự cấp quyền cho đúng học phần; từ chối có lý do để học sinh xem. API kiểm tra lại chương trình trong giao dịch xét duyệt, không nhận phạm vi quyền từ dữ liệu gửi lên. Cấu hình học phí, QR và cấp/thu hồi thủ công vẫn do admin tổng quản lý.
 Danh sách xét đăng ký/quyền học, kể cả lịch sử; tài khoản cũ chưa có đăng ký
 được phân theo khối lớp. Admin chuyên môn không thấy email và không được
 sửa tài khoản chung. Admin Tiếng Trung có thể tạo tài khoản học sinh mới và

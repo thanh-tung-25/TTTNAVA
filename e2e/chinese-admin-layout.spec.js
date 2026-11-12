@@ -37,7 +37,7 @@ async function fixture(page){
 test('admin uses the student lesson map, shows all authoring sections, and has an accessible mobile sidebar',async({page})=>{
  const state=await fixture(page),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/pages/admin/chinese/');
  await expect(page.locator('.animal-zone')).toHaveCount(2);await expect(page.locator('.lesson-island')).toHaveCount(7);await expect(page.locator('.lesson-island').first().locator('.learn-actions a')).toHaveCount(7);
- await expect(page.locator('[role=progressbar]')).toHaveCount(0);await expect(page.locator('.admin-sidebar')).toBeVisible();await expect(page.locator('#app-header .nav-link')).toHaveCount(4);await expect(page.locator('#app-header')).not.toContainText('Khóa học & thanh toán');
+ await expect(page.locator('[role=progressbar]')).toHaveCount(0);await expect(page.locator('.admin-sidebar')).toBeVisible();await expect(page.locator('#app-header .nav-link')).toHaveCount(5);await expect(page.locator('#app-header')).toContainText('Đăng ký Tiếng Trung');await expect(page.locator('#app-header')).not.toContainText('Khóa học & thanh toán');
  const sidebar=await page.locator('.admin-sidebar').boundingBox();expect(sidebar.x).toBe(0);expect(sidebar.y).toBe(0);expect(sidebar.height).toBe(950);
  await page.screenshot({path:'test-results/chinese-admin-catalog-desktop.png',fullPage:true,animations:'disabled'});
  const names=await page.locator('.lesson-heading h2').allTextContents();state.role='student';await page.goto('/pages/student/chinese/');await expect(page.locator('.lesson-island')).toHaveCount(6);expect(await page.locator('.lesson-heading h2').allTextContents()).toEqual(names.slice(0,6));

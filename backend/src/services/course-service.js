@@ -2,6 +2,14 @@ import { randomUUID } from 'node:crypto';
 import { query, withTransaction, dialectSql } from '../config/db.js';
 import { AppError } from '../utils/errors.js';
 import { z } from 'zod';
+import {adminScopeOf} from '../utils/admin-permissions.js';
+
+export function courseReviewCondition(user){
+ const scope=adminScopeOf(user);
+ if(scope==='super')return '1=1';
+ if(scope==='chinese')return "c.kind='chinese'";
+ throw new AppError(403,'ADMIN_SCOPE_FORBIDDEN','Bạn không có quyền xét duyệt đăng ký học phần này.');
+}
 
 export const activeEnrollment = `e.revoked_at IS NULL AND e.starts_at<=CURRENT_TIMESTAMP(3) AND (e.expires_at IS NULL OR e.expires_at>CURRENT_TIMESTAMP(3))`;
 export async function requireCourse(student, courseId, run=query) {
@@ -45,10 +53,13 @@ export async function reviewOrder(admin,id,body,transaction=withTransaction) {
  const d=z.object({decision:z.enum(['approved','rejected']),note:z.string().trim().min(1).max(1000)}).parse(body);
  return transaction(async connection=>{
   const run=async(sql,p=[]) => (await connection.query(sql,p))[0];
+  const [reviewer]=await run('SELECT role,admin_scope FROM profiles WHERE id=?',[admin]);
+  courseReviewCondition(reviewer);
   const [order]=await run('SELECT * FROM course_orders WHERE id=? FOR UPDATE',[id]);
   if(!order)throw new AppError(404,'ORDER_NOT_FOUND','Không tìm thấy yêu cầu');
+  const [course]=await run('SELECT active,kind FROM courses WHERE id=? FOR UPDATE',[order.course_id]);
+  if(adminScopeOf(reviewer)==='chinese'&&course.kind!=='chinese')throw new AppError(403,'ADMIN_SCOPE_FORBIDDEN','Bạn chỉ được xét duyệt đăng ký học phần Tiếng Trung.');
   if(order.status!=='pending')throw new AppError(409,'ORDER_REVIEWED','Yêu cầu đã được xử lý.');
-  const [course]=await run('SELECT active FROM courses WHERE id=? FOR UPDATE',[order.course_id]);
   if(d.decision==='approved'&&!course.active)throw new AppError(409,'COURSE_INACTIVE','Khóa học đã tạm ngừng.');
   if(d.decision==='approved') {
    const [existing]=await run(`SELECT e.student_id FROM course_enrollments e WHERE student_id=? AND course_id=? AND ${activeEnrollment} FOR UPDATE`,[order.student_id,order.course_id]);

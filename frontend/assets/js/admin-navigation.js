@@ -3,7 +3,7 @@ import {escapeHtml} from './api.js';
 const icons={assignments:'✎',feedback:'♡',courses:'▦',chinese:'▤',students:'♧',questions:'▧',stats:'▥',team:'♙',deployment:'↥'};
 export function adminNavigation(entries,active,home){
  const query=new URLSearchParams(location.search),view=query.get('view')||'lessons';
- const sub=[['lessons','Bài học',''],['tests','Bài kiểm tra','?view=tests'],['progress','Tiến độ học sinh','?view=progress'],['levels','Quản lý cấp HSK','?view=levels']];
+ const sub=[['lessons','Bài học',''],['tests','Bài kiểm tra','?view=tests'],['speaking-results','Kết quả luyện nói','?view=speaking-results'],['progress','Tiến độ học sinh','?view=progress'],['levels','Quản lý cấp HSK','?view=levels']];
  const item=([key,href,label])=>`<a class="nav-link" href="${key==='students'&&active==='chinese'?href+'?program=chinese':href}"${key===active?' aria-current="page"':''}><span class="admin-nav-icon" aria-hidden="true">${icons[key]||'·'}</span><span>${escapeHtml(key==='students'&&active==='chinese'?'Học sinh Tiếng Trung':label)}</span>${key==='courses'?'<span id="course-pending-count" class="course-pending-count" hidden></span>':''}</a>`;
  return `<button class="admin-nav-backdrop" type="button" aria-label="Đóng menu" hidden></button><aside class="admin-sidebar" id="admin-sidebar" aria-label="Khu vực quản trị">
  <div class="admin-sidebar-brand"><a class="brand" href="${home}"><img class="brand-mark" src="/assets/images/ttnava-logo.png" width="40" height="40" alt="">TTNAVA</a><button type="button" class="admin-sidebar-close" aria-label="Đóng điều hướng">×</button></div>

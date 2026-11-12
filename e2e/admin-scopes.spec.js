@@ -36,10 +36,10 @@ async function stub(page,scope){
 for(const scope of ['chinese','primary'])test(`${scope} sees only their program and cannot edit student accounts`,async({page})=>{
  await stub(page,scope);const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/pages/admin/students/');
- await expect(page.locator('#app-header .nav-link')).toHaveCount(scope==='chinese'?4:5);
+ await expect(page.locator('#app-header .nav-link')).toHaveCount(5);
  await expect(page.locator('#app-header')).not.toContainText('Khóa học & thanh toán');
  await expect(page.locator('#app-header')).not.toContainText('Quản trị viên');
- if(scope==='chinese')await expect(page.locator('#create-button')).toBeVisible();
+ if(scope==='chinese'){await expect(page.locator('#create-button')).toBeVisible();await expect(page.getByRole('link',{name:'Đăng ký Tiếng Trung',exact:true})).toHaveCount(1);}
  else await expect(page.locator('#create-button')).toBeHidden();
  await expect(page.locator('#program-filter')).toBeDisabled();
  await expect(page.locator('#program-filter')).toHaveValue(scope);

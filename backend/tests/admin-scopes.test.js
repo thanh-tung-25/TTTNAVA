@@ -52,15 +52,19 @@ it('uses the current database scope instead of role or scope claims in tokens',a
  const studentToken=jwt.sign({sub:dual.id,role:'admin',adminScope:'super'},env.jwt.secret,{expiresIn:'5m'});
  expect((await request(app).get('/api/v1/admin/team').set('Authorization','Bearer '+studentToken)).status).toBe(403);
 });
-it('keeps payment, global account changes and admin management with the super admin',async()=>{
+it('keeps payment settings, manual access and global account management with the super admin',async()=>{
  for(const agent of [chinese,primary]){
-  for(const route of ['/api/v1/courses/admin/catalog','/api/v1/courses/admin/orders','/api/v1/courses/admin/enrollments','/api/v1/courses/admin/payment-qr','/api/v1/courses/admin/pending-count','/api/v1/admin/team','/api/v1/admin/team/audit'])expect((await agent.get(route)).status).toBe(403);
-  expect((await agent.post('/api/v1/courses/admin/orders/'+randomUUID()+'/review').send({decision:'approved',note:'test'})).status).toBe(403);
+  for(const route of ['/api/v1/courses/admin/catalog','/api/v1/courses/admin/payment-qr','/api/v1/admin/team','/api/v1/admin/team/audit'])expect((await agent.get(route)).status).toBe(403);
   expect((await agent.post('/api/v1/courses/admin/access').send({})).status).toBe(403);
   expect((await agent.patch('/api/v1/admin/students/'+dual.id).send({displayName:'Changed'})).status).toBe(403);
   expect((await agent.post('/api/v1/admin/students/'+dual.id+'/password').send({newPassword:'OtherPassword123'})).status).toBe(403);
   expect((await agent.post('/api/v1/admin/students/'+dual.id+'/lock').send({locked:true})).status).toBe(403);
  }
+ for(const path of ['orders','enrollments','audit','pending-count']){
+  expect((await chinese.get('/api/v1/courses/admin/'+path)).status).toBe(200);
+  expect((await primary.get('/api/v1/courses/admin/'+path)).status).toBe(403);
+ }
+ expect((await primary.post('/api/v1/courses/admin/orders/'+randomUUID()+'/review').send({decision:'approved',note:'test'})).status).toBe(403);
  expect((await primary.post('/api/v1/admin/students').send({})).status).toBe(403);
  expect((await chinese.post('/api/v1/admin/students').send({})).status).toBe(400);
  expect((await boss.get('/api/v1/courses/admin/catalog')).status).toBe(200);

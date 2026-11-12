@@ -69,6 +69,9 @@ test('teacher imports Chinese Word, listens, previews an unsaved draft, then pub
  await page.getByRole('button',{name:'Nghe câu hỏi',exact:false}).first().click();
  expect(await page.evaluate(()=>window.__spoken)).toEqual([{text:'你叫什么名字？',lang:'zh-CN'}]);
  await page.locator('textarea[name=text]').first().fill('你今天好吗？');
+ await page.getByRole('checkbox',{name:'AI chấm bài và gửi kết quả cho cô',exact:true}).check();
+ await page.locator('textarea[name=answer_reference]').first().fill('我很好，谢谢。');
+ await page.locator('textarea[name=assessment_notes]').first().fill('Chấp nhận trả lời phù hợp về sức khỏe.');
  const mutations=()=>state.requests.filter(r=>r.method==='PUT').length;
  await page.getByRole('button',{name:'Xem như học sinh',exact:true}).first().click();
  await expect(page.locator('.admin-student-preview .speaking-studio')).toBeVisible();
@@ -82,12 +85,14 @@ test('teacher imports Chinese Word, listens, previews an unsaved draft, then pub
  await expect(page.locator('textarea[name=text]').first()).toHaveValue('你今天好吗？');
  await page.getByRole('button',{name:'Cho học sinh xem',exact:true}).click();
  await expect(page.locator('.simple-document')).toContainText('3 câu luyện nói');expect(state.items[0].data.text).toBe('你今天好吗？');expect(state.lesson.status).toBe('published');
+ expect(state.set.speaking_settings.ai_assessment).toBe(true);expect(state.items[0].data.answer_reference).toBe('我很好，谢谢。');
  state.role='student';await page.goto(origin+'/pages/student/chinese/');
  await expect(page.getByRole('link',{name:'Luyện nói',exact:true})).toBeVisible();
  await expect(page.getByRole('button',{name:'Quiz 20 câu',exact:true})).toHaveCount(0);await expect(page.getByRole('link',{name:'Bài đọc',exact:true})).toHaveCount(0);
  await page.getByRole('link',{name:'Luyện nói',exact:true}).click();
- await expect(page.getByRole('heading',{name:'Nghe từng câu, trả lời trong một video'})).toBeVisible();await expect(page.locator('.speaking-studio')).toContainText('Đã nghe 0 / 3 câu');
+ await expect(page.getByRole('heading',{name:'Nghe câu hỏi, ghi âm trả lời'})).toBeVisible();await expect(page.locator('.speaking-studio')).toContainText('Đã nghe 0 / 3 câu');
  await expect(page.locator('#content')).not.toContainText('Bạn tên là gì?');expect(errors).toEqual([]);
+ await expect(page.locator('#content')).not.toContainText('我很好，谢谢。');await expect(page.locator('#content')).not.toContainText('Chấp nhận trả lời phù hợp về sức khỏe.');
 });
 
 test('admin sections map to the same student destinations and preview current edits without saving',async({page})=>{
@@ -106,13 +111,13 @@ test('admin sections map to the same student destinations and preview current ed
  expect(state.requests.filter(r=>r.method==='PUT'||r.method==='POST')).toEqual([]);
 });
 
-test('teacher selects, reorders and saves a two-question video assignment with a custom duration and free listening order',async({page})=>{
+test('teacher selects, reorders and saves a two-question audio assignment with a custom duration and free listening order',async({page})=>{
  const state=await mock(page);page.on('dialog',d=>d.accept());await page.goto(origin+'/pages/admin/chinese/?lesson='+state.lesson.id+'&mode=speak');await page.locator('input[type=file]').setInputFiles('frontend/assets/templates/chinese-speaking-template.docx');await page.getByRole('button',{name:'Tải lên và kiểm tra',exact:true}).click();await expect(page.locator('.admin-speaking-question')).toHaveCount(3);
- await page.getByRole('combobox',{name:'Thời lượng một video',exact:true}).selectOption('120');await page.getByRole('combobox',{name:'Thứ tự học sinh nghe',exact:true}).selectOption('free');await page.getByLabel('Chọn nhanh số câu đầu',{exact:true}).fill('2');await page.getByRole('button',{name:'Áp dụng số câu',exact:true}).click();await expect(page.locator('.admin-speaking-count')).toHaveText('2/3 câu được giao');
+ await page.getByRole('combobox',{name:'Thời lượng một lượt ghi âm',exact:true}).selectOption('120');await page.getByRole('combobox',{name:'Thứ tự học sinh nghe',exact:true}).selectOption('free');await page.getByLabel('Chọn nhanh số câu đầu',{exact:true}).fill('2');await page.getByRole('button',{name:'Áp dụng số câu',exact:true}).click();await expect(page.locator('.admin-speaking-count')).toHaveText('2/3 câu được giao');
  await page.getByRole('checkbox',{name:'Giao câu 2',exact:true}).uncheck();await page.getByRole('checkbox',{name:'Giao câu 3',exact:true}).check();const thirdText=await page.locator('textarea[name=text]').nth(2).inputValue();await page.locator('.admin-speaking-question').nth(2).getByRole('button',{name:'↑ Lên',exact:true}).click();await page.locator('.admin-speaking-question').nth(1).getByRole('button',{name:'↑ Lên',exact:true}).click();await expect(page.locator('textarea[name=text]').first()).toHaveValue(thirdText);
  await page.getByRole('button',{name:'Xem như học sinh',exact:true}).first().click();await expect(page.locator('.admin-student-preview .speaking-question-button')).toHaveCount(2);await expect(page.locator('.admin-student-preview .speaking-clock')).toHaveText('Còn 02:00');await expect(page.locator('.admin-student-preview')).toContainText('Được chọn thứ tự nghe');expect(state.requests.filter(r=>r.method==='PUT')).toHaveLength(0);
  await page.getByRole('button',{name:'Tiếp tục soạn',exact:true}).click();await page.getByRole('button',{name:'Cho học sinh xem',exact:true}).click();await expect(page.locator('.simple-document')).toContainText('2 câu luyện nói');expect(state.set.speaking_settings).toEqual({duration_seconds:120,order:'free'});expect(state.items[0].data.text).toBe(thirdText);
- await page.getByRole('link',{name:'Mở tài liệu',exact:true}).click();await expect(page.getByRole('combobox',{name:'Thời lượng một video',exact:true})).toHaveValue('120');await expect(page.getByRole('checkbox',{name:'Giao câu 3',exact:true})).not.toBeChecked();
+ await page.getByRole('link',{name:'Mở tài liệu',exact:true}).click();await expect(page.getByRole('combobox',{name:'Thời lượng một lượt ghi âm',exact:true})).toHaveValue('120');await expect(page.getByRole('checkbox',{name:'Giao câu 3',exact:true})).not.toBeChecked();
  state.role='student';await page.goto(origin+'/pages/student/chinese/?set='+state.set.id+'&mode=speak');await expect(page.locator('.speaking-question-button')).toHaveCount(2);await expect(page.locator('.speaking-clock')).toHaveText('Còn 02:00');await expect(page.locator('.speaking-counter')).toHaveText('Đã nghe 0 / 2 câu');
 });
 

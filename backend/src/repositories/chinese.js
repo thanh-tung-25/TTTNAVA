@@ -13,7 +13,7 @@ export async function getItems(id, run = query) {
  return (await run('SELECT * FROM chinese_items WHERE set_id=? AND active=1 ORDER BY position,id',[id])).map(i => ({...i,data:json(i.data)}));
 }
 export function publicItem(i) {
- if(i.kind==='dialogue'&&i.data.practice==='speaking'){const {meaning,pinyin,example,example_pinyin,example_meaning,explanation,...data}=i.data;return {...i,data};}
+ if(i.kind==='dialogue'&&i.data.practice==='speaking'){const {meaning,pinyin,example,example_pinyin,example_meaning,explanation,answer_reference,assessment_notes,...data}=i.data;return {...i,data};}
  if (i.kind !== 'question') return i;
  const {accepted,explanation,...data} = i.data; return {...i,data:{...data,prompt:chineseQuestionPrompt(data.prompt)}};
 }

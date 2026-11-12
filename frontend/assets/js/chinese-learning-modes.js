@@ -5,7 +5,7 @@ export const chineseModes=[
  {key:'quiz',label:'Quiz 20 câu',destination:'question',image:'panda',description:'Câu hỏi có lựa chọn, đáp án và lời giải.'},
  {key:'read',label:'Bài đọc',destination:'reading',image:'bunny',description:'Bài đọc, ngữ pháp và hội thoại để đọc hiểu.'},
  {key:'apply',label:'Luyện vận dụng',destination:null,image:'owl',description:'Xếp câu, sửa lỗi, điền từ và hội thoại.'},
- {key:'speak',label:'Luyện nói',destination:'speaking',image:'panda',description:'Câu hỏi tiếng Trung để nghe, trả lời và quay video nộp qua Zalo.'}
+ {key:'speak',label:'Luyện nói',destination:'speaking',image:'panda',description:'Nghe câu hỏi tiếng Trung, ghi âm trả lời và gửi AI chấm bài.'}
 ];
 export const chineseMode=key=>chineseModes.find(m=>m.key===key);
 export function modeCounts(set,counts=[]){

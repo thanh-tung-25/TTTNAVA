@@ -1,0 +1,1959 @@
+MÔN: Tiếng Trung
+LỚP: HSK 1
+CHỦ ĐỀ: Bài 10. 你家有几口人 — Gia đình bạn có mấy người?
+[TU VUNG]
+口 | kǒu | lượng từ đếm người trong gia đình |  |  |  |  |  |  |  |  | main
+爸爸 | bàba | bố |  |  |  |  |  |  |  |  | main
+妈妈 | māma | mẹ |  |  |  |  |  |  |  |  | main
+弟弟 | dìdi | em trai |  |  |  |  |  |  |  |  | main
+妹妹 | mèimei | em gái |  |  |  |  |  |  |  |  | main
+哥哥 | gēge | anh trai |  |  |  |  |  |  |  |  | main
+姐姐 | jiějie | chị gái |  |  |  |  |  |  |  |  | main
+儿子 | érzi | con trai |  |  |  |  |  |  |  |  | main
+女儿 | nǚ'ér | con gái |  |  |  |  |  |  |  |  | main
+照片 | zhàopiàn | bức ảnh |  |  |  |  |  |  |  |  | main
+洗 | xǐ | rửa, giặt, gội |  |  |  |  |  |  |  |  | main
+洗手间 | xǐshǒujiān | nhà vệ sinh |  |  |  |  |  |  |  |  | main
+和 | hé | và; nối danh từ hoặc đại từ |  |  |  |  |  |  |  |  | main
+律师 | lǜshī | luật sư |  |  |  |  |  |  |  |  | main
+医生 | yīshēng | bác sĩ |  |  |  |  |  |  |  |  | main
+工人 | gōngrén | công nhân |  |  |  |  |  |  |  |  | main
+家人 | jiārén | người nhà, thành viên gia đình |  |  |  |  |  |  |  |  | main
+孩子 | háizi | con, đứa trẻ |  |  |  |  |  |  |  |  | main
+别人 | biérén | người khác |  |  |  |  |  |  |  |  | main
+狗 | gǒu | chó |  |  |  |  |  |  |  |  | main
+猫 | māo | mèo |  |  |  |  |  |  |  |  | main
+可爱 | kě'ài | đáng yêu |  |  |  |  |  |  |  |  | main
+唱 | chàng | hát |  |  |  |  |  |  |  |  | main
+歌 | gē | bài hát |  |  |  |  |  |  |  |  | main
+常 | cháng | thường, thường xuyên |  |  |  |  |  |  |  |  | main
+开玩笑 | kāi wánxiào | nói đùa |  |  |  |  |  |  |  |  | main
+看病 | kàn bìng | khám bệnh |  |  |  |  |  |  |  |  | main
+生气 | shēngqì | tức giận |  |  |  |  |  |  |  |  | main
+时候 | shíhou | lúc, khi |  |  |  |  |  |  |  |  | main
+时间 | shíjiān | thời gian |  |  |  |  |  |  |  |  | main
+但是 | dànshì | nhưng |  |  |  |  |  |  |  |  | main
+岁 | suì | tuổi |  |  |  |  |  |  |  |  | main
+只 | zhī | lượng từ cho nhiều loài động vật |  |  |  |  |  |  |  |  | main
+条 | tiáo | lượng từ cho vật dài; cũng dùng đếm chó |  |  |  |  |  |  |  |  | main
+睡觉 | shuìjiào | ngủ |  |  |  |  |  |  |  |  | main
+起床 | qǐchuáng | thức dậy, ra khỏi giường |  |  |  |  |  |  |  |  | main
+拍照 | pāi zhào | chụp ảnh |  |  |  |  |  |  |  |  | main
+谁 | shéi | ai |  |  |  |  |  |  |  |  | main
+多大 | duō dà | bao nhiêu tuổi, lớn cỡ nào |  |  |  |  |  |  |  |  | main
+老爸 | lǎobà | bố; cách gọi thân mật |  |  |  |  |  |  |  |  | extended
+父亲 | fùqīn | cha; cách gọi trang trọng |  |  |  |  |  |  |  |  | extended
+老妈 | lǎomā | mẹ; cách gọi thân mật |  |  |  |  |  |  |  |  | extended
+母亲 | mǔqīn | mẹ; cách gọi trang trọng |  |  |  |  |  |  |  |  | extended
+洗衣服 | xǐ yīfu | giặt quần áo |  |  |  |  |  |  |  |  | extended
+洗碗 | xǐ wǎn | rửa bát |  |  |  |  |  |  |  |  | extended
+干净 | gānjìng | sạch sẽ |  |  |  |  |  |  |  |  | extended
+救 | jiù | cứu |  |  |  |  |  |  |  |  | extended
+小狗 | xiǎogǒu | chó con, chú chó nhỏ |  |  |  |  |  |  |  |  | extended
+唱歌 | chàng gē | hát, ca hát |  |  |  |  |  |  |  |  | extended
+正在 | zhèngzài | đang; chỉ hành động đang diễn ra |  |  |  |  |  |  |  |  | extended
+打算 | dǎsuàn | dự định |  |  |  |  |  |  |  |  | extended
+生病 | shēng bìng | bị bệnh |  |  |  |  |  |  |  |  | extended
+什么时候 | shénme shíhou | khi nào |  |  |  |  |  |  |  |  | extended
+今年 | jīnnián | năm nay |  |  |  |  |  |  |  |  | extended
+昨天晚上 | zuótiān wǎnshang | tối hôm qua |  |  |  |  |  |  |  |  | extended
+看电视 | kàn diànshì | xem tivi |  |  |  |  |  |  |  |  | extended
+才 | cái | mới, mãi mới; nhấn mạnh muộn |  |  |  |  |  |  |  |  | extended
+有时候 | yǒu shíhou | có lúc, đôi khi |  |  |  |  |  |  |  |  | extended
+在家的时候 | zài jiā de shíhou | khi ở nhà |  |  |  |  |  |  |  |  | extended
+大学生 | dàxuéshēng | sinh viên đại học |  |  |  |  |  |  |  |  | extended
+中学生 | zhōngxuéshēng | học sinh trung học |  |  |  |  |  |  |  |  | extended
+十二岁 | shí'èr suì | mười hai tuổi |  |  |  |  |  |  |  |  | extended
+男朋友 | nán péngyou | bạn trai |  |  |  |  |  |  |  |  | extended
+三岁 | sān suì | ba tuổi |  |  |  |  |  |  |  |  | extended
+英国人 | Yīngguó rén | người Anh |  |  |  |  |  |  |  |  | extended
+英国 | Yīngguó | nước Anh |  |  |  |  |  |  |  |  | extended
+英国话 | Yīngguó huà | tiếng Anh; cách nói trong bài đọc |  |  |  |  |  |  |  |  | extended
+法国菜 | Fǎguó cài | món ăn Pháp |  |  |  |  |  |  |  |  | extended
+美国 | Měiguó | nước Mỹ |  |  |  |  |  |  |  |  | extended
+工作 | gōngzuò | làm việc, công việc |  |  |  |  |  |  |  |  | extended
+家 | jiā | nhà, gia đình |  |  |  |  |  |  |  |  | extended
+[CAU HOI]
+Câu 1. Trong bài học, “口” có nghĩa là gì?
+A. nước Anh
+B. lượng từ đếm người trong gia đình
+C. sinh viên đại học
+D. tuổi
+Đáp án: B
+Lời giải: 口 đọc là kǒu, nghĩa là lượng từ đếm người trong gia đình. Tham chiếu: PDF bài 10, trang 3.
+Độ khó: Dễ
+Câu 2. Chọn chữ Hán có nghĩa “lượng từ đếm người trong gia đình”.
+A. 工作
+B. 妈妈
+C. 别人
+D. 口
+Đáp án: D
+Lời giải: 口 đọc là kǒu, nghĩa là lượng từ đếm người trong gia đình. Tham chiếu: PDF bài 10, trang 3.
+Độ khó: Dễ
+Câu 3. Chọn phiên âm đúng của “口”.
+A. Yīngguó
+B. kǒu
+C. pāi zhào
+D. lǎomā
+Đáp án: B
+Lời giải: 口 đọc là kǒu, nghĩa là lượng từ đếm người trong gia đình. Tham chiếu: PDF bài 10, trang 3.
+Độ khó: Dễ
+Câu 4. Trong bài học, “爸爸” có nghĩa là gì?
+A. bố
+B. công nhân
+C. hát, ca hát
+D. anh trai
+Đáp án: A
+Lời giải: 爸爸 đọc là bàba, nghĩa là bố. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 5. Chọn chữ Hán có nghĩa “bố”.
+A. 爸爸
+B. 大学生
+C. 生气
+D. 歌
+Đáp án: A
+Lời giải: 爸爸 đọc là bàba, nghĩa là bố. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 6. Chọn phiên âm đúng của “爸爸”.
+A. bàba
+B. jiějie
+C. shíhou
+D. nán péngyou
+Đáp án: A
+Lời giải: 爸爸 đọc là bàba, nghĩa là bố. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 7. Trong bài học, “妈妈” có nghĩa là gì?
+A. cha; cách gọi trang trọng
+B. mẹ
+C. ba tuổi
+D. người nhà, thành viên gia đình
+Đáp án: B
+Lời giải: 妈妈 đọc là māma, nghĩa là mẹ. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 8. Chọn chữ Hán có nghĩa “mẹ”.
+A. 常
+B. 妈妈
+C. 昨天晚上
+D. 父亲
+Đáp án: B
+Lời giải: 妈妈 đọc là māma, nghĩa là mẹ. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 9. Chọn phiên âm đúng của “妈妈”.
+A. suì
+B. gōngzuò
+C. shuìjiào
+D. māma
+Đáp án: D
+Lời giải: 妈妈 đọc là māma, nghĩa là mẹ. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 10. Trong bài học, “弟弟” có nghĩa là gì?
+A. năm nay
+B. khi nào
+C. và; nối danh từ hoặc đại từ
+D. em trai
+Đáp án: D
+Lời giải: 弟弟 đọc là dìdi, nghĩa là em trai. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 11. Chọn chữ Hán có nghĩa “em trai”.
+A. 洗碗
+B. 母亲
+C. 孩子
+D. 弟弟
+Đáp án: D
+Lời giải: 弟弟 đọc là dìdi, nghĩa là em trai. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 12. Chọn phiên âm đúng của “弟弟”.
+A. shíhou
+B. dìdi
+C. kǒu
+D. yīshēng
+Đáp án: B
+Lời giải: 弟弟 đọc là dìdi, nghĩa là em trai. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 13. Trong bài học, “妹妹” có nghĩa là gì?
+A. bao nhiêu tuổi, lớn cỡ nào
+B. ai
+C. em gái
+D. con trai
+Đáp án: C
+Lời giải: 妹妹 đọc là mèimei, nghĩa là em gái. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 14. Chọn chữ Hán có nghĩa “em gái”.
+A. 起床
+B. 时间
+C. 三岁
+D. 妹妹
+Đáp án: D
+Lời giải: 妹妹 đọc là mèimei, nghĩa là em gái. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 15. Chọn phiên âm đúng của “妹妹”.
+A. cháng
+B. mèimei
+C. gēge
+D. shíjiān
+Đáp án: B
+Lời giải: 妹妹 đọc là mèimei, nghĩa là em gái. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 16. Trong bài học, “哥哥” có nghĩa là gì?
+A. anh trai
+B. thường, thường xuyên
+C. lượng từ đếm người trong gia đình
+D. bạn trai
+Đáp án: A
+Lời giải: 哥哥 đọc là gēge, nghĩa là anh trai. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 17. Chọn chữ Hán có nghĩa “anh trai”.
+A. 英国人
+B. 狗
+C. 哥哥
+D. 但是
+Đáp án: C
+Lời giải: 哥哥 đọc là gēge, nghĩa là anh trai. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 18. Chọn phiên âm đúng của “哥哥”.
+A. érzi
+B. gēge
+C. jiù
+D. chàng
+Đáp án: B
+Lời giải: 哥哥 đọc là gēge, nghĩa là anh trai. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 19. Trong bài học, “姐姐” có nghĩa là gì?
+A. mười hai tuổi
+B. chị gái
+C. chó
+D. mới, mãi mới; nhấn mạnh muộn
+Đáp án: B
+Lời giải: 姐姐 đọc là jiějie, nghĩa là chị gái. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 20. Chọn chữ Hán có nghĩa “chị gái”.
+A. 昨天晚上
+B. 母亲
+C. 姐姐
+D. 工作
+Đáp án: C
+Lời giải: 姐姐 đọc là jiějie, nghĩa là chị gái. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 21. Chọn phiên âm đúng của “姐姐”.
+A. māma
+B. jiějie
+C. Měiguó
+D. Yīngguó rén
+Đáp án: B
+Lời giải: 姐姐 đọc là jiějie, nghĩa là chị gái. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 22. Trong bài học, “儿子” có nghĩa là gì?
+A. con trai
+B. rửa bát
+C. lúc, khi
+D. bố; cách gọi thân mật
+Đáp án: A
+Lời giải: 儿子 đọc là érzi, nghĩa là con trai. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 23. Chọn chữ Hán có nghĩa “con trai”.
+A. 谁
+B. 母亲
+C. 工人
+D. 儿子
+Đáp án: D
+Lời giải: 儿子 đọc là érzi, nghĩa là con trai. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 24. Chọn phiên âm đúng của “儿子”.
+A. érzi
+B. kàn diànshì
+C. fùqīn
+D. pāi zhào
+Đáp án: A
+Lời giải: 儿子 đọc là érzi, nghĩa là con trai. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 25. Trong bài học, “女儿” có nghĩa là gì?
+A. con gái
+B. dự định
+C. cứu
+D. tức giận
+Đáp án: A
+Lời giải: 女儿 đọc là nǚ'ér, nghĩa là con gái. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 26. Chọn chữ Hán có nghĩa “con gái”.
+A. 昨天晚上
+B. 女儿
+C. 狗
+D. 生气
+Đáp án: B
+Lời giải: 女儿 đọc là nǚ'ér, nghĩa là con gái. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 27. Chọn phiên âm đúng của “女儿”.
+A. nǚ'ér
+B. shénme shíhou
+C. xǐ
+D. chàng
+Đáp án: A
+Lời giải: 女儿 đọc là nǚ'ér, nghĩa là con gái. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 28. Trong bài học, “照片” có nghĩa là gì?
+A. lượng từ đếm người trong gia đình
+B. bức ảnh
+C. bao nhiêu tuổi, lớn cỡ nào
+D. giặt quần áo
+Đáp án: B
+Lời giải: 照片 đọc là zhàopiàn, nghĩa là bức ảnh. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 29. Chọn chữ Hán có nghĩa “bức ảnh”.
+A. 照片
+B. 弟弟
+C. 生病
+D. 正在
+Đáp án: A
+Lời giải: 照片 đọc là zhàopiàn, nghĩa là bức ảnh. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 30. Chọn phiên âm đúng của “照片”.
+A. fùqīn
+B. zhàopiàn
+C. gōngrén
+D. māo
+Đáp án: B
+Lời giải: 照片 đọc là zhàopiàn, nghĩa là bức ảnh. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Dễ
+Câu 31. Trong bài học, “洗” có nghĩa là gì?
+A. tức giận
+B. bức ảnh
+C. rửa, giặt, gội
+D. làm việc, công việc
+Đáp án: C
+Lời giải: 洗 đọc là xǐ, nghĩa là rửa, giặt, gội. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Dễ
+Câu 32. Chọn chữ Hán có nghĩa “rửa, giặt, gội”.
+A. 大学生
+B. 昨天晚上
+C. 洗
+D. 多大
+Đáp án: C
+Lời giải: 洗 đọc là xǐ, nghĩa là rửa, giặt, gội. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Dễ
+Câu 33. Chọn phiên âm đúng của “洗”.
+A. érzi
+B. shí'èr suì
+C. xǐ
+D. dànshì
+Đáp án: C
+Lời giải: 洗 đọc là xǐ, nghĩa là rửa, giặt, gội. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Dễ
+Câu 34. Trong bài học, “洗手间” có nghĩa là gì?
+A. nhà, gia đình
+B. con trai
+C. và; nối danh từ hoặc đại từ
+D. nhà vệ sinh
+Đáp án: D
+Lời giải: 洗手间 đọc là xǐshǒujiān, nghĩa là nhà vệ sinh. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Dễ
+Câu 35. Chọn chữ Hán có nghĩa “nhà vệ sinh”.
+A. 哥哥
+B. 昨天晚上
+C. 洗手间
+D. 家人
+Đáp án: C
+Lời giải: 洗手间 đọc là xǐshǒujiān, nghĩa là nhà vệ sinh. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Dễ
+Câu 36. Chọn phiên âm đúng của “洗手间”.
+A. nán péngyou
+B. xǐshǒujiān
+C. dàxuéshēng
+D. chàng gē
+Đáp án: B
+Lời giải: 洗手间 đọc là xǐshǒujiān, nghĩa là nhà vệ sinh. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Dễ
+Câu 37. Trong bài học, “和” có nghĩa là gì?
+A. chó con, chú chó nhỏ
+B. và; nối danh từ hoặc đại từ
+C. em trai
+D. anh trai
+Đáp án: B
+Lời giải: 和 đọc là hé, nghĩa là và; nối danh từ hoặc đại từ. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Dễ
+Câu 38. Chọn chữ Hán có nghĩa “và; nối danh từ hoặc đại từ”.
+A. 和
+B. 救
+C. 但是
+D. 十二岁
+Đáp án: A
+Lời giải: 和 đọc là hé, nghĩa là và; nối danh từ hoặc đại từ. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Dễ
+Câu 39. Chọn phiên âm đúng của “和”.
+A. shí'èr suì
+B. zhī
+C. māo
+D. hé
+Đáp án: D
+Lời giải: 和 đọc là hé, nghĩa là và; nối danh từ hoặc đại từ. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Dễ
+Câu 40. Trong bài học, “律师” có nghĩa là gì?
+A. luật sư
+B. tiếng Anh; cách nói trong bài đọc
+C. mẹ
+D. chó
+Đáp án: A
+Lời giải: 律师 đọc là lǜshī, nghĩa là luật sư. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Dễ
+Câu 41. Chọn chữ Hán có nghĩa “luật sư”.
+A. 可爱
+B. 别人
+C. 女儿
+D. 律师
+Đáp án: D
+Lời giải: 律师 đọc là lǜshī, nghĩa là luật sư. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Dễ
+Câu 42. Chọn phiên âm đúng của “律师”.
+A. lǜshī
+B. chàng
+C. jīnnián
+D. lǎomā
+Đáp án: A
+Lời giải: 律师 đọc là lǜshī, nghĩa là luật sư. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Dễ
+Câu 43. Trong bài học, “医生” có nghĩa là gì?
+A. lúc, khi
+B. khám bệnh
+C. bác sĩ
+D. và; nối danh từ hoặc đại từ
+Đáp án: C
+Lời giải: 医生 đọc là yīshēng, nghĩa là bác sĩ. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Dễ
+Câu 44. Chọn chữ Hán có nghĩa “bác sĩ”.
+A. 大学生
+B. 生气
+C. 老爸
+D. 医生
+Đáp án: D
+Lời giải: 医生 đọc là yīshēng, nghĩa là bác sĩ. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Dễ
+Câu 45. Chọn phiên âm đúng của “医生”.
+A. tiáo
+B. gōngzuò
+C. yīshēng
+D. mèimei
+Đáp án: C
+Lời giải: 医生 đọc là yīshēng, nghĩa là bác sĩ. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Dễ
+Câu 46. Trong bài học, “工人” có nghĩa là gì?
+A. món ăn Pháp
+B. thức dậy, ra khỏi giường
+C. nước Anh
+D. công nhân
+Đáp án: D
+Lời giải: 工人 đọc là gōngrén, nghĩa là công nhân. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Dễ
+Câu 47. Chọn chữ Hán có nghĩa “công nhân”.
+A. 多大
+B. 救
+C. 妹妹
+D. 工人
+Đáp án: D
+Lời giải: 工人 đọc là gōngrén, nghĩa là công nhân. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Dễ
+Câu 48. Chọn phiên âm đúng của “工人”.
+A. jiārén
+B. xiǎogǒu
+C. gōngrén
+D. mèimei
+Đáp án: C
+Lời giải: 工人 đọc là gōngrén, nghĩa là công nhân. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Dễ
+Câu 49. Trong bài học, “家人” có nghĩa là gì?
+A. rửa, giặt, gội
+B. học sinh trung học
+C. mẹ; cách gọi trang trọng
+D. người nhà, thành viên gia đình
+Đáp án: D
+Lời giải: 家人 đọc là jiārén, nghĩa là người nhà, thành viên gia đình. Tham chiếu: PDF bài 10, trang 8.
+Độ khó: Dễ
+Câu 50. Chọn chữ Hán có nghĩa “người nhà, thành viên gia đình”.
+A. 老妈
+B. 家人
+C. 别人
+D. 打算
+Đáp án: B
+Lời giải: 家人 đọc là jiārén, nghĩa là người nhà, thành viên gia đình. Tham chiếu: PDF bài 10, trang 8.
+Độ khó: Dễ
+Câu 51. Chọn phiên âm đúng của “家人”.
+A. zài jiā de shíhou
+B. nǚ'ér
+C. jiārén
+D. jiā
+Đáp án: C
+Lời giải: 家人 đọc là jiārén, nghĩa là người nhà, thành viên gia đình. Tham chiếu: PDF bài 10, trang 8.
+Độ khó: Dễ
+Câu 52. Trong bài học, “孩子” có nghĩa là gì?
+A. con, đứa trẻ
+B. nhà vệ sinh
+C. có lúc, đôi khi
+D. luật sư
+Đáp án: A
+Lời giải: 孩子 đọc là háizi, nghĩa là con, đứa trẻ. Tham chiếu: PDF bài 10, trang 8.
+Độ khó: Dễ
+Câu 53. Chọn chữ Hán có nghĩa “con, đứa trẻ”.
+A. 洗衣服
+B. 律师
+C. 孩子
+D. 洗
+Đáp án: C
+Lời giải: 孩子 đọc là háizi, nghĩa là con, đứa trẻ. Tham chiếu: PDF bài 10, trang 8.
+Độ khó: Dễ
+Câu 54. Chọn phiên âm đúng của “孩子”.
+A. xǐshǒujiān
+B. gǒu
+C. xǐ wǎn
+D. háizi
+Đáp án: D
+Lời giải: 孩子 đọc là háizi, nghĩa là con, đứa trẻ. Tham chiếu: PDF bài 10, trang 8.
+Độ khó: Dễ
+Câu 55. Trong bài học, “别人” có nghĩa là gì?
+A. chó
+B. người khác
+C. lúc, khi
+D. nhà, gia đình
+Đáp án: B
+Lời giải: 别人 đọc là biérén, nghĩa là người khác. Tham chiếu: PDF bài 10, trang 8.
+Độ khó: Dễ
+Câu 56. Chọn chữ Hán có nghĩa “người khác”.
+A. 别人
+B. 猫
+C. 洗手间
+D. 法国菜
+Đáp án: A
+Lời giải: 别人 đọc là biérén, nghĩa là người khác. Tham chiếu: PDF bài 10, trang 8.
+Độ khó: Dễ
+Câu 57. Chọn phiên âm đúng của “别人”.
+A. lǜshī
+B. biérén
+C. Yīngguó
+D. Yīngguó huà
+Đáp án: B
+Lời giải: 别人 đọc là biérén, nghĩa là người khác. Tham chiếu: PDF bài 10, trang 8.
+Độ khó: Dễ
+Câu 58. Trong bài học, “狗” có nghĩa là gì?
+A. chó
+B. lượng từ đếm người trong gia đình
+C. tiếng Anh; cách nói trong bài đọc
+D. và; nối danh từ hoặc đại từ
+Đáp án: A
+Lời giải: 狗 đọc là gǒu, nghĩa là chó. Tham chiếu: PDF bài 10, trang 9.
+Độ khó: Dễ
+Câu 59. Chọn chữ Hán có nghĩa “chó”.
+A. 男朋友
+B. 猫
+C. 妈妈
+D. 狗
+Đáp án: D
+Lời giải: 狗 đọc là gǒu, nghĩa là chó. Tham chiếu: PDF bài 10, trang 9.
+Độ khó: Dễ
+Câu 60. Chọn phiên âm đúng của “狗”.
+A. dàxuéshēng
+B. mèimei
+C. gē
+D. gǒu
+Đáp án: D
+Lời giải: 狗 đọc là gǒu, nghĩa là chó. Tham chiếu: PDF bài 10, trang 9.
+Độ khó: Dễ
+Câu 61. Trong bài học, “猫” có nghĩa là gì?
+A. nói đùa
+B. mèo
+C. bác sĩ
+D. có lúc, đôi khi
+Đáp án: B
+Lời giải: 猫 đọc là māo, nghĩa là mèo. Tham chiếu: PDF bài 10, trang 9.
+Độ khó: Dễ
+Câu 62. Chọn chữ Hán có nghĩa “mèo”.
+A. 睡觉
+B. 别人
+C. 猫
+D. 打算
+Đáp án: C
+Lời giải: 猫 đọc là māo, nghĩa là mèo. Tham chiếu: PDF bài 10, trang 9.
+Độ khó: Dễ
+Câu 63. Chọn phiên âm đúng của “猫”.
+A. shíjiān
+B. māo
+C. xǐ
+D. Měiguó
+Đáp án: B
+Lời giải: 猫 đọc là māo, nghĩa là mèo. Tham chiếu: PDF bài 10, trang 9.
+Độ khó: Dễ
+Câu 64. Trong bài học, “可爱” có nghĩa là gì?
+A. bác sĩ
+B. đáng yêu
+C. chó
+D. chụp ảnh
+Đáp án: B
+Lời giải: 可爱 đọc là kě'ài, nghĩa là đáng yêu. Tham chiếu: PDF bài 10, trang 9.
+Độ khó: Dễ
+Câu 65. Chọn chữ Hán có nghĩa “đáng yêu”.
+A. 歌
+B. 老妈
+C. 大学生
+D. 可爱
+Đáp án: D
+Lời giải: 可爱 đọc là kě'ài, nghĩa là đáng yêu. Tham chiếu: PDF bài 10, trang 9.
+Độ khó: Dễ
+Câu 66. Chọn phiên âm đúng của “可爱”.
+A. kāi wánxiào
+B. érzi
+C. dànshì
+D. kě'ài
+Đáp án: D
+Lời giải: 可爱 đọc là kě'ài, nghĩa là đáng yêu. Tham chiếu: PDF bài 10, trang 9.
+Độ khó: Dễ
+Câu 67. Trong bài học, “唱” có nghĩa là gì?
+A. tuổi
+B. ngủ
+C. dự định
+D. hát
+Đáp án: D
+Lời giải: 唱 đọc là chàng, nghĩa là hát. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 68. Chọn chữ Hán có nghĩa “hát”.
+A. 唱
+B. 律师
+C. 岁
+D. 大学生
+Đáp án: A
+Lời giải: 唱 đọc là chàng, nghĩa là hát. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 69. Chọn phiên âm đúng của “唱”.
+A. chàng
+B. zhàopiàn
+C. mǔqīn
+D. xǐshǒujiān
+Đáp án: A
+Lời giải: 唱 đọc là chàng, nghĩa là hát. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 70. Trong bài học, “歌” có nghĩa là gì?
+A. chụp ảnh
+B. bài hát
+C. mẹ
+D. mẹ; cách gọi thân mật
+Đáp án: B
+Lời giải: 歌 đọc là gē, nghĩa là bài hát. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 71. Chọn chữ Hán có nghĩa “bài hát”.
+A. 在家的时候
+B. 看病
+C. 睡觉
+D. 歌
+Đáp án: D
+Lời giải: 歌 đọc là gē, nghĩa là bài hát. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 72. Chọn phiên âm đúng của “歌”.
+A. gēge
+B. xǐ yīfu
+C. gōngrén
+D. gē
+Đáp án: D
+Lời giải: 歌 đọc là gē, nghĩa là bài hát. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 73. Trong bài học, “常” có nghĩa là gì?
+A. rửa, giặt, gội
+B. nước Mỹ
+C. người khác
+D. thường, thường xuyên
+Đáp án: D
+Lời giải: 常 đọc là cháng, nghĩa là thường, thường xuyên. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 74. Chọn chữ Hán có nghĩa “thường, thường xuyên”.
+A. 常
+B. 狗
+C. 律师
+D. 什么时候
+Đáp án: A
+Lời giải: 常 đọc là cháng, nghĩa là thường, thường xuyên. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 75. Chọn phiên âm đúng của “常”.
+A. cháng
+B. jiù
+C. dàxuéshēng
+D. jiārén
+Đáp án: A
+Lời giải: 常 đọc là cháng, nghĩa là thường, thường xuyên. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 76. Trong bài học, “开玩笑” có nghĩa là gì?
+A. nói đùa
+B. con gái
+C. thường, thường xuyên
+D. đang; chỉ hành động đang diễn ra
+Đáp án: A
+Lời giải: 开玩笑 đọc là kāi wánxiào, nghĩa là nói đùa. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 77. Chọn chữ Hán có nghĩa “nói đùa”.
+A. 洗碗
+B. 哥哥
+C. 时候
+D. 开玩笑
+Đáp án: D
+Lời giải: 开玩笑 đọc là kāi wánxiào, nghĩa là nói đùa. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 78. Chọn phiên âm đúng của “开玩笑”.
+A. mǔqīn
+B. yǒu shíhou
+C. kāi wánxiào
+D. jiārén
+Đáp án: C
+Lời giải: 开玩笑 đọc là kāi wánxiào, nghĩa là nói đùa. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 79. Trong bài học, “看病” có nghĩa là gì?
+A. chó
+B. thời gian
+C. bố; cách gọi thân mật
+D. khám bệnh
+Đáp án: D
+Lời giải: 看病 đọc là kàn bìng, nghĩa là khám bệnh. Tham chiếu: PDF bài 10, trang 11.
+Độ khó: Dễ
+Câu 80. Chọn chữ Hán có nghĩa “khám bệnh”.
+A. 看病
+B. 儿子
+C. 英国人
+D. 才
+Đáp án: A
+Lời giải: 看病 đọc là kàn bìng, nghĩa là khám bệnh. Tham chiếu: PDF bài 10, trang 11.
+Độ khó: Dễ
+Câu 81. Chọn phiên âm đúng của “看病”.
+A. Yīngguó
+B. duō dà
+C. pāi zhào
+D. kàn bìng
+Đáp án: D
+Lời giải: 看病 đọc là kàn bìng, nghĩa là khám bệnh. Tham chiếu: PDF bài 10, trang 11.
+Độ khó: Dễ
+Câu 82. Trong bài học, “生气” có nghĩa là gì?
+A. ngủ
+B. rửa, giặt, gội
+C. tức giận
+D. mười hai tuổi
+Đáp án: C
+Lời giải: 生气 đọc là shēngqì, nghĩa là tức giận. Tham chiếu: PDF bài 10, trang 11.
+Độ khó: Dễ
+Câu 83. Chọn chữ Hán có nghĩa “tức giận”.
+A. 生气
+B. 时候
+C. 父亲
+D. 儿子
+Đáp án: A
+Lời giải: 生气 đọc là shēngqì, nghĩa là tức giận. Tham chiếu: PDF bài 10, trang 11.
+Độ khó: Dễ
+Câu 84. Chọn phiên âm đúng của “生气”.
+A. kě'ài
+B. shēngqì
+C. dàxuéshēng
+D. gōngzuò
+Đáp án: B
+Lời giải: 生气 đọc là shēngqì, nghĩa là tức giận. Tham chiếu: PDF bài 10, trang 11.
+Độ khó: Dễ
+Câu 85. Trong bài học, “时候” có nghĩa là gì?
+A. tức giận
+B. công nhân
+C. lúc, khi
+D. mười hai tuổi
+Đáp án: C
+Lời giải: 时候 đọc là shíhou, nghĩa là lúc, khi. Tham chiếu: PDF bài 10, trang 12.
+Độ khó: Dễ
+Câu 86. Chọn chữ Hán có nghĩa “lúc, khi”.
+A. 昨天晚上
+B. 爸爸
+C. 时候
+D. 妈妈
+Đáp án: C
+Lời giải: 时候 đọc là shíhou, nghĩa là lúc, khi. Tham chiếu: PDF bài 10, trang 12.
+Độ khó: Dễ
+Câu 87. Chọn phiên âm đúng của “时候”.
+A. mǔqīn
+B. tiáo
+C. nǚ'ér
+D. shíhou
+Đáp án: D
+Lời giải: 时候 đọc là shíhou, nghĩa là lúc, khi. Tham chiếu: PDF bài 10, trang 12.
+Độ khó: Dễ
+Câu 88. Trong bài học, “时间” có nghĩa là gì?
+A. người Anh
+B. thời gian
+C. bài hát
+D. dự định
+Đáp án: B
+Lời giải: 时间 đọc là shíjiān, nghĩa là thời gian. Tham chiếu: PDF bài 10, trang 12.
+Độ khó: Dễ
+Câu 89. Chọn chữ Hán có nghĩa “thời gian”.
+A. 正在
+B. 时间
+C. 别人
+D. 开玩笑
+Đáp án: B
+Lời giải: 时间 đọc là shíjiān, nghĩa là thời gian. Tham chiếu: PDF bài 10, trang 12.
+Độ khó: Dễ
+Câu 90. Chọn phiên âm đúng của “时间”.
+A. kǒu
+B. shíjiān
+C. cái
+D. Měiguó
+Đáp án: B
+Lời giải: 时间 đọc là shíjiān, nghĩa là thời gian. Tham chiếu: PDF bài 10, trang 12.
+Độ khó: Dễ
+Câu 91. Trong bài học, “但是” có nghĩa là gì?
+A. nhưng
+B. dự định
+C. rửa, giặt, gội
+D. tuổi
+Đáp án: A
+Lời giải: 但是 đọc là dànshì, nghĩa là nhưng. Tham chiếu: PDF bài 10, trang 12.
+Độ khó: Dễ
+Câu 92. Chọn chữ Hán có nghĩa “nhưng”.
+A. 律师
+B. 女儿
+C. 妹妹
+D. 但是
+Đáp án: D
+Lời giải: 但是 đọc là dànshì, nghĩa là nhưng. Tham chiếu: PDF bài 10, trang 12.
+Độ khó: Dễ
+Câu 93. Chọn phiên âm đúng của “但是”.
+A. dànshì
+B. shēngqì
+C. mèimei
+D. gēge
+Đáp án: A
+Lời giải: 但是 đọc là dànshì, nghĩa là nhưng. Tham chiếu: PDF bài 10, trang 12.
+Độ khó: Dễ
+Câu 94. Trong bài học, “岁” có nghĩa là gì?
+A. lượng từ cho vật dài; cũng dùng đếm chó
+B. em gái
+C. tuổi
+D. có lúc, đôi khi
+Đáp án: C
+Lời giải: 岁 đọc là suì, nghĩa là tuổi. Tham chiếu: PDF bài 10, trang 13.
+Độ khó: Dễ
+Câu 95. Chọn chữ Hán có nghĩa “tuổi”.
+A. 母亲
+B. 岁
+C. 老爸
+D. 起床
+Đáp án: B
+Lời giải: 岁 đọc là suì, nghĩa là tuổi. Tham chiếu: PDF bài 10, trang 13.
+Độ khó: Dễ
+Câu 96. Chọn phiên âm đúng của “岁”.
+A. jiějie
+B. suì
+C. lǎomā
+D. duō dà
+Đáp án: B
+Lời giải: 岁 đọc là suì, nghĩa là tuổi. Tham chiếu: PDF bài 10, trang 13.
+Độ khó: Dễ
+Câu 97. Trong bài học, “只” có nghĩa là gì?
+A. nhà vệ sinh
+B. lượng từ cho nhiều loài động vật
+C. tối hôm qua
+D. bác sĩ
+Đáp án: B
+Lời giải: 只 đọc là zhī, nghĩa là lượng từ cho nhiều loài động vật. Tham chiếu: PDF bài 10, trang 13.
+Độ khó: Dễ
+Câu 98. Chọn chữ Hán có nghĩa “lượng từ cho nhiều loài động vật”.
+A. 弟弟
+B. 洗手间
+C. 只
+D. 父亲
+Đáp án: C
+Lời giải: 只 đọc là zhī, nghĩa là lượng từ cho nhiều loài động vật. Tham chiếu: PDF bài 10, trang 13.
+Độ khó: Dễ
+Câu 99. Chọn phiên âm đúng của “只”.
+A. zhī
+B. Yīngguó
+C. māo
+D. gē
+Đáp án: A
+Lời giải: 只 đọc là zhī, nghĩa là lượng từ cho nhiều loài động vật. Tham chiếu: PDF bài 10, trang 13.
+Độ khó: Dễ
+Câu 100. Trong bài học, “条” có nghĩa là gì?
+A. con, đứa trẻ
+B. lượng từ cho vật dài; cũng dùng đếm chó
+C. nước Mỹ
+D. ba tuổi
+Đáp án: B
+Lời giải: 条 đọc là tiáo, nghĩa là lượng từ cho vật dài; cũng dùng đếm chó. Tham chiếu: PDF bài 10, trang 13.
+Độ khó: Dễ
+Câu 101. Chọn chữ Hán có nghĩa “lượng từ cho vật dài; cũng dùng đếm chó”.
+A. 法国菜
+B. 唱歌
+C. 条
+D. 干净
+Đáp án: C
+Lời giải: 条 đọc là tiáo, nghĩa là lượng từ cho vật dài; cũng dùng đếm chó. Tham chiếu: PDF bài 10, trang 13.
+Độ khó: Dễ
+Câu 102. Chọn phiên âm đúng của “条”.
+A. lǎomā
+B. shíjiān
+C. kàn bìng
+D. tiáo
+Đáp án: D
+Lời giải: 条 đọc là tiáo, nghĩa là lượng từ cho vật dài; cũng dùng đếm chó. Tham chiếu: PDF bài 10, trang 13.
+Độ khó: Dễ
+Câu 103. Trong bài học, “睡觉” có nghĩa là gì?
+A. mẹ; cách gọi thân mật
+B. khi nào
+C. ngủ
+D. làm việc, công việc
+Đáp án: C
+Lời giải: 睡觉 đọc là shuìjiào, nghĩa là ngủ. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Dễ
+Câu 104. Chọn chữ Hán có nghĩa “ngủ”.
+A. 工人
+B. 睡觉
+C. 时候
+D. 照片
+Đáp án: B
+Lời giải: 睡觉 đọc là shuìjiào, nghĩa là ngủ. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Dễ
+Câu 105. Chọn phiên âm đúng của “睡觉”.
+A. lǜshī
+B. mǔqīn
+C. suì
+D. shuìjiào
+Đáp án: D
+Lời giải: 睡觉 đọc là shuìjiào, nghĩa là ngủ. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Dễ
+Câu 106. Trong bài học, “起床” có nghĩa là gì?
+A. thức dậy, ra khỏi giường
+B. lượng từ đếm người trong gia đình
+C. năm nay
+D. mười hai tuổi
+Đáp án: A
+Lời giải: 起床 đọc là qǐchuáng, nghĩa là thức dậy, ra khỏi giường. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Dễ
+Câu 107. Chọn chữ Hán có nghĩa “thức dậy, ra khỏi giường”.
+A. 什么时候
+B. 岁
+C. 洗衣服
+D. 起床
+Đáp án: D
+Lời giải: 起床 đọc là qǐchuáng, nghĩa là thức dậy, ra khỏi giường. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Dễ
+Câu 108. Chọn phiên âm đúng của “起床”.
+A. pāi zhào
+B. shí'èr suì
+C. qǐchuáng
+D. gōngrén
+Đáp án: C
+Lời giải: 起床 đọc là qǐchuáng, nghĩa là thức dậy, ra khỏi giường. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Dễ
+Câu 109. Trong bài học, “拍照” có nghĩa là gì?
+A. đáng yêu
+B. thời gian
+C. khám bệnh
+D. chụp ảnh
+Đáp án: D
+Lời giải: 拍照 đọc là pāi zhào, nghĩa là chụp ảnh. Tham chiếu: PDF bài 10, trang 3.
+Độ khó: Dễ
+Câu 110. Chọn chữ Hán có nghĩa “chụp ảnh”.
+A. 拍照
+B. 中学生
+C. 常
+D. 洗手间
+Đáp án: A
+Lời giải: 拍照 đọc là pāi zhào, nghĩa là chụp ảnh. Tham chiếu: PDF bài 10, trang 3.
+Độ khó: Dễ
+Câu 111. Chọn phiên âm đúng của “拍照”.
+A. suì
+B. shíhou
+C. pāi zhào
+D. Yīngguó rén
+Đáp án: C
+Lời giải: 拍照 đọc là pāi zhào, nghĩa là chụp ảnh. Tham chiếu: PDF bài 10, trang 3.
+Độ khó: Dễ
+Câu 112. Trong bài học, “谁” có nghĩa là gì?
+A. khám bệnh
+B. nước Mỹ
+C. ai
+D. con, đứa trẻ
+Đáp án: C
+Lời giải: 谁 đọc là shéi, nghĩa là ai. Tham chiếu: PDF bài 10, trang 3.
+Độ khó: Dễ
+Câu 113. Chọn chữ Hán có nghĩa “ai”.
+A. 条
+B. 谁
+C. 洗碗
+D. 歌
+Đáp án: B
+Lời giải: 谁 đọc là shéi, nghĩa là ai. Tham chiếu: PDF bài 10, trang 3.
+Độ khó: Dễ
+Câu 114. Chọn phiên âm đúng của “谁”.
+A. gōngrén
+B. yīshēng
+C. pāi zhào
+D. shéi
+Đáp án: D
+Lời giải: 谁 đọc là shéi, nghĩa là ai. Tham chiếu: PDF bài 10, trang 3.
+Độ khó: Dễ
+Câu 115. Trong bài học, “多大” có nghĩa là gì?
+A. ngủ
+B. bao nhiêu tuổi, lớn cỡ nào
+C. chị gái
+D. thức dậy, ra khỏi giường
+Đáp án: B
+Lời giải: 多大 đọc là duō dà, nghĩa là bao nhiêu tuổi, lớn cỡ nào. Tham chiếu: PDF bài 10, trang 3.
+Độ khó: Dễ
+Câu 116. Chọn chữ Hán có nghĩa “bao nhiêu tuổi, lớn cỡ nào”.
+A. 母亲
+B. 多大
+C. 儿子
+D. 洗
+Đáp án: B
+Lời giải: 多大 đọc là duō dà, nghĩa là bao nhiêu tuổi, lớn cỡ nào. Tham chiếu: PDF bài 10, trang 3.
+Độ khó: Dễ
+Câu 117. Chọn phiên âm đúng của “多大”.
+A. kě'ài
+B. gǒu
+C. duō dà
+D. lǎobà
+Đáp án: C
+Lời giải: 多大 đọc là duō dà, nghĩa là bao nhiêu tuổi, lớn cỡ nào. Tham chiếu: PDF bài 10, trang 3.
+Độ khó: Dễ
+Câu 118. Trong bài học, “老爸” có nghĩa là gì?
+A. bố; cách gọi thân mật
+B. và; nối danh từ hoặc đại từ
+C. món ăn Pháp
+D. ngủ
+Đáp án: A
+Lời giải: 老爸 đọc là lǎobà, nghĩa là bố; cách gọi thân mật. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 119. Chọn chữ Hán có nghĩa “bố; cách gọi thân mật”.
+A. 老爸
+B. 工人
+C. 时间
+D. 唱歌
+Đáp án: A
+Lời giải: 老爸 đọc là lǎobà, nghĩa là bố; cách gọi thân mật. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 120. Chọn phiên âm đúng của “老爸”.
+A. mǔqīn
+B. suì
+C. lǎobà
+D. shēng bìng
+Đáp án: C
+Lời giải: 老爸 đọc là lǎobà, nghĩa là bố; cách gọi thân mật. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 121. Trong bài học, “父亲” có nghĩa là gì?
+A. người nhà, thành viên gia đình
+B. lượng từ đếm người trong gia đình
+C. ngủ
+D. cha; cách gọi trang trọng
+Đáp án: D
+Lời giải: 父亲 đọc là fùqīn, nghĩa là cha; cách gọi trang trọng. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 122. Chọn chữ Hán có nghĩa “cha; cách gọi trang trọng”.
+A. 英国人
+B. 时间
+C. 洗
+D. 父亲
+Đáp án: D
+Lời giải: 父亲 đọc là fùqīn, nghĩa là cha; cách gọi trang trọng. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 123. Chọn phiên âm đúng của “父亲”.
+A. mèimei
+B. fùqīn
+C. shíjiān
+D. jiějie
+Đáp án: B
+Lời giải: 父亲 đọc là fùqīn, nghĩa là cha; cách gọi trang trọng. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 124. Trong bài học, “老妈” có nghĩa là gì?
+A. tuổi
+B. con, đứa trẻ
+C. đang; chỉ hành động đang diễn ra
+D. mẹ; cách gọi thân mật
+Đáp án: D
+Lời giải: 老妈 đọc là lǎomā, nghĩa là mẹ; cách gọi thân mật. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 125. Chọn chữ Hán có nghĩa “mẹ; cách gọi thân mật”.
+A. 昨天晚上
+B. 口
+C. 睡觉
+D. 老妈
+Đáp án: D
+Lời giải: 老妈 đọc là lǎomā, nghĩa là mẹ; cách gọi thân mật. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 126. Chọn phiên âm đúng của “老妈”.
+A. shénme shíhou
+B. érzi
+C. lǎomā
+D. shéi
+Đáp án: C
+Lời giải: 老妈 đọc là lǎomā, nghĩa là mẹ; cách gọi thân mật. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 127. Trong bài học, “母亲” có nghĩa là gì?
+A. lúc, khi
+B. nước Anh
+C. bức ảnh
+D. mẹ; cách gọi trang trọng
+Đáp án: D
+Lời giải: 母亲 đọc là mǔqīn, nghĩa là mẹ; cách gọi trang trọng. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 128. Chọn chữ Hán có nghĩa “mẹ; cách gọi trang trọng”.
+A. 姐姐
+B. 母亲
+C. 有时候
+D. 女儿
+Đáp án: B
+Lời giải: 母亲 đọc là mǔqīn, nghĩa là mẹ; cách gọi trang trọng. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 129. Chọn phiên âm đúng của “母亲”.
+A. xǐshǒujiān
+B. gǒu
+C. mǔqīn
+D. zhōngxuéshēng
+Đáp án: C
+Lời giải: 母亲 đọc là mǔqīn, nghĩa là mẹ; cách gọi trang trọng. Tham chiếu: PDF bài 10, trang 4.
+Độ khó: Dễ
+Câu 130. Trong bài học, “洗衣服” có nghĩa là gì?
+A. chó con, chú chó nhỏ
+B. mẹ; cách gọi thân mật
+C. con gái
+D. giặt quần áo
+Đáp án: D
+Lời giải: 洗衣服 đọc là xǐ yīfu, nghĩa là giặt quần áo. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Dễ
+Câu 131. Chọn chữ Hán có nghĩa “giặt quần áo”.
+A. 唱
+B. 洗衣服
+C. 老爸
+D. 常
+Đáp án: B
+Lời giải: 洗衣服 đọc là xǐ yīfu, nghĩa là giặt quần áo. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Dễ
+Câu 132. Chọn phiên âm đúng của “洗衣服”.
+A. mǔqīn
+B. Yīngguó
+C. xǐ yīfu
+D. xiǎogǒu
+Đáp án: C
+Lời giải: 洗衣服 đọc là xǐ yīfu, nghĩa là giặt quần áo. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Dễ
+Câu 133. Trong bài học, “洗碗” có nghĩa là gì?
+A. xem tivi
+B. nói đùa
+C. rửa bát
+D. con trai
+Đáp án: C
+Lời giải: 洗碗 đọc là xǐ wǎn, nghĩa là rửa bát. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Dễ
+Câu 134. Chọn chữ Hán có nghĩa “rửa bát”.
+A. 小狗
+B. 唱
+C. 洗碗
+D. 可爱
+Đáp án: C
+Lời giải: 洗碗 đọc là xǐ wǎn, nghĩa là rửa bát. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Dễ
+Câu 135. Chọn phiên âm đúng của “洗碗”.
+A. shíjiān
+B. xǐ wǎn
+C. dǎsuàn
+D. biérén
+Đáp án: B
+Lời giải: 洗碗 đọc là xǐ wǎn, nghĩa là rửa bát. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Dễ
+Câu 136. Trong bài học, “干净” có nghĩa là gì?
+A. mẹ
+B. mẹ; cách gọi thân mật
+C. sạch sẽ
+D. bố; cách gọi thân mật
+Đáp án: C
+Lời giải: 干净 đọc là gānjìng, nghĩa là sạch sẽ. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Dễ
+Câu 137. Chọn chữ Hán có nghĩa “sạch sẽ”.
+A. 干净
+B. 狗
+C. 开玩笑
+D. 歌
+Đáp án: A
+Lời giải: 干净 đọc là gānjìng, nghĩa là sạch sẽ. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Dễ
+Câu 138. Chọn phiên âm đúng của “干净”.
+A. suì
+B. zhèngzài
+C. gānjìng
+D. shuìjiào
+Đáp án: C
+Lời giải: 干净 đọc là gānjìng, nghĩa là sạch sẽ. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Dễ
+Câu 139. Trong bài học, “救” có nghĩa là gì?
+A. cứu
+B. con trai
+C. anh trai
+D. người nhà, thành viên gia đình
+Đáp án: A
+Lời giải: 救 đọc là jiù, nghĩa là cứu. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Dễ
+Câu 140. Chọn chữ Hán có nghĩa “cứu”.
+A. 救
+B. 拍照
+C. 妈妈
+D. 开玩笑
+Đáp án: A
+Lời giải: 救 đọc là jiù, nghĩa là cứu. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Dễ
+Câu 141. Chọn phiên âm đúng của “救”.
+A. jiù
+B. gānjìng
+C. pāi zhào
+D. kàn bìng
+Đáp án: A
+Lời giải: 救 đọc là jiù, nghĩa là cứu. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Dễ
+Câu 142. Trong bài học, “小狗” có nghĩa là gì?
+A. chụp ảnh
+B. làm việc, công việc
+C. ngủ
+D. chó con, chú chó nhỏ
+Đáp án: D
+Lời giải: 小狗 đọc là xiǎogǒu, nghĩa là chó con, chú chó nhỏ. Tham chiếu: PDF bài 10, trang 9.
+Độ khó: Dễ
+Câu 143. Chọn chữ Hán có nghĩa “chó con, chú chó nhỏ”.
+A. 昨天晚上
+B. 小狗
+C. 可爱
+D. 救
+Đáp án: B
+Lời giải: 小狗 đọc là xiǎogǒu, nghĩa là chó con, chú chó nhỏ. Tham chiếu: PDF bài 10, trang 9.
+Độ khó: Dễ
+Câu 144. Chọn phiên âm đúng của “小狗”.
+A. chàng gē
+B. xiǎogǒu
+C. duō dà
+D. háizi
+Đáp án: B
+Lời giải: 小狗 đọc là xiǎogǒu, nghĩa là chó con, chú chó nhỏ. Tham chiếu: PDF bài 10, trang 9.
+Độ khó: Dễ
+Câu 145. Trong bài học, “唱歌” có nghĩa là gì?
+A. hát, ca hát
+B. ba tuổi
+C. mèo
+D. thời gian
+Đáp án: A
+Lời giải: 唱歌 đọc là chàng gē, nghĩa là hát, ca hát. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 146. Chọn chữ Hán có nghĩa “hát, ca hát”.
+A. 唱歌
+B. 法国菜
+C. 十二岁
+D. 哥哥
+Đáp án: A
+Lời giải: 唱歌 đọc là chàng gē, nghĩa là hát, ca hát. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 147. Chọn phiên âm đúng của “唱歌”.
+A. chàng gē
+B. cháng
+C. shíjiān
+D. zhī
+Đáp án: A
+Lời giải: 唱歌 đọc là chàng gē, nghĩa là hát, ca hát. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 148. Trong bài học, “正在” có nghĩa là gì?
+A. khi nào
+B. đang; chỉ hành động đang diễn ra
+C. cứu
+D. bị bệnh
+Đáp án: B
+Lời giải: 正在 đọc là zhèngzài, nghĩa là đang; chỉ hành động đang diễn ra. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 149. Chọn chữ Hán có nghĩa “đang; chỉ hành động đang diễn ra”.
+A. 十二岁
+B. 工作
+C. 正在
+D. 歌
+Đáp án: C
+Lời giải: 正在 đọc là zhèngzài, nghĩa là đang; chỉ hành động đang diễn ra. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 150. Chọn phiên âm đúng của “正在”.
+A. kě'ài
+B. zhèngzài
+C. zài jiā de shíhou
+D. jiārén
+Đáp án: B
+Lời giải: 正在 đọc là zhèngzài, nghĩa là đang; chỉ hành động đang diễn ra. Tham chiếu: PDF bài 10, trang 10.
+Độ khó: Dễ
+Câu 151. Trong bài học, “打算” có nghĩa là gì?
+A. nhưng
+B. anh trai
+C. dự định
+D. bức ảnh
+Đáp án: C
+Lời giải: 打算 đọc là dǎsuàn, nghĩa là dự định. Tham chiếu: PDF bài 10, trang 11.
+Độ khó: Dễ
+Câu 152. Chọn chữ Hán có nghĩa “dự định”.
+A. 打算
+B. 妈妈
+C. 岁
+D. 起床
+Đáp án: A
+Lời giải: 打算 đọc là dǎsuàn, nghĩa là dự định. Tham chiếu: PDF bài 10, trang 11.
+Độ khó: Dễ
+Câu 153. Chọn phiên âm đúng của “打算”.
+A. sān suì
+B. Měiguó
+C. dǎsuàn
+D. jiā
+Đáp án: C
+Lời giải: 打算 đọc là dǎsuàn, nghĩa là dự định. Tham chiếu: PDF bài 10, trang 11.
+Độ khó: Dễ
+Câu 154. Trong bài học, “生病” có nghĩa là gì?
+A. thường, thường xuyên
+B. bị bệnh
+C. lượng từ cho nhiều loài động vật
+D. sinh viên đại học
+Đáp án: B
+Lời giải: 生病 đọc là shēng bìng, nghĩa là bị bệnh. Tham chiếu: PDF bài 10, trang 11.
+Độ khó: Dễ
+Câu 155. Chọn chữ Hán có nghĩa “bị bệnh”.
+A. 别人
+B. 谁
+C. 生病
+D. 家人
+Đáp án: C
+Lời giải: 生病 đọc là shēng bìng, nghĩa là bị bệnh. Tham chiếu: PDF bài 10, trang 11.
+Độ khó: Dễ
+Câu 156. Chọn phiên âm đúng của “生病”.
+A. duō dà
+B. kě'ài
+C. shíhou
+D. shēng bìng
+Đáp án: D
+Lời giải: 生病 đọc là shēng bìng, nghĩa là bị bệnh. Tham chiếu: PDF bài 10, trang 11.
+Độ khó: Dễ
+Câu 157. Trong bài học, “什么时候” có nghĩa là gì?
+A. người nhà, thành viên gia đình
+B. khi nào
+C. người Anh
+D. rửa, giặt, gội
+Đáp án: B
+Lời giải: 什么时候 đọc là shénme shíhou, nghĩa là khi nào. Tham chiếu: PDF bài 10, trang 12.
+Độ khó: Dễ
+Câu 158. Chọn chữ Hán có nghĩa “khi nào”.
+A. 谁
+B. 猫
+C. 什么时候
+D. 父亲
+Đáp án: C
+Lời giải: 什么时候 đọc là shénme shíhou, nghĩa là khi nào. Tham chiếu: PDF bài 10, trang 12.
+Độ khó: Dễ
+Câu 159. Chọn phiên âm đúng của “什么时候”.
+A. suì
+B. kǒu
+C. dǎsuàn
+D. shénme shíhou
+Đáp án: D
+Lời giải: 什么时候 đọc là shénme shíhou, nghĩa là khi nào. Tham chiếu: PDF bài 10, trang 12.
+Độ khó: Dễ
+Câu 160. Trong bài học, “今年” có nghĩa là gì?
+A. mới, mãi mới; nhấn mạnh muộn
+B. món ăn Pháp
+C. nhưng
+D. năm nay
+Đáp án: D
+Lời giải: 今年 đọc là jīnnián, nghĩa là năm nay. Tham chiếu: PDF bài 10, trang 13.
+Độ khó: Dễ
+Câu 161. Chọn chữ Hán có nghĩa “năm nay”.
+A. 唱歌
+B. 小狗
+C. 口
+D. 今年
+Đáp án: D
+Lời giải: 今年 đọc là jīnnián, nghĩa là năm nay. Tham chiếu: PDF bài 10, trang 13.
+Độ khó: Dễ
+Câu 162. Chọn phiên âm đúng của “今年”.
+A. zuótiān wǎnshang
+B. jīnnián
+C. gōngrén
+D. háizi
+Đáp án: B
+Lời giải: 今年 đọc là jīnnián, nghĩa là năm nay. Tham chiếu: PDF bài 10, trang 13.
+Độ khó: Dễ
+Câu 163. Trong bài học, “昨天晚上” có nghĩa là gì?
+A. lượng từ cho nhiều loài động vật
+B. tối hôm qua
+C. có lúc, đôi khi
+D. mới, mãi mới; nhấn mạnh muộn
+Đáp án: B
+Lời giải: 昨天晚上 đọc là zuótiān wǎnshang, nghĩa là tối hôm qua. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Dễ
+Câu 164. Chọn chữ Hán có nghĩa “tối hôm qua”.
+A. 岁
+B. 救
+C. 昨天晚上
+D. 时候
+Đáp án: C
+Lời giải: 昨天晚上 đọc là zuótiān wǎnshang, nghĩa là tối hôm qua. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Dễ
+Câu 165. Chọn phiên âm đúng của “昨天晚上”.
+A. zuótiān wǎnshang
+B. lǜshī
+C. fùqīn
+D. shuìjiào
+Đáp án: A
+Lời giải: 昨天晚上 đọc là zuótiān wǎnshang, nghĩa là tối hôm qua. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Dễ
+Câu 166. Trong bài học, “看电视” có nghĩa là gì?
+A. mẹ
+B. xem tivi
+C. nước Mỹ
+D. em gái
+Đáp án: B
+Lời giải: 看电视 đọc là kàn diànshì, nghĩa là xem tivi. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Dễ
+Câu 167. Chọn chữ Hán có nghĩa “xem tivi”.
+A. 英国
+B. 看电视
+C. 父亲
+D. 妹妹
+Đáp án: B
+Lời giải: 看电视 đọc là kàn diànshì, nghĩa là xem tivi. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Dễ
+Câu 168. Chọn phiên âm đúng của “看电视”.
+A. pāi zhào
+B. yǒu shíhou
+C. kàn diànshì
+D. duō dà
+Đáp án: C
+Lời giải: 看电视 đọc là kàn diànshì, nghĩa là xem tivi. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Dễ
+Câu 169. Trong bài học, “才” có nghĩa là gì?
+A. mẹ
+B. năm nay
+C. mới, mãi mới; nhấn mạnh muộn
+D. bị bệnh
+Đáp án: C
+Lời giải: 才 đọc là cái, nghĩa là mới, mãi mới; nhấn mạnh muộn. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Dễ
+Câu 170. Chọn chữ Hán có nghĩa “mới, mãi mới; nhấn mạnh muộn”.
+A. 才
+B. 唱歌
+C. 男朋友
+D. 时间
+Đáp án: A
+Lời giải: 才 đọc là cái, nghĩa là mới, mãi mới; nhấn mạnh muộn. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Dễ
+Câu 171. Chọn phiên âm đúng của “才”.
+A. shíjiān
+B. cái
+C. jiějie
+D. xǐ yīfu
+Đáp án: B
+Lời giải: 才 đọc là cái, nghĩa là mới, mãi mới; nhấn mạnh muộn. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Dễ
+Câu 172. Trong bài học, “有时候” có nghĩa là gì?
+A. có lúc, đôi khi
+B. luật sư
+C. thường, thường xuyên
+D. và; nối danh từ hoặc đại từ
+Đáp án: A
+Lời giải: 有时候 đọc là yǒu shíhou, nghĩa là có lúc, đôi khi. Tham chiếu: PDF bài 10, trang 17.
+Độ khó: Dễ
+Câu 173. Chọn chữ Hán có nghĩa “có lúc, đôi khi”.
+A. 别人
+B. 有时候
+C. 多大
+D. 起床
+Đáp án: B
+Lời giải: 有时候 đọc là yǒu shíhou, nghĩa là có lúc, đôi khi. Tham chiếu: PDF bài 10, trang 17.
+Độ khó: Dễ
+Câu 174. Chọn phiên âm đúng của “有时候”.
+A. yǒu shíhou
+B. shíjiān
+C. māo
+D. shuìjiào
+Đáp án: A
+Lời giải: 有时候 đọc là yǒu shíhou, nghĩa là có lúc, đôi khi. Tham chiếu: PDF bài 10, trang 17.
+Độ khó: Dễ
+Câu 175. Trong bài học, “在家的时候” có nghĩa là gì?
+A. khi ở nhà
+B. chó
+C. bố
+D. nói đùa
+Đáp án: A
+Lời giải: 在家的时候 đọc là zài jiā de shíhou, nghĩa là khi ở nhà. Tham chiếu: PDF bài 10, trang 17.
+Độ khó: Dễ
+Câu 176. Chọn chữ Hán có nghĩa “khi ở nhà”.
+A. 猫
+B. 哥哥
+C. 姐姐
+D. 在家的时候
+Đáp án: D
+Lời giải: 在家的时候 đọc là zài jiā de shíhou, nghĩa là khi ở nhà. Tham chiếu: PDF bài 10, trang 17.
+Độ khó: Dễ
+Câu 177. Chọn phiên âm đúng của “在家的时候”.
+A. sān suì
+B. zài jiā de shíhou
+C. biérén
+D. háizi
+Đáp án: B
+Lời giải: 在家的时候 đọc là zài jiā de shíhou, nghĩa là khi ở nhà. Tham chiếu: PDF bài 10, trang 17.
+Độ khó: Dễ
+Câu 178. Trong bài học, “大学生” có nghĩa là gì?
+A. khi ở nhà
+B. sinh viên đại học
+C. chụp ảnh
+D. nhà vệ sinh
+Đáp án: B
+Lời giải: 大学生 đọc là dàxuéshēng, nghĩa là sinh viên đại học. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Dễ
+Câu 179. Chọn chữ Hán có nghĩa “sinh viên đại học”.
+A. 大学生
+B. 拍照
+C. 睡觉
+D. 生病
+Đáp án: A
+Lời giải: 大学生 đọc là dàxuéshēng, nghĩa là sinh viên đại học. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Dễ
+Câu 180. Chọn phiên âm đúng của “大学生”.
+A. xǐ wǎn
+B. dàxuéshēng
+C. lǎobà
+D. gǒu
+Đáp án: B
+Lời giải: 大学生 đọc là dàxuéshēng, nghĩa là sinh viên đại học. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Dễ
+Câu 181. Trong bài học, “中学生” có nghĩa là gì?
+A. bố
+B. học sinh trung học
+C. bao nhiêu tuổi, lớn cỡ nào
+D. thức dậy, ra khỏi giường
+Đáp án: B
+Lời giải: 中学生 đọc là zhōngxuéshēng, nghĩa là học sinh trung học. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Dễ
+Câu 182. Chọn chữ Hán có nghĩa “học sinh trung học”.
+A. 妈妈
+B. 照片
+C. 中学生
+D. 歌
+Đáp án: C
+Lời giải: 中学生 đọc là zhōngxuéshēng, nghĩa là học sinh trung học. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Dễ
+Câu 183. Chọn phiên âm đúng của “中学生”.
+A. gē
+B. xǐ yīfu
+C. hé
+D. zhōngxuéshēng
+Đáp án: D
+Lời giải: 中学生 đọc là zhōngxuéshēng, nghĩa là học sinh trung học. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Dễ
+Câu 184. Trong bài học, “十二岁” có nghĩa là gì?
+A. lượng từ đếm người trong gia đình
+B. mười hai tuổi
+C. xem tivi
+D. con trai
+Đáp án: B
+Lời giải: 十二岁 đọc là shí'èr suì, nghĩa là mười hai tuổi. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Dễ
+Câu 185. Chọn chữ Hán có nghĩa “mười hai tuổi”.
+A. 哥哥
+B. 英国
+C. 医生
+D. 十二岁
+Đáp án: D
+Lời giải: 十二岁 đọc là shí'èr suì, nghĩa là mười hai tuổi. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Dễ
+Câu 186. Chọn phiên âm đúng của “十二岁”.
+A. jiā
+B. shí'èr suì
+C. xǐ wǎn
+D. jiārén
+Đáp án: B
+Lời giải: 十二岁 đọc là shí'èr suì, nghĩa là mười hai tuổi. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Dễ
+Câu 187. Trong bài học, “男朋友” có nghĩa là gì?
+A. chó
+B. bạn trai
+C. tuổi
+D. cứu
+Đáp án: B
+Lời giải: 男朋友 đọc là nán péngyou, nghĩa là bạn trai. Tham chiếu: PDF bài 10, trang 21.
+Độ khó: Dễ
+Câu 188. Chọn chữ Hán có nghĩa “bạn trai”.
+A. 男朋友
+B. 睡觉
+C. 今年
+D. 在家的时候
+Đáp án: A
+Lời giải: 男朋友 đọc là nán péngyou, nghĩa là bạn trai. Tham chiếu: PDF bài 10, trang 21.
+Độ khó: Dễ
+Câu 189. Chọn phiên âm đúng của “男朋友”.
+A. shíhou
+B. zhàopiàn
+C. jiā
+D. nán péngyou
+Đáp án: D
+Lời giải: 男朋友 đọc là nán péngyou, nghĩa là bạn trai. Tham chiếu: PDF bài 10, trang 21.
+Độ khó: Dễ
+Câu 190. Trong bài học, “三岁” có nghĩa là gì?
+A. ba tuổi
+B. bố
+C. lượng từ cho vật dài; cũng dùng đếm chó
+D. có lúc, đôi khi
+Đáp án: A
+Lời giải: 三岁 đọc là sān suì, nghĩa là ba tuổi. Tham chiếu: PDF bài 10, trang 22.
+Độ khó: Dễ
+Câu 191. Chọn chữ Hán có nghĩa “ba tuổi”.
+A. 谁
+B. 母亲
+C. 老爸
+D. 三岁
+Đáp án: D
+Lời giải: 三岁 đọc là sān suì, nghĩa là ba tuổi. Tham chiếu: PDF bài 10, trang 22.
+Độ khó: Dễ
+Câu 192. Chọn phiên âm đúng của “三岁”.
+A. jīnnián
+B. kǒu
+C. kàn diànshì
+D. sān suì
+Đáp án: D
+Lời giải: 三岁 đọc là sān suì, nghĩa là ba tuổi. Tham chiếu: PDF bài 10, trang 22.
+Độ khó: Dễ
+Câu 193. Trong bài học, “英国人” có nghĩa là gì?
+A. đang; chỉ hành động đang diễn ra
+B. lượng từ cho vật dài; cũng dùng đếm chó
+C. người Anh
+D. tuổi
+Đáp án: C
+Lời giải: 英国人 đọc là Yīngguó rén, nghĩa là người Anh. Tham chiếu: PDF bài 10, trang 27.
+Độ khó: Dễ
+Câu 194. Chọn chữ Hán có nghĩa “người Anh”.
+A. 别人
+B. 英国人
+C. 才
+D. 看电视
+Đáp án: B
+Lời giải: 英国人 đọc là Yīngguó rén, nghĩa là người Anh. Tham chiếu: PDF bài 10, trang 27.
+Độ khó: Dễ
+Câu 195. Chọn phiên âm đúng của “英国人”.
+A. Yīngguó rén
+B. chàng gē
+C. Yīngguó huà
+D. lǎomā
+Đáp án: A
+Lời giải: 英国人 đọc là Yīngguó rén, nghĩa là người Anh. Tham chiếu: PDF bài 10, trang 27.
+Độ khó: Dễ
+Câu 196. Trong bài học, “英国” có nghĩa là gì?
+A. cứu
+B. bức ảnh
+C. lượng từ cho vật dài; cũng dùng đếm chó
+D. nước Anh
+Đáp án: D
+Lời giải: 英国 đọc là Yīngguó, nghĩa là nước Anh. Tham chiếu: PDF bài 10, trang 27.
+Độ khó: Dễ
+Câu 197. Chọn chữ Hán có nghĩa “nước Anh”.
+A. 英国人
+B. 生病
+C. 英国
+D. 狗
+Đáp án: C
+Lời giải: 英国 đọc là Yīngguó, nghĩa là nước Anh. Tham chiếu: PDF bài 10, trang 27.
+Độ khó: Dễ
+Câu 198. Chọn phiên âm đúng của “英国”.
+A. gēge
+B. Yīngguó
+C. māma
+D. dàxuéshēng
+Đáp án: B
+Lời giải: 英国 đọc là Yīngguó, nghĩa là nước Anh. Tham chiếu: PDF bài 10, trang 27.
+Độ khó: Dễ
+Câu 199. Trong bài học, “英国话” có nghĩa là gì?
+A. thức dậy, ra khỏi giường
+B. cứu
+C. tiếng Anh; cách nói trong bài đọc
+D. bao nhiêu tuổi, lớn cỡ nào
+Đáp án: C
+Lời giải: 英国话 đọc là Yīngguó huà, nghĩa là tiếng Anh; cách nói trong bài đọc. Tham chiếu: PDF bài 10, trang 27.
+Độ khó: Dễ
+Câu 200. Chọn chữ Hán có nghĩa “tiếng Anh; cách nói trong bài đọc”.
+A. 老爸
+B. 英国话
+C. 工人
+D. 正在
+Đáp án: B
+Lời giải: 英国话 đọc là Yīngguó huà, nghĩa là tiếng Anh; cách nói trong bài đọc. Tham chiếu: PDF bài 10, trang 27.
+Độ khó: Dễ
+Câu 201. Chọn phiên âm đúng của “英国话”.
+A. shēng bìng
+B. Yīngguó huà
+C. suì
+D. nǚ'ér
+Đáp án: B
+Lời giải: 英国话 đọc là Yīngguó huà, nghĩa là tiếng Anh; cách nói trong bài đọc. Tham chiếu: PDF bài 10, trang 27.
+Độ khó: Dễ
+Câu 202. Trong bài học, “法国菜” có nghĩa là gì?
+A. món ăn Pháp
+B. công nhân
+C. nhưng
+D. bị bệnh
+Đáp án: A
+Lời giải: 法国菜 đọc là Fǎguó cài, nghĩa là món ăn Pháp. Tham chiếu: PDF bài 10, trang 27.
+Độ khó: Dễ
+Câu 203. Chọn chữ Hán có nghĩa “món ăn Pháp”.
+A. 工人
+B. 猫
+C. 法国菜
+D. 歌
+Đáp án: C
+Lời giải: 法国菜 đọc là Fǎguó cài, nghĩa là món ăn Pháp. Tham chiếu: PDF bài 10, trang 27.
+Độ khó: Dễ
+Câu 204. Chọn phiên âm đúng của “法国菜”.
+A. Fǎguó cài
+B. dǎsuàn
+C. zhī
+D. lǎomā
+Đáp án: A
+Lời giải: 法国菜 đọc là Fǎguó cài, nghĩa là món ăn Pháp. Tham chiếu: PDF bài 10, trang 27.
+Độ khó: Dễ
+Câu 205. Trong bài học, “美国” có nghĩa là gì?
+A. bố; cách gọi thân mật
+B. nước Mỹ
+C. công nhân
+D. mèo
+Đáp án: B
+Lời giải: 美国 đọc là Měiguó, nghĩa là nước Mỹ. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Dễ
+Câu 206. Chọn chữ Hán có nghĩa “nước Mỹ”.
+A. 救
+B. 美国
+C. 孩子
+D. 打算
+Đáp án: B
+Lời giải: 美国 đọc là Měiguó, nghĩa là nước Mỹ. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Dễ
+Câu 207. Chọn phiên âm đúng của “美国”.
+A. nǚ'ér
+B. Měiguó
+C. shí'èr suì
+D. zhàopiàn
+Đáp án: B
+Lời giải: 美国 đọc là Měiguó, nghĩa là nước Mỹ. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Dễ
+Câu 208. Trong bài học, “工作” có nghĩa là gì?
+A. mới, mãi mới; nhấn mạnh muộn
+B. làm việc, công việc
+C. năm nay
+D. hát, ca hát
+Đáp án: B
+Lời giải: 工作 đọc là gōngzuò, nghĩa là làm việc, công việc. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Dễ
+Câu 209. Chọn chữ Hán có nghĩa “làm việc, công việc”.
+A. 儿子
+B. 孩子
+C. 工作
+D. 口
+Đáp án: C
+Lời giải: 工作 đọc là gōngzuò, nghĩa là làm việc, công việc. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Dễ
+Câu 210. Chọn phiên âm đúng của “工作”.
+A. qǐchuáng
+B. gōngzuò
+C. shēng bìng
+D. Fǎguó cài
+Đáp án: B
+Lời giải: 工作 đọc là gōngzuò, nghĩa là làm việc, công việc. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Dễ
+Câu 211. Trong bài học, “家” có nghĩa là gì?
+A. khi ở nhà
+B. nhà, gia đình
+C. mẹ; cách gọi thân mật
+D. ngủ
+Đáp án: B
+Lời giải: 家 đọc là jiā, nghĩa là nhà, gia đình. Tham chiếu: PDF bài 10, trang 19.
+Độ khó: Dễ
+Câu 212. Chọn chữ Hán có nghĩa “nhà, gia đình”.
+A. 中学生
+B. 家
+C. 三岁
+D. 才
+Đáp án: B
+Lời giải: 家 đọc là jiā, nghĩa là nhà, gia đình. Tham chiếu: PDF bài 10, trang 19.
+Độ khó: Dễ
+Câu 213. Chọn phiên âm đúng của “家”.
+A. lǎomā
+B. Fǎguó cài
+C. jiā
+D. lǎobà
+Đáp án: C
+Lời giải: 家 đọc là jiā, nghĩa là nhà, gia đình. Tham chiếu: PDF bài 10, trang 19.
+Độ khó: Dễ
+Câu 214. Điền lượng từ: 我家有五___人。
+A. 杯
+B. 条
+C. 只
+D. 口
+Đáp án: D
+Lời giải: Đếm số người trong gia đình thường dùng 口. Tham chiếu: PDF bài 10, trang 19.
+Độ khó: Vừa
+Câu 215. Chọn câu hỏi số người trong gia đình.
+A. 你家有几只人？
+B. 你家有几口人？
+C. 你家多少点人？
+D. 你家几岁人？
+Đáp án: B
+Lời giải: 几口人 hỏi gia đình có mấy người. Tham chiếu: PDF bài 10, trang 19.
+Độ khó: Vừa
+Câu 216. “儿子” chỉ ai?
+A. Con gái
+B. Em gái
+C. Chị gái
+D. Con trai
+Đáp án: D
+Lời giải: 儿子 là con trai, khác 女儿 là con gái. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Vừa
+Câu 217. “女儿” chỉ ai?
+A. Con trai
+B. Con gái
+C. Anh trai
+D. Bố
+Đáp án: B
+Lời giải: 女儿 là con gái. Tham chiếu: PDF bài 10, trang 5.
+Độ khó: Vừa
+Câu 218. “洗手间” là nơi nào?
+A. Hiệu ảnh
+B. Rạp chiếu phim
+C. Nhà hàng
+D. Nhà vệ sinh
+Đáp án: D
+Lời giải: 洗手间 là nhà vệ sinh, không có nghĩa chụp ảnh. Tham chiếu: PDF bài 10, trang 6.
+Độ khó: Vừa
+Câu 219. Động từ nào có nghĩa “chụp ảnh”?
+A. 洗手间
+B. 拍照
+C. 看病
+D. 起床
+Đáp án: B
+Lời giải: 拍照 là chụp ảnh; 照片 là bức ảnh. Tham chiếu: PDF bài 10, trang 3.
+Độ khó: Vừa
+Câu 220. Điền từ: 爸爸___妈妈都在家。
+A. 但是
+B. 和
+C. 时候
+D. 岁
+Đáp án: B
+Lời giải: 和 nối hai danh từ 爸爸 và 妈妈. Tham chiếu: PDF bài 10, trang 7.
+Độ khó: Vừa
+Câu 221. Điền từ: 她今年十二___。
+A. 岁
+B. 口
+C. 只
+D. 号
+Đáp án: A
+Lời giải: 岁 đứng sau số tuổi. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Vừa
+Câu 222. Chọn câu hỏi tuổi tự nhiên.
+A. 你妹妹今年多大？
+B. 你妹妹今年什么月？
+C. 你妹妹今年哪儿岁？
+D. 你妹妹今年几口？
+Đáp án: A
+Lời giải: 多大 dùng hỏi tuổi trong ngữ cảnh này. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Vừa
+Câu 223. Chọn câu trả lời tuổi đúng.
+A. 她今年十二口。
+B. 她今年岁十二。
+C. 她今年十二岁。
+D. 她今年十二个岁。
+Đáp án: C
+Lời giải: Số + 岁 biểu thị tuổi. Tham chiếu: PDF bài 10, trang 20.
+Độ khó: Vừa
+Câu 224. Điền lượng từ: 一___小狗。
+A. 口
+B. 杯
+C. 本
+D. 只
+Đáp án: D
+Lời giải: 只 có thể đếm chó; 条 cũng dùng được nhưng không nằm trong lựa chọn này. Tham chiếu: PDF bài 10, trang 13.
+Độ khó: Vừa
+Câu 225. “照片” và “拍照” khác nhau thế nào?
+A. Anh trai và em trai
+B. Hai từ chỉ bác sĩ
+C. Bức ảnh và hành động chụp ảnh
+D. Hai cách nói nhà vệ sinh
+Đáp án: C
+Lời giải: 照片 là danh từ, 拍照 là cụm động từ. Tham chiếu: PDF bài 10, trang 3.
+Độ khó: Vừa
+Câu 226. Đọc “我爸爸是律师。” Bố làm nghề gì?
+A. Giáo viên
+B. Luật sư
+C. Công nhân
+D. Bác sĩ
+Đáp án: B
+Lời giải: 律师 nghĩa là luật sư. Tham chiếu: PDF bài 10, trang 19.
+Độ khó: Vừa
+Câu 227. Đọc “我哥哥是医生，姐姐是律师。” Ai là bác sĩ?
+A. Em gái
+B. Anh trai
+C. Chị gái
+D. Mẹ
+Đáp án: B
+Lời giải: 我哥哥是医生 nêu nghề của anh trai. Tham chiếu: PDF bài 10, trang 22.
+Độ khó: Vừa
+Câu 228. Đọc “我家有五口人。” Gia đình có mấy người?
+A. Sáu người
+B. Bốn người
+C. Ba người
+D. Năm người
+Đáp án: D
+Lời giải: 五 là năm; 口 là lượng từ. Tham chiếu: PDF bài 10, trang 19.
+Độ khó: Vừa
+Câu 229. Điền từ: 有时候我看电视，___我听音乐。
+A. 但是的
+B. 的时候
+C. 有时候
+D. 什么时间
+Đáp án: C
+Lời giải: 有时候…有时候… diễn tả những lúc làm các việc khác nhau. Tham chiếu: PDF bài 10, trang 17.
+Độ khó: Vừa
+Câu 230. Điền từ: 我学习___常听音乐。
+A. 的时候
+B. 时候有
+C. 什么时候的
+D. 有时候的
+Đáp án: A
+Lời giải: Mệnh đề + 的时候 diễn tả khi làm việc đó. Tham chiếu: PDF bài 10, trang 17.
+Độ khó: Vừa
+Câu 231. “但是” dùng để biểu thị quan hệ gì?
+A. Cộng thêm số lượng
+B. Điểm xuất phát
+C. Mốc giờ
+D. Tương phản, chuyển ý
+Đáp án: D
+Lời giải: 但是 nghĩa là nhưng. Tham chiếu: PDF bài 10, trang 12.
+Độ khó: Vừa
+Câu 232. Điền từ: 我晚上十一点睡觉，早上七点___。
+A. 照片
+B. 洗手间
+C. 生气
+D. 起床
+Đáp án: D
+Lời giải: 起床 là thức dậy, ra khỏi giường. Tham chiếu: PDF bài 10, trang 14.
+Độ khó: Vừa
+Câu 233. Chọn câu hỏi có nghĩa “Bố bạn làm nghề gì?”.
+A. 你爸爸几口工作？
+B. 你爸爸工作在哪个人？
+C. 你爸爸做什么工作？
+D. 你爸爸工作几岁？
+Đáp án: C
+Lời giải: 做什么工作 hỏi nghề nghiệp. Tham chiếu: PDF bài 10, trang 19.
+Độ khó: Vừa
+[NGU PHAP]
+Đếm thành viên gia đình với 口：你家有几口人？ Gia đình bạn có mấy người? 我家有五口人。 Gia đình tôi có năm người. 口 là lượng từ quen dùng khi nói số thành viên trong gia đình; không dùng 五个人口. (PDF trang 19)
+Nối danh từ với 和：爸爸和妈妈都在家。 Bố và mẹ đều ở nhà. 和 nối danh từ hoặc đại từ, không đặt 和 giữa hai vị ngữ để thay dấu phẩy một cách máy móc. (PDF trang 7)
+Hỏi tuổi và nói tuổi：你妹妹今年多大？ Em gái bạn năm nay bao nhiêu tuổi? 她今年十二岁。 Em ấy năm nay mười hai tuổi. Số tuổi đứng trước 岁. Với trẻ nhỏ có thể hỏi 几岁. (PDF trang 20)
+Thời điểm và thói quen thay đổi：有时候我在家看电视，有时候我跟朋友出去玩。 Có lúc tôi xem tivi ở nhà, có lúc ra ngoài chơi với bạn. 我学习的时候常听音乐。 Khi học, tôi thường nghe nhạc. Mệnh đề + 的时候: khi làm gì; 有时候…有时候…: có lúc…có lúc…. (PDF trang 17)
+[BAI DOC]
+Gia đình của Hải Luân：欧文：你家有几口人？ 海伦：我家有五口人，爸爸、妈妈、弟弟、妹妹，还有我。 欧文：你爸爸做什么工作？ 海伦：他是律师。我的妹妹今年十二岁。 欧文：你的家人都在美国吗？ 海伦：对，他们都在美国。 Hội thoại rút gọn từ bài khóa: nhà Hải Luân có năm người, bố là luật sư, em gái mười hai tuổi. (PDF trang 19)
+Bức ảnh gia đình：高小明：这是你家人的照片吗？ 韩美京：是。这是我爸爸、妈妈、哥哥和姐姐。 高小明：你家还有一只狗？ 韩美京：那是我妹妹。她又漂亮又可爱。 高小明：你哥哥、姐姐做什么工作？ 韩美京：我哥哥是医生，姐姐是律师。 Hội thoại rút gọn theo bài khóa: cách gọi chú chó như em gái thể hiện tình cảm; anh trai là bác sĩ, chị gái là luật sư. (PDF trang 21)
+[LUYEN NOI]
+你家有几口人？ | Gia đình bạn có mấy người? | 我家有五口人。 | Chấp nhận số người khác; cần nói số + 口人 hoặc 个 人 tự nhiên, không xác minh gia đình thật.
+你家都有什么人？ | Gia đình bạn gồm những ai? | 我家有爸爸、妈妈和我。 | Chấp nhận thành viên khác hoặc gia đình tưởng tượng; không bắt buộc có anh chị em.
+你有哥哥姐姐吗？ | Bạn có anh trai, chị gái không? | 我没有哥哥姐姐。 | Chấp nhận 有 hoặc 没有; nếu có thể giới thiệu ngắn về người thân.
+你爸爸或者妈妈做什么工作？ | Bố hoặc mẹ bạn làm công việc gì? | 我妈妈是老师。 | Chấp nhận nghề khác, không đi làm hoặc không muốn nêu; chấm cách diễn đạt, không xác minh hoàn cảnh gia đình.
+你今年多大？ | Bạn năm nay bao nhiêu tuổi? | 我今年十八岁。 | Chấp nhận tuổi khác hoặc ví dụ tưởng tượng; cần trật tự số + 岁.
+你家有小狗或者小猫吗？ | Nhà bạn có chó hoặc mèo không? | 我家有一只小猫。 | Chấp nhận 有 hoặc 没有; dùng 只 cho mèo, 只 hoặc 条 cho chó.
+请介绍一下你的一个家人，好吗？ | Bạn hãy giới thiệu một người thân được không? | 我姐姐是学生，她很可爱。 | Chấp nhận thành viên hoặc nhân vật tưởng tượng khác; một đến hai thông tin đủ đúng ý.
+你早上几点起床？ | Bạn thức dậy lúc mấy giờ buổi sáng? | 我早上七点起床。 | Chấp nhận giờ khác; chú ý thời gian trước động từ.
+你在家的时候常做什么？ | Khi ở nhà bạn thường làm gì? | 我在家的时候常看书。 | Chấp nhận hoạt động khác; khuyến khích 的时候 và 常.
+你喜欢给家人拍照吗？ | Bạn có thích chụp ảnh cho người thân không? | 我喜欢给家人拍照。 | Chấp nhận thích hoặc không thích; cần hiểu 拍照 là chụp ảnh và 给家人 là cho người thân.

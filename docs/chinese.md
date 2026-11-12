@@ -1,5 +1,24 @@
 # Lộ trình Tiếng Trung
 
+## Bài Q1 số 7–10
+
+Bốn bài tiếp theo của HSK 1 được biên soạn từ các PDF người dùng cung cấp: **中国银行在哪儿**, **你的生日是几月几号**, **你喜欢中国电影还是美国电影**, **你家有几口人**. Đã đối chiếu trực quan 135 trang PDF dạng ảnh. Mỗi bài có Từ mới, Thẻ lật, Luyện nghe, Quiz 20 câu, Bài đọc, Luyện vận dụng và Luyện nói trong giao diện hiện có.
+
+| Bài | Từ vựng | Ngân hàng quiz | Ngữ pháp / Bài đọc | Vận dụng | Câu luyện nói |
+|---|---:|---:|---:|---:|---:|
+| 7 | 70 | 230 | 4 / 2 | 40 | 10 |
+| 8 | 86 | 278 | 4 / 2 | 40 | 10 |
+| 9 | 71 | 233 | 4 / 2 | 40 | 10 |
+| 10 | 71 | 233 | 4 / 2 | 40 | 10 |
+
+Luyện nói giao sẵn 3 câu đầu, 90 giây, theo thứ tự; có nghĩa, ví dụ trả lời và tiêu chí để cô kiểm tra/chấm, được ẩn khỏi API học sinh. Các trường hợp trả lời cá nhân được chấp nhận theo ý nghĩa, không bắt buộc giống câu mẫu. Mỗi dạng vận dụng có 10 câu; phần nghe hội thoại không kèm nghĩa hoặc pinyin làm lộ đáp án. Các từ đồng nghĩa như 爸爸/父亲/老爸 và 星期/周/礼拜 không được dùng làm lựa chọn gây nhiễu cho nhau.
+
+Nguồn, Word tổng hợp, bảng từ, Word luyện nói, dữ liệu JSON/TXT và ghi chú sửa lỗi slide ở [bộ tài liệu bài 7–10](../tai-lieu/tieng-trung-bai-7-10/HUONG-DAN.md). Có bản ZIP tại `tai-lieu/tieng-trung-bai-7-10.zip`. Sửa đúng các nghĩa `儿子 = con trai`, `女儿 = con gái`, `洗手间 = nhà vệ sinh`, `拍照 = chụp ảnh`. Không đoán đáp án từ âm thanh chưa được cung cấp.
+
+`backend/scripts/import-chinese-q1-lessons-7-10.mjs` mặc định chỉ xem trước; `--apply` thêm cả bốn bài vào MySQL cục bộ trong một giao dịch. Script chỉ thêm dữ liệu, không sửa/xóa bài khác; từ chối đích từ xa hoặc mục trùng tên/vị trí có nội dung khác. Nhập lại giữ nguyên bài đã có và các chỉnh sửa của cô. Dữ liệu đã được thêm ở môi trường cục bộ; Git và database online cần được cập nhật riêng khi có yêu cầu triển khai.
+
+Kiểm tra nội dung bằng `node --test backend/tests/chinese-q1-lessons-7-10.node-test.mjs`, kiểm tra Word và việc ẩn tiêu chí của cô bằng `node backend/scripts/check-chinese-lessons-7-10.mjs`. Giao diện đã được kiểm tra với nội dung thật của bốn bài ở cả hai vai trò; các request ghi tiến độ/lượt làm được chặn trong phép kiểm tra để không thay lịch sử học sinh.
+
 ## Nghe câu hỏi
 
 Nút **Nghe câu hỏi** dùng chung cho luyện tập, kiểm tra, thi đấu, các dạng phiếu bài tập và tiếng Trung (quiz, thẻ học, vận dụng, ôn kết quả). Chỉ đọc khi bấm; bấm lại để dừng. Nếu thiết bị có giọng phù hợp, dùng giọng đó ở tốc độ 0,8. Nếu thiếu giọng, thiếu API đọc, hoặc giọng báo lỗi, tự tải MP3 qua backend và phát ở tốc độ 0,85; người dùng không cần cài giọng. Câu Việt và chữ Hán chọn ngôn ngữ tương ứng, môn tiếng Anh dùng ngôn ngữ mặc định tiếng Anh. Đọc phần đề được truyền riêng, không đọc đáp án hoặc lời giải. Dừng và hủy tải khi chuyển câu, ẩn màn hình làm bài hoặc rời trang. Dữ liệu chỉ có trong hình ảnh không thể tự đọc; cần đề bằng chữ.

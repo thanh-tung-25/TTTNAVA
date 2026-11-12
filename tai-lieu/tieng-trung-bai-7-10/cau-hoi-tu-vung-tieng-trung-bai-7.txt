@@ -1,0 +1,1934 @@
+MÔN: Tiếng Trung
+LỚP: HSK 1
+CHỦ ĐỀ: Bài 7. 中国银行在哪儿 — Ngân hàng Trung Quốc ở đâu?
+[TU VUNG]
+附近 | fùjìn | gần đây, khu vực lân cận |  |  |  |  |  |  |  |  | main
+最近 | zuìjìn | gần đây, dạo gần đây |  |  |  |  |  |  |  |  | main
+银行 | yínháng | ngân hàng |  |  |  |  |  |  |  |  | main
+邮局 | yóujú | bưu điện |  |  |  |  |  |  |  |  | main
+寄 | jì | gửi |  |  |  |  |  |  |  |  | main
+快递 | kuàidì | chuyển phát nhanh, bưu kiện chuyển phát |  |  |  |  |  |  |  |  | main
+收 | shōu | nhận, thu |  |  |  |  |  |  |  |  | main
+取 | qǔ | lấy, rút |  |  |  |  |  |  |  |  | main
+家 | jiā | lượng từ cho công ty, cửa hàng, ngân hàng |  |  |  |  |  |  |  |  | main
+房子 | fángzi | căn nhà |  |  |  |  |  |  |  |  | main
+房间 | fángjiān | căn phòng |  |  |  |  |  |  |  |  | main
+超市 | chāoshì | siêu thị |  |  |  |  |  |  |  |  | main
+市场 | shìchǎng | chợ |  |  |  |  |  |  |  |  | main
+书店 | shūdiàn | hiệu sách |  |  |  |  |  |  |  |  | main
+店 | diàn | cửa hàng, tiệm |  |  |  |  |  |  |  |  | main
+商店 | shāngdiàn | cửa hàng bán hàng hóa |  |  |  |  |  |  |  |  | main
+商场 | shāngchǎng | trung tâm thương mại |  |  |  |  |  |  |  |  | main
+就 | jiù | ngay, chính; từ nhấn mạnh trong 就在 |  |  |  |  |  |  |  |  | main
+送 | sòng | tặng, đưa, tiễn |  |  |  |  |  |  |  |  | main
+给 | gěi | cho; giới từ chỉ người nhận |  |  |  |  |  |  |  |  | main
+接 | jiē | đón, nhận; nghe điện thoại |  |  |  |  |  |  |  |  | main
+住 | zhù | sống, cư trú |  |  |  |  |  |  |  |  | main
+跟 | gēn | với, cùng với |  |  |  |  |  |  |  |  | main
+一起 | yìqǐ | cùng nhau |  |  |  |  |  |  |  |  | main
+从 | cóng | từ; chỉ điểm xuất phát |  |  |  |  |  |  |  |  | main
+往 | wǎng | về phía, hướng tới |  |  |  |  |  |  |  |  | main
+前 | qián | phía trước |  |  |  |  |  |  |  |  | main
+后 | hòu | phía sau |  |  |  |  |  |  |  |  | main
+拐 | guǎi | rẽ, ngoặt |  |  |  |  |  |  |  |  | main
+对面 | duìmiàn | đối diện |  |  |  |  |  |  |  |  | main
+旁边 | pángbiān | bên cạnh |  |  |  |  |  |  |  |  | main
+外面 | wàimiàn | bên ngoài |  |  |  |  |  |  |  |  | main
+里面 | lǐmiàn | bên trong |  |  |  |  |  |  |  |  | main
+米 | mǐ | mét; đơn vị độ dài trong bài |  |  |  |  |  |  |  |  | main
+左边 | zuǒbian | bên trái |  |  |  |  |  |  |  |  | main
+右边 | yòubian | bên phải |  |  |  |  |  |  |  |  | main
+然后 | ránhòu | sau đó, tiếp theo |  |  |  |  |  |  |  |  | main
+饭店 | fàndiàn | nhà hàng |  |  |  |  |  |  |  |  | main
+中国银行 | Zhōngguó Yínháng | Ngân hàng Trung Quốc |  |  |  |  |  |  |  |  | extended
+北京银行 | Běijīng Yínháng | Ngân hàng Bắc Kinh |  |  |  |  |  |  |  |  | extended
+四川饭店 | Sìchuān Fàndiàn | Nhà hàng Tứ Xuyên |  |  |  |  |  |  |  |  | extended
+全家超市 | Quánjiā Chāoshì | siêu thị Toàn Gia |  |  |  |  |  |  |  |  | extended
+酒店 | jiǔdiàn | khách sạn |  |  |  |  |  |  |  |  | extended
+逛 | guàng | đi dạo, đi xem hàng |  |  |  |  |  |  |  |  | extended
+每个周末 | měi ge zhōumò | mỗi cuối tuần |  |  |  |  |  |  |  |  | extended
+上 | shàng | phía trên; lên |  |  |  |  |  |  |  |  | extended
+下 | xià | phía dưới; xuống |  |  |  |  |  |  |  |  | extended
+东边 | dōngbian | phía đông |  |  |  |  |  |  |  |  | extended
+西边 | xībian | phía tây |  |  |  |  |  |  |  |  | extended
+南边 | nánbian | phía nam |  |  |  |  |  |  |  |  | extended
+北边 | běibian | phía bắc |  |  |  |  |  |  |  |  | extended
+手 | shǒu | bàn tay |  |  |  |  |  |  |  |  | extended
+左手 | zuǒshǒu | tay trái |  |  |  |  |  |  |  |  | extended
+右手 | yòushǒu | tay phải |  |  |  |  |  |  |  |  | extended
+公里 | gōnglǐ | ki-lô-mét |  |  |  |  |  |  |  |  | extended
+前边 | qiánbian | phía trước |  |  |  |  |  |  |  |  | extended
+后边 | hòubian | phía sau |  |  |  |  |  |  |  |  | extended
+以前 | yǐqián | trước đây; trước khi |  |  |  |  |  |  |  |  | extended
+以后 | yǐhòu | sau này; sau khi |  |  |  |  |  |  |  |  | extended
+大学 | dàxué | đại học |  |  |  |  |  |  |  |  | extended
+公园 | gōngyuán | công viên |  |  |  |  |  |  |  |  | extended
+这儿 | zhèr | ở đây, chỗ này |  |  |  |  |  |  |  |  | extended
+在哪儿 | zài nǎr | ở đâu |  |  |  |  |  |  |  |  | extended
+没有 | méiyǒu | không có |  |  |  |  |  |  |  |  | extended
+知道 | zhīdào | biết |  |  |  |  |  |  |  |  | extended
+谢谢 | xièxie | cảm ơn |  |  |  |  |  |  |  |  | extended
+不客气 | bú kèqi | không có gì; đáp lời cảm ơn |  |  |  |  |  |  |  |  | extended
+远 | yuǎn | xa |  |  |  |  |  |  |  |  | extended
+近 | jìn | gần |  |  |  |  |  |  |  |  | extended
+找到 | zhǎodào | tìm thấy |  |  |  |  |  |  |  |  | extended
+[CAU HOI]
+Câu 1. Trong bài học, “附近” có nghĩa là gì?
+A. tìm thấy
+B. gần đây, khu vực lân cận
+C. ngân hàng
+D. căn phòng
+Đáp án: B
+Lời giải: 附近 đọc là fùjìn, nghĩa là gần đây, khu vực lân cận. Tham chiếu: PDF bài 7, trang 4.
+Độ khó: Dễ
+Câu 2. Chọn chữ Hán có nghĩa “gần đây, khu vực lân cận”.
+A. 左边
+B. 附近
+C. 旁边
+D. 后边
+Đáp án: B
+Lời giải: 附近 đọc là fùjìn, nghĩa là gần đây, khu vực lân cận. Tham chiếu: PDF bài 7, trang 4.
+Độ khó: Dễ
+Câu 3. Chọn phiên âm đúng của “附近”.
+A. fùjìn
+B. zhīdào
+C. yuǎn
+D. méiyǒu
+Đáp án: A
+Lời giải: 附近 đọc là fùjìn, nghĩa là gần đây, khu vực lân cận. Tham chiếu: PDF bài 7, trang 4.
+Độ khó: Dễ
+Câu 4. Trong bài học, “最近” có nghĩa là gì?
+A. xa
+B. bên trong
+C. gần đây, dạo gần đây
+D. phía đông
+Đáp án: C
+Lời giải: 最近 đọc là zuìjìn, nghĩa là gần đây, dạo gần đây. Tham chiếu: PDF bài 7, trang 4.
+Độ khó: Dễ
+Câu 5. Chọn chữ Hán có nghĩa “gần đây, dạo gần đây”.
+A. 最近
+B. 取
+C. 远
+D. 邮局
+Đáp án: A
+Lời giải: 最近 đọc là zuìjìn, nghĩa là gần đây, dạo gần đây. Tham chiếu: PDF bài 7, trang 4.
+Độ khó: Dễ
+Câu 6. Chọn phiên âm đúng của “最近”.
+A. shàng
+B. zài nǎr
+C. yǐhòu
+D. zuìjìn
+Đáp án: D
+Lời giải: 最近 đọc là zuìjìn, nghĩa là gần đây, dạo gần đây. Tham chiếu: PDF bài 7, trang 4.
+Độ khó: Dễ
+Câu 7. Trong bài học, “银行” có nghĩa là gì?
+A. gần đây, dạo gần đây
+B. đón, nhận; nghe điện thoại
+C. xa
+D. ngân hàng
+Đáp án: D
+Lời giải: 银行 đọc là yínháng, nghĩa là ngân hàng. Tham chiếu: PDF bài 7, trang 4.
+Độ khó: Dễ
+Câu 8. Chọn chữ Hán có nghĩa “ngân hàng”.
+A. 谢谢
+B. 前边
+C. 超市
+D. 银行
+Đáp án: D
+Lời giải: 银行 đọc là yínháng, nghĩa là ngân hàng. Tham chiếu: PDF bài 7, trang 4.
+Độ khó: Dễ
+Câu 9. Chọn phiên âm đúng của “银行”.
+A. qián
+B. yínháng
+C. lǐmiàn
+D. yuǎn
+Đáp án: B
+Lời giải: 银行 đọc là yínháng, nghĩa là ngân hàng. Tham chiếu: PDF bài 7, trang 4.
+Độ khó: Dễ
+Câu 10. Trong bài học, “邮局” có nghĩa là gì?
+A. lượng từ cho công ty, cửa hàng, ngân hàng
+B. bưu điện
+C. hiệu sách
+D. bên phải
+Đáp án: B
+Lời giải: 邮局 đọc là yóujú, nghĩa là bưu điện. Tham chiếu: PDF bài 7, trang 4.
+Độ khó: Dễ
+Câu 11. Chọn chữ Hán có nghĩa “bưu điện”.
+A. 邮局
+B. 逛
+C. 里面
+D. 外面
+Đáp án: A
+Lời giải: 邮局 đọc là yóujú, nghĩa là bưu điện. Tham chiếu: PDF bài 7, trang 4.
+Độ khó: Dễ
+Câu 12. Chọn phiên âm đúng của “邮局”.
+A. zuǒbian
+B. jì
+C. yóujú
+D. pángbiān
+Đáp án: C
+Lời giải: 邮局 đọc là yóujú, nghĩa là bưu điện. Tham chiếu: PDF bài 7, trang 4.
+Độ khó: Dễ
+Câu 13. Trong bài học, “寄” có nghĩa là gì?
+A. tìm thấy
+B. gửi
+C. căn nhà
+D. nhà hàng
+Đáp án: B
+Lời giải: 寄 đọc là jì, nghĩa là gửi. Tham chiếu: PDF bài 7, trang 5.
+Độ khó: Dễ
+Câu 14. Chọn chữ Hán có nghĩa “gửi”.
+A. 银行
+B. 寄
+C. 商店
+D. 左边
+Đáp án: B
+Lời giải: 寄 đọc là jì, nghĩa là gửi. Tham chiếu: PDF bài 7, trang 5.
+Độ khó: Dễ
+Câu 15. Chọn phiên âm đúng của “寄”.
+A. yǐhòu
+B. xià
+C. jì
+D. chāoshì
+Đáp án: C
+Lời giải: 寄 đọc là jì, nghĩa là gửi. Tham chiếu: PDF bài 7, trang 5.
+Độ khó: Dễ
+Câu 16. Trong bài học, “快递” có nghĩa là gì?
+A. mét; đơn vị độ dài trong bài
+B. phía trước
+C. chuyển phát nhanh, bưu kiện chuyển phát
+D. nhận, thu
+Đáp án: C
+Lời giải: 快递 đọc là kuàidì, nghĩa là chuyển phát nhanh, bưu kiện chuyển phát. Tham chiếu: PDF bài 7, trang 5.
+Độ khó: Dễ
+Câu 17. Chọn chữ Hán có nghĩa “chuyển phát nhanh, bưu kiện chuyển phát”.
+A. 快递
+B. 这儿
+C. 找到
+D. 给
+Đáp án: A
+Lời giải: 快递 đọc là kuàidì, nghĩa là chuyển phát nhanh, bưu kiện chuyển phát. Tham chiếu: PDF bài 7, trang 5.
+Độ khó: Dễ
+Câu 18. Chọn phiên âm đúng của “快递”.
+A. wàimiàn
+B. kuàidì
+C. bú kèqi
+D. yuǎn
+Đáp án: B
+Lời giải: 快递 đọc là kuàidì, nghĩa là chuyển phát nhanh, bưu kiện chuyển phát. Tham chiếu: PDF bài 7, trang 5.
+Độ khó: Dễ
+Câu 19. Trong bài học, “收” có nghĩa là gì?
+A. nhận, thu
+B. cửa hàng, tiệm
+C. cho; giới từ chỉ người nhận
+D. chợ
+Đáp án: A
+Lời giải: 收 đọc là shōu, nghĩa là nhận, thu. Tham chiếu: PDF bài 7, trang 5.
+Độ khó: Dễ
+Câu 20. Chọn chữ Hán có nghĩa “nhận, thu”.
+A. 收
+B. 一起
+C. 接
+D. 北边
+Đáp án: A
+Lời giải: 收 đọc là shōu, nghĩa là nhận, thu. Tham chiếu: PDF bài 7, trang 5.
+Độ khó: Dễ
+Câu 21. Chọn phiên âm đúng của “收”.
+A. yòushǒu
+B. zuìjìn
+C. shōu
+D. Quánjiā Chāoshì
+Đáp án: C
+Lời giải: 收 đọc là shōu, nghĩa là nhận, thu. Tham chiếu: PDF bài 7, trang 5.
+Độ khó: Dễ
+Câu 22. Trong bài học, “取” có nghĩa là gì?
+A. lấy, rút
+B. gửi
+C. phía sau
+D. bàn tay
+Đáp án: A
+Lời giải: 取 đọc là qǔ, nghĩa là lấy, rút. Tham chiếu: PDF bài 7, trang 5.
+Độ khó: Dễ
+Câu 23. Chọn chữ Hán có nghĩa “lấy, rút”.
+A. 送
+B. 这儿
+C. 外面
+D. 取
+Đáp án: D
+Lời giải: 取 đọc là qǔ, nghĩa là lấy, rút. Tham chiếu: PDF bài 7, trang 5.
+Độ khó: Dễ
+Câu 24. Chọn phiên âm đúng của “取”.
+A. qǔ
+B. fángzi
+C. yǐqián
+D. nánbian
+Đáp án: A
+Lời giải: 取 đọc là qǔ, nghĩa là lấy, rút. Tham chiếu: PDF bài 7, trang 5.
+Độ khó: Dễ
+Câu 25. Trong bài học, “家” có nghĩa là gì?
+A. lượng từ cho công ty, cửa hàng, ngân hàng
+B. gần
+C. phía tây
+D. tay phải
+Đáp án: A
+Lời giải: 家 đọc là jiā, nghĩa là lượng từ cho công ty, cửa hàng, ngân hàng. Tham chiếu: PDF bài 7, trang 6.
+Độ khó: Dễ
+Câu 26. Chọn chữ Hán có nghĩa “lượng từ cho công ty, cửa hàng, ngân hàng”.
+A. 家
+B. 远
+C. 右手
+D. 外面
+Đáp án: A
+Lời giải: 家 đọc là jiā, nghĩa là lượng từ cho công ty, cửa hàng, ngân hàng. Tham chiếu: PDF bài 7, trang 6.
+Độ khó: Dễ
+Câu 27. Chọn phiên âm đúng của “家”.
+A. jiā
+B. zhù
+C. yòushǒu
+D. Quánjiā Chāoshì
+Đáp án: A
+Lời giải: 家 đọc là jiā, nghĩa là lượng từ cho công ty, cửa hàng, ngân hàng. Tham chiếu: PDF bài 7, trang 6.
+Độ khó: Dễ
+Câu 28. Trong bài học, “房子” có nghĩa là gì?
+A. mỗi cuối tuần
+B. ngay, chính; từ nhấn mạnh trong 就在
+C. không có
+D. căn nhà
+Đáp án: D
+Lời giải: 房子 đọc là fángzi, nghĩa là căn nhà. Tham chiếu: PDF bài 7, trang 6.
+Độ khó: Dễ
+Câu 29. Chọn chữ Hán có nghĩa “căn nhà”.
+A. 北边
+B. 接
+C. 房子
+D. 寄
+Đáp án: C
+Lời giải: 房子 đọc là fángzi, nghĩa là căn nhà. Tham chiếu: PDF bài 7, trang 6.
+Độ khó: Dễ
+Câu 30. Chọn phiên âm đúng của “房子”.
+A. yòushǒu
+B. fángzi
+C. zuǒbian
+D. yóujú
+Đáp án: B
+Lời giải: 房子 đọc là fángzi, nghĩa là căn nhà. Tham chiếu: PDF bài 7, trang 6.
+Độ khó: Dễ
+Câu 31. Trong bài học, “房间” có nghĩa là gì?
+A. với, cùng với
+B. công viên
+C. căn phòng
+D. khách sạn
+Đáp án: C
+Lời giải: 房间 đọc là fángjiān, nghĩa là căn phòng. Tham chiếu: PDF bài 7, trang 6.
+Độ khó: Dễ
+Câu 32. Chọn chữ Hán có nghĩa “căn phòng”.
+A. 前
+B. 房间
+C. 左手
+D. 前边
+Đáp án: B
+Lời giải: 房间 đọc là fángjiān, nghĩa là căn phòng. Tham chiếu: PDF bài 7, trang 6.
+Độ khó: Dễ
+Câu 33. Chọn phiên âm đúng của “房间”.
+A. duìmiàn
+B. fángjiān
+C. shǒu
+D. chāoshì
+Đáp án: B
+Lời giải: 房间 đọc là fángjiān, nghĩa là căn phòng. Tham chiếu: PDF bài 7, trang 6.
+Độ khó: Dễ
+Câu 34. Trong bài học, “超市” có nghĩa là gì?
+A. ki-lô-mét
+B. khách sạn
+C. siêu thị
+D. Ngân hàng Bắc Kinh
+Đáp án: C
+Lời giải: 超市 đọc là chāoshì, nghĩa là siêu thị. Tham chiếu: PDF bài 7, trang 7.
+Độ khó: Dễ
+Câu 35. Chọn chữ Hán có nghĩa “siêu thị”.
+A. 大学
+B. 米
+C. 超市
+D. 送
+Đáp án: C
+Lời giải: 超市 đọc là chāoshì, nghĩa là siêu thị. Tham chiếu: PDF bài 7, trang 7.
+Độ khó: Dễ
+Câu 36. Chọn phiên âm đúng của “超市”.
+A. fángzi
+B. chāoshì
+C. fùjìn
+D. fángjiān
+Đáp án: B
+Lời giải: 超市 đọc là chāoshì, nghĩa là siêu thị. Tham chiếu: PDF bài 7, trang 7.
+Độ khó: Dễ
+Câu 37. Trong bài học, “市场” có nghĩa là gì?
+A. tìm thấy
+B. bên trái
+C. căn phòng
+D. chợ
+Đáp án: D
+Lời giải: 市场 đọc là shìchǎng, nghĩa là chợ. Tham chiếu: PDF bài 7, trang 7.
+Độ khó: Dễ
+Câu 38. Chọn chữ Hán có nghĩa “chợ”.
+A. 北京银行
+B. 右手
+C. 住
+D. 市场
+Đáp án: D
+Lời giải: 市场 đọc là shìchǎng, nghĩa là chợ. Tham chiếu: PDF bài 7, trang 7.
+Độ khó: Dễ
+Câu 39. Chọn phiên âm đúng của “市场”.
+A. lǐmiàn
+B. xièxie
+C. shìchǎng
+D. gēn
+Đáp án: C
+Lời giải: 市场 đọc là shìchǎng, nghĩa là chợ. Tham chiếu: PDF bài 7, trang 7.
+Độ khó: Dễ
+Câu 40. Trong bài học, “书店” có nghĩa là gì?
+A. từ; chỉ điểm xuất phát
+B. phía trên; lên
+C. hiệu sách
+D. phía đông
+Đáp án: C
+Lời giải: 书店 đọc là shūdiàn, nghĩa là hiệu sách. Tham chiếu: PDF bài 7, trang 8.
+Độ khó: Dễ
+Câu 41. Chọn chữ Hán có nghĩa “hiệu sách”.
+A. 这儿
+B. 远
+C. 大学
+D. 书店
+Đáp án: D
+Lời giải: 书店 đọc là shūdiàn, nghĩa là hiệu sách. Tham chiếu: PDF bài 7, trang 8.
+Độ khó: Dễ
+Câu 42. Chọn phiên âm đúng của “书店”.
+A. shūdiàn
+B. gōngyuán
+C. zhèr
+D. jiē
+Đáp án: A
+Lời giải: 书店 đọc là shūdiàn, nghĩa là hiệu sách. Tham chiếu: PDF bài 7, trang 8.
+Độ khó: Dễ
+Câu 43. Trong bài học, “店” có nghĩa là gì?
+A. bên phải
+B. mét; đơn vị độ dài trong bài
+C. cửa hàng, tiệm
+D. ở đâu
+Đáp án: C
+Lời giải: 店 đọc là diàn, nghĩa là cửa hàng, tiệm. Tham chiếu: PDF bài 7, trang 8.
+Độ khó: Dễ
+Câu 44. Chọn chữ Hán có nghĩa “cửa hàng, tiệm”.
+A. 店
+B. 房间
+C. 快递
+D. 公园
+Đáp án: A
+Lời giải: 店 đọc là diàn, nghĩa là cửa hàng, tiệm. Tham chiếu: PDF bài 7, trang 8.
+Độ khó: Dễ
+Câu 45. Chọn phiên âm đúng của “店”.
+A. diàn
+B. ránhòu
+C. zhèr
+D. zhīdào
+Đáp án: A
+Lời giải: 店 đọc là diàn, nghĩa là cửa hàng, tiệm. Tham chiếu: PDF bài 7, trang 8.
+Độ khó: Dễ
+Câu 46. Trong bài học, “商店” có nghĩa là gì?
+A. cửa hàng bán hàng hóa
+B. ki-lô-mét
+C. tay trái
+D. khách sạn
+Đáp án: A
+Lời giải: 商店 đọc là shāngdiàn, nghĩa là cửa hàng bán hàng hóa. Tham chiếu: PDF bài 7, trang 9.
+Độ khó: Dễ
+Câu 47. Chọn chữ Hán có nghĩa “cửa hàng bán hàng hóa”.
+A. 一起
+B. 商店
+C. 家
+D. 前边
+Đáp án: B
+Lời giải: 商店 đọc là shāngdiàn, nghĩa là cửa hàng bán hàng hóa. Tham chiếu: PDF bài 7, trang 9.
+Độ khó: Dễ
+Câu 48. Chọn phiên âm đúng của “商店”.
+A. yòushǒu
+B. hòu
+C. shāngdiàn
+D. Sìchuān Fàndiàn
+Đáp án: C
+Lời giải: 商店 đọc là shāngdiàn, nghĩa là cửa hàng bán hàng hóa. Tham chiếu: PDF bài 7, trang 9.
+Độ khó: Dễ
+Câu 49. Trong bài học, “商场” có nghĩa là gì?
+A. bên trong
+B. xa
+C. khách sạn
+D. trung tâm thương mại
+Đáp án: D
+Lời giải: 商场 đọc là shāngchǎng, nghĩa là trung tâm thương mại. Tham chiếu: PDF bài 7, trang 9.
+Độ khó: Dễ
+Câu 50. Chọn chữ Hán có nghĩa “trung tâm thương mại”.
+A. 商场
+B. 银行
+C. 商店
+D. 接
+Đáp án: A
+Lời giải: 商场 đọc là shāngchǎng, nghĩa là trung tâm thương mại. Tham chiếu: PDF bài 7, trang 9.
+Độ khó: Dễ
+Câu 51. Chọn phiên âm đúng của “商场”.
+A. shāngchǎng
+B. yóujú
+C. yínháng
+D. ránhòu
+Đáp án: A
+Lời giải: 商场 đọc là shāngchǎng, nghĩa là trung tâm thương mại. Tham chiếu: PDF bài 7, trang 9.
+Độ khó: Dễ
+Câu 52. Trong bài học, “就” có nghĩa là gì?
+A. cùng nhau
+B. ngay, chính; từ nhấn mạnh trong 就在
+C. đại học
+D. tặng, đưa, tiễn
+Đáp án: B
+Lời giải: 就 đọc là jiù, nghĩa là ngay, chính; từ nhấn mạnh trong 就在. Tham chiếu: PDF bài 7, trang 10.
+Độ khó: Dễ
+Câu 53. Chọn chữ Hán có nghĩa “ngay, chính; từ nhấn mạnh trong 就在”.
+A. 银行
+B. 就
+C. 北京银行
+D. 大学
+Đáp án: B
+Lời giải: 就 đọc là jiù, nghĩa là ngay, chính; từ nhấn mạnh trong 就在. Tham chiếu: PDF bài 7, trang 10.
+Độ khó: Dễ
+Câu 54. Chọn phiên âm đúng của “就”.
+A. qǔ
+B. jiù
+C. cóng
+D. sòng
+Đáp án: B
+Lời giải: 就 đọc là jiù, nghĩa là ngay, chính; từ nhấn mạnh trong 就在. Tham chiếu: PDF bài 7, trang 10.
+Độ khó: Dễ
+Câu 55. Trong bài học, “送” có nghĩa là gì?
+A. ki-lô-mét
+B. tặng, đưa, tiễn
+C. đón, nhận; nghe điện thoại
+D. trước đây; trước khi
+Đáp án: B
+Lời giải: 送 đọc là sòng, nghĩa là tặng, đưa, tiễn. Tham chiếu: PDF bài 7, trang 11.
+Độ khó: Dễ
+Câu 56. Chọn chữ Hán có nghĩa “tặng, đưa, tiễn”.
+A. 送
+B. 店
+C. 左边
+D. 房间
+Đáp án: A
+Lời giải: 送 đọc là sòng, nghĩa là tặng, đưa, tiễn. Tham chiếu: PDF bài 7, trang 11.
+Độ khó: Dễ
+Câu 57. Chọn phiên âm đúng của “送”.
+A. fángjiān
+B. zhǎodào
+C. sòng
+D. hòubian
+Đáp án: C
+Lời giải: 送 đọc là sòng, nghĩa là tặng, đưa, tiễn. Tham chiếu: PDF bài 7, trang 11.
+Độ khó: Dễ
+Câu 58. Trong bài học, “给” có nghĩa là gì?
+A. cho; giới từ chỉ người nhận
+B. cửa hàng bán hàng hóa
+C. cùng nhau
+D. căn phòng
+Đáp án: A
+Lời giải: 给 đọc là gěi, nghĩa là cho; giới từ chỉ người nhận. Tham chiếu: PDF bài 7, trang 11.
+Độ khó: Dễ
+Câu 59. Chọn chữ Hán có nghĩa “cho; giới từ chỉ người nhận”.
+A. 快递
+B. 超市
+C. 给
+D. 公里
+Đáp án: C
+Lời giải: 给 đọc là gěi, nghĩa là cho; giới từ chỉ người nhận. Tham chiếu: PDF bài 7, trang 11.
+Độ khó: Dễ
+Câu 60. Chọn phiên âm đúng của “给”.
+A. zhù
+B. gěi
+C. yǐqián
+D. xībian
+Đáp án: B
+Lời giải: 给 đọc là gěi, nghĩa là cho; giới từ chỉ người nhận. Tham chiếu: PDF bài 7, trang 11.
+Độ khó: Dễ
+Câu 61. Trong bài học, “接” có nghĩa là gì?
+A. đón, nhận; nghe điện thoại
+B. phía dưới; xuống
+C. phía sau
+D. rẽ, ngoặt
+Đáp án: A
+Lời giải: 接 đọc là jiē, nghĩa là đón, nhận; nghe điện thoại. Tham chiếu: PDF bài 7, trang 11.
+Độ khó: Dễ
+Câu 62. Chọn chữ Hán có nghĩa “đón, nhận; nghe điện thoại”.
+A. 接
+B. 对面
+C. 市场
+D. 住
+Đáp án: A
+Lời giải: 接 đọc là jiē, nghĩa là đón, nhận; nghe điện thoại. Tham chiếu: PDF bài 7, trang 11.
+Độ khó: Dễ
+Câu 63. Chọn phiên âm đúng của “接”.
+A. jiē
+B. yǐhòu
+C. cóng
+D. kuàidì
+Đáp án: A
+Lời giải: 接 đọc là jiē, nghĩa là đón, nhận; nghe điện thoại. Tham chiếu: PDF bài 7, trang 11.
+Độ khó: Dễ
+Câu 64. Trong bài học, “住” có nghĩa là gì?
+A. bên cạnh
+B. căn nhà
+C. ở đây, chỗ này
+D. sống, cư trú
+Đáp án: D
+Lời giải: 住 đọc là zhù, nghĩa là sống, cư trú. Tham chiếu: PDF bài 7, trang 11.
+Độ khó: Dễ
+Câu 65. Chọn chữ Hán có nghĩa “sống, cư trú”.
+A. 公里
+B. 酒店
+C. 住
+D. 寄
+Đáp án: C
+Lời giải: 住 đọc là zhù, nghĩa là sống, cư trú. Tham chiếu: PDF bài 7, trang 11.
+Độ khó: Dễ
+Câu 66. Chọn phiên âm đúng của “住”.
+A. fángjiān
+B. gěi
+C. shǒu
+D. zhù
+Đáp án: D
+Lời giải: 住 đọc là zhù, nghĩa là sống, cư trú. Tham chiếu: PDF bài 7, trang 11.
+Độ khó: Dễ
+Câu 67. Trong bài học, “跟” có nghĩa là gì?
+A. với, cùng với
+B. ở đâu
+C. bên cạnh
+D. khách sạn
+Đáp án: A
+Lời giải: 跟 đọc là gēn, nghĩa là với, cùng với. Tham chiếu: PDF bài 7, trang 12.
+Độ khó: Dễ
+Câu 68. Chọn chữ Hán có nghĩa “với, cùng với”.
+A. 公里
+B. 里面
+C. 收
+D. 跟
+Đáp án: D
+Lời giải: 跟 đọc là gēn, nghĩa là với, cùng với. Tham chiếu: PDF bài 7, trang 12.
+Độ khó: Dễ
+Câu 69. Chọn phiên âm đúng của “跟”.
+A. shōu
+B. yìqǐ
+C. gēn
+D. shāngdiàn
+Đáp án: C
+Lời giải: 跟 đọc là gēn, nghĩa là với, cùng với. Tham chiếu: PDF bài 7, trang 12.
+Độ khó: Dễ
+Câu 70. Trong bài học, “一起” có nghĩa là gì?
+A. nhận, thu
+B. căn nhà
+C. cùng nhau
+D. từ; chỉ điểm xuất phát
+Đáp án: C
+Lời giải: 一起 đọc là yìqǐ, nghĩa là cùng nhau. Tham chiếu: PDF bài 7, trang 12.
+Độ khó: Dễ
+Câu 71. Chọn chữ Hán có nghĩa “cùng nhau”.
+A. 前
+B. 拐
+C. 一起
+D. 快递
+Đáp án: C
+Lời giải: 一起 đọc là yìqǐ, nghĩa là cùng nhau. Tham chiếu: PDF bài 7, trang 12.
+Độ khó: Dễ
+Câu 72. Chọn phiên âm đúng của “一起”.
+A. duìmiàn
+B. yìqǐ
+C. měi ge zhōumò
+D. fùjìn
+Đáp án: B
+Lời giải: 一起 đọc là yìqǐ, nghĩa là cùng nhau. Tham chiếu: PDF bài 7, trang 12.
+Độ khó: Dễ
+Câu 73. Trong bài học, “从” có nghĩa là gì?
+A. căn phòng
+B. phía dưới; xuống
+C. từ; chỉ điểm xuất phát
+D. siêu thị
+Đáp án: C
+Lời giải: 从 đọc là cóng, nghĩa là từ; chỉ điểm xuất phát. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 74. Chọn chữ Hán có nghĩa “từ; chỉ điểm xuất phát”.
+A. 每个周末
+B. 从
+C. 然后
+D. 房间
+Đáp án: B
+Lời giải: 从 đọc là cóng, nghĩa là từ; chỉ điểm xuất phát. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 75. Chọn phiên âm đúng của “从”.
+A. diàn
+B. gōngyuán
+C. cóng
+D. jì
+Đáp án: C
+Lời giải: 从 đọc là cóng, nghĩa là từ; chỉ điểm xuất phát. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 76. Trong bài học, “往” có nghĩa là gì?
+A. bên trong
+B. sau này; sau khi
+C. về phía, hướng tới
+D. mỗi cuối tuần
+Đáp án: C
+Lời giải: 往 đọc là wǎng, nghĩa là về phía, hướng tới. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 77. Chọn chữ Hán có nghĩa “về phía, hướng tới”.
+A. 近
+B. 下
+C. 在哪儿
+D. 往
+Đáp án: D
+Lời giải: 往 đọc là wǎng, nghĩa là về phía, hướng tới. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 78. Chọn phiên âm đúng của “往”.
+A. chāoshì
+B. wǎng
+C. jìn
+D. Quánjiā Chāoshì
+Đáp án: B
+Lời giải: 往 đọc là wǎng, nghĩa là về phía, hướng tới. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 79. Trong bài học, “前” có nghĩa là gì?
+A. đại học
+B. gần đây, khu vực lân cận
+C. siêu thị
+D. phía trước
+Đáp án: D
+Lời giải: 前 đọc là qián, nghĩa là phía trước. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 80. Chọn chữ Hán có nghĩa “phía trước”.
+A. 旁边
+B. 以后
+C. 前
+D. 给
+Đáp án: C
+Lời giải: 前 đọc là qián, nghĩa là phía trước. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 81. Chọn phiên âm đúng của “前”.
+A. shōu
+B. bú kèqi
+C. qián
+D. sòng
+Đáp án: C
+Lời giải: 前 đọc là qián, nghĩa là phía trước. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 82. Trong bài học, “后” có nghĩa là gì?
+A. công viên
+B. đối diện
+C. phía sau
+D. sống, cư trú
+Đáp án: C
+Lời giải: 后 đọc là hòu, nghĩa là phía sau. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 83. Chọn chữ Hán có nghĩa “phía sau”.
+A. 以前
+B. 后
+C. 没有
+D. 饭店
+Đáp án: B
+Lời giải: 后 đọc là hòu, nghĩa là phía sau. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 84. Chọn phiên âm đúng của “后”.
+A. duìmiàn
+B. jìn
+C. nánbian
+D. hòu
+Đáp án: D
+Lời giải: 后 đọc là hòu, nghĩa là phía sau. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 85. Trong bài học, “拐” có nghĩa là gì?
+A. ngay, chính; từ nhấn mạnh trong 就在
+B. nhận, thu
+C. rẽ, ngoặt
+D. Nhà hàng Tứ Xuyên
+Đáp án: C
+Lời giải: 拐 đọc là guǎi, nghĩa là rẽ, ngoặt. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 86. Chọn chữ Hán có nghĩa “rẽ, ngoặt”.
+A. 北边
+B. 以前
+C. 拐
+D. 远
+Đáp án: C
+Lời giải: 拐 đọc là guǎi, nghĩa là rẽ, ngoặt. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 87. Chọn phiên âm đúng của “拐”.
+A. fángzi
+B. shāngdiàn
+C. guǎi
+D. yǐhòu
+Đáp án: C
+Lời giải: 拐 đọc là guǎi, nghĩa là rẽ, ngoặt. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 88. Trong bài học, “对面” có nghĩa là gì?
+A. đối diện
+B. tay trái
+C. gần
+D. phía trên; lên
+Đáp án: A
+Lời giải: 对面 đọc là duìmiàn, nghĩa là đối diện. Tham chiếu: PDF bài 7, trang 14.
+Độ khó: Dễ
+Câu 89. Chọn chữ Hán có nghĩa “đối diện”.
+A. 附近
+B. 西边
+C. 对面
+D. 接
+Đáp án: C
+Lời giải: 对面 đọc là duìmiàn, nghĩa là đối diện. Tham chiếu: PDF bài 7, trang 14.
+Độ khó: Dễ
+Câu 90. Chọn phiên âm đúng của “对面”.
+A. duìmiàn
+B. cóng
+C. mǐ
+D. bú kèqi
+Đáp án: A
+Lời giải: 对面 đọc là duìmiàn, nghĩa là đối diện. Tham chiếu: PDF bài 7, trang 14.
+Độ khó: Dễ
+Câu 91. Trong bài học, “旁边” có nghĩa là gì?
+A. ngân hàng
+B. gần đây, khu vực lân cận
+C. bên cạnh
+D. bên trái
+Đáp án: C
+Lời giải: 旁边 đọc là pángbiān, nghĩa là bên cạnh. Tham chiếu: PDF bài 7, trang 14.
+Độ khó: Dễ
+Câu 92. Chọn chữ Hán có nghĩa “bên cạnh”.
+A. 旁边
+B. 房间
+C. 酒店
+D. 房子
+Đáp án: A
+Lời giải: 旁边 đọc là pángbiān, nghĩa là bên cạnh. Tham chiếu: PDF bài 7, trang 14.
+Độ khó: Dễ
+Câu 93. Chọn phiên âm đúng của “旁边”.
+A. qián
+B. pángbiān
+C. yínháng
+D. chāoshì
+Đáp án: B
+Lời giải: 旁边 đọc là pángbiān, nghĩa là bên cạnh. Tham chiếu: PDF bài 7, trang 14.
+Độ khó: Dễ
+Câu 94. Trong bài học, “外面” có nghĩa là gì?
+A. về phía, hướng tới
+B. phía trước
+C. bên ngoài
+D. gần đây, khu vực lân cận
+Đáp án: C
+Lời giải: 外面 đọc là wàimiàn, nghĩa là bên ngoài. Tham chiếu: PDF bài 7, trang 14.
+Độ khó: Dễ
+Câu 95. Chọn chữ Hán có nghĩa “bên ngoài”.
+A. 家
+B. 东边
+C. 外面
+D. 住
+Đáp án: C
+Lời giải: 外面 đọc là wàimiàn, nghĩa là bên ngoài. Tham chiếu: PDF bài 7, trang 14.
+Độ khó: Dễ
+Câu 96. Chọn phiên âm đúng của “外面”.
+A. wàimiàn
+B. yìqǐ
+C. ránhòu
+D. dàxué
+Đáp án: A
+Lời giải: 外面 đọc là wàimiàn, nghĩa là bên ngoài. Tham chiếu: PDF bài 7, trang 14.
+Độ khó: Dễ
+Câu 97. Trong bài học, “里面” có nghĩa là gì?
+A. lượng từ cho công ty, cửa hàng, ngân hàng
+B. Ngân hàng Bắc Kinh
+C. mỗi cuối tuần
+D. bên trong
+Đáp án: D
+Lời giải: 里面 đọc là lǐmiàn, nghĩa là bên trong. Tham chiếu: PDF bài 7, trang 14.
+Độ khó: Dễ
+Câu 98. Chọn chữ Hán có nghĩa “bên trong”.
+A. 给
+B. 里面
+C. 在哪儿
+D. 东边
+Đáp án: B
+Lời giải: 里面 đọc là lǐmiàn, nghĩa là bên trong. Tham chiếu: PDF bài 7, trang 14.
+Độ khó: Dễ
+Câu 99. Chọn phiên âm đúng của “里面”.
+A. hòu
+B. gēn
+C. diàn
+D. lǐmiàn
+Đáp án: D
+Lời giải: 里面 đọc là lǐmiàn, nghĩa là bên trong. Tham chiếu: PDF bài 7, trang 14.
+Độ khó: Dễ
+Câu 100. Trong bài học, “米” có nghĩa là gì?
+A. mét; đơn vị độ dài trong bài
+B. căn phòng
+C. chợ
+D. đón, nhận; nghe điện thoại
+Đáp án: A
+Lời giải: 米 đọc là mǐ, nghĩa là mét; đơn vị độ dài trong bài. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 101. Chọn chữ Hán có nghĩa “mét; đơn vị độ dài trong bài”.
+A. 右边
+B. 近
+C. 米
+D. 远
+Đáp án: C
+Lời giải: 米 đọc là mǐ, nghĩa là mét; đơn vị độ dài trong bài. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 102. Chọn phiên âm đúng của “米”.
+A. mǐ
+B. bú kèqi
+C. ránhòu
+D. yǐhòu
+Đáp án: A
+Lời giải: 米 đọc là mǐ, nghĩa là mét; đơn vị độ dài trong bài. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 103. Trong bài học, “左边” có nghĩa là gì?
+A. bên trái
+B. tặng, đưa, tiễn
+C. trung tâm thương mại
+D. cùng nhau
+Đáp án: A
+Lời giải: 左边 đọc là zuǒbian, nghĩa là bên trái. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 104. Chọn chữ Hán có nghĩa “bên trái”.
+A. 左边
+B. 给
+C. 手
+D. 饭店
+Đáp án: A
+Lời giải: 左边 đọc là zuǒbian, nghĩa là bên trái. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 105. Chọn phiên âm đúng của “左边”.
+A. ránhòu
+B. yínháng
+C. fùjìn
+D. zuǒbian
+Đáp án: D
+Lời giải: 左边 đọc là zuǒbian, nghĩa là bên trái. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 106. Trong bài học, “右边” có nghĩa là gì?
+A. cho; giới từ chỉ người nhận
+B. bên phải
+C. phía tây
+D. gần
+Đáp án: B
+Lời giải: 右边 đọc là yòubian, nghĩa là bên phải. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 107. Chọn chữ Hán có nghĩa “bên phải”.
+A. 右边
+B. 附近
+C. 房间
+D. 就
+Đáp án: A
+Lời giải: 右边 đọc là yòubian, nghĩa là bên phải. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 108. Chọn phiên âm đúng của “右边”.
+A. yóujú
+B. duìmiàn
+C. yòubian
+D. zhǎodào
+Đáp án: C
+Lời giải: 右边 đọc là yòubian, nghĩa là bên phải. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 109. Trong bài học, “然后” có nghĩa là gì?
+A. sau đó, tiếp theo
+B. Ngân hàng Bắc Kinh
+C. sau này; sau khi
+D. siêu thị
+Đáp án: A
+Lời giải: 然后 đọc là ránhòu, nghĩa là sau đó, tiếp theo. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 110. Chọn chữ Hán có nghĩa “sau đó, tiếp theo”.
+A. 跟
+B. 前边
+C. 里面
+D. 然后
+Đáp án: D
+Lời giải: 然后 đọc là ránhòu, nghĩa là sau đó, tiếp theo. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 111. Chọn phiên âm đúng của “然后”.
+A. pángbiān
+B. jìn
+C. ránhòu
+D. zài nǎr
+Đáp án: C
+Lời giải: 然后 đọc là ránhòu, nghĩa là sau đó, tiếp theo. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 112. Trong bài học, “饭店” có nghĩa là gì?
+A. phía nam
+B. cửa hàng bán hàng hóa
+C. nhà hàng
+D. bàn tay
+Đáp án: C
+Lời giải: 饭店 đọc là fàndiàn, nghĩa là nhà hàng. Tham chiếu: PDF bài 7, trang 3.
+Độ khó: Dễ
+Câu 113. Chọn chữ Hán có nghĩa “nhà hàng”.
+A. 跟
+B. 对面
+C. 下
+D. 饭店
+Đáp án: D
+Lời giải: 饭店 đọc là fàndiàn, nghĩa là nhà hàng. Tham chiếu: PDF bài 7, trang 3.
+Độ khó: Dễ
+Câu 114. Chọn phiên âm đúng của “饭店”.
+A. fàndiàn
+B. sòng
+C. měi ge zhōumò
+D. Sìchuān Fàndiàn
+Đáp án: A
+Lời giải: 饭店 đọc là fàndiàn, nghĩa là nhà hàng. Tham chiếu: PDF bài 7, trang 3.
+Độ khó: Dễ
+Câu 115. Trong bài học, “中国银行” có nghĩa là gì?
+A. Ngân hàng Trung Quốc
+B. trước đây; trước khi
+C. lấy, rút
+D. phía trên; lên
+Đáp án: A
+Lời giải: 中国银行 đọc là Zhōngguó Yínháng, nghĩa là Ngân hàng Trung Quốc. Tham chiếu: PDF bài 7, trang 16.
+Độ khó: Dễ
+Câu 116. Chọn chữ Hán có nghĩa “Ngân hàng Trung Quốc”.
+A. 米
+B. 中国银行
+C. 寄
+D. 不客气
+Đáp án: B
+Lời giải: 中国银行 đọc là Zhōngguó Yínháng, nghĩa là Ngân hàng Trung Quốc. Tham chiếu: PDF bài 7, trang 16.
+Độ khó: Dễ
+Câu 117. Chọn phiên âm đúng của “中国银行”.
+A. shàng
+B. Zhōngguó Yínháng
+C. shāngchǎng
+D. wǎng
+Đáp án: B
+Lời giải: 中国银行 đọc là Zhōngguó Yínháng, nghĩa là Ngân hàng Trung Quốc. Tham chiếu: PDF bài 7, trang 16.
+Độ khó: Dễ
+Câu 118. Trong bài học, “北京银行” có nghĩa là gì?
+A. gần
+B. phía trước
+C. Ngân hàng Bắc Kinh
+D. siêu thị
+Đáp án: C
+Lời giải: 北京银行 đọc là Běijīng Yínháng, nghĩa là Ngân hàng Bắc Kinh. Tham chiếu: PDF bài 7, trang 16.
+Độ khó: Dễ
+Câu 119. Chọn chữ Hán có nghĩa “Ngân hàng Bắc Kinh”.
+A. 北京银行
+B. 公园
+C. 家
+D. 谢谢
+Đáp án: A
+Lời giải: 北京银行 đọc là Běijīng Yínháng, nghĩa là Ngân hàng Bắc Kinh. Tham chiếu: PDF bài 7, trang 16.
+Độ khó: Dễ
+Câu 120. Chọn phiên âm đúng của “北京银行”.
+A. Quánjiā Chāoshì
+B. zuǒshǒu
+C. Běijīng Yínháng
+D. yóujú
+Đáp án: C
+Lời giải: 北京银行 đọc là Běijīng Yínháng, nghĩa là Ngân hàng Bắc Kinh. Tham chiếu: PDF bài 7, trang 16.
+Độ khó: Dễ
+Câu 121. Trong bài học, “四川饭店” có nghĩa là gì?
+A. lượng từ cho công ty, cửa hàng, ngân hàng
+B. Nhà hàng Tứ Xuyên
+C. sau này; sau khi
+D. bên phải
+Đáp án: B
+Lời giải: 四川饭店 đọc là Sìchuān Fàndiàn, nghĩa là Nhà hàng Tứ Xuyên. Tham chiếu: PDF bài 7, trang 16.
+Độ khó: Dễ
+Câu 122. Chọn chữ Hán có nghĩa “Nhà hàng Tứ Xuyên”.
+A. 四川饭店
+B. 近
+C. 房间
+D. 谢谢
+Đáp án: A
+Lời giải: 四川饭店 đọc là Sìchuān Fàndiàn, nghĩa là Nhà hàng Tứ Xuyên. Tham chiếu: PDF bài 7, trang 16.
+Độ khó: Dễ
+Câu 123. Chọn phiên âm đúng của “四川饭店”.
+A. shāngchǎng
+B. fùjìn
+C. Sìchuān Fàndiàn
+D. mǐ
+Đáp án: C
+Lời giải: 四川饭店 đọc là Sìchuān Fàndiàn, nghĩa là Nhà hàng Tứ Xuyên. Tham chiếu: PDF bài 7, trang 16.
+Độ khó: Dễ
+Câu 124. Trong bài học, “全家超市” có nghĩa là gì?
+A. tay trái
+B. đón, nhận; nghe điện thoại
+C. siêu thị Toàn Gia
+D. tìm thấy
+Đáp án: C
+Lời giải: 全家超市 đọc là Quánjiā Chāoshì, nghĩa là siêu thị Toàn Gia. Tham chiếu: PDF bài 7, trang 16.
+Độ khó: Dễ
+Câu 125. Chọn chữ Hán có nghĩa “siêu thị Toàn Gia”.
+A. 给
+B. 全家超市
+C. 找到
+D. 寄
+Đáp án: B
+Lời giải: 全家超市 đọc là Quánjiā Chāoshì, nghĩa là siêu thị Toàn Gia. Tham chiếu: PDF bài 7, trang 16.
+Độ khó: Dễ
+Câu 126. Chọn phiên âm đúng của “全家超市”.
+A. nánbian
+B. fángzi
+C. duìmiàn
+D. Quánjiā Chāoshì
+Đáp án: D
+Lời giải: 全家超市 đọc là Quánjiā Chāoshì, nghĩa là siêu thị Toàn Gia. Tham chiếu: PDF bài 7, trang 16.
+Độ khó: Dễ
+Câu 127. Trong bài học, “酒店” có nghĩa là gì?
+A. đón, nhận; nghe điện thoại
+B. phía trước
+C. đi dạo, đi xem hàng
+D. khách sạn
+Đáp án: D
+Lời giải: 酒店 đọc là jiǔdiàn, nghĩa là khách sạn. Tham chiếu: PDF bài 7, trang 6.
+Độ khó: Dễ
+Câu 128. Chọn chữ Hán có nghĩa “khách sạn”.
+A. 南边
+B. 拐
+C. 酒店
+D. 从
+Đáp án: C
+Lời giải: 酒店 đọc là jiǔdiàn, nghĩa là khách sạn. Tham chiếu: PDF bài 7, trang 6.
+Độ khó: Dễ
+Câu 129. Chọn phiên âm đúng của “酒店”.
+A. jiǔdiàn
+B. yòubian
+C. wàimiàn
+D. Sìchuān Fàndiàn
+Đáp án: A
+Lời giải: 酒店 đọc là jiǔdiàn, nghĩa là khách sạn. Tham chiếu: PDF bài 7, trang 6.
+Độ khó: Dễ
+Câu 130. Trong bài học, “逛” có nghĩa là gì?
+A. đón, nhận; nghe điện thoại
+B. đi dạo, đi xem hàng
+C. chuyển phát nhanh, bưu kiện chuyển phát
+D. nhà hàng
+Đáp án: B
+Lời giải: 逛 đọc là guàng, nghĩa là đi dạo, đi xem hàng. Tham chiếu: PDF bài 7, trang 9.
+Độ khó: Dễ
+Câu 131. Chọn chữ Hán có nghĩa “đi dạo, đi xem hàng”.
+A. 快递
+B. 逛
+C. 西边
+D. 北京银行
+Đáp án: B
+Lời giải: 逛 đọc là guàng, nghĩa là đi dạo, đi xem hàng. Tham chiếu: PDF bài 7, trang 9.
+Độ khó: Dễ
+Câu 132. Chọn phiên âm đúng của “逛”.
+A. zhǎodào
+B. guàng
+C. hòu
+D. méiyǒu
+Đáp án: B
+Lời giải: 逛 đọc là guàng, nghĩa là đi dạo, đi xem hàng. Tham chiếu: PDF bài 7, trang 9.
+Độ khó: Dễ
+Câu 133. Trong bài học, “每个周末” có nghĩa là gì?
+A. Nhà hàng Tứ Xuyên
+B. mỗi cuối tuần
+C. khách sạn
+D. ngay, chính; từ nhấn mạnh trong 就在
+Đáp án: B
+Lời giải: 每个周末 đọc là měi ge zhōumò, nghĩa là mỗi cuối tuần. Tham chiếu: PDF bài 7, trang 9.
+Độ khó: Dễ
+Câu 134. Chọn chữ Hán có nghĩa “mỗi cuối tuần”.
+A. 邮局
+B. 每个周末
+C. 知道
+D. 这儿
+Đáp án: B
+Lời giải: 每个周末 đọc là měi ge zhōumò, nghĩa là mỗi cuối tuần. Tham chiếu: PDF bài 7, trang 9.
+Độ khó: Dễ
+Câu 135. Chọn phiên âm đúng của “每个周末”.
+A. chāoshì
+B. měi ge zhōumò
+C. shàng
+D. yínháng
+Đáp án: B
+Lời giải: 每个周末 đọc là měi ge zhōumò, nghĩa là mỗi cuối tuần. Tham chiếu: PDF bài 7, trang 9.
+Độ khó: Dễ
+Câu 136. Trong bài học, “上” có nghĩa là gì?
+A. hiệu sách
+B. phía trên; lên
+C. xa
+D. phía nam
+Đáp án: B
+Lời giải: 上 đọc là shàng, nghĩa là phía trên; lên. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 137. Chọn chữ Hán có nghĩa “phía trên; lên”.
+A. 酒店
+B. 米
+C. 以前
+D. 上
+Đáp án: D
+Lời giải: 上 đọc là shàng, nghĩa là phía trên; lên. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 138. Chọn phiên âm đúng của “上”.
+A. shàng
+B. kuàidì
+C. zhīdào
+D. shāngdiàn
+Đáp án: A
+Lời giải: 上 đọc là shàng, nghĩa là phía trên; lên. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 139. Trong bài học, “下” có nghĩa là gì?
+A. đón, nhận; nghe điện thoại
+B. trước đây; trước khi
+C. ở đây, chỗ này
+D. phía dưới; xuống
+Đáp án: D
+Lời giải: 下 đọc là xià, nghĩa là phía dưới; xuống. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 140. Chọn chữ Hán có nghĩa “phía dưới; xuống”.
+A. 这儿
+B. 南边
+C. 一起
+D. 下
+Đáp án: D
+Lời giải: 下 đọc là xià, nghĩa là phía dưới; xuống. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 141. Chọn phiên âm đúng của “下”.
+A. zài nǎr
+B. fángjiān
+C. xià
+D. shìchǎng
+Đáp án: C
+Lời giải: 下 đọc là xià, nghĩa là phía dưới; xuống. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Dễ
+Câu 142. Trong bài học, “东边” có nghĩa là gì?
+A. Ngân hàng Trung Quốc
+B. phía đông
+C. không có gì; đáp lời cảm ơn
+D. tay phải
+Đáp án: B
+Lời giải: 东边 đọc là dōngbian, nghĩa là phía đông. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 143. Chọn chữ Hán có nghĩa “phía đông”.
+A. 南边
+B. 东边
+C. 房子
+D. 公里
+Đáp án: B
+Lời giải: 东边 đọc là dōngbian, nghĩa là phía đông. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 144. Chọn phiên âm đúng của “东边”.
+A. dōngbian
+B. guàng
+C. duìmiàn
+D. nánbian
+Đáp án: A
+Lời giải: 东边 đọc là dōngbian, nghĩa là phía đông. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 145. Trong bài học, “西边” có nghĩa là gì?
+A. xa
+B. không có gì; đáp lời cảm ơn
+C. chợ
+D. phía tây
+Đáp án: D
+Lời giải: 西边 đọc là xībian, nghĩa là phía tây. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 146. Chọn chữ Hán có nghĩa “phía tây”.
+A. 邮局
+B. 银行
+C. 最近
+D. 西边
+Đáp án: D
+Lời giải: 西边 đọc là xībian, nghĩa là phía tây. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 147. Chọn phiên âm đúng của “西边”.
+A. xībian
+B. hòu
+C. wàimiàn
+D. lǐmiàn
+Đáp án: A
+Lời giải: 西边 đọc là xībian, nghĩa là phía tây. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 148. Trong bài học, “南边” có nghĩa là gì?
+A. lấy, rút
+B. bên trong
+C. gần
+D. phía nam
+Đáp án: D
+Lời giải: 南边 đọc là nánbian, nghĩa là phía nam. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 149. Chọn chữ Hán có nghĩa “phía nam”.
+A. 大学
+B. 每个周末
+C. 南边
+D. 店
+Đáp án: C
+Lời giải: 南边 đọc là nánbian, nghĩa là phía nam. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 150. Chọn phiên âm đúng của “南边”.
+A. běibian
+B. nánbian
+C. guǎi
+D. zuìjìn
+Đáp án: B
+Lời giải: 南边 đọc là nánbian, nghĩa là phía nam. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 151. Trong bài học, “北边” có nghĩa là gì?
+A. gần đây, dạo gần đây
+B. trước đây; trước khi
+C. phía bắc
+D. căn phòng
+Đáp án: C
+Lời giải: 北边 đọc là běibian, nghĩa là phía bắc. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 152. Chọn chữ Hán có nghĩa “phía bắc”.
+A. 饭店
+B. 公园
+C. 北边
+D. 就
+Đáp án: C
+Lời giải: 北边 đọc là běibian, nghĩa là phía bắc. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 153. Chọn phiên âm đúng của “北边”.
+A. dàxué
+B. jiǔdiàn
+C. běibian
+D. lǐmiàn
+Đáp án: C
+Lời giải: 北边 đọc là běibian, nghĩa là phía bắc. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 154. Trong bài học, “手” có nghĩa là gì?
+A. lấy, rút
+B. bàn tay
+C. Nhà hàng Tứ Xuyên
+D. nhà hàng
+Đáp án: B
+Lời giải: 手 đọc là shǒu, nghĩa là bàn tay. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 155. Chọn chữ Hán có nghĩa “bàn tay”.
+A. 寄
+B. 超市
+C. 西边
+D. 手
+Đáp án: D
+Lời giải: 手 đọc là shǒu, nghĩa là bàn tay. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 156. Chọn phiên âm đúng của “手”.
+A. yuǎn
+B. yòushǒu
+C. shāngchǎng
+D. shǒu
+Đáp án: D
+Lời giải: 手 đọc là shǒu, nghĩa là bàn tay. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 157. Trong bài học, “左手” có nghĩa là gì?
+A. về phía, hướng tới
+B. cùng nhau
+C. siêu thị Toàn Gia
+D. tay trái
+Đáp án: D
+Lời giải: 左手 đọc là zuǒshǒu, nghĩa là tay trái. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 158. Chọn chữ Hán có nghĩa “tay trái”.
+A. 拐
+B. 中国银行
+C. 左手
+D. 跟
+Đáp án: C
+Lời giải: 左手 đọc là zuǒshǒu, nghĩa là tay trái. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 159. Chọn phiên âm đúng của “左手”.
+A. gōnglǐ
+B. Běijīng Yínháng
+C. zuǒshǒu
+D. shāngchǎng
+Đáp án: C
+Lời giải: 左手 đọc là zuǒshǒu, nghĩa là tay trái. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 160. Trong bài học, “右手” có nghĩa là gì?
+A. gần đây, khu vực lân cận
+B. biết
+C. căn phòng
+D. tay phải
+Đáp án: D
+Lời giải: 右手 đọc là yòushǒu, nghĩa là tay phải. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 161. Chọn chữ Hán có nghĩa “tay phải”.
+A. 往
+B. 右手
+C. 左边
+D. 上
+Đáp án: B
+Lời giải: 右手 đọc là yòushǒu, nghĩa là tay phải. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 162. Chọn phiên âm đúng của “右手”.
+A. zhǎodào
+B. zuìjìn
+C. yòushǒu
+D. fángzi
+Đáp án: C
+Lời giải: 右手 đọc là yòushǒu, nghĩa là tay phải. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 163. Trong bài học, “公里” có nghĩa là gì?
+A. Nhà hàng Tứ Xuyên
+B. lượng từ cho công ty, cửa hàng, ngân hàng
+C. ki-lô-mét
+D. mét; đơn vị độ dài trong bài
+Đáp án: C
+Lời giải: 公里 đọc là gōnglǐ, nghĩa là ki-lô-mét. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 164. Chọn chữ Hán có nghĩa “ki-lô-mét”.
+A. 书店
+B. 公里
+C. 对面
+D. 附近
+Đáp án: B
+Lời giải: 公里 đọc là gōnglǐ, nghĩa là ki-lô-mét. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 165. Chọn phiên âm đúng của “公里”.
+A. gōnglǐ
+B. fàndiàn
+C. zài nǎr
+D. běibian
+Đáp án: A
+Lời giải: 公里 đọc là gōnglǐ, nghĩa là ki-lô-mét. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Dễ
+Câu 166. Trong bài học, “前边” có nghĩa là gì?
+A. phía trên; lên
+B. cho; giới từ chỉ người nhận
+C. phía trước
+D. biết
+Đáp án: C
+Lời giải: 前边 đọc là qiánbian, nghĩa là phía trước. Tham chiếu: PDF bài 7, trang 19.
+Độ khó: Dễ
+Câu 167. Chọn chữ Hán có nghĩa “phía trước”.
+A. 谢谢
+B. 银行
+C. 远
+D. 前边
+Đáp án: D
+Lời giải: 前边 đọc là qiánbian, nghĩa là phía trước. Tham chiếu: PDF bài 7, trang 19.
+Độ khó: Dễ
+Câu 168. Chọn phiên âm đúng của “前边”.
+A. qiánbian
+B. ránhòu
+C. Quánjiā Chāoshì
+D. xièxie
+Đáp án: A
+Lời giải: 前边 đọc là qiánbian, nghĩa là phía trước. Tham chiếu: PDF bài 7, trang 19.
+Độ khó: Dễ
+Câu 169. Trong bài học, “后边” có nghĩa là gì?
+A. nhận, thu
+B. cùng nhau
+C. phía sau
+D. lấy, rút
+Đáp án: C
+Lời giải: 后边 đọc là hòubian, nghĩa là phía sau. Tham chiếu: PDF bài 7, trang 19.
+Độ khó: Dễ
+Câu 170. Chọn chữ Hán có nghĩa “phía sau”.
+A. 后边
+B. 给
+C. 不客气
+D. 外面
+Đáp án: A
+Lời giải: 后边 đọc là hòubian, nghĩa là phía sau. Tham chiếu: PDF bài 7, trang 19.
+Độ khó: Dễ
+Câu 171. Chọn phiên âm đúng của “后边”.
+A. jìn
+B. hòubian
+C. xièxie
+D. dōngbian
+Đáp án: B
+Lời giải: 后边 đọc là hòubian, nghĩa là phía sau. Tham chiếu: PDF bài 7, trang 19.
+Độ khó: Dễ
+Câu 172. Trong bài học, “以前” có nghĩa là gì?
+A. gần đây, dạo gần đây
+B. hiệu sách
+C. rẽ, ngoặt
+D. trước đây; trước khi
+Đáp án: D
+Lời giải: 以前 đọc là yǐqián, nghĩa là trước đây; trước khi. Tham chiếu: PDF bài 7, trang 20.
+Độ khó: Dễ
+Câu 173. Chọn chữ Hán có nghĩa “trước đây; trước khi”.
+A. 以前
+B. 左手
+C. 住
+D. 右手
+Đáp án: A
+Lời giải: 以前 đọc là yǐqián, nghĩa là trước đây; trước khi. Tham chiếu: PDF bài 7, trang 20.
+Độ khó: Dễ
+Câu 174. Chọn phiên âm đúng của “以前”.
+A. shìchǎng
+B. shàng
+C. yǐqián
+D. gōngyuán
+Đáp án: C
+Lời giải: 以前 đọc là yǐqián, nghĩa là trước đây; trước khi. Tham chiếu: PDF bài 7, trang 20.
+Độ khó: Dễ
+Câu 175. Trong bài học, “以后” có nghĩa là gì?
+A. đón, nhận; nghe điện thoại
+B. sau này; sau khi
+C. siêu thị
+D. phía nam
+Đáp án: B
+Lời giải: 以后 đọc là yǐhòu, nghĩa là sau này; sau khi. Tham chiếu: PDF bài 7, trang 20.
+Độ khó: Dễ
+Câu 176. Chọn chữ Hán có nghĩa “sau này; sau khi”.
+A. 中国银行
+B. 银行
+C. 店
+D. 以后
+Đáp án: D
+Lời giải: 以后 đọc là yǐhòu, nghĩa là sau này; sau khi. Tham chiếu: PDF bài 7, trang 20.
+Độ khó: Dễ
+Câu 177. Chọn phiên âm đúng của “以后”.
+A. shāngchǎng
+B. sòng
+C. zhèr
+D. yǐhòu
+Đáp án: D
+Lời giải: 以后 đọc là yǐhòu, nghĩa là sau này; sau khi. Tham chiếu: PDF bài 7, trang 20.
+Độ khó: Dễ
+Câu 178. Trong bài học, “大学” có nghĩa là gì?
+A. Nhà hàng Tứ Xuyên
+B. nhận, thu
+C. ở đâu
+D. đại học
+Đáp án: D
+Lời giải: 大学 đọc là dàxué, nghĩa là đại học. Tham chiếu: PDF bài 7, trang 21.
+Độ khó: Dễ
+Câu 179. Chọn chữ Hán có nghĩa “đại học”.
+A. 送
+B. 大学
+C. 手
+D. 公园
+Đáp án: B
+Lời giải: 大学 đọc là dàxué, nghĩa là đại học. Tham chiếu: PDF bài 7, trang 21.
+Độ khó: Dễ
+Câu 180. Chọn phiên âm đúng của “大学”.
+A. Quánjiā Chāoshì
+B. pángbiān
+C. dàxué
+D. lǐmiàn
+Đáp án: C
+Lời giải: 大学 đọc là dàxué, nghĩa là đại học. Tham chiếu: PDF bài 7, trang 21.
+Độ khó: Dễ
+Câu 181. Trong bài học, “公园” có nghĩa là gì?
+A. căn phòng
+B. trung tâm thương mại
+C. lấy, rút
+D. công viên
+Đáp án: D
+Lời giải: 公园 đọc là gōngyuán, nghĩa là công viên. Tham chiếu: PDF bài 7, trang 21.
+Độ khó: Dễ
+Câu 182. Chọn chữ Hán có nghĩa “công viên”.
+A. 左手
+B. 公园
+C. 取
+D. 下
+Đáp án: B
+Lời giải: 公园 đọc là gōngyuán, nghĩa là công viên. Tham chiếu: PDF bài 7, trang 21.
+Độ khó: Dễ
+Câu 183. Chọn phiên âm đúng của “公园”.
+A. gōngyuán
+B. shāngdiàn
+C. hòubian
+D. zuìjìn
+Đáp án: A
+Lời giải: 公园 đọc là gōngyuán, nghĩa là công viên. Tham chiếu: PDF bài 7, trang 21.
+Độ khó: Dễ
+Câu 184. Trong bài học, “这儿” có nghĩa là gì?
+A. tặng, đưa, tiễn
+B. lấy, rút
+C. ki-lô-mét
+D. ở đây, chỗ này
+Đáp án: D
+Lời giải: 这儿 đọc là zhèr, nghĩa là ở đây, chỗ này. Tham chiếu: PDF bài 7, trang 25.
+Độ khó: Dễ
+Câu 185. Chọn chữ Hán có nghĩa “ở đây, chỗ này”.
+A. 一起
+B. 这儿
+C. 上
+D. 前边
+Đáp án: B
+Lời giải: 这儿 đọc là zhèr, nghĩa là ở đây, chỗ này. Tham chiếu: PDF bài 7, trang 25.
+Độ khó: Dễ
+Câu 186. Chọn phiên âm đúng của “这儿”.
+A. cóng
+B. hòubian
+C. zhèr
+D. qiánbian
+Đáp án: C
+Lời giải: 这儿 đọc là zhèr, nghĩa là ở đây, chỗ này. Tham chiếu: PDF bài 7, trang 25.
+Độ khó: Dễ
+Câu 187. Trong bài học, “在哪儿” có nghĩa là gì?
+A. ở đâu
+B. cửa hàng, tiệm
+C. phía dưới; xuống
+D. bưu điện
+Đáp án: A
+Lời giải: 在哪儿 đọc là zài nǎr, nghĩa là ở đâu. Tham chiếu: PDF bài 7, trang 25.
+Độ khó: Dễ
+Câu 188. Chọn chữ Hán có nghĩa “ở đâu”.
+A. 酒店
+B. 家
+C. 在哪儿
+D. 东边
+Đáp án: C
+Lời giải: 在哪儿 đọc là zài nǎr, nghĩa là ở đâu. Tham chiếu: PDF bài 7, trang 25.
+Độ khó: Dễ
+Câu 189. Chọn phiên âm đúng của “在哪儿”.
+A. wǎng
+B. zài nǎr
+C. yóujú
+D. gōngyuán
+Đáp án: B
+Lời giải: 在哪儿 đọc là zài nǎr, nghĩa là ở đâu. Tham chiếu: PDF bài 7, trang 25.
+Độ khó: Dễ
+Câu 190. Trong bài học, “没有” có nghĩa là gì?
+A. phía trên; lên
+B. không có
+C. trung tâm thương mại
+D. bưu điện
+Đáp án: B
+Lời giải: 没有 đọc là méiyǒu, nghĩa là không có. Tham chiếu: PDF bài 7, trang 25.
+Độ khó: Dễ
+Câu 191. Chọn chữ Hán có nghĩa “không có”.
+A. 在哪儿
+B. 没有
+C. 公园
+D. 右边
+Đáp án: B
+Lời giải: 没有 đọc là méiyǒu, nghĩa là không có. Tham chiếu: PDF bài 7, trang 25.
+Độ khó: Dễ
+Câu 192. Chọn phiên âm đúng của “没有”.
+A. dōngbian
+B. shìchǎng
+C. diàn
+D. méiyǒu
+Đáp án: D
+Lời giải: 没有 đọc là méiyǒu, nghĩa là không có. Tham chiếu: PDF bài 7, trang 25.
+Độ khó: Dễ
+Câu 193. Trong bài học, “知道” có nghĩa là gì?
+A. phía bắc
+B. trung tâm thương mại
+C. lấy, rút
+D. biết
+Đáp án: D
+Lời giải: 知道 đọc là zhīdào, nghĩa là biết. Tham chiếu: PDF bài 7, trang 26.
+Độ khó: Dễ
+Câu 194. Chọn chữ Hán có nghĩa “biết”.
+A. 知道
+B. 住
+C. 后边
+D. 家
+Đáp án: A
+Lời giải: 知道 đọc là zhīdào, nghĩa là biết. Tham chiếu: PDF bài 7, trang 26.
+Độ khó: Dễ
+Câu 195. Chọn phiên âm đúng của “知道”.
+A. zhīdào
+B. qián
+C. xībian
+D. guàng
+Đáp án: A
+Lời giải: 知道 đọc là zhīdào, nghĩa là biết. Tham chiếu: PDF bài 7, trang 26.
+Độ khó: Dễ
+Câu 196. Trong bài học, “谢谢” có nghĩa là gì?
+A. cảm ơn
+B. đón, nhận; nghe điện thoại
+C. Ngân hàng Trung Quốc
+D. sau đó, tiếp theo
+Đáp án: A
+Lời giải: 谢谢 đọc là xièxie, nghĩa là cảm ơn. Tham chiếu: PDF bài 7, trang 26.
+Độ khó: Dễ
+Câu 197. Chọn chữ Hán có nghĩa “cảm ơn”.
+A. 邮局
+B. 找到
+C. 附近
+D. 谢谢
+Đáp án: D
+Lời giải: 谢谢 đọc là xièxie, nghĩa là cảm ơn. Tham chiếu: PDF bài 7, trang 26.
+Độ khó: Dễ
+Câu 198. Chọn phiên âm đúng của “谢谢”.
+A. Zhōngguó Yínháng
+B. xièxie
+C. qián
+D. zhèr
+Đáp án: B
+Lời giải: 谢谢 đọc là xièxie, nghĩa là cảm ơn. Tham chiếu: PDF bài 7, trang 26.
+Độ khó: Dễ
+Câu 199. Trong bài học, “不客气” có nghĩa là gì?
+A. bàn tay
+B. đi dạo, đi xem hàng
+C. không có gì; đáp lời cảm ơn
+D. bưu điện
+Đáp án: C
+Lời giải: 不客气 đọc là bú kèqi, nghĩa là không có gì; đáp lời cảm ơn. Tham chiếu: PDF bài 7, trang 26.
+Độ khó: Dễ
+Câu 200. Chọn chữ Hán có nghĩa “không có gì; đáp lời cảm ơn”.
+A. 收
+B. 店
+C. 不客气
+D. 东边
+Đáp án: C
+Lời giải: 不客气 đọc là bú kèqi, nghĩa là không có gì; đáp lời cảm ơn. Tham chiếu: PDF bài 7, trang 26.
+Độ khó: Dễ
+Câu 201. Chọn phiên âm đúng của “不客气”.
+A. bú kèqi
+B. fùjìn
+C. gěi
+D. shàng
+Đáp án: A
+Lời giải: 不客气 đọc là bú kèqi, nghĩa là không có gì; đáp lời cảm ơn. Tham chiếu: PDF bài 7, trang 26.
+Độ khó: Dễ
+Câu 202. Trong bài học, “远” có nghĩa là gì?
+A. xa
+B. cảm ơn
+C. bàn tay
+D. Ngân hàng Bắc Kinh
+Đáp án: A
+Lời giải: 远 đọc là yuǎn, nghĩa là xa. Tham chiếu: PDF bài 7, trang 27.
+Độ khó: Dễ
+Câu 203. Chọn chữ Hán có nghĩa “xa”.
+A. 远
+B. 右手
+C. 找到
+D. 房间
+Đáp án: A
+Lời giải: 远 đọc là yuǎn, nghĩa là xa. Tham chiếu: PDF bài 7, trang 27.
+Độ khó: Dễ
+Câu 204. Chọn phiên âm đúng của “远”.
+A. ránhòu
+B. yuǎn
+C. zhèr
+D. hòu
+Đáp án: B
+Lời giải: 远 đọc là yuǎn, nghĩa là xa. Tham chiếu: PDF bài 7, trang 27.
+Độ khó: Dễ
+Câu 205. Trong bài học, “近” có nghĩa là gì?
+A. không có
+B. về phía, hướng tới
+C. gần
+D. ở đây, chỗ này
+Đáp án: C
+Lời giải: 近 đọc là jìn, nghĩa là gần. Tham chiếu: PDF bài 7, trang 34.
+Độ khó: Dễ
+Câu 206. Chọn chữ Hán có nghĩa “gần”.
+A. 从
+B. 不客气
+C. 就
+D. 近
+Đáp án: D
+Lời giải: 近 đọc là jìn, nghĩa là gần. Tham chiếu: PDF bài 7, trang 34.
+Độ khó: Dễ
+Câu 207. Chọn phiên âm đúng của “近”.
+A. jìn
+B. gōngyuán
+C. yóujú
+D. zuìjìn
+Đáp án: A
+Lời giải: 近 đọc là jìn, nghĩa là gần. Tham chiếu: PDF bài 7, trang 34.
+Độ khó: Dễ
+Câu 208. Trong bài học, “找到” có nghĩa là gì?
+A. cảm ơn
+B. bên phải
+C. sau này; sau khi
+D. tìm thấy
+Đáp án: D
+Lời giải: 找到 đọc là zhǎodào, nghĩa là tìm thấy. Tham chiếu: PDF bài 7, trang 34.
+Độ khó: Dễ
+Câu 209. Chọn chữ Hán có nghĩa “tìm thấy”.
+A. 中国银行
+B. 房子
+C. 找到
+D. 北京银行
+Đáp án: C
+Lời giải: 找到 đọc là zhǎodào, nghĩa là tìm thấy. Tham chiếu: PDF bài 7, trang 34.
+Độ khó: Dễ
+Câu 210. Chọn phiên âm đúng của “找到”.
+A. dōngbian
+B. zhǎodào
+C. jì
+D. bú kèqi
+Đáp án: B
+Lời giải: 找到 đọc là zhǎodào, nghĩa là tìm thấy. Tham chiếu: PDF bài 7, trang 34.
+Độ khó: Dễ
+Câu 211. Điền từ: 银行___饭店对面。
+A. 给
+B. 有
+C. 从
+D. 在
+Đáp án: D
+Lời giải: 在 dùng để nêu vị trí của ngân hàng. Tham chiếu: PDF bài 7, trang 19.
+Độ khó: Vừa
+Câu 212. Điền từ: 附近___一家银行。
+A. 有
+B. 在
+C. 往
+D. 给
+Đáp án: A
+Lời giải: Địa điểm + 有 + sự vật biểu thị sự tồn tại. Tham chiếu: PDF bài 7, trang 21.
+Độ khó: Vừa
+Câu 213. Chọn câu phủ định đúng của 附近有超市。
+A. 附近没有超市。
+B. 附近有不超市。
+C. 附近没在超市。
+D. 附近不有超市。
+Đáp án: A
+Lời giải: Phủ định của 有 là 没有. Tham chiếu: PDF bài 7, trang 21.
+Độ khó: Vừa
+Câu 214. Chọn câu hỏi có nghĩa “Ngân hàng ở đâu?”.
+A. 银行有哪儿？
+B. 银行在哪儿？
+C. 银行往什么？
+D. 银行从谁？
+Đáp án: B
+Lời giải: 在哪儿 dùng để hỏi vị trí. Tham chiếu: PDF bài 7, trang 25.
+Độ khó: Vừa
+Câu 215. Điền lượng từ: 一___银行。
+A. 碗
+B. 张
+C. 杯
+D. 家
+Đáp án: D
+Lời giải: 家 dùng cho ngân hàng, cửa hàng và công ty. Tham chiếu: PDF bài 7, trang 6.
+Độ khó: Vừa
+Câu 216. Điền từ: 往前走，然后往左___。
+A. 寄
+B. 住
+C. 收
+D. 拐
+Đáp án: D
+Lời giải: 往左拐 là rẽ trái. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Vừa
+Câu 217. Chọn cặp phương hướng đối lập.
+A. 附近 — 对面
+B. 里面 — 旁边
+C. 左边 — 前边
+D. 左边 — 右边
+Đáp án: D
+Lời giải: 左边 là bên trái; 右边 là bên phải. Tham chiếu: PDF bài 7, trang 15.
+Độ khó: Vừa
+Câu 218. Chọn cặp chỉ trong và ngoài.
+A. 前 — 左
+B. 后 — 右
+C. 对面 — 旁边
+D. 里面 — 外面
+Đáp án: D
+Lời giải: 里面 là bên trong; 外面 là bên ngoài. Tham chiếu: PDF bài 7, trang 14.
+Độ khó: Vừa
+Câu 219. Chọn câu chỉ đường đúng.
+A. 往这儿从前走。
+B. 从往走这儿前。
+C. 走从前往这儿。
+D. 从这儿往前走。
+Đáp án: D
+Lời giải: 从 nêu điểm xuất phát, 往前 nêu hướng đi. Tham chiếu: PDF bài 7, trang 13.
+Độ khó: Vừa
+Câu 220. Điền từ: 我___朋友一起去书店。
+A. 跟
+B. 从
+C. 有
+D. 在
+Đáp án: A
+Lời giải: 跟 + người + 一起 + hành động: cùng ai làm gì. Tham chiếu: PDF bài 7, trang 12.
+Độ khó: Vừa
+Câu 221. Điền từ: 妈妈___我买书。
+A. 往
+B. 给
+C. 从
+D. 在
+Đáp án: B
+Lời giải: 给 đứng trước người nhận: mua sách cho tôi. Tham chiếu: PDF bài 7, trang 11.
+Độ khó: Vừa
+Câu 222. Đọc “银行就在饭店对面。” Ngân hàng ở đâu?
+A. Sau bưu điện
+B. Bên trái công viên
+C. Đối diện nhà hàng
+D. Trong hiệu sách
+Đáp án: C
+Lời giải: 就 nhấn mạnh vị trí 在饭店对面. Tham chiếu: PDF bài 7, trang 26.
+Độ khó: Vừa
+Câu 223. Đọc “书店在全家超市对面。” Hiệu sách đối diện nơi nào?
+A. Trường đại học
+B. Ngân hàng Bắc Kinh
+C. Siêu thị Toàn Gia
+D. Nhà hàng Tứ Xuyên
+Đáp án: C
+Lời giải: 全家超市 là địa điểm làm mốc. Tham chiếu: PDF bài 7, trang 27.
+Độ khó: Vừa
+Câu 224. Đọc “附近有中国银行，没有北京银行。” Gần đây không có nơi nào?
+A. Ngân hàng Bắc Kinh
+B. Một ngân hàng
+C. Khu vực lân cận
+D. Ngân hàng Trung Quốc
+Đáp án: A
+Lời giải: 没有北京银行 nghĩa là không có Ngân hàng Bắc Kinh. Tham chiếu: PDF bài 7, trang 25.
+Độ khó: Vừa
+Câu 225. Trong 从学校到银行, 从 và 到 biểu thị điều gì?
+A. Giờ và phút
+B. Điểm xuất phát và điểm đến
+C. Người cho và người nhận
+D. Bên trái và bên phải
+Đáp án: B
+Lời giải: 从 A 到 B nghĩa là từ A đến B. Tham chiếu: PDF bài 7, trang 14.
+Độ khó: Vừa
+Câu 226. Chọn cách nói “Sau khi tan học, tôi đi siêu thị”.
+A. 我去以后下课超市。
+B. 下课以前，我去超市。
+C. 下课以后，我去超市。
+D. 以后下课，我超市去。
+Đáp án: C
+Lời giải: Hành động 下课 đứng trước 以后. Tham chiếu: PDF bài 7, trang 20.
+Độ khó: Vừa
+Câu 227. Chọn cách nói “Trước khi ăn cơm”.
+A. 吃饭里面
+B. 以前吃饭以后
+C. 吃饭以前
+D. 吃饭然后前
+Đáp án: C
+Lời giải: Hành động + 以前 biểu thị trước khi làm gì. Tham chiếu: PDF bài 7, trang 20.
+Độ khó: Vừa
+Câu 228. “往右拐” yêu cầu làm gì?
+A. Rẽ phải
+B. Đi vào trong
+C. Rẽ trái
+D. Quay về hôm qua
+Đáp án: A
+Lời giải: 右 là phải; 拐 là rẽ. Tham chiếu: PDF bài 7, trang 17.
+Độ khó: Vừa
+Câu 229. Điền từ nhấn mạnh: 饭店___在附近。
+A. 就
+B. 给
+C. 跟
+D. 从
+Đáp án: A
+Lời giải: 就在 nhấn mạnh nhà hàng ở ngay gần đây. Tham chiếu: PDF bài 7, trang 10.
+Độ khó: Vừa
+Câu 230. Chọn câu hỏi tồn tại đúng.
+A. 附近有没有书店吗？
+B. 附近有不有书店？
+C. 附近有没有书店？
+D. 附近在没有书店？
+Đáp án: C
+Lời giải: Có thể hỏi bằng 有没有; không thêm 吗 vào câu chính phản. Tham chiếu: PDF bài 7, trang 22.
+Độ khó: Vừa
+[NGU PHAP]
+Nói vị trí: A 在 B + phương vị từ：银行在饭店对面。 Ngân hàng ở đối diện nhà hàng. 书店在超市旁边。 Hiệu sách ở bên cạnh siêu thị. Phương vị từ đứng sau địa điểm làm mốc. (PDF trang 19)
+Nói nơi có một sự vật: địa điểm + 有：附近有一家银行。 Gần đây có một ngân hàng. 公园旁边没有超市。 Bên cạnh công viên không có siêu thị. Hỏi: 附近有银行吗？ hoặc 附近有没有银行？ Không thêm 在 trước địa điểm ở mẫu tồn tại này. (PDF trang 21)
+Chỉ đường: 从…往…然后…：从这儿往前走，然后往左拐。 Từ đây đi về phía trước, sau đó rẽ trái. 从 A 到 B: từ A đến B. 往 + phương hướng + động từ: hành động về hướng nào. (PDF trang 13)
+Nói trước và sau một hành động：吃饭以前，我看电视。 Trước khi ăn, tôi xem tivi. 下课以后，我去超市。 Sau khi tan học, tôi đi siêu thị. Hành động hoặc thời gian đứng trước 以前 / 以后. (PDF trang 20)
+[BAI DOC]
+Hỏi đường đến ngân hàng：海伦：这附近有银行吗？ 小明：有，有一家中国银行。 海伦：中国银行在哪儿？ 小明：从这儿往前走，然后往左拐。银行就在饭店对面。 Hội thoại rút gọn từ bài khóa: gần đây có Ngân hàng Trung Quốc; đi thẳng rồi rẽ trái, ngân hàng đối diện nhà hàng. (PDF trang 25)
+Tìm hiệu sách：欧文：这附近有书店吗？ 黄文丽：有，书店在超市对面。 欧文：什么超市？ 黄文丽：全家超市。 欧文：远吗？ 黄文丽：不远。 Hội thoại rút gọn từ bài khóa: hiệu sách đối diện siêu thị Toàn Gia, không xa. (PDF trang 27)
+[LUYEN NOI]
+你家附近有银行吗？ | Gần nhà bạn có ngân hàng không? | 我家附近有一家银行。 | Chấp nhận 有 hoặc 没有; cần trả lời sự tồn tại của ngân hàng, không kiểm chứng nơi ở.
+请问，书店在哪儿？ | Xin hỏi, hiệu sách ở đâu? | 书店在学校旁边。 | Chấp nhận địa điểm hợp lý khác; luyện 在 + địa điểm + phương vị từ.
+学校附近有什么？ | Gần trường có gì? | 学校附近有一家超市。 | Nêu ít nhất một địa điểm với 有; chấp nhận ví dụ tưởng tượng phù hợp.
+从这儿到银行怎么走？ | Từ đây đến ngân hàng đi thế nào? | 从这儿往前走，然后往左拐。 | Chấp nhận hướng khác; cần diễn đạt đường đi rõ ràng, không có bản đồ đáp án cố định.
+你跟谁一起去超市？ | Bạn đi siêu thị cùng ai? | 我跟朋友一起去超市。 | Chấp nhận người đi cùng khác; chú ý 跟…一起.
+银行在饭店对面吗？ | Ngân hàng ở đối diện nhà hàng phải không? | 对，银行在饭店对面。 | Chấp nhận khẳng định hoặc phủ định có nghĩa phù hợp.
+你下课以后去哪儿？ | Sau khi tan học bạn đi đâu? | 下课以后，我去书店。 | Chấp nhận điểm đến khác; chú ý hành động + 以后.
+学校里面有没有书店？ | Trong trường có hiệu sách không? | 学校里面没有书店。 | Chấp nhận 有 hoặc 没有; không dùng 不有.
+请用“然后”说一句指路的话，好吗？ | Bạn hãy dùng 然后 nói một câu chỉ đường được không? | 往前走，然后往右拐。 | Cần 然后 nối hai bước chỉ đường; chấp nhận hướng khác.
+你想去邮局还是银行？ | Bạn muốn đến bưu điện hay ngân hàng? | 我想去银行。 | Trả lời một lựa chọn hoặc cả hai có giải thích; không bắt buộc theo câu mẫu.

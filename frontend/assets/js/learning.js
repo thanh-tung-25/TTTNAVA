@@ -1,11 +1,11 @@
 import { el } from './api.js';
 import { initPage } from './ui-core.js';
 
-function subjectCard({ title, text, href, animal, symbol, tone }) {
+function subjectCard({ title, text, href, animal, symbol, tone, cta='Vào học →' }) {
   return el('a', { class: 'learning-subject '+tone, href }, [
     el('div', { class:'learning-subject-art' }, [el('img', { src:'/assets/images/mascot-'+animal+'.svg', width:94, height:102, alt:'' }), el('span', {class:'learning-symbol', 'aria-hidden':'true', text:symbol})]),
     el('div', {}, [el('h3', {text:title}), el('p', {text})]),
-    el('span', {class:'learning-start', text:'Vào học →'}),
+    el('span', {class:'learning-start', text:cta}),
   ]);
 }
 function toolCard([title, text, href, symbol]) {
@@ -23,6 +23,7 @@ async function load() {
   const subjects = chinese ? [
     {title:'Bài học HSK '+profile.course.level,text:'Khám phá bài học và học bằng thẻ lật.',href:'/pages/student/chinese/',animal:'panda',symbol:'文',tone:'learning-purple'},
     {title:'Sổ từ của con',text:'Ôn từ đã học, từ yêu thích và từ cần nhớ.',href:'/pages/student/chinese/?view=notebook',animal:'bunny',symbol:'Aa',tone:'learning-peach'},
+    {title:'Giao tiếp với AI',text:'Hệ thống đang nâng cấp.',href:'/pages/student/chinese/?view=ai-chat',animal:'owl',symbol:'AI',tone:'learning-mint',cta:'Xem tính năng →'},
   ] : [
     {title:'Toán',text:'Khám phá con số, phép tính và hình học.',href:'/pages/student/practice/?subject=toan',animal:'owl',symbol:'＋',tone:'learning-purple'},
     {title:'Tiếng Việt',text:'Cùng đọc hiểu, luyện từ và đặt câu.',href:'/pages/student/practice/?subject=tieng-viet',animal:'bunny',symbol:'Aa',tone:'learning-peach'},

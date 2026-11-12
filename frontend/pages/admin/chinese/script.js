@@ -3,10 +3,13 @@ import {request,el,root,card,field,notice,error,table} from '/assets/js/chinese-
 import {adminCatalog} from '/assets/js/chinese-admin-catalog.js';
 import {adminLessonWorkspace} from '/assets/js/chinese-admin-workspace.js';
 import {adminSetEditor} from '/assets/js/chinese-admin-editor.js';
+import {renderChineseAiChat} from '/assets/js/chinese-ai-chat.js';
 const params=new URLSearchParams(location.search);let catalog;
 async function boot(){
  if(['levels','tests'].includes(params.get('view'))){await import('./advanced.js');return;}
- const profile=await initPage('admin','chinese');catalog=await request('/catalog');notice('');
+ const profile=await initPage('admin','chinese');
+ if(params.get('view')==='ai-chat'){notice('');document.querySelector('main>h1').textContent='Giao tiếp với AI';return renderChineseAiChat(root(),{role:'admin',level:Number(params.get('level'))||1});}
+ catalog=await request('/catalog');notice('');
  if(params.get('view')==='speaking-results'){const {adminSpeakingResults}=await import('/assets/js/chinese-speaking-admin-results.js');return adminSpeakingResults();}
  if(params.has('activities')){const lesson=catalog.lessons.find(l=>l.id===params.get('activities'));if(!lesson)throw Error('Không tìm thấy bài học.');const {activitiesEditor}=await import('./activities-editor.js');return activitiesEditor(lesson,catalog);}
  if(params.has('set'))return adminSetEditor(params.get('set'),{catalog,profile,params});

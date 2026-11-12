@@ -9,6 +9,7 @@ import {chooseQuiz,wordTable,listeningPractice} from '/assets/js/chinese-study-e
 import {animalPath} from '/assets/js/animal-path.js';
 import {chineseQuestionPrompt} from '/assets/js/chinese-question-prompt.js';
 import {mountSpeaking} from '/assets/js/chinese-speaking.js';
+import {renderChineseAiChat} from '/assets/js/chinese-ai-chat.js';
 const params=new URLSearchParams(location.search);let catalog,timer,learner;
 const json=v=>typeof v==='string'?JSON.parse(v):v;
 const extra=(title,children)=>el('details',{class:'learn-extra'},[el('summary',{text:title}),...children]);
@@ -16,15 +17,17 @@ function action(text,fn,primary=false){const b=button(text,async()=>{b.disabled=
 const quiz=async(id,review=false)=>chooseQuiz(id,async body=>{const a=await request('/attempts','POST',body);location.href='?attempt='+a.id;},review);
 async function boot(){
  if(params.get('view')==='practice'){params.delete('view');window.history.replaceState(null,'',location.pathname+(params.size?'?'+params:''));}
- document.body.classList.toggle('is-studying',params.has('set'));
- document.body.classList.toggle('is-speaking',params.get('mode')==='speak');
+ const aiChat=params.get('view')==='ai-chat';
+ document.body.classList.toggle('is-studying',!aiChat&&params.has('set'));
+ document.body.classList.toggle('is-speaking',!aiChat&&params.get('mode')==='speak');
  const activeView={tests:'exam',notebook:'notebook',history:'history'}[params.get('view')]||'learning';
  const profile=await initPage('student',activeView);
  learner=profile;
  if(profile.course?.kind!=='chinese'){location.replace('/pages/student/courses/?program=chinese');return;}
  if(profile.course?.kind==='chinese')params.set('level',String(profile.course.level));
- catalog=await request('/catalog');notice('');
  document.querySelectorAll('.chinese-pagebar .chinese-tools a').forEach(a=>{const view=new URL(a.href).searchParams.get('view');if(view===(params.get('view')||null))a.setAttribute('aria-current','page');});
+ if(aiChat){notice('');return renderChineseAiChat(root(),{level:profile.course.level});}
+ catalog=await request('/catalog');notice('');
  if(params.has('attempt'))return showAttempt(await request('/attempts/'+params.get('attempt')));
  if(params.has('set'))return learn(params.get('set'));
  if(params.get('view')==='notebook')return notebook();

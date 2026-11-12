@@ -19,7 +19,7 @@ test.beforeAll(async()=>{
 });
 test.afterAll(async()=>{server.closeAllConnections();await new Promise(resolve=>server.close(resolve));});
 async function mock(page,{published=true,audio=true,configured=true,settings={duration_seconds:90,order:'sequential'}}={}){
- const state={audio,requests:[],clips:[],role:'student',submission:null,failFinish:false};
+ const state={audio,configured,requests:[],clips:[],role:'student',submission:null,failFinish:false,failAvailability:false};
  await page.addInitScript(()=>{
   localStorage.setItem('ttnava-course','hsk-1');window.__micTracks=[];window.__mediaRequests=[];window.__recorderKinds=[];window.__recorders=0;window.__failRecord=false;
   const get=navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);navigator.mediaDevices.getUserMedia=async config=>{window.__mediaRequests.push(config);const stream=await get(config);window.__micTracks.push(...stream.getTracks());return stream;};
@@ -34,7 +34,10 @@ async function mock(page,{published=true,audio=true,configured=true,settings={du
   else if(p.endsWith('/access'))data={id:'hsk-1',kind:'chinese',level:1,title:'HSK 1',unlocked:true};else if(p.endsWith('/diamonds/summary'))data={total:0};else if(p.includes('/chat/'))data=[];else if(p.endsWith('/experience/preferences'))data={font_scale:'normal',speech_rate:1};
   else if(p.endsWith('/chinese/catalog'))data={levels:[{id:1,title:'HSK 1'}],lessons:[lesson],sets:[set],counts:[{set_id:set.id,kind:'vocabulary',total:1}],reviews:[],progress:[],completion:[]};
   else if(p.endsWith('/chinese/sets/sample'))data={set,activities,items:[{id:'word',kind:'vocabulary',data:{hanzi:'名片',pinyin:'míngpiàn',meaning:'danh thiếp'}}],progress:null};
-  else if(p.endsWith('/speaking/availability'))data={configured,reason:configured?'':'Chấm AI chưa được bật. Bạn vẫn có thể ghi âm, nghe lại và tải bản ghi tùy ý.'};
+  else if(p.endsWith('/speaking/availability')){
+   if(state.failAvailability)return r.fulfill({status:503,json:{error:{message:'Unavailable'}}});
+   data={configured:state.configured,reason:state.configured?'':'Chấm AI chưa được bật. Bạn vẫn có thể ghi âm, nghe lại và tải bản ghi tùy ý.'};
+  }
   else if(p.endsWith('/sets/sample/speaking-submissions')){const body=req.postDataJSON();state.submission={id:'result-1',student_id:'student-1',username:'ngoc_anh',display_name:'Ngọc Anh',recording_code:body.recording_id.slice(0,8).toUpperCase(),recorded_at:body.recorded_at,created_at:body.recorded_at,level_id:1,lesson_title:lesson.title,set_title:set.title,status:'pending',score:null,result:null};data={id:state.submission.id};}
   else if(/\/clips\/\d+\/\d+$/.test(p)){
    const body=req.postDataBuffer(),start=body.indexOf(Buffer.from('RIFF')),size=start>=0?body.readUInt32LE(start+4)+8:0;
@@ -98,6 +101,33 @@ test('unconfigured AI leaves audio recording usable and sends no audio for gradi
  await expect(page.getByRole('button',{name:'AI chấm bài & gửi cô',exact:true})).toBeDisabled();await expect(page.locator('.speaking-ai-panel')).toContainText('Chấm AI chưa được bật');
  expect(state.clips).toEqual([]);expect(state.requests.filter(r=>r.method==='POST').every(r=>r.path.endsWith('/question-audio'))).toBe(true);
  await expect(page.locator('.speaking-download')).toHaveAttribute('href',/^blob:/);await page.getByRole('button',{name:'Ghi âm lại',exact:true}).click();await expect(page.locator('.speaking-studio')).toHaveAttribute('data-phase','recording');
+});
+
+test('rechecks AI after configuration changes and grades the same recording without reloading',async({page})=>{
+ await page.setViewportSize({width:390,height:844});const state=await mock(page,{configured:false,settings:{duration_seconds:90,order:'sequential',ai_assessment:true}});
+ await recordAnswers(page);await expect(page.locator('.speaking-ai-panel')).toContainText('Chấm AI chưa được bật');
+ const recordingUrl=await page.locator('.speaking-download').getAttribute('href');state.configured=true;
+ await page.getByRole('button',{name:'Kiểm tra lại AI',exact:true}).click();
+ await expect(page.getByRole('button',{name:'AI chấm bài & gửi cô',exact:true})).toBeEnabled();
+ await expect(page.getByRole('button',{name:'Kiểm tra lại AI',exact:true})).toBeHidden();
+ await expect(page.locator('.speaking-download')).toHaveAttribute('href',recordingUrl);expect(await page.evaluate(()=>window.__recorders)).toBe(1);
+ expect(state.requests.filter(r=>r.method==='POST').every(r=>r.path.endsWith('/question-audio'))).toBe(true);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.getByRole('button',{name:'AI chấm bài & gửi cô',exact:true}).click();await expect(page.locator('.speaking-ai-score')).toHaveText('86/100');
+ await expect(page.locator('.speaking-result audio')).toHaveAttribute('src',recordingUrl);
+ const checked=state.requests.filter(r=>r.path.endsWith('/speaking/availability')).length;
+ await page.evaluate(()=>window.dispatchEvent(new Event('focus')));
+ expect(state.requests.filter(r=>r.path.endsWith('/speaking/availability'))).toHaveLength(checked);await expect(page.locator('.speaking-ai-score')).toHaveText('86/100');
+});
+
+test('a failed status check disables stale availability and recovers on return without losing the recording',async({page})=>{
+ const state=await mock(page,{settings:{duration_seconds:90,order:'sequential',ai_assessment:true}});
+ await open(page);await microphone(page);await record(page);await hear(page,1);await page.waitForTimeout(350);state.failAvailability=true;await stop(page);
+ await expect(page.locator('.speaking-ai-panel')).toContainText('Chưa kiểm tra được dịch vụ chấm');await expect(page.getByRole('button',{name:'AI chấm bài & gửi cô',exact:true})).toBeDisabled();
+ const recordingUrl=await page.locator('.speaking-download').getAttribute('href');state.failAvailability=false;
+ await page.evaluate(()=>window.dispatchEvent(new Event('focus')));
+ await expect(page.getByRole('button',{name:'AI chấm bài & gửi cô',exact:true})).toBeEnabled();
+ await expect(page.locator('.speaking-download')).toHaveAttribute('href',recordingUrl);expect(state.clips).toEqual([]);expect(await page.evaluate(()=>window.__recorders)).toBe(1);
 });
 
 test('uses the assigned order, defaults to three source questions, and creates safe session filenames',()=>{

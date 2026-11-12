@@ -7,18 +7,40 @@ export function speakingAssessment(ui,{set,profile,onBusy}){
  speakingResultStyles();
  const panel=el('section',{class:'speaking-ai-panel','aria-label':'AI chấm bài luyện nói'}),status=el('p',{role:'status','aria-live':'polite'}),output=el('div');
  const button=el('button',{type:'button',class:'btn btn-primary speaking-ai-submit',text:'AI chấm bài & gửi cô',disabled:true});
- panel.append(el('div',{class:'speaking-ai-title'},[el('span',{text:'✦'}),el('div',{},[el('h3',{text:'Cùng AI luyện nói tốt hơn'}),el('p',{text:'AI nhận diện lời nói và chấm đúng ý, từ và ngữ pháp. Kết quả gửi cho cô; tải bản ghi là tùy chọn.'})])]),button,status,output);ui.result.append(panel);
- let availability=null,recording=null,busy=false,disposed=false,controller;
+ const retry=el('button',{type:'button',class:'btn speaking-ai-retry',text:'Kiểm tra lại AI'});
+ panel.append(el('div',{class:'speaking-ai-title'},[el('span',{text:'✦'}),el('div',{},[el('h3',{text:'Cùng AI luyện nói tốt hơn'}),el('p',{text:'AI nhận diện lời nói và chấm đúng ý, từ và ngữ pháp. Kết quả gửi cho cô; tải bản ghi là tùy chọn.'})])]),el('div',{class:'speaking-ai-actions'},[button,retry]),status,output);ui.result.append(panel);
+ let availability=null,recording=null,busy=false,checking=false,disposed=false,controller,availabilityController;
  const permitted=()=>speakingAssessmentEnabled(set)&&profile.role==='student';
  const update=()=>{
-  button.disabled=busy||!recording?.audio||!availability?.configured||!permitted();
+  button.disabled=busy||checking||!recording?.audio||!availability?.configured||!permitted();
+  retry.hidden=!permitted()||Boolean(recording?.assessment)||Boolean(availability?.configured);
+  retry.disabled=busy||checking;
+  retry.textContent=checking?'Đang kiểm tra…':'Kiểm tra lại AI';
+  panel.setAttribute('aria-busy',String(checking||busy));
   if(recording?.assessment){button.disabled=true;button.textContent='Đã gửi kết quả cho cô';}
  };
  const ready=async()=>{
+  if(disposed||busy||recording?.assessment)return;
+  availabilityController?.abort();
   if(!permitted()){status.textContent=profile.role==='admin'?'Đây là bản xem trước. Kết quả thật chỉ được gửi từ tài khoản học sinh.':'Cô giáo chưa bật chấm AI cho bài này.';update();return;}
-  try{availability=(await api('/api/v1/chinese/speaking/availability')).data;status.textContent=availability.configured?'Âm thanh trả lời chỉ gửi khi bạn bấm chấm. Sau xử lý, chỉ điểm và nhận xét được lưu.':availability.reason||'Chấm AI chưa được bật.';}catch{status.textContent='Chưa kiểm tra được dịch vụ chấm. Bản ghi vẫn nghe và tải được.';}
-  update();
+  const check=new AbortController();availabilityController=check;checking=true;availability=null;
+  status.textContent='Đang kiểm tra dịch vụ chấm AI…';update();
+  const timeout=setTimeout(()=>check.abort(),10000);
+  try{
+   const response=await api('/api/v1/chinese/speaking/availability',{cache:'no-store',signal:check.signal});
+   if(disposed||availabilityController!==check)return;
+   availability=response.data;status.textContent=availability?.configured?'Âm thanh trả lời chỉ gửi khi bạn bấm chấm. Sau xử lý, chỉ điểm và nhận xét được lưu.':availability?.reason||'Chấm AI chưa được bật.';
+  }catch{
+   if(disposed||availabilityController!==check)return;
+   status.textContent='Chưa kiểm tra được dịch vụ chấm. Bấm Kiểm tra lại AI để thử lại; bản ghi vẫn nghe và tải được.';
+  }finally{
+   clearTimeout(timeout);
+   if(!disposed&&availabilityController===check){availabilityController=null;checking=false;update();}
+  }
  };
+ retry.onclick=()=>{if(!retry.disabled)ready();};
+ const resume=()=>{if(!document.hidden&&recording?.audio&&!availability?.configured&&!checking&&!busy)ready();};
+ window.addEventListener('focus',resume);document.addEventListener('visibilitychange',resume);
  ready();
  button.onclick=async()=>{
   if(button.disabled||disposed)return;
@@ -42,5 +64,5 @@ export function speakingAssessment(ui,{set,profile,onBusy}){
   }catch(error){if(!disposed&&error.name!=='AbortError')status.textContent=error.message+' Bản ghi vẫn nghe và tải được.';}
   finally{busy=false;if(!disposed){onBusy(false);update();}}
  };
- return {attach(take){recording=take;output.replaceChildren();button.textContent='AI chấm bài & gửi cô';ready();update();},dispose(){disposed=true;controller?.abort();if(recording)recording.audio=null;recording=null;}};
+ return {attach(take){if(disposed)return;recording=take;output.replaceChildren();button.textContent='AI chấm bài & gửi cô';ready();update();},dispose(){disposed=true;controller?.abort();availabilityController?.abort();window.removeEventListener('focus',resume);document.removeEventListener('visibilitychange',resume);if(recording)recording.audio=null;recording=null;}};
 }

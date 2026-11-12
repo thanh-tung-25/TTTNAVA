@@ -16,7 +16,7 @@ export function validateSpeakingWav(buffer){
 }
 const requireAvailable=()=>{const availability=speakingAiAvailability();if(!availability.configured)throw new AppError(503,'SPEAKING_AI_UNAVAILABLE',availability.reason);};
 const limitError=()=>new AppError(429,'SPEAKING_PROVIDER_LIMIT','AI miễn phí đang chạm hạn mức. Hãy chờ ít nhất một phút rồi thử lại; nếu hết hạn mức ngày, thử vào ngày tiếp theo. Các phần đã xử lý được giữ lại.');
-export async function assessSpeakingAudio(buffer){
+export async function assessSpeakingAudio(buffer,{timeoutMs=40000}={}){
  const duration=validateSpeakingWav(buffer),c=env.speakingAi;
  requireAvailable();
  const empty={duration,transcript:'',accuracy:null,fluency:null,words:[]};
@@ -28,7 +28,7 @@ export async function assessSpeakingAudio(buffer){
  const boundary='ttnava-'+randomUUID(),field=(name,value)=>`--${boundary}\r\nContent-Disposition: form-data; name="${name}"\r\n\r\n${value}\r\n`;
  const payload=Buffer.concat([Buffer.from(field('model','whisper-large-v3')+field('language','zh')+field('response_format','verbose_json')+`--${boundary}\r\nContent-Disposition: form-data; name="file"; filename="answer.wav"\r\nContent-Type: audio/wav\r\n\r\n`),buffer,Buffer.from(`\r\n--${boundary}--\r\n`)]);
  let response;
- try{response=await fetch('https://api.groq.com/openai/v1/audio/transcriptions',{method:'POST',redirect:'error',headers:{Authorization:'Bearer '+c.key,'Content-Type':'multipart/form-data; boundary='+boundary},body:payload,signal:AbortSignal.timeout(40000)});}catch{throw new AppError(502,'SPEAKING_AUDIO_PROVIDER_ERROR','Chưa kết nối được dịch vụ nhận diện lời nói. Bạn có thể thử lại.');}finally{payload.fill(0);}
+ try{response=await fetch('https://api.groq.com/openai/v1/audio/transcriptions',{method:'POST',redirect:'error',headers:{Authorization:'Bearer '+c.key,'Content-Type':'multipart/form-data; boundary='+boundary},body:payload,signal:AbortSignal.timeout(timeoutMs)});}catch{throw new AppError(502,'SPEAKING_AUDIO_PROVIDER_ERROR','Chưa kết nối được dịch vụ nhận diện lời nói. Bạn có thể thử lại.');}finally{payload.fill(0);}
  if(response.status===429)throw limitError();
  if(!response.ok)throw new AppError(502,'SPEAKING_AUDIO_PROVIDER_ERROR','Dịch vụ nhận diện lời nói chưa xử lý được bản ghi. Hãy kiểm tra cấu hình hoặc thử lại.');
  const body=await response.json().catch(()=>null);

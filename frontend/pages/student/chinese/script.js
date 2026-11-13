@@ -129,6 +129,7 @@ async function notebook(){
 async function tests(){const rows=await request('/tests');root().append(...rows.map(t=>card(t.title,[el('p',{text:t.duration_seconds?`${Math.round(t.duration_seconds/60)} phút`:'Không giới hạn thời gian'}),action('Bắt đầu',async()=>{const a=await request('/attempts','POST',{test_id:t.id});location.href='?attempt='+a.id;},true)])));animalPath(root(),{selector:':scope > .card',title:'Thử sức',hint:'Xem thời gian trước khi bắt đầu bài kiểm tra.'});if(!rows.length)root().append(el('p',{text:'Chưa có bài kiểm tra. Con có thể làm quiz ngay trong bài học.'}));}
 async function showAttempt(a,index){
  clearInterval(timer);notice('');root().replaceChildren(link('← Bài học',{}),el('h2',{text:a.title}));
+ if(a.source_updated){root().append(card('Bộ câu hỏi đã được cập nhật',[el('p',{text:'Lượt cũ dùng bộ câu hỏi trước khi rút gọn. Mở bản đồ để học đúng chặng và tránh các câu lặp đã bỏ.'}),el('p',{text:'Lượt chưa hoàn thành này không bị tính điểm hay trừ Kim Cương.'}),action('Mở chặng hiện tại →',()=>quiz(a.set_id),true)]));return;}
  if(a.finished_at){
   syncDiamondTotal();
   const correct=a.items.filter(i=>i.result?.correct).length;

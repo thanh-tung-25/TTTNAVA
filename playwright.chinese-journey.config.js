@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'./e2e',testMatch:'study-hub.spec.js',workers:1,timeout:30000,outputDir:'test-results/chinese-journey',reporter:'list',use:{headless:true,viewport:{width:1280,height:900}}});

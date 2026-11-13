@@ -16,8 +16,9 @@ export async function chooseQuiz(setId,start,review=false){
  if(!document.querySelector('link[data-journey-style]'))document.head.append(el('link',{rel:'stylesheet',href:'/assets/css/chinese-journey.css','data-journey-style':'true'}));
  const dialog=el('dialog',{class:'feedback-dialog journey-dialog','aria-label':'Chọn nội dung quiz'});
  let mode=review?'review':'sequential';
+ const active=plan.active&&(plan.active.block==null||plan.blocks.some(b=>b.block===plan.active.block&&b.unlocked!==false))?{...plan.active,selection:plan.active.selection||(plan.active.block==null?'mixed':'sequential')}:null;
  const first=plan.blocks.find(b=>!b.completed&&b.unlocked!==false)||plan.blocks[0];
- let selected=plan.blocks.find(b=>b.block===plan.active?.block)||first;
+ let selected=plan.blocks.find(b=>active?.selection==='sequential'&&b.block===active.block&&b.unlocked!==false)||first;
  const done=plan.blocks.filter(b=>b.completed).length;
  const status=el('p',{class:'journey-status',role:'status','aria-live':'polite'}),map=el('div',{class:'journey-map','aria-label':'Bản đồ các con vật'}),detail=el('aside',{class:'journey-detail','aria-label':'Chặng đã chọn'}),buttons=[];
  const close=el('button',{type:'button',class:'journey-close',text:'×','aria-label':'Đóng bản đồ',onclick:()=>dialog.close()});
@@ -60,13 +61,13 @@ export async function chooseQuiz(setId,start,review=false){
   if(mode==='review'){
    detail.append(el('img',{class:'journey-detail-mascot',src:'/assets/images/mascot-lion.svg',alt:'Sư tử thông thái',width:100,height:100}),el('span',{class:'journey-eyebrow',text:'NHỚ THÊM MỘT CHÚT'}),el('h3',{text:'Đi lại những dấu chân cũ'}),el('p',{text:'Con đã làm '+plan.review_count+' câu. Lượt ôn chỉ dùng những câu này, ưu tiên câu từng sai.'}));
    if(plan.review_count<20)detail.append(el('p',{class:'journey-tip',text:'Hãy khám phá đủ 20 câu trước nhé. Không thêm câu lạ vào lượt ôn của con.'}));
-   go.disabled=plan.review_count<20;go.textContent='Cùng sư tử ôn lại →';
+   go.disabled=plan.review_count<20;go.textContent=active?.selection==='review'?'Tiếp tục lượt ôn →':'Cùng sư tử ôn lại →';
   }else if(selected){
    detail.append(el('img',{class:'journey-detail-mascot',src:friend.image,alt:'',width:100,height:100}),el('span',{class:'journey-eyebrow',text:selected.completed?'MÌNH CÙNG LUYỆN LẠI':'CHẶNG HỌC CỦA CON'}),el('h3',{text:'Cùng '+friend.name+' · Chặng '+(selected.block+1)}),el('p',{text:selected.completed?'Con đã đi qua chặng này. Thử lại để nhớ chắc hơn nhé!':'20 câu nhỏ đang chờ. Hoàn thành để mở chặng tiếp theo.'}));
    const preview=el('details',{class:'journey-preview'},[el('summary',{text:'Nhìn trước 20 câu'}),el('p',{class:'journey-source',text:'Nội dung câu '+selected.from+'–'+selected.to+' trong bài. Chặng cuối có thể ôn lại một số câu của chặng trước.'}),...selected.questions.map((q,n)=>el('p',{text:(n+1)+'. '+chineseQuestionPrompt(q.data.prompt)}))]);detail.append(preview);
-   go.disabled=selected.unlocked===false&&!selected.completed;go.textContent=plan.active?'Tiếp tục chặng đang học →':selected.completed?'Khám phá lại chặng này →':'Bắt đầu khám phá →';
+   go.disabled=selected.unlocked===false&&!selected.completed;go.textContent=active?.selection==='sequential'&&active.block===selected.block?'Tiếp tục Chặng '+(selected.block+1)+' →':selected.completed?'Khám phá lại chặng này →':'Bắt đầu Chặng '+(selected.block+1)+' →';
   }else{go.disabled=true;detail.append(el('h3',{text:'Cùng học từ trước nhé'}));}
-  if(plan.active)detail.append(el('p',{class:'journey-tip',text:plan.active.block!=null?'Con đang có lượt ở chặng '+(plan.active.block+1)+'. Mình hoàn thành lượt đó trước nhé.':'Con đang có một lượt quiz. Mình tiếp tục lượt đó trước nhé.'}));
+  if(active&&active.selection===mode&&(mode!=='sequential'||active.block===selected?.block))detail.append(el('p',{class:'journey-tip',text:active.block!=null?'Lượt đang học thuộc Chặng '+(active.block+1)+'.':'Lượt ôn đang học chỉ dùng các câu đã làm.'}));
   detail.append(el('a',{class:'journey-words',text:'▤ Học từ mới của bài',href:'?set='+setId+'&mode=words'}),el('small',{class:'journey-footnote',text:'Tiến độ lưu theo tài khoản. Chạm vào chặng đã hoàn thành để luyện lại.'}));
  }
  dialog.append(heading,tabs,el('div',{class:'journey-body'},[map,detail]),el('footer',{class:'journey-footer'},[status,go]));document.body.append(dialog);dialog.addEventListener('close',()=>dialog.remove());renderDetail();dialog.showModal();

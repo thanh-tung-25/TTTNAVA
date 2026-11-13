@@ -8,6 +8,7 @@ import { extractChinese } from './chinese-import.js';
 import { archiveFile, readArchive, DOCX_MIME } from './private-storage.js';
 import {publishedActivitiesForSet} from './chinese-activities.js';
 import {reviewedQuestions,sequentialQuestions,journeyProgress} from './chinese-quiz-plan.js';
+import {compatibleQuiz,currentQuizProgress,attemptsForSet} from './chinese-quiz-state.js';
 import {studentVisibleCondition} from '../utils/student-visibility.js';
 import {mixStudy,shuffleStudy} from '../../../frontend/assets/js/chinese-study-variety.js';
 export { catalog };
@@ -152,31 +153,33 @@ export async function start(user,body) {
   if(items.length<20)throw badRequest('Tài liệu chưa đủ 20 câu hỏi để làm quiz. Con có thể học thẻ lật trước.');
   if(d.selection==='sequential')items=sequentialQuestions(items,d.block);
   else if(d.selection==='review'){
-   const seen=await reviewedQuestions(user,d.set_id);items=items.filter(i=>seen.has(i.id));
+   const seen=await reviewedQuestions(user,d.set_id,sourceItems);items=items.filter(i=>seen.has(i.id));
    if(items.length<20)throw badRequest('Cần làm ít nhất 20 câu khác nhau trong bài trước khi ôn 20 câu đã học. Hãy luyện theo phần trước nhé.');
    const wrong=items.filter(i=>!seen.get(i.id).correct),correct=items.filter(i=>seen.get(i.id).correct);
    for(const group of [wrong,correct])for(let n=group.length-1;n>0;n--){const j=randomInt(n+1);[group[n],group[j]]=[group[j],group[n]];}
    items=[...mixStudy(wrong,{random:()=>randomInt(0x1000000)/0x1000000}),...mixStudy(correct,{random:()=>randomInt(0x1000000)/0x1000000})].slice(0,20);
   }else{items=mixStudy(items,{random:()=>randomInt(0x1000000)/0x1000000}).slice(0,d.count);}
-  title='Quiz '+items.length+' câu'+(d.selection==='sequential'?' · Phần '+(d.block+1):d.selection==='review'?' · Ôn câu đã học':'');
+  title='Quiz '+items.length+' câu'+(d.selection==='sequential'?' · Chặng '+(d.block+1):d.selection==='review'?' · Ôn câu đã học':'');
  }
  items=items.map(item=>['choice','listening'].includes(item.data.type)?{...item,data:{...item.data,options:shuffleStudy(item.data.options,()=>randomInt(0x1000000)/0x1000000)}}:item);
  let existingId;const id=randomUUID(); await withTransaction(async c=>{
   const run=txRun(c);
   await one('SELECT id FROM profiles WHERE id=? FOR UPDATE',[user],run);
+  const completed=d.count?await run('SELECT snapshot,answers,score,finished_at FROM chinese_attempts WHERE student_id=? AND set_id=? AND abandoned_at IS NULL AND finished_at IS NOT NULL ORDER BY started_at DESC LIMIT 1000',[user,d.set_id]):[];
+  const blocks=d.count?journeyProgress(sourceItems,completed):[];
+  if(d.count&&d.selection==='sequential'&&!blocks[d.block]?.unlocked)throw badRequest('Con hoàn thành chặng trước để mở chặng này nhé.');
   const open=await run(`SELECT * FROM chinese_attempts WHERE student_id=? AND finished_at IS NULL AND abandoned_at IS NULL AND ${d.test_id?'test_id=?':'set_id=? AND test_id IS NULL'} ORDER BY started_at DESC,id DESC`,[user,d.test_id||d.set_id]);
   for(const a of open){
    if(a.ends_at&&new Date(a.ends_at)<=new Date())await finalize(a,run);
-   else if(!d.count||json(a.snapshot).items.length===20){
-    // Return the same active attempt even when start requests arrive concurrently.
-    existingId=a.id;break;
-   }else await run('UPDATE chinese_attempts SET abandoned_at=CURRENT_TIMESTAMP(3) WHERE id=?',[a.id]);
+   else if(!d.count){existingId=a.id;break;}
+   else{
+    const snapshot=json(a.snapshot),compatible=snapshot.items.length===20&&compatibleQuiz(snapshot,sourceItems)&&(snapshot.selection!=='sequential'||blocks[snapshot.block]?.unlocked);
+    if(!compatible){await run('UPDATE chinese_attempts SET abandoned_at=CURRENT_TIMESTAMP(3) WHERE id=?',[a.id]);continue;}
+    // A different stage or practice mode must never hijack this selection.
+    if((snapshot.selection||'mixed')===d.selection&&(d.selection!=='sequential'||snapshot.block===d.block)){existingId=a.id;break;}
+   }
   }
   if(existingId)return;
-  if(d.count&&d.selection==='sequential'){
-   const completed=await run('SELECT snapshot,answers,score,finished_at FROM chinese_attempts WHERE student_id=? AND set_id=? AND abandoned_at IS NULL AND finished_at IS NOT NULL ORDER BY started_at DESC LIMIT 1000',[user,d.set_id]);
-   if(!journeyProgress(sourceItems,completed)[d.block]?.unlocked)throw badRequest('Con hoàn thành chặng trước để mở chặng này nhé.');
-  }
   const diamonds_policy=d.test_id||d.count===20?'v1':null;
   await run('INSERT INTO chinese_attempts (id,student_id,test_id,set_id,snapshot,answers,ends_at) VALUES (?,?,?,?,?,?,?)',[id,user,d.test_id??null,d.set_id??null,JSON.stringify({title,pass,items,diamonds_policy,selection:d.selection,block:d.block,course_ids:[...new Set(course_ids)]}),JSON.stringify({}),duration?new Date(Date.now()+duration*1000):null]);
   for(const source of sources)await run(dialectSql(`INSERT INTO chinese_progress (student_id,set_id,last_item,read_items) VALUES (?,?,NULL,'[]') ON DUPLICATE KEY UPDATE updated_at=CURRENT_TIMESTAMP(3)`,
@@ -187,7 +190,7 @@ function state(a) {
  const snapshot=json(a.snapshot), answers=json(a.answers), items=snapshot.items.map(i=>{
   const answer=answers[i.id]; return {...publicItem(i),result:answer?.locked||a.finished_at?{...answer,accepted:i.data.accepted,explanation:i.data.explanation}:undefined,selection:answer?.value};
  });
- return {id:a.id,set_id:a.set_id,test_id:a.test_id,title:snapshot.title,selection:snapshot.selection||'mixed',block:snapshot.block||0,started_at:a.started_at,ends_at:a.ends_at,finished_at:a.finished_at,score:a.score,pass_percent:snapshot.pass,diamonds_policy:snapshot.diamonds_policy||null,diamonds_delta:a.diamonds_delta,items};
+ return {id:a.id,set_id:a.set_id,test_id:a.test_id,title:snapshot.selection==='sequential'?'Quiz '+items.length+' câu · Chặng '+(snapshot.block+1):snapshot.title,selection:snapshot.selection||'mixed',block:snapshot.block||0,started_at:a.started_at,ends_at:a.ends_at,finished_at:a.finished_at,score:a.score,pass_percent:snapshot.pass,diamonds_policy:snapshot.diamonds_policy||null,diamonds_delta:a.diamonds_delta,items};
 }
 async function finalize(a,run) {
  const snap=json(a.snapshot), answers=json(a.answers);
@@ -207,6 +210,12 @@ export async function attempt(user,id,action=null,body={}) {
   const run=txRun(c);await one('SELECT id FROM profiles WHERE id=? FOR UPDATE',[user],run);
   let a=await one('SELECT * FROM chinese_attempts WHERE id=? AND student_id=? FOR UPDATE',[id,user],run);
   if(a.abandoned_at)throw new AppError(409,'ATTEMPT_CLOSED','Lượt cũ đã được đóng. Con mở Quiz 20 câu từ bài học để bắt đầu.');
+  const saved=json(a.snapshot);
+  if(!a.finished_at&&!a.test_id&&a.set_id&&saved.items.length===20){
+   const current=(await getItems(a.set_id,run)).filter(item=>item.kind==='question'&&item.data.approved),history=await run('SELECT snapshot,answers,score,finished_at FROM chinese_attempts WHERE student_id=? AND set_id=? AND abandoned_at IS NULL AND finished_at IS NOT NULL ORDER BY started_at DESC LIMIT 1000',[user,a.set_id]);
+   const blocks=journeyProgress(current,history),valid=compatibleQuiz(saved,current)&&(saved.selection!=='sequential'||blocks[saved.block]?.unlocked);
+   if(!valid){if(action)throw new AppError(409,'QUIZ_SOURCE_UPDATED','Bộ câu hỏi đã đổi. Con mở chặng hiện tại để học nhé.',{set_id:a.set_id});return {...state(a),items:[],source_updated:true};}
+  }
   if(!a.finished_at&&a.ends_at&&new Date(a.ends_at)<=new Date()) a=await finalize(a,run);
   if(a.finished_at||!action) return state(a);
   if(action==='finish') return state(await finalize(a,run));
@@ -237,16 +246,15 @@ export async function stats(filters={},viewer=null) {
   where.push(column+'=?');params.push(value);
  }
  const progress=await query(`SELECT p.*,u.display_name,s.title,l.level_id,l.id lesson_id FROM chinese_progress p JOIN profiles u ON u.id=p.student_id JOIN chinese_sets s ON s.id=p.set_id JOIN chinese_lessons l ON l.id=s.lesson_id ${where.length?'WHERE '+where.join(' AND '):''} ORDER BY p.updated_at DESC LIMIT 500`,params);
- const items=await query('SELECT id,set_id,kind FROM chinese_items WHERE active=1');
+ const items=(await query('SELECT id,set_id,kind,data FROM chinese_items WHERE active=1')).map(item=>({...item,data:json(item.data)}));
  const reviews=await query(`SELECT r.student_id,r.item_id,r.memory,r.review_count,r.wrong_count FROM chinese_reviews r JOIN profiles u ON u.id=r.student_id WHERE ${privacy}`);
- const attempts=await query(`SELECT a.id,a.student_id,a.snapshot,a.answers,a.score,a.finished_at FROM chinese_attempts a JOIN profiles u ON u.id=a.student_id WHERE ${privacy}`);
+ const attempts=await query(`SELECT a.id,a.set_id,a.student_id,a.snapshot,a.answers,a.score,a.finished_at FROM chinese_attempts a JOIN profiles u ON u.id=a.student_id WHERE ${privacy} AND a.abandoned_at IS NULL ORDER BY a.started_at DESC`);
  for(const p of progress){
-  const content=items.filter(i=>i.set_id===p.set_id&&i.kind!=='unknown'), ids=new Set(content.map(i=>i.id));
+  const content=items.filter(i=>i.set_id===p.set_id&&i.kind!=='unknown'&&i.data.practice!=='speaking'), ids=new Set(content.map(i=>i.id));
   const vocabulary=reviews.filter(r=>r.student_id===p.student_id&&ids.has(r.item_id));
-  const read=new Set(json(p.read_items)); const locked=new Set();const scores=[];
-  for(const a of attempts.filter(a=>a.student_id===p.student_id)){
+  const read=new Set(json(p.read_items)),ownAttempts=attempts.filter(a=>a.student_id===p.student_id),locked=currentQuizProgress(content.filter(i=>i.kind==='question'&&i.data.approved),attemptsForSet(ownAttempts,p.set_id)).locked,scores=[];
+  for(const a of ownAttempts){
    if(json(a.snapshot).items.some(i=>i.set_id===p.set_id)&&a.finished_at)scores.push(a.score);
-   for(const [id,answer]of Object.entries(json(a.answers)))if(ids.has(id)&&answer.locked&&answer.value)locked.add(id);
   }
   p.learned_words=vocabulary.filter(r=>r.review_count>0).length;p.remembered_words=vocabulary.filter(r=>r.memory==='remembered').length;
   const completed=content.filter(i=>i.kind==='vocabulary'?vocabulary.some(r=>r.item_id===i.id&&r.review_count>0):i.kind==='question'?locked.has(i.id):read.has(i.id)).length;

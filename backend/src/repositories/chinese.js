@@ -1,6 +1,7 @@
 import { query,jsonText } from '../config/db.js';
 import { notFound } from '../utils/errors.js';
 import { chineseQuestionPrompt } from '../../../frontend/assets/js/chinese-question-prompt.js';
+import {currentQuizProgress,attemptsForSet} from '../services/chinese-quiz-state.js';
 export const json = value => typeof value === 'string' ? JSON.parse(value) : value;
 export async function one(sql, params = [], run = query) { const rows = await run(sql,params); if (!rows[0]) throw notFound(); return rows[0]; }
 export const setSelect = `SELECT s.*, l.level_id, l.title lesson_title, l.status lesson_status, d.filename, d.created_at uploaded_at
@@ -33,10 +34,9 @@ export async function catalog(admin, student) {
  if(!admin) {
   const reviewed=new Set(reviews.filter(r=>r.review_count>0).map(r=>r.item_id));
   const read=new Set(progress.flatMap(p=>json(p.read_items)));
-  const attempts=await query('SELECT snapshot,answers FROM chinese_attempts WHERE student_id=?',[student]);
-  const locked=new Set(); for(const a of attempts)for(const [id,answer]of Object.entries(json(a.answers)))if(answer.locked&&answer.value)locked.add(id);
-  const rows=await query(`SELECT i.id,i.kind,i.set_id FROM chinese_items i JOIN chinese_sets s ON s.id=i.set_id JOIN chinese_lessons l ON l.id=s.lesson_id WHERE i.active=1 AND s.status='published' AND l.status='published'`);
-  for(const s of sets)completion.push({set_id:s.id,done:rows.filter(i=>i.set_id===s.id&&(i.kind==='vocabulary'?reviewed.has(i.id):i.kind==='question'?locked.has(i.id):read.has(i.id))).length});
+  const attempts=await query('SELECT set_id,snapshot,answers,score,finished_at FROM chinese_attempts WHERE student_id=? AND abandoned_at IS NULL ORDER BY started_at DESC',[student]);
+  const rows=(await query(`SELECT i.id,i.kind,i.set_id,i.data FROM chinese_items i JOIN chinese_sets s ON s.id=i.set_id JOIN chinese_lessons l ON l.id=s.lesson_id WHERE i.active=1 AND s.status='published' AND l.status='published'`)).map(item=>({...item,data:json(item.data)}));
+  for(const s of sets){const content=rows.filter(item=>item.set_id===s.id),quiz=currentQuizProgress(content.filter(item=>item.kind==='question'&&item.data.approved),attemptsForSet(attempts,s.id)),words=content.filter(item=>item.kind==='vocabulary'&&reviewed.has(item.id)).length,passages=content.filter(item=>['reading','grammar','dialogue'].includes(item.kind)&&item.data.practice!=='speaking'&&read.has(item.id)).length;completion.push({set_id:s.id,done:words+passages+quiz.locked.size,words_done:words,read_done:passages,quiz_answered:quiz.locked.size,quiz_completed:quiz.blocks.filter(block=>block.completed).length,quiz_stages:quiz.blocks.length});}
  }
  return {levels,lessons,sets,counts,reviews,progress,completion};
 }

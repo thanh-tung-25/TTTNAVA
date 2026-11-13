@@ -33,7 +33,11 @@ Các câu dư được đặt active=0; không xóa hàng hoặc tái sử dụn
 
 Giữ nguyên tài khoản, quyền học, Kim Cương, reviews, lịch sử Quiz, tiến độ, bài luyện nói, buổi AI và tiến độ Phố tiếng Trung. Script so sánh fingerprint các bảng này trước và sau transaction. Nội dung đọc/ngữ pháp và bộ câu hỏi Luyện nói riêng không bị thay đổi.
 
-Quiz đang làm dùng snapshot cũ để tiếp tục và chấm đúng nội dung lúc bắt đầu. Ngân hàng rút gọn áp dụng cho lượt mới. Chặng trong bản đồ được đối chiếu theo ID câu hỏi mới; một chặng cũ không tự mở một nhóm câu khác chỉ vì trùng số thứ tự. Lịch sử điểm cũ vẫn giữ nguyên.
+Quiz còn dở chỉ được tiếp tục khi nội dung, ID câu hỏi, chặng và chế độ luyện khớp với ngân hàng hiện tại. Khác thứ tự lựa chọn trắc nghiệm không làm mất tính tương thích. Chọn Chặng 1 không được lấy lại lượt ở Chặng 5 hoặc một lượt ôn khác.
+
+Nếu lượt còn dở thuộc ngân hàng cũ, app hiện nút mở bản đồ chặng hiện tại, không hiển thị lại câu đã bỏ. Khi người học bắt đầu lượt mới, lượt cũ không còn phù hợp được đóng bằng abandoned_at, giữ hàng dữ liệu/đáp án để đối chiếu; không chấm điểm hoặc ghi Kim Cương cho lượt đó. Kết quả đã hoàn thành vẫn xem được bằng snapshot lịch sử.
+
+Bản đồ, số câu đã làm, phần trăm trên danh sách bài và báo cáo admin cùng đối chiếu ngân hàng hiện tại. Một chặng cũ không tự mở nhóm câu khác chỉ vì trùng số thứ tự. Chỉ mở bài hoặc bắt đầu Quiz không tăng phần trăm. Từ đã tự đánh giá và đoạn đã đánh dấu đọc vẫn được ghi nhận; giao diện tách số từ đã học và số chặng Quiz hoàn thành để giải thích rõ phần trăm nội dung.
 
 Khi code mới được phát hành, thứ tự thẻ chỉ lưu bằng danh sách ID trong sessionStorage của tab. Tải lại giữ thứ tự và đúng thẻ đang học; đổi ngân hàng thì app tự xây lại danh sách. Không lưu thêm câu trả lời hoặc nội dung hội thoại AI vào bộ nhớ này. Nút Trộn thẻ tạo thứ tự mới.
 
@@ -52,4 +56,4 @@ Backup nằm trong backend/backups/chinese-curation/ và bị loại khỏi Git/
 
 Word/PDF gốc được giữ nguyên để đối chiếu. Nếu nhập lại ngân hàng từ nguồn cũ có ba dạng định nghĩa, cần chạy lại bản xem trước của công cụ lọc và rà báo cáo trước khi xuất bản.
 
-Kiểm thử: backend/tests/chinese-content-curation.test.js, các bộ chinese.test.js/chinese-activities.test.js và playwright.chinese-variety.config.js. Kiểm tra online chỉ dùng GET với tài khoản đang có, không tạo bài học/bài nộp giả trên Production.
+Kiểm thử: backend/tests/chinese-content-curation.test.js, chinese-quiz-resume.test.js, study-hub.test.js, các bộ chinese.test.js/chinese-activities.test.js, playwright.chinese-variety.config.js và playwright.chinese-journey.config.js. Kiểm tra online chỉ dùng GET với tài khoản đang có, không tạo bài học/bài nộp giả trên Production.

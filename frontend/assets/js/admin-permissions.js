@@ -9,5 +9,5 @@ export function adminHome(profile) {
   return adminScope(profile)==='chinese'?'/pages/admin/chinese/':['primary','secondary'].includes(adminScope(profile))?'/pages/admin/questions/':'/pages/admin/students/';
 }
 export function adminSections(profile) {
-  return adminScope(profile)==='chinese'?['chinese','students','feedback','assignments','courses']:['primary','secondary'].includes(adminScope(profile))?['questions','students','stats','feedback','assignments']:['courses','chinese','students','questions','stats','team','deployment','feedback','assignments'];
+  return adminScope(profile)==='chinese'?['chinese','students','access-history','feedback','assignments','courses']:['primary','secondary'].includes(adminScope(profile))?['questions','students','access-history','stats','feedback','assignments']:['courses','chinese','students','access-history','questions','stats','team','deployment','feedback','assignments'];
 }

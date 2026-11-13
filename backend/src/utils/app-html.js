@@ -17,6 +17,6 @@ export function appHtml(html){
  const clean=html.replace(/<link\b(?=[^>]*\brel\s*=\s*["'](?:shortcut\s+)?icon["'])[^>]*>/gi,'');
  return clean.replace(/<\/head\s*>/i,metadata+'</head>');
 }
-export async function sendAppHtml(response,file){
- const html=await readFile(file,'utf8');response.type('html').send(appHtml(html));
+export async function sendAppHtml(response,file,beforeSend){
+ const html=await readFile(file,'utf8');await beforeSend?.();response.type('html').send(appHtml(html));
 }

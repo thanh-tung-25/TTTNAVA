@@ -1,6 +1,6 @@
 import {escapeHtml} from './api.js';
 
-const icons={assignments:'✎',feedback:'♡',courses:'▦',chinese:'▤',students:'♧',questions:'▧',stats:'▥',team:'♙',deployment:'↥'};
+const icons={assignments:'✎',feedback:'♡',courses:'▦',chinese:'▤',students:'♧','access-history':'◷',questions:'▧',stats:'▥',team:'♙',deployment:'↥'};
 export function adminNavigation(entries,active,home){
  const query=new URLSearchParams(location.search),view=query.get('view')||'lessons';
  const sub=[['lessons','Bài học',''],['tests','Bài kiểm tra','?view=tests'],['speaking-results','Kết quả luyện nói','?view=speaking-results'],['progress','Tiến độ học sinh','?view=progress'],['levels','Quản lý cấp HSK','?view=levels']];

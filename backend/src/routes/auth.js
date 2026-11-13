@@ -7,13 +7,13 @@ import {
   registrationStatusHandler,
   requestRegistrationOtpHandler,
 } from '../controllers/auth-controller.js';
-import { authenticateToken } from '../middlewares/auth.js';
+import { authenticateToken,optionalAuth } from '../middlewares/auth.js';
 import { rateLimit } from '../middlewares/rate-limit.js';
 
 const router = Router();
 
 router.post('/login', rateLimit({ windowMs: 60_000, max: 10, keyPrefix: 'login' }), loginHandler);
-router.post('/logout', logoutHandler);
+router.post('/logout',optionalAuth, logoutHandler);
 router.get('/me', authenticateToken, meHandler);
 router.get('/registration-status',registrationStatusHandler);
 router.post('/register/request-otp',rateLimit({windowMs:600_000,max:5,keyPrefix:'registration-send'}),requestRegistrationOtpHandler);

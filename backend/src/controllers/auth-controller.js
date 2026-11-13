@@ -5,6 +5,7 @@ import {registrationAvailable} from '../services/registration-mail.js';
 import {requestRegistrationOtp,completeRegistration} from '../services/public-registration.js';
 import { publicProfile } from '../utils/serializers.js';
 import { asyncHandler } from '../utils/errors.js';
+import {recordUserAccess} from '../services/user-access-history.js';
 
 const COOKIE_MAX_AGE = 7 * 24 * 60 * 60 * 1000;
 
@@ -20,11 +21,13 @@ function cookieOptions() {
 export const loginHandler = asyncHandler(async (request, response) => {
   const { username, password } = loginSchema.parse(request.body);
   const result = await login(username, password);
+  await recordUserAccess(result.profile,'login',request);
   response.cookie(env.cookie.name, result.token, { ...cookieOptions(), maxAge: COOKIE_MAX_AGE });
   response.json({ data: { profile: result.profile } });
 });
 
-export const logoutHandler = asyncHandler(async (_request, response) => {
+export const logoutHandler = asyncHandler(async (request, response) => {
+  await recordUserAccess(request.user,'logout',request);
   response.clearCookie(env.cookie.name, cookieOptions());
   response.json({ data: { loggedOut: true } });
 });
@@ -42,6 +45,7 @@ export const requestRegistrationOtpHandler=asyncHandler(async(request,response)=
 });
 export const registerHandler=asyncHandler(async(request,response)=>{
  const result=await completeRegistration(completeRegistrationSchema.parse(request.body));
+ await recordUserAccess(result.profile,'login',request);
  response.cookie(env.cookie.name,result.token,{...cookieOptions(),maxAge:COOKIE_MAX_AGE});
  response.set('Cache-Control','no-store').status(201).json({data:{profile:result.profile}});
 });

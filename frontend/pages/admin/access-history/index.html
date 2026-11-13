@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Lịch sử truy cập — TTNAVA</title>
+ <link rel="icon" href="/assets/images/ttnava-logo.png" type="image/png">
+ <link rel="stylesheet" href="/assets/css/base.css"><link rel="stylesheet" href="/assets/css/components.css"><link rel="stylesheet" href="/assets/css/pages.css"><link rel="stylesheet" href="/assets/css/admin-access-history.css">
+</head>
+<body>
+ <header id="app-header"></header>
+ <main class="page access-page">
+  <header class="access-hero"><div><p class="eyebrow">THEO DÕI TỪNG TÀI KHOẢN</p><h1>Lịch sử truy cập</h1><p>Biết ai đã vào web, lúc nào và mở những trang nào.</p></div><img src="/assets/images/mascot-lion.svg" width="90" height="100" alt=""></header>
+  <p id="access-notice" role="status" aria-live="polite"></p>
+  <div class="access-layout">
+   <section class="card access-accounts" aria-label="Danh sách tài khoản">
+    <div class="access-panel-head"><h2>Tài khoản</h2><button class="btn btn-ghost btn-sm" id="access-refresh" type="button">↻ Cập nhật</button></div>
+    <form id="access-search"><label for="access-query" class="sr-only">Tìm tài khoản</label><input class="input" id="access-query" type="search" maxlength="100" placeholder="Tìm tên hoặc tên đăng nhập…"><button class="btn btn-secondary" type="submit">Tìm</button></form>
+    <label id="access-role-wrap" hidden>Loại tài khoản<select class="select" id="access-role"><option value="">Tất cả tài khoản</option><option value="student">Học sinh & phụ huynh</option><option value="admin">Quản trị viên</option></select></label>
+    <p id="access-total" class="muted"></p><div id="access-account-list" class="access-account-list"><p>Đang tải tài khoản…</p></div>
+    <nav class="access-pagination" aria-label="Trang danh sách tài khoản"><button class="btn btn-ghost btn-sm" id="access-prev" type="button">← Trước</button><span id="access-page-number"></span><button class="btn btn-ghost btn-sm" id="access-next" type="button">Sau →</button></nav>
+   </section>
+   <section class="card access-history" id="access-history" aria-label="Nhật ký tài khoản đã chọn"><p class="muted">Chọn một tài khoản để xem các lần truy cập.</p></section>
+  </div>
+  <footer class="access-footnote" id="access-tracking-since">Nhật ký chỉ ghi nhận từ khi chức năng được bật. Không khôi phục các lần truy cập trước đó.</footer>
+ </main>
+ <script type="module" src="/assets/js/admin-access-history.js"></script>
+</body>
+</html>

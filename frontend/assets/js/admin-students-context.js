@@ -39,6 +39,7 @@ export function row(student) {
       <td>${deleted ? '<span class="badge badge-danger">Đã xóa</span>' : locked ? '<span class="badge badge-danger">Đã khoá</span>' : '<span class="badge badge-success">Hoạt động</span>'}</td>
       <td>${formatDate(deleted ? student.deletedAt : student.createdAt, false)}</td>
       <td>
+        <a class="btn btn-ghost btn-sm" href="/pages/admin/access-history/?account=${encodeURIComponent(student.id)}">Lịch sử truy cập</a>
         ${store.canManageAccounts?deleted?`<button class="btn btn-ghost btn-sm" data-restore-student="${student.id}" type="button">Khôi phục</button>`:`<div class="actions">
           <button class="btn btn-ghost btn-sm" data-edit="${student.id}" type="button">Sửa</button>
           <button class="btn btn-ghost btn-sm" data-password="${student.id}" type="button">Mật khẩu</button>

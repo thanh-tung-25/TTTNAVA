@@ -11,6 +11,7 @@ const ADMIN_NAV = [
   ['courses', '/pages/admin/courses/', 'Khóa học & thanh toán'],
   ['chinese', '/pages/admin/chinese/', 'Quản lý Tiếng Trung'],
   ['students', '/pages/admin/students/', 'Học sinh'],
+  ['access-history','/pages/admin/access-history/','Lịch sử truy cập'],
   ['questions', '/pages/admin/questions/', 'Nội dung học tập'],
   ['stats', '/pages/admin/stats/', 'Thống kê'],
   ['team', '/pages/admin/team/', 'Quản trị viên'],

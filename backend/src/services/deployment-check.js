@@ -3,6 +3,7 @@ export const requiredTables=['profiles','registration_otps','account_deletion_co
 requiredTables.push('chinese_speaking_submissions','chinese_speaking_clips');
 requiredTables.push('chinese_ai_chat_settings','chinese_ai_chat_sessions');
 requiredTables.push('chinese_street_lessons','chinese_street_progress');
+requiredTables.push('user_access_tracking','user_access_events');
 export async function deploymentCheck(run=query){
  const tables=await run(dialectSql('SELECT table_name FROM information_schema.tables WHERE table_schema=DATABASE()','SELECT table_name FROM information_schema.tables WHERE table_schema=current_schema()'));
  const available=new Set(tables.map(r=>r.table_name||r.TABLE_NAME));

@@ -28,10 +28,13 @@ import {asyncHandler} from '../utils/errors.js';
 import {deploymentCheck} from '../services/deployment-check.js';
 import {requireSchoolAdmin} from '../middlewares/school-admin.js';
 import {rateLimit} from '../middlewares/rate-limit.js';
+import {accessAccounts,accessHistory} from '../services/user-access-history.js';
 
 const router = Router();
 
 router.use(authenticateToken, requireAdmin);
+router.get('/access-history',asyncHandler(async(req,res)=>res.set('Cache-Control','private, no-store').json({data:await accessAccounts(req.user,req.query)})));
+router.get('/access-history/:id',asyncHandler(async(req,res)=>res.set('Cache-Control','private, no-store').json({data:await accessHistory(req.user,req.params.id,req.query)})));
 router.get('/deployment-check',requireSuperAdmin,asyncHandler(async(_r,res)=>res.json({data:await deploymentCheck()})));
 
 router.use('/team',adminTeamRouter);

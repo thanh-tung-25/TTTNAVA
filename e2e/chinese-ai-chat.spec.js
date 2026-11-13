@@ -54,6 +54,20 @@ test('simple setup and voice controls fit mobile and desktop without scoring or 
  for(const selector of ['[data-end]','[data-pause]','[data-done]']){const box=await page.locator(selector).boundingBox();expect(box.y).toBeGreaterThanOrEqual(80);expect(box.y+box.height).toBeLessThan(720);}
  await page.screenshot({path:'test-results/voice-call-mobile.png',fullPage:true});await page.locator('[data-end]').click();expect(state.errors).toEqual([]);
 });
+for(const viewport of [{width:320,height:568},{width:360,height:800},{width:390,height:844}])test(`mobile ${viewport.width}: AI controls remain reachable while reading replies and typing`,async({page})=>{
+ await page.setViewportSize(viewport);const state=await setup(page);await page.locator('[data-start]').click();await expect(page.locator('.ai-voice-app')).toHaveAttribute('data-phase','listening');
+ await page.locator('.voice-captions>summary').click();await page.locator('.voice-captions details>summary').click();await page.locator('.voice-typing>summary').click();
+ await page.locator('[data-text]').scrollIntoViewIfNeeded();
+ for(const selector of ['[data-pause]','[data-done]','[data-end]']){
+  await expect(page.locator('.voice-controls').locator(selector)).toHaveCount(1);
+  const box=await page.locator(selector).boundingBox();expect(box.y).toBeGreaterThanOrEqual(70);expect(box.y+box.height).toBeLessThanOrEqual(viewport.height-78);
+ }
+ await page.screenshot({path:'test-results/voice-controls-compact-'+viewport.width+'.png',animations:'disabled'});
+ await page.locator('[data-pause]').click();await expect(page.locator('.ai-voice-app')).toHaveAttribute('data-phase','paused');expect(await page.evaluate(()=>window.__stopped)).toBe(1);
+ await page.locator('[data-pause]').click();await expect(page.locator('.ai-voice-app')).toHaveAttribute('data-phase','listening');expect(await page.evaluate(()=>window.__microphones)).toBe(2);
+ await page.locator('[data-end]').click();await expect(page.locator('.voice-ended')).toBeVisible();expect(state.finishes).toHaveLength(1);expect(state.errors).toEqual([]);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
 test('automatically sends after silence, speaks a response and listens again using one microphone permission',async({page})=>{
  const state=await setup(page);await page.locator('[data-start]').click();await expect(page.locator('.ai-voice-app')).toHaveAttribute('data-phase','listening');
  await page.evaluate(()=>window.__rms=.05);await page.waitForTimeout(700);await page.evaluate(()=>window.__rms=0);

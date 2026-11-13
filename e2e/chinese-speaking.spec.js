@@ -135,9 +135,27 @@ test('uses the assigned order, defaults to three source questions, and creates s
  expect(speakingFilename({name:'Ngọc Anh / ../',level:1,total:3,code:'ABC12345'},'audio/mp4')).toBe('TTNAVA_HSK1_BaiNoi_3Cau_Ngoc_Anh_ABC12345.m4a');
 });
 test('shows numbered audio buttons without exposing questions or opening devices and stays responsive',async({page})=>{
- await mock(page);await page.goto(origin+'/pages/student/chinese/');await page.getByRole('link',{name:'Luyện nói',exact:true}).click();await expect(page.locator('.speaking-question-button')).toHaveCount(3);await expect(page.locator('.speaking-clock')).toHaveText('Còn 01:30');
+ await mock(page);await page.goto(origin+'/pages/student/chinese/');await page.getByRole('button',{name:'Luyện nói với AI',exact:true}).click();await page.getByRole('link',{name:'Luyện nói theo bài',exact:true}).click();await expect(page.locator('.speaking-question-button')).toHaveCount(3);await expect(page.locator('.speaking-clock')).toHaveText('Còn 01:30');
  for(const b of await page.locator('.speaking-question-button').all())await expect(b).toBeDisabled();for(const q of questions)await expect(page.locator('.speaking-studio')).not.toContainText(q);await expect(page.locator('.speaking-studio')).not.toContainText('bí mật');expect(await page.evaluate(()=>window.__micTracks.length)).toBe(0);
  await page.screenshot({path:'test-results/chinese-speaking-desktop.png',fullPage:true,animations:'disabled'});await page.setViewportSize({width:390,height:844});await page.screenshot({path:'test-results/chinese-speaking-mobile.png',fullPage:true,animations:'disabled'});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+for(const viewport of [{width:320,height:568},{width:360,height:800},{width:390,height:844}])test(`mobile ${viewport.width}: recording controls stay beside a long question list and preserve the same recording on resize`,async({page})=>{
+ await page.setViewportSize(viewport);const state=await mock(page);
+ const bank=['你叫什么名字？','你是哪国人？','你住在哪里？','你今年多大？','你喜欢喝什么？','你喜欢吃什么？','你今天忙吗？','你在哪儿工作？'];
+ await page.route('**/api/v1/chinese/sets/sample',r=>r.fulfill({json:{data:{set:{id:'sample',level_id:1,lesson_id:'lesson',lesson_title:'Nghe và trả lời',speaking_settings:{duration_seconds:120,order:'free'}},items:bank.map((text,n)=>({id:'spoken-'+n,kind:'dialogue',data:{practice:'speaking',speaking_selected:true,text}})),activities:null,progress:null}}}));
+ await open(page);await expect(page.locator('.speaking-listen > .speaking-recorder')).toHaveCount(1);
+ await microphone(page);await record(page);await hear(page,1);
+ const last=page.locator('.speaking-question-button').last();await last.scrollIntoViewIfNeeded();
+ const bounds=await page.evaluate(()=>{const recorder=document.querySelector('.speaking-recorder').getBoundingClientRect(),question=[...document.querySelectorAll('.speaking-question-button')].at(-1).getBoundingClientRect(),stop=document.querySelector('.speaking-stop').getBoundingClientRect();return {recorderBottom:recorder.bottom,questionTop:question.top,stopTop:stop.top,stopBottom:stop.bottom,height:innerHeight};});
+ expect(bounds.stopTop).toBeGreaterThanOrEqual(70);expect(bounds.stopBottom).toBeLessThanOrEqual(viewport.height-78);
+ expect(bounds.questionTop).toBeGreaterThanOrEqual(bounds.recorderBottom);
+ await hear(page,8);await page.screenshot({path:'test-results/speaking-compact-'+viewport.width+'.png',animations:'disabled'});
+ await page.setViewportSize({width:1280,height:950});await expect(page.locator('.speaking-grid > .speaking-recorder')).toHaveCount(1);
+ await page.setViewportSize(viewport);await expect(page.locator('.speaking-listen > .speaking-recorder')).toHaveCount(1);
+ await expect(page.locator('.speaking-studio')).toHaveAttribute('data-phase','recording');expect(await page.evaluate(()=>window.__recorders)).toBe(1);
+ await stop(page);await expect(page.locator('.speaking-result audio')).toBeInViewport();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ expect(state.requests.filter(r=>r.method==='POST').every(r=>r.path.endsWith('/question-audio'))).toBe(true);
 });
 test('records a real audio-only answer file, enforces listens and closes the microphone without requesting camera',async({page})=>{
  await page.addInitScript(()=>{HTMLCanvasElement.prototype.captureStream=undefined;});

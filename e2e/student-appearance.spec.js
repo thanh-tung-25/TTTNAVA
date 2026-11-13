@@ -5,7 +5,7 @@ const catalog = {
  levels:[{id:1,title:'HSK 1'},{id:2,title:'HSK 2'}],
  lessons:[{id:'lesson',level_id:1,title:'Xin chào'}],
  sets:[{id:'sample',lesson_id:'lesson',level_id:1,title:'Từ vựng',lesson_title:'Xin chào'}],
- counts:[{set_id:'sample',kind:'vocabulary',total:2}],progress:[],reviews:[],completion:[],
+ counts:[{set_id:'sample',kind:'vocabulary',total:2},{set_id:'sample',kind:'question',total:20}],progress:[],reviews:[],completion:[],
 };
 const attempt = {
  id:'sample',title:'Sắp xếp câu',items:[{id:'question',data:{type:'ordering',prompt:'Sắp xếp câu',options:['你好','朋友']}}],
@@ -134,32 +134,26 @@ for(const [entry,view] of [['practice','practice'],['exam','tests']]) {
   else await expect(page.locator('#content')).toContainText('Chưa có bài kiểm tra');
   expect(requests).toEqual([]);
   await expect(page.getByRole('link',{name:'Luyện tập',exact:true})).toHaveCount(0);
-  await expect(page.locator('#app-header').getByRole('link',{name:entry==='practice'?'Bài học':'Thử sức',exact:true})).toHaveAttribute('aria-current','page');
+  if(entry==='practice')await expect(page.locator('#app-header').getByRole('link',{name:'Bài học',exact:true})).toHaveAttribute('aria-current','page');
   await expect(page.locator('#notice')).toBeEmpty();
  });
 }
 
-test('Chinese students keep home tidy and open their own learning page',async({page})=>{
+test('Chinese home skips intermediate pages and opens lessons with all functions visible',async({page})=>{
  await page.route('**/pages/student/home/',async route=>route.fulfill({contentType:'text/html',body:await fs.readFile('frontend/pages/student/home/index.html','utf8')}));
  await page.route('**/api/v1/auth/me',async route=>route.fulfill({json:{data:{profile:{id:'student',role:'student',displayName:'Bạn nhỏ',avatarKey:'meo',grade:null}}}}));
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/pages/student/home/');
- await expect(page.locator('#greeting')).toContainText('Bạn nhỏ');
- await expect(page.getByRole('heading',{name:'Tuần này của mình'})).toBeVisible();
- await expect(page).toHaveURL(/\/student\/home\/$/);
+ await expect(page).toHaveURL(/\/student\/chinese\/$/);
+ await expect(page.getByRole('heading',{name:'Bài học HSK 1',exact:true})).toBeVisible();
  await expect(page.locator('.subject-grid')).toHaveCount(0);
  await expect(page.locator('#diamond-chip')).toContainText('3');
- await page.getByRole('link',{name:'Trang chủ',exact:true}).click();
- await expect(page.locator('.experience-hero')).toContainText('HSK');
- await expect(page).toHaveURL(/\/student\/home\/$/);
- await page.getByRole('link',{name:'Bài học của mình'}).click();
- await expect(page).toHaveURL(/\/student\/learning\/$/);
- await expect(page.locator('#learning-subjects')).toContainText('Bài học HSK 1');
- await expect(page.locator('#learning-subjects')).not.toContainText('Toán');
+ await expect(page.locator('.chinese-lesson-primary').getByRole('button',{name:'Nhận mặt chữ',exact:true})).toBeVisible();
  await expect(page.getByRole('link',{name:'Bài học',exact:true})).toHaveAttribute('aria-current','page');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await page.screenshot({path:`test-results/chinese-learning-${test.info().project.name}.png`,fullPage:true});
- await page.locator('.learning-subject').filter({hasText:'Sổ từ của con'}).click();
+ await page.locator('.student-account summary').click();
+ await page.getByRole('link',{name:'Sổ từ',exact:true}).click();
  await expect(page).toHaveURL(/view=notebook/);
  expect(errors).toEqual([]);
 });
@@ -230,25 +224,25 @@ test('student colors and layout are ready before account loading finishes',async
  await expect(page.locator('body')).toHaveAttribute('data-role','student');
  const before=await page.locator('body').evaluate(e=>({color:getComputedStyle(e).backgroundColor,left:getComputedStyle(e).paddingLeft}));
  release();
- await expect(page.locator('.chinese-welcome')).toBeVisible();
- await expect(page.locator('.lesson-heading h2')).toHaveText('Xin chào');
- await expect(page.locator('.lesson-island .learn-document')).toBeVisible();
+ await expect(page.locator('.chinese-section-heading')).toBeVisible();
+ await expect(page.locator('.chinese-lesson-row h3')).toHaveText('Xin chào');
+ await expect(page.locator('.chinese-lesson-entry')).toBeVisible();
  await expect(page.locator('#notice')).toBeEmpty();
  expect(await page.locator('body').evaluate(e=>({color:getComputedStyle(e).backgroundColor,left:getComputedStyle(e).paddingLeft}))).toEqual(before);
 });
 
-test('HSK selection stays in the purchased course after reload',async({page})=>{
- await page.goto('/pages/student/chinese/');
- await expect(page.locator('.chinese-level-picker select')).toBeVisible();
- await page.evaluate(()=>{window.studentDocumentMarker='same-document';});
- await page.locator('.chinese-level-picker select').selectOption('1');
+test('HSK follows the purchased course without a redundant level selector',async({page})=>{
+ await page.goto('/pages/student/chinese/?level=2');
+ await expect(page.locator('.chinese-level-picker select')).toHaveCount(0);
+ await expect(page.locator('.chinese-pagebar h1')).toHaveText('Tiếng Trung HSK 1');
  await expect(page.locator('#content')).toContainText('Xin chào');
- expect(await page.evaluate(()=>window.studentDocumentMarker)).toBe('same-document');
  await page.reload();
- await expect(page.locator('.chinese-level-picker select')).toHaveValue('1');
+ await expect(page.locator('.chinese-pagebar h1')).toHaveText('Tiếng Trung HSK 1');
+ await expect(page.locator('#content')).toContainText('Xin chào');
 });
 
 test('flashcards retain their palette and keyboard focus when flipped',async({page})=>{
+ await page.addInitScript(()=>sessionStorage.setItem('ttnava-study-deck:sample:vocabulary',JSON.stringify(['one','two'])));
  await page.goto('/pages/student/chinese/?set=sample');
  const face=page.locator('.flashcard');
  await expect(face).toContainText('你好');

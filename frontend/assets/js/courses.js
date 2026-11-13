@@ -48,7 +48,8 @@ function showCourse(c){
  dialog.showModal();dialog.scrollTop=0;
 }
 async function refresh(){
- const [catalog,history]=await Promise.all([api('/api/v1/courses'),api('/api/v1/courses/orders')]);courses=catalog.data;renderCourses();
+ const [catalog,history]=await Promise.all([api('/api/v1/courses'),api('/api/v1/courses/orders')]);courses=catalog.data;
+ renderCourses();
  orders.replaceChildren(...(history.data.length?history.data.map(o=>el('article',{class:'course-order'},[
   el('div',{},[el('strong',{text:o.title}),el('p',{text:money(o.amount_vnd)+' · '+formatDate(o.created_at)}),el('p',{text:'Mã đăng ký: '+o.id}),...(o.review_note?[el('p',{text:'Admin: '+o.review_note})]:[])]),
   el('span',{class:'course-status',text:status[o.status]}),

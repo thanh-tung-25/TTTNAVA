@@ -41,6 +41,7 @@ export function mountSpeaking(host,{set,activities,items=[],profile}){
   ui.timeline.replaceChildren(...snapshot.questions.map((question,index)=>{const event=snapshot.timeline.find(item=>item.index===index+1);return el('li',{text:`${event?speakingTime(event.seconds):'Chưa nghe'} · Câu ${index+1}: ${question}`});}));
   ui.resultInfo.textContent=`Mã lượt ${snapshot.code} · ${snapshot.date} · ${(blob.size/1024/1024).toFixed(1)} MB · ${speakingFilename(snapshot,blob.type).split('.').at(-1).toUpperCase()}`;
   update((reason?reason+' ':'')+'Bản ghi đã sẵn sàng. Nghe lại, ghi âm lại nếu cần hoặc bấm AI chấm bài.');
+  if(matchMedia('(max-width:680px)').matches)ui.result.scrollIntoView({block:'start'});
  }
  function failed(error){
   if(disposed||error.name==='AbortError')return;playing=false;
@@ -75,6 +76,7 @@ export function mountSpeaking(host,{set,activities,items=[],profile}){
    meta={...speakingStamp(profile,set),total:questions.length,questions:questions.map(question=>question.text),heard_count:0,timeline:[],answer_segments:[],duration_seconds:settings.duration_seconds};
    started=performance.now();media.record(meta);counts=questions.map(()=>0);heard=new Set();current=-1;phase='recording';ui.progress.value=0;ui.clock.textContent='Còn '+speakingTime(settings.duration_seconds);ui.heading.textContent='Bấm nghe câu hỏi để bắt đầu';
    update(settings.order==='free'?'Đang ghi âm. Chọn câu muốn nghe rồi trả lời bằng tiếng Trung.':'Đang ghi âm. Bấm Nghe câu 1 rồi trả lời bằng tiếng Trung.');
+   if(matchMedia('(max-width:680px)').matches)ui.workspace.scrollIntoView({block:'start'});
    timer=setInterval(()=>{const seconds=Math.min(settings.duration_seconds,Math.floor((performance.now()-started)/1000));ui.progress.value=seconds;ui.clock.textContent='Còn '+speakingTime(settings.duration_seconds-seconds);if(seconds>=settings.duration_seconds)stop(`Đã đủ ${settings.duration_seconds} giây.`);},100);
   }catch(error){failed(error);}
  };
@@ -86,7 +88,7 @@ export function mountSpeaking(host,{set,activities,items=[],profile}){
   if(phase==='recording')stop('Ghi âm dừng vì bạn rời màn hình.');else if(phase==='loading'||phase==='opening'){phase=result?'review':'idle';update('Đã dừng chuẩn bị. Bật lại micro để tiếp tục.');}
   media.close();update();
  };
- function dispose(){if(disposed)return;disposed=true;generation++;abort?.abort();clearTimer();assessment.dispose();media.dispose();ui.resultAudio.pause();ui.resultAudio.removeAttribute('src');ui.resultAudio.load();if(result){URL.revokeObjectURL(result.url);result.audio=null;}result=null;observer.disconnect();window.removeEventListener('beforeunload',unload);window.removeEventListener('pagehide',dispose);document.removeEventListener('visibilitychange',visibility);}
+ function dispose(){if(disposed)return;disposed=true;generation++;abort?.abort();clearTimer();ui.disposeLayout();assessment.dispose();media.dispose();ui.resultAudio.pause();ui.resultAudio.removeAttribute('src');ui.resultAudio.load();if(result){URL.revokeObjectURL(result.url);result.audio=null;}result=null;observer.disconnect();window.removeEventListener('beforeunload',unload);window.removeEventListener('pagehide',dispose);document.removeEventListener('visibilitychange',visibility);}
  const observer=new MutationObserver(()=>{if(!ui.shell.isConnected)dispose();});observer.observe(document.documentElement,{childList:true,subtree:true});
  window.addEventListener('beforeunload',unload);window.addEventListener('pagehide',dispose);document.addEventListener('visibilitychange',visibility);
  update(supported?undefined:'Trình duyệt này chưa hỗ trợ ghi âm. Hãy mở website HTTPS bằng Chrome hoặc Safari mới và cho phép dùng micro.');return dispose;

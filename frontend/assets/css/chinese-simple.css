@@ -1,0 +1,38 @@
+/* Keep the full course lesson list and its tools visible; group the main actions in each lesson. */
+body[data-program=chinese].student-unified .chinese-pagebar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 12px}
+body[data-program=chinese].student-unified .chinese-pagebar h1{font:700 1rem/1.5 var(--font-body,sans-serif);letter-spacing:0;color:#756782}
+body[data-program=chinese].student-unified .chinese-course-back{font-size:.8rem;color:#73529d;min-height:44px;display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+body[data-program=chinese].student-unified .chinese-section-heading{margin-bottom:20px}
+body[data-program=chinese].student-unified .chinese-section-heading h2{font-size:1.6rem;line-height:1.3;margin:0 0 8px}
+body[data-program=chinese].student-unified .chinese-section-heading p{margin:0;color:#71657b;font-size:.875rem;line-height:1.7}
+body[data-program=chinese].student-unified .chinese-lesson-list{display:grid;gap:16px}
+body[data-program=chinese].student-unified .chinese-lesson-row.lesson-island{padding:20px;margin:0;border:1px solid #e4ddeb;border-radius:18px;background:#fff;box-shadow:none;overflow:visible;scroll-margin-top:100px}
+body[data-program=chinese].student-unified .chinese-lesson-row h3{font-size:1.05rem;margin:0 0 8px;line-height:1.6}
+body[data-program=chinese].student-unified .chinese-lesson-entry.learn-document{display:block;padding:0;margin:0;border:0;border-radius:0;background:none;box-shadow:none}
+body[data-program=chinese].student-unified .chinese-lesson-entry+.chinese-lesson-entry{border-top:1px solid #eee9f2;margin-top:16px;padding-top:16px}
+body[data-program=chinese].student-unified .chinese-lesson-summary{font-size:.8rem;color:#71657b;line-height:1.7;margin:0 0 12px}
+body[data-program=chinese].student-unified .chinese-lesson-primary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:12px 0}
+body[data-program=chinese].student-unified .chinese-lesson-primary .btn{display:flex;justify-content:center;align-items:center;min-width:0;min-height:48px;margin:0;padding:10px 8px;text-align:center;font-size:.85rem;white-space:normal;box-shadow:none;border:1px solid #dfd2f1;border-radius:12px;background:#f1eafb;color:#604093}
+body[data-program=chinese].student-unified .chinese-lesson-primary .btn:first-child{background:#7951c6;color:#fff;border-color:#7951c6}
+body[data-program=chinese].student-unified .chinese-lesson-primary .btn:nth-child(2){background:#fff3e5;border-color:#efdcc5;color:#825a2e}
+body[data-program=chinese].student-unified .chinese-lesson-primary .btn:nth-child(3){background:#eaf7f1;border-color:#cde5da;color:#326c57}
+body[data-program=chinese].student-unified .chinese-lesson-primary .btn:disabled{opacity:1;background:#f3f1f5;color:#99909f;border-color:#e8e3ec;cursor:default}
+body[data-program=chinese].student-unified .chinese-lesson-primary .btn[aria-expanded=true]{outline:2px solid currentColor;outline-offset:2px}
+body[data-program=chinese].student-unified .chinese-lesson-primary .btn:first-child[aria-expanded=true]{outline-color:#7951c6}
+body[data-program=chinese].student-unified .chinese-lesson-tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding:12px;border:1px solid #dfd2f1;border-radius:12px;background:#f7f3fc}
+body[data-program=chinese].student-unified .chinese-lesson-tools[hidden]{display:none!important}
+body[data-program=chinese].student-unified .chinese-lesson-sections[data-section=characters] .chinese-lesson-tools{background:#fff8f0;border-color:#efdcc5}
+body[data-program=chinese].student-unified .chinese-lesson-sections[data-section=speaking] .chinese-lesson-tools{background:#f0faf5;border-color:#cde5da}
+body[data-program=chinese].student-unified .chinese-lesson-tools .btn{display:inline-flex;align-items:center;padding:8px 12px;min-height:44px;margin:0;font-size:.8rem;font-weight:500;border:1px solid #e3ddeb;border-radius:8px;background:#fff;color:#644783;box-shadow:none;text-decoration:none}
+body[data-program=chinese].student-unified .chinese-lesson-tools .btn:hover{color:#4e2f82;background:#fff;transform:none}
+body[data-program=chinese].student-unified .chinese-empty{background:#fff;padding:20px;border:1px solid #e4ddeb;border-radius:16px;line-height:1.8}
+body[data-program=chinese].student-unified.is-studying .chinese-pagebar{display:none}
+body[data-program=chinese].student-unified .study-menu-content{max-height:65vh;overflow:auto}
+body[data-program=chinese].student-unified .study-menu-content .btn{min-height:44px}
+@media(max-width:760px){
+ body[data-program=chinese].student-unified .chinese-section-heading h2{font-size:1.4rem}
+ body[data-program=chinese].student-unified .chinese-lesson-row.lesson-island{padding:16px}
+ body[data-program=chinese].student-unified .chinese-lesson-primary{gap:6px}
+ body[data-program=chinese].student-unified .chinese-lesson-primary .btn{font-size:.75rem;padding:9px 5px;min-height:52px}
+ body[data-program=chinese].student-unified .chinese-lesson-tools{gap:8px}
+}

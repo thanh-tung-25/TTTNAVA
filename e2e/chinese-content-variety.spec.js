@@ -25,7 +25,7 @@ test('all ten lessons show each word once in flashcards, vocabulary and listenin
  const state=await mock(page);for(let n=1;n<=10;n++){
   await page.goto(origin+'/pages/student/chinese/?set=set-'+n+'&mode=cards');await expect(page.locator('.card-count')).toHaveText('Thẻ 1 / 3');const seen=new Set();for(let i=0;i<3;i++){seen.add(await page.locator('.flashcard .hanzi').textContent());await page.getByRole('button',{name:'Tiếp →',exact:true}).click();}expect(seen.size).toBe(3);
   await page.goto(origin+'/pages/student/chinese/?set=set-'+n+'&mode=words');await expect(page.locator('.hub-table tbody tr')).toHaveCount(3);
-  await page.goto(origin+'/pages/student/chinese/?set=set-'+n+'&mode=listen');await expect(page.locator('.quiz-prompt')).toContainText('1/3');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  await page.goto(origin+'/pages/student/chinese/?set=set-'+n+'&mode=listen');await page.getByRole('button',{name:'Bắt đầu chặng 1',exact:true}).click();await expect(page.locator('.quiz-prompt')).toContainText('1/3');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  }expect(state.errors).toEqual([]);
 });
 test('shuffled cards resume at the same position and reveal answers only when flipped',async({page})=>{

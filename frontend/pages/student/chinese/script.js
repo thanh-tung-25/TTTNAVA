@@ -12,6 +12,7 @@ import {sessionStudyDeck,uniqueStudyWords} from '/assets/js/chinese-study-variet
 import {mountSpeaking} from '/assets/js/chinese-speaking.js';
 import {renderChineseAiChat} from '/assets/js/chinese-ai-chat.js';
 import {renderChineseStreet} from '/assets/js/chinese-street.js';
+import {configureChinesePage} from '/assets/js/chinese-student-navigation.js';
 const params=new URLSearchParams(location.search);let catalog,timer,learner;
 const json=v=>typeof v==='string'?JSON.parse(v):v;
 const extra=(title,children)=>el('details',{class:'learn-extra'},[el('summary',{text:title}),...children]);
@@ -22,12 +23,12 @@ async function boot(){
  const aiChat=params.get('view')==='ai-chat',street=params.get('view')==='street';
  document.body.classList.toggle('is-studying',!aiChat&&!street&&params.has('set'));
  document.body.classList.toggle('is-speaking',!aiChat&&!street&&params.get('mode')==='speak');
- const activeView={tests:'exam',notebook:'notebook',history:'history'}[params.get('view')]||'learning';
+ const activeView={tests:'exam',notebook:'notebook',history:'history'}[params.get('view')]||'chinese';
  const profile=await initPage('student',activeView);
  learner=profile;
  if(profile.course?.kind!=='chinese'){location.replace('/pages/student/courses/?program=chinese');return;}
  if(profile.course?.kind==='chinese')params.set('level',String(profile.course.level));
- document.querySelectorAll('.chinese-pagebar .chinese-tools a').forEach(a=>{const view=new URL(a.href).searchParams.get('view');if(view===(params.get('view')||null))a.setAttribute('aria-current','page');});
+ configureChinesePage(profile,params);
  if(aiChat){notice('');return renderChineseAiChat(root(),{level:profile.course.level});}
  if(street){notice('');return renderChineseStreet(root(),{level:profile.course.level});}
  catalog=await request('/catalog');notice('');
@@ -43,7 +44,7 @@ async function learn(id){
  const {set,items,progress,activities}=await request('/sets/'+id);let read=json(progress?.read_items||[]),last=progress?.last_item||null,displayed=null;
  const save=async item=>{await request('/sets/'+id+'/progress','PUT',{last_item:item,read_items:read});last=item;};
  root().append(el('header',{class:'study-bar'},[
-  el('a',{class:'study-back',href:'?level='+set.level_id,text:'←','aria-label':'Bài học',title:'Quay lại bài học'}),
+  el('a',{class:'study-back',href:'?lesson='+encodeURIComponent(set.lesson_id),text:'←','aria-label':'Về danh sách bài',title:'Về danh sách bài'}),
   el('h1',{text:set.lesson_title}),
   el('details',{class:'study-menu'},[el('summary',{text:'⋯','aria-label':'Thêm tùy chọn'}),el('div',{class:'study-menu-content'},[
    link('Sổ từ',{view:'notebook'}),link('Kết quả',{view:'history'}),el('p',{class:'study-source',text:set.title})
@@ -52,13 +53,6 @@ async function learn(id){
  const words=uniqueStudyWords(items.filter(i=>i.kind==='vocabulary')),questions=items.filter(i=>i.kind==='question'),reads=items.filter(i=>['grammar','reading','dialogue'].includes(i.kind)&&i.data.practice!=='speaking'),spoken=items.some(i=>i.kind==='dialogue'&&i.data.practice==='speaking');
  const mode=params.get('mode')||(words.length||questions.length?'cards':spoken?'speak':'read');
  const applied=activities?.tasks?.length?activities:null;
- const nav=el('nav',{class:'study-modes','aria-label':'Cách học'});
- if(words.length||questions.length){const cards=link('Thẻ lật',{set:id,mode:'cards'});if(mode==='cards')cards.setAttribute('aria-current','page');nav.append(cards);}
- if(words.length)nav.append(link('Từ mới',{set:id,mode:'words'}),link('Luyện nghe',{set:id,mode:'listen'}));
- if(questions.length){const q=action('Quiz 20 câu',()=>quiz(id));q.disabled=questions.length<20;q.title=questions.length<20?'Cần ít nhất 20 câu hỏi':'';nav.append(q);}
- if(reads.length){const reading=link('Bài đọc',{set:id,mode:'read'});if(mode==='read')reading.setAttribute('aria-current','page');nav.append(reading);}
- if(applied){const practice=link('Luyện vận dụng',{set:id,mode:'apply'});if(mode==='apply')practice.setAttribute('aria-current','page');nav.append(practice);}
- if(applied||spoken){const speaking=link('Luyện nói',{set:id,mode:'speak'});if(mode==='speak')speaking.setAttribute('aria-current','page');nav.append(speaking);}root().append(nav);
  if(mode==='speak'){mountSpeaking(root(),{set,activities:applied,items,profile:learner});return;}
  if(mode==='words'){wordTable(root(),words,id);return;}
  if(mode==='listen'){listeningPractice(root(),words,id);return;}

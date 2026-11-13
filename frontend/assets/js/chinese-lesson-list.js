@@ -1,10 +1,12 @@
 import {el,root,button,link,card,field,percentage,error} from './chinese-common.js';
 import {animalPath} from './animal-path.js';
 import {chineseModes,modeCounts} from './chinese-learning-modes.js';
+import {renderStudentChineseLessons} from './chinese-student-lessons.js';
 const extra=(title,children)=>el('details',{class:'learn-extra'},[el('summary',{text:title}),...children]);
 function action(text,fn,primary=false){const b=button(text,async()=>{b.disabled=true;try{await fn();}catch(e){error(e);}finally{b.disabled=false;}});if(primary)b.className='btn btn-primary';return b;}
 export function renderChineseLessons({catalog,params,quiz,role='student',manageTools,manageLesson}){
  const admin=role==='admin';
+ if(!admin)return renderStudentChineseLessons({catalog,params,quiz});
  const last=catalog.progress.find(p=>catalog.sets.some(s=>s.id===p.set_id)),lastSet=catalog.sets.find(s=>s.id===last?.set_id);
  const selectedLesson=catalog.lessons.find(l=>l.id===params.get('lesson'));
  const level=Number(params.get('level'))||selectedLesson?.level_id||lastSet?.level_id||catalog.sets[0]?.level_id||1;

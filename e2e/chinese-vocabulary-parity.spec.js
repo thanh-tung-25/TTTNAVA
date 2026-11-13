@@ -43,20 +43,31 @@ async function mock(page){
  });
 }
 
-test('all six student lessons offer the same six learning modes when vocabulary is present',async({page})=>{
+test('all six lessons group every existing study tool under its appropriate parent',async({page})=>{
  await mock(page);await page.goto(origin+'/pages/student/chinese/');
- const cards=page.locator('.learn-document');await expect(cards).toHaveCount(6);
+ await expect(page.locator('.chinese-lesson-row')).toHaveCount(6);
  for(let n=0;n<6;n++){
-  const card=cards.nth(n);
-  for(const label of ['Thẻ lật','Từ mới','Luyện nghe','Luyện vận dụng','Luyện nói'])await expect(card.getByRole('link',{name:label,exact:true})).toBeVisible();
-  await expect(card.getByRole('button',{name:'Quiz 20 câu',exact:true})).toBeEnabled();
+  const row=page.locator('.chinese-lesson-row').nth(n);
+  await expect(row.locator('.chinese-lesson-primary .btn')).toHaveCount(3);
+  await expect(row.getByRole('link',{name:'Từ mới',exact:true})).toBeHidden();
+  await row.getByRole('button',{name:'Bài tập',exact:true}).click();
+  await expect(row.getByRole('link',{name:'Luyện nghe',exact:true})).toBeVisible();
+  await expect(row.getByRole('link',{name:'Luyện vận dụng',exact:true})).toBeVisible();
+  await expect(row.getByRole('button',{name:'Quiz 20 câu',exact:true})).toBeVisible();
+  await row.getByRole('button',{name:'Nhận mặt chữ',exact:true}).click();
+  for(const name of ['Thẻ lật','Từ mới'])await expect(row.getByRole('link',{name,exact:true})).toBeVisible();
+  await expect(row.getByRole('link',{name:'Luyện nghe',exact:true})).toBeHidden();
+  await expect(row.getByRole('link',{name:'Luyện vận dụng',exact:true})).toBeHidden();
+  await row.getByRole('button',{name:'Luyện nói với AI',exact:true}).click();
+  for(const name of ['Luyện nói theo bài','Giao tiếp với AI','Phố tiếng Trung'])await expect(row.getByRole('link',{name,exact:true})).toBeVisible();
  }
 });
 
 for(const lesson of [1,2]){
  test(`lesson ${lesson}: open vocabulary, filter without tones, hear Chinese and flip the correct card`,async({page})=>{
   await page.setViewportSize({width:390,height:844});await mock(page);await page.goto(origin+'/pages/student/chinese/');
-  await page.locator('.learn-document').nth(lesson-1).getByRole('link',{name:'Từ mới',exact:true}).click();
+  await page.locator('.chinese-lesson-row').nth(lesson-1).getByRole('button',{name:'Nhận mặt chữ',exact:true}).click();
+  await page.locator('.chinese-lesson-row').nth(lesson-1).getByRole('link',{name:'Từ mới',exact:true}).click();
   await expect(page).toHaveURL(new RegExp(`set=set-${lesson}&mode=words`));await expect(page.locator('.hub-table tbody tr')).toHaveCount(3);
   const word=vocabulary[lesson-1][0];
   await page.getByRole('searchbox',{name:'Tìm từ trong bài'}).fill(lesson===1?'ni':'jiao');
@@ -75,6 +86,7 @@ for(const lesson of [1,2]){
 
  test(`lesson ${lesson}: listening works through a full round without revealing the answer first`,async({page})=>{
   await mock(page);await page.goto(origin+`/pages/student/chinese/?set=set-${lesson}&mode=listen`);
+  await expect(page.locator('.listening-stage')).toHaveCount(1);await page.getByRole('button',{name:'Bắt đầu chặng 1',exact:true}).click();
   for(let n=1;n<=3;n++){
    await expect(page.locator('.quiz-prompt')).toHaveText(`Nghe và chọn nghĩa · ${n}/3`);
    const area=page.locator('.hub-card');await expect(area.locator('[role=status]').first()).toHaveText('');
@@ -86,6 +98,6 @@ for(const lesson of [1,2]){
    await area.getByRole('button',{name:'Câu tiếp theo',exact:true}).click();
   }
   await expect(page.locator('.hub-card')).toContainText('3/3 câu đúng');
-  await page.getByRole('button',{name:'Luyện lượt khác',exact:true}).click();await expect(page.locator('.quiz-prompt')).toContainText('1/3');
+  await page.getByRole('button',{name:'Luyện lại chặng này',exact:true}).click();await expect(page.locator('.quiz-prompt')).toContainText('1/3');
  });
 }

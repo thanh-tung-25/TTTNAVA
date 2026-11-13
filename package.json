@@ -15,6 +15,7 @@
     "test:speaking": "playwright test --config playwright.speaking.config.js",
     "test:admin-ui": "playwright test --config playwright.admin.config.js",
     "test:student-ui": "playwright test --config playwright.student.config.js",
+    "test:chinese-simple": "playwright test --config playwright.chinese-simple.config.js",
     "test:ai-chat": "playwright test --config playwright.ai-chat.config.js",
     "test:street": "playwright test --config playwright.street.config.js",
     "test:courses": "playwright test --config playwright.courses.config.js",

@@ -5,6 +5,11 @@ import path from 'node:path';
 let server,origin;
 test.beforeAll(async()=>{const root=path.resolve('frontend');server=createServer(async(req,res)=>{let p=path.resolve(root,'.'+new URL(req.url,'http://localhost').pathname);if(p.endsWith(path.sep))p+='index.html';else if(!path.extname(p))p=path.join(p,'index.html');if(!p.startsWith(root+path.sep)){res.writeHead(403).end();return;}try{res.setHeader('Content-Type',({'.js':'text/javascript','.css':'text/css','.html':'text/html; charset=utf-8','.svg':'image/svg+xml'})[path.extname(p)]||'application/octet-stream');res.end(await readFile(p));}catch{res.writeHead(404).end();}});await new Promise(r=>server.listen(0,'127.0.0.1',r));origin='http://127.0.0.1:'+server.address().port;});
 test.afterAll(async()=>new Promise(r=>server.close(r)));
+async function openQuiz(page){
+ const button=page.locator('.chinese-lesson-primary').getByRole('button',{name:'Bài tập',exact:true});
+ if(await button.getAttribute('aria-expanded')!=='true')await button.click();
+ await page.locator('.chinese-lesson-tools').getByRole('button',{name:'Quiz 20 câu',exact:true}).click();
+}
 async function mock(page,{prompt}={}){
  const lesson={id:'lesson-1',level_id:1,title:'Bài 1. Xin chào',status:'published'},set={id:'set-1',lesson_id:lesson.id,level_id:1,title:'Bộ bài 1',lesson_title:lesson.title,activity_count:0};
  const words=[{id:'word-1',set_id:set.id,kind:'vocabulary',data:{hanzi:'你好',pinyin:'nǐ hǎo',meaning:'Xin chào'}},{id:'word-2',set_id:set.id,kind:'vocabulary',data:{hanzi:'谢谢',pinyin:'xiè xie',meaning:'Cảm ơn'}}];
@@ -49,7 +54,7 @@ test('old pinyin annotations stay out of quiz prompts, audio, cards, previews an
  await page.goto(origin+'/pages/student/chinese/?set=set-1&mode=cards&word=q-0');
  await page.getByText('Tùy chọn thẻ',{exact:true}).click();await expect(page.getByLabel('Loại thẻ')).toHaveValue('question');await expect(page.locator('.flashcard .study-prompt')).toHaveText(clean);
  await expect(page.locator('.hub-hint')).toHaveCount(0);
- await page.goto(origin+'/pages/student/chinese/');await page.getByRole('button',{name:'Quiz 20 câu',exact:true}).click();
+ await page.goto(origin+'/pages/student/chinese/');await openQuiz(page);
  await page.locator('.journey-preview summary').click();await expect(page.locator('.journey-preview')).toContainText(clean);await expect(page.locator('.journey-preview')).not.toContainText('qǐngwèn');
  await page.goto(origin+'/pages/student/chinese/?set=set-1&mode=words');await expect(page.locator('.hub-table')).toContainText('nǐ hǎo');
  await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect(errors).toEqual([]);
@@ -74,13 +79,13 @@ test('word table has three columns, filters pinyin, plays only on click, and lis
  await expect(page.locator('.hub-table th')).toHaveCount(3);await expect(page.locator('.hub-table tbody tr')).toHaveCount(2);expect(await page.evaluate(()=>window.__spoken)).toEqual([]);
  await page.getByRole('searchbox',{name:'Tìm từ trong bài'}).fill('ni hao');await expect(page.locator('.hub-table tbody tr')).toHaveCount(1);
  await page.getByRole('button',{name:'Nghe 你好',exact:true}).click();expect(await page.evaluate(()=>window.__spoken.at(-1))).toBe('你好');
- await page.goto(origin+'/pages/student/chinese/?set=set-1&mode=listen');await expect(page.getByRole('button',{name:'Nghe từ tiếng Trung',exact:true})).toBeVisible();expect(await page.evaluate(()=>window.__spoken)).toEqual([]);
+ await page.goto(origin+'/pages/student/chinese/?set=set-1&mode=listen');await expect(page.locator('.listening-stage')).toHaveCount(1);expect(await page.evaluate(()=>window.__spoken)).toEqual([]);await page.getByRole('button',{name:'Bắt đầu chặng 1',exact:true}).click();await expect(page.getByRole('button',{name:'Nghe từ tiếng Trung',exact:true})).toBeVisible();expect(await page.evaluate(()=>window.__spoken)).toEqual([]);
  await expect(page.locator('.hub-hint')).toHaveCount(0);await expect(page.getByRole('button',{name:'Phản ánh câu này',exact:true})).toBeVisible();
  await page.getByRole('button',{name:'Nghe từ tiếng Trung',exact:true}).click();expect((await page.evaluate(()=>window.__spoken)).length).toBe(1);
  await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect(errors).toEqual([]);
 });
 test('quiz previews its section, revisits locked answers, and keeps an ungraded answer when going back',async({page})=>{
- const state=await mock(page);await page.goto(origin+'/pages/student/chinese/');await page.getByRole('button',{name:'Quiz 20 câu',exact:true}).click();await expect(page.getByRole('dialog',{name:'Chọn nội dung quiz'})).toBeVisible();
+ const state=await mock(page);await page.goto(origin+'/pages/student/chinese/');await openQuiz(page);await expect(page.getByRole('dialog',{name:'Chọn nội dung quiz'})).toBeVisible();
  await page.getByRole('button',{name:'Bắt đầu / tiếp tục 20 câu'}).click();await expect(page.locator('.quiz-position')).toHaveText('Câu 1 / 20');expect(state.requests[0].selection).toBe('sequential');
  await page.getByRole('radio',{name:/Đúng/}).check();await page.getByRole('button',{name:'Kiểm tra',exact:true}).click();await page.getByRole('button',{name:'Câu tiếp theo →'}).click();
  await page.getByRole('radio',{name:/Sai/}).check();await page.getByRole('button',{name:'← Câu trước',exact:true}).click();await expect(page.locator('#content')).toContainText('Con đã trả lời: Đúng');
@@ -105,7 +110,7 @@ test('animal journey groups four stages, locks future stops and stays usable on 
  await mock(page);
  const blocks=Array.from({length:9},(_,block)=>({block,from:block*20+1,to:block*20+20,completed:block===0,score:block===0?85:null,unlocked:block<=1,questions:Array.from({length:20},(_,n)=>({id:'part-'+block+'-q-'+n,data:{prompt:'Câu xem trước '+(n+1)}}))}));
  await page.route('**/api/v1/chinese/sets/set-1/quiz-plan',r=>r.fulfill({json:{data:{total:180,review_count:20,active:null,blocks}}}));
- await page.goto(origin+'/pages/student/chinese/');await page.getByRole('button',{name:'Quiz 20 câu',exact:true}).click();
+ await page.goto(origin+'/pages/student/chinese/');await openQuiz(page);
  const dialog=page.getByRole('dialog',{name:'Chọn nội dung quiz'});await expect(dialog.locator('select')).toHaveCount(0);await expect(dialog.locator('.journey-island')).toHaveCount(3);await expect(dialog.locator('.journey-island').first().locator('.journey-stage')).toHaveCount(4);await expect(dialog.locator('.journey-island').last().locator('.journey-stage')).toHaveCount(1);
  await expect(page.getByRole('button',{name:'Chặng 1 · Đã hoàn thành',exact:true})).toBeEnabled();await expect(page.getByRole('button',{name:'Chặng 2 · Sẵn sàng khám phá',exact:true})).toHaveAttribute('aria-current','true');await expect(page.getByRole('button',{name:'Chặng 3 · Chưa mở',exact:true})).toBeDisabled();await expect(dialog).toContainText('85/100');
  await page.screenshot({path:'test-results/chinese-animal-journey-desktop.png'});
@@ -113,17 +118,17 @@ test('animal journey groups four stages, locks future stops and stays usable on 
  await page.setViewportSize({width:320,height:568});await expect(dialog.locator('.journey-go')).toBeInViewport();expect(await dialog.evaluate(n=>n.scrollWidth<=n.clientWidth)).toBe(true);
  await page.getByRole('button',{name:'Ôn điều đã học',exact:true}).click();await expect(dialog.locator('.journey-detail')).toContainText('Con đã làm 20 câu');await expect(dialog.locator('.journey-go')).toBeEnabled();
  await page.getByRole('button',{name:'Khám phá cùng bạn nhỏ',exact:true}).click();await page.getByRole('button',{name:'Chặng 1 · Đã hoàn thành',exact:true}).click();await expect(dialog.locator('.journey-detail')).toContainText('Cùng Gấu trúc · Chặng 1');
- await page.getByRole('button',{name:'Đóng bản đồ'}).click();await page.getByRole('button',{name:'Quiz 20 câu',exact:true}).click();await expect(page.getByRole('button',{name:'Chặng 2 · Sẵn sàng khám phá',exact:true})).toHaveAttribute('aria-current','true');
+ await page.getByRole('button',{name:'Đóng bản đồ'}).click();await openQuiz(page);await expect(page.getByRole('button',{name:'Chặng 2 · Sẵn sàng khám phá',exact:true})).toHaveAttribute('aria-current','true');
 });
 test('a stale Stage 5 cannot select or replace the unlocked Stage 1',async({page})=>{
  const state=await mock(page),blocks=Array.from({length:10},(_,block)=>({block,from:block*20+1,to:block*20+20,completed:false,score:null,unlocked:block===0,questions:state.attempt.items}));
  await page.route('**/api/v1/chinese/sets/set-1/quiz-plan',r=>r.fulfill({json:{data:{total:188,review_count:0,active:{id:'old',block:4,selection:'sequential'},blocks}}}));
- await page.goto(origin+'/pages/student/chinese/');await page.getByRole('button',{name:'Quiz 20 câu',exact:true}).click();const dialog=page.getByRole('dialog');await expect(dialog.locator('.journey-detail h3')).toContainText('Chặng 1');await expect(page.getByRole('button',{name:'Chặng 1 · Sẵn sàng khám phá',exact:true})).toHaveAttribute('aria-current','true');await expect(dialog.locator('.journey-go')).toHaveText('Bắt đầu Chặng 1 →');await expect(dialog.locator('.journey-tip')).toHaveCount(0);
+ await page.goto(origin+'/pages/student/chinese/');await openQuiz(page);const dialog=page.getByRole('dialog');await expect(dialog.locator('.journey-detail h3')).toContainText('Chặng 1');await expect(page.getByRole('button',{name:'Chặng 1 · Sẵn sàng khám phá',exact:true})).toHaveAttribute('aria-current','true');await expect(dialog.locator('.journey-go')).toHaveText('Bắt đầu Chặng 1 →');await expect(dialog.locator('.journey-tip')).toHaveCount(0);
  await page.setViewportSize({width:390,height:844});await page.screenshot({path:'test-results/journey-correct-stage-mobile.png'});await dialog.locator('.journey-go').click();expect(state.requests[0]).toMatchObject({selection:'sequential',block:0});
 });
 test('replaying Stage 1 does not offer to continue a different active stage',async({page})=>{
  const state=await mock(page),blocks=Array.from({length:3},(_,block)=>({block,from:block*20+1,to:block*20+20,completed:block===0,score:block===0?100:null,unlocked:block<=1,questions:state.attempt.items}));
- await page.route('**/api/v1/chinese/sets/set-1/quiz-plan',r=>r.fulfill({json:{data:{total:60,review_count:20,active:{id:'stage-2',selection:'sequential',block:1},blocks}}}));await page.goto(origin+'/pages/student/chinese/');await page.getByRole('button',{name:'Quiz 20 câu',exact:true}).click();await expect(page.locator('.journey-go')).toHaveText('Tiếp tục Chặng 2 →');await page.getByRole('button',{name:'Chặng 1 · Đã hoàn thành',exact:true}).click();await expect(page.locator('.journey-go')).toHaveText('Khám phá lại chặng này →');await page.locator('.journey-go').click();expect(state.requests[0].block).toBe(0);
+ await page.route('**/api/v1/chinese/sets/set-1/quiz-plan',r=>r.fulfill({json:{data:{total:60,review_count:20,active:{id:'stage-2',selection:'sequential',block:1},blocks}}}));await page.goto(origin+'/pages/student/chinese/');await openQuiz(page);await expect(page.locator('.journey-go')).toHaveText('Tiếp tục Chặng 2 →');await page.getByRole('button',{name:'Chặng 1 · Đã hoàn thành',exact:true}).click();await expect(page.locator('.journey-go')).toHaveText('Khám phá lại chặng này →');await page.locator('.journey-go').click();expect(state.requests[0].block).toBe(0);
 });
 test('an outdated quiz shows a fresh-stage action instead of old repeated questions or progress',async({page})=>{
  const state=await mock(page);state.attempt.source_updated=true;state.attempt.items=[];await page.goto(origin+'/pages/student/chinese/?attempt=attempt-1');await expect(page.locator('#content')).toContainText('Bộ câu hỏi đã được cập nhật');await expect(page.locator('.quiz-position,.quiz-jump,.quiz-prompt')).toHaveCount(0);await page.getByRole('button',{name:'Mở chặng hiện tại →',exact:true}).click();await expect(page.locator('.journey-detail h3')).toContainText('Chặng 1');await expect(page.locator('.journey-go')).toHaveText('Bắt đầu Chặng 1 →');

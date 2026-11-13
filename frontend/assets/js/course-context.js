@@ -8,10 +8,14 @@ export async function courseProfile(profile,active) {
  localStorage.setItem('ttnava-course',id);
  profile.grade=['primary','secondary'].includes(course.kind)?Number(course.level):null;
  profile.course=course;
+ if(course.kind==='chinese'&&['home','learning'].includes(active)){
+  location.replace('/pages/student/chinese/');
+  throw new Error('Đang mở danh sách bài học Tiếng Trung…');
+ }
  return profile;
 }
 export function enterCourse(course) {
  localStorage.setItem('ttnava-course',course.id);
  document.cookie='ttnava_course='+encodeURIComponent(course.id)+'; Path=/; SameSite=Lax';
- location.assign('/pages/student/learning/');
+ location.assign(course.kind==='chinese'?'/pages/student/chinese/':'/pages/student/learning/');
 }

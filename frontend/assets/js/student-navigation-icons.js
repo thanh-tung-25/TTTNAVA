@@ -1,0 +1,12 @@
+// Small, code-native clay icons; labels remain in the surrounding links.
+export function studentNavigationIcon(key,fallback='·'){
+ const shapes={
+  home:'<path d="M6 14 16 5l10 9v13H6Z" fill="url(#nav-home-soft)" stroke="#b59acd"/><path d="m3 15 13-12 13 12-3 3L16 9 6 18Z" fill="url(#nav-home-main)"/><path d="M13 20h6v9h-6Z" fill="#aa87ca"/><path d="M9 16h4v4H9Zm11 0h4v4h-4Z" fill="#fffaf3"/><path d="m7 15 9-8 9 8" stroke="#fff" stroke-opacity=".6" stroke-linecap="round"/>',
+  learning:'<path d="M3 8c5-2 9-1 13 2 4-3 8-4 13-2v19c-5-2-9-1-13 2-4-3-8-4-13-2Z" fill="url(#nav-learning-main)"/><path d="M6 6c4-1 7 0 10 3v17c-3-2-6-3-10-2Zm20 0c-4-1-7 0-10 3v17c3-2 6-3 10-2Z" fill="url(#nav-learning-soft)" stroke="#d7bd93"/><path d="M16 9v18M9 11l4 1m-4 4 4 1m7-5 3-1m-3 6 3-1" stroke="#c6a16c" stroke-linecap="round"/>',
+  arena:'<path d="M9 6H4v5c0 5 3 7 7 7m12-12h5v5c0 5-3 7-7 7" fill="none" stroke="#dcad53" stroke-width="3"/><path d="M8 4h16v8c0 6-4 10-8 10s-8-4-8-10Z" fill="url(#nav-arena-main)" stroke="#d9a34e"/><path d="M10 6h12" stroke="#fff2bc" stroke-width="2" stroke-linecap="round"/><path d="M14 21h4v5h-4Z" fill="#dca654"/><path d="M10 25h12l2 4H8Z" fill="url(#nav-arena-soft)" stroke="#c99d5a"/><path d="m16 8 1.4 2.8 3.1.5-2.3 2.2.5 3.1L16 15.2l-2.7 1.4.5-3.1-2.3-2.2 3.1-.5Z" fill="#fff4cc"/>',
+  personal:'<circle cx="16" cy="16" r="14" fill="url(#nav-personal-main)" stroke="#9fcab7"/><path d="M6 27c.5-6 4-9 10-9s9.5 3 10 9" fill="#8bb8a1"/><circle cx="16" cy="12" r="6" fill="url(#nav-personal-soft)" stroke="#e1ba95"/><path d="M11 10c1-3 3-4 5-4s4 1 5 4" fill="#b78971"/><path d="M12 24c2-2 6-2 8 0" stroke="#bce0cd" stroke-width="2" stroke-linecap="round"/>',
+ };
+ if(!shapes[key])return fallback;
+ const colors={home:['#c7ade9','#926bc0','#fff9f1','#e3d2ed'],learning:['#e6bc7d','#bf9157','#fffdf5','#f5e2be'],arena:['#ffe69b','#e6b34e','#f9dc9d','#cf9a50'],personal:['#dff5e8','#afd6c2','#fff0d9','#f0cbaa']}[key];
+ return `<svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" focusable="false"><defs><linearGradient id="nav-${key}-main" x2=".7" y2="1"><stop stop-color="${colors[0]}"/><stop offset="1" stop-color="${colors[1]}"/></linearGradient><linearGradient id="nav-${key}-soft" x2=".7" y2="1"><stop stop-color="${colors[2]}"/><stop offset="1" stop-color="${colors[3]}"/></linearGradient></defs><ellipse cx="16" cy="29.5" rx="10" ry="1.5" fill="#58416c" opacity=".12"/>${shapes[key]}</svg>`;
+}

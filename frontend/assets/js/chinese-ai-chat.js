@@ -64,10 +64,10 @@ export async function renderChineseAiChat(host,{role='student',level=1}={}){
  function renderCall(){
   main.replaceChildren(header());const call=el('section',{class:'voice-call'});
   const end=button('Kết thúc',()=>endConversation());end.dataset.end='';
-  call.append(el('div',{class:'voice-call-top'},[el('div',{},[el('span',{text:selected.title}),el('time',{'data-voice-time':'',text:'05:00','aria-label':'Thời gian còn lại'})]),end]));
+  call.append(el('div',{class:'voice-call-top'},[el('div',{},[el('span',{text:selected.title}),el('time',{'data-voice-time':'',text:'05:00','aria-label':'Thời gian còn lại'})])]));
   call.append(el('div',{class:'voice-orb','aria-hidden':'true'},[el('span',{class:'voice-orbit'}),el('img',{src:'/assets/images/mascot-lion.svg',width:132,height:145,alt:''})]),el('h3',{'data-voice-status':'',text:names[phase],role:'status','aria-live':'polite'}),el('p',{'data-voice-hint':'',class:'voice-hint',text:message}),el('div',{class:'voice-bars','aria-hidden':'true'},Array.from({length:5},()=>el('i'))));
-  const controls=el('div',{class:'voice-controls'},[button('Ⅱ Tạm dừng',()=>active?pause():resume(),true),button('✓ Nói xong',()=>audio.finishTurn())]);
-  controls.children[0].dataset.pause='';controls.children[1].dataset.done='';call.append(controls);
+  const controls=el('div',{class:'voice-controls','aria-label':'Điều khiển cuộc trò chuyện'},[button('Ⅱ Tạm dừng',()=>active?pause():resume(),true),button('✓ Nói xong',()=>audio.finishTurn()),end]);
+  controls.children[0].dataset.pause='';controls.children[1].dataset.done='';call.firstElementChild.after(controls);
   const captions=el('details',{class:'voice-captions'},[el('summary',{text:'Hiện chữ khi cần'}),el('p',{'data-caption':'',lang:'zh-CN',text:reply?.reply_zh||''}),el('details',{},[el('summary',{text:'Dịch nghĩa'}),p(reply?.translation_vi||'')])]);
   const replay=button('▶ Nghe lại',()=>replayReply(false)),slow=button('▷ Nghe chậm',()=>replayReply(true));replay.dataset.replay='';slow.dataset.replay='';captions.open=textMode;captions.append(el('div',{class:'voice-replay'},[replay,slow]));call.append(captions);
   const typing=el('details',{class:'voice-typing'},[el('summary',{text:'Nhập chữ thay micro'})]);typing.open=textMode;

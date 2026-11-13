@@ -1,0 +1,69 @@
+/* Shared student navigation chrome. Keep the existing header and mobile dock heights. */
+body[data-role=student].student-unified .topbar{background:linear-gradient(105deg,#fffdfb,#faf5ff 65%,#fff9f1);border-bottom:1px solid #e4d8ed;box-shadow:0 3px 0 #ece2f3,0 8px 18px #6a478408}
+body[data-role=student].student-unified .topbar .topbar-inner{min-height:80px;padding:12px 28px;gap:12px}
+body[data-role=student].student-unified .topbar .brand{display:flex;align-items:center;gap:9px;padding:6px 10px;border:1px solid #fff;border-radius:17px;background:linear-gradient(#fff,#f1e8fa);box-shadow:inset 0 2px 0 #fff,0 4px 0 #dac9ea;font:800 1.4rem/1 var(--font-display);color:#7950aa;text-shadow:0 1px 0 #fff;text-decoration:none;flex-shrink:0}
+body[data-role=student].student-unified .topbar .brand-mark{width:38px;height:38px;object-fit:contain;border-radius:11px;filter:drop-shadow(0 2px 1px #8d6bad1a)}
+body[data-role=student].student-unified .topbar .topbar-user{align-items:center;gap:10px}
+body[data-role=student].student-unified .topbar .diamond-chip{min-height:40px;padding:6px 12px;border:1px solid #edcc89;border-radius:15px;background:linear-gradient(#fff5d7,#ffe6ad);box-shadow:inset 0 2px 0 #fffbea,0 3px 0 #daba7a;font-size:.85rem;color:#a07535}
+body[data-role=student].student-unified .topbar .diamond-chip>span{font-weight:800;color:#8a622b}
+body[data-role=student].student-unified .topbar .student-account>summary{min-height:46px;padding:5px 10px;gap:9px;border:1px solid #eadcf3;border-radius:17px;background:linear-gradient(#fff,#f8f0fd);box-shadow:inset 0 2px 0 #fff,0 3px 0 #ddcce9}
+body[data-role=student].student-unified .topbar .student-account>summary:focus-visible{outline:3px solid #bda0db;outline-offset:4px}
+body[data-role=student].student-unified .topbar .student-account[open]>summary{background:linear-gradient(#f6edff,#eadcf7)}
+body[data-role=student].student-unified .topbar .student-account .avatar{width:36px;height:36px;border:2px solid #fff8e9;border-radius:13px;background:linear-gradient(#fff3dc,#ffe0b7);box-shadow:0 3px 0 #e0bc96}
+body[data-role=student].student-unified .topbar .user-meta strong{font-size:.85rem;color:#62457d}
+body[data-role=student].student-unified .topbar .user-meta>span{font-size:.66rem;color:#9a80af}
+body[data-role=student].student-unified .topbar .account-chevron{display:grid;place-items:center;width:18px;height:20px;border-radius:7px;background:#eee2f8;border:1px solid #e0cbed;color:#9670b0;box-shadow:0 2px 0 #ddc6eb;font-size:13px;line-height:1}
+body[data-role=student].student-unified .topbar #feedback-open{width:38px;height:38px;min-width:38px;min-height:38px;padding:0;border:1px solid #e0cfef;border-radius:13px;background:linear-gradient(#fff,#f2e7fc);box-shadow:inset 0 2px 0 #fff,0 4px 0 #d7bee8;color:#9567b8;font-size:19px;font-weight:800}
+body[data-role=student].student-unified .topbar #chat-widget .chat-launcher{width:38px;height:38px;min-height:38px;padding:0;border:1px solid #a984d9;border-radius:13px;background:linear-gradient(#b18be8,#865ac8);box-shadow:inset 0 2px 0 #d5bdf4,0 4px 0 #674393;color:#fff}
+body[data-role=student].student-unified .topbar #chat-widget .chat-launcher .chat-icon{width:21px;height:21px}
+body[data-role=student].student-unified .topbar .student-account-menu{max-height:calc(100dvh - 120px);overflow-y:auto;padding:18px;border:2px solid #fff;border-radius:22px;background:linear-gradient(145deg,#fffdfb,#faf3ff);box-shadow:0 6px 0 #dfceeb,0 16px 30px #5738701a}
+body[data-role=student].student-unified .topbar .student-account-menu>a{display:flex;align-items:center;min-height:40px;padding:7px 9px;border-radius:10px;color:#79528f;font-size:.82rem}
+body[data-role=student].student-unified .topbar .student-account-menu>a:hover{background:#efe4f9}
+body[data-role=student].student-unified .student-primary-nav .nav-link{border:1px solid #eee3f5;border-radius:16px;background:linear-gradient(#fffdfb,#f7f0fc);box-shadow:inset 0 2px 0 #fff,0 3px 0 #e8ddf0;color:#8a729c;transition:background-color .15s,transform .15s,box-shadow .15s}
+body[data-role=student].student-unified .student-primary-nav .nav-link[aria-current=page]{border-color:#a984d6;background:linear-gradient(#b18ce5,#8b61c9);box-shadow:inset 0 2px 0 #d6bff2,0 4px 0 #6a469a;color:#fff}
+body[data-role=student].student-unified .student-primary-nav .nav-link:active{transform:translateY(2px);box-shadow:inset 0 2px 0 #fff6,0 1px 0 #d4bde5}
+body[data-role=student].student-unified .student-primary-nav .student-nav-icon{display:grid;place-items:center;flex:none;width:36px;height:36px;border:1px solid #fff;border-radius:12px;background:linear-gradient(#fff,#f0e5fa);box-shadow:inset 0 1px 0 #fff,0 2px 0 #d9c8e8}
+body[data-role=student].student-unified .student-primary-nav .student-nav-icon svg{display:block;width:29px;height:29px;filter:drop-shadow(0 1px 1px #80589b18)}
+body[data-role=student].student-unified .student-primary-nav .nav-link[aria-current=page] .student-nav-icon{background:linear-gradient(#fff,#f7efff);border-color:#fff7;box-shadow:0 2px 0 #7955a7}
+@media(min-width:1100px){
+ body[data-role=student].student-unified .topbar .topbar-inner>.brand{left:18px;top:13px;width:196px;justify-content:center}
+ body[data-role=student].student-unified .student-navigation{background:linear-gradient(175deg,#fffdfb,#faf4ff);border-right:1px solid #e5d7ee;box-shadow:3px 0 0 #f4ecf9}
+ body[data-role=student].student-unified .student-primary-nav{gap:12px}
+ body[data-role=student].student-unified .student-primary-nav .nav-link{padding:9px 11px;gap:12px;min-height:58px}
+}
+@media(max-width:1099px){
+ body[data-role=student].student-unified .student-navigation{height:calc(78px + env(safe-area-inset-bottom));padding:7px 10px calc(7px + env(safe-area-inset-bottom));border:2px solid #fff;border-bottom:0;border-radius:23px 23px 0 0;background:linear-gradient(#fdf9ff,#f2e8fa);box-shadow:0 -4px 0 #e6d8ee,0 -10px 22px #6847800b}
+ body[data-role=student].student-unified .student-primary-nav{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+ body[data-role=student].student-unified .student-primary-nav .nav-link{min-width:0;min-height:58px;padding:4px 3px;gap:3px;white-space:normal;text-align:center;border-radius:15px}
+ body[data-role=student].student-unified .student-primary-nav .nav-link>span:last-child{font-size:10px;font-weight:700;line-height:1.4}
+ body[data-role=student].student-unified .student-primary-nav .student-nav-icon{width:30px;height:30px;border-radius:10px}
+ body[data-role=student].student-unified .student-primary-nav .student-nav-icon svg{width:25px;height:25px}
+}
+@media(max-width:760px){
+ body[data-role=student].student-unified .topbar .topbar-inner{min-height:72px;padding:10px 12px;gap:6px}
+ body[data-role=student].student-unified .topbar .brand{gap:6px;padding:6px 8px;font-size:15px;border-radius:14px}
+ body[data-role=student].student-unified .topbar .brand-mark{width:32px;height:32px;border-radius:9px}
+ body[data-role=student].student-unified .topbar .topbar-user{gap:6px}
+ body[data-role=student].student-unified .topbar .student-account>summary{padding:4px;min-height:44px;border-radius:13px}
+ body[data-role=student].student-unified .topbar .student-account-menu{position:fixed;top:84px;right:12px;width:min(280px,calc(100vw - 24px));max-height:calc(100dvh - 184px - env(safe-area-inset-bottom))}
+ body[data-role=student].student-unified .topbar .student-account .avatar{width:34px;height:34px;border-radius:11px}
+ body[data-role=student].student-unified .topbar .account-chevron{display:none}
+ body[data-role=student].student-unified .topbar .diamond-chip{min-height:36px;padding:5px 9px;font-size:11px;border-radius:12px}
+ body[data-role=student].student-unified .topbar #feedback-open,body[data-role=student].student-unified .topbar #chat-widget .chat-launcher{width:36px;height:36px;min-width:36px;min-height:36px;border-radius:12px}
+ body[data-role=student].student-unified .topbar #chat-widget .chat-launcher .chat-icon{width:19px;height:19px}
+}
+@media(max-width:360px){
+ body[data-role=student].student-unified .topbar .brand{font-size:0;gap:0;padding:6px 7px}
+ body[data-role=student].student-unified .topbar .brand-mark{width:34px;height:34px}
+}
+@media(max-width:340px){
+ body[data-role=student].student-unified .topbar .topbar-inner{gap:4px}
+ body[data-role=student].student-unified .topbar .brand{padding-inline:6px}
+ body[data-role=student].student-unified .topbar .topbar-user{gap:4px}
+ body[data-role=student].student-unified .topbar .course-switch{font-size:9px;padding:6px}
+ body[data-role=student].student-unified .topbar .diamond-chip{padding-inline:7px}
+ body[data-role=student].student-unified .topbar .student-account>summary{min-height:40px}
+ body[data-role=student].student-unified .topbar .student-account .avatar{width:30px;height:30px}
+ body[data-role=student].student-unified .topbar #feedback-open,body[data-role=student].student-unified .topbar #chat-widget .chat-launcher{width:34px;height:34px;min-width:34px;min-height:34px}
+}
+@media(prefers-reduced-motion:reduce){body[data-role=student].student-unified .student-primary-nav .nav-link{transition:none}}

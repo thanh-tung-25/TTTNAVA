@@ -9,3 +9,32 @@ body[data-role=student] .speaking-studio .speaking-result{margin-top:24px}.speak
 @keyframes speaking-wave{to{transform:scaleY(.4);opacity:.6}}
 @media(max-width:680px){.speaking-hero{padding:20px;gap:10px}.speaking-hero>img{width:65px;height:78px}.speaking-hero h2{font-size:1.4rem}.speaking-hero p{font-size:11px}.speaking-eyebrow{font-size:9px}.speaking-steps{gap:12px;margin:22px 0;font-size:9px}.speaking-steps li{align-items:flex-start;gap:5px;flex:1}.speaking-steps li>span{width:22px;height:22px;font-size:9px}.speaking-grid{grid-template-columns:1fr;gap:18px}.speaking-recorder{grid-row:1}body[data-role=student] .speaking-studio .card{padding:20px}.speaking-microphone-visual{padding:20px 0}.speaking-microphone-visual>span{width:82px;height:82px;font-size:39px;border-radius:28px}.speaking-listen{display:grid;grid-template-columns:66px minmax(0,1fr);gap:8px 12px;text-align:left;align-items:center}.speaking-listen>.speaking-card-head{grid-column:1/-1}.speaking-listen h3{grid-column:2;grid-row:2;margin:7px 0 0;font-size:1rem}.speaking-listen .speaking-panda{grid-column:1;grid-row:2/4;width:66px;height:76px;margin:0}.speaking-listen .speaking-panda img{width:57px;height:65px}.speaking-listen>.speaking-badge{grid-column:2;grid-row:3;justify-self:start}.speaking-listen>.speaking-lock-note,.speaking-listen>.speaking-question-buttons,.speaking-listen>.speaking-listen-count{grid-column:1/-1}.speaking-listen>.speaking-listen-count{text-align:center}.speaking-result-head h3{font-size:1rem}.speaking-result-head .speaking-badge{max-width:108px}.speaking-result-actions .btn{flex:1 1 130px}.speaking-footer{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.speaking-waves i{animation:none!important}}
+/* Mobile: keep the existing recorder beside the numbered audio questions. */
+@media(max-width:680px){
+ .speaking-studio .speaking-steps{display:none}
+ .speaking-studio .speaking-hero{padding:15px;gap:12px;margin-bottom:18px}
+ .speaking-studio .speaking-hero h2{font-size:1.15rem;margin:5px 0}
+ .speaking-studio .speaking-hero>img{width:52px;height:62px}
+ .speaking-studio .speaking-listen{display:block;scroll-margin-top:90px;text-align:left}
+ .speaking-studio .speaking-listen>.speaking-card-head{gap:8px;align-items:center}
+ .speaking-studio .speaking-listen>h3{font-size:.95rem;margin:10px 0 6px}
+ .speaking-studio .speaking-listen :is(.speaking-panda,.speaking-lock-note){display:none}
+ .speaking-studio .speaking-listen>.speaking-badge{font-size:10px;margin-bottom:4px}
+ body[data-role=student] .speaking-studio .speaking-grid .speaking-recorder{position:sticky;top:82px;z-index:20;grid-row:auto;padding:12px;margin:10px 0 14px;border:1px solid #dcc9ec;border-radius:16px;background:#fffdfa;box-shadow:0 4px 0 #e6d8ee,0 8px 16px #51326f0c}
+ .speaking-studio .speaking-recorder .speaking-card-head h3{font-size:.8rem}
+ .speaking-studio .speaking-recorder .speaking-state{font-size:9px;padding:4px 7px}
+ .speaking-studio .speaking-recorder .speaking-microphone-visual{display:none}
+ .speaking-studio .speaking-recorder .speaking-level{gap:0;margin:5px 0}
+ .speaking-studio .speaking-recorder .speaking-level>span{display:none}
+ .speaking-studio .speaking-recorder .speaking-level meter{height:6px}
+ .speaking-studio .speaking-recorder .speaking-timing{margin-top:5px;font-size:10px}
+ .speaking-studio .speaking-recorder .speaking-progress{height:4px;margin:5px 0 10px}
+ .speaking-studio .speaking-recorder .speaking-controls{gap:8px}
+ .speaking-studio .speaking-recorder .speaking-controls .btn{font-size:11px;min-height:44px;padding:9px 6px}
+ .speaking-studio .speaking-recorder .speaking-status{min-height:0;margin:9px 0 0;font-size:11px;line-height:1.5}
+ .speaking-studio .speaking-question-buttons{gap:8px}
+ .speaking-studio .speaking-question-button{min-height:48px;scroll-margin-top:290px;scroll-margin-bottom:100px}
+ .speaking-studio .speaking-listen-count{font-size:10px;line-height:1.6;margin:12px 0 0}
+ body[data-role=student] .speaking-studio[data-phase=review] .speaking-recorder{position:static}
+ .speaking-studio .speaking-result{scroll-margin-top:90px}
+}

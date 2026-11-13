@@ -24,7 +24,7 @@ let diamondTotal = null;
 function renderHeader(profile, role, active) {
   if(active==='worksheets')active='questions';
   const nav = role==='admin'?ADMIN_NAV.filter(([key])=>adminSections(profile).includes(key)).map(entry=>entry[0]==='courses'&&adminScope(profile)==='chinese'?[entry[0],entry[1],'Đăng ký Tiếng Trung']:entry):ADMIN_NAV;
-  const home = role === 'admin' ? adminHome(profile) : '/pages/student/courses/';
+  const home = role === 'admin' ? adminHome(profile) : profile.course?.kind==='chinese'?'/pages/student/chinese/':'/pages/student/courses/';
   const subtitle = role === 'admin'
     ? adminLabels[adminScope(profile)]
     : (profile.course?.title ?? (profile.grade ? `Học sinh lớp ${profile.grade}` : 'Học sinh Tiếng Trung'));
@@ -36,7 +36,7 @@ function renderHeader(profile, role, active) {
       ${role==='admin'?'<button type="button" class="admin-menu-toggle" aria-label="Mở điều hướng quản trị" aria-expanded="false" aria-controls="admin-sidebar">☰</button><span class="admin-topbar-title">Không gian quản trị</span>':''}
       <a class="brand" href="${home}"><img class="brand-mark" src="/assets/images/ttnava-logo.png" alt="" width="44" height="44"> TTNAVA</a>
       <div class="topbar-user">
-        ${role==='student'?'<a class="btn btn-ghost btn-sm course-switch" href="/pages/student/courses/">Đổi khóa</a>':''}
+        ${role==='student'&&profile.course?.kind!=='chinese'?'<a class="btn btn-ghost btn-sm course-switch" href="/pages/student/courses/?switch=1">Đổi khóa</a>':''}
         ${role === 'student' ? '<span class="diamond-chip" id="diamond-chip" title="Kim cương của con">💎 <span>…</span></span>' : ''}
         ${role === 'student' ? studentAccount(profile, avatarUrl(profile.avatarKey), subtitle) : `<img class="avatar" src="${avatarUrl(profile.avatarKey)}" alt="Ảnh đại diện của ${escapeHtml(profile.displayName)}">
         <span class="user-meta"><strong>${escapeHtml(profile.displayName)}</strong><span>${subtitle}</span></span>
@@ -69,6 +69,7 @@ export async function initPage(role, active) {
   if(role==='student'){
     document.body.classList.add('student-unified');
     if(!document.querySelector('link[data-student-design]')){const style=document.createElement('link');style.rel='stylesheet';style.href='/assets/css/student-unified.css';style.dataset.studentDesign='true';document.head.append(style);}
+    if(!document.querySelector('link[data-student-chrome]')){const style=document.createElement('link');style.rel='stylesheet';style.href='/assets/css/student-chrome-3d.css';style.dataset.studentChrome='true';document.head.append(style);}
   }
   const payload = await api('/api/v1/auth/me');
   const profile = payload.data.profile;
@@ -84,12 +85,13 @@ export async function initPage(role, active) {
   if(role==='student')await courseProfile(profile,active);
   if(role==='student'){
     document.body.dataset.program=profile.course?.kind||'';
+    if(profile.course?.kind==='chinese'&&!document.querySelector('link[data-chinese-simple]')){const style=document.createElement('link');style.rel='stylesheet';style.href='/assets/css/chinese-simple.css';style.dataset.chineseSimple='true';document.head.append(style);}
+    if(profile.course?.kind==='chinese'&&!document.querySelector('link[data-chinese-3d]')){const style=document.createElement('link');style.rel='stylesheet';style.href='/assets/css/chinese-playful-3d.css';style.dataset.chinese3d='true';document.head.append(style);}
     if(!document.querySelector('link[data-experience-style]')){const style=document.createElement('link');style.rel='stylesheet';style.href='/assets/css/student-experience.css';style.dataset.experienceStyle='true';document.head.append(style);}
     import('./experience-ui.js').then(async({request,applyPreferences})=>applyPreferences(await request('/preferences'))).catch(()=>{});
   }
   renderHeader(profile, role, active);
   import('./learning-feedback.js').then(({setupFeedback})=>setupFeedback(profile)).catch(()=>{});
-  if(role==='student'&&profile.course?.kind==='chinese'&&['home','learning'].includes(active))import('./study-reminders.js').then(({showStudyReminders})=>showStudyReminders()).catch(()=>{});
   if(role==='student'||role==='admin')import('./chat-widget.js').then(({setupChat})=>setupChat(profile)).catch(()=>{});
   if (role === 'student') loadDiamonds();
   return profile;

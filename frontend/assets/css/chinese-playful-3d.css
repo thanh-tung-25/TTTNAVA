@@ -1,0 +1,111 @@
+/* Shared sculpted, pastel styling for Chinese lessons and study tools. */
+body[data-program=chinese].student-unified{--chinese-shadow:#e2d4ee;--chinese-ink:#50376d}
+body[data-program=chinese].student-unified .student-account-menu{max-height:calc(100dvh - 120px);overflow-y:auto}
+body[data-program=chinese].student-unified .student-account-study-tools{display:grid;gap:2px;border-block:1px solid #eee5f5;padding:8px 0}
+body[data-program=chinese].student-unified .student-account-study-tools a{display:flex;align-items:center;min-height:42px;padding:8px 10px;border-radius:10px;font-size:.82rem;color:#6b4c8e}
+body[data-program=chinese].student-unified .student-account-study-tools a:hover,body[data-program=chinese].student-unified .student-account-study-tools a[aria-current=page]{background:#f0e8fb}
+body[data-program=chinese].student-unified .chinese-pagebar{flex-wrap:nowrap;gap:16px;min-height:76px;padding:12px 16px;margin:0 0 24px;border:2px solid #fff;border-radius:22px;background:linear-gradient(110deg,#fffdfb,#f3eafb 75%,#fff3e5);box-shadow:inset 0 2px 0 #fff,0 5px 0 #e6d9ef,0 10px 20px #714d8a06}
+body[data-program=chinese].student-unified .chinese-pagebar .chinese-title{gap:12px;flex:1;min-width:0}
+.chinese-course-emblem{display:grid;place-items:center;flex:none;width:44px;height:46px;border:1px solid #d2bde9;border-radius:15px;background:linear-gradient(145deg,#f8f0ff,#d9bfef);box-shadow:inset 0 2px 0 #fff,0 4px 0 #baa0d3;font:800 26px/1 var(--font-display);color:#8052a9;text-shadow:0 1px 0 #fff}
+.chinese-course-meta{min-width:0}.chinese-course-caption{display:block;font-size:8px;font-weight:800;letter-spacing:.12em;line-height:1.4;color:#a48ab7;margin-bottom:4px}
+body[data-program=chinese].student-unified .chinese-pagebar h1{font-size:.95rem;font-weight:800;line-height:1.5;letter-spacing:0;color:#6b428c;margin:0}
+body[data-program=chinese].student-unified .chinese-course-back{display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;min-height:44px;border:1px solid #d9c6e9;border-radius:14px;background:linear-gradient(#fff,#f3e9fc);box-shadow:inset 0 2px 0 #fff,0 4px 0 #cdb5df;color:#80569f;font-size:.77rem;font-weight:700;white-space:nowrap;text-decoration:none;transition:transform .15s,box-shadow .15s}
+body[data-program=chinese].student-unified .chinese-course-back svg{flex:none}
+body[data-program=chinese].student-unified .chinese-course-back:hover{background:linear-gradient(#fff,#eadbf7);color:#684086}
+body[data-program=chinese].student-unified .chinese-course-back:active{transform:translateY(3px);box-shadow:inset 0 2px 0 #fff,0 1px 0 #cdb5df}
+body[data-program=chinese].student-unified .chinese-course-back:focus-visible{outline:3px solid #b898d5;outline-offset:4px}
+body[data-program=chinese].student-unified .chinese-course-hero{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 30px;margin-bottom:28px;border:2px solid #fff;border-radius:30px;background:linear-gradient(112deg,#eee4fc,#fff0e4);box-shadow:0 7px 0 #e5d7ec,0 14px 26px #6d45840b;position:relative;overflow:hidden}
+body[data-program=chinese].student-unified .chinese-hero-copy{position:relative;z-index:1;flex:1}
+.chinese-hero-eyebrow{font-size:.62rem;letter-spacing:.1em;font-weight:800;color:#9c7bb6}
+body[data-program=chinese].student-unified .chinese-course-hero h2{font:800 2rem/1.25 var(--font-display);color:#69419b;letter-spacing:-.03em;margin:8px 0}
+body[data-program=chinese].student-unified .chinese-course-hero p{font-size:.86rem;color:#826698;margin:0}
+.chinese-hero-hint{display:inline-block;font-size:.73rem;color:#987c9f;margin-top:10px}
+body[data-program=chinese].student-unified .chinese-course-mascot{width:174px;height:174px;object-fit:cover;flex:none;border:4px solid #fff8;border-radius:30px;box-shadow:0 8px 0 #e9cfd830;transform:rotate(3deg);animation:chinese-hello 5s ease-in-out 2}
+body[data-program=chinese].student-unified .chinese-lesson-list{gap:24px}
+body[data-program=chinese].student-unified .chinese-lesson-row.lesson-island{--lesson-soft:#f5effc;--lesson-edge:#dfd1ed;--lesson-accent:#8662bb;padding:22px;border:2px solid #fff;border-radius:26px;background:linear-gradient(145deg,#fff 45%,var(--lesson-soft));box-shadow:0 6px 0 var(--lesson-edge),0 14px 24px #73528509}
+body[data-program=chinese].student-unified .chinese-lesson-row[data-tone=peach]{--lesson-soft:#fff4e8;--lesson-edge:#efdfcd;--lesson-accent:#bd8957}
+body[data-program=chinese].student-unified .chinese-lesson-row[data-tone=mint]{--lesson-soft:#edf8f1;--lesson-edge:#d3e5da;--lesson-accent:#64977c}
+.chinese-lesson-heading{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+body[data-program=chinese].student-unified .chinese-lesson-heading h3{flex:1;min-width:0;margin:0;font-size:1.08rem;line-height:1.5;color:#58416e}
+.chinese-lesson-number{display:grid;place-items:center;width:36px;height:40px;flex:none;background:linear-gradient(#fff,var(--lesson-soft));border:1px solid var(--lesson-edge);border-radius:13px;box-shadow:inset 0 2px 0 #fff,0 4px 0 var(--lesson-edge);font:800 .9rem var(--font-display);color:var(--lesson-accent)}
+.chinese-lesson-companion{width:54px;height:58px;object-fit:contain;flex:none;filter:drop-shadow(0 5px 2px #634c731a)}
+body[data-program=chinese].student-unified .chinese-lesson-summary{font-size:.76rem;line-height:1.7;color:#93809e;margin-bottom:8px}
+body[data-program=chinese].student-unified .chinese-lesson-primary{gap:10px;margin-top:18px}
+body[data-program=chinese].student-unified .chinese-lesson-primary .btn{flex-direction:column;gap:7px;min-height:90px;font-size:.78rem;font-weight:700;border:1px solid #cdb6e9;box-shadow:inset 0 2px 0 #ffffff75,0 5px 0 #b99ad8;border-radius:17px;background:linear-gradient(#ab86df,#8256c7);color:#fff;transition:transform .15s,box-shadow .15s}
+body[data-program=chinese].student-unified .chinese-lesson-primary .btn:first-child{background:linear-gradient(#aa86e0,#8156c5);border-color:#9c76d4;box-shadow:inset 0 2px 0 #cfb9ef,0 5px 0 #644095}
+body[data-program=chinese].student-unified .chinese-lesson-primary .btn:nth-child(2){background:linear-gradient(#ffdda8,#ffc77e);border-color:#f0c18b;color:#8d6036;box-shadow:inset 0 2px 0 #fff1d9,0 5px 0 #d5a26a}
+body[data-program=chinese].student-unified .chinese-lesson-primary .btn:nth-child(3){background:linear-gradient(#cdf0df,#a6dcc4);border-color:#add8c2;color:#41775f;box-shadow:inset 0 2px 0 #effcf6,0 5px 0 #83b29c}
+.chinese-group-icon{display:grid;place-items:center;width:29px;height:29px;background:#ffffff50;border:1px solid #fff6;border-radius:10px;font-size:20px;font-weight:700;line-height:1;box-shadow:inset 0 1px 0 #fff9,0 2px 0 #5e427311}
+body[data-program=chinese].student-unified .chinese-lesson-primary .btn[aria-expanded=true]{transform:translateY(3px);outline:0;box-shadow:inset 0 2px 0 #fff7,0 2px 0 var(--lesson-accent)}
+body[data-program=chinese].student-unified .chinese-lesson-primary .btn:focus-visible{outline:3px solid #b596dc;outline-offset:4px}
+body[data-program=chinese].student-unified .chinese-lesson-primary .btn:disabled{background:linear-gradient(#f7f4f9,#eeeaf2);border-color:#e6dfeb;color:#aa9eb2;box-shadow:inset 0 2px 0 #fff,0 4px 0 #e2dbe9}
+body[data-program=chinese].student-unified .chinese-lesson-primary .btn:disabled .chinese-group-icon{opacity:.5}
+body[data-program=chinese].student-unified .chinese-lesson-tools{margin-top:18px;border-color:#e4d7f0;background:#fbf7ff;box-shadow:inset 0 2px 3px #72508706}
+body[data-program=chinese].student-unified .chinese-lesson-tools .btn{background:linear-gradient(#fff,#fcf9ff);border-color:#e6dcee;box-shadow:0 3px 0 #e8e0ef;border-radius:11px}
+/* Match the same material treatment inside cards, quizzes, speaking and the street. */
+body[data-program=chinese].student-unified :is(.study-back,.study-menu>summary){background:linear-gradient(#fff,#f2eafa);box-shadow:inset 0 2px 0 #fff,0 4px 0 #dfd0ed;border-radius:15px}
+body[data-program=chinese].student-unified .study-modes{background:linear-gradient(#f3eafb,#eae0f5);border:1px solid #deceed;box-shadow:inset 0 2px 0 #fff9,0 4px 0 #ddcfe9;padding:7px;border-radius:18px}
+body[data-program=chinese].student-unified .study-modes .btn[aria-current=page]{background:linear-gradient(#fff,#fcf7ff);box-shadow:0 3px 0 #dfd1ec;border-radius:12px}
+body[data-program=chinese].student-unified .flashcard{border:2px solid #fff;border-radius:30px;background:linear-gradient(145deg,#fffdf8,#f5ecff);box-shadow:inset 0 3px 0 #fff,0 9px 0 #d8c3e9,0 18px 28px #76519b0c}
+body[data-program=chinese].student-unified .flashcard[aria-pressed=true]{background:linear-gradient(145deg,#fffdf8,#f5ecff);box-shadow:inset 0 3px 0 #fff,0 9px 0 #d8c3e9,0 18px 28px #76519b0c}
+body[data-program=chinese].student-unified .hub-table-wrap{border:1px solid #e6d9f0;border-radius:20px;background:#fff;box-shadow:0 5px 0 #e6dbef}
+body[data-program=chinese].student-unified .hub-table th{background:#f4ecfb;color:#765190;font-size:.82rem}
+body[data-program=chinese].student-unified :is(.speaking-hero,.voice-hero,.street-hero,.listening-hero){border:2px solid #fff;border-radius:28px;background:linear-gradient(115deg,#f1e7fd,#fff1dd);box-shadow:0 6px 0 #e3d4eb,0 14px 24px #65437b08}
+body[data-program=chinese].student-unified :is(.speaking-hero,.voice-hero,.street-hero)>img{filter:drop-shadow(0 7px 3px #755b7d1a)}
+body[data-program=chinese].student-unified :is(.speaking-studio .card,.voice-setup-card,.voice-call,.voice-ended,.street-station,.question-card,.listening-question,.listening-result){border:2px solid #fff;background:linear-gradient(145deg,#fff,#fdf9ff);box-shadow:0 6px 0 #e5d8ee,0 14px 24px #65437b08;border-radius:25px}
+body[data-program=chinese].student-unified .quiz-option{box-shadow:0 3px 0 #e9e0f0;border-color:#e4d8ed;border-radius:16px}
+body[data-program=chinese].student-unified .quiz-option.selected{background:linear-gradient(#f3e9ff,#ebe0f8);border-color:#b998db}
+body[data-program=chinese].student-unified .quiz-jump button{box-shadow:inset 0 2px 0 #fff9,0 3px 0 #ddcde9;border-radius:13px;background:linear-gradient(#fff,#f7f0fd)}
+body[data-program=chinese].student-unified .quiz-jump .done{background:linear-gradient(#edf9ec,#d9efd9);box-shadow:0 3px 0 #bedbbd}
+body[data-program=chinese].student-unified .quiz-jump .incorrect{background:linear-gradient(#fff1ef,#f7dfdc);box-shadow:0 3px 0 #eac4c1}
+/* Listening stage selector: independent sets of up to ten vocabulary words. */
+.listening-app{margin:16px 0 30px;min-width:0}
+.listening-hero{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px 28px;margin-bottom:24px}
+.listening-hero h2{font:800 1.65rem/1.3 var(--font-display);color:#694a87;margin:8px 0}
+.listening-hero p{font-size:.83rem;line-height:1.7;color:#91799f;margin:0}
+.listening-hero>img{object-fit:contain;flex:none}
+.listening-stage-map{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:14px;padding:4px 0}
+.listening-stage{display:flex;align-items:center;flex-direction:column;gap:9px;min-height:150px;padding:18px 12px;border:1px solid #e0d2ed;border-radius:23px;background:linear-gradient(145deg,#fff,#f3ebfc);box-shadow:inset 0 2px 0 #fff,0 5px 0 #ddd0ea;color:#81619d;cursor:pointer;font:inherit}
+.listening-stage-orb{display:grid;place-items:center;width:48px;height:48px;border:2px solid #fff;border-radius:18px;background:linear-gradient(#d9c0f7,#ae88d9);box-shadow:0 4px 0 #9f7cc1;font:800 1.25rem var(--font-display);color:#fff}
+.listening-stage strong{font-size:.9rem}.listening-stage small{font-size:.7rem;line-height:1.6;color:#9b86aa}
+.listening-stage[aria-pressed=true]{border:2px solid #b698d8;background:linear-gradient(#fcf8ff,#f0e5fb)}
+.listening-stage.is-complete .listening-stage-orb{background:linear-gradient(#c3e8d0,#8bbd9f);box-shadow:0 4px 0 #719f83}
+.listening-stage:focus-visible{outline:3px solid #bea1dc;outline-offset:4px}
+.listening-start{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px;margin:0 0 18px;position:sticky;top:92px;z-index:10;background:#fffdfb;border:1px solid #e5d9ee;border-radius:17px;box-shadow:0 4px 0 #e5d9ee}
+.listening-start p{font-size:.85rem;line-height:1.7;color:#856c97;margin:0}.listening-start .btn{flex:none}
+.listening-note{font-size:.75rem;line-height:1.8;color:#a28ead;margin:12px 0}
+.listening-round-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:15px 0;color:#9277a5;font-size:.8rem}
+.listening-question .quiz-prompt{margin-top:0}
+.listening-question [role=status]{font-size:.95rem;line-height:1.8;color:#55795e}
+.listening-result{text-align:center;padding:28px}.listening-result>img{display:block;margin:auto}.listening-result h3{font-size:1.4rem;color:#6b4b86}
+.listening-result-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}
+@media(min-width:1200px){body[data-program=chinese].student-unified .chinese-lesson-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+ body[data-program=chinese].student-unified .chinese-pagebar{padding:10px 11px;gap:10px;min-height:68px;border-radius:18px;margin-bottom:22px}
+ body[data-program=chinese].student-unified .chinese-pagebar .chinese-title{gap:8px}
+ .chinese-course-emblem{width:32px;height:37px;border-radius:12px;font-size:23px}
+ .chinese-course-caption{font-size:7px;letter-spacing:.07em;margin-bottom:3px}
+ body[data-program=chinese].student-unified .chinese-pagebar h1{font-size:.79rem;line-height:1.45}
+ body[data-program=chinese].student-unified .chinese-course-back{font-size:.68rem;gap:5px;padding:9px 10px;border-radius:12px}
+ body[data-program=chinese].student-unified .chinese-course-back svg{width:15px;height:15px}
+ body[data-program=chinese].student-unified .chinese-course-hero{padding:18px 16px;gap:10px;border-radius:23px;margin-bottom:24px}
+ body[data-program=chinese].student-unified .chinese-course-hero h2{font-size:1.5rem}
+ body[data-program=chinese].student-unified .chinese-course-hero p{font-size:.73rem}
+ body[data-program=chinese].student-unified .chinese-course-mascot{width:106px;height:114px;border-radius:22px;border-width:3px}
+ .chinese-hero-eyebrow{font-size:.5rem;letter-spacing:.055em}.chinese-hero-hint{font-size:.65rem;margin-top:7px}
+ body[data-program=chinese].student-unified .chinese-lesson-row.lesson-island{padding:17px;border-radius:24px}
+ .chinese-lesson-heading{gap:9px;margin-bottom:12px}
+ body[data-program=chinese].student-unified .chinese-lesson-heading h3{font-size:.95rem}
+ .chinese-lesson-number{width:30px;height:35px;border-radius:11px;font-size:.8rem}
+ .chinese-lesson-companion{width:43px;height:48px}
+ body[data-program=chinese].student-unified .chinese-lesson-primary{gap:7px;margin-top:15px}
+ body[data-program=chinese].student-unified .chinese-lesson-primary .btn{font-size:.7rem;padding:9px 4px;min-height:84px;border-radius:14px;gap:6px}
+ .chinese-group-icon{width:26px;height:26px;font-size:18px;border-radius:9px}
+ .listening-hero{padding:18px;gap:10px}.listening-hero h2{font-size:1.3rem}.listening-hero p{font-size:.73rem}.listening-hero>img{width:65px;height:77px}
+ .listening-stage-map{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.listening-stage{padding:16px 10px;min-height:140px}
+ .listening-start{gap:10px;padding:10px 12px;top:84px}.listening-start .btn{font-size:.75rem;padding:10px 12px}.listening-start p{font-size:.75rem}
+ .listening-result-actions .btn{flex:1;min-width:120px}
+}
+@keyframes chinese-hello{0%,70%,100%{transform:rotate(3deg)}80%{transform:rotate(0) translateY(-4px)}90%{transform:rotate(5deg) translateY(-3px)}}
+@media(hover:hover){body[data-program=chinese].student-unified .chinese-lesson-primary .btn:not(:disabled):not([aria-expanded=true]):hover{transform:translateY(-2px)}.chinese-lesson-row:hover .chinese-lesson-companion{transform:rotate(-4deg)}}
+@media(prefers-reduced-motion:reduce){body[data-program=chinese].student-unified .chinese-course-mascot{animation:none}.chinese-lesson-companion{transition:none}}

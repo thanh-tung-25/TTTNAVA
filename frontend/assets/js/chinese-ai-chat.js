@@ -1,87 +1,129 @@
 import {el,link,field,request} from './chinese-common.js';
+import {api} from './api.js';
 import {createChatAudio} from './chinese-ai-chat-audio.js';
 import {chatScenarios} from './chinese-ai-chat-data.js';
-// All conversation styles are scoped to this feature.
-if(!document.querySelector('link[data-ai-chat-style]'))document.head.append(el('link',{rel:'stylesheet',href:'/assets/css/chinese-ai-chat.css','data-ai-chat-style':''}));
-const btn=(text,fn,primary=false)=>el('button',{type:'button',class:'btn '+(primary?'btn-primary':'btn-secondary'),text,onclick:fn});
-const paragraph=(text,className='')=>el('p',{class:className,text});
-function summaryCard(summary,{preview=false,report=false,turns=0}={}){
- const box=el('section',{class:'ai-chat-summary'},[el('span',{class:'ai-chat-tag',text:'BUỔI LUYỆN CỦA BẠN'}),el('h3',{text:turns?'Mỗi câu nói là một bước tiến':'Hẹn bạn ở buổi luyện tiếp theo'}),paragraph(summary?.feedback||'Buổi này chưa có câu trả lời để nhận xét.')]);
- if(summary?.strengths?.length)box.append(el('h4',{text:'Bạn đã làm tốt'}),el('ul',{},summary.strengths.map(s=>el('li',{text:s}))));
- if(summary?.errors?.length){box.append(el('h4',{text:'Cùng sửa một chút'}));for(const error of summary.errors)box.append(el('div',{class:'ai-chat-correction'},[paragraph(error.original,'ai-chat-original'),paragraph('→ '+error.suggestion,'ai-chat-corrected'),paragraph(error.explanation)]));}
- if(summary?.practice_words?.length)box.append(el('h4',{text:'Từ nên ôn lại'}),el('div',{class:'ai-chat-chips'},summary.practice_words.map(w=>el('span',{text:w,lang:'zh-CN'}))));
- box.append(paragraph(report?'Nhận xét từ nội dung chữ; cô xem xét lại khi cần. Không có bản ghi âm trong báo cáo.':preview?'Đây là buổi thử của admin, không đưa vào kết quả học sinh.':turns?'Đã gửi tổng kết cho cô. Nhận xét dựa trên chữ nhận diện; cô sẽ xem xét lại khi cần.':'Chưa gửi nhận xét cho cô vì chưa có câu trả lời.','ai-chat-footnote'));return box;
-}
+const p=(text,className='')=>el('p',{class:className,text});
+const button=(text,action,primary=false)=>el('button',{type:'button',class:'btn '+(primary?'btn-primary':'btn-secondary'),text,onclick:action});
 export async function renderChineseAiChat(host,{role='student',level=1}={}){
- const admin=role==='admin';let meta,selected,session,busy=false,audioState='idle',draft,draftUrl,pending,startId=crypto.randomUUID(),disposed=false;
- const params=new URLSearchParams(location.search),panel=el('div',{class:'ai-chat-app'}),alert=paragraph('','ai-chat-alert');alert.setAttribute('role','status');alert.setAttribute('aria-live','polite');
- const content=el('div'),footer=el('div',{class:'ai-chat-footer'},[link('← Về bài học',{level},role)]);host.append(panel);panel.append(content,alert,footer);
- const showError=e=>{alert.textContent=e.message;};
- const media=createChatAudio({onError:showError,onVoices:voices=>{panel.dataset.voice=voices.length?'ready':'missing';},onState:(state,seconds)=>{audioState=state;const rec=panel.querySelector('[data-record]');if(rec)rec.textContent=state==='recording'?`■ Dừng ghi · ${seconds}/20 giây`:state==='permission'?'Đang mở micro…':state==='preparing'?'Đang chuẩn bị…':'● Ghi âm trả lời';updateDisabled();},onDraft:blob=>{clearDraft();draft=blob;draftUrl=URL.createObjectURL(blob);renderDraft();updateDisabled();}});
- function clearDraft(){if(draftUrl)URL.revokeObjectURL(draftUrl);draftUrl=null;draft=null;panel.querySelector('[data-draft]')?.replaceChildren();}
- function renderDraft(){const area=panel.querySelector('[data-draft]');if(!area||!draft)return;const retry=btn('Ghi lại',()=>{clearDraft();updateDisabled();media.start();});retry.dataset.action='';area.replaceChildren(paragraph('Nghe lại trước khi gửi'),el('audio',{controls:true,src:draftUrl,'aria-label':'Bản ghi câu trả lời'}),retry);}
- function updateDisabled(){
-  const recording=audioState==='recording',locked=busy||!['idle','recording'].includes(audioState);
-  panel.querySelectorAll('[data-action]').forEach(b=>{b.disabled=locked||recording;});
-  const rec=panel.querySelector('[data-record]');if(rec)rec.disabled=locked||Boolean(pending);
-  const text=panel.querySelector('[data-answer]');if(text)text.disabled=locked||recording||Boolean(draft)||Boolean(pending);
-  const send=panel.querySelector('[data-send]');if(send){send.disabled=locked||recording||(!draft&&!text?.value.trim()&&!pending);send.textContent=busy?'AI đang lắng nghe…':pending?'Thử gửi lại':'Gửi câu trả lời →';}
+ if(!document.querySelector('link[data-ai-chat-style]'))document.head.append(el('link',{rel:'stylesheet',href:'/assets/css/chinese-ai-chat.css','data-ai-chat-style':''}));
+ const admin=role==='admin',params=new URLSearchParams(location.search),app=el('div',{class:'ai-voice-app'}),main=el('div'),notice=p('','voice-notice');
+ notice.setAttribute('role','status');notice.setAttribute('aria-live','polite');
+ app.append(main,notice,el('footer',{class:'voice-footer'},[link('← Về bài học',{level},role)]));host.append(app);
+ let meta,selected,session=null,reply=null,pending=null,inflight=false,active=false,disposed=false,phase='setup',message='',timer,controller,textMode=false,starting=false,needsTextVoice=false,conversationEpoch=0;
+ const audio=createChatAudio({onState:(state,seconds)=>{if(!session||disposed)return;if(state==='preparing')setPhase('processing','Mình đang nghe câu bạn vừa nói…');else if(active)setPhase('listening',seconds?'Bạn đang nói · '+seconds+'/20 giây':'Đến lượt bạn. Cứ nói tự nhiên nhé.');},onTurn:blob=>{if(!active||disposed||!session)return;pending={id:crypto.randomUUID(),turn:session.turn_count+1,blob,state:session.state};sendPending();},onError:error=>pause(error.message),onIdle:reason=>pause(reason)});
+ const tell=error=>{notice.textContent=error.message||String(error);};
+ const header=()=>el('header',{class:'voice-hero'},[el('div',{},[el('span',{class:'voice-eyebrow',text:admin?'THIẾT KẾ CHỦ ĐỀ TRÒ CHUYỆN':'NGHE · NÓI · CÙNG NHAU TIẾP CHUYỆN'}),el('h2',{text:'Nói chuyện với Sư tử AI'}),p(admin?'Soạn chủ đề rồi thử nói chuyện như học sinh.':'Một người bạn cùng bạn nói tiếng Trung mỗi ngày.')]),el('img',{src:'/assets/images/mascot-lion.svg',alt:'Sư tử AI',width:95,height:106})]);
+ const names={setup:'Sẵn sàng trò chuyện',connecting:'Đang kết nối',listening:'Đang nghe bạn',processing:'AI đang suy nghĩ',speaking:'AI đang nói',paused:'Đã tạm dừng',ended:'Hẹn bạn lần sau'};
+ function setPhase(next,description=''){phase=next;message=description;app.dataset.phase=next;const status=main.querySelector('[data-voice-status]'),hint=main.querySelector('[data-voice-hint]');if(status&&status.textContent!==names[next])status.textContent=names[next];if(hint)hint.textContent=description;updateControls();}
+ function updateControls(){
+  const pauseButton=main.querySelector('[data-pause]');if(pauseButton){pauseButton.textContent=active?'Ⅱ Tạm dừng':pending?'▶ Thử lại':textMode?'● Bật micro':'▶ Tiếp tục';pauseButton.disabled=starting||!session;}
+  const done=main.querySelector('[data-done]');if(done)done.disabled=phase!=='listening';
+  main.querySelectorAll('[data-replay]').forEach(b=>{b.disabled=inflight;});
+  const input=main.querySelector('[data-text]'),send=main.querySelector('[data-text-send]');if(input)input.disabled=inflight;if(send)send.disabled=inflight||!input?.value.trim();
+  const remaining=main.querySelector('[data-voice-time]');if(remaining&&session){const secs=Math.max(0,Math.ceil((new Date(session.expires_at)-Date.now())/1000));remaining.textContent=String(Math.floor(secs/60)).padStart(2,'0')+':'+String(secs%60).padStart(2,'0');}
  }
  async function refresh(){meta=await request('/ai-chat?level='+level);selected=meta.lessons.find(l=>l.id===(selected?.id||params.get('lesson')))||meta.lessons[0];}
- function header(){return el('header',{class:'ai-chat-hero'},[el('div',{},[el('span',{class:'ai-chat-tag',text:admin?'GÓC SOẠN HỘI THOẠI':'MỖI NGÀY MỘT CUỘC TRÒ CHUYỆN'}),el('h2',{text:'Cùng Sư tử nói tiếng Trung'}),paragraph(admin?'Soạn đúng bài, xem như học sinh và theo dõi tổng kết.':'Nghe một câu, nói một câu. Sư tử sẽ cùng bạn tiếp nối câu chuyện.')]),el('img',{src:'/assets/images/mascot-lion.svg',alt:'Sư tử đồng hành',width:126,height:138})]);}
  function renderSetup(){
-  session=null;media.stopSpeaking();content.replaceChildren(header());
-  const grid=el('div',{class:'ai-chat-setup-grid'}),setup=el('section',{class:'ai-chat-card'}),aside=el('aside',{class:'ai-chat-card ai-chat-how'});content.append(grid);grid.append(setup,aside);
-  if(!meta.lessons.length){setup.append(el('h3',{text:'Cấp này đang chuẩn bị bài học'}),paragraph('Cô cần xuất bản một bài học trước khi mở hội thoại.'));return;}
-  const chooser=field(admin?'Chọn bài để soạn':'Hôm nay bạn muốn luyện bài nào?','lesson',selected.id,'text',meta.lessons.map(l=>[l.id,l.title]));
-  chooser.querySelector('select').addEventListener('change',e=>{selected=meta.lessons.find(l=>l.id===e.target.value);params.set('lesson',selected.id);history.replaceState(null,'','?'+params);startId=crypto.randomUUID();renderSetup();});setup.append(chooser);
-  const scenario=chatScenarios.find(s=>s.id===selected.settings.scenario_id);setup.append(el('div',{class:'ai-chat-scene'},[el('span',{class:'ai-chat-scene-icon',text:scenario.icon,'aria-hidden':'true'}),el('div',{},[el('h3',{text:scenario.title}),paragraph(selected.settings.goal)])]));
-  const begin=btn(admin?'▶ Thử như học sinh':'Bắt đầu trò chuyện →',async()=>{
-   alert.textContent='';begin.disabled=true;
-   try{session=await request('/ai-chat/sessions','POST',{lesson_id:selected.id,request_id:startId});clearDraft();pending=null;renderConversation();media.speak(session.reply.reply_zh);}catch(e){showError(e);}finally{begin.disabled=false;}
-  },true);begin.disabled=!meta.configured||(!admin&&!selected.settings.enabled)||meta.remaining===0;
-  setup.append(paragraph(`${meta.remaining}/${meta.limits.daily} buổi còn lại hôm nay · Tối đa ${selected.settings.max_turns} câu trả lời/buổi`,'ai-chat-quota'),begin);
-  if(!meta.configured)setup.append(paragraph(meta.reason,'ai-chat-alert'));else if(!selected.settings.enabled&&!admin)setup.append(paragraph('Cô đang chuẩn bị tình huống của bài này. Con chọn bài khác nhé.'));
-  aside.append(el('h3',{text:'Một góc nhỏ để tự tin hơn'}),el('ol',{},['Nghe Sư tử hỏi bằng tiếng Trung.','Bấm micro hoặc gõ câu trả lời.','Kết thúc và xem điều mình đã làm tốt.'].map(t=>el('li',{text:t}))),paragraph('Chữ, bản dịch và gợi ý chỉ hiện khi bạn chủ động mở.','ai-chat-footnote'),paragraph('Ghi âm tối đa 20 giây/lượt. Web không lưu bản ghi âm; âm thanh chỉ gửi tới Groq khi bạn bấm Gửi. Kết thúc buổi, cô nhận tổng kết bằng chữ.','ai-chat-footnote'));
-  if(admin)renderTeacher(setup);
+  clearInterval(timer);main.replaceChildren(header());
+  if(!selected){main.append(p('Cấp này chưa có chủ đề trò chuyện. Bạn quay lại bài học nhé.'));return;}
+  const card=el('section',{class:'voice-setup-card'}),choice=field('Bạn muốn nói chuyện về bài nào?','lesson',selected.id,'text',meta.lessons.map(l=>[l.id,l.title]));
+  choice.querySelector('select').onchange=e=>{selected=meta.lessons.find(l=>l.id===e.target.value);params.set('lesson',selected.id);history.replaceState(null,'','?'+params);notice.textContent='';renderSetup();};
+  const topic=chatScenarios.find(s=>s.id===selected.settings.scenario_id);
+  card.append(choice,el('div',{class:'voice-topic'},[el('span',{text:topic.icon,'aria-hidden':'true'}),el('div',{},[el('h3',{text:topic.title}),p(selected.settings.goal)])]),p('Bấm bắt đầu một lần. Bạn nói xong, Sư tử sẽ tự trả lời.','voice-intro'));
+  const start=button('● Bắt đầu trò chuyện',()=>startConversation(true),true);start.dataset.start='';
+  const reusable=meta.active?.lesson_id===selected.id&&meta.active.turn_count<meta.limits.turns;
+  start.disabled=!meta.configured||(!admin&&!selected.settings.enabled)||(!meta.remaining&&!reusable);
+  const keyboard=button('Dùng bàn phím thay micro',()=>startConversation(false));keyboard.disabled=start.disabled;
+  card.append(start,keyboard,p('Tối đa 5 phút/buổi · '+meta.remaining+'/'+meta.limits.daily+' buổi mới còn lại hôm nay.','voice-small'),p('Không lưu lịch sử hội thoại. Không chấm điểm hoặc gửi giáo viên.','voice-privacy'));
+  if(!meta.configured)card.append(p(meta.reason,'voice-unavailable'));
+  if(!admin&&!selected.settings.enabled)card.append(p('Chủ đề này đang được chuẩn bị. Bạn chọn bài khác nhé.','voice-unavailable'));
+  main.append(card);if(admin)renderTeacher(card);
  }
- function renderTeacher(setup){
-  const details=el('details',{class:'ai-chat-teacher',open:true},[el('summary',{text:'✎ Soạn tình huống cho bài này'})]),form=el('form'),s=selected.settings;
-  const enabled=el('input',{type:'checkbox',name:'enabled'});enabled.checked=s.enabled;form.append(el('label',{class:'ai-chat-enable'},[enabled,'Cho học sinh luyện tình huống này']));
-  const scenario=field('Tình huống','scenario_id',s.scenario_id,'text',chatScenarios.map(v=>[v.id,v.icon+' '+v.title]));
-  form.append(scenario,field('Mục tiêu giao tiếp','goal',s.goal,'textarea'),field('Câu mở đầu bằng tiếng Trung','opening',s.opening,'textarea'),field('Nghĩa câu mở đầu (chỉ hiện khi bấm dịch)','translation',s.translation,'textarea'),field('Từ cần luyện (ngăn cách bằng dấu phẩy)','required_words',s.required_words.join(', '),'textarea'),field('Số câu trả lời trong một buổi','max_turns',s.max_turns,'number'));
-  for(const [name,max]of [['goal',350],['opening',200],['translation',300],['required_words',800]])form.elements[name].maxLength=max;form.elements.max_turns.min=2;form.elements.max_turns.max=10;
-  scenario.querySelector('select').onchange=e=>{const item=chatScenarios.find(v=>v.id===e.target.value);for(const key of ['goal','opening','translation'])form.elements[key].value=item[key];};
-  const save=el('button',{type:'submit',class:'btn btn-primary',text:'Lưu tình huống'});form.append(save,paragraph('Lưu xong, bấm “Thử như học sinh” để xem câu hỏi sẽ xuất hiện ở đâu. Buổi thử không đưa vào báo cáo học sinh.','ai-chat-footnote'));
-  form.onsubmit=async e=>{e.preventDefault();save.disabled=true;try{const data=Object.fromEntries(new FormData(form));await request('/ai-chat/lessons/'+selected.id,'PUT',{...data,enabled:enabled.checked,required_words:data.required_words.split(/[,，\n]/).map(v=>v.trim()).filter(Boolean),max_turns:Number(data.max_turns)});await refresh();renderSetup();alert.textContent='Đã lưu. Học sinh sẽ thấy tình huống vừa soạn.';}catch(e){showError(e);}finally{save.disabled=false;}};details.append(form);setup.append(details);
-  const reports=el('details',{class:'ai-chat-reports'},[el('summary',{text:'☷ Tổng kết học sinh gửi về'})]),out=el('div');reports.append(out);content.append(reports);
-  reports.addEventListener('toggle',async()=>{if(!reports.open)return;out.textContent='Đang tải tổng kết…';try{const rows=await request('/ai-chat/results?level='+level);out.replaceChildren();if(!rows.length)out.append(paragraph('Chưa có buổi trò chuyện hoàn thành. Tổng kết sẽ xuất hiện tại đây khi học sinh kết thúc.'));for(const row of rows){const item=el('details',{class:'ai-chat-report'},[el('summary',{text:`${row.display_name||row.username} · ${row.lesson_title} · ${row.turn_count} lượt · ${new Date(row.created_at).toLocaleString('vi-VN')}`})]);item.append(summaryCard(row.summary,{report:true,turns:row.turn_count}));out.append(item);}}catch(e){out.textContent=e.message;}});
+ function renderTeacher(card){
+  const details=el('details',{class:'voice-teacher'},[el('summary',{text:'✎ Sửa chủ đề trò chuyện'})]),form=el('form'),s=selected.settings,enabled=el('input',{type:'checkbox',name:'enabled'});enabled.checked=s.enabled;
+  form.append(el('label',{class:'voice-enable'},[enabled,'Mở chủ đề này cho học sinh']));
+  const scenario=field('Tình huống','scenario_id',s.scenario_id,'text',chatScenarios.map(t=>[t.id,t.icon+' '+t.title]));
+  form.append(scenario,field('Mục tiêu và bối cảnh','goal',s.goal,'textarea'),field('Câu mở đầu tiếng Trung','opening',s.opening,'textarea'),field('Nghĩa câu mở đầu (chỉ hiện khi mở dịch)','translation',s.translation,'textarea'),field('Từ gợi ý cho AI (cách nhau bằng dấu phẩy)','required_words',s.required_words.join(', '),'textarea'));
+  for(const [name,max]of [['goal',350],['opening',200],['translation',300],['required_words',800]])form.elements[name].maxLength=max;
+  scenario.querySelector('select').onchange=e=>{const item=chatScenarios.find(t=>t.id===e.target.value);for(const k of ['goal','opening','translation'])form.elements[k].value=item[k];};
+  const save=el('button',{type:'submit',class:'btn btn-primary',text:'Lưu chủ đề'});form.append(save,p('Học sinh được hỏi và kể chuyện tự nhiên theo chủ đề. Buổi trò chuyện không tạo báo cáo cho cô.','voice-small'));
+  form.onsubmit=async e=>{e.preventDefault();save.disabled=true;try{const d=Object.fromEntries(new FormData(form));await request('/ai-chat/lessons/'+selected.id,'PUT',{...d,enabled:enabled.checked,required_words:d.required_words.split(/[,，\n]/).map(t=>t.trim()).filter(Boolean),max_turns:s.max_turns});await refresh();renderSetup();notice.textContent='Đã lưu chủ đề.';}catch(e){tell(e);}finally{save.disabled=false;}};
+  details.append(form);card.append(details);
  }
- function renderConversation(){
-  if(!session||disposed)return;clearDraft();content.replaceChildren(header());
-  if(session.status!=='active'){content.append(summaryCard(session.summary,{preview:session.is_preview,turns:session.turn_count}),btn('Về chọn bài',async()=>{try{await refresh();startId=crypto.randomUUID();renderSetup();}catch(e){showError(e);}},true));return;}
-  const room=el('section',{class:'ai-chat-room'}),progress=el('div',{class:'ai-chat-progress'},[el('span',{text:session.lesson_title}),el('strong',{text:`${session.turn_count}/${session.max_turns} câu trả lời`})]);room.append(progress);
-  if(session.is_preview)room.append(paragraph('Chế độ admin thử bài · Không ghi vào báo cáo học sinh','ai-chat-preview'));
-  const bubble=el('div',{class:'ai-chat-bubble'},[el('span',{class:'ai-chat-tag',text:'SƯ TỬ ĐANG HỎI BẠN'}),el('h3',{text:'Lắng nghe rồi trả lời nhé'}),el('div',{class:'ai-chat-wave','aria-hidden':'true'},Array.from({length:7},()=>el('i')))]),tools=el('div',{class:'ai-chat-tools'});
-  for(const [label,slow]of [['▶ Nghe lại',false],['▷ Nghe chậm',true]]){const b=btn(label,()=>media.speak(session.reply.reply_zh,slow));b.dataset.action='';tools.append(b);}bubble.append(tools);
-  for(const [label,text,lang]of [['Hiện chữ tiếng Trung',session.reply.reply_zh,'zh-CN'],['Dịch nghĩa khi cần',session.reply.translation_vi,'vi'],['Gợi ý khi bí',session.reply.hint_zh,'zh-CN']]){if(!text)continue;const d=el('details',{class:'ai-chat-help'},[el('summary',{text:label}),paragraph(text)]);d.lastElementChild.lang=lang;bubble.append(d);}room.append(bubble);
-  if(session.transcript)room.append(el('details',{class:'ai-chat-recognized'},[el('summary',{text:'Câu vừa trả lời / AI đã nghe được'}),el('p',{text:session.transcript,lang:'zh-CN'}),paragraph('Nhận diện có thể sai. Nếu cần, hãy nói rõ lại trong câu trả lời tiếp theo.','ai-chat-footnote')]));
-  const composer=el('form',{class:'ai-chat-composer'}),label=el('label',{class:'chinese-field'},[el('span',{text:'Đến lượt bạn'}),el('textarea',{'data-answer':'',rows:2,maxlength:400,placeholder:'Gõ câu trả lời tiếng Trung hoặc dùng micro…',lang:'zh-CN'})]);label.lastElementChild.oninput=()=>{alert.textContent='';updateDisabled();};composer.append(label);
-  const controls=el('div',{class:'ai-chat-compose-actions'}),record=btn('● Ghi âm trả lời',()=>{alert.textContent='';if(audioState==='recording')media.stop();else{clearDraft();media.start();}});record.dataset.record='';
-  const send=el('button',{type:'submit',class:'btn btn-primary','data-send':'',text:'Gửi câu trả lời →'});controls.append(record,send);composer.append(controls,el('div',{'data-draft':'',class:'ai-chat-draft'}),paragraph('Nói tối đa 20 giây. Nghe lại bản ghi rồi bấm Gửi; chưa gửi thì âm thanh chỉ ở trong trang này.','ai-chat-footnote'));composer.onsubmit=async e=>{e.preventDefault();await submitAnswer();};room.append(composer);
-  const finish=btn('Kết thúc & gửi tổng kết cho cô',async()=>{if(busy||audioState!=='idle')return;busy=true;updateDisabled();media.stopSpeaking();alert.textContent='';try{session=await request('/ai-chat/sessions/'+session.id+'/finish','POST',{});pending=null;renderConversation();}catch(e){showError(e);}finally{busy=false;updateDisabled();}});finish.dataset.action='';room.append(finish,paragraph('Buổi luyện tối đa 30 phút. Nếu rời trang, bạn có thể quay lại tiếp tục buổi còn hạn.','ai-chat-footnote'));content.append(room);updateDisabled();room.scrollIntoView({block:'start'});
+ async function startConversation(useMic){
+  if(starting||disposed)return;starting=true;notice.textContent='';textMode=!useMic;needsTextVoice=false;setPhase('connecting');
+  main.querySelectorAll('button,select').forEach(b=>b.disabled=true);
+  try{
+   if(useMic&&!await audio.open())throw Error('Chưa mở được micro. Bạn thử lại khi trang đang mở nhé.');
+   const next=await request('/ai-chat/sessions','POST',{lesson_id:selected.id,request_id:crypto.randomUUID()});if(disposed){audio.pause();return;}
+   conversationEpoch++;session=next;reply=next.reply;pending=null;active=useMic&&!document.hidden;starting=false;renderCall();timer=setInterval(()=>{updateControls();if(session&&Date.now()>=new Date(session.expires_at).getTime())endConversation('Buổi trò chuyện đã hết thời gian. Hẹn bạn lần sau nhé!');},1000);
+   if(next.status!=='active'){endConversation();return;}
+   if(active)await speakAndListen();else setPhase('paused',useMic?'Micro đã tắt khi bạn rời màn hình. Bấm Tiếp tục để mở lại.':'Bạn nhập chữ bên dưới, hoặc bấm Bật micro để nói chuyện.');
+  }catch(e){active=false;audio.pause();starting=false;setPhase('setup');renderSetup();tell(e);}finally{starting=false;}
  }
- async function submitAnswer(){
-  if(busy||audioState!=='idle'||!session)return;const answer=panel.querySelector('[data-answer]');if(!pending&&!draft&&!answer?.value.trim())return;
-  if(!pending)pending={id:crypto.randomUUID(),turn:session.turn_count+1,blob:draft,text:draft?null:answer.value.trim()};busy=true;alert.textContent='';media.stopSpeaking();updateDisabled();
-  try{const body=pending.blob?new FormData():{text:pending.text};if(pending.blob)body.append('audio',pending.blob,'answer.wav');session=await request(`/ai-chat/sessions/${session.id}/turns/${pending.turn}/${pending.id}/${pending.blob?'audio':'text'}`,'POST',body);pending=null;renderConversation();if(session.status==='active')media.speak(session.reply.reply_zh);}
-  catch(e){showError(e);if(['CHAT_NO_SPEECH','CHAT_AUDIO_LIMIT','CHAT_AUDIO_REQUIRED','VALIDATION_ERROR'].includes(e.code))pending=null;
-   if(['CHAT_EXPIRED','CHAT_FINISHED','CHAT_STALE_TURN'].includes(e.code)){try{session=await request('/ai-chat/sessions/'+session.id);pending=null;renderConversation();}catch{}}
-   if(pending&&!panel.querySelector('[data-discard]')){const discard=btn('Bỏ câu này để trả lời lại',()=>{pending=null;clearDraft();if(answer)answer.value='';discard.remove();alert.textContent='';updateDisabled();});discard.dataset.discard='';panel.querySelector('.ai-chat-composer')?.append(discard);}
-  }finally{busy=false;updateDisabled();}
+ function renderCall(){
+  main.replaceChildren(header());const call=el('section',{class:'voice-call'});
+  const end=button('Kết thúc',()=>endConversation());end.dataset.end='';
+  call.append(el('div',{class:'voice-call-top'},[el('div',{},[el('span',{text:selected.title}),el('time',{'data-voice-time':'',text:'05:00','aria-label':'Thời gian còn lại'})]),end]));
+  call.append(el('div',{class:'voice-orb','aria-hidden':'true'},[el('span',{class:'voice-orbit'}),el('img',{src:'/assets/images/mascot-lion.svg',width:132,height:145,alt:''})]),el('h3',{'data-voice-status':'',text:names[phase],role:'status','aria-live':'polite'}),el('p',{'data-voice-hint':'',class:'voice-hint',text:message}),el('div',{class:'voice-bars','aria-hidden':'true'},Array.from({length:5},()=>el('i'))));
+  const controls=el('div',{class:'voice-controls'},[button('Ⅱ Tạm dừng',()=>active?pause():resume(),true),button('✓ Nói xong',()=>audio.finishTurn())]);
+  controls.children[0].dataset.pause='';controls.children[1].dataset.done='';call.append(controls);
+  const captions=el('details',{class:'voice-captions'},[el('summary',{text:'Hiện chữ khi cần'}),el('p',{'data-caption':'',lang:'zh-CN',text:reply?.reply_zh||''}),el('details',{},[el('summary',{text:'Dịch nghĩa'}),p(reply?.translation_vi||'')])]);
+  const replay=button('▶ Nghe lại',()=>replayReply(false)),slow=button('▷ Nghe chậm',()=>replayReply(true));replay.dataset.replay='';slow.dataset.replay='';captions.open=textMode;captions.append(el('div',{class:'voice-replay'},[replay,slow]));call.append(captions);
+  const typing=el('details',{class:'voice-typing'},[el('summary',{text:'Nhập chữ thay micro'})]);typing.open=textMode;
+  const form=el('form',{autocomplete:'off'}),input=el('textarea',{'data-text':'',rows:2,maxlength:400,placeholder:'Gõ tiếng Trung để tiếp tục…','aria-label':'Câu nói tiếng Trung',lang:'zh-CN',autocomplete:'off'}),send=el('button',{type:'submit',class:'btn btn-secondary','data-text-send':'',text:'Gửi câu nói'});input.oninput=updateControls;
+  form.append(input,send);form.onsubmit=e=>{e.preventDefault();if(inflight||!input.value.trim()||!session)return;pause();textMode=true;captions.open=true;pending={id:crypto.randomUUID(),turn:session.turn_count+1,text:input.value.trim(),state:session.state};input.value='';sendPending();};typing.append(form);call.append(typing,p('Micro tắt khi tạm dừng hoặc chuyển tab. Bạn có thể ngừng nói khoảng 1–2 giây để chuyển lượt.','voice-small'),p('Nội dung chỉ nhớ tạm trong buổi này; kết thúc là xóa khỏi trang.','voice-privacy'));main.append(call);updateControls();call.scrollIntoView({block:'start'});
  }
- function dispose(){disposed=true;media.dispose();clearDraft();window.removeEventListener('pagehide',dispose);}window.addEventListener('pagehide',dispose);
- content.append(header(),paragraph('Đang mở góc trò chuyện…'));
- try{await refresh();if(disposed)return;if(meta.active){session=meta.active;renderConversation();}else renderSetup();}catch(e){content.replaceChildren(header(),paragraph('Chưa mở được phần giao tiếp.'));showError(e);content.append(btn('Thử tải lại',()=>location.reload()));}
+ function updateReply(){const caption=main.querySelector('[data-caption]');if(caption){caption.textContent=reply?.reply_zh||'';const translation=main.querySelector('.voice-captions details p');if(translation)translation.textContent=reply?.translation_vi||'';}}
+ async function speakAndListen(){
+  if(!active||!session||disposed)return;setPhase('speaking','Sư tử đang trả lời. Đợi một chút nhé.');
+  const ok=await audio.say(reply.reply_zh);
+  if(!active||!session||disposed)return;
+  if(!ok){needsTextVoice=true;pause('Máy chưa phát được giọng Trung. Bạn mở Hiện chữ để đọc, rồi bấm Tiếp tục hoặc dùng bàn phím nhé.');return;}needsTextVoice=false;
+  await new Promise(resolve=>setTimeout(resolve,250));
+  if(active&&session&&!disposed){setPhase('listening','Đến lượt bạn. Cứ nói tự nhiên nhé.');audio.listen();}
+ }
+ function pause(reason='Micro đã tắt. Bạn tiếp tục khi sẵn sàng nhé.'){active=false;audio.pause();if(session)setPhase('paused',reason);}
+ async function resume(){
+  if(!session||starting||disposed)return;notice.textContent='';starting=true;updateControls();
+  try{
+   if(pending&&textMode){starting=false;await sendPending();return;}
+   if(!await audio.open()||!session||disposed)return;
+   starting=false;updateControls();
+   active=true;textMode=false;
+   if(inflight){setPhase('processing','AI đang trả lời câu vừa rồi…');return;}
+   if(pending)await sendPending();else if(needsTextVoice){setPhase('listening','Bạn đã đọc lời đáp. Đến lượt bạn nói nhé.');audio.listen();}else await speakAndListen();
+  }catch(e){pause(e.message);}finally{starting=false;updateControls();}
+ }
+ async function replayReply(slow){if(!reply||!session)return;pause();setPhase('speaking','Nghe lại lời Sư tử…');await audio.say(reply.reply_zh,{slow});if(session&&!active)setPhase('paused','Bạn bấm Tiếp tục khi muốn nói tiếp nhé.');}
+ async function sendPending(){
+  if(!session||!pending||inflight||disposed)return;inflight=true;setPhase('processing','Mình đang nghe và chuẩn bị trả lời…');const current=session.id,epoch=conversationEpoch,turn=pending,aborter=new AbortController();controller=aborter;
+  try{
+   const body=turn.blob?new FormData():{text:turn.text,state:turn.state};if(turn.blob){body.append('state',turn.state);body.append('audio',turn.blob,'turn.wav');}
+   const data=(await api('/api/v1/chinese/ai-chat/sessions/'+current+'/turns/'+turn.turn+'/'+turn.id+'/'+(turn.blob?'audio':'text'),{method:'POST',body,signal:aborter.signal})).data;
+   if(!session||session.id!==current||epoch!==conversationEpoch||disposed)return;session=data;reply=data.reply;pending=null;updateReply();inflight=false;
+   if(data.status!=='active'){if(active)await audio.say(reply.reply_zh);endConversation();return;}
+   if(active)await speakAndListen();else setPhase('paused','AI đã trả lời. Bạn bấm Tiếp tục hoặc nhập chữ để trò chuyện tiếp.');
+  }catch(e){
+   if(e.name==='AbortError'||!session||epoch!==conversationEpoch||disposed)return;
+   if(['CHAT_STATE_INVALID','CHAT_STALE_TURN','CHAT_FINISHED','CHAT_EXPIRED'].includes(e.code)){endConversation(e.message);return;}
+   if(['CHAT_NO_SPEECH','CHAT_AUDIO_LIMIT','VALIDATION_ERROR'].includes(e.code))pending=null;
+   pause(e.message);
+  }finally{if(controller===aborter){inflight=false;controller=null;updateControls();}}
+ }
+ async function endConversation(reason='Cuộc trò chuyện đã kết thúc. Hẹn bạn lần sau nhé!'){
+  if(!session)return;const id=session.id;conversationEpoch++;active=false;audio.pause();controller?.abort();controller=null;pending=null;session=null;reply=null;inflight=false;clearInterval(timer);notice.textContent='';setPhase('ended');
+  main.replaceChildren(header(),el('section',{class:'voice-ended'},[el('img',{src:'/assets/images/mascot-lion.svg',width:100,height:112,alt:''}),el('h3',{text:'Hẹn bạn lần sau!'}),p(reason),p('Nội dung buổi trò chuyện đã được xóa khỏi trang.','voice-privacy'),button('Về chọn chủ đề',async()=>{try{await refresh();renderSetup();setPhase('setup');}catch(e){tell(e);}},true)]));
+  try{await request('/ai-chat/sessions/'+id+'/finish','POST',{});}catch{}
+ }
+ const hidden=()=>{if(document.hidden&&(session||starting))pause('Micro đã tắt khi bạn rời màn hình. Bấm Tiếp tục để mở lại.');};document.addEventListener('visibilitychange',hidden);
+ function dispose(){
+  disposed=true;active=false;clearInterval(timer);audio.dispose();controller?.abort();pending=null;reply=null;
+  if(session){const id=session.id;session=null;fetch('/api/v1/chinese/ai-chat/sessions/'+id+'/finish',{method:'POST',credentials:'same-origin',keepalive:true,headers:{'Content-Type':'application/json','X-Course-Id':'hsk-'+level},body:'{}'}).catch(()=>{});}
+  main.replaceChildren();document.removeEventListener('visibilitychange',hidden);window.removeEventListener('pagehide',dispose);
+ }
+ window.addEventListener('pagehide',dispose);window.addEventListener('pageshow',e=>{if(e.persisted)location.reload();});
+ main.append(header(),p('Đang mở góc trò chuyện…'));
+ try{await refresh();if(!disposed)renderSetup();}catch(e){tell(e);main.append(button('Thử tải lại',()=>location.reload()));}
  return dispose;
 }

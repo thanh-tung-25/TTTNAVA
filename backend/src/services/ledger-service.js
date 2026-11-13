@@ -1,6 +1,13 @@
 import { query, dialectSql } from '../config/db.js';
 import { toIso, vnRange } from '../utils/time.js';
 
+function chineseDiamondSource(alias) {
+  return `(${alias}.ref_type='chinese' OR (${alias}.ref_type='quest' AND EXISTS(
+    SELECT 1 FROM student_quest_claims sq JOIN courses sc ON sc.id=sq.course_id
+    WHERE sq.id=${alias}.ref_id AND sq.profile_id=${alias}.profile_id AND sc.kind='chinese'
+  )))`;
+}
+
 export async function insertLedger(connection, { profileId, amount, reason, refType, refId }) {
   if (!amount) return 0;
   const [result] = await connection.query(
@@ -65,9 +72,9 @@ export async function getLeaderboard(range = 'week', limit = 50, grade = null, p
   }
   params.push(limit);
   const chinese = program === 'chinese';
-  const ledgerFilter = chinese ? "AND dl.ref_type = 'chinese'" : '';
+  const ledgerFilter = chinese ? 'AND '+chineseDiamondSource('dl') : '';
   const programFilter = chinese ? `AND COALESCE(p.account_kind,'student')='student' AND (
-    EXISTS(SELECT 1 FROM diamond_ledger cl WHERE cl.profile_id=p.id AND cl.ref_type='chinese')
+    EXISTS(SELECT 1 FROM diamond_ledger cl WHERE cl.profile_id=p.id AND ${chineseDiamondSource('cl')})
     OR EXISTS(SELECT 1 FROM course_enrollments ce JOIN courses c ON c.id=ce.course_id
       WHERE ce.student_id=p.id AND c.kind='chinese' AND ce.revoked_at IS NULL
         AND ce.starts_at<=CURRENT_TIMESTAMP(3) AND (ce.expires_at IS NULL OR ce.expires_at>CURRENT_TIMESTAMP(3)))

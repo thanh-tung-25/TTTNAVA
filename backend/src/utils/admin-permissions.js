@@ -6,6 +6,9 @@ export function adminScopeOf(user) {
   const scope = user.admin_scope ?? 'super';
   return ADMIN_SCOPES.includes(scope) ? scope : null;
 }
+export function canViewStudentEmail(user) {
+  return ['super', 'chinese'].includes(adminScopeOf(user));
+}
 export function canManage(user, scope) {
   const assigned = adminScopeOf(user);
   return assigned === 'super' || assigned === scope;

@@ -105,6 +105,7 @@ it('creates only a verified student, sets a normal session and makes public regi
     const list = await adminAgent.get('/api/v1/admin/students').query({ q: payload.username });
     expect(list.status).toBe(200);
     expect(list.body.data.map(student => student.id)).toContain(profile.id);
+    expect(list.body.data.find(student=>student.id===profile.id)).toMatchObject({email:challenge.email,registrationSource:'self',emailVerifiedAt:expect.any(String)});
   }
 });
 

@@ -77,7 +77,8 @@ it('shows a dual-program student to both specialists without exposing another pr
  expect(c.body.data.map(user=>user.id).sort()).toEqual([chineseStudent.id,dual.id].sort());
  expect(p.body.data.map(user=>user.id).sort()).toEqual([primaryStudent.id,dual.id].sort());
  expect(all.body.data).toHaveLength(3);
- expect(c.body.data.every(user=>user.grade===null&&!('email' in user))).toBe(true);
+ expect(c.body.data.every(user=>user.grade===null&&typeof user.email==='string')).toBe(true);
+ expect(p.body.data.every(user=>!('email' in user)&&!('emailVerifiedAt' in user))).toBe(true);
  expect((await chinese.get(route+'&program=primary')).status).toBe(403);
  expect((await primary.get(route+'&program=chinese')).status).toBe(403);
 });

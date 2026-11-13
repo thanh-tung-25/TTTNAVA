@@ -19,7 +19,7 @@ export async function load() {
     if (store.page > store.totalPages) { store.page = store.totalPages; return load(); }
     elements.table.innerHTML = payload.data.length
       ? `<div class="table-wrap"><table class="table admin-table">
-          <thead><tr><th>Học sinh</th><th>Lớp</th><th>Trạng thái</th><th>${store.status === 'deleted' ? 'Ngày xóa' : 'Ngày tạo'}</th><th>Thao tác</th></tr></thead>
+          <thead><tr><th>Học sinh</th>${store.canViewStudentEmail ? '<th>Gmail</th>' : ''}<th>Lớp</th><th>Trạng thái</th><th>${store.status === 'deleted' ? 'Ngày xóa' : 'Ngày tạo'}</th><th>Thao tác</th></tr></thead>
           <tbody>${payload.data.map(row).join('')}</tbody>
         </table></div>`
       : store.status === 'deleted'

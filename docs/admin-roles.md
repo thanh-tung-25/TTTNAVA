@@ -20,8 +20,12 @@ Hệ thống phân quyền dùng được với MySQL local và PostgreSQL trên
 Học sinh vẫn dùng một tài khoản chung và có thể tham gia nhiều chương trình.
 Admin Tiếng Trung vào **Đăng ký Tiếng Trung** trên menu để duyệt học phần HSK. Số yêu cầu chờ, danh sách đăng ký, quyền học và nhật ký được lọc theo chương trình của khóa, kể cả khi học sinh có cả khóa Tiểu học hoặc THCS. Duyệt đúng đơn tự cấp quyền cho đúng học phần; từ chối có lý do để học sinh xem. API kiểm tra lại chương trình trong giao dịch xét duyệt, không nhận phạm vi quyền từ dữ liệu gửi lên. Cấu hình học phí, QR và cấp/thu hồi thủ công vẫn do admin tổng quản lý.
 Danh sách xét đăng ký/quyền học, kể cả lịch sử; tài khoản cũ chưa có đăng ký
-được phân theo khối lớp. Admin chuyên môn không thấy email và không được
-sửa tài khoản chung. Admin Tiếng Trung có thể tạo tài khoản học sinh mới và
+được phân theo khối lớp. Admin Tiểu học và THCS không thấy email. Admin tổng
+và admin Tiếng Trung xem được Gmail, trạng thái/thời điểm xác minh và nguồn
+đăng ký ngay trong danh sách học sinh, đồng thời tìm theo Gmail. Kết quả tìm
+và tổng số bản ghi vẫn được lọc theo quyền xem học sinh. Email nội bộ có đuôi
+`.invalid` không hiển thị như Gmail. Admin chuyên môn không được sửa tài
+khoản chung. Admin Tiếng Trung có thể tạo tài khoản học sinh mới và
 chịu thêm quy tắc riêng tư theo phạm vi quản lý dưới đây.
 
 ## Đăng ký công khai bằng Gmail

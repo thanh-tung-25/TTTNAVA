@@ -17,12 +17,25 @@ export const store = {
   studentsById: new Map(),
   canCreateAccounts: false,
   canManageAccounts: true,
+  canViewStudentEmail: false,
   adminScope: 'super',
 };
 
 export const avatarOptions = (selected) => AVATARS.map((avatar) => (
   `<option value="${avatar.key}"${avatar.key === selected ? ' selected' : ''}>${avatar.name}</option>`
 )).join('');
+
+function emailCell(student) {
+  const email = String(student.email || '').trim();
+  const gmail = /^[^@\s]+@gmail\.com$/i.test(email);
+  const source = student.registrationSource === 'self' ? 'Tự đăng ký' : student.registrationSource === 'admin' ? 'Admin tạo' : '';
+  return `<td class="student-email-cell"><div class="student-email">
+    ${gmail ? `<span class="student-email-address">${escapeHtml(email)}</span>
+    <span class="badge ${student.emailVerifiedAt ? 'badge-success' : 'badge-warning'}">${student.emailVerifiedAt ? 'Đã xác minh' : 'Chưa xác minh'}</span>
+    ${student.emailVerifiedAt ? `<span class="muted student-email-date">Xác minh: ${formatDate(student.emailVerifiedAt)}</span>` : ''}` : '<span class="muted">Chưa có Gmail</span>'}
+    ${source ? `<span class="muted student-email-source">${source}</span>` : ''}
+  </div></td>`;
+}
 
 export function row(student) {
   const locked = student.locked;
@@ -35,6 +48,7 @@ export function row(student) {
           <div><strong>${escapeHtml(student.displayName)}</strong><br><span class="muted">@${escapeHtml(student.username)}</span>${deleted&&student.deletionReason?`<p class="muted student-deletion-reason">Lý do: ${escapeHtml(student.deletionReason)}</p>`:''}</div>
         </div>
       </td>
+      ${store.canViewStudentEmail ? emailCell(student) : ''}
       <td>${store.adminScope==='chinese'?'Tiếng Trung':store.adminScope==='primary'?'Tiểu học':store.adminScope==='secondary'?'THCS':student.grade === null ? 'Tiếng Trung' : `Lớp ${student.grade}`}</td>
       <td>${deleted ? '<span class="badge badge-danger">Đã xóa</span>' : locked ? '<span class="badge badge-danger">Đã khoá</span>' : '<span class="badge badge-success">Hoạt động</span>'}</td>
       <td>${formatDate(deleted ? student.deletedAt : student.createdAt, false)}</td>

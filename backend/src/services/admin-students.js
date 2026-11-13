@@ -4,7 +4,7 @@ import { AppError } from '../utils/errors.js';
 import { hashPassword } from './auth-service.js';
 import { usernameToEmail } from '../utils/normalize.js';
 import { publicProfile } from '../utils/serializers.js';
-import { studentProgramCondition,adminScopeOf } from '../utils/admin-permissions.js';
+import { studentProgramCondition,adminScopeOf,canViewStudentEmail } from '../utils/admin-permissions.js';
 import {studentVisibleCondition} from '../utils/student-visibility.js';
 import {toIso} from '../utils/time.js';
 
@@ -13,22 +13,31 @@ export async function listStudents(page, limit, search = '', program = '', viewe
   if (status === 'deleted' && adminScopeOf(viewer) !== 'super') throw new AppError(403, 'ADMIN_SCOPE_FORBIDDEN', 'Chỉ admin tổng được xem thùng rác tài khoản.');
   const offset = (page - 1) * limit;
   const like = `%${search}%`;
+  const includeEmail = canViewStudentEmail(viewer);
+  const searchWhere = includeEmail
+    ? '(p.username LIKE ? OR p.display_name LIKE ? OR LOWER(p.email) LIKE LOWER(?))'
+    : '(p.username LIKE ? OR p.display_name LIKE ?)';
+  const searchParams = includeEmail ? [like, like, like] : [like, like];
   const programWhere = program ? ' AND '+studentProgramCondition('p',program) : '';
   const privacyWhere=' AND '+studentVisibleCondition(viewer,'p');
   const deletionWhere=status==='deleted'?' AND p.deleted_at IS NOT NULL':' AND p.deleted_at IS NULL';
   const rows = await query(
     `SELECT p.* FROM profiles p
-     WHERE role = 'student' AND (username LIKE ? OR display_name LIKE ?)
+     WHERE role = 'student' AND ${searchWhere}
      ${programWhere}${privacyWhere}${deletionWhere}
      ORDER BY ${status==='deleted'?'p.deleted_at':'p.created_at'} DESC,p.id
      LIMIT ? OFFSET ?`,
-    [like, like, limit, offset],
+    [...searchParams, limit, offset],
   );
   const [total] = await query(
-    `SELECT COUNT(*) AS total FROM profiles p WHERE role = 'student' AND (username LIKE ? OR display_name LIKE ?) ${programWhere}${privacyWhere}${deletionWhere}`,
-    [like, like],
+    `SELECT COUNT(*) AS total FROM profiles p WHERE role = 'student' AND ${searchWhere} ${programWhere}${privacyWhere}${deletionWhere}`,
+    searchParams,
   );
-  return { items: rows.map(row=>status==='deleted'?{...publicProfile(row),deletedAt:toIso(row.deleted_at),deletionReason:row.deletion_reason}:publicProfile(row)), total: Number(total.total) };
+  return { items: rows.map(row=>({
+    ...publicProfile(row),
+    ...(includeEmail?{emailVerifiedAt:toIso(row.email_verified_at),registrationSource:row.registration_source??'admin'}:{}),
+    ...(status==='deleted'?{deletedAt:toIso(row.deleted_at),deletionReason:row.deletion_reason}:{}),
+  })), total: Number(total.total) };
 }
 
 export async function createStudent({ username, password, displayName, grade, avatarKey },actor=null) {

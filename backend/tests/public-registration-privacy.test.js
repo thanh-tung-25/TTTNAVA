@@ -5,12 +5,13 @@ import {createTestUser,loginStudent} from './helpers/index.js';
 
 const prefix='pub_'+randomUUID().slice(0,6)+'_',password='SharedRegistration@123';
 const users=[],shared=[],privateStudents=[],rooms=[],reports=new Map();
-let bossUser,chineseUser,boss,teacher,sharedAgent,privateAgent,lesson,set;
+let bossUser,chineseUser,boss,teacher,primary,sharedAgent,privateAgent,lesson,set;
 
 beforeAll(async()=>{
  bossUser=await createTestUser({role:'admin',password});users.push(bossUser);
  chineseUser=await createTestUser({role:'admin',adminScope:'chinese',password});users.push(chineseUser);
  [boss,teacher]=await Promise.all([bossUser,chineseUser].map(loginStudent));
+ const primaryUser=await createTestUser({role:'admin',adminScope:'primary',password});users.push(primaryUser);primary=await loginStudent(primaryUser);
  for(const grade of [3,9,null]){
   const student=await createTestUser({username:prefix+(grade??'hsk'),displayName:'Public learner '+prefix+(grade??'hsk'),grade,enrolled:false,password});
   users.push(student);shared.push(student);
@@ -49,7 +50,7 @@ it('shares all public registrants with Chinese and super admins regardless of gr
  expect(listed.status).toBe(200);
  expect(listed.body.pagination.total).toBe(shared.length);
  expect(listed.body.data.map(p=>p.id).sort()).toEqual(shared.map(p=>p.id).sort());
- expect(listed.body.data.every(p=>p.grade===null&&!('email' in p))).toBe(true);
+ expect(listed.body.data.every(p=>p.grade===null&&p.email.endsWith('@gmail.com')&&p.emailVerifiedAt&&p.registrationSource==='self')).toBe(true);
  const paged=[];
  for(let page=1;page<=shared.length;page++){
   const result=await teacher.get('/api/v1/admin/students').query({q:prefix,limit:1,page});
@@ -64,6 +65,27 @@ it('shares all public registrants with Chinese and super admins regardless of gr
   const result=await teacher.get('/api/v1/admin/students').query({q:student.username});
   expect(result.body.data).toEqual([]);expect(result.body.pagination.total).toBe(0);
  }
+});
+
+it('shows verified Gmail and searches by email only for authorized admins within their visible students',async()=>{
+ const target=shared[0],email=target.username.replaceAll('_','')+'@gmail.com';
+ for(const viewer of [boss,teacher]){
+  const found=await viewer.get('/api/v1/admin/students').query({q:email.toUpperCase(),limit:1});
+  expect(found.status).toBe(200);expect(found.headers['cache-control']).toContain('no-store');
+  expect(found.body.pagination.total).toBe(1);expect(found.body.data).toHaveLength(1);
+  expect(found.body.data[0]).toMatchObject({id:target.id,email,registrationSource:'self',emailVerifiedAt:expect.any(String)});
+  for(const key of ['password_hash','gmail_identity','otp_hash','student_created_by'])expect(found.body.data[0]).not.toHaveProperty(key);
+ }
+ // The private fixture uses an admin-created synthetic address, which is still searchable by the super admin.
+ const [hidden]=await query('SELECT email FROM profiles WHERE id=?',[privateStudents[0].id]);
+ expect((await boss.get('/api/v1/admin/students').query({q:hidden.email})).body.pagination.total).toBe(1);
+ const invisible=await teacher.get('/api/v1/admin/students').query({q:hidden.email});
+ expect(invisible.body.data).toEqual([]);expect(invisible.body.pagination.total).toBe(0);
+ const schoolList=await primary.get('/api/v1/admin/students').query({q:target.username});
+ expect(schoolList.body.data.map(p=>p.id)).toContain(target.id);
+ for(const profile of schoolList.body.data)for(const key of ['email','emailVerifiedAt','registrationSource'])expect(profile).not.toHaveProperty(key);
+ const schoolSearch=await primary.get('/api/v1/admin/students').query({q:email});
+ expect(schoolSearch.body.data).toEqual([]);expect(schoolSearch.body.pagination.total).toBe(0);
 });
 
 it('does not let admin create or profile patch payloads forge public registration provenance',async()=>{

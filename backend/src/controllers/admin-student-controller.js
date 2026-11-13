@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { parsePagination } from '../utils/pagination.js';
 import { asyncHandler, AppError } from '../utils/errors.js';
-import { adminScopeOf } from '../utils/admin-permissions.js';
+import { adminScopeOf,canViewStudentEmail } from '../utils/admin-permissions.js';
 import {
   createStudent,
   listStudents,
@@ -14,7 +14,7 @@ import { resetPasswordSchema } from '../validators/auth.js';
 import {getAccountDeletionPreview,issueAccountDeletionConfirmation,deleteAccountSafely,restoreAccount} from '../services/admin-account-deletion.js';
 
 const listQuery = z.object({
-  q: z.string().trim().max(100).optional(),
+  q: z.string().trim().max(120).optional(),
   program: z.enum(['chinese', 'primary', 'secondary']).optional(),
   status:z.enum(['active','deleted']).default('active'),
 });
@@ -26,8 +26,8 @@ export const listStudentsHandler = asyncHandler(async (request, response) => {
   if (scope!=='super' && program && program!==scope) throw new AppError(403,'ADMIN_SCOPE_FORBIDDEN','Bạn chỉ được xem học sinh thuộc chương trình mình quản lý.');
   if(status==='deleted'&&scope!=='super')throw new AppError(403,'ADMIN_SCOPE_FORBIDDEN','Chỉ admin tổng được xem thùng rác tài khoản.');
   const result = await listStudents(page, limit, q ?? '', scope==='super' ? program ?? '' : scope,request.user,status);
-  if (scope!=='super') result.items = result.items.map(student=>({...student,email:undefined,...(scope==='chinese'?{grade:null}:{})}));
-  response.json({ data: result.items, pagination: { page, limit, total: result.total } });
+  if (scope!=='super') result.items = result.items.map(student=>({...student,...(!canViewStudentEmail(request.user)?{email:undefined}:{}),...(scope==='chinese'?{grade:null}:{})}));
+  response.set('Cache-Control','private, no-store').json({ data: result.items, pagination: { page, limit, total: result.total } });
 });
 
 export const createStudentHandler = asyncHandler(async (request, response) => {

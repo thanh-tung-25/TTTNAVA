@@ -4,6 +4,8 @@ Chỉ có một trang đăng ký công khai: `/pages/register/`. Học sinh tự
 
 Tài khoản chỉ được tạo sau khi xác minh OTP. Tài khoản cũ và quyền học giữ nguyên; đăng ký không tự cấp khóa học có phí. Người dùng tiếp tục đăng nhập bằng tên đăng nhập và mật khẩu.
 
+Admin tổng và admin Tiếng Trung vào **Học sinh** để xem cột **Gmail**, trạng thái và thời điểm xác minh, cùng nguồn tự đăng ký/admin tạo. Ô tìm kiếm hỗ trợ Gmail trong đúng phạm vi học sinh được xem. Tài khoản cũ dùng địa chỉ nội bộ `.invalid` hiển thị **Chưa có Gmail**. Thông tin này lấy từ hồ sơ đã lưu; không cần yêu cầu người dùng xác minh lại hoặc chuyển dữ liệu.
+
 ## Gửi miễn phí qua Gmail
 
 1. Dùng một Gmail riêng do chủ website quản lý.

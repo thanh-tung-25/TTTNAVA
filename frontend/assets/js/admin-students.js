@@ -2,7 +2,7 @@ import { emptyState, initPage } from '/assets/js/ui.js';
 import { elements, store } from './admin-students-context.js';
 import { load, toggleLock } from './admin-students-load.js';
 import { openCreate, openEdit, openPassword } from './admin-students-modals.js';
-import { adminScope, isSuperAdmin } from './admin-permissions.js';
+import { adminScope, isSuperAdmin,canViewStudentEmail } from './admin-permissions.js';
 import { openDeleteStudent, restoreStudent } from './admin-students-deletion.js';
 
 elements.table.addEventListener('click', (event) => {
@@ -52,6 +52,8 @@ async function main() {
   const profile=await initPage('admin', 'students');
   store.canManageAccounts=isSuperAdmin(profile);
   store.adminScope=adminScope(profile);
+  store.canViewStudentEmail=canViewStudentEmail(profile);
+  if(store.canViewStudentEmail) elements.searchInput.placeholder='Tìm theo tên, tên đăng nhập hoặc Gmail…';
   store.canCreateAccounts=store.canManageAccounts||(profile.role==='admin'&&store.adminScope==='chinese');
   document.getElementById('create-button').hidden=!store.canCreateAccounts;
   document.getElementById('create-button').classList.toggle('hidden',!store.canCreateAccounts);

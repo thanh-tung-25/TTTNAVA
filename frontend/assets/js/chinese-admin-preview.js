@@ -5,10 +5,11 @@ import {mountPractice} from './chinese-applied-practice.js';
 import {mountSpeaking} from './chinese-speaking.js';
 import {questionAudio,withChoiceAudio,stopQuestionAudio} from './question-audio.js';
 import {chineseQuestionPrompt} from './chinese-question-prompt.js';
+import {mixStudy,uniqueStudyWords} from './chinese-study-variety.js';
 
 export function mountAdminStudentPreview(host,{set,items,activities,profile,mode='cards'}){
  host.classList.add('admin-student-preview');host.replaceChildren();let dispose;
- const words=items.filter(i=>i.kind==='vocabulary'),questions=items.filter(i=>i.kind==='question'),reads=items.filter(i=>itemMode(i)==='read'),spoken=items.some(i=>itemMode(i)==='speak');
+ const words=uniqueStudyWords(items.filter(i=>i.kind==='vocabulary')),questions=mixStudy(items.filter(i=>i.kind==='question')),reads=items.filter(i=>itemMode(i)==='read'),spoken=items.some(i=>itemMode(i)==='speak');
  const count={cards:words.length+questions.length,words:words.length,listen:words.length,quiz:questions.length,read:reads.length,apply:activities?.tasks?.length||0,speak:spoken||activities?.tasks?.some(t=>t.type==='dialogue')};
  const tabs=el('nav',{class:'admin-study-modes','aria-label':'Xem thử các mục học'}),content=el('div',{class:'admin-preview-content'});
  const links=[];
@@ -24,7 +25,7 @@ export function mountAdminStudentPreview(host,{set,items,activities,profile,mode
   if(key==='apply'&&count.apply)return mountPractice(content,activities);
   if(key==='read'){for(const i of reads)content.append(card(i.data.title||'Bài đọc',[el('p',{class:'read-text',text:i.data.text})]));return;}
   if(key==='quiz'){quizPreview(content,questions);return;}
-  const deck=words.length?words:questions;
+  const deck=mixStudy(words.length?words:questions);
   if(!deck.length){content.append(el('p',{text:'Chưa có nội dung cho mục này. Thêm nội dung rồi xem thử lại.'}));return;}
   let index=Math.max(0,deck.findIndex(i=>i.id===wordId)),flipped=false;const area=el('div');content.append(area);
   const draw=()=>{

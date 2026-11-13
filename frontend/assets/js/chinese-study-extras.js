@@ -1,7 +1,9 @@
 import {el} from './chinese-common.js';
 import {questionAudio,withChoiceAudio} from './question-audio.js';
+import {uniqueStudyWords} from './chinese-study-variety.js';
 export {chooseQuiz} from './chinese-journey.js';
 export function wordTable(root,words,setId){
+ words=uniqueStudyWords(words);
  const input=el('input',{type:'search','aria-label':'Tìm từ trong bài',placeholder:'Lọc theo nghĩa, pinyin hoặc chữ Hán'}),wrap=el('div',{class:'hub-table-wrap'}),normalize=v=>String(v||'').normalize('NFD').replace(/\p{M}/gu,'').toLocaleLowerCase('vi');
  const render=()=>{const filtered=words.filter(i=>[i.data.meaning,i.data.pinyin,i.data.hanzi].some(v=>normalize(v).includes(normalize(input.value))));
   wrap.replaceChildren(el('table',{class:'hub-table'},[el('thead',{},[el('tr',{},['Từ / Nghĩa tiếng Việt','Phiên âm (pinyin)','Hán tự'].map(text=>el('th',{scope:'col',text})))]),el('tbody',{},filtered.map(i=>el('tr',{'data-word-id':i.id},[el('td',{},[el('a',{text:i.data.meaning,href:'?'+new URLSearchParams({set:setId,mode:'cards',word:i.id})})]),el('td',{text:i.data.pinyin||'Chưa có phiên âm'}),el('td',{},[el('span',{text:i.data.hanzi}),questionAudio(i.data.hanzi,{label:'Nghe '+i.data.hanzi,compact:true})])])))]));};
@@ -9,7 +11,7 @@ export function wordTable(root,words,setId){
  const id=new URLSearchParams(location.search).get('word');if(id)wrap.querySelector('[data-word-id="'+CSS.escape(id)+'"]')?.scrollIntoView({block:'center'});
 }
 export function listeningPractice(root,words,setId){
- const unique=[...new Map(words.filter(i=>i.data.hanzi&&i.data.meaning).map(i=>[i.data.meaning,i])).values()];
+ const unique=[...new Map(uniqueStudyWords(words).filter(i=>i.data.hanzi&&i.data.meaning).map(i=>[i.data.meaning,i])).values()];
  root.append(el('h2',{text:'Luyện nghe từ trong bài'}),el('p',{text:'Tự luyện 10 từ, không tính Kim Cương. Chỉ phát âm thanh khi bấm loa; có thể nghe lại. Học bảng Từ mới trước nếu chưa quen.'}));
  if(unique.length<2){root.append(el('p',{text:'Cần ít nhất 2 từ có nghĩa khác nhau để luyện nghe.'}));return;}
  const shuffle=values=>{const a=[...values];for(let n=a.length-1;n>0;n--){const j=Math.floor(Math.random()*(n+1));[a[n],a[j]]=[a[j],a[n]];}return a;};

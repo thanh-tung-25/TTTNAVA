@@ -2,6 +2,7 @@ import {el,button,card} from '/assets/js/chinese-common.js';
 import {questionAudio,withChoiceAudio} from './question-audio.js';
 import {animalPath} from './animal-path.js';
 import {chineseQuestionPrompt} from './chinese-question-prompt.js';
+import {mixStudy,activityConcept} from './chinese-study-variety.js';
 
 // Only published activities supplied by the lesson API are rendered here.
 export function mountPractice(host,lesson){
@@ -14,7 +15,7 @@ export function mountPractice(host,lesson){
  const primary=(text,fn)=>{const b=button(text,fn);b.classList.add('btn-primary');return b;};
  const mix=arr=>{const copy=[...arr];for(let i=copy.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];}return copy;};
  let tokens=[],choices=[],currentType;
- const start=type=>{currentType=type;queue=mix(tasks.filter(t=>!type||t.type===type)).slice(0,10);index=0;correct=0;nextTask();};
+ const start=type=>{currentType=type;queue=mixStudy(tasks.filter(t=>!type||t.type===type),{key:activityConcept,gap:9}).slice(0,10);index=0;correct=0;nextTask();};
  const nextTask=()=>{checked=false;selection='';chosen=[];tokens=mix(queue[index].tokens||[]);choices=mix(queue[index].options||[]);render();const heading=box.querySelector('h2');heading.tabIndex=-1;heading.focus({preventScroll:true});};
  function menu(){
   box.replaceChildren(el('h2',{text:'Luyện vận dụng'}),el('p',{text:lesson.topic+' · Mỗi lượt tối đa 10 câu, chọn ngẫu nhiên từ '+tasks.length+' hoạt động.'}),

@@ -9,6 +9,7 @@ import { archiveFile, readArchive, DOCX_MIME } from './private-storage.js';
 import {publishedActivitiesForSet} from './chinese-activities.js';
 import {reviewedQuestions,sequentialQuestions,journeyProgress} from './chinese-quiz-plan.js';
 import {studentVisibleCondition} from '../utils/student-visibility.js';
+import {mixStudy,shuffleStudy} from '../../../frontend/assets/js/chinese-study-variety.js';
 export { catalog };
 const txRun = c => async (sql,p=[]) => (await c.query(sql,p))[0];
 export async function saveLesson(id, body) {
@@ -155,10 +156,11 @@ export async function start(user,body) {
    if(items.length<20)throw badRequest('Cần làm ít nhất 20 câu khác nhau trong bài trước khi ôn 20 câu đã học. Hãy luyện theo phần trước nhé.');
    const wrong=items.filter(i=>!seen.get(i.id).correct),correct=items.filter(i=>seen.get(i.id).correct);
    for(const group of [wrong,correct])for(let n=group.length-1;n>0;n--){const j=randomInt(n+1);[group[n],group[j]]=[group[j],group[n]];}
-   items=[...wrong,...correct].slice(0,20);
-  }else{for(let n=items.length-1;n>0;n--){const j=randomInt(n+1);[items[n],items[j]]=[items[j],items[n]];}items=items.slice(0,d.count);}
+   items=[...mixStudy(wrong,{random:()=>randomInt(0x1000000)/0x1000000}),...mixStudy(correct,{random:()=>randomInt(0x1000000)/0x1000000})].slice(0,20);
+  }else{items=mixStudy(items,{random:()=>randomInt(0x1000000)/0x1000000}).slice(0,d.count);}
   title='Quiz '+items.length+' câu'+(d.selection==='sequential'?' · Phần '+(d.block+1):d.selection==='review'?' · Ôn câu đã học':'');
  }
+ items=items.map(item=>['choice','listening'].includes(item.data.type)?{...item,data:{...item.data,options:shuffleStudy(item.data.options,()=>randomInt(0x1000000)/0x1000000)}}:item);
  let existingId;const id=randomUUID(); await withTransaction(async c=>{
   const run=txRun(c);
   await one('SELECT id FROM profiles WHERE id=? FOR UPDATE',[user],run);

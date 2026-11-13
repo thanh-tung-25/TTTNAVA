@@ -8,6 +8,7 @@ import {questionAudio,withChoiceAudio} from '/assets/js/question-audio.js';
 import {chooseQuiz,wordTable,listeningPractice} from '/assets/js/chinese-study-extras.js';
 import {animalPath} from '/assets/js/animal-path.js';
 import {chineseQuestionPrompt} from '/assets/js/chinese-question-prompt.js';
+import {sessionStudyDeck,uniqueStudyWords} from '/assets/js/chinese-study-variety.js';
 import {mountSpeaking} from '/assets/js/chinese-speaking.js';
 import {renderChineseAiChat} from '/assets/js/chinese-ai-chat.js';
 import {renderChineseStreet} from '/assets/js/chinese-street.js';
@@ -39,7 +40,7 @@ async function boot(){
 }
 function lessons(){renderChineseLessons({catalog,params,quiz});}
 async function learn(id){
- const {set,items,progress,activities}=await request('/sets/'+id);let read=json(progress?.read_items||[]),last=progress?.last_item||null;
+ const {set,items,progress,activities}=await request('/sets/'+id);let read=json(progress?.read_items||[]),last=progress?.last_item||null,displayed=null;
  const save=async item=>{await request('/sets/'+id+'/progress','PUT',{last_item:item,read_items:read});last=item;};
  root().append(el('header',{class:'study-bar'},[
   el('a',{class:'study-back',href:'?level='+set.level_id,text:'←','aria-label':'Bài học',title:'Quay lại bài học'}),
@@ -48,7 +49,7 @@ async function learn(id){
    link('Sổ từ',{view:'notebook'}),link('Kết quả',{view:'history'}),el('p',{class:'study-source',text:set.title})
   ])])
  ]));
- const words=items.filter(i=>i.kind==='vocabulary'),questions=items.filter(i=>i.kind==='question'),reads=items.filter(i=>['grammar','reading','dialogue'].includes(i.kind)&&i.data.practice!=='speaking'),spoken=items.some(i=>i.kind==='dialogue'&&i.data.practice==='speaking');
+ const words=uniqueStudyWords(items.filter(i=>i.kind==='vocabulary')),questions=items.filter(i=>i.kind==='question'),reads=items.filter(i=>['grammar','reading','dialogue'].includes(i.kind)&&i.data.practice!=='speaking'),spoken=items.some(i=>i.kind==='dialogue'&&i.data.practice==='speaking');
  const mode=params.get('mode')||(words.length||questions.length?'cards':spoken?'speak':'read');
  const applied=activities?.tasks?.length?activities:null;
  const nav=el('nav',{class:'study-modes','aria-label':'Cách học'});
@@ -72,7 +73,7 @@ async function learn(id){
   if(!reads.length)root().append(el('p',{text:'Tài liệu này chưa có bài đọc.'}));
  }else if(words.length||questions.length){
   let vocab=words.length>0&&!questions.some(q=>q.id===(params.get('word')||last));
-  let deck=vocab?[...words]:[...questions],current=Math.max(0,deck.findIndex(w=>w.id===(params.get('word')||last))),flipped=false,frontMode='hanzi';
+  let deckKey=id+':'+(vocab?'vocabulary':'question'),deck=sessionStudyDeck(vocab?words:questions,deckKey),current=Math.max(0,deck.findIndex(w=>w.id===(params.get('word')||last))),flipped=false,frontMode='hanzi';
   const answers=new Map(),area=el('div'),caption=el('p',{class:'learn-caption',text:vocab?'Thẻ từ vựng':'Thẻ câu hỏi'});
   root().append(caption);
   const flip=async()=>{
@@ -83,7 +84,7 @@ async function learn(id){
  const render=()=>{
    const focusLabel=area.contains(document.activeElement)?document.activeElement.matches('.flashcard')?'flashcard':document.activeElement.textContent:null;
    area.replaceChildren();if(!deck.length){area.append(el('p',{text:'Nhóm này chưa có từ.'}));return;}
-   const item=deck[current],d=item.data,answer=answers.get(item.id);
+   const item=deck[current],d=item.data,answer=answers.get(item.id);displayed=item.id;
    const face=action('',flip);face.className='flashcard';face.setAttribute('aria-label','Lật thẻ');face.setAttribute('aria-pressed',String(flipped));
    if(vocab){
     if(!flipped)face.append(el('div',{class:'hanzi',text:d[frontMode]||'Chưa có dữ liệu cho mặt thẻ này'}));
@@ -99,21 +100,21 @@ async function learn(id){
    }
    if(focusLabel){const target=focusLabel==='flashcard'?face:[...area.querySelectorAll('button:not(.flashcard)')].find(b=>b.textContent===focusLabel);target?.focus({preventScroll:true});}
   };
-  const shuffle=action('Trộn thẻ',async()=>{for(let n=deck.length-1;n>0;n--){const j=Math.floor(Math.random()*(n+1));[deck[n],deck[j]]=[deck[j],deck[n]];}current=0;flipped=false;render();await save(deck[0].id);});
+  const shuffle=action('Trộn thẻ',async()=>{deck=sessionStudyDeck(deck,deckKey,{reshuffle:true});current=0;flipped=false;render();await save(deck[0].id);});
   const settings=[shuffle];
   if(words.length){
    const front=field('Mặt trước','front','hanzi','text',[['hanzi','Chữ Hán'],['meaning','Nghĩa tiếng Việt'],['pinyin','Pinyin']]);front.onchange=()=>{frontMode=front.querySelector('select').value;flipped=false;render();};settings.push(front);
    if(words.some(w=>w.data.group==='extended')){
-    const group=field('Nhóm từ','group','all','text',[['all','Tất cả'],['main','Từ chính'],['extended','Từ mở rộng']]);group.onchange=()=>{if(!vocab)return;const value=group.querySelector('select').value;deck=words.filter(w=>value==='all'||(w.data.group||'main')===value);current=0;flipped=false;render();};settings.push(group);
+    const group=field('Nhóm từ','group','all','text',[['all','Tất cả'],['main','Từ chính'],['extended','Từ mở rộng']]);group.onchange=()=>{if(!vocab)return;const value=group.querySelector('select').value;deckKey=id+':vocabulary:'+value;deck=sessionStudyDeck(words.filter(w=>value==='all'||(w.data.group||'main')===value),deckKey);current=0;flipped=false;render();};settings.push(group);
    }
   }
   if(words.length&&questions.length){
-   const source=field('Loại thẻ','source',vocab?'vocabulary':'question','text',[['vocabulary','Thẻ từ vựng'],['question','Thẻ câu hỏi']]);source.onchange=()=>{vocab=source.querySelector('select').value==='vocabulary';deck=vocab?[...words]:[...questions];current=0;flipped=false;caption.textContent=vocab?'Thẻ từ vựng':'Thẻ câu hỏi';render();save(deck[0].id).catch(error);};settings.unshift(source);
+   const source=field('Loại thẻ','source',vocab?'vocabulary':'question','text',[['vocabulary','Thẻ từ vựng'],['question','Thẻ câu hỏi']]);source.onchange=()=>{vocab=source.querySelector('select').value==='vocabulary';deckKey=id+':'+(vocab?'vocabulary':'question');deck=sessionStudyDeck(vocab?words:questions,deckKey);current=0;flipped=false;caption.textContent=vocab?'Thẻ từ vựng':'Thẻ câu hỏi';render();save(deck[0].id).catch(error);};settings.unshift(source);
   }
   root().append(area,extra('Tùy chọn thẻ',settings));render();
   if(words.length)root().append(extra('Tự luyện viết và đọc theo',[writing(),recording()]));
  }else root().append(el('p',{text:'Tài liệu này chưa có thẻ lật.'}));
- if(items.length)await save(last&&items.some(i=>i.id===last)?last:items[0].id);
+ if(items.length)await save(displayed||(last&&items.some(i=>i.id===last)?last:items[0].id));
 }
 function upsert(r){const n=catalog.reviews.findIndex(v=>v.item_id===r.item_id);if(n>=0)catalog.reviews[n]=r;else catalog.reviews.push(r);}
 function audioButton(d){

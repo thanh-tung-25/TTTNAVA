@@ -53,7 +53,7 @@ export async function getDiamondSummary(profileId) {
   };
 }
 
-export async function getLeaderboard(range = 'week', limit = 50, grade = null) {
+export async function getLeaderboard(range = 'week', limit = 50, grade = null, program = null) {
   const { start } = vnRange(range);
   const params = [];
   const dateFilter = start ? 'AND dl.created_at >= ?' : '';
@@ -64,17 +64,25 @@ export async function getLeaderboard(range = 'week', limit = 50, grade = null) {
     params.push(grade);
   }
   params.push(limit);
+  const chinese = program === 'chinese';
+  const ledgerFilter = chinese ? "AND dl.ref_type = 'chinese'" : '';
+  const programFilter = chinese ? `AND COALESCE(p.account_kind,'student')='student' AND (
+    EXISTS(SELECT 1 FROM diamond_ledger cl WHERE cl.profile_id=p.id AND cl.ref_type='chinese')
+    OR EXISTS(SELECT 1 FROM course_enrollments ce JOIN courses c ON c.id=ce.course_id
+      WHERE ce.student_id=p.id AND c.kind='chinese' AND ce.revoked_at IS NULL
+        AND ce.starts_at<=CURRENT_TIMESTAMP(3) AND (ce.expires_at IS NULL OR ce.expires_at>CURRENT_TIMESTAMP(3)))
+  )` : '';
 
   const rows = await query(
     `SELECT p.id, p.display_name, p.avatar_key, p.grade,
             COALESCE(SUM(CASE WHEN dl.amount>0 THEN dl.amount ELSE 0 END), 0) AS diamonds
      FROM profiles p
-     LEFT JOIN diamond_ledger dl ON dl.profile_id = p.id ${dateFilter}
+     LEFT JOIN diamond_ledger dl ON dl.profile_id = p.id ${dateFilter} ${ledgerFilter}
      WHERE p.role = 'student' AND p.deleted_at IS NULL
        AND (p.banned_until IS NULL OR p.banned_until <= CURRENT_TIMESTAMP)
-       ${gradeFilter}
+       ${gradeFilter} ${programFilter}
      GROUP BY p.id, p.display_name, p.avatar_key, p.grade
-     ORDER BY diamonds DESC, p.display_name ASC
+     ORDER BY diamonds DESC, p.display_name ASC, p.id ASC
      LIMIT ?`,
     params,
   );
@@ -84,7 +92,7 @@ export async function getLeaderboard(range = 'week', limit = 50, grade = null) {
     profileId: row.id,
     displayName: row.display_name,
     avatarKey: row.avatar_key,
-    grade: Number(row.grade),
+    grade: row.grade === null ? null : Number(row.grade),
     diamonds: Number(row.diamonds),
   }));
 }

@@ -34,6 +34,7 @@ body[data-role=student].student-unified .student-primary-nav .nav-link[aria-curr
 @media(max-width:1099px){
  body[data-role=student].student-unified .student-navigation{height:calc(78px + env(safe-area-inset-bottom));padding:7px 10px calc(7px + env(safe-area-inset-bottom));border:2px solid #fff;border-bottom:0;border-radius:23px 23px 0 0;background:linear-gradient(#fdf9ff,#f2e8fa);box-shadow:0 -4px 0 #e6d8ee,0 -10px 22px #6847800b}
  body[data-role=student].student-unified .student-primary-nav{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+ body[data-role=student].student-unified .student-primary-nav[data-count="5"]{grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}
  body[data-role=student].student-unified .student-primary-nav .nav-link{min-width:0;min-height:58px;padding:4px 3px;gap:3px;white-space:normal;text-align:center;border-radius:15px}
  body[data-role=student].student-unified .student-primary-nav .nav-link>span:last-child{font-size:10px;font-weight:700;line-height:1.4}
  body[data-role=student].student-unified .student-primary-nav .student-nav-icon{width:30px;height:30px;border-radius:10px}

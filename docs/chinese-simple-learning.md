@@ -18,7 +18,9 @@ Luồng hoạt động giữ như trước: bấm **Quiz 20 câu → bản đồ
 
 Giao tiếp với AI và Phố tiếng Trung nhận đúng mã bài đang chọn. Trong trang học chỉ hiện phần đã chọn, đã bỏ hàng menu chuyển chức năng bị trùng với ba nhóm ngoài danh sách. Nút quay lại dẫn về danh sách và cuộn đến đúng bài vừa học để chọn chức năng khác.
 
-Sổ từ, kết quả học tập, bài kiểm tra và bài được giao nằm trong menu ảnh đại diện. Đã bỏ hàng bốn nút ở đầu danh sách bài học. Các tiện ích vẫn mở được từ mọi trang trong khóa Tiếng Trung. Thanh điều hướng chính có bốn mục: Khóa học, Bài học, Thử sức, Cá nhân; đã bỏ mục Ôn luyện. Màn chọn khóa vẫn hiển thị, kể cả khi chỉ có một khóa được mở.
+Sổ từ, kết quả học tập, bài kiểm tra và bài được giao nằm trong menu ảnh đại diện. Đã bỏ hàng bốn nút ở đầu danh sách bài học. Các tiện ích vẫn mở được từ mọi trang trong khóa Tiếng Trung. Thanh điều hướng chính có năm mục: Khóa học, Bài học, Thử sức, Xếp hạng, Cá nhân; đã bỏ mục Ôn luyện. Màn chọn khóa vẫn hiển thị, kể cả khi chỉ có một khóa được mở.
+
+Mục **Xếp hạng** mở bảng kim cương riêng của Tiếng Trung. Chỉ tính kim cương dương đã nhận từ bài Tiếng Trung, không gộp kim cương môn phổ thông. Có bảng tuần, tháng và toàn bộ thời gian; mốc tuần/tháng theo giờ Việt Nam, tuần bắt đầu thứ Hai. Học sinh có kim cương Tiếng Trung trước đây hoặc quyền học HSK còn hiệu lực được xếp hạng; không đưa phụ huynh, tài khoản đã xóa hoặc khóa vào bảng. Học sinh nhận ra dòng của mình và vị trí trong top 50; nếu ngoài top 50 thì không hiển thị thứ hạng giả. Bảng chỉ có tên hiển thị, ảnh đại diện và số kim cương. Khóa phổ thông giữ thanh bốn mục và bộ lọc lớp của bảng chung.
 
 Giao diện điện thoại dùng ba nhóm cha trong cùng một hàng cho từng bài; nhóm đang mở có khung màu tương ứng bên dưới, các chức năng con xuống dòng theo chiều rộng màn hình. Giữ toàn bộ chức năng và dữ liệu học tập, thu gọn phần trình bày và các bước chuyển trang.
 
@@ -40,7 +42,7 @@ Chuyển giữa điện thoại và máy tính chỉ đổi vị trí của cùn
 
 Trong màn giao tiếp tự do với AI, ba nút Tạm dừng/Tiếp tục, Nói xong và Kết thúc nằm cùng một thanh ở đầu cuộc trò chuyện. Thanh này giữ vị trí khi cuộn xem chữ, bản dịch hoặc nhập câu trả lời. Thu nhỏ linh vật trong cuộc gọi để các điều khiển dễ nhìn trên màn hình thấp.
 
-Thanh đầu trang và bốn mục điều hướng dùng chung phong cách pastel nổi: logo, kim cương, tài khoản, góp ý và trò chuyện có khung riêng; mục đang chọn có nền tím và biểu tượng màu. Giữ chiều cao thanh đầu trang và thanh điều hướng điện thoại; menu tài khoản trên điện thoại nằm trong màn hình và cuộn được phía trên thanh điều hướng. Áp dụng cho giao diện học sinh, gồm cả trang chọn khóa học.
+Thanh đầu trang và các mục điều hướng dùng chung phong cách pastel nổi: logo, kim cương, tài khoản, góp ý và trò chuyện có khung riêng; mục đang chọn có nền tím và biểu tượng màu. Giữ chiều cao thanh đầu trang và thanh điều hướng điện thoại; menu tài khoản trên điện thoại nằm trong màn hình và cuộn được phía trên thanh điều hướng. Áp dụng cho giao diện học sinh, gồm cả trang chọn khóa học.
 
 ## Kiểm tra
 

@@ -8,23 +8,26 @@
   <link rel="stylesheet" href="/assets/css/base.css">
   <link rel="stylesheet" href="/assets/css/components.css">
   <link rel="stylesheet" href="/assets/css/pages.css">
+  <link rel="stylesheet" href="/assets/css/leaderboard.css">
 <link rel="stylesheet" href="/assets/css/student-depth.css"><link rel="stylesheet" href="/assets/css/student-assessment.css"></head>
 <body data-role="student" class="student-polished">
   <header id="app-header"></header>
   <main class="page">
-    <div class="page-head">
+    <div class="leaderboard-hero">
       <div>
-        <p class="eyebrow">Bảng xếp hạng</p>
-        <h1>Ai là người chăm chỉ nhất?</h1>
-        <p>Xếp theo số kim cương nhận được trong tuần, tháng hoặc tất cả.</p>
+        <p class="eyebrow" id="ranking-eyebrow">Bảng xếp hạng</p>
+        <h1 id="ranking-title">Ai là người chăm chỉ nhất?</h1>
+        <p id="ranking-description">Xếp theo số kim cương nhận được trong tuần, tháng hoặc tất cả.</p>
+        <p id="my-ranking" class="leaderboard-my-rank" role="status" aria-live="polite" hidden></p>
       </div>
+      <span class="leaderboard-gem" aria-hidden="true">💎</span>
     </div>
     <div class="tabs" id="range-tabs" role="tablist" aria-label="Khoảng thời gian">
       <button class="tab" type="button" data-range="week">Tuần này</button>
       <button class="tab" type="button" data-range="month">Tháng này</button>
       <button class="tab" type="button" data-range="all">Tất cả</button>
     </div>
-    <div class="filter-bar">
+    <div class="filter-bar" id="ranking-filters">
       <select class="select" id="grade-filter" aria-label="Lọc theo lớp">
         <option value="">Tất cả các lớp</option>
         <option value="1">Lớp 1</option>
@@ -38,7 +41,8 @@
         <option value="9">Lớp 9</option>
       </select>
     </div>
-    <section class="card">
+    <p class="muted leaderboard-note" id="ranking-note" hidden>Kim cương nhận từ bài tập Tiếng Trung · Mốc tuần và tháng theo giờ Việt Nam.</p>
+    <section class="card leaderboard-card" aria-label="Danh sách xếp hạng">
       <div id="rank-list"><div class="loading">Đang tải bảng xếp hạng…</div></div>
     </section>
   </main>

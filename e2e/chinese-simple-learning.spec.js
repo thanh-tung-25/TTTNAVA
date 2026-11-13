@@ -19,13 +19,18 @@ test.beforeAll(async()=>{
 });
 test.afterAll(async()=>{server.closeAllConnections();await new Promise(resolve=>server.close(resolve));});
 async function mock(page){
- const state={active:null,created:[],fail:false,finished:false,courses:[course],errors:[]};page.on('pageerror',e=>state.errors.push(e.message));
+ const state={active:null,created:[],fail:false,finished:false,courses:[course],selectedCourse:course,rankingRequests:[],rankingFail:false,rankings:{week:[],month:[],all:[]},errors:[]};page.on('pageerror',e=>state.errors.push(e.message));
  await page.addInitScript(()=>localStorage.setItem('ttnava-course','hsk-1'));
  await page.route('**/api/v1/**',async route=>{
   const req=route.request(),p=new URL(req.url()).pathname;let data={};
   if(p.endsWith('/auth/me'))data={profile:{id:'student',role:'student',displayName:'Ngọc Anh',username:'ngoc_anh',avatarKey:'meo',grade:null}};
-  else if(p.endsWith('/access'))data=course;
+  else if(p.endsWith('/access'))data=state.selectedCourse;
   else if(p.endsWith('/diamonds/summary'))data={total:3};
+  else if(p.endsWith('/diamonds/leaderboard')){
+   const params=Object.fromEntries(new URL(req.url()).searchParams);state.rankingRequests.push(params);
+   if(state.rankingFail){state.rankingFail=false;return route.fulfill({status:503,json:{error:{message:'Chưa tải được xếp hạng.'}}});}
+   data=state.rankings[params.range];
+  }
   else if(p.endsWith('/experience/preferences'))data={font_scale:'normal',effects_enabled:0};
   else if(p.includes('/chat/'))data=[];
   else if(p.endsWith('/chinese/catalog'))data=catalog;
@@ -85,9 +90,9 @@ test('HSK 1 shows all ten lessons and nests the original tools under three paren
  await page.locator('.student-account summary').click();
  for(const name of ['Sổ từ','Kết quả học tập','Bài kiểm tra','Bài được giao'])await expect(page.getByRole('navigation',{name:'Tiện ích học tập'}).getByRole('link',{name,exact:true})).toBeVisible();
  await page.keyboard.press('Escape');
- for(const name of ['Khóa học','Bài học','Thử sức','Cá nhân'])await expect(page.locator('.student-primary-nav').getByRole('link',{name,exact:true})).toBeVisible();
- await expect(page.locator('.student-primary-nav')).toHaveAttribute('data-count','4');
- await expect(page.locator('.student-primary-nav').getByRole('link')).toHaveCount(4);
+ for(const name of ['Khóa học','Bài học','Thử sức','Xếp hạng','Cá nhân'])await expect(page.locator('.student-primary-nav').getByRole('link',{name,exact:true})).toBeVisible();
+ await expect(page.locator('.student-primary-nav')).toHaveAttribute('data-count','5');
+ await expect(page.locator('.student-primary-nav').getByRole('link')).toHaveCount(5);
  await expect(page.locator('.student-primary-nav').getByRole('link',{name:'Ôn luyện',exact:true})).toHaveCount(0);
  await expect(page.locator('.chinese-level-picker,.chinese-welcome')).toHaveCount(0);
  expect(state.errors).toEqual([]);
@@ -189,4 +194,31 @@ test('choosing HSK 1 opens the ten lessons directly and the course chooser remai
  await page.locator('.chinese-course-back').click();await expect(page.locator('.course-tile')).toHaveCount(1);
  state.courses.push({...course,id:'hsk-2',level:2,title:'HSK 2'});await page.goto(origin+'/pages/student/courses/');await expect(page.locator('.course-tile')).toHaveCount(2);
  await expect(page).toHaveURL(/\/student\/courses\/$/);expect(state.errors).toEqual([]);
+});
+
+test('Chinese diamond ranking opens from navigation and handles time ranges retry and empty states',async({page},info)=>{
+ const state=await mock(page),friend={rank:1,profileId:'friend',displayName:'Mai Anh',avatarKey:'tho',grade:null,diamonds:12},me={rank:2,profileId:'student',displayName:'Ngọc Anh',avatarKey:'meo',grade:3,diamonds:8};
+ state.rankings.week=[friend,me];state.rankings.month=[{...me,rank:1,diamonds:20},{...friend,rank:2}];
+ await open(page);await page.locator('.student-primary-nav').getByRole('link',{name:'Xếp hạng',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Đua kim cương Tiếng Trung'})).toBeVisible();await expect(page.locator('.student-primary-nav').getByRole('link',{name:'Xếp hạng',exact:true})).toHaveAttribute('aria-current','page');
+ await expect(page.locator('#ranking-filters')).toBeHidden();await expect(page.locator('.rank-row')).toHaveCount(2);await expect(page.locator('#my-ranking')).toContainText('hạng #2');await expect(page.locator('.rank-row.is-me')).toContainText('Ngọc Anh (bạn)');
+ await expect(page.locator('#rank-list')).not.toContainText('Lớp 0');await expect(page.locator('#rank-list')).not.toContainText('Lớp 3');
+ expect(state.rankingRequests.at(-1)).toMatchObject({program:'chinese',range:'week'});expect(state.rankingRequests.at(-1)).not.toHaveProperty('grade');
+ if(info.project.name.startsWith('mobile')){
+  const viewport=page.viewportSize();
+  await page.setViewportSize({width:320,height:680});const bounds=await page.locator('.student-primary-nav .nav-link').evaluateAll(nodes=>nodes.map(n=>{const r=n.getBoundingClientRect();return {left:r.left,right:r.right,top:r.top,width:r.width};}));
+  expect(bounds).toHaveLength(5);expect(bounds.every(r=>r.left>=0&&r.right<=320&&r.width>=44&&Math.abs(r.top-bounds[0].top)<1)).toBe(true);
+  await expect(page.locator('.rank-row').first()).toBeInViewport();await page.setViewportSize(viewport);
+ }
+ await fits(page);await page.screenshot({path:'test-results/chinese-ranking-'+info.project.name+'.png'});
+ await page.locator('[data-range=month]').click();await expect(page.locator('#my-ranking')).toContainText('hạng #1');await expect(page.locator('.rank-row.is-me .rank-diamonds')).toContainText('20');
+ state.rankingFail=true;await page.locator('[data-range=week]').click();await page.getByRole('button',{name:'Thử lại',exact:true}).click();await expect(page.locator('#my-ranking')).toContainText('hạng #2');
+ await page.locator('[data-range=all]').click();await expect(page.locator('.rank-row')).toHaveCount(0);await expect(page.locator('#rank-list')).toContainText('Chưa có ai trên bảng');
+ expect(state.rankingRequests.every(r=>r.program==='chinese')).toBe(true);expect(state.created).toHaveLength(0);expect(state.errors).toEqual([]);
+});
+
+test('non-Chinese courses keep four navigation items and the general leaderboard grade filter',async({page})=>{
+ const state=await mock(page);state.selectedCourse={id:'grade-3',kind:'primary',level:3,title:'Lớp 3'};state.rankings.week=[{rank:1,profileId:'student',displayName:'Ngọc Anh',avatarKey:'meo',grade:3,diamonds:20}];
+ await page.goto(origin+'/pages/student/leaderboard/');await expect(page.locator('.rank-row')).toHaveCount(1);await expect(page.locator('.student-primary-nav .nav-link')).toHaveCount(4);await expect(page.locator('#grade-filter')).toBeVisible();
+ await page.locator('#grade-filter').selectOption('3');await expect.poll(()=>state.rankingRequests.at(-1)?.grade).toBe('3');expect(state.rankingRequests.every(r=>!r.program)).toBe(true);expect(state.errors).toEqual([]);
 });

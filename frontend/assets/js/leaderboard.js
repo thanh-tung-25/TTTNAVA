@@ -6,6 +6,9 @@ const gradeFilter = document.getElementById('grade-filter');
 const listEl = document.getElementById('rank-list');
 let range = 'week';
 let myId = null;
+let chinese = false;
+let requestId = 0;
+const myRanking = document.getElementById('my-ranking');
 
 function medals(index) {
   return ['🥇', '🥈', '🥉'][index] ?? `${index + 1}`;
@@ -14,11 +17,11 @@ function medals(index) {
 function row(item, index) {
   return `
     <div class="rank-row${item.profileId === myId ? ' is-me' : ''}">
-      <span class="rank-number">${medals(index)}</span>
+      <span class="rank-number">${chinese&&item.diamonds===0?'#'+item.rank:medals(index)}</span>
       <img class="avatar avatar-sm" src="${avatarUrl(item.avatarKey)}" alt="">
       <div class="rank-main">
-        <strong>${escapeHtml(item.displayName)}${item.profileId === myId ? ' (con)' : ''}</strong>
-        <span>Lớp ${item.grade}</span>
+        <strong>${escapeHtml(item.displayName)}${item.profileId === myId ? ' (bạn)' : ''}</strong>
+        <span>${chinese||item.grade===null?'Tiếng Trung':'Lớp '+item.grade}</span>
       </div>
       <span class="rank-diamonds">💎 ${item.diamonds.toLocaleString('vi-VN')}</span>
     </div>`;
@@ -31,18 +34,28 @@ function syncTabs() {
 }
 
 async function load() {
+  const current = ++requestId;
   syncTabs();
+  myRanking.hidden = true;
   listEl.innerHTML = '<div class="loading">Đang tải bảng xếp hạng…</div>';
   try {
-    const query = queryString({ range, limit: 50, grade: gradeFilter.value });
+    const query = queryString({ range, limit: 50, ...(chinese?{program:'chinese'}:{grade:gradeFilter.value}) });
     const payload = await api(`/api/v1/diamonds/leaderboard${query}`);
+    if(current!==requestId)return;
     listEl.innerHTML = payload.data.length
       ? payload.data.map(row).join('')
       : emptyState('🏆', 'Chưa có ai trên bảng', 'Hãy là người đầu tiên nhận kim cương nhé!');
+    if(chinese){
+      const me=payload.data.find(item=>item.profileId===myId);
+      myRanking.textContent=me?`Bạn đang ở hạng #${me.rank} · ${me.diamonds.toLocaleString('vi-VN')} kim cương`:'Cùng học để góp mặt trong top 50 nhé!';
+      myRanking.hidden=false;
+    }
   } catch (error) {
-    listEl.innerHTML = emptyState('😿', 'Không tải được bảng xếp hạng', error.message);
+    if(current!==requestId)return;
+    listEl.innerHTML = emptyState('😿', 'Không tải được bảng xếp hạng', error.message)+'<button class="btn btn-ghost" type="button" data-retry-ranking>Thử lại</button>';
   }
 }
+listEl.addEventListener('click',event=>{if(event.target.closest('[data-retry-ranking]'))load();});
 
 rangeTabs.addEventListener('click', (event) => {
   const button = event.target.closest('[data-range]');
@@ -56,6 +69,16 @@ gradeFilter.addEventListener('change', load);
 async function main() {
   const profile = await initPage('student', 'leaderboard');
   myId = profile.id;
+  chinese = profile.course?.kind === 'chinese';
+  if(chinese){
+    document.title='Xếp hạng Tiếng Trung — TTNAVA';
+    document.body.classList.add('chinese-leaderboard');
+    document.getElementById('ranking-eyebrow').textContent='CHĂM HỌC MỖI NGÀY';
+    document.getElementById('ranking-title').textContent='Đua kim cương Tiếng Trung';
+    document.getElementById('ranking-description').textContent='Cùng bạn bè chinh phục bảng xếp hạng!';
+    document.getElementById('ranking-filters').hidden=true;
+    document.getElementById('ranking-note').hidden=false;
+  }
   await load();
 }
 

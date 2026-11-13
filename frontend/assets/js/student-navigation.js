@@ -5,7 +5,8 @@ const extras=[['today','/pages/student/today/','Học hôm nay'],['progress','/p
 export function studentNavigation(active,profile){
  const chinese=profile?.course?.kind==='chinese';
  const destinations=sections.map(entry=>chinese&&entry[0]==='home'?['home','/pages/student/courses/?program=chinese','Khóa học','⌂']:chinese&&entry[0]==='learning'?['learning','/pages/student/chinese/','Bài học','▤']:entry);
- const key=['practice','chinese','worksheets'].includes(active)?'learning':['exam','challenge','leaderboard'].includes(active)?'arena':['today','progress'].includes(active)?'home':['family','history','diamonds','assignments','lab'].includes(active)?'personal':active;
+ if(chinese)destinations.splice(3,0,['leaderboard','/pages/student/leaderboard/','Xếp hạng','💎']);
+ const key=chinese&&active==='leaderboard'?'leaderboard':['practice','chinese','worksheets'].includes(active)?'learning':['exam','challenge','leaderboard'].includes(active)?'arena':['today','progress'].includes(active)?'home':['family','history','diamonds','assignments','lab'].includes(active)?'personal':active;
  const item=([k,href,label,icon])=>`<a class="nav-link" href="${href}"${key===k?' aria-current="page"':''}><span class="student-nav-icon" aria-hidden="true">${studentNavigationIcon(k,icon||'·')}</span><span>${label}</span></a>`;
  return `<nav class="student-navigation" aria-label="Điều hướng chính"><p class="student-nav-label">GÓC HỌC TẬP</p><div class="student-primary-nav" data-count="${destinations.length}">${destinations.map(item).join('')}</div><details class="student-more" open><summary>Khám phá & tiến bộ</summary><div class="student-personal-nav">${extras.map(item).join('')}</div></details><div class="student-sidebar-note"><img src="/assets/images/mascot-lion.svg" width="100" height="108" alt=""><strong>Mỗi ngày một chút,</strong><span>mình sẽ giỏi hơn!</span></div></nav>`;
 }

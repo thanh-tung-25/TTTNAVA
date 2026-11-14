@@ -20,6 +20,10 @@ const ADMIN_NAV = [
 
 let currentProfile = null;
 let diamondTotal = null;
+let diamondPrograms = null;
+let diamondProgram = null;
+let diamondRequest = 0;
+const programLabels = {primary:'Tiểu học',secondary:'THCS',chinese:'Tiếng Trung'};
 
 function renderHeader(profile, role, active) {
   if(active==='worksheets')active='questions';
@@ -78,11 +82,19 @@ export async function initPage(role, active) {
     throw new Error('SAI_VAI_TRO');
   }
   currentProfile = profile;
+  diamondTotal = null;
+  diamondPrograms = null;
+  diamondRequest++;
   if(role==='admin'&&!adminSections(profile).includes(active==='worksheets'?'questions':active)) {
     window.location.replace(adminHome(profile));
     throw new Error('Bạn không có quyền quản lý phần này.');
   }
   if(role==='student')await courseProfile(profile,active);
+  diamondProgram=Object.hasOwn(programLabels,profile.course?.kind)?profile.course.kind:null;
+  if(active==='courses'){
+    const program=new URLSearchParams(location.search).get('program');
+    diamondProgram=Object.hasOwn(programLabels,program)?program:null;
+  }
   if(role==='student'){
     document.body.dataset.program=profile.course?.kind||'';
     if(profile.course?.kind==='chinese'&&!document.querySelector('link[data-chinese-simple]')){const style=document.createElement('link');style.rel='stylesheet';style.href='/assets/css/chinese-simple.css';style.dataset.chineseSimple='true';document.head.append(style);}
@@ -93,7 +105,7 @@ export async function initPage(role, active) {
   renderHeader(profile, role, active);
   import('./learning-feedback.js').then(({setupFeedback})=>setupFeedback(profile)).catch(()=>{});
   if(role==='student'||role==='admin')import('./chat-widget.js').then(({setupChat})=>setupChat(profile)).catch(()=>{});
-  if (role === 'student') loadDiamonds();
+  if (role === 'student') {updateDiamondChip();loadDiamonds();}
   return profile;
 }
 
@@ -102,10 +114,10 @@ export function getProfile() {
 }
 
 async function loadDiamonds() {
+  const request=++diamondRequest;
   try {
     const payload = await api('/api/v1/diamonds/summary');
-    diamondTotal = payload.data.total;
-    updateDiamondChip();
+    if(request===diamondRequest)setDiamondTotal(payload.data.total,payload.data.programs);
   } catch {
     // Không chặn trang nếu chưa tải được kim cương.
   }
@@ -114,19 +126,24 @@ async function loadDiamonds() {
 export function updateDiamondChip() {
   const chip = document.getElementById('diamond-chip');
   if (!chip) return;
-  chip.querySelector('span').textContent = new Intl.NumberFormat('vi-VN').format(diamondTotal ?? 0);
+  const total=diamondProgram?diamondPrograms?.[diamondProgram]?.total:diamondTotal;
+  const label=diamondProgram?'Kim cương '+programLabels[diamondProgram]:'Tổng kim cương của con';
+  const text=total==null?'…':new Intl.NumberFormat('vi-VN').format(total);
+  chip.querySelector('span').textContent=text;
+  chip.title=label;chip.setAttribute('aria-label',label+': '+text);chip.dataset.program=diamondProgram||'all';
 }
 
-export function setDiamondTotal(value) {
+export function setDiamondTotal(value,programs) {
   diamondTotal = Number(value) || 0;
+  if(programs)diamondPrograms=programs;
+  updateDiamondChip();
+}
+
+export function setDiamondProgram(program) {
+  diamondProgram=Object.hasOwn(programLabels,program)?program:null;
   updateDiamondChip();
 }
 
 export async function syncDiamondTotal() {
-  try {
-    const payload = await api('/api/v1/diamonds/summary');
-    setDiamondTotal(payload.data.total);
-  } catch {
-    // Không chặn màn hình kết quả nếu chưa tải được số kim cương.
-  }
+  await loadDiamonds();
 }

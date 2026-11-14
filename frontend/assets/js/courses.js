@@ -1,5 +1,5 @@
 import {api,el,formatDate} from './api.js';
-import {initPage} from './ui-core.js';
+import {initPage,setDiamondProgram} from './ui-core.js';
 import {enterCourse} from './course-context.js';
 import {paymentQrView} from './payment-qr-view.js';
 const grid=document.querySelector('#course-grid'),orders=document.querySelector('#course-orders'),dialog=document.querySelector('#course-dialog'),detail=document.querySelector('#course-detail'),notice=document.querySelector('#course-notice');
@@ -56,8 +56,12 @@ async function refresh(){
   ...(o.status==='pending'?[button('Hủy yêu cầu',async event=>{const b=event.currentTarget;b.disabled=true;try{await api('/api/v1/courses/orders/'+o.id+'/cancel',{method:'POST'});await refresh();}catch(e){notice.textContent=e.message;}finally{b.disabled=false;}})]:[]),
  ])):[el('p',{class:'muted',text:'Chưa có yêu cầu đăng ký. Chọn khóa học để xem nội dung và hướng dẫn.'})]));
 }
-document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{filter=b.dataset.kind;document.querySelectorAll('[data-kind]').forEach(other=>other.setAttribute('aria-pressed',String(other===b)));document.querySelector('#course-heading').textContent='Khóa học '+({primary:'Tiểu học',secondary:'THCS',chinese:'Tiếng Trung'}[filter]);renderCourses();});
-document.querySelector('#all-courses').onclick=()=>{filter='';document.querySelectorAll('[data-kind]').forEach(b=>b.setAttribute('aria-pressed','false'));document.querySelector('#course-heading').textContent='Tất cả khóa học';renderCourses();};
+function syncProgram(){
+ setDiamondProgram(filter);
+ const url=new URL(location.href);if(filter)url.searchParams.set('program',filter);else url.searchParams.delete('program');history.replaceState(null,'',url.pathname+url.search+url.hash);
+}
+document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{filter=b.dataset.kind;syncProgram();document.querySelectorAll('[data-kind]').forEach(other=>other.setAttribute('aria-pressed',String(other===b)));document.querySelector('#course-heading').textContent='Khóa học '+({primary:'Tiểu học',secondary:'THCS',chinese:'Tiếng Trung'}[filter]);renderCourses();});
+document.querySelector('#all-courses').onclick=()=>{filter='';syncProgram();document.querySelectorAll('[data-kind]').forEach(b=>b.setAttribute('aria-pressed','false'));document.querySelector('#course-heading').textContent='Tất cả khóa học';renderCourses();};
 document.querySelector('.dialog-close').onclick=()=>dialog.close();
 document.querySelector('#refresh-orders').onclick=()=>refresh().catch(e=>notice.textContent=e.message);
 initPage('student','courses').then(async user=>{profile=user;const params=new URLSearchParams(location.search);if(params.has('locked'))notice.textContent='Khóa học này chưa được mở hoặc đã hết hạn. Con chọn khóa học để đăng ký nhé!';await refresh();const kind=params.get('program');if(['primary','secondary','chinese'].includes(kind))document.querySelector('[data-kind='+kind+']').click();}).catch(e=>notice.textContent=e.message);

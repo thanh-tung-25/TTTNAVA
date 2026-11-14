@@ -36,6 +36,38 @@ export async function diamondTotals(profileId) {
   };
 }
 
+export async function diamondProgramTotals(profileId) {
+  // Attribute rewards to the activity that earned them, independent of the
+  // learner's current grade, selected course or enrollment status.
+  const rows = await query(
+    `SELECT earned.program,
+       COALESCE(SUM(earned.amount),0) AS total,
+       COALESCE(SUM(CASE WHEN earned.created_at>=? AND earned.amount>0 THEN earned.amount ELSE 0 END),0) AS week,
+       COALESCE(SUM(CASE WHEN earned.created_at>=? AND earned.amount>0 THEN earned.amount ELSE 0 END),0) AS month
+     FROM (
+       SELECT dl.amount,dl.created_at,CASE
+         WHEN dl.ref_type='chinese' THEN 'chinese'
+         WHEN dl.ref_type='quest' THEN qc.kind
+         WHEN COALESCE(t.grade,ch.grade) BETWEEN 1 AND 5 THEN 'primary'
+         WHEN COALESCE(t.grade,ch.grade) BETWEEN 6 AND 9 THEN 'secondary'
+         ELSE NULL END AS program
+       FROM diamond_ledger dl
+       LEFT JOIN student_quest_claims sq ON dl.ref_type='quest' AND sq.id=dl.ref_id AND sq.profile_id=dl.profile_id
+       LEFT JOIN courses qc ON qc.id=sq.course_id
+       LEFT JOIN practice_sessions ps ON dl.ref_type='practice' AND ps.id=dl.ref_id AND ps.student_id=dl.profile_id
+       LEFT JOIN exam_attempts ea ON dl.ref_type='exam' AND ea.id=dl.ref_id AND ea.student_id=dl.profile_id
+       LEFT JOIN topics t ON t.id=COALESCE(ps.topic_id,ea.topic_id)
+       LEFT JOIN challenges ch ON dl.ref_type='challenge' AND ch.id=dl.ref_id AND (ch.challenger_id=dl.profile_id OR ch.opponent_id=dl.profile_id)
+       WHERE dl.profile_id=?
+     ) earned
+     WHERE earned.program IN ('primary','secondary','chinese') GROUP BY earned.program`,
+    [vnRange('week').start,vnRange('month').start,profileId],
+  );
+  const programs=Object.fromEntries(['primary','secondary','chinese'].map(kind=>[kind,{total:0,week:0,month:0}]));
+  for(const row of rows)programs[row.program]={total:Number(row.total),week:Number(row.week),month:Number(row.month)};
+  return programs;
+}
+
 export async function recentLedger(profileId, limit = 20) {
   const rows = await query(
     `SELECT id, amount, reason, ref_type, ref_id, created_at
@@ -54,10 +86,8 @@ export async function recentLedger(profileId, limit = 20) {
 }
 
 export async function getDiamondSummary(profileId) {
-  return {
-    ...(await diamondTotals(profileId)),
-    recent: await recentLedger(profileId, 20),
-  };
+  const [totals,programs,recent]=await Promise.all([diamondTotals(profileId),diamondProgramTotals(profileId),recentLedger(profileId,20)]);
+  return {...totals,programs,recent};
 }
 
 export async function getLeaderboard(range = 'week', limit = 50, grade = null, program = null) {

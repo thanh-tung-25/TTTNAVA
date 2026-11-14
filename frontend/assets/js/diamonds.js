@@ -33,7 +33,7 @@ async function main() {
   await initPage('student', 'diamonds');
   const payload = await api('/api/v1/diamonds/summary');
   const data = payload.data;
-  setDiamondTotal(data.total);
+  setDiamondTotal(data.total,data.programs);
   document.getElementById('diamond-total').textContent = data.total.toLocaleString('vi-VN');
   document.getElementById('diamond-week').textContent = `Tuần này: ${data.week.toLocaleString('vi-VN')}`;
   document.getElementById('diamond-month').textContent = `Tháng này: ${data.month.toLocaleString('vi-VN')}`;

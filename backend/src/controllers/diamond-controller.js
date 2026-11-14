@@ -10,7 +10,7 @@ const leaderboardQuery = z.object({
 });
 
 export const summaryHandler = asyncHandler(async (request, response) => {
-  response.json({ data: await getDiamondSummary(request.user.id) });
+  response.set('Cache-Control','private, no-store').json({ data: await getDiamondSummary(request.user.id) });
 });
 
 export const leaderboardHandler = asyncHandler(async (request, response) => {

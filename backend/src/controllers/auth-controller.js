@@ -6,6 +6,8 @@ import {requestRegistrationOtp,completeRegistration} from '../services/public-re
 import { publicProfile } from '../utils/serializers.js';
 import { asyncHandler } from '../utils/errors.js';
 import {recordUserAccess} from '../services/user-access-history.js';
+import {forgetDevice} from '../services/chat-push.js';
+import {readToken} from '../middlewares/auth.js';
 
 const COOKIE_MAX_AGE = 7 * 24 * 60 * 60 * 1000;
 
@@ -27,6 +29,7 @@ export const loginHandler = asyncHandler(async (request, response) => {
 });
 
 export const logoutHandler = asyncHandler(async (request, response) => {
+  await forgetDevice(request.user?.id,request.get('X-Chat-Device'),readToken(request));
   await recordUserAccess(request.user,'logout',request);
   response.clearCookie(env.cookie.name, cookieOptions());
   response.json({ data: { loggedOut: true } });

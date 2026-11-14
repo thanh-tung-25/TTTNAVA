@@ -22,7 +22,7 @@ Nhóm tối đa 20 người. Trưởng nhóm thêm/bỏ thành viên và đổi 
 
 Người dùng báo cáo từng tin nhắn và nhập lý do. Quản trị viên cấp **super** có mục **Báo cáo chat** trong menu khung chat, xem các tin đã được báo cáo, gỡ tin hoặc đánh dấu đã xử lý. Các admin chỉ phụ trách môn không được xem báo cáo chat. Gỡ tin thay nội dung người dùng thấy bằng thông báo đã gỡ; dữ liệu gốc vẫn có thể được admin xem trong báo cáo. Tính năng không tự động lọc/chấm nội dung trước khi gửi.
 
-Giao diện cập nhật mỗi 4 giây khi mở, mỗi 12 giây khi đóng, ngừng tải khi tab ẩn. Đây là polling HTTP, hoạt động cả khi hosting không hỗ trợ WebSocket; không yêu cầu một máy chủ socket riêng. API giới hạn tần suất gửi, tạo nhóm, tìm kiếm và báo cáo. Chưa có push notification, trạng thái online, ảnh, âm thanh hay cuộc gọi.
+Giao diện tin nhắn cập nhật mỗi 4 giây khi mở, mỗi 12 giây khi đóng, ngừng tải khi tab ẩn. Đây là polling HTTP, không yêu cầu một máy chủ socket riêng. API giới hạn tần suất gửi, tạo nhóm, tìm kiếm và báo cáo. Gọi thoại/video riêng và Web Push là tính năng tùy chọn, chỉ bật sau khi cấu hình dịch vụ; xem [hướng dẫn cuộc gọi](chat-calls.md). Chưa có trạng thái online hoặc tệp/ảnh đính kèm.
 
 ## Triển khai
 

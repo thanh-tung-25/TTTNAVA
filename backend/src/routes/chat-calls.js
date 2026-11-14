@@ -1,0 +1,26 @@
+import {Router} from 'express';
+import {authenticateToken,requirePlayer,requireSuperAdmin,readToken} from '../middlewares/auth.js';
+import {rateLimit} from '../middlewares/rate-limit.js';
+import {asyncHandler} from '../utils/errors.js';
+import * as calls from '../services/chat-calls.js';
+import * as push from '../services/chat-push.js';
+
+const router=Router(),h=fn=>asyncHandler(async(req,res)=>res.json({data:await fn(req)}));
+router.use(authenticateToken,(_req,res,next)=>{res.set('Cache-Control','no-store');next();});
+router.get('/reports',requireSuperAdmin,h(()=>calls.reports()));
+router.put('/reports/:id',requireSuperAdmin,h(r=>calls.resolveReport(r.params.id)));
+router.use(requirePlayer);
+router.get('/config',h(r=>calls.config(r.user.id)));
+router.get('/incoming',rateLimit({max:45,keyPrefix:'call-incoming'}),h(r=>calls.incoming(r.user.id)));
+router.get('/history',h(r=>calls.history(r.user.id,r.query.room_id)));
+router.put('/preferences',rateLimit({max:10,keyPrefix:'call-prefs'}),h(r=>calls.preferences(r.user.id,r.body)));
+router.post('/push',rateLimit({max:10,keyPrefix:'call-push'}),h(r=>push.subscribe(r.user.id,r.body,readToken(r))));
+router.delete('/push',h(r=>push.unsubscribe(r.user.id,r.body)));
+router.post('/',rateLimit({max:6,keyPrefix:'call-start'}),h(r=>calls.create(r.user.id,r.body)));
+router.post('/:id/poll',rateLimit({max:90,keyPrefix:'call-poll'}),h(r=>calls.poll(r.user.id,r.params.id,r.body)));
+router.post('/:id/credentials',rateLimit({max:6,keyPrefix:'call-credentials'}),h(r=>calls.credentials(r.user.id,r.params.id,r.body)));
+router.put('/:id/accept',rateLimit({max:6,keyPrefix:'call-accept'}),h(r=>calls.accept(r.user.id,r.params.id,r.body)));
+router.put('/:id/signal',rateLimit({max:12,keyPrefix:'call-signal'}),h(r=>calls.signal(r.user.id,r.params.id,r.body)));
+router.post('/:id/end',rateLimit({max:15,keyPrefix:'call-end'}),h(r=>calls.end(r.user.id,r.params.id,r.body)));
+router.post('/:id/report',rateLimit({max:5,keyPrefix:'call-report'}),h(r=>calls.report(r.user.id,r.params.id,r.body)));
+export default router;

@@ -4,6 +4,7 @@ backend/node_modules/
 backend/.env
 backend/.env.supabase
 backend/.env.vercel
+backend/.env.chat-push
 *.log
 coverage/
 playwright-report/

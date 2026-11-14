@@ -1,5 +1,6 @@
 import {api,el,avatarUrl} from './api.js';
 import {movableChat} from './chat-position.js';
+import {setupChatCalls} from './chat-calls.js';
 const paths={chat:'M7 18l-3 3v-6a8 8 0 1 1 3 3Z',back:'m14 6-6 6 6 6',close:'M6 12h12',send:'m3 3 18 9-18 9 4-9-4-9Zm4 9h14',more:'M5 12h.01M12 12h.01M19 12h.01',people:'M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8m13 10v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75',plus:'M12 5v14M5 12h14'};
 const icon=name=>el('span',{class:'chat-icon','aria-hidden':'true',html:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="${paths[name]||paths.chat}"/></svg>`});
 const call=async(path='',method='GET',body)=>(await api('/api/v1/chat'+path,{method,body})).data;
@@ -17,6 +18,8 @@ export function setupChat(profile){
  const header=el('header',{class:'chat-header',title:'Kéo thanh này để di chuyển khung trò chuyện'},[back,el('div',{class:'chat-identity'},[headerAvatar,el('div',{},[heading,subtitle])]),tools,iconButton('Đóng','close',close)]);
  panel.append(header,notice,body);
  const widget=el('div',{id:'chat-widget'},[toggle,panel]);
+ const calls=setupChatCalls({profile,notice:text=>{notice.textContent=text;}});
+ tools.before(calls.controls);
  const dock=(profile.role==='student'&&document.body.classList.contains('student-unified')||profile.role==='admin'&&document.body.classList.contains('admin-unified'))?document.querySelector('.topbar-user'):null;
  (dock||document.body).append(widget);if(dock){widget.dataset.docked='true';toggle.title='Trò chuyện';}
  const position=movableChat(toggle,panel,header,profile.id);
@@ -24,7 +27,7 @@ export function setupChat(profile){
  const drafts=new Map();let input,thread,sendButton,sending=false,pending=null;
  const roomTitle=r=>r.kind==='group'?r.title:r.peer?.display_name||'Bạn học';
  const avatar=u=>el('img',{class:'chat-avatar',src:avatarUrl(u?.avatar_key||u?.avatarKey),alt:'',loading:'lazy'});
- function headerMode(detail=false){back.hidden=!detail;headerAvatar.src=detail&&room?.kind==='direct'?avatarUrl(room.peer?.avatar_key):'/assets/images/mascot-panda.svg';subtitle.textContent=detail?(room?.kind==='group'?room.members.length+' bạn cùng học':'Cùng nhau tiến bộ'):'Góc nhỏ cùng học';tools.open=false;toolItems.replaceChildren(btn('Đưa khung về vị trí mặc định',()=>position.reset()));}
+ function headerMode(detail=false){back.hidden=!detail;calls.setRoom(detail?room:null);headerAvatar.src=detail&&room?.kind==='direct'?avatarUrl(room.peer?.avatar_key):'/assets/images/mascot-panda.svg';subtitle.textContent=detail?(room?.kind==='group'?room.members.length+' bạn cùng học':'Cùng nhau tiến bộ'):'Góc nhỏ cùng học';tools.open=false;toolItems.replaceChildren(btn('Đưa khung về vị trí mặc định',()=>position.reset()),btn('Cài đặt cuộc gọi',async()=>{mode='call-settings';heading.textContent='Cài đặt cuộc gọi';back.hidden=false;tools.open=false;body.replaceChildren(await calls.settings());}));}
  const badge=toggle.querySelector('.chat-badge');
  const run=async fn=>{try{await fn();}catch(e){notice.textContent=e.message;}};
  let syncNotice='',syncFailures=0,nextSyncAt=0;
@@ -37,7 +40,7 @@ export function setupChat(profile){
  }
  async function fetchRooms(){[rooms,contacts]=await Promise.all([call('/rooms'),call('/friends')]);const total=rooms.reduce((s,r)=>s+r.unread,0)+contacts.filter(p=>p.friendship==='incoming').length;badge.hidden=!total;badge.textContent=total>99?'99+':String(total);}
  function list(){mode='list';room=null;heading.textContent='Trò chuyện';headerMode();toolItems.prepend(btn('Người đã chặn',blocked));
-  if(moderator)toolItems.prepend(btn('Báo cáo chat',reports));
+  if(moderator){toolItems.prepend(btn('Báo cáo chat',reports));if(calls.enabled())toolItems.prepend(btn('Báo cáo cuộc gọi',async()=>{mode='call-reports';heading.textContent='Báo cáo cuộc gọi';back.hidden=false;tools.open=false;body.replaceChildren(await calls.moderation());}));}
   const direct=btn('Nhắn riêng',()=>compose(false),'chat-new');direct.prepend(icon('chat'));const group=btn('Tạo nhóm học',()=>compose(true),'chat-new');group.prepend(icon('people'));
   const incoming=contacts.filter(p=>p.friendship==='incoming').length,friendButton=btn('Bạn bè'+(incoming?' · '+incoming+' lời mời':''),()=>friendsView(),'chat-new');friendButton.prepend(icon('plus'));
   body.replaceChildren(el('div',{class:'chat-actions chat-start'},[direct,group,friendButton]));
@@ -52,6 +55,7 @@ export function setupChat(profile){
  async function openRoom(id){
   if(input&&room)drafts.set(room.id,input.value);await fetchRooms();room=rooms.find(r=>r.id===id);if(!room){list();return;}
   mode='room';messages=[];notice.textContent='';heading.textContent=roomTitle(room);headerMode(true);
+  if(calls.enabled()&&room.kind==='direct')toolItems.prepend(btn('Lịch sử cuộc gọi',async()=>{mode='call-history';tools.open=false;body.replaceChildren(btn('← Tin nhắn',()=>openRoom(id)),await calls.history(id));}));
   toolItems.prepend(...(room.kind==='group'?[btn('Thành viên',members)]:[btn(room.blocked?'Thông tin chặn':'Chặn bạn này',async()=>{if(room.blocked){await blocked();return;}if(!confirm('Chặn bạn này? Hai người sẽ không thể nhắn riêng cho nhau.'))return;await call('/blocks/'+room.peer.id,'PUT');await openRoom(id);})]));body.replaceChildren();
   thread=el('div',{class:'chat-thread','aria-label':'Tin nhắn',role:'log','aria-live':'off'});
   input=el('textarea',{class:'chat-input',rows:1,maxlength:2000,placeholder:'Viết lời nhắn…','aria-label':'Tin nhắn'});input.value=drafts.get(id)||'';

@@ -58,6 +58,9 @@ export function createApp() {
   app.get('/manifest.webmanifest',(_request,response)=>response.type('application/manifest+json').sendFile(path.join(frontendRoot,'assets','manifest.webmanifest')));
   app.get('/apple-touch-icon.png',(_request,response)=>response.sendFile(path.join(frontendRoot,'assets','icons','apple-touch-icon.png')));
   app.get('/favicon.ico',(_request,response)=>response.sendFile(path.join(frontendRoot,'assets','icons','favicon.ico')));
+  app.get('/chat-sw.js',(_request,response)=>{
+    response.set({'Cache-Control':'no-cache','Service-Worker-Allowed':'/'}).type('text/javascript').sendFile(path.join(frontendRoot,'assets','js','chat-sw.js'));
+  });
 
   app.get('/', async (request, response) => {
     try {

@@ -1,0 +1,4271 @@
+{
+  "version": "user-vocabulary-2026-11-14",
+  "lesson": 7,
+  "title": "第七课：中国银行在哪儿？ (Ngân hàng Trung Quốc ở đâu?)",
+  "vocabulary": [
+    {
+      "hanzi": "附近",
+      "pinyin": "fùjìn",
+      "meaning": "Gần đây, lân cận",
+      "group": "main",
+      "example": "附近有银行吗？",
+      "example_meaning": "Gần đây có ngân hàng không?"
+    },
+    {
+      "hanzi": "银行",
+      "pinyin": "yínháng",
+      "meaning": "Ngân hàng",
+      "group": "main",
+      "example": "附近有银行吗？",
+      "example_meaning": "Gần đây có ngân hàng không?"
+    },
+    {
+      "hanzi": "寄",
+      "pinyin": "jì",
+      "meaning": "Gửi",
+      "group": "main",
+      "example": "我去邮局寄快递。",
+      "example_meaning": "Tôi đến bưu điện gửi chuyển phát nhanh."
+    },
+    {
+      "hanzi": "快递",
+      "pinyin": "kuàidì",
+      "meaning": "Chuyển phát nhanh",
+      "group": "main",
+      "example": "我去邮局寄快递。",
+      "example_meaning": "Tôi đến bưu điện gửi chuyển phát nhanh."
+    },
+    {
+      "hanzi": "收",
+      "pinyin": "shōu",
+      "meaning": "Nhận, thu",
+      "group": "main"
+    },
+    {
+      "hanzi": "取",
+      "pinyin": "qǔ",
+      "meaning": "Lấy, rút",
+      "group": "main",
+      "example": "我想去银行取钱。",
+      "example_meaning": "Tôi muốn đến ngân hàng rút tiền."
+    },
+    {
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "meaning": "Nhà; lượng từ cho cửa hàng, công ty",
+      "group": "main",
+      "example": "这家商店很大。",
+      "example_meaning": "Cửa hàng này rất lớn."
+    },
+    {
+      "hanzi": "房子",
+      "pinyin": "fángzi",
+      "meaning": "Ngôi nhà",
+      "group": "main",
+      "example": "房子里面有电脑。",
+      "example_meaning": "Bên trong ngôi nhà có máy tính."
+    },
+    {
+      "hanzi": "房间",
+      "pinyin": "fángjiān",
+      "meaning": "Căn phòng",
+      "group": "main",
+      "example": "这个房间很好。",
+      "example_meaning": "Căn phòng này rất tốt."
+    },
+    {
+      "hanzi": "超市",
+      "pinyin": "chāoshì",
+      "meaning": "Siêu thị",
+      "group": "main",
+      "example": "书店在超市旁边。",
+      "example_meaning": "Hiệu sách ở bên cạnh siêu thị."
+    },
+    {
+      "hanzi": "市场",
+      "pinyin": "shìchǎng",
+      "meaning": "Chợ",
+      "group": "main",
+      "example": "我们一起去市场。",
+      "example_meaning": "Chúng ta cùng đi chợ."
+    },
+    {
+      "hanzi": "书店",
+      "pinyin": "shūdiàn",
+      "meaning": "Hiệu sách",
+      "group": "main",
+      "example": "书店在超市旁边。",
+      "example_meaning": "Hiệu sách ở bên cạnh siêu thị."
+    },
+    {
+      "hanzi": "店",
+      "pinyin": "diàn",
+      "meaning": "Cửa hàng, tiệm",
+      "group": "main",
+      "example": "书店在超市旁边。",
+      "example_meaning": "Hiệu sách ở bên cạnh siêu thị."
+    },
+    {
+      "hanzi": "商店",
+      "pinyin": "shāngdiàn",
+      "meaning": "Cửa hàng",
+      "group": "main",
+      "example": "这家商店很大。",
+      "example_meaning": "Cửa hàng này rất lớn."
+    },
+    {
+      "hanzi": "商场",
+      "pinyin": "shāngchǎng",
+      "meaning": "Trung tâm thương mại",
+      "group": "main",
+      "example": "我跟朋友去商场。",
+      "example_meaning": "Tôi đi trung tâm thương mại cùng bạn."
+    },
+    {
+      "hanzi": "就",
+      "pinyin": "jiù",
+      "meaning": "Chính là, ngay, liền",
+      "group": "main",
+      "example": "银行就在公司对面。",
+      "example_meaning": "Ngân hàng ở ngay đối diện công ty."
+    },
+    {
+      "hanzi": "送",
+      "pinyin": "sòng",
+      "meaning": "Tặng, đưa, tiễn",
+      "group": "main",
+      "example": "我给你送水果。",
+      "example_meaning": "Tôi mang hoa quả đến cho bạn."
+    },
+    {
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "meaning": "Cho",
+      "group": "main",
+      "example": "我给你送水果。",
+      "example_meaning": "Tôi mang hoa quả đến cho bạn."
+    },
+    {
+      "hanzi": "接",
+      "pinyin": "jiē",
+      "meaning": "Đón, nhận",
+      "group": "main",
+      "example": "我在门口接你。",
+      "example_meaning": "Tôi đón bạn ở cửa ra vào."
+    },
+    {
+      "hanzi": "住",
+      "pinyin": "zhù",
+      "meaning": "Sống, ở",
+      "group": "main",
+      "example": "我住在学校附近。",
+      "example_meaning": "Tôi sống ở gần trường học."
+    },
+    {
+      "hanzi": "跟",
+      "pinyin": "gēn",
+      "meaning": "Với, cùng",
+      "group": "main",
+      "example": "我跟朋友去商场。",
+      "example_meaning": "Tôi đi trung tâm thương mại cùng bạn."
+    },
+    {
+      "hanzi": "一起",
+      "pinyin": "yìqǐ",
+      "meaning": "Cùng nhau",
+      "group": "main",
+      "example": "我们一起去市场。",
+      "example_meaning": "Chúng ta cùng đi chợ."
+    },
+    {
+      "hanzi": "从",
+      "pinyin": "cóng",
+      "meaning": "Từ",
+      "group": "main",
+      "example": "从公司到银行很近。",
+      "example_meaning": "Từ công ty đến ngân hàng rất gần."
+    },
+    {
+      "hanzi": "往",
+      "pinyin": "wǎng",
+      "meaning": "Hướng về, đi về phía",
+      "group": "main",
+      "example": "请往前走。",
+      "example_meaning": "Xin đi về phía trước."
+    },
+    {
+      "hanzi": "前",
+      "pinyin": "qián",
+      "meaning": "Trước",
+      "group": "main",
+      "example": "请往前走。",
+      "example_meaning": "Xin đi về phía trước."
+    },
+    {
+      "hanzi": "后",
+      "pinyin": "hòu",
+      "meaning": "Sau",
+      "group": "main",
+      "example": "然后往右走。",
+      "example_meaning": "Sau đó đi về bên phải."
+    },
+    {
+      "hanzi": "拐",
+      "pinyin": "guǎi",
+      "meaning": "Rẽ",
+      "group": "main",
+      "example": "前面左拐。",
+      "example_meaning": "Rẽ trái ở phía trước."
+    },
+    {
+      "hanzi": "对面",
+      "pinyin": "duìmiàn",
+      "meaning": "Đối diện",
+      "group": "main",
+      "example": "银行就在公司对面。",
+      "example_meaning": "Ngân hàng ở ngay đối diện công ty."
+    },
+    {
+      "hanzi": "旁边",
+      "pinyin": "pángbiān",
+      "meaning": "Bên cạnh",
+      "group": "main",
+      "example": "书店在超市旁边。",
+      "example_meaning": "Hiệu sách ở bên cạnh siêu thị."
+    },
+    {
+      "hanzi": "外面",
+      "pinyin": "wàimiàn",
+      "meaning": "Bên ngoài",
+      "group": "main",
+      "example": "学校外面有商店。",
+      "example_meaning": "Bên ngoài trường học có cửa hàng."
+    },
+    {
+      "hanzi": "里面",
+      "pinyin": "lǐmiàn",
+      "meaning": "Bên trong",
+      "group": "main",
+      "example": "房子里面有电脑。",
+      "example_meaning": "Bên trong ngôi nhà có máy tính."
+    },
+    {
+      "hanzi": "米",
+      "pinyin": "mǐ",
+      "meaning": "Mét",
+      "group": "main"
+    },
+    {
+      "hanzi": "左边",
+      "pinyin": "zuǒbian",
+      "meaning": "Bên trái",
+      "group": "main",
+      "example": "中国银行在左边。",
+      "example_meaning": "Ngân hàng Trung Quốc ở bên trái."
+    },
+    {
+      "hanzi": "右边",
+      "pinyin": "yòubian",
+      "meaning": "Bên phải",
+      "group": "main",
+      "example": "酒店在右边。",
+      "example_meaning": "Khách sạn ở bên phải."
+    },
+    {
+      "hanzi": "东",
+      "pinyin": "dōng",
+      "meaning": "Đông",
+      "group": "main"
+    },
+    {
+      "hanzi": "西",
+      "pinyin": "xī",
+      "meaning": "Tây",
+      "group": "main"
+    },
+    {
+      "hanzi": "南",
+      "pinyin": "nán",
+      "meaning": "Nam",
+      "group": "main"
+    },
+    {
+      "hanzi": "北",
+      "pinyin": "běi",
+      "meaning": "Bắc",
+      "group": "main"
+    },
+    {
+      "hanzi": "边",
+      "pinyin": "biān",
+      "meaning": "Bên, phía",
+      "group": "main",
+      "example": "书店在超市旁边。",
+      "example_meaning": "Hiệu sách ở bên cạnh siêu thị."
+    },
+    {
+      "hanzi": "然后",
+      "pinyin": "ránhòu",
+      "meaning": "Sau đó",
+      "group": "main",
+      "example": "然后往右走。",
+      "example_meaning": "Sau đó đi về bên phải."
+    },
+    {
+      "hanzi": "最近",
+      "pinyin": "zuìjìn",
+      "meaning": "Gần đây, dạo này",
+      "group": "extended"
+    },
+    {
+      "hanzi": "邮局",
+      "pinyin": "yóujú",
+      "meaning": "Bưu điện",
+      "group": "extended",
+      "example": "我去邮局寄快递。",
+      "example_meaning": "Tôi đến bưu điện gửi chuyển phát nhanh."
+    },
+    {
+      "hanzi": "酒店",
+      "pinyin": "jiǔdiàn",
+      "meaning": "Khách sạn",
+      "group": "extended",
+      "example": "酒店在右边。",
+      "example_meaning": "Khách sạn ở bên phải."
+    },
+    {
+      "hanzi": "饭店",
+      "pinyin": "fàndiàn",
+      "meaning": "Nhà hàng",
+      "group": "extended"
+    },
+    {
+      "hanzi": "公司",
+      "pinyin": "gōngsī",
+      "meaning": "Công ty",
+      "group": "extended",
+      "example": "银行就在公司对面。",
+      "example_meaning": "Ngân hàng ở ngay đối diện công ty."
+    },
+    {
+      "hanzi": "一家公司",
+      "pinyin": "yì jiā gōngsī",
+      "meaning": "Một công ty",
+      "group": "extended"
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "meaning": "Trên, lên",
+      "group": "extended"
+    },
+    {
+      "hanzi": "下",
+      "pinyin": "xià",
+      "meaning": "Dưới, xuống",
+      "group": "extended"
+    },
+    {
+      "hanzi": "手",
+      "pinyin": "shǒu",
+      "meaning": "Tay",
+      "group": "extended"
+    },
+    {
+      "hanzi": "公里",
+      "pinyin": "gōnglǐ",
+      "meaning": "Kilômét",
+      "group": "extended"
+    },
+    {
+      "hanzi": "走",
+      "pinyin": "zǒu",
+      "meaning": "Đi",
+      "group": "extended",
+      "example": "请往前走。",
+      "example_meaning": "Xin đi về phía trước."
+    },
+    {
+      "hanzi": "左",
+      "pinyin": "zuǒ",
+      "meaning": "Trái",
+      "group": "extended",
+      "example": "前面左拐。",
+      "example_meaning": "Rẽ trái ở phía trước."
+    },
+    {
+      "hanzi": "右",
+      "pinyin": "yòu",
+      "meaning": "Phải",
+      "group": "extended",
+      "example": "然后往右走。",
+      "example_meaning": "Sau đó đi về bên phải."
+    },
+    {
+      "hanzi": "东边",
+      "pinyin": "dōngbian",
+      "meaning": "Phía đông",
+      "group": "extended"
+    },
+    {
+      "hanzi": "西边",
+      "pinyin": "xībian",
+      "meaning": "Phía tây",
+      "group": "extended"
+    },
+    {
+      "hanzi": "南边",
+      "pinyin": "nánbian",
+      "meaning": "Phía nam",
+      "group": "extended"
+    },
+    {
+      "hanzi": "北边",
+      "pinyin": "běibian",
+      "meaning": "Phía bắc",
+      "group": "extended"
+    },
+    {
+      "hanzi": "往前走",
+      "pinyin": "wǎng qián zǒu",
+      "meaning": "Đi về phía trước",
+      "group": "extended",
+      "example": "请往前走。",
+      "example_meaning": "Xin đi về phía trước."
+    },
+    {
+      "hanzi": "往左走",
+      "pinyin": "wǎng zuǒ zǒu",
+      "meaning": "Đi về bên trái",
+      "group": "extended"
+    },
+    {
+      "hanzi": "往右走",
+      "pinyin": "wǎng yòu zǒu",
+      "meaning": "Đi về bên phải",
+      "group": "extended",
+      "example": "然后往右走。",
+      "example_meaning": "Sau đó đi về bên phải."
+    },
+    {
+      "hanzi": "左拐",
+      "pinyin": "zuǒ guǎi",
+      "meaning": "Rẽ trái",
+      "group": "extended",
+      "example": "前面左拐。",
+      "example_meaning": "Rẽ trái ở phía trước."
+    },
+    {
+      "hanzi": "右拐",
+      "pinyin": "yòu guǎi",
+      "meaning": "Rẽ phải",
+      "group": "extended"
+    },
+    {
+      "hanzi": "中国银行",
+      "pinyin": "Zhōngguó Yínháng",
+      "meaning": "Ngân hàng Trung Quốc",
+      "group": "extended",
+      "example": "中国银行在左边。",
+      "example_meaning": "Ngân hàng Trung Quốc ở bên trái."
+    },
+    {
+      "hanzi": "北京银行",
+      "pinyin": "Běijīng Yínháng",
+      "meaning": "Ngân hàng Bắc Kinh",
+      "group": "extended"
+    },
+    {
+      "hanzi": "四川饭店",
+      "pinyin": "Sìchuān Fàndiàn",
+      "meaning": "Nhà hàng Tứ Xuyên",
+      "group": "extended"
+    },
+    {
+      "hanzi": "全家超市",
+      "pinyin": "Quánjiā Chāoshì",
+      "meaning": "Siêu thị FamilyMart",
+      "group": "extended"
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “附近” có nghĩa là gì?",
+      "options": [
+        "Ngân hàng Bắc Kinh",
+        "Gần đây, lân cận",
+        "Tây",
+        "Đi về phía trước"
+      ],
+      "accepted": [
+        "Gần đây, lân cận"
+      ],
+      "explanation": "附近 đọc là fùjìn, nghĩa là Gần đây, lân cận. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 368.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e53da027-7616-420a-8d62-6c397f19dca3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “fùjìn” và nghĩa “Gần đây, lân cận”.",
+      "options": [
+        "左边",
+        "从",
+        "附近",
+        "后"
+      ],
+      "accepted": [
+        "附近"
+      ],
+      "explanation": "附近 đọc là fùjìn, nghĩa là Gần đây, lân cận. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 368.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e53da027-7616-420a-8d62-6c397f19dca3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “银行” có nghĩa là gì?",
+      "options": [
+        "Nhà hàng Tứ Xuyên",
+        "Mét",
+        "Đối diện",
+        "Ngân hàng"
+      ],
+      "accepted": [
+        "Ngân hàng"
+      ],
+      "explanation": "银行 đọc là yínháng, nghĩa là Ngân hàng. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 369.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "29a7d5b8-e18c-4d1a-b992-0f51f824c9cb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “yínháng” và nghĩa “Ngân hàng”.",
+      "options": [
+        "走",
+        "最近",
+        "银行",
+        "送"
+      ],
+      "accepted": [
+        "银行"
+      ],
+      "explanation": "银行 đọc là yínháng, nghĩa là Ngân hàng. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 369.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "29a7d5b8-e18c-4d1a-b992-0f51f824c9cb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “寄” có nghĩa là gì?",
+      "options": [
+        "Bên phải",
+        "Cửa hàng",
+        "Rẽ",
+        "Gửi"
+      ],
+      "accepted": [
+        "Gửi"
+      ],
+      "explanation": "寄 đọc là jì, nghĩa là Gửi. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 370.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8670b860-eb19-419a-9dfd-068210ce1dfa"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “jì” và nghĩa “Gửi”.",
+      "options": [
+        "北边",
+        "寄",
+        "中国银行",
+        "银行"
+      ],
+      "accepted": [
+        "寄"
+      ],
+      "explanation": "寄 đọc là jì, nghĩa là Gửi. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 370.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8670b860-eb19-419a-9dfd-068210ce1dfa"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “快递” có nghĩa là gì?",
+      "options": [
+        "Sau đó",
+        "Chuyển phát nhanh",
+        "Trái",
+        "Đi về bên phải"
+      ],
+      "accepted": [
+        "Chuyển phát nhanh"
+      ],
+      "explanation": "快递 đọc là kuàidì, nghĩa là Chuyển phát nhanh. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 371.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a5d8abec-30eb-4e83-80f5-f63ed479cb3b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “kuàidì” và nghĩa “Chuyển phát nhanh”.",
+      "options": [
+        "快递",
+        "边",
+        "市场",
+        "北京银行"
+      ],
+      "accepted": [
+        "快递"
+      ],
+      "explanation": "快递 đọc là kuàidì, nghĩa là Chuyển phát nhanh. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 371.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a5d8abec-30eb-4e83-80f5-f63ed479cb3b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “收” có nghĩa là gì?",
+      "options": [
+        "Nhận, thu",
+        "Một công ty",
+        "Bưu điện",
+        "Công ty"
+      ],
+      "accepted": [
+        "Nhận, thu"
+      ],
+      "explanation": "收 đọc là shōu, nghĩa là Nhận, thu. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 372.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "79f0741d-17e0-439e-8031-d3a911ec8953"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “shōu” và nghĩa “Nhận, thu”.",
+      "options": [
+        "收",
+        "旁边",
+        "附近",
+        "市场"
+      ],
+      "accepted": [
+        "收"
+      ],
+      "explanation": "收 đọc là shōu, nghĩa là Nhận, thu. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 372.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "79f0741d-17e0-439e-8031-d3a911ec8953"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “取” có nghĩa là gì?",
+      "options": [
+        "Bên ngoài",
+        "Ngân hàng",
+        "Lấy, rút",
+        "Chợ"
+      ],
+      "accepted": [
+        "Lấy, rút"
+      ],
+      "explanation": "取 đọc là qǔ, nghĩa là Lấy, rút. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 373.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "249c7d02-729c-4a17-b88e-b70feccc33b5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “qǔ” và nghĩa “Lấy, rút”.",
+      "options": [
+        "商店",
+        "对面",
+        "西边",
+        "取"
+      ],
+      "accepted": [
+        "取"
+      ],
+      "explanation": "取 đọc là qǔ, nghĩa là Lấy, rút. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 373.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "249c7d02-729c-4a17-b88e-b70feccc33b5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “家” có nghĩa là gì?",
+      "options": [
+        "Nhà; lượng từ cho cửa hàng, công ty",
+        "Mét",
+        "Một công ty",
+        "Cho"
+      ],
+      "accepted": [
+        "Nhà; lượng từ cho cửa hàng, công ty"
+      ],
+      "explanation": "家 đọc là jiā, nghĩa là Nhà; lượng từ cho cửa hàng, công ty. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 374.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e2365169-9f2a-4480-ae57-6b3165d2b7dd"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “jiā” và nghĩa “Nhà; lượng từ cho cửa hàng, công ty”.",
+      "options": [
+        "前",
+        "家",
+        "右边",
+        "然后"
+      ],
+      "accepted": [
+        "家"
+      ],
+      "explanation": "家 đọc là jiā, nghĩa là Nhà; lượng từ cho cửa hàng, công ty. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 374.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e2365169-9f2a-4480-ae57-6b3165d2b7dd"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “房子” có nghĩa là gì?",
+      "options": [
+        "Trên, lên",
+        "Nhà hàng",
+        "Cửa hàng, tiệm",
+        "Ngôi nhà"
+      ],
+      "accepted": [
+        "Ngôi nhà"
+      ],
+      "explanation": "房子 đọc là fángzi, nghĩa là Ngôi nhà. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 375.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "942e4eea-3ec5-4345-b149-56d365bd2a90"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “fángzi” và nghĩa “Ngôi nhà”.",
+      "options": [
+        "房子",
+        "南",
+        "西边",
+        "北边"
+      ],
+      "accepted": [
+        "房子"
+      ],
+      "explanation": "房子 đọc là fángzi, nghĩa là Ngôi nhà. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 375.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "942e4eea-3ec5-4345-b149-56d365bd2a90"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “房间” có nghĩa là gì?",
+      "options": [
+        "Sống, ở",
+        "Cho",
+        "Căn phòng",
+        "Siêu thị"
+      ],
+      "accepted": [
+        "Căn phòng"
+      ],
+      "explanation": "房间 đọc là fángjiān, nghĩa là Căn phòng. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 376.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "03c8862f-3536-45ee-b827-84b599718d5e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “fángjiān” và nghĩa “Căn phòng”.",
+      "options": [
+        "家",
+        "东边",
+        "对面",
+        "房间"
+      ],
+      "accepted": [
+        "房间"
+      ],
+      "explanation": "房间 đọc là fángjiān, nghĩa là Căn phòng. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 376.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "03c8862f-3536-45ee-b827-84b599718d5e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “超市” có nghĩa là gì?",
+      "options": [
+        "Phía bắc",
+        "Hướng về, đi về phía",
+        "Siêu thị",
+        "Cùng nhau"
+      ],
+      "accepted": [
+        "Siêu thị"
+      ],
+      "explanation": "超市 đọc là chāoshì, nghĩa là Siêu thị. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 377.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "38ef01f9-eb91-4d08-bf58-e27781b91376"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “chāoshì” và nghĩa “Siêu thị”.",
+      "options": [
+        "商店",
+        "商场",
+        "市场",
+        "超市"
+      ],
+      "accepted": [
+        "超市"
+      ],
+      "explanation": "超市 đọc là chāoshì, nghĩa là Siêu thị. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 377.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "38ef01f9-eb91-4d08-bf58-e27781b91376"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “市场” có nghĩa là gì?",
+      "options": [
+        "Bên phải",
+        "Chợ",
+        "Kilômét",
+        "Rẽ phải"
+      ],
+      "accepted": [
+        "Chợ"
+      ],
+      "explanation": "市场 đọc là shìchǎng, nghĩa là Chợ. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 378.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "331aab69-ab33-4a07-a0ff-3c49316de551"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “shìchǎng” và nghĩa “Chợ”.",
+      "options": [
+        "市场",
+        "外面",
+        "然后",
+        "东边"
+      ],
+      "accepted": [
+        "市场"
+      ],
+      "explanation": "市场 đọc là shìchǎng, nghĩa là Chợ. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 378.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "331aab69-ab33-4a07-a0ff-3c49316de551"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “书店” có nghĩa là gì?",
+      "options": [
+        "Nhà hàng",
+        "Rẽ",
+        "Hiệu sách",
+        "Công ty"
+      ],
+      "accepted": [
+        "Hiệu sách"
+      ],
+      "explanation": "书店 đọc là shūdiàn, nghĩa là Hiệu sách. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 379.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d1e3f4e6-a4e6-451e-a062-6e56724ccf49"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “shūdiàn” và nghĩa “Hiệu sách”.",
+      "options": [
+        "书店",
+        "公司",
+        "家",
+        "南边"
+      ],
+      "accepted": [
+        "书店"
+      ],
+      "explanation": "书店 đọc là shūdiàn, nghĩa là Hiệu sách. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 379.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d1e3f4e6-a4e6-451e-a062-6e56724ccf49"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “店” có nghĩa là gì?",
+      "options": [
+        "Cửa hàng, tiệm",
+        "Gần đây, lân cận",
+        "Khách sạn",
+        "Phía bắc"
+      ],
+      "accepted": [
+        "Cửa hàng, tiệm"
+      ],
+      "explanation": "店 đọc là diàn, nghĩa là Cửa hàng, tiệm. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 380.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "40fb3845-c6af-42f5-baea-fc1d09ad7b20"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “diàn” và nghĩa “Cửa hàng, tiệm”.",
+      "options": [
+        "房间",
+        "左",
+        "往右走",
+        "店"
+      ],
+      "accepted": [
+        "店"
+      ],
+      "explanation": "店 đọc là diàn, nghĩa là Cửa hàng, tiệm. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 380.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "40fb3845-c6af-42f5-baea-fc1d09ad7b20"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “商店” có nghĩa là gì?",
+      "options": [
+        "Nhà; lượng từ cho cửa hàng, công ty",
+        "Đi về bên phải",
+        "Một công ty",
+        "Cửa hàng"
+      ],
+      "accepted": [
+        "Cửa hàng"
+      ],
+      "explanation": "商店 đọc là shāngdiàn, nghĩa là Cửa hàng. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 381.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c8b628b3-f327-411e-896d-6e333ea06c9c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “shāngdiàn” và nghĩa “Cửa hàng”.",
+      "options": [
+        "公里",
+        "右",
+        "边",
+        "商店"
+      ],
+      "accepted": [
+        "商店"
+      ],
+      "explanation": "商店 đọc là shāngdiàn, nghĩa là Cửa hàng. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 381.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c8b628b3-f327-411e-896d-6e333ea06c9c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “商场” có nghĩa là gì?",
+      "options": [
+        "Bên cạnh",
+        "Trung tâm thương mại",
+        "Phía nam",
+        "Phải"
+      ],
+      "accepted": [
+        "Trung tâm thương mại"
+      ],
+      "explanation": "商场 đọc là shāngchǎng, nghĩa là Trung tâm thương mại. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 382.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c92ee93c-fb78-42c5-8947-995aa930a5dd"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “shāngchǎng” và nghĩa “Trung tâm thương mại”.",
+      "options": [
+        "商场",
+        "前",
+        "中国银行",
+        "里面"
+      ],
+      "accepted": [
+        "商场"
+      ],
+      "explanation": "商场 đọc là shāngchǎng, nghĩa là Trung tâm thương mại. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 382.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c92ee93c-fb78-42c5-8947-995aa930a5dd"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “就” có nghĩa là gì?",
+      "options": [
+        "Mét",
+        "Chính là, ngay, liền",
+        "Một công ty",
+        "Trước"
+      ],
+      "accepted": [
+        "Chính là, ngay, liền"
+      ],
+      "explanation": "就 đọc là jiù, nghĩa là Chính là, ngay, liền. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 383.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e3d70b83-234f-48ef-bef7-f783672ea686"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “jiù” và nghĩa “Chính là, ngay, liền”.",
+      "options": [
+        "中国银行",
+        "下",
+        "就",
+        "银行"
+      ],
+      "accepted": [
+        "就"
+      ],
+      "explanation": "就 đọc là jiù, nghĩa là Chính là, ngay, liền. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 383.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e3d70b83-234f-48ef-bef7-f783672ea686"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “送” có nghĩa là gì?",
+      "options": [
+        "Tặng, đưa, tiễn",
+        "Trung tâm thương mại",
+        "Sống, ở",
+        "Phía tây"
+      ],
+      "accepted": [
+        "Tặng, đưa, tiễn"
+      ],
+      "explanation": "送 đọc là sòng, nghĩa là Tặng, đưa, tiễn. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 384.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "09cddd6f-0844-4d21-8cd9-dd37b3da81f5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “sòng” và nghĩa “Tặng, đưa, tiễn”.",
+      "options": [
+        "左拐",
+        "邮局",
+        "送",
+        "公司"
+      ],
+      "accepted": [
+        "送"
+      ],
+      "explanation": "送 đọc là sòng, nghĩa là Tặng, đưa, tiễn. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 384.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "09cddd6f-0844-4d21-8cd9-dd37b3da81f5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “给” có nghĩa là gì?",
+      "options": [
+        "Mét",
+        "Nhà hàng",
+        "Cho",
+        "Sống, ở"
+      ],
+      "accepted": [
+        "Cho"
+      ],
+      "explanation": "给 đọc là gěi, nghĩa là Cho. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 385.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "046cc2ed-3509-417e-90f0-5beddc3a197a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “gěi” và nghĩa “Cho”.",
+      "options": [
+        "外面",
+        "给",
+        "寄",
+        "收"
+      ],
+      "accepted": [
+        "给"
+      ],
+      "explanation": "给 đọc là gěi, nghĩa là Cho. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 385.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "046cc2ed-3509-417e-90f0-5beddc3a197a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “接” có nghĩa là gì?",
+      "options": [
+        "Nam",
+        "Từ",
+        "Nhận, thu",
+        "Đón, nhận"
+      ],
+      "accepted": [
+        "Đón, nhận"
+      ],
+      "explanation": "接 đọc là jiē, nghĩa là Đón, nhận. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 386.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7bb48c06-59b9-4c73-8348-49cb65d9bbce"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “jiē” và nghĩa “Đón, nhận”.",
+      "options": [
+        "东",
+        "走",
+        "接",
+        "往前走"
+      ],
+      "accepted": [
+        "接"
+      ],
+      "explanation": "接 đọc là jiē, nghĩa là Đón, nhận. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 386.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7bb48c06-59b9-4c73-8348-49cb65d9bbce"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “住” có nghĩa là gì?",
+      "options": [
+        "Hiệu sách",
+        "Sống, ở",
+        "Đón, nhận",
+        "Đi về phía trước"
+      ],
+      "accepted": [
+        "Sống, ở"
+      ],
+      "explanation": "住 đọc là zhù, nghĩa là Sống, ở. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 387.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "316b2c42-63c5-424b-b4ff-ccde75233922"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “zhù” và nghĩa “Sống, ở”.",
+      "options": [
+        "取",
+        "东边",
+        "附近",
+        "住"
+      ],
+      "accepted": [
+        "住"
+      ],
+      "explanation": "住 đọc là zhù, nghĩa là Sống, ở. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 387.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "316b2c42-63c5-424b-b4ff-ccde75233922"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “跟” có nghĩa là gì?",
+      "options": [
+        "Rẽ trái",
+        "Bên trái",
+        "Phía nam",
+        "Với, cùng"
+      ],
+      "accepted": [
+        "Với, cùng"
+      ],
+      "explanation": "跟 đọc là gēn, nghĩa là Với, cùng. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 388.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "09b5dedb-a848-4f24-9d9d-9341f7102304"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “gēn” và nghĩa “Với, cùng”.",
+      "options": [
+        "书店",
+        "跟",
+        "右拐",
+        "西边"
+      ],
+      "accepted": [
+        "跟"
+      ],
+      "explanation": "跟 đọc là gēn, nghĩa là Với, cùng. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 388.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "09b5dedb-a848-4f24-9d9d-9341f7102304"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “一起” có nghĩa là gì?",
+      "options": [
+        "Nhà hàng Tứ Xuyên",
+        "Phải",
+        "Cùng nhau",
+        "Tặng, đưa, tiễn"
+      ],
+      "accepted": [
+        "Cùng nhau"
+      ],
+      "explanation": "一起 đọc là yìqǐ, nghĩa là Cùng nhau. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 389.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c71c63c9-df79-4b51-9d78-917e197c8a7c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “yìqǐ” và nghĩa “Cùng nhau”.",
+      "options": [
+        "邮局",
+        "一起",
+        "下",
+        "右"
+      ],
+      "accepted": [
+        "一起"
+      ],
+      "explanation": "一起 đọc là yìqǐ, nghĩa là Cùng nhau. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 389.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c71c63c9-df79-4b51-9d78-917e197c8a7c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “从” có nghĩa là gì?",
+      "options": [
+        "Căn phòng",
+        "Từ",
+        "Ngân hàng",
+        "Bên trái"
+      ],
+      "accepted": [
+        "Từ"
+      ],
+      "explanation": "从 đọc là cóng, nghĩa là Từ. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 390.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0c4b99d6-8b84-401d-92ac-96a66825b1a2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “cóng” và nghĩa “Từ”.",
+      "options": [
+        "前",
+        "米",
+        "从",
+        "房间"
+      ],
+      "accepted": [
+        "从"
+      ],
+      "explanation": "从 đọc là cóng, nghĩa là Từ. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 390.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0c4b99d6-8b84-401d-92ac-96a66825b1a2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “往” có nghĩa là gì?",
+      "options": [
+        "Cùng nhau",
+        "Hướng về, đi về phía",
+        "Trước",
+        "Nam"
+      ],
+      "accepted": [
+        "Hướng về, đi về phía"
+      ],
+      "explanation": "往 đọc là wǎng, nghĩa là Hướng về, đi về phía. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 391.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e0de2004-367a-43ca-9e96-7a9a3d722bf3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “wǎng” và nghĩa “Hướng về, đi về phía”.",
+      "options": [
+        "南边",
+        "从",
+        "往",
+        "外面"
+      ],
+      "accepted": [
+        "往"
+      ],
+      "explanation": "往 đọc là wǎng, nghĩa là Hướng về, đi về phía. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 391.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e0de2004-367a-43ca-9e96-7a9a3d722bf3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “前” có nghĩa là gì?",
+      "options": [
+        "Công ty",
+        "Cho",
+        "Trước",
+        "Rẽ"
+      ],
+      "accepted": [
+        "Trước"
+      ],
+      "explanation": "前 đọc là qián, nghĩa là Trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 392.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d2057e4b-2df1-4db9-bc3f-984ea0afe5dc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “qián” và nghĩa “Trước”.",
+      "options": [
+        "往前走",
+        "店",
+        "前",
+        "收"
+      ],
+      "accepted": [
+        "前"
+      ],
+      "explanation": "前 đọc là qián, nghĩa là Trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 392.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d2057e4b-2df1-4db9-bc3f-984ea0afe5dc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “后” có nghĩa là gì?",
+      "options": [
+        "Sau",
+        "Nhà; lượng từ cho cửa hàng, công ty",
+        "Phía nam",
+        "Trung tâm thương mại"
+      ],
+      "accepted": [
+        "Sau"
+      ],
+      "explanation": "后 đọc là hòu, nghĩa là Sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 393.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "dc11b697-02c1-45c3-95fe-eb94004e7159"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “hòu” và nghĩa “Sau”.",
+      "options": [
+        "给",
+        "右",
+        "住",
+        "后"
+      ],
+      "accepted": [
+        "后"
+      ],
+      "explanation": "后 đọc là hòu, nghĩa là Sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 393.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "dc11b697-02c1-45c3-95fe-eb94004e7159"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “拐” có nghĩa là gì?",
+      "options": [
+        "Hiệu sách",
+        "Rẽ",
+        "Đối diện",
+        "Căn phòng"
+      ],
+      "accepted": [
+        "Rẽ"
+      ],
+      "explanation": "拐 đọc là guǎi, nghĩa là Rẽ. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 394.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1915a85d-7dc3-4085-8348-228915833901"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “guǎi” và nghĩa “Rẽ”.",
+      "options": [
+        "拐",
+        "商场",
+        "最近",
+        "往前走"
+      ],
+      "accepted": [
+        "拐"
+      ],
+      "explanation": "拐 đọc là guǎi, nghĩa là Rẽ. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 394.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1915a85d-7dc3-4085-8348-228915833901"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “对面” có nghĩa là gì?",
+      "options": [
+        "Rẽ trái",
+        "Gần đây, dạo này",
+        "Bưu điện",
+        "Đối diện"
+      ],
+      "accepted": [
+        "Đối diện"
+      ],
+      "explanation": "对面 đọc là duìmiàn, nghĩa là Đối diện. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 395.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9b290933-5127-415a-b791-0422d1c7798a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “duìmiàn” và nghĩa “Đối diện”.",
+      "options": [
+        "对面",
+        "一家公司",
+        "接",
+        "家"
+      ],
+      "accepted": [
+        "对面"
+      ],
+      "explanation": "对面 đọc là duìmiàn, nghĩa là Đối diện. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 395.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9b290933-5127-415a-b791-0422d1c7798a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “旁边” có nghĩa là gì?",
+      "options": [
+        "Trái",
+        "Bên trong",
+        "Bên cạnh",
+        "Ngân hàng Trung Quốc"
+      ],
+      "accepted": [
+        "Bên cạnh"
+      ],
+      "explanation": "旁边 đọc là pángbiān, nghĩa là Bên cạnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 396.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9c348e83-4a38-4e3e-b0ce-50617d5b44be"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “pángbiān” và nghĩa “Bên cạnh”.",
+      "options": [
+        "往",
+        "然后",
+        "住",
+        "旁边"
+      ],
+      "accepted": [
+        "旁边"
+      ],
+      "explanation": "旁边 đọc là pángbiān, nghĩa là Bên cạnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 396.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9c348e83-4a38-4e3e-b0ce-50617d5b44be"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “外面” có nghĩa là gì?",
+      "options": [
+        "Bên ngoài",
+        "Tây",
+        "Bên trong",
+        "Chính là, ngay, liền"
+      ],
+      "accepted": [
+        "Bên ngoài"
+      ],
+      "explanation": "外面 đọc là wàimiàn, nghĩa là Bên ngoài. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 397.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fdecba29-529c-41c0-8e41-29167f3907fa"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “wàimiàn” và nghĩa “Bên ngoài”.",
+      "options": [
+        "南",
+        "附近",
+        "商场",
+        "外面"
+      ],
+      "accepted": [
+        "外面"
+      ],
+      "explanation": "外面 đọc là wàimiàn, nghĩa là Bên ngoài. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 397.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fdecba29-529c-41c0-8e41-29167f3907fa"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “里面” có nghĩa là gì?",
+      "options": [
+        "Đón, nhận",
+        "Bên trong",
+        "Công ty",
+        "Gần đây, lân cận"
+      ],
+      "accepted": [
+        "Bên trong"
+      ],
+      "explanation": "里面 đọc là lǐmiàn, nghĩa là Bên trong. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 398.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b58840e1-3e7f-4825-93bd-ec79dad41190"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “lǐmiàn” và nghĩa “Bên trong”.",
+      "options": [
+        "左边",
+        "边",
+        "里面",
+        "东"
+      ],
+      "accepted": [
+        "里面"
+      ],
+      "explanation": "里面 đọc là lǐmiàn, nghĩa là Bên trong. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 398.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b58840e1-3e7f-4825-93bd-ec79dad41190"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “米” có nghĩa là gì?",
+      "options": [
+        "Mét",
+        "Chính là, ngay, liền",
+        "Hướng về, đi về phía",
+        "Gần đây, lân cận"
+      ],
+      "accepted": [
+        "Mét"
+      ],
+      "explanation": "米 đọc là mǐ, nghĩa là Mét. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 399.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "67540b64-1dcc-45c9-b00f-961899209c31"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “mǐ” và nghĩa “Mét”.",
+      "options": [
+        "米",
+        "手",
+        "左",
+        "饭店"
+      ],
+      "accepted": [
+        "米"
+      ],
+      "explanation": "米 đọc là mǐ, nghĩa là Mét. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 399.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "67540b64-1dcc-45c9-b00f-961899209c31"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “左边” có nghĩa là gì?",
+      "options": [
+        "Bên, phía",
+        "Công ty",
+        "Bên trái",
+        "Từ"
+      ],
+      "accepted": [
+        "Bên trái"
+      ],
+      "explanation": "左边 đọc là zuǒbian, nghĩa là Bên trái. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 400.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7731df8e-229f-4cdc-b5a7-ce15ea8a1ee1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “zuǒbian” và nghĩa “Bên trái”.",
+      "options": [
+        "左边",
+        "商店",
+        "南边",
+        "最近"
+      ],
+      "accepted": [
+        "左边"
+      ],
+      "explanation": "左边 đọc là zuǒbian, nghĩa là Bên trái. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 400.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7731df8e-229f-4cdc-b5a7-ce15ea8a1ee1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “右边” có nghĩa là gì?",
+      "options": [
+        "Bên phải",
+        "Dưới, xuống",
+        "Siêu thị",
+        "Nhà; lượng từ cho cửa hàng, công ty"
+      ],
+      "accepted": [
+        "Bên phải"
+      ],
+      "explanation": "右边 đọc là yòubian, nghĩa là Bên phải. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 401.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "40c92077-fd3c-4ab4-b06e-0bfaf10c97c9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “yòubian” và nghĩa “Bên phải”.",
+      "options": [
+        "下",
+        "北边",
+        "右边",
+        "住"
+      ],
+      "accepted": [
+        "右边"
+      ],
+      "explanation": "右边 đọc là yòubian, nghĩa là Bên phải. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 401.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "40c92077-fd3c-4ab4-b06e-0bfaf10c97c9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “东” có nghĩa là gì?",
+      "options": [
+        "Đi về bên phải",
+        "Bưu điện",
+        "Đông",
+        "Gần đây, dạo này"
+      ],
+      "accepted": [
+        "Đông"
+      ],
+      "explanation": "东 đọc là dōng, nghĩa là Đông. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 402.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "57adc613-5efd-4fd8-a53f-785ffb745005"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “dōng” và nghĩa “Đông”.",
+      "options": [
+        "商店",
+        "酒店",
+        "东",
+        "往前走"
+      ],
+      "accepted": [
+        "东"
+      ],
+      "explanation": "东 đọc là dōng, nghĩa là Đông. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 402.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "57adc613-5efd-4fd8-a53f-785ffb745005"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “西” có nghĩa là gì?",
+      "options": [
+        "Bên trong",
+        "Hướng về, đi về phía",
+        "Bên trái",
+        "Tây"
+      ],
+      "accepted": [
+        "Tây"
+      ],
+      "explanation": "西 đọc là xī, nghĩa là Tây. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 403.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "deec0882-38df-41bf-a064-4c53065c455d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “xī” và nghĩa “Tây”.",
+      "options": [
+        "西",
+        "左",
+        "下",
+        "往右走"
+      ],
+      "accepted": [
+        "西"
+      ],
+      "explanation": "西 đọc là xī, nghĩa là Tây. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 403.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "deec0882-38df-41bf-a064-4c53065c455d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “南” có nghĩa là gì?",
+      "options": [
+        "Gần đây, lân cận",
+        "Nam",
+        "Trước",
+        "Cửa hàng"
+      ],
+      "accepted": [
+        "Nam"
+      ],
+      "explanation": "南 đọc là nán, nghĩa là Nam. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 404.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "04638de7-eacd-493e-adc4-541a7e31e613"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “nán” và nghĩa “Nam”.",
+      "options": [
+        "南",
+        "拐",
+        "西边",
+        "左拐"
+      ],
+      "accepted": [
+        "南"
+      ],
+      "explanation": "南 đọc là nán, nghĩa là Nam. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 404.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "04638de7-eacd-493e-adc4-541a7e31e613"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “北” có nghĩa là gì?",
+      "options": [
+        "Từ",
+        "Bắc",
+        "Gần đây, dạo này",
+        "Mét"
+      ],
+      "accepted": [
+        "Bắc"
+      ],
+      "explanation": "北 đọc là běi, nghĩa là Bắc. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 405.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ce3fb75d-54ac-4046-aba2-b6de0958a39f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “běi” và nghĩa “Bắc”.",
+      "options": [
+        "一起",
+        "北",
+        "房间",
+        "商店"
+      ],
+      "accepted": [
+        "北"
+      ],
+      "explanation": "北 đọc là běi, nghĩa là Bắc. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 405.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ce3fb75d-54ac-4046-aba2-b6de0958a39f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “边” có nghĩa là gì?",
+      "options": [
+        "Rẽ",
+        "Cửa hàng",
+        "Bên, phía",
+        "Một công ty"
+      ],
+      "accepted": [
+        "Bên, phía"
+      ],
+      "explanation": "边 đọc là biān, nghĩa là Bên, phía. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 406.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "581515f7-63f5-4425-af37-1edde8af627b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “biān” và nghĩa “Bên, phía”.",
+      "options": [
+        "后",
+        "取",
+        "南",
+        "边"
+      ],
+      "accepted": [
+        "边"
+      ],
+      "explanation": "边 đọc là biān, nghĩa là Bên, phía. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 406.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "581515f7-63f5-4425-af37-1edde8af627b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “然后” có nghĩa là gì?",
+      "options": [
+        "Sau đó",
+        "Siêu thị FamilyMart",
+        "Tặng, đưa, tiễn",
+        "Gửi"
+      ],
+      "accepted": [
+        "Sau đó"
+      ],
+      "explanation": "然后 đọc là ránhòu, nghĩa là Sau đó. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 407.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9946ada0-4045-4e56-8198-0b9824f4216b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “ránhòu” và nghĩa “Sau đó”.",
+      "options": [
+        "饭店",
+        "然后",
+        "公司",
+        "里面"
+      ],
+      "accepted": [
+        "然后"
+      ],
+      "explanation": "然后 đọc là ránhòu, nghĩa là Sau đó. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 407.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9946ada0-4045-4e56-8198-0b9824f4216b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “最近” có nghĩa là gì?",
+      "options": [
+        "Dưới, xuống",
+        "Sống, ở",
+        "Nhà hàng",
+        "Gần đây, dạo này"
+      ],
+      "accepted": [
+        "Gần đây, dạo này"
+      ],
+      "explanation": "最近 đọc là zuìjìn, nghĩa là Gần đây, dạo này. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 411.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fe9a289c-8717-483f-9b2d-88662f240ade"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “zuìjìn” và nghĩa “Gần đây, dạo này”.",
+      "options": [
+        "上",
+        "东",
+        "北边",
+        "最近"
+      ],
+      "accepted": [
+        "最近"
+      ],
+      "explanation": "最近 đọc là zuìjìn, nghĩa là Gần đây, dạo này. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 411.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fe9a289c-8717-483f-9b2d-88662f240ade"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “邮局” có nghĩa là gì?",
+      "options": [
+        "Khách sạn",
+        "Cùng nhau",
+        "Đi",
+        "Bưu điện"
+      ],
+      "accepted": [
+        "Bưu điện"
+      ],
+      "explanation": "邮局 đọc là yóujú, nghĩa là Bưu điện. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 412.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "27a04209-8362-4d11-9732-326187ebd349"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “yóujú” và nghĩa “Bưu điện”.",
+      "options": [
+        "一家公司",
+        "邮局",
+        "南边",
+        "房间"
+      ],
+      "accepted": [
+        "邮局"
+      ],
+      "explanation": "邮局 đọc là yóujú, nghĩa là Bưu điện. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 412.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "27a04209-8362-4d11-9732-326187ebd349"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “酒店” có nghĩa là gì?",
+      "options": [
+        "Đi về bên trái",
+        "Chính là, ngay, liền",
+        "Sau",
+        "Khách sạn"
+      ],
+      "accepted": [
+        "Khách sạn"
+      ],
+      "explanation": "酒店 đọc là jiǔdiàn, nghĩa là Khách sạn. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 413.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0cc9e88d-9e24-41e2-9b1f-d6b5ae078580"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “jiǔdiàn” và nghĩa “Khách sạn”.",
+      "options": [
+        "西",
+        "南边",
+        "旁边",
+        "酒店"
+      ],
+      "accepted": [
+        "酒店"
+      ],
+      "explanation": "酒店 đọc là jiǔdiàn, nghĩa là Khách sạn. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 413.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0cc9e88d-9e24-41e2-9b1f-d6b5ae078580"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “饭店” có nghĩa là gì?",
+      "options": [
+        "Ngôi nhà",
+        "Phía bắc",
+        "Nhà hàng",
+        "Hiệu sách"
+      ],
+      "accepted": [
+        "Nhà hàng"
+      ],
+      "explanation": "饭店 đọc là fàndiàn, nghĩa là Nhà hàng. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 414.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bf0bd1f1-eb0a-4350-910c-efd6da997095"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “fàndiàn” và nghĩa “Nhà hàng”.",
+      "options": [
+        "市场",
+        "一起",
+        "饭店",
+        "拐"
+      ],
+      "accepted": [
+        "饭店"
+      ],
+      "explanation": "饭店 đọc là fàndiàn, nghĩa là Nhà hàng. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 414.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bf0bd1f1-eb0a-4350-910c-efd6da997095"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “公司” có nghĩa là gì?",
+      "options": [
+        "Công ty",
+        "Ngôi nhà",
+        "Rẽ",
+        "Rẽ trái"
+      ],
+      "accepted": [
+        "Công ty"
+      ],
+      "explanation": "公司 đọc là gōngsī, nghĩa là Công ty. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 415.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f98bacd8-8dd2-41cf-abbf-be3e0a71b0f2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “gōngsī” và nghĩa “Công ty”.",
+      "options": [
+        "边",
+        "公司",
+        "右",
+        "全家超市"
+      ],
+      "accepted": [
+        "公司"
+      ],
+      "explanation": "公司 đọc là gōngsī, nghĩa là Công ty. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 415.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f98bacd8-8dd2-41cf-abbf-be3e0a71b0f2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “一家公司” có nghĩa là gì?",
+      "options": [
+        "Khách sạn",
+        "Một công ty",
+        "Gần đây, dạo này",
+        "Mét"
+      ],
+      "accepted": [
+        "Một công ty"
+      ],
+      "explanation": "一家公司 đọc là yì jiā gōngsī, nghĩa là Một công ty. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 416.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "44da0395-6403-4207-a20d-f4d9d65ebb5b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “yì jiā gōngsī” và nghĩa “Một công ty”.",
+      "options": [
+        "一家公司",
+        "饭店",
+        "往前走",
+        "寄"
+      ],
+      "accepted": [
+        "一家公司"
+      ],
+      "explanation": "一家公司 đọc là yì jiā gōngsī, nghĩa là Một công ty. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 416.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "44da0395-6403-4207-a20d-f4d9d65ebb5b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “上” có nghĩa là gì?",
+      "options": [
+        "Trên, lên",
+        "Đông",
+        "Ngân hàng",
+        "Sau đó"
+      ],
+      "accepted": [
+        "Trên, lên"
+      ],
+      "explanation": "上 đọc là shàng, nghĩa là Trên, lên. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 417.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "96da66cb-390e-4387-8bab-2e4e6e9807a2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “shàng” và nghĩa “Trên, lên”.",
+      "options": [
+        "往前走",
+        "上",
+        "四川饭店",
+        "住"
+      ],
+      "accepted": [
+        "上"
+      ],
+      "explanation": "上 đọc là shàng, nghĩa là Trên, lên. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 417.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "96da66cb-390e-4387-8bab-2e4e6e9807a2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “下” có nghĩa là gì?",
+      "options": [
+        "Dưới, xuống",
+        "Nam",
+        "Đi",
+        "Đi về phía trước"
+      ],
+      "accepted": [
+        "Dưới, xuống"
+      ],
+      "explanation": "下 đọc là xià, nghĩa là Dưới, xuống. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 418.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "76749ccb-1d73-43ab-ae54-f6b4c8ff3718"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “xià” và nghĩa “Dưới, xuống”.",
+      "options": [
+        "取",
+        "下",
+        "接",
+        "快递"
+      ],
+      "accepted": [
+        "下"
+      ],
+      "explanation": "下 đọc là xià, nghĩa là Dưới, xuống. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 418.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "76749ccb-1d73-43ab-ae54-f6b4c8ff3718"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “手” có nghĩa là gì?",
+      "options": [
+        "Tay",
+        "Rẽ trái",
+        "Siêu thị",
+        "Phía bắc"
+      ],
+      "accepted": [
+        "Tay"
+      ],
+      "explanation": "手 đọc là shǒu, nghĩa là Tay. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 419.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "94dc1136-8d21-4e07-bef7-bfbbda82a84a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “shǒu” và nghĩa “Tay”.",
+      "options": [
+        "手",
+        "上",
+        "住",
+        "商店"
+      ],
+      "accepted": [
+        "手"
+      ],
+      "explanation": "手 đọc là shǒu, nghĩa là Tay. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 419.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "94dc1136-8d21-4e07-bef7-bfbbda82a84a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “公里” có nghĩa là gì?",
+      "options": [
+        "Trái",
+        "Một công ty",
+        "Trên, lên",
+        "Kilômét"
+      ],
+      "accepted": [
+        "Kilômét"
+      ],
+      "explanation": "公里 đọc là gōnglǐ, nghĩa là Kilômét. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 420.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "58aea65f-b6af-4098-a6c0-31dc5f5a4841"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “gōnglǐ” và nghĩa “Kilômét”.",
+      "options": [
+        "房子",
+        "公里",
+        "北",
+        "拐"
+      ],
+      "accepted": [
+        "公里"
+      ],
+      "explanation": "公里 đọc là gōnglǐ, nghĩa là Kilômét. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 420.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "58aea65f-b6af-4098-a6c0-31dc5f5a4841"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “走” có nghĩa là gì?",
+      "options": [
+        "Chợ",
+        "Đi về bên trái",
+        "Nhận, thu",
+        "Đi"
+      ],
+      "accepted": [
+        "Đi"
+      ],
+      "explanation": "走 đọc là zǒu, nghĩa là Đi. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 421.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e05c6134-43b3-4a3a-aea0-6aae589aecf6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “zǒu” và nghĩa “Đi”.",
+      "options": [
+        "手",
+        "北京银行",
+        "店",
+        "走"
+      ],
+      "accepted": [
+        "走"
+      ],
+      "explanation": "走 đọc là zǒu, nghĩa là Đi. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 421.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e05c6134-43b3-4a3a-aea0-6aae589aecf6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “左” có nghĩa là gì?",
+      "options": [
+        "Chuyển phát nhanh",
+        "Bên trái",
+        "Cùng nhau",
+        "Trái"
+      ],
+      "accepted": [
+        "Trái"
+      ],
+      "explanation": "左 đọc là zuǒ, nghĩa là Trái. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 422.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ed2ffbf9-9b5d-4b48-a99e-b58dd9c89170"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “zuǒ” và nghĩa “Trái”.",
+      "options": [
+        "左",
+        "商场",
+        "前",
+        "北"
+      ],
+      "accepted": [
+        "左"
+      ],
+      "explanation": "左 đọc là zuǒ, nghĩa là Trái. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 422.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ed2ffbf9-9b5d-4b48-a99e-b58dd9c89170"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “右” có nghĩa là gì?",
+      "options": [
+        "Phải",
+        "Hướng về, đi về phía",
+        "Đi về bên phải",
+        "Bên trong"
+      ],
+      "accepted": [
+        "Phải"
+      ],
+      "explanation": "右 đọc là yòu, nghĩa là Phải. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 423.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c42f63f6-47cd-468d-a3f7-4c0f75a8ce19"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “yòu” và nghĩa “Phải”.",
+      "options": [
+        "家",
+        "寄",
+        "左拐",
+        "右"
+      ],
+      "accepted": [
+        "右"
+      ],
+      "explanation": "右 đọc là yòu, nghĩa là Phải. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 423.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c42f63f6-47cd-468d-a3f7-4c0f75a8ce19"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “东边” có nghĩa là gì?",
+      "options": [
+        "Siêu thị",
+        "Phía đông",
+        "Sau",
+        "Phía tây"
+      ],
+      "accepted": [
+        "Phía đông"
+      ],
+      "explanation": "东边 đọc là dōngbian, nghĩa là Phía đông. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 424.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "91ef590d-1b32-4bc3-a5d8-dca9c85de55a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “dōngbian” và nghĩa “Phía đông”.",
+      "options": [
+        "就",
+        "附近",
+        "东边",
+        "下"
+      ],
+      "accepted": [
+        "东边"
+      ],
+      "explanation": "东边 đọc là dōngbian, nghĩa là Phía đông. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 424.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "91ef590d-1b32-4bc3-a5d8-dca9c85de55a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “西边” có nghĩa là gì?",
+      "options": [
+        "Nhận, thu",
+        "Phía tây",
+        "Trái",
+        "Bên, phía"
+      ],
+      "accepted": [
+        "Phía tây"
+      ],
+      "explanation": "西边 đọc là xībian, nghĩa là Phía tây. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 425.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a242cc43-39cc-4d5b-96af-c38130e750bd"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “xībian” và nghĩa “Phía tây”.",
+      "options": [
+        "西边",
+        "附近",
+        "北边",
+        "左拐"
+      ],
+      "accepted": [
+        "西边"
+      ],
+      "explanation": "西边 đọc là xībian, nghĩa là Phía tây. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 425.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a242cc43-39cc-4d5b-96af-c38130e750bd"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “南边” có nghĩa là gì?",
+      "options": [
+        "Cửa hàng, tiệm",
+        "Hướng về, đi về phía",
+        "Phía nam",
+        "Sống, ở"
+      ],
+      "accepted": [
+        "Phía nam"
+      ],
+      "explanation": "南边 đọc là nánbian, nghĩa là Phía nam. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 426.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "685dfceb-0101-4bdc-b38c-a3997b0338d6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “nánbian” và nghĩa “Phía nam”.",
+      "options": [
+        "北边",
+        "就",
+        "旁边",
+        "南边"
+      ],
+      "accepted": [
+        "南边"
+      ],
+      "explanation": "南边 đọc là nánbian, nghĩa là Phía nam. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 426.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "685dfceb-0101-4bdc-b38c-a3997b0338d6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “北边” có nghĩa là gì?",
+      "options": [
+        "Tay",
+        "Rẽ",
+        "Phía bắc",
+        "Cùng nhau"
+      ],
+      "accepted": [
+        "Phía bắc"
+      ],
+      "explanation": "北边 đọc là běibian, nghĩa là Phía bắc. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 427.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "932438bb-e85d-485f-aa25-d1d319fc227a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “běibian” và nghĩa “Phía bắc”.",
+      "options": [
+        "四川饭店",
+        "北边",
+        "往前走",
+        "住"
+      ],
+      "accepted": [
+        "北边"
+      ],
+      "explanation": "北边 đọc là běibian, nghĩa là Phía bắc. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 427.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "932438bb-e85d-485f-aa25-d1d319fc227a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “往前走” có nghĩa là gì?",
+      "options": [
+        "Bên cạnh",
+        "Đi về phía trước",
+        "Hiệu sách",
+        "Ngôi nhà"
+      ],
+      "accepted": [
+        "Đi về phía trước"
+      ],
+      "explanation": "往前走 đọc là wǎng qián zǒu, nghĩa là Đi về phía trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 428.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2628bf36-b49e-4277-ad30-334c62816ad7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “wǎng qián zǒu” và nghĩa “Đi về phía trước”.",
+      "options": [
+        "一家公司",
+        "东边",
+        "快递",
+        "往前走"
+      ],
+      "accepted": [
+        "往前走"
+      ],
+      "explanation": "往前走 đọc là wǎng qián zǒu, nghĩa là Đi về phía trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 428.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2628bf36-b49e-4277-ad30-334c62816ad7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “往左走” có nghĩa là gì?",
+      "options": [
+        "Rẽ",
+        "Cửa hàng, tiệm",
+        "Đi về bên trái",
+        "Rẽ trái"
+      ],
+      "accepted": [
+        "Đi về bên trái"
+      ],
+      "explanation": "往左走 đọc là wǎng zuǒ zǒu, nghĩa là Đi về bên trái. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 429.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ab46b92e-72e5-4fa9-a782-2c606b63880b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “wǎng zuǒ zǒu” và nghĩa “Đi về bên trái”.",
+      "options": [
+        "全家超市",
+        "左边",
+        "就",
+        "往左走"
+      ],
+      "accepted": [
+        "往左走"
+      ],
+      "explanation": "往左走 đọc là wǎng zuǒ zǒu, nghĩa là Đi về bên trái. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 429.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ab46b92e-72e5-4fa9-a782-2c606b63880b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “往右走” có nghĩa là gì?",
+      "options": [
+        "Lấy, rút",
+        "Phía bắc",
+        "Đi về bên phải",
+        "Rẽ phải"
+      ],
+      "accepted": [
+        "Đi về bên phải"
+      ],
+      "explanation": "往右走 đọc là wǎng yòu zǒu, nghĩa là Đi về bên phải. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 430.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fff2c342-adb1-467f-a968-975b83257e9d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “wǎng yòu zǒu” và nghĩa “Đi về bên phải”.",
+      "options": [
+        "收",
+        "往右走",
+        "北边",
+        "全家超市"
+      ],
+      "accepted": [
+        "往右走"
+      ],
+      "explanation": "往右走 đọc là wǎng yòu zǒu, nghĩa là Đi về bên phải. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 430.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fff2c342-adb1-467f-a968-975b83257e9d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “左拐” có nghĩa là gì?",
+      "options": [
+        "Hiệu sách",
+        "Gửi",
+        "Rẽ trái",
+        "Sau"
+      ],
+      "accepted": [
+        "Rẽ trái"
+      ],
+      "explanation": "左拐 đọc là zuǒ guǎi, nghĩa là Rẽ trái. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 431.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4e47648c-36ed-44d6-af2f-3090c1f434e1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “zuǒ guǎi” và nghĩa “Rẽ trái”.",
+      "options": [
+        "家",
+        "左拐",
+        "住",
+        "左"
+      ],
+      "accepted": [
+        "左拐"
+      ],
+      "explanation": "左拐 đọc là zuǒ guǎi, nghĩa là Rẽ trái. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 431.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4e47648c-36ed-44d6-af2f-3090c1f434e1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “右拐” có nghĩa là gì?",
+      "options": [
+        "Trung tâm thương mại",
+        "Bên trong",
+        "Rẽ phải",
+        "Gần đây, dạo này"
+      ],
+      "accepted": [
+        "Rẽ phải"
+      ],
+      "explanation": "右拐 đọc là yòu guǎi, nghĩa là Rẽ phải. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 432.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "16a696cc-2237-4cfa-a94a-a4c794428974"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “yòu guǎi” và nghĩa “Rẽ phải”.",
+      "options": [
+        "右拐",
+        "后",
+        "往左走",
+        "对面"
+      ],
+      "accepted": [
+        "右拐"
+      ],
+      "explanation": "右拐 đọc là yòu guǎi, nghĩa là Rẽ phải. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 432.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "16a696cc-2237-4cfa-a94a-a4c794428974"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “中国银行” có nghĩa là gì?",
+      "options": [
+        "Gần đây, dạo này",
+        "Một công ty",
+        "Tay",
+        "Ngân hàng Trung Quốc"
+      ],
+      "accepted": [
+        "Ngân hàng Trung Quốc"
+      ],
+      "explanation": "中国银行 đọc là Zhōngguó Yínháng, nghĩa là Ngân hàng Trung Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 436.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "92a09442-963f-49e5-91b1-49214ba6e131"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “Zhōngguó Yínháng” và nghĩa “Ngân hàng Trung Quốc”.",
+      "options": [
+        "东边",
+        "中国银行",
+        "里面",
+        "旁边"
+      ],
+      "accepted": [
+        "中国银行"
+      ],
+      "explanation": "中国银行 đọc là Zhōngguó Yínháng, nghĩa là Ngân hàng Trung Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 436.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "92a09442-963f-49e5-91b1-49214ba6e131"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “北京银行” có nghĩa là gì?",
+      "options": [
+        "Đối diện",
+        "Chợ",
+        "Ngân hàng Bắc Kinh",
+        "Khách sạn"
+      ],
+      "accepted": [
+        "Ngân hàng Bắc Kinh"
+      ],
+      "explanation": "北京银行 đọc là Běijīng Yínháng, nghĩa là Ngân hàng Bắc Kinh. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 437.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "778da4d0-62e9-4bf1-8dcb-68820305cf39"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “Běijīng Yínháng” và nghĩa “Ngân hàng Bắc Kinh”.",
+      "options": [
+        "酒店",
+        "右",
+        "中国银行",
+        "北京银行"
+      ],
+      "accepted": [
+        "北京银行"
+      ],
+      "explanation": "北京银行 đọc là Běijīng Yínháng, nghĩa là Ngân hàng Bắc Kinh. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 437.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "778da4d0-62e9-4bf1-8dcb-68820305cf39"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “四川饭店” có nghĩa là gì?",
+      "options": [
+        "Ngân hàng Trung Quốc",
+        "Bưu điện",
+        "Kilômét",
+        "Nhà hàng Tứ Xuyên"
+      ],
+      "accepted": [
+        "Nhà hàng Tứ Xuyên"
+      ],
+      "explanation": "四川饭店 đọc là Sìchuān Fàndiàn, nghĩa là Nhà hàng Tứ Xuyên. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 438.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "eed365fa-a458-4305-be3d-75378fbb3023"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “Sìchuān Fàndiàn” và nghĩa “Nhà hàng Tứ Xuyên”.",
+      "options": [
+        "送",
+        "往左走",
+        "四川饭店",
+        "一家公司"
+      ],
+      "accepted": [
+        "四川饭店"
+      ],
+      "explanation": "四川饭店 đọc là Sìchuān Fàndiàn, nghĩa là Nhà hàng Tứ Xuyên. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 438.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "eed365fa-a458-4305-be3d-75378fbb3023"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Trong bài học, “全家超市” có nghĩa là gì?",
+      "options": [
+        "Nam",
+        "Siêu thị FamilyMart",
+        "Kilômét",
+        "Nhà hàng"
+      ],
+      "accepted": [
+        "Siêu thị FamilyMart"
+      ],
+      "explanation": "全家超市 đọc là Quánjiā Chāoshì, nghĩa là Siêu thị FamilyMart. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 439.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "860625c7-68bb-47b2-8fa4-9204e1c24019"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn Hán tự có phiên âm “Quánjiā Chāoshì” và nghĩa “Siêu thị FamilyMart”.",
+      "options": [
+        "邮局",
+        "左",
+        "全家超市",
+        "右边"
+      ],
+      "accepted": [
+        "全家超市"
+      ],
+      "explanation": "全家超市 đọc là Quánjiā Chāoshì, nghĩa là Siêu thị FamilyMart. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 439.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "860625c7-68bb-47b2-8fa4-9204e1c24019"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn phiên âm đúng của “往左走” với nghĩa “Đi về bên trái”.",
+      "options": [
+        "shìchǎng",
+        "zuǒbian",
+        "wǎng zuǒ zǒu",
+        "gěi"
+      ],
+      "accepted": [
+        "wǎng zuǒ zǒu"
+      ],
+      "explanation": "往左走 đọc là wǎng zuǒ zǒu, nghĩa là Đi về bên trái. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 429.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ab46b92e-72e5-4fa9-a782-2c606b63880b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn phiên âm đúng của “往右走” với nghĩa “Đi về bên phải”.",
+      "options": [
+        "diàn",
+        "běibian",
+        "wǎng yòu zǒu",
+        "zuìjìn"
+      ],
+      "accepted": [
+        "wǎng yòu zǒu"
+      ],
+      "explanation": "往右走 đọc là wǎng yòu zǒu, nghĩa là Đi về bên phải. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 430.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fff2c342-adb1-467f-a968-975b83257e9d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn phiên âm đúng của “左拐” với nghĩa “Rẽ trái”.",
+      "options": [
+        "jì",
+        "pángbiān",
+        "yóujú",
+        "zuǒ guǎi"
+      ],
+      "accepted": [
+        "zuǒ guǎi"
+      ],
+      "explanation": "左拐 đọc là zuǒ guǎi, nghĩa là Rẽ trái. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 431.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4e47648c-36ed-44d6-af2f-3090c1f434e1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn phiên âm đúng của “右拐” với nghĩa “Rẽ phải”.",
+      "options": [
+        "cóng",
+        "xībian",
+        "zuǒ guǎi",
+        "yòu guǎi"
+      ],
+      "accepted": [
+        "yòu guǎi"
+      ],
+      "explanation": "右拐 đọc là yòu guǎi, nghĩa là Rẽ phải. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 432.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "16a696cc-2237-4cfa-a94a-a4c794428974"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn phiên âm đúng của “中国银行” với nghĩa “Ngân hàng Trung Quốc”.",
+      "options": [
+        "shàng",
+        "Zhōngguó Yínháng",
+        "zuǒbian",
+        "sòng"
+      ],
+      "accepted": [
+        "Zhōngguó Yínháng"
+      ],
+      "explanation": "中国银行 đọc là Zhōngguó Yínháng, nghĩa là Ngân hàng Trung Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 436.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "92a09442-963f-49e5-91b1-49214ba6e131"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn phiên âm đúng của “北京银行” với nghĩa “Ngân hàng Bắc Kinh”.",
+      "options": [
+        "shāngdiàn",
+        "Běijīng Yínháng",
+        "fùjìn",
+        "xià"
+      ],
+      "accepted": [
+        "Běijīng Yínháng"
+      ],
+      "explanation": "北京银行 đọc là Běijīng Yínháng, nghĩa là Ngân hàng Bắc Kinh. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 437.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "778da4d0-62e9-4bf1-8dcb-68820305cf39"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn phiên âm đúng của “四川饭店” với nghĩa “Nhà hàng Tứ Xuyên”.",
+      "options": [
+        "yì jiā gōngsī",
+        "zuìjìn",
+        "Sìchuān Fàndiàn",
+        "wǎng qián zǒu"
+      ],
+      "accepted": [
+        "Sìchuān Fàndiàn"
+      ],
+      "explanation": "四川饭店 đọc là Sìchuān Fàndiàn, nghĩa là Nhà hàng Tứ Xuyên. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 438.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "eed365fa-a458-4305-be3d-75378fbb3023"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 7",
+      "prompt": "Chọn phiên âm đúng của “全家超市” với nghĩa “Siêu thị FamilyMart”.",
+      "options": [
+        "Quánjiā Chāoshì",
+        "běibian",
+        "shìchǎng",
+        "xià"
+      ],
+      "accepted": [
+        "Quánjiā Chāoshì"
+      ],
+      "explanation": "全家超市 đọc là Quánjiā Chāoshì, nghĩa là Siêu thị FamilyMart. Nguồn: danh sách đầy đủ người dùng gửi, bài 7, dòng 439.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "860625c7-68bb-47b2-8fa4-9204e1c24019"
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “附近有银行吗？” có nghĩa là gì?",
+      "options": [
+        "Sau đó đi về bên phải.",
+        "Gần đây có ngân hàng không?",
+        "Rẽ trái ở phía trước.",
+        "Tôi đi trung tâm thương mại cùng bạn."
+      ],
+      "accepted": [
+        "Gần đây có ngân hàng không?"
+      ],
+      "explanation": "附近有银行吗？ — Gần đây có ngân hàng không? Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Gần đây có ngân hàng không?”.",
+      "options": [
+        "附近有银行吗？",
+        "书店在超市旁边。",
+        "我在门口接你。",
+        "这家商店很大。"
+      ],
+      "accepted": [
+        "附近有银行吗？"
+      ],
+      "explanation": "附近有银行吗？ — Gần đây có ngân hàng không? Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “我去邮局寄快递。” có nghĩa là gì?",
+      "options": [
+        "Tôi đến bưu điện gửi chuyển phát nhanh.",
+        "Tôi muốn đến ngân hàng rút tiền.",
+        "Xin đi về phía trước.",
+        "Chúng ta cùng đi chợ."
+      ],
+      "accepted": [
+        "Tôi đến bưu điện gửi chuyển phát nhanh."
+      ],
+      "explanation": "我去邮局寄快递。 — Tôi đến bưu điện gửi chuyển phát nhanh. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi đến bưu điện gửi chuyển phát nhanh.”.",
+      "options": [
+        "我去邮局寄快递。",
+        "我想去银行取钱。",
+        "房子里面有电脑。",
+        "书店在超市旁边。"
+      ],
+      "accepted": [
+        "我去邮局寄快递。"
+      ],
+      "explanation": "我去邮局寄快递。 — Tôi đến bưu điện gửi chuyển phát nhanh. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “书店在超市旁边。” có nghĩa là gì?",
+      "options": [
+        "Rẽ trái ở phía trước.",
+        "Ngân hàng Trung Quốc ở bên trái.",
+        "Hiệu sách ở bên cạnh siêu thị.",
+        "Sau đó đi về bên phải."
+      ],
+      "accepted": [
+        "Hiệu sách ở bên cạnh siêu thị."
+      ],
+      "explanation": "书店在超市旁边。 — Hiệu sách ở bên cạnh siêu thị. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Hiệu sách ở bên cạnh siêu thị.”.",
+      "options": [
+        "这家商店很大。",
+        "书店在超市旁边。",
+        "学校外面有商店。",
+        "我去邮局寄快递。"
+      ],
+      "accepted": [
+        "书店在超市旁边。"
+      ],
+      "explanation": "书店在超市旁边。 — Hiệu sách ở bên cạnh siêu thị. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “银行就在公司对面。” có nghĩa là gì?",
+      "options": [
+        "Tôi đón bạn ở cửa ra vào.",
+        "Ngân hàng ở ngay đối diện công ty.",
+        "Bên trong ngôi nhà có máy tính.",
+        "Cửa hàng này rất lớn."
+      ],
+      "accepted": [
+        "Ngân hàng ở ngay đối diện công ty."
+      ],
+      "explanation": "银行就在公司对面。 — Ngân hàng ở ngay đối diện công ty. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Ngân hàng ở ngay đối diện công ty.”.",
+      "options": [
+        "我给你送水果。",
+        "银行就在公司对面。",
+        "从公司到银行很近。",
+        "我跟朋友去商场。"
+      ],
+      "accepted": [
+        "银行就在公司对面。"
+      ],
+      "explanation": "银行就在公司对面。 — Ngân hàng ở ngay đối diện công ty. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “请往前走。” có nghĩa là gì?",
+      "options": [
+        "Tôi đi trung tâm thương mại cùng bạn.",
+        "Tôi muốn đến ngân hàng rút tiền.",
+        "Rẽ trái ở phía trước.",
+        "Xin đi về phía trước."
+      ],
+      "accepted": [
+        "Xin đi về phía trước."
+      ],
+      "explanation": "请往前走。 — Xin đi về phía trước. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Xin đi về phía trước.”.",
+      "options": [
+        "这个房间很好。",
+        "酒店在右边。",
+        "我们一起去市场。",
+        "请往前走。"
+      ],
+      "accepted": [
+        "请往前走。"
+      ],
+      "explanation": "请往前走。 — Xin đi về phía trước. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “前面左拐。” có nghĩa là gì?",
+      "options": [
+        "Tôi mang hoa quả đến cho bạn.",
+        "Rẽ trái ở phía trước.",
+        "Bên ngoài trường học có cửa hàng.",
+        "Khách sạn ở bên phải."
+      ],
+      "accepted": [
+        "Rẽ trái ở phía trước."
+      ],
+      "explanation": "前面左拐。 — Rẽ trái ở phía trước. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Rẽ trái ở phía trước.”.",
+      "options": [
+        "前面左拐。",
+        "书店在超市旁边。",
+        "中国银行在左边。",
+        "我们一起去市场。"
+      ],
+      "accepted": [
+        "前面左拐。"
+      ],
+      "explanation": "前面左拐。 — Rẽ trái ở phía trước. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “然后往右走。” có nghĩa là gì?",
+      "options": [
+        "Sau đó đi về bên phải.",
+        "Tôi đến bưu điện gửi chuyển phát nhanh.",
+        "Ngân hàng ở ngay đối diện công ty.",
+        "Tôi mang hoa quả đến cho bạn."
+      ],
+      "accepted": [
+        "Sau đó đi về bên phải."
+      ],
+      "explanation": "然后往右走。 — Sau đó đi về bên phải. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Sau đó đi về bên phải.”.",
+      "options": [
+        "然后往右走。",
+        "我们一起去市场。",
+        "前面左拐。",
+        "银行就在公司对面。"
+      ],
+      "accepted": [
+        "然后往右走。"
+      ],
+      "explanation": "然后往右走。 — Sau đó đi về bên phải. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “我住在学校附近。” có nghĩa là gì?",
+      "options": [
+        "Tôi mang hoa quả đến cho bạn.",
+        "Tôi sống ở gần trường học.",
+        "Bên ngoài trường học có cửa hàng.",
+        "Ngân hàng ở ngay đối diện công ty."
+      ],
+      "accepted": [
+        "Tôi sống ở gần trường học."
+      ],
+      "explanation": "我住在学校附近。 — Tôi sống ở gần trường học. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi sống ở gần trường học.”.",
+      "options": [
+        "这家商店很大。",
+        "附近有银行吗？",
+        "房子里面有电脑。",
+        "我住在学校附近。"
+      ],
+      "accepted": [
+        "我住在学校附近。"
+      ],
+      "explanation": "我住在学校附近。 — Tôi sống ở gần trường học. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “我们一起去市场。” có nghĩa là gì?",
+      "options": [
+        "Chúng ta cùng đi chợ.",
+        "Tôi đón bạn ở cửa ra vào.",
+        "Bên trong ngôi nhà có máy tính.",
+        "Bên ngoài trường học có cửa hàng."
+      ],
+      "accepted": [
+        "Chúng ta cùng đi chợ."
+      ],
+      "explanation": "我们一起去市场。 — Chúng ta cùng đi chợ. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chúng ta cùng đi chợ.”.",
+      "options": [
+        "附近有银行吗？",
+        "中国银行在左边。",
+        "我给你送水果。",
+        "我们一起去市场。"
+      ],
+      "accepted": [
+        "我们一起去市场。"
+      ],
+      "explanation": "我们一起去市场。 — Chúng ta cùng đi chợ. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “这家商店很大。” có nghĩa là gì?",
+      "options": [
+        "Rẽ trái ở phía trước.",
+        "Căn phòng này rất tốt.",
+        "Gần đây có ngân hàng không?",
+        "Cửa hàng này rất lớn."
+      ],
+      "accepted": [
+        "Cửa hàng này rất lớn."
+      ],
+      "explanation": "这家商店很大。 — Cửa hàng này rất lớn. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cửa hàng này rất lớn.”.",
+      "options": [
+        "房子里面有电脑。",
+        "这家商店很大。",
+        "我跟朋友去商场。",
+        "这个房间很好。"
+      ],
+      "accepted": [
+        "这家商店很大。"
+      ],
+      "explanation": "这家商店很大。 — Cửa hàng này rất lớn. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “我给你送水果。” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn đến ngân hàng rút tiền.",
+        "Khách sạn ở bên phải.",
+        "Cửa hàng này rất lớn.",
+        "Tôi mang hoa quả đến cho bạn."
+      ],
+      "accepted": [
+        "Tôi mang hoa quả đến cho bạn."
+      ],
+      "explanation": "我给你送水果。 — Tôi mang hoa quả đến cho bạn. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi mang hoa quả đến cho bạn.”.",
+      "options": [
+        "我在门口接你。",
+        "我给你送水果。",
+        "我跟朋友去商场。",
+        "我去邮局寄快递。"
+      ],
+      "accepted": [
+        "我给你送水果。"
+      ],
+      "explanation": "我给你送水果。 — Tôi mang hoa quả đến cho bạn. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “我跟朋友去商场。” có nghĩa là gì?",
+      "options": [
+        "Chúng ta cùng đi chợ.",
+        "Căn phòng này rất tốt.",
+        "Tôi đi trung tâm thương mại cùng bạn.",
+        "Sau đó đi về bên phải."
+      ],
+      "accepted": [
+        "Tôi đi trung tâm thương mại cùng bạn."
+      ],
+      "explanation": "我跟朋友去商场。 — Tôi đi trung tâm thương mại cùng bạn. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi đi trung tâm thương mại cùng bạn.”.",
+      "options": [
+        "我在门口接你。",
+        "银行就在公司对面。",
+        "这个房间很好。",
+        "我跟朋友去商场。"
+      ],
+      "accepted": [
+        "我跟朋友去商场。"
+      ],
+      "explanation": "我跟朋友去商场。 — Tôi đi trung tâm thương mại cùng bạn. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “中国银行在左边。” có nghĩa là gì?",
+      "options": [
+        "Chúng ta cùng đi chợ.",
+        "Ngân hàng Trung Quốc ở bên trái.",
+        "Rẽ trái ở phía trước.",
+        "Tôi đi trung tâm thương mại cùng bạn."
+      ],
+      "accepted": [
+        "Ngân hàng Trung Quốc ở bên trái."
+      ],
+      "explanation": "中国银行在左边。 — Ngân hàng Trung Quốc ở bên trái. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Ngân hàng Trung Quốc ở bên trái.”.",
+      "options": [
+        "我去邮局寄快递。",
+        "书店在超市旁边。",
+        "我住在学校附近。",
+        "中国银行在左边。"
+      ],
+      "accepted": [
+        "中国银行在左边。"
+      ],
+      "explanation": "中国银行在左边。 — Ngân hàng Trung Quốc ở bên trái. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “酒店在右边。” có nghĩa là gì?",
+      "options": [
+        "Khách sạn ở bên phải.",
+        "Tôi sống ở gần trường học.",
+        "Hiệu sách ở bên cạnh siêu thị.",
+        "Ngân hàng ở ngay đối diện công ty."
+      ],
+      "accepted": [
+        "Khách sạn ở bên phải."
+      ],
+      "explanation": "酒店在右边。 — Khách sạn ở bên phải. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Khách sạn ở bên phải.”.",
+      "options": [
+        "酒店在右边。",
+        "书店在超市旁边。",
+        "中国银行在左边。",
+        "我在门口接你。"
+      ],
+      "accepted": [
+        "酒店在右边。"
+      ],
+      "explanation": "酒店在右边。 — Khách sạn ở bên phải. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “这个房间很好。” có nghĩa là gì?",
+      "options": [
+        "Căn phòng này rất tốt.",
+        "Bên trong ngôi nhà có máy tính.",
+        "Khách sạn ở bên phải.",
+        "Bên ngoài trường học có cửa hàng."
+      ],
+      "accepted": [
+        "Căn phòng này rất tốt."
+      ],
+      "explanation": "这个房间很好。 — Căn phòng này rất tốt. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Căn phòng này rất tốt.”.",
+      "options": [
+        "这个房间很好。",
+        "我们一起去市场。",
+        "银行就在公司对面。",
+        "学校外面有商店。"
+      ],
+      "accepted": [
+        "这个房间很好。"
+      ],
+      "explanation": "这个房间很好。 — Căn phòng này rất tốt. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “我在门口接你。” có nghĩa là gì?",
+      "options": [
+        "Sau đó đi về bên phải.",
+        "Tôi đến bưu điện gửi chuyển phát nhanh.",
+        "Xin đi về phía trước.",
+        "Tôi đón bạn ở cửa ra vào."
+      ],
+      "accepted": [
+        "Tôi đón bạn ở cửa ra vào."
+      ],
+      "explanation": "我在门口接你。 — Tôi đón bạn ở cửa ra vào. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi đón bạn ở cửa ra vào.”.",
+      "options": [
+        "我在门口接你。",
+        "我们一起去市场。",
+        "这个房间很好。",
+        "我想去银行取钱。"
+      ],
+      "accepted": [
+        "我在门口接你。"
+      ],
+      "explanation": "我在门口接你。 — Tôi đón bạn ở cửa ra vào. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “房子里面有电脑。” có nghĩa là gì?",
+      "options": [
+        "Bên trong ngôi nhà có máy tính.",
+        "Sau đó đi về bên phải.",
+        "Tôi muốn đến ngân hàng rút tiền.",
+        "Rẽ trái ở phía trước."
+      ],
+      "accepted": [
+        "Bên trong ngôi nhà có máy tính."
+      ],
+      "explanation": "房子里面有电脑。 — Bên trong ngôi nhà có máy tính. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bên trong ngôi nhà có máy tính.”.",
+      "options": [
+        "房子里面有电脑。",
+        "银行就在公司对面。",
+        "这家商店很大。",
+        "我给你送水果。"
+      ],
+      "accepted": [
+        "房子里面有电脑。"
+      ],
+      "explanation": "房子里面有电脑。 — Bên trong ngôi nhà có máy tính. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “学校外面有商店。” có nghĩa là gì?",
+      "options": [
+        "Bên ngoài trường học có cửa hàng.",
+        "Tôi sống ở gần trường học.",
+        "Căn phòng này rất tốt.",
+        "Khách sạn ở bên phải."
+      ],
+      "accepted": [
+        "Bên ngoài trường học có cửa hàng."
+      ],
+      "explanation": "学校外面有商店。 — Bên ngoài trường học có cửa hàng. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bên ngoài trường học có cửa hàng.”.",
+      "options": [
+        "我想去银行取钱。",
+        "书店在超市旁边。",
+        "然后往右走。",
+        "学校外面有商店。"
+      ],
+      "accepted": [
+        "学校外面有商店。"
+      ],
+      "explanation": "学校外面有商店。 — Bên ngoài trường học có cửa hàng. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “从公司到银行很近。” có nghĩa là gì?",
+      "options": [
+        "Sau đó đi về bên phải.",
+        "Tôi sống ở gần trường học.",
+        "Từ công ty đến ngân hàng rất gần.",
+        "Tôi đón bạn ở cửa ra vào."
+      ],
+      "accepted": [
+        "Từ công ty đến ngân hàng rất gần."
+      ],
+      "explanation": "从公司到银行很近。 — Từ công ty đến ngân hàng rất gần. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Từ công ty đến ngân hàng rất gần.”.",
+      "options": [
+        "这家商店很大。",
+        "学校外面有商店。",
+        "从公司到银行很近。",
+        "我们一起去市场。"
+      ],
+      "accepted": [
+        "从公司到银行很近。"
+      ],
+      "explanation": "从公司到银行很近。 — Từ công ty đến ngân hàng rất gần. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Câu “我想去银行取钱。” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn đến ngân hàng rút tiền.",
+        "Ngân hàng Trung Quốc ở bên trái.",
+        "Tôi sống ở gần trường học.",
+        "Tôi đến bưu điện gửi chuyển phát nhanh."
+      ],
+      "accepted": [
+        "Tôi muốn đến ngân hàng rút tiền."
+      ],
+      "explanation": "我想去银行取钱。 — Tôi muốn đến ngân hàng rút tiền. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–7",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn đến ngân hàng rút tiền.”.",
+      "options": [
+        "房子里面有电脑。",
+        "我想去银行取钱。",
+        "银行就在公司对面。",
+        "请往前走。"
+      ],
+      "accepted": [
+        "我想去银行取钱。"
+      ],
+      "explanation": "我想去银行取钱。 — Tôi muốn đến ngân hàng rút tiền. Câu dùng từ trong danh sách bài 1–7.",
+      "difficulty": "medium",
+      "approved": true
+    }
+  ],
+  "speaking": [
+    {
+      "practice": "speaking",
+      "text": "附近有银行吗？",
+      "meaning": "Gần đây có ngân hàng không?",
+      "answer_reference": "附近有中国银行。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "书店在哪里？",
+      "meaning": "Hiệu sách ở đâu?",
+      "answer_reference": "书店在超市旁边。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "中国银行在哪里？",
+      "meaning": "Ngân hàng Trung Quốc ở đâu?",
+      "answer_reference": "中国银行在公司对面。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你住在哪里？",
+      "meaning": "Bạn sống ở đâu?",
+      "answer_reference": "我住在学校附近。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你要去邮局做什么？",
+      "meaning": "Bạn đến bưu điện làm gì?",
+      "answer_reference": "我去邮局寄快递。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "银行在左边还是右边？",
+      "meaning": "Ngân hàng ở bên trái hay bên phải?",
+      "answer_reference": "银行在左边。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "从学校到公司远吗？",
+      "meaning": "Từ trường đến công ty có xa không?",
+      "answer_reference": "从学校到公司很近。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你跟谁一起去市场？",
+      "meaning": "Bạn đi chợ cùng ai?",
+      "answer_reference": "我跟朋友一起去市场。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "这个房间大吗？",
+      "meaning": "Căn phòng này có rộng không?",
+      "answer_reference": "这个房间很大。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你想去银行取钱吗？",
+      "meaning": "Bạn muốn đến ngân hàng rút tiền phải không?",
+      "answer_reference": "我想去银行取钱。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    }
+  ],
+  "activities": {
+    "topic": "Địa điểm và chỉ đường",
+    "tasks": [
+      {
+        "type": "order",
+        "prompt": "Gần đây có ngân hàng không?",
+        "tokens": [
+          "附近",
+          "有",
+          "银行",
+          "吗",
+          "？"
+        ],
+        "answer": "附近有银行吗？",
+        "explanation": "附近有银行吗？ — Gần đây có ngân hàng không?"
+      },
+      {
+        "type": "fill",
+        "prompt": "___有银行吗？ (Gần đây có ngân hàng không?)",
+        "answer": "附近",
+        "explanation": "Câu hoàn chỉnh: 附近有银行吗？ — Gần đây có ngân hàng không?"
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi đến bưu điện gửi chuyển phát nhanh.",
+        "tokens": [
+          "我",
+          "去",
+          "邮局",
+          "寄",
+          "快递",
+          "。"
+        ],
+        "answer": "我去邮局寄快递。",
+        "explanation": "我去邮局寄快递。 — Tôi đến bưu điện gửi chuyển phát nhanh."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___邮局寄快递。 (Tôi đến bưu điện gửi chuyển phát nhanh.)",
+        "answer": "去",
+        "explanation": "Câu hoàn chỉnh: 我去邮局寄快递。 — Tôi đến bưu điện gửi chuyển phát nhanh."
+      },
+      {
+        "type": "order",
+        "prompt": "Hiệu sách ở bên cạnh siêu thị.",
+        "tokens": [
+          "书店",
+          "在",
+          "超市",
+          "旁边",
+          "。"
+        ],
+        "answer": "书店在超市旁边。",
+        "explanation": "书店在超市旁边。 — Hiệu sách ở bên cạnh siêu thị."
+      },
+      {
+        "type": "fill",
+        "prompt": "___在超市旁边。 (Hiệu sách ở bên cạnh siêu thị.)",
+        "answer": "书店",
+        "explanation": "Câu hoàn chỉnh: 书店在超市旁边。 — Hiệu sách ở bên cạnh siêu thị."
+      },
+      {
+        "type": "order",
+        "prompt": "Ngân hàng ở ngay đối diện công ty.",
+        "tokens": [
+          "银行",
+          "就",
+          "在",
+          "公司",
+          "对面",
+          "。"
+        ],
+        "answer": "银行就在公司对面。",
+        "explanation": "银行就在公司对面。 — Ngân hàng ở ngay đối diện công ty."
+      },
+      {
+        "type": "fill",
+        "prompt": "___就在公司对面。 (Ngân hàng ở ngay đối diện công ty.)",
+        "answer": "银行",
+        "explanation": "Câu hoàn chỉnh: 银行就在公司对面。 — Ngân hàng ở ngay đối diện công ty."
+      },
+      {
+        "type": "order",
+        "prompt": "Rẽ trái ở phía trước.",
+        "tokens": [
+          "前",
+          "面",
+          "左拐",
+          "。"
+        ],
+        "answer": "前面左拐。",
+        "explanation": "前面左拐。 — Rẽ trái ở phía trước."
+      },
+      {
+        "type": "fill",
+        "prompt": "___面左拐。 (Rẽ trái ở phía trước.)",
+        "answer": "前",
+        "explanation": "Câu hoàn chỉnh: 前面左拐。 — Rẽ trái ở phía trước."
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi sống ở gần trường học.",
+        "tokens": [
+          "我",
+          "住",
+          "在",
+          "学校",
+          "附近",
+          "。"
+        ],
+        "answer": "我住在学校附近。",
+        "explanation": "我住在学校附近。 — Tôi sống ở gần trường học."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___在学校附近。 (Tôi sống ở gần trường học.)",
+        "answer": "住",
+        "explanation": "Câu hoàn chỉnh: 我住在学校附近。 — Tôi sống ở gần trường học."
+      },
+      {
+        "type": "order",
+        "prompt": "Chúng ta cùng đi chợ.",
+        "tokens": [
+          "我们",
+          "一起",
+          "去",
+          "市场",
+          "。"
+        ],
+        "answer": "我们一起去市场。",
+        "explanation": "我们一起去市场。 — Chúng ta cùng đi chợ."
+      },
+      {
+        "type": "fill",
+        "prompt": "我们___去市场。 (Chúng ta cùng đi chợ.)",
+        "answer": "一起",
+        "explanation": "Câu hoàn chỉnh: 我们一起去市场。 — Chúng ta cùng đi chợ."
+      },
+      {
+        "type": "order",
+        "prompt": "Cửa hàng này rất lớn.",
+        "tokens": [
+          "这",
+          "家",
+          "商店",
+          "很",
+          "大",
+          "。"
+        ],
+        "answer": "这家商店很大。",
+        "explanation": "这家商店很大。 — Cửa hàng này rất lớn."
+      },
+      {
+        "type": "fill",
+        "prompt": "___家商店很大。 (Cửa hàng này rất lớn.)",
+        "answer": "这",
+        "explanation": "Câu hoàn chỉnh: 这家商店很大。 — Cửa hàng này rất lớn."
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi mang hoa quả đến cho bạn.",
+        "tokens": [
+          "我",
+          "给",
+          "你",
+          "送",
+          "水果",
+          "。"
+        ],
+        "answer": "我给你送水果。",
+        "explanation": "我给你送水果。 — Tôi mang hoa quả đến cho bạn."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___你送水果。 (Tôi mang hoa quả đến cho bạn.)",
+        "answer": "给",
+        "explanation": "Câu hoàn chỉnh: 我给你送水果。 — Tôi mang hoa quả đến cho bạn."
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi đi trung tâm thương mại cùng bạn.",
+        "tokens": [
+          "我",
+          "跟",
+          "朋友",
+          "去",
+          "商场",
+          "。"
+        ],
+        "answer": "我跟朋友去商场。",
+        "explanation": "我跟朋友去商场。 — Tôi đi trung tâm thương mại cùng bạn."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___朋友去商场。 (Tôi đi trung tâm thương mại cùng bạn.)",
+        "answer": "跟",
+        "explanation": "Câu hoàn chỉnh: 我跟朋友去商场。 — Tôi đi trung tâm thương mại cùng bạn."
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Gần đây có ngân hàng không?”: 我住在学校附近。",
+        "answer": "附近有银行吗？",
+        "options": [
+          "附近有银行吗？",
+          "我住在学校附近。",
+          "酒店在右边。"
+        ],
+        "explanation": "附近有银行吗？ — Gần đây có ngân hàng không?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "附近有银行吗？",
+        "answer": "附近有中国银行。",
+        "options": [
+          "附近有中国银行。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Gần đây có ngân hàng không? Đáp lại: 附近有中国银行。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi đến bưu điện gửi chuyển phát nhanh.”: 我们一起去市场。",
+        "answer": "我去邮局寄快递。",
+        "options": [
+          "我去邮局寄快递。",
+          "我们一起去市场。",
+          "这个房间很好。"
+        ],
+        "explanation": "我去邮局寄快递。 — Tôi đến bưu điện gửi chuyển phát nhanh."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "书店在哪里？",
+        "answer": "书店在超市旁边。",
+        "options": [
+          "书店在超市旁边。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Hiệu sách ở đâu? Đáp lại: 书店在超市旁边。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Hiệu sách ở bên cạnh siêu thị.”: 这家商店很大。",
+        "answer": "书店在超市旁边。",
+        "options": [
+          "书店在超市旁边。",
+          "这家商店很大。",
+          "我在门口接你。"
+        ],
+        "explanation": "书店在超市旁边。 — Hiệu sách ở bên cạnh siêu thị."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "中国银行在哪里？",
+        "answer": "中国银行在公司对面。",
+        "options": [
+          "中国银行在公司对面。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Ngân hàng Trung Quốc ở đâu? Đáp lại: 中国银行在公司对面。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Ngân hàng ở ngay đối diện công ty.”: 我给你送水果。",
+        "answer": "银行就在公司对面。",
+        "options": [
+          "银行就在公司对面。",
+          "我给你送水果。",
+          "房子里面有电脑。"
+        ],
+        "explanation": "银行就在公司对面。 — Ngân hàng ở ngay đối diện công ty."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你住在哪里？",
+        "answer": "我住在学校附近。",
+        "options": [
+          "我住在学校附近。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn sống ở đâu? Đáp lại: 我住在学校附近。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Xin đi về phía trước.”: 我跟朋友去商场。",
+        "answer": "请往前走。",
+        "options": [
+          "请往前走。",
+          "我跟朋友去商场。",
+          "学校外面有商店。"
+        ],
+        "explanation": "请往前走。 — Xin đi về phía trước."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你要去邮局做什么？",
+        "answer": "我去邮局寄快递。",
+        "options": [
+          "我去邮局寄快递。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn đến bưu điện làm gì? Đáp lại: 我去邮局寄快递。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Rẽ trái ở phía trước.”: 中国银行在左边。",
+        "answer": "前面左拐。",
+        "options": [
+          "前面左拐。",
+          "中国银行在左边。",
+          "从公司到银行很近。"
+        ],
+        "explanation": "前面左拐。 — Rẽ trái ở phía trước."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "银行在左边还是右边？",
+        "answer": "银行在左边。",
+        "options": [
+          "银行在左边。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Ngân hàng ở bên trái hay bên phải? Đáp lại: 银行在左边。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Sau đó đi về bên phải.”: 酒店在右边。",
+        "answer": "然后往右走。",
+        "options": [
+          "然后往右走。",
+          "酒店在右边。",
+          "我想去银行取钱。"
+        ],
+        "explanation": "然后往右走。 — Sau đó đi về bên phải."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "从学校到公司远吗？",
+        "answer": "从学校到公司很近。",
+        "options": [
+          "从学校到公司很近。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Từ trường đến công ty có xa không? Đáp lại: 从学校到公司很近。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi sống ở gần trường học.”: 这个房间很好。",
+        "answer": "我住在学校附近。",
+        "options": [
+          "我住在学校附近。",
+          "这个房间很好。",
+          "附近有银行吗？"
+        ],
+        "explanation": "我住在学校附近。 — Tôi sống ở gần trường học."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你跟谁一起去市场？",
+        "answer": "我跟朋友一起去市场。",
+        "options": [
+          "我跟朋友一起去市场。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn đi chợ cùng ai? Đáp lại: 我跟朋友一起去市场。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Chúng ta cùng đi chợ.”: 我在门口接你。",
+        "answer": "我们一起去市场。",
+        "options": [
+          "我们一起去市场。",
+          "我在门口接你。",
+          "我去邮局寄快递。"
+        ],
+        "explanation": "我们一起去市场。 — Chúng ta cùng đi chợ."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "这个房间大吗？",
+        "answer": "这个房间很大。",
+        "options": [
+          "这个房间很大。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Căn phòng này có rộng không? Đáp lại: 这个房间很大。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Cửa hàng này rất lớn.”: 房子里面有电脑。",
+        "answer": "这家商店很大。",
+        "options": [
+          "这家商店很大。",
+          "房子里面有电脑。",
+          "书店在超市旁边。"
+        ],
+        "explanation": "这家商店很大。 — Cửa hàng này rất lớn."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你想去银行取钱吗？",
+        "answer": "我想去银行取钱。",
+        "options": [
+          "我想去银行取钱。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn muốn đến ngân hàng rút tiền phải không? Đáp lại: 我想去银行取钱。"
+      }
+    ]
+  },
+  "chat": {
+    "enabled": true,
+    "scenario_id": "directions",
+    "goal": "Trò chuyện về địa điểm và chỉ đường; chỉ dùng từ đã học từ bài 1 đến bài 7.",
+    "opening": "附近有银行吗？",
+    "translation": "Gần đây có ngân hàng không?",
+    "required_words": [
+      "附近",
+      "银行",
+      "寄",
+      "快递",
+      "收",
+      "取",
+      "家",
+      "房子",
+      "房间",
+      "超市",
+      "市场",
+      "书店",
+      "店",
+      "商店",
+      "商场",
+      "就",
+      "送",
+      "给",
+      "接",
+      "住"
+    ],
+    "max_turns": 10
+  },
+  "street": {
+    "enabled": true,
+    "place_id": "bank",
+    "missions": [
+      {
+        "id": "bank-right",
+        "title": "Ngân hàng ở bên nào?",
+        "speech": "中国银行在饭馆的右边。",
+        "answer": "bank",
+        "feedback": "Ngân hàng Trung Quốc ở bên phải nhà hàng.",
+        "instruction": "Nghe rồi chạm vào đúng địa điểm trên bản đồ.",
+        "type": "map",
+        "options": []
+      },
+      {
+        "id": "office-left",
+        "title": "Tìm công ty",
+        "speech": "请问，公司在哪儿？",
+        "answer": "office",
+        "feedback": "公司 là công ty. Chọn tòa nhà văn phòng.",
+        "instruction": "Nghe rồi chạm vào đúng địa điểm trên bản đồ.",
+        "type": "map",
+        "options": []
+      },
+      {
+        "id": "home-right",
+        "title": "Tìm nhà của bạn",
+        "speech": "我家在电影院的右边。",
+        "answer": "home",
+        "feedback": "Nhà mình ở bên phải rạp phim.",
+        "instruction": "Nghe rồi chạm vào đúng địa điểm trên bản đồ.",
+        "type": "map",
+        "options": []
+      }
+    ]
+  }
+}

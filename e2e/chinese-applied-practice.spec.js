@@ -176,10 +176,10 @@ test('each lesson offers ten distinct questions per activity type and mixed sess
      const options=await page.locator('.quiz-choices .choice-with-audio > button').allTextContents();
      task=candidates.find(t=>t.speech===speech&&t.options.length===options.length&&t.options.every(o=>options.includes(o)));
      prompt=JSON.stringify([speech,[...options].sort()]);
-     const translation=pack.tasks.find(t=>t.type==='order'&&t.answer===task?.answer)?.prompt;
+     const translation=task?.explanation;
      expect(translation).toBeTruthy();
      await expect(page.locator('.applied-practice')).not.toContainText(translation);
-     expect(task?.prompt).toBe('Nghe câu thoại và chọn câu đáp lại phù hợp.');
+     expect(task?.prompt).toBe('Nghe câu hỏi và chọn câu trả lời phù hợp.');
      expect(task?.hint).toBeUndefined();
      expect(task?.meaning).toBeUndefined();
     }

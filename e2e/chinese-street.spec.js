@@ -51,10 +51,10 @@ test('listening is opt-in, wrong map answers retry and progress survives reload'
  await page.locator('[data-place=bank]').click();await page.locator('[data-check]').click();await expect(page.locator('.street-feedback')).toContainText('Đúng rồi');await expect(page.locator('.street-stats')).toContainText('2 sao');
  await page.screenshot({path:'test-results/street-map-correct.png',fullPage:true});await page.reload();await expect(page.locator('.street-mission-kicker')).toContainText('2/3');await expect(page.locator('.street-stats')).toContainText('2 sao');expect(state.providers).toEqual([]);expect(state.errors).toEqual([]);
 });
-test('school includes three lessons and text fallback unlocks answer choices',async({page})=>{
- const state=await setup(page,{voice:false});await page.locator('[data-place=school]').click();await expect(page.locator('.street-lesson-tabs>.btn')).toHaveCount(3);
+test('school includes its assigned lessons and text fallback unlocks answer choices',async({page})=>{
+ const state=await setup(page,{voice:false});await page.locator('[data-place=school]').click();await expect(page.locator('.street-lesson-tabs>.btn')).toHaveCount(4);
  await expect(page.locator('.street-choice input').first()).toBeDisabled();await page.getByRole('button',{name:'Nghe câu nói',exact:false}).click();await expect(page.locator('.street-voice-status')).toContainText('chưa có giọng');
- await page.locator('.street-reveal>summary').click();await expect(page.locator('.street-choice input').first()).toBeEnabled();await page.locator('.street-choice input[value=c2]').check();await page.locator('[data-check]').click();await expect(page.locator('.street-feedback')).toContainText('Đúng rồi');expect(state.answers).toHaveLength(1);expect(state.providers).toEqual([]);expect(state.errors).toEqual([]);
+ await page.locator('.street-reveal>summary').click();await expect(page.locator('.street-choice input').first()).toBeEnabled();await page.locator('.street-choice input[value=c1]').check();await page.locator('[data-check]').click();await expect(page.locator('.street-feedback')).toContainText('Đúng rồi');expect(state.answers).toHaveLength(1);expect(state.providers).toEqual([]);expect(state.errors).toEqual([]);
 });
 test('teacher edits and previews the same map without creating student progress',async({page})=>{
  await page.setViewportSize({width:360,height:800});const state=await setup(page,{role:'admin',lesson:7});
@@ -64,7 +64,7 @@ test('teacher edits and previews the same map without creating student progress'
  await page.locator('.street-reports>summary').click();await expect(page.locator('.street-report')).toContainText('An');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:'test-results/street-admin-mobile.png',fullPage:true});expect(state.errors).toEqual([]);
 });
 test('network retry keeps the same request and prevents navigation while checking',async({page})=>{
- const state=await setup(page,{lesson:1,failAnswer:true});await page.locator('.street-reveal>summary').click();await page.locator('.street-choice input[value=c2]').check();await page.locator('[data-check]').click();await expect(page.locator('.street-alert')).toContainText('gián đoạn');await page.locator('[data-check]').click();await expect(page.locator('.street-feedback')).toContainText('Đúng rồi');expect(state.answers).toHaveLength(2);expect(state.answers[0].request_id).toBe(state.answers[1].request_id);expect(state.errors).toEqual([]);
+ const state=await setup(page,{lesson:1,failAnswer:true});await page.locator('.street-reveal>summary').click();await page.locator('.street-choice input[value=c1]').check();await page.locator('[data-check]').click();await expect(page.locator('.street-alert')).toContainText('gián đoạn');await page.locator('[data-check]').click();await expect(page.locator('.street-feedback')).toContainText('Đúng rồi');expect(state.answers).toHaveLength(2);expect(state.answers[0].request_id).toBe(state.answers[1].request_id);expect(state.errors).toEqual([]);
 });
 test('completes all map missions then returns to usable town navigation',async({page})=>{
  const state=await setup(page,{lesson:7});for(const [i,target]of ['bank','office','home'].entries()){

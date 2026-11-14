@@ -1,0 +1,3869 @@
+{
+  "version": "user-vocabulary-2026-11-14",
+  "lesson": 9,
+  "title": "第九课：你喜欢中国电影还是美国电影？ (Bạn thích phim Trung Quốc hay phim Mỹ?)",
+  "vocabulary": [
+    {
+      "hanzi": "喜欢",
+      "pinyin": "xǐhuan",
+      "meaning": "Thích",
+      "group": "main",
+      "example": "你喜欢中国电影还是美国电影？",
+      "example_meaning": "Bạn thích phim Trung Quốc hay phim Mỹ?"
+    },
+    {
+      "hanzi": "爱",
+      "pinyin": "ài",
+      "meaning": "Yêu",
+      "group": "main"
+    },
+    {
+      "hanzi": "地铁",
+      "pinyin": "dìtiě",
+      "meaning": "Tàu điện ngầm",
+      "group": "main",
+      "example": "我坐地铁去公司。",
+      "example_meaning": "Tôi đi tàu điện ngầm đến công ty."
+    },
+    {
+      "hanzi": "公交车",
+      "pinyin": "gōngjiāochē",
+      "meaning": "Xe buýt",
+      "group": "main"
+    },
+    {
+      "hanzi": "出租车",
+      "pinyin": "chūzūchē",
+      "meaning": "Xe taxi",
+      "group": "main",
+      "example": "他坐出租车去医院。",
+      "example_meaning": "Anh ấy đi taxi đến bệnh viện."
+    },
+    {
+      "hanzi": "自行车",
+      "pinyin": "zìxíngchē",
+      "meaning": "Xe đạp",
+      "group": "main",
+      "example": "她骑自行车去学校。",
+      "example_meaning": "Cô ấy đạp xe đạp đến trường."
+    },
+    {
+      "hanzi": "摩托车",
+      "pinyin": "mótuōchē",
+      "meaning": "Xe máy",
+      "group": "main"
+    },
+    {
+      "hanzi": "走路",
+      "pinyin": "zǒulù",
+      "meaning": "Đi bộ",
+      "group": "main",
+      "example": "我们走路去银行吧。",
+      "example_meaning": "Chúng ta đi bộ đến ngân hàng nhé."
+    },
+    {
+      "hanzi": "坐",
+      "pinyin": "zuò",
+      "meaning": "Ngồi, đi bằng phương tiện",
+      "group": "main",
+      "example": "我坐地铁去公司。",
+      "example_meaning": "Tôi đi tàu điện ngầm đến công ty."
+    },
+    {
+      "hanzi": "出去",
+      "pinyin": "chūqù",
+      "meaning": "Đi ra ngoài",
+      "group": "main",
+      "example": "我想出去玩。",
+      "example_meaning": "Tôi muốn ra ngoài chơi."
+    },
+    {
+      "hanzi": "出来",
+      "pinyin": "chūlái",
+      "meaning": "Đi ra đây",
+      "group": "main"
+    },
+    {
+      "hanzi": "玩",
+      "pinyin": "wán",
+      "meaning": "Chơi",
+      "group": "main",
+      "example": "我想出去玩。",
+      "example_meaning": "Tôi muốn ra ngoài chơi."
+    },
+    {
+      "hanzi": "穿",
+      "pinyin": "chuān",
+      "meaning": "Mặc",
+      "group": "main"
+    },
+    {
+      "hanzi": "衣服",
+      "pinyin": "yīfu",
+      "meaning": "Quần áo",
+      "group": "main",
+      "example": "她的衣服又便宜又好看。",
+      "example_meaning": "Quần áo của cô ấy vừa rẻ vừa đẹp."
+    },
+    {
+      "hanzi": "怎么",
+      "pinyin": "zěnme",
+      "meaning": "Như thế nào",
+      "group": "main",
+      "example": "今天的天气怎么样？",
+      "example_meaning": "Thời tiết hôm nay thế nào?"
+    },
+    {
+      "hanzi": "怎么样",
+      "pinyin": "zěnmeyàng",
+      "meaning": "Thế nào",
+      "group": "main",
+      "example": "今天的天气怎么样？",
+      "example_meaning": "Thời tiết hôm nay thế nào?"
+    },
+    {
+      "hanzi": "天气",
+      "pinyin": "tiānqì",
+      "meaning": "Thời tiết",
+      "group": "main",
+      "example": "今天的天气怎么样？",
+      "example_meaning": "Thời tiết hôm nay thế nào?"
+    },
+    {
+      "hanzi": "晴天",
+      "pinyin": "qíngtiān",
+      "meaning": "Trời nắng",
+      "group": "main",
+      "example": "今天是晴天。",
+      "example_meaning": "Hôm nay trời nắng."
+    },
+    {
+      "hanzi": "阴天",
+      "pinyin": "yīntiān",
+      "meaning": "Trời âm u",
+      "group": "main"
+    },
+    {
+      "hanzi": "下雨天",
+      "pinyin": "xià yǔ tiān",
+      "meaning": "Ngày trời mưa",
+      "group": "main",
+      "example": "我不喜欢下雨天。",
+      "example_meaning": "Tôi không thích những ngày trời mưa."
+    },
+    {
+      "hanzi": "热",
+      "pinyin": "rè",
+      "meaning": "Nóng",
+      "group": "main"
+    },
+    {
+      "hanzi": "冰",
+      "pinyin": "bīng",
+      "meaning": "Băng, đá",
+      "group": "main"
+    },
+    {
+      "hanzi": "又……又……",
+      "pinyin": "yòu…yòu…",
+      "meaning": "Vừa… vừa…",
+      "group": "main"
+    },
+    {
+      "hanzi": "吧",
+      "pinyin": "ba",
+      "meaning": "Trợ từ đề nghị, suy đoán",
+      "group": "main",
+      "example": "我们走路去银行吧。",
+      "example_meaning": "Chúng ta đi bộ đến ngân hàng nhé."
+    },
+    {
+      "hanzi": "打",
+      "pinyin": "dǎ",
+      "meaning": "Đánh, gọi điện",
+      "group": "main",
+      "example": "我想跟朋友一起打球。",
+      "example_meaning": "Tôi muốn chơi bóng cùng bạn."
+    },
+    {
+      "hanzi": "球",
+      "pinyin": "qiú",
+      "meaning": "Quả bóng, môn bóng",
+      "group": "main",
+      "example": "我想跟朋友一起打球。",
+      "example_meaning": "Tôi muốn chơi bóng cùng bạn."
+    },
+    {
+      "hanzi": "有名",
+      "pinyin": "yǒumíng",
+      "meaning": "Nổi tiếng",
+      "group": "main",
+      "example": "这家饭店很有名。",
+      "example_meaning": "Nhà hàng này rất nổi tiếng."
+    },
+    {
+      "hanzi": "好吃",
+      "pinyin": "hǎochī",
+      "meaning": "Ngon (đồ ăn)",
+      "group": "main",
+      "example": "这个菜很好吃。",
+      "example_meaning": "Món ăn này rất ngon."
+    },
+    {
+      "hanzi": "好喝",
+      "pinyin": "hǎohē",
+      "meaning": "Ngon (đồ uống)",
+      "group": "main",
+      "example": "这杯茶很好喝。",
+      "example_meaning": "Cốc trà này rất ngon."
+    },
+    {
+      "hanzi": "好听",
+      "pinyin": "hǎotīng",
+      "meaning": "Hay (âm thanh)",
+      "group": "main",
+      "example": "她说话很好听。",
+      "example_meaning": "Cô ấy nói chuyện rất hay."
+    },
+    {
+      "hanzi": "等",
+      "pinyin": "děng",
+      "meaning": "Đợi, chờ",
+      "group": "main",
+      "example": "请等一下。",
+      "example_meaning": "Xin đợi một chút."
+    },
+    {
+      "hanzi": "电影院",
+      "pinyin": "diànyǐngyuàn",
+      "meaning": "Rạp chiếu phim",
+      "group": "extended",
+      "example": "我想去电影院看电影。",
+      "example_meaning": "Tôi muốn đến rạp chiếu phim xem phim."
+    },
+    {
+      "hanzi": "电影",
+      "pinyin": "diànyǐng",
+      "meaning": "Phim",
+      "group": "extended",
+      "example": "你喜欢中国电影还是美国电影？",
+      "example_meaning": "Bạn thích phim Trung Quốc hay phim Mỹ?"
+    },
+    {
+      "hanzi": "开",
+      "pinyin": "kāi",
+      "meaning": "Mở, lái",
+      "group": "extended",
+      "example": "你会开车吗？",
+      "example_meaning": "Bạn biết lái xe không?"
+    },
+    {
+      "hanzi": "骑",
+      "pinyin": "qí",
+      "meaning": "Cưỡi, đi xe",
+      "group": "extended",
+      "example": "她骑自行车去学校。",
+      "example_meaning": "Cô ấy đạp xe đạp đến trường."
+    },
+    {
+      "hanzi": "骑车",
+      "pinyin": "qí chē",
+      "meaning": "Đi xe, đạp xe",
+      "group": "extended"
+    },
+    {
+      "hanzi": "骑马",
+      "pinyin": "qí mǎ",
+      "meaning": "Cưỡi ngựa",
+      "group": "extended",
+      "example": "他喜欢骑马。",
+      "example_meaning": "Anh ấy thích cưỡi ngựa."
+    },
+    {
+      "hanzi": "开车",
+      "pinyin": "kāi chē",
+      "meaning": "Lái xe",
+      "group": "extended",
+      "example": "你会开车吗？",
+      "example_meaning": "Bạn biết lái xe không?"
+    },
+    {
+      "hanzi": "跑步",
+      "pinyin": "pǎobù",
+      "meaning": "Chạy bộ",
+      "group": "extended",
+      "example": "我每天早上跑步。",
+      "example_meaning": "Tôi chạy bộ mỗi sáng sớm."
+    },
+    {
+      "hanzi": "坐地铁",
+      "pinyin": "zuò dìtiě",
+      "meaning": "Đi tàu điện ngầm",
+      "group": "extended",
+      "example": "我坐地铁去公司。",
+      "example_meaning": "Tôi đi tàu điện ngầm đến công ty."
+    },
+    {
+      "hanzi": "坐公交车",
+      "pinyin": "zuò gōngjiāochē",
+      "meaning": "Đi xe buýt",
+      "group": "extended"
+    },
+    {
+      "hanzi": "坐出租车",
+      "pinyin": "zuò chūzūchē",
+      "meaning": "Đi taxi",
+      "group": "extended",
+      "example": "他坐出租车去医院。",
+      "example_meaning": "Anh ấy đi taxi đến bệnh viện."
+    },
+    {
+      "hanzi": "打球",
+      "pinyin": "dǎ qiú",
+      "meaning": "Chơi bóng",
+      "group": "extended",
+      "example": "我想跟朋友一起打球。",
+      "example_meaning": "Tôi muốn chơi bóng cùng bạn."
+    },
+    {
+      "hanzi": "打开",
+      "pinyin": "dǎkāi",
+      "meaning": "Mở ra",
+      "group": "extended"
+    },
+    {
+      "hanzi": "等等",
+      "pinyin": "děngděng",
+      "meaning": "Đợi một chút; vân vân",
+      "group": "extended"
+    },
+    {
+      "hanzi": "爱好",
+      "pinyin": "àihào",
+      "meaning": "Sở thích",
+      "group": "extended"
+    },
+    {
+      "hanzi": "非常",
+      "pinyin": "fēicháng",
+      "meaning": "Rất, vô cùng",
+      "group": "extended"
+    },
+    {
+      "hanzi": "便宜",
+      "pinyin": "piányi",
+      "meaning": "Rẻ",
+      "group": "extended",
+      "example": "她的衣服又便宜又好看。",
+      "example_meaning": "Quần áo của cô ấy vừa rẻ vừa đẹp."
+    },
+    {
+      "hanzi": "菜",
+      "pinyin": "cài",
+      "meaning": "Rau, món ăn",
+      "group": "extended",
+      "example": "这个菜很好吃。",
+      "example_meaning": "Món ăn này rất ngon."
+    },
+    {
+      "hanzi": "冷",
+      "pinyin": "lěng",
+      "meaning": "Lạnh",
+      "group": "extended"
+    },
+    {
+      "hanzi": "明星",
+      "pinyin": "míngxīng",
+      "meaning": "Ngôi sao, người nổi tiếng",
+      "group": "extended"
+    },
+    {
+      "hanzi": "韩国",
+      "pinyin": "Hánguó",
+      "meaning": "Hàn Quốc",
+      "group": "extended"
+    },
+    {
+      "hanzi": "中国电影",
+      "pinyin": "Zhōngguó diànyǐng",
+      "meaning": "Phim Trung Quốc",
+      "group": "extended",
+      "example": "你喜欢中国电影还是美国电影？",
+      "example_meaning": "Bạn thích phim Trung Quốc hay phim Mỹ?"
+    },
+    {
+      "hanzi": "美国电影",
+      "pinyin": "Měiguó diànyǐng",
+      "meaning": "Phim Mỹ",
+      "group": "extended",
+      "example": "你喜欢中国电影还是美国电影？",
+      "example_meaning": "Bạn thích phim Trung Quốc hay phim Mỹ?"
+    },
+    {
+      "hanzi": "韩国电影",
+      "pinyin": "Hánguó diànyǐng",
+      "meaning": "Phim Hàn Quốc",
+      "group": "extended"
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “喜欢” có nghĩa là gì?",
+      "options": [
+        "Quả bóng, môn bóng",
+        "Cưỡi, đi xe",
+        "Quần áo",
+        "Thích"
+      ],
+      "accepted": [
+        "Thích"
+      ],
+      "explanation": "喜欢 đọc là xǐhuan, nghĩa là Thích. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 546.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2310441b-8ea8-4a4d-8705-f2a5991a3959"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “xǐhuan” và nghĩa “Thích”.",
+      "options": [
+        "开车",
+        "公交车",
+        "喜欢",
+        "热"
+      ],
+      "accepted": [
+        "喜欢"
+      ],
+      "explanation": "喜欢 đọc là xǐhuan, nghĩa là Thích. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 546.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2310441b-8ea8-4a4d-8705-f2a5991a3959"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “爱” có nghĩa là gì?",
+      "options": [
+        "Vừa… vừa…",
+        "Mở ra",
+        "Rất, vô cùng",
+        "Yêu"
+      ],
+      "accepted": [
+        "Yêu"
+      ],
+      "explanation": "爱 đọc là ài, nghĩa là Yêu. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 547.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "37a318ee-d012-450b-9f06-4c0efbe4d789"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “ài” và nghĩa “Yêu”.",
+      "options": [
+        "爱",
+        "坐出租车",
+        "好听",
+        "坐地铁"
+      ],
+      "accepted": [
+        "爱"
+      ],
+      "explanation": "爱 đọc là ài, nghĩa là Yêu. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 547.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "37a318ee-d012-450b-9f06-4c0efbe4d789"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “地铁” có nghĩa là gì?",
+      "options": [
+        "Đi taxi",
+        "Tàu điện ngầm",
+        "Quần áo",
+        "Hàn Quốc"
+      ],
+      "accepted": [
+        "Tàu điện ngầm"
+      ],
+      "explanation": "地铁 đọc là dìtiě, nghĩa là Tàu điện ngầm. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 548.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d0afcf3e-86c2-487f-8a76-229b168c5521"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “dìtiě” và nghĩa “Tàu điện ngầm”.",
+      "options": [
+        "地铁",
+        "跑步",
+        "韩国",
+        "开车"
+      ],
+      "accepted": [
+        "地铁"
+      ],
+      "explanation": "地铁 đọc là dìtiě, nghĩa là Tàu điện ngầm. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 548.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d0afcf3e-86c2-487f-8a76-229b168c5521"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “公交车” có nghĩa là gì?",
+      "options": [
+        "Ngon (đồ ăn)",
+        "Hay (âm thanh)",
+        "Nổi tiếng",
+        "Xe buýt"
+      ],
+      "accepted": [
+        "Xe buýt"
+      ],
+      "explanation": "公交车 đọc là gōngjiāochē, nghĩa là Xe buýt. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 549.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3002b56a-3aa3-41b2-9853-e23cb788b00e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “gōngjiāochē” và nghĩa “Xe buýt”.",
+      "options": [
+        "吧",
+        "怎么样",
+        "公交车",
+        "电影院"
+      ],
+      "accepted": [
+        "公交车"
+      ],
+      "explanation": "公交车 đọc là gōngjiāochē, nghĩa là Xe buýt. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 549.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3002b56a-3aa3-41b2-9853-e23cb788b00e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “出租车” có nghĩa là gì?",
+      "options": [
+        "Cưỡi, đi xe",
+        "Hàn Quốc",
+        "Yêu",
+        "Xe taxi"
+      ],
+      "accepted": [
+        "Xe taxi"
+      ],
+      "explanation": "出租车 đọc là chūzūchē, nghĩa là Xe taxi. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 550.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a9f7ba7b-ec72-45ae-b429-714925c10788"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “chūzūchē” và nghĩa “Xe taxi”.",
+      "options": [
+        "出租车",
+        "自行车",
+        "球",
+        "坐出租车"
+      ],
+      "accepted": [
+        "出租车"
+      ],
+      "explanation": "出租车 đọc là chūzūchē, nghĩa là Xe taxi. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 550.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a9f7ba7b-ec72-45ae-b429-714925c10788"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “自行车” có nghĩa là gì?",
+      "options": [
+        "Xe taxi",
+        "Đi ra đây",
+        "Xe đạp",
+        "Đi ra ngoài"
+      ],
+      "accepted": [
+        "Xe đạp"
+      ],
+      "explanation": "自行车 đọc là zìxíngchē, nghĩa là Xe đạp. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 551.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fc99e335-4956-4329-b531-f62d11b1cc08"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “zìxíngchē” và nghĩa “Xe đạp”.",
+      "options": [
+        "球",
+        "自行车",
+        "好吃",
+        "好听"
+      ],
+      "accepted": [
+        "自行车"
+      ],
+      "explanation": "自行车 đọc là zìxíngchē, nghĩa là Xe đạp. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 551.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fc99e335-4956-4329-b531-f62d11b1cc08"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “摩托车” có nghĩa là gì?",
+      "options": [
+        "Rẻ",
+        "Tàu điện ngầm",
+        "Xe máy",
+        "Chơi bóng"
+      ],
+      "accepted": [
+        "Xe máy"
+      ],
+      "explanation": "摩托车 đọc là mótuōchē, nghĩa là Xe máy. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 552.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ca7df176-5465-44fd-bdbb-14526612ba5b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “mótuōchē” và nghĩa “Xe máy”.",
+      "options": [
+        "摩托车",
+        "好听",
+        "冰",
+        "公交车"
+      ],
+      "accepted": [
+        "摩托车"
+      ],
+      "explanation": "摩托车 đọc là mótuōchē, nghĩa là Xe máy. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 552.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ca7df176-5465-44fd-bdbb-14526612ba5b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “走路” có nghĩa là gì?",
+      "options": [
+        "Xe taxi",
+        "Đi taxi",
+        "Đi bộ",
+        "Xe buýt"
+      ],
+      "accepted": [
+        "Đi bộ"
+      ],
+      "explanation": "走路 đọc là zǒulù, nghĩa là Đi bộ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 553.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b2d6b661-3e0b-4056-94ef-e58924c76a1e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “zǒulù” và nghĩa “Đi bộ”.",
+      "options": [
+        "美国电影",
+        "好吃",
+        "走路",
+        "开"
+      ],
+      "accepted": [
+        "走路"
+      ],
+      "explanation": "走路 đọc là zǒulù, nghĩa là Đi bộ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 553.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b2d6b661-3e0b-4056-94ef-e58924c76a1e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “坐” có nghĩa là gì?",
+      "options": [
+        "Phim Hàn Quốc",
+        "Vừa… vừa…",
+        "Ngồi, đi bằng phương tiện",
+        "Sở thích"
+      ],
+      "accepted": [
+        "Ngồi, đi bằng phương tiện"
+      ],
+      "explanation": "坐 đọc là zuò, nghĩa là Ngồi, đi bằng phương tiện. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 554.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "03b92372-1a6b-4984-9027-48fae3d67f15"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “zuò” và nghĩa “Ngồi, đi bằng phương tiện”.",
+      "options": [
+        "爱",
+        "坐",
+        "等",
+        "怎么"
+      ],
+      "accepted": [
+        "坐"
+      ],
+      "explanation": "坐 đọc là zuò, nghĩa là Ngồi, đi bằng phương tiện. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 554.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "03b92372-1a6b-4984-9027-48fae3d67f15"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “出去” có nghĩa là gì?",
+      "options": [
+        "Đi ra ngoài",
+        "Phim Mỹ",
+        "Đi taxi",
+        "Ngôi sao, người nổi tiếng"
+      ],
+      "accepted": [
+        "Đi ra ngoài"
+      ],
+      "explanation": "出去 đọc là chūqù, nghĩa là Đi ra ngoài. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 555.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1fd54306-d5f1-4ad5-8bf8-d6ae93f858f7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “chūqù” và nghĩa “Đi ra ngoài”.",
+      "options": [
+        "等等",
+        "出租车",
+        "出去",
+        "冰"
+      ],
+      "accepted": [
+        "出去"
+      ],
+      "explanation": "出去 đọc là chūqù, nghĩa là Đi ra ngoài. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 555.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1fd54306-d5f1-4ad5-8bf8-d6ae93f858f7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “出来” có nghĩa là gì?",
+      "options": [
+        "Ngon (đồ ăn)",
+        "Xe đạp",
+        "Đi ra đây",
+        "Xe máy"
+      ],
+      "accepted": [
+        "Đi ra đây"
+      ],
+      "explanation": "出来 đọc là chūlái, nghĩa là Đi ra đây. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 556.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f08b962d-cdf1-45cb-8a15-b2b10e021ecf"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “chūlái” và nghĩa “Đi ra đây”.",
+      "options": [
+        "下雨天",
+        "出来",
+        "开车",
+        "爱"
+      ],
+      "accepted": [
+        "出来"
+      ],
+      "explanation": "出来 đọc là chūlái, nghĩa là Đi ra đây. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 556.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f08b962d-cdf1-45cb-8a15-b2b10e021ecf"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “玩” có nghĩa là gì?",
+      "options": [
+        "Ngồi, đi bằng phương tiện",
+        "Chơi",
+        "Ngon (đồ uống)",
+        "Thích"
+      ],
+      "accepted": [
+        "Chơi"
+      ],
+      "explanation": "玩 đọc là wán, nghĩa là Chơi. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 557.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "17eedcac-1315-4e00-9db8-a349bd4041b1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “wán” và nghĩa “Chơi”.",
+      "options": [
+        "好听",
+        "坐",
+        "开车",
+        "玩"
+      ],
+      "accepted": [
+        "玩"
+      ],
+      "explanation": "玩 đọc là wán, nghĩa là Chơi. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 557.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "17eedcac-1315-4e00-9db8-a349bd4041b1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “穿” có nghĩa là gì?",
+      "options": [
+        "Thích",
+        "Đi xe, đạp xe",
+        "Đi ra ngoài",
+        "Mặc"
+      ],
+      "accepted": [
+        "Mặc"
+      ],
+      "explanation": "穿 đọc là chuān, nghĩa là Mặc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 558.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c890d0d2-f13e-4cbb-86f3-d27e1f57cc0b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “chuān” và nghĩa “Mặc”.",
+      "options": [
+        "穿",
+        "坐地铁",
+        "天气",
+        "玩"
+      ],
+      "accepted": [
+        "穿"
+      ],
+      "explanation": "穿 đọc là chuān, nghĩa là Mặc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 558.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c890d0d2-f13e-4cbb-86f3-d27e1f57cc0b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “衣服” có nghĩa là gì?",
+      "options": [
+        "Thời tiết",
+        "Quần áo",
+        "Cưỡi ngựa",
+        "Xe buýt"
+      ],
+      "accepted": [
+        "Quần áo"
+      ],
+      "explanation": "衣服 đọc là yīfu, nghĩa là Quần áo. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 559.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9277f277-e2f4-4ce0-8dac-52ec827b34e5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “yīfu” và nghĩa “Quần áo”.",
+      "options": [
+        "衣服",
+        "走路",
+        "好听",
+        "便宜"
+      ],
+      "accepted": [
+        "衣服"
+      ],
+      "explanation": "衣服 đọc là yīfu, nghĩa là Quần áo. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 559.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9277f277-e2f4-4ce0-8dac-52ec827b34e5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “怎么” có nghĩa là gì?",
+      "options": [
+        "Phim Hàn Quốc",
+        "Sở thích",
+        "Như thế nào",
+        "Đi ra ngoài"
+      ],
+      "accepted": [
+        "Như thế nào"
+      ],
+      "explanation": "怎么 đọc là zěnme, nghĩa là Như thế nào. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 560.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5fa1f0a0-f126-402e-8fcd-47e417cfc683"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “zěnme” và nghĩa “Như thế nào”.",
+      "options": [
+        "坐公交车",
+        "冰",
+        "怎么",
+        "等"
+      ],
+      "accepted": [
+        "怎么"
+      ],
+      "explanation": "怎么 đọc là zěnme, nghĩa là Như thế nào. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 560.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5fa1f0a0-f126-402e-8fcd-47e417cfc683"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “怎么样” có nghĩa là gì?",
+      "options": [
+        "Lái xe",
+        "Vừa… vừa…",
+        "Đi xe, đạp xe",
+        "Thế nào"
+      ],
+      "accepted": [
+        "Thế nào"
+      ],
+      "explanation": "怎么样 đọc là zěnmeyàng, nghĩa là Thế nào. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 561.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "74402d18-b1e2-4208-b08b-5c153d8be0af"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “zěnmeyàng” và nghĩa “Thế nào”.",
+      "options": [
+        "明星",
+        "爱",
+        "怎么样",
+        "出来"
+      ],
+      "accepted": [
+        "怎么样"
+      ],
+      "explanation": "怎么样 đọc là zěnmeyàng, nghĩa là Thế nào. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 561.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "74402d18-b1e2-4208-b08b-5c153d8be0af"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “天气” có nghĩa là gì?",
+      "options": [
+        "Đi xe, đạp xe",
+        "Mở, lái",
+        "Quả bóng, môn bóng",
+        "Thời tiết"
+      ],
+      "accepted": [
+        "Thời tiết"
+      ],
+      "explanation": "天气 đọc là tiānqì, nghĩa là Thời tiết. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 562.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bd5aa972-939a-4683-9919-d72a7b198c97"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “tiānqì” và nghĩa “Thời tiết”.",
+      "options": [
+        "天气",
+        "开车",
+        "公交车",
+        "下雨天"
+      ],
+      "accepted": [
+        "天气"
+      ],
+      "explanation": "天气 đọc là tiānqì, nghĩa là Thời tiết. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 562.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bd5aa972-939a-4683-9919-d72a7b198c97"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “晴天” có nghĩa là gì?",
+      "options": [
+        "Phim Trung Quốc",
+        "Trời nắng",
+        "Băng, đá",
+        "Chơi"
+      ],
+      "accepted": [
+        "Trời nắng"
+      ],
+      "explanation": "晴天 đọc là qíngtiān, nghĩa là Trời nắng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 563.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "54df0f92-9531-4ff3-ae73-6a35d95429e3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “qíngtiān” và nghĩa “Trời nắng”.",
+      "options": [
+        "天气",
+        "晴天",
+        "穿",
+        "非常"
+      ],
+      "accepted": [
+        "晴天"
+      ],
+      "explanation": "晴天 đọc là qíngtiān, nghĩa là Trời nắng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 563.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "54df0f92-9531-4ff3-ae73-6a35d95429e3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “阴天” có nghĩa là gì?",
+      "options": [
+        "Trời âm u",
+        "Ngày trời mưa",
+        "Mở ra",
+        "Xe đạp"
+      ],
+      "accepted": [
+        "Trời âm u"
+      ],
+      "explanation": "阴天 đọc là yīntiān, nghĩa là Trời âm u. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 564.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6cc3b76c-30e8-48da-abd9-890c35ef6db7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “yīntiān” và nghĩa “Trời âm u”.",
+      "options": [
+        "中国电影",
+        "阴天",
+        "爱好",
+        "韩国"
+      ],
+      "accepted": [
+        "阴天"
+      ],
+      "explanation": "阴天 đọc là yīntiān, nghĩa là Trời âm u. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 564.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6cc3b76c-30e8-48da-abd9-890c35ef6db7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “下雨天” có nghĩa là gì?",
+      "options": [
+        "Ngày trời mưa",
+        "Hàn Quốc",
+        "Ngôi sao, người nổi tiếng",
+        "Mặc"
+      ],
+      "accepted": [
+        "Ngày trời mưa"
+      ],
+      "explanation": "下雨天 đọc là xià yǔ tiān, nghĩa là Ngày trời mưa. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 565.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4bb65371-e221-4d89-ae19-a530fb8c8fde"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “xià yǔ tiān” và nghĩa “Ngày trời mưa”.",
+      "options": [
+        "明星",
+        "打开",
+        "下雨天",
+        "中国电影"
+      ],
+      "accepted": [
+        "下雨天"
+      ],
+      "explanation": "下雨天 đọc là xià yǔ tiān, nghĩa là Ngày trời mưa. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 565.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4bb65371-e221-4d89-ae19-a530fb8c8fde"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “热” có nghĩa là gì?",
+      "options": [
+        "Như thế nào",
+        "Đi xe buýt",
+        "Nóng",
+        "Đi bộ"
+      ],
+      "accepted": [
+        "Nóng"
+      ],
+      "explanation": "热 đọc là rè, nghĩa là Nóng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 566.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "aea64b08-f39d-4c51-bbf3-16cd3faeb4ac"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “rè” và nghĩa “Nóng”.",
+      "options": [
+        "有名",
+        "等等",
+        "坐出租车",
+        "热"
+      ],
+      "accepted": [
+        "热"
+      ],
+      "explanation": "热 đọc là rè, nghĩa là Nóng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 566.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "aea64b08-f39d-4c51-bbf3-16cd3faeb4ac"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “冰” có nghĩa là gì?",
+      "options": [
+        "Mở, lái",
+        "Trời âm u",
+        "Đi tàu điện ngầm",
+        "Băng, đá"
+      ],
+      "accepted": [
+        "Băng, đá"
+      ],
+      "explanation": "冰 đọc là bīng, nghĩa là Băng, đá. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 567.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "59efcf17-efcf-48b1-ad1e-21bc955bc8ca"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “bīng” và nghĩa “Băng, đá”.",
+      "options": [
+        "公交车",
+        "冰",
+        "穿",
+        "衣服"
+      ],
+      "accepted": [
+        "冰"
+      ],
+      "explanation": "冰 đọc là bīng, nghĩa là Băng, đá. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 567.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "59efcf17-efcf-48b1-ad1e-21bc955bc8ca"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “又……又……” có nghĩa là gì?",
+      "options": [
+        "Như thế nào",
+        "Đi ra ngoài",
+        "Rẻ",
+        "Vừa… vừa…"
+      ],
+      "accepted": [
+        "Vừa… vừa…"
+      ],
+      "explanation": "又……又…… đọc là yòu…yòu…, nghĩa là Vừa… vừa…. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 568.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "deb4373c-5e8e-4ad2-9e27-39b85a50864d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “yòu…yòu…” và nghĩa “Vừa… vừa…”.",
+      "options": [
+        "自行车",
+        "又……又……",
+        "衣服",
+        "跑步"
+      ],
+      "accepted": [
+        "又……又……"
+      ],
+      "explanation": "又……又…… đọc là yòu…yòu…, nghĩa là Vừa… vừa…. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 568.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "deb4373c-5e8e-4ad2-9e27-39b85a50864d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “吧” có nghĩa là gì?",
+      "options": [
+        "Trời âm u",
+        "Trợ từ đề nghị, suy đoán",
+        "Xe taxi",
+        "Đi xe buýt"
+      ],
+      "accepted": [
+        "Trợ từ đề nghị, suy đoán"
+      ],
+      "explanation": "吧 đọc là ba, nghĩa là Trợ từ đề nghị, suy đoán. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 569.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "00d63800-7735-41d8-8a51-8c2d8ebc0181"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “ba” và nghĩa “Trợ từ đề nghị, suy đoán”.",
+      "options": [
+        "骑车",
+        "电影院",
+        "吧",
+        "韩国电影"
+      ],
+      "accepted": [
+        "吧"
+      ],
+      "explanation": "吧 đọc là ba, nghĩa là Trợ từ đề nghị, suy đoán. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 569.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "00d63800-7735-41d8-8a51-8c2d8ebc0181"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “打” có nghĩa là gì?",
+      "options": [
+        "Ngồi, đi bằng phương tiện",
+        "Ngon (đồ uống)",
+        "Đánh, gọi điện",
+        "Quần áo"
+      ],
+      "accepted": [
+        "Đánh, gọi điện"
+      ],
+      "explanation": "打 đọc là dǎ, nghĩa là Đánh, gọi điện. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 570.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2dc0f83f-5354-44f7-86ec-b31b1b29601d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “dǎ” và nghĩa “Đánh, gọi điện”.",
+      "options": [
+        "打",
+        "坐出租车",
+        "打球",
+        "出租车"
+      ],
+      "accepted": [
+        "打"
+      ],
+      "explanation": "打 đọc là dǎ, nghĩa là Đánh, gọi điện. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 570.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2dc0f83f-5354-44f7-86ec-b31b1b29601d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “球” có nghĩa là gì?",
+      "options": [
+        "Vừa… vừa…",
+        "Quả bóng, môn bóng",
+        "Đi xe buýt",
+        "Chơi bóng"
+      ],
+      "accepted": [
+        "Quả bóng, môn bóng"
+      ],
+      "explanation": "球 đọc là qiú, nghĩa là Quả bóng, môn bóng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 571.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cf720624-021e-4e79-b578-ef1b85cb1e20"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “qiú” và nghĩa “Quả bóng, môn bóng”.",
+      "options": [
+        "球",
+        "骑马",
+        "出去",
+        "爱好"
+      ],
+      "accepted": [
+        "球"
+      ],
+      "explanation": "球 đọc là qiú, nghĩa là Quả bóng, môn bóng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 571.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cf720624-021e-4e79-b578-ef1b85cb1e20"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “有名” có nghĩa là gì?",
+      "options": [
+        "Nổi tiếng",
+        "Rẻ",
+        "Đi ra ngoài",
+        "Lái xe"
+      ],
+      "accepted": [
+        "Nổi tiếng"
+      ],
+      "explanation": "有名 đọc là yǒumíng, nghĩa là Nổi tiếng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 572.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "edb292a3-d8dc-4148-84fb-4236df34897d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “yǒumíng” và nghĩa “Nổi tiếng”.",
+      "options": [
+        "爱",
+        "骑",
+        "晴天",
+        "有名"
+      ],
+      "accepted": [
+        "有名"
+      ],
+      "explanation": "有名 đọc là yǒumíng, nghĩa là Nổi tiếng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 572.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "edb292a3-d8dc-4148-84fb-4236df34897d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “好吃” có nghĩa là gì?",
+      "options": [
+        "Rẻ",
+        "Ngon (đồ ăn)",
+        "Hàn Quốc",
+        "Lái xe"
+      ],
+      "accepted": [
+        "Ngon (đồ ăn)"
+      ],
+      "explanation": "好吃 đọc là hǎochī, nghĩa là Ngon (đồ ăn). Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 573.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b8c9ef52-9291-49c4-bbec-8673ff0c0fe6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “hǎochī” và nghĩa “Ngon (đồ ăn)”.",
+      "options": [
+        "又……又……",
+        "明星",
+        "好吃",
+        "有名"
+      ],
+      "accepted": [
+        "好吃"
+      ],
+      "explanation": "好吃 đọc là hǎochī, nghĩa là Ngon (đồ ăn). Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 573.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b8c9ef52-9291-49c4-bbec-8673ff0c0fe6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “好喝” có nghĩa là gì?",
+      "options": [
+        "Ngon (đồ uống)",
+        "Hàn Quốc",
+        "Mở ra",
+        "Vừa… vừa…"
+      ],
+      "accepted": [
+        "Ngon (đồ uống)"
+      ],
+      "explanation": "好喝 đọc là hǎohē, nghĩa là Ngon (đồ uống). Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 574.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1c12fa7b-deeb-4eab-961b-c59bffdac7cc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “hǎohē” và nghĩa “Ngon (đồ uống)”.",
+      "options": [
+        "打",
+        "爱",
+        "公交车",
+        "好喝"
+      ],
+      "accepted": [
+        "好喝"
+      ],
+      "explanation": "好喝 đọc là hǎohē, nghĩa là Ngon (đồ uống). Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 574.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1c12fa7b-deeb-4eab-961b-c59bffdac7cc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “好听” có nghĩa là gì?",
+      "options": [
+        "Vừa… vừa…",
+        "Quả bóng, môn bóng",
+        "Cưỡi ngựa",
+        "Hay (âm thanh)"
+      ],
+      "accepted": [
+        "Hay (âm thanh)"
+      ],
+      "explanation": "好听 đọc là hǎotīng, nghĩa là Hay (âm thanh). Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 575.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "333671eb-1499-4861-89a3-fc9b6393a7f7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “hǎotīng” và nghĩa “Hay (âm thanh)”.",
+      "options": [
+        "坐",
+        "开",
+        "好听",
+        "穿"
+      ],
+      "accepted": [
+        "好听"
+      ],
+      "explanation": "好听 đọc là hǎotīng, nghĩa là Hay (âm thanh). Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 575.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "333671eb-1499-4861-89a3-fc9b6393a7f7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “等” có nghĩa là gì?",
+      "options": [
+        "Đợi, chờ",
+        "Đánh, gọi điện",
+        "Vừa… vừa…",
+        "Xe buýt"
+      ],
+      "accepted": [
+        "Đợi, chờ"
+      ],
+      "explanation": "等 đọc là děng, nghĩa là Đợi, chờ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 576.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "93174009-44a8-4e75-8280-e5a9d4f768ea"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “děng” và nghĩa “Đợi, chờ”.",
+      "options": [
+        "出租车",
+        "衣服",
+        "等",
+        "怎么样"
+      ],
+      "accepted": [
+        "等"
+      ],
+      "explanation": "等 đọc là děng, nghĩa là Đợi, chờ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 576.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "93174009-44a8-4e75-8280-e5a9d4f768ea"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “电影院” có nghĩa là gì?",
+      "options": [
+        "Chơi",
+        "Hàn Quốc",
+        "Vừa… vừa…",
+        "Rạp chiếu phim"
+      ],
+      "accepted": [
+        "Rạp chiếu phim"
+      ],
+      "explanation": "电影院 đọc là diànyǐngyuàn, nghĩa là Rạp chiếu phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 580.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2708eeab-c8df-44b9-b225-2d27a38bef72"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “diànyǐngyuàn” và nghĩa “Rạp chiếu phim”.",
+      "options": [
+        "电影院",
+        "下雨天",
+        "好喝",
+        "好吃"
+      ],
+      "accepted": [
+        "电影院"
+      ],
+      "explanation": "电影院 đọc là diànyǐngyuàn, nghĩa là Rạp chiếu phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 580.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2708eeab-c8df-44b9-b225-2d27a38bef72"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “电影” có nghĩa là gì?",
+      "options": [
+        "Cưỡi ngựa",
+        "Xe taxi",
+        "Vừa… vừa…",
+        "Phim"
+      ],
+      "accepted": [
+        "Phim"
+      ],
+      "explanation": "电影 đọc là diànyǐng, nghĩa là Phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 581.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8b365fa1-8dbb-423d-87fc-cc765342a387"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “diànyǐng” và nghĩa “Phim”.",
+      "options": [
+        "坐",
+        "打",
+        "自行车",
+        "电影"
+      ],
+      "accepted": [
+        "电影"
+      ],
+      "explanation": "电影 đọc là diànyǐng, nghĩa là Phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 581.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8b365fa1-8dbb-423d-87fc-cc765342a387"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “开” có nghĩa là gì?",
+      "options": [
+        "Đợi một chút; vân vân",
+        "Đi xe, đạp xe",
+        "Mở, lái",
+        "Đi bộ"
+      ],
+      "accepted": [
+        "Mở, lái"
+      ],
+      "explanation": "开 đọc là kāi, nghĩa là Mở, lái. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 582.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7f78a285-ae63-4e06-a3df-c9c23e52bf78"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “kāi” và nghĩa “Mở, lái”.",
+      "options": [
+        "晴天",
+        "开",
+        "走路",
+        "打"
+      ],
+      "accepted": [
+        "开"
+      ],
+      "explanation": "开 đọc là kāi, nghĩa là Mở, lái. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 582.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7f78a285-ae63-4e06-a3df-c9c23e52bf78"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “骑” có nghĩa là gì?",
+      "options": [
+        "Sở thích",
+        "Cưỡi, đi xe",
+        "Chơi bóng",
+        "Hàn Quốc"
+      ],
+      "accepted": [
+        "Cưỡi, đi xe"
+      ],
+      "explanation": "骑 đọc là qí, nghĩa là Cưỡi, đi xe. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 583.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6683a8ac-8304-4920-a981-584922c5c1d3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “qí” và nghĩa “Cưỡi, đi xe”.",
+      "options": [
+        "自行车",
+        "坐出租车",
+        "骑",
+        "跑步"
+      ],
+      "accepted": [
+        "骑"
+      ],
+      "explanation": "骑 đọc là qí, nghĩa là Cưỡi, đi xe. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 583.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6683a8ac-8304-4920-a981-584922c5c1d3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “骑车” có nghĩa là gì?",
+      "options": [
+        "Đi xe, đạp xe",
+        "Đi tàu điện ngầm",
+        "Ngày trời mưa",
+        "Đợi một chút; vân vân"
+      ],
+      "accepted": [
+        "Đi xe, đạp xe"
+      ],
+      "explanation": "骑车 đọc là qí chē, nghĩa là Đi xe, đạp xe. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 584.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6f6b91f7-606c-4c27-b3aa-c8eeefbca6d1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “qí chē” và nghĩa “Đi xe, đạp xe”.",
+      "options": [
+        "爱",
+        "骑车",
+        "中国电影",
+        "冷"
+      ],
+      "accepted": [
+        "骑车"
+      ],
+      "explanation": "骑车 đọc là qí chē, nghĩa là Đi xe, đạp xe. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 584.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6f6b91f7-606c-4c27-b3aa-c8eeefbca6d1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “骑马” có nghĩa là gì?",
+      "options": [
+        "Trợ từ đề nghị, suy đoán",
+        "Chạy bộ",
+        "Rẻ",
+        "Cưỡi ngựa"
+      ],
+      "accepted": [
+        "Cưỡi ngựa"
+      ],
+      "explanation": "骑马 đọc là qí mǎ, nghĩa là Cưỡi ngựa. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 585.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2cf83d8a-a639-451f-a236-13e47d04127c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “qí mǎ” và nghĩa “Cưỡi ngựa”.",
+      "options": [
+        "骑马",
+        "出来",
+        "公交车",
+        "冷"
+      ],
+      "accepted": [
+        "骑马"
+      ],
+      "explanation": "骑马 đọc là qí mǎ, nghĩa là Cưỡi ngựa. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 585.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2cf83d8a-a639-451f-a236-13e47d04127c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “开车” có nghĩa là gì?",
+      "options": [
+        "Ngon (đồ ăn)",
+        "Lái xe",
+        "Cưỡi ngựa",
+        "Đợi một chút; vân vân"
+      ],
+      "accepted": [
+        "Lái xe"
+      ],
+      "explanation": "开车 đọc là kāi chē, nghĩa là Lái xe. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 586.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bdce2896-a9e9-4974-947d-88342c20e6d8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “kāi chē” và nghĩa “Lái xe”.",
+      "options": [
+        "开车",
+        "冷",
+        "怎么样",
+        "玩"
+      ],
+      "accepted": [
+        "开车"
+      ],
+      "explanation": "开车 đọc là kāi chē, nghĩa là Lái xe. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 586.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bdce2896-a9e9-4974-947d-88342c20e6d8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “跑步” có nghĩa là gì?",
+      "options": [
+        "Mặc",
+        "Lái xe",
+        "Chạy bộ",
+        "Thích"
+      ],
+      "accepted": [
+        "Chạy bộ"
+      ],
+      "explanation": "跑步 đọc là pǎobù, nghĩa là Chạy bộ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 587.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0781c108-ae6a-4702-9166-688d27461cf0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “pǎobù” và nghĩa “Chạy bộ”.",
+      "options": [
+        "爱",
+        "地铁",
+        "跑步",
+        "坐地铁"
+      ],
+      "accepted": [
+        "跑步"
+      ],
+      "explanation": "跑步 đọc là pǎobù, nghĩa là Chạy bộ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 587.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0781c108-ae6a-4702-9166-688d27461cf0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “坐地铁” có nghĩa là gì?",
+      "options": [
+        "Rạp chiếu phim",
+        "Trời nắng",
+        "Ngon (đồ uống)",
+        "Đi tàu điện ngầm"
+      ],
+      "accepted": [
+        "Đi tàu điện ngầm"
+      ],
+      "explanation": "坐地铁 đọc là zuò dìtiě, nghĩa là Đi tàu điện ngầm. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 588.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6b0c0dcb-0ddc-4b91-a94f-449f639e38f9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “zuò dìtiě” và nghĩa “Đi tàu điện ngầm”.",
+      "options": [
+        "坐地铁",
+        "喜欢",
+        "开车",
+        "韩国电影"
+      ],
+      "accepted": [
+        "坐地铁"
+      ],
+      "explanation": "坐地铁 đọc là zuò dìtiě, nghĩa là Đi tàu điện ngầm. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 588.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6b0c0dcb-0ddc-4b91-a94f-449f639e38f9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “坐公交车” có nghĩa là gì?",
+      "options": [
+        "Đi xe buýt",
+        "Yêu",
+        "Hay (âm thanh)",
+        "Mở ra"
+      ],
+      "accepted": [
+        "Đi xe buýt"
+      ],
+      "explanation": "坐公交车 đọc là zuò gōngjiāochē, nghĩa là Đi xe buýt. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 589.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "72ef5746-3953-4c11-a764-ffdb9876301b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “zuò gōngjiāochē” và nghĩa “Đi xe buýt”.",
+      "options": [
+        "地铁",
+        "公交车",
+        "中国电影",
+        "坐公交车"
+      ],
+      "accepted": [
+        "坐公交车"
+      ],
+      "explanation": "坐公交车 đọc là zuò gōngjiāochē, nghĩa là Đi xe buýt. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 589.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "72ef5746-3953-4c11-a764-ffdb9876301b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “坐出租车” có nghĩa là gì?",
+      "options": [
+        "Đi taxi",
+        "Lạnh",
+        "Trợ từ đề nghị, suy đoán",
+        "Rẻ"
+      ],
+      "accepted": [
+        "Đi taxi"
+      ],
+      "explanation": "坐出租车 đọc là zuò chūzūchē, nghĩa là Đi taxi. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 590.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ad11453c-3eca-445f-a74d-9a916fe27403"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “zuò chūzūchē” và nghĩa “Đi taxi”.",
+      "options": [
+        "电影院",
+        "阴天",
+        "天气",
+        "坐出租车"
+      ],
+      "accepted": [
+        "坐出租车"
+      ],
+      "explanation": "坐出租车 đọc là zuò chūzūchē, nghĩa là Đi taxi. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 590.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ad11453c-3eca-445f-a74d-9a916fe27403"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “打球” có nghĩa là gì?",
+      "options": [
+        "Chơi bóng",
+        "Mặc",
+        "Lái xe",
+        "Đi xe buýt"
+      ],
+      "accepted": [
+        "Chơi bóng"
+      ],
+      "explanation": "打球 đọc là dǎ qiú, nghĩa là Chơi bóng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 591.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1269f0a5-ec06-422d-84aa-fb7a560daeb9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “dǎ qiú” và nghĩa “Chơi bóng”.",
+      "options": [
+        "中国电影",
+        "摩托车",
+        "打球",
+        "骑"
+      ],
+      "accepted": [
+        "打球"
+      ],
+      "explanation": "打球 đọc là dǎ qiú, nghĩa là Chơi bóng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 591.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1269f0a5-ec06-422d-84aa-fb7a560daeb9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “打开” có nghĩa là gì?",
+      "options": [
+        "Thích",
+        "Phim Trung Quốc",
+        "Đi tàu điện ngầm",
+        "Mở ra"
+      ],
+      "accepted": [
+        "Mở ra"
+      ],
+      "explanation": "打开 đọc là dǎkāi, nghĩa là Mở ra. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 592.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8434bc83-7315-400a-aaef-ad038a692f5c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “dǎkāi” và nghĩa “Mở ra”.",
+      "options": [
+        "明星",
+        "打开",
+        "吧",
+        "电影"
+      ],
+      "accepted": [
+        "打开"
+      ],
+      "explanation": "打开 đọc là dǎkāi, nghĩa là Mở ra. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 592.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8434bc83-7315-400a-aaef-ad038a692f5c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “等等” có nghĩa là gì?",
+      "options": [
+        "Thế nào",
+        "Đợi một chút; vân vân",
+        "Sở thích",
+        "Xe máy"
+      ],
+      "accepted": [
+        "Đợi một chút; vân vân"
+      ],
+      "explanation": "等等 đọc là děngděng, nghĩa là Đợi một chút; vân vân. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 593.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "68a5b8e9-47c8-4483-a8d4-a480b22aee74"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “děngděng” và nghĩa “Đợi một chút; vân vân”.",
+      "options": [
+        "中国电影",
+        "电影院",
+        "坐",
+        "等等"
+      ],
+      "accepted": [
+        "等等"
+      ],
+      "explanation": "等等 đọc là děngděng, nghĩa là Đợi một chút; vân vân. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 593.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "68a5b8e9-47c8-4483-a8d4-a480b22aee74"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “爱好” có nghĩa là gì?",
+      "options": [
+        "Phim",
+        "Thích",
+        "Yêu",
+        "Sở thích"
+      ],
+      "accepted": [
+        "Sở thích"
+      ],
+      "explanation": "爱好 đọc là àihào, nghĩa là Sở thích. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 597.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1ea31e24-fa84-4afb-bb7a-ea8e8428dd3d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “àihào” và nghĩa “Sở thích”.",
+      "options": [
+        "开",
+        "走路",
+        "爱好",
+        "晴天"
+      ],
+      "accepted": [
+        "爱好"
+      ],
+      "explanation": "爱好 đọc là àihào, nghĩa là Sở thích. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 597.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1ea31e24-fa84-4afb-bb7a-ea8e8428dd3d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “非常” có nghĩa là gì?",
+      "options": [
+        "Băng, đá",
+        "Đi xe, đạp xe",
+        "Rất, vô cùng",
+        "Trợ từ đề nghị, suy đoán"
+      ],
+      "accepted": [
+        "Rất, vô cùng"
+      ],
+      "explanation": "非常 đọc là fēicháng, nghĩa là Rất, vô cùng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 598.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8e99ce74-9766-47bc-9737-16a2243f13ed"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “fēicháng” và nghĩa “Rất, vô cùng”.",
+      "options": [
+        "怎么样",
+        "非常",
+        "出租车",
+        "穿"
+      ],
+      "accepted": [
+        "非常"
+      ],
+      "explanation": "非常 đọc là fēicháng, nghĩa là Rất, vô cùng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 598.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8e99ce74-9766-47bc-9737-16a2243f13ed"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “便宜” có nghĩa là gì?",
+      "options": [
+        "Rẻ",
+        "Rất, vô cùng",
+        "Ngon (đồ ăn)",
+        "Xe buýt"
+      ],
+      "accepted": [
+        "Rẻ"
+      ],
+      "explanation": "便宜 đọc là piányi, nghĩa là Rẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 599.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f553956b-0087-4de5-b7ff-826fb11cf41d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “piányi” và nghĩa “Rẻ”.",
+      "options": [
+        "骑马",
+        "便宜",
+        "阴天",
+        "骑"
+      ],
+      "accepted": [
+        "便宜"
+      ],
+      "explanation": "便宜 đọc là piányi, nghĩa là Rẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 599.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f553956b-0087-4de5-b7ff-826fb11cf41d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “菜” có nghĩa là gì?",
+      "options": [
+        "Phim",
+        "Phim Mỹ",
+        "Đi xe, đạp xe",
+        "Rau, món ăn"
+      ],
+      "accepted": [
+        "Rau, món ăn"
+      ],
+      "explanation": "菜 đọc là cài, nghĩa là Rau, món ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 600.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4a69d086-60eb-41d4-a211-17ec9f267c82"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “cài” và nghĩa “Rau, món ăn”.",
+      "options": [
+        "菜",
+        "打球",
+        "美国电影",
+        "爱"
+      ],
+      "accepted": [
+        "菜"
+      ],
+      "explanation": "菜 đọc là cài, nghĩa là Rau, món ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 600.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4a69d086-60eb-41d4-a211-17ec9f267c82"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “冷” có nghĩa là gì?",
+      "options": [
+        "Đi ra đây",
+        "Quần áo",
+        "Đi xe buýt",
+        "Lạnh"
+      ],
+      "accepted": [
+        "Lạnh"
+      ],
+      "explanation": "冷 đọc là lěng, nghĩa là Lạnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 601.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "53cc733c-1f96-47fb-87de-63ea135bd548"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “lěng” và nghĩa “Lạnh”.",
+      "options": [
+        "冷",
+        "坐",
+        "阴天",
+        "开"
+      ],
+      "accepted": [
+        "冷"
+      ],
+      "explanation": "冷 đọc là lěng, nghĩa là Lạnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 601.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "53cc733c-1f96-47fb-87de-63ea135bd548"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “明星” có nghĩa là gì?",
+      "options": [
+        "Quần áo",
+        "Trời nắng",
+        "Ngôi sao, người nổi tiếng",
+        "Mở, lái"
+      ],
+      "accepted": [
+        "Ngôi sao, người nổi tiếng"
+      ],
+      "explanation": "明星 đọc là míngxīng, nghĩa là Ngôi sao, người nổi tiếng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 602.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e766020a-776c-4001-a873-dbae0c049acc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “míngxīng” và nghĩa “Ngôi sao, người nổi tiếng”.",
+      "options": [
+        "电影",
+        "衣服",
+        "坐",
+        "明星"
+      ],
+      "accepted": [
+        "明星"
+      ],
+      "explanation": "明星 đọc là míngxīng, nghĩa là Ngôi sao, người nổi tiếng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 602.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e766020a-776c-4001-a873-dbae0c049acc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “韩国” có nghĩa là gì?",
+      "options": [
+        "Hàn Quốc",
+        "Chơi",
+        "Yêu",
+        "Quần áo"
+      ],
+      "accepted": [
+        "Hàn Quốc"
+      ],
+      "explanation": "韩国 đọc là Hánguó, nghĩa là Hàn Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 603.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "28492416-3399-4981-84b0-6e26982755cc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “Hánguó” và nghĩa “Hàn Quốc”.",
+      "options": [
+        "韩国电影",
+        "玩",
+        "天气",
+        "韩国"
+      ],
+      "accepted": [
+        "韩国"
+      ],
+      "explanation": "韩国 đọc là Hánguó, nghĩa là Hàn Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 603.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "28492416-3399-4981-84b0-6e26982755cc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “中国电影” có nghĩa là gì?",
+      "options": [
+        "Vừa… vừa…",
+        "Phim Trung Quốc",
+        "Đi ra đây",
+        "Trời nắng"
+      ],
+      "accepted": [
+        "Phim Trung Quốc"
+      ],
+      "explanation": "中国电影 đọc là Zhōngguó diànyǐng, nghĩa là Phim Trung Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 604.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "59d1fade-5ecc-40d8-a259-aae334c26be6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “Zhōngguó diànyǐng” và nghĩa “Phim Trung Quốc”.",
+      "options": [
+        "开车",
+        "中国电影",
+        "打开",
+        "冷"
+      ],
+      "accepted": [
+        "中国电影"
+      ],
+      "explanation": "中国电影 đọc là Zhōngguó diànyǐng, nghĩa là Phim Trung Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 604.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "59d1fade-5ecc-40d8-a259-aae334c26be6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “美国电影” có nghĩa là gì?",
+      "options": [
+        "Phim Mỹ",
+        "Rạp chiếu phim",
+        "Chơi bóng",
+        "Đi ra đây"
+      ],
+      "accepted": [
+        "Phim Mỹ"
+      ],
+      "explanation": "美国电影 đọc là Měiguó diànyǐng, nghĩa là Phim Mỹ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 605.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9dea5480-5475-4259-a916-e604ff6db5ea"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “Měiguó diànyǐng” và nghĩa “Phim Mỹ”.",
+      "options": [
+        "电影院",
+        "中国电影",
+        "出来",
+        "美国电影"
+      ],
+      "accepted": [
+        "美国电影"
+      ],
+      "explanation": "美国电影 đọc là Měiguó diànyǐng, nghĩa là Phim Mỹ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 605.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9dea5480-5475-4259-a916-e604ff6db5ea"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Trong bài học, “韩国电影” có nghĩa là gì?",
+      "options": [
+        "Chạy bộ",
+        "Phim Hàn Quốc",
+        "Mặc",
+        "Phim Trung Quốc"
+      ],
+      "accepted": [
+        "Phim Hàn Quốc"
+      ],
+      "explanation": "韩国电影 đọc là Hánguó diànyǐng, nghĩa là Phim Hàn Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 606.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4e40c13b-e9ba-48b6-a04f-6fc4ebb12cf1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn Hán tự có phiên âm “Hánguó diànyǐng” và nghĩa “Phim Hàn Quốc”.",
+      "options": [
+        "坐",
+        "爱好",
+        "下雨天",
+        "韩国电影"
+      ],
+      "accepted": [
+        "韩国电影"
+      ],
+      "explanation": "韩国电影 đọc là Hánguó diànyǐng, nghĩa là Phim Hàn Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 606.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4e40c13b-e9ba-48b6-a04f-6fc4ebb12cf1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn phiên âm đúng của “爱好” với nghĩa “Sở thích”.",
+      "options": [
+        "bīng",
+        "tiānqì",
+        "àihào",
+        "diànyǐngyuàn"
+      ],
+      "accepted": [
+        "àihào"
+      ],
+      "explanation": "爱好 đọc là àihào, nghĩa là Sở thích. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 597.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1ea31e24-fa84-4afb-bb7a-ea8e8428dd3d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn phiên âm đúng của “非常” với nghĩa “Rất, vô cùng”.",
+      "options": [
+        "qiú",
+        "xǐhuan",
+        "Hánguó diànyǐng",
+        "fēicháng"
+      ],
+      "accepted": [
+        "fēicháng"
+      ],
+      "explanation": "非常 đọc là fēicháng, nghĩa là Rất, vô cùng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 598.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8e99ce74-9766-47bc-9737-16a2243f13ed"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn phiên âm đúng của “便宜” với nghĩa “Rẻ”.",
+      "options": [
+        "piányi",
+        "kāi chē",
+        "děng",
+        "yǒumíng"
+      ],
+      "accepted": [
+        "piányi"
+      ],
+      "explanation": "便宜 đọc là piányi, nghĩa là Rẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 599.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f553956b-0087-4de5-b7ff-826fb11cf41d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn phiên âm đúng của “菜” với nghĩa “Rau, món ăn”.",
+      "options": [
+        "cài",
+        "wán",
+        "lěng",
+        "kāi"
+      ],
+      "accepted": [
+        "cài"
+      ],
+      "explanation": "菜 đọc là cài, nghĩa là Rau, món ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 600.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4a69d086-60eb-41d4-a211-17ec9f267c82"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn phiên âm đúng của “冷” với nghĩa “Lạnh”.",
+      "options": [
+        "yīntiān",
+        "zuò dìtiě",
+        "lěng",
+        "zuò"
+      ],
+      "accepted": [
+        "lěng"
+      ],
+      "explanation": "冷 đọc là lěng, nghĩa là Lạnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 601.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "53cc733c-1f96-47fb-87de-63ea135bd548"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn phiên âm đúng của “明星” với nghĩa “Ngôi sao, người nổi tiếng”.",
+      "options": [
+        "dǎkāi",
+        "míngxīng",
+        "hǎochī",
+        "qiú"
+      ],
+      "accepted": [
+        "míngxīng"
+      ],
+      "explanation": "明星 đọc là míngxīng, nghĩa là Ngôi sao, người nổi tiếng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 602.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e766020a-776c-4001-a873-dbae0c049acc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn phiên âm đúng của “韩国” với nghĩa “Hàn Quốc”.",
+      "options": [
+        "Hánguó",
+        "qíngtiān",
+        "bīng",
+        "dǎkāi"
+      ],
+      "accepted": [
+        "Hánguó"
+      ],
+      "explanation": "韩国 đọc là Hánguó, nghĩa là Hàn Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 603.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "28492416-3399-4981-84b0-6e26982755cc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn phiên âm đúng của “中国电影” với nghĩa “Phim Trung Quốc”.",
+      "options": [
+        "Zhōngguó diànyǐng",
+        "qí",
+        "tiānqì",
+        "Hánguó diànyǐng"
+      ],
+      "accepted": [
+        "Zhōngguó diànyǐng"
+      ],
+      "explanation": "中国电影 đọc là Zhōngguó diànyǐng, nghĩa là Phim Trung Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 604.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "59d1fade-5ecc-40d8-a259-aae334c26be6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn phiên âm đúng của “美国电影” với nghĩa “Phim Mỹ”.",
+      "options": [
+        "zěnmeyàng",
+        "chūqù",
+        "Měiguó diànyǐng",
+        "dǎ qiú"
+      ],
+      "accepted": [
+        "Měiguó diànyǐng"
+      ],
+      "explanation": "美国电影 đọc là Měiguó diànyǐng, nghĩa là Phim Mỹ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 605.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9dea5480-5475-4259-a916-e604ff6db5ea"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 9",
+      "prompt": "Chọn phiên âm đúng của “韩国电影” với nghĩa “Phim Hàn Quốc”.",
+      "options": [
+        "Hánguó diànyǐng",
+        "zuò gōngjiāochē",
+        "zǒulù",
+        "zuò"
+      ],
+      "accepted": [
+        "Hánguó diànyǐng"
+      ],
+      "explanation": "韩国电影 đọc là Hánguó diànyǐng, nghĩa là Phim Hàn Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 606.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4e40c13b-e9ba-48b6-a04f-6fc4ebb12cf1"
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “你喜欢中国电影还是美国电影？” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn chơi bóng cùng bạn.",
+        "Quần áo của cô ấy vừa rẻ vừa đẹp.",
+        "Bạn thích phim Trung Quốc hay phim Mỹ?",
+        "Tôi muốn ra ngoài chơi."
+      ],
+      "accepted": [
+        "Bạn thích phim Trung Quốc hay phim Mỹ?"
+      ],
+      "explanation": "你喜欢中国电影还是美国电影？ — Bạn thích phim Trung Quốc hay phim Mỹ? Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bạn thích phim Trung Quốc hay phim Mỹ?”.",
+      "options": [
+        "你喜欢中国电影还是美国电影？",
+        "他喜欢骑马。",
+        "我想去电影院看电影。",
+        "她说话很好听。"
+      ],
+      "accepted": [
+        "你喜欢中国电影还是美国电影？"
+      ],
+      "explanation": "你喜欢中国电影还是美国电影？ — Bạn thích phim Trung Quốc hay phim Mỹ? Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “我坐地铁去公司。” có nghĩa là gì?",
+      "options": [
+        "Tôi đi tàu điện ngầm đến công ty.",
+        "Hôm nay trời nắng.",
+        "Anh ấy đi taxi đến bệnh viện.",
+        "Tôi chạy bộ mỗi sáng sớm."
+      ],
+      "accepted": [
+        "Tôi đi tàu điện ngầm đến công ty."
+      ],
+      "explanation": "我坐地铁去公司。 — Tôi đi tàu điện ngầm đến công ty. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi đi tàu điện ngầm đến công ty.”.",
+      "options": [
+        "你会开车吗？",
+        "我坐地铁去公司。",
+        "我想去电影院看电影。",
+        "我想跟朋友一起打球。"
+      ],
+      "accepted": [
+        "我坐地铁去公司。"
+      ],
+      "explanation": "我坐地铁去公司。 — Tôi đi tàu điện ngầm đến công ty. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “她骑自行车去学校。” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn chơi bóng cùng bạn.",
+        "Tôi chạy bộ mỗi sáng sớm.",
+        "Món ăn này rất ngon.",
+        "Cô ấy đạp xe đạp đến trường."
+      ],
+      "accepted": [
+        "Cô ấy đạp xe đạp đến trường."
+      ],
+      "explanation": "她骑自行车去学校。 — Cô ấy đạp xe đạp đến trường. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy đạp xe đạp đến trường.”.",
+      "options": [
+        "她骑自行车去学校。",
+        "我想出去玩。",
+        "今天的天气怎么样？",
+        "这个菜很好吃。"
+      ],
+      "accepted": [
+        "她骑自行车去学校。"
+      ],
+      "explanation": "她骑自行车去学校。 — Cô ấy đạp xe đạp đến trường. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “我们走路去银行吧。” có nghĩa là gì?",
+      "options": [
+        "Bạn thích phim Trung Quốc hay phim Mỹ?",
+        "Chúng ta đi bộ đến ngân hàng nhé.",
+        "Quần áo của cô ấy vừa rẻ vừa đẹp.",
+        "Tôi đi tàu điện ngầm đến công ty."
+      ],
+      "accepted": [
+        "Chúng ta đi bộ đến ngân hàng nhé."
+      ],
+      "explanation": "我们走路去银行吧。 — Chúng ta đi bộ đến ngân hàng nhé. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chúng ta đi bộ đến ngân hàng nhé.”.",
+      "options": [
+        "我每天早上跑步。",
+        "她说话很好听。",
+        "我们走路去银行吧。",
+        "你会开车吗？"
+      ],
+      "accepted": [
+        "我们走路去银行吧。"
+      ],
+      "explanation": "我们走路去银行吧。 — Chúng ta đi bộ đến ngân hàng nhé. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “我想出去玩。” có nghĩa là gì?",
+      "options": [
+        "Cô ấy nói chuyện rất hay.",
+        "Thời tiết hôm nay thế nào?",
+        "Tôi muốn ra ngoài chơi.",
+        "Anh ấy thích cưỡi ngựa."
+      ],
+      "accepted": [
+        "Tôi muốn ra ngoài chơi."
+      ],
+      "explanation": "我想出去玩。 — Tôi muốn ra ngoài chơi. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn ra ngoài chơi.”.",
+      "options": [
+        "我想出去玩。",
+        "我每天早上跑步。",
+        "我坐地铁去公司。",
+        "他喜欢骑马。"
+      ],
+      "accepted": [
+        "我想出去玩。"
+      ],
+      "explanation": "我想出去玩。 — Tôi muốn ra ngoài chơi. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “她的衣服又便宜又好看。” có nghĩa là gì?",
+      "options": [
+        "Quần áo của cô ấy vừa rẻ vừa đẹp.",
+        "Thời tiết hôm nay thế nào?",
+        "Cô ấy đạp xe đạp đến trường.",
+        "Anh ấy đi taxi đến bệnh viện."
+      ],
+      "accepted": [
+        "Quần áo của cô ấy vừa rẻ vừa đẹp."
+      ],
+      "explanation": "她的衣服又便宜又好看。 — Quần áo của cô ấy vừa rẻ vừa đẹp. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Quần áo của cô ấy vừa rẻ vừa đẹp.”.",
+      "options": [
+        "她的衣服又便宜又好看。",
+        "我想跟朋友一起打球。",
+        "这杯茶很好喝。",
+        "他喜欢骑马。"
+      ],
+      "accepted": [
+        "她的衣服又便宜又好看。"
+      ],
+      "explanation": "她的衣服又便宜又好看。 — Quần áo của cô ấy vừa rẻ vừa đẹp. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “今天的天气怎么样？” có nghĩa là gì?",
+      "options": [
+        "Xin đợi một chút.",
+        "Thời tiết hôm nay thế nào?",
+        "Tôi muốn đến rạp chiếu phim xem phim.",
+        "Tôi muốn chơi bóng cùng bạn."
+      ],
+      "accepted": [
+        "Thời tiết hôm nay thế nào?"
+      ],
+      "explanation": "今天的天气怎么样？ — Thời tiết hôm nay thế nào? Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Thời tiết hôm nay thế nào?”.",
+      "options": [
+        "我想跟朋友一起打球。",
+        "我不喜欢下雨天。",
+        "今天的天气怎么样？",
+        "我们走路去银行吧。"
+      ],
+      "accepted": [
+        "今天的天气怎么样？"
+      ],
+      "explanation": "今天的天气怎么样？ — Thời tiết hôm nay thế nào? Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “今天是晴天。” có nghĩa là gì?",
+      "options": [
+        "Tôi chạy bộ mỗi sáng sớm.",
+        "Hôm nay trời nắng.",
+        "Xin đợi một chút.",
+        "Cốc trà này rất ngon."
+      ],
+      "accepted": [
+        "Hôm nay trời nắng."
+      ],
+      "explanation": "今天是晴天。 — Hôm nay trời nắng. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Hôm nay trời nắng.”.",
+      "options": [
+        "你喜欢中国电影还是美国电影？",
+        "我想跟朋友一起打球。",
+        "今天是晴天。",
+        "我想出去玩。"
+      ],
+      "accepted": [
+        "今天是晴天。"
+      ],
+      "explanation": "今天是晴天。 — Hôm nay trời nắng. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “我不喜欢下雨天。” có nghĩa là gì?",
+      "options": [
+        "Anh ấy thích cưỡi ngựa.",
+        "Chúng ta đi bộ đến ngân hàng nhé.",
+        "Tôi không thích những ngày trời mưa.",
+        "Cô ấy nói chuyện rất hay."
+      ],
+      "accepted": [
+        "Tôi không thích những ngày trời mưa."
+      ],
+      "explanation": "我不喜欢下雨天。 — Tôi không thích những ngày trời mưa. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi không thích những ngày trời mưa.”.",
+      "options": [
+        "她骑自行车去学校。",
+        "我想去电影院看电影。",
+        "我不喜欢下雨天。",
+        "她的衣服又便宜又好看。"
+      ],
+      "accepted": [
+        "我不喜欢下雨天。"
+      ],
+      "explanation": "我不喜欢下雨天。 — Tôi không thích những ngày trời mưa. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “这杯茶很好喝。” có nghĩa là gì?",
+      "options": [
+        "Chúng ta đi bộ đến ngân hàng nhé.",
+        "Cô ấy nói chuyện rất hay.",
+        "Cốc trà này rất ngon.",
+        "Quần áo của cô ấy vừa rẻ vừa đẹp."
+      ],
+      "accepted": [
+        "Cốc trà này rất ngon."
+      ],
+      "explanation": "这杯茶很好喝。 — Cốc trà này rất ngon. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cốc trà này rất ngon.”.",
+      "options": [
+        "这杯茶很好喝。",
+        "你喜欢中国电影还是美国电影？",
+        "请等一下。",
+        "今天的天气怎么样？"
+      ],
+      "accepted": [
+        "这杯茶很好喝。"
+      ],
+      "explanation": "这杯茶很好喝。 — Cốc trà này rất ngon. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “她说话很好听。” có nghĩa là gì?",
+      "options": [
+        "Chúng ta đi bộ đến ngân hàng nhé.",
+        "Thời tiết hôm nay thế nào?",
+        "Cô ấy đạp xe đạp đến trường.",
+        "Cô ấy nói chuyện rất hay."
+      ],
+      "accepted": [
+        "Cô ấy nói chuyện rất hay."
+      ],
+      "explanation": "她说话很好听。 — Cô ấy nói chuyện rất hay. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy nói chuyện rất hay.”.",
+      "options": [
+        "我每天早上跑步。",
+        "她说话很好听。",
+        "今天是晴天。",
+        "她骑自行车去学校。"
+      ],
+      "accepted": [
+        "她说话很好听。"
+      ],
+      "explanation": "她说话很好听。 — Cô ấy nói chuyện rất hay. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “你会开车吗？” có nghĩa là gì?",
+      "options": [
+        "Bạn biết lái xe không?",
+        "Cô ấy nói chuyện rất hay.",
+        "Bạn thích phim Trung Quốc hay phim Mỹ?",
+        "Tôi muốn chơi bóng cùng bạn."
+      ],
+      "accepted": [
+        "Bạn biết lái xe không?"
+      ],
+      "explanation": "你会开车吗？ — Bạn biết lái xe không? Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bạn biết lái xe không?”.",
+      "options": [
+        "你会开车吗？",
+        "这家饭店很有名。",
+        "她骑自行车去学校。",
+        "她说话很好听。"
+      ],
+      "accepted": [
+        "你会开车吗？"
+      ],
+      "explanation": "你会开车吗？ — Bạn biết lái xe không? Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “他坐出租车去医院。” có nghĩa là gì?",
+      "options": [
+        "Anh ấy đi taxi đến bệnh viện.",
+        "Bạn biết lái xe không?",
+        "Tôi muốn ra ngoài chơi.",
+        "Tôi không thích những ngày trời mưa."
+      ],
+      "accepted": [
+        "Anh ấy đi taxi đến bệnh viện."
+      ],
+      "explanation": "他坐出租车去医院。 — Anh ấy đi taxi đến bệnh viện. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Anh ấy đi taxi đến bệnh viện.”.",
+      "options": [
+        "他坐出租车去医院。",
+        "她骑自行车去学校。",
+        "今天是晴天。",
+        "我坐地铁去公司。"
+      ],
+      "accepted": [
+        "他坐出租车去医院。"
+      ],
+      "explanation": "他坐出租车去医院。 — Anh ấy đi taxi đến bệnh viện. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “我想跟朋友一起打球。” có nghĩa là gì?",
+      "options": [
+        "Anh ấy thích cưỡi ngựa.",
+        "Chúng ta đi bộ đến ngân hàng nhé.",
+        "Tôi muốn chơi bóng cùng bạn.",
+        "Bạn thích phim Trung Quốc hay phim Mỹ?"
+      ],
+      "accepted": [
+        "Tôi muốn chơi bóng cùng bạn."
+      ],
+      "explanation": "我想跟朋友一起打球。 — Tôi muốn chơi bóng cùng bạn. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn chơi bóng cùng bạn.”.",
+      "options": [
+        "我想跟朋友一起打球。",
+        "我不喜欢下雨天。",
+        "这家饭店很有名。",
+        "她的衣服又便宜又好看。"
+      ],
+      "accepted": [
+        "我想跟朋友一起打球。"
+      ],
+      "explanation": "我想跟朋友一起打球。 — Tôi muốn chơi bóng cùng bạn. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “请等一下。” có nghĩa là gì?",
+      "options": [
+        "Xin đợi một chút.",
+        "Hôm nay trời nắng.",
+        "Quần áo của cô ấy vừa rẻ vừa đẹp.",
+        "Chúng ta đi bộ đến ngân hàng nhé."
+      ],
+      "accepted": [
+        "Xin đợi một chút."
+      ],
+      "explanation": "请等一下。 — Xin đợi một chút. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Xin đợi một chút.”.",
+      "options": [
+        "我坐地铁去公司。",
+        "请等一下。",
+        "这杯茶很好喝。",
+        "她的衣服又便宜又好看。"
+      ],
+      "accepted": [
+        "请等一下。"
+      ],
+      "explanation": "请等一下。 — Xin đợi một chút. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “这家饭店很有名。” có nghĩa là gì?",
+      "options": [
+        "Anh ấy đi taxi đến bệnh viện.",
+        "Nhà hàng này rất nổi tiếng.",
+        "Tôi chạy bộ mỗi sáng sớm.",
+        "Tôi muốn ra ngoài chơi."
+      ],
+      "accepted": [
+        "Nhà hàng này rất nổi tiếng."
+      ],
+      "explanation": "这家饭店很有名。 — Nhà hàng này rất nổi tiếng. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Nhà hàng này rất nổi tiếng.”.",
+      "options": [
+        "我坐地铁去公司。",
+        "这杯茶很好喝。",
+        "这家饭店很有名。",
+        "我不喜欢下雨天。"
+      ],
+      "accepted": [
+        "这家饭店很有名。"
+      ],
+      "explanation": "这家饭店很有名。 — Nhà hàng này rất nổi tiếng. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “这个菜很好吃。” có nghĩa là gì?",
+      "options": [
+        "Cô ấy đạp xe đạp đến trường.",
+        "Món ăn này rất ngon.",
+        "Tôi đi tàu điện ngầm đến công ty.",
+        "Tôi chạy bộ mỗi sáng sớm."
+      ],
+      "accepted": [
+        "Món ăn này rất ngon."
+      ],
+      "explanation": "这个菜很好吃。 — Món ăn này rất ngon. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Món ăn này rất ngon.”.",
+      "options": [
+        "这家饭店很有名。",
+        "她说话很好听。",
+        "她的衣服又便宜又好看。",
+        "这个菜很好吃。"
+      ],
+      "accepted": [
+        "这个菜很好吃。"
+      ],
+      "explanation": "这个菜很好吃。 — Món ăn này rất ngon. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “我想去电影院看电影。” có nghĩa là gì?",
+      "options": [
+        "Anh ấy đi taxi đến bệnh viện.",
+        "Tôi không thích những ngày trời mưa.",
+        "Tôi muốn đến rạp chiếu phim xem phim.",
+        "Bạn biết lái xe không?"
+      ],
+      "accepted": [
+        "Tôi muốn đến rạp chiếu phim xem phim."
+      ],
+      "explanation": "我想去电影院看电影。 — Tôi muốn đến rạp chiếu phim xem phim. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn đến rạp chiếu phim xem phim.”.",
+      "options": [
+        "我想去电影院看电影。",
+        "我想出去玩。",
+        "她的衣服又便宜又好看。",
+        "今天是晴天。"
+      ],
+      "accepted": [
+        "我想去电影院看电影。"
+      ],
+      "explanation": "我想去电影院看电影。 — Tôi muốn đến rạp chiếu phim xem phim. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “我每天早上跑步。” có nghĩa là gì?",
+      "options": [
+        "Tôi chạy bộ mỗi sáng sớm.",
+        "Chúng ta đi bộ đến ngân hàng nhé.",
+        "Anh ấy đi taxi đến bệnh viện.",
+        "Bạn thích phim Trung Quốc hay phim Mỹ?"
+      ],
+      "accepted": [
+        "Tôi chạy bộ mỗi sáng sớm."
+      ],
+      "explanation": "我每天早上跑步。 — Tôi chạy bộ mỗi sáng sớm. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi chạy bộ mỗi sáng sớm.”.",
+      "options": [
+        "这杯茶很好喝。",
+        "我每天早上跑步。",
+        "我坐地铁去公司。",
+        "我想去电影院看电影。"
+      ],
+      "accepted": [
+        "我每天早上跑步。"
+      ],
+      "explanation": "我每天早上跑步。 — Tôi chạy bộ mỗi sáng sớm. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Câu “他喜欢骑马。” có nghĩa là gì?",
+      "options": [
+        "Quần áo của cô ấy vừa rẻ vừa đẹp.",
+        "Anh ấy thích cưỡi ngựa.",
+        "Bạn thích phim Trung Quốc hay phim Mỹ?",
+        "Nhà hàng này rất nổi tiếng."
+      ],
+      "accepted": [
+        "Anh ấy thích cưỡi ngựa."
+      ],
+      "explanation": "他喜欢骑马。 — Anh ấy thích cưỡi ngựa. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–9",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Anh ấy thích cưỡi ngựa.”.",
+      "options": [
+        "我想出去玩。",
+        "我想跟朋友一起打球。",
+        "他喜欢骑马。",
+        "你喜欢中国电影还是美国电影？"
+      ],
+      "accepted": [
+        "他喜欢骑马。"
+      ],
+      "explanation": "他喜欢骑马。 — Anh ấy thích cưỡi ngựa. Câu dùng từ trong danh sách bài 1–9.",
+      "difficulty": "medium",
+      "approved": true
+    }
+  ],
+  "speaking": [
+    {
+      "practice": "speaking",
+      "text": "你喜欢中国电影还是美国电影？",
+      "meaning": "Bạn thích phim Trung Quốc hay phim Mỹ?",
+      "answer_reference": "我喜欢中国电影。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你怎么去学校？",
+      "meaning": "Bạn đến trường bằng cách nào?",
+      "answer_reference": "我坐公交车去学校。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你会骑自行车吗？",
+      "meaning": "Bạn biết đi xe đạp không?",
+      "answer_reference": "我会骑自行车。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "今天的天气怎么样？",
+      "meaning": "Thời tiết hôm nay thế nào?",
+      "answer_reference": "今天是晴天。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你喜欢下雨天吗？",
+      "meaning": "Bạn có thích những ngày trời mưa không?",
+      "answer_reference": "我不喜欢下雨天。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "这个菜好吃吗？",
+      "meaning": "Món ăn này có ngon không?",
+      "answer_reference": "这个菜很好吃。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "这杯茶好喝吗？",
+      "meaning": "Cốc trà này có ngon không?",
+      "answer_reference": "这杯茶很好喝。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你会开车吗？",
+      "meaning": "Bạn biết lái xe không?",
+      "answer_reference": "我会开车。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你想跟谁一起打球？",
+      "meaning": "Bạn muốn chơi bóng cùng ai?",
+      "answer_reference": "我想跟朋友一起打球。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你每天早上跑步吗？",
+      "meaning": "Bạn có chạy bộ mỗi sáng không?",
+      "answer_reference": "我每天早上跑步。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    }
+  ],
+  "activities": {
+    "topic": "Sở thích và phương tiện",
+    "tasks": [
+      {
+        "type": "order",
+        "prompt": "Bạn thích phim Trung Quốc hay phim Mỹ?",
+        "tokens": [
+          "你",
+          "喜欢",
+          "中国电影",
+          "还是",
+          "美国电影",
+          "？"
+        ],
+        "answer": "你喜欢中国电影还是美国电影？",
+        "explanation": "你喜欢中国电影还是美国电影？ — Bạn thích phim Trung Quốc hay phim Mỹ?"
+      },
+      {
+        "type": "fill",
+        "prompt": "你___中国电影还是美国电影？ (Bạn thích phim Trung Quốc hay phim Mỹ?)",
+        "answer": "喜欢",
+        "explanation": "Câu hoàn chỉnh: 你喜欢中国电影还是美国电影？ — Bạn thích phim Trung Quốc hay phim Mỹ?"
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi đi tàu điện ngầm đến công ty.",
+        "tokens": [
+          "我",
+          "坐地铁",
+          "去",
+          "公司",
+          "。"
+        ],
+        "answer": "我坐地铁去公司。",
+        "explanation": "我坐地铁去公司。 — Tôi đi tàu điện ngầm đến công ty."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___去公司。 (Tôi đi tàu điện ngầm đến công ty.)",
+        "answer": "坐地铁",
+        "explanation": "Câu hoàn chỉnh: 我坐地铁去公司。 — Tôi đi tàu điện ngầm đến công ty."
+      },
+      {
+        "type": "order",
+        "prompt": "Cô ấy đạp xe đạp đến trường.",
+        "tokens": [
+          "她",
+          "骑",
+          "自行车",
+          "去",
+          "学校",
+          "。"
+        ],
+        "answer": "她骑自行车去学校。",
+        "explanation": "她骑自行车去学校。 — Cô ấy đạp xe đạp đến trường."
+      },
+      {
+        "type": "fill",
+        "prompt": "她___自行车去学校。 (Cô ấy đạp xe đạp đến trường.)",
+        "answer": "骑",
+        "explanation": "Câu hoàn chỉnh: 她骑自行车去学校。 — Cô ấy đạp xe đạp đến trường."
+      },
+      {
+        "type": "order",
+        "prompt": "Chúng ta đi bộ đến ngân hàng nhé.",
+        "tokens": [
+          "我们",
+          "走路",
+          "去",
+          "银行",
+          "吧",
+          "。"
+        ],
+        "answer": "我们走路去银行吧。",
+        "explanation": "我们走路去银行吧。 — Chúng ta đi bộ đến ngân hàng nhé."
+      },
+      {
+        "type": "fill",
+        "prompt": "我们___去银行吧。 (Chúng ta đi bộ đến ngân hàng nhé.)",
+        "answer": "走路",
+        "explanation": "Câu hoàn chỉnh: 我们走路去银行吧。 — Chúng ta đi bộ đến ngân hàng nhé."
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi muốn ra ngoài chơi.",
+        "tokens": [
+          "我",
+          "想",
+          "出去",
+          "玩",
+          "。"
+        ],
+        "answer": "我想出去玩。",
+        "explanation": "我想出去玩。 — Tôi muốn ra ngoài chơi."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___出去玩。 (Tôi muốn ra ngoài chơi.)",
+        "answer": "想",
+        "explanation": "Câu hoàn chỉnh: 我想出去玩。 — Tôi muốn ra ngoài chơi."
+      },
+      {
+        "type": "order",
+        "prompt": "Quần áo của cô ấy vừa rẻ vừa đẹp.",
+        "tokens": [
+          "她",
+          "的",
+          "衣服",
+          "又",
+          "便宜",
+          "又",
+          "好看",
+          "。"
+        ],
+        "answer": "她的衣服又便宜又好看。",
+        "explanation": "她的衣服又便宜又好看。 — Quần áo của cô ấy vừa rẻ vừa đẹp."
+      },
+      {
+        "type": "fill",
+        "prompt": "她的___又便宜又好看。 (Quần áo của cô ấy vừa rẻ vừa đẹp.)",
+        "answer": "衣服",
+        "explanation": "Câu hoàn chỉnh: 她的衣服又便宜又好看。 — Quần áo của cô ấy vừa rẻ vừa đẹp."
+      },
+      {
+        "type": "order",
+        "prompt": "Thời tiết hôm nay thế nào?",
+        "tokens": [
+          "今天",
+          "的",
+          "天气",
+          "怎么样",
+          "？"
+        ],
+        "answer": "今天的天气怎么样？",
+        "explanation": "今天的天气怎么样？ — Thời tiết hôm nay thế nào?"
+      },
+      {
+        "type": "fill",
+        "prompt": "___的天气怎么样？ (Thời tiết hôm nay thế nào?)",
+        "answer": "今天",
+        "explanation": "Câu hoàn chỉnh: 今天的天气怎么样？ — Thời tiết hôm nay thế nào?"
+      },
+      {
+        "type": "order",
+        "prompt": "Hôm nay trời nắng.",
+        "tokens": [
+          "今天",
+          "是",
+          "晴天",
+          "。"
+        ],
+        "answer": "今天是晴天。",
+        "explanation": "今天是晴天。 — Hôm nay trời nắng."
+      },
+      {
+        "type": "fill",
+        "prompt": "___是晴天。 (Hôm nay trời nắng.)",
+        "answer": "今天",
+        "explanation": "Câu hoàn chỉnh: 今天是晴天。 — Hôm nay trời nắng."
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi không thích những ngày trời mưa.",
+        "tokens": [
+          "我",
+          "不",
+          "喜欢",
+          "下雨天",
+          "。"
+        ],
+        "answer": "我不喜欢下雨天。",
+        "explanation": "我不喜欢下雨天。 — Tôi không thích những ngày trời mưa."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___喜欢下雨天。 (Tôi không thích những ngày trời mưa.)",
+        "answer": "不",
+        "explanation": "Câu hoàn chỉnh: 我不喜欢下雨天。 — Tôi không thích những ngày trời mưa."
+      },
+      {
+        "type": "order",
+        "prompt": "Cốc trà này rất ngon.",
+        "tokens": [
+          "这",
+          "杯",
+          "茶",
+          "很",
+          "好喝",
+          "。"
+        ],
+        "answer": "这杯茶很好喝。",
+        "explanation": "这杯茶很好喝。 — Cốc trà này rất ngon."
+      },
+      {
+        "type": "fill",
+        "prompt": "___杯茶很好喝。 (Cốc trà này rất ngon.)",
+        "answer": "这",
+        "explanation": "Câu hoàn chỉnh: 这杯茶很好喝。 — Cốc trà này rất ngon."
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Bạn thích phim Trung Quốc hay phim Mỹ?”: 今天是晴天。",
+        "answer": "你喜欢中国电影还是美国电影？",
+        "options": [
+          "你喜欢中国电影还是美国电影？",
+          "今天是晴天。",
+          "我想跟朋友一起打球。"
+        ],
+        "explanation": "你喜欢中国电影还是美国电影？ — Bạn thích phim Trung Quốc hay phim Mỹ?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你喜欢中国电影还是美国电影？",
+        "answer": "我喜欢中国电影。",
+        "options": [
+          "我喜欢中国电影。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn thích phim Trung Quốc hay phim Mỹ? Đáp lại: 我喜欢中国电影。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi đi tàu điện ngầm đến công ty.”: 我不喜欢下雨天。",
+        "answer": "我坐地铁去公司。",
+        "options": [
+          "我坐地铁去公司。",
+          "我不喜欢下雨天。",
+          "请等一下。"
+        ],
+        "explanation": "我坐地铁去公司。 — Tôi đi tàu điện ngầm đến công ty."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你怎么去学校？",
+        "answer": "我坐公交车去学校。",
+        "options": [
+          "我坐公交车去学校。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn đến trường bằng cách nào? Đáp lại: 我坐公交车去学校。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Cô ấy đạp xe đạp đến trường.”: 这杯茶很好喝。",
+        "answer": "她骑自行车去学校。",
+        "options": [
+          "她骑自行车去学校。",
+          "这杯茶很好喝。",
+          "这家饭店很有名。"
+        ],
+        "explanation": "她骑自行车去学校。 — Cô ấy đạp xe đạp đến trường."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你会骑自行车吗？",
+        "answer": "我会骑自行车。",
+        "options": [
+          "我会骑自行车。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn biết đi xe đạp không? Đáp lại: 我会骑自行车。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Chúng ta đi bộ đến ngân hàng nhé.”: 她说话很好听。",
+        "answer": "我们走路去银行吧。",
+        "options": [
+          "我们走路去银行吧。",
+          "她说话很好听。",
+          "这个菜很好吃。"
+        ],
+        "explanation": "我们走路去银行吧。 — Chúng ta đi bộ đến ngân hàng nhé."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "今天的天气怎么样？",
+        "answer": "今天是晴天。",
+        "options": [
+          "今天是晴天。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Thời tiết hôm nay thế nào? Đáp lại: 今天是晴天。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi muốn ra ngoài chơi.”: 你会开车吗？",
+        "answer": "我想出去玩。",
+        "options": [
+          "我想出去玩。",
+          "你会开车吗？",
+          "我想去电影院看电影。"
+        ],
+        "explanation": "我想出去玩。 — Tôi muốn ra ngoài chơi."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你喜欢下雨天吗？",
+        "answer": "我不喜欢下雨天。",
+        "options": [
+          "我不喜欢下雨天。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn có thích những ngày trời mưa không? Đáp lại: 我不喜欢下雨天。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Quần áo của cô ấy vừa rẻ vừa đẹp.”: 他坐出租车去医院。",
+        "answer": "她的衣服又便宜又好看。",
+        "options": [
+          "她的衣服又便宜又好看。",
+          "他坐出租车去医院。",
+          "我每天早上跑步。"
+        ],
+        "explanation": "她的衣服又便宜又好看。 — Quần áo của cô ấy vừa rẻ vừa đẹp."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "这个菜好吃吗？",
+        "answer": "这个菜很好吃。",
+        "options": [
+          "这个菜很好吃。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Món ăn này có ngon không? Đáp lại: 这个菜很好吃。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Thời tiết hôm nay thế nào?”: 我想跟朋友一起打球。",
+        "answer": "今天的天气怎么样？",
+        "options": [
+          "今天的天气怎么样？",
+          "我想跟朋友一起打球。",
+          "他喜欢骑马。"
+        ],
+        "explanation": "今天的天气怎么样？ — Thời tiết hôm nay thế nào?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "这杯茶好喝吗？",
+        "answer": "这杯茶很好喝。",
+        "options": [
+          "这杯茶很好喝。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Cốc trà này có ngon không? Đáp lại: 这杯茶很好喝。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Hôm nay trời nắng.”: 请等一下。",
+        "answer": "今天是晴天。",
+        "options": [
+          "今天是晴天。",
+          "请等一下。",
+          "你喜欢中国电影还是美国电影？"
+        ],
+        "explanation": "今天是晴天。 — Hôm nay trời nắng."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你会开车吗？",
+        "answer": "我会开车。",
+        "options": [
+          "我会开车。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn biết lái xe không? Đáp lại: 我会开车。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi không thích những ngày trời mưa.”: 这家饭店很有名。",
+        "answer": "我不喜欢下雨天。",
+        "options": [
+          "我不喜欢下雨天。",
+          "这家饭店很有名。",
+          "我坐地铁去公司。"
+        ],
+        "explanation": "我不喜欢下雨天。 — Tôi không thích những ngày trời mưa."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你想跟谁一起打球？",
+        "answer": "我想跟朋友一起打球。",
+        "options": [
+          "我想跟朋友一起打球。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn muốn chơi bóng cùng ai? Đáp lại: 我想跟朋友一起打球。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Cốc trà này rất ngon.”: 这个菜很好吃。",
+        "answer": "这杯茶很好喝。",
+        "options": [
+          "这杯茶很好喝。",
+          "这个菜很好吃。",
+          "她骑自行车去学校。"
+        ],
+        "explanation": "这杯茶很好喝。 — Cốc trà này rất ngon."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你每天早上跑步吗？",
+        "answer": "我每天早上跑步。",
+        "options": [
+          "我每天早上跑步。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn có chạy bộ mỗi sáng không? Đáp lại: 我每天早上跑步。"
+      }
+    ]
+  },
+  "chat": {
+    "enabled": true,
+    "scenario_id": "hobbies",
+    "goal": "Trò chuyện về sở thích và phương tiện; chỉ dùng từ đã học từ bài 1 đến bài 9.",
+    "opening": "你喜欢中国电影还是美国电影？",
+    "translation": "Bạn thích phim Trung Quốc hay phim Mỹ?",
+    "required_words": [
+      "喜欢",
+      "爱",
+      "地铁",
+      "公交车",
+      "出租车",
+      "自行车",
+      "摩托车",
+      "走路",
+      "坐",
+      "出去",
+      "出来",
+      "玩",
+      "穿",
+      "衣服",
+      "怎么",
+      "怎么样",
+      "天气",
+      "晴天",
+      "阴天",
+      "下雨天"
+    ],
+    "max_turns": 10
+  },
+  "street": {
+    "enabled": true,
+    "place_id": "cinema",
+    "missions": [
+      {
+        "id": "vocab-9-1",
+        "title": "Nghe hiểu 1",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "你喜欢中国电影还是美国电影？",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Bạn thích phim Trung Quốc hay phim Mỹ?"
+          },
+          {
+            "id": "c2",
+            "label": "Hôm nay trời nắng."
+          },
+          {
+            "id": "c3",
+            "label": "Tôi muốn chơi bóng cùng bạn."
+          }
+        ],
+        "answer": "c1",
+        "feedback": "你喜欢中国电影还是美国电影？ — Bạn thích phim Trung Quốc hay phim Mỹ?"
+      },
+      {
+        "id": "vocab-9-2",
+        "title": "Nghe hiểu 2",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "她的衣服又便宜又好看。",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Anh ấy đi taxi đến bệnh viện."
+          },
+          {
+            "id": "c2",
+            "label": "Quần áo của cô ấy vừa rẻ vừa đẹp."
+          },
+          {
+            "id": "c3",
+            "label": "Tôi chạy bộ mỗi sáng sớm."
+          }
+        ],
+        "answer": "c2",
+        "feedback": "她的衣服又便宜又好看。 — Quần áo của cô ấy vừa rẻ vừa đẹp."
+      },
+      {
+        "id": "vocab-9-3",
+        "title": "Nghe hiểu 3",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "她说话很好听。",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Chúng ta đi bộ đến ngân hàng nhé."
+          },
+          {
+            "id": "c2",
+            "label": "Tôi muốn đến rạp chiếu phim xem phim."
+          },
+          {
+            "id": "c3",
+            "label": "Cô ấy nói chuyện rất hay."
+          }
+        ],
+        "answer": "c3",
+        "feedback": "她说话很好听。 — Cô ấy nói chuyện rất hay."
+      }
+    ]
+  }
+}

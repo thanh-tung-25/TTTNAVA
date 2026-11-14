@@ -1,2539 +1,1727 @@
-MÔN: Tiếng Trung
-LỚP: HSK 1
-CHỦ ĐỀ: Bài 5 你要吃什么 - Từ vựng chính và từ mở rộng
+MÔN: Tiếng Trung — HSK 1
+CHỦ ĐỀ: 第五课：你要吃什么？ (Bạn muốn ăn gì?)
+CHỦ ĐỀ: Đồng bộ theo danh sách từ vựng đầy đủ ngày 14/11/2026
+[TU VUNG]
+Chữ Hán 	Pinyin 	Nghĩa tiếng Việt 	Nhóm
+要 	yào 	Muốn, cần, phải 	Từ mới
+想 	xiǎng 	Muốn, nhớ, nghĩ 	Từ mới
+吃 	chī 	Ăn 	Từ mới
+茶 	chá 	Trà 	Từ mới
+牛奶 	niúnǎi 	Sữa bò 	Từ mới
+喝 	hē 	Uống 	Từ mới
+杯 	bēi 	Ly, cốc 	Từ mới
+杯子 	bēizi 	Cái cốc 	Từ mới
+一点儿 	yìdiǎnr 	Một chút 	Từ mới
+买 	mǎi 	Mua 	Từ mới
+卖 	mài 	Bán 	Từ mới
+个 	gè 	Lượng từ chung 	Từ mới
+米饭 	mǐfàn 	Cơm trắng 	Từ mới
+斤 	jīn 	Cân Trung Quốc (500 g) 	Từ mới
+还是 	háishi 	Hay là 	Từ mới
+碗 	wǎn 	Bát 	Từ mới
+一共 	yígòng 	Tổng cộng 	Từ mới
+饿 	è 	Đói 	Từ mới
+快 	kuài 	Nhanh 	Từ mới
+孩子 	háizi 	Đứa trẻ 	Từ mới
+几 	jǐ 	Mấy 	Từ mới
+第 	dì 	Tiền tố chỉ thứ tự 	Từ mới
+别的 	biéde 	Khác 	Từ mới
+其他 	qítā 	Khác, những cái khác 	Từ mới
+水果 	shuǐguǒ 	Hoa quả, trái cây 	Từ mới
+种 	zhǒng 	Loại 	Từ mới
+树 	shù 	Cây 	Từ mới
+记得 	jìde 	Nhớ 	Từ mở rộng
+菜 	cài 	Món ăn, rau 	Từ mở rộng
+牛肉 	niúròu 	Thịt bò 	Từ mở rộng
+青菜 	qīngcài 	Rau xanh 	Từ mở rộng
+蔬菜 	shūcài 	Rau củ 	Từ mở rộng
+新鲜 	xīnxiān 	Tươi 	Từ mở rộng
+馒头 	mántou 	Bánh màn thầu 	Từ mở rộng
+包子 	bāozi 	Bánh bao 	Từ mở rộng
+饺子 	jiǎozi 	Sủi cảo 	Từ mở rộng
+奶茶 	nǎichá 	Trà sữa 	Từ mở rộng
+泡茶 	pào chá 	Pha trà 	Từ mở rộng
+饭 	fàn 	Cơm, bữa ăn 	Từ mở rộng
+饭馆 	fànguǎn 	Quán cơm, quán ăn 	Từ mở rộng
+饭店 	fàndiàn 	Nhà hàng 	Từ mở rộng
+公斤 	gōngjīn 	Kilôgam 	Từ mở rộng
+饱 	bǎo 	No 	Từ mở rộng
+慢 	màn 	Chậm 	Từ mở rộng
+有点儿 	yǒudiǎnr 	Hơi, có một chút 	Từ mở rộng
+两 	liǎng 	Hai (dùng khi đếm số lượng) 	Từ mở rộng
+一碗米饭 	yì wǎn mǐfàn 	Một bát cơm 	Từ mở rộng
+一杯茶 	yì bēi chá 	Một cốc trà 	Từ mở rộng
+一杯奶茶 	yì bēi nǎichá 	Một cốc trà sữa 	Từ mở rộng
+苹果 	píngguǒ 	Táo 	Từ mở rộng
+芒果 	mángguǒ 	Xoài 	Từ mở rộng
+香蕉 	xiāngjiāo 	Chuối 	Từ mở rộng
+椰子 	yēzi 	Dừa 	Từ mở rộng
+番石榴 	fānshíliu 	Ổi 	Từ mở rộng
+石榴 	shíliu 	Lựu 	Từ mở rộng
+榴莲 	liúlián 	Sầu riêng 	Từ mở rộng
+菠萝蜜 	bōluómì 	Mít 	Từ mở rộng
+菠萝 	bōluó 	Dứa 	Từ mở rộng
+西瓜 	xīguā 	Dưa hấu 	Từ mở rộng
+橙子 	chéngzi 	Cam 	Từ mở rộng
+橘子 	júzi 	Quýt 	Từ mở rộng
+黄瓜 	huángguā 	Dưa chuột 	Từ mở rộng
+胡萝卜 	húluóbo 	Cà rốt 	Từ mở rộng
+张 	zhāng 	Lượng từ cho tờ, vật phẳng 	Từ mở rộng
+棵 	kē 	Lượng từ cho cây 	Từ mở rộng
+朵 	duǒ 	Lượng từ cho bông hoa 	Từ mở rộng
+条 	tiáo 	Lượng từ cho vật dài 	Từ mở rộng
+只 	zhī 	Lượng từ cho động vật 	Từ mở rộng
+幅 	fú 	Lượng từ cho tranh 	Từ mở rộng
+面 	miàn 	Lượng từ cho gương, cờ và một số vật có mặt phẳng 	Từ mở rộng
+本 	běn 	Lượng từ cho sách 	Từ mở rộng
+块 	kuài 	Lượng từ cho miếng, khối 	Từ mở rộng
+[CAU HOI]
 Câu 1. Trong bài học, “要” có nghĩa là gì?
-A. bánh bao có nhân
-B. muốn, cần, phải
-C. trà
-D. một chút
+A. Dưa chuột
+B. Muốn, cần, phải
+C. Một cốc trà
+D. Hay là
 Đáp án: B
-Lời giải: 要 đọc là yào, nghĩa là muốn, cần, phải. Tham chiếu: PDF bài 5, trang 5.
+Lời giải: 要 đọc là yào, nghĩa là Muốn, cần, phải. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 202.
 Độ khó: Dễ
-Câu 2. Chọn Hán tự có phiên âm “yào” và nghĩa “muốn, cần, phải”.
-A. 菠萝
-B. 米饭
+Câu 2. Chọn Hán tự có phiên âm “yào” và nghĩa “Muốn, cần, phải”.
+A. 朵
+B. 两
 C. 要
-D. 芒果
+D. 橘子
 Đáp án: C
-Lời giải: 要 đọc là yào, nghĩa là muốn, cần, phải. Tham chiếu: PDF bài 5, trang 5.
+Lời giải: 要 đọc là yào, nghĩa là Muốn, cần, phải. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 202.
 Độ khó: Dễ
-Câu 3. Chọn phiên âm đúng của “要” với nghĩa “muốn, cần, phải”.
-A. huángguā
-B. dì yī
-C. hái
-D. yào
-Đáp án: D
-Lời giải: 要 đọc là yào, nghĩa là muốn, cần, phải. Tham chiếu: PDF bài 5, trang 5.
-Độ khó: Dễ
-Câu 4. Trong bài học, “想” có nghĩa là gì?
-A. lựu
-B. cái; lượng từ thông dụng
-C. quyển; lượng từ sách
-D. muốn, nhớ, nghĩ
-Đáp án: D
-Lời giải: 想 đọc là xiǎng, nghĩa là muốn, nhớ, nghĩ. Tham chiếu: PDF bài 5, trang 5.
-Độ khó: Dễ
-Câu 5. Chọn Hán tự có phiên âm “xiǎng” và nghĩa “muốn, nhớ, nghĩ”.
-A. 种
-B. 菠萝蜜
-C. 想
-D. 民以食为天
-Đáp án: C
-Lời giải: 想 đọc là xiǎng, nghĩa là muốn, nhớ, nghĩ. Tham chiếu: PDF bài 5, trang 5.
-Độ khó: Dễ
-Câu 6. Chọn phiên âm đúng của “想” với nghĩa “muốn, nhớ, nghĩ”.
-A. kǔ
-B. jīn
-C. xiǎng
-D. dì yī
-Đáp án: C
-Lời giải: 想 đọc là xiǎng, nghĩa là muốn, nhớ, nghĩ. Tham chiếu: PDF bài 5, trang 5.
-Độ khó: Dễ
-Câu 7. Trong bài học, “吃” có nghĩa là gì?
-A. ăn
-B. suất, phần; lượng từ
-C. khác, những cái khác
-D. dừa
-Đáp án: A
-Lời giải: 吃 đọc là chī, nghĩa là ăn. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 8. Chọn Hán tự có phiên âm “chī” và nghĩa “ăn”.
-A. 吃
-B. 饭馆儿
-C. 橙子
-D. 还
-Đáp án: A
-Lời giải: 吃 đọc là chī, nghĩa là ăn. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 9. Chọn phiên âm đúng của “吃” với nghĩa “ăn”.
-A. mángguǒ
-B. júzi
-C. fèn
-D. chī
-Đáp án: D
-Lời giải: 吃 đọc là chī, nghĩa là ăn. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 10. Trong bài học, “一点儿” có nghĩa là gì?
-A. ngọt
-B. một chút
-C. muốn, cần, phải
-D. cái; lượng từ thông dụng
+Câu 3. Trong bài học, “想” có nghĩa là gì?
+A. Cái cốc
+B. Muốn, nhớ, nghĩ
+C. Bánh bao
+D. Táo
 Đáp án: B
-Lời giải: 一点儿 đọc là yìdiǎnr, nghĩa là một chút. Tham chiếu: PDF bài 5, trang 8.
+Lời giải: 想 đọc là xiǎng, nghĩa là Muốn, nhớ, nghĩ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 203.
 Độ khó: Dễ
-Câu 11. Chọn Hán tự có phiên âm “yìdiǎnr” và nghĩa “một chút”.
-A. 茶
-B. 一点儿
-C. 真
-D. 其他
-Đáp án: B
-Lời giải: 一点儿 đọc là yìdiǎnr, nghĩa là một chút. Tham chiếu: PDF bài 5, trang 8.
-Độ khó: Dễ
-Câu 12. Chọn phiên âm đúng của “一点儿” với nghĩa “một chút”.
-A. bōluómì
-B. yìdiǎnr
-C. dì
-D. shūcài
-Đáp án: B
-Lời giải: 一点儿 đọc là yìdiǎnr, nghĩa là một chút. Tham chiếu: PDF bài 5, trang 8.
-Độ khó: Dễ
-Câu 13. Trong bài học, “个” có nghĩa là gì?
-A. sủi cảo
-B. nhà hàng; khách sạn tùy ngữ cảnh
-C. đừng; dùng trong lời ngăn cản
-D. cái; lượng từ thông dụng
-Đáp án: D
-Lời giải: 个 đọc là gè, nghĩa là cái; lượng từ thông dụng. Tham chiếu: PDF bài 5, trang 10.
-Độ khó: Dễ
-Câu 14. Chọn Hán tự có phiên âm “gè” và nghĩa “cái; lượng từ thông dụng”.
-A. 个
-B. 只
-C. 一共
-D. 西瓜
-Đáp án: A
-Lời giải: 个 đọc là gè, nghĩa là cái; lượng từ thông dụng. Tham chiếu: PDF bài 5, trang 10.
-Độ khó: Dễ
-Câu 15. Chọn phiên âm đúng của “个” với nghĩa “cái; lượng từ thông dụng”.
-A. chē dào shān qián bì yǒu lù
-B. fú
-C. tián
-D. gè
-Đáp án: D
-Lời giải: 个 đọc là gè, nghĩa là cái; lượng từ thông dụng. Tham chiếu: PDF bài 5, trang 10.
-Độ khó: Dễ
-Câu 16. Trong bài học, “牛肉” có nghĩa là gì?
-A. con; lượng từ cho nhiều loài vật
-B. dân lấy cái ăn làm đầu
-C. dưa chuột
-D. thịt bò
-Đáp án: D
-Lời giải: 牛肉 đọc là niúròu, nghĩa là thịt bò. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 17. Chọn Hán tự có phiên âm “niúròu” và nghĩa “thịt bò”.
-A. 牛肉
-B. 售货员
-C. 快
-D. 幅
-Đáp án: A
-Lời giải: 牛肉 đọc là niúròu, nghĩa là thịt bò. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 18. Chọn phiên âm đúng của “牛肉” với nghĩa “thịt bò”.
-A. xiǎo bēi
-B. júzi
-C. niúròu
-D. hái
-Đáp án: C
-Lời giải: 牛肉 đọc là niúròu, nghĩa là thịt bò. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 19. Trong bài học, “青菜” có nghĩa là gì?
-A. suất, phần; lượng từ
-B. cay
-C. rau xanh
-D. thứ nhất
-Đáp án: C
-Lời giải: 青菜 đọc là qīngcài, nghĩa là rau xanh. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 20. Chọn Hán tự có phiên âm “qīngcài” và nghĩa “rau xanh”.
-A. 别
-B. 杯子
+Câu 4. Chọn Hán tự có phiên âm “xiǎng” và nghĩa “Muốn, nhớ, nghĩ”.
+A. 幅
+B. 橙子
 C. 青菜
-D. 喝
-Đáp án: C
-Lời giải: 青菜 đọc là qīngcài, nghĩa là rau xanh. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 21. Chọn phiên âm đúng của “青菜” với nghĩa “rau xanh”.
-A. niúròu
-B. fú
-C. qīngcài
-D. hǎochī
-Đáp án: C
-Lời giải: 青菜 đọc là qīngcài, nghĩa là rau xanh. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 22. Trong bài học, “还” có nghĩa là gì?
-A. còn, thêm, vẫn
-B. cà rốt
-C. rau củ
-D. quần áo
-Đáp án: A
-Lời giải: 还 đọc là hái, nghĩa là còn, thêm, vẫn. Tham chiếu: PDF bài 5, trang 29.
-Độ khó: Dễ
-Câu 23. Chọn Hán tự có phiên âm “hái” và nghĩa “còn, thêm, vẫn”.
-A. 西瓜
-B. 一共
-C. 还
-D. 旅游
-Đáp án: C
-Lời giải: 还 đọc là hái, nghĩa là còn, thêm, vẫn. Tham chiếu: PDF bài 5, trang 29.
-Độ khó: Dễ
-Câu 24. Chọn phiên âm đúng của “还” với nghĩa “còn, thêm, vẫn”.
-A. hé
-B. mǎi
-C. chī
-D. hái
+D. 想
 Đáp án: D
-Lời giải: 还 đọc là hái, nghĩa là còn, thêm, vẫn. Tham chiếu: PDF bài 5, trang 29.
+Lời giải: 想 đọc là xiǎng, nghĩa là Muốn, nhớ, nghĩ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 203.
 Độ khó: Dễ
-Câu 25. Trong bài học, “碗” có nghĩa là gì?
-A. bát; lượng từ đồ đựng trong bát
-B. nhân viên bán hàng
-C. người; lượng từ đếm thành viên gia đình
-D. cốc nhỏ
-Đáp án: A
-Lời giải: 碗 đọc là wǎn, nghĩa là bát; lượng từ đồ đựng trong bát. Tham chiếu: PDF bài 5, trang 13.
-Độ khó: Dễ
-Câu 26. Chọn Hán tự có phiên âm “wǎn” và nghĩa “bát; lượng từ đồ đựng trong bát”.
-A. 碗
-B. 西瓜
-C. 橘子
-D. 杯子
-Đáp án: A
-Lời giải: 碗 đọc là wǎn, nghĩa là bát; lượng từ đồ đựng trong bát. Tham chiếu: PDF bài 5, trang 13.
-Độ khó: Dễ
-Câu 27. Chọn phiên âm đúng của “碗” với nghĩa “bát; lượng từ đồ đựng trong bát”.
-A. huángguā
-B. wǎn
-C. qīngcài
-D. là
-Đáp án: B
-Lời giải: 碗 đọc là wǎn, nghĩa là bát; lượng từ đồ đựng trong bát. Tham chiếu: PDF bài 5, trang 13.
-Độ khó: Dễ
-Câu 28. Trong bài học, “米饭” có nghĩa là gì?
-A. no
-B. tổng cộng, tất cả
-C. cà rốt
-D. cơm trắng
+Câu 5. Trong bài học, “吃” có nghĩa là gì?
+A. Quán cơm, quán ăn
+B. Rau củ
+C. Một chút
+D. Ăn
 Đáp án: D
-Lời giải: 米饭 đọc là mǐfàn, nghĩa là cơm trắng. Tham chiếu: PDF bài 5, trang 11.
+Lời giải: 吃 đọc là chī, nghĩa là Ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 204.
 Độ khó: Dễ
-Câu 29. Chọn Hán tự có phiên âm “mǐfàn” và nghĩa “cơm trắng”.
-A. 杯
-B. 米饭
-C. 或者
-D. 水果
-Đáp án: B
-Lời giải: 米饭 đọc là mǐfàn, nghĩa là cơm trắng. Tham chiếu: PDF bài 5, trang 11.
-Độ khó: Dễ
-Câu 30. Chọn phiên âm đúng của “米饭” với nghĩa “cơm trắng”.
-A. shù
-B. chē dào shān qián bì yǒu lù
-C. mǐfàn
-D. mín yǐ shí wéi tiān
-Đáp án: C
-Lời giải: 米饭 đọc là mǐfàn, nghĩa là cơm trắng. Tham chiếu: PDF bài 5, trang 11.
-Độ khó: Dễ
-Câu 31. Trong bài học, “其他” có nghĩa là gì?
-A. bông, đóa; lượng từ cho hoa
-B. khác, những cái khác
-C. hơi, có chút
-D. bánh màn thầu
-Đáp án: B
-Lời giải: 其他 đọc là qítā, nghĩa là khác, những cái khác. Tham chiếu: PDF bài 5, trang 16.
-Độ khó: Dễ
-Câu 32. Chọn Hán tự có phiên âm “qítā” và nghĩa “khác, những cái khác”.
-A. 大杯
-B. 其他
-C. 别的
-D. 奶茶
-Đáp án: B
-Lời giải: 其他 đọc là qítā, nghĩa là khác, những cái khác. Tham chiếu: PDF bài 5, trang 16.
-Độ khó: Dễ
-Câu 33. Chọn phiên âm đúng của “其他” với nghĩa “khác, những cái khác”.
-A. jīn
-B. fú
-C. yìdiǎnr
-D. qítā
-Đáp án: D
-Lời giải: 其他 đọc là qítā, nghĩa là khác, những cái khác. Tham chiếu: PDF bài 5, trang 16.
-Độ khó: Dễ
-Câu 34. Trong bài học, “有点儿” có nghĩa là gì?
-A. đói
-B. vị; lượng từ kính trọng cho người
-C. hơi, có chút
-D. nhân viên phục vụ
-Đáp án: C
-Lời giải: 有点儿 đọc là yǒudiǎnr, nghĩa là hơi, có chút. Tham chiếu: PDF bài 5, trang 8.
-Độ khó: Dễ
-Câu 35. Chọn Hán tự có phiên âm “yǒudiǎnr” và nghĩa “hơi, có chút”.
-A. 有点儿
-B. 饺子
-C. 酸
-D. 橙子
-Đáp án: A
-Lời giải: 有点儿 đọc là yǒudiǎnr, nghĩa là hơi, có chút. Tham chiếu: PDF bài 5, trang 8.
-Độ khó: Dễ
-Câu 36. Chọn phiên âm đúng của “有点儿” với nghĩa “hơi, có chút”.
-A. fànguǎnr
-B. bāozi
-C. yǒudiǎnr
-D. fàn
-Đáp án: C
-Lời giải: 有点儿 đọc là yǒudiǎnr, nghĩa là hơi, có chút. Tham chiếu: PDF bài 5, trang 8.
-Độ khó: Dễ
-Câu 37. Trong bài học, “饿” có nghĩa là gì?
-A. đói
-B. chậm, trễ
-C. dưa chuột
-D. hai; thường dùng trước lượng từ
-Đáp án: A
-Lời giải: 饿 đọc là è, nghĩa là đói. Tham chiếu: PDF bài 5, trang 14.
-Độ khó: Dễ
-Câu 38. Chọn Hán tự có phiên âm “è” và nghĩa “đói”.
-A. 碗
-B. 饿
-C. 条
-D. 位
-Đáp án: B
-Lời giải: 饿 đọc là è, nghĩa là đói. Tham chiếu: PDF bài 5, trang 14.
-Độ khó: Dễ
-Câu 39. Chọn phiên âm đúng của “饿” với nghĩa “đói”.
-A. tián
-B. lǐwù
-C. yào
-D. è
-Đáp án: D
-Lời giải: 饿 đọc là è, nghĩa là đói. Tham chiếu: PDF bài 5, trang 14.
-Độ khó: Dễ
-Câu 40. Trong bài học, “饱” có nghĩa là gì?
-A. rau xanh
-B. nhanh, sắp
-C. thứ ba
-D. no
-Đáp án: D
-Lời giải: 饱 đọc là bǎo, nghĩa là no. Tham chiếu: PDF bài 5, trang 14.
-Độ khó: Dễ
-Câu 41. Chọn Hán tự có phiên âm “bǎo” và nghĩa “no”.
-A. 斤
-B. 蔬菜
-C. 饱
-D. 只
-Đáp án: C
-Lời giải: 饱 đọc là bǎo, nghĩa là no. Tham chiếu: PDF bài 5, trang 14.
-Độ khó: Dễ
-Câu 42. Chọn phiên âm đúng của “饱” với nghĩa “no”.
-A. suān
-B. huòzhě
-C. bǎo
-D. liǎng
-Đáp án: C
-Lời giải: 饱 đọc là bǎo, nghĩa là no. Tham chiếu: PDF bài 5, trang 14.
-Độ khó: Dễ
-Câu 43. Trong bài học, “喝” có nghĩa là gì?
-A. kilôgam, bằng 1000 gam
-B. tươi, tươi mới
-C. cái khác, thứ khác
-D. uống
-Đáp án: D
-Lời giải: 喝 đọc là hē, nghĩa là uống. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 44. Chọn Hán tự có phiên âm “hē” và nghĩa “uống”.
-A. 张
-B. 棵
-C. 斤
-D. 喝
-Đáp án: D
-Lời giải: 喝 đọc là hē, nghĩa là uống. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 45. Chọn phiên âm đúng của “喝” với nghĩa “uống”.
-A. jìde
-B. jiǎozi
-C. dà bēi
-D. hē
-Đáp án: D
-Lời giải: 喝 đọc là hē, nghĩa là uống. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 46. Trong bài học, “杯” có nghĩa là gì?
-A. món ăn, rau
-B. cốc, ly; lượng từ đồ uống
-C. ăn
-D. suất, phần; lượng từ
-Đáp án: B
-Lời giải: 杯 đọc là bēi, nghĩa là cốc, ly; lượng từ đồ uống. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 47. Chọn Hán tự có phiên âm “bēi” và nghĩa “cốc, ly; lượng từ đồ uống”.
+Câu 6. Chọn Hán tự có phiên âm “chī” và nghĩa “Ăn”.
 A. 一点儿
-B. 份
-C. 茶
-D. 杯
+B. 张
+C. 水果
+D. 吃
 Đáp án: D
-Lời giải: 杯 đọc là bēi, nghĩa là cốc, ly; lượng từ đồ uống. Tham chiếu: PDF bài 5, trang 7.
+Lời giải: 吃 đọc là chī, nghĩa là Ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 204.
 Độ khó: Dễ
-Câu 48. Chọn phiên âm đúng của “杯” với nghĩa “cốc, ly; lượng từ đồ uống”.
-A. fàndiàn
-B. húluóbo
-C. màn
-D. bēi
-Đáp án: D
-Lời giải: 杯 đọc là bēi, nghĩa là cốc, ly; lượng từ đồ uống. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 49. Trong bài học, “奶茶” có nghĩa là gì?
-A. người; lượng từ đếm thành viên gia đình
-B. cốc lớn
-C. trà sữa
-D. ngon, dùng cho đồ ăn
-Đáp án: C
-Lời giải: 奶茶 đọc là nǎichá, nghĩa là trà sữa. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 50. Chọn Hán tự có phiên âm “nǎichá” và nghĩa “trà sữa”.
-A. 奶茶
-B. 喜欢
-C. 孩子
-D. 大杯
+Câu 7. Trong bài học, “茶” có nghĩa là gì?
+A. Trà
+B. Táo
+C. Lượng từ cho sách
+D. Hơi, có một chút
 Đáp án: A
-Lời giải: 奶茶 đọc là nǎichá, nghĩa là trà sữa. Tham chiếu: PDF bài 5, trang 7.
+Lời giải: 茶 đọc là chá, nghĩa là Trà. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 205.
 Độ khó: Dễ
-Câu 51. Chọn phiên âm đúng của “奶茶” với nghĩa “trà sữa”.
-A. nǎichá
-B. fàn
-C. wèi
-D. hé
-Đáp án: A
-Lời giải: 奶茶 đọc là nǎichá, nghĩa là trà sữa. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 52. Trong bài học, “茶” có nghĩa là gì?
-A. trà
-B. cái khác, thứ khác
-C. loại; lượng từ chỉ chủng loại
-D. trà sữa
-Đáp án: A
-Lời giải: 茶 đọc là chá, nghĩa là trà. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 53. Chọn Hán tự có phiên âm “chá” và nghĩa “trà”.
-A. 有点儿
-B. 苦
-C. 杯子
+Câu 8. Chọn Hán tự có phiên âm “chá” và nghĩa “Trà”.
+A. 第
+B. 青菜
+C. 面
 D. 茶
 Đáp án: D
-Lời giải: 茶 đọc là chá, nghĩa là trà. Tham chiếu: PDF bài 5, trang 7.
+Lời giải: 茶 đọc là chá, nghĩa là Trà. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 205.
 Độ khó: Dễ
-Câu 54. Chọn phiên âm đúng của “茶” với nghĩa “trà”.
-A. lǐwù
-B. xīguā
-C. húluóbo
-D. chá
-Đáp án: D
-Lời giải: 茶 đọc là chá, nghĩa là trà. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 55. Trong bài học, “快” có nghĩa là gì?
-A. mít
-B. cái; lượng từ thông dụng
-C. ba
-D. nhanh, sắp
-Đáp án: D
-Lời giải: 快 đọc là kuài, nghĩa là nhanh, sắp. Tham chiếu: PDF bài 5, trang 14.
-Độ khó: Dễ
-Câu 56. Chọn Hán tự có phiên âm “kuài” và nghĩa “nhanh, sắp”.
-A. 快
-B. 件
-C. 大杯
-D. 本
+Câu 9. Trong bài học, “牛奶” có nghĩa là gì?
+A. Sữa bò
+B. Hai (dùng khi đếm số lượng)
+C. Lượng từ cho cây
+D. Sầu riêng
 Đáp án: A
-Lời giải: 快 đọc là kuài, nghĩa là nhanh, sắp. Tham chiếu: PDF bài 5, trang 14.
+Lời giải: 牛奶 đọc là niúnǎi, nghĩa là Sữa bò. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 206.
 Độ khó: Dễ
-Câu 57. Chọn phiên âm đúng của “快” với nghĩa “nhanh, sắp”.
-A. bēizi
-B. gōngjīn
-C. kuài
-D. liúlián
-Đáp án: C
-Lời giải: 快 đọc là kuài, nghĩa là nhanh, sắp. Tham chiếu: PDF bài 5, trang 14.
-Độ khó: Dễ
-Câu 58. Trong bài học, “慢” có nghĩa là gì?
-A. lựu
-B. quần áo
-C. mít
-D. chậm, trễ
-Đáp án: D
-Lời giải: 慢 đọc là màn, nghĩa là chậm, trễ. Tham chiếu: PDF bài 5, trang 14.
-Độ khó: Dễ
-Câu 59. Chọn Hán tự có phiên âm “màn” và nghĩa “chậm, trễ”.
-A. 慢
-B. 香蕉
-C. 饭
-D. 或者
-Đáp án: A
-Lời giải: 慢 đọc là màn, nghĩa là chậm, trễ. Tham chiếu: PDF bài 5, trang 14.
-Độ khó: Dễ
-Câu 60. Chọn phiên âm đúng của “慢” với nghĩa “chậm, trễ”.
-A. màn
-B. tiáo
-C. suān
-D. píngguǒ
-Đáp án: A
-Lời giải: 慢 đọc là màn, nghĩa là chậm, trễ. Tham chiếu: PDF bài 5, trang 14.
-Độ khó: Dễ
-Câu 61. Trong bài học, “还是” có nghĩa là gì?
-A. một chút
-B. bán
-C. mặt; lượng từ cho vật có mặt phẳng như gương
-D. hay là; nối lựa chọn trong câu hỏi
-Đáp án: D
-Lời giải: 还是 đọc là háishi, nghĩa là hay là; nối lựa chọn trong câu hỏi. Tham chiếu: PDF bài 5, trang 12.
-Độ khó: Dễ
-Câu 62. Chọn Hán tự có phiên âm “háishi” và nghĩa “hay là; nối lựa chọn trong câu hỏi”.
-A. 甜
-B. 大杯
-C. 还是
-D. 橙子
-Đáp án: C
-Lời giải: 还是 đọc là háishi, nghĩa là hay là; nối lựa chọn trong câu hỏi. Tham chiếu: PDF bài 5, trang 12.
-Độ khó: Dễ
-Câu 63. Chọn phiên âm đúng của “还是” với nghĩa “hay là; nối lựa chọn trong câu hỏi”.
-A. háishi
-B. huòzhě
-C. háizi
-D. mài
-Đáp án: A
-Lời giải: 还是 đọc là háishi, nghĩa là hay là; nối lựa chọn trong câu hỏi. Tham chiếu: PDF bài 5, trang 12.
-Độ khó: Dễ
-Câu 64. Trong bài học, “一共” có nghĩa là gì?
-A. ngon, dùng cho đồ ăn
-B. du lịch
-C. cân Trung Quốc, bằng 500 gam
-D. tổng cộng, tất cả
-Đáp án: D
-Lời giải: 一共 đọc là yígòng, nghĩa là tổng cộng, tất cả. Tham chiếu: PDF bài 5, trang 13.
-Độ khó: Dễ
-Câu 65. Chọn Hán tự có phiên âm “yígòng” và nghĩa “tổng cộng, tất cả”.
-A. 苹果
-B. 孩子
-C. 番石榴
-D. 一共
-Đáp án: D
-Lời giải: 一共 đọc là yígòng, nghĩa là tổng cộng, tất cả. Tham chiếu: PDF bài 5, trang 13.
-Độ khó: Dễ
-Câu 66. Chọn phiên âm đúng của “一共” với nghĩa “tổng cộng, tất cả”.
-A. bēizi
-B. yígòng
-C. jiàn
-D. màn
-Đáp án: B
-Lời giải: 一共 đọc là yígòng, nghĩa là tổng cộng, tất cả. Tham chiếu: PDF bài 5, trang 13.
-Độ khó: Dễ
-Câu 67. Trong bài học, “馒头” có nghĩa là gì?
-A. mấy, bao nhiêu; thường hỏi số lượng nhỏ
-B. bánh màn thầu
-C. hơi, có chút
-D. chiếc; lượng từ cho áo, sự việc
-Đáp án: B
-Lời giải: 馒头 đọc là mántou, nghĩa là bánh màn thầu. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 68. Chọn Hán tự có phiên âm “mántou” và nghĩa “bánh màn thầu”.
-A. 吃
-B. 面
-C. 位
-D. 馒头
-Đáp án: D
-Lời giải: 馒头 đọc là mántou, nghĩa là bánh màn thầu. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 69. Chọn phiên âm đúng của “馒头” với nghĩa “bánh màn thầu”.
-A. fàn
-B. zhāng
-C. mántou
-D. mǎi
-Đáp án: C
-Lời giải: 馒头 đọc là mántou, nghĩa là bánh màn thầu. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 70. Trong bài học, “包子” có nghĩa là gì?
-A. đừng; dùng trong lời ngăn cản
-B. nhanh, sắp
-C. bánh bao có nhân
-D. cam
-Đáp án: C
-Lời giải: 包子 đọc là bāozi, nghĩa là bánh bao có nhân. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 71. Chọn Hán tự có phiên âm “bāozi” và nghĩa “bánh bao có nhân”.
-A. 酸
-B. 位
-C. 棵
-D. 包子
-Đáp án: D
-Lời giải: 包子 đọc là bāozi, nghĩa là bánh bao có nhân. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 72. Chọn phiên âm đúng của “包子” với nghĩa “bánh bao có nhân”.
-A. chē dào shān qián bì yǒu lù
-B. bāozi
-C. xiǎng
-D. nǎichá
-Đáp án: B
-Lời giải: 包子 đọc là bāozi, nghĩa là bánh bao có nhân. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 73. Trong bài học, “记得” có nghĩa là gì?
-A. vị; lượng từ kính trọng cho người
-B. nhân viên bán hàng
-C. nhớ, ghi nhớ
-D. muốn, cần, phải
-Đáp án: C
-Lời giải: 记得 đọc là jìde, nghĩa là nhớ, ghi nhớ. Tham chiếu: PDF bài 5, trang 5.
-Độ khó: Dễ
-Câu 74. Chọn Hán tự có phiên âm “jìde” và nghĩa “nhớ, ghi nhớ”.
-A. 西瓜
-B. 记得
-C. 斤
-D. 甜
-Đáp án: B
-Lời giải: 记得 đọc là jìde, nghĩa là nhớ, ghi nhớ. Tham chiếu: PDF bài 5, trang 5.
-Độ khó: Dễ
-Câu 75. Chọn phiên âm đúng của “记得” với nghĩa “nhớ, ghi nhớ”.
-A. è
-B. jìde
-C. húluóbo
-D. yēzi
-Đáp án: B
-Lời giải: 记得 đọc là jìde, nghĩa là nhớ, ghi nhớ. Tham chiếu: PDF bài 5, trang 5.
-Độ khó: Dễ
-Câu 76. Trong bài học, “菜” có nghĩa là gì?
-A. nhớ, ghi nhớ
-B. quyển; lượng từ sách
-C. tờ, chiếc; lượng từ vật có bề mặt phẳng
-D. món ăn, rau
-Đáp án: D
-Lời giải: 菜 đọc là cài, nghĩa là món ăn, rau. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 77. Chọn Hán tự có phiên âm “cài” và nghĩa “món ăn, rau”.
-A. 售货员
-B. 菠萝蜜
-C. 菜
-D. 幅
-Đáp án: C
-Lời giải: 菜 đọc là cài, nghĩa là món ăn, rau. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 78. Chọn phiên âm đúng của “菜” với nghĩa “món ăn, rau”.
-A. gè
-B. cài
-C. qīngcài
-D. fàndiàn
-Đáp án: B
-Lời giải: 菜 đọc là cài, nghĩa là món ăn, rau. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 79. Trong bài học, “新鲜” có nghĩa là gì?
-A. muốn, cần, phải
-B. đừng; dùng trong lời ngăn cản
-C. ba
-D. tươi, tươi mới
-Đáp án: D
-Lời giải: 新鲜 đọc là xīnxiān, nghĩa là tươi, tươi mới. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 80. Chọn Hán tự có phiên âm “xīnxiān” và nghĩa “tươi, tươi mới”.
-A. 快
-B. 新鲜
-C. 甜
-D. 别的
-Đáp án: B
-Lời giải: 新鲜 đọc là xīnxiān, nghĩa là tươi, tươi mới. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 81. Chọn phiên âm đúng của “新鲜” với nghĩa “tươi, tươi mới”.
-A. huángguā
-B. lǐwù
-C. yào
-D. xīnxiān
-Đáp án: D
-Lời giải: 新鲜 đọc là xīnxiān, nghĩa là tươi, tươi mới. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 82. Trong bài học, “饺子” có nghĩa là gì?
-A. mít
-B. thứ nhất
-C. cân Trung Quốc, bằng 500 gam
-D. sủi cảo
-Đáp án: D
-Lời giải: 饺子 đọc là jiǎozi, nghĩa là sủi cảo. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 83. Chọn Hán tự có phiên âm “jiǎozi” và nghĩa “sủi cảo”.
-A. 饺子
-B. 还是
-C. 种
-D. 青菜
-Đáp án: A
-Lời giải: 饺子 đọc là jiǎozi, nghĩa là sủi cảo. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 84. Chọn phiên âm đúng của “饺子” với nghĩa “sủi cảo”.
-A. gōngjīn
-B. biéde
-C. jiǎozi
-D. jiàn
-Đáp án: C
-Lời giải: 饺子 đọc là jiǎozi, nghĩa là sủi cảo. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 85. Trong bài học, “蔬菜” có nghĩa là gì?
-A. món ăn, rau
-B. xoài
-C. suất, phần; lượng từ
-D. rau củ
-Đáp án: D
-Lời giải: 蔬菜 đọc là shūcài, nghĩa là rau củ. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 86. Chọn Hán tự có phiên âm “shūcài” và nghĩa “rau củ”.
-A. 一共
-B. 卖
-C. 蔬菜
-D. 第
-Đáp án: C
-Lời giải: 蔬菜 đọc là shūcài, nghĩa là rau củ. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 87. Chọn phiên âm đúng của “蔬菜” với nghĩa “rau củ”.
-A. hái
-B. shūcài
-C. pào chá
-D. bié
-Đáp án: B
-Lời giải: 蔬菜 đọc là shūcài, nghĩa là rau củ. Tham chiếu: PDF bài 5, trang 6.
-Độ khó: Dễ
-Câu 88. Trong bài học, “牛奶” có nghĩa là gì?
-A. sữa bò
-B. thứ ba
-C. loại; lượng từ chỉ chủng loại
-D. no
-Đáp án: A
-Lời giải: 牛奶 đọc là niúnǎi, nghĩa là sữa bò. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 89. Chọn Hán tự có phiên âm “niúnǎi” và nghĩa “sữa bò”.
-A. 好喝
-B. 牛奶
-C. 小杯
-D. 酸
-Đáp án: B
-Lời giải: 牛奶 đọc là niúnǎi, nghĩa là sữa bò. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 90. Chọn phiên âm đúng của “牛奶” với nghĩa “sữa bò”.
-A. jǐ
-B. fú
-C. zhēn
-D. niúnǎi
-Đáp án: D
-Lời giải: 牛奶 đọc là niúnǎi, nghĩa là sữa bò. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 91. Trong bài học, “杯子” có nghĩa là gì?
-A. cơm, bữa ăn
-B. cái cốc, cái ly
-C. trà
-D. nhân viên bán hàng
-Đáp án: B
-Lời giải: 杯子 đọc là bēizi, nghĩa là cái cốc, cái ly. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 92. Chọn Hán tự có phiên âm “bēizi” và nghĩa “cái cốc, cái ly”.
-A. 茶
-B. 杯子
-C. 慢
-D. 包子
-Đáp án: B
-Lời giải: 杯子 đọc là bēizi, nghĩa là cái cốc, cái ly. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 93. Chọn phiên âm đúng của “杯子” với nghĩa “cái cốc, cái ly”.
-A. liǎng
-B. hǎohē
-C. zhòng
-D. bēizi
-Đáp án: D
-Lời giải: 杯子 đọc là bēizi, nghĩa là cái cốc, cái ly. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 94. Trong bài học, “和” có nghĩa là gì?
-A. hơi, có chút
-B. và
-C. hai; thường dùng trước lượng từ
-D. quần áo
-Đáp án: B
-Lời giải: 和 đọc là hé, nghĩa là và. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 95. Chọn Hán tự có phiên âm “hé” và nghĩa “và”.
-A. 好吃
-B. 和
-C. 树
-D. 菠萝蜜
-Đáp án: B
-Lời giải: 和 đọc là hé, nghĩa là và. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 96. Chọn phiên âm đúng của “和” với nghĩa “và”.
-A. bēi
-B. jiǎozi
-C. hái
-D. hé
-Đáp án: D
-Lời giải: 和 đọc là hé, nghĩa là và. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 97. Trong bài học, “好吃” có nghĩa là gì?
-A. quần áo
-B. ngon, dùng cho đồ ăn
-C. nhớ, ghi nhớ
-D. cái; lượng từ thông dụng
-Đáp án: B
-Lời giải: 好吃 đọc là hǎochī, nghĩa là ngon, dùng cho đồ ăn. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 98. Chọn Hán tự có phiên âm “hǎochī” và nghĩa “ngon, dùng cho đồ ăn”.
-A. 好吃
-B. 米饭
-C. 第
-D. 椰子
-Đáp án: A
-Lời giải: 好吃 đọc là hǎochī, nghĩa là ngon, dùng cho đồ ăn. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 99. Chọn phiên âm đúng của “好吃” với nghĩa “ngon, dùng cho đồ ăn”.
-A. bōluó
-B. jiàn
-C. shòuhuòyuán
-D. hǎochī
-Đáp án: D
-Lời giải: 好吃 đọc là hǎochī, nghĩa là ngon, dùng cho đồ ăn. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 100. Trong bài học, “好喝” có nghĩa là gì?
-A. ngon, dùng cho đồ uống
-B. cái cốc, cái ly
-C. đắng
-D. bát; lượng từ đồ đựng trong bát
-Đáp án: A
-Lời giải: 好喝 đọc là hǎohē, nghĩa là ngon, dùng cho đồ uống. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 101. Chọn Hán tự có phiên âm “hǎohē” và nghĩa “ngon, dùng cho đồ uống”.
-A. 菠萝蜜
-B. 好喝
-C. 件
-D. 榴莲
-Đáp án: B
-Lời giải: 好喝 đọc là hǎohē, nghĩa là ngon, dùng cho đồ uống. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 102. Chọn phiên âm đúng của “好喝” với nghĩa “ngon, dùng cho đồ uống”.
-A. zhòng
-B. mǐfàn
-C. hǎohē
-D. běn
-Đáp án: C
-Lời giải: 好喝 đọc là hǎohē, nghĩa là ngon, dùng cho đồ uống. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 103. Trong bài học, “泡茶” có nghĩa là gì?
-A. pha trà
-B. mấy, bao nhiêu; thường hỏi số lượng nhỏ
-C. thật, thật là
-D. đói
-Đáp án: A
-Lời giải: 泡茶 đọc là pào chá, nghĩa là pha trà. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 104. Chọn Hán tự có phiên âm “pào chá” và nghĩa “pha trà”.
-A. 好喝
-B. 泡茶
-C. 牛奶
-D. 个
-Đáp án: B
-Lời giải: 泡茶 đọc là pào chá, nghĩa là pha trà. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 105. Chọn phiên âm đúng của “泡茶” với nghĩa “pha trà”.
-A. hé
-B. yēzi
-C. pào chá
-D. lǚyóu
-Đáp án: C
-Lời giải: 泡茶 đọc là pào chá, nghĩa là pha trà. Tham chiếu: PDF bài 5, trang 7.
-Độ khó: Dễ
-Câu 106. Trong bài học, “买” có nghĩa là gì?
-A. có chí thì nên
-B. lựu
-C. uống
-D. mua
-Đáp án: D
-Lời giải: 买 đọc là mǎi, nghĩa là mua. Tham chiếu: PDF bài 5, trang 9.
-Độ khó: Dễ
-Câu 107. Chọn Hán tự có phiên âm “mǎi” và nghĩa “mua”.
-A. 只
-B. 买
-C. 石榴
-D. 三
-Đáp án: B
-Lời giải: 买 đọc là mǎi, nghĩa là mua. Tham chiếu: PDF bài 5, trang 9.
-Độ khó: Dễ
-Câu 108. Chọn phiên âm đúng của “买” với nghĩa “mua”.
-A. bié
-B. mǎi
-C. júzi
-D. xīnxiān
-Đáp án: B
-Lời giải: 买 đọc là mǎi, nghĩa là mua. Tham chiếu: PDF bài 5, trang 9.
-Độ khó: Dễ
-Câu 109. Trong bài học, “卖” có nghĩa là gì?
-A. kilôgam, bằng 1000 gam
-B. rau xanh
-C. bán
-D. hoặc; nối lựa chọn trong câu trần thuật
-Đáp án: C
-Lời giải: 卖 đọc là mài, nghĩa là bán. Tham chiếu: PDF bài 5, trang 9.
-Độ khó: Dễ
-Câu 110. Chọn Hán tự có phiên âm “mài” và nghĩa “bán”.
-A. 椰子
-B. 卖
-C. 快
-D. 榴莲
-Đáp án: B
-Lời giải: 卖 đọc là mài, nghĩa là bán. Tham chiếu: PDF bài 5, trang 9.
-Độ khó: Dễ
-Câu 111. Chọn phiên âm đúng của “卖” với nghĩa “bán”.
-A. mài
-B. wèi
-C. xīguā
-D. bāozi
-Đáp án: A
-Lời giải: 卖 đọc là mài, nghĩa là bán. Tham chiếu: PDF bài 5, trang 9.
-Độ khó: Dễ
-Câu 112. Trong bài học, “位” có nghĩa là gì?
-A. rau xanh
-B. mua
-C. vị; lượng từ kính trọng cho người
-D. tờ, chiếc; lượng từ vật có bề mặt phẳng
-Đáp án: C
-Lời giải: 位 đọc là wèi, nghĩa là vị; lượng từ kính trọng cho người. Tham chiếu: PDF bài 5, trang 10.
-Độ khó: Dễ
-Câu 113. Chọn Hán tự có phiên âm “wèi” và nghĩa “vị; lượng từ kính trọng cho người”.
-A. 香蕉
-B. 位
-C. 斤
-D. 售货员
-Đáp án: B
-Lời giải: 位 đọc là wèi, nghĩa là vị; lượng từ kính trọng cho người. Tham chiếu: PDF bài 5, trang 10.
-Độ khó: Dễ
-Câu 114. Chọn phiên âm đúng của “位” với nghĩa “vị; lượng từ kính trọng cho người”.
-A. wèi
-B. bōluó
-C. zhǒng
-D. mángguǒ
-Đáp án: A
-Lời giải: 位 đọc là wèi, nghĩa là vị; lượng từ kính trọng cho người. Tham chiếu: PDF bài 5, trang 10.
-Độ khó: Dễ
-Câu 115. Trong bài học, “口” có nghĩa là gì?
-A. người; lượng từ đếm thành viên gia đình
-B. quần áo
-C. sữa bò
-D. mua
-Đáp án: A
-Lời giải: 口 đọc là kǒu, nghĩa là người; lượng từ đếm thành viên gia đình. Tham chiếu: PDF bài 5, trang 10.
-Độ khó: Dễ
-Câu 116. Chọn Hán tự có phiên âm “kǒu” và nghĩa “người; lượng từ đếm thành viên gia đình”.
-A. 旅游
-B. 口
-C. 一共
-D. 其他
-Đáp án: B
-Lời giải: 口 đọc là kǒu, nghĩa là người; lượng từ đếm thành viên gia đình. Tham chiếu: PDF bài 5, trang 10.
-Độ khó: Dễ
-Câu 117. Chọn phiên âm đúng của “口” với nghĩa “người; lượng từ đếm thành viên gia đình”.
-A. liǎng
-B. liúlián
-C. chá
-D. kǒu
-Đáp án: D
-Lời giải: 口 đọc là kǒu, nghĩa là người; lượng từ đếm thành viên gia đình. Tham chiếu: PDF bài 5, trang 10.
-Độ khó: Dễ
-Câu 118. Trong bài học, “本” có nghĩa là gì?
-A. quyển; lượng từ sách
-B. cơm, bữa ăn
-C. sầu riêng
-D. bát; lượng từ đồ đựng trong bát
-Đáp án: A
-Lời giải: 本 đọc là běn, nghĩa là quyển; lượng từ sách. Tham chiếu: PDF bài 5, trang 11.
-Độ khó: Dễ
-Câu 119. Chọn Hán tự có phiên âm “běn” và nghĩa “quyển; lượng từ sách”.
-A. 买
-B. 要
-C. 想
-D. 本
-Đáp án: D
-Lời giải: 本 đọc là běn, nghĩa là quyển; lượng từ sách. Tham chiếu: PDF bài 5, trang 11.
-Độ khó: Dễ
-Câu 120. Chọn phiên âm đúng của “本” với nghĩa “quyển; lượng từ sách”.
-A. húluóbo
-B. běn
-C. kǔ
-D. hé
-Đáp án: B
-Lời giải: 本 đọc là běn, nghĩa là quyển; lượng từ sách. Tham chiếu: PDF bài 5, trang 11.
-Độ khó: Dễ
-Câu 121. Trong bài học, “饭” có nghĩa là gì?
-A. quần áo
-B. còn, thêm, vẫn
-C. cơm, bữa ăn
-D. thịt bò
-Đáp án: C
-Lời giải: 饭 đọc là fàn, nghĩa là cơm, bữa ăn. Tham chiếu: PDF bài 5, trang 11.
-Độ khó: Dễ
-Câu 122. Chọn Hán tự có phiên âm “fàn” và nghĩa “cơm, bữa ăn”.
-A. 孩子
-B. 新鲜
-C. 几
-D. 饭
-Đáp án: D
-Lời giải: 饭 đọc là fàn, nghĩa là cơm, bữa ăn. Tham chiếu: PDF bài 5, trang 11.
-Độ khó: Dễ
-Câu 123. Chọn phiên âm đúng của “饭” với nghĩa “cơm, bữa ăn”.
-A. dì yī
-B. xīguā
-C. fàn
-D. lǐwù
-Đáp án: C
-Lời giải: 饭 đọc là fàn, nghĩa là cơm, bữa ăn. Tham chiếu: PDF bài 5, trang 11.
-Độ khó: Dễ
-Câu 124. Trong bài học, “饭馆儿” có nghĩa là gì?
-A. sầu riêng
-B. quán ăn
-C. xe đến trước núi ắt có đường; rồi sẽ có cách
-D. tươi, tươi mới
-Đáp án: B
-Lời giải: 饭馆儿 đọc là fànguǎnr, nghĩa là quán ăn. Tham chiếu: PDF bài 5, trang 11.
-Độ khó: Dễ
-Câu 125. Chọn Hán tự có phiên âm “fànguǎnr” và nghĩa “quán ăn”.
-A. 饭馆儿
-B. 饿
-C. 石榴
-D. 好吃
-Đáp án: A
-Lời giải: 饭馆儿 đọc là fànguǎnr, nghĩa là quán ăn. Tham chiếu: PDF bài 5, trang 11.
-Độ khó: Dễ
-Câu 126. Chọn phiên âm đúng của “饭馆儿” với nghĩa “quán ăn”.
-A. fànguǎnr
-B. jìde
-C. jiàn
-D. dì
-Đáp án: A
-Lời giải: 饭馆儿 đọc là fànguǎnr, nghĩa là quán ăn. Tham chiếu: PDF bài 5, trang 11.
-Độ khó: Dễ
-Câu 127. Trong bài học, “饭店” có nghĩa là gì?
-A. quần áo
-B. nhà hàng; khách sạn tùy ngữ cảnh
-C. thứ nhất
-D. nhân viên phục vụ
-Đáp án: B
-Lời giải: 饭店 đọc là fàndiàn, nghĩa là nhà hàng; khách sạn tùy ngữ cảnh. Tham chiếu: PDF bài 5, trang 11.
-Độ khó: Dễ
-Câu 128. Chọn Hán tự có phiên âm “fàndiàn” và nghĩa “nhà hàng; khách sạn tùy ngữ cảnh”.
-A. 幅
-B. 还是
-C. 石榴
-D. 饭店
-Đáp án: D
-Lời giải: 饭店 đọc là fàndiàn, nghĩa là nhà hàng; khách sạn tùy ngữ cảnh. Tham chiếu: PDF bài 5, trang 11.
-Độ khó: Dễ
-Câu 129. Chọn phiên âm đúng của “饭店” với nghĩa “nhà hàng; khách sạn tùy ngữ cảnh”.
-A. jìde
-B. liǎng
-C. xiǎo bēi
-D. fàndiàn
-Đáp án: D
-Lời giải: 饭店 đọc là fàndiàn, nghĩa là nhà hàng; khách sạn tùy ngữ cảnh. Tham chiếu: PDF bài 5, trang 11.
-Độ khó: Dễ
-Câu 130. Trong bài học, “斤” có nghĩa là gì?
-A. cay
-B. dưa chuột
-C. hay là; nối lựa chọn trong câu hỏi
-D. cân Trung Quốc, bằng 500 gam
-Đáp án: D
-Lời giải: 斤 đọc là jīn, nghĩa là cân Trung Quốc, bằng 500 gam. Tham chiếu: PDF bài 5, trang 12.
-Độ khó: Dễ
-Câu 131. Chọn Hán tự có phiên âm “jīn” và nghĩa “cân Trung Quốc, bằng 500 gam”.
-A. 橙子
-B. 馒头
-C. 包子
-D. 斤
-Đáp án: D
-Lời giải: 斤 đọc là jīn, nghĩa là cân Trung Quốc, bằng 500 gam. Tham chiếu: PDF bài 5, trang 12.
-Độ khó: Dễ
-Câu 132. Chọn phiên âm đúng của “斤” với nghĩa “cân Trung Quốc, bằng 500 gam”.
-A. xīguā
-B. mántou
-C. jīn
-D. zhāng
-Đáp án: C
-Lời giải: 斤 đọc là jīn, nghĩa là cân Trung Quốc, bằng 500 gam. Tham chiếu: PDF bài 5, trang 12.
-Độ khó: Dễ
-Câu 133. Trong bài học, “公斤” có nghĩa là gì?
-A. tiền tố chỉ thứ tự
-B. cây
-C. kilôgam, bằng 1000 gam
-D. cam
-Đáp án: C
-Lời giải: 公斤 đọc là gōngjīn, nghĩa là kilôgam, bằng 1000 gam. Tham chiếu: PDF bài 5, trang 12.
-Độ khó: Dễ
-Câu 134. Chọn Hán tự có phiên âm “gōngjīn” và nghĩa “kilôgam, bằng 1000 gam”.
-A. 牛肉
-B. 公斤
-C. 想
-D. 苹果
-Đáp án: B
-Lời giải: 公斤 đọc là gōngjīn, nghĩa là kilôgam, bằng 1000 gam. Tham chiếu: PDF bài 5, trang 12.
-Độ khó: Dễ
-Câu 135. Chọn phiên âm đúng của “公斤” với nghĩa “kilôgam, bằng 1000 gam”.
-A. kāfēi
-B. gōngjīn
-C. háizi
-D. suān
-Đáp án: B
-Lời giải: 公斤 đọc là gōngjīn, nghĩa là kilôgam, bằng 1000 gam. Tham chiếu: PDF bài 5, trang 12.
-Độ khó: Dễ
-Câu 136. Trong bài học, “或者” có nghĩa là gì?
-A. ổi
-B. chuối
-C. mít
-D. hoặc; nối lựa chọn trong câu trần thuật
-Đáp án: D
-Lời giải: 或者 đọc là huòzhě, nghĩa là hoặc; nối lựa chọn trong câu trần thuật. Tham chiếu: PDF bài 5, trang 12.
-Độ khó: Dễ
-Câu 137. Chọn Hán tự có phiên âm “huòzhě” và nghĩa “hoặc; nối lựa chọn trong câu trần thuật”.
-A. 其他
-B. 树
-C. 或者
-D. 馒头
-Đáp án: C
-Lời giải: 或者 đọc là huòzhě, nghĩa là hoặc; nối lựa chọn trong câu trần thuật. Tham chiếu: PDF bài 5, trang 12.
-Độ khó: Dễ
-Câu 138. Chọn phiên âm đúng của “或者” với nghĩa “hoặc; nối lựa chọn trong câu trần thuật”.
-A. huòzhě
-B. bié
-C. suān
-D. bēizi
-Đáp án: A
-Lời giải: 或者 đọc là huòzhě, nghĩa là hoặc; nối lựa chọn trong câu trần thuật. Tham chiếu: PDF bài 5, trang 12.
-Độ khó: Dễ
-Câu 139. Trong bài học, “份” có nghĩa là gì?
-A. ngon, dùng cho đồ ăn
-B. loại; lượng từ chỉ chủng loại
-C. suất, phần; lượng từ
-D. uống
-Đáp án: C
-Lời giải: 份 đọc là fèn, nghĩa là suất, phần; lượng từ. Tham chiếu: PDF bài 5, trang 13.
-Độ khó: Dễ
-Câu 140. Chọn Hán tự có phiên âm “fèn” và nghĩa “suất, phần; lượng từ”.
-A. 别的
-B. 件
-C. 份
-D. 酸
-Đáp án: C
-Lời giải: 份 đọc là fèn, nghĩa là suất, phần; lượng từ. Tham chiếu: PDF bài 5, trang 13.
-Độ khó: Dễ
-Câu 141. Chọn phiên âm đúng của “份” với nghĩa “suất, phần; lượng từ”.
-A. xiǎng
-B. yìdiǎnr
-C. fèn
-D. zhòng
-Đáp án: C
-Lời giải: 份 đọc là fèn, nghĩa là suất, phần; lượng từ. Tham chiếu: PDF bài 5, trang 13.
-Độ khó: Dễ
-Câu 142. Trong bài học, “咖啡” có nghĩa là gì?
-A. ăn
-B. con; lượng từ cho nhiều loài vật
-C. quýt
-D. cà phê
-Đáp án: D
-Lời giải: 咖啡 đọc là kāfēi, nghĩa là cà phê. Tham chiếu: PDF bài 5, trang 13.
-Độ khó: Dễ
-Câu 143. Chọn Hán tự có phiên âm “kāfēi” và nghĩa “cà phê”.
-A. 菠萝蜜
-B. 口
-C. 咖啡
-D. 种
-Đáp án: C
-Lời giải: 咖啡 đọc là kāfēi, nghĩa là cà phê. Tham chiếu: PDF bài 5, trang 13.
-Độ khó: Dễ
-Câu 144. Chọn phiên âm đúng của “咖啡” với nghĩa “cà phê”.
-A. hé
-B. kāfēi
-C. zhǒng
-D. shíliu
-Đáp án: B
-Lời giải: 咖啡 đọc là kāfēi, nghĩa là cà phê. Tham chiếu: PDF bài 5, trang 13.
-Độ khó: Dễ
-Câu 145. Trong bài học, “孩子” có nghĩa là gì?
-A. con, trẻ con
-B. và
-C. chua
-D. cơm, bữa ăn
-Đáp án: A
-Lời giải: 孩子 đọc là háizi, nghĩa là con, trẻ con. Tham chiếu: PDF bài 5, trang 15.
-Độ khó: Dễ
-Câu 146. Chọn Hán tự có phiên âm “háizi” và nghĩa “con, trẻ con”.
-A. 售货员
-B. 番石榴
-C. 服务员
-D. 孩子
-Đáp án: D
-Lời giải: 孩子 đọc là háizi, nghĩa là con, trẻ con. Tham chiếu: PDF bài 5, trang 15.
-Độ khó: Dễ
-Câu 147. Chọn phiên âm đúng của “孩子” với nghĩa “con, trẻ con”.
-A. mǐfàn
-B. háizi
-C. fàndiàn
-D. bēizi
-Đáp án: B
-Lời giải: 孩子 đọc là háizi, nghĩa là con, trẻ con. Tham chiếu: PDF bài 5, trang 15.
-Độ khó: Dễ
-Câu 148. Trong bài học, “几” có nghĩa là gì?
-A. cốc nhỏ
-B. chậm, trễ
-C. mấy, bao nhiêu; thường hỏi số lượng nhỏ
-D. quýt
-Đáp án: C
-Lời giải: 几 đọc là jǐ, nghĩa là mấy, bao nhiêu; thường hỏi số lượng nhỏ. Tham chiếu: PDF bài 5, trang 15.
-Độ khó: Dễ
-Câu 149. Chọn Hán tự có phiên âm “jǐ” và nghĩa “mấy, bao nhiêu; thường hỏi số lượng nhỏ”.
-A. 奶茶
-B. 几
-C. 茶
-D. 种
-Đáp án: B
-Lời giải: 几 đọc là jǐ, nghĩa là mấy, bao nhiêu; thường hỏi số lượng nhỏ. Tham chiếu: PDF bài 5, trang 15.
-Độ khó: Dễ
-Câu 150. Chọn phiên âm đúng của “几” với nghĩa “mấy, bao nhiêu; thường hỏi số lượng nhỏ”.
-A. lǚyóu
-B. zhǒng
-C. jǐ
-D. chéngzi
-Đáp án: C
-Lời giải: 几 đọc là jǐ, nghĩa là mấy, bao nhiêu; thường hỏi số lượng nhỏ. Tham chiếu: PDF bài 5, trang 15.
-Độ khó: Dễ
-Câu 151. Trong bài học, “第” có nghĩa là gì?
-A. chậm, trễ
-B. tiền tố chỉ thứ tự
-C. cái; lượng từ thông dụng
-D. đắng
-Đáp án: B
-Lời giải: 第 đọc là dì, nghĩa là tiền tố chỉ thứ tự. Tham chiếu: PDF bài 5, trang 15.
-Độ khó: Dễ
-Câu 152. Chọn Hán tự có phiên âm “dì” và nghĩa “tiền tố chỉ thứ tự”.
+Câu 10. Chọn Hán tự có phiên âm “niúnǎi” và nghĩa “Sữa bò”.
 A. 牛奶
-B. 第一
-C. 第
-D. 张
-Đáp án: C
-Lời giải: 第 đọc là dì, nghĩa là tiền tố chỉ thứ tự. Tham chiếu: PDF bài 5, trang 15.
+B. 新鲜
+C. 菜
+D. 包子
+Đáp án: A
+Lời giải: 牛奶 đọc là niúnǎi, nghĩa là Sữa bò. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 206.
 Độ khó: Dễ
-Câu 153. Chọn phiên âm đúng của “第” với nghĩa “tiền tố chỉ thứ tự”.
-A. niúnǎi
-B. qīngcài
-C. hǎohē
-D. dì
+Câu 11. Trong bài học, “喝” có nghĩa là gì?
+A. Lượng từ cho bông hoa
+B. Uống
+C. Sủi cảo
+D. Cái cốc
+Đáp án: B
+Lời giải: 喝 đọc là hē, nghĩa là Uống. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 207.
+Độ khó: Dễ
+Câu 12. Chọn Hán tự có phiên âm “hē” và nghĩa “Uống”.
+A. 菠萝蜜
+B. 牛肉
+C. 喝
+D. 碗
+Đáp án: C
+Lời giải: 喝 đọc là hē, nghĩa là Uống. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 207.
+Độ khó: Dễ
+Câu 13. Trong bài học, “杯” có nghĩa là gì?
+A. Lượng từ cho miếng, khối
+B. Ly, cốc
+C. Dứa
+D. Thịt bò
+Đáp án: B
+Lời giải: 杯 đọc là bēi, nghĩa là Ly, cốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 208.
+Độ khó: Dễ
+Câu 14. Chọn Hán tự có phiên âm “bēi” và nghĩa “Ly, cốc”.
+A. 杯
+B. 第
+C. 奶茶
+D. 牛奶
+Đáp án: A
+Lời giải: 杯 đọc là bēi, nghĩa là Ly, cốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 208.
+Độ khó: Dễ
+Câu 15. Trong bài học, “杯子” có nghĩa là gì?
+A. Món ăn, rau
+B. Hay là
+C. Thịt bò
+D. Cái cốc
 Đáp án: D
-Lời giải: 第 đọc là dì, nghĩa là tiền tố chỉ thứ tự. Tham chiếu: PDF bài 5, trang 15.
+Lời giải: 杯子 đọc là bēizi, nghĩa là Cái cốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 209.
 Độ khó: Dễ
-Câu 154. Trong bài học, “第一” có nghĩa là gì?
-A. cà phê
-B. cái cốc, cái ly
-C. thứ nhất
-D. kilôgam, bằng 1000 gam
+Câu 16. Chọn Hán tự có phiên âm “bēizi” và nghĩa “Cái cốc”.
+A. 杯子
+B. 朵
+C. 两
+D. 菠萝
+Đáp án: A
+Lời giải: 杯子 đọc là bēizi, nghĩa là Cái cốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 209.
+Độ khó: Dễ
+Câu 17. Trong bài học, “一点儿” có nghĩa là gì?
+A. Mua
+B. Cà rốt
+C. Một chút
+D. Sầu riêng
 Đáp án: C
-Lời giải: 第一 đọc là dì yī, nghĩa là thứ nhất. Tham chiếu: PDF bài 5, trang 15.
+Lời giải: 一点儿 đọc là yìdiǎnr, nghĩa là Một chút. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 210.
 Độ khó: Dễ
-Câu 155. Chọn Hán tự có phiên âm “dì yī” và nghĩa “thứ nhất”.
-A. 好吃
-B. 第一
+Câu 18. Chọn Hán tự có phiên âm “yìdiǎnr” và nghĩa “Một chút”.
+A. 种
+B. 还是
+C. 一点儿
+D. 个
+Đáp án: C
+Lời giải: 一点儿 đọc là yìdiǎnr, nghĩa là Một chút. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 210.
+Độ khó: Dễ
+Câu 19. Trong bài học, “买” có nghĩa là gì?
+A. Mua
+B. Lượng từ cho vật dài
+C. Thịt bò
+D. Rau xanh
+Đáp án: A
+Lời giải: 买 đọc là mǎi, nghĩa là Mua. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 211.
+Độ khó: Dễ
+Câu 20. Chọn Hán tự có phiên âm “mǎi” và nghĩa “Mua”.
+A. 买
+B. 个
+C. 要
+D. 黄瓜
+Đáp án: A
+Lời giải: 买 đọc là mǎi, nghĩa là Mua. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 211.
+Độ khó: Dễ
+Câu 21. Trong bài học, “卖” có nghĩa là gì?
+A. Nhanh
+B. Bán
+C. Một bát cơm
+D. Trà sữa
+Đáp án: B
+Lời giải: 卖 đọc là mài, nghĩa là Bán. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 212.
+Độ khó: Dễ
+Câu 22. Chọn Hán tự có phiên âm “mài” và nghĩa “Bán”.
+A. 卖
+B. 面
+C. 泡茶
+D. 碗
+Đáp án: A
+Lời giải: 卖 đọc là mài, nghĩa là Bán. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 212.
+Độ khó: Dễ
+Câu 23. Trong bài học, “个” có nghĩa là gì?
+A. Dừa
+B. Hơi, có một chút
+C. Dưa hấu
+D. Lượng từ chung
+Đáp án: D
+Lời giải: 个 đọc là gè, nghĩa là Lượng từ chung. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 213.
+Độ khó: Dễ
+Câu 24. Chọn Hán tự có phiên âm “gè” và nghĩa “Lượng từ chung”.
+A. 张
+B. 个
+C. 孩子
+D. 蔬菜
+Đáp án: B
+Lời giải: 个 đọc là gè, nghĩa là Lượng từ chung. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 213.
+Độ khó: Dễ
+Câu 25. Trong bài học, “米饭” có nghĩa là gì?
+A. Cơm trắng
+B. Cà rốt
+C. Sầu riêng
+D. Rau xanh
+Đáp án: A
+Lời giải: 米饭 đọc là mǐfàn, nghĩa là Cơm trắng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 214.
+Độ khó: Dễ
+Câu 26. Chọn Hán tự có phiên âm “mǐfàn” và nghĩa “Cơm trắng”.
+A. 米饭
+B. 榴莲
+C. 一杯奶茶
+D. 饭
+Đáp án: A
+Lời giải: 米饭 đọc là mǐfàn, nghĩa là Cơm trắng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 214.
+Độ khó: Dễ
+Câu 27. Trong bài học, “斤” có nghĩa là gì?
+A. Ăn
+B. Dứa
+C. Cân Trung Quốc (500 g)
+D. Trà
+Đáp án: C
+Lời giải: 斤 đọc là jīn, nghĩa là Cân Trung Quốc (500 g). Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 215.
+Độ khó: Dễ
+Câu 28. Chọn Hán tự có phiên âm “jīn” và nghĩa “Cân Trung Quốc (500 g)”.
+A. 斤
+B. 个
 C. 几
-D. 米饭
-Đáp án: B
-Lời giải: 第一 đọc là dì yī, nghĩa là thứ nhất. Tham chiếu: PDF bài 5, trang 15.
-Độ khó: Dễ
-Câu 156. Chọn phiên âm đúng của “第一” với nghĩa “thứ nhất”.
-A. fúwùyuán
-B. bōluó
-C. dì yī
-D. jìde
-Đáp án: C
-Lời giải: 第一 đọc là dì yī, nghĩa là thứ nhất. Tham chiếu: PDF bài 5, trang 15.
-Độ khó: Dễ
-Câu 157. Trong bài học, “第三” có nghĩa là gì?
-A. thứ ba
-B. trà sữa
-C. mua
-D. cái khác, thứ khác
+D. 买
 Đáp án: A
-Lời giải: 第三 đọc là dì sān, nghĩa là thứ ba. Tham chiếu: PDF bài 5, trang 15.
+Lời giải: 斤 đọc là jīn, nghĩa là Cân Trung Quốc (500 g). Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 215.
 Độ khó: Dễ
-Câu 158. Chọn Hán tự có phiên âm “dì sān” và nghĩa “thứ ba”.
-A. 第三
-B. 橙子
-C. 牛奶
-D. 饱
-Đáp án: A
-Lời giải: 第三 đọc là dì sān, nghĩa là thứ ba. Tham chiếu: PDF bài 5, trang 15.
-Độ khó: Dễ
-Câu 159. Chọn phiên âm đúng của “第三” với nghĩa “thứ ba”.
-A. bēizi
-B. dì sān
-C. hǎohē
-D. mántou
-Đáp án: B
-Lời giải: 第三 đọc là dì sān, nghĩa là thứ ba. Tham chiếu: PDF bài 5, trang 15.
-Độ khó: Dễ
-Câu 160. Trong bài học, “别的” có nghĩa là gì?
-A. thịt bò
-B. quần áo
-C. dưa hấu
-D. cái khác, thứ khác
+Câu 29. Trong bài học, “还是” có nghĩa là gì?
+A. Bát
+B. Hơi, có một chút
+C. Một cốc trà
+D. Hay là
 Đáp án: D
-Lời giải: 别的 đọc là biéde, nghĩa là cái khác, thứ khác. Tham chiếu: PDF bài 5, trang 16.
+Lời giải: 还是 đọc là háishi, nghĩa là Hay là. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 216.
 Độ khó: Dễ
-Câu 161. Chọn Hán tự có phiên âm “biéde” và nghĩa “cái khác, thứ khác”.
-A. 喜欢
-B. 芒果
-C. 别
-D. 别的
-Đáp án: D
-Lời giải: 别的 đọc là biéde, nghĩa là cái khác, thứ khác. Tham chiếu: PDF bài 5, trang 16.
-Độ khó: Dễ
-Câu 162. Chọn phiên âm đúng của “别的” với nghĩa “cái khác, thứ khác”.
-A. biéde
-B. píngguǒ
-C. kāfēi
-D. xiǎo bēi
-Đáp án: A
-Lời giải: 别的 đọc là biéde, nghĩa là cái khác, thứ khác. Tham chiếu: PDF bài 5, trang 16.
-Độ khó: Dễ
-Câu 163. Trong bài học, “别” có nghĩa là gì?
-A. thứ nhất
-B. đừng; dùng trong lời ngăn cản
-C. bát; lượng từ đồ đựng trong bát
-D. sủi cảo
-Đáp án: B
-Lời giải: 别 đọc là bié, nghĩa là đừng; dùng trong lời ngăn cản. Tham chiếu: PDF bài 5, trang 16.
-Độ khó: Dễ
-Câu 164. Chọn Hán tự có phiên âm “bié” và nghĩa “đừng; dùng trong lời ngăn cản”.
-A. 别
-B. 树
-C. 三
-D. 椰子
-Đáp án: A
-Lời giải: 别 đọc là bié, nghĩa là đừng; dùng trong lời ngăn cản. Tham chiếu: PDF bài 5, trang 16.
-Độ khó: Dễ
-Câu 165. Chọn phiên âm đúng của “别” với nghĩa “đừng; dùng trong lời ngăn cản”.
-A. mántou
-B. mángguǒ
-C. wǎn
-D. bié
-Đáp án: D
-Lời giải: 别 đọc là bié, nghĩa là đừng; dùng trong lời ngăn cản. Tham chiếu: PDF bài 5, trang 16.
-Độ khó: Dễ
-Câu 166. Trong bài học, “水果” có nghĩa là gì?
-A. hoa quả, trái cây
-B. thứ nhất
-C. tờ, chiếc; lượng từ vật có bề mặt phẳng
-D. quà tặng
-Đáp án: A
-Lời giải: 水果 đọc là shuǐguǒ, nghĩa là hoa quả, trái cây. Tham chiếu: PDF bài 5, trang 17.
-Độ khó: Dễ
-Câu 167. Chọn Hán tự có phiên âm “shuǐguǒ” và nghĩa “hoa quả, trái cây”.
-A. 吃
-B. 米饭
-C. 牛奶
-D. 水果
-Đáp án: D
-Lời giải: 水果 đọc là shuǐguǒ, nghĩa là hoa quả, trái cây. Tham chiếu: PDF bài 5, trang 17.
-Độ khó: Dễ
-Câu 168. Chọn phiên âm đúng của “水果” với nghĩa “hoa quả, trái cây”.
-A. shuǐguǒ
-B. qítā
-C. yǒu zhì zhě shì jìng chéng
-D. yēzi
-Đáp án: A
-Lời giải: 水果 đọc là shuǐguǒ, nghĩa là hoa quả, trái cây. Tham chiếu: PDF bài 5, trang 17.
-Độ khó: Dễ
-Câu 169. Trong bài học, “种” có nghĩa là gì?
-A. cái khác, thứ khác
-B. loại; lượng từ chỉ chủng loại
-C. cốc lớn
-D. cà phê
-Đáp án: B
-Lời giải: 种 đọc là zhǒng, nghĩa là loại; lượng từ chỉ chủng loại. Tham chiếu: PDF bài 5, trang 17.
-Độ khó: Dễ
-Câu 170. Chọn Hán tự có phiên âm “zhǒng” và nghĩa “loại; lượng từ chỉ chủng loại”.
-A. 种
-B. 馒头
-C. 水果
-D. 橘子
-Đáp án: A
-Lời giải: 种 đọc là zhǒng, nghĩa là loại; lượng từ chỉ chủng loại. Tham chiếu: PDF bài 5, trang 17.
-Độ khó: Dễ
-Câu 171. Chọn phiên âm đúng của “种” với nghĩa “loại; lượng từ chỉ chủng loại”.
-A. yìdiǎnr
-B. bāozi
-C. mǐfàn
-D. zhǒng
-Đáp án: D
-Lời giải: 种 đọc là zhǒng, nghĩa là loại; lượng từ chỉ chủng loại. Tham chiếu: PDF bài 5, trang 17.
-Độ khó: Dễ
-Câu 172. Trong bài học, “种” có nghĩa là gì?
-A. trồng
-B. sủi cảo
-C. uống
-D. du lịch
-Đáp án: A
-Lời giải: 种 đọc là zhòng, nghĩa là trồng. Tham chiếu: PDF bài 5, trang 17.
-Độ khó: Dễ
-Câu 173. Chọn Hán tự có phiên âm “zhòng” và nghĩa “trồng”.
-A. 种
-B. 饺子
-C. 礼物
-D. 辣
-Đáp án: A
-Lời giải: 种 đọc là zhòng, nghĩa là trồng. Tham chiếu: PDF bài 5, trang 17.
-Độ khó: Dễ
-Câu 174. Chọn phiên âm đúng của “种” với nghĩa “trồng”.
-A. shíliu
-B. zhòng
-C. hái
-D. qīngcài
-Đáp án: B
-Lời giải: 种 đọc là zhòng, nghĩa là trồng. Tham chiếu: PDF bài 5, trang 17.
-Độ khó: Dễ
-Câu 175. Trong bài học, “树” có nghĩa là gì?
-A. cây
-B. dân lấy cái ăn làm đầu
-C. quán ăn
-D. quần áo
-Đáp án: A
-Lời giải: 树 đọc là shù, nghĩa là cây. Tham chiếu: PDF bài 5, trang 17.
-Độ khó: Dễ
-Câu 176. Chọn Hán tự có phiên âm “shù” và nghĩa “cây”.
-A. 泡茶
-B. 件
-C. 树
-D. 饭店
-Đáp án: C
-Lời giải: 树 đọc là shù, nghĩa là cây. Tham chiếu: PDF bài 5, trang 17.
-Độ khó: Dễ
-Câu 177. Chọn phiên âm đúng của “树” với nghĩa “cây”.
-A. bōluómì
-B. biéde
-C. bēi
-D. shù
-Đáp án: D
-Lời giải: 树 đọc là shù, nghĩa là cây. Tham chiếu: PDF bài 5, trang 17.
-Độ khó: Dễ
-Câu 178. Trong bài học, “苹果” có nghĩa là gì?
-A. ngọt
-B. táo
-C. kilôgam, bằng 1000 gam
-D. nhà hàng; khách sạn tùy ngữ cảnh
-Đáp án: B
-Lời giải: 苹果 đọc là píngguǒ, nghĩa là táo. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 179. Chọn Hán tự có phiên âm “píngguǒ” và nghĩa “táo”.
-A. 好吃
-B. 苹果
-C. 售货员
-D. 番石榴
-Đáp án: B
-Lời giải: 苹果 đọc là píngguǒ, nghĩa là táo. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 180. Chọn phiên âm đúng của “苹果” với nghĩa “táo”.
-A. fèn
-B. mántou
-C. píngguǒ
-D. cài
-Đáp án: C
-Lời giải: 苹果 đọc là píngguǒ, nghĩa là táo. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 181. Trong bài học, “芒果” có nghĩa là gì?
-A. uống
-B. quyển; lượng từ sách
-C. xoài
-D. vị; lượng từ kính trọng cho người
-Đáp án: C
-Lời giải: 芒果 đọc là mángguǒ, nghĩa là xoài. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 182. Chọn Hán tự có phiên âm “mángguǒ” và nghĩa “xoài”.
-A. 辣
-B. 售货员
-C. 有点儿
-D. 芒果
-Đáp án: D
-Lời giải: 芒果 đọc là mángguǒ, nghĩa là xoài. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 183. Chọn phiên âm đúng của “芒果” với nghĩa “xoài”.
-A. běn
-B. jǐ
-C. bié
-D. mángguǒ
-Đáp án: D
-Lời giải: 芒果 đọc là mángguǒ, nghĩa là xoài. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 184. Trong bài học, “香蕉” có nghĩa là gì?
-A. du lịch
-B. chuối
-C. con, trẻ con
-D. nhanh, sắp
-Đáp án: B
-Lời giải: 香蕉 đọc là xiāngjiāo, nghĩa là chuối. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 185. Chọn Hán tự có phiên âm “xiāngjiāo” và nghĩa “chuối”.
-A. 香蕉
-B. 别
-C. 幅
-D. 咖啡
-Đáp án: A
-Lời giải: 香蕉 đọc là xiāngjiāo, nghĩa là chuối. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 186. Chọn phiên âm đúng của “香蕉” với nghĩa “chuối”.
-A. màn
-B. xiāngjiāo
-C. jiǎozi
-D. kuài
-Đáp án: B
-Lời giải: 香蕉 đọc là xiāngjiāo, nghĩa là chuối. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 187. Trong bài học, “椰子” có nghĩa là gì?
-A. dừa
-B. người; lượng từ đếm thành viên gia đình
-C. vị; lượng từ kính trọng cho người
-D. quán ăn
-Đáp án: A
-Lời giải: 椰子 đọc là yēzi, nghĩa là dừa. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 188. Chọn Hán tự có phiên âm “yēzi” và nghĩa “dừa”.
-A. 椰子
-B. 份
-C. 想
+Câu 30. Chọn Hán tự có phiên âm “háishi” và nghĩa “Hay là”.
+A. 还是
+B. 块
+C. 碗
 D. 一共
 Đáp án: A
-Lời giải: 椰子 đọc là yēzi, nghĩa là dừa. Tham chiếu: PDF bài 5, trang 18.
+Lời giải: 还是 đọc là háishi, nghĩa là Hay là. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 216.
 Độ khó: Dễ
-Câu 189. Chọn phiên âm đúng của “椰子” với nghĩa “dừa”.
-A. shíliu
-B. tián
-C. yēzi
-D. jǐ
-Đáp án: C
-Lời giải: 椰子 đọc là yēzi, nghĩa là dừa. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 190. Trong bài học, “番石榴” có nghĩa là gì?
-A. còn, thêm, vẫn
-B. pha trà
-C. nhớ, ghi nhớ
-D. ổi
+Câu 31. Trong bài học, “碗” có nghĩa là gì?
+A. Ăn
+B. Cân Trung Quốc (500 g)
+C. Lựu
+D. Bát
 Đáp án: D
-Lời giải: 番石榴 đọc là fānshíliu, nghĩa là ổi. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 191. Chọn Hán tự có phiên âm “fānshíliu” và nghĩa “ổi”.
-A. 番石榴
-B. 牛奶
-C. 喜欢
-D. 几
-Đáp án: A
-Lời giải: 番石榴 đọc là fānshíliu, nghĩa là ổi. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 192. Chọn phiên âm đúng của “番石榴” với nghĩa “ổi”.
-A. júzi
-B. zhāng
-C. fānshíliu
-D. bēizi
-Đáp án: C
-Lời giải: 番石榴 đọc là fānshíliu, nghĩa là ổi. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 193. Trong bài học, “石榴” có nghĩa là gì?
-A. tổng cộng, tất cả
-B. lựu
-C. quần áo
-D. quán ăn
-Đáp án: B
-Lời giải: 石榴 đọc là shíliu, nghĩa là lựu. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 194. Chọn Hán tự có phiên âm “shíliu” và nghĩa “lựu”.
-A. 菠萝蜜
-B. 椰子
-C. 有志者事竟成
-D. 石榴
-Đáp án: D
-Lời giải: 石榴 đọc là shíliu, nghĩa là lựu. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 195. Chọn phiên âm đúng của “石榴” với nghĩa “lựu”.
-A. chéngzi
-B. shíliu
-C. liǎng
-D. háizi
-Đáp án: B
-Lời giải: 石榴 đọc là shíliu, nghĩa là lựu. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 196. Trong bài học, “榴莲” có nghĩa là gì?
-A. táo
-B. sầu riêng
-C. cốc lớn
-D. cơm trắng
-Đáp án: B
-Lời giải: 榴莲 đọc là liúlián, nghĩa là sầu riêng. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 197. Chọn Hán tự có phiên âm “liúlián” và nghĩa “sầu riêng”.
-A. 辣
-B. 张
-C. 几
-D. 榴莲
-Đáp án: D
-Lời giải: 榴莲 đọc là liúlián, nghĩa là sầu riêng. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 198. Chọn phiên âm đúng của “榴莲” với nghĩa “sầu riêng”.
-A. liúlián
-B. hé
-C. miàn
-D. hē
-Đáp án: A
-Lời giải: 榴莲 đọc là liúlián, nghĩa là sầu riêng. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 199. Trong bài học, “菠萝蜜” có nghĩa là gì?
-A. cà rốt
-B. mít
-C. cay
-D. thích
-Đáp án: B
-Lời giải: 菠萝蜜 đọc là bōluómì, nghĩa là mít. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 200. Chọn Hán tự có phiên âm “bōluómì” và nghĩa “mít”.
-A. 公斤
-B. 菠萝蜜
-C. 还
-D. 米饭
-Đáp án: B
-Lời giải: 菠萝蜜 đọc là bōluómì, nghĩa là mít. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 201. Chọn phiên âm đúng của “菠萝蜜” với nghĩa “mít”.
-A. bōluómì
-B. gè
-C. dì yī
-D. dà bēi
-Đáp án: A
-Lời giải: 菠萝蜜 đọc là bōluómì, nghĩa là mít. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 202. Trong bài học, “菠萝” có nghĩa là gì?
-A. cốc, ly; lượng từ đồ uống
-B. còn, thêm, vẫn
-C. nhanh, sắp
-D. dứa, thơm
-Đáp án: D
-Lời giải: 菠萝 đọc là bōluó, nghĩa là dứa, thơm. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 203. Chọn Hán tự có phiên âm “bōluó” và nghĩa “dứa, thơm”.
-A. 芒果
-B. 石榴
-C. 菠萝
-D. 甜
-Đáp án: C
-Lời giải: 菠萝 đọc là bōluó, nghĩa là dứa, thơm. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 204. Chọn phiên âm đúng của “菠萝” với nghĩa “dứa, thơm”.
-A. lǐwù
-B. duǒ
-C. yígòng
-D. bōluó
-Đáp án: D
-Lời giải: 菠萝 đọc là bōluó, nghĩa là dứa, thơm. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 205. Trong bài học, “西瓜” có nghĩa là gì?
-A. dưa hấu
-B. tổng cộng, tất cả
-C. dứa, thơm
-D. chậm, trễ
-Đáp án: A
-Lời giải: 西瓜 đọc là xīguā, nghĩa là dưa hấu. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 206. Chọn Hán tự có phiên âm “xīguā” và nghĩa “dưa hấu”.
-A. 张
-B. 西瓜
-C. 一共
-D. 真
-Đáp án: B
-Lời giải: 西瓜 đọc là xīguā, nghĩa là dưa hấu. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 207. Chọn phiên âm đúng của “西瓜” với nghĩa “dưa hấu”.
-A. xīguā
-B. fànguǎnr
-C. fàn
-D. nǎichá
-Đáp án: A
-Lời giải: 西瓜 đọc là xīguā, nghĩa là dưa hấu. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 208. Trong bài học, “橙子” có nghĩa là gì?
-A. hay là; nối lựa chọn trong câu hỏi
-B. cam
-C. thịt bò
-D. thích
-Đáp án: B
-Lời giải: 橙子 đọc là chéngzi, nghĩa là cam. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 209. Chọn Hán tự có phiên âm “chéngzi” và nghĩa “cam”.
-A. 有志者事竟成
-B. 石榴
-C. 牛奶
-D. 橙子
-Đáp án: D
-Lời giải: 橙子 đọc là chéngzi, nghĩa là cam. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 210. Chọn phiên âm đúng của “橙子” với nghĩa “cam”.
-A. hǎochī
-B. mǐfàn
-C. chéngzi
-D. kē
-Đáp án: C
-Lời giải: 橙子 đọc là chéngzi, nghĩa là cam. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 211. Trong bài học, “橘子” có nghĩa là gì?
-A. tiền tố chỉ thứ tự
-B. cốc nhỏ
-C. quýt
-D. ba
-Đáp án: C
-Lời giải: 橘子 đọc là júzi, nghĩa là quýt. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 212. Chọn Hán tự có phiên âm “júzi” và nghĩa “quýt”.
-A. 橘子
-B. 卖
-C. 条
-D. 位
-Đáp án: A
-Lời giải: 橘子 đọc là júzi, nghĩa là quýt. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 213. Chọn phiên âm đúng của “橘子” với nghĩa “quýt”.
-A. júzi
-B. mǎi
-C. jǐ
-D. píngguǒ
-Đáp án: A
-Lời giải: 橘子 đọc là júzi, nghĩa là quýt. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 214. Trong bài học, “黄瓜” có nghĩa là gì?
-A. ba
-B. người; lượng từ đếm thành viên gia đình
-C. dưa chuột
-D. cốc nhỏ
-Đáp án: C
-Lời giải: 黄瓜 đọc là huángguā, nghĩa là dưa chuột. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 215. Chọn Hán tự có phiên âm “huángguā” và nghĩa “dưa chuột”.
-A. 份
-B. 黄瓜
-C. 杯子
-D. 新鲜
-Đáp án: B
-Lời giải: 黄瓜 đọc là huángguā, nghĩa là dưa chuột. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 216. Chọn phiên âm đúng của “黄瓜” với nghĩa “dưa chuột”.
-A. hē
-B. bāozi
-C. bēi
-D. huángguā
-Đáp án: D
-Lời giải: 黄瓜 đọc là huángguā, nghĩa là dưa chuột. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 217. Trong bài học, “胡萝卜” có nghĩa là gì?
-A. nhớ, ghi nhớ
-B. trà
-C. quà tặng
-D. cà rốt
-Đáp án: D
-Lời giải: 胡萝卜 đọc là húluóbo, nghĩa là cà rốt. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 218. Chọn Hán tự có phiên âm “húluóbo” và nghĩa “cà rốt”.
-A. 一点儿
-B. 本
-C. 胡萝卜
-D. 菠萝蜜
-Đáp án: C
-Lời giải: 胡萝卜 đọc là húluóbo, nghĩa là cà rốt. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 219. Chọn phiên âm đúng của “胡萝卜” với nghĩa “cà rốt”.
-A. tián
-B. húluóbo
-C. mín yǐ shí wéi tiān
-D. qīngcài
-Đáp án: B
-Lời giải: 胡萝卜 đọc là húluóbo, nghĩa là cà rốt. Tham chiếu: PDF bài 5, trang 18.
-Độ khó: Dễ
-Câu 220. Trong bài học, “两” có nghĩa là gì?
-A. ăn
-B. cơm trắng
-C. hai; thường dùng trước lượng từ
-D. du lịch
-Đáp án: C
-Lời giải: 两 đọc là liǎng, nghĩa là hai; thường dùng trước lượng từ. Tham chiếu: PDF bài 5, trang 20.
-Độ khó: Dễ
-Câu 221. Chọn Hán tự có phiên âm “liǎng” và nghĩa “hai; thường dùng trước lượng từ”.
-A. 有志者事竟成
-B. 橙子
-C. 售货员
-D. 两
-Đáp án: D
-Lời giải: 两 đọc là liǎng, nghĩa là hai; thường dùng trước lượng từ. Tham chiếu: PDF bài 5, trang 20.
-Độ khó: Dễ
-Câu 222. Chọn phiên âm đúng của “两” với nghĩa “hai; thường dùng trước lượng từ”.
-A. là
-B. hái
-C. xīguā
-D. liǎng
-Đáp án: D
-Lời giải: 两 đọc là liǎng, nghĩa là hai; thường dùng trước lượng từ. Tham chiếu: PDF bài 5, trang 20.
-Độ khó: Dễ
-Câu 223. Trong bài học, “三” có nghĩa là gì?
-A. ba
-B. bát; lượng từ đồ đựng trong bát
-C. trà
-D. cân Trung Quốc, bằng 500 gam
-Đáp án: A
-Lời giải: 三 đọc là sān, nghĩa là ba. Tham chiếu: PDF bài 5, trang 21.
-Độ khó: Dễ
-Câu 224. Chọn Hán tự có phiên âm “sān” và nghĩa “ba”.
-A. 牛肉
-B. 榴莲
-C. 三
-D. 杯
-Đáp án: C
-Lời giải: 三 đọc là sān, nghĩa là ba. Tham chiếu: PDF bài 5, trang 21.
-Độ khó: Dễ
-Câu 225. Chọn phiên âm đúng của “三” với nghĩa “ba”.
-A. sān
-B. yǒudiǎnr
-C. kē
-D. tián
-Đáp án: A
-Lời giải: 三 đọc là sān, nghĩa là ba. Tham chiếu: PDF bài 5, trang 21.
-Độ khó: Dễ
-Câu 226. Trong bài học, “张” có nghĩa là gì?
-A. tờ, chiếc; lượng từ vật có bề mặt phẳng
-B. thứ nhất
-C. ngọt
-D. thích
-Đáp án: A
-Lời giải: 张 đọc là zhāng, nghĩa là tờ, chiếc; lượng từ vật có bề mặt phẳng. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 227. Chọn Hán tự có phiên âm “zhāng” và nghĩa “tờ, chiếc; lượng từ vật có bề mặt phẳng”.
-A. 位
-B. 张
-C. 橘子
-D. 杯子
-Đáp án: B
-Lời giải: 张 đọc là zhāng, nghĩa là tờ, chiếc; lượng từ vật có bề mặt phẳng. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 228. Chọn phiên âm đúng của “张” với nghĩa “tờ, chiếc; lượng từ vật có bề mặt phẳng”.
-A. fàn
-B. yǒudiǎnr
-C. duǒ
-D. zhāng
-Đáp án: D
-Lời giải: 张 đọc là zhāng, nghĩa là tờ, chiếc; lượng từ vật có bề mặt phẳng. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 229. Trong bài học, “棵” có nghĩa là gì?
-A. cái khác, thứ khác
-B. cây; lượng từ cho cây
-C. bán
-D. tổng cộng, tất cả
-Đáp án: B
-Lời giải: 棵 đọc là kē, nghĩa là cây; lượng từ cho cây. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 230. Chọn Hán tự có phiên âm “kē” và nghĩa “cây; lượng từ cho cây”.
-A. 别
-B. 棵
-C. 和
-D. 香蕉
-Đáp án: B
-Lời giải: 棵 đọc là kē, nghĩa là cây; lượng từ cho cây. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 231. Chọn phiên âm đúng của “棵” với nghĩa “cây; lượng từ cho cây”.
-A. fānshíliu
-B. kē
-C. hǎochī
-D. júzi
-Đáp án: B
-Lời giải: 棵 đọc là kē, nghĩa là cây; lượng từ cho cây. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 232. Trong bài học, “朵” có nghĩa là gì?
-A. bông, đóa; lượng từ cho hoa
-B. no
-C. ngon, dùng cho đồ uống
-D. ba
-Đáp án: A
-Lời giải: 朵 đọc là duǒ, nghĩa là bông, đóa; lượng từ cho hoa. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 233. Chọn Hán tự có phiên âm “duǒ” và nghĩa “bông, đóa; lượng từ cho hoa”.
-A. 米饭
-B. 朵
-C. 服务员
-D. 慢
-Đáp án: B
-Lời giải: 朵 đọc là duǒ, nghĩa là bông, đóa; lượng từ cho hoa. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 234. Chọn phiên âm đúng của “朵” với nghĩa “bông, đóa; lượng từ cho hoa”.
-A. zhēn
-B. duǒ
-C. bāozi
-D. bēi
-Đáp án: B
-Lời giải: 朵 đọc là duǒ, nghĩa là bông, đóa; lượng từ cho hoa. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 235. Trong bài học, “条” có nghĩa là gì?
-A. bán
-B. con, chiếc; lượng từ vật dài
-C. người; lượng từ đếm thành viên gia đình
-D. sữa bò
-Đáp án: B
-Lời giải: 条 đọc là tiáo, nghĩa là con, chiếc; lượng từ vật dài. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 236. Chọn Hán tự có phiên âm “tiáo” và nghĩa “con, chiếc; lượng từ vật dài”.
-A. 想
-B. 胡萝卜
-C. 条
-D. 衣服
-Đáp án: C
-Lời giải: 条 đọc là tiáo, nghĩa là con, chiếc; lượng từ vật dài. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 237. Chọn phiên âm đúng của “条” với nghĩa “con, chiếc; lượng từ vật dài”.
-A. júzi
-B. tiáo
-C. yǒu zhì zhě shì jìng chéng
-D. háishi
-Đáp án: B
-Lời giải: 条 đọc là tiáo, nghĩa là con, chiếc; lượng từ vật dài. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 238. Trong bài học, “只” có nghĩa là gì?
-A. con; lượng từ cho nhiều loài vật
-B. bán
-C. tờ, chiếc; lượng từ vật có bề mặt phẳng
-D. hay là; nối lựa chọn trong câu hỏi
-Đáp án: A
-Lời giải: 只 đọc là zhī, nghĩa là con; lượng từ cho nhiều loài vật. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 239. Chọn Hán tự có phiên âm “zhī” và nghĩa “con; lượng từ cho nhiều loài vật”.
-A. 胡萝卜
-B. 别
-C. 吃
-D. 只
-Đáp án: D
-Lời giải: 只 đọc là zhī, nghĩa là con; lượng từ cho nhiều loài vật. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 240. Chọn phiên âm đúng của “只” với nghĩa “con; lượng từ cho nhiều loài vật”.
-A. tiáo
-B. pào chá
-C. hǎochī
-D. zhī
-Đáp án: D
-Lời giải: 只 đọc là zhī, nghĩa là con; lượng từ cho nhiều loài vật. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 241. Trong bài học, “幅” có nghĩa là gì?
-A. bức; lượng từ cho tranh
-B. no
-C. quýt
-D. dứa, thơm
-Đáp án: A
-Lời giải: 幅 đọc là fú, nghĩa là bức; lượng từ cho tranh. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 242. Chọn Hán tự có phiên âm “fú” và nghĩa “bức; lượng từ cho tranh”.
-A. 幅
-B. 杯
-C. 好喝
-D. 本
-Đáp án: A
-Lời giải: 幅 đọc là fú, nghĩa là bức; lượng từ cho tranh. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 243. Chọn phiên âm đúng của “幅” với nghĩa “bức; lượng từ cho tranh”.
-A. tián
-B. bōluó
-C. shòuhuòyuán
-D. fú
-Đáp án: D
-Lời giải: 幅 đọc là fú, nghĩa là bức; lượng từ cho tranh. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 244. Trong bài học, “面” có nghĩa là gì?
-A. dưa hấu
-B. mặt; lượng từ cho vật có mặt phẳng như gương
-C. lựu
-D. thật, thật là
-Đáp án: B
-Lời giải: 面 đọc là miàn, nghĩa là mặt; lượng từ cho vật có mặt phẳng như gương. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 245. Chọn Hán tự có phiên âm “miàn” và nghĩa “mặt; lượng từ cho vật có mặt phẳng như gương”.
-A. 衣服
-B. 面
-C. 第
-D. 孩子
-Đáp án: B
-Lời giải: 面 đọc là miàn, nghĩa là mặt; lượng từ cho vật có mặt phẳng như gương. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 246. Chọn phiên âm đúng của “面” với nghĩa “mặt; lượng từ cho vật có mặt phẳng như gương”.
-A. yào
-B. miàn
-C. běn
-D. bēi
-Đáp án: B
-Lời giải: 面 đọc là miàn, nghĩa là mặt; lượng từ cho vật có mặt phẳng như gương. Tham chiếu: PDF bài 5, trang 23.
-Độ khó: Dễ
-Câu 247. Trong bài học, “大杯” có nghĩa là gì?
-A. cơm, bữa ăn
-B. táo
-C. cốc lớn
-D. cây; lượng từ cho cây
-Đáp án: C
-Lời giải: 大杯 đọc là dà bēi, nghĩa là cốc lớn. Tham chiếu: PDF bài 5, trang 24.
-Độ khó: Dễ
-Câu 248. Chọn Hán tự có phiên âm “dà bēi” và nghĩa “cốc lớn”.
-A. 快
-B. 别
-C. 喝
-D. 大杯
-Đáp án: D
-Lời giải: 大杯 đọc là dà bēi, nghĩa là cốc lớn. Tham chiếu: PDF bài 5, trang 24.
-Độ khó: Dễ
-Câu 249. Chọn phiên âm đúng của “大杯” với nghĩa “cốc lớn”.
-A. dà bēi
-B. fèn
-C. yǒu zhì zhě shì jìng chéng
-D. shòuhuòyuán
-Đáp án: A
-Lời giải: 大杯 đọc là dà bēi, nghĩa là cốc lớn. Tham chiếu: PDF bài 5, trang 24.
-Độ khó: Dễ
-Câu 250. Trong bài học, “小杯” có nghĩa là gì?
-A. quà tặng
-B. táo
-C. cà phê
-D. cốc nhỏ
-Đáp án: D
-Lời giải: 小杯 đọc là xiǎo bēi, nghĩa là cốc nhỏ. Tham chiếu: PDF bài 5, trang 24.
-Độ khó: Dễ
-Câu 251. Chọn Hán tự có phiên âm “xiǎo bēi” và nghĩa “cốc nhỏ”.
-A. 香蕉
-B. 小杯
-C. 真
-D. 米饭
-Đáp án: B
-Lời giải: 小杯 đọc là xiǎo bēi, nghĩa là cốc nhỏ. Tham chiếu: PDF bài 5, trang 24.
-Độ khó: Dễ
-Câu 252. Chọn phiên âm đúng của “小杯” với nghĩa “cốc nhỏ”.
-A. kuài
-B. zhēn
-C. xiǎo bēi
-D. fānshíliu
-Đáp án: C
-Lời giải: 小杯 đọc là xiǎo bēi, nghĩa là cốc nhỏ. Tham chiếu: PDF bài 5, trang 24.
-Độ khó: Dễ
-Câu 253. Trong bài học, “旅游” có nghĩa là gì?
-A. cốc nhỏ
-B. cơm, bữa ăn
-C. du lịch
-D. bánh màn thầu
-Đáp án: C
-Lời giải: 旅游 đọc là lǚyóu, nghĩa là du lịch. Tham chiếu: PDF bài 5, trang 25.
-Độ khó: Dễ
-Câu 254. Chọn Hán tự có phiên âm “lǚyóu” và nghĩa “du lịch”.
-A. 石榴
-B. 买
-C. 棵
-D. 旅游
-Đáp án: D
-Lời giải: 旅游 đọc là lǚyóu, nghĩa là du lịch. Tham chiếu: PDF bài 5, trang 25.
-Độ khó: Dễ
-Câu 255. Chọn phiên âm đúng của “旅游” với nghĩa “du lịch”.
-A. hē
-B. júzi
-C. xīnxiān
-D. lǚyóu
-Đáp án: D
-Lời giải: 旅游 đọc là lǚyóu, nghĩa là du lịch. Tham chiếu: PDF bài 5, trang 25.
-Độ khó: Dễ
-Câu 256. Trong bài học, “礼物” có nghĩa là gì?
-A. và
-B. hoa quả, trái cây
-C. quà tặng
-D. muốn, cần, phải
-Đáp án: C
-Lời giải: 礼物 đọc là lǐwù, nghĩa là quà tặng. Tham chiếu: PDF bài 5, trang 27.
-Độ khó: Dễ
-Câu 257. Chọn Hán tự có phiên âm “lǐwù” và nghĩa “quà tặng”.
-A. 和
-B. 礼物
-C. 售货员
-D. 件
-Đáp án: B
-Lời giải: 礼物 đọc là lǐwù, nghĩa là quà tặng. Tham chiếu: PDF bài 5, trang 27.
-Độ khó: Dễ
-Câu 258. Chọn phiên âm đúng của “礼物” với nghĩa “quà tặng”.
-A. lǚyóu
-B. lǐwù
-C. kāfēi
-D. chéngzi
-Đáp án: B
-Lời giải: 礼物 đọc là lǐwù, nghĩa là quà tặng. Tham chiếu: PDF bài 5, trang 27.
-Độ khó: Dễ
-Câu 259. Trong bài học, “服务员” có nghĩa là gì?
-A. quán ăn
-B. táo
-C. nhân viên phục vụ
-D. xe đến trước núi ắt có đường; rồi sẽ có cách
-Đáp án: C
-Lời giải: 服务员 đọc là fúwùyuán, nghĩa là nhân viên phục vụ. Tham chiếu: PDF bài 5, trang 35.
-Độ khó: Dễ
-Câu 260. Chọn Hán tự có phiên âm “fúwùyuán” và nghĩa “nhân viên phục vụ”.
-A. 菠萝蜜
-B. 几
-C. 菠萝
-D. 服务员
-Đáp án: D
-Lời giải: 服务员 đọc là fúwùyuán, nghĩa là nhân viên phục vụ. Tham chiếu: PDF bài 5, trang 35.
-Độ khó: Dễ
-Câu 261. Chọn phiên âm đúng của “服务员” với nghĩa “nhân viên phục vụ”.
-A. yēzi
-B. fānshíliu
-C. xīguā
-D. fúwùyuán
-Đáp án: D
-Lời giải: 服务员 đọc là fúwùyuán, nghĩa là nhân viên phục vụ. Tham chiếu: PDF bài 5, trang 35.
-Độ khó: Dễ
-Câu 262. Trong bài học, “售货员” có nghĩa là gì?
-A. chua
-B. nhân viên bán hàng
-C. no
-D. rau xanh
-Đáp án: B
-Lời giải: 售货员 đọc là shòuhuòyuán, nghĩa là nhân viên bán hàng. Tham chiếu: PDF bài 5, trang 33.
-Độ khó: Dễ
-Câu 263. Chọn Hán tự có phiên âm “shòuhuòyuán” và nghĩa “nhân viên bán hàng”.
-A. 售货员
-B. 椰子
-C. 衣服
-D. 或者
-Đáp án: A
-Lời giải: 售货员 đọc là shòuhuòyuán, nghĩa là nhân viên bán hàng. Tham chiếu: PDF bài 5, trang 33.
-Độ khó: Dễ
-Câu 264. Chọn phiên âm đúng của “售货员” với nghĩa “nhân viên bán hàng”.
-A. fānshíliu
-B. shòuhuòyuán
-C. mín yǐ shí wéi tiān
-D. kāfēi
-Đáp án: B
-Lời giải: 售货员 đọc là shòuhuòyuán, nghĩa là nhân viên bán hàng. Tham chiếu: PDF bài 5, trang 33.
-Độ khó: Dễ
-Câu 265. Trong bài học, “真” có nghĩa là gì?
-A. mặt; lượng từ cho vật có mặt phẳng như gương
-B. xoài
-C. thật, thật là
-D. tổng cộng, tất cả
-Đáp án: C
-Lời giải: 真 đọc là zhēn, nghĩa là thật, thật là. Tham chiếu: PDF bài 5, trang 34.
-Độ khó: Dễ
-Câu 266. Chọn Hán tự có phiên âm “zhēn” và nghĩa “thật, thật là”.
-A. 真
-B. 石榴
-C. 礼物
-D. 胡萝卜
-Đáp án: A
-Lời giải: 真 đọc là zhēn, nghĩa là thật, thật là. Tham chiếu: PDF bài 5, trang 34.
-Độ khó: Dễ
-Câu 267. Chọn phiên âm đúng của “真” với nghĩa “thật, thật là”.
-A. zhēn
-B. fèn
-C. hái
-D. gè
-Đáp án: A
-Lời giải: 真 đọc là zhēn, nghĩa là thật, thật là. Tham chiếu: PDF bài 5, trang 34.
-Độ khó: Dễ
-Câu 268. Trong bài học, “衣服” có nghĩa là gì?
-A. cái cốc, cái ly
-B. cây
-C. quần áo
-D. ba
-Đáp án: C
-Lời giải: 衣服 đọc là yīfu, nghĩa là quần áo. Tham chiếu: PDF bài 5, trang 38.
-Độ khó: Dễ
-Câu 269. Chọn Hán tự có phiên âm “yīfu” và nghĩa “quần áo”.
-A. 快
-B. 苹果
-C. 衣服
-D. 其他
-Đáp án: C
-Lời giải: 衣服 đọc là yīfu, nghĩa là quần áo. Tham chiếu: PDF bài 5, trang 38.
-Độ khó: Dễ
-Câu 270. Chọn phiên âm đúng của “衣服” với nghĩa “quần áo”.
-A. duǒ
-B. dì yī
-C. yīfu
-D. shuǐguǒ
-Đáp án: C
-Lời giải: 衣服 đọc là yīfu, nghĩa là quần áo. Tham chiếu: PDF bài 5, trang 38.
-Độ khó: Dễ
-Câu 271. Trong bài học, “件” có nghĩa là gì?
-A. đói
-B. ba
-C. sủi cảo
-D. chiếc; lượng từ cho áo, sự việc
-Đáp án: D
-Lời giải: 件 đọc là jiàn, nghĩa là chiếc; lượng từ cho áo, sự việc. Tham chiếu: PDF bài 5, trang 38.
-Độ khó: Dễ
-Câu 272. Chọn Hán tự có phiên âm “jiàn” và nghĩa “chiếc; lượng từ cho áo, sự việc”.
-A. 旅游
-B. 幅
-C. 件
-D. 石榴
-Đáp án: C
-Lời giải: 件 đọc là jiàn, nghĩa là chiếc; lượng từ cho áo, sự việc. Tham chiếu: PDF bài 5, trang 38.
-Độ khó: Dễ
-Câu 273. Chọn phiên âm đúng của “件” với nghĩa “chiếc; lượng từ cho áo, sự việc”.
-A. è
-B. jiàn
-C. chē dào shān qián bì yǒu lù
-D. xiǎo bēi
-Đáp án: B
-Lời giải: 件 đọc là jiàn, nghĩa là chiếc; lượng từ cho áo, sự việc. Tham chiếu: PDF bài 5, trang 38.
-Độ khó: Dễ
-Câu 274. Trong bài học, “民以食为天” có nghĩa là gì?
-A. sữa bò
-B. mua
-C. dân lấy cái ăn làm đầu
-D. lựu
-Đáp án: C
-Lời giải: 民以食为天 đọc là mín yǐ shí wéi tiān, nghĩa là dân lấy cái ăn làm đầu. Tham chiếu: PDF bài 5, trang 39.
-Độ khó: Dễ
-Câu 275. Chọn Hán tự có phiên âm “mín yǐ shí wéi tiān” và nghĩa “dân lấy cái ăn làm đầu”.
-A. 面
-B. 卖
-C. 包子
-D. 民以食为天
-Đáp án: D
-Lời giải: 民以食为天 đọc là mín yǐ shí wéi tiān, nghĩa là dân lấy cái ăn làm đầu. Tham chiếu: PDF bài 5, trang 39.
-Độ khó: Dễ
-Câu 276. Chọn phiên âm đúng của “民以食为天” với nghĩa “dân lấy cái ăn làm đầu”.
-A. fānshíliu
-B. dì yī
-C. mín yǐ shí wéi tiān
-D. kāfēi
-Đáp án: C
-Lời giải: 民以食为天 đọc là mín yǐ shí wéi tiān, nghĩa là dân lấy cái ăn làm đầu. Tham chiếu: PDF bài 5, trang 39.
-Độ khó: Dễ
-Câu 277. Trong bài học, “车到山前必有路” có nghĩa là gì?
-A. xe đến trước núi ắt có đường; rồi sẽ có cách
-B. cái; lượng từ thông dụng
-C. vị; lượng từ kính trọng cho người
-D. lựu
-Đáp án: A
-Lời giải: 车到山前必有路 đọc là chē dào shān qián bì yǒu lù, nghĩa là xe đến trước núi ắt có đường; rồi sẽ có cách. Tham chiếu: PDF bài 5, trang 39.
-Độ khó: Dễ
-Câu 278. Chọn Hán tự có phiên âm “chē dào shān qián bì yǒu lù” và nghĩa “xe đến trước núi ắt có đường; rồi sẽ có cách”.
-A. 杯子
-B. 车到山前必有路
-C. 或者
-D. 斤
-Đáp án: B
-Lời giải: 车到山前必有路 đọc là chē dào shān qián bì yǒu lù, nghĩa là xe đến trước núi ắt có đường; rồi sẽ có cách. Tham chiếu: PDF bài 5, trang 39.
-Độ khó: Dễ
-Câu 279. Chọn phiên âm đúng của “车到山前必有路” với nghĩa “xe đến trước núi ắt có đường; rồi sẽ có cách”.
-A. mántou
-B. chē dào shān qián bì yǒu lù
-C. zhǒng
-D. mài
-Đáp án: B
-Lời giải: 车到山前必有路 đọc là chē dào shān qián bì yǒu lù, nghĩa là xe đến trước núi ắt có đường; rồi sẽ có cách. Tham chiếu: PDF bài 5, trang 39.
-Độ khó: Dễ
-Câu 280. Trong bài học, “有志者事竟成” có nghĩa là gì?
-A. vị; lượng từ kính trọng cho người
-B. rau củ
-C. trà
-D. có chí thì nên
-Đáp án: D
-Lời giải: 有志者事竟成 đọc là yǒu zhì zhě shì jìng chéng, nghĩa là có chí thì nên. Tham chiếu: PDF bài 5, trang 39.
-Độ khó: Dễ
-Câu 281. Chọn Hán tự có phiên âm “yǒu zhì zhě shì jìng chéng” và nghĩa “có chí thì nên”.
-A. 别的
-B. 有志者事竟成
-C. 包子
-D. 服务员
-Đáp án: B
-Lời giải: 有志者事竟成 đọc là yǒu zhì zhě shì jìng chéng, nghĩa là có chí thì nên. Tham chiếu: PDF bài 5, trang 39.
-Độ khó: Dễ
-Câu 282. Chọn phiên âm đúng của “有志者事竟成” với nghĩa “có chí thì nên”.
-A. wèi
-B. dì
-C. yǒu zhì zhě shì jìng chéng
-D. háizi
-Đáp án: C
-Lời giải: 有志者事竟成 đọc là yǒu zhì zhě shì jìng chéng, nghĩa là có chí thì nên. Tham chiếu: PDF bài 5, trang 39.
-Độ khó: Dễ
-Câu 283. Trong bài học, “喜欢” có nghĩa là gì?
-A. bông, đóa; lượng từ cho hoa
-B. quán ăn
-C. thích
-D. sủi cảo
-Đáp án: C
-Lời giải: 喜欢 đọc là xǐhuan, nghĩa là thích. Tham chiếu: PDF bài 5, trang 40.
-Độ khó: Dễ
-Câu 284. Chọn Hán tự có phiên âm “xǐhuan” và nghĩa “thích”.
-A. 其他
-B. 真
-C. 喜欢
-D. 大杯
-Đáp án: C
-Lời giải: 喜欢 đọc là xǐhuan, nghĩa là thích. Tham chiếu: PDF bài 5, trang 40.
-Độ khó: Dễ
-Câu 285. Chọn phiên âm đúng của “喜欢” với nghĩa “thích”.
-A. huòzhě
-B. zhēn
-C. xǐhuan
-D. sān
-Đáp án: C
-Lời giải: 喜欢 đọc là xǐhuan, nghĩa là thích. Tham chiếu: PDF bài 5, trang 40.
-Độ khó: Dễ
-Câu 286. Trong bài học, “甜” có nghĩa là gì?
-A. chua
-B. nhân viên phục vụ
-C. tổng cộng, tất cả
-D. ngọt
-Đáp án: D
-Lời giải: 甜 đọc là tián, nghĩa là ngọt. Tham chiếu: PDF bài 5, trang 40.
-Độ khó: Dễ
-Câu 287. Chọn Hán tự có phiên âm “tián” và nghĩa “ngọt”.
-A. 甜
-B. 面
-C. 民以食为天
-D. 西瓜
-Đáp án: A
-Lời giải: 甜 đọc là tián, nghĩa là ngọt. Tham chiếu: PDF bài 5, trang 40.
-Độ khó: Dễ
-Câu 288. Chọn phiên âm đúng của “甜” với nghĩa “ngọt”.
-A. shíliu
-B. yīfu
-C. tián
-D. pào chá
-Đáp án: C
-Lời giải: 甜 đọc là tián, nghĩa là ngọt. Tham chiếu: PDF bài 5, trang 40.
-Độ khó: Dễ
-Câu 289. Trong bài học, “辣” có nghĩa là gì?
-A. cốc nhỏ
-B. thứ ba
-C. cay
-D. bánh bao có nhân
-Đáp án: C
-Lời giải: 辣 đọc là là, nghĩa là cay. Tham chiếu: PDF bài 5, trang 40.
-Độ khó: Dễ
-Câu 290. Chọn Hán tự có phiên âm “là” và nghĩa “cay”.
-A. 车到山前必有路
-B. 辣
-C. 酸
-D. 泡茶
-Đáp án: B
-Lời giải: 辣 đọc là là, nghĩa là cay. Tham chiếu: PDF bài 5, trang 40.
-Độ khó: Dễ
-Câu 291. Chọn phiên âm đúng của “辣” với nghĩa “cay”.
-A. jiàn
-B. là
-C. shù
-D. jìde
-Đáp án: B
-Lời giải: 辣 đọc là là, nghĩa là cay. Tham chiếu: PDF bài 5, trang 40.
-Độ khó: Dễ
-Câu 292. Trong bài học, “酸” có nghĩa là gì?
-A. uống
-B. chua
-C. cơm, bữa ăn
-D. cam
-Đáp án: B
-Lời giải: 酸 đọc là suān, nghĩa là chua. Tham chiếu: PDF bài 5, trang 40.
-Độ khó: Dễ
-Câu 293. Chọn Hán tự có phiên âm “suān” và nghĩa “chua”.
-A. 橙子
-B. 橘子
-C. 想
-D. 酸
-Đáp án: D
-Lời giải: 酸 đọc là suān, nghĩa là chua. Tham chiếu: PDF bài 5, trang 40.
-Độ khó: Dễ
-Câu 294. Chọn phiên âm đúng của “酸” với nghĩa “chua”.
-A. suān
-B. niúròu
-C. háizi
-D. zhī
-Đáp án: A
-Lời giải: 酸 đọc là suān, nghĩa là chua. Tham chiếu: PDF bài 5, trang 40.
-Độ khó: Dễ
-Câu 295. Trong bài học, “苦” có nghĩa là gì?
-A. hoa quả, trái cây
-B. đói
-C. nhân viên phục vụ
-D. đắng
-Đáp án: D
-Lời giải: 苦 đọc là kǔ, nghĩa là đắng. Tham chiếu: PDF bài 5, trang 40.
-Độ khó: Dễ
-Câu 296. Chọn Hán tự có phiên âm “kǔ” và nghĩa “đắng”.
-A. 小杯
-B. 新鲜
-C. 苦
-D. 别的
-Đáp án: C
-Lời giải: 苦 đọc là kǔ, nghĩa là đắng. Tham chiếu: PDF bài 5, trang 40.
-Độ khó: Dễ
-Câu 297. Chọn phiên âm đúng của “苦” với nghĩa “đắng”.
-A. liǎng
-B. hǎochī
-C. kǔ
-D. yìdiǎnr
-Đáp án: C
-Lời giải: 苦 đọc là kǔ, nghĩa là đắng. Tham chiếu: PDF bài 5, trang 40.
-Độ khó: Dễ
-Câu 298. Điền lượng từ: 两___米饭。
-A. 棵
-B. 本
+Lời giải: 碗 đọc là wǎn, nghĩa là Bát. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 217.
+Độ khó: Dễ
+Câu 32. Chọn Hán tự có phiên âm “wǎn” và nghĩa “Bát”.
+A. 卖
+B. 只
 C. 碗
-D. 位
+D. 要
 Đáp án: C
-Lời giải: Cơm trong bát dùng lượng từ 碗.
-Độ khó: Vừa
-Câu 299. Điền lượng từ: 三___汉语书。
-A. 口
-B. 杯
-C. 本
+Lời giải: 碗 đọc là wǎn, nghĩa là Bát. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 217.
+Độ khó: Dễ
+Câu 33. Trong bài học, “一共” có nghĩa là gì?
+A. Hai (dùng khi đếm số lượng)
+B. Một bát cơm
+C. Tổng cộng
+D. Bát
+Đáp án: C
+Lời giải: 一共 đọc là yígòng, nghĩa là Tổng cộng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 218.
+Độ khó: Dễ
+Câu 34. Chọn Hán tự có phiên âm “yígòng” và nghĩa “Tổng cộng”.
+A. 包子
+B. 树
+C. 一共
 D. 朵
 Đáp án: C
-Lời giải: Sách dùng lượng từ 本.
-Độ khó: Vừa
-Câu 300. Điền lượng từ: 一___老师。
-A. 位
-B. 碗
-C. 杯
-D. 斤
-Đáp án: A
-Lời giải: 位 là lượng từ kính trọng dành cho người.
-Độ khó: Vừa
-Câu 301. Chọn cách nói “Hai cốc trà”.
-A. 两本茶
-B. 二位茶
-C. 二杯茶
-D. 两杯茶
-Đáp án: D
-Lời giải: Trước lượng từ 杯 thường dùng 两 khi chỉ số lượng hai.
-Độ khó: Vừa
-Câu 302. Điền từ hỏi lựa chọn: 你喝茶___咖啡？
-A. 也的
-B. 或者
-C. 还是
-D. 和的
-Đáp án: C
-Lời giải: Trong câu hỏi lựa chọn trực tiếp, dùng 还是.
-Độ khó: Vừa
-Câu 303. Điền từ: 茶___咖啡都可以。(Trà hoặc cà phê đều được.)
-A. 多少
-B. 或者
+Lời giải: 一共 đọc là yígòng, nghĩa là Tổng cộng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 218.
+Độ khó: Dễ
+Câu 35. Trong bài học, “饿” có nghĩa là gì?
+A. Mấy
+B. Đói
+C. Quán cơm, quán ăn
+D. Bán
+Đáp án: B
+Lời giải: 饿 đọc là è, nghĩa là Đói. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 219.
+Độ khó: Dễ
+Câu 36. Chọn Hán tự có phiên âm “è” và nghĩa “Đói”.
+A. 第
+B. 快
 C. 有点儿
-D. 还是吗
-Đáp án: B
-Lời giải: 或者 nối các lựa chọn trong câu trần thuật.
-Độ khó: Vừa
-Câu 304. Chọn câu “Tôi muốn mua một món quà”.
-A. 我要买一个礼物。
-B. 我想你一个礼物。
-C. 我卖要一个礼物。
-D. 我要一个买礼物的。
-Đáp án: A
-Lời giải: 要 + 买 diễn đạt muốn mua; 一个礼物 là một món quà.
-Độ khó: Vừa
-Câu 305. “我想你。” nghĩa phù hợp là gì?
-A. Tôi không quen bạn.
-B. Tôi nhớ bạn.
-C. Tôi bán bạn.
-D. Tôi gọi bạn ăn.
-Đáp án: B
-Lời giải: 想 đứng trước đại từ chỉ người trong câu này mang nghĩa nhớ.
-Độ khó: Vừa
-Câu 306. Điền từ: 请快___，我很饿。
-A. 或者
-B. 一点儿
-C. 多少
-D. 有点儿
-Đáp án: B
-Lời giải: 快一点儿 là nhanh lên một chút; tính từ + 一点儿.
-Độ khó: Vừa
-Câu 307. Điền từ: 这个菜___辣。
-A. 杯
-B. 个
-C. 一点儿的
-D. 有点儿
+D. 饿
 Đáp án: D
-Lời giải: 有点儿 + tính từ diễn đạt hơi, có chút; thường dùng cho cảm nhận không như mong muốn.
-Độ khó: Vừa
-Câu 308. Trong bài khóa 1, khách gọi bao nhiêu bát cơm?
-A. Một bát
-B. Bốn bát
-C. Hai bát
-D. Ba bát
+Lời giải: 饿 đọc là è, nghĩa là Đói. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 219.
+Độ khó: Dễ
+Câu 37. Trong bài học, “快” có nghĩa là gì?
+A. Rau xanh
+B. Lượng từ cho tờ, vật phẳng
+C. Nhanh
+D. Bát
 Đáp án: C
-Lời giải: Khách nói 两碗米饭.
-Độ khó: Vừa
-Câu 309. Trong bài khóa 1, tổng tiền là bao nhiêu?
-A. 50 tệ
-B. 29 tệ
-C. 18 tệ
-D. 28 tệ
+Lời giải: 快 đọc là kuài, nghĩa là Nhanh. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 220.
+Độ khó: Dễ
+Câu 38. Chọn Hán tự có phiên âm “kuài” và nghĩa “Nhanh”.
+A. 快
+B. 卖
+C. 公斤
+D. 芒果
 Đáp án: A
-Lời giải: Nhân viên trả lời 五十块.
-Độ khó: Vừa
-Câu 310. Trong bài khóa 2, khách chọn trà sữa cốc nào?
-A. Không gọi trà sữa
-B. Cốc lớn
-C. Hai cốc lớn
-D. Cốc nhỏ
-Đáp án: D
-Lời giải: Khách đáp 小杯 khi được hỏi 大杯还是小杯.
-Độ khó: Vừa
-Câu 311. Trong bài khóa 2, khách chọn cà phê cốc nào?
-A. Cốc lớn
-B. Ba cốc nhỏ
-C. Cốc nhỏ
-D. Không gọi cà phê
+Lời giải: 快 đọc là kuài, nghĩa là Nhanh. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 220.
+Độ khó: Dễ
+Câu 39. Trong bài học, “孩子” có nghĩa là gì?
+A. Đứa trẻ
+B. Cà rốt
+C. Hai (dùng khi đếm số lượng)
+D. Táo
 Đáp án: A
-Lời giải: Khách đáp 大杯 khi nhân viên hỏi kích cỡ cà phê.
-Độ khó: Vừa
-Câu 312. Trong bài khóa 2, tổng tiền hai đồ uống là bao nhiêu?
-A. 50 tệ
-B. 28 tệ
-C. 38 tệ
-D. 18 tệ
-Đáp án: B
-Lời giải: Bài khóa ghi 一共二十八块.
-Độ khó: Vừa
-Câu 313. Một 斤 theo đơn vị hiện hành ở Trung Quốc đại lục bằng bao nhiêu?
-A. 50 gam
-B. 1000 gam
-C. 100 gam
-D. 500 gam
+Lời giải: 孩子 đọc là háizi, nghĩa là Đứa trẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 221.
+Độ khó: Dễ
+Câu 40. Chọn Hán tự có phiên âm “háizi” và nghĩa “Đứa trẻ”.
+A. 几
+B. 青菜
+C. 第
+D. 孩子
 Đáp án: D
-Lời giải: 斤 là nửa kilôgam; 公斤 là một kilôgam. Không đồng nhất 斤 với cân Việt Nam.
-Độ khó: Vừa
-Câu 314. Chọn cặp đối nghĩa.
-A. 茶 — 奶茶
-B. 饿 — 饱
-C. 杯 — 碗
-D. 牛肉 — 青菜
+Lời giải: 孩子 đọc là háizi, nghĩa là Đứa trẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 221.
+Độ khó: Dễ
+Câu 41. Trong bài học, “几” có nghĩa là gì?
+A. Ăn
+B. Mấy
+C. Sữa bò
+D. Nhớ
 Đáp án: B
-Lời giải: 饿 là đói, 饱 là no.
-Độ khó: Vừa
-Câu 315. Trong 种水果, nếu 种 nghĩa là “trồng” thì đọc thế nào?
-A. chóng
-B. zhòng
-C. zhōng
-D. zhǒng
+Lời giải: 几 đọc là jǐ, nghĩa là Mấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 222.
+Độ khó: Dễ
+Câu 42. Chọn Hán tự có phiên âm “jǐ” và nghĩa “Mấy”.
+A. 茶
+B. 块
+C. 几
+D. 饿
+Đáp án: C
+Lời giải: 几 đọc là jǐ, nghĩa là Mấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 222.
+Độ khó: Dễ
+Câu 43. Trong bài học, “第” có nghĩa là gì?
+A. Cân Trung Quốc (500 g)
+B. Tiền tố chỉ thứ tự
+C. Bát
+D. Sủi cảo
 Đáp án: B
-Lời giải: 种 đọc zhòng khi là động từ trồng; zhǒng khi nghĩa là loại.
-Độ khó: Vừa
-Câu 316. “有志者事竟成。” tương ứng câu nào?
-A. Thời gian là tiền bạc.
-B. Nước chảy chỗ trũng.
-C. Tái ông mất ngựa.
-D. Có chí thì nên.
+Lời giải: 第 đọc là dì, nghĩa là Tiền tố chỉ thứ tự. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 223.
+Độ khó: Dễ
+Câu 44. Chọn Hán tự có phiên âm “dì” và nghĩa “Tiền tố chỉ thứ tự”.
+A. 一碗米饭
+B. 第
+C. 一杯茶
+D. 饭店
+Đáp án: B
+Lời giải: 第 đọc là dì, nghĩa là Tiền tố chỉ thứ tự. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 223.
+Độ khó: Dễ
+Câu 45. Trong bài học, “别的” có nghĩa là gì?
+A. Cơm, bữa ăn
+B. Táo
+C. Khác
+D. Cà rốt
+Đáp án: C
+Lời giải: 别的 đọc là biéde, nghĩa là Khác. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 224.
+Độ khó: Dễ
+Câu 46. Chọn Hán tự có phiên âm “biéde” và nghĩa “Khác”.
+A. 斤
+B. 芒果
+C. 别的
+D. 牛肉
+Đáp án: C
+Lời giải: 别的 đọc là biéde, nghĩa là Khác. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 224.
+Độ khó: Dễ
+Câu 47. Trong bài học, “其他” có nghĩa là gì?
+A. Quýt
+B. Khác, những cái khác
+C. Một cốc trà
+D. Lượng từ cho vật dài
+Đáp án: B
+Lời giải: 其他 đọc là qítā, nghĩa là Khác, những cái khác. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 225.
+Độ khó: Dễ
+Câu 48. Chọn Hán tự có phiên âm “qítā” và nghĩa “Khác, những cái khác”.
+A. 要
+B. 其他
+C. 条
+D. 公斤
+Đáp án: B
+Lời giải: 其他 đọc là qítā, nghĩa là Khác, những cái khác. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 225.
+Độ khó: Dễ
+Câu 49. Trong bài học, “水果” có nghĩa là gì?
+A. Hoa quả, trái cây
+B. Một cốc trà sữa
+C. Muốn, cần, phải
+D. Nhanh
+Đáp án: A
+Lời giải: 水果 đọc là shuǐguǒ, nghĩa là Hoa quả, trái cây. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 226.
+Độ khó: Dễ
+Câu 50. Chọn Hán tự có phiên âm “shuǐguǒ” và nghĩa “Hoa quả, trái cây”.
+A. 杯
+B. 西瓜
+C. 孩子
+D. 水果
 Đáp án: D
-Lời giải: Câu này khích lệ ý chí và sự kiên trì.
-Độ khó: Vừa
-Câu 317. Chọn từ trái nghĩa với 买.
-A. 卖
-B. 喝
+Lời giải: 水果 đọc là shuǐguǒ, nghĩa là Hoa quả, trái cây. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 226.
+Độ khó: Dễ
+Câu 51. Trong bài học, “种” có nghĩa là gì?
+A. Một cốc trà sữa
+B. Loại
+C. Lượng từ cho miếng, khối
+D. Tiền tố chỉ thứ tự
+Đáp án: B
+Lời giải: 种 đọc là zhǒng, nghĩa là Loại. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 227.
+Độ khó: Dễ
+Câu 52. Chọn Hán tự có phiên âm “zhǒng” và nghĩa “Loại”.
+A. 牛奶
+B. 椰子
+C. 面
+D. 种
+Đáp án: D
+Lời giải: 种 đọc là zhǒng, nghĩa là Loại. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 227.
+Độ khó: Dễ
+Câu 53. Trong bài học, “树” có nghĩa là gì?
+A. Sủi cảo
+B. Sữa bò
+C. Bánh bao
+D. Cây
+Đáp án: D
+Lời giải: 树 đọc là shù, nghĩa là Cây. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 228.
+Độ khó: Dễ
+Câu 54. Chọn Hán tự có phiên âm “shù” và nghĩa “Cây”.
+A. 树
+B. 蔬菜
+C. 朵
+D. 新鲜
+Đáp án: A
+Lời giải: 树 đọc là shù, nghĩa là Cây. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 228.
+Độ khó: Dễ
+Câu 55. Trong bài học, “记得” có nghĩa là gì?
+A. Nhớ
+B. Bánh màn thầu
+C. Xoài
+D. Hai (dùng khi đếm số lượng)
+Đáp án: A
+Lời giải: 记得 đọc là jìde, nghĩa là Nhớ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 232.
+Độ khó: Dễ
+Câu 56. Chọn Hán tự có phiên âm “jìde” và nghĩa “Nhớ”.
+A. 其他
+B. 记得
+C. 孩子
+D. 还是
+Đáp án: B
+Lời giải: 记得 đọc là jìde, nghĩa là Nhớ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 232.
+Độ khó: Dễ
+Câu 57. Trong bài học, “菜” có nghĩa là gì?
+A. Đói
+B. Món ăn, rau
+C. No
+D. Dưa hấu
+Đáp án: B
+Lời giải: 菜 đọc là cài, nghĩa là Món ăn, rau. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 233.
+Độ khó: Dễ
+Câu 58. Chọn Hán tự có phiên âm “cài” và nghĩa “Món ăn, rau”.
+A. 橙子
+B. 番石榴
+C. 菜
+D. 面
+Đáp án: C
+Lời giải: 菜 đọc là cài, nghĩa là Món ăn, rau. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 233.
+Độ khó: Dễ
+Câu 59. Trong bài học, “牛肉” có nghĩa là gì?
+A. Một bát cơm
+B. Sủi cảo
+C. Lượng từ chung
+D. Thịt bò
+Đáp án: D
+Lời giải: 牛肉 đọc là niúròu, nghĩa là Thịt bò. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 234.
+Độ khó: Dễ
+Câu 60. Chọn Hán tự có phiên âm “niúròu” và nghĩa “Thịt bò”.
+A. 饭店
+B. 牛肉
+C. 椰子
+D. 杯
+Đáp án: B
+Lời giải: 牛肉 đọc là niúròu, nghĩa là Thịt bò. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 234.
+Độ khó: Dễ
+Câu 61. Trong bài học, “青菜” có nghĩa là gì?
+A. Chuối
+B. Lượng từ cho sách
+C. Rau xanh
+D. Lượng từ cho động vật
+Đáp án: C
+Lời giải: 青菜 đọc là qīngcài, nghĩa là Rau xanh. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 235.
+Độ khó: Dễ
+Câu 62. Chọn Hán tự có phiên âm “qīngcài” và nghĩa “Rau xanh”.
+A. 青菜
+B. 碗
+C. 饭店
+D. 喝
+Đáp án: A
+Lời giải: 青菜 đọc là qīngcài, nghĩa là Rau xanh. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 235.
+Độ khó: Dễ
+Câu 63. Trong bài học, “蔬菜” có nghĩa là gì?
+A. Chậm
+B. Lượng từ cho cây
+C. Dứa
+D. Rau củ
+Đáp án: D
+Lời giải: 蔬菜 đọc là shūcài, nghĩa là Rau củ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 236.
+Độ khó: Dễ
+Câu 64. Chọn Hán tự có phiên âm “shūcài” và nghĩa “Rau củ”.
+A. 菠萝蜜
+B. 蔬菜
+C. 牛肉
+D. 橙子
+Đáp án: B
+Lời giải: 蔬菜 đọc là shūcài, nghĩa là Rau củ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 236.
+Độ khó: Dễ
+Câu 65. Trong bài học, “新鲜” có nghĩa là gì?
+A. Tươi
+B. Món ăn, rau
+C. Nhớ
+D. Mua
+Đáp án: A
+Lời giải: 新鲜 đọc là xīnxiān, nghĩa là Tươi. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 237.
+Độ khó: Dễ
+Câu 66. Chọn Hán tự có phiên âm “xīnxiān” và nghĩa “Tươi”.
+A. 公斤
+B. 橘子
+C. 茶
+D. 新鲜
+Đáp án: D
+Lời giải: 新鲜 đọc là xīnxiān, nghĩa là Tươi. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 237.
+Độ khó: Dễ
+Câu 67. Trong bài học, “馒头” có nghĩa là gì?
+A. Bánh bao
+B. Dưa hấu
+C. Bánh màn thầu
+D. Xoài
+Đáp án: C
+Lời giải: 馒头 đọc là mántou, nghĩa là Bánh màn thầu. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 238.
+Độ khó: Dễ
+Câu 68. Chọn Hán tự có phiên âm “mántou” và nghĩa “Bánh màn thầu”.
+A. 碗
+B. 馒头
+C. 慢
+D. 新鲜
+Đáp án: B
+Lời giải: 馒头 đọc là mántou, nghĩa là Bánh màn thầu. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 238.
+Độ khó: Dễ
+Câu 69. Trong bài học, “包子” có nghĩa là gì?
+A. Chuối
+B. Một chút
+C. Bánh bao
+D. Khác, những cái khác
+Đáp án: C
+Lời giải: 包子 đọc là bāozi, nghĩa là Bánh bao. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 239.
+Độ khó: Dễ
+Câu 70. Chọn Hán tự có phiên âm “bāozi” và nghĩa “Bánh bao”.
+A. 别的
+B. 斤
+C. 包子
+D. 菠萝
+Đáp án: C
+Lời giải: 包子 đọc là bāozi, nghĩa là Bánh bao. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 239.
+Độ khó: Dễ
+Câu 71. Trong bài học, “饺子” có nghĩa là gì?
+A. Sủi cảo
+B. Bánh bao
+C. Cơm trắng
+D. Một chút
+Đáp án: A
+Lời giải: 饺子 đọc là jiǎozi, nghĩa là Sủi cảo. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 240.
+Độ khó: Dễ
+Câu 72. Chọn Hán tự có phiên âm “jiǎozi” và nghĩa “Sủi cảo”.
+A. 本
+B. 泡茶
+C. 饺子
+D. 一碗米饭
+Đáp án: C
+Lời giải: 饺子 đọc là jiǎozi, nghĩa là Sủi cảo. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 240.
+Độ khó: Dễ
+Câu 73. Trong bài học, “奶茶” có nghĩa là gì?
+A. Sầu riêng
+B. Một cốc trà
+C. Trà sữa
+D. Một cốc trà sữa
+Đáp án: C
+Lời giải: 奶茶 đọc là nǎichá, nghĩa là Trà sữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 241.
+Độ khó: Dễ
+Câu 74. Chọn Hán tự có phiên âm “nǎichá” và nghĩa “Trà sữa”.
+A. 个
+B. 胡萝卜
+C. 奶茶
+D. 有点儿
+Đáp án: C
+Lời giải: 奶茶 đọc là nǎichá, nghĩa là Trà sữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 241.
+Độ khó: Dễ
+Câu 75. Trong bài học, “泡茶” có nghĩa là gì?
+A. Mít
+B. Lượng từ cho vật dài
+C. Tiền tố chỉ thứ tự
+D. Pha trà
+Đáp án: D
+Lời giải: 泡茶 đọc là pào chá, nghĩa là Pha trà. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 242.
+Độ khó: Dễ
+Câu 76. Chọn Hán tự có phiên âm “pào chá” và nghĩa “Pha trà”.
+A. 要
+B. 泡茶
+C. 饭店
+D. 第
+Đáp án: B
+Lời giải: 泡茶 đọc là pào chá, nghĩa là Pha trà. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 242.
+Độ khó: Dễ
+Câu 77. Trong bài học, “饭” có nghĩa là gì?
+A. Một cốc trà
+B. Sữa bò
+C. Hoa quả, trái cây
+D. Cơm, bữa ăn
+Đáp án: D
+Lời giải: 饭 đọc là fàn, nghĩa là Cơm, bữa ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 243.
+Độ khó: Dễ
+Câu 78. Chọn Hán tự có phiên âm “fàn” và nghĩa “Cơm, bữa ăn”.
+A. 杯
+B. 牛肉
+C. 饭
+D. 一杯奶茶
+Đáp án: C
+Lời giải: 饭 đọc là fàn, nghĩa là Cơm, bữa ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 243.
+Độ khó: Dễ
+Câu 79. Trong bài học, “饭馆” có nghĩa là gì?
+A. Lượng từ cho động vật
+B. Rau củ
+C. Một bát cơm
+D. Quán cơm, quán ăn
+Đáp án: D
+Lời giải: 饭馆 đọc là fànguǎn, nghĩa là Quán cơm, quán ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 244.
+Độ khó: Dễ
+Câu 80. Chọn Hán tự có phiên âm “fànguǎn” và nghĩa “Quán cơm, quán ăn”.
+A. 饭馆
+B. 有点儿
+C. 面
+D. 第
+Đáp án: A
+Lời giải: 饭馆 đọc là fànguǎn, nghĩa là Quán cơm, quán ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 244.
+Độ khó: Dễ
+Câu 81. Trong bài học, “饭店” có nghĩa là gì?
+A. Hay là
+B. Khác, những cái khác
+C. Ăn
+D. Nhà hàng
+Đáp án: D
+Lời giải: 饭店 đọc là fàndiàn, nghĩa là Nhà hàng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 245.
+Độ khó: Dễ
+Câu 82. Chọn Hán tự có phiên âm “fàndiàn” và nghĩa “Nhà hàng”.
+A. 包子
+B. 青菜
+C. 饭店
+D. 新鲜
+Đáp án: C
+Lời giải: 饭店 đọc là fàndiàn, nghĩa là Nhà hàng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 245.
+Độ khó: Dễ
+Câu 83. Trong bài học, “公斤” có nghĩa là gì?
+A. Quýt
+B. Đứa trẻ
+C. Chậm
+D. Kilôgam
+Đáp án: D
+Lời giải: 公斤 đọc là gōngjīn, nghĩa là Kilôgam. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 246.
+Độ khó: Dễ
+Câu 84. Chọn Hán tự có phiên âm “gōngjīn” và nghĩa “Kilôgam”.
+A. 一共
+B. 条
+C. 蔬菜
+D. 公斤
+Đáp án: D
+Lời giải: 公斤 đọc là gōngjīn, nghĩa là Kilôgam. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 246.
+Độ khó: Dễ
+Câu 85. Trong bài học, “饱” có nghĩa là gì?
+A. Lựu
+B. Thịt bò
+C. Đói
+D. No
+Đáp án: D
+Lời giải: 饱 đọc là bǎo, nghĩa là No. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 247.
+Độ khó: Dễ
+Câu 86. Chọn Hán tự có phiên âm “bǎo” và nghĩa “No”.
+A. 饭
+B. 张
+C. 饱
+D. 蔬菜
+Đáp án: C
+Lời giải: 饱 đọc là bǎo, nghĩa là No. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 247.
+Độ khó: Dễ
+Câu 87. Trong bài học, “慢” có nghĩa là gì?
+A. Loại
+B. Bánh bao
+C. Chậm
+D. Dưa hấu
+Đáp án: C
+Lời giải: 慢 đọc là màn, nghĩa là Chậm. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 248.
+Độ khó: Dễ
+Câu 88. Chọn Hán tự có phiên âm “màn” và nghĩa “Chậm”.
+A. 饭店
+B. 想
+C. 慢
+D. 饺子
+Đáp án: C
+Lời giải: 慢 đọc là màn, nghĩa là Chậm. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 248.
+Độ khó: Dễ
+Câu 89. Trong bài học, “有点儿” có nghĩa là gì?
+A. Lượng từ cho bông hoa
+B. Hơi, có một chút
+C. Trà sữa
+D. Táo
+Đáp án: B
+Lời giải: 有点儿 đọc là yǒudiǎnr, nghĩa là Hơi, có một chút. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 249.
+Độ khó: Dễ
+Câu 90. Chọn Hán tự có phiên âm “yǒudiǎnr” và nghĩa “Hơi, có một chút”.
+A. 苹果
+B. 饺子
+C. 想
+D. 有点儿
+Đáp án: D
+Lời giải: 有点儿 đọc là yǒudiǎnr, nghĩa là Hơi, có một chút. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 249.
+Độ khó: Dễ
+Câu 91. Trong bài học, “两” có nghĩa là gì?
+A. Dưa chuột
+B. Rau củ
+C. Nhanh
+D. Hai (dùng khi đếm số lượng)
+Đáp án: D
+Lời giải: 两 đọc là liǎng, nghĩa là Hai (dùng khi đếm số lượng). Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 250.
+Độ khó: Dễ
+Câu 92. Chọn Hán tự có phiên âm “liǎng” và nghĩa “Hai (dùng khi đếm số lượng)”.
+A. 买
+B. 两
+C. 棵
+D. 牛肉
+Đáp án: B
+Lời giải: 两 đọc là liǎng, nghĩa là Hai (dùng khi đếm số lượng). Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 250.
+Độ khó: Dễ
+Câu 93. Trong bài học, “一碗米饭” có nghĩa là gì?
+A. Muốn, nhớ, nghĩ
+B. Mua
+C. Một bát cơm
+D. Bánh màn thầu
+Đáp án: C
+Lời giải: 一碗米饭 đọc là yì wǎn mǐfàn, nghĩa là Một bát cơm. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 251.
+Độ khó: Dễ
+Câu 94. Chọn Hán tự có phiên âm “yì wǎn mǐfàn” và nghĩa “Một bát cơm”.
+A. 菠萝蜜
+B. 一碗米饭
+C. 菜
+D. 榴莲
+Đáp án: B
+Lời giải: 一碗米饭 đọc là yì wǎn mǐfàn, nghĩa là Một bát cơm. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 251.
+Độ khó: Dễ
+Câu 95. Trong bài học, “一杯茶” có nghĩa là gì?
+A. Dưa chuột
+B. Đói
+C. Một cốc trà
+D. Bán
+Đáp án: C
+Lời giải: 一杯茶 đọc là yì bēi chá, nghĩa là Một cốc trà. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 252.
+Độ khó: Dễ
+Câu 96. Chọn Hán tự có phiên âm “yì bēi chá” và nghĩa “Một cốc trà”.
+A. 第
+B. 胡萝卜
+C. 一杯茶
+D. 茶
+Đáp án: C
+Lời giải: 一杯茶 đọc là yì bēi chá, nghĩa là Một cốc trà. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 252.
+Độ khó: Dễ
+Câu 97. Trong bài học, “一杯奶茶” có nghĩa là gì?
+A. Hai (dùng khi đếm số lượng)
+B. Bán
+C. Một cốc trà sữa
+D. Mít
+Đáp án: C
+Lời giải: 一杯奶茶 đọc là yì bēi nǎichá, nghĩa là Một cốc trà sữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 253.
+Độ khó: Dễ
+Câu 98. Chọn Hán tự có phiên âm “yì bēi nǎichá” và nghĩa “Một cốc trà sữa”.
+A. 想
+B. 只
+C. 公斤
+D. 一杯奶茶
+Đáp án: D
+Lời giải: 一杯奶茶 đọc là yì bēi nǎichá, nghĩa là Một cốc trà sữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 253.
+Độ khó: Dễ
+Câu 99. Trong bài học, “苹果” có nghĩa là gì?
+A. Cân Trung Quốc (500 g)
+B. Cà rốt
+C. Khác
+D. Táo
+Đáp án: D
+Lời giải: 苹果 đọc là píngguǒ, nghĩa là Táo. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 257.
+Độ khó: Dễ
+Câu 100. Chọn Hán tự có phiên âm “píngguǒ” và nghĩa “Táo”.
+A. 苹果
+B. 棵
+C. 饭馆
+D. 菜
+Đáp án: A
+Lời giải: 苹果 đọc là píngguǒ, nghĩa là Táo. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 257.
+Độ khó: Dễ
+Câu 101. Trong bài học, “芒果” có nghĩa là gì?
+A. Bánh màn thầu
+B. Xoài
+C. Lượng từ cho vật dài
+D. No
+Đáp án: B
+Lời giải: 芒果 đọc là mángguǒ, nghĩa là Xoài. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 258.
+Độ khó: Dễ
+Câu 102. Chọn Hán tự có phiên âm “mángguǒ” và nghĩa “Xoài”.
+A. 芒果
+B. 馒头
+C. 公斤
+D. 条
+Đáp án: A
+Lời giải: 芒果 đọc là mángguǒ, nghĩa là Xoài. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 258.
+Độ khó: Dễ
+Câu 103. Trong bài học, “香蕉” có nghĩa là gì?
+A. Dứa
+B. Sủi cảo
+C. Chuối
+D. Một bát cơm
+Đáp án: C
+Lời giải: 香蕉 đọc là xiāngjiāo, nghĩa là Chuối. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 259.
+Độ khó: Dễ
+Câu 104. Chọn Hán tự có phiên âm “xiāngjiāo” và nghĩa “Chuối”.
+A. 香蕉
+B. 番石榴
+C. 个
+D. 饱
+Đáp án: A
+Lời giải: 香蕉 đọc là xiāngjiāo, nghĩa là Chuối. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 259.
+Độ khó: Dễ
+Câu 105. Trong bài học, “椰子” có nghĩa là gì?
+A. Một cốc trà
+B. Dừa
+C. Một chút
+D. Mua
+Đáp án: B
+Lời giải: 椰子 đọc là yēzi, nghĩa là Dừa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 260.
+Độ khó: Dễ
+Câu 106. Chọn Hán tự có phiên âm “yēzi” và nghĩa “Dừa”.
+A. 吃
+B. 椰子
+C. 条
+D. 树
+Đáp án: B
+Lời giải: 椰子 đọc là yēzi, nghĩa là Dừa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 260.
+Độ khó: Dễ
+Câu 107. Trong bài học, “番石榴” có nghĩa là gì?
+A. Thịt bò
+B. Ổi
+C. Hay là
+D. Khác
+Đáp án: B
+Lời giải: 番石榴 đọc là fānshíliu, nghĩa là Ổi. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 261.
+Độ khó: Dễ
+Câu 108. Chọn Hán tự có phiên âm “fānshíliu” và nghĩa “Ổi”.
+A. 个
+B. 包子
+C. 番石榴
+D. 树
+Đáp án: C
+Lời giải: 番石榴 đọc là fānshíliu, nghĩa là Ổi. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 261.
+Độ khó: Dễ
+Câu 109. Trong bài học, “石榴” có nghĩa là gì?
+A. Lượng từ chung
+B. Lựu
+C. Cái cốc
+D. Lượng từ cho tờ, vật phẳng
+Đáp án: B
+Lời giải: 石榴 đọc là shíliu, nghĩa là Lựu. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 262.
+Độ khó: Dễ
+Câu 110. Chọn Hán tự có phiên âm “shíliu” và nghĩa “Lựu”.
+A. 石榴
+B. 斤
+C. 一点儿
+D. 水果
+Đáp án: A
+Lời giải: 石榴 đọc là shíliu, nghĩa là Lựu. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 262.
+Độ khó: Dễ
+Câu 111. Trong bài học, “榴莲” có nghĩa là gì?
+A. Hay là
+B. Ăn
+C. Thịt bò
+D. Sầu riêng
+Đáp án: D
+Lời giải: 榴莲 đọc là liúlián, nghĩa là Sầu riêng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 263.
+Độ khó: Dễ
+Câu 112. Chọn Hán tự có phiên âm “liúlián” và nghĩa “Sầu riêng”.
+A. 榴莲
+B. 香蕉
 C. 吃
-D. 想
+D. 别的
 Đáp án: A
-Lời giải: 买 mǎi là mua; 卖 mài là bán, khác thanh điệu.
+Lời giải: 榴莲 đọc là liúlián, nghĩa là Sầu riêng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 263.
+Độ khó: Dễ
+Câu 113. Trong bài học, “菠萝蜜” có nghĩa là gì?
+A. Lựu
+B. Mít
+C. Trà
+D. Khác, những cái khác
+Đáp án: B
+Lời giải: 菠萝蜜 đọc là bōluómì, nghĩa là Mít. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 264.
+Độ khó: Dễ
+Câu 114. Chọn Hán tự có phiên âm “bōluómì” và nghĩa “Mít”.
+A. 牛肉
+B. 菠萝蜜
+C. 水果
+D. 还是
+Đáp án: B
+Lời giải: 菠萝蜜 đọc là bōluómì, nghĩa là Mít. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 264.
+Độ khó: Dễ
+Câu 115. Trong bài học, “菠萝” có nghĩa là gì?
+A. Dứa
+B. Nhớ
+C. Lượng từ cho bông hoa
+D. Bánh bao
+Đáp án: A
+Lời giải: 菠萝 đọc là bōluó, nghĩa là Dứa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 265.
+Độ khó: Dễ
+Câu 116. Chọn Hán tự có phiên âm “bōluó” và nghĩa “Dứa”.
+A. 饭馆
+B. 菠萝
+C. 吃
+D. 奶茶
+Đáp án: B
+Lời giải: 菠萝 đọc là bōluó, nghĩa là Dứa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 265.
+Độ khó: Dễ
+Câu 117. Trong bài học, “西瓜” có nghĩa là gì?
+A. Quýt
+B. Hay là
+C. Dứa
+D. Dưa hấu
+Đáp án: D
+Lời giải: 西瓜 đọc là xīguā, nghĩa là Dưa hấu. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 266.
+Độ khó: Dễ
+Câu 118. Chọn Hán tự có phiên âm “xīguā” và nghĩa “Dưa hấu”.
+A. 公斤
+B. 西瓜
+C. 幅
+D. 卖
+Đáp án: B
+Lời giải: 西瓜 đọc là xīguā, nghĩa là Dưa hấu. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 266.
+Độ khó: Dễ
+Câu 119. Trong bài học, “橙子” có nghĩa là gì?
+A. Nhà hàng
+B. Cơm trắng
+C. Hay là
+D. Cam
+Đáp án: D
+Lời giải: 橙子 đọc là chéngzi, nghĩa là Cam. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 267.
+Độ khó: Dễ
+Câu 120. Chọn Hán tự có phiên âm “chéngzi” và nghĩa “Cam”.
+A. 杯子
+B. 饭店
+C. 橙子
+D. 快
+Đáp án: C
+Lời giải: 橙子 đọc là chéngzi, nghĩa là Cam. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 267.
+Độ khó: Dễ
+Câu 121. Trong bài học, “橘子” có nghĩa là gì?
+A. Cam
+B. Sủi cảo
+C. Quýt
+D. Mua
+Đáp án: C
+Lời giải: 橘子 đọc là júzi, nghĩa là Quýt. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 268.
+Độ khó: Dễ
+Câu 122. Chọn Hán tự có phiên âm “júzi” và nghĩa “Quýt”.
+A. 奶茶
+B. 苹果
+C. 杯子
+D. 橘子
+Đáp án: D
+Lời giải: 橘子 đọc là júzi, nghĩa là Quýt. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 268.
+Độ khó: Dễ
+Câu 123. Trong bài học, “黄瓜” có nghĩa là gì?
+A. Rau xanh
+B. Dưa chuột
+C. Mít
+D. Uống
+Đáp án: B
+Lời giải: 黄瓜 đọc là huángguā, nghĩa là Dưa chuột. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 269.
+Độ khó: Dễ
+Câu 124. Chọn Hán tự có phiên âm “huángguā” và nghĩa “Dưa chuột”.
+A. 要
+B. 黄瓜
+C. 饭店
+D. 牛肉
+Đáp án: B
+Lời giải: 黄瓜 đọc là huángguā, nghĩa là Dưa chuột. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 269.
+Độ khó: Dễ
+Câu 125. Trong bài học, “胡萝卜” có nghĩa là gì?
+A. Táo
+B. Ổi
+C. Cà rốt
+D. Cây
+Đáp án: C
+Lời giải: 胡萝卜 đọc là húluóbo, nghĩa là Cà rốt. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 270.
+Độ khó: Dễ
+Câu 126. Chọn Hán tự có phiên âm “húluóbo” và nghĩa “Cà rốt”.
+A. 馒头
+B. 胡萝卜
+C. 牛奶
+D. 块
+Đáp án: B
+Lời giải: 胡萝卜 đọc là húluóbo, nghĩa là Cà rốt. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 270.
+Độ khó: Dễ
+Câu 127. Trong bài học, “张” có nghĩa là gì?
+A. Hai (dùng khi đếm số lượng)
+B. No
+C. Mấy
+D. Lượng từ cho tờ, vật phẳng
+Đáp án: D
+Lời giải: 张 đọc là zhāng, nghĩa là Lượng từ cho tờ, vật phẳng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 274.
+Độ khó: Dễ
+Câu 128. Chọn Hán tự có phiên âm “zhāng” và nghĩa “Lượng từ cho tờ, vật phẳng”.
+A. 杯子
+B. 胡萝卜
+C. 张
+D. 一杯茶
+Đáp án: C
+Lời giải: 张 đọc là zhāng, nghĩa là Lượng từ cho tờ, vật phẳng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 274.
+Độ khó: Dễ
+Câu 129. Trong bài học, “棵” có nghĩa là gì?
+A. Món ăn, rau
+B. Mít
+C. Nhà hàng
+D. Lượng từ cho cây
+Đáp án: D
+Lời giải: 棵 đọc là kē, nghĩa là Lượng từ cho cây. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 275.
+Độ khó: Dễ
+Câu 130. Chọn Hán tự có phiên âm “kē” và nghĩa “Lượng từ cho cây”.
+A. 杯子
+B. 棵
+C. 张
+D. 吃
+Đáp án: B
+Lời giải: 棵 đọc là kē, nghĩa là Lượng từ cho cây. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 275.
+Độ khó: Dễ
+Câu 131. Trong bài học, “朵” có nghĩa là gì?
+A. Kilôgam
+B. Chuối
+C. Mít
+D. Lượng từ cho bông hoa
+Đáp án: D
+Lời giải: 朵 đọc là duǒ, nghĩa là Lượng từ cho bông hoa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 276.
+Độ khó: Dễ
+Câu 132. Chọn Hán tự có phiên âm “duǒ” và nghĩa “Lượng từ cho bông hoa”.
+A. 黄瓜
+B. 米饭
+C. 朵
+D. 新鲜
+Đáp án: C
+Lời giải: 朵 đọc là duǒ, nghĩa là Lượng từ cho bông hoa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 276.
+Độ khó: Dễ
+Câu 133. Trong bài học, “条” có nghĩa là gì?
+A. Lượng từ cho bông hoa
+B. Lượng từ cho vật dài
+C. Sầu riêng
+D. Pha trà
+Đáp án: B
+Lời giải: 条 đọc là tiáo, nghĩa là Lượng từ cho vật dài. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 277.
+Độ khó: Dễ
+Câu 134. Chọn Hán tự có phiên âm “tiáo” và nghĩa “Lượng từ cho vật dài”.
+A. 条
+B. 西瓜
+C. 米饭
+D. 卖
+Đáp án: A
+Lời giải: 条 đọc là tiáo, nghĩa là Lượng từ cho vật dài. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 277.
+Độ khó: Dễ
+Câu 135. Trong bài học, “只” có nghĩa là gì?
+A. Lượng từ cho động vật
+B. Lượng từ cho cây
+C. Lượng từ cho tờ, vật phẳng
+D. Bánh bao
+Đáp án: A
+Lời giải: 只 đọc là zhī, nghĩa là Lượng từ cho động vật. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 278.
+Độ khó: Dễ
+Câu 136. Chọn Hán tự có phiên âm “zhī” và nghĩa “Lượng từ cho động vật”.
+A. 西瓜
+B. 饺子
+C. 只
+D. 香蕉
+Đáp án: C
+Lời giải: 只 đọc là zhī, nghĩa là Lượng từ cho động vật. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 278.
+Độ khó: Dễ
+Câu 137. Trong bài học, “幅” có nghĩa là gì?
+A. Táo
+B. Thịt bò
+C. Lượng từ cho tranh
+D. Một chút
+Đáp án: C
+Lời giải: 幅 đọc là fú, nghĩa là Lượng từ cho tranh. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 279.
+Độ khó: Dễ
+Câu 138. Chọn Hán tự có phiên âm “fú” và nghĩa “Lượng từ cho tranh”.
+A. 幅
+B. 苹果
+C. 西瓜
+D. 饺子
+Đáp án: A
+Lời giải: 幅 đọc là fú, nghĩa là Lượng từ cho tranh. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 279.
+Độ khó: Dễ
+Câu 139. Trong bài học, “面” có nghĩa là gì?
+A. Mít
+B. Lượng từ cho gương, cờ và một số vật có mặt phẳng
+C. Cam
+D. Dứa
+Đáp án: B
+Lời giải: 面 đọc là miàn, nghĩa là Lượng từ cho gương, cờ và một số vật có mặt phẳng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 280.
+Độ khó: Dễ
+Câu 140. Chọn Hán tự có phiên âm “miàn” và nghĩa “Lượng từ cho gương, cờ và một số vật có mặt phẳng”.
+A. 快
+B. 水果
+C. 蔬菜
+D. 面
+Đáp án: D
+Lời giải: 面 đọc là miàn, nghĩa là Lượng từ cho gương, cờ và một số vật có mặt phẳng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 280.
+Độ khó: Dễ
+Câu 141. Trong bài học, “本” có nghĩa là gì?
+A. Đói
+B. Pha trà
+C. Sữa bò
+D. Lượng từ cho sách
+Đáp án: D
+Lời giải: 本 đọc là běn, nghĩa là Lượng từ cho sách. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 281.
+Độ khó: Dễ
+Câu 142. Chọn Hán tự có phiên âm “běn” và nghĩa “Lượng từ cho sách”.
+A. 香蕉
+B. 别的
+C. 饭
+D. 本
+Đáp án: D
+Lời giải: 本 đọc là běn, nghĩa là Lượng từ cho sách. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 281.
+Độ khó: Dễ
+Câu 143. Trong bài học, “块” có nghĩa là gì?
+A. Cân Trung Quốc (500 g)
+B. Kilôgam
+C. Lượng từ cho tranh
+D. Lượng từ cho miếng, khối
+Đáp án: D
+Lời giải: 块 đọc là kuài, nghĩa là Lượng từ cho miếng, khối. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 282.
+Độ khó: Dễ
+Câu 144. Chọn Hán tự có phiên âm “kuài” và nghĩa “Lượng từ cho miếng, khối”.
+A. 新鲜
+B. 卖
+C. 几
+D. 块
+Đáp án: D
+Lời giải: 块 đọc là kuài, nghĩa là Lượng từ cho miếng, khối. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 282.
+Độ khó: Dễ
+Câu 145. Chọn phiên âm đúng của “菠萝蜜” với nghĩa “Mít”.
+A. bǎo
+B. chéngzi
+C. bōluómì
+D. yǒudiǎnr
+Đáp án: C
+Lời giải: 菠萝蜜 đọc là bōluómì, nghĩa là Mít. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 264.
+Độ khó: Dễ
+Câu 146. Chọn phiên âm đúng của “菠萝” với nghĩa “Dứa”.
+A. bōluó
+B. bǎo
+C. háizi
+D. yì bēi nǎichá
+Đáp án: A
+Lời giải: 菠萝 đọc là bōluó, nghĩa là Dứa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 265.
+Độ khó: Dễ
+Câu 147. Chọn phiên âm đúng của “西瓜” với nghĩa “Dưa hấu”.
+A. fàndiàn
+B. yì bēi chá
+C. xīguā
+D. liúlián
+Đáp án: C
+Lời giải: 西瓜 đọc là xīguā, nghĩa là Dưa hấu. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 266.
+Độ khó: Dễ
+Câu 148. Chọn phiên âm đúng của “橙子” với nghĩa “Cam”.
+A. chéngzi
+B. yì bēi nǎichá
+C. niúròu
+D. mǐfàn
+Đáp án: A
+Lời giải: 橙子 đọc là chéngzi, nghĩa là Cam. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 267.
+Độ khó: Dễ
+Câu 149. Chọn phiên âm đúng của “橘子” với nghĩa “Quýt”.
+A. júzi
+B. zhǒng
+C. fú
+D. chá
+Đáp án: A
+Lời giải: 橘子 đọc là júzi, nghĩa là Quýt. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 268.
+Độ khó: Dễ
+Câu 150. Chọn phiên âm đúng của “黄瓜” với nghĩa “Dưa chuột”.
+A. huángguā
+B. bōluómì
+C. xiāngjiāo
+D. yígòng
+Đáp án: A
+Lời giải: 黄瓜 đọc là huángguā, nghĩa là Dưa chuột. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 269.
+Độ khó: Dễ
+Câu 151. Chọn phiên âm đúng của “胡萝卜” với nghĩa “Cà rốt”.
+A. húluóbo
+B. yì bēi chá
+C. shuǐguǒ
+D. tiáo
+Đáp án: A
+Lời giải: 胡萝卜 đọc là húluóbo, nghĩa là Cà rốt. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 270.
+Độ khó: Dễ
+Câu 152. Chọn phiên âm đúng của “张” với nghĩa “Lượng từ cho tờ, vật phẳng”.
+A. zhāng
+B. shíliu
+C. bāozi
+D. qítā
+Đáp án: A
+Lời giải: 张 đọc là zhāng, nghĩa là Lượng từ cho tờ, vật phẳng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 274.
+Độ khó: Dễ
+Câu 153. Chọn phiên âm đúng của “棵” với nghĩa “Lượng từ cho cây”.
+A. jǐ
+B. háizi
+C. kē
+D. jìde
+Đáp án: C
+Lời giải: 棵 đọc là kē, nghĩa là Lượng từ cho cây. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 275.
+Độ khó: Dễ
+Câu 154. Chọn phiên âm đúng của “朵” với nghĩa “Lượng từ cho bông hoa”.
+A. duǒ
+B. fàndiàn
+C. màn
+D. shuǐguǒ
+Đáp án: A
+Lời giải: 朵 đọc là duǒ, nghĩa là Lượng từ cho bông hoa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 276.
+Độ khó: Dễ
+Câu 155. Chọn phiên âm đúng của “条” với nghĩa “Lượng từ cho vật dài”.
+A. tiáo
+B. qítā
+C. xiāngjiāo
+D. fú
+Đáp án: A
+Lời giải: 条 đọc là tiáo, nghĩa là Lượng từ cho vật dài. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 277.
+Độ khó: Dễ
+Câu 156. Chọn phiên âm đúng của “只” với nghĩa “Lượng từ cho động vật”.
+A. bēi
+B. zhī
+C. húluóbo
+D. yēzi
+Đáp án: B
+Lời giải: 只 đọc là zhī, nghĩa là Lượng từ cho động vật. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 278.
+Độ khó: Dễ
+Câu 157. Chọn phiên âm đúng của “幅” với nghĩa “Lượng từ cho tranh”.
+A. xiāngjiāo
+B. yígòng
+C. fú
+D. shù
+Đáp án: C
+Lời giải: 幅 đọc là fú, nghĩa là Lượng từ cho tranh. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 279.
+Độ khó: Dễ
+Câu 158. Chọn phiên âm đúng của “面” với nghĩa “Lượng từ cho gương, cờ và một số vật có mặt phẳng”.
+A. niúnǎi
+B. miàn
+C. liúlián
+D. gè
+Đáp án: B
+Lời giải: 面 đọc là miàn, nghĩa là Lượng từ cho gương, cờ và một số vật có mặt phẳng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 280.
+Độ khó: Dễ
+Câu 159. Chọn phiên âm đúng của “本” với nghĩa “Lượng từ cho sách”.
+A. běn
+B. píngguǒ
+C. huángguā
+D. jǐ
+Đáp án: A
+Lời giải: 本 đọc là běn, nghĩa là Lượng từ cho sách. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 281.
+Độ khó: Dễ
+Câu 160. Chọn phiên âm đúng của “块” với nghĩa “Lượng từ cho miếng, khối”.
+A. pào chá
+B. dì
+C. fānshíliu
+D. kuài
+Đáp án: D
+Lời giải: 块 đọc là kuài, nghĩa là Lượng từ cho miếng, khối. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 282.
+Độ khó: Dễ
+Câu 161. Vận dụng: Câu “你要吃什么？” có nghĩa là gì?
+A. Tôi muốn mua hai chiếc bánh bao.
+B. Tôi muốn mua một quyển sách tiếng Hán.
+C. Bạn muốn ăn gì?
+D. Những loại hoa quả này rất rẻ.
+Đáp án: C
+Lời giải: 你要吃什么？ — Bạn muốn ăn gì? Câu dùng từ trong danh sách bài 1–5.
 Độ khó: Vừa
+Câu 162. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bạn muốn ăn gì?”.
+A. 一共五十块钱。
+B. 他很饱。
+C. 我要买两公斤香蕉。
+D. 你要吃什么？
+Đáp án: D
+Lời giải: 你要吃什么？ — Bạn muốn ăn gì? Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 163. Vận dụng: Câu “我要一碗米饭。” có nghĩa là gì?
+A. Tôi muốn một bát cơm.
+B. Cái cây này rất to.
+C. Tôi muốn uống một cốc trà sữa.
+D. Tổng cộng năm mươi đồng.
+Đáp án: A
+Lời giải: 我要一碗米饭。 — Tôi muốn một bát cơm. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 164. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn một bát cơm.”.
+A. 这些水果很便宜。
+B. 我要一碗米饭。
+C. 我要买两公斤香蕉。
+D. 我想喝一杯茶。
+Đáp án: B
+Lời giải: 我要一碗米饭。 — Tôi muốn một bát cơm. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 165. Vận dụng: Câu “你喝茶还是牛奶？” có nghĩa là gì?
+A. Cái cây này rất to.
+B. Tôi muốn một bát cơm.
+C. Tôi muốn mua hai quyển sách tiếng Hán.
+D. Bạn uống trà hay sữa bò?
+Đáp án: D
+Lời giải: 你喝茶还是牛奶？ — Bạn uống trà hay sữa bò? Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 166. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bạn uống trà hay sữa bò?”.
+A. 这是什么水果？
+B. 我想买两本汉语书。
+C. 你喝茶还是牛奶？
+D. 我要买两公斤香蕉。
+Đáp án: C
+Lời giải: 你喝茶还是牛奶？ — Bạn uống trà hay sữa bò? Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 167. Vận dụng: Câu “我想买两个包子。” có nghĩa là gì?
+A. Tôi muốn uống một cốc trà sữa.
+B. Tôi còn muốn thêm một chút cơm.
+C. Tôi muốn mua hai kilôgam chuối.
+D. Tôi muốn mua hai chiếc bánh bao.
+Đáp án: D
+Lời giải: 我想买两个包子。 — Tôi muốn mua hai chiếc bánh bao. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 168. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn mua hai chiếc bánh bao.”.
+A. 我想买两个包子。
+B. 这些苹果很新鲜。
+C. 我要买两公斤香蕉。
+D. 我想喝一杯奶茶。
+Đáp án: A
+Lời giải: 我想买两个包子。 — Tôi muốn mua hai chiếc bánh bao. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 169. Vận dụng: Câu “这些苹果很新鲜。” có nghĩa là gì?
+A. Những loại hoa quả này rất rẻ.
+B. Bạn muốn ăn gì?
+C. Tôi muốn mua hai quyển sách tiếng Hán.
+D. Những quả táo này rất tươi.
+Đáp án: D
+Lời giải: 这些苹果很新鲜。 — Những quả táo này rất tươi. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 170. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Những quả táo này rất tươi.”.
+A. 这些苹果很新鲜。
+B. 我要其他的蔬菜。
+C. 我想喝一杯奶茶。
+D. 你喝茶还是牛奶？
+Đáp án: A
+Lời giải: 这些苹果很新鲜。 — Những quả táo này rất tươi. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 171. Vận dụng: Câu “我有点儿饿。” có nghĩa là gì?
+A. Anh ấy rất no.
+B. Tôi muốn mua hai kilôgam chuối.
+C. Tôi hơi đói.
+D. Tôi muốn mua hai chiếc bánh bao.
+Đáp án: C
+Lời giải: 我有点儿饿。 — Tôi hơi đói. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 172. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi hơi đói.”.
+A. 你喝茶还是牛奶？
+B. 这棵树很大。
+C. 你要吃什么？
+D. 我有点儿饿。
+Đáp án: D
+Lời giải: 我有点儿饿。 — Tôi hơi đói. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 173. Vận dụng: Câu “他很饱。” có nghĩa là gì?
+A. Anh ấy rất no.
+B. Tôi muốn mua hai chiếc bánh bao.
+C. Tôi còn muốn thêm một chút cơm.
+D. Tôi muốn một bát cơm.
+Đáp án: A
+Lời giải: 他很饱。 — Anh ấy rất no. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 174. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Anh ấy rất no.”.
+A. 我想买两个包子。
+B. 我想买一本汉语书。
+C. 这是什么水果？
+D. 他很饱。
+Đáp án: D
+Lời giải: 他很饱。 — Anh ấy rất no. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 175. Vận dụng: Câu “我想喝一杯奶茶。” có nghĩa là gì?
+A. Tôi muốn mua hai chiếc bánh bao.
+B. Tôi muốn uống một cốc trà sữa.
+C. Bạn uống trà hay sữa bò?
+D. Tôi muốn một bát cơm.
+Đáp án: B
+Lời giải: 我想喝一杯奶茶。 — Tôi muốn uống một cốc trà sữa. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 176. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn uống một cốc trà sữa.”.
+A. 我想喝一杯奶茶。
+B. 这些水果很便宜。
+C. 一共五十块钱。
+D. 我想买两个包子。
+Đáp án: A
+Lời giải: 我想喝一杯奶茶。 — Tôi muốn uống một cốc trà sữa. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 177. Vận dụng: Câu “牛肉多少钱一斤？” có nghĩa là gì?
+A. Tôi muốn uống một cốc trà.
+B. Anh ấy rất no.
+C. Tôi muốn mua hai kilôgam chuối.
+D. Thịt bò bao nhiêu tiền một cân Trung Quốc?
+Đáp án: D
+Lời giải: 牛肉多少钱一斤？ — Thịt bò bao nhiêu tiền một cân Trung Quốc? Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 178. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Thịt bò bao nhiêu tiền một cân Trung Quốc?”.
+A. 我还要一点儿米饭。
+B. 我有点儿饿。
+C. 牛肉多少钱一斤？
+D. 我想喝一杯奶茶。
+Đáp án: C
+Lời giải: 牛肉多少钱一斤？ — Thịt bò bao nhiêu tiền một cân Trung Quốc? Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 179. Vận dụng: Câu “一共五十块钱。” có nghĩa là gì?
+A. Bạn muốn ăn gì?
+B. Tôi hơi đói.
+C. Tổng cộng năm mươi đồng.
+D. Tôi muốn uống một cốc trà sữa.
+Đáp án: C
+Lời giải: 一共五十块钱。 — Tổng cộng năm mươi đồng. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 180. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tổng cộng năm mươi đồng.”.
+A. 他很饱。
+B. 牛肉多少钱一斤？
+C. 我想喝一杯茶。
+D. 一共五十块钱。
+Đáp án: D
+Lời giải: 一共五十块钱。 — Tổng cộng năm mươi đồng. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 181. Vận dụng: Câu “我还要一点儿米饭。” có nghĩa là gì?
+A. Tôi còn muốn thêm một chút cơm.
+B. Cô ấy muốn ăn sủi cảo.
+C. Tôi hơi đói.
+D. Tôi muốn mua một quyển sách tiếng Hán.
+Đáp án: A
+Lời giải: 我还要一点儿米饭。 — Tôi còn muốn thêm một chút cơm. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 182. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi còn muốn thêm một chút cơm.”.
+A. 我还要一点儿米饭。
+B. 我要一碗米饭。
+C. 我想买两个包子。
+D. 我想买两本汉语书。
+Đáp án: A
+Lời giải: 我还要一点儿米饭。 — Tôi còn muốn thêm một chút cơm. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 183. Vận dụng: Câu “这些水果很便宜。” có nghĩa là gì?
+A. Những quả táo này rất tươi.
+B. Thịt bò bao nhiêu tiền một cân Trung Quốc?
+C. Tôi còn muốn thêm một chút cơm.
+D. Những loại hoa quả này rất rẻ.
+Đáp án: D
+Lời giải: 这些水果很便宜。 — Những loại hoa quả này rất rẻ. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 184. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Những loại hoa quả này rất rẻ.”.
+A. 这棵树很大。
+B. 我想买一本汉语书。
+C. 我想买两本汉语书。
+D. 这些水果很便宜。
+Đáp án: D
+Lời giải: 这些水果很便宜。 — Những loại hoa quả này rất rẻ. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 185. Vận dụng: Câu “我要买两公斤香蕉。” có nghĩa là gì?
+A. Tôi còn muốn thêm một chút cơm.
+B. Tôi muốn các loại rau củ khác.
+C. Tôi muốn một bát cơm.
+D. Tôi muốn mua hai kilôgam chuối.
+Đáp án: D
+Lời giải: 我要买两公斤香蕉。 — Tôi muốn mua hai kilôgam chuối. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 186. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn mua hai kilôgam chuối.”.
+A. 我还要一点儿米饭。
+B. 我要一碗米饭。
+C. 他很饱。
+D. 我要买两公斤香蕉。
+Đáp án: D
+Lời giải: 我要买两公斤香蕉。 — Tôi muốn mua hai kilôgam chuối. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 187. Vận dụng: Câu “她想吃饺子。” có nghĩa là gì?
+A. Tôi muốn mua hai chiếc bánh bao.
+B. Cô ấy muốn ăn sủi cảo.
+C. Tôi muốn mua hai kilôgam chuối.
+D. Tôi còn muốn thêm một chút cơm.
+Đáp án: B
+Lời giải: 她想吃饺子。 — Cô ấy muốn ăn sủi cảo. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 188. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy muốn ăn sủi cảo.”.
+A. 她想吃饺子。
+B. 这棵树很大。
+C. 我要其他的蔬菜。
+D. 你喝茶还是牛奶？
+Đáp án: A
+Lời giải: 她想吃饺子。 — Cô ấy muốn ăn sủi cảo. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 189. Vận dụng: Câu “我要其他的蔬菜。” có nghĩa là gì?
+A. Những quả táo này rất tươi.
+B. Tôi muốn mua một quyển sách tiếng Hán.
+C. Những loại hoa quả này rất rẻ.
+D. Tôi muốn các loại rau củ khác.
+Đáp án: D
+Lời giải: 我要其他的蔬菜。 — Tôi muốn các loại rau củ khác. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 190. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn các loại rau củ khác.”.
+A. 我要其他的蔬菜。
+B. 我想买两个包子。
+C. 他很饱。
+D. 这些水果很便宜。
+Đáp án: A
+Lời giải: 我要其他的蔬菜。 — Tôi muốn các loại rau củ khác. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 191. Vận dụng: Câu “我想买一本汉语书。” có nghĩa là gì?
+A. Tôi muốn mua một quyển sách tiếng Hán.
+B. Cô ấy muốn ăn sủi cảo.
+C. Tổng cộng năm mươi đồng.
+D. Những loại hoa quả này rất rẻ.
+Đáp án: A
+Lời giải: 我想买一本汉语书。 — Tôi muốn mua một quyển sách tiếng Hán. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 192. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn mua một quyển sách tiếng Hán.”.
+A. 她想吃饺子。
+B. 这些水果很便宜。
+C. 我想买一本汉语书。
+D. 我想喝一杯茶。
+Đáp án: C
+Lời giải: 我想买一本汉语书。 — Tôi muốn mua một quyển sách tiếng Hán. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 193. Vận dụng: Câu “这棵树很大。” có nghĩa là gì?
+A. Thịt bò bao nhiêu tiền một cân Trung Quốc?
+B. Tôi muốn mua hai kilôgam chuối.
+C. Cái cây này rất to.
+D. Bạn uống trà hay sữa bò?
+Đáp án: C
+Lời giải: 这棵树很大。 — Cái cây này rất to. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 194. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cái cây này rất to.”.
+A. 这棵树很大。
+B. 你要吃什么？
+C. 这是什么水果？
+D. 一共五十块钱。
+Đáp án: A
+Lời giải: 这棵树很大。 — Cái cây này rất to. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 195. Vận dụng: Câu “我想买两本汉语书。” có nghĩa là gì?
+A. Đây là loại hoa quả gì?
+B. Tôi muốn mua hai quyển sách tiếng Hán.
+C. Tôi muốn mua một quyển sách tiếng Hán.
+D. Anh ấy rất no.
+Đáp án: B
+Lời giải: 我想买两本汉语书。 — Tôi muốn mua hai quyển sách tiếng Hán. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 196. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn mua hai quyển sách tiếng Hán.”.
+A. 这些苹果很新鲜。
+B. 一共五十块钱。
+C. 她想吃饺子。
+D. 我想买两本汉语书。
+Đáp án: D
+Lời giải: 我想买两本汉语书。 — Tôi muốn mua hai quyển sách tiếng Hán. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 197. Vận dụng: Câu “这是什么水果？” có nghĩa là gì?
+A. Thịt bò bao nhiêu tiền một cân Trung Quốc?
+B. Đây là loại hoa quả gì?
+C. Bạn uống trà hay sữa bò?
+D. Tôi muốn mua hai chiếc bánh bao.
+Đáp án: B
+Lời giải: 这是什么水果？ — Đây là loại hoa quả gì? Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 198. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Đây là loại hoa quả gì?”.
+A. 这是什么水果？
+B. 我还要一点儿米饭。
+C. 我想买一本汉语书。
+D. 这棵树很大。
+Đáp án: A
+Lời giải: 这是什么水果？ — Đây là loại hoa quả gì? Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 199. Vận dụng: Câu “我想喝一杯茶。” có nghĩa là gì?
+A. Tôi muốn uống một cốc trà.
+B. Thịt bò bao nhiêu tiền một cân Trung Quốc?
+C. Bạn muốn ăn gì?
+D. Cô ấy muốn ăn sủi cảo.
+Đáp án: A
+Lời giải: 我想喝一杯茶。 — Tôi muốn uống một cốc trà. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+Câu 200. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn uống một cốc trà.”.
+A. 我想喝一杯茶。
+B. 我想买两本汉语书。
+C. 这些水果很便宜。
+D. 这是什么水果？
+Đáp án: A
+Lời giải: 我想喝一杯茶。 — Tôi muốn uống một cốc trà. Câu dùng từ trong danh sách bài 1–5.
+Độ khó: Vừa
+[NGU PHAP]
+Gọi món: Dùng 要 hoặc 想 để nói nhu cầu; kết hợp số và lượng từ khi gọi đồ ăn. Ví dụ: 我有点儿饿。
+Câu hỏi lựa chọn: Dùng 还是 giữa hai lựa chọn khi hỏi người đối thoại. Ví dụ: 他很饱。
+[BAI DOC]
+Đọc hiểu 1: 我有点儿饿。 他很饱。 我想喝一杯奶茶。 牛肉多少钱一斤？ — Tôi hơi đói. Anh ấy rất no. Tôi muốn uống một cốc trà sữa. Thịt bò bao nhiêu tiền một cân Trung Quốc?
+Đọc hiểu 2: 一共五十块钱。 我还要一点儿米饭。 这些水果很便宜。 我要买两公斤香蕉。 — Tổng cộng năm mươi đồng. Tôi còn muốn thêm một chút cơm. Những loại hoa quả này rất rẻ. Tôi muốn mua hai kilôgam chuối.
+[HOI THOAI]
+Hội thoại trong bài: A: 你想吃什么？ B: 我想吃包子。 A: 你喝茶还是牛奶？ B: 我喝茶。 A: 你要几碗米饭？ B: 我要一碗米饭。
+[LUYEN NOI]
+Câu 1. 你想吃什么？
+Nghĩa: Bạn muốn ăn gì?
+Đáp án tham khảo: 我想吃包子。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 2. 你喝茶还是牛奶？
+Nghĩa: Bạn uống trà hay sữa bò?
+Đáp án tham khảo: 我喝茶。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 3. 你要几碗米饭？
+Nghĩa: Bạn muốn mấy bát cơm?
+Đáp án tham khảo: 我要一碗米饭。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 4. 你想买什么水果？
+Nghĩa: Bạn muốn mua hoa quả gì?
+Đáp án tham khảo: 我想买苹果。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 5. 这些苹果新鲜吗？
+Nghĩa: Những quả táo này có tươi không?
+Đáp án tham khảo: 这些苹果很新鲜。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 6. 牛肉多少钱一斤？
+Nghĩa: Thịt bò bao nhiêu tiền một cân Trung Quốc?
+Đáp án tham khảo: 五十块钱一斤。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 7. 你饿了吗？
+Nghĩa: Bạn đói chưa?
+Đáp án tham khảo: 我有点儿饿。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 8. 你要一杯奶茶吗？
+Nghĩa: Bạn muốn một cốc trà sữa phải không?
+Đáp án tham khảo: 我要一杯奶茶。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 9. 你要买几公斤香蕉？
+Nghĩa: Bạn muốn mua mấy kilôgam chuối?
+Đáp án tham khảo: 我要买两公斤香蕉。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 10. 一共多少钱？
+Nghĩa: Tổng cộng bao nhiêu tiền?
+Đáp án tham khảo: 一共十块钱。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.

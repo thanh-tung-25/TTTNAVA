@@ -1,0 +1,5132 @@
+{
+  "version": "user-vocabulary-2026-11-14",
+  "lesson": 8,
+  "title": "第八课：你的生日是几月几号？ (Sinh nhật của bạn là ngày tháng nào?)",
+  "vocabulary": [
+    {
+      "hanzi": "今天",
+      "pinyin": "jīntiān",
+      "meaning": "Hôm nay",
+      "group": "main",
+      "example": "今天是星期五。",
+      "example_meaning": "Hôm nay là thứ Sáu."
+    },
+    {
+      "hanzi": "号",
+      "pinyin": "hào",
+      "meaning": "Ngày, số",
+      "group": "main",
+      "example": "你的生日是几月几号？",
+      "example_meaning": "Sinh nhật của bạn là ngày mấy tháng mấy?"
+    },
+    {
+      "hanzi": "几",
+      "pinyin": "jǐ",
+      "meaning": "Mấy",
+      "group": "main",
+      "example": "你的生日是几月几号？",
+      "example_meaning": "Sinh nhật của bạn là ngày mấy tháng mấy?"
+    },
+    {
+      "hanzi": "月",
+      "pinyin": "yuè",
+      "meaning": "Tháng",
+      "group": "main",
+      "example": "你的生日是几月几号？",
+      "example_meaning": "Sinh nhật của bạn là ngày mấy tháng mấy?"
+    },
+    {
+      "hanzi": "年",
+      "pinyin": "nián",
+      "meaning": "Năm",
+      "group": "main",
+      "example": "她今年在北京工作。",
+      "example_meaning": "Năm nay cô ấy làm việc ở Bắc Kinh."
+    },
+    {
+      "hanzi": "每",
+      "pinyin": "měi",
+      "meaning": "Mỗi",
+      "group": "main",
+      "example": "我每天学习汉语。",
+      "example_meaning": "Tôi học tiếng Hán mỗi ngày."
+    },
+    {
+      "hanzi": "点",
+      "pinyin": "diǎn",
+      "meaning": "Giờ, điểm",
+      "group": "main",
+      "example": "现在是三点半。",
+      "example_meaning": "Bây giờ là ba giờ rưỡi."
+    },
+    {
+      "hanzi": "分",
+      "pinyin": "fēn",
+      "meaning": "Phút",
+      "group": "main"
+    },
+    {
+      "hanzi": "小时",
+      "pinyin": "xiǎoshí",
+      "meaning": "Tiếng, giờ (khoảng thời gian)",
+      "group": "main",
+      "example": "我想休息一小时。",
+      "example_meaning": "Tôi muốn nghỉ ngơi một tiếng."
+    },
+    {
+      "hanzi": "差",
+      "pinyin": "chà",
+      "meaning": "Kém, thiếu",
+      "group": "main"
+    },
+    {
+      "hanzi": "出生",
+      "pinyin": "chūshēng",
+      "meaning": "Sinh ra",
+      "group": "main"
+    },
+    {
+      "hanzi": "蛋糕",
+      "pinyin": "dàngāo",
+      "meaning": "Bánh ngọt, bánh sinh nhật",
+      "group": "main",
+      "example": "这个蛋糕很好吃。",
+      "example_meaning": "Chiếc bánh ngọt này rất ngon."
+    },
+    {
+      "hanzi": "属",
+      "pinyin": "shǔ",
+      "meaning": "Thuộc về, cầm tinh",
+      "group": "main",
+      "example": "我属马。",
+      "example_meaning": "Tôi cầm tinh con ngựa."
+    },
+    {
+      "hanzi": "生日",
+      "pinyin": "shēngrì",
+      "meaning": "Sinh nhật",
+      "group": "main",
+      "example": "你的生日是几月几号？",
+      "example_meaning": "Sinh nhật của bạn là ngày mấy tháng mấy?"
+    },
+    {
+      "hanzi": "快乐",
+      "pinyin": "kuàilè",
+      "meaning": "Vui vẻ",
+      "group": "main",
+      "example": "生日快乐！",
+      "example_meaning": "Chúc mừng sinh nhật!"
+    },
+    {
+      "hanzi": "星期",
+      "pinyin": "xīngqī",
+      "meaning": "Tuần, thứ",
+      "group": "main",
+      "example": "今天是星期五。",
+      "example_meaning": "Hôm nay là thứ Sáu."
+    },
+    {
+      "hanzi": "真",
+      "pinyin": "zhēn",
+      "meaning": "Thật, thật là",
+      "group": "main"
+    },
+    {
+      "hanzi": "太……了",
+      "pinyin": "tài…le",
+      "meaning": "Quá…",
+      "group": "main"
+    },
+    {
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "meaning": "Nói",
+      "group": "main"
+    },
+    {
+      "hanzi": "告诉",
+      "pinyin": "gàosu",
+      "meaning": "Nói cho, báo cho",
+      "group": "main"
+    },
+    {
+      "hanzi": "聊天",
+      "pinyin": "liáotiān",
+      "meaning": "Trò chuyện",
+      "group": "main",
+      "example": "我想跟你聊天。",
+      "example_meaning": "Tôi muốn trò chuyện với bạn."
+    },
+    {
+      "hanzi": "为什么",
+      "pinyin": "wèishénme",
+      "meaning": "Tại sao",
+      "group": "main",
+      "example": "你为什么不去学校？",
+      "example_meaning": "Tại sao bạn không đến trường?"
+    },
+    {
+      "hanzi": "最",
+      "pinyin": "zuì",
+      "meaning": "Nhất",
+      "group": "main"
+    },
+    {
+      "hanzi": "事",
+      "pinyin": "shì",
+      "meaning": "Việc, chuyện",
+      "group": "main"
+    },
+    {
+      "hanzi": "介绍",
+      "pinyin": "jièshào",
+      "meaning": "Giới thiệu",
+      "group": "main",
+      "example": "请介绍你的朋友。",
+      "example_meaning": "Xin hãy giới thiệu bạn của bạn."
+    },
+    {
+      "hanzi": "有空儿",
+      "pinyin": "yǒu kòngr",
+      "meaning": "Rảnh, có thời gian",
+      "group": "main",
+      "example": "你明天有空儿吗？",
+      "example_meaning": "Ngày mai bạn có rảnh không?"
+    },
+    {
+      "hanzi": "见",
+      "pinyin": "jiàn",
+      "meaning": "Gặp, nhìn thấy",
+      "group": "main",
+      "example": "我们下个星期见。",
+      "example_meaning": "Chúng ta gặp nhau vào tuần sau."
+    },
+    {
+      "hanzi": "尝",
+      "pinyin": "cháng",
+      "meaning": "Nếm, thử",
+      "group": "main"
+    },
+    {
+      "hanzi": "过",
+      "pinyin": "guo",
+      "meaning": "Đã từng (trợ từ kinh nghiệm)",
+      "group": "main",
+      "example": "我去过中国。",
+      "example_meaning": "Tôi đã từng đến Trung Quốc."
+    },
+    {
+      "hanzi": "电视剧",
+      "pinyin": "diànshìjù",
+      "meaning": "Phim truyền hình",
+      "group": "main",
+      "example": "她正在看电视剧。",
+      "example_meaning": "Cô ấy đang xem phim truyền hình."
+    },
+    {
+      "hanzi": "门口",
+      "pinyin": "ménkǒu",
+      "meaning": "Cửa ra vào",
+      "group": "main"
+    },
+    {
+      "hanzi": "休息",
+      "pinyin": "xiūxi",
+      "meaning": "Nghỉ, nghỉ ngơi",
+      "group": "main",
+      "example": "我想休息一小时。",
+      "example_meaning": "Tôi muốn nghỉ ngơi một tiếng."
+    },
+    {
+      "hanzi": "昨天",
+      "pinyin": "zuótiān",
+      "meaning": "Hôm qua",
+      "group": "extended",
+      "example": "我昨天去看电影了。",
+      "example_meaning": "Hôm qua tôi đã đi xem phim."
+    },
+    {
+      "hanzi": "明天",
+      "pinyin": "míngtiān",
+      "meaning": "Ngày mai",
+      "group": "extended",
+      "example": "你明天有空儿吗？",
+      "example_meaning": "Ngày mai bạn có rảnh không?"
+    },
+    {
+      "hanzi": "前天",
+      "pinyin": "qiántiān",
+      "meaning": "Hôm kia",
+      "group": "extended"
+    },
+    {
+      "hanzi": "后天",
+      "pinyin": "hòutiān",
+      "meaning": "Ngày kia",
+      "group": "extended"
+    },
+    {
+      "hanzi": "大前天",
+      "pinyin": "dàqiántiān",
+      "meaning": "Ba ngày trước",
+      "group": "extended"
+    },
+    {
+      "hanzi": "大后天",
+      "pinyin": "dàhòutiān",
+      "meaning": "Ba ngày sau",
+      "group": "extended"
+    },
+    {
+      "hanzi": "天",
+      "pinyin": "tiān",
+      "meaning": "Trời, ngày",
+      "group": "extended",
+      "example": "今天是星期五。",
+      "example_meaning": "Hôm nay là thứ Sáu."
+    },
+    {
+      "hanzi": "每天",
+      "pinyin": "měitiān",
+      "meaning": "Mỗi ngày",
+      "group": "extended",
+      "example": "我每天学习汉语。",
+      "example_meaning": "Tôi học tiếng Hán mỗi ngày."
+    },
+    {
+      "hanzi": "每月",
+      "pinyin": "měi yuè",
+      "meaning": "Mỗi tháng",
+      "group": "extended"
+    },
+    {
+      "hanzi": "每年",
+      "pinyin": "měi nián",
+      "meaning": "Mỗi năm",
+      "group": "extended"
+    },
+    {
+      "hanzi": "上个星期",
+      "pinyin": "shàng ge xīngqī",
+      "meaning": "Tuần trước",
+      "group": "extended"
+    },
+    {
+      "hanzi": "这个星期",
+      "pinyin": "zhè ge xīngqī",
+      "meaning": "Tuần này",
+      "group": "extended"
+    },
+    {
+      "hanzi": "下个星期",
+      "pinyin": "xià ge xīngqī",
+      "meaning": "Tuần sau",
+      "group": "extended",
+      "example": "我们下个星期见。",
+      "example_meaning": "Chúng ta gặp nhau vào tuần sau."
+    },
+    {
+      "hanzi": "上个月",
+      "pinyin": "shàng ge yuè",
+      "meaning": "Tháng trước",
+      "group": "extended"
+    },
+    {
+      "hanzi": "这个月",
+      "pinyin": "zhè ge yuè",
+      "meaning": "Tháng này",
+      "group": "extended"
+    },
+    {
+      "hanzi": "下个月",
+      "pinyin": "xià ge yuè",
+      "meaning": "Tháng sau",
+      "group": "extended"
+    },
+    {
+      "hanzi": "前年",
+      "pinyin": "qiánnián",
+      "meaning": "Năm kia",
+      "group": "extended"
+    },
+    {
+      "hanzi": "去年",
+      "pinyin": "qùnián",
+      "meaning": "Năm ngoái",
+      "group": "extended"
+    },
+    {
+      "hanzi": "今年",
+      "pinyin": "jīnnián",
+      "meaning": "Năm nay",
+      "group": "extended",
+      "example": "她今年在北京工作。",
+      "example_meaning": "Năm nay cô ấy làm việc ở Bắc Kinh."
+    },
+    {
+      "hanzi": "明年",
+      "pinyin": "míngnián",
+      "meaning": "Năm sau",
+      "group": "extended"
+    },
+    {
+      "hanzi": "后年",
+      "pinyin": "hòunián",
+      "meaning": "Năm sau nữa",
+      "group": "extended"
+    },
+    {
+      "hanzi": "大前年",
+      "pinyin": "dàqiánnián",
+      "meaning": "Ba năm trước",
+      "group": "extended"
+    },
+    {
+      "hanzi": "大后年",
+      "pinyin": "dàhòunián",
+      "meaning": "Ba năm sau",
+      "group": "extended"
+    },
+    {
+      "hanzi": "星期一",
+      "pinyin": "xīngqīyī",
+      "meaning": "Thứ Hai",
+      "group": "extended"
+    },
+    {
+      "hanzi": "星期二",
+      "pinyin": "xīngqī'èr",
+      "meaning": "Thứ Ba",
+      "group": "extended"
+    },
+    {
+      "hanzi": "星期三",
+      "pinyin": "xīngqīsān",
+      "meaning": "Thứ Tư",
+      "group": "extended"
+    },
+    {
+      "hanzi": "星期四",
+      "pinyin": "xīngqīsì",
+      "meaning": "Thứ Năm",
+      "group": "extended"
+    },
+    {
+      "hanzi": "星期五",
+      "pinyin": "xīngqīwǔ",
+      "meaning": "Thứ Sáu",
+      "group": "extended",
+      "example": "今天是星期五。",
+      "example_meaning": "Hôm nay là thứ Sáu."
+    },
+    {
+      "hanzi": "星期六",
+      "pinyin": "xīngqīliù",
+      "meaning": "Thứ Bảy",
+      "group": "extended"
+    },
+    {
+      "hanzi": "星期日",
+      "pinyin": "xīngqīrì",
+      "meaning": "Chủ nhật",
+      "group": "extended"
+    },
+    {
+      "hanzi": "星期天",
+      "pinyin": "xīngqītiān",
+      "meaning": "Chủ nhật",
+      "group": "extended"
+    },
+    {
+      "hanzi": "礼拜",
+      "pinyin": "lǐbài",
+      "meaning": "Tuần, thứ",
+      "group": "extended"
+    },
+    {
+      "hanzi": "半",
+      "pinyin": "bàn",
+      "meaning": "Nửa",
+      "group": "extended",
+      "example": "现在是三点半。",
+      "example_meaning": "Bây giờ là ba giờ rưỡi."
+    },
+    {
+      "hanzi": "一刻",
+      "pinyin": "yí kè",
+      "meaning": "Một khắc, 15 phút",
+      "group": "extended"
+    },
+    {
+      "hanzi": "说话",
+      "pinyin": "shuōhuà",
+      "meaning": "Nói chuyện",
+      "group": "extended"
+    },
+    {
+      "hanzi": "因为",
+      "pinyin": "yīnwèi",
+      "meaning": "Bởi vì",
+      "group": "extended",
+      "example": "因为我很忙。",
+      "example_meaning": "Bởi vì tôi rất bận."
+    },
+    {
+      "hanzi": "不太",
+      "pinyin": "bú tài",
+      "meaning": "Không quá, không được… lắm",
+      "group": "extended"
+    },
+    {
+      "hanzi": "生日快乐",
+      "pinyin": "shēngrì kuàilè",
+      "meaning": "Chúc mừng sinh nhật",
+      "group": "extended",
+      "example": "生日快乐！",
+      "example_meaning": "Chúc mừng sinh nhật!"
+    },
+    {
+      "hanzi": "短剧",
+      "pinyin": "duǎnjù",
+      "meaning": "Phim ngắn, kịch ngắn",
+      "group": "extended"
+    },
+    {
+      "hanzi": "门票",
+      "pinyin": "ménpiào",
+      "meaning": "Vé vào cửa",
+      "group": "extended",
+      "example": "门票多少钱？",
+      "example_meaning": "Vé vào cửa bao nhiêu tiền?"
+    },
+    {
+      "hanzi": "彩票",
+      "pinyin": "cǎipiào",
+      "meaning": "Vé số",
+      "group": "extended"
+    },
+    {
+      "hanzi": "看电影",
+      "pinyin": "kàn diànyǐng",
+      "meaning": "Xem phim",
+      "group": "extended",
+      "example": "我昨天去看电影了。",
+      "example_meaning": "Hôm qua tôi đã đi xem phim."
+    },
+    {
+      "hanzi": "老鼠",
+      "pinyin": "lǎoshǔ",
+      "meaning": "Chuột",
+      "group": "extended"
+    },
+    {
+      "hanzi": "牛",
+      "pinyin": "niú",
+      "meaning": "Trâu, bò",
+      "group": "extended"
+    },
+    {
+      "hanzi": "老虎",
+      "pinyin": "lǎohǔ",
+      "meaning": "Hổ",
+      "group": "extended"
+    },
+    {
+      "hanzi": "兔子",
+      "pinyin": "tùzi",
+      "meaning": "Thỏ",
+      "group": "extended"
+    },
+    {
+      "hanzi": "龙",
+      "pinyin": "lóng",
+      "meaning": "Rồng",
+      "group": "extended"
+    },
+    {
+      "hanzi": "蛇",
+      "pinyin": "shé",
+      "meaning": "Rắn",
+      "group": "extended"
+    },
+    {
+      "hanzi": "马",
+      "pinyin": "mǎ",
+      "meaning": "Ngựa",
+      "group": "extended",
+      "example": "我属马。",
+      "example_meaning": "Tôi cầm tinh con ngựa."
+    },
+    {
+      "hanzi": "羊",
+      "pinyin": "yáng",
+      "meaning": "Dê",
+      "group": "extended"
+    },
+    {
+      "hanzi": "猴子",
+      "pinyin": "hóuzi",
+      "meaning": "Khỉ",
+      "group": "extended"
+    },
+    {
+      "hanzi": "鸡",
+      "pinyin": "jī",
+      "meaning": "Gà",
+      "group": "extended"
+    },
+    {
+      "hanzi": "狗",
+      "pinyin": "gǒu",
+      "meaning": "Chó",
+      "group": "extended"
+    },
+    {
+      "hanzi": "猪",
+      "pinyin": "zhū",
+      "meaning": "Lợn, heo",
+      "group": "extended"
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “今天” có nghĩa là gì?",
+      "options": [
+        "Ngày mai",
+        "Hôm nay",
+        "Xem phim",
+        "Tháng"
+      ],
+      "accepted": [
+        "Hôm nay"
+      ],
+      "explanation": "今天 đọc là jīntiān, nghĩa là Hôm nay. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 444.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "37d9d9e8-6e48-4b9b-85f0-a67bd0ce76ba"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “jīntiān” và nghĩa “Hôm nay”.",
+      "options": [
+        "今天",
+        "小时",
+        "大后天",
+        "月"
+      ],
+      "accepted": [
+        "今天"
+      ],
+      "explanation": "今天 đọc là jīntiān, nghĩa là Hôm nay. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 444.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "37d9d9e8-6e48-4b9b-85f0-a67bd0ce76ba"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “号” có nghĩa là gì?",
+      "options": [
+        "Năm sau nữa",
+        "Năm ngoái",
+        "Ngày, số",
+        "Việc, chuyện"
+      ],
+      "accepted": [
+        "Ngày, số"
+      ],
+      "explanation": "号 đọc là hào, nghĩa là Ngày, số. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 445.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "635faa01-297f-473e-992e-cb0d8ee54810"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “hào” và nghĩa “Ngày, số”.",
+      "options": [
+        "星期天",
+        "老虎",
+        "号",
+        "上个月"
+      ],
+      "accepted": [
+        "号"
+      ],
+      "explanation": "号 đọc là hào, nghĩa là Ngày, số. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 445.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "635faa01-297f-473e-992e-cb0d8ee54810"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “几” có nghĩa là gì?",
+      "options": [
+        "Hôm nay",
+        "Mấy",
+        "Sinh nhật",
+        "Phim ngắn, kịch ngắn"
+      ],
+      "accepted": [
+        "Mấy"
+      ],
+      "explanation": "几 đọc là jǐ, nghĩa là Mấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 446.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f733a746-13e6-410b-b6e9-b49d5105bc5a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “jǐ” và nghĩa “Mấy”.",
+      "options": [
+        "去年",
+        "几",
+        "生日快乐",
+        "天"
+      ],
+      "accepted": [
+        "几"
+      ],
+      "explanation": "几 đọc là jǐ, nghĩa là Mấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 446.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f733a746-13e6-410b-b6e9-b49d5105bc5a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “月” có nghĩa là gì?",
+      "options": [
+        "Năm ngoái",
+        "Tháng",
+        "Nhất",
+        "Vé số"
+      ],
+      "accepted": [
+        "Tháng"
+      ],
+      "explanation": "月 đọc là yuè, nghĩa là Tháng. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 447.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "39042fd0-60ce-4a78-9d2a-507400d0d593"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “yuè” và nghĩa “Tháng”.",
+      "options": [
+        "月",
+        "有空儿",
+        "星期",
+        "今年"
+      ],
+      "accepted": [
+        "月"
+      ],
+      "explanation": "月 đọc là yuè, nghĩa là Tháng. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 447.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "39042fd0-60ce-4a78-9d2a-507400d0d593"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “年” có nghĩa là gì?",
+      "options": [
+        "Tại sao",
+        "Năm",
+        "Tháng này",
+        "Vé vào cửa"
+      ],
+      "accepted": [
+        "Năm"
+      ],
+      "explanation": "年 đọc là nián, nghĩa là Năm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 448.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5261bf66-df13-4b88-adb2-1aaed8c5707a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “nián” và nghĩa “Năm”.",
+      "options": [
+        "年",
+        "小时",
+        "龙",
+        "马"
+      ],
+      "accepted": [
+        "年"
+      ],
+      "explanation": "年 đọc là nián, nghĩa là Năm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 448.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5261bf66-df13-4b88-adb2-1aaed8c5707a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “每” có nghĩa là gì?",
+      "options": [
+        "Mỗi",
+        "Giờ, điểm",
+        "Hổ",
+        "Nói"
+      ],
+      "accepted": [
+        "Mỗi"
+      ],
+      "explanation": "每 đọc là měi, nghĩa là Mỗi. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 449.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "75cc89dd-9e46-42b5-8df2-977e4afb4557"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “měi” và nghĩa “Mỗi”.",
+      "options": [
+        "今天",
+        "每",
+        "星期四",
+        "马"
+      ],
+      "accepted": [
+        "每"
+      ],
+      "explanation": "每 đọc là měi, nghĩa là Mỗi. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 449.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "75cc89dd-9e46-42b5-8df2-977e4afb4557"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “点” có nghĩa là gì?",
+      "options": [
+        "Tháng sau",
+        "Lợn, heo",
+        "Giờ, điểm",
+        "Ba ngày sau"
+      ],
+      "accepted": [
+        "Giờ, điểm"
+      ],
+      "explanation": "点 đọc là diǎn, nghĩa là Giờ, điểm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 450.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f7ff761d-bcac-4abc-aa2c-3c8fbcb333de"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “diǎn” và nghĩa “Giờ, điểm”.",
+      "options": [
+        "今天",
+        "真",
+        "猴子",
+        "点"
+      ],
+      "accepted": [
+        "点"
+      ],
+      "explanation": "点 đọc là diǎn, nghĩa là Giờ, điểm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 450.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f7ff761d-bcac-4abc-aa2c-3c8fbcb333de"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “分” có nghĩa là gì?",
+      "options": [
+        "Phút",
+        "Trời, ngày",
+        "Không quá, không được… lắm",
+        "Gà"
+      ],
+      "accepted": [
+        "Phút"
+      ],
+      "explanation": "分 đọc là fēn, nghĩa là Phút. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 451.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d4b417b5-c89c-4406-9306-d9fa86f8b8de"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “fēn” và nghĩa “Phút”.",
+      "options": [
+        "分",
+        "星期",
+        "因为",
+        "事"
+      ],
+      "accepted": [
+        "分"
+      ],
+      "explanation": "分 đọc là fēn, nghĩa là Phút. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 451.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d4b417b5-c89c-4406-9306-d9fa86f8b8de"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “小时” có nghĩa là gì?",
+      "options": [
+        "Tiếng, giờ (khoảng thời gian)",
+        "Năm sau nữa",
+        "Nhất",
+        "Thứ Sáu"
+      ],
+      "accepted": [
+        "Tiếng, giờ (khoảng thời gian)"
+      ],
+      "explanation": "小时 đọc là xiǎoshí, nghĩa là Tiếng, giờ (khoảng thời gian). Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 452.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "38f10d00-9e7e-4a83-a06b-61e876a62e84"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “xiǎoshí” và nghĩa “Tiếng, giờ (khoảng thời gian)”.",
+      "options": [
+        "介绍",
+        "出生",
+        "天",
+        "小时"
+      ],
+      "accepted": [
+        "小时"
+      ],
+      "explanation": "小时 đọc là xiǎoshí, nghĩa là Tiếng, giờ (khoảng thời gian). Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 452.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "38f10d00-9e7e-4a83-a06b-61e876a62e84"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “差” có nghĩa là gì?",
+      "options": [
+        "Tại sao",
+        "Vé số",
+        "Nhất",
+        "Kém, thiếu"
+      ],
+      "accepted": [
+        "Kém, thiếu"
+      ],
+      "explanation": "差 đọc là chà, nghĩa là Kém, thiếu. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 453.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f0f30ed5-039f-4f2c-b5e8-3a7f2c1e2a87"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “chà” và nghĩa “Kém, thiếu”.",
+      "options": [
+        "说话",
+        "鸡",
+        "牛",
+        "差"
+      ],
+      "accepted": [
+        "差"
+      ],
+      "explanation": "差 đọc là chà, nghĩa là Kém, thiếu. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 453.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f0f30ed5-039f-4f2c-b5e8-3a7f2c1e2a87"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “出生” có nghĩa là gì?",
+      "options": [
+        "Rảnh, có thời gian",
+        "Sinh ra",
+        "Giới thiệu",
+        "Thứ Sáu"
+      ],
+      "accepted": [
+        "Sinh ra"
+      ],
+      "explanation": "出生 đọc là chūshēng, nghĩa là Sinh ra. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 454.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "38f5d1ee-d4f2-4c14-a101-3597f786c9cf"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “chūshēng” và nghĩa “Sinh ra”.",
+      "options": [
+        "猪",
+        "明天",
+        "出生",
+        "短剧"
+      ],
+      "accepted": [
+        "出生"
+      ],
+      "explanation": "出生 đọc là chūshēng, nghĩa là Sinh ra. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 454.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "38f5d1ee-d4f2-4c14-a101-3597f786c9cf"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “蛋糕” có nghĩa là gì?",
+      "options": [
+        "Trò chuyện",
+        "Bánh ngọt, bánh sinh nhật",
+        "Mỗi năm",
+        "Hôm qua"
+      ],
+      "accepted": [
+        "Bánh ngọt, bánh sinh nhật"
+      ],
+      "explanation": "蛋糕 đọc là dàngāo, nghĩa là Bánh ngọt, bánh sinh nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 455.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6b9ca2e5-128c-4924-ba64-27a2edd318e0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “dàngāo” và nghĩa “Bánh ngọt, bánh sinh nhật”.",
+      "options": [
+        "蛋糕",
+        "过",
+        "因为",
+        "后天"
+      ],
+      "accepted": [
+        "蛋糕"
+      ],
+      "explanation": "蛋糕 đọc là dàngāo, nghĩa là Bánh ngọt, bánh sinh nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 455.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6b9ca2e5-128c-4924-ba64-27a2edd318e0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “属” có nghĩa là gì?",
+      "options": [
+        "Thuộc về, cầm tinh",
+        "Thứ Ba",
+        "Hôm qua",
+        "Gà"
+      ],
+      "accepted": [
+        "Thuộc về, cầm tinh"
+      ],
+      "explanation": "属 đọc là shǔ, nghĩa là Thuộc về, cầm tinh. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 456.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b63b85b5-331a-48b6-9464-89536866f3bc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “shǔ” và nghĩa “Thuộc về, cầm tinh”.",
+      "options": [
+        "属",
+        "太……了",
+        "大前年",
+        "大后年"
+      ],
+      "accepted": [
+        "属"
+      ],
+      "explanation": "属 đọc là shǔ, nghĩa là Thuộc về, cầm tinh. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 456.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b63b85b5-331a-48b6-9464-89536866f3bc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “生日” có nghĩa là gì?",
+      "options": [
+        "Rắn",
+        "Gà",
+        "Sinh nhật",
+        "Gặp, nhìn thấy"
+      ],
+      "accepted": [
+        "Sinh nhật"
+      ],
+      "explanation": "生日 đọc là shēngrì, nghĩa là Sinh nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 457.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "04babce7-b83d-4e29-b89a-69b26226d273"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “shēngrì” và nghĩa “Sinh nhật”.",
+      "options": [
+        "猴子",
+        "生日",
+        "休息",
+        "门票"
+      ],
+      "accepted": [
+        "生日"
+      ],
+      "explanation": "生日 đọc là shēngrì, nghĩa là Sinh nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 457.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "04babce7-b83d-4e29-b89a-69b26226d273"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “快乐” có nghĩa là gì?",
+      "options": [
+        "Cửa ra vào",
+        "Vui vẻ",
+        "Phim ngắn, kịch ngắn",
+        "Phim truyền hình"
+      ],
+      "accepted": [
+        "Vui vẻ"
+      ],
+      "explanation": "快乐 đọc là kuàilè, nghĩa là Vui vẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 458.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0f3a59eb-0580-49b6-a61b-706351094dd8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “kuàilè” và nghĩa “Vui vẻ”.",
+      "options": [
+        "猪",
+        "这个月",
+        "星期日",
+        "快乐"
+      ],
+      "accepted": [
+        "快乐"
+      ],
+      "explanation": "快乐 đọc là kuàilè, nghĩa là Vui vẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 458.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0f3a59eb-0580-49b6-a61b-706351094dd8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “星期” có nghĩa là gì?",
+      "options": [
+        "Tuần, thứ",
+        "Nói cho, báo cho",
+        "Năm kia",
+        "Một khắc, 15 phút"
+      ],
+      "accepted": [
+        "Tuần, thứ"
+      ],
+      "explanation": "星期 đọc là xīngqī, nghĩa là Tuần, thứ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 459.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f63e9dff-4af8-4fc5-a79a-f1944faaa103"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “xīngqī” và nghĩa “Tuần, thứ”.",
+      "options": [
+        "介绍",
+        "猪",
+        "这个月",
+        "星期"
+      ],
+      "accepted": [
+        "星期"
+      ],
+      "explanation": "星期 đọc là xīngqī, nghĩa là Tuần, thứ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 459.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f63e9dff-4af8-4fc5-a79a-f1944faaa103"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “真” có nghĩa là gì?",
+      "options": [
+        "Mỗi ngày",
+        "Trò chuyện",
+        "Tại sao",
+        "Thật, thật là"
+      ],
+      "accepted": [
+        "Thật, thật là"
+      ],
+      "explanation": "真 đọc là zhēn, nghĩa là Thật, thật là. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 460.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7bb39bb7-4725-4b12-ae32-f45950d842d6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “zhēn” và nghĩa “Thật, thật là”.",
+      "options": [
+        "真",
+        "星期",
+        "星期五",
+        "电视剧"
+      ],
+      "accepted": [
+        "真"
+      ],
+      "explanation": "真 đọc là zhēn, nghĩa là Thật, thật là. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 460.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7bb39bb7-4725-4b12-ae32-f45950d842d6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “太……了” có nghĩa là gì?",
+      "options": [
+        "Thuộc về, cầm tinh",
+        "Quá…",
+        "Giới thiệu",
+        "Đã từng (trợ từ kinh nghiệm)"
+      ],
+      "accepted": [
+        "Quá…"
+      ],
+      "explanation": "太……了 đọc là tài…le, nghĩa là Quá…. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 461.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a9d1b7f9-461f-4431-a5f1-db2f2f93649b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “tài…le” và nghĩa “Quá…”.",
+      "options": [
+        "几",
+        "看电影",
+        "太……了",
+        "属"
+      ],
+      "accepted": [
+        "太……了"
+      ],
+      "explanation": "太……了 đọc là tài…le, nghĩa là Quá…. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 461.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a9d1b7f9-461f-4431-a5f1-db2f2f93649b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “说” có nghĩa là gì?",
+      "options": [
+        "Xem phim",
+        "Nói",
+        "Năm sau nữa",
+        "Mỗi ngày"
+      ],
+      "accepted": [
+        "Nói"
+      ],
+      "explanation": "说 đọc là shuō, nghĩa là Nói. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 462.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fd035597-706f-4003-8dd0-0de9d7fe25ee"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “shuō” và nghĩa “Nói”.",
+      "options": [
+        "电视剧",
+        "每年",
+        "说",
+        "短剧"
+      ],
+      "accepted": [
+        "说"
+      ],
+      "explanation": "说 đọc là shuō, nghĩa là Nói. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 462.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fd035597-706f-4003-8dd0-0de9d7fe25ee"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “告诉” có nghĩa là gì?",
+      "options": [
+        "Nói cho, báo cho",
+        "Thứ Sáu",
+        "Tuần này",
+        "Vé vào cửa"
+      ],
+      "accepted": [
+        "Nói cho, báo cho"
+      ],
+      "explanation": "告诉 đọc là gàosu, nghĩa là Nói cho, báo cho. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 463.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "239e5ea4-9dc9-43e2-aff8-5dde0be396f5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “gàosu” và nghĩa “Nói cho, báo cho”.",
+      "options": [
+        "门票",
+        "星期六",
+        "见",
+        "告诉"
+      ],
+      "accepted": [
+        "告诉"
+      ],
+      "explanation": "告诉 đọc là gàosu, nghĩa là Nói cho, báo cho. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 463.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "239e5ea4-9dc9-43e2-aff8-5dde0be396f5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “聊天” có nghĩa là gì?",
+      "options": [
+        "Thứ Năm",
+        "Trò chuyện",
+        "Quá…",
+        "Sinh ra"
+      ],
+      "accepted": [
+        "Trò chuyện"
+      ],
+      "explanation": "聊天 đọc là liáotiān, nghĩa là Trò chuyện. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 464.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "628e1d9e-3a97-49e7-867b-e59235c78d14"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “liáotiān” và nghĩa “Trò chuyện”.",
+      "options": [
+        "聊天",
+        "看电影",
+        "半",
+        "礼拜"
+      ],
+      "accepted": [
+        "聊天"
+      ],
+      "explanation": "聊天 đọc là liáotiān, nghĩa là Trò chuyện. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 464.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "628e1d9e-3a97-49e7-867b-e59235c78d14"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “为什么” có nghĩa là gì?",
+      "options": [
+        "Tại sao",
+        "Trâu, bò",
+        "Sinh ra",
+        "Mỗi tháng"
+      ],
+      "accepted": [
+        "Tại sao"
+      ],
+      "explanation": "为什么 đọc là wèishénme, nghĩa là Tại sao. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 465.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6619ebdd-c5fe-41c5-a99b-0b7f5b161ed8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “wèishénme” và nghĩa “Tại sao”.",
+      "options": [
+        "为什么",
+        "点",
+        "分",
+        "蛇"
+      ],
+      "accepted": [
+        "为什么"
+      ],
+      "explanation": "为什么 đọc là wèishénme, nghĩa là Tại sao. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 465.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6619ebdd-c5fe-41c5-a99b-0b7f5b161ed8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “最” có nghĩa là gì?",
+      "options": [
+        "Khỉ",
+        "Nói cho, báo cho",
+        "Nhất",
+        "Năm sau nữa"
+      ],
+      "accepted": [
+        "Nhất"
+      ],
+      "explanation": "最 đọc là zuì, nghĩa là Nhất. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 466.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "28faab2e-a3ef-4894-9911-970cfa5fda5d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “zuì” và nghĩa “Nhất”.",
+      "options": [
+        "星期日",
+        "最",
+        "介绍",
+        "因为"
+      ],
+      "accepted": [
+        "最"
+      ],
+      "explanation": "最 đọc là zuì, nghĩa là Nhất. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 466.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "28faab2e-a3ef-4894-9911-970cfa5fda5d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “事” có nghĩa là gì?",
+      "options": [
+        "Việc, chuyện",
+        "Chúc mừng sinh nhật",
+        "Thứ Ba",
+        "Chuột"
+      ],
+      "accepted": [
+        "Việc, chuyện"
+      ],
+      "explanation": "事 đọc là shì, nghĩa là Việc, chuyện. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 467.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "64a2136f-4d95-4f41-aef0-982daabdc3c3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “shì” và nghĩa “Việc, chuyện”.",
+      "options": [
+        "星期一",
+        "一刻",
+        "事",
+        "鸡"
+      ],
+      "accepted": [
+        "事"
+      ],
+      "explanation": "事 đọc là shì, nghĩa là Việc, chuyện. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 467.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "64a2136f-4d95-4f41-aef0-982daabdc3c3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “介绍” có nghĩa là gì?",
+      "options": [
+        "Năm kia",
+        "Giới thiệu",
+        "Dê",
+        "Phim truyền hình"
+      ],
+      "accepted": [
+        "Giới thiệu"
+      ],
+      "explanation": "介绍 đọc là jièshào, nghĩa là Giới thiệu. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 468.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "71d0fac4-3924-4aa2-b3c0-4563c3e377f4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “jièshào” và nghĩa “Giới thiệu”.",
+      "options": [
+        "介绍",
+        "后天",
+        "去年",
+        "星期五"
+      ],
+      "accepted": [
+        "介绍"
+      ],
+      "explanation": "介绍 đọc là jièshào, nghĩa là Giới thiệu. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 468.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "71d0fac4-3924-4aa2-b3c0-4563c3e377f4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “有空儿” có nghĩa là gì?",
+      "options": [
+        "Tháng sau",
+        "Tiếng, giờ (khoảng thời gian)",
+        "Rảnh, có thời gian",
+        "Thỏ"
+      ],
+      "accepted": [
+        "Rảnh, có thời gian"
+      ],
+      "explanation": "有空儿 đọc là yǒu kòngr, nghĩa là Rảnh, có thời gian. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 469.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "10d8f1c0-2be9-430f-b226-9151a43ebc7a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “yǒu kòngr” và nghĩa “Rảnh, có thời gian”.",
+      "options": [
+        "昨天",
+        "上个月",
+        "大后年",
+        "有空儿"
+      ],
+      "accepted": [
+        "有空儿"
+      ],
+      "explanation": "有空儿 đọc là yǒu kòngr, nghĩa là Rảnh, có thời gian. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 469.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "10d8f1c0-2be9-430f-b226-9151a43ebc7a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “见” có nghĩa là gì?",
+      "options": [
+        "Đã từng (trợ từ kinh nghiệm)",
+        "Phim truyền hình",
+        "Gặp, nhìn thấy",
+        "Một khắc, 15 phút"
+      ],
+      "accepted": [
+        "Gặp, nhìn thấy"
+      ],
+      "explanation": "见 đọc là jiàn, nghĩa là Gặp, nhìn thấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 470.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e181c9d5-2ee4-4db3-a060-13b61941f7c8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “jiàn” và nghĩa “Gặp, nhìn thấy”.",
+      "options": [
+        "一刻",
+        "见",
+        "狗",
+        "下个月"
+      ],
+      "accepted": [
+        "见"
+      ],
+      "explanation": "见 đọc là jiàn, nghĩa là Gặp, nhìn thấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 470.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e181c9d5-2ee4-4db3-a060-13b61941f7c8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “尝” có nghĩa là gì?",
+      "options": [
+        "Tuần trước",
+        "Giờ, điểm",
+        "Việc, chuyện",
+        "Nếm, thử"
+      ],
+      "accepted": [
+        "Nếm, thử"
+      ],
+      "explanation": "尝 đọc là cháng, nghĩa là Nếm, thử. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 471.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "31348d2e-3cf0-49ae-ad62-e2c6b6109f02"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “cháng” và nghĩa “Nếm, thử”.",
+      "options": [
+        "太……了",
+        "说",
+        "尝",
+        "后年"
+      ],
+      "accepted": [
+        "尝"
+      ],
+      "explanation": "尝 đọc là cháng, nghĩa là Nếm, thử. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 471.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "31348d2e-3cf0-49ae-ad62-e2c6b6109f02"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “过” có nghĩa là gì?",
+      "options": [
+        "Năm nay",
+        "Bởi vì",
+        "Giới thiệu",
+        "Đã từng (trợ từ kinh nghiệm)"
+      ],
+      "accepted": [
+        "Đã từng (trợ từ kinh nghiệm)"
+      ],
+      "explanation": "过 đọc là guo, nghĩa là Đã từng (trợ từ kinh nghiệm). Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 472.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e696419d-a934-4c64-a480-a90e236f356c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “guo” và nghĩa “Đã từng (trợ từ kinh nghiệm)”.",
+      "options": [
+        "过",
+        "有空儿",
+        "不太",
+        "这个月"
+      ],
+      "accepted": [
+        "过"
+      ],
+      "explanation": "过 đọc là guo, nghĩa là Đã từng (trợ từ kinh nghiệm). Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 472.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e696419d-a934-4c64-a480-a90e236f356c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “电视剧” có nghĩa là gì?",
+      "options": [
+        "Nghỉ, nghỉ ngơi",
+        "Tuần trước",
+        "Năm kia",
+        "Phim truyền hình"
+      ],
+      "accepted": [
+        "Phim truyền hình"
+      ],
+      "explanation": "电视剧 đọc là diànshìjù, nghĩa là Phim truyền hình. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 473.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f7c0bb76-21b7-4cee-9a1a-9af6ab2017b0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “diànshìjù” và nghĩa “Phim truyền hình”.",
+      "options": [
+        "上个月",
+        "电视剧",
+        "蛋糕",
+        "最"
+      ],
+      "accepted": [
+        "电视剧"
+      ],
+      "explanation": "电视剧 đọc là diànshìjù, nghĩa là Phim truyền hình. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 473.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f7c0bb76-21b7-4cee-9a1a-9af6ab2017b0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “门口” có nghĩa là gì?",
+      "options": [
+        "Cửa ra vào",
+        "Quá…",
+        "Chúc mừng sinh nhật",
+        "Nói cho, báo cho"
+      ],
+      "accepted": [
+        "Cửa ra vào"
+      ],
+      "explanation": "门口 đọc là ménkǒu, nghĩa là Cửa ra vào. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 474.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "354eb12f-e065-4721-8730-f211882d9cdf"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “ménkǒu” và nghĩa “Cửa ra vào”.",
+      "options": [
+        "见",
+        "马",
+        "门口",
+        "蛇"
+      ],
+      "accepted": [
+        "门口"
+      ],
+      "explanation": "门口 đọc là ménkǒu, nghĩa là Cửa ra vào. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 474.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "354eb12f-e065-4721-8730-f211882d9cdf"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “休息” có nghĩa là gì?",
+      "options": [
+        "Nghỉ, nghỉ ngơi",
+        "Trò chuyện",
+        "Tiếng, giờ (khoảng thời gian)",
+        "Rắn"
+      ],
+      "accepted": [
+        "Nghỉ, nghỉ ngơi"
+      ],
+      "explanation": "休息 đọc là xiūxi, nghĩa là Nghỉ, nghỉ ngơi. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 475.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "485c3603-b85c-4ade-b5ee-5afb83b53526"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “xiūxi” và nghĩa “Nghỉ, nghỉ ngơi”.",
+      "options": [
+        "星期一",
+        "休息",
+        "半",
+        "下个月"
+      ],
+      "accepted": [
+        "休息"
+      ],
+      "explanation": "休息 đọc là xiūxi, nghĩa là Nghỉ, nghỉ ngơi. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 475.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "485c3603-b85c-4ade-b5ee-5afb83b53526"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “昨天” có nghĩa là gì?",
+      "options": [
+        "Nửa",
+        "Hôm qua",
+        "Rồng",
+        "Chủ nhật"
+      ],
+      "accepted": [
+        "Hôm qua"
+      ],
+      "explanation": "昨天 đọc là zuótiān, nghĩa là Hôm qua. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 479.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0d28fb46-52c2-48de-843d-1aa2f5bb54a9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “zuótiān” và nghĩa “Hôm qua”.",
+      "options": [
+        "介绍",
+        "去年",
+        "昨天",
+        "生日"
+      ],
+      "accepted": [
+        "昨天"
+      ],
+      "explanation": "昨天 đọc là zuótiān, nghĩa là Hôm qua. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 479.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0d28fb46-52c2-48de-843d-1aa2f5bb54a9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “明天” có nghĩa là gì?",
+      "options": [
+        "Tuần, thứ",
+        "Tháng sau",
+        "Thật, thật là",
+        "Ngày mai"
+      ],
+      "accepted": [
+        "Ngày mai"
+      ],
+      "explanation": "明天 đọc là míngtiān, nghĩa là Ngày mai. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 480.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5b9709ac-cecd-4dd2-97e0-8f0023ae30a8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “míngtiān” và nghĩa “Ngày mai”.",
+      "options": [
+        "为什么",
+        "前天",
+        "明天",
+        "大后天"
+      ],
+      "accepted": [
+        "明天"
+      ],
+      "explanation": "明天 đọc là míngtiān, nghĩa là Ngày mai. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 480.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5b9709ac-cecd-4dd2-97e0-8f0023ae30a8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “前天” có nghĩa là gì?",
+      "options": [
+        "Tuần trước",
+        "Năm sau",
+        "Dê",
+        "Hôm kia"
+      ],
+      "accepted": [
+        "Hôm kia"
+      ],
+      "explanation": "前天 đọc là qiántiān, nghĩa là Hôm kia. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 481.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a0fdf155-e2c0-4ddd-90f9-86642edc3cc3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “qiántiān” và nghĩa “Hôm kia”.",
+      "options": [
+        "星期三",
+        "星期五",
+        "前天",
+        "聊天"
+      ],
+      "accepted": [
+        "前天"
+      ],
+      "explanation": "前天 đọc là qiántiān, nghĩa là Hôm kia. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 481.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a0fdf155-e2c0-4ddd-90f9-86642edc3cc3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “后天” có nghĩa là gì?",
+      "options": [
+        "Trâu, bò",
+        "Mỗi",
+        "Phim ngắn, kịch ngắn",
+        "Ngày kia"
+      ],
+      "accepted": [
+        "Ngày kia"
+      ],
+      "explanation": "后天 đọc là hòutiān, nghĩa là Ngày kia. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 482.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1bfff698-7886-43e8-b2d5-4540607a5605"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “hòutiān” và nghĩa “Ngày kia”.",
+      "options": [
+        "星期日",
+        "后天",
+        "不太",
+        "星期四"
+      ],
+      "accepted": [
+        "后天"
+      ],
+      "explanation": "后天 đọc là hòutiān, nghĩa là Ngày kia. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 482.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1bfff698-7886-43e8-b2d5-4540607a5605"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “大前天” có nghĩa là gì?",
+      "options": [
+        "Ngựa",
+        "Ba ngày trước",
+        "Thứ Sáu",
+        "Chó"
+      ],
+      "accepted": [
+        "Ba ngày trước"
+      ],
+      "explanation": "大前天 đọc là dàqiántiān, nghĩa là Ba ngày trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 483.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2ec83ffd-2f6b-412d-a12b-009907641578"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “dàqiántiān” và nghĩa “Ba ngày trước”.",
+      "options": [
+        "为什么",
+        "龙",
+        "大前天",
+        "看电影"
+      ],
+      "accepted": [
+        "大前天"
+      ],
+      "explanation": "大前天 đọc là dàqiántiān, nghĩa là Ba ngày trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 483.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2ec83ffd-2f6b-412d-a12b-009907641578"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “大后天” có nghĩa là gì?",
+      "options": [
+        "Rồng",
+        "Mỗi",
+        "Ba ngày sau",
+        "Ngựa"
+      ],
+      "accepted": [
+        "Ba ngày sau"
+      ],
+      "explanation": "大后天 đọc là dàhòutiān, nghĩa là Ba ngày sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 484.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9c1a7c34-190c-425e-a683-163ce6199319"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “dàhòutiān” và nghĩa “Ba ngày sau”.",
+      "options": [
+        "下个星期",
+        "大后天",
+        "鸡",
+        "介绍"
+      ],
+      "accepted": [
+        "大后天"
+      ],
+      "explanation": "大后天 đọc là dàhòutiān, nghĩa là Ba ngày sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 484.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9c1a7c34-190c-425e-a683-163ce6199319"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “天” có nghĩa là gì?",
+      "options": [
+        "Kém, thiếu",
+        "Quá…",
+        "Trời, ngày",
+        "Phim ngắn, kịch ngắn"
+      ],
+      "accepted": [
+        "Trời, ngày"
+      ],
+      "explanation": "天 đọc là tiān, nghĩa là Trời, ngày. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 485.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "946474b9-219b-4d6d-941a-e288fcad9f7c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “tiān” và nghĩa “Trời, ngày”.",
+      "options": [
+        "休息",
+        "事",
+        "天",
+        "出生"
+      ],
+      "accepted": [
+        "天"
+      ],
+      "explanation": "天 đọc là tiān, nghĩa là Trời, ngày. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 485.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "946474b9-219b-4d6d-941a-e288fcad9f7c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “每天” có nghĩa là gì?",
+      "options": [
+        "Phút",
+        "Thứ Tư",
+        "Mỗi ngày",
+        "Đã từng (trợ từ kinh nghiệm)"
+      ],
+      "accepted": [
+        "Mỗi ngày"
+      ],
+      "explanation": "每天 đọc là měitiān, nghĩa là Mỗi ngày. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 486.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6a203aa4-273a-4679-9f24-7cb22299537f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “měitiān” và nghĩa “Mỗi ngày”.",
+      "options": [
+        "前年",
+        "太……了",
+        "因为",
+        "每天"
+      ],
+      "accepted": [
+        "每天"
+      ],
+      "explanation": "每天 đọc là měitiān, nghĩa là Mỗi ngày. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 486.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6a203aa4-273a-4679-9f24-7cb22299537f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “每月” có nghĩa là gì?",
+      "options": [
+        "Thứ Ba",
+        "Trò chuyện",
+        "Nói chuyện",
+        "Mỗi tháng"
+      ],
+      "accepted": [
+        "Mỗi tháng"
+      ],
+      "explanation": "每月 đọc là měi yuè, nghĩa là Mỗi tháng. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 487.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f800b352-e7f3-4bd4-adcf-f7030f6f01b6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “měi yuè” và nghĩa “Mỗi tháng”.",
+      "options": [
+        "这个月",
+        "彩票",
+        "每月",
+        "下个月"
+      ],
+      "accepted": [
+        "每月"
+      ],
+      "explanation": "每月 đọc là měi yuè, nghĩa là Mỗi tháng. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 487.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f800b352-e7f3-4bd4-adcf-f7030f6f01b6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “每年” có nghĩa là gì?",
+      "options": [
+        "Thật, thật là",
+        "Hôm qua",
+        "Gặp, nhìn thấy",
+        "Mỗi năm"
+      ],
+      "accepted": [
+        "Mỗi năm"
+      ],
+      "explanation": "每年 đọc là měi nián, nghĩa là Mỗi năm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 488.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "150acfe2-f765-4037-b74a-c79d697cb292"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “měi nián” và nghĩa “Mỗi năm”.",
+      "options": [
+        "星期",
+        "出生",
+        "半",
+        "每年"
+      ],
+      "accepted": [
+        "每年"
+      ],
+      "explanation": "每年 đọc là měi nián, nghĩa là Mỗi năm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 488.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "150acfe2-f765-4037-b74a-c79d697cb292"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “上个星期” có nghĩa là gì?",
+      "options": [
+        "Nói cho, báo cho",
+        "Năm ngoái",
+        "Trời, ngày",
+        "Tuần trước"
+      ],
+      "accepted": [
+        "Tuần trước"
+      ],
+      "explanation": "上个星期 đọc là shàng ge xīngqī, nghĩa là Tuần trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 489.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "af18943a-3efd-40c2-8a58-576010e4ed6f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “shàng ge xīngqī” và nghĩa “Tuần trước”.",
+      "options": [
+        "猪",
+        "上个星期",
+        "半",
+        "牛"
+      ],
+      "accepted": [
+        "上个星期"
+      ],
+      "explanation": "上个星期 đọc là shàng ge xīngqī, nghĩa là Tuần trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 489.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "af18943a-3efd-40c2-8a58-576010e4ed6f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “这个星期” có nghĩa là gì?",
+      "options": [
+        "Khỉ",
+        "Ba ngày sau",
+        "Tuần này",
+        "Sinh ra"
+      ],
+      "accepted": [
+        "Tuần này"
+      ],
+      "explanation": "这个星期 đọc là zhè ge xīngqī, nghĩa là Tuần này. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 490.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "62760691-4601-4942-a27f-8d7c837dc3c3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “zhè ge xīngqī” và nghĩa “Tuần này”.",
+      "options": [
+        "羊",
+        "蛇",
+        "这个星期",
+        "上个月"
+      ],
+      "accepted": [
+        "这个星期"
+      ],
+      "explanation": "这个星期 đọc là zhè ge xīngqī, nghĩa là Tuần này. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 490.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "62760691-4601-4942-a27f-8d7c837dc3c3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “下个星期” có nghĩa là gì?",
+      "options": [
+        "Nghỉ, nghỉ ngơi",
+        "Thật, thật là",
+        "Tuần sau",
+        "Tháng sau"
+      ],
+      "accepted": [
+        "Tuần sau"
+      ],
+      "explanation": "下个星期 đọc là xià ge xīngqī, nghĩa là Tuần sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 491.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "34bb271a-2eac-4bf5-bd9e-8955f38737fd"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “xià ge xīngqī” và nghĩa “Tuần sau”.",
+      "options": [
+        "猴子",
+        "下个星期",
+        "后年",
+        "半"
+      ],
+      "accepted": [
+        "下个星期"
+      ],
+      "explanation": "下个星期 đọc là xià ge xīngqī, nghĩa là Tuần sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 491.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "34bb271a-2eac-4bf5-bd9e-8955f38737fd"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “上个月” có nghĩa là gì?",
+      "options": [
+        "Tháng trước",
+        "Trò chuyện",
+        "Vé số",
+        "Ngựa"
+      ],
+      "accepted": [
+        "Tháng trước"
+      ],
+      "explanation": "上个月 đọc là shàng ge yuè, nghĩa là Tháng trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 492.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3fd8200f-7556-4576-a408-697ad27333c4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “shàng ge yuè” và nghĩa “Tháng trước”.",
+      "options": [
+        "老虎",
+        "门口",
+        "上个月",
+        "大后年"
+      ],
+      "accepted": [
+        "上个月"
+      ],
+      "explanation": "上个月 đọc là shàng ge yuè, nghĩa là Tháng trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 492.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3fd8200f-7556-4576-a408-697ad27333c4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “这个月” có nghĩa là gì?",
+      "options": [
+        "Tại sao",
+        "Mỗi tháng",
+        "Tháng này",
+        "Năm sau nữa"
+      ],
+      "accepted": [
+        "Tháng này"
+      ],
+      "explanation": "这个月 đọc là zhè ge yuè, nghĩa là Tháng này. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 493.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6361f3b4-b0fc-4519-96d3-0163683fe29e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “zhè ge yuè” và nghĩa “Tháng này”.",
+      "options": [
+        "这个月",
+        "聊天",
+        "告诉",
+        "说话"
+      ],
+      "accepted": [
+        "这个月"
+      ],
+      "explanation": "这个月 đọc là zhè ge yuè, nghĩa là Tháng này. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 493.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6361f3b4-b0fc-4519-96d3-0163683fe29e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “下个月” có nghĩa là gì?",
+      "options": [
+        "Năm sau",
+        "Tháng sau",
+        "Ngày mai",
+        "Tại sao"
+      ],
+      "accepted": [
+        "Tháng sau"
+      ],
+      "explanation": "下个月 đọc là xià ge yuè, nghĩa là Tháng sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 494.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "71287c21-5030-457d-8dc3-03c6356e2d23"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “xià ge yuè” và nghĩa “Tháng sau”.",
+      "options": [
+        "星期日",
+        "事",
+        "快乐",
+        "下个月"
+      ],
+      "accepted": [
+        "下个月"
+      ],
+      "explanation": "下个月 đọc là xià ge yuè, nghĩa là Tháng sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 494.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "71287c21-5030-457d-8dc3-03c6356e2d23"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “前年” có nghĩa là gì?",
+      "options": [
+        "Thứ Hai",
+        "Nửa",
+        "Năm kia",
+        "Thuộc về, cầm tinh"
+      ],
+      "accepted": [
+        "Năm kia"
+      ],
+      "explanation": "前年 đọc là qiánnián, nghĩa là Năm kia. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 495.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "28651d1d-7a56-4a6a-bd1c-619f54139b53"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “qiánnián” và nghĩa “Năm kia”.",
+      "options": [
+        "上个月",
+        "前年",
+        "月",
+        "牛"
+      ],
+      "accepted": [
+        "前年"
+      ],
+      "explanation": "前年 đọc là qiánnián, nghĩa là Năm kia. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 495.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "28651d1d-7a56-4a6a-bd1c-619f54139b53"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “去年” có nghĩa là gì?",
+      "options": [
+        "Năm ngoái",
+        "Nghỉ, nghỉ ngơi",
+        "Bởi vì",
+        "Ngày mai"
+      ],
+      "accepted": [
+        "Năm ngoái"
+      ],
+      "explanation": "去年 đọc là qùnián, nghĩa là Năm ngoái. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 496.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a378966c-5034-4bb3-80a5-9505c6d21c8f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “qùnián” và nghĩa “Năm ngoái”.",
+      "options": [
+        "为什么",
+        "礼拜",
+        "前天",
+        "去年"
+      ],
+      "accepted": [
+        "去年"
+      ],
+      "explanation": "去年 đọc là qùnián, nghĩa là Năm ngoái. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 496.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a378966c-5034-4bb3-80a5-9505c6d21c8f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “今年” có nghĩa là gì?",
+      "options": [
+        "Năm nay",
+        "Vé vào cửa",
+        "Ngày mai",
+        "Thứ Sáu"
+      ],
+      "accepted": [
+        "Năm nay"
+      ],
+      "explanation": "今年 đọc là jīnnián, nghĩa là Năm nay. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 497.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7d643217-5b99-47de-97b2-3228bbab719e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “jīnnián” và nghĩa “Năm nay”.",
+      "options": [
+        "今年",
+        "星期五",
+        "每",
+        "星期天"
+      ],
+      "accepted": [
+        "今年"
+      ],
+      "explanation": "今年 đọc là jīnnián, nghĩa là Năm nay. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 497.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7d643217-5b99-47de-97b2-3228bbab719e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “明年” có nghĩa là gì?",
+      "options": [
+        "Năm sau",
+        "Nói chuyện",
+        "Nhất",
+        "Nói"
+      ],
+      "accepted": [
+        "Năm sau"
+      ],
+      "explanation": "明年 đọc là míngnián, nghĩa là Năm sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 498.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6ca36d76-10ed-478d-92ee-94df9d719496"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “míngnián” và nghĩa “Năm sau”.",
+      "options": [
+        "蛋糕",
+        "前年",
+        "真",
+        "明年"
+      ],
+      "accepted": [
+        "明年"
+      ],
+      "explanation": "明年 đọc là míngnián, nghĩa là Năm sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 498.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6ca36d76-10ed-478d-92ee-94df9d719496"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “后年” có nghĩa là gì?",
+      "options": [
+        "Gà",
+        "Một khắc, 15 phút",
+        "Năm sau nữa",
+        "Ngày kia"
+      ],
+      "accepted": [
+        "Năm sau nữa"
+      ],
+      "explanation": "后年 đọc là hòunián, nghĩa là Năm sau nữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 499.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "92a89aac-b2b8-4958-b6ca-1df7ae75c5ff"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “hòunián” và nghĩa “Năm sau nữa”.",
+      "options": [
+        "上个月",
+        "后年",
+        "星期",
+        "每年"
+      ],
+      "accepted": [
+        "后年"
+      ],
+      "explanation": "后年 đọc là hòunián, nghĩa là Năm sau nữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 499.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "92a89aac-b2b8-4958-b6ca-1df7ae75c5ff"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “大前年” có nghĩa là gì?",
+      "options": [
+        "Tháng trước",
+        "Năm ngoái",
+        "Ba năm trước",
+        "Năm sau nữa"
+      ],
+      "accepted": [
+        "Ba năm trước"
+      ],
+      "explanation": "大前年 đọc là dàqiánnián, nghĩa là Ba năm trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 500.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9525f951-9b1e-4306-aac7-43dd56a5aca2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “dàqiánnián” và nghĩa “Ba năm trước”.",
+      "options": [
+        "一刻",
+        "大前年",
+        "星期四",
+        "每天"
+      ],
+      "accepted": [
+        "大前年"
+      ],
+      "explanation": "大前年 đọc là dàqiánnián, nghĩa là Ba năm trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 500.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9525f951-9b1e-4306-aac7-43dd56a5aca2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “大后年” có nghĩa là gì?",
+      "options": [
+        "Thứ Tư",
+        "Việc, chuyện",
+        "Nói",
+        "Ba năm sau"
+      ],
+      "accepted": [
+        "Ba năm sau"
+      ],
+      "explanation": "大后年 đọc là dàhòunián, nghĩa là Ba năm sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 501.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "dfb36ba9-2946-463c-a513-84785224a5ff"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “dàhòunián” và nghĩa “Ba năm sau”.",
+      "options": [
+        "大前年",
+        "大后年",
+        "今年",
+        "上个月"
+      ],
+      "accepted": [
+        "大后年"
+      ],
+      "explanation": "大后年 đọc là dàhòunián, nghĩa là Ba năm sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 501.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "dfb36ba9-2946-463c-a513-84785224a5ff"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “星期一” có nghĩa là gì?",
+      "options": [
+        "Tháng trước",
+        "Thứ Hai",
+        "Lợn, heo",
+        "Vé số"
+      ],
+      "accepted": [
+        "Thứ Hai"
+      ],
+      "explanation": "星期一 đọc là xīngqīyī, nghĩa là Thứ Hai. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 505.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "43186bef-7002-4132-97ea-239e4cff1552"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “xīngqīyī” và nghĩa “Thứ Hai”.",
+      "options": [
+        "几",
+        "星期一",
+        "龙",
+        "明天"
+      ],
+      "accepted": [
+        "星期一"
+      ],
+      "explanation": "星期一 đọc là xīngqīyī, nghĩa là Thứ Hai. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 505.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "43186bef-7002-4132-97ea-239e4cff1552"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “星期二” có nghĩa là gì?",
+      "options": [
+        "Giờ, điểm",
+        "Thứ Ba",
+        "Ngày kia",
+        "Tuần trước"
+      ],
+      "accepted": [
+        "Thứ Ba"
+      ],
+      "explanation": "星期二 đọc là xīngqī'èr, nghĩa là Thứ Ba. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 506.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "923b7289-d272-41d3-a0cb-12d7d8e4e6b4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “xīngqī'èr” và nghĩa “Thứ Ba”.",
+      "options": [
+        "星期日",
+        "星期二",
+        "差",
+        "天"
+      ],
+      "accepted": [
+        "星期二"
+      ],
+      "explanation": "星期二 đọc là xīngqī'èr, nghĩa là Thứ Ba. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 506.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "923b7289-d272-41d3-a0cb-12d7d8e4e6b4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “星期三” có nghĩa là gì?",
+      "options": [
+        "Thứ Tư",
+        "Ngựa",
+        "Ba năm sau",
+        "Bởi vì"
+      ],
+      "accepted": [
+        "Thứ Tư"
+      ],
+      "explanation": "星期三 đọc là xīngqīsān, nghĩa là Thứ Tư. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 507.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "87bb4ec0-f124-482a-bff7-335a1d3306eb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “xīngqīsān” và nghĩa “Thứ Tư”.",
+      "options": [
+        "每",
+        "昨天",
+        "蛇",
+        "星期三"
+      ],
+      "accepted": [
+        "星期三"
+      ],
+      "explanation": "星期三 đọc là xīngqīsān, nghĩa là Thứ Tư. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 507.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "87bb4ec0-f124-482a-bff7-335a1d3306eb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “星期四” có nghĩa là gì?",
+      "options": [
+        "Tháng này",
+        "Cửa ra vào",
+        "Thứ Năm",
+        "Năm"
+      ],
+      "accepted": [
+        "Thứ Năm"
+      ],
+      "explanation": "星期四 đọc là xīngqīsì, nghĩa là Thứ Năm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 508.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "700c4b2c-e6b9-46c2-a6b1-a9d1d62bbe67"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “xīngqīsì” và nghĩa “Thứ Năm”.",
+      "options": [
+        "星期四",
+        "聊天",
+        "鸡",
+        "尝"
+      ],
+      "accepted": [
+        "星期四"
+      ],
+      "explanation": "星期四 đọc là xīngqīsì, nghĩa là Thứ Năm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 508.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "700c4b2c-e6b9-46c2-a6b1-a9d1d62bbe67"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “星期五” có nghĩa là gì?",
+      "options": [
+        "Chó",
+        "Thứ Sáu",
+        "Nói cho, báo cho",
+        "Không quá, không được… lắm"
+      ],
+      "accepted": [
+        "Thứ Sáu"
+      ],
+      "explanation": "星期五 đọc là xīngqīwǔ, nghĩa là Thứ Sáu. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 509.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c6d096a7-d604-4451-a59a-96d605d81fff"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “xīngqīwǔ” và nghĩa “Thứ Sáu”.",
+      "options": [
+        "说",
+        "星期五",
+        "门票",
+        "见"
+      ],
+      "accepted": [
+        "星期五"
+      ],
+      "explanation": "星期五 đọc là xīngqīwǔ, nghĩa là Thứ Sáu. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 509.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c6d096a7-d604-4451-a59a-96d605d81fff"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “星期六” có nghĩa là gì?",
+      "options": [
+        "Tuần trước",
+        "Thứ Bảy",
+        "Nói",
+        "Quá…"
+      ],
+      "accepted": [
+        "Thứ Bảy"
+      ],
+      "explanation": "星期六 đọc là xīngqīliù, nghĩa là Thứ Bảy. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 510.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "dd389365-8234-4bb7-80d4-d8d1dc87fa40"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “xīngqīliù” và nghĩa “Thứ Bảy”.",
+      "options": [
+        "星期六",
+        "每天",
+        "星期三",
+        "牛"
+      ],
+      "accepted": [
+        "星期六"
+      ],
+      "explanation": "星期六 đọc là xīngqīliù, nghĩa là Thứ Bảy. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 510.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "dd389365-8234-4bb7-80d4-d8d1dc87fa40"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “星期日” có nghĩa là gì?",
+      "options": [
+        "Đã từng (trợ từ kinh nghiệm)",
+        "Chủ nhật",
+        "Quá…",
+        "Phim ngắn, kịch ngắn"
+      ],
+      "accepted": [
+        "Chủ nhật"
+      ],
+      "explanation": "星期日 đọc là xīngqīrì, nghĩa là Chủ nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 511.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2fa7e543-8199-4b18-8d90-69406990e83c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “xīngqīrì” và nghĩa “Chủ nhật”.",
+      "options": [
+        "星期日",
+        "这个星期",
+        "电视剧",
+        "每天"
+      ],
+      "accepted": [
+        "星期日"
+      ],
+      "explanation": "星期日 đọc là xīngqīrì, nghĩa là Chủ nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 511.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2fa7e543-8199-4b18-8d90-69406990e83c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “星期天” có nghĩa là gì?",
+      "options": [
+        "Thứ Tư",
+        "Chúc mừng sinh nhật",
+        "Tuần sau",
+        "Chủ nhật"
+      ],
+      "accepted": [
+        "Chủ nhật"
+      ],
+      "explanation": "星期天 đọc là xīngqītiān, nghĩa là Chủ nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 512.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0a2fba93-bcbd-4fb1-a4f8-467ef931e36a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “xīngqītiān” và nghĩa “Chủ nhật”.",
+      "options": [
+        "星期二",
+        "聊天",
+        "事",
+        "星期天"
+      ],
+      "accepted": [
+        "星期天"
+      ],
+      "explanation": "星期天 đọc là xīngqītiān, nghĩa là Chủ nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 512.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0a2fba93-bcbd-4fb1-a4f8-467ef931e36a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “礼拜” có nghĩa là gì?",
+      "options": [
+        "Giờ, điểm",
+        "Tuần, thứ",
+        "Xem phim",
+        "Hổ"
+      ],
+      "accepted": [
+        "Tuần, thứ"
+      ],
+      "explanation": "礼拜 đọc là lǐbài, nghĩa là Tuần, thứ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 513.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "20883047-8843-4305-9d0a-3309d150f653"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “lǐbài” và nghĩa “Tuần, thứ”.",
+      "options": [
+        "生日快乐",
+        "礼拜",
+        "前年",
+        "这个月"
+      ],
+      "accepted": [
+        "礼拜"
+      ],
+      "explanation": "礼拜 đọc là lǐbài, nghĩa là Tuần, thứ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 513.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "20883047-8843-4305-9d0a-3309d150f653"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “半” có nghĩa là gì?",
+      "options": [
+        "Hôm qua",
+        "Phút",
+        "Nếm, thử",
+        "Nửa"
+      ],
+      "accepted": [
+        "Nửa"
+      ],
+      "explanation": "半 đọc là bàn, nghĩa là Nửa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 517.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "686da105-e2ce-4bc9-b7c4-2d5b0a1915ed"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “bàn” và nghĩa “Nửa”.",
+      "options": [
+        "半",
+        "马",
+        "为什么",
+        "说"
+      ],
+      "accepted": [
+        "半"
+      ],
+      "explanation": "半 đọc là bàn, nghĩa là Nửa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 517.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "686da105-e2ce-4bc9-b7c4-2d5b0a1915ed"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “一刻” có nghĩa là gì?",
+      "options": [
+        "Một khắc, 15 phút",
+        "Tại sao",
+        "Sinh ra",
+        "Tháng trước"
+      ],
+      "accepted": [
+        "Một khắc, 15 phút"
+      ],
+      "explanation": "一刻 đọc là yí kè, nghĩa là Một khắc, 15 phút. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 518.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c8c1a71f-3d18-4efc-aadb-793d75fc16f9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “yí kè” và nghĩa “Một khắc, 15 phút”.",
+      "options": [
+        "蛇",
+        "年",
+        "几",
+        "一刻"
+      ],
+      "accepted": [
+        "一刻"
+      ],
+      "explanation": "一刻 đọc là yí kè, nghĩa là Một khắc, 15 phút. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 518.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c8c1a71f-3d18-4efc-aadb-793d75fc16f9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “说话” có nghĩa là gì?",
+      "options": [
+        "Đã từng (trợ từ kinh nghiệm)",
+        "Nói chuyện",
+        "Một khắc, 15 phút",
+        "Nghỉ, nghỉ ngơi"
+      ],
+      "accepted": [
+        "Nói chuyện"
+      ],
+      "explanation": "说话 đọc là shuōhuà, nghĩa là Nói chuyện. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 519.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4c54b59b-3938-409b-a479-76c47e4a01eb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “shuōhuà” và nghĩa “Nói chuyện”.",
+      "options": [
+        "说话",
+        "星期日",
+        "明年",
+        "大前天"
+      ],
+      "accepted": [
+        "说话"
+      ],
+      "explanation": "说话 đọc là shuōhuà, nghĩa là Nói chuyện. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 519.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4c54b59b-3938-409b-a479-76c47e4a01eb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “因为” có nghĩa là gì?",
+      "options": [
+        "Hôm qua",
+        "Ba ngày sau",
+        "Năm nay",
+        "Bởi vì"
+      ],
+      "accepted": [
+        "Bởi vì"
+      ],
+      "explanation": "因为 đọc là yīnwèi, nghĩa là Bởi vì. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 520.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c8540f91-8b02-4479-ae3a-82ddb42028eb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “yīnwèi” và nghĩa “Bởi vì”.",
+      "options": [
+        "上个星期",
+        "为什么",
+        "事",
+        "因为"
+      ],
+      "accepted": [
+        "因为"
+      ],
+      "explanation": "因为 đọc là yīnwèi, nghĩa là Bởi vì. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 520.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c8540f91-8b02-4479-ae3a-82ddb42028eb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “不太” có nghĩa là gì?",
+      "options": [
+        "Việc, chuyện",
+        "Không quá, không được… lắm",
+        "Hổ",
+        "Tuần trước"
+      ],
+      "accepted": [
+        "Không quá, không được… lắm"
+      ],
+      "explanation": "不太 đọc là bú tài, nghĩa là Không quá, không được… lắm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 521.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6b5293d5-97f7-41a9-a9b4-ece9f4c0d37e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “bú tài” và nghĩa “Không quá, không được… lắm”.",
+      "options": [
+        "大后天",
+        "不太",
+        "门票",
+        "牛"
+      ],
+      "accepted": [
+        "不太"
+      ],
+      "explanation": "不太 đọc là bú tài, nghĩa là Không quá, không được… lắm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 521.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6b5293d5-97f7-41a9-a9b4-ece9f4c0d37e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “生日快乐” có nghĩa là gì?",
+      "options": [
+        "Rảnh, có thời gian",
+        "Thứ Hai",
+        "Một khắc, 15 phút",
+        "Chúc mừng sinh nhật"
+      ],
+      "accepted": [
+        "Chúc mừng sinh nhật"
+      ],
+      "explanation": "生日快乐 đọc là shēngrì kuàilè, nghĩa là Chúc mừng sinh nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 522.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "41ede84b-b5f1-4c99-9e92-fb02687e6964"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “shēngrì kuàilè” và nghĩa “Chúc mừng sinh nhật”.",
+      "options": [
+        "羊",
+        "猪",
+        "每天",
+        "生日快乐"
+      ],
+      "accepted": [
+        "生日快乐"
+      ],
+      "explanation": "生日快乐 đọc là shēngrì kuàilè, nghĩa là Chúc mừng sinh nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 522.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "41ede84b-b5f1-4c99-9e92-fb02687e6964"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “短剧” có nghĩa là gì?",
+      "options": [
+        "Rảnh, có thời gian",
+        "Bởi vì",
+        "Phim ngắn, kịch ngắn",
+        "Lợn, heo"
+      ],
+      "accepted": [
+        "Phim ngắn, kịch ngắn"
+      ],
+      "explanation": "短剧 đọc là duǎnjù, nghĩa là Phim ngắn, kịch ngắn. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 523.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a3cec13f-0ce5-43b5-b7fe-6158196c5af6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “duǎnjù” và nghĩa “Phim ngắn, kịch ngắn”.",
+      "options": [
+        "礼拜",
+        "一刻",
+        "短剧",
+        "介绍"
+      ],
+      "accepted": [
+        "短剧"
+      ],
+      "explanation": "短剧 đọc là duǎnjù, nghĩa là Phim ngắn, kịch ngắn. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 523.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a3cec13f-0ce5-43b5-b7fe-6158196c5af6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “门票” có nghĩa là gì?",
+      "options": [
+        "Tuần này",
+        "Năm sau",
+        "Vé vào cửa",
+        "Năm"
+      ],
+      "accepted": [
+        "Vé vào cửa"
+      ],
+      "explanation": "门票 đọc là ménpiào, nghĩa là Vé vào cửa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 524.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0a7d125a-3127-40f4-a868-09588f57424c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “ménpiào” và nghĩa “Vé vào cửa”.",
+      "options": [
+        "大前年",
+        "门票",
+        "龙",
+        "为什么"
+      ],
+      "accepted": [
+        "门票"
+      ],
+      "explanation": "门票 đọc là ménpiào, nghĩa là Vé vào cửa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 524.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0a7d125a-3127-40f4-a868-09588f57424c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “彩票” có nghĩa là gì?",
+      "options": [
+        "Giờ, điểm",
+        "Vé số",
+        "Ngày kia",
+        "Gà"
+      ],
+      "accepted": [
+        "Vé số"
+      ],
+      "explanation": "彩票 đọc là cǎipiào, nghĩa là Vé số. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 525.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "172dab95-f6ed-4272-af30-ff353847c9bb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “cǎipiào” và nghĩa “Vé số”.",
+      "options": [
+        "彩票",
+        "下个星期",
+        "门票",
+        "每年"
+      ],
+      "accepted": [
+        "彩票"
+      ],
+      "explanation": "彩票 đọc là cǎipiào, nghĩa là Vé số. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 525.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "172dab95-f6ed-4272-af30-ff353847c9bb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “看电影” có nghĩa là gì?",
+      "options": [
+        "Khỉ",
+        "Xem phim",
+        "Năm sau nữa",
+        "Tháng sau"
+      ],
+      "accepted": [
+        "Xem phim"
+      ],
+      "explanation": "看电影 đọc là kàn diànyǐng, nghĩa là Xem phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 526.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c0ce067a-9a8f-4b47-94b2-b22de94f95e2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “kàn diànyǐng” và nghĩa “Xem phim”.",
+      "options": [
+        "看电影",
+        "生日快乐",
+        "前年",
+        "猪"
+      ],
+      "accepted": [
+        "看电影"
+      ],
+      "explanation": "看电影 đọc là kàn diànyǐng, nghĩa là Xem phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 526.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c0ce067a-9a8f-4b47-94b2-b22de94f95e2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “老鼠” có nghĩa là gì?",
+      "options": [
+        "Chuột",
+        "Dê",
+        "Rồng",
+        "Quá…"
+      ],
+      "accepted": [
+        "Chuột"
+      ],
+      "explanation": "老鼠 đọc là lǎoshǔ, nghĩa là Chuột. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 530.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d439834f-66c0-4db3-a96a-f24123686ed5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “lǎoshǔ” và nghĩa “Chuột”.",
+      "options": [
+        "兔子",
+        "生日",
+        "老鼠",
+        "门票"
+      ],
+      "accepted": [
+        "老鼠"
+      ],
+      "explanation": "老鼠 đọc là lǎoshǔ, nghĩa là Chuột. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 530.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d439834f-66c0-4db3-a96a-f24123686ed5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “牛” có nghĩa là gì?",
+      "options": [
+        "Ba năm trước",
+        "Trâu, bò",
+        "Rắn",
+        "Kém, thiếu"
+      ],
+      "accepted": [
+        "Trâu, bò"
+      ],
+      "explanation": "牛 đọc là niú, nghĩa là Trâu, bò. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 531.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "caa2718c-74f8-4305-ab2a-90cc864b9d55"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “niú” và nghĩa “Trâu, bò”.",
+      "options": [
+        "尝",
+        "牛",
+        "星期四",
+        "事"
+      ],
+      "accepted": [
+        "牛"
+      ],
+      "explanation": "牛 đọc là niú, nghĩa là Trâu, bò. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 531.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "caa2718c-74f8-4305-ab2a-90cc864b9d55"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “老虎” có nghĩa là gì?",
+      "options": [
+        "Thứ Năm",
+        "Tuần trước",
+        "Thứ Tư",
+        "Hổ"
+      ],
+      "accepted": [
+        "Hổ"
+      ],
+      "explanation": "老虎 đọc là lǎohǔ, nghĩa là Hổ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 532.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ac2d4fd5-24c4-4286-af80-a68f23ef8da4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “lǎohǔ” và nghĩa “Hổ”.",
+      "options": [
+        "半",
+        "明天",
+        "下个星期",
+        "老虎"
+      ],
+      "accepted": [
+        "老虎"
+      ],
+      "explanation": "老虎 đọc là lǎohǔ, nghĩa là Hổ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 532.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ac2d4fd5-24c4-4286-af80-a68f23ef8da4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “兔子” có nghĩa là gì?",
+      "options": [
+        "Thật, thật là",
+        "Nghỉ, nghỉ ngơi",
+        "Nói chuyện",
+        "Thỏ"
+      ],
+      "accepted": [
+        "Thỏ"
+      ],
+      "explanation": "兔子 đọc là tùzi, nghĩa là Thỏ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 533.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3d339734-4e25-4135-a69a-4ac1e2d2610e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “tùzi” và nghĩa “Thỏ”.",
+      "options": [
+        "去年",
+        "今年",
+        "兔子",
+        "点"
+      ],
+      "accepted": [
+        "兔子"
+      ],
+      "explanation": "兔子 đọc là tùzi, nghĩa là Thỏ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 533.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3d339734-4e25-4135-a69a-4ac1e2d2610e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “龙” có nghĩa là gì?",
+      "options": [
+        "Rồng",
+        "Tuần, thứ",
+        "Hôm nay",
+        "Ngựa"
+      ],
+      "accepted": [
+        "Rồng"
+      ],
+      "explanation": "龙 đọc là lóng, nghĩa là Rồng. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 534.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8e6e5183-b8ec-4c28-a061-898ee069d598"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “lóng” và nghĩa “Rồng”.",
+      "options": [
+        "龙",
+        "事",
+        "点",
+        "聊天"
+      ],
+      "accepted": [
+        "龙"
+      ],
+      "explanation": "龙 đọc là lóng, nghĩa là Rồng. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 534.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8e6e5183-b8ec-4c28-a061-898ee069d598"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “蛇” có nghĩa là gì?",
+      "options": [
+        "Trò chuyện",
+        "Rắn",
+        "Vui vẻ",
+        "Hôm nay"
+      ],
+      "accepted": [
+        "Rắn"
+      ],
+      "explanation": "蛇 đọc là shé, nghĩa là Rắn. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 535.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e9b0446d-a89b-4623-af83-f43d1c4d97f3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “shé” và nghĩa “Rắn”.",
+      "options": [
+        "蛇",
+        "有空儿",
+        "下个月",
+        "大后年"
+      ],
+      "accepted": [
+        "蛇"
+      ],
+      "explanation": "蛇 đọc là shé, nghĩa là Rắn. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 535.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e9b0446d-a89b-4623-af83-f43d1c4d97f3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “马” có nghĩa là gì?",
+      "options": [
+        "Bởi vì",
+        "Ngựa",
+        "Chủ nhật",
+        "Năm nay"
+      ],
+      "accepted": [
+        "Ngựa"
+      ],
+      "explanation": "马 đọc là mǎ, nghĩa là Ngựa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 536.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ef73aeea-43c2-4d8c-a771-af24bb0abf05"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “mǎ” và nghĩa “Ngựa”.",
+      "options": [
+        "马",
+        "每年",
+        "太……了",
+        "礼拜"
+      ],
+      "accepted": [
+        "马"
+      ],
+      "explanation": "马 đọc là mǎ, nghĩa là Ngựa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 536.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ef73aeea-43c2-4d8c-a771-af24bb0abf05"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “羊” có nghĩa là gì?",
+      "options": [
+        "Rảnh, có thời gian",
+        "Ngựa",
+        "Dê",
+        "Cửa ra vào"
+      ],
+      "accepted": [
+        "Dê"
+      ],
+      "explanation": "羊 đọc là yáng, nghĩa là Dê. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 537.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2a7040ef-7ff2-4ff9-a641-68c56b585ef2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “yáng” và nghĩa “Dê”.",
+      "options": [
+        "星期三",
+        "上个星期",
+        "羊",
+        "说"
+      ],
+      "accepted": [
+        "羊"
+      ],
+      "explanation": "羊 đọc là yáng, nghĩa là Dê. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 537.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2a7040ef-7ff2-4ff9-a641-68c56b585ef2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “猴子” có nghĩa là gì?",
+      "options": [
+        "Quá…",
+        "Mỗi",
+        "Vé số",
+        "Khỉ"
+      ],
+      "accepted": [
+        "Khỉ"
+      ],
+      "explanation": "猴子 đọc là hóuzi, nghĩa là Khỉ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 538.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c66811d2-2bd9-4123-a52d-1610e66ff069"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “hóuzi” và nghĩa “Khỉ”.",
+      "options": [
+        "猴子",
+        "每月",
+        "差",
+        "月"
+      ],
+      "accepted": [
+        "猴子"
+      ],
+      "explanation": "猴子 đọc là hóuzi, nghĩa là Khỉ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 538.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c66811d2-2bd9-4123-a52d-1610e66ff069"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “鸡” có nghĩa là gì?",
+      "options": [
+        "Nói cho, báo cho",
+        "Gà",
+        "Hôm nay",
+        "Tháng trước"
+      ],
+      "accepted": [
+        "Gà"
+      ],
+      "explanation": "鸡 đọc là jī, nghĩa là Gà. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 539.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c3eb8d12-5fd8-4679-abef-bb36d3e0c393"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “jī” và nghĩa “Gà”.",
+      "options": [
+        "去年",
+        "鸡",
+        "老虎",
+        "兔子"
+      ],
+      "accepted": [
+        "鸡"
+      ],
+      "explanation": "鸡 đọc là jī, nghĩa là Gà. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 539.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c3eb8d12-5fd8-4679-abef-bb36d3e0c393"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “狗” có nghĩa là gì?",
+      "options": [
+        "Năm sau",
+        "Thứ Sáu",
+        "Thỏ",
+        "Chó"
+      ],
+      "accepted": [
+        "Chó"
+      ],
+      "explanation": "狗 đọc là gǒu, nghĩa là Chó. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 540.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "65d024fd-d673-4ecc-a289-4064ea3ac7cd"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “gǒu” và nghĩa “Chó”.",
+      "options": [
+        "狗",
+        "小时",
+        "有空儿",
+        "兔子"
+      ],
+      "accepted": [
+        "狗"
+      ],
+      "explanation": "狗 đọc là gǒu, nghĩa là Chó. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 540.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "65d024fd-d673-4ecc-a289-4064ea3ac7cd"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Trong bài học, “猪” có nghĩa là gì?",
+      "options": [
+        "Trâu, bò",
+        "Ngựa",
+        "Lợn, heo",
+        "Tháng trước"
+      ],
+      "accepted": [
+        "Lợn, heo"
+      ],
+      "explanation": "猪 đọc là zhū, nghĩa là Lợn, heo. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 541.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2355d4d5-f81e-44c2-ae5c-84477fbe8042"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn Hán tự có phiên âm “zhū” và nghĩa “Lợn, heo”.",
+      "options": [
+        "星期",
+        "猪",
+        "门口",
+        "月"
+      ],
+      "accepted": [
+        "猪"
+      ],
+      "explanation": "猪 đọc là zhū, nghĩa là Lợn, heo. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 541.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2355d4d5-f81e-44c2-ae5c-84477fbe8042"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn phiên âm đúng của “龙” với nghĩa “Rồng”.",
+      "options": [
+        "yí kè",
+        "gàosu",
+        "lóng",
+        "zhè ge yuè"
+      ],
+      "accepted": [
+        "lóng"
+      ],
+      "explanation": "龙 đọc là lóng, nghĩa là Rồng. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 534.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8e6e5183-b8ec-4c28-a061-898ee069d598"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn phiên âm đúng của “蛇” với nghĩa “Rắn”.",
+      "options": [
+        "shé",
+        "dàhòunián",
+        "xīngqīliù",
+        "shì"
+      ],
+      "accepted": [
+        "shé"
+      ],
+      "explanation": "蛇 đọc là shé, nghĩa là Rắn. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 535.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e9b0446d-a89b-4623-af83-f43d1c4d97f3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn phiên âm đúng của “马” với nghĩa “Ngựa”.",
+      "options": [
+        "chà",
+        "zhēn",
+        "yuè",
+        "mǎ"
+      ],
+      "accepted": [
+        "mǎ"
+      ],
+      "explanation": "马 đọc là mǎ, nghĩa là Ngựa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 536.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ef73aeea-43c2-4d8c-a771-af24bb0abf05"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn phiên âm đúng của “羊” với nghĩa “Dê”.",
+      "options": [
+        "duǎnjù",
+        "yáng",
+        "qiántiān",
+        "diǎn"
+      ],
+      "accepted": [
+        "yáng"
+      ],
+      "explanation": "羊 đọc là yáng, nghĩa là Dê. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 537.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2a7040ef-7ff2-4ff9-a641-68c56b585ef2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn phiên âm đúng của “猴子” với nghĩa “Khỉ”.",
+      "options": [
+        "hóuzi",
+        "tùzi",
+        "měi",
+        "xīngqīyī"
+      ],
+      "accepted": [
+        "hóuzi"
+      ],
+      "explanation": "猴子 đọc là hóuzi, nghĩa là Khỉ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 538.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c66811d2-2bd9-4123-a52d-1610e66ff069"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn phiên âm đúng của “鸡” với nghĩa “Gà”.",
+      "options": [
+        "xià ge yuè",
+        "tùzi",
+        "jī",
+        "mǎ"
+      ],
+      "accepted": [
+        "jī"
+      ],
+      "explanation": "鸡 đọc là jī, nghĩa là Gà. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 539.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c3eb8d12-5fd8-4679-abef-bb36d3e0c393"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn phiên âm đúng của “狗” với nghĩa “Chó”.",
+      "options": [
+        "kuàilè",
+        "shàng ge yuè",
+        "gǒu",
+        "lǎoshǔ"
+      ],
+      "accepted": [
+        "gǒu"
+      ],
+      "explanation": "狗 đọc là gǒu, nghĩa là Chó. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 540.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "65d024fd-d673-4ecc-a289-4064ea3ac7cd"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 8",
+      "prompt": "Chọn phiên âm đúng của “猪” với nghĩa “Lợn, heo”.",
+      "options": [
+        "zhū",
+        "yuè",
+        "xīngqīsān",
+        "hòutiān"
+      ],
+      "accepted": [
+        "zhū"
+      ],
+      "explanation": "猪 đọc là zhū, nghĩa là Lợn, heo. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 541.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2355d4d5-f81e-44c2-ae5c-84477fbe8042"
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “你的生日是几月几号？” có nghĩa là gì?",
+      "options": [
+        "Cô ấy đang xem phim truyền hình.",
+        "Năm nay cô ấy làm việc ở Bắc Kinh.",
+        "Sinh nhật của bạn là ngày mấy tháng mấy?",
+        "Hôm nay là thứ Sáu."
+      ],
+      "accepted": [
+        "Sinh nhật của bạn là ngày mấy tháng mấy?"
+      ],
+      "explanation": "你的生日是几月几号？ — Sinh nhật của bạn là ngày mấy tháng mấy? Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Sinh nhật của bạn là ngày mấy tháng mấy?”.",
+      "options": [
+        "现在是三点半。",
+        "她今年在北京工作。",
+        "我想休息一小时。",
+        "你的生日是几月几号？"
+      ],
+      "accepted": [
+        "你的生日是几月几号？"
+      ],
+      "explanation": "你的生日是几月几号？ — Sinh nhật của bạn là ngày mấy tháng mấy? Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “生日快乐！” có nghĩa là gì?",
+      "options": [
+        "Tôi đã từng đến Trung Quốc.",
+        "Bởi vì tôi rất bận.",
+        "Chúc mừng sinh nhật!",
+        "Chiếc bánh ngọt này rất ngon."
+      ],
+      "accepted": [
+        "Chúc mừng sinh nhật!"
+      ],
+      "explanation": "生日快乐！ — Chúc mừng sinh nhật! Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chúc mừng sinh nhật!”.",
+      "options": [
+        "生日快乐！",
+        "今天是星期五。",
+        "你的生日是几月几号？",
+        "她今年在北京工作。"
+      ],
+      "accepted": [
+        "生日快乐！"
+      ],
+      "explanation": "生日快乐！ — Chúc mừng sinh nhật! Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “今天是星期五。” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn nghỉ ngơi một tiếng.",
+        "Hôm nay là thứ Sáu.",
+        "Tôi đã từng đến Trung Quốc.",
+        "Xin hãy giới thiệu bạn của bạn."
+      ],
+      "accepted": [
+        "Hôm nay là thứ Sáu."
+      ],
+      "explanation": "今天是星期五。 — Hôm nay là thứ Sáu. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Hôm nay là thứ Sáu.”.",
+      "options": [
+        "现在是三点半。",
+        "门票多少钱？",
+        "今天是星期五。",
+        "请介绍你的朋友。"
+      ],
+      "accepted": [
+        "今天是星期五。"
+      ],
+      "explanation": "今天是星期五。 — Hôm nay là thứ Sáu. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “你明天有空儿吗？” có nghĩa là gì?",
+      "options": [
+        "Tôi cầm tinh con ngựa.",
+        "Tôi muốn nghỉ ngơi một tiếng.",
+        "Ngày mai bạn có rảnh không?",
+        "Hôm nay là thứ Sáu."
+      ],
+      "accepted": [
+        "Ngày mai bạn có rảnh không?"
+      ],
+      "explanation": "你明天有空儿吗？ — Ngày mai bạn có rảnh không? Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Ngày mai bạn có rảnh không?”.",
+      "options": [
+        "我想休息一小时。",
+        "你为什么不去学校？",
+        "你明天有空儿吗？",
+        "你的生日是几月几号？"
+      ],
+      "accepted": [
+        "你明天有空儿吗？"
+      ],
+      "explanation": "你明天有空儿吗？ — Ngày mai bạn có rảnh không? Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “我昨天去看电影了。” có nghĩa là gì?",
+      "options": [
+        "Cô ấy đang xem phim truyền hình.",
+        "Năm nay cô ấy làm việc ở Bắc Kinh.",
+        "Ngày mai bạn có rảnh không?",
+        "Hôm qua tôi đã đi xem phim."
+      ],
+      "accepted": [
+        "Hôm qua tôi đã đi xem phim."
+      ],
+      "explanation": "我昨天去看电影了。 — Hôm qua tôi đã đi xem phim. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Hôm qua tôi đã đi xem phim.”.",
+      "options": [
+        "我们下个星期见。",
+        "她正在看电视剧。",
+        "我去过中国。",
+        "我昨天去看电影了。"
+      ],
+      "accepted": [
+        "我昨天去看电影了。"
+      ],
+      "explanation": "我昨天去看电影了。 — Hôm qua tôi đã đi xem phim. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “这个蛋糕很好吃。” có nghĩa là gì?",
+      "options": [
+        "Bởi vì tôi rất bận.",
+        "Sinh nhật của bạn là ngày mấy tháng mấy?",
+        "Hôm qua tôi đã đi xem phim.",
+        "Chiếc bánh ngọt này rất ngon."
+      ],
+      "accepted": [
+        "Chiếc bánh ngọt này rất ngon."
+      ],
+      "explanation": "这个蛋糕很好吃。 — Chiếc bánh ngọt này rất ngon. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chiếc bánh ngọt này rất ngon.”.",
+      "options": [
+        "我每天学习汉语。",
+        "这个蛋糕很好吃。",
+        "她今年在北京工作。",
+        "因为我很忙。"
+      ],
+      "accepted": [
+        "这个蛋糕很好吃。"
+      ],
+      "explanation": "这个蛋糕很好吃。 — Chiếc bánh ngọt này rất ngon. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “我每天学习汉语。” có nghĩa là gì?",
+      "options": [
+        "Chiếc bánh ngọt này rất ngon.",
+        "Tôi học tiếng Hán mỗi ngày.",
+        "Chúc mừng sinh nhật!",
+        "Xin hãy giới thiệu bạn của bạn."
+      ],
+      "accepted": [
+        "Tôi học tiếng Hán mỗi ngày."
+      ],
+      "explanation": "我每天学习汉语。 — Tôi học tiếng Hán mỗi ngày. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi học tiếng Hán mỗi ngày.”.",
+      "options": [
+        "你的生日是几月几号？",
+        "我每天学习汉语。",
+        "我想休息一小时。",
+        "你明天有空儿吗？"
+      ],
+      "accepted": [
+        "我每天学习汉语。"
+      ],
+      "explanation": "我每天学习汉语。 — Tôi học tiếng Hán mỗi ngày. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “我们下个星期见。” có nghĩa là gì?",
+      "options": [
+        "Chúng ta gặp nhau vào tuần sau.",
+        "Hôm qua tôi đã đi xem phim.",
+        "Tôi muốn nghỉ ngơi một tiếng.",
+        "Cô ấy đang xem phim truyền hình."
+      ],
+      "accepted": [
+        "Chúng ta gặp nhau vào tuần sau."
+      ],
+      "explanation": "我们下个星期见。 — Chúng ta gặp nhau vào tuần sau. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chúng ta gặp nhau vào tuần sau.”.",
+      "options": [
+        "我们下个星期见。",
+        "门票多少钱？",
+        "我昨天去看电影了。",
+        "你的生日是几月几号？"
+      ],
+      "accepted": [
+        "我们下个星期见。"
+      ],
+      "explanation": "我们下个星期见。 — Chúng ta gặp nhau vào tuần sau. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “她今年在北京工作。” có nghĩa là gì?",
+      "options": [
+        "Năm nay cô ấy làm việc ở Bắc Kinh.",
+        "Tôi muốn trò chuyện với bạn.",
+        "Bởi vì tôi rất bận.",
+        "Tại sao bạn không đến trường?"
+      ],
+      "accepted": [
+        "Năm nay cô ấy làm việc ở Bắc Kinh."
+      ],
+      "explanation": "她今年在北京工作。 — Năm nay cô ấy làm việc ở Bắc Kinh. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Năm nay cô ấy làm việc ở Bắc Kinh.”.",
+      "options": [
+        "这个蛋糕很好吃。",
+        "我想休息一小时。",
+        "她今年在北京工作。",
+        "我昨天去看电影了。"
+      ],
+      "accepted": [
+        "她今年在北京工作。"
+      ],
+      "explanation": "她今年在北京工作。 — Năm nay cô ấy làm việc ở Bắc Kinh. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “我想休息一小时。” có nghĩa là gì?",
+      "options": [
+        "Tôi đã từng đến Trung Quốc.",
+        "Tôi muốn nghỉ ngơi một tiếng.",
+        "Ngày mai bạn có rảnh không?",
+        "Tại sao bạn không đến trường?"
+      ],
+      "accepted": [
+        "Tôi muốn nghỉ ngơi một tiếng."
+      ],
+      "explanation": "我想休息一小时。 — Tôi muốn nghỉ ngơi một tiếng. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn nghỉ ngơi một tiếng.”.",
+      "options": [
+        "我去过中国。",
+        "我想休息一小时。",
+        "生日快乐！",
+        "今天是星期五。"
+      ],
+      "accepted": [
+        "我想休息一小时。"
+      ],
+      "explanation": "我想休息一小时。 — Tôi muốn nghỉ ngơi một tiếng. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “你为什么不去学校？” có nghĩa là gì?",
+      "options": [
+        "Năm nay cô ấy làm việc ở Bắc Kinh.",
+        "Chiếc bánh ngọt này rất ngon.",
+        "Cô ấy đang xem phim truyền hình.",
+        "Tại sao bạn không đến trường?"
+      ],
+      "accepted": [
+        "Tại sao bạn không đến trường?"
+      ],
+      "explanation": "你为什么不去学校？ — Tại sao bạn không đến trường? Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tại sao bạn không đến trường?”.",
+      "options": [
+        "我每天学习汉语。",
+        "我属马。",
+        "你为什么不去学校？",
+        "因为我很忙。"
+      ],
+      "accepted": [
+        "你为什么不去学校？"
+      ],
+      "explanation": "你为什么不去学校？ — Tại sao bạn không đến trường? Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “因为我很忙。” có nghĩa là gì?",
+      "options": [
+        "Bởi vì tôi rất bận.",
+        "Vé vào cửa bao nhiêu tiền?",
+        "Hôm nay là thứ Sáu.",
+        "Tôi học tiếng Hán mỗi ngày."
+      ],
+      "accepted": [
+        "Bởi vì tôi rất bận."
+      ],
+      "explanation": "因为我很忙。 — Bởi vì tôi rất bận. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bởi vì tôi rất bận.”.",
+      "options": [
+        "你的生日是几月几号？",
+        "今天是星期五。",
+        "因为我很忙。",
+        "她今年在北京工作。"
+      ],
+      "accepted": [
+        "因为我很忙。"
+      ],
+      "explanation": "因为我很忙。 — Bởi vì tôi rất bận. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “她太漂亮了！” có nghĩa là gì?",
+      "options": [
+        "Năm nay cô ấy làm việc ở Bắc Kinh.",
+        "Cô ấy quá xinh đẹp!",
+        "Xin hãy giới thiệu bạn của bạn.",
+        "Tôi học tiếng Hán mỗi ngày."
+      ],
+      "accepted": [
+        "Cô ấy quá xinh đẹp!"
+      ],
+      "explanation": "她太漂亮了！ — Cô ấy quá xinh đẹp! Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy quá xinh đẹp!”.",
+      "options": [
+        "我们下个星期见。",
+        "我属马。",
+        "这个蛋糕很好吃。",
+        "她太漂亮了！"
+      ],
+      "accepted": [
+        "她太漂亮了！"
+      ],
+      "explanation": "她太漂亮了！ — Cô ấy quá xinh đẹp! Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “请介绍你的朋友。” có nghĩa là gì?",
+      "options": [
+        "Xin hãy giới thiệu bạn của bạn.",
+        "Bây giờ là ba giờ rưỡi.",
+        "Tôi học tiếng Hán mỗi ngày.",
+        "Chúng ta gặp nhau vào tuần sau."
+      ],
+      "accepted": [
+        "Xin hãy giới thiệu bạn của bạn."
+      ],
+      "explanation": "请介绍你的朋友。 — Xin hãy giới thiệu bạn của bạn. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Xin hãy giới thiệu bạn của bạn.”.",
+      "options": [
+        "生日快乐！",
+        "这个蛋糕很好吃。",
+        "请介绍你的朋友。",
+        "我属马。"
+      ],
+      "accepted": [
+        "请介绍你的朋友。"
+      ],
+      "explanation": "请介绍你的朋友。 — Xin hãy giới thiệu bạn của bạn. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “我想跟你聊天。” có nghĩa là gì?",
+      "options": [
+        "Chúc mừng sinh nhật!",
+        "Tôi muốn trò chuyện với bạn.",
+        "Tôi đã từng đến Trung Quốc.",
+        "Tôi học tiếng Hán mỗi ngày."
+      ],
+      "accepted": [
+        "Tôi muốn trò chuyện với bạn."
+      ],
+      "explanation": "我想跟你聊天。 — Tôi muốn trò chuyện với bạn. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn trò chuyện với bạn.”.",
+      "options": [
+        "我想跟你聊天。",
+        "我去过中国。",
+        "请介绍你的朋友。",
+        "这个蛋糕很好吃。"
+      ],
+      "accepted": [
+        "我想跟你聊天。"
+      ],
+      "explanation": "我想跟你聊天。 — Tôi muốn trò chuyện với bạn. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “她正在看电视剧。” có nghĩa là gì?",
+      "options": [
+        "Chúc mừng sinh nhật!",
+        "Bởi vì tôi rất bận.",
+        "Chúng ta gặp nhau vào tuần sau.",
+        "Cô ấy đang xem phim truyền hình."
+      ],
+      "accepted": [
+        "Cô ấy đang xem phim truyền hình."
+      ],
+      "explanation": "她正在看电视剧。 — Cô ấy đang xem phim truyền hình. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy đang xem phim truyền hình.”.",
+      "options": [
+        "她正在看电视剧。",
+        "我属马。",
+        "现在是三点半。",
+        "今天是星期五。"
+      ],
+      "accepted": [
+        "她正在看电视剧。"
+      ],
+      "explanation": "她正在看电视剧。 — Cô ấy đang xem phim truyền hình. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “门票多少钱？” có nghĩa là gì?",
+      "options": [
+        "Tôi học tiếng Hán mỗi ngày.",
+        "Bây giờ là ba giờ rưỡi.",
+        "Vé vào cửa bao nhiêu tiền?",
+        "Tôi đã từng đến Trung Quốc."
+      ],
+      "accepted": [
+        "Vé vào cửa bao nhiêu tiền?"
+      ],
+      "explanation": "门票多少钱？ — Vé vào cửa bao nhiêu tiền? Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Vé vào cửa bao nhiêu tiền?”.",
+      "options": [
+        "生日快乐！",
+        "门票多少钱？",
+        "我去过中国。",
+        "现在是三点半。"
+      ],
+      "accepted": [
+        "门票多少钱？"
+      ],
+      "explanation": "门票多少钱？ — Vé vào cửa bao nhiêu tiền? Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “我去过中国。” có nghĩa là gì?",
+      "options": [
+        "Vé vào cửa bao nhiêu tiền?",
+        "Năm nay cô ấy làm việc ở Bắc Kinh.",
+        "Cô ấy quá xinh đẹp!",
+        "Tôi đã từng đến Trung Quốc."
+      ],
+      "accepted": [
+        "Tôi đã từng đến Trung Quốc."
+      ],
+      "explanation": "我去过中国。 — Tôi đã từng đến Trung Quốc. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi đã từng đến Trung Quốc.”.",
+      "options": [
+        "我去过中国。",
+        "现在是三点半。",
+        "生日快乐！",
+        "她今年在北京工作。"
+      ],
+      "accepted": [
+        "我去过中国。"
+      ],
+      "explanation": "我去过中国。 — Tôi đã từng đến Trung Quốc. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “我属马。” có nghĩa là gì?",
+      "options": [
+        "Tôi cầm tinh con ngựa.",
+        "Tôi muốn trò chuyện với bạn.",
+        "Tôi đã từng đến Trung Quốc.",
+        "Vé vào cửa bao nhiêu tiền?"
+      ],
+      "accepted": [
+        "Tôi cầm tinh con ngựa."
+      ],
+      "explanation": "我属马。 — Tôi cầm tinh con ngựa. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi cầm tinh con ngựa.”.",
+      "options": [
+        "她今年在北京工作。",
+        "我昨天去看电影了。",
+        "现在是三点半。",
+        "我属马。"
+      ],
+      "accepted": [
+        "我属马。"
+      ],
+      "explanation": "我属马。 — Tôi cầm tinh con ngựa. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Câu “现在是三点半。” có nghĩa là gì?",
+      "options": [
+        "Bây giờ là ba giờ rưỡi.",
+        "Sinh nhật của bạn là ngày mấy tháng mấy?",
+        "Tôi muốn trò chuyện với bạn.",
+        "Hôm qua tôi đã đi xem phim."
+      ],
+      "accepted": [
+        "Bây giờ là ba giờ rưỡi."
+      ],
+      "explanation": "现在是三点半。 — Bây giờ là ba giờ rưỡi. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–8",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bây giờ là ba giờ rưỡi.”.",
+      "options": [
+        "请介绍你的朋友。",
+        "现在是三点半。",
+        "今天是星期五。",
+        "你为什么不去学校？"
+      ],
+      "accepted": [
+        "现在是三点半。"
+      ],
+      "explanation": "现在是三点半。 — Bây giờ là ba giờ rưỡi. Câu dùng từ trong danh sách bài 1–8.",
+      "difficulty": "medium",
+      "approved": true
+    }
+  ],
+  "speaking": [
+    {
+      "practice": "speaking",
+      "text": "你的生日是几月几号？",
+      "meaning": "Sinh nhật của bạn là ngày mấy tháng mấy?",
+      "answer_reference": "我的生日是三月五号。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "今天是星期几？",
+      "meaning": "Hôm nay là thứ mấy?",
+      "answer_reference": "今天是星期五。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你明天有空儿吗？",
+      "meaning": "Ngày mai bạn có rảnh không?",
+      "answer_reference": "我明天有空儿。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "现在是几点？",
+      "meaning": "Bây giờ là mấy giờ?",
+      "answer_reference": "现在是三点半。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你属什么？",
+      "meaning": "Bạn cầm tinh con gì?",
+      "answer_reference": "我属龙。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你想休息几小时？",
+      "meaning": "Bạn muốn nghỉ ngơi mấy tiếng?",
+      "answer_reference": "我想休息一小时。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你去过中国吗？",
+      "meaning": "Bạn đã từng đến Trung Quốc chưa?",
+      "answer_reference": "我去过中国。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你昨天做什么？",
+      "meaning": "Hôm qua bạn làm gì?",
+      "answer_reference": "我昨天去看电影了。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "这个蛋糕好吃吗？",
+      "meaning": "Chiếc bánh ngọt này có ngon không?",
+      "answer_reference": "这个蛋糕很好吃。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你下个星期有空儿吗？",
+      "meaning": "Tuần sau bạn có rảnh không?",
+      "answer_reference": "我下个星期有空儿。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    }
+  ],
+  "activities": {
+    "topic": "Ngày tháng và sinh nhật",
+    "tasks": [
+      {
+        "type": "order",
+        "prompt": "Sinh nhật của bạn là ngày mấy tháng mấy?",
+        "tokens": [
+          "你",
+          "的",
+          "生日",
+          "是",
+          "几",
+          "月",
+          "几",
+          "号",
+          "？"
+        ],
+        "answer": "你的生日是几月几号？",
+        "explanation": "你的生日是几月几号？ — Sinh nhật của bạn là ngày mấy tháng mấy?"
+      },
+      {
+        "type": "fill",
+        "prompt": "你的___是几月几号？ (Sinh nhật của bạn là ngày mấy tháng mấy?)",
+        "answer": "生日",
+        "explanation": "Câu hoàn chỉnh: 你的生日是几月几号？ — Sinh nhật của bạn là ngày mấy tháng mấy?"
+      },
+      {
+        "type": "order",
+        "prompt": "Hôm nay là thứ Sáu.",
+        "tokens": [
+          "今天",
+          "是",
+          "星期五",
+          "。"
+        ],
+        "answer": "今天是星期五。",
+        "explanation": "今天是星期五。 — Hôm nay là thứ Sáu."
+      },
+      {
+        "type": "fill",
+        "prompt": "___是星期五。 (Hôm nay là thứ Sáu.)",
+        "answer": "今天",
+        "explanation": "Câu hoàn chỉnh: 今天是星期五。 — Hôm nay là thứ Sáu."
+      },
+      {
+        "type": "order",
+        "prompt": "Ngày mai bạn có rảnh không?",
+        "tokens": [
+          "你",
+          "明天",
+          "有空儿",
+          "吗",
+          "？"
+        ],
+        "answer": "你明天有空儿吗？",
+        "explanation": "你明天有空儿吗？ — Ngày mai bạn có rảnh không?"
+      },
+      {
+        "type": "fill",
+        "prompt": "你___有空儿吗？ (Ngày mai bạn có rảnh không?)",
+        "answer": "明天",
+        "explanation": "Câu hoàn chỉnh: 你明天有空儿吗？ — Ngày mai bạn có rảnh không?"
+      },
+      {
+        "type": "order",
+        "prompt": "Hôm qua tôi đã đi xem phim.",
+        "tokens": [
+          "我",
+          "昨天",
+          "去",
+          "看电影",
+          "了",
+          "。"
+        ],
+        "answer": "我昨天去看电影了。",
+        "explanation": "我昨天去看电影了。 — Hôm qua tôi đã đi xem phim."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___去看电影了。 (Hôm qua tôi đã đi xem phim.)",
+        "answer": "昨天",
+        "explanation": "Câu hoàn chỉnh: 我昨天去看电影了。 — Hôm qua tôi đã đi xem phim."
+      },
+      {
+        "type": "order",
+        "prompt": "Chiếc bánh ngọt này rất ngon.",
+        "tokens": [
+          "这",
+          "个",
+          "蛋糕",
+          "很",
+          "好吃",
+          "。"
+        ],
+        "answer": "这个蛋糕很好吃。",
+        "explanation": "这个蛋糕很好吃。 — Chiếc bánh ngọt này rất ngon."
+      },
+      {
+        "type": "fill",
+        "prompt": "___个蛋糕很好吃。 (Chiếc bánh ngọt này rất ngon.)",
+        "answer": "这",
+        "explanation": "Câu hoàn chỉnh: 这个蛋糕很好吃。 — Chiếc bánh ngọt này rất ngon."
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi học tiếng Hán mỗi ngày.",
+        "tokens": [
+          "我",
+          "每天",
+          "学习",
+          "汉语",
+          "。"
+        ],
+        "answer": "我每天学习汉语。",
+        "explanation": "我每天学习汉语。 — Tôi học tiếng Hán mỗi ngày."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___学习汉语。 (Tôi học tiếng Hán mỗi ngày.)",
+        "answer": "每天",
+        "explanation": "Câu hoàn chỉnh: 我每天学习汉语。 — Tôi học tiếng Hán mỗi ngày."
+      },
+      {
+        "type": "order",
+        "prompt": "Chúng ta gặp nhau vào tuần sau.",
+        "tokens": [
+          "我们",
+          "下个星期",
+          "见",
+          "。"
+        ],
+        "answer": "我们下个星期见。",
+        "explanation": "我们下个星期见。 — Chúng ta gặp nhau vào tuần sau."
+      },
+      {
+        "type": "fill",
+        "prompt": "我们___见。 (Chúng ta gặp nhau vào tuần sau.)",
+        "answer": "下个星期",
+        "explanation": "Câu hoàn chỉnh: 我们下个星期见。 — Chúng ta gặp nhau vào tuần sau."
+      },
+      {
+        "type": "order",
+        "prompt": "Năm nay cô ấy làm việc ở Bắc Kinh.",
+        "tokens": [
+          "她",
+          "今年",
+          "在",
+          "北京",
+          "工作",
+          "。"
+        ],
+        "answer": "她今年在北京工作。",
+        "explanation": "她今年在北京工作。 — Năm nay cô ấy làm việc ở Bắc Kinh."
+      },
+      {
+        "type": "fill",
+        "prompt": "她___在北京工作。 (Năm nay cô ấy làm việc ở Bắc Kinh.)",
+        "answer": "今年",
+        "explanation": "Câu hoàn chỉnh: 她今年在北京工作。 — Năm nay cô ấy làm việc ở Bắc Kinh."
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi muốn nghỉ ngơi một tiếng.",
+        "tokens": [
+          "我",
+          "想",
+          "休息",
+          "一",
+          "小时",
+          "。"
+        ],
+        "answer": "我想休息一小时。",
+        "explanation": "我想休息一小时。 — Tôi muốn nghỉ ngơi một tiếng."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___休息一小时。 (Tôi muốn nghỉ ngơi một tiếng.)",
+        "answer": "想",
+        "explanation": "Câu hoàn chỉnh: 我想休息一小时。 — Tôi muốn nghỉ ngơi một tiếng."
+      },
+      {
+        "type": "order",
+        "prompt": "Tại sao bạn không đến trường?",
+        "tokens": [
+          "你",
+          "为什么",
+          "不",
+          "去",
+          "学校",
+          "？"
+        ],
+        "answer": "你为什么不去学校？",
+        "explanation": "你为什么不去学校？ — Tại sao bạn không đến trường?"
+      },
+      {
+        "type": "fill",
+        "prompt": "你___不去学校？ (Tại sao bạn không đến trường?)",
+        "answer": "为什么",
+        "explanation": "Câu hoàn chỉnh: 你为什么不去学校？ — Tại sao bạn không đến trường?"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Sinh nhật của bạn là ngày mấy tháng mấy?”: 我们下个星期见。",
+        "answer": "你的生日是几月几号？",
+        "options": [
+          "你的生日是几月几号？",
+          "我们下个星期见。",
+          "请介绍你的朋友。"
+        ],
+        "explanation": "你的生日是几月几号？ — Sinh nhật của bạn là ngày mấy tháng mấy?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你的生日是几月几号？",
+        "answer": "我的生日是三月五号。",
+        "options": [
+          "我的生日是三月五号。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Sinh nhật của bạn là ngày mấy tháng mấy? Đáp lại: 我的生日是三月五号。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Chúc mừng sinh nhật!”: 她今年在北京工作。",
+        "answer": "生日快乐！",
+        "options": [
+          "生日快乐！",
+          "她今年在北京工作。",
+          "我想跟你聊天。"
+        ],
+        "explanation": "生日快乐！ — Chúc mừng sinh nhật!"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "今天是星期几？",
+        "answer": "今天是星期五。",
+        "options": [
+          "今天是星期五。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Hôm nay là thứ mấy? Đáp lại: 今天是星期五。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Hôm nay là thứ Sáu.”: 我想休息一小时。",
+        "answer": "今天是星期五。",
+        "options": [
+          "今天是星期五。",
+          "我想休息一小时。",
+          "她正在看电视剧。"
+        ],
+        "explanation": "今天是星期五。 — Hôm nay là thứ Sáu."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你明天有空儿吗？",
+        "answer": "我明天有空儿。",
+        "options": [
+          "我明天有空儿。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Ngày mai bạn có rảnh không? Đáp lại: 我明天有空儿。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Ngày mai bạn có rảnh không?”: 你为什么不去学校？",
+        "answer": "你明天有空儿吗？",
+        "options": [
+          "你明天有空儿吗？",
+          "你为什么不去学校？",
+          "门票多少钱？"
+        ],
+        "explanation": "你明天有空儿吗？ — Ngày mai bạn có rảnh không?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "现在是几点？",
+        "answer": "现在是三点半。",
+        "options": [
+          "现在是三点半。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bây giờ là mấy giờ? Đáp lại: 现在是三点半。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Hôm qua tôi đã đi xem phim.”: 因为我很忙。",
+        "answer": "我昨天去看电影了。",
+        "options": [
+          "我昨天去看电影了。",
+          "因为我很忙。",
+          "我去过中国。"
+        ],
+        "explanation": "我昨天去看电影了。 — Hôm qua tôi đã đi xem phim."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你属什么？",
+        "answer": "我属龙。",
+        "options": [
+          "我属龙。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn cầm tinh con gì? Đáp lại: 我属龙。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Chiếc bánh ngọt này rất ngon.”: 她太漂亮了！",
+        "answer": "这个蛋糕很好吃。",
+        "options": [
+          "这个蛋糕很好吃。",
+          "她太漂亮了！",
+          "我属马。"
+        ],
+        "explanation": "这个蛋糕很好吃。 — Chiếc bánh ngọt này rất ngon."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你想休息几小时？",
+        "answer": "我想休息一小时。",
+        "options": [
+          "我想休息一小时。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn muốn nghỉ ngơi mấy tiếng? Đáp lại: 我想休息一小时。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi học tiếng Hán mỗi ngày.”: 请介绍你的朋友。",
+        "answer": "我每天学习汉语。",
+        "options": [
+          "我每天学习汉语。",
+          "请介绍你的朋友。",
+          "现在是三点半。"
+        ],
+        "explanation": "我每天学习汉语。 — Tôi học tiếng Hán mỗi ngày."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你去过中国吗？",
+        "answer": "我去过中国。",
+        "options": [
+          "我去过中国。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn đã từng đến Trung Quốc chưa? Đáp lại: 我去过中国。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Chúng ta gặp nhau vào tuần sau.”: 我想跟你聊天。",
+        "answer": "我们下个星期见。",
+        "options": [
+          "我们下个星期见。",
+          "我想跟你聊天。",
+          "你的生日是几月几号？"
+        ],
+        "explanation": "我们下个星期见。 — Chúng ta gặp nhau vào tuần sau."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你昨天做什么？",
+        "answer": "我昨天去看电影了。",
+        "options": [
+          "我昨天去看电影了。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Hôm qua bạn làm gì? Đáp lại: 我昨天去看电影了。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Năm nay cô ấy làm việc ở Bắc Kinh.”: 她正在看电视剧。",
+        "answer": "她今年在北京工作。",
+        "options": [
+          "她今年在北京工作。",
+          "她正在看电视剧。",
+          "生日快乐！"
+        ],
+        "explanation": "她今年在北京工作。 — Năm nay cô ấy làm việc ở Bắc Kinh."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "这个蛋糕好吃吗？",
+        "answer": "这个蛋糕很好吃。",
+        "options": [
+          "这个蛋糕很好吃。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Chiếc bánh ngọt này có ngon không? Đáp lại: 这个蛋糕很好吃。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi muốn nghỉ ngơi một tiếng.”: 门票多少钱？",
+        "answer": "我想休息一小时。",
+        "options": [
+          "我想休息一小时。",
+          "门票多少钱？",
+          "今天是星期五。"
+        ],
+        "explanation": "我想休息一小时。 — Tôi muốn nghỉ ngơi một tiếng."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你下个星期有空儿吗？",
+        "answer": "我下个星期有空儿。",
+        "options": [
+          "我下个星期有空儿。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Tuần sau bạn có rảnh không? Đáp lại: 我下个星期有空儿。"
+      }
+    ]
+  },
+  "chat": {
+    "enabled": true,
+    "scenario_id": "birthday",
+    "goal": "Trò chuyện về ngày tháng và sinh nhật; chỉ dùng từ đã học từ bài 1 đến bài 8.",
+    "opening": "你的生日是几月几号？",
+    "translation": "Sinh nhật của bạn là ngày mấy tháng mấy?",
+    "required_words": [
+      "今天",
+      "号",
+      "几",
+      "月",
+      "年",
+      "每",
+      "点",
+      "分",
+      "小时",
+      "差",
+      "出生",
+      "蛋糕",
+      "属",
+      "生日",
+      "快乐",
+      "星期",
+      "真",
+      "太……了",
+      "说",
+      "告诉"
+    ],
+    "max_turns": 10
+  },
+  "street": {
+    "enabled": true,
+    "place_id": "bakery",
+    "missions": [
+      {
+        "id": "vocab-8-1",
+        "title": "Nghe hiểu 1",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "你的生日是几月几号？",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Sinh nhật của bạn là ngày mấy tháng mấy?"
+          },
+          {
+            "id": "c2",
+            "label": "Chúng ta gặp nhau vào tuần sau."
+          },
+          {
+            "id": "c3",
+            "label": "Xin hãy giới thiệu bạn của bạn."
+          }
+        ],
+        "answer": "c1",
+        "feedback": "你的生日是几月几号？ — Sinh nhật của bạn là ngày mấy tháng mấy?"
+      },
+      {
+        "id": "vocab-8-2",
+        "title": "Nghe hiểu 2",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "这个蛋糕很好吃。",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Cô ấy quá xinh đẹp!"
+          },
+          {
+            "id": "c2",
+            "label": "Chiếc bánh ngọt này rất ngon."
+          },
+          {
+            "id": "c3",
+            "label": "Tôi cầm tinh con ngựa."
+          }
+        ],
+        "answer": "c2",
+        "feedback": "这个蛋糕很好吃。 — Chiếc bánh ngọt này rất ngon."
+      },
+      {
+        "id": "vocab-8-3",
+        "title": "Nghe hiểu 3",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "你为什么不去学校？",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Ngày mai bạn có rảnh không?"
+          },
+          {
+            "id": "c2",
+            "label": "Tôi đã từng đến Trung Quốc."
+          },
+          {
+            "id": "c3",
+            "label": "Tại sao bạn không đến trường?"
+          }
+        ],
+        "answer": "c3",
+        "feedback": "你为什么不去学校？ — Tại sao bạn không đến trường?"
+      }
+    ]
+  }
+}

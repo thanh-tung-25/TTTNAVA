@@ -1,26 +1,46 @@
 [
   {
     "lesson": 3,
-    "vocabulary": 87,
-    "questions": 277,
-    "main": 26
+    "vocabulary": 42,
+    "quiz": 140,
+    "speaking": 10,
+    "readings": 2,
+    "grammar": 2,
+    "dialogues": 1,
+    "activities": 40,
+    "street": 3
   },
   {
     "lesson": 4,
-    "vocabulary": 82,
-    "questions": 262,
-    "main": 19
+    "vocabulary": 49,
+    "quiz": 140,
+    "speaking": 10,
+    "readings": 2,
+    "grammar": 2,
+    "dialogues": 1,
+    "activities": 40,
+    "street": 3
   },
   {
     "lesson": 5,
-    "vocabulary": 99,
-    "questions": 317,
-    "main": 24
+    "vocabulary": 72,
+    "quiz": 200,
+    "speaking": 10,
+    "readings": 2,
+    "grammar": 2,
+    "dialogues": 1,
+    "activities": 40,
+    "street": 3
   },
   {
     "lesson": 6,
-    "vocabulary": 91,
-    "questions": 293,
-    "main": 23
+    "vocabulary": 67,
+    "quiz": 180,
+    "speaking": 10,
+    "readings": 2,
+    "grammar": 2,
+    "dialogues": 1,
+    "activities": 40,
+    "street": 3
   }
 ]

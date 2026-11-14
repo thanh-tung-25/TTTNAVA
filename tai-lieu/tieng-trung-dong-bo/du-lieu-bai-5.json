@@ -1,0 +1,4693 @@
+{
+  "version": "user-vocabulary-2026-11-14",
+  "lesson": 5,
+  "title": "第五课：你要吃什么？ (Bạn muốn ăn gì?)",
+  "vocabulary": [
+    {
+      "hanzi": "要",
+      "pinyin": "yào",
+      "meaning": "Muốn, cần, phải",
+      "group": "main",
+      "example": "你要吃什么？",
+      "example_meaning": "Bạn muốn ăn gì?"
+    },
+    {
+      "hanzi": "想",
+      "pinyin": "xiǎng",
+      "meaning": "Muốn, nhớ, nghĩ",
+      "group": "main",
+      "example": "我想买两个包子。",
+      "example_meaning": "Tôi muốn mua hai chiếc bánh bao."
+    },
+    {
+      "hanzi": "吃",
+      "pinyin": "chī",
+      "meaning": "Ăn",
+      "group": "main",
+      "example": "你要吃什么？",
+      "example_meaning": "Bạn muốn ăn gì?"
+    },
+    {
+      "hanzi": "茶",
+      "pinyin": "chá",
+      "meaning": "Trà",
+      "group": "main",
+      "example": "你喝茶还是牛奶？",
+      "example_meaning": "Bạn uống trà hay sữa bò?"
+    },
+    {
+      "hanzi": "牛奶",
+      "pinyin": "niúnǎi",
+      "meaning": "Sữa bò",
+      "group": "main",
+      "example": "你喝茶还是牛奶？",
+      "example_meaning": "Bạn uống trà hay sữa bò?"
+    },
+    {
+      "hanzi": "喝",
+      "pinyin": "hē",
+      "meaning": "Uống",
+      "group": "main",
+      "example": "你喝茶还是牛奶？",
+      "example_meaning": "Bạn uống trà hay sữa bò?"
+    },
+    {
+      "hanzi": "杯",
+      "pinyin": "bēi",
+      "meaning": "Ly, cốc",
+      "group": "main",
+      "example": "我想喝一杯奶茶。",
+      "example_meaning": "Tôi muốn uống một cốc trà sữa."
+    },
+    {
+      "hanzi": "杯子",
+      "pinyin": "bēizi",
+      "meaning": "Cái cốc",
+      "group": "main"
+    },
+    {
+      "hanzi": "一点儿",
+      "pinyin": "yìdiǎnr",
+      "meaning": "Một chút",
+      "group": "main",
+      "example": "我还要一点儿米饭。",
+      "example_meaning": "Tôi còn muốn thêm một chút cơm."
+    },
+    {
+      "hanzi": "买",
+      "pinyin": "mǎi",
+      "meaning": "Mua",
+      "group": "main",
+      "example": "我想买两个包子。",
+      "example_meaning": "Tôi muốn mua hai chiếc bánh bao."
+    },
+    {
+      "hanzi": "卖",
+      "pinyin": "mài",
+      "meaning": "Bán",
+      "group": "main"
+    },
+    {
+      "hanzi": "个",
+      "pinyin": "gè",
+      "meaning": "Lượng từ chung",
+      "group": "main",
+      "example": "我想买两个包子。",
+      "example_meaning": "Tôi muốn mua hai chiếc bánh bao."
+    },
+    {
+      "hanzi": "米饭",
+      "pinyin": "mǐfàn",
+      "meaning": "Cơm trắng",
+      "group": "main",
+      "example": "我要一碗米饭。",
+      "example_meaning": "Tôi muốn một bát cơm."
+    },
+    {
+      "hanzi": "斤",
+      "pinyin": "jīn",
+      "meaning": "Cân Trung Quốc (500 g)",
+      "group": "main",
+      "example": "牛肉多少钱一斤？",
+      "example_meaning": "Thịt bò bao nhiêu tiền một cân Trung Quốc?"
+    },
+    {
+      "hanzi": "还是",
+      "pinyin": "háishi",
+      "meaning": "Hay là",
+      "group": "main",
+      "example": "你喝茶还是牛奶？",
+      "example_meaning": "Bạn uống trà hay sữa bò?"
+    },
+    {
+      "hanzi": "碗",
+      "pinyin": "wǎn",
+      "meaning": "Bát",
+      "group": "main",
+      "example": "我要一碗米饭。",
+      "example_meaning": "Tôi muốn một bát cơm."
+    },
+    {
+      "hanzi": "一共",
+      "pinyin": "yígòng",
+      "meaning": "Tổng cộng",
+      "group": "main",
+      "example": "一共五十块钱。",
+      "example_meaning": "Tổng cộng năm mươi đồng."
+    },
+    {
+      "hanzi": "饿",
+      "pinyin": "è",
+      "meaning": "Đói",
+      "group": "main",
+      "example": "我有点儿饿。",
+      "example_meaning": "Tôi hơi đói."
+    },
+    {
+      "hanzi": "快",
+      "pinyin": "kuài",
+      "meaning": "Nhanh",
+      "group": "main"
+    },
+    {
+      "hanzi": "孩子",
+      "pinyin": "háizi",
+      "meaning": "Đứa trẻ",
+      "group": "main"
+    },
+    {
+      "hanzi": "几",
+      "pinyin": "jǐ",
+      "meaning": "Mấy",
+      "group": "main"
+    },
+    {
+      "hanzi": "第",
+      "pinyin": "dì",
+      "meaning": "Tiền tố chỉ thứ tự",
+      "group": "main"
+    },
+    {
+      "hanzi": "别的",
+      "pinyin": "biéde",
+      "meaning": "Khác",
+      "group": "main"
+    },
+    {
+      "hanzi": "其他",
+      "pinyin": "qítā",
+      "meaning": "Khác, những cái khác",
+      "group": "main",
+      "example": "我要其他的蔬菜。",
+      "example_meaning": "Tôi muốn các loại rau củ khác."
+    },
+    {
+      "hanzi": "水果",
+      "pinyin": "shuǐguǒ",
+      "meaning": "Hoa quả, trái cây",
+      "group": "main",
+      "example": "这些水果很便宜。",
+      "example_meaning": "Những loại hoa quả này rất rẻ."
+    },
+    {
+      "hanzi": "种",
+      "pinyin": "zhǒng",
+      "meaning": "Loại",
+      "group": "main"
+    },
+    {
+      "hanzi": "树",
+      "pinyin": "shù",
+      "meaning": "Cây",
+      "group": "main",
+      "example": "这棵树很大。",
+      "example_meaning": "Cái cây này rất to."
+    },
+    {
+      "hanzi": "记得",
+      "pinyin": "jìde",
+      "meaning": "Nhớ",
+      "group": "extended"
+    },
+    {
+      "hanzi": "菜",
+      "pinyin": "cài",
+      "meaning": "Món ăn, rau",
+      "group": "extended",
+      "example": "我要其他的蔬菜。",
+      "example_meaning": "Tôi muốn các loại rau củ khác."
+    },
+    {
+      "hanzi": "牛肉",
+      "pinyin": "niúròu",
+      "meaning": "Thịt bò",
+      "group": "extended",
+      "example": "牛肉多少钱一斤？",
+      "example_meaning": "Thịt bò bao nhiêu tiền một cân Trung Quốc?"
+    },
+    {
+      "hanzi": "青菜",
+      "pinyin": "qīngcài",
+      "meaning": "Rau xanh",
+      "group": "extended"
+    },
+    {
+      "hanzi": "蔬菜",
+      "pinyin": "shūcài",
+      "meaning": "Rau củ",
+      "group": "extended",
+      "example": "我要其他的蔬菜。",
+      "example_meaning": "Tôi muốn các loại rau củ khác."
+    },
+    {
+      "hanzi": "新鲜",
+      "pinyin": "xīnxiān",
+      "meaning": "Tươi",
+      "group": "extended",
+      "example": "这些苹果很新鲜。",
+      "example_meaning": "Những quả táo này rất tươi."
+    },
+    {
+      "hanzi": "馒头",
+      "pinyin": "mántou",
+      "meaning": "Bánh màn thầu",
+      "group": "extended"
+    },
+    {
+      "hanzi": "包子",
+      "pinyin": "bāozi",
+      "meaning": "Bánh bao",
+      "group": "extended",
+      "example": "我想买两个包子。",
+      "example_meaning": "Tôi muốn mua hai chiếc bánh bao."
+    },
+    {
+      "hanzi": "饺子",
+      "pinyin": "jiǎozi",
+      "meaning": "Sủi cảo",
+      "group": "extended",
+      "example": "她想吃饺子。",
+      "example_meaning": "Cô ấy muốn ăn sủi cảo."
+    },
+    {
+      "hanzi": "奶茶",
+      "pinyin": "nǎichá",
+      "meaning": "Trà sữa",
+      "group": "extended",
+      "example": "我想喝一杯奶茶。",
+      "example_meaning": "Tôi muốn uống một cốc trà sữa."
+    },
+    {
+      "hanzi": "泡茶",
+      "pinyin": "pào chá",
+      "meaning": "Pha trà",
+      "group": "extended"
+    },
+    {
+      "hanzi": "饭",
+      "pinyin": "fàn",
+      "meaning": "Cơm, bữa ăn",
+      "group": "extended",
+      "example": "我要一碗米饭。",
+      "example_meaning": "Tôi muốn một bát cơm."
+    },
+    {
+      "hanzi": "饭馆",
+      "pinyin": "fànguǎn",
+      "meaning": "Quán cơm, quán ăn",
+      "group": "extended"
+    },
+    {
+      "hanzi": "饭店",
+      "pinyin": "fàndiàn",
+      "meaning": "Nhà hàng",
+      "group": "extended"
+    },
+    {
+      "hanzi": "公斤",
+      "pinyin": "gōngjīn",
+      "meaning": "Kilôgam",
+      "group": "extended",
+      "example": "我要买两公斤香蕉。",
+      "example_meaning": "Tôi muốn mua hai kilôgam chuối."
+    },
+    {
+      "hanzi": "饱",
+      "pinyin": "bǎo",
+      "meaning": "No",
+      "group": "extended",
+      "example": "他很饱。",
+      "example_meaning": "Anh ấy rất no."
+    },
+    {
+      "hanzi": "慢",
+      "pinyin": "màn",
+      "meaning": "Chậm",
+      "group": "extended"
+    },
+    {
+      "hanzi": "有点儿",
+      "pinyin": "yǒudiǎnr",
+      "meaning": "Hơi, có một chút",
+      "group": "extended",
+      "example": "我有点儿饿。",
+      "example_meaning": "Tôi hơi đói."
+    },
+    {
+      "hanzi": "两",
+      "pinyin": "liǎng",
+      "meaning": "Hai (dùng khi đếm số lượng)",
+      "group": "extended",
+      "example": "我想买两个包子。",
+      "example_meaning": "Tôi muốn mua hai chiếc bánh bao."
+    },
+    {
+      "hanzi": "一碗米饭",
+      "pinyin": "yì wǎn mǐfàn",
+      "meaning": "Một bát cơm",
+      "group": "extended",
+      "example": "我要一碗米饭。",
+      "example_meaning": "Tôi muốn một bát cơm."
+    },
+    {
+      "hanzi": "一杯茶",
+      "pinyin": "yì bēi chá",
+      "meaning": "Một cốc trà",
+      "group": "extended",
+      "example": "我想喝一杯茶。",
+      "example_meaning": "Tôi muốn uống một cốc trà."
+    },
+    {
+      "hanzi": "一杯奶茶",
+      "pinyin": "yì bēi nǎichá",
+      "meaning": "Một cốc trà sữa",
+      "group": "extended",
+      "example": "我想喝一杯奶茶。",
+      "example_meaning": "Tôi muốn uống một cốc trà sữa."
+    },
+    {
+      "hanzi": "苹果",
+      "pinyin": "píngguǒ",
+      "meaning": "Táo",
+      "group": "extended",
+      "example": "这些苹果很新鲜。",
+      "example_meaning": "Những quả táo này rất tươi."
+    },
+    {
+      "hanzi": "芒果",
+      "pinyin": "mángguǒ",
+      "meaning": "Xoài",
+      "group": "extended"
+    },
+    {
+      "hanzi": "香蕉",
+      "pinyin": "xiāngjiāo",
+      "meaning": "Chuối",
+      "group": "extended",
+      "example": "我要买两公斤香蕉。",
+      "example_meaning": "Tôi muốn mua hai kilôgam chuối."
+    },
+    {
+      "hanzi": "椰子",
+      "pinyin": "yēzi",
+      "meaning": "Dừa",
+      "group": "extended"
+    },
+    {
+      "hanzi": "番石榴",
+      "pinyin": "fānshíliu",
+      "meaning": "Ổi",
+      "group": "extended"
+    },
+    {
+      "hanzi": "石榴",
+      "pinyin": "shíliu",
+      "meaning": "Lựu",
+      "group": "extended"
+    },
+    {
+      "hanzi": "榴莲",
+      "pinyin": "liúlián",
+      "meaning": "Sầu riêng",
+      "group": "extended"
+    },
+    {
+      "hanzi": "菠萝蜜",
+      "pinyin": "bōluómì",
+      "meaning": "Mít",
+      "group": "extended"
+    },
+    {
+      "hanzi": "菠萝",
+      "pinyin": "bōluó",
+      "meaning": "Dứa",
+      "group": "extended"
+    },
+    {
+      "hanzi": "西瓜",
+      "pinyin": "xīguā",
+      "meaning": "Dưa hấu",
+      "group": "extended"
+    },
+    {
+      "hanzi": "橙子",
+      "pinyin": "chéngzi",
+      "meaning": "Cam",
+      "group": "extended"
+    },
+    {
+      "hanzi": "橘子",
+      "pinyin": "júzi",
+      "meaning": "Quýt",
+      "group": "extended"
+    },
+    {
+      "hanzi": "黄瓜",
+      "pinyin": "huángguā",
+      "meaning": "Dưa chuột",
+      "group": "extended"
+    },
+    {
+      "hanzi": "胡萝卜",
+      "pinyin": "húluóbo",
+      "meaning": "Cà rốt",
+      "group": "extended"
+    },
+    {
+      "hanzi": "张",
+      "pinyin": "zhāng",
+      "meaning": "Lượng từ cho tờ, vật phẳng",
+      "group": "extended"
+    },
+    {
+      "hanzi": "棵",
+      "pinyin": "kē",
+      "meaning": "Lượng từ cho cây",
+      "group": "extended",
+      "example": "这棵树很大。",
+      "example_meaning": "Cái cây này rất to."
+    },
+    {
+      "hanzi": "朵",
+      "pinyin": "duǒ",
+      "meaning": "Lượng từ cho bông hoa",
+      "group": "extended"
+    },
+    {
+      "hanzi": "条",
+      "pinyin": "tiáo",
+      "meaning": "Lượng từ cho vật dài",
+      "group": "extended"
+    },
+    {
+      "hanzi": "只",
+      "pinyin": "zhī",
+      "meaning": "Lượng từ cho động vật",
+      "group": "extended"
+    },
+    {
+      "hanzi": "幅",
+      "pinyin": "fú",
+      "meaning": "Lượng từ cho tranh",
+      "group": "extended"
+    },
+    {
+      "hanzi": "面",
+      "pinyin": "miàn",
+      "meaning": "Lượng từ cho gương, cờ và một số vật có mặt phẳng",
+      "group": "extended"
+    },
+    {
+      "hanzi": "本",
+      "pinyin": "běn",
+      "meaning": "Lượng từ cho sách",
+      "group": "extended",
+      "example": "我想买一本汉语书。",
+      "example_meaning": "Tôi muốn mua một quyển sách tiếng Hán."
+    },
+    {
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "meaning": "Lượng từ cho miếng, khối",
+      "group": "extended",
+      "example": "一共五十块钱。",
+      "example_meaning": "Tổng cộng năm mươi đồng."
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “要” có nghĩa là gì?",
+      "options": [
+        "Dưa chuột",
+        "Muốn, cần, phải",
+        "Một cốc trà",
+        "Hay là"
+      ],
+      "accepted": [
+        "Muốn, cần, phải"
+      ],
+      "explanation": "要 đọc là yào, nghĩa là Muốn, cần, phải. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 202.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8b94462b-2b68-46fb-9164-f9f0cf31f83d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “yào” và nghĩa “Muốn, cần, phải”.",
+      "options": [
+        "朵",
+        "两",
+        "要",
+        "橘子"
+      ],
+      "accepted": [
+        "要"
+      ],
+      "explanation": "要 đọc là yào, nghĩa là Muốn, cần, phải. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 202.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8b94462b-2b68-46fb-9164-f9f0cf31f83d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “想” có nghĩa là gì?",
+      "options": [
+        "Cái cốc",
+        "Muốn, nhớ, nghĩ",
+        "Bánh bao",
+        "Táo"
+      ],
+      "accepted": [
+        "Muốn, nhớ, nghĩ"
+      ],
+      "explanation": "想 đọc là xiǎng, nghĩa là Muốn, nhớ, nghĩ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 203.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fb027a04-89f3-4df3-ba88-b44d3200fed2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “xiǎng” và nghĩa “Muốn, nhớ, nghĩ”.",
+      "options": [
+        "幅",
+        "橙子",
+        "青菜",
+        "想"
+      ],
+      "accepted": [
+        "想"
+      ],
+      "explanation": "想 đọc là xiǎng, nghĩa là Muốn, nhớ, nghĩ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 203.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fb027a04-89f3-4df3-ba88-b44d3200fed2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “吃” có nghĩa là gì?",
+      "options": [
+        "Quán cơm, quán ăn",
+        "Rau củ",
+        "Một chút",
+        "Ăn"
+      ],
+      "accepted": [
+        "Ăn"
+      ],
+      "explanation": "吃 đọc là chī, nghĩa là Ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 204.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "dcbcf134-d16f-4efd-b86c-dc3f71bc767b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “chī” và nghĩa “Ăn”.",
+      "options": [
+        "一点儿",
+        "张",
+        "水果",
+        "吃"
+      ],
+      "accepted": [
+        "吃"
+      ],
+      "explanation": "吃 đọc là chī, nghĩa là Ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 204.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "dcbcf134-d16f-4efd-b86c-dc3f71bc767b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “茶” có nghĩa là gì?",
+      "options": [
+        "Trà",
+        "Táo",
+        "Lượng từ cho sách",
+        "Hơi, có một chút"
+      ],
+      "accepted": [
+        "Trà"
+      ],
+      "explanation": "茶 đọc là chá, nghĩa là Trà. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 205.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "93f928c7-7c64-4f87-bffb-9165fcec78a2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “chá” và nghĩa “Trà”.",
+      "options": [
+        "第",
+        "青菜",
+        "面",
+        "茶"
+      ],
+      "accepted": [
+        "茶"
+      ],
+      "explanation": "茶 đọc là chá, nghĩa là Trà. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 205.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "93f928c7-7c64-4f87-bffb-9165fcec78a2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “牛奶” có nghĩa là gì?",
+      "options": [
+        "Sữa bò",
+        "Hai (dùng khi đếm số lượng)",
+        "Lượng từ cho cây",
+        "Sầu riêng"
+      ],
+      "accepted": [
+        "Sữa bò"
+      ],
+      "explanation": "牛奶 đọc là niúnǎi, nghĩa là Sữa bò. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 206.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "91b627f0-b52b-4c11-b2f5-013debf2e816"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “niúnǎi” và nghĩa “Sữa bò”.",
+      "options": [
+        "牛奶",
+        "新鲜",
+        "菜",
+        "包子"
+      ],
+      "accepted": [
+        "牛奶"
+      ],
+      "explanation": "牛奶 đọc là niúnǎi, nghĩa là Sữa bò. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 206.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "91b627f0-b52b-4c11-b2f5-013debf2e816"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “喝” có nghĩa là gì?",
+      "options": [
+        "Lượng từ cho bông hoa",
+        "Uống",
+        "Sủi cảo",
+        "Cái cốc"
+      ],
+      "accepted": [
+        "Uống"
+      ],
+      "explanation": "喝 đọc là hē, nghĩa là Uống. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 207.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4b2acd03-fbe0-43af-8e4e-0f97436cd810"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “hē” và nghĩa “Uống”.",
+      "options": [
+        "菠萝蜜",
+        "牛肉",
+        "喝",
+        "碗"
+      ],
+      "accepted": [
+        "喝"
+      ],
+      "explanation": "喝 đọc là hē, nghĩa là Uống. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 207.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4b2acd03-fbe0-43af-8e4e-0f97436cd810"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “杯” có nghĩa là gì?",
+      "options": [
+        "Lượng từ cho miếng, khối",
+        "Ly, cốc",
+        "Dứa",
+        "Thịt bò"
+      ],
+      "accepted": [
+        "Ly, cốc"
+      ],
+      "explanation": "杯 đọc là bēi, nghĩa là Ly, cốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 208.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b40174bc-cb59-4bea-b7d6-25a37f6e953f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “bēi” và nghĩa “Ly, cốc”.",
+      "options": [
+        "杯",
+        "第",
+        "奶茶",
+        "牛奶"
+      ],
+      "accepted": [
+        "杯"
+      ],
+      "explanation": "杯 đọc là bēi, nghĩa là Ly, cốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 208.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b40174bc-cb59-4bea-b7d6-25a37f6e953f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “杯子” có nghĩa là gì?",
+      "options": [
+        "Món ăn, rau",
+        "Hay là",
+        "Thịt bò",
+        "Cái cốc"
+      ],
+      "accepted": [
+        "Cái cốc"
+      ],
+      "explanation": "杯子 đọc là bēizi, nghĩa là Cái cốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 209.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "592dbc94-f255-4dcf-b5d5-9ba4260b095a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “bēizi” và nghĩa “Cái cốc”.",
+      "options": [
+        "杯子",
+        "朵",
+        "两",
+        "菠萝"
+      ],
+      "accepted": [
+        "杯子"
+      ],
+      "explanation": "杯子 đọc là bēizi, nghĩa là Cái cốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 209.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "592dbc94-f255-4dcf-b5d5-9ba4260b095a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “一点儿” có nghĩa là gì?",
+      "options": [
+        "Mua",
+        "Cà rốt",
+        "Một chút",
+        "Sầu riêng"
+      ],
+      "accepted": [
+        "Một chút"
+      ],
+      "explanation": "一点儿 đọc là yìdiǎnr, nghĩa là Một chút. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 210.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a95730be-27fe-4675-a11d-e8be0cf06d99"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “yìdiǎnr” và nghĩa “Một chút”.",
+      "options": [
+        "种",
+        "还是",
+        "一点儿",
+        "个"
+      ],
+      "accepted": [
+        "一点儿"
+      ],
+      "explanation": "一点儿 đọc là yìdiǎnr, nghĩa là Một chút. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 210.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a95730be-27fe-4675-a11d-e8be0cf06d99"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “买” có nghĩa là gì?",
+      "options": [
+        "Mua",
+        "Lượng từ cho vật dài",
+        "Thịt bò",
+        "Rau xanh"
+      ],
+      "accepted": [
+        "Mua"
+      ],
+      "explanation": "买 đọc là mǎi, nghĩa là Mua. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 211.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9d9b56aa-1d08-479c-8d9c-43227bc56f35"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “mǎi” và nghĩa “Mua”.",
+      "options": [
+        "买",
+        "个",
+        "要",
+        "黄瓜"
+      ],
+      "accepted": [
+        "买"
+      ],
+      "explanation": "买 đọc là mǎi, nghĩa là Mua. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 211.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9d9b56aa-1d08-479c-8d9c-43227bc56f35"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “卖” có nghĩa là gì?",
+      "options": [
+        "Nhanh",
+        "Bán",
+        "Một bát cơm",
+        "Trà sữa"
+      ],
+      "accepted": [
+        "Bán"
+      ],
+      "explanation": "卖 đọc là mài, nghĩa là Bán. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 212.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "add824f4-f228-4346-bc28-63a5ac781d05"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “mài” và nghĩa “Bán”.",
+      "options": [
+        "卖",
+        "面",
+        "泡茶",
+        "碗"
+      ],
+      "accepted": [
+        "卖"
+      ],
+      "explanation": "卖 đọc là mài, nghĩa là Bán. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 212.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "add824f4-f228-4346-bc28-63a5ac781d05"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “个” có nghĩa là gì?",
+      "options": [
+        "Dừa",
+        "Hơi, có một chút",
+        "Dưa hấu",
+        "Lượng từ chung"
+      ],
+      "accepted": [
+        "Lượng từ chung"
+      ],
+      "explanation": "个 đọc là gè, nghĩa là Lượng từ chung. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 213.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b787822f-c286-4471-9479-de415badb33c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “gè” và nghĩa “Lượng từ chung”.",
+      "options": [
+        "张",
+        "个",
+        "孩子",
+        "蔬菜"
+      ],
+      "accepted": [
+        "个"
+      ],
+      "explanation": "个 đọc là gè, nghĩa là Lượng từ chung. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 213.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b787822f-c286-4471-9479-de415badb33c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “米饭” có nghĩa là gì?",
+      "options": [
+        "Cơm trắng",
+        "Cà rốt",
+        "Sầu riêng",
+        "Rau xanh"
+      ],
+      "accepted": [
+        "Cơm trắng"
+      ],
+      "explanation": "米饭 đọc là mǐfàn, nghĩa là Cơm trắng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 214.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "71cb1c62-8f24-4388-9d99-295ff13083fb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “mǐfàn” và nghĩa “Cơm trắng”.",
+      "options": [
+        "米饭",
+        "榴莲",
+        "一杯奶茶",
+        "饭"
+      ],
+      "accepted": [
+        "米饭"
+      ],
+      "explanation": "米饭 đọc là mǐfàn, nghĩa là Cơm trắng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 214.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "71cb1c62-8f24-4388-9d99-295ff13083fb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “斤” có nghĩa là gì?",
+      "options": [
+        "Ăn",
+        "Dứa",
+        "Cân Trung Quốc (500 g)",
+        "Trà"
+      ],
+      "accepted": [
+        "Cân Trung Quốc (500 g)"
+      ],
+      "explanation": "斤 đọc là jīn, nghĩa là Cân Trung Quốc (500 g). Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 215.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "653194a4-50ee-404c-93d2-d7e6ccb1607c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “jīn” và nghĩa “Cân Trung Quốc (500 g)”.",
+      "options": [
+        "斤",
+        "个",
+        "几",
+        "买"
+      ],
+      "accepted": [
+        "斤"
+      ],
+      "explanation": "斤 đọc là jīn, nghĩa là Cân Trung Quốc (500 g). Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 215.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "653194a4-50ee-404c-93d2-d7e6ccb1607c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “还是” có nghĩa là gì?",
+      "options": [
+        "Bát",
+        "Hơi, có một chút",
+        "Một cốc trà",
+        "Hay là"
+      ],
+      "accepted": [
+        "Hay là"
+      ],
+      "explanation": "还是 đọc là háishi, nghĩa là Hay là. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 216.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "92ba45a9-ed25-4209-8a52-7a618712a8d0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “háishi” và nghĩa “Hay là”.",
+      "options": [
+        "还是",
+        "块",
+        "碗",
+        "一共"
+      ],
+      "accepted": [
+        "还是"
+      ],
+      "explanation": "还是 đọc là háishi, nghĩa là Hay là. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 216.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "92ba45a9-ed25-4209-8a52-7a618712a8d0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “碗” có nghĩa là gì?",
+      "options": [
+        "Ăn",
+        "Cân Trung Quốc (500 g)",
+        "Lựu",
+        "Bát"
+      ],
+      "accepted": [
+        "Bát"
+      ],
+      "explanation": "碗 đọc là wǎn, nghĩa là Bát. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 217.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "40dd7a08-3a74-4837-b5b3-3798be80fe33"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “wǎn” và nghĩa “Bát”.",
+      "options": [
+        "卖",
+        "只",
+        "碗",
+        "要"
+      ],
+      "accepted": [
+        "碗"
+      ],
+      "explanation": "碗 đọc là wǎn, nghĩa là Bát. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 217.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "40dd7a08-3a74-4837-b5b3-3798be80fe33"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “一共” có nghĩa là gì?",
+      "options": [
+        "Hai (dùng khi đếm số lượng)",
+        "Một bát cơm",
+        "Tổng cộng",
+        "Bát"
+      ],
+      "accepted": [
+        "Tổng cộng"
+      ],
+      "explanation": "一共 đọc là yígòng, nghĩa là Tổng cộng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 218.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5d6fcd05-02aa-4b11-9126-0a13fc10b020"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “yígòng” và nghĩa “Tổng cộng”.",
+      "options": [
+        "包子",
+        "树",
+        "一共",
+        "朵"
+      ],
+      "accepted": [
+        "一共"
+      ],
+      "explanation": "一共 đọc là yígòng, nghĩa là Tổng cộng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 218.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5d6fcd05-02aa-4b11-9126-0a13fc10b020"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “饿” có nghĩa là gì?",
+      "options": [
+        "Mấy",
+        "Đói",
+        "Quán cơm, quán ăn",
+        "Bán"
+      ],
+      "accepted": [
+        "Đói"
+      ],
+      "explanation": "饿 đọc là è, nghĩa là Đói. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 219.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3cb0c749-7391-424a-9bb3-b29c6b228221"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “è” và nghĩa “Đói”.",
+      "options": [
+        "第",
+        "快",
+        "有点儿",
+        "饿"
+      ],
+      "accepted": [
+        "饿"
+      ],
+      "explanation": "饿 đọc là è, nghĩa là Đói. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 219.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3cb0c749-7391-424a-9bb3-b29c6b228221"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “快” có nghĩa là gì?",
+      "options": [
+        "Rau xanh",
+        "Lượng từ cho tờ, vật phẳng",
+        "Nhanh",
+        "Bát"
+      ],
+      "accepted": [
+        "Nhanh"
+      ],
+      "explanation": "快 đọc là kuài, nghĩa là Nhanh. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 220.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0b2a853f-3b9f-4d0b-b6a7-5d06da805590"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “kuài” và nghĩa “Nhanh”.",
+      "options": [
+        "快",
+        "卖",
+        "公斤",
+        "芒果"
+      ],
+      "accepted": [
+        "快"
+      ],
+      "explanation": "快 đọc là kuài, nghĩa là Nhanh. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 220.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0b2a853f-3b9f-4d0b-b6a7-5d06da805590"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “孩子” có nghĩa là gì?",
+      "options": [
+        "Đứa trẻ",
+        "Cà rốt",
+        "Hai (dùng khi đếm số lượng)",
+        "Táo"
+      ],
+      "accepted": [
+        "Đứa trẻ"
+      ],
+      "explanation": "孩子 đọc là háizi, nghĩa là Đứa trẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 221.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "966d8773-1e6a-492a-ba6a-e427e3ab21f8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “háizi” và nghĩa “Đứa trẻ”.",
+      "options": [
+        "几",
+        "青菜",
+        "第",
+        "孩子"
+      ],
+      "accepted": [
+        "孩子"
+      ],
+      "explanation": "孩子 đọc là háizi, nghĩa là Đứa trẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 221.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "966d8773-1e6a-492a-ba6a-e427e3ab21f8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “几” có nghĩa là gì?",
+      "options": [
+        "Ăn",
+        "Mấy",
+        "Sữa bò",
+        "Nhớ"
+      ],
+      "accepted": [
+        "Mấy"
+      ],
+      "explanation": "几 đọc là jǐ, nghĩa là Mấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 222.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a846e5ef-48bb-40a5-b3c3-59599bdb027c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “jǐ” và nghĩa “Mấy”.",
+      "options": [
+        "茶",
+        "块",
+        "几",
+        "饿"
+      ],
+      "accepted": [
+        "几"
+      ],
+      "explanation": "几 đọc là jǐ, nghĩa là Mấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 222.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a846e5ef-48bb-40a5-b3c3-59599bdb027c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “第” có nghĩa là gì?",
+      "options": [
+        "Cân Trung Quốc (500 g)",
+        "Tiền tố chỉ thứ tự",
+        "Bát",
+        "Sủi cảo"
+      ],
+      "accepted": [
+        "Tiền tố chỉ thứ tự"
+      ],
+      "explanation": "第 đọc là dì, nghĩa là Tiền tố chỉ thứ tự. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 223.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "78fc7138-a11d-4abe-95c8-783022ca7d39"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “dì” và nghĩa “Tiền tố chỉ thứ tự”.",
+      "options": [
+        "一碗米饭",
+        "第",
+        "一杯茶",
+        "饭店"
+      ],
+      "accepted": [
+        "第"
+      ],
+      "explanation": "第 đọc là dì, nghĩa là Tiền tố chỉ thứ tự. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 223.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "78fc7138-a11d-4abe-95c8-783022ca7d39"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “别的” có nghĩa là gì?",
+      "options": [
+        "Cơm, bữa ăn",
+        "Táo",
+        "Khác",
+        "Cà rốt"
+      ],
+      "accepted": [
+        "Khác"
+      ],
+      "explanation": "别的 đọc là biéde, nghĩa là Khác. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 224.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5ea9812e-582b-4c8b-98a9-7c0a2cb0fe1a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “biéde” và nghĩa “Khác”.",
+      "options": [
+        "斤",
+        "芒果",
+        "别的",
+        "牛肉"
+      ],
+      "accepted": [
+        "别的"
+      ],
+      "explanation": "别的 đọc là biéde, nghĩa là Khác. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 224.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5ea9812e-582b-4c8b-98a9-7c0a2cb0fe1a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “其他” có nghĩa là gì?",
+      "options": [
+        "Quýt",
+        "Khác, những cái khác",
+        "Một cốc trà",
+        "Lượng từ cho vật dài"
+      ],
+      "accepted": [
+        "Khác, những cái khác"
+      ],
+      "explanation": "其他 đọc là qítā, nghĩa là Khác, những cái khác. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 225.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7a74bc72-21ca-4039-9e0d-a26f73aedefb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “qítā” và nghĩa “Khác, những cái khác”.",
+      "options": [
+        "要",
+        "其他",
+        "条",
+        "公斤"
+      ],
+      "accepted": [
+        "其他"
+      ],
+      "explanation": "其他 đọc là qítā, nghĩa là Khác, những cái khác. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 225.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7a74bc72-21ca-4039-9e0d-a26f73aedefb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “水果” có nghĩa là gì?",
+      "options": [
+        "Hoa quả, trái cây",
+        "Một cốc trà sữa",
+        "Muốn, cần, phải",
+        "Nhanh"
+      ],
+      "accepted": [
+        "Hoa quả, trái cây"
+      ],
+      "explanation": "水果 đọc là shuǐguǒ, nghĩa là Hoa quả, trái cây. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 226.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5addf1cf-be12-4ebb-90db-052c67b99eb5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “shuǐguǒ” và nghĩa “Hoa quả, trái cây”.",
+      "options": [
+        "杯",
+        "西瓜",
+        "孩子",
+        "水果"
+      ],
+      "accepted": [
+        "水果"
+      ],
+      "explanation": "水果 đọc là shuǐguǒ, nghĩa là Hoa quả, trái cây. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 226.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5addf1cf-be12-4ebb-90db-052c67b99eb5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “种” có nghĩa là gì?",
+      "options": [
+        "Một cốc trà sữa",
+        "Loại",
+        "Lượng từ cho miếng, khối",
+        "Tiền tố chỉ thứ tự"
+      ],
+      "accepted": [
+        "Loại"
+      ],
+      "explanation": "种 đọc là zhǒng, nghĩa là Loại. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 227.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "994a360f-6de8-491e-aed3-85abd8d3c7ee"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “zhǒng” và nghĩa “Loại”.",
+      "options": [
+        "牛奶",
+        "椰子",
+        "面",
+        "种"
+      ],
+      "accepted": [
+        "种"
+      ],
+      "explanation": "种 đọc là zhǒng, nghĩa là Loại. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 227.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "994a360f-6de8-491e-aed3-85abd8d3c7ee"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “树” có nghĩa là gì?",
+      "options": [
+        "Sủi cảo",
+        "Sữa bò",
+        "Bánh bao",
+        "Cây"
+      ],
+      "accepted": [
+        "Cây"
+      ],
+      "explanation": "树 đọc là shù, nghĩa là Cây. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 228.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cbf387ac-ea9a-4e5a-aa7a-08db5bec82a4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “shù” và nghĩa “Cây”.",
+      "options": [
+        "树",
+        "蔬菜",
+        "朵",
+        "新鲜"
+      ],
+      "accepted": [
+        "树"
+      ],
+      "explanation": "树 đọc là shù, nghĩa là Cây. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 228.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cbf387ac-ea9a-4e5a-aa7a-08db5bec82a4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “记得” có nghĩa là gì?",
+      "options": [
+        "Nhớ",
+        "Bánh màn thầu",
+        "Xoài",
+        "Hai (dùng khi đếm số lượng)"
+      ],
+      "accepted": [
+        "Nhớ"
+      ],
+      "explanation": "记得 đọc là jìde, nghĩa là Nhớ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 232.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b062a5a5-9dd4-4ec1-8210-59fc6f332ea6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “jìde” và nghĩa “Nhớ”.",
+      "options": [
+        "其他",
+        "记得",
+        "孩子",
+        "还是"
+      ],
+      "accepted": [
+        "记得"
+      ],
+      "explanation": "记得 đọc là jìde, nghĩa là Nhớ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 232.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b062a5a5-9dd4-4ec1-8210-59fc6f332ea6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “菜” có nghĩa là gì?",
+      "options": [
+        "Đói",
+        "Món ăn, rau",
+        "No",
+        "Dưa hấu"
+      ],
+      "accepted": [
+        "Món ăn, rau"
+      ],
+      "explanation": "菜 đọc là cài, nghĩa là Món ăn, rau. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 233.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3ab45f3b-bbe2-48d2-80d4-4504b679115d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “cài” và nghĩa “Món ăn, rau”.",
+      "options": [
+        "橙子",
+        "番石榴",
+        "菜",
+        "面"
+      ],
+      "accepted": [
+        "菜"
+      ],
+      "explanation": "菜 đọc là cài, nghĩa là Món ăn, rau. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 233.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3ab45f3b-bbe2-48d2-80d4-4504b679115d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “牛肉” có nghĩa là gì?",
+      "options": [
+        "Một bát cơm",
+        "Sủi cảo",
+        "Lượng từ chung",
+        "Thịt bò"
+      ],
+      "accepted": [
+        "Thịt bò"
+      ],
+      "explanation": "牛肉 đọc là niúròu, nghĩa là Thịt bò. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 234.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e8590fa7-7c79-495e-8b27-cba4ae42b7de"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “niúròu” và nghĩa “Thịt bò”.",
+      "options": [
+        "饭店",
+        "牛肉",
+        "椰子",
+        "杯"
+      ],
+      "accepted": [
+        "牛肉"
+      ],
+      "explanation": "牛肉 đọc là niúròu, nghĩa là Thịt bò. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 234.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e8590fa7-7c79-495e-8b27-cba4ae42b7de"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “青菜” có nghĩa là gì?",
+      "options": [
+        "Chuối",
+        "Lượng từ cho sách",
+        "Rau xanh",
+        "Lượng từ cho động vật"
+      ],
+      "accepted": [
+        "Rau xanh"
+      ],
+      "explanation": "青菜 đọc là qīngcài, nghĩa là Rau xanh. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 235.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "18a6a878-972f-4dfc-b5f6-b458402f10a4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “qīngcài” và nghĩa “Rau xanh”.",
+      "options": [
+        "青菜",
+        "碗",
+        "饭店",
+        "喝"
+      ],
+      "accepted": [
+        "青菜"
+      ],
+      "explanation": "青菜 đọc là qīngcài, nghĩa là Rau xanh. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 235.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "18a6a878-972f-4dfc-b5f6-b458402f10a4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “蔬菜” có nghĩa là gì?",
+      "options": [
+        "Chậm",
+        "Lượng từ cho cây",
+        "Dứa",
+        "Rau củ"
+      ],
+      "accepted": [
+        "Rau củ"
+      ],
+      "explanation": "蔬菜 đọc là shūcài, nghĩa là Rau củ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 236.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9e0e6925-831c-4a5a-92f7-7e85cff365b8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “shūcài” và nghĩa “Rau củ”.",
+      "options": [
+        "菠萝蜜",
+        "蔬菜",
+        "牛肉",
+        "橙子"
+      ],
+      "accepted": [
+        "蔬菜"
+      ],
+      "explanation": "蔬菜 đọc là shūcài, nghĩa là Rau củ. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 236.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9e0e6925-831c-4a5a-92f7-7e85cff365b8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “新鲜” có nghĩa là gì?",
+      "options": [
+        "Tươi",
+        "Món ăn, rau",
+        "Nhớ",
+        "Mua"
+      ],
+      "accepted": [
+        "Tươi"
+      ],
+      "explanation": "新鲜 đọc là xīnxiān, nghĩa là Tươi. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 237.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0bc79a6a-7aa3-4b59-9f9a-0152bbf569b8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “xīnxiān” và nghĩa “Tươi”.",
+      "options": [
+        "公斤",
+        "橘子",
+        "茶",
+        "新鲜"
+      ],
+      "accepted": [
+        "新鲜"
+      ],
+      "explanation": "新鲜 đọc là xīnxiān, nghĩa là Tươi. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 237.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0bc79a6a-7aa3-4b59-9f9a-0152bbf569b8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “馒头” có nghĩa là gì?",
+      "options": [
+        "Bánh bao",
+        "Dưa hấu",
+        "Bánh màn thầu",
+        "Xoài"
+      ],
+      "accepted": [
+        "Bánh màn thầu"
+      ],
+      "explanation": "馒头 đọc là mántou, nghĩa là Bánh màn thầu. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 238.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cc4b6be1-bd90-4ec6-99af-6de2d9db0d9f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “mántou” và nghĩa “Bánh màn thầu”.",
+      "options": [
+        "碗",
+        "馒头",
+        "慢",
+        "新鲜"
+      ],
+      "accepted": [
+        "馒头"
+      ],
+      "explanation": "馒头 đọc là mántou, nghĩa là Bánh màn thầu. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 238.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cc4b6be1-bd90-4ec6-99af-6de2d9db0d9f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “包子” có nghĩa là gì?",
+      "options": [
+        "Chuối",
+        "Một chút",
+        "Bánh bao",
+        "Khác, những cái khác"
+      ],
+      "accepted": [
+        "Bánh bao"
+      ],
+      "explanation": "包子 đọc là bāozi, nghĩa là Bánh bao. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 239.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bd82e4c1-5012-42db-ad20-487f832c4c0d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “bāozi” và nghĩa “Bánh bao”.",
+      "options": [
+        "别的",
+        "斤",
+        "包子",
+        "菠萝"
+      ],
+      "accepted": [
+        "包子"
+      ],
+      "explanation": "包子 đọc là bāozi, nghĩa là Bánh bao. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 239.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bd82e4c1-5012-42db-ad20-487f832c4c0d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “饺子” có nghĩa là gì?",
+      "options": [
+        "Sủi cảo",
+        "Bánh bao",
+        "Cơm trắng",
+        "Một chút"
+      ],
+      "accepted": [
+        "Sủi cảo"
+      ],
+      "explanation": "饺子 đọc là jiǎozi, nghĩa là Sủi cảo. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 240.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "366ec7ae-3cfb-4364-a301-6c1c8b34aedb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “jiǎozi” và nghĩa “Sủi cảo”.",
+      "options": [
+        "本",
+        "泡茶",
+        "饺子",
+        "一碗米饭"
+      ],
+      "accepted": [
+        "饺子"
+      ],
+      "explanation": "饺子 đọc là jiǎozi, nghĩa là Sủi cảo. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 240.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "366ec7ae-3cfb-4364-a301-6c1c8b34aedb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “奶茶” có nghĩa là gì?",
+      "options": [
+        "Sầu riêng",
+        "Một cốc trà",
+        "Trà sữa",
+        "Một cốc trà sữa"
+      ],
+      "accepted": [
+        "Trà sữa"
+      ],
+      "explanation": "奶茶 đọc là nǎichá, nghĩa là Trà sữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 241.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8b2c9510-08b4-425d-aee5-0ea377effa73"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “nǎichá” và nghĩa “Trà sữa”.",
+      "options": [
+        "个",
+        "胡萝卜",
+        "奶茶",
+        "有点儿"
+      ],
+      "accepted": [
+        "奶茶"
+      ],
+      "explanation": "奶茶 đọc là nǎichá, nghĩa là Trà sữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 241.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8b2c9510-08b4-425d-aee5-0ea377effa73"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “泡茶” có nghĩa là gì?",
+      "options": [
+        "Mít",
+        "Lượng từ cho vật dài",
+        "Tiền tố chỉ thứ tự",
+        "Pha trà"
+      ],
+      "accepted": [
+        "Pha trà"
+      ],
+      "explanation": "泡茶 đọc là pào chá, nghĩa là Pha trà. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 242.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7b114d45-14b7-4120-b834-5fb3dd6cecce"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “pào chá” và nghĩa “Pha trà”.",
+      "options": [
+        "要",
+        "泡茶",
+        "饭店",
+        "第"
+      ],
+      "accepted": [
+        "泡茶"
+      ],
+      "explanation": "泡茶 đọc là pào chá, nghĩa là Pha trà. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 242.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7b114d45-14b7-4120-b834-5fb3dd6cecce"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “饭” có nghĩa là gì?",
+      "options": [
+        "Một cốc trà",
+        "Sữa bò",
+        "Hoa quả, trái cây",
+        "Cơm, bữa ăn"
+      ],
+      "accepted": [
+        "Cơm, bữa ăn"
+      ],
+      "explanation": "饭 đọc là fàn, nghĩa là Cơm, bữa ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 243.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f5cd0a26-6952-42b3-9d61-b0074140100d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “fàn” và nghĩa “Cơm, bữa ăn”.",
+      "options": [
+        "杯",
+        "牛肉",
+        "饭",
+        "一杯奶茶"
+      ],
+      "accepted": [
+        "饭"
+      ],
+      "explanation": "饭 đọc là fàn, nghĩa là Cơm, bữa ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 243.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f5cd0a26-6952-42b3-9d61-b0074140100d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “饭馆” có nghĩa là gì?",
+      "options": [
+        "Lượng từ cho động vật",
+        "Rau củ",
+        "Một bát cơm",
+        "Quán cơm, quán ăn"
+      ],
+      "accepted": [
+        "Quán cơm, quán ăn"
+      ],
+      "explanation": "饭馆 đọc là fànguǎn, nghĩa là Quán cơm, quán ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 244.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "41343d8a-4f21-4038-ac32-6b9dc9a2d64c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “fànguǎn” và nghĩa “Quán cơm, quán ăn”.",
+      "options": [
+        "饭馆",
+        "有点儿",
+        "面",
+        "第"
+      ],
+      "accepted": [
+        "饭馆"
+      ],
+      "explanation": "饭馆 đọc là fànguǎn, nghĩa là Quán cơm, quán ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 244.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "41343d8a-4f21-4038-ac32-6b9dc9a2d64c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “饭店” có nghĩa là gì?",
+      "options": [
+        "Hay là",
+        "Khác, những cái khác",
+        "Ăn",
+        "Nhà hàng"
+      ],
+      "accepted": [
+        "Nhà hàng"
+      ],
+      "explanation": "饭店 đọc là fàndiàn, nghĩa là Nhà hàng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 245.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c82803e1-aac2-4c53-95d5-384f3ff39086"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “fàndiàn” và nghĩa “Nhà hàng”.",
+      "options": [
+        "包子",
+        "青菜",
+        "饭店",
+        "新鲜"
+      ],
+      "accepted": [
+        "饭店"
+      ],
+      "explanation": "饭店 đọc là fàndiàn, nghĩa là Nhà hàng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 245.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c82803e1-aac2-4c53-95d5-384f3ff39086"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “公斤” có nghĩa là gì?",
+      "options": [
+        "Quýt",
+        "Đứa trẻ",
+        "Chậm",
+        "Kilôgam"
+      ],
+      "accepted": [
+        "Kilôgam"
+      ],
+      "explanation": "公斤 đọc là gōngjīn, nghĩa là Kilôgam. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 246.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "174fa067-d3c4-4c43-962f-b2b2ca6463f2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “gōngjīn” và nghĩa “Kilôgam”.",
+      "options": [
+        "一共",
+        "条",
+        "蔬菜",
+        "公斤"
+      ],
+      "accepted": [
+        "公斤"
+      ],
+      "explanation": "公斤 đọc là gōngjīn, nghĩa là Kilôgam. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 246.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "174fa067-d3c4-4c43-962f-b2b2ca6463f2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “饱” có nghĩa là gì?",
+      "options": [
+        "Lựu",
+        "Thịt bò",
+        "Đói",
+        "No"
+      ],
+      "accepted": [
+        "No"
+      ],
+      "explanation": "饱 đọc là bǎo, nghĩa là No. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 247.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "92c5ea49-cd5c-460d-9fbe-599007c3278b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “bǎo” và nghĩa “No”.",
+      "options": [
+        "饭",
+        "张",
+        "饱",
+        "蔬菜"
+      ],
+      "accepted": [
+        "饱"
+      ],
+      "explanation": "饱 đọc là bǎo, nghĩa là No. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 247.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "92c5ea49-cd5c-460d-9fbe-599007c3278b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “慢” có nghĩa là gì?",
+      "options": [
+        "Loại",
+        "Bánh bao",
+        "Chậm",
+        "Dưa hấu"
+      ],
+      "accepted": [
+        "Chậm"
+      ],
+      "explanation": "慢 đọc là màn, nghĩa là Chậm. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 248.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fb967fae-75f6-43f3-817a-6d413c958a23"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “màn” và nghĩa “Chậm”.",
+      "options": [
+        "饭店",
+        "想",
+        "慢",
+        "饺子"
+      ],
+      "accepted": [
+        "慢"
+      ],
+      "explanation": "慢 đọc là màn, nghĩa là Chậm. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 248.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fb967fae-75f6-43f3-817a-6d413c958a23"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “有点儿” có nghĩa là gì?",
+      "options": [
+        "Lượng từ cho bông hoa",
+        "Hơi, có một chút",
+        "Trà sữa",
+        "Táo"
+      ],
+      "accepted": [
+        "Hơi, có một chút"
+      ],
+      "explanation": "有点儿 đọc là yǒudiǎnr, nghĩa là Hơi, có một chút. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 249.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7488ff8d-446c-4bc2-8e4e-9388698efbce"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “yǒudiǎnr” và nghĩa “Hơi, có một chút”.",
+      "options": [
+        "苹果",
+        "饺子",
+        "想",
+        "有点儿"
+      ],
+      "accepted": [
+        "有点儿"
+      ],
+      "explanation": "有点儿 đọc là yǒudiǎnr, nghĩa là Hơi, có một chút. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 249.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7488ff8d-446c-4bc2-8e4e-9388698efbce"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “两” có nghĩa là gì?",
+      "options": [
+        "Dưa chuột",
+        "Rau củ",
+        "Nhanh",
+        "Hai (dùng khi đếm số lượng)"
+      ],
+      "accepted": [
+        "Hai (dùng khi đếm số lượng)"
+      ],
+      "explanation": "两 đọc là liǎng, nghĩa là Hai (dùng khi đếm số lượng). Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 250.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "866f3c03-db68-4f18-95e5-4875c9cc57db"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “liǎng” và nghĩa “Hai (dùng khi đếm số lượng)”.",
+      "options": [
+        "买",
+        "两",
+        "棵",
+        "牛肉"
+      ],
+      "accepted": [
+        "两"
+      ],
+      "explanation": "两 đọc là liǎng, nghĩa là Hai (dùng khi đếm số lượng). Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 250.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "866f3c03-db68-4f18-95e5-4875c9cc57db"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “一碗米饭” có nghĩa là gì?",
+      "options": [
+        "Muốn, nhớ, nghĩ",
+        "Mua",
+        "Một bát cơm",
+        "Bánh màn thầu"
+      ],
+      "accepted": [
+        "Một bát cơm"
+      ],
+      "explanation": "一碗米饭 đọc là yì wǎn mǐfàn, nghĩa là Một bát cơm. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 251.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c00b2bc6-cac6-4675-a66e-e280668b7908"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “yì wǎn mǐfàn” và nghĩa “Một bát cơm”.",
+      "options": [
+        "菠萝蜜",
+        "一碗米饭",
+        "菜",
+        "榴莲"
+      ],
+      "accepted": [
+        "一碗米饭"
+      ],
+      "explanation": "一碗米饭 đọc là yì wǎn mǐfàn, nghĩa là Một bát cơm. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 251.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c00b2bc6-cac6-4675-a66e-e280668b7908"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “一杯茶” có nghĩa là gì?",
+      "options": [
+        "Dưa chuột",
+        "Đói",
+        "Một cốc trà",
+        "Bán"
+      ],
+      "accepted": [
+        "Một cốc trà"
+      ],
+      "explanation": "一杯茶 đọc là yì bēi chá, nghĩa là Một cốc trà. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 252.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "32f04c1c-144b-4afc-a84c-eed9cfcb03b0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “yì bēi chá” và nghĩa “Một cốc trà”.",
+      "options": [
+        "第",
+        "胡萝卜",
+        "一杯茶",
+        "茶"
+      ],
+      "accepted": [
+        "一杯茶"
+      ],
+      "explanation": "一杯茶 đọc là yì bēi chá, nghĩa là Một cốc trà. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 252.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "32f04c1c-144b-4afc-a84c-eed9cfcb03b0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “一杯奶茶” có nghĩa là gì?",
+      "options": [
+        "Hai (dùng khi đếm số lượng)",
+        "Bán",
+        "Một cốc trà sữa",
+        "Mít"
+      ],
+      "accepted": [
+        "Một cốc trà sữa"
+      ],
+      "explanation": "一杯奶茶 đọc là yì bēi nǎichá, nghĩa là Một cốc trà sữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 253.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "223ecfad-ae45-48bd-ab40-eff0246ed487"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “yì bēi nǎichá” và nghĩa “Một cốc trà sữa”.",
+      "options": [
+        "想",
+        "只",
+        "公斤",
+        "一杯奶茶"
+      ],
+      "accepted": [
+        "一杯奶茶"
+      ],
+      "explanation": "一杯奶茶 đọc là yì bēi nǎichá, nghĩa là Một cốc trà sữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 253.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "223ecfad-ae45-48bd-ab40-eff0246ed487"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “苹果” có nghĩa là gì?",
+      "options": [
+        "Cân Trung Quốc (500 g)",
+        "Cà rốt",
+        "Khác",
+        "Táo"
+      ],
+      "accepted": [
+        "Táo"
+      ],
+      "explanation": "苹果 đọc là píngguǒ, nghĩa là Táo. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 257.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6dc6eb74-31f3-40a5-94bc-5e99299c4cbb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “píngguǒ” và nghĩa “Táo”.",
+      "options": [
+        "苹果",
+        "棵",
+        "饭馆",
+        "菜"
+      ],
+      "accepted": [
+        "苹果"
+      ],
+      "explanation": "苹果 đọc là píngguǒ, nghĩa là Táo. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 257.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6dc6eb74-31f3-40a5-94bc-5e99299c4cbb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “芒果” có nghĩa là gì?",
+      "options": [
+        "Bánh màn thầu",
+        "Xoài",
+        "Lượng từ cho vật dài",
+        "No"
+      ],
+      "accepted": [
+        "Xoài"
+      ],
+      "explanation": "芒果 đọc là mángguǒ, nghĩa là Xoài. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 258.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f5ec3727-60b0-476b-9553-d8ea3a6dba98"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “mángguǒ” và nghĩa “Xoài”.",
+      "options": [
+        "芒果",
+        "馒头",
+        "公斤",
+        "条"
+      ],
+      "accepted": [
+        "芒果"
+      ],
+      "explanation": "芒果 đọc là mángguǒ, nghĩa là Xoài. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 258.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f5ec3727-60b0-476b-9553-d8ea3a6dba98"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “香蕉” có nghĩa là gì?",
+      "options": [
+        "Dứa",
+        "Sủi cảo",
+        "Chuối",
+        "Một bát cơm"
+      ],
+      "accepted": [
+        "Chuối"
+      ],
+      "explanation": "香蕉 đọc là xiāngjiāo, nghĩa là Chuối. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 259.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7c8e19e1-5cc4-47c5-8bcb-97fa406e9b36"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “xiāngjiāo” và nghĩa “Chuối”.",
+      "options": [
+        "香蕉",
+        "番石榴",
+        "个",
+        "饱"
+      ],
+      "accepted": [
+        "香蕉"
+      ],
+      "explanation": "香蕉 đọc là xiāngjiāo, nghĩa là Chuối. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 259.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7c8e19e1-5cc4-47c5-8bcb-97fa406e9b36"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “椰子” có nghĩa là gì?",
+      "options": [
+        "Một cốc trà",
+        "Dừa",
+        "Một chút",
+        "Mua"
+      ],
+      "accepted": [
+        "Dừa"
+      ],
+      "explanation": "椰子 đọc là yēzi, nghĩa là Dừa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 260.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cd232f79-d2a7-44f5-af89-8d42b8f5c373"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “yēzi” và nghĩa “Dừa”.",
+      "options": [
+        "吃",
+        "椰子",
+        "条",
+        "树"
+      ],
+      "accepted": [
+        "椰子"
+      ],
+      "explanation": "椰子 đọc là yēzi, nghĩa là Dừa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 260.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cd232f79-d2a7-44f5-af89-8d42b8f5c373"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “番石榴” có nghĩa là gì?",
+      "options": [
+        "Thịt bò",
+        "Ổi",
+        "Hay là",
+        "Khác"
+      ],
+      "accepted": [
+        "Ổi"
+      ],
+      "explanation": "番石榴 đọc là fānshíliu, nghĩa là Ổi. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 261.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e14bfcb7-2193-4e95-8418-0f4385a578d4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “fānshíliu” và nghĩa “Ổi”.",
+      "options": [
+        "个",
+        "包子",
+        "番石榴",
+        "树"
+      ],
+      "accepted": [
+        "番石榴"
+      ],
+      "explanation": "番石榴 đọc là fānshíliu, nghĩa là Ổi. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 261.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e14bfcb7-2193-4e95-8418-0f4385a578d4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “石榴” có nghĩa là gì?",
+      "options": [
+        "Lượng từ chung",
+        "Lựu",
+        "Cái cốc",
+        "Lượng từ cho tờ, vật phẳng"
+      ],
+      "accepted": [
+        "Lựu"
+      ],
+      "explanation": "石榴 đọc là shíliu, nghĩa là Lựu. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 262.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "78259566-90bc-4d1a-a6a4-ee7fee3c321f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “shíliu” và nghĩa “Lựu”.",
+      "options": [
+        "石榴",
+        "斤",
+        "一点儿",
+        "水果"
+      ],
+      "accepted": [
+        "石榴"
+      ],
+      "explanation": "石榴 đọc là shíliu, nghĩa là Lựu. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 262.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "78259566-90bc-4d1a-a6a4-ee7fee3c321f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “榴莲” có nghĩa là gì?",
+      "options": [
+        "Hay là",
+        "Ăn",
+        "Thịt bò",
+        "Sầu riêng"
+      ],
+      "accepted": [
+        "Sầu riêng"
+      ],
+      "explanation": "榴莲 đọc là liúlián, nghĩa là Sầu riêng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 263.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "68b5102c-0454-4e8a-9d4a-211084c5bc08"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “liúlián” và nghĩa “Sầu riêng”.",
+      "options": [
+        "榴莲",
+        "香蕉",
+        "吃",
+        "别的"
+      ],
+      "accepted": [
+        "榴莲"
+      ],
+      "explanation": "榴莲 đọc là liúlián, nghĩa là Sầu riêng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 263.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "68b5102c-0454-4e8a-9d4a-211084c5bc08"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “菠萝蜜” có nghĩa là gì?",
+      "options": [
+        "Lựu",
+        "Mít",
+        "Trà",
+        "Khác, những cái khác"
+      ],
+      "accepted": [
+        "Mít"
+      ],
+      "explanation": "菠萝蜜 đọc là bōluómì, nghĩa là Mít. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 264.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "548f6bcd-cf4d-4fdd-a7bf-caa3e3c98be6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “bōluómì” và nghĩa “Mít”.",
+      "options": [
+        "牛肉",
+        "菠萝蜜",
+        "水果",
+        "还是"
+      ],
+      "accepted": [
+        "菠萝蜜"
+      ],
+      "explanation": "菠萝蜜 đọc là bōluómì, nghĩa là Mít. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 264.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "548f6bcd-cf4d-4fdd-a7bf-caa3e3c98be6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “菠萝” có nghĩa là gì?",
+      "options": [
+        "Dứa",
+        "Nhớ",
+        "Lượng từ cho bông hoa",
+        "Bánh bao"
+      ],
+      "accepted": [
+        "Dứa"
+      ],
+      "explanation": "菠萝 đọc là bōluó, nghĩa là Dứa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 265.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fcede644-3b2c-492e-8b0e-767ac2fce983"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “bōluó” và nghĩa “Dứa”.",
+      "options": [
+        "饭馆",
+        "菠萝",
+        "吃",
+        "奶茶"
+      ],
+      "accepted": [
+        "菠萝"
+      ],
+      "explanation": "菠萝 đọc là bōluó, nghĩa là Dứa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 265.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fcede644-3b2c-492e-8b0e-767ac2fce983"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “西瓜” có nghĩa là gì?",
+      "options": [
+        "Quýt",
+        "Hay là",
+        "Dứa",
+        "Dưa hấu"
+      ],
+      "accepted": [
+        "Dưa hấu"
+      ],
+      "explanation": "西瓜 đọc là xīguā, nghĩa là Dưa hấu. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 266.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4c7923b7-d544-4465-a5c8-761b4b35b49a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “xīguā” và nghĩa “Dưa hấu”.",
+      "options": [
+        "公斤",
+        "西瓜",
+        "幅",
+        "卖"
+      ],
+      "accepted": [
+        "西瓜"
+      ],
+      "explanation": "西瓜 đọc là xīguā, nghĩa là Dưa hấu. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 266.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4c7923b7-d544-4465-a5c8-761b4b35b49a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “橙子” có nghĩa là gì?",
+      "options": [
+        "Nhà hàng",
+        "Cơm trắng",
+        "Hay là",
+        "Cam"
+      ],
+      "accepted": [
+        "Cam"
+      ],
+      "explanation": "橙子 đọc là chéngzi, nghĩa là Cam. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 267.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ed3de04b-8136-4461-a44a-e8406117706c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “chéngzi” và nghĩa “Cam”.",
+      "options": [
+        "杯子",
+        "饭店",
+        "橙子",
+        "快"
+      ],
+      "accepted": [
+        "橙子"
+      ],
+      "explanation": "橙子 đọc là chéngzi, nghĩa là Cam. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 267.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ed3de04b-8136-4461-a44a-e8406117706c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “橘子” có nghĩa là gì?",
+      "options": [
+        "Cam",
+        "Sủi cảo",
+        "Quýt",
+        "Mua"
+      ],
+      "accepted": [
+        "Quýt"
+      ],
+      "explanation": "橘子 đọc là júzi, nghĩa là Quýt. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 268.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b9d30fa7-325b-49c9-8de3-924c5d3ef108"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “júzi” và nghĩa “Quýt”.",
+      "options": [
+        "奶茶",
+        "苹果",
+        "杯子",
+        "橘子"
+      ],
+      "accepted": [
+        "橘子"
+      ],
+      "explanation": "橘子 đọc là júzi, nghĩa là Quýt. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 268.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b9d30fa7-325b-49c9-8de3-924c5d3ef108"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “黄瓜” có nghĩa là gì?",
+      "options": [
+        "Rau xanh",
+        "Dưa chuột",
+        "Mít",
+        "Uống"
+      ],
+      "accepted": [
+        "Dưa chuột"
+      ],
+      "explanation": "黄瓜 đọc là huángguā, nghĩa là Dưa chuột. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 269.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f86d47f6-356c-40b2-9c39-b35b051619d7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “huángguā” và nghĩa “Dưa chuột”.",
+      "options": [
+        "要",
+        "黄瓜",
+        "饭店",
+        "牛肉"
+      ],
+      "accepted": [
+        "黄瓜"
+      ],
+      "explanation": "黄瓜 đọc là huángguā, nghĩa là Dưa chuột. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 269.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f86d47f6-356c-40b2-9c39-b35b051619d7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “胡萝卜” có nghĩa là gì?",
+      "options": [
+        "Táo",
+        "Ổi",
+        "Cà rốt",
+        "Cây"
+      ],
+      "accepted": [
+        "Cà rốt"
+      ],
+      "explanation": "胡萝卜 đọc là húluóbo, nghĩa là Cà rốt. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 270.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "044d7843-af66-46a7-bbd1-079fcd134d7e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “húluóbo” và nghĩa “Cà rốt”.",
+      "options": [
+        "馒头",
+        "胡萝卜",
+        "牛奶",
+        "块"
+      ],
+      "accepted": [
+        "胡萝卜"
+      ],
+      "explanation": "胡萝卜 đọc là húluóbo, nghĩa là Cà rốt. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 270.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "044d7843-af66-46a7-bbd1-079fcd134d7e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “张” có nghĩa là gì?",
+      "options": [
+        "Hai (dùng khi đếm số lượng)",
+        "No",
+        "Mấy",
+        "Lượng từ cho tờ, vật phẳng"
+      ],
+      "accepted": [
+        "Lượng từ cho tờ, vật phẳng"
+      ],
+      "explanation": "张 đọc là zhāng, nghĩa là Lượng từ cho tờ, vật phẳng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 274.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c22cd34b-4997-42bb-aa4c-b7b4007375ee"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “zhāng” và nghĩa “Lượng từ cho tờ, vật phẳng”.",
+      "options": [
+        "杯子",
+        "胡萝卜",
+        "张",
+        "一杯茶"
+      ],
+      "accepted": [
+        "张"
+      ],
+      "explanation": "张 đọc là zhāng, nghĩa là Lượng từ cho tờ, vật phẳng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 274.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c22cd34b-4997-42bb-aa4c-b7b4007375ee"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “棵” có nghĩa là gì?",
+      "options": [
+        "Món ăn, rau",
+        "Mít",
+        "Nhà hàng",
+        "Lượng từ cho cây"
+      ],
+      "accepted": [
+        "Lượng từ cho cây"
+      ],
+      "explanation": "棵 đọc là kē, nghĩa là Lượng từ cho cây. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 275.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0b6145fd-bcd8-4a8f-8546-9a632cc33413"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “kē” và nghĩa “Lượng từ cho cây”.",
+      "options": [
+        "杯子",
+        "棵",
+        "张",
+        "吃"
+      ],
+      "accepted": [
+        "棵"
+      ],
+      "explanation": "棵 đọc là kē, nghĩa là Lượng từ cho cây. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 275.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0b6145fd-bcd8-4a8f-8546-9a632cc33413"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “朵” có nghĩa là gì?",
+      "options": [
+        "Kilôgam",
+        "Chuối",
+        "Mít",
+        "Lượng từ cho bông hoa"
+      ],
+      "accepted": [
+        "Lượng từ cho bông hoa"
+      ],
+      "explanation": "朵 đọc là duǒ, nghĩa là Lượng từ cho bông hoa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 276.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5def4c39-ac82-46ce-bad3-2cf2e0f076de"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “duǒ” và nghĩa “Lượng từ cho bông hoa”.",
+      "options": [
+        "黄瓜",
+        "米饭",
+        "朵",
+        "新鲜"
+      ],
+      "accepted": [
+        "朵"
+      ],
+      "explanation": "朵 đọc là duǒ, nghĩa là Lượng từ cho bông hoa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 276.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5def4c39-ac82-46ce-bad3-2cf2e0f076de"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “条” có nghĩa là gì?",
+      "options": [
+        "Lượng từ cho bông hoa",
+        "Lượng từ cho vật dài",
+        "Sầu riêng",
+        "Pha trà"
+      ],
+      "accepted": [
+        "Lượng từ cho vật dài"
+      ],
+      "explanation": "条 đọc là tiáo, nghĩa là Lượng từ cho vật dài. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 277.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bb214da9-090a-4348-978a-cb9dc20d1433"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “tiáo” và nghĩa “Lượng từ cho vật dài”.",
+      "options": [
+        "条",
+        "西瓜",
+        "米饭",
+        "卖"
+      ],
+      "accepted": [
+        "条"
+      ],
+      "explanation": "条 đọc là tiáo, nghĩa là Lượng từ cho vật dài. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 277.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bb214da9-090a-4348-978a-cb9dc20d1433"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “只” có nghĩa là gì?",
+      "options": [
+        "Lượng từ cho động vật",
+        "Lượng từ cho cây",
+        "Lượng từ cho tờ, vật phẳng",
+        "Bánh bao"
+      ],
+      "accepted": [
+        "Lượng từ cho động vật"
+      ],
+      "explanation": "只 đọc là zhī, nghĩa là Lượng từ cho động vật. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 278.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fa35e44a-0cc7-4ccc-9d8d-7daea11cb7a0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “zhī” và nghĩa “Lượng từ cho động vật”.",
+      "options": [
+        "西瓜",
+        "饺子",
+        "只",
+        "香蕉"
+      ],
+      "accepted": [
+        "只"
+      ],
+      "explanation": "只 đọc là zhī, nghĩa là Lượng từ cho động vật. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 278.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fa35e44a-0cc7-4ccc-9d8d-7daea11cb7a0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “幅” có nghĩa là gì?",
+      "options": [
+        "Táo",
+        "Thịt bò",
+        "Lượng từ cho tranh",
+        "Một chút"
+      ],
+      "accepted": [
+        "Lượng từ cho tranh"
+      ],
+      "explanation": "幅 đọc là fú, nghĩa là Lượng từ cho tranh. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 279.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e4b3ecef-4646-4522-9156-eb142f727cfe"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “fú” và nghĩa “Lượng từ cho tranh”.",
+      "options": [
+        "幅",
+        "苹果",
+        "西瓜",
+        "饺子"
+      ],
+      "accepted": [
+        "幅"
+      ],
+      "explanation": "幅 đọc là fú, nghĩa là Lượng từ cho tranh. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 279.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e4b3ecef-4646-4522-9156-eb142f727cfe"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “面” có nghĩa là gì?",
+      "options": [
+        "Mít",
+        "Lượng từ cho gương, cờ và một số vật có mặt phẳng",
+        "Cam",
+        "Dứa"
+      ],
+      "accepted": [
+        "Lượng từ cho gương, cờ và một số vật có mặt phẳng"
+      ],
+      "explanation": "面 đọc là miàn, nghĩa là Lượng từ cho gương, cờ và một số vật có mặt phẳng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 280.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a457caab-17dd-4cc8-9806-732db6917ad3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “miàn” và nghĩa “Lượng từ cho gương, cờ và một số vật có mặt phẳng”.",
+      "options": [
+        "快",
+        "水果",
+        "蔬菜",
+        "面"
+      ],
+      "accepted": [
+        "面"
+      ],
+      "explanation": "面 đọc là miàn, nghĩa là Lượng từ cho gương, cờ và một số vật có mặt phẳng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 280.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a457caab-17dd-4cc8-9806-732db6917ad3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “本” có nghĩa là gì?",
+      "options": [
+        "Đói",
+        "Pha trà",
+        "Sữa bò",
+        "Lượng từ cho sách"
+      ],
+      "accepted": [
+        "Lượng từ cho sách"
+      ],
+      "explanation": "本 đọc là běn, nghĩa là Lượng từ cho sách. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 281.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "044c9c06-e8c5-43ca-ab32-21445ff79d38"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “běn” và nghĩa “Lượng từ cho sách”.",
+      "options": [
+        "香蕉",
+        "别的",
+        "饭",
+        "本"
+      ],
+      "accepted": [
+        "本"
+      ],
+      "explanation": "本 đọc là běn, nghĩa là Lượng từ cho sách. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 281.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "044c9c06-e8c5-43ca-ab32-21445ff79d38"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Trong bài học, “块” có nghĩa là gì?",
+      "options": [
+        "Cân Trung Quốc (500 g)",
+        "Kilôgam",
+        "Lượng từ cho tranh",
+        "Lượng từ cho miếng, khối"
+      ],
+      "accepted": [
+        "Lượng từ cho miếng, khối"
+      ],
+      "explanation": "块 đọc là kuài, nghĩa là Lượng từ cho miếng, khối. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 282.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d845daf2-abf2-4871-a98a-aba7a5bf0c66"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn Hán tự có phiên âm “kuài” và nghĩa “Lượng từ cho miếng, khối”.",
+      "options": [
+        "新鲜",
+        "卖",
+        "几",
+        "块"
+      ],
+      "accepted": [
+        "块"
+      ],
+      "explanation": "块 đọc là kuài, nghĩa là Lượng từ cho miếng, khối. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 282.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d845daf2-abf2-4871-a98a-aba7a5bf0c66"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “菠萝蜜” với nghĩa “Mít”.",
+      "options": [
+        "bǎo",
+        "chéngzi",
+        "bōluómì",
+        "yǒudiǎnr"
+      ],
+      "accepted": [
+        "bōluómì"
+      ],
+      "explanation": "菠萝蜜 đọc là bōluómì, nghĩa là Mít. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 264.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "548f6bcd-cf4d-4fdd-a7bf-caa3e3c98be6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “菠萝” với nghĩa “Dứa”.",
+      "options": [
+        "bōluó",
+        "bǎo",
+        "háizi",
+        "yì bēi nǎichá"
+      ],
+      "accepted": [
+        "bōluó"
+      ],
+      "explanation": "菠萝 đọc là bōluó, nghĩa là Dứa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 265.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fcede644-3b2c-492e-8b0e-767ac2fce983"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “西瓜” với nghĩa “Dưa hấu”.",
+      "options": [
+        "fàndiàn",
+        "yì bēi chá",
+        "xīguā",
+        "liúlián"
+      ],
+      "accepted": [
+        "xīguā"
+      ],
+      "explanation": "西瓜 đọc là xīguā, nghĩa là Dưa hấu. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 266.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4c7923b7-d544-4465-a5c8-761b4b35b49a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “橙子” với nghĩa “Cam”.",
+      "options": [
+        "chéngzi",
+        "yì bēi nǎichá",
+        "niúròu",
+        "mǐfàn"
+      ],
+      "accepted": [
+        "chéngzi"
+      ],
+      "explanation": "橙子 đọc là chéngzi, nghĩa là Cam. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 267.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ed3de04b-8136-4461-a44a-e8406117706c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “橘子” với nghĩa “Quýt”.",
+      "options": [
+        "júzi",
+        "zhǒng",
+        "fú",
+        "chá"
+      ],
+      "accepted": [
+        "júzi"
+      ],
+      "explanation": "橘子 đọc là júzi, nghĩa là Quýt. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 268.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b9d30fa7-325b-49c9-8de3-924c5d3ef108"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “黄瓜” với nghĩa “Dưa chuột”.",
+      "options": [
+        "huángguā",
+        "bōluómì",
+        "xiāngjiāo",
+        "yígòng"
+      ],
+      "accepted": [
+        "huángguā"
+      ],
+      "explanation": "黄瓜 đọc là huángguā, nghĩa là Dưa chuột. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 269.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f86d47f6-356c-40b2-9c39-b35b051619d7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “胡萝卜” với nghĩa “Cà rốt”.",
+      "options": [
+        "húluóbo",
+        "yì bēi chá",
+        "shuǐguǒ",
+        "tiáo"
+      ],
+      "accepted": [
+        "húluóbo"
+      ],
+      "explanation": "胡萝卜 đọc là húluóbo, nghĩa là Cà rốt. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 270.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "044d7843-af66-46a7-bbd1-079fcd134d7e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “张” với nghĩa “Lượng từ cho tờ, vật phẳng”.",
+      "options": [
+        "zhāng",
+        "shíliu",
+        "bāozi",
+        "qítā"
+      ],
+      "accepted": [
+        "zhāng"
+      ],
+      "explanation": "张 đọc là zhāng, nghĩa là Lượng từ cho tờ, vật phẳng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 274.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c22cd34b-4997-42bb-aa4c-b7b4007375ee"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “棵” với nghĩa “Lượng từ cho cây”.",
+      "options": [
+        "jǐ",
+        "háizi",
+        "kē",
+        "jìde"
+      ],
+      "accepted": [
+        "kē"
+      ],
+      "explanation": "棵 đọc là kē, nghĩa là Lượng từ cho cây. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 275.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0b6145fd-bcd8-4a8f-8546-9a632cc33413"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “朵” với nghĩa “Lượng từ cho bông hoa”.",
+      "options": [
+        "duǒ",
+        "fàndiàn",
+        "màn",
+        "shuǐguǒ"
+      ],
+      "accepted": [
+        "duǒ"
+      ],
+      "explanation": "朵 đọc là duǒ, nghĩa là Lượng từ cho bông hoa. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 276.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5def4c39-ac82-46ce-bad3-2cf2e0f076de"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “条” với nghĩa “Lượng từ cho vật dài”.",
+      "options": [
+        "tiáo",
+        "qítā",
+        "xiāngjiāo",
+        "fú"
+      ],
+      "accepted": [
+        "tiáo"
+      ],
+      "explanation": "条 đọc là tiáo, nghĩa là Lượng từ cho vật dài. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 277.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bb214da9-090a-4348-978a-cb9dc20d1433"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “只” với nghĩa “Lượng từ cho động vật”.",
+      "options": [
+        "bēi",
+        "zhī",
+        "húluóbo",
+        "yēzi"
+      ],
+      "accepted": [
+        "zhī"
+      ],
+      "explanation": "只 đọc là zhī, nghĩa là Lượng từ cho động vật. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 278.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fa35e44a-0cc7-4ccc-9d8d-7daea11cb7a0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “幅” với nghĩa “Lượng từ cho tranh”.",
+      "options": [
+        "xiāngjiāo",
+        "yígòng",
+        "fú",
+        "shù"
+      ],
+      "accepted": [
+        "fú"
+      ],
+      "explanation": "幅 đọc là fú, nghĩa là Lượng từ cho tranh. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 279.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e4b3ecef-4646-4522-9156-eb142f727cfe"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “面” với nghĩa “Lượng từ cho gương, cờ và một số vật có mặt phẳng”.",
+      "options": [
+        "niúnǎi",
+        "miàn",
+        "liúlián",
+        "gè"
+      ],
+      "accepted": [
+        "miàn"
+      ],
+      "explanation": "面 đọc là miàn, nghĩa là Lượng từ cho gương, cờ và một số vật có mặt phẳng. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 280.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a457caab-17dd-4cc8-9806-732db6917ad3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “本” với nghĩa “Lượng từ cho sách”.",
+      "options": [
+        "běn",
+        "píngguǒ",
+        "huángguā",
+        "jǐ"
+      ],
+      "accepted": [
+        "běn"
+      ],
+      "explanation": "本 đọc là běn, nghĩa là Lượng từ cho sách. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 281.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "044c9c06-e8c5-43ca-ab32-21445ff79d38"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 5",
+      "prompt": "Chọn phiên âm đúng của “块” với nghĩa “Lượng từ cho miếng, khối”.",
+      "options": [
+        "pào chá",
+        "dì",
+        "fānshíliu",
+        "kuài"
+      ],
+      "accepted": [
+        "kuài"
+      ],
+      "explanation": "块 đọc là kuài, nghĩa là Lượng từ cho miếng, khối. Nguồn: danh sách đầy đủ người dùng gửi, bài 5, dòng 282.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d845daf2-abf2-4871-a98a-aba7a5bf0c66"
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “你要吃什么？” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn mua hai chiếc bánh bao.",
+        "Tôi muốn mua một quyển sách tiếng Hán.",
+        "Bạn muốn ăn gì?",
+        "Những loại hoa quả này rất rẻ."
+      ],
+      "accepted": [
+        "Bạn muốn ăn gì?"
+      ],
+      "explanation": "你要吃什么？ — Bạn muốn ăn gì? Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bạn muốn ăn gì?”.",
+      "options": [
+        "一共五十块钱。",
+        "他很饱。",
+        "我要买两公斤香蕉。",
+        "你要吃什么？"
+      ],
+      "accepted": [
+        "你要吃什么？"
+      ],
+      "explanation": "你要吃什么？ — Bạn muốn ăn gì? Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “我要一碗米饭。” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn một bát cơm.",
+        "Cái cây này rất to.",
+        "Tôi muốn uống một cốc trà sữa.",
+        "Tổng cộng năm mươi đồng."
+      ],
+      "accepted": [
+        "Tôi muốn một bát cơm."
+      ],
+      "explanation": "我要一碗米饭。 — Tôi muốn một bát cơm. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn một bát cơm.”.",
+      "options": [
+        "这些水果很便宜。",
+        "我要一碗米饭。",
+        "我要买两公斤香蕉。",
+        "我想喝一杯茶。"
+      ],
+      "accepted": [
+        "我要一碗米饭。"
+      ],
+      "explanation": "我要一碗米饭。 — Tôi muốn một bát cơm. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “你喝茶还是牛奶？” có nghĩa là gì?",
+      "options": [
+        "Cái cây này rất to.",
+        "Tôi muốn một bát cơm.",
+        "Tôi muốn mua hai quyển sách tiếng Hán.",
+        "Bạn uống trà hay sữa bò?"
+      ],
+      "accepted": [
+        "Bạn uống trà hay sữa bò?"
+      ],
+      "explanation": "你喝茶还是牛奶？ — Bạn uống trà hay sữa bò? Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bạn uống trà hay sữa bò?”.",
+      "options": [
+        "这是什么水果？",
+        "我想买两本汉语书。",
+        "你喝茶还是牛奶？",
+        "我要买两公斤香蕉。"
+      ],
+      "accepted": [
+        "你喝茶还是牛奶？"
+      ],
+      "explanation": "你喝茶还是牛奶？ — Bạn uống trà hay sữa bò? Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “我想买两个包子。” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn uống một cốc trà sữa.",
+        "Tôi còn muốn thêm một chút cơm.",
+        "Tôi muốn mua hai kilôgam chuối.",
+        "Tôi muốn mua hai chiếc bánh bao."
+      ],
+      "accepted": [
+        "Tôi muốn mua hai chiếc bánh bao."
+      ],
+      "explanation": "我想买两个包子。 — Tôi muốn mua hai chiếc bánh bao. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn mua hai chiếc bánh bao.”.",
+      "options": [
+        "我想买两个包子。",
+        "这些苹果很新鲜。",
+        "我要买两公斤香蕉。",
+        "我想喝一杯奶茶。"
+      ],
+      "accepted": [
+        "我想买两个包子。"
+      ],
+      "explanation": "我想买两个包子。 — Tôi muốn mua hai chiếc bánh bao. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “这些苹果很新鲜。” có nghĩa là gì?",
+      "options": [
+        "Những loại hoa quả này rất rẻ.",
+        "Bạn muốn ăn gì?",
+        "Tôi muốn mua hai quyển sách tiếng Hán.",
+        "Những quả táo này rất tươi."
+      ],
+      "accepted": [
+        "Những quả táo này rất tươi."
+      ],
+      "explanation": "这些苹果很新鲜。 — Những quả táo này rất tươi. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Những quả táo này rất tươi.”.",
+      "options": [
+        "这些苹果很新鲜。",
+        "我要其他的蔬菜。",
+        "我想喝一杯奶茶。",
+        "你喝茶还是牛奶？"
+      ],
+      "accepted": [
+        "这些苹果很新鲜。"
+      ],
+      "explanation": "这些苹果很新鲜。 — Những quả táo này rất tươi. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “我有点儿饿。” có nghĩa là gì?",
+      "options": [
+        "Anh ấy rất no.",
+        "Tôi muốn mua hai kilôgam chuối.",
+        "Tôi hơi đói.",
+        "Tôi muốn mua hai chiếc bánh bao."
+      ],
+      "accepted": [
+        "Tôi hơi đói."
+      ],
+      "explanation": "我有点儿饿。 — Tôi hơi đói. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi hơi đói.”.",
+      "options": [
+        "你喝茶还是牛奶？",
+        "这棵树很大。",
+        "你要吃什么？",
+        "我有点儿饿。"
+      ],
+      "accepted": [
+        "我有点儿饿。"
+      ],
+      "explanation": "我有点儿饿。 — Tôi hơi đói. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “他很饱。” có nghĩa là gì?",
+      "options": [
+        "Anh ấy rất no.",
+        "Tôi muốn mua hai chiếc bánh bao.",
+        "Tôi còn muốn thêm một chút cơm.",
+        "Tôi muốn một bát cơm."
+      ],
+      "accepted": [
+        "Anh ấy rất no."
+      ],
+      "explanation": "他很饱。 — Anh ấy rất no. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Anh ấy rất no.”.",
+      "options": [
+        "我想买两个包子。",
+        "我想买一本汉语书。",
+        "这是什么水果？",
+        "他很饱。"
+      ],
+      "accepted": [
+        "他很饱。"
+      ],
+      "explanation": "他很饱。 — Anh ấy rất no. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “我想喝一杯奶茶。” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn mua hai chiếc bánh bao.",
+        "Tôi muốn uống một cốc trà sữa.",
+        "Bạn uống trà hay sữa bò?",
+        "Tôi muốn một bát cơm."
+      ],
+      "accepted": [
+        "Tôi muốn uống một cốc trà sữa."
+      ],
+      "explanation": "我想喝一杯奶茶。 — Tôi muốn uống một cốc trà sữa. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn uống một cốc trà sữa.”.",
+      "options": [
+        "我想喝一杯奶茶。",
+        "这些水果很便宜。",
+        "一共五十块钱。",
+        "我想买两个包子。"
+      ],
+      "accepted": [
+        "我想喝一杯奶茶。"
+      ],
+      "explanation": "我想喝一杯奶茶。 — Tôi muốn uống một cốc trà sữa. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “牛肉多少钱一斤？” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn uống một cốc trà.",
+        "Anh ấy rất no.",
+        "Tôi muốn mua hai kilôgam chuối.",
+        "Thịt bò bao nhiêu tiền một cân Trung Quốc?"
+      ],
+      "accepted": [
+        "Thịt bò bao nhiêu tiền một cân Trung Quốc?"
+      ],
+      "explanation": "牛肉多少钱一斤？ — Thịt bò bao nhiêu tiền một cân Trung Quốc? Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Thịt bò bao nhiêu tiền một cân Trung Quốc?”.",
+      "options": [
+        "我还要一点儿米饭。",
+        "我有点儿饿。",
+        "牛肉多少钱一斤？",
+        "我想喝一杯奶茶。"
+      ],
+      "accepted": [
+        "牛肉多少钱一斤？"
+      ],
+      "explanation": "牛肉多少钱一斤？ — Thịt bò bao nhiêu tiền một cân Trung Quốc? Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “一共五十块钱。” có nghĩa là gì?",
+      "options": [
+        "Bạn muốn ăn gì?",
+        "Tôi hơi đói.",
+        "Tổng cộng năm mươi đồng.",
+        "Tôi muốn uống một cốc trà sữa."
+      ],
+      "accepted": [
+        "Tổng cộng năm mươi đồng."
+      ],
+      "explanation": "一共五十块钱。 — Tổng cộng năm mươi đồng. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tổng cộng năm mươi đồng.”.",
+      "options": [
+        "他很饱。",
+        "牛肉多少钱一斤？",
+        "我想喝一杯茶。",
+        "一共五十块钱。"
+      ],
+      "accepted": [
+        "一共五十块钱。"
+      ],
+      "explanation": "一共五十块钱。 — Tổng cộng năm mươi đồng. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “我还要一点儿米饭。” có nghĩa là gì?",
+      "options": [
+        "Tôi còn muốn thêm một chút cơm.",
+        "Cô ấy muốn ăn sủi cảo.",
+        "Tôi hơi đói.",
+        "Tôi muốn mua một quyển sách tiếng Hán."
+      ],
+      "accepted": [
+        "Tôi còn muốn thêm một chút cơm."
+      ],
+      "explanation": "我还要一点儿米饭。 — Tôi còn muốn thêm một chút cơm. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi còn muốn thêm một chút cơm.”.",
+      "options": [
+        "我还要一点儿米饭。",
+        "我要一碗米饭。",
+        "我想买两个包子。",
+        "我想买两本汉语书。"
+      ],
+      "accepted": [
+        "我还要一点儿米饭。"
+      ],
+      "explanation": "我还要一点儿米饭。 — Tôi còn muốn thêm một chút cơm. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “这些水果很便宜。” có nghĩa là gì?",
+      "options": [
+        "Những quả táo này rất tươi.",
+        "Thịt bò bao nhiêu tiền một cân Trung Quốc?",
+        "Tôi còn muốn thêm một chút cơm.",
+        "Những loại hoa quả này rất rẻ."
+      ],
+      "accepted": [
+        "Những loại hoa quả này rất rẻ."
+      ],
+      "explanation": "这些水果很便宜。 — Những loại hoa quả này rất rẻ. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Những loại hoa quả này rất rẻ.”.",
+      "options": [
+        "这棵树很大。",
+        "我想买一本汉语书。",
+        "我想买两本汉语书。",
+        "这些水果很便宜。"
+      ],
+      "accepted": [
+        "这些水果很便宜。"
+      ],
+      "explanation": "这些水果很便宜。 — Những loại hoa quả này rất rẻ. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “我要买两公斤香蕉。” có nghĩa là gì?",
+      "options": [
+        "Tôi còn muốn thêm một chút cơm.",
+        "Tôi muốn các loại rau củ khác.",
+        "Tôi muốn một bát cơm.",
+        "Tôi muốn mua hai kilôgam chuối."
+      ],
+      "accepted": [
+        "Tôi muốn mua hai kilôgam chuối."
+      ],
+      "explanation": "我要买两公斤香蕉。 — Tôi muốn mua hai kilôgam chuối. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn mua hai kilôgam chuối.”.",
+      "options": [
+        "我还要一点儿米饭。",
+        "我要一碗米饭。",
+        "他很饱。",
+        "我要买两公斤香蕉。"
+      ],
+      "accepted": [
+        "我要买两公斤香蕉。"
+      ],
+      "explanation": "我要买两公斤香蕉。 — Tôi muốn mua hai kilôgam chuối. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “她想吃饺子。” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn mua hai chiếc bánh bao.",
+        "Cô ấy muốn ăn sủi cảo.",
+        "Tôi muốn mua hai kilôgam chuối.",
+        "Tôi còn muốn thêm một chút cơm."
+      ],
+      "accepted": [
+        "Cô ấy muốn ăn sủi cảo."
+      ],
+      "explanation": "她想吃饺子。 — Cô ấy muốn ăn sủi cảo. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy muốn ăn sủi cảo.”.",
+      "options": [
+        "她想吃饺子。",
+        "这棵树很大。",
+        "我要其他的蔬菜。",
+        "你喝茶还是牛奶？"
+      ],
+      "accepted": [
+        "她想吃饺子。"
+      ],
+      "explanation": "她想吃饺子。 — Cô ấy muốn ăn sủi cảo. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “我要其他的蔬菜。” có nghĩa là gì?",
+      "options": [
+        "Những quả táo này rất tươi.",
+        "Tôi muốn mua một quyển sách tiếng Hán.",
+        "Những loại hoa quả này rất rẻ.",
+        "Tôi muốn các loại rau củ khác."
+      ],
+      "accepted": [
+        "Tôi muốn các loại rau củ khác."
+      ],
+      "explanation": "我要其他的蔬菜。 — Tôi muốn các loại rau củ khác. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn các loại rau củ khác.”.",
+      "options": [
+        "我要其他的蔬菜。",
+        "我想买两个包子。",
+        "他很饱。",
+        "这些水果很便宜。"
+      ],
+      "accepted": [
+        "我要其他的蔬菜。"
+      ],
+      "explanation": "我要其他的蔬菜。 — Tôi muốn các loại rau củ khác. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “我想买一本汉语书。” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn mua một quyển sách tiếng Hán.",
+        "Cô ấy muốn ăn sủi cảo.",
+        "Tổng cộng năm mươi đồng.",
+        "Những loại hoa quả này rất rẻ."
+      ],
+      "accepted": [
+        "Tôi muốn mua một quyển sách tiếng Hán."
+      ],
+      "explanation": "我想买一本汉语书。 — Tôi muốn mua một quyển sách tiếng Hán. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn mua một quyển sách tiếng Hán.”.",
+      "options": [
+        "她想吃饺子。",
+        "这些水果很便宜。",
+        "我想买一本汉语书。",
+        "我想喝一杯茶。"
+      ],
+      "accepted": [
+        "我想买一本汉语书。"
+      ],
+      "explanation": "我想买一本汉语书。 — Tôi muốn mua một quyển sách tiếng Hán. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “这棵树很大。” có nghĩa là gì?",
+      "options": [
+        "Thịt bò bao nhiêu tiền một cân Trung Quốc?",
+        "Tôi muốn mua hai kilôgam chuối.",
+        "Cái cây này rất to.",
+        "Bạn uống trà hay sữa bò?"
+      ],
+      "accepted": [
+        "Cái cây này rất to."
+      ],
+      "explanation": "这棵树很大。 — Cái cây này rất to. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cái cây này rất to.”.",
+      "options": [
+        "这棵树很大。",
+        "你要吃什么？",
+        "这是什么水果？",
+        "一共五十块钱。"
+      ],
+      "accepted": [
+        "这棵树很大。"
+      ],
+      "explanation": "这棵树很大。 — Cái cây này rất to. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “我想买两本汉语书。” có nghĩa là gì?",
+      "options": [
+        "Đây là loại hoa quả gì?",
+        "Tôi muốn mua hai quyển sách tiếng Hán.",
+        "Tôi muốn mua một quyển sách tiếng Hán.",
+        "Anh ấy rất no."
+      ],
+      "accepted": [
+        "Tôi muốn mua hai quyển sách tiếng Hán."
+      ],
+      "explanation": "我想买两本汉语书。 — Tôi muốn mua hai quyển sách tiếng Hán. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn mua hai quyển sách tiếng Hán.”.",
+      "options": [
+        "这些苹果很新鲜。",
+        "一共五十块钱。",
+        "她想吃饺子。",
+        "我想买两本汉语书。"
+      ],
+      "accepted": [
+        "我想买两本汉语书。"
+      ],
+      "explanation": "我想买两本汉语书。 — Tôi muốn mua hai quyển sách tiếng Hán. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “这是什么水果？” có nghĩa là gì?",
+      "options": [
+        "Thịt bò bao nhiêu tiền một cân Trung Quốc?",
+        "Đây là loại hoa quả gì?",
+        "Bạn uống trà hay sữa bò?",
+        "Tôi muốn mua hai chiếc bánh bao."
+      ],
+      "accepted": [
+        "Đây là loại hoa quả gì?"
+      ],
+      "explanation": "这是什么水果？ — Đây là loại hoa quả gì? Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Đây là loại hoa quả gì?”.",
+      "options": [
+        "这是什么水果？",
+        "我还要一点儿米饭。",
+        "我想买一本汉语书。",
+        "这棵树很大。"
+      ],
+      "accepted": [
+        "这是什么水果？"
+      ],
+      "explanation": "这是什么水果？ — Đây là loại hoa quả gì? Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Câu “我想喝一杯茶。” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn uống một cốc trà.",
+        "Thịt bò bao nhiêu tiền một cân Trung Quốc?",
+        "Bạn muốn ăn gì?",
+        "Cô ấy muốn ăn sủi cảo."
+      ],
+      "accepted": [
+        "Tôi muốn uống một cốc trà."
+      ],
+      "explanation": "我想喝一杯茶。 — Tôi muốn uống một cốc trà. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–5",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn uống một cốc trà.”.",
+      "options": [
+        "我想喝一杯茶。",
+        "我想买两本汉语书。",
+        "这些水果很便宜。",
+        "这是什么水果？"
+      ],
+      "accepted": [
+        "我想喝一杯茶。"
+      ],
+      "explanation": "我想喝一杯茶。 — Tôi muốn uống một cốc trà. Câu dùng từ trong danh sách bài 1–5.",
+      "difficulty": "medium",
+      "approved": true
+    }
+  ],
+  "speaking": [
+    {
+      "practice": "speaking",
+      "text": "你想吃什么？",
+      "meaning": "Bạn muốn ăn gì?",
+      "answer_reference": "我想吃包子。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你喝茶还是牛奶？",
+      "meaning": "Bạn uống trà hay sữa bò?",
+      "answer_reference": "我喝茶。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你要几碗米饭？",
+      "meaning": "Bạn muốn mấy bát cơm?",
+      "answer_reference": "我要一碗米饭。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你想买什么水果？",
+      "meaning": "Bạn muốn mua hoa quả gì?",
+      "answer_reference": "我想买苹果。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "这些苹果新鲜吗？",
+      "meaning": "Những quả táo này có tươi không?",
+      "answer_reference": "这些苹果很新鲜。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "牛肉多少钱一斤？",
+      "meaning": "Thịt bò bao nhiêu tiền một cân Trung Quốc?",
+      "answer_reference": "五十块钱一斤。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你饿了吗？",
+      "meaning": "Bạn đói chưa?",
+      "answer_reference": "我有点儿饿。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你要一杯奶茶吗？",
+      "meaning": "Bạn muốn một cốc trà sữa phải không?",
+      "answer_reference": "我要一杯奶茶。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你要买几公斤香蕉？",
+      "meaning": "Bạn muốn mua mấy kilôgam chuối?",
+      "answer_reference": "我要买两公斤香蕉。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "一共多少钱？",
+      "meaning": "Tổng cộng bao nhiêu tiền?",
+      "answer_reference": "一共十块钱。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    }
+  ],
+  "activities": {
+    "topic": "Đồ ăn, đồ uống và mua hàng",
+    "tasks": [
+      {
+        "type": "order",
+        "prompt": "Bạn muốn ăn gì?",
+        "tokens": [
+          "你",
+          "要",
+          "吃",
+          "什么",
+          "？"
+        ],
+        "answer": "你要吃什么？",
+        "explanation": "你要吃什么？ — Bạn muốn ăn gì?"
+      },
+      {
+        "type": "fill",
+        "prompt": "你___吃什么？ (Bạn muốn ăn gì?)",
+        "answer": "要",
+        "explanation": "Câu hoàn chỉnh: 你要吃什么？ — Bạn muốn ăn gì?"
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi muốn một bát cơm.",
+        "tokens": [
+          "我",
+          "要",
+          "一碗米饭",
+          "。"
+        ],
+        "answer": "我要一碗米饭。",
+        "explanation": "我要一碗米饭。 — Tôi muốn một bát cơm."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___一碗米饭。 (Tôi muốn một bát cơm.)",
+        "answer": "要",
+        "explanation": "Câu hoàn chỉnh: 我要一碗米饭。 — Tôi muốn một bát cơm."
+      },
+      {
+        "type": "order",
+        "prompt": "Bạn uống trà hay sữa bò?",
+        "tokens": [
+          "你",
+          "喝",
+          "茶",
+          "还是",
+          "牛奶",
+          "？"
+        ],
+        "answer": "你喝茶还是牛奶？",
+        "explanation": "你喝茶还是牛奶？ — Bạn uống trà hay sữa bò?"
+      },
+      {
+        "type": "fill",
+        "prompt": "你___茶还是牛奶？ (Bạn uống trà hay sữa bò?)",
+        "answer": "喝",
+        "explanation": "Câu hoàn chỉnh: 你喝茶还是牛奶？ — Bạn uống trà hay sữa bò?"
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi muốn mua hai chiếc bánh bao.",
+        "tokens": [
+          "我",
+          "想",
+          "买",
+          "两",
+          "个",
+          "包子",
+          "。"
+        ],
+        "answer": "我想买两个包子。",
+        "explanation": "我想买两个包子。 — Tôi muốn mua hai chiếc bánh bao."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___买两个包子。 (Tôi muốn mua hai chiếc bánh bao.)",
+        "answer": "想",
+        "explanation": "Câu hoàn chỉnh: 我想买两个包子。 — Tôi muốn mua hai chiếc bánh bao."
+      },
+      {
+        "type": "order",
+        "prompt": "Những quả táo này rất tươi.",
+        "tokens": [
+          "这些",
+          "苹果",
+          "很",
+          "新鲜",
+          "。"
+        ],
+        "answer": "这些苹果很新鲜。",
+        "explanation": "这些苹果很新鲜。 — Những quả táo này rất tươi."
+      },
+      {
+        "type": "fill",
+        "prompt": "___苹果很新鲜。 (Những quả táo này rất tươi.)",
+        "answer": "这些",
+        "explanation": "Câu hoàn chỉnh: 这些苹果很新鲜。 — Những quả táo này rất tươi."
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi hơi đói.",
+        "tokens": [
+          "我",
+          "有点儿",
+          "饿",
+          "。"
+        ],
+        "answer": "我有点儿饿。",
+        "explanation": "我有点儿饿。 — Tôi hơi đói."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___饿。 (Tôi hơi đói.)",
+        "answer": "有点儿",
+        "explanation": "Câu hoàn chỉnh: 我有点儿饿。 — Tôi hơi đói."
+      },
+      {
+        "type": "order",
+        "prompt": "Anh ấy rất no.",
+        "tokens": [
+          "他",
+          "很",
+          "饱",
+          "。"
+        ],
+        "answer": "他很饱。",
+        "explanation": "他很饱。 — Anh ấy rất no."
+      },
+      {
+        "type": "fill",
+        "prompt": "他___饱。 (Anh ấy rất no.)",
+        "answer": "很",
+        "explanation": "Câu hoàn chỉnh: 他很饱。 — Anh ấy rất no."
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi muốn uống một cốc trà sữa.",
+        "tokens": [
+          "我",
+          "想",
+          "喝",
+          "一杯奶茶",
+          "。"
+        ],
+        "answer": "我想喝一杯奶茶。",
+        "explanation": "我想喝一杯奶茶。 — Tôi muốn uống một cốc trà sữa."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___喝一杯奶茶。 (Tôi muốn uống một cốc trà sữa.)",
+        "answer": "想",
+        "explanation": "Câu hoàn chỉnh: 我想喝一杯奶茶。 — Tôi muốn uống một cốc trà sữa."
+      },
+      {
+        "type": "order",
+        "prompt": "Thịt bò bao nhiêu tiền một cân Trung Quốc?",
+        "tokens": [
+          "牛肉",
+          "多少",
+          "钱",
+          "一",
+          "斤",
+          "？"
+        ],
+        "answer": "牛肉多少钱一斤？",
+        "explanation": "牛肉多少钱一斤？ — Thịt bò bao nhiêu tiền một cân Trung Quốc?"
+      },
+      {
+        "type": "fill",
+        "prompt": "___多少钱一斤？ (Thịt bò bao nhiêu tiền một cân Trung Quốc?)",
+        "answer": "牛肉",
+        "explanation": "Câu hoàn chỉnh: 牛肉多少钱一斤？ — Thịt bò bao nhiêu tiền một cân Trung Quốc?"
+      },
+      {
+        "type": "order",
+        "prompt": "Tổng cộng năm mươi đồng.",
+        "tokens": [
+          "一共",
+          "五",
+          "十",
+          "块",
+          "钱",
+          "。"
+        ],
+        "answer": "一共五十块钱。",
+        "explanation": "一共五十块钱。 — Tổng cộng năm mươi đồng."
+      },
+      {
+        "type": "fill",
+        "prompt": "___五十块钱。 (Tổng cộng năm mươi đồng.)",
+        "answer": "一共",
+        "explanation": "Câu hoàn chỉnh: 一共五十块钱。 — Tổng cộng năm mươi đồng."
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Bạn muốn ăn gì?”: 我想喝一杯奶茶。",
+        "answer": "你要吃什么？",
+        "options": [
+          "你要吃什么？",
+          "我想喝一杯奶茶。",
+          "她想吃饺子。"
+        ],
+        "explanation": "你要吃什么？ — Bạn muốn ăn gì?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你想吃什么？",
+        "answer": "我想吃包子。",
+        "options": [
+          "我想吃包子。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn muốn ăn gì? Đáp lại: 我想吃包子。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi muốn một bát cơm.”: 牛肉多少钱一斤？",
+        "answer": "我要一碗米饭。",
+        "options": [
+          "我要一碗米饭。",
+          "牛肉多少钱一斤？",
+          "我要其他的蔬菜。"
+        ],
+        "explanation": "我要一碗米饭。 — Tôi muốn một bát cơm."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你喝茶还是牛奶？",
+        "answer": "我喝茶。",
+        "options": [
+          "我喝茶。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn uống trà hay sữa bò? Đáp lại: 我喝茶。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Bạn uống trà hay sữa bò?”: 一共五十块钱。",
+        "answer": "你喝茶还是牛奶？",
+        "options": [
+          "你喝茶还是牛奶？",
+          "一共五十块钱。",
+          "我想买一本汉语书。"
+        ],
+        "explanation": "你喝茶还是牛奶？ — Bạn uống trà hay sữa bò?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你要几碗米饭？",
+        "answer": "我要一碗米饭。",
+        "options": [
+          "我要一碗米饭。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn muốn mấy bát cơm? Đáp lại: 我要一碗米饭。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi muốn mua hai chiếc bánh bao.”: 我还要一点儿米饭。",
+        "answer": "我想买两个包子。",
+        "options": [
+          "我想买两个包子。",
+          "我还要一点儿米饭。",
+          "这棵树很大。"
+        ],
+        "explanation": "我想买两个包子。 — Tôi muốn mua hai chiếc bánh bao."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你想买什么水果？",
+        "answer": "我想买苹果。",
+        "options": [
+          "我想买苹果。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn muốn mua hoa quả gì? Đáp lại: 我想买苹果。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Những quả táo này rất tươi.”: 这些水果很便宜。",
+        "answer": "这些苹果很新鲜。",
+        "options": [
+          "这些苹果很新鲜。",
+          "这些水果很便宜。",
+          "我想买两本汉语书。"
+        ],
+        "explanation": "这些苹果很新鲜。 — Những quả táo này rất tươi."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "这些苹果新鲜吗？",
+        "answer": "这些苹果很新鲜。",
+        "options": [
+          "这些苹果很新鲜。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Những quả táo này có tươi không? Đáp lại: 这些苹果很新鲜。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi hơi đói.”: 我要买两公斤香蕉。",
+        "answer": "我有点儿饿。",
+        "options": [
+          "我有点儿饿。",
+          "我要买两公斤香蕉。",
+          "这是什么水果？"
+        ],
+        "explanation": "我有点儿饿。 — Tôi hơi đói."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "牛肉多少钱一斤？",
+        "answer": "五十块钱一斤。",
+        "options": [
+          "五十块钱一斤。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Thịt bò bao nhiêu tiền một cân Trung Quốc? Đáp lại: 五十块钱一斤。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Anh ấy rất no.”: 她想吃饺子。",
+        "answer": "他很饱。",
+        "options": [
+          "他很饱。",
+          "她想吃饺子。",
+          "我想喝一杯茶。"
+        ],
+        "explanation": "他很饱。 — Anh ấy rất no."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你饿了吗？",
+        "answer": "我有点儿饿。",
+        "options": [
+          "我有点儿饿。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn đói chưa? Đáp lại: 我有点儿饿。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi muốn uống một cốc trà sữa.”: 我要其他的蔬菜。",
+        "answer": "我想喝一杯奶茶。",
+        "options": [
+          "我想喝一杯奶茶。",
+          "我要其他的蔬菜。",
+          "你要吃什么？"
+        ],
+        "explanation": "我想喝一杯奶茶。 — Tôi muốn uống một cốc trà sữa."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你要一杯奶茶吗？",
+        "answer": "我要一杯奶茶。",
+        "options": [
+          "我要一杯奶茶。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn muốn một cốc trà sữa phải không? Đáp lại: 我要一杯奶茶。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Thịt bò bao nhiêu tiền một cân Trung Quốc?”: 我想买一本汉语书。",
+        "answer": "牛肉多少钱一斤？",
+        "options": [
+          "牛肉多少钱一斤？",
+          "我想买一本汉语书。",
+          "我要一碗米饭。"
+        ],
+        "explanation": "牛肉多少钱一斤？ — Thịt bò bao nhiêu tiền một cân Trung Quốc?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你要买几公斤香蕉？",
+        "answer": "我要买两公斤香蕉。",
+        "options": [
+          "我要买两公斤香蕉。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn muốn mua mấy kilôgam chuối? Đáp lại: 我要买两公斤香蕉。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tổng cộng năm mươi đồng.”: 这棵树很大。",
+        "answer": "一共五十块钱。",
+        "options": [
+          "一共五十块钱。",
+          "这棵树很大。",
+          "你喝茶还是牛奶？"
+        ],
+        "explanation": "一共五十块钱。 — Tổng cộng năm mươi đồng."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "一共多少钱？",
+        "answer": "一共十块钱。",
+        "options": [
+          "一共十块钱。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Tổng cộng bao nhiêu tiền? Đáp lại: 一共十块钱。"
+      }
+    ]
+  },
+  "chat": {
+    "enabled": true,
+    "scenario_id": "food",
+    "goal": "Trò chuyện về đồ ăn, đồ uống và mua hàng; chỉ dùng từ đã học từ bài 1 đến bài 5.",
+    "opening": "你想吃什么？",
+    "translation": "Bạn muốn ăn gì?",
+    "required_words": [
+      "要",
+      "想",
+      "吃",
+      "茶",
+      "牛奶",
+      "喝",
+      "杯",
+      "杯子",
+      "一点儿",
+      "买",
+      "卖",
+      "个",
+      "米饭",
+      "斤",
+      "还是",
+      "碗",
+      "一共",
+      "饿",
+      "快",
+      "孩子"
+    ],
+    "max_turns": 10
+  },
+  "street": {
+    "enabled": true,
+    "place_id": "restaurant",
+    "missions": [
+      {
+        "id": "vocab-5-1",
+        "title": "Nghe hiểu 1",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "你要吃什么？",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Bạn muốn ăn gì?"
+          },
+          {
+            "id": "c2",
+            "label": "Tôi muốn uống một cốc trà sữa."
+          },
+          {
+            "id": "c3",
+            "label": "Cô ấy muốn ăn sủi cảo."
+          }
+        ],
+        "answer": "c1",
+        "feedback": "你要吃什么？ — Bạn muốn ăn gì?"
+      },
+      {
+        "id": "vocab-5-2",
+        "title": "Nghe hiểu 2",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "我有点儿饿。",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Tôi muốn mua hai kilôgam chuối."
+          },
+          {
+            "id": "c2",
+            "label": "Tôi hơi đói."
+          },
+          {
+            "id": "c3",
+            "label": "Đây là loại hoa quả gì?"
+          }
+        ],
+        "answer": "c2",
+        "feedback": "我有点儿饿。 — Tôi hơi đói."
+      },
+      {
+        "id": "vocab-5-3",
+        "title": "Nghe hiểu 3",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "我还要一点儿米饭。",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Tôi muốn mua hai chiếc bánh bao."
+          },
+          {
+            "id": "c2",
+            "label": "Tôi muốn mua hai quyển sách tiếng Hán."
+          },
+          {
+            "id": "c3",
+            "label": "Tôi còn muốn thêm một chút cơm."
+          }
+        ],
+        "answer": "c3",
+        "feedback": "我还要一点儿米饭。 — Tôi còn muốn thêm một chút cơm."
+      }
+    ]
+  }
+}

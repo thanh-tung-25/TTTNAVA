@@ -2,6 +2,7 @@ import {test,expect} from '@playwright/test';
 import {readFile} from 'node:fs/promises';
 import {chineseQuestionPrompt} from '../frontend/assets/js/chinese-question-prompt.js';
 import {activityTemplate} from '../frontend/assets/js/chinese-activity-templates.js';
+import {q1QuizVocabulary} from '../backend/src/data/chinese-q1-quiz-vocabulary.js';
 import {publicItem} from '../backend/src/repositories/chinese.js';
 import {parseChineseText} from '../backend/src/services/chinese-import.js';
 import {itemSchema} from '../backend/src/validators/chinese.js';
@@ -41,15 +42,13 @@ test('omits redundant hint data while preserving the required context and words 
  }
 });
 
-test('all 359 vocabulary meaning questions in lessons 3–6 omit the extra pinyin',async()=>{
+test('exported lesson files follow the complete source and ask vocabulary before application',async()=>{
  let reviewed=0;
  for(const lesson of [3,4,5,6]){
   const pack=JSON.parse(await readFile(`tai-lieu/tieng-trung-bai-3-6/du-lieu-bai-${lesson}.json`,'utf8'));
-  for(const [index,word]of pack.vocabulary.entries()){
-   const [meaning,hanzi,pinyin]=pack.questions.slice(index*3,index*3+3);
-   expect(meaning.prompt).toBe(`Trong bài học, “${word.hanzi}” có nghĩa là gì?`);
-   expect(hanzi.prompt).toContain(`“${word.pinyin}”`);expect(pinyin.options).toContain(word.pinyin);expect(meaning.explanation).toContain(word.pinyin);reviewed++;
-  }
+  const source=q1QuizVocabulary.find(s=>s.number===lesson);expect(pack.vocabulary.map(w=>[w.hanzi,w.pinyin,w.meaning])).toEqual(source.words.map(w=>[w.hanzi,w.pinyin,w.meaning]));
+  expect(pack.questions.slice(0,-40).every(q=>q.title===`Từ mới bài ${lesson}`)).toBe(true);
+  expect(pack.questions.slice(-40).every(q=>q.title===`Vận dụng từ bài 1–${lesson}`)).toBe(true);reviewed+=pack.vocabulary.length;
  }
- expect(reviewed).toBe(359);
+ expect(reviewed).toBe(230);
 });

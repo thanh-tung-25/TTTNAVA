@@ -1,2334 +1,1901 @@
-MÔN: Tiếng Trung
-LỚP: HSK 1
-CHỦ ĐỀ: Bài 8. 你的生日是几月几号 — Sinh nhật của bạn là ngày mấy tháng mấy?
+MÔN: Tiếng Trung — HSK 1
+CHỦ ĐỀ: 第八课：你的生日是几月几号？ (Sinh nhật của bạn là ngày tháng nào?)
+CHỦ ĐỀ: Đồng bộ theo danh sách từ vựng đầy đủ ngày 14/11/2026
 [TU VUNG]
-今天 | jīntiān | hôm nay |  |  |  |  |  |  |  |  | main
-昨天 | zuótiān | hôm qua |  |  |  |  |  |  |  |  | main
-明天 | míngtiān | ngày mai |  |  |  |  |  |  |  |  | main
-天 | tiān | ngày; trời |  |  |  |  |  |  |  |  | main
-号 | hào | ngày trong tháng, cách nói khẩu ngữ |  |  |  |  |  |  |  |  | main
-几 | jǐ | mấy; hỏi số lượng nhỏ |  |  |  |  |  |  |  |  | main
-月 | yuè | tháng |  |  |  |  |  |  |  |  | main
-年 | nián | năm |  |  |  |  |  |  |  |  | main
-每 | měi | mỗi |  |  |  |  |  |  |  |  | main
-点 | diǎn | giờ; điểm giờ |  |  |  |  |  |  |  |  | main
-分 | fēn | phút |  |  |  |  |  |  |  |  | main
-小时 | xiǎoshí | tiếng, giờ đồng hồ; khoảng thời gian |  |  |  |  |  |  |  |  | main
-差 | chà | kém, còn thiếu; khi nói giờ |  |  |  |  |  |  |  |  | main
-出生 | chūshēng | sinh ra |  |  |  |  |  |  |  |  | main
-蛋糕 | dàngāo | bánh kem |  |  |  |  |  |  |  |  | main
-属 | shǔ | cầm tinh, thuộc con giáp |  |  |  |  |  |  |  |  | main
-生日 | shēngrì | sinh nhật |  |  |  |  |  |  |  |  | main
-快乐 | kuàilè | vui vẻ, hạnh phúc |  |  |  |  |  |  |  |  | main
-星期 | xīngqī | tuần; thứ trong tuần |  |  |  |  |  |  |  |  | main
-真 | zhēn | thật, thật là |  |  |  |  |  |  |  |  | main
-太……了 | tài…le | quá, rất; cấu trúc cảm thán |  |  |  |  |  |  |  |  | main
-说 | shuō | nói |  |  |  |  |  |  |  |  | main
-告诉 | gàosu | nói cho biết, bảo với |  |  |  |  |  |  |  |  | main
-聊天 | liáotiān | trò chuyện, tán gẫu |  |  |  |  |  |  |  |  | main
-为什么 | wèishénme | tại sao |  |  |  |  |  |  |  |  | main
-因为 | yīnwèi | bởi vì |  |  |  |  |  |  |  |  | main
-最 | zuì | nhất |  |  |  |  |  |  |  |  | main
-事 | shì | việc, chuyện |  |  |  |  |  |  |  |  | main
-介绍 | jièshào | giới thiệu |  |  |  |  |  |  |  |  | main
-有空儿 | yǒu kòngr | rảnh, có thời gian |  |  |  |  |  |  |  |  | main
-见 | jiàn | gặp |  |  |  |  |  |  |  |  | main
-尝 | cháng | nếm, thử vị |  |  |  |  |  |  |  |  | main
-过 | guo | trợ từ chỉ trải nghiệm đã từng |  |  |  |  |  |  |  |  | main
-电视剧 | diànshìjù | phim truyền hình, phim dài tập |  |  |  |  |  |  |  |  | main
-门口 | ménkǒu | cổng, cửa ra vào |  |  |  |  |  |  |  |  | main
-休息 | xiūxi | nghỉ ngơi |  |  |  |  |  |  |  |  | main
-上个星期 | shàng ge xīngqī | tuần trước |  |  |  |  |  |  |  |  | extended
-这个星期 | zhè ge xīngqī | tuần này |  |  |  |  |  |  |  |  | extended
-下个星期 | xià ge xīngqī | tuần sau |  |  |  |  |  |  |  |  | extended
-上个月 | shàng ge yuè | tháng trước |  |  |  |  |  |  |  |  | extended
-这个月 | zhè ge yuè | tháng này |  |  |  |  |  |  |  |  | extended
-下个月 | xià ge yuè | tháng sau |  |  |  |  |  |  |  |  | extended
-前年 | qiánnián | năm kia |  |  |  |  |  |  |  |  | extended
-去年 | qùnián | năm ngoái |  |  |  |  |  |  |  |  | extended
-今年 | jīnnián | năm nay |  |  |  |  |  |  |  |  | extended
-明年 | míngnián | năm sau |  |  |  |  |  |  |  |  | extended
-后年 | hòunián | năm sau nữa |  |  |  |  |  |  |  |  | extended
-前天 | qiántiān | hôm kia |  |  |  |  |  |  |  |  | extended
-后天 | hòutiān | ngày kia |  |  |  |  |  |  |  |  | extended
-每天 | měitiān | mỗi ngày |  |  |  |  |  |  |  |  | extended
-每年 | měinián | mỗi năm |  |  |  |  |  |  |  |  | extended
-秒 | miǎo | giây |  |  |  |  |  |  |  |  | extended
-半 | bàn | nửa, rưỡi |  |  |  |  |  |  |  |  | extended
-刻 | kè | một khắc, mười lăm phút |  |  |  |  |  |  |  |  | extended
-生日快乐 | shēngrì kuàilè | chúc mừng sinh nhật |  |  |  |  |  |  |  |  | extended
-生日歌 | shēngrì gē | bài hát mừng sinh nhật |  |  |  |  |  |  |  |  | extended
-星期一 | xīngqī yī | thứ hai |  |  |  |  |  |  |  |  | extended
-星期二 | xīngqī èr | thứ ba |  |  |  |  |  |  |  |  | extended
-星期三 | xīngqī sān | thứ tư |  |  |  |  |  |  |  |  | extended
-星期四 | xīngqī sì | thứ năm |  |  |  |  |  |  |  |  | extended
-星期五 | xīngqī wǔ | thứ sáu |  |  |  |  |  |  |  |  | extended
-星期六 | xīngqī liù | thứ bảy |  |  |  |  |  |  |  |  | extended
-星期天 | xīngqī tiān | chủ nhật |  |  |  |  |  |  |  |  | extended
-星期日 | xīngqī rì | chủ nhật |  |  |  |  |  |  |  |  | extended
-周 | zhōu | tuần; cách gọi tuần, thứ |  |  |  |  |  |  |  |  | extended
-礼拜 | lǐbài | tuần; cách gọi tuần, thứ |  |  |  |  |  |  |  |  | extended
-汉语课 | Hànyǔ kè | tiết học tiếng Hán |  |  |  |  |  |  |  |  | extended
-漂亮 | piàoliang | xinh đẹp |  |  |  |  |  |  |  |  | extended
-真的 | zhēn de | thật, thực sự |  |  |  |  |  |  |  |  | extended
-假的 | jiǎ de | giả, không thật |  |  |  |  |  |  |  |  | extended
-件 | jiàn | lượng từ cho sự việc |  |  |  |  |  |  |  |  | extended
-没空儿 | méi kòngr | không rảnh |  |  |  |  |  |  |  |  | extended
-晚饭 | wǎnfàn | bữa tối |  |  |  |  |  |  |  |  | extended
-短剧 | duǎnjù | phim ngắn |  |  |  |  |  |  |  |  | extended
-门票 | ménpiào | vé vào cửa |  |  |  |  |  |  |  |  | extended
-彩票 | cǎipiào | vé số |  |  |  |  |  |  |  |  | extended
-日 | rì | ngày trong tháng, cách nói trang trọng |  |  |  |  |  |  |  |  | extended
-早上 | zǎoshang | buổi sáng sớm |  |  |  |  |  |  |  |  | extended
-中午 | zhōngwǔ | buổi trưa |  |  |  |  |  |  |  |  | extended
-下午 | xiàwǔ | buổi chiều |  |  |  |  |  |  |  |  | extended
-晚上 | wǎnshang | buổi tối |  |  |  |  |  |  |  |  | extended
-请 | qǐng | mời |  |  |  |  |  |  |  |  | extended
-吃饭 | chīfàn | ăn cơm |  |  |  |  |  |  |  |  | extended
-咖啡 | kāfēi | cà phê |  |  |  |  |  |  |  |  | extended
-看电影 | kàn diànyǐng | xem phim |  |  |  |  |  |  |  |  | extended
-学校 | xuéxiào | trường học |  |  |  |  |  |  |  |  | extended
+Chữ Hán 	Pinyin 	Nghĩa tiếng Việt 	Nhóm
+今天 	jīntiān 	Hôm nay 	Từ mới
+号 	hào 	Ngày, số 	Từ mới
+几 	jǐ 	Mấy 	Từ mới
+月 	yuè 	Tháng 	Từ mới
+年 	nián 	Năm 	Từ mới
+每 	měi 	Mỗi 	Từ mới
+点 	diǎn 	Giờ, điểm 	Từ mới
+分 	fēn 	Phút 	Từ mới
+小时 	xiǎoshí 	Tiếng, giờ (khoảng thời gian) 	Từ mới
+差 	chà 	Kém, thiếu 	Từ mới
+出生 	chūshēng 	Sinh ra 	Từ mới
+蛋糕 	dàngāo 	Bánh ngọt, bánh sinh nhật 	Từ mới
+属 	shǔ 	Thuộc về, cầm tinh 	Từ mới
+生日 	shēngrì 	Sinh nhật 	Từ mới
+快乐 	kuàilè 	Vui vẻ 	Từ mới
+星期 	xīngqī 	Tuần, thứ 	Từ mới
+真 	zhēn 	Thật, thật là 	Từ mới
+太……了 	tài…le 	Quá… 	Từ mới
+说 	shuō 	Nói 	Từ mới
+告诉 	gàosu 	Nói cho, báo cho 	Từ mới
+聊天 	liáotiān 	Trò chuyện 	Từ mới
+为什么 	wèishénme 	Tại sao 	Từ mới
+最 	zuì 	Nhất 	Từ mới
+事 	shì 	Việc, chuyện 	Từ mới
+介绍 	jièshào 	Giới thiệu 	Từ mới
+有空儿 	yǒu kòngr 	Rảnh, có thời gian 	Từ mới
+见 	jiàn 	Gặp, nhìn thấy 	Từ mới
+尝 	cháng 	Nếm, thử 	Từ mới
+过 	guo 	Đã từng (trợ từ kinh nghiệm) 	Từ mới
+电视剧 	diànshìjù 	Phim truyền hình 	Từ mới
+门口 	ménkǒu 	Cửa ra vào 	Từ mới
+休息 	xiūxi 	Nghỉ, nghỉ ngơi 	Từ mới
+昨天 	zuótiān 	Hôm qua 	Từ mở rộng
+明天 	míngtiān 	Ngày mai 	Từ mở rộng
+前天 	qiántiān 	Hôm kia 	Từ mở rộng
+后天 	hòutiān 	Ngày kia 	Từ mở rộng
+大前天 	dàqiántiān 	Ba ngày trước 	Từ mở rộng
+大后天 	dàhòutiān 	Ba ngày sau 	Từ mở rộng
+天 	tiān 	Trời, ngày 	Từ mở rộng
+每天 	měitiān 	Mỗi ngày 	Từ mở rộng
+每月 	měi yuè 	Mỗi tháng 	Từ mở rộng
+每年 	měi nián 	Mỗi năm 	Từ mở rộng
+上个星期 	shàng ge xīngqī 	Tuần trước 	Từ mở rộng
+这个星期 	zhè ge xīngqī 	Tuần này 	Từ mở rộng
+下个星期 	xià ge xīngqī 	Tuần sau 	Từ mở rộng
+上个月 	shàng ge yuè 	Tháng trước 	Từ mở rộng
+这个月 	zhè ge yuè 	Tháng này 	Từ mở rộng
+下个月 	xià ge yuè 	Tháng sau 	Từ mở rộng
+前年 	qiánnián 	Năm kia 	Từ mở rộng
+去年 	qùnián 	Năm ngoái 	Từ mở rộng
+今年 	jīnnián 	Năm nay 	Từ mở rộng
+明年 	míngnián 	Năm sau 	Từ mở rộng
+后年 	hòunián 	Năm sau nữa 	Từ mở rộng
+大前年 	dàqiánnián 	Ba năm trước 	Từ mở rộng
+大后年 	dàhòunián 	Ba năm sau 	Từ mở rộng
+星期一 	xīngqīyī 	Thứ Hai 	Từ mở rộng
+星期二 	xīngqī'èr 	Thứ Ba 	Từ mở rộng
+星期三 	xīngqīsān 	Thứ Tư 	Từ mở rộng
+星期四 	xīngqīsì 	Thứ Năm 	Từ mở rộng
+星期五 	xīngqīwǔ 	Thứ Sáu 	Từ mở rộng
+星期六 	xīngqīliù 	Thứ Bảy 	Từ mở rộng
+星期日 	xīngqīrì 	Chủ nhật 	Từ mở rộng
+星期天 	xīngqītiān 	Chủ nhật 	Từ mở rộng
+礼拜 	lǐbài 	Tuần, thứ 	Từ mở rộng
+半 	bàn 	Nửa 	Từ mở rộng
+一刻 	yí kè 	Một khắc, 15 phút 	Từ mở rộng
+说话 	shuōhuà 	Nói chuyện 	Từ mở rộng
+因为 	yīnwèi 	Bởi vì 	Từ mở rộng
+不太 	bú tài 	Không quá, không được… lắm 	Từ mở rộng
+生日快乐 	shēngrì kuàilè 	Chúc mừng sinh nhật 	Từ mở rộng
+短剧 	duǎnjù 	Phim ngắn, kịch ngắn 	Từ mở rộng
+门票 	ménpiào 	Vé vào cửa 	Từ mở rộng
+彩票 	cǎipiào 	Vé số 	Từ mở rộng
+看电影 	kàn diànyǐng 	Xem phim 	Từ mở rộng
+老鼠 	lǎoshǔ 	Chuột 	Từ mở rộng
+牛 	niú 	Trâu, bò 	Từ mở rộng
+老虎 	lǎohǔ 	Hổ 	Từ mở rộng
+兔子 	tùzi 	Thỏ 	Từ mở rộng
+龙 	lóng 	Rồng 	Từ mở rộng
+蛇 	shé 	Rắn 	Từ mở rộng
+马 	mǎ 	Ngựa 	Từ mở rộng
+羊 	yáng 	Dê 	Từ mở rộng
+猴子 	hóuzi 	Khỉ 	Từ mở rộng
+鸡 	jī 	Gà 	Từ mở rộng
+狗 	gǒu 	Chó 	Từ mở rộng
+猪 	zhū 	Lợn, heo 	Từ mở rộng
 [CAU HOI]
 Câu 1. Trong bài học, “今天” có nghĩa là gì?
-A. mời
-B. thứ bảy
-C. tuần sau
-D. hôm nay
-Đáp án: D
-Lời giải: 今天 đọc là jīntiān, nghĩa là hôm nay. Tham chiếu: PDF bài 8, trang 4.
-Độ khó: Dễ
-Câu 2. Chọn chữ Hán có nghĩa “hôm nay”.
-A. 请
-B. 今天
-C. 星期天
-D. 晚上
+A. Ngày mai
+B. Hôm nay
+C. Xem phim
+D. Tháng
 Đáp án: B
-Lời giải: 今天 đọc là jīntiān, nghĩa là hôm nay. Tham chiếu: PDF bài 8, trang 4.
+Lời giải: 今天 đọc là jīntiān, nghĩa là Hôm nay. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 444.
 Độ khó: Dễ
-Câu 3. Chọn phiên âm đúng của “今天”.
-A. tài…le
-B. jīntiān
-C. ménkǒu
-D. hòutiān
-Đáp án: B
-Lời giải: 今天 đọc là jīntiān, nghĩa là hôm nay. Tham chiếu: PDF bài 8, trang 4.
-Độ khó: Dễ
-Câu 4. Trong bài học, “昨天” có nghĩa là gì?
-A. tháng
-B. mời
-C. hôm qua
-D. rảnh, có thời gian
-Đáp án: C
-Lời giải: 昨天 đọc là zuótiān, nghĩa là hôm qua. Tham chiếu: PDF bài 8, trang 4.
-Độ khó: Dễ
-Câu 5. Chọn chữ Hán có nghĩa “hôm qua”.
-A. 每年
-B. 前天
-C. 昨天
-D. 天
-Đáp án: C
-Lời giải: 昨天 đọc là zuótiān, nghĩa là hôm qua. Tham chiếu: PDF bài 8, trang 4.
-Độ khó: Dễ
-Câu 6. Chọn phiên âm đúng của “昨天”.
-A. xiàwǔ
-B. zuótiān
-C. měi
-D. xīngqī sān
-Đáp án: B
-Lời giải: 昨天 đọc là zuótiān, nghĩa là hôm qua. Tham chiếu: PDF bài 8, trang 4.
-Độ khó: Dễ
-Câu 7. Trong bài học, “明天” có nghĩa là gì?
-A. vé vào cửa
-B. ngày mai
-C. mời
-D. sinh nhật
-Đáp án: B
-Lời giải: 明天 đọc là míngtiān, nghĩa là ngày mai. Tham chiếu: PDF bài 8, trang 4.
-Độ khó: Dễ
-Câu 8. Chọn chữ Hán có nghĩa “ngày mai”.
-A. 明天
-B. 每天
-C. 为什么
-D. 这个星期
+Câu 2. Chọn Hán tự có phiên âm “jīntiān” và nghĩa “Hôm nay”.
+A. 今天
+B. 小时
+C. 大后天
+D. 月
 Đáp án: A
-Lời giải: 明天 đọc là míngtiān, nghĩa là ngày mai. Tham chiếu: PDF bài 8, trang 4.
+Lời giải: 今天 đọc là jīntiān, nghĩa là Hôm nay. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 444.
 Độ khó: Dễ
-Câu 9. Chọn phiên âm đúng của “明天”.
-A. shēngrì gē
-B. xià ge yuè
-C. guo
-D. míngtiān
-Đáp án: D
-Lời giải: 明天 đọc là míngtiān, nghĩa là ngày mai. Tham chiếu: PDF bài 8, trang 4.
-Độ khó: Dễ
-Câu 10. Trong bài học, “天” có nghĩa là gì?
-A. ngày; trời
-B. năm nay
-C. mỗi ngày
-D. không rảnh
-Đáp án: A
-Lời giải: 天 đọc là tiān, nghĩa là ngày; trời. Tham chiếu: PDF bài 8, trang 4.
-Độ khó: Dễ
-Câu 11. Chọn chữ Hán có nghĩa “ngày; trời”.
-A. 为什么
-B. 天
-C. 晚饭
-D. 礼拜
-Đáp án: B
-Lời giải: 天 đọc là tiān, nghĩa là ngày; trời. Tham chiếu: PDF bài 8, trang 4.
-Độ khó: Dễ
-Câu 12. Chọn phiên âm đúng của “天”.
-A. qùnián
-B. zhēn de
-C. tiān
-D. xīngqī sān
+Câu 3. Trong bài học, “号” có nghĩa là gì?
+A. Năm sau nữa
+B. Năm ngoái
+C. Ngày, số
+D. Việc, chuyện
 Đáp án: C
-Lời giải: 天 đọc là tiān, nghĩa là ngày; trời. Tham chiếu: PDF bài 8, trang 4.
+Lời giải: 号 đọc là hào, nghĩa là Ngày, số. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 445.
 Độ khó: Dễ
-Câu 13. Trong bài học, “号” có nghĩa là gì?
-A. năm sau
-B. vé số
-C. bởi vì
-D. ngày trong tháng, cách nói khẩu ngữ
-Đáp án: D
-Lời giải: 号 đọc là hào, nghĩa là ngày trong tháng, cách nói khẩu ngữ. Tham chiếu: PDF bài 8, trang 4.
-Độ khó: Dễ
-Câu 14. Chọn chữ Hán có nghĩa “ngày trong tháng, cách nói khẩu ngữ”.
-A. 明年
-B. 过
-C. 聊天
-D. 号
-Đáp án: D
-Lời giải: 号 đọc là hào, nghĩa là ngày trong tháng, cách nói khẩu ngữ. Tham chiếu: PDF bài 8, trang 4.
-Độ khó: Dễ
-Câu 15. Chọn phiên âm đúng của “号”.
-A. jǐ
-B. xiūxi
-C. hào
-D. jiàn
-Đáp án: C
-Lời giải: 号 đọc là hào, nghĩa là ngày trong tháng, cách nói khẩu ngữ. Tham chiếu: PDF bài 8, trang 4.
-Độ khó: Dễ
-Câu 16. Trong bài học, “几” có nghĩa là gì?
-A. thứ sáu
-B. năm kia
-C. mấy; hỏi số lượng nhỏ
-D. tháng
-Đáp án: C
-Lời giải: 几 đọc là jǐ, nghĩa là mấy; hỏi số lượng nhỏ. Tham chiếu: PDF bài 8, trang 6.
-Độ khó: Dễ
-Câu 17. Chọn chữ Hán có nghĩa “mấy; hỏi số lượng nhỏ”.
-A. 半
-B. 漂亮
-C. 几
-D. 小时
-Đáp án: C
-Lời giải: 几 đọc là jǐ, nghĩa là mấy; hỏi số lượng nhỏ. Tham chiếu: PDF bài 8, trang 6.
-Độ khó: Dễ
-Câu 18. Chọn phiên âm đúng của “几”.
-A. kè
-B. míngtiān
-C. měitiān
-D. jǐ
-Đáp án: D
-Lời giải: 几 đọc là jǐ, nghĩa là mấy; hỏi số lượng nhỏ. Tham chiếu: PDF bài 8, trang 6.
-Độ khó: Dễ
-Câu 19. Trong bài học, “月” có nghĩa là gì?
-A. phút
-B. lượng từ cho sự việc
-C. năm sau nữa
-D. tháng
-Đáp án: D
-Lời giải: 月 đọc là yuè, nghĩa là tháng. Tham chiếu: PDF bài 8, trang 6.
-Độ khó: Dễ
-Câu 20. Chọn chữ Hán có nghĩa “tháng”.
-A. 月
-B. 这个星期
-C. 属
-D. 去年
-Đáp án: A
-Lời giải: 月 đọc là yuè, nghĩa là tháng. Tham chiếu: PDF bài 8, trang 6.
-Độ khó: Dễ
-Câu 21. Chọn phiên âm đúng của “月”.
-A. zuótiān
-B. yuè
-C. jǐ
-D. jīntiān
-Đáp án: B
-Lời giải: 月 đọc là yuè, nghĩa là tháng. Tham chiếu: PDF bài 8, trang 6.
-Độ khó: Dễ
-Câu 22. Trong bài học, “年” có nghĩa là gì?
-A. năm
-B. mỗi năm
-C. ngày trong tháng, cách nói trang trọng
-D. thứ hai
-Đáp án: A
-Lời giải: 年 đọc là nián, nghĩa là năm. Tham chiếu: PDF bài 8, trang 6.
-Độ khó: Dễ
-Câu 23. Chọn chữ Hán có nghĩa “năm”.
-A. 最
-B. 下午
-C. 年
-D. 门口
-Đáp án: C
-Lời giải: 年 đọc là nián, nghĩa là năm. Tham chiếu: PDF bài 8, trang 6.
-Độ khó: Dễ
-Câu 24. Chọn phiên âm đúng của “年”.
-A. xīngqī yī
-B. lǐbài
-C. miǎo
-D. nián
-Đáp án: D
-Lời giải: 年 đọc là nián, nghĩa là năm. Tham chiếu: PDF bài 8, trang 6.
-Độ khó: Dễ
-Câu 25. Trong bài học, “每” có nghĩa là gì?
-A. việc, chuyện
-B. ngày trong tháng, cách nói trang trọng
-C. mỗi
-D. vé vào cửa
-Đáp án: C
-Lời giải: 每 đọc là měi, nghĩa là mỗi. Tham chiếu: PDF bài 8, trang 6.
-Độ khó: Dễ
-Câu 26. Chọn chữ Hán có nghĩa “mỗi”.
+Câu 4. Chọn Hán tự có phiên âm “hào” và nghĩa “Ngày, số”.
 A. 星期天
-B. 属
+B. 老虎
+C. 号
+D. 上个月
+Đáp án: C
+Lời giải: 号 đọc là hào, nghĩa là Ngày, số. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 445.
+Độ khó: Dễ
+Câu 5. Trong bài học, “几” có nghĩa là gì?
+A. Hôm nay
+B. Mấy
+C. Sinh nhật
+D. Phim ngắn, kịch ngắn
+Đáp án: B
+Lời giải: 几 đọc là jǐ, nghĩa là Mấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 446.
+Độ khó: Dễ
+Câu 6. Chọn Hán tự có phiên âm “jǐ” và nghĩa “Mấy”.
+A. 去年
+B. 几
+C. 生日快乐
+D. 天
+Đáp án: B
+Lời giải: 几 đọc là jǐ, nghĩa là Mấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 446.
+Độ khó: Dễ
+Câu 7. Trong bài học, “月” có nghĩa là gì?
+A. Năm ngoái
+B. Tháng
+C. Nhất
+D. Vé số
+Đáp án: B
+Lời giải: 月 đọc là yuè, nghĩa là Tháng. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 447.
+Độ khó: Dễ
+Câu 8. Chọn Hán tự có phiên âm “yuè” và nghĩa “Tháng”.
+A. 月
+B. 有空儿
+C. 星期
+D. 今年
+Đáp án: A
+Lời giải: 月 đọc là yuè, nghĩa là Tháng. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 447.
+Độ khó: Dễ
+Câu 9. Trong bài học, “年” có nghĩa là gì?
+A. Tại sao
+B. Năm
+C. Tháng này
+D. Vé vào cửa
+Đáp án: B
+Lời giải: 年 đọc là nián, nghĩa là Năm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 448.
+Độ khó: Dễ
+Câu 10. Chọn Hán tự có phiên âm “nián” và nghĩa “Năm”.
+A. 年
+B. 小时
+C. 龙
+D. 马
+Đáp án: A
+Lời giải: 年 đọc là nián, nghĩa là Năm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 448.
+Độ khó: Dễ
+Câu 11. Trong bài học, “每” có nghĩa là gì?
+A. Mỗi
+B. Giờ, điểm
+C. Hổ
+D. Nói
+Đáp án: A
+Lời giải: 每 đọc là měi, nghĩa là Mỗi. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 449.
+Độ khó: Dễ
+Câu 12. Chọn Hán tự có phiên âm “měi” và nghĩa “Mỗi”.
+A. 今天
+B. 每
 C. 星期四
-D. 每
-Đáp án: D
-Lời giải: 每 đọc là měi, nghĩa là mỗi. Tham chiếu: PDF bài 8, trang 6.
-Độ khó: Dễ
-Câu 27. Chọn phiên âm đúng của “每”.
-A. bàn
-B. měi
-C. kàn diànyǐng
-D. zhè ge xīngqī
+D. 马
 Đáp án: B
-Lời giải: 每 đọc là měi, nghĩa là mỗi. Tham chiếu: PDF bài 8, trang 6.
+Lời giải: 每 đọc là měi, nghĩa là Mỗi. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 449.
 Độ khó: Dễ
-Câu 28. Trong bài học, “点” có nghĩa là gì?
-A. bởi vì
-B. năm sau
-C. bữa tối
-D. giờ; điểm giờ
-Đáp án: D
-Lời giải: 点 đọc là diǎn, nghĩa là giờ; điểm giờ. Tham chiếu: PDF bài 8, trang 7.
+Câu 13. Trong bài học, “点” có nghĩa là gì?
+A. Tháng sau
+B. Lợn, heo
+C. Giờ, điểm
+D. Ba ngày sau
+Đáp án: C
+Lời giải: 点 đọc là diǎn, nghĩa là Giờ, điểm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 450.
 Độ khó: Dễ
-Câu 29. Chọn chữ Hán có nghĩa “giờ; điểm giờ”.
-A. 早上
-B. 汉语课
-C. 明年
+Câu 14. Chọn Hán tự có phiên âm “diǎn” và nghĩa “Giờ, điểm”.
+A. 今天
+B. 真
+C. 猴子
 D. 点
 Đáp án: D
-Lời giải: 点 đọc là diǎn, nghĩa là giờ; điểm giờ. Tham chiếu: PDF bài 8, trang 7.
+Lời giải: 点 đọc là diǎn, nghĩa là Giờ, điểm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 450.
 Độ khó: Dễ
-Câu 30. Chọn phiên âm đúng của “点”.
-A. zhè ge xīngqī
-B. zǎoshang
-C. zhēn de
-D. diǎn
-Đáp án: D
-Lời giải: 点 đọc là diǎn, nghĩa là giờ; điểm giờ. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 31. Trong bài học, “分” có nghĩa là gì?
-A. thứ sáu
-B. phút
-C. hôm kia
-D. hôm qua
-Đáp án: B
-Lời giải: 分 đọc là fēn, nghĩa là phút. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 32. Chọn chữ Hán có nghĩa “phút”.
-A. 星期五
-B. 明年
-C. 件
-D. 分
-Đáp án: D
-Lời giải: 分 đọc là fēn, nghĩa là phút. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 33. Chọn phiên âm đúng của “分”.
-A. zhēn
-B. xuéxiào
-C. fēn
-D. jièshào
-Đáp án: C
-Lời giải: 分 đọc là fēn, nghĩa là phút. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 34. Trong bài học, “小时” có nghĩa là gì?
-A. hôm qua
-B. tuần trước
-C. tiếng, giờ đồng hồ; khoảng thời gian
-D. năm sau
-Đáp án: C
-Lời giải: 小时 đọc là xiǎoshí, nghĩa là tiếng, giờ đồng hồ; khoảng thời gian. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 35. Chọn chữ Hán có nghĩa “tiếng, giờ đồng hồ; khoảng thời gian”.
-A. 生日
-B. 号
-C. 小时
-D. 差
-Đáp án: C
-Lời giải: 小时 đọc là xiǎoshí, nghĩa là tiếng, giờ đồng hồ; khoảng thời gian. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 36. Chọn phiên âm đúng của “小时”.
-A. dàngāo
-B. ménkǒu
-C. míngtiān
-D. xiǎoshí
-Đáp án: D
-Lời giải: 小时 đọc là xiǎoshí, nghĩa là tiếng, giờ đồng hồ; khoảng thời gian. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 37. Trong bài học, “差” có nghĩa là gì?
-A. tiết học tiếng Hán
-B. kém, còn thiếu; khi nói giờ
-C. nhất
-D. không rảnh
-Đáp án: B
-Lời giải: 差 đọc là chà, nghĩa là kém, còn thiếu; khi nói giờ. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 38. Chọn chữ Hán có nghĩa “kém, còn thiếu; khi nói giờ”.
-A. 晚上
-B. 前天
-C. 星期五
-D. 差
-Đáp án: D
-Lời giải: 差 đọc là chà, nghĩa là kém, còn thiếu; khi nói giờ. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 39. Chọn phiên âm đúng của “差”.
-A. shuō
-B. chà
-C. měitiān
-D. chīfàn
-Đáp án: B
-Lời giải: 差 đọc là chà, nghĩa là kém, còn thiếu; khi nói giờ. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 40. Trong bài học, “出生” có nghĩa là gì?
-A. sinh ra
-B. thứ tư
-C. chủ nhật
-D. tại sao
+Câu 15. Trong bài học, “分” có nghĩa là gì?
+A. Phút
+B. Trời, ngày
+C. Không quá, không được… lắm
+D. Gà
 Đáp án: A
-Lời giải: 出生 đọc là chūshēng, nghĩa là sinh ra. Tham chiếu: PDF bài 8, trang 8.
+Lời giải: 分 đọc là fēn, nghĩa là Phút. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 451.
 Độ khó: Dễ
-Câu 41. Chọn chữ Hán có nghĩa “sinh ra”.
-A. 见
+Câu 16. Chọn Hán tự có phiên âm “fēn” và nghĩa “Phút”.
+A. 分
+B. 星期
+C. 因为
+D. 事
+Đáp án: A
+Lời giải: 分 đọc là fēn, nghĩa là Phút. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 451.
+Độ khó: Dễ
+Câu 17. Trong bài học, “小时” có nghĩa là gì?
+A. Tiếng, giờ (khoảng thời gian)
+B. Năm sau nữa
+C. Nhất
+D. Thứ Sáu
+Đáp án: A
+Lời giải: 小时 đọc là xiǎoshí, nghĩa là Tiếng, giờ (khoảng thời gian). Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 452.
+Độ khó: Dễ
+Câu 18. Chọn Hán tự có phiên âm “xiǎoshí” và nghĩa “Tiếng, giờ (khoảng thời gian)”.
+A. 介绍
 B. 出生
-C. 咖啡
-D. 星期六
-Đáp án: B
-Lời giải: 出生 đọc là chūshēng, nghĩa là sinh ra. Tham chiếu: PDF bài 8, trang 8.
-Độ khó: Dễ
-Câu 42. Chọn phiên âm đúng của “出生”.
-A. qiántiān
-B. yǒu kòngr
-C. chūshēng
-D. xià ge xīngqī
-Đáp án: C
-Lời giải: 出生 đọc là chūshēng, nghĩa là sinh ra. Tham chiếu: PDF bài 8, trang 8.
-Độ khó: Dễ
-Câu 43. Trong bài học, “蛋糕” có nghĩa là gì?
-A. ngày trong tháng, cách nói khẩu ngữ
-B. tuần; cách gọi tuần, thứ
-C. chúc mừng sinh nhật
-D. bánh kem
+C. 天
+D. 小时
 Đáp án: D
-Lời giải: 蛋糕 đọc là dàngāo, nghĩa là bánh kem. Tham chiếu: PDF bài 8, trang 8.
+Lời giải: 小时 đọc là xiǎoshí, nghĩa là Tiếng, giờ (khoảng thời gian). Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 452.
 Độ khó: Dễ
-Câu 44. Chọn chữ Hán có nghĩa “bánh kem”.
-A. 因为
-B. 蛋糕
-C. 上个月
-D. 点
+Câu 19. Trong bài học, “差” có nghĩa là gì?
+A. Tại sao
+B. Vé số
+C. Nhất
+D. Kém, thiếu
+Đáp án: D
+Lời giải: 差 đọc là chà, nghĩa là Kém, thiếu. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 453.
+Độ khó: Dễ
+Câu 20. Chọn Hán tự có phiên âm “chà” và nghĩa “Kém, thiếu”.
+A. 说话
+B. 鸡
+C. 牛
+D. 差
+Đáp án: D
+Lời giải: 差 đọc là chà, nghĩa là Kém, thiếu. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 453.
+Độ khó: Dễ
+Câu 21. Trong bài học, “出生” có nghĩa là gì?
+A. Rảnh, có thời gian
+B. Sinh ra
+C. Giới thiệu
+D. Thứ Sáu
 Đáp án: B
-Lời giải: 蛋糕 đọc là dàngāo, nghĩa là bánh kem. Tham chiếu: PDF bài 8, trang 8.
+Lời giải: 出生 đọc là chūshēng, nghĩa là Sinh ra. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 454.
 Độ khó: Dễ
-Câu 45. Chọn phiên âm đúng của “蛋糕”.
-A. dàngāo
-B. hòutiān
-C. nián
-D. wǎnfàn
+Câu 22. Chọn Hán tự có phiên âm “chūshēng” và nghĩa “Sinh ra”.
+A. 猪
+B. 明天
+C. 出生
+D. 短剧
+Đáp án: C
+Lời giải: 出生 đọc là chūshēng, nghĩa là Sinh ra. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 454.
+Độ khó: Dễ
+Câu 23. Trong bài học, “蛋糕” có nghĩa là gì?
+A. Trò chuyện
+B. Bánh ngọt, bánh sinh nhật
+C. Mỗi năm
+D. Hôm qua
+Đáp án: B
+Lời giải: 蛋糕 đọc là dàngāo, nghĩa là Bánh ngọt, bánh sinh nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 455.
+Độ khó: Dễ
+Câu 24. Chọn Hán tự có phiên âm “dàngāo” và nghĩa “Bánh ngọt, bánh sinh nhật”.
+A. 蛋糕
+B. 过
+C. 因为
+D. 后天
 Đáp án: A
-Lời giải: 蛋糕 đọc là dàngāo, nghĩa là bánh kem. Tham chiếu: PDF bài 8, trang 8.
+Lời giải: 蛋糕 đọc là dàngāo, nghĩa là Bánh ngọt, bánh sinh nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 455.
 Độ khó: Dễ
-Câu 46. Trong bài học, “属” có nghĩa là gì?
-A. giây
-B. năm ngoái
-C. cầm tinh, thuộc con giáp
-D. thật, thật là
+Câu 25. Trong bài học, “属” có nghĩa là gì?
+A. Thuộc về, cầm tinh
+B. Thứ Ba
+C. Hôm qua
+D. Gà
+Đáp án: A
+Lời giải: 属 đọc là shǔ, nghĩa là Thuộc về, cầm tinh. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 456.
+Độ khó: Dễ
+Câu 26. Chọn Hán tự có phiên âm “shǔ” và nghĩa “Thuộc về, cầm tinh”.
+A. 属
+B. 太……了
+C. 大前年
+D. 大后年
+Đáp án: A
+Lời giải: 属 đọc là shǔ, nghĩa là Thuộc về, cầm tinh. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 456.
+Độ khó: Dễ
+Câu 27. Trong bài học, “生日” có nghĩa là gì?
+A. Rắn
+B. Gà
+C. Sinh nhật
+D. Gặp, nhìn thấy
 Đáp án: C
-Lời giải: 属 đọc là shǔ, nghĩa là cầm tinh, thuộc con giáp. Tham chiếu: PDF bài 8, trang 8.
+Lời giải: 生日 đọc là shēngrì, nghĩa là Sinh nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 457.
 Độ khó: Dễ
-Câu 47. Chọn chữ Hán có nghĩa “cầm tinh, thuộc con giáp”.
-A. 后年
-B. 请
-C. 属
-D. 每
-Đáp án: C
-Lời giải: 属 đọc là shǔ, nghĩa là cầm tinh, thuộc con giáp. Tham chiếu: PDF bài 8, trang 8.
-Độ khó: Dễ
-Câu 48. Chọn phiên âm đúng của “属”.
-A. xīngqī tiān
-B. zhōngwǔ
-C. zhōu
-D. shǔ
-Đáp án: D
-Lời giải: 属 đọc là shǔ, nghĩa là cầm tinh, thuộc con giáp. Tham chiếu: PDF bài 8, trang 8.
-Độ khó: Dễ
-Câu 49. Trong bài học, “生日” có nghĩa là gì?
-A. cầm tinh, thuộc con giáp
-B. sinh nhật
-C. phim ngắn
-D. cổng, cửa ra vào
-Đáp án: B
-Lời giải: 生日 đọc là shēngrì, nghĩa là sinh nhật. Tham chiếu: PDF bài 8, trang 9.
-Độ khó: Dễ
-Câu 50. Chọn chữ Hán có nghĩa “sinh nhật”.
-A. 有空儿
+Câu 28. Chọn Hán tự có phiên âm “shēngrì” và nghĩa “Sinh nhật”.
+A. 猴子
 B. 生日
-C. 晚上
-D. 见
+C. 休息
+D. 门票
 Đáp án: B
-Lời giải: 生日 đọc là shēngrì, nghĩa là sinh nhật. Tham chiếu: PDF bài 8, trang 9.
+Lời giải: 生日 đọc là shēngrì, nghĩa là Sinh nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 457.
 Độ khó: Dễ
-Câu 51. Chọn phiên âm đúng của “生日”.
-A. rì
-B. diǎn
-C. shēngrì
-D. yuè
-Đáp án: C
-Lời giải: 生日 đọc là shēngrì, nghĩa là sinh nhật. Tham chiếu: PDF bài 8, trang 9.
+Câu 29. Trong bài học, “快乐” có nghĩa là gì?
+A. Cửa ra vào
+B. Vui vẻ
+C. Phim ngắn, kịch ngắn
+D. Phim truyền hình
+Đáp án: B
+Lời giải: 快乐 đọc là kuàilè, nghĩa là Vui vẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 458.
 Độ khó: Dễ
-Câu 52. Trong bài học, “快乐” có nghĩa là gì?
-A. tháng này
-B. chúc mừng sinh nhật
-C. vui vẻ, hạnh phúc
-D. thật, thực sự
-Đáp án: C
-Lời giải: 快乐 đọc là kuàilè, nghĩa là vui vẻ, hạnh phúc. Tham chiếu: PDF bài 8, trang 9.
-Độ khó: Dễ
-Câu 53. Chọn chữ Hán có nghĩa “vui vẻ, hạnh phúc”.
-A. 聊天
-B. 上个月
-C. 为什么
+Câu 30. Chọn Hán tự có phiên âm “kuàilè” và nghĩa “Vui vẻ”.
+A. 猪
+B. 这个月
+C. 星期日
 D. 快乐
 Đáp án: D
-Lời giải: 快乐 đọc là kuàilè, nghĩa là vui vẻ, hạnh phúc. Tham chiếu: PDF bài 8, trang 9.
+Lời giải: 快乐 đọc là kuàilè, nghĩa là Vui vẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 458.
 Độ khó: Dễ
-Câu 54. Chọn phiên âm đúng của “快乐”.
-A. xiūxi
-B. cǎipiào
-C. kuàilè
-D. qǐng
-Đáp án: C
-Lời giải: 快乐 đọc là kuàilè, nghĩa là vui vẻ, hạnh phúc. Tham chiếu: PDF bài 8, trang 9.
-Độ khó: Dễ
-Câu 55. Trong bài học, “星期” có nghĩa là gì?
-A. tuần; thứ trong tuần
-B. năm ngoái
-C. nhất
-D. tháng sau
+Câu 31. Trong bài học, “星期” có nghĩa là gì?
+A. Tuần, thứ
+B. Nói cho, báo cho
+C. Năm kia
+D. Một khắc, 15 phút
 Đáp án: A
-Lời giải: 星期 đọc là xīngqī, nghĩa là tuần; thứ trong tuần. Tham chiếu: PDF bài 8, trang 10.
+Lời giải: 星期 đọc là xīngqī, nghĩa là Tuần, thứ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 459.
 Độ khó: Dễ
-Câu 56. Chọn chữ Hán có nghĩa “tuần; thứ trong tuần”.
-A. 星期四
-B. 属
-C. 星期天
+Câu 32. Chọn Hán tự có phiên âm “xīngqī” và nghĩa “Tuần, thứ”.
+A. 介绍
+B. 猪
+C. 这个月
 D. 星期
 Đáp án: D
-Lời giải: 星期 đọc là xīngqī, nghĩa là tuần; thứ trong tuần. Tham chiếu: PDF bài 8, trang 10.
+Lời giải: 星期 đọc là xīngqī, nghĩa là Tuần, thứ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 459.
 Độ khó: Dễ
-Câu 57. Chọn phiên âm đúng của “星期”.
-A. kè
-B. zhè ge yuè
-C. xīngqī
-D. piàoliang
-Đáp án: C
-Lời giải: 星期 đọc là xīngqī, nghĩa là tuần; thứ trong tuần. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 58. Trong bài học, “真” có nghĩa là gì?
-A. phút
-B. cầm tinh, thuộc con giáp
-C. hôm nay
-D. thật, thật là
+Câu 33. Trong bài học, “真” có nghĩa là gì?
+A. Mỗi ngày
+B. Trò chuyện
+C. Tại sao
+D. Thật, thật là
 Đáp án: D
-Lời giải: 真 đọc là zhēn, nghĩa là thật, thật là. Tham chiếu: PDF bài 8, trang 11.
+Lời giải: 真 đọc là zhēn, nghĩa là Thật, thật là. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 460.
 Độ khó: Dễ
-Câu 59. Chọn chữ Hán có nghĩa “thật, thật là”.
+Câu 34. Chọn Hán tự có phiên âm “zhēn” và nghĩa “Thật, thật là”.
 A. 真
-B. 门口
-C. 号
-D. 尝
+B. 星期
+C. 星期五
+D. 电视剧
 Đáp án: A
-Lời giải: 真 đọc là zhēn, nghĩa là thật, thật là. Tham chiếu: PDF bài 8, trang 11.
+Lời giải: 真 đọc là zhēn, nghĩa là Thật, thật là. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 460.
 Độ khó: Dễ
-Câu 60. Chọn phiên âm đúng của “真”.
-A. shēngrì
-B. nián
-C. hào
-D. zhēn
-Đáp án: D
-Lời giải: 真 đọc là zhēn, nghĩa là thật, thật là. Tham chiếu: PDF bài 8, trang 11.
-Độ khó: Dễ
-Câu 61. Trong bài học, “太……了” có nghĩa là gì?
-A. rảnh, có thời gian
-B. quá, rất; cấu trúc cảm thán
-C. mấy; hỏi số lượng nhỏ
-D. tại sao
+Câu 35. Trong bài học, “太……了” có nghĩa là gì?
+A. Thuộc về, cầm tinh
+B. Quá…
+C. Giới thiệu
+D. Đã từng (trợ từ kinh nghiệm)
 Đáp án: B
-Lời giải: 太……了 đọc là tài…le, nghĩa là quá, rất; cấu trúc cảm thán. Tham chiếu: PDF bài 8, trang 11.
+Lời giải: 太……了 đọc là tài…le, nghĩa là Quá…. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 461.
 Độ khó: Dễ
-Câu 62. Chọn chữ Hán có nghĩa “quá, rất; cấu trúc cảm thán”.
-A. 星期二
-B. 今年
+Câu 36. Chọn Hán tự có phiên âm “tài…le” và nghĩa “Quá…”.
+A. 几
+B. 看电影
 C. 太……了
+D. 属
+Đáp án: C
+Lời giải: 太……了 đọc là tài…le, nghĩa là Quá…. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 461.
+Độ khó: Dễ
+Câu 37. Trong bài học, “说” có nghĩa là gì?
+A. Xem phim
+B. Nói
+C. Năm sau nữa
+D. Mỗi ngày
+Đáp án: B
+Lời giải: 说 đọc là shuō, nghĩa là Nói. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 462.
+Độ khó: Dễ
+Câu 38. Chọn Hán tự có phiên âm “shuō” và nghĩa “Nói”.
+A. 电视剧
+B. 每年
+C. 说
+D. 短剧
+Đáp án: C
+Lời giải: 说 đọc là shuō, nghĩa là Nói. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 462.
+Độ khó: Dễ
+Câu 39. Trong bài học, “告诉” có nghĩa là gì?
+A. Nói cho, báo cho
+B. Thứ Sáu
+C. Tuần này
+D. Vé vào cửa
+Đáp án: A
+Lời giải: 告诉 đọc là gàosu, nghĩa là Nói cho, báo cho. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 463.
+Độ khó: Dễ
+Câu 40. Chọn Hán tự có phiên âm “gàosu” và nghĩa “Nói cho, báo cho”.
+A. 门票
+B. 星期六
+C. 见
+D. 告诉
+Đáp án: D
+Lời giải: 告诉 đọc là gàosu, nghĩa là Nói cho, báo cho. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 463.
+Độ khó: Dễ
+Câu 41. Trong bài học, “聊天” có nghĩa là gì?
+A. Thứ Năm
+B. Trò chuyện
+C. Quá…
+D. Sinh ra
+Đáp án: B
+Lời giải: 聊天 đọc là liáotiān, nghĩa là Trò chuyện. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 464.
+Độ khó: Dễ
+Câu 42. Chọn Hán tự có phiên âm “liáotiān” và nghĩa “Trò chuyện”.
+A. 聊天
+B. 看电影
+C. 半
+D. 礼拜
+Đáp án: A
+Lời giải: 聊天 đọc là liáotiān, nghĩa là Trò chuyện. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 464.
+Độ khó: Dễ
+Câu 43. Trong bài học, “为什么” có nghĩa là gì?
+A. Tại sao
+B. Trâu, bò
+C. Sinh ra
+D. Mỗi tháng
+Đáp án: A
+Lời giải: 为什么 đọc là wèishénme, nghĩa là Tại sao. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 465.
+Độ khó: Dễ
+Câu 44. Chọn Hán tự có phiên âm “wèishénme” và nghĩa “Tại sao”.
+A. 为什么
+B. 点
+C. 分
+D. 蛇
+Đáp án: A
+Lời giải: 为什么 đọc là wèishénme, nghĩa là Tại sao. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 465.
+Độ khó: Dễ
+Câu 45. Trong bài học, “最” có nghĩa là gì?
+A. Khỉ
+B. Nói cho, báo cho
+C. Nhất
+D. Năm sau nữa
+Đáp án: C
+Lời giải: 最 đọc là zuì, nghĩa là Nhất. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 466.
+Độ khó: Dễ
+Câu 46. Chọn Hán tự có phiên âm “zuì” và nghĩa “Nhất”.
+A. 星期日
+B. 最
+C. 介绍
+D. 因为
+Đáp án: B
+Lời giải: 最 đọc là zuì, nghĩa là Nhất. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 466.
+Độ khó: Dễ
+Câu 47. Trong bài học, “事” có nghĩa là gì?
+A. Việc, chuyện
+B. Chúc mừng sinh nhật
+C. Thứ Ba
+D. Chuột
+Đáp án: A
+Lời giải: 事 đọc là shì, nghĩa là Việc, chuyện. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 467.
+Độ khó: Dễ
+Câu 48. Chọn Hán tự có phiên âm “shì” và nghĩa “Việc, chuyện”.
+A. 星期一
+B. 一刻
+C. 事
+D. 鸡
+Đáp án: C
+Lời giải: 事 đọc là shì, nghĩa là Việc, chuyện. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 467.
+Độ khó: Dễ
+Câu 49. Trong bài học, “介绍” có nghĩa là gì?
+A. Năm kia
+B. Giới thiệu
+C. Dê
+D. Phim truyền hình
+Đáp án: B
+Lời giải: 介绍 đọc là jièshào, nghĩa là Giới thiệu. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 468.
+Độ khó: Dễ
+Câu 50. Chọn Hán tự có phiên âm “jièshào” và nghĩa “Giới thiệu”.
+A. 介绍
+B. 后天
+C. 去年
+D. 星期五
+Đáp án: A
+Lời giải: 介绍 đọc là jièshào, nghĩa là Giới thiệu. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 468.
+Độ khó: Dễ
+Câu 51. Trong bài học, “有空儿” có nghĩa là gì?
+A. Tháng sau
+B. Tiếng, giờ (khoảng thời gian)
+C. Rảnh, có thời gian
+D. Thỏ
+Đáp án: C
+Lời giải: 有空儿 đọc là yǒu kòngr, nghĩa là Rảnh, có thời gian. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 469.
+Độ khó: Dễ
+Câu 52. Chọn Hán tự có phiên âm “yǒu kòngr” và nghĩa “Rảnh, có thời gian”.
+A. 昨天
+B. 上个月
+C. 大后年
+D. 有空儿
+Đáp án: D
+Lời giải: 有空儿 đọc là yǒu kòngr, nghĩa là Rảnh, có thời gian. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 469.
+Độ khó: Dễ
+Câu 53. Trong bài học, “见” có nghĩa là gì?
+A. Đã từng (trợ từ kinh nghiệm)
+B. Phim truyền hình
+C. Gặp, nhìn thấy
+D. Một khắc, 15 phút
+Đáp án: C
+Lời giải: 见 đọc là jiàn, nghĩa là Gặp, nhìn thấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 470.
+Độ khó: Dễ
+Câu 54. Chọn Hán tự có phiên âm “jiàn” và nghĩa “Gặp, nhìn thấy”.
+A. 一刻
+B. 见
+C. 狗
+D. 下个月
+Đáp án: B
+Lời giải: 见 đọc là jiàn, nghĩa là Gặp, nhìn thấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 470.
+Độ khó: Dễ
+Câu 55. Trong bài học, “尝” có nghĩa là gì?
+A. Tuần trước
+B. Giờ, điểm
+C. Việc, chuyện
+D. Nếm, thử
+Đáp án: D
+Lời giải: 尝 đọc là cháng, nghĩa là Nếm, thử. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 471.
+Độ khó: Dễ
+Câu 56. Chọn Hán tự có phiên âm “cháng” và nghĩa “Nếm, thử”.
+A. 太……了
+B. 说
+C. 尝
 D. 后年
 Đáp án: C
-Lời giải: 太……了 đọc là tài…le, nghĩa là quá, rất; cấu trúc cảm thán. Tham chiếu: PDF bài 8, trang 11.
+Lời giải: 尝 đọc là cháng, nghĩa là Nếm, thử. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 471.
 Độ khó: Dễ
-Câu 63. Chọn phiên âm đúng của “太……了”.
-A. tài…le
-B. yīnwèi
-C. gàosu
-D. wǎnfàn
-Đáp án: A
-Lời giải: 太……了 đọc là tài…le, nghĩa là quá, rất; cấu trúc cảm thán. Tham chiếu: PDF bài 8, trang 11.
-Độ khó: Dễ
-Câu 64. Trong bài học, “说” có nghĩa là gì?
-A. buổi sáng sớm
-B. năm ngoái
-C. trợ từ chỉ trải nghiệm đã từng
-D. nói
+Câu 57. Trong bài học, “过” có nghĩa là gì?
+A. Năm nay
+B. Bởi vì
+C. Giới thiệu
+D. Đã từng (trợ từ kinh nghiệm)
 Đáp án: D
-Lời giải: 说 đọc là shuō, nghĩa là nói. Tham chiếu: PDF bài 8, trang 12.
+Lời giải: 过 đọc là guo, nghĩa là Đã từng (trợ từ kinh nghiệm). Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 472.
 Độ khó: Dễ
-Câu 65. Chọn chữ Hán có nghĩa “nói”.
-A. 说
-B. 这个星期
-C. 为什么
-D. 每天
-Đáp án: A
-Lời giải: 说 đọc là shuō, nghĩa là nói. Tham chiếu: PDF bài 8, trang 12.
-Độ khó: Dễ
-Câu 66. Chọn phiên âm đúng của “说”.
-A. shàng ge xīngqī
-B. shuō
-C. zuì
-D. tài…le
-Đáp án: B
-Lời giải: 说 đọc là shuō, nghĩa là nói. Tham chiếu: PDF bài 8, trang 12.
-Độ khó: Dễ
-Câu 67. Trong bài học, “告诉” có nghĩa là gì?
-A. ngày kia
-B. tháng
-C. xem phim
-D. nói cho biết, bảo với
-Đáp án: D
-Lời giải: 告诉 đọc là gàosu, nghĩa là nói cho biết, bảo với. Tham chiếu: PDF bài 8, trang 12.
-Độ khó: Dễ
-Câu 68. Chọn chữ Hán có nghĩa “nói cho biết, bảo với”.
-A. 明年
-B. 去年
-C. 告诉
-D. 月
-Đáp án: C
-Lời giải: 告诉 đọc là gàosu, nghĩa là nói cho biết, bảo với. Tham chiếu: PDF bài 8, trang 12.
-Độ khó: Dễ
-Câu 69. Chọn phiên âm đúng của “告诉”.
-A. jīntiān
-B. shēngrì gē
-C. míngnián
-D. gàosu
-Đáp án: D
-Lời giải: 告诉 đọc là gàosu, nghĩa là nói cho biết, bảo với. Tham chiếu: PDF bài 8, trang 12.
-Độ khó: Dễ
-Câu 70. Trong bài học, “聊天” có nghĩa là gì?
-A. tiếng, giờ đồng hồ; khoảng thời gian
-B. trò chuyện, tán gẫu
-C. nhất
-D. quá, rất; cấu trúc cảm thán
-Đáp án: B
-Lời giải: 聊天 đọc là liáotiān, nghĩa là trò chuyện, tán gẫu. Tham chiếu: PDF bài 8, trang 12.
-Độ khó: Dễ
-Câu 71. Chọn chữ Hán có nghĩa “trò chuyện, tán gẫu”.
-A. 礼拜
-B. 介绍
-C. 说
-D. 聊天
-Đáp án: D
-Lời giải: 聊天 đọc là liáotiān, nghĩa là trò chuyện, tán gẫu. Tham chiếu: PDF bài 8, trang 12.
-Độ khó: Dễ
-Câu 72. Chọn phiên âm đúng của “聊天”.
-A. xīngqī tiān
-B. liáotiān
-C. xià ge yuè
-D. miǎo
-Đáp án: B
-Lời giải: 聊天 đọc là liáotiān, nghĩa là trò chuyện, tán gẫu. Tham chiếu: PDF bài 8, trang 12.
-Độ khó: Dễ
-Câu 73. Trong bài học, “为什么” có nghĩa là gì?
-A. tại sao
-B. cổng, cửa ra vào
-C. trường học
-D. năm
-Đáp án: A
-Lời giải: 为什么 đọc là wèishénme, nghĩa là tại sao. Tham chiếu: PDF bài 8, trang 13.
-Độ khó: Dễ
-Câu 74. Chọn chữ Hán có nghĩa “tại sao”.
-A. 每天
-B. 差
-C. 太……了
-D. 为什么
-Đáp án: D
-Lời giải: 为什么 đọc là wèishénme, nghĩa là tại sao. Tham chiếu: PDF bài 8, trang 13.
-Độ khó: Dễ
-Câu 75. Chọn phiên âm đúng của “为什么”.
-A. Hànyǔ kè
-B. duǎnjù
-C. wèishénme
-D. xīngqī rì
-Đáp án: C
-Lời giải: 为什么 đọc là wèishénme, nghĩa là tại sao. Tham chiếu: PDF bài 8, trang 13.
-Độ khó: Dễ
-Câu 76. Trong bài học, “因为” có nghĩa là gì?
-A. xem phim
-B. ngày trong tháng, cách nói trang trọng
-C. hôm qua
-D. bởi vì
-Đáp án: D
-Lời giải: 因为 đọc là yīnwèi, nghĩa là bởi vì. Tham chiếu: PDF bài 8, trang 13.
-Độ khó: Dễ
-Câu 77. Chọn chữ Hán có nghĩa “bởi vì”.
-A. 前年
-B. 告诉
-C. 因为
-D. 星期
-Đáp án: C
-Lời giải: 因为 đọc là yīnwèi, nghĩa là bởi vì. Tham chiếu: PDF bài 8, trang 13.
-Độ khó: Dễ
-Câu 78. Chọn phiên âm đúng của “因为”.
-A. míngnián
-B. wèishénme
-C. zhēn de
-D. yīnwèi
-Đáp án: D
-Lời giải: 因为 đọc là yīnwèi, nghĩa là bởi vì. Tham chiếu: PDF bài 8, trang 13.
-Độ khó: Dễ
-Câu 79. Trong bài học, “最” có nghĩa là gì?
-A. buổi trưa
-B. nhất
-C. tuần trước
-D. ngày trong tháng, cách nói khẩu ngữ
-Đáp án: B
-Lời giải: 最 đọc là zuì, nghĩa là nhất. Tham chiếu: PDF bài 8, trang 13.
-Độ khó: Dễ
-Câu 80. Chọn chữ Hán có nghĩa “nhất”.
-A. 最
-B. 几
-C. 请
-D. 星期二
-Đáp án: A
-Lời giải: 最 đọc là zuì, nghĩa là nhất. Tham chiếu: PDF bài 8, trang 13.
-Độ khó: Dễ
-Câu 81. Chọn phiên âm đúng của “最”.
-A. xīngqī
-B. nián
-C. jīnnián
-D. zuì
-Đáp án: D
-Lời giải: 最 đọc là zuì, nghĩa là nhất. Tham chiếu: PDF bài 8, trang 13.
-Độ khó: Dễ
-Câu 82. Trong bài học, “事” có nghĩa là gì?
-A. chủ nhật
-B. việc, chuyện
-C. phim ngắn
-D. tuần sau
-Đáp án: B
-Lời giải: 事 đọc là shì, nghĩa là việc, chuyện. Tham chiếu: PDF bài 8, trang 14.
-Độ khó: Dễ
-Câu 83. Chọn chữ Hán có nghĩa “việc, chuyện”.
-A. 年
-B. 事
-C. 前年
-D. 今天
-Đáp án: B
-Lời giải: 事 đọc là shì, nghĩa là việc, chuyện. Tham chiếu: PDF bài 8, trang 14.
-Độ khó: Dễ
-Câu 84. Chọn phiên âm đúng của “事”.
-A. shì
-B. xià ge yuè
-C. zhōu
-D. xīngqī yī
-Đáp án: A
-Lời giải: 事 đọc là shì, nghĩa là việc, chuyện. Tham chiếu: PDF bài 8, trang 14.
-Độ khó: Dễ
-Câu 85. Trong bài học, “介绍” có nghĩa là gì?
-A. ăn cơm
-B. giới thiệu
-C. lượng từ cho sự việc
-D. mỗi
-Đáp án: B
-Lời giải: 介绍 đọc là jièshào, nghĩa là giới thiệu. Tham chiếu: PDF bài 8, trang 14.
-Độ khó: Dễ
-Câu 86. Chọn chữ Hán có nghĩa “giới thiệu”.
-A. 介绍
-B. 因为
-C. 天
-D. 生日歌
-Đáp án: A
-Lời giải: 介绍 đọc là jièshào, nghĩa là giới thiệu. Tham chiếu: PDF bài 8, trang 14.
-Độ khó: Dễ
-Câu 87. Chọn phiên âm đúng của “介绍”.
-A. jièshào
-B. zhōngwǔ
-C. zhōu
-D. chīfàn
-Đáp án: A
-Lời giải: 介绍 đọc là jièshào, nghĩa là giới thiệu. Tham chiếu: PDF bài 8, trang 14.
-Độ khó: Dễ
-Câu 88. Trong bài học, “有空儿” có nghĩa là gì?
-A. thứ tư
-B. rảnh, có thời gian
-C. thật, thật là
-D. ngày; trời
-Đáp án: B
-Lời giải: 有空儿 đọc là yǒu kòngr, nghĩa là rảnh, có thời gian. Tham chiếu: PDF bài 8, trang 15.
-Độ khó: Dễ
-Câu 89. Chọn chữ Hán có nghĩa “rảnh, có thời gian”.
-A. 每天
+Câu 58. Chọn Hán tự có phiên âm “guo” và nghĩa “Đã từng (trợ từ kinh nghiệm)”.
+A. 过
 B. 有空儿
-C. 请
-D. 汉语课
-Đáp án: B
-Lời giải: 有空儿 đọc là yǒu kòngr, nghĩa là rảnh, có thời gian. Tham chiếu: PDF bài 8, trang 15.
-Độ khó: Dễ
-Câu 90. Chọn phiên âm đúng của “有空儿”.
-A. xīngqī tiān
-B. yǒu kòngr
-C. měitiān
-D. cǎipiào
-Đáp án: B
-Lời giải: 有空儿 đọc là yǒu kòngr, nghĩa là rảnh, có thời gian. Tham chiếu: PDF bài 8, trang 15.
-Độ khó: Dễ
-Câu 91. Trong bài học, “见” có nghĩa là gì?
-A. thứ ba
-B. gặp
-C. chúc mừng sinh nhật
-D. xem phim
-Đáp án: B
-Lời giải: 见 đọc là jiàn, nghĩa là gặp. Tham chiếu: PDF bài 8, trang 15.
-Độ khó: Dễ
-Câu 92. Chọn chữ Hán có nghĩa “gặp”.
-A. 最
-B. 星期五
-C. 见
-D. 差
-Đáp án: C
-Lời giải: 见 đọc là jiàn, nghĩa là gặp. Tham chiếu: PDF bài 8, trang 15.
-Độ khó: Dễ
-Câu 93. Chọn phiên âm đúng của “见”.
-A. jiàn
-B. qiántiān
-C. liáotiān
-D. miǎo
+C. 不太
+D. 这个月
 Đáp án: A
-Lời giải: 见 đọc là jiàn, nghĩa là gặp. Tham chiếu: PDF bài 8, trang 15.
+Lời giải: 过 đọc là guo, nghĩa là Đã từng (trợ từ kinh nghiệm). Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 472.
 Độ khó: Dễ
-Câu 94. Trong bài học, “尝” có nghĩa là gì?
-A. cầm tinh, thuộc con giáp
-B. bởi vì
-C. tháng trước
-D. nếm, thử vị
+Câu 59. Trong bài học, “电视剧” có nghĩa là gì?
+A. Nghỉ, nghỉ ngơi
+B. Tuần trước
+C. Năm kia
+D. Phim truyền hình
 Đáp án: D
-Lời giải: 尝 đọc là cháng, nghĩa là nếm, thử vị. Tham chiếu: PDF bài 8, trang 16.
+Lời giải: 电视剧 đọc là diànshìjù, nghĩa là Phim truyền hình. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 473.
 Độ khó: Dễ
-Câu 95. Chọn chữ Hán có nghĩa “nếm, thử vị”.
-A. 尝
-B. 今年
-C. 几
-D. 差
-Đáp án: A
-Lời giải: 尝 đọc là cháng, nghĩa là nếm, thử vị. Tham chiếu: PDF bài 8, trang 16.
-Độ khó: Dễ
-Câu 96. Chọn phiên âm đúng của “尝”.
-A. bàn
-B. dàngāo
-C. cháng
-D. xīngqī wǔ
-Đáp án: C
-Lời giải: 尝 đọc là cháng, nghĩa là nếm, thử vị. Tham chiếu: PDF bài 8, trang 16.
-Độ khó: Dễ
-Câu 97. Trong bài học, “过” có nghĩa là gì?
-A. bánh kem
-B. hôm qua
-C. buổi tối
-D. trợ từ chỉ trải nghiệm đã từng
-Đáp án: D
-Lời giải: 过 đọc là guo, nghĩa là trợ từ chỉ trải nghiệm đã từng. Tham chiếu: PDF bài 8, trang 16.
-Độ khó: Dễ
-Câu 98. Chọn chữ Hán có nghĩa “trợ từ chỉ trải nghiệm đã từng”.
-A. 门票
-B. 礼拜
-C. 尝
-D. 过
-Đáp án: D
-Lời giải: 过 đọc là guo, nghĩa là trợ từ chỉ trải nghiệm đã từng. Tham chiếu: PDF bài 8, trang 16.
-Độ khó: Dễ
-Câu 99. Chọn phiên âm đúng của “过”.
-A. qiántiān
-B. chīfàn
-C. guo
-D. xīngqī èr
-Đáp án: C
-Lời giải: 过 đọc là guo, nghĩa là trợ từ chỉ trải nghiệm đã từng. Tham chiếu: PDF bài 8, trang 16.
-Độ khó: Dễ
-Câu 100. Trong bài học, “电视剧” có nghĩa là gì?
-A. phim truyền hình, phim dài tập
-B. năm sau
-C. tiết học tiếng Hán
-D. trường học
-Đáp án: A
-Lời giải: 电视剧 đọc là diànshìjù, nghĩa là phim truyền hình, phim dài tập. Tham chiếu: PDF bài 8, trang 17.
-Độ khó: Dễ
-Câu 101. Chọn chữ Hán có nghĩa “phim truyền hình, phim dài tập”.
-A. 电视剧
-B. 这个月
-C. 几
-D. 真
-Đáp án: A
-Lời giải: 电视剧 đọc là diànshìjù, nghĩa là phim truyền hình, phim dài tập. Tham chiếu: PDF bài 8, trang 17.
-Độ khó: Dễ
-Câu 102. Chọn phiên âm đúng của “电视剧”.
-A. xīngqī sān
-B. zuì
-C. diànshìjù
-D. duǎnjù
-Đáp án: C
-Lời giải: 电视剧 đọc là diànshìjù, nghĩa là phim truyền hình, phim dài tập. Tham chiếu: PDF bài 8, trang 17.
-Độ khó: Dễ
-Câu 103. Trong bài học, “门口” có nghĩa là gì?
-A. ngày trong tháng, cách nói trang trọng
-B. cổng, cửa ra vào
-C. việc, chuyện
-D. tuần; cách gọi tuần, thứ
+Câu 60. Chọn Hán tự có phiên âm “diànshìjù” và nghĩa “Phim truyền hình”.
+A. 上个月
+B. 电视剧
+C. 蛋糕
+D. 最
 Đáp án: B
-Lời giải: 门口 đọc là ménkǒu, nghĩa là cổng, cửa ra vào. Tham chiếu: PDF bài 8, trang 17.
+Lời giải: 电视剧 đọc là diànshìjù, nghĩa là Phim truyền hình. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 473.
 Độ khó: Dễ
-Câu 104. Chọn chữ Hán có nghĩa “cổng, cửa ra vào”.
-A. 这个月
-B. 门口
-C. 后年
-D. 漂亮
-Đáp án: B
-Lời giải: 门口 đọc là ménkǒu, nghĩa là cổng, cửa ra vào. Tham chiếu: PDF bài 8, trang 17.
-Độ khó: Dễ
-Câu 105. Chọn phiên âm đúng của “门口”.
-A. ménkǒu
-B. zǎoshang
-C. dàngāo
-D. shàng ge yuè
+Câu 61. Trong bài học, “门口” có nghĩa là gì?
+A. Cửa ra vào
+B. Quá…
+C. Chúc mừng sinh nhật
+D. Nói cho, báo cho
 Đáp án: A
-Lời giải: 门口 đọc là ménkǒu, nghĩa là cổng, cửa ra vào. Tham chiếu: PDF bài 8, trang 17.
+Lời giải: 门口 đọc là ménkǒu, nghĩa là Cửa ra vào. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 474.
 Độ khó: Dễ
-Câu 106. Trong bài học, “休息” có nghĩa là gì?
-A. năm sau nữa
-B. nghỉ ngơi
-C. tháng
-D. tuần sau
-Đáp án: B
-Lời giải: 休息 đọc là xiūxi, nghĩa là nghỉ ngơi. Tham chiếu: PDF bài 8, trang 18.
-Độ khó: Dễ
-Câu 107. Chọn chữ Hán có nghĩa “nghỉ ngơi”.
-A. 彩票
-B. 太……了
-C. 休息
-D. 几
+Câu 62. Chọn Hán tự có phiên âm “ménkǒu” và nghĩa “Cửa ra vào”.
+A. 见
+B. 马
+C. 门口
+D. 蛇
 Đáp án: C
-Lời giải: 休息 đọc là xiūxi, nghĩa là nghỉ ngơi. Tham chiếu: PDF bài 8, trang 18.
+Lời giải: 门口 đọc là ménkǒu, nghĩa là Cửa ra vào. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 474.
 Độ khó: Dễ
-Câu 108. Chọn phiên âm đúng của “休息”.
-A. xiūxi
-B. hào
-C. hòutiān
-D. xià ge yuè
+Câu 63. Trong bài học, “休息” có nghĩa là gì?
+A. Nghỉ, nghỉ ngơi
+B. Trò chuyện
+C. Tiếng, giờ (khoảng thời gian)
+D. Rắn
 Đáp án: A
-Lời giải: 休息 đọc là xiūxi, nghĩa là nghỉ ngơi. Tham chiếu: PDF bài 8, trang 18.
+Lời giải: 休息 đọc là xiūxi, nghĩa là Nghỉ, nghỉ ngơi. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 475.
 Độ khó: Dễ
-Câu 109. Trong bài học, “上个星期” có nghĩa là gì?
-A. rảnh, có thời gian
-B. tuần trước
-C. phim ngắn
-D. chúc mừng sinh nhật
+Câu 64. Chọn Hán tự có phiên âm “xiūxi” và nghĩa “Nghỉ, nghỉ ngơi”.
+A. 星期一
+B. 休息
+C. 半
+D. 下个月
 Đáp án: B
-Lời giải: 上个星期 đọc là shàng ge xīngqī, nghĩa là tuần trước. Tham chiếu: PDF bài 8, trang 5.
+Lời giải: 休息 đọc là xiūxi, nghĩa là Nghỉ, nghỉ ngơi. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 475.
 Độ khó: Dễ
-Câu 110. Chọn chữ Hán có nghĩa “tuần trước”.
-A. 日
-B. 假的
-C. 最
-D. 上个星期
-Đáp án: D
-Lời giải: 上个星期 đọc là shàng ge xīngqī, nghĩa là tuần trước. Tham chiếu: PDF bài 8, trang 5.
+Câu 65. Trong bài học, “昨天” có nghĩa là gì?
+A. Nửa
+B. Hôm qua
+C. Rồng
+D. Chủ nhật
+Đáp án: B
+Lời giải: 昨天 đọc là zuótiān, nghĩa là Hôm qua. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 479.
 Độ khó: Dễ
-Câu 111. Chọn phiên âm đúng của “上个星期”.
-A. shàng ge xīngqī
-B. diànshìjù
-C. kāfēi
-D. shì
-Đáp án: A
-Lời giải: 上个星期 đọc là shàng ge xīngqī, nghĩa là tuần trước. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 112. Trong bài học, “这个星期” có nghĩa là gì?
-A. mỗi năm
-B. một khắc, mười lăm phút
-C. thứ sáu
-D. tuần này
-Đáp án: D
-Lời giải: 这个星期 đọc là zhè ge xīngqī, nghĩa là tuần này. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 113. Chọn chữ Hán có nghĩa “tuần này”.
-A. 后年
-B. 秒
-C. 这个星期
+Câu 66. Chọn Hán tự có phiên âm “zuótiān” và nghĩa “Hôm qua”.
+A. 介绍
+B. 去年
+C. 昨天
 D. 生日
 Đáp án: C
-Lời giải: 这个星期 đọc là zhè ge xīngqī, nghĩa là tuần này. Tham chiếu: PDF bài 8, trang 5.
+Lời giải: 昨天 đọc là zuótiān, nghĩa là Hôm qua. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 479.
 Độ khó: Dễ
-Câu 114. Chọn phiên âm đúng của “这个星期”.
-A. zǎoshang
-B. xiūxi
-C. zhè ge xīngqī
-D. jīnnián
-Đáp án: C
-Lời giải: 这个星期 đọc là zhè ge xīngqī, nghĩa là tuần này. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 115. Trong bài học, “下个星期” có nghĩa là gì?
-A. năm nay
-B. tuần sau
-C. thứ hai
-D. thứ ba
-Đáp án: B
-Lời giải: 下个星期 đọc là xià ge xīngqī, nghĩa là tuần sau. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 116. Chọn chữ Hán có nghĩa “tuần sau”.
-A. 见
-B. 日
-C. 下个星期
-D. 出生
-Đáp án: C
-Lời giải: 下个星期 đọc là xià ge xīngqī, nghĩa là tuần sau. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 117. Chọn phiên âm đúng của “下个星期”.
-A. yīnwèi
-B. měitiān
-C. tài…le
-D. xià ge xīngqī
+Câu 67. Trong bài học, “明天” có nghĩa là gì?
+A. Tuần, thứ
+B. Tháng sau
+C. Thật, thật là
+D. Ngày mai
 Đáp án: D
-Lời giải: 下个星期 đọc là xià ge xīngqī, nghĩa là tuần sau. Tham chiếu: PDF bài 8, trang 5.
+Lời giải: 明天 đọc là míngtiān, nghĩa là Ngày mai. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 480.
 Độ khó: Dễ
-Câu 118. Trong bài học, “上个月” có nghĩa là gì?
-A. ăn cơm
-B. không rảnh
-C. tháng trước
-D. mỗi năm
-Đáp án: C
-Lời giải: 上个月 đọc là shàng ge yuè, nghĩa là tháng trước. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 119. Chọn chữ Hán có nghĩa “tháng trước”.
-A. 天
-B. 因为
-C. 漂亮
-D. 上个月
-Đáp án: D
-Lời giải: 上个月 đọc là shàng ge yuè, nghĩa là tháng trước. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 120. Chọn phiên âm đúng của “上个月”.
-A. cháng
-B. jièshào
-C. yīnwèi
-D. shàng ge yuè
-Đáp án: D
-Lời giải: 上个月 đọc là shàng ge yuè, nghĩa là tháng trước. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 121. Trong bài học, “这个月” có nghĩa là gì?
-A. tuần trước
-B. phút
-C. tháng này
-D. mỗi ngày
-Đáp án: C
-Lời giải: 这个月 đọc là zhè ge yuè, nghĩa là tháng này. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 122. Chọn chữ Hán có nghĩa “tháng này”.
-A. 小时
-B. 每天
-C. 门口
-D. 这个月
-Đáp án: D
-Lời giải: 这个月 đọc là zhè ge yuè, nghĩa là tháng này. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 123. Chọn phiên âm đúng của “这个月”.
-A. zuì
-B. kè
-C. zhè ge yuè
-D. xīngqī
-Đáp án: C
-Lời giải: 这个月 đọc là zhè ge yuè, nghĩa là tháng này. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 124. Trong bài học, “下个月” có nghĩa là gì?
-A. hôm nay
-B. hôm kia
-C. tháng sau
-D. tuần sau
-Đáp án: C
-Lời giải: 下个月 đọc là xià ge yuè, nghĩa là tháng sau. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 125. Chọn chữ Hán có nghĩa “tháng sau”.
-A. 聊天
-B. 下个月
-C. 吃饭
-D. 中午
-Đáp án: B
-Lời giải: 下个月 đọc là xià ge yuè, nghĩa là tháng sau. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 126. Chọn phiên âm đúng của “下个月”.
-A. bàn
-B. zhōu
-C. xuéxiào
-D. xià ge yuè
-Đáp án: D
-Lời giải: 下个月 đọc là xià ge yuè, nghĩa là tháng sau. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 127. Trong bài học, “前年” có nghĩa là gì?
-A. năm kia
-B. bài hát mừng sinh nhật
-C. buổi chiều
-D. vé vào cửa
-Đáp án: A
-Lời giải: 前年 đọc là qiánnián, nghĩa là năm kia. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 128. Chọn chữ Hán có nghĩa “năm kia”.
-A. 天
-B. 门口
-C. 前年
-D. 星期天
-Đáp án: C
-Lời giải: 前年 đọc là qiánnián, nghĩa là năm kia. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 129. Chọn phiên âm đúng của “前年”.
-A. qiánnián
-B. xīngqī
-C. xīngqī sān
-D. xīngqī sì
-Đáp án: A
-Lời giải: 前年 đọc là qiánnián, nghĩa là năm kia. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 130. Trong bài học, “去年” có nghĩa là gì?
-A. giả, không thật
-B. tuần; cách gọi tuần, thứ
-C. năm ngoái
-D. nghỉ ngơi
-Đáp án: C
-Lời giải: 去年 đọc là qùnián, nghĩa là năm ngoái. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 131. Chọn chữ Hán có nghĩa “năm ngoái”.
-A. 去年
-B. 星期日
-C. 前年
-D. 周
-Đáp án: A
-Lời giải: 去年 đọc là qùnián, nghĩa là năm ngoái. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 132. Chọn phiên âm đúng của “去年”.
-A. qiántiān
-B. shuō
-C. qùnián
-D. chà
-Đáp án: C
-Lời giải: 去年 đọc là qùnián, nghĩa là năm ngoái. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 133. Trong bài học, “今年” có nghĩa là gì?
-A. tháng
-B. phim ngắn
-C. quá, rất; cấu trúc cảm thán
-D. năm nay
-Đáp án: D
-Lời giải: 今年 đọc là jīnnián, nghĩa là năm nay. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 134. Chọn chữ Hán có nghĩa “năm nay”.
-A. 咖啡
-B. 上个月
-C. 明年
-D. 今年
-Đáp án: D
-Lời giải: 今年 đọc là jīnnián, nghĩa là năm nay. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 135. Chọn phiên âm đúng của “今年”.
-A. jiǎ de
-B. ménkǒu
-C. jīnnián
-D. chūshēng
-Đáp án: C
-Lời giải: 今年 đọc là jīnnián, nghĩa là năm nay. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 136. Trong bài học, “明年” có nghĩa là gì?
-A. năm sau
-B. chúc mừng sinh nhật
-C. tháng này
-D. bởi vì
-Đáp án: A
-Lời giải: 明年 đọc là míngnián, nghĩa là năm sau. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 137. Chọn chữ Hán có nghĩa “năm sau”.
-A. 晚饭
-B. 星期六
-C. 明年
-D. 有空儿
-Đáp án: C
-Lời giải: 明年 đọc là míngnián, nghĩa là năm sau. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 138. Chọn phiên âm đúng của “明年”.
-A. míngnián
-B. bàn
-C. shuō
-D. shēngrì kuàilè
-Đáp án: A
-Lời giải: 明年 đọc là míngnián, nghĩa là năm sau. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 139. Trong bài học, “后年” có nghĩa là gì?
-A. ngày kia
-B. thứ sáu
-C. năm sau nữa
-D. thứ ba
-Đáp án: C
-Lời giải: 后年 đọc là hòunián, nghĩa là năm sau nữa. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 140. Chọn chữ Hán có nghĩa “năm sau nữa”.
-A. 明天
-B. 半
-C. 后年
-D. 秒
-Đáp án: C
-Lời giải: 后年 đọc là hòunián, nghĩa là năm sau nữa. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 141. Chọn phiên âm đúng của “后年”.
-A. xīngqī sì
-B. hòunián
-C. xià ge yuè
-D. qiánnián
-Đáp án: B
-Lời giải: 后年 đọc là hòunián, nghĩa là năm sau nữa. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 142. Trong bài học, “前天” có nghĩa là gì?
-A. nếm, thử vị
-B. thật, thực sự
-C. ngày trong tháng, cách nói trang trọng
-D. hôm kia
-Đáp án: D
-Lời giải: 前天 đọc là qiántiān, nghĩa là hôm kia. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 143. Chọn chữ Hán có nghĩa “hôm kia”.
-A. 星期六
+Câu 68. Chọn Hán tự có phiên âm “míngtiān” và nghĩa “Ngày mai”.
+A. 为什么
 B. 前天
-C. 过
-D. 出生
-Đáp án: B
-Lời giải: 前天 đọc là qiántiān, nghĩa là hôm kia. Tham chiếu: PDF bài 8, trang 5.
-Độ khó: Dễ
-Câu 144. Chọn phiên âm đúng của “前天”.
-A. yǒu kòngr
-B. qǐng
-C. qiántiān
-D. měi
+C. 明天
+D. 大后天
 Đáp án: C
-Lời giải: 前天 đọc là qiántiān, nghĩa là hôm kia. Tham chiếu: PDF bài 8, trang 5.
+Lời giải: 明天 đọc là míngtiān, nghĩa là Ngày mai. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 480.
 Độ khó: Dễ
-Câu 145. Trong bài học, “后天” có nghĩa là gì?
-A. nói
-B. hôm kia
-C. hôm nay
-D. ngày kia
+Câu 69. Trong bài học, “前天” có nghĩa là gì?
+A. Tuần trước
+B. Năm sau
+C. Dê
+D. Hôm kia
 Đáp án: D
-Lời giải: 后天 đọc là hòutiān, nghĩa là ngày kia. Tham chiếu: PDF bài 8, trang 5.
+Lời giải: 前天 đọc là qiántiān, nghĩa là Hôm kia. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 481.
 Độ khó: Dễ
-Câu 146. Chọn chữ Hán có nghĩa “ngày kia”.
-A. 电视剧
-B. 星期日
-C. 漂亮
-D. 后天
+Câu 70. Chọn Hán tự có phiên âm “qiántiān” và nghĩa “Hôm kia”.
+A. 星期三
+B. 星期五
+C. 前天
+D. 聊天
+Đáp án: C
+Lời giải: 前天 đọc là qiántiān, nghĩa là Hôm kia. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 481.
+Độ khó: Dễ
+Câu 71. Trong bài học, “后天” có nghĩa là gì?
+A. Trâu, bò
+B. Mỗi
+C. Phim ngắn, kịch ngắn
+D. Ngày kia
 Đáp án: D
-Lời giải: 后天 đọc là hòutiān, nghĩa là ngày kia. Tham chiếu: PDF bài 8, trang 5.
+Lời giải: 后天 đọc là hòutiān, nghĩa là Ngày kia. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 482.
 Độ khó: Dễ
-Câu 147. Chọn phiên âm đúng của “后天”.
-A. chīfàn
-B. měinián
-C. diànshìjù
-D. hòutiān
-Đáp án: D
-Lời giải: 后天 đọc là hòutiān, nghĩa là ngày kia. Tham chiếu: PDF bài 8, trang 5.
+Câu 72. Chọn Hán tự có phiên âm “hòutiān” và nghĩa “Ngày kia”.
+A. 星期日
+B. 后天
+C. 不太
+D. 星期四
+Đáp án: B
+Lời giải: 后天 đọc là hòutiān, nghĩa là Ngày kia. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 482.
 Độ khó: Dễ
-Câu 148. Trong bài học, “每天” có nghĩa là gì?
-A. mỗi ngày
-B. bánh kem
-C. giới thiệu
-D. thứ năm
-Đáp án: A
-Lời giải: 每天 đọc là měitiān, nghĩa là mỗi ngày. Tham chiếu: PDF bài 8, trang 6.
+Câu 73. Trong bài học, “大前天” có nghĩa là gì?
+A. Ngựa
+B. Ba ngày trước
+C. Thứ Sáu
+D. Chó
+Đáp án: B
+Lời giải: 大前天 đọc là dàqiántiān, nghĩa là Ba ngày trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 483.
 Độ khó: Dễ
-Câu 149. Chọn chữ Hán có nghĩa “mỗi ngày”.
-A. 点
-B. 下午
-C. 星期一
+Câu 74. Chọn Hán tự có phiên âm “dàqiántiān” và nghĩa “Ba ngày trước”.
+A. 为什么
+B. 龙
+C. 大前天
+D. 看电影
+Đáp án: C
+Lời giải: 大前天 đọc là dàqiántiān, nghĩa là Ba ngày trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 483.
+Độ khó: Dễ
+Câu 75. Trong bài học, “大后天” có nghĩa là gì?
+A. Rồng
+B. Mỗi
+C. Ba ngày sau
+D. Ngựa
+Đáp án: C
+Lời giải: 大后天 đọc là dàhòutiān, nghĩa là Ba ngày sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 484.
+Độ khó: Dễ
+Câu 76. Chọn Hán tự có phiên âm “dàhòutiān” và nghĩa “Ba ngày sau”.
+A. 下个星期
+B. 大后天
+C. 鸡
+D. 介绍
+Đáp án: B
+Lời giải: 大后天 đọc là dàhòutiān, nghĩa là Ba ngày sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 484.
+Độ khó: Dễ
+Câu 77. Trong bài học, “天” có nghĩa là gì?
+A. Kém, thiếu
+B. Quá…
+C. Trời, ngày
+D. Phim ngắn, kịch ngắn
+Đáp án: C
+Lời giải: 天 đọc là tiān, nghĩa là Trời, ngày. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 485.
+Độ khó: Dễ
+Câu 78. Chọn Hán tự có phiên âm “tiān” và nghĩa “Trời, ngày”.
+A. 休息
+B. 事
+C. 天
+D. 出生
+Đáp án: C
+Lời giải: 天 đọc là tiān, nghĩa là Trời, ngày. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 485.
+Độ khó: Dễ
+Câu 79. Trong bài học, “每天” có nghĩa là gì?
+A. Phút
+B. Thứ Tư
+C. Mỗi ngày
+D. Đã từng (trợ từ kinh nghiệm)
+Đáp án: C
+Lời giải: 每天 đọc là měitiān, nghĩa là Mỗi ngày. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 486.
+Độ khó: Dễ
+Câu 80. Chọn Hán tự có phiên âm “měitiān” và nghĩa “Mỗi ngày”.
+A. 前年
+B. 太……了
+C. 因为
 D. 每天
 Đáp án: D
-Lời giải: 每天 đọc là měitiān, nghĩa là mỗi ngày. Tham chiếu: PDF bài 8, trang 6.
+Lời giải: 每天 đọc là měitiān, nghĩa là Mỗi ngày. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 486.
 Độ khó: Dễ
-Câu 150. Chọn phiên âm đúng của “每天”.
-A. měinián
-B. tiān
-C. qiánnián
-D. měitiān
+Câu 81. Trong bài học, “每月” có nghĩa là gì?
+A. Thứ Ba
+B. Trò chuyện
+C. Nói chuyện
+D. Mỗi tháng
 Đáp án: D
-Lời giải: 每天 đọc là měitiān, nghĩa là mỗi ngày. Tham chiếu: PDF bài 8, trang 6.
+Lời giải: 每月 đọc là měi yuè, nghĩa là Mỗi tháng. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 487.
 Độ khó: Dễ
-Câu 151. Trong bài học, “每年” có nghĩa là gì?
-A. mỗi năm
-B. ăn cơm
-C. tiếng, giờ đồng hồ; khoảng thời gian
-D. mời
-Đáp án: A
-Lời giải: 每年 đọc là měinián, nghĩa là mỗi năm. Tham chiếu: PDF bài 8, trang 6.
-Độ khó: Dễ
-Câu 152. Chọn chữ Hán có nghĩa “mỗi năm”.
-A. 昨天
-B. 每年
-C. 星期四
-D. 休息
-Đáp án: B
-Lời giải: 每年 đọc là měinián, nghĩa là mỗi năm. Tham chiếu: PDF bài 8, trang 6.
-Độ khó: Dễ
-Câu 153. Chọn phiên âm đúng của “每年”.
-A. měinián
-B. piàoliang
-C. méi kòngr
-D. cháng
-Đáp án: A
-Lời giải: 每年 đọc là měinián, nghĩa là mỗi năm. Tham chiếu: PDF bài 8, trang 6.
-Độ khó: Dễ
-Câu 154. Trong bài học, “秒” có nghĩa là gì?
-A. tuần sau
-B. phim ngắn
-C. ngày; trời
-D. giây
-Đáp án: D
-Lời giải: 秒 đọc là miǎo, nghĩa là giây. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 155. Chọn chữ Hán có nghĩa “giây”.
-A. 秒
-B. 说
-C. 这个星期
-D. 快乐
-Đáp án: A
-Lời giải: 秒 đọc là miǎo, nghĩa là giây. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 156. Chọn phiên âm đúng của “秒”.
-A. měitiān
-B. miǎo
-C. jiàn
-D. míngtiān
-Đáp án: B
-Lời giải: 秒 đọc là miǎo, nghĩa là giây. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 157. Trong bài học, “半” có nghĩa là gì?
-A. tuần; cách gọi tuần, thứ
-B. nhất
-C. kém, còn thiếu; khi nói giờ
-D. nửa, rưỡi
-Đáp án: D
-Lời giải: 半 đọc là bàn, nghĩa là nửa, rưỡi. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 158. Chọn chữ Hán có nghĩa “nửa, rưỡi”.
-A. 半
-B. 点
-C. 学校
-D. 星期六
-Đáp án: A
-Lời giải: 半 đọc là bàn, nghĩa là nửa, rưỡi. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 159. Chọn phiên âm đúng của “半”.
-A. qiántiān
-B. bàn
-C. xià ge yuè
-D. chīfàn
-Đáp án: B
-Lời giải: 半 đọc là bàn, nghĩa là nửa, rưỡi. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 160. Trong bài học, “刻” có nghĩa là gì?
-A. tuần sau
-B. bánh kem
-C. một khắc, mười lăm phút
-D. sinh nhật
-Đáp án: C
-Lời giải: 刻 đọc là kè, nghĩa là một khắc, mười lăm phút. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 161. Chọn chữ Hán có nghĩa “một khắc, mười lăm phút”.
-A. 刻
-B. 件
-C. 上个星期
-D. 真
-Đáp án: A
-Lời giải: 刻 đọc là kè, nghĩa là một khắc, mười lăm phút. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 162. Chọn phiên âm đúng của “刻”.
-A. gàosu
-B. lǐbài
-C. diànshìjù
-D. kè
-Đáp án: D
-Lời giải: 刻 đọc là kè, nghĩa là một khắc, mười lăm phút. Tham chiếu: PDF bài 8, trang 7.
-Độ khó: Dễ
-Câu 163. Trong bài học, “生日快乐” có nghĩa là gì?
-A. việc, chuyện
-B. chúc mừng sinh nhật
-C. nói
-D. năm sau
-Đáp án: B
-Lời giải: 生日快乐 đọc là shēngrì kuàilè, nghĩa là chúc mừng sinh nhật. Tham chiếu: PDF bài 8, trang 9.
-Độ khó: Dễ
-Câu 164. Chọn chữ Hán có nghĩa “chúc mừng sinh nhật”.
-A. 休息
-B. 假的
-C. 每年
-D. 生日快乐
-Đáp án: D
-Lời giải: 生日快乐 đọc là shēngrì kuàilè, nghĩa là chúc mừng sinh nhật. Tham chiếu: PDF bài 8, trang 9.
-Độ khó: Dễ
-Câu 165. Chọn phiên âm đúng của “生日快乐”.
-A. xīngqī
-B. jīnnián
-C. wǎnshang
-D. shēngrì kuàilè
-Đáp án: D
-Lời giải: 生日快乐 đọc là shēngrì kuàilè, nghĩa là chúc mừng sinh nhật. Tham chiếu: PDF bài 8, trang 9.
-Độ khó: Dễ
-Câu 166. Trong bài học, “生日歌” có nghĩa là gì?
-A. ngày kia
-B. ngày trong tháng, cách nói khẩu ngữ
-C. bài hát mừng sinh nhật
-D. vui vẻ, hạnh phúc
-Đáp án: C
-Lời giải: 生日歌 đọc là shēngrì gē, nghĩa là bài hát mừng sinh nhật. Tham chiếu: PDF bài 8, trang 9.
-Độ khó: Dễ
-Câu 167. Chọn chữ Hán có nghĩa “bài hát mừng sinh nhật”.
-A. 告诉
-B. 蛋糕
-C. 生日歌
-D. 前年
-Đáp án: C
-Lời giải: 生日歌 đọc là shēngrì gē, nghĩa là bài hát mừng sinh nhật. Tham chiếu: PDF bài 8, trang 9.
-Độ khó: Dễ
-Câu 168. Chọn phiên âm đúng của “生日歌”.
-A. xīngqī
-B. shēngrì gē
-C. diànshìjù
-D. wèishénme
-Đáp án: B
-Lời giải: 生日歌 đọc là shēngrì gē, nghĩa là bài hát mừng sinh nhật. Tham chiếu: PDF bài 8, trang 9.
-Độ khó: Dễ
-Câu 169. Trong bài học, “星期一” có nghĩa là gì?
-A. nửa, rưỡi
-B. phim truyền hình, phim dài tập
-C. thứ hai
-D. năm kia
-Đáp án: C
-Lời giải: 星期一 đọc là xīngqī yī, nghĩa là thứ hai. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 170. Chọn chữ Hán có nghĩa “thứ hai”.
-A. 咖啡
-B. 差
-C. 星期一
-D. 电视剧
-Đáp án: C
-Lời giải: 星期一 đọc là xīngqī yī, nghĩa là thứ hai. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 171. Chọn phiên âm đúng của “星期一”.
-A. méi kòngr
-B. hào
-C. bàn
-D. xīngqī yī
-Đáp án: D
-Lời giải: 星期一 đọc là xīngqī yī, nghĩa là thứ hai. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 172. Trong bài học, “星期二” có nghĩa là gì?
-A. bữa tối
-B. xem phim
-C. vui vẻ, hạnh phúc
-D. thứ ba
-Đáp án: D
-Lời giải: 星期二 đọc là xīngqī èr, nghĩa là thứ ba. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 173. Chọn chữ Hán có nghĩa “thứ ba”.
-A. 下个月
-B. 前天
-C. 昨天
-D. 星期二
-Đáp án: D
-Lời giải: 星期二 đọc là xīngqī èr, nghĩa là thứ ba. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 174. Chọn phiên âm đúng của “星期二”.
-A. zhè ge yuè
-B. xīngqī rì
-C. gàosu
-D. xīngqī èr
-Đáp án: D
-Lời giải: 星期二 đọc là xīngqī èr, nghĩa là thứ ba. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 175. Trong bài học, “星期三” có nghĩa là gì?
-A. xem phim
-B. xinh đẹp
-C. thứ tư
-D. rảnh, có thời gian
-Đáp án: C
-Lời giải: 星期三 đọc là xīngqī sān, nghĩa là thứ tư. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 176. Chọn chữ Hán có nghĩa “thứ tư”.
-A. 尝
-B. 星期三
-C. 下午
-D. 汉语课
-Đáp án: B
-Lời giải: 星期三 đọc là xīngqī sān, nghĩa là thứ tư. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 177. Chọn phiên âm đúng của “星期三”.
-A. jiàn
-B. chīfàn
-C. xīngqī sān
-D. xiàwǔ
-Đáp án: C
-Lời giải: 星期三 đọc là xīngqī sān, nghĩa là thứ tư. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 178. Trong bài học, “星期四” có nghĩa là gì?
-A. nói cho biết, bảo với
-B. thứ năm
-C. mấy; hỏi số lượng nhỏ
-D. tuần; cách gọi tuần, thứ
-Đáp án: B
-Lời giải: 星期四 đọc là xīngqī sì, nghĩa là thứ năm. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 179. Chọn chữ Hán có nghĩa “thứ năm”.
-A. 门票
-B. 星期四
-C. 天
-D. 过
-Đáp án: B
-Lời giải: 星期四 đọc là xīngqī sì, nghĩa là thứ năm. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 180. Chọn phiên âm đúng của “星期四”.
-A. jiàn
-B. xīngqī sì
-C. duǎnjù
-D. fēn
-Đáp án: B
-Lời giải: 星期四 đọc là xīngqī sì, nghĩa là thứ năm. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 181. Trong bài học, “星期五” có nghĩa là gì?
-A. phim ngắn
-B. thứ sáu
-C. bữa tối
-D. giờ; điểm giờ
-Đáp án: B
-Lời giải: 星期五 đọc là xīngqī wǔ, nghĩa là thứ sáu. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 182. Chọn chữ Hán có nghĩa “thứ sáu”.
-A. 星期五
-B. 漂亮
-C. 聊天
-D. 前天
-Đáp án: A
-Lời giải: 星期五 đọc là xīngqī wǔ, nghĩa là thứ sáu. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 183. Chọn phiên âm đúng của “星期五”.
-A. xīngqī
-B. xīngqī sì
-C. cháng
-D. xīngqī wǔ
-Đáp án: D
-Lời giải: 星期五 đọc là xīngqī wǔ, nghĩa là thứ sáu. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 184. Trong bài học, “星期六” có nghĩa là gì?
-A. ngày kia
-B. bởi vì
-C. thứ bảy
-D. năm sau
-Đáp án: C
-Lời giải: 星期六 đọc là xīngqī liù, nghĩa là thứ bảy. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 185. Chọn chữ Hán có nghĩa “thứ bảy”.
-A. 星期六
-B. 短剧
-C. 分
-D. 属
-Đáp án: A
-Lời giải: 星期六 đọc là xīngqī liù, nghĩa là thứ bảy. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 186. Chọn phiên âm đúng của “星期六”.
-A. yǒu kòngr
-B. xīngqī liù
-C. tài…le
-D. měinián
-Đáp án: B
-Lời giải: 星期六 đọc là xīngqī liù, nghĩa là thứ bảy. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 187. Trong bài học, “星期天” có nghĩa là gì?
-A. thứ hai
-B. thật, thực sự
-C. sinh ra
-D. chủ nhật
-Đáp án: D
-Lời giải: 星期天 đọc là xīngqī tiān, nghĩa là chủ nhật. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 188. Chọn chữ Hán có nghĩa “chủ nhật”.
-A. 去年
-B. 星期天
-C. 星期二
-D. 年
-Đáp án: B
-Lời giải: 星期天 đọc là xīngqī tiān, nghĩa là chủ nhật. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 189. Chọn phiên âm đúng của “星期天”.
-A. wǎnfàn
-B. jǐ
-C. xīngqī tiān
-D. chà
-Đáp án: C
-Lời giải: 星期天 đọc là xīngqī tiān, nghĩa là chủ nhật. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 190. Trong bài học, “星期日” có nghĩa là gì?
-A. ăn cơm
-B. chủ nhật
-C. nhất
-D. mời
-Đáp án: B
-Lời giải: 星期日 đọc là xīngqī rì, nghĩa là chủ nhật. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 191. Chọn chữ Hán có nghĩa “chủ nhật”.
-A. 差
-B. 星期日
-C. 上个星期
-D. 今年
-Đáp án: B
-Lời giải: 星期日 đọc là xīngqī rì, nghĩa là chủ nhật. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 192. Chọn phiên âm đúng của “星期日”.
-A. xīngqī rì
-B. zuótiān
-C. guo
-D. yǒu kòngr
-Đáp án: A
-Lời giải: 星期日 đọc là xīngqī rì, nghĩa là chủ nhật. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 193. Trong bài học, “周” có nghĩa là gì?
-A. tuần; cách gọi tuần, thứ
-B. tuần sau
-C. thứ ba
-D. lượng từ cho sự việc
-Đáp án: A
-Lời giải: 周 đọc là zhōu, nghĩa là tuần; cách gọi tuần, thứ. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 194. Chọn chữ Hán có nghĩa “tuần; cách gọi tuần, thứ”.
-A. 告诉
-B. 真的
-C. 周
-D. 年
-Đáp án: C
-Lời giải: 周 đọc là zhōu, nghĩa là tuần; cách gọi tuần, thứ. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 195. Chọn phiên âm đúng của “周”.
-A. hòutiān
-B. miǎo
-C. zhōu
-D. méi kòngr
-Đáp án: C
-Lời giải: 周 đọc là zhōu, nghĩa là tuần; cách gọi tuần, thứ. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 196. Trong bài học, “礼拜” có nghĩa là gì?
-A. sinh nhật
-B. trò chuyện, tán gẫu
-C. tuần; cách gọi tuần, thứ
-D. tháng sau
-Đáp án: C
-Lời giải: 礼拜 đọc là lǐbài, nghĩa là tuần; cách gọi tuần, thứ. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 197. Chọn chữ Hán có nghĩa “tuần; cách gọi tuần, thứ”.
-A. 礼拜
-B. 几
-C. 真
-D. 生日快乐
-Đáp án: A
-Lời giải: 礼拜 đọc là lǐbài, nghĩa là tuần; cách gọi tuần, thứ. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 198. Chọn phiên âm đúng của “礼拜”.
-A. xīngqī sān
-B. zhōngwǔ
-C. piàoliang
-D. lǐbài
-Đáp án: D
-Lời giải: 礼拜 đọc là lǐbài, nghĩa là tuần; cách gọi tuần, thứ. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 199. Trong bài học, “汉语课” có nghĩa là gì?
-A. tiết học tiếng Hán
-B. cà phê
-C. nói cho biết, bảo với
-D. sinh ra
-Đáp án: A
-Lời giải: 汉语课 đọc là Hànyǔ kè, nghĩa là tiết học tiếng Hán. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 200. Chọn chữ Hán có nghĩa “tiết học tiếng Hán”.
-A. 汉语课
-B. 蛋糕
-C. 星期二
-D. 今天
-Đáp án: A
-Lời giải: 汉语课 đọc là Hànyǔ kè, nghĩa là tiết học tiếng Hán. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 201. Chọn phiên âm đúng của “汉语课”.
-A. xīngqī liù
-B. zhēn
-C. Hànyǔ kè
-D. ménpiào
-Đáp án: C
-Lời giải: 汉语课 đọc là Hànyǔ kè, nghĩa là tiết học tiếng Hán. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Dễ
-Câu 202. Trong bài học, “漂亮” có nghĩa là gì?
-A. gặp
-B. tiếng, giờ đồng hồ; khoảng thời gian
-C. xinh đẹp
-D. bởi vì
-Đáp án: C
-Lời giải: 漂亮 đọc là piàoliang, nghĩa là xinh đẹp. Tham chiếu: PDF bài 8, trang 11.
-Độ khó: Dễ
-Câu 203. Chọn chữ Hán có nghĩa “xinh đẹp”.
-A. 告诉
-B. 漂亮
-C. 星期六
-D. 前天
-Đáp án: B
-Lời giải: 漂亮 đọc là piàoliang, nghĩa là xinh đẹp. Tham chiếu: PDF bài 8, trang 11.
-Độ khó: Dễ
-Câu 204. Chọn phiên âm đúng của “漂亮”.
-A. shàng ge yuè
-B. xuéxiào
-C. piàoliang
-D. diànshìjù
-Đáp án: C
-Lời giải: 漂亮 đọc là piàoliang, nghĩa là xinh đẹp. Tham chiếu: PDF bài 8, trang 11.
-Độ khó: Dễ
-Câu 205. Trong bài học, “真的” có nghĩa là gì?
-A. thật, thực sự
-B. nhất
-C. giây
-D. nói
-Đáp án: A
-Lời giải: 真的 đọc là zhēn de, nghĩa là thật, thực sự. Tham chiếu: PDF bài 8, trang 11.
-Độ khó: Dễ
-Câu 206. Chọn chữ Hán có nghĩa “thật, thực sự”.
-A. 真的
-B. 今年
-C. 件
+Câu 82. Chọn Hán tự có phiên âm “měi yuè” và nghĩa “Mỗi tháng”.
+A. 这个月
+B. 彩票
+C. 每月
 D. 下个月
-Đáp án: A
-Lời giải: 真的 đọc là zhēn de, nghĩa là thật, thực sự. Tham chiếu: PDF bài 8, trang 11.
-Độ khó: Dễ
-Câu 207. Chọn phiên âm đúng của “真的”.
-A. Hànyǔ kè
-B. lǐbài
-C. zhēn de
-D. fēn
 Đáp án: C
-Lời giải: 真的 đọc là zhēn de, nghĩa là thật, thực sự. Tham chiếu: PDF bài 8, trang 11.
+Lời giải: 每月 đọc là měi yuè, nghĩa là Mỗi tháng. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 487.
 Độ khó: Dễ
-Câu 208. Trong bài học, “假的” có nghĩa là gì?
-A. giả, không thật
-B. tuần sau
-C. tháng này
-D. hôm nay
-Đáp án: A
-Lời giải: 假的 đọc là jiǎ de, nghĩa là giả, không thật. Tham chiếu: PDF bài 8, trang 11.
+Câu 83. Trong bài học, “每年” có nghĩa là gì?
+A. Thật, thật là
+B. Hôm qua
+C. Gặp, nhìn thấy
+D. Mỗi năm
+Đáp án: D
+Lời giải: 每年 đọc là měi nián, nghĩa là Mỗi năm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 488.
 Độ khó: Dễ
-Câu 209. Chọn chữ Hán có nghĩa “giả, không thật”.
-A. 介绍
-B. 假的
-C. 请
-D. 星期一
+Câu 84. Chọn Hán tự có phiên âm “měi nián” và nghĩa “Mỗi năm”.
+A. 星期
+B. 出生
+C. 半
+D. 每年
+Đáp án: D
+Lời giải: 每年 đọc là měi nián, nghĩa là Mỗi năm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 488.
+Độ khó: Dễ
+Câu 85. Trong bài học, “上个星期” có nghĩa là gì?
+A. Nói cho, báo cho
+B. Năm ngoái
+C. Trời, ngày
+D. Tuần trước
+Đáp án: D
+Lời giải: 上个星期 đọc là shàng ge xīngqī, nghĩa là Tuần trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 489.
+Độ khó: Dễ
+Câu 86. Chọn Hán tự có phiên âm “shàng ge xīngqī” và nghĩa “Tuần trước”.
+A. 猪
+B. 上个星期
+C. 半
+D. 牛
 Đáp án: B
-Lời giải: 假的 đọc là jiǎ de, nghĩa là giả, không thật. Tham chiếu: PDF bài 8, trang 11.
+Lời giải: 上个星期 đọc là shàng ge xīngqī, nghĩa là Tuần trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 489.
 Độ khó: Dễ
-Câu 210. Chọn phiên âm đúng của “假的”.
-A. qǐng
-B. jiǎ de
-C. shēngrì
-D. wǎnshang
+Câu 87. Trong bài học, “这个星期” có nghĩa là gì?
+A. Khỉ
+B. Ba ngày sau
+C. Tuần này
+D. Sinh ra
+Đáp án: C
+Lời giải: 这个星期 đọc là zhè ge xīngqī, nghĩa là Tuần này. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 490.
+Độ khó: Dễ
+Câu 88. Chọn Hán tự có phiên âm “zhè ge xīngqī” và nghĩa “Tuần này”.
+A. 羊
+B. 蛇
+C. 这个星期
+D. 上个月
+Đáp án: C
+Lời giải: 这个星期 đọc là zhè ge xīngqī, nghĩa là Tuần này. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 490.
+Độ khó: Dễ
+Câu 89. Trong bài học, “下个星期” có nghĩa là gì?
+A. Nghỉ, nghỉ ngơi
+B. Thật, thật là
+C. Tuần sau
+D. Tháng sau
+Đáp án: C
+Lời giải: 下个星期 đọc là xià ge xīngqī, nghĩa là Tuần sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 491.
+Độ khó: Dễ
+Câu 90. Chọn Hán tự có phiên âm “xià ge xīngqī” và nghĩa “Tuần sau”.
+A. 猴子
+B. 下个星期
+C. 后年
+D. 半
 Đáp án: B
-Lời giải: 假的 đọc là jiǎ de, nghĩa là giả, không thật. Tham chiếu: PDF bài 8, trang 11.
+Lời giải: 下个星期 đọc là xià ge xīngqī, nghĩa là Tuần sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 491.
 Độ khó: Dễ
-Câu 211. Trong bài học, “件” có nghĩa là gì?
-A. lượng từ cho sự việc
-B. buổi chiều
-C. tháng
-D. bữa tối
+Câu 91. Trong bài học, “上个月” có nghĩa là gì?
+A. Tháng trước
+B. Trò chuyện
+C. Vé số
+D. Ngựa
 Đáp án: A
-Lời giải: 件 đọc là jiàn, nghĩa là lượng từ cho sự việc. Tham chiếu: PDF bài 8, trang 14.
+Lời giải: 上个月 đọc là shàng ge yuè, nghĩa là Tháng trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 492.
 Độ khó: Dễ
-Câu 212. Chọn chữ Hán có nghĩa “lượng từ cho sự việc”.
-A. 下个星期
-B. 件
-C. 星期二
+Câu 92. Chọn Hán tự có phiên âm “shàng ge yuè” và nghĩa “Tháng trước”.
+A. 老虎
+B. 门口
+C. 上个月
+D. 大后年
+Đáp án: C
+Lời giải: 上个月 đọc là shàng ge yuè, nghĩa là Tháng trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 492.
+Độ khó: Dễ
+Câu 93. Trong bài học, “这个月” có nghĩa là gì?
+A. Tại sao
+B. Mỗi tháng
+C. Tháng này
+D. Năm sau nữa
+Đáp án: C
+Lời giải: 这个月 đọc là zhè ge yuè, nghĩa là Tháng này. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 493.
+Độ khó: Dễ
+Câu 94. Chọn Hán tự có phiên âm “zhè ge yuè” và nghĩa “Tháng này”.
+A. 这个月
+B. 聊天
+C. 告诉
+D. 说话
+Đáp án: A
+Lời giải: 这个月 đọc là zhè ge yuè, nghĩa là Tháng này. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 493.
+Độ khó: Dễ
+Câu 95. Trong bài học, “下个月” có nghĩa là gì?
+A. Năm sau
+B. Tháng sau
+C. Ngày mai
+D. Tại sao
+Đáp án: B
+Lời giải: 下个月 đọc là xià ge yuè, nghĩa là Tháng sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 494.
+Độ khó: Dễ
+Câu 96. Chọn Hán tự có phiên âm “xià ge yuè” và nghĩa “Tháng sau”.
+A. 星期日
+B. 事
+C. 快乐
+D. 下个月
+Đáp án: D
+Lời giải: 下个月 đọc là xià ge yuè, nghĩa là Tháng sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 494.
+Độ khó: Dễ
+Câu 97. Trong bài học, “前年” có nghĩa là gì?
+A. Thứ Hai
+B. Nửa
+C. Năm kia
+D. Thuộc về, cầm tinh
+Đáp án: C
+Lời giải: 前年 đọc là qiánnián, nghĩa là Năm kia. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 495.
+Độ khó: Dễ
+Câu 98. Chọn Hán tự có phiên âm “qiánnián” và nghĩa “Năm kia”.
+A. 上个月
+B. 前年
+C. 月
+D. 牛
+Đáp án: B
+Lời giải: 前年 đọc là qiánnián, nghĩa là Năm kia. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 495.
+Độ khó: Dễ
+Câu 99. Trong bài học, “去年” có nghĩa là gì?
+A. Năm ngoái
+B. Nghỉ, nghỉ ngơi
+C. Bởi vì
+D. Ngày mai
+Đáp án: A
+Lời giải: 去年 đọc là qùnián, nghĩa là Năm ngoái. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 496.
+Độ khó: Dễ
+Câu 100. Chọn Hán tự có phiên âm “qùnián” và nghĩa “Năm ngoái”.
+A. 为什么
+B. 礼拜
+C. 前天
+D. 去年
+Đáp án: D
+Lời giải: 去年 đọc là qùnián, nghĩa là Năm ngoái. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 496.
+Độ khó: Dễ
+Câu 101. Trong bài học, “今年” có nghĩa là gì?
+A. Năm nay
+B. Vé vào cửa
+C. Ngày mai
+D. Thứ Sáu
+Đáp án: A
+Lời giải: 今年 đọc là jīnnián, nghĩa là Năm nay. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 497.
+Độ khó: Dễ
+Câu 102. Chọn Hán tự có phiên âm “jīnnián” và nghĩa “Năm nay”.
+A. 今年
+B. 星期五
+C. 每
+D. 星期天
+Đáp án: A
+Lời giải: 今年 đọc là jīnnián, nghĩa là Năm nay. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 497.
+Độ khó: Dễ
+Câu 103. Trong bài học, “明年” có nghĩa là gì?
+A. Năm sau
+B. Nói chuyện
+C. Nhất
+D. Nói
+Đáp án: A
+Lời giải: 明年 đọc là míngnián, nghĩa là Năm sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 498.
+Độ khó: Dễ
+Câu 104. Chọn Hán tự có phiên âm “míngnián” và nghĩa “Năm sau”.
+A. 蛋糕
+B. 前年
+C. 真
+D. 明年
+Đáp án: D
+Lời giải: 明年 đọc là míngnián, nghĩa là Năm sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 498.
+Độ khó: Dễ
+Câu 105. Trong bài học, “后年” có nghĩa là gì?
+A. Gà
+B. Một khắc, 15 phút
+C. Năm sau nữa
+D. Ngày kia
+Đáp án: C
+Lời giải: 后年 đọc là hòunián, nghĩa là Năm sau nữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 499.
+Độ khó: Dễ
+Câu 106. Chọn Hán tự có phiên âm “hòunián” và nghĩa “Năm sau nữa”.
+A. 上个月
+B. 后年
+C. 星期
+D. 每年
+Đáp án: B
+Lời giải: 后年 đọc là hòunián, nghĩa là Năm sau nữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 499.
+Độ khó: Dễ
+Câu 107. Trong bài học, “大前年” có nghĩa là gì?
+A. Tháng trước
+B. Năm ngoái
+C. Ba năm trước
+D. Năm sau nữa
+Đáp án: C
+Lời giải: 大前年 đọc là dàqiánnián, nghĩa là Ba năm trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 500.
+Độ khó: Dễ
+Câu 108. Chọn Hán tự có phiên âm “dàqiánnián” và nghĩa “Ba năm trước”.
+A. 一刻
+B. 大前年
+C. 星期四
+D. 每天
+Đáp án: B
+Lời giải: 大前年 đọc là dàqiánnián, nghĩa là Ba năm trước. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 500.
+Độ khó: Dễ
+Câu 109. Trong bài học, “大后年” có nghĩa là gì?
+A. Thứ Tư
+B. Việc, chuyện
+C. Nói
+D. Ba năm sau
+Đáp án: D
+Lời giải: 大后年 đọc là dàhòunián, nghĩa là Ba năm sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 501.
+Độ khó: Dễ
+Câu 110. Chọn Hán tự có phiên âm “dàhòunián” và nghĩa “Ba năm sau”.
+A. 大前年
+B. 大后年
+C. 今年
 D. 上个月
 Đáp án: B
-Lời giải: 件 đọc là jiàn, nghĩa là lượng từ cho sự việc. Tham chiếu: PDF bài 8, trang 14.
+Lời giải: 大后年 đọc là dàhòunián, nghĩa là Ba năm sau. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 501.
 Độ khó: Dễ
-Câu 213. Chọn phiên âm đúng của “件”.
-A. jiàn
-B. shēngrì
-C. dàngāo
-D. méi kòngr
-Đáp án: A
-Lời giải: 件 đọc là jiàn, nghĩa là lượng từ cho sự việc. Tham chiếu: PDF bài 8, trang 14.
-Độ khó: Dễ
-Câu 214. Trong bài học, “没空儿” có nghĩa là gì?
-A. bởi vì
-B. tuần này
-C. không rảnh
-D. tháng trước
-Đáp án: C
-Lời giải: 没空儿 đọc là méi kòngr, nghĩa là không rảnh. Tham chiếu: PDF bài 8, trang 15.
-Độ khó: Dễ
-Câu 215. Chọn chữ Hán có nghĩa “không rảnh”.
-A. 礼拜
-B. 下个月
-C. 假的
-D. 没空儿
-Đáp án: D
-Lời giải: 没空儿 đọc là méi kòngr, nghĩa là không rảnh. Tham chiếu: PDF bài 8, trang 15.
-Độ khó: Dễ
-Câu 216. Chọn phiên âm đúng của “没空儿”.
-A. méi kòngr
-B. xīngqī sì
-C. kāfēi
-D. lǐbài
-Đáp án: A
-Lời giải: 没空儿 đọc là méi kòngr, nghĩa là không rảnh. Tham chiếu: PDF bài 8, trang 15.
-Độ khó: Dễ
-Câu 217. Trong bài học, “晚饭” có nghĩa là gì?
-A. thứ bảy
-B. bữa tối
-C. nói cho biết, bảo với
-D. phim ngắn
+Câu 111. Trong bài học, “星期一” có nghĩa là gì?
+A. Tháng trước
+B. Thứ Hai
+C. Lợn, heo
+D. Vé số
 Đáp án: B
-Lời giải: 晚饭 đọc là wǎnfàn, nghĩa là bữa tối. Tham chiếu: PDF bài 8, trang 15.
+Lời giải: 星期一 đọc là xīngqīyī, nghĩa là Thứ Hai. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 505.
 Độ khó: Dễ
-Câu 218. Chọn chữ Hán có nghĩa “bữa tối”.
-A. 快乐
-B. 刻
-C. 告诉
-D. 晚饭
-Đáp án: D
-Lời giải: 晚饭 đọc là wǎnfàn, nghĩa là bữa tối. Tham chiếu: PDF bài 8, trang 15.
-Độ khó: Dễ
-Câu 219. Chọn phiên âm đúng của “晚饭”.
-A. shì
-B. wǎnfàn
-C. kāfēi
-D. jīnnián
+Câu 112. Chọn Hán tự có phiên âm “xīngqīyī” và nghĩa “Thứ Hai”.
+A. 几
+B. 星期一
+C. 龙
+D. 明天
 Đáp án: B
-Lời giải: 晚饭 đọc là wǎnfàn, nghĩa là bữa tối. Tham chiếu: PDF bài 8, trang 15.
+Lời giải: 星期一 đọc là xīngqīyī, nghĩa là Thứ Hai. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 505.
 Độ khó: Dễ
-Câu 220. Trong bài học, “短剧” có nghĩa là gì?
-A. ngày mai
-B. phút
-C. tiếng, giờ đồng hồ; khoảng thời gian
-D. phim ngắn
-Đáp án: D
-Lời giải: 短剧 đọc là duǎnjù, nghĩa là phim ngắn. Tham chiếu: PDF bài 8, trang 17.
-Độ khó: Dễ
-Câu 221. Chọn chữ Hán có nghĩa “phim ngắn”.
-A. 刻
-B. 后天
-C. 短剧
-D. 日
-Đáp án: C
-Lời giải: 短剧 đọc là duǎnjù, nghĩa là phim ngắn. Tham chiếu: PDF bài 8, trang 17.
-Độ khó: Dễ
-Câu 222. Chọn phiên âm đúng của “短剧”.
-A. wèishénme
-B. qiánnián
-C. xīngqī rì
-D. duǎnjù
-Đáp án: D
-Lời giải: 短剧 đọc là duǎnjù, nghĩa là phim ngắn. Tham chiếu: PDF bài 8, trang 17.
-Độ khó: Dễ
-Câu 223. Trong bài học, “门票” có nghĩa là gì?
-A. chúc mừng sinh nhật
-B. không rảnh
-C. tuần trước
-D. vé vào cửa
-Đáp án: D
-Lời giải: 门票 đọc là ménpiào, nghĩa là vé vào cửa. Tham chiếu: PDF bài 8, trang 17.
-Độ khó: Dễ
-Câu 224. Chọn chữ Hán có nghĩa “vé vào cửa”.
-A. 门口
-B. 门票
-C. 吃饭
-D. 每
+Câu 113. Trong bài học, “星期二” có nghĩa là gì?
+A. Giờ, điểm
+B. Thứ Ba
+C. Ngày kia
+D. Tuần trước
 Đáp án: B
-Lời giải: 门票 đọc là ménpiào, nghĩa là vé vào cửa. Tham chiếu: PDF bài 8, trang 17.
+Lời giải: 星期二 đọc là xīngqī'èr, nghĩa là Thứ Ba. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 506.
 Độ khó: Dễ
-Câu 225. Chọn phiên âm đúng của “门票”.
-A. wǎnfàn
-B. xiǎoshí
-C. ménpiào
-D. xīngqī rì
-Đáp án: C
-Lời giải: 门票 đọc là ménpiào, nghĩa là vé vào cửa. Tham chiếu: PDF bài 8, trang 17.
-Độ khó: Dễ
-Câu 226. Trong bài học, “彩票” có nghĩa là gì?
-A. vé số
-B. giới thiệu
-C. tại sao
-D. buổi chiều
-Đáp án: A
-Lời giải: 彩票 đọc là cǎipiào, nghĩa là vé số. Tham chiếu: PDF bài 8, trang 17.
-Độ khó: Dễ
-Câu 227. Chọn chữ Hán có nghĩa “vé số”.
-A. 明年
-B. 生日快乐
-C. 彩票
-D. 请
-Đáp án: C
-Lời giải: 彩票 đọc là cǎipiào, nghĩa là vé số. Tham chiếu: PDF bài 8, trang 17.
-Độ khó: Dễ
-Câu 228. Chọn phiên âm đúng của “彩票”.
-A. duǎnjù
-B. jīnnián
-C. cǎipiào
-D. shì
-Đáp án: C
-Lời giải: 彩票 đọc là cǎipiào, nghĩa là vé số. Tham chiếu: PDF bài 8, trang 17.
-Độ khó: Dễ
-Câu 229. Trong bài học, “日” có nghĩa là gì?
-A. thứ tư
-B. chúc mừng sinh nhật
-C. rảnh, có thời gian
-D. ngày trong tháng, cách nói trang trọng
-Đáp án: D
-Lời giải: 日 đọc là rì, nghĩa là ngày trong tháng, cách nói trang trọng. Tham chiếu: PDF bài 8, trang 21.
-Độ khó: Dễ
-Câu 230. Chọn chữ Hán có nghĩa “ngày trong tháng, cách nói trang trọng”.
-A. 日
-B. 今天
-C. 下个星期
-D. 看电影
-Đáp án: A
-Lời giải: 日 đọc là rì, nghĩa là ngày trong tháng, cách nói trang trọng. Tham chiếu: PDF bài 8, trang 21.
-Độ khó: Dễ
-Câu 231. Chọn phiên âm đúng của “日”.
-A. diànshìjù
-B. rì
-C. shuō
-D. qiántiān
+Câu 114. Chọn Hán tự có phiên âm “xīngqī'èr” và nghĩa “Thứ Ba”.
+A. 星期日
+B. 星期二
+C. 差
+D. 天
 Đáp án: B
-Lời giải: 日 đọc là rì, nghĩa là ngày trong tháng, cách nói trang trọng. Tham chiếu: PDF bài 8, trang 21.
+Lời giải: 星期二 đọc là xīngqī'èr, nghĩa là Thứ Ba. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 506.
 Độ khó: Dễ
-Câu 232. Trong bài học, “早上” có nghĩa là gì?
-A. buổi sáng sớm
-B. nửa, rưỡi
-C. bữa tối
-D. giây
+Câu 115. Trong bài học, “星期三” có nghĩa là gì?
+A. Thứ Tư
+B. Ngựa
+C. Ba năm sau
+D. Bởi vì
 Đáp án: A
-Lời giải: 早上 đọc là zǎoshang, nghĩa là buổi sáng sớm. Tham chiếu: PDF bài 8, trang 23.
+Lời giải: 星期三 đọc là xīngqīsān, nghĩa là Thứ Tư. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 507.
 Độ khó: Dễ
-Câu 233. Chọn chữ Hán có nghĩa “buổi sáng sớm”.
+Câu 116. Chọn Hán tự có phiên âm “xīngqīsān” và nghĩa “Thứ Tư”.
+A. 每
+B. 昨天
+C. 蛇
+D. 星期三
+Đáp án: D
+Lời giải: 星期三 đọc là xīngqīsān, nghĩa là Thứ Tư. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 507.
+Độ khó: Dễ
+Câu 117. Trong bài học, “星期四” có nghĩa là gì?
+A. Tháng này
+B. Cửa ra vào
+C. Thứ Năm
+D. Năm
+Đáp án: C
+Lời giải: 星期四 đọc là xīngqīsì, nghĩa là Thứ Năm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 508.
+Độ khó: Dễ
+Câu 118. Chọn Hán tự có phiên âm “xīngqīsì” và nghĩa “Thứ Năm”.
+A. 星期四
+B. 聊天
+C. 鸡
+D. 尝
+Đáp án: A
+Lời giải: 星期四 đọc là xīngqīsì, nghĩa là Thứ Năm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 508.
+Độ khó: Dễ
+Câu 119. Trong bài học, “星期五” có nghĩa là gì?
+A. Chó
+B. Thứ Sáu
+C. Nói cho, báo cho
+D. Không quá, không được… lắm
+Đáp án: B
+Lời giải: 星期五 đọc là xīngqīwǔ, nghĩa là Thứ Sáu. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 509.
+Độ khó: Dễ
+Câu 120. Chọn Hán tự có phiên âm “xīngqīwǔ” và nghĩa “Thứ Sáu”.
+A. 说
+B. 星期五
+C. 门票
+D. 见
+Đáp án: B
+Lời giải: 星期五 đọc là xīngqīwǔ, nghĩa là Thứ Sáu. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 509.
+Độ khó: Dễ
+Câu 121. Trong bài học, “星期六” có nghĩa là gì?
+A. Tuần trước
+B. Thứ Bảy
+C. Nói
+D. Quá…
+Đáp án: B
+Lời giải: 星期六 đọc là xīngqīliù, nghĩa là Thứ Bảy. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 510.
+Độ khó: Dễ
+Câu 122. Chọn Hán tự có phiên âm “xīngqīliù” và nghĩa “Thứ Bảy”.
+A. 星期六
+B. 每天
+C. 星期三
+D. 牛
+Đáp án: A
+Lời giải: 星期六 đọc là xīngqīliù, nghĩa là Thứ Bảy. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 510.
+Độ khó: Dễ
+Câu 123. Trong bài học, “星期日” có nghĩa là gì?
+A. Đã từng (trợ từ kinh nghiệm)
+B. Chủ nhật
+C. Quá…
+D. Phim ngắn, kịch ngắn
+Đáp án: B
+Lời giải: 星期日 đọc là xīngqīrì, nghĩa là Chủ nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 511.
+Độ khó: Dễ
+Câu 124. Chọn Hán tự có phiên âm “xīngqīrì” và nghĩa “Chủ nhật”.
+A. 星期日
+B. 这个星期
+C. 电视剧
+D. 每天
+Đáp án: A
+Lời giải: 星期日 đọc là xīngqīrì, nghĩa là Chủ nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 511.
+Độ khó: Dễ
+Câu 125. Trong bài học, “星期天” có nghĩa là gì?
+A. Thứ Tư
+B. Chúc mừng sinh nhật
+C. Tuần sau
+D. Chủ nhật
+Đáp án: D
+Lời giải: 星期天 đọc là xīngqītiān, nghĩa là Chủ nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 512.
+Độ khó: Dễ
+Câu 126. Chọn Hán tự có phiên âm “xīngqītiān” và nghĩa “Chủ nhật”.
 A. 星期二
+B. 聊天
+C. 事
+D. 星期天
+Đáp án: D
+Lời giải: 星期天 đọc là xīngqītiān, nghĩa là Chủ nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 512.
+Độ khó: Dễ
+Câu 127. Trong bài học, “礼拜” có nghĩa là gì?
+A. Giờ, điểm
+B. Tuần, thứ
+C. Xem phim
+D. Hổ
+Đáp án: B
+Lời giải: 礼拜 đọc là lǐbài, nghĩa là Tuần, thứ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 513.
+Độ khó: Dễ
+Câu 128. Chọn Hán tự có phiên âm “lǐbài” và nghĩa “Tuần, thứ”.
+A. 生日快乐
+B. 礼拜
+C. 前年
+D. 这个月
+Đáp án: B
+Lời giải: 礼拜 đọc là lǐbài, nghĩa là Tuần, thứ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 513.
+Độ khó: Dễ
+Câu 129. Trong bài học, “半” có nghĩa là gì?
+A. Hôm qua
+B. Phút
+C. Nếm, thử
+D. Nửa
+Đáp án: D
+Lời giải: 半 đọc là bàn, nghĩa là Nửa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 517.
+Độ khó: Dễ
+Câu 130. Chọn Hán tự có phiên âm “bàn” và nghĩa “Nửa”.
+A. 半
+B. 马
+C. 为什么
+D. 说
+Đáp án: A
+Lời giải: 半 đọc là bàn, nghĩa là Nửa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 517.
+Độ khó: Dễ
+Câu 131. Trong bài học, “一刻” có nghĩa là gì?
+A. Một khắc, 15 phút
+B. Tại sao
+C. Sinh ra
+D. Tháng trước
+Đáp án: A
+Lời giải: 一刻 đọc là yí kè, nghĩa là Một khắc, 15 phút. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 518.
+Độ khó: Dễ
+Câu 132. Chọn Hán tự có phiên âm “yí kè” và nghĩa “Một khắc, 15 phút”.
+A. 蛇
+B. 年
+C. 几
+D. 一刻
+Đáp án: D
+Lời giải: 一刻 đọc là yí kè, nghĩa là Một khắc, 15 phút. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 518.
+Độ khó: Dễ
+Câu 133. Trong bài học, “说话” có nghĩa là gì?
+A. Đã từng (trợ từ kinh nghiệm)
+B. Nói chuyện
+C. Một khắc, 15 phút
+D. Nghỉ, nghỉ ngơi
+Đáp án: B
+Lời giải: 说话 đọc là shuōhuà, nghĩa là Nói chuyện. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 519.
+Độ khó: Dễ
+Câu 134. Chọn Hán tự có phiên âm “shuōhuà” và nghĩa “Nói chuyện”.
+A. 说话
+B. 星期日
+C. 明年
+D. 大前天
+Đáp án: A
+Lời giải: 说话 đọc là shuōhuà, nghĩa là Nói chuyện. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 519.
+Độ khó: Dễ
+Câu 135. Trong bài học, “因为” có nghĩa là gì?
+A. Hôm qua
+B. Ba ngày sau
+C. Năm nay
+D. Bởi vì
+Đáp án: D
+Lời giải: 因为 đọc là yīnwèi, nghĩa là Bởi vì. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 520.
+Độ khó: Dễ
+Câu 136. Chọn Hán tự có phiên âm “yīnwèi” và nghĩa “Bởi vì”.
+A. 上个星期
+B. 为什么
+C. 事
+D. 因为
+Đáp án: D
+Lời giải: 因为 đọc là yīnwèi, nghĩa là Bởi vì. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 520.
+Độ khó: Dễ
+Câu 137. Trong bài học, “不太” có nghĩa là gì?
+A. Việc, chuyện
+B. Không quá, không được… lắm
+C. Hổ
+D. Tuần trước
+Đáp án: B
+Lời giải: 不太 đọc là bú tài, nghĩa là Không quá, không được… lắm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 521.
+Độ khó: Dễ
+Câu 138. Chọn Hán tự có phiên âm “bú tài” và nghĩa “Không quá, không được… lắm”.
+A. 大后天
+B. 不太
+C. 门票
+D. 牛
+Đáp án: B
+Lời giải: 不太 đọc là bú tài, nghĩa là Không quá, không được… lắm. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 521.
+Độ khó: Dễ
+Câu 139. Trong bài học, “生日快乐” có nghĩa là gì?
+A. Rảnh, có thời gian
+B. Thứ Hai
+C. Một khắc, 15 phút
+D. Chúc mừng sinh nhật
+Đáp án: D
+Lời giải: 生日快乐 đọc là shēngrì kuàilè, nghĩa là Chúc mừng sinh nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 522.
+Độ khó: Dễ
+Câu 140. Chọn Hán tự có phiên âm “shēngrì kuàilè” và nghĩa “Chúc mừng sinh nhật”.
+A. 羊
+B. 猪
+C. 每天
+D. 生日快乐
+Đáp án: D
+Lời giải: 生日快乐 đọc là shēngrì kuàilè, nghĩa là Chúc mừng sinh nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 522.
+Độ khó: Dễ
+Câu 141. Trong bài học, “短剧” có nghĩa là gì?
+A. Rảnh, có thời gian
+B. Bởi vì
+C. Phim ngắn, kịch ngắn
+D. Lợn, heo
+Đáp án: C
+Lời giải: 短剧 đọc là duǎnjù, nghĩa là Phim ngắn, kịch ngắn. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 523.
+Độ khó: Dễ
+Câu 142. Chọn Hán tự có phiên âm “duǎnjù” và nghĩa “Phim ngắn, kịch ngắn”.
+A. 礼拜
+B. 一刻
+C. 短剧
+D. 介绍
+Đáp án: C
+Lời giải: 短剧 đọc là duǎnjù, nghĩa là Phim ngắn, kịch ngắn. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 523.
+Độ khó: Dễ
+Câu 143. Trong bài học, “门票” có nghĩa là gì?
+A. Tuần này
+B. Năm sau
+C. Vé vào cửa
+D. Năm
+Đáp án: C
+Lời giải: 门票 đọc là ménpiào, nghĩa là Vé vào cửa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 524.
+Độ khó: Dễ
+Câu 144. Chọn Hán tự có phiên âm “ménpiào” và nghĩa “Vé vào cửa”.
+A. 大前年
+B. 门票
+C. 龙
+D. 为什么
+Đáp án: B
+Lời giải: 门票 đọc là ménpiào, nghĩa là Vé vào cửa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 524.
+Độ khó: Dễ
+Câu 145. Trong bài học, “彩票” có nghĩa là gì?
+A. Giờ, điểm
+B. Vé số
+C. Ngày kia
+D. Gà
+Đáp án: B
+Lời giải: 彩票 đọc là cǎipiào, nghĩa là Vé số. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 525.
+Độ khó: Dễ
+Câu 146. Chọn Hán tự có phiên âm “cǎipiào” và nghĩa “Vé số”.
+A. 彩票
+B. 下个星期
+C. 门票
+D. 每年
+Đáp án: A
+Lời giải: 彩票 đọc là cǎipiào, nghĩa là Vé số. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 525.
+Độ khó: Dễ
+Câu 147. Trong bài học, “看电影” có nghĩa là gì?
+A. Khỉ
+B. Xem phim
+C. Năm sau nữa
+D. Tháng sau
+Đáp án: B
+Lời giải: 看电影 đọc là kàn diànyǐng, nghĩa là Xem phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 526.
+Độ khó: Dễ
+Câu 148. Chọn Hán tự có phiên âm “kàn diànyǐng” và nghĩa “Xem phim”.
+A. 看电影
+B. 生日快乐
+C. 前年
+D. 猪
+Đáp án: A
+Lời giải: 看电影 đọc là kàn diànyǐng, nghĩa là Xem phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 526.
+Độ khó: Dễ
+Câu 149. Trong bài học, “老鼠” có nghĩa là gì?
+A. Chuột
+B. Dê
+C. Rồng
+D. Quá…
+Đáp án: A
+Lời giải: 老鼠 đọc là lǎoshǔ, nghĩa là Chuột. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 530.
+Độ khó: Dễ
+Câu 150. Chọn Hán tự có phiên âm “lǎoshǔ” và nghĩa “Chuột”.
+A. 兔子
+B. 生日
+C. 老鼠
+D. 门票
+Đáp án: C
+Lời giải: 老鼠 đọc là lǎoshǔ, nghĩa là Chuột. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 530.
+Độ khó: Dễ
+Câu 151. Trong bài học, “牛” có nghĩa là gì?
+A. Ba năm trước
+B. Trâu, bò
+C. Rắn
+D. Kém, thiếu
+Đáp án: B
+Lời giải: 牛 đọc là niú, nghĩa là Trâu, bò. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 531.
+Độ khó: Dễ
+Câu 152. Chọn Hán tự có phiên âm “niú” và nghĩa “Trâu, bò”.
+A. 尝
+B. 牛
+C. 星期四
+D. 事
+Đáp án: B
+Lời giải: 牛 đọc là niú, nghĩa là Trâu, bò. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 531.
+Độ khó: Dễ
+Câu 153. Trong bài học, “老虎” có nghĩa là gì?
+A. Thứ Năm
+B. Tuần trước
+C. Thứ Tư
+D. Hổ
+Đáp án: D
+Lời giải: 老虎 đọc là lǎohǔ, nghĩa là Hổ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 532.
+Độ khó: Dễ
+Câu 154. Chọn Hán tự có phiên âm “lǎohǔ” và nghĩa “Hổ”.
+A. 半
+B. 明天
+C. 下个星期
+D. 老虎
+Đáp án: D
+Lời giải: 老虎 đọc là lǎohǔ, nghĩa là Hổ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 532.
+Độ khó: Dễ
+Câu 155. Trong bài học, “兔子” có nghĩa là gì?
+A. Thật, thật là
+B. Nghỉ, nghỉ ngơi
+C. Nói chuyện
+D. Thỏ
+Đáp án: D
+Lời giải: 兔子 đọc là tùzi, nghĩa là Thỏ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 533.
+Độ khó: Dễ
+Câu 156. Chọn Hán tự có phiên âm “tùzi” và nghĩa “Thỏ”.
+A. 去年
+B. 今年
+C. 兔子
+D. 点
+Đáp án: C
+Lời giải: 兔子 đọc là tùzi, nghĩa là Thỏ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 533.
+Độ khó: Dễ
+Câu 157. Trong bài học, “龙” có nghĩa là gì?
+A. Rồng
+B. Tuần, thứ
+C. Hôm nay
+D. Ngựa
+Đáp án: A
+Lời giải: 龙 đọc là lóng, nghĩa là Rồng. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 534.
+Độ khó: Dễ
+Câu 158. Chọn Hán tự có phiên âm “lóng” và nghĩa “Rồng”.
+A. 龙
+B. 事
+C. 点
+D. 聊天
+Đáp án: A
+Lời giải: 龙 đọc là lóng, nghĩa là Rồng. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 534.
+Độ khó: Dễ
+Câu 159. Trong bài học, “蛇” có nghĩa là gì?
+A. Trò chuyện
+B. Rắn
+C. Vui vẻ
+D. Hôm nay
+Đáp án: B
+Lời giải: 蛇 đọc là shé, nghĩa là Rắn. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 535.
+Độ khó: Dễ
+Câu 160. Chọn Hán tự có phiên âm “shé” và nghĩa “Rắn”.
+A. 蛇
+B. 有空儿
+C. 下个月
+D. 大后年
+Đáp án: A
+Lời giải: 蛇 đọc là shé, nghĩa là Rắn. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 535.
+Độ khó: Dễ
+Câu 161. Trong bài học, “马” có nghĩa là gì?
+A. Bởi vì
+B. Ngựa
+C. Chủ nhật
+D. Năm nay
+Đáp án: B
+Lời giải: 马 đọc là mǎ, nghĩa là Ngựa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 536.
+Độ khó: Dễ
+Câu 162. Chọn Hán tự có phiên âm “mǎ” và nghĩa “Ngựa”.
+A. 马
+B. 每年
+C. 太……了
+D. 礼拜
+Đáp án: A
+Lời giải: 马 đọc là mǎ, nghĩa là Ngựa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 536.
+Độ khó: Dễ
+Câu 163. Trong bài học, “羊” có nghĩa là gì?
+A. Rảnh, có thời gian
+B. Ngựa
+C. Dê
+D. Cửa ra vào
+Đáp án: C
+Lời giải: 羊 đọc là yáng, nghĩa là Dê. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 537.
+Độ khó: Dễ
+Câu 164. Chọn Hán tự có phiên âm “yáng” và nghĩa “Dê”.
+A. 星期三
+B. 上个星期
+C. 羊
+D. 说
+Đáp án: C
+Lời giải: 羊 đọc là yáng, nghĩa là Dê. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 537.
+Độ khó: Dễ
+Câu 165. Trong bài học, “猴子” có nghĩa là gì?
+A. Quá…
+B. Mỗi
+C. Vé số
+D. Khỉ
+Đáp án: D
+Lời giải: 猴子 đọc là hóuzi, nghĩa là Khỉ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 538.
+Độ khó: Dễ
+Câu 166. Chọn Hán tự có phiên âm “hóuzi” và nghĩa “Khỉ”.
+A. 猴子
+B. 每月
+C. 差
+D. 月
+Đáp án: A
+Lời giải: 猴子 đọc là hóuzi, nghĩa là Khỉ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 538.
+Độ khó: Dễ
+Câu 167. Trong bài học, “鸡” có nghĩa là gì?
+A. Nói cho, báo cho
+B. Gà
+C. Hôm nay
+D. Tháng trước
+Đáp án: B
+Lời giải: 鸡 đọc là jī, nghĩa là Gà. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 539.
+Độ khó: Dễ
+Câu 168. Chọn Hán tự có phiên âm “jī” và nghĩa “Gà”.
+A. 去年
+B. 鸡
+C. 老虎
+D. 兔子
+Đáp án: B
+Lời giải: 鸡 đọc là jī, nghĩa là Gà. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 539.
+Độ khó: Dễ
+Câu 169. Trong bài học, “狗” có nghĩa là gì?
+A. Năm sau
+B. Thứ Sáu
+C. Thỏ
+D. Chó
+Đáp án: D
+Lời giải: 狗 đọc là gǒu, nghĩa là Chó. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 540.
+Độ khó: Dễ
+Câu 170. Chọn Hán tự có phiên âm “gǒu” và nghĩa “Chó”.
+A. 狗
 B. 小时
-C. 星期天
-D. 早上
+C. 有空儿
+D. 兔子
+Đáp án: A
+Lời giải: 狗 đọc là gǒu, nghĩa là Chó. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 540.
+Độ khó: Dễ
+Câu 171. Trong bài học, “猪” có nghĩa là gì?
+A. Trâu, bò
+B. Ngựa
+C. Lợn, heo
+D. Tháng trước
+Đáp án: C
+Lời giải: 猪 đọc là zhū, nghĩa là Lợn, heo. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 541.
+Độ khó: Dễ
+Câu 172. Chọn Hán tự có phiên âm “zhū” và nghĩa “Lợn, heo”.
+A. 星期
+B. 猪
+C. 门口
+D. 月
+Đáp án: B
+Lời giải: 猪 đọc là zhū, nghĩa là Lợn, heo. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 541.
+Độ khó: Dễ
+Câu 173. Chọn phiên âm đúng của “龙” với nghĩa “Rồng”.
+A. yí kè
+B. gàosu
+C. lóng
+D. zhè ge yuè
+Đáp án: C
+Lời giải: 龙 đọc là lóng, nghĩa là Rồng. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 534.
+Độ khó: Dễ
+Câu 174. Chọn phiên âm đúng của “蛇” với nghĩa “Rắn”.
+A. shé
+B. dàhòunián
+C. xīngqīliù
+D. shì
+Đáp án: A
+Lời giải: 蛇 đọc là shé, nghĩa là Rắn. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 535.
+Độ khó: Dễ
+Câu 175. Chọn phiên âm đúng của “马” với nghĩa “Ngựa”.
+A. chà
+B. zhēn
+C. yuè
+D. mǎ
 Đáp án: D
-Lời giải: 早上 đọc là zǎoshang, nghĩa là buổi sáng sớm. Tham chiếu: PDF bài 8, trang 23.
+Lời giải: 马 đọc là mǎ, nghĩa là Ngựa. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 536.
 Độ khó: Dễ
-Câu 234. Chọn phiên âm đúng của “早上”.
-A. zuì
-B. qiánnián
-C. zǎoshang
-D. jiàn
-Đáp án: C
-Lời giải: 早上 đọc là zǎoshang, nghĩa là buổi sáng sớm. Tham chiếu: PDF bài 8, trang 23.
+Câu 176. Chọn phiên âm đúng của “羊” với nghĩa “Dê”.
+A. duǎnjù
+B. yáng
+C. qiántiān
+D. diǎn
+Đáp án: B
+Lời giải: 羊 đọc là yáng, nghĩa là Dê. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 537.
 Độ khó: Dễ
-Câu 235. Trong bài học, “中午” có nghĩa là gì?
-A. buổi chiều
-B. nếm, thử vị
-C. buổi trưa
-D. ngày mai
-Đáp án: C
-Lời giải: 中午 đọc là zhōngwǔ, nghĩa là buổi trưa. Tham chiếu: PDF bài 8, trang 23.
-Độ khó: Dễ
-Câu 236. Chọn chữ Hán có nghĩa “buổi trưa”.
-A. 中午
-B. 天
-C. 后年
-D. 汉语课
+Câu 177. Chọn phiên âm đúng của “猴子” với nghĩa “Khỉ”.
+A. hóuzi
+B. tùzi
+C. měi
+D. xīngqīyī
 Đáp án: A
-Lời giải: 中午 đọc là zhōngwǔ, nghĩa là buổi trưa. Tham chiếu: PDF bài 8, trang 23.
+Lời giải: 猴子 đọc là hóuzi, nghĩa là Khỉ. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 538.
 Độ khó: Dễ
-Câu 237. Chọn phiên âm đúng của “中午”.
-A. shàng ge yuè
-B. měinián
-C. zhōngwǔ
-D. wǎnfàn
+Câu 178. Chọn phiên âm đúng của “鸡” với nghĩa “Gà”.
+A. xià ge yuè
+B. tùzi
+C. jī
+D. mǎ
 Đáp án: C
-Lời giải: 中午 đọc là zhōngwǔ, nghĩa là buổi trưa. Tham chiếu: PDF bài 8, trang 23.
+Lời giải: 鸡 đọc là jī, nghĩa là Gà. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 539.
 Độ khó: Dễ
-Câu 238. Trong bài học, “下午” có nghĩa là gì?
-A. hôm nay
-B. bánh kem
-C. buổi chiều
-D. không rảnh
+Câu 179. Chọn phiên âm đúng của “狗” với nghĩa “Chó”.
+A. kuàilè
+B. shàng ge yuè
+C. gǒu
+D. lǎoshǔ
 Đáp án: C
-Lời giải: 下午 đọc là xiàwǔ, nghĩa là buổi chiều. Tham chiếu: PDF bài 8, trang 23.
+Lời giải: 狗 đọc là gǒu, nghĩa là Chó. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 540.
 Độ khó: Dễ
-Câu 239. Chọn chữ Hán có nghĩa “buổi chiều”.
-A. 下午
-B. 快乐
-C. 星期二
-D. 晚饭
-Đáp án: A
-Lời giải: 下午 đọc là xiàwǔ, nghĩa là buổi chiều. Tham chiếu: PDF bài 8, trang 23.
-Độ khó: Dễ
-Câu 240. Chọn phiên âm đúng của “下午”.
-A. hòutiān
-B. zhēn de
-C. shàng ge xīngqī
-D. xiàwǔ
-Đáp án: D
-Lời giải: 下午 đọc là xiàwǔ, nghĩa là buổi chiều. Tham chiếu: PDF bài 8, trang 23.
-Độ khó: Dễ
-Câu 241. Trong bài học, “晚上” có nghĩa là gì?
-A. buổi tối
-B. tuần này
-C. tháng này
-D. thứ năm
-Đáp án: A
-Lời giải: 晚上 đọc là wǎnshang, nghĩa là buổi tối. Tham chiếu: PDF bài 8, trang 23.
-Độ khó: Dễ
-Câu 242. Chọn chữ Hán có nghĩa “buổi tối”.
-A. 晚上
-B. 件
-C. 后天
-D. 最
-Đáp án: A
-Lời giải: 晚上 đọc là wǎnshang, nghĩa là buổi tối. Tham chiếu: PDF bài 8, trang 23.
-Độ khó: Dễ
-Câu 243. Chọn phiên âm đúng của “晚上”.
-A. wǎnshang
-B. wǎnfàn
-C. kāfēi
+Câu 180. Chọn phiên âm đúng của “猪” với nghĩa “Lợn, heo”.
+A. zhū
+B. yuè
+C. xīngqīsān
 D. hòutiān
 Đáp án: A
-Lời giải: 晚上 đọc là wǎnshang, nghĩa là buổi tối. Tham chiếu: PDF bài 8, trang 23.
+Lời giải: 猪 đọc là zhū, nghĩa là Lợn, heo. Nguồn: danh sách đầy đủ người dùng gửi, bài 8, dòng 541.
 Độ khó: Dễ
-Câu 244. Trong bài học, “请” có nghĩa là gì?
-A. rảnh, có thời gian
-B. phim truyền hình, phim dài tập
-C. mời
-D. năm ngoái
+Câu 181. Vận dụng: Câu “你的生日是几月几号？” có nghĩa là gì?
+A. Cô ấy đang xem phim truyền hình.
+B. Năm nay cô ấy làm việc ở Bắc Kinh.
+C. Sinh nhật của bạn là ngày mấy tháng mấy?
+D. Hôm nay là thứ Sáu.
 Đáp án: C
-Lời giải: 请 đọc là qǐng, nghĩa là mời. Tham chiếu: PDF bài 8, trang 25.
-Độ khó: Dễ
-Câu 245. Chọn chữ Hán có nghĩa “mời”.
-A. 下个星期
-B. 快乐
-C. 请
-D. 星期六
-Đáp án: C
-Lời giải: 请 đọc là qǐng, nghĩa là mời. Tham chiếu: PDF bài 8, trang 25.
-Độ khó: Dễ
-Câu 246. Chọn phiên âm đúng của “请”.
-A. qǐng
-B. chīfàn
-C. zhōngwǔ
-D. qiántiān
-Đáp án: A
-Lời giải: 请 đọc là qǐng, nghĩa là mời. Tham chiếu: PDF bài 8, trang 25.
-Độ khó: Dễ
-Câu 247. Trong bài học, “吃饭” có nghĩa là gì?
-A. gặp
-B. tuần; cách gọi tuần, thứ
-C. ăn cơm
-D. không rảnh
-Đáp án: C
-Lời giải: 吃饭 đọc là chīfàn, nghĩa là ăn cơm. Tham chiếu: PDF bài 8, trang 25.
-Độ khó: Dễ
-Câu 248. Chọn chữ Hán có nghĩa “ăn cơm”.
-A. 吃饭
-B. 今年
-C. 晚上
-D. 上个星期
-Đáp án: A
-Lời giải: 吃饭 đọc là chīfàn, nghĩa là ăn cơm. Tham chiếu: PDF bài 8, trang 25.
-Độ khó: Dễ
-Câu 249. Chọn phiên âm đúng của “吃饭”.
-A. měi
-B. chīfàn
-C. kuàilè
-D. shǔ
-Đáp án: B
-Lời giải: 吃饭 đọc là chīfàn, nghĩa là ăn cơm. Tham chiếu: PDF bài 8, trang 25.
-Độ khó: Dễ
-Câu 250. Trong bài học, “咖啡” có nghĩa là gì?
-A. hôm kia
-B. chúc mừng sinh nhật
-C. thứ sáu
-D. cà phê
-Đáp án: D
-Lời giải: 咖啡 đọc là kāfēi, nghĩa là cà phê. Tham chiếu: PDF bài 8, trang 28.
-Độ khó: Dễ
-Câu 251. Chọn chữ Hán có nghĩa “cà phê”.
-A. 咖啡
-B. 星期五
-C. 刻
-D. 晚饭
-Đáp án: A
-Lời giải: 咖啡 đọc là kāfēi, nghĩa là cà phê. Tham chiếu: PDF bài 8, trang 28.
-Độ khó: Dễ
-Câu 252. Chọn phiên âm đúng của “咖啡”.
-A. kāfēi
-B. zuótiān
-C. hòutiān
-D. shì
-Đáp án: A
-Lời giải: 咖啡 đọc là kāfēi, nghĩa là cà phê. Tham chiếu: PDF bài 8, trang 28.
-Độ khó: Dễ
-Câu 253. Trong bài học, “看电影” có nghĩa là gì?
-A. bởi vì
-B. xem phim
-C. thứ năm
-D. tiếng, giờ đồng hồ; khoảng thời gian
-Đáp án: B
-Lời giải: 看电影 đọc là kàn diànyǐng, nghĩa là xem phim. Tham chiếu: PDF bài 8, trang 30.
-Độ khó: Dễ
-Câu 254. Chọn chữ Hán có nghĩa “xem phim”.
-A. 看电影
-B. 几
-C. 星期一
-D. 秒
-Đáp án: A
-Lời giải: 看电影 đọc là kàn diànyǐng, nghĩa là xem phim. Tham chiếu: PDF bài 8, trang 30.
-Độ khó: Dễ
-Câu 255. Chọn phiên âm đúng của “看电影”.
-A. xīngqī wǔ
-B. rì
-C. jǐ
-D. kàn diànyǐng
-Đáp án: D
-Lời giải: 看电影 đọc là kàn diànyǐng, nghĩa là xem phim. Tham chiếu: PDF bài 8, trang 30.
-Độ khó: Dễ
-Câu 256. Trong bài học, “学校” có nghĩa là gì?
-A. trường học
-B. tuần này
-C. sinh ra
-D. ngày kia
-Đáp án: A
-Lời giải: 学校 đọc là xuéxiào, nghĩa là trường học. Tham chiếu: PDF bài 8, trang 30.
-Độ khó: Dễ
-Câu 257. Chọn chữ Hán có nghĩa “trường học”.
-A. 看电影
-B. 星期四
-C. 差
-D. 学校
-Đáp án: D
-Lời giải: 学校 đọc là xuéxiào, nghĩa là trường học. Tham chiếu: PDF bài 8, trang 30.
-Độ khó: Dễ
-Câu 258. Chọn phiên âm đúng của “学校”.
-A. xuéxiào
-B. zhēn de
-C. jīntiān
-D. cǎipiào
-Đáp án: A
-Lời giải: 学校 đọc là xuéxiào, nghĩa là trường học. Tham chiếu: PDF bài 8, trang 30.
-Độ khó: Dễ
-Câu 259. Trong tiếng Trung, thứ tự ngày tháng năm là gì?
-A. Năm — tháng — ngày
-B. Tháng — ngày — năm
-C. Ngày — tháng — năm
-D. Giờ — ngày — tháng
-Đáp án: A
-Lời giải: Biểu đạt thời gian đi từ đơn vị lớn đến đơn vị nhỏ. Tham chiếu: PDF bài 8, trang 21.
+Lời giải: 你的生日是几月几号？ — Sinh nhật của bạn là ngày mấy tháng mấy? Câu dùng từ trong danh sách bài 1–8.
 Độ khó: Vừa
-Câu 260. “六月十五号” là ngày nào?
-A. Ngày 6 tháng 15
-B. Ngày 6 tháng 5
-C. Ngày 15 tháng 7
-D. Ngày 15 tháng 6
+Câu 182. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Sinh nhật của bạn là ngày mấy tháng mấy?”.
+A. 现在是三点半。
+B. 她今年在北京工作。
+C. 我想休息一小时。
+D. 你的生日是几月几号？
 Đáp án: D
-Lời giải: 月 đi sau tháng; 号 đi sau ngày. Tham chiếu: PDF bài 8, trang 27.
+Lời giải: 你的生日是几月几号？ — Sinh nhật của bạn là ngày mấy tháng mấy? Câu dùng từ trong danh sách bài 1–8.
 Độ khó: Vừa
-Câu 261. Chọn lời chúc mừng sinh nhật.
+Câu 183. Vận dụng: Câu “生日快乐！” có nghĩa là gì?
+A. Tôi đã từng đến Trung Quốc.
+B. Bởi vì tôi rất bận.
+C. Chúc mừng sinh nhật!
+D. Chiếc bánh ngọt này rất ngon.
+Đáp án: C
+Lời giải: 生日快乐！ — Chúc mừng sinh nhật! Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 184. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chúc mừng sinh nhật!”.
 A. 生日快乐！
-B. 生日在哪儿？
-C. 生日不客气！
-D. 生日谢谢！
+B. 今天是星期五。
+C. 你的生日是几月几号？
+D. 她今年在北京工作。
 Đáp án: A
-Lời giải: 生日快乐 là lời chúc mừng sinh nhật. Tham chiếu: PDF bài 8, trang 9.
+Lời giải: 生日快乐！ — Chúc mừng sinh nhật! Câu dùng từ trong danh sách bài 1–8.
 Độ khó: Vừa
-Câu 262. “星期五” là thứ mấy?
-A. Thứ bảy
-B. Thứ năm
-C. Chủ nhật
-D. Thứ sáu
-Đáp án: D
-Lời giải: 星期一 là thứ hai nên 星期五 là thứ sáu. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Vừa
-Câu 263. Chọn cách nói chủ nhật.
-A. 星期八
-B. 星期零
-C. 星期天
-D. 星期半
-Đáp án: C
-Lời giải: Chủ nhật có thể gọi 星期天 hoặc 星期日. Tham chiếu: PDF bài 8, trang 10.
-Độ khó: Vừa
-Câu 264. “十一点半” chỉ mấy giờ?
-A. 10 giờ 30
-B. 12 giờ 30
-C. 11 giờ 15
-D. 11 giờ 30
-Đáp án: D
-Lời giải: 半 sau điểm giờ biểu thị rưỡi. Tham chiếu: PDF bài 8, trang 23.
-Độ khó: Vừa
-Câu 265. “八点一刻” chỉ mấy giờ?
-A. 8 giờ 45
-B. 7 giờ 45
-C. 8 giờ 15
-D. 8 giờ 30
-Đáp án: C
-Lời giải: 一刻 là mười lăm phút. Tham chiếu: PDF bài 8, trang 23.
-Độ khó: Vừa
-Câu 266. “差十分八点” chỉ mấy giờ?
-A. 8 giờ 10
-B. 7 giờ 50
-C. 8 giờ 50
-D. 7 giờ 10
+Câu 185. Vận dụng: Câu “今天是星期五。” có nghĩa là gì?
+A. Tôi muốn nghỉ ngơi một tiếng.
+B. Hôm nay là thứ Sáu.
+C. Tôi đã từng đến Trung Quốc.
+D. Xin hãy giới thiệu bạn của bạn.
 Đáp án: B
-Lời giải: 差十分八点 là còn mười phút nữa đến 8 giờ. Tham chiếu: PDF bài 8, trang 7.
+Lời giải: 今天是星期五。 — Hôm nay là thứ Sáu. Câu dùng từ trong danh sách bài 1–8.
 Độ khó: Vừa
-Câu 267. Điền từ: 你的生日是几月几___？
-A. 年
-B. 点
-C. 分
-D. 号
+Câu 186. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Hôm nay là thứ Sáu.”.
+A. 现在是三点半。
+B. 门票多少钱？
+C. 今天是星期五。
+D. 请介绍你的朋友。
+Đáp án: C
+Lời giải: 今天是星期五。 — Hôm nay là thứ Sáu. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 187. Vận dụng: Câu “你明天有空儿吗？” có nghĩa là gì?
+A. Tôi cầm tinh con ngựa.
+B. Tôi muốn nghỉ ngơi một tiếng.
+C. Ngày mai bạn có rảnh không?
+D. Hôm nay là thứ Sáu.
+Đáp án: C
+Lời giải: 你明天有空儿吗？ — Ngày mai bạn có rảnh không? Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 188. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Ngày mai bạn có rảnh không?”.
+A. 我想休息一小时。
+B. 你为什么不去学校？
+C. 你明天有空儿吗？
+D. 你的生日是几月几号？
+Đáp án: C
+Lời giải: 你明天有空儿吗？ — Ngày mai bạn có rảnh không? Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 189. Vận dụng: Câu “我昨天去看电影了。” có nghĩa là gì?
+A. Cô ấy đang xem phim truyền hình.
+B. Năm nay cô ấy làm việc ở Bắc Kinh.
+C. Ngày mai bạn có rảnh không?
+D. Hôm qua tôi đã đi xem phim.
 Đáp án: D
-Lời giải: 几月几号 hỏi tháng mấy, ngày mấy. Tham chiếu: PDF bài 8, trang 21.
+Lời giải: 我昨天去看电影了。 — Hôm qua tôi đã đi xem phim. Câu dùng từ trong danh sách bài 1–8.
 Độ khó: Vừa
-Câu 268. Điền từ: 我今天___想请你吃饭。
-A. 晚上
-B. 几号
-C. 生日
-D. 分钟
+Câu 190. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Hôm qua tôi đã đi xem phim.”.
+A. 我们下个星期见。
+B. 她正在看电视剧。
+C. 我去过中国。
+D. 我昨天去看电影了。
+Đáp án: D
+Lời giải: 我昨天去看电影了。 — Hôm qua tôi đã đi xem phim. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 191. Vận dụng: Câu “这个蛋糕很好吃。” có nghĩa là gì?
+A. Bởi vì tôi rất bận.
+B. Sinh nhật của bạn là ngày mấy tháng mấy?
+C. Hôm qua tôi đã đi xem phim.
+D. Chiếc bánh ngọt này rất ngon.
+Đáp án: D
+Lời giải: 这个蛋糕很好吃。 — Chiếc bánh ngọt này rất ngon. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 192. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chiếc bánh ngọt này rất ngon.”.
+A. 我每天学习汉语。
+B. 这个蛋糕很好吃。
+C. 她今年在北京工作。
+D. 因为我很忙。
+Đáp án: B
+Lời giải: 这个蛋糕很好吃。 — Chiếc bánh ngọt này rất ngon. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 193. Vận dụng: Câu “我每天学习汉语。” có nghĩa là gì?
+A. Chiếc bánh ngọt này rất ngon.
+B. Tôi học tiếng Hán mỗi ngày.
+C. Chúc mừng sinh nhật!
+D. Xin hãy giới thiệu bạn của bạn.
+Đáp án: B
+Lời giải: 我每天学习汉语。 — Tôi học tiếng Hán mỗi ngày. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 194. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi học tiếng Hán mỗi ngày.”.
+A. 你的生日是几月几号？
+B. 我每天学习汉语。
+C. 我想休息一小时。
+D. 你明天有空儿吗？
+Đáp án: B
+Lời giải: 我每天学习汉语。 — Tôi học tiếng Hán mỗi ngày. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 195. Vận dụng: Câu “我们下个星期见。” có nghĩa là gì?
+A. Chúng ta gặp nhau vào tuần sau.
+B. Hôm qua tôi đã đi xem phim.
+C. Tôi muốn nghỉ ngơi một tiếng.
+D. Cô ấy đang xem phim truyền hình.
 Đáp án: A
-Lời giải: 晚上 biểu thị buổi tối và nằm trước động từ 想. Tham chiếu: PDF bài 8, trang 25.
+Lời giải: 我们下个星期见。 — Chúng ta gặp nhau vào tuần sau. Câu dùng từ trong danh sách bài 1–8.
 Độ khó: Vừa
-Câu 269. Điền từ: 你为什么高兴？___今天是我的生日。
-A. 每
-B. 几
-C. 因为
-D. 最
+Câu 196. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chúng ta gặp nhau vào tuần sau.”.
+A. 我们下个星期见。
+B. 门票多少钱？
+C. 我昨天去看电影了。
+D. 你的生日是几月几号？
+Đáp án: A
+Lời giải: 我们下个星期见。 — Chúng ta gặp nhau vào tuần sau. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 197. Vận dụng: Câu “她今年在北京工作。” có nghĩa là gì?
+A. Năm nay cô ấy làm việc ở Bắc Kinh.
+B. Tôi muốn trò chuyện với bạn.
+C. Bởi vì tôi rất bận.
+D. Tại sao bạn không đến trường?
+Đáp án: A
+Lời giải: 她今年在北京工作。 — Năm nay cô ấy làm việc ở Bắc Kinh. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 198. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Năm nay cô ấy làm việc ở Bắc Kinh.”.
+A. 这个蛋糕很好吃。
+B. 我想休息一小时。
+C. 她今年在北京工作。
+D. 我昨天去看电影了。
 Đáp án: C
-Lời giải: 因为 dùng để nêu nguyên nhân. Tham chiếu: PDF bài 8, trang 13.
+Lời giải: 她今年在北京工作。 — Năm nay cô ấy làm việc ở Bắc Kinh. Câu dùng từ trong danh sách bài 1–8.
 Độ khó: Vừa
-Câu 270. Chọn câu cảm thán đúng.
-A. 太了好！
-B. 太好了！
-C. 好太是！
-D. 太好最！
+Câu 199. Vận dụng: Câu “我想休息一小时。” có nghĩa là gì?
+A. Tôi đã từng đến Trung Quốc.
+B. Tôi muốn nghỉ ngơi một tiếng.
+C. Ngày mai bạn có rảnh không?
+D. Tại sao bạn không đến trường?
 Đáp án: B
-Lời giải: Mẫu cảm thán: 太 + tính từ + 了. Tham chiếu: PDF bài 8, trang 11.
+Lời giải: 我想休息一小时。 — Tôi muốn nghỉ ngơi một tiếng. Câu dùng từ trong danh sách bài 1–8.
 Độ khó: Vừa
-Câu 271. Điền từ: 你今天晚上有___吗？
-A. 快乐
-B. 介绍
-C. 生日
-D. 空儿
-Đáp án: D
-Lời giải: 有空儿 nghĩa là rảnh. Tham chiếu: PDF bài 8, trang 15.
-Độ khó: Vừa
-Câu 272. Chọn câu hẹn gặp vào ngày mai.
-A. 明天几见！
-B. 昨天见明天！
-C. 明天见！
-D. 见在明天！
-Đáp án: C
-Lời giải: Thời gian + 见 là lời hẹn gặp. Tham chiếu: PDF bài 8, trang 15.
-Độ khó: Vừa
-Câu 273. “我没吃过中国菜。” nghĩa là gì?
-A. Tôi chỉ ăn món Trung Quốc
-B. Tôi không thích món Trung Quốc
-C. Tôi chưa từng ăn món Trung Quốc
-D. Tôi vừa ăn món Trung Quốc
-Đáp án: C
-Lời giải: 没 + động từ + 过 biểu thị chưa từng có trải nghiệm đó. Tham chiếu: PDF bài 8, trang 16.
-Độ khó: Vừa
-Câu 274. Điền từ: 我___喜欢看中国电影。
-A. 年
-B. 最
-C. 号
-D. 刻
+Câu 200. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn nghỉ ngơi một tiếng.”.
+A. 我去过中国。
+B. 我想休息一小时。
+C. 生日快乐！
+D. 今天是星期五。
 Đáp án: B
-Lời giải: 最喜欢 nghĩa là thích nhất. Tham chiếu: PDF bài 8, trang 13.
+Lời giải: 我想休息一小时。 — Tôi muốn nghỉ ngơi một tiếng. Câu dùng từ trong danh sách bài 1–8.
 Độ khó: Vừa
-Câu 275. Đọc “文丽的生日是六月十五号。” Sinh nhật Văn Lệ khi nào?
-A. Ngày 21 tháng 12
-B. Ngày 6 tháng 15
-C. Ngày 14 tháng 9
-D. Ngày 15 tháng 6
+Câu 201. Vận dụng: Câu “你为什么不去学校？” có nghĩa là gì?
+A. Năm nay cô ấy làm việc ở Bắc Kinh.
+B. Chiếc bánh ngọt này rất ngon.
+C. Cô ấy đang xem phim truyền hình.
+D. Tại sao bạn không đến trường?
 Đáp án: D
-Lời giải: 六月十五号 là ngày 15/6. Tham chiếu: PDF bài 8, trang 27.
+Lời giải: 你为什么不去学校？ — Tại sao bạn không đến trường? Câu dùng từ trong danh sách bài 1–8.
 Độ khó: Vừa
-Câu 276. Đọc “欧文的生日是九月十四号。” Sinh nhật Âu Văn khi nào?
-A. Ngày 9 tháng 14
-B. Ngày 15 tháng 6
-C. Ngày 24 tháng 9
-D. Ngày 14 tháng 9
-Đáp án: D
-Lời giải: 九月十四号 là ngày 14/9. Tham chiếu: PDF bài 8, trang 28.
-Độ khó: Vừa
-Câu 277. Phân biệt 点 và 小时: từ nào chỉ khoảng thời gian một tiếng?
-A. 点
-B. 号
-C. 小时
-D. 月
+Câu 202. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tại sao bạn không đến trường?”.
+A. 我每天学习汉语。
+B. 我属马。
+C. 你为什么不去学校？
+D. 因为我很忙。
 Đáp án: C
-Lời giải: 小时 là giờ đồng hồ tính thời lượng; 点 chỉ điểm giờ. Tham chiếu: PDF bài 8, trang 7.
+Lời giải: 你为什么不去学校？ — Tại sao bạn không đến trường? Câu dùng từ trong danh sách bài 1–8.
 Độ khó: Vừa
-Câu 278. Chọn câu có vị trí thời gian đúng.
-A. 今天我看晚上电影。
-B. 我看今天电影晚上。
-C. 我电影今天晚上看。
-D. 我今天晚上看电影。
+Câu 203. Vận dụng: Câu “因为我很忙。” có nghĩa là gì?
+A. Bởi vì tôi rất bận.
+B. Vé vào cửa bao nhiêu tiền?
+C. Hôm nay là thứ Sáu.
+D. Tôi học tiếng Hán mỗi ngày.
+Đáp án: A
+Lời giải: 因为我很忙。 — Bởi vì tôi rất bận. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 204. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bởi vì tôi rất bận.”.
+A. 你的生日是几月几号？
+B. 今天是星期五。
+C. 因为我很忙。
+D. 她今年在北京工作。
+Đáp án: C
+Lời giải: 因为我很忙。 — Bởi vì tôi rất bận. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 205. Vận dụng: Câu “她太漂亮了！” có nghĩa là gì?
+A. Năm nay cô ấy làm việc ở Bắc Kinh.
+B. Cô ấy quá xinh đẹp!
+C. Xin hãy giới thiệu bạn của bạn.
+D. Tôi học tiếng Hán mỗi ngày.
+Đáp án: B
+Lời giải: 她太漂亮了！ — Cô ấy quá xinh đẹp! Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 206. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy quá xinh đẹp!”.
+A. 我们下个星期见。
+B. 我属马。
+C. 这个蛋糕很好吃。
+D. 她太漂亮了！
 Đáp án: D
-Lời giải: 今天晚上 đứng trước động từ 看. Tham chiếu: PDF bài 8, trang 25.
+Lời giải: 她太漂亮了！ — Cô ấy quá xinh đẹp! Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 207. Vận dụng: Câu “请介绍你的朋友。” có nghĩa là gì?
+A. Xin hãy giới thiệu bạn của bạn.
+B. Bây giờ là ba giờ rưỡi.
+C. Tôi học tiếng Hán mỗi ngày.
+D. Chúng ta gặp nhau vào tuần sau.
+Đáp án: A
+Lời giải: 请介绍你的朋友。 — Xin hãy giới thiệu bạn của bạn. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 208. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Xin hãy giới thiệu bạn của bạn.”.
+A. 生日快乐！
+B. 这个蛋糕很好吃。
+C. 请介绍你的朋友。
+D. 我属马。
+Đáp án: C
+Lời giải: 请介绍你的朋友。 — Xin hãy giới thiệu bạn của bạn. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 209. Vận dụng: Câu “我想跟你聊天。” có nghĩa là gì?
+A. Chúc mừng sinh nhật!
+B. Tôi muốn trò chuyện với bạn.
+C. Tôi đã từng đến Trung Quốc.
+D. Tôi học tiếng Hán mỗi ngày.
+Đáp án: B
+Lời giải: 我想跟你聊天。 — Tôi muốn trò chuyện với bạn. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 210. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn trò chuyện với bạn.”.
+A. 我想跟你聊天。
+B. 我去过中国。
+C. 请介绍你的朋友。
+D. 这个蛋糕很好吃。
+Đáp án: A
+Lời giải: 我想跟你聊天。 — Tôi muốn trò chuyện với bạn. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 211. Vận dụng: Câu “她正在看电视剧。” có nghĩa là gì?
+A. Chúc mừng sinh nhật!
+B. Bởi vì tôi rất bận.
+C. Chúng ta gặp nhau vào tuần sau.
+D. Cô ấy đang xem phim truyền hình.
+Đáp án: D
+Lời giải: 她正在看电视剧。 — Cô ấy đang xem phim truyền hình. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 212. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy đang xem phim truyền hình.”.
+A. 她正在看电视剧。
+B. 我属马。
+C. 现在是三点半。
+D. 今天是星期五。
+Đáp án: A
+Lời giải: 她正在看电视剧。 — Cô ấy đang xem phim truyền hình. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 213. Vận dụng: Câu “门票多少钱？” có nghĩa là gì?
+A. Tôi học tiếng Hán mỗi ngày.
+B. Bây giờ là ba giờ rưỡi.
+C. Vé vào cửa bao nhiêu tiền?
+D. Tôi đã từng đến Trung Quốc.
+Đáp án: C
+Lời giải: 门票多少钱？ — Vé vào cửa bao nhiêu tiền? Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 214. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Vé vào cửa bao nhiêu tiền?”.
+A. 生日快乐！
+B. 门票多少钱？
+C. 我去过中国。
+D. 现在是三点半。
+Đáp án: B
+Lời giải: 门票多少钱？ — Vé vào cửa bao nhiêu tiền? Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 215. Vận dụng: Câu “我去过中国。” có nghĩa là gì?
+A. Vé vào cửa bao nhiêu tiền?
+B. Năm nay cô ấy làm việc ở Bắc Kinh.
+C. Cô ấy quá xinh đẹp!
+D. Tôi đã từng đến Trung Quốc.
+Đáp án: D
+Lời giải: 我去过中国。 — Tôi đã từng đến Trung Quốc. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 216. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi đã từng đến Trung Quốc.”.
+A. 我去过中国。
+B. 现在是三点半。
+C. 生日快乐！
+D. 她今年在北京工作。
+Đáp án: A
+Lời giải: 我去过中国。 — Tôi đã từng đến Trung Quốc. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 217. Vận dụng: Câu “我属马。” có nghĩa là gì?
+A. Tôi cầm tinh con ngựa.
+B. Tôi muốn trò chuyện với bạn.
+C. Tôi đã từng đến Trung Quốc.
+D. Vé vào cửa bao nhiêu tiền?
+Đáp án: A
+Lời giải: 我属马。 — Tôi cầm tinh con ngựa. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 218. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi cầm tinh con ngựa.”.
+A. 她今年在北京工作。
+B. 我昨天去看电影了。
+C. 现在是三点半。
+D. 我属马。
+Đáp án: D
+Lời giải: 我属马。 — Tôi cầm tinh con ngựa. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 219. Vận dụng: Câu “现在是三点半。” có nghĩa là gì?
+A. Bây giờ là ba giờ rưỡi.
+B. Sinh nhật của bạn là ngày mấy tháng mấy?
+C. Tôi muốn trò chuyện với bạn.
+D. Hôm qua tôi đã đi xem phim.
+Đáp án: A
+Lời giải: 现在是三点半。 — Bây giờ là ba giờ rưỡi. Câu dùng từ trong danh sách bài 1–8.
+Độ khó: Vừa
+Câu 220. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bây giờ là ba giờ rưỡi.”.
+A. 请介绍你的朋友。
+B. 现在是三点半。
+C. 今天是星期五。
+D. 你为什么不去学校？
+Đáp án: B
+Lời giải: 现在是三点半。 — Bây giờ là ba giờ rưỡi. Câu dùng từ trong danh sách bài 1–8.
 Độ khó: Vừa
 [NGU PHAP]
-Thứ tự ngày tháng năm：年 → 月 → 日 / 号 二〇二六年三月八号：ngày 8 tháng 3 năm 2026. 生日是几月几号？ hỏi sinh nhật vào tháng mấy, ngày mấy. Trong tiếng Trung nêu đơn vị lớn trước đơn vị nhỏ. (PDF trang 21)
-Nói thứ và thời gian ở đầu câu：今天星期三。 Hôm nay là thứ tư. 我今天晚上想请你吃饭。 Tối nay tôi muốn mời bạn ăn cơm. Thành phần thời gian có thể đứng trước hoặc sau chủ ngữ, trước động từ chính. (PDF trang 20)
-Giờ, phút, rưỡi và kém：八点十五分 / 八点一刻：8 giờ 15. 十一点半：11 giờ rưỡi. 差十分八点：8 giờ kém 10, tức 7 giờ 50. 点 dùng cho điểm giờ; 小时 dùng cho khoảng thời gian. (PDF trang 22)
-Cảm thán và nguyên nhân：你真好！ Bạn thật tốt! 太好了！ Tốt quá! 为什么？— 因为今天是我的生日。 Tại sao? — Bởi vì hôm nay là sinh nhật của tôi. 最 đứng trước tính từ hoặc động từ tâm lý: 最喜欢. (PDF trang 11)
+Ngày tháng và giờ: Diễn đạt ngày bằng 年, 月, 号; dùng 点, 分 hoặc 半 khi nói giờ. Ví dụ: 这个蛋糕很好吃。
+Trải nghiệm và mức độ: Dùng 过 để nói trải nghiệm đã từng; dùng cấu trúc 太……了 phù hợp với câu. Ví dụ: 我每天学习汉语。
 [BAI DOC]
-Sinh nhật của Văn Lệ：欧文：今天几号？ 黄文丽：今天六月十五号。 欧文：生日快乐！我的生日是九月十四号。 黄文丽：你今天晚上有空儿吗？ 欧文：有空儿。我们一起喝咖啡吧。 Đoạn rút gọn theo bài khóa: sinh nhật Văn Lệ ngày 15/6, của Âu Văn ngày 14/9; hai bạn hẹn uống cà phê. (PDF trang 27)
-Hẹn gặp vào thứ sáu：高小明：你星期五晚上有空儿吗？ 海伦：有空儿。什么事？ 高小明：星期五是我的生日。我想请你吃晚饭。 海伦：太好了！我请你看电影。 高小明：星期五晚上见！ Đoạn rút gọn theo bài khóa: Tiểu Minh mời Hải Luân ăn tối vào thứ sáu; Hải Luân đề nghị xem phim. (PDF trang 29)
+Đọc hiểu 1: 这个蛋糕很好吃。 我每天学习汉语。 我们下个星期见。 她今年在北京工作。 — Chiếc bánh ngọt này rất ngon. Tôi học tiếng Hán mỗi ngày. Chúng ta gặp nhau vào tuần sau. Năm nay cô ấy làm việc ở Bắc Kinh.
+Đọc hiểu 2: 我想休息一小时。 你为什么不去学校？ 因为我很忙。 她太漂亮了！ — Tôi muốn nghỉ ngơi một tiếng. Tại sao bạn không đến trường? Bởi vì tôi rất bận. Cô ấy quá xinh đẹp!
+[HOI THOAI]
+Hội thoại trong bài: A: 你的生日是几月几号？ B: 我的生日是三月五号。 A: 今天是星期几？ B: 今天是星期五。 A: 你明天有空儿吗？ B: 我明天有空儿。
 [LUYEN NOI]
-你的生日是几月几号？ | Sinh nhật của bạn là ngày mấy tháng mấy? | 我的生日是六月十五号。 | Chấp nhận mọi ngày sinh hợp lý; chấm trật tự tháng trước ngày, không xác minh thông tin cá nhân.
-你星期几有汉语课？ | Bạn có tiết tiếng Trung vào thứ mấy? | 我星期三有汉语课。 | Chấp nhận thứ khác hoặc nhiều thứ; luyện 星期 + số.
-你今天晚上有空儿吗？ | Tối nay bạn có rảnh không? | 我今天晚上有空儿。 | Chấp nhận 有空儿 hoặc 没空儿; trả lời đúng ý.
-朋友过生日的时候，你说什么？ | Khi bạn có sinh nhật, bạn nói gì? | 我说，生日快乐！ | Chấp nhận lời chúc sinh nhật tự nhiên, cần phù hợp tình huống.
-八点半是几点几分？ | Tám giờ rưỡi là mấy giờ mấy phút? | 八点半是八点三十分。 | Cần diễn đạt 8 giờ 30; chấp nhận 八点三十.
-你想请朋友吃饭还是喝咖啡？ | Bạn muốn mời bạn bè ăn cơm hay uống cà phê? | 我想请朋友吃饭。 | Chấp nhận lựa chọn khác hoặc cả hai; chú ý 请 + người + hành động.
-你是哪年出生的？ | Bạn sinh năm nào? | 我是二〇〇〇年出生的。 | Chấp nhận năm khác hoặc cấu trúc 我…年出生; không kiểm chứng tuổi, không bắt buộc câu mẫu.
-你最喜欢星期几？为什么？ | Bạn thích nhất thứ mấy? Vì sao? | 我最喜欢星期六，因为我有空儿。 | Cần nêu một thứ và lý do hợp lý; chấp nhận thứ khác.
-请说一个日期，好吗？ | Bạn hãy nói một ngày tháng được không? | 三月八号。 | Chấp nhận ngày tháng hợp lý bất kỳ; 月 đứng trước 号 hoặc 日.
-我们星期五晚上见，好吗？ | Tối thứ sáu chúng ta gặp nhau được không? | 好，星期五晚上见！ | Chấp nhận đồng ý hoặc từ chối lịch sự có lý do; cần hiểu lời hẹn.
+Câu 1. 你的生日是几月几号？
+Nghĩa: Sinh nhật của bạn là ngày mấy tháng mấy?
+Đáp án tham khảo: 我的生日是三月五号。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 2. 今天是星期几？
+Nghĩa: Hôm nay là thứ mấy?
+Đáp án tham khảo: 今天是星期五。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 3. 你明天有空儿吗？
+Nghĩa: Ngày mai bạn có rảnh không?
+Đáp án tham khảo: 我明天有空儿。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 4. 现在是几点？
+Nghĩa: Bây giờ là mấy giờ?
+Đáp án tham khảo: 现在是三点半。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 5. 你属什么？
+Nghĩa: Bạn cầm tinh con gì?
+Đáp án tham khảo: 我属龙。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 6. 你想休息几小时？
+Nghĩa: Bạn muốn nghỉ ngơi mấy tiếng?
+Đáp án tham khảo: 我想休息一小时。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 7. 你去过中国吗？
+Nghĩa: Bạn đã từng đến Trung Quốc chưa?
+Đáp án tham khảo: 我去过中国。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 8. 你昨天做什么？
+Nghĩa: Hôm qua bạn làm gì?
+Đáp án tham khảo: 我昨天去看电影了。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 9. 这个蛋糕好吃吗？
+Nghĩa: Chiếc bánh ngọt này có ngon không?
+Đáp án tham khảo: 这个蛋糕很好吃。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 10. 你下个星期有空儿吗？
+Nghĩa: Tuần sau bạn có rảnh không?
+Đáp án tham khảo: 我下个星期有空儿。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.

@@ -3,7 +3,7 @@ import {questionAudio,withChoiceAudio,stopQuestionAudio} from './question-audio.
 import {uniqueStudyWords,shuffleStudy} from './chinese-study-variety.js';
 
 export function listeningStages(words,size=10){
- const unique=[...new Map(uniqueStudyWords(words).filter(i=>i.data.hanzi&&i.data.meaning).map(i=>[i.data.meaning,i])).values()];
+ const unique=uniqueStudyWords(words).filter(i=>i.data.hanzi&&i.data.meaning);
  return Array.from({length:Math.ceil(unique.length/size)},(_,n)=>unique.slice(n*size,(n+1)*size));
 }
 const button=(text,action,primary=false)=>el('button',{type:'button',class:'btn '+(primary?'btn-primary':'btn-secondary'),text,onclick:action});
@@ -26,13 +26,14 @@ export function listeningPractice(host,words,setId){
  }
  function start(restart=false){
   let state=sessions.get(selected);
-  if(restart||!state||state.index===state.deck.length){state={deck:shuffleStudy(stages[selected]),index:0,score:0,answer:null};sessions.set(selected,state);}
+  if(restart||!state||state.index===state.deck.length){state={deck:[...stages[selected]],index:0,score:0,answer:null};sessions.set(selected,state);}
   showQuestion();
  }
  function showQuestion(){
   stopQuestionAudio();const state=sessions.get(selected);
   if(state.index===state.deck.length){showResult();return;}
-  const item=state.deck[state.index],status=el('p',{role:'status','aria-live':'polite'}),choices=el('div',{class:'hub-listen-options'}),options=shuffleStudy([item,...shuffleStudy(all.filter(i=>i.id!==item.id)).slice(0,3)]);
+  const item=state.deck[state.index],status=el('p',{role:'status','aria-live':'polite'}),choices=el('div',{class:'hub-listen-options'}),seen=new Set([item.data.meaning]);
+  const distractors=shuffleStudy(all.filter(i=>i.id!==item.id&&i.data.meaning!==item.data.meaning)).filter(i=>{if(seen.has(i.data.meaning))return false;seen.add(i.data.meaning);return true;}).slice(0,3),options=shuffleStudy([item,...distractors]);
   const next=button('Câu tiếp theo',()=>{state.index++;state.answer=null;showQuestion();},true);next.hidden=state.answer===null;
   const feedback=()=>{status.textContent=(state.answer===item.id?'Đúng rồi! ':'Chưa đúng. ')+item.data.hanzi+' · '+(item.data.pinyin||'')+' · '+item.data.meaning;};
   for(const [n,option]of options.entries()){

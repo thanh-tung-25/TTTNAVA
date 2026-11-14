@@ -1,0 +1,3870 @@
+{
+  "version": "user-vocabulary-2026-11-14",
+  "lesson": 10,
+  "title": "第十课：你家有几口人？ (Nhà bạn có mấy người?)",
+  "vocabulary": [
+    {
+      "hanzi": "爸爸",
+      "pinyin": "bàba",
+      "meaning": "Bố",
+      "group": "main",
+      "example": "我爸爸是医生。",
+      "example_meaning": "Bố tôi là bác sĩ."
+    },
+    {
+      "hanzi": "妈妈",
+      "pinyin": "māma",
+      "meaning": "Mẹ",
+      "group": "main",
+      "example": "她妈妈是律师。",
+      "example_meaning": "Mẹ cô ấy là luật sư."
+    },
+    {
+      "hanzi": "弟弟",
+      "pinyin": "dìdi",
+      "meaning": "Em trai",
+      "group": "main",
+      "example": "我弟弟今年十岁。",
+      "example_meaning": "Năm nay em trai tôi mười tuổi."
+    },
+    {
+      "hanzi": "妹妹",
+      "pinyin": "mèimei",
+      "meaning": "Em gái",
+      "group": "main",
+      "example": "妹妹正在唱歌。",
+      "example_meaning": "Em gái đang hát."
+    },
+    {
+      "hanzi": "哥哥",
+      "pinyin": "gēge",
+      "meaning": "Anh trai",
+      "group": "main",
+      "example": "哥哥正在洗衣服。",
+      "example_meaning": "Anh trai đang giặt quần áo."
+    },
+    {
+      "hanzi": "姐姐",
+      "pinyin": "jiějie",
+      "meaning": "Chị gái",
+      "group": "main",
+      "example": "姐姐在洗碗。",
+      "example_meaning": "Chị gái đang rửa bát."
+    },
+    {
+      "hanzi": "儿子",
+      "pinyin": "érzi",
+      "meaning": "Con trai",
+      "group": "main"
+    },
+    {
+      "hanzi": "女儿",
+      "pinyin": "nǚ'ér",
+      "meaning": "Con gái",
+      "group": "main"
+    },
+    {
+      "hanzi": "照片",
+      "pinyin": "zhàopiàn",
+      "meaning": "Ảnh, bức ảnh",
+      "group": "main",
+      "example": "这是我们全家的照片。",
+      "example_meaning": "Đây là ảnh của cả gia đình tôi."
+    },
+    {
+      "hanzi": "洗",
+      "pinyin": "xǐ",
+      "meaning": "Rửa, giặt, gội",
+      "group": "main",
+      "example": "哥哥正在洗衣服。",
+      "example_meaning": "Anh trai đang giặt quần áo."
+    },
+    {
+      "hanzi": "洗手间",
+      "pinyin": "xǐshǒujiān",
+      "meaning": "Nhà vệ sinh",
+      "group": "main"
+    },
+    {
+      "hanzi": "和",
+      "pinyin": "hé",
+      "meaning": "Và, với",
+      "group": "main"
+    },
+    {
+      "hanzi": "律师",
+      "pinyin": "lǜshī",
+      "meaning": "Luật sư",
+      "group": "main",
+      "example": "她妈妈是律师。",
+      "example_meaning": "Mẹ cô ấy là luật sư."
+    },
+    {
+      "hanzi": "医生",
+      "pinyin": "yīshēng",
+      "meaning": "Bác sĩ",
+      "group": "main",
+      "example": "我爸爸是医生。",
+      "example_meaning": "Bố tôi là bác sĩ."
+    },
+    {
+      "hanzi": "工人",
+      "pinyin": "gōngrén",
+      "meaning": "Công nhân",
+      "group": "main"
+    },
+    {
+      "hanzi": "家人",
+      "pinyin": "jiārén",
+      "meaning": "Người nhà",
+      "group": "main",
+      "example": "我的家人都很好。",
+      "example_meaning": "Người nhà của tôi đều rất khỏe."
+    },
+    {
+      "hanzi": "孩子",
+      "pinyin": "háizi",
+      "meaning": "Con, đứa trẻ",
+      "group": "main"
+    },
+    {
+      "hanzi": "别人",
+      "pinyin": "biérén",
+      "meaning": "Người khác",
+      "group": "main"
+    },
+    {
+      "hanzi": "狗",
+      "pinyin": "gǒu",
+      "meaning": "Chó",
+      "group": "main",
+      "example": "我家有一只狗。",
+      "example_meaning": "Nhà tôi có một con chó."
+    },
+    {
+      "hanzi": "猫",
+      "pinyin": "māo",
+      "meaning": "Mèo",
+      "group": "main",
+      "example": "这只猫很可爱。",
+      "example_meaning": "Con mèo này rất đáng yêu."
+    },
+    {
+      "hanzi": "可爱",
+      "pinyin": "kě'ài",
+      "meaning": "Đáng yêu",
+      "group": "main",
+      "example": "这只猫很可爱。",
+      "example_meaning": "Con mèo này rất đáng yêu."
+    },
+    {
+      "hanzi": "唱",
+      "pinyin": "chàng",
+      "meaning": "Hát",
+      "group": "main",
+      "example": "妹妹正在唱歌。",
+      "example_meaning": "Em gái đang hát."
+    },
+    {
+      "hanzi": "歌",
+      "pinyin": "gē",
+      "meaning": "Bài hát",
+      "group": "main",
+      "example": "妹妹正在唱歌。",
+      "example_meaning": "Em gái đang hát."
+    },
+    {
+      "hanzi": "常",
+      "pinyin": "cháng",
+      "meaning": "Thường, thường xuyên",
+      "group": "main"
+    },
+    {
+      "hanzi": "开玩笑",
+      "pinyin": "kāi wánxiào",
+      "meaning": "Nói đùa, đùa giỡn",
+      "group": "main",
+      "example": "他在开玩笑。",
+      "example_meaning": "Anh ấy đang nói đùa."
+    },
+    {
+      "hanzi": "看病",
+      "pinyin": "kàn bìng",
+      "meaning": "Khám bệnh",
+      "group": "main",
+      "example": "我想去医院看病。",
+      "example_meaning": "Tôi muốn đến bệnh viện khám bệnh."
+    },
+    {
+      "hanzi": "生气",
+      "pinyin": "shēngqì",
+      "meaning": "Tức giận",
+      "group": "main",
+      "example": "妈妈生气了。",
+      "example_meaning": "Mẹ giận rồi."
+    },
+    {
+      "hanzi": "时候",
+      "pinyin": "shíhou",
+      "meaning": "Lúc, khi",
+      "group": "main",
+      "example": "这是什么时候的照片？",
+      "example_meaning": "Đây là bức ảnh chụp khi nào?"
+    },
+    {
+      "hanzi": "时间",
+      "pinyin": "shíjiān",
+      "meaning": "Thời gian",
+      "group": "main"
+    },
+    {
+      "hanzi": "但是",
+      "pinyin": "dànshì",
+      "meaning": "Nhưng, nhưng mà",
+      "group": "main",
+      "example": "弟弟很小，但是他会写字。",
+      "example_meaning": "Em trai còn nhỏ nhưng đã biết viết chữ."
+    },
+    {
+      "hanzi": "岁",
+      "pinyin": "suì",
+      "meaning": "Tuổi",
+      "group": "main",
+      "example": "我弟弟今年十岁。",
+      "example_meaning": "Năm nay em trai tôi mười tuổi."
+    },
+    {
+      "hanzi": "只",
+      "pinyin": "zhī",
+      "meaning": "Lượng từ cho động vật",
+      "group": "main",
+      "example": "我家有一只狗。",
+      "example_meaning": "Nhà tôi có một con chó."
+    },
+    {
+      "hanzi": "条",
+      "pinyin": "tiáo",
+      "meaning": "Lượng từ cho vật dài",
+      "group": "main"
+    },
+    {
+      "hanzi": "睡觉",
+      "pinyin": "shuìjiào",
+      "meaning": "Ngủ",
+      "group": "main",
+      "example": "爸爸现在睡觉了。",
+      "example_meaning": "Bây giờ bố đã ngủ rồi."
+    },
+    {
+      "hanzi": "起床",
+      "pinyin": "qǐchuáng",
+      "meaning": "Thức dậy, ra khỏi giường",
+      "group": "main",
+      "example": "我每天七点起床。",
+      "example_meaning": "Tôi thức dậy lúc bảy giờ mỗi ngày."
+    },
+    {
+      "hanzi": "口",
+      "pinyin": "kǒu",
+      "meaning": "Miệng; lượng từ đếm người trong gia đình",
+      "group": "extended",
+      "example": "你家有几口人？",
+      "example_meaning": "Gia đình bạn có mấy người?"
+    },
+    {
+      "hanzi": "老爸",
+      "pinyin": "lǎobà",
+      "meaning": "Bố (thân mật)",
+      "group": "extended"
+    },
+    {
+      "hanzi": "父亲",
+      "pinyin": "fùqīn",
+      "meaning": "Cha (trang trọng)",
+      "group": "extended"
+    },
+    {
+      "hanzi": "老妈",
+      "pinyin": "lǎomā",
+      "meaning": "Mẹ (thân mật)",
+      "group": "extended"
+    },
+    {
+      "hanzi": "母亲",
+      "pinyin": "mǔqīn",
+      "meaning": "Mẹ (trang trọng)",
+      "group": "extended"
+    },
+    {
+      "hanzi": "全家",
+      "pinyin": "quánjiā",
+      "meaning": "Cả gia đình",
+      "group": "extended",
+      "example": "这是我们全家的照片。",
+      "example_meaning": "Đây là ảnh của cả gia đình tôi."
+    },
+    {
+      "hanzi": "一家人",
+      "pinyin": "yì jiā rén",
+      "meaning": "Một gia đình",
+      "group": "extended"
+    },
+    {
+      "hanzi": "多大",
+      "pinyin": "duō dà",
+      "meaning": "Bao nhiêu tuổi",
+      "group": "extended"
+    },
+    {
+      "hanzi": "谁",
+      "pinyin": "shéi / shuí",
+      "meaning": "Ai",
+      "group": "extended",
+      "example": "这张照片是谁的？",
+      "example_meaning": "Bức ảnh này là của ai?"
+    },
+    {
+      "hanzi": "拍照",
+      "pinyin": "pāizhào",
+      "meaning": "Chụp ảnh",
+      "group": "extended"
+    },
+    {
+      "hanzi": "洗衣服",
+      "pinyin": "xǐ yīfu",
+      "meaning": "Giặt quần áo",
+      "group": "extended",
+      "example": "哥哥正在洗衣服。",
+      "example_meaning": "Anh trai đang giặt quần áo."
+    },
+    {
+      "hanzi": "洗碗",
+      "pinyin": "xǐ wǎn",
+      "meaning": "Rửa bát",
+      "group": "extended",
+      "example": "姐姐在洗碗。",
+      "example_meaning": "Chị gái đang rửa bát."
+    },
+    {
+      "hanzi": "干净",
+      "pinyin": "gānjìng",
+      "meaning": "Sạch sẽ",
+      "group": "extended"
+    },
+    {
+      "hanzi": "唱歌",
+      "pinyin": "chàng gē",
+      "meaning": "Hát",
+      "group": "extended",
+      "example": "妹妹正在唱歌。",
+      "example_meaning": "Em gái đang hát."
+    },
+    {
+      "hanzi": "救",
+      "pinyin": "jiù",
+      "meaning": "Cứu",
+      "group": "extended"
+    },
+    {
+      "hanzi": "打算",
+      "pinyin": "dǎsuàn",
+      "meaning": "Dự định",
+      "group": "extended"
+    },
+    {
+      "hanzi": "生病",
+      "pinyin": "shēngbìng",
+      "meaning": "Bị bệnh, ốm",
+      "group": "extended"
+    },
+    {
+      "hanzi": "才",
+      "pinyin": "cái",
+      "meaning": "Mới, mãi mới",
+      "group": "extended"
+    },
+    {
+      "hanzi": "什么时候",
+      "pinyin": "shénme shíhou",
+      "meaning": "Khi nào, lúc nào",
+      "group": "extended",
+      "example": "这是什么时候的照片？",
+      "example_meaning": "Đây là bức ảnh chụp khi nào?"
+    },
+    {
+      "hanzi": "有时候",
+      "pinyin": "yǒu shíhou",
+      "meaning": "Có lúc, thỉnh thoảng",
+      "group": "extended",
+      "example": "我有时候跟家人一起看电视。",
+      "example_meaning": "Thỉnh thoảng tôi xem ti vi cùng gia đình."
+    },
+    {
+      "hanzi": "一张照片",
+      "pinyin": "yì zhāng zhàopiàn",
+      "meaning": "Một bức ảnh",
+      "group": "extended"
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “爸爸” có nghĩa là gì?",
+      "options": [
+        "Nhưng, nhưng mà",
+        "Bố (thân mật)",
+        "Mẹ (trang trọng)",
+        "Bố"
+      ],
+      "accepted": [
+        "Bố"
+      ],
+      "explanation": "爸爸 đọc là bàba, nghĩa là Bố. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 611.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "706f59c8-5f78-4ab9-aa60-7fa7992c38b4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “bàba” và nghĩa “Bố”.",
+      "options": [
+        "一张照片",
+        "爸爸",
+        "时间",
+        "常"
+      ],
+      "accepted": [
+        "爸爸"
+      ],
+      "explanation": "爸爸 đọc là bàba, nghĩa là Bố. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 611.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "706f59c8-5f78-4ab9-aa60-7fa7992c38b4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “妈妈” có nghĩa là gì?",
+      "options": [
+        "Mẹ",
+        "Con trai",
+        "Khám bệnh",
+        "Nói đùa, đùa giỡn"
+      ],
+      "accepted": [
+        "Mẹ"
+      ],
+      "explanation": "妈妈 đọc là māma, nghĩa là Mẹ. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 612.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7f9e3a39-260c-41dd-87ce-b1ccedc24190"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “māma” và nghĩa “Mẹ”.",
+      "options": [
+        "生气",
+        "洗手间",
+        "妈妈",
+        "谁"
+      ],
+      "accepted": [
+        "妈妈"
+      ],
+      "explanation": "妈妈 đọc là māma, nghĩa là Mẹ. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 612.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7f9e3a39-260c-41dd-87ce-b1ccedc24190"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “弟弟” có nghĩa là gì?",
+      "options": [
+        "Ảnh, bức ảnh",
+        "Lúc, khi",
+        "Em trai",
+        "Và, với"
+      ],
+      "accepted": [
+        "Em trai"
+      ],
+      "explanation": "弟弟 đọc là dìdi, nghĩa là Em trai. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 613.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5fd33a7e-f379-46c0-8982-22405ba78e5b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “dìdi” và nghĩa “Em trai”.",
+      "options": [
+        "可爱",
+        "生气",
+        "弟弟",
+        "工人"
+      ],
+      "accepted": [
+        "弟弟"
+      ],
+      "explanation": "弟弟 đọc là dìdi, nghĩa là Em trai. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 613.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5fd33a7e-f379-46c0-8982-22405ba78e5b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “妹妹” có nghĩa là gì?",
+      "options": [
+        "Bao nhiêu tuổi",
+        "Bị bệnh, ốm",
+        "Con trai",
+        "Em gái"
+      ],
+      "accepted": [
+        "Em gái"
+      ],
+      "explanation": "妹妹 đọc là mèimei, nghĩa là Em gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 614.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "64e5ae1e-854a-4642-ae7c-dd085a26a811"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “mèimei” và nghĩa “Em gái”.",
+      "options": [
+        "哥哥",
+        "谁",
+        "妹妹",
+        "看病"
+      ],
+      "accepted": [
+        "妹妹"
+      ],
+      "explanation": "妹妹 đọc là mèimei, nghĩa là Em gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 614.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "64e5ae1e-854a-4642-ae7c-dd085a26a811"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “哥哥” có nghĩa là gì?",
+      "options": [
+        "Khám bệnh",
+        "Thời gian",
+        "Miệng; lượng từ đếm người trong gia đình",
+        "Anh trai"
+      ],
+      "accepted": [
+        "Anh trai"
+      ],
+      "explanation": "哥哥 đọc là gēge, nghĩa là Anh trai. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 615.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "02eeea27-2fee-4021-af03-aaa83f8a48c3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “gēge” và nghĩa “Anh trai”.",
+      "options": [
+        "唱歌",
+        "一家人",
+        "工人",
+        "哥哥"
+      ],
+      "accepted": [
+        "哥哥"
+      ],
+      "explanation": "哥哥 đọc là gēge, nghĩa là Anh trai. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 615.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "02eeea27-2fee-4021-af03-aaa83f8a48c3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “姐姐” có nghĩa là gì?",
+      "options": [
+        "Hát",
+        "Chị gái",
+        "Một gia đình",
+        "Mẹ"
+      ],
+      "accepted": [
+        "Chị gái"
+      ],
+      "explanation": "姐姐 đọc là jiějie, nghĩa là Chị gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 616.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f0cb158d-bf49-4200-8211-b83269371114"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “jiějie” và nghĩa “Chị gái”.",
+      "options": [
+        "父亲",
+        "打算",
+        "姐姐",
+        "开玩笑"
+      ],
+      "accepted": [
+        "姐姐"
+      ],
+      "explanation": "姐姐 đọc là jiějie, nghĩa là Chị gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 616.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f0cb158d-bf49-4200-8211-b83269371114"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “儿子” có nghĩa là gì?",
+      "options": [
+        "Con trai",
+        "Lượng từ cho vật dài",
+        "Mới, mãi mới",
+        "Chụp ảnh"
+      ],
+      "accepted": [
+        "Con trai"
+      ],
+      "explanation": "儿子 đọc là érzi, nghĩa là Con trai. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 617.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "396ec282-c137-4bcf-9043-3b52783818a3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “érzi” và nghĩa “Con trai”.",
+      "options": [
+        "女儿",
+        "父亲",
+        "一家人",
+        "儿子"
+      ],
+      "accepted": [
+        "儿子"
+      ],
+      "explanation": "儿子 đọc là érzi, nghĩa là Con trai. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 617.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "396ec282-c137-4bcf-9043-3b52783818a3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “女儿” có nghĩa là gì?",
+      "options": [
+        "Con, đứa trẻ",
+        "Con gái",
+        "Rửa bát",
+        "Sạch sẽ"
+      ],
+      "accepted": [
+        "Con gái"
+      ],
+      "explanation": "女儿 đọc là nǚ'ér, nghĩa là Con gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 618.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1faa5bfc-be25-4c06-8756-e709e58936e6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “nǚ'ér” và nghĩa “Con gái”.",
+      "options": [
+        "律师",
+        "岁",
+        "和",
+        "女儿"
+      ],
+      "accepted": [
+        "女儿"
+      ],
+      "explanation": "女儿 đọc là nǚ'ér, nghĩa là Con gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 618.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1faa5bfc-be25-4c06-8756-e709e58936e6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “照片” có nghĩa là gì?",
+      "options": [
+        "Ảnh, bức ảnh",
+        "Bao nhiêu tuổi",
+        "Giặt quần áo",
+        "Ngủ"
+      ],
+      "accepted": [
+        "Ảnh, bức ảnh"
+      ],
+      "explanation": "照片 đọc là zhàopiàn, nghĩa là Ảnh, bức ảnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 619.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "136c41d9-7f3a-4828-8c90-0c3d04fccc39"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “zhàopiàn” và nghĩa “Ảnh, bức ảnh”.",
+      "options": [
+        "谁",
+        "母亲",
+        "拍照",
+        "照片"
+      ],
+      "accepted": [
+        "照片"
+      ],
+      "explanation": "照片 đọc là zhàopiàn, nghĩa là Ảnh, bức ảnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 619.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "136c41d9-7f3a-4828-8c90-0c3d04fccc39"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “洗” có nghĩa là gì?",
+      "options": [
+        "Chó",
+        "Ngủ",
+        "Rửa, giặt, gội",
+        "Rửa bát"
+      ],
+      "accepted": [
+        "Rửa, giặt, gội"
+      ],
+      "explanation": "洗 đọc là xǐ, nghĩa là Rửa, giặt, gội. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 620.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e9826ae4-cc18-4071-8667-0b21a0539c89"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “xǐ” và nghĩa “Rửa, giặt, gội”.",
+      "options": [
+        "起床",
+        "洗衣服",
+        "洗",
+        "干净"
+      ],
+      "accepted": [
+        "洗"
+      ],
+      "explanation": "洗 đọc là xǐ, nghĩa là Rửa, giặt, gội. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 620.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e9826ae4-cc18-4071-8667-0b21a0539c89"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “洗手间” có nghĩa là gì?",
+      "options": [
+        "Ai",
+        "Nhà vệ sinh",
+        "Rửa bát",
+        "Bố (thân mật)"
+      ],
+      "accepted": [
+        "Nhà vệ sinh"
+      ],
+      "explanation": "洗手间 đọc là xǐshǒujiān, nghĩa là Nhà vệ sinh. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 621.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "64483049-fc05-4f4c-aea1-024cca35d54d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “xǐshǒujiān” và nghĩa “Nhà vệ sinh”.",
+      "options": [
+        "姐姐",
+        "洗手间",
+        "口",
+        "父亲"
+      ],
+      "accepted": [
+        "洗手间"
+      ],
+      "explanation": "洗手间 đọc là xǐshǒujiān, nghĩa là Nhà vệ sinh. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 621.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "64483049-fc05-4f4c-aea1-024cca35d54d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “和” có nghĩa là gì?",
+      "options": [
+        "Và, với",
+        "Lúc, khi",
+        "Con gái",
+        "Người nhà"
+      ],
+      "accepted": [
+        "Và, với"
+      ],
+      "explanation": "和 đọc là hé, nghĩa là Và, với. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 622.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fd2a86cd-1fc3-46b9-b46b-98f1b2fb9aef"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “hé” và nghĩa “Và, với”.",
+      "options": [
+        "爸爸",
+        "和",
+        "打算",
+        "弟弟"
+      ],
+      "accepted": [
+        "和"
+      ],
+      "explanation": "和 đọc là hé, nghĩa là Và, với. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 622.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fd2a86cd-1fc3-46b9-b46b-98f1b2fb9aef"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “律师” có nghĩa là gì?",
+      "options": [
+        "Mẹ (trang trọng)",
+        "Lượng từ cho vật dài",
+        "Luật sư",
+        "Anh trai"
+      ],
+      "accepted": [
+        "Luật sư"
+      ],
+      "explanation": "律师 đọc là lǜshī, nghĩa là Luật sư. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 623.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a5fc0eec-cf53-43db-9dbd-c9d4008cd9fb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “lǜshī” và nghĩa “Luật sư”.",
+      "options": [
+        "猫",
+        "时间",
+        "哥哥",
+        "律师"
+      ],
+      "accepted": [
+        "律师"
+      ],
+      "explanation": "律师 đọc là lǜshī, nghĩa là Luật sư. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 623.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a5fc0eec-cf53-43db-9dbd-c9d4008cd9fb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “医生” có nghĩa là gì?",
+      "options": [
+        "Bác sĩ",
+        "Rửa bát",
+        "Cứu",
+        "Người khác"
+      ],
+      "accepted": [
+        "Bác sĩ"
+      ],
+      "explanation": "医生 đọc là yīshēng, nghĩa là Bác sĩ. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 624.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5e61cc91-4505-44de-945c-e1fe59544305"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “yīshēng” và nghĩa “Bác sĩ”.",
+      "options": [
+        "照片",
+        "医生",
+        "洗",
+        "只"
+      ],
+      "accepted": [
+        "医生"
+      ],
+      "explanation": "医生 đọc là yīshēng, nghĩa là Bác sĩ. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 624.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5e61cc91-4505-44de-945c-e1fe59544305"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “工人” có nghĩa là gì?",
+      "options": [
+        "Công nhân",
+        "Ngủ",
+        "Cha (trang trọng)",
+        "Chị gái"
+      ],
+      "accepted": [
+        "Công nhân"
+      ],
+      "explanation": "工人 đọc là gōngrén, nghĩa là Công nhân. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 625.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "519aa6eb-a9c5-49fc-9e90-ded616f7c71c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “gōngrén” và nghĩa “Công nhân”.",
+      "options": [
+        "老爸",
+        "歌",
+        "工人",
+        "看病"
+      ],
+      "accepted": [
+        "工人"
+      ],
+      "explanation": "工人 đọc là gōngrén, nghĩa là Công nhân. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 625.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "519aa6eb-a9c5-49fc-9e90-ded616f7c71c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “家人” có nghĩa là gì?",
+      "options": [
+        "Con trai",
+        "Người nhà",
+        "Ai",
+        "Bài hát"
+      ],
+      "accepted": [
+        "Người nhà"
+      ],
+      "explanation": "家人 đọc là jiārén, nghĩa là Người nhà. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 626.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ddc14652-e3a2-41cf-a866-86be0182b7d0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “jiārén” và nghĩa “Người nhà”.",
+      "options": [
+        "工人",
+        "什么时候",
+        "洗碗",
+        "家人"
+      ],
+      "accepted": [
+        "家人"
+      ],
+      "explanation": "家人 đọc là jiārén, nghĩa là Người nhà. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 626.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ddc14652-e3a2-41cf-a866-86be0182b7d0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “孩子” có nghĩa là gì?",
+      "options": [
+        "Chị gái",
+        "Con, đứa trẻ",
+        "Bố (thân mật)",
+        "Bác sĩ"
+      ],
+      "accepted": [
+        "Con, đứa trẻ"
+      ],
+      "explanation": "孩子 đọc là háizi, nghĩa là Con, đứa trẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 627.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "328e0810-0251-4e07-b624-6fda8a842fc5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “háizi” và nghĩa “Con, đứa trẻ”.",
+      "options": [
+        "只",
+        "妈妈",
+        "岁",
+        "孩子"
+      ],
+      "accepted": [
+        "孩子"
+      ],
+      "explanation": "孩子 đọc là háizi, nghĩa là Con, đứa trẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 627.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "328e0810-0251-4e07-b624-6fda8a842fc5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “别人” có nghĩa là gì?",
+      "options": [
+        "Rửa bát",
+        "Dự định",
+        "Bao nhiêu tuổi",
+        "Người khác"
+      ],
+      "accepted": [
+        "Người khác"
+      ],
+      "explanation": "别人 đọc là biérén, nghĩa là Người khác. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 628.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ad1d9934-42e4-4482-b6ac-cc0b81473e02"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “biérén” và nghĩa “Người khác”.",
+      "options": [
+        "猫",
+        "唱歌",
+        "妈妈",
+        "别人"
+      ],
+      "accepted": [
+        "别人"
+      ],
+      "explanation": "别人 đọc là biérén, nghĩa là Người khác. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 628.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ad1d9934-42e4-4482-b6ac-cc0b81473e02"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “狗” có nghĩa là gì?",
+      "options": [
+        "Bố (thân mật)",
+        "Hát",
+        "Người nhà",
+        "Chó"
+      ],
+      "accepted": [
+        "Chó"
+      ],
+      "explanation": "狗 đọc là gǒu, nghĩa là Chó. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 629.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "15102307-438e-47cd-98f1-b08819fd282f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “gǒu” và nghĩa “Chó”.",
+      "options": [
+        "时间",
+        "医生",
+        "照片",
+        "狗"
+      ],
+      "accepted": [
+        "狗"
+      ],
+      "explanation": "狗 đọc là gǒu, nghĩa là Chó. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 629.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "15102307-438e-47cd-98f1-b08819fd282f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “猫” có nghĩa là gì?",
+      "options": [
+        "Chó",
+        "Con trai",
+        "Mèo",
+        "Có lúc, thỉnh thoảng"
+      ],
+      "accepted": [
+        "Mèo"
+      ],
+      "explanation": "猫 đọc là māo, nghĩa là Mèo. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 630.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "182b529e-4796-45c0-81d5-87299fb00547"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “māo” và nghĩa “Mèo”.",
+      "options": [
+        "猫",
+        "才",
+        "生病",
+        "一家人"
+      ],
+      "accepted": [
+        "猫"
+      ],
+      "explanation": "猫 đọc là māo, nghĩa là Mèo. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 630.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "182b529e-4796-45c0-81d5-87299fb00547"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “可爱” có nghĩa là gì?",
+      "options": [
+        "Chụp ảnh",
+        "Đáng yêu",
+        "Nhà vệ sinh",
+        "Lúc, khi"
+      ],
+      "accepted": [
+        "Đáng yêu"
+      ],
+      "explanation": "可爱 đọc là kě'ài, nghĩa là Đáng yêu. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 631.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e3d5a7bc-b7ae-4cb0-9e6f-0f47d28ec6ec"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “kě'ài” và nghĩa “Đáng yêu”.",
+      "options": [
+        "起床",
+        "干净",
+        "可爱",
+        "女儿"
+      ],
+      "accepted": [
+        "可爱"
+      ],
+      "explanation": "可爱 đọc là kě'ài, nghĩa là Đáng yêu. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 631.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e3d5a7bc-b7ae-4cb0-9e6f-0f47d28ec6ec"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “唱” có nghĩa là gì?",
+      "options": [
+        "Nói đùa, đùa giỡn",
+        "Một bức ảnh",
+        "Một gia đình",
+        "Hát"
+      ],
+      "accepted": [
+        "Hát"
+      ],
+      "explanation": "唱 đọc là chàng, nghĩa là Hát. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 632.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "99d38d64-e35e-4d0c-b194-6988f88c6851"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “chàng” và nghĩa “Hát”.",
+      "options": [
+        "口",
+        "唱",
+        "老爸",
+        "谁"
+      ],
+      "accepted": [
+        "唱"
+      ],
+      "explanation": "唱 đọc là chàng, nghĩa là Hát. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 632.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "99d38d64-e35e-4d0c-b194-6988f88c6851"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “歌” có nghĩa là gì?",
+      "options": [
+        "Anh trai",
+        "Hát",
+        "Mẹ (trang trọng)",
+        "Bài hát"
+      ],
+      "accepted": [
+        "Bài hát"
+      ],
+      "explanation": "歌 đọc là gē, nghĩa là Bài hát. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 633.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9caaa03b-1281-4353-bcab-f23cae071c04"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “gē” và nghĩa “Bài hát”.",
+      "options": [
+        "歌",
+        "全家",
+        "工人",
+        "看病"
+      ],
+      "accepted": [
+        "歌"
+      ],
+      "explanation": "歌 đọc là gē, nghĩa là Bài hát. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 633.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9caaa03b-1281-4353-bcab-f23cae071c04"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “常” có nghĩa là gì?",
+      "options": [
+        "Khám bệnh",
+        "Anh trai",
+        "Mẹ (thân mật)",
+        "Thường, thường xuyên"
+      ],
+      "accepted": [
+        "Thường, thường xuyên"
+      ],
+      "explanation": "常 đọc là cháng, nghĩa là Thường, thường xuyên. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 634.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4792c79f-9871-4815-b6ed-107b37155ed7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “cháng” và nghĩa “Thường, thường xuyên”.",
+      "options": [
+        "父亲",
+        "老妈",
+        "常",
+        "时间"
+      ],
+      "accepted": [
+        "常"
+      ],
+      "explanation": "常 đọc là cháng, nghĩa là Thường, thường xuyên. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 634.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4792c79f-9871-4815-b6ed-107b37155ed7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “开玩笑” có nghĩa là gì?",
+      "options": [
+        "Luật sư",
+        "Nói đùa, đùa giỡn",
+        "Bố (thân mật)",
+        "Chó"
+      ],
+      "accepted": [
+        "Nói đùa, đùa giỡn"
+      ],
+      "explanation": "开玩笑 đọc là kāi wánxiào, nghĩa là Nói đùa, đùa giỡn. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 635.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "093d6639-cccb-477d-be01-f0ad232dae6b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “kāi wánxiào” và nghĩa “Nói đùa, đùa giỡn”.",
+      "options": [
+        "别人",
+        "才",
+        "开玩笑",
+        "洗"
+      ],
+      "accepted": [
+        "开玩笑"
+      ],
+      "explanation": "开玩笑 đọc là kāi wánxiào, nghĩa là Nói đùa, đùa giỡn. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 635.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "093d6639-cccb-477d-be01-f0ad232dae6b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “看病” có nghĩa là gì?",
+      "options": [
+        "Khám bệnh",
+        "Con gái",
+        "Lúc, khi",
+        "Con trai"
+      ],
+      "accepted": [
+        "Khám bệnh"
+      ],
+      "explanation": "看病 đọc là kàn bìng, nghĩa là Khám bệnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 636.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9fe4896a-e662-45f5-9ec7-b9900dd9a450"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “kàn bìng” và nghĩa “Khám bệnh”.",
+      "options": [
+        "起床",
+        "孩子",
+        "洗衣服",
+        "看病"
+      ],
+      "accepted": [
+        "看病"
+      ],
+      "explanation": "看病 đọc là kàn bìng, nghĩa là Khám bệnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 636.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9fe4896a-e662-45f5-9ec7-b9900dd9a450"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “生气” có nghĩa là gì?",
+      "options": [
+        "Một gia đình",
+        "Ngủ",
+        "Tức giận",
+        "Bác sĩ"
+      ],
+      "accepted": [
+        "Tức giận"
+      ],
+      "explanation": "生气 đọc là shēngqì, nghĩa là Tức giận. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 637.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "82f55748-1026-4079-bb10-d8a86fb6f246"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “shēngqì” và nghĩa “Tức giận”.",
+      "options": [
+        "歌",
+        "全家",
+        "拍照",
+        "生气"
+      ],
+      "accepted": [
+        "生气"
+      ],
+      "explanation": "生气 đọc là shēngqì, nghĩa là Tức giận. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 637.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "82f55748-1026-4079-bb10-d8a86fb6f246"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “时候” có nghĩa là gì?",
+      "options": [
+        "Lúc, khi",
+        "Nhà vệ sinh",
+        "Con trai",
+        "Bài hát"
+      ],
+      "accepted": [
+        "Lúc, khi"
+      ],
+      "explanation": "时候 đọc là shíhou, nghĩa là Lúc, khi. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 638.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7fae977a-0e2c-4556-bbe4-fc6dccfef811"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “shíhou” và nghĩa “Lúc, khi”.",
+      "options": [
+        "开玩笑",
+        "洗碗",
+        "母亲",
+        "时候"
+      ],
+      "accepted": [
+        "时候"
+      ],
+      "explanation": "时候 đọc là shíhou, nghĩa là Lúc, khi. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 638.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7fae977a-0e2c-4556-bbe4-fc6dccfef811"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “时间” có nghĩa là gì?",
+      "options": [
+        "Cha (trang trọng)",
+        "Dự định",
+        "Thời gian",
+        "Ngủ"
+      ],
+      "accepted": [
+        "Thời gian"
+      ],
+      "explanation": "时间 đọc là shíjiān, nghĩa là Thời gian. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 639.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "15165a82-4101-4bb7-9eba-1f38a991aba5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “shíjiān” và nghĩa “Thời gian”.",
+      "options": [
+        "时间",
+        "时候",
+        "律师",
+        "常"
+      ],
+      "accepted": [
+        "时间"
+      ],
+      "explanation": "时间 đọc là shíjiān, nghĩa là Thời gian. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 639.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "15165a82-4101-4bb7-9eba-1f38a991aba5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “但是” có nghĩa là gì?",
+      "options": [
+        "Lượng từ cho vật dài",
+        "Nhưng, nhưng mà",
+        "Đáng yêu",
+        "Lượng từ cho động vật"
+      ],
+      "accepted": [
+        "Nhưng, nhưng mà"
+      ],
+      "explanation": "但是 đọc là dànshì, nghĩa là Nhưng, nhưng mà. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 640.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4b73c816-3be9-4fd3-b6ac-82a2f72962ed"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “dànshì” và nghĩa “Nhưng, nhưng mà”.",
+      "options": [
+        "起床",
+        "睡觉",
+        "但是",
+        "洗衣服"
+      ],
+      "accepted": [
+        "但是"
+      ],
+      "explanation": "但是 đọc là dànshì, nghĩa là Nhưng, nhưng mà. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 640.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4b73c816-3be9-4fd3-b6ac-82a2f72962ed"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “岁” có nghĩa là gì?",
+      "options": [
+        "Chị gái",
+        "Tuổi",
+        "Lượng từ cho vật dài",
+        "Mẹ"
+      ],
+      "accepted": [
+        "Tuổi"
+      ],
+      "explanation": "岁 đọc là suì, nghĩa là Tuổi. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 641.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1014ca1a-862c-434f-8eb3-376e34d7957b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “suì” và nghĩa “Tuổi”.",
+      "options": [
+        "洗",
+        "常",
+        "女儿",
+        "岁"
+      ],
+      "accepted": [
+        "岁"
+      ],
+      "explanation": "岁 đọc là suì, nghĩa là Tuổi. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 641.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1014ca1a-862c-434f-8eb3-376e34d7957b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “只” có nghĩa là gì?",
+      "options": [
+        "Em gái",
+        "Lượng từ cho động vật",
+        "Cứu",
+        "Bác sĩ"
+      ],
+      "accepted": [
+        "Lượng từ cho động vật"
+      ],
+      "explanation": "只 đọc là zhī, nghĩa là Lượng từ cho động vật. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 642.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c8e41b0d-042f-40a0-80cb-c689b383222b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “zhī” và nghĩa “Lượng từ cho động vật”.",
+      "options": [
+        "儿子",
+        "家人",
+        "只",
+        "别人"
+      ],
+      "accepted": [
+        "只"
+      ],
+      "explanation": "只 đọc là zhī, nghĩa là Lượng từ cho động vật. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 642.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c8e41b0d-042f-40a0-80cb-c689b383222b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “条” có nghĩa là gì?",
+      "options": [
+        "Ai",
+        "Thức dậy, ra khỏi giường",
+        "Lượng từ cho vật dài",
+        "Và, với"
+      ],
+      "accepted": [
+        "Lượng từ cho vật dài"
+      ],
+      "explanation": "条 đọc là tiáo, nghĩa là Lượng từ cho vật dài. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 643.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d7207629-b157-4343-a85d-9a1723129e2e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “tiáo” và nghĩa “Lượng từ cho vật dài”.",
+      "options": [
+        "条",
+        "但是",
+        "看病",
+        "干净"
+      ],
+      "accepted": [
+        "条"
+      ],
+      "explanation": "条 đọc là tiáo, nghĩa là Lượng từ cho vật dài. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 643.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d7207629-b157-4343-a85d-9a1723129e2e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “睡觉” có nghĩa là gì?",
+      "options": [
+        "Rửa, giặt, gội",
+        "Cứu",
+        "Hát",
+        "Ngủ"
+      ],
+      "accepted": [
+        "Ngủ"
+      ],
+      "explanation": "睡觉 đọc là shuìjiào, nghĩa là Ngủ. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 644.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "559465dc-927b-4961-82b7-ad3f536150a7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “shuìjiào” và nghĩa “Ngủ”.",
+      "options": [
+        "看病",
+        "只",
+        "干净",
+        "睡觉"
+      ],
+      "accepted": [
+        "睡觉"
+      ],
+      "explanation": "睡觉 đọc là shuìjiào, nghĩa là Ngủ. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 644.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "559465dc-927b-4961-82b7-ad3f536150a7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “起床” có nghĩa là gì?",
+      "options": [
+        "Thức dậy, ra khỏi giường",
+        "Nhưng, nhưng mà",
+        "Tuổi",
+        "Có lúc, thỉnh thoảng"
+      ],
+      "accepted": [
+        "Thức dậy, ra khỏi giường"
+      ],
+      "explanation": "起床 đọc là qǐchuáng, nghĩa là Thức dậy, ra khỏi giường. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 645.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "40a1b618-e26e-4597-b931-1e8498c3f63c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “qǐchuáng” và nghĩa “Thức dậy, ra khỏi giường”.",
+      "options": [
+        "岁",
+        "才",
+        "生气",
+        "起床"
+      ],
+      "accepted": [
+        "起床"
+      ],
+      "explanation": "起床 đọc là qǐchuáng, nghĩa là Thức dậy, ra khỏi giường. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 645.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "40a1b618-e26e-4597-b931-1e8498c3f63c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “口” có nghĩa là gì?",
+      "options": [
+        "Khám bệnh",
+        "Con trai",
+        "Miệng; lượng từ đếm người trong gia đình",
+        "Thời gian"
+      ],
+      "accepted": [
+        "Miệng; lượng từ đếm người trong gia đình"
+      ],
+      "explanation": "口 đọc là kǒu, nghĩa là Miệng; lượng từ đếm người trong gia đình. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 649.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fe9a7ef8-df6f-42fd-9e53-947427eb2084"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “kǒu” và nghĩa “Miệng; lượng từ đếm người trong gia đình”.",
+      "options": [
+        "生病",
+        "口",
+        "可爱",
+        "和"
+      ],
+      "accepted": [
+        "口"
+      ],
+      "explanation": "口 đọc là kǒu, nghĩa là Miệng; lượng từ đếm người trong gia đình. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 649.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fe9a7ef8-df6f-42fd-9e53-947427eb2084"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “老爸” có nghĩa là gì?",
+      "options": [
+        "Sạch sẽ",
+        "Bố (thân mật)",
+        "Chụp ảnh",
+        "Ai"
+      ],
+      "accepted": [
+        "Bố (thân mật)"
+      ],
+      "explanation": "老爸 đọc là lǎobà, nghĩa là Bố (thân mật). Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 650.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f396e6af-5c39-4a45-a588-13e9b623c69f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “lǎobà” và nghĩa “Bố (thân mật)”.",
+      "options": [
+        "生病",
+        "老爸",
+        "律师",
+        "可爱"
+      ],
+      "accepted": [
+        "老爸"
+      ],
+      "explanation": "老爸 đọc là lǎobà, nghĩa là Bố (thân mật). Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 650.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f396e6af-5c39-4a45-a588-13e9b623c69f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “父亲” có nghĩa là gì?",
+      "options": [
+        "Cha (trang trọng)",
+        "Giặt quần áo",
+        "Mới, mãi mới",
+        "Nói đùa, đùa giỡn"
+      ],
+      "accepted": [
+        "Cha (trang trọng)"
+      ],
+      "explanation": "父亲 đọc là fùqīn, nghĩa là Cha (trang trọng). Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 651.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "197bec2f-cd0c-42d3-b8da-53b155a06fc6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “fùqīn” và nghĩa “Cha (trang trọng)”.",
+      "options": [
+        "猫",
+        "可爱",
+        "父亲",
+        "洗手间"
+      ],
+      "accepted": [
+        "父亲"
+      ],
+      "explanation": "父亲 đọc là fùqīn, nghĩa là Cha (trang trọng). Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 651.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "197bec2f-cd0c-42d3-b8da-53b155a06fc6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “老妈” có nghĩa là gì?",
+      "options": [
+        "Cả gia đình",
+        "Khám bệnh",
+        "Mẹ (thân mật)",
+        "Con, đứa trẻ"
+      ],
+      "accepted": [
+        "Mẹ (thân mật)"
+      ],
+      "explanation": "老妈 đọc là lǎomā, nghĩa là Mẹ (thân mật). Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 652.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b3c6776f-6c04-4af7-9d5c-2121730d6c00"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “lǎomā” và nghĩa “Mẹ (thân mật)”.",
+      "options": [
+        "老妈",
+        "开玩笑",
+        "儿子",
+        "拍照"
+      ],
+      "accepted": [
+        "老妈"
+      ],
+      "explanation": "老妈 đọc là lǎomā, nghĩa là Mẹ (thân mật). Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 652.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b3c6776f-6c04-4af7-9d5c-2121730d6c00"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “母亲” có nghĩa là gì?",
+      "options": [
+        "Thường, thường xuyên",
+        "Mẹ",
+        "Mẹ (trang trọng)",
+        "Một gia đình"
+      ],
+      "accepted": [
+        "Mẹ (trang trọng)"
+      ],
+      "explanation": "母亲 đọc là mǔqīn, nghĩa là Mẹ (trang trọng). Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 653.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6a774c74-c0ed-4f69-b8c3-c4b121dafa68"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “mǔqīn” và nghĩa “Mẹ (trang trọng)”.",
+      "options": [
+        "母亲",
+        "孩子",
+        "哥哥",
+        "时候"
+      ],
+      "accepted": [
+        "母亲"
+      ],
+      "explanation": "母亲 đọc là mǔqīn, nghĩa là Mẹ (trang trọng). Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 653.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6a774c74-c0ed-4f69-b8c3-c4b121dafa68"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “全家” có nghĩa là gì?",
+      "options": [
+        "Cả gia đình",
+        "Rửa bát",
+        "Bác sĩ",
+        "Con trai"
+      ],
+      "accepted": [
+        "Cả gia đình"
+      ],
+      "explanation": "全家 đọc là quánjiā, nghĩa là Cả gia đình. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 654.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e92a8945-6fc0-4aa6-aeee-faea547da033"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “quánjiā” và nghĩa “Cả gia đình”.",
+      "options": [
+        "时间",
+        "常",
+        "全家",
+        "可爱"
+      ],
+      "accepted": [
+        "全家"
+      ],
+      "explanation": "全家 đọc là quánjiā, nghĩa là Cả gia đình. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 654.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e92a8945-6fc0-4aa6-aeee-faea547da033"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “一家人” có nghĩa là gì?",
+      "options": [
+        "Em gái",
+        "Con gái",
+        "Công nhân",
+        "Một gia đình"
+      ],
+      "accepted": [
+        "Một gia đình"
+      ],
+      "explanation": "一家人 đọc là yì jiā rén, nghĩa là Một gia đình. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 655.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3abaf4b1-0c37-4bd3-a2b8-a2ddf5ead642"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “yì jiā rén” và nghĩa “Một gia đình”.",
+      "options": [
+        "全家",
+        "洗手间",
+        "一家人",
+        "起床"
+      ],
+      "accepted": [
+        "一家人"
+      ],
+      "explanation": "一家人 đọc là yì jiā rén, nghĩa là Một gia đình. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 655.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3abaf4b1-0c37-4bd3-a2b8-a2ddf5ead642"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “多大” có nghĩa là gì?",
+      "options": [
+        "Bao nhiêu tuổi",
+        "Người nhà",
+        "Con gái",
+        "Cả gia đình"
+      ],
+      "accepted": [
+        "Bao nhiêu tuổi"
+      ],
+      "explanation": "多大 đọc là duō dà, nghĩa là Bao nhiêu tuổi. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 656.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "39face21-6050-46a7-9d0f-6c9390a9b8ef"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “duō dà” và nghĩa “Bao nhiêu tuổi”.",
+      "options": [
+        "唱",
+        "多大",
+        "父亲",
+        "姐姐"
+      ],
+      "accepted": [
+        "多大"
+      ],
+      "explanation": "多大 đọc là duō dà, nghĩa là Bao nhiêu tuổi. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 656.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "39face21-6050-46a7-9d0f-6c9390a9b8ef"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “谁” có nghĩa là gì?",
+      "options": [
+        "Mới, mãi mới",
+        "Ai",
+        "Chụp ảnh",
+        "Con gái"
+      ],
+      "accepted": [
+        "Ai"
+      ],
+      "explanation": "谁 đọc là shéi / shuí, nghĩa là Ai. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 657.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fd07342f-df67-4578-8687-0d489cd29d9b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “shéi / shuí” và nghĩa “Ai”.",
+      "options": [
+        "洗碗",
+        "打算",
+        "常",
+        "谁"
+      ],
+      "accepted": [
+        "谁"
+      ],
+      "explanation": "谁 đọc là shéi / shuí, nghĩa là Ai. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 657.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fd07342f-df67-4578-8687-0d489cd29d9b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “拍照” có nghĩa là gì?",
+      "options": [
+        "Ngủ",
+        "Đáng yêu",
+        "Bài hát",
+        "Chụp ảnh"
+      ],
+      "accepted": [
+        "Chụp ảnh"
+      ],
+      "explanation": "拍照 đọc là pāizhào, nghĩa là Chụp ảnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 661.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9696022f-ea67-43de-a453-ce0ec867eae7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “pāizhào” và nghĩa “Chụp ảnh”.",
+      "options": [
+        "一张照片",
+        "多大",
+        "唱歌",
+        "拍照"
+      ],
+      "accepted": [
+        "拍照"
+      ],
+      "explanation": "拍照 đọc là pāizhào, nghĩa là Chụp ảnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 661.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9696022f-ea67-43de-a453-ce0ec867eae7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “洗衣服” có nghĩa là gì?",
+      "options": [
+        "Chị gái",
+        "Luật sư",
+        "Giặt quần áo",
+        "Thức dậy, ra khỏi giường"
+      ],
+      "accepted": [
+        "Giặt quần áo"
+      ],
+      "explanation": "洗衣服 đọc là xǐ yīfu, nghĩa là Giặt quần áo. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 662.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7b50a627-bb8e-4b75-86b3-444bc863d14f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “xǐ yīfu” và nghĩa “Giặt quần áo”.",
+      "options": [
+        "时间",
+        "岁",
+        "洗衣服",
+        "老妈"
+      ],
+      "accepted": [
+        "洗衣服"
+      ],
+      "explanation": "洗衣服 đọc là xǐ yīfu, nghĩa là Giặt quần áo. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 662.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7b50a627-bb8e-4b75-86b3-444bc863d14f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “洗碗” có nghĩa là gì?",
+      "options": [
+        "Thời gian",
+        "Người nhà",
+        "Rửa bát",
+        "Bài hát"
+      ],
+      "accepted": [
+        "Rửa bát"
+      ],
+      "explanation": "洗碗 đọc là xǐ wǎn, nghĩa là Rửa bát. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 663.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "37208562-2870-4d70-b43f-d03d945f65c2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “xǐ wǎn” và nghĩa “Rửa bát”.",
+      "options": [
+        "生气",
+        "才",
+        "洗碗",
+        "谁"
+      ],
+      "accepted": [
+        "洗碗"
+      ],
+      "explanation": "洗碗 đọc là xǐ wǎn, nghĩa là Rửa bát. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 663.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "37208562-2870-4d70-b43f-d03d945f65c2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “干净” có nghĩa là gì?",
+      "options": [
+        "Hát",
+        "Một gia đình",
+        "Cứu",
+        "Sạch sẽ"
+      ],
+      "accepted": [
+        "Sạch sẽ"
+      ],
+      "explanation": "干净 đọc là gānjìng, nghĩa là Sạch sẽ. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 664.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5527a386-027d-4fb2-8cda-958d97094796"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “gānjìng” và nghĩa “Sạch sẽ”.",
+      "options": [
+        "才",
+        "干净",
+        "但是",
+        "别人"
+      ],
+      "accepted": [
+        "干净"
+      ],
+      "explanation": "干净 đọc là gānjìng, nghĩa là Sạch sẽ. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 664.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5527a386-027d-4fb2-8cda-958d97094796"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “唱歌” có nghĩa là gì?",
+      "options": [
+        "Chị gái",
+        "Hát",
+        "Miệng; lượng từ đếm người trong gia đình",
+        "Thường, thường xuyên"
+      ],
+      "accepted": [
+        "Hát"
+      ],
+      "explanation": "唱歌 đọc là chàng gē, nghĩa là Hát. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 665.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "787e94c7-9212-4736-a76f-3c083a396406"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “chàng gē” và nghĩa “Hát”.",
+      "options": [
+        "救",
+        "哥哥",
+        "唱歌",
+        "女儿"
+      ],
+      "accepted": [
+        "唱歌"
+      ],
+      "explanation": "唱歌 đọc là chàng gē, nghĩa là Hát. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 665.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "787e94c7-9212-4736-a76f-3c083a396406"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “救” có nghĩa là gì?",
+      "options": [
+        "Cứu",
+        "Khám bệnh",
+        "Nhà vệ sinh",
+        "Bị bệnh, ốm"
+      ],
+      "accepted": [
+        "Cứu"
+      ],
+      "explanation": "救 đọc là jiù, nghĩa là Cứu. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 666.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bd7f4db8-c7d2-430b-b22e-cd3e789e8dce"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “jiù” và nghĩa “Cứu”.",
+      "options": [
+        "常",
+        "条",
+        "多大",
+        "救"
+      ],
+      "accepted": [
+        "救"
+      ],
+      "explanation": "救 đọc là jiù, nghĩa là Cứu. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 666.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bd7f4db8-c7d2-430b-b22e-cd3e789e8dce"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “打算” có nghĩa là gì?",
+      "options": [
+        "Dự định",
+        "Lúc, khi",
+        "Hát",
+        "Cứu"
+      ],
+      "accepted": [
+        "Dự định"
+      ],
+      "explanation": "打算 đọc là dǎsuàn, nghĩa là Dự định. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 667.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "deeb8ecb-552e-4966-a358-dfcd1a617032"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “dǎsuàn” và nghĩa “Dự định”.",
+      "options": [
+        "生病",
+        "只",
+        "工人",
+        "打算"
+      ],
+      "accepted": [
+        "打算"
+      ],
+      "explanation": "打算 đọc là dǎsuàn, nghĩa là Dự định. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 667.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "deeb8ecb-552e-4966-a358-dfcd1a617032"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “生病” có nghĩa là gì?",
+      "options": [
+        "Bị bệnh, ốm",
+        "Nhưng, nhưng mà",
+        "Nhà vệ sinh",
+        "Bác sĩ"
+      ],
+      "accepted": [
+        "Bị bệnh, ốm"
+      ],
+      "explanation": "生病 đọc là shēngbìng, nghĩa là Bị bệnh, ốm. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 668.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "66b0158c-86e0-4de4-bb84-c572aa62d114"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “shēngbìng” và nghĩa “Bị bệnh, ốm”.",
+      "options": [
+        "儿子",
+        "哥哥",
+        "生病",
+        "父亲"
+      ],
+      "accepted": [
+        "生病"
+      ],
+      "explanation": "生病 đọc là shēngbìng, nghĩa là Bị bệnh, ốm. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 668.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "66b0158c-86e0-4de4-bb84-c572aa62d114"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “才” có nghĩa là gì?",
+      "options": [
+        "Tuổi",
+        "Con trai",
+        "Mới, mãi mới",
+        "Giặt quần áo"
+      ],
+      "accepted": [
+        "Mới, mãi mới"
+      ],
+      "explanation": "才 đọc là cái, nghĩa là Mới, mãi mới. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 669.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8b33c21f-30d1-42a0-be71-7b577456cc91"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “cái” và nghĩa “Mới, mãi mới”.",
+      "options": [
+        "才",
+        "孩子",
+        "救",
+        "哥哥"
+      ],
+      "accepted": [
+        "才"
+      ],
+      "explanation": "才 đọc là cái, nghĩa là Mới, mãi mới. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 669.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8b33c21f-30d1-42a0-be71-7b577456cc91"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “什么时候” có nghĩa là gì?",
+      "options": [
+        "Rửa bát",
+        "Con gái",
+        "Khi nào, lúc nào",
+        "Em trai"
+      ],
+      "accepted": [
+        "Khi nào, lúc nào"
+      ],
+      "explanation": "什么时候 đọc là shénme shíhou, nghĩa là Khi nào, lúc nào. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 670.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bda34049-1588-4ed5-95fa-a0f4734a2b64"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “shénme shíhou” và nghĩa “Khi nào, lúc nào”.",
+      "options": [
+        "母亲",
+        "什么时候",
+        "全家",
+        "别人"
+      ],
+      "accepted": [
+        "什么时候"
+      ],
+      "explanation": "什么时候 đọc là shénme shíhou, nghĩa là Khi nào, lúc nào. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 670.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bda34049-1588-4ed5-95fa-a0f4734a2b64"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “有时候” có nghĩa là gì?",
+      "options": [
+        "Lượng từ cho vật dài",
+        "Con trai",
+        "Khám bệnh",
+        "Có lúc, thỉnh thoảng"
+      ],
+      "accepted": [
+        "Có lúc, thỉnh thoảng"
+      ],
+      "explanation": "有时候 đọc là yǒu shíhou, nghĩa là Có lúc, thỉnh thoảng. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 671.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2acb6da7-e8b8-469a-a26f-b74e52b7034e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “yǒu shíhou” và nghĩa “Có lúc, thỉnh thoảng”.",
+      "options": [
+        "只",
+        "有时候",
+        "救",
+        "拍照"
+      ],
+      "accepted": [
+        "有时候"
+      ],
+      "explanation": "有时候 đọc là yǒu shíhou, nghĩa là Có lúc, thỉnh thoảng. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 671.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2acb6da7-e8b8-469a-a26f-b74e52b7034e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Trong bài học, “一张照片” có nghĩa là gì?",
+      "options": [
+        "Hát",
+        "Chó",
+        "Một bức ảnh",
+        "Bài hát"
+      ],
+      "accepted": [
+        "Một bức ảnh"
+      ],
+      "explanation": "一张照片 đọc là yì zhāng zhàopiàn, nghĩa là Một bức ảnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 672.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "96956059-31e8-48b2-a757-3c5753e3ee84"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn Hán tự có phiên âm “yì zhāng zhàopiàn” và nghĩa “Một bức ảnh”.",
+      "options": [
+        "起床",
+        "狗",
+        "一张照片",
+        "哥哥"
+      ],
+      "accepted": [
+        "一张照片"
+      ],
+      "explanation": "一张照片 đọc là yì zhāng zhàopiàn, nghĩa là Một bức ảnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 672.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "96956059-31e8-48b2-a757-3c5753e3ee84"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn phiên âm đúng của “唱歌” với nghĩa “Hát”.",
+      "options": [
+        "lǜshī",
+        "chàng gē",
+        "cháng",
+        "dìdi"
+      ],
+      "accepted": [
+        "chàng gē"
+      ],
+      "explanation": "唱歌 đọc là chàng gē, nghĩa là Hát. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 665.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "787e94c7-9212-4736-a76f-3c083a396406"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn phiên âm đúng của “救” với nghĩa “Cứu”.",
+      "options": [
+        "háizi",
+        "érzi",
+        "suì",
+        "jiù"
+      ],
+      "accepted": [
+        "jiù"
+      ],
+      "explanation": "救 đọc là jiù, nghĩa là Cứu. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 666.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bd7f4db8-c7d2-430b-b22e-cd3e789e8dce"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn phiên âm đúng của “打算” với nghĩa “Dự định”.",
+      "options": [
+        "bàba",
+        "jiějie",
+        "dǎsuàn",
+        "jiārén"
+      ],
+      "accepted": [
+        "dǎsuàn"
+      ],
+      "explanation": "打算 đọc là dǎsuàn, nghĩa là Dự định. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 667.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "deeb8ecb-552e-4966-a358-dfcd1a617032"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn phiên âm đúng của “生病” với nghĩa “Bị bệnh, ốm”.",
+      "options": [
+        "shēngbìng",
+        "chàng",
+        "mèimei",
+        "fùqīn"
+      ],
+      "accepted": [
+        "shēngbìng"
+      ],
+      "explanation": "生病 đọc là shēngbìng, nghĩa là Bị bệnh, ốm. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 668.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "66b0158c-86e0-4de4-bb84-c572aa62d114"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn phiên âm đúng của “才” với nghĩa “Mới, mãi mới”.",
+      "options": [
+        "cái",
+        "dànshì",
+        "shuìjiào",
+        "shénme shíhou"
+      ],
+      "accepted": [
+        "cái"
+      ],
+      "explanation": "才 đọc là cái, nghĩa là Mới, mãi mới. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 669.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8b33c21f-30d1-42a0-be71-7b577456cc91"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn phiên âm đúng của “什么时候” với nghĩa “Khi nào, lúc nào”.",
+      "options": [
+        "shénme shíhou",
+        "biérén",
+        "xǐ",
+        "gōngrén"
+      ],
+      "accepted": [
+        "shénme shíhou"
+      ],
+      "explanation": "什么时候 đọc là shénme shíhou, nghĩa là Khi nào, lúc nào. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 670.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bda34049-1588-4ed5-95fa-a0f4734a2b64"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn phiên âm đúng của “有时候” với nghĩa “Có lúc, thỉnh thoảng”.",
+      "options": [
+        "biérén",
+        "yǒu shíhou",
+        "shéi / shuí",
+        "shēngbìng"
+      ],
+      "accepted": [
+        "yǒu shíhou"
+      ],
+      "explanation": "有时候 đọc là yǒu shíhou, nghĩa là Có lúc, thỉnh thoảng. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 671.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2acb6da7-e8b8-469a-a26f-b74e52b7034e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 10",
+      "prompt": "Chọn phiên âm đúng của “一张照片” với nghĩa “Một bức ảnh”.",
+      "options": [
+        "jiù",
+        "dǎsuàn",
+        "yì zhāng zhàopiàn",
+        "kě'ài"
+      ],
+      "accepted": [
+        "yì zhāng zhàopiàn"
+      ],
+      "explanation": "一张照片 đọc là yì zhāng zhàopiàn, nghĩa là Một bức ảnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 10, dòng 672.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "96956059-31e8-48b2-a757-3c5753e3ee84"
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “你家有几口人？” có nghĩa là gì?",
+      "options": [
+        "Mẹ giận rồi.",
+        "Em gái đang hát.",
+        "Gia đình bạn có mấy người?",
+        "Người nhà của tôi đều rất khỏe."
+      ],
+      "accepted": [
+        "Gia đình bạn có mấy người?"
+      ],
+      "explanation": "你家有几口人？ — Gia đình bạn có mấy người? Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Gia đình bạn có mấy người?”.",
+      "options": [
+        "我爸爸是医生。",
+        "你家有几口人？",
+        "我弟弟今年十岁。",
+        "她妈妈是律师。"
+      ],
+      "accepted": [
+        "你家有几口人？"
+      ],
+      "explanation": "你家有几口人？ — Gia đình bạn có mấy người? Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “我爸爸是医生。” có nghĩa là gì?",
+      "options": [
+        "Người nhà của tôi đều rất khỏe.",
+        "Anh trai đang giặt quần áo.",
+        "Tôi muốn đến bệnh viện khám bệnh.",
+        "Bố tôi là bác sĩ."
+      ],
+      "accepted": [
+        "Bố tôi là bác sĩ."
+      ],
+      "explanation": "我爸爸是医生。 — Bố tôi là bác sĩ. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bố tôi là bác sĩ.”.",
+      "options": [
+        "我的家人都很好。",
+        "她妈妈是律师。",
+        "我爸爸是医生。",
+        "弟弟很小，但是他会写字。"
+      ],
+      "accepted": [
+        "我爸爸是医生。"
+      ],
+      "explanation": "我爸爸是医生。 — Bố tôi là bác sĩ. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “她妈妈是律师。” có nghĩa là gì?",
+      "options": [
+        "Mẹ cô ấy là luật sư.",
+        "Em trai còn nhỏ nhưng đã biết viết chữ.",
+        "Chị gái đang rửa bát.",
+        "Tôi thức dậy lúc bảy giờ mỗi ngày."
+      ],
+      "accepted": [
+        "Mẹ cô ấy là luật sư."
+      ],
+      "explanation": "她妈妈是律师。 — Mẹ cô ấy là luật sư. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Mẹ cô ấy là luật sư.”.",
+      "options": [
+        "她妈妈是律师。",
+        "我想去医院看病。",
+        "我的家人都很好。",
+        "他在开玩笑。"
+      ],
+      "accepted": [
+        "她妈妈是律师。"
+      ],
+      "explanation": "她妈妈是律师。 — Mẹ cô ấy là luật sư. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “我弟弟今年十岁。” có nghĩa là gì?",
+      "options": [
+        "Anh trai đang giặt quần áo.",
+        "Tôi thức dậy lúc bảy giờ mỗi ngày.",
+        "Mẹ cô ấy là luật sư.",
+        "Năm nay em trai tôi mười tuổi."
+      ],
+      "accepted": [
+        "Năm nay em trai tôi mười tuổi."
+      ],
+      "explanation": "我弟弟今年十岁。 — Năm nay em trai tôi mười tuổi. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Năm nay em trai tôi mười tuổi.”.",
+      "options": [
+        "妈妈生气了。",
+        "我弟弟今年十岁。",
+        "我每天七点起床。",
+        "我家有一只狗。"
+      ],
+      "accepted": [
+        "我弟弟今年十岁。"
+      ],
+      "explanation": "我弟弟今年十岁。 — Năm nay em trai tôi mười tuổi. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “这是我们全家的照片。” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn đến bệnh viện khám bệnh.",
+        "Tôi thức dậy lúc bảy giờ mỗi ngày.",
+        "Đây là ảnh của cả gia đình tôi.",
+        "Năm nay em trai tôi mười tuổi."
+      ],
+      "accepted": [
+        "Đây là ảnh của cả gia đình tôi."
+      ],
+      "explanation": "这是我们全家的照片。 — Đây là ảnh của cả gia đình tôi. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Đây là ảnh của cả gia đình tôi.”.",
+      "options": [
+        "我有时候跟家人一起看电视。",
+        "她妈妈是律师。",
+        "我的家人都很好。",
+        "这是我们全家的照片。"
+      ],
+      "accepted": [
+        "这是我们全家的照片。"
+      ],
+      "explanation": "这是我们全家的照片。 — Đây là ảnh của cả gia đình tôi. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “我家有一只狗。” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn đến bệnh viện khám bệnh.",
+        "Mẹ cô ấy là luật sư.",
+        "Nhà tôi có một con chó.",
+        "Bố tôi là bác sĩ."
+      ],
+      "accepted": [
+        "Nhà tôi có một con chó."
+      ],
+      "explanation": "我家有一只狗。 — Nhà tôi có một con chó. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Nhà tôi có một con chó.”.",
+      "options": [
+        "你家有几口人？",
+        "弟弟很小，但是他会写字。",
+        "这张照片是谁的？",
+        "我家有一只狗。"
+      ],
+      "accepted": [
+        "我家有一只狗。"
+      ],
+      "explanation": "我家有一只狗。 — Nhà tôi có một con chó. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “这只猫很可爱。” có nghĩa là gì?",
+      "options": [
+        "Chị gái đang rửa bát.",
+        "Bức ảnh này là của ai?",
+        "Mẹ cô ấy là luật sư.",
+        "Con mèo này rất đáng yêu."
+      ],
+      "accepted": [
+        "Con mèo này rất đáng yêu."
+      ],
+      "explanation": "这只猫很可爱。 — Con mèo này rất đáng yêu. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Con mèo này rất đáng yêu.”.",
+      "options": [
+        "这只猫很可爱。",
+        "这是我们全家的照片。",
+        "我家有一只狗。",
+        "弟弟很小，但是他会写字。"
+      ],
+      "accepted": [
+        "这只猫很可爱。"
+      ],
+      "explanation": "这只猫很可爱。 — Con mèo này rất đáng yêu. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “哥哥正在洗衣服。” có nghĩa là gì?",
+      "options": [
+        "Bức ảnh này là của ai?",
+        "Đây là bức ảnh chụp khi nào?",
+        "Anh trai đang giặt quần áo.",
+        "Gia đình bạn có mấy người?"
+      ],
+      "accepted": [
+        "Anh trai đang giặt quần áo."
+      ],
+      "explanation": "哥哥正在洗衣服。 — Anh trai đang giặt quần áo. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Anh trai đang giặt quần áo.”.",
+      "options": [
+        "她妈妈是律师。",
+        "姐姐在洗碗。",
+        "哥哥正在洗衣服。",
+        "这只猫很可爱。"
+      ],
+      "accepted": [
+        "哥哥正在洗衣服。"
+      ],
+      "explanation": "哥哥正在洗衣服。 — Anh trai đang giặt quần áo. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “妹妹正在唱歌。” có nghĩa là gì?",
+      "options": [
+        "Bây giờ bố đã ngủ rồi.",
+        "Em gái đang hát.",
+        "Tôi muốn đến bệnh viện khám bệnh.",
+        "Anh ấy đang nói đùa."
+      ],
+      "accepted": [
+        "Em gái đang hát."
+      ],
+      "explanation": "妹妹正在唱歌。 — Em gái đang hát. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Em gái đang hát.”.",
+      "options": [
+        "妹妹正在唱歌。",
+        "我的家人都很好。",
+        "你家有几口人？",
+        "这是我们全家的照片。"
+      ],
+      "accepted": [
+        "妹妹正在唱歌。"
+      ],
+      "explanation": "妹妹正在唱歌。 — Em gái đang hát. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “这是什么时候的照片？” có nghĩa là gì?",
+      "options": [
+        "Đây là bức ảnh chụp khi nào?",
+        "Đây là ảnh của cả gia đình tôi.",
+        "Anh trai đang giặt quần áo.",
+        "Năm nay em trai tôi mười tuổi."
+      ],
+      "accepted": [
+        "Đây là bức ảnh chụp khi nào?"
+      ],
+      "explanation": "这是什么时候的照片？ — Đây là bức ảnh chụp khi nào? Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Đây là bức ảnh chụp khi nào?”.",
+      "options": [
+        "爸爸现在睡觉了。",
+        "她妈妈是律师。",
+        "妹妹正在唱歌。",
+        "这是什么时候的照片？"
+      ],
+      "accepted": [
+        "这是什么时候的照片？"
+      ],
+      "explanation": "这是什么时候的照片？ — Đây là bức ảnh chụp khi nào? Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “他在开玩笑。” có nghĩa là gì?",
+      "options": [
+        "Đây là bức ảnh chụp khi nào?",
+        "Anh ấy đang nói đùa.",
+        "Mẹ giận rồi.",
+        "Con mèo này rất đáng yêu."
+      ],
+      "accepted": [
+        "Anh ấy đang nói đùa."
+      ],
+      "explanation": "他在开玩笑。 — Anh ấy đang nói đùa. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Anh ấy đang nói đùa.”.",
+      "options": [
+        "我有时候跟家人一起看电视。",
+        "我弟弟今年十岁。",
+        "他在开玩笑。",
+        "我家有一只狗。"
+      ],
+      "accepted": [
+        "他在开玩笑。"
+      ],
+      "explanation": "他在开玩笑。 — Anh ấy đang nói đùa. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “妈妈生气了。” có nghĩa là gì?",
+      "options": [
+        "Chị gái đang rửa bát.",
+        "Mẹ giận rồi.",
+        "Bức ảnh này là của ai?",
+        "Gia đình bạn có mấy người?"
+      ],
+      "accepted": [
+        "Mẹ giận rồi."
+      ],
+      "explanation": "妈妈生气了。 — Mẹ giận rồi. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Mẹ giận rồi.”.",
+      "options": [
+        "哥哥正在洗衣服。",
+        "姐姐在洗碗。",
+        "这只猫很可爱。",
+        "妈妈生气了。"
+      ],
+      "accepted": [
+        "妈妈生气了。"
+      ],
+      "explanation": "妈妈生气了。 — Mẹ giận rồi. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “我想去医院看病。” có nghĩa là gì?",
+      "options": [
+        "Tôi muốn đến bệnh viện khám bệnh.",
+        "Năm nay em trai tôi mười tuổi.",
+        "Anh ấy đang nói đùa.",
+        "Tôi thức dậy lúc bảy giờ mỗi ngày."
+      ],
+      "accepted": [
+        "Tôi muốn đến bệnh viện khám bệnh."
+      ],
+      "explanation": "我想去医院看病。 — Tôi muốn đến bệnh viện khám bệnh. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn đến bệnh viện khám bệnh.”.",
+      "options": [
+        "这是我们全家的照片。",
+        "弟弟很小，但是他会写字。",
+        "我想去医院看病。",
+        "这只猫很可爱。"
+      ],
+      "accepted": [
+        "我想去医院看病。"
+      ],
+      "explanation": "我想去医院看病。 — Tôi muốn đến bệnh viện khám bệnh. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “我每天七点起床。” có nghĩa là gì?",
+      "options": [
+        "Tôi thức dậy lúc bảy giờ mỗi ngày.",
+        "Thỉnh thoảng tôi xem ti vi cùng gia đình.",
+        "Người nhà của tôi đều rất khỏe.",
+        "Năm nay em trai tôi mười tuổi."
+      ],
+      "accepted": [
+        "Tôi thức dậy lúc bảy giờ mỗi ngày."
+      ],
+      "explanation": "我每天七点起床。 — Tôi thức dậy lúc bảy giờ mỗi ngày. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi thức dậy lúc bảy giờ mỗi ngày.”.",
+      "options": [
+        "她妈妈是律师。",
+        "这张照片是谁的？",
+        "这只猫很可爱。",
+        "我每天七点起床。"
+      ],
+      "accepted": [
+        "我每天七点起床。"
+      ],
+      "explanation": "我每天七点起床。 — Tôi thức dậy lúc bảy giờ mỗi ngày. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “爸爸现在睡觉了。” có nghĩa là gì?",
+      "options": [
+        "Anh trai đang giặt quần áo.",
+        "Em trai còn nhỏ nhưng đã biết viết chữ.",
+        "Bây giờ bố đã ngủ rồi.",
+        "Mẹ giận rồi."
+      ],
+      "accepted": [
+        "Bây giờ bố đã ngủ rồi."
+      ],
+      "explanation": "爸爸现在睡觉了。 — Bây giờ bố đã ngủ rồi. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bây giờ bố đã ngủ rồi.”.",
+      "options": [
+        "这张照片是谁的？",
+        "我的家人都很好。",
+        "我有时候跟家人一起看电视。",
+        "爸爸现在睡觉了。"
+      ],
+      "accepted": [
+        "爸爸现在睡觉了。"
+      ],
+      "explanation": "爸爸现在睡觉了。 — Bây giờ bố đã ngủ rồi. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “姐姐在洗碗。” có nghĩa là gì?",
+      "options": [
+        "Thỉnh thoảng tôi xem ti vi cùng gia đình.",
+        "Chị gái đang rửa bát.",
+        "Mẹ giận rồi.",
+        "Năm nay em trai tôi mười tuổi."
+      ],
+      "accepted": [
+        "Chị gái đang rửa bát."
+      ],
+      "explanation": "姐姐在洗碗。 — Chị gái đang rửa bát. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chị gái đang rửa bát.”.",
+      "options": [
+        "你家有几口人？",
+        "妈妈生气了。",
+        "姐姐在洗碗。",
+        "我有时候跟家人一起看电视。"
+      ],
+      "accepted": [
+        "姐姐在洗碗。"
+      ],
+      "explanation": "姐姐在洗碗。 — Chị gái đang rửa bát. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “我的家人都很好。” có nghĩa là gì?",
+      "options": [
+        "Em gái đang hát.",
+        "Đây là bức ảnh chụp khi nào?",
+        "Mẹ giận rồi.",
+        "Người nhà của tôi đều rất khỏe."
+      ],
+      "accepted": [
+        "Người nhà của tôi đều rất khỏe."
+      ],
+      "explanation": "我的家人都很好。 — Người nhà của tôi đều rất khỏe. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Người nhà của tôi đều rất khỏe.”.",
+      "options": [
+        "弟弟很小，但是他会写字。",
+        "妹妹正在唱歌。",
+        "我弟弟今年十岁。",
+        "我的家人都很好。"
+      ],
+      "accepted": [
+        "我的家人都很好。"
+      ],
+      "explanation": "我的家人都很好。 — Người nhà của tôi đều rất khỏe. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “这张照片是谁的？” có nghĩa là gì?",
+      "options": [
+        "Chị gái đang rửa bát.",
+        "Bức ảnh này là của ai?",
+        "Anh trai đang giặt quần áo.",
+        "Mẹ giận rồi."
+      ],
+      "accepted": [
+        "Bức ảnh này là của ai?"
+      ],
+      "explanation": "这张照片是谁的？ — Bức ảnh này là của ai? Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bức ảnh này là của ai?”.",
+      "options": [
+        "我每天七点起床。",
+        "妈妈生气了。",
+        "妹妹正在唱歌。",
+        "这张照片是谁的？"
+      ],
+      "accepted": [
+        "这张照片是谁的？"
+      ],
+      "explanation": "这张照片是谁的？ — Bức ảnh này là của ai? Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “弟弟很小，但是他会写字。” có nghĩa là gì?",
+      "options": [
+        "Đây là ảnh của cả gia đình tôi.",
+        "Em trai còn nhỏ nhưng đã biết viết chữ.",
+        "Bức ảnh này là của ai?",
+        "Đây là bức ảnh chụp khi nào?"
+      ],
+      "accepted": [
+        "Em trai còn nhỏ nhưng đã biết viết chữ."
+      ],
+      "explanation": "弟弟很小，但是他会写字。 — Em trai còn nhỏ nhưng đã biết viết chữ. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Em trai còn nhỏ nhưng đã biết viết chữ.”.",
+      "options": [
+        "我的家人都很好。",
+        "我爸爸是医生。",
+        "弟弟很小，但是他会写字。",
+        "你家有几口人？"
+      ],
+      "accepted": [
+        "弟弟很小，但是他会写字。"
+      ],
+      "explanation": "弟弟很小，但是他会写字。 — Em trai còn nhỏ nhưng đã biết viết chữ. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Câu “我有时候跟家人一起看电视。” có nghĩa là gì?",
+      "options": [
+        "Con mèo này rất đáng yêu.",
+        "Tôi muốn đến bệnh viện khám bệnh.",
+        "Mẹ giận rồi.",
+        "Thỉnh thoảng tôi xem ti vi cùng gia đình."
+      ],
+      "accepted": [
+        "Thỉnh thoảng tôi xem ti vi cùng gia đình."
+      ],
+      "explanation": "我有时候跟家人一起看电视。 — Thỉnh thoảng tôi xem ti vi cùng gia đình. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–10",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Thỉnh thoảng tôi xem ti vi cùng gia đình.”.",
+      "options": [
+        "我弟弟今年十岁。",
+        "我有时候跟家人一起看电视。",
+        "妹妹正在唱歌。",
+        "姐姐在洗碗。"
+      ],
+      "accepted": [
+        "我有时候跟家人一起看电视。"
+      ],
+      "explanation": "我有时候跟家人一起看电视。 — Thỉnh thoảng tôi xem ti vi cùng gia đình. Câu dùng từ trong danh sách bài 1–10.",
+      "difficulty": "medium",
+      "approved": true
+    }
+  ],
+  "speaking": [
+    {
+      "practice": "speaking",
+      "text": "你家有几口人？",
+      "meaning": "Gia đình bạn có mấy người?",
+      "answer_reference": "我家有四口人。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你爸爸做什么工作？",
+      "meaning": "Bố bạn làm nghề gì?",
+      "answer_reference": "我爸爸是工人。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你妈妈是医生吗？",
+      "meaning": "Mẹ bạn là bác sĩ phải không?",
+      "answer_reference": "我妈妈是医生。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你弟弟今年多大？",
+      "meaning": "Năm nay em trai bạn bao nhiêu tuổi?",
+      "answer_reference": "我弟弟今年十岁。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "这是谁的照片？",
+      "meaning": "Đây là ảnh của ai?",
+      "answer_reference": "这是我们全家的照片。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你家有狗吗？",
+      "meaning": "Nhà bạn có chó không?",
+      "answer_reference": "我家有一只狗。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你每天几点起床？",
+      "meaning": "Mỗi ngày bạn thức dậy lúc mấy giờ?",
+      "answer_reference": "我每天七点起床。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你姐姐现在做什么？",
+      "meaning": "Bây giờ chị gái bạn làm gì?",
+      "answer_reference": "我姐姐正在洗衣服。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "这只猫可爱吗？",
+      "meaning": "Con mèo này có đáng yêu không?",
+      "answer_reference": "这只猫很可爱。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你什么时候睡觉？",
+      "meaning": "Bạn đi ngủ lúc mấy giờ?",
+      "answer_reference": "我晚上十点睡觉。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    }
+  ],
+  "activities": {
+    "topic": "Gia đình và sinh hoạt",
+    "tasks": [
+      {
+        "type": "order",
+        "prompt": "Gia đình bạn có mấy người?",
+        "tokens": [
+          "你",
+          "家",
+          "有",
+          "几",
+          "口",
+          "人",
+          "？"
+        ],
+        "answer": "你家有几口人？",
+        "explanation": "你家有几口人？ — Gia đình bạn có mấy người?"
+      },
+      {
+        "type": "fill",
+        "prompt": "你___有几口人？ (Gia đình bạn có mấy người?)",
+        "answer": "家",
+        "explanation": "Câu hoàn chỉnh: 你家有几口人？ — Gia đình bạn có mấy người?"
+      },
+      {
+        "type": "order",
+        "prompt": "Bố tôi là bác sĩ.",
+        "tokens": [
+          "我",
+          "爸爸",
+          "是",
+          "医生",
+          "。"
+        ],
+        "answer": "我爸爸是医生。",
+        "explanation": "我爸爸是医生。 — Bố tôi là bác sĩ."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___是医生。 (Bố tôi là bác sĩ.)",
+        "answer": "爸爸",
+        "explanation": "Câu hoàn chỉnh: 我爸爸是医生。 — Bố tôi là bác sĩ."
+      },
+      {
+        "type": "order",
+        "prompt": "Mẹ cô ấy là luật sư.",
+        "tokens": [
+          "她",
+          "妈妈",
+          "是",
+          "律师",
+          "。"
+        ],
+        "answer": "她妈妈是律师。",
+        "explanation": "她妈妈是律师。 — Mẹ cô ấy là luật sư."
+      },
+      {
+        "type": "fill",
+        "prompt": "她___是律师。 (Mẹ cô ấy là luật sư.)",
+        "answer": "妈妈",
+        "explanation": "Câu hoàn chỉnh: 她妈妈是律师。 — Mẹ cô ấy là luật sư."
+      },
+      {
+        "type": "order",
+        "prompt": "Năm nay em trai tôi mười tuổi.",
+        "tokens": [
+          "我",
+          "弟弟",
+          "今年",
+          "十",
+          "岁",
+          "。"
+        ],
+        "answer": "我弟弟今年十岁。",
+        "explanation": "我弟弟今年十岁。 — Năm nay em trai tôi mười tuổi."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___今年十岁。 (Năm nay em trai tôi mười tuổi.)",
+        "answer": "弟弟",
+        "explanation": "Câu hoàn chỉnh: 我弟弟今年十岁。 — Năm nay em trai tôi mười tuổi."
+      },
+      {
+        "type": "order",
+        "prompt": "Đây là ảnh của cả gia đình tôi.",
+        "tokens": [
+          "这",
+          "是",
+          "我们",
+          "全家",
+          "的",
+          "照片",
+          "。"
+        ],
+        "answer": "这是我们全家的照片。",
+        "explanation": "这是我们全家的照片。 — Đây là ảnh của cả gia đình tôi."
+      },
+      {
+        "type": "fill",
+        "prompt": "___是我们全家的照片。 (Đây là ảnh của cả gia đình tôi.)",
+        "answer": "这",
+        "explanation": "Câu hoàn chỉnh: 这是我们全家的照片。 — Đây là ảnh của cả gia đình tôi."
+      },
+      {
+        "type": "order",
+        "prompt": "Nhà tôi có một con chó.",
+        "tokens": [
+          "我",
+          "家",
+          "有",
+          "一",
+          "只",
+          "狗",
+          "。"
+        ],
+        "answer": "我家有一只狗。",
+        "explanation": "我家有一只狗。 — Nhà tôi có một con chó."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___有一只狗。 (Nhà tôi có một con chó.)",
+        "answer": "家",
+        "explanation": "Câu hoàn chỉnh: 我家有一只狗。 — Nhà tôi có một con chó."
+      },
+      {
+        "type": "order",
+        "prompt": "Con mèo này rất đáng yêu.",
+        "tokens": [
+          "这",
+          "只",
+          "猫",
+          "很",
+          "可爱",
+          "。"
+        ],
+        "answer": "这只猫很可爱。",
+        "explanation": "这只猫很可爱。 — Con mèo này rất đáng yêu."
+      },
+      {
+        "type": "fill",
+        "prompt": "___只猫很可爱。 (Con mèo này rất đáng yêu.)",
+        "answer": "这",
+        "explanation": "Câu hoàn chỉnh: 这只猫很可爱。 — Con mèo này rất đáng yêu."
+      },
+      {
+        "type": "order",
+        "prompt": "Anh trai đang giặt quần áo.",
+        "tokens": [
+          "哥哥",
+          "正在",
+          "洗衣服",
+          "。"
+        ],
+        "answer": "哥哥正在洗衣服。",
+        "explanation": "哥哥正在洗衣服。 — Anh trai đang giặt quần áo."
+      },
+      {
+        "type": "fill",
+        "prompt": "___正在洗衣服。 (Anh trai đang giặt quần áo.)",
+        "answer": "哥哥",
+        "explanation": "Câu hoàn chỉnh: 哥哥正在洗衣服。 — Anh trai đang giặt quần áo."
+      },
+      {
+        "type": "order",
+        "prompt": "Em gái đang hát.",
+        "tokens": [
+          "妹妹",
+          "正在",
+          "唱歌",
+          "。"
+        ],
+        "answer": "妹妹正在唱歌。",
+        "explanation": "妹妹正在唱歌。 — Em gái đang hát."
+      },
+      {
+        "type": "fill",
+        "prompt": "___正在唱歌。 (Em gái đang hát.)",
+        "answer": "妹妹",
+        "explanation": "Câu hoàn chỉnh: 妹妹正在唱歌。 — Em gái đang hát."
+      },
+      {
+        "type": "order",
+        "prompt": "Đây là bức ảnh chụp khi nào?",
+        "tokens": [
+          "这",
+          "是",
+          "什么时候",
+          "的",
+          "照片",
+          "？"
+        ],
+        "answer": "这是什么时候的照片？",
+        "explanation": "这是什么时候的照片？ — Đây là bức ảnh chụp khi nào?"
+      },
+      {
+        "type": "fill",
+        "prompt": "___是什么时候的照片？ (Đây là bức ảnh chụp khi nào?)",
+        "answer": "这",
+        "explanation": "Câu hoàn chỉnh: 这是什么时候的照片？ — Đây là bức ảnh chụp khi nào?"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Gia đình bạn có mấy người?”: 哥哥正在洗衣服。",
+        "answer": "你家有几口人？",
+        "options": [
+          "你家有几口人？",
+          "哥哥正在洗衣服。",
+          "我每天七点起床。"
+        ],
+        "explanation": "你家有几口人？ — Gia đình bạn có mấy người?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你家有几口人？",
+        "answer": "我家有四口人。",
+        "options": [
+          "我家有四口人。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Gia đình bạn có mấy người? Đáp lại: 我家有四口人。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Bố tôi là bác sĩ.”: 妹妹正在唱歌。",
+        "answer": "我爸爸是医生。",
+        "options": [
+          "我爸爸是医生。",
+          "妹妹正在唱歌。",
+          "爸爸现在睡觉了。"
+        ],
+        "explanation": "我爸爸是医生。 — Bố tôi là bác sĩ."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你爸爸做什么工作？",
+        "answer": "我爸爸是工人。",
+        "options": [
+          "我爸爸是工人。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bố bạn làm nghề gì? Đáp lại: 我爸爸是工人。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Mẹ cô ấy là luật sư.”: 这是什么时候的照片？",
+        "answer": "她妈妈是律师。",
+        "options": [
+          "她妈妈是律师。",
+          "这是什么时候的照片？",
+          "姐姐在洗碗。"
+        ],
+        "explanation": "她妈妈是律师。 — Mẹ cô ấy là luật sư."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你妈妈是医生吗？",
+        "answer": "我妈妈是医生。",
+        "options": [
+          "我妈妈是医生。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Mẹ bạn là bác sĩ phải không? Đáp lại: 我妈妈是医生。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Năm nay em trai tôi mười tuổi.”: 他在开玩笑。",
+        "answer": "我弟弟今年十岁。",
+        "options": [
+          "我弟弟今年十岁。",
+          "他在开玩笑。",
+          "我的家人都很好。"
+        ],
+        "explanation": "我弟弟今年十岁。 — Năm nay em trai tôi mười tuổi."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你弟弟今年多大？",
+        "answer": "我弟弟今年十岁。",
+        "options": [
+          "我弟弟今年十岁。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Năm nay em trai bạn bao nhiêu tuổi? Đáp lại: 我弟弟今年十岁。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Đây là ảnh của cả gia đình tôi.”: 妈妈生气了。",
+        "answer": "这是我们全家的照片。",
+        "options": [
+          "这是我们全家的照片。",
+          "妈妈生气了。",
+          "这张照片是谁的？"
+        ],
+        "explanation": "这是我们全家的照片。 — Đây là ảnh của cả gia đình tôi."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "这是谁的照片？",
+        "answer": "这是我们全家的照片。",
+        "options": [
+          "这是我们全家的照片。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Đây là ảnh của ai? Đáp lại: 这是我们全家的照片。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Nhà tôi có một con chó.”: 我想去医院看病。",
+        "answer": "我家有一只狗。",
+        "options": [
+          "我家有一只狗。",
+          "我想去医院看病。",
+          "弟弟很小，但是他会写字。"
+        ],
+        "explanation": "我家有一只狗。 — Nhà tôi có một con chó."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你家有狗吗？",
+        "answer": "我家有一只狗。",
+        "options": [
+          "我家有一只狗。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Nhà bạn có chó không? Đáp lại: 我家有一只狗。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Con mèo này rất đáng yêu.”: 我每天七点起床。",
+        "answer": "这只猫很可爱。",
+        "options": [
+          "这只猫很可爱。",
+          "我每天七点起床。",
+          "我有时候跟家人一起看电视。"
+        ],
+        "explanation": "这只猫很可爱。 — Con mèo này rất đáng yêu."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你每天几点起床？",
+        "answer": "我每天七点起床。",
+        "options": [
+          "我每天七点起床。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Mỗi ngày bạn thức dậy lúc mấy giờ? Đáp lại: 我每天七点起床。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Anh trai đang giặt quần áo.”: 爸爸现在睡觉了。",
+        "answer": "哥哥正在洗衣服。",
+        "options": [
+          "哥哥正在洗衣服。",
+          "爸爸现在睡觉了。",
+          "你家有几口人？"
+        ],
+        "explanation": "哥哥正在洗衣服。 — Anh trai đang giặt quần áo."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你姐姐现在做什么？",
+        "answer": "我姐姐正在洗衣服。",
+        "options": [
+          "我姐姐正在洗衣服。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bây giờ chị gái bạn làm gì? Đáp lại: 我姐姐正在洗衣服。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Em gái đang hát.”: 姐姐在洗碗。",
+        "answer": "妹妹正在唱歌。",
+        "options": [
+          "妹妹正在唱歌。",
+          "姐姐在洗碗。",
+          "我爸爸是医生。"
+        ],
+        "explanation": "妹妹正在唱歌。 — Em gái đang hát."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "这只猫可爱吗？",
+        "answer": "这只猫很可爱。",
+        "options": [
+          "这只猫很可爱。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Con mèo này có đáng yêu không? Đáp lại: 这只猫很可爱。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Đây là bức ảnh chụp khi nào?”: 我的家人都很好。",
+        "answer": "这是什么时候的照片？",
+        "options": [
+          "这是什么时候的照片？",
+          "我的家人都很好。",
+          "她妈妈是律师。"
+        ],
+        "explanation": "这是什么时候的照片？ — Đây là bức ảnh chụp khi nào?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你什么时候睡觉？",
+        "answer": "我晚上十点睡觉。",
+        "options": [
+          "我晚上十点睡觉。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn đi ngủ lúc mấy giờ? Đáp lại: 我晚上十点睡觉。"
+      }
+    ]
+  },
+  "chat": {
+    "enabled": true,
+    "scenario_id": "family",
+    "goal": "Trò chuyện về gia đình và sinh hoạt; chỉ dùng từ đã học từ bài 1 đến bài 10.",
+    "opening": "你家有几口人？",
+    "translation": "Gia đình bạn có mấy người?",
+    "required_words": [
+      "爸爸",
+      "妈妈",
+      "弟弟",
+      "妹妹",
+      "哥哥",
+      "姐姐",
+      "儿子",
+      "女儿",
+      "照片",
+      "洗",
+      "洗手间",
+      "和",
+      "律师",
+      "医生",
+      "工人",
+      "家人",
+      "孩子",
+      "别人",
+      "狗",
+      "猫"
+    ],
+    "max_turns": 10
+  },
+  "street": {
+    "enabled": true,
+    "place_id": "home",
+    "missions": [
+      {
+        "id": "vocab-10-1",
+        "title": "Nghe hiểu 1",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "你家有几口人？",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Gia đình bạn có mấy người?"
+          },
+          {
+            "id": "c2",
+            "label": "Anh trai đang giặt quần áo."
+          },
+          {
+            "id": "c3",
+            "label": "Tôi thức dậy lúc bảy giờ mỗi ngày."
+          }
+        ],
+        "answer": "c1",
+        "feedback": "你家有几口人？ — Gia đình bạn có mấy người?"
+      },
+      {
+        "id": "vocab-10-2",
+        "title": "Nghe hiểu 2",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "我家有一只狗。",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Tôi muốn đến bệnh viện khám bệnh."
+          },
+          {
+            "id": "c2",
+            "label": "Nhà tôi có một con chó."
+          },
+          {
+            "id": "c3",
+            "label": "Em trai còn nhỏ nhưng đã biết viết chữ."
+          }
+        ],
+        "answer": "c2",
+        "feedback": "我家有一只狗。 — Nhà tôi có một con chó."
+      },
+      {
+        "id": "vocab-10-3",
+        "title": "Nghe hiểu 3",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "他在开玩笑。",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Năm nay em trai tôi mười tuổi."
+          },
+          {
+            "id": "c2",
+            "label": "Bức ảnh này là của ai?"
+          },
+          {
+            "id": "c3",
+            "label": "Anh ấy đang nói đùa."
+          }
+        ],
+        "answer": "c3",
+        "feedback": "他在开玩笑。 — Anh ấy đang nói đùa."
+      }
+    ]
+  }
+}

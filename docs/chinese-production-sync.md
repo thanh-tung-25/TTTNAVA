@@ -1,5 +1,7 @@
 # Đồng bộ nội dung tiếng Trung từ XAMPP lên website
 
+Từ 14/11/2026, bộ HSK 1 dùng danh sách từ vựng đầy đủ mới. Dùng [quy trình đồng bộ toàn bộ](chinese-curriculum-sync.md) thay cho trình đồng bộ giữ nguyên số từ/Word cũ dưới đây.
+
 Nguồn là MySQL XAMPP `kids_learning`; đích là schema `ttnava_stage` của project Supabase đã cấu hình trong `backend/.env.vercel`, website `tttnava-backend.vercel.app`. Khóa và chuỗi kết nối chỉ nằm trong các file môi trường riêng tư, không đưa vào Git hoặc tài liệu SQL công khai.
 
 `backend/scripts/sync-chinese-production.mjs` mặc định chỉ đọc. Script ghép 10 bài HSK 1 theo thứ tự và kiểm tra đúng file Word/checksum; ghép từng từ/câu theo nội dung, giữ nguyên ID online để bảo toàn lịch sử. Script không thêm/xóa ngân hàng từ hoặc câu quiz, không chép tài khoản, quyền học hoặc kết quả học sinh từ XAMPP.

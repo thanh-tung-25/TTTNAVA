@@ -6,7 +6,7 @@ import {activityTemplate} from '../../frontend/assets/js/chinese-activity-templa
 
 let admin,student,restricted,locked,lesson,set;const users=[];
 const base='/api/v1/chinese';
-const fill={type:'fill',prompt:'我___名片。',answer:'没有',hint:'Phủ định của 有',explanation:'有 phủ định bằng 没有.'};
+const fill={type:'fill',prompt:'我___学生。',answer:'是',hint:'Giới thiệu vai trò',explanation:'是 nghĩa là là.'};
 beforeAll(async()=>{
  for(const options of [{role:'admin'},{role:'student'},{role:'admin',adminScope:'primary'},{role:'student',enrolled:false}])users.push(await createTestUser(options));
  [admin,student,restricted,locked]=await Promise.all(users.map(loginStudent));
@@ -26,8 +26,8 @@ it('only Chinese admins can author or preview activities',async()=>{
  expect((await admin.get(url)).body.data).toMatchObject({status:'draft',revision:0,tasks:[]});
 });
 it('validates all Q1 templates and rejects incorrect or oversized publication data',()=>{
- expect(activityTemplate({level_id:1,title:'Bài 1 . Xin Chào'}).topic).toBe('Chào hỏi');
- expect(activityTemplate({level_id:1,title:'Bài 2 . Hỏi tên, Hỏi họ, Quốc tịch,'}).topic).toBe('Làm quen');
+ expect(activityTemplate({level_id:1,title:'Bài 1 . Xin Chào'}).topic).toBe('Chào hỏi và giới thiệu vai trò');
+ expect(activityTemplate({level_id:1,title:'Bài 2 . Hỏi tên, Hỏi họ, Quốc tịch,'}).topic).toBe('Tên và quốc tịch');
  expect(activityTemplate({level_id:1,title:'Bài 1 chưa rõ nội dung'})).toBeNull();
  for(const title of ['你好','你叫什么名字','很高兴认识你','你去哪儿','你要吃什么','你在哪儿工作']){
   const tasks=validateActivities({...activityTemplate({level_id:1,title}),status:'published',revision:0}).tasks;
@@ -59,6 +59,11 @@ it('saves incomplete drafts without leaking them, previews without saving, publi
  expect((await admin.put(url).send({...pack,revision:2,status:'draft'})).status).toBe(200);
  expect((await student.get(base+'/sets/'+set)).body.data.activities).toBeNull();
  expect((await student.get(base+'/catalog')).body.data.sets.find(s=>s.id===set).activity_count).toBe(0);
+});
+it('rejects future vocabulary without replacing the saved activities',async()=>{
+ const url=`${base}/lessons/${lesson}/activities`,before=(await admin.get(url)).body.data;
+ const r=await admin.put(url).send({revision:before.revision,status:'published',topic:'Ngoài bài',tasks:[{...fill,prompt:'我___米饭。',answer:'吃'}]});
+ expect(r.status).toBe(400);expect((await admin.get(url)).body.data).toEqual(before);
 });
 it('removes the pack when its lesson is deleted',async()=>{
  expect((await admin.delete(base+'/lessons/'+lesson)).status).toBe(200);

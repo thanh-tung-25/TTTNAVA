@@ -1,1959 +1,1390 @@
-MÔN: Tiếng Trung
-LỚP: HSK 1
-CHỦ ĐỀ: Bài 9. 你喜欢中国电影还是美国电影 — Bạn thích phim Trung Quốc hay phim Mỹ?
+MÔN: Tiếng Trung — HSK 1
+CHỦ ĐỀ: 第九课：你喜欢中国电影还是美国电影？ (Bạn thích phim Trung Quốc hay phim Mỹ?)
+CHỦ ĐỀ: Đồng bộ theo danh sách từ vựng đầy đủ ngày 14/11/2026
 [TU VUNG]
-喜欢 | xǐhuan | thích |  |  |  |  |  |  |  |  | main
-爱 | ài | yêu, yêu thích |  |  |  |  |  |  |  |  | main
-爱好 | àihào | sở thích |  |  |  |  |  |  |  |  | main
-地铁 | dìtiě | tàu điện ngầm |  |  |  |  |  |  |  |  | main
-公交车 | gōngjiāochē | xe buýt |  |  |  |  |  |  |  |  | main
-出租车 | chūzūchē | xe taxi |  |  |  |  |  |  |  |  | main
-自行车 | zìxíngchē | xe đạp |  |  |  |  |  |  |  |  | main
-摩托车 | mótuōchē | xe máy |  |  |  |  |  |  |  |  | main
-走路 | zǒulù | đi bộ |  |  |  |  |  |  |  |  | main
-跑步 | pǎobù | chạy bộ |  |  |  |  |  |  |  |  | main
-坐 | zuò | ngồi; đi bằng phương tiện như tàu, xe |  |  |  |  |  |  |  |  | main
-出去 | chūqù | ra ngoài, đi ra xa người nói |  |  |  |  |  |  |  |  | main
-出来 | chūlái | ra đây, đi ra về phía người nói |  |  |  |  |  |  |  |  | main
-玩 | wán | chơi |  |  |  |  |  |  |  |  | main
-穿 | chuān | mặc |  |  |  |  |  |  |  |  | main
-衣服 | yīfu | quần áo |  |  |  |  |  |  |  |  | main
-怎么 | zěnme | thế nào; hỏi cách làm |  |  |  |  |  |  |  |  | main
-怎么样 | zěnmeyàng | như thế nào; hỏi đánh giá hoặc ý kiến |  |  |  |  |  |  |  |  | main
-天气 | tiānqì | thời tiết |  |  |  |  |  |  |  |  | main
-晴天 | qíngtiān | ngày nắng, trời quang |  |  |  |  |  |  |  |  | main
-阴天 | yīntiān | ngày âm u, nhiều mây |  |  |  |  |  |  |  |  | main
-雨天 | yǔtiān | ngày mưa |  |  |  |  |  |  |  |  | main
-热 | rè | nóng |  |  |  |  |  |  |  |  | main
-冷 | lěng | lạnh |  |  |  |  |  |  |  |  | main
-冰 | bīng | băng, đá |  |  |  |  |  |  |  |  | main
-又……又…… | yòu…yòu… | vừa…vừa…; nêu hai đặc điểm |  |  |  |  |  |  |  |  | main
-吧 | ba | trợ từ cuối câu đề nghị hoặc phỏng đoán |  |  |  |  |  |  |  |  | main
-打 | dǎ | đánh; gọi điện thoại trong 打电话 |  |  |  |  |  |  |  |  | main
-球 | qiú | quả bóng |  |  |  |  |  |  |  |  | main
-有名 | yǒumíng | nổi tiếng |  |  |  |  |  |  |  |  | main
-好吃 | hǎochī | ngon; dùng cho đồ ăn |  |  |  |  |  |  |  |  | main
-好喝 | hǎohē | ngon; dùng cho đồ uống |  |  |  |  |  |  |  |  | main
-好听 | hǎotīng | hay, dễ nghe |  |  |  |  |  |  |  |  | main
-等 | děng | đợi, chờ |  |  |  |  |  |  |  |  | main
-非常 | fēicháng | rất, vô cùng |  |  |  |  |  |  |  |  | main
-电影院 | diànyǐngyuàn | rạp chiếu phim |  |  |  |  |  |  |  |  | main
-便宜 | piányi | rẻ |  |  |  |  |  |  |  |  | main
-菜 | cài | món ăn; rau |  |  |  |  |  |  |  |  | main
-还是 | háishi | hay là; nối các lựa chọn trong câu hỏi |  |  |  |  |  |  |  |  | main
-电影 | diànyǐng | phim điện ảnh |  |  |  |  |  |  |  |  | extended
-中国电影 | Zhōngguó diànyǐng | phim Trung Quốc |  |  |  |  |  |  |  |  | extended
-美国电影 | Měiguó diànyǐng | phim Mỹ |  |  |  |  |  |  |  |  | extended
-公共汽车 | gōnggòng qìchē | xe buýt |  |  |  |  |  |  |  |  | extended
-骑 | qí | đi, cưỡi; dùng cho xe đạp, xe máy |  |  |  |  |  |  |  |  | extended
-骑车 | qí chē | đi xe đạp hoặc xe máy |  |  |  |  |  |  |  |  | extended
-开车 | kāi chē | lái ô tô |  |  |  |  |  |  |  |  | extended
-每个周末 | měi ge zhōumò | mỗi cuối tuần |  |  |  |  |  |  |  |  | extended
-可爱 | kě'ài | đáng yêu |  |  |  |  |  |  |  |  | extended
-下雨 | xià yǔ | mưa, trời mưa |  |  |  |  |  |  |  |  | extended
-冰冰的 | bīngbīng de | lạnh lùng, lạnh nhạt; trong ví dụ của bài |  |  |  |  |  |  |  |  | extended
-打球 | dǎ qiú | chơi bóng |  |  |  |  |  |  |  |  | extended
-打开 | dǎkāi | mở ra |  |  |  |  |  |  |  |  | extended
-明星 | míngxīng | minh tinh, người nổi tiếng |  |  |  |  |  |  |  |  | extended
-等等 | děngděng | vân vân; đợi một chút tùy ngữ cảnh |  |  |  |  |  |  |  |  | extended
-一边……一边…… | yìbiān…yìbiān… | vừa…vừa…; làm đồng thời hai hành động |  |  |  |  |  |  |  |  | extended
-看书 | kàn shū | đọc sách |  |  |  |  |  |  |  |  | extended
-听音乐 | tīng yīnyuè | nghe nhạc |  |  |  |  |  |  |  |  | extended
-中国菜 | Zhōngguó cài | món ăn Trung Quốc |  |  |  |  |  |  |  |  | extended
-留学生 | liúxuéshēng | du học sinh |  |  |  |  |  |  |  |  | extended
-明天晚上 | míngtiān wǎnshang | tối ngày mai |  |  |  |  |  |  |  |  | extended
-快 | kuài | nhanh |  |  |  |  |  |  |  |  | extended
-远 | yuǎn | xa |  |  |  |  |  |  |  |  | extended
-韩国 | Hánguó | Hàn Quốc |  |  |  |  |  |  |  |  | extended
-韩国菜 | Hánguó cài | món ăn Hàn Quốc |  |  |  |  |  |  |  |  | extended
-韩国饭店 | Hánguó fàndiàn | nhà hàng Hàn Quốc |  |  |  |  |  |  |  |  | extended
-人民公园 | Rénmín Gōngyuán | Công viên Nhân Dân |  |  |  |  |  |  |  |  | extended
-附近 | fùjìn | gần đây, khu vực lân cận |  |  |  |  |  |  |  |  | extended
-近 | jìn | gần |  |  |  |  |  |  |  |  | extended
-不太好 | bú tài hǎo | không tốt lắm |  |  |  |  |  |  |  |  | extended
-风 | fēng | gió |  |  |  |  |  |  |  |  | extended
-刮风 | guā fēng | gió thổi |  |  |  |  |  |  |  |  | extended
+Chữ Hán 	Pinyin 	Nghĩa tiếng Việt 	Nhóm
+喜欢 	xǐhuan 	Thích 	Từ mới
+爱 	ài 	Yêu 	Từ mới
+地铁 	dìtiě 	Tàu điện ngầm 	Từ mới
+公交车 	gōngjiāochē 	Xe buýt 	Từ mới
+出租车 	chūzūchē 	Xe taxi 	Từ mới
+自行车 	zìxíngchē 	Xe đạp 	Từ mới
+摩托车 	mótuōchē 	Xe máy 	Từ mới
+走路 	zǒulù 	Đi bộ 	Từ mới
+坐 	zuò 	Ngồi, đi bằng phương tiện 	Từ mới
+出去 	chūqù 	Đi ra ngoài 	Từ mới
+出来 	chūlái 	Đi ra đây 	Từ mới
+玩 	wán 	Chơi 	Từ mới
+穿 	chuān 	Mặc 	Từ mới
+衣服 	yīfu 	Quần áo 	Từ mới
+怎么 	zěnme 	Như thế nào 	Từ mới
+怎么样 	zěnmeyàng 	Thế nào 	Từ mới
+天气 	tiānqì 	Thời tiết 	Từ mới
+晴天 	qíngtiān 	Trời nắng 	Từ mới
+阴天 	yīntiān 	Trời âm u 	Từ mới
+下雨天 	xià yǔ tiān 	Ngày trời mưa 	Từ mới
+热 	rè 	Nóng 	Từ mới
+冰 	bīng 	Băng, đá 	Từ mới
+又……又…… 	yòu…yòu… 	Vừa… vừa… 	Từ mới
+吧 	ba 	Trợ từ đề nghị, suy đoán 	Từ mới
+打 	dǎ 	Đánh, gọi điện 	Từ mới
+球 	qiú 	Quả bóng, môn bóng 	Từ mới
+有名 	yǒumíng 	Nổi tiếng 	Từ mới
+好吃 	hǎochī 	Ngon (đồ ăn) 	Từ mới
+好喝 	hǎohē 	Ngon (đồ uống) 	Từ mới
+好听 	hǎotīng 	Hay (âm thanh) 	Từ mới
+等 	děng 	Đợi, chờ 	Từ mới
+电影院 	diànyǐngyuàn 	Rạp chiếu phim 	Từ mở rộng
+电影 	diànyǐng 	Phim 	Từ mở rộng
+开 	kāi 	Mở, lái 	Từ mở rộng
+骑 	qí 	Cưỡi, đi xe 	Từ mở rộng
+骑车 	qí chē 	Đi xe, đạp xe 	Từ mở rộng
+骑马 	qí mǎ 	Cưỡi ngựa 	Từ mở rộng
+开车 	kāi chē 	Lái xe 	Từ mở rộng
+跑步 	pǎobù 	Chạy bộ 	Từ mở rộng
+坐地铁 	zuò dìtiě 	Đi tàu điện ngầm 	Từ mở rộng
+坐公交车 	zuò gōngjiāochē 	Đi xe buýt 	Từ mở rộng
+坐出租车 	zuò chūzūchē 	Đi taxi 	Từ mở rộng
+打球 	dǎ qiú 	Chơi bóng 	Từ mở rộng
+打开 	dǎkāi 	Mở ra 	Từ mở rộng
+等等 	děngděng 	Đợi một chút; vân vân 	Từ mở rộng
+爱好 	àihào 	Sở thích 	Từ mở rộng
+非常 	fēicháng 	Rất, vô cùng 	Từ mở rộng
+便宜 	piányi 	Rẻ 	Từ mở rộng
+菜 	cài 	Rau, món ăn 	Từ mở rộng
+冷 	lěng 	Lạnh 	Từ mở rộng
+明星 	míngxīng 	Ngôi sao, người nổi tiếng 	Từ mở rộng
+韩国 	Hánguó 	Hàn Quốc 	Từ mở rộng
+中国电影 	Zhōngguó diànyǐng 	Phim Trung Quốc 	Từ mở rộng
+美国电影 	Měiguó diànyǐng 	Phim Mỹ 	Từ mở rộng
+韩国电影 	Hánguó diànyǐng 	Phim Hàn Quốc 	Từ mở rộng
 [CAU HOI]
 Câu 1. Trong bài học, “喜欢” có nghĩa là gì?
-A. nhanh
-B. ngày âm u, nhiều mây
-C. thích
-D. xe taxi
-Đáp án: C
-Lời giải: 喜欢 đọc là xǐhuan, nghĩa là thích. Tham chiếu: PDF bài 9, trang 4.
+A. Quả bóng, môn bóng
+B. Cưỡi, đi xe
+C. Quần áo
+D. Thích
+Đáp án: D
+Lời giải: 喜欢 đọc là xǐhuan, nghĩa là Thích. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 546.
 Độ khó: Dễ
-Câu 2. Chọn chữ Hán có nghĩa “thích”.
-A. 快
-B. 热
+Câu 2. Chọn Hán tự có phiên âm “xǐhuan” và nghĩa “Thích”.
+A. 开车
+B. 公交车
 C. 喜欢
+D. 热
+Đáp án: C
+Lời giải: 喜欢 đọc là xǐhuan, nghĩa là Thích. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 546.
+Độ khó: Dễ
+Câu 3. Trong bài học, “爱” có nghĩa là gì?
+A. Vừa… vừa…
+B. Mở ra
+C. Rất, vô cùng
+D. Yêu
+Đáp án: D
+Lời giải: 爱 đọc là ài, nghĩa là Yêu. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 547.
+Độ khó: Dễ
+Câu 4. Chọn Hán tự có phiên âm “ài” và nghĩa “Yêu”.
+A. 爱
+B. 坐出租车
+C. 好听
+D. 坐地铁
+Đáp án: A
+Lời giải: 爱 đọc là ài, nghĩa là Yêu. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 547.
+Độ khó: Dễ
+Câu 5. Trong bài học, “地铁” có nghĩa là gì?
+A. Đi taxi
+B. Tàu điện ngầm
+C. Quần áo
+D. Hàn Quốc
+Đáp án: B
+Lời giải: 地铁 đọc là dìtiě, nghĩa là Tàu điện ngầm. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 548.
+Độ khó: Dễ
+Câu 6. Chọn Hán tự có phiên âm “dìtiě” và nghĩa “Tàu điện ngầm”.
+A. 地铁
+B. 跑步
+C. 韩国
+D. 开车
+Đáp án: A
+Lời giải: 地铁 đọc là dìtiě, nghĩa là Tàu điện ngầm. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 548.
+Độ khó: Dễ
+Câu 7. Trong bài học, “公交车” có nghĩa là gì?
+A. Ngon (đồ ăn)
+B. Hay (âm thanh)
+C. Nổi tiếng
+D. Xe buýt
+Đáp án: D
+Lời giải: 公交车 đọc là gōngjiāochē, nghĩa là Xe buýt. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 549.
+Độ khó: Dễ
+Câu 8. Chọn Hán tự có phiên âm “gōngjiāochē” và nghĩa “Xe buýt”.
+A. 吧
+B. 怎么样
+C. 公交车
+D. 电影院
+Đáp án: C
+Lời giải: 公交车 đọc là gōngjiāochē, nghĩa là Xe buýt. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 549.
+Độ khó: Dễ
+Câu 9. Trong bài học, “出租车” có nghĩa là gì?
+A. Cưỡi, đi xe
+B. Hàn Quốc
+C. Yêu
+D. Xe taxi
+Đáp án: D
+Lời giải: 出租车 đọc là chūzūchē, nghĩa là Xe taxi. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 550.
+Độ khó: Dễ
+Câu 10. Chọn Hán tự có phiên âm “chūzūchē” và nghĩa “Xe taxi”.
+A. 出租车
+B. 自行车
+C. 球
+D. 坐出租车
+Đáp án: A
+Lời giải: 出租车 đọc là chūzūchē, nghĩa là Xe taxi. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 550.
+Độ khó: Dễ
+Câu 11. Trong bài học, “自行车” có nghĩa là gì?
+A. Xe taxi
+B. Đi ra đây
+C. Xe đạp
+D. Đi ra ngoài
+Đáp án: C
+Lời giải: 自行车 đọc là zìxíngchē, nghĩa là Xe đạp. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 551.
+Độ khó: Dễ
+Câu 12. Chọn Hán tự có phiên âm “zìxíngchē” và nghĩa “Xe đạp”.
+A. 球
+B. 自行车
+C. 好吃
+D. 好听
+Đáp án: B
+Lời giải: 自行车 đọc là zìxíngchē, nghĩa là Xe đạp. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 551.
+Độ khó: Dễ
+Câu 13. Trong bài học, “摩托车” có nghĩa là gì?
+A. Rẻ
+B. Tàu điện ngầm
+C. Xe máy
+D. Chơi bóng
+Đáp án: C
+Lời giải: 摩托车 đọc là mótuōchē, nghĩa là Xe máy. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 552.
+Độ khó: Dễ
+Câu 14. Chọn Hán tự có phiên âm “mótuōchē” và nghĩa “Xe máy”.
+A. 摩托车
+B. 好听
+C. 冰
+D. 公交车
+Đáp án: A
+Lời giải: 摩托车 đọc là mótuōchē, nghĩa là Xe máy. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 552.
+Độ khó: Dễ
+Câu 15. Trong bài học, “走路” có nghĩa là gì?
+A. Xe taxi
+B. Đi taxi
+C. Đi bộ
+D. Xe buýt
+Đáp án: C
+Lời giải: 走路 đọc là zǒulù, nghĩa là Đi bộ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 553.
+Độ khó: Dễ
+Câu 16. Chọn Hán tự có phiên âm “zǒulù” và nghĩa “Đi bộ”.
+A. 美国电影
+B. 好吃
+C. 走路
+D. 开
+Đáp án: C
+Lời giải: 走路 đọc là zǒulù, nghĩa là Đi bộ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 553.
+Độ khó: Dễ
+Câu 17. Trong bài học, “坐” có nghĩa là gì?
+A. Phim Hàn Quốc
+B. Vừa… vừa…
+C. Ngồi, đi bằng phương tiện
+D. Sở thích
+Đáp án: C
+Lời giải: 坐 đọc là zuò, nghĩa là Ngồi, đi bằng phương tiện. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 554.
+Độ khó: Dễ
+Câu 18. Chọn Hán tự có phiên âm “zuò” và nghĩa “Ngồi, đi bằng phương tiện”.
+A. 爱
+B. 坐
+C. 等
+D. 怎么
+Đáp án: B
+Lời giải: 坐 đọc là zuò, nghĩa là Ngồi, đi bằng phương tiện. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 554.
+Độ khó: Dễ
+Câu 19. Trong bài học, “出去” có nghĩa là gì?
+A. Đi ra ngoài
+B. Phim Mỹ
+C. Đi taxi
+D. Ngôi sao, người nổi tiếng
+Đáp án: A
+Lời giải: 出去 đọc là chūqù, nghĩa là Đi ra ngoài. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 555.
+Độ khó: Dễ
+Câu 20. Chọn Hán tự có phiên âm “chūqù” và nghĩa “Đi ra ngoài”.
+A. 等等
+B. 出租车
+C. 出去
+D. 冰
+Đáp án: C
+Lời giải: 出去 đọc là chūqù, nghĩa là Đi ra ngoài. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 555.
+Độ khó: Dễ
+Câu 21. Trong bài học, “出来” có nghĩa là gì?
+A. Ngon (đồ ăn)
+B. Xe đạp
+C. Đi ra đây
+D. Xe máy
+Đáp án: C
+Lời giải: 出来 đọc là chūlái, nghĩa là Đi ra đây. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 556.
+Độ khó: Dễ
+Câu 22. Chọn Hán tự có phiên âm “chūlái” và nghĩa “Đi ra đây”.
+A. 下雨天
+B. 出来
+C. 开车
+D. 爱
+Đáp án: B
+Lời giải: 出来 đọc là chūlái, nghĩa là Đi ra đây. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 556.
+Độ khó: Dễ
+Câu 23. Trong bài học, “玩” có nghĩa là gì?
+A. Ngồi, đi bằng phương tiện
+B. Chơi
+C. Ngon (đồ uống)
+D. Thích
+Đáp án: B
+Lời giải: 玩 đọc là wán, nghĩa là Chơi. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 557.
+Độ khó: Dễ
+Câu 24. Chọn Hán tự có phiên âm “wán” và nghĩa “Chơi”.
+A. 好听
+B. 坐
+C. 开车
+D. 玩
+Đáp án: D
+Lời giải: 玩 đọc là wán, nghĩa là Chơi. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 557.
+Độ khó: Dễ
+Câu 25. Trong bài học, “穿” có nghĩa là gì?
+A. Thích
+B. Đi xe, đạp xe
+C. Đi ra ngoài
+D. Mặc
+Đáp án: D
+Lời giải: 穿 đọc là chuān, nghĩa là Mặc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 558.
+Độ khó: Dễ
+Câu 26. Chọn Hán tự có phiên âm “chuān” và nghĩa “Mặc”.
+A. 穿
+B. 坐地铁
+C. 天气
+D. 玩
+Đáp án: A
+Lời giải: 穿 đọc là chuān, nghĩa là Mặc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 558.
+Độ khó: Dễ
+Câu 27. Trong bài học, “衣服” có nghĩa là gì?
+A. Thời tiết
+B. Quần áo
+C. Cưỡi ngựa
+D. Xe buýt
+Đáp án: B
+Lời giải: 衣服 đọc là yīfu, nghĩa là Quần áo. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 559.
+Độ khó: Dễ
+Câu 28. Chọn Hán tự có phiên âm “yīfu” và nghĩa “Quần áo”.
+A. 衣服
+B. 走路
+C. 好听
+D. 便宜
+Đáp án: A
+Lời giải: 衣服 đọc là yīfu, nghĩa là Quần áo. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 559.
+Độ khó: Dễ
+Câu 29. Trong bài học, “怎么” có nghĩa là gì?
+A. Phim Hàn Quốc
+B. Sở thích
+C. Như thế nào
+D. Đi ra ngoài
+Đáp án: C
+Lời giải: 怎么 đọc là zěnme, nghĩa là Như thế nào. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 560.
+Độ khó: Dễ
+Câu 30. Chọn Hán tự có phiên âm “zěnme” và nghĩa “Như thế nào”.
+A. 坐公交车
+B. 冰
+C. 怎么
+D. 等
+Đáp án: C
+Lời giải: 怎么 đọc là zěnme, nghĩa là Như thế nào. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 560.
+Độ khó: Dễ
+Câu 31. Trong bài học, “怎么样” có nghĩa là gì?
+A. Lái xe
+B. Vừa… vừa…
+C. Đi xe, đạp xe
+D. Thế nào
+Đáp án: D
+Lời giải: 怎么样 đọc là zěnmeyàng, nghĩa là Thế nào. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 561.
+Độ khó: Dễ
+Câu 32. Chọn Hán tự có phiên âm “zěnmeyàng” và nghĩa “Thế nào”.
+A. 明星
+B. 爱
+C. 怎么样
+D. 出来
+Đáp án: C
+Lời giải: 怎么样 đọc là zěnmeyàng, nghĩa là Thế nào. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 561.
+Độ khó: Dễ
+Câu 33. Trong bài học, “天气” có nghĩa là gì?
+A. Đi xe, đạp xe
+B. Mở, lái
+C. Quả bóng, môn bóng
+D. Thời tiết
+Đáp án: D
+Lời giải: 天气 đọc là tiānqì, nghĩa là Thời tiết. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 562.
+Độ khó: Dễ
+Câu 34. Chọn Hán tự có phiên âm “tiānqì” và nghĩa “Thời tiết”.
+A. 天气
+B. 开车
+C. 公交车
+D. 下雨天
+Đáp án: A
+Lời giải: 天气 đọc là tiānqì, nghĩa là Thời tiết. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 562.
+Độ khó: Dễ
+Câu 35. Trong bài học, “晴天” có nghĩa là gì?
+A. Phim Trung Quốc
+B. Trời nắng
+C. Băng, đá
+D. Chơi
+Đáp án: B
+Lời giải: 晴天 đọc là qíngtiān, nghĩa là Trời nắng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 563.
+Độ khó: Dễ
+Câu 36. Chọn Hán tự có phiên âm “qíngtiān” và nghĩa “Trời nắng”.
+A. 天气
+B. 晴天
+C. 穿
+D. 非常
+Đáp án: B
+Lời giải: 晴天 đọc là qíngtiān, nghĩa là Trời nắng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 563.
+Độ khó: Dễ
+Câu 37. Trong bài học, “阴天” có nghĩa là gì?
+A. Trời âm u
+B. Ngày trời mưa
+C. Mở ra
+D. Xe đạp
+Đáp án: A
+Lời giải: 阴天 đọc là yīntiān, nghĩa là Trời âm u. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 564.
+Độ khó: Dễ
+Câu 38. Chọn Hán tự có phiên âm “yīntiān” và nghĩa “Trời âm u”.
+A. 中国电影
+B. 阴天
+C. 爱好
+D. 韩国
+Đáp án: B
+Lời giải: 阴天 đọc là yīntiān, nghĩa là Trời âm u. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 564.
+Độ khó: Dễ
+Câu 39. Trong bài học, “下雨天” có nghĩa là gì?
+A. Ngày trời mưa
+B. Hàn Quốc
+C. Ngôi sao, người nổi tiếng
+D. Mặc
+Đáp án: A
+Lời giải: 下雨天 đọc là xià yǔ tiān, nghĩa là Ngày trời mưa. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 565.
+Độ khó: Dễ
+Câu 40. Chọn Hán tự có phiên âm “xià yǔ tiān” và nghĩa “Ngày trời mưa”.
+A. 明星
+B. 打开
+C. 下雨天
 D. 中国电影
 Đáp án: C
-Lời giải: 喜欢 đọc là xǐhuan, nghĩa là thích. Tham chiếu: PDF bài 9, trang 4.
+Lời giải: 下雨天 đọc là xià yǔ tiān, nghĩa là Ngày trời mưa. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 565.
 Độ khó: Dễ
-Câu 3. Chọn phiên âm đúng của “喜欢”.
-A. dǎ
-B. hǎohē
-C. děng
-D. xǐhuan
-Đáp án: D
-Lời giải: 喜欢 đọc là xǐhuan, nghĩa là thích. Tham chiếu: PDF bài 9, trang 4.
-Độ khó: Dễ
-Câu 4. Trong bài học, “爱” có nghĩa là gì?
-A. đọc sách
-B. như thế nào; hỏi đánh giá hoặc ý kiến
-C. yêu, yêu thích
-D. xa
+Câu 41. Trong bài học, “热” có nghĩa là gì?
+A. Như thế nào
+B. Đi xe buýt
+C. Nóng
+D. Đi bộ
 Đáp án: C
-Lời giải: 爱 đọc là ài, nghĩa là yêu, yêu thích. Tham chiếu: PDF bài 9, trang 4.
+Lời giải: 热 đọc là rè, nghĩa là Nóng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 566.
 Độ khó: Dễ
-Câu 5. Chọn chữ Hán có nghĩa “yêu, yêu thích”.
+Câu 42. Chọn Hán tự có phiên âm “rè” và nghĩa “Nóng”.
+A. 有名
+B. 等等
+C. 坐出租车
+D. 热
+Đáp án: D
+Lời giải: 热 đọc là rè, nghĩa là Nóng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 566.
+Độ khó: Dễ
+Câu 43. Trong bài học, “冰” có nghĩa là gì?
+A. Mở, lái
+B. Trời âm u
+C. Đi tàu điện ngầm
+D. Băng, đá
+Đáp án: D
+Lời giải: 冰 đọc là bīng, nghĩa là Băng, đá. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 567.
+Độ khó: Dễ
+Câu 44. Chọn Hán tự có phiên âm “bīng” và nghĩa “Băng, đá”.
+A. 公交车
+B. 冰
+C. 穿
+D. 衣服
+Đáp án: B
+Lời giải: 冰 đọc là bīng, nghĩa là Băng, đá. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 567.
+Độ khó: Dễ
+Câu 45. Trong bài học, “又……又……” có nghĩa là gì?
+A. Như thế nào
+B. Đi ra ngoài
+C. Rẻ
+D. Vừa… vừa…
+Đáp án: D
+Lời giải: 又……又…… đọc là yòu…yòu…, nghĩa là Vừa… vừa…. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 568.
+Độ khó: Dễ
+Câu 46. Chọn Hán tự có phiên âm “yòu…yòu…” và nghĩa “Vừa… vừa…”.
+A. 自行车
+B. 又……又……
+C. 衣服
+D. 跑步
+Đáp án: B
+Lời giải: 又……又…… đọc là yòu…yòu…, nghĩa là Vừa… vừa…. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 568.
+Độ khó: Dễ
+Câu 47. Trong bài học, “吧” có nghĩa là gì?
+A. Trời âm u
+B. Trợ từ đề nghị, suy đoán
+C. Xe taxi
+D. Đi xe buýt
+Đáp án: B
+Lời giải: 吧 đọc là ba, nghĩa là Trợ từ đề nghị, suy đoán. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 569.
+Độ khó: Dễ
+Câu 48. Chọn Hán tự có phiên âm “ba” và nghĩa “Trợ từ đề nghị, suy đoán”.
+A. 骑车
+B. 电影院
+C. 吧
+D. 韩国电影
+Đáp án: C
+Lời giải: 吧 đọc là ba, nghĩa là Trợ từ đề nghị, suy đoán. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 569.
+Độ khó: Dễ
+Câu 49. Trong bài học, “打” có nghĩa là gì?
+A. Ngồi, đi bằng phương tiện
+B. Ngon (đồ uống)
+C. Đánh, gọi điện
+D. Quần áo
+Đáp án: C
+Lời giải: 打 đọc là dǎ, nghĩa là Đánh, gọi điện. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 570.
+Độ khó: Dễ
+Câu 50. Chọn Hán tự có phiên âm “dǎ” và nghĩa “Đánh, gọi điện”.
+A. 打
+B. 坐出租车
+C. 打球
+D. 出租车
+Đáp án: A
+Lời giải: 打 đọc là dǎ, nghĩa là Đánh, gọi điện. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 570.
+Độ khó: Dễ
+Câu 51. Trong bài học, “球” có nghĩa là gì?
+A. Vừa… vừa…
+B. Quả bóng, môn bóng
+C. Đi xe buýt
+D. Chơi bóng
+Đáp án: B
+Lời giải: 球 đọc là qiú, nghĩa là Quả bóng, môn bóng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 571.
+Độ khó: Dễ
+Câu 52. Chọn Hán tự có phiên âm “qiú” và nghĩa “Quả bóng, môn bóng”.
+A. 球
+B. 骑马
+C. 出去
+D. 爱好
+Đáp án: A
+Lời giải: 球 đọc là qiú, nghĩa là Quả bóng, môn bóng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 571.
+Độ khó: Dễ
+Câu 53. Trong bài học, “有名” có nghĩa là gì?
+A. Nổi tiếng
+B. Rẻ
+C. Đi ra ngoài
+D. Lái xe
+Đáp án: A
+Lời giải: 有名 đọc là yǒumíng, nghĩa là Nổi tiếng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 572.
+Độ khó: Dễ
+Câu 54. Chọn Hán tự có phiên âm “yǒumíng” và nghĩa “Nổi tiếng”.
+A. 爱
+B. 骑
+C. 晴天
+D. 有名
+Đáp án: D
+Lời giải: 有名 đọc là yǒumíng, nghĩa là Nổi tiếng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 572.
+Độ khó: Dễ
+Câu 55. Trong bài học, “好吃” có nghĩa là gì?
+A. Rẻ
+B. Ngon (đồ ăn)
+C. Hàn Quốc
+D. Lái xe
+Đáp án: B
+Lời giải: 好吃 đọc là hǎochī, nghĩa là Ngon (đồ ăn). Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 573.
+Độ khó: Dễ
+Câu 56. Chọn Hán tự có phiên âm “hǎochī” và nghĩa “Ngon (đồ ăn)”.
 A. 又……又……
+B. 明星
+C. 好吃
+D. 有名
+Đáp án: C
+Lời giải: 好吃 đọc là hǎochī, nghĩa là Ngon (đồ ăn). Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 573.
+Độ khó: Dễ
+Câu 57. Trong bài học, “好喝” có nghĩa là gì?
+A. Ngon (đồ uống)
+B. Hàn Quốc
+C. Mở ra
+D. Vừa… vừa…
+Đáp án: A
+Lời giải: 好喝 đọc là hǎohē, nghĩa là Ngon (đồ uống). Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 574.
+Độ khó: Dễ
+Câu 58. Chọn Hán tự có phiên âm “hǎohē” và nghĩa “Ngon (đồ uống)”.
+A. 打
 B. 爱
 C. 公交车
-D. 走路
-Đáp án: B
-Lời giải: 爱 đọc là ài, nghĩa là yêu, yêu thích. Tham chiếu: PDF bài 9, trang 4.
-Độ khó: Dễ
-Câu 6. Chọn phiên âm đúng của “爱”.
-A. jìn
-B. tiānqì
-C. guā fēng
-D. ài
+D. 好喝
 Đáp án: D
-Lời giải: 爱 đọc là ài, nghĩa là yêu, yêu thích. Tham chiếu: PDF bài 9, trang 4.
+Lời giải: 好喝 đọc là hǎohē, nghĩa là Ngon (đồ uống). Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 574.
 Độ khó: Dễ
-Câu 7. Trong bài học, “爱好” có nghĩa là gì?
-A. ngon; dùng cho đồ ăn
-B. sở thích
-C. nhà hàng Hàn Quốc
-D. mặc
-Đáp án: B
-Lời giải: 爱好 đọc là àihào, nghĩa là sở thích. Tham chiếu: PDF bài 9, trang 4.
-Độ khó: Dễ
-Câu 8. Chọn chữ Hán có nghĩa “sở thích”.
-A. 爱好
-B. 晴天
-C. 看书
-D. 地铁
-Đáp án: A
-Lời giải: 爱好 đọc là àihào, nghĩa là sở thích. Tham chiếu: PDF bài 9, trang 4.
-Độ khó: Dễ
-Câu 9. Chọn phiên âm đúng của “爱好”.
-A. yuǎn
-B. mótuōchē
-C. àihào
-D. zìxíngchē
-Đáp án: C
-Lời giải: 爱好 đọc là àihào, nghĩa là sở thích. Tham chiếu: PDF bài 9, trang 4.
-Độ khó: Dễ
-Câu 10. Trong bài học, “地铁” có nghĩa là gì?
-A. xa
-B. tàu điện ngầm
-C. món ăn Hàn Quốc
-D. ngon; dùng cho đồ uống
-Đáp án: B
-Lời giải: 地铁 đọc là dìtiě, nghĩa là tàu điện ngầm. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 11. Chọn chữ Hán có nghĩa “tàu điện ngầm”.
-A. 地铁
-B. 快
-C. 怎么
-D. 韩国菜
-Đáp án: A
-Lời giải: 地铁 đọc là dìtiě, nghĩa là tàu điện ngầm. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 12. Chọn phiên âm đúng của “地铁”.
-A. děngděng
-B. diànyǐng
-C. dìtiě
-D. dǎkāi
-Đáp án: C
-Lời giải: 地铁 đọc là dìtiě, nghĩa là tàu điện ngầm. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 13. Trong bài học, “公交车” có nghĩa là gì?
-A. xe buýt
-B. đáng yêu
-C. ngon; dùng cho đồ uống
-D. Công viên Nhân Dân
-Đáp án: A
-Lời giải: 公交车 đọc là gōngjiāochē, nghĩa là xe buýt. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 14. Chọn chữ Hán có nghĩa “xe buýt”.
-A. 留学生
-B. 公交车
-C. 附近
-D. 雨天
-Đáp án: B
-Lời giải: 公交车 đọc là gōngjiāochē, nghĩa là xe buýt. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 15. Chọn phiên âm đúng của “公交车”.
-A. gōngjiāochē
-B. yǒumíng
-C. xǐhuan
-D. Měiguó diànyǐng
-Đáp án: A
-Lời giải: 公交车 đọc là gōngjiāochē, nghĩa là xe buýt. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 16. Trong bài học, “出租车” có nghĩa là gì?
-A. xe buýt
-B. xe taxi
-C. không tốt lắm
-D. nóng
-Đáp án: B
-Lời giải: 出租车 đọc là chūzūchē, nghĩa là xe taxi. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 17. Chọn chữ Hán có nghĩa “xe taxi”.
-A. 可爱
-B. 穿
-C. 出租车
-D. 中国电影
-Đáp án: C
-Lời giải: 出租车 đọc là chūzūchē, nghĩa là xe taxi. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 18. Chọn phiên âm đúng của “出租车”.
-A. guā fēng
-B. chūzūchē
-C. dǎkāi
-D. míngtiān wǎnshang
-Đáp án: B
-Lời giải: 出租车 đọc là chūzūchē, nghĩa là xe taxi. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 19. Trong bài học, “自行车” có nghĩa là gì?
-A. mở ra
-B. ra ngoài, đi ra xa người nói
-C. xe đạp
-D. quả bóng
-Đáp án: C
-Lời giải: 自行车 đọc là zìxíngchē, nghĩa là xe đạp. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 20. Chọn chữ Hán có nghĩa “xe đạp”.
-A. 自行车
-B. 冰
-C. 中国菜
-D. 留学生
-Đáp án: A
-Lời giải: 自行车 đọc là zìxíngchē, nghĩa là xe đạp. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 21. Chọn phiên âm đúng của “自行车”.
-A. zìxíngchē
-B. dǎ qiú
-C. rè
-D. zǒulù
-Đáp án: A
-Lời giải: 自行车 đọc là zìxíngchē, nghĩa là xe đạp. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 22. Trong bài học, “摩托车” có nghĩa là gì?
-A. xe máy
-B. thời tiết
-C. xe đạp
-D. mặc
-Đáp án: A
-Lời giải: 摩托车 đọc là mótuōchē, nghĩa là xe máy. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 23. Chọn chữ Hán có nghĩa “xe máy”.
-A. 晴天
-B. 公交车
-C. 近
-D. 摩托车
+Câu 59. Trong bài học, “好听” có nghĩa là gì?
+A. Vừa… vừa…
+B. Quả bóng, môn bóng
+C. Cưỡi ngựa
+D. Hay (âm thanh)
 Đáp án: D
-Lời giải: 摩托车 đọc là mótuōchē, nghĩa là xe máy. Tham chiếu: PDF bài 9, trang 5.
+Lời giải: 好听 đọc là hǎotīng, nghĩa là Hay (âm thanh). Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 575.
 Độ khó: Dễ
-Câu 24. Chọn phiên âm đúng của “摩托车”.
-A. zuò
-B. kàn shū
-C. chuān
-D. mótuōchē
-Đáp án: D
-Lời giải: 摩托车 đọc là mótuōchē, nghĩa là xe máy. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 25. Trong bài học, “走路” có nghĩa là gì?
-A. tàu điện ngầm
-B. du học sinh
-C. phim Mỹ
-D. đi bộ
-Đáp án: D
-Lời giải: 走路 đọc là zǒulù, nghĩa là đi bộ. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 26. Chọn chữ Hán có nghĩa “đi bộ”.
-A. 走路
-B. 怎么样
-C. 热
-D. 可爱
-Đáp án: A
-Lời giải: 走路 đọc là zǒulù, nghĩa là đi bộ. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 27. Chọn phiên âm đúng của “走路”.
-A. chūqù
-B. diànyǐngyuàn
-C. zǒulù
-D. yìbiān…yìbiān…
-Đáp án: C
-Lời giải: 走路 đọc là zǒulù, nghĩa là đi bộ. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 28. Trong bài học, “跑步” có nghĩa là gì?
-A. mặc
-B. ngon; dùng cho đồ uống
-C. chạy bộ
-D. mở ra
-Đáp án: C
-Lời giải: 跑步 đọc là pǎobù, nghĩa là chạy bộ. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 29. Chọn chữ Hán có nghĩa “chạy bộ”.
-A. 骑车
-B. 远
-C. 韩国饭店
-D. 跑步
-Đáp án: D
-Lời giải: 跑步 đọc là pǎobù, nghĩa là chạy bộ. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 30. Chọn phiên âm đúng của “跑步”.
-A. zěnme
-B. bīngbīng de
-C. pǎobù
-D. ài
-Đáp án: C
-Lời giải: 跑步 đọc là pǎobù, nghĩa là chạy bộ. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 31. Trong bài học, “坐” có nghĩa là gì?
-A. xe đạp
-B. Hàn Quốc
-C. ngồi; đi bằng phương tiện như tàu, xe
-D. nghe nhạc
-Đáp án: C
-Lời giải: 坐 đọc là zuò, nghĩa là ngồi; đi bằng phương tiện như tàu, xe. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 32. Chọn chữ Hán có nghĩa “ngồi; đi bằng phương tiện như tàu, xe”.
+Câu 60. Chọn Hán tự có phiên âm “hǎotīng” và nghĩa “Hay (âm thanh)”.
 A. 坐
-B. 公交车
-C. 风
-D. 好吃
-Đáp án: A
-Lời giải: 坐 đọc là zuò, nghĩa là ngồi; đi bằng phương tiện như tàu, xe. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 33. Chọn phiên âm đúng của “坐”.
-A. qiú
-B. yìbiān…yìbiān…
-C. zǒulù
-D. zuò
-Đáp án: D
-Lời giải: 坐 đọc là zuò, nghĩa là ngồi; đi bằng phương tiện như tàu, xe. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 34. Trong bài học, “出去” có nghĩa là gì?
-A. ra ngoài, đi ra xa người nói
-B. nhà hàng Hàn Quốc
-C. thời tiết
-D. lạnh
-Đáp án: A
-Lời giải: 出去 đọc là chūqù, nghĩa là ra ngoài, đi ra xa người nói. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 35. Chọn chữ Hán có nghĩa “ra ngoài, đi ra xa người nói”.
-A. 打
-B. 走路
-C. 出去
-D. 人民公园
-Đáp án: C
-Lời giải: 出去 đọc là chūqù, nghĩa là ra ngoài, đi ra xa người nói. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 36. Chọn phiên âm đúng của “出去”.
-A. jìn
-B. chūqù
-C. kuài
-D. yǒumíng
-Đáp án: B
-Lời giải: 出去 đọc là chūqù, nghĩa là ra ngoài, đi ra xa người nói. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 37. Trong bài học, “出来” có nghĩa là gì?
-A. nhanh
-B. quần áo
-C. đi xe đạp hoặc xe máy
-D. ra đây, đi ra về phía người nói
-Đáp án: D
-Lời giải: 出来 đọc là chūlái, nghĩa là ra đây, đi ra về phía người nói. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 38. Chọn chữ Hán có nghĩa “ra đây, đi ra về phía người nói”.
-A. 中国电影
-B. 中国菜
-C. 出来
-D. 出租车
-Đáp án: C
-Lời giải: 出来 đọc là chūlái, nghĩa là ra đây, đi ra về phía người nói. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 39. Chọn phiên âm đúng của “出来”.
-A. diànyǐng
-B. chūlái
-C. zìxíngchē
-D. yīfu
-Đáp án: B
-Lời giải: 出来 đọc là chūlái, nghĩa là ra đây, đi ra về phía người nói. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 40. Trong bài học, “玩” có nghĩa là gì?
-A. chơi
-B. đi bộ
-C. thời tiết
-D. đọc sách
-Đáp án: A
-Lời giải: 玩 đọc là wán, nghĩa là chơi. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 41. Chọn chữ Hán có nghĩa “chơi”.
-A. 喜欢
-B. 好听
-C. 玩
-D. 近
-Đáp án: C
-Lời giải: 玩 đọc là wán, nghĩa là chơi. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 42. Chọn phiên âm đúng của “玩”.
-A. Zhōngguó diànyǐng
-B. hǎochī
-C. bīngbīng de
-D. wán
-Đáp án: D
-Lời giải: 玩 đọc là wán, nghĩa là chơi. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 43. Trong bài học, “穿” có nghĩa là gì?
-A. nghe nhạc
-B. mặc
-C. không tốt lắm
-D. du học sinh
-Đáp án: B
-Lời giải: 穿 đọc là chuān, nghĩa là mặc. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 44. Chọn chữ Hán có nghĩa “mặc”.
-A. 刮风
-B. 等
-C. 快
+B. 开
+C. 好听
 D. 穿
-Đáp án: D
-Lời giải: 穿 đọc là chuān, nghĩa là mặc. Tham chiếu: PDF bài 9, trang 7.
+Đáp án: C
+Lời giải: 好听 đọc là hǎotīng, nghĩa là Hay (âm thanh). Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 575.
 Độ khó: Dễ
-Câu 45. Chọn phiên âm đúng của “穿”.
-A. chuān
-B. jìn
-C. měi ge zhōumò
-D. zěnmeyàng
+Câu 61. Trong bài học, “等” có nghĩa là gì?
+A. Đợi, chờ
+B. Đánh, gọi điện
+C. Vừa… vừa…
+D. Xe buýt
 Đáp án: A
-Lời giải: 穿 đọc là chuān, nghĩa là mặc. Tham chiếu: PDF bài 9, trang 7.
+Lời giải: 等 đọc là děng, nghĩa là Đợi, chờ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 576.
 Độ khó: Dễ
-Câu 46. Trong bài học, “衣服” có nghĩa là gì?
-A. sở thích
-B. nhanh
-C. quần áo
-D. nhà hàng Hàn Quốc
-Đáp án: C
-Lời giải: 衣服 đọc là yīfu, nghĩa là quần áo. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 47. Chọn chữ Hán có nghĩa “quần áo”.
-A. 冰冰的
-B. 喜欢
-C. 怎么样
-D. 衣服
-Đáp án: D
-Lời giải: 衣服 đọc là yīfu, nghĩa là quần áo. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 48. Chọn phiên âm đúng của “衣服”.
-A. yīfu
-B. kuài
-C. qíngtiān
-D. liúxuéshēng
-Đáp án: A
-Lời giải: 衣服 đọc là yīfu, nghĩa là quần áo. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 49. Trong bài học, “怎么” có nghĩa là gì?
-A. đi bộ
-B. trợ từ cuối câu đề nghị hoặc phỏng đoán
-C. băng, đá
-D. thế nào; hỏi cách làm
-Đáp án: D
-Lời giải: 怎么 đọc là zěnme, nghĩa là thế nào; hỏi cách làm. Tham chiếu: PDF bài 9, trang 8.
-Độ khó: Dễ
-Câu 50. Chọn chữ Hán có nghĩa “thế nào; hỏi cách làm”.
-A. 公交车
-B. 明天晚上
-C. 怎么
-D. 冷
-Đáp án: C
-Lời giải: 怎么 đọc là zěnme, nghĩa là thế nào; hỏi cách làm. Tham chiếu: PDF bài 9, trang 8.
-Độ khó: Dễ
-Câu 51. Chọn phiên âm đúng của “怎么”.
-A. zěnme
-B. lěng
-C. qí
-D. zǒulù
-Đáp án: A
-Lời giải: 怎么 đọc là zěnme, nghĩa là thế nào; hỏi cách làm. Tham chiếu: PDF bài 9, trang 8.
-Độ khó: Dễ
-Câu 52. Trong bài học, “怎么样” có nghĩa là gì?
-A. ngày mưa
-B. ra đây, đi ra về phía người nói
-C. như thế nào; hỏi đánh giá hoặc ý kiến
-D. băng, đá
-Đáp án: C
-Lời giải: 怎么样 đọc là zěnmeyàng, nghĩa là như thế nào; hỏi đánh giá hoặc ý kiến. Tham chiếu: PDF bài 9, trang 8.
-Độ khó: Dễ
-Câu 53. Chọn chữ Hán có nghĩa “như thế nào; hỏi đánh giá hoặc ý kiến”.
-A. 坐
-B. 人民公园
-C. 地铁
-D. 怎么样
-Đáp án: D
-Lời giải: 怎么样 đọc là zěnmeyàng, nghĩa là như thế nào; hỏi đánh giá hoặc ý kiến. Tham chiếu: PDF bài 9, trang 8.
-Độ khó: Dễ
-Câu 54. Chọn phiên âm đúng của “怎么样”.
-A. chūlái
-B. piányi
-C. fēng
-D. zěnmeyàng
-Đáp án: D
-Lời giải: 怎么样 đọc là zěnmeyàng, nghĩa là như thế nào; hỏi đánh giá hoặc ý kiến. Tham chiếu: PDF bài 9, trang 8.
-Độ khó: Dễ
-Câu 55. Trong bài học, “天气” có nghĩa là gì?
-A. ngày âm u, nhiều mây
-B. thời tiết
-C. sở thích
-D. mở ra
-Đáp án: B
-Lời giải: 天气 đọc là tiānqì, nghĩa là thời tiết. Tham chiếu: PDF bài 9, trang 9.
-Độ khó: Dễ
-Câu 56. Chọn chữ Hán có nghĩa “thời tiết”.
-A. 跑步
-B. 韩国菜
-C. 穿
-D. 天气
-Đáp án: D
-Lời giải: 天气 đọc là tiānqì, nghĩa là thời tiết. Tham chiếu: PDF bài 9, trang 9.
-Độ khó: Dễ
-Câu 57. Chọn phiên âm đúng của “天气”.
-A. tiānqì
-B. qíngtiān
-C. zuò
-D. Zhōngguó cài
-Đáp án: A
-Lời giải: 天气 đọc là tiānqì, nghĩa là thời tiết. Tham chiếu: PDF bài 9, trang 9.
-Độ khó: Dễ
-Câu 58. Trong bài học, “晴天” có nghĩa là gì?
-A. ra ngoài, đi ra xa người nói
-B. chạy bộ
-C. ngày nắng, trời quang
-D. du học sinh
-Đáp án: C
-Lời giải: 晴天 đọc là qíngtiān, nghĩa là ngày nắng, trời quang. Tham chiếu: PDF bài 9, trang 9.
-Độ khó: Dễ
-Câu 59. Chọn chữ Hán có nghĩa “ngày nắng, trời quang”.
-A. 喜欢
-B. 好听
-C. 晴天
-D. 出来
-Đáp án: C
-Lời giải: 晴天 đọc là qíngtiān, nghĩa là ngày nắng, trời quang. Tham chiếu: PDF bài 9, trang 9.
-Độ khó: Dễ
-Câu 60. Chọn phiên âm đúng của “晴天”.
-A. zǒulù
-B. gōngjiāochē
-C. qí
-D. qíngtiān
-Đáp án: D
-Lời giải: 晴天 đọc là qíngtiān, nghĩa là ngày nắng, trời quang. Tham chiếu: PDF bài 9, trang 9.
-Độ khó: Dễ
-Câu 61. Trong bài học, “阴天” có nghĩa là gì?
-A. nổi tiếng
-B. ngày nắng, trời quang
-C. hay là; nối các lựa chọn trong câu hỏi
-D. ngày âm u, nhiều mây
-Đáp án: D
-Lời giải: 阴天 đọc là yīntiān, nghĩa là ngày âm u, nhiều mây. Tham chiếu: PDF bài 9, trang 9.
-Độ khó: Dễ
-Câu 62. Chọn chữ Hán có nghĩa “ngày âm u, nhiều mây”.
-A. 附近
-B. 公共汽车
-C. 阴天
-D. 吧
-Đáp án: C
-Lời giải: 阴天 đọc là yīntiān, nghĩa là ngày âm u, nhiều mây. Tham chiếu: PDF bài 9, trang 9.
-Độ khó: Dễ
-Câu 63. Chọn phiên âm đúng của “阴天”.
-A. kàn shū
-B. yīntiān
-C. liúxuéshēng
-D. yǔtiān
-Đáp án: B
-Lời giải: 阴天 đọc là yīntiān, nghĩa là ngày âm u, nhiều mây. Tham chiếu: PDF bài 9, trang 9.
-Độ khó: Dễ
-Câu 64. Trong bài học, “雨天” có nghĩa là gì?
-A. du học sinh
-B. minh tinh, người nổi tiếng
-C. ngày mưa
-D. vừa…vừa…; làm đồng thời hai hành động
-Đáp án: C
-Lời giải: 雨天 đọc là yǔtiān, nghĩa là ngày mưa. Tham chiếu: PDF bài 9, trang 9.
-Độ khó: Dễ
-Câu 65. Chọn chữ Hán có nghĩa “ngày mưa”.
-A. 美国电影
-B. 明星
+Câu 62. Chọn Hán tự có phiên âm “děng” và nghĩa “Đợi, chờ”.
+A. 出租车
+B. 衣服
 C. 等
-D. 雨天
-Đáp án: D
-Lời giải: 雨天 đọc là yǔtiān, nghĩa là ngày mưa. Tham chiếu: PDF bài 9, trang 9.
-Độ khó: Dễ
-Câu 66. Chọn phiên âm đúng của “雨天”.
-A. hǎohē
-B. míngxīng
-C. dǎ qiú
-D. yǔtiān
-Đáp án: D
-Lời giải: 雨天 đọc là yǔtiān, nghĩa là ngày mưa. Tham chiếu: PDF bài 9, trang 9.
-Độ khó: Dễ
-Câu 67. Trong bài học, “热” có nghĩa là gì?
-A. tối ngày mai
-B. nóng
-C. xe buýt
-D. ngon; dùng cho đồ ăn
-Đáp án: B
-Lời giải: 热 đọc là rè, nghĩa là nóng. Tham chiếu: PDF bài 9, trang 10.
-Độ khó: Dễ
-Câu 68. Chọn chữ Hán có nghĩa “nóng”.
-A. 自行车
-B. 明星
-C. 热
-D. 吧
-Đáp án: C
-Lời giải: 热 đọc là rè, nghĩa là nóng. Tham chiếu: PDF bài 9, trang 10.
-Độ khó: Dễ
-Câu 69. Chọn phiên âm đúng của “热”.
-A. ài
-B. zěnmeyàng
-C. cài
-D. rè
-Đáp án: D
-Lời giải: 热 đọc là rè, nghĩa là nóng. Tham chiếu: PDF bài 9, trang 10.
-Độ khó: Dễ
-Câu 70. Trong bài học, “冷” có nghĩa là gì?
-A. đọc sách
-B. lạnh
-C. xa
-D. ngon; dùng cho đồ uống
-Đáp án: B
-Lời giải: 冷 đọc là lěng, nghĩa là lạnh. Tham chiếu: PDF bài 9, trang 10.
-Độ khó: Dễ
-Câu 71. Chọn chữ Hán có nghĩa “lạnh”.
-A. 风
-B. 每个周末
-C. 冷
-D. 摩托车
-Đáp án: C
-Lời giải: 冷 đọc là lěng, nghĩa là lạnh. Tham chiếu: PDF bài 9, trang 10.
-Độ khó: Dễ
-Câu 72. Chọn phiên âm đúng của “冷”.
-A. yǒumíng
-B. jìn
-C. lěng
-D. dǎ
-Đáp án: C
-Lời giải: 冷 đọc là lěng, nghĩa là lạnh. Tham chiếu: PDF bài 9, trang 10.
-Độ khó: Dễ
-Câu 73. Trong bài học, “冰” có nghĩa là gì?
-A. món ăn Hàn Quốc
-B. băng, đá
-C. rạp chiếu phim
-D. ra đây, đi ra về phía người nói
-Đáp án: B
-Lời giải: 冰 đọc là bīng, nghĩa là băng, đá. Tham chiếu: PDF bài 9, trang 10.
-Độ khó: Dễ
-Câu 74. Chọn chữ Hán có nghĩa “băng, đá”.
-A. 等等
-B. 远
-C. 冰
 D. 怎么样
 Đáp án: C
-Lời giải: 冰 đọc là bīng, nghĩa là băng, đá. Tham chiếu: PDF bài 9, trang 10.
+Lời giải: 等 đọc là děng, nghĩa là Đợi, chờ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 576.
 Độ khó: Dễ
-Câu 75. Chọn phiên âm đúng của “冰”.
-A. dìtiě
-B. lěng
-C. bīng
-D. Měiguó diànyǐng
-Đáp án: C
-Lời giải: 冰 đọc là bīng, nghĩa là băng, đá. Tham chiếu: PDF bài 9, trang 10.
-Độ khó: Dễ
-Câu 76. Trong bài học, “又……又……” có nghĩa là gì?
-A. lái ô tô
-B. phim điện ảnh
-C. như thế nào; hỏi đánh giá hoặc ý kiến
-D. vừa…vừa…; nêu hai đặc điểm
+Câu 63. Trong bài học, “电影院” có nghĩa là gì?
+A. Chơi
+B. Hàn Quốc
+C. Vừa… vừa…
+D. Rạp chiếu phim
 Đáp án: D
-Lời giải: 又……又…… đọc là yòu…yòu…, nghĩa là vừa…vừa…; nêu hai đặc điểm. Tham chiếu: PDF bài 9, trang 11.
+Lời giải: 电影院 đọc là diànyǐngyuàn, nghĩa là Rạp chiếu phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 580.
 Độ khó: Dễ
-Câu 77. Chọn chữ Hán có nghĩa “vừa…vừa…; nêu hai đặc điểm”.
-A. 又……又……
-B. 走路
-C. 附近
-D. 还是
-Đáp án: A
-Lời giải: 又……又…… đọc là yòu…yòu…, nghĩa là vừa…vừa…; nêu hai đặc điểm. Tham chiếu: PDF bài 9, trang 11.
-Độ khó: Dễ
-Câu 78. Chọn phiên âm đúng của “又……又……”.
-A. yòu…yòu…
-B. míngxīng
-C. diànyǐng
-D. kāi chē
-Đáp án: A
-Lời giải: 又……又…… đọc là yòu…yòu…, nghĩa là vừa…vừa…; nêu hai đặc điểm. Tham chiếu: PDF bài 9, trang 11.
-Độ khó: Dễ
-Câu 79. Trong bài học, “吧” có nghĩa là gì?
-A. ra ngoài, đi ra xa người nói
-B. trợ từ cuối câu đề nghị hoặc phỏng đoán
-C. đi, cưỡi; dùng cho xe đạp, xe máy
-D. đọc sách
-Đáp án: B
-Lời giải: 吧 đọc là ba, nghĩa là trợ từ cuối câu đề nghị hoặc phỏng đoán. Tham chiếu: PDF bài 9, trang 11.
-Độ khó: Dễ
-Câu 80. Chọn chữ Hán có nghĩa “trợ từ cuối câu đề nghị hoặc phỏng đoán”.
-A. 明星
-B. 自行车
-C. 吧
-D. 出来
-Đáp án: C
-Lời giải: 吧 đọc là ba, nghĩa là trợ từ cuối câu đề nghị hoặc phỏng đoán. Tham chiếu: PDF bài 9, trang 11.
-Độ khó: Dễ
-Câu 81. Chọn phiên âm đúng của “吧”.
-A. hǎohē
-B. Měiguó diànyǐng
-C. tiānqì
-D. ba
-Đáp án: D
-Lời giải: 吧 đọc là ba, nghĩa là trợ từ cuối câu đề nghị hoặc phỏng đoán. Tham chiếu: PDF bài 9, trang 11.
-Độ khó: Dễ
-Câu 82. Trong bài học, “打” có nghĩa là gì?
-A. rạp chiếu phim
-B. đi xe đạp hoặc xe máy
-C. đánh; gọi điện thoại trong 打电话
-D. đáng yêu
-Đáp án: C
-Lời giải: 打 đọc là dǎ, nghĩa là đánh; gọi điện thoại trong 打电话. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 83. Chọn chữ Hán có nghĩa “đánh; gọi điện thoại trong 打电话”.
-A. 打
-B. 有名
-C. 摩托车
-D. 怎么样
-Đáp án: A
-Lời giải: 打 đọc là dǎ, nghĩa là đánh; gọi điện thoại trong 打电话. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 84. Chọn phiên âm đúng của “打”.
-A. rè
-B. dǎ
-C. fēng
-D. guā fēng
-Đáp án: B
-Lời giải: 打 đọc là dǎ, nghĩa là đánh; gọi điện thoại trong 打电话. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 85. Trong bài học, “球” có nghĩa là gì?
-A. ngày âm u, nhiều mây
-B. quả bóng
-C. mặc
-D. trợ từ cuối câu đề nghị hoặc phỏng đoán
-Đáp án: B
-Lời giải: 球 đọc là qiú, nghĩa là quả bóng. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 86. Chọn chữ Hán có nghĩa “quả bóng”.
-A. 怎么
-B. 等等
-C. 球
-D. 公交车
-Đáp án: C
-Lời giải: 球 đọc là qiú, nghĩa là quả bóng. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 87. Chọn phiên âm đúng của “球”.
-A. yīntiān
-B. qí chē
-C. qiú
-D. Zhōngguó cài
-Đáp án: C
-Lời giải: 球 đọc là qiú, nghĩa là quả bóng. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 88. Trong bài học, “有名” có nghĩa là gì?
-A. nhà hàng Hàn Quốc
-B. ngày mưa
-C. nổi tiếng
-D. ngày nắng, trời quang
-Đáp án: C
-Lời giải: 有名 đọc là yǒumíng, nghĩa là nổi tiếng. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 89. Chọn chữ Hán có nghĩa “nổi tiếng”.
-A. 吧
-B. 韩国饭店
-C. 明天晚上
-D. 有名
-Đáp án: D
-Lời giải: 有名 đọc là yǒumíng, nghĩa là nổi tiếng. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 90. Chọn phiên âm đúng của “有名”.
-A. děng
-B. bīng
-C. yǒumíng
-D. Zhōngguó cài
-Đáp án: C
-Lời giải: 有名 đọc là yǒumíng, nghĩa là nổi tiếng. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 91. Trong bài học, “好吃” có nghĩa là gì?
-A. Hàn Quốc
-B. lạnh lùng, lạnh nhạt; trong ví dụ của bài
-C. ra đây, đi ra về phía người nói
-D. ngon; dùng cho đồ ăn
-Đáp án: D
-Lời giải: 好吃 đọc là hǎochī, nghĩa là ngon; dùng cho đồ ăn. Tham chiếu: PDF bài 9, trang 13.
-Độ khó: Dễ
-Câu 92. Chọn chữ Hán có nghĩa “ngon; dùng cho đồ ăn”.
-A. 韩国菜
-B. 便宜
-C. 骑
+Câu 64. Chọn Hán tự có phiên âm “diànyǐngyuàn” và nghĩa “Rạp chiếu phim”.
+A. 电影院
+B. 下雨天
+C. 好喝
 D. 好吃
-Đáp án: D
-Lời giải: 好吃 đọc là hǎochī, nghĩa là ngon; dùng cho đồ ăn. Tham chiếu: PDF bài 9, trang 13.
+Đáp án: A
+Lời giải: 电影院 đọc là diànyǐngyuàn, nghĩa là Rạp chiếu phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 580.
 Độ khó: Dễ
-Câu 93. Chọn phiên âm đúng của “好吃”.
-A. bú tài hǎo
-B. chūqù
-C. hǎochī
-D. děngděng
+Câu 65. Trong bài học, “电影” có nghĩa là gì?
+A. Cưỡi ngựa
+B. Xe taxi
+C. Vừa… vừa…
+D. Phim
+Đáp án: D
+Lời giải: 电影 đọc là diànyǐng, nghĩa là Phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 581.
+Độ khó: Dễ
+Câu 66. Chọn Hán tự có phiên âm “diànyǐng” và nghĩa “Phim”.
+A. 坐
+B. 打
+C. 自行车
+D. 电影
+Đáp án: D
+Lời giải: 电影 đọc là diànyǐng, nghĩa là Phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 581.
+Độ khó: Dễ
+Câu 67. Trong bài học, “开” có nghĩa là gì?
+A. Đợi một chút; vân vân
+B. Đi xe, đạp xe
+C. Mở, lái
+D. Đi bộ
 Đáp án: C
-Lời giải: 好吃 đọc là hǎochī, nghĩa là ngon; dùng cho đồ ăn. Tham chiếu: PDF bài 9, trang 13.
+Lời giải: 开 đọc là kāi, nghĩa là Mở, lái. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 582.
 Độ khó: Dễ
-Câu 94. Trong bài học, “好喝” có nghĩa là gì?
-A. xe máy
-B. không tốt lắm
-C. phim Trung Quốc
-D. ngon; dùng cho đồ uống
-Đáp án: D
-Lời giải: 好喝 đọc là hǎohē, nghĩa là ngon; dùng cho đồ uống. Tham chiếu: PDF bài 9, trang 13.
-Độ khó: Dễ
-Câu 95. Chọn chữ Hán có nghĩa “ngon; dùng cho đồ uống”.
-A. 雨天
-B. 好喝
-C. 电影
-D. 菜
+Câu 68. Chọn Hán tự có phiên âm “kāi” và nghĩa “Mở, lái”.
+A. 晴天
+B. 开
+C. 走路
+D. 打
 Đáp án: B
-Lời giải: 好喝 đọc là hǎohē, nghĩa là ngon; dùng cho đồ uống. Tham chiếu: PDF bài 9, trang 13.
+Lời giải: 开 đọc là kāi, nghĩa là Mở, lái. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 582.
 Độ khó: Dễ
-Câu 96. Chọn phiên âm đúng của “好喝”.
-A. hǎohē
-B. chūqù
-C. hǎochī
-D. gōnggòng qìchē
-Đáp án: A
-Lời giải: 好喝 đọc là hǎohē, nghĩa là ngon; dùng cho đồ uống. Tham chiếu: PDF bài 9, trang 13.
-Độ khó: Dễ
-Câu 97. Trong bài học, “好听” có nghĩa là gì?
-A. băng, đá
-B. thế nào; hỏi cách làm
-C. mưa, trời mưa
-D. hay, dễ nghe
-Đáp án: D
-Lời giải: 好听 đọc là hǎotīng, nghĩa là hay, dễ nghe. Tham chiếu: PDF bài 9, trang 13.
-Độ khó: Dễ
-Câu 98. Chọn chữ Hán có nghĩa “hay, dễ nghe”.
-A. 好听
-B. 附近
-C. 等等
-D. 明星
-Đáp án: A
-Lời giải: 好听 đọc là hǎotīng, nghĩa là hay, dễ nghe. Tham chiếu: PDF bài 9, trang 13.
-Độ khó: Dễ
-Câu 99. Chọn phiên âm đúng của “好听”.
-A. hǎotīng
-B. tiānqì
-C. chūqù
-D. měi ge zhōumò
-Đáp án: A
-Lời giải: 好听 đọc là hǎotīng, nghĩa là hay, dễ nghe. Tham chiếu: PDF bài 9, trang 13.
-Độ khó: Dễ
-Câu 100. Trong bài học, “等” có nghĩa là gì?
-A. xe đạp
-B. Công viên Nhân Dân
-C. sở thích
-D. đợi, chờ
-Đáp án: D
-Lời giải: 等 đọc là děng, nghĩa là đợi, chờ. Tham chiếu: PDF bài 9, trang 13.
-Độ khó: Dễ
-Câu 101. Chọn chữ Hán có nghĩa “đợi, chờ”.
-A. 出去
-B. 每个周末
-C. 热
-D. 等
-Đáp án: D
-Lời giải: 等 đọc là děng, nghĩa là đợi, chờ. Tham chiếu: PDF bài 9, trang 13.
-Độ khó: Dễ
-Câu 102. Chọn phiên âm đúng của “等”.
-A. hǎohē
-B. hǎotīng
-C. děng
-D. kě'ài
-Đáp án: C
-Lời giải: 等 đọc là děng, nghĩa là đợi, chờ. Tham chiếu: PDF bài 9, trang 13.
-Độ khó: Dễ
-Câu 103. Trong bài học, “非常” có nghĩa là gì?
-A. vân vân; đợi một chút tùy ngữ cảnh
-B. rất, vô cùng
-C. ra đây, đi ra về phía người nói
-D. lạnh lùng, lạnh nhạt; trong ví dụ của bài
-Đáp án: B
-Lời giải: 非常 đọc là fēicháng, nghĩa là rất, vô cùng. Tham chiếu: PDF bài 9, trang 3.
-Độ khó: Dễ
-Câu 104. Chọn chữ Hán có nghĩa “rất, vô cùng”.
-A. 雨天
-B. 近
-C. 韩国饭店
-D. 非常
-Đáp án: D
-Lời giải: 非常 đọc là fēicháng, nghĩa là rất, vô cùng. Tham chiếu: PDF bài 9, trang 3.
-Độ khó: Dễ
-Câu 105. Chọn phiên âm đúng của “非常”.
-A. Měiguó diànyǐng
-B. diànyǐngyuàn
-C. fēicháng
-D. bīngbīng de
-Đáp án: C
-Lời giải: 非常 đọc là fēicháng, nghĩa là rất, vô cùng. Tham chiếu: PDF bài 9, trang 3.
-Độ khó: Dễ
-Câu 106. Trong bài học, “电影院” có nghĩa là gì?
-A. món ăn Hàn Quốc
-B. băng, đá
-C. rạp chiếu phim
-D. đi, cưỡi; dùng cho xe đạp, xe máy
-Đáp án: C
-Lời giải: 电影院 đọc là diànyǐngyuàn, nghĩa là rạp chiếu phim. Tham chiếu: PDF bài 9, trang 3.
-Độ khó: Dễ
-Câu 107. Chọn chữ Hán có nghĩa “rạp chiếu phim”.
-A. 穿
-B. 电影院
-C. 出租车
-D. 菜
-Đáp án: B
-Lời giải: 电影院 đọc là diànyǐngyuàn, nghĩa là rạp chiếu phim. Tham chiếu: PDF bài 9, trang 3.
-Độ khó: Dễ
-Câu 108. Chọn phiên âm đúng của “电影院”.
-A. diànyǐngyuàn
-B. kāi chē
-C. mótuōchē
-D. Hánguó fàndiàn
-Đáp án: A
-Lời giải: 电影院 đọc là diànyǐngyuàn, nghĩa là rạp chiếu phim. Tham chiếu: PDF bài 9, trang 3.
-Độ khó: Dễ
-Câu 109. Trong bài học, “便宜” có nghĩa là gì?
-A. vân vân; đợi một chút tùy ngữ cảnh
-B. rẻ
-C. món ăn Trung Quốc
+Câu 69. Trong bài học, “骑” có nghĩa là gì?
+A. Sở thích
+B. Cưỡi, đi xe
+C. Chơi bóng
 D. Hàn Quốc
 Đáp án: B
-Lời giải: 便宜 đọc là piányi, nghĩa là rẻ. Tham chiếu: PDF bài 9, trang 3.
+Lời giải: 骑 đọc là qí, nghĩa là Cưỡi, đi xe. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 583.
 Độ khó: Dễ
-Câu 110. Chọn chữ Hán có nghĩa “rẻ”.
-A. 电影院
-B. 怎么样
-C. 还是
-D. 便宜
-Đáp án: D
-Lời giải: 便宜 đọc là piányi, nghĩa là rẻ. Tham chiếu: PDF bài 9, trang 3.
-Độ khó: Dễ
-Câu 111. Chọn phiên âm đúng của “便宜”.
-A. piányi
-B. bīng
-C. zǒulù
-D. míngtiān wǎnshang
-Đáp án: A
-Lời giải: 便宜 đọc là piányi, nghĩa là rẻ. Tham chiếu: PDF bài 9, trang 3.
-Độ khó: Dễ
-Câu 112. Trong bài học, “菜” có nghĩa là gì?
-A. món ăn; rau
-B. đi xe đạp hoặc xe máy
-C. gần đây, khu vực lân cận
-D. gió
-Đáp án: A
-Lời giải: 菜 đọc là cài, nghĩa là món ăn; rau. Tham chiếu: PDF bài 9, trang 3.
-Độ khó: Dễ
-Câu 113. Chọn chữ Hán có nghĩa “món ăn; rau”.
-A. 菜
-B. 跑步
-C. 中国菜
-D. 开车
-Đáp án: A
-Lời giải: 菜 đọc là cài, nghĩa là món ăn; rau. Tham chiếu: PDF bài 9, trang 3.
-Độ khó: Dễ
-Câu 114. Chọn phiên âm đúng của “菜”.
-A. gōngjiāochē
-B. cài
-C. bīngbīng de
-D. yīntiān
-Đáp án: B
-Lời giải: 菜 đọc là cài, nghĩa là món ăn; rau. Tham chiếu: PDF bài 9, trang 3.
-Độ khó: Dễ
-Câu 115. Trong bài học, “还是” có nghĩa là gì?
-A. băng, đá
-B. hay là; nối các lựa chọn trong câu hỏi
-C. phim điện ảnh
-D. đáng yêu
-Đáp án: B
-Lời giải: 还是 đọc là háishi, nghĩa là hay là; nối các lựa chọn trong câu hỏi. Tham chiếu: PDF bài 9, trang 1.
-Độ khó: Dễ
-Câu 116. Chọn chữ Hán có nghĩa “hay là; nối các lựa chọn trong câu hỏi”.
-A. 热
-B. 还是
-C. 开车
-D. 冰冰的
-Đáp án: B
-Lời giải: 还是 đọc là háishi, nghĩa là hay là; nối các lựa chọn trong câu hỏi. Tham chiếu: PDF bài 9, trang 1.
-Độ khó: Dễ
-Câu 117. Chọn phiên âm đúng của “还是”.
-A. hǎotīng
-B. pǎobù
-C. hǎohē
-D. háishi
-Đáp án: D
-Lời giải: 还是 đọc là háishi, nghĩa là hay là; nối các lựa chọn trong câu hỏi. Tham chiếu: PDF bài 9, trang 1.
-Độ khó: Dễ
-Câu 118. Trong bài học, “电影” có nghĩa là gì?
-A. phim điện ảnh
-B. xe taxi
-C. Công viên Nhân Dân
-D. mưa, trời mưa
-Đáp án: A
-Lời giải: 电影 đọc là diànyǐng, nghĩa là phim điện ảnh. Tham chiếu: PDF bài 9, trang 1.
-Độ khó: Dễ
-Câu 119. Chọn chữ Hán có nghĩa “phim điện ảnh”.
-A. 电影
-B. 打
-C. 非常
-D. 出租车
-Đáp án: A
-Lời giải: 电影 đọc là diànyǐng, nghĩa là phim điện ảnh. Tham chiếu: PDF bài 9, trang 1.
-Độ khó: Dễ
-Câu 120. Chọn phiên âm đúng của “电影”.
-A. diànyǐng
-B. tīng yīnyuè
-C. bīng
-D. chūlái
-Đáp án: A
-Lời giải: 电影 đọc là diànyǐng, nghĩa là phim điện ảnh. Tham chiếu: PDF bài 9, trang 1.
-Độ khó: Dễ
-Câu 121. Trong bài học, “中国电影” có nghĩa là gì?
-A. xa
-B. phim Trung Quốc
-C. tối ngày mai
-D. sở thích
-Đáp án: B
-Lời giải: 中国电影 đọc là Zhōngguó diànyǐng, nghĩa là phim Trung Quốc. Tham chiếu: PDF bài 9, trang 1.
-Độ khó: Dễ
-Câu 122. Chọn chữ Hán có nghĩa “phim Trung Quốc”.
-A. 怎么样
-B. 中国电影
-C. 等等
-D. 留学生
-Đáp án: B
-Lời giải: 中国电影 đọc là Zhōngguó diànyǐng, nghĩa là phim Trung Quốc. Tham chiếu: PDF bài 9, trang 1.
-Độ khó: Dễ
-Câu 123. Chọn phiên âm đúng của “中国电影”.
-A. Hánguó cài
-B. tiānqì
-C. Zhōngguó diànyǐng
-D. diànyǐng
+Câu 70. Chọn Hán tự có phiên âm “qí” và nghĩa “Cưỡi, đi xe”.
+A. 自行车
+B. 坐出租车
+C. 骑
+D. 跑步
 Đáp án: C
-Lời giải: 中国电影 đọc là Zhōngguó diànyǐng, nghĩa là phim Trung Quốc. Tham chiếu: PDF bài 9, trang 1.
+Lời giải: 骑 đọc là qí, nghĩa là Cưỡi, đi xe. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 583.
 Độ khó: Dễ
-Câu 124. Trong bài học, “美国电影” có nghĩa là gì?
-A. xe đạp
-B. phim Mỹ
-C. ngồi; đi bằng phương tiện như tàu, xe
-D. chơi bóng
+Câu 71. Trong bài học, “骑车” có nghĩa là gì?
+A. Đi xe, đạp xe
+B. Đi tàu điện ngầm
+C. Ngày trời mưa
+D. Đợi một chút; vân vân
+Đáp án: A
+Lời giải: 骑车 đọc là qí chē, nghĩa là Đi xe, đạp xe. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 584.
+Độ khó: Dễ
+Câu 72. Chọn Hán tự có phiên âm “qí chē” và nghĩa “Đi xe, đạp xe”.
+A. 爱
+B. 骑车
+C. 中国电影
+D. 冷
 Đáp án: B
-Lời giải: 美国电影 đọc là Měiguó diànyǐng, nghĩa là phim Mỹ. Tham chiếu: PDF bài 9, trang 1.
+Lời giải: 骑车 đọc là qí chē, nghĩa là Đi xe, đạp xe. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 584.
 Độ khó: Dễ
-Câu 125. Chọn chữ Hán có nghĩa “phim Mỹ”.
+Câu 73. Trong bài học, “骑马” có nghĩa là gì?
+A. Trợ từ đề nghị, suy đoán
+B. Chạy bộ
+C. Rẻ
+D. Cưỡi ngựa
+Đáp án: D
+Lời giải: 骑马 đọc là qí mǎ, nghĩa là Cưỡi ngựa. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 585.
+Độ khó: Dễ
+Câu 74. Chọn Hán tự có phiên âm “qí mǎ” và nghĩa “Cưỡi ngựa”.
+A. 骑马
+B. 出来
+C. 公交车
+D. 冷
+Đáp án: A
+Lời giải: 骑马 đọc là qí mǎ, nghĩa là Cưỡi ngựa. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 585.
+Độ khó: Dễ
+Câu 75. Trong bài học, “开车” có nghĩa là gì?
+A. Ngon (đồ ăn)
+B. Lái xe
+C. Cưỡi ngựa
+D. Đợi một chút; vân vân
+Đáp án: B
+Lời giải: 开车 đọc là kāi chē, nghĩa là Lái xe. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 586.
+Độ khó: Dễ
+Câu 76. Chọn Hán tự có phiên âm “kāi chē” và nghĩa “Lái xe”.
 A. 开车
-B. 自行车
-C. 雨天
+B. 冷
+C. 怎么样
+D. 玩
+Đáp án: A
+Lời giải: 开车 đọc là kāi chē, nghĩa là Lái xe. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 586.
+Độ khó: Dễ
+Câu 77. Trong bài học, “跑步” có nghĩa là gì?
+A. Mặc
+B. Lái xe
+C. Chạy bộ
+D. Thích
+Đáp án: C
+Lời giải: 跑步 đọc là pǎobù, nghĩa là Chạy bộ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 587.
+Độ khó: Dễ
+Câu 78. Chọn Hán tự có phiên âm “pǎobù” và nghĩa “Chạy bộ”.
+A. 爱
+B. 地铁
+C. 跑步
+D. 坐地铁
+Đáp án: C
+Lời giải: 跑步 đọc là pǎobù, nghĩa là Chạy bộ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 587.
+Độ khó: Dễ
+Câu 79. Trong bài học, “坐地铁” có nghĩa là gì?
+A. Rạp chiếu phim
+B. Trời nắng
+C. Ngon (đồ uống)
+D. Đi tàu điện ngầm
+Đáp án: D
+Lời giải: 坐地铁 đọc là zuò dìtiě, nghĩa là Đi tàu điện ngầm. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 588.
+Độ khó: Dễ
+Câu 80. Chọn Hán tự có phiên âm “zuò dìtiě” và nghĩa “Đi tàu điện ngầm”.
+A. 坐地铁
+B. 喜欢
+C. 开车
+D. 韩国电影
+Đáp án: A
+Lời giải: 坐地铁 đọc là zuò dìtiě, nghĩa là Đi tàu điện ngầm. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 588.
+Độ khó: Dễ
+Câu 81. Trong bài học, “坐公交车” có nghĩa là gì?
+A. Đi xe buýt
+B. Yêu
+C. Hay (âm thanh)
+D. Mở ra
+Đáp án: A
+Lời giải: 坐公交车 đọc là zuò gōngjiāochē, nghĩa là Đi xe buýt. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 589.
+Độ khó: Dễ
+Câu 82. Chọn Hán tự có phiên âm “zuò gōngjiāochē” và nghĩa “Đi xe buýt”.
+A. 地铁
+B. 公交车
+C. 中国电影
+D. 坐公交车
+Đáp án: D
+Lời giải: 坐公交车 đọc là zuò gōngjiāochē, nghĩa là Đi xe buýt. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 589.
+Độ khó: Dễ
+Câu 83. Trong bài học, “坐出租车” có nghĩa là gì?
+A. Đi taxi
+B. Lạnh
+C. Trợ từ đề nghị, suy đoán
+D. Rẻ
+Đáp án: A
+Lời giải: 坐出租车 đọc là zuò chūzūchē, nghĩa là Đi taxi. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 590.
+Độ khó: Dễ
+Câu 84. Chọn Hán tự có phiên âm “zuò chūzūchē” và nghĩa “Đi taxi”.
+A. 电影院
+B. 阴天
+C. 天气
+D. 坐出租车
+Đáp án: D
+Lời giải: 坐出租车 đọc là zuò chūzūchē, nghĩa là Đi taxi. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 590.
+Độ khó: Dễ
+Câu 85. Trong bài học, “打球” có nghĩa là gì?
+A. Chơi bóng
+B. Mặc
+C. Lái xe
+D. Đi xe buýt
+Đáp án: A
+Lời giải: 打球 đọc là dǎ qiú, nghĩa là Chơi bóng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 591.
+Độ khó: Dễ
+Câu 86. Chọn Hán tự có phiên âm “dǎ qiú” và nghĩa “Chơi bóng”.
+A. 中国电影
+B. 摩托车
+C. 打球
+D. 骑
+Đáp án: C
+Lời giải: 打球 đọc là dǎ qiú, nghĩa là Chơi bóng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 591.
+Độ khó: Dễ
+Câu 87. Trong bài học, “打开” có nghĩa là gì?
+A. Thích
+B. Phim Trung Quốc
+C. Đi tàu điện ngầm
+D. Mở ra
+Đáp án: D
+Lời giải: 打开 đọc là dǎkāi, nghĩa là Mở ra. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 592.
+Độ khó: Dễ
+Câu 88. Chọn Hán tự có phiên âm “dǎkāi” và nghĩa “Mở ra”.
+A. 明星
+B. 打开
+C. 吧
+D. 电影
+Đáp án: B
+Lời giải: 打开 đọc là dǎkāi, nghĩa là Mở ra. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 592.
+Độ khó: Dễ
+Câu 89. Trong bài học, “等等” có nghĩa là gì?
+A. Thế nào
+B. Đợi một chút; vân vân
+C. Sở thích
+D. Xe máy
+Đáp án: B
+Lời giải: 等等 đọc là děngděng, nghĩa là Đợi một chút; vân vân. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 593.
+Độ khó: Dễ
+Câu 90. Chọn Hán tự có phiên âm “děngděng” và nghĩa “Đợi một chút; vân vân”.
+A. 中国电影
+B. 电影院
+C. 坐
+D. 等等
+Đáp án: D
+Lời giải: 等等 đọc là děngděng, nghĩa là Đợi một chút; vân vân. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 593.
+Độ khó: Dễ
+Câu 91. Trong bài học, “爱好” có nghĩa là gì?
+A. Phim
+B. Thích
+C. Yêu
+D. Sở thích
+Đáp án: D
+Lời giải: 爱好 đọc là àihào, nghĩa là Sở thích. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 597.
+Độ khó: Dễ
+Câu 92. Chọn Hán tự có phiên âm “àihào” và nghĩa “Sở thích”.
+A. 开
+B. 走路
+C. 爱好
+D. 晴天
+Đáp án: C
+Lời giải: 爱好 đọc là àihào, nghĩa là Sở thích. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 597.
+Độ khó: Dễ
+Câu 93. Trong bài học, “非常” có nghĩa là gì?
+A. Băng, đá
+B. Đi xe, đạp xe
+C. Rất, vô cùng
+D. Trợ từ đề nghị, suy đoán
+Đáp án: C
+Lời giải: 非常 đọc là fēicháng, nghĩa là Rất, vô cùng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 598.
+Độ khó: Dễ
+Câu 94. Chọn Hán tự có phiên âm “fēicháng” và nghĩa “Rất, vô cùng”.
+A. 怎么样
+B. 非常
+C. 出租车
+D. 穿
+Đáp án: B
+Lời giải: 非常 đọc là fēicháng, nghĩa là Rất, vô cùng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 598.
+Độ khó: Dễ
+Câu 95. Trong bài học, “便宜” có nghĩa là gì?
+A. Rẻ
+B. Rất, vô cùng
+C. Ngon (đồ ăn)
+D. Xe buýt
+Đáp án: A
+Lời giải: 便宜 đọc là piányi, nghĩa là Rẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 599.
+Độ khó: Dễ
+Câu 96. Chọn Hán tự có phiên âm “piányi” và nghĩa “Rẻ”.
+A. 骑马
+B. 便宜
+C. 阴天
+D. 骑
+Đáp án: B
+Lời giải: 便宜 đọc là piányi, nghĩa là Rẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 599.
+Độ khó: Dễ
+Câu 97. Trong bài học, “菜” có nghĩa là gì?
+A. Phim
+B. Phim Mỹ
+C. Đi xe, đạp xe
+D. Rau, món ăn
+Đáp án: D
+Lời giải: 菜 đọc là cài, nghĩa là Rau, món ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 600.
+Độ khó: Dễ
+Câu 98. Chọn Hán tự có phiên âm “cài” và nghĩa “Rau, món ăn”.
+A. 菜
+B. 打球
+C. 美国电影
+D. 爱
+Đáp án: A
+Lời giải: 菜 đọc là cài, nghĩa là Rau, món ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 600.
+Độ khó: Dễ
+Câu 99. Trong bài học, “冷” có nghĩa là gì?
+A. Đi ra đây
+B. Quần áo
+C. Đi xe buýt
+D. Lạnh
+Đáp án: D
+Lời giải: 冷 đọc là lěng, nghĩa là Lạnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 601.
+Độ khó: Dễ
+Câu 100. Chọn Hán tự có phiên âm “lěng” và nghĩa “Lạnh”.
+A. 冷
+B. 坐
+C. 阴天
+D. 开
+Đáp án: A
+Lời giải: 冷 đọc là lěng, nghĩa là Lạnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 601.
+Độ khó: Dễ
+Câu 101. Trong bài học, “明星” có nghĩa là gì?
+A. Quần áo
+B. Trời nắng
+C. Ngôi sao, người nổi tiếng
+D. Mở, lái
+Đáp án: C
+Lời giải: 明星 đọc là míngxīng, nghĩa là Ngôi sao, người nổi tiếng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 602.
+Độ khó: Dễ
+Câu 102. Chọn Hán tự có phiên âm “míngxīng” và nghĩa “Ngôi sao, người nổi tiếng”.
+A. 电影
+B. 衣服
+C. 坐
+D. 明星
+Đáp án: D
+Lời giải: 明星 đọc là míngxīng, nghĩa là Ngôi sao, người nổi tiếng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 602.
+Độ khó: Dễ
+Câu 103. Trong bài học, “韩国” có nghĩa là gì?
+A. Hàn Quốc
+B. Chơi
+C. Yêu
+D. Quần áo
+Đáp án: A
+Lời giải: 韩国 đọc là Hánguó, nghĩa là Hàn Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 603.
+Độ khó: Dễ
+Câu 104. Chọn Hán tự có phiên âm “Hánguó” và nghĩa “Hàn Quốc”.
+A. 韩国电影
+B. 玩
+C. 天气
+D. 韩国
+Đáp án: D
+Lời giải: 韩国 đọc là Hánguó, nghĩa là Hàn Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 603.
+Độ khó: Dễ
+Câu 105. Trong bài học, “中国电影” có nghĩa là gì?
+A. Vừa… vừa…
+B. Phim Trung Quốc
+C. Đi ra đây
+D. Trời nắng
+Đáp án: B
+Lời giải: 中国电影 đọc là Zhōngguó diànyǐng, nghĩa là Phim Trung Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 604.
+Độ khó: Dễ
+Câu 106. Chọn Hán tự có phiên âm “Zhōngguó diànyǐng” và nghĩa “Phim Trung Quốc”.
+A. 开车
+B. 中国电影
+C. 打开
+D. 冷
+Đáp án: B
+Lời giải: 中国电影 đọc là Zhōngguó diànyǐng, nghĩa là Phim Trung Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 604.
+Độ khó: Dễ
+Câu 107. Trong bài học, “美国电影” có nghĩa là gì?
+A. Phim Mỹ
+B. Rạp chiếu phim
+C. Chơi bóng
+D. Đi ra đây
+Đáp án: A
+Lời giải: 美国电影 đọc là Měiguó diànyǐng, nghĩa là Phim Mỹ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 605.
+Độ khó: Dễ
+Câu 108. Chọn Hán tự có phiên âm “Měiguó diànyǐng” và nghĩa “Phim Mỹ”.
+A. 电影院
+B. 中国电影
+C. 出来
 D. 美国电影
 Đáp án: D
-Lời giải: 美国电影 đọc là Měiguó diànyǐng, nghĩa là phim Mỹ. Tham chiếu: PDF bài 9, trang 1.
+Lời giải: 美国电影 đọc là Měiguó diànyǐng, nghĩa là Phim Mỹ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 605.
 Độ khó: Dễ
-Câu 126. Chọn phiên âm đúng của “美国电影”.
-A. yǒumíng
-B. Měiguó diànyǐng
-C. Hánguó fàndiàn
-D. dǎ qiú
+Câu 109. Trong bài học, “韩国电影” có nghĩa là gì?
+A. Chạy bộ
+B. Phim Hàn Quốc
+C. Mặc
+D. Phim Trung Quốc
 Đáp án: B
-Lời giải: 美国电影 đọc là Měiguó diànyǐng, nghĩa là phim Mỹ. Tham chiếu: PDF bài 9, trang 1.
+Lời giải: 韩国电影 đọc là Hánguó diànyǐng, nghĩa là Phim Hàn Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 606.
 Độ khó: Dễ
-Câu 127. Trong bài học, “公共汽车” có nghĩa là gì?
-A. xe buýt
-B. thế nào; hỏi cách làm
-C. mở ra
-D. xe đạp
-Đáp án: A
-Lời giải: 公共汽车 đọc là gōnggòng qìchē, nghĩa là xe buýt. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 128. Chọn chữ Hán có nghĩa “xe buýt”.
-A. 韩国饭店
-B. 公共汽车
-C. 电影院
-D. 热
-Đáp án: B
-Lời giải: 公共汽车 đọc là gōnggòng qìchē, nghĩa là xe buýt. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Dễ
-Câu 129. Chọn phiên âm đúng của “公共汽车”.
-A. qiú
-B. Hánguó cài
-C. kāi chē
-D. gōnggòng qìchē
+Câu 110. Chọn Hán tự có phiên âm “Hánguó diànyǐng” và nghĩa “Phim Hàn Quốc”.
+A. 坐
+B. 爱好
+C. 下雨天
+D. 韩国电影
 Đáp án: D
-Lời giải: 公共汽车 đọc là gōnggòng qìchē, nghĩa là xe buýt. Tham chiếu: PDF bài 9, trang 5.
+Lời giải: 韩国电影 đọc là Hánguó diànyǐng, nghĩa là Phim Hàn Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 606.
 Độ khó: Dễ
-Câu 130. Trong bài học, “骑” có nghĩa là gì?
-A. phim Trung Quốc
-B. đi, cưỡi; dùng cho xe đạp, xe máy
-C. lái ô tô
-D. quần áo
-Đáp án: B
-Lời giải: 骑 đọc là qí, nghĩa là đi, cưỡi; dùng cho xe đạp, xe máy. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 131. Chọn chữ Hán có nghĩa “đi, cưỡi; dùng cho xe đạp, xe máy”.
-A. 还是
-B. 晴天
-C. 开车
-D. 骑
-Đáp án: D
-Lời giải: 骑 đọc là qí, nghĩa là đi, cưỡi; dùng cho xe đạp, xe máy. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 132. Chọn phiên âm đúng của “骑”.
-A. dìtiě
-B. qí
-C. měi ge zhōumò
-D. àihào
-Đáp án: B
-Lời giải: 骑 đọc là qí, nghĩa là đi, cưỡi; dùng cho xe đạp, xe máy. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 133. Trong bài học, “骑车” có nghĩa là gì?
-A. đọc sách
-B. Hàn Quốc
-C. đi xe đạp hoặc xe máy
-D. như thế nào; hỏi đánh giá hoặc ý kiến
-Đáp án: C
-Lời giải: 骑车 đọc là qí chē, nghĩa là đi xe đạp hoặc xe máy. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 134. Chọn chữ Hán có nghĩa “đi xe đạp hoặc xe máy”.
-A. 看书
-B. 附近
-C. 骑车
-D. 听音乐
-Đáp án: C
-Lời giải: 骑车 đọc là qí chē, nghĩa là đi xe đạp hoặc xe máy. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 135. Chọn phiên âm đúng của “骑车”.
-A. měi ge zhōumò
-B. bīngbīng de
-C. qí chē
-D. yòu…yòu…
-Đáp án: C
-Lời giải: 骑车 đọc là qí chē, nghĩa là đi xe đạp hoặc xe máy. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 136. Trong bài học, “开车” có nghĩa là gì?
-A. thế nào; hỏi cách làm
-B. Hàn Quốc
-C. lái ô tô
-D. gần đây, khu vực lân cận
-Đáp án: C
-Lời giải: 开车 đọc là kāi chē, nghĩa là lái ô tô. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 137. Chọn chữ Hán có nghĩa “lái ô tô”.
-A. 附近
-B. 好喝
-C. 听音乐
-D. 开车
-Đáp án: D
-Lời giải: 开车 đọc là kāi chē, nghĩa là lái ô tô. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 138. Chọn phiên âm đúng của “开车”.
-A. jìn
-B. bīng
-C. měi ge zhōumò
-D. kāi chē
-Đáp án: D
-Lời giải: 开车 đọc là kāi chē, nghĩa là lái ô tô. Tham chiếu: PDF bài 9, trang 6.
-Độ khó: Dễ
-Câu 139. Trong bài học, “每个周末” có nghĩa là gì?
-A. ngồi; đi bằng phương tiện như tàu, xe
-B. mỗi cuối tuần
-C. ngon; dùng cho đồ uống
-D. đi bộ
-Đáp án: B
-Lời giải: 每个周末 đọc là měi ge zhōumò, nghĩa là mỗi cuối tuần. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 140. Chọn chữ Hán có nghĩa “mỗi cuối tuần”.
-A. 地铁
-B. 走路
-C. 每个周末
-D. 刮风
-Đáp án: C
-Lời giải: 每个周末 đọc là měi ge zhōumò, nghĩa là mỗi cuối tuần. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 141. Chọn phiên âm đúng của “每个周末”.
-A. yīfu
-B. chūlái
-C. Hánguó
-D. měi ge zhōumò
-Đáp án: D
-Lời giải: 每个周末 đọc là měi ge zhōumò, nghĩa là mỗi cuối tuần. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Dễ
-Câu 142. Trong bài học, “可爱” có nghĩa là gì?
-A. không tốt lắm
-B. đáng yêu
-C. đánh; gọi điện thoại trong 打电话
-D. nhanh
-Đáp án: B
-Lời giải: 可爱 đọc là kě'ài, nghĩa là đáng yêu. Tham chiếu: PDF bài 9, trang 11.
-Độ khó: Dễ
-Câu 143. Chọn chữ Hán có nghĩa “đáng yêu”.
-A. 冰冰的
-B. 雨天
-C. 可爱
-D. 便宜
-Đáp án: C
-Lời giải: 可爱 đọc là kě'ài, nghĩa là đáng yêu. Tham chiếu: PDF bài 9, trang 11.
-Độ khó: Dễ
-Câu 144. Chọn phiên âm đúng của “可爱”.
-A. chuān
-B. kě'ài
-C. jìn
-D. guā fēng
-Đáp án: B
-Lời giải: 可爱 đọc là kě'ài, nghĩa là đáng yêu. Tham chiếu: PDF bài 9, trang 11.
-Độ khó: Dễ
-Câu 145. Trong bài học, “下雨” có nghĩa là gì?
-A. xa
-B. tàu điện ngầm
-C. lạnh lùng, lạnh nhạt; trong ví dụ của bài
-D. mưa, trời mưa
-Đáp án: D
-Lời giải: 下雨 đọc là xià yǔ, nghĩa là mưa, trời mưa. Tham chiếu: PDF bài 9, trang 9.
-Độ khó: Dễ
-Câu 146. Chọn chữ Hán có nghĩa “mưa, trời mưa”.
-A. 近
-B. 公交车
-C. 天气
-D. 下雨
-Đáp án: D
-Lời giải: 下雨 đọc là xià yǔ, nghĩa là mưa, trời mưa. Tham chiếu: PDF bài 9, trang 9.
-Độ khó: Dễ
-Câu 147. Chọn phiên âm đúng của “下雨”.
-A. yīntiān
-B. xià yǔ
-C. ba
-D. àihào
-Đáp án: B
-Lời giải: 下雨 đọc là xià yǔ, nghĩa là mưa, trời mưa. Tham chiếu: PDF bài 9, trang 9.
-Độ khó: Dễ
-Câu 148. Trong bài học, “冰冰的” có nghĩa là gì?
-A. lạnh lùng, lạnh nhạt; trong ví dụ của bài
-B. hay, dễ nghe
-C. đánh; gọi điện thoại trong 打电话
-D. quần áo
-Đáp án: A
-Lời giải: 冰冰的 đọc là bīngbīng de, nghĩa là lạnh lùng, lạnh nhạt; trong ví dụ của bài. Tham chiếu: PDF bài 9, trang 10.
-Độ khó: Dễ
-Câu 149. Chọn chữ Hán có nghĩa “lạnh lùng, lạnh nhạt; trong ví dụ của bài”.
-A. 冰冰的
-B. 一边……一边……
-C. 人民公园
-D. 中国电影
-Đáp án: A
-Lời giải: 冰冰的 đọc là bīngbīng de, nghĩa là lạnh lùng, lạnh nhạt; trong ví dụ của bài. Tham chiếu: PDF bài 9, trang 10.
-Độ khó: Dễ
-Câu 150. Chọn phiên âm đúng của “冰冰的”.
-A. Zhōngguó cài
-B. bīngbīng de
-C. lěng
-D. cài
-Đáp án: B
-Lời giải: 冰冰的 đọc là bīngbīng de, nghĩa là lạnh lùng, lạnh nhạt; trong ví dụ của bài. Tham chiếu: PDF bài 9, trang 10.
-Độ khó: Dễ
-Câu 151. Trong bài học, “打球” có nghĩa là gì?
-A. xa
-B. chơi bóng
-C. vân vân; đợi một chút tùy ngữ cảnh
-D. yêu, yêu thích
-Đáp án: B
-Lời giải: 打球 đọc là dǎ qiú, nghĩa là chơi bóng. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 152. Chọn chữ Hán có nghĩa “chơi bóng”.
-A. 明天晚上
-B. 好听
-C. 冷
-D. 打球
-Đáp án: D
-Lời giải: 打球 đọc là dǎ qiú, nghĩa là chơi bóng. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 153. Chọn phiên âm đúng của “打球”.
-A. dǎ qiú
-B. yǔtiān
-C. Zhōngguó diànyǐng
-D. dìtiě
-Đáp án: A
-Lời giải: 打球 đọc là dǎ qiú, nghĩa là chơi bóng. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 154. Trong bài học, “打开” có nghĩa là gì?
-A. mở ra
-B. đi xe đạp hoặc xe máy
-C. phim điện ảnh
-D. mỗi cuối tuần
-Đáp án: A
-Lời giải: 打开 đọc là dǎkāi, nghĩa là mở ra. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 155. Chọn chữ Hán có nghĩa “mở ra”.
-A. 打开
-B. 打
-C. 公共汽车
-D. 球
-Đáp án: A
-Lời giải: 打开 đọc là dǎkāi, nghĩa là mở ra. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 156. Chọn phiên âm đúng của “打开”.
-A. hǎochī
-B. bīngbīng de
-C. Zhōngguó diànyǐng
-D. dǎkāi
-Đáp án: D
-Lời giải: 打开 đọc là dǎkāi, nghĩa là mở ra. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 157. Trong bài học, “明星” có nghĩa là gì?
-A. Hàn Quốc
-B. chơi bóng
-C. đợi, chờ
-D. minh tinh, người nổi tiếng
-Đáp án: D
-Lời giải: 明星 đọc là míngxīng, nghĩa là minh tinh, người nổi tiếng. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 158. Chọn chữ Hán có nghĩa “minh tinh, người nổi tiếng”.
-A. 韩国菜
-B. 明星
-C. 美国电影
-D. 走路
-Đáp án: B
-Lời giải: 明星 đọc là míngxīng, nghĩa là minh tinh, người nổi tiếng. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 159. Chọn phiên âm đúng của “明星”.
-A. míngxīng
-B. tiānqì
-C. ba
-D. zěnme
-Đáp án: A
-Lời giải: 明星 đọc là míngxīng, nghĩa là minh tinh, người nổi tiếng. Tham chiếu: PDF bài 9, trang 12.
-Độ khó: Dễ
-Câu 160. Trong bài học, “等等” có nghĩa là gì?
-A. quả bóng
-B. nóng
-C. Công viên Nhân Dân
-D. vân vân; đợi một chút tùy ngữ cảnh
-Đáp án: D
-Lời giải: 等等 đọc là děngděng, nghĩa là vân vân; đợi một chút tùy ngữ cảnh. Tham chiếu: PDF bài 9, trang 13.
-Độ khó: Dễ
-Câu 161. Chọn chữ Hán có nghĩa “vân vân; đợi một chút tùy ngữ cảnh”.
-A. 等等
-B. 打
-C. 开车
-D. 喜欢
-Đáp án: A
-Lời giải: 等等 đọc là děngděng, nghĩa là vân vân; đợi một chút tùy ngữ cảnh. Tham chiếu: PDF bài 9, trang 13.
-Độ khó: Dễ
-Câu 162. Chọn phiên âm đúng của “等等”.
-A. Zhōngguó diànyǐng
-B. děngděng
-C. tīng yīnyuè
-D. hǎochī
-Đáp án: B
-Lời giải: 等等 đọc là děngděng, nghĩa là vân vân; đợi một chút tùy ngữ cảnh. Tham chiếu: PDF bài 9, trang 13.
-Độ khó: Dễ
-Câu 163. Trong bài học, “一边……一边……” có nghĩa là gì?
-A. vừa…vừa…; làm đồng thời hai hành động
-B. nghe nhạc
-C. chơi bóng
-D. món ăn Hàn Quốc
-Đáp án: A
-Lời giải: 一边……一边…… đọc là yìbiān…yìbiān…, nghĩa là vừa…vừa…; làm đồng thời hai hành động. Tham chiếu: PDF bài 9, trang 17.
-Độ khó: Dễ
-Câu 164. Chọn chữ Hán có nghĩa “vừa…vừa…; làm đồng thời hai hành động”.
-A. 听音乐
-B. 一边……一边……
-C. 球
-D. 好吃
-Đáp án: B
-Lời giải: 一边……一边…… đọc là yìbiān…yìbiān…, nghĩa là vừa…vừa…; làm đồng thời hai hành động. Tham chiếu: PDF bài 9, trang 17.
-Độ khó: Dễ
-Câu 165. Chọn phiên âm đúng của “一边……一边……”.
-A. piányi
-B. yìbiān…yìbiān…
-C. liúxuéshēng
-D. kàn shū
-Đáp án: B
-Lời giải: 一边……一边…… đọc là yìbiān…yìbiān…, nghĩa là vừa…vừa…; làm đồng thời hai hành động. Tham chiếu: PDF bài 9, trang 17.
-Độ khó: Dễ
-Câu 166. Trong bài học, “看书” có nghĩa là gì?
-A. đọc sách
-B. món ăn; rau
-C. vân vân; đợi một chút tùy ngữ cảnh
-D. đi, cưỡi; dùng cho xe đạp, xe máy
-Đáp án: A
-Lời giải: 看书 đọc là kàn shū, nghĩa là đọc sách. Tham chiếu: PDF bài 9, trang 17.
-Độ khó: Dễ
-Câu 167. Chọn chữ Hán có nghĩa “đọc sách”.
-A. 看书
-B. 玩
-C. 开车
-D. 打球
-Đáp án: A
-Lời giải: 看书 đọc là kàn shū, nghĩa là đọc sách. Tham chiếu: PDF bài 9, trang 17.
-Độ khó: Dễ
-Câu 168. Chọn phiên âm đúng của “看书”.
-A. Hánguó cài
-B. kàn shū
-C. rè
-D. dǎ qiú
-Đáp án: B
-Lời giải: 看书 đọc là kàn shū, nghĩa là đọc sách. Tham chiếu: PDF bài 9, trang 17.
-Độ khó: Dễ
-Câu 169. Trong bài học, “听音乐” có nghĩa là gì?
-A. Hàn Quốc
-B. ra ngoài, đi ra xa người nói
-C. đáng yêu
-D. nghe nhạc
-Đáp án: D
-Lời giải: 听音乐 đọc là tīng yīnyuè, nghĩa là nghe nhạc. Tham chiếu: PDF bài 9, trang 17.
-Độ khó: Dễ
-Câu 170. Chọn chữ Hán có nghĩa “nghe nhạc”.
-A. 爱
-B. 听音乐
-C. 骑
-D. 菜
-Đáp án: B
-Lời giải: 听音乐 đọc là tīng yīnyuè, nghĩa là nghe nhạc. Tham chiếu: PDF bài 9, trang 17.
-Độ khó: Dễ
-Câu 171. Chọn phiên âm đúng của “听音乐”.
-A. qiú
-B. diànyǐng
-C. míngtiān wǎnshang
-D. tīng yīnyuè
-Đáp án: D
-Lời giải: 听音乐 đọc là tīng yīnyuè, nghĩa là nghe nhạc. Tham chiếu: PDF bài 9, trang 17.
-Độ khó: Dễ
-Câu 172. Trong bài học, “中国菜” có nghĩa là gì?
-A. đánh; gọi điện thoại trong 打电话
-B. món ăn Trung Quốc
-C. đi, cưỡi; dùng cho xe đạp, xe máy
-D. sở thích
-Đáp án: B
-Lời giải: 中国菜 đọc là Zhōngguó cài, nghĩa là món ăn Trung Quốc. Tham chiếu: PDF bài 9, trang 18.
-Độ khó: Dễ
-Câu 173. Chọn chữ Hán có nghĩa “món ăn Trung Quốc”.
-A. 出租车
-B. 中国菜
-C. 可爱
-D. 坐
-Đáp án: B
-Lời giải: 中国菜 đọc là Zhōngguó cài, nghĩa là món ăn Trung Quốc. Tham chiếu: PDF bài 9, trang 18.
-Độ khó: Dễ
-Câu 174. Chọn phiên âm đúng của “中国菜”.
-A. děng
-B. Zhōngguó cài
-C. cài
-D. hǎotīng
-Đáp án: B
-Lời giải: 中国菜 đọc là Zhōngguó cài, nghĩa là món ăn Trung Quốc. Tham chiếu: PDF bài 9, trang 18.
-Độ khó: Dễ
-Câu 175. Trong bài học, “留学生” có nghĩa là gì?
-A. hay, dễ nghe
-B. tối ngày mai
-C. du học sinh
-D. mưa, trời mưa
-Đáp án: C
-Lời giải: 留学生 đọc là liúxuéshēng, nghĩa là du học sinh. Tham chiếu: PDF bài 9, trang 18.
-Độ khó: Dễ
-Câu 176. Chọn chữ Hán có nghĩa “du học sinh”.
-A. 天气
-B. 留学生
-C. 冰冰的
-D. 自行车
-Đáp án: B
-Lời giải: 留学生 đọc là liúxuéshēng, nghĩa là du học sinh. Tham chiếu: PDF bài 9, trang 18.
-Độ khó: Dễ
-Câu 177. Chọn phiên âm đúng của “留学生”.
-A. pǎobù
-B. měi ge zhōumò
-C. liúxuéshēng
-D. piányi
-Đáp án: C
-Lời giải: 留学生 đọc là liúxuéshēng, nghĩa là du học sinh. Tham chiếu: PDF bài 9, trang 18.
-Độ khó: Dễ
-Câu 178. Trong bài học, “明天晚上” có nghĩa là gì?
-A. yêu, yêu thích
-B. xe buýt
-C. tối ngày mai
-D. sở thích
-Đáp án: C
-Lời giải: 明天晚上 đọc là míngtiān wǎnshang, nghĩa là tối ngày mai. Tham chiếu: PDF bài 9, trang 21.
-Độ khó: Dễ
-Câu 179. Chọn chữ Hán có nghĩa “tối ngày mai”.
-A. 冷
-B. 听音乐
-C. 美国电影
-D. 明天晚上
-Đáp án: D
-Lời giải: 明天晚上 đọc là míngtiān wǎnshang, nghĩa là tối ngày mai. Tham chiếu: PDF bài 9, trang 21.
-Độ khó: Dễ
-Câu 180. Chọn phiên âm đúng của “明天晚上”.
-A. míngtiān wǎnshang
-B. zìxíngchē
-C. háishi
-D. Měiguó diànyǐng
-Đáp án: A
-Lời giải: 明天晚上 đọc là míngtiān wǎnshang, nghĩa là tối ngày mai. Tham chiếu: PDF bài 9, trang 21.
-Độ khó: Dễ
-Câu 181. Trong bài học, “快” có nghĩa là gì?
-A. nhanh
-B. mặc
-C. rẻ
-D. xe buýt
-Đáp án: A
-Lời giải: 快 đọc là kuài, nghĩa là nhanh. Tham chiếu: PDF bài 9, trang 21.
-Độ khó: Dễ
-Câu 182. Chọn chữ Hán có nghĩa “nhanh”.
-A. 穿
-B. 非常
-C. 喜欢
-D. 快
-Đáp án: D
-Lời giải: 快 đọc là kuài, nghĩa là nhanh. Tham chiếu: PDF bài 9, trang 21.
-Độ khó: Dễ
-Câu 183. Chọn phiên âm đúng của “快”.
-A. gōngjiāochē
-B. kuài
-C. cài
-D. děngděng
-Đáp án: B
-Lời giải: 快 đọc là kuài, nghĩa là nhanh. Tham chiếu: PDF bài 9, trang 21.
-Độ khó: Dễ
-Câu 184. Trong bài học, “远” có nghĩa là gì?
-A. Hàn Quốc
-B. xa
-C. đợi, chờ
-D. lạnh lùng, lạnh nhạt; trong ví dụ của bài
-Đáp án: B
-Lời giải: 远 đọc là yuǎn, nghĩa là xa. Tham chiếu: PDF bài 9, trang 21.
-Độ khó: Dễ
-Câu 185. Chọn chữ Hán có nghĩa “xa”.
-A. 出租车
-B. 远
-C. 球
-D. 菜
-Đáp án: B
-Lời giải: 远 đọc là yuǎn, nghĩa là xa. Tham chiếu: PDF bài 9, trang 21.
-Độ khó: Dễ
-Câu 186. Chọn phiên âm đúng của “远”.
+Câu 111. Chọn phiên âm đúng của “爱好” với nghĩa “Sở thích”.
 A. bīng
-B. tīng yīnyuè
-C. yuǎn
-D. Zhōngguó diànyǐng
+B. tiānqì
+C. àihào
+D. diànyǐngyuàn
 Đáp án: C
-Lời giải: 远 đọc là yuǎn, nghĩa là xa. Tham chiếu: PDF bài 9, trang 21.
+Lời giải: 爱好 đọc là àihào, nghĩa là Sở thích. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 597.
 Độ khó: Dễ
-Câu 187. Trong bài học, “韩国” có nghĩa là gì?
-A. món ăn Hàn Quốc
-B. ngon; dùng cho đồ ăn
-C. như thế nào; hỏi đánh giá hoặc ý kiến
-D. Hàn Quốc
+Câu 112. Chọn phiên âm đúng của “非常” với nghĩa “Rất, vô cùng”.
+A. qiú
+B. xǐhuan
+C. Hánguó diànyǐng
+D. fēicháng
 Đáp án: D
-Lời giải: 韩国 đọc là Hánguó, nghĩa là Hàn Quốc. Tham chiếu: PDF bài 9, trang 22.
+Lời giải: 非常 đọc là fēicháng, nghĩa là Rất, vô cùng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 598.
 Độ khó: Dễ
-Câu 188. Chọn chữ Hán có nghĩa “Hàn Quốc”.
-A. 公共汽车
-B. 韩国
-C. 人民公园
-D. 留学生
-Đáp án: B
-Lời giải: 韩国 đọc là Hánguó, nghĩa là Hàn Quốc. Tham chiếu: PDF bài 9, trang 22.
-Độ khó: Dễ
-Câu 189. Chọn phiên âm đúng của “韩国”.
-A. Hánguó
-B. kuài
-C. dǎ
-D. wán
+Câu 113. Chọn phiên âm đúng của “便宜” với nghĩa “Rẻ”.
+A. piányi
+B. kāi chē
+C. děng
+D. yǒumíng
 Đáp án: A
-Lời giải: 韩国 đọc là Hánguó, nghĩa là Hàn Quốc. Tham chiếu: PDF bài 9, trang 22.
+Lời giải: 便宜 đọc là piányi, nghĩa là Rẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 599.
 Độ khó: Dễ
-Câu 190. Trong bài học, “韩国菜” có nghĩa là gì?
-A. tối ngày mai
-B. món ăn Hàn Quốc
-C. minh tinh, người nổi tiếng
-D. ngon; dùng cho đồ uống
-Đáp án: B
-Lời giải: 韩国菜 đọc là Hánguó cài, nghĩa là món ăn Hàn Quốc. Tham chiếu: PDF bài 9, trang 22.
-Độ khó: Dễ
-Câu 191. Chọn chữ Hán có nghĩa “món ăn Hàn Quốc”.
-A. 自行车
-B. 韩国菜
-C. 怎么样
-D. 热
-Đáp án: B
-Lời giải: 韩国菜 đọc là Hánguó cài, nghĩa là món ăn Hàn Quốc. Tham chiếu: PDF bài 9, trang 22.
-Độ khó: Dễ
-Câu 192. Chọn phiên âm đúng của “韩国菜”.
-A. Hánguó cài
-B. dǎ
-C. liúxuéshēng
-D. zǒulù
+Câu 114. Chọn phiên âm đúng của “菜” với nghĩa “Rau, món ăn”.
+A. cài
+B. wán
+C. lěng
+D. kāi
 Đáp án: A
-Lời giải: 韩国菜 đọc là Hánguó cài, nghĩa là món ăn Hàn Quốc. Tham chiếu: PDF bài 9, trang 22.
+Lời giải: 菜 đọc là cài, nghĩa là Rau, món ăn. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 600.
 Độ khó: Dễ
-Câu 193. Trong bài học, “韩国饭店” có nghĩa là gì?
-A. đợi, chờ
-B. lái ô tô
-C. nhà hàng Hàn Quốc
-D. ngồi; đi bằng phương tiện như tàu, xe
+Câu 115. Chọn phiên âm đúng của “冷” với nghĩa “Lạnh”.
+A. yīntiān
+B. zuò dìtiě
+C. lěng
+D. zuò
 Đáp án: C
-Lời giải: 韩国饭店 đọc là Hánguó fàndiàn, nghĩa là nhà hàng Hàn Quốc. Tham chiếu: PDF bài 9, trang 23.
+Lời giải: 冷 đọc là lěng, nghĩa là Lạnh. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 601.
 Độ khó: Dễ
-Câu 194. Chọn chữ Hán có nghĩa “nhà hàng Hàn Quốc”.
-A. 远
-B. 韩国饭店
-C. 便宜
-D. 阴天
-Đáp án: B
-Lời giải: 韩国饭店 đọc là Hánguó fàndiàn, nghĩa là nhà hàng Hàn Quốc. Tham chiếu: PDF bài 9, trang 23.
-Độ khó: Dễ
-Câu 195. Chọn phiên âm đúng của “韩国饭店”.
-A. hǎochī
-B. Hánguó fàndiàn
-C. yìbiān…yìbiān…
-D. rè
-Đáp án: B
-Lời giải: 韩国饭店 đọc là Hánguó fàndiàn, nghĩa là nhà hàng Hàn Quốc. Tham chiếu: PDF bài 9, trang 23.
-Độ khó: Dễ
-Câu 196. Trong bài học, “人民公园” có nghĩa là gì?
-A. thời tiết
-B. nhà hàng Hàn Quốc
-C. không tốt lắm
-D. Công viên Nhân Dân
-Đáp án: D
-Lời giải: 人民公园 đọc là Rénmín Gōngyuán, nghĩa là Công viên Nhân Dân. Tham chiếu: PDF bài 9, trang 23.
-Độ khó: Dễ
-Câu 197. Chọn chữ Hán có nghĩa “Công viên Nhân Dân”.
-A. 电影
-B. 人民公园
-C. 一边……一边……
-D. 球
-Đáp án: B
-Lời giải: 人民公园 đọc là Rénmín Gōngyuán, nghĩa là Công viên Nhân Dân. Tham chiếu: PDF bài 9, trang 23.
-Độ khó: Dễ
-Câu 198. Chọn phiên âm đúng của “人民公园”.
-A. liúxuéshēng
-B. Zhōngguó cài
-C. mótuōchē
-D. Rénmín Gōngyuán
-Đáp án: D
-Lời giải: 人民公园 đọc là Rénmín Gōngyuán, nghĩa là Công viên Nhân Dân. Tham chiếu: PDF bài 9, trang 23.
-Độ khó: Dễ
-Câu 199. Trong bài học, “附近” có nghĩa là gì?
-A. xe taxi
-B. Hàn Quốc
-C. gần đây, khu vực lân cận
-D. băng, đá
-Đáp án: C
-Lời giải: 附近 đọc là fùjìn, nghĩa là gần đây, khu vực lân cận. Tham chiếu: PDF bài 9, trang 23.
-Độ khó: Dễ
-Câu 200. Chọn chữ Hán có nghĩa “gần đây, khu vực lân cận”.
-A. 附近
-B. 玩
-C. 不太好
-D. 骑
-Đáp án: A
-Lời giải: 附近 đọc là fùjìn, nghĩa là gần đây, khu vực lân cận. Tham chiếu: PDF bài 9, trang 23.
-Độ khó: Dễ
-Câu 201. Chọn phiên âm đúng của “附近”.
-A. hǎochī
-B. kuài
-C. qí chē
-D. fùjìn
-Đáp án: D
-Lời giải: 附近 đọc là fùjìn, nghĩa là gần đây, khu vực lân cận. Tham chiếu: PDF bài 9, trang 23.
-Độ khó: Dễ
-Câu 202. Trong bài học, “近” có nghĩa là gì?
-A. du học sinh
-B. gần
-C. nhanh
-D. Công viên Nhân Dân
-Đáp án: B
-Lời giải: 近 đọc là jìn, nghĩa là gần. Tham chiếu: PDF bài 9, trang 23.
-Độ khó: Dễ
-Câu 203. Chọn chữ Hán có nghĩa “gần”.
-A. 近
-B. 好听
-C. 公交车
-D. 坐
-Đáp án: A
-Lời giải: 近 đọc là jìn, nghĩa là gần. Tham chiếu: PDF bài 9, trang 23.
-Độ khó: Dễ
-Câu 204. Chọn phiên âm đúng của “近”.
-A. diànyǐngyuàn
-B. Zhōngguó cài
-C. yǔtiān
-D. jìn
-Đáp án: D
-Lời giải: 近 đọc là jìn, nghĩa là gần. Tham chiếu: PDF bài 9, trang 23.
-Độ khó: Dễ
-Câu 205. Trong bài học, “不太好” có nghĩa là gì?
-A. vừa…vừa…; nêu hai đặc điểm
-B. lái ô tô
-C. không tốt lắm
-D. gần
-Đáp án: C
-Lời giải: 不太好 đọc là bú tài hǎo, nghĩa là không tốt lắm. Tham chiếu: PDF bài 9, trang 26.
-Độ khó: Dễ
-Câu 206. Chọn chữ Hán có nghĩa “không tốt lắm”.
-A. 听音乐
-B. 地铁
-C. 吧
-D. 不太好
-Đáp án: D
-Lời giải: 不太好 đọc là bú tài hǎo, nghĩa là không tốt lắm. Tham chiếu: PDF bài 9, trang 26.
-Độ khó: Dễ
-Câu 207. Chọn phiên âm đúng của “不太好”.
-A. hǎotīng
-B. zuò
-C. bú tài hǎo
-D. chūzūchē
-Đáp án: C
-Lời giải: 不太好 đọc là bú tài hǎo, nghĩa là không tốt lắm. Tham chiếu: PDF bài 9, trang 26.
-Độ khó: Dễ
-Câu 208. Trong bài học, “风” có nghĩa là gì?
-A. nhanh
-B. vân vân; đợi một chút tùy ngữ cảnh
-C. gió
-D. lạnh
-Đáp án: C
-Lời giải: 风 đọc là fēng, nghĩa là gió. Tham chiếu: PDF bài 9, trang 26.
-Độ khó: Dễ
-Câu 209. Chọn chữ Hán có nghĩa “gió”.
-A. 衣服
-B. 跑步
-C. 风
-D. 有名
-Đáp án: C
-Lời giải: 风 đọc là fēng, nghĩa là gió. Tham chiếu: PDF bài 9, trang 26.
-Độ khó: Dễ
-Câu 210. Chọn phiên âm đúng của “风”.
-A. tīng yīnyuè
+Câu 116. Chọn phiên âm đúng của “明星” với nghĩa “Ngôi sao, người nổi tiếng”.
+A. dǎkāi
 B. míngxīng
-C. fēng
-D. hǎohē
-Đáp án: C
-Lời giải: 风 đọc là fēng, nghĩa là gió. Tham chiếu: PDF bài 9, trang 26.
-Độ khó: Dễ
-Câu 211. Trong bài học, “刮风” có nghĩa là gì?
-A. băng, đá
-B. chơi bóng
-C. gió thổi
-D. phim Mỹ
-Đáp án: C
-Lời giải: 刮风 đọc là guā fēng, nghĩa là gió thổi. Tham chiếu: PDF bài 9, trang 26.
-Độ khó: Dễ
-Câu 212. Chọn chữ Hán có nghĩa “gió thổi”.
-A. 打球
-B. 冰
-C. 刮风
-D. 出去
-Đáp án: C
-Lời giải: 刮风 đọc là guā fēng, nghĩa là gió thổi. Tham chiếu: PDF bài 9, trang 26.
-Độ khó: Dễ
-Câu 213. Chọn phiên âm đúng của “刮风”.
-A. Zhōngguó cài
-B. diànyǐngyuàn
-C. guā fēng
-D. ba
-Đáp án: C
-Lời giải: 刮风 đọc là guā fēng, nghĩa là gió thổi. Tham chiếu: PDF bài 9, trang 26.
-Độ khó: Dễ
-Câu 214. Điền từ: 你喜欢中国电影___美国电影？
-A. 一起
-B. 还是
-C. 因为
-D. 和
+C. hǎochī
+D. qiú
 Đáp án: B
-Lời giải: 还是 nối các lựa chọn trong câu hỏi. Tham chiếu: PDF bài 9, trang 20.
-Độ khó: Vừa
-Câu 215. Chọn câu hỏi lựa chọn đúng.
-A. 你坐地铁还是坐出租车去？
-B. 你地铁还是出租车坐吗？
-C. 你坐还是地铁出租车去？
-D. 你坐地铁还是坐出租车去吗？
+Lời giải: 明星 đọc là míngxīng, nghĩa là Ngôi sao, người nổi tiếng. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 602.
+Độ khó: Dễ
+Câu 117. Chọn phiên âm đúng của “韩国” với nghĩa “Hàn Quốc”.
+A. Hánguó
+B. qíngtiān
+C. bīng
+D. dǎkāi
 Đáp án: A
-Lời giải: Dùng 还是 để hỏi lựa chọn, không thêm 吗. Tham chiếu: PDF bài 9, trang 21.
-Độ khó: Vừa
-Câu 216. “我都喜欢。” trả lời ý nào?
-A. Tôi thích cả hai
-B. Tôi chưa biết thích gì
-C. Tôi không thích cả hai
-D. Tôi chỉ thích một
+Lời giải: 韩国 đọc là Hánguó, nghĩa là Hàn Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 603.
+Độ khó: Dễ
+Câu 118. Chọn phiên âm đúng của “中国电影” với nghĩa “Phim Trung Quốc”.
+A. Zhōngguó diànyǐng
+B. qí
+C. tiānqì
+D. Hánguó diànyǐng
 Đáp án: A
-Lời giải: 都 đứng trước 喜欢, chỉ cả hai lựa chọn đã nói. Tham chiếu: PDF bài 9, trang 20.
+Lời giải: 中国电影 đọc là Zhōngguó diànyǐng, nghĩa là Phim Trung Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 604.
+Độ khó: Dễ
+Câu 119. Chọn phiên âm đúng của “美国电影” với nghĩa “Phim Mỹ”.
+A. zěnmeyàng
+B. chūqù
+C. Měiguó diànyǐng
+D. dǎ qiú
+Đáp án: C
+Lời giải: 美国电影 đọc là Měiguó diànyǐng, nghĩa là Phim Mỹ. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 605.
+Độ khó: Dễ
+Câu 120. Chọn phiên âm đúng của “韩国电影” với nghĩa “Phim Hàn Quốc”.
+A. Hánguó diànyǐng
+B. zuò gōngjiāochē
+C. zǒulù
+D. zuò
+Đáp án: A
+Lời giải: 韩国电影 đọc là Hánguó diànyǐng, nghĩa là Phim Hàn Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 9, dòng 606.
+Độ khó: Dễ
+Câu 121. Vận dụng: Câu “你喜欢中国电影还是美国电影？” có nghĩa là gì?
+A. Tôi muốn chơi bóng cùng bạn.
+B. Quần áo của cô ấy vừa rẻ vừa đẹp.
+C. Bạn thích phim Trung Quốc hay phim Mỹ?
+D. Tôi muốn ra ngoài chơi.
+Đáp án: C
+Lời giải: 你喜欢中国电影还是美国电影？ — Bạn thích phim Trung Quốc hay phim Mỹ? Câu dùng từ trong danh sách bài 1–9.
 Độ khó: Vừa
-Câu 217. Điền từ: 地铁___快___便宜。
-A. 一边 — 一边
-B. 又 — 又
-C. 因为 — 因为
-D. 还是 — 还是
+Câu 122. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bạn thích phim Trung Quốc hay phim Mỹ?”.
+A. 你喜欢中国电影还是美国电影？
+B. 他喜欢骑马。
+C. 我想去电影院看电影。
+D. 她说话很好听。
+Đáp án: A
+Lời giải: 你喜欢中国电影还是美国电影？ — Bạn thích phim Trung Quốc hay phim Mỹ? Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 123. Vận dụng: Câu “我坐地铁去公司。” có nghĩa là gì?
+A. Tôi đi tàu điện ngầm đến công ty.
+B. Hôm nay trời nắng.
+C. Anh ấy đi taxi đến bệnh viện.
+D. Tôi chạy bộ mỗi sáng sớm.
+Đáp án: A
+Lời giải: 我坐地铁去公司。 — Tôi đi tàu điện ngầm đến công ty. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 124. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi đi tàu điện ngầm đến công ty.”.
+A. 你会开车吗？
+B. 我坐地铁去公司。
+C. 我想去电影院看电影。
+D. 我想跟朋友一起打球。
 Đáp án: B
-Lời giải: 又…又… nối hai đặc điểm 快 và 便宜. Tham chiếu: PDF bài 9, trang 21.
+Lời giải: 我坐地铁去公司。 — Tôi đi tàu điện ngầm đến công ty. Câu dùng từ trong danh sách bài 1–9.
 Độ khó: Vừa
-Câu 218. Chọn câu diễn tả làm hai hành động đồng thời.
-A. 我又书又音乐。
-B. 我看书一边听一边音乐。
-C. 我一边书，一边音乐。
-D. 我一边看书，一边听音乐。
+Câu 125. Vận dụng: Câu “她骑自行车去学校。” có nghĩa là gì?
+A. Tôi muốn chơi bóng cùng bạn.
+B. Tôi chạy bộ mỗi sáng sớm.
+C. Món ăn này rất ngon.
+D. Cô ấy đạp xe đạp đến trường.
 Đáp án: D
-Lời giải: 一边…一边… đứng trước các cụm động từ. Tham chiếu: PDF bài 9, trang 17.
+Lời giải: 她骑自行车去学校。 — Cô ấy đạp xe đạp đến trường. Câu dùng từ trong danh sách bài 1–9.
 Độ khó: Vừa
-Câu 219. Câu nào hỏi cách đi đến rạp?
-A. 我们去电影院几号名片？
-B. 我们电影院去什么人？
-C. 我们怎么去电影院？
-D. 电影院怎么样去我们？
-Đáp án: C
-Lời giải: 怎么 + động từ dùng để hỏi cách thức. Tham chiếu: PDF bài 9, trang 8.
-Độ khó: Vừa
-Câu 220. Trong “坐地铁去，怎么样？”, 怎么样 hỏi điều gì?
-A. Ý kiến về cách đi được đề xuất
-B. Số lượng tàu
-C. Giá vé đã xác định
-D. Tên quốc gia
+Câu 126. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy đạp xe đạp đến trường.”.
+A. 她骑自行车去学校。
+B. 我想出去玩。
+C. 今天的天气怎么样？
+D. 这个菜很好吃。
 Đáp án: A
-Lời giải: 怎么样 ở cuối lời đề xuất dùng để hỏi ý kiến. Tham chiếu: PDF bài 9, trang 21.
+Lời giải: 她骑自行车去学校。 — Cô ấy đạp xe đạp đến trường. Câu dùng từ trong danh sách bài 1–9.
 Độ khó: Vừa
-Câu 221. Chọn động từ phù hợp: ___自行车去学校。
-A. 坐
-B. 骑
-C. 穿
-D. 听
+Câu 127. Vận dụng: Câu “我们走路去银行吧。” có nghĩa là gì?
+A. Bạn thích phim Trung Quốc hay phim Mỹ?
+B. Chúng ta đi bộ đến ngân hàng nhé.
+C. Quần áo của cô ấy vừa rẻ vừa đẹp.
+D. Tôi đi tàu điện ngầm đến công ty.
 Đáp án: B
-Lời giải: Đi xe đạp dùng 骑自行车. Tham chiếu: PDF bài 9, trang 6.
+Lời giải: 我们走路去银行吧。 — Chúng ta đi bộ đến ngân hàng nhé. Câu dùng từ trong danh sách bài 1–9.
 Độ khó: Vừa
-Câu 222. Chọn động từ phù hợp: ___出租车去电影院。
-A. 坐
-B. 穿
-C. 看
-D. 听
-Đáp án: A
-Lời giải: Đi taxi dùng 坐出租车. Tham chiếu: PDF bài 9, trang 5.
-Độ khó: Vừa
-Câu 223. “我们走路去吧。” là lời gì?
-A. Hỏi quốc tịch
-B. Yêu cầu đi ngủ
-C. Rủ cùng đi bộ
-D. Nêu ngày sinh
+Câu 128. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chúng ta đi bộ đến ngân hàng nhé.”.
+A. 我每天早上跑步。
+B. 她说话很好听。
+C. 我们走路去银行吧。
+D. 你会开车吗？
 Đáp án: C
-Lời giải: 吧 làm giọng đề nghị nhẹ nhàng hơn. Tham chiếu: PDF bài 9, trang 18.
+Lời giải: 我们走路去银行吧。 — Chúng ta đi bộ đến ngân hàng nhé. Câu dùng từ trong danh sách bài 1–9.
 Độ khó: Vừa
-Câu 224. Chọn cặp tính từ về nhiệt độ đối lập.
-A. 热 — 冷
-B. 晴天 — 电影院
-C. 好吃 — 好喝
-D. 快 — 便宜
-Đáp án: A
-Lời giải: 热 là nóng, 冷 là lạnh. Tham chiếu: PDF bài 9, trang 10.
-Độ khó: Vừa
-Câu 225. Điền từ: 这个菜很好___。
-A. 喝
-B. 坐
-C. 吃
-D. 听
+Câu 129. Vận dụng: Câu “我想出去玩。” có nghĩa là gì?
+A. Cô ấy nói chuyện rất hay.
+B. Thời tiết hôm nay thế nào?
+C. Tôi muốn ra ngoài chơi.
+D. Anh ấy thích cưỡi ngựa.
 Đáp án: C
-Lời giải: Món ăn ngon dùng 好吃. Tham chiếu: PDF bài 9, trang 13.
+Lời giải: 我想出去玩。 — Tôi muốn ra ngoài chơi. Câu dùng từ trong danh sách bài 1–9.
 Độ khó: Vừa
-Câu 226. Điền từ: 这杯茶很好___。
-A. 看
-B. 喝
-C. 吃
-D. 穿
+Câu 130. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn ra ngoài chơi.”.
+A. 我想出去玩。
+B. 我每天早上跑步。
+C. 我坐地铁去公司。
+D. 他喜欢骑马。
+Đáp án: A
+Lời giải: 我想出去玩。 — Tôi muốn ra ngoài chơi. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 131. Vận dụng: Câu “她的衣服又便宜又好看。” có nghĩa là gì?
+A. Quần áo của cô ấy vừa rẻ vừa đẹp.
+B. Thời tiết hôm nay thế nào?
+C. Cô ấy đạp xe đạp đến trường.
+D. Anh ấy đi taxi đến bệnh viện.
+Đáp án: A
+Lời giải: 她的衣服又便宜又好看。 — Quần áo của cô ấy vừa rẻ vừa đẹp. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 132. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Quần áo của cô ấy vừa rẻ vừa đẹp.”.
+A. 她的衣服又便宜又好看。
+B. 我想跟朋友一起打球。
+C. 这杯茶很好喝。
+D. 他喜欢骑马。
+Đáp án: A
+Lời giải: 她的衣服又便宜又好看。 — Quần áo của cô ấy vừa rẻ vừa đẹp. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 133. Vận dụng: Câu “今天的天气怎么样？” có nghĩa là gì?
+A. Xin đợi một chút.
+B. Thời tiết hôm nay thế nào?
+C. Tôi muốn đến rạp chiếu phim xem phim.
+D. Tôi muốn chơi bóng cùng bạn.
 Đáp án: B
-Lời giải: Đồ uống ngon dùng 好喝. Tham chiếu: PDF bài 9, trang 13.
+Lời giải: 今天的天气怎么样？ — Thời tiết hôm nay thế nào? Câu dùng từ trong danh sách bài 1–9.
 Độ khó: Vừa
-Câu 227. Điền từ: 这首歌很好___。
-A. 坐
-B. 穿
-C. 喝
-D. 听
+Câu 134. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Thời tiết hôm nay thế nào?”.
+A. 我想跟朋友一起打球。
+B. 我不喜欢下雨天。
+C. 今天的天气怎么样？
+D. 我们走路去银行吧。
+Đáp án: C
+Lời giải: 今天的天气怎么样？ — Thời tiết hôm nay thế nào? Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 135. Vận dụng: Câu “今天是晴天。” có nghĩa là gì?
+A. Tôi chạy bộ mỗi sáng sớm.
+B. Hôm nay trời nắng.
+C. Xin đợi một chút.
+D. Cốc trà này rất ngon.
+Đáp án: B
+Lời giải: 今天是晴天。 — Hôm nay trời nắng. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 136. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Hôm nay trời nắng.”.
+A. 你喜欢中国电影还是美国电影？
+B. 我想跟朋友一起打球。
+C. 今天是晴天。
+D. 我想出去玩。
+Đáp án: C
+Lời giải: 今天是晴天。 — Hôm nay trời nắng. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 137. Vận dụng: Câu “我不喜欢下雨天。” có nghĩa là gì?
+A. Anh ấy thích cưỡi ngựa.
+B. Chúng ta đi bộ đến ngân hàng nhé.
+C. Tôi không thích những ngày trời mưa.
+D. Cô ấy nói chuyện rất hay.
+Đáp án: C
+Lời giải: 我不喜欢下雨天。 — Tôi không thích những ngày trời mưa. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 138. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi không thích những ngày trời mưa.”.
+A. 她骑自行车去学校。
+B. 我想去电影院看电影。
+C. 我不喜欢下雨天。
+D. 她的衣服又便宜又好看。
+Đáp án: C
+Lời giải: 我不喜欢下雨天。 — Tôi không thích những ngày trời mưa. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 139. Vận dụng: Câu “这杯茶很好喝。” có nghĩa là gì?
+A. Chúng ta đi bộ đến ngân hàng nhé.
+B. Cô ấy nói chuyện rất hay.
+C. Cốc trà này rất ngon.
+D. Quần áo của cô ấy vừa rẻ vừa đẹp.
+Đáp án: C
+Lời giải: 这杯茶很好喝。 — Cốc trà này rất ngon. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 140. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cốc trà này rất ngon.”.
+A. 这杯茶很好喝。
+B. 你喜欢中国电影还是美国电影？
+C. 请等一下。
+D. 今天的天气怎么样？
+Đáp án: A
+Lời giải: 这杯茶很好喝。 — Cốc trà này rất ngon. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 141. Vận dụng: Câu “她说话很好听。” có nghĩa là gì?
+A. Chúng ta đi bộ đến ngân hàng nhé.
+B. Thời tiết hôm nay thế nào?
+C. Cô ấy đạp xe đạp đến trường.
+D. Cô ấy nói chuyện rất hay.
 Đáp án: D
-Lời giải: Bài hát hay dùng 好听. Tham chiếu: PDF bài 9, trang 13.
+Lời giải: 她说话很好听。 — Cô ấy nói chuyện rất hay. Câu dùng từ trong danh sách bài 1–9.
 Độ khó: Vừa
-Câu 228. Đọc “电影院很远，我们坐地铁去。” Hai bạn đi bằng gì?
-A. Tàu điện ngầm
-B. Xe máy
-C. Xe đạp
-D. Đi bộ
-Đáp án: A
-Lời giải: 坐地铁 là đi tàu điện ngầm. Tham chiếu: PDF bài 9, trang 21.
-Độ khó: Vừa
-Câu 229. Đọc “饭店在人民公园附近。” Nhà hàng ở gần đâu?
-A. Đại học Bắc Kinh
-B. Ngân hàng Bắc Kinh
-C. Sân bay
-D. Công viên Nhân Dân
-Đáp án: D
-Lời giải: 人民公园 là địa điểm làm mốc. Tham chiếu: PDF bài 9, trang 23.
-Độ khó: Vừa
-Câu 230. Đọc “那儿的菜又好吃又便宜。” Món ăn thế nào?
-A. Vừa ngon vừa rẻ
-B. Vừa nóng vừa lạnh
-C. Vừa nhiều vừa đắt
-D. Vừa xa vừa gần
-Đáp án: A
-Lời giải: 又好吃又便宜 nêu đồng thời hai ưu điểm. Tham chiếu: PDF bài 9, trang 23.
-Độ khó: Vừa
-Câu 231. Chọn câu phủ định “Tôi không thích uống cà phê”.
-A. 我喜欢不喝咖啡。
-B. 我不喜欢喝咖啡。
-C. 我喝不喜欢咖啡。
-D. 我不咖啡喜欢喝。
+Câu 142. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy nói chuyện rất hay.”.
+A. 我每天早上跑步。
+B. 她说话很好听。
+C. 今天是晴天。
+D. 她骑自行车去学校。
 Đáp án: B
-Lời giải: 不 đứng trước 喜欢 để phủ định sở thích. Tham chiếu: PDF bài 9, trang 4.
+Lời giải: 她说话很好听。 — Cô ấy nói chuyện rất hay. Câu dùng từ trong danh sách bài 1–9.
 Độ khó: Vừa
-Câu 232. “你今天穿的衣服真漂亮。” khen điều gì?
-A. Thời tiết ngày mai
-B. Chiếc taxi
-C. Quần áo người nghe đang mặc
-D. Giọng hát của bác sĩ
-Đáp án: C
-Lời giải: 穿的衣服 là quần áo đang mặc. Tham chiếu: PDF bài 9, trang 7.
-Độ khó: Vừa
-Câu 233. Chọn cách nói “Đợi một chút”.
-A. 等一等
-B. 走一坐
-C. 穿一穿路
-D. 听一喝
+Câu 143. Vận dụng: Câu “你会开车吗？” có nghĩa là gì?
+A. Bạn biết lái xe không?
+B. Cô ấy nói chuyện rất hay.
+C. Bạn thích phim Trung Quốc hay phim Mỹ?
+D. Tôi muốn chơi bóng cùng bạn.
 Đáp án: A
-Lời giải: 等 là chờ; lặp động từ với 一 có thể làm giọng nhẹ hơn. Tham chiếu: PDF bài 9, trang 13.
+Lời giải: 你会开车吗？ — Bạn biết lái xe không? Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 144. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bạn biết lái xe không?”.
+A. 你会开车吗？
+B. 这家饭店很有名。
+C. 她骑自行车去学校。
+D. 她说话很好听。
+Đáp án: A
+Lời giải: 你会开车吗？ — Bạn biết lái xe không? Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 145. Vận dụng: Câu “他坐出租车去医院。” có nghĩa là gì?
+A. Anh ấy đi taxi đến bệnh viện.
+B. Bạn biết lái xe không?
+C. Tôi muốn ra ngoài chơi.
+D. Tôi không thích những ngày trời mưa.
+Đáp án: A
+Lời giải: 他坐出租车去医院。 — Anh ấy đi taxi đến bệnh viện. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 146. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Anh ấy đi taxi đến bệnh viện.”.
+A. 他坐出租车去医院。
+B. 她骑自行车去学校。
+C. 今天是晴天。
+D. 我坐地铁去公司。
+Đáp án: A
+Lời giải: 他坐出租车去医院。 — Anh ấy đi taxi đến bệnh viện. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 147. Vận dụng: Câu “我想跟朋友一起打球。” có nghĩa là gì?
+A. Anh ấy thích cưỡi ngựa.
+B. Chúng ta đi bộ đến ngân hàng nhé.
+C. Tôi muốn chơi bóng cùng bạn.
+D. Bạn thích phim Trung Quốc hay phim Mỹ?
+Đáp án: C
+Lời giải: 我想跟朋友一起打球。 — Tôi muốn chơi bóng cùng bạn. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 148. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn chơi bóng cùng bạn.”.
+A. 我想跟朋友一起打球。
+B. 我不喜欢下雨天。
+C. 这家饭店很有名。
+D. 她的衣服又便宜又好看。
+Đáp án: A
+Lời giải: 我想跟朋友一起打球。 — Tôi muốn chơi bóng cùng bạn. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 149. Vận dụng: Câu “请等一下。” có nghĩa là gì?
+A. Xin đợi một chút.
+B. Hôm nay trời nắng.
+C. Quần áo của cô ấy vừa rẻ vừa đẹp.
+D. Chúng ta đi bộ đến ngân hàng nhé.
+Đáp án: A
+Lời giải: 请等一下。 — Xin đợi một chút. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 150. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Xin đợi một chút.”.
+A. 我坐地铁去公司。
+B. 请等一下。
+C. 这杯茶很好喝。
+D. 她的衣服又便宜又好看。
+Đáp án: B
+Lời giải: 请等一下。 — Xin đợi một chút. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 151. Vận dụng: Câu “这家饭店很有名。” có nghĩa là gì?
+A. Anh ấy đi taxi đến bệnh viện.
+B. Nhà hàng này rất nổi tiếng.
+C. Tôi chạy bộ mỗi sáng sớm.
+D. Tôi muốn ra ngoài chơi.
+Đáp án: B
+Lời giải: 这家饭店很有名。 — Nhà hàng này rất nổi tiếng. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 152. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Nhà hàng này rất nổi tiếng.”.
+A. 我坐地铁去公司。
+B. 这杯茶很好喝。
+C. 这家饭店很有名。
+D. 我不喜欢下雨天。
+Đáp án: C
+Lời giải: 这家饭店很有名。 — Nhà hàng này rất nổi tiếng. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 153. Vận dụng: Câu “这个菜很好吃。” có nghĩa là gì?
+A. Cô ấy đạp xe đạp đến trường.
+B. Món ăn này rất ngon.
+C. Tôi đi tàu điện ngầm đến công ty.
+D. Tôi chạy bộ mỗi sáng sớm.
+Đáp án: B
+Lời giải: 这个菜很好吃。 — Món ăn này rất ngon. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 154. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Món ăn này rất ngon.”.
+A. 这家饭店很有名。
+B. 她说话很好听。
+C. 她的衣服又便宜又好看。
+D. 这个菜很好吃。
+Đáp án: D
+Lời giải: 这个菜很好吃。 — Món ăn này rất ngon. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 155. Vận dụng: Câu “我想去电影院看电影。” có nghĩa là gì?
+A. Anh ấy đi taxi đến bệnh viện.
+B. Tôi không thích những ngày trời mưa.
+C. Tôi muốn đến rạp chiếu phim xem phim.
+D. Bạn biết lái xe không?
+Đáp án: C
+Lời giải: 我想去电影院看电影。 — Tôi muốn đến rạp chiếu phim xem phim. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 156. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi muốn đến rạp chiếu phim xem phim.”.
+A. 我想去电影院看电影。
+B. 我想出去玩。
+C. 她的衣服又便宜又好看。
+D. 今天是晴天。
+Đáp án: A
+Lời giải: 我想去电影院看电影。 — Tôi muốn đến rạp chiếu phim xem phim. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 157. Vận dụng: Câu “我每天早上跑步。” có nghĩa là gì?
+A. Tôi chạy bộ mỗi sáng sớm.
+B. Chúng ta đi bộ đến ngân hàng nhé.
+C. Anh ấy đi taxi đến bệnh viện.
+D. Bạn thích phim Trung Quốc hay phim Mỹ?
+Đáp án: A
+Lời giải: 我每天早上跑步。 — Tôi chạy bộ mỗi sáng sớm. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 158. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi chạy bộ mỗi sáng sớm.”.
+A. 这杯茶很好喝。
+B. 我每天早上跑步。
+C. 我坐地铁去公司。
+D. 我想去电影院看电影。
+Đáp án: B
+Lời giải: 我每天早上跑步。 — Tôi chạy bộ mỗi sáng sớm. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 159. Vận dụng: Câu “他喜欢骑马。” có nghĩa là gì?
+A. Quần áo của cô ấy vừa rẻ vừa đẹp.
+B. Anh ấy thích cưỡi ngựa.
+C. Bạn thích phim Trung Quốc hay phim Mỹ?
+D. Nhà hàng này rất nổi tiếng.
+Đáp án: B
+Lời giải: 他喜欢骑马。 — Anh ấy thích cưỡi ngựa. Câu dùng từ trong danh sách bài 1–9.
+Độ khó: Vừa
+Câu 160. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Anh ấy thích cưỡi ngựa.”.
+A. 我想出去玩。
+B. 我想跟朋友一起打球。
+C. 他喜欢骑马。
+D. 你喜欢中国电影还是美国电影？
+Đáp án: C
+Lời giải: 他喜欢骑马。 — Anh ấy thích cưỡi ngựa. Câu dùng từ trong danh sách bài 1–9.
 Độ khó: Vừa
 [NGU PHAP]
-Hỏi lựa chọn với 还是：你喜欢中国电影还是美国电影？ Bạn thích phim Trung Quốc hay phim Mỹ? 我都喜欢。 Tôi thích cả hai. Câu hỏi lựa chọn dùng 还是, không thêm 吗 ở cuối. (PDF trang 20)
-Phân biệt 怎么 và 怎么样：我们怎么去电影院？ Hỏi cách đi đến rạp. 坐地铁去，怎么样？ Hỏi ý kiến về đề xuất đi tàu điện ngầm. 怎么 + động từ hỏi cách làm; 怎么样 dùng để hỏi đánh giá, tình trạng hoặc ý kiến. (PDF trang 8)
-Vừa có hai đặc điểm, vừa làm hai hành động：地铁又快又便宜。 Tàu điện ngầm vừa nhanh vừa rẻ. 我一边看书，一边听音乐。 Tôi vừa đọc sách vừa nghe nhạc. 又…又… có thể nối hai đặc điểm; 一边…一边… diễn tả hai hành động đồng thời, thường cùng chủ ngữ. (PDF trang 11)
-Đề nghị với 吧 và nói phương tiện：我们坐地铁去吧。 Chúng ta đi tàu điện ngầm nhé. 我们走路去吧。 Chúng ta đi bộ nhé. 坐地铁 / 坐公交车 / 坐出租车; 骑自行车; 开车; 走路. Chọn động từ đi với phương tiện phù hợp. (PDF trang 18)
+Sở thích và đi lại: Dùng 喜欢 với sở thích; dùng 坐, 骑 hoặc 开 phù hợp với phương tiện. Ví dụ: 她的衣服又便宜又好看。
+Hai đặc điểm: Dùng 又……又…… để nêu hai đặc điểm của cùng một người hoặc sự vật. Ví dụ: 今天的天气怎么样？
 [BAI DOC]
-Cùng đi xem phim：卡玛拉：你喜欢中国电影还是美国电影？ 小明：我都喜欢。 卡玛拉：电影院远不远？ 小明：电影院很远。 卡玛拉：我们坐地铁去还是坐出租车去？ 小明：坐地铁又快又便宜。 Đoạn rút gọn theo bài khóa: Tiểu Minh thích cả hai loại phim, rạp ở xa nên hai bạn chọn tàu điện ngầm. (PDF trang 20)
-Chọn món Hàn Quốc：韩美京：你喜欢吃中国菜还是韩国菜？ 欧文：我都喜欢。 韩美京：我知道一家韩国饭店。那儿的菜又好吃又便宜。 欧文：饭店在哪儿？ 韩美京：在人民公园附近。公园很近，我们走路去吧。 Đoạn rút gọn theo bài khóa: quán Hàn ở gần Công viên Nhân Dân, thức ăn ngon và rẻ; hai bạn đi bộ. (PDF trang 22)
+Đọc hiểu 1: 她的衣服又便宜又好看。 今天的天气怎么样？ 今天是晴天。 我不喜欢下雨天。 — Quần áo của cô ấy vừa rẻ vừa đẹp. Thời tiết hôm nay thế nào? Hôm nay trời nắng. Tôi không thích những ngày trời mưa.
+Đọc hiểu 2: 这杯茶很好喝。 她说话很好听。 你会开车吗？ 他坐出租车去医院。 — Cốc trà này rất ngon. Cô ấy nói chuyện rất hay. Bạn biết lái xe không? Anh ấy đi taxi đến bệnh viện.
+[HOI THOAI]
+Hội thoại trong bài: A: 你喜欢中国电影还是美国电影？ B: 我喜欢中国电影。 A: 你怎么去学校？ B: 我坐公交车去学校。 A: 你会骑自行车吗？ B: 我会骑自行车。
 [LUYEN NOI]
-你喜欢中国电影还是美国电影？ | Bạn thích phim Trung Quốc hay phim Mỹ? | 我喜欢中国电影。 | Chấp nhận phim Mỹ, cả hai hoặc không thích cả hai nếu trả lời hợp lý.
-你怎么去学校？ | Bạn đến trường bằng cách nào? | 我坐公交车去学校。 | Chấp nhận phương tiện khác; 骑 đi với xe đạp, 坐 đi với tàu hoặc xe khách, 走路 là đi bộ.
-地铁怎么样？ | Tàu điện ngầm thế nào? | 地铁又快又便宜。 | Chấp nhận nhận xét khác hợp lý; khuyến khích 又…又… nhưng không bắt buộc khi không được yêu cầu.
-你喜欢喝茶还是咖啡？ | Bạn thích uống trà hay cà phê? | 我喜欢喝茶。 | Chấp nhận một lựa chọn hoặc cả hai; chú ý 喜欢喝.
-今天天气怎么样？ | Hôm nay thời tiết thế nào? | 今天天气很好，不冷也不热。 | Chấp nhận mọi mô tả thời tiết hợp lý; không kiểm chứng thời tiết thực tế.
-你周末喜欢做什么？ | Cuối tuần bạn thích làm gì? | 我周末喜欢看电影。 | Chấp nhận sở thích khác, trả lời bằng một hành động có nghĩa.
-你喜欢吃中国菜还是韩国菜？ | Bạn thích ăn món Trung Quốc hay món Hàn Quốc? | 我都喜欢。 | Chấp nhận một hoặc cả hai lựa chọn, không bắt buộc câu mẫu.
-请用“又……又……”说一句话，好吗？ | Bạn hãy đặt một câu với 又…又… được không? | 这个菜又好吃又便宜。 | Cần có 又…又… nối hai tính chất phù hợp; chấp nhận chủ thể khác.
-我们去看电影吧，你觉得怎么样？ | Chúng ta đi xem phim nhé, bạn thấy thế nào? | 好，我们去看电影吧！ | Chấp nhận đồng ý hoặc từ chối lịch sự có nội dung phù hợp.
-你喜欢一边做什么，一边做什么？ | Bạn thích vừa làm gì vừa làm gì? | 我喜欢一边看书，一边听音乐。 | Cần diễn tả hai hành động đồng thời bằng 一边…一边…; chấp nhận ví dụ khác.
+Câu 1. 你喜欢中国电影还是美国电影？
+Nghĩa: Bạn thích phim Trung Quốc hay phim Mỹ?
+Đáp án tham khảo: 我喜欢中国电影。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 2. 你怎么去学校？
+Nghĩa: Bạn đến trường bằng cách nào?
+Đáp án tham khảo: 我坐公交车去学校。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 3. 你会骑自行车吗？
+Nghĩa: Bạn biết đi xe đạp không?
+Đáp án tham khảo: 我会骑自行车。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 4. 今天的天气怎么样？
+Nghĩa: Thời tiết hôm nay thế nào?
+Đáp án tham khảo: 今天是晴天。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 5. 你喜欢下雨天吗？
+Nghĩa: Bạn có thích những ngày trời mưa không?
+Đáp án tham khảo: 我不喜欢下雨天。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 6. 这个菜好吃吗？
+Nghĩa: Món ăn này có ngon không?
+Đáp án tham khảo: 这个菜很好吃。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 7. 这杯茶好喝吗？
+Nghĩa: Cốc trà này có ngon không?
+Đáp án tham khảo: 这杯茶很好喝。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 8. 你会开车吗？
+Nghĩa: Bạn biết lái xe không?
+Đáp án tham khảo: 我会开车。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 9. 你想跟谁一起打球？
+Nghĩa: Bạn muốn chơi bóng cùng ai?
+Đáp án tham khảo: 我想跟朋友一起打球。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 10. 你每天早上跑步吗？
+Nghĩa: Bạn có chạy bộ mỗi sáng không?
+Đáp án tham khảo: 我每天早上跑步。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.

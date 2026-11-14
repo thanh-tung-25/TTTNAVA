@@ -1,0 +1,2579 @@
+{
+  "version": "user-vocabulary-2026-11-14",
+  "lesson": 1,
+  "title": "第一课：你好 (Xin chào)",
+  "vocabulary": [
+    {
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "meaning": "Bạn",
+      "group": "main",
+      "example": "你好！",
+      "example_meaning": "Xin chào!"
+    },
+    {
+      "hanzi": "您",
+      "pinyin": "nín",
+      "meaning": "Ngài, bạn (kính trọng)",
+      "group": "main",
+      "example": "您好！",
+      "example_meaning": "Xin chào ngài! (lịch sự)"
+    },
+    {
+      "hanzi": "我",
+      "pinyin": "wǒ",
+      "meaning": "Tôi",
+      "group": "main",
+      "example": "我是老师。",
+      "example_meaning": "Tôi là giáo viên."
+    },
+    {
+      "hanzi": "好",
+      "pinyin": "hǎo",
+      "meaning": "Tốt, khỏe",
+      "group": "main",
+      "example": "你好！",
+      "example_meaning": "Xin chào!"
+    },
+    {
+      "hanzi": "们",
+      "pinyin": "men",
+      "meaning": "Hậu tố chỉ số nhiều",
+      "group": "main",
+      "example": "你们好！",
+      "example_meaning": "Chào các bạn!"
+    },
+    {
+      "hanzi": "老师",
+      "pinyin": "lǎoshī",
+      "meaning": "Giáo viên",
+      "group": "main",
+      "example": "老师好！",
+      "example_meaning": "Chào thầy/cô!"
+    },
+    {
+      "hanzi": "学生",
+      "pinyin": "xuésheng",
+      "meaning": "Học sinh, sinh viên",
+      "group": "main",
+      "example": "我是学生。",
+      "example_meaning": "Tôi là học sinh."
+    },
+    {
+      "hanzi": "是",
+      "pinyin": "shì",
+      "meaning": "Là",
+      "group": "main",
+      "example": "我是老师。",
+      "example_meaning": "Tôi là giáo viên."
+    },
+    {
+      "hanzi": "大家",
+      "pinyin": "dàjiā",
+      "meaning": "Mọi người",
+      "group": "main",
+      "example": "大家好！",
+      "example_meaning": "Chào mọi người!"
+    },
+    {
+      "hanzi": "他",
+      "pinyin": "tā",
+      "meaning": "Anh ấy",
+      "group": "extended",
+      "example": "他是老师。",
+      "example_meaning": "Anh ấy là giáo viên."
+    },
+    {
+      "hanzi": "她",
+      "pinyin": "tā",
+      "meaning": "Cô ấy",
+      "group": "extended",
+      "example": "她是学生。",
+      "example_meaning": "Cô ấy là học sinh."
+    },
+    {
+      "hanzi": "它",
+      "pinyin": "tā",
+      "meaning": "Nó",
+      "group": "extended"
+    },
+    {
+      "hanzi": "女",
+      "pinyin": "nǚ",
+      "meaning": "Nữ",
+      "group": "extended"
+    },
+    {
+      "hanzi": "男",
+      "pinyin": "nán",
+      "meaning": "Nam",
+      "group": "extended"
+    },
+    {
+      "hanzi": "难",
+      "pinyin": "nán",
+      "meaning": "Khó",
+      "group": "extended"
+    },
+    {
+      "hanzi": "新",
+      "pinyin": "xīn",
+      "meaning": "Mới",
+      "group": "extended"
+    },
+    {
+      "hanzi": "旧",
+      "pinyin": "jiù",
+      "meaning": "Cũ",
+      "group": "extended"
+    },
+    {
+      "hanzi": "门",
+      "pinyin": "mén",
+      "meaning": "Cửa",
+      "group": "extended"
+    },
+    {
+      "hanzi": "门口",
+      "pinyin": "ménkǒu",
+      "meaning": "Cửa ra vào",
+      "group": "extended"
+    },
+    {
+      "hanzi": "你们",
+      "pinyin": "nǐmen",
+      "meaning": "Các bạn",
+      "group": "extended",
+      "example": "你们好！",
+      "example_meaning": "Chào các bạn!"
+    },
+    {
+      "hanzi": "我们",
+      "pinyin": "wǒmen",
+      "meaning": "Chúng tôi, chúng ta",
+      "group": "extended",
+      "example": "我们是学生。",
+      "example_meaning": "Chúng tôi là học sinh."
+    },
+    {
+      "hanzi": "他们",
+      "pinyin": "tāmen",
+      "meaning": "Họ",
+      "group": "extended",
+      "example": "他们是学生。",
+      "example_meaning": "Họ là học sinh."
+    },
+    {
+      "hanzi": "她们",
+      "pinyin": "tāmen",
+      "meaning": "Họ (nữ)",
+      "group": "extended",
+      "example": "她们是老师。",
+      "example_meaning": "Họ (nữ) là giáo viên."
+    },
+    {
+      "hanzi": "你好",
+      "pinyin": "nǐ hǎo",
+      "meaning": "Xin chào",
+      "group": "extended",
+      "example": "你好！",
+      "example_meaning": "Xin chào!"
+    },
+    {
+      "hanzi": "您好",
+      "pinyin": "nín hǎo",
+      "meaning": "Xin chào (lịch sự)",
+      "group": "extended",
+      "example": "您好！",
+      "example_meaning": "Xin chào ngài! (lịch sự)"
+    },
+    {
+      "hanzi": "大家好",
+      "pinyin": "dàjiā hǎo",
+      "meaning": "Chào mọi người",
+      "group": "extended",
+      "example": "大家好！",
+      "example_meaning": "Chào mọi người!"
+    },
+    {
+      "hanzi": "老板",
+      "pinyin": "lǎobǎn",
+      "meaning": "Ông chủ",
+      "group": "extended",
+      "example": "他是老板。",
+      "example_meaning": "Anh ấy là ông chủ."
+    },
+    {
+      "hanzi": "经理",
+      "pinyin": "jīnglǐ",
+      "meaning": "Giám đốc, người quản lý",
+      "group": "extended",
+      "example": "我是经理。",
+      "example_meaning": "Tôi là giám đốc."
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “你” có nghĩa là gì?",
+      "options": [
+        "Giáo viên",
+        "Nó",
+        "Anh ấy",
+        "Bạn"
+      ],
+      "accepted": [
+        "Bạn"
+      ],
+      "explanation": "你 đọc là nǐ, nghĩa là Bạn. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 4.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2192b56b-9e10-4356-b125-aabfbf100e37"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “nǐ” và nghĩa “Bạn”.",
+      "options": [
+        "新",
+        "你",
+        "他们",
+        "您好"
+      ],
+      "accepted": [
+        "你"
+      ],
+      "explanation": "你 đọc là nǐ, nghĩa là Bạn. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 4.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2192b56b-9e10-4356-b125-aabfbf100e37"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “您” có nghĩa là gì?",
+      "options": [
+        "Ngài, bạn (kính trọng)",
+        "Xin chào",
+        "Cũ",
+        "Học sinh, sinh viên"
+      ],
+      "accepted": [
+        "Ngài, bạn (kính trọng)"
+      ],
+      "explanation": "您 đọc là nín, nghĩa là Ngài, bạn (kính trọng). Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 5.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9f1ce5bb-4d64-4445-ae02-b2d1a08852c0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “nín” và nghĩa “Ngài, bạn (kính trọng)”.",
+      "options": [
+        "您",
+        "是",
+        "门",
+        "你"
+      ],
+      "accepted": [
+        "您"
+      ],
+      "explanation": "您 đọc là nín, nghĩa là Ngài, bạn (kính trọng). Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 5.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9f1ce5bb-4d64-4445-ae02-b2d1a08852c0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “我” có nghĩa là gì?",
+      "options": [
+        "Tôi",
+        "Tốt, khỏe",
+        "Bạn",
+        "Cửa ra vào"
+      ],
+      "accepted": [
+        "Tôi"
+      ],
+      "explanation": "我 đọc là wǒ, nghĩa là Tôi. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 6.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ecb66ce2-a96d-48a5-98a6-2bc118cdc0bb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “wǒ” và nghĩa “Tôi”.",
+      "options": [
+        "男",
+        "我",
+        "他",
+        "你"
+      ],
+      "accepted": [
+        "我"
+      ],
+      "explanation": "我 đọc là wǒ, nghĩa là Tôi. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 6.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ecb66ce2-a96d-48a5-98a6-2bc118cdc0bb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “好” có nghĩa là gì?",
+      "options": [
+        "Họ (nữ)",
+        "Ngài, bạn (kính trọng)",
+        "Tốt, khỏe",
+        "Mới"
+      ],
+      "accepted": [
+        "Tốt, khỏe"
+      ],
+      "explanation": "好 đọc là hǎo, nghĩa là Tốt, khỏe. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 7.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d5d8db82-c83c-48b4-942b-4f217e99b143"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “hǎo” và nghĩa “Tốt, khỏe”.",
+      "options": [
+        "他们",
+        "好",
+        "我",
+        "老师"
+      ],
+      "accepted": [
+        "好"
+      ],
+      "explanation": "好 đọc là hǎo, nghĩa là Tốt, khỏe. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 7.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d5d8db82-c83c-48b4-942b-4f217e99b143"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “们” có nghĩa là gì?",
+      "options": [
+        "Hậu tố chỉ số nhiều",
+        "Họ (nữ)",
+        "Mới",
+        "Là"
+      ],
+      "accepted": [
+        "Hậu tố chỉ số nhiều"
+      ],
+      "explanation": "们 đọc là men, nghĩa là Hậu tố chỉ số nhiều. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 8.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "faf0948f-944e-430c-bfe2-82f07ff2b4b0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “men” và nghĩa “Hậu tố chỉ số nhiều”.",
+      "options": [
+        "我",
+        "们",
+        "经理",
+        "老师"
+      ],
+      "accepted": [
+        "们"
+      ],
+      "explanation": "们 đọc là men, nghĩa là Hậu tố chỉ số nhiều. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 8.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "faf0948f-944e-430c-bfe2-82f07ff2b4b0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “老师” có nghĩa là gì?",
+      "options": [
+        "Giáo viên",
+        "Ông chủ",
+        "Học sinh, sinh viên",
+        "Chào mọi người"
+      ],
+      "accepted": [
+        "Giáo viên"
+      ],
+      "explanation": "老师 đọc là lǎoshī, nghĩa là Giáo viên. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 9.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e3167974-3b01-4964-9841-b4c03a344db5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “lǎoshī” và nghĩa “Giáo viên”.",
+      "options": [
+        "你",
+        "你好",
+        "们",
+        "老师"
+      ],
+      "accepted": [
+        "老师"
+      ],
+      "explanation": "老师 đọc là lǎoshī, nghĩa là Giáo viên. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 9.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e3167974-3b01-4964-9841-b4c03a344db5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “学生” có nghĩa là gì?",
+      "options": [
+        "Học sinh, sinh viên",
+        "Xin chào (lịch sự)",
+        "Chúng tôi, chúng ta",
+        "Giám đốc, người quản lý"
+      ],
+      "accepted": [
+        "Học sinh, sinh viên"
+      ],
+      "explanation": "学生 đọc là xuésheng, nghĩa là Học sinh, sinh viên. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 10.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "042f5535-b4dc-407c-b3a2-f01d068a3dfc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “xuésheng” và nghĩa “Học sinh, sinh viên”.",
+      "options": [
+        "我",
+        "您",
+        "学生",
+        "经理"
+      ],
+      "accepted": [
+        "学生"
+      ],
+      "explanation": "学生 đọc là xuésheng, nghĩa là Học sinh, sinh viên. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 10.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "042f5535-b4dc-407c-b3a2-f01d068a3dfc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “是” có nghĩa là gì?",
+      "options": [
+        "Nam",
+        "Chào mọi người",
+        "Chúng tôi, chúng ta",
+        "Là"
+      ],
+      "accepted": [
+        "Là"
+      ],
+      "explanation": "是 đọc là shì, nghĩa là Là. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 11.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "90c3209b-edfc-4db6-bc91-898108bfb584"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “shì” và nghĩa “Là”.",
+      "options": [
+        "你们",
+        "是",
+        "我们",
+        "它"
+      ],
+      "accepted": [
+        "是"
+      ],
+      "explanation": "是 đọc là shì, nghĩa là Là. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 11.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "90c3209b-edfc-4db6-bc91-898108bfb584"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “大家” có nghĩa là gì?",
+      "options": [
+        "Mọi người",
+        "Anh ấy",
+        "Học sinh, sinh viên",
+        "Bạn"
+      ],
+      "accepted": [
+        "Mọi người"
+      ],
+      "explanation": "大家 đọc là dàjiā, nghĩa là Mọi người. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 12.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1f322289-20ef-4532-b6cc-f141d639b987"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “dàjiā” và nghĩa “Mọi người”.",
+      "options": [
+        "经理",
+        "大家",
+        "男",
+        "是"
+      ],
+      "accepted": [
+        "大家"
+      ],
+      "explanation": "大家 đọc là dàjiā, nghĩa là Mọi người. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 12.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1f322289-20ef-4532-b6cc-f141d639b987"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “他” có nghĩa là gì?",
+      "options": [
+        "Tôi",
+        "Chúng tôi, chúng ta",
+        "Họ (nữ)",
+        "Anh ấy"
+      ],
+      "accepted": [
+        "Anh ấy"
+      ],
+      "explanation": "他 đọc là tā, nghĩa là Anh ấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 16.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0075a8e5-df5b-4d46-8d0e-3e7138cf3fe8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “tā” và nghĩa “Anh ấy”.",
+      "options": [
+        "他",
+        "她们",
+        "男",
+        "它"
+      ],
+      "accepted": [
+        "他"
+      ],
+      "explanation": "他 đọc là tā, nghĩa là Anh ấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 16.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0075a8e5-df5b-4d46-8d0e-3e7138cf3fe8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “她” có nghĩa là gì?",
+      "options": [
+        "Cô ấy",
+        "Giáo viên",
+        "Ngài, bạn (kính trọng)",
+        "Nó"
+      ],
+      "accepted": [
+        "Cô ấy"
+      ],
+      "explanation": "她 đọc là tā, nghĩa là Cô ấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 17.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "171d0445-f4e4-4937-807b-603405cedde6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “tā” và nghĩa “Cô ấy”.",
+      "options": [
+        "她",
+        "你好",
+        "她们",
+        "老师"
+      ],
+      "accepted": [
+        "她"
+      ],
+      "explanation": "她 đọc là tā, nghĩa là Cô ấy. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 17.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "171d0445-f4e4-4937-807b-603405cedde6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “它” có nghĩa là gì?",
+      "options": [
+        "Cũ",
+        "Giám đốc, người quản lý",
+        "Cô ấy",
+        "Nó"
+      ],
+      "accepted": [
+        "Nó"
+      ],
+      "explanation": "它 đọc là tā, nghĩa là Nó. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 18.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "29eea94c-fb70-43b2-9a82-47fd91fbd0df"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “tā” và nghĩa “Nó”.",
+      "options": [
+        "它",
+        "你好",
+        "好",
+        "您好"
+      ],
+      "accepted": [
+        "它"
+      ],
+      "explanation": "它 đọc là tā, nghĩa là Nó. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 18.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "29eea94c-fb70-43b2-9a82-47fd91fbd0df"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “女” có nghĩa là gì?",
+      "options": [
+        "Xin chào",
+        "Cũ",
+        "Nữ",
+        "Mới"
+      ],
+      "accepted": [
+        "Nữ"
+      ],
+      "explanation": "女 đọc là nǚ, nghĩa là Nữ. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 19.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "32de51ed-34a4-436d-9393-ec3052e3c2a4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “nǚ” và nghĩa “Nữ”.",
+      "options": [
+        "女",
+        "难",
+        "门",
+        "我"
+      ],
+      "accepted": [
+        "女"
+      ],
+      "explanation": "女 đọc là nǚ, nghĩa là Nữ. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 19.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "32de51ed-34a4-436d-9393-ec3052e3c2a4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “男” có nghĩa là gì?",
+      "options": [
+        "Nam",
+        "Xin chào (lịch sự)",
+        "Cô ấy",
+        "Họ"
+      ],
+      "accepted": [
+        "Nam"
+      ],
+      "explanation": "男 đọc là nán, nghĩa là Nam. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 20.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8f9e4c29-36c1-41e9-b8d1-2dafc8ef74af"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “nán” và nghĩa “Nam”.",
+      "options": [
+        "男",
+        "新",
+        "它",
+        "你好"
+      ],
+      "accepted": [
+        "男"
+      ],
+      "explanation": "男 đọc là nán, nghĩa là Nam. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 20.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8f9e4c29-36c1-41e9-b8d1-2dafc8ef74af"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “难” có nghĩa là gì?",
+      "options": [
+        "Cũ",
+        "Xin chào (lịch sự)",
+        "Cửa",
+        "Khó"
+      ],
+      "accepted": [
+        "Khó"
+      ],
+      "explanation": "难 đọc là nán, nghĩa là Khó. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 21.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b3e5aa14-6c63-4cf3-a507-a62c858704c9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “nán” và nghĩa “Khó”.",
+      "options": [
+        "新",
+        "经理",
+        "是",
+        "难"
+      ],
+      "accepted": [
+        "难"
+      ],
+      "explanation": "难 đọc là nán, nghĩa là Khó. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 21.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b3e5aa14-6c63-4cf3-a507-a62c858704c9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “新” có nghĩa là gì?",
+      "options": [
+        "Mới",
+        "Họ",
+        "Là",
+        "Cửa"
+      ],
+      "accepted": [
+        "Mới"
+      ],
+      "explanation": "新 đọc là xīn, nghĩa là Mới. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 22.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e9cb1556-6baa-4aa3-91b9-409ca0a178ae"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “xīn” và nghĩa “Mới”.",
+      "options": [
+        "门",
+        "旧",
+        "您",
+        "新"
+      ],
+      "accepted": [
+        "新"
+      ],
+      "explanation": "新 đọc là xīn, nghĩa là Mới. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 22.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e9cb1556-6baa-4aa3-91b9-409ca0a178ae"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “旧” có nghĩa là gì?",
+      "options": [
+        "Học sinh, sinh viên",
+        "Xin chào (lịch sự)",
+        "Khó",
+        "Cũ"
+      ],
+      "accepted": [
+        "Cũ"
+      ],
+      "explanation": "旧 đọc là jiù, nghĩa là Cũ. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 23.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bdabf918-ef7f-4b2c-a3a1-cc02158a43f2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “jiù” và nghĩa “Cũ”.",
+      "options": [
+        "好",
+        "旧",
+        "女",
+        "难"
+      ],
+      "accepted": [
+        "旧"
+      ],
+      "explanation": "旧 đọc là jiù, nghĩa là Cũ. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 23.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bdabf918-ef7f-4b2c-a3a1-cc02158a43f2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “门” có nghĩa là gì?",
+      "options": [
+        "Nó",
+        "Họ",
+        "Cửa",
+        "Cửa ra vào"
+      ],
+      "accepted": [
+        "Cửa"
+      ],
+      "explanation": "门 đọc là mén, nghĩa là Cửa. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 24.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bdb85b9e-f5c7-42e7-a259-fbe8323e6dcf"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “mén” và nghĩa “Cửa”.",
+      "options": [
+        "门",
+        "你",
+        "难",
+        "女"
+      ],
+      "accepted": [
+        "门"
+      ],
+      "explanation": "门 đọc là mén, nghĩa là Cửa. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 24.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bdb85b9e-f5c7-42e7-a259-fbe8323e6dcf"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “门口” có nghĩa là gì?",
+      "options": [
+        "Cũ",
+        "Giám đốc, người quản lý",
+        "Cửa ra vào",
+        "Nữ"
+      ],
+      "accepted": [
+        "Cửa ra vào"
+      ],
+      "explanation": "门口 đọc là ménkǒu, nghĩa là Cửa ra vào. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 25.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "27b3f66b-ab37-4ad6-b36e-5392d2a26d4d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “ménkǒu” và nghĩa “Cửa ra vào”.",
+      "options": [
+        "您",
+        "好",
+        "门口",
+        "旧"
+      ],
+      "accepted": [
+        "门口"
+      ],
+      "explanation": "门口 đọc là ménkǒu, nghĩa là Cửa ra vào. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 25.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "27b3f66b-ab37-4ad6-b36e-5392d2a26d4d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “你们” có nghĩa là gì?",
+      "options": [
+        "Anh ấy",
+        "Ngài, bạn (kính trọng)",
+        "Các bạn",
+        "Cũ"
+      ],
+      "accepted": [
+        "Các bạn"
+      ],
+      "explanation": "你们 đọc là nǐmen, nghĩa là Các bạn. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 26.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "da6763f0-4a45-4112-8db6-81d5f5061012"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “nǐmen” và nghĩa “Các bạn”.",
+      "options": [
+        "你们",
+        "我",
+        "她",
+        "男"
+      ],
+      "accepted": [
+        "你们"
+      ],
+      "explanation": "你们 đọc là nǐmen, nghĩa là Các bạn. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 26.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "da6763f0-4a45-4112-8db6-81d5f5061012"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “我们” có nghĩa là gì?",
+      "options": [
+        "Cũ",
+        "Cô ấy",
+        "Chúng tôi, chúng ta",
+        "Học sinh, sinh viên"
+      ],
+      "accepted": [
+        "Chúng tôi, chúng ta"
+      ],
+      "explanation": "我们 đọc là wǒmen, nghĩa là Chúng tôi, chúng ta. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 27.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0ee0ffcc-2a61-4a65-adbe-3740e7e1b384"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “wǒmen” và nghĩa “Chúng tôi, chúng ta”.",
+      "options": [
+        "您",
+        "我们",
+        "她们",
+        "们"
+      ],
+      "accepted": [
+        "我们"
+      ],
+      "explanation": "我们 đọc là wǒmen, nghĩa là Chúng tôi, chúng ta. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 27.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0ee0ffcc-2a61-4a65-adbe-3740e7e1b384"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “他们” có nghĩa là gì?",
+      "options": [
+        "Cũ",
+        "Họ",
+        "Xin chào (lịch sự)",
+        "Nữ"
+      ],
+      "accepted": [
+        "Họ"
+      ],
+      "explanation": "他们 đọc là tāmen, nghĩa là Họ. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 28.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b534cc5c-d37c-4ed1-aab0-a49a859d88bc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “tāmen” và nghĩa “Họ”.",
+      "options": [
+        "他们",
+        "我",
+        "门",
+        "学生"
+      ],
+      "accepted": [
+        "他们"
+      ],
+      "explanation": "他们 đọc là tāmen, nghĩa là Họ. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 28.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b534cc5c-d37c-4ed1-aab0-a49a859d88bc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “她们” có nghĩa là gì?",
+      "options": [
+        "Anh ấy",
+        "Mới",
+        "Khó",
+        "Họ (nữ)"
+      ],
+      "accepted": [
+        "Họ (nữ)"
+      ],
+      "explanation": "她们 đọc là tāmen, nghĩa là Họ (nữ). Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 29.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "de9cd0be-1fbf-45f6-a6be-1150d11e4eda"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “tāmen” và nghĩa “Họ (nữ)”.",
+      "options": [
+        "她们",
+        "大家好",
+        "新",
+        "它"
+      ],
+      "accepted": [
+        "她们"
+      ],
+      "explanation": "她们 đọc là tāmen, nghĩa là Họ (nữ). Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 29.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "de9cd0be-1fbf-45f6-a6be-1150d11e4eda"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “你好” có nghĩa là gì?",
+      "options": [
+        "Mọi người",
+        "Xin chào",
+        "Nữ",
+        "Ngài, bạn (kính trọng)"
+      ],
+      "accepted": [
+        "Xin chào"
+      ],
+      "explanation": "你好 đọc là nǐ hǎo, nghĩa là Xin chào. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 30.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2a49582c-53d3-4f73-8e5b-d4e7c9cfe5f8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “nǐ hǎo” và nghĩa “Xin chào”.",
+      "options": [
+        "大家好",
+        "是",
+        "你好",
+        "旧"
+      ],
+      "accepted": [
+        "你好"
+      ],
+      "explanation": "你好 đọc là nǐ hǎo, nghĩa là Xin chào. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 30.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2a49582c-53d3-4f73-8e5b-d4e7c9cfe5f8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “您好” có nghĩa là gì?",
+      "options": [
+        "Học sinh, sinh viên",
+        "Xin chào (lịch sự)",
+        "Xin chào",
+        "Giám đốc, người quản lý"
+      ],
+      "accepted": [
+        "Xin chào (lịch sự)"
+      ],
+      "explanation": "您好 đọc là nín hǎo, nghĩa là Xin chào (lịch sự). Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 31.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c67b9f25-7c6c-4979-90f4-202d4dadbe14"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “nín hǎo” và nghĩa “Xin chào (lịch sự)”.",
+      "options": [
+        "难",
+        "您好",
+        "新",
+        "她们"
+      ],
+      "accepted": [
+        "您好"
+      ],
+      "explanation": "您好 đọc là nín hǎo, nghĩa là Xin chào (lịch sự). Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 31.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c67b9f25-7c6c-4979-90f4-202d4dadbe14"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “大家好” có nghĩa là gì?",
+      "options": [
+        "Chúng tôi, chúng ta",
+        "Ông chủ",
+        "Họ (nữ)",
+        "Chào mọi người"
+      ],
+      "accepted": [
+        "Chào mọi người"
+      ],
+      "explanation": "大家好 đọc là dàjiā hǎo, nghĩa là Chào mọi người. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 32.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e902b6f9-e9a7-41ad-b190-66d86842f34b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “dàjiā hǎo” và nghĩa “Chào mọi người”.",
+      "options": [
+        "你们",
+        "新",
+        "是",
+        "大家好"
+      ],
+      "accepted": [
+        "大家好"
+      ],
+      "explanation": "大家好 đọc là dàjiā hǎo, nghĩa là Chào mọi người. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 32.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e902b6f9-e9a7-41ad-b190-66d86842f34b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “老板” có nghĩa là gì?",
+      "options": [
+        "Nữ",
+        "Ông chủ",
+        "Họ",
+        "Cô ấy"
+      ],
+      "accepted": [
+        "Ông chủ"
+      ],
+      "explanation": "老板 đọc là lǎobǎn, nghĩa là Ông chủ. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 33.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "db894a4a-685d-48c9-b500-1fb775e05f13"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “lǎobǎn” và nghĩa “Ông chủ”.",
+      "options": [
+        "他",
+        "老板",
+        "老师",
+        "他们"
+      ],
+      "accepted": [
+        "老板"
+      ],
+      "explanation": "老板 đọc là lǎobǎn, nghĩa là Ông chủ. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 33.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "db894a4a-685d-48c9-b500-1fb775e05f13"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Trong bài học, “经理” có nghĩa là gì?",
+      "options": [
+        "Giám đốc, người quản lý",
+        "Họ",
+        "Chúng tôi, chúng ta",
+        "Cô ấy"
+      ],
+      "accepted": [
+        "Giám đốc, người quản lý"
+      ],
+      "explanation": "经理 đọc là jīnglǐ, nghĩa là Giám đốc, người quản lý. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 34.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "20c20329-e031-4018-ad89-3e65d5fb38da"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn Hán tự có phiên âm “jīnglǐ” và nghĩa “Giám đốc, người quản lý”.",
+      "options": [
+        "经理",
+        "大家",
+        "旧",
+        "门"
+      ],
+      "accepted": [
+        "经理"
+      ],
+      "explanation": "经理 đọc là jīnglǐ, nghĩa là Giám đốc, người quản lý. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 34.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "20c20329-e031-4018-ad89-3e65d5fb38da"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn phiên âm đúng của “您好” với nghĩa “Xin chào (lịch sự)”.",
+      "options": [
+        "men",
+        "nín hǎo",
+        "tā",
+        "nǐmen"
+      ],
+      "accepted": [
+        "nín hǎo"
+      ],
+      "explanation": "您好 đọc là nín hǎo, nghĩa là Xin chào (lịch sự). Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 31.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c67b9f25-7c6c-4979-90f4-202d4dadbe14"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn phiên âm đúng của “大家好” với nghĩa “Chào mọi người”.",
+      "options": [
+        "dàjiā hǎo",
+        "tāmen",
+        "lǎobǎn",
+        "mén"
+      ],
+      "accepted": [
+        "dàjiā hǎo"
+      ],
+      "explanation": "大家好 đọc là dàjiā hǎo, nghĩa là Chào mọi người. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 32.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e902b6f9-e9a7-41ad-b190-66d86842f34b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn phiên âm đúng của “老板” với nghĩa “Ông chủ”.",
+      "options": [
+        "lǎoshī",
+        "lǎobǎn",
+        "jiù",
+        "wǒ"
+      ],
+      "accepted": [
+        "lǎobǎn"
+      ],
+      "explanation": "老板 đọc là lǎobǎn, nghĩa là Ông chủ. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 33.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "db894a4a-685d-48c9-b500-1fb775e05f13"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 1",
+      "prompt": "Chọn phiên âm đúng của “经理” với nghĩa “Giám đốc, người quản lý”.",
+      "options": [
+        "ménkǒu",
+        "jiù",
+        "jīnglǐ",
+        "shì"
+      ],
+      "accepted": [
+        "jīnglǐ"
+      ],
+      "explanation": "经理 đọc là jīnglǐ, nghĩa là Giám đốc, người quản lý. Nguồn: danh sách đầy đủ người dùng gửi, bài 1, dòng 34.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "20c20329-e031-4018-ad89-3e65d5fb38da"
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “你好！” có nghĩa là gì?",
+      "options": [
+        "Xin chào!",
+        "Cô ấy là học sinh.",
+        "Tôi là học sinh.",
+        "Chúng tôi là giáo viên."
+      ],
+      "accepted": [
+        "Xin chào!"
+      ],
+      "explanation": "你好！ — Xin chào! Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Xin chào!”.",
+      "options": [
+        "她是学生。",
+        "你好！",
+        "我是经理。",
+        "我们是老师。"
+      ],
+      "accepted": [
+        "你好！"
+      ],
+      "explanation": "你好！ — Xin chào! Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “您好！” có nghĩa là gì?",
+      "options": [
+        "Xin chào ngài! (lịch sự)",
+        "Tôi là học sinh.",
+        "Chúng tôi là giáo viên.",
+        "Chào thầy/cô!"
+      ],
+      "accepted": [
+        "Xin chào ngài! (lịch sự)"
+      ],
+      "explanation": "您好！ — Xin chào ngài! (lịch sự) Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Xin chào ngài! (lịch sự)”.",
+      "options": [
+        "你是老师。",
+        "他是老板。",
+        "大家好！",
+        "您好！"
+      ],
+      "accepted": [
+        "您好！"
+      ],
+      "explanation": "您好！ — Xin chào ngài! (lịch sự) Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “老师好！” có nghĩa là gì?",
+      "options": [
+        "Họ là những ông chủ.",
+        "Chúng tôi là giáo viên.",
+        "Chào thầy/cô!",
+        "Bạn là giáo viên."
+      ],
+      "accepted": [
+        "Chào thầy/cô!"
+      ],
+      "explanation": "老师好！ — Chào thầy/cô! Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chào thầy/cô!”.",
+      "options": [
+        "你好！",
+        "她是学生。",
+        "老师好！",
+        "你们是老师。"
+      ],
+      "accepted": [
+        "老师好！"
+      ],
+      "explanation": "老师好！ — Chào thầy/cô! Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “大家好！” có nghĩa là gì?",
+      "options": [
+        "Cô ấy là giám đốc.",
+        "Tôi là giáo viên.",
+        "Chào mọi người!",
+        "Họ là những ông chủ."
+      ],
+      "accepted": [
+        "Chào mọi người!"
+      ],
+      "explanation": "大家好！ — Chào mọi người! Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chào mọi người!”.",
+      "options": [
+        "我们是老师。",
+        "他们是老板。",
+        "你是学生。",
+        "大家好！"
+      ],
+      "accepted": [
+        "大家好！"
+      ],
+      "explanation": "大家好！ — Chào mọi người! Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “你们好！” có nghĩa là gì?",
+      "options": [
+        "Chào các bạn!",
+        "Họ (nữ) là giáo viên.",
+        "Tôi là giám đốc.",
+        "Chúng tôi là giáo viên."
+      ],
+      "accepted": [
+        "Chào các bạn!"
+      ],
+      "explanation": "你们好！ — Chào các bạn! Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chào các bạn!”.",
+      "options": [
+        "大家好！",
+        "你们好！",
+        "我们是学生。",
+        "他是老板。"
+      ],
+      "accepted": [
+        "你们好！"
+      ],
+      "explanation": "你们好！ — Chào các bạn! Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “我是老师。” có nghĩa là gì?",
+      "options": [
+        "Tôi là giáo viên.",
+        "Anh ấy là ông chủ.",
+        "Bạn là giáo viên.",
+        "Chúng tôi là giáo viên."
+      ],
+      "accepted": [
+        "Tôi là giáo viên."
+      ],
+      "explanation": "我是老师。 — Tôi là giáo viên. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi là giáo viên.”.",
+      "options": [
+        "她是经理。",
+        "我是老师。",
+        "我们是学生。",
+        "她是学生。"
+      ],
+      "accepted": [
+        "我是老师。"
+      ],
+      "explanation": "我是老师。 — Tôi là giáo viên. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “我是学生。” có nghĩa là gì?",
+      "options": [
+        "Tôi là giám đốc.",
+        "Tôi là học sinh.",
+        "Chào thầy/cô!",
+        "Các bạn là giáo viên."
+      ],
+      "accepted": [
+        "Tôi là học sinh."
+      ],
+      "explanation": "我是学生。 — Tôi là học sinh. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi là học sinh.”.",
+      "options": [
+        "他是老板。",
+        "我们是老师。",
+        "我是学生。",
+        "他们是老板。"
+      ],
+      "accepted": [
+        "我是学生。"
+      ],
+      "explanation": "我是学生。 — Tôi là học sinh. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “你是老师。” có nghĩa là gì?",
+      "options": [
+        "Tôi là giáo viên.",
+        "Bạn là giáo viên.",
+        "Chào thầy/cô!",
+        "Cô ấy là học sinh."
+      ],
+      "accepted": [
+        "Bạn là giáo viên."
+      ],
+      "explanation": "你是老师。 — Bạn là giáo viên. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bạn là giáo viên.”.",
+      "options": [
+        "你是老师。",
+        "你们是老师。",
+        "他是老师。",
+        "他们是学生。"
+      ],
+      "accepted": [
+        "你是老师。"
+      ],
+      "explanation": "你是老师。 — Bạn là giáo viên. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “你是学生。” có nghĩa là gì?",
+      "options": [
+        "Họ (nữ) là giáo viên.",
+        "Tôi là giáo viên.",
+        "Anh ấy là ông chủ.",
+        "Bạn là học sinh."
+      ],
+      "accepted": [
+        "Bạn là học sinh."
+      ],
+      "explanation": "你是学生。 — Bạn là học sinh. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bạn là học sinh.”.",
+      "options": [
+        "您好！",
+        "你们好！",
+        "你是学生。",
+        "我是经理。"
+      ],
+      "accepted": [
+        "你是学生。"
+      ],
+      "explanation": "你是学生。 — Bạn là học sinh. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “他是老师。” có nghĩa là gì?",
+      "options": [
+        "Chào thầy/cô!",
+        "Chúng tôi là học sinh.",
+        "Bạn là giáo viên.",
+        "Anh ấy là giáo viên."
+      ],
+      "accepted": [
+        "Anh ấy là giáo viên."
+      ],
+      "explanation": "他是老师。 — Anh ấy là giáo viên. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Anh ấy là giáo viên.”.",
+      "options": [
+        "他是老板。",
+        "她是学生。",
+        "她们是老师。",
+        "他是老师。"
+      ],
+      "accepted": [
+        "他是老师。"
+      ],
+      "explanation": "他是老师。 — Anh ấy là giáo viên. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “她是学生。” có nghĩa là gì?",
+      "options": [
+        "Chúng tôi là học sinh.",
+        "Chúng tôi là giáo viên.",
+        "Họ (nữ) là giáo viên.",
+        "Cô ấy là học sinh."
+      ],
+      "accepted": [
+        "Cô ấy là học sinh."
+      ],
+      "explanation": "她是学生。 — Cô ấy là học sinh. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy là học sinh.”.",
+      "options": [
+        "你们好！",
+        "我是老师。",
+        "她是学生。",
+        "您好！"
+      ],
+      "accepted": [
+        "她是学生。"
+      ],
+      "explanation": "她是学生。 — Cô ấy là học sinh. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “我们是学生。” có nghĩa là gì?",
+      "options": [
+        "Anh ấy là giáo viên.",
+        "Xin chào!",
+        "Tôi là học sinh.",
+        "Chúng tôi là học sinh."
+      ],
+      "accepted": [
+        "Chúng tôi là học sinh."
+      ],
+      "explanation": "我们是学生。 — Chúng tôi là học sinh. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chúng tôi là học sinh.”.",
+      "options": [
+        "他是老师。",
+        "我是经理。",
+        "我是老师。",
+        "我们是学生。"
+      ],
+      "accepted": [
+        "我们是学生。"
+      ],
+      "explanation": "我们是学生。 — Chúng tôi là học sinh. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “你们是老师。” có nghĩa là gì?",
+      "options": [
+        "Xin chào ngài! (lịch sự)",
+        "Các bạn là giáo viên.",
+        "Chào các bạn!",
+        "Chúng tôi là học sinh."
+      ],
+      "accepted": [
+        "Các bạn là giáo viên."
+      ],
+      "explanation": "你们是老师。 — Các bạn là giáo viên. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Các bạn là giáo viên.”.",
+      "options": [
+        "您好！",
+        "你们是老师。",
+        "你是老师。",
+        "他们是老板。"
+      ],
+      "accepted": [
+        "你们是老师。"
+      ],
+      "explanation": "你们是老师。 — Các bạn là giáo viên. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “他们是学生。” có nghĩa là gì?",
+      "options": [
+        "Chào các bạn!",
+        "Chào thầy/cô!",
+        "Họ là học sinh.",
+        "Cô ấy là học sinh."
+      ],
+      "accepted": [
+        "Họ là học sinh."
+      ],
+      "explanation": "他们是学生。 — Họ là học sinh. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Họ là học sinh.”.",
+      "options": [
+        "你们好！",
+        "我是老师。",
+        "他们是学生。",
+        "大家好！"
+      ],
+      "accepted": [
+        "他们是学生。"
+      ],
+      "explanation": "他们是学生。 — Họ là học sinh. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “她们是老师。” có nghĩa là gì?",
+      "options": [
+        "Xin chào ngài! (lịch sự)",
+        "Xin chào!",
+        "Chúng tôi là giáo viên.",
+        "Họ (nữ) là giáo viên."
+      ],
+      "accepted": [
+        "Họ (nữ) là giáo viên."
+      ],
+      "explanation": "她们是老师。 — Họ (nữ) là giáo viên. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Họ (nữ) là giáo viên.”.",
+      "options": [
+        "你好！",
+        "老师好！",
+        "她们是老师。",
+        "你们是老师。"
+      ],
+      "accepted": [
+        "她们是老师。"
+      ],
+      "explanation": "她们是老师。 — Họ (nữ) là giáo viên. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “我是经理。” có nghĩa là gì?",
+      "options": [
+        "Tôi là giám đốc.",
+        "Xin chào ngài! (lịch sự)",
+        "Bạn là giáo viên.",
+        "Anh ấy là giáo viên."
+      ],
+      "accepted": [
+        "Tôi là giám đốc."
+      ],
+      "explanation": "我是经理。 — Tôi là giám đốc. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi là giám đốc.”.",
+      "options": [
+        "她是经理。",
+        "我是经理。",
+        "她是学生。",
+        "我们是老师。"
+      ],
+      "accepted": [
+        "我是经理。"
+      ],
+      "explanation": "我是经理。 — Tôi là giám đốc. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “他是老板。” có nghĩa là gì?",
+      "options": [
+        "Chúng tôi là học sinh.",
+        "Bạn là giáo viên.",
+        "Họ là những ông chủ.",
+        "Anh ấy là ông chủ."
+      ],
+      "accepted": [
+        "Anh ấy là ông chủ."
+      ],
+      "explanation": "他是老板。 — Anh ấy là ông chủ. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Anh ấy là ông chủ.”.",
+      "options": [
+        "她是经理。",
+        "我是学生。",
+        "他是老板。",
+        "您好！"
+      ],
+      "accepted": [
+        "他是老板。"
+      ],
+      "explanation": "他是老板。 — Anh ấy là ông chủ. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “她是经理。” có nghĩa là gì?",
+      "options": [
+        "Xin chào!",
+        "Cô ấy là giám đốc.",
+        "Tôi là giám đốc.",
+        "Các bạn là giáo viên."
+      ],
+      "accepted": [
+        "Cô ấy là giám đốc."
+      ],
+      "explanation": "她是经理。 — Cô ấy là giám đốc. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy là giám đốc.”.",
+      "options": [
+        "我们是老师。",
+        "你们好！",
+        "她是经理。",
+        "他们是学生。"
+      ],
+      "accepted": [
+        "她是经理。"
+      ],
+      "explanation": "她是经理。 — Cô ấy là giám đốc. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “他们是老板。” có nghĩa là gì?",
+      "options": [
+        "Họ là những ông chủ.",
+        "Tôi là giáo viên.",
+        "Bạn là giáo viên.",
+        "Cô ấy là giám đốc."
+      ],
+      "accepted": [
+        "Họ là những ông chủ."
+      ],
+      "explanation": "他们是老板。 — Họ là những ông chủ. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Họ là những ông chủ.”.",
+      "options": [
+        "他是老板。",
+        "你好！",
+        "你们是老师。",
+        "他们是老板。"
+      ],
+      "accepted": [
+        "他们是老板。"
+      ],
+      "explanation": "他们是老板。 — Họ là những ông chủ. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Câu “我们是老师。” có nghĩa là gì?",
+      "options": [
+        "Chúng tôi là giáo viên.",
+        "Anh ấy là giáo viên.",
+        "Bạn là giáo viên.",
+        "Chào các bạn!"
+      ],
+      "accepted": [
+        "Chúng tôi là giáo viên."
+      ],
+      "explanation": "我们是老师。 — Chúng tôi là giáo viên. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–1",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chúng tôi là giáo viên.”.",
+      "options": [
+        "你是学生。",
+        "她是经理。",
+        "他是老师。",
+        "我们是老师。"
+      ],
+      "accepted": [
+        "我们是老师。"
+      ],
+      "explanation": "我们是老师。 — Chúng tôi là giáo viên. Câu dùng từ trong danh sách bài 1.",
+      "difficulty": "medium",
+      "approved": true
+    }
+  ],
+  "speaking": [
+    {
+      "practice": "speaking",
+      "text": "你是学生？",
+      "meaning": "Bạn là học sinh phải không?",
+      "answer_reference": "我是学生。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "您是老师？",
+      "meaning": "Ngài là giáo viên phải không?",
+      "answer_reference": "我是老师。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你们是学生？",
+      "meaning": "Các bạn là học sinh phải không?",
+      "answer_reference": "我们是学生。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "他们是老师？",
+      "meaning": "Họ là giáo viên phải không?",
+      "answer_reference": "他们是老师。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "她是经理？",
+      "meaning": "Cô ấy là giám đốc phải không?",
+      "answer_reference": "她是经理。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "他是老板？",
+      "meaning": "Anh ấy là ông chủ phải không?",
+      "answer_reference": "他是老板。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "她们是学生？",
+      "meaning": "Họ (nữ) là học sinh phải không?",
+      "answer_reference": "她们是学生。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你是经理？",
+      "meaning": "Bạn là giám đốc phải không?",
+      "answer_reference": "我是学生。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "他是老师？",
+      "meaning": "Anh ấy là giáo viên phải không?",
+      "answer_reference": "他是老师。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "她是学生？",
+      "meaning": "Cô ấy là học sinh phải không?",
+      "answer_reference": "她是学生。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    }
+  ],
+  "activities": {
+    "topic": "Chào hỏi và giới thiệu vai trò",
+    "tasks": [
+      {
+        "type": "order",
+        "prompt": "Tôi là giáo viên.",
+        "tokens": [
+          "我",
+          "是",
+          "老师",
+          "。"
+        ],
+        "answer": "我是老师。",
+        "explanation": "我是老师。 — Tôi là giáo viên."
+      },
+      {
+        "type": "fill",
+        "prompt": "我是___。 (Tôi là giáo viên.)",
+        "answer": "老师",
+        "explanation": "Câu hoàn chỉnh: 我是老师。 — Tôi là giáo viên."
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi là học sinh.",
+        "tokens": [
+          "我",
+          "是",
+          "学生",
+          "。"
+        ],
+        "answer": "我是学生。",
+        "explanation": "我是学生。 — Tôi là học sinh."
+      },
+      {
+        "type": "fill",
+        "prompt": "我是___。 (Tôi là học sinh.)",
+        "answer": "学生",
+        "explanation": "Câu hoàn chỉnh: 我是学生。 — Tôi là học sinh."
+      },
+      {
+        "type": "order",
+        "prompt": "Bạn là giáo viên.",
+        "tokens": [
+          "你",
+          "是",
+          "老师",
+          "。"
+        ],
+        "answer": "你是老师。",
+        "explanation": "你是老师。 — Bạn là giáo viên."
+      },
+      {
+        "type": "fill",
+        "prompt": "你是___。 (Bạn là giáo viên.)",
+        "answer": "老师",
+        "explanation": "Câu hoàn chỉnh: 你是老师。 — Bạn là giáo viên."
+      },
+      {
+        "type": "order",
+        "prompt": "Bạn là học sinh.",
+        "tokens": [
+          "你",
+          "是",
+          "学生",
+          "。"
+        ],
+        "answer": "你是学生。",
+        "explanation": "你是学生。 — Bạn là học sinh."
+      },
+      {
+        "type": "fill",
+        "prompt": "你是___。 (Bạn là học sinh.)",
+        "answer": "学生",
+        "explanation": "Câu hoàn chỉnh: 你是学生。 — Bạn là học sinh."
+      },
+      {
+        "type": "order",
+        "prompt": "Anh ấy là giáo viên.",
+        "tokens": [
+          "他",
+          "是",
+          "老师",
+          "。"
+        ],
+        "answer": "他是老师。",
+        "explanation": "他是老师。 — Anh ấy là giáo viên."
+      },
+      {
+        "type": "fill",
+        "prompt": "他是___。 (Anh ấy là giáo viên.)",
+        "answer": "老师",
+        "explanation": "Câu hoàn chỉnh: 他是老师。 — Anh ấy là giáo viên."
+      },
+      {
+        "type": "order",
+        "prompt": "Cô ấy là học sinh.",
+        "tokens": [
+          "她",
+          "是",
+          "学生",
+          "。"
+        ],
+        "answer": "她是学生。",
+        "explanation": "她是学生。 — Cô ấy là học sinh."
+      },
+      {
+        "type": "fill",
+        "prompt": "她是___。 (Cô ấy là học sinh.)",
+        "answer": "学生",
+        "explanation": "Câu hoàn chỉnh: 她是学生。 — Cô ấy là học sinh."
+      },
+      {
+        "type": "order",
+        "prompt": "Chúng tôi là học sinh.",
+        "tokens": [
+          "我们",
+          "是",
+          "学生",
+          "。"
+        ],
+        "answer": "我们是学生。",
+        "explanation": "我们是学生。 — Chúng tôi là học sinh."
+      },
+      {
+        "type": "fill",
+        "prompt": "我们是___。 (Chúng tôi là học sinh.)",
+        "answer": "学生",
+        "explanation": "Câu hoàn chỉnh: 我们是学生。 — Chúng tôi là học sinh."
+      },
+      {
+        "type": "order",
+        "prompt": "Các bạn là giáo viên.",
+        "tokens": [
+          "你们",
+          "是",
+          "老师",
+          "。"
+        ],
+        "answer": "你们是老师。",
+        "explanation": "你们是老师。 — Các bạn là giáo viên."
+      },
+      {
+        "type": "fill",
+        "prompt": "你们是___。 (Các bạn là giáo viên.)",
+        "answer": "老师",
+        "explanation": "Câu hoàn chỉnh: 你们是老师。 — Các bạn là giáo viên."
+      },
+      {
+        "type": "order",
+        "prompt": "Họ là học sinh.",
+        "tokens": [
+          "他们",
+          "是",
+          "学生",
+          "。"
+        ],
+        "answer": "他们是学生。",
+        "explanation": "他们是学生。 — Họ là học sinh."
+      },
+      {
+        "type": "fill",
+        "prompt": "他们是___。 (Họ là học sinh.)",
+        "answer": "学生",
+        "explanation": "Câu hoàn chỉnh: 他们是学生。 — Họ là học sinh."
+      },
+      {
+        "type": "order",
+        "prompt": "Họ (nữ) là giáo viên.",
+        "tokens": [
+          "她们",
+          "是",
+          "老师",
+          "。"
+        ],
+        "answer": "她们是老师。",
+        "explanation": "她们是老师。 — Họ (nữ) là giáo viên."
+      },
+      {
+        "type": "fill",
+        "prompt": "她们是___。 (Họ (nữ) là giáo viên.)",
+        "answer": "老师",
+        "explanation": "Câu hoàn chỉnh: 她们是老师。 — Họ (nữ) là giáo viên."
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Xin chào!”: 你是老师。",
+        "answer": "你好！",
+        "options": [
+          "你好！",
+          "你是老师。",
+          "他们是学生。"
+        ],
+        "explanation": "你好！ — Xin chào!"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你是学生？",
+        "answer": "我是学生。",
+        "options": [
+          "我是学生。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn là học sinh phải không? Đáp lại: 我是学生。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Xin chào ngài! (lịch sự)”: 你是学生。",
+        "answer": "您好！",
+        "options": [
+          "您好！",
+          "你是学生。",
+          "她们是老师。"
+        ],
+        "explanation": "您好！ — Xin chào ngài! (lịch sự)"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "您是老师？",
+        "answer": "我是老师。",
+        "options": [
+          "我是老师。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Ngài là giáo viên phải không? Đáp lại: 我是老师。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Chào thầy/cô!”: 他是老师。",
+        "answer": "老师好！",
+        "options": [
+          "老师好！",
+          "他是老师。",
+          "我是经理。"
+        ],
+        "explanation": "老师好！ — Chào thầy/cô!"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你们是学生？",
+        "answer": "我们是学生。",
+        "options": [
+          "我们是学生。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Các bạn là học sinh phải không? Đáp lại: 我们是学生。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Chào mọi người!”: 她是学生。",
+        "answer": "大家好！",
+        "options": [
+          "大家好！",
+          "她是学生。",
+          "他是老板。"
+        ],
+        "explanation": "大家好！ — Chào mọi người!"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "他们是老师？",
+        "answer": "他们是老师。",
+        "options": [
+          "他们是老师。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Họ là giáo viên phải không? Đáp lại: 他们是老师。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Chào các bạn!”: 我们是学生。",
+        "answer": "你们好！",
+        "options": [
+          "你们好！",
+          "我们是学生。",
+          "她是经理。"
+        ],
+        "explanation": "你们好！ — Chào các bạn!"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "她是经理？",
+        "answer": "她是经理。",
+        "options": [
+          "她是经理。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Cô ấy là giám đốc phải không? Đáp lại: 她是经理。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi là giáo viên.”: 你们是老师。",
+        "answer": "我是老师。",
+        "options": [
+          "我是老师。",
+          "你们是老师。",
+          "他们是老板。"
+        ],
+        "explanation": "我是老师。 — Tôi là giáo viên."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "他是老板？",
+        "answer": "他是老板。",
+        "options": [
+          "他是老板。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Anh ấy là ông chủ phải không? Đáp lại: 他是老板。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi là học sinh.”: 他们是学生。",
+        "answer": "我是学生。",
+        "options": [
+          "我是学生。",
+          "他们是学生。",
+          "我们是老师。"
+        ],
+        "explanation": "我是学生。 — Tôi là học sinh."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "她们是学生？",
+        "answer": "她们是学生。",
+        "options": [
+          "她们是学生。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Họ (nữ) là học sinh phải không? Đáp lại: 她们是学生。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Bạn là giáo viên.”: 她们是老师。",
+        "answer": "你是老师。",
+        "options": [
+          "你是老师。",
+          "她们是老师。",
+          "你好！"
+        ],
+        "explanation": "你是老师。 — Bạn là giáo viên."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你是经理？",
+        "answer": "我是学生。",
+        "options": [
+          "我是学生。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn là giám đốc phải không? Đáp lại: 我是学生。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Bạn là học sinh.”: 我是经理。",
+        "answer": "你是学生。",
+        "options": [
+          "你是学生。",
+          "我是经理。",
+          "您好！"
+        ],
+        "explanation": "你是学生。 — Bạn là học sinh."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "他是老师？",
+        "answer": "他是老师。",
+        "options": [
+          "他是老师。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Anh ấy là giáo viên phải không? Đáp lại: 他是老师。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Anh ấy là giáo viên.”: 他是老板。",
+        "answer": "他是老师。",
+        "options": [
+          "他是老师。",
+          "他是老板。",
+          "老师好！"
+        ],
+        "explanation": "他是老师。 — Anh ấy là giáo viên."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "她是学生？",
+        "answer": "她是学生。",
+        "options": [
+          "她是学生。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Cô ấy là học sinh phải không? Đáp lại: 她是学生。"
+      }
+    ]
+  },
+  "chat": {
+    "enabled": true,
+    "scenario_id": "greeting",
+    "goal": "Trò chuyện về chào hỏi và giới thiệu vai trò; chỉ dùng từ đã học từ bài 1 đến bài 1.",
+    "opening": "你是学生？",
+    "translation": "Bạn là học sinh phải không?",
+    "required_words": [
+      "你",
+      "您",
+      "我",
+      "好",
+      "们",
+      "老师",
+      "学生",
+      "是",
+      "大家",
+      "他",
+      "她",
+      "它",
+      "女",
+      "男",
+      "难",
+      "新",
+      "旧",
+      "门",
+      "门口",
+      "你们"
+    ],
+    "max_turns": 10
+  },
+  "street": {
+    "enabled": true,
+    "place_id": "school",
+    "missions": [
+      {
+        "id": "vocab-1-1",
+        "title": "Nghe hiểu 1",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "你好！",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Xin chào!"
+          },
+          {
+            "id": "c2",
+            "label": "Bạn là giáo viên."
+          },
+          {
+            "id": "c3",
+            "label": "Họ là học sinh."
+          }
+        ],
+        "answer": "c1",
+        "feedback": "你好！ — Xin chào!"
+      },
+      {
+        "id": "vocab-1-2",
+        "title": "Nghe hiểu 2",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "我是老师。",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Các bạn là giáo viên."
+          },
+          {
+            "id": "c2",
+            "label": "Tôi là giáo viên."
+          },
+          {
+            "id": "c3",
+            "label": "Họ là những ông chủ."
+          }
+        ],
+        "answer": "c2",
+        "feedback": "我是老师。 — Tôi là giáo viên."
+      },
+      {
+        "id": "vocab-1-3",
+        "title": "Nghe hiểu 3",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "她是学生。",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Chào mọi người!"
+          },
+          {
+            "id": "c2",
+            "label": "Cô ấy là giám đốc."
+          },
+          {
+            "id": "c3",
+            "label": "Cô ấy là học sinh."
+          }
+        ],
+        "answer": "c3",
+        "feedback": "她是学生。 — Cô ấy là học sinh."
+      }
+    ]
+  }
+}

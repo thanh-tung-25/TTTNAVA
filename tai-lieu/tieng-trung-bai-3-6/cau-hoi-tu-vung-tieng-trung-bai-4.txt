@@ -1,2099 +1,1224 @@
-MÔN: Tiếng Trung
-LỚP: HSK 1
-CHỦ ĐỀ: Bài 4 你去哪儿 - Từ vựng chính và từ mở rộng
+MÔN: Tiếng Trung — HSK 1
+CHỦ ĐỀ: 第四课：你去哪儿？ (Bạn đi đâu?)
+CHỦ ĐỀ: Đồng bộ theo danh sách từ vựng đầy đủ ngày 14/11/2026
+[TU VUNG]
+Chữ Hán 	Pinyin 	Nghĩa tiếng Việt 	Nhóm
+小姐 	xiǎojiě 	Cô, tiểu thư 	Từ mới
+师傅 	shīfu 	Bác tài, thầy 	Từ mới
+去 	qù 	Đi 	Từ mới
+哪儿 	nǎr 	Đâu, ở đâu 	Từ mới
+哪里 	nǎlǐ 	Đâu, ở đâu 	Từ mới
+人民 	rénmín 	Nhân dân 	Từ mới
+广场 	guǎngchǎng 	Quảng trường 	Từ mới
+知道 	zhīdào 	Biết 	Từ mới
+明白 	míngbai 	Hiểu, hiểu rõ 	Từ mới
+了 	le 	Trợ từ chỉ sự hoàn thành hoặc thay đổi 	Từ mới
+远 	yuǎn 	Xa 	Từ mới
+近 	jìn 	Gần 	Từ mới
+离 	lí 	Cách, cách xa 	Từ mới
+找 	zhǎo 	Tìm, trả lại tiền thừa 	Từ mới
+多少 	duōshao 	Bao nhiêu 	Từ mới
+钱 	qián 	Tiền 	Từ mới
+块 	kuài 	Đồng, tệ 	Từ mới
+多 	duō 	Nhiều 	Từ mới
+少 	shǎo 	Ít 	Từ mới
+再 	zài 	Lại, thêm lần nữa 	Từ mới
+再见 	zàijiàn 	Tạm biệt 	Từ mới
+谢谢 	xièxie 	Cảm ơn 	Từ mới
+不客气 	bú kèqi 	Không có gì 	Từ mới
+早上 	zǎoshang 	Sáng sớm 	Từ mở rộng
+上午 	shàngwǔ 	Buổi sáng 	Từ mở rộng
+中午 	zhōngwǔ 	Buổi trưa 	Từ mở rộng
+下午 	xiàwǔ 	Buổi chiều 	Từ mở rộng
+晚上 	wǎnshang 	Buổi tối 	Từ mở rộng
+半夜 	bànyè 	Nửa đêm 	Từ mở rộng
+来 	lái 	Đến 	Từ mở rộng
+到 	dào 	Đến, tới 	Từ mở rộng
+司机 	sījī 	Tài xế 	Từ mở rộng
+女士 	nǚshì 	Quý cô, quý bà 	Từ mở rộng
+姑娘 	gūniang 	Cô gái 	Từ mở rộng
+妹妹 	mèimei 	Em gái 	Từ mở rộng
+小姐姐 	xiǎojiějie 	Cô gái trẻ (thân mật) 	Từ mở rộng
+美女 	měinǚ 	Người đẹp 	Từ mở rộng
+小哥哥 	xiǎogēge 	Chàng trai trẻ (thân mật) 	Từ mở rộng
+帅哥 	shuàigē 	Anh đẹp trai 	Từ mở rộng
+人民广场 	Rénmín Guǎngchǎng 	Quảng trường Nhân dân 	Từ mở rộng
+学校 	xuéxiào 	Trường học 	Từ mở rộng
+公司 	gōngsī 	Công ty 	Từ mở rộng
+医院 	yīyuàn 	Bệnh viện 	Từ mở rộng
+超市 	chāoshì 	Siêu thị 	Từ mở rộng
+宿舍 	sùshè 	Ký túc xá 	Từ mở rộng
+电影院 	diànyǐngyuàn 	Rạp chiếu phim 	Từ mở rộng
+感谢 	gǎnxiè 	Cảm ơn, biết ơn 	Từ mở rộng
+不用谢 	bú yòng xiè 	Không cần cảm ơn 	Từ mở rộng
+客气 	kèqi 	Khách sáo, lịch sự 	Từ mở rộng
+[CAU HOI]
 Câu 1. Trong bài học, “小姐” có nghĩa là gì?
-A. cảm ơn, cảm tạ
-B. cô, tiểu thư; cách xưng hô trong bài
-C. cơ quan công an
-D. em gái
-Đáp án: B
-Lời giải: 小姐 đọc là xiǎojiě, nghĩa là cô, tiểu thư; cách xưng hô trong bài. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 2. Chọn Hán tự có phiên âm “xiǎojiě” và nghĩa “cô, tiểu thư; cách xưng hô trong bài”.
-A. 饭店
-B. 小姐
-C. 多
-D. 来
-Đáp án: B
-Lời giải: 小姐 đọc là xiǎojiě, nghĩa là cô, tiểu thư; cách xưng hô trong bài. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 3. Chọn phiên âm đúng của “小姐” với nghĩa “cô, tiểu thư; cách xưng hô trong bài”.
-A. dìtiě
-B. shuàigē
-C. xiǎojiě
-D. fàndiàn
-Đáp án: C
-Lời giải: 小姐 đọc là xiǎojiě, nghĩa là cô, tiểu thư; cách xưng hô trong bài. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 4. Trong bài học, “师傅” có nghĩa là gì?
-A. nhà vệ sinh
-B. đến; hướng về người nói
-C. đến, tới; nhấn mạnh điểm đến
-D. bác tài, thầy; cách gọi người thợ lành nghề
+A. Bác tài, thầy
+B. Cô gái trẻ (thân mật)
+C. Trường học
+D. Cô, tiểu thư
 Đáp án: D
-Lời giải: 师傅 đọc là shīfu, nghĩa là bác tài, thầy; cách gọi người thợ lành nghề. Tham chiếu: PDF bài 4, trang 6.
+Lời giải: 小姐 đọc là xiǎojiě, nghĩa là Cô, tiểu thư. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 146.
 Độ khó: Dễ
-Câu 5. Chọn Hán tự có phiên âm “shīfu” và nghĩa “bác tài, thầy; cách gọi người thợ lành nghề”.
-A. 师傅
-B. 六
-C. 电影院
-D. 钱
-Đáp án: A
-Lời giải: 师傅 đọc là shīfu, nghĩa là bác tài, thầy; cách gọi người thợ lành nghề. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 6. Chọn phiên âm đúng của “师傅” với nghĩa “bác tài, thầy; cách gọi người thợ lành nghề”.
-A. huǒchēzhàn
-B. gōngsī
-C. shīfu
-D. Rénmín Guǎngchǎng
-Đáp án: C
-Lời giải: 师傅 đọc là shīfu, nghĩa là bác tài, thầy; cách gọi người thợ lành nghề. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 7. Trong bài học, “去” có nghĩa là gì?
-A. tể tướng
-B. cô gái
-C. trợ từ; biểu thị thay đổi trạng thái trong bài
-D. đi, đến; hướng xa người nói
-Đáp án: D
-Lời giải: 去 đọc là qù, nghĩa là đi, đến; hướng xa người nói. Tham chiếu: PDF bài 4, trang 7.
-Độ khó: Dễ
-Câu 8. Chọn Hán tự có phiên âm “qù” và nghĩa “đi, đến; hướng xa người nói”.
-A. 学校
-B. 去
-C. 帅哥
-D. 步行街
-Đáp án: B
-Lời giải: 去 đọc là qù, nghĩa là đi, đến; hướng xa người nói. Tham chiếu: PDF bài 4, trang 7.
-Độ khó: Dễ
-Câu 9. Chọn phiên âm đúng của “去” với nghĩa “đi, đến; hướng xa người nói”.
-A. qù
-B. zǎixiàng
-C. xièxie
-D. xiǎojiě
-Đáp án: A
-Lời giải: 去 đọc là qù, nghĩa là đi, đến; hướng xa người nói. Tham chiếu: PDF bài 4, trang 7.
-Độ khó: Dễ
-Câu 10. Trong bài học, “哪儿” có nghĩa là gì?
-A. cái; lượng từ thông dụng
-B. ở đâu
-C. chai; lượng từ đồ đựng trong chai
-D. quảng trường
-Đáp án: B
-Lời giải: 哪儿 đọc là nǎr, nghĩa là ở đâu. Tham chiếu: PDF bài 4, trang 7.
-Độ khó: Dễ
-Câu 11. Chọn Hán tự có phiên âm “nǎr” và nghĩa “ở đâu”.
-A. 钱
-B. 宰相
-C. 巴亭广场
-D. 哪儿
-Đáp án: D
-Lời giải: 哪儿 đọc là nǎr, nghĩa là ở đâu. Tham chiếu: PDF bài 4, trang 7.
-Độ khó: Dễ
-Câu 12. Chọn phiên âm đúng của “哪儿” với nghĩa “ở đâu”.
-A. píng
-B. nǎr
-C. bú kèqi
-D. sījī
-Đáp án: B
-Lời giải: 哪儿 đọc là nǎr, nghĩa là ở đâu. Tham chiếu: PDF bài 4, trang 7.
-Độ khó: Dễ
-Câu 13. Trong bài học, “哪里” có nghĩa là gì?
-A. nhà vệ sinh
-B. bao nhiêu
-C. buổi sáng sớm
-D. ở đâu, chỗ nào
-Đáp án: D
-Lời giải: 哪里 đọc là nǎlǐ, nghĩa là ở đâu, chỗ nào. Tham chiếu: PDF bài 4, trang 7.
-Độ khó: Dễ
-Câu 14. Chọn Hán tự có phiên âm “nǎlǐ” và nghĩa “ở đâu, chỗ nào”.
-A. 哪里
-B. 离
-C. 哪儿
-D. 来
-Đáp án: A
-Lời giải: 哪里 đọc là nǎlǐ, nghĩa là ở đâu, chỗ nào. Tham chiếu: PDF bài 4, trang 7.
-Độ khó: Dễ
-Câu 15. Chọn phiên âm đúng của “哪里” với nghĩa “ở đâu, chỗ nào”.
-A. zǎoshang
-B. bówùguǎn
-C. nǎlǐ
-D. rénmín
-Đáp án: C
-Lời giải: 哪里 đọc là nǎlǐ, nghĩa là ở đâu, chỗ nào. Tham chiếu: PDF bài 4, trang 7.
-Độ khó: Dễ
-Câu 16. Trong bài học, “人民” có nghĩa là gì?
-A. không có gì; đáp lại lời cảm ơn
-B. quảng trường
-C. nhà vệ sinh
-D. nhân dân
-Đáp án: D
-Lời giải: 人民 đọc là rénmín, nghĩa là nhân dân. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 17. Chọn Hán tự có phiên âm “rénmín” và nghĩa “nhân dân”.
-A. 人民
-B. 杯
-C. 超市
-D. 能
-Đáp án: A
-Lời giải: 人民 đọc là rénmín, nghĩa là nhân dân. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 18. Chọn phiên âm đúng của “人民” với nghĩa “nhân dân”.
-A. zuò
-B. rénmín
-C. jìn
-D. Rénmín Guǎngchǎng
-Đáp án: B
-Lời giải: 人民 đọc là rénmín, nghĩa là nhân dân. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 19. Trong bài học, “广场” có nghĩa là gì?
-A. quảng trường
-B. người đẹp, cô gái đẹp
-C. tàu điện ngầm
-D. phố đi bộ
-Đáp án: A
-Lời giải: 广场 đọc là guǎngchǎng, nghĩa là quảng trường. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 20. Chọn Hán tự có phiên âm “guǎngchǎng” và nghĩa “quảng trường”.
-A. 厕所
-B. 电影院
-C. 广场
-D. 找
-Đáp án: C
-Lời giải: 广场 đọc là guǎngchǎng, nghĩa là quảng trường. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 21. Chọn phiên âm đúng của “广场” với nghĩa “quảng trường”.
-A. chāoshì
-B. zhōngwǔ
-C. cèsuǒ
-D. guǎngchǎng
-Đáp án: D
-Lời giải: 广场 đọc là guǎngchǎng, nghĩa là quảng trường. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 22. Trong bài học, “人民广场” có nghĩa là gì?
-A. Quảng trường Nhân Dân
-B. lại, thêm, nữa
-C. xe buýt
-D. cô gái
-Đáp án: A
-Lời giải: 人民广场 đọc là Rénmín Guǎngchǎng, nghĩa là Quảng trường Nhân Dân. Tham chiếu: PDF bài 4, trang 16.
-Độ khó: Dễ
-Câu 23. Chọn Hán tự có phiên âm “Rénmín Guǎngchǎng” và nghĩa “Quảng trường Nhân Dân”.
+Câu 2. Chọn Hán tự có phiên âm “xiǎojiě” và nghĩa “Cô, tiểu thư”.
 A. 人民广场
-B. 公园
-C. 明白
-D. 离
+B. 小姐
+C. 超市
+D. 宿舍
+Đáp án: B
+Lời giải: 小姐 đọc là xiǎojiě, nghĩa là Cô, tiểu thư. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 146.
+Độ khó: Dễ
+Câu 3. Trong bài học, “师傅” có nghĩa là gì?
+A. Buổi tối
+B. Buổi sáng
+C. Bác tài, thầy
+D. Quý cô, quý bà
+Đáp án: C
+Lời giải: 师傅 đọc là shīfu, nghĩa là Bác tài, thầy. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 147.
+Độ khó: Dễ
+Câu 4. Chọn Hán tự có phiên âm “shīfu” và nghĩa “Bác tài, thầy”.
+A. 师傅
+B. 再见
+C. 下午
+D. 人民
 Đáp án: A
-Lời giải: 人民广场 đọc là Rénmín Guǎngchǎng, nghĩa là Quảng trường Nhân Dân. Tham chiếu: PDF bài 4, trang 16.
+Lời giải: 师傅 đọc là shīfu, nghĩa là Bác tài, thầy. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 147.
 Độ khó: Dễ
-Câu 24. Chọn phiên âm đúng của “人民广场” với nghĩa “Quảng trường Nhân Dân”.
-A. yóujú
-B. Rénmín Guǎngchǎng
-C. gōng'ānjú
-D. Bātíng Guǎngchǎng
+Câu 5. Trong bài học, “去” có nghĩa là gì?
+A. Đi
+B. Trường học
+C. Đến
+D. Buổi tối
+Đáp án: A
+Lời giải: 去 đọc là qù, nghĩa là Đi. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 148.
+Độ khó: Dễ
+Câu 6. Chọn Hán tự có phiên âm “qù” và nghĩa “Đi”.
+A. 电影院
+B. 不客气
+C. 到
+D. 去
+Đáp án: D
+Lời giải: 去 đọc là qù, nghĩa là Đi. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 148.
+Độ khó: Dễ
+Câu 7. Trong bài học, “哪儿” có nghĩa là gì?
+A. Đâu, ở đâu
+B. Lại, thêm lần nữa
+C. Cảm ơn, biết ơn
+D. Cách, cách xa
+Đáp án: A
+Lời giải: 哪儿 đọc là nǎr, nghĩa là Đâu, ở đâu. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 149.
+Độ khó: Dễ
+Câu 8. Chọn Hán tự có phiên âm “nǎr” và nghĩa “Đâu, ở đâu”.
+A. 哪儿
+B. 司机
+C. 妹妹
+D. 了
+Đáp án: A
+Lời giải: 哪儿 đọc là nǎr, nghĩa là Đâu, ở đâu. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 149.
+Độ khó: Dễ
+Câu 9. Trong bài học, “哪里” có nghĩa là gì?
+A. Lại, thêm lần nữa
+B. Đâu, ở đâu
+C. Gần
+D. Quý cô, quý bà
 Đáp án: B
-Lời giải: 人民广场 đọc là Rénmín Guǎngchǎng, nghĩa là Quảng trường Nhân Dân. Tham chiếu: PDF bài 4, trang 16.
+Lời giải: 哪里 đọc là nǎlǐ, nghĩa là Đâu, ở đâu. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 150.
 Độ khó: Dễ
-Câu 25. Trong bài học, “知道” có nghĩa là gì?
-A. cách; chỉ khoảng cách
-B. biết một thông tin
-C. sáu
-D. Quảng trường Nhân Dân
-Đáp án: B
-Lời giải: 知道 đọc là zhīdào, nghĩa là biết một thông tin. Tham chiếu: PDF bài 4, trang 10.
+Câu 10. Chọn Hán tự có phiên âm “nǎlǐ” và nghĩa “Đâu, ở đâu”.
+A. 哪里
+B. 公司
+C. 姑娘
+D. 客气
+Đáp án: A
+Lời giải: 哪里 đọc là nǎlǐ, nghĩa là Đâu, ở đâu. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 150.
 Độ khó: Dễ
-Câu 26. Chọn Hán tự có phiên âm “zhīdào” và nghĩa “biết một thông tin”.
-A. 火车站
-B. 知道
-C. 钱
-D. 小牛
-Đáp án: B
-Lời giải: 知道 đọc là zhīdào, nghĩa là biết một thông tin. Tham chiếu: PDF bài 4, trang 10.
+Câu 11. Trong bài học, “人民” có nghĩa là gì?
+A. Trợ từ chỉ sự hoàn thành hoặc thay đổi
+B. Lại, thêm lần nữa
+C. Quảng trường
+D. Nhân dân
+Đáp án: D
+Lời giải: 人民 đọc là rénmín, nghĩa là Nhân dân. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 151.
 Độ khó: Dễ
-Câu 27. Chọn phiên âm đúng của “知道” với nghĩa “biết một thông tin”.
-A. shuàigē
-B. gūniang
-C. zhīdào
-D. huǒchēzhàn
+Câu 12. Chọn Hán tự có phiên âm “rénmín” và nghĩa “Nhân dân”.
+A. 中午
+B. 去
+C. 人民
+D. 学校
 Đáp án: C
-Lời giải: 知道 đọc là zhīdào, nghĩa là biết một thông tin. Tham chiếu: PDF bài 4, trang 10.
+Lời giải: 人民 đọc là rénmín, nghĩa là Nhân dân. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 151.
 Độ khó: Dễ
-Câu 28. Trong bài học, “了” có nghĩa là gì?
-A. buổi sáng sớm
-B. mất dê mới sửa chuồng; sửa sai khi còn kịp
-C. trợ từ; biểu thị thay đổi trạng thái trong bài
-D. Quảng trường Nhân Dân
+Câu 13. Trong bài học, “广场” có nghĩa là gì?
+A. Quảng trường
+B. Bác tài, thầy
+C. Anh đẹp trai
+D. Đồng, tệ
+Đáp án: A
+Lời giải: 广场 đọc là guǎngchǎng, nghĩa là Quảng trường. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 152.
+Độ khó: Dễ
+Câu 14. Chọn Hán tự có phiên âm “guǎngchǎng” và nghĩa “Quảng trường”.
+A. 来
+B. 远
+C. 广场
+D. 宿舍
 Đáp án: C
-Lời giải: 了 đọc là le, nghĩa là trợ từ; biểu thị thay đổi trạng thái trong bài. Tham chiếu: PDF bài 4, trang 10.
+Lời giải: 广场 đọc là guǎngchǎng, nghĩa là Quảng trường. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 152.
 Độ khó: Dễ
-Câu 29. Chọn Hán tự có phiên âm “le” và nghĩa “trợ từ; biểu thị thay đổi trạng thái trong bài”.
-A. 个
+Câu 15. Trong bài học, “知道” có nghĩa là gì?
+A. Cô gái trẻ (thân mật)
+B. Nhân dân
+C. Đến
+D. Biết
+Đáp án: D
+Lời giải: 知道 đọc là zhīdào, nghĩa là Biết. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 153.
+Độ khó: Dễ
+Câu 16. Chọn Hán tự có phiên âm “zhīdào” và nghĩa “Biết”.
+A. 人民
+B. 再
+C. 知道
+D. 近
+Đáp án: C
+Lời giải: 知道 đọc là zhīdào, nghĩa là Biết. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 153.
+Độ khó: Dễ
+Câu 17. Trong bài học, “明白” có nghĩa là gì?
+A. Người đẹp
+B. Cảm ơn
+C. Hiểu, hiểu rõ
+D. Ký túc xá
+Đáp án: C
+Lời giải: 明白 đọc là míngbai, nghĩa là Hiểu, hiểu rõ. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 154.
+Độ khó: Dễ
+Câu 18. Chọn Hán tự có phiên âm “míngbai” và nghĩa “Hiểu, hiểu rõ”.
+A. 上午
 B. 了
-C. 离
-D. 小姐
+C. 人民广场
+D. 明白
+Đáp án: D
+Lời giải: 明白 đọc là míngbai, nghĩa là Hiểu, hiểu rõ. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 154.
+Độ khó: Dễ
+Câu 19. Trong bài học, “了” có nghĩa là gì?
+A. Cách, cách xa
+B. Công ty
+C. Đến
+D. Trợ từ chỉ sự hoàn thành hoặc thay đổi
+Đáp án: D
+Lời giải: 了 đọc là le, nghĩa là Trợ từ chỉ sự hoàn thành hoặc thay đổi. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 155.
+Độ khó: Dễ
+Câu 20. Chọn Hán tự có phiên âm “le” và nghĩa “Trợ từ chỉ sự hoàn thành hoặc thay đổi”.
+A. 妹妹
+B. 了
+C. 上午
+D. 人民广场
 Đáp án: B
-Lời giải: 了 đọc là le, nghĩa là trợ từ; biểu thị thay đổi trạng thái trong bài. Tham chiếu: PDF bài 4, trang 10.
+Lời giải: 了 đọc là le, nghĩa là Trợ từ chỉ sự hoàn thành hoặc thay đổi. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 155.
 Độ khó: Dễ
-Câu 30. Chọn phiên âm đúng của “了” với nghĩa “trợ từ; biểu thị thay đổi trạng thái trong bài”.
-A. shīfu
-B. le
-C. bēi
-D. jìn
+Câu 21. Trong bài học, “远” có nghĩa là gì?
+A. Đồng, tệ
+B. Xa
+C. Hiểu, hiểu rõ
+D. Nhân dân
 Đáp án: B
-Lời giải: 了 đọc là le, nghĩa là trợ từ; biểu thị thay đổi trạng thái trong bài. Tham chiếu: PDF bài 4, trang 10.
+Lời giải: 远 đọc là yuǎn, nghĩa là Xa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 156.
 Độ khó: Dễ
-Câu 31. Trong bài học, “远” có nghĩa là gì?
-A. xa
-B. nước cô la
-C. tạm biệt, hẹn gặp lại
-D. ở đâu
-Đáp án: A
-Lời giải: 远 đọc là yuǎn, nghĩa là xa. Tham chiếu: PDF bài 4, trang 11.
-Độ khó: Dễ
-Câu 32. Chọn Hán tự có phiên âm “yuǎn” và nghĩa “xa”.
-A. 再
-B. 公安局
-C. 来
+Câu 22. Chọn Hán tự có phiên âm “yuǎn” và nghĩa “Xa”.
+A. 帅哥
+B. 块
+C. 明白
 D. 远
 Đáp án: D
-Lời giải: 远 đọc là yuǎn, nghĩa là xa. Tham chiếu: PDF bài 4, trang 11.
+Lời giải: 远 đọc là yuǎn, nghĩa là Xa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 156.
 Độ khó: Dễ
-Câu 33. Chọn phiên âm đúng của “远” với nghĩa “xa”.
-A. dàgài
-B. shàngwǔ
-C. xièxie
-D. yuǎn
-Đáp án: D
-Lời giải: 远 đọc là yuǎn, nghĩa là xa. Tham chiếu: PDF bài 4, trang 11.
-Độ khó: Dễ
-Câu 34. Trong bài học, “近” có nghĩa là gì?
-A. gần
-B. trong bụng
-C. lại, thêm, nữa
-D. trường học
-Đáp án: A
-Lời giải: 近 đọc là jìn, nghĩa là gần. Tham chiếu: PDF bài 4, trang 11.
-Độ khó: Dễ
-Câu 35. Chọn Hán tự có phiên âm “jìn” và nghĩa “gần”.
-A. 比
-B. 六
-C. 近
-D. 感谢
-Đáp án: C
-Lời giải: 近 đọc là jìn, nghĩa là gần. Tham chiếu: PDF bài 4, trang 11.
-Độ khó: Dễ
-Câu 36. Chọn phiên âm đúng của “近” với nghĩa “gần”.
-A. jìn
-B. dàgài
-C. měinǚ
-D. wǎnshang
-Đáp án: A
-Lời giải: 近 đọc là jìn, nghĩa là gần. Tham chiếu: PDF bài 4, trang 11.
-Độ khó: Dễ
-Câu 37. Trong bài học, “到” có nghĩa là gì?
-A. nhà hàng; khách sạn tùy ngữ cảnh
-B. không cần cảm ơn, không có gì
-C. đến, tới; nhấn mạnh điểm đến
-D. chàng trai đẹp trai
-Đáp án: C
-Lời giải: 到 đọc là dào, nghĩa là đến, tới; nhấn mạnh điểm đến. Tham chiếu: PDF bài 4, trang 7.
-Độ khó: Dễ
-Câu 38. Chọn Hán tự có phiên âm “dào” và nghĩa “đến, tới; nhấn mạnh điểm đến”.
-A. 客气
-B. 哪里
-C. 到
-D. 人民
-Đáp án: C
-Lời giải: 到 đọc là dào, nghĩa là đến, tới; nhấn mạnh điểm đến. Tham chiếu: PDF bài 4, trang 7.
-Độ khó: Dễ
-Câu 39. Chọn phiên âm đúng của “到” với nghĩa “đến, tới; nhấn mạnh điểm đến”.
-A. bùxíngjiē
-B. bú kèqi
-C. shīfu
-D. dào
-Đáp án: D
-Lời giải: 到 đọc là dào, nghĩa là đến, tới; nhấn mạnh điểm đến. Tham chiếu: PDF bài 4, trang 7.
-Độ khó: Dễ
-Câu 40. Trong bài học, “多少” có nghĩa là gì?
-A. nhà vệ sinh
-B. bao nhiêu
-C. ký túc xá
-D. ở đâu
+Câu 23. Trong bài học, “近” có nghĩa là gì?
+A. Nửa đêm
+B. Gần
+C. Rạp chiếu phim
+D. Cô gái
 Đáp án: B
-Lời giải: 多少 đọc là duōshao, nghĩa là bao nhiêu. Tham chiếu: PDF bài 4, trang 12.
+Lời giải: 近 đọc là jìn, nghĩa là Gần. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 157.
 Độ khó: Dễ
-Câu 41. Chọn Hán tự có phiên âm “duōshao” và nghĩa “bao nhiêu”.
-A. 人民币
-B. 不用谢
-C. 多少
-D. 多
-Đáp án: C
-Lời giải: 多少 đọc là duōshao, nghĩa là bao nhiêu. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 42. Chọn phiên âm đúng của “多少” với nghĩa “bao nhiêu”.
-A. Bātíng Guǎngchǎng
-B. zuò
-C. duōshao
-D. rénmín
-Đáp án: C
-Lời giải: 多少 đọc là duōshao, nghĩa là bao nhiêu. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 43. Trong bài học, “钱” có nghĩa là gì?
-A. tiền
-B. đi, đến; hướng xa người nói
-C. bà, cô; cách xưng hô lịch sự
-D. sân bay
-Đáp án: A
-Lời giải: 钱 đọc là qián, nghĩa là tiền. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 44. Chọn Hán tự có phiên âm “qián” và nghĩa “tiền”.
-A. 小姐
-B. 钱
-C. 人民币
-D. 下午
-Đáp án: B
-Lời giải: 钱 đọc là qián, nghĩa là tiền. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 45. Chọn phiên âm đúng của “钱” với nghĩa “tiền”.
-A. qián
-B. gūniang
-C. shīfu
-D. gōnggòng qìchē
-Đáp án: A
-Lời giải: 钱 đọc là qián, nghĩa là tiền. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 46. Trong bài học, “块” có nghĩa là gì?
-A. đồng, tệ; đơn vị tiền trong khẩu ngữ
-B. sân bay
-C. buổi chiều
-D. buổi sáng
-Đáp án: A
-Lời giải: 块 đọc là kuài, nghĩa là đồng, tệ; đơn vị tiền trong khẩu ngữ. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 47. Chọn Hán tự có phiên âm “kuài” và nghĩa “đồng, tệ; đơn vị tiền trong khẩu ngữ”.
-A. 块
-B. 钱
-C. 不用谢
-D. 人民
-Đáp án: A
-Lời giải: 块 đọc là kuài, nghĩa là đồng, tệ; đơn vị tiền trong khẩu ngữ. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 48. Chọn phiên âm đúng của “块” với nghĩa “đồng, tệ; đơn vị tiền trong khẩu ngữ”.
-A. sài wēng shī mǎ
-B. le
-C. kuài
-D. zài
-Đáp án: C
-Lời giải: 块 đọc là kuài, nghĩa là đồng, tệ; đơn vị tiền trong khẩu ngữ. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 49. Trong bài học, “谢谢” có nghĩa là gì?
-A. rạp chiếu phim
-B. cảm ơn
-C. xa
-D. buổi trưa
-Đáp án: B
-Lời giải: 谢谢 đọc là xièxie, nghĩa là cảm ơn. Tham chiếu: PDF bài 4, trang 14.
-Độ khó: Dễ
-Câu 50. Chọn Hán tự có phiên âm “xièxie” và nghĩa “cảm ơn”.
-A. 人民广场
-B. 谢谢
-C. 小哥哥
-D. 火车站
-Đáp án: B
-Lời giải: 谢谢 đọc là xièxie, nghĩa là cảm ơn. Tham chiếu: PDF bài 4, trang 14.
-Độ khó: Dễ
-Câu 51. Chọn phiên âm đúng của “谢谢” với nghĩa “cảm ơn”.
-A. kuài
-B. xièxie
-C. gōnggòng qìchē
-D. zhōngwǔ
-Đáp án: B
-Lời giải: 谢谢 đọc là xièxie, nghĩa là cảm ơn. Tham chiếu: PDF bài 4, trang 14.
-Độ khó: Dễ
-Câu 52. Trong bài học, “不客气” có nghĩa là gì?
-A. cơ quan công an
-B. nước cô la
-C. xe buýt
-D. không có gì; đáp lại lời cảm ơn
-Đáp án: D
-Lời giải: 不客气 đọc là bú kèqi, nghĩa là không có gì; đáp lại lời cảm ơn. Tham chiếu: PDF bài 4, trang 14.
-Độ khó: Dễ
-Câu 53. Chọn Hán tự có phiên âm “bú kèqi” và nghĩa “không có gì; đáp lại lời cảm ơn”.
-A. 公共汽车
-B. 哪里
-C. 不客气
-D. 司机
-Đáp án: C
-Lời giải: 不客气 đọc là bú kèqi, nghĩa là không có gì; đáp lại lời cảm ơn. Tham chiếu: PDF bài 4, trang 14.
-Độ khó: Dễ
-Câu 54. Chọn phiên âm đúng của “不客气” với nghĩa “không có gì; đáp lại lời cảm ơn”.
-A. gūniang
-B. bùxíngjiē
-C. bú kèqi
-D. shīfu
-Đáp án: C
-Lời giải: 不客气 đọc là bú kèqi, nghĩa là không có gì; đáp lại lời cảm ơn. Tham chiếu: PDF bài 4, trang 14.
-Độ khó: Dễ
-Câu 55. Trong bài học, “再见” có nghĩa là gì?
-A. ở đâu
-B. tạm biệt, hẹn gặp lại
-C. lại, thêm, nữa
-D. ký túc xá
-Đáp án: B
-Lời giải: 再见 đọc là zàijiàn, nghĩa là tạm biệt, hẹn gặp lại. Tham chiếu: PDF bài 4, trang 13.
-Độ khó: Dễ
-Câu 56. Chọn Hán tự có phiên âm “zàijiàn” và nghĩa “tạm biệt, hẹn gặp lại”.
-A. 晚上
-B. 小姐
-C. 机场
-D. 再见
-Đáp án: D
-Lời giải: 再见 đọc là zàijiàn, nghĩa là tạm biệt, hẹn gặp lại. Tham chiếu: PDF bài 4, trang 13.
-Độ khó: Dễ
-Câu 57. Chọn phiên âm đúng của “再见” với nghĩa “tạm biệt, hẹn gặp lại”.
-A. jīchǎng
-B. gè
-C. zàijiàn
-D. Hénèi
-Đáp án: C
-Lời giải: 再见 đọc là zàijiàn, nghĩa là tạm biệt, hẹn gặp lại. Tham chiếu: PDF bài 4, trang 13.
-Độ khó: Dễ
-Câu 58. Trong bài học, “早上” có nghĩa là gì?
-A. buổi sáng sớm
-B. cách; chỉ khoảng cách
-C. bác tài, thầy; cách gọi người thợ lành nghề
-D. mất dê mới sửa chuồng; sửa sai khi còn kịp
-Đáp án: A
-Lời giải: 早上 đọc là zǎoshang, nghĩa là buổi sáng sớm. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 59. Chọn Hán tự có phiên âm “zǎoshang” và nghĩa “buổi sáng sớm”.
-A. 早上
-B. 晚上
-C. 多
-D. 小刘
-Đáp án: A
-Lời giải: 早上 đọc là zǎoshang, nghĩa là buổi sáng sớm. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 60. Chọn phiên âm đúng của “早上” với nghĩa “buổi sáng sớm”.
-A. jīchǎng
-B. zǎoshang
-C. chēngchuán
-D. gǎnxiè
-Đáp án: B
-Lời giải: 早上 đọc là zǎoshang, nghĩa là buổi sáng sớm. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 61. Trong bài học, “上午” có nghĩa là gì?
-A. buổi sáng
-B. cô gái
-C. không cần cảm ơn, không có gì
-D. cái; lượng từ thông dụng
-Đáp án: A
-Lời giải: 上午 đọc là shàngwǔ, nghĩa là buổi sáng. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 62. Chọn Hán tự có phiên âm “shàngwǔ” và nghĩa “buổi sáng”.
-A. 邮局
-B. 厕所
-C. 女士
-D. 上午
-Đáp án: D
-Lời giải: 上午 đọc là shàngwǔ, nghĩa là buổi sáng. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 63. Chọn phiên âm đúng của “上午” với nghĩa “buổi sáng”.
-A. bùxíngjiē
-B. shàngwǔ
-C. měinǚ
-D. zài
-Đáp án: B
-Lời giải: 上午 đọc là shàngwǔ, nghĩa là buổi sáng. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 64. Trong bài học, “中午” có nghĩa là gì?
-A. khách sáo
-B. buổi trưa
-C. mất dê mới sửa chuồng; sửa sai khi còn kịp
-D. người đẹp, cô gái đẹp
-Đáp án: B
-Lời giải: 中午 đọc là zhōngwǔ, nghĩa là buổi trưa. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 65. Chọn Hán tự có phiên âm “zhōngwǔ” và nghĩa “buổi trưa”.
-A. 少
-B. 能
-C. 中午
-D. 多少
-Đáp án: C
-Lời giải: 中午 đọc là zhōngwǔ, nghĩa là buổi trưa. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 66. Chọn phiên âm đúng của “中午” với nghĩa “buổi trưa”.
-A. Xiǎo Liú
-B. jiǔ
-C. zhōngwǔ
-D. jìn
-Đáp án: C
-Lời giải: 中午 đọc là zhōngwǔ, nghĩa là buổi trưa. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 67. Trong bài học, “下午” có nghĩa là gì?
-A. buổi chiều
-B. cách; chỉ khoảng cách
-C. bác tài, thầy; cách gọi người thợ lành nghề
-D. nhà hàng; khách sạn tùy ngữ cảnh
-Đáp án: A
-Lời giải: 下午 đọc là xiàwǔ, nghĩa là buổi chiều. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 68. Chọn Hán tự có phiên âm “xiàwǔ” và nghĩa “buổi chiều”.
-A. 客气
-B. 下午
-C. 人民
-D. 广场
-Đáp án: B
-Lời giải: 下午 đọc là xiàwǔ, nghĩa là buổi chiều. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 69. Chọn phiên âm đúng của “下午” với nghĩa “buổi chiều”.
-A. yóujú
-B. xiàwǔ
-C. shīfu
-D. bú kèqi
-Đáp án: B
-Lời giải: 下午 đọc là xiàwǔ, nghĩa là buổi chiều. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 70. Trong bài học, “晚上” có nghĩa là gì?
-A. tể tướng
-B. bệnh viện
-C. buổi tối
-D. ở đâu
-Đáp án: C
-Lời giải: 晚上 đọc là wǎnshang, nghĩa là buổi tối. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 71. Chọn Hán tự có phiên âm “wǎnshang” và nghĩa “buổi tối”.
-A. 可乐
-B. 找
-C. 妹妹
-D. 晚上
-Đáp án: D
-Lời giải: 晚上 đọc là wǎnshang, nghĩa là buổi tối. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 72. Chọn phiên âm đúng của “晚上” với nghĩa “buổi tối”.
-A. měinǚ
-B. nǎlǐ
-C. wǎnshang
-D. zuò
-Đáp án: C
-Lời giải: 晚上 đọc là wǎnshang, nghĩa là buổi tối. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 73. Trong bài học, “半夜” có nghĩa là gì?
-A. tiền
-B. ở đâu
-C. đến; hướng về người nói
-D. nửa đêm
-Đáp án: D
-Lời giải: 半夜 đọc là bànyè, nghĩa là nửa đêm. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 74. Chọn Hán tự có phiên âm “bànyè” và nghĩa “nửa đêm”.
-A. 女士
-B. 找
-C. 近
-D. 半夜
-Đáp án: D
-Lời giải: 半夜 đọc là bànyè, nghĩa là nửa đêm. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 75. Chọn phiên âm đúng của “半夜” với nghĩa “nửa đêm”.
-A. le
-B. duōshao
-C. bànyè
-D. sījī
-Đáp án: C
-Lời giải: 半夜 đọc là bànyè, nghĩa là nửa đêm. Tham chiếu: PDF bài 4, trang 5.
-Độ khó: Dễ
-Câu 76. Trong bài học, “女士” có nghĩa là gì?
-A. sáu
-B. có thể, có khả năng
-C. bà, cô; cách xưng hô lịch sự
-D. ga tàu hỏa
-Đáp án: C
-Lời giải: 女士 đọc là nǚshì, nghĩa là bà, cô; cách xưng hô lịch sự. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 77. Chọn Hán tự có phiên âm “nǚshì” và nghĩa “bà, cô; cách xưng hô lịch sự”.
-A. 杯
-B. 学校
-C. 近
-D. 女士
-Đáp án: D
-Lời giải: 女士 đọc là nǚshì, nghĩa là bà, cô; cách xưng hô lịch sự. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 78. Chọn phiên âm đúng của “女士” với nghĩa “bà, cô; cách xưng hô lịch sự”.
-A. nǚshì
-B. nǎlǐ
-C. bùxíngjiē
-D. Hénèi
-Đáp án: A
-Lời giải: 女士 đọc là nǚshì, nghĩa là bà, cô; cách xưng hô lịch sự. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 79. Trong bài học, “姑娘” có nghĩa là gì?
-A. bác tài, thầy; cách gọi người thợ lành nghề
-B. so với; dùng trong so sánh
-C. ga tàu hỏa
-D. cô gái
-Đáp án: D
-Lời giải: 姑娘 đọc là gūniang, nghĩa là cô gái. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 80. Chọn Hán tự có phiên âm “gūniang” và nghĩa “cô gái”.
-A. 塞翁失马
-B. 远
-C. 火车站
-D. 姑娘
-Đáp án: D
-Lời giải: 姑娘 đọc là gūniang, nghĩa là cô gái. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 81. Chọn phiên âm đúng của “姑娘” với nghĩa “cô gái”.
-A. chēngchuán
-B. jīchǎng
-C. gūniang
-D. yīyuàn
-Đáp án: C
-Lời giải: 姑娘 đọc là gūniang, nghĩa là cô gái. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 82. Trong bài học, “妹妹” có nghĩa là gì?
-A. bệnh viện
-B. em gái
-C. ít
-D. mất dê mới sửa chuồng; sửa sai khi còn kịp
-Đáp án: B
-Lời giải: 妹妹 đọc là mèimei, nghĩa là em gái. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 83. Chọn Hán tự có phiên âm “mèimei” và nghĩa “em gái”.
-A. 上午
+Câu 24. Chọn Hán tự có phiên âm “jìn” và nghĩa “Gần”.
+A. 广场
 B. 妹妹
-C. 了
-D. 六
-Đáp án: B
-Lời giải: 妹妹 đọc là mèimei, nghĩa là em gái. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 84. Chọn phiên âm đúng của “妹妹” với nghĩa “em gái”.
-A. mèimei
-B. rénmín
-C. yóujú
-D. zǎoshang
-Đáp án: A
-Lời giải: 妹妹 đọc là mèimei, nghĩa là em gái. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 85. Trong bài học, “美女” có nghĩa là gì?
-A. hiểu rõ
-B. bệnh viện
-C. người đẹp, cô gái đẹp
-D. siêu thị
-Đáp án: C
-Lời giải: 美女 đọc là měinǚ, nghĩa là người đẹp, cô gái đẹp. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 86. Chọn Hán tự có phiên âm “měinǚ” và nghĩa “người đẹp, cô gái đẹp”.
-A. 美女
-B. 师傅
-C. 宿舍
-D. 司机
-Đáp án: A
-Lời giải: 美女 đọc là měinǚ, nghĩa là người đẹp, cô gái đẹp. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 87. Chọn phiên âm đúng của “美女” với nghĩa “người đẹp, cô gái đẹp”.
-A. měinǚ
-B. nǎr
-C. bànyè
-D. gǎnxiè
-Đáp án: A
-Lời giải: 美女 đọc là měinǚ, nghĩa là người đẹp, cô gái đẹp. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 88. Trong bài học, “小哥哥” có nghĩa là gì?
-A. tài xế, người lái xe
-B. buổi tối
-C. anh trai trẻ; cách gọi thân mật
-D. hiểu rõ
-Đáp án: C
-Lời giải: 小哥哥 đọc là xiǎo gēge, nghĩa là anh trai trẻ; cách gọi thân mật. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 89. Chọn Hán tự có phiên âm “xiǎo gēge” và nghĩa “anh trai trẻ; cách gọi thân mật”.
-A. 妹妹
-B. 公司
-C. 六
-D. 小哥哥
+C. 再
+D. 近
 Đáp án: D
-Lời giải: 小哥哥 đọc là xiǎo gēge, nghĩa là anh trai trẻ; cách gọi thân mật. Tham chiếu: PDF bài 4, trang 6.
+Lời giải: 近 đọc là jìn, nghĩa là Gần. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 157.
 Độ khó: Dễ
-Câu 90. Chọn phiên âm đúng của “小哥哥” với nghĩa “anh trai trẻ; cách gọi thân mật”.
-A. dìtiě
-B. zuò
-C. xiǎo gēge
-D. yīyuàn
-Đáp án: C
-Lời giải: 小哥哥 đọc là xiǎo gēge, nghĩa là anh trai trẻ; cách gọi thân mật. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 91. Trong bài học, “帅哥” có nghĩa là gì?
-A. chàng trai đẹp trai
-B. hiểu rõ
-C. có thể, có khả năng
-D. bánh mì
+Câu 25. Trong bài học, “离” có nghĩa là gì?
+A. Cách, cách xa
+B. Em gái
+C. Đến
+D. Quảng trường Nhân dân
 Đáp án: A
-Lời giải: 帅哥 đọc là shuàigē, nghĩa là chàng trai đẹp trai. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 92. Chọn Hán tự có phiên âm “shuàigē” và nghĩa “chàng trai đẹp trai”.
-A. 近
-B. 帅哥
-C. 人民币
-D. 美女
-Đáp án: B
-Lời giải: 帅哥 đọc là shuàigē, nghĩa là chàng trai đẹp trai. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 93. Chọn phiên âm đúng của “帅哥” với nghĩa “chàng trai đẹp trai”.
-A. yóujú
-B. shuàigē
-C. shàngwǔ
-D. jīchǎng
-Đáp án: B
-Lời giải: 帅哥 đọc là shuàigē, nghĩa là chàng trai đẹp trai. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 94. Trong bài học, “司机” có nghĩa là gì?
-A. so với; dùng trong so sánh
-B. biết một thông tin
-C. tài xế, người lái xe
-D. chai; lượng từ đồ đựng trong chai
-Đáp án: C
-Lời giải: 司机 đọc là sījī, nghĩa là tài xế, người lái xe. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 95. Chọn Hán tự có phiên âm “sījī” và nghĩa “tài xế, người lái xe”.
-A. 司机
-B. 到
-C. 广场
-D. 再见
-Đáp án: A
-Lời giải: 司机 đọc là sījī, nghĩa là tài xế, người lái xe. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 96. Chọn phiên âm đúng của “司机” với nghĩa “tài xế, người lái xe”.
-A. qù
-B. mèimei
-C. wáng yáng bǔ láo
-D. sījī
-Đáp án: D
-Lời giải: 司机 đọc là sījī, nghĩa là tài xế, người lái xe. Tham chiếu: PDF bài 4, trang 6.
-Độ khó: Dễ
-Câu 97. Trong bài học, “来” có nghĩa là gì?
-A. đến; hướng về người nói
-B. bưu điện
-C. cô gái
-D. nước cô la
-Đáp án: A
-Lời giải: 来 đọc là lái, nghĩa là đến; hướng về người nói. Tham chiếu: PDF bài 4, trang 7.
-Độ khó: Dễ
-Câu 98. Chọn Hán tự có phiên âm “lái” và nghĩa “đến; hướng về người nói”.
-A. 亡羊补牢
-B. 姑娘
-C. 来
-D. 公园
-Đáp án: C
-Lời giải: 来 đọc là lái, nghĩa là đến; hướng về người nói. Tham chiếu: PDF bài 4, trang 7.
-Độ khó: Dễ
-Câu 99. Chọn phiên âm đúng của “来” với nghĩa “đến; hướng về người nói”.
-A. lái
-B. Xiǎo Liú
-C. xuéxiào
-D. lí
-Đáp án: A
-Lời giải: 来 đọc là lái, nghĩa là đến; hướng về người nói. Tham chiếu: PDF bài 4, trang 7.
-Độ khó: Dễ
-Câu 100. Trong bài học, “人民币” có nghĩa là gì?
-A. nửa đêm
-B. Tiểu Lưu, tên nhân vật
-C. nhân dân tệ
-D. siêu thị
-Đáp án: C
-Lời giải: 人民币 đọc là rénmínbì, nghĩa là nhân dân tệ. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 101. Chọn Hán tự có phiên âm “rénmínbì” và nghĩa “nhân dân tệ”.
-A. 人民币
-B. 知道
-C. 杯
-D. 不用谢
-Đáp án: A
-Lời giải: 人民币 đọc là rénmínbì, nghĩa là nhân dân tệ. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 102. Chọn phiên âm đúng của “人民币” với nghĩa “nhân dân tệ”.
-A. zǎoshang
-B. rénmínbì
-C. qián
-D. pāi qiú
-Đáp án: B
-Lời giải: 人民币 đọc là rénmínbì, nghĩa là nhân dân tệ. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 103. Trong bài học, “步行街” có nghĩa là gì?
-A. bảo tàng
-B. tái ông mất ngựa; họa phúc khó lường
-C. tài xế, người lái xe
-D. phố đi bộ
-Đáp án: D
-Lời giải: 步行街 đọc là bùxíngjiē, nghĩa là phố đi bộ. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 104. Chọn Hán tự có phiên âm “bùxíngjiē” và nghĩa “phố đi bộ”.
-A. 中午
-B. 步行街
-C. 塞翁失马
-D. 电影院
-Đáp án: B
-Lời giải: 步行街 đọc là bùxíngjiē, nghĩa là phố đi bộ. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 105. Chọn phiên âm đúng của “步行街” với nghĩa “phố đi bộ”.
-A. xiǎo gēge
-B. yóujú
-C. yuǎn
-D. bùxíngjiē
-Đáp án: D
-Lời giải: 步行街 đọc là bùxíngjiē, nghĩa là phố đi bộ. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 106. Trong bài học, “河内” có nghĩa là gì?
-A. nửa đêm
-B. bà, cô; cách xưng hô lịch sự
-C. nhiều
-D. Hà Nội
-Đáp án: D
-Lời giải: 河内 đọc là Hénèi, nghĩa là Hà Nội. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 107. Chọn Hán tự có phiên âm “Hénèi” và nghĩa “Hà Nội”.
-A. 上午
-B. 河内
-C. 医院
-D. 巴亭广场
-Đáp án: B
-Lời giải: 河内 đọc là Hénèi, nghĩa là Hà Nội. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 108. Chọn phiên âm đúng của “河内” với nghĩa “Hà Nội”.
-A. Hénèi
-B. rénmínbì
-C. bú yòng xiè
-D. sījī
-Đáp án: A
-Lời giải: 河内 đọc là Hénèi, nghĩa là Hà Nội. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 109. Trong bài học, “巴亭广场” có nghĩa là gì?
-A. buổi tối
-B. khoảng, có lẽ
-C. Quảng trường Ba Đình
-D. đi, đến; hướng xa người nói
-Đáp án: C
-Lời giải: 巴亭广场 đọc là Bātíng Guǎngchǎng, nghĩa là Quảng trường Ba Đình. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 110. Chọn Hán tự có phiên âm “Bātíng Guǎngchǎng” và nghĩa “Quảng trường Ba Đình”.
-A. 小姐
-B. 宰相
-C. 巴亭广场
-D. 多
-Đáp án: C
-Lời giải: 巴亭广场 đọc là Bātíng Guǎngchǎng, nghĩa là Quảng trường Ba Đình. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 111. Chọn phiên âm đúng của “巴亭广场” với nghĩa “Quảng trường Ba Đình”.
-A. zuò
-B. huǒchēzhàn
-C. Bātíng Guǎngchǎng
-D. fàndiàn
-Đáp án: C
-Lời giải: 巴亭广场 đọc là Bātíng Guǎngchǎng, nghĩa là Quảng trường Ba Đình. Tham chiếu: PDF bài 4, trang 8.
-Độ khó: Dễ
-Câu 112. Trong bài học, “学校” có nghĩa là gì?
-A. nhân dân
-B. trợ từ; biểu thị thay đổi trạng thái trong bài
-C. công ty
-D. trường học
-Đáp án: D
-Lời giải: 学校 đọc là xuéxiào, nghĩa là trường học. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 113. Chọn Hán tự có phiên âm “xuéxiào” và nghĩa “trường học”.
-A. 学校
-B. 半夜
-C. 能
-D. 亡羊补牢
-Đáp án: A
-Lời giải: 学校 đọc là xuéxiào, nghĩa là trường học. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 114. Chọn phiên âm đúng của “学校” với nghĩa “trường học”.
-A. xuéxiào
-B. zàijiàn
-C. shǎo
-D. Xiǎo Niú
-Đáp án: A
-Lời giải: 学校 đọc là xuéxiào, nghĩa là trường học. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 115. Trong bài học, “公司” có nghĩa là gì?
-A. buổi trưa
-B. ở đâu, chỗ nào
-C. xe buýt
-D. công ty
-Đáp án: D
-Lời giải: 公司 đọc là gōngsī, nghĩa là công ty. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 116. Chọn Hán tự có phiên âm “gōngsī” và nghĩa “công ty”.
-A. 哪儿
-B. 公司
-C. 美女
-D. 小刘
-Đáp án: B
-Lời giải: 公司 đọc là gōngsī, nghĩa là công ty. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 117. Chọn phiên âm đúng của “公司” với nghĩa “công ty”.
-A. bú kèqi
-B. gūniang
-C. huǒchēzhàn
-D. gōngsī
-Đáp án: D
-Lời giải: 公司 đọc là gōngsī, nghĩa là công ty. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 118. Trong bài học, “医院” có nghĩa là gì?
-A. công viên
-B. trường học
-C. bệnh viện
-D. bưu điện
-Đáp án: C
-Lời giải: 医院 đọc là yīyuàn, nghĩa là bệnh viện. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 119. Chọn Hán tự có phiên âm “yīyuàn” và nghĩa “bệnh viện”.
-A. 多少
-B. 杯
-C. 医院
-D. 步行街
-Đáp án: C
-Lời giải: 医院 đọc là yīyuàn, nghĩa là bệnh viện. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 120. Chọn phiên âm đúng của “医院” với nghĩa “bệnh viện”.
-A. duōshao
-B. yīyuàn
-C. Bātíng Guǎngchǎng
-D. kèqi
-Đáp án: B
-Lời giải: 医院 đọc là yīyuàn, nghĩa là bệnh viện. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 121. Trong bài học, “超市” có nghĩa là gì?
-A. có thể, có khả năng
-B. quán ăn, nhà hàng
-C. siêu thị
-D. cô gái
-Đáp án: C
-Lời giải: 超市 đọc là chāoshì, nghĩa là siêu thị. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 122. Chọn Hán tự có phiên âm “chāoshì” và nghĩa “siêu thị”.
-A. 明白
-B. 师傅
-C. 超市
-D. 司机
-Đáp án: C
-Lời giải: 超市 đọc là chāoshì, nghĩa là siêu thị. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 123. Chọn phiên âm đúng của “超市” với nghĩa “siêu thị”.
-A. nǎr
-B. chēngchuán
-C. chāoshì
-D. wǎnshang
-Đáp án: C
-Lời giải: 超市 đọc là chāoshì, nghĩa là siêu thị. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 124. Trong bài học, “宿舍” có nghĩa là gì?
-A. xa
-B. không có gì; đáp lại lời cảm ơn
-C. ký túc xá
-D. ít
-Đáp án: C
-Lời giải: 宿舍 đọc là sùshè, nghĩa là ký túc xá. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 125. Chọn Hán tự có phiên âm “sùshè” và nghĩa “ký túc xá”.
-A. 上午
-B. 宿舍
-C. 客气
-D. 女士
-Đáp án: B
-Lời giải: 宿舍 đọc là sùshè, nghĩa là ký túc xá. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 126. Chọn phiên âm đúng của “宿舍” với nghĩa “ký túc xá”.
-A. bówùguǎn
-B. sùshè
-C. wǎnshang
-D. jìn
-Đáp án: B
-Lời giải: 宿舍 đọc là sùshè, nghĩa là ký túc xá. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 127. Trong bài học, “电影院” có nghĩa là gì?
-A. ít
-B. trường học
-C. rạp chiếu phim
-D. ký túc xá
-Đáp án: C
-Lời giải: 电影院 đọc là diànyǐngyuàn, nghĩa là rạp chiếu phim. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 128. Chọn Hán tự có phiên âm “diànyǐngyuàn” và nghĩa “rạp chiếu phim”.
-A. 感谢
-B. 坐
-C. 块
-D. 电影院
-Đáp án: D
-Lời giải: 电影院 đọc là diànyǐngyuàn, nghĩa là rạp chiếu phim. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 129. Chọn phiên âm đúng của “电影院” với nghĩa “rạp chiếu phim”.
-A. qù
-B. gōngsī
-C. nǎr
-D. diànyǐngyuàn
-Đáp án: D
-Lời giải: 电影院 đọc là diànyǐngyuàn, nghĩa là rạp chiếu phim. Tham chiếu: PDF bài 4, trang 9.
-Độ khó: Dễ
-Câu 130. Trong bài học, “明白” có nghĩa là gì?
-A. cảm ơn, cảm tạ
-B. trường học
-C. đến, tới; nhấn mạnh điểm đến
-D. hiểu rõ
-Đáp án: D
-Lời giải: 明白 đọc là míngbai, nghĩa là hiểu rõ. Tham chiếu: PDF bài 4, trang 10.
-Độ khó: Dễ
-Câu 131. Chọn Hán tự có phiên âm “míngbai” và nghĩa “hiểu rõ”.
-A. 哪儿
-B. 比
-C. 明白
-D. 电影院
-Đáp án: C
-Lời giải: 明白 đọc là míngbai, nghĩa là hiểu rõ. Tham chiếu: PDF bài 4, trang 10.
-Độ khó: Dễ
-Câu 132. Chọn phiên âm đúng của “明白” với nghĩa “hiểu rõ”.
-A. dìtiě
-B. míngbai
-C. Hénèi
-D. fànguǎnr
-Đáp án: B
-Lời giải: 明白 đọc là míngbai, nghĩa là hiểu rõ. Tham chiếu: PDF bài 4, trang 10.
-Độ khó: Dễ
-Câu 133. Trong bài học, “离” có nghĩa là gì?
-A. tìm; trả lại tiền thừa
-B. cách; chỉ khoảng cách
-C. tái ông mất ngựa; họa phúc khó lường
-D. cô gái
-Đáp án: B
-Lời giải: 离 đọc là lí, nghĩa là cách; chỉ khoảng cách. Tham chiếu: PDF bài 4, trang 11.
-Độ khó: Dễ
-Câu 134. Chọn Hán tự có phiên âm “lí” và nghĩa “cách; chỉ khoảng cách”.
-A. 小刘
-B. 离
-C. 饭店
-D. 钱
-Đáp án: B
-Lời giải: 离 đọc là lí, nghĩa là cách; chỉ khoảng cách. Tham chiếu: PDF bài 4, trang 11.
-Độ khó: Dễ
-Câu 135. Chọn phiên âm đúng của “离” với nghĩa “cách; chỉ khoảng cách”.
-A. lí
-B. bùxíngjiē
-C. gōngyuán
-D. kèqi
-Đáp án: A
-Lời giải: 离 đọc là lí, nghĩa là cách; chỉ khoảng cách. Tham chiếu: PDF bài 4, trang 11.
-Độ khó: Dễ
-Câu 136. Trong bài học, “找” có nghĩa là gì?
-A. tìm; trả lại tiền thừa
-B. đến, tới; nhấn mạnh điểm đến
-C. cô, tiểu thư; cách xưng hô trong bài
-D. bảo tàng
-Đáp án: A
-Lời giải: 找 đọc là zhǎo, nghĩa là tìm; trả lại tiền thừa. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 137. Chọn Hán tự có phiên âm “zhǎo” và nghĩa “tìm; trả lại tiền thừa”.
-A. 找
-B. 巴亭广场
-C. 邮局
-D. 学校
-Đáp án: A
-Lời giải: 找 đọc là zhǎo, nghĩa là tìm; trả lại tiền thừa. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 138. Chọn phiên âm đúng của “找” với nghĩa “tìm; trả lại tiền thừa”.
-A. xièxie
-B. gè
-C. guǎngchǎng
-D. zhǎo
-Đáp án: D
-Lời giải: 找 đọc là zhǎo, nghĩa là tìm; trả lại tiền thừa. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 139. Trong bài học, “多” có nghĩa là gì?
-A. đến; hướng về người nói
-B. tể tướng
-C. nhiều
-D. chín
-Đáp án: C
-Lời giải: 多 đọc là duō, nghĩa là nhiều. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 140. Chọn Hán tự có phiên âm “duō” và nghĩa “nhiều”.
-A. 公共汽车
-B. 晚上
-C. 多
-D. 塞翁失马
-Đáp án: C
-Lời giải: 多 đọc là duō, nghĩa là nhiều. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 141. Chọn phiên âm đúng của “多” với nghĩa “nhiều”.
-A. zài
-B. duō
-C. gōngsī
-D. kělè
-Đáp án: B
-Lời giải: 多 đọc là duō, nghĩa là nhiều. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 142. Trong bài học, “少” có nghĩa là gì?
-A. xe buýt
-B. ít
-C. cảm ơn, cảm tạ
-D. quán ăn, nhà hàng
-Đáp án: B
-Lời giải: 少 đọc là shǎo, nghĩa là ít. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 143. Chọn Hán tự có phiên âm “shǎo” và nghĩa “ít”.
-A. 公安局
-B. 博物馆
-C. 少
-D. 哪儿
-Đáp án: C
-Lời giải: 少 đọc là shǎo, nghĩa là ít. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 144. Chọn phiên âm đúng của “少” với nghĩa “ít”.
-A. miànbāo
-B. nǎlǐ
-C. wáng yáng bǔ láo
-D. shǎo
-Đáp án: D
-Lời giải: 少 đọc là shǎo, nghĩa là ít. Tham chiếu: PDF bài 4, trang 12.
-Độ khó: Dễ
-Câu 145. Trong bài học, “再” có nghĩa là gì?
-A. lại, thêm, nữa
-B. không cần cảm ơn, không có gì
-C. xa
-D. buổi sáng sớm
-Đáp án: A
-Lời giải: 再 đọc là zài, nghĩa là lại, thêm, nữa. Tham chiếu: PDF bài 4, trang 13.
-Độ khó: Dễ
-Câu 146. Chọn Hán tự có phiên âm “zài” và nghĩa “lại, thêm, nữa”.
-A. 再
-B. 电影院
-C. 饭店
-D. 小刘
-Đáp án: A
-Lời giải: 再 đọc là zài, nghĩa là lại, thêm, nữa. Tham chiếu: PDF bài 4, trang 13.
-Độ khó: Dễ
-Câu 147. Chọn phiên âm đúng của “再” với nghĩa “lại, thêm, nữa”.
-A. lí
-B. zài
-C. huǒchēzhàn
-D. wǎnshang
-Đáp án: B
-Lời giải: 再 đọc là zài, nghĩa là lại, thêm, nữa. Tham chiếu: PDF bài 4, trang 13.
-Độ khó: Dễ
-Câu 148. Trong bài học, “感谢” có nghĩa là gì?
-A. đến, tới; nhấn mạnh điểm đến
-B. buổi trưa
-C. có thể, có khả năng
-D. cảm ơn, cảm tạ
-Đáp án: D
-Lời giải: 感谢 đọc là gǎnxiè, nghĩa là cảm ơn, cảm tạ. Tham chiếu: PDF bài 4, trang 14.
-Độ khó: Dễ
-Câu 149. Chọn Hán tự có phiên âm “gǎnxiè” và nghĩa “cảm ơn, cảm tạ”.
-A. 超市
-B. 感谢
-C. 小哥哥
-D. 电影院
-Đáp án: B
-Lời giải: 感谢 đọc là gǎnxiè, nghĩa là cảm ơn, cảm tạ. Tham chiếu: PDF bài 4, trang 14.
-Độ khó: Dễ
-Câu 150. Chọn phiên âm đúng của “感谢” với nghĩa “cảm ơn, cảm tạ”.
-A. zǎixiàng
-B. rénmín
-C. yóujú
-D. gǎnxiè
-Đáp án: D
-Lời giải: 感谢 đọc là gǎnxiè, nghĩa là cảm ơn, cảm tạ. Tham chiếu: PDF bài 4, trang 14.
-Độ khó: Dễ
-Câu 151. Trong bài học, “不用谢” có nghĩa là gì?
-A. không cần cảm ơn, không có gì
-B. cốc, ly; lượng từ đồ uống
-C. cơ quan công an
-D. anh trai trẻ; cách gọi thân mật
-Đáp án: A
-Lời giải: 不用谢 đọc là bú yòng xiè, nghĩa là không cần cảm ơn, không có gì. Tham chiếu: PDF bài 4, trang 14.
-Độ khó: Dễ
-Câu 152. Chọn Hán tự có phiên âm “bú yòng xiè” và nghĩa “không cần cảm ơn, không có gì”.
-A. 不用谢
-B. 半夜
-C. 妹妹
-D. 面包
-Đáp án: A
-Lời giải: 不用谢 đọc là bú yòng xiè, nghĩa là không cần cảm ơn, không có gì. Tham chiếu: PDF bài 4, trang 14.
-Độ khó: Dễ
-Câu 153. Chọn phiên âm đúng của “不用谢” với nghĩa “không cần cảm ơn, không có gì”.
-A. bùxíngjiē
-B. chāoshì
-C. bú yòng xiè
-D. bówùguǎn
-Đáp án: C
-Lời giải: 不用谢 đọc là bú yòng xiè, nghĩa là không cần cảm ơn, không có gì. Tham chiếu: PDF bài 4, trang 14.
-Độ khó: Dễ
-Câu 154. Trong bài học, “客气” có nghĩa là gì?
-A. khách sáo
-B. nhà hàng; khách sạn tùy ngữ cảnh
-C. tể tướng
-D. cô gái
-Đáp án: A
-Lời giải: 客气 đọc là kèqi, nghĩa là khách sáo. Tham chiếu: PDF bài 4, trang 14.
-Độ khó: Dễ
-Câu 155. Chọn Hán tự có phiên âm “kèqi” và nghĩa “khách sáo”.
-A. 小姐
-B. 女士
-C. 亡羊补牢
-D. 客气
-Đáp án: D
-Lời giải: 客气 đọc là kèqi, nghĩa là khách sáo. Tham chiếu: PDF bài 4, trang 14.
-Độ khó: Dễ
-Câu 156. Chọn phiên âm đúng của “客气” với nghĩa “khách sáo”.
-A. kèqi
-B. gōnggòng qìchē
-C. rénmínbì
-D. dù lǐ
-Đáp án: A
-Lời giải: 客气 đọc là kèqi, nghĩa là khách sáo. Tham chiếu: PDF bài 4, trang 14.
-Độ khó: Dễ
-Câu 157. Trong bài học, “机场” có nghĩa là gì?
-A. tài xế, người lái xe
-B. Tiểu Lưu, tên nhân vật
-C. sân bay
-D. tái ông mất ngựa; họa phúc khó lường
-Đáp án: C
-Lời giải: 机场 đọc là jīchǎng, nghĩa là sân bay. Tham chiếu: PDF bài 4, trang 24.
-Độ khó: Dễ
-Câu 158. Chọn Hán tự có phiên âm “jīchǎng” và nghĩa “sân bay”.
-A. 上午
-B. 博物馆
-C. 机场
-D. 哪儿
-Đáp án: C
-Lời giải: 机场 đọc là jīchǎng, nghĩa là sân bay. Tham chiếu: PDF bài 4, trang 24.
-Độ khó: Dễ
-Câu 159. Chọn phiên âm đúng của “机场” với nghĩa “sân bay”.
-A. jīchǎng
-B. chēngchuán
-C. zhǎo
-D. shīfu
-Đáp án: A
-Lời giải: 机场 đọc là jīchǎng, nghĩa là sân bay. Tham chiếu: PDF bài 4, trang 24.
-Độ khó: Dễ
-Câu 160. Trong bài học, “火车站” có nghĩa là gì?
-A. công viên
-B. tiền
-C. ga tàu hỏa
-D. chống thuyền, chèo thuyền
-Đáp án: C
-Lời giải: 火车站 đọc là huǒchēzhàn, nghĩa là ga tàu hỏa. Tham chiếu: PDF bài 4, trang 24.
-Độ khó: Dễ
-Câu 161. Chọn Hán tự có phiên âm “huǒchēzhàn” và nghĩa “ga tàu hỏa”.
-A. 大概
-B. 火车站
-C. 比
-D. 半夜
-Đáp án: B
-Lời giải: 火车站 đọc là huǒchēzhàn, nghĩa là ga tàu hỏa. Tham chiếu: PDF bài 4, trang 24.
-Độ khó: Dễ
-Câu 162. Chọn phiên âm đúng của “火车站” với nghĩa “ga tàu hỏa”.
-A. gè
-B. yuǎn
-C. fànguǎnr
-D. huǒchēzhàn
-Đáp án: D
-Lời giải: 火车站 đọc là huǒchēzhàn, nghĩa là ga tàu hỏa. Tham chiếu: PDF bài 4, trang 24.
-Độ khó: Dễ
-Câu 163. Trong bài học, “博物馆” có nghĩa là gì?
-A. Quảng trường Ba Đình
-B. bác tài, thầy; cách gọi người thợ lành nghề
-C. bảo tàng
-D. buổi tối
-Đáp án: C
-Lời giải: 博物馆 đọc là bówùguǎn, nghĩa là bảo tàng. Tham chiếu: PDF bài 4, trang 24.
-Độ khó: Dễ
-Câu 164. Chọn Hán tự có phiên âm “bówùguǎn” và nghĩa “bảo tàng”.
-A. 博物馆
-B. 饭馆儿
-C. 妹妹
-D. 哪里
-Đáp án: A
-Lời giải: 博物馆 đọc là bówùguǎn, nghĩa là bảo tàng. Tham chiếu: PDF bài 4, trang 24.
-Độ khó: Dễ
-Câu 165. Chọn phiên âm đúng của “博物馆” với nghĩa “bảo tàng”.
-A. sùshè
-B. shīfu
-C. bówùguǎn
-D. liù
-Đáp án: C
-Lời giải: 博物馆 đọc là bówùguǎn, nghĩa là bảo tàng. Tham chiếu: PDF bài 4, trang 24.
-Độ khó: Dễ
-Câu 166. Trong bài học, “公园” có nghĩa là gì?
-A. chín
-B. hiểu rõ
-C. công viên
-D. rạp chiếu phim
-Đáp án: C
-Lời giải: 公园 đọc là gōngyuán, nghĩa là công viên. Tham chiếu: PDF bài 4, trang 24.
-Độ khó: Dễ
-Câu 167. Chọn Hán tự có phiên âm “gōngyuán” và nghĩa “công viên”.
-A. 超市
-B. 火车站
-C. 公园
-D. 坐
-Đáp án: C
-Lời giải: 公园 đọc là gōngyuán, nghĩa là công viên. Tham chiếu: PDF bài 4, trang 24.
-Độ khó: Dễ
-Câu 168. Chọn phiên âm đúng của “公园” với nghĩa “công viên”.
-A. zhīdào
-B. fànguǎnr
-C. duō
-D. gōngyuán
-Đáp án: D
-Lời giải: 公园 đọc là gōngyuán, nghĩa là công viên. Tham chiếu: PDF bài 4, trang 24.
-Độ khó: Dễ
-Câu 169. Trong bài học, “饭店” có nghĩa là gì?
-A. lại, thêm, nữa
-B. sáu
-C. mất dê mới sửa chuồng; sửa sai khi còn kịp
-D. nhà hàng; khách sạn tùy ngữ cảnh
-Đáp án: D
-Lời giải: 饭店 đọc là fàndiàn, nghĩa là nhà hàng; khách sạn tùy ngữ cảnh. Tham chiếu: PDF bài 4, trang 26.
-Độ khó: Dễ
-Câu 170. Chọn Hán tự có phiên âm “fàndiàn” và nghĩa “nhà hàng; khách sạn tùy ngữ cảnh”.
-A. 饭店
-B. 多少
-C. 电影院
-D. 超市
-Đáp án: A
-Lời giải: 饭店 đọc là fàndiàn, nghĩa là nhà hàng; khách sạn tùy ngữ cảnh. Tham chiếu: PDF bài 4, trang 26.
-Độ khó: Dễ
-Câu 171. Chọn phiên âm đúng của “饭店” với nghĩa “nhà hàng; khách sạn tùy ngữ cảnh”.
-A. zǎoshang
-B. wáng yáng bǔ láo
-C. fàndiàn
-D. zài
-Đáp án: C
-Lời giải: 饭店 đọc là fàndiàn, nghĩa là nhà hàng; khách sạn tùy ngữ cảnh. Tham chiếu: PDF bài 4, trang 26.
-Độ khó: Dễ
-Câu 172. Trong bài học, “杯” có nghĩa là gì?
-A. cốc, ly; lượng từ đồ uống
-B. tể tướng
-C. trường học
-D. ga tàu hỏa
-Đáp án: A
-Lời giải: 杯 đọc là bēi, nghĩa là cốc, ly; lượng từ đồ uống. Tham chiếu: PDF bài 4, trang 27.
-Độ khó: Dễ
-Câu 173. Chọn Hán tự có phiên âm “bēi” và nghĩa “cốc, ly; lượng từ đồ uống”.
-A. 美女
-B. 河内
-C. 杯
-D. 多少
-Đáp án: C
-Lời giải: 杯 đọc là bēi, nghĩa là cốc, ly; lượng từ đồ uống. Tham chiếu: PDF bài 4, trang 27.
-Độ khó: Dễ
-Câu 174. Chọn phiên âm đúng của “杯” với nghĩa “cốc, ly; lượng từ đồ uống”.
-A. zuò
-B. mèimei
-C. bēi
-D. bǐ
-Đáp án: C
-Lời giải: 杯 đọc là bēi, nghĩa là cốc, ly; lượng từ đồ uống. Tham chiếu: PDF bài 4, trang 27.
-Độ khó: Dễ
-Câu 175. Trong bài học, “可乐” có nghĩa là gì?
-A. bao nhiêu
-B. cốc, ly; lượng từ đồ uống
-C. bảo tàng
-D. nước cô la
-Đáp án: D
-Lời giải: 可乐 đọc là kělè, nghĩa là nước cô la. Tham chiếu: PDF bài 4, trang 27.
-Độ khó: Dễ
-Câu 176. Chọn Hán tự có phiên âm “kělè” và nghĩa “nước cô la”.
-A. 博物馆
-B. 可乐
-C. 来
-D. 六
-Đáp án: B
-Lời giải: 可乐 đọc là kělè, nghĩa là nước cô la. Tham chiếu: PDF bài 4, trang 27.
-Độ khó: Dễ
-Câu 177. Chọn phiên âm đúng của “可乐” với nghĩa “nước cô la”.
-A. qù
-B. wáng yáng bǔ láo
-C. kělè
-D. sùshè
-Đáp án: C
-Lời giải: 可乐 đọc là kělè, nghĩa là nước cô la. Tham chiếu: PDF bài 4, trang 27.
-Độ khó: Dễ
-Câu 178. Trong bài học, “个” có nghĩa là gì?
-A. siêu thị
-B. cái; lượng từ thông dụng
-C. trường học
-D. tái ông mất ngựa; họa phúc khó lường
-Đáp án: B
-Lời giải: 个 đọc là gè, nghĩa là cái; lượng từ thông dụng. Tham chiếu: PDF bài 4, trang 27.
-Độ khó: Dễ
-Câu 179. Chọn Hán tự có phiên âm “gè” và nghĩa “cái; lượng từ thông dụng”.
-A. 宿舍
-B. 找
-C. 博物馆
-D. 个
-Đáp án: D
-Lời giải: 个 đọc là gè, nghĩa là cái; lượng từ thông dụng. Tham chiếu: PDF bài 4, trang 27.
-Độ khó: Dễ
-Câu 180. Chọn phiên âm đúng của “个” với nghĩa “cái; lượng từ thông dụng”.
-A. dìtiě
-B. lí
-C. Rénmín Guǎngchǎng
-D. gè
-Đáp án: D
-Lời giải: 个 đọc là gè, nghĩa là cái; lượng từ thông dụng. Tham chiếu: PDF bài 4, trang 27.
-Độ khó: Dễ
-Câu 181. Trong bài học, “面包” có nghĩa là gì?
-A. bánh mì
-B. em gái
-C. Quảng trường Nhân Dân
-D. tìm; trả lại tiền thừa
-Đáp án: A
-Lời giải: 面包 đọc là miànbāo, nghĩa là bánh mì. Tham chiếu: PDF bài 4, trang 27.
-Độ khó: Dễ
-Câu 182. Chọn Hán tự có phiên âm “miànbāo” và nghĩa “bánh mì”.
-A. 厕所
-B. 面包
-C. 去
-D. 少
-Đáp án: B
-Lời giải: 面包 đọc là miànbāo, nghĩa là bánh mì. Tham chiếu: PDF bài 4, trang 27.
-Độ khó: Dễ
-Câu 183. Chọn phiên âm đúng của “面包” với nghĩa “bánh mì”.
-A. xièxie
-B. guǎngchǎng
-C. miànbāo
-D. shǎo
-Đáp án: C
-Lời giải: 面包 đọc là miànbāo, nghĩa là bánh mì. Tham chiếu: PDF bài 4, trang 27.
-Độ khó: Dễ
-Câu 184. Trong bài học, “瓶” có nghĩa là gì?
-A. sân bay
-B. ga tàu hỏa
-C. bác tài, thầy; cách gọi người thợ lành nghề
-D. chai; lượng từ đồ đựng trong chai
-Đáp án: D
-Lời giải: 瓶 đọc là píng, nghĩa là chai; lượng từ đồ đựng trong chai. Tham chiếu: PDF bài 4, trang 27.
-Độ khó: Dễ
-Câu 185. Chọn Hán tự có phiên âm “píng” và nghĩa “chai; lượng từ đồ đựng trong chai”.
-A. 司机
-B. 瓶
-C. 可乐
-D. 小牛
-Đáp án: B
-Lời giải: 瓶 đọc là píng, nghĩa là chai; lượng từ đồ đựng trong chai. Tham chiếu: PDF bài 4, trang 27.
-Độ khó: Dễ
-Câu 186. Chọn phiên âm đúng của “瓶” với nghĩa “chai; lượng từ đồ đựng trong chai”.
-A. píng
-B. lí
-C. zhǎo
-D. xiǎojiě
-Đáp án: A
-Lời giải: 瓶 đọc là píng, nghĩa là chai; lượng từ đồ đựng trong chai. Tham chiếu: PDF bài 4, trang 27.
-Độ khó: Dễ
-Câu 187. Trong bài học, “坐” có nghĩa là gì?
-A. đến, tới; nhấn mạnh điểm đến
-B. ngồi; đi bằng phương tiện
-C. buổi tối
-D. Quảng trường Ba Đình
-Đáp án: B
-Lời giải: 坐 đọc là zuò, nghĩa là ngồi; đi bằng phương tiện. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 188. Chọn Hán tự có phiên âm “zuò” và nghĩa “ngồi; đi bằng phương tiện”.
-A. 面包
-B. 再见
-C. 坐
-D. 公司
-Đáp án: C
-Lời giải: 坐 đọc là zuò, nghĩa là ngồi; đi bằng phương tiện. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 189. Chọn phiên âm đúng của “坐” với nghĩa “ngồi; đi bằng phương tiện”.
-A. zuò
-B. wǎnshang
-C. cèsuǒ
-D. zàijiàn
-Đáp án: A
-Lời giải: 坐 đọc là zuò, nghĩa là ngồi; đi bằng phương tiện. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 190. Trong bài học, “公共汽车” có nghĩa là gì?
-A. bác tài, thầy; cách gọi người thợ lành nghề
-B. cảm ơn, cảm tạ
-C. công ty
-D. xe buýt
-Đáp án: D
-Lời giải: 公共汽车 đọc là gōnggòng qìchē, nghĩa là xe buýt. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 191. Chọn Hán tự có phiên âm “gōnggòng qìchē” và nghĩa “xe buýt”.
-A. 公共汽车
-B. 厕所
-C. 明白
-D. 感谢
-Đáp án: A
-Lời giải: 公共汽车 đọc là gōnggòng qìchē, nghĩa là xe buýt. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 192. Chọn phiên âm đúng của “公共汽车” với nghĩa “xe buýt”.
-A. gōngyuán
-B. gōnggòng qìchē
-C. néng
-D. Hénèi
-Đáp án: B
-Lời giải: 公共汽车 đọc là gōnggòng qìchē, nghĩa là xe buýt. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 193. Trong bài học, “地铁” có nghĩa là gì?
-A. cốc, ly; lượng từ đồ uống
-B. tàu điện ngầm
-C. vỗ bóng, đập bóng
-D. buổi chiều
-Đáp án: B
-Lời giải: 地铁 đọc là dìtiě, nghĩa là tàu điện ngầm. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 194. Chọn Hán tự có phiên âm “dìtiě” và nghĩa “tàu điện ngầm”.
-A. 邮局
-B. 地铁
-C. 多少
-D. 哪里
-Đáp án: B
-Lời giải: 地铁 đọc là dìtiě, nghĩa là tàu điện ngầm. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 195. Chọn phiên âm đúng của “地铁” với nghĩa “tàu điện ngầm”.
-A. gōngyuán
-B. cèsuǒ
-C. chēngchuán
-D. dìtiě
-Đáp án: D
-Lời giải: 地铁 đọc là dìtiě, nghĩa là tàu điện ngầm. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 196. Trong bài học, “公安局” có nghĩa là gì?
-A. sân bay
-B. rạp chiếu phim
-C. cơ quan công an
-D. đi, đến; hướng xa người nói
-Đáp án: C
-Lời giải: 公安局 đọc là gōng'ānjú, nghĩa là cơ quan công an. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 197. Chọn Hán tự có phiên âm “gōng'ānjú” và nghĩa “cơ quan công an”.
-A. 公安局
-B. 近
-C. 公共汽车
-D. 饭店
-Đáp án: A
-Lời giải: 公安局 đọc là gōng'ānjú, nghĩa là cơ quan công an. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 198. Chọn phiên âm đúng của “公安局” với nghĩa “cơ quan công an”.
-A. fànguǎnr
-B. gōng'ānjú
-C. néng
-D. kèqi
-Đáp án: B
-Lời giải: 公安局 đọc là gōng'ānjú, nghĩa là cơ quan công an. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 199. Trong bài học, “邮局” có nghĩa là gì?
-A. quảng trường
-B. tài xế, người lái xe
-C. quán ăn, nhà hàng
-D. bưu điện
-Đáp án: D
-Lời giải: 邮局 đọc là yóujú, nghĩa là bưu điện. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 200. Chọn Hán tự có phiên âm “yóujú” và nghĩa “bưu điện”.
-A. 邮局
-B. 公司
-C. 近
-D. 电影院
-Đáp án: A
-Lời giải: 邮局 đọc là yóujú, nghĩa là bưu điện. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 201. Chọn phiên âm đúng của “邮局” với nghĩa “bưu điện”.
-A. Bātíng Guǎngchǎng
-B. yóujú
-C. zǎixiàng
-D. Xiǎo Liú
-Đáp án: B
-Lời giải: 邮局 đọc là yóujú, nghĩa là bưu điện. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 202. Trong bài học, “饭馆儿” có nghĩa là gì?
-A. bánh mì
-B. Hà Nội
-C. quán ăn, nhà hàng
-D. bảo tàng
-Đáp án: C
-Lời giải: 饭馆儿 đọc là fànguǎnr, nghĩa là quán ăn, nhà hàng. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 203. Chọn Hán tự có phiên âm “fànguǎnr” và nghĩa “quán ăn, nhà hàng”.
-A. 饭馆儿
-B. 大概
-C. 机场
-D. 离
-Đáp án: A
-Lời giải: 饭馆儿 đọc là fànguǎnr, nghĩa là quán ăn, nhà hàng. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 204. Chọn phiên âm đúng của “饭馆儿” với nghĩa “quán ăn, nhà hàng”.
-A. yīyuàn
-B. fànguǎnr
-C. miànbāo
-D. liù
-Đáp án: B
-Lời giải: 饭馆儿 đọc là fànguǎnr, nghĩa là quán ăn, nhà hàng. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 205. Trong bài học, “厕所” có nghĩa là gì?
-A. nhà vệ sinh
-B. Quảng trường Nhân Dân
-C. không có gì; đáp lại lời cảm ơn
-D. khách sáo
-Đáp án: A
-Lời giải: 厕所 đọc là cèsuǒ, nghĩa là nhà vệ sinh. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 206. Chọn Hán tự có phiên âm “cèsuǒ” và nghĩa “nhà vệ sinh”.
-A. 美女
-B. 厕所
-C. 不用谢
-D. 面包
-Đáp án: B
-Lời giải: 厕所 đọc là cèsuǒ, nghĩa là nhà vệ sinh. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 207. Chọn phiên âm đúng của “厕所” với nghĩa “nhà vệ sinh”.
-A. bēi
-B. zuò
-C. pāi qiú
-D. cèsuǒ
-Đáp án: D
-Lời giải: 厕所 đọc là cèsuǒ, nghĩa là nhà vệ sinh. Tham chiếu: PDF bài 4, trang 28.
-Độ khó: Dễ
-Câu 208. Trong bài học, “大概” có nghĩa là gì?
-A. không cần cảm ơn, không có gì
-B. ở đâu, chỗ nào
-C. khoảng, có lẽ
-D. quảng trường
-Đáp án: C
-Lời giải: 大概 đọc là dàgài, nghĩa là khoảng, có lẽ. Tham chiếu: PDF bài 4, trang 29.
-Độ khó: Dễ
-Câu 209. Chọn Hán tự có phiên âm “dàgài” và nghĩa “khoảng, có lẽ”.
-A. 大概
-B. 师傅
-C. 亡羊补牢
-D. 厕所
-Đáp án: A
-Lời giải: 大概 đọc là dàgài, nghĩa là khoảng, có lẽ. Tham chiếu: PDF bài 4, trang 29.
-Độ khó: Dễ
-Câu 210. Chọn phiên âm đúng của “大概” với nghĩa “khoảng, có lẽ”.
-A. bùxíngjiē
-B. píng
-C. dàgài
-D. shīfu
-Đáp án: C
-Lời giải: 大概 đọc là dàgài, nghĩa là khoảng, có lẽ. Tham chiếu: PDF bài 4, trang 29.
-Độ khó: Dễ
-Câu 211. Trong bài học, “塞翁失马” có nghĩa là gì?
-A. tái ông mất ngựa; họa phúc khó lường
-B. ngồi; đi bằng phương tiện
-C. tiền
-D. tìm; trả lại tiền thừa
-Đáp án: A
-Lời giải: 塞翁失马 đọc là sài wēng shī mǎ, nghĩa là tái ông mất ngựa; họa phúc khó lường. Tham chiếu: PDF bài 4, trang 30.
-Độ khó: Dễ
-Câu 212. Chọn Hán tự có phiên âm “sài wēng shī mǎ” và nghĩa “tái ông mất ngựa; họa phúc khó lường”.
-A. 塞翁失马
-B. 少
-C. 宰相
+Lời giải: 离 đọc là lí, nghĩa là Cách, cách xa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 158.
+Độ khó: Dễ
+Câu 26. Chọn Hán tự có phiên âm “lí” và nghĩa “Cách, cách xa”.
+A. 离
+B. 小姐姐
+C. 钱
 D. 中午
 Đáp án: A
-Lời giải: 塞翁失马 đọc là sài wēng shī mǎ, nghĩa là tái ông mất ngựa; họa phúc khó lường. Tham chiếu: PDF bài 4, trang 30.
+Lời giải: 离 đọc là lí, nghĩa là Cách, cách xa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 158.
 Độ khó: Dễ
-Câu 213. Chọn phiên âm đúng của “塞翁失马” với nghĩa “tái ông mất ngựa; họa phúc khó lường”.
-A. sài wēng shī mǎ
-B. wáng yáng bǔ láo
-C. bùxíngjiē
-D. zǎixiàng
+Câu 27. Trong bài học, “找” có nghĩa là gì?
+A. Tìm, trả lại tiền thừa
+B. Đồng, tệ
+C. Biết
+D. Trợ từ chỉ sự hoàn thành hoặc thay đổi
 Đáp án: A
-Lời giải: 塞翁失马 đọc là sài wēng shī mǎ, nghĩa là tái ông mất ngựa; họa phúc khó lường. Tham chiếu: PDF bài 4, trang 30.
+Lời giải: 找 đọc là zhǎo, nghĩa là Tìm, trả lại tiền thừa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 159.
 Độ khó: Dễ
-Câu 214. Trong bài học, “亡羊补牢” có nghĩa là gì?
-A. bà, cô; cách xưng hô lịch sự
-B. mất dê mới sửa chuồng; sửa sai khi còn kịp
-C. ở đâu, chỗ nào
-D. xa
-Đáp án: B
-Lời giải: 亡羊补牢 đọc là wáng yáng bǔ láo, nghĩa là mất dê mới sửa chuồng; sửa sai khi còn kịp. Tham chiếu: PDF bài 4, trang 30.
-Độ khó: Dễ
-Câu 215. Chọn Hán tự có phiên âm “wáng yáng bǔ láo” và nghĩa “mất dê mới sửa chuồng; sửa sai khi còn kịp”.
-A. 公司
-B. 六
-C. 不客气
-D. 亡羊补牢
+Câu 28. Chọn Hán tự có phiên âm “zhǎo” và nghĩa “Tìm, trả lại tiền thừa”.
+A. 不用谢
+B. 女士
+C. 多
+D. 找
 Đáp án: D
-Lời giải: 亡羊补牢 đọc là wáng yáng bǔ láo, nghĩa là mất dê mới sửa chuồng; sửa sai khi còn kịp. Tham chiếu: PDF bài 4, trang 30.
+Lời giải: 找 đọc là zhǎo, nghĩa là Tìm, trả lại tiền thừa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 159.
 Độ khó: Dễ
-Câu 216. Chọn phiên âm đúng của “亡羊补牢” với nghĩa “mất dê mới sửa chuồng; sửa sai khi còn kịp”.
-A. Rénmín Guǎngchǎng
-B. gōngyuán
-C. wáng yáng bǔ láo
-D. huǒchēzhàn
+Câu 29. Trong bài học, “多少” có nghĩa là gì?
+A. Nhiều
+B. Cô gái trẻ (thân mật)
+C. Bao nhiêu
+D. Xa
 Đáp án: C
-Lời giải: 亡羊补牢 đọc là wáng yáng bǔ láo, nghĩa là mất dê mới sửa chuồng; sửa sai khi còn kịp. Tham chiếu: PDF bài 4, trang 30.
+Lời giải: 多少 đọc là duōshao, nghĩa là Bao nhiêu. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 160.
 Độ khó: Dễ
-Câu 217. Trong bài học, “宰相” có nghĩa là gì?
-A. buổi sáng sớm
-B. tể tướng
-C. rạp chiếu phim
-D. đến; hướng về người nói
-Đáp án: B
-Lời giải: 宰相 đọc là zǎixiàng, nghĩa là tể tướng. Tham chiếu: PDF bài 4, trang 30.
-Độ khó: Dễ
-Câu 218. Chọn Hán tự có phiên âm “zǎixiàng” và nghĩa “tể tướng”.
-A. 宰相
-B. 饭馆儿
-C. 厕所
-D. 远
-Đáp án: A
-Lời giải: 宰相 đọc là zǎixiàng, nghĩa là tể tướng. Tham chiếu: PDF bài 4, trang 30.
-Độ khó: Dễ
-Câu 219. Chọn phiên âm đúng của “宰相” với nghĩa “tể tướng”.
-A. kělè
-B. yóujú
-C. dù lǐ
-D. zǎixiàng
-Đáp án: D
-Lời giải: 宰相 đọc là zǎixiàng, nghĩa là tể tướng. Tham chiếu: PDF bài 4, trang 30.
-Độ khó: Dễ
-Câu 220. Trong bài học, “肚里” có nghĩa là gì?
-A. bảo tàng
-B. trong bụng
-C. em gái
-D. Quảng trường Ba Đình
-Đáp án: B
-Lời giải: 肚里 đọc là dù lǐ, nghĩa là trong bụng. Tham chiếu: PDF bài 4, trang 30.
-Độ khó: Dễ
-Câu 221. Chọn Hán tự có phiên âm “dù lǐ” và nghĩa “trong bụng”.
-A. 肚里
-B. 司机
-C. 人民广场
-D. 电影院
-Đáp án: A
-Lời giải: 肚里 đọc là dù lǐ, nghĩa là trong bụng. Tham chiếu: PDF bài 4, trang 30.
-Độ khó: Dễ
-Câu 222. Chọn phiên âm đúng của “肚里” với nghĩa “trong bụng”.
-A. fàndiàn
-B. dù lǐ
-C. xiǎo gēge
-D. gōngsī
-Đáp án: B
-Lời giải: 肚里 đọc là dù lǐ, nghĩa là trong bụng. Tham chiếu: PDF bài 4, trang 30.
-Độ khó: Dễ
-Câu 223. Trong bài học, “能” có nghĩa là gì?
-A. ít
-B. tìm; trả lại tiền thừa
-C. có thể, có khả năng
-D. buổi chiều
-Đáp án: C
-Lời giải: 能 đọc là néng, nghĩa là có thể, có khả năng. Tham chiếu: PDF bài 4, trang 30.
-Độ khó: Dễ
-Câu 224. Chọn Hán tự có phiên âm “néng” và nghĩa “có thể, có khả năng”.
-A. 谢谢
-B. 能
-C. 明白
-D. 晚上
-Đáp án: B
-Lời giải: 能 đọc là néng, nghĩa là có thể, có khả năng. Tham chiếu: PDF bài 4, trang 30.
-Độ khó: Dễ
-Câu 225. Chọn phiên âm đúng của “能” với nghĩa “có thể, có khả năng”.
-A. zhōngwǔ
-B. néng
-C. míngbai
-D. jiǔ
-Đáp án: B
-Lời giải: 能 đọc là néng, nghĩa là có thể, có khả năng. Tham chiếu: PDF bài 4, trang 30.
-Độ khó: Dễ
-Câu 226. Trong bài học, “撑船” có nghĩa là gì?
-A. đồng, tệ; đơn vị tiền trong khẩu ngữ
-B. chống thuyền, chèo thuyền
-C. lại, thêm, nữa
-D. chai; lượng từ đồ đựng trong chai
-Đáp án: B
-Lời giải: 撑船 đọc là chēngchuán, nghĩa là chống thuyền, chèo thuyền. Tham chiếu: PDF bài 4, trang 30.
-Độ khó: Dễ
-Câu 227. Chọn Hán tự có phiên âm “chēngchuán” và nghĩa “chống thuyền, chèo thuyền”.
-A. 瓶
+Câu 30. Chọn Hán tự có phiên âm “duōshao” và nghĩa “Bao nhiêu”.
+A. 哪儿
 B. 再见
-C. 宰相
-D. 撑船
-Đáp án: D
-Lời giải: 撑船 đọc là chēngchuán, nghĩa là chống thuyền, chèo thuyền. Tham chiếu: PDF bài 4, trang 30.
-Độ khó: Dễ
-Câu 228. Chọn phiên âm đúng của “撑船” với nghĩa “chống thuyền, chèo thuyền”.
-A. chēngchuán
-B. kělè
-C. lí
-D. bówùguǎn
-Đáp án: A
-Lời giải: 撑船 đọc là chēngchuán, nghĩa là chống thuyền, chèo thuyền. Tham chiếu: PDF bài 4, trang 30.
-Độ khó: Dễ
-Câu 229. Trong bài học, “小牛” có nghĩa là gì?
-A. ở đâu, chỗ nào
-B. Tiểu Lưu, tên nhân vật
-C. chín
-D. Tiểu Ngưu, tên nhân vật
-Đáp án: D
-Lời giải: 小牛 đọc là Xiǎo Niú, nghĩa là Tiểu Ngưu, tên nhân vật. Tham chiếu: PDF bài 4, trang 31.
-Độ khó: Dễ
-Câu 230. Chọn Hán tự có phiên âm “Xiǎo Niú” và nghĩa “Tiểu Ngưu, tên nhân vật”.
-A. 小牛
-B. 超市
-C. 河内
-D. 感谢
-Đáp án: A
-Lời giải: 小牛 đọc là Xiǎo Niú, nghĩa là Tiểu Ngưu, tên nhân vật. Tham chiếu: PDF bài 4, trang 31.
-Độ khó: Dễ
-Câu 231. Chọn phiên âm đúng của “小牛” với nghĩa “Tiểu Ngưu, tên nhân vật”.
-A. Xiǎo Liú
-B. Xiǎo Niú
-C. píng
-D. wǎnshang
-Đáp án: B
-Lời giải: 小牛 đọc là Xiǎo Niú, nghĩa là Tiểu Ngưu, tên nhân vật. Tham chiếu: PDF bài 4, trang 31.
-Độ khó: Dễ
-Câu 232. Trong bài học, “小刘” có nghĩa là gì?
-A. tàu điện ngầm
-B. ở đâu
-C. quảng trường
-D. Tiểu Lưu, tên nhân vật
-Đáp án: D
-Lời giải: 小刘 đọc là Xiǎo Liú, nghĩa là Tiểu Lưu, tên nhân vật. Tham chiếu: PDF bài 4, trang 31.
-Độ khó: Dễ
-Câu 233. Chọn Hán tự có phiên âm “Xiǎo Liú” và nghĩa “Tiểu Lưu, tên nhân vật”.
-A. 半夜
-B. 能
-C. 小刘
-D. 公司
+C. 多少
+D. 再
 Đáp án: C
-Lời giải: 小刘 đọc là Xiǎo Liú, nghĩa là Tiểu Lưu, tên nhân vật. Tham chiếu: PDF bài 4, trang 31.
+Lời giải: 多少 đọc là duōshao, nghĩa là Bao nhiêu. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 160.
 Độ khó: Dễ
-Câu 234. Chọn phiên âm đúng của “小刘” với nghĩa “Tiểu Lưu, tên nhân vật”.
-A. zǎoshang
-B. Xiǎo Liú
-C. guǎngchǎng
-D. fànguǎnr
-Đáp án: B
-Lời giải: 小刘 đọc là Xiǎo Liú, nghĩa là Tiểu Lưu, tên nhân vật. Tham chiếu: PDF bài 4, trang 31.
-Độ khó: Dễ
-Câu 235. Trong bài học, “拍球” có nghĩa là gì?
-A. Quảng trường Nhân Dân
-B. Tiểu Lưu, tên nhân vật
-C. ít
-D. vỗ bóng, đập bóng
-Đáp án: D
-Lời giải: 拍球 đọc là pāi qiú, nghĩa là vỗ bóng, đập bóng. Tham chiếu: PDF bài 4, trang 31.
-Độ khó: Dễ
-Câu 236. Chọn Hán tự có phiên âm “pāi qiú” và nghĩa “vỗ bóng, đập bóng”.
-A. 拍球
-B. 步行街
-C. 公共汽车
-D. 撑船
-Đáp án: A
-Lời giải: 拍球 đọc là pāi qiú, nghĩa là vỗ bóng, đập bóng. Tham chiếu: PDF bài 4, trang 31.
-Độ khó: Dễ
-Câu 237. Chọn phiên âm đúng của “拍球” với nghĩa “vỗ bóng, đập bóng”.
-A. pāi qiú
-B. jìn
-C. bú kèqi
-D. shǎo
-Đáp án: A
-Lời giải: 拍球 đọc là pāi qiú, nghĩa là vỗ bóng, đập bóng. Tham chiếu: PDF bài 4, trang 31.
-Độ khó: Dễ
-Câu 238. Trong bài học, “九” có nghĩa là gì?
-A. chín
-B. Tiểu Ngưu, tên nhân vật
-C. gần
-D. tài xế, người lái xe
-Đáp án: A
-Lời giải: 九 đọc là jiǔ, nghĩa là chín. Tham chiếu: PDF bài 4, trang 31.
-Độ khó: Dễ
-Câu 239. Chọn Hán tự có phiên âm “jiǔ” và nghĩa “chín”.
-A. 早上
-B. 医院
-C. 九
-D. 公安局
+Câu 31. Trong bài học, “钱” có nghĩa là gì?
+A. Tài xế
+B. Buổi chiều
+C. Tiền
+D. Buổi tối
 Đáp án: C
-Lời giải: 九 đọc là jiǔ, nghĩa là chín. Tham chiếu: PDF bài 4, trang 31.
+Lời giải: 钱 đọc là qián, nghĩa là Tiền. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 161.
 Độ khó: Dễ
-Câu 240. Chọn phiên âm đúng của “九” với nghĩa “chín”.
-A. shàngwǔ
-B. zǎixiàng
-C. dàgài
-D. jiǔ
-Đáp án: D
-Lời giải: 九 đọc là jiǔ, nghĩa là chín. Tham chiếu: PDF bài 4, trang 31.
-Độ khó: Dễ
-Câu 241. Trong bài học, “六” có nghĩa là gì?
-A. sáu
-B. xe buýt
-C. người đẹp, cô gái đẹp
-D. ngồi; đi bằng phương tiện
-Đáp án: A
-Lời giải: 六 đọc là liù, nghĩa là sáu. Tham chiếu: PDF bài 4, trang 31.
-Độ khó: Dễ
-Câu 242. Chọn Hán tự có phiên âm “liù” và nghĩa “sáu”.
-A. 六
-B. 撑船
-C. 块
-D. 宰相
-Đáp án: A
-Lời giải: 六 đọc là liù, nghĩa là sáu. Tham chiếu: PDF bài 4, trang 31.
-Độ khó: Dễ
-Câu 243. Chọn phiên âm đúng của “六” với nghĩa “sáu”.
-A. liù
-B. Bātíng Guǎngchǎng
-C. xièxie
-D. bówùguǎn
-Đáp án: A
-Lời giải: 六 đọc là liù, nghĩa là sáu. Tham chiếu: PDF bài 4, trang 31.
-Độ khó: Dễ
-Câu 244. Trong bài học, “比” có nghĩa là gì?
-A. bác tài, thầy; cách gọi người thợ lành nghề
-B. ngồi; đi bằng phương tiện
-C. so với; dùng trong so sánh
-D. đến, tới; nhấn mạnh điểm đến
-Đáp án: C
-Lời giải: 比 đọc là bǐ, nghĩa là so với; dùng trong so sánh. Tham chiếu: PDF bài 4, trang 31.
-Độ khó: Dễ
-Câu 245. Chọn Hán tự có phiên âm “bǐ” và nghĩa “so với; dùng trong so sánh”.
-A. 坐
+Câu 32. Chọn Hán tự có phiên âm “qián” và nghĩa “Tiền”.
+A. 感谢
 B. 中午
-C. 机场
-D. 比
+C. 司机
+D. 钱
 Đáp án: D
-Lời giải: 比 đọc là bǐ, nghĩa là so với; dùng trong so sánh. Tham chiếu: PDF bài 4, trang 31.
+Lời giải: 钱 đọc là qián, nghĩa là Tiền. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 161.
 Độ khó: Dễ
-Câu 246. Chọn phiên âm đúng của “比” với nghĩa “so với; dùng trong so sánh”.
-A. cèsuǒ
-B. chēngchuán
-C. dù lǐ
-D. bǐ
+Câu 33. Trong bài học, “块” có nghĩa là gì?
+A. Bác tài, thầy
+B. Bao nhiêu
+C. Công ty
+D. Đồng, tệ
 Đáp án: D
-Lời giải: 比 đọc là bǐ, nghĩa là so với; dùng trong so sánh. Tham chiếu: PDF bài 4, trang 31.
+Lời giải: 块 đọc là kuài, nghĩa là Đồng, tệ. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 162.
 Độ khó: Dễ
-Câu 247. Chọn câu hỏi “Bạn đi đâu?”.
-A. 你哪儿去的？
-B. 你去哪儿？
-C. 哪儿你钱？
-D. 你多少去？
+Câu 34. Chọn Hán tự có phiên âm “kuài” và nghĩa “Đồng, tệ”.
+A. 广场
+B. 块
+C. 哪里
+D. 上午
 Đáp án: B
-Lời giải: Mẫu hỏi điểm đến là 你去哪儿.
-Độ khó: Vừa
-Câu 248. Điền từ: 人民广场远___远？
-A. 没
-B. 吗
-C. 不
-D. 的
-Đáp án: C
-Lời giải: Câu hỏi chính phản lặp tính từ: 远不远.
-Độ khó: Vừa
-Câu 249. Đổi 你有名片吗？ sang câu hỏi chính phản.
-A. 你没不有名片？
-B. 你有不有名片？
-C. 你有没有名片？
-D. 你有名片不吗？
-Đáp án: C
-Lời giải: 有 có dạng chính phản đặc biệt là 有没有.
-Độ khó: Vừa
-Câu 250. Chọn cách hỏi giá.
-A. 哪儿钱？
-B. 什么远？
-C. 谁钱？
-D. 多少钱？
+Lời giải: 块 đọc là kuài, nghĩa là Đồng, tệ. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 162.
+Độ khó: Dễ
+Câu 35. Trong bài học, “多” có nghĩa là gì?
+A. Sáng sớm
+B. Nhiều
+C. Biết
+D. Đến
+Đáp án: B
+Lời giải: 多 đọc là duō, nghĩa là Nhiều. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 163.
+Độ khó: Dễ
+Câu 36. Chọn Hán tự có phiên âm “duō” và nghĩa “Nhiều”.
+A. 姑娘
+B. 早上
+C. 中午
+D. 多
 Đáp án: D
-Lời giải: 多少 hỏi số lượng, 多少钱 hỏi bao nhiêu tiền.
-Độ khó: Vừa
-Câu 251. “不远，很近。” nghĩa là gì?
-A. Đã tới, rất xa.
-B. Không biết giá.
-C. Không xa, rất gần.
-D. Rất xa, không gần.
-Đáp án: C
-Lời giải: 远 là xa, 近 là gần.
-Độ khó: Vừa
-Câu 252. Trong bài khóa 2, tiền đi xe là bao nhiêu?
-A. 39 tệ
-B. 29 tệ
-C. 19 tệ
-D. 9 tệ
-Đáp án: B
-Lời giải: Bài khóa ghi 二十九块.
-Độ khó: Vừa
-Câu 253. Đáp lại 谢谢 bằng câu nào?
-A. 不客气。
-B. 不知道。
-C. 我很忙。
-D. 对不起。
+Lời giải: 多 đọc là duō, nghĩa là Nhiều. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 163.
+Độ khó: Dễ
+Câu 37. Trong bài học, “少” có nghĩa là gì?
+A. Ít
+B. Cô, tiểu thư
+C. Buổi tối
+D. Buổi trưa
 Đáp án: A
-Lời giải: 不客气 là lời đáp lịch sự khi được cảm ơn.
-Độ khó: Vừa
-Câu 254. “知道了” trong bài thể hiện điều gì?
-A. Đang hỏi họ.
-B. Bây giờ đã biết, đã hiểu.
-C. Đã ăn no.
-D. Chưa từng biết.
-Đáp án: B
-Lời giải: 了 biểu thị sự thay đổi sang trạng thái đã biết.
-Độ khó: Vừa
-Câu 255. Chọn từ dùng cho chuyển động hướng về người nói.
-A. 钱
-B. 去
-C. 来
-D. 远
+Lời giải: 少 đọc là shǎo, nghĩa là Ít. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 164.
+Độ khó: Dễ
+Câu 38. Chọn Hán tự có phiên âm “shǎo” và nghĩa “Ít”.
+A. 早上
+B. 中午
+C. 少
+D. 不客气
 Đáp án: C
-Lời giải: 来 là đến về phía người nói, 去 là đi ra xa phía người nói.
-Độ khó: Vừa
-Câu 256. Điền từ: 我家___学校很近。
+Lời giải: 少 đọc là shǎo, nghĩa là Ít. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 164.
+Độ khó: Dễ
+Câu 39. Trong bài học, “再” có nghĩa là gì?
+A. Lại, thêm lần nữa
+B. Nhiều
+C. Tìm, trả lại tiền thừa
+D. Trường học
+Đáp án: A
+Lời giải: 再 đọc là zài, nghĩa là Lại, thêm lần nữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 165.
+Độ khó: Dễ
+Câu 40. Chọn Hán tự có phiên âm “zài” và nghĩa “Lại, thêm lần nữa”.
 A. 再
-B. 到
-C. 离
-D. 多少
+B. 下午
+C. 早上
+D. 医院
+Đáp án: A
+Lời giải: 再 đọc là zài, nghĩa là Lại, thêm lần nữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 165.
+Độ khó: Dễ
+Câu 41. Trong bài học, “再见” có nghĩa là gì?
+A. Đâu, ở đâu
+B. Chàng trai trẻ (thân mật)
+C. Tạm biệt
+D. Sáng sớm
 Đáp án: C
-Lời giải: Mẫu khoảng cách: A 离 B + tính từ.
-Độ khó: Vừa
-Câu 257. Chọn cách đọc số 53.
-A. 三十五
-B. 五百三
-C. 十五三
-D. 五十三
-Đáp án: D
-Lời giải: 五十 là năm mươi, thêm 三 thành năm mươi ba.
-Độ khó: Vừa
-Câu 258. Chọn cách đọc số 2009.
-A. 二千零九
-B. 二百九
-C. 二十九
-D. 二千九百
+Lời giải: 再见 đọc là zàijiàn, nghĩa là Tạm biệt. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 166.
+Độ khó: Dễ
+Câu 42. Chọn Hán tự có phiên âm “zàijiàn” và nghĩa “Tạm biệt”.
+A. 女士
+B. 去
+C. 再见
+D. 学校
+Đáp án: C
+Lời giải: 再见 đọc là zàijiàn, nghĩa là Tạm biệt. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 166.
+Độ khó: Dễ
+Câu 43. Trong bài học, “谢谢” có nghĩa là gì?
+A. Cảm ơn
+B. Buổi tối
+C. Tạm biệt
+D. Trợ từ chỉ sự hoàn thành hoặc thay đổi
 Đáp án: A
-Lời giải: 零 biểu thị phần hàng bị khuyết trong số hai nghìn không trăm linh chín.
-Độ khó: Vừa
-Câu 259. Chọn câu hỏi chính phản đúng.
-A. 你是不是中国人？
-B. 你是中国人是不是吗？
-C. 你不中国人是？
-D. 你是不中国人是？
+Lời giải: 谢谢 đọc là xièxie, nghĩa là Cảm ơn. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 167.
+Độ khó: Dễ
+Câu 44. Chọn Hán tự có phiên âm “xièxie” và nghĩa “Cảm ơn”.
+A. 谢谢
+B. 人民
+C. 电影院
+D. 司机
 Đáp án: A
-Lời giải: Động từ 是 được lặp thành 是不是.
-Độ khó: Vừa
-Câu 260. “我坐地铁去学校。” nghĩa là gì?
-A. Tôi đi máy bay đến trường.
-B. Tôi ở trường đọc sách.
-C. Tôi mua vé xem phim.
-D. Tôi đi tàu điện ngầm đến trường.
-Đáp án: D
-Lời giải: 坐地铁 là đi bằng tàu điện ngầm.
-Độ khó: Vừa
-Câu 261. Trong bài vè, 小牛 đánh chín quả, 小刘 đánh sáu quả. 小牛 nhiều hơn mấy quả?
-A. Ba quả
-B. Sáu quả
-C. Chín quả
-D. Hai quả
+Lời giải: 谢谢 đọc là xièxie, nghĩa là Cảm ơn. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 167.
+Độ khó: Dễ
+Câu 45. Trong bài học, “不客气” có nghĩa là gì?
+A. Không có gì
+B. Cách, cách xa
+C. Xa
+D. Cô, tiểu thư
 Đáp án: A
-Lời giải: 九减六等于三: 9 trừ 6 bằng 3.
-Độ khó: Vừa
-Câu 262. Tục ngữ nào nói về việc kịp thời khắc phục sai lầm?
-A. 你好
-B. 亡羊补牢
-C. 时间就是金钱
-D. 很高兴认识你
+Lời giải: 不客气 đọc là bú kèqi, nghĩa là Không có gì. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 168.
+Độ khó: Dễ
+Câu 46. Chọn Hán tự có phiên âm “bú kèqi” và nghĩa “Không có gì”.
+A. 再见
+B. 司机
+C. 不客气
+D. 姑娘
+Đáp án: C
+Lời giải: 不客气 đọc là bú kèqi, nghĩa là Không có gì. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 168.
+Độ khó: Dễ
+Câu 47. Trong bài học, “早上” có nghĩa là gì?
+A. Bác tài, thầy
+B. Sáng sớm
+C. Tài xế
+D. Xa
 Đáp án: B
-Lời giải: 亡羊补牢: mất dê mới sửa chuồng, nhấn mạnh sửa sai khi còn kịp.
+Lời giải: 早上 đọc là zǎoshang, nghĩa là Sáng sớm. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 172.
+Độ khó: Dễ
+Câu 48. Chọn Hán tự có phiên âm “zǎoshang” và nghĩa “Sáng sớm”.
+A. 早上
+B. 离
+C. 找
+D. 超市
+Đáp án: A
+Lời giải: 早上 đọc là zǎoshang, nghĩa là Sáng sớm. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 172.
+Độ khó: Dễ
+Câu 49. Trong bài học, “上午” có nghĩa là gì?
+A. Buổi sáng
+B. Cô gái trẻ (thân mật)
+C. Quảng trường Nhân dân
+D. Hiểu, hiểu rõ
+Đáp án: A
+Lời giải: 上午 đọc là shàngwǔ, nghĩa là Buổi sáng. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 173.
+Độ khó: Dễ
+Câu 50. Chọn Hán tự có phiên âm “shàngwǔ” và nghĩa “Buổi sáng”.
+A. 广场
+B. 上午
+C. 再见
+D. 远
+Đáp án: B
+Lời giải: 上午 đọc là shàngwǔ, nghĩa là Buổi sáng. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 173.
+Độ khó: Dễ
+Câu 51. Trong bài học, “中午” có nghĩa là gì?
+A. Khách sáo, lịch sự
+B. Bác tài, thầy
+C. Buổi trưa
+D. Cảm ơn
+Đáp án: C
+Lời giải: 中午 đọc là zhōngwǔ, nghĩa là Buổi trưa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 174.
+Độ khó: Dễ
+Câu 52. Chọn Hán tự có phiên âm “zhōngwǔ” và nghĩa “Buổi trưa”.
+A. 明白
+B. 中午
+C. 学校
+D. 女士
+Đáp án: B
+Lời giải: 中午 đọc là zhōngwǔ, nghĩa là Buổi trưa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 174.
+Độ khó: Dễ
+Câu 53. Trong bài học, “下午” có nghĩa là gì?
+A. Buổi chiều
+B. Nhiều
+C. Bao nhiêu
+D. Tài xế
+Đáp án: A
+Lời giải: 下午 đọc là xiàwǔ, nghĩa là Buổi chiều. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 175.
+Độ khó: Dễ
+Câu 54. Chọn Hán tự có phiên âm “xiàwǔ” và nghĩa “Buổi chiều”.
+A. 小姐
+B. 下午
+C. 美女
+D. 帅哥
+Đáp án: B
+Lời giải: 下午 đọc là xiàwǔ, nghĩa là Buổi chiều. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 175.
+Độ khó: Dễ
+Câu 55. Trong bài học, “晚上” có nghĩa là gì?
+A. Quảng trường
+B. Gần
+C. Buổi tối
+D. Cô, tiểu thư
+Đáp án: C
+Lời giải: 晚上 đọc là wǎnshang, nghĩa là Buổi tối. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 176.
+Độ khó: Dễ
+Câu 56. Chọn Hán tự có phiên âm “wǎnshang” và nghĩa “Buổi tối”.
+A. 晚上
+B. 钱
+C. 再
+D. 人民
+Đáp án: A
+Lời giải: 晚上 đọc là wǎnshang, nghĩa là Buổi tối. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 176.
+Độ khó: Dễ
+Câu 57. Trong bài học, “半夜” có nghĩa là gì?
+A. Cách, cách xa
+B. Rạp chiếu phim
+C. Nửa đêm
+D. Hiểu, hiểu rõ
+Đáp án: C
+Lời giải: 半夜 đọc là bànyè, nghĩa là Nửa đêm. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 177.
+Độ khó: Dễ
+Câu 58. Chọn Hán tự có phiên âm “bànyè” và nghĩa “Nửa đêm”.
+A. 半夜
+B. 到
+C. 小哥哥
+D. 公司
+Đáp án: A
+Lời giải: 半夜 đọc là bànyè, nghĩa là Nửa đêm. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 177.
+Độ khó: Dễ
+Câu 59. Trong bài học, “来” có nghĩa là gì?
+A. Lại, thêm lần nữa
+B. Ký túc xá
+C. Xa
+D. Đến
+Đáp án: D
+Lời giải: 来 đọc là lái, nghĩa là Đến. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 178.
+Độ khó: Dễ
+Câu 60. Chọn Hán tự có phiên âm “lái” và nghĩa “Đến”.
+A. 来
+B. 师傅
+C. 去
+D. 中午
+Đáp án: A
+Lời giải: 来 đọc là lái, nghĩa là Đến. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 178.
+Độ khó: Dễ
+Câu 61. Trong bài học, “到” có nghĩa là gì?
+A. Đến, tới
+B. Cảm ơn, biết ơn
+C. Biết
+D. Nhiều
+Đáp án: A
+Lời giải: 到 đọc là dào, nghĩa là Đến, tới. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 179.
+Độ khó: Dễ
+Câu 62. Chọn Hán tự có phiên âm “dào” và nghĩa “Đến, tới”.
+A. 帅哥
+B. 明白
+C. 到
+D. 师傅
+Đáp án: C
+Lời giải: 到 đọc là dào, nghĩa là Đến, tới. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 179.
+Độ khó: Dễ
+Câu 63. Trong bài học, “司机” có nghĩa là gì?
+A. Cảm ơn, biết ơn
+B. Tìm, trả lại tiền thừa
+C. Đến
+D. Tài xế
+Đáp án: D
+Lời giải: 司机 đọc là sījī, nghĩa là Tài xế. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 180.
+Độ khó: Dễ
+Câu 64. Chọn Hán tự có phiên âm “sījī” và nghĩa “Tài xế”.
+A. 中午
+B. 司机
+C. 哪里
+D. 不客气
+Đáp án: B
+Lời giải: 司机 đọc là sījī, nghĩa là Tài xế. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 180.
+Độ khó: Dễ
+Câu 65. Trong bài học, “女士” có nghĩa là gì?
+A. Tạm biệt
+B. Đồng, tệ
+C. Quý cô, quý bà
+D. Buổi sáng
+Đáp án: C
+Lời giải: 女士 đọc là nǚshì, nghĩa là Quý cô, quý bà. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 181.
+Độ khó: Dễ
+Câu 66. Chọn Hán tự có phiên âm “nǚshì” và nghĩa “Quý cô, quý bà”.
+A. 不客气
+B. 电影院
+C. 晚上
+D. 女士
+Đáp án: D
+Lời giải: 女士 đọc là nǚshì, nghĩa là Quý cô, quý bà. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 181.
+Độ khó: Dễ
+Câu 67. Trong bài học, “姑娘” có nghĩa là gì?
+A. Cảm ơn, biết ơn
+B. Biết
+C. Không có gì
+D. Cô gái
+Đáp án: D
+Lời giải: 姑娘 đọc là gūniang, nghĩa là Cô gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 182.
+Độ khó: Dễ
+Câu 68. Chọn Hán tự có phiên âm “gūniang” và nghĩa “Cô gái”.
+A. 小姐姐
+B. 姑娘
+C. 广场
+D. 远
+Đáp án: B
+Lời giải: 姑娘 đọc là gūniang, nghĩa là Cô gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 182.
+Độ khó: Dễ
+Câu 69. Trong bài học, “妹妹” có nghĩa là gì?
+A. Em gái
+B. Bác tài, thầy
+C. Buổi tối
+D. Không có gì
+Đáp án: A
+Lời giải: 妹妹 đọc là mèimei, nghĩa là Em gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 183.
+Độ khó: Dễ
+Câu 70. Chọn Hán tự có phiên âm “mèimei” và nghĩa “Em gái”.
+A. 妹妹
+B. 学校
+C. 人民广场
+D. 女士
+Đáp án: A
+Lời giải: 妹妹 đọc là mèimei, nghĩa là Em gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 183.
+Độ khó: Dễ
+Câu 71. Trong bài học, “小姐姐” có nghĩa là gì?
+A. Nhiều
+B. Cô gái trẻ (thân mật)
+C. Rạp chiếu phim
+D. Đến, tới
+Đáp án: B
+Lời giải: 小姐姐 đọc là xiǎojiějie, nghĩa là Cô gái trẻ (thân mật). Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 184.
+Độ khó: Dễ
+Câu 72. Chọn Hán tự có phiên âm “xiǎojiějie” và nghĩa “Cô gái trẻ (thân mật)”.
+A. 谢谢
+B. 小姐姐
+C. 哪里
+D. 司机
+Đáp án: B
+Lời giải: 小姐姐 đọc là xiǎojiějie, nghĩa là Cô gái trẻ (thân mật). Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 184.
+Độ khó: Dễ
+Câu 73. Trong bài học, “美女” có nghĩa là gì?
+A. Nhân dân
+B. Người đẹp
+C. Công ty
+D. Đến, tới
+Đáp án: B
+Lời giải: 美女 đọc là měinǚ, nghĩa là Người đẹp. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 185.
+Độ khó: Dễ
+Câu 74. Chọn Hán tự có phiên âm “měinǚ” và nghĩa “Người đẹp”.
+A. 宿舍
+B. 司机
+C. 美女
+D. 去
+Đáp án: C
+Lời giải: 美女 đọc là měinǚ, nghĩa là Người đẹp. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 185.
+Độ khó: Dễ
+Câu 75. Trong bài học, “小哥哥” có nghĩa là gì?
+A. Đi
+B. Nửa đêm
+C. Chàng trai trẻ (thân mật)
+D. Cô gái
+Đáp án: C
+Lời giải: 小哥哥 đọc là xiǎogēge, nghĩa là Chàng trai trẻ (thân mật). Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 186.
+Độ khó: Dễ
+Câu 76. Chọn Hán tự có phiên âm “xiǎogēge” và nghĩa “Chàng trai trẻ (thân mật)”.
+A. 小哥哥
+B. 谢谢
+C. 广场
+D. 客气
+Đáp án: A
+Lời giải: 小哥哥 đọc là xiǎogēge, nghĩa là Chàng trai trẻ (thân mật). Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 186.
+Độ khó: Dễ
+Câu 77. Trong bài học, “帅哥” có nghĩa là gì?
+A. Công ty
+B. Anh đẹp trai
+C. Ít
+D. Tạm biệt
+Đáp án: B
+Lời giải: 帅哥 đọc là shuàigē, nghĩa là Anh đẹp trai. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 187.
+Độ khó: Dễ
+Câu 78. Chọn Hán tự có phiên âm “shuàigē” và nghĩa “Anh đẹp trai”.
+A. 来
+B. 哪里
+C. 帅哥
+D. 找
+Đáp án: C
+Lời giải: 帅哥 đọc là shuàigē, nghĩa là Anh đẹp trai. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 187.
+Độ khó: Dễ
+Câu 79. Trong bài học, “人民广场” có nghĩa là gì?
+A. Siêu thị
+B. Cô, tiểu thư
+C. Bao nhiêu
+D. Quảng trường Nhân dân
+Đáp án: D
+Lời giải: 人民广场 đọc là Rénmín Guǎngchǎng, nghĩa là Quảng trường Nhân dân. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 188.
+Độ khó: Dễ
+Câu 80. Chọn Hán tự có phiên âm “Rénmín Guǎngchǎng” và nghĩa “Quảng trường Nhân dân”.
+A. 人民广场
+B. 师傅
+C. 电影院
+D. 近
+Đáp án: A
+Lời giải: 人民广场 đọc là Rénmín Guǎngchǎng, nghĩa là Quảng trường Nhân dân. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 188.
+Độ khó: Dễ
+Câu 81. Trong bài học, “学校” có nghĩa là gì?
+A. Cô gái
+B. Tìm, trả lại tiền thừa
+C. Công ty
+D. Trường học
+Đáp án: D
+Lời giải: 学校 đọc là xuéxiào, nghĩa là Trường học. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 189.
+Độ khó: Dễ
+Câu 82. Chọn Hán tự có phiên âm “xuéxiào” và nghĩa “Trường học”.
+A. 学校
+B. 上午
+C. 不客气
+D. 钱
+Đáp án: A
+Lời giải: 学校 đọc là xuéxiào, nghĩa là Trường học. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 189.
+Độ khó: Dễ
+Câu 83. Trong bài học, “公司” có nghĩa là gì?
+A. Sáng sớm
+B. Rạp chiếu phim
+C. Công ty
+D. Cô gái trẻ (thân mật)
+Đáp án: C
+Lời giải: 公司 đọc là gōngsī, nghĩa là Công ty. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 190.
+Độ khó: Dễ
+Câu 84. Chọn Hán tự có phiên âm “gōngsī” và nghĩa “Công ty”.
+A. 姑娘
+B. 司机
+C. 公司
+D. 少
+Đáp án: C
+Lời giải: 公司 đọc là gōngsī, nghĩa là Công ty. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 190.
+Độ khó: Dễ
+Câu 85. Trong bài học, “医院” có nghĩa là gì?
+A. Ít
+B. Buổi tối
+C. Quảng trường Nhân dân
+D. Bệnh viện
+Đáp án: D
+Lời giải: 医院 đọc là yīyuàn, nghĩa là Bệnh viện. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 191.
+Độ khó: Dễ
+Câu 86. Chọn Hán tự có phiên âm “yīyuàn” và nghĩa “Bệnh viện”.
+A. 医院
+B. 不客气
+C. 小姐姐
+D. 中午
+Đáp án: A
+Lời giải: 医院 đọc là yīyuàn, nghĩa là Bệnh viện. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 191.
+Độ khó: Dễ
+Câu 87. Trong bài học, “超市” có nghĩa là gì?
+A. Cách, cách xa
+B. Đi
+C. Siêu thị
+D. Hiểu, hiểu rõ
+Đáp án: C
+Lời giải: 超市 đọc là chāoshì, nghĩa là Siêu thị. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 192.
+Độ khó: Dễ
+Câu 88. Chọn Hán tự có phiên âm “chāoshì” và nghĩa “Siêu thị”.
+A. 姑娘
+B. 再见
+C. 不用谢
+D. 超市
+Đáp án: D
+Lời giải: 超市 đọc là chāoshì, nghĩa là Siêu thị. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 192.
+Độ khó: Dễ
+Câu 89. Trong bài học, “宿舍” có nghĩa là gì?
+A. Cảm ơn, biết ơn
+B. Ký túc xá
+C. Gần
+D. Cô gái trẻ (thân mật)
+Đáp án: B
+Lời giải: 宿舍 đọc là sùshè, nghĩa là Ký túc xá. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 193.
+Độ khó: Dễ
+Câu 90. Chọn Hán tự có phiên âm “sùshè” và nghĩa “Ký túc xá”.
+A. 远
+B. 晚上
+C. 美女
+D. 宿舍
+Đáp án: D
+Lời giải: 宿舍 đọc là sùshè, nghĩa là Ký túc xá. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 193.
+Độ khó: Dễ
+Câu 91. Trong bài học, “电影院” có nghĩa là gì?
+A. Siêu thị
+B. Công ty
+C. Rạp chiếu phim
+D. Quý cô, quý bà
+Đáp án: C
+Lời giải: 电影院 đọc là diànyǐngyuàn, nghĩa là Rạp chiếu phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 194.
+Độ khó: Dễ
+Câu 92. Chọn Hán tự có phiên âm “diànyǐngyuàn” và nghĩa “Rạp chiếu phim”.
+A. 学校
+B. 电影院
+C. 美女
+D. 钱
+Đáp án: B
+Lời giải: 电影院 đọc là diànyǐngyuàn, nghĩa là Rạp chiếu phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 194.
+Độ khó: Dễ
+Câu 93. Trong bài học, “感谢” có nghĩa là gì?
+A. Em gái
+B. Tạm biệt
+C. Đến
+D. Cảm ơn, biết ơn
+Đáp án: D
+Lời giải: 感谢 đọc là gǎnxiè, nghĩa là Cảm ơn, biết ơn. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 195.
+Độ khó: Dễ
+Câu 94. Chọn Hán tự có phiên âm “gǎnxiè” và nghĩa “Cảm ơn, biết ơn”.
+A. 学校
+B. 感谢
+C. 哪里
+D. 医院
+Đáp án: B
+Lời giải: 感谢 đọc là gǎnxiè, nghĩa là Cảm ơn, biết ơn. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 195.
+Độ khó: Dễ
+Câu 95. Trong bài học, “不用谢” có nghĩa là gì?
+A. Sáng sớm
+B. Không cần cảm ơn
+C. Tiền
+D. Tài xế
+Đáp án: B
+Lời giải: 不用谢 đọc là bú yòng xiè, nghĩa là Không cần cảm ơn. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 196.
+Độ khó: Dễ
+Câu 96. Chọn Hán tự có phiên âm “bú yòng xiè” và nghĩa “Không cần cảm ơn”.
+A. 人民
+B. 司机
+C. 早上
+D. 不用谢
+Đáp án: D
+Lời giải: 不用谢 đọc là bú yòng xiè, nghĩa là Không cần cảm ơn. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 196.
+Độ khó: Dễ
+Câu 97. Trong bài học, “客气” có nghĩa là gì?
+A. Cách, cách xa
+B. Bao nhiêu
+C. Khách sáo, lịch sự
+D. Quý cô, quý bà
+Đáp án: C
+Lời giải: 客气 đọc là kèqi, nghĩa là Khách sáo, lịch sự. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 197.
+Độ khó: Dễ
+Câu 98. Chọn Hán tự có phiên âm “kèqi” và nghĩa “Khách sáo, lịch sự”.
+A. 少
+B. 晚上
+C. 中午
+D. 客气
+Đáp án: D
+Lời giải: 客气 đọc là kèqi, nghĩa là Khách sáo, lịch sự. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 197.
+Độ khó: Dễ
+Câu 99. Chọn phiên âm đúng của “不用谢” với nghĩa “Không cần cảm ơn”.
+A. gǎnxiè
+B. bú yòng xiè
+C. nǎr
+D. bú kèqi
+Đáp án: B
+Lời giải: 不用谢 đọc là bú yòng xiè, nghĩa là Không cần cảm ơn. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 196.
+Độ khó: Dễ
+Câu 100. Chọn phiên âm đúng của “客气” với nghĩa “Khách sáo, lịch sự”.
+A. dào
+B. mèimei
+C. kèqi
+D. xuéxiào
+Đáp án: C
+Lời giải: 客气 đọc là kèqi, nghĩa là Khách sáo, lịch sự. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 197.
+Độ khó: Dễ
+Câu 101. Vận dụng: Câu “你去哪儿？” có nghĩa là gì?
+A. Buổi chiều bạn có đến không?
+B. Tôi đi đến Quảng trường Nhân dân.
+C. Tôi hiểu rồi.
+D. Bạn đi đâu?
+Đáp án: D
+Lời giải: 你去哪儿？ — Bạn đi đâu? Câu dùng từ trong danh sách bài 1–4.
 Độ khó: Vừa
+Câu 102. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bạn đi đâu?”.
+A. 我下午去公司。
+B. 你去哪儿？
+C. 她上午去学校。
+D. 妹妹去宿舍。
+Đáp án: B
+Lời giải: 你去哪儿？ — Bạn đi đâu? Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 103. Vận dụng: Câu “我去人民广场。” có nghĩa là gì?
+A. Trường học ở rất gần công ty.
+B. Xin hỏi, siêu thị có xa trường học không?
+C. Tôi đi đến Quảng trường Nhân dân.
+D. Không có gì!
+Đáp án: C
+Lời giải: 我去人民广场。 — Tôi đi đến Quảng trường Nhân dân. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 104. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi đi đến Quảng trường Nhân dân.”.
+A. 他晚上去电影院。
+B. 我去人民广场。
+C. 你去哪儿？
+D. 我明白了。
+Đáp án: B
+Lời giải: 我去人民广场。 — Tôi đi đến Quảng trường Nhân dân. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 105. Vận dụng: Câu “学校离公司很近。” có nghĩa là gì?
+A. Buổi sáng cô ấy đi đến trường.
+B. Tôi có tiền.
+C. Bao nhiêu tiền?
+D. Trường học ở rất gần công ty.
+Đáp án: D
+Lời giải: 学校离公司很近。 — Trường học ở rất gần công ty. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 106. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Trường học ở rất gần công ty.”.
+A. 我去找老师。
+B. 学校离公司很近。
+C. 你下午来吗？
+D. 我下午去公司。
+Đáp án: B
+Lời giải: 学校离公司很近。 — Trường học ở rất gần công ty. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 107. Vận dụng: Câu “医院离学校很远。” có nghĩa là gì?
+A. Tôi có tiền.
+B. Buổi chiều tôi đi đến công ty.
+C. Tạm biệt thầy/cô!
+D. Bệnh viện ở rất xa trường học.
+Đáp án: D
+Lời giải: 医院离学校很远。 — Bệnh viện ở rất xa trường học. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 108. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bệnh viện ở rất xa trường học.”.
+A. 医院离学校很远。
+B. 我下午去公司。
+C. 你下午来吗？
+D. 我去人民广场。
+Đáp án: A
+Lời giải: 医院离学校很远。 — Bệnh viện ở rất xa trường học. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 109. Vận dụng: Câu “请问，超市离学校远吗？” có nghĩa là gì?
+A. Buổi sáng cô ấy đi đến trường.
+B. Bệnh viện ở rất xa trường học.
+C. Bao nhiêu tiền?
+D. Xin hỏi, siêu thị có xa trường học không?
+Đáp án: D
+Lời giải: 请问，超市离学校远吗？ — Xin hỏi, siêu thị có xa trường học không? Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 110. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Xin hỏi, siêu thị có xa trường học không?”.
+A. 我明白了。
+B. 你去哪儿？
+C. 请问，超市离学校远吗？
+D. 她上午去学校。
+Đáp án: C
+Lời giải: 请问，超市离学校远吗？ — Xin hỏi, siêu thị có xa trường học không? Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 111. Vận dụng: Câu “我知道了。” có nghĩa là gì?
+A. Buổi chiều bạn có đến không?
+B. Tôi hiểu rồi.
+C. Tôi biết rồi.
+D. Tạm biệt thầy/cô!
+Đáp án: C
+Lời giải: 我知道了。 — Tôi biết rồi. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 112. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi biết rồi.”.
+A. 我知道了。
+B. 你去哪儿？
+C. 我去找老师。
+D. 学校离公司很近。
+Đáp án: A
+Lời giải: 我知道了。 — Tôi biết rồi. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 113. Vận dụng: Câu “我明白了。” có nghĩa là gì?
+A. Tôi hiểu rồi.
+B. Bệnh viện ở rất xa trường học.
+C. Trường học ở rất gần công ty.
+D. Tạm biệt thầy/cô!
+Đáp án: A
+Lời giải: 我明白了。 — Tôi hiểu rồi. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 114. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi hiểu rồi.”.
+A. 我明白了。
+B. 请问，超市离学校远吗？
+C. 师傅，谢谢！
+D. 妹妹去宿舍。
+Đáp án: A
+Lời giải: 我明白了。 — Tôi hiểu rồi. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 115. Vận dụng: Câu “多少钱？” có nghĩa là gì?
+A. Bao nhiêu tiền?
+B. Bệnh viện ở rất xa trường học.
+C. Tôi biết rồi.
+D. Cảm ơn bác tài!
+Đáp án: A
+Lời giải: 多少钱？ — Bao nhiêu tiền? Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 116. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bao nhiêu tiền?”.
+A. 我下午去公司。
+B. 学校离公司很近。
+C. 多少钱？
+D. 妹妹去宿舍。
+Đáp án: C
+Lời giải: 多少钱？ — Bao nhiêu tiền? Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 117. Vận dụng: Câu “十块钱。” có nghĩa là gì?
+A. Không có gì!
+B. Buổi chiều bạn có đến không?
+C. Mười đồng.
+D. Bạn đi đâu?
+Đáp án: C
+Lời giải: 十块钱。 — Mười đồng. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 118. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Mười đồng.”.
+A. 我去找老师。
+B. 她上午去学校。
+C. 十块钱。
+D. 我知道了。
+Đáp án: C
+Lời giải: 十块钱。 — Mười đồng. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 119. Vận dụng: Câu “师傅，谢谢！” có nghĩa là gì?
+A. Mười đồng.
+B. Tôi đi đến Quảng trường Nhân dân.
+C. Cảm ơn bác tài!
+D. Tôi có tiền.
+Đáp án: C
+Lời giải: 师傅，谢谢！ — Cảm ơn bác tài! Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 120. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cảm ơn bác tài!”.
+A. 师傅，谢谢！
+B. 你下午来吗？
+C. 不用谢！
+D. 我知道了。
+Đáp án: A
+Lời giải: 师傅，谢谢！ — Cảm ơn bác tài! Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 121. Vận dụng: Câu “不客气！” có nghĩa là gì?
+A. Tôi có tiền.
+B. Mười đồng.
+C. Không có gì!
+D. Không cần cảm ơn!
+Đáp án: C
+Lời giải: 不客气！ — Không có gì! Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 122. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Không có gì!”.
+A. 不客气！
+B. 我有钱。
+C. 我知道了。
+D. 我明白了。
+Đáp án: A
+Lời giải: 不客气！ — Không có gì! Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 123. Vận dụng: Câu “再见，老师！” có nghĩa là gì?
+A. Buổi chiều tôi đi đến công ty.
+B. Mười đồng.
+C. Tôi đi đến Quảng trường Nhân dân.
+D. Tạm biệt thầy/cô!
+Đáp án: D
+Lời giải: 再见，老师！ — Tạm biệt thầy/cô! Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 124. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tạm biệt thầy/cô!”.
+A. 再见，老师！
+B. 师傅，谢谢！
+C. 他晚上去电影院。
+D. 我去找老师。
+Đáp án: A
+Lời giải: 再见，老师！ — Tạm biệt thầy/cô! Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 125. Vận dụng: Câu “她上午去学校。” có nghĩa là gì?
+A. Bao nhiêu tiền?
+B. Tôi đi tìm thầy/cô.
+C. Cảm ơn bác tài!
+D. Buổi sáng cô ấy đi đến trường.
+Đáp án: D
+Lời giải: 她上午去学校。 — Buổi sáng cô ấy đi đến trường. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 126. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Buổi sáng cô ấy đi đến trường.”.
+A. 我去人民广场。
+B. 她上午去学校。
+C. 医院离学校很远。
+D. 请问，超市离学校远吗？
+Đáp án: B
+Lời giải: 她上午去学校。 — Buổi sáng cô ấy đi đến trường. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 127. Vận dụng: Câu “我下午去公司。” có nghĩa là gì?
+A. Tạm biệt thầy/cô!
+B. Xin hỏi, siêu thị có xa trường học không?
+C. Buổi chiều tôi đi đến công ty.
+D. Bao nhiêu tiền?
+Đáp án: C
+Lời giải: 我下午去公司。 — Buổi chiều tôi đi đến công ty. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 128. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Buổi chiều tôi đi đến công ty.”.
+A. 再见，老师！
+B. 我下午去公司。
+C. 妹妹去宿舍。
+D. 我有钱。
+Đáp án: B
+Lời giải: 我下午去公司。 — Buổi chiều tôi đi đến công ty. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 129. Vận dụng: Câu “他晚上去电影院。” có nghĩa là gì?
+A. Không cần cảm ơn!
+B. Không có gì!
+C. Buổi tối anh ấy đi đến rạp chiếu phim.
+D. Buổi sáng cô ấy đi đến trường.
+Đáp án: C
+Lời giải: 他晚上去电影院。 — Buổi tối anh ấy đi đến rạp chiếu phim. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 130. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Buổi tối anh ấy đi đến rạp chiếu phim.”.
+A. 她上午去学校。
+B. 我明白了。
+C. 我下午去公司。
+D. 他晚上去电影院。
+Đáp án: D
+Lời giải: 他晚上去电影院。 — Buổi tối anh ấy đi đến rạp chiếu phim. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 131. Vận dụng: Câu “妹妹去宿舍。” có nghĩa là gì?
+A. Bao nhiêu tiền?
+B. Bạn đi đâu?
+C. Em gái đi đến ký túc xá.
+D. Bệnh viện ở rất xa trường học.
+Đáp án: C
+Lời giải: 妹妹去宿舍。 — Em gái đi đến ký túc xá. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 132. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Em gái đi đến ký túc xá.”.
+A. 十块钱。
+B. 我下午去公司。
+C. 妹妹去宿舍。
+D. 师傅，谢谢！
+Đáp án: C
+Lời giải: 妹妹去宿舍。 — Em gái đi đến ký túc xá. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 133. Vận dụng: Câu “我去找老师。” có nghĩa là gì?
+A. Tạm biệt thầy/cô!
+B. Tôi đi tìm thầy/cô.
+C. Tôi có tiền.
+D. Không cần cảm ơn!
+Đáp án: B
+Lời giải: 我去找老师。 — Tôi đi tìm thầy/cô. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 134. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi đi tìm thầy/cô.”.
+A. 我知道了。
+B. 不客气！
+C. 妹妹去宿舍。
+D. 我去找老师。
+Đáp án: D
+Lời giải: 我去找老师。 — Tôi đi tìm thầy/cô. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 135. Vận dụng: Câu “你下午来吗？” có nghĩa là gì?
+A. Trường học ở rất gần công ty.
+B. Không cần cảm ơn!
+C. Buổi chiều tôi đi đến công ty.
+D. Buổi chiều bạn có đến không?
+Đáp án: D
+Lời giải: 你下午来吗？ — Buổi chiều bạn có đến không? Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 136. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Buổi chiều bạn có đến không?”.
+A. 我有钱。
+B. 不用谢！
+C. 再见，老师！
+D. 你下午来吗？
+Đáp án: D
+Lời giải: 你下午来吗？ — Buổi chiều bạn có đến không? Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 137. Vận dụng: Câu “我有钱。” có nghĩa là gì?
+A. Không cần cảm ơn!
+B. Mười đồng.
+C. Buổi chiều tôi đi đến công ty.
+D. Tôi có tiền.
+Đáp án: D
+Lời giải: 我有钱。 — Tôi có tiền. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 138. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi có tiền.”.
+A. 我有钱。
+B. 再见，老师！
+C. 十块钱。
+D. 我明白了。
+Đáp án: A
+Lời giải: 我有钱。 — Tôi có tiền. Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 139. Vận dụng: Câu “不用谢！” có nghĩa là gì?
+A. Không cần cảm ơn!
+B. Bao nhiêu tiền?
+C. Tôi có tiền.
+D. Tôi biết rồi.
+Đáp án: A
+Lời giải: 不用谢！ — Không cần cảm ơn! Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+Câu 140. Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Không cần cảm ơn!”.
+A. 多少钱？
+B. 不用谢！
+C. 我有钱。
+D. 我去找老师。
+Đáp án: B
+Lời giải: 不用谢！ — Không cần cảm ơn! Câu dùng từ trong danh sách bài 1–4.
+Độ khó: Vừa
+[NGU PHAP]
+Hỏi nơi đến: Dùng 去 cùng địa điểm; dùng 哪儿 hoặc 哪里 để hỏi nơi đến. Ví dụ: 我知道了。
+Khoảng cách: Dùng 离 giữa hai địa điểm và 远 hoặc 近 để nói khoảng cách. Ví dụ: 我明白了。
+[BAI DOC]
+Đọc hiểu 1: 我知道了。 我明白了。 多少钱？ 十块钱。 — Tôi biết rồi. Tôi hiểu rồi. Bao nhiêu tiền? Mười đồng.
+Đọc hiểu 2: 师傅，谢谢！ 不客气！ 再见，老师！ 她上午去学校。 — Cảm ơn bác tài! Không có gì! Tạm biệt thầy/cô! Buổi sáng cô ấy đi đến trường.
+[HOI THOAI]
+Hội thoại trong bài: A: 你去哪儿？ B: 我去学校。 A: 人民广场远吗？ B: 人民广场很近。 A: 学校离公司远吗？ B: 学校离公司很近。
+[LUYEN NOI]
+Câu 1. 你去哪儿？
+Nghĩa: Bạn đi đâu?
+Đáp án tham khảo: 我去学校。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 2. 人民广场远吗？
+Nghĩa: Quảng trường Nhân dân có xa không?
+Đáp án tham khảo: 人民广场很近。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 3. 学校离公司远吗？
+Nghĩa: Trường học có xa công ty không?
+Đáp án tham khảo: 学校离公司很近。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 4. 你去找谁？
+Nghĩa: Bạn đi tìm ai?
+Đáp án tham khảo: 我去找老师。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 5. 超市离学校近吗？
+Nghĩa: Siêu thị có gần trường không?
+Đáp án tham khảo: 超市离学校很近。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 6. 你上午去哪儿？
+Nghĩa: Buổi sáng bạn đi đâu?
+Đáp án tham khảo: 我上午去学校。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 7. 你下午去公司吗？
+Nghĩa: Buổi chiều bạn đến công ty phải không?
+Đáp án tham khảo: 我下午去公司。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 8. 你晚上去电影院吗？
+Nghĩa: Buổi tối bạn đến rạp chiếu phim phải không?
+Đáp án tham khảo: 我晚上去电影院。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 9. 多少钱？
+Nghĩa: Bao nhiêu tiền?
+Đáp án tham khảo: 十块钱。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.
+Câu 10. 你明白了吗？
+Nghĩa: Bạn đã hiểu chưa?
+Đáp án tham khảo: 我明白了。
+Tiêu chí chấm: Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.

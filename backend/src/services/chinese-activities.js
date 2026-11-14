@@ -3,6 +3,8 @@ import {query,withTransaction} from '../config/db.js';
 import {one,json,getSet} from '../repositories/chinese.js';
 import {parse,normalizeAnswer} from '../validators/chinese.js';
 import {badRequest,AppError} from '../utils/errors.js';
+import {vocabularyLesson} from './chinese-curriculum-scope.js';
+import {validateCurriculumChinese} from './chinese-curriculum.js';
 
 const text=z.string().trim().max(3000).default('');
 const task=z.object({type:z.enum(['order','fix','fill','dialogue']),prompt:text,answer:text,explanation:text,hint:text,pinyin:text,speech:text,meaning:text,
@@ -35,7 +37,8 @@ export async function saveActivities(id,body){
  return withTransaction(async c=>{
   const run=async(sql,p=[]) => (await c.query(sql,p))[0];
   // Lock the parent as well: two first-time saves must not overwrite one another.
-  await one('SELECT id FROM chinese_lessons WHERE id=? FOR UPDATE',[id],run);
+  const lesson=await one('SELECT * FROM chinese_lessons WHERE id=? FOR UPDATE',[id],run),number=vocabularyLesson(lesson);
+  if(number)try{validateCurriculumChinese(d,number);}catch{throw badRequest('Hoạt động chỉ được dùng từ bài 1 đến bài '+number+'.');}
   const [old]=await run('SELECT revision FROM chinese_activities WHERE lesson_id=? FOR UPDATE',[id]);
   if((old?.revision||0)!==d.revision)throw new AppError(409,'ACTIVITY_CONFLICT','Nội dung đã được lưu ở cửa sổ khác. Hãy tải lại trang trước khi sửa tiếp.');
   const revision=d.revision+1,data=JSON.stringify({topic:d.topic,tasks:d.tasks});

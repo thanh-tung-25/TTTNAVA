@@ -42,6 +42,23 @@ async function mock(page){
   return route.fulfill({json:{data}});
  });
 }
+test('listening keeps source order and teaches distinct words with the same meaning',async({page})=>{
+ await mock(page);await page.goto(origin+'/pages/student/chinese/?set=set-1&mode=listen');
+ await expect(page.locator('.listening-app')).toBeVisible();
+ await page.evaluate(async()=>{
+  const {listeningPractice}=await import('/assets/js/chinese-listening.js');
+  const host=document.querySelector('#content');host.replaceChildren();
+  listeningPractice(host,[{id:'ni',data:{hanzi:'你',pinyin:'nǐ',meaning:'Bạn'}},{id:'nin',data:{hanzi:'您',pinyin:'nín',meaning:'Bạn'}},{id:'wo',data:{hanzi:'我',pinyin:'wǒ',meaning:'Tôi'}}],'shared-meaning');
+ });
+ await page.getByRole('button',{name:'Bắt đầu chặng 1',exact:true}).click();
+ for(const [hanzi,meaning]of [['你','Bạn'],['您','Bạn'],['我','Tôi']]){
+  const labels=await page.locator('.listening-answer').allTextContents();expect(new Set(labels).size).toBe(labels.length);expect(labels).toHaveLength(2);
+  await page.getByRole('button',{name:'Nghe từ tiếng Trung',exact:true}).click();expect(await page.evaluate(()=>window.__spoken.at(-1).text)).toBe(hanzi);
+  await page.locator('.listening-answer').filter({hasText:meaning}).click();await expect(page.locator('.listening-question')).toContainText('Đúng rồi! '+hanzi);
+  await page.getByRole('button',{name:'Câu tiếp theo',exact:true}).click();
+ }
+ await expect(page.locator('.listening-result')).toContainText('3/3 câu đúng');
+});
 
 test('all six lessons group every existing study tool under its appropriate parent',async({page})=>{
  await mock(page);await page.goto(origin+'/pages/student/chinese/');

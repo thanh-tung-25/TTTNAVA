@@ -1,3941 +1,3422 @@
 {
+  "version": "user-vocabulary-2026-11-14",
   "lesson": 3,
-  "title": "很高兴认识你",
+  "title": "第三课：很高兴认识你 (Rất vui được làm quen với bạn)",
   "vocabulary": [
     {
       "hanzi": "请问",
       "pinyin": "qǐngwèn",
-      "meaning": "xin hỏi",
-      "page": 5,
-      "group": "main"
-    },
-    {
-      "hanzi": "请",
-      "pinyin": "qǐng",
-      "meaning": "xin, mời",
-      "page": 5,
-      "group": "main"
-    },
-    {
-      "hanzi": "问",
-      "pinyin": "wèn",
-      "meaning": "hỏi",
-      "page": 5,
-      "group": "main"
+      "meaning": "Xin hỏi",
+      "group": "main",
+      "example": "请问，您忙吗？",
+      "example_meaning": "Xin hỏi, ngài có bận không?"
     },
     {
       "hanzi": "觉得",
       "pinyin": "juéde",
-      "meaning": "cảm thấy, cho rằng",
-      "page": 6,
-      "group": "main"
+      "meaning": "Cảm thấy, cho rằng",
+      "group": "main",
+      "example": "我觉得烤鸭很好吃。",
+      "example_meaning": "Tôi thấy vịt quay rất ngon."
     },
     {
       "hanzi": "这",
       "pinyin": "zhè",
-      "meaning": "này, đây",
-      "page": 7,
-      "group": "main"
+      "meaning": "Đây, này",
+      "group": "main",
+      "example": "这是我的名片。",
+      "example_meaning": "Đây là danh thiếp của tôi."
     },
     {
       "hanzi": "那",
       "pinyin": "nà",
-      "meaning": "kia, đó",
-      "page": 8,
-      "group": "main"
+      "meaning": "Kia, đó",
+      "group": "main",
+      "example": "那是他的朋友。",
+      "example_meaning": "Kia là bạn của anh ấy."
     },
     {
       "hanzi": "的",
       "pinyin": "de",
-      "meaning": "của; trợ từ nối định ngữ",
-      "page": 9,
-      "group": "main"
+      "meaning": "Của",
+      "group": "main",
+      "example": "这是我的名片。",
+      "example_meaning": "Đây là danh thiếp của tôi."
     },
     {
       "hanzi": "名片",
       "pinyin": "míngpiàn",
-      "meaning": "danh thiếp",
-      "page": 10,
-      "group": "main"
+      "meaning": "Danh thiếp",
+      "group": "main",
+      "example": "这是我的名片。",
+      "example_meaning": "Đây là danh thiếp của tôi."
     },
     {
       "hanzi": "身体",
       "pinyin": "shēntǐ",
-      "meaning": "cơ thể, sức khỏe",
-      "page": 10,
-      "group": "main"
+      "meaning": "Cơ thể, sức khỏe",
+      "group": "main",
+      "example": "我的身体很好。",
+      "example_meaning": "Sức khỏe của tôi rất tốt."
     },
     {
       "hanzi": "对不起",
       "pinyin": "duìbuqǐ",
-      "meaning": "xin lỗi",
-      "page": 11,
-      "group": "main"
+      "meaning": "Xin lỗi",
+      "group": "main",
+      "example": "对不起！",
+      "example_meaning": "Xin lỗi!"
     },
     {
       "hanzi": "没关系",
       "pinyin": "méi guānxi",
-      "meaning": "không sao, không có gì",
-      "page": 11,
-      "group": "main"
-    },
-    {
-      "hanzi": "没事",
-      "pinyin": "méi shì",
-      "meaning": "không sao, không có việc gì",
-      "page": 11,
-      "group": "main"
+      "meaning": "Không sao",
+      "group": "main",
+      "example": "没关系！",
+      "example_meaning": "Không sao đâu!"
     },
     {
       "hanzi": "有",
       "pinyin": "yǒu",
-      "meaning": "có",
-      "page": 12,
-      "group": "main"
+      "meaning": "Có",
+      "group": "main",
+      "example": "我有朋友。",
+      "example_meaning": "Tôi có bạn bè."
     },
     {
       "hanzi": "没有",
       "pinyin": "méiyǒu",
-      "meaning": "không có, chưa có",
-      "page": 12,
-      "group": "main"
+      "meaning": "Không có",
+      "group": "main",
+      "example": "我没有名片。",
+      "example_meaning": "Tôi không có danh thiếp."
     },
     {
       "hanzi": "朋友",
       "pinyin": "péngyou",
-      "meaning": "bạn bè",
-      "page": 13,
-      "group": "main"
+      "meaning": "Bạn bè",
+      "group": "main",
+      "example": "那是他的朋友。",
+      "example_meaning": "Kia là bạn của anh ấy."
     },
     {
       "hanzi": "高兴",
       "pinyin": "gāoxìng",
-      "meaning": "vui mừng",
-      "page": 13,
-      "group": "main"
+      "meaning": "Vui vẻ",
+      "group": "main",
+      "example": "很高兴认识你。",
+      "example_meaning": "Rất vui được làm quen với bạn."
     },
     {
       "hanzi": "认识",
       "pinyin": "rènshi",
-      "meaning": "quen, biết một người",
-      "page": 14,
-      "group": "main"
+      "meaning": "Quen, biết",
+      "group": "main",
+      "example": "很高兴认识你。",
+      "example_meaning": "Rất vui được làm quen với bạn."
     },
     {
       "hanzi": "先生",
       "pinyin": "xiānsheng",
-      "meaning": "ông, ngài; cách xưng hô lịch sự",
-      "page": 15,
-      "group": "main"
+      "meaning": "Ông, ngài",
+      "group": "main",
+      "example": "我认识马先生。",
+      "example_meaning": "Tôi quen ông Mã."
     },
     {
       "hanzi": "女士",
       "pinyin": "nǚshì",
-      "meaning": "bà, cô; cách xưng hô lịch sự",
-      "page": 15,
-      "group": "main"
+      "meaning": "Quý cô, quý bà",
+      "group": "main",
+      "example": "这是王女士。",
+      "example_meaning": "Đây là bà Vương."
     },
     {
       "hanzi": "马",
       "pinyin": "mǎ",
-      "meaning": "họ Mã; con ngựa",
-      "page": 15,
-      "group": "main"
+      "meaning": "Ngựa; họ Mã",
+      "group": "main",
+      "example": "我认识马先生。",
+      "example_meaning": "Tôi quen ông Mã."
     },
     {
       "hanzi": "黄文丽",
       "pinyin": "Huáng Wénlì",
-      "meaning": "Hoàng Văn Lệ, tên nhân vật",
-      "page": 15,
+      "meaning": "Hoàng Văn Lệ (tên riêng)",
       "group": "main"
     },
     {
       "hanzi": "也",
       "pinyin": "yě",
-      "meaning": "cũng",
-      "page": 16,
-      "group": "main"
+      "meaning": "Cũng",
+      "group": "main",
+      "example": "他们也很忙。",
+      "example_meaning": "Họ cũng rất bận."
     },
     {
       "hanzi": "小",
       "pinyin": "xiǎo",
-      "meaning": "nhỏ, bé",
-      "page": 16,
-      "group": "main"
-    },
-    {
-      "hanzi": "大",
-      "pinyin": "dà",
-      "meaning": "to, lớn",
-      "page": 16,
+      "meaning": "Nhỏ",
       "group": "main"
     },
     {
       "hanzi": "都",
       "pinyin": "dōu",
-      "meaning": "đều",
-      "page": 17,
-      "group": "main"
+      "meaning": "Đều",
+      "group": "main",
+      "example": "我们都是学生。",
+      "example_meaning": "Chúng tôi đều là học sinh."
     },
     {
       "hanzi": "忙",
       "pinyin": "máng",
-      "meaning": "bận",
-      "page": 17,
-      "group": "main"
+      "meaning": "Bận",
+      "group": "main",
+      "example": "他们也很忙。",
+      "example_meaning": "Họ cũng rất bận."
+    },
+    {
+      "hanzi": "请",
+      "pinyin": "qǐng",
+      "meaning": "Xin, mời",
+      "group": "extended",
+      "example": "请进！",
+      "example_meaning": "Mời vào!"
+    },
+    {
+      "hanzi": "问",
+      "pinyin": "wèn",
+      "meaning": "Hỏi",
+      "group": "extended",
+      "example": "请问，您忙吗？",
+      "example_meaning": "Xin hỏi, ngài có bận không?"
     },
     {
       "hanzi": "进",
       "pinyin": "jìn",
-      "meaning": "vào",
-      "page": 5,
-      "group": "extended"
+      "meaning": "Vào",
+      "group": "extended",
+      "example": "请进！",
+      "example_meaning": "Mời vào!"
+    },
+    {
+      "hanzi": "请进",
+      "pinyin": "qǐng jìn",
+      "meaning": "Mời vào",
+      "group": "extended",
+      "example": "请进！",
+      "example_meaning": "Mời vào!"
     },
     {
       "hanzi": "坐",
       "pinyin": "zuò",
-      "meaning": "ngồi",
-      "page": 5,
-      "group": "extended"
+      "meaning": "Ngồi",
+      "group": "extended",
+      "example": "请坐！",
+      "example_meaning": "Mời ngồi!"
+    },
+    {
+      "hanzi": "请坐",
+      "pinyin": "qǐng zuò",
+      "meaning": "Mời ngồi",
+      "group": "extended",
+      "example": "请坐！",
+      "example_meaning": "Mời ngồi!"
     },
     {
       "hanzi": "请假",
       "pinyin": "qǐngjià",
-      "meaning": "xin nghỉ phép",
-      "page": 5,
+      "meaning": "Xin nghỉ phép",
       "group": "extended"
     },
     {
       "hanzi": "还",
       "pinyin": "hái",
-      "meaning": "vẫn, còn; cũng khá",
-      "page": 6,
+      "meaning": "Vẫn, còn",
       "group": "extended"
     },
     {
       "hanzi": "好吃",
       "pinyin": "hǎochī",
-      "meaning": "ngon, dùng cho đồ ăn",
-      "page": 6,
-      "group": "extended"
-    },
-    {
-      "hanzi": "烤鸭",
-      "pinyin": "kǎoyā",
-      "meaning": "vịt quay",
-      "page": 6,
-      "group": "extended"
-    },
-    {
-      "hanzi": "便宜",
-      "pinyin": "piányi",
-      "meaning": "rẻ",
-      "page": 6,
-      "group": "extended"
+      "meaning": "Ngon",
+      "group": "extended",
+      "example": "我觉得烤鸭很好吃。",
+      "example_meaning": "Tôi thấy vịt quay rất ngon."
     },
     {
       "hanzi": "这些",
       "pinyin": "zhèxiē",
-      "meaning": "những cái này",
-      "page": 7,
-      "group": "extended"
+      "meaning": "Những cái này",
+      "group": "extended",
+      "example": "这些是汉语书。",
+      "example_meaning": "Những cuốn này là sách tiếng Hán."
     },
     {
       "hanzi": "那些",
       "pinyin": "nàxiē",
-      "meaning": "những cái kia",
-      "page": 8,
-      "group": "extended"
+      "meaning": "Những cái kia",
+      "group": "extended",
+      "example": "那些是英语书。",
+      "example_meaning": "Những cuốn kia là sách tiếng Anh."
     },
     {
-      "hanzi": "书",
-      "pinyin": "shū",
-      "meaning": "sách",
-      "page": 8,
+      "hanzi": "没事",
+      "pinyin": "méishì",
+      "meaning": "Không sao",
       "group": "extended"
     },
     {
       "hanzi": "汉语书",
       "pinyin": "Hànyǔ shū",
-      "meaning": "sách tiếng Hán",
-      "page": 12,
-      "group": "extended"
+      "meaning": "Sách tiếng Hán",
+      "group": "extended",
+      "example": "这些是汉语书。",
+      "example_meaning": "Những cuốn này là sách tiếng Hán."
     },
     {
       "hanzi": "英语书",
       "pinyin": "Yīngyǔ shū",
-      "meaning": "sách tiếng Anh",
-      "page": 12,
+      "meaning": "Sách tiếng Anh",
+      "group": "extended",
+      "example": "那些是英语书。",
+      "example_meaning": "Những cuốn kia là sách tiếng Anh."
+    },
+    {
+      "hanzi": "男朋友",
+      "pinyin": "nán péngyou",
+      "meaning": "Bạn trai",
       "group": "extended"
     },
     {
       "hanzi": "女朋友",
       "pinyin": "nǚ péngyou",
-      "meaning": "bạn gái",
-      "page": 13,
-      "group": "extended"
-    },
-    {
-      "hanzi": "男朋友",
-      "pinyin": "nán péngyou",
-      "meaning": "bạn trai",
-      "page": 13,
-      "group": "extended"
+      "meaning": "Bạn gái",
+      "group": "extended",
+      "example": "她是我的女朋友。",
+      "example_meaning": "Cô ấy là bạn gái của tôi."
     },
     {
       "hanzi": "好朋友",
       "pinyin": "hǎo péngyou",
-      "meaning": "bạn tốt, bạn thân",
-      "page": 13,
+      "meaning": "Bạn tốt, bạn thân",
+      "group": "extended",
+      "example": "他是我的好朋友。",
+      "example_meaning": "Anh ấy là bạn thân của tôi."
+    },
+    {
+      "hanzi": "大",
+      "pinyin": "dà",
+      "meaning": "To, lớn",
       "group": "extended"
     },
     {
-      "hanzi": "王",
-      "pinyin": "Wáng",
-      "meaning": "họ Vương",
-      "page": 15,
-      "group": "extended"
+      "hanzi": "马先生",
+      "pinyin": "Mǎ xiānsheng",
+      "meaning": "Ông Mã",
+      "group": "extended",
+      "example": "我认识马先生。",
+      "example_meaning": "Tôi quen ông Mã."
     },
     {
-      "hanzi": "黄",
-      "pinyin": "Huáng",
-      "meaning": "họ Hoàng",
-      "page": 15,
-      "group": "extended"
-    },
-    {
-      "hanzi": "老师",
-      "pinyin": "lǎoshī",
-      "meaning": "giáo viên",
-      "page": 15,
-      "group": "extended"
-    },
-    {
-      "hanzi": "名字",
-      "pinyin": "míngzi",
-      "meaning": "tên",
-      "page": 19,
-      "group": "extended"
-    },
-    {
-      "hanzi": "爸爸",
-      "pinyin": "bàba",
-      "meaning": "bố",
-      "page": 21,
-      "group": "extended"
-    },
-    {
-      "hanzi": "妈妈",
-      "pinyin": "māma",
-      "meaning": "mẹ",
-      "page": 21,
-      "group": "extended"
-    },
-    {
-      "hanzi": "公司",
-      "pinyin": "gōngsī",
-      "meaning": "công ty",
-      "page": 21,
-      "group": "extended"
-    },
-    {
-      "hanzi": "买",
-      "pinyin": "mǎi",
-      "meaning": "mua",
-      "page": 25,
-      "group": "extended"
-    },
-    {
-      "hanzi": "我们",
-      "pinyin": "wǒmen",
-      "meaning": "chúng tôi, chúng ta",
-      "page": 26,
-      "group": "extended"
-    },
-    {
-      "hanzi": "谁",
-      "pinyin": "shéi",
-      "meaning": "ai",
-      "page": 29,
-      "group": "extended"
-    },
-    {
-      "hanzi": "学生",
-      "pinyin": "xuésheng",
-      "meaning": "học sinh, sinh viên",
-      "page": 29,
-      "group": "extended"
-    },
-    {
-      "hanzi": "中国人",
-      "pinyin": "Zhōngguó rén",
-      "meaning": "người Trung Quốc",
-      "page": 32,
-      "group": "extended"
-    },
-    {
-      "hanzi": "英国人",
-      "pinyin": "Yīngguó rén",
-      "meaning": "người Anh",
-      "page": 36,
-      "group": "extended"
-    },
-    {
-      "hanzi": "美国人",
-      "pinyin": "Měiguó rén",
-      "meaning": "người Mỹ",
-      "page": 36,
-      "group": "extended"
-    },
-    {
-      "hanzi": "泰国人",
-      "pinyin": "Tàiguó rén",
-      "meaning": "người Thái Lan",
-      "page": 38,
-      "group": "extended"
-    },
-    {
-      "hanzi": "时间",
-      "pinyin": "shíjiān",
-      "meaning": "thời gian",
-      "page": 40,
-      "group": "extended"
-    },
-    {
-      "hanzi": "就是",
-      "pinyin": "jiùshì",
-      "meaning": "chính là",
-      "page": 40,
-      "group": "extended"
-    },
-    {
-      "hanzi": "金钱",
-      "pinyin": "jīnqián",
-      "meaning": "tiền bạc",
-      "page": 40,
-      "group": "extended"
-    },
-    {
-      "hanzi": "吃",
-      "pinyin": "chī",
-      "meaning": "ăn",
-      "page": 40,
-      "group": "extended"
-    },
-    {
-      "hanzi": "一",
-      "pinyin": "yī",
-      "meaning": "một",
-      "page": 40,
-      "group": "extended"
-    },
-    {
-      "hanzi": "堑",
-      "pinyin": "qiàn",
-      "meaning": "hào, hố; trở ngại trong câu tục ngữ",
-      "page": 40,
-      "group": "extended"
-    },
-    {
-      "hanzi": "长",
-      "pinyin": "zhǎng",
-      "meaning": "tăng trưởng, tăng thêm",
-      "page": 40,
-      "group": "extended"
-    },
-    {
-      "hanzi": "智",
-      "pinyin": "zhì",
-      "meaning": "trí tuệ, sự khôn ngoan",
-      "page": 40,
-      "group": "extended"
-    },
-    {
-      "hanzi": "人",
-      "pinyin": "rén",
-      "meaning": "người",
-      "page": 40,
-      "group": "extended"
-    },
-    {
-      "hanzi": "往",
-      "pinyin": "wǎng",
-      "meaning": "hướng về, đi về phía",
-      "page": 40,
-      "group": "extended"
-    },
-    {
-      "hanzi": "高处",
-      "pinyin": "gāochù",
-      "meaning": "nơi cao",
-      "page": 40,
-      "group": "extended"
-    },
-    {
-      "hanzi": "走",
-      "pinyin": "zǒu",
-      "meaning": "đi, bước đi",
-      "page": 40,
-      "group": "extended"
-    },
-    {
-      "hanzi": "水",
-      "pinyin": "shuǐ",
-      "meaning": "nước",
-      "page": 40,
-      "group": "extended"
-    },
-    {
-      "hanzi": "低处",
-      "pinyin": "dīchù",
-      "meaning": "nơi thấp",
-      "page": 40,
-      "group": "extended"
-    },
-    {
-      "hanzi": "流",
-      "pinyin": "liú",
-      "meaning": "chảy",
-      "page": 40,
-      "group": "extended"
-    },
-    {
-      "hanzi": "叫",
-      "pinyin": "jiào",
-      "meaning": "gọi, tên là",
-      "page": 2,
-      "group": "extended"
-    },
-    {
-      "hanzi": "什么",
-      "pinyin": "shénme",
-      "meaning": "gì, cái gì",
-      "page": 2,
-      "group": "extended"
-    },
-    {
-      "hanzi": "新",
-      "pinyin": "xīn",
-      "meaning": "mới",
-      "page": 2,
-      "group": "extended"
-    },
-    {
-      "hanzi": "很",
-      "pinyin": "hěn",
-      "meaning": "rất",
-      "page": 2,
-      "group": "extended"
-    },
-    {
-      "hanzi": "毛笔",
-      "pinyin": "máobǐ",
-      "meaning": "bút lông",
-      "page": 2,
-      "group": "extended"
-    },
-    {
-      "hanzi": "哪",
-      "pinyin": "nǎ",
-      "meaning": "nào",
-      "page": 2,
-      "group": "extended"
-    },
-    {
-      "hanzi": "飞机",
-      "pinyin": "fēijī",
-      "meaning": "máy bay",
-      "page": 2,
-      "group": "extended"
-    },
-    {
-      "hanzi": "国",
-      "pinyin": "guó",
-      "meaning": "nước, quốc gia",
-      "page": 2,
-      "group": "extended"
-    },
-    {
-      "hanzi": "越南",
-      "pinyin": "Yuènán",
-      "meaning": "Việt Nam",
-      "page": 2,
-      "group": "extended"
-    },
-    {
-      "hanzi": "美",
-      "pinyin": "měi",
-      "meaning": "đẹp; yếu tố chỉ Mỹ trong tên nước",
-      "page": 2,
-      "group": "extended"
-    },
-    {
-      "hanzi": "咖啡",
-      "pinyin": "kāfēi",
-      "meaning": "cà phê",
-      "page": 2,
-      "group": "extended"
-    },
-    {
-      "hanzi": "不",
-      "pinyin": "bù",
-      "meaning": "không; từ phủ định",
-      "page": 2,
-      "group": "extended"
-    },
-    {
-      "hanzi": "贵姓",
-      "pinyin": "guìxìng",
-      "meaning": "quý tính; hỏi họ một cách lịch sự",
-      "page": 2,
-      "group": "extended"
-    },
-    {
-      "hanzi": "中国",
-      "pinyin": "Zhōngguó",
-      "meaning": "Trung Quốc",
-      "page": 2,
-      "group": "extended"
-    },
-    {
-      "hanzi": "呢",
-      "pinyin": "ne",
-      "meaning": "trợ từ; dùng để hỏi lại trong bài",
-      "page": 2,
-      "group": "extended"
-    },
-    {
-      "hanzi": "贵",
-      "pinyin": "guì",
-      "meaning": "đắt; quý trong cách nói kính trọng",
-      "page": 2,
-      "group": "extended"
+      "hanzi": "王女士",
+      "pinyin": "Wáng nǚshì",
+      "meaning": "Bà/cô Vương",
+      "group": "extended",
+      "example": "这是王女士。",
+      "example_meaning": "Đây là bà Vương."
     }
   ],
   "questions": [
     {
+      "type": "choice",
+      "title": "Từ mới bài 3",
       "prompt": "Trong bài học, “请问” có nghĩa là gì?",
       "options": [
-        "xin hỏi",
-        "sách",
-        "bố",
-        "chính là"
+        "Sách tiếng Hán",
+        "Xin hỏi",
+        "Của",
+        "Hoàng Văn Lệ (tên riêng)"
       ],
-      "answer": "A",
-      "explanation": "请问 đọc là qǐngwèn, nghĩa là xin hỏi. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
+      "accepted": [
+        "Xin hỏi"
+      ],
+      "explanation": "请问 đọc là qǐngwèn, nghĩa là Xin hỏi. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 97.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3367981b-796e-47d3-a253-0bf2728c92d2"
     },
     {
-      "prompt": "Chọn Hán tự có phiên âm “qǐngwèn” và nghĩa “xin hỏi”.",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “qǐngwèn” và nghĩa “Xin hỏi”.",
       "options": [
-        "高兴",
-        "毛笔",
-        "请问",
-        "中国"
+        "认识",
+        "没有",
+        "汉语书",
+        "请问"
       ],
-      "answer": "C",
-      "explanation": "请问 đọc là qǐngwèn, nghĩa là xin hỏi. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
+      "accepted": [
+        "请问"
+      ],
+      "explanation": "请问 đọc là qǐngwèn, nghĩa là Xin hỏi. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 97.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3367981b-796e-47d3-a253-0bf2728c92d2"
     },
     {
-      "prompt": "Chọn phiên âm đúng của “请问” với nghĩa “xin hỏi”.",
-      "options": [
-        "qǐngwèn",
-        "zhǎng",
-        "zhèxiē",
-        "qiàn"
-      ],
-      "answer": "A",
-      "explanation": "请问 đọc là qǐngwèn, nghĩa là xin hỏi. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “请” có nghĩa là gì?",
-      "options": [
-        "sách",
-        "Việt Nam",
-        "xin, mời",
-        "vui mừng"
-      ],
-      "answer": "C",
-      "explanation": "请 đọc là qǐng, nghĩa là xin, mời. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “qǐng” và nghĩa “xin, mời”.",
-      "options": [
-        "没事",
-        "堑",
-        "请",
-        "名片"
-      ],
-      "answer": "C",
-      "explanation": "请 đọc là qǐng, nghĩa là xin, mời. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “请” với nghĩa “xin, mời”.",
-      "options": [
-        "qǐng",
-        "Tàiguó rén",
-        "kāfēi",
-        "gōngsī"
-      ],
-      "answer": "A",
-      "explanation": "请 đọc là qǐng, nghĩa là xin, mời. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “问” có nghĩa là gì?",
-      "options": [
-        "ông, ngài; cách xưng hô lịch sự",
-        "một",
-        "hỏi",
-        "trí tuệ, sự khôn ngoan"
-      ],
-      "answer": "C",
-      "explanation": "问 đọc là wèn, nghĩa là hỏi. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “wèn” và nghĩa “hỏi”.",
-      "options": [
-        "妈妈",
-        "问",
-        "美国人",
-        "都"
-      ],
-      "answer": "B",
-      "explanation": "问 đọc là wèn, nghĩa là hỏi. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “问” với nghĩa “hỏi”.",
-      "options": [
-        "guì",
-        "Yīngguó rén",
-        "Yīngyǔ shū",
-        "wèn"
-      ],
-      "answer": "D",
-      "explanation": "问 đọc là wèn, nghĩa là hỏi. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
       "prompt": "Trong bài học, “觉得” có nghĩa là gì?",
       "options": [
-        "người Trung Quốc",
-        "họ Mã; con ngựa",
-        "tiền bạc",
-        "cảm thấy, cho rằng"
+        "Danh thiếp",
+        "Vui vẻ",
+        "Cảm thấy, cho rằng",
+        "Nhỏ"
       ],
-      "answer": "D",
-      "explanation": "觉得 đọc là juéde, nghĩa là cảm thấy, cho rằng. Tham chiếu: PDF bài 3, trang 6.",
-      "difficulty": "Dễ"
+      "accepted": [
+        "Cảm thấy, cho rằng"
+      ],
+      "explanation": "觉得 đọc là juéde, nghĩa là Cảm thấy, cho rằng. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 98.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3f2e88bc-bea9-467b-961f-7186a0cb5a9b"
     },
     {
-      "prompt": "Chọn Hán tự có phiên âm “juéde” và nghĩa “cảm thấy, cho rằng”.",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “juéde” và nghĩa “Cảm thấy, cho rằng”.",
       "options": [
-        "我们",
-        "不",
-        "学生",
+        "坐",
+        "小",
+        "觉得",
+        "汉语书"
+      ],
+      "accepted": [
         "觉得"
       ],
-      "answer": "D",
-      "explanation": "觉得 đọc là juéde, nghĩa là cảm thấy, cho rằng. Tham chiếu: PDF bài 3, trang 6.",
-      "difficulty": "Dễ"
+      "explanation": "觉得 đọc là juéde, nghĩa là Cảm thấy, cho rằng. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 98.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3f2e88bc-bea9-467b-961f-7186a0cb5a9b"
     },
     {
-      "prompt": "Chọn phiên âm đúng của “觉得” với nghĩa “cảm thấy, cho rằng”.",
-      "options": [
-        "juéde",
-        "jīnqián",
-        "rén",
-        "máng"
-      ],
-      "answer": "A",
-      "explanation": "觉得 đọc là juéde, nghĩa là cảm thấy, cho rằng. Tham chiếu: PDF bài 3, trang 6.",
-      "difficulty": "Dễ"
-    },
-    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
       "prompt": "Trong bài học, “这” có nghĩa là gì?",
       "options": [
-        "sách tiếng Anh",
-        "trợ từ; dùng để hỏi lại trong bài",
-        "vẫn, còn; cũng khá",
-        "này, đây"
+        "Vẫn, còn",
+        "Bạn bè",
+        "Vui vẻ",
+        "Đây, này"
       ],
-      "answer": "D",
-      "explanation": "这 đọc là zhè, nghĩa là này, đây. Tham chiếu: PDF bài 3, trang 7.",
-      "difficulty": "Dễ"
+      "accepted": [
+        "Đây, này"
+      ],
+      "explanation": "这 đọc là zhè, nghĩa là Đây, này. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 99.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "876e242f-8263-496c-b373-a2acf11ca616"
     },
     {
-      "prompt": "Chọn Hán tự có phiên âm “zhè” và nghĩa “này, đây”.",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “zhè” và nghĩa “Đây, này”.",
       "options": [
-        "流",
-        "书",
-        "长",
+        "请假",
+        "坐",
+        "朋友",
         "这"
       ],
-      "answer": "D",
-      "explanation": "这 đọc là zhè, nghĩa là này, đây. Tham chiếu: PDF bài 3, trang 7.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “这” với nghĩa “này, đây”.",
-      "options": [
-        "zhè",
-        "Zhōngguó rén",
-        "yě",
-        "máobǐ"
+      "accepted": [
+        "这"
       ],
-      "answer": "A",
-      "explanation": "这 đọc là zhè, nghĩa là này, đây. Tham chiếu: PDF bài 3, trang 7.",
-      "difficulty": "Dễ"
+      "explanation": "这 đọc là zhè, nghĩa là Đây, này. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 99.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "876e242f-8263-496c-b373-a2acf11ca616"
     },
     {
+      "type": "choice",
+      "title": "Từ mới bài 3",
       "prompt": "Trong bài học, “那” có nghĩa là gì?",
       "options": [
-        "kia, đó",
-        "gọi, tên là",
-        "vui mừng",
-        "chúng tôi, chúng ta"
+        "Hỏi",
+        "Nhỏ",
+        "Đều",
+        "Kia, đó"
       ],
-      "answer": "A",
-      "explanation": "那 đọc là nà, nghĩa là kia, đó. Tham chiếu: PDF bài 3, trang 8.",
-      "difficulty": "Dễ"
+      "accepted": [
+        "Kia, đó"
+      ],
+      "explanation": "那 đọc là nà, nghĩa là Kia, đó. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 100.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6744b191-2522-4470-90e8-0b88104ca635"
     },
     {
-      "prompt": "Chọn Hán tự có phiên âm “nà” và nghĩa “kia, đó”.",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “nà” và nghĩa “Kia, đó”.",
       "options": [
         "身体",
-        "没关系",
-        "泰国人",
+        "男朋友",
+        "那",
+        "觉得"
+      ],
+      "accepted": [
         "那"
       ],
-      "answer": "D",
-      "explanation": "那 đọc là nà, nghĩa là kia, đó. Tham chiếu: PDF bài 3, trang 8.",
-      "difficulty": "Dễ"
+      "explanation": "那 đọc là nà, nghĩa là Kia, đó. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 100.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6744b191-2522-4470-90e8-0b88104ca635"
     },
     {
-      "prompt": "Chọn phiên âm đúng của “那” với nghĩa “kia, đó”.",
-      "options": [
-        "guìxìng",
-        "rènshi",
-        "Hànyǔ shū",
-        "nà"
-      ],
-      "answer": "D",
-      "explanation": "那 đọc là nà, nghĩa là kia, đó. Tham chiếu: PDF bài 3, trang 8.",
-      "difficulty": "Dễ"
-    },
-    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
       "prompt": "Trong bài học, “的” có nghĩa là gì?",
       "options": [
-        "những cái này",
-        "nhỏ, bé",
-        "đi, bước đi",
-        "của; trợ từ nối định ngữ"
+        "Ngon",
+        "Của",
+        "Ngựa; họ Mã",
+        "Xin lỗi"
       ],
-      "answer": "D",
-      "explanation": "的 đọc là de, nghĩa là của; trợ từ nối định ngữ. Tham chiếu: PDF bài 3, trang 9.",
-      "difficulty": "Dễ"
+      "accepted": [
+        "Của"
+      ],
+      "explanation": "的 đọc là de, nghĩa là Của. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 101.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1f7332e1-eca2-4a41-960f-1deda36d11ae"
     },
     {
-      "prompt": "Chọn Hán tự có phiên âm “de” và nghĩa “của; trợ từ nối định ngữ”.",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “de” và nghĩa “Của”.",
       "options": [
+        "没事",
+        "这",
         "的",
-        "谁",
-        "贵",
-        "都"
+        "男朋友"
       ],
-      "answer": "A",
-      "explanation": "的 đọc là de, nghĩa là của; trợ từ nối định ngữ. Tham chiếu: PDF bài 3, trang 9.",
-      "difficulty": "Dễ"
+      "accepted": [
+        "的"
+      ],
+      "explanation": "的 đọc là de, nghĩa là Của. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 101.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1f7332e1-eca2-4a41-960f-1deda36d11ae"
     },
     {
-      "prompt": "Chọn phiên âm đúng của “的” với nghĩa “của; trợ từ nối định ngữ”.",
-      "options": [
-        "shíjiān",
-        "péngyou",
-        "de",
-        "wǎng"
-      ],
-      "answer": "C",
-      "explanation": "的 đọc là de, nghĩa là của; trợ từ nối định ngữ. Tham chiếu: PDF bài 3, trang 9.",
-      "difficulty": "Dễ"
-    },
-    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
       "prompt": "Trong bài học, “名片” có nghĩa là gì?",
       "options": [
-        "sách",
-        "vịt quay",
-        "danh thiếp",
-        "giáo viên"
+        "Danh thiếp",
+        "Quý cô, quý bà",
+        "Đây, này",
+        "Bạn tốt, bạn thân"
       ],
-      "answer": "C",
-      "explanation": "名片 đọc là míngpiàn, nghĩa là danh thiếp. Tham chiếu: PDF bài 3, trang 10.",
-      "difficulty": "Dễ"
+      "accepted": [
+        "Danh thiếp"
+      ],
+      "explanation": "名片 đọc là míngpiàn, nghĩa là Danh thiếp. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 102.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3c019e5b-7e66-4440-9664-8115f26e2cb7"
     },
     {
-      "prompt": "Chọn Hán tự có phiên âm “míngpiàn” và nghĩa “danh thiếp”.",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “míngpiàn” và nghĩa “Danh thiếp”.",
       "options": [
-        "这",
-        "公司",
-        "流",
+        "那些",
+        "名片",
+        "问",
+        "请假"
+      ],
+      "accepted": [
         "名片"
       ],
-      "answer": "D",
-      "explanation": "名片 đọc là míngpiàn, nghĩa là danh thiếp. Tham chiếu: PDF bài 3, trang 10.",
-      "difficulty": "Dễ"
+      "explanation": "名片 đọc là míngpiàn, nghĩa là Danh thiếp. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 102.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3c019e5b-7e66-4440-9664-8115f26e2cb7"
     },
     {
-      "prompt": "Chọn phiên âm đúng của “名片” với nghĩa “danh thiếp”.",
-      "options": [
-        "Yuènán",
-        "Yīngguó rén",
-        "zǒu",
-        "míngpiàn"
-      ],
-      "answer": "D",
-      "explanation": "名片 đọc là míngpiàn, nghĩa là danh thiếp. Tham chiếu: PDF bài 3, trang 10.",
-      "difficulty": "Dễ"
-    },
-    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
       "prompt": "Trong bài học, “身体” có nghĩa là gì?",
       "options": [
-        "nhỏ, bé",
-        "cơ thể, sức khỏe",
-        "mới",
-        "quý tính; hỏi họ một cách lịch sự"
+        "Cơ thể, sức khỏe",
+        "Quý cô, quý bà",
+        "Ông Mã",
+        "Bạn trai"
       ],
-      "answer": "B",
-      "explanation": "身体 đọc là shēntǐ, nghĩa là cơ thể, sức khỏe. Tham chiếu: PDF bài 3, trang 10.",
-      "difficulty": "Dễ"
+      "accepted": [
+        "Cơ thể, sức khỏe"
+      ],
+      "explanation": "身体 đọc là shēntǐ, nghĩa là Cơ thể, sức khỏe. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 103.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7139ca32-9119-4456-a726-53d317f538e5"
     },
     {
-      "prompt": "Chọn Hán tự có phiên âm “shēntǐ” và nghĩa “cơ thể, sức khỏe”.",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “shēntǐ” và nghĩa “Cơ thể, sức khỏe”.",
       "options": [
-        "谁",
-        "贵",
+        "高兴",
+        "女士",
         "身体",
-        "好朋友"
+        "男朋友"
       ],
-      "answer": "C",
-      "explanation": "身体 đọc là shēntǐ, nghĩa là cơ thể, sức khỏe. Tham chiếu: PDF bài 3, trang 10.",
-      "difficulty": "Dễ"
+      "accepted": [
+        "身体"
+      ],
+      "explanation": "身体 đọc là shēntǐ, nghĩa là Cơ thể, sức khỏe. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 103.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7139ca32-9119-4456-a726-53d317f538e5"
     },
     {
-      "prompt": "Chọn phiên âm đúng của “身体” với nghĩa “cơ thể, sức khỏe”.",
-      "options": [
-        "juéde",
-        "shēntǐ",
-        "gāochù",
-        "fēijī"
-      ],
-      "answer": "B",
-      "explanation": "身体 đọc là shēntǐ, nghĩa là cơ thể, sức khỏe. Tham chiếu: PDF bài 3, trang 10.",
-      "difficulty": "Dễ"
-    },
-    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
       "prompt": "Trong bài học, “对不起” có nghĩa là gì?",
       "options": [
-        "không sao, không có việc gì",
-        "không; từ phủ định",
-        "xin lỗi",
-        "tên"
+        "Xin lỗi",
+        "Bạn tốt, bạn thân",
+        "Đều",
+        "Bận"
       ],
-      "answer": "C",
-      "explanation": "对不起 đọc là duìbuqǐ, nghĩa là xin lỗi. Tham chiếu: PDF bài 3, trang 11.",
-      "difficulty": "Dễ"
+      "accepted": [
+        "Xin lỗi"
+      ],
+      "explanation": "对不起 đọc là duìbuqǐ, nghĩa là Xin lỗi. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 104.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a2379986-5246-4ed9-b12b-c97e2e60d8c3"
     },
     {
-      "prompt": "Chọn Hán tự có phiên âm “duìbuqǐ” và nghĩa “xin lỗi”.",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “duìbuqǐ” và nghĩa “Xin lỗi”.",
       "options": [
-        "便宜",
-        "贵姓",
+        "坐",
+        "有",
         "对不起",
-        "什么"
+        "英语书"
       ],
-      "answer": "C",
-      "explanation": "对不起 đọc là duìbuqǐ, nghĩa là xin lỗi. Tham chiếu: PDF bài 3, trang 11.",
-      "difficulty": "Dễ"
+      "accepted": [
+        "对不起"
+      ],
+      "explanation": "对不起 đọc là duìbuqǐ, nghĩa là Xin lỗi. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 104.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a2379986-5246-4ed9-b12b-c97e2e60d8c3"
     },
     {
-      "prompt": "Chọn phiên âm đúng của “对不起” với nghĩa “xin lỗi”.",
-      "options": [
-        "mǎi",
-        "gōngsī",
-        "duìbuqǐ",
-        "rén"
-      ],
-      "answer": "C",
-      "explanation": "对不起 đọc là duìbuqǐ, nghĩa là xin lỗi. Tham chiếu: PDF bài 3, trang 11.",
-      "difficulty": "Dễ"
-    },
-    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
       "prompt": "Trong bài học, “没关系” có nghĩa là gì?",
       "options": [
-        "không sao, không có gì",
-        "đắt; quý trong cách nói kính trọng",
-        "chính là",
-        "xin hỏi"
+        "Quý cô, quý bà",
+        "Đều",
+        "Bạn gái",
+        "Không sao"
       ],
-      "answer": "A",
-      "explanation": "没关系 đọc là méi guānxi, nghĩa là không sao, không có gì. Tham chiếu: PDF bài 3, trang 11.",
-      "difficulty": "Dễ"
+      "accepted": [
+        "Không sao"
+      ],
+      "explanation": "没关系 đọc là méi guānxi, nghĩa là Không sao. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 105.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "db58dd54-d5f4-4ddd-9c22-7d6fa85e0e60"
     },
     {
-      "prompt": "Chọn Hán tự có phiên âm “méi guānxi” và nghĩa “không sao, không có gì”.",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “méi guānxi” và nghĩa “Không sao”.",
       "options": [
-        "汉语书",
-        "问",
-        "没关系",
-        "越南"
-      ],
-      "answer": "C",
-      "explanation": "没关系 đọc là méi guānxi, nghĩa là không sao, không có gì. Tham chiếu: PDF bài 3, trang 11.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “没关系” với nghĩa “không sao, không có gì”.",
-      "options": [
-        "piányi",
-        "méi guānxi",
-        "dīchù",
-        "shū"
-      ],
-      "answer": "B",
-      "explanation": "没关系 đọc là méi guānxi, nghĩa là không sao, không có gì. Tham chiếu: PDF bài 3, trang 11.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “没事” có nghĩa là gì?",
-      "options": [
-        "họ Hoàng",
-        "cảm thấy, cho rằng",
-        "không sao, không có việc gì",
-        "nước"
-      ],
-      "answer": "C",
-      "explanation": "没事 đọc là méi shì, nghĩa là không sao, không có việc gì. Tham chiếu: PDF bài 3, trang 11.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “méi shì” và nghĩa “không sao, không có việc gì”.",
-      "options": [
-        "学生",
+        "请假",
         "黄文丽",
-        "没事",
-        "什么"
+        "男朋友",
+        "没关系"
       ],
-      "answer": "C",
-      "explanation": "没事 đọc là méi shì, nghĩa là không sao, không có việc gì. Tham chiếu: PDF bài 3, trang 11.",
-      "difficulty": "Dễ"
+      "accepted": [
+        "没关系"
+      ],
+      "explanation": "没关系 đọc là méi guānxi, nghĩa là Không sao. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 105.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "db58dd54-d5f4-4ddd-9c22-7d6fa85e0e60"
     },
     {
-      "prompt": "Chọn phiên âm đúng của “没事” với nghĩa “không sao, không có việc gì”.",
-      "options": [
-        "hǎochī",
-        "méi shì",
-        "dōu",
-        "zhì"
-      ],
-      "answer": "B",
-      "explanation": "没事 đọc là méi shì, nghĩa là không sao, không có việc gì. Tham chiếu: PDF bài 3, trang 11.",
-      "difficulty": "Dễ"
-    },
-    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
       "prompt": "Trong bài học, “有” có nghĩa là gì?",
       "options": [
-        "gì, cái gì",
-        "những cái kia",
-        "có",
-        "không sao, không có việc gì"
+        "Có",
+        "Ông Mã",
+        "Quý cô, quý bà",
+        "Đều"
       ],
-      "answer": "C",
-      "explanation": "有 đọc là yǒu, nghĩa là có. Tham chiếu: PDF bài 3, trang 12.",
-      "difficulty": "Dễ"
+      "accepted": [
+        "Có"
+      ],
+      "explanation": "有 đọc là yǒu, nghĩa là Có. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 106.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7c6383cd-5289-4a38-b1b5-589a27ee5fa2"
     },
     {
-      "prompt": "Chọn Hán tự có phiên âm “yǒu” và nghĩa “có”.",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “yǒu” và nghĩa “Có”.",
       "options": [
-        "有",
-        "便宜",
-        "的",
-        "这"
-      ],
-      "answer": "A",
-      "explanation": "有 đọc là yǒu, nghĩa là có. Tham chiếu: PDF bài 3, trang 12.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “有” với nghĩa “có”.",
-      "options": [
-        "bù",
-        "jìn",
-        "yǒu",
-        "shénme"
-      ],
-      "answer": "C",
-      "explanation": "有 đọc là yǒu, nghĩa là có. Tham chiếu: PDF bài 3, trang 12.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “没有” có nghĩa là gì?",
-      "options": [
-        "chính là",
-        "không có, chưa có",
-        "đắt; quý trong cách nói kính trọng",
-        "sách tiếng Hán"
-      ],
-      "answer": "B",
-      "explanation": "没有 đọc là méiyǒu, nghĩa là không có, chưa có. Tham chiếu: PDF bài 3, trang 12.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “méiyǒu” và nghĩa “không có, chưa có”.",
-      "options": [
-        "很",
-        "名字",
         "没有",
-        "没事"
-      ],
-      "answer": "C",
-      "explanation": "没有 đọc là méiyǒu, nghĩa là không có, chưa có. Tham chiếu: PDF bài 3, trang 12.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “没有” với nghĩa “không có, chưa có”.",
-      "options": [
-        "nàxiē",
-        "méiyǒu",
-        "hěn",
-        "máng"
-      ],
-      "answer": "B",
-      "explanation": "没有 đọc là méiyǒu, nghĩa là không có, chưa có. Tham chiếu: PDF bài 3, trang 12.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “朋友” có nghĩa là gì?",
-      "options": [
-        "bạn bè",
-        "đều",
-        "ngồi",
-        "hào, hố; trở ngại trong câu tục ngữ"
-      ],
-      "answer": "A",
-      "explanation": "朋友 đọc là péngyou, nghĩa là bạn bè. Tham chiếu: PDF bài 3, trang 13.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “péngyou” và nghĩa “bạn bè”.",
-      "options": [
-        "朋友",
-        "飞机",
-        "还",
-        "这些"
-      ],
-      "answer": "A",
-      "explanation": "朋友 đọc là péngyou, nghĩa là bạn bè. Tham chiếu: PDF bài 3, trang 13.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “朋友” với nghĩa “bạn bè”.",
-      "options": [
-        "měi",
-        "ne",
-        "yǒu",
-        "péngyou"
-      ],
-      "answer": "D",
-      "explanation": "朋友 đọc là péngyou, nghĩa là bạn bè. Tham chiếu: PDF bài 3, trang 13.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “高兴” có nghĩa là gì?",
-      "options": [
-        "vui mừng",
-        "bút lông",
-        "trí tuệ, sự khôn ngoan",
-        "ăn"
-      ],
-      "answer": "A",
-      "explanation": "高兴 đọc là gāoxìng, nghĩa là vui mừng. Tham chiếu: PDF bài 3, trang 13.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “gāoxìng” và nghĩa “vui mừng”.",
-      "options": [
-        "高兴",
-        "飞机",
-        "没事",
-        "贵"
-      ],
-      "answer": "A",
-      "explanation": "高兴 đọc là gāoxìng, nghĩa là vui mừng. Tham chiếu: PDF bài 3, trang 13.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “高兴” với nghĩa “vui mừng”.",
-      "options": [
-        "gāoxìng",
-        "guó",
-        "xuésheng",
-        "māma"
-      ],
-      "answer": "A",
-      "explanation": "高兴 đọc là gāoxìng, nghĩa là vui mừng. Tham chiếu: PDF bài 3, trang 13.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “认识” có nghĩa là gì?",
-      "options": [
-        "máy bay",
-        "quen, biết một người",
-        "ông, ngài; cách xưng hô lịch sự",
-        "mới"
-      ],
-      "answer": "B",
-      "explanation": "认识 đọc là rènshi, nghĩa là quen, biết một người. Tham chiếu: PDF bài 3, trang 14.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “rènshi” và nghĩa “quen, biết một người”.",
-      "options": [
-        "爸爸",
-        "就是",
-        "男朋友",
-        "认识"
-      ],
-      "answer": "D",
-      "explanation": "认识 đọc là rènshi, nghĩa là quen, biết một người. Tham chiếu: PDF bài 3, trang 14.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “认识” với nghĩa “quen, biết một người”.",
-      "options": [
-        "měi",
-        "gōngsī",
-        "nǎ",
-        "rènshi"
-      ],
-      "answer": "D",
-      "explanation": "认识 đọc là rènshi, nghĩa là quen, biết một người. Tham chiếu: PDF bài 3, trang 14.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “先生” có nghĩa là gì?",
-      "options": [
-        "tiền bạc",
-        "ông, ngài; cách xưng hô lịch sự",
-        "người",
-        "họ Mã; con ngựa"
-      ],
-      "answer": "B",
-      "explanation": "先生 đọc là xiānsheng, nghĩa là ông, ngài; cách xưng hô lịch sự. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “xiānsheng” và nghĩa “ông, ngài; cách xưng hô lịch sự”.",
-      "options": [
-        "请假",
-        "人",
-        "先生",
-        "新"
-      ],
-      "answer": "C",
-      "explanation": "先生 đọc là xiānsheng, nghĩa là ông, ngài; cách xưng hô lịch sự. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “先生” với nghĩa “ông, ngài; cách xưng hô lịch sự”.",
-      "options": [
-        "wǎng",
-        "kāfēi",
-        "xiānsheng",
-        "yī"
-      ],
-      "answer": "C",
-      "explanation": "先生 đọc là xiānsheng, nghĩa là ông, ngài; cách xưng hô lịch sự. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “女士” có nghĩa là gì?",
-      "options": [
-        "tăng trưởng, tăng thêm",
-        "rất",
-        "bà, cô; cách xưng hô lịch sự",
-        "ai"
-      ],
-      "answer": "C",
-      "explanation": "女士 đọc là nǚshì, nghĩa là bà, cô; cách xưng hô lịch sự. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “nǚshì” và nghĩa “bà, cô; cách xưng hô lịch sự”.",
-      "options": [
-        "黄文丽",
-        "堑",
-        "女士",
-        "名片"
-      ],
-      "answer": "C",
-      "explanation": "女士 đọc là nǚshì, nghĩa là bà, cô; cách xưng hô lịch sự. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “女士” với nghĩa “bà, cô; cách xưng hô lịch sự”.",
-      "options": [
-        "zuò",
-        "gāochù",
-        "duìbuqǐ",
-        "nǚshì"
-      ],
-      "answer": "D",
-      "explanation": "女士 đọc là nǚshì, nghĩa là bà, cô; cách xưng hô lịch sự. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “马” có nghĩa là gì?",
-      "options": [
-        "ông, ngài; cách xưng hô lịch sự",
-        "họ Mã; con ngựa",
-        "không; từ phủ định",
-        "giáo viên"
-      ],
-      "answer": "B",
-      "explanation": "马 đọc là mǎ, nghĩa là họ Mã; con ngựa. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “mǎ” và nghĩa “họ Mã; con ngựa”.",
-      "options": [
-        "高兴",
-        "马",
-        "中国人",
-        "身体"
-      ],
-      "answer": "B",
-      "explanation": "马 đọc là mǎ, nghĩa là họ Mã; con ngựa. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “马” với nghĩa “họ Mã; con ngựa”.",
-      "options": [
-        "qǐngwèn",
-        "xīn",
-        "mǎ",
-        "xuésheng"
-      ],
-      "answer": "C",
-      "explanation": "马 đọc là mǎ, nghĩa là họ Mã; con ngựa. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “黄文丽” có nghĩa là gì?",
-      "options": [
-        "công ty",
-        "bà, cô; cách xưng hô lịch sự",
-        "Hoàng Văn Lệ, tên nhân vật",
-        "ngon, dùng cho đồ ăn"
-      ],
-      "answer": "C",
-      "explanation": "黄文丽 đọc là Huáng Wénlì, nghĩa là Hoàng Văn Lệ, tên nhân vật. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “Huáng Wénlì” và nghĩa “Hoàng Văn Lệ, tên nhân vật”.",
-      "options": [
-        "越南",
-        "英国人",
-        "英语书",
-        "黄文丽"
-      ],
-      "answer": "D",
-      "explanation": "黄文丽 đọc là Huáng Wénlì, nghĩa là Hoàng Văn Lệ, tên nhân vật. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “黄文丽” với nghĩa “Hoàng Văn Lệ, tên nhân vật”.",
-      "options": [
-        "míngzi",
-        "shēntǐ",
-        "Huáng Wénlì",
-        "xiānsheng"
-      ],
-      "answer": "C",
-      "explanation": "黄文丽 đọc là Huáng Wénlì, nghĩa là Hoàng Văn Lệ, tên nhân vật. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “也” có nghĩa là gì?",
-      "options": [
-        "cũng",
-        "nơi thấp",
-        "đắt; quý trong cách nói kính trọng",
-        "sách tiếng Hán"
-      ],
-      "answer": "A",
-      "explanation": "也 đọc là yě, nghĩa là cũng. Tham chiếu: PDF bài 3, trang 16.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “yě” và nghĩa “cũng”.",
-      "options": [
-        "也",
-        "好朋友",
-        "贵姓",
-        "英语书"
-      ],
-      "answer": "A",
-      "explanation": "也 đọc là yě, nghĩa là cũng. Tham chiếu: PDF bài 3, trang 16.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “也” với nghĩa “cũng”.",
-      "options": [
-        "yě",
-        "Yīngyǔ shū",
-        "jìn",
-        "zuò"
-      ],
-      "answer": "A",
-      "explanation": "也 đọc là yě, nghĩa là cũng. Tham chiếu: PDF bài 3, trang 16.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “小” có nghĩa là gì?",
-      "options": [
-        "không sao, không có việc gì",
-        "không có, chưa có",
-        "vui mừng",
-        "nhỏ, bé"
-      ],
-      "answer": "D",
-      "explanation": "小 đọc là xiǎo, nghĩa là nhỏ, bé. Tham chiếu: PDF bài 3, trang 16.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “xiǎo” và nghĩa “nhỏ, bé”.",
-      "options": [
-        "谁",
-        "请假",
-        "小",
+        "汉语书",
+        "有",
         "好朋友"
       ],
-      "answer": "C",
-      "explanation": "小 đọc là xiǎo, nghĩa là nhỏ, bé. Tham chiếu: PDF bài 3, trang 16.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “小” với nghĩa “nhỏ, bé”.",
-      "options": [
-        "māma",
-        "jīnqián",
-        "Huáng",
-        "xiǎo"
-      ],
-      "answer": "D",
-      "explanation": "小 đọc là xiǎo, nghĩa là nhỏ, bé. Tham chiếu: PDF bài 3, trang 16.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “大” có nghĩa là gì?",
-      "options": [
-        "họ Mã; con ngựa",
-        "chính là",
-        "sách tiếng Anh",
-        "to, lớn"
-      ],
-      "answer": "D",
-      "explanation": "大 đọc là dà, nghĩa là to, lớn. Tham chiếu: PDF bài 3, trang 16.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “dà” và nghĩa “to, lớn”.",
-      "options": [
-        "这",
-        "没有",
-        "大",
-        "黄文丽"
-      ],
-      "answer": "C",
-      "explanation": "大 đọc là dà, nghĩa là to, lớn. Tham chiếu: PDF bài 3, trang 16.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “大” với nghĩa “to, lớn”.",
-      "options": [
-        "shū",
-        "dà",
-        "fēijī",
-        "qǐngwèn"
-      ],
-      "answer": "B",
-      "explanation": "大 đọc là dà, nghĩa là to, lớn. Tham chiếu: PDF bài 3, trang 16.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “都” có nghĩa là gì?",
-      "options": [
-        "hỏi",
-        "người Anh",
-        "đều",
-        "sách tiếng Anh"
-      ],
-      "answer": "C",
-      "explanation": "都 đọc là dōu, nghĩa là đều. Tham chiếu: PDF bài 3, trang 17.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “dōu” và nghĩa “đều”.",
-      "options": [
-        "智",
-        "很",
-        "都",
-        "叫"
-      ],
-      "answer": "C",
-      "explanation": "都 đọc là dōu, nghĩa là đều. Tham chiếu: PDF bài 3, trang 17.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “都” với nghĩa “đều”.",
-      "options": [
-        "yě",
-        "máobǐ",
-        "guì",
-        "dōu"
-      ],
-      "answer": "D",
-      "explanation": "都 đọc là dōu, nghĩa là đều. Tham chiếu: PDF bài 3, trang 17.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “忙” có nghĩa là gì?",
-      "options": [
-        "họ Hoàng",
-        "bận",
-        "bạn tốt, bạn thân",
-        "chúng tôi, chúng ta"
-      ],
-      "answer": "B",
-      "explanation": "忙 đọc là máng, nghĩa là bận. Tham chiếu: PDF bài 3, trang 17.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “máng” và nghĩa “bận”.",
-      "options": [
-        "好朋友",
-        "问",
-        "我们",
-        "忙"
-      ],
-      "answer": "D",
-      "explanation": "忙 đọc là máng, nghĩa là bận. Tham chiếu: PDF bài 3, trang 17.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “忙” với nghĩa “bận”.",
-      "options": [
-        "péngyou",
-        "wǎng",
-        "Huáng Wénlì",
-        "máng"
-      ],
-      "answer": "D",
-      "explanation": "忙 đọc là máng, nghĩa là bận. Tham chiếu: PDF bài 3, trang 17.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “进” có nghĩa là gì?",
-      "options": [
-        "vào",
-        "nước, quốc gia",
-        "không có, chưa có",
-        "cơ thể, sức khỏe"
-      ],
-      "answer": "A",
-      "explanation": "进 đọc là jìn, nghĩa là vào. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “jìn” và nghĩa “vào”.",
-      "options": [
-        "进",
-        "中国人",
-        "小",
-        "时间"
-      ],
-      "answer": "A",
-      "explanation": "进 đọc là jìn, nghĩa là vào. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “进” với nghĩa “vào”.",
-      "options": [
-        "zhèxiē",
-        "guìxìng",
-        "jìn",
-        "xuésheng"
-      ],
-      "answer": "C",
-      "explanation": "进 đọc là jìn, nghĩa là vào. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “坐” có nghĩa là gì?",
-      "options": [
-        "học sinh, sinh viên",
-        "cà phê",
-        "ngồi",
-        "cũng"
-      ],
-      "answer": "C",
-      "explanation": "坐 đọc là zuò, nghĩa là ngồi. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “zuò” và nghĩa “ngồi”.",
-      "options": [
-        "泰国人",
-        "坐",
-        "小",
-        "朋友"
-      ],
-      "answer": "B",
-      "explanation": "坐 đọc là zuò, nghĩa là ngồi. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “坐” với nghĩa “ngồi”.",
-      "options": [
-        "zuò",
-        "kǎoyā",
-        "chī",
-        "máng"
-      ],
-      "answer": "A",
-      "explanation": "坐 đọc là zuò, nghĩa là ngồi. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “请假” có nghĩa là gì?",
-      "options": [
-        "máy bay",
-        "không có, chưa có",
-        "xin nghỉ phép",
-        "đắt; quý trong cách nói kính trọng"
-      ],
-      "answer": "C",
-      "explanation": "请假 đọc là qǐngjià, nghĩa là xin nghỉ phép. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “qǐngjià” và nghĩa “xin nghỉ phép”.",
-      "options": [
-        "老师",
-        "哪",
-        "新",
-        "请假"
-      ],
-      "answer": "D",
-      "explanation": "请假 đọc là qǐngjià, nghĩa là xin nghỉ phép. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “请假” với nghĩa “xin nghỉ phép”.",
-      "options": [
-        "zuò",
-        "méi guānxi",
-        "qǐngjià",
-        "dīchù"
-      ],
-      "answer": "C",
-      "explanation": "请假 đọc là qǐngjià, nghĩa là xin nghỉ phép. Tham chiếu: PDF bài 3, trang 5.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “还” có nghĩa là gì?",
-      "options": [
-        "bút lông",
-        "chảy",
-        "không sao, không có gì",
-        "vẫn, còn; cũng khá"
-      ],
-      "answer": "D",
-      "explanation": "还 đọc là hái, nghĩa là vẫn, còn; cũng khá. Tham chiếu: PDF bài 3, trang 6.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “hái” và nghĩa “vẫn, còn; cũng khá”.",
-      "options": [
-        "老师",
-        "好吃",
-        "还",
-        "智"
-      ],
-      "answer": "C",
-      "explanation": "还 đọc là hái, nghĩa là vẫn, còn; cũng khá. Tham chiếu: PDF bài 3, trang 6.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “还” với nghĩa “vẫn, còn; cũng khá”.",
-      "options": [
-        "hái",
-        "Tàiguó rén",
-        "ne",
-        "zhè"
-      ],
-      "answer": "A",
-      "explanation": "还 đọc là hái, nghĩa là vẫn, còn; cũng khá. Tham chiếu: PDF bài 3, trang 6.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “好吃” có nghĩa là gì?",
-      "options": [
-        "học sinh, sinh viên",
-        "thời gian",
-        "tiền bạc",
-        "ngon, dùng cho đồ ăn"
-      ],
-      "answer": "D",
-      "explanation": "好吃 đọc là hǎochī, nghĩa là ngon, dùng cho đồ ăn. Tham chiếu: PDF bài 3, trang 6.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “hǎochī” và nghĩa “ngon, dùng cho đồ ăn”.",
-      "options": [
-        "老师",
-        "请问",
-        "那些",
-        "好吃"
-      ],
-      "answer": "D",
-      "explanation": "好吃 đọc là hǎochī, nghĩa là ngon, dùng cho đồ ăn. Tham chiếu: PDF bài 3, trang 6.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “好吃” với nghĩa “ngon, dùng cho đồ ăn”.",
-      "options": [
-        "jiào",
-        "hǎochī",
-        "hěn",
-        "wǎng"
-      ],
-      "answer": "B",
-      "explanation": "好吃 đọc là hǎochī, nghĩa là ngon, dùng cho đồ ăn. Tham chiếu: PDF bài 3, trang 6.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “烤鸭” có nghĩa là gì?",
-      "options": [
-        "cảm thấy, cho rằng",
-        "không sao, không có gì",
-        "vịt quay",
-        "đều"
-      ],
-      "answer": "C",
-      "explanation": "烤鸭 đọc là kǎoyā, nghĩa là vịt quay. Tham chiếu: PDF bài 3, trang 6.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “kǎoyā” và nghĩa “vịt quay”.",
-      "options": [
-        "请假",
-        "烤鸭",
-        "还",
-        "泰国人"
-      ],
-      "answer": "B",
-      "explanation": "烤鸭 đọc là kǎoyā, nghĩa là vịt quay. Tham chiếu: PDF bài 3, trang 6.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “烤鸭” với nghĩa “vịt quay”.",
-      "options": [
-        "máobǐ",
-        "kǎoyā",
-        "qǐngwèn",
-        "dà"
-      ],
-      "answer": "B",
-      "explanation": "烤鸭 đọc là kǎoyā, nghĩa là vịt quay. Tham chiếu: PDF bài 3, trang 6.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “便宜” có nghĩa là gì?",
-      "options": [
-        "mua",
-        "họ Hoàng",
-        "một",
-        "rẻ"
-      ],
-      "answer": "D",
-      "explanation": "便宜 đọc là piányi, nghĩa là rẻ. Tham chiếu: PDF bài 3, trang 6.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “piányi” và nghĩa “rẻ”.",
-      "options": [
-        "觉得",
-        "进",
-        "便宜",
-        "堑"
-      ],
-      "answer": "C",
-      "explanation": "便宜 đọc là piányi, nghĩa là rẻ. Tham chiếu: PDF bài 3, trang 6.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “便宜” với nghĩa “rẻ”.",
-      "options": [
-        "nǚshì",
-        "juéde",
-        "shénme",
-        "piányi"
-      ],
-      "answer": "D",
-      "explanation": "便宜 đọc là piányi, nghĩa là rẻ. Tham chiếu: PDF bài 3, trang 6.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “这些” có nghĩa là gì?",
-      "options": [
-        "những cái này",
-        "xin, mời",
-        "bận",
-        "bạn bè"
-      ],
-      "answer": "A",
-      "explanation": "这些 đọc là zhèxiē, nghĩa là những cái này. Tham chiếu: PDF bài 3, trang 7.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “zhèxiē” và nghĩa “những cái này”.",
-      "options": [
-        "毛笔",
-        "爸爸",
-        "这些",
-        "英语书"
-      ],
-      "answer": "C",
-      "explanation": "这些 đọc là zhèxiē, nghĩa là những cái này. Tham chiếu: PDF bài 3, trang 7.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “这些” với nghĩa “những cái này”.",
-      "options": [
-        "zhèxiē",
-        "méi guānxi",
-        "nǚshì",
-        "ne"
-      ],
-      "answer": "A",
-      "explanation": "这些 đọc là zhèxiē, nghĩa là những cái này. Tham chiếu: PDF bài 3, trang 7.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “那些” có nghĩa là gì?",
-      "options": [
-        "xin nghỉ phép",
-        "rất",
-        "những cái kia",
-        "đẹp; yếu tố chỉ Mỹ trong tên nước"
-      ],
-      "answer": "C",
-      "explanation": "那些 đọc là nàxiē, nghĩa là những cái kia. Tham chiếu: PDF bài 3, trang 8.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “nàxiē” và nghĩa “những cái kia”.",
-      "options": [
-        "没有",
-        "先生",
-        "那些",
-        "这"
-      ],
-      "answer": "C",
-      "explanation": "那些 đọc là nàxiē, nghĩa là những cái kia. Tham chiếu: PDF bài 3, trang 8.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “那些” với nghĩa “những cái kia”.",
-      "options": [
-        "duìbuqǐ",
-        "kāfēi",
-        "nàxiē",
-        "shū"
-      ],
-      "answer": "C",
-      "explanation": "那些 đọc là nàxiē, nghĩa là những cái kia. Tham chiếu: PDF bài 3, trang 8.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “书” có nghĩa là gì?",
-      "options": [
-        "công ty",
-        "sách",
-        "ăn",
-        "chính là"
-      ],
-      "answer": "B",
-      "explanation": "书 đọc là shū, nghĩa là sách. Tham chiếu: PDF bài 3, trang 8.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “shū” và nghĩa “sách”.",
-      "options": [
-        "黄",
-        "书",
-        "爸爸",
-        "高兴"
-      ],
-      "answer": "B",
-      "explanation": "书 đọc là shū, nghĩa là sách. Tham chiếu: PDF bài 3, trang 8.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “书” với nghĩa “sách”.",
-      "options": [
-        "wǎng",
-        "jìn",
-        "de",
-        "shū"
-      ],
-      "answer": "D",
-      "explanation": "书 đọc là shū, nghĩa là sách. Tham chiếu: PDF bài 3, trang 8.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “汉语书” có nghĩa là gì?",
-      "options": [
-        "gì, cái gì",
-        "của; trợ từ nối định ngữ",
-        "sách tiếng Hán",
-        "nhỏ, bé"
-      ],
-      "answer": "C",
-      "explanation": "汉语书 đọc là Hànyǔ shū, nghĩa là sách tiếng Hán. Tham chiếu: PDF bài 3, trang 12.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “Hànyǔ shū” và nghĩa “sách tiếng Hán”.",
-      "options": [
-        "汉语书",
-        "先生",
-        "女朋友",
-        "坐"
-      ],
-      "answer": "A",
-      "explanation": "汉语书 đọc là Hànyǔ shū, nghĩa là sách tiếng Hán. Tham chiếu: PDF bài 3, trang 12.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “汉语书” với nghĩa “sách tiếng Hán”.",
-      "options": [
-        "Hànyǔ shū",
-        "qǐngwèn",
-        "máng",
-        "zhè"
-      ],
-      "answer": "A",
-      "explanation": "汉语书 đọc là Hànyǔ shū, nghĩa là sách tiếng Hán. Tham chiếu: PDF bài 3, trang 12.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “英语书” có nghĩa là gì?",
-      "options": [
-        "đi, bước đi",
-        "người Trung Quốc",
-        "sách tiếng Anh",
-        "nước"
-      ],
-      "answer": "C",
-      "explanation": "英语书 đọc là Yīngyǔ shū, nghĩa là sách tiếng Anh. Tham chiếu: PDF bài 3, trang 12.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “Yīngyǔ shū” và nghĩa “sách tiếng Anh”.",
-      "options": [
-        "男朋友",
-        "泰国人",
-        "英语书",
-        "都"
-      ],
-      "answer": "C",
-      "explanation": "英语书 đọc là Yīngyǔ shū, nghĩa là sách tiếng Anh. Tham chiếu: PDF bài 3, trang 12.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “英语书” với nghĩa “sách tiếng Anh”.",
-      "options": [
-        "Yīngyǔ shū",
-        "shēntǐ",
-        "liú",
-        "hǎochī"
-      ],
-      "answer": "A",
-      "explanation": "英语书 đọc là Yīngyǔ shū, nghĩa là sách tiếng Anh. Tham chiếu: PDF bài 3, trang 12.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “女朋友” có nghĩa là gì?",
-      "options": [
-        "bạn gái",
-        "gì, cái gì",
-        "quý tính; hỏi họ một cách lịch sự",
-        "Việt Nam"
-      ],
-      "answer": "A",
-      "explanation": "女朋友 đọc là nǚ péngyou, nghĩa là bạn gái. Tham chiếu: PDF bài 3, trang 13.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “nǚ péngyou” và nghĩa “bạn gái”.",
-      "options": [
-        "请问",
-        "谁",
-        "女朋友",
-        "什么"
-      ],
-      "answer": "C",
-      "explanation": "女朋友 đọc là nǚ péngyou, nghĩa là bạn gái. Tham chiếu: PDF bài 3, trang 13.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “女朋友” với nghĩa “bạn gái”.",
-      "options": [
-        "mǎ",
-        "nǚ péngyou",
-        "māma",
-        "měi"
-      ],
-      "answer": "B",
-      "explanation": "女朋友 đọc là nǚ péngyou, nghĩa là bạn gái. Tham chiếu: PDF bài 3, trang 13.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “男朋友” có nghĩa là gì?",
-      "options": [
-        "họ Mã; con ngựa",
-        "bạn trai",
-        "nơi cao",
-        "xin hỏi"
-      ],
-      "answer": "B",
-      "explanation": "男朋友 đọc là nán péngyou, nghĩa là bạn trai. Tham chiếu: PDF bài 3, trang 13.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “nán péngyou” và nghĩa “bạn trai”.",
-      "options": [
-        "低处",
-        "问",
-        "男朋友",
-        "学生"
-      ],
-      "answer": "C",
-      "explanation": "男朋友 đọc là nán péngyou, nghĩa là bạn trai. Tham chiếu: PDF bài 3, trang 13.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “男朋友” với nghĩa “bạn trai”.",
-      "options": [
-        "nán péngyou",
-        "duìbuqǐ",
-        "lǎoshī",
-        "rén"
-      ],
-      "answer": "A",
-      "explanation": "男朋友 đọc là nán péngyou, nghĩa là bạn trai. Tham chiếu: PDF bài 3, trang 13.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “好朋友” có nghĩa là gì?",
-      "options": [
-        "người Anh",
-        "chính là",
-        "bạn tốt, bạn thân",
-        "trợ từ; dùng để hỏi lại trong bài"
-      ],
-      "answer": "C",
-      "explanation": "好朋友 đọc là hǎo péngyou, nghĩa là bạn tốt, bạn thân. Tham chiếu: PDF bài 3, trang 13.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “hǎo péngyou” và nghĩa “bạn tốt, bạn thân”.",
-      "options": [
-        "那",
-        "好朋友",
-        "我们",
-        "呢"
-      ],
-      "answer": "B",
-      "explanation": "好朋友 đọc là hǎo péngyou, nghĩa là bạn tốt, bạn thân. Tham chiếu: PDF bài 3, trang 13.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “好朋友” với nghĩa “bạn tốt, bạn thân”.",
-      "options": [
-        "mǎ",
-        "yī",
-        "gāochù",
-        "hǎo péngyou"
-      ],
-      "answer": "D",
-      "explanation": "好朋友 đọc là hǎo péngyou, nghĩa là bạn tốt, bạn thân. Tham chiếu: PDF bài 3, trang 13.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “王” có nghĩa là gì?",
-      "options": [
-        "Trung Quốc",
-        "chúng tôi, chúng ta",
-        "họ Vương",
-        "xin hỏi"
-      ],
-      "answer": "C",
-      "explanation": "王 đọc là Wáng, nghĩa là họ Vương. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “Wáng” và nghĩa “họ Vương”.",
-      "options": [
-        "王",
-        "很",
-        "没事",
-        "泰国人"
-      ],
-      "answer": "A",
-      "explanation": "王 đọc là Wáng, nghĩa là họ Vương. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “王” với nghĩa “họ Vương”.",
-      "options": [
-        "Měiguó rén",
-        "míngpiàn",
-        "Wáng",
-        "máobǐ"
-      ],
-      "answer": "C",
-      "explanation": "王 đọc là Wáng, nghĩa là họ Vương. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “黄” có nghĩa là gì?",
-      "options": [
-        "người Anh",
-        "họ Hoàng",
-        "Hoàng Văn Lệ, tên nhân vật",
-        "của; trợ từ nối định ngữ"
-      ],
-      "answer": "B",
-      "explanation": "黄 đọc là Huáng, nghĩa là họ Hoàng. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “Huáng” và nghĩa “họ Hoàng”.",
-      "options": [
-        "国",
-        "黄",
-        "中国人",
-        "老师"
-      ],
-      "answer": "B",
-      "explanation": "黄 đọc là Huáng, nghĩa là họ Hoàng. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “黄” với nghĩa “họ Hoàng”.",
-      "options": [
-        "liú",
-        "rènshi",
-        "jìn",
-        "Huáng"
-      ],
-      "answer": "D",
-      "explanation": "黄 đọc là Huáng, nghĩa là họ Hoàng. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “老师” có nghĩa là gì?",
-      "options": [
-        "trợ từ; dùng để hỏi lại trong bài",
-        "giáo viên",
-        "mua",
-        "xin, mời"
-      ],
-      "answer": "B",
-      "explanation": "老师 đọc là lǎoshī, nghĩa là giáo viên. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “lǎoshī” và nghĩa “giáo viên”.",
-      "options": [
-        "坐",
-        "一",
-        "名字",
-        "老师"
-      ],
-      "answer": "D",
-      "explanation": "老师 đọc là lǎoshī, nghĩa là giáo viên. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “老师” với nghĩa “giáo viên”.",
-      "options": [
-        "lǎoshī",
-        "méiyǒu",
-        "jiào",
-        "gāochù"
-      ],
-      "answer": "A",
-      "explanation": "老师 đọc là lǎoshī, nghĩa là giáo viên. Tham chiếu: PDF bài 3, trang 15.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “名字” có nghĩa là gì?",
-      "options": [
-        "tên",
-        "công ty",
-        "gì, cái gì",
-        "chính là"
-      ],
-      "answer": "A",
-      "explanation": "名字 đọc là míngzi, nghĩa là tên. Tham chiếu: PDF bài 3, trang 19.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “míngzi” và nghĩa “tên”.",
-      "options": [
-        "金钱",
-        "飞机",
-        "王",
-        "名字"
-      ],
-      "answer": "D",
-      "explanation": "名字 đọc là míngzi, nghĩa là tên. Tham chiếu: PDF bài 3, trang 19.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “名字” với nghĩa “tên”.",
-      "options": [
-        "lǎoshī",
-        "máng",
-        "yě",
-        "míngzi"
-      ],
-      "answer": "D",
-      "explanation": "名字 đọc là míngzi, nghĩa là tên. Tham chiếu: PDF bài 3, trang 19.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “爸爸” có nghĩa là gì?",
-      "options": [
-        "Việt Nam",
-        "bố",
-        "xin hỏi",
-        "xin, mời"
-      ],
-      "answer": "B",
-      "explanation": "爸爸 đọc là bàba, nghĩa là bố. Tham chiếu: PDF bài 3, trang 21.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “bàba” và nghĩa “bố”.",
-      "options": [
-        "汉语书",
-        "没关系",
-        "国",
-        "爸爸"
-      ],
-      "answer": "D",
-      "explanation": "爸爸 đọc là bàba, nghĩa là bố. Tham chiếu: PDF bài 3, trang 21.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “爸爸” với nghĩa “bố”.",
-      "options": [
-        "zuò",
-        "guó",
-        "bàba",
-        "duìbuqǐ"
-      ],
-      "answer": "C",
-      "explanation": "爸爸 đọc là bàba, nghĩa là bố. Tham chiếu: PDF bài 3, trang 21.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “妈妈” có nghĩa là gì?",
-      "options": [
-        "mẹ",
-        "học sinh, sinh viên",
-        "không có, chưa có",
-        "sách tiếng Hán"
-      ],
-      "answer": "A",
-      "explanation": "妈妈 đọc là māma, nghĩa là mẹ. Tham chiếu: PDF bài 3, trang 21.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “māma” và nghĩa “mẹ”.",
-      "options": [
-        "也",
-        "好朋友",
-        "妈妈",
-        "流"
-      ],
-      "answer": "C",
-      "explanation": "妈妈 đọc là māma, nghĩa là mẹ. Tham chiếu: PDF bài 3, trang 21.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “妈妈” với nghĩa “mẹ”.",
-      "options": [
-        "māma",
-        "nǎ",
-        "dōu",
-        "Yīngguó rén"
-      ],
-      "answer": "A",
-      "explanation": "妈妈 đọc là māma, nghĩa là mẹ. Tham chiếu: PDF bài 3, trang 21.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “公司” có nghĩa là gì?",
-      "options": [
-        "bạn trai",
-        "công ty",
-        "cũng",
-        "bạn bè"
-      ],
-      "answer": "B",
-      "explanation": "公司 đọc là gōngsī, nghĩa là công ty. Tham chiếu: PDF bài 3, trang 21.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “gōngsī” và nghĩa “công ty”.",
-      "options": [
-        "公司",
-        "流",
-        "智",
-        "越南"
-      ],
-      "answer": "A",
-      "explanation": "公司 đọc là gōngsī, nghĩa là công ty. Tham chiếu: PDF bài 3, trang 21.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “公司” với nghĩa “công ty”.",
-      "options": [
-        "kāfēi",
-        "gōngsī",
-        "liú",
-        "shū"
-      ],
-      "answer": "B",
-      "explanation": "公司 đọc là gōngsī, nghĩa là công ty. Tham chiếu: PDF bài 3, trang 21.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “买” có nghĩa là gì?",
-      "options": [
-        "tiền bạc",
-        "rẻ",
-        "mua",
-        "xin nghỉ phép"
-      ],
-      "answer": "C",
-      "explanation": "买 đọc là mǎi, nghĩa là mua. Tham chiếu: PDF bài 3, trang 25.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “mǎi” và nghĩa “mua”.",
-      "options": [
-        "请假",
-        "买",
-        "的",
-        "身体"
-      ],
-      "answer": "B",
-      "explanation": "买 đọc là mǎi, nghĩa là mua. Tham chiếu: PDF bài 3, trang 25.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “买” với nghĩa “mua”.",
-      "options": [
-        "máng",
-        "mǎi",
-        "fēijī",
-        "qǐngjià"
-      ],
-      "answer": "B",
-      "explanation": "买 đọc là mǎi, nghĩa là mua. Tham chiếu: PDF bài 3, trang 25.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “我们” có nghĩa là gì?",
-      "options": [
-        "đều",
-        "sách tiếng Hán",
-        "chúng tôi, chúng ta",
-        "không sao, không có gì"
-      ],
-      "answer": "C",
-      "explanation": "我们 đọc là wǒmen, nghĩa là chúng tôi, chúng ta. Tham chiếu: PDF bài 3, trang 26.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “wǒmen” và nghĩa “chúng tôi, chúng ta”.",
-      "options": [
-        "高处",
-        "我们",
-        "先生",
-        "吃"
-      ],
-      "answer": "B",
-      "explanation": "我们 đọc là wǒmen, nghĩa là chúng tôi, chúng ta. Tham chiếu: PDF bài 3, trang 26.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “我们” với nghĩa “chúng tôi, chúng ta”.",
-      "options": [
-        "Huáng",
-        "yě",
-        "Hànyǔ shū",
-        "wǒmen"
-      ],
-      "answer": "D",
-      "explanation": "我们 đọc là wǒmen, nghĩa là chúng tôi, chúng ta. Tham chiếu: PDF bài 3, trang 26.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “谁” có nghĩa là gì?",
-      "options": [
-        "xin, mời",
-        "ai",
-        "đắt; quý trong cách nói kính trọng",
-        "ăn"
-      ],
-      "answer": "B",
-      "explanation": "谁 đọc là shéi, nghĩa là ai. Tham chiếu: PDF bài 3, trang 29.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “shéi” và nghĩa “ai”.",
-      "options": [
-        "名片",
-        "这",
-        "先生",
-        "谁"
-      ],
-      "answer": "D",
-      "explanation": "谁 đọc là shéi, nghĩa là ai. Tham chiếu: PDF bài 3, trang 29.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “谁” với nghĩa “ai”.",
-      "options": [
-        "péngyou",
-        "wèn",
-        "Hànyǔ shū",
-        "shéi"
-      ],
-      "answer": "D",
-      "explanation": "谁 đọc là shéi, nghĩa là ai. Tham chiếu: PDF bài 3, trang 29.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “学生” có nghĩa là gì?",
-      "options": [
-        "họ Vương",
-        "không có, chưa có",
-        "quý tính; hỏi họ một cách lịch sự",
-        "học sinh, sinh viên"
-      ],
-      "answer": "D",
-      "explanation": "学生 đọc là xuésheng, nghĩa là học sinh, sinh viên. Tham chiếu: PDF bài 3, trang 29.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “xuésheng” và nghĩa “học sinh, sinh viên”.",
-      "options": [
-        "学生",
-        "这些",
-        "小",
-        "请假"
-      ],
-      "answer": "A",
-      "explanation": "学生 đọc là xuésheng, nghĩa là học sinh, sinh viên. Tham chiếu: PDF bài 3, trang 29.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “学生” với nghĩa “học sinh, sinh viên”.",
-      "options": [
-        "dà",
-        "shéi",
-        "qǐngwèn",
-        "xuésheng"
-      ],
-      "answer": "D",
-      "explanation": "学生 đọc là xuésheng, nghĩa là học sinh, sinh viên. Tham chiếu: PDF bài 3, trang 29.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “中国人” có nghĩa là gì?",
-      "options": [
-        "bố",
-        "cảm thấy, cho rằng",
-        "người Trung Quốc",
-        "đều"
-      ],
-      "answer": "C",
-      "explanation": "中国人 đọc là Zhōngguó rén, nghĩa là người Trung Quốc. Tham chiếu: PDF bài 3, trang 32.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “Zhōngguó rén” và nghĩa “người Trung Quốc”.",
-      "options": [
-        "中国人",
-        "贵姓",
-        "汉语书",
-        "身体"
-      ],
-      "answer": "A",
-      "explanation": "中国人 đọc là Zhōngguó rén, nghĩa là người Trung Quốc. Tham chiếu: PDF bài 3, trang 32.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “中国人” với nghĩa “người Trung Quốc”.",
-      "options": [
-        "Zhōngguó rén",
-        "máng",
-        "wǒmen",
-        "péngyou"
-      ],
-      "answer": "A",
-      "explanation": "中国人 đọc là Zhōngguó rén, nghĩa là người Trung Quốc. Tham chiếu: PDF bài 3, trang 32.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “英国人” có nghĩa là gì?",
-      "options": [
-        "bố",
-        "đắt; quý trong cách nói kính trọng",
-        "quen, biết một người",
-        "người Anh"
-      ],
-      "answer": "D",
-      "explanation": "英国人 đọc là Yīngguó rén, nghĩa là người Anh. Tham chiếu: PDF bài 3, trang 36.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “Yīngguó rén” và nghĩa “người Anh”.",
-      "options": [
-        "英国人",
-        "低处",
-        "大",
-        "一"
-      ],
-      "answer": "A",
-      "explanation": "英国人 đọc là Yīngguó rén, nghĩa là người Anh. Tham chiếu: PDF bài 3, trang 36.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “英国人” với nghĩa “người Anh”.",
-      "options": [
-        "xīn",
-        "Yīngguó rén",
-        "péngyou",
-        "Huáng Wénlì"
-      ],
-      "answer": "B",
-      "explanation": "英国人 đọc là Yīngguó rén, nghĩa là người Anh. Tham chiếu: PDF bài 3, trang 36.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “美国人” có nghĩa là gì?",
-      "options": [
-        "mẹ",
-        "tăng trưởng, tăng thêm",
-        "người Mỹ",
-        "người Trung Quốc"
-      ],
-      "answer": "C",
-      "explanation": "美国人 đọc là Měiguó rén, nghĩa là người Mỹ. Tham chiếu: PDF bài 3, trang 36.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “Měiguó rén” và nghĩa “người Mỹ”.",
-      "options": [
-        "美国人",
-        "一",
-        "时间",
-        "没事"
-      ],
-      "answer": "A",
-      "explanation": "美国人 đọc là Měiguó rén, nghĩa là người Mỹ. Tham chiếu: PDF bài 3, trang 36.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “美国人” với nghĩa “người Mỹ”.",
-      "options": [
-        "zhì",
-        "méi guānxi",
-        "hǎo péngyou",
-        "Měiguó rén"
-      ],
-      "answer": "D",
-      "explanation": "美国人 đọc là Měiguó rén, nghĩa là người Mỹ. Tham chiếu: PDF bài 3, trang 36.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “泰国人” có nghĩa là gì?",
-      "options": [
-        "sách tiếng Anh",
-        "xin hỏi",
-        "tăng trưởng, tăng thêm",
-        "người Thái Lan"
-      ],
-      "answer": "D",
-      "explanation": "泰国人 đọc là Tàiguó rén, nghĩa là người Thái Lan. Tham chiếu: PDF bài 3, trang 38.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “Tàiguó rén” và nghĩa “người Thái Lan”.",
-      "options": [
-        "智",
-        "泰国人",
-        "王",
-        "朋友"
-      ],
-      "answer": "B",
-      "explanation": "泰国人 đọc là Tàiguó rén, nghĩa là người Thái Lan. Tham chiếu: PDF bài 3, trang 38.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “泰国人” với nghĩa “người Thái Lan”.",
-      "options": [
-        "shū",
-        "Tàiguó rén",
-        "hǎochī",
-        "qǐng"
-      ],
-      "answer": "B",
-      "explanation": "泰国人 đọc là Tàiguó rén, nghĩa là người Thái Lan. Tham chiếu: PDF bài 3, trang 38.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “时间” có nghĩa là gì?",
-      "options": [
-        "đẹp; yếu tố chỉ Mỹ trong tên nước",
-        "ngồi",
-        "sách tiếng Anh",
-        "thời gian"
-      ],
-      "answer": "D",
-      "explanation": "时间 đọc là shíjiān, nghĩa là thời gian. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “shíjiān” và nghĩa “thời gian”.",
-      "options": [
-        "吃",
-        "身体",
-        "时间",
-        "认识"
-      ],
-      "answer": "C",
-      "explanation": "时间 đọc là shíjiān, nghĩa là thời gian. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “时间” với nghĩa “thời gian”.",
-      "options": [
-        "shíjiān",
-        "fēijī",
-        "zhèxiē",
-        "Zhōngguó"
-      ],
-      "answer": "A",
-      "explanation": "时间 đọc là shíjiān, nghĩa là thời gian. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “就是” có nghĩa là gì?",
-      "options": [
-        "chính là",
-        "nhỏ, bé",
-        "mua",
-        "nước, quốc gia"
-      ],
-      "answer": "A",
-      "explanation": "就是 đọc là jiùshì, nghĩa là chính là. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “jiùshì” và nghĩa “chính là”.",
-      "options": [
-        "都",
-        "新",
-        "就是",
-        "毛笔"
-      ],
-      "answer": "C",
-      "explanation": "就是 đọc là jiùshì, nghĩa là chính là. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “就是” với nghĩa “chính là”.",
-      "options": [
-        "yī",
-        "máobǐ",
-        "jiùshì",
-        "nǚshì"
-      ],
-      "answer": "C",
-      "explanation": "就是 đọc là jiùshì, nghĩa là chính là. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “金钱” có nghĩa là gì?",
-      "options": [
-        "tiền bạc",
-        "gì, cái gì",
-        "quen, biết một người",
-        "học sinh, sinh viên"
-      ],
-      "answer": "A",
-      "explanation": "金钱 đọc là jīnqián, nghĩa là tiền bạc. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “jīnqián” và nghĩa “tiền bạc”.",
-      "options": [
-        "买",
-        "金钱",
-        "哪",
-        "美国人"
-      ],
-      "answer": "B",
-      "explanation": "金钱 đọc là jīnqián, nghĩa là tiền bạc. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “金钱” với nghĩa “tiền bạc”.",
-      "options": [
-        "Tàiguó rén",
-        "liú",
-        "jīnqián",
-        "Yīngguó rén"
-      ],
-      "answer": "C",
-      "explanation": "金钱 đọc là jīnqián, nghĩa là tiền bạc. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “吃” có nghĩa là gì?",
-      "options": [
-        "này, đây",
-        "của; trợ từ nối định ngữ",
-        "ăn",
-        "gì, cái gì"
-      ],
-      "answer": "C",
-      "explanation": "吃 đọc là chī, nghĩa là ăn. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “chī” và nghĩa “ăn”.",
-      "options": [
-        "吃",
-        "坐",
-        "呢",
-        "认识"
-      ],
-      "answer": "A",
-      "explanation": "吃 đọc là chī, nghĩa là ăn. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “吃” với nghĩa “ăn”.",
-      "options": [
-        "Huáng",
-        "zhì",
-        "chī",
-        "rènshi"
-      ],
-      "answer": "C",
-      "explanation": "吃 đọc là chī, nghĩa là ăn. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “一” có nghĩa là gì?",
-      "options": [
-        "tăng trưởng, tăng thêm",
-        "hướng về, đi về phía",
-        "một",
-        "bà, cô; cách xưng hô lịch sự"
-      ],
-      "answer": "C",
-      "explanation": "一 đọc là yī, nghĩa là một. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “yī” và nghĩa “một”.",
-      "options": [
-        "长",
-        "一",
-        "问",
-        "没有"
-      ],
-      "answer": "B",
-      "explanation": "一 đọc là yī, nghĩa là một. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “一” với nghĩa “một”.",
-      "options": [
-        "fēijī",
-        "Wáng",
-        "shēntǐ",
-        "yī"
-      ],
-      "answer": "D",
-      "explanation": "一 đọc là yī, nghĩa là một. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “堑” có nghĩa là gì?",
-      "options": [
-        "người Mỹ",
-        "bà, cô; cách xưng hô lịch sự",
-        "hào, hố; trở ngại trong câu tục ngữ",
-        "cà phê"
-      ],
-      "answer": "C",
-      "explanation": "堑 đọc là qiàn, nghĩa là hào, hố; trở ngại trong câu tục ngữ. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “qiàn” và nghĩa “hào, hố; trở ngại trong câu tục ngữ”.",
-      "options": [
-        "不",
-        "堑",
-        "这些",
-        "名片"
-      ],
-      "answer": "B",
-      "explanation": "堑 đọc là qiàn, nghĩa là hào, hố; trở ngại trong câu tục ngữ. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “堑” với nghĩa “hào, hố; trở ngại trong câu tục ngữ”.",
-      "options": [
-        "wèn",
-        "qiàn",
-        "nà",
-        "guó"
-      ],
-      "answer": "B",
-      "explanation": "堑 đọc là qiàn, nghĩa là hào, hố; trở ngại trong câu tục ngữ. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “长” có nghĩa là gì?",
-      "options": [
-        "tăng trưởng, tăng thêm",
-        "Việt Nam",
-        "trí tuệ, sự khôn ngoan",
-        "cũng"
-      ],
-      "answer": "A",
-      "explanation": "长 đọc là zhǎng, nghĩa là tăng trưởng, tăng thêm. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “zhǎng” và nghĩa “tăng trưởng, tăng thêm”.",
-      "options": [
-        "请",
-        "高兴",
-        "黄",
-        "长"
-      ],
-      "answer": "D",
-      "explanation": "长 đọc là zhǎng, nghĩa là tăng trưởng, tăng thêm. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “长” với nghĩa “tăng trưởng, tăng thêm”.",
-      "options": [
-        "yǒu",
-        "zhǎng",
-        "guó",
-        "hǎo péngyou"
-      ],
-      "answer": "B",
-      "explanation": "长 đọc là zhǎng, nghĩa là tăng trưởng, tăng thêm. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “智” có nghĩa là gì?",
-      "options": [
-        "trí tuệ, sự khôn ngoan",
-        "danh thiếp",
-        "nơi cao",
-        "tiền bạc"
-      ],
-      "answer": "A",
-      "explanation": "智 đọc là zhì, nghĩa là trí tuệ, sự khôn ngoan. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “zhì” và nghĩa “trí tuệ, sự khôn ngoan”.",
-      "options": [
-        "美",
-        "英语书",
-        "智",
-        "名片"
-      ],
-      "answer": "C",
-      "explanation": "智 đọc là zhì, nghĩa là trí tuệ, sự khôn ngoan. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “智” với nghĩa “trí tuệ, sự khôn ngoan”.",
-      "options": [
-        "hǎochī",
-        "zhì",
-        "méi shì",
-        "guì"
-      ],
-      "answer": "B",
-      "explanation": "智 đọc là zhì, nghĩa là trí tuệ, sự khôn ngoan. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “人” có nghĩa là gì?",
-      "options": [
-        "kia, đó",
-        "to, lớn",
-        "hỏi",
-        "người"
-      ],
-      "answer": "D",
-      "explanation": "人 đọc là rén, nghĩa là người. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “rén” và nghĩa “người”.",
-      "options": [
-        "对不起",
-        "学生",
-        "人",
-        "国"
-      ],
-      "answer": "C",
-      "explanation": "人 đọc là rén, nghĩa là người. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “人” với nghĩa “người”.",
-      "options": [
-        "rén",
-        "yī",
-        "chī",
-        "nǎ"
-      ],
-      "answer": "A",
-      "explanation": "人 đọc là rén, nghĩa là người. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “往” có nghĩa là gì?",
-      "options": [
-        "giáo viên",
-        "cũng",
-        "hướng về, đi về phía",
-        "đẹp; yếu tố chỉ Mỹ trong tên nước"
-      ],
-      "answer": "C",
-      "explanation": "往 đọc là wǎng, nghĩa là hướng về, đi về phía. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “wǎng” và nghĩa “hướng về, đi về phía”.",
-      "options": [
-        "对不起",
-        "往",
-        "不",
-        "没有"
-      ],
-      "answer": "B",
-      "explanation": "往 đọc là wǎng, nghĩa là hướng về, đi về phía. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “往” với nghĩa “hướng về, đi về phía”.",
-      "options": [
-        "shuǐ",
-        "wǎng",
-        "shū",
-        "jìn"
-      ],
-      "answer": "B",
-      "explanation": "往 đọc là wǎng, nghĩa là hướng về, đi về phía. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “高处” có nghĩa là gì?",
-      "options": [
-        "nhỏ, bé",
-        "nơi cao",
-        "nước, quốc gia",
-        "vào"
-      ],
-      "answer": "B",
-      "explanation": "高处 đọc là gāochù, nghĩa là nơi cao. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “gāochù” và nghĩa “nơi cao”.",
-      "options": [
-        "进",
-        "英国人",
-        "请",
-        "高处"
-      ],
-      "answer": "D",
-      "explanation": "高处 đọc là gāochù, nghĩa là nơi cao. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “高处” với nghĩa “nơi cao”.",
-      "options": [
-        "Yīngyǔ shū",
-        "gāochù",
-        "liú",
-        "wǎng"
-      ],
-      "answer": "B",
-      "explanation": "高处 đọc là gāochù, nghĩa là nơi cao. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “走” có nghĩa là gì?",
-      "options": [
-        "bà, cô; cách xưng hô lịch sự",
-        "nhỏ, bé",
-        "tiền bạc",
-        "đi, bước đi"
-      ],
-      "answer": "D",
-      "explanation": "走 đọc là zǒu, nghĩa là đi, bước đi. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “zǒu” và nghĩa “đi, bước đi”.",
-      "options": [
-        "贵姓",
-        "低处",
-        "走",
-        "请"
-      ],
-      "answer": "C",
-      "explanation": "走 đọc là zǒu, nghĩa là đi, bước đi. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “走” với nghĩa “đi, bước đi”.",
-      "options": [
-        "míngzi",
-        "hǎochī",
-        "jiùshì",
-        "zǒu"
-      ],
-      "answer": "D",
-      "explanation": "走 đọc là zǒu, nghĩa là đi, bước đi. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “水” có nghĩa là gì?",
-      "options": [
-        "nước",
-        "đi, bước đi",
-        "ngon, dùng cho đồ ăn",
-        "bà, cô; cách xưng hô lịch sự"
-      ],
-      "answer": "A",
-      "explanation": "水 đọc là shuǐ, nghĩa là nước. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “shuǐ” và nghĩa “nước”.",
-      "options": [
-        "国",
-        "水",
-        "人",
-        "小"
-      ],
-      "answer": "B",
-      "explanation": "水 đọc là shuǐ, nghĩa là nước. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “水” với nghĩa “nước”.",
-      "options": [
-        "nán péngyou",
-        "zuò",
-        "shuǐ",
-        "Yuènán"
-      ],
-      "answer": "C",
-      "explanation": "水 đọc là shuǐ, nghĩa là nước. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “低处” có nghĩa là gì?",
-      "options": [
-        "gì, cái gì",
-        "mua",
-        "không; từ phủ định",
-        "nơi thấp"
-      ],
-      "answer": "D",
-      "explanation": "低处 đọc là dīchù, nghĩa là nơi thấp. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “dīchù” và nghĩa “nơi thấp”.",
-      "options": [
-        "高处",
-        "都",
-        "低处",
-        "坐"
-      ],
-      "answer": "C",
-      "explanation": "低处 đọc là dīchù, nghĩa là nơi thấp. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “低处” với nghĩa “nơi thấp”.",
-      "options": [
-        "mǎ",
-        "Wáng",
-        "dīchù",
-        "měi"
-      ],
-      "answer": "C",
-      "explanation": "低处 đọc là dīchù, nghĩa là nơi thấp. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “流” có nghĩa là gì?",
-      "options": [
-        "chính là",
-        "chảy",
-        "trí tuệ, sự khôn ngoan",
-        "rẻ"
-      ],
-      "answer": "B",
-      "explanation": "流 đọc là liú, nghĩa là chảy. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “liú” và nghĩa “chảy”.",
-      "options": [
-        "问",
-        "很",
-        "老师",
-        "流"
-      ],
-      "answer": "D",
-      "explanation": "流 đọc là liú, nghĩa là chảy. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “流” với nghĩa “chảy”.",
-      "options": [
-        "rén",
-        "gāoxìng",
-        "liú",
-        "nǚ péngyou"
-      ],
-      "answer": "C",
-      "explanation": "流 đọc là liú, nghĩa là chảy. Tham chiếu: PDF bài 3, trang 40.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “叫” có nghĩa là gì?",
-      "options": [
-        "tên",
-        "chúng tôi, chúng ta",
-        "những cái này",
-        "gọi, tên là"
-      ],
-      "answer": "D",
-      "explanation": "叫 đọc là jiào, nghĩa là gọi, tên là. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “jiào” và nghĩa “gọi, tên là”.",
-      "options": [
-        "都",
-        "小",
-        "叫",
-        "智"
-      ],
-      "answer": "C",
-      "explanation": "叫 đọc là jiào, nghĩa là gọi, tên là. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “叫” với nghĩa “gọi, tên là”.",
-      "options": [
-        "méiyǒu",
-        "jiào",
-        "guì",
-        "shéi"
-      ],
-      "answer": "B",
-      "explanation": "叫 đọc là jiào, nghĩa là gọi, tên là. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “什么” có nghĩa là gì?",
-      "options": [
-        "công ty",
-        "quý tính; hỏi họ một cách lịch sự",
-        "mẹ",
-        "gì, cái gì"
-      ],
-      "answer": "D",
-      "explanation": "什么 đọc là shénme, nghĩa là gì, cái gì. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “shénme” và nghĩa “gì, cái gì”.",
-      "options": [
-        "对不起",
-        "什么",
-        "请问",
-        "长"
-      ],
-      "answer": "B",
-      "explanation": "什么 đọc là shénme, nghĩa là gì, cái gì. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “什么” với nghĩa “gì, cái gì”.",
-      "options": [
-        "shénme",
-        "Wáng",
-        "nǚshì",
-        "méi guānxi"
-      ],
-      "answer": "A",
-      "explanation": "什么 đọc là shénme, nghĩa là gì, cái gì. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “新” có nghĩa là gì?",
-      "options": [
-        "mới",
-        "tiền bạc",
-        "quý tính; hỏi họ một cách lịch sự",
-        "cà phê"
-      ],
-      "answer": "A",
-      "explanation": "新 đọc là xīn, nghĩa là mới. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “xīn” và nghĩa “mới”.",
-      "options": [
-        "美国人",
-        "学生",
-        "朋友",
-        "新"
-      ],
-      "answer": "D",
-      "explanation": "新 đọc là xīn, nghĩa là mới. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “新” với nghĩa “mới”.",
-      "options": [
-        "kāfēi",
-        "bàba",
-        "méiyǒu",
-        "xīn"
-      ],
-      "answer": "D",
-      "explanation": "新 đọc là xīn, nghĩa là mới. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “很” có nghĩa là gì?",
-      "options": [
-        "mua",
-        "nơi thấp",
-        "xin hỏi",
-        "rất"
-      ],
-      "answer": "D",
-      "explanation": "很 đọc là hěn, nghĩa là rất. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “hěn” và nghĩa “rất”.",
-      "options": [
-        "贵姓",
-        "很",
-        "一",
-        "金钱"
-      ],
-      "answer": "B",
-      "explanation": "很 đọc là hěn, nghĩa là rất. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “很” với nghĩa “rất”.",
-      "options": [
-        "xīn",
-        "hěn",
-        "shéi",
-        "Zhōngguó rén"
-      ],
-      "answer": "B",
-      "explanation": "很 đọc là hěn, nghĩa là rất. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “毛笔” có nghĩa là gì?",
-      "options": [
-        "ngon, dùng cho đồ ăn",
-        "ông, ngài; cách xưng hô lịch sự",
-        "bút lông",
-        "mua"
-      ],
-      "answer": "C",
-      "explanation": "毛笔 đọc là máobǐ, nghĩa là bút lông. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “máobǐ” và nghĩa “bút lông”.",
-      "options": [
-        "这些",
-        "都",
-        "毛笔",
-        "英国人"
-      ],
-      "answer": "C",
-      "explanation": "毛笔 đọc là máobǐ, nghĩa là bút lông. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “毛笔” với nghĩa “bút lông”.",
-      "options": [
-        "máobǐ",
-        "jiào",
-        "Yuènán",
-        "péngyou"
-      ],
-      "answer": "A",
-      "explanation": "毛笔 đọc là máobǐ, nghĩa là bút lông. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “哪” có nghĩa là gì?",
-      "options": [
-        "nào",
-        "mẹ",
-        "bút lông",
-        "cảm thấy, cho rằng"
-      ],
-      "answer": "A",
-      "explanation": "哪 đọc là nǎ, nghĩa là nào. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “nǎ” và nghĩa “nào”.",
-      "options": [
-        "不",
-        "身体",
-        "哪",
-        "没事"
-      ],
-      "answer": "C",
-      "explanation": "哪 đọc là nǎ, nghĩa là nào. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “哪” với nghĩa “nào”.",
-      "options": [
-        "kāfēi",
-        "hái",
-        "zhè",
-        "nǎ"
-      ],
-      "answer": "D",
-      "explanation": "哪 đọc là nǎ, nghĩa là nào. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “飞机” có nghĩa là gì?",
-      "options": [
-        "người",
-        "bạn trai",
-        "những cái này",
-        "máy bay"
-      ],
-      "answer": "D",
-      "explanation": "飞机 đọc là fēijī, nghĩa là máy bay. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “fēijī” và nghĩa “máy bay”.",
-      "options": [
-        "长",
-        "王",
-        "时间",
-        "飞机"
-      ],
-      "answer": "D",
-      "explanation": "飞机 đọc là fēijī, nghĩa là máy bay. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “飞机” với nghĩa “máy bay”.",
-      "options": [
-        "jiùshì",
-        "fēijī",
-        "wǎng",
-        "zhì"
-      ],
-      "answer": "B",
-      "explanation": "飞机 đọc là fēijī, nghĩa là máy bay. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “国” có nghĩa là gì?",
-      "options": [
-        "giáo viên",
-        "ai",
-        "nước, quốc gia",
-        "sách tiếng Anh"
-      ],
-      "answer": "C",
-      "explanation": "国 đọc là guó, nghĩa là nước, quốc gia. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “guó” và nghĩa “nước, quốc gia”.",
-      "options": [
-        "烤鸭",
-        "智",
-        "国",
-        "问"
-      ],
-      "answer": "C",
-      "explanation": "国 đọc là guó, nghĩa là nước, quốc gia. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “国” với nghĩa “nước, quốc gia”.",
-      "options": [
-        "gāoxìng",
-        "qǐngjià",
-        "guó",
-        "nà"
-      ],
-      "answer": "C",
-      "explanation": "国 đọc là guó, nghĩa là nước, quốc gia. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “越南” có nghĩa là gì?",
-      "options": [
-        "những cái kia",
-        "không sao, không có việc gì",
-        "Việt Nam",
-        "xin lỗi"
-      ],
-      "answer": "C",
-      "explanation": "越南 đọc là Yuènán, nghĩa là Việt Nam. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “Yuènán” và nghĩa “Việt Nam”.",
-      "options": [
-        "越南",
-        "水",
-        "名字",
-        "名片"
-      ],
-      "answer": "A",
-      "explanation": "越南 đọc là Yuènán, nghĩa là Việt Nam. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “越南” với nghĩa “Việt Nam”.",
-      "options": [
-        "guì",
-        "Yuènán",
-        "dōu",
-        "juéde"
-      ],
-      "answer": "B",
-      "explanation": "越南 đọc là Yuènán, nghĩa là Việt Nam. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “美” có nghĩa là gì?",
-      "options": [
-        "đẹp; yếu tố chỉ Mỹ trong tên nước",
-        "một",
-        "gọi, tên là",
-        "không sao, không có gì"
-      ],
-      "answer": "A",
-      "explanation": "美 đọc là měi, nghĩa là đẹp; yếu tố chỉ Mỹ trong tên nước. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “měi” và nghĩa “đẹp; yếu tố chỉ Mỹ trong tên nước”.",
-      "options": [
-        "金钱",
-        "美国人",
-        "一",
-        "美"
-      ],
-      "answer": "D",
-      "explanation": "美 đọc là měi, nghĩa là đẹp; yếu tố chỉ Mỹ trong tên nước. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “美” với nghĩa “đẹp; yếu tố chỉ Mỹ trong tên nước”.",
-      "options": [
-        "ne",
-        "měi",
-        "zuò",
-        "dà"
-      ],
-      "answer": "B",
-      "explanation": "美 đọc là měi, nghĩa là đẹp; yếu tố chỉ Mỹ trong tên nước. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “咖啡” có nghĩa là gì?",
-      "options": [
-        "xin lỗi",
-        "cũng",
-        "quý tính; hỏi họ một cách lịch sự",
-        "cà phê"
-      ],
-      "answer": "D",
-      "explanation": "咖啡 đọc là kāfēi, nghĩa là cà phê. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “kāfēi” và nghĩa “cà phê”.",
-      "options": [
-        "英国人",
-        "认识",
-        "不",
-        "咖啡"
-      ],
-      "answer": "D",
-      "explanation": "咖啡 đọc là kāfēi, nghĩa là cà phê. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “咖啡” với nghĩa “cà phê”.",
-      "options": [
-        "gāochù",
-        "dà",
-        "bàba",
-        "kāfēi"
-      ],
-      "answer": "D",
-      "explanation": "咖啡 đọc là kāfēi, nghĩa là cà phê. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “不” có nghĩa là gì?",
-      "options": [
-        "nước",
-        "sách tiếng Anh",
-        "không; từ phủ định",
-        "này, đây"
-      ],
-      "answer": "C",
-      "explanation": "不 đọc là bù, nghĩa là không; từ phủ định. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “bù” và nghĩa “không; từ phủ định”.",
-      "options": [
-        "请",
-        "问",
-        "国",
-        "不"
-      ],
-      "answer": "D",
-      "explanation": "不 đọc là bù, nghĩa là không; từ phủ định. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “不” với nghĩa “không; từ phủ định”.",
-      "options": [
-        "bù",
-        "Yīngguó rén",
-        "Wáng",
-        "bàba"
-      ],
-      "answer": "A",
-      "explanation": "不 đọc là bù, nghĩa là không; từ phủ định. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “贵姓” có nghĩa là gì?",
-      "options": [
-        "bố",
-        "quý tính; hỏi họ một cách lịch sự",
-        "sách tiếng Anh",
-        "gì, cái gì"
-      ],
-      "answer": "B",
-      "explanation": "贵姓 đọc là guìxìng, nghĩa là quý tính; hỏi họ một cách lịch sự. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “guìxìng” và nghĩa “quý tính; hỏi họ một cách lịch sự”.",
-      "options": [
-        "小",
-        "贵姓",
-        "爸爸",
-        "长"
-      ],
-      "answer": "B",
-      "explanation": "贵姓 đọc là guìxìng, nghĩa là quý tính; hỏi họ một cách lịch sự. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “贵姓” với nghĩa “quý tính; hỏi họ một cách lịch sự”.",
-      "options": [
-        "ne",
-        "juéde",
-        "de",
-        "guìxìng"
-      ],
-      "answer": "D",
-      "explanation": "贵姓 đọc là guìxìng, nghĩa là quý tính; hỏi họ một cách lịch sự. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “中国” có nghĩa là gì?",
-      "options": [
-        "bút lông",
-        "hướng về, đi về phía",
-        "rẻ",
-        "Trung Quốc"
-      ],
-      "answer": "D",
-      "explanation": "中国 đọc là Zhōngguó, nghĩa là Trung Quốc. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “Zhōngguó” và nghĩa “Trung Quốc”.",
-      "options": [
-        "中国",
-        "请问",
-        "身体",
-        "吃"
-      ],
-      "answer": "A",
-      "explanation": "中国 đọc là Zhōngguó, nghĩa là Trung Quốc. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “中国” với nghĩa “Trung Quốc”.",
-      "options": [
-        "Zhōngguó",
-        "máng",
-        "gāochù",
-        "bù"
-      ],
-      "answer": "A",
-      "explanation": "中国 đọc là Zhōngguó, nghĩa là Trung Quốc. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “呢” có nghĩa là gì?",
-      "options": [
-        "không sao, không có việc gì",
-        "nơi cao",
-        "trợ từ; dùng để hỏi lại trong bài",
-        "sách"
-      ],
-      "answer": "C",
-      "explanation": "呢 đọc là ne, nghĩa là trợ từ; dùng để hỏi lại trong bài. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “ne” và nghĩa “trợ từ; dùng để hỏi lại trong bài”.",
-      "options": [
-        "呢",
-        "那",
-        "就是",
-        "那些"
-      ],
-      "answer": "A",
-      "explanation": "呢 đọc là ne, nghĩa là trợ từ; dùng để hỏi lại trong bài. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “呢” với nghĩa “trợ từ; dùng để hỏi lại trong bài”.",
-      "options": [
-        "liú",
-        "péngyou",
-        "piányi",
-        "ne"
-      ],
-      "answer": "D",
-      "explanation": "呢 đọc là ne, nghĩa là trợ từ; dùng để hỏi lại trong bài. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Trong bài học, “贵” có nghĩa là gì?",
-      "options": [
-        "đắt; quý trong cách nói kính trọng",
-        "Trung Quốc",
-        "những cái này",
-        "quý tính; hỏi họ một cách lịch sự"
-      ],
-      "answer": "A",
-      "explanation": "贵 đọc là guì, nghĩa là đắt; quý trong cách nói kính trọng. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn Hán tự có phiên âm “guì” và nghĩa “đắt; quý trong cách nói kính trọng”.",
-      "options": [
-        "黄",
-        "贵",
-        "贵姓",
-        "的"
-      ],
-      "answer": "B",
-      "explanation": "贵 đọc là guì, nghĩa là đắt; quý trong cách nói kính trọng. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn phiên âm đúng của “贵” với nghĩa “đắt; quý trong cách nói kính trọng”.",
-      "options": [
-        "zhì",
-        "shéi",
-        "guì",
-        "jīnqián"
-      ],
-      "answer": "C",
-      "explanation": "贵 đọc là guì, nghĩa là đắt; quý trong cách nói kính trọng. Tham chiếu: PDF bài 3, trang 2.",
-      "difficulty": "Dễ"
-    },
-    {
-      "prompt": "Chọn cách nói “Đây là danh thiếp của tôi”.",
-      "options": [
-        "这的我是名片。",
-        "这是我名片的。",
-        "这是我的名片。",
-        "这是名片的我。"
-      ],
-      "answer": "C",
-      "explanation": "我的名片: danh thiếp của tôi; 的 đứng giữa người sở hữu và vật.",
-      "difficulty": "Vừa"
-    },
-    {
-      "prompt": "Điền từ: 我___名片。(Tôi không có danh thiếp.)",
-      "options": [
-        "没有",
-        "不有",
-        "不在",
-        "不是"
-      ],
-      "answer": "A",
-      "explanation": "Phủ định của 有 là 没有.",
-      "difficulty": "Vừa"
-    },
-    {
-      "prompt": "Đáp lại “对不起” bằng câu nào phù hợp?",
-      "options": [
-        "没关系。",
-        "你去哪儿？",
-        "再见。",
-        "多少？"
-      ],
-      "answer": "A",
-      "explanation": "没关系 dùng để đáp lại lời xin lỗi.",
-      "difficulty": "Vừa"
-    },
-    {
-      "prompt": "Chọn cách nói “Tôi cũng rất vui”.",
-      "options": [
-        "我也很高兴。",
-        "我高兴也很。",
-        "也我高兴很。",
-        "我很也高兴。"
-      ],
-      "answer": "A",
-      "explanation": "也 đứng sau chủ ngữ, trước 很高兴.",
-      "difficulty": "Vừa"
-    },
-    {
-      "prompt": "Chọn câu đúng để nói “Tôi rất vui”.",
-      "options": [
-        "我很高兴。",
-        "我是很高兴。",
-        "我高兴是。",
-        "很我是高兴。"
+      "accepted": [
+        "有"
       ],
-      "answer": "A",
-      "explanation": "Tính từ làm vị ngữ không cần thêm 是 trong mẫu câu này.",
-      "difficulty": "Vừa"
+      "explanation": "有 đọc là yǒu, nghĩa là Có. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 106.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7c6383cd-5289-4a38-b1b5-589a27ee5fa2"
     },
     {
-      "prompt": "Trong bài khóa 1, người họ Cao đưa cho người họ Mã vật gì?",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “没有” có nghĩa là gì?",
       "options": [
+        "Kia, đó",
         "Danh thiếp",
-        "Quyển vở",
-        "Vé tàu",
-        "Cốc trà"
+        "Không có",
+        "Xin lỗi"
       ],
-      "answer": "A",
-      "explanation": "Bài khóa có câu 这是我的名片.",
-      "difficulty": "Vừa"
-    },
-    {
-      "prompt": "Trong bài khóa 1, người họ Mã có danh thiếp không?",
-      "options": [
-        "Có hai chiếc",
-        "Có rất nhiều",
-        "Có ba chiếc",
+      "accepted": [
         "Không có"
       ],
-      "answer": "D",
-      "explanation": "Người họ Mã nói 我没有名片.",
-      "difficulty": "Vừa"
+      "explanation": "没有 đọc là méiyǒu, nghĩa là Không có. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 107.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c4d0e956-df8a-4830-8f7d-514b12a6174b"
     },
     {
-      "prompt": "Điền từ: 他们___是中国人。(Họ đều là người Trung Quốc.)",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “méiyǒu” và nghĩa “Không có”.",
       "options": [
+        "有",
+        "问",
+        "那些",
+        "没有"
+      ],
+      "accepted": [
+        "没有"
+      ],
+      "explanation": "没有 đọc là méiyǒu, nghĩa là Không có. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 107.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c4d0e956-df8a-4830-8f7d-514b12a6174b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “朋友” có nghĩa là gì?",
+      "options": [
+        "Bạn bè",
+        "Quen, biết",
+        "Quý cô, quý bà",
+        "Bận"
+      ],
+      "accepted": [
+        "Bạn bè"
+      ],
+      "explanation": "朋友 đọc là péngyou, nghĩa là Bạn bè. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 108.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "053d5404-01c3-40a1-84d9-144dfe4d3460"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “péngyou” và nghĩa “Bạn bè”.",
+      "options": [
+        "那",
+        "王女士",
+        "男朋友",
+        "朋友"
+      ],
+      "accepted": [
+        "朋友"
+      ],
+      "explanation": "朋友 đọc là péngyou, nghĩa là Bạn bè. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 108.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "053d5404-01c3-40a1-84d9-144dfe4d3460"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “高兴” có nghĩa là gì?",
+      "options": [
+        "Cũng",
+        "Vui vẻ",
+        "Vẫn, còn",
+        "Đều"
+      ],
+      "accepted": [
+        "Vui vẻ"
+      ],
+      "explanation": "高兴 đọc là gāoxìng, nghĩa là Vui vẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 109.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1e591016-2352-480b-95ac-64c15c09c12a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “gāoxìng” và nghĩa “Vui vẻ”.",
+      "options": [
+        "高兴",
+        "英语书",
+        "还",
+        "没有"
+      ],
+      "accepted": [
+        "高兴"
+      ],
+      "explanation": "高兴 đọc là gāoxìng, nghĩa là Vui vẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 109.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1e591016-2352-480b-95ac-64c15c09c12a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “认识” có nghĩa là gì?",
+      "options": [
+        "Của",
+        "Quen, biết",
+        "Bạn gái",
+        "Xin hỏi"
+      ],
+      "accepted": [
+        "Quen, biết"
+      ],
+      "explanation": "认识 đọc là rènshi, nghĩa là Quen, biết. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 110.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "839315f0-c642-4f93-a9f4-01ff254ac642"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “rènshi” và nghĩa “Quen, biết”.",
+      "options": [
+        "男朋友",
+        "汉语书",
+        "认识",
+        "觉得"
+      ],
+      "accepted": [
+        "认识"
+      ],
+      "explanation": "认识 đọc là rènshi, nghĩa là Quen, biết. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 110.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "839315f0-c642-4f93-a9f4-01ff254ac642"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “先生” có nghĩa là gì?",
+      "options": [
+        "Xin nghỉ phép",
+        "Kia, đó",
+        "Bạn gái",
+        "Ông, ngài"
+      ],
+      "accepted": [
+        "Ông, ngài"
+      ],
+      "explanation": "先生 đọc là xiānsheng, nghĩa là Ông, ngài. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 111.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c0fd9d6b-fb89-4c0d-bacc-9774b6826189"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “xiānsheng” và nghĩa “Ông, ngài”.",
+      "options": [
+        "请",
+        "小",
         "名片",
-        "谁",
-        "都",
-        "的"
+        "先生"
       ],
-      "answer": "C",
-      "explanation": "都 biểu thị toàn bộ các thành viên đều có đặc điểm nêu sau đó.",
-      "difficulty": "Vừa"
+      "accepted": [
+        "先生"
+      ],
+      "explanation": "先生 đọc là xiānsheng, nghĩa là Ông, ngài. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 111.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c0fd9d6b-fb89-4c0d-bacc-9774b6826189"
     },
     {
-      "prompt": "Chọn câu hỏi họ một cách lịch sự.",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “女士” có nghĩa là gì?",
       "options": [
-        "您在哪姓？",
-        "你多少姓？",
-        "您姓什么钱？",
-        "请问，您贵姓？"
+        "Bà/cô Vương",
+        "Những cái này",
+        "Ông, ngài",
+        "Quý cô, quý bà"
       ],
-      "answer": "D",
-      "explanation": "您贵姓 là cách hỏi họ lịch sự.",
-      "difficulty": "Vừa"
+      "accepted": [
+        "Quý cô, quý bà"
+      ],
+      "explanation": "女士 đọc là nǚshì, nghĩa là Quý cô, quý bà. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 112.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e09568f6-121c-464d-8754-1792f7f6e67b"
     },
     {
-      "prompt": "“这是我的女朋友。” có nghĩa là gì?",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “nǚshì” và nghĩa “Quý cô, quý bà”.",
       "options": [
-        "Đó là bạn trai của tôi.",
-        "Tôi không có bạn.",
-        "Đây là bạn gái của tôi.",
-        "Đây là cô giáo của tôi."
+        "没关系",
+        "女士",
+        "大",
+        "身体"
       ],
-      "answer": "C",
-      "explanation": "女朋友 nghĩa là bạn gái; 这 nghĩa là đây.",
-      "difficulty": "Vừa"
+      "accepted": [
+        "女士"
+      ],
+      "explanation": "女士 đọc là nǚshì, nghĩa là Quý cô, quý bà. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 112.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e09568f6-121c-464d-8754-1792f7f6e67b"
     },
     {
-      "prompt": "“时间就是金钱。” có ý nghĩa gì?",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “马” có nghĩa là gì?",
       "options": [
-        "Tôi rất bận.",
-        "Bạn bè là giáo viên.",
-        "Nước chảy chỗ trũng.",
-        "Thời gian là tiền bạc."
+        "Quen, biết",
+        "Ông Mã",
+        "Ngựa; họ Mã",
+        "Cảm thấy, cho rằng"
       ],
-      "answer": "D",
-      "explanation": "时间 là thời gian, 金钱 là tiền bạc.",
-      "difficulty": "Vừa"
+      "accepted": [
+        "Ngựa; họ Mã"
+      ],
+      "explanation": "马 đọc là mǎ, nghĩa là Ngựa; họ Mã. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 113.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2175b8d8-71a2-497c-9912-511e42912d76"
     },
     {
-      "prompt": "“吃一堑，长一智。” nhắc nhở điều gì?",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “mǎ” và nghĩa “Ngựa; họ Mã”.",
       "options": [
-        "Chỉ cần học số đếm.",
-        "Mọi người đều vui.",
-        "Qua vấp ngã thì thêm khôn ngoan.",
-        "Phải mua thêm đồ ăn."
+        "这些",
+        "大",
+        "马",
+        "那"
       ],
-      "answer": "C",
-      "explanation": "Đây là tục ngữ nói về kinh nghiệm có được từ vấp ngã.",
-      "difficulty": "Vừa"
+      "accepted": [
+        "马"
+      ],
+      "explanation": "马 đọc là mǎ, nghĩa là Ngựa; họ Mã. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 113.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2175b8d8-71a2-497c-9912-511e42912d76"
     },
     {
-      "prompt": "Điền từ: 这是___书。(Đây là sách của cô giáo.)",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “黄文丽” có nghĩa là gì?",
       "options": [
-        "是老师",
-        "的老师",
-        "老师的",
-        "老师是"
+        "Có",
+        "Bạn trai",
+        "Sách tiếng Anh",
+        "Hoàng Văn Lệ (tên riêng)"
       ],
-      "answer": "C",
-      "explanation": "Định ngữ sở hữu đứng trước 的 rồi đến danh từ 书.",
-      "difficulty": "Vừa"
+      "accepted": [
+        "Hoàng Văn Lệ (tên riêng)"
+      ],
+      "explanation": "黄文丽 đọc là Huáng Wénlì, nghĩa là Hoàng Văn Lệ (tên riêng). Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 114.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e78d742d-bbe4-45fa-bf7e-edb4a296f92f"
     },
     {
-      "prompt": "Chọn cách nói “Tôi cũng rất vui được làm quen với bạn”.",
-      "options": [
-        "我认识也你很高兴。",
-        "你也很我认识高兴。",
-        "认识你我也很高兴。",
-        "高兴也你我认识很。"
-      ],
-      "answer": "C",
-      "explanation": "认识你 nêu việc quen bạn; 我也很高兴 nêu cảm xúc của tôi.",
-      "difficulty": "Vừa"
-    },
-    {
-      "prompt": "Trong bài khóa 2, 欧文 là người nước nào?",
-      "options": [
-        "Việt Nam",
-        "Trung Quốc",
-        "Anh",
-        "Mỹ"
-      ],
-      "answer": "D",
-      "explanation": "欧文 nói 我不是英国人，我是美国人.",
-      "difficulty": "Vừa"
-    },
-    {
-      "prompt": "Chọn từ trái nghĩa với 小.",
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “Huáng Wénlì” và nghĩa “Hoàng Văn Lệ (tên riêng)”.",
       "options": [
         "也",
+        "身体",
+        "忙",
+        "黄文丽"
+      ],
+      "accepted": [
+        "黄文丽"
+      ],
+      "explanation": "黄文丽 đọc là Huáng Wénlì, nghĩa là Hoàng Văn Lệ (tên riêng). Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 114.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e78d742d-bbe4-45fa-bf7e-edb4a296f92f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “也” có nghĩa là gì?",
+      "options": [
+        "Quý cô, quý bà",
+        "Cũng",
+        "Sách tiếng Hán",
+        "Mời vào"
+      ],
+      "accepted": [
+        "Cũng"
+      ],
+      "explanation": "也 đọc là yě, nghĩa là Cũng. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 115.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "aa2fb069-4cb9-486d-aa7e-fe0f35288121"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “yě” và nghĩa “Cũng”.",
+      "options": [
+        "也",
+        "进",
+        "身体",
+        "没有"
+      ],
+      "accepted": [
+        "也"
+      ],
+      "explanation": "也 đọc là yě, nghĩa là Cũng. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 115.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "aa2fb069-4cb9-486d-aa7e-fe0f35288121"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “小” có nghĩa là gì?",
+      "options": [
+        "Hoàng Văn Lệ (tên riêng)",
+        "Bạn bè",
+        "Nhỏ",
+        "Ngồi"
+      ],
+      "accepted": [
+        "Nhỏ"
+      ],
+      "explanation": "小 đọc là xiǎo, nghĩa là Nhỏ. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 116.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9ebd8ddf-6835-4eea-8a66-2bd7c01c6a43"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “xiǎo” và nghĩa “Nhỏ”.",
+      "options": [
+        "忙",
+        "男朋友",
+        "小",
+        "朋友"
+      ],
+      "accepted": [
+        "小"
+      ],
+      "explanation": "小 đọc là xiǎo, nghĩa là Nhỏ. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 116.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9ebd8ddf-6835-4eea-8a66-2bd7c01c6a43"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “都” có nghĩa là gì?",
+      "options": [
+        "Những cái này",
+        "Ông, ngài",
+        "Đều",
+        "Quen, biết"
+      ],
+      "accepted": [
+        "Đều"
+      ],
+      "explanation": "都 đọc là dōu, nghĩa là Đều. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 117.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cef44414-3345-45d3-a305-e7c16835eb78"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “dōu” và nghĩa “Đều”.",
+      "options": [
+        "认识",
+        "这",
+        "请假",
+        "都"
+      ],
+      "accepted": [
+        "都"
+      ],
+      "explanation": "都 đọc là dōu, nghĩa là Đều. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 117.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cef44414-3345-45d3-a305-e7c16835eb78"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “忙” có nghĩa là gì?",
+      "options": [
+        "Mời vào",
+        "Bạn trai",
+        "Bạn tốt, bạn thân",
+        "Bận"
+      ],
+      "accepted": [
+        "Bận"
+      ],
+      "explanation": "忙 đọc là máng, nghĩa là Bận. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 118.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1bca4184-1323-43b9-93ae-bec09682489b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “máng” và nghĩa “Bận”.",
+      "options": [
+        "小",
+        "请进",
+        "没关系",
+        "忙"
+      ],
+      "accepted": [
+        "忙"
+      ],
+      "explanation": "忙 đọc là máng, nghĩa là Bận. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 118.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1bca4184-1323-43b9-93ae-bec09682489b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “请” có nghĩa là gì?",
+      "options": [
+        "Xin, mời",
+        "Cơ thể, sức khỏe",
+        "Có",
+        "Danh thiếp"
+      ],
+      "accepted": [
+        "Xin, mời"
+      ],
+      "explanation": "请 đọc là qǐng, nghĩa là Xin, mời. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 122.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a6ebf8c7-024f-4ec0-9afb-88bfd49cd40a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “qǐng” và nghĩa “Xin, mời”.",
+      "options": [
+        "黄文丽",
+        "请",
+        "高兴",
+        "没关系"
+      ],
+      "accepted": [
+        "请"
+      ],
+      "explanation": "请 đọc là qǐng, nghĩa là Xin, mời. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 122.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a6ebf8c7-024f-4ec0-9afb-88bfd49cd40a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “问” có nghĩa là gì?",
+      "options": [
+        "Bạn tốt, bạn thân",
+        "Bạn bè",
+        "Đều",
+        "Hỏi"
+      ],
+      "accepted": [
+        "Hỏi"
+      ],
+      "explanation": "问 đọc là wèn, nghĩa là Hỏi. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 123.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c101a5b2-98f7-4716-bfed-569fe520e70f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “wèn” và nghĩa “Hỏi”.",
+      "options": [
+        "问",
+        "王女士",
+        "身体",
+        "请进"
+      ],
+      "accepted": [
+        "问"
+      ],
+      "explanation": "问 đọc là wèn, nghĩa là Hỏi. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 123.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c101a5b2-98f7-4716-bfed-569fe520e70f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “进” có nghĩa là gì?",
+      "options": [
+        "Sách tiếng Hán",
+        "Đây, này",
+        "Vào",
+        "Ông Mã"
+      ],
+      "accepted": [
+        "Vào"
+      ],
+      "explanation": "进 đọc là jìn, nghĩa là Vào. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 124.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "88ed4211-3c33-4a7d-b3fa-04be2581a0df"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “jìn” và nghĩa “Vào”.",
+      "options": [
+        "这些",
+        "请问",
+        "进",
+        "请坐"
+      ],
+      "accepted": [
+        "进"
+      ],
+      "explanation": "进 đọc là jìn, nghĩa là Vào. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 124.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "88ed4211-3c33-4a7d-b3fa-04be2581a0df"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “请进” có nghĩa là gì?",
+      "options": [
+        "Xin, mời",
+        "Mời vào",
+        "Không sao",
+        "Bạn bè"
+      ],
+      "accepted": [
+        "Mời vào"
+      ],
+      "explanation": "请进 đọc là qǐng jìn, nghĩa là Mời vào. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 125.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5e9efcee-e45e-438e-a9f3-e60125b3982f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “qǐng jìn” và nghĩa “Mời vào”.",
+      "options": [
+        "马",
+        "认识",
+        "请进",
+        "好朋友"
+      ],
+      "accepted": [
+        "请进"
+      ],
+      "explanation": "请进 đọc là qǐng jìn, nghĩa là Mời vào. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 125.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5e9efcee-e45e-438e-a9f3-e60125b3982f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “坐” có nghĩa là gì?",
+      "options": [
+        "Ngồi",
+        "Sách tiếng Hán",
+        "Vẫn, còn",
+        "Danh thiếp"
+      ],
+      "accepted": [
+        "Ngồi"
+      ],
+      "explanation": "坐 đọc là zuò, nghĩa là Ngồi. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 126.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "746beb93-b69d-4e84-a1b6-18ae35299ca9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “zuò” và nghĩa “Ngồi”.",
+      "options": [
+        "马",
+        "还",
+        "坐",
+        "觉得"
+      ],
+      "accepted": [
+        "坐"
+      ],
+      "explanation": "坐 đọc là zuò, nghĩa là Ngồi. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 126.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "746beb93-b69d-4e84-a1b6-18ae35299ca9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “请坐” có nghĩa là gì?",
+      "options": [
+        "Xin lỗi",
+        "Ông, ngài",
+        "Của",
+        "Mời ngồi"
+      ],
+      "accepted": [
+        "Mời ngồi"
+      ],
+      "explanation": "请坐 đọc là qǐng zuò, nghĩa là Mời ngồi. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 127.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2734e2b5-4185-4ce2-a441-dc0c5f1b56d4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “qǐng zuò” và nghĩa “Mời ngồi”.",
+      "options": [
+        "请坐",
+        "觉得",
+        "请问",
+        "那些"
+      ],
+      "accepted": [
+        "请坐"
+      ],
+      "explanation": "请坐 đọc là qǐng zuò, nghĩa là Mời ngồi. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 127.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2734e2b5-4185-4ce2-a441-dc0c5f1b56d4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “请假” có nghĩa là gì?",
+      "options": [
+        "Không có",
+        "Xin nghỉ phép",
+        "Cảm thấy, cho rằng",
+        "Bạn bè"
+      ],
+      "accepted": [
+        "Xin nghỉ phép"
+      ],
+      "explanation": "请假 đọc là qǐngjià, nghĩa là Xin nghỉ phép. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 128.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f522da50-baa7-4f69-9aeb-87d3cb2e043f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “qǐngjià” và nghĩa “Xin nghỉ phép”.",
+      "options": [
+        "的",
+        "请假",
+        "坐",
+        "女朋友"
+      ],
+      "accepted": [
+        "请假"
+      ],
+      "explanation": "请假 đọc là qǐngjià, nghĩa là Xin nghỉ phép. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 128.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f522da50-baa7-4f69-9aeb-87d3cb2e043f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “还” có nghĩa là gì?",
+      "options": [
+        "Ngon",
+        "Ông, ngài",
+        "Ngựa; họ Mã",
+        "Vẫn, còn"
+      ],
+      "accepted": [
+        "Vẫn, còn"
+      ],
+      "explanation": "还 đọc là hái, nghĩa là Vẫn, còn. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 129.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3ba3530d-83d4-4df6-a9f9-89d18f2ab227"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “hái” và nghĩa “Vẫn, còn”.",
+      "options": [
+        "还",
+        "王女士",
+        "没事",
+        "小"
+      ],
+      "accepted": [
+        "还"
+      ],
+      "explanation": "还 đọc là hái, nghĩa là Vẫn, còn. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 129.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3ba3530d-83d4-4df6-a9f9-89d18f2ab227"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “好吃” có nghĩa là gì?",
+      "options": [
+        "Ngon",
+        "Bận",
+        "Bạn trai",
+        "Ngựa; họ Mã"
+      ],
+      "accepted": [
+        "Ngon"
+      ],
+      "explanation": "好吃 đọc là hǎochī, nghĩa là Ngon. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 130.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ef443786-dede-4a83-9023-0385b2c1792e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “hǎochī” và nghĩa “Ngon”.",
+      "options": [
+        "小",
+        "马",
+        "名片",
+        "好吃"
+      ],
+      "accepted": [
+        "好吃"
+      ],
+      "explanation": "好吃 đọc là hǎochī, nghĩa là Ngon. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 130.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ef443786-dede-4a83-9023-0385b2c1792e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “这些” có nghĩa là gì?",
+      "options": [
+        "Vẫn, còn",
+        "Bà/cô Vương",
+        "Những cái này",
+        "Cảm thấy, cho rằng"
+      ],
+      "accepted": [
+        "Những cái này"
+      ],
+      "explanation": "这些 đọc là zhèxiē, nghĩa là Những cái này. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 131.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3f091276-b767-451b-8038-27571128f100"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “zhèxiē” và nghĩa “Những cái này”.",
+      "options": [
+        "的",
+        "先生",
         "都",
+        "这些"
+      ],
+      "accepted": [
+        "这些"
+      ],
+      "explanation": "这些 đọc là zhèxiē, nghĩa là Những cái này. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 131.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3f091276-b767-451b-8038-27571128f100"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “那些” có nghĩa là gì?",
+      "options": [
+        "Xin lỗi",
+        "Sách tiếng Hán",
+        "Đều",
+        "Những cái kia"
+      ],
+      "accepted": [
+        "Những cái kia"
+      ],
+      "explanation": "那些 đọc là nàxiē, nghĩa là Những cái kia. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 132.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a7741991-4419-49a4-921b-09b2467c1b3f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “nàxiē” và nghĩa “Những cái kia”.",
+      "options": [
+        "请问",
+        "高兴",
+        "那些",
+        "坐"
+      ],
+      "accepted": [
+        "那些"
+      ],
+      "explanation": "那些 đọc là nàxiē, nghĩa là Những cái kia. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 132.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a7741991-4419-49a4-921b-09b2467c1b3f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “没事” có nghĩa là gì?",
+      "options": [
+        "Quý cô, quý bà",
+        "Vào",
+        "Không sao",
+        "Kia, đó"
+      ],
+      "accepted": [
+        "Không sao"
+      ],
+      "explanation": "没事 đọc là méishì, nghĩa là Không sao. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 133.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "477a09fd-4824-4c59-876f-ca518ea82271"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “méishì” và nghĩa “Không sao”.",
+      "options": [
+        "这些",
+        "请",
+        "没事",
+        "名片"
+      ],
+      "accepted": [
+        "没事"
+      ],
+      "explanation": "没事 đọc là méishì, nghĩa là Không sao. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 133.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "477a09fd-4824-4c59-876f-ca518ea82271"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “汉语书” có nghĩa là gì?",
+      "options": [
+        "To, lớn",
+        "Xin nghỉ phép",
+        "Nhỏ",
+        "Sách tiếng Hán"
+      ],
+      "accepted": [
+        "Sách tiếng Hán"
+      ],
+      "explanation": "汉语书 đọc là Hànyǔ shū, nghĩa là Sách tiếng Hán. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 134.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "19dda37c-a682-421b-9d87-45c01dc7a59e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “Hànyǔ shū” và nghĩa “Sách tiếng Hán”.",
+      "options": [
+        "也",
+        "汉语书",
+        "这些",
+        "进"
+      ],
+      "accepted": [
+        "汉语书"
+      ],
+      "explanation": "汉语书 đọc là Hànyǔ shū, nghĩa là Sách tiếng Hán. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 134.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "19dda37c-a682-421b-9d87-45c01dc7a59e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “英语书” có nghĩa là gì?",
+      "options": [
+        "Mời vào",
+        "Sách tiếng Anh",
+        "Đây, này",
+        "Không có"
+      ],
+      "accepted": [
+        "Sách tiếng Anh"
+      ],
+      "explanation": "英语书 đọc là Yīngyǔ shū, nghĩa là Sách tiếng Anh. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 135.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d587e0df-be48-426a-9177-94e134a040ae"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “Yīngyǔ shū” và nghĩa “Sách tiếng Anh”.",
+      "options": [
+        "英语书",
+        "也",
+        "马先生",
+        "这"
+      ],
+      "accepted": [
+        "英语书"
+      ],
+      "explanation": "英语书 đọc là Yīngyǔ shū, nghĩa là Sách tiếng Anh. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 135.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d587e0df-be48-426a-9177-94e134a040ae"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “男朋友” có nghĩa là gì?",
+      "options": [
+        "Có",
+        "Quen, biết",
+        "Nhỏ",
+        "Bạn trai"
+      ],
+      "accepted": [
+        "Bạn trai"
+      ],
+      "explanation": "男朋友 đọc là nán péngyou, nghĩa là Bạn trai. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 136.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b176958c-1060-4099-ab92-a369db2382b0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “nán péngyou” và nghĩa “Bạn trai”.",
+      "options": [
+        "男朋友",
+        "汉语书",
+        "朋友",
+        "没关系"
+      ],
+      "accepted": [
+        "男朋友"
+      ],
+      "explanation": "男朋友 đọc là nán péngyou, nghĩa là Bạn trai. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 136.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b176958c-1060-4099-ab92-a369db2382b0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “女朋友” có nghĩa là gì?",
+      "options": [
+        "Quen, biết",
+        "Đây, này",
+        "Xin lỗi",
+        "Bạn gái"
+      ],
+      "accepted": [
+        "Bạn gái"
+      ],
+      "explanation": "女朋友 đọc là nǚ péngyou, nghĩa là Bạn gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 137.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "46f31c8f-3c9b-4ba8-8525-afb9b1f42be4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “nǚ péngyou” và nghĩa “Bạn gái”.",
+      "options": [
+        "没关系",
+        "那",
+        "进",
+        "女朋友"
+      ],
+      "accepted": [
+        "女朋友"
+      ],
+      "explanation": "女朋友 đọc là nǚ péngyou, nghĩa là Bạn gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 137.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "46f31c8f-3c9b-4ba8-8525-afb9b1f42be4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “好朋友” có nghĩa là gì?",
+      "options": [
+        "Bạn tốt, bạn thân",
+        "Hỏi",
+        "Danh thiếp",
+        "Bạn gái"
+      ],
+      "accepted": [
+        "Bạn tốt, bạn thân"
+      ],
+      "explanation": "好朋友 đọc là hǎo péngyou, nghĩa là Bạn tốt, bạn thân. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 138.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "82db19f9-e04a-41aa-9c3e-5f5bf805b87f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “hǎo péngyou” và nghĩa “Bạn tốt, bạn thân”.",
+      "options": [
+        "小",
+        "好朋友",
+        "名片",
+        "没关系"
+      ],
+      "accepted": [
+        "好朋友"
+      ],
+      "explanation": "好朋友 đọc là hǎo péngyou, nghĩa là Bạn tốt, bạn thân. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 138.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "82db19f9-e04a-41aa-9c3e-5f5bf805b87f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “大” có nghĩa là gì?",
+      "options": [
+        "To, lớn",
+        "Xin lỗi",
+        "Hoàng Văn Lệ (tên riêng)",
+        "Mời ngồi"
+      ],
+      "accepted": [
+        "To, lớn"
+      ],
+      "explanation": "大 đọc là dà, nghĩa là To, lớn. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 139.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3e1e69d2-f142-4a28-ab5e-a14e8d247742"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “dà” và nghĩa “To, lớn”.",
+      "options": [
         "大",
+        "小",
+        "认识",
+        "请进"
+      ],
+      "accepted": [
+        "大"
+      ],
+      "explanation": "大 đọc là dà, nghĩa là To, lớn. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 139.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3e1e69d2-f142-4a28-ab5e-a14e8d247742"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “马先生” có nghĩa là gì?",
+      "options": [
+        "Ông Mã",
+        "Cũng",
+        "Những cái kia",
+        "Cảm thấy, cho rằng"
+      ],
+      "accepted": [
+        "Ông Mã"
+      ],
+      "explanation": "马先生 đọc là Mǎ xiānsheng, nghĩa là Ông Mã. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 140.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "56014cdb-aaa1-40fe-a14b-2f3ab74fb129"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “Mǎ xiānsheng” và nghĩa “Ông Mã”.",
+      "options": [
+        "那",
+        "马先生",
+        "王女士",
         "的"
       ],
-      "answer": "C",
-      "explanation": "小 là nhỏ; 大 là to, lớn.",
-      "difficulty": "Vừa"
+      "accepted": [
+        "马先生"
+      ],
+      "explanation": "马先生 đọc là Mǎ xiānsheng, nghĩa là Ông Mã. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 140.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "56014cdb-aaa1-40fe-a14b-2f3ab74fb129"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Trong bài học, “王女士” có nghĩa là gì?",
+      "options": [
+        "Xin hỏi",
+        "Ông Mã",
+        "Có",
+        "Bà/cô Vương"
+      ],
+      "accepted": [
+        "Bà/cô Vương"
+      ],
+      "explanation": "王女士 đọc là Wáng nǚshì, nghĩa là Bà/cô Vương. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 141.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1155301e-16fd-4296-a509-14519c1ffd35"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn Hán tự có phiên âm “Wáng nǚshì” và nghĩa “Bà/cô Vương”.",
+      "options": [
+        "王女士",
+        "小",
+        "黄文丽",
+        "对不起"
+      ],
+      "accepted": [
+        "王女士"
+      ],
+      "explanation": "王女士 đọc là Wáng nǚshì, nghĩa là Bà/cô Vương. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 141.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1155301e-16fd-4296-a509-14519c1ffd35"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “坐” với nghĩa “Ngồi”.",
+      "options": [
+        "méi guānxi",
+        "zuò",
+        "nàxiē",
+        "hǎochī"
+      ],
+      "accepted": [
+        "zuò"
+      ],
+      "explanation": "坐 đọc là zuò, nghĩa là Ngồi. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 126.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "746beb93-b69d-4e84-a1b6-18ae35299ca9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “请坐” với nghĩa “Mời ngồi”.",
+      "options": [
+        "qǐngwèn",
+        "dōu",
+        "shēntǐ",
+        "qǐng zuò"
+      ],
+      "accepted": [
+        "qǐng zuò"
+      ],
+      "explanation": "请坐 đọc là qǐng zuò, nghĩa là Mời ngồi. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 127.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2734e2b5-4185-4ce2-a441-dc0c5f1b56d4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “请假” với nghĩa “Xin nghỉ phép”.",
+      "options": [
+        "qǐngjià",
+        "Mǎ xiānsheng",
+        "méi guānxi",
+        "nàxiē"
+      ],
+      "accepted": [
+        "qǐngjià"
+      ],
+      "explanation": "请假 đọc là qǐngjià, nghĩa là Xin nghỉ phép. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 128.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f522da50-baa7-4f69-9aeb-87d3cb2e043f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “还” với nghĩa “Vẫn, còn”.",
+      "options": [
+        "de",
+        "Wáng nǚshì",
+        "rènshi",
+        "hái"
+      ],
+      "accepted": [
+        "hái"
+      ],
+      "explanation": "还 đọc là hái, nghĩa là Vẫn, còn. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 129.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3ba3530d-83d4-4df6-a9f9-89d18f2ab227"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “好吃” với nghĩa “Ngon”.",
+      "options": [
+        "hǎochī",
+        "méiyǒu",
+        "nǚ péngyou",
+        "jìn"
+      ],
+      "accepted": [
+        "hǎochī"
+      ],
+      "explanation": "好吃 đọc là hǎochī, nghĩa là Ngon. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 130.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ef443786-dede-4a83-9023-0385b2c1792e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “这些” với nghĩa “Những cái này”.",
+      "options": [
+        "juéde",
+        "gāoxìng",
+        "zhèxiē",
+        "méi guānxi"
+      ],
+      "accepted": [
+        "zhèxiē"
+      ],
+      "explanation": "这些 đọc là zhèxiē, nghĩa là Những cái này. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 131.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3f091276-b767-451b-8038-27571128f100"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “那些” với nghĩa “Những cái kia”.",
+      "options": [
+        "hǎochī",
+        "nàxiē",
+        "de",
+        "qǐngwèn"
+      ],
+      "accepted": [
+        "nàxiē"
+      ],
+      "explanation": "那些 đọc là nàxiē, nghĩa là Những cái kia. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 132.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a7741991-4419-49a4-921b-09b2467c1b3f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “没事” với nghĩa “Không sao”.",
+      "options": [
+        "Wáng nǚshì",
+        "de",
+        "qǐng",
+        "méishì"
+      ],
+      "accepted": [
+        "méishì"
+      ],
+      "explanation": "没事 đọc là méishì, nghĩa là Không sao. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 133.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "477a09fd-4824-4c59-876f-ca518ea82271"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “汉语书” với nghĩa “Sách tiếng Hán”.",
+      "options": [
+        "Yīngyǔ shū",
+        "duìbuqǐ",
+        "Hànyǔ shū",
+        "míngpiàn"
+      ],
+      "accepted": [
+        "Hànyǔ shū"
+      ],
+      "explanation": "汉语书 đọc là Hànyǔ shū, nghĩa là Sách tiếng Hán. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 134.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "19dda37c-a682-421b-9d87-45c01dc7a59e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “英语书” với nghĩa “Sách tiếng Anh”.",
+      "options": [
+        "Yīngyǔ shū",
+        "qǐngwèn",
+        "dōu",
+        "máng"
+      ],
+      "accepted": [
+        "Yīngyǔ shū"
+      ],
+      "explanation": "英语书 đọc là Yīngyǔ shū, nghĩa là Sách tiếng Anh. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 135.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "d587e0df-be48-426a-9177-94e134a040ae"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “男朋友” với nghĩa “Bạn trai”.",
+      "options": [
+        "zuò",
+        "nán péngyou",
+        "zhèxiē",
+        "shēntǐ"
+      ],
+      "accepted": [
+        "nán péngyou"
+      ],
+      "explanation": "男朋友 đọc là nán péngyou, nghĩa là Bạn trai. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 136.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b176958c-1060-4099-ab92-a369db2382b0"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “女朋友” với nghĩa “Bạn gái”.",
+      "options": [
+        "nán péngyou",
+        "nǚ péngyou",
+        "rènshi",
+        "dà"
+      ],
+      "accepted": [
+        "nǚ péngyou"
+      ],
+      "explanation": "女朋友 đọc là nǚ péngyou, nghĩa là Bạn gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 137.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "46f31c8f-3c9b-4ba8-8525-afb9b1f42be4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “好朋友” với nghĩa “Bạn tốt, bạn thân”.",
+      "options": [
+        "máng",
+        "gāoxìng",
+        "hǎo péngyou",
+        "zuò"
+      ],
+      "accepted": [
+        "hǎo péngyou"
+      ],
+      "explanation": "好朋友 đọc là hǎo péngyou, nghĩa là Bạn tốt, bạn thân. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 138.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "82db19f9-e04a-41aa-9c3e-5f5bf805b87f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “大” với nghĩa “To, lớn”.",
+      "options": [
+        "nán péngyou",
+        "dà",
+        "qǐngjià",
+        "qǐng"
+      ],
+      "accepted": [
+        "dà"
+      ],
+      "explanation": "大 đọc là dà, nghĩa là To, lớn. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 139.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3e1e69d2-f142-4a28-ab5e-a14e8d247742"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “马先生” với nghĩa “Ông Mã”.",
+      "options": [
+        "méiyǒu",
+        "Mǎ xiānsheng",
+        "qǐng zuò",
+        "méishì"
+      ],
+      "accepted": [
+        "Mǎ xiānsheng"
+      ],
+      "explanation": "马先生 đọc là Mǎ xiānsheng, nghĩa là Ông Mã. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 140.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "56014cdb-aaa1-40fe-a14b-2f3ab74fb129"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 3",
+      "prompt": "Chọn phiên âm đúng của “王女士” với nghĩa “Bà/cô Vương”.",
+      "options": [
+        "zhè",
+        "qǐngwèn",
+        "dà",
+        "Wáng nǚshì"
+      ],
+      "accepted": [
+        "Wáng nǚshì"
+      ],
+      "explanation": "王女士 đọc là Wáng nǚshì, nghĩa là Bà/cô Vương. Nguồn: danh sách đầy đủ người dùng gửi, bài 3, dòng 141.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1155301e-16fd-4296-a509-14519c1ffd35"
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “请进！” có nghĩa là gì?",
+      "options": [
+        "Tôi thấy vịt quay rất ngon.",
+        "Xin hỏi, ngài có bận không?",
+        "Những cuốn này là sách tiếng Hán.",
+        "Mời vào!"
+      ],
+      "accepted": [
+        "Mời vào!"
+      ],
+      "explanation": "请进！ — Mời vào! Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Mời vào!”.",
+      "options": [
+        "他们也很忙。",
+        "请进！",
+        "这些是汉语书。",
+        "我觉得烤鸭很好吃。"
+      ],
+      "accepted": [
+        "请进！"
+      ],
+      "explanation": "请进！ — Mời vào! Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “请坐！” có nghĩa là gì?",
+      "options": [
+        "Chúng tôi đều là học sinh.",
+        "Mời ngồi!",
+        "Tôi có bạn bè.",
+        "Tôi không có danh thiếp."
+      ],
+      "accepted": [
+        "Mời ngồi!"
+      ],
+      "explanation": "请坐！ — Mời ngồi! Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Mời ngồi!”.",
+      "options": [
+        "对不起！",
+        "没关系！",
+        "请坐！",
+        "他是我的好朋友。"
+      ],
+      "accepted": [
+        "请坐！"
+      ],
+      "explanation": "请坐！ — Mời ngồi! Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “这是我的名片。” có nghĩa là gì?",
+      "options": [
+        "Tôi có bạn bè.",
+        "Đây là danh thiếp của tôi.",
+        "Xin hỏi, ngài có bận không?",
+        "Họ cũng rất bận."
+      ],
+      "accepted": [
+        "Đây là danh thiếp của tôi."
+      ],
+      "explanation": "这是我的名片。 — Đây là danh thiếp của tôi. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Đây là danh thiếp của tôi.”.",
+      "options": [
+        "这是我的名片。",
+        "对不起！",
+        "请进！",
+        "我没有名片。"
+      ],
+      "accepted": [
+        "这是我的名片。"
+      ],
+      "explanation": "这是我的名片。 — Đây là danh thiếp của tôi. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “那是他的朋友。” có nghĩa là gì?",
+      "options": [
+        "Đây là danh thiếp của tôi.",
+        "Xin hỏi, ngài có bận không?",
+        "Tôi có bạn bè.",
+        "Kia là bạn của anh ấy."
+      ],
+      "accepted": [
+        "Kia là bạn của anh ấy."
+      ],
+      "explanation": "那是他的朋友。 — Kia là bạn của anh ấy. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Kia là bạn của anh ấy.”.",
+      "options": [
+        "那是他的朋友。",
+        "这是我的名片。",
+        "他们也很忙。",
+        "我没有名片。"
+      ],
+      "accepted": [
+        "那是他的朋友。"
+      ],
+      "explanation": "那是他的朋友。 — Kia là bạn của anh ấy. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “我有朋友。” có nghĩa là gì?",
+      "options": [
+        "Tôi quen ông Mã.",
+        "Đây là bà Vương.",
+        "Họ cũng rất bận.",
+        "Tôi có bạn bè."
+      ],
+      "accepted": [
+        "Tôi có bạn bè."
+      ],
+      "explanation": "我有朋友。 — Tôi có bạn bè. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi có bạn bè.”.",
+      "options": [
+        "我没有名片。",
+        "没关系！",
+        "我有朋友。",
+        "那些是英语书。"
+      ],
+      "accepted": [
+        "我有朋友。"
+      ],
+      "explanation": "我有朋友。 — Tôi có bạn bè. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “我没有名片。” có nghĩa là gì?",
+      "options": [
+        "Mời vào!",
+        "Tôi không có danh thiếp.",
+        "Sức khỏe của tôi rất tốt.",
+        "Anh ấy là bạn thân của tôi."
+      ],
+      "accepted": [
+        "Tôi không có danh thiếp."
+      ],
+      "explanation": "我没有名片。 — Tôi không có danh thiếp. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi không có danh thiếp.”.",
+      "options": [
+        "我没有名片。",
+        "他们也很忙。",
+        "我认识马先生。",
+        "请问，您忙吗？"
+      ],
+      "accepted": [
+        "我没有名片。"
+      ],
+      "explanation": "我没有名片。 — Tôi không có danh thiếp. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “很高兴认识你。” có nghĩa là gì?",
+      "options": [
+        "Rất vui được làm quen với bạn.",
+        "Tôi không có danh thiếp.",
+        "Chúng tôi đều là học sinh.",
+        "Tôi thấy vịt quay rất ngon."
+      ],
+      "accepted": [
+        "Rất vui được làm quen với bạn."
+      ],
+      "explanation": "很高兴认识你。 — Rất vui được làm quen với bạn. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Rất vui được làm quen với bạn.”.",
+      "options": [
+        "很高兴认识你。",
+        "那是他的朋友。",
+        "请进！",
+        "没关系！"
+      ],
+      "accepted": [
+        "很高兴认识你。"
+      ],
+      "explanation": "很高兴认识你。 — Rất vui được làm quen với bạn. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “我们都是学生。” có nghĩa là gì?",
+      "options": [
+        "Chúng tôi đều là học sinh.",
+        "Tôi quen ông Mã.",
+        "Sức khỏe của tôi rất tốt.",
+        "Đây là danh thiếp của tôi."
+      ],
+      "accepted": [
+        "Chúng tôi đều là học sinh."
+      ],
+      "explanation": "我们都是学生。 — Chúng tôi đều là học sinh. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Chúng tôi đều là học sinh.”.",
+      "options": [
+        "没关系！",
+        "我们都是学生。",
+        "请进！",
+        "她是我的女朋友。"
+      ],
+      "accepted": [
+        "我们都是学生。"
+      ],
+      "explanation": "我们都是学生。 — Chúng tôi đều là học sinh. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “他们也很忙。” có nghĩa là gì?",
+      "options": [
+        "Tôi quen ông Mã.",
+        "Không sao đâu!",
+        "Tôi không có danh thiếp.",
+        "Họ cũng rất bận."
+      ],
+      "accepted": [
+        "Họ cũng rất bận."
+      ],
+      "explanation": "他们也很忙。 — Họ cũng rất bận. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Họ cũng rất bận.”.",
+      "options": [
+        "很高兴认识你。",
+        "我觉得烤鸭很好吃。",
+        "这些是汉语书。",
+        "他们也很忙。"
+      ],
+      "accepted": [
+        "他们也很忙。"
+      ],
+      "explanation": "他们也很忙。 — Họ cũng rất bận. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “我觉得烤鸭很好吃。” có nghĩa là gì?",
+      "options": [
+        "Những cuốn này là sách tiếng Hán.",
+        "Đây là danh thiếp của tôi.",
+        "Xin hỏi, ngài có bận không?",
+        "Tôi thấy vịt quay rất ngon."
+      ],
+      "accepted": [
+        "Tôi thấy vịt quay rất ngon."
+      ],
+      "explanation": "我觉得烤鸭很好吃。 — Tôi thấy vịt quay rất ngon. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi thấy vịt quay rất ngon.”.",
+      "options": [
+        "这些是汉语书。",
+        "我有朋友。",
+        "我觉得烤鸭很好吃。",
+        "请进！"
+      ],
+      "accepted": [
+        "我觉得烤鸭很好吃。"
+      ],
+      "explanation": "我觉得烤鸭很好吃。 — Tôi thấy vịt quay rất ngon. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “这些是汉语书。” có nghĩa là gì?",
+      "options": [
+        "Kia là bạn của anh ấy.",
+        "Họ cũng rất bận.",
+        "Xin hỏi, ngài có bận không?",
+        "Những cuốn này là sách tiếng Hán."
+      ],
+      "accepted": [
+        "Những cuốn này là sách tiếng Hán."
+      ],
+      "explanation": "这些是汉语书。 — Những cuốn này là sách tiếng Hán. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Những cuốn này là sách tiếng Hán.”.",
+      "options": [
+        "那些是英语书。",
+        "他是我的好朋友。",
+        "这些是汉语书。",
+        "没关系！"
+      ],
+      "accepted": [
+        "这些是汉语书。"
+      ],
+      "explanation": "这些是汉语书。 — Những cuốn này là sách tiếng Hán. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “那些是英语书。” có nghĩa là gì?",
+      "options": [
+        "Xin lỗi!",
+        "Anh ấy là bạn thân của tôi.",
+        "Sức khỏe của tôi rất tốt.",
+        "Những cuốn kia là sách tiếng Anh."
+      ],
+      "accepted": [
+        "Những cuốn kia là sách tiếng Anh."
+      ],
+      "explanation": "那些是英语书。 — Những cuốn kia là sách tiếng Anh. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Những cuốn kia là sách tiếng Anh.”.",
+      "options": [
+        "我们都是学生。",
+        "她是我的女朋友。",
+        "请问，您忙吗？",
+        "那些是英语书。"
+      ],
+      "accepted": [
+        "那些是英语书。"
+      ],
+      "explanation": "那些是英语书。 — Những cuốn kia là sách tiếng Anh. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “他是我的好朋友。” có nghĩa là gì?",
+      "options": [
+        "Đây là bà Vương.",
+        "Xin hỏi, ngài có bận không?",
+        "Những cuốn này là sách tiếng Hán.",
+        "Anh ấy là bạn thân của tôi."
+      ],
+      "accepted": [
+        "Anh ấy là bạn thân của tôi."
+      ],
+      "explanation": "他是我的好朋友。 — Anh ấy là bạn thân của tôi. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Anh ấy là bạn thân của tôi.”.",
+      "options": [
+        "他是我的好朋友。",
+        "请进！",
+        "他们也很忙。",
+        "我的身体很好。"
+      ],
+      "accepted": [
+        "他是我的好朋友。"
+      ],
+      "explanation": "他是我的好朋友。 — Anh ấy là bạn thân của tôi. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “她是我的女朋友。” có nghĩa là gì?",
+      "options": [
+        "Xin hỏi, ngài có bận không?",
+        "Cô ấy là bạn gái của tôi.",
+        "Tôi không có danh thiếp.",
+        "Sức khỏe của tôi rất tốt."
+      ],
+      "accepted": [
+        "Cô ấy là bạn gái của tôi."
+      ],
+      "explanation": "她是我的女朋友。 — Cô ấy là bạn gái của tôi. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy là bạn gái của tôi.”.",
+      "options": [
+        "她是我的女朋友。",
+        "对不起！",
+        "请问，您忙吗？",
+        "我的身体很好。"
+      ],
+      "accepted": [
+        "她是我的女朋友。"
+      ],
+      "explanation": "她是我的女朋友。 — Cô ấy là bạn gái của tôi. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “对不起！” có nghĩa là gì?",
+      "options": [
+        "Xin lỗi!",
+        "Chúng tôi đều là học sinh.",
+        "Tôi có bạn bè.",
+        "Sức khỏe của tôi rất tốt."
+      ],
+      "accepted": [
+        "Xin lỗi!"
+      ],
+      "explanation": "对不起！ — Xin lỗi! Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Xin lỗi!”.",
+      "options": [
+        "对不起！",
+        "那是他的朋友。",
+        "我有朋友。",
+        "请问，您忙吗？"
+      ],
+      "accepted": [
+        "对不起！"
+      ],
+      "explanation": "对不起！ — Xin lỗi! Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “没关系！” có nghĩa là gì?",
+      "options": [
+        "Không sao đâu!",
+        "Sức khỏe của tôi rất tốt.",
+        "Anh ấy là bạn thân của tôi.",
+        "Những cuốn này là sách tiếng Hán."
+      ],
+      "accepted": [
+        "Không sao đâu!"
+      ],
+      "explanation": "没关系！ — Không sao đâu! Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Không sao đâu!”.",
+      "options": [
+        "这些是汉语书。",
+        "没关系！",
+        "很高兴认识你。",
+        "我没有名片。"
+      ],
+      "accepted": [
+        "没关系！"
+      ],
+      "explanation": "没关系！ — Không sao đâu! Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “我的身体很好。” có nghĩa là gì?",
+      "options": [
+        "Không sao đâu!",
+        "Sức khỏe của tôi rất tốt.",
+        "Tôi không có danh thiếp.",
+        "Xin lỗi!"
+      ],
+      "accepted": [
+        "Sức khỏe của tôi rất tốt."
+      ],
+      "explanation": "我的身体很好。 — Sức khỏe của tôi rất tốt. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Sức khỏe của tôi rất tốt.”.",
+      "options": [
+        "我们都是学生。",
+        "我的身体很好。",
+        "他是我的好朋友。",
+        "请进！"
+      ],
+      "accepted": [
+        "我的身体很好。"
+      ],
+      "explanation": "我的身体很好。 — Sức khỏe của tôi rất tốt. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “我认识马先生。” có nghĩa là gì?",
+      "options": [
+        "Tôi không có danh thiếp.",
+        "Tôi quen ông Mã.",
+        "Những cuốn kia là sách tiếng Anh.",
+        "Những cuốn này là sách tiếng Hán."
+      ],
+      "accepted": [
+        "Tôi quen ông Mã."
+      ],
+      "explanation": "我认识马先生。 — Tôi quen ông Mã. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi quen ông Mã.”.",
+      "options": [
+        "没关系！",
+        "我认识马先生。",
+        "很高兴认识你。",
+        "请进！"
+      ],
+      "accepted": [
+        "我认识马先生。"
+      ],
+      "explanation": "我认识马先生。 — Tôi quen ông Mã. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “这是王女士。” có nghĩa là gì?",
+      "options": [
+        "Đây là bà Vương.",
+        "Xin hỏi, ngài có bận không?",
+        "Những cuốn kia là sách tiếng Anh.",
+        "Họ cũng rất bận."
+      ],
+      "accepted": [
+        "Đây là bà Vương."
+      ],
+      "explanation": "这是王女士。 — Đây là bà Vương. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Đây là bà Vương.”.",
+      "options": [
+        "他们也很忙。",
+        "请坐！",
+        "这是王女士。",
+        "我们都是学生。"
+      ],
+      "accepted": [
+        "这是王女士。"
+      ],
+      "explanation": "这是王女士。 — Đây là bà Vương. Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Câu “请问，您忙吗？” có nghĩa là gì?",
+      "options": [
+        "Tôi quen ông Mã.",
+        "Đây là danh thiếp của tôi.",
+        "Những cuốn này là sách tiếng Hán.",
+        "Xin hỏi, ngài có bận không?"
+      ],
+      "accepted": [
+        "Xin hỏi, ngài có bận không?"
+      ],
+      "explanation": "请问，您忙吗？ — Xin hỏi, ngài có bận không? Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–3",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Xin hỏi, ngài có bận không?”.",
+      "options": [
+        "我的身体很好。",
+        "那是他的朋友。",
+        "请问，您忙吗？",
+        "我有朋友。"
+      ],
+      "accepted": [
+        "请问，您忙吗？"
+      ],
+      "explanation": "请问，您忙吗？ — Xin hỏi, ngài có bận không? Câu dùng từ trong danh sách bài 1–3.",
+      "difficulty": "medium",
+      "approved": true
     }
-  ]
+  ],
+  "speaking": [
+    {
+      "practice": "speaking",
+      "text": "你有名片吗？",
+      "meaning": "Bạn có danh thiếp không?",
+      "answer_reference": "我没有名片。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你认识马先生吗？",
+      "meaning": "Bạn có quen ông Mã không?",
+      "answer_reference": "我认识马先生。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "这是谁的名片？",
+      "meaning": "Đây là danh thiếp của ai?",
+      "answer_reference": "这是我的名片。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你的身体好吗？",
+      "meaning": "Sức khỏe của bạn có tốt không?",
+      "answer_reference": "我的身体很好。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "这些是什么？",
+      "meaning": "Những cái này là gì?",
+      "answer_reference": "这些是汉语书。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "那些是英语书吗？",
+      "meaning": "Những cuốn kia là sách tiếng Anh phải không?",
+      "answer_reference": "那些是英语书。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你觉得烤鸭好吃吗？",
+      "meaning": "Bạn thấy vịt quay có ngon không?",
+      "answer_reference": "我觉得烤鸭很好吃。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你们都很忙吗？",
+      "meaning": "Các bạn đều rất bận phải không?",
+      "answer_reference": "我们都很忙。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "她是你的朋友吗？",
+      "meaning": "Cô ấy là bạn của bạn phải không?",
+      "answer_reference": "她是我的好朋友。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你认识王女士吗？",
+      "meaning": "Bạn có quen bà Vương không?",
+      "answer_reference": "我认识王女士。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    }
+  ],
+  "activities": {
+    "topic": "Làm quen và bạn bè",
+    "tasks": [
+      {
+        "type": "order",
+        "prompt": "Đây là danh thiếp của tôi.",
+        "tokens": [
+          "这",
+          "是",
+          "我",
+          "的",
+          "名片",
+          "。"
+        ],
+        "answer": "这是我的名片。",
+        "explanation": "这是我的名片。 — Đây là danh thiếp của tôi."
+      },
+      {
+        "type": "fill",
+        "prompt": "___是我的名片。 (Đây là danh thiếp của tôi.)",
+        "answer": "这",
+        "explanation": "Câu hoàn chỉnh: 这是我的名片。 — Đây là danh thiếp của tôi."
+      },
+      {
+        "type": "order",
+        "prompt": "Kia là bạn của anh ấy.",
+        "tokens": [
+          "那",
+          "是",
+          "他",
+          "的",
+          "朋友",
+          "。"
+        ],
+        "answer": "那是他的朋友。",
+        "explanation": "那是他的朋友。 — Kia là bạn của anh ấy."
+      },
+      {
+        "type": "fill",
+        "prompt": "___是他的朋友。 (Kia là bạn của anh ấy.)",
+        "answer": "那",
+        "explanation": "Câu hoàn chỉnh: 那是他的朋友。 — Kia là bạn của anh ấy."
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi có bạn bè.",
+        "tokens": [
+          "我",
+          "有",
+          "朋友",
+          "。"
+        ],
+        "answer": "我有朋友。",
+        "explanation": "我有朋友。 — Tôi có bạn bè."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___朋友。 (Tôi có bạn bè.)",
+        "answer": "有",
+        "explanation": "Câu hoàn chỉnh: 我有朋友。 — Tôi có bạn bè."
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi không có danh thiếp.",
+        "tokens": [
+          "我",
+          "没有",
+          "名片",
+          "。"
+        ],
+        "answer": "我没有名片。",
+        "explanation": "我没有名片。 — Tôi không có danh thiếp."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___名片。 (Tôi không có danh thiếp.)",
+        "answer": "没有",
+        "explanation": "Câu hoàn chỉnh: 我没有名片。 — Tôi không có danh thiếp."
+      },
+      {
+        "type": "order",
+        "prompt": "Rất vui được làm quen với bạn.",
+        "tokens": [
+          "很",
+          "高兴",
+          "认识",
+          "你",
+          "。"
+        ],
+        "answer": "很高兴认识你。",
+        "explanation": "很高兴认识你。 — Rất vui được làm quen với bạn."
+      },
+      {
+        "type": "fill",
+        "prompt": "___高兴认识你。 (Rất vui được làm quen với bạn.)",
+        "answer": "很",
+        "explanation": "Câu hoàn chỉnh: 很高兴认识你。 — Rất vui được làm quen với bạn."
+      },
+      {
+        "type": "order",
+        "prompt": "Chúng tôi đều là học sinh.",
+        "tokens": [
+          "我们",
+          "都",
+          "是",
+          "学生",
+          "。"
+        ],
+        "answer": "我们都是学生。",
+        "explanation": "我们都是学生。 — Chúng tôi đều là học sinh."
+      },
+      {
+        "type": "fill",
+        "prompt": "我们___是学生。 (Chúng tôi đều là học sinh.)",
+        "answer": "都",
+        "explanation": "Câu hoàn chỉnh: 我们都是学生。 — Chúng tôi đều là học sinh."
+      },
+      {
+        "type": "order",
+        "prompt": "Họ cũng rất bận.",
+        "tokens": [
+          "他们",
+          "也",
+          "很",
+          "忙",
+          "。"
+        ],
+        "answer": "他们也很忙。",
+        "explanation": "他们也很忙。 — Họ cũng rất bận."
+      },
+      {
+        "type": "fill",
+        "prompt": "他们___很忙。 (Họ cũng rất bận.)",
+        "answer": "也",
+        "explanation": "Câu hoàn chỉnh: 他们也很忙。 — Họ cũng rất bận."
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi thấy vịt quay rất ngon.",
+        "tokens": [
+          "我",
+          "觉得",
+          "烤鸭",
+          "很",
+          "好吃",
+          "。"
+        ],
+        "answer": "我觉得烤鸭很好吃。",
+        "explanation": "我觉得烤鸭很好吃。 — Tôi thấy vịt quay rất ngon."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___烤鸭很好吃。 (Tôi thấy vịt quay rất ngon.)",
+        "answer": "觉得",
+        "explanation": "Câu hoàn chỉnh: 我觉得烤鸭很好吃。 — Tôi thấy vịt quay rất ngon."
+      },
+      {
+        "type": "order",
+        "prompt": "Những cuốn này là sách tiếng Hán.",
+        "tokens": [
+          "这些",
+          "是",
+          "汉语书",
+          "。"
+        ],
+        "answer": "这些是汉语书。",
+        "explanation": "这些是汉语书。 — Những cuốn này là sách tiếng Hán."
+      },
+      {
+        "type": "fill",
+        "prompt": "___是汉语书。 (Những cuốn này là sách tiếng Hán.)",
+        "answer": "这些",
+        "explanation": "Câu hoàn chỉnh: 这些是汉语书。 — Những cuốn này là sách tiếng Hán."
+      },
+      {
+        "type": "order",
+        "prompt": "Những cuốn kia là sách tiếng Anh.",
+        "tokens": [
+          "那些",
+          "是",
+          "英语书",
+          "。"
+        ],
+        "answer": "那些是英语书。",
+        "explanation": "那些是英语书。 — Những cuốn kia là sách tiếng Anh."
+      },
+      {
+        "type": "fill",
+        "prompt": "___是英语书。 (Những cuốn kia là sách tiếng Anh.)",
+        "answer": "那些",
+        "explanation": "Câu hoàn chỉnh: 那些是英语书。 — Những cuốn kia là sách tiếng Anh."
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Mời vào!”: 我们都是学生。",
+        "answer": "请进！",
+        "options": [
+          "请进！",
+          "我们都是学生。",
+          "她是我的女朋友。"
+        ],
+        "explanation": "请进！ — Mời vào!"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你有名片吗？",
+        "answer": "我没有名片。",
+        "options": [
+          "我没有名片。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn có danh thiếp không? Đáp lại: 我没有名片。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Mời ngồi!”: 他们也很忙。",
+        "answer": "请坐！",
+        "options": [
+          "请坐！",
+          "他们也很忙。",
+          "对不起！"
+        ],
+        "explanation": "请坐！ — Mời ngồi!"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你认识马先生吗？",
+        "answer": "我认识马先生。",
+        "options": [
+          "我认识马先生。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn có quen ông Mã không? Đáp lại: 我认识马先生。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Đây là danh thiếp của tôi.”: 我觉得烤鸭很好吃。",
+        "answer": "这是我的名片。",
+        "options": [
+          "这是我的名片。",
+          "我觉得烤鸭很好吃。",
+          "没关系！"
+        ],
+        "explanation": "这是我的名片。 — Đây là danh thiếp của tôi."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "这是谁的名片？",
+        "answer": "这是我的名片。",
+        "options": [
+          "这是我的名片。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Đây là danh thiếp của ai? Đáp lại: 这是我的名片。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Kia là bạn của anh ấy.”: 这些是汉语书。",
+        "answer": "那是他的朋友。",
+        "options": [
+          "那是他的朋友。",
+          "这些是汉语书。",
+          "我的身体很好。"
+        ],
+        "explanation": "那是他的朋友。 — Kia là bạn của anh ấy."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你的身体好吗？",
+        "answer": "我的身体很好。",
+        "options": [
+          "我的身体很好。",
+          "我是老师。",
+          "我是学生。"
+        ],
+        "explanation": "Sức khỏe của bạn có tốt không? Đáp lại: 我的身体很好。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi có bạn bè.”: 那些是英语书。",
+        "answer": "我有朋友。",
+        "options": [
+          "我有朋友。",
+          "那些是英语书。",
+          "我认识马先生。"
+        ],
+        "explanation": "我有朋友。 — Tôi có bạn bè."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "这些是什么？",
+        "answer": "这些是汉语书。",
+        "options": [
+          "这些是汉语书。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Những cái này là gì? Đáp lại: 这些是汉语书。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi không có danh thiếp.”: 他是我的好朋友。",
+        "answer": "我没有名片。",
+        "options": [
+          "我没有名片。",
+          "他是我的好朋友。",
+          "这是王女士。"
+        ],
+        "explanation": "我没有名片。 — Tôi không có danh thiếp."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "那些是英语书吗？",
+        "answer": "那些是英语书。",
+        "options": [
+          "那些是英语书。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Những cuốn kia là sách tiếng Anh phải không? Đáp lại: 那些是英语书。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Rất vui được làm quen với bạn.”: 她是我的女朋友。",
+        "answer": "很高兴认识你。",
+        "options": [
+          "很高兴认识你。",
+          "她是我的女朋友。",
+          "请问，您忙吗？"
+        ],
+        "explanation": "很高兴认识你。 — Rất vui được làm quen với bạn."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你觉得烤鸭好吃吗？",
+        "answer": "我觉得烤鸭很好吃。",
+        "options": [
+          "我觉得烤鸭很好吃。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn thấy vịt quay có ngon không? Đáp lại: 我觉得烤鸭很好吃。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Chúng tôi đều là học sinh.”: 对不起！",
+        "answer": "我们都是学生。",
+        "options": [
+          "我们都是学生。",
+          "对不起！",
+          "请进！"
+        ],
+        "explanation": "我们都是学生。 — Chúng tôi đều là học sinh."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你们都很忙吗？",
+        "answer": "我们都很忙。",
+        "options": [
+          "我们都很忙。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Các bạn đều rất bận phải không? Đáp lại: 我们都很忙。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Họ cũng rất bận.”: 没关系！",
+        "answer": "他们也很忙。",
+        "options": [
+          "他们也很忙。",
+          "没关系！",
+          "请坐！"
+        ],
+        "explanation": "他们也很忙。 — Họ cũng rất bận."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "她是你的朋友吗？",
+        "answer": "她是我的好朋友。",
+        "options": [
+          "她是我的好朋友。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Cô ấy là bạn của bạn phải không? Đáp lại: 她是我的好朋友。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi thấy vịt quay rất ngon.”: 我的身体很好。",
+        "answer": "我觉得烤鸭很好吃。",
+        "options": [
+          "我觉得烤鸭很好吃。",
+          "我的身体很好。",
+          "这是我的名片。"
+        ],
+        "explanation": "我觉得烤鸭很好吃。 — Tôi thấy vịt quay rất ngon."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你认识王女士吗？",
+        "answer": "我认识王女士。",
+        "options": [
+          "我认识王女士。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn có quen bà Vương không? Đáp lại: 我认识王女士。"
+      }
+    ]
+  },
+  "chat": {
+    "enabled": true,
+    "scenario_id": "meeting",
+    "goal": "Trò chuyện về làm quen và bạn bè; chỉ dùng từ đã học từ bài 1 đến bài 3.",
+    "opening": "你有名片吗？",
+    "translation": "Bạn có danh thiếp không?",
+    "required_words": [
+      "请问",
+      "觉得",
+      "这",
+      "那",
+      "的",
+      "名片",
+      "身体",
+      "对不起",
+      "没关系",
+      "有",
+      "没有",
+      "朋友",
+      "高兴",
+      "认识",
+      "先生",
+      "女士",
+      "马",
+      "黄文丽",
+      "也",
+      "小"
+    ],
+    "max_turns": 10
+  },
+  "street": {
+    "enabled": true,
+    "place_id": "school",
+    "missions": [
+      {
+        "id": "vocab-3-1",
+        "title": "Nghe hiểu 1",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "请进！",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Mời vào!"
+          },
+          {
+            "id": "c2",
+            "label": "Chúng tôi đều là học sinh."
+          },
+          {
+            "id": "c3",
+            "label": "Cô ấy là bạn gái của tôi."
+          }
+        ],
+        "answer": "c1",
+        "feedback": "请进！ — Mời vào!"
+      },
+      {
+        "id": "vocab-3-2",
+        "title": "Nghe hiểu 2",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "我没有名片。",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Anh ấy là bạn thân của tôi."
+          },
+          {
+            "id": "c2",
+            "label": "Tôi không có danh thiếp."
+          },
+          {
+            "id": "c3",
+            "label": "Đây là bà Vương."
+          }
+        ],
+        "answer": "c2",
+        "feedback": "我没有名片。 — Tôi không có danh thiếp."
+      },
+      {
+        "id": "vocab-3-3",
+        "title": "Nghe hiểu 3",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "这些是汉语书。",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Kia là bạn của anh ấy."
+          },
+          {
+            "id": "c2",
+            "label": "Tôi quen ông Mã."
+          },
+          {
+            "id": "c3",
+            "label": "Những cuốn này là sách tiếng Hán."
+          }
+        ],
+        "answer": "c3",
+        "feedback": "这些是汉语书。 — Những cuốn này là sách tiếng Hán."
+      }
+    ]
+  }
 }

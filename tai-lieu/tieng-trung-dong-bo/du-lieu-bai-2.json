@@ -1,0 +1,3451 @@
+{
+  "version": "user-vocabulary-2026-11-14",
+  "lesson": 2,
+  "title": "第二课：你叫什么名字？ (Bạn tên là gì?)",
+  "vocabulary": [
+    {
+      "hanzi": "叫",
+      "pinyin": "jiào",
+      "meaning": "Gọi, tên là",
+      "group": "main",
+      "example": "你叫什么名字？",
+      "example_meaning": "Bạn tên là gì?"
+    },
+    {
+      "hanzi": "不",
+      "pinyin": "bù",
+      "meaning": "Không",
+      "group": "main",
+      "example": "我不是老师。",
+      "example_meaning": "Tôi không phải là giáo viên."
+    },
+    {
+      "hanzi": "什么",
+      "pinyin": "shénme",
+      "meaning": "Cái gì",
+      "group": "main",
+      "example": "你叫什么名字？",
+      "example_meaning": "Bạn tên là gì?"
+    },
+    {
+      "hanzi": "谁",
+      "pinyin": "shéi / shuí",
+      "meaning": "Ai",
+      "group": "main",
+      "example": "他是谁？",
+      "example_meaning": "Anh ấy là ai?"
+    },
+    {
+      "hanzi": "名字",
+      "pinyin": "míngzi",
+      "meaning": "Tên",
+      "group": "main",
+      "example": "你叫什么名字？",
+      "example_meaning": "Bạn tên là gì?"
+    },
+    {
+      "hanzi": "贵姓",
+      "pinyin": "guìxìng",
+      "meaning": "Quý danh, quý tính",
+      "group": "main",
+      "example": "您贵姓？",
+      "example_meaning": "Ngài họ gì? (lịch sự)"
+    },
+    {
+      "hanzi": "呢",
+      "pinyin": "ne",
+      "meaning": "Trợ từ nghi vấn",
+      "group": "main",
+      "example": "你呢？",
+      "example_meaning": "Còn bạn thì sao?"
+    },
+    {
+      "hanzi": "哪",
+      "pinyin": "nǎ",
+      "meaning": "Nào",
+      "group": "main",
+      "example": "你是哪国人？",
+      "example_meaning": "Bạn là người nước nào?"
+    },
+    {
+      "hanzi": "国",
+      "pinyin": "guó",
+      "meaning": "Quốc gia",
+      "group": "main",
+      "example": "你是哪国人？",
+      "example_meaning": "Bạn là người nước nào?"
+    },
+    {
+      "hanzi": "人",
+      "pinyin": "rén",
+      "meaning": "Người",
+      "group": "main",
+      "example": "你是哪国人？",
+      "example_meaning": "Bạn là người nước nào?"
+    },
+    {
+      "hanzi": "美",
+      "pinyin": "měi",
+      "meaning": "Đẹp, Mỹ",
+      "group": "main",
+      "example": "她是美国人。",
+      "example_meaning": "Cô ấy là người Mỹ."
+    },
+    {
+      "hanzi": "帅",
+      "pinyin": "shuài",
+      "meaning": "Đẹp trai",
+      "group": "main",
+      "example": "他很帅。",
+      "example_meaning": "Anh ấy rất đẹp trai."
+    },
+    {
+      "hanzi": "吗",
+      "pinyin": "ma",
+      "meaning": "Trợ từ nghi vấn có/không",
+      "group": "main",
+      "example": "你是日本人吗？",
+      "example_meaning": "Bạn có phải là người Nhật không?"
+    },
+    {
+      "hanzi": "很",
+      "pinyin": "hěn",
+      "meaning": "Rất",
+      "group": "main",
+      "example": "他很帅。",
+      "example_meaning": "Anh ấy rất đẹp trai."
+    },
+    {
+      "hanzi": "咖啡",
+      "pinyin": "kāfēi",
+      "meaning": "Cà phê",
+      "group": "extended",
+      "example": "咖啡很贵。",
+      "example_meaning": "Cà phê rất đắt."
+    },
+    {
+      "hanzi": "烤鸭",
+      "pinyin": "kǎoyā",
+      "meaning": "Vịt quay",
+      "group": "extended",
+      "example": "烤鸭很便宜。",
+      "example_meaning": "Vịt quay rất rẻ."
+    },
+    {
+      "hanzi": "毛笔",
+      "pinyin": "máobǐ",
+      "meaning": "Bút lông",
+      "group": "extended",
+      "example": "毛笔很贵。",
+      "example_meaning": "Bút lông rất đắt."
+    },
+    {
+      "hanzi": "飞机",
+      "pinyin": "fēijī",
+      "meaning": "Máy bay",
+      "group": "extended",
+      "example": "飞机很新。",
+      "example_meaning": "Máy bay rất mới."
+    },
+    {
+      "hanzi": "字",
+      "pinyin": "zì",
+      "meaning": "Chữ",
+      "group": "extended",
+      "example": "你叫什么名字？",
+      "example_meaning": "Bạn tên là gì?"
+    },
+    {
+      "hanzi": "贵",
+      "pinyin": "guì",
+      "meaning": "Đắt, quý",
+      "group": "extended",
+      "example": "您贵姓？",
+      "example_meaning": "Ngài họ gì? (lịch sự)"
+    },
+    {
+      "hanzi": "便宜",
+      "pinyin": "piányi",
+      "meaning": "Rẻ",
+      "group": "extended",
+      "example": "烤鸭很便宜。",
+      "example_meaning": "Vịt quay rất rẻ."
+    },
+    {
+      "hanzi": "姓",
+      "pinyin": "xìng",
+      "meaning": "Họ",
+      "group": "extended",
+      "example": "您贵姓？",
+      "example_meaning": "Ngài họ gì? (lịch sự)"
+    },
+    {
+      "hanzi": "非常",
+      "pinyin": "fēicháng",
+      "meaning": "Vô cùng, rất",
+      "group": "extended"
+    },
+    {
+      "hanzi": "特别",
+      "pinyin": "tèbié",
+      "meaning": "Đặc biệt, cực kỳ",
+      "group": "extended"
+    },
+    {
+      "hanzi": "越南",
+      "pinyin": "Yuènán",
+      "meaning": "Việt Nam",
+      "group": "extended",
+      "example": "我是越南人。",
+      "example_meaning": "Tôi là người Việt Nam."
+    },
+    {
+      "hanzi": "中国",
+      "pinyin": "Zhōngguó",
+      "meaning": "Trung Quốc",
+      "group": "extended",
+      "example": "他是中国人。",
+      "example_meaning": "Anh ấy là người Trung Quốc."
+    },
+    {
+      "hanzi": "日本",
+      "pinyin": "Rìběn",
+      "meaning": "Nhật Bản",
+      "group": "extended",
+      "example": "你是日本人吗？",
+      "example_meaning": "Bạn có phải là người Nhật không?"
+    },
+    {
+      "hanzi": "美国",
+      "pinyin": "Měiguó",
+      "meaning": "Mỹ",
+      "group": "extended",
+      "example": "她是美国人。",
+      "example_meaning": "Cô ấy là người Mỹ."
+    },
+    {
+      "hanzi": "泰国",
+      "pinyin": "Tàiguó",
+      "meaning": "Thái Lan",
+      "group": "extended",
+      "example": "他们是泰国人。",
+      "example_meaning": "Họ là người Thái Lan."
+    },
+    {
+      "hanzi": "英国",
+      "pinyin": "Yīngguó",
+      "meaning": "Anh",
+      "group": "extended",
+      "example": "我是英国人。",
+      "example_meaning": "Tôi là người Anh."
+    },
+    {
+      "hanzi": "越南人",
+      "pinyin": "Yuènán rén",
+      "meaning": "Người Việt Nam",
+      "group": "extended",
+      "example": "我是越南人。",
+      "example_meaning": "Tôi là người Việt Nam."
+    },
+    {
+      "hanzi": "中国人",
+      "pinyin": "Zhōngguó rén",
+      "meaning": "Người Trung Quốc",
+      "group": "extended",
+      "example": "他是中国人。",
+      "example_meaning": "Anh ấy là người Trung Quốc."
+    },
+    {
+      "hanzi": "日本人",
+      "pinyin": "Rìběn rén",
+      "meaning": "Người Nhật",
+      "group": "extended",
+      "example": "你是日本人吗？",
+      "example_meaning": "Bạn có phải là người Nhật không?"
+    },
+    {
+      "hanzi": "美国人",
+      "pinyin": "Měiguó rén",
+      "meaning": "Người Mỹ",
+      "group": "extended",
+      "example": "她是美国人。",
+      "example_meaning": "Cô ấy là người Mỹ."
+    },
+    {
+      "hanzi": "泰国人",
+      "pinyin": "Tàiguó rén",
+      "meaning": "Người Thái Lan",
+      "group": "extended",
+      "example": "他们是泰国人。",
+      "example_meaning": "Họ là người Thái Lan."
+    },
+    {
+      "hanzi": "英国人",
+      "pinyin": "Yīngguó rén",
+      "meaning": "Người Anh",
+      "group": "extended",
+      "example": "我是英国人。",
+      "example_meaning": "Tôi là người Anh."
+    },
+    {
+      "hanzi": "哪国人",
+      "pinyin": "nǎ guó rén",
+      "meaning": "Người nước nào",
+      "group": "extended",
+      "example": "你是哪国人？",
+      "example_meaning": "Bạn là người nước nào?"
+    },
+    {
+      "hanzi": "零",
+      "pinyin": "líng",
+      "meaning": "0",
+      "group": "extended"
+    },
+    {
+      "hanzi": "一",
+      "pinyin": "yī",
+      "meaning": "1",
+      "group": "extended"
+    },
+    {
+      "hanzi": "二",
+      "pinyin": "èr",
+      "meaning": "2",
+      "group": "extended"
+    },
+    {
+      "hanzi": "三",
+      "pinyin": "sān",
+      "meaning": "3",
+      "group": "extended"
+    },
+    {
+      "hanzi": "四",
+      "pinyin": "sì",
+      "meaning": "4",
+      "group": "extended"
+    },
+    {
+      "hanzi": "五",
+      "pinyin": "wǔ",
+      "meaning": "5",
+      "group": "extended"
+    },
+    {
+      "hanzi": "六",
+      "pinyin": "liù",
+      "meaning": "6",
+      "group": "extended"
+    },
+    {
+      "hanzi": "七",
+      "pinyin": "qī",
+      "meaning": "7",
+      "group": "extended"
+    },
+    {
+      "hanzi": "八",
+      "pinyin": "bā",
+      "meaning": "8",
+      "group": "extended"
+    },
+    {
+      "hanzi": "九",
+      "pinyin": "jiǔ",
+      "meaning": "9",
+      "group": "extended"
+    },
+    {
+      "hanzi": "十",
+      "pinyin": "shí",
+      "meaning": "10",
+      "group": "extended"
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “叫” có nghĩa là gì?",
+      "options": [
+        "Trung Quốc",
+        "Họ",
+        "Gọi, tên là",
+        "Vô cùng, rất"
+      ],
+      "accepted": [
+        "Gọi, tên là"
+      ],
+      "explanation": "叫 đọc là jiào, nghĩa là Gọi, tên là. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 39.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e9f618f5-d303-4760-8752-53feb6731368"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “jiào” và nghĩa “Gọi, tên là”.",
+      "options": [
+        "咖啡",
+        "帅",
+        "英国人",
+        "叫"
+      ],
+      "accepted": [
+        "叫"
+      ],
+      "explanation": "叫 đọc là jiào, nghĩa là Gọi, tên là. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 39.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e9f618f5-d303-4760-8752-53feb6731368"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “不” có nghĩa là gì?",
+      "options": [
+        "Người Trung Quốc",
+        "5",
+        "Không",
+        "10"
+      ],
+      "accepted": [
+        "Không"
+      ],
+      "explanation": "不 đọc là bù, nghĩa là Không. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 40.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f54aa4c5-f392-4fce-9243-9575563a81f2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “bù” và nghĩa “Không”.",
+      "options": [
+        "便宜",
+        "四",
+        "不",
+        "泰国"
+      ],
+      "accepted": [
+        "不"
+      ],
+      "explanation": "不 đọc là bù, nghĩa là Không. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 40.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f54aa4c5-f392-4fce-9243-9575563a81f2"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “什么” có nghĩa là gì?",
+      "options": [
+        "Cái gì",
+        "Anh",
+        "Rất",
+        "Vô cùng, rất"
+      ],
+      "accepted": [
+        "Cái gì"
+      ],
+      "explanation": "什么 đọc là shénme, nghĩa là Cái gì. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 41.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cb1c631f-c761-417f-9f92-1711c268c8bd"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “shénme” và nghĩa “Cái gì”.",
+      "options": [
+        "咖啡",
+        "国",
+        "零",
+        "什么"
+      ],
+      "accepted": [
+        "什么"
+      ],
+      "explanation": "什么 đọc là shénme, nghĩa là Cái gì. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 41.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cb1c631f-c761-417f-9f92-1711c268c8bd"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “谁” có nghĩa là gì?",
+      "options": [
+        "Bút lông",
+        "Ai",
+        "Việt Nam",
+        "Người Mỹ"
+      ],
+      "accepted": [
+        "Ai"
+      ],
+      "explanation": "谁 đọc là shéi / shuí, nghĩa là Ai. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 42.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "001e2b59-6e54-45b1-896f-cd94638f7575"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “shéi / shuí” và nghĩa “Ai”.",
+      "options": [
+        "中国",
+        "不",
+        "十",
+        "谁"
+      ],
+      "accepted": [
+        "谁"
+      ],
+      "explanation": "谁 đọc là shéi / shuí, nghĩa là Ai. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 42.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "001e2b59-6e54-45b1-896f-cd94638f7575"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “名字” có nghĩa là gì?",
+      "options": [
+        "Rất",
+        "6",
+        "Tên",
+        "Người Trung Quốc"
+      ],
+      "accepted": [
+        "Tên"
+      ],
+      "explanation": "名字 đọc là míngzi, nghĩa là Tên. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 43.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e6d23195-6238-4fac-9ba1-ee342b70529d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “míngzi” và nghĩa “Tên”.",
+      "options": [
+        "名字",
+        "九",
+        "贵姓",
+        "便宜"
+      ],
+      "accepted": [
+        "名字"
+      ],
+      "explanation": "名字 đọc là míngzi, nghĩa là Tên. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 43.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e6d23195-6238-4fac-9ba1-ee342b70529d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “贵姓” có nghĩa là gì?",
+      "options": [
+        "1",
+        "Không",
+        "Đặc biệt, cực kỳ",
+        "Quý danh, quý tính"
+      ],
+      "accepted": [
+        "Quý danh, quý tính"
+      ],
+      "explanation": "贵姓 đọc là guìxìng, nghĩa là Quý danh, quý tính. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 44.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "422b272e-9dee-4ab2-91ae-8dc693f6aa54"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “guìxìng” và nghĩa “Quý danh, quý tính”.",
+      "options": [
+        "什么",
+        "一",
+        "贵姓",
+        "二"
+      ],
+      "accepted": [
+        "贵姓"
+      ],
+      "explanation": "贵姓 đọc là guìxìng, nghĩa là Quý danh, quý tính. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 44.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "422b272e-9dee-4ab2-91ae-8dc693f6aa54"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “呢” có nghĩa là gì?",
+      "options": [
+        "Trợ từ nghi vấn",
+        "Người",
+        "Người nước nào",
+        "Gọi, tên là"
+      ],
+      "accepted": [
+        "Trợ từ nghi vấn"
+      ],
+      "explanation": "呢 đọc là ne, nghĩa là Trợ từ nghi vấn. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 45.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "74338f35-31f0-407d-bc2f-629953671e6f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “ne” và nghĩa “Trợ từ nghi vấn”.",
+      "options": [
+        "泰国人",
+        "呢",
+        "四",
+        "六"
+      ],
+      "accepted": [
+        "呢"
+      ],
+      "explanation": "呢 đọc là ne, nghĩa là Trợ từ nghi vấn. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 45.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "74338f35-31f0-407d-bc2f-629953671e6f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “哪” có nghĩa là gì?",
+      "options": [
+        "9",
+        "Đặc biệt, cực kỳ",
+        "Nào",
+        "Quốc gia"
+      ],
+      "accepted": [
+        "Nào"
+      ],
+      "explanation": "哪 đọc là nǎ, nghĩa là Nào. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 46.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3ca1ae7f-b7c2-4a06-a279-e74de8061533"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “nǎ” và nghĩa “Nào”.",
+      "options": [
+        "毛笔",
+        "哪",
+        "名字",
+        "贵"
+      ],
+      "accepted": [
+        "哪"
+      ],
+      "explanation": "哪 đọc là nǎ, nghĩa là Nào. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 46.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3ca1ae7f-b7c2-4a06-a279-e74de8061533"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “国” có nghĩa là gì?",
+      "options": [
+        "Người",
+        "Rẻ",
+        "Nhật Bản",
+        "Quốc gia"
+      ],
+      "accepted": [
+        "Quốc gia"
+      ],
+      "explanation": "国 đọc là guó, nghĩa là Quốc gia. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 47.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1faf5c17-0cdd-4113-b168-d9528733657c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “guó” và nghĩa “Quốc gia”.",
+      "options": [
+        "英国人",
+        "很",
+        "国",
+        "便宜"
+      ],
+      "accepted": [
+        "国"
+      ],
+      "explanation": "国 đọc là guó, nghĩa là Quốc gia. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 47.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "1faf5c17-0cdd-4113-b168-d9528733657c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “人” có nghĩa là gì?",
+      "options": [
+        "Ai",
+        "Người",
+        "Vịt quay",
+        "Đẹp trai"
+      ],
+      "accepted": [
+        "Người"
+      ],
+      "explanation": "人 đọc là rén, nghĩa là Người. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 48.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "eccbdb31-b43e-4c79-b6b0-cc00880b5b18"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “rén” và nghĩa “Người”.",
+      "options": [
+        "泰国人",
+        "人",
+        "美国人",
+        "姓"
+      ],
+      "accepted": [
+        "人"
+      ],
+      "explanation": "人 đọc là rén, nghĩa là Người. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 48.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "eccbdb31-b43e-4c79-b6b0-cc00880b5b18"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “美” có nghĩa là gì?",
+      "options": [
+        "Trợ từ nghi vấn có/không",
+        "Vịt quay",
+        "Đẹp, Mỹ",
+        "Quốc gia"
+      ],
+      "accepted": [
+        "Đẹp, Mỹ"
+      ],
+      "explanation": "美 đọc là měi, nghĩa là Đẹp, Mỹ. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 49.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5c1e28de-50b6-40ee-9e6f-ec15030e0d65"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “měi” và nghĩa “Đẹp, Mỹ”.",
+      "options": [
+        "叫",
+        "哪国人",
+        "美",
+        "便宜"
+      ],
+      "accepted": [
+        "美"
+      ],
+      "explanation": "美 đọc là měi, nghĩa là Đẹp, Mỹ. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 49.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5c1e28de-50b6-40ee-9e6f-ec15030e0d65"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “帅” có nghĩa là gì?",
+      "options": [
+        "Đẹp trai",
+        "Gọi, tên là",
+        "Vô cùng, rất",
+        "Cà phê"
+      ],
+      "accepted": [
+        "Đẹp trai"
+      ],
+      "explanation": "帅 đọc là shuài, nghĩa là Đẹp trai. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 50.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8c2916a2-e737-4a9d-8a2c-68db3c7587da"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “shuài” và nghĩa “Đẹp trai”.",
+      "options": [
+        "很",
+        "英国",
+        "贵",
+        "帅"
+      ],
+      "accepted": [
+        "帅"
+      ],
+      "explanation": "帅 đọc là shuài, nghĩa là Đẹp trai. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 50.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8c2916a2-e737-4a9d-8a2c-68db3c7587da"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “吗” có nghĩa là gì?",
+      "options": [
+        "Trợ từ nghi vấn có/không",
+        "Quốc gia",
+        "6",
+        "Rất"
+      ],
+      "accepted": [
+        "Trợ từ nghi vấn có/không"
+      ],
+      "explanation": "吗 đọc là ma, nghĩa là Trợ từ nghi vấn có/không. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 51.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "23bb38e9-1e8a-4e63-9ae8-1d0d612eb40c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “ma” và nghĩa “Trợ từ nghi vấn có/không”.",
+      "options": [
+        "十",
+        "吗",
+        "谁",
+        "贵姓"
+      ],
+      "accepted": [
+        "吗"
+      ],
+      "explanation": "吗 đọc là ma, nghĩa là Trợ từ nghi vấn có/không. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 51.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "23bb38e9-1e8a-4e63-9ae8-1d0d612eb40c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “很” có nghĩa là gì?",
+      "options": [
+        "Rất",
+        "Việt Nam",
+        "Trung Quốc",
+        "3"
+      ],
+      "accepted": [
+        "Rất"
+      ],
+      "explanation": "很 đọc là hěn, nghĩa là Rất. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 52.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c4761174-0385-400e-9b72-bbeaf7f3cdc6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “hěn” và nghĩa “Rất”.",
+      "options": [
+        "特别",
+        "日本人",
+        "美国人",
+        "很"
+      ],
+      "accepted": [
+        "很"
+      ],
+      "explanation": "很 đọc là hěn, nghĩa là Rất. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 52.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c4761174-0385-400e-9b72-bbeaf7f3cdc6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “咖啡” có nghĩa là gì?",
+      "options": [
+        "Cà phê",
+        "Đắt, quý",
+        "9",
+        "1"
+      ],
+      "accepted": [
+        "Cà phê"
+      ],
+      "explanation": "咖啡 đọc là kāfēi, nghĩa là Cà phê. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 56.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7cf00128-630a-440c-948c-762ac7ec7c7b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “kāfēi” và nghĩa “Cà phê”.",
+      "options": [
+        "贵姓",
+        "咖啡",
+        "非常",
+        "贵"
+      ],
+      "accepted": [
+        "咖啡"
+      ],
+      "explanation": "咖啡 đọc là kāfēi, nghĩa là Cà phê. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 56.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7cf00128-630a-440c-948c-762ac7ec7c7b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “烤鸭” có nghĩa là gì?",
+      "options": [
+        "Vịt quay",
+        "Không",
+        "4",
+        "Người Nhật"
+      ],
+      "accepted": [
+        "Vịt quay"
+      ],
+      "explanation": "烤鸭 đọc là kǎoyā, nghĩa là Vịt quay. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 57.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2e9af50d-8ead-47d8-aab0-10554218d36c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “kǎoyā” và nghĩa “Vịt quay”.",
+      "options": [
+        "三",
+        "帅",
+        "烤鸭",
+        "日本"
+      ],
+      "accepted": [
+        "烤鸭"
+      ],
+      "explanation": "烤鸭 đọc là kǎoyā, nghĩa là Vịt quay. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 57.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2e9af50d-8ead-47d8-aab0-10554218d36c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “毛笔” có nghĩa là gì?",
+      "options": [
+        "Bút lông",
+        "2",
+        "Cái gì",
+        "Anh"
+      ],
+      "accepted": [
+        "Bút lông"
+      ],
+      "explanation": "毛笔 đọc là máobǐ, nghĩa là Bút lông. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 58.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a4bb3a49-3385-4ffe-a73b-c5b0e0bda733"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “máobǐ” và nghĩa “Bút lông”.",
+      "options": [
+        "毛笔",
+        "咖啡",
+        "八",
+        "日本"
+      ],
+      "accepted": [
+        "毛笔"
+      ],
+      "explanation": "毛笔 đọc là máobǐ, nghĩa là Bút lông. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 58.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a4bb3a49-3385-4ffe-a73b-c5b0e0bda733"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “飞机” có nghĩa là gì?",
+      "options": [
+        "Chữ",
+        "Máy bay",
+        "Đắt, quý",
+        "Việt Nam"
+      ],
+      "accepted": [
+        "Máy bay"
+      ],
+      "explanation": "飞机 đọc là fēijī, nghĩa là Máy bay. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 59.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "69d9796d-67d3-429b-adef-d0c43747ea0a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “fēijī” và nghĩa “Máy bay”.",
+      "options": [
+        "飞机",
+        "美",
+        "毛笔",
+        "九"
+      ],
+      "accepted": [
+        "飞机"
+      ],
+      "explanation": "飞机 đọc là fēijī, nghĩa là Máy bay. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 59.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "69d9796d-67d3-429b-adef-d0c43747ea0a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “字” có nghĩa là gì?",
+      "options": [
+        "Chữ",
+        "Đẹp trai",
+        "Rẻ",
+        "Tên"
+      ],
+      "accepted": [
+        "Chữ"
+      ],
+      "explanation": "字 đọc là zì, nghĩa là Chữ. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 60.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "39b2194c-0264-4174-9ea0-cef9feda57ec"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “zì” và nghĩa “Chữ”.",
+      "options": [
+        "四",
+        "越南人",
+        "十",
+        "字"
+      ],
+      "accepted": [
+        "字"
+      ],
+      "explanation": "字 đọc là zì, nghĩa là Chữ. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 60.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "39b2194c-0264-4174-9ea0-cef9feda57ec"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “贵” có nghĩa là gì?",
+      "options": [
+        "Đắt, quý",
+        "Người Việt Nam",
+        "Ai",
+        "Đẹp, Mỹ"
+      ],
+      "accepted": [
+        "Đắt, quý"
+      ],
+      "explanation": "贵 đọc là guì, nghĩa là Đắt, quý. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 61.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ff88fe2a-8834-448e-ba4a-80e51605afa7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “guì” và nghĩa “Đắt, quý”.",
+      "options": [
+        "贵",
+        "中国人",
+        "零",
+        "中国"
+      ],
+      "accepted": [
+        "贵"
+      ],
+      "explanation": "贵 đọc là guì, nghĩa là Đắt, quý. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 61.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ff88fe2a-8834-448e-ba4a-80e51605afa7"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “便宜” có nghĩa là gì?",
+      "options": [
+        "Rẻ",
+        "Nào",
+        "Trung Quốc",
+        "Cà phê"
+      ],
+      "accepted": [
+        "Rẻ"
+      ],
+      "explanation": "便宜 đọc là piányi, nghĩa là Rẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 62.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2c98e6e7-f270-4260-9459-e70cd4b4a69b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “piányi” và nghĩa “Rẻ”.",
+      "options": [
+        "十",
+        "谁",
+        "贵姓",
+        "便宜"
+      ],
+      "accepted": [
+        "便宜"
+      ],
+      "explanation": "便宜 đọc là piányi, nghĩa là Rẻ. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 62.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "2c98e6e7-f270-4260-9459-e70cd4b4a69b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “姓” có nghĩa là gì?",
+      "options": [
+        "Đắt, quý",
+        "Người Nhật",
+        "Anh",
+        "Họ"
+      ],
+      "accepted": [
+        "Họ"
+      ],
+      "explanation": "姓 đọc là xìng, nghĩa là Họ. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 63.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ec66bedc-8594-494c-b844-dfc91e68d63a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “xìng” và nghĩa “Họ”.",
+      "options": [
+        "飞机",
+        "姓",
+        "越南",
+        "叫"
+      ],
+      "accepted": [
+        "姓"
+      ],
+      "explanation": "姓 đọc là xìng, nghĩa là Họ. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 63.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ec66bedc-8594-494c-b844-dfc91e68d63a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “非常” có nghĩa là gì?",
+      "options": [
+        "Đẹp, Mỹ",
+        "8",
+        "Cà phê",
+        "Vô cùng, rất"
+      ],
+      "accepted": [
+        "Vô cùng, rất"
+      ],
+      "explanation": "非常 đọc là fēicháng, nghĩa là Vô cùng, rất. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 64.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fa1a6d24-9ee8-4828-8cb8-1c4a96542823"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “fēicháng” và nghĩa “Vô cùng, rất”.",
+      "options": [
+        "非常",
+        "越南人",
+        "毛笔",
+        "越南"
+      ],
+      "accepted": [
+        "非常"
+      ],
+      "explanation": "非常 đọc là fēicháng, nghĩa là Vô cùng, rất. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 64.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fa1a6d24-9ee8-4828-8cb8-1c4a96542823"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “特别” có nghĩa là gì?",
+      "options": [
+        "Đặc biệt, cực kỳ",
+        "4",
+        "Rất",
+        "Vô cùng, rất"
+      ],
+      "accepted": [
+        "Đặc biệt, cực kỳ"
+      ],
+      "explanation": "特别 đọc là tèbié, nghĩa là Đặc biệt, cực kỳ. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 65.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b30ea38f-ce41-466b-85e5-61830ffaad8e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “tèbié” và nghĩa “Đặc biệt, cực kỳ”.",
+      "options": [
+        "咖啡",
+        "不",
+        "便宜",
+        "特别"
+      ],
+      "accepted": [
+        "特别"
+      ],
+      "explanation": "特别 đọc là tèbié, nghĩa là Đặc biệt, cực kỳ. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 65.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b30ea38f-ce41-466b-85e5-61830ffaad8e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “越南” có nghĩa là gì?",
+      "options": [
+        "0",
+        "Người Trung Quốc",
+        "Người",
+        "Việt Nam"
+      ],
+      "accepted": [
+        "Việt Nam"
+      ],
+      "explanation": "越南 đọc là Yuènán, nghĩa là Việt Nam. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 66.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0ec70895-fcbd-4408-9878-40b957470d1e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “Yuènán” và nghĩa “Việt Nam”.",
+      "options": [
+        "叫",
+        "越南",
+        "帅",
+        "吗"
+      ],
+      "accepted": [
+        "越南"
+      ],
+      "explanation": "越南 đọc là Yuènán, nghĩa là Việt Nam. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 66.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0ec70895-fcbd-4408-9878-40b957470d1e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “中国” có nghĩa là gì?",
+      "options": [
+        "Trợ từ nghi vấn",
+        "Trung Quốc",
+        "8",
+        "2"
+      ],
+      "accepted": [
+        "Trung Quốc"
+      ],
+      "explanation": "中国 đọc là Zhōngguó, nghĩa là Trung Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 67.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "74340014-eabd-47c6-9acb-a0f2a0635e88"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “Zhōngguó” và nghĩa “Trung Quốc”.",
+      "options": [
+        "很",
+        "三",
+        "中国",
+        "便宜"
+      ],
+      "accepted": [
+        "中国"
+      ],
+      "explanation": "中国 đọc là Zhōngguó, nghĩa là Trung Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 67.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "74340014-eabd-47c6-9acb-a0f2a0635e88"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “日本” có nghĩa là gì?",
+      "options": [
+        "Người",
+        "Quốc gia",
+        "Người nước nào",
+        "Nhật Bản"
+      ],
+      "accepted": [
+        "Nhật Bản"
+      ],
+      "explanation": "日本 đọc là Rìběn, nghĩa là Nhật Bản. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 68.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "43c3f835-c6ae-4976-91ed-9a493a132f7a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “Rìběn” và nghĩa “Nhật Bản”.",
+      "options": [
+        "五",
+        "泰国人",
+        "日本",
+        "呢"
+      ],
+      "accepted": [
+        "日本"
+      ],
+      "explanation": "日本 đọc là Rìběn, nghĩa là Nhật Bản. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 68.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "43c3f835-c6ae-4976-91ed-9a493a132f7a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “美国” có nghĩa là gì?",
+      "options": [
+        "7",
+        "Người nước nào",
+        "Mỹ",
+        "Rất"
+      ],
+      "accepted": [
+        "Mỹ"
+      ],
+      "explanation": "美国 đọc là Měiguó, nghĩa là Mỹ. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 69.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7874c404-f346-4156-90b0-b3834d57f19c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “Měiguó” và nghĩa “Mỹ”.",
+      "options": [
+        "什么",
+        "美国",
+        "零",
+        "飞机"
+      ],
+      "accepted": [
+        "美国"
+      ],
+      "explanation": "美国 đọc là Měiguó, nghĩa là Mỹ. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 69.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7874c404-f346-4156-90b0-b3834d57f19c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “泰国” có nghĩa là gì?",
+      "options": [
+        "7",
+        "Quý danh, quý tính",
+        "Thái Lan",
+        "Họ"
+      ],
+      "accepted": [
+        "Thái Lan"
+      ],
+      "explanation": "泰国 đọc là Tàiguó, nghĩa là Thái Lan. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 70.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "54d0d81e-a492-4f22-8ca9-8e4a7a2f620e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “Tàiguó” và nghĩa “Thái Lan”.",
+      "options": [
+        "日本",
+        "泰国",
+        "姓",
+        "美国"
+      ],
+      "accepted": [
+        "泰国"
+      ],
+      "explanation": "泰国 đọc là Tàiguó, nghĩa là Thái Lan. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 70.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "54d0d81e-a492-4f22-8ca9-8e4a7a2f620e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “英国” có nghĩa là gì?",
+      "options": [
+        "Anh",
+        "Cái gì",
+        "Quý danh, quý tính",
+        "Người Thái Lan"
+      ],
+      "accepted": [
+        "Anh"
+      ],
+      "explanation": "英国 đọc là Yīngguó, nghĩa là Anh. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 71.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b8c5ae74-bac1-46a8-a0ab-8ef620d7671a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “Yīngguó” và nghĩa “Anh”.",
+      "options": [
+        "零",
+        "呢",
+        "帅",
+        "英国"
+      ],
+      "accepted": [
+        "英国"
+      ],
+      "explanation": "英国 đọc là Yīngguó, nghĩa là Anh. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 71.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b8c5ae74-bac1-46a8-a0ab-8ef620d7671a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “越南人” có nghĩa là gì?",
+      "options": [
+        "Người Việt Nam",
+        "Gọi, tên là",
+        "9",
+        "Trợ từ nghi vấn"
+      ],
+      "accepted": [
+        "Người Việt Nam"
+      ],
+      "explanation": "越南人 đọc là Yuènán rén, nghĩa là Người Việt Nam. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 72.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fb3c6758-27d8-4085-ab0e-52008d084374"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “Yuènán rén” và nghĩa “Người Việt Nam”.",
+      "options": [
+        "呢",
+        "越南人",
+        "五",
+        "九"
+      ],
+      "accepted": [
+        "越南人"
+      ],
+      "explanation": "越南人 đọc là Yuènán rén, nghĩa là Người Việt Nam. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 72.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "fb3c6758-27d8-4085-ab0e-52008d084374"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “中国人” có nghĩa là gì?",
+      "options": [
+        "Người Trung Quốc",
+        "Vô cùng, rất",
+        "Trợ từ nghi vấn có/không",
+        "Người Anh"
+      ],
+      "accepted": [
+        "Người Trung Quốc"
+      ],
+      "explanation": "中国人 đọc là Zhōngguó rén, nghĩa là Người Trung Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 73.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "97adc483-6b0a-4ec1-95a4-5246258b97d3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “Zhōngguó rén” và nghĩa “Người Trung Quốc”.",
+      "options": [
+        "一",
+        "中国人",
+        "二",
+        "帅"
+      ],
+      "accepted": [
+        "中国人"
+      ],
+      "explanation": "中国人 đọc là Zhōngguó rén, nghĩa là Người Trung Quốc. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 73.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "97adc483-6b0a-4ec1-95a4-5246258b97d3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “日本人” có nghĩa là gì?",
+      "options": [
+        "Người Nhật",
+        "1",
+        "Nhật Bản",
+        "Quý danh, quý tính"
+      ],
+      "accepted": [
+        "Người Nhật"
+      ],
+      "explanation": "日本人 đọc là Rìběn rén, nghĩa là Người Nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 74.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "656e7925-678e-4cd9-acdd-5f5d6bc3840d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “Rìběn rén” và nghĩa “Người Nhật”.",
+      "options": [
+        "毛笔",
+        "中国",
+        "日本人",
+        "美"
+      ],
+      "accepted": [
+        "日本人"
+      ],
+      "explanation": "日本人 đọc là Rìběn rén, nghĩa là Người Nhật. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 74.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "656e7925-678e-4cd9-acdd-5f5d6bc3840d"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “美国人” có nghĩa là gì?",
+      "options": [
+        "Người Mỹ",
+        "Người",
+        "Rẻ",
+        "Người Trung Quốc"
+      ],
+      "accepted": [
+        "Người Mỹ"
+      ],
+      "explanation": "美国人 đọc là Měiguó rén, nghĩa là Người Mỹ. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 75.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c13d2ea4-2262-463d-862c-0c5abcf5db19"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “Měiguó rén” và nghĩa “Người Mỹ”.",
+      "options": [
+        "哪",
+        "六",
+        "美国",
+        "美国人"
+      ],
+      "accepted": [
+        "美国人"
+      ],
+      "explanation": "美国人 đọc là Měiguó rén, nghĩa là Người Mỹ. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 75.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c13d2ea4-2262-463d-862c-0c5abcf5db19"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “泰国人” có nghĩa là gì?",
+      "options": [
+        "9",
+        "Vịt quay",
+        "Người Thái Lan",
+        "7"
+      ],
+      "accepted": [
+        "Người Thái Lan"
+      ],
+      "explanation": "泰国人 đọc là Tàiguó rén, nghĩa là Người Thái Lan. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 76.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e2cfc23a-50ee-4595-af86-d9212bf8627e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “Tàiguó rén” và nghĩa “Người Thái Lan”.",
+      "options": [
+        "泰国人",
+        "越南",
+        "一",
+        "英国人"
+      ],
+      "accepted": [
+        "泰国人"
+      ],
+      "explanation": "泰国人 đọc là Tàiguó rén, nghĩa là Người Thái Lan. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 76.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e2cfc23a-50ee-4595-af86-d9212bf8627e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “英国人” có nghĩa là gì?",
+      "options": [
+        "Vô cùng, rất",
+        "Người Anh",
+        "Gọi, tên là",
+        "Việt Nam"
+      ],
+      "accepted": [
+        "Người Anh"
+      ],
+      "explanation": "英国人 đọc là Yīngguó rén, nghĩa là Người Anh. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 77.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6f70d653-a5df-42a3-86b1-7b5a1e1f21b8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “Yīngguó rén” và nghĩa “Người Anh”.",
+      "options": [
+        "六",
+        "人",
+        "英国人",
+        "贵姓"
+      ],
+      "accepted": [
+        "英国人"
+      ],
+      "explanation": "英国人 đọc là Yīngguó rén, nghĩa là Người Anh. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 77.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6f70d653-a5df-42a3-86b1-7b5a1e1f21b8"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “哪国人” có nghĩa là gì?",
+      "options": [
+        "Người nước nào",
+        "Không",
+        "Nhật Bản",
+        "Vô cùng, rất"
+      ],
+      "accepted": [
+        "Người nước nào"
+      ],
+      "explanation": "哪国人 đọc là nǎ guó rén, nghĩa là Người nước nào. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 78.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3d35ef06-f3f0-4cdf-ac19-e48e6dbae531"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “nǎ guó rén” và nghĩa “Người nước nào”.",
+      "options": [
+        "哪国人",
+        "特别",
+        "四",
+        "英国"
+      ],
+      "accepted": [
+        "哪国人"
+      ],
+      "explanation": "哪国人 đọc là nǎ guó rén, nghĩa là Người nước nào. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 78.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "3d35ef06-f3f0-4cdf-ac19-e48e6dbae531"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “零” có nghĩa là gì?",
+      "options": [
+        "Quý danh, quý tính",
+        "8",
+        "Trung Quốc",
+        "0"
+      ],
+      "accepted": [
+        "0"
+      ],
+      "explanation": "零 đọc là líng, nghĩa là 0. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 82.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a36a0f1b-b570-4525-89ab-60acf003cef1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “líng” và nghĩa “0”.",
+      "options": [
+        "呢",
+        "零",
+        "美国",
+        "贵"
+      ],
+      "accepted": [
+        "零"
+      ],
+      "explanation": "零 đọc là líng, nghĩa là 0. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 82.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a36a0f1b-b570-4525-89ab-60acf003cef1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “一” có nghĩa là gì?",
+      "options": [
+        "1",
+        "Đẹp, Mỹ",
+        "Bút lông",
+        "Cái gì"
+      ],
+      "accepted": [
+        "1"
+      ],
+      "explanation": "一 đọc là yī, nghĩa là 1. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 83.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "96edb693-c2ff-4bf2-ade1-f53e0ec9ba3e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “yī” và nghĩa “1”.",
+      "options": [
+        "国",
+        "英国",
+        "一",
+        "人"
+      ],
+      "accepted": [
+        "一"
+      ],
+      "explanation": "一 đọc là yī, nghĩa là 1. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 83.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "96edb693-c2ff-4bf2-ade1-f53e0ec9ba3e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “二” có nghĩa là gì?",
+      "options": [
+        "Vô cùng, rất",
+        "Nào",
+        "Người",
+        "2"
+      ],
+      "accepted": [
+        "2"
+      ],
+      "explanation": "二 đọc là èr, nghĩa là 2. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 84.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5ddc55bd-7931-4e0a-8cf5-c13f592ab2ed"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “èr” và nghĩa “2”.",
+      "options": [
+        "不",
+        "二",
+        "特别",
+        "贵姓"
+      ],
+      "accepted": [
+        "二"
+      ],
+      "explanation": "二 đọc là èr, nghĩa là 2. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 84.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5ddc55bd-7931-4e0a-8cf5-c13f592ab2ed"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “三” có nghĩa là gì?",
+      "options": [
+        "1",
+        "Quý danh, quý tính",
+        "3",
+        "Người Trung Quốc"
+      ],
+      "accepted": [
+        "3"
+      ],
+      "explanation": "三 đọc là sān, nghĩa là 3. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 85.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a117969d-9ef7-43b7-9ce4-a25c35b68a0e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “sān” và nghĩa “3”.",
+      "options": [
+        "三",
+        "毛笔",
+        "帅",
+        "越南人"
+      ],
+      "accepted": [
+        "三"
+      ],
+      "explanation": "三 đọc là sān, nghĩa là 3. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 85.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a117969d-9ef7-43b7-9ce4-a25c35b68a0e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “四” có nghĩa là gì?",
+      "options": [
+        "Nào",
+        "Người Việt Nam",
+        "4",
+        "Người Anh"
+      ],
+      "accepted": [
+        "4"
+      ],
+      "explanation": "四 đọc là sì, nghĩa là 4. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 86.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "dd6b50e8-1efa-4f78-8504-83afb594d6e9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “sì” và nghĩa “4”.",
+      "options": [
+        "人",
+        "吗",
+        "四",
+        "便宜"
+      ],
+      "accepted": [
+        "四"
+      ],
+      "explanation": "四 đọc là sì, nghĩa là 4. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 86.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "dd6b50e8-1efa-4f78-8504-83afb594d6e9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “五” có nghĩa là gì?",
+      "options": [
+        "5",
+        "Anh",
+        "Bút lông",
+        "3"
+      ],
+      "accepted": [
+        "5"
+      ],
+      "explanation": "五 đọc là wǔ, nghĩa là 5. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 87.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "39f97a06-2668-4cf6-a4c6-78f7f749d858"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “wǔ” và nghĩa “5”.",
+      "options": [
+        "七",
+        "英国",
+        "五",
+        "九"
+      ],
+      "accepted": [
+        "五"
+      ],
+      "explanation": "五 đọc là wǔ, nghĩa là 5. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 87.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "39f97a06-2668-4cf6-a4c6-78f7f749d858"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “六” có nghĩa là gì?",
+      "options": [
+        "Tên",
+        "Rất",
+        "6",
+        "Vịt quay"
+      ],
+      "accepted": [
+        "6"
+      ],
+      "explanation": "六 đọc là liù, nghĩa là 6. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 88.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c9bc55f1-03c5-474f-898a-240f1c83f49b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “liù” và nghĩa “6”.",
+      "options": [
+        "零",
+        "五",
+        "十",
+        "六"
+      ],
+      "accepted": [
+        "六"
+      ],
+      "explanation": "六 đọc là liù, nghĩa là 6. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 88.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c9bc55f1-03c5-474f-898a-240f1c83f49b"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “七” có nghĩa là gì?",
+      "options": [
+        "7",
+        "3",
+        "6",
+        "Người Nhật"
+      ],
+      "accepted": [
+        "7"
+      ],
+      "explanation": "七 đọc là qī, nghĩa là 7. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 89.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ce0c1268-7aed-4785-8e27-a88a101268f1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “qī” và nghĩa “7”.",
+      "options": [
+        "五",
+        "七",
+        "哪国人",
+        "非常"
+      ],
+      "accepted": [
+        "七"
+      ],
+      "explanation": "七 đọc là qī, nghĩa là 7. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 89.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ce0c1268-7aed-4785-8e27-a88a101268f1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “八” có nghĩa là gì?",
+      "options": [
+        "8",
+        "4",
+        "Trợ từ nghi vấn có/không",
+        "Máy bay"
+      ],
+      "accepted": [
+        "8"
+      ],
+      "explanation": "八 đọc là bā, nghĩa là 8. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 90.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "162105c6-4f25-46f4-bddb-0b63d4ea92ea"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “bā” và nghĩa “8”.",
+      "options": [
+        "非常",
+        "十",
+        "英国人",
+        "八"
+      ],
+      "accepted": [
+        "八"
+      ],
+      "explanation": "八 đọc là bā, nghĩa là 8. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 90.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "162105c6-4f25-46f4-bddb-0b63d4ea92ea"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “九” có nghĩa là gì?",
+      "options": [
+        "Họ",
+        "5",
+        "9",
+        "0"
+      ],
+      "accepted": [
+        "9"
+      ],
+      "explanation": "九 đọc là jiǔ, nghĩa là 9. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 91.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "172f6b1a-8e9a-4be1-8a0a-cd359ed500d4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “jiǔ” và nghĩa “9”.",
+      "options": [
+        "英国人",
+        "九",
+        "日本",
+        "名字"
+      ],
+      "accepted": [
+        "九"
+      ],
+      "explanation": "九 đọc là jiǔ, nghĩa là 9. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 91.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "172f6b1a-8e9a-4be1-8a0a-cd359ed500d4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Trong bài học, “十” có nghĩa là gì?",
+      "options": [
+        "10",
+        "Rất",
+        "Không",
+        "Người Trung Quốc"
+      ],
+      "accepted": [
+        "10"
+      ],
+      "explanation": "十 đọc là shí, nghĩa là 10. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 92.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "10a8b5fa-a1b9-48ec-92dc-289d1b8fb075"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn Hán tự có phiên âm “shí” và nghĩa “10”.",
+      "options": [
+        "烤鸭",
+        "十",
+        "帅",
+        "日本"
+      ],
+      "accepted": [
+        "十"
+      ],
+      "explanation": "十 đọc là shí, nghĩa là 10. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 92.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "10a8b5fa-a1b9-48ec-92dc-289d1b8fb075"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn phiên âm đúng của “七” với nghĩa “7”.",
+      "options": [
+        "rén",
+        "qī",
+        "ne",
+        "guó"
+      ],
+      "accepted": [
+        "qī"
+      ],
+      "explanation": "七 đọc là qī, nghĩa là 7. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 89.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ce0c1268-7aed-4785-8e27-a88a101268f1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn phiên âm đúng của “八” với nghĩa “8”.",
+      "options": [
+        "èr",
+        "jiào",
+        "bā",
+        "Rìběn"
+      ],
+      "accepted": [
+        "bā"
+      ],
+      "explanation": "八 đọc là bā, nghĩa là 8. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 90.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "162105c6-4f25-46f4-bddb-0b63d4ea92ea"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn phiên âm đúng của “九” với nghĩa “9”.",
+      "options": [
+        "shéi / shuí",
+        "Tàiguó",
+        "jiǔ",
+        "měi"
+      ],
+      "accepted": [
+        "jiǔ"
+      ],
+      "explanation": "九 đọc là jiǔ, nghĩa là 9. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 91.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "172f6b1a-8e9a-4be1-8a0a-cd359ed500d4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 2",
+      "prompt": "Chọn phiên âm đúng của “十” với nghĩa “10”.",
+      "options": [
+        "fēicháng",
+        "shí",
+        "jiǔ",
+        "ne"
+      ],
+      "accepted": [
+        "shí"
+      ],
+      "explanation": "十 đọc là shí, nghĩa là 10. Nguồn: danh sách đầy đủ người dùng gửi, bài 2, dòng 92.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "10a8b5fa-a1b9-48ec-92dc-289d1b8fb075"
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “你是哪国人？” có nghĩa là gì?",
+      "options": [
+        "Bạn là người nước nào?",
+        "Tôi là người Anh.",
+        "Anh ấy là ai?",
+        "Bạn tên là gì?"
+      ],
+      "accepted": [
+        "Bạn là người nước nào?"
+      ],
+      "explanation": "你是哪国人？ — Bạn là người nước nào? Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bạn là người nước nào?”.",
+      "options": [
+        "你是哪国人？",
+        "她很美。",
+        "他很帅。",
+        "你呢？"
+      ],
+      "accepted": [
+        "你是哪国人？"
+      ],
+      "explanation": "你是哪国人？ — Bạn là người nước nào? Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “我是越南人。” có nghĩa là gì?",
+      "options": [
+        "Tôi là người Việt Nam.",
+        "Anh ấy rất đẹp trai.",
+        "Anh ấy là ai?",
+        "Máy bay rất mới."
+      ],
+      "accepted": [
+        "Tôi là người Việt Nam."
+      ],
+      "explanation": "我是越南人。 — Tôi là người Việt Nam. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi là người Việt Nam.”.",
+      "options": [
+        "我不是老师。",
+        "我是英国人。",
+        "您贵姓？",
+        "我是越南人。"
+      ],
+      "accepted": [
+        "我是越南人。"
+      ],
+      "explanation": "我是越南人。 — Tôi là người Việt Nam. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “他是中国人。” có nghĩa là gì?",
+      "options": [
+        "Tôi là người Anh.",
+        "Anh ấy là ai?",
+        "Anh ấy rất đẹp trai.",
+        "Anh ấy là người Trung Quốc."
+      ],
+      "accepted": [
+        "Anh ấy là người Trung Quốc."
+      ],
+      "explanation": "他是中国人。 — Anh ấy là người Trung Quốc. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Anh ấy là người Trung Quốc.”.",
+      "options": [
+        "咖啡很贵。",
+        "他是中国人。",
+        "你呢？",
+        "你是哪国人？"
+      ],
+      "accepted": [
+        "他是中国人。"
+      ],
+      "explanation": "他是中国人。 — Anh ấy là người Trung Quốc. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “她是美国人。” có nghĩa là gì?",
+      "options": [
+        "Tôi không phải là giáo viên.",
+        "Tôi là người Việt Nam.",
+        "Cô ấy rất đẹp.",
+        "Cô ấy là người Mỹ."
+      ],
+      "accepted": [
+        "Cô ấy là người Mỹ."
+      ],
+      "explanation": "她是美国人。 — Cô ấy là người Mỹ. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy là người Mỹ.”.",
+      "options": [
+        "他很帅。",
+        "他是中国人。",
+        "她是美国人。",
+        "你叫什么名字？"
+      ],
+      "accepted": [
+        "她是美国人。"
+      ],
+      "explanation": "她是美国人。 — Cô ấy là người Mỹ. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “你是日本人吗？” có nghĩa là gì?",
+      "options": [
+        "Bạn tên là gì?",
+        "Cô ấy không phải là giám đốc.",
+        "Ngài họ gì? (lịch sự)",
+        "Bạn có phải là người Nhật không?"
+      ],
+      "accepted": [
+        "Bạn có phải là người Nhật không?"
+      ],
+      "explanation": "你是日本人吗？ — Bạn có phải là người Nhật không? Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bạn có phải là người Nhật không?”.",
+      "options": [
+        "你是日本人吗？",
+        "你叫什么名字？",
+        "他很帅。",
+        "她不是经理。"
+      ],
+      "accepted": [
+        "你是日本人吗？"
+      ],
+      "explanation": "你是日本人吗？ — Bạn có phải là người Nhật không? Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “我是英国人。” có nghĩa là gì?",
+      "options": [
+        "Vịt quay rất rẻ.",
+        "Còn bạn thì sao?",
+        "Tôi là người Anh.",
+        "Bạn tên là gì?"
+      ],
+      "accepted": [
+        "Tôi là người Anh."
+      ],
+      "explanation": "我是英国人。 — Tôi là người Anh. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi là người Anh.”.",
+      "options": [
+        "他很帅。",
+        "您贵姓？",
+        "我是英国人。",
+        "我不是老师。"
+      ],
+      "accepted": [
+        "我是英国人。"
+      ],
+      "explanation": "我是英国人。 — Tôi là người Anh. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “他们是泰国人。” có nghĩa là gì?",
+      "options": [
+        "Tôi là người Việt Nam.",
+        "Anh ấy rất đẹp trai.",
+        "Họ là người Thái Lan.",
+        "Máy bay rất mới."
+      ],
+      "accepted": [
+        "Họ là người Thái Lan."
+      ],
+      "explanation": "他们是泰国人。 — Họ là người Thái Lan. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Họ là người Thái Lan.”.",
+      "options": [
+        "咖啡很贵。",
+        "您贵姓？",
+        "他们是泰国人。",
+        "他很帅。"
+      ],
+      "accepted": [
+        "他们是泰国人。"
+      ],
+      "explanation": "他们是泰国人。 — Họ là người Thái Lan. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “你叫什么名字？” có nghĩa là gì?",
+      "options": [
+        "Bạn tên là gì?",
+        "Anh ấy là ai?",
+        "Cô ấy không phải là giám đốc.",
+        "Anh ấy là người Trung Quốc."
+      ],
+      "accepted": [
+        "Bạn tên là gì?"
+      ],
+      "explanation": "你叫什么名字？ — Bạn tên là gì? Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bạn tên là gì?”.",
+      "options": [
+        "谁是老师？",
+        "你是哪国人？",
+        "你叫什么名字？",
+        "毛笔很贵。"
+      ],
+      "accepted": [
+        "你叫什么名字？"
+      ],
+      "explanation": "你叫什么名字？ — Bạn tên là gì? Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “您贵姓？” có nghĩa là gì?",
+      "options": [
+        "Họ là người Thái Lan.",
+        "Ngài họ gì? (lịch sự)",
+        "Bút lông rất đắt.",
+        "Cô ấy rất đẹp."
+      ],
+      "accepted": [
+        "Ngài họ gì? (lịch sự)"
+      ],
+      "explanation": "您贵姓？ — Ngài họ gì? (lịch sự) Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Ngài họ gì? (lịch sự)”.",
+      "options": [
+        "您贵姓？",
+        "她是美国人。",
+        "他很帅。",
+        "她很美。"
+      ],
+      "accepted": [
+        "您贵姓？"
+      ],
+      "explanation": "您贵姓？ — Ngài họ gì? (lịch sự) Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “他是谁？” có nghĩa là gì?",
+      "options": [
+        "Anh ấy rất đẹp trai.",
+        "Tôi không phải là giáo viên.",
+        "Anh ấy là ai?",
+        "Cô ấy là người Mỹ."
+      ],
+      "accepted": [
+        "Anh ấy là ai?"
+      ],
+      "explanation": "他是谁？ — Anh ấy là ai? Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Anh ấy là ai?”.",
+      "options": [
+        "他是谁？",
+        "毛笔很贵。",
+        "烤鸭很便宜。",
+        "咖啡很贵。"
+      ],
+      "accepted": [
+        "他是谁？"
+      ],
+      "explanation": "他是谁？ — Anh ấy là ai? Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “谁是老师？” có nghĩa là gì?",
+      "options": [
+        "Bút lông rất đắt.",
+        "Anh ấy là người Trung Quốc.",
+        "Ngài họ gì? (lịch sự)",
+        "Ai là giáo viên?"
+      ],
+      "accepted": [
+        "Ai là giáo viên?"
+      ],
+      "explanation": "谁是老师？ — Ai là giáo viên? Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Ai là giáo viên?”.",
+      "options": [
+        "你叫什么名字？",
+        "谁是老师？",
+        "我不是老师。",
+        "毛笔很贵。"
+      ],
+      "accepted": [
+        "谁是老师？"
+      ],
+      "explanation": "谁是老师？ — Ai là giáo viên? Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “我不是老师。” có nghĩa là gì?",
+      "options": [
+        "Tôi không phải là giáo viên.",
+        "Ai là giáo viên?",
+        "Còn bạn thì sao?",
+        "Vịt quay rất rẻ."
+      ],
+      "accepted": [
+        "Tôi không phải là giáo viên."
+      ],
+      "explanation": "我不是老师。 — Tôi không phải là giáo viên. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi không phải là giáo viên.”.",
+      "options": [
+        "我不是老师。",
+        "我是越南人。",
+        "你是哪国人？",
+        "他是中国人。"
+      ],
+      "accepted": [
+        "我不是老师。"
+      ],
+      "explanation": "我不是老师。 — Tôi không phải là giáo viên. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “她不是经理。” có nghĩa là gì?",
+      "options": [
+        "Cô ấy không phải là giám đốc.",
+        "Bạn có phải là người Nhật không?",
+        "Máy bay rất mới.",
+        "Anh ấy là ai?"
+      ],
+      "accepted": [
+        "Cô ấy không phải là giám đốc."
+      ],
+      "explanation": "她不是经理。 — Cô ấy không phải là giám đốc. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy không phải là giám đốc.”.",
+      "options": [
+        "他是中国人。",
+        "她不是经理。",
+        "她是美国人。",
+        "烤鸭很便宜。"
+      ],
+      "accepted": [
+        "她不是经理。"
+      ],
+      "explanation": "她不是经理。 — Cô ấy không phải là giám đốc. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “他很帅。” có nghĩa là gì?",
+      "options": [
+        "Ai là giáo viên?",
+        "Ngài họ gì? (lịch sự)",
+        "Anh ấy rất đẹp trai.",
+        "Cô ấy là người Mỹ."
+      ],
+      "accepted": [
+        "Anh ấy rất đẹp trai."
+      ],
+      "explanation": "他很帅。 — Anh ấy rất đẹp trai. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Anh ấy rất đẹp trai.”.",
+      "options": [
+        "她很美。",
+        "你叫什么名字？",
+        "他很帅。",
+        "他是谁？"
+      ],
+      "accepted": [
+        "他很帅。"
+      ],
+      "explanation": "他很帅。 — Anh ấy rất đẹp trai. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “她很美。” có nghĩa là gì?",
+      "options": [
+        "Cà phê rất đắt.",
+        "Họ là người Thái Lan.",
+        "Tôi là người Việt Nam.",
+        "Cô ấy rất đẹp."
+      ],
+      "accepted": [
+        "Cô ấy rất đẹp."
+      ],
+      "explanation": "她很美。 — Cô ấy rất đẹp. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cô ấy rất đẹp.”.",
+      "options": [
+        "她是美国人。",
+        "她很美。",
+        "我不是老师。",
+        "他是中国人。"
+      ],
+      "accepted": [
+        "她很美。"
+      ],
+      "explanation": "她很美。 — Cô ấy rất đẹp. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “咖啡很贵。” có nghĩa là gì?",
+      "options": [
+        "Anh ấy rất đẹp trai.",
+        "Cà phê rất đắt.",
+        "Vịt quay rất rẻ.",
+        "Bạn tên là gì?"
+      ],
+      "accepted": [
+        "Cà phê rất đắt."
+      ],
+      "explanation": "咖啡很贵。 — Cà phê rất đắt. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cà phê rất đắt.”.",
+      "options": [
+        "他是中国人。",
+        "我是越南人。",
+        "咖啡很贵。",
+        "她很美。"
+      ],
+      "accepted": [
+        "咖啡很贵。"
+      ],
+      "explanation": "咖啡很贵。 — Cà phê rất đắt. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “烤鸭很便宜。” có nghĩa là gì?",
+      "options": [
+        "Vịt quay rất rẻ.",
+        "Còn bạn thì sao?",
+        "Anh ấy rất đẹp trai.",
+        "Tôi là người Anh."
+      ],
+      "accepted": [
+        "Vịt quay rất rẻ."
+      ],
+      "explanation": "烤鸭很便宜。 — Vịt quay rất rẻ. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Vịt quay rất rẻ.”.",
+      "options": [
+        "你是日本人吗？",
+        "我不是老师。",
+        "他是中国人。",
+        "烤鸭很便宜。"
+      ],
+      "accepted": [
+        "烤鸭很便宜。"
+      ],
+      "explanation": "烤鸭很便宜。 — Vịt quay rất rẻ. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “毛笔很贵。” có nghĩa là gì?",
+      "options": [
+        "Bút lông rất đắt.",
+        "Bạn là người nước nào?",
+        "Máy bay rất mới.",
+        "Cà phê rất đắt."
+      ],
+      "accepted": [
+        "Bút lông rất đắt."
+      ],
+      "explanation": "毛笔很贵。 — Bút lông rất đắt. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bút lông rất đắt.”.",
+      "options": [
+        "我是英国人。",
+        "毛笔很贵。",
+        "他们是泰国人。",
+        "我不是老师。"
+      ],
+      "accepted": [
+        "毛笔很贵。"
+      ],
+      "explanation": "毛笔很贵。 — Bút lông rất đắt. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “飞机很新。” có nghĩa là gì?",
+      "options": [
+        "Máy bay rất mới.",
+        "Vịt quay rất rẻ.",
+        "Tôi là người Anh.",
+        "Anh ấy là người Trung Quốc."
+      ],
+      "accepted": [
+        "Máy bay rất mới."
+      ],
+      "explanation": "飞机很新。 — Máy bay rất mới. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Máy bay rất mới.”.",
+      "options": [
+        "谁是老师？",
+        "你是哪国人？",
+        "飞机很新。",
+        "他是谁？"
+      ],
+      "accepted": [
+        "飞机很新。"
+      ],
+      "explanation": "飞机很新。 — Máy bay rất mới. Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Câu “你呢？” có nghĩa là gì?",
+      "options": [
+        "Tôi là người Việt Nam.",
+        "Ngài họ gì? (lịch sự)",
+        "Còn bạn thì sao?",
+        "Cô ấy rất đẹp."
+      ],
+      "accepted": [
+        "Còn bạn thì sao?"
+      ],
+      "explanation": "你呢？ — Còn bạn thì sao? Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–2",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Còn bạn thì sao?”.",
+      "options": [
+        "她很美。",
+        "他是谁？",
+        "谁是老师？",
+        "你呢？"
+      ],
+      "accepted": [
+        "你呢？"
+      ],
+      "explanation": "你呢？ — Còn bạn thì sao? Câu dùng từ trong danh sách bài 1–2.",
+      "difficulty": "medium",
+      "approved": true
+    }
+  ],
+  "speaking": [
+    {
+      "practice": "speaking",
+      "text": "你叫什么名字？",
+      "meaning": "Bạn tên là gì?",
+      "answer_reference": "我叫……。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "您贵姓？",
+      "meaning": "Ngài họ gì?",
+      "answer_reference": "我姓……。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你是哪国人？",
+      "meaning": "Bạn là người nước nào?",
+      "answer_reference": "我是越南人。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你是学生吗？",
+      "meaning": "Bạn có phải là học sinh không?",
+      "answer_reference": "我是学生。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "他是谁？",
+      "meaning": "Anh ấy là ai?",
+      "answer_reference": "他是老师。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "她是中国人吗？",
+      "meaning": "Cô ấy là người Trung Quốc phải không?",
+      "answer_reference": "她是中国人。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "咖啡贵吗？",
+      "meaning": "Cà phê có đắt không?",
+      "answer_reference": "咖啡很贵。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "烤鸭便宜吗？",
+      "meaning": "Vịt quay có rẻ không?",
+      "answer_reference": "烤鸭很便宜。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你是老师吗？",
+      "meaning": "Bạn là giáo viên phải không?",
+      "answer_reference": "我不是老师。我是学生。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "他们是哪国人？",
+      "meaning": "Họ là người nước nào?",
+      "answer_reference": "他们是越南人。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    }
+  ],
+  "activities": {
+    "topic": "Tên và quốc tịch",
+    "tasks": [
+      {
+        "type": "order",
+        "prompt": "Bạn là người nước nào?",
+        "tokens": [
+          "你",
+          "是",
+          "哪国人",
+          "？"
+        ],
+        "answer": "你是哪国人？",
+        "explanation": "你是哪国人？ — Bạn là người nước nào?"
+      },
+      {
+        "type": "fill",
+        "prompt": "你是___？ (Bạn là người nước nào?)",
+        "answer": "哪国人",
+        "explanation": "Câu hoàn chỉnh: 你是哪国人？ — Bạn là người nước nào?"
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi là người Việt Nam.",
+        "tokens": [
+          "我",
+          "是",
+          "越南人",
+          "。"
+        ],
+        "answer": "我是越南人。",
+        "explanation": "我是越南人。 — Tôi là người Việt Nam."
+      },
+      {
+        "type": "fill",
+        "prompt": "我是___。 (Tôi là người Việt Nam.)",
+        "answer": "越南人",
+        "explanation": "Câu hoàn chỉnh: 我是越南人。 — Tôi là người Việt Nam."
+      },
+      {
+        "type": "order",
+        "prompt": "Anh ấy là người Trung Quốc.",
+        "tokens": [
+          "他",
+          "是",
+          "中国人",
+          "。"
+        ],
+        "answer": "他是中国人。",
+        "explanation": "他是中国人。 — Anh ấy là người Trung Quốc."
+      },
+      {
+        "type": "fill",
+        "prompt": "他是___。 (Anh ấy là người Trung Quốc.)",
+        "answer": "中国人",
+        "explanation": "Câu hoàn chỉnh: 他是中国人。 — Anh ấy là người Trung Quốc."
+      },
+      {
+        "type": "order",
+        "prompt": "Cô ấy là người Mỹ.",
+        "tokens": [
+          "她",
+          "是",
+          "美国人",
+          "。"
+        ],
+        "answer": "她是美国人。",
+        "explanation": "她是美国人。 — Cô ấy là người Mỹ."
+      },
+      {
+        "type": "fill",
+        "prompt": "她是___。 (Cô ấy là người Mỹ.)",
+        "answer": "美国人",
+        "explanation": "Câu hoàn chỉnh: 她是美国人。 — Cô ấy là người Mỹ."
+      },
+      {
+        "type": "order",
+        "prompt": "Bạn có phải là người Nhật không?",
+        "tokens": [
+          "你",
+          "是",
+          "日本人",
+          "吗",
+          "？"
+        ],
+        "answer": "你是日本人吗？",
+        "explanation": "你是日本人吗？ — Bạn có phải là người Nhật không?"
+      },
+      {
+        "type": "fill",
+        "prompt": "你是___吗？ (Bạn có phải là người Nhật không?)",
+        "answer": "日本人",
+        "explanation": "Câu hoàn chỉnh: 你是日本人吗？ — Bạn có phải là người Nhật không?"
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi là người Anh.",
+        "tokens": [
+          "我",
+          "是",
+          "英国人",
+          "。"
+        ],
+        "answer": "我是英国人。",
+        "explanation": "我是英国人。 — Tôi là người Anh."
+      },
+      {
+        "type": "fill",
+        "prompt": "我是___。 (Tôi là người Anh.)",
+        "answer": "英国人",
+        "explanation": "Câu hoàn chỉnh: 我是英国人。 — Tôi là người Anh."
+      },
+      {
+        "type": "order",
+        "prompt": "Họ là người Thái Lan.",
+        "tokens": [
+          "他们",
+          "是",
+          "泰国人",
+          "。"
+        ],
+        "answer": "他们是泰国人。",
+        "explanation": "他们是泰国人。 — Họ là người Thái Lan."
+      },
+      {
+        "type": "fill",
+        "prompt": "他们是___。 (Họ là người Thái Lan.)",
+        "answer": "泰国人",
+        "explanation": "Câu hoàn chỉnh: 他们是泰国人。 — Họ là người Thái Lan."
+      },
+      {
+        "type": "order",
+        "prompt": "Bạn tên là gì?",
+        "tokens": [
+          "你",
+          "叫",
+          "什么",
+          "名字",
+          "？"
+        ],
+        "answer": "你叫什么名字？",
+        "explanation": "你叫什么名字？ — Bạn tên là gì?"
+      },
+      {
+        "type": "fill",
+        "prompt": "你___什么名字？ (Bạn tên là gì?)",
+        "answer": "叫",
+        "explanation": "Câu hoàn chỉnh: 你叫什么名字？ — Bạn tên là gì?"
+      },
+      {
+        "type": "order",
+        "prompt": "Anh ấy là ai?",
+        "tokens": [
+          "他",
+          "是",
+          "谁",
+          "？"
+        ],
+        "answer": "他是谁？",
+        "explanation": "他是谁？ — Anh ấy là ai?"
+      },
+      {
+        "type": "fill",
+        "prompt": "他是___？ (Anh ấy là ai?)",
+        "answer": "谁",
+        "explanation": "Câu hoàn chỉnh: 他是谁？ — Anh ấy là ai?"
+      },
+      {
+        "type": "order",
+        "prompt": "Ai là giáo viên?",
+        "tokens": [
+          "谁",
+          "是",
+          "老师",
+          "？"
+        ],
+        "answer": "谁是老师？",
+        "explanation": "谁是老师？ — Ai là giáo viên?"
+      },
+      {
+        "type": "fill",
+        "prompt": "___是老师？ (Ai là giáo viên?)",
+        "answer": "谁",
+        "explanation": "Câu hoàn chỉnh: 谁是老师？ — Ai là giáo viên?"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Bạn là người nước nào?”: 你叫什么名字？",
+        "answer": "你是哪国人？",
+        "options": [
+          "你是哪国人？",
+          "你叫什么名字？",
+          "他很帅。"
+        ],
+        "explanation": "你是哪国人？ — Bạn là người nước nào?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你叫什么名字？",
+        "answer": "我叫……。",
+        "options": [
+          "我叫……。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn tên là gì? Đáp lại: 我叫……。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi là người Việt Nam.”: 您贵姓？",
+        "answer": "我是越南人。",
+        "options": [
+          "我是越南人。",
+          "您贵姓？",
+          "她很美。"
+        ],
+        "explanation": "我是越南人。 — Tôi là người Việt Nam."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "您贵姓？",
+        "answer": "我姓……。",
+        "options": [
+          "我姓……。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Ngài họ gì? Đáp lại: 我姓……。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Anh ấy là người Trung Quốc.”: 他是谁？",
+        "answer": "他是中国人。",
+        "options": [
+          "他是中国人。",
+          "他是谁？",
+          "咖啡很贵。"
+        ],
+        "explanation": "他是中国人。 — Anh ấy là người Trung Quốc."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你是哪国人？",
+        "answer": "我是越南人。",
+        "options": [
+          "我是越南人。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn là người nước nào? Đáp lại: 我是越南人。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Cô ấy là người Mỹ.”: 谁是老师？",
+        "answer": "她是美国人。",
+        "options": [
+          "她是美国人。",
+          "谁是老师？",
+          "烤鸭很便宜。"
+        ],
+        "explanation": "她是美国人。 — Cô ấy là người Mỹ."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你是学生吗？",
+        "answer": "我是学生。",
+        "options": [
+          "我是学生。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn có phải là học sinh không? Đáp lại: 我是学生。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Bạn có phải là người Nhật không?”: 我不是老师。",
+        "answer": "你是日本人吗？",
+        "options": [
+          "你是日本人吗？",
+          "我不是老师。",
+          "毛笔很贵。"
+        ],
+        "explanation": "你是日本人吗？ — Bạn có phải là người Nhật không?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "他是谁？",
+        "answer": "他是老师。",
+        "options": [
+          "他是老师。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Anh ấy là ai? Đáp lại: 他是老师。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi là người Anh.”: 她不是经理。",
+        "answer": "我是英国人。",
+        "options": [
+          "我是英国人。",
+          "她不是经理。",
+          "飞机很新。"
+        ],
+        "explanation": "我是英国人。 — Tôi là người Anh."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "她是中国人吗？",
+        "answer": "她是中国人。",
+        "options": [
+          "她是中国人。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Cô ấy là người Trung Quốc phải không? Đáp lại: 她是中国人。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Họ là người Thái Lan.”: 他很帅。",
+        "answer": "他们是泰国人。",
+        "options": [
+          "他们是泰国人。",
+          "他很帅。",
+          "你呢？"
+        ],
+        "explanation": "他们是泰国人。 — Họ là người Thái Lan."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "咖啡贵吗？",
+        "answer": "咖啡很贵。",
+        "options": [
+          "咖啡很贵。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Cà phê có đắt không? Đáp lại: 咖啡很贵。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Bạn tên là gì?”: 她很美。",
+        "answer": "你叫什么名字？",
+        "options": [
+          "你叫什么名字？",
+          "她很美。",
+          "你是哪国人？"
+        ],
+        "explanation": "你叫什么名字？ — Bạn tên là gì?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "烤鸭便宜吗？",
+        "answer": "烤鸭很便宜。",
+        "options": [
+          "烤鸭很便宜。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Vịt quay có rẻ không? Đáp lại: 烤鸭很便宜。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Ngài họ gì? (lịch sự)”: 咖啡很贵。",
+        "answer": "您贵姓？",
+        "options": [
+          "您贵姓？",
+          "咖啡很贵。",
+          "我是越南人。"
+        ],
+        "explanation": "您贵姓？ — Ngài họ gì? (lịch sự)"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你是老师吗？",
+        "answer": "我不是老师。我是学生。",
+        "options": [
+          "我不是老师。我是学生。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn là giáo viên phải không? Đáp lại: 我不是老师。我是学生。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Anh ấy là ai?”: 烤鸭很便宜。",
+        "answer": "他是谁？",
+        "options": [
+          "他是谁？",
+          "烤鸭很便宜。",
+          "他是中国人。"
+        ],
+        "explanation": "他是谁？ — Anh ấy là ai?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "他们是哪国人？",
+        "answer": "他们是越南人。",
+        "options": [
+          "他们是越南人。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Họ là người nước nào? Đáp lại: 他们是越南人。"
+      }
+    ]
+  },
+  "chat": {
+    "enabled": true,
+    "scenario_id": "identity",
+    "goal": "Trò chuyện về tên và quốc tịch; chỉ dùng từ đã học từ bài 1 đến bài 2.",
+    "opening": "你叫什么名字？",
+    "translation": "Bạn tên là gì?",
+    "required_words": [
+      "叫",
+      "不",
+      "什么",
+      "谁",
+      "名字",
+      "贵姓",
+      "呢",
+      "哪",
+      "国",
+      "人",
+      "美",
+      "帅",
+      "吗",
+      "很",
+      "咖啡",
+      "烤鸭",
+      "毛笔",
+      "飞机",
+      "字",
+      "贵"
+    ],
+    "max_turns": 10
+  },
+  "street": {
+    "enabled": true,
+    "place_id": "school",
+    "missions": [
+      {
+        "id": "vocab-2-1",
+        "title": "Nghe hiểu 1",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "你是哪国人？",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Bạn là người nước nào?"
+          },
+          {
+            "id": "c2",
+            "label": "Bạn tên là gì?"
+          },
+          {
+            "id": "c3",
+            "label": "Anh ấy rất đẹp trai."
+          }
+        ],
+        "answer": "c1",
+        "feedback": "你是哪国人？ — Bạn là người nước nào?"
+      },
+      {
+        "id": "vocab-2-2",
+        "title": "Nghe hiểu 2",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "我是英国人。",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Cô ấy không phải là giám đốc."
+          },
+          {
+            "id": "c2",
+            "label": "Tôi là người Anh."
+          },
+          {
+            "id": "c3",
+            "label": "Máy bay rất mới."
+          }
+        ],
+        "answer": "c2",
+        "feedback": "我是英国人。 — Tôi là người Anh."
+      },
+      {
+        "id": "vocab-2-3",
+        "title": "Nghe hiểu 3",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "谁是老师？",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Cô ấy là người Mỹ."
+          },
+          {
+            "id": "c2",
+            "label": "Bút lông rất đắt."
+          },
+          {
+            "id": "c3",
+            "label": "Ai là giáo viên?"
+          }
+        ],
+        "answer": "c3",
+        "feedback": "谁是老师？ — Ai là giáo viên?"
+      }
+    ]
+  }
+}

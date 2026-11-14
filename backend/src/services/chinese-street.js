@@ -6,6 +6,9 @@ import {AppError,notFound} from '../utils/errors.js';
 import {requireCourse} from './course-service.js';
 import {defaultStreetLesson,streetLessonNumber} from '../data/chinese-street-missions.js';
 import {streetPlaces} from '../../../frontend/assets/js/chinese-street-places.js';
+import {vocabularyLesson} from './chinese-curriculum-scope.js';
+import {validateCurriculumChinese} from './chinese-curriculum.js';
+import {segmentLearnedChinese} from './chinese-quiz-language.js';
 const uuid=z.string().uuid(),key=z.string().regex(/^[a-z0-9-]{1,50}$/),placeIds=streetPlaces.map(p=>p.id),runTx=c=>async(sql,p=[]) =>(await c.query(sql,p))[0];
 const option=z.object({id:key,label:z.string().trim().min(1).max(100)}).strict();
 const missionSchema=z.object({id:key,title:z.string().trim().min(1).max(80),instruction:z.string().trim().min(1).max(200),speech:z.string().trim().min(1).max(240).refine(s=>/\p{Script=Han}/u.test(s),'Câu nghe cần có chữ Trung.'),type:z.enum(['choice','map']),options:z.array(option).max(4),answer:key,feedback:z.string().trim().min(1).max(600)}).strict().superRefine((m,c)=>{
@@ -42,7 +45,8 @@ export async function streetLesson(user,id){
  const lesson=await lessonFor(user,id),config=await configFor(lesson);
  if(!config||!config.enabled&&user.role!=='admin')throw notFound('Cô đang chuẩn bị nhiệm vụ cho bài này.');
  const rows=user.role==='admin'?[]:await query('SELECT * FROM chinese_street_progress WHERE student_id=? AND lesson_id=?',[user.id,lesson.id]);
- return {lesson:{id:lesson.id,title:lesson.title,status:lesson.status},...config,missions:config.missions.map(m=>{
+ const number=vocabularyLesson(lesson),place_hanzi=Object.fromEntries(streetPlaces.map(p=>{try{if(number)segmentLearnedChinese(p.hanzi,number);return [p.id,p.hanzi];}catch{return [p.id,''];}}));
+ return {lesson:{id:lesson.id,title:lesson.title,status:lesson.status},...config,place_hanzi,missions:config.missions.map(m=>{
   const p=progressFor(rows,lesson.id,m),{answer,feedback,...publicMission}=m;
   return {...(user.role==='admin'?m:publicMission),content_hash:streetContentHash(m),progress:{completed:Boolean(p?.completed_at),stars:Number(p?.best_stars)||0,wrong_count:Number(p?.wrong_count)||0}};
  })};
@@ -50,7 +54,7 @@ export async function streetLesson(user,id){
 export async function saveStreetLesson(user,id,body){
  const input=streetSettingsSchema.parse(body);
  await withTransaction(async c=>{
-  const run=runTx(c);await lessonFor(user,id,run);await run('SELECT id FROM chinese_lessons WHERE id=? FOR UPDATE',[id]);
+  const run=runTx(c),lesson=await lessonFor(user,id,run),number=vocabularyLesson(lesson);if(number)try{validateCurriculumChinese(input,number);}catch{throw new AppError(400,'STREET_VOCABULARY_SCOPE','Nhiệm vụ chỉ được dùng từ bài 1 đến bài '+number+'.');}await run('SELECT id FROM chinese_lessons WHERE id=? FOR UPDATE',[id]);
   const [old]=await run('SELECT revision FROM chinese_street_lessons WHERE lesson_id=? FOR UPDATE',[id]);
   if(Number(old?.revision||0)!==input.revision)throw new AppError(409,'STREET_EDIT_CONFLICT','Bài đã được sửa ở cửa sổ khác. Hãy tải lại để xem nội dung mới trước khi lưu.');
   const {revision,...data}=input;

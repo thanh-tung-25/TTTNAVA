@@ -1,0 +1,3465 @@
+{
+  "version": "user-vocabulary-2026-11-14",
+  "lesson": 4,
+  "title": "第四课：你去哪儿？ (Bạn đi đâu?)",
+  "vocabulary": [
+    {
+      "hanzi": "小姐",
+      "pinyin": "xiǎojiě",
+      "meaning": "Cô, tiểu thư",
+      "group": "main"
+    },
+    {
+      "hanzi": "师傅",
+      "pinyin": "shīfu",
+      "meaning": "Bác tài, thầy",
+      "group": "main",
+      "example": "师傅，谢谢！",
+      "example_meaning": "Cảm ơn bác tài!"
+    },
+    {
+      "hanzi": "去",
+      "pinyin": "qù",
+      "meaning": "Đi",
+      "group": "main",
+      "example": "你去哪儿？",
+      "example_meaning": "Bạn đi đâu?"
+    },
+    {
+      "hanzi": "哪儿",
+      "pinyin": "nǎr",
+      "meaning": "Đâu, ở đâu",
+      "group": "main",
+      "example": "你去哪儿？",
+      "example_meaning": "Bạn đi đâu?"
+    },
+    {
+      "hanzi": "哪里",
+      "pinyin": "nǎlǐ",
+      "meaning": "Đâu, ở đâu",
+      "group": "main"
+    },
+    {
+      "hanzi": "人民",
+      "pinyin": "rénmín",
+      "meaning": "Nhân dân",
+      "group": "main",
+      "example": "我去人民广场。",
+      "example_meaning": "Tôi đi đến Quảng trường Nhân dân."
+    },
+    {
+      "hanzi": "广场",
+      "pinyin": "guǎngchǎng",
+      "meaning": "Quảng trường",
+      "group": "main",
+      "example": "我去人民广场。",
+      "example_meaning": "Tôi đi đến Quảng trường Nhân dân."
+    },
+    {
+      "hanzi": "知道",
+      "pinyin": "zhīdào",
+      "meaning": "Biết",
+      "group": "main",
+      "example": "我知道了。",
+      "example_meaning": "Tôi biết rồi."
+    },
+    {
+      "hanzi": "明白",
+      "pinyin": "míngbai",
+      "meaning": "Hiểu, hiểu rõ",
+      "group": "main",
+      "example": "我明白了。",
+      "example_meaning": "Tôi hiểu rồi."
+    },
+    {
+      "hanzi": "了",
+      "pinyin": "le",
+      "meaning": "Trợ từ chỉ sự hoàn thành hoặc thay đổi",
+      "group": "main",
+      "example": "我知道了。",
+      "example_meaning": "Tôi biết rồi."
+    },
+    {
+      "hanzi": "远",
+      "pinyin": "yuǎn",
+      "meaning": "Xa",
+      "group": "main",
+      "example": "医院离学校很远。",
+      "example_meaning": "Bệnh viện ở rất xa trường học."
+    },
+    {
+      "hanzi": "近",
+      "pinyin": "jìn",
+      "meaning": "Gần",
+      "group": "main",
+      "example": "学校离公司很近。",
+      "example_meaning": "Trường học ở rất gần công ty."
+    },
+    {
+      "hanzi": "离",
+      "pinyin": "lí",
+      "meaning": "Cách, cách xa",
+      "group": "main",
+      "example": "学校离公司很近。",
+      "example_meaning": "Trường học ở rất gần công ty."
+    },
+    {
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "meaning": "Tìm, trả lại tiền thừa",
+      "group": "main",
+      "example": "我去找老师。",
+      "example_meaning": "Tôi đi tìm thầy/cô."
+    },
+    {
+      "hanzi": "多少",
+      "pinyin": "duōshao",
+      "meaning": "Bao nhiêu",
+      "group": "main",
+      "example": "多少钱？",
+      "example_meaning": "Bao nhiêu tiền?"
+    },
+    {
+      "hanzi": "钱",
+      "pinyin": "qián",
+      "meaning": "Tiền",
+      "group": "main",
+      "example": "多少钱？",
+      "example_meaning": "Bao nhiêu tiền?"
+    },
+    {
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "meaning": "Đồng, tệ",
+      "group": "main",
+      "example": "十块钱。",
+      "example_meaning": "Mười đồng."
+    },
+    {
+      "hanzi": "多",
+      "pinyin": "duō",
+      "meaning": "Nhiều",
+      "group": "main",
+      "example": "多少钱？",
+      "example_meaning": "Bao nhiêu tiền?"
+    },
+    {
+      "hanzi": "少",
+      "pinyin": "shǎo",
+      "meaning": "Ít",
+      "group": "main",
+      "example": "多少钱？",
+      "example_meaning": "Bao nhiêu tiền?"
+    },
+    {
+      "hanzi": "再",
+      "pinyin": "zài",
+      "meaning": "Lại, thêm lần nữa",
+      "group": "main",
+      "example": "再见，老师！",
+      "example_meaning": "Tạm biệt thầy/cô!"
+    },
+    {
+      "hanzi": "再见",
+      "pinyin": "zàijiàn",
+      "meaning": "Tạm biệt",
+      "group": "main",
+      "example": "再见，老师！",
+      "example_meaning": "Tạm biệt thầy/cô!"
+    },
+    {
+      "hanzi": "谢谢",
+      "pinyin": "xièxie",
+      "meaning": "Cảm ơn",
+      "group": "main",
+      "example": "师傅，谢谢！",
+      "example_meaning": "Cảm ơn bác tài!"
+    },
+    {
+      "hanzi": "不客气",
+      "pinyin": "bú kèqi",
+      "meaning": "Không có gì",
+      "group": "main",
+      "example": "不客气！",
+      "example_meaning": "Không có gì!"
+    },
+    {
+      "hanzi": "早上",
+      "pinyin": "zǎoshang",
+      "meaning": "Sáng sớm",
+      "group": "extended"
+    },
+    {
+      "hanzi": "上午",
+      "pinyin": "shàngwǔ",
+      "meaning": "Buổi sáng",
+      "group": "extended",
+      "example": "她上午去学校。",
+      "example_meaning": "Buổi sáng cô ấy đi đến trường."
+    },
+    {
+      "hanzi": "中午",
+      "pinyin": "zhōngwǔ",
+      "meaning": "Buổi trưa",
+      "group": "extended"
+    },
+    {
+      "hanzi": "下午",
+      "pinyin": "xiàwǔ",
+      "meaning": "Buổi chiều",
+      "group": "extended",
+      "example": "我下午去公司。",
+      "example_meaning": "Buổi chiều tôi đi đến công ty."
+    },
+    {
+      "hanzi": "晚上",
+      "pinyin": "wǎnshang",
+      "meaning": "Buổi tối",
+      "group": "extended",
+      "example": "他晚上去电影院。",
+      "example_meaning": "Buổi tối anh ấy đi đến rạp chiếu phim."
+    },
+    {
+      "hanzi": "半夜",
+      "pinyin": "bànyè",
+      "meaning": "Nửa đêm",
+      "group": "extended"
+    },
+    {
+      "hanzi": "来",
+      "pinyin": "lái",
+      "meaning": "Đến",
+      "group": "extended",
+      "example": "你下午来吗？",
+      "example_meaning": "Buổi chiều bạn có đến không?"
+    },
+    {
+      "hanzi": "到",
+      "pinyin": "dào",
+      "meaning": "Đến, tới",
+      "group": "extended"
+    },
+    {
+      "hanzi": "司机",
+      "pinyin": "sījī",
+      "meaning": "Tài xế",
+      "group": "extended"
+    },
+    {
+      "hanzi": "女士",
+      "pinyin": "nǚshì",
+      "meaning": "Quý cô, quý bà",
+      "group": "extended"
+    },
+    {
+      "hanzi": "姑娘",
+      "pinyin": "gūniang",
+      "meaning": "Cô gái",
+      "group": "extended"
+    },
+    {
+      "hanzi": "妹妹",
+      "pinyin": "mèimei",
+      "meaning": "Em gái",
+      "group": "extended",
+      "example": "妹妹去宿舍。",
+      "example_meaning": "Em gái đi đến ký túc xá."
+    },
+    {
+      "hanzi": "小姐姐",
+      "pinyin": "xiǎojiějie",
+      "meaning": "Cô gái trẻ (thân mật)",
+      "group": "extended"
+    },
+    {
+      "hanzi": "美女",
+      "pinyin": "měinǚ",
+      "meaning": "Người đẹp",
+      "group": "extended"
+    },
+    {
+      "hanzi": "小哥哥",
+      "pinyin": "xiǎogēge",
+      "meaning": "Chàng trai trẻ (thân mật)",
+      "group": "extended"
+    },
+    {
+      "hanzi": "帅哥",
+      "pinyin": "shuàigē",
+      "meaning": "Anh đẹp trai",
+      "group": "extended"
+    },
+    {
+      "hanzi": "人民广场",
+      "pinyin": "Rénmín Guǎngchǎng",
+      "meaning": "Quảng trường Nhân dân",
+      "group": "extended",
+      "example": "我去人民广场。",
+      "example_meaning": "Tôi đi đến Quảng trường Nhân dân."
+    },
+    {
+      "hanzi": "学校",
+      "pinyin": "xuéxiào",
+      "meaning": "Trường học",
+      "group": "extended",
+      "example": "学校离公司很近。",
+      "example_meaning": "Trường học ở rất gần công ty."
+    },
+    {
+      "hanzi": "公司",
+      "pinyin": "gōngsī",
+      "meaning": "Công ty",
+      "group": "extended",
+      "example": "学校离公司很近。",
+      "example_meaning": "Trường học ở rất gần công ty."
+    },
+    {
+      "hanzi": "医院",
+      "pinyin": "yīyuàn",
+      "meaning": "Bệnh viện",
+      "group": "extended",
+      "example": "医院离学校很远。",
+      "example_meaning": "Bệnh viện ở rất xa trường học."
+    },
+    {
+      "hanzi": "超市",
+      "pinyin": "chāoshì",
+      "meaning": "Siêu thị",
+      "group": "extended",
+      "example": "请问，超市离学校远吗？",
+      "example_meaning": "Xin hỏi, siêu thị có xa trường học không?"
+    },
+    {
+      "hanzi": "宿舍",
+      "pinyin": "sùshè",
+      "meaning": "Ký túc xá",
+      "group": "extended",
+      "example": "妹妹去宿舍。",
+      "example_meaning": "Em gái đi đến ký túc xá."
+    },
+    {
+      "hanzi": "电影院",
+      "pinyin": "diànyǐngyuàn",
+      "meaning": "Rạp chiếu phim",
+      "group": "extended",
+      "example": "他晚上去电影院。",
+      "example_meaning": "Buổi tối anh ấy đi đến rạp chiếu phim."
+    },
+    {
+      "hanzi": "感谢",
+      "pinyin": "gǎnxiè",
+      "meaning": "Cảm ơn, biết ơn",
+      "group": "extended"
+    },
+    {
+      "hanzi": "不用谢",
+      "pinyin": "bú yòng xiè",
+      "meaning": "Không cần cảm ơn",
+      "group": "extended",
+      "example": "不用谢！",
+      "example_meaning": "Không cần cảm ơn!"
+    },
+    {
+      "hanzi": "客气",
+      "pinyin": "kèqi",
+      "meaning": "Khách sáo, lịch sự",
+      "group": "extended",
+      "example": "不客气！",
+      "example_meaning": "Không có gì!"
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “小姐” có nghĩa là gì?",
+      "options": [
+        "Bác tài, thầy",
+        "Cô gái trẻ (thân mật)",
+        "Trường học",
+        "Cô, tiểu thư"
+      ],
+      "accepted": [
+        "Cô, tiểu thư"
+      ],
+      "explanation": "小姐 đọc là xiǎojiě, nghĩa là Cô, tiểu thư. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 146.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "26abf5e0-73a4-4d17-994b-5793be0f6ea3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “xiǎojiě” và nghĩa “Cô, tiểu thư”.",
+      "options": [
+        "人民广场",
+        "小姐",
+        "超市",
+        "宿舍"
+      ],
+      "accepted": [
+        "小姐"
+      ],
+      "explanation": "小姐 đọc là xiǎojiě, nghĩa là Cô, tiểu thư. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 146.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "26abf5e0-73a4-4d17-994b-5793be0f6ea3"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “师傅” có nghĩa là gì?",
+      "options": [
+        "Buổi tối",
+        "Buổi sáng",
+        "Bác tài, thầy",
+        "Quý cô, quý bà"
+      ],
+      "accepted": [
+        "Bác tài, thầy"
+      ],
+      "explanation": "师傅 đọc là shīfu, nghĩa là Bác tài, thầy. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 147.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5fec069d-c1c5-4ba6-a4c3-226b100e2c68"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “shīfu” và nghĩa “Bác tài, thầy”.",
+      "options": [
+        "师傅",
+        "再见",
+        "下午",
+        "人民"
+      ],
+      "accepted": [
+        "师傅"
+      ],
+      "explanation": "师傅 đọc là shīfu, nghĩa là Bác tài, thầy. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 147.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5fec069d-c1c5-4ba6-a4c3-226b100e2c68"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “去” có nghĩa là gì?",
+      "options": [
+        "Đi",
+        "Trường học",
+        "Đến",
+        "Buổi tối"
+      ],
+      "accepted": [
+        "Đi"
+      ],
+      "explanation": "去 đọc là qù, nghĩa là Đi. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 148.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6fe7706f-f66e-4504-b44c-6202932f1430"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “qù” và nghĩa “Đi”.",
+      "options": [
+        "电影院",
+        "不客气",
+        "到",
+        "去"
+      ],
+      "accepted": [
+        "去"
+      ],
+      "explanation": "去 đọc là qù, nghĩa là Đi. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 148.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6fe7706f-f66e-4504-b44c-6202932f1430"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “哪儿” có nghĩa là gì?",
+      "options": [
+        "Đâu, ở đâu",
+        "Lại, thêm lần nữa",
+        "Cảm ơn, biết ơn",
+        "Cách, cách xa"
+      ],
+      "accepted": [
+        "Đâu, ở đâu"
+      ],
+      "explanation": "哪儿 đọc là nǎr, nghĩa là Đâu, ở đâu. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 149.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "79e19338-42c3-41dd-a092-9bcf37116984"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “nǎr” và nghĩa “Đâu, ở đâu”.",
+      "options": [
+        "哪儿",
+        "司机",
+        "妹妹",
+        "了"
+      ],
+      "accepted": [
+        "哪儿"
+      ],
+      "explanation": "哪儿 đọc là nǎr, nghĩa là Đâu, ở đâu. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 149.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "79e19338-42c3-41dd-a092-9bcf37116984"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “哪里” có nghĩa là gì?",
+      "options": [
+        "Lại, thêm lần nữa",
+        "Đâu, ở đâu",
+        "Gần",
+        "Quý cô, quý bà"
+      ],
+      "accepted": [
+        "Đâu, ở đâu"
+      ],
+      "explanation": "哪里 đọc là nǎlǐ, nghĩa là Đâu, ở đâu. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 150.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a67d2b5c-adaa-425f-b652-312831a586e1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “nǎlǐ” và nghĩa “Đâu, ở đâu”.",
+      "options": [
+        "哪里",
+        "公司",
+        "姑娘",
+        "客气"
+      ],
+      "accepted": [
+        "哪里"
+      ],
+      "explanation": "哪里 đọc là nǎlǐ, nghĩa là Đâu, ở đâu. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 150.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a67d2b5c-adaa-425f-b652-312831a586e1"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “人民” có nghĩa là gì?",
+      "options": [
+        "Trợ từ chỉ sự hoàn thành hoặc thay đổi",
+        "Lại, thêm lần nữa",
+        "Quảng trường",
+        "Nhân dân"
+      ],
+      "accepted": [
+        "Nhân dân"
+      ],
+      "explanation": "人民 đọc là rénmín, nghĩa là Nhân dân. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 151.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6331bec1-6125-4967-af06-12e19619f072"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “rénmín” và nghĩa “Nhân dân”.",
+      "options": [
+        "中午",
+        "去",
+        "人民",
+        "学校"
+      ],
+      "accepted": [
+        "人民"
+      ],
+      "explanation": "人民 đọc là rénmín, nghĩa là Nhân dân. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 151.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6331bec1-6125-4967-af06-12e19619f072"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “广场” có nghĩa là gì?",
+      "options": [
+        "Quảng trường",
+        "Bác tài, thầy",
+        "Anh đẹp trai",
+        "Đồng, tệ"
+      ],
+      "accepted": [
+        "Quảng trường"
+      ],
+      "explanation": "广场 đọc là guǎngchǎng, nghĩa là Quảng trường. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 152.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4735b937-eebb-4e47-bce1-6ec6acda5341"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “guǎngchǎng” và nghĩa “Quảng trường”.",
+      "options": [
+        "来",
+        "远",
+        "广场",
+        "宿舍"
+      ],
+      "accepted": [
+        "广场"
+      ],
+      "explanation": "广场 đọc là guǎngchǎng, nghĩa là Quảng trường. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 152.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "4735b937-eebb-4e47-bce1-6ec6acda5341"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “知道” có nghĩa là gì?",
+      "options": [
+        "Cô gái trẻ (thân mật)",
+        "Nhân dân",
+        "Đến",
+        "Biết"
+      ],
+      "accepted": [
+        "Biết"
+      ],
+      "explanation": "知道 đọc là zhīdào, nghĩa là Biết. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 153.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "23f6361d-2407-4755-ab2c-abd02493ddfc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “zhīdào” và nghĩa “Biết”.",
+      "options": [
+        "人民",
+        "再",
+        "知道",
+        "近"
+      ],
+      "accepted": [
+        "知道"
+      ],
+      "explanation": "知道 đọc là zhīdào, nghĩa là Biết. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 153.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "23f6361d-2407-4755-ab2c-abd02493ddfc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “明白” có nghĩa là gì?",
+      "options": [
+        "Người đẹp",
+        "Cảm ơn",
+        "Hiểu, hiểu rõ",
+        "Ký túc xá"
+      ],
+      "accepted": [
+        "Hiểu, hiểu rõ"
+      ],
+      "explanation": "明白 đọc là míngbai, nghĩa là Hiểu, hiểu rõ. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 154.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b660be51-ec86-4a2f-ad23-7c69dd1c54fb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “míngbai” và nghĩa “Hiểu, hiểu rõ”.",
+      "options": [
+        "上午",
+        "了",
+        "人民广场",
+        "明白"
+      ],
+      "accepted": [
+        "明白"
+      ],
+      "explanation": "明白 đọc là míngbai, nghĩa là Hiểu, hiểu rõ. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 154.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b660be51-ec86-4a2f-ad23-7c69dd1c54fb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “了” có nghĩa là gì?",
+      "options": [
+        "Cách, cách xa",
+        "Công ty",
+        "Đến",
+        "Trợ từ chỉ sự hoàn thành hoặc thay đổi"
+      ],
+      "accepted": [
+        "Trợ từ chỉ sự hoàn thành hoặc thay đổi"
+      ],
+      "explanation": "了 đọc là le, nghĩa là Trợ từ chỉ sự hoàn thành hoặc thay đổi. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 155.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "419808e5-6c9a-4eb7-bebc-9a52c367ad98"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “le” và nghĩa “Trợ từ chỉ sự hoàn thành hoặc thay đổi”.",
+      "options": [
+        "妹妹",
+        "了",
+        "上午",
+        "人民广场"
+      ],
+      "accepted": [
+        "了"
+      ],
+      "explanation": "了 đọc là le, nghĩa là Trợ từ chỉ sự hoàn thành hoặc thay đổi. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 155.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "419808e5-6c9a-4eb7-bebc-9a52c367ad98"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “远” có nghĩa là gì?",
+      "options": [
+        "Đồng, tệ",
+        "Xa",
+        "Hiểu, hiểu rõ",
+        "Nhân dân"
+      ],
+      "accepted": [
+        "Xa"
+      ],
+      "explanation": "远 đọc là yuǎn, nghĩa là Xa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 156.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "85cdb9f5-4427-485b-bc36-31c0f98c11cf"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “yuǎn” và nghĩa “Xa”.",
+      "options": [
+        "帅哥",
+        "块",
+        "明白",
+        "远"
+      ],
+      "accepted": [
+        "远"
+      ],
+      "explanation": "远 đọc là yuǎn, nghĩa là Xa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 156.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "85cdb9f5-4427-485b-bc36-31c0f98c11cf"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “近” có nghĩa là gì?",
+      "options": [
+        "Nửa đêm",
+        "Gần",
+        "Rạp chiếu phim",
+        "Cô gái"
+      ],
+      "accepted": [
+        "Gần"
+      ],
+      "explanation": "近 đọc là jìn, nghĩa là Gần. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 157.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cbf9f733-d000-4351-9753-e4aa4d7e5de5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “jìn” và nghĩa “Gần”.",
+      "options": [
+        "广场",
+        "妹妹",
+        "再",
+        "近"
+      ],
+      "accepted": [
+        "近"
+      ],
+      "explanation": "近 đọc là jìn, nghĩa là Gần. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 157.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cbf9f733-d000-4351-9753-e4aa4d7e5de5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “离” có nghĩa là gì?",
+      "options": [
+        "Cách, cách xa",
+        "Em gái",
+        "Đến",
+        "Quảng trường Nhân dân"
+      ],
+      "accepted": [
+        "Cách, cách xa"
+      ],
+      "explanation": "离 đọc là lí, nghĩa là Cách, cách xa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 158.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e6b3c4e0-7797-4577-af63-1d9926999a4e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “lí” và nghĩa “Cách, cách xa”.",
+      "options": [
+        "离",
+        "小姐姐",
+        "钱",
+        "中午"
+      ],
+      "accepted": [
+        "离"
+      ],
+      "explanation": "离 đọc là lí, nghĩa là Cách, cách xa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 158.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "e6b3c4e0-7797-4577-af63-1d9926999a4e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “找” có nghĩa là gì?",
+      "options": [
+        "Tìm, trả lại tiền thừa",
+        "Đồng, tệ",
+        "Biết",
+        "Trợ từ chỉ sự hoàn thành hoặc thay đổi"
+      ],
+      "accepted": [
+        "Tìm, trả lại tiền thừa"
+      ],
+      "explanation": "找 đọc là zhǎo, nghĩa là Tìm, trả lại tiền thừa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 159.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c2b9f7db-4925-49c8-84d1-2031b8dff434"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “zhǎo” và nghĩa “Tìm, trả lại tiền thừa”.",
+      "options": [
+        "不用谢",
+        "女士",
+        "多",
+        "找"
+      ],
+      "accepted": [
+        "找"
+      ],
+      "explanation": "找 đọc là zhǎo, nghĩa là Tìm, trả lại tiền thừa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 159.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c2b9f7db-4925-49c8-84d1-2031b8dff434"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “多少” có nghĩa là gì?",
+      "options": [
+        "Nhiều",
+        "Cô gái trẻ (thân mật)",
+        "Bao nhiêu",
+        "Xa"
+      ],
+      "accepted": [
+        "Bao nhiêu"
+      ],
+      "explanation": "多少 đọc là duōshao, nghĩa là Bao nhiêu. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 160.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bb7bb1cb-b3c8-4943-835d-9047378ea25e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “duōshao” và nghĩa “Bao nhiêu”.",
+      "options": [
+        "哪儿",
+        "再见",
+        "多少",
+        "再"
+      ],
+      "accepted": [
+        "多少"
+      ],
+      "explanation": "多少 đọc là duōshao, nghĩa là Bao nhiêu. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 160.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bb7bb1cb-b3c8-4943-835d-9047378ea25e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “钱” có nghĩa là gì?",
+      "options": [
+        "Tài xế",
+        "Buổi chiều",
+        "Tiền",
+        "Buổi tối"
+      ],
+      "accepted": [
+        "Tiền"
+      ],
+      "explanation": "钱 đọc là qián, nghĩa là Tiền. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 161.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6cf8e0e9-3e0e-4626-ba32-d8f5c227d5d4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “qián” và nghĩa “Tiền”.",
+      "options": [
+        "感谢",
+        "中午",
+        "司机",
+        "钱"
+      ],
+      "accepted": [
+        "钱"
+      ],
+      "explanation": "钱 đọc là qián, nghĩa là Tiền. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 161.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6cf8e0e9-3e0e-4626-ba32-d8f5c227d5d4"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “块” có nghĩa là gì?",
+      "options": [
+        "Bác tài, thầy",
+        "Bao nhiêu",
+        "Công ty",
+        "Đồng, tệ"
+      ],
+      "accepted": [
+        "Đồng, tệ"
+      ],
+      "explanation": "块 đọc là kuài, nghĩa là Đồng, tệ. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 162.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "451d2c96-918b-4100-b10a-21c3e91da7d6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “kuài” và nghĩa “Đồng, tệ”.",
+      "options": [
+        "广场",
+        "块",
+        "哪里",
+        "上午"
+      ],
+      "accepted": [
+        "块"
+      ],
+      "explanation": "块 đọc là kuài, nghĩa là Đồng, tệ. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 162.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "451d2c96-918b-4100-b10a-21c3e91da7d6"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “多” có nghĩa là gì?",
+      "options": [
+        "Sáng sớm",
+        "Nhiều",
+        "Biết",
+        "Đến"
+      ],
+      "accepted": [
+        "Nhiều"
+      ],
+      "explanation": "多 đọc là duō, nghĩa là Nhiều. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 163.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0c4b36b0-9d66-442b-8a1d-234d8eacb41e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “duō” và nghĩa “Nhiều”.",
+      "options": [
+        "姑娘",
+        "早上",
+        "中午",
+        "多"
+      ],
+      "accepted": [
+        "多"
+      ],
+      "explanation": "多 đọc là duō, nghĩa là Nhiều. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 163.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "0c4b36b0-9d66-442b-8a1d-234d8eacb41e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “少” có nghĩa là gì?",
+      "options": [
+        "Ít",
+        "Cô, tiểu thư",
+        "Buổi tối",
+        "Buổi trưa"
+      ],
+      "accepted": [
+        "Ít"
+      ],
+      "explanation": "少 đọc là shǎo, nghĩa là Ít. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 164.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "09ac9fd5-07d9-4443-b59e-846ba86f2afb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “shǎo” và nghĩa “Ít”.",
+      "options": [
+        "早上",
+        "中午",
+        "少",
+        "不客气"
+      ],
+      "accepted": [
+        "少"
+      ],
+      "explanation": "少 đọc là shǎo, nghĩa là Ít. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 164.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "09ac9fd5-07d9-4443-b59e-846ba86f2afb"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “再” có nghĩa là gì?",
+      "options": [
+        "Lại, thêm lần nữa",
+        "Nhiều",
+        "Tìm, trả lại tiền thừa",
+        "Trường học"
+      ],
+      "accepted": [
+        "Lại, thêm lần nữa"
+      ],
+      "explanation": "再 đọc là zài, nghĩa là Lại, thêm lần nữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 165.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "04bd0b40-f124-4a75-8fb9-dc433f927990"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “zài” và nghĩa “Lại, thêm lần nữa”.",
+      "options": [
+        "再",
+        "下午",
+        "早上",
+        "医院"
+      ],
+      "accepted": [
+        "再"
+      ],
+      "explanation": "再 đọc là zài, nghĩa là Lại, thêm lần nữa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 165.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "04bd0b40-f124-4a75-8fb9-dc433f927990"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “再见” có nghĩa là gì?",
+      "options": [
+        "Đâu, ở đâu",
+        "Chàng trai trẻ (thân mật)",
+        "Tạm biệt",
+        "Sáng sớm"
+      ],
+      "accepted": [
+        "Tạm biệt"
+      ],
+      "explanation": "再见 đọc là zàijiàn, nghĩa là Tạm biệt. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 166.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7fc0bbd8-118e-4a9e-829a-c2b10ff2c272"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “zàijiàn” và nghĩa “Tạm biệt”.",
+      "options": [
+        "女士",
+        "去",
+        "再见",
+        "学校"
+      ],
+      "accepted": [
+        "再见"
+      ],
+      "explanation": "再见 đọc là zàijiàn, nghĩa là Tạm biệt. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 166.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7fc0bbd8-118e-4a9e-829a-c2b10ff2c272"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “谢谢” có nghĩa là gì?",
+      "options": [
+        "Cảm ơn",
+        "Buổi tối",
+        "Tạm biệt",
+        "Trợ từ chỉ sự hoàn thành hoặc thay đổi"
+      ],
+      "accepted": [
+        "Cảm ơn"
+      ],
+      "explanation": "谢谢 đọc là xièxie, nghĩa là Cảm ơn. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 167.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "838c0b1f-a179-491f-8158-a82983b50453"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “xièxie” và nghĩa “Cảm ơn”.",
+      "options": [
+        "谢谢",
+        "人民",
+        "电影院",
+        "司机"
+      ],
+      "accepted": [
+        "谢谢"
+      ],
+      "explanation": "谢谢 đọc là xièxie, nghĩa là Cảm ơn. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 167.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "838c0b1f-a179-491f-8158-a82983b50453"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “不客气” có nghĩa là gì?",
+      "options": [
+        "Không có gì",
+        "Cách, cách xa",
+        "Xa",
+        "Cô, tiểu thư"
+      ],
+      "accepted": [
+        "Không có gì"
+      ],
+      "explanation": "不客气 đọc là bú kèqi, nghĩa là Không có gì. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 168.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ff1b9df6-f551-48bc-b60c-e6001586dca5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “bú kèqi” và nghĩa “Không có gì”.",
+      "options": [
+        "再见",
+        "司机",
+        "不客气",
+        "姑娘"
+      ],
+      "accepted": [
+        "不客气"
+      ],
+      "explanation": "不客气 đọc là bú kèqi, nghĩa là Không có gì. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 168.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ff1b9df6-f551-48bc-b60c-e6001586dca5"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “早上” có nghĩa là gì?",
+      "options": [
+        "Bác tài, thầy",
+        "Sáng sớm",
+        "Tài xế",
+        "Xa"
+      ],
+      "accepted": [
+        "Sáng sớm"
+      ],
+      "explanation": "早上 đọc là zǎoshang, nghĩa là Sáng sớm. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 172.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9d13352a-47bf-4711-b597-07898a61c311"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “zǎoshang” và nghĩa “Sáng sớm”.",
+      "options": [
+        "早上",
+        "离",
+        "找",
+        "超市"
+      ],
+      "accepted": [
+        "早上"
+      ],
+      "explanation": "早上 đọc là zǎoshang, nghĩa là Sáng sớm. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 172.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "9d13352a-47bf-4711-b597-07898a61c311"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “上午” có nghĩa là gì?",
+      "options": [
+        "Buổi sáng",
+        "Cô gái trẻ (thân mật)",
+        "Quảng trường Nhân dân",
+        "Hiểu, hiểu rõ"
+      ],
+      "accepted": [
+        "Buổi sáng"
+      ],
+      "explanation": "上午 đọc là shàngwǔ, nghĩa là Buổi sáng. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 173.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c2f59277-7451-4c2e-a3b1-6c16958f9e46"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “shàngwǔ” và nghĩa “Buổi sáng”.",
+      "options": [
+        "广场",
+        "上午",
+        "再见",
+        "远"
+      ],
+      "accepted": [
+        "上午"
+      ],
+      "explanation": "上午 đọc là shàngwǔ, nghĩa là Buổi sáng. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 173.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "c2f59277-7451-4c2e-a3b1-6c16958f9e46"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “中午” có nghĩa là gì?",
+      "options": [
+        "Khách sáo, lịch sự",
+        "Bác tài, thầy",
+        "Buổi trưa",
+        "Cảm ơn"
+      ],
+      "accepted": [
+        "Buổi trưa"
+      ],
+      "explanation": "中午 đọc là zhōngwǔ, nghĩa là Buổi trưa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 174.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cdf1cf41-b202-43e3-8021-367769dcb24f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “zhōngwǔ” và nghĩa “Buổi trưa”.",
+      "options": [
+        "明白",
+        "中午",
+        "学校",
+        "女士"
+      ],
+      "accepted": [
+        "中午"
+      ],
+      "explanation": "中午 đọc là zhōngwǔ, nghĩa là Buổi trưa. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 174.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "cdf1cf41-b202-43e3-8021-367769dcb24f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “下午” có nghĩa là gì?",
+      "options": [
+        "Buổi chiều",
+        "Nhiều",
+        "Bao nhiêu",
+        "Tài xế"
+      ],
+      "accepted": [
+        "Buổi chiều"
+      ],
+      "explanation": "下午 đọc là xiàwǔ, nghĩa là Buổi chiều. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 175.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5ac88de9-7176-46ff-81de-246ae9ba70ed"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “xiàwǔ” và nghĩa “Buổi chiều”.",
+      "options": [
+        "小姐",
+        "下午",
+        "美女",
+        "帅哥"
+      ],
+      "accepted": [
+        "下午"
+      ],
+      "explanation": "下午 đọc là xiàwǔ, nghĩa là Buổi chiều. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 175.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5ac88de9-7176-46ff-81de-246ae9ba70ed"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “晚上” có nghĩa là gì?",
+      "options": [
+        "Quảng trường",
+        "Gần",
+        "Buổi tối",
+        "Cô, tiểu thư"
+      ],
+      "accepted": [
+        "Buổi tối"
+      ],
+      "explanation": "晚上 đọc là wǎnshang, nghĩa là Buổi tối. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 176.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a7be4ea7-6b63-4752-9048-cce6dcb27f0e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “wǎnshang” và nghĩa “Buổi tối”.",
+      "options": [
+        "晚上",
+        "钱",
+        "再",
+        "人民"
+      ],
+      "accepted": [
+        "晚上"
+      ],
+      "explanation": "晚上 đọc là wǎnshang, nghĩa là Buổi tối. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 176.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a7be4ea7-6b63-4752-9048-cce6dcb27f0e"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “半夜” có nghĩa là gì?",
+      "options": [
+        "Cách, cách xa",
+        "Rạp chiếu phim",
+        "Nửa đêm",
+        "Hiểu, hiểu rõ"
+      ],
+      "accepted": [
+        "Nửa đêm"
+      ],
+      "explanation": "半夜 đọc là bànyè, nghĩa là Nửa đêm. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 177.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7154a6f6-7843-40f3-a614-ade79b0d099a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “bànyè” và nghĩa “Nửa đêm”.",
+      "options": [
+        "半夜",
+        "到",
+        "小哥哥",
+        "公司"
+      ],
+      "accepted": [
+        "半夜"
+      ],
+      "explanation": "半夜 đọc là bànyè, nghĩa là Nửa đêm. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 177.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "7154a6f6-7843-40f3-a614-ade79b0d099a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “来” có nghĩa là gì?",
+      "options": [
+        "Lại, thêm lần nữa",
+        "Ký túc xá",
+        "Xa",
+        "Đến"
+      ],
+      "accepted": [
+        "Đến"
+      ],
+      "explanation": "来 đọc là lái, nghĩa là Đến. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 178.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "52973f84-0eb9-4da4-8a72-ac9d38a4bd06"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “lái” và nghĩa “Đến”.",
+      "options": [
+        "来",
+        "师傅",
+        "去",
+        "中午"
+      ],
+      "accepted": [
+        "来"
+      ],
+      "explanation": "来 đọc là lái, nghĩa là Đến. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 178.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "52973f84-0eb9-4da4-8a72-ac9d38a4bd06"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “到” có nghĩa là gì?",
+      "options": [
+        "Đến, tới",
+        "Cảm ơn, biết ơn",
+        "Biết",
+        "Nhiều"
+      ],
+      "accepted": [
+        "Đến, tới"
+      ],
+      "explanation": "到 đọc là dào, nghĩa là Đến, tới. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 179.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a8031844-f1de-4c46-ac80-f26b4ca30290"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “dào” và nghĩa “Đến, tới”.",
+      "options": [
+        "帅哥",
+        "明白",
+        "到",
+        "师傅"
+      ],
+      "accepted": [
+        "到"
+      ],
+      "explanation": "到 đọc là dào, nghĩa là Đến, tới. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 179.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "a8031844-f1de-4c46-ac80-f26b4ca30290"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “司机” có nghĩa là gì?",
+      "options": [
+        "Cảm ơn, biết ơn",
+        "Tìm, trả lại tiền thừa",
+        "Đến",
+        "Tài xế"
+      ],
+      "accepted": [
+        "Tài xế"
+      ],
+      "explanation": "司机 đọc là sījī, nghĩa là Tài xế. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 180.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bdaf75bd-aa6f-43af-89a2-748c1e75bdbf"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “sījī” và nghĩa “Tài xế”.",
+      "options": [
+        "中午",
+        "司机",
+        "哪里",
+        "不客气"
+      ],
+      "accepted": [
+        "司机"
+      ],
+      "explanation": "司机 đọc là sījī, nghĩa là Tài xế. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 180.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "bdaf75bd-aa6f-43af-89a2-748c1e75bdbf"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “女士” có nghĩa là gì?",
+      "options": [
+        "Tạm biệt",
+        "Đồng, tệ",
+        "Quý cô, quý bà",
+        "Buổi sáng"
+      ],
+      "accepted": [
+        "Quý cô, quý bà"
+      ],
+      "explanation": "女士 đọc là nǚshì, nghĩa là Quý cô, quý bà. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 181.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ab3a4da5-683f-42c7-9c3d-eced7abab87c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “nǚshì” và nghĩa “Quý cô, quý bà”.",
+      "options": [
+        "不客气",
+        "电影院",
+        "晚上",
+        "女士"
+      ],
+      "accepted": [
+        "女士"
+      ],
+      "explanation": "女士 đọc là nǚshì, nghĩa là Quý cô, quý bà. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 181.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "ab3a4da5-683f-42c7-9c3d-eced7abab87c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “姑娘” có nghĩa là gì?",
+      "options": [
+        "Cảm ơn, biết ơn",
+        "Biết",
+        "Không có gì",
+        "Cô gái"
+      ],
+      "accepted": [
+        "Cô gái"
+      ],
+      "explanation": "姑娘 đọc là gūniang, nghĩa là Cô gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 182.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8dba7667-8e26-43ab-8843-26791e05a209"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “gūniang” và nghĩa “Cô gái”.",
+      "options": [
+        "小姐姐",
+        "姑娘",
+        "广场",
+        "远"
+      ],
+      "accepted": [
+        "姑娘"
+      ],
+      "explanation": "姑娘 đọc là gūniang, nghĩa là Cô gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 182.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8dba7667-8e26-43ab-8843-26791e05a209"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “妹妹” có nghĩa là gì?",
+      "options": [
+        "Em gái",
+        "Bác tài, thầy",
+        "Buổi tối",
+        "Không có gì"
+      ],
+      "accepted": [
+        "Em gái"
+      ],
+      "explanation": "妹妹 đọc là mèimei, nghĩa là Em gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 183.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5f6b34b8-62d2-4d3a-92c1-b190ec6271ca"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “mèimei” và nghĩa “Em gái”.",
+      "options": [
+        "妹妹",
+        "学校",
+        "人民广场",
+        "女士"
+      ],
+      "accepted": [
+        "妹妹"
+      ],
+      "explanation": "妹妹 đọc là mèimei, nghĩa là Em gái. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 183.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5f6b34b8-62d2-4d3a-92c1-b190ec6271ca"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “小姐姐” có nghĩa là gì?",
+      "options": [
+        "Nhiều",
+        "Cô gái trẻ (thân mật)",
+        "Rạp chiếu phim",
+        "Đến, tới"
+      ],
+      "accepted": [
+        "Cô gái trẻ (thân mật)"
+      ],
+      "explanation": "小姐姐 đọc là xiǎojiějie, nghĩa là Cô gái trẻ (thân mật). Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 184.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b599fd57-20c9-474e-a328-484a99fd3790"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “xiǎojiějie” và nghĩa “Cô gái trẻ (thân mật)”.",
+      "options": [
+        "谢谢",
+        "小姐姐",
+        "哪里",
+        "司机"
+      ],
+      "accepted": [
+        "小姐姐"
+      ],
+      "explanation": "小姐姐 đọc là xiǎojiějie, nghĩa là Cô gái trẻ (thân mật). Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 184.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b599fd57-20c9-474e-a328-484a99fd3790"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “美女” có nghĩa là gì?",
+      "options": [
+        "Nhân dân",
+        "Người đẹp",
+        "Công ty",
+        "Đến, tới"
+      ],
+      "accepted": [
+        "Người đẹp"
+      ],
+      "explanation": "美女 đọc là měinǚ, nghĩa là Người đẹp. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 185.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "33fe949c-b10d-4163-b4a8-ba52a2b7411c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “měinǚ” và nghĩa “Người đẹp”.",
+      "options": [
+        "宿舍",
+        "司机",
+        "美女",
+        "去"
+      ],
+      "accepted": [
+        "美女"
+      ],
+      "explanation": "美女 đọc là měinǚ, nghĩa là Người đẹp. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 185.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "33fe949c-b10d-4163-b4a8-ba52a2b7411c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “小哥哥” có nghĩa là gì?",
+      "options": [
+        "Đi",
+        "Nửa đêm",
+        "Chàng trai trẻ (thân mật)",
+        "Cô gái"
+      ],
+      "accepted": [
+        "Chàng trai trẻ (thân mật)"
+      ],
+      "explanation": "小哥哥 đọc là xiǎogēge, nghĩa là Chàng trai trẻ (thân mật). Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 186.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5bcf0140-0a77-41a8-b00c-55e2bd074470"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “xiǎogēge” và nghĩa “Chàng trai trẻ (thân mật)”.",
+      "options": [
+        "小哥哥",
+        "谢谢",
+        "广场",
+        "客气"
+      ],
+      "accepted": [
+        "小哥哥"
+      ],
+      "explanation": "小哥哥 đọc là xiǎogēge, nghĩa là Chàng trai trẻ (thân mật). Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 186.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5bcf0140-0a77-41a8-b00c-55e2bd074470"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “帅哥” có nghĩa là gì?",
+      "options": [
+        "Công ty",
+        "Anh đẹp trai",
+        "Ít",
+        "Tạm biệt"
+      ],
+      "accepted": [
+        "Anh đẹp trai"
+      ],
+      "explanation": "帅哥 đọc là shuàigē, nghĩa là Anh đẹp trai. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 187.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8e8efa21-7238-45b3-9666-dad893fed82c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “shuàigē” và nghĩa “Anh đẹp trai”.",
+      "options": [
+        "来",
+        "哪里",
+        "帅哥",
+        "找"
+      ],
+      "accepted": [
+        "帅哥"
+      ],
+      "explanation": "帅哥 đọc là shuàigē, nghĩa là Anh đẹp trai. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 187.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8e8efa21-7238-45b3-9666-dad893fed82c"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “人民广场” có nghĩa là gì?",
+      "options": [
+        "Siêu thị",
+        "Cô, tiểu thư",
+        "Bao nhiêu",
+        "Quảng trường Nhân dân"
+      ],
+      "accepted": [
+        "Quảng trường Nhân dân"
+      ],
+      "explanation": "人民广场 đọc là Rénmín Guǎngchǎng, nghĩa là Quảng trường Nhân dân. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 188.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "952a3d25-b077-4e5a-a06d-cd0cec6c53cc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “Rénmín Guǎngchǎng” và nghĩa “Quảng trường Nhân dân”.",
+      "options": [
+        "人民广场",
+        "师傅",
+        "电影院",
+        "近"
+      ],
+      "accepted": [
+        "人民广场"
+      ],
+      "explanation": "人民广场 đọc là Rénmín Guǎngchǎng, nghĩa là Quảng trường Nhân dân. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 188.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "952a3d25-b077-4e5a-a06d-cd0cec6c53cc"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “学校” có nghĩa là gì?",
+      "options": [
+        "Cô gái",
+        "Tìm, trả lại tiền thừa",
+        "Công ty",
+        "Trường học"
+      ],
+      "accepted": [
+        "Trường học"
+      ],
+      "explanation": "学校 đọc là xuéxiào, nghĩa là Trường học. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 189.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8f437e8f-c8cf-4769-b839-2790f8068639"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “xuéxiào” và nghĩa “Trường học”.",
+      "options": [
+        "学校",
+        "上午",
+        "不客气",
+        "钱"
+      ],
+      "accepted": [
+        "学校"
+      ],
+      "explanation": "学校 đọc là xuéxiào, nghĩa là Trường học. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 189.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "8f437e8f-c8cf-4769-b839-2790f8068639"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “公司” có nghĩa là gì?",
+      "options": [
+        "Sáng sớm",
+        "Rạp chiếu phim",
+        "Công ty",
+        "Cô gái trẻ (thân mật)"
+      ],
+      "accepted": [
+        "Công ty"
+      ],
+      "explanation": "公司 đọc là gōngsī, nghĩa là Công ty. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 190.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "346c4089-36ac-4e4f-884e-b755844eb55a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “gōngsī” và nghĩa “Công ty”.",
+      "options": [
+        "姑娘",
+        "司机",
+        "公司",
+        "少"
+      ],
+      "accepted": [
+        "公司"
+      ],
+      "explanation": "公司 đọc là gōngsī, nghĩa là Công ty. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 190.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "346c4089-36ac-4e4f-884e-b755844eb55a"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “医院” có nghĩa là gì?",
+      "options": [
+        "Ít",
+        "Buổi tối",
+        "Quảng trường Nhân dân",
+        "Bệnh viện"
+      ],
+      "accepted": [
+        "Bệnh viện"
+      ],
+      "explanation": "医院 đọc là yīyuàn, nghĩa là Bệnh viện. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 191.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b254810c-5c1e-471a-8e53-b8e70bc5156f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “yīyuàn” và nghĩa “Bệnh viện”.",
+      "options": [
+        "医院",
+        "不客气",
+        "小姐姐",
+        "中午"
+      ],
+      "accepted": [
+        "医院"
+      ],
+      "explanation": "医院 đọc là yīyuàn, nghĩa là Bệnh viện. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 191.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "b254810c-5c1e-471a-8e53-b8e70bc5156f"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “超市” có nghĩa là gì?",
+      "options": [
+        "Cách, cách xa",
+        "Đi",
+        "Siêu thị",
+        "Hiểu, hiểu rõ"
+      ],
+      "accepted": [
+        "Siêu thị"
+      ],
+      "explanation": "超市 đọc là chāoshì, nghĩa là Siêu thị. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 192.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5238ca8d-d97e-4b5b-8c2a-72c4a6d791af"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “chāoshì” và nghĩa “Siêu thị”.",
+      "options": [
+        "姑娘",
+        "再见",
+        "不用谢",
+        "超市"
+      ],
+      "accepted": [
+        "超市"
+      ],
+      "explanation": "超市 đọc là chāoshì, nghĩa là Siêu thị. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 192.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "5238ca8d-d97e-4b5b-8c2a-72c4a6d791af"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “宿舍” có nghĩa là gì?",
+      "options": [
+        "Cảm ơn, biết ơn",
+        "Ký túc xá",
+        "Gần",
+        "Cô gái trẻ (thân mật)"
+      ],
+      "accepted": [
+        "Ký túc xá"
+      ],
+      "explanation": "宿舍 đọc là sùshè, nghĩa là Ký túc xá. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 193.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f6fd0dfe-844f-4097-9ebd-b848f6041130"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “sùshè” và nghĩa “Ký túc xá”.",
+      "options": [
+        "远",
+        "晚上",
+        "美女",
+        "宿舍"
+      ],
+      "accepted": [
+        "宿舍"
+      ],
+      "explanation": "宿舍 đọc là sùshè, nghĩa là Ký túc xá. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 193.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "f6fd0dfe-844f-4097-9ebd-b848f6041130"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “电影院” có nghĩa là gì?",
+      "options": [
+        "Siêu thị",
+        "Công ty",
+        "Rạp chiếu phim",
+        "Quý cô, quý bà"
+      ],
+      "accepted": [
+        "Rạp chiếu phim"
+      ],
+      "explanation": "电影院 đọc là diànyǐngyuàn, nghĩa là Rạp chiếu phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 194.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "549bcf1e-d706-4f89-a3d8-ebd099eaa6e9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “diànyǐngyuàn” và nghĩa “Rạp chiếu phim”.",
+      "options": [
+        "学校",
+        "电影院",
+        "美女",
+        "钱"
+      ],
+      "accepted": [
+        "电影院"
+      ],
+      "explanation": "电影院 đọc là diànyǐngyuàn, nghĩa là Rạp chiếu phim. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 194.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "549bcf1e-d706-4f89-a3d8-ebd099eaa6e9"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “感谢” có nghĩa là gì?",
+      "options": [
+        "Em gái",
+        "Tạm biệt",
+        "Đến",
+        "Cảm ơn, biết ơn"
+      ],
+      "accepted": [
+        "Cảm ơn, biết ơn"
+      ],
+      "explanation": "感谢 đọc là gǎnxiè, nghĩa là Cảm ơn, biết ơn. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 195.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6b7153eb-6163-48cf-81df-7c8a1df28e28"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “gǎnxiè” và nghĩa “Cảm ơn, biết ơn”.",
+      "options": [
+        "学校",
+        "感谢",
+        "哪里",
+        "医院"
+      ],
+      "accepted": [
+        "感谢"
+      ],
+      "explanation": "感谢 đọc là gǎnxiè, nghĩa là Cảm ơn, biết ơn. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 195.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "6b7153eb-6163-48cf-81df-7c8a1df28e28"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “不用谢” có nghĩa là gì?",
+      "options": [
+        "Sáng sớm",
+        "Không cần cảm ơn",
+        "Tiền",
+        "Tài xế"
+      ],
+      "accepted": [
+        "Không cần cảm ơn"
+      ],
+      "explanation": "不用谢 đọc là bú yòng xiè, nghĩa là Không cần cảm ơn. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 196.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "422c1494-f31e-4462-9e86-3cdaf0ca0c35"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “bú yòng xiè” và nghĩa “Không cần cảm ơn”.",
+      "options": [
+        "人民",
+        "司机",
+        "早上",
+        "不用谢"
+      ],
+      "accepted": [
+        "不用谢"
+      ],
+      "explanation": "不用谢 đọc là bú yòng xiè, nghĩa là Không cần cảm ơn. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 196.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "422c1494-f31e-4462-9e86-3cdaf0ca0c35"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Trong bài học, “客气” có nghĩa là gì?",
+      "options": [
+        "Cách, cách xa",
+        "Bao nhiêu",
+        "Khách sáo, lịch sự",
+        "Quý cô, quý bà"
+      ],
+      "accepted": [
+        "Khách sáo, lịch sự"
+      ],
+      "explanation": "客气 đọc là kèqi, nghĩa là Khách sáo, lịch sự. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 197.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "32ae39bd-ada9-4f34-b3cd-10ee0bae6b59"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn Hán tự có phiên âm “kèqi” và nghĩa “Khách sáo, lịch sự”.",
+      "options": [
+        "少",
+        "晚上",
+        "中午",
+        "客气"
+      ],
+      "accepted": [
+        "客气"
+      ],
+      "explanation": "客气 đọc là kèqi, nghĩa là Khách sáo, lịch sự. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 197.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "32ae39bd-ada9-4f34-b3cd-10ee0bae6b59"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn phiên âm đúng của “不用谢” với nghĩa “Không cần cảm ơn”.",
+      "options": [
+        "gǎnxiè",
+        "bú yòng xiè",
+        "nǎr",
+        "bú kèqi"
+      ],
+      "accepted": [
+        "bú yòng xiè"
+      ],
+      "explanation": "不用谢 đọc là bú yòng xiè, nghĩa là Không cần cảm ơn. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 196.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "422c1494-f31e-4462-9e86-3cdaf0ca0c35"
+    },
+    {
+      "type": "choice",
+      "title": "Từ mới bài 4",
+      "prompt": "Chọn phiên âm đúng của “客气” với nghĩa “Khách sáo, lịch sự”.",
+      "options": [
+        "dào",
+        "mèimei",
+        "kèqi",
+        "xuéxiào"
+      ],
+      "accepted": [
+        "kèqi"
+      ],
+      "explanation": "客气 đọc là kèqi, nghĩa là Khách sáo, lịch sự. Nguồn: danh sách đầy đủ người dùng gửi, bài 4, dòng 197.",
+      "difficulty": "easy",
+      "approved": true,
+      "vocabulary_id": "32ae39bd-ada9-4f34-b3cd-10ee0bae6b59"
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “你去哪儿？” có nghĩa là gì?",
+      "options": [
+        "Buổi chiều bạn có đến không?",
+        "Tôi đi đến Quảng trường Nhân dân.",
+        "Tôi hiểu rồi.",
+        "Bạn đi đâu?"
+      ],
+      "accepted": [
+        "Bạn đi đâu?"
+      ],
+      "explanation": "你去哪儿？ — Bạn đi đâu? Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bạn đi đâu?”.",
+      "options": [
+        "我下午去公司。",
+        "你去哪儿？",
+        "她上午去学校。",
+        "妹妹去宿舍。"
+      ],
+      "accepted": [
+        "你去哪儿？"
+      ],
+      "explanation": "你去哪儿？ — Bạn đi đâu? Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “我去人民广场。” có nghĩa là gì?",
+      "options": [
+        "Trường học ở rất gần công ty.",
+        "Xin hỏi, siêu thị có xa trường học không?",
+        "Tôi đi đến Quảng trường Nhân dân.",
+        "Không có gì!"
+      ],
+      "accepted": [
+        "Tôi đi đến Quảng trường Nhân dân."
+      ],
+      "explanation": "我去人民广场。 — Tôi đi đến Quảng trường Nhân dân. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi đi đến Quảng trường Nhân dân.”.",
+      "options": [
+        "他晚上去电影院。",
+        "我去人民广场。",
+        "你去哪儿？",
+        "我明白了。"
+      ],
+      "accepted": [
+        "我去人民广场。"
+      ],
+      "explanation": "我去人民广场。 — Tôi đi đến Quảng trường Nhân dân. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “学校离公司很近。” có nghĩa là gì?",
+      "options": [
+        "Buổi sáng cô ấy đi đến trường.",
+        "Tôi có tiền.",
+        "Bao nhiêu tiền?",
+        "Trường học ở rất gần công ty."
+      ],
+      "accepted": [
+        "Trường học ở rất gần công ty."
+      ],
+      "explanation": "学校离公司很近。 — Trường học ở rất gần công ty. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Trường học ở rất gần công ty.”.",
+      "options": [
+        "我去找老师。",
+        "学校离公司很近。",
+        "你下午来吗？",
+        "我下午去公司。"
+      ],
+      "accepted": [
+        "学校离公司很近。"
+      ],
+      "explanation": "学校离公司很近。 — Trường học ở rất gần công ty. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “医院离学校很远。” có nghĩa là gì?",
+      "options": [
+        "Tôi có tiền.",
+        "Buổi chiều tôi đi đến công ty.",
+        "Tạm biệt thầy/cô!",
+        "Bệnh viện ở rất xa trường học."
+      ],
+      "accepted": [
+        "Bệnh viện ở rất xa trường học."
+      ],
+      "explanation": "医院离学校很远。 — Bệnh viện ở rất xa trường học. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bệnh viện ở rất xa trường học.”.",
+      "options": [
+        "医院离学校很远。",
+        "我下午去公司。",
+        "你下午来吗？",
+        "我去人民广场。"
+      ],
+      "accepted": [
+        "医院离学校很远。"
+      ],
+      "explanation": "医院离学校很远。 — Bệnh viện ở rất xa trường học. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “请问，超市离学校远吗？” có nghĩa là gì?",
+      "options": [
+        "Buổi sáng cô ấy đi đến trường.",
+        "Bệnh viện ở rất xa trường học.",
+        "Bao nhiêu tiền?",
+        "Xin hỏi, siêu thị có xa trường học không?"
+      ],
+      "accepted": [
+        "Xin hỏi, siêu thị có xa trường học không?"
+      ],
+      "explanation": "请问，超市离学校远吗？ — Xin hỏi, siêu thị có xa trường học không? Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Xin hỏi, siêu thị có xa trường học không?”.",
+      "options": [
+        "我明白了。",
+        "你去哪儿？",
+        "请问，超市离学校远吗？",
+        "她上午去学校。"
+      ],
+      "accepted": [
+        "请问，超市离学校远吗？"
+      ],
+      "explanation": "请问，超市离学校远吗？ — Xin hỏi, siêu thị có xa trường học không? Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “我知道了。” có nghĩa là gì?",
+      "options": [
+        "Buổi chiều bạn có đến không?",
+        "Tôi hiểu rồi.",
+        "Tôi biết rồi.",
+        "Tạm biệt thầy/cô!"
+      ],
+      "accepted": [
+        "Tôi biết rồi."
+      ],
+      "explanation": "我知道了。 — Tôi biết rồi. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi biết rồi.”.",
+      "options": [
+        "我知道了。",
+        "你去哪儿？",
+        "我去找老师。",
+        "学校离公司很近。"
+      ],
+      "accepted": [
+        "我知道了。"
+      ],
+      "explanation": "我知道了。 — Tôi biết rồi. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “我明白了。” có nghĩa là gì?",
+      "options": [
+        "Tôi hiểu rồi.",
+        "Bệnh viện ở rất xa trường học.",
+        "Trường học ở rất gần công ty.",
+        "Tạm biệt thầy/cô!"
+      ],
+      "accepted": [
+        "Tôi hiểu rồi."
+      ],
+      "explanation": "我明白了。 — Tôi hiểu rồi. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi hiểu rồi.”.",
+      "options": [
+        "我明白了。",
+        "请问，超市离学校远吗？",
+        "师傅，谢谢！",
+        "妹妹去宿舍。"
+      ],
+      "accepted": [
+        "我明白了。"
+      ],
+      "explanation": "我明白了。 — Tôi hiểu rồi. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “多少钱？” có nghĩa là gì?",
+      "options": [
+        "Bao nhiêu tiền?",
+        "Bệnh viện ở rất xa trường học.",
+        "Tôi biết rồi.",
+        "Cảm ơn bác tài!"
+      ],
+      "accepted": [
+        "Bao nhiêu tiền?"
+      ],
+      "explanation": "多少钱？ — Bao nhiêu tiền? Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Bao nhiêu tiền?”.",
+      "options": [
+        "我下午去公司。",
+        "学校离公司很近。",
+        "多少钱？",
+        "妹妹去宿舍。"
+      ],
+      "accepted": [
+        "多少钱？"
+      ],
+      "explanation": "多少钱？ — Bao nhiêu tiền? Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “十块钱。” có nghĩa là gì?",
+      "options": [
+        "Không có gì!",
+        "Buổi chiều bạn có đến không?",
+        "Mười đồng.",
+        "Bạn đi đâu?"
+      ],
+      "accepted": [
+        "Mười đồng."
+      ],
+      "explanation": "十块钱。 — Mười đồng. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Mười đồng.”.",
+      "options": [
+        "我去找老师。",
+        "她上午去学校。",
+        "十块钱。",
+        "我知道了。"
+      ],
+      "accepted": [
+        "十块钱。"
+      ],
+      "explanation": "十块钱。 — Mười đồng. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “师傅，谢谢！” có nghĩa là gì?",
+      "options": [
+        "Mười đồng.",
+        "Tôi đi đến Quảng trường Nhân dân.",
+        "Cảm ơn bác tài!",
+        "Tôi có tiền."
+      ],
+      "accepted": [
+        "Cảm ơn bác tài!"
+      ],
+      "explanation": "师傅，谢谢！ — Cảm ơn bác tài! Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Cảm ơn bác tài!”.",
+      "options": [
+        "师傅，谢谢！",
+        "你下午来吗？",
+        "不用谢！",
+        "我知道了。"
+      ],
+      "accepted": [
+        "师傅，谢谢！"
+      ],
+      "explanation": "师傅，谢谢！ — Cảm ơn bác tài! Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “不客气！” có nghĩa là gì?",
+      "options": [
+        "Tôi có tiền.",
+        "Mười đồng.",
+        "Không có gì!",
+        "Không cần cảm ơn!"
+      ],
+      "accepted": [
+        "Không có gì!"
+      ],
+      "explanation": "不客气！ — Không có gì! Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Không có gì!”.",
+      "options": [
+        "不客气！",
+        "我有钱。",
+        "我知道了。",
+        "我明白了。"
+      ],
+      "accepted": [
+        "不客气！"
+      ],
+      "explanation": "不客气！ — Không có gì! Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “再见，老师！” có nghĩa là gì?",
+      "options": [
+        "Buổi chiều tôi đi đến công ty.",
+        "Mười đồng.",
+        "Tôi đi đến Quảng trường Nhân dân.",
+        "Tạm biệt thầy/cô!"
+      ],
+      "accepted": [
+        "Tạm biệt thầy/cô!"
+      ],
+      "explanation": "再见，老师！ — Tạm biệt thầy/cô! Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tạm biệt thầy/cô!”.",
+      "options": [
+        "再见，老师！",
+        "师傅，谢谢！",
+        "他晚上去电影院。",
+        "我去找老师。"
+      ],
+      "accepted": [
+        "再见，老师！"
+      ],
+      "explanation": "再见，老师！ — Tạm biệt thầy/cô! Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “她上午去学校。” có nghĩa là gì?",
+      "options": [
+        "Bao nhiêu tiền?",
+        "Tôi đi tìm thầy/cô.",
+        "Cảm ơn bác tài!",
+        "Buổi sáng cô ấy đi đến trường."
+      ],
+      "accepted": [
+        "Buổi sáng cô ấy đi đến trường."
+      ],
+      "explanation": "她上午去学校。 — Buổi sáng cô ấy đi đến trường. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Buổi sáng cô ấy đi đến trường.”.",
+      "options": [
+        "我去人民广场。",
+        "她上午去学校。",
+        "医院离学校很远。",
+        "请问，超市离学校远吗？"
+      ],
+      "accepted": [
+        "她上午去学校。"
+      ],
+      "explanation": "她上午去学校。 — Buổi sáng cô ấy đi đến trường. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “我下午去公司。” có nghĩa là gì?",
+      "options": [
+        "Tạm biệt thầy/cô!",
+        "Xin hỏi, siêu thị có xa trường học không?",
+        "Buổi chiều tôi đi đến công ty.",
+        "Bao nhiêu tiền?"
+      ],
+      "accepted": [
+        "Buổi chiều tôi đi đến công ty."
+      ],
+      "explanation": "我下午去公司。 — Buổi chiều tôi đi đến công ty. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Buổi chiều tôi đi đến công ty.”.",
+      "options": [
+        "再见，老师！",
+        "我下午去公司。",
+        "妹妹去宿舍。",
+        "我有钱。"
+      ],
+      "accepted": [
+        "我下午去公司。"
+      ],
+      "explanation": "我下午去公司。 — Buổi chiều tôi đi đến công ty. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “他晚上去电影院。” có nghĩa là gì?",
+      "options": [
+        "Không cần cảm ơn!",
+        "Không có gì!",
+        "Buổi tối anh ấy đi đến rạp chiếu phim.",
+        "Buổi sáng cô ấy đi đến trường."
+      ],
+      "accepted": [
+        "Buổi tối anh ấy đi đến rạp chiếu phim."
+      ],
+      "explanation": "他晚上去电影院。 — Buổi tối anh ấy đi đến rạp chiếu phim. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Buổi tối anh ấy đi đến rạp chiếu phim.”.",
+      "options": [
+        "她上午去学校。",
+        "我明白了。",
+        "我下午去公司。",
+        "他晚上去电影院。"
+      ],
+      "accepted": [
+        "他晚上去电影院。"
+      ],
+      "explanation": "他晚上去电影院。 — Buổi tối anh ấy đi đến rạp chiếu phim. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “妹妹去宿舍。” có nghĩa là gì?",
+      "options": [
+        "Bao nhiêu tiền?",
+        "Bạn đi đâu?",
+        "Em gái đi đến ký túc xá.",
+        "Bệnh viện ở rất xa trường học."
+      ],
+      "accepted": [
+        "Em gái đi đến ký túc xá."
+      ],
+      "explanation": "妹妹去宿舍。 — Em gái đi đến ký túc xá. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Em gái đi đến ký túc xá.”.",
+      "options": [
+        "十块钱。",
+        "我下午去公司。",
+        "妹妹去宿舍。",
+        "师傅，谢谢！"
+      ],
+      "accepted": [
+        "妹妹去宿舍。"
+      ],
+      "explanation": "妹妹去宿舍。 — Em gái đi đến ký túc xá. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “我去找老师。” có nghĩa là gì?",
+      "options": [
+        "Tạm biệt thầy/cô!",
+        "Tôi đi tìm thầy/cô.",
+        "Tôi có tiền.",
+        "Không cần cảm ơn!"
+      ],
+      "accepted": [
+        "Tôi đi tìm thầy/cô."
+      ],
+      "explanation": "我去找老师。 — Tôi đi tìm thầy/cô. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi đi tìm thầy/cô.”.",
+      "options": [
+        "我知道了。",
+        "不客气！",
+        "妹妹去宿舍。",
+        "我去找老师。"
+      ],
+      "accepted": [
+        "我去找老师。"
+      ],
+      "explanation": "我去找老师。 — Tôi đi tìm thầy/cô. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “你下午来吗？” có nghĩa là gì?",
+      "options": [
+        "Trường học ở rất gần công ty.",
+        "Không cần cảm ơn!",
+        "Buổi chiều tôi đi đến công ty.",
+        "Buổi chiều bạn có đến không?"
+      ],
+      "accepted": [
+        "Buổi chiều bạn có đến không?"
+      ],
+      "explanation": "你下午来吗？ — Buổi chiều bạn có đến không? Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Buổi chiều bạn có đến không?”.",
+      "options": [
+        "我有钱。",
+        "不用谢！",
+        "再见，老师！",
+        "你下午来吗？"
+      ],
+      "accepted": [
+        "你下午来吗？"
+      ],
+      "explanation": "你下午来吗？ — Buổi chiều bạn có đến không? Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “我有钱。” có nghĩa là gì?",
+      "options": [
+        "Không cần cảm ơn!",
+        "Mười đồng.",
+        "Buổi chiều tôi đi đến công ty.",
+        "Tôi có tiền."
+      ],
+      "accepted": [
+        "Tôi có tiền."
+      ],
+      "explanation": "我有钱。 — Tôi có tiền. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Tôi có tiền.”.",
+      "options": [
+        "我有钱。",
+        "再见，老师！",
+        "十块钱。",
+        "我明白了。"
+      ],
+      "accepted": [
+        "我有钱。"
+      ],
+      "explanation": "我有钱。 — Tôi có tiền. Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Câu “不用谢！” có nghĩa là gì?",
+      "options": [
+        "Không cần cảm ơn!",
+        "Bao nhiêu tiền?",
+        "Tôi có tiền.",
+        "Tôi biết rồi."
+      ],
+      "accepted": [
+        "Không cần cảm ơn!"
+      ],
+      "explanation": "不用谢！ — Không cần cảm ơn! Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    },
+    {
+      "type": "choice",
+      "title": "Vận dụng từ bài 1–4",
+      "prompt": "Vận dụng: Chọn câu tiếng Trung phù hợp với nghĩa “Không cần cảm ơn!”.",
+      "options": [
+        "多少钱？",
+        "不用谢！",
+        "我有钱。",
+        "我去找老师。"
+      ],
+      "accepted": [
+        "不用谢！"
+      ],
+      "explanation": "不用谢！ — Không cần cảm ơn! Câu dùng từ trong danh sách bài 1–4.",
+      "difficulty": "medium",
+      "approved": true
+    }
+  ],
+  "speaking": [
+    {
+      "practice": "speaking",
+      "text": "你去哪儿？",
+      "meaning": "Bạn đi đâu?",
+      "answer_reference": "我去学校。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "人民广场远吗？",
+      "meaning": "Quảng trường Nhân dân có xa không?",
+      "answer_reference": "人民广场很近。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "学校离公司远吗？",
+      "meaning": "Trường học có xa công ty không?",
+      "answer_reference": "学校离公司很近。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": true
+    },
+    {
+      "practice": "speaking",
+      "text": "你去找谁？",
+      "meaning": "Bạn đi tìm ai?",
+      "answer_reference": "我去找老师。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "超市离学校近吗？",
+      "meaning": "Siêu thị có gần trường không?",
+      "answer_reference": "超市离学校很近。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你上午去哪儿？",
+      "meaning": "Buổi sáng bạn đi đâu?",
+      "answer_reference": "我上午去学校。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你下午去公司吗？",
+      "meaning": "Buổi chiều bạn đến công ty phải không?",
+      "answer_reference": "我下午去公司。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你晚上去电影院吗？",
+      "meaning": "Buổi tối bạn đến rạp chiếu phim phải không?",
+      "answer_reference": "我晚上去电影院。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "多少钱？",
+      "meaning": "Bao nhiêu tiền?",
+      "answer_reference": "十块钱。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    },
+    {
+      "practice": "speaking",
+      "text": "你明白了吗？",
+      "meaning": "Bạn đã hiểu chưa?",
+      "answer_reference": "我明白了。",
+      "assessment_notes": "Trả lời đúng ý bằng từ đã học. Chấp nhận thông tin cá nhân và cách diễn đạt hợp lý; đáp án chỉ là ví dụ.",
+      "speaking_selected": false
+    }
+  ],
+  "activities": {
+    "topic": "Nơi đến và khoảng cách",
+    "tasks": [
+      {
+        "type": "order",
+        "prompt": "Bạn đi đâu?",
+        "tokens": [
+          "你",
+          "去",
+          "哪儿",
+          "？"
+        ],
+        "answer": "你去哪儿？",
+        "explanation": "你去哪儿？ — Bạn đi đâu?"
+      },
+      {
+        "type": "fill",
+        "prompt": "你___哪儿？ (Bạn đi đâu?)",
+        "answer": "去",
+        "explanation": "Câu hoàn chỉnh: 你去哪儿？ — Bạn đi đâu?"
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi đi đến Quảng trường Nhân dân.",
+        "tokens": [
+          "我",
+          "去",
+          "人民广场",
+          "。"
+        ],
+        "answer": "我去人民广场。",
+        "explanation": "我去人民广场。 — Tôi đi đến Quảng trường Nhân dân."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___人民广场。 (Tôi đi đến Quảng trường Nhân dân.)",
+        "answer": "去",
+        "explanation": "Câu hoàn chỉnh: 我去人民广场。 — Tôi đi đến Quảng trường Nhân dân."
+      },
+      {
+        "type": "order",
+        "prompt": "Trường học ở rất gần công ty.",
+        "tokens": [
+          "学校",
+          "离",
+          "公司",
+          "很",
+          "近",
+          "。"
+        ],
+        "answer": "学校离公司很近。",
+        "explanation": "学校离公司很近。 — Trường học ở rất gần công ty."
+      },
+      {
+        "type": "fill",
+        "prompt": "___离公司很近。 (Trường học ở rất gần công ty.)",
+        "answer": "学校",
+        "explanation": "Câu hoàn chỉnh: 学校离公司很近。 — Trường học ở rất gần công ty."
+      },
+      {
+        "type": "order",
+        "prompt": "Bệnh viện ở rất xa trường học.",
+        "tokens": [
+          "医院",
+          "离",
+          "学校",
+          "很",
+          "远",
+          "。"
+        ],
+        "answer": "医院离学校很远。",
+        "explanation": "医院离学校很远。 — Bệnh viện ở rất xa trường học."
+      },
+      {
+        "type": "fill",
+        "prompt": "___离学校很远。 (Bệnh viện ở rất xa trường học.)",
+        "answer": "医院",
+        "explanation": "Câu hoàn chỉnh: 医院离学校很远。 — Bệnh viện ở rất xa trường học."
+      },
+      {
+        "type": "order",
+        "prompt": "Xin hỏi, siêu thị có xa trường học không?",
+        "tokens": [
+          "请问",
+          "，",
+          "超市",
+          "离",
+          "学校",
+          "远",
+          "吗",
+          "？"
+        ],
+        "answer": "请问，超市离学校远吗？",
+        "explanation": "请问，超市离学校远吗？ — Xin hỏi, siêu thị có xa trường học không?"
+      },
+      {
+        "type": "fill",
+        "prompt": "___，超市离学校远吗？ (Xin hỏi, siêu thị có xa trường học không?)",
+        "answer": "请问",
+        "explanation": "Câu hoàn chỉnh: 请问，超市离学校远吗？ — Xin hỏi, siêu thị có xa trường học không?"
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi biết rồi.",
+        "tokens": [
+          "我",
+          "知道",
+          "了",
+          "。"
+        ],
+        "answer": "我知道了。",
+        "explanation": "我知道了。 — Tôi biết rồi."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___了。 (Tôi biết rồi.)",
+        "answer": "知道",
+        "explanation": "Câu hoàn chỉnh: 我知道了。 — Tôi biết rồi."
+      },
+      {
+        "type": "order",
+        "prompt": "Tôi hiểu rồi.",
+        "tokens": [
+          "我",
+          "明白",
+          "了",
+          "。"
+        ],
+        "answer": "我明白了。",
+        "explanation": "我明白了。 — Tôi hiểu rồi."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___了。 (Tôi hiểu rồi.)",
+        "answer": "明白",
+        "explanation": "Câu hoàn chỉnh: 我明白了。 — Tôi hiểu rồi."
+      },
+      {
+        "type": "order",
+        "prompt": "Mười đồng.",
+        "tokens": [
+          "十",
+          "块",
+          "钱",
+          "。"
+        ],
+        "answer": "十块钱。",
+        "explanation": "十块钱。 — Mười đồng."
+      },
+      {
+        "type": "fill",
+        "prompt": "___块钱。 (Mười đồng.)",
+        "answer": "十",
+        "explanation": "Câu hoàn chỉnh: 十块钱。 — Mười đồng."
+      },
+      {
+        "type": "order",
+        "prompt": "Buổi sáng cô ấy đi đến trường.",
+        "tokens": [
+          "她",
+          "上午",
+          "去",
+          "学校",
+          "。"
+        ],
+        "answer": "她上午去学校。",
+        "explanation": "她上午去学校。 — Buổi sáng cô ấy đi đến trường."
+      },
+      {
+        "type": "fill",
+        "prompt": "她___去学校。 (Buổi sáng cô ấy đi đến trường.)",
+        "answer": "上午",
+        "explanation": "Câu hoàn chỉnh: 她上午去学校。 — Buổi sáng cô ấy đi đến trường."
+      },
+      {
+        "type": "order",
+        "prompt": "Buổi chiều tôi đi đến công ty.",
+        "tokens": [
+          "我",
+          "下午",
+          "去",
+          "公司",
+          "。"
+        ],
+        "answer": "我下午去公司。",
+        "explanation": "我下午去公司。 — Buổi chiều tôi đi đến công ty."
+      },
+      {
+        "type": "fill",
+        "prompt": "我___去公司。 (Buổi chiều tôi đi đến công ty.)",
+        "answer": "下午",
+        "explanation": "Câu hoàn chỉnh: 我下午去公司。 — Buổi chiều tôi đi đến công ty."
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Bạn đi đâu?”: 多少钱？",
+        "answer": "你去哪儿？",
+        "options": [
+          "你去哪儿？",
+          "多少钱？",
+          "我下午去公司。"
+        ],
+        "explanation": "你去哪儿？ — Bạn đi đâu?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你去哪儿？",
+        "answer": "我去学校。",
+        "options": [
+          "我去学校。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn đi đâu? Đáp lại: 我去学校。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi đi đến Quảng trường Nhân dân.”: 十块钱。",
+        "answer": "我去人民广场。",
+        "options": [
+          "我去人民广场。",
+          "十块钱。",
+          "他晚上去电影院。"
+        ],
+        "explanation": "我去人民广场。 — Tôi đi đến Quảng trường Nhân dân."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "人民广场远吗？",
+        "answer": "人民广场很近。",
+        "options": [
+          "人民广场很近。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Quảng trường Nhân dân có xa không? Đáp lại: 人民广场很近。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Trường học ở rất gần công ty.”: 师傅，谢谢！",
+        "answer": "学校离公司很近。",
+        "options": [
+          "学校离公司很近。",
+          "师傅，谢谢！",
+          "妹妹去宿舍。"
+        ],
+        "explanation": "学校离公司很近。 — Trường học ở rất gần công ty."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "学校离公司远吗？",
+        "answer": "学校离公司很近。",
+        "options": [
+          "学校离公司很近。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Trường học có xa công ty không? Đáp lại: 学校离公司很近。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Bệnh viện ở rất xa trường học.”: 不客气！",
+        "answer": "医院离学校很远。",
+        "options": [
+          "医院离学校很远。",
+          "不客气！",
+          "我去找老师。"
+        ],
+        "explanation": "医院离学校很远。 — Bệnh viện ở rất xa trường học."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你去找谁？",
+        "answer": "我去找老师。",
+        "options": [
+          "我去找老师。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn đi tìm ai? Đáp lại: 我去找老师。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Xin hỏi, siêu thị có xa trường học không?”: 再见，老师！",
+        "answer": "请问，超市离学校远吗？",
+        "options": [
+          "请问，超市离学校远吗？",
+          "再见，老师！",
+          "你下午来吗？"
+        ],
+        "explanation": "请问，超市离学校远吗？ — Xin hỏi, siêu thị có xa trường học không?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "超市离学校近吗？",
+        "answer": "超市离学校很近。",
+        "options": [
+          "超市离学校很近。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Siêu thị có gần trường không? Đáp lại: 超市离学校很近。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi biết rồi.”: 她上午去学校。",
+        "answer": "我知道了。",
+        "options": [
+          "我知道了。",
+          "她上午去学校。",
+          "我有钱。"
+        ],
+        "explanation": "我知道了。 — Tôi biết rồi."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你上午去哪儿？",
+        "answer": "我上午去学校。",
+        "options": [
+          "我上午去学校。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Buổi sáng bạn đi đâu? Đáp lại: 我上午去学校。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Tôi hiểu rồi.”: 我下午去公司。",
+        "answer": "我明白了。",
+        "options": [
+          "我明白了。",
+          "我下午去公司。",
+          "不用谢！"
+        ],
+        "explanation": "我明白了。 — Tôi hiểu rồi."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你下午去公司吗？",
+        "answer": "我下午去公司。",
+        "options": [
+          "我下午去公司。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Buổi chiều bạn đến công ty phải không? Đáp lại: 我下午去公司。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Bao nhiêu tiền?”: 他晚上去电影院。",
+        "answer": "多少钱？",
+        "options": [
+          "多少钱？",
+          "他晚上去电影院。",
+          "你去哪儿？"
+        ],
+        "explanation": "多少钱？ — Bao nhiêu tiền?"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你晚上去电影院吗？",
+        "answer": "我晚上去电影院。",
+        "options": [
+          "我晚上去电影院。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Buổi tối bạn đến rạp chiếu phim phải không? Đáp lại: 我晚上去电影院。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Mười đồng.”: 妹妹去宿舍。",
+        "answer": "十块钱。",
+        "options": [
+          "十块钱。",
+          "妹妹去宿舍。",
+          "我去人民广场。"
+        ],
+        "explanation": "十块钱。 — Mười đồng."
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "多少钱？",
+        "answer": "十块钱。",
+        "options": [
+          "十块钱。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bao nhiêu tiền? Đáp lại: 十块钱。"
+      },
+      {
+        "type": "fix",
+        "prompt": "Sửa câu cho đúng nghĩa “Cảm ơn bác tài!”: 我去找老师。",
+        "answer": "师傅，谢谢！",
+        "options": [
+          "师傅，谢谢！",
+          "我去找老师。",
+          "学校离公司很近。"
+        ],
+        "explanation": "师傅，谢谢！ — Cảm ơn bác tài!"
+      },
+      {
+        "type": "dialogue",
+        "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
+        "speech": "你明白了吗？",
+        "answer": "我明白了。",
+        "options": [
+          "我明白了。",
+          "你好！",
+          "您好！"
+        ],
+        "explanation": "Bạn đã hiểu chưa? Đáp lại: 我明白了。"
+      }
+    ]
+  },
+  "chat": {
+    "enabled": true,
+    "scenario_id": "going",
+    "goal": "Trò chuyện về nơi đến và khoảng cách; chỉ dùng từ đã học từ bài 1 đến bài 4.",
+    "opening": "你去哪儿？",
+    "translation": "Bạn đi đâu?",
+    "required_words": [
+      "小姐",
+      "师傅",
+      "去",
+      "哪儿",
+      "哪里",
+      "人民",
+      "广场",
+      "知道",
+      "明白",
+      "了",
+      "远",
+      "近",
+      "离",
+      "找",
+      "多少",
+      "钱",
+      "块",
+      "多",
+      "少",
+      "再"
+    ],
+    "max_turns": 10
+  },
+  "street": {
+    "enabled": true,
+    "place_id": "park",
+    "missions": [
+      {
+        "id": "vocab-4-1",
+        "title": "Nghe hiểu 1",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "你去哪儿？",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Bạn đi đâu?"
+          },
+          {
+            "id": "c2",
+            "label": "Bao nhiêu tiền?"
+          },
+          {
+            "id": "c3",
+            "label": "Buổi chiều tôi đi đến công ty."
+          }
+        ],
+        "answer": "c1",
+        "feedback": "你去哪儿？ — Bạn đi đâu?"
+      },
+      {
+        "id": "vocab-4-2",
+        "title": "Nghe hiểu 2",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "我知道了。",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Buổi sáng cô ấy đi đến trường."
+          },
+          {
+            "id": "c2",
+            "label": "Tôi biết rồi."
+          },
+          {
+            "id": "c3",
+            "label": "Tôi có tiền."
+          }
+        ],
+        "answer": "c2",
+        "feedback": "我知道了。 — Tôi biết rồi."
+      },
+      {
+        "id": "vocab-4-3",
+        "title": "Nghe hiểu 3",
+        "instruction": "Nghe câu tiếng Trung rồi chọn đúng nghĩa.",
+        "speech": "不客气！",
+        "type": "choice",
+        "options": [
+          {
+            "id": "c1",
+            "label": "Bệnh viện ở rất xa trường học."
+          },
+          {
+            "id": "c2",
+            "label": "Buổi chiều bạn có đến không?"
+          },
+          {
+            "id": "c3",
+            "label": "Không có gì!"
+          }
+        ],
+        "answer": "c3",
+        "feedback": "不客气！ — Không có gì!"
+      }
+    ]
+  }
+}

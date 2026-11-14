@@ -29,6 +29,8 @@ export function parseChineseText(raw,{destination='general'}={}) {
   if (section === 'vocabulary' && cells.length >= 3) {
    const [hanzi,pinyin,meaning,part_of_speech='',example='',example_pinyin='',example_meaning='',audio_url='',image_url='',mnemonic='',radicals='',group='main'] = cells;
    data = {hanzi,pinyin,meaning,part_of_speech,example,example_pinyin,example_meaning,audio_url,image_url,mnemonic,radicals,group};
+   const compactGroup={'main':'main','extended':'extended','Từ mới':'main','Từ mở rộng':'extended','Số đếm':'extended'}[cells[3]];
+   if(cells.length===4&&compactGroup){data.group=compactGroup;data.part_of_speech='';}
   } else if (section === 'question' && cells.length >= 4) {
    const [type,prompt,options,accepted,explanation='',audio_url='',difficulty='medium',targets=''] = cells;
    data = {type,prompt:chineseQuestionPrompt(prompt),options:options.split(';;').filter(Boolean),targets:targets.split(';;').filter(Boolean),accepted:accepted.split(';;').filter(Boolean),explanation,audio_url,difficulty,approved:false};

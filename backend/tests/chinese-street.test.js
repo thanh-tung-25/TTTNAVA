@@ -77,3 +77,8 @@ it('supports teacher pause and gives a truthful empty state for other levels',as
  expect((await student.get(base+'/lessons/'+lesson)).status).toBe(404);expect((await admin.get(base+'/lessons/'+lesson)).status).toBe(200);
  expect((await student.get(base+'?level=9')).status).toBe(200);expect((await student.get(base+'?level=10')).status).toBe(400);
 });
+it('rejects future words and keeps only learned building labels in the map',async()=>{
+ const config=payload(await detail(admin));config.missions[0].speech='请问，蛋糕店在哪儿？';
+ const r=await admin.put(base+'/lessons/'+lesson).send(config);expect(r.status).toBe(400);expect(r.body.error.code).toBe('STREET_VOCABULARY_SCOPE');
+ const labels=(await detail()).place_hanzi;expect(labels.bank).toBe('中国银行');expect(labels.bakery).toBe('');expect(labels.park).toBe('');
+});

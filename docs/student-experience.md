@@ -1,6 +1,6 @@
 # Nâng cấp trải nghiệm học sinh
 
-Phạm vi được yêu cầu: trang chủ cá nhân hóa, điều hướng chung, buổi học ngắn, ôn và tiến bộ theo dữ liệu thật, thành tích/bạn đồng hành/vật phẩm, thử thách nhóm và không đồng thời, hoạt động từng môn, lưu nháp/cài đặt, bài trải nghiệm, giao bài và phụ huynh liên kết có xác nhận.
+Phạm vi được yêu cầu: trang chủ cá nhân hóa, điều hướng chung, buổi học ngắn, ôn và tiến bộ theo dữ liệu thật, thành tích/bạn đồng hành/vật phẩm, hoạt động từng môn, lưu nháp/cài đặt, bài trải nghiệm, giao bài và phụ huynh liên kết có xác nhận.
 
 Các lối vào:
 
@@ -8,7 +8,9 @@ Các lối vào:
 - **Học hôm nay**: chọn 5/10/15 phút, bài đang học trên lớp, lượt khám phá 5 câu, hoặc ôn lỗi. Số câu phụ thuộc nội dung đã xuất bản; thời lượng là lựa chọn ước lượng, không phải bộ đếm ép học sinh.
 - **Tiến bộ**: theo chủ đề/bộ từ. Nhãn “vững” cần đạt ít nhất 80% trong hai ngày khác nhau. Lịch ôn là quy tắc đơn giản, chưa phải mô hình đo năng lực được chuẩn hóa.
 - **Bài kiểm tra**: đi thẳng đến kiểm tra chủ đề/học kì/cả năm của lớp đang học, hoặc bài kiểm tra Tiếng Trung. Các luồng thử thách tuần, đấu bạn và Robot đã được gỡ bỏ cả giao diện và API.
-- **Cá nhân**: bạn đồng hành, huy hiệu, vật phẩm, bài viết riêng, cài đặt chữ/giọng đọc/hiệu ứng và liên kết phụ huynh. Cấp bạn đồng hành tăng mỗi 5 buổi học cá nhân hoàn thành trên toàn tài khoản.
+- **Cá nhân**: màn hình đầu chỉ có thẻ tài khoản, bốn mục “Cài đặt học”, “Thành tích & trang trí”, “Bài viết đã lưu”, “Liên kết phụ huynh” và hai liên kết chữ đến lịch sử/đổi khóa. Không lặp danh sách buổi học gần đây hoặc trải toàn bộ biểu mẫu, vật phẩm trên trang. Mỗi mục mở bảng chi tiết, là hộp thoại ở máy tính và bảng từ dưới lên ở điện thoại, đóng bằng nút hoặc Escape và trả lại vị trí bàn phím.
+- Cài đặt học chỉ lưu thời lượng, cỡ chữ và tốc độ đọc. Tên bạn đồng hành, hiệu ứng và vật phẩm nằm trong Trang trí; lưu một nhóm không ghi đè nhóm còn lại. Cấp bạn đồng hành tăng mỗi 5 buổi học hoàn thành trên toàn tài khoản. Vật phẩm dùng số dư ví chung trong bảng đổi vật phẩm; thanh đầu trang vẫn hiển thị kim cương theo hệ đang học.
+- Dữ liệu thành tích/vật phẩm và bài viết được tải khi mở mục tương ứng. Yêu cầu phụ huynh chờ xác nhận vẫn báo ngay trên hàng “Liên kết phụ huynh”. Đóng bảng bài viết giữ bản nháp của thẻ trình duyệt, chờ các lần lưu đang chạy; mở lại có thể tiếp tục viết. API lưu và kiểm tra phiên bản bài viết giữ nguyên.
 - Admin: **Giao bài & phản hồi**, chọn khóa, học sinh thuộc phạm vi quản lý, bộ câu hỏi hoặc bài viết; xem bài đã nộp, nhận xét và cho điểm. Có số liệu sử dụng buổi học cá nhân trong phạm vi được quản lý.
 - Phụ huynh: đăng ký tại cùng trang Gmail, chọn “Phụ huynh”. Học sinh tạo mã ghép trong Cá nhân, phụ huynh nhập mã, học sinh đồng ý rồi báo cáo mới mở. Hai bên có thể thu hồi liên kết. Mã ghép không phải link mời đăng ký.
 - Khách: `/pages/demo/`, 5 câu minh họa tự biên soạn, không mở ngân hàng khóa học và không ghi thành tích tài khoản.

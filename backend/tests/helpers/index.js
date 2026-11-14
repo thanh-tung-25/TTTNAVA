@@ -104,38 +104,3 @@ export async function topicWithEnoughQuestions() {
   if (!rows[0]) throw new Error('Không có chủ đề đủ câu hỏi cho bài kiểm thử');
   return rows[0].id;
 }
-
-export async function forceChallengeStarted(challengeId) {
-  await query(
-    `UPDATE challenges SET started_at = DATE_SUB(UTC_TIMESTAMP(3), INTERVAL 2 SECOND),
-       ends_at = DATE_ADD(UTC_TIMESTAMP(3), INTERVAL 300 SECOND) WHERE id = ?`,
-    [challengeId],
-  );
-}
-
-export async function forceChallengeEnded(challengeId) {
-  await query(
-    'UPDATE challenges SET ends_at = DATE_SUB(UTC_TIMESTAMP(3), INTERVAL 2 SECOND) WHERE id = ?',
-    [challengeId],
-  );
-}
-
-export async function ledgerFor(profileId, challengeId) {
-  return query(
-    `SELECT amount, reason FROM diamond_ledger
-     WHERE profile_id = ? AND ref_type = 'challenge' AND ref_id = ? ORDER BY id ASC`,
-    [profileId, challengeId],
-  );
-}
-
-export async function answerChallengeOnce(agent, challengeId, { correct = true } = {}) {
-  const state = await agent.get(`/api/v1/challenges/${challengeId}`);
-  const { myQuestion, myIndex } = state.body.data;
-  if (!myQuestion) throw new Error(`Không có câu hỏi ở vị trí ${myIndex}`);
-  const question = await questionFor(myQuestion.id);
-  const answer = correct ? correctClientAnswer(question) : wrongClientAnswer(question, myQuestion.options);
-  const response = await agent
-    .post(`/api/v1/challenges/${challengeId}/answers`)
-    .send({ index: myIndex, questionId: myQuestion.id, answer });
-  return { response, question };
-}

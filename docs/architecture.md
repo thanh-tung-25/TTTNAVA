@@ -36,7 +36,6 @@ Không có build step cho frontend. Mỗi trang là một HTML tĩnh, nạp modu
 
 Các miền lớn được tách thành module dưới 200 dòng. File `*-service.js` đóng vai trò facade re-export, ví dụ:
 
-- `challenge-service.js` → `challenge-lobby`, `challenge-actions`, `challenge-play`, `challenge-state`, `challenge-store`, `challenge-answer`, `challenge-robot`.
 - `practice-service.js` → `practice-state`, `practice-answer`, `practice-finish`, `practice-history`.
 - `exam-service.js` → `exam-constants`, `exam-state`, `exam-finalize`, `exam-history`.
 - `admin-service.js` → `admin-students`, `admin-questions`, `admin-question-write`.
@@ -64,7 +63,7 @@ Socket.IO dùng chung cookie, xác thực ở middleware `io.use`, tham gia room
 | Câu hỏi | `questions`, `question_options`, `question_answers`, `atomic_question_writes` |
 | Luyện tập | `practice_sessions`, `practice_questions`, `practice_answers` |
 | Thi thử | `exam_attempts`, `exam_questions`, `exam_answers` |
-| Thách đấu | `challenges`, `challenge_answers`, `challenge_rewards` |
+| Lịch sử thưởng cũ | `challenges`, `challenge_answers`, `challenge_rewards` |
 | Kim cương | `diamond_ledger` |
 | Hạ tầng | `schema_migrations`, `finish_guard` |
 
@@ -103,32 +102,9 @@ Socket.IO dùng chung cookie, xác thực ở middleware `io.use`, tham gia room
 4. `POST /exams/:id/submit` tính điểm, thưởng, trả toàn bộ đáp án/lời giải.
 5. Lịch sử thi hiển thị cả kim cương của từng lượt.
 
-## 8. Luồng thách đấu
+## 8. Điều hướng bài kiểm tra
 
-### Tạo trận
-
-- 1–1: nhập username đối thủ, chủ đề, thời lượng; lời mời có hạn 30 giây.
-- Robot: chọn chủ đề, độ khó, thời lượng; tạo ngay trận với bot cố định.
-
-### Bắt đầu
-
-- Nhận lời → trạng thái `accepted`, hẹn `startedAt = now + 5s`.
-- Khi tới giờ, trạng thái chuyển `in_progress`, `endsAt = startedAt + duration`.
-- Mỗi người có tiến độ riêng; câu hỏi lấy từ pool 1.000 ID theo chủ đề và quay vòng nếu cần.
-
-### Trả lời
-
-- Server kiểm tra người chơi, thứ tự `index`, `questionId`, thời gian còn lại.
-- Đáp án đúng/sai được chấm ngay; không lộ trước khi người chơi trả lời.
-- Câu trả lời của bot sinh xác định bằng `sha256("<challengeId>|bot|<index>")`, không gọi AI.
-
-### Kết thúc
-
-- Server chốt lười sau `endsAt + 1 giây` khi có request đọc/ghi.
-- So sánh số câu đúng giảm dần, sau đó số câu sai tăng dần.
-- Thắng +3, hoà/thua +1, bỏ trận 0; chỉ người trả lời ≥1 câu mới được thưởng.
-- `challenge_rewards` + unique ledger đảm bảo thưởng đúng một lần.
-- Sự kiện `challenge:finished` được phát tới room của hai người chơi; client vẫn polling/refetch để phục hồi sau mất kết nối.
+Nút thứ ba là **Bài kiểm tra**. Tiểu học/THCS mở `/pages/student/exam/`; Tiếng Trung mở `/pages/student/chinese/?view=tests`. Các trang chơi, API, dịch vụ Robot, lời mời đấu bạn và thử thách tuần đã được xóa. Dữ liệu phần thưởng đã ghi trước đây được giữ để đối chiếu lịch sử và tổng kim cương.
 
 ## 9. Frontend
 
@@ -145,7 +121,7 @@ Socket.IO dùng chung cookie, xác thực ở middleware `io.use`, tham gia room
 
 - **Vitest + Supertest:** 12 file, 93 test; database `kids_learning_test` tạo riêng, migrate/seed trong global setup.
 - **Playwright:** 22 test, project desktop Chromium và mobile 360 px; storage state được sinh từ token để tránh rate limit đăng nhập.
-- Test bao phủ: auth, catalog, practice, exam, challenge (Robot và 1–1), socket auth, admin, thống kê, kim cương/xếp hạng, bất biến ngân hàng câu hỏi và tiện ích.
+- Test bao phủ: auth, catalog, practice, exam, socket auth, admin, thống kê, kim cương/xếp hạng, bất biến ngân hàng câu hỏi và tiện ích.
 - Quy ước tên test: `test_<hệ thống>_<tình huống>_<kết quả>`.
 
 Chi tiết lệnh và kết quả ở [acceptance.md](acceptance.md).

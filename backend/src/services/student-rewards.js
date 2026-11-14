@@ -15,7 +15,7 @@ export const storeCatalog=[
  {sku:'room-space',title:'Góc học vũ trụ',type:'background',price:40},
  {sku:'room-ocean',title:'Góc học đại dương',type:'background',price:30},
 ];
-const badgeDefinitions=[{key:'first-step',title:'Bước đầu tiên'},{key:'steady',title:'Ba ngày bền bỉ'},{key:'repair',title:'Người sửa lỗi'},{key:'weekend',title:'Khám phá thử thách'},{key:'teammate',title:'Bạn đồng đội'}];
+const badgeDefinitions=[{key:'first-step',title:'Bước đầu tiên'},{key:'steady',title:'Ba ngày bền bỉ'},{key:'repair',title:'Người sửa lỗi'}];
 export async function rewardState(user,courseId){
  await requireCourse(user,courseId);
  const [report,events,claims,inventory,badges,wallet,prefs,completed]=await Promise.all([
@@ -60,8 +60,6 @@ export async function syncBadges(user,courseId){
  if(report.summary.completed||events.length)ready.push('first-step');
  if(report.summary.active_days>=3||new Set(events.map(e=>String(e.event_day))).size>=3)ready.push('steady');
  if(details.reduce((n,e)=>n+Number(e.repaired||0),0)>=3)ready.push('repair');
- if(details.some(e=>e.kind==='weekend'))ready.push('weekend');
- const pairs=await query("SELECT d.id FROM async_learning_duels d JOIN learning_runs a ON a.id=d.creator_run_id JOIN learning_runs b ON b.id=d.opponent_run_id WHERE (d.creator_id=? OR d.opponent_id=?) AND d.duel_kind='cooperative' AND a.status='finished' AND b.status='finished' LIMIT 1",[user,user]);if(pairs.length)ready.push('teammate');
  await withTransaction(async c=>{const run=txRun(c);await activeStudent(user,run,true);for(const key of ready)if(!(await run('SELECT badge_key FROM student_badges WHERE profile_id=? AND badge_key=?',[user,key])).length)await run('INSERT INTO student_badges(profile_id,badge_key) VALUES (?,?)',[user,key]);});
  return {awarded:ready};
 }

@@ -2,37 +2,8 @@ import {randomUUID,randomBytes,createHash} from 'node:crypto';
 import {z} from 'zod';
 import {query,withTransaction} from '../config/db.js';
 import {badRequest,forbidden,notFound} from '../utils/errors.js';
-import {requireCourse} from './course-service.js';
-import {requireFriend} from './chat-friends.js';
-import {activeStudent,txRun,sourceItems,insertLearningRun,runLink,json} from './student-experience.js';
+import {activeStudent,txRun} from './student-experience.js';
 import {familyReport} from './learning-support.js';
-
-export async function listAsyncDuels(user,courseId){
- await requireCourse(user,courseId);
- const rows=await query('SELECT d.*,p.display_name AS creator_name,q.display_name AS opponent_name,a.status AS creator_status,b.status AS opponent_status,a.answers_json AS creator_answers,b.answers_json AS opponent_answers,a.items_json FROM async_learning_duels d JOIN profiles p ON p.id=d.creator_id JOIN profiles q ON q.id=d.opponent_id JOIN learning_runs a ON a.id=d.creator_run_id LEFT JOIN learning_runs b ON b.id=d.opponent_run_id WHERE (d.creator_id=? OR d.opponent_id=?) AND d.course_id=? AND p.deleted_at IS NULL AND q.deleted_at IS NULL ORDER BY d.created_at DESC LIMIT 50',[user,user,courseId]);
- return rows.map(r=>{const both=r.creator_status==='finished'&&r.opponent_status==='finished',score=answers=>Object.values(json(answers)).filter(a=>a.correct).length;return {id:r.id,kind:r.duel_kind,status:both?'finished':new Date(r.expires_at)<new Date()?'expired':r.status,creatorName:r.creator_name,opponentName:r.opponent_name,incoming:r.opponent_id===user,expiresAt:r.expires_at,href:r.creator_id===user?runLink(r.creator_run_id):r.opponent_run_id?runLink(r.opponent_run_id):null,result:both?{creator:score(r.creator_answers),opponent:score(r.opponent_answers),total:json(r.items_json).length,cooperativeComplete:r.duel_kind==='cooperative'}:null};});
-}
-export async function createAsyncDuel(user,courseId,body){
- const d=z.object({opponentUsername:z.string().trim().min(3).max(20),kind:z.enum(['competitive','cooperative']),itemId:z.string().max(60).nullable().optional(),minutes:z.union([z.literal(5),z.literal(10)]).default(5)}).strict().parse(body);
- const [peer]=await query("SELECT id FROM profiles WHERE username=? AND role='student' AND deleted_at IS NULL",[d.opponentUsername]);if(!peer||peer.id===user)throw notFound();
- await requireFriend(user,peer.id);await requireCourse(peer.id,courseId);const items=await sourceItems(user,courseId,{itemId:d.itemId,count:d.minutes});
- return withTransaction(async c=>{const run=txRun(c);for(const id of [user,peer.id].sort())await activeStudent(id,run,true);await requireFriend(user,peer.id,run);
-  const [pending]=await run("SELECT COUNT(*) total FROM async_learning_duels WHERE creator_id=? AND status IN ('pending','accepted') AND expires_at>? AND NOT EXISTS(SELECT 1 FROM learning_runs a JOIN learning_runs b ON b.id=async_learning_duels.opponent_run_id WHERE a.id=async_learning_duels.creator_run_id AND a.status='finished' AND b.status='finished')",[user,new Date()]);if(Number(pending.total)>=10)throw badRequest('Bạn đang có 10 thử thách chưa kết thúc. Hãy hoàn thành các thử thách đang có.');
-  const runId=await insertLearningRun(run,user,courseId,items,'duel',d.kind==='cooperative'?'Cùng bạn hoàn thành':'Thách đấu cùng bộ câu hỏi'),id=randomUUID();
-  await run('INSERT INTO async_learning_duels(id,creator_id,opponent_id,course_id,creator_run_id,duel_kind,expires_at) VALUES (?,?,?,?,?,?,?)',[id,user,peer.id,courseId,runId,d.kind,new Date(Date.now()+3*86400000)]);return {id,href:runLink(runId)};
- });
-}
-export async function respondAsyncDuel(user,id,body){
- z.uuid().parse(id);const {accept}=z.object({accept:z.boolean()}).strict().parse(body);
- const [initial]=await query('SELECT course_id,creator_id FROM async_learning_duels WHERE id=? AND opponent_id=?',[id,user]);if(!initial)throw notFound();await requireCourse(user,initial.course_id);await requireCourse(initial.creator_id,initial.course_id);
- return withTransaction(async c=>{const run=txRun(c);for(const who of [user,initial.creator_id].sort())await activeStudent(who,run,true);await requireFriend(user,initial.creator_id,run);
-  const [duel]=await run('SELECT * FROM async_learning_duels WHERE id=? AND opponent_id=? FOR UPDATE',[id,user]);if(!duel||new Date(duel.expires_at)<=new Date())throw notFound();
-  if(duel.opponent_run_id)return {href:runLink(duel.opponent_run_id)};if(duel.status!=='pending')throw badRequest('Lời mời đã được xử lý.');
-  if(!accept){await run("UPDATE async_learning_duels SET status='declined' WHERE id=?",[id]);return {declined:true};}
-  const [original]=await run('SELECT items_json,title FROM learning_runs WHERE id=?',[duel.creator_run_id]);
-  const runId=await insertLearningRun(run,user,duel.course_id,json(original.items_json),'duel',original.title);await run("UPDATE async_learning_duels SET opponent_run_id=?,status='accepted' WHERE id=?",[runId,id]);return {href:runLink(runId)};
- });
-}
 
 const digest=value=>createHash('sha256').update(value).digest('hex');
 export async function createGuardianCode(user){

@@ -54,9 +54,9 @@ export function primaryCourseGuard(area) {
    if(!chapter)throw new AppError(404,'CHAPTER_NOT_FOUND','Không tìm thấy chủ đề.');grade=chapter.grade;
   } else if(r.body?.topicId){const [topic]=await query('SELECT grade FROM topics WHERE id=?',[String(r.body.topicId).trim()]);grade=topic?.grade;}
   else if(parts[0]&&parts[0]!=='lobby'){
-   const table={practice:'practice_sessions',exams:'exam_attempts',challenges:'challenges'}[area];
-   const sql=area==='challenges'?`SELECT grade FROM ${table} WHERE id=?`:`SELECT t.grade FROM ${table} x JOIN topics t ON t.id=x.topic_id WHERE x.id=? AND x.student_id=?`;
-   const [row]=await query(sql,area==='challenges'?[parts[0]]:[parts[0],r.user.id]);grade=row?.grade;
+   const table={practice:'practice_sessions',exams:'exam_attempts'}[area];
+   const sql=`SELECT t.grade FROM ${table} x JOIN topics t ON t.id=x.topic_id WHERE x.id=? AND x.student_id=?`;
+   const [row]=await query(sql,[parts[0],r.user.id]);grade=row?.grade;
   }else{
    const id=r.get('X-Course-Id');
    if(id?.startsWith('grade-'))grade=Number(id.slice(6));else grade=r.user.grade;
@@ -67,10 +67,6 @@ export function primaryCourseGuard(area) {
   const course=await requireCourse(r.user.id,'grade-'+grade);
   if(course.kind!==schoolProgramForGrade(grade)||Number(course.level)!==Number(grade))throw new AppError(403,'COURSE_LOCKED','Khóa học không khớp với lớp đã chọn.');
   r.primaryGrade=Number(grade);
-  if(area==='challenges'&&r.body?.opponentUsername){
-   const [opponent]=await query('SELECT id FROM profiles WHERE username=?',[String(r.body.opponentUsername).trim()]);
-   if(opponent)await requireCourse(opponent.id,'grade-'+grade);
-  }
   next();
  });
 }

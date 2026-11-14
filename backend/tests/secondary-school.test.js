@@ -74,7 +74,6 @@ it('blocks cross-program curriculum reads and writes, including forged scope and
  expect((await student.get('/api/v1/catalog/topics?subjectId=toan&grade=9')).status).toBe(403);
  expect((await student.post('/api/v1/practice').send({topicId:' '+lessonId+' '})).status).toBe(403);
  expect((await student.post('/api/v1/exams').send({topicId:' '+lessonId+' '})).status).toBe(403);
- expect((await student.post('/api/v1/challenges/robot').send({topicId:' '+lessonId+' ',durationSeconds:300,botLevel:'easy'})).status).toBe(403);
 });
 
 it('lets THCS admin import drafts and publish questions in the correct grade-nine lesson',async()=>{
@@ -93,7 +92,7 @@ it('lets THCS admin import drafts and publish questions in the correct grade-nin
  expect(topics.status).toBe(200);expect(topics.body.data.find(t=>t.id===lessonId).questionCount).toBe(30);
 });
 
-it('runs grade-nine practice, chapter exams and Robot challenges through the shared school engine',async()=>{
+it('runs grade-nine practice and chapter exams through the shared school engine',async()=>{
  const started=await student.post('/api/v1/practice').send({topicId:lessonId});expect(started.status).toBe(201);
  practice=started.body.data;expect(practice.questions).toHaveLength(10);
  expect(practice.questions.every(q=>questions.includes(q.id))).toBe(true);
@@ -105,8 +104,6 @@ it('runs grade-nine practice, chapter exams and Robot challenges through the sha
  const exam=await student.post('/api/v1/exams').set('X-Course-Id','grade-9').send({mode:'chapter',chapterId:'toan-9-c01',subjectId:'toan',yearId:'2026-2027'});
  expect(exam.status).toBe(201);expect(exam.body.data.questions).toHaveLength(30);
  expect(exam.body.data.questions.every(q=>questions.includes(q.id))).toBe(true);
- const challenge=await student.post('/api/v1/challenges/robot').send({topicId:lessonId,durationSeconds:300,botLevel:'easy'});
- expect(challenge.status).toBe(201);expect(challenge.body.data.topic.grade).toBe(9);
  const report=await student.get('/api/v1/learning/family-report').set('X-Course-Id','grade-9');
  expect(report.status).toBe(200);expect(report.body.data.recent.some(r=>r.id===practice.id)).toBe(true);
  const today=await student.get('/api/v1/learning/today').set('X-Course-Id','grade-9');

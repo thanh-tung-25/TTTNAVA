@@ -61,14 +61,4 @@ describe('Chủ đề chưa đủ câu hỏi đã đăng', () => {
     expect(response.body.error.message).toContain('cần 20 câu');
   });
 
-  test('test_question_availability_challenge_requires_five_published', async () => {
-    const response = await studentAgent.post('/api/v1/challenges/robot').send({
-      topicId: smallTopic,
-      durationSeconds: 300,
-      botLevel: 'easy',
-    });
-    expect(response.status).toBe(409);
-    expect(response.body.error.code).toBe('TOPIC_TOO_SMALL');
-    expect(response.body.error.message).toContain('5 câu');
-  });
 });

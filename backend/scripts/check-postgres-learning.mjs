@@ -15,7 +15,6 @@ const { createSet, removeContent } = await import('../src/services/chinese-manag
 const worksheets = await import('../src/services/worksheets.js');
 const practice = await import('../src/services/practice-service.js');
 const exams = await import('../src/services/exam-service.js');
-const { createRobotChallenge, forfeitChallenge } = await import('../src/services/challenge-actions.js');
 const { parseJson } = await import('../src/utils/normalize.js');
 const { rateLimit } = await import('../src/middlewares/rate-limit.js');
 const studentId = randomUUID();
@@ -95,12 +94,6 @@ try {
     await exams.submitExam(studentId, exam.id);
     completed(phase);
 
-    phase = 'challenge';
-    const [student] = await query('SELECT * FROM profiles WHERE id=?', [studentId]);
-    const challenge = await createRobotChallenge(student, { topicId: topic.topic_id, durationSeconds: 60, botLevel: 'easy' });
-    await forfeitChallenge(studentId, challenge.id);
-    assert.equal((await query('SELECT status FROM challenges WHERE id=?', [challenge.id]))[0].status, 'finished');
-    completed(phase);
     phase = 'distributed-rate-limit';
     const previousVercel = process.env.VERCEL;
     process.env.VERCEL = '1';
@@ -120,7 +113,7 @@ try {
     throw rollback;
   }), error => error === rollback);
   assert.equal((await query('SELECT id FROM profiles WHERE id=?', [studentId])).length, 0);
-  console.log(JSON.stringify({ ok: true, checked: ['chinese', 'worksheets', 'practice', 'exams', 'challenge', 'distributed-rate-limit'], rolledBack: true, committedRowsChanged: false }));
+  console.log(JSON.stringify({ ok: true, checked: ['chinese', 'worksheets', 'practice', 'exams', 'distributed-rate-limit'], rolledBack: true, committedRowsChanged: false }));
 } catch (error) {
   console.error(JSON.stringify({ ok: false, phase, code: error.code || 'LEARNING_CHECK_FAILED', errorType: error.name }));
   process.exitCode = 1;

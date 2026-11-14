@@ -225,66 +225,6 @@
 .history-score { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; }
 .history-score small { display: block; font-size: 0.66rem; color: var(--muted); font-weight: 500; }
 
-/* ===== Thách đấu ===== */
-.duel-banner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  padding: 0.9rem;
-  border-radius: var(--radius);
-  background: linear-gradient(120deg, #3d258f, #5b34d6 55%, #7a5cf0);
-  color: #fff;
-  margin-bottom: 1rem;
-  box-shadow: var(--shadow);
-}
-.duel-banner h2 { color: #fff; margin: 0; font-size: 1.15rem; }
-.duel-banner p { margin: 0; opacity: 0.85; font-size: 0.8rem; }
-.duel-players { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 0.5rem; text-align: center; }
-.duel-player img { width: 54px; height: 54px; margin: 0 auto 0.2rem; }
-.duel-player strong { display: block; font-size: 0.85rem; }
-.duel-player span { font-size: 0.72rem; opacity: 0.8; }
-.duel-vs { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; }
-
-.countdown-big {
-  font-family: var(--font-display);
-  font-size: 4rem;
-  font-weight: 800;
-  color: var(--primary-dark);
-  text-align: center;
-  line-height: 1;
-}
-.countdown-label { text-align: center; color: var(--muted); }
-
-.invite-item {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.7rem;
-  border: 2px solid var(--line);
-  border-radius: 14px;
-  background: #fff;
-}
-.invite-item + .invite-item { margin-top: 0.5rem; }
-.invite-item .invite-main { flex: 1; min-width: 0; }
-.invite-item h3 { font-size: 0.9rem; margin: 0; }
-.invite-item p { font-size: 0.75rem; margin: 0; color: var(--muted); }
-.invite-actions { display: flex; gap: 0.3rem; }
-
-.robot-card { border: 2px dashed #c9baf8; background: #fbf8ff; }
-.level-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.45rem; }
-.level-btn {
-  border: 2px solid var(--line);
-  border-radius: 12px;
-  background: #fff;
-  padding: 0.55rem 0.3rem;
-  cursor: pointer;
-  text-align: center;
-}
-.level-btn strong { display: block; font-size: 0.9rem; }
-.level-btn span { font-size: 0.7rem; color: var(--muted); }
-.level-btn[aria-pressed="true"] { border-color: var(--primary); background: var(--primary-soft); }
-
 /* ===== Bảng xếp hạng ===== */
 .rank-row {
   display: flex;

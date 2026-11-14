@@ -1,5 +1,7 @@
 # Chuyển TTNAVA từ Render/MySQL sang Vercel/Supabase
 
+Cập nhật 15/11/2026: theo yêu cầu chủ web, chức năng Thử sức đã được xóa và thay bằng Bài kiểm tra. Các mô tả triển khai Thách đấu trong báo cáo chuyển đổi bên dưới là lịch sử, không còn là chức năng cần phát hành.
+
 ## Trạng thái ngày 04/11/2026
 
 Website đã triển khai: **https://tttnava-backend.vercel.app**. Đã kiểm tra trực tiếp trang chủ, trang đăng nhập, API health/runtime, trang khóa học admin/học sinh trên Chromium, phân quyền API và tải Word từ Storage bằng signed URL (đối chiếu SHA-256). POST cùng origin hoạt động, origin lạ bị chặn 403; cookie có Secure và HttpOnly. Dùng tài khoản hiện có để đăng nhập. XAMPP vẫn là bản local, không tự đồng bộ những thay đổi phát sinh sau khi chuyển sang Supabase.

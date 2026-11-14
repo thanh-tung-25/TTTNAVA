@@ -20,7 +20,6 @@ export const displayNameSchema = z.string().trim().min(1, 'Tên hiển thị kh�
 
 export const topicIdSchema = z.string().trim().min(3).max(60);
 
-export const durationSchema = z.union([z.literal(300), z.literal(600), z.literal(900)]);
 
 export const paginationQuerySchema = z.object({
   page: z.coerce.number().int().min(1).optional(),

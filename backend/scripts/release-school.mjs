@@ -25,8 +25,8 @@ async function state(){
  const [otpTable]=await query("SELECT EXISTS(SELECT 1 FROM information_schema.tables WHERE table_schema=current_schema() AND table_name='registration_otps') present");
  const [deletionTable]=await query("SELECT EXISTS(SELECT 1 FROM information_schema.tables WHERE table_schema=current_schema() AND table_name='account_deletion_confirmations') present");
  if(privacy.length===1)throw Error('Incomplete student privacy migration');
- const [experience]=await query("SELECT COUNT(*) total FROM information_schema.tables WHERE table_schema=current_schema() AND table_name IN ('student_preferences','student_focus','learning_runs','learning_skill_state','learning_events','student_quest_claims','student_inventory','student_badges','student_gallery','study_assignments','study_assignment_members','async_learning_duels','guardian_pair_codes','guardian_links')");
- return {experience:columns.some(c=>c.column_name==='account_kind')&&Number(experience.total)===14,secondary:checks.some(c=>c.conname==='courses_kind_check'&&c.definition.includes('secondary')),
+ const [experience]=await query("SELECT COUNT(*) total FROM information_schema.tables WHERE table_schema=current_schema() AND table_name IN ('student_preferences','student_focus','learning_runs','learning_skill_state','learning_events','student_quest_claims','student_inventory','student_badges','student_gallery','study_assignments','study_assignment_members','guardian_pair_codes','guardian_links')");
+ return {experience:columns.some(c=>c.column_name==='account_kind')&&Number(experience.total)===13,secondary:checks.some(c=>c.conname==='courses_kind_check'&&c.definition.includes('secondary')),
   privacy:privacy.length===2&&checks.some(c=>c.conname==='chk_profiles_student_creator_scope'),
   management:columns.some(c=>c.column_name==='student_management_scope')&&checks.some(c=>c.conname==='chk_profiles_student_management_scope'),
   registration:columns.filter(c=>['registration_source','email_verified_at','gmail_identity'].includes(c.column_name)).length===3&&Boolean(otpTable.present)&&checks.some(c=>c.conname==='chk_profiles_registration_source'),

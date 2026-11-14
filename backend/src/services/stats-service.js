@@ -26,9 +26,6 @@ export async function getAdminStats(scope = 'super') {
     FROM questions q JOIN topics t ON t.id=q.topic_id WHERE ${grade}`);
   const [practice] = await query(`SELECT COUNT(*) total FROM practice_sessions x JOIN topics t ON t.id=x.topic_id WHERE x.status='finished' AND ${grade}`);
   const [exam] = await query(`SELECT COUNT(*) total FROM exam_attempts x JOIN topics t ON t.id=x.topic_id WHERE x.status='submitted' AND ${grade}`);
-  const [challenge] = await query(`SELECT COUNT(*) total,COALESCE(SUM(CASE WHEN bot_level IS NOT NULL THEN 1 ELSE 0 END),0) robot
-    FROM challenges x WHERE ${schoolGradeCondition(scope,'x.grade')} AND (x.status='finished'
-    OR (x.status='in_progress' AND ${dialectSql('x.ends_at + INTERVAL 60 SECOND',"x.ends_at + INTERVAL '60 seconds'")}>CURRENT_TIMESTAMP(3)))`);
   const [diamonds] = await query(`SELECT COALESCE(SUM(dl.amount),0) total FROM diamond_ledger dl WHERE dl.amount>0 AND ${ledger}`);
   const bySubject = await query(`SELECT s.id,s.name,s.color,
     (SELECT COUNT(*) FROM practice_sessions x JOIN topics t ON t.id=x.topic_id WHERE t.subject_id=s.id AND x.status='finished' AND ${grade}) practices,
@@ -43,7 +40,7 @@ export async function getAdminStats(scope = 'super') {
     students:{total:Number(students.total),active:Number(students.active)},
     bank:{subjects:Number(bank.subjects),topics:Number(bank.topics),questions:Number(bank.questions),publishedQuestions:Number(bank.published_questions),draftQuestions:Number(bank.draft_questions),hiddenQuestions:Number(bank.hidden_questions)},
     practiceSessions:Number(practice.total),examAttempts:Number(exam.total),
-    challenges:{total:Number(challenge.total),robot:Number(challenge.robot)},diamondsAwarded:Number(diamonds.total),
+    diamondsAwarded:Number(diamonds.total),
     bySubject:bySubject.map(row=>({id:row.id,name:schoolSubjectName(row.id,scope==='secondary'?6:0,row.name),color:row.color,practices:Number(row.practices),exams:Number(row.exams)})),
     topStudents:topStudents.map(row=>({profileId:row.id,displayName:row.display_name,avatarKey:row.avatar_key,grade:Number(row.grade),diamonds:Number(row.diamonds)})),
   };

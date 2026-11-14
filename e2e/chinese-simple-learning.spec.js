@@ -90,7 +90,7 @@ test('HSK 1 shows all ten lessons and nests the original tools under three paren
  await page.locator('.student-account summary').click();
  for(const name of ['Sổ từ','Kết quả học tập','Bài kiểm tra','Bài được giao'])await expect(page.getByRole('navigation',{name:'Tiện ích học tập'}).getByRole('link',{name,exact:true})).toBeVisible();
  await page.keyboard.press('Escape');
- for(const name of ['Khóa học','Bài học','Thử sức','Xếp hạng','Cá nhân'])await expect(page.locator('.student-primary-nav').getByRole('link',{name,exact:true})).toBeVisible();
+ for(const name of ['Khóa học','Bài học','Bài kiểm tra','Xếp hạng','Cá nhân'])await expect(page.locator('.student-primary-nav').getByRole('link',{name,exact:true})).toBeVisible();
  await expect(page.locator('.student-primary-nav')).toHaveAttribute('data-count','5');
  await expect(page.locator('.student-primary-nav').getByRole('link')).toHaveCount(5);
  await expect(page.locator('.student-primary-nav').getByRole('link',{name:'Ôn luyện',exact:true})).toHaveCount(0);

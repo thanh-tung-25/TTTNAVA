@@ -89,23 +89,6 @@ Tạo phiên giới hạn 20 lần/phút. Kết quả gồm `correctCount`, `tot
 
 Tạo đề giới hạn 10 lần/phút. Server tự chốt bài khi hết hạn; client có thêm 5 giây ân hạn để gửi nốt câu đang làm. Câu gửi quá hạn có thể bị từ chối với `EXAM_TIME_UP`.
 
-## Thách đấu
-
-| Method | Endpoint | Mô tả |
-| --- | --- | --- |
-| GET | `/challenges/lobby` | Lời mời đến/đi, trận gần đây, trận đang dở |
-| POST | `/challenges/invites` | Body `{ opponentUsername, topicId, durationSeconds, grade? }`, tạo lời mời 30 giây |
-| POST | `/challenges/robot` | Body `{ topicId, durationSeconds, botLevel }`, tạo trận với Robot |
-| GET | `/challenges/:id` | Trạng thái trận và câu hỏi hiện tại của người gọi |
-| POST | `/challenges/:id/accept` | Nhận lời, hẹn bắt đầu sau 5 giây |
-| POST | `/challenges/:id/decline` | Từ chối lời mời |
-| POST | `/challenges/:id/forfeit` | Bỏ trận |
-| POST | `/challenges/:id/answers` | Body `{ index, questionId, answer }` |
-
-`durationSeconds` chỉ nhận `300`, `600`, `900`; mặc định `600`. `botLevel` là `easy`, `medium`, `hard`. Tạo lời mời/Robot giới hạn 12 lần/phút.
-
-Phản hồi câu trả lời gồm `feedback` (đúng/sai, đáp án, lời giải) và `state` mới. Server kiểm tra thứ tự câu, thời gian, tư cách người chơi và tự chốt trận sau `endsAt + 1 giây`.
-
 ## Kim cương và xếp hạng
 
 | Method | Endpoint | Mô tả |
@@ -165,7 +148,7 @@ Body PATCH gồm `prompt`, `options`, `answer`, `explanation`, `difficulty`, `im
 
 | Method | Endpoint | Mô tả |
 | --- | --- | --- |
-| GET | `/admin/stats` | Số học sinh, ngân hàng câu hỏi, lượt luyện/thi, thách đấu, kim cương, top 5 tuần |
+| GET | `/admin/stats` | Số học sinh, ngân hàng câu hỏi, lượt luyện/kiểm tra, kim cương, top 5 tuần |
 
 ## Health check
 
@@ -178,9 +161,6 @@ Kết nối cùng origin, gửi cookie tự động:
 ```js
 const socket = window.io({ withCredentials: true });
 socket.on('realtime:ready', ({ profileId }) => { });
-socket.on('challenge:invite', ({ challengeId }) => { });
-socket.on('challenge:updated', ({ challengeId }) => { });
-socket.on('challenge:finished', ({ challengeId }) => { });
 ```
 
 Socket từ chối kết nối nếu cookie thiếu/sai, tài khoản bị khoá hoặc là bot. Client gửi `ping:client` để kiểm tra vòng đời; trạng thái trận vẫn được đồng bộ bằng REST để tránh phụ thuộc hoàn toàn vào sự kiện.

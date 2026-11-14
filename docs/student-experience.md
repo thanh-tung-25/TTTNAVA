@@ -4,10 +4,10 @@ Phạm vi được yêu cầu: trang chủ cá nhân hóa, điều hướng chun
 
 Các lối vào:
 
-- Học sinh: **Trang chủ → Bài học → Ôn luyện → Thử sức → Cá nhân**, thống nhất trên ba chương trình. Trang chủ có bài đang dở, nhiệm vụ, thống kê tuần và gợi ý ôn.
+- Học sinh: **Trang chủ → Bài học → Bài kiểm tra → Cá nhân**, thống nhất trên ba chương trình. Trang chủ có bài đang dở, nhiệm vụ, thống kê tuần và gợi ý ôn.
 - **Học hôm nay**: chọn 5/10/15 phút, bài đang học trên lớp, lượt khám phá 5 câu, hoặc ôn lỗi. Số câu phụ thuộc nội dung đã xuất bản; thời lượng là lựa chọn ước lượng, không phải bộ đếm ép học sinh.
 - **Tiến bộ**: theo chủ đề/bộ từ. Nhãn “vững” cần đạt ít nhất 80% trong hai ngày khác nhau. Lịch ôn là quy tắc đơn giản, chưa phải mô hình đo năng lực được chuẩn hóa.
-- **Thử sức**: thử thách tuần, lời mời cùng bộ câu hỏi cho hai bạn đã kết bạn; mỗi bạn làm vào thời điểm phù hợp. Có chế độ thi đua và đồng đội. Chỉ công bố hai điểm khi cả hai hoàn thành.
+- **Bài kiểm tra**: đi thẳng đến kiểm tra chủ đề/học kì/cả năm của lớp đang học, hoặc bài kiểm tra Tiếng Trung. Các luồng thử thách tuần, đấu bạn và Robot đã được gỡ bỏ cả giao diện và API.
 - **Cá nhân**: bạn đồng hành, huy hiệu, vật phẩm, bài viết riêng, cài đặt chữ/giọng đọc/hiệu ứng và liên kết phụ huynh. Cấp bạn đồng hành tăng mỗi 5 buổi học cá nhân hoàn thành trên toàn tài khoản.
 - Admin: **Giao bài & phản hồi**, chọn khóa, học sinh thuộc phạm vi quản lý, bộ câu hỏi hoặc bài viết; xem bài đã nộp, nhận xét và cho điểm. Có số liệu sử dụng buổi học cá nhân trong phạm vi được quản lý.
 - Phụ huynh: đăng ký tại cùng trang Gmail, chọn “Phụ huynh”. Học sinh tạo mã ghép trong Cá nhân, phụ huynh nhập mã, học sinh đồng ý rồi báo cáo mới mở. Hai bên có thể thu hồi liên kết. Mã ghép không phải link mời đăng ký.

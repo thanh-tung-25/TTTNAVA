@@ -12,7 +12,11 @@ const output = path.join(root, 'public');
 await fs.mkdir(output, { recursive: true });
 const unexpected = (await fs.readdir(output)).filter(name => name !== 'assets');
 if (unexpected.length) throw Error('Public output must contain assets only; protected pages must stay behind Express.');
-await fs.cp(path.join(root, 'frontend/assets'), path.join(output, 'assets'), { recursive: true });
+const assetsOutput=path.resolve(output,'assets');
+if(path.relative(root,assetsOutput)!==path.join('public','assets')||path.dirname(assetsOutput)!==path.resolve(output))throw Error('Invalid generated assets directory.');
+// Rebuild generated assets so deleted features cannot survive an earlier build.
+await fs.rm(assetsOutput,{recursive:true,force:true});
+await fs.cp(path.join(root, 'frontend/assets'), assetsOutput, { recursive: true });
 await fs.writeFile(path.join(output,'assets/build-info.json'),JSON.stringify({release:process.env.VERCEL_GIT_COMMIT_SHA||'local',built_at:new Date().toISOString()}));
 for (const role of ['student', 'admin']) {
   const source = path.join(root, 'frontend/pages', role, 'chinese');

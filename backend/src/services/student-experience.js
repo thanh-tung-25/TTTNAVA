@@ -100,12 +100,12 @@ export async function insertLearningRun(run,user,courseId,items,kind,title){
  const id=randomUUID();await run('INSERT INTO learning_runs(id,profile_id,course_id,run_kind,title,items_json,answers_json,draft_json) VALUES (?,?,?,?,?,?,?,?)',[id,user,courseId,kind,title,JSON.stringify(items),'{}','{}']);return id;
 }
 export async function startLearningRun(user,courseId,body={}){
- const d=z.object({kind:z.enum(['daily','review','weekend','diagnostic']).default('daily'),itemId:z.string().max(60).nullable().optional(),minutes:z.union([z.literal(5),z.literal(10),z.literal(15)]).optional(),subject:z.string().max(20).optional()}).strict().parse(body);
+ const d=z.object({kind:z.enum(['daily','review','diagnostic']).default('daily'),itemId:z.string().max(60).nullable().optional(),minutes:z.union([z.literal(5),z.literal(10),z.literal(15)]).optional(),subject:z.string().max(20).optional()}).strict().parse(body);
  const prefs=await preferences(user);await requireCourse(user,courseId);
  const focus=(await query('SELECT topic_id,set_id FROM student_focus WHERE profile_id=? AND course_id=?',[user,courseId]))[0];
  const itemId=d.itemId===undefined?(focus?.topic_id||focus?.set_id||null):d.itemId;
  const items=await sourceItems(user,courseId,{itemId,review:d.kind==='review',count:d.kind==='diagnostic'?5:d.minutes||prefs.minutes,subject:d.subject});
- const title={daily:'Buổi học hôm nay',review:'Ôn và sửa lỗi',weekend:'Thử thách tuần',diagnostic:'Khám phá điểm xuất phát'}[d.kind];
+ const title={daily:'Buổi học hôm nay',review:'Ôn và sửa lỗi',diagnostic:'Khám phá điểm xuất phát'}[d.kind];
  const id=await withTransaction(async c=>{const run=txRun(c);await activeStudent(user,run,true);return insertLearningRun(run,user,courseId,items,d.kind,title);});
  return {id,href:runLink(id)};
 }

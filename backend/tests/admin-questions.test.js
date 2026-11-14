@@ -220,17 +220,12 @@ describe('Quản trị câu hỏi và thống kê', () => {
   });
 
   test('test_admin_question_stats_include_published_bank', async () => {
-    const robot = await studentAgent
-      .post('/api/v1/challenges/robot')
-      .send({ topicId, durationSeconds: 300, botLevel: 'easy' });
-    expect(robot.status).toBe(201);
     const stats = await adminAgent.get('/api/v1/admin/stats');
     expect(stats.status).toBe(200);
     expect(stats.body.data.bank.questions).toBeGreaterThanOrEqual(28);
     expect(stats.body.data.bank.publishedQuestions).toBeGreaterThanOrEqual(28);
     expect(stats.body.data.bank.topics).toBeGreaterThanOrEqual(1224);
     expect(stats.body.data.students.total).toBeGreaterThanOrEqual(1);
-    expect(stats.body.data.challenges.robot).toBeGreaterThanOrEqual(1);
     expect(stats.body.data.bySubject).toHaveLength(3);
   });
 

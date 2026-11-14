@@ -88,16 +88,6 @@ it('limits teacher scope, hides unfinished writing and saves submitted feedback'
  expect((await get(student,'/assignments/'+id)).body.data.teacher_score).toBe(85);
  const quiz=await post(staff,'/assignments/manage',{courseId:course,title:'Ôn toán có phản hồi',kind:'quiz',itemId:FIXTURE_TOPIC_ID,questionCount:5,studentIds:[users[0].id]});expect(quiz.status,quiz.text).toBe(200);const begun=await post(student,'/assignments/'+quiz.body.data.id+'/start');expect(begun.status,begun.text).toBe(200);
 });
-it('requires accepted friends and shares the same questions without exposing peer answers',async()=>{
- expect((await post(student,'/duels',{opponentUsername:users[1].username,kind:'competitive',minutes:5})).status).toBe(403);
- await query("INSERT INTO chat_friendships(user_a,user_b,requester_id,status) VALUES (?,?,?,'accepted')",[...[users[0].id,users[1].id].sort(),users[0].id]);
- const created=await post(student,'/duels',{opponentUsername:users[1].username,kind:'cooperative',minutes:5,itemId:FIXTURE_TOPIC_ID});expect(created.status,created.text).toBe(200);const id=created.body.data.id;
- expect((await post(guardian,'/duels/'+id+'/respond',{accept:true})).status).toBe(404);
- const accepted=await post(other,'/duels/'+id+'/respond',{accept:true});expect(accepted.status,accepted.text).toBe(200);
- const a=new URL(created.body.data.href,'http://test').searchParams.get('run'),b=new URL(accepted.body.data.href,'http://test').searchParams.get('run');const snapshots=await query('SELECT items_json FROM learning_runs WHERE id IN (?,?)',[a,b]);expect(snapshots[0].items_json).toEqual(snapshots[1].items_json);
- await complete(student,(await get(student,'/runs/'+a)).body.data);expect((await get(other,'/duels')).body.data.find(d=>d.id===id).result).toBeNull();await complete(other,(await get(other,'/runs/'+b)).body.data);
- const done=(await get(other,'/duels')).body.data.find(d=>d.id===id);expect(done.status).toBe('finished');expect(done.result.cooperativeComplete).toBe(true);expect(JSON.stringify(done)).not.toContain('answers_json');
-});
 it('preserves Chinese administrator privacy for assignments and uses published Chinese choices',async()=>{
  await query("UPDATE profiles SET student_creator_scope='super',registration_source='admin' WHERE id=?",[users[0].id]);await query("UPDATE profiles SET student_creator_scope='chinese' WHERE id=?",[users[1].id]);
  const choices=await scoped.get(base+'/assignments/manage/choices?courseId=hsk-1');expect(choices.status).toBe(200);expect(choices.body.data.students.some(s=>s.id===users[0].id)).toBe(false);expect(choices.body.data.students.some(s=>s.id===users[1].id)).toBe(true);

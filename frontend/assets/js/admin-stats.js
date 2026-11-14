@@ -36,7 +36,7 @@ function render(data) {
 
     <section class="card">
       <div class="card-head"><h2>Ngân hàng câu hỏi</h2></div>
-      <div class="grid grid-4">
+      <div class="grid grid-2">
         ${stat(data.bank.subjects, 'Môn học')}
         ${stat(data.bank.topics, 'Chủ đề')}
         ${stat(data.bank.questions, 'Tổng câu hỏi')}
@@ -50,11 +50,9 @@ function render(data) {
 
     <section class="card">
       <div class="card-head"><h2>Hoạt động học tập</h2></div>
-      <div class="grid grid-4">
+      <div class="grid grid-2">
         ${stat(data.practiceSessions, 'Lượt luyện tập')}
         ${stat(data.examAttempts, 'Bài thi đã nộp')}
-        ${stat(data.challenges.total, 'Trận thách đấu')}
-        ${stat(data.challenges.robot, 'Trận với Robot')}
       </div>
       <p class="muted" style="margin:.8rem 0 0;font-size:.85rem">Tổng kim cương đã trao: <b>${data.diamondsAwarded.toLocaleString('vi-VN')}</b> 💎</p>
     </section>

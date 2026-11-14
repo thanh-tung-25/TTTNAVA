@@ -27,7 +27,6 @@ describe('Course purchases and enforced access',()=>{
   const [topic]=await query('SELECT id FROM topics WHERE grade=2 LIMIT 1');
   expect((await student.post('/api/v1/practice').send({topicId:topic.id})).status).toBe(403);
   expect((await student.post('/api/v1/exams').send({topicId:topic.id})).status).toBe(403);
-  expect((await student.post('/api/v1/challenges/robot').send({topicId:topic.id,durationSeconds:300,botLevel:'easy'})).status).toBe(403);
  });
  it('Chinese content, flashcard answers, progress, attempts and notebook respect enrollment',async()=>{
   expect((await student.get('/api/v1/chinese/sets/'+set)).status).toBe(403);

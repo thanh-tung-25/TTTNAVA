@@ -44,13 +44,12 @@ async function load() {
   }
   document.getElementById('learning-subjects').replaceChildren(...subjects.map(subjectCard));
   const tools = chinese ? [
-    ['Bài kiểm tra','Thử sức với bài kiểm tra của lớp.','/pages/student/chinese/?view=tests','◷'],
+    ['Bài kiểm tra','Chọn và làm bài kiểm tra của lớp.','/pages/student/chinese/?view=tests','◷'],
     ['Kết quả học tập','Tiếp tục bài làm và xem lại kết quả.','/pages/student/chinese/?view=history','★'],
   ] : [
     ['Bài tập tương tác','Điền số, nối cặp, sắp xếp và tự luận.','/pages/student/worksheets/','▦'],
     ['Luyện tập','Chọn bài học, làm bài và xem lời giải.','/pages/student/practice/','✎'],
-    ['Thi thử','Kiểm tra chủ đề, học kì hoặc cả năm.','/pages/student/exam/','◷'],
-    ['Thách đấu','Cùng bạn bè hoặc thử sức với Robot.','/pages/student/challenge/','⚑'],
+    ['Bài kiểm tra','Kiểm tra chủ đề, học kì hoặc cả năm.','/pages/student/exam/','◷'],
   ];
   tools.unshift(['Hoạt động tương tác','Quan sát, nghe, ghi âm và tự luyện theo môn.','/pages/student/lab/','✦'],['Bài được giao','Làm bài và nhận phản hồi của giáo viên.','/pages/student/assignments/','▤'],['Bản đồ tiến bộ','Xem kiến thức cần ôn và đến lịch nhắc lại.','/pages/student/progress/','↗'],['Học hôm nay','Khoảng 10 phút, ưu tiên nội dung cần ôn.','/pages/student/today/','☀'],['Báo cáo cho phụ huynh','Xem kết quả và nội dung nên ôn trong 7 ngày.','/pages/student/family/','▥']);
   document.getElementById('learning-tools').replaceChildren(...tools.map(toolCard));

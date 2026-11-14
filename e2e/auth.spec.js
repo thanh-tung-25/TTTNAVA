@@ -22,10 +22,10 @@ test.describe('Đăng nhập và bảo vệ trang', () => {
     await loginStudent(page);
     await expect(page.locator('main')).toContainText('Chào');
     await expect(page.locator('#diamond-chip')).toContainText('3');
-    const navText = await page.locator('nav').innerText();
-    expect(navText).toContain('Luyện tập');
-    expect(navText).toContain('Thi');
-    expect(navText).toContain('Thách đấu');
+    const navText = await page.locator('.student-primary-nav').innerText();
+    expect(navText).toContain('Bài học');
+    expect(navText).toContain('Cá nhân');
+    expect(navText).toContain('Bài kiểm tra');
   });
 
   test('test_e2e_auth_logout_returns_to_login', async ({ page }) => {

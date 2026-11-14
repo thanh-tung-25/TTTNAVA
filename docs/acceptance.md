@@ -12,7 +12,6 @@
 - Trang chủ, chọn môn/lớp/chủ đề.
 - Luyện tập 10 câu: phản hồi ngay, lời giải, điều hướng câu, màn hình kết quả, xem lại câu sai, lịch sử.
 - Thi thử 20 câu / 15 phút: lưu tạm đáp án, palette câu hỏi, đồng hồ, nộp bài, tự nộp, xem lại toàn bộ, lịch sử.
-- Thách đấu Robot 3 mức và 1–1: lời mời 30 giây, nhận/từ chối/huỷ, đếm ngược 5 giây, thời lượng 5/10/15 phút, trả lời theo tiến độ riêng, bỏ trận, kết quả và thưởng.
 - Kim cương, ledger, bảng xếp hạng tuần/tháng/tất cả, lọc lớp.
 - Giao diện tiếng Việt, mobile-first, avatar, bảng màu môn học, bàn phím và modal.
 
@@ -88,12 +87,11 @@ Các vùng được kiểm thử:
 | `auth.test.js` | Đăng nhập, sai mật khẩu, tài khoản khoá, đăng xuất, chặn tự đăng ký, phân quyền |
 | `practice.test.js` | Tạo phiên, chấm đúng/sai, không trả đáp án sai, hoàn thành, thưởng, lịch sử |
 | `exam.test.js` | Tạo đề, lưu tạm, không lộ đáp án, nộp, tự nộp, thưởng, lịch sử |
-| `challenge.test.js` | Robot thắng/thua/hoà, thưởng một lần, lời mời, hết hạn, từ chối, bỏ trận, 1–1 |
 | `socket.test.js` | Từ chối socket không cookie, chấp nhận sinh viên/admin, từ chối bot |
 | `admin-students.test.js` | CRUD học sinh, khoá, reset mật khẩu, tìm kiếm, phân trang |
 | `admin-questions.test.js` | Cây chương trình, bắt buộc phạm vi, tạo/sửa/đăng/ẩn, audit, import, AI chưa cấu hình |
 | `question-bank.test.js` | Danh mục 91 chủ đề, 30 chương, 91 bài học, fixture câu hỏi, quota |
-| `question-availability.test.js` | Chủ đề thiếu câu, luyện/thi/thách đấu trả lỗi phù hợp |
+| `question-availability.test.js` | Chủ đề thiếu câu, luyện/thi trả lỗi phù hợp |
 | `question-import-parser.test.js` | Phân tích mẫu `.docx`, lỗi thiếu dữ liệu và định dạng |
 | `chinese.test.js` | Module tiếng Trung: import Word, bài học độc lập khối, luyện/flashcard, đề và bảo mật đáp án |
 | `utils.test.js` | Chuẩn hoá, thời gian, serializer, các hàm dùng chung |
@@ -120,7 +118,6 @@ PLAYWRIGHT_EXIT=0
 | Tiếng Trung | 2 | Tạo học sinh không khối chính; duyệt Word, đăng, flashcard, đề và bố cục di động |
 | Luyện tập | 2 | Hoàn thành vòng 10 câu có phản hồi/kết quả; lịch sử |
 | Thi thử | 1 | Bắt đầu, trả lời, nộp, xem lại |
-| Thách đấu | 2 | Robot trả lời/bỏ trận; 1–1 mời/nhận/đấu/bỏ trận |
 | Kim cương – xếp hạng | 2 | Tổng/ledger; bảng xếp hạng và lọc |
 | Di động 360 px | 3 | Trang chủ, màn hình luyện tập và ngân hàng câu hỏi admin không tràn ngang |
 
@@ -148,7 +145,7 @@ SOURCE_JS_MAX_LINES=199
 
 Trong quá trình phát triển đã kiểm tra bằng trình duyệt thật trên máy:
 
-- Đăng nhập, trang chủ, luyện tập, thi, thách đấu Robot, lời mời 1–1, kim cương, xếp hạng, lịch sử.
+- Đăng nhập, trang chủ, luyện tập, thi, kim cương, xếp hạng, lịch sử.
 - Quản trị học sinh, cây chương trình, chọn đúng bài học, danh sách/chi tiết/lọc/audit câu hỏi, tạo nháp/đăng, nhập Word, thống kê.
 - Console không có lỗi CSP/import sau khi tách module.
 - Các luồng lỗi: hết hạn lời mời, bỏ trận, nộp bài khi hết giờ, truy cập sai vai trò.

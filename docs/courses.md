@@ -4,7 +4,7 @@ Học sinh đăng nhập vào `/pages/student/courses/`, chọn Tiểu học ho�
 
 ## Giá ban đầu
 
-- Lớp 1–5: 250.000đ / mỗi lớp, vĩnh viễn, gồm các môn tiểu học và chức năng luyện tập, thi thử, thách đấu theo lớp.
+- Lớp 1–5: 250.000đ / mỗi lớp, vĩnh viễn, gồm các môn tiểu học và chức năng luyện tập, bài kiểm tra theo lớp.
 - HSK 1–9: lần lượt 1.000.000đ–9.000.000đ / cấp. Hiện để vĩnh viễn; admin có thể chỉnh thời hạn.
 - Giá và thời hạn được chốt vào đơn khi gửi. Sửa cấu hình khóa không thay đổi đơn đã gửi hoặc quyền đã cấp.
 

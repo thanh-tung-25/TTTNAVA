@@ -30,6 +30,7 @@ function questionForm(q){
 function render(){
  root.replaceChildren();message('');const header=el('div',{class:'experience-actions'},[el('span',{class:'experience-pill',text:state.title}),el('span',{text:state.answered+'/'+state.total+' câu đã chốt'}),link('Về trang chủ','/pages/student/home/')]);root.append(header);
  if(state.status==='finished'){
+  if(state.reward)root.append(rewardNotice(state.reward));
   sessionStorage.removeItem(localKey);
   root.append(card('Bạn đã hoàn thành buổi học',el('strong',{class:'experience-question',text:state.correct+'/'+state.total+' câu đúng · '+state.percent+'/100'}),el('p',{text:state.percent>=80?'Bạn đang làm tốt. Hãy thử một bài tương tự trong buổi tiếp theo.':'Mình xem lại những câu chưa đúng, rồi luyện một lượt sửa lỗi nhé.'}),el('div',{class:'experience-actions'},[link('Xem tiến bộ','/pages/student/progress/',true),link('Nhiệm vụ & thành tích','/pages/student/personal/'),action('Luyện một lượt sửa lỗi',async()=>{const r=await request('/runs',{method:'POST',body:{kind:'review'}});location.assign(r.href);})])));
   for(const f of state.feedback)root.append(el('div',{class:'experience-feedback'+(f.correct?'':' is-wrong')},[el('strong',{text:f.prompt}),el('p',{text:(f.correct?'Đúng':'Cần ôn lại')+' · '+f.explanation}),el('details',{},[el('summary',{text:'Xem đáp án'}),el('p',{text:String(expected(f))})])]));return;
@@ -45,3 +46,4 @@ function render(){
 window.addEventListener('online',()=>{if(state?.question)queueSave();});window.addEventListener('pagehide',()=>clearTimeout(saveTimer));
 async function main(){profile=await boot('today');if(!id)throw new Error('Bạn hãy mở một buổi học từ trang chủ.');localKey='ttnava-draft:'+profile.id+':'+id;state=await request('/runs/'+id);render();}
 main().catch(e=>message(e.message,true));
+import {rewardNotice} from './study-reward.js';

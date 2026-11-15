@@ -20,7 +20,7 @@ afterEach(async()=>{
  await query('DELETE FROM chinese_street_lessons WHERE lesson_id IN (?,?)',[lesson,draft]);
  for(const u of users)await query('DELETE FROM chinese_street_progress WHERE student_id=?',[u.id]);
 });
-afterAll(async()=>{vi.unstubAllGlobals();for(const id of [lesson,draft])if(id)await admin.delete('/api/v1/chinese/lessons/'+id);for(const u of users)await query('DELETE FROM profiles WHERE id=?',[u.id]);});
+afterAll(async()=>{vi.unstubAllGlobals();for(const id of [lesson,draft])if(id)await admin.delete('/api/v1/chinese/lessons/'+id);for(const u of users){await query('DELETE FROM diamond_ledger WHERE profile_id=?',[u.id]);await query('DELETE FROM profiles WHERE id=?',[u.id]);}});
 it('authors thirty valid missions across ten lessons with unique options and consistent map directions',()=>{
  expect(streetMissionBank).toHaveLength(10);expect(streetMissionBank.flatMap(l=>l.missions)).toHaveLength(30);
  for(const l of streetMissionBank){const config=defaultStreetLesson({level_id:1,title:'Bài '+l.number,position:l.number});expect(streetSettingsSchema.safeParse({...config,revision:0}).success).toBe(true);}
@@ -81,4 +81,12 @@ it('rejects future words and keeps only learned building labels in the map',asyn
  const config=payload(await detail(admin));config.missions[0].speech='请问，蛋糕店在哪儿？';
  const r=await admin.put(base+'/lessons/'+lesson).send(config);expect(r.status).toBe(400);expect(r.body.error.code).toBe('STREET_VOCABULARY_SCOPE');
  const labels=(await detail()).place_hanzi;expect(labels.bank).toBe('中国银行');expect(labels.bakery).toBe('');expect(labels.park).toBe('');
+});
+it('rewards a complete visit once, preserving the reward under retries and replay',async()=>{
+ const learner=await createTestUser();users.push(learner);const agent=await loginStudent(learner),teacher=await detail(admin),studentView=await detail(agent);let last,lastInput;
+ for(const task of teacher.missions){const visible=studentView.missions.find(m=>m.id===task.id);lastInput={choice_id:task.answer,request_id:randomUUID(),content_hash:visible.content_hash};last=await agent.post(`${base}/lessons/${lesson}/missions/${task.id}/answers`).send(lastInput);expect(last.status,last.text).toBe(200);}
+ expect(last.body.data.reward.earned).toBe(1);
+ const final=teacher.missions.at(-1),retry=await agent.post(`${base}/lessons/${lesson}/missions/${final.id}/answers`).send(lastInput);expect(retry.status).toBe(200);
+ const replay=await agent.post(`${base}/lessons/${lesson}/missions/${final.id}/answers`).send({...lastInput,request_id:randomUUID()});expect(replay.body.data.reward.reason).toBe('already_rewarded');
+ const summary=await agent.get('/api/v1/diamonds/summary');expect(summary.body.data.programs.chinese.total).toBe(1);
 });

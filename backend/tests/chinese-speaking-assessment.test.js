@@ -35,7 +35,7 @@ beforeAll(async()=>{
  }));
 });
 afterEach(()=>{nextAudioError=false;nextJudgeError=false;noSpeech=false;audioLimited=false;judgeLimitAfter=null;env.speakingAi.enabled=true;env.speakingAi.zeroRetentionConfirmed=true;env.speakingAi.dailyLimit=50;});
-afterAll(async()=>{vi.unstubAllGlobals();env.speakingAi=oldConfig;if(lesson)await admin.delete(base+'/lessons/'+lesson);for(const user of [...users].reverse())await query('DELETE FROM profiles WHERE id=?',[user.id]);});
+afterAll(async()=>{vi.unstubAllGlobals();env.speakingAi=oldConfig;if(lesson)await admin.delete(base+'/lessons/'+lesson);for(const user of [...users].reverse()){await query('DELETE FROM diamond_ledger WHERE profile_id=?',[user.id]);await query('DELETE FROM profiles WHERE id=?',[user.id]);}});
 const create=async()=>{const response=await student.post(base+'/sets/'+set+'/speaking-submissions').send(body());expect(response.status).toBe(200);return response.body.data.id;};
 const clip=(id,q=1,chunk=1,buffer=wav(),agent=student)=>agent.post(`${base}/speaking-submissions/${id}/clips/${q}/${chunk}`).attach('audio',buffer,{filename:'answer.wav',contentType:'audio/wav'});
 
@@ -114,10 +114,12 @@ it('saves trusted per-question scores for admin without storing media or sending
  const responses=await Promise.all([1,2].map(()=>student.post(base+'/speaking-submissions/'+submission+'/finish').send({score:100})));
  expect(responses.map(r=>r.status).sort()).toEqual([200,409]);
  const result=responses.find(r=>r.status===200).body.data;
+ expect(result.reward.earned).toBe(1);
  expect(result.score).toBe(86);expect(result.result.questions).toHaveLength(2);expect(result.result.questions[0]).toMatchObject({pronunciation_score:null,fluency_score:null,content_score:90,score:86});
  expect(result.result.weights).toEqual({content:60,grammar:40,pronunciation:0,fluency:0});expect(result.result.assessment_mode).toBe('content_grammar');
  const judge=calls.find(call=>!call.speech),payload=JSON.parse(judge.body);expect(judge.url).toBe('https://api.groq.com/openai/v1/chat/completions');expect(payload).not.toHaveProperty('store');expect(payload.model).toBe('openai/gpt-oss-120b');expect(judge.body).not.toContain(learner.id);expect(judge.body).not.toContain(learner.username);expect(judge.body).not.toContain('base64');
  const before=calls.length;expect((await student.post(base+'/speaking-submissions/'+submission+'/finish').send({})).status).toBe(200);expect(calls).toHaveLength(before);
+ const [rewardBalance]=await query('SELECT COALESCE(SUM(amount),0) total FROM diamond_ledger WHERE profile_id=?',[learner.id]);expect(Number(rewardBalance.total)).toBe(1);
  const teacher=await chinese.get(base+'/speaking-results');expect(teacher.headers['cache-control']).toContain('no-store');expect(teacher.body.data.find(row=>row.id===submission)).toMatchObject({student_id:learner.id,score:86,status:'completed'});
  expect((await other.get(base+'/speaking-submissions/'+submission)).status).toBe(404);
  const [row]=await query('SELECT * FROM chinese_speaking_submissions WHERE id=?',[submission]);expect(Object.keys(row).some(key=>/audio|video|media_url/i.test(key))).toBe(false);
@@ -172,6 +174,6 @@ it('marks unclear or missing answers for teacher review instead of inventing a s
 it('preserves text results when the source set is deleted and cascades them when the student is deleted',async()=>{
  expect((await admin.delete(base+'/lessons/'+lesson)).status).toBe(200);lesson=null;
  expect((await chinese.get(base+'/speaking-submissions/'+submission)).body.data.result.overall_score).toBe(86);
- await query('DELETE FROM profiles WHERE id=?',[learner.id]);expect(await query('SELECT id FROM chinese_speaking_submissions WHERE student_id=?',[learner.id])).toEqual([]);
+ await query('DELETE FROM diamond_ledger WHERE profile_id=?',[learner.id]);await query('DELETE FROM profiles WHERE id=?',[learner.id]);expect(await query('SELECT id FROM chinese_speaking_submissions WHERE student_id=?',[learner.id])).toEqual([]);
  expect(await query('SELECT submission_id FROM chinese_speaking_clips WHERE submission_id=?',[submission])).toEqual([]);
 });

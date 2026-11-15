@@ -35,7 +35,7 @@ afterEach(async()=>{
  for(const u of users)await query('DELETE FROM chinese_ai_chat_sessions WHERE student_id=?',[u.id]);
  await admin.put(base+'/lessons/'+lesson).send(settings);
 });
-afterAll(async()=>{vi.unstubAllGlobals();env.speakingAi=config;if(lesson)await admin.delete('/api/v1/chinese/lessons/'+lesson);for(const u of users)await query('DELETE FROM profiles WHERE id=?',[u.id]);});
+afterAll(async()=>{vi.unstubAllGlobals();env.speakingAi=config;if(lesson)await admin.delete('/api/v1/chinese/lessons/'+lesson);for(const u of users){await query('DELETE FROM diamond_ledger WHERE profile_id=?',[u.id]);await query('DELETE FROM profiles WHERE id=?',[u.id]);}});
 it('keeps ten scene defaults and detects speech completion without sending silence or brief noise',()=>{
  expect(Array.from({length:10},(_,i)=>defaultChatSettings({title:'Bài '+(i+1),position:i+1}).scenario_id)).toEqual(chatScenarios.map(s=>s.id));
  const d=createVoiceActivity();expect(d.sample(0,0).done).toBe(false);expect(d.sample(.05,100).speaking).toBe(false);expect(d.sample(0,150).speaking).toBe(false);
@@ -98,6 +98,14 @@ it('enforces time and daily budgets while restarting a page does not restore con
  const restarted=(await start()).body.data;expect(restarted.id).toBe(s.id);expect(restarted.turn_count).toBe(1);expect(openChatState(restarted.state,users[1],s.id).context).toEqual([{role:'assistant',content:settings.opening}]);
  await student.post(base+'/sessions/'+s.id+'/finish').send({});const second=(await start()).body.data;await student.post(base+'/sessions/'+second.id+'/finish').send({});expect((await start()).status).toBe(429);
  expect((await other.post(base+'/sessions/'+s.id+'/finish').send({})).status).toBe(404);expect(next.state).toBeTruthy();
+});
+it('credits a real conversation after three successful turns without storing dialogue or paying twice',async()=>{
+ const learner=await createTestUser();users.push(learner);const agent=await loginStudent(learner),s=(await start(agent)).body.data;
+ const first=await turn(s,1,randomUUID(),agent);expect(first.status).toBe(200);expect(first.body.data.reward).toBeUndefined();
+ const second=await turn(first.body.data,2,randomUUID(),agent);expect(second.status).toBe(200);
+ const rid=randomUUID(),third=await turn(second.body.data,3,rid,agent);expect(third.status,third.text).toBe(200);expect(third.body.data.reward.earned).toBe(1);privateColumns(await row(s.id));
+ const repeated=await turn(second.body.data,3,rid,agent);expect(repeated.status).toBe(200);expect(repeated.body.data.recovered).toBe(true);
+ const summary=await agent.get('/api/v1/diamonds/summary');expect(summary.body.data.programs.chinese.total).toBe(1);expect(calls).toHaveLength(3);
 });
 it('finishes at the hard turn limit without generating a final grade or extra question',async()=>{
  const s=(await start()).body.data;await query('UPDATE chinese_ai_chat_sessions SET turn_count=19 WHERE id=?',[s.id]);

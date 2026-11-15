@@ -28,7 +28,7 @@ Giao diện điện thoại dùng ba nhóm cha trong cùng một hàng cho từn
 
 Bấm Luyện nghe để mở màn chọn chặng, mỗi chặng tối đa 10 mục từ trong bài. Các chặng chia theo thứ tự nội dung, không bỏ ngẫu nhiên phần từ còn lại. Chọn chặng rồi bấm Bắt đầu; âm thanh chỉ phát khi học sinh bấm nút nghe. Chặng cuối có thể ít hơn 10 từ, vẫn dùng lựa chọn nhiễu từ kho từ của bài.
 
-Học sinh có thể trở lại màn chọn chặng, tiếp tục phần đang luyện, xem điểm khi hoàn thành và luyện lại. Tiến độ luyện nghe giữ trong lần mở trang hiện tại; tải lại hoặc rời trang sẽ đặt lại phần tự luyện này. Chưa bổ sung lịch sử luyện nghe hoặc đồng bộ tiến độ lên máy chủ, không tính Kim Cương. Quiz và chấm nói giữ quy trình và dữ liệu như trước.
+Học sinh có thể trở lại màn chọn chặng, tiếp tục phần đang luyện, xem điểm khi hoàn thành và luyện lại. Tiến độ câu đang làm giữ trong lần mở trang hiện tại. Hoàn thành chặng nghe nhận 1 kim cương, tối đa một lần/chặng/ngày theo [quy tắc thưởng học tập](learning-rewards.md). Máy chủ lưu kết quả hoàn thành và thưởng; tải lại không cộng trùng. Quiz giữ cách tính điểm và thưởng hiện hành.
 
 ## Phong cách hoạt hình 3D
 

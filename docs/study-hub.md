@@ -20,7 +20,7 @@ Khung làm câu hỏi, báo cáo, lịch sử, mục tiêu, khóa học và tran
 
 Mỗi bộ có **Từ mới** với đúng ba cột: nghĩa tiếng Việt, pinyin, Hán tự. Có lọc theo cả ba trường, nút nghe theo thao tác và liên kết đến thẻ của từ. Nhiều bộ trong cùng bài được hiển thị riêng theo nội dung đã xuất bản của bộ đó.
 
-**Luyện nghe** là lượt tự luyện tối đa 10 từ trong bộ, chỉ bắt đầu phát khi bấm nghe. Học sinh chọn nghĩa, xem Hán tự/pinyin và kết quả sau khi chọn. Không lưu điểm nghe, không tự đánh dấu Đã nhớ và không cộng Kim Cương. Cần ít nhất hai nghĩa khác nhau để có lựa chọn. Nguồn âm thanh dùng cơ chế hiện có, gồm MP3 backend khi thiết bị thiếu giọng; cần cấu hình âm thanh online đúng như chức năng đọc đề.
+**Luyện nghe** là lượt tự luyện tối đa 10 từ trong chặng, chỉ bắt đầu phát khi bấm nghe. Học sinh chọn nghĩa, xem Hán tự/pinyin và kết quả sau khi chọn. Hoàn thành chặng nhận 1 kim cương theo [quy tắc thưởng học tập](learning-rewards.md), không tự đánh dấu Đã nhớ. Cần ít nhất hai nghĩa khác nhau để có lựa chọn. Nguồn âm thanh dùng cơ chế hiện có, gồm MP3 backend khi thiết bị thiếu giọng; cần cấu hình âm thanh online đúng như chức năng đọc đề.
 
 **Quiz 20 câu** mở màn hình chọn cách luyện:
 

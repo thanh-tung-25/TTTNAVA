@@ -3,6 +3,7 @@ import {initPage} from './ui-core.js';
 import {renderItem,resultBlock} from './worksheet-player.js';
 import {animalPath} from './animal-path.js';
 import {subjectsFor,subjectName} from './primary-subjects.js';
+import {rewardNotice} from './study-reward.js';
 const base='/api/v1/worksheets',root=document.querySelector('#ws-content'),notice=document.querySelector('#ws-notice');
 let current,index=0,timer,queue=Promise.resolve(),profile;
 const button=(text,fn,ghost=false)=>el('button',{type:'button',class:'btn'+(ghost?' btn-ghost':''),text,onclick:async event=>{const b=event.currentTarget;b.disabled=true;try{await fn();}catch(e){notice.textContent=e.message;}finally{b.disabled=false;}}});
@@ -50,6 +51,7 @@ function render(){
  }));
  controls.append(button('Danh sách bài',async()=>{await save();await catalog();},true));
  root.replaceChildren(heading,card,controls);
+ if(current.reward)root.append(rewardNotice(current.reward));
 }
 initPage('student','worksheets').then(async user=>{
  profile=user;if(!['primary','secondary'].includes(user.course?.kind)){root.replaceChildren(el('div',{class:'worksheet-locked'},[el('p',{text:'Chọn một khóa Tiểu học hoặc THCS để làm bài tập này nhé.'}),el('a',{class:'btn',href:'/pages/student/courses/',text:'Chọn khóa học'})]));return;}

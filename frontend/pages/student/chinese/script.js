@@ -13,6 +13,7 @@ import {mountSpeaking} from '/assets/js/chinese-speaking.js';
 import {renderChineseAiChat} from '/assets/js/chinese-ai-chat.js';
 import {renderChineseStreet} from '/assets/js/chinese-street.js';
 import {configureChinesePage} from '/assets/js/chinese-student-navigation.js';
+import {studyReward} from '/assets/js/study-reward.js';
 const params=new URLSearchParams(location.search);let catalog,timer,learner;
 const json=v=>typeof v==='string'?JSON.parse(v):v;
 const extra=(title,children)=>el('details',{class:'learn-extra'},[el('summary',{text:title}),...children]);
@@ -58,14 +59,17 @@ async function learn(id){
  if(mode==='listen'){listeningPractice(root(),words,id);return;}
  if(mode==='review'){root().append(action('Ôn 20 câu đã học',()=>quiz(id,true),true));await quiz(id,true);return;}
  if(mode==='apply'){
-  if(applied)mountPractice(root(),applied);
+  if(applied)mountPractice(root(),applied,id);
   else root().append(el('p',{text:'Bài này chưa có hoạt động vận dụng. Hãy chọn Thẻ lật hoặc Bài đọc để tiếp tục.'}));
   return;
  }
  if(mode==='read'){
-  for(const i of reads)root().append(card(i.data.title||'Bài đọc',[el('p',{class:'read-text',text:i.data.text}),action(read.includes(i.id)?'Đã đọc':'Đánh dấu đã đọc',async()=>{if(!read.includes(i.id))read.push(i.id);await save(i.id);notice('Đã lưu tiến độ đọc.');})]));
+  const reward=studyReward({activity:'reading',sourceId:id,required:reads.length});
+  for(const i of reads)root().append(card(i.data.title||'Bài đọc',[el('p',{class:'read-text',text:i.data.text}),action(read.includes(i.id)?'Đã đọc':'Đánh dấu đã đọc',async()=>{if(!read.includes(i.id))read.push(i.id);await save(i.id);reward.item(i.id);notice('Đã lưu tiến độ đọc.');})]));
+  if(reads.length)root().append(reward.node);
   if(!reads.length)root().append(el('p',{text:'Tài liệu này chưa có bài đọc.'}));
  }else if(words.length||questions.length){
+  const cardReward=studyReward({activity:'cards',sourceId:id,required:Math.min(5,words.length)});
   let vocab=words.length>0&&!questions.some(q=>q.id===(params.get('word')||last));
   let deckKey=id+':'+(vocab?'vocabulary':'question'),deck=sessionStudyDeck(vocab?words:questions,deckKey),current=Math.max(0,deck.findIndex(w=>w.id===(params.get('word')||last))),flipped=false,frontMode='hanzi';
   const answers=new Map(),area=el('div'),caption=el('p',{class:'learn-caption',text:vocab?'Thẻ từ vựng':'Thẻ câu hỏi'});
@@ -89,7 +93,7 @@ async function learn(id){
    area.append(questionAudio(vocab?(flipped?[d.hanzi,d.meaning].filter(Boolean).join('. '):d[frontMode]||''):chineseQuestionPrompt(d.prompt)));
    if(vocab){
     const review=catalog.reviews.find(r=>r.item_id===item.id),tools=el('div',{class:'learn-actions'}),audio=audioButton(d);if(audio)tools.append(audio);else area.append(el('p',{class:'muted',text:'Thẻ này chưa có âm thanh hoặc thiết bị chưa có giọng đọc tiếng Trung.'}));
-    for(const [memory,label]of [['new','Chưa nhớ'],['review','Cần ôn'],['remembered','Đã nhớ']])tools.append(action(label,async()=>{const r=await request('/reviews/'+item.id,'PUT',{event_id:crypto.randomUUID(),memory});upsert(r);await save(item.id);notice('Đã lưu tự đánh giá và lịch ôn.');await move(1);}));
+    for(const [memory,label]of [['new','Chưa nhớ'],['review','Cần ôn'],['remembered','Đã nhớ']])tools.append(action(label,async()=>{const r=await request('/reviews/'+item.id,'PUT',{event_id:crypto.randomUUID(),memory});upsert(r);await save(item.id);cardReward.item(item.id);notice('Đã lưu tự đánh giá và lịch ôn.');await move(1);}));
     area.append(tools,extra('Yêu thích',[action(review?.favorite?'★ Bỏ yêu thích':'☆ Yêu thích',async()=>{upsert(await request('/reviews/'+item.id,'PUT',{event_id:crypto.randomUUID(),favorite:!review?.favorite}));render();})]));
    }
    if(focusLabel){const target=focusLabel==='flashcard'?face:[...area.querySelectorAll('button:not(.flashcard)')].find(b=>b.textContent===focusLabel);target?.focus({preventScroll:true});}
@@ -105,8 +109,8 @@ async function learn(id){
   if(words.length&&questions.length){
    const source=field('Loại thẻ','source',vocab?'vocabulary':'question','text',[['vocabulary','Thẻ từ vựng'],['question','Thẻ câu hỏi']]);source.onchange=()=>{vocab=source.querySelector('select').value==='vocabulary';deckKey=id+':'+(vocab?'vocabulary':'question');deck=sessionStudyDeck(vocab?words:questions,deckKey);current=0;flipped=false;caption.textContent=vocab?'Thẻ từ vựng':'Thẻ câu hỏi';render();save(deck[0].id).catch(error);};settings.unshift(source);
   }
-  root().append(area,extra('Tùy chọn thẻ',settings));render();
-  if(words.length)root().append(extra('Tự luyện viết và đọc theo',[writing(),recording()]));
+  root().append(area,...(words.length?[cardReward.node]:[]),extra('Tùy chọn thẻ',settings));render();
+  if(words.length)root().append(extra('Tự luyện viết và đọc theo',[writing(id),recording(id)]));
  }else root().append(el('p',{text:'Tài liệu này chưa có thẻ lật.'}));
  if(items.length)await save(displayed||(last&&items.some(i=>i.id===last)?last:items[0].id));
 }

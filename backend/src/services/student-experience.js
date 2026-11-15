@@ -10,6 +10,7 @@ import {loadQuestionsByIds} from './question-service.js';
 import {wrongNotebook} from './study-hub.js';
 import {familyReport} from './learning-support.js';
 import {chineseQuestionPrompt} from '../../../frontend/assets/js/chinese-question-prompt.js';
+import {awardLearningReward} from './learning-reward.js';
 
 export const json=value=>parseJson(value)||{};
 export const txRun=c=>async(sql,p=[])=>(await c.query(sql,p))[0];
@@ -141,6 +142,7 @@ export async function answerLearningRun(user,id,body){
 }
 export async function finishLearningRun(user,id){
  const original=await ownedLearningRun(user,id);await requireCourse(user,original.course_id);
+ let reward={earned:0,reason:'already_rewarded'};
  await withTransaction(async c=>{const run=txRun(c);await activeStudent(user,run,true);const row=await ownedLearningRun(user,id,run,true);if(row.status==='finished')return;
   const items=json(row.items_json),answers=json(row.answers_json);if(items.some(q=>!Object.hasOwn(answers,q.id)))throw badRequest('Bạn còn câu chưa trả lời. Bài đã được lưu để học tiếp.');
   const now=new Date(),day=localDay(now),correct=Object.values(answers).filter(a=>a.correct).length,repaired=items.filter(q=>q.was_wrong&&answers[q.id].correct).length;
@@ -155,7 +157,8 @@ export async function finishLearningRun(user,id){
   }
   await run("UPDATE learning_runs SET status='finished',finished_at=? WHERE id=?",[now,id]);
   await run('INSERT INTO learning_events(id,profile_id,course_id,event_kind,ref_id,event_day,details_json) VALUES (?,?,?,?,?,?,?)',[randomUUID(),user,row.course_id,'run_finished',id,day,JSON.stringify({total:items.length,correct,repaired,kind:row.run_kind,types:[...new Set(items.map(q=>q.type))]})]);
- });return learningRunState(user,id);
+  reward=await awardLearningReward(user,row.course_id,'session-'+row.run_kind,row.course_id,run);
+ });return {...await learningRunState(user,id),reward};
 }
 export async function learningHint(user,id,level){
  const state=await learningRunState(user,id);if(!state.question)throw badRequest('Không còn câu cần gợi ý.');

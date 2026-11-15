@@ -10,6 +10,7 @@ import {sealChatState,openChatState} from './chinese-chat-state.js';
 import {chatScenarios,defaultChatSettings} from '../../../frontend/assets/js/chinese-ai-chat-data.js';
 import {boundChatSettings,boundedClosing,boundedFallback,vocabularyLesson} from './chinese-curriculum-scope.js';
 import {segmentLearnedChinese} from './chinese-quiz-language.js';
+import {awardLearningReward} from './learning-reward.js';
 export const CHAT_LIMITS={daily:2,preview_daily:5,turns:20,audio_seconds:20,session_minutes:5};
 const uuid=z.string().uuid(),runTx=c=>async(sql,p=[]) =>(await c.query(sql,p))[0];
 const settingsSchema=z.object({enabled:z.boolean(),scenario_id:z.enum(chatScenarios.map(s=>s.id)),goal:z.string().trim().min(1).max(350),opening:z.string().trim().min(1).max(200).refine(s=>/[\u3400-\u9fff]/u.test(s),'Câu mở đầu cần có tiếng Trung.'),translation:z.string().trim().max(300),required_words:z.array(z.string().trim().min(1).max(40)).max(20),max_turns:z.number().int().min(2).max(10)}).strict();
@@ -102,10 +103,14 @@ export async function answerChat(user,id,turnIndex,requestId,input,stateToken){
   if(!text)throw new AppError(422,'CHAT_NO_SPEECH','Chưa nghe rõ. Con nói lại hoặc nhập chữ nhé.');
   const row=claimed.row,count=Number(row.turn_count)+1,last=count>=CHAT_LIMITS.turns;
   const reply=await chatReply({settings:claimed.settings,level:row.level_id,context:state.context,text,lastTurn:last});
-  const saved=await query("UPDATE chinese_ai_chat_sessions SET turn_count=?,status=?,context=NULL,summary=NULL,last_response=NULL,last_request=?,last_hash=?,lease_id=NULL,lease_at=NULL,completed_at=? WHERE id=? AND lease_id=? AND status='active' AND expires_at>CURRENT_TIMESTAMP(3)",[count,last?'completed':'active',requestId,hash,last?new Date():null,id,lease]);
+  let reward;
+  const saved=await withTransaction(async c=>{const run=runTx(c);await run('SELECT id FROM profiles WHERE id=? FOR UPDATE',[user.id]);
+   const saved=await run("UPDATE chinese_ai_chat_sessions SET turn_count=?,status=?,context=NULL,summary=NULL,last_response=NULL,last_request=?,last_hash=?,lease_id=NULL,lease_at=NULL,completed_at=? WHERE id=? AND lease_id=? AND status='active' AND expires_at>CURRENT_TIMESTAMP(3)",[count,last?'completed':'active',requestId,hash,last?new Date():null,id,lease]);
+   if(saved.affectedRows&&count>=3&&user.role==='student')reward=await awardLearningReward(user.id,'hsk-'+row.level_id,'ai-chat',row.lesson_id,run);return saved;
+  });
   if(!saved.affectedRows)throw new AppError(409,'CHAT_FINISHED','Cuộc trò chuyện đã kết thúc.');
   const current={...row,turn_count:count,status:last?'completed':'active'},context=[...state.context,{role:'user',content:text},{role:'assistant',content:reply.reply_zh}].slice(-6),output=stateView(user,current,context,reply);
-  return output;
+  return {...output,...(reward?{reward}:{})};
  }catch(error){await query('UPDATE chinese_ai_chat_sessions SET lease_id=NULL,lease_at=NULL WHERE id=? AND lease_id=?',[id,lease]);throw error;}
 }
 export async function finishChat(user,id){

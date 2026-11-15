@@ -3,9 +3,10 @@ import {questionAudio,withChoiceAudio} from './question-audio.js';
 import {animalPath} from './animal-path.js';
 import {chineseQuestionPrompt} from './chinese-question-prompt.js';
 import {mixStudy,activityConcept} from './chinese-study-variety.js';
+import {studyReward} from './study-reward.js';
 
 // Only published activities supplied by the lesson API are rendered here.
-export function mountPractice(host,lesson){
+export function mountPractice(host,lesson,setId){
  let queue=[],index=0,correct=0,checked=false,selection='',chosen=[];
  const box=card('Luyện vận dụng',[]);box.classList.add('applied-practice');host.append(box);
  const tasks=lesson.tasks;
@@ -14,13 +15,13 @@ export function mountPractice(host,lesson){
  const matches=(a,b)=>normalized(a)===normalized(b);
  const primary=(text,fn)=>{const b=button(text,fn);b.classList.add('btn-primary');return b;};
  const mix=arr=>{const copy=[...arr];for(let i=copy.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];}return copy;};
- let tokens=[],choices=[],currentType;
- const start=type=>{currentType=type;queue=mixStudy(tasks.filter(t=>!type||t.type===type),{key:activityConcept,gap:9}).slice(0,10);index=0;correct=0;nextTask();};
+ let tokens=[],choices=[],currentType,reward;
+ const start=type=>{currentType=type;queue=mixStudy(tasks.filter(t=>!type||t.type===type),{key:activityConcept,gap:9}).slice(0,10);reward=studyReward({activity:'application',sourceId:setId,unit:type||'all',required:queue.length});reward.begin();index=0;correct=0;nextTask();};
  const nextTask=()=>{checked=false;selection='';chosen=[];tokens=mix(queue[index].tokens||[]);choices=mix(queue[index].options||[]);render();const heading=box.querySelector('h2');heading.tabIndex=-1;heading.focus({preventScroll:true});};
  function menu(){
   box.replaceChildren(el('h2',{text:'Luyện vận dụng'}),el('p',{text:lesson.topic+' · Mỗi lượt tối đa 10 câu, chọn ngẫu nhiên từ '+tasks.length+' hoạt động.'}),
    primary('Bắt đầu lượt ngắn',()=>start()),el('div',{class:'applied-shortcuts'},Object.entries(labels).filter(([type])=>tasks.some(t=>t.type===type)).map(([type,label])=>button(label,()=>start(type)))),
-   el('p',{class:'muted',text:'Kết quả chỉ tính trong lượt này; không cộng hoặc trừ Kim Cương.'}));
+   el('p',{class:'muted',text:'Hoàn thành lượt luyện để nhận +1 kim cương. Mỗi dạng của một bài nhận thưởng một lần mỗi ngày.'}));
   animalPath(box.querySelector('.applied-shortcuts'),{selector:':scope > button',title:'Luyện vận dụng',hint:'Bốn cách luyện trong bài. Chọn cách con muốn thử.'});
  }
  function render(){
@@ -33,7 +34,7 @@ export function mountPractice(host,lesson){
   const check=primary('Kiểm tra',()=>{
    if(checked)return;
    if(!selection){feedback.textContent='Hãy chọn câu trả lời trước nhé.';return;}
-   checked=true;const ok=matches(selection,task.answer);if(ok)correct++;
+   checked=true;const ok=matches(selection,task.answer);if(ok)correct++;reward.item(tasks.indexOf(task),selection);
    render();const result=box.querySelector('.applied-feedback');result.tabIndex=-1;result.focus({preventScroll:true});
   });
   if(task.type==='order'){
@@ -64,6 +65,7 @@ export function mountPractice(host,lesson){
  }
  function finish(){
   box.replaceChildren(el('h2',{text:'Hoàn thành lượt luyện!'}),el('p',{class:'quiz-score',text:`${correct}/${queue.length}`}),el('p',{text:'Số câu đúng trong lượt luyện này.'}),el('div',{class:'learn-actions'},[primary('Luyện lại',()=>start(currentType)),button('Chọn cách luyện',menu)]));
+  box.append(reward.node);reward.finish();
  }
  menu();
 }

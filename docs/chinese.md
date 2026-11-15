@@ -181,7 +181,7 @@ API bổ sung: GET `sets/:id/study/:itemId` dành cho học sinh, kiểm tra bà
 
 ### Kim Cương và lượt đang làm
 
-Quy tắc đã xác nhận: đúng 100% được +3; từ 70% đến dưới 100% được +1; dưới 70% bị −1. Chỉ trừ tới số dư 0. Áp dụng cho quiz 20 câu và bài kiểm tra Tiếng Trung mới. Thẻ lật/đánh dấu đã đọc không cộng/trừ Kim Cương. Điểm, biến động và ledger được lưu cùng transaction, khóa theo học sinh và lượt; chốt/nộp lặp không tạo thưởng/phạt trùng. Đủ câu tự chốt; nộp sớm hoặc hết giờ tính các câu chưa chốt là sai và áp dụng cùng quy tắc. Quy tắc được chụp trong snapshot, không tính lại phần thưởng lịch sử.
+Quy tắc đã xác nhận: đúng 100% được +3; từ 70% đến dưới 100% được +1; dưới 70% bị −1. Chỉ trừ tới số dư 0. Áp dụng cho quiz 20 câu và bài kiểm tra Tiếng Trung mới. Các phần tự luyện có [thưởng hoàn thành riêng](learning-rewards.md). Điểm, biến động và ledger được lưu cùng transaction, khóa theo học sinh và lượt; chốt/nộp lặp không tạo thưởng/phạt trùng. Đủ câu tự chốt; nộp sớm hoặc hết giờ tính các câu chưa chốt là sai và áp dụng cùng quy tắc. Quy tắc được chụp trong snapshot, không tính lại phần thưởng lịch sử.
 
 Migration `013_chinese_quiz_diamonds.sql` thêm `abandoned_at`, `diamonds_delta` và các loại ledger Tiếng Trung. Lượt dở trước migration được đóng mềm, ẩn khỏi danh sách đang làm, không chấm điểm hoặc phạt hồi tố; toàn bộ dữ liệu còn trong database. Kết quả đã hoàn thành giữ nguyên. Sau cập nhật chỉ duy trì một lượt đang làm cho mỗi học sinh và mỗi nguồn quiz/bài kiểm tra. Trang Kết quả tách phần Tiếp tục học khỏi danh sách đã hoàn thành, có cột Kim Cương. Header và lịch sử Kim Cương chung nhận biến động Tiếng Trung.
 

@@ -7,6 +7,7 @@ import {studentVisibleCondition} from '../utils/student-visibility.js';
 import {writeAdminAudit} from './admin-audit.js';
 import {requireCourse} from './course-service.js';
 import {txRun,sourceItems,insertLearningRun,runLink,json} from './student-experience.js';
+import {awardLearningReward} from './learning-reward.js';
 
 async function staffCourse(actor,courseId){
  const scope=adminScopeOf(actor),[course]=await query('SELECT * FROM courses WHERE id=?',[courseId]);if(!scope)throw forbidden();if(!course)throw notFound();if(scope!=='super'&&scope!==course.kind)throw forbidden('Khóa học không thuộc phạm vi quản lý.');return course;
@@ -70,6 +71,9 @@ export async function startAssignment(user,id){
 }
 export async function submitWriting(user,id,body){
  const d=z.object({text:z.string().max(20000),revision:z.number().int().min(0),submit:z.boolean().default(false)}).strict().parse(body),a=await memberAssignment(user,id);if(a.assignment_kind!=='writing')throw badRequest('Bài này được nộp qua phần câu hỏi.');if(a.submitted_at)throw badRequest('Bài đã nộp; bạn có thể đọc phản hồi của giáo viên.');if(d.submit&&d.text.trim().length<10)throw badRequest('Bài viết cần ít nhất 10 ký tự.');
- const result=await query('UPDATE study_assignment_members SET draft_text=?,submitted_at=?,draft_revision=draft_revision+1 WHERE assignment_id=? AND student_id=? AND submitted_at IS NULL AND draft_revision=?',[d.text,d.submit?new Date():null,id,user,d.revision]);
- if(!result.affectedRows)throw new AppError(409,'WRITING_REVISION_CONFLICT','Bài đã thay đổi ở thiết bị khác. Hãy giữ lại nội dung đang viết và mở lại bài.');return {saved:true,submitted:d.submit,revision:d.revision+1};
+ return withTransaction(async c=>{const run=txRun(c);await run('SELECT id FROM profiles WHERE id=? FOR UPDATE',[user]);
+  const result=await run('UPDATE study_assignment_members SET draft_text=?,submitted_at=?,draft_revision=draft_revision+1 WHERE assignment_id=? AND student_id=? AND submitted_at IS NULL AND draft_revision=?',[d.text,d.submit?new Date():null,id,user,d.revision]);
+  if(!result.affectedRows)throw new AppError(409,'WRITING_REVISION_CONFLICT','Bài đã thay đổi ở thiết bị khác. Hãy giữ lại nội dung đang viết và mở lại bài.');
+  const reward=d.submit?await awardLearningReward(user,a.course_id,'assignment-writing',id,run):null;return {saved:true,submitted:d.submit,revision:d.revision+1,...(reward?{reward}:{})};
+ });
 }

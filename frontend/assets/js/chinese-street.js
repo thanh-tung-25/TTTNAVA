@@ -2,6 +2,7 @@ import {el,link,request} from './chinese-common.js';
 import {streetPlaces} from './chinese-street-places.js';
 import {createStreetVoice} from './chinese-street-audio.js';
 import {renderStreetEditor} from './chinese-street-editor.js';
+import {rewardNotice} from './study-reward.js';
 const text=(value,className='')=>el('p',{class:className,text:value});
 const button=(label,action,primary=false)=>el('button',{type:'button',class:'btn '+(primary?'btn-primary':'btn-secondary'),text:label,onclick:action});
 const image=(place)=>el('img',{src:'/assets/images/chinese-street/'+place.id+'.svg',alt:'',width:180,height:160,loading:'lazy'});
@@ -65,6 +66,7 @@ export async function renderChineseStreet(host,{role='student',level=1}={}){
   }else card.append(button('Chọn trên bản đồ ↓',()=>map.scrollIntoView({block:'start'})),el('p',{class:'street-map-instruction','data-chosen-place':'',text:'Chưa chọn địa điểm.'}));
   const check=button('Kiểm tra lựa chọn',checkAnswer,true);check.dataset.check='';card.append(check);
   if(result){
+   if(result.reward)card.append(rewardNotice(result.reward));
    const feedback=el('div',{class:'street-feedback '+(result.correct?'is-correct':'is-wrong'),role:'status',tabindex:-1},[el('strong',{text:result.correct?'Đúng rồi! '+(admin?'':'★'.repeat(result.stars)):'Thử lại một chút nhé'}),text(result.feedback)]);card.append(feedback);
    if(result.correct){
     const last=index===data.missions.length-1;

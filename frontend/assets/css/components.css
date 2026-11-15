@@ -375,3 +375,4 @@
 .password-toggle:hover { background: var(--primary-soft, #f0eaff); }
 .password-toggle:focus-visible { outline: 3px solid var(--primary); outline-offset: 1px; }
 .password-toggle [hidden] { display: none; }
+.study-reward-status{margin:12px 0;font-size:.88rem;line-height:1.6;color:#7852a7;overflow-wrap:anywhere}.study-reward-status:empty{display:none}.study-word-check{display:flex;gap:6px;align-items:center;min-height:36px;font-size:.75rem;color:var(--muted);cursor:pointer}.study-word-check input{width:16px;height:16px;accent-color:var(--primary)}

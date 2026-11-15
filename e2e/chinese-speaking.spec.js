@@ -6,6 +6,12 @@ import {speakingQuestions,speakingFilename} from '../frontend/assets/js/chinese-
 let server,origin;
 test.use({permissions:['microphone'],launchOptions:{args:['--use-fake-device-for-media-stream','--use-fake-ui-for-media-stream','--autoplay-policy=no-user-gesture-required']}});
 const questions=['请问，这是谁的名片？','你叫什么名字？','你今天好吗？'];
+function isRewardMetadata(request){
+ if(request.method!=='POST'||!request.path.includes('/experience/study-sessions'))return false;const body=JSON.parse(request.body||'{}');
+ if(request.path.endsWith('/experience/study-sessions'))return Object.keys(body).sort().join(',')==='activity,source_id,unit'&&body.activity==='recording'&&body.source_id==='sample'&&body.unit==='all';
+ if(request.path.endsWith('/experience/study-sessions/00000000-0000-4000-8000-000000000099/finish'))return Object.keys(body).join(',')==='duration'&&Number.isFinite(body.duration)&&body.duration>=5&&body.duration<=120;
+ return false;
+}
 function audioFixture(){
  const rate=16000,count=rate/3,bytes=Buffer.alloc(44+count*2);bytes.write('RIFF');bytes.writeUInt32LE(bytes.length-8,4);bytes.write('WAVEfmt ',8);bytes.writeUInt32LE(16,16);bytes.writeUInt16LE(1,20);bytes.writeUInt16LE(1,22);bytes.writeUInt32LE(rate,24);bytes.writeUInt32LE(rate*2,28);bytes.writeUInt16LE(2,32);bytes.writeUInt16LE(16,34);bytes.write('data',36);bytes.writeUInt32LE(count*2,40);
  for(let n=0;n<Math.floor(count);n++)bytes.writeInt16LE(Math.round(Math.sin(2*Math.PI*220*n/rate)*8000),44+n*2);return bytes;
@@ -31,6 +37,8 @@ async function mock(page,{published=true,audio=true,configured=true,settings={du
   const req=r.request(),p=new URL(req.url()).pathname;state.requests.push({path:p,method:req.method(),body:req.postData()});
   if(p.endsWith('/question-audio'))return r.fulfill(state.audio?{contentType:'audio/wav',body:audioFixture()}:{status:502,json:{error:{message:'Unavailable'}}});let data={};
   if(p.endsWith('/auth/me'))data={profile:{id:'student-1',role:state.role,adminScope:'chinese',username:'ngoc_anh',displayName:'Ngọc Anh',grade:null}};
+  else if(p.endsWith('/experience/study-sessions'))data={id:'00000000-0000-4000-8000-000000000099',required:5};
+  else if(p.endsWith('/experience/study-sessions/00000000-0000-4000-8000-000000000099/finish'))data={reward:{earned:1,reason:'completed'}};
   else if(p.endsWith('/access'))data={id:'hsk-1',kind:'chinese',level:1,title:'HSK 1',unlocked:true};else if(p.endsWith('/diamonds/summary'))data={total:0};else if(p.includes('/chat/'))data=[];else if(p.endsWith('/experience/preferences'))data={font_scale:'normal',speech_rate:1};
   else if(p.endsWith('/chinese/catalog'))data={levels:[{id:1,title:'HSK 1'}],lessons:[lesson],sets:[set],counts:[{set_id:set.id,kind:'vocabulary',total:1}],reviews:[],progress:[],completion:[]};
   else if(p.endsWith('/chinese/sets/sample'))data={set,activities,items:[{id:'word',kind:'vocabulary',data:{hanzi:'名片',pinyin:'míngpiàn',meaning:'danh thiếp'}}],progress:null};
@@ -73,7 +81,7 @@ test('grades microphone-only answers after explicit submission and shows the sam
  await expect(page.locator('.speaking-ai-panel')).toContainText('Đã gửi kết quả cho cô');
  expect([...new Set(state.clips.map(c=>c.question))]).toEqual([1,2,3]);expect(downloads).toBe(0);
  await expect(page.locator('.speaking-result audio')).toHaveAttribute('src',recordingUrl);await expect(page.getByRole('button',{name:'Đã gửi kết quả cho cô',exact:true})).toBeDisabled();
- expect(state.requests.filter(r=>r.method==='POST'&&!r.path.endsWith('/question-audio')).every(r=>r.path.includes('speaking-submissions'))).toBe(true);
+ expect(state.requests.filter(r=>r.method==='POST'&&!r.path.endsWith('/question-audio')).every(r=>isRewardMetadata(r)||r.path.includes('speaking-submissions'))).toBe(true);
  expect(state.requests.some(r=>r.method==='POST'&&/video|storage|upload/i.test(r.path))).toBe(false);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await page.screenshot({path:'test-results/speaking-ai-student-mobile.png',fullPage:true});
@@ -99,7 +107,7 @@ test('provider failure preserves the local recording and allows retry; downloadi
 test('unconfigured AI leaves audio recording usable and sends no audio for grading',async({page})=>{
  const state=await mock(page,{configured:false,settings:{duration_seconds:90,order:'sequential',ai_assessment:true}});await recordAnswers(page);
  await expect(page.getByRole('button',{name:'AI chấm bài & gửi cô',exact:true})).toBeDisabled();await expect(page.locator('.speaking-ai-panel')).toContainText('Chấm AI chưa được bật');
- expect(state.clips).toEqual([]);expect(state.requests.filter(r=>r.method==='POST').every(r=>r.path.endsWith('/question-audio'))).toBe(true);
+ expect(state.clips).toEqual([]);expect(state.requests.filter(r=>r.method==='POST').every(r=>isRewardMetadata(r)||r.path.endsWith('/question-audio'))).toBe(true);
  await expect(page.locator('.speaking-download')).toHaveAttribute('href',/^blob:/);await page.getByRole('button',{name:'Ghi âm lại',exact:true}).click();await expect(page.locator('.speaking-studio')).toHaveAttribute('data-phase','recording');
 });
 
@@ -111,7 +119,7 @@ test('rechecks AI after configuration changes and grades the same recording with
  await expect(page.getByRole('button',{name:'AI chấm bài & gửi cô',exact:true})).toBeEnabled();
  await expect(page.getByRole('button',{name:'Kiểm tra lại AI',exact:true})).toBeHidden();
  await expect(page.locator('.speaking-download')).toHaveAttribute('href',recordingUrl);expect(await page.evaluate(()=>window.__recorders)).toBe(1);
- expect(state.requests.filter(r=>r.method==='POST').every(r=>r.path.endsWith('/question-audio'))).toBe(true);
+ expect(state.requests.filter(r=>r.method==='POST').every(r=>isRewardMetadata(r)||r.path.endsWith('/question-audio'))).toBe(true);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await page.getByRole('button',{name:'AI chấm bài & gửi cô',exact:true}).click();await expect(page.locator('.speaking-ai-score')).toHaveText('86/100');
  await expect(page.locator('.speaking-result audio')).toHaveAttribute('src',recordingUrl);
@@ -155,7 +163,7 @@ for(const viewport of [{width:320,height:568},{width:360,height:800},{width:390,
  await expect(page.locator('.speaking-studio')).toHaveAttribute('data-phase','recording');expect(await page.evaluate(()=>window.__recorders)).toBe(1);
  await stop(page);await expect(page.locator('.speaking-result audio')).toBeInViewport();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
- expect(state.requests.filter(r=>r.method==='POST').every(r=>r.path.endsWith('/question-audio'))).toBe(true);
+ expect(state.requests.filter(r=>r.method==='POST').every(r=>isRewardMetadata(r)||r.path.endsWith('/question-audio'))).toBe(true);
 });
 test('records a real audio-only answer file, enforces listens and closes the microphone without requesting camera',async({page})=>{
  await page.addInitScript(()=>{HTMLCanvasElement.prototype.captureStream=undefined;});
@@ -167,7 +175,7 @@ test('records a real audio-only answer file, enforces listens and closes the mic
  await stop(page);await expect(page.locator('.speaking-result-question')).toContainText('Đã nghe 3/3');await expect(page.locator('.speaking-result-timeline li')).toHaveCount(3);
  const event=page.waitForEvent('download');await page.locator('.speaking-download').click();const download=await event;expect(download.suggestedFilename()).toMatch(/BaiNoi_3Cau_Ngoc_Anh_.*\.(m4a|webm|ogg)$/);expect((await stat(await download.path())).size).toBeGreaterThan(1000);
  const audio=await page.evaluate(async()=>{const player=document.querySelector('.speaking-result audio');await player.play();player.pause();const response=await fetch(player.src);return {type:(await response.blob()).type};});expect(audio.type).toMatch(/^audio\//);
- expect(state.requests.filter(r=>r.method!=='GET').every(r=>r.path.endsWith('/question-audio')&&Object.keys(JSON.parse(r.body)).sort().join(',')==='lang,text')).toBe(true);
+ expect(state.requests.filter(r=>r.method!=='GET').every(r=>isRewardMetadata(r)||r.path.endsWith('/question-audio')&&Object.keys(JSON.parse(r.body)).sort().join(',')==='lang,text')).toBe(true);
  expect(await page.evaluate(()=>window.__micTracks.every(t=>t.readyState==='ended'))).toBe(true);expect(errors).toEqual([]);
 });
 test('supports teacher-selected free order and identifies incomplete recordings',async({page})=>{

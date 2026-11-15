@@ -1,12 +1,13 @@
 import {Router} from 'express';
 import {z} from 'zod';
-import {authenticateToken,requireStudent,requireAdmin} from '../middlewares/auth.js';
+import {authenticateToken,requireStudent,requireAdmin,requirePlayer} from '../middlewares/auth.js';
 import {asyncHandler} from '../utils/errors.js';
 import {rateLimit} from '../middlewares/rate-limit.js';
 import * as study from '../services/student-experience.js';
 import * as rewards from '../services/student-rewards.js';
 import * as connections from '../services/student-connections.js';
 import * as assignments from '../services/study-assignments.js';
+import {startStudyActivity,finishStudyActivity} from '../services/study-activity.js';
 const router=Router();
 const course=req=>z.string().min(1).max(32).parse(req.get('X-Course-Id')||req.cookies?.ttnava_course||req.query.courseId||'');
 const handle=fn=>asyncHandler(async(req,res)=>{const data=await fn(req);res.set('Cache-Control','no-store').json({data});});
@@ -19,6 +20,8 @@ router.post('/assignments/manage',requireAdmin,rateLimit({max:10,keyPrefix:'crea
 router.get('/assignments/manage/:id',requireAdmin,handle(r=>assignments.staffAssignmentDetail(r.user,r.params.id)));
 router.post('/assignments/manage/:id/review/:studentId',requireAdmin,handle(async r=>{const data=await assignments.reviewAssignment(r.user,r.params.id,r.params.studentId,r.body);r.res.locals.adminAuditWritten=true;return data;}));
 router.use(requireStudent);
+router.post('/study-sessions',requirePlayer,rateLimit({max:30,keyPrefix:'study-start'}),handle(r=>startStudyActivity(r.user.id,course(r),r.body)));
+router.post('/study-sessions/:id/finish',requirePlayer,rateLimit({max:30,keyPrefix:'study-finish'}),handle(r=>finishStudyActivity(r.user.id,r.params.id,r.body)));
 router.get('/preferences',handle(r=>study.preferences(r.user.id)));
 router.put('/preferences',handle(r=>study.savePreferences(r.user.id,r.body)));
 router.get('/dashboard',handle(r=>study.experienceDashboard(r.user.id,course(r))));

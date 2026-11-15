@@ -8,7 +8,7 @@ Học sinh bấm nghe hoặc nghe chậm, sau đó chọn lời đáp hay chạm
 
 - Đúng lần đầu: 3 sao; sau một lần sai: 2 sao; sau hai lần sai trở lên: 1 sao.
 - Tiến độ lưu theo tài khoản, bài và nội dung nhiệm vụ. Tải lại trang sẽ mở nhiệm vụ chưa hoàn thành đầu tiên.
-- Luyện lại giữ nguyên sao đã đạt, không cộng sao trùng và không giảm sao cũ. Đây là sao trong Phố tiếng Trung, không cộng vào ví kim cương hoặc điểm thi.
+- Luyện lại giữ nguyên sao đã đạt, không cộng sao trùng và không giảm sao cũ. Sao trong Phố tiếng Trung được lưu riêng. Hoàn thành tất cả nhiệm vụ của một bài trong ngày nhận thêm 1 kim cương theo [quy tắc thưởng học tập](learning-rewards.md); không thay đổi điểm thi.
 - Gửi lại cùng mã lượt trả về kết quả cũ. Khóa hàng tài khoản bảo đảm các yêu cầu đồng thời không cộng sai tiến độ.
 - Nếu cô sửa nội dung, nhiệm vụ dùng một phiên bản tiến độ riêng. Kết quả phiên bản trước vẫn có trong DB; màn hình và báo cáo chỉ tính nội dung hiện tại.
 

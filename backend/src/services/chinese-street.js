@@ -9,6 +9,7 @@ import {streetPlaces} from '../../../frontend/assets/js/chinese-street-places.js
 import {vocabularyLesson} from './chinese-curriculum-scope.js';
 import {validateCurriculumChinese} from './chinese-curriculum.js';
 import {segmentLearnedChinese} from './chinese-quiz-language.js';
+import {awardLearningReward,rewardDay} from './learning-reward.js';
 const uuid=z.string().uuid(),key=z.string().regex(/^[a-z0-9-]{1,50}$/),placeIds=streetPlaces.map(p=>p.id),runTx=c=>async(sql,p=[]) =>(await c.query(sql,p))[0];
 const option=z.object({id:key,label:z.string().trim().min(1).max(100)}).strict();
 const missionSchema=z.object({id:key,title:z.string().trim().min(1).max(80),instruction:z.string().trim().min(1).max(200),speech:z.string().trim().min(1).max(240).refine(s=>/\p{Script=Han}/u.test(s),'Câu nghe cần có chữ Trung.'),type:z.enum(['choice','map']),options:z.array(option).max(4),answer:key,feedback:z.string().trim().min(1).max(600)}).strict().superRefine((m,c)=>{
@@ -81,6 +82,12 @@ export async function answerStreet(user,id,missionId,body){
   const response={correct,stars,completed:Boolean(old?.completed_at)||correct,feedback:correct?m.feedback:'Chưa đúng rồi. Con nghe lại hoặc mở chữ để thử thêm một lần nhé.',...(correct?{answer_id:m.answer}:{}),wrong_count:wrong};
   if(old)await run('UPDATE chinese_street_progress SET wrong_count=?,best_stars=?,last_request=?,last_choice=?,last_response=?,completed_at=?,updated_at=CURRENT_TIMESTAMP(3) WHERE '+where,[wrong,stars,input.request_id,input.choice_id,JSON.stringify(response),old.completed_at||(correct?new Date():null),...params]);
   else await run('INSERT INTO chinese_street_progress(student_id,lesson_id,mission_id,content_hash,wrong_count,best_stars,last_request,last_choice,last_response,completed_at) VALUES (?,?,?,?,?,?,?,?,?,?)',[...params,wrong,stars,input.request_id,input.choice_id,JSON.stringify(response),correct?new Date():null]);
+  if(correct&&user.role==='student'){
+   const progress=await run('SELECT mission_id,content_hash,last_response,updated_at,completed_at FROM chinese_street_progress WHERE student_id=? AND lesson_id=?',[user.id,id]),since=new Date(rewardDay()+'T00:00:00+07:00');
+   if(config.missions.every(task=>progress.some(p=>p.mission_id===task.id&&p.content_hash===streetContentHash(task)&&p.completed_at&&new Date(p.updated_at)>=since&&json(p.last_response)?.correct))){
+    response.reward=await awardLearningReward(user.id,'hsk-'+lesson.level_id,'street',id,run);await run('UPDATE chinese_street_progress SET last_response=? WHERE '+where,[JSON.stringify(response),...params]);
+   }
+  }
   return response;
  });
 }

@@ -4,8 +4,10 @@ import {speakingQuestions,speakingSettings,speakingTime,speakingStamp,speakingFi
 import {speakingSupported,createSpeakingMedia} from './chinese-speaking-media.js';
 import {speakingView} from './chinese-speaking-view.js';
 import {speakingAssessment} from './chinese-speaking-assessment.js';
+import {studyReward} from './study-reward.js';
 
 export function mountSpeaking(host,{set,activities,items=[],profile}){
+ let study;
  if(!document.querySelector('link[data-speaking-style]'))document.head.append(el('link',{rel:'stylesheet',href:'/assets/css/chinese-speaking.css','data-speaking-style':'true'}));
  const questions=speakingQuestions(activities,items),settings=speakingSettings(set);
  if(!questions.length){host.append(el('section',{class:'card'},[el('h2',{text:'Luyện nói theo bài'}),el('p',{text:'Bài này chưa có câu hỏi phù hợp để luyện nói. Giáo viên cần thêm và đăng câu hỏi tiếng Trung trong mục Luyện nói.'}),link('Về bài học',{set:set.id})]));return;}
@@ -41,6 +43,8 @@ export function mountSpeaking(host,{set,activities,items=[],profile}){
   ui.timeline.replaceChildren(...snapshot.questions.map((question,index)=>{const event=snapshot.timeline.find(item=>item.index===index+1);return el('li',{text:`${event?speakingTime(event.seconds):'Chưa nghe'} · Câu ${index+1}: ${question}`});}));
   ui.resultInfo.textContent=`Mã lượt ${snapshot.code} · ${snapshot.date} · ${(blob.size/1024/1024).toFixed(1)} MB · ${speakingFilename(snapshot,blob.type).split('.').at(-1).toUpperCase()}`;
   update((reason?reason+' ':'')+'Bản ghi đã sẵn sàng. Nghe lại, ghi âm lại nếu cần hoặc bấm AI chấm bài.');
+  const seconds=(performance.now()-started)/1000;
+  if(study&&snapshot.heard_count===snapshot.total&&snapshot.answer_segments?.length>=snapshot.total&&seconds>=5){study.evidence({duration:Math.min(120,seconds)});ui.result.querySelector('.study-reward-status')?.remove();ui.result.append(study.node);study.finish();}
   if(matchMedia('(max-width:680px)').matches)ui.result.scrollIntoView({block:'start'});
  }
  function failed(error){
@@ -69,6 +73,7 @@ export function mountSpeaking(host,{set,activities,items=[],profile}){
  };
  const start=async()=>{
   if(busy()||assessing||disposed||!supported)return;const token=++generation;abort?.abort();abort=new AbortController();reason='';takeFailed=false;playing=false;activeAnswer=null;stopQuestionAudio();ui.resultAudio.pause();
+  study=studyReward({activity:'recording',sourceId:set.id,required:5});study.begin();
   try{
    if(!media.ready){phase='opening';update('Đang bật micro để ghi âm lại bài…');if(!await media.open())return;}
    if(disposed||token!==generation)return;phase='loading';update('Đang chuẩn bị âm thanh cho tất cả câu hỏi…');

@@ -102,6 +102,7 @@ export async function renderChineseAiChat(host,{role='student',level=1}={}){
    const body=turn.blob?new FormData():{text:turn.text,state:turn.state};if(turn.blob){body.append('state',turn.state);body.append('audio',turn.blob,'turn.wav');}
    const data=(await api('/api/v1/chinese/ai-chat/sessions/'+current+'/turns/'+turn.turn+'/'+turn.id+'/'+(turn.blob?'audio':'text'),{method:'POST',body,signal:aborter.signal})).data;
    if(!session||session.id!==current||epoch!==conversationEpoch||disposed)return;session=data;reply=data.reply;pending=null;updateReply();inflight=false;
+   if(data.reward?.earned>0)host.append(rewardNotice(data.reward));
    if(data.status!=='active'){if(active)await audio.say(reply.reply_zh);endConversation();return;}
    if(active)await speakAndListen();else setPhase('paused','AI đã trả lời. Bạn bấm Tiếp tục hoặc nhập chữ để trò chuyện tiếp.');
   }catch(e){
@@ -127,3 +128,4 @@ export async function renderChineseAiChat(host,{role='student',level=1}={}){
  try{await refresh();if(!disposed)renderSetup();}catch(e){tell(e);main.append(button('Thử tải lại',()=>location.reload()));}
  return dispose;
 }
+import {rewardNotice} from './study-reward.js';

@@ -7,6 +7,7 @@ import {publishedActivitiesForSet} from './chinese-activities.js';
 import {speakingQuestions,speakingSettings} from '../../../frontend/assets/js/chinese-speaking-data.js';
 import {AppError,notFound} from '../utils/errors.js';
 import {assessSpeakingAudio,judgeSpeakingAnswers,speakingAiAvailability,validateSpeakingWav} from './chinese-speaking-provider.js';
+import {awardLearningReward} from './learning-reward.js';
 
 const runTx=c=>async(sql,params=[]) => (await c.query(sql,params))[0];
 const unavailable=()=>{const availability=speakingAiAvailability();if(!availability.configured)throw new AppError(503,'SPEAKING_AI_UNAVAILABLE',availability.reason);return availability;};
@@ -105,8 +106,11 @@ export async function finishSpeakingSubmission(user,id){
   const scored=questions.filter(q=>q.status==='scored'),status=scored.length===questions.length?'completed':'needs_review';
   const score=status==='completed'?Math.round(scored.reduce((sum,q)=>sum+q.score,0)/questions.length):null;
   const result={questions,scored_count:scored.length,question_count:questions.length,overall_score:score,assessment_mode:'content_grammar',weights:{content:60,grammar:40,pronunciation:0,fluency:0},notice:'Điểm dựa trên bản nhận diện: đúng ý 60%, từ và ngữ pháp 40%; chưa chấm phát âm, thanh điệu hoặc độ trôi chảy. Nhận diện có thể sai; giáo viên đánh giá cuối cùng. Server chỉ lưu kết quả chữ và điểm, không lưu bản ghi âm.'};
-  await query('UPDATE chinese_speaking_submissions SET status=?,result=?,score=?,completed_at=CURRENT_TIMESTAMP(3),updated_at=CURRENT_TIMESTAMP(3) WHERE id=? AND lease_id=?',[status,JSON.stringify(result),score,id,lease]);
-  return speakingSubmission(user,id);
+  const reward=await withTransaction(async c=>{const run=runTx(c);await run('SELECT id FROM profiles WHERE id=? FOR UPDATE',[user.id]);
+   const updated=await run('UPDATE chinese_speaking_submissions SET status=?,result=?,score=?,completed_at=CURRENT_TIMESTAMP(3),updated_at=CURRENT_TIMESTAMP(3) WHERE id=? AND lease_id=?',[status,JSON.stringify(result),score,id,lease]);
+   return updated.affectedRows&&questions.every(q=>q.transcript?.trim())?awardLearningReward(user.id,'hsk-'+submission.level_id,'speaking',submission.set_id,run):null;
+  });
+  return {...await speakingSubmission(user,id),...(reward?{reward}:{})};
  }catch(error){await query("UPDATE chinese_speaking_submissions SET status='failed',error_code=?,updated_at=CURRENT_TIMESTAMP(3) WHERE id=? AND lease_id=?",[error instanceof AppError?error.code:'SPEAKING_GRADING_FAILED',id,lease]);throw error;}
 }
 export async function speakingSubmission(user,id){

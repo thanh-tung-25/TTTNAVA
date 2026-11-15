@@ -1,6 +1,7 @@
 import {el} from './chinese-common.js';
 import {questionAudio,withChoiceAudio,stopQuestionAudio} from './question-audio.js';
 import {uniqueStudyWords,shuffleStudy} from './chinese-study-variety.js';
+import {studyReward} from './study-reward.js';
 
 export function listeningStages(words,size=10){
  const unique=uniqueStudyWords(words).filter(i=>i.data.hanzi&&i.data.meaning);
@@ -22,11 +23,11 @@ export function listeningPractice(host,words,setId){
    ]);map.append(tile);
   }
   const state=sessions.get(selected),done=state?.index===stages[selected].length;
-  app.append(el('div',{class:'listening-start'},[el('p',{text:'Chặng '+(selected+1)+' · '+stages[selected].length+' từ'}),button((done?'Luyện lại':state?'Tiếp tục':'Bắt đầu')+' chặng '+(selected+1),()=>start(),true)]),map,el('p',{class:'listening-note',text:'Chỉ phát âm thanh khi bạn bấm nghe. Đây là phần tự luyện, không tính Kim Cương.'}));
+  app.append(el('div',{class:'listening-start'},[el('p',{text:'Chặng '+(selected+1)+' · '+stages[selected].length+' từ'}),button((done?'Luyện lại':state?'Tiếp tục':'Bắt đầu')+' chặng '+(selected+1),()=>start(),true)]),map,el('p',{class:'listening-note',text:'Hoàn thành mỗi chặng nhận +1 kim cương, một lần mỗi ngày. Chỉ phát âm thanh khi bạn bấm nghe.'}));
  }
  function start(restart=false){
   let state=sessions.get(selected);
-  if(restart||!state||state.index===state.deck.length){state={deck:[...stages[selected]],index:0,score:0,answer:null};sessions.set(selected,state);}
+  if(restart||!state||state.index===state.deck.length){state={deck:[...stages[selected]],index:0,score:0,answer:null,reward:studyReward({activity:'listening',sourceId:setId,unit:selected,required:stages[selected].length})};sessions.set(selected,state);state.reward.begin();}
   showQuestion();
  }
  function showQuestion(){
@@ -40,6 +41,7 @@ export function listeningPractice(host,words,setId){
    const answer=button(option.data.meaning,()=>{
     if(state.answer!==null)return;
     state.answer=option.id;if(option.id===item.id)state.score++;stopQuestionAudio();
+    state.reward.item(item.id,option.data.meaning);
     for(const b of choices.querySelectorAll('.listening-answer'))b.disabled=true;
     feedback();next.hidden=false;
    });answer.classList.add('listening-answer');answer.disabled=state.answer!==null;choices.append(withChoiceAudio(answer,option.data.meaning,n+1));
@@ -51,6 +53,7 @@ export function listeningPractice(host,words,setId){
  function showResult(){
   const state=sessions.get(selected);
   app.replaceChildren(el('section',{class:'hub-card listening-result'},[el('img',{src:'/assets/images/mascot-panda.svg',width:100,height:110,alt:''}),el('h3',{text:'Hoàn thành chặng '+(selected+1)+'!'}),el('p',{text:state.score+'/'+state.deck.length+' câu đúng'}),el('div',{class:'listening-result-actions'},[button('Về các chặng',showStages),button('Luyện lại chặng này',()=>start(true),true),...(selected<stages.length-1?[button('Chặng tiếp theo',()=>{selected++;showStages();})]:[])])]));
+  app.querySelector('.listening-result').append(state.reward.node);state.reward.finish();
  }
  showStages();
  return ()=>stopQuestionAudio();

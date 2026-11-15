@@ -18,7 +18,7 @@ Chọn dạng bài rồi bấm **Thêm câu**. Nhập đề, đáp án, lời gi
 | Toán có lời văn | Đề bài, đáp số chấp nhận và đơn vị tùy chọn; chấm đáp số, không tự đánh giá cách diễn giải |
 | Tự luận / vẽ | Học sinh viết hoặc vẽ; giáo viên chấm đúng/chưa đúng và thêm nhận xét |
 
-Một bộ có tối đa 50 câu. Hệ thống chấm mỗi câu trọng số bằng nhau. Câu nhiều ô có phản hồi từng ô, nhưng chỉ tính đúng cả câu khi tất cả ô đúng. Không cộng kim cương cho bộ bài này.
+Một bộ có tối đa 50 câu. Hệ thống chấm mỗi câu trọng số bằng nhau. Câu nhiều ô có phản hồi từng ô, nhưng chỉ tính đúng cả câu khi tất cả ô đúng. Trả lời đủ và nộp bài nhận 1 kim cương theo [quy tắc thưởng học tập](learning-rewards.md); phần giáo viên chấm vẫn giữ nguyên.
 
 ## Học sinh và chấm bài
 

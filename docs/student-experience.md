@@ -15,7 +15,7 @@ Các lối vào:
 - Phụ huynh: đăng ký tại cùng trang Gmail, chọn “Phụ huynh”. Học sinh tạo mã ghép trong Cá nhân, phụ huynh nhập mã, học sinh đồng ý rồi báo cáo mới mở. Hai bên có thể thu hồi liên kết. Mã ghép không phải link mời đăng ký.
 - Khách: `/pages/demo/`, 5 câu minh họa tự biên soạn, không mở ngân hàng khóa học và không ghi thành tích tài khoản.
 
-Hoạt động theo môn là bộ khởi đầu: phân số/trục số/mua hàng; phương trình/đồ thị/tam giác có đỉnh kéo được; đọc tìm bằng chứng/lập dàn ý/xếp câu; hội thoại/nghe điền từ/ghi âm; từ vựng tiếng Trung đã xuất bản/thanh điệu/12 mẫu chữ viết. Ghi âm chỉ lưu tạm trong trang trên thiết bị. Các hoạt động tự luyện không cộng điểm năng lực hay thưởng; tự luận do học sinh tự đối chiếu hoặc giáo viên nhận xét, phát âm chưa được AI chấm.
+Hoạt động theo môn là bộ khởi đầu: phân số/trục số/mua hàng; phương trình/đồ thị/tam giác có đỉnh kéo được; đọc tìm bằng chứng/lập dàn ý/xếp câu; hội thoại/nghe điền từ/ghi âm; từ vựng tiếng Trung đã xuất bản/thanh điệu/12 mẫu chữ viết. Ghi âm chỉ lưu tạm trong trang trên thiết bị. Các hoạt động có [thưởng hoàn thành](learning-rewards.md), không thay đổi điểm năng lực; tự luận do học sinh tự đối chiếu hoặc giáo viên nhận xét, phát âm tự luyện chưa được AI chấm.
 
 Lưu trữ và phân quyền:
 

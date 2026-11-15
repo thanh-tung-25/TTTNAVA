@@ -2,6 +2,7 @@ import {api,el} from './api.js';
 import {speakingAssessmentEnabled} from './chinese-speaking-data.js';
 import {speakingAnswerClips} from './chinese-speaking-audio.js';
 import {renderSpeakingResult,speakingResultStyles} from './chinese-speaking-results.js';
+import {rewardNotice} from './study-reward.js';
 
 export function speakingAssessment(ui,{set,profile,onBusy}){
  speakingResultStyles();
@@ -60,7 +61,7 @@ export function speakingAssessment(ui,{set,profile,onBusy}){
    status.textContent='Đang tổng hợp điểm và cách sửa cho từng câu…';
    const response=await api(`/api/v1/chinese/speaking-submissions/${take.submissionId}/finish`,{method:'POST',signal:controller.signal,body:{}});
    take.assessment=response.data;take.audio=null;
-   if(disposed)return;renderSpeakingResult(output,response.data);status.textContent='Đã gửi kết quả cho cô. Server chỉ lưu điểm và nhận xét. Bạn vẫn có thể nghe lại hoặc tải bản ghi.';
+   if(disposed)return;renderSpeakingResult(output,response.data);if(response.data.reward)output.append(rewardNotice(response.data.reward));status.textContent='Đã gửi kết quả cho cô. Server chỉ lưu điểm và nhận xét. Bạn vẫn có thể nghe lại hoặc tải bản ghi.';
   }catch(error){if(!disposed&&error.name!=='AbortError')status.textContent=error.message+' Bản ghi vẫn nghe và tải được.';}
   finally{busy=false;if(!disposed){onBusy(false);update();}}
  };

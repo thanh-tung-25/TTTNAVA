@@ -42,7 +42,7 @@ it('requires real completed learning for rewards; repeated claims do not pay twi
  expect((await post(student,'/store/frame-mint/equip')).status).toBe(400);expect((await post(student,'/store/frame-mint/buy')).status).toBe(400);
  const ref=randomUUID();await query("INSERT INTO diamond_ledger(profile_id,amount,reason,ref_type,ref_id) VALUES (?,30,'practice_complete','practice',?)",[users[0].id,ref]);
  const purchases=await Promise.all([post(student,'/store/frame-mint/buy'),post(student,'/store/frame-mint/buy')]);expect(purchases.map(r=>r.status)).toEqual([200,200]);expect(purchases.reduce((n,r)=>n+r.body.data.charged,0)).toBe(20);
- expect((await post(student,'/store/frame-mint/equip')).status).toBe(200);expect((await get(student,'/rewards')).body.data.wallet.total).toBe(13);
+ expect((await post(student,'/store/frame-mint/equip')).status).toBe(200);expect((await get(student,'/rewards')).body.data.wallet.total).toBe(14);
  expect((await post(student,'/store/forged-price/buy',{price:0})).status).toBe(404);
 });
 it('uses latest answers across old and new learning; mastery needs successful days apart',async()=>{
@@ -82,8 +82,10 @@ it('limits teacher scope, hides unfinished writing and saves submitted feedback'
  expect((await get(staff,'/assignments/manage/'+id)).body.data.students[0].draft_text).toBeNull();
  expect((await put(student,'/assignments/'+id+'/writing',{text:'Bản từ thiết bị cũ',revision:0})).status).toBe(409);
  expect((await post(staff,'/assignments/manage/'+id+'/review/'+users[0].id,{feedback:'Chưa nộp',score:null})).status).toBe(400);
- expect((await put(student,'/assignments/'+id+'/writing',{text:'Bài viết đã hoàn thành của mình.',revision:1,submit:true})).status).toBe(200);
+  const beforeWriting=Number((await student.get('/api/v1/diamonds/summary')).body.data.total);
+  const submitted=await put(student,'/assignments/'+id+'/writing',{text:'Bài viết đã hoàn thành của mình.',revision:1,submit:true});expect(submitted.status).toBe(200);expect(submitted.body.data.reward.earned).toBe(1);
  expect((await put(student,'/assignments/'+id+'/writing',{text:'Sửa sau nộp',revision:2})).status).toBe(400);
+  expect(Number((await student.get('/api/v1/diamonds/summary')).body.data.total)).toBe(beforeWriting+1);
  expect((await post(staff,'/assignments/manage/'+id+'/review/'+users[0].id,{feedback:'Bài viết rõ ý, hãy thêm một ví dụ.',score:85})).status).toBe(200);
  expect((await get(student,'/assignments/'+id)).body.data.teacher_score).toBe(85);
  const quiz=await post(staff,'/assignments/manage',{courseId:course,title:'Ôn toán có phản hồi',kind:'quiz',itemId:FIXTURE_TOPIC_ID,questionCount:5,studentIds:[users[0].id]});expect(quiz.status,quiz.text).toBe(200);const begun=await post(student,'/assignments/'+quiz.body.data.id+'/start');expect(begun.status,begun.text).toBe(200);

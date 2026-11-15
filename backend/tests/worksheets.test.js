@@ -29,12 +29,18 @@ describe('Interactive worksheet authoring and grading',()=>{
   expect((await other.get(base+'/attempts/'+attempt.id)).status).toBe(404);
   expect((await student.put(base+'/attempts/'+attempt.id).send({answers})).status).toBe(200);
   const saved=(await student.get(base+'/attempts/'+attempt.id)).body.data;expect(saved.answers[items[0].id]).toBe('78');expect(saved.results).toBeNull();expect(saved.snapshot).toBeUndefined();
+  expect((await student.get('/api/v1/diamonds/summary')).body.data.total).toBe(0);
  });
  it('grades each cell on the server and leaves free response for the teacher',async()=>{
   const r=await student.post(base+'/attempts/'+attempt.id+'/submit').send({answers:{...answers,[items[1].id]:['18','99']}});expect(r.status).toBe(200);
   expect(r.body.data.status).toBe('pending_review');expect(r.body.data.score).toBeNull();expect(r.body.data.results.find(i=>i.id===items[1].id).checks).toEqual([true,false]);
+  expect(r.body.data.reward.earned).toBe(1);
   expect((await student.post(base+'/admin/reviews/'+attempt.id).send({marks:[]})).status).toBe(403);
   const retry=await student.post(base+'/attempts/'+attempt.id+'/submit').send({answers});expect(retry.body.data.results.find(i=>i.id===items[1].id).correct).toBe(false);
+  expect((await student.get('/api/v1/diamonds/summary')).body.data.programs.primary.total).toBe(1);
+  const partial=(await other.post(base+'/'+sheet.id+'/start')).body.data;
+  const incomplete=await other.post(base+'/attempts/'+partial.id+'/submit').send({answers:{...answers,[items[1].id]:['18','']}});
+  expect(incomplete.status).toBe(200);expect(incomplete.body.data.reward).toBeUndefined();expect((await other.get('/api/v1/diamonds/summary')).body.data.total).toBe(0);
  });
  it('teacher reviews manual questions; saved attempts keep their original contents',async()=>{
   expect((await admin.post(base+'/admin/reviews/'+attempt.id).send({marks:[]})).status).toBe(400);

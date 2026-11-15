@@ -5,6 +5,7 @@ import {requireCourse} from './course-service.js';
 import {validateSheet,publicItem,gradeItem,validateResponses} from './worksheet-rules.js';
 import {z} from 'zod';
 import {resolveCurriculumScope} from './curriculum-scope.js';
+import {awardLearningReward} from './learning-reward.js';
 export const json=v=>typeof v==='string'?JSON.parse(v):v;
 export async function sheet(id,admin=false,user,run=query){
  const [row]=await run('SELECT * FROM worksheets WHERE id=?',[id]);if(!row||!admin&&row.status!=='published')throw notFound();
@@ -42,13 +43,15 @@ export async function start(user,id){
 }
 export async function answer(user,id,body,submit=false){
  return withTransaction(async c=>{
-  const run=async(sql,p=[]) => (await c.query(sql,p))[0];
+  const run=async(sql,p=[]) => (await c.query(sql,p))[0];await run('SELECT id FROM profiles WHERE id=? FOR UPDATE',[user]);
   const [row]=await run('SELECT * FROM worksheet_attempts WHERE id=? AND student_id=? FOR UPDATE',[id,user]);if(!row)throw notFound();
   await requireCourse(user,'grade-'+row.grade,run);if(row.status!=='in_progress')return attempt(user,id,run);
   const items=json(row.snapshot).items,responses=validateResponses(items,body),results=submit?items.map(item=>({id:item.id,...gradeItem(item,responses[item.id])})):null;
   const pending=results?.some(r=>r.correct===null);const score=results&&!pending?Math.round(results.filter(r=>r.correct).length/items.length*10000)/100:null;
   await run('UPDATE worksheet_attempts SET answers=?,results=?,score=?,status=?,submitted_at=? WHERE id=?',[JSON.stringify(responses),results?JSON.stringify(results):null,score,submit?pending?'pending_review':'completed':'in_progress',submit?new Date():null,id]);
-  return attempt(user,id,run);
+  const filled=value=>typeof value==='string'?Boolean(value.trim()):typeof value==='boolean'||typeof value==='number'?true:Array.isArray(value)?value.length>0&&value.every(filled):value&&typeof value==='object'?Object.values(value).some(filled):false;
+  const reward=submit&&items.length&&items.every(item=>filled(responses[item.id]))?await awardLearningReward(user,'grade-'+row.grade,'worksheet',row.worksheet_id,run):null;
+  return {...await attempt(user,id,run),...(reward?{reward}:{})};
  });
 }
 export async function review(admin,id,body){

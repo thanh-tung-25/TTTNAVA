@@ -50,7 +50,7 @@ function renderCatalog(){
   ]);
   formAction(paid,d=>api('/api/v1/courses/admin/catalog/'+c.id,{method:'PATCH',body:{title:d.title,description:d.description,price_vnd:d.price_vnd===''?null:Number(d.price_vnd),duration_days:d.duration_days===''?null:Number(d.duration_days),active:d.active==='on'}}));
   const free=el('form',{class:'course-form free-period-form'},[
-   el('h3',{text:'2. Đợt đăng ký miễn phí'}),p('Học sinh đăng ký tài khoản trong đợt được học miễn phí 1 năm từ ngày đăng ký. Kết thúc đợt chỉ dừng nhận người mới, không cắt thời hạn đã cấp.'),
+   el('h3',{text:'2. Đợt đăng ký miễn phí'}),p('Mọi học sinh, kể cả đã có tài khoản, có thể bấm Đăng ký miễn phí trên khóa trong đợt. Mỗi lượt được học 1 năm từ ngày đăng ký khóa. Kết thúc đợt không cắt thời hạn đã cấp.'),
    el('label',{class:'course-check'},[el('input',{type:'checkbox',name:'enabled',...(c.free_starts_at?{checked:''}:{})}),el('span',{text:'Mở đợt đăng ký miễn phí'})]),
    el('div',{class:'course-form-pair'},[input('Bắt đầu','starts_at',localDate(c.free_starts_at||Date.now()),'datetime-local'),input('Kết thúc','ends_at',localDate(c.free_ends_at||Date.now()+7*86400000),'datetime-local')]),submit('Lưu đợt miễn phí')
   ]);

@@ -6,7 +6,6 @@ import {freeCourseFields} from './course-free-periods.js';
 import {checkoutMomo} from './course-momo.js';
 import {activeFreeGrant,effectiveEnrollment,courseAccessCondition} from './course-access-policy.js';
 export {activeEnrollment} from './course-access-policy.js';
-import {ensureRegistrationOffers} from './registration-free-year.js';
 
 export function courseReviewCondition(user){
  const scope=adminScopeOf(user);
@@ -27,7 +26,6 @@ export async function requireCourse(student, courseId, run=query) {
  const {payment_instructions,...course}=rows[0];return course;
 }
 export async function listCourses(student) {
- await ensureRegistrationOffers(student);
  const rows=await query(`SELECT c.*,CASE WHEN r.student_id IS NOT NULL AND (a.origin IS NULL OR a.origin<>'momo') THEN 'registration_free' ELSE e.source END source,e.starts_at,e.expires_at,e.revoked_at,CASE WHEN r.student_id IS NOT NULL AND (a.origin IS NULL OR a.origin<>'momo') THEN NULL ELSE a.origin END paid_origin,g.id grant_id,g.starts_at grant_starts_at,g.ends_at grant_ends_at,g.revoked_at grant_revoked_at,${freeCourseFields()},
  CASE WHEN ${courseAccessCondition} THEN 1 ELSE 0 END unlocked,
  CASE WHEN e.student_id IS NOT NULL AND ${effectiveEnrollment} THEN CASE WHEN a.student_id IS NOT NULL OR e.source='order' THEN 'paid' ELSE 'admin_free' END WHEN ${activeFreeGrant} THEN 'admin_free' ELSE NULL END access_category,

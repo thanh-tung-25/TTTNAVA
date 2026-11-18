@@ -7,7 +7,6 @@ import {hashPassword} from './auth-service.js';
 import {registrationAvailable,sendRegistrationOtp} from './registration-mail.js';
 import {publicProfile} from '../utils/serializers.js';
 import {signToken} from '../utils/jwt.js';
-import {ensureRegistrationOffers} from './registration-free-year.js';
 
 const OTP_LIFETIME=300_000,RESEND_DELAY=60_000,SEND_WINDOW=3_600_000,MAX_SENDS=5,MAX_ATTEMPTS=5;
 const unavailable=()=>new AppError(503,'REGISTRATION_UNAVAILABLE','Đăng ký đang tạm dừng. Bạn vui lòng thử lại sau.');
@@ -84,7 +83,6 @@ export async function completeRegistration({challengeId,otp,username,password,di
    [id,username,pending.email,passwordHash,displayName,avatarKey,accountKind==='guardian'?null:grade,now,pending.gmail_identity,accountKind]);
   await run('UPDATE registration_otps SET consumed_at=? WHERE id=?',[now,challengeId]);
   const [profile]=await run('SELECT * FROM profiles WHERE id=?',[id]);
-  if(accountKind==='student')await ensureRegistrationOffers(id,run);
   return {profile};
  });
  if(result.error)throw result.error;

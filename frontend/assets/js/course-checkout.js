@@ -5,6 +5,7 @@ import {courseOrderView} from './course-order-view.js';
 
 const grid=document.querySelector('#course-grid'),orders=document.querySelector('#course-orders'),dialog=document.querySelector('#course-dialog'),detail=document.querySelector('#course-detail'),notice=document.querySelector('#course-notice');
 let courses=[],historyRows=[],filter='',momoReady=false,watchId=null,watchTimer,freeTimer,watchBusy=false,lastCheck=0,watchUntil=0;
+const registeringFree=new Set();
 const money=value=>value==null?'Đang cập nhật học phí':new Intl.NumberFormat('vi-VN',{style:'currency',currency:'VND'}).format(value);
 const p=(text,className='')=>el('p',{text,class:className});
 const button=(text,fn,primary=false)=>el('button',{type:'button',class:'btn '+(primary?'btn-primary':'btn-ghost'),text,onclick:fn});
@@ -26,14 +27,16 @@ function estimatedPaidPeriod(c){
 }
 function renderCourses(){
  grid.replaceChildren(...courses.filter(c=>!filter||c.kind===filter).map(c=>{
-  const free=Boolean(c.free_now&&!c.revoked_at),individual=c.access_category==='admin_free',label=c.access_category==='paid'?'✓ Đã thanh toán':individual?'🎁 Được cấp miễn phí':c.access_category==='campaign'?'🎁 Đang miễn phí':c.unlocked?'✓ Đã mở khóa':c.grant_revoked_at?'Đã thu hồi miễn phí':c.grant_ends_at&&new Date(c.grant_ends_at)<=new Date()?'Hết hạn miễn phí':c.revoked_at?'Đã thu hồi':c.expires_at&&new Date(c.expires_at)<=new Date()?'Hết hạn':'Chưa mở khóa';
+  const free=Boolean(c.free_now&&!c.revoked_at&&!c.grant_revoked_at),individual=c.access_category==='admin_free',label=c.access_category==='paid'?'✓ Đã thanh toán':individual?'🎁 Được cấp miễn phí':c.unlocked?'✓ Đã mở khóa':free?'🎁 Đang nhận miễn phí':c.grant_revoked_at?'Đã thu hồi miễn phí':c.grant_ends_at&&new Date(c.grant_ends_at)<=new Date()?'Hết hạn miễn phí':c.revoked_at?'Đã thu hồi':c.expires_at&&new Date(c.expires_at)<=new Date()?'Hết hạn':'Chưa mở khóa';
+  const action=button(c.unlocked?'Vào học':free?registeringFree.has(c.id)?'Đang đăng ký…':'Đăng ký miễn phí':'Xem khóa học',event=>c.unlocked?enterCourse(c):free?registerFree(c,event):showCourse(c),Boolean(c.unlocked||free));
+  action.disabled=!c.unlocked&&registeringFree.has(c.id);
   const card=el('article',{class:'course-tile'},[
    el('span',{class:'course-lock'+(c.unlocked?' open':''),text:label}),el('img',{src:'/assets/images/mascot-'+(c.kind==='chinese'?'panda':'lion')+'.svg',alt:'',width:86,height:92}),
-   el('h3',{text:c.title}),p(c.description),p(individual?'Được cấp miễn phí':free?'Đợt học miễn phí':money(c.price_vnd),'course-price'),
-   p(c.access_category==='paid'||individual?(c.access_expires_at?'Quyền học đến '+formatDate(c.access_expires_at,false):'Quyền học không giới hạn thời hạn'):c.duration_days?c.duration_days+' ngày kể từ khi thanh toán thành công':'Thanh toán một lần · Học không giới hạn thời hạn'),
-   ...(free?[p('Nhận đăng ký miễn phí đến '+formatDate(c.free_ends_at)+' · 1 năm từ ngày đăng ký','course-free-tag')]:c.free_starts_at?[p('Mở đăng ký miễn phí từ '+formatDate(c.free_starts_at),'course-free-tag')]:[]),
+   el('h3',{text:c.title}),p(c.description),p(individual?'Được cấp miễn phí':c.access_category==='paid'?money(c.price_vnd):free?'Miễn phí · 0đ':money(c.price_vnd),'course-price'),
+   p(c.access_category==='paid'||individual?(c.access_expires_at?'Quyền học đến '+formatDate(c.access_expires_at,false):'Quyền học không giới hạn thời hạn'):free?'Học miễn phí 1 năm từ ngày đăng ký khóa học':c.duration_days?c.duration_days+' ngày kể từ khi thanh toán thành công':'Thanh toán một lần · Học không giới hạn thời hạn'),
+   ...(free?[p('Nhận đăng ký miễn phí đến '+formatDate(c.free_ends_at)+' · 1 năm từ ngày đăng ký khóa học','course-free-tag')]:c.free_starts_at?[p('Mở đăng ký miễn phí từ '+formatDate(c.free_starts_at),'course-free-tag')]:[]),
    ...(c.grant_id&&!c.grant_revoked_at&&new Date(c.grant_starts_at)>new Date()?[p('Được cấp miễn phí từ '+formatDate(c.grant_starts_at)+' đến '+formatDate(c.grant_ends_at),'course-free-tag')]:[]),
-   button(c.unlocked?c.access_category==='campaign'?'Vào học miễn phí':'Vào học':'Xem khóa học',()=>c.unlocked?enterCourse(c):showCourse(c),Boolean(c.unlocked))
+   action
   ]);
   if(paidScheduled(c))card.append(p('Đã mua gói tiếp theo · Bắt đầu '+formatDate(c.starts_at)+(c.expires_at?' · Học đến '+formatDate(c.expires_at):' · Không giới hạn thời hạn'),'course-paid-scheduled'));
   const end=continuousAccessEnd(c),remaining=end==null?null:end-Date.now();
@@ -42,14 +45,35 @@ function renderCourses(){
   return card;
  }));
 }
+async function registerFree(c,event){
+ if(registeringFree.has(c.id))return;
+ const trigger=event?.currentTarget,originalText=trigger?.textContent;registeringFree.add(c.id);
+ if(trigger){trigger.disabled=true;trigger.textContent='Đang đăng ký…';}
+ notice.textContent='Đang đăng ký miễn phí '+c.title+'…';
+ const status=detail.querySelector('.course-free-registration-status');if(status)status.textContent='Đang đăng ký…';
+ try{
+  const {data}=await api('/api/v1/courses/'+encodeURIComponent(c.id)+'/register-free',{method:'POST'});
+  if(dialog.open)dialog.close();
+  const until=data.course.access_expires_at;
+  notice.replaceChildren(p((data.registered?'Đăng ký miễn phí thành công. ':'Bạn đã có quyền học. ')+c.title+(until?' · Học đến '+formatDate(until):'')),button('Vào học',()=>enterCourse(data.course),true));
+  try{await refresh();}catch{notice.append(p('Quyền học đã được lưu. Bạn có thể bấm Vào học hoặc tải lại danh sách khóa.'));}
+ }catch(e){
+  notice.textContent=e.message;if(status)status.textContent=e.message;
+  if(e.code==='FREE_PERIOD_CLOSED')await refresh().catch(()=>{});
+ }finally{registeringFree.delete(c.id);if(trigger){trigger.disabled=false;trigger.textContent=originalText;}renderCourses();}
+}
 function showCourse(c){
+ if(c.free_now&&!c.unlocked&&!c.revoked_at&&!c.grant_revoked_at){
+  detail.replaceChildren(el('header',{class:'checkout-heading'},[el('div',{},[p('ĐĂNG KÝ MIỄN PHÍ','checkout-eyebrow'),el('h2',{id:'checkout-title',text:c.title}),p(c.description)]),el('div',{class:'checkout-price'},[el('strong',{text:'0đ'}),el('span',{text:'1 năm từ ngày đăng ký khóa học'})])]),p('Nhận đăng ký đến '+formatDate(c.free_ends_at)+'. Quyền đã nhận vẫn giữ đủ thời hạn sau khi đợt kết thúc.'),button('Đăng ký miễn phí',event=>registerFree(c,event),true),p('','course-free-registration-status'));
+  dialog.setAttribute('aria-labelledby','checkout-title');if(!dialog.open)dialog.showModal();dialog.scrollTop=0;return;
+ }
  const period=estimatedPaidPeriod(c),continues=period.starts>Date.now()+1000;
  const error=p('','course-form-error'),box=el('section',{class:'momo-checkout'},[el('h3',{text:'Thanh toán qua MoMo'}),p('Mỗi lượt thanh toán có mã đơn riêng. Khóa học tự mở sau khi MoMo xác nhận giao dịch thành công.')]);
  detail.replaceChildren(el('header',{class:'checkout-heading'},[
   el('div',{},[p('ĐĂNG KÝ KHÓA HỌC','checkout-eyebrow'),el('h2',{id:'checkout-title',text:c.title}),p(c.description,'checkout-description')]),
   el('div',{class:'checkout-price'},[el('strong',{text:money(c.price_vnd)}),el('span',{text:c.duration_days?c.duration_days+' ngày · '+(continues?'Nối tiếp quyền đang có':'Từ khi thanh toán thành công'):'Thanh toán một lần · Không giới hạn thời hạn'})])
  ]),box);
- if(c.free_now)box.append(p('Đợt nhận đăng ký miễn phí kết thúc '+formatDate(c.free_ends_at)+'. Tài khoản đăng ký trong đợt được cấp 1 năm từ ngày đăng ký.'));
+ if(c.free_now)box.append(p('Đợt nhận đăng ký miễn phí kết thúc '+formatDate(c.free_ends_at)+'. Học sinh đăng ký khóa trong đợt được cấp 1 năm từ ngày đăng ký khóa học.'));
  if(c.access_category==='admin_free')box.append(p('Bạn được cấp miễn phí'+(c.access_expires_at?' đến '+formatDate(c.access_expires_at):'')+'. Gói mua thêm nối tiếp sau thời gian miễn phí còn lại.'));
  if(continues)box.append(p('Dự kiến gói mới bắt đầu '+formatDate(period.starts)+(period.ends?' và học đến '+formatDate(period.ends):', không giới hạn thời hạn')+'.','course-paid-scheduled'));
  if(!momoReady)box.append(p('Thanh toán MoMo đang chờ quản trị viên kết nối. Bạn vui lòng quay lại sau.','checkout-message'));
@@ -81,9 +105,10 @@ function stopWatch(){clearInterval(watchTimer);watchId=null;}
 function watchPayment(id){stopWatch();watchId=id;watchUntil=Date.now()+10*60000;lastCheck=0;checkPayment(id,true);watchTimer=setInterval(()=>{if(Date.now()>watchUntil){stopWatch();return;}if(!document.hidden)checkPayment(id);},5000);}
 function renderHistory(){
  const paid=courses.filter(c=>c.paid_origin||c.source==='order');
+ const free=courses.filter(c=>c.access_category==='admin_free'&&!historyRows.some(o=>o.course_id===c.id&&o.display_status==='admin_free'));
  orders.replaceChildren(...paid.map(c=>el('article',{class:'course-order'},[
   el('div',{},[el('strong',{text:c.title}),p(c.paid_origin==='existing'?'Quyền học chuyển tiếp · Giữ nguyên các khóa và thời hạn đang có':'Quyền học đã thanh toán'),...(paidScheduled(c)?[p('Gói mua tiếp bắt đầu '+formatDate(c.starts_at))]:[]),p(c.revoked_at?'Quyền học đã thu hồi':c.expires_at?'Thời hạn đến '+formatDate(c.expires_at):'Không giới hạn thời hạn')]),el('span',{class:'course-status',text:'✓ Đã thanh toán'}),...(c.unlocked?[button('Vào học',()=>enterCourse(c))]:[])
- ])),...historyRows.map(o=>{
+ ])),...free.map(c=>el('article',{class:'course-order'},[el('div',{},[el('strong',{text:c.title}),p('Miễn phí · 0đ'),p(c.access_expires_at?'Quyền học đến '+formatDate(c.access_expires_at):'Được cấp miễn phí')]),el('span',{class:'course-status',text:'Được cấp miễn phí'}),...(c.unlocked?[button('Vào học',()=>enterCourse(c))]:[])])),...historyRows.map(o=>{
   const view=courseOrderView(o);
   const details=view.free?el('details',{},[el('summary',{text:'Thông tin đăng ký cũ'}),p('Số tiền trên đăng ký cũ: '+money(o.amount_vnd)),p('Trạng thái bản ghi cũ: '+view.originalLabel),p('Mã đơn: '+o.id),...(o.review_note?[p(o.review_note)]:[])]):null;
   const actions=el('div',{class:'checkout-actions'}),box=el('article',{class:'course-order'},[el('div',{},[el('strong',{text:o.title}),p(money(view.amount)+' · '+formatDate(o.created_at)),...(view.period?[p(view.period)]:[]),...(details?[details]:[p('Mã đơn: '+o.id),...(o.review_note?[p(o.review_note)]:[])])]),el('span',{class:'course-status',text:view.label}),actions]);
@@ -97,7 +122,7 @@ function renderHistory(){
    const b=event.currentTarget;b.disabled=true;try{await api('/api/v1/courses/orders/'+o.id+'/cancel',{method:'POST'});if(watchId===o.id)stopWatch();await refresh();}catch(e){notice.textContent=e.message;b.disabled=false;}
   }));return box;
  }));
- if(!paid.length&&!historyRows.length)orders.append(p('Chưa có giao dịch. Chọn một khóa để xem học phí hoặc lịch mở miễn phí.'));
+ if(!paid.length&&!free.length&&!historyRows.length)orders.append(p('Chưa có đăng ký. Chọn một khóa để nhận miễn phí hoặc xem học phí.'));
 }
 async function refresh(){
  const [catalog,history,payment]=await Promise.all([api('/api/v1/courses'),api('/api/v1/courses/orders'),api('/api/v1/courses/payment-status')]);

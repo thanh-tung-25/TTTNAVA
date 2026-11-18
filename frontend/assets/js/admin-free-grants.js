@@ -25,9 +25,7 @@ export function createFreeGrantDialog(onSaved){
    const preview=el('p',{class:'free-grant-preview'});
    const update=()=>{const n=choices.querySelectorAll('input:checked').length;preview.textContent=n+' khóa đã chọn'+(end.value?' · Học đến '+formatDate(new Date(end.value)):'');};
    const quick=el('div',{class:'free-grant-presets'},[el('span',{text:'Chọn nhanh:'}),...[7,30,90].map(days=>el('button',{type:'button',class:'btn btn-ghost',text:days+' ngày',onclick:()=>{end.value=local(new Date(start.value||Date.now()).getTime()+days*86400000);update();}}))]);
-   const registrationDates=()=>{const student=data.students.find(s=>s.username.toLowerCase()===username.value.trim().toLowerCase());if(student){start.value=local(student.created_at);end.value=local(yearAfter(student.created_at));update();}};
-   quick.append(el('button',{type:'button',class:'btn btn-ghost',text:'1 năm từ ngày đăng ký',onclick:registrationDates}));
-   if(!initial.expires_at)username.oninput=registrationDates;
+   quick.append(el('button',{type:'button',class:'btn btn-ghost',text:'1 năm từ ngày bắt đầu',onclick:()=>{end.value=local(yearAfter(start.value||Date.now()));update();}}));
    const note=el('textarea',{name:'note',maxlength:500,placeholder:'Ví dụ: Tặng học thử, học bổng…'}),save=el('button',{type:'submit',class:'btn',text:'Cấp miễn phí và lưu danh sách'});
    const form=el('form',{class:'course-form free-grant-form'},[
     field('Học sinh',username),students,el('fieldset',{},[el('legend',{text:'Chọn một hoặc nhiều khóa'}),choices]),

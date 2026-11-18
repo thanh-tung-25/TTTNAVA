@@ -9,6 +9,7 @@ requiredTables.push('study_activity_sessions');
 requiredTables.push('course_paid_access','course_payment_migrations','course_free_periods','course_momo_settings','course_momo_payments');
 requiredTables.push('course_free_grants');
 requiredTables.push('course_registration_free');
+requiredTables.push('course_free_registrations');
 export async function deploymentCheck(run=query){
  const expected=[...requiredTables,...(callConfig().enabled?['chat_call_control','chat_call_preferences','chat_calls','chat_call_reports','chat_push_subscriptions']:[])];
  const tables=await run(dialectSql('SELECT table_name FROM information_schema.tables WHERE table_schema=DATABASE()','SELECT table_name FROM information_schema.tables WHERE table_schema=current_schema()'));

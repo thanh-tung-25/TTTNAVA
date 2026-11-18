@@ -19,12 +19,12 @@ export function createVoiceActivity({silenceMs=1400,threshold=.012}={}){
   return {speaking:first!==null,first,done:first!==null&&now-last>=silenceMs,limit:first!==null&&now-first>=19500};
  }};
 }
-export function createChatAudio({onState=()=>{},onTurn=()=>{},onError=()=>{},onIdle=()=>{}}={}){
+export function createChatAudio({onState=()=>{},onTurn=()=>{},onError=()=>{},onIdle=()=>{},onSpeaking=()=>{}}={}){
  let stream,context,analyser,source,sink,recorder,poll,idle,parts=[],capture=0,disposed=false,opening=null,speechResolve,speechTimer,utterance,speechGeneration=0;
  const synth=window.speechSynthesis;
  const voices=()=>synth?.getVoices().filter(v=>/^zh(?:-|_|$)/i.test(v.lang))||[];
  voices();
- function cancelSpeech(){speechGeneration++;clearTimeout(speechTimer);synth?.cancel();utterance=null;const done=speechResolve;speechResolve=null;done?.(false);}
+ function cancelSpeech(){speechGeneration++;clearTimeout(speechTimer);onSpeaking(false);synth?.cancel();utterance=null;const done=speechResolve;speechResolve=null;done?.(false);}
  function stopCapture(send=false){
   clearInterval(poll);clearTimeout(idle);
   if(recorder?.state==='recording'){recorder._send=send;recorder.stop();}
@@ -85,9 +85,12 @@ export function createChatAudio({onState=()=>{},onTurn=()=>{},onError=()=>{},onI
   if(!voice||!synth||!window.SpeechSynthesisUtterance)return Promise.resolve(false);
   const generation=speechGeneration;
   return new Promise(resolve=>{
-   speechResolve=resolve;utterance=new SpeechSynthesisUtterance(text);utterance.voice=voice;utterance.lang=voice.lang;utterance.rate=slow?.65:.9;
-   const done=ok=>{if(generation!==speechGeneration)return;clearTimeout(speechTimer);speechResolve=null;utterance=null;resolve(ok);};
-   utterance.onend=()=>done(true);utterance.onerror=()=>done(false);speechTimer=setTimeout(()=>{cancelSpeech();},30000);synth.speak(utterance);
+   speechResolve=resolve;const current=new SpeechSynthesisUtterance(text);utterance=current;current.voice=voice;current.lang=voice.lang;current.rate=slow?.65:.9;
+   const live=()=>!disposed&&generation===speechGeneration&&utterance===current;
+   const done=ok=>{if(!live())return;clearTimeout(speechTimer);onSpeaking(false);speechResolve=null;utterance=null;resolve(ok);};
+   current.onstart=()=>{if(live())onSpeaking(true);};current.onpause=()=>{if(live())onSpeaking(false);};current.onresume=()=>{if(live())onSpeaking(true);};
+   current.onend=()=>done(true);current.onerror=()=>done(false);speechTimer=setTimeout(()=>{cancelSpeech();},30000);
+   try{synth.speak(current);}catch{done(false);}
   });
  }
  function pause(){close();cancelSpeech();}

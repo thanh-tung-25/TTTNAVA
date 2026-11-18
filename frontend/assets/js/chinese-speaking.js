@@ -5,6 +5,7 @@ import {speakingSupported,createSpeakingMedia} from './chinese-speaking-media.js
 import {speakingView} from './chinese-speaking-view.js';
 import {speakingAssessment} from './chinese-speaking-assessment.js';
 import {studyReward} from './study-reward.js';
+import {setMascotSpeaking} from './chinese-speaking-mascot.js';
 
 export function mountSpeaking(host,{set,activities,items=[],profile}){
  let study;
@@ -14,7 +15,7 @@ export function mountSpeaking(host,{set,activities,items=[],profile}){
  let phase='idle',counts=questions.map(()=>0),heard=new Set(),current=-1,playing=false,result=null,timer,started=0,disposed=false,generation=0,abort,reason='',meta=null,takeFailed=false,activeAnswer=null,assessing=false;
  const ui=speakingView(host,{profile,set,count:questions.length,settings}),supported=speakingSupported();
  const busy=()=>['opening','loading','recording','saving'].includes(phase);
- const media=createSpeakingMedia(ui.level,{onRecorded:ended,onFailure:failed});
+ const media=createSpeakingMedia(ui.level,{onRecorded:ended,onFailure:failed,onSpeaking:value=>setMascotSpeaking(ui.shell,value)});
  const assessment=speakingAssessment(ui,{set,profile,onBusy:value=>{assessing=value;update();}});
  function update(text){
   if(disposed)return;ui.shell.dataset.phase=phase;ui.result.hidden=!result||busy();

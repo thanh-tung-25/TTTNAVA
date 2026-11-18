@@ -17,3 +17,9 @@ Trình tự cập nhật:
 Trình đồng bộ sao lưu nội dung, Word gốc và con trỏ kho tệp trước khi thay. Các tệp Supabase mới có tên theo SHA-256, tải lại để kiểm tra trước khi chuyển con trỏ; giữ nguyên tệp cũ. Cập nhật nội dung trong một transaction, không xóa các ID đang được lịch sử tham chiếu. Fingerprint các bảng kết quả, ôn tập, tiến độ, kim cương, bài nói, phiên AI và Phố tiếng Trung phải giữ nguyên. Chạy lại phải không còn chênh lệch.
 
 Các bản sao lưu nằm trong `backend/backups/chinese-curriculum/`, không đưa vào Git. `backup.json` lưu nội dung và con trỏ kho tệp cũ; `local-artifacts.json` ánh xạ các tệp tài liệu bị thay. Các trình tạo Word/đồng bộ dựa trên bộ PDF cũ đã được thay bởi quy trình này.
+
+Phần điền từ dùng các chỗ trống được chọn riêng trong `chinese-curriculum-fill.js`: mỗi bài có 10 đáp án khác nhau, câu hoàn chỉnh và nghĩa lấy từ bộ câu vận dụng đã duyệt. Không tự che từ nội dung đầu tiên vì bài 1 sẽ lặp 老师/学生. Bộ mẫu frontend và các lần xuất tài liệu/đồng bộ sau đều dùng nguồn này.
+
+Hội thoại dùng 100 tình huống trong `chinese-curriculum-dialogue.js`. Mỗi câu có ngữ cảnh xác định thông tin trước khi hỏi và ba lựa chọn cùng chủ đề; hai đáp án sai nhầm người, thông tin, thời gian, địa điểm hoặc số lượng. Không dùng lời chào làm đáp án nhiễu, không coi một câu trả lời cá nhân khác nhưng hợp lệ là sai. Lời giải sau kiểm tra chỉ rõ sự khác biệt. Bộ câu luyện nói tự do vẫn được cấu hình riêng.
+
+Để sửa riêng phần điền từ và hội thoại đang lưu, chạy `node backend/scripts/repair-chinese-practice.mjs` để xem trước; thêm `--apply --expected <fingerprint>` để áp dụng đúng bản đã đối chiếu. Thêm `--production` cho dữ liệu online. Công cụ giữ các dạng hoạt động khác và chủ đề đã biên tập, sao lưu vào `backend/backups/chinese-practice-repair/`, tăng revision và kiểm tra dữ liệu học sinh trong cùng transaction. Không cần phát hành lại code để học sinh nhận nội dung đã sửa khi mở lại bài.

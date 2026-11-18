@@ -24,9 +24,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我是___。 (Tôi là giáo viên.)",
+     "prompt": "___好！ (Chào thầy/cô!)",
      "answer": "老师",
-     "explanation": "Câu hoàn chỉnh: 我是老师。 — Tôi là giáo viên."
+     "explanation": "Câu hoàn chỉnh: 老师好！ — Chào thầy/cô!"
     },
     {
      "type": "order",
@@ -42,9 +42,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我是___。 (Tôi là học sinh.)",
-     "answer": "学生",
-     "explanation": "Câu hoàn chỉnh: 我是学生。 — Tôi là học sinh."
+     "prompt": "___是学生。 (Chúng tôi là học sinh.)",
+     "answer": "我们",
+     "explanation": "Câu hoàn chỉnh: 我们是学生。 — Chúng tôi là học sinh."
     },
     {
      "type": "order",
@@ -60,9 +60,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "你是___。 (Bạn là giáo viên.)",
-     "answer": "老师",
-     "explanation": "Câu hoàn chỉnh: 你是老师。 — Bạn là giáo viên."
+     "prompt": "她是___。 (Cô ấy là giám đốc.)",
+     "answer": "经理",
+     "explanation": "Câu hoàn chỉnh: 她是经理。 — Cô ấy là giám đốc."
     },
     {
      "type": "order",
@@ -78,9 +78,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "你是___。 (Bạn là học sinh.)",
-     "answer": "学生",
-     "explanation": "Câu hoàn chỉnh: 你是学生。 — Bạn là học sinh."
+     "prompt": "他是___。 (Anh ấy là ông chủ.)",
+     "answer": "老板",
+     "explanation": "Câu hoàn chỉnh: 他是老板。 — Anh ấy là ông chủ."
     },
     {
      "type": "order",
@@ -96,9 +96,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "他是___。 (Anh ấy là giáo viên.)",
-     "answer": "老师",
-     "explanation": "Câu hoàn chỉnh: 他是老师。 — Anh ấy là giáo viên."
+     "prompt": "你___学生。 (Bạn là học sinh.)",
+     "answer": "是",
+     "explanation": "Câu hoàn chỉnh: 你是学生。 — Bạn là học sinh."
     },
     {
      "type": "order",
@@ -114,9 +114,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "她是___。 (Cô ấy là học sinh.)",
-     "answer": "学生",
-     "explanation": "Câu hoàn chỉnh: 她是学生。 — Cô ấy là học sinh."
+     "prompt": "___好！ (Chào mọi người!)",
+     "answer": "大家",
+     "explanation": "Câu hoàn chỉnh: 大家好！ — Chào mọi người!"
     },
     {
      "type": "order",
@@ -132,9 +132,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我们是___。 (Chúng tôi là học sinh.)",
-     "answer": "学生",
-     "explanation": "Câu hoàn chỉnh: 我们是学生。 — Chúng tôi là học sinh."
+     "prompt": "___好！ (Xin chào ngài! (lịch sự))",
+     "answer": "您",
+     "explanation": "Câu hoàn chỉnh: 您好！ — Xin chào ngài! (lịch sự)"
     },
     {
      "type": "order",
@@ -150,9 +150,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "你们是___。 (Các bạn là giáo viên.)",
-     "answer": "老师",
-     "explanation": "Câu hoàn chỉnh: 你们是老师。 — Các bạn là giáo viên."
+     "prompt": "他们是___。 (Họ là học sinh.)",
+     "answer": "学生",
+     "explanation": "Câu hoàn chỉnh: 他们是学生。 — Họ là học sinh."
     },
     {
      "type": "order",
@@ -168,9 +168,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "他们是___。 (Họ là học sinh.)",
-     "answer": "学生",
-     "explanation": "Câu hoàn chỉnh: 他们是学生。 — Họ là học sinh."
+     "prompt": "___是老师。 (Họ (nữ) là giáo viên.)",
+     "answer": "她们",
+     "explanation": "Câu hoàn chỉnh: 她们是老师。 — Họ (nữ) là giáo viên."
     },
     {
      "type": "order",
@@ -186,9 +186,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "她们是___。 (Họ (nữ) là giáo viên.)",
-     "answer": "老师",
-     "explanation": "Câu hoàn chỉnh: 她们是老师。 — Họ (nữ) là giáo viên."
+     "prompt": "___是学生。 (Bạn là học sinh.)",
+     "answer": "你",
+     "explanation": "Câu hoàn chỉnh: 你是学生。 — Bạn là học sinh."
     },
     {
      "type": "fix",
@@ -204,14 +204,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你是学生？",
-     "answer": "我是学生。",
+     "speech": "他是老师。她是学生。她是老师？",
+     "answer": "她是学生。",
      "options": [
-      "我是学生。",
-      "你好！",
-      "您好！"
+      "她是学生。",
+      "他是学生。",
+      "她是老师。"
      ],
-     "explanation": "Bạn là học sinh phải không? Đáp lại: 我是学生。"
+     "explanation": "Đáp lại: 她是学生。 Câu hỏi nói về cô ấy: cô ấy là học sinh; anh ấy mới là giáo viên."
     },
     {
      "type": "fix",
@@ -227,14 +227,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "您是老师？",
-     "answer": "我是老师。",
+     "speech": "她是经理。他是老板。他是经理？",
+     "answer": "他是老板。",
      "options": [
-      "我是老师。",
-      "你好！",
-      "您好！"
+      "他是老板。",
+      "她是老板。",
+      "他是经理。"
      ],
-     "explanation": "Ngài là giáo viên phải không? Đáp lại: 我是老师。"
+     "explanation": "Đáp lại: 他是老板。 Anh ấy là ông chủ; cô ấy là giám đốc. Chú ý 他 và 她."
     },
     {
      "type": "fix",
@@ -250,14 +250,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你们是学生？",
-     "answer": "我们是学生。",
+     "speech": "他们是学生。她们是老师。她们是学生？",
+     "answer": "她们是老师。",
      "options": [
-      "我们是学生。",
-      "你好！",
-      "您好！"
+      "她们是老师。",
+      "他们是老师。",
+      "她们是学生。"
      ],
-     "explanation": "Các bạn là học sinh phải không? Đáp lại: 我们是学生。"
+     "explanation": "Đáp lại: 她们是老师。 Nhóm nữ là giáo viên; nhóm được gọi bằng 他们 là học sinh."
     },
     {
      "type": "fix",
@@ -273,14 +273,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "他们是老师？",
-     "answer": "他们是老师。",
+     "speech": "他是学生。她是经理。他是老师？",
+     "answer": "他是学生。",
      "options": [
-      "他们是老师。",
-      "你好！",
-      "您好！"
+      "他是学生。",
+      "她是学生。",
+      "他是老师。"
      ],
-     "explanation": "Họ là giáo viên phải không? Đáp lại: 他们是老师。"
+     "explanation": "Đáp lại: 他是学生。 Anh ấy là học sinh; không đổi sang cô ấy hoặc đổi vai trò thành giáo viên."
     },
     {
      "type": "fix",
@@ -296,14 +296,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "她是经理？",
-     "answer": "她是经理。",
+     "speech": "她们是经理。他们是老师。他们是经理？",
+     "answer": "他们是老师。",
      "options": [
-      "她是经理。",
-      "你好！",
-      "您好！"
+      "他们是老师。",
+      "她们是老师。",
+      "他们是经理。"
      ],
-     "explanation": "Cô ấy là giám đốc phải không? Đáp lại: 她是经理。"
+     "explanation": "Đáp lại: 他们是老师。 Câu hỏi hỏi nhóm 他们: nhóm này là giáo viên, nhóm 她们 mới là giám đốc."
     },
     {
      "type": "fix",
@@ -319,14 +319,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "他是老板？",
-     "answer": "他是老板。",
+     "speech": "她是老师。他是老板。她是老板？",
+     "answer": "她是老师。",
      "options": [
-      "他是老板。",
-      "你好！",
-      "您好！"
+      "她是老师。",
+      "他是老师。",
+      "她是老板。"
      ],
-     "explanation": "Anh ấy là ông chủ phải không? Đáp lại: 他是老板。"
+     "explanation": "Đáp lại: 她是老师。 Cô ấy là giáo viên; ông chủ là anh ấy."
     },
     {
      "type": "fix",
@@ -342,14 +342,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "她们是学生？",
-     "answer": "她们是学生。",
+     "speech": "他们是老板。她们是学生。他们是学生？",
+     "answer": "他们是老板。",
      "options": [
-      "她们是学生。",
-      "你好！",
-      "您好！"
+      "他们是老板。",
+      "她们是老板。",
+      "他们是学生。"
      ],
-     "explanation": "Họ (nữ) là học sinh phải không? Đáp lại: 她们是学生。"
+     "explanation": "Đáp lại: 他们是老板。 Nhóm 他们 là các ông chủ; nhóm 她们 là học sinh."
     },
     {
      "type": "fix",
@@ -365,14 +365,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你是经理？",
-     "answer": "我是学生。",
+     "speech": "他是经理。她是老板。她是经理？",
+     "answer": "她是老板。",
      "options": [
-      "我是学生。",
-      "你好！",
-      "您好！"
+      "她是老板。",
+      "他是老板。",
+      "她是经理。"
      ],
-     "explanation": "Bạn là giám đốc phải không? Đáp lại: 我是学生。"
+     "explanation": "Đáp lại: 她是老板。 Cô ấy là ông chủ; người làm giám đốc là anh ấy."
     },
     {
      "type": "fix",
@@ -388,14 +388,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "他是老师？",
-     "answer": "他是老师。",
+     "speech": "她们是老师。他们是经理。她们是经理？",
+     "answer": "她们是老师。",
      "options": [
-      "他是老师。",
-      "你好！",
-      "您好！"
+      "她们是老师。",
+      "他们是老师。",
+      "她们是经理。"
      ],
-     "explanation": "Anh ấy là giáo viên phải không? Đáp lại: 他是老师。"
+     "explanation": "Đáp lại: 她们是老师。 Nhóm nữ là giáo viên, còn nhóm 他们 là giám đốc."
     },
     {
      "type": "fix",
@@ -411,14 +411,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "她是学生？",
-     "answer": "她是学生。",
+     "speech": "她是学生。他是老师。他是学生？",
+     "answer": "他是老师。",
      "options": [
-      "她是学生。",
-      "你好！",
-      "您好！"
+      "他是老师。",
+      "她是老师。",
+      "他是学生。"
      ],
-     "explanation": "Cô ấy là học sinh phải không? Đáp lại: 她是学生。"
+     "explanation": "Đáp lại: 他是老师。 Anh ấy là giáo viên; cô ấy mới là học sinh."
     }
    ]
   },
@@ -476,9 +476,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "你是___？ (Bạn là người nước nào?)",
-     "answer": "哪国人",
-     "explanation": "Câu hoàn chỉnh: 你是哪国人？ — Bạn là người nước nào?"
+     "prompt": "你___什么名字？ (Bạn tên là gì?)",
+     "answer": "叫",
+     "explanation": "Câu hoàn chỉnh: 你叫什么名字？ — Bạn tên là gì?"
     },
     {
      "type": "order",
@@ -494,9 +494,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我是___。 (Tôi là người Việt Nam.)",
-     "answer": "越南人",
-     "explanation": "Câu hoàn chỉnh: 我是越南人。 — Tôi là người Việt Nam."
+     "prompt": "您___？ (Ngài họ gì? (lịch sự))",
+     "answer": "贵姓",
+     "explanation": "Câu hoàn chỉnh: 您贵姓？ — Ngài họ gì? (lịch sự)"
     },
     {
      "type": "order",
@@ -512,9 +512,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "他是___。 (Anh ấy là người Trung Quốc.)",
-     "answer": "中国人",
-     "explanation": "Câu hoàn chỉnh: 他是中国人。 — Anh ấy là người Trung Quốc."
+     "prompt": "你是___？ (Bạn là người nước nào?)",
+     "answer": "哪国人",
+     "explanation": "Câu hoàn chỉnh: 你是哪国人？ — Bạn là người nước nào?"
     },
     {
      "type": "order",
@@ -530,9 +530,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "她是___。 (Cô ấy là người Mỹ.)",
-     "answer": "美国人",
-     "explanation": "Câu hoàn chỉnh: 她是美国人。 — Cô ấy là người Mỹ."
+     "prompt": "我是___。 (Tôi là người Việt Nam.)",
+     "answer": "越南人",
+     "explanation": "Câu hoàn chỉnh: 我是越南人。 — Tôi là người Việt Nam."
     },
     {
      "type": "order",
@@ -549,9 +549,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "你是___吗？ (Bạn có phải là người Nhật không?)",
-     "answer": "日本人",
-     "explanation": "Câu hoàn chỉnh: 你是日本人吗？ — Bạn có phải là người Nhật không?"
+     "prompt": "她是___。 (Cô ấy là người Mỹ.)",
+     "answer": "美国人",
+     "explanation": "Câu hoàn chỉnh: 她是美国人。 — Cô ấy là người Mỹ."
     },
     {
      "type": "order",
@@ -567,9 +567,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我是___。 (Tôi là người Anh.)",
-     "answer": "英国人",
-     "explanation": "Câu hoàn chỉnh: 我是英国人。 — Tôi là người Anh."
+     "prompt": "我___是老师。 (Tôi không phải là giáo viên.)",
+     "answer": "不",
+     "explanation": "Câu hoàn chỉnh: 我不是老师。 — Tôi không phải là giáo viên."
     },
     {
      "type": "order",
@@ -585,9 +585,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "他们是___。 (Họ là người Thái Lan.)",
-     "answer": "泰国人",
-     "explanation": "Câu hoàn chỉnh: 他们是泰国人。 — Họ là người Thái Lan."
+     "prompt": "你___？ (Còn bạn thì sao?)",
+     "answer": "呢",
+     "explanation": "Câu hoàn chỉnh: 你呢？ — Còn bạn thì sao?"
     },
     {
      "type": "order",
@@ -604,9 +604,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "你___什么名字？ (Bạn tên là gì?)",
-     "answer": "叫",
-     "explanation": "Câu hoàn chỉnh: 你叫什么名字？ — Bạn tên là gì?"
+     "prompt": "他很___。 (Anh ấy rất đẹp trai.)",
+     "answer": "帅",
+     "explanation": "Câu hoàn chỉnh: 他很帅。 — Anh ấy rất đẹp trai."
     },
     {
      "type": "order",
@@ -622,9 +622,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "他是___？ (Anh ấy là ai?)",
-     "answer": "谁",
-     "explanation": "Câu hoàn chỉnh: 他是谁？ — Anh ấy là ai?"
+     "prompt": "烤鸭很___。 (Vịt quay rất rẻ.)",
+     "answer": "便宜",
+     "explanation": "Câu hoàn chỉnh: 烤鸭很便宜。 — Vịt quay rất rẻ."
     },
     {
      "type": "order",
@@ -640,9 +640,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___是老师？ (Ai là giáo viên?)",
-     "answer": "谁",
-     "explanation": "Câu hoàn chỉnh: 谁是老师？ — Ai là giáo viên?"
+     "prompt": "毛笔很___。 (Bút lông rất đắt.)",
+     "answer": "贵",
+     "explanation": "Câu hoàn chỉnh: 毛笔很贵。 — Bút lông rất đắt."
     },
     {
      "type": "fix",
@@ -658,14 +658,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你叫什么名字？",
-     "answer": "我叫……。",
+     "speech": "她叫美美。他叫帅帅。她叫什么名字？",
+     "answer": "她叫美美。",
      "options": [
-      "我叫……。",
-      "你好！",
-      "您好！"
+      "她叫美美。",
+      "他叫美美。",
+      "她叫帅帅。"
      ],
-     "explanation": "Bạn tên là gì? Đáp lại: 我叫……。"
+     "explanation": "Đáp lại: 她叫美美。 Câu hỏi hỏi tên cô ấy: 美美; 帅帅 là tên anh ấy."
     },
     {
      "type": "fix",
@@ -681,14 +681,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "您贵姓？",
-     "answer": "我姓……。",
+     "speech": "他是中国人。她是越南人。他是哪国人？",
+     "answer": "他是中国人。",
      "options": [
-      "我姓……。",
-      "你好！",
-      "您好！"
+      "他是中国人。",
+      "她是中国人。",
+      "他是越南人。"
      ],
-     "explanation": "Ngài họ gì? Đáp lại: 我姓……。"
+     "explanation": "Đáp lại: 他是中国人。 Anh ấy là người Trung Quốc; cô ấy là người Việt Nam."
     },
     {
      "type": "fix",
@@ -704,14 +704,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你是哪国人？",
-     "answer": "我是越南人。",
+     "speech": "她是美国人。他是英国人。她是哪国人？",
+     "answer": "她是美国人。",
      "options": [
-      "我是越南人。",
-      "你好！",
-      "您好！"
+      "她是美国人。",
+      "他是美国人。",
+      "她是英国人。"
      ],
-     "explanation": "Bạn là người nước nào? Đáp lại: 我是越南人。"
+     "explanation": "Đáp lại: 她是美国人。 Cô ấy là người Mỹ; anh ấy là người Anh."
     },
     {
      "type": "fix",
@@ -727,14 +727,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你是学生吗？",
-     "answer": "我是学生。",
+     "speech": "他们是学生。她们是老师。谁是老师？",
+     "answer": "她们是老师。",
      "options": [
-      "我是学生。",
-      "你好！",
-      "您好！"
+      "她们是老师。",
+      "他们是老师。",
+      "她们是学生。"
      ],
-     "explanation": "Bạn có phải là học sinh không? Đáp lại: 我是学生。"
+     "explanation": "Đáp lại: 她们是老师。 Nhóm nữ là giáo viên; đừng đổi nhóm người hoặc đổi vai trò."
     },
     {
      "type": "fix",
@@ -750,14 +750,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "他是谁？",
-     "answer": "他是老师。",
+     "speech": "咖啡很贵。烤鸭很便宜。什么很便宜？",
+     "answer": "烤鸭很便宜。",
      "options": [
-      "他是老师。",
-      "你好！",
-      "您好！"
+      "烤鸭很便宜。",
+      "咖啡很便宜。",
+      "烤鸭很贵。"
      ],
-     "explanation": "Anh ấy là ai? Đáp lại: 他是老师。"
+     "explanation": "Đáp lại: 烤鸭很便宜。 Vịt quay rẻ; cà phê đắt. Câu hỏi hỏi thứ rẻ."
     },
     {
      "type": "fix",
@@ -773,14 +773,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "她是中国人吗？",
-     "answer": "她是中国人。",
+     "speech": "毛笔很新。飞机很旧。什么很新？",
+     "answer": "毛笔很新。",
      "options": [
-      "她是中国人。",
-      "你好！",
-      "您好！"
+      "毛笔很新。",
+      "飞机很新。",
+      "毛笔很旧。"
      ],
-     "explanation": "Cô ấy là người Trung Quốc phải không? Đáp lại: 她是中国人。"
+     "explanation": "Đáp lại: 毛笔很新。 Bút lông mới; máy bay cũ. Phân biệt 新 và 旧."
     },
     {
      "type": "fix",
@@ -796,14 +796,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "咖啡贵吗？",
-     "answer": "咖啡很贵。",
+     "speech": "他不是日本人。他是泰国人。他是哪国人？",
+     "answer": "他是泰国人。",
      "options": [
-      "咖啡很贵。",
-      "你好！",
-      "您好！"
+      "他是泰国人。",
+      "他是日本人。",
+      "他不是泰国人。"
      ],
-     "explanation": "Cà phê có đắt không? Đáp lại: 咖啡很贵。"
+     "explanation": "Đáp lại: 他是泰国人。 Thông tin đã phủ định quốc tịch Nhật và xác nhận quốc tịch Thái Lan."
     },
     {
      "type": "fix",
@@ -819,14 +819,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "烤鸭便宜吗？",
-     "answer": "烤鸭很便宜。",
+     "speech": "她很美。他很帅。谁很帅？",
+     "answer": "他很帅。",
      "options": [
-      "烤鸭很便宜。",
-      "你好！",
-      "您好！"
+      "他很帅。",
+      "她很帅。",
+      "他很美。"
      ],
-     "explanation": "Vịt quay có rẻ không? Đáp lại: 烤鸭很便宜。"
+     "explanation": "Đáp lại: 他很帅。 Anh ấy được miêu tả là đẹp trai; câu còn lại nói cô ấy đẹp."
     },
     {
      "type": "fix",
@@ -842,14 +842,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你是老师吗？",
-     "answer": "我不是老师。我是学生。",
+     "speech": "她是老师。她不是经理。她是经理吗？",
+     "answer": "她不是经理，她是老师。",
      "options": [
-      "我不是老师。我是学生。",
-      "你好！",
-      "您好！"
+      "她不是经理，她是老师。",
+      "她是经理，她不是老师。",
+      "他不是经理，他是老师。"
      ],
-     "explanation": "Bạn là giáo viên phải không? Đáp lại: 我不是老师。我是学生。"
+     "explanation": "Đáp lại: 她不是经理，她是老师。 Đáp lại về đúng cô ấy và giữ đúng ý phủ định: cô ấy là giáo viên."
     },
     {
      "type": "fix",
@@ -865,14 +865,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "他们是哪国人？",
-     "answer": "他们是越南人。",
+     "speech": "他们是英国人。她们是美国人。她们是哪国人？",
+     "answer": "她们是美国人。",
      "options": [
-      "他们是越南人。",
-      "你好！",
-      "您好！"
+      "她们是美国人。",
+      "他们是美国人。",
+      "她们是英国人。"
      ],
-     "explanation": "Họ là người nước nào? Đáp lại: 他们是越南人。"
+     "explanation": "Đáp lại: 她们是美国人。 Nhóm nữ là người Mỹ; nhóm 他们 là người Anh."
     }
    ]
   },
@@ -931,8 +931,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___是我的名片。 (Đây là danh thiếp của tôi.)",
-     "answer": "这",
+     "prompt": "这是我___名片。 (Đây là danh thiếp của tôi.)",
+     "answer": "的",
      "explanation": "Câu hoàn chỉnh: 这是我的名片。 — Đây là danh thiếp của tôi."
     },
     {
@@ -951,9 +951,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___是他的朋友。 (Kia là bạn của anh ấy.)",
-     "answer": "那",
-     "explanation": "Câu hoàn chỉnh: 那是他的朋友。 — Kia là bạn của anh ấy."
+     "prompt": "我___名片。 (Tôi không có danh thiếp.)",
+     "answer": "没有",
+     "explanation": "Câu hoàn chỉnh: 我没有名片。 — Tôi không có danh thiếp."
     },
     {
      "type": "order",
@@ -987,9 +987,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___名片。 (Tôi không có danh thiếp.)",
-     "answer": "没有",
-     "explanation": "Câu hoàn chỉnh: 我没有名片。 — Tôi không có danh thiếp."
+     "prompt": "很高兴___你。 (Rất vui được làm quen với bạn.)",
+     "answer": "认识",
+     "explanation": "Câu hoàn chỉnh: 很高兴认识你。 — Rất vui được làm quen với bạn."
     },
     {
      "type": "order",
@@ -1006,9 +1006,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___高兴认识你。 (Rất vui được làm quen với bạn.)",
-     "answer": "很",
-     "explanation": "Câu hoàn chỉnh: 很高兴认识你。 — Rất vui được làm quen với bạn."
+     "prompt": "我们___是学生。 (Chúng tôi đều là học sinh.)",
+     "answer": "都",
+     "explanation": "Câu hoàn chỉnh: 我们都是学生。 — Chúng tôi đều là học sinh."
     },
     {
      "type": "order",
@@ -1025,9 +1025,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我们___是学生。 (Chúng tôi đều là học sinh.)",
-     "answer": "都",
-     "explanation": "Câu hoàn chỉnh: 我们都是学生。 — Chúng tôi đều là học sinh."
+     "prompt": "他们___很忙。 (Họ cũng rất bận.)",
+     "answer": "也",
+     "explanation": "Câu hoàn chỉnh: 他们也很忙。 — Họ cũng rất bận."
     },
     {
      "type": "order",
@@ -1044,9 +1044,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "他们___很忙。 (Họ cũng rất bận.)",
-     "answer": "也",
-     "explanation": "Câu hoàn chỉnh: 他们也很忙。 — Họ cũng rất bận."
+     "prompt": "我___烤鸭很好吃。 (Tôi thấy vịt quay rất ngon.)",
+     "answer": "觉得",
+     "explanation": "Câu hoàn chỉnh: 我觉得烤鸭很好吃。 — Tôi thấy vịt quay rất ngon."
     },
     {
      "type": "order",
@@ -1064,9 +1064,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___烤鸭很好吃。 (Tôi thấy vịt quay rất ngon.)",
-     "answer": "觉得",
-     "explanation": "Câu hoàn chỉnh: 我觉得烤鸭很好吃。 — Tôi thấy vịt quay rất ngon."
+     "prompt": "___是汉语书。 (Những cuốn này là sách tiếng Hán.)",
+     "answer": "这些",
+     "explanation": "Câu hoàn chỉnh: 这些是汉语书。 — Những cuốn này là sách tiếng Hán."
     },
     {
      "type": "order",
@@ -1082,9 +1082,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___是汉语书。 (Những cuốn này là sách tiếng Hán.)",
-     "answer": "这些",
-     "explanation": "Câu hoàn chỉnh: 这些是汉语书。 — Những cuốn này là sách tiếng Hán."
+     "prompt": "她是我的___。 (Cô ấy là bạn gái của tôi.)",
+     "answer": "女朋友",
+     "explanation": "Câu hoàn chỉnh: 她是我的女朋友。 — Cô ấy là bạn gái của tôi."
     },
     {
      "type": "order",
@@ -1100,9 +1100,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___是英语书。 (Những cuốn kia là sách tiếng Anh.)",
-     "answer": "那些",
-     "explanation": "Câu hoàn chỉnh: 那些是英语书。 — Những cuốn kia là sách tiếng Anh."
+     "prompt": "我的___很好。 (Sức khỏe của tôi rất tốt.)",
+     "answer": "身体",
+     "explanation": "Câu hoàn chỉnh: 我的身体很好。 — Sức khỏe của tôi rất tốt."
     },
     {
      "type": "fix",
@@ -1118,14 +1118,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你有名片吗？",
-     "answer": "我没有名片。",
+     "speech": "这是马先生的名片。那是王女士的名片。这是谁的名片？",
+     "answer": "这是马先生的名片。",
      "options": [
-      "我没有名片。",
-      "你好！",
-      "您好！"
+      "这是马先生的名片。",
+      "这是王女士的名片。",
+      "那是马先生的名片。"
      ],
-     "explanation": "Bạn có danh thiếp không? Đáp lại: 我没有名片。"
+     "explanation": "Đáp lại: 这是马先生的名片。 这 chỉ danh thiếp của ông Mã; 那 chỉ danh thiếp của bà Vương."
     },
     {
      "type": "fix",
@@ -1141,14 +1141,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你认识马先生吗？",
-     "answer": "我认识马先生。",
+     "speech": "马先生有名片，王女士没有名片。谁没有名片？",
+     "answer": "王女士没有名片。",
      "options": [
-      "我认识马先生。",
-      "你好！",
-      "您好！"
+      "王女士没有名片。",
+      "马先生没有名片。",
+      "王女士有名片。"
      ],
-     "explanation": "Bạn có quen ông Mã không? Đáp lại: 我认识马先生。"
+     "explanation": "Đáp lại: 王女士没有名片。 Bà Vương không có danh thiếp; ông Mã có. Không đảo người hoặc phủ định."
     },
     {
      "type": "fix",
@@ -1164,14 +1164,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "这是谁的名片？",
-     "answer": "这是我的名片。",
+     "speech": "这些是汉语书，那些是英语书。那些是什么？",
+     "answer": "那些是英语书。",
      "options": [
-      "这是我的名片。",
-      "你好！",
-      "您好！"
+      "那些是英语书。",
+      "那些是汉语书。",
+      "这些是英语书。"
      ],
-     "explanation": "Đây là danh thiếp của ai? Đáp lại: 这是我的名片。"
+     "explanation": "Đáp lại: 那些是英语书。 Câu hỏi hỏi 那些: những cuốn kia là sách tiếng Anh."
     },
     {
      "type": "fix",
@@ -1187,14 +1187,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你的身体好吗？",
-     "answer": "我的身体很好。",
+     "speech": "她是我的女朋友，他是我的好朋友。他是谁？",
+     "answer": "他是我的好朋友。",
      "options": [
-      "我的身体很好。",
-      "我是老师。",
-      "我是学生。"
+      "他是我的好朋友。",
+      "她是我的好朋友。",
+      "他是我的女朋友。"
      ],
-     "explanation": "Sức khỏe của bạn có tốt không? Đáp lại: 我的身体很好。"
+     "explanation": "Đáp lại: 他是我的好朋友。 Câu hỏi hỏi 他, người bạn thân; 女朋友 nói về cô ấy."
     },
     {
      "type": "fix",
@@ -1210,14 +1210,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "这些是什么？",
-     "answer": "这些是汉语书。",
+     "speech": "马先生很忙，王女士身体很好。谁很忙？",
+     "answer": "马先生很忙。",
      "options": [
-      "这些是汉语书。",
-      "你好！",
-      "您好！"
+      "马先生很忙。",
+      "王女士很忙。",
+      "马先生身体很好。"
      ],
-     "explanation": "Những cái này là gì? Đáp lại: 这些是汉语书。"
+     "explanation": "Đáp lại: 马先生很忙。 Thông tin về bận rộn thuộc ông Mã; sức khỏe tốt thuộc bà Vương."
     },
     {
      "type": "fix",
@@ -1233,14 +1233,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "那些是英语书吗？",
-     "answer": "那些是英语书。",
+     "speech": "他认识马先生，不认识王女士。他认识谁？",
+     "answer": "他认识马先生。",
      "options": [
-      "那些是英语书。",
-      "你好！",
-      "您好！"
+      "他认识马先生。",
+      "他认识王女士。",
+      "他不认识马先生。"
      ],
-     "explanation": "Những cuốn kia là sách tiếng Anh phải không? Đáp lại: 那些是英语书。"
+     "explanation": "Đáp lại: 他认识马先生。 Anh ấy quen ông Mã và không quen bà Vương."
     },
     {
      "type": "fix",
@@ -1256,14 +1256,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你觉得烤鸭好吃吗？",
-     "answer": "我觉得烤鸭很好吃。",
+     "speech": "他们都是学生，她们都是老师。她们都是学生吗？",
+     "answer": "她们都是老师。",
      "options": [
-      "我觉得烤鸭很好吃。",
-      "你好！",
-      "您好！"
+      "她们都是老师。",
+      "她们都是学生。",
+      "他们都是老师。"
      ],
-     "explanation": "Bạn thấy vịt quay có ngon không? Đáp lại: 我觉得烤鸭很好吃。"
+     "explanation": "Đáp lại: 她们都是老师。 Nhóm nữ đều là giáo viên; nhóm 他们 đều là học sinh."
     },
     {
      "type": "fix",
@@ -1279,14 +1279,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你们都很忙吗？",
-     "answer": "我们都很忙。",
+     "speech": "我觉得烤鸭很好吃。她觉得烤鸭不好吃。她觉得烤鸭好吃吗？",
+     "answer": "她觉得烤鸭不好吃。",
      "options": [
-      "我们都很忙。",
-      "你好！",
-      "您好！"
+      "她觉得烤鸭不好吃。",
+      "她觉得烤鸭很好吃。",
+      "我觉得烤鸭不好吃。"
      ],
-     "explanation": "Các bạn đều rất bận phải không? Đáp lại: 我们都很忙。"
+     "explanation": "Đáp lại: 她觉得烤鸭不好吃。 Phải trả lời theo ý kiến của cô ấy, không lấy ý kiến của người nói."
     },
     {
      "type": "fix",
@@ -1302,14 +1302,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "她是你的朋友吗？",
-     "answer": "她是我的好朋友。",
+     "speech": "这不是我的名片，这是他的名片。这是谁的名片？",
+     "answer": "这是他的名片。",
      "options": [
-      "她是我的好朋友。",
-      "你好！",
-      "您好！"
+      "这是他的名片。",
+      "这是我的名片。",
+      "那是他的名片。"
      ],
-     "explanation": "Cô ấy là bạn của bạn phải không? Đáp lại: 她是我的好朋友。"
+     "explanation": "Đáp lại: 这是他的名片。 Danh thiếp này thuộc anh ấy; 我的 đã bị phủ định và câu hỏi dùng 这."
     },
     {
      "type": "fix",
@@ -1325,14 +1325,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你认识王女士吗？",
-     "answer": "我认识王女士。",
+     "speech": "王女士是他的朋友。马先生是她的朋友。谁是她的朋友？",
+     "answer": "马先生是她的朋友。",
      "options": [
-      "我认识王女士。",
-      "你好！",
-      "您好！"
+      "马先生是她的朋友。",
+      "王女士是她的朋友。",
+      "马先生是他的朋友。"
      ],
-     "explanation": "Bạn có quen bà Vương không? Đáp lại: 我认识王女士。"
+     "explanation": "Đáp lại: 马先生是她的朋友。 Câu hỏi hỏi bạn của cô ấy: ông Mã. Phân biệt 他的 và 她的."
     }
    ]
   },
@@ -1389,8 +1389,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "你___哪儿？ (Bạn đi đâu?)",
-     "answer": "去",
+     "prompt": "你去___？ (Bạn đi đâu?)",
+     "answer": "哪儿",
      "explanation": "Câu hoàn chỉnh: 你去哪儿？ — Bạn đi đâu?"
     },
     {
@@ -1407,8 +1407,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___人民广场。 (Tôi đi đến Quảng trường Nhân dân.)",
-     "answer": "去",
+     "prompt": "我去___。 (Tôi đi đến Quảng trường Nhân dân.)",
+     "answer": "人民广场",
      "explanation": "Câu hoàn chỉnh: 我去人民广场。 — Tôi đi đến Quảng trường Nhân dân."
     },
     {
@@ -1427,8 +1427,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___离公司很近。 (Trường học ở rất gần công ty.)",
-     "answer": "学校",
+     "prompt": "学校___公司很近。 (Trường học ở rất gần công ty.)",
+     "answer": "离",
      "explanation": "Câu hoàn chỉnh: 学校离公司很近。 — Trường học ở rất gần công ty."
     },
     {
@@ -1447,8 +1447,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___离学校很远。 (Bệnh viện ở rất xa trường học.)",
-     "answer": "医院",
+     "prompt": "医院离学校很___。 (Bệnh viện ở rất xa trường học.)",
+     "answer": "远",
      "explanation": "Câu hoàn chỉnh: 医院离学校很远。 — Bệnh viện ở rất xa trường học."
     },
     {
@@ -1469,9 +1469,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___，超市离学校远吗？ (Xin hỏi, siêu thị có xa trường học không?)",
-     "answer": "请问",
-     "explanation": "Câu hoàn chỉnh: 请问，超市离学校远吗？ — Xin hỏi, siêu thị có xa trường học không?"
+     "prompt": "我___了。 (Tôi hiểu rồi.)",
+     "answer": "明白",
+     "explanation": "Câu hoàn chỉnh: 我明白了。 — Tôi hiểu rồi."
     },
     {
      "type": "order",
@@ -1487,9 +1487,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___了。 (Tôi biết rồi.)",
-     "answer": "知道",
-     "explanation": "Câu hoàn chỉnh: 我知道了。 — Tôi biết rồi."
+     "prompt": "___钱？ (Bao nhiêu tiền?)",
+     "answer": "多少",
+     "explanation": "Câu hoàn chỉnh: 多少钱？ — Bao nhiêu tiền?"
     },
     {
      "type": "order",
@@ -1505,9 +1505,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___了。 (Tôi hiểu rồi.)",
-     "answer": "明白",
-     "explanation": "Câu hoàn chỉnh: 我明白了。 — Tôi hiểu rồi."
+     "prompt": "十___钱。 (Mười đồng.)",
+     "answer": "块",
+     "explanation": "Câu hoàn chỉnh: 十块钱。 — Mười đồng."
     },
     {
      "type": "order",
@@ -1523,9 +1523,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___块钱。 (Mười đồng.)",
-     "answer": "十",
-     "explanation": "Câu hoàn chỉnh: 十块钱。 — Mười đồng."
+     "prompt": "她___去学校。 (Buổi sáng cô ấy đi đến trường.)",
+     "answer": "上午",
+     "explanation": "Câu hoàn chỉnh: 她上午去学校。 — Buổi sáng cô ấy đi đến trường."
     },
     {
      "type": "order",
@@ -1542,9 +1542,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "她___去学校。 (Buổi sáng cô ấy đi đến trường.)",
-     "answer": "上午",
-     "explanation": "Câu hoàn chỉnh: 她上午去学校。 — Buổi sáng cô ấy đi đến trường."
+     "prompt": "我去___老师。 (Tôi đi tìm thầy/cô.)",
+     "answer": "找",
+     "explanation": "Câu hoàn chỉnh: 我去找老师。 — Tôi đi tìm thầy/cô."
     },
     {
      "type": "order",
@@ -1561,9 +1561,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___去公司。 (Buổi chiều tôi đi đến công ty.)",
-     "answer": "下午",
-     "explanation": "Câu hoàn chỉnh: 我下午去公司。 — Buổi chiều tôi đi đến công ty."
+     "prompt": "你下午___吗？ (Buổi chiều bạn có đến không?)",
+     "answer": "来",
+     "explanation": "Câu hoàn chỉnh: 你下午来吗？ — Buổi chiều bạn có đến không?"
     },
     {
      "type": "fix",
@@ -1579,14 +1579,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你去哪儿？",
-     "answer": "我去学校。",
+     "speech": "他上午去学校，下午去公司。他下午去哪儿？",
+     "answer": "他下午去公司。",
      "options": [
-      "我去学校。",
-      "你好！",
-      "您好！"
+      "他下午去公司。",
+      "他下午去学校。",
+      "他上午去公司。"
      ],
-     "explanation": "Bạn đi đâu? Đáp lại: 我去学校。"
+     "explanation": "Đáp lại: 他下午去公司。 Buổi chiều anh ấy đi công ty; trường học là nơi đến buổi sáng."
     },
     {
      "type": "fix",
@@ -1602,14 +1602,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "人民广场远吗？",
-     "answer": "人民广场很近。",
+     "speech": "学校离公司很近，医院离公司很远。医院离公司远吗？",
+     "answer": "医院离公司很远。",
      "options": [
-      "人民广场很近。",
-      "你好！",
-      "您好！"
+      "医院离公司很远。",
+      "医院离公司很近。",
+      "学校离公司很远。"
      ],
-     "explanation": "Quảng trường Nhân dân có xa không? Đáp lại: 人民广场很近。"
+     "explanation": "Đáp lại: 医院离公司很远。 Bệnh viện xa công ty; trường học mới gần công ty."
     },
     {
      "type": "fix",
@@ -1625,14 +1625,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "学校离公司远吗？",
-     "answer": "学校离公司很近。",
+     "speech": "她去人民广场找老师。他去公司找经理。她去找谁？",
+     "answer": "她去找老师。",
      "options": [
-      "学校离公司很近。",
-      "你好！",
-      "您好！"
+      "她去找老师。",
+      "她去找经理。",
+      "他去找老师。"
      ],
-     "explanation": "Trường học có xa công ty không? Đáp lại: 学校离公司很近。"
+     "explanation": "Đáp lại: 她去找老师。 Cô ấy đi tìm giáo viên; anh ấy đi tìm giám đốc."
     },
     {
      "type": "fix",
@@ -1648,14 +1648,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你去找谁？",
-     "answer": "我去找老师。",
+     "speech": "他晚上去电影院，妹妹下午去超市。妹妹下午去哪儿？",
+     "answer": "妹妹下午去超市。",
      "options": [
-      "我去找老师。",
-      "你好！",
-      "您好！"
+      "妹妹下午去超市。",
+      "妹妹下午去电影院。",
+      "妹妹晚上去超市。"
      ],
-     "explanation": "Bạn đi tìm ai? Đáp lại: 我去找老师。"
+     "explanation": "Đáp lại: 妹妹下午去超市。 Em gái đi siêu thị vào buổi chiều, không phải rạp phim hay buổi tối."
     },
     {
      "type": "fix",
@@ -1671,14 +1671,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "超市离学校近吗？",
-     "answer": "超市离学校很近。",
+     "speech": "咖啡十块钱，烤鸭九十块钱。咖啡多少钱？",
+     "answer": "咖啡十块钱。",
      "options": [
-      "超市离学校很近。",
-      "你好！",
-      "您好！"
+      "咖啡十块钱。",
+      "咖啡九十块钱。",
+      "烤鸭十块钱。"
      ],
-     "explanation": "Siêu thị có gần trường không? Đáp lại: 超市离学校很近。"
+     "explanation": "Đáp lại: 咖啡十块钱。 Cà phê giá mười đồng; chín mươi đồng là giá vịt quay."
     },
     {
      "type": "fix",
@@ -1694,14 +1694,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你上午去哪儿？",
-     "answer": "我上午去学校。",
+     "speech": "超市离学校很近，宿舍离学校很远。宿舍离学校近吗？",
+     "answer": "宿舍离学校很远。",
      "options": [
-      "我上午去学校。",
-      "你好！",
-      "您好！"
+      "宿舍离学校很远。",
+      "宿舍离学校很近。",
+      "超市离学校很远。"
      ],
-     "explanation": "Buổi sáng bạn đi đâu? Đáp lại: 我上午去学校。"
+     "explanation": "Đáp lại: 宿舍离学校很远。 Ký túc xá xa trường học; siêu thị mới gần trường học."
     },
     {
      "type": "fix",
@@ -1717,14 +1717,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你下午去公司吗？",
-     "answer": "我下午去公司。",
+     "speech": "她上午来，他下午来。他上午来吗？",
+     "answer": "他下午来。",
      "options": [
-      "我下午去公司。",
-      "你好！",
-      "您好！"
+      "他下午来。",
+      "他上午来。",
+      "她下午来。"
      ],
-     "explanation": "Buổi chiều bạn đến công ty phải không? Đáp lại: 我下午去公司。"
+     "explanation": "Đáp lại: 他下午来。 Anh ấy đến buổi chiều; cô ấy đến buổi sáng."
     },
     {
      "type": "fix",
@@ -1740,14 +1740,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你晚上去电影院吗？",
-     "answer": "我晚上去电影院。",
+     "speech": "马先生去医院，王女士去公司。谁去医院？",
+     "answer": "马先生去医院。",
      "options": [
-      "我晚上去电影院。",
-      "你好！",
-      "您好！"
+      "马先生去医院。",
+      "王女士去医院。",
+      "马先生去公司。"
      ],
-     "explanation": "Buổi tối bạn đến rạp chiếu phim phải không? Đáp lại: 我晚上去电影院。"
+     "explanation": "Đáp lại: 马先生去医院。 Ông Mã đi bệnh viện, còn bà Vương đi công ty."
     },
     {
      "type": "fix",
@@ -1763,14 +1763,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "多少钱？",
-     "answer": "十块钱。",
+     "speech": "他知道医院离学校很远，她不知道。谁不知道医院离学校很远？",
+     "answer": "她不知道医院离学校很远。",
      "options": [
-      "十块钱。",
-      "你好！",
-      "您好！"
+      "她不知道医院离学校很远。",
+      "他不知道医院离学校很远。",
+      "她知道医院离学校很远。"
      ],
-     "explanation": "Bao nhiêu tiền? Đáp lại: 十块钱。"
+     "explanation": "Đáp lại: 她不知道医院离学校很远。 Cô ấy chưa biết bệnh viện xa trường học; anh ấy đã biết thông tin này."
     },
     {
      "type": "fix",
@@ -1786,14 +1786,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你明白了吗？",
-     "answer": "我明白了。",
+     "speech": "我明白了，他还不明白。谁还不明白？",
+     "answer": "他还不明白。",
      "options": [
-      "我明白了。",
-      "你好！",
-      "您好！"
+      "他还不明白。",
+      "我还不明白。",
+      "他明白了。"
      ],
-     "explanation": "Bạn đã hiểu chưa? Đáp lại: 我明白了。"
+     "explanation": "Đáp lại: 他还不明白。 Người chưa hiểu là anh ấy; người nói đã hiểu."
     }
    ]
   },
@@ -1851,9 +1851,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "你___吃什么？ (Bạn muốn ăn gì?)",
-     "answer": "要",
-     "explanation": "Câu hoàn chỉnh: 你要吃什么？ — Bạn muốn ăn gì?"
+     "prompt": "我要一碗___。 (Tôi muốn một bát cơm.)",
+     "answer": "米饭",
+     "explanation": "Câu hoàn chỉnh: 我要一碗米饭。 — Tôi muốn một bát cơm."
     },
     {
      "type": "order",
@@ -1869,9 +1869,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___一碗米饭。 (Tôi muốn một bát cơm.)",
-     "answer": "要",
-     "explanation": "Câu hoàn chỉnh: 我要一碗米饭。 — Tôi muốn một bát cơm."
+     "prompt": "你喝茶___牛奶？ (Bạn uống trà hay sữa bò?)",
+     "answer": "还是",
+     "explanation": "Câu hoàn chỉnh: 你喝茶还是牛奶？ — Bạn uống trà hay sữa bò?"
     },
     {
      "type": "order",
@@ -1889,9 +1889,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "你___茶还是牛奶？ (Bạn uống trà hay sữa bò?)",
-     "answer": "喝",
-     "explanation": "Câu hoàn chỉnh: 你喝茶还是牛奶？ — Bạn uống trà hay sữa bò?"
+     "prompt": "我想买两个___。 (Tôi muốn mua hai chiếc bánh bao.)",
+     "answer": "包子",
+     "explanation": "Câu hoàn chỉnh: 我想买两个包子。 — Tôi muốn mua hai chiếc bánh bao."
     },
     {
      "type": "order",
@@ -1910,9 +1910,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___买两个包子。 (Tôi muốn mua hai chiếc bánh bao.)",
-     "answer": "想",
-     "explanation": "Câu hoàn chỉnh: 我想买两个包子。 — Tôi muốn mua hai chiếc bánh bao."
+     "prompt": "这些苹果很___。 (Những quả táo này rất tươi.)",
+     "answer": "新鲜",
+     "explanation": "Câu hoàn chỉnh: 这些苹果很新鲜。 — Những quả táo này rất tươi."
     },
     {
      "type": "order",
@@ -1929,9 +1929,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___苹果很新鲜。 (Những quả táo này rất tươi.)",
-     "answer": "这些",
-     "explanation": "Câu hoàn chỉnh: 这些苹果很新鲜。 — Những quả táo này rất tươi."
+     "prompt": "我有点儿___。 (Tôi hơi đói.)",
+     "answer": "饿",
+     "explanation": "Câu hoàn chỉnh: 我有点儿饿。 — Tôi hơi đói."
     },
     {
      "type": "order",
@@ -1947,9 +1947,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___饿。 (Tôi hơi đói.)",
-     "answer": "有点儿",
-     "explanation": "Câu hoàn chỉnh: 我有点儿饿。 — Tôi hơi đói."
+     "prompt": "我想喝一杯___。 (Tôi muốn uống một cốc trà sữa.)",
+     "answer": "奶茶",
+     "explanation": "Câu hoàn chỉnh: 我想喝一杯奶茶。 — Tôi muốn uống một cốc trà sữa."
     },
     {
      "type": "order",
@@ -1965,9 +1965,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "他___饱。 (Anh ấy rất no.)",
-     "answer": "很",
-     "explanation": "Câu hoàn chỉnh: 他很饱。 — Anh ấy rất no."
+     "prompt": "牛肉多少钱一___？ (Thịt bò bao nhiêu tiền một cân Trung Quốc?)",
+     "answer": "斤",
+     "explanation": "Câu hoàn chỉnh: 牛肉多少钱一斤？ — Thịt bò bao nhiêu tiền một cân Trung Quốc?"
     },
     {
      "type": "order",
@@ -1984,9 +1984,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___喝一杯奶茶。 (Tôi muốn uống một cốc trà sữa.)",
-     "answer": "想",
-     "explanation": "Câu hoàn chỉnh: 我想喝一杯奶茶。 — Tôi muốn uống một cốc trà sữa."
+     "prompt": "___五十块钱。 (Tổng cộng năm mươi đồng.)",
+     "answer": "一共",
+     "explanation": "Câu hoàn chỉnh: 一共五十块钱。 — Tổng cộng năm mươi đồng."
     },
     {
      "type": "order",
@@ -2004,9 +2004,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___多少钱一斤？ (Thịt bò bao nhiêu tiền một cân Trung Quốc?)",
-     "answer": "牛肉",
-     "explanation": "Câu hoàn chỉnh: 牛肉多少钱一斤？ — Thịt bò bao nhiêu tiền một cân Trung Quốc?"
+     "prompt": "我要买___公斤香蕉。 (Tôi muốn mua hai kilôgam chuối.)",
+     "answer": "两",
+     "explanation": "Câu hoàn chỉnh: 我要买两公斤香蕉。 — Tôi muốn mua hai kilôgam chuối."
     },
     {
      "type": "order",
@@ -2024,9 +2024,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___五十块钱。 (Tổng cộng năm mươi đồng.)",
-     "answer": "一共",
-     "explanation": "Câu hoàn chỉnh: 一共五十块钱。 — Tổng cộng năm mươi đồng."
+     "prompt": "我想买一___汉语书。 (Tôi muốn mua một quyển sách tiếng Hán.)",
+     "answer": "本",
+     "explanation": "Câu hoàn chỉnh: 我想买一本汉语书。 — Tôi muốn mua một quyển sách tiếng Hán."
     },
     {
      "type": "fix",
@@ -2042,14 +2042,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你想吃什么？",
-     "answer": "我想吃包子。",
+     "speech": "他想吃包子，她想吃饺子。他想吃什么？",
+     "answer": "他想吃包子。",
      "options": [
-      "我想吃包子。",
-      "你好！",
-      "您好！"
+      "他想吃包子。",
+      "他想吃饺子。",
+      "她想吃包子。"
      ],
-     "explanation": "Bạn muốn ăn gì? Đáp lại: 我想吃包子。"
+     "explanation": "Đáp lại: 他想吃包子。 Anh ấy muốn ăn bánh bao, còn cô ấy muốn ăn sủi cảo."
     },
     {
      "type": "fix",
@@ -2065,14 +2065,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你喝茶还是牛奶？",
-     "answer": "我喝茶。",
+     "speech": "她喝茶，他喝牛奶。她喝什么？",
+     "answer": "她喝茶。",
      "options": [
-      "我喝茶。",
-      "你好！",
-      "您好！"
+      "她喝茶。",
+      "她喝牛奶。",
+      "他喝茶。"
      ],
-     "explanation": "Bạn uống trà hay sữa bò? Đáp lại: 我喝茶。"
+     "explanation": "Đáp lại: 她喝茶。 Cô ấy uống trà; người uống sữa là anh ấy."
     },
     {
      "type": "fix",
@@ -2088,14 +2088,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你要几碗米饭？",
-     "answer": "我要一碗米饭。",
+     "speech": "他要两碗米饭，她要一碗米饭。他要几碗米饭？",
+     "answer": "他要两碗米饭。",
      "options": [
-      "我要一碗米饭。",
-      "你好！",
-      "您好！"
+      "他要两碗米饭。",
+      "他要一碗米饭。",
+      "她要两碗米饭。"
      ],
-     "explanation": "Bạn muốn mấy bát cơm? Đáp lại: 我要一碗米饭。"
+     "explanation": "Đáp lại: 他要两碗米饭。 Anh ấy gọi hai bát; một bát là phần cô ấy gọi."
     },
     {
      "type": "fix",
@@ -2111,14 +2111,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你想买什么水果？",
-     "answer": "我想买苹果。",
+     "speech": "她买苹果，他买香蕉。他买什么水果？",
+     "answer": "他买香蕉。",
      "options": [
-      "我想买苹果。",
-      "你好！",
-      "您好！"
+      "他买香蕉。",
+      "他买苹果。",
+      "她买香蕉。"
      ],
-     "explanation": "Bạn muốn mua hoa quả gì? Đáp lại: 我想买苹果。"
+     "explanation": "Đáp lại: 他买香蕉。 Anh ấy mua chuối; cô ấy mua táo."
     },
     {
      "type": "fix",
@@ -2134,14 +2134,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "这些苹果新鲜吗？",
+     "speech": "这些苹果很新鲜，那些苹果不新鲜。这些苹果新鲜吗？",
      "answer": "这些苹果很新鲜。",
      "options": [
       "这些苹果很新鲜。",
-      "你好！",
-      "您好！"
+      "这些苹果不新鲜。",
+      "那些苹果很新鲜。"
      ],
-     "explanation": "Những quả táo này có tươi không? Đáp lại: 这些苹果很新鲜。"
+     "explanation": "Đáp lại: 这些苹果很新鲜。 Những quả táo này tươi; những quả kia không tươi."
     },
     {
      "type": "fix",
@@ -2157,14 +2157,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "牛肉多少钱一斤？",
-     "answer": "五十块钱一斤。",
+     "speech": "牛肉五十块钱一斤，蔬菜十块钱一斤。牛肉多少钱一斤？",
+     "answer": "牛肉五十块钱一斤。",
      "options": [
-      "五十块钱一斤。",
-      "你好！",
-      "您好！"
+      "牛肉五十块钱一斤。",
+      "牛肉十块钱一斤。",
+      "蔬菜五十块钱一斤。"
      ],
-     "explanation": "Thịt bò bao nhiêu tiền một cân Trung Quốc? Đáp lại: 五十块钱一斤。"
+     "explanation": "Đáp lại: 牛肉五十块钱一斤。 Thịt bò năm mươi đồng một cân Trung Quốc; mười đồng là giá rau."
     },
     {
      "type": "fix",
@@ -2180,14 +2180,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你饿了吗？",
-     "answer": "我有点儿饿。",
+     "speech": "他有点儿饿，她很饱。谁有点儿饿？",
+     "answer": "他有点儿饿。",
      "options": [
-      "我有点儿饿。",
-      "你好！",
-      "您好！"
+      "他有点儿饿。",
+      "她有点儿饿。",
+      "他不饿。"
      ],
-     "explanation": "Bạn đói chưa? Đáp lại: 我有点儿饿。"
+     "explanation": "Đáp lại: 他有点儿饿。 Anh ấy hơi đói; cô ấy rất no."
     },
     {
      "type": "fix",
@@ -2203,14 +2203,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你要一杯奶茶吗？",
-     "answer": "我要一杯奶茶。",
+     "speech": "她要一杯奶茶，他要两杯茶。她要什么？",
+     "answer": "她要一杯奶茶。",
      "options": [
-      "我要一杯奶茶。",
-      "你好！",
-      "您好！"
+      "她要一杯奶茶。",
+      "她要两杯茶。",
+      "他要一杯奶茶。"
      ],
-     "explanation": "Bạn muốn một cốc trà sữa phải không? Đáp lại: 我要一杯奶茶。"
+     "explanation": "Đáp lại: 她要一杯奶茶。 Cô ấy gọi một cốc trà sữa; hai cốc trà là của anh ấy."
     },
     {
      "type": "fix",
@@ -2226,14 +2226,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你要买几公斤香蕉？",
-     "answer": "我要买两公斤香蕉。",
+     "speech": "他要两公斤香蕉，她要一公斤香蕉。她要几公斤香蕉？",
+     "answer": "她要一公斤香蕉。",
      "options": [
-      "我要买两公斤香蕉。",
-      "你好！",
-      "您好！"
+      "她要一公斤香蕉。",
+      "她要两公斤香蕉。",
+      "他要一公斤香蕉。"
      ],
-     "explanation": "Bạn muốn mua mấy kilôgam chuối? Đáp lại: 我要买两公斤香蕉。"
+     "explanation": "Đáp lại: 她要一公斤香蕉。 Cô ấy muốn một kilôgam chuối; anh ấy muốn hai kilôgam."
     },
     {
      "type": "fix",
@@ -2249,14 +2249,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "一共多少钱？",
-     "answer": "一共十块钱。",
+     "speech": "苹果十块钱，香蕉五块钱，一共十五块钱。一共多少钱？",
+     "answer": "一共十五块钱。",
      "options": [
+      "一共十五块钱。",
       "一共十块钱。",
-      "你好！",
-      "您好！"
+      "一共五块钱。"
      ],
-     "explanation": "Tổng cộng bao nhiêu tiền? Đáp lại: 一共十块钱。"
+     "explanation": "Đáp lại: 一共十五块钱。 Câu hỏi hỏi tổng tiền là mười lăm đồng, không phải giá riêng từng loại."
     }
    ]
   },
@@ -2333,9 +2333,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___苹果公司工作。 (Tôi làm việc ở công ty Apple.)",
-     "answer": "在",
-     "explanation": "Câu hoàn chỉnh: 我在苹果公司工作。 — Tôi làm việc ở công ty Apple."
+     "prompt": "她___看电视。 (Cô ấy đang xem ti vi.)",
+     "answer": "正在",
+     "explanation": "Câu hoàn chỉnh: 她正在看电视。 — Cô ấy đang xem ti vi."
     },
     {
      "type": "order",
@@ -2352,9 +2352,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "她___看电视。 (Cô ấy đang xem ti vi.)",
-     "answer": "正在",
-     "explanation": "Câu hoàn chỉnh: 她正在看电视。 — Cô ấy đang xem ti vi."
+     "prompt": "我现在去___。 (Bây giờ tôi đi học.)",
+     "answer": "上课",
+     "explanation": "Câu hoàn chỉnh: 我现在去上课。 — Bây giờ tôi đi học."
     },
     {
      "type": "order",
@@ -2371,9 +2371,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___去上课。 (Bây giờ tôi đi học.)",
-     "answer": "现在",
-     "explanation": "Câu hoàn chỉnh: 我现在去上课。 — Bây giờ tôi đi học."
+     "prompt": "老师___我们汉语。 (Thầy/cô dạy chúng tôi tiếng Hán.)",
+     "answer": "教",
+     "explanation": "Câu hoàn chỉnh: 老师教我们汉语。 — Thầy/cô dạy chúng tôi tiếng Hán."
     },
     {
      "type": "order",
@@ -2390,9 +2390,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___教我们汉语。 (Thầy/cô dạy chúng tôi tiếng Hán.)",
-     "answer": "老师",
-     "explanation": "Câu hoàn chỉnh: 老师教我们汉语。 — Thầy/cô dạy chúng tôi tiếng Hán."
+     "prompt": "他是___。 (Anh ấy là du học sinh.)",
+     "answer": "留学生",
+     "explanation": "Câu hoàn chỉnh: 他是留学生。 — Anh ấy là du học sinh."
     },
     {
      "type": "order",
@@ -2408,9 +2408,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "他是___。 (Anh ấy là du học sinh.)",
-     "answer": "留学生",
-     "explanation": "Câu hoàn chỉnh: 他是留学生。 — Anh ấy là du học sinh."
+     "prompt": "我在___学习英语。 (Tôi học tiếng Anh ở trường đại học.)",
+     "answer": "大学",
+     "explanation": "Câu hoàn chỉnh: 我在大学学习英语。 — Tôi học tiếng Anh ở trường đại học."
     },
     {
      "type": "order",
@@ -2428,9 +2428,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___大学学习英语。 (Tôi học tiếng Anh ở trường đại học.)",
-     "answer": "在",
-     "explanation": "Câu hoàn chỉnh: 我在大学学习英语。 — Tôi học tiếng Anh ở trường đại học."
+     "prompt": "这是我的___。 (Đây là điện thoại di động của tôi.)",
+     "answer": "手机",
+     "explanation": "Câu hoàn chỉnh: 这是我的手机。 — Đây là điện thoại di động của tôi."
     },
     {
      "type": "order",
@@ -2448,9 +2448,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___是我的手机。 (Đây là điện thoại di động của tôi.)",
-     "answer": "这",
-     "explanation": "Câu hoàn chỉnh: 这是我的手机。 — Đây là điện thoại di động của tôi."
+     "prompt": "她的电脑___了。 (Máy tính của cô ấy hỏng rồi.)",
+     "answer": "坏",
+     "explanation": "Câu hoàn chỉnh: 她的电脑坏了。 — Máy tính của cô ấy hỏng rồi."
     },
     {
      "type": "order",
@@ -2468,9 +2468,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "她的___坏了。 (Máy tính của cô ấy hỏng rồi.)",
-     "answer": "电脑",
-     "explanation": "Câu hoàn chỉnh: 她的电脑坏了。 — Máy tính của cô ấy hỏng rồi."
+     "prompt": "我___说汉语。 (Tôi biết nói tiếng Hán.)",
+     "answer": "会",
+     "explanation": "Câu hoàn chỉnh: 我会说汉语。 — Tôi biết nói tiếng Hán."
     },
     {
      "type": "order",
@@ -2487,9 +2487,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___说汉语。 (Tôi biết nói tiếng Hán.)",
-     "answer": "会",
-     "explanation": "Câu hoàn chỉnh: 我会说汉语。 — Tôi biết nói tiếng Hán."
+     "prompt": "我在___看书。 (Tôi đọc sách ở thư viện.)",
+     "answer": "图书馆",
+     "explanation": "Câu hoàn chỉnh: 我在图书馆看书。 — Tôi đọc sách ở thư viện."
     },
     {
      "type": "fix",
@@ -2505,14 +2505,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你在哪儿工作？",
-     "answer": "我在公司工作。",
+     "speech": "他在公司工作，她在大学工作。她在哪儿工作？",
+     "answer": "她在大学工作。",
      "options": [
-      "我在公司工作。",
-      "你好！",
-      "您好！"
+      "她在大学工作。",
+      "她在公司工作。",
+      "他在大学工作。"
      ],
-     "explanation": "Bạn làm việc ở đâu? Đáp lại: 我在公司工作。"
+     "explanation": "Đáp lại: 她在大学工作。 Cô ấy làm ở đại học; anh ấy làm ở công ty."
     },
     {
      "type": "fix",
@@ -2528,14 +2528,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你现在做什么？",
-     "answer": "我正在学习汉语。",
+     "speech": "他正在看电视，她正在学习汉语。她现在做什么？",
+     "answer": "她正在学习汉语。",
      "options": [
-      "我正在学习汉语。",
-      "你好！",
-      "您好！"
+      "她正在学习汉语。",
+      "她正在看电视。",
+      "他正在学习汉语。"
      ],
-     "explanation": "Bây giờ bạn đang làm gì? Đáp lại: 我正在学习汉语。"
+     "explanation": "Đáp lại: 她正在学习汉语。 Cô ấy đang học tiếng Hán; người xem ti vi là anh ấy."
     },
     {
      "type": "fix",
@@ -2551,14 +2551,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你会说英语吗？",
-     "answer": "我会说英语。",
+     "speech": "他会说英语，不会说汉语。他会说什么？",
+     "answer": "他会说英语。",
      "options": [
-      "我会说英语。",
-      "你好！",
-      "您好！"
+      "他会说英语。",
+      "他会说汉语。",
+      "他不会说英语。"
      ],
-     "explanation": "Bạn biết nói tiếng Anh không? Đáp lại: 我会说英语。"
+     "explanation": "Đáp lại: 他会说英语。 Anh ấy biết nói tiếng Anh và không biết nói tiếng Hán."
     },
     {
      "type": "fix",
@@ -2574,14 +2574,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你在大学学习什么？",
-     "answer": "我在大学学习汉语。",
+     "speech": "她在大学学习汉语，他在大学学习英语。她学习什么？",
+     "answer": "她学习汉语。",
      "options": [
-      "我在大学学习汉语。",
-      "你好！",
-      "您好！"
+      "她学习汉语。",
+      "她学习英语。",
+      "他学习汉语。"
      ],
-     "explanation": "Bạn học gì ở đại học? Đáp lại: 我在大学学习汉语。"
+     "explanation": "Đáp lại: 她学习汉语。 Cô ấy học tiếng Hán; anh ấy học tiếng Anh."
     },
     {
      "type": "fix",
@@ -2597,14 +2597,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你的手机好吗？",
-     "answer": "我的手机很好。",
+     "speech": "他的手机坏了，她的手机很好。谁的手机坏了？",
+     "answer": "他的手机坏了。",
      "options": [
-      "我的手机很好。",
-      "我是老师。",
-      "我是学生。"
+      "他的手机坏了。",
+      "她的手机坏了。",
+      "他的手机很好。"
      ],
-     "explanation": "Điện thoại của bạn có tốt không? Đáp lại: 我的手机很好。"
+     "explanation": "Đáp lại: 他的手机坏了。 Điện thoại hỏng thuộc anh ấy; điện thoại của cô ấy tốt."
     },
     {
      "type": "fix",
@@ -2620,14 +2620,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "这是谁的电脑？",
-     "answer": "这是我的电脑。",
+     "speech": "这是马文的电脑，那是海伦的电脑。这是谁的电脑？",
+     "answer": "这是马文的电脑。",
      "options": [
-      "这是我的电脑。",
-      "你好！",
-      "您好！"
+      "这是马文的电脑。",
+      "这是海伦的电脑。",
+      "那是马文的电脑。"
      ],
-     "explanation": "Đây là máy tính của ai? Đáp lại: 这是我的电脑。"
+     "explanation": "Đáp lại: 这是马文的电脑。 Máy tính này của Marvin; máy tính kia mới của Helen."
     },
     {
      "type": "fix",
@@ -2643,14 +2643,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你下班了吗？",
-     "answer": "我下班了。",
+     "speech": "他下班了，她还在工作。谁下班了？",
+     "answer": "他下班了。",
      "options": [
-      "我下班了。",
-      "你好！",
-      "您好！"
+      "他下班了。",
+      "她下班了。",
+      "他没有下班。"
      ],
-     "explanation": "Bạn tan làm chưa? Đáp lại: 我下班了。"
+     "explanation": "Đáp lại: 他下班了。 Anh ấy đã tan làm; cô ấy vẫn đang làm việc."
     },
     {
      "type": "fix",
@@ -2666,14 +2666,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你想去哪里留学？",
-     "answer": "我想去中国留学。",
+     "speech": "海伦想去北京留学，马文想去上海留学。马文想去哪里留学？",
+     "answer": "马文想去上海留学。",
      "options": [
-      "我想去中国留学。",
-      "你好！",
-      "您好！"
+      "马文想去上海留学。",
+      "马文想去北京留学。",
+      "海伦想去上海留学。"
      ],
-     "explanation": "Bạn muốn đi đâu du học? Đáp lại: 我想去中国留学。"
+     "explanation": "Đáp lại: 马文想去上海留学。 Marvin muốn du học ở Thượng Hải; Bắc Kinh là nơi Helen muốn đến."
     },
     {
      "type": "fix",
@@ -2689,14 +2689,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "汉语难吗？",
-     "answer": "汉语有点儿难。",
+     "speech": "他觉得汉语很难，英语很容易。他觉得什么很难？",
+     "answer": "他觉得汉语很难。",
      "options": [
-      "汉语有点儿难。",
-      "你好！",
-      "您好！"
+      "他觉得汉语很难。",
+      "他觉得英语很难。",
+      "他觉得汉语很容易。"
      ],
-     "explanation": "Tiếng Hán có khó không? Đáp lại: 汉语有点儿难。"
+     "explanation": "Đáp lại: 他觉得汉语很难。 Anh ấy thấy tiếng Hán khó, tiếng Anh dễ."
     },
     {
      "type": "fix",
@@ -2712,14 +2712,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你可以打电话吗？",
-     "answer": "我可以打电话。",
+     "speech": "她可以打电话，他现在不可以打电话。谁可以打电话？",
+     "answer": "她可以打电话。",
      "options": [
-      "我可以打电话。",
-      "你好！",
-      "您好！"
+      "她可以打电话。",
+      "他可以打电话。",
+      "她不可以打电话。"
      ],
-     "explanation": "Bạn có thể gọi điện không? Đáp lại: 我可以打电话。"
+     "explanation": "Đáp lại: 她可以打电话。 Cô ấy có thể gọi điện; anh ấy hiện không được gọi."
     }
    ]
   },
@@ -2777,8 +2777,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___有银行吗？ (Gần đây có ngân hàng không?)",
-     "answer": "附近",
+     "prompt": "附近有___吗？ (Gần đây có ngân hàng không?)",
+     "answer": "银行",
      "explanation": "Câu hoàn chỉnh: 附近有银行吗？ — Gần đây có ngân hàng không?"
     },
     {
@@ -2797,8 +2797,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___邮局寄快递。 (Tôi đến bưu điện gửi chuyển phát nhanh.)",
-     "answer": "去",
+     "prompt": "我去邮局___快递。 (Tôi đến bưu điện gửi chuyển phát nhanh.)",
+     "answer": "寄",
      "explanation": "Câu hoàn chỉnh: 我去邮局寄快递。 — Tôi đến bưu điện gửi chuyển phát nhanh."
     },
     {
@@ -2816,8 +2816,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___在超市旁边。 (Hiệu sách ở bên cạnh siêu thị.)",
-     "answer": "书店",
+     "prompt": "书店在超市___。 (Hiệu sách ở bên cạnh siêu thị.)",
+     "answer": "旁边",
      "explanation": "Câu hoàn chỉnh: 书店在超市旁边。 — Hiệu sách ở bên cạnh siêu thị."
     },
     {
@@ -2836,8 +2836,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___就在公司对面。 (Ngân hàng ở ngay đối diện công ty.)",
-     "answer": "银行",
+     "prompt": "银行就在公司___。 (Ngân hàng ở ngay đối diện công ty.)",
+     "answer": "对面",
      "explanation": "Câu hoàn chỉnh: 银行就在公司对面。 — Ngân hàng ở ngay đối diện công ty."
     },
     {
@@ -2854,9 +2854,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___面左拐。 (Rẽ trái ở phía trước.)",
-     "answer": "前",
-     "explanation": "Câu hoàn chỉnh: 前面左拐。 — Rẽ trái ở phía trước."
+     "prompt": "请___前走。 (Xin đi về phía trước.)",
+     "answer": "往",
+     "explanation": "Câu hoàn chỉnh: 请往前走。 — Xin đi về phía trước."
     },
     {
      "type": "order",
@@ -2874,9 +2874,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___在学校附近。 (Tôi sống ở gần trường học.)",
-     "answer": "住",
-     "explanation": "Câu hoàn chỉnh: 我住在学校附近。 — Tôi sống ở gần trường học."
+     "prompt": "前面___。 (Rẽ trái ở phía trước.)",
+     "answer": "左拐",
+     "explanation": "Câu hoàn chỉnh: 前面左拐。 — Rẽ trái ở phía trước."
     },
     {
      "type": "order",
@@ -2893,9 +2893,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我们___去市场。 (Chúng ta cùng đi chợ.)",
-     "answer": "一起",
-     "explanation": "Câu hoàn chỉnh: 我们一起去市场。 — Chúng ta cùng đi chợ."
+     "prompt": "___往右走。 (Sau đó đi về bên phải.)",
+     "answer": "然后",
+     "explanation": "Câu hoàn chỉnh: 然后往右走。 — Sau đó đi về bên phải."
     },
     {
      "type": "order",
@@ -2913,9 +2913,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___家商店很大。 (Cửa hàng này rất lớn.)",
-     "answer": "这",
-     "explanation": "Câu hoàn chỉnh: 这家商店很大。 — Cửa hàng này rất lớn."
+     "prompt": "我住在学校___。 (Tôi sống ở gần trường học.)",
+     "answer": "附近",
+     "explanation": "Câu hoàn chỉnh: 我住在学校附近。 — Tôi sống ở gần trường học."
     },
     {
      "type": "order",
@@ -2933,9 +2933,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___你送水果。 (Tôi mang hoa quả đến cho bạn.)",
-     "answer": "给",
-     "explanation": "Câu hoàn chỉnh: 我给你送水果。 — Tôi mang hoa quả đến cho bạn."
+     "prompt": "我们___去市场。 (Chúng ta cùng đi chợ.)",
+     "answer": "一起",
+     "explanation": "Câu hoàn chỉnh: 我们一起去市场。 — Chúng ta cùng đi chợ."
     },
     {
      "type": "order",
@@ -2953,9 +2953,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___朋友去商场。 (Tôi đi trung tâm thương mại cùng bạn.)",
-     "answer": "跟",
-     "explanation": "Câu hoàn chỉnh: 我跟朋友去商场。 — Tôi đi trung tâm thương mại cùng bạn."
+     "prompt": "我想去银行___钱。 (Tôi muốn đến ngân hàng rút tiền.)",
+     "answer": "取",
+     "explanation": "Câu hoàn chỉnh: 我想去银行取钱。 — Tôi muốn đến ngân hàng rút tiền."
     },
     {
      "type": "fix",
@@ -2971,14 +2971,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "附近有银行吗？",
-     "answer": "附近有中国银行。",
+     "speech": "附近有银行，邮局很远。附近有什么？",
+     "answer": "附近有银行。",
      "options": [
-      "附近有中国银行。",
-      "你好！",
-      "您好！"
+      "附近有银行。",
+      "附近有邮局。",
+      "银行很远。"
      ],
-     "explanation": "Gần đây có ngân hàng không? Đáp lại: 附近有中国银行。"
+     "explanation": "Đáp lại: 附近有银行。 Ngân hàng ở gần; bưu điện ở xa."
     },
     {
      "type": "fix",
@@ -2994,14 +2994,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "书店在哪里？",
+     "speech": "书店在超市旁边，银行在超市对面。书店在哪里？",
      "answer": "书店在超市旁边。",
      "options": [
       "书店在超市旁边。",
-      "你好！",
-      "您好！"
+      "书店在超市对面。",
+      "银行在超市旁边。"
      ],
-     "explanation": "Hiệu sách ở đâu? Đáp lại: 书店在超市旁边。"
+     "explanation": "Đáp lại: 书店在超市旁边。 Hiệu sách ở cạnh siêu thị; đối diện siêu thị là ngân hàng."
     },
     {
      "type": "fix",
@@ -3017,14 +3017,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "中国银行在哪里？",
-     "answer": "中国银行在公司对面。",
+     "speech": "中国银行在公司左边，邮局在公司右边。中国银行在哪里？",
+     "answer": "中国银行在公司左边。",
      "options": [
-      "中国银行在公司对面。",
-      "你好！",
-      "您好！"
+      "中国银行在公司左边。",
+      "中国银行在公司右边。",
+      "邮局在公司左边。"
      ],
-     "explanation": "Ngân hàng Trung Quốc ở đâu? Đáp lại: 中国银行在公司对面。"
+     "explanation": "Đáp lại: 中国银行在公司左边。 Ngân hàng Trung Quốc ở bên trái công ty; bưu điện ở bên phải."
     },
     {
      "type": "fix",
@@ -3040,14 +3040,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你住在哪里？",
-     "answer": "我住在学校附近。",
+     "speech": "他住在学校附近，她住在公司附近。她住在哪里？",
+     "answer": "她住在公司附近。",
      "options": [
-      "我住在学校附近。",
-      "你好！",
-      "您好！"
+      "她住在公司附近。",
+      "她住在学校附近。",
+      "他住在公司附近。"
      ],
-     "explanation": "Bạn sống ở đâu? Đáp lại: 我住在学校附近。"
+     "explanation": "Đáp lại: 她住在公司附近。 Cô ấy sống gần công ty; anh ấy sống gần trường học."
     },
     {
      "type": "fix",
@@ -3063,14 +3063,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你要去邮局做什么？",
-     "answer": "我去邮局寄快递。",
+     "speech": "他去邮局寄快递，她去银行取钱。他去邮局做什么？",
+     "answer": "他去邮局寄快递。",
      "options": [
-      "我去邮局寄快递。",
-      "你好！",
-      "您好！"
+      "他去邮局寄快递。",
+      "他去邮局取钱。",
+      "她去邮局寄快递。"
      ],
-     "explanation": "Bạn đến bưu điện làm gì? Đáp lại: 我去邮局寄快递。"
+     "explanation": "Đáp lại: 他去邮局寄快递。 Anh ấy đến bưu điện gửi chuyển phát nhanh; cô ấy đến ngân hàng rút tiền."
     },
     {
      "type": "fix",
@@ -3086,14 +3086,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "银行在左边还是右边？",
-     "answer": "银行在左边。",
+     "speech": "请往前走，然后左拐。往前走，然后往哪儿拐？",
+     "answer": "然后往左拐。",
      "options": [
-      "银行在左边。",
-      "你好！",
-      "您好！"
+      "然后往左拐。",
+      "然后往右拐。",
+      "然后往前走。"
      ],
-     "explanation": "Ngân hàng ở bên trái hay bên phải? Đáp lại: 银行在左边。"
+     "explanation": "Đáp lại: 然后往左拐。 Đi về phía trước rồi rẽ trái; rẽ phải và tiếp tục đi thẳng không đúng bước tiếp theo."
     },
     {
      "type": "fix",
@@ -3109,14 +3109,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "从学校到公司远吗？",
-     "answer": "从学校到公司很近。",
+     "speech": "从学校到银行很近，从公司到银行很远。从公司到银行远吗？",
+     "answer": "从公司到银行很远。",
      "options": [
-      "从学校到公司很近。",
-      "你好！",
-      "您好！"
+      "从公司到银行很远。",
+      "从公司到银行很近。",
+      "从学校到银行很远。"
      ],
-     "explanation": "Từ trường đến công ty có xa không? Đáp lại: 从学校到公司很近。"
+     "explanation": "Đáp lại: 从公司到银行很远。 Câu hỏi hỏi từ công ty đến ngân hàng, khoảng cách này xa."
     },
     {
      "type": "fix",
@@ -3132,14 +3132,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你跟谁一起去市场？",
-     "answer": "我跟朋友一起去市场。",
+     "speech": "马先生跟朋友去市场，王女士跟老师去市场。王女士跟谁一起去市场？",
+     "answer": "王女士跟老师一起去市场。",
      "options": [
-      "我跟朋友一起去市场。",
-      "你好！",
-      "您好！"
+      "王女士跟老师一起去市场。",
+      "王女士跟朋友一起去市场。",
+      "马先生跟老师一起去市场。"
      ],
-     "explanation": "Bạn đi chợ cùng ai? Đáp lại: 我跟朋友一起去市场。"
+     "explanation": "Đáp lại: 王女士跟老师一起去市场。 Bà Vương đi chợ cùng giáo viên; ông Mã đi cùng bạn."
     },
     {
      "type": "fix",
@@ -3155,14 +3155,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "这个房间大吗？",
+     "speech": "这个房间很大，那个房间很小。这个房间大吗？",
      "answer": "这个房间很大。",
      "options": [
       "这个房间很大。",
-      "你好！",
-      "您好！"
+      "这个房间很小。",
+      "那个房间很大。"
      ],
-     "explanation": "Căn phòng này có rộng không? Đáp lại: 这个房间很大。"
+     "explanation": "Đáp lại: 这个房间很大。 Căn phòng này rộng; căn phòng kia nhỏ."
     },
     {
      "type": "fix",
@@ -3178,14 +3178,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你想去银行取钱吗？",
-     "answer": "我想去银行取钱。",
+     "speech": "他去银行取钱，她去银行找朋友。她去银行做什么？",
+     "answer": "她去银行找朋友。",
      "options": [
-      "我想去银行取钱。",
-      "你好！",
-      "您好！"
+      "她去银行找朋友。",
+      "她去银行取钱。",
+      "他去银行找朋友。"
      ],
-     "explanation": "Bạn muốn đến ngân hàng rút tiền phải không? Đáp lại: 我想去银行取钱。"
+     "explanation": "Đáp lại: 她去银行找朋友。 Cô ấy đến ngân hàng tìm bạn, còn anh ấy đến rút tiền."
     }
    ]
   },
@@ -3247,8 +3247,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "你的___是几月几号？ (Sinh nhật của bạn là ngày mấy tháng mấy?)",
-     "answer": "生日",
+     "prompt": "你的生日是几月几___？ (Sinh nhật của bạn là ngày mấy tháng mấy?)",
+     "answer": "号",
      "explanation": "Câu hoàn chỉnh: 你的生日是几月几号？ — Sinh nhật của bạn là ngày mấy tháng mấy?"
     },
     {
@@ -3265,9 +3265,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___是星期五。 (Hôm nay là thứ Sáu.)",
-     "answer": "今天",
-     "explanation": "Câu hoàn chỉnh: 今天是星期五。 — Hôm nay là thứ Sáu."
+     "prompt": "生日___！ (Chúc mừng sinh nhật!)",
+     "answer": "快乐",
+     "explanation": "Câu hoàn chỉnh: 生日快乐！ — Chúc mừng sinh nhật!"
     },
     {
      "type": "order",
@@ -3284,9 +3284,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "你___有空儿吗？ (Ngày mai bạn có rảnh không?)",
-     "answer": "明天",
-     "explanation": "Câu hoàn chỉnh: 你明天有空儿吗？ — Ngày mai bạn có rảnh không?"
+     "prompt": "今天是___。 (Hôm nay là thứ Sáu.)",
+     "answer": "星期五",
+     "explanation": "Câu hoàn chỉnh: 今天是星期五。 — Hôm nay là thứ Sáu."
     },
     {
      "type": "order",
@@ -3304,9 +3304,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___去看电影了。 (Hôm qua tôi đã đi xem phim.)",
-     "answer": "昨天",
-     "explanation": "Câu hoàn chỉnh: 我昨天去看电影了。 — Hôm qua tôi đã đi xem phim."
+     "prompt": "你___有空儿吗？ (Ngày mai bạn có rảnh không?)",
+     "answer": "明天",
+     "explanation": "Câu hoàn chỉnh: 你明天有空儿吗？ — Ngày mai bạn có rảnh không?"
     },
     {
      "type": "order",
@@ -3324,9 +3324,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___个蛋糕很好吃。 (Chiếc bánh ngọt này rất ngon.)",
-     "answer": "这",
-     "explanation": "Câu hoàn chỉnh: 这个蛋糕很好吃。 — Chiếc bánh ngọt này rất ngon."
+     "prompt": "我___去看电影了。 (Hôm qua tôi đã đi xem phim.)",
+     "answer": "昨天",
+     "explanation": "Câu hoàn chỉnh: 我昨天去看电影了。 — Hôm qua tôi đã đi xem phim."
     },
     {
      "type": "order",
@@ -3401,9 +3401,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___休息一小时。 (Tôi muốn nghỉ ngơi một tiếng.)",
-     "answer": "想",
-     "explanation": "Câu hoàn chỉnh: 我想休息一小时。 — Tôi muốn nghỉ ngơi một tiếng."
+     "prompt": "___我很忙。 (Bởi vì tôi rất bận.)",
+     "answer": "因为",
+     "explanation": "Câu hoàn chỉnh: 因为我很忙。 — Bởi vì tôi rất bận."
     },
     {
      "type": "order",
@@ -3421,9 +3421,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "你___不去学校？ (Tại sao bạn không đến trường?)",
-     "answer": "为什么",
-     "explanation": "Câu hoàn chỉnh: 你为什么不去学校？ — Tại sao bạn không đến trường?"
+     "prompt": "现在是三点___。 (Bây giờ là ba giờ rưỡi.)",
+     "answer": "半",
+     "explanation": "Câu hoàn chỉnh: 现在是三点半。 — Bây giờ là ba giờ rưỡi."
     },
     {
      "type": "fix",
@@ -3439,14 +3439,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你的生日是几月几号？",
-     "answer": "我的生日是三月五号。",
+     "speech": "他的生日是三月五号，她的生日是五月三号。她的生日是几月几号？",
+     "answer": "她的生日是五月三号。",
      "options": [
-      "我的生日是三月五号。",
-      "你好！",
-      "您好！"
+      "她的生日是五月三号。",
+      "她的生日是三月五号。",
+      "她的生日是三月三号。"
      ],
-     "explanation": "Sinh nhật của bạn là ngày mấy tháng mấy? Đáp lại: 我的生日是三月五号。"
+     "explanation": "Đáp lại: 她的生日是五月三号。 Sinh nhật cô ấy là ngày ba tháng năm. Chú ý thứ tự tháng trước, ngày sau."
     },
     {
      "type": "fix",
@@ -3462,14 +3462,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "今天是星期几？",
-     "answer": "今天是星期五。",
+     "speech": "今天是星期五，明天是星期六。明天是星期几？",
+     "answer": "明天是星期六。",
      "options": [
-      "今天是星期五。",
-      "你好！",
-      "您好！"
+      "明天是星期六。",
+      "明天是星期五。",
+      "今天是星期六。"
      ],
-     "explanation": "Hôm nay là thứ mấy? Đáp lại: 今天是星期五。"
+     "explanation": "Đáp lại: 明天是星期六。 Ngày mai là thứ Bảy; thứ Sáu là hôm nay."
     },
     {
      "type": "fix",
@@ -3485,14 +3485,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你明天有空儿吗？",
-     "answer": "我明天有空儿。",
+     "speech": "马文今天有空儿，明天很忙。马文哪天有空儿？",
+     "answer": "马文今天有空儿。",
      "options": [
-      "我明天有空儿。",
-      "你好！",
-      "您好！"
+      "马文今天有空儿。",
+      "马文明天有空儿。",
+      "马文今天很忙。"
      ],
-     "explanation": "Ngày mai bạn có rảnh không? Đáp lại: 我明天有空儿。"
+     "explanation": "Đáp lại: 马文今天有空儿。 Marvin rảnh hôm nay nhưng ngày mai bận."
     },
     {
      "type": "fix",
@@ -3508,14 +3508,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "现在是几点？",
+     "speech": "现在是三点半，不是四点半。现在是几点？",
      "answer": "现在是三点半。",
      "options": [
       "现在是三点半。",
-      "你好！",
-      "您好！"
+      "现在是四点半。",
+      "现在是三点一刻。"
      ],
-     "explanation": "Bây giờ là mấy giờ? Đáp lại: 现在是三点半。"
+     "explanation": "Đáp lại: 现在是三点半。 Giờ hiện tại là ba giờ rưỡi, không phải bốn giờ rưỡi hay ba giờ mười lăm."
     },
     {
      "type": "fix",
@@ -3531,14 +3531,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你属什么？",
-     "answer": "我属龙。",
+     "speech": "他属龙，她属马。她属什么？",
+     "answer": "她属马。",
      "options": [
-      "我属龙。",
-      "你好！",
-      "您好！"
+      "她属马。",
+      "她属龙。",
+      "他属马。"
      ],
-     "explanation": "Bạn cầm tinh con gì? Đáp lại: 我属龙。"
+     "explanation": "Đáp lại: 她属马。 Cô ấy cầm tinh con ngựa; anh ấy cầm tinh con rồng."
     },
     {
      "type": "fix",
@@ -3554,14 +3554,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你想休息几小时？",
-     "answer": "我想休息一小时。",
+     "speech": "他想休息一小时，她想休息半小时。她想休息几小时？",
+     "answer": "她想休息半小时。",
      "options": [
-      "我想休息一小时。",
-      "你好！",
-      "您好！"
+      "她想休息半小时。",
+      "她想休息一小时。",
+      "他想休息半小时。"
      ],
-     "explanation": "Bạn muốn nghỉ ngơi mấy tiếng? Đáp lại: 我想休息一小时。"
+     "explanation": "Đáp lại: 她想休息半小时。 Cô ấy muốn nghỉ nửa tiếng; một tiếng là thời gian anh ấy muốn nghỉ."
     },
     {
      "type": "fix",
@@ -3577,14 +3577,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你去过中国吗？",
-     "answer": "我去过中国。",
+     "speech": "马文去过中国，没有去过日本。马文去过哪国？",
+     "answer": "马文去过中国。",
      "options": [
-      "我去过中国。",
-      "你好！",
-      "您好！"
+      "马文去过中国。",
+      "马文去过日本。",
+      "马文没有去过中国。"
      ],
-     "explanation": "Bạn đã từng đến Trung Quốc chưa? Đáp lại: 我去过中国。"
+     "explanation": "Đáp lại: 马文去过中国。 Marvin đã từng đến Trung Quốc và chưa từng đến Nhật Bản."
     },
     {
      "type": "fix",
@@ -3600,14 +3600,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你昨天做什么？",
-     "answer": "我昨天去看电影了。",
+     "speech": "她昨天看电影，今天看电视剧。她昨天做什么？",
+     "answer": "她昨天看电影。",
      "options": [
-      "我昨天去看电影了。",
-      "你好！",
-      "您好！"
+      "她昨天看电影。",
+      "她昨天看电视剧。",
+      "她今天看电影。"
      ],
-     "explanation": "Hôm qua bạn làm gì? Đáp lại: 我昨天去看电影了。"
+     "explanation": "Đáp lại: 她昨天看电影。 Hôm qua cô ấy xem phim; xem phim truyền hình là việc hôm nay."
     },
     {
      "type": "fix",
@@ -3623,14 +3623,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "这个蛋糕好吃吗？",
+     "speech": "这个蛋糕很好吃，那个蛋糕不好吃。哪个蛋糕好吃？",
      "answer": "这个蛋糕很好吃。",
      "options": [
       "这个蛋糕很好吃。",
-      "你好！",
-      "您好！"
+      "那个蛋糕很好吃。",
+      "这个蛋糕不好吃。"
      ],
-     "explanation": "Chiếc bánh ngọt này có ngon không? Đáp lại: 这个蛋糕很好吃。"
+     "explanation": "Đáp lại: 这个蛋糕很好吃。 Chiếc bánh này ngon; chiếc bánh kia không ngon."
     },
     {
      "type": "fix",
@@ -3646,14 +3646,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你下个星期有空儿吗？",
-     "answer": "我下个星期有空儿。",
+     "speech": "他这个星期有空儿，下个星期很忙。他下个星期有空儿吗？",
+     "answer": "他下个星期很忙。",
      "options": [
-      "我下个星期有空儿。",
-      "你好！",
-      "您好！"
+      "他下个星期很忙。",
+      "他下个星期有空儿。",
+      "他这个星期很忙。"
      ],
-     "explanation": "Tuần sau bạn có rảnh không? Đáp lại: 我下个星期有空儿。"
+     "explanation": "Đáp lại: 他下个星期很忙。 Tuần sau anh ấy bận; tuần này mới rảnh."
     }
    ]
   },
@@ -3712,8 +3712,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "你___中国电影还是美国电影？ (Bạn thích phim Trung Quốc hay phim Mỹ?)",
-     "answer": "喜欢",
+     "prompt": "你喜欢中国电影___美国电影？ (Bạn thích phim Trung Quốc hay phim Mỹ?)",
+     "answer": "还是",
      "explanation": "Câu hoàn chỉnh: 你喜欢中国电影还是美国电影？ — Bạn thích phim Trung Quốc hay phim Mỹ?"
     },
     {
@@ -3731,8 +3731,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___去公司。 (Tôi đi tàu điện ngầm đến công ty.)",
-     "answer": "坐地铁",
+     "prompt": "我坐___去公司。 (Tôi đi tàu điện ngầm đến công ty.)",
+     "answer": "地铁",
      "explanation": "Câu hoàn chỉnh: 我坐地铁去公司。 — Tôi đi tàu điện ngầm đến công ty."
     },
     {
@@ -3790,8 +3790,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___出去玩。 (Tôi muốn ra ngoài chơi.)",
-     "answer": "想",
+     "prompt": "我想___玩。 (Tôi muốn ra ngoài chơi.)",
+     "answer": "出去",
      "explanation": "Câu hoàn chỉnh: 我想出去玩。 — Tôi muốn ra ngoài chơi."
     },
     {
@@ -3812,9 +3812,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "她的___又便宜又好看。 (Quần áo của cô ấy vừa rẻ vừa đẹp.)",
-     "answer": "衣服",
-     "explanation": "Câu hoàn chỉnh: 她的衣服又便宜又好看。 — Quần áo của cô ấy vừa rẻ vừa đẹp."
+     "prompt": "今天的___怎么样？ (Thời tiết hôm nay thế nào?)",
+     "answer": "天气",
+     "explanation": "Câu hoàn chỉnh: 今天的天气怎么样？ — Thời tiết hôm nay thế nào?"
     },
     {
      "type": "order",
@@ -3831,9 +3831,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___的天气怎么样？ (Thời tiết hôm nay thế nào?)",
-     "answer": "今天",
-     "explanation": "Câu hoàn chỉnh: 今天的天气怎么样？ — Thời tiết hôm nay thế nào?"
+     "prompt": "今天是___。 (Hôm nay trời nắng.)",
+     "answer": "晴天",
+     "explanation": "Câu hoàn chỉnh: 今天是晴天。 — Hôm nay trời nắng."
     },
     {
      "type": "order",
@@ -3849,9 +3849,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___是晴天。 (Hôm nay trời nắng.)",
-     "answer": "今天",
-     "explanation": "Câu hoàn chỉnh: 今天是晴天。 — Hôm nay trời nắng."
+     "prompt": "这杯茶很好___。 (Cốc trà này rất ngon.)",
+     "answer": "喝",
+     "explanation": "Câu hoàn chỉnh: 这杯茶很好喝。 — Cốc trà này rất ngon."
     },
     {
      "type": "order",
@@ -3868,9 +3868,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___喜欢下雨天。 (Tôi không thích những ngày trời mưa.)",
-     "answer": "不",
-     "explanation": "Câu hoàn chỉnh: 我不喜欢下雨天。 — Tôi không thích những ngày trời mưa."
+     "prompt": "你会___吗？ (Bạn biết lái xe không?)",
+     "answer": "开车",
+     "explanation": "Câu hoàn chỉnh: 你会开车吗？ — Bạn biết lái xe không?"
     },
     {
      "type": "order",
@@ -3888,9 +3888,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___杯茶很好喝。 (Cốc trà này rất ngon.)",
-     "answer": "这",
-     "explanation": "Câu hoàn chỉnh: 这杯茶很好喝。 — Cốc trà này rất ngon."
+     "prompt": "这家饭店很___。 (Nhà hàng này rất nổi tiếng.)",
+     "answer": "有名",
+     "explanation": "Câu hoàn chỉnh: 这家饭店很有名。 — Nhà hàng này rất nổi tiếng."
     },
     {
      "type": "fix",
@@ -3906,14 +3906,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你喜欢中国电影还是美国电影？",
-     "answer": "我喜欢中国电影。",
+     "speech": "她喜欢中国电影，不喜欢美国电影。她喜欢什么电影？",
+     "answer": "她喜欢中国电影。",
      "options": [
-      "我喜欢中国电影。",
-      "你好！",
-      "您好！"
+      "她喜欢中国电影。",
+      "她喜欢美国电影。",
+      "她不喜欢中国电影。"
      ],
-     "explanation": "Bạn thích phim Trung Quốc hay phim Mỹ? Đáp lại: 我喜欢中国电影。"
+     "explanation": "Đáp lại: 她喜欢中国电影。 Cô ấy thích phim Trung Quốc và không thích phim Mỹ."
     },
     {
      "type": "fix",
@@ -3929,14 +3929,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你怎么去学校？",
-     "answer": "我坐公交车去学校。",
+     "speech": "他坐公交车去学校，坐地铁去公司。他怎么去学校？",
+     "answer": "他坐公交车去学校。",
      "options": [
-      "我坐公交车去学校。",
-      "你好！",
-      "您好！"
+      "他坐公交车去学校。",
+      "他坐地铁去学校。",
+      "他坐公交车去公司。"
      ],
-     "explanation": "Bạn đến trường bằng cách nào? Đáp lại: 我坐公交车去学校。"
+     "explanation": "Đáp lại: 他坐公交车去学校。 Anh ấy đến trường bằng xe buýt; tàu điện ngầm dùng để đi công ty."
     },
     {
      "type": "fix",
@@ -3952,14 +3952,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你会骑自行车吗？",
-     "answer": "我会骑自行车。",
+     "speech": "她会骑自行车，不会开车。她会做什么？",
+     "answer": "她会骑自行车。",
      "options": [
-      "我会骑自行车。",
-      "你好！",
-      "您好！"
+      "她会骑自行车。",
+      "她会开车。",
+      "她不会骑自行车。"
      ],
-     "explanation": "Bạn biết đi xe đạp không? Đáp lại: 我会骑自行车。"
+     "explanation": "Đáp lại: 她会骑自行车。 Cô ấy biết đi xe đạp và không biết lái ô tô."
     },
     {
      "type": "fix",
@@ -3975,14 +3975,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "今天的天气怎么样？",
-     "answer": "今天是晴天。",
+     "speech": "昨天是晴天，今天是阴天。今天天气怎么样？",
+     "answer": "今天是阴天。",
      "options": [
+      "今天是阴天。",
       "今天是晴天。",
-      "你好！",
-      "您好！"
+      "昨天是阴天。"
      ],
-     "explanation": "Thời tiết hôm nay thế nào? Đáp lại: 今天是晴天。"
+     "explanation": "Đáp lại: 今天是阴天。 Hôm nay trời âm u; hôm qua mới là ngày nắng."
     },
     {
      "type": "fix",
@@ -3998,14 +3998,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你喜欢下雨天吗？",
-     "answer": "我不喜欢下雨天。",
+     "speech": "他不喜欢下雨天，她很喜欢下雨天。谁喜欢下雨天？",
+     "answer": "她喜欢下雨天。",
      "options": [
-      "我不喜欢下雨天。",
-      "你好！",
-      "您好！"
+      "她喜欢下雨天。",
+      "他喜欢下雨天。",
+      "她不喜欢下雨天。"
      ],
-     "explanation": "Bạn có thích những ngày trời mưa không? Đáp lại: 我不喜欢下雨天。"
+     "explanation": "Đáp lại: 她喜欢下雨天。 Cô ấy thích ngày mưa; anh ấy không thích."
     },
     {
      "type": "fix",
@@ -4021,14 +4021,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "这个菜好吃吗？",
-     "answer": "这个菜很好吃。",
+     "speech": "这个菜很好吃，这杯茶不好喝。这杯茶好喝吗？",
+     "answer": "这杯茶不好喝。",
      "options": [
-      "这个菜很好吃。",
-      "你好！",
-      "您好！"
+      "这杯茶不好喝。",
+      "这杯茶很好喝。",
+      "这个菜不好吃。"
      ],
-     "explanation": "Món ăn này có ngon không? Đáp lại: 这个菜很好吃。"
+     "explanation": "Đáp lại: 这杯茶不好喝。 Trà không ngon; thông tin món ăn ngon không trả lời thay cho đồ uống."
     },
     {
      "type": "fix",
@@ -4044,14 +4044,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "这杯茶好喝吗？",
+     "speech": "这杯茶很好喝，那杯茶不好喝。哪杯茶好喝？",
      "answer": "这杯茶很好喝。",
      "options": [
       "这杯茶很好喝。",
-      "你好！",
-      "您好！"
+      "那杯茶很好喝。",
+      "这杯茶不好喝。"
      ],
-     "explanation": "Cốc trà này có ngon không? Đáp lại: 这杯茶很好喝。"
+     "explanation": "Đáp lại: 这杯茶很好喝。 Cốc trà này ngon; cốc trà kia không ngon. Chú ý 这 và 那."
     },
     {
      "type": "fix",
@@ -4067,14 +4067,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你会开车吗？",
-     "answer": "我会开车。",
+     "speech": "马文会开车，不会骑马。马文会做什么？",
+     "answer": "马文会开车。",
      "options": [
-      "我会开车。",
-      "你好！",
-      "您好！"
+      "马文会开车。",
+      "马文会骑马。",
+      "马文不会开车。"
      ],
-     "explanation": "Bạn biết lái xe không? Đáp lại: 我会开车。"
+     "explanation": "Đáp lại: 马文会开车。 Marvin biết lái xe và không biết cưỡi ngựa."
     },
     {
      "type": "fix",
@@ -4090,14 +4090,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你想跟谁一起打球？",
-     "answer": "我想跟朋友一起打球。",
+     "speech": "他想跟朋友一起打球，她想跟同学一起打球。她想跟谁一起打球？",
+     "answer": "她想跟同学一起打球。",
      "options": [
-      "我想跟朋友一起打球。",
-      "你好！",
-      "您好！"
+      "她想跟同学一起打球。",
+      "她想跟朋友一起打球。",
+      "他想跟同学一起打球。"
      ],
-     "explanation": "Bạn muốn chơi bóng cùng ai? Đáp lại: 我想跟朋友一起打球。"
+     "explanation": "Đáp lại: 她想跟同学一起打球。 Cô ấy muốn chơi bóng cùng bạn học; anh ấy muốn chơi cùng bạn bè."
     },
     {
      "type": "fix",
@@ -4113,14 +4113,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你每天早上跑步吗？",
-     "answer": "我每天早上跑步。",
+     "speech": "她每天早上跑步，晚上看电影。她每天早上做什么？",
+     "answer": "她每天早上跑步。",
      "options": [
-      "我每天早上跑步。",
-      "你好！",
-      "您好！"
+      "她每天早上跑步。",
+      "她每天早上看电影。",
+      "她每天晚上跑步。"
      ],
-     "explanation": "Bạn có chạy bộ mỗi sáng không? Đáp lại: 我每天早上跑步。"
+     "explanation": "Đáp lại: 她每天早上跑步。 Cô ấy chạy bộ buổi sáng và xem phim buổi tối."
     }
    ]
   },
@@ -4180,8 +4180,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "你___有几口人？ (Gia đình bạn có mấy người?)",
-     "answer": "家",
+     "prompt": "你家有几___人？ (Gia đình bạn có mấy người?)",
+     "answer": "口",
      "explanation": "Câu hoàn chỉnh: 你家有几口人？ — Gia đình bạn có mấy người?"
     },
     {
@@ -4199,8 +4199,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___是医生。 (Bố tôi là bác sĩ.)",
-     "answer": "爸爸",
+     "prompt": "我爸爸是___。 (Bố tôi là bác sĩ.)",
+     "answer": "医生",
      "explanation": "Câu hoàn chỉnh: 我爸爸是医生。 — Bố tôi là bác sĩ."
     },
     {
@@ -4218,8 +4218,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "她___是律师。 (Mẹ cô ấy là luật sư.)",
-     "answer": "妈妈",
+     "prompt": "她妈妈是___。 (Mẹ cô ấy là luật sư.)",
+     "answer": "律师",
      "explanation": "Câu hoàn chỉnh: 她妈妈是律师。 — Mẹ cô ấy là luật sư."
     },
     {
@@ -4238,8 +4238,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___今年十岁。 (Năm nay em trai tôi mười tuổi.)",
-     "answer": "弟弟",
+     "prompt": "我弟弟今年十___。 (Năm nay em trai tôi mười tuổi.)",
+     "answer": "岁",
      "explanation": "Câu hoàn chỉnh: 我弟弟今年十岁。 — Năm nay em trai tôi mười tuổi."
     },
     {
@@ -4259,8 +4259,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___是我们全家的照片。 (Đây là ảnh của cả gia đình tôi.)",
-     "answer": "这",
+     "prompt": "这是我们全家的___。 (Đây là ảnh của cả gia đình tôi.)",
+     "answer": "照片",
      "explanation": "Câu hoàn chỉnh: 这是我们全家的照片。 — Đây là ảnh của cả gia đình tôi."
     },
     {
@@ -4280,8 +4280,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "我___有一只狗。 (Nhà tôi có một con chó.)",
-     "answer": "家",
+     "prompt": "我家有一___狗。 (Nhà tôi có một con chó.)",
+     "answer": "只",
      "explanation": "Câu hoàn chỉnh: 我家有一只狗。 — Nhà tôi có một con chó."
     },
     {
@@ -4300,8 +4300,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___只猫很可爱。 (Con mèo này rất đáng yêu.)",
-     "answer": "这",
+     "prompt": "这只猫很___。 (Con mèo này rất đáng yêu.)",
+     "answer": "可爱",
      "explanation": "Câu hoàn chỉnh: 这只猫很可爱。 — Con mèo này rất đáng yêu."
     },
     {
@@ -4318,8 +4318,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___正在洗衣服。 (Anh trai đang giặt quần áo.)",
-     "answer": "哥哥",
+     "prompt": "哥哥正在___。 (Anh trai đang giặt quần áo.)",
+     "answer": "洗衣服",
      "explanation": "Câu hoàn chỉnh: 哥哥正在洗衣服。 — Anh trai đang giặt quần áo."
     },
     {
@@ -4336,8 +4336,8 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___正在唱歌。 (Em gái đang hát.)",
-     "answer": "妹妹",
+     "prompt": "妹妹正在___。 (Em gái đang hát.)",
+     "answer": "唱歌",
      "explanation": "Câu hoàn chỉnh: 妹妹正在唱歌。 — Em gái đang hát."
     },
     {
@@ -4356,9 +4356,9 @@ export const curriculumTemplates=[
     },
     {
      "type": "fill",
-     "prompt": "___是什么时候的照片？ (Đây là bức ảnh chụp khi nào?)",
-     "answer": "这",
-     "explanation": "Câu hoàn chỉnh: 这是什么时候的照片？ — Đây là bức ảnh chụp khi nào?"
+     "prompt": "弟弟很小，___他会写字。 (Em trai còn nhỏ nhưng đã biết viết chữ.)",
+     "answer": "但是",
+     "explanation": "Câu hoàn chỉnh: 弟弟很小，但是他会写字。 — Em trai còn nhỏ nhưng đã biết viết chữ."
     },
     {
      "type": "fix",
@@ -4374,14 +4374,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你家有几口人？",
-     "answer": "我家有四口人。",
+     "speech": "他家有四口人，她家有五口人。她家有几口人？",
+     "answer": "她家有五口人。",
      "options": [
-      "我家有四口人。",
-      "你好！",
-      "您好！"
+      "她家有五口人。",
+      "她家有四口人。",
+      "他家有五口人。"
      ],
-     "explanation": "Gia đình bạn có mấy người? Đáp lại: 我家有四口人。"
+     "explanation": "Đáp lại: 她家有五口人。 Gia đình cô ấy có năm người; gia đình anh ấy có bốn người."
     },
     {
      "type": "fix",
@@ -4397,14 +4397,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你爸爸做什么工作？",
-     "answer": "我爸爸是工人。",
+     "speech": "他爸爸是工人，他妈妈是医生。他爸爸做什么工作？",
+     "answer": "他爸爸是工人。",
      "options": [
-      "我爸爸是工人。",
-      "你好！",
-      "您好！"
+      "他爸爸是工人。",
+      "他爸爸是医生。",
+      "他妈妈是工人。"
      ],
-     "explanation": "Bố bạn làm nghề gì? Đáp lại: 我爸爸是工人。"
+     "explanation": "Đáp lại: 他爸爸是工人。 Bố anh ấy là công nhân; mẹ anh ấy là bác sĩ."
     },
     {
      "type": "fix",
@@ -4420,14 +4420,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你妈妈是医生吗？",
-     "answer": "我妈妈是医生。",
+     "speech": "她妈妈是律师，她爸爸是医生。她妈妈做什么工作？",
+     "answer": "她妈妈是律师。",
      "options": [
-      "我妈妈是医生。",
-      "你好！",
-      "您好！"
+      "她妈妈是律师。",
+      "她妈妈是医生。",
+      "她爸爸是律师。"
      ],
-     "explanation": "Mẹ bạn là bác sĩ phải không? Đáp lại: 我妈妈是医生。"
+     "explanation": "Đáp lại: 她妈妈是律师。 Mẹ cô ấy là luật sư; bố cô ấy là bác sĩ."
     },
     {
      "type": "fix",
@@ -4443,14 +4443,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你弟弟今年多大？",
-     "answer": "我弟弟今年十岁。",
+     "speech": "他弟弟今年十岁，他妹妹今年九岁。他弟弟今年多大？",
+     "answer": "他弟弟今年十岁。",
      "options": [
-      "我弟弟今年十岁。",
-      "你好！",
-      "您好！"
+      "他弟弟今年十岁。",
+      "他弟弟今年九岁。",
+      "他妹妹今年十岁。"
      ],
-     "explanation": "Năm nay em trai bạn bao nhiêu tuổi? Đáp lại: 我弟弟今年十岁。"
+     "explanation": "Đáp lại: 他弟弟今年十岁。 Em trai anh ấy mười tuổi; em gái chín tuổi."
     },
     {
      "type": "fix",
@@ -4466,14 +4466,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "这是谁的照片？",
-     "answer": "这是我们全家的照片。",
+     "speech": "这是她全家的照片，那是他全家的照片。这是谁的照片？",
+     "answer": "这是她全家的照片。",
      "options": [
-      "这是我们全家的照片。",
-      "你好！",
-      "您好！"
+      "这是她全家的照片。",
+      "这是他全家的照片。",
+      "那是她全家的照片。"
      ],
-     "explanation": "Đây là ảnh của ai? Đáp lại: 这是我们全家的照片。"
+     "explanation": "Đáp lại: 这是她全家的照片。 Bức ảnh này của cả gia đình cô ấy; bức ảnh kia của gia đình anh ấy."
     },
     {
      "type": "fix",
@@ -4489,14 +4489,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你家有狗吗？",
-     "answer": "我家有一只狗。",
+     "speech": "他家有一只狗，没有猫。他家有什么？",
+     "answer": "他家有一只狗。",
      "options": [
-      "我家有一只狗。",
-      "你好！",
-      "您好！"
+      "他家有一只狗。",
+      "他家有一只猫。",
+      "他家没有狗。"
      ],
-     "explanation": "Nhà bạn có chó không? Đáp lại: 我家有一只狗。"
+     "explanation": "Đáp lại: 他家有一只狗。 Nhà anh ấy có một con chó và không có mèo."
     },
     {
      "type": "fix",
@@ -4512,14 +4512,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你每天几点起床？",
-     "answer": "我每天七点起床。",
+     "speech": "他每天七点起床，八点去公司。他每天几点起床？",
+     "answer": "他每天七点起床。",
      "options": [
-      "我每天七点起床。",
-      "你好！",
-      "您好！"
+      "他每天七点起床。",
+      "他每天八点起床。",
+      "他每天七点去公司。"
      ],
-     "explanation": "Mỗi ngày bạn thức dậy lúc mấy giờ? Đáp lại: 我每天七点起床。"
+     "explanation": "Đáp lại: 他每天七点起床。 Anh ấy thức dậy lúc bảy giờ; tám giờ mới đi công ty."
     },
     {
      "type": "fix",
@@ -4535,14 +4535,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你姐姐现在做什么？",
-     "answer": "我姐姐正在洗衣服。",
+     "speech": "她姐姐正在洗衣服，哥哥正在洗碗。她姐姐现在做什么？",
+     "answer": "她姐姐正在洗衣服。",
      "options": [
-      "我姐姐正在洗衣服。",
-      "你好！",
-      "您好！"
+      "她姐姐正在洗衣服。",
+      "她姐姐正在洗碗。",
+      "她哥哥正在洗衣服。"
      ],
-     "explanation": "Bây giờ chị gái bạn làm gì? Đáp lại: 我姐姐正在洗衣服。"
+     "explanation": "Đáp lại: 她姐姐正在洗衣服。 Chị gái cô ấy đang giặt quần áo; anh trai đang rửa bát."
     },
     {
      "type": "fix",
@@ -4558,14 +4558,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "这只猫可爱吗？",
+     "speech": "这只猫很可爱，那只猫不可爱。哪只猫很可爱？",
      "answer": "这只猫很可爱。",
      "options": [
       "这只猫很可爱。",
-      "你好！",
-      "您好！"
+      "那只猫很可爱。",
+      "这只猫不可爱。"
      ],
-     "explanation": "Con mèo này có đáng yêu không? Đáp lại: 这只猫很可爱。"
+     "explanation": "Đáp lại: 这只猫很可爱。 Con mèo này đáng yêu; câu đã nói rõ con mèo kia không đáng yêu."
     },
     {
      "type": "fix",
@@ -4581,14 +4581,14 @@ export const curriculumTemplates=[
     {
      "type": "dialogue",
      "prompt": "Nghe câu hỏi và chọn câu trả lời phù hợp.",
-     "speech": "你什么时候睡觉？",
-     "answer": "我晚上十点睡觉。",
+     "speech": "他晚上十点睡觉，她晚上十一点睡觉。她什么时候睡觉？",
+     "answer": "她晚上十一点睡觉。",
      "options": [
-      "我晚上十点睡觉。",
-      "你好！",
-      "您好！"
+      "她晚上十一点睡觉。",
+      "她晚上十点睡觉。",
+      "他晚上十一点睡觉。"
      ],
-     "explanation": "Bạn đi ngủ lúc mấy giờ? Đáp lại: 我晚上十点睡觉。"
+     "explanation": "Đáp lại: 她晚上十一点睡觉。 Cô ấy ngủ lúc mười một giờ tối; anh ấy ngủ lúc mười giờ tối."
     }
    ]
   },

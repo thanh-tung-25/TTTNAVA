@@ -2,9 +2,9 @@ export function speakingSupported(){
  return Boolean(window.isSecureContext&&navigator.mediaDevices?.getUserMedia&&window.MediaRecorder&&(window.AudioContext||window.webkitAudioContext));
 }
 
-export function createSpeakingMedia(level,{onRecorded,onFailure}){
+export function createSpeakingMedia(level,{onRecorded,onFailure,onSpeaking=()=>{}}){
  let input,context,microphone,analyser,source,recorder,frame=0,disposed=false,opening=0,buffers=new Map();
- function stopQuestion(){if(source){const old=source;source=null;try{old.stop();}catch{}old.disconnect();}}
+ function stopQuestion(){onSpeaking(false);if(source){const old=source;source=null;try{old.stop();}catch{}old.disconnect();}}
  function stop(){stopQuestion();if(recorder?.state==='recording')recorder.stop();}
  function close(){
   opening++;stop();const stream=input;input=null;stream?.getTracks().forEach(track=>track.stop());
@@ -48,7 +48,8 @@ export function createSpeakingMedia(level,{onRecorded,onFailure}){
   stopQuestion();return new Promise(resolve=>{
    const current=context.createBufferSource();source=current;current.buffer=buffer;current.playbackRate.value=.85;
    // Read the question to the learner; the recorder receives microphone tracks only.
-   current.connect(context.destination);current.onended=()=>{if(source===current)source=null;current.disconnect();resolve();};current.start();
+   current.connect(context.destination);current.onended=()=>{if(source===current){source=null;onSpeaking(false);}current.disconnect();resolve();};
+   try{current.start();onSpeaking(true);}catch(error){source=null;current.disconnect();onSpeaking(false);throw error;}
   });
  }
  function record(meta){

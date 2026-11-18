@@ -1,6 +1,8 @@
 import {it,expect} from 'vitest';
 import {randomUUID} from 'node:crypto';
-import {planCurriculum,validateCurriculumChinese} from '../src/services/chinese-curriculum.js';
+import {planCurriculum,validateCurriculumChinese,curriculumActivities} from '../src/services/chinese-curriculum.js';
+import {q1QuizApplication} from '../src/data/chinese-q1-quiz-application.js';
+import {repairCurriculumPractice} from '../src/services/chinese-practice-repair.js';
 import {buildCurriculumWord} from '../src/services/chinese-curriculum-word.js';
 import {q1QuizVocabulary} from '../src/data/chinese-q1-quiz-vocabulary.js';
 import {issues} from '../src/validators/chinese.js';
@@ -11,6 +13,53 @@ import {boundChatSettings,boundedClosing,boundedFallback,restrictChatReply} from
 import {segmentLearnedChinese} from '../src/services/chinese-quiz-language.js';
 import {curriculumTemplates} from '../../frontend/assets/js/chinese-curriculum-templates.js';
 import {defaultStreetLesson} from '../src/data/chinese-street-missions.js';
+
+it('gives every lesson ten different fill answers with exact reviewed sentence context',()=>{
+ for(let number=1;number<=10;number++){
+  const fill=curriculumActivities(number).tasks.filter(t=>t.type==='fill');
+  expect(fill).toHaveLength(10);expect(new Set(fill.map(t=>t.answer)).size).toBe(10);
+  expect(new Set(fill.map(t=>t.prompt)).size).toBe(10);
+  for(const t of fill){
+   const at=t.prompt.indexOf(' ('),prompt=t.prompt.slice(0,at),context=t.prompt.slice(at+2);expect(prompt.match(/___/gu)).toHaveLength(1);
+   const sentence=prompt.replace('___',t.answer),source=q1QuizApplication[number].find(s=>s.hanzi===sentence);
+   expect(source).toBeTruthy();expect(context).toBe(source.meaning+')');
+   expect(t.explanation).toBe(`Câu hoàn chỉnh: ${sentence} — ${source.meaning}`);
+   expect(()=>validateCurriculumChinese(t,number)).not.toThrow();
+  }
+ }
+ const first=curriculumActivities(1).tasks.filter(t=>t.type==='fill').map(t=>t.answer);
+ expect(first).toEqual(expect.arrayContaining(['大家','您','我们','是','经理','老板']));
+});
+it('gives every dialogue contextual facts and three similar choices within the learned vocabulary',()=>{
+ for(let number=1;number<=10;number++){
+  const dialogue=curriculumActivities(number).tasks.filter(t=>t.type==='dialogue');
+  expect(dialogue).toHaveLength(10);expect(new Set(dialogue.map(t=>t.speech)).size).toBe(10);
+  for(const t of dialogue){
+   expect(t.speech).toMatch(/。.+[？?]$/u);expect(t.options).toHaveLength(3);
+   expect(new Set(t.options).size).toBe(3);expect(t.options.filter(o=>o===t.answer)).toHaveLength(1);
+   const correct=new Set(t.answer.match(/\p{Script=Han}/gu));
+   for(const wrong of t.options.filter(o=>o!==t.answer)){
+    expect(wrong).not.toMatch(/^(?:你好|您好|大家好)[！!。.]?$/u);
+    expect([...new Set(wrong.match(/\p{Script=Han}/gu))].filter(c=>correct.has(c)).length,`Bài ${number}: ${wrong} so với ${t.answer}`).toBeGreaterThanOrEqual(2);
+   }
+   expect(t.explanation).toContain(t.answer);expect(t.explanation.length).toBeGreaterThan(t.answer.length+15);
+   expect(()=>validateCurriculumChinese(t,number)).not.toThrow();
+  }
+ }
+});
+it('repairs only fill and dialogue exercises, preserves editorial content and is safe to repeat',()=>{
+ for(let number=1;number<=10;number++){
+  const pack=curriculumActivities(number),other=pack.tasks.filter(t=>!['fill','dialogue'].includes(t.type));
+  for(const count of [0,3,10,12]){
+   const original={...pack,topic:'Chủ đề đã sửa',tasks:[...other.slice(0,3),...Array(count).fill({type:'fill',prompt:'___',answer:'老师'}),...Array(count).fill({type:'dialogue',speech:'你是学生？',options:['我是学生。','你好！','您好！']}),...other.slice(3)]};
+   const before=structuredClone(original),result=repairCurriculumPractice(number,original);
+   expect(original).toEqual(before);expect(result.topic).toBe(original.topic);
+   expect(result.tasks.filter(t=>!['fill','dialogue'].includes(t.type))).toEqual(other);
+   for(const type of ['fill','dialogue'])expect(result.tasks.filter(t=>t.type===type)).toEqual(pack.tasks.filter(t=>t.type===type));
+   expect(repairCurriculumPractice(number,result)).toEqual(result);
+  }
+ }
+});
 
 it('synchronizes all ten curriculum sections to the complete source and rejects future words',()=>{
  for(const source of q1QuizVocabulary){

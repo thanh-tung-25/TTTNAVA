@@ -2,15 +2,16 @@ import {el,link,field,request} from './chinese-common.js';
 import {api} from './api.js';
 import {createChatAudio} from './chinese-ai-chat-audio.js';
 import {chatScenarios} from './chinese-ai-chat-data.js';
+import {setMascotSpeaking} from './chinese-speaking-mascot.js';
 const p=(text,className='')=>el('p',{class:className,text});
 const button=(text,action,primary=false)=>el('button',{type:'button',class:'btn '+(primary?'btn-primary':'btn-secondary'),text,onclick:action});
 export async function renderChineseAiChat(host,{role='student',level=1}={}){
  if(!document.querySelector('link[data-ai-chat-style]'))document.head.append(el('link',{rel:'stylesheet',href:'/assets/css/chinese-ai-chat.css','data-ai-chat-style':''}));
- const admin=role==='admin',params=new URLSearchParams(location.search),app=el('div',{class:'ai-voice-app'}),main=el('div'),notice=p('','voice-notice');
+ const admin=role==='admin',params=new URLSearchParams(location.search),app=el('div',{class:'ai-voice-app','data-speaking':'false'}),main=el('div'),notice=p('','voice-notice');
  notice.setAttribute('role','status');notice.setAttribute('aria-live','polite');
  app.append(main,notice,el('footer',{class:'voice-footer'},[link('← Về bài học',{level},role)]));host.append(app);
  let meta,selected,session=null,reply=null,pending=null,inflight=false,active=false,disposed=false,phase='setup',message='',timer,controller,textMode=false,starting=false,needsTextVoice=false,conversationEpoch=0;
- const audio=createChatAudio({onState:(state,seconds)=>{if(!session||disposed)return;if(state==='preparing')setPhase('processing','Mình đang nghe câu bạn vừa nói…');else if(active)setPhase('listening',seconds?'Bạn đang nói · '+seconds+'/20 giây':'Đến lượt bạn. Cứ nói tự nhiên nhé.');},onTurn:blob=>{if(!active||disposed||!session)return;pending={id:crypto.randomUUID(),turn:session.turn_count+1,blob,state:session.state};sendPending();},onError:error=>pause(error.message),onIdle:reason=>pause(reason)});
+ const audio=createChatAudio({onSpeaking:value=>setMascotSpeaking(app,value),onState:(state,seconds)=>{if(!session||disposed)return;if(state==='preparing')setPhase('processing','Mình đang nghe câu bạn vừa nói…');else if(active)setPhase('listening',seconds?'Bạn đang nói · '+seconds+'/20 giây':'Đến lượt bạn. Cứ nói tự nhiên nhé.');},onTurn:blob=>{if(!active||disposed||!session)return;pending={id:crypto.randomUUID(),turn:session.turn_count+1,blob,state:session.state};sendPending();},onError:error=>pause(error.message),onIdle:reason=>pause(reason)});
  const tell=error=>{notice.textContent=error.message||String(error);};
  const header=()=>el('header',{class:'voice-hero'},[el('div',{},[el('span',{class:'voice-eyebrow',text:admin?'THIẾT KẾ CHỦ ĐỀ TRÒ CHUYỆN':'NGHE · NÓI · CÙNG NHAU TIẾP CHUYỆN'}),el('h2',{text:'Nói chuyện với Sư tử AI'}),p(admin?'Soạn chủ đề rồi thử nói chuyện như học sinh.':'Một người bạn cùng bạn nói tiếng Trung mỗi ngày.')]),el('img',{src:'/assets/images/mascot-lion.svg',alt:'Sư tử AI',width:95,height:106})]);
  const names={setup:'Sẵn sàng trò chuyện',connecting:'Đang kết nối',listening:'Đang nghe bạn',processing:'AI đang suy nghĩ',speaking:'AI đang nói',paused:'Đã tạm dừng',ended:'Hẹn bạn lần sau'};
@@ -65,7 +66,7 @@ export async function renderChineseAiChat(host,{role='student',level=1}={}){
   main.replaceChildren(header());const call=el('section',{class:'voice-call'});
   const end=button('Kết thúc',()=>endConversation());end.dataset.end='';
   call.append(el('div',{class:'voice-call-top'},[el('div',{},[el('span',{text:selected.title}),el('time',{'data-voice-time':'',text:'05:00','aria-label':'Thời gian còn lại'})])]));
-  call.append(el('div',{class:'voice-orb','aria-hidden':'true'},[el('span',{class:'voice-orbit'}),el('img',{src:'/assets/images/mascot-lion.svg',width:132,height:145,alt:''})]),el('h3',{'data-voice-status':'',text:names[phase],role:'status','aria-live':'polite'}),el('p',{'data-voice-hint':'',class:'voice-hint',text:message}),el('div',{class:'voice-bars','aria-hidden':'true'},Array.from({length:5},()=>el('i'))));
+  call.append(el('div',{class:'voice-orb','aria-hidden':'true'},[el('span',{class:'voice-orbit'}),el('img',{src:'/assets/images/mascot-lion.svg','data-speaking-mascot':'lion',width:132,height:145,alt:''})]),el('h3',{'data-voice-status':'',text:names[phase],role:'status','aria-live':'polite'}),el('p',{'data-voice-hint':'',class:'voice-hint',text:message}),el('div',{class:'voice-bars','aria-hidden':'true'},Array.from({length:5},()=>el('i'))));
   const controls=el('div',{class:'voice-controls','aria-label':'Điều khiển cuộc trò chuyện'},[button('Ⅱ Tạm dừng',()=>active?pause():resume(),true),button('✓ Nói xong',()=>audio.finishTurn()),end]);
   controls.children[0].dataset.pause='';controls.children[1].dataset.done='';call.firstElementChild.after(controls);
   const captions=el('details',{class:'voice-captions'},[el('summary',{text:'Hiện chữ khi cần'}),el('p',{'data-caption':'',lang:'zh-CN',text:reply?.reply_zh||''}),el('details',{},[el('summary',{text:'Dịch nghĩa'}),p(reply?.translation_vi||'')])]);

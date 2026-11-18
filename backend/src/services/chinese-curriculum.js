@@ -2,6 +2,8 @@ import {createHash} from 'node:crypto';
 import {q1QuizVocabulary} from '../data/chinese-q1-quiz-vocabulary.js';
 import {q1QuizApplication} from '../data/chinese-q1-quiz-application.js';
 import {curriculumSpeaking} from '../data/chinese-curriculum-speaking.js';
+import {curriculumFillGaps} from '../data/chinese-curriculum-fill.js';
+import {curriculumDialogue} from '../data/chinese-curriculum-dialogue.js';
 import {segmentLearnedChinese} from './chinese-quiz-language.js';
 import {planSourceQuiz} from './chinese-quiz-source.js';
 
@@ -35,20 +37,23 @@ export function curriculumChatSettings(number){
 export function curriculumActivities(number){
  const pairs=q1QuizApplication[number],tasks=[],long=pairs.filter(s=>sentenceTokens(s.hanzi,number).filter(t=>/\p{Script=Han}/u.test(t)).length>=3).slice(0,10);
  if(long.length<10)throw Error('Thiếu câu xếp từ.');
- for(const s of long){
-  const tokens=sentenceTokens(s.hanzi,number),target=tokens.findIndex(t=>/\p{Script=Han}/u.test(t)&&!['我','你','他','她','是','的','我们','你们','他们','她们'].includes(t));
-  const blank=[...tokens];blank[target]='___';
+ const gaps=curriculumFillGaps[number];
+ if(gaps?.length!==10||new Set(gaps.map(g=>g.answer)).size!==10)throw Error(`Bài ${number}: cần 10 đáp án điền từ khác nhau.`);
+ if(curriculumDialogue[number]?.length!==10)throw Error(`Bài ${number}: cần 10 câu hội thoại.`);
+ for(const [index,s] of long.entries()){
+  const tokens=sentenceTokens(s.hanzi,number),gap=gaps[index];
   tasks.push({type:'order',prompt:s.meaning,tokens,answer:s.hanzi,explanation:`${s.hanzi} — ${s.meaning}`});
-  tasks.push({type:'fill',prompt:blank.join('')+' ('+s.meaning+')',answer:tokens[target],explanation:`Câu hoàn chỉnh: ${s.hanzi} — ${s.meaning}`});
+  if(gap.prompt.split('___').length!==2||!gap.answer)throw Error(`Bài ${number}: câu điền từ cần đúng một chỗ trống.`);
+  const sentence=pairs.find(s=>s.hanzi===gap.prompt.replace('___',gap.answer));
+  if(!sentence)throw Error(`Bài ${number}: câu điền từ phải khớp câu đã duyệt.`);
+  tasks.push({type:'fill',prompt:gap.prompt+' ('+sentence.meaning+')',answer:gap.answer,explanation:`Câu hoàn chỉnh: ${sentence.hanzi} — ${sentence.meaning}`});
  }
  for(let i=0;i<10;i++){
   const s=pairs[i],other=pairs[(i+7)%pairs.length];
   tasks.push({type:'fix',prompt:`Sửa câu cho đúng nghĩa “${s.meaning}”: ${other.hanzi}`,answer:s.hanzi,options:[s.hanzi,other.hanzi,pairs[(i+13)%pairs.length].hanzi],explanation:`${s.hanzi} — ${s.meaning}`});
-  const spoken=curriculumSpeaking[number][i],questionWords=segmentLearnedChinese(spoken.text+spoken.answer_reference,number).filter(t=>!['我','你','您','他','她','吗','的','是','了','什么','谁','哪儿','哪里'].includes(t));
-  const pool=number===1?[{hanzi:'你好！'},{hanzi:'您好！'},{hanzi:'大家好！'}]:q1QuizVocabulary.filter(l=>l.number<=number).flatMap(l=>q1QuizApplication[l.number]).filter(row=>!questionWords.some(word=>row.hanzi.includes(word)));
-  const wrong=[...new Set(pool.map(s=>s.hanzi))].filter(s=>s!==spoken.answer_reference).slice(0,2);
-  if(wrong.length<2)throw Error('Thiếu lựa chọn hội thoại.');
-  tasks.push({type:'dialogue',prompt:'Nghe câu hỏi và chọn câu trả lời phù hợp.',speech:spoken.text,answer:spoken.answer_reference,options:[spoken.answer_reference,...wrong],explanation:`${spoken.meaning} Đáp lại: ${spoken.answer_reference}`});
+  const dialogue=curriculumDialogue[number]?.[i];
+  if(!dialogue?.speech||!dialogue.reason||dialogue.options.length!==3||new Set(dialogue.options).size!==3||!dialogue.options.includes(dialogue.answer))throw Error(`Bài ${number}: cần hội thoại và ba lựa chọn khác nhau.`);
+  tasks.push({type:'dialogue',prompt:'Nghe câu hỏi và chọn câu trả lời phù hợp.',speech:dialogue.speech,answer:dialogue.answer,options:[...dialogue.options],explanation:`Đáp lại: ${dialogue.answer} ${dialogue.reason}`});
  }
  return {topic:topics[number-1],tasks};
 }

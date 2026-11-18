@@ -47,6 +47,8 @@ Câu luyện nói vẫn lưu dưới dạng `dialogue`, `data.practice="speaking
 
 Học sinh bấm **Bật micro → Bắt đầu ghi âm**, rồi **Nghe câu 1**, trả lời và tiếp tục các câu còn lại. Trình duyệt chỉ xin quyền micro. Đề được chuẩn bị xong trước khi chạy đồng hồ và chỉ đọc khi bấm. Trong lúc ghi âm, không hiện chữ Hán, pinyin, nghĩa hoặc đáp án. Bản ghi lấy giọng từ micro; dùng tai nghe giúp tránh tiếng loa lọt vào. Đồng hồ tự dừng khi đủ thời lượng hoặc học sinh bấm **Dừng ghi âm**. Micro tự tắt sau khi tạo bản ghi.
 
+Gấu trúc mấp máy miệng trong lúc câu hỏi được phát và nghỉ khi âm thanh kết thúc hoặc bị dừng. Trên điện thoại, gấu nằm trong khung điều khiển ghi âm cố định khi cuộn; đổi kích thước màn hình di chuyển cùng một linh vật và bộ điều khiển, giữ nguyên lượt ghi âm. Các SVG nói được tạo từ hình gốc bằng `node backend/scripts/generate-speaking-mascots.mjs`, không cần thêm thư viện hoặc dịch vụ âm thanh.
+
 Sau khi dừng, học sinh có thể **Nghe lại**, **Ghi âm lại**, **Tải bản ghi** hoặc **AI chấm bài & gửi cô**. Ghi âm lại giữ nguyên bộ câu, đặt lại thời gian và lượt nghe; bản cũ chỉ được thay khi có bản mới hợp lệ. Lỗi quyền, tải đề hoặc bộ ghi không làm mất bản cũ. Rời màn hình dừng micro và giữ phần ghi dở trong trang để nghe/tải.
 
 Tải bản ghi là tùy chọn; bản ghi chỉ nằm tạm trong bộ nhớ trình duyệt, không lưu trong database, Storage, localStorage hoặc IndexedDB. Rời trang giải phóng bản chưa tải. Khi bấm chấm AI, chỉ gửi các khoảng trả lời sau khi phát đề xong để xử lý; server lưu kết quả chữ/điểm cho admin. Khi chưa cấu hình API hoặc cô chưa bật AI, vẫn ghi âm/nghe/tải được, nút chấm báo trạng thái thật.

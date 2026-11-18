@@ -12,8 +12,8 @@ function isRewardMetadata(request){
  if(request.path.endsWith('/experience/study-sessions/00000000-0000-4000-8000-000000000099/finish'))return Object.keys(body).join(',')==='duration'&&Number.isFinite(body.duration)&&body.duration>=5&&body.duration<=120;
  return false;
 }
-function audioFixture(){
- const rate=16000,count=rate/3,bytes=Buffer.alloc(44+count*2);bytes.write('RIFF');bytes.writeUInt32LE(bytes.length-8,4);bytes.write('WAVEfmt ',8);bytes.writeUInt32LE(16,16);bytes.writeUInt16LE(1,20);bytes.writeUInt16LE(1,22);bytes.writeUInt32LE(rate,24);bytes.writeUInt32LE(rate*2,28);bytes.writeUInt16LE(2,32);bytes.writeUInt16LE(16,34);bytes.write('data',36);bytes.writeUInt32LE(count*2,40);
+function audioFixture(seconds=1/3){
+ const rate=16000,count=Math.floor(rate*seconds),bytes=Buffer.alloc(44+count*2);bytes.write('RIFF');bytes.writeUInt32LE(bytes.length-8,4);bytes.write('WAVEfmt ',8);bytes.writeUInt32LE(16,16);bytes.writeUInt16LE(1,20);bytes.writeUInt16LE(1,22);bytes.writeUInt32LE(rate,24);bytes.writeUInt32LE(rate*2,28);bytes.writeUInt16LE(2,32);bytes.writeUInt16LE(16,34);bytes.write('data',36);bytes.writeUInt32LE(count*2,40);
  for(let n=0;n<Math.floor(count);n++)bytes.writeInt16LE(Math.round(Math.sin(2*Math.PI*220*n/rate)*8000),44+n*2);return bytes;
 }
 test.beforeAll(async()=>{
@@ -24,7 +24,7 @@ test.beforeAll(async()=>{
  });await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));origin='http://127.0.0.1:'+server.address().port;
 });
 test.afterAll(async()=>{server.closeAllConnections();await new Promise(resolve=>server.close(resolve));});
-async function mock(page,{published=true,audio=true,configured=true,settings={duration_seconds:90,order:'sequential'}}={}){
+async function mock(page,{published=true,audio=true,audioSeconds=1/3,configured=true,settings={duration_seconds:90,order:'sequential'}}={}){
  const state={audio,configured,requests:[],clips:[],role:'student',submission:null,failFinish:false,failAvailability:false};
  await page.addInitScript(()=>{
   localStorage.setItem('ttnava-course','hsk-1');window.__micTracks=[];window.__mediaRequests=[];window.__recorderKinds=[];window.__recorders=0;window.__failRecord=false;
@@ -35,7 +35,7 @@ async function mock(page,{published=true,audio=true,configured=true,settings={du
  const activities=published?{topic:'Trao danh thiếp',tasks:questions.map(speech=>({type:'dialogue',prompt:'Hãy đáp lại với ý: Tôi cũng rất vui.',speech,pinyin:'pinyin bí mật',meaning:'nghĩa bí mật',answer:'đáp án bí mật'}))}:null;
  await page.route('**/api/v1/**',async r=>{
   const req=r.request(),p=new URL(req.url()).pathname;state.requests.push({path:p,method:req.method(),body:req.postData()});
-  if(p.endsWith('/question-audio'))return r.fulfill(state.audio?{contentType:'audio/wav',body:audioFixture()}:{status:502,json:{error:{message:'Unavailable'}}});let data={};
+  if(p.endsWith('/question-audio'))return r.fulfill(state.audio?{contentType:'audio/wav',body:audioFixture(audioSeconds)}:{status:502,json:{error:{message:'Unavailable'}}});let data={};
   if(p.endsWith('/auth/me'))data={profile:{id:'student-1',role:state.role,adminScope:'chinese',username:'ngoc_anh',displayName:'Ngọc Anh',grade:null}};
   else if(p.endsWith('/experience/study-sessions'))data={id:'00000000-0000-4000-8000-000000000099',required:5};
   else if(p.endsWith('/experience/study-sessions/00000000-0000-4000-8000-000000000099/finish'))data={reward:{earned:1,reason:'completed'}};
@@ -147,6 +147,21 @@ test('shows numbered audio buttons without exposing questions or opening devices
  for(const b of await page.locator('.speaking-question-button').all())await expect(b).toBeDisabled();for(const q of questions)await expect(page.locator('.speaking-studio')).not.toContainText(q);await expect(page.locator('.speaking-studio')).not.toContainText('bí mật');expect(await page.evaluate(()=>window.__micTracks.length)).toBe(0);
  await page.screenshot({path:'test-results/chinese-speaking-desktop.png',fullPage:true,animations:'disabled'});await page.setViewportSize({width:390,height:844});await page.screenshot({path:'test-results/chinese-speaking-mobile.png',fullPage:true,animations:'disabled'});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
+test('the mobile panda visibly moves its mouth only during question playback and stops when recording ends',async({page})=>{
+ await page.setViewportSize({width:390,height:844});await mock(page,{audioSeconds:4});await open(page);
+ const studio=page.locator('.speaking-studio'),panda=page.locator('.speaking-recorder .speaking-panda img');
+ await expect(panda).toBeVisible();await expect(studio).toHaveAttribute('data-speaking','false');
+ await microphone(page);await record(page);await expect(panda).toBeInViewport();
+ const resting=await panda.screenshot();await page.locator('[data-question="1"]').click();
+ await expect(studio).toHaveAttribute('data-speaking','true');await expect(panda).toHaveAttribute('src',/-talking\.svg$/);
+ const frames=[];for(let n=0;n<3;n++){await page.waitForTimeout(90);frames.push(await panda.screenshot());}
+ expect(frames.some(frame=>!frame.equals(resting))).toBe(true);
+ expect(frames.some(frame=>!frame.equals(frames[0]))).toBe(true);
+ await page.screenshot({path:'test-results/speaking-panda-talking-mobile.png'});
+ await expect(studio).toHaveAttribute('data-speaking','false');await expect(panda).toHaveAttribute('src','/assets/images/mascot-panda.svg');
+ await page.locator('[data-question="1"]').click();await expect(studio).toHaveAttribute('data-speaking','true');
+ await stop(page);await expect(studio).toHaveAttribute('data-speaking','false');await expect(panda).toHaveAttribute('src','/assets/images/mascot-panda.svg');
+});
 for(const viewport of [{width:320,height:568},{width:360,height:800},{width:390,height:844}])test(`mobile ${viewport.width}: recording controls stay beside a long question list and preserve the same recording on resize`,async({page})=>{
  await page.setViewportSize(viewport);const state=await mock(page);
  const bank=['你叫什么名字？','你是哪国人？','你住在哪里？','你今年多大？','你喜欢喝什么？','你喜欢吃什么？','你今天忙吗？','你在哪儿工作？'];
@@ -157,9 +172,12 @@ for(const viewport of [{width:320,height:568},{width:360,height:800},{width:390,
  const bounds=await page.evaluate(()=>{const recorder=document.querySelector('.speaking-recorder').getBoundingClientRect(),question=[...document.querySelectorAll('.speaking-question-button')].at(-1).getBoundingClientRect(),stop=document.querySelector('.speaking-stop').getBoundingClientRect();return {recorderBottom:recorder.bottom,questionTop:question.top,stopTop:stop.top,stopBottom:stop.bottom,height:innerHeight};});
  expect(bounds.stopTop).toBeGreaterThanOrEqual(70);expect(bounds.stopBottom).toBeLessThanOrEqual(viewport.height-78);
  expect(bounds.questionTop).toBeGreaterThanOrEqual(bounds.recorderBottom);
+ await expect(page.locator('.speaking-recorder .speaking-panda')).toBeInViewport();
  await hear(page,8);await page.screenshot({path:'test-results/speaking-compact-'+viewport.width+'.png',animations:'disabled'});
  await page.setViewportSize({width:1280,height:950});await expect(page.locator('.speaking-grid > .speaking-recorder')).toHaveCount(1);
+ await expect(page.locator('.speaking-listen > .speaking-panda')).toBeVisible();
  await page.setViewportSize(viewport);await expect(page.locator('.speaking-listen > .speaking-recorder')).toHaveCount(1);
+ await expect(page.locator('.speaking-recorder .speaking-panda')).toBeVisible();
  await expect(page.locator('.speaking-studio')).toHaveAttribute('data-phase','recording');expect(await page.evaluate(()=>window.__recorders)).toBe(1);
  await stop(page);await expect(page.locator('.speaking-result audio')).toBeInViewport();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);

@@ -15,6 +15,8 @@ Mỗi buổi tối đa 5 phút hoặc 20 lượt người học, mỗi lượt �
 
 Đây là hội thoại tự chuyển lượt: nghe → nhận diện → tạo đáp → đọc → nghe tiếp. Có khoảng chờ mạng và xử lý AI; chưa hỗ trợ nói chồng lên AI như cuộc gọi hai chiều đồng thời.
 
+Linh vật mấp máy miệng khi giọng đọc thực sự bắt đầu, kể cả nghe lại/nghe chậm; dừng khi đọc xong, lỗi, tạm dừng, chuyển tab hoặc kết thúc. Trạng thái chờ giọng đọc không làm miệng chuyển động. Ảnh SVG động chỉ thay phần miệng và tôn trọng tùy chọn giảm chuyển động của thiết bị.
+
 ## Giao diện giáo viên
 
 Admin Tiếng Trung và admin tổng vào cùng mục, chọn đúng bài, mở **Sửa chủ đề trò chuyện** để sửa tình huống, mục tiêu, câu mở đầu, nghĩa tiếng Việt và từ gợi ý cho AI. Lưu rồi bấm bắt đầu để thử như học sinh.

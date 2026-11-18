@@ -5,7 +5,7 @@ import path from 'node:path';
 import {activityTemplate} from '../frontend/assets/js/chinese-activity-templates.js';
 
 let server,origin;
-const titles=['你好','你叫什么名字','很高兴认识你','你去哪儿','你要吃什么','你在哪儿工作'];
+const titles=['你好','你叫什么名字','很高兴认识你','你去哪儿','你要吃什么','你在哪儿工作','中国银行在哪儿','你的生日是几月几号','你喜欢中国电影还是美国电影','你家有几口人'];
 test.beforeAll(async()=>{
  const root=path.resolve('frontend');
  server=createServer(async(req,res)=>{
@@ -149,6 +149,60 @@ test('saved activities keep required context and show correction explanations on
   if(type==='fill'){await expect(practice.locator('.applied-hanzi')).toHaveText(task.prompt);await page.getByRole('textbox',{name:'Từ cần điền'}).fill(task.answer);}
   else await page.getByRole('button',{name:task.answer,exact:true}).click();
   await page.getByRole('button',{name:'Kiểm tra',exact:true}).click();await expect(practice.locator('.applied-feedback')).toContainText(task.explanation);
+ }
+});
+
+test('all ten lessons present ten different fill answers and grade a complete round correctly',async({page})=>{
+ test.setTimeout(120000);
+ await page.setViewportSize({width:390,height:844});
+ for(let lesson=0;lesson<titles.length;lesson++){
+  await page.unrouteAll();await mock(page,lesson);
+  const fill=activityTemplate({level_id:1,title:titles[lesson]}).tasks.filter(t=>t.type==='fill'),answers=new Set();
+  await page.goto(origin+'/pages/student/chinese/?set=sample&mode=apply');
+  await page.getByRole('button',{name:'Điền từ',exact:true}).click();
+  for(let n=0;n<10;n++){
+   const practice=page.locator('.applied-practice');
+   await expect(practice.locator('.quiz-position')).toHaveText(`Điền từ · ${n+1}/10`);
+   const prompt=await practice.locator('.applied-hanzi').textContent(),task=fill.find(t=>t.prompt===prompt);
+   expect(task).toBeTruthy();expect(answers.has(task.answer)).toBe(false);answers.add(task.answer);
+   await expect(practice).not.toContainText(task.explanation);
+   await page.getByRole('textbox',{name:'Từ cần điền'}).fill(task.answer);
+   await page.getByRole('button',{name:'Kiểm tra',exact:true}).click();
+   await expect(practice.locator('.applied-feedback')).toContainText('Đúng rồi!');
+   await expect(practice.locator('.applied-feedback')).toContainText(task.explanation);
+   await page.getByRole('button',{name:n===9?'Xem kết quả':'Tiếp tục →',exact:true}).click();
+  }
+  expect(answers.size).toBe(10);await expect(page.locator('.quiz-score')).toHaveText('10/10');
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ }
+});
+
+test('all ten dialogue rounds show close distractors and reject them before explaining the distinction',async({page})=>{
+ test.setTimeout(120000);
+ await page.setViewportSize({width:390,height:844});
+ for(let lesson=0;lesson<titles.length;lesson++){
+  await page.unrouteAll();await mock(page,lesson);
+  const dialogue=activityTemplate({level_id:1,title:titles[lesson]}).tasks.filter(t=>t.type==='dialogue'),seen=new Set();
+  await page.goto(origin+'/pages/student/chinese/?set=sample&mode=apply');
+  await page.getByRole('button',{name:'Hội thoại',exact:true}).click();
+  for(let n=0;n<10;n++){
+   const practice=page.locator('.applied-practice');
+   await expect(practice.locator('.quiz-position')).toHaveText(`Hội thoại · ${n+1}/10`);
+   const speech=await practice.locator('.applied-bubble .applied-hanzi').textContent(),task=dialogue.find(t=>t.speech===speech);
+   expect(task).toBeTruthy();expect(seen.has(speech)).toBe(false);seen.add(speech);
+   const options=await practice.locator('.quiz-choices .choice-with-audio > button').allTextContents();
+   expect([...options].sort()).toEqual([...task.options].sort());
+   expect(options.every(o=>!['你好！','您好！','大家好！'].includes(o))).toBe(true);
+   await expect(practice).not.toContainText(task.explanation);
+   const answer=n===0?task.options.find(o=>o!==task.answer):task.answer;
+   await page.getByRole('button',{name:answer,exact:true}).click();
+   await page.getByRole('button',{name:'Kiểm tra',exact:true}).click();
+   await expect(practice.locator('.applied-feedback')).toContainText(n===0?'Chưa đúng':'Đúng rồi!');
+   await expect(practice.locator('.applied-feedback')).toContainText(task.explanation);
+   await page.getByRole('button',{name:n===9?'Xem kết quả':'Tiếp tục →',exact:true}).click();
+  }
+  expect(seen.size).toBe(10);await expect(page.locator('.quiz-score')).toHaveText('9/10');
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  }
 });
 

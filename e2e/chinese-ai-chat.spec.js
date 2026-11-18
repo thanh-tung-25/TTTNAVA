@@ -3,21 +3,21 @@ import {test,expect} from '@playwright/test';
 const lessonId='00000000-0000-4000-8000-000000000001';
 const settings={enabled:true,scenario_id:'identity',goal:'Giới thiệu tên và quốc tịch.',opening:'你好！你叫什么名字？',translation:'Chào bạn! Bạn tên là gì?',required_words:['名字','越南'],max_turns:10};
 const answer='很高兴认识你！今天想聊什么？';
-async function setup(page,{role='student',voice=true,configured=true,fail=false,delay=0,denyMic=false,startDelay=0}={}){
+async function setup(page,{role='student',voice=true,configured=true,fail=false,delay=0,denyMic=false,startDelay=0,manualSpeech=false}={}){
  let config={...settings},session=null,failed=false;const turns=[],finishes=[],errors=[],starts=[];
  page.on('pageerror',e=>errors.push(e.message));
- await page.addInitScript(({voice,denyMic})=>{
-  localStorage.setItem('ttnava-course','hsk-1');window.__spoken=[];window.__stopped=0;window.__microphones=0;window.__rms=0;window.__speaking=false;
+ await page.addInitScript(({voice,denyMic,manualSpeech})=>{
+  localStorage.setItem('ttnava-course','hsk-1');window.__spoken=[];window.__utterances=[];window.__stopped=0;window.__microphones=0;window.__rms=0;window.__speaking=false;
   window.SpeechSynthesisUtterance=class{constructor(text){this.text=text;}};
   let timer;
-  Object.defineProperty(window,'speechSynthesis',{value:{getVoices:()=>voice?[{lang:'zh-CN',name:'Test Chinese'}]:[],addEventListener(){},removeEventListener(){},cancel(){clearTimeout(timer);window.__speaking=false;},speak(u){window.__spoken.push({text:u.text,rate:u.rate});window.__speaking=true;timer=setTimeout(()=>{window.__speaking=false;u.onend?.();},80);}}});
+  Object.defineProperty(window,'speechSynthesis',{value:{getVoices:()=>voice?[{lang:'zh-CN',name:'Test Chinese'}]:[],addEventListener(){},removeEventListener(){},cancel(){clearTimeout(timer);window.__speaking=false;},speak(u){window.__spoken.push({text:u.text,rate:u.rate});window.__utterances.push(u);if(manualSpeech)return;window.__speaking=true;u.onstart?.();timer=setTimeout(()=>{window.__speaking=false;u.onend?.();},80);}}});
   AnalyserNode.prototype.getFloatTimeDomainData=function(buffer){buffer.fill(window.__rms);};
   const original=navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
   Object.defineProperty(navigator.mediaDevices,'getUserMedia',{value:async constraints=>{
    window.__microphones++;window.__constraints=constraints;if(denyMic)throw new DOMException('Denied','NotAllowedError');
    const stream=await original(constraints);for(const t of stream.getTracks()){const stop=t.stop.bind(t);t.stop=()=>{window.__stopped++;stop();};}return stream;
   }});
- },{voice,denyMic});
+ },{voice,denyMic,manualSpeech});
  await page.route('**/pages/'+role+'/chinese/**',async route=>{
   const file=route.request().resourceType()==='document'?'index.html':new URL(route.request().url()).pathname.split('/').pop();
   if(!/\.(html|js|css)$/.test(file))return route.continue();await route.fulfill({contentType:file.endsWith('.js')?'text/javascript':file.endsWith('.css')?'text/css':'text/html',body:await fs.readFile('frontend/pages/'+role+'/chinese/'+file,'utf8')});
@@ -45,6 +45,38 @@ async function setup(page,{role='student',voice=true,configured=true,fail=false,
  });
  await page.goto('/pages/'+role+'/chinese/?view=ai-chat&level=1&lesson='+lessonId);await expect(page.locator('[data-start]')).toBeVisible();return {turns,finishes,starts,errors};
 }
+test('the AI mascot follows actual voice start, pause, resume and cancellation instead of queued speech',async({page})=>{
+ const state=await setup(page,{manualSpeech:true});await page.setViewportSize({width:390,height:844});
+ await page.locator('[data-start]').click();
+ const app=page.locator('.ai-voice-app'),mascot=page.locator('.voice-orb img');
+ await expect(app).toHaveAttribute('data-phase','speaking');await expect(app).toHaveAttribute('data-speaking','false');
+ await expect(mascot).toHaveAttribute('src','/assets/images/mascot-lion.svg');
+ await page.evaluate(()=>window.__utterances.at(-1).onstart());await expect(app).toHaveAttribute('data-speaking','true');
+ await expect(mascot).toHaveAttribute('src',/-talking\.svg$/);
+ const frames=[];for(let n=0;n<3;n++){await page.waitForTimeout(90);frames.push(await mascot.screenshot());}
+ expect(frames.some(frame=>!frame.equals(frames[0]))).toBe(true);
+ await page.evaluate(()=>window.__utterances.at(-1).onpause());await expect(app).toHaveAttribute('data-speaking','false');
+ await page.evaluate(()=>window.__utterances.at(-1).onresume());await expect(app).toHaveAttribute('data-speaking','true');
+ await page.locator('[data-pause]').click();await expect(app).toHaveAttribute('data-speaking','false');
+ await page.evaluate(()=>{const old=window.__utterances.at(-1);old.onstart();old.onresume();old.onend();});
+ await expect(app).toHaveAttribute('data-phase','paused');await expect(app).toHaveAttribute('data-speaking','false');
+ await page.locator('[data-end]').click();expect(state.errors).toEqual([]);
+});
+test('mouth movement stops after voice completion, replay errors, leaving the tab and ending the call',async({page})=>{
+ const state=await setup(page,{manualSpeech:true});await page.locator('[data-start]').click();
+ const app=page.locator('.ai-voice-app');await expect(app).toHaveAttribute('data-phase','speaking');
+ await page.evaluate(()=>{const u=window.__utterances.at(-1);u.onstart();u.onend();});
+ await expect(app).toHaveAttribute('data-phase','listening');await expect(app).toHaveAttribute('data-speaking','false');
+ await page.locator('.voice-captions>summary').click();await page.getByRole('button',{name:'▷ Nghe chậm',exact:true}).click();
+ await page.evaluate(()=>window.__utterances.at(-1).onstart());await expect(app).toHaveAttribute('data-speaking','true');
+ expect(await page.evaluate(()=>window.__spoken.at(-1).rate)).toBe(.65);
+ await page.evaluate(()=>window.__utterances.at(-1).onerror());await expect(app).toHaveAttribute('data-speaking','false');
+ await page.getByRole('button',{name:'▶ Nghe lại',exact:true}).click();await page.evaluate(()=>window.__utterances.at(-1).onstart());
+ await expect(app).toHaveAttribute('data-speaking','true');
+ await page.evaluate(()=>{Object.defineProperty(document,'hidden',{configurable:true,get:()=>true});document.dispatchEvent(new Event('visibilitychange'));});
+ await expect(app).toHaveAttribute('data-speaking','false');await page.locator('[data-end]').click();
+ await expect(app).toHaveAttribute('data-speaking','false');expect(state.errors).toEqual([]);
+});
 test('simple setup and voice controls fit mobile and desktop without scoring or teacher reports',async({page})=>{
  const state=await setup(page);
  for(const width of [320,360,768,1440]){await page.setViewportSize({width,height:900});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);if([360,1440].includes(width))await page.screenshot({path:'test-results/voice-setup-'+width+'.png',fullPage:true});}

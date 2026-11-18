@@ -8,7 +8,7 @@ const app = createApp();
 const server = http.createServer(app);
 const io = createRealtimeServer(server);
 
-server.listen(env.port, () => {
+server.listen(env.port, process.env.BIND_HOST || undefined, () => {
   console.log(`TTNAVA đang chạy tại ${env.appOrigin} (cổng ${env.port})`);
 });
 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>Thử viết tay để tra từ · TTNAVA</title>
+ <link rel="icon" href="/assets/images/ttnava-logo.png">
+ <link rel="stylesheet" href="/assets/css/base.css">
+ <link rel="stylesheet" href="/assets/css/components.css">
+ <link rel="stylesheet" href="/assets/css/pages.css">
+ <link rel="stylesheet" href="/assets/css/student-depth.css">
+ <link rel="stylesheet" href="/assets/css/student-unified.css">
+ <link rel="stylesheet" href="/assets/css/student-chrome-3d.css">
+ <link rel="stylesheet" href="/assets/css/chinese-simple.css">
+ <link rel="stylesheet" href="/assets/css/chinese-playful-3d.css">
+ <link rel="stylesheet" href="/assets/css/chinese-dictionary.css">
+ <link rel="stylesheet" href="/assets/css/chinese-handwriting.css">
+ <link rel="stylesheet" href="/assets/css/chinese-handwriting-preview.css">
+</head>
+<body data-role="student" data-program="chinese" class="student-unified handwriting-preview-page">
+ <header id="app-header" class="topbar">
+  <div class="topbar-inner"><a class="brand" href="/preview/handwriting/"><img class="brand-mark" src="/assets/images/ttnava-logo.png" width="44" height="44" alt="">TTNAVA</a><div class="topbar-user"><span class="preview-badge">Xem trước</span><details class="student-account"><summary><img class="avatar" src="/assets/avatars/meo.svg" alt=""><span class="user-meta"><strong>Góc xem thử</strong><span>Khám phá cách học mới</span></span><span class="account-chevron" aria-hidden="true">⌄</span></summary><div class="student-account-menu"><strong>Bản xem thử trên máy</strong><span>Từ mẫu để khám phá tính năng. Không lưu vào tài khoản.</span><a href="/pages/student/chinese/">Vào ứng dụng localhost</a></div></details><button id="preview-help" class="preview-help" type="button" aria-label="Xem hướng dẫn viết tay" title="Cách dùng">?</button></div></div>
+  <div id="preview-navigation"></div>
+ </header>
+ <main class="page handwriting-preview">
+  <div class="chinese-pagebar">
+   <div class="chinese-title"><span class="chinese-course-emblem" aria-hidden="true">学</span><div class="chinese-course-meta"><span class="chinese-course-caption">KHÓA ĐANG HỌC</span><h1>Tiếng Trung HSK 1</h1></div></div>
+   <button type="button" id="chinese-dictionary-open" class="chinese-dictionary-open" aria-label="Tra từ tiếng Trung" aria-haspopup="dialog" aria-controls="chinese-dictionary-dialog" title="Tra chữ Hán, pinyin hoặc nghĩa tiếng Việt" disabled><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Tra từ</span></button>
+   <a class="chinese-course-back" href="/pages/student/courses/?program=chinese" title="Chọn khóa học"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h15m-4-4 4 4-4 4M20 17H5m4-4-4 4 4 4"/></svg><span>Đổi khóa</span></a>
+  </div>
+  <section class="chinese-course-hero preview-hero"><div class="chinese-hero-copy"><p class="preview-eyebrow">MỖI CHỮ MỘT KHÁM PHÁ</p><h2>Nhớ mặt chữ?<br>Viết ra để tìm lại.</h2><p>Gấu trúc cùng bạn tìm lại cách đọc và nghĩa của những chữ đã quen.</p><button id="preview-start" class="btn btn-primary preview-start" type="button"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 5 4 4M4 20l4-1 12-12a2.8 2.8 0 0 0-4-4L4 15Z"/></svg>Thử viết tay</button></div><div class="preview-mascot" aria-hidden="true"><span class="preview-floating-character">字</span><img src="/assets/images/mascot-panda.svg" width="180" height="195" alt=""><span class="preview-floating-star">✦</span></div></section>
+  <section class="card preview-practice-card"><div class="preview-section-heading"><span class="preview-section-icon" lang="zh-CN" aria-hidden="true">文</span><div><p class="preview-eyebrow">THỬ MỘT NÉT, NHỚ MỘT TỪ</p><h2>Bắt đầu bằng chữ bạn quen</h2><p>Viết một chữ trong ô, rồi chọn chữ giống nét viết của bạn.</p></div></div><div class="preview-character-list" lang="zh-CN"><span>你<small>nǐ</small></span><span>好<small>hǎo</small></span><span>学<small>xué</small></span><span>爱<small>ài</small></span><span>老<small>lǎo</small></span><span>师<small>shī</small></span></div><p class="preview-example-tip">Ghép từng chữ để tra cả từ: <strong lang="zh-CN">老 + 师 → 老师</strong><span>lǎoshī · giáo viên</span></p></section>
+  <details id="preview-guide" class="card preview-guide"><summary>Cách tra từ bằng chữ viết tay</summary><ol><li>Bấm <strong>Thử viết tay</strong> hoặc biểu tượng bút trong Tra từ.</li><li>Viết một chữ, rồi chọn gợi ý giống chữ bạn nhớ.</li><li>Xem pinyin, nghĩa hoặc viết tiếp để ghép thành từ.</li></ol></details>
+  <p class="preview-caption">Bản xem trước trên máy · Dùng từ mẫu · Không lưu vào tài khoản</p>
+ </main>
+ <script type="module" src="/assets/js/chinese-handwriting-preview.js"></script>
+</body>
+</html>

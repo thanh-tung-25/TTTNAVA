@@ -54,6 +54,15 @@ export function createApp() {
   app.use(express.urlencoded({ extended: false, limit: '100kb' }));
   app.use(cookieParser());
 
+  // Give only the isolated handwriting worker permission to compile its local
+  // WASM model. The document keeps the existing script policy.
+  app.get('/assets/js/chinese-handwriting-worker.js',(_request,response)=>{
+    response.set({'Cache-Control':env.isProduction?'public, max-age=604800':'no-cache','Content-Security-Policy':"default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; connect-src 'self'"}).type('text/javascript').sendFile(path.join(frontendRoot,'assets/js/chinese-handwriting-worker.js'));
+  });
+  if(!env.isProduction)app.get('/preview/handwriting/',(request,response,next)=>{
+    if(!['localhost','127.0.0.1','[::1]','::1'].includes(request.hostname))return next();
+    response.set('Cache-Control','no-store').sendFile(path.join(frontendRoot,'previews/handwriting.html'));
+  });
   app.use('/assets', express.static(path.join(frontendRoot, 'assets'), {
     maxAge: env.isProduction ? '7d' : 0,
     fallthrough: true,

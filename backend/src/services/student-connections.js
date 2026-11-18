@@ -4,6 +4,7 @@ import {query,withTransaction} from '../config/db.js';
 import {badRequest,forbidden,notFound} from '../utils/errors.js';
 import {activeStudent,txRun} from './student-experience.js';
 import {guardianLearningReport} from './guardian-learning-report.js';
+import {listCourses} from './course-service.js';
 
 const digest=value=>createHash('sha256').update(value).digest('hex');
 export async function createGuardianCode(user){
@@ -38,5 +39,5 @@ export async function respondGuardianLink(user,id,body){
 async function linkedChild(user,id){
  await guardianProfile(user);z.uuid().parse(id);const [row]=await query("SELECT p.id,p.display_name FROM guardian_links g JOIN profiles p ON p.id=g.student_id WHERE g.guardian_id=? AND g.student_id=? AND g.status='accepted' AND p.deleted_at IS NULL",[user,id]);if(!row)throw notFound();return row;
 }
-export async function childCourses(user,id){await linkedChild(user,id);return query('SELECT c.id,c.title,c.kind,c.level FROM courses c JOIN course_enrollments e ON e.course_id=c.id WHERE e.student_id=? AND e.revoked_at IS NULL AND e.starts_at<=CURRENT_TIMESTAMP(3) AND (e.expires_at IS NULL OR e.expires_at>CURRENT_TIMESTAMP(3)) AND c.active=1 ORDER BY c.kind,c.level',[id]);}
+export async function childCourses(user,id){await linkedChild(user,id);return (await listCourses(id)).filter(c=>c.unlocked).map(({id,title,kind,level})=>({id,title,kind,level}));}
 export async function guardianReport(user,id,courseId,days=7){const child=await linkedChild(user,id),courses=await childCourses(user,id);const report=await guardianLearningReport(id,courses,courseId,days);return {child,...report};}

@@ -1,5 +1,19 @@
 # Khóa học và xác nhận thanh toán
 
+## MoMo và đợt học miễn phí (18/11/2026)
+
+Trang quản trị có bốn mục: **Đã thanh toán**, **Khóa học**, **Giao dịch**, **Kết nối MoMo**. Admin tổng đặt giá/thời hạn trả phí và lịch miễn phí cho từng khóa; admin Tiếng Trung chỉ xem và xử lý dữ liệu HSK trong phạm vi cũ. Đợt miễn phí áp dụng cho học sinh có tài khoản trong khoảng bắt đầu–kết thúc, tự hết hiệu lực ở máy chủ. Lịch mới thay lịch hiện hành và giữ bản cũ trong `course_free_periods`. Quyền đã mua không bị thay đổi bởi việc mở/tắt đợt miễn phí. Quyền bị thu hồi không tự được khôi phục nhờ đợt miễn phí.
+
+Migration `040_course_momo.sql` chỉ tạo năm bảng mới. Lần đầu sao chép danh sách quyền hiện có vào nhãn `course_paid_access.origin=existing`; mọi lần chạy sau bỏ qua bước này bằng dấu mốc cố định. Người dùng cũ xuất hiện trong **Đã thanh toán · Quyền học chuyển tiếp**. Không tạo giao dịch tiền giả, không sửa nguồn/thời hạn/thu hồi của quyền cũ, không sửa đơn cũ, hồ sơ, tiến độ, điểm, kim cương hoặc lịch sử. Quyền hết hạn/đã thu hồi vẫn giữ trạng thái đó. Công cụ `node backend/scripts/deploy-course-momo.mjs --target=production --apply` áp dụng riêng cho Supabase đã cấu hình, sao lưu quyền/đơn và dấu vân tay dữ liệu trước khi ghi. Đổi đích thành `--target=local` để áp dụng MySQL. Không có `--apply` chỉ đọc số lượng. Không phát sinh thanh toán khi triển khai.
+
+Admin có thể thêm MoMo sau tại **Kết nối MoMo**: Partner Code, Access Key, Secret Key, môi trường và công tắc bật. Khóa được mã hóa AES-256-GCM ở máy chủ bằng khóa dẫn xuất riêng từ `PAYMENT_CONFIG_ENCRYPTION_KEY`, hoặc JWT_SECRET hiện có nếu chưa đặt biến riêng; không được trả lại cho trình duyệt hoặc ghi vào log. Thay khóa mã hóa cần nhập lại cấu hình, và cần giữ khóa cũ để hoàn tất đơn đang chờ. Mỗi đơn giữ phiên bản kết nối gốc để thay tài khoản mới không phá callback của tài khoản cũ. Chỉ Production đã bật mới cho học sinh tạo đơn; Sandbox không mở quyền học thật. Trang cấu hình không tự gọi MoMo hoặc tự xác nhận tài khoản đã được MoMo duyệt.
+
+Checkout tạo đơn trước khi chuyển đến trang MoMo, giữ nguyên học phí/thời hạn trong đơn. Khóa 1.000–50.000.000đ dùng API `captureWallet`; mỗi lần thử lại dùng cùng requestId. Tài khoản MoMo for Business cần được MoMo duyệt nhận tiền thật. IPN công khai là `/api/v1/payments/momo/ipn`; máy chủ xác thực HMAC-SHA256 với khóa của chính đơn, đối chiếu partner/request/order/số tiền và chỉ ghi nhận resultCode=0. Callback lặp được xử lý một lần theo đơn và mã giao dịch duy nhất. Ghi nhận thanh toán, cấp quyền, nhãn đã thanh toán và nhật ký nằm cùng giao dịch DB. Trang quay về không được dùng để tự mở khóa bằng tham số URL. Kiểm tra lại giao dịch gọi API query trực tiếp tới máy chủ MoMo qua HTTPS, tối đa một lần/30 giây/đơn. Đơn hủy nhưng có xác nhận tiền vào hợp lệ vẫn được ghi nhận để không mất tiền/quyền của người học; không hoàn tiền tự động.
+
+Khi thanh toán thật thành công, thời hạn bắt đầu lúc xác nhận; nếu có quyền trả phí còn hạn do giao dịch khác đến đồng thời thì giữ quyền vĩnh viễn hoặc cộng thêm thời gian hữu hạn. Đợt miễn phí không ghi đè quyền trả phí. Yêu cầu chuyển khoản thủ công từ trước vẫn được giữ và có mục đối soát riêng; giao dịch MoMo không thể được admin duyệt bằng nút đối soát thủ công. Luồng đăng ký mới không nhận ảnh QR tĩnh hoặc lời khai đã chuyển khoản để cấp quyền.
+
+Phần dưới mô tả cơ chế trước khi chuyển sang MoMo, dùng để đối chiếu lịch sử.
+
 Học sinh đăng nhập vào `/pages/student/courses/`, chọn Tiểu học hoặc Tiếng Trung. Mọi tài khoản đều xem được 14 khóa. Khóa chưa được cấp quyền chỉ mở trang giới thiệu; bài học và API được kiểm tra quyền ở máy chủ.
 
 ## Giá ban đầu

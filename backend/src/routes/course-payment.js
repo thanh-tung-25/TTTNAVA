@@ -23,7 +23,7 @@ async function validateKey(key){
  if(!course)throw new AppError(404,'COURSE_NOT_FOUND','Không tìm thấy khóa học.');
 }
 router.get('/admin/pending-count',requireAdmin,asyncHandler(async(req,res)=>{
- const [row]=await query(`SELECT COUNT(*) total FROM course_orders o JOIN courses c ON c.id=o.course_id WHERE o.status='pending' AND ${courseReviewCondition(req.user)}`);res.json({data:{total:Number(row.total)}});
+ const [row]=await query(`SELECT COUNT(*) total FROM course_orders o JOIN courses c ON c.id=o.course_id WHERE o.status='pending' AND NOT EXISTS(SELECT 1 FROM course_momo_payments m WHERE m.order_id=o.id) AND ${courseReviewCondition(req.user)}`);res.json({data:{total:Number(row.total)}});
 }));
 router.get('/admin/payment-qr',requireSuperAdmin,asyncHandler(async(_req,res)=>{
  res.json({data:await query('SELECT course_key,mime_type,updated_at,crop_json FROM course_payment_qr ORDER BY course_key')});

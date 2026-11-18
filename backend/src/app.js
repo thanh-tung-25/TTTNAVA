@@ -12,6 +12,9 @@ import { protectedHtml } from './middlewares/protected-html.js';
 import { adminHome, adminPageScope } from './utils/admin-permissions.js';
 import { adminAudit } from './middlewares/admin-audit.js';
 import {sendAppHtml} from './utils/app-html.js';
+import {receiveMomoIpn} from './services/course-momo.js';
+import {asyncHandler} from './utils/errors.js';
+import {rateLimit} from './middlewares/rate-limit.js';
 
 const frontendRoot = path.join(env.backendRoot, '..', 'frontend');
 const pagesRoot = path.join(frontendRoot, 'pages');
@@ -98,6 +101,9 @@ export function createApp() {
     } });
   });
 
+  // Provider callback has no login cookie or browser origin. Its own HMAC,
+  // immutable order snapshot and idempotent settlement authenticate every write.
+  app.post('/api/v1/payments/momo/ipn',rateLimit({windowMs:60000,max:120,keyPrefix:'momo-ipn'}),asyncHandler(async(req,res)=>{await receiveMomoIpn(req.body);res.status(204).end();}));
   app.use('/api/v1', requireSameOrigin, adminAudit, apiRouter);
   app.use('/api', notFoundHandler);
 

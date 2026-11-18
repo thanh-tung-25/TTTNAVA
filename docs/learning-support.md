@@ -13,7 +13,9 @@ Vào **Học tập → Học hôm nay**, hoặc **Thêm → Học hôm nay**. AP
 
 ## Báo cáo cho phụ huynh
 
-Vào **Học tập → Báo cáo cho phụ huynh**, hoặc **Thêm → Báo cáo phụ huynh**. Phụ huynh cùng xem trong tài khoản học sinh đang đăng nhập. Chưa có tài khoản phụ huynh/ghép con riêng và không có liên kết công khai chứa dữ liệu học sinh.
+Vào **Học tập → Báo cáo cho phụ huynh**, hoặc **Thêm → Báo cáo phụ huynh** để cùng xem trong tài khoản học sinh. Phụ huynh có tài khoản riêng vào **Góc phụ huynh**, liên kết bằng mã do con tạo và chỉ xem sau khi con đồng ý. Không có liên kết công khai mở dữ liệu học sinh.
+
+Góc phụ huynh tự mở tổng quan của con đã liên kết, chọn tất cả hoặc từng khóa đang mở và khoảng 7/30 ngày. Trang bổ sung nhịp học từng ngày, so sánh kỳ trước, kết quả theo bài/môn, các lượt cần ôn, bài cô giao và nhận xét, lịch sử có lọc/phân trang/tải CSV. Bao gồm hoạt động tự luyện đã lưu và bài luyện nói đã gửi chấm; lượt không có điểm không bị tính thành 0. Báo cáo không chứa hội thoại AI riêng tư, bản ghi âm hoặc bài viết nháp. Thu hồi liên kết chặn các lần tải báo cáo tiếp theo.
 
 Báo cáo theo khóa trong 7 ngày: lượt hoàn thành, điểm trung bình các lượt đã chấm, môn đã học, lượt dưới 70 điểm nên ôn, hoạt động gần đây và lượt chờ chấm. Bao gồm luyện tập, thi thử, phiếu bài tập, thách đấu (tiểu học) hoặc quiz/kiểm tra tiếng Trung. Thời lượng là ước tính theo mốc mở/nộp, tối đa 30 phút/lượt, không phải số phút tương tác thực tế. Chưa có kết quả thì hiển thị trống, không tạo số liệu minh họa. Tự luyện không lưu server chưa tính vào báo cáo.
 

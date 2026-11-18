@@ -6,9 +6,9 @@ import {getPracticeSession} from './practice-service.js';
 import {badRequest} from '../utils/errors.js';
 import {schoolSubjectName} from '../utils/school-subjects.js';
 
-function dates(now=new Date()){
+function dates(now=new Date(),days=7){
  const local=new Date(now.getTime()+7*3600000),day=local.toISOString().slice(0,10);
- return {day,today:new Date(day+'T00:00:00+07:00'),since:new Date(new Date(day+'T00:00:00+07:00').getTime()-6*86400000)};
+ return {day,today:new Date(day+'T00:00:00+07:00'),since:new Date(new Date(day+'T00:00:00+07:00').getTime()-(days-1)*86400000)};
 }
 export async function todayPlan(user,courseId){
  const course=await requireCourse(user,courseId),{day,today}=dates();
@@ -37,8 +37,8 @@ export async function startToday(user,courseId){
  }
  return {href:'/pages/student/practice/?'+new URLSearchParams({session:session.id,subject:plan.topic.subject_id})};
 }
-export async function familyReport(user,courseId){
- const course=await requireCourse(user,courseId),{day,since}=dates();let rows=[];
+export async function familyReport(user,courseId,{days=7,includeRows=false}={}){
+ const course=await requireCourse(user,courseId),{day,since}=dates(new Date(),days);let rows=[];
  if(['primary','secondary'].includes(course.kind)){
   const [practice,exams,worksheets,challenges]=await Promise.all([
    query('SELECT p.id,p.status,p.started_at,p.finished_at completed_at,p.correct_count correct,p.total_questions total,t.name title,t.subject_id FROM practice_sessions p JOIN topics t ON t.id=p.topic_id WHERE p.student_id=? AND t.grade=? AND p.started_at>=? ORDER BY p.started_at DESC LIMIT 1000',[user,course.level,since]),
@@ -48,8 +48,8 @@ export async function familyReport(user,courseId){
   ]);
   rows=[...practice.map(r=>({...r,kind:'Luyện tập'})),...exams.map(r=>({...r,kind:'Thi thử'})),...worksheets.map(r=>({...r,kind:'Phiếu bài tập'})),...challenges.map(r=>({...r,kind:'Thách đấu'}))];
  }else{
-  const attempts=await query('SELECT a.*,l.level_id FROM chinese_attempts a LEFT JOIN chinese_sets s ON s.id=a.set_id LEFT JOIN chinese_lessons l ON l.id=s.lesson_id WHERE a.student_id=? AND a.abandoned_at IS NULL AND a.started_at>=? ORDER BY a.started_at DESC LIMIT 1000',[user,since]);
-  rows=attempts.filter(a=>a.level_id===Number(course.level)||(json(a.snapshot).course_ids||[]).includes(course.id)).map(a=>{const snapshot=json(a.snapshot),answers=Object.values(json(a.answers));return {id:a.id,kind:a.test_id?'Kiểm tra tiếng Trung':'Quiz tiếng Trung',title:snapshot.title,subject_id:'chinese',status:a.finished_at?'finished':'in_progress',started_at:a.started_at,completed_at:a.finished_at,correct:answers.filter(a=>a.locked&&a.correct).length,total:snapshot.items.length,score:a.score};});
+  const attempts=await query('SELECT a.*,l.level_id,l.title AS lesson_title FROM chinese_attempts a LEFT JOIN chinese_sets s ON s.id=a.set_id LEFT JOIN chinese_lessons l ON l.id=s.lesson_id WHERE a.student_id=? AND a.abandoned_at IS NULL AND a.started_at>=? ORDER BY a.started_at DESC LIMIT 1000',[user,since]);
+  rows=attempts.filter(a=>Number(a.level_id)===Number(course.level)||(json(a.snapshot).course_ids||[]).includes(course.id)).map(a=>{const snapshot=json(a.snapshot),answers=Object.values(json(a.answers));return {id:a.id,kind:a.test_id?'Kiểm tra tiếng Trung':'Quiz tiếng Trung',title:a.lesson_title||snapshot.title,detail:snapshot.title,subject_id:'chinese',status:a.finished_at?'finished':'in_progress',started_at:a.started_at,completed_at:a.finished_at,correct:answers.filter(a=>a.locked&&a.correct).length,total:snapshot.items.length,score:a.score};});
  }
  const guided=await query('SELECT id,title,status,created_at,finished_at,items_json,answers_json FROM learning_runs WHERE profile_id=? AND course_id=? AND created_at>=? ORDER BY created_at DESC LIMIT 1000',[user,courseId,since]);
  rows.push(...guided.map(r=>{const items=json(r.items_json),answers=Object.values(json(r.answers_json));return {id:r.id,title:r.title,kind:'Buổi học cá nhân',status:r.status,started_at:r.created_at,completed_at:r.finished_at,subject_id:items[0]?.subject||'chinese',correct:answers.filter(a=>a.correct).length,total:items.length};}));
@@ -58,5 +58,5 @@ export async function familyReport(user,courseId){
  for(const id of [...new Set(completed.map(r=>r.subject_id))]){const done=completed.filter(r=>r.subject_id===id&&r.score!=null);subjects.push({id,title:schoolSubjectName(id,course.level),completed:done.length,average:done.length?Math.round(done.reduce((n,r)=>n+r.score,0)/done.length):null});}
  const weak=[...completed].filter(r=>r.score!=null&&r.score<70).sort((a,b)=>a.score-b.score).slice(0,3);
  const minutes=Math.round(completed.reduce((n,r)=>n+Math.max(0,Math.min(1800,(new Date(r.completed_at)-new Date(r.started_at))/1000)),0)/60);
- return {day,since:since.toISOString(),course,summary:{active_days:new Set(completed.map(r=>new Date(new Date(r.completed_at).getTime()+7*3600000).toISOString().slice(0,10))).size,completed:completed.length,in_progress:rows.filter(r=>!r.completed_at).length,pending_review:rows.filter(r=>r.status==='pending_review').length,average:scored.length?Math.round(scored.reduce((n,r)=>n+r.score,0)/scored.length):null,estimated_minutes:minutes},subjects,weak,recent:rows.slice(0,30),note:'Báo cáo 7 ngày của khóa đang chọn. Thời lượng là ước tính từ lúc mở đến lúc nộp, tối đa 30 phút mỗi lượt; không phải thời gian tương tác thực. Tự luyện chưa lưu kết quả không tính vào báo cáo.'};
+ return {day,since:since.toISOString(),course,summary:{active_days:new Set(completed.map(r=>new Date(new Date(r.completed_at).getTime()+7*3600000).toISOString().slice(0,10))).size,completed:completed.length,in_progress:rows.filter(r=>!r.completed_at).length,pending_review:rows.filter(r=>r.status==='pending_review').length,average:scored.length?Math.round(scored.reduce((n,r)=>n+r.score,0)/scored.length):null,estimated_minutes:minutes},subjects,weak,recent:rows.slice(0,30),...(includeRows?{activities:rows}:{}),note:`Báo cáo ${days} ngày của khóa đang chọn. Thời lượng là ước tính từ lúc mở đến lúc nộp, tối đa 30 phút mỗi lượt; không phải thời gian tương tác thực. Tự luyện chưa lưu kết quả không tính vào báo cáo.`};
 }

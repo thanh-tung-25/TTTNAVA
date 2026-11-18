@@ -52,5 +52,5 @@ router.get('/guardian/links',handle(r=>connections.guardianConnections(r.user.id
 router.post('/guardian/links',rateLimit({windowMs:3600000,max:10,keyPrefix:'guardian-link'}),handle(r=>connections.requestGuardianLink(r.user.id,r.body)));
 router.post('/guardian/links/:id',handle(r=>connections.respondGuardianLink(r.user.id,r.params.id,r.body)));
 router.get('/guardian/children/:id/courses',handle(r=>connections.childCourses(r.user.id,r.params.id)));
-router.get('/guardian/children/:id/report',handle(r=>connections.guardianReport(r.user.id,r.params.id,z.string().min(1).max(32).parse(r.query.courseId))));
+router.get('/guardian/children/:id/report',handle(r=>connections.guardianReport(r.user.id,r.params.id,z.string().min(1).max(32).parse(r.query.courseId),Number(z.enum(['7','30']).default('7').parse(r.query.days)))));
 export default router;

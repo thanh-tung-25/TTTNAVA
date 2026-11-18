@@ -88,20 +88,21 @@ async function appearance(context){
  },styleStatus,true);
  styleForm.append(el('div',{class:'personal-companion experience-hero'},[preview,el('div',{},[el('h3',{text:'Bạn đồng hành'}),el('p',{text:'Cấp '+rewards.companion.level}),companion])]),name.wrap,el('label',{class:'personal-effect',for:effects.id},[effects,el('span',{text:'Bật hiệu ứng nhẹ'})]),styleStatus,styleSave);
  styleForm.onsubmit=event=>{event.preventDefault();styleSave.click();};
- const wallet=el('p',{class:'personal-wallet'}),store=el('div',{class:'personal-store'}),storeStatus=localStatus();
+ const store=el('div',{class:'personal-store'}),storeStatus=localStatus();
  const renderStore=()=>{
-  wallet.textContent='Ví đổi vật phẩm: '+rewards.wallet.total.toLocaleString('vi-VN')+' kim cương';
-  store.replaceChildren(...rewards.store.map(item=>{
-   const tile=el('article',{class:'personal-store-item'},[el('h4',{text:item.title}),el('p',{text:item.owned?'Đã sở hữu':item.price+' kim cương'})]);
+  store.replaceChildren(...rewards.store.filter(item=>item.owned).map(item=>{
+   const tile=el('article',{class:'personal-store-item'},[el('h4',{text:item.title})]);
    if(item.equipped)tile.append(el('span',{class:'experience-pill',text:'Đang sử dụng'}));
-   else{const buy=button(item.owned?'Sử dụng':'Đổi vật phẩm',async()=>{
-    await request('/store/'+item.sku+(item.owned?'/equip':'/buy'),{method:'POST'});
-    [rewards,prefs]=await Promise.all([request('/rewards'),preferences(true)]);applyPreferences(prefs);renderStore();storeStatus.textContent=item.owned?'Đã áp dụng vật phẩm.':'Đã đổi vật phẩm.';
-   },storeStatus);if(!item.owned&&rewards.wallet.total<item.price){buy.disabled=true;tile.append(el('small',{text:'Cần thêm '+(item.price-rewards.wallet.total)+' kim cương'}));}tile.append(buy);}
+   else tile.append(button('Sử dụng',async()=>{
+    await request('/store/'+item.sku+'/equip',{method:'POST'});
+    [rewards,prefs]=await Promise.all([request('/rewards'),preferences(true)]);applyPreferences(prefs);renderStore();storeStatus.textContent='Đã áp dụng vật phẩm.';
+   },storeStatus));
    return tile;
   }));
  };
- decoration.append(styleForm,el('section',{class:'personal-store-section'},[el('h3',{text:'Trang trí góc học'}),wallet,storeStatus,store]));renderStore();
+ decoration.append(styleForm);
+ if(rewards.store.some(item=>item.owned))decoration.append(el('section',{class:'personal-store-section'},[el('h3',{text:'Trang trí đã sở hữu'}),storeStatus,store]));
+ renderStore();
  content.append(tabbar,achievements,decoration);return content;
 }
 async function main(){

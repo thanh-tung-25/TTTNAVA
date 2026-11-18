@@ -26,7 +26,7 @@ export async function getAdminStats(scope = 'super') {
     FROM questions q JOIN topics t ON t.id=q.topic_id WHERE ${grade}`);
   const [practice] = await query(`SELECT COUNT(*) total FROM practice_sessions x JOIN topics t ON t.id=x.topic_id WHERE x.status='finished' AND ${grade}`);
   const [exam] = await query(`SELECT COUNT(*) total FROM exam_attempts x JOIN topics t ON t.id=x.topic_id WHERE x.status='submitted' AND ${grade}`);
-  const [diamonds] = await query(`SELECT COALESCE(SUM(dl.amount),0) total FROM diamond_ledger dl WHERE dl.amount>0 AND ${ledger}`);
+  const [diamonds] = await query(`SELECT COALESCE(SUM(dl.amount),0) total FROM diamond_ledger dl WHERE dl.amount>0 AND dl.reason<>'store_refund' AND ${ledger}`);
   const bySubject = await query(`SELECT s.id,s.name,s.color,
     (SELECT COUNT(*) FROM practice_sessions x JOIN topics t ON t.id=x.topic_id WHERE t.subject_id=s.id AND x.status='finished' AND ${grade}) practices,
     (SELECT COUNT(*) FROM exam_attempts x JOIN topics t ON t.id=x.topic_id WHERE t.subject_id=s.id AND x.status='submitted' AND ${grade}) exams
@@ -34,7 +34,7 @@ export async function getAdminStats(scope = 'super') {
   const topStudents = await query(`SELECT p.id,p.display_name,p.avatar_key,p.grade,COALESCE(SUM(dl.amount),0) diamonds
     FROM diamond_ledger dl JOIN profiles p ON p.id=dl.profile_id
     WHERE dl.created_at>=${dialectSql('DATE_SUB(CURRENT_TIMESTAMP(3), INTERVAL 7 DAY)',"CURRENT_TIMESTAMP(3) - INTERVAL '7 days'")}
-    AND dl.amount>0 AND p.deleted_at IS NULL AND ${ledger}
+    AND dl.amount>0 AND dl.reason<>'store_refund' AND p.deleted_at IS NULL AND ${ledger}
     GROUP BY p.id,p.display_name,p.avatar_key,p.grade ORDER BY diamonds DESC LIMIT 5`);
   return {
     students:{total:Number(students.total),active:Number(students.active)},

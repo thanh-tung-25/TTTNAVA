@@ -128,10 +128,10 @@ export function updateDiamondChip() {
   const chip = document.getElementById('diamond-chip');
   if (!chip) return;
   const total=diamondProgram?diamondPrograms?.[diamondProgram]?.total:diamondTotal;
-  const label=diamondProgram?'Kim cương đã kiếm được · '+programLabels[diamondProgram]:'Ví kim cương còn lại để đổi vật phẩm';
+  const label=diamondProgram?'Kim cương đã kiếm được · '+programLabels[diamondProgram]:'Tổng kim cương hiện có';
   const text=total==null?'…':new Intl.NumberFormat('vi-VN').format(total);
   chip.querySelector('span').textContent=text;
-  chip.querySelector('small').textContent=diamondProgram?programLabels[diamondProgram]:'Ví còn lại';
+  chip.querySelector('small').textContent=diamondProgram?programLabels[diamondProgram]:'Ví chung';
   chip.title=label;chip.setAttribute('aria-label',label+': '+text);chip.dataset.program=diamondProgram||'all';
 }
 

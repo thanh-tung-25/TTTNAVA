@@ -27,7 +27,7 @@ export async function rewardState(user,courseId){
  const types=new Set(todays.flatMap(e=>e.types||[])),repaired=todays.reduce((n,e)=>n+Number(e.repaired||0),0);
  const doneToday=todays.length>0||report.recent.some(r=>r.completed_at&&localDay(r.completed_at)===localDay());
  const tasks=[{key:'learn',title:'Hoàn thành một buổi học',ready:doneToday,reward:3},{key:'repair',title:'Sửa đúng một lỗi đã gặp',ready:repaired>0,reward:3},{key:'explore',title:'Khám phá hai dạng câu hỏi',ready:types.size>=2,reward:3}].map(t=>({...t,claimed:claims.some(c=>c.task_key===t.key)}));
- return {tasks,wallet,companion:{animal:prefs.companion,name:prefs.companion_name,level:1+Math.floor(Number(completed[0].total)/5)},store:storeCatalog.map(s=>({...s,owned:inventory.some(i=>i.sku===s.sku),equipped:prefs.equipped_frame===s.sku||prefs.equipped_background===s.sku})),badges:badgeDefinitions.map(b=>({...b,awardedAt:badges.find(x=>x.badge_key===b.key)?.awarded_at||null}))};
+ return {tasks,wallet,companion:{animal:prefs.companion,name:prefs.companion_name,level:1+Math.floor(Number(completed[0].total)/5)},store:storeCatalog.filter(s=>inventory.some(i=>i.sku===s.sku)).map(s=>({...s,owned:true,equipped:prefs.equipped_frame===s.sku||prefs.equipped_background===s.sku})),badges:badgeDefinitions.map(b=>({...b,awardedAt:badges.find(x=>x.badge_key===b.key)?.awarded_at||null}))};
 }
 export async function claimDailyTask(user,courseId,key){
  z.enum(['learn','repair','explore']).parse(key);
@@ -38,14 +38,8 @@ export async function claimDailyTask(user,courseId,key){
   await insertLedger(c,{profileId:user,amount:task.reward,reason:'quest_reward',refType:'quest',refId:id});return {claimed:true,earned:task.reward};
  });
 }
-export async function buyCosmetic(user,sku){
- const item=storeCatalog.find(i=>i.sku===sku);if(!item)throw notFound();
- return withTransaction(async c=>{const run=txRun(c);await activeStudent(user,run,true);
-  if((await run('SELECT id FROM student_inventory WHERE profile_id=? AND sku=?',[user,sku])).length)return {owned:true,charged:0};
-  const [balance]=await run('SELECT COALESCE(SUM(amount),0) total FROM diamond_ledger WHERE profile_id=?',[user]);if(Number(balance.total)<item.price)throw badRequest('Bạn chưa đủ kim cương để đổi vật phẩm này.');
-  const id=randomUUID();await run('INSERT INTO student_inventory(id,profile_id,sku) VALUES (?,?,?)',[id,user,sku]);
-  await insertLedger(c,{profileId:user,amount:-item.price,reason:'store_purchase',refType:'store',refId:id});return {owned:true,charged:item.price};
- });
+export async function buyCosmetic(){
+ throw new AppError(410,'STORE_REMOVED','Chức năng đổi vật phẩm đã ngừng. Kim cương của bạn được giữ nguyên.');
 }
 export async function equipCosmetic(user,sku){
  const item=storeCatalog.find(i=>i.sku===sku);if(!item)throw notFound();

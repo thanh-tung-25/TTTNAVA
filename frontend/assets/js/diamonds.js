@@ -14,6 +14,7 @@ const REASONS = {
   chinese_low: ['📘', 'Tiếng Trung: kết quả dưới 70%'],
   quest_reward: ['★', 'Thưởng nhiệm vụ học tập'],
   store_purchase: ['🎨', 'Đổi vật phẩm góc học'],
+  store_refund: ['↩️', 'Hoàn kim cương đổi vật phẩm'],
 };
 
 function row(item) {

@@ -1,4 +1,5 @@
 import {readFile} from 'node:fs/promises';
+import {releaseAsset} from './asset-release.js';
 
 const metadata=`
 <link rel="manifest" href="/manifest.webmanifest" data-ttnava-app="true">
@@ -13,6 +14,8 @@ const metadata=`
 <meta name="theme-color" content="#815cc5">
 `;
 export function appHtml(html){
+ html=html.replace(/(<(?:script|link)\b[^>]*\b(?:src|href)\s*=\s*)(["'])([^"']+)\2/gi,
+  (_match,prefix,quote,url)=>prefix+quote+releaseAsset(url,process.env.VERCEL_GIT_COMMIT_SHA)+quote);
  if(html.includes('data-ttnava-app="true"'))return html;
  const clean=html.replace(/<link\b(?=[^>]*\brel\s*=\s*["'](?:shortcut\s+)?icon["'])[^>]*>/gi,'');
  return clean.replace(/<\/head\s*>/i,metadata+'</head>');

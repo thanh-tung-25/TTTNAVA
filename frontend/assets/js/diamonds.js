@@ -35,8 +35,13 @@ async function main() {
   const data = payload.data;
   setDiamondTotal(data.total,data.programs);
   document.getElementById('diamond-total').textContent = data.total.toLocaleString('vi-VN');
-  document.getElementById('diamond-week').textContent = `Tuần này: ${data.week.toLocaleString('vi-VN')}`;
-  document.getElementById('diamond-month').textContent = `Tháng này: ${data.month.toLocaleString('vi-VN')}`;
+  document.getElementById('diamond-week').textContent = `Kiếm tuần này: ${data.week.toLocaleString('vi-VN')}`;
+  document.getElementById('diamond-month').textContent = `Kiếm tháng này: ${data.month.toLocaleString('vi-VN')}`;
+  const programs=document.getElementById('diamond-programs');
+  programs.replaceChildren(...Object.entries({primary:'Tiểu học',secondary:'THCS',chinese:'Tiếng Trung'}).map(([key,label])=>{
+    const badge=document.createElement('span');badge.className='badge badge-warning';
+    badge.textContent=label+': '+Number(data.programs?.[key]?.total||0).toLocaleString('vi-VN')+' 💎';return badge;
+  }));
   document.getElementById('ledger-list').innerHTML = data.recent.length
     ? data.recent.map(row).join('')
     : emptyState('💎', 'Chưa có kim cương nào', 'Con luyện tập hoặc thi để nhận kim cương nhé!');

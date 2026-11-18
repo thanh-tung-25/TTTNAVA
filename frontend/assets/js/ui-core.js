@@ -24,11 +24,12 @@ let diamondPrograms = null;
 let diamondProgram = null;
 let diamondRequest = 0;
 const programLabels = {primary:'Tiểu học',secondary:'THCS',chinese:'Tiếng Trung'};
+const courseCatalogUrl = program => '/pages/student/courses/' + (program ? '?program=' + encodeURIComponent(program) : '');
 
 function renderHeader(profile, role, active) {
   if(active==='worksheets')active='questions';
   const nav = role==='admin'?ADMIN_NAV.filter(([key])=>adminSections(profile).includes(key)).map(entry=>entry[0]==='courses'&&adminScope(profile)==='chinese'?[entry[0],entry[1],'Đăng ký Tiếng Trung']:entry):ADMIN_NAV;
-  const home = role === 'admin' ? adminHome(profile) : profile.course?.kind==='chinese'?'/pages/student/chinese/':'/pages/student/courses/';
+  const home = role === 'admin' ? adminHome(profile) : profile.course?.kind==='chinese'?'/pages/student/chinese/':courseCatalogUrl(diamondProgram);
   const subtitle = role === 'admin'
     ? adminLabels[adminScope(profile)]
     : (profile.course?.title ?? (profile.grade ? `Học sinh lớp ${profile.grade}` : 'Học sinh Tiếng Trung'));
@@ -41,7 +42,7 @@ function renderHeader(profile, role, active) {
       <a class="brand" href="${home}"><img class="brand-mark" src="/assets/images/ttnava-logo.png" alt="" width="44" height="44"> TTNAVA</a>
       <div class="topbar-user">
         ${role==='student'&&profile.course?.kind!=='chinese'?'<a class="btn btn-ghost btn-sm course-switch" href="/pages/student/courses/?switch=1">Đổi khóa</a>':''}
-        ${role === 'student' ? '<span class="diamond-chip" id="diamond-chip" title="Kim cương của con">💎 <span>…</span></span>' : ''}
+        ${role === 'student' ? '<a class="diamond-chip" id="diamond-chip" href="/pages/student/diamonds/" title="Kim cương của con"><span>…</span><small>Kim cương</small></a>' : ''}
         ${role === 'student' ? studentAccount(profile, avatarUrl(profile.avatarKey), subtitle) : `<img class="avatar" src="${avatarUrl(profile.avatarKey)}" alt="Ảnh đại diện của ${escapeHtml(profile.displayName)}">
         <span class="user-meta"><strong>${escapeHtml(profile.displayName)}</strong><span>${subtitle}</span></span>
         <button class="btn btn-ghost btn-sm" type="button" id="logout-button">Thoát</button>`}
@@ -73,7 +74,7 @@ export async function initPage(role, active) {
   if(role==='student'){
     document.body.classList.add('student-unified');
     if(!document.querySelector('link[data-student-design]')){const style=document.createElement('link');style.rel='stylesheet';style.href='/assets/css/student-unified.css';style.dataset.studentDesign='true';document.head.append(style);}
-    if(!document.querySelector('link[data-student-chrome]')){const style=document.createElement('link');style.rel='stylesheet';style.href='/assets/css/student-chrome-3d.css';style.dataset.studentChrome='true';document.head.append(style);}
+    if(!document.querySelector('link[data-student-chrome]')){const style=document.createElement('link');style.rel='stylesheet';style.href='/assets/css/student-chrome-3d.css?v=20261118-diamond-context';style.dataset.studentChrome='true';document.head.append(style);}
   }
   const payload = await api('/api/v1/auth/me');
   const profile = payload.data.profile;
@@ -127,9 +128,10 @@ export function updateDiamondChip() {
   const chip = document.getElementById('diamond-chip');
   if (!chip) return;
   const total=diamondProgram?diamondPrograms?.[diamondProgram]?.total:diamondTotal;
-  const label=diamondProgram?'Kim cương '+programLabels[diamondProgram]:'Tổng kim cương của con';
+  const label=diamondProgram?'Kim cương đã kiếm được · '+programLabels[diamondProgram]:'Ví kim cương còn lại để đổi vật phẩm';
   const text=total==null?'…':new Intl.NumberFormat('vi-VN').format(total);
   chip.querySelector('span').textContent=text;
+  chip.querySelector('small').textContent=diamondProgram?programLabels[diamondProgram]:'Ví còn lại';
   chip.title=label;chip.setAttribute('aria-label',label+': '+text);chip.dataset.program=diamondProgram||'all';
 }
 
@@ -141,6 +143,8 @@ export function setDiamondTotal(value,programs) {
 
 export function setDiamondProgram(program) {
   diamondProgram=Object.hasOwn(programLabels,program)?program:null;
+  const brand=document.querySelector('body.course-selector #app-header .brand');
+  if(brand)brand.href=courseCatalogUrl(diamondProgram);
   updateDiamondChip();
 }
 

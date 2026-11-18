@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import {releaseModuleImports} from '../src/utils/asset-release.js';
 const root = fileURLToPath(new URL('../../', import.meta.url));
 if(process.env.VERCEL){
  const {deploymentCheck}=await import('../src/services/deployment-check.js');
@@ -27,6 +28,20 @@ for (const role of ['student', 'admin']) {
     await fs.copyFile(path.join(source, name), path.join(destination, name));
   }
 }
+// A fresh HTML document must also fetch fresh shared imports, not seven-day-old
+// UI modules left in the browser cache after a deployment.
+async function versionModules(directory){
+ for(const entry of await fs.readdir(directory,{withFileTypes:true})){
+  const file=path.join(directory,entry.name);
+  if(entry.isDirectory())await versionModules(file);
+  else if(entry.isFile()&&entry.name.endsWith('.js')){
+   const source=await fs.readFile(file,'utf8');
+   const versioned=releaseModuleImports(source,process.env.VERCEL_GIT_COMMIT_SHA);
+   if(versioned!==source)await fs.writeFile(file,versioned);
+  }
+ }
+}
+await versionModules(assetsOutput);
 await fs.mkdir(path.join(output, 'assets/vendor'), { recursive: true });
 await fs.copyFile(path.join(root, 'backend/node_modules/socket.io/client-dist/socket.io.min.js'), path.join(output, 'assets/vendor/socket.io.min.js'));
 console.log('Vercel assets prepared. Protected HTML, credentials and database backups are excluded.');

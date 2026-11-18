@@ -1,5 +1,5 @@
-/* A small lookup control between the course name and course switch. */
-body[data-program=chinese].student-unified .chinese-pagebar{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}
+/* Keep the small lookup control next to the course switch. */
+body[data-program=chinese].student-unified .chinese-pagebar{display:grid;grid-template-columns:minmax(0,1fr) auto auto;column-gap:8px}
 body[data-program=chinese].student-unified .chinese-pagebar .chinese-course-back{justify-self:end}
 .chinese-dictionary-open{display:inline-flex;align-items:center;justify-content:center;gap:8px;justify-self:center;min-height:40px;padding:8px 15px;border:1px solid #dfd0ec;border-radius:13px;background:#fffcff;color:#8a68a7;font:600 12px/1.5 var(--font-body,sans-serif);box-shadow:inset 0 1px 0 #fff,0 3px 0 #e4d5ee;cursor:pointer;white-space:nowrap}
 .chinese-dictionary-open svg{width:17px;height:17px;flex:none}.chinese-dictionary-open:hover{background:#f7f0fd;color:#6e498d}.chinese-dictionary-open:disabled{opacity:.55;cursor:wait}.chinese-dictionary-open:focus-visible{outline:3px solid #bda0d5;outline-offset:4px}

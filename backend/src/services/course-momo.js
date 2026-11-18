@@ -4,6 +4,7 @@ import {query,withTransaction,dialectSql} from '../config/db.js';
 import {AppError} from '../utils/errors.js';
 import {momoConfig,momoLive} from './momo-settings.js';
 import {createMomoPayment,queryMomoPayment,verifyMomoSignature} from './momo-provider.js';
+import {continuedPaidPeriod} from './course-paid-period.js';
 
 const active=e=>e&&!e.revoked_at&&new Date(e.starts_at)<=new Date()&&(!e.expires_at||new Date(e.expires_at)>new Date());
 async function paidEnrollment(run,student,course,lock=false){
@@ -25,7 +26,7 @@ export async function checkoutMomo(student,body){
   if(!course)throw new AppError(404,'COURSE_NOT_FOUND','Khóa học chưa mở đăng ký.');
   if(course.price_vnd==null||Number(course.price_vnd)<1000||Number(course.price_vnd)>50000000)throw new AppError(409,'COURSE_PRICE_INVALID','Khóa học đang chờ cấu hình học phí phù hợp cho MoMo (1.000–50.000.000đ).');
   const enrollment=await paidEnrollment(run,student,course_id);
-  if(active(enrollment))throw new AppError(409,'ALREADY_ENROLLED','Bạn đã có quyền học khóa này.');
+  if(active(enrollment)||(enrollment&&!enrollment.revoked_at&&enrollment.expires_at==null))throw new AppError(409,'ALREADY_ENROLLED','Bạn đã có quyền học khóa này.');
   const [pending]=await run("SELECT o.id FROM course_orders o JOIN course_momo_payments p ON p.order_id=o.id WHERE o.student_id=? AND o.course_id=? AND o.status='pending' ORDER BY o.created_at DESC LIMIT 1",[student,course_id]);
   if(pending)return pending.id;
   const orderId=randomUUID();
@@ -66,14 +67,12 @@ async function settle(orderId,amount,transactionId){
   // undoing that account's state. Entitlement checks still enforce account locks.
   if(!profile||profile.deleted_at)return;
   const previous=await paidEnrollment(run,order.student_id,order.course_id,true);
-  const permanent=active(previous)&&previous.expires_at==null;
-  const starts=active(previous)?previous.starts_at:new Date();
-  const base=active(previous)&&previous.expires_at?Math.max(Date.now(),new Date(previous.expires_at).getTime()):Date.now();
-  const expires=permanent||order.duration_days==null?null:new Date(base+Number(order.duration_days)*86400000);
+  const [gift]=await run('SELECT * FROM course_free_grants WHERE student_id=? AND course_id=? FOR UPDATE',[order.student_id,order.course_id]);
+  const period=continuedPaidPeriod(previous,gift,order.duration_days);
   await run(dialectSql(
    "INSERT INTO course_enrollments(student_id,course_id,source,starts_at,expires_at) VALUES (?,?,'order',?,?) ON DUPLICATE KEY UPDATE source='order',starts_at=VALUES(starts_at),expires_at=VALUES(expires_at),revoked_at=NULL",
    "INSERT INTO course_enrollments(student_id,course_id,source,starts_at,expires_at) VALUES (?,?,'order',?,?) ON CONFLICT(student_id,course_id) DO UPDATE SET source='order',starts_at=EXCLUDED.starts_at,expires_at=EXCLUDED.expires_at,revoked_at=NULL"
-  ),[order.student_id,order.course_id,starts,expires]);
+  ),[order.student_id,order.course_id,period.starts_at,period.expires_at]);
   await run(dialectSql(
    "INSERT INTO course_paid_access(student_id,course_id,origin,order_id) VALUES (?,?,'momo',?) ON DUPLICATE KEY UPDATE origin='momo',order_id=VALUES(order_id)",
    "INSERT INTO course_paid_access(student_id,course_id,origin,order_id) VALUES (?,?,'momo',?) ON CONFLICT(student_id,course_id) DO UPDATE SET origin='momo',order_id=EXCLUDED.order_id"

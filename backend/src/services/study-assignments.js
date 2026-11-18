@@ -8,6 +8,18 @@ import {writeAdminAudit} from './admin-audit.js';
 import {requireCourse} from './course-service.js';
 import {txRun,sourceItems,insertLearningRun,runLink,json} from './student-experience.js';
 import {awardLearningReward} from './learning-reward.js';
+import {courseAccessCondition} from './course-access-policy.js';
+
+async function eligibleAssignmentStudents(actor,courseId){
+ return query(`SELECT p.id,p.username,p.display_name FROM profiles p JOIN courses c ON c.id=?
+ LEFT JOIN course_enrollments e ON e.student_id=p.id AND e.course_id=c.id
+ LEFT JOIN course_paid_access a ON a.student_id=p.id AND a.course_id=c.id
+ LEFT JOIN course_free_grants g ON g.student_id=p.id AND g.course_id=c.id
+ LEFT JOIN course_registration_free r ON r.student_id=p.id AND r.course_id=c.id
+ WHERE p.role='student' AND COALESCE(p.account_kind,'student')='student' AND p.deleted_at IS NULL
+ AND (p.banned_until IS NULL OR p.banned_until<=CURRENT_TIMESTAMP(3))
+ AND ${courseAccessCondition} AND ${studentVisibleCondition(actor,'p')} ORDER BY p.username`,[courseId]);
+}
 
 async function staffCourse(actor,courseId){
  const scope=adminScopeOf(actor),[course]=await query('SELECT * FROM courses WHERE id=?',[courseId]);if(!scope)throw forbidden();if(!course)throw notFound();if(scope!=='super'&&scope!==course.kind)throw forbidden('Khóa học không thuộc phạm vi quản lý.');return course;
@@ -21,10 +33,10 @@ export async function staffAssignmentCourses(actor){
 export async function assignmentChoices(actor,courseId){
  const course=await staffCourse(actor,courseId);
  const items=course.kind==='chinese'?await query("SELECT s.id,s.title AS name FROM chinese_sets s JOIN chinese_lessons l ON l.id=s.lesson_id WHERE l.level_id=? AND s.status='published' AND l.status='published' ORDER BY l.position,s.position",[course.level]):await query('SELECT id,name FROM topics WHERE grade=? ORDER BY subject_id,sort_order',[course.level]);
- const students=await query(`SELECT p.id,p.username,p.display_name FROM profiles p JOIN course_enrollments e ON e.student_id=p.id WHERE p.role='student' AND p.deleted_at IS NULL AND e.course_id=? AND e.revoked_at IS NULL AND e.starts_at<=CURRENT_TIMESTAMP(3) AND (e.expires_at IS NULL OR e.expires_at>CURRENT_TIMESTAMP(3)) AND ${studentVisibleCondition(actor,'p')} ORDER BY p.username LIMIT 500`,[courseId]);return {items,students};
+ const students=await eligibleAssignmentStudents(actor,courseId);return {items,students};
 }
 export async function studentExperienceMetrics(actor,courseId){
- await staffCourse(actor,courseId);const students=await query(`SELECT p.id FROM profiles p JOIN course_enrollments e ON e.student_id=p.id WHERE p.role='student' AND p.account_kind='student' AND p.deleted_at IS NULL AND e.course_id=? AND e.revoked_at IS NULL AND e.starts_at<=CURRENT_TIMESTAMP(3) AND (e.expires_at IS NULL OR e.expires_at>CURRENT_TIMESTAMP(3)) AND ${studentVisibleCondition(actor,'p')}`,[courseId]);
+ await staffCourse(actor,courseId);const students=await eligibleAssignmentStudents(actor,courseId);
  if(!students.length)return {enrolled:0,activated:0,weeklyActive:0,returning:0,repaired:0};
  const allowed=new Set(students.map(s=>s.id)),since=new Date(Date.now()-7*86400000),runs=await query('SELECT profile_id,created_at,status FROM learning_runs WHERE course_id=?',[courseId]),events=await query('SELECT profile_id,details_json FROM learning_events WHERE course_id=? AND created_at>=?',[courseId,since]);
  const visible=runs.filter(r=>allowed.has(r.profile_id)),active=new Set(visible.filter(r=>new Date(r.created_at)>=since).map(r=>r.profile_id)),previous=new Set(visible.filter(r=>new Date(r.created_at)<since).map(r=>r.profile_id));

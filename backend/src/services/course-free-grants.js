@@ -3,7 +3,7 @@ import {z} from 'zod';
 import {query,withTransaction,dialectSql} from '../config/db.js';
 import {AppError} from '../utils/errors.js';
 
-export const activeFreeGrant=`g.revoked_at IS NULL AND g.starts_at<=CURRENT_TIMESTAMP(3) AND g.ends_at>CURRENT_TIMESTAMP(3)`;
+export {activeFreeGrant} from './course-access-policy.js';
 export async function freeGrantOptions(){
  const [students,courses]=await Promise.all([
   query("SELECT username,display_name,created_at FROM profiles WHERE role='student' AND COALESCE(account_kind,'student')='student' AND deleted_at IS NULL ORDER BY display_name,username LIMIT 1000"),

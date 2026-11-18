@@ -1,3 +1,4 @@
+import {mountChineseDictionary} from './chinese-dictionary.js';
 export function configureChinesePage(profile,params){
  const title=document.querySelector('.chinese-pagebar h1');
  if(title)title.textContent=profile.course.title||'Tiếng Trung HSK '+profile.course.level;
@@ -8,4 +9,5 @@ export function configureChinesePage(profile,params){
  for(const a of document.querySelectorAll('.student-account-study-tools a')){
   if(new URL(a.href).searchParams.get('view')===params.get('view')&&params.has('view'))a.setAttribute('aria-current','page');
  }
+ mountChineseDictionary(profile);
 }

@@ -57,9 +57,9 @@ export async function renderChineseAiChat(host,{role='student',level=1}={}){
   try{
    if(useMic&&!await audio.open())throw Error('Chưa mở được micro. Bạn thử lại khi trang đang mở nhé.');
    const next=await request('/ai-chat/sessions','POST',{lesson_id:selected.id,request_id:crypto.randomUUID()});if(disposed){audio.pause();return;}
-   conversationEpoch++;session=next;reply=next.reply;pending=null;active=useMic&&!document.hidden;starting=false;renderCall();timer=setInterval(()=>{updateControls();if(session&&Date.now()>=new Date(session.expires_at).getTime())endConversation('Buổi trò chuyện đã hết thời gian. Hẹn bạn lần sau nhé!');},1000);
+   conversationEpoch++;session=next;reply=next.reply;pending=null;active=useMic&&!document.hidden&&!document.querySelector('.chinese-dictionary[open]');starting=false;renderCall();timer=setInterval(()=>{updateControls();if(session&&Date.now()>=new Date(session.expires_at).getTime())endConversation('Buổi trò chuyện đã hết thời gian. Hẹn bạn lần sau nhé!');},1000);
    if(next.status!=='active'){endConversation();return;}
-   if(active)await speakAndListen();else setPhase('paused',useMic?'Micro đã tắt khi bạn rời màn hình. Bấm Tiếp tục để mở lại.':'Bạn nhập chữ bên dưới, hoặc bấm Bật micro để nói chuyện.');
+   if(active)await speakAndListen();else setPhase('paused',useMic?'Micro đang tắt. Bấm Tiếp tục khi sẵn sàng nói chuyện.':'Bạn nhập chữ bên dưới, hoặc bấm Bật micro để nói chuyện.');
   }catch(e){active=false;audio.pause();starting=false;setPhase('setup');renderSetup();tell(e);}finally{starting=false;}
  }
  function renderCall(){
@@ -119,10 +119,11 @@ export async function renderChineseAiChat(host,{role='student',level=1}={}){
   try{await request('/ai-chat/sessions/'+id+'/finish','POST',{});}catch{}
  }
  const hidden=()=>{if(document.hidden&&(session||starting))pause('Micro đã tắt khi bạn rời màn hình. Bấm Tiếp tục để mở lại.');};document.addEventListener('visibilitychange',hidden);
+ const dictionary=()=>{if(session||starting)pause('Đã tạm dừng để tra từ. Bấm Tiếp tục khi sẵn sàng nói chuyện.');};document.addEventListener('ttnava:dictionary-open',dictionary);
  function dispose(){
   disposed=true;active=false;clearInterval(timer);audio.dispose();controller?.abort();pending=null;reply=null;
   if(session){const id=session.id;session=null;fetch('/api/v1/chinese/ai-chat/sessions/'+id+'/finish',{method:'POST',credentials:'same-origin',keepalive:true,headers:{'Content-Type':'application/json','X-Course-Id':'hsk-'+level},body:'{}'}).catch(()=>{});}
-  main.replaceChildren();document.removeEventListener('visibilitychange',hidden);window.removeEventListener('pagehide',dispose);
+  main.replaceChildren();document.removeEventListener('visibilitychange',hidden);document.removeEventListener('ttnava:dictionary-open',dictionary);window.removeEventListener('pagehide',dispose);
  }
  window.addEventListener('pagehide',dispose);window.addEventListener('pageshow',e=>{if(e.persisted)location.reload();});
  main.append(header(),p('Đang mở góc trò chuyện…'));

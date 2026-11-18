@@ -37,6 +37,10 @@ Xem trước bằng `node backend/scripts/supplement-chinese-lessons-1-2.mjs`. C
 
 Kiểm tra: `npm --prefix backend test -- chinese-vocabulary-supplement.test.js --pool=threads` và `npx playwright test --config playwright.applied.config.js chinese-vocabulary-parity.spec.js`.
 
+## Tra từ trong khóa học
+
+Mục **Tra từ** nhỏ nằm giữa tên khóa và **Đổi khóa** trên thanh khóa học; điện thoại nhỏ dùng biểu tượng kính lúp. Khung tra mở tại chỗ, tìm bằng chữ Hán, pinyin có/không dấu, số thanh hoặc nghĩa tiếng Việt không dấu; có phát âm, ví dụ đã soạn, liên kết đến bài học và lưu vào Sổ từ. Dữ liệu lấy từ các mục từ vựng đang hoạt động trong bài/bộ đã xuất bản của khóa đang được mở, gộp từ trùng và giữ các nghĩa/cách đọc khác nhau. Không trả ngân hàng câu hỏi hoặc nội dung nháp. Khi đang trò chuyện AI, mở tra từ sẽ tạm dừng giọng/micro và người học chủ động tiếp tục. Thanh khóa vẫn ẩn trong màn đang làm bài như trước. Đây là tra từ trong khóa, chưa phải từ điển toàn bộ tiếng Trung, OCR hoặc nhận dạng viết tay.
+
 ## Luyện nói bằng ghi âm
 
 Học sinh chọn **Luyện nói** để nghe và trả lời nhiều câu trong một lượt ghi âm. Mặc định 3 câu đầu theo nguồn, thời lượng 90 giây; giáo viên có thể giao 1–20 câu, chọn 30–300 giây và thứ tự nghe. Mỗi câu được nghe tối đa 2 lần. Ưu tiên câu hỏi Word đã xuất bản, dự phòng hoạt động Hội thoại đã xuất bản của chính bài đó.

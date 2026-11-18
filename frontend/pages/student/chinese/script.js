@@ -22,7 +22,7 @@ const quiz=async(id,review=false)=>chooseQuiz(id,async body=>{const a=await requ
 async function boot(){
  if(params.get('view')==='practice'){params.delete('view');window.history.replaceState(null,'',location.pathname+(params.size?'?'+params:''));}
  const aiChat=params.get('view')==='ai-chat',street=params.get('view')==='street';
- document.body.classList.toggle('is-studying',!aiChat&&!street&&params.has('set'));
+ document.body.classList.toggle('is-studying',!aiChat&&!street&&(params.has('set')||params.has('attempt')));
  document.body.classList.toggle('is-speaking',!aiChat&&!street&&params.get('mode')==='speak');
  const activeView={tests:'exam',notebook:'notebook',history:'history'}[params.get('view')]||'chinese';
  const profile=await initPage('student',activeView);

@@ -37,9 +37,9 @@ export function speakingView(host,{profile,set,count,settings}){
    el('div',{class:'speaking-controls'},[microphone,record,stop]),status
   ])
  ]),el('div',{class:'speaking-footer'},[el('span',{text:'Bản ghi chỉ gửi xử lý khi bạn bấm chấm AI.'}),el('span',{text:profile.displayName||profile.display_name||profile.username||'Học sinh'})]),result);
- host.append(shell);
  const grid=shell.querySelector('.speaking-grid'),workspace=shell.querySelector('.speaking-listen'),recorder=shell.querySelector('.speaking-recorder'),panda=shell.querySelector('.speaking-panda'),mobile=matchMedia('(max-width:680px)');
  const layout=()=>{if(mobile.matches){questions.before(recorder);recorder.firstElementChild.prepend(panda);}else{grid.append(recorder);workspace.querySelector('.speaking-badge').before(panda);}};
  layout();mobile.addEventListener('change',layout);
+ host.append(shell);
  return {shell,workspace,counter,heading,state,clock,status,microphone,record,stop,retake,questionButtons,listenCount,level,progress,result,resultAudio,download,resultInfo,resultQuestion,timeline,disposeLayout:()=>mobile.removeEventListener('change',layout)};
 }

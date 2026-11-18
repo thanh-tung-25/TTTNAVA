@@ -2,6 +2,9 @@
 @import url('/assets/css/chinese.css');
 
 .page{max-width:940px}
+/* Reserve the authenticated header's height while account data is loading. */
+body.student-unified #app-header:empty{min-height:80px}
+@media(max-width:760px){body.student-unified #app-header:empty{min-height:72px}}
 .learn-intro{font-size:1.1rem;color:#4d6477;margin:1rem 0}
 .learn-actions,.card-controls{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin:1rem 0}
 .learn-document{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0;border-top:1px solid #dce7ef}

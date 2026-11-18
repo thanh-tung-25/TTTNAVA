@@ -61,15 +61,8 @@ function renderOrders(){
  document.querySelector('#admin-course-orders').replaceChildren(...rows.map(o=>{
   const box=el('article',{class:'admin-order'},[el('strong',{text:o.title+' · '+money(o.amount_vnd)}),p(o.display_name+' (@'+o.username+') · '+labels[o.status]),p((o.momo_state?'MoMo':'Đăng ký chuyển khoản cũ')+' · '+formatDate(o.created_at)),el('details',{class:'admin-extra'},[el('summary',{text:'Chi tiết giao dịch'}),p('Mã đơn: '+o.id),p('Mã giao dịch: '+(o.transaction_id||o.payment_reference)),p(o.review_note||'Chưa có xác nhận thanh toán')])]);
   if(o.status==='pending'&&o.momo_state)box.append(button('Kiểm tra với MoMo',async event=>{const b=event.currentTarget;b.disabled=true;try{const {data}=await api('/api/v1/courses/admin/orders/'+o.id+'/check',{method:'POST'});notice.textContent=data.status==='approved'?'Đã nhận thanh toán và mở khóa.':'MoMo chưa xác nhận thanh toán thành công.';await refresh();}catch(e){notice.textContent=e.message;}finally{b.disabled=false;}},true));
-  if(o.status==='pending'&&!o.momo_state){
-   const note=el('textarea',{maxlength:1000,placeholder:'Ghi chú đối soát hoặc lý do từ chối','aria-label':'Ghi chú đơn '+o.id});
-   const legacy=el('details',{class:'admin-extra'},[el('summary',{text:'Xử lý đăng ký chuyển khoản từ trước'}),p('Chỉ dùng để xử lý yêu cầu cũ đã gửi trước khi chuyển sang MoMo.'),note]);
-   for(const [decision,label]of [['approved','Xác nhận khoản chuyển cũ'],['rejected','Từ chối']])legacy.append(button(label,async()=>{
-    if(decision==='rejected'&&!note.value.trim()){note.focus();return;}
-    if(!confirm('Xác nhận '+label.toLowerCase()+' của '+o.username+'?'))return;
-    try{await api('/api/v1/courses/admin/orders/'+o.id+'/review',{method:'POST',body:{decision,note:note.value.trim()||'Đã đối soát khoản chuyển trước khi dùng MoMo.'}});await refresh();}catch(e){notice.textContent=e.message;}
-   },true));box.append(legacy);
-  }return box;
+  if(!o.momo_state)box.append(p('Bản ghi thanh toán cũ được giữ để xem lịch sử. Luồng chuyển khoản và duyệt tay đã ngừng sử dụng.'));
+  return box;
  }));
  if(!rows.length)document.querySelector('#admin-course-orders').append(p('Chưa có giao dịch phù hợp.'));
 }

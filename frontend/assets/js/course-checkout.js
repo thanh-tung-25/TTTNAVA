@@ -66,8 +66,8 @@ function renderHistory(){
    if(o.pay_url)actions.append(el('a',{class:'btn btn-primary',href:o.pay_url,text:'Tiếp tục MoMo'}));
    else actions.append(button('Tạo lại phiên',()=>showCourse(courses.find(c=>c.id===o.course_id))));
    actions.append(button('Kiểm tra kết quả',()=>{watchPayment(o.id);notice.textContent='Đang kiểm tra thanh toán MoMo…';}));
-  }else if(o.status==='pending')box.querySelector('div').append(p('Đăng ký chuyển khoản cũ đang được quản trị viên xử lý.'));
-  if(o.status==='pending')actions.append(button('Hủy đơn',async event=>{
+  }else if(!o.momo_state)box.querySelector('div').append(p('Bản ghi trước đây được giữ trong lịch sử. Thanh toán mới sử dụng MoMo.'));
+  if(o.status==='pending'&&o.momo_state)actions.append(button('Hủy đơn',async event=>{
    if(!confirm('Hủy đơn này? Nếu đã thanh toán, hãy chọn Kiểm tra kết quả trước.'))return;
    const b=event.currentTarget;b.disabled=true;try{await api('/api/v1/courses/orders/'+o.id+'/cancel',{method:'POST'});if(watchId===o.id)stopWatch();await refresh();}catch(e){notice.textContent=e.message;b.disabled=false;}
   }));return box;

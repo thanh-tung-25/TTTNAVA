@@ -3,16 +3,14 @@ import { z } from 'zod';
 import { authenticateToken, requireStudent, requireAdmin, requireSuperAdmin,requireAdminScope } from '../middlewares/auth.js';
 import { asyncHandler, AppError } from '../utils/errors.js';
 import { query, withTransaction, dialectSql } from '../config/db.js';
-import { listCourses, requireCourse, createOrder, updateCourse, reviewOrder,courseReviewCondition } from '../services/course-service.js';
+import { listCourses, requireCourse, createOrder, updateCourse,courseReviewCondition } from '../services/course-service.js';
 import { rateLimit } from '../middlewares/rate-limit.js';
-import paymentRouter from './course-payment.js';
 import {freeCourseFields,saveFreePeriod} from '../services/course-free-periods.js';
 import {momoStatus,saveMomoSettings} from '../services/momo-settings.js';
 import {ownedMomoOrder,publicMomoOrder,checkMomoOrder} from '../services/course-momo.js';
 const router=Router();router.use(authenticateToken);
 router.use((_req,res,next)=>{res.set('Cache-Control','no-store');next();});
 router.use('/admin',requireAdminScope('chinese'));
-router.use(paymentRouter);
 const handle=fn=>asyncHandler(async(req,res)=>res.json({data:await fn(req)}));
 router.get('/',requireStudent,handle(r=>listCourses(r.user.id)));
 router.get('/payment-status',requireStudent,handle(async()=>({ready:(await momoStatus()).ready})));
@@ -21,7 +19,7 @@ router.post('/orders',requireStudent,rateLimit({windowMs:60000,max:10,keyPrefix:
 router.get('/orders/:id',requireStudent,handle(async r=>publicMomoOrder(await ownedMomoOrder(r.user.id,z.uuid().parse(r.params.id)))));
 router.post('/orders/:id/check',requireStudent,rateLimit({windowMs:60000,max:10,keyPrefix:'momo-check'}),handle(r=>checkMomoOrder(r.user.id,z.uuid().parse(r.params.id))));
 router.post('/orders/:id/cancel',requireStudent,handle(async r=>{
- const result=await query("UPDATE course_orders SET status='cancelled',reviewed_at=CURRENT_TIMESTAMP(3) WHERE id=? AND student_id=? AND status='pending'",[r.params.id,r.user.id]);
+ const result=await query("UPDATE course_orders SET status='cancelled',reviewed_at=CURRENT_TIMESTAMP(3) WHERE id=? AND student_id=? AND status='pending' AND EXISTS(SELECT 1 FROM course_momo_payments m WHERE m.order_id=course_orders.id)",[r.params.id,r.user.id]);
  if(!result.affectedRows)throw new AppError(409,'ORDER_NOT_PENDING','Yêu cầu không còn ở trạng thái chờ.');return {id:r.params.id};
 }));
 router.get('/admin/catalog',requireSuperAdmin,handle(()=>query(`SELECT c.*,${freeCourseFields()} FROM courses c ORDER BY c.kind DESC,c.level`)));
@@ -30,9 +28,8 @@ router.patch('/admin/catalog/:id',requireSuperAdmin,handle(r=>updateCourse(r.par
 router.put('/admin/catalog/:id/free-period',requireSuperAdmin,handle(r=>saveFreePeriod(r.user.id,r.params.id,r.body)));
 router.get('/admin/momo',requireSuperAdmin,handle(()=>momoStatus()));
 router.put('/admin/momo',requireSuperAdmin,handle(r=>saveMomoSettings(r.user.id,r.body)));
+router.get('/admin/pending-count',requireAdmin,handle(async r=>{const [row]=await query(`SELECT COUNT(*) total FROM course_orders o JOIN courses c ON c.id=o.course_id JOIN course_momo_payments m ON m.order_id=o.id WHERE o.status='pending' AND ${courseReviewCondition(r.user)}`);return {total:Number(row.total)};}));
 router.post('/admin/orders/:id/check',requireAdmin,rateLimit({windowMs:60000,max:20,keyPrefix:'admin-momo-check'}),handle(async r=>{const [o]=await query(`SELECT o.student_id FROM course_orders o JOIN courses c ON c.id=o.course_id WHERE o.id=? AND ${courseReviewCondition(r.user)}`,[r.params.id]);if(!o)throw new AppError(404,'ORDER_NOT_FOUND','Không tìm thấy đơn.');return checkMomoOrder(o.student_id,r.params.id);}));
-router.post('/admin/payment-instructions',requireSuperAdmin,handle(async r=>{const text=z.string().trim().min(1).max(5000).parse(r.body.instructions);await query('UPDATE courses SET payment_instructions=?',[text]);return {saved:true};}));
-router.post('/admin/orders/:id/review',requireAdmin,handle(r=>reviewOrder(r.user.id,r.params.id,r.body)));
 router.get('/admin/enrollments',requireAdmin,handle(r=>query(`SELECT e.*,c.title,p.username,p.display_name,a.origin paid_origin,CASE WHEN a.student_id IS NOT NULL OR e.source='order' THEN 'paid' ELSE 'admin_free' END access_category FROM course_enrollments e JOIN profiles p ON p.id=e.student_id JOIN courses c ON c.id=e.course_id LEFT JOIN course_paid_access a ON a.student_id=e.student_id AND a.course_id=e.course_id WHERE ${courseReviewCondition(r.user)} ORDER BY p.display_name,e.starts_at DESC`)));
 router.get('/admin/audit',requireAdmin,handle(r=>query(`SELECT a.*,p.username,c.title,u.username actor FROM course_access_audit a JOIN profiles p ON p.id=a.student_id JOIN courses c ON c.id=a.course_id LEFT JOIN profiles u ON u.id=a.actor_id WHERE ${courseReviewCondition(r.user)} ORDER BY a.id DESC LIMIT 200`)));
 router.post('/admin/access',requireSuperAdmin,handle(async r=>{

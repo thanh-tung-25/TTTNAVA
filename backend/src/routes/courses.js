@@ -9,13 +9,14 @@ import {freeCourseFields,saveFreePeriod} from '../services/course-free-periods.j
 import {momoStatus,saveMomoSettings} from '../services/momo-settings.js';
 import {ownedMomoOrder,publicMomoOrder,checkMomoOrder} from '../services/course-momo.js';
 import {freeGrantOptions,grantFreeCourses,revokeFreeGrant} from '../services/course-free-grants.js';
+import {studentCourseOrders,adminCourseOrders} from '../services/course-order-history.js';
 const router=Router();router.use(authenticateToken);
 router.use((_req,res,next)=>{res.set('Cache-Control','no-store');next();});
 router.use('/admin',requireAdminScope('chinese'));
 const handle=fn=>asyncHandler(async(req,res)=>res.json({data:await fn(req)}));
 router.get('/',requireStudent,handle(r=>listCourses(r.user.id)));
 router.get('/payment-status',requireStudent,handle(async()=>({ready:(await momoStatus()).ready})));
-router.get('/orders',requireStudent,handle(r=>query('SELECT o.*,c.title,p.state momo_state,p.pay_url,p.paid_at FROM course_orders o JOIN courses c ON c.id=o.course_id LEFT JOIN course_momo_payments p ON p.order_id=o.id WHERE o.student_id=? ORDER BY o.created_at DESC LIMIT 200',[r.user.id])));
+router.get('/orders',requireStudent,handle(r=>studentCourseOrders(r.user.id)));
 router.post('/orders',requireStudent,rateLimit({windowMs:60000,max:10,keyPrefix:'course-order'}),handle(r=>createOrder(r.user.id,r.body)));
 router.get('/orders/:id',requireStudent,handle(async r=>publicMomoOrder(await ownedMomoOrder(r.user.id,z.uuid().parse(r.params.id)))));
 router.post('/orders/:id/check',requireStudent,rateLimit({windowMs:60000,max:10,keyPrefix:'momo-check'}),handle(r=>checkMomoOrder(r.user.id,z.uuid().parse(r.params.id))));
@@ -24,7 +25,7 @@ router.post('/orders/:id/cancel',requireStudent,handle(async r=>{
  if(!result.affectedRows)throw new AppError(409,'ORDER_NOT_PENDING','Yêu cầu không còn ở trạng thái chờ.');return {id:r.params.id};
 }));
 router.get('/admin/catalog',requireSuperAdmin,handle(()=>query(`SELECT c.*,${freeCourseFields()} FROM courses c ORDER BY c.kind DESC,c.level`)));
-router.get('/admin/orders',requireAdmin,handle(r=>query(`SELECT o.*,c.title,p.username,p.display_name,a.username reviewer,m.state momo_state,m.transaction_id,m.paid_at FROM course_orders o JOIN courses c ON c.id=o.course_id JOIN profiles p ON p.id=o.student_id LEFT JOIN profiles a ON a.id=o.reviewed_by LEFT JOIN course_momo_payments m ON m.order_id=o.id WHERE ${courseReviewCondition(r.user)} ORDER BY o.status='pending' DESC,o.created_at DESC LIMIT 500`)));
+router.get('/admin/orders',requireAdmin,handle(r=>adminCourseOrders(r.user)));
 router.patch('/admin/catalog/:id',requireSuperAdmin,handle(r=>updateCourse(r.params.id,r.body)));
 router.put('/admin/catalog/:id/free-period',requireSuperAdmin,handle(r=>saveFreePeriod(r.user.id,r.params.id,r.body)));
 router.get('/admin/momo',requireSuperAdmin,handle(()=>momoStatus()));

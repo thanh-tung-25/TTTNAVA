@@ -1,13 +1,13 @@
 import {api,el,formatDate} from './api.js';
 import {initPage,setDiamondProgram} from './ui-core.js';
 import {enterCourse} from './course-context.js';
+import {courseOrderView} from './course-order-view.js';
 
 const grid=document.querySelector('#course-grid'),orders=document.querySelector('#course-orders'),dialog=document.querySelector('#course-dialog'),detail=document.querySelector('#course-detail'),notice=document.querySelector('#course-notice');
 let courses=[],historyRows=[],filter='',momoReady=false,watchId=null,watchTimer,freeTimer,watchBusy=false,lastCheck=0,watchUntil=0;
 const money=value=>value==null?'Đang cập nhật học phí':new Intl.NumberFormat('vi-VN',{style:'currency',currency:'VND'}).format(value);
 const p=(text,className='')=>el('p',{text,class:className});
 const button=(text,fn,primary=false)=>el('button',{type:'button',class:'btn '+(primary?'btn-primary':'btn-ghost'),text,onclick:fn});
-const labels={pending:'Chờ thanh toán',approved:'Đã thanh toán',rejected:'Đã từ chối',cancelled:'Đã hủy'};
 const paidRight=c=>Boolean(c.paid_origin||c.source==='order')&&!c.revoked_at;
 const paidScheduled=c=>paidRight(c)&&new Date(c.starts_at)>new Date()&&(!c.expires_at||new Date(c.expires_at)>new Date());
 function continuousAccessEnd(c){
@@ -84,12 +84,14 @@ function renderHistory(){
  orders.replaceChildren(...paid.map(c=>el('article',{class:'course-order'},[
   el('div',{},[el('strong',{text:c.title}),p(c.paid_origin==='existing'?'Quyền học chuyển tiếp · Giữ nguyên các khóa và thời hạn đang có':'Quyền học đã thanh toán'),...(paidScheduled(c)?[p('Gói mua tiếp bắt đầu '+formatDate(c.starts_at))]:[]),p(c.revoked_at?'Quyền học đã thu hồi':c.expires_at?'Thời hạn đến '+formatDate(c.expires_at):'Không giới hạn thời hạn')]),el('span',{class:'course-status',text:'✓ Đã thanh toán'}),...(c.unlocked?[button('Vào học',()=>enterCourse(c))]:[])
  ])),...historyRows.map(o=>{
-  const actions=el('div',{class:'checkout-actions'}),box=el('article',{class:'course-order'},[el('div',{},[el('strong',{text:o.title}),p(money(o.amount_vnd)+' · '+formatDate(o.created_at)),p('Mã đơn: '+o.id),...(o.review_note?[p(o.review_note)]:[])]),el('span',{class:'course-status',text:labels[o.status]}),actions]);
+  const view=courseOrderView(o);
+  const details=view.free?el('details',{},[el('summary',{text:'Thông tin đăng ký cũ'}),p('Số tiền trên đăng ký cũ: '+money(o.amount_vnd)),p('Trạng thái bản ghi cũ: '+view.originalLabel),p('Mã đơn: '+o.id),...(o.review_note?[p(o.review_note)]:[])]):null;
+  const actions=el('div',{class:'checkout-actions'}),box=el('article',{class:'course-order'},[el('div',{},[el('strong',{text:o.title}),p(money(view.amount)+' · '+formatDate(o.created_at)),...(view.period?[p(view.period)]:[]),...(details?[details]:[p('Mã đơn: '+o.id),...(o.review_note?[p(o.review_note)]:[])])]),el('span',{class:'course-status',text:view.label}),actions]);
   if(o.status==='pending'&&o.momo_state){
    if(o.pay_url)actions.append(el('a',{class:'btn btn-primary',href:o.pay_url,text:'Tiếp tục MoMo'}));
    else actions.append(button('Tạo lại phiên',()=>showCourse(courses.find(c=>c.id===o.course_id))));
    actions.append(button('Kiểm tra kết quả',()=>{watchPayment(o.id);notice.textContent='Đang kiểm tra thanh toán MoMo…';}));
-  }else if(!o.momo_state)box.querySelector('div').append(p('Bản ghi trước đây được giữ trong lịch sử. Thanh toán mới sử dụng MoMo.'));
+  }else if(!o.momo_state&&!view.free)box.querySelector('div').append(p('Bản ghi trước đây được giữ trong lịch sử. Thanh toán mới sử dụng MoMo.'));
   if(o.status==='pending'&&o.momo_state)actions.append(button('Hủy đơn',async event=>{
    if(!confirm('Hủy đơn này? Nếu đã thanh toán, hãy chọn Kiểm tra kết quả trước.'))return;
    const b=event.currentTarget;b.disabled=true;try{await api('/api/v1/courses/orders/'+o.id+'/cancel',{method:'POST'});if(watchId===o.id)stopWatch();await refresh();}catch(e){notice.textContent=e.message;b.disabled=false;}

@@ -3,6 +3,7 @@ import {initPage} from './ui-core.js';
 import './admin-course-tabs.js';
 import {isSuperAdmin} from './admin-permissions.js';
 import {createFreeGrantDialog} from './admin-free-grants.js';
+import {courseOrderView} from './course-order-view.js';
 
 const notice=document.querySelector('#admin-course-notice');
 let courses=[],orders=[],enrollments=[],canConfigure=false,openGrant;
@@ -59,12 +60,12 @@ function renderCatalog(){
 }
 function renderOrders(){
  const filter=document.querySelector('#order-filter').value;
- const rows=orders.filter(o=>filter==='all'||o.status===filter);
- const labels={pending:'Chờ thanh toán',approved:'Đã thanh toán',rejected:'Đã từ chối',cancelled:'Đã hủy'};
+ const rows=orders.filter(o=>filter==='all'||courseOrderView(o).status===filter);
  document.querySelector('#admin-course-orders').replaceChildren(...rows.map(o=>{
-  const box=el('article',{class:'admin-order'},[el('strong',{text:o.title+' · '+money(o.amount_vnd)}),p(o.display_name+' (@'+o.username+') · '+labels[o.status]),p((o.momo_state?'MoMo':'Đăng ký chuyển khoản cũ')+' · '+formatDate(o.created_at)),el('details',{class:'admin-extra'},[el('summary',{text:'Chi tiết giao dịch'}),p('Mã đơn: '+o.id),p('Mã giao dịch: '+(o.transaction_id||o.payment_reference)),p(o.review_note||'Chưa có xác nhận thanh toán')])]);
+  const view=courseOrderView(o);
+  const box=el('article',{class:'admin-order'},[el('strong',{text:o.title+' · '+money(view.amount)}),p(o.display_name+' (@'+o.username+') · '+view.label),p((view.free?'Đăng ký miễn phí':o.momo_state?'MoMo':'Đăng ký chuyển khoản cũ')+' · '+formatDate(o.created_at)),...(view.period?[p(view.period)]:[]),el('details',{class:'admin-extra'},[el('summary',{text:view.free?'Thông tin đăng ký cũ':'Chi tiết giao dịch'}),...(view.free?[p('Số tiền trên đăng ký cũ: '+money(o.amount_vnd)),p('Trạng thái bản ghi cũ: '+view.originalLabel)]:[]),p('Mã đơn: '+o.id),p('Mã giao dịch: '+(o.transaction_id||o.payment_reference)),p(o.review_note||'Chưa có xác nhận thanh toán')])]);
   if(o.status==='pending'&&o.momo_state)box.append(button('Kiểm tra với MoMo',async event=>{const b=event.currentTarget;b.disabled=true;try{const {data}=await api('/api/v1/courses/admin/orders/'+o.id+'/check',{method:'POST'});notice.textContent=data.status==='approved'?'Đã nhận thanh toán và mở khóa.':'MoMo chưa xác nhận thanh toán thành công.';await refresh();}catch(e){notice.textContent=e.message;}finally{b.disabled=false;}},true));
-  if(!o.momo_state)box.append(p('Bản ghi thanh toán cũ được giữ để xem lịch sử. Luồng chuyển khoản và duyệt tay đã ngừng sử dụng.'));
+  if(!o.momo_state&&!view.free)box.append(p('Bản ghi thanh toán cũ được giữ để xem lịch sử. Luồng chuyển khoản và duyệt tay đã ngừng sử dụng.'));
   return box;
  }));
  if(!rows.length)document.querySelector('#admin-course-orders').append(p('Chưa có giao dịch phù hợp.'));

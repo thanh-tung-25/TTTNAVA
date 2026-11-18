@@ -6,6 +6,12 @@ import {momoConfig,momoLive} from './momo-settings.js';
 import {createMomoPayment,queryMomoPayment,verifyMomoSignature} from './momo-provider.js';
 
 const active=e=>e&&!e.revoked_at&&new Date(e.starts_at)<=new Date()&&(!e.expires_at||new Date(e.expires_at)>new Date());
+async function paidEnrollment(run,student,course,lock=false){
+ const [row]=await run('SELECT * FROM course_enrollments WHERE student_id=? AND course_id=?'+(lock?' FOR UPDATE':''),[student,course]);
+ if(!row)return null;
+ const [registration]=await run('SELECT r.student_id,a.origin FROM course_registration_free r LEFT JOIN course_paid_access a ON a.student_id=r.student_id AND a.course_id=r.course_id WHERE r.student_id=? AND r.course_id=?',[student,course]);
+ return registration&&registration.origin!=='momo'?null:row;
+}
 const orderQuery=`SELECT o.id,o.student_id,o.course_id,o.amount_vnd,o.duration_days,o.status,o.created_at,c.title,p.settings_id,p.request_id,p.state,p.pay_url,p.transaction_id,p.last_checked_at,p.paid_at FROM course_orders o JOIN course_momo_payments p ON p.order_id=o.id JOIN courses c ON c.id=o.course_id`;
 export async function ownedMomoOrder(student,id){const [row]=await query(orderQuery+' WHERE o.id=? AND o.student_id=?',[id,student]);if(!row)throw new AppError(404,'ORDER_NOT_FOUND','Không tìm thấy giao dịch MoMo.');return row;}
 export function publicMomoOrder(order){const {settings_id,request_id,last_checked_at,student_id,...safe}=order;return safe;}
@@ -18,7 +24,7 @@ export async function checkoutMomo(student,body){
   const [course]=await run('SELECT * FROM courses WHERE id=? AND active=1 FOR UPDATE',[course_id]);
   if(!course)throw new AppError(404,'COURSE_NOT_FOUND','Khóa học chưa mở đăng ký.');
   if(course.price_vnd==null||Number(course.price_vnd)<1000||Number(course.price_vnd)>50000000)throw new AppError(409,'COURSE_PRICE_INVALID','Khóa học đang chờ cấu hình học phí phù hợp cho MoMo (1.000–50.000.000đ).');
-  const [enrollment]=await run('SELECT * FROM course_enrollments WHERE student_id=? AND course_id=?',[student,course_id]);
+  const enrollment=await paidEnrollment(run,student,course_id);
   if(active(enrollment))throw new AppError(409,'ALREADY_ENROLLED','Bạn đã có quyền học khóa này.');
   const [pending]=await run("SELECT o.id FROM course_orders o JOIN course_momo_payments p ON p.order_id=o.id WHERE o.student_id=? AND o.course_id=? AND o.status='pending' ORDER BY o.created_at DESC LIMIT 1",[student,course_id]);
   if(pending)return pending.id;
@@ -59,7 +65,7 @@ async function settle(orderId,amount,transactionId){
   // Keep the receipt even for a subsequently deleted/locked account, without
   // undoing that account's state. Entitlement checks still enforce account locks.
   if(!profile||profile.deleted_at)return;
-  const [previous]=await run('SELECT * FROM course_enrollments WHERE student_id=? AND course_id=? FOR UPDATE',[order.student_id,order.course_id]);
+  const previous=await paidEnrollment(run,order.student_id,order.course_id,true);
   const permanent=active(previous)&&previous.expires_at==null;
   const starts=active(previous)?previous.starts_at:new Date();
   const base=active(previous)&&previous.expires_at?Math.max(Date.now(),new Date(previous.expires_at).getTime()):Date.now();

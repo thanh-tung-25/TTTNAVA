@@ -8,6 +8,7 @@ import { rateLimit } from '../middlewares/rate-limit.js';
 import {freeCourseFields,saveFreePeriod} from '../services/course-free-periods.js';
 import {momoStatus,saveMomoSettings} from '../services/momo-settings.js';
 import {ownedMomoOrder,publicMomoOrder,checkMomoOrder} from '../services/course-momo.js';
+import {freeGrantOptions,grantFreeCourses,revokeFreeGrant} from '../services/course-free-grants.js';
 const router=Router();router.use(authenticateToken);
 router.use((_req,res,next)=>{res.set('Cache-Control','no-store');next();});
 router.use('/admin',requireAdminScope('chinese'));
@@ -28,22 +29,26 @@ router.patch('/admin/catalog/:id',requireSuperAdmin,handle(r=>updateCourse(r.par
 router.put('/admin/catalog/:id/free-period',requireSuperAdmin,handle(r=>saveFreePeriod(r.user.id,r.params.id,r.body)));
 router.get('/admin/momo',requireSuperAdmin,handle(()=>momoStatus()));
 router.put('/admin/momo',requireSuperAdmin,handle(r=>saveMomoSettings(r.user.id,r.body)));
+router.get('/admin/free-grant-options',requireSuperAdmin,handle(()=>freeGrantOptions()));
+router.post('/admin/free-grants',requireSuperAdmin,handle(r=>grantFreeCourses(r.user.id,r.body)));
+router.post('/admin/free-grants/:id/revoke',requireSuperAdmin,handle(r=>revokeFreeGrant(r.user.id,z.uuid().parse(r.params.id))));
 router.get('/admin/pending-count',requireAdmin,handle(async r=>{const [row]=await query(`SELECT COUNT(*) total FROM course_orders o JOIN courses c ON c.id=o.course_id JOIN course_momo_payments m ON m.order_id=o.id WHERE o.status='pending' AND ${courseReviewCondition(r.user)}`);return {total:Number(row.total)};}));
 router.post('/admin/orders/:id/check',requireAdmin,rateLimit({windowMs:60000,max:20,keyPrefix:'admin-momo-check'}),handle(async r=>{const [o]=await query(`SELECT o.student_id FROM course_orders o JOIN courses c ON c.id=o.course_id WHERE o.id=? AND ${courseReviewCondition(r.user)}`,[r.params.id]);if(!o)throw new AppError(404,'ORDER_NOT_FOUND','Không tìm thấy đơn.');return checkMomoOrder(o.student_id,r.params.id);}));
-router.get('/admin/enrollments',requireAdmin,handle(r=>query(`SELECT e.*,c.title,p.username,p.display_name,a.origin paid_origin,CASE WHEN a.student_id IS NOT NULL OR e.source='order' THEN 'paid' ELSE 'admin_free' END access_category FROM course_enrollments e JOIN profiles p ON p.id=e.student_id JOIN courses c ON c.id=e.course_id LEFT JOIN course_paid_access a ON a.student_id=e.student_id AND a.course_id=e.course_id WHERE ${courseReviewCondition(r.user)} ORDER BY p.display_name,e.starts_at DESC`)));
+router.get('/admin/enrollments',requireAdmin,handle(async r=>{
+ const [enrollments,grants]=await Promise.all([
+  query(`SELECT e.*,c.title,p.username,p.display_name,a.origin paid_origin,CASE WHEN a.student_id IS NOT NULL OR e.source='order' THEN 'paid' ELSE 'admin_free' END access_category FROM course_enrollments e JOIN profiles p ON p.id=e.student_id JOIN courses c ON c.id=e.course_id LEFT JOIN course_paid_access a ON a.student_id=e.student_id AND a.course_id=e.course_id LEFT JOIN course_registration_free rf ON rf.student_id=e.student_id AND rf.course_id=e.course_id WHERE p.role='student' AND COALESCE(p.account_kind,'student')='student' AND p.deleted_at IS NULL AND ${courseReviewCondition(r.user)} AND (rf.student_id IS NULL OR a.origin='momo') ORDER BY p.display_name,e.starts_at DESC`),
+  query(`SELECT g.id grant_id,g.student_id,g.course_id,g.starts_at,g.ends_at expires_at,g.revoked_at,g.note,c.title,p.username,p.display_name,u.username granted_by_name,'admin_free' access_category FROM course_free_grants g JOIN profiles p ON p.id=g.student_id JOIN courses c ON c.id=g.course_id LEFT JOIN profiles u ON u.id=g.granted_by WHERE p.role='student' AND COALESCE(p.account_kind,'student')='student' AND p.deleted_at IS NULL AND ${courseReviewCondition(r.user)} ORDER BY p.display_name,g.starts_at DESC`)
+ ]);return [...enrollments,...grants];
+}));
 router.get('/admin/audit',requireAdmin,handle(r=>query(`SELECT a.*,p.username,c.title,u.username actor FROM course_access_audit a JOIN profiles p ON p.id=a.student_id JOIN courses c ON c.id=a.course_id LEFT JOIN profiles u ON u.id=a.actor_id WHERE ${courseReviewCondition(r.user)} ORDER BY a.id DESC LIMIT 200`)));
 router.post('/admin/access',requireSuperAdmin,handle(async r=>{
- const d=z.object({username:z.string().trim().min(3).max(20),course_id:z.string().max(32),action:z.enum(['grant','revoke']),duration_days:z.number().int().min(1).max(3650).nullable().default(null),note:z.string().trim().min(1).max(1000)}).parse(r.body);
+ const d=z.object({username:z.string().trim().min(3).max(20),course_id:z.string().max(32),action:z.literal('revoke'),note:z.string().trim().min(1).max(1000)}).strict().parse(r.body);
  return withTransaction(async c=>{
   const [students]=await c.query(dialectSql("SELECT id FROM profiles WHERE username=? AND role='student' FOR UPDATE", "SELECT id FROM profiles WHERE lower(username)=lower(?) AND role='student' FOR UPDATE"),[d.username]);
   d.student_id=students[0]?.id;
   const [courses]=await c.query('SELECT id FROM courses WHERE id=?',[d.course_id]);
   if(!students[0]||!courses[0])throw new AppError(404,'NOT_FOUND','Không tìm thấy học sinh hoặc khóa học.');
-  if(d.action==='grant')await c.query(dialectSql(
-   `INSERT INTO course_enrollments(student_id,course_id,source,granted_by,expires_at) VALUES (?,?,'admin',?,?) ON DUPLICATE KEY UPDATE source='admin',granted_by=VALUES(granted_by),starts_at=CURRENT_TIMESTAMP(3),expires_at=VALUES(expires_at),revoked_at=NULL`,
-   `INSERT INTO course_enrollments(student_id,course_id,source,granted_by,expires_at) VALUES (?,?,'admin',?,?) ON CONFLICT(student_id,course_id) DO UPDATE SET source='admin',granted_by=EXCLUDED.granted_by,starts_at=CURRENT_TIMESTAMP(3),expires_at=EXCLUDED.expires_at,revoked_at=NULL`,
-  ),[d.student_id,d.course_id,r.user.id,d.duration_days?new Date(Date.now()+d.duration_days*86400000):null]);
-  else await c.query('UPDATE course_enrollments SET revoked_at=CURRENT_TIMESTAMP(3) WHERE student_id=? AND course_id=?',[d.student_id,d.course_id]);
+  await c.query('UPDATE course_enrollments SET revoked_at=CURRENT_TIMESTAMP(3) WHERE student_id=? AND course_id=?',[d.student_id,d.course_id]);
   await c.query('INSERT INTO course_access_audit(student_id,course_id,actor_id,action,note) VALUES (?,?,?,?,?)',[d.student_id,d.course_id,r.user.id,d.action,d.note]);return {saved:true};
  });
 }));

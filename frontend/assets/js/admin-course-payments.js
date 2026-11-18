@@ -2,9 +2,10 @@ import {api,el,formatDate} from './api.js';
 import {initPage} from './ui-core.js';
 import './admin-course-tabs.js';
 import {isSuperAdmin} from './admin-permissions.js';
+import {createFreeGrantDialog} from './admin-free-grants.js';
 
 const notice=document.querySelector('#admin-course-notice');
-let courses=[],orders=[],enrollments=[],canConfigure=false;
+let courses=[],orders=[],enrollments=[],canConfigure=false,openGrant;
 const money=n=>n==null?'Chưa đặt giá':new Intl.NumberFormat('vi-VN',{style:'currency',currency:'VND'}).format(n);
 const p=text=>el('p',{text});
 const button=(text,onclick,ghost=false)=>el('button',{type:'button',class:'btn '+(ghost?'btn-ghost':''),text,onclick});
@@ -18,16 +19,18 @@ function renderAccess(){
  const rows=enrollments.filter(e=>(filter==='all'||e.access_category===filter)&&(!term||[e.username,e.display_name,e.title].join(' ').toLocaleLowerCase('vi').includes(term)));
  const host=document.querySelector('#admin-enrollments'),opened=new Set([...host.querySelectorAll('details[open]')].map(d=>d.dataset.learner));
  const groups=new Map();for(const row of rows){if(!groups.has(row.student_id))groups.set(row.student_id,[]);groups.get(row.student_id).push(row);}
- document.querySelector('#paid-count').textContent=enrollments.filter(e=>e.access_category==='paid').length+' quyền học đã thanh toán / chuyển tiếp';
+ document.querySelector('#access-heading').textContent=filter==='admin_free'?'Được cấp miễn phí':filter==='paid'?'Đã thanh toán':'Tất cả quyền học';
+ document.querySelector('#paid-count').textContent=new Set(rows.map(e=>e.student_id)).size+' học sinh · '+rows.length+' quyền học';
  host.replaceChildren(...[...groups.values()].map(items=>{
   const first=items[0],group=el('details',{class:'learner-enrollments','data-learner':first.student_id,...(opened.has(first.student_id)?{open:''}:{})},[el('summary',{},[el('span',{class:'learner-name',text:first.display_name+' (@'+first.username+')'}),el('span',{class:'learner-course-count',text:items.length+' khóa'})])]);
   for(const e of items){
-   const origin=e.paid_origin==='existing'?'Đã thanh toán · Quyền học chuyển tiếp':e.access_category==='paid'?'Đã thanh toán'+(e.paid_origin==='momo'?' · MoMo':''):'Admin cấp miễn phí';
-   const row=el('div',{class:'course-admin-enrollment'},[el('div',{},[el('strong',{text:e.title}),p(origin),p(accessState(e)+' · '+(e.expires_at?'Đến '+formatDate(e.expires_at):'Không giới hạn thời hạn'))])]);
+   const origin=e.paid_origin==='existing'?'Đã thanh toán · Quyền học chuyển tiếp':e.access_category==='paid'?'Đã thanh toán'+(e.paid_origin==='momo'?' · MoMo':''):'Được cấp miễn phí'+(e.granted_by_name?' · '+e.granted_by_name:'');
+   const row=el('div',{class:'course-admin-enrollment'},[el('div',{},[el('strong',{text:e.title}),p(origin),p(accessState(e)+' · '+(e.expires_at?'Đến '+formatDate(e.expires_at):'Không giới hạn thời hạn')),...(e.grant_id?[p('Bắt đầu '+formatDate(e.starts_at)),...(e.note?[p(e.note)]:[])]:[])])]);
+   if(canConfigure&&e.grant_id)row.append(button('Gia hạn',()=>openGrant({username:e.username,course_id:e.course_id,expires_at:e.expires_at}),true));
    if(canConfigure&&!e.revoked_at)row.append(button('Thu hồi',async event=>{
-    if(!confirm('Thu hồi quyền học '+e.title+' của '+e.username+'? Dữ liệu học tập vẫn được giữ.'))return;
+    if(!confirm('Thu hồi '+(e.grant_id?'quyền miễn phí':'quyền học')+' '+e.title+' của '+e.username+'? Dữ liệu học tập vẫn được giữ.'))return;
     const b=event.currentTarget;b.disabled=true;
-    try{await api('/api/v1/courses/admin/access',{method:'POST',body:{username:e.username,course_id:e.course_id,action:'revoke',note:'Admin thu hồi quyền học từ danh sách.'}});notice.textContent='Đã thu hồi quyền học.';await refresh();}catch(error){notice.textContent=error.message;b.disabled=false;}
+    try{await api(e.grant_id?'/api/v1/courses/admin/free-grants/'+e.grant_id+'/revoke':'/api/v1/courses/admin/access',{method:'POST',...(e.grant_id?{}:{body:{username:e.username,course_id:e.course_id,action:'revoke',note:'Admin thu hồi quyền học từ danh sách.'}})});notice.textContent=e.grant_id?'Đã thu hồi quyền miễn phí. Quyền đã thanh toán vẫn giữ nguyên.':'Đã thu hồi quyền học.';await refresh();}catch(error){notice.textContent=error.message;b.disabled=false;}
    },true));
    group.append(row);
   }return group;
@@ -37,7 +40,7 @@ function renderAccess(){
 function renderCatalog(){
  const host=document.querySelector('#admin-course-catalog'),opened=new Set([...host.querySelectorAll('details[open]')].map(d=>d.dataset.course));
  host.replaceChildren(...courses.map(c=>{
-  const status=c.free_now?'Đang miễn phí đến '+formatDate(c.free_ends_at):c.free_starts_at?'Miễn phí từ '+formatDate(c.free_starts_at):'Đang bán qua MoMo';
+  const status=c.free_now?'Nhận đăng ký miễn phí đến '+formatDate(c.free_ends_at):c.free_starts_at?'Mở đăng ký miễn phí từ '+formatDate(c.free_starts_at):'Đang bán qua MoMo';
   const paid=el('form',{class:'course-form'},[
    el('h3',{text:'1. Thanh toán MoMo'}),input('Tên khóa học','title',c.title,'text',{required:'',maxlength:120}),
    el('label',{},[el('span',{text:'Giới thiệu'}),el('textarea',{name:'description',maxlength:5000},[c.description])]),
@@ -46,8 +49,8 @@ function renderCatalog(){
   ]);
   formAction(paid,d=>api('/api/v1/courses/admin/catalog/'+c.id,{method:'PATCH',body:{title:d.title,description:d.description,price_vnd:d.price_vnd===''?null:Number(d.price_vnd),duration_days:d.duration_days===''?null:Number(d.duration_days),active:d.active==='on'}}));
   const free=el('form',{class:'course-form free-period-form'},[
-   el('h3',{text:'2. Đợt học miễn phí'}),p('Mọi học sinh có tài khoản được học trong thời gian này. Quyền đã thanh toán vẫn giữ nguyên.'),
-   el('label',{class:'course-check'},[el('input',{type:'checkbox',name:'enabled',...(c.free_starts_at?{checked:''}:{})}),el('span',{text:'Mở đợt học miễn phí'})]),
+   el('h3',{text:'2. Đợt đăng ký miễn phí'}),p('Học sinh đăng ký tài khoản trong đợt được học miễn phí 1 năm từ ngày đăng ký. Kết thúc đợt chỉ dừng nhận người mới, không cắt thời hạn đã cấp.'),
+   el('label',{class:'course-check'},[el('input',{type:'checkbox',name:'enabled',...(c.free_starts_at?{checked:''}:{})}),el('span',{text:'Mở đợt đăng ký miễn phí'})]),
    el('div',{class:'course-form-pair'},[input('Bắt đầu','starts_at',localDate(c.free_starts_at||Date.now()),'datetime-local'),input('Kết thúc','ends_at',localDate(c.free_ends_at||Date.now()+7*86400000),'datetime-local')]),submit('Lưu đợt miễn phí')
   ]);
   formAction(free,d=>api('/api/v1/courses/admin/catalog/'+c.id+'/free-period',{method:'PUT',body:d.enabled==='on'?{enabled:true,starts_at:new Date(d.starts_at).toISOString(),ends_at:new Date(d.ends_at).toISOString()}:{enabled:false}}));
@@ -90,4 +93,14 @@ function renderMomo(c){
 }
 document.querySelector('#access-search').oninput=renderAccess;document.querySelector('#access-filter').onchange=renderAccess;document.querySelector('#order-filter').onchange=renderOrders;
 document.querySelector('#admin-refresh').onclick=()=>refresh().catch(e=>notice.textContent=e.message);
-initPage('admin','courses').then(async profile=>{canConfigure=isSuperAdmin(profile);for(const tab of document.querySelectorAll('[data-config-only]'))tab.hidden=!canConfigure;await refresh();}).catch(e=>notice.textContent=e.message);
+initPage('admin','courses').then(async profile=>{
+ canConfigure=isSuperAdmin(profile);for(const tab of document.querySelectorAll('[data-config-only]'))tab.hidden=!canConfigure;
+ if(canConfigure){
+  openGrant=createFreeGrantDialog(async result=>{
+   document.querySelector('#access-filter').value=result.granted.length?'admin_free':'paid';document.querySelector('#tab-access').click();
+   try{await refresh();notice.textContent=(result.granted.length?'Đã cấp miễn phí '+result.granted.length+' khóa. Học sinh đã có trong danh sách Được cấp miễn phí.':'')+(result.skipped.length?' Các khóa đã có quyền trả phí đủ thời hạn được giữ nguyên: '+result.skipped.join(', ')+'.':'');}catch(e){notice.textContent='Đã lưu quyền miễn phí. '+e.message;}
+  });
+  document.querySelector('#grant-free-open').onclick=()=>openGrant();
+ }
+ await refresh();
+}).catch(e=>notice.textContent=e.message);

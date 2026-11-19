@@ -43,5 +43,6 @@ export function studentProgramCondition(alias, scope) {
   const managedChinese = scope === 'chinese' ? `${alias}.registration_source='self' OR COALESCE(${alias}.student_management_scope,${alias}.student_creator_scope)='chinese' OR ` : '';
   return `(${managedChinese}EXISTS(SELECT 1 FROM course_enrollments pe JOIN courses pc ON pc.id=pe.course_id WHERE pe.student_id=${alias}.id AND pc.kind='${scope}')
     OR EXISTS(SELECT 1 FROM course_orders po JOIN courses pc ON pc.id=po.course_id WHERE po.student_id=${alias}.id AND pc.kind='${scope}')
+    OR EXISTS(SELECT 1 FROM course_free_grants pg JOIN courses pc ON pc.id=pg.course_id WHERE pg.student_id=${alias}.id AND pc.kind='${scope}')
     OR (NOT EXISTS(SELECT 1 FROM course_enrollments pe WHERE pe.student_id=${alias}.id) AND NOT EXISTS(SELECT 1 FROM course_orders po WHERE po.student_id=${alias}.id) AND ${legacy}))`;
 }

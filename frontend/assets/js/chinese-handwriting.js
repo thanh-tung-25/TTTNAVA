@@ -2,7 +2,7 @@ import {el} from './api.js';
 
 // The canvas collects pen strokes only in memory. No upload or analytics calls.
 export function createChineseHandwriting(onSelect,onClear=()=>{},{characters=()=>[]}={}){
- let strokes=[],current=null,pointer=null,worker=null,loaded=false,timer,timeout,version=0,paused=false,near=false;
+ let strokes=[],current=null,pointer=null,worker=null,loaded=false,timer,timeout,loadTimeout,version=0,paused=false,near=false,busyId=null,queued=null;
  const node=el('section',{class:'dictionary-handwriting','aria-label':'Viết tay để tra chữ'});
  const canvas=el('canvas',{class:'handwriting-canvas',width:768,height:768,tabindex:0,'aria-label':'Ô viết một chữ Hán bằng ngón tay, bút hoặc chuột'}),ctx=canvas.getContext('2d');
  const status=el('p',{class:'handwriting-status',role:'status','aria-live':'polite',text:'Viết một chữ vào ô bên dưới.'});
@@ -10,11 +10,11 @@ export function createChineseHandwriting(onSelect,onClear=()=>{},{characters=()=
  const count=el('span',{class:'handwriting-count',text:'0 nét'});
  const undo=el('button',{type:'button',class:'handwriting-tool',text:'↶ Hoàn tác'});
  const clear=el('button',{type:'button',class:'handwriting-tool',text:'Xóa ô viết'});
- const recognize=el('button',{type:'button',class:'handwriting-recognize',text:'Nhận dạng'});
+ const retry=el('button',{type:'button',class:'handwriting-tool handwriting-retry',text:'Thử lại',hidden:true});
  const another=el('button',{type:'button',class:'handwriting-new',text:'Tra từ khác',onclick:()=>{reset();onClear();canvas.focus({preventScroll:true});}});
- node.append(el('div',{class:'handwriting-heading'},[el('div',{},[el('strong',{text:'Viết 1 chữ bạn nhớ'}),el('p',{text:'Chọn chữ gợi ý, rồi viết tiếp để ghép thành từ.'})]),el('div',{class:'handwriting-heading-actions'},[count,another])]),el('div',{class:'handwriting-pad'},[canvas]),el('div',{class:'handwriting-tools'},[undo,clear,recognize]),status,candidates,el('p',{class:'handwriting-note',text:'Nhận dạng ngay trên thiết bị của bạn.'}));
- function invalidate(){clearTimeout(timer);clearTimeout(timeout);version++;near=false;status.classList.remove('is-selection');candidates.replaceChildren();}
- function controls(){count.textContent=strokes.length+' nét';undo.disabled=clear.disabled=!strokes.length&&!current;recognize.disabled=!strokes.length||Boolean(current);}
+ node.append(el('div',{class:'handwriting-heading'},[el('div',{},[el('strong',{text:'Viết 1 chữ bạn nhớ'}),el('p',{text:'Nhấc bút để xem gợi ý. Chọn chữ rồi viết tiếp để ghép từ.'})]),el('div',{class:'handwriting-heading-actions'},[count,another])]),el('div',{class:'handwriting-pad'},[canvas]),el('div',{class:'handwriting-tools'},[undo,clear,retry]),status,candidates,el('p',{class:'handwriting-note',text:'Tự nhận trên thiết bị sau mỗi lần nhấc bút.'}));
+ function invalidate(){clearTimeout(timer);version++;queued=null;near=false;retry.hidden=true;status.classList.remove('is-selection');candidates.replaceChildren();}
+ function controls(){count.textContent=strokes.length+' nét';undo.disabled=clear.disabled=!strokes.length&&!current;retry.disabled=Boolean(current)||busyId!==null;}
  function paint(){
   ctx.setTransform(canvas.width/256,0,0,canvas.height/256,0,0);ctx.clearRect(0,0,256,256);
   ctx.strokeStyle='#e6dbea';ctx.lineWidth=.8;ctx.setLineDash([3,4]);
@@ -29,19 +29,30 @@ export function createChineseHandwriting(onSelect,onClear=()=>{},{characters=()=
  function point(event){const box=canvas.getBoundingClientRect();return [Math.max(0,Math.min(256,(event.clientX-box.left)*256/box.width)),Math.max(0,Math.min(256,(event.clientY-box.top)*256/box.height))];}
  function release(){const id=pointer;pointer=null;current=null;if(id!=null&&canvas.hasPointerCapture(id))canvas.releasePointerCapture(id);}
  function reset(){invalidate();release();strokes=[];paint();status.textContent='Viết chữ tiếp theo để ghép thành từ, hoặc tra chữ khác.';}
- function fail(){clearTimeout(timeout);worker?.terminate();worker=null;loaded=false;status.textContent='Chưa mở được bộ nhận dạng. Bấm Nhận dạng để thử lại.';}
+ function stopWorker(){clearTimeout(timeout);clearTimeout(loadTimeout);worker?.terminate();worker=null;loaded=false;busyId=null;queued=null;}
+ function fail(){
+  const active=busyId===null||busyId===version;stopWorker();
+  if(paused||current)return;
+  if(!active){if(strokes.length)schedule();return;}
+  status.textContent='Chưa nhận dạng được lúc này. Nét viết vẫn giữ nguyên; bạn bấm Thử lại nhé.';retry.hidden=false;controls();
+ }
  function start(){
   if(worker||paused)return;
   if(!window.Worker){status.textContent='Trình duyệt chưa hỗ trợ viết tay. Bạn vẫn có thể nhập chữ, pinyin hoặc tiếng Việt để tra.';return;}
   try{
-   const instance=new Worker('/assets/js/chinese-handwriting-worker.js?v=20261119-stroke-evidence',{type:'module'});worker=instance;
+   const workerUrl=new URL('/assets/js/chinese-handwriting-worker.js',import.meta.url),release=new URL(import.meta.url).searchParams.get('release');
+   workerUrl.searchParams.set('v','20261119-dtw');if(release)workerUrl.searchParams.set('release',release);
+   const instance=new Worker(workerUrl,{type:'module'});worker=instance;
    instance.onerror=instance.onmessageerror=()=>{if(worker===instance)fail();};
    instance.onmessage=({data})=>{
     if(worker!==instance||paused)return;
-    if(data.type==='ready'){loaded=true;if(!strokes.length&&!current)status.textContent='Sẵn sàng. Viết một chữ vào ô để nhận gợi ý.';return;}
+    if(data.type==='ready'){clearTimeout(loadTimeout);loaded=true;retry.hidden=true;if(!strokes.length&&!current)status.textContent='Sẵn sàng. Viết một chữ vào ô để nhận gợi ý.';return;}
     if(data.type==='error'&&data.id===-1){fail();return;}
-    if(data.id!==version||paused)return;
-    clearTimeout(timeout);
+    if(data.id===busyId){
+     clearTimeout(timeout);busyId=null;const next=queued;queued=null;
+     if(next&&next.id===version&&!current)send(next);
+    }
+    if(data.id!==version||paused||current)return;
     if(data.type==='error'){fail();return;}
     loaded=true;
     const matches=[...new Map((data.matches||[]).map(match=>[match.hanzi,match])).values()];near=Boolean(data.near);
@@ -55,17 +66,25 @@ export function createChineseHandwriting(onSelect,onClear=()=>{},{characters=()=
     };show(8);
    };
    worker.postMessage({type:'init',id:-1});
+   loadTimeout=setTimeout(()=>{if(worker===instance&&!loaded)fail();},15000);
   }catch{fail();}
+ }
+ function send(request){
+  if(!worker||paused)return;
+  busyId=request.id;retry.hidden=true;controls();
+  try{worker.postMessage(request);}catch{fail();return;}
+  timeout=setTimeout(()=>{if(busyId===request.id)fail();},15000);
  }
  function lookup(){
   if(paused||current||!strokes.length)return;
+  clearTimeout(timer);
   start();if(!worker)return;
-  clearTimeout(timeout);const id=++version;
+  const id=++version;retry.hidden=true;candidates.replaceChildren();
   status.textContent=loaded?'Đang nhận dạng chữ…':'Đang mở bộ nhận dạng trên thiết bị…';
-  worker.postMessage({type:'recognize',id,strokes,characters:characters(),near,evidence:true});
-  timeout=setTimeout(()=>{if(id===version)fail();},15000);
+  const request={type:'recognize',id,strokes:strokes.map(stroke=>stroke.map(point=>[...point])),characters:characters(),near,evidence:true};
+  if(busyId!==null)queued=request;else send(request);
  }
- function schedule(){clearTimeout(timer);if(strokes.length)timer=setTimeout(lookup,350);else status.textContent='Viết một chữ để nhận gợi ý.';}
+ function schedule(){clearTimeout(timer);if(!paused&&strokes.length)timer=setTimeout(lookup,150);else if(!current)status.textContent='Viết một chữ để nhận gợi ý.';}
  canvas.addEventListener('pointerdown',event=>{
   if(paused||pointer!=null||!event.isPrimary||event.button!==0)return;
   if(strokes.length>=45){status.textContent='Ô viết đã đủ 45 nét. Hãy xóa ô và viết từng chữ nhé.';return;}
@@ -86,8 +105,8 @@ export function createChineseHandwriting(onSelect,onClear=()=>{},{characters=()=
   strokes.push(current);release();paint();schedule();
  });
  for(const type of ['pointercancel','lostpointercapture'])canvas.addEventListener(type,event=>{if(event.pointerId===pointer){release();paint();schedule();}});
- undo.onclick=()=>{invalidate();release();strokes.pop();paint();schedule();};clear.onclick=reset;recognize.onclick=lookup;
+ undo.onclick=()=>{invalidate();release();strokes.pop();paint();schedule();};clear.onclick=reset;retry.onclick=()=>{retry.hidden=true;if(strokes.length)lookup();else{status.textContent='Đang mở bộ nhận dạng trên thiết bị…';start();}};
  canvas.addEventListener('keydown',event=>{if(event.key==='Escape')return;if((event.ctrlKey||event.metaKey)&&event.key.toLowerCase()==='z'){event.preventDefault();undo.click();}});
  paint();
- return {node,resume(){paused=false;start();if(strokes.length)schedule();},pause(){paused=true;invalidate();release();worker?.terminate();worker=null;loaded=false;paint();},focus(){canvas.focus({preventScroll:true});}};
+ return {node,resume(){paused=false;start();if(strokes.length)schedule();},pause(){paused=true;invalidate();release();stopWorker();paint();},focus(){canvas.focus({preventScroll:true});}};
 }

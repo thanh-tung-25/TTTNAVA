@@ -1,6 +1,7 @@
 // Geometric evidence for all characters, independent of pen order/direction.
-export const STROKE_SAMPLES=7;
+export const STROKE_SAMPLES=24;
 export const STROKE_BYTES=STROKE_SAMPLES*2+3;
+const COARSE_SAMPLES=7;
 
 function sampled(points,count){
  if(!points.length)return Array.from({length:count},()=>[0,0]);
@@ -19,7 +20,14 @@ function descriptor(points,angle,length,dot,turn){
  for(const [x,y] of points){cx+=x;cy+=y;left=Math.min(left,x);right=Math.max(right,x);top=Math.min(top,y);bottom=Math.max(bottom,y);}
  cx/=points.length;cy/=points.length;
  const width=right-left,height=bottom-top,size=Math.max(width,height,.03);
- return {points,angle,length,dot,turn,cx,cy,width,height,relative:points.map(([x,y])=>[(x-cx)/size,(y-cy)/size])};
+ const relative=points.map(([x,y])=>[(x-cx)/size,(y-cy)/size]);
+ const deltas=new Float32Array(points.length*4);
+ for(let i=0;i<points.length;i++){
+  const previous=Math.max(0,i-1),next=Math.min(points.length-1,i+1),step=Math.max(1,next-previous);
+  const dx=(points[next][0]-points[previous][0])/step,dy=(points[next][1]-points[previous][1])/step,norm=Math.hypot(dx,dy);
+  deltas[i*4]=dx;deltas[i*4+1]=dy;deltas[i*4+2]=norm>1e-8?dx/norm:0;deltas[i*4+3]=norm>1e-8?dy/norm:0;
+ }
+ return {points,angle,length,dot,turn,cx,cy,width,height,relative,deltas,coarseRelative:sampled(relative,COARSE_SAMPLES)};
 }
 export function strokeEvidence(strokes){
  const valid=strokes.map(stroke=>stroke.filter(point=>Array.isArray(point)&&point.length===2&&point.every(Number.isFinite)));
@@ -48,11 +56,11 @@ export function encodeStrokeFeatures(features){
  }
  return bytes;
 }
-export function decodeStrokeFeatures(bytes,count){
+export function decodeStrokeFeatures(bytes,count,samples=STROKE_SAMPLES){
  const features=[];let at=0;
  for(let i=0;i<count;i++){
-  const points=[];for(let p=0;p<STROKE_SAMPLES;p++)points.push([bytes[at++]/255,bytes[at++]/255]);
-  const angle=bytes[at++]/255*Math.PI,length=bytes[at++]/127.5,flags=bytes[at++];features.push(descriptor(points,angle,length,Boolean(flags&1),Boolean(flags&2)));
+  const points=[];for(let p=0;p<samples;p++)points.push([bytes[at++]/255,bytes[at++]/255]);
+  const angle=bytes[at++]/255*Math.PI,length=bytes[at++]/127.5,flags=bytes[at++];features.push(descriptor(samples===STROKE_SAMPLES?points:sampled(points,STROKE_SAMPLES),angle,length,Boolean(flags&1),Boolean(flags&2)));
  }
  return features;
 }
@@ -70,19 +78,48 @@ export function directionCounts(features){
  return counts;
 }
 export function directionDifference(a,b,count){return a.reduce((total,value,i)=>total+Math.abs(value-b[i])*(i===5?.45:1),0)/Math.max(1,count);}
+function commonPairCost(a,b){
+ const angle=Math.abs(a.angle-b.angle),orientation=Math.min(angle,Math.PI-angle)/(Math.PI/2);
+ return Math.hypot(a.cx-b.cx,a.cy-b.cy)*.75+(Math.abs(a.width-b.width)+Math.abs(a.height-b.height))*.24+Math.abs(Math.log((a.length+.04)/(b.length+.04)))*.10+orientation*.10+(a.dot!==b.dot?.15:0)+(a.turn!==b.turn?.08:0);
+}
 function pairCost(a,b){
  let same=0,reverse=0;
- for(let i=0;i<STROKE_SAMPLES;i++){
-  same+=Math.hypot(a.relative[i][0]-b.relative[i][0],a.relative[i][1]-b.relative[i][1]);
-  reverse+=Math.hypot(a.relative[i][0]-b.relative[STROKE_SAMPLES-1-i][0],a.relative[i][1]-b.relative[STROKE_SAMPLES-1-i][1]);
+ for(let i=0;i<COARSE_SAMPLES;i++){
+  same+=Math.hypot(a.coarseRelative[i][0]-b.coarseRelative[i][0],a.coarseRelative[i][1]-b.coarseRelative[i][1]);
+  reverse+=Math.hypot(a.coarseRelative[i][0]-b.coarseRelative[COARSE_SAMPLES-1-i][0],a.coarseRelative[i][1]-b.coarseRelative[COARSE_SAMPLES-1-i][1]);
  }
- const angle=Math.abs(a.angle-b.angle),orientation=Math.min(angle,Math.PI-angle)/(Math.PI/2);
- return Math.min(same,reverse)/STROKE_SAMPLES*.55+Math.hypot(a.cx-b.cx,a.cy-b.cy)*.75+(Math.abs(a.width-b.width)+Math.abs(a.height-b.height))*.24+Math.abs(Math.log((a.length+.04)/(b.length+.04)))*.10+orientation*.10+(a.dot!==b.dot?.15:0)+(a.turn!==b.turn?.08:0);
+ return Math.min(same,reverse)/COARSE_SAMPLES*.55+commonPairCost(a,b);
 }
-export function assignedStrokeDistance(input,target){
+function warpedStrokeCost(a,b,reverse){
+ const n=a.relative.length,m=b.relative.length,radius=Math.max(Math.abs(n-m),Math.ceil(Math.max(n,m)*.25));
+ let previous=new Float64Array(m+1).fill(Infinity),current=new Float64Array(m+1);previous[0]=0;
+ const sign=reverse?-1:1;
+ for(let i=1;i<=n;i++){
+  current.fill(Infinity);const point=a.relative[i-1],ai=(i-1)*4;
+  for(let j=Math.max(1,i-radius);j<=Math.min(m,i+radius);j++){
+   const index=reverse?m-j:j-1,target=b.relative[index],bi=index*4;
+   const x=point[0]-target[0],y=point[1]-target[1],dx=a.deltas[ai]-sign*b.deltas[bi],dy=a.deltas[ai+1]-sign*b.deltas[bi+1];
+   const hasDirection=(a.deltas[ai+2]!==0||a.deltas[ai+3]!==0)&&(b.deltas[bi+2]!==0||b.deltas[bi+3]!==0);
+   const direction=hasDirection?1-Math.max(-1,Math.min(1,sign*(a.deltas[ai+2]*b.deltas[bi+2]+a.deltas[ai+3]*b.deltas[bi+3]))):0;
+   const distance=x*x+y*y+(dx*dx+dy*dy)*.35+direction*.035;
+   current[j]=distance+Math.min(previous[j],current[j-1],previous[j-1]);
+  }
+  const swap=previous;previous=current;current=swap;
+ }
+ return Math.sqrt(previous[m]/Math.max(n,m));
+}
+export function dtwStrokeDistance(a,b){
+ const aStart=a.relative[0],aEnd=a.relative.at(-1),bStart=b.relative[0],bEnd=b.relative.at(-1);
+ const sameEnds=Math.hypot(aStart[0]-bStart[0],aStart[1]-bStart[1])+Math.hypot(aEnd[0]-bEnd[0],aEnd[1]-bEnd[1]);
+ const reverseEnds=Math.hypot(aStart[0]-bEnd[0],aStart[1]-bEnd[1])+Math.hypot(aEnd[0]-bStart[0],aEnd[1]-bStart[1]);
+ const reversed=reverseEnds<sameEnds,first=warpedStrokeCost(a,b,reversed);
+ // An almost identical path cannot benefit materially from a second traversal.
+ return first<.012?first:Math.min(first,warpedStrokeCost(a,b,!reversed));
+}
+export function assignedStrokeDistance(input,target,{dtw=false}={}){
  // Minimum-cost one-to-one assignment avoids assuming textbook stroke order.
  const n=Math.max(input.length,target.length);if(!n)return Infinity;
- const cost=Array.from({length:n},(_,i)=>Float64Array.from({length:n},(_,j)=>i<input.length&&j<target.length?pairCost(input[i],target[j]):.55));
+ const cost=Array.from({length:n},(_,i)=>Float64Array.from({length:n},(_,j)=>i<input.length&&j<target.length?(dtw?dtwStrokeDistance(input[i],target[j])*.55+commonPairCost(input[i],target[j]):pairCost(input[i],target[j])):.55));
  const u=new Float64Array(n+1),v=new Float64Array(n+1),p=new Int16Array(n+1),way=new Int16Array(n+1);
  for(let i=1;i<=n;i++){
   p[0]=i;let j0=0;const min=new Float64Array(n+1).fill(Infinity),used=new Uint8Array(n+1);

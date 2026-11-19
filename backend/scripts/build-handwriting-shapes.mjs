@@ -2,7 +2,7 @@
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {strokeShape,SHAPE_GRID} from '../../frontend/assets/js/chinese-handwriting-shapes.js';
-import {strokeEvidence,encodeStrokeFeatures} from '../../frontend/assets/js/chinese-handwriting-strokes.js';
+import {strokeEvidence,encodeStrokeFeatures,STROKE_SAMPLES} from '../../frontend/assets/js/chinese-handwriting-strokes.js';
 const root=new URL('../../',import.meta.url),headers={'User-Agent':'TTNAVA-local-handwriting-data'};
 let sha;
 if(process.argv.includes('--cached'))sha=JSON.parse(await readFile(new URL('frontend/assets/vendor/hanzi-lookup/SHAPES-SOURCE.json',root),'utf8')).revision;
@@ -26,8 +26,8 @@ for(const line of source.split(/\r?\n/)){
  for(let i=0;i<shape.distance.length;i+=2)entry[at++]=shape.distance[i]|(shape.distance[i+1]<<4);
  records.push(entry);
 }
-const header=Buffer.alloc(16);header.write('TTNHW2\0\0',0,'ascii');header.writeUInt32LE(records.length,8);header.writeUInt8(SHAPE_GRID,12);
+const header=Buffer.alloc(16);header.write('TTNHW3\0\0',0,'ascii');header.writeUInt32LE(records.length,8);header.writeUInt8(SHAPE_GRID,12);header.writeUInt8(STROKE_SAMPLES,13);
 const model=Buffer.concat([header,...records]),destination=new URL('frontend/assets/vendor/hanzi-lookup/',root);
-await writeFile(new URL('shapes-v2.bin',destination),model);
-await writeFile(new URL('SHAPES-V2-SOURCE.json',destination),JSON.stringify({upstream:'https://github.com/skishore/makemeahanzi',revision:sha,source:'graphics.txt',license:'Arphic Public License; see LICENSE-APL',format:2,characters:records.length,grid:SHAPE_GRID,features:['stroke_count','horizontal_vertical_diagonal_directions','dots','turns_hooks','per_stroke_geometry'],bytes:model.length,sha256:createHash('sha256').update(model).digest('hex')},null,2)+'\n');
+await writeFile(new URL('shapes-v3.bin',destination),model);
+await writeFile(new URL('SHAPES-V3-SOURCE.json',destination),JSON.stringify({upstream:'https://github.com/skishore/makemeahanzi',revision:sha,source:'graphics.txt',license:'Arphic Public License; see LICENSE-APL',format:3,characters:records.length,grid:SHAPE_GRID,points_per_stroke:STROKE_SAMPLES,features:['stroke_count','normalized_dx_dy','unit_direction_vectors','horizontal_vertical_diagonal_directions','dots','turns_hooks','per_stroke_geometry'],matching:'Banded per-stroke DTW with optimal one-to-one assignment',bytes:model.length,sha256:createHash('sha256').update(model).digest('hex')},null,2)+'\n');
 console.log(JSON.stringify({characters:records.length,bytes:model.length,revision:sha}));

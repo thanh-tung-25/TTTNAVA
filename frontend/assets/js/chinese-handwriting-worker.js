@@ -7,7 +7,7 @@ async function ready(){
   const bytes=path=>fetch(path).then(response=>{if(!response.ok)throw new Error('MODEL_UNAVAILABLE');return response.arrayBuffer();});
   engine=Promise.allSettled([
    bytes('/assets/vendor/hanzi-lookup/hanzi_lookup_bg.wasm').then(data=>self.wasm_bindgen(data)).then(()=>{strokeReady=true;}),
-   bytes('/assets/vendor/hanzi-lookup/shapes-v2.bin').then(data=>{shapes=new HandwritingShapes(data);})
+   bytes('/assets/vendor/hanzi-lookup/shapes-v3.bin').then(data=>{shapes=new HandwritingShapes(data);})
   ]).then(()=>{if(!shapes)throw Error('MODEL_UNAVAILABLE');});
  }
  await engine;

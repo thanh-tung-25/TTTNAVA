@@ -13,6 +13,7 @@
     }
   },
   "routes": [
+    { "src": "/assets/js/chinese-handwriting-worker\\.js", "headers": { "Content-Security-Policy": "default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; connect-src 'self'", "Cache-Control": "public, max-age=604800", "X-Content-Type-Options": "nosniff" }, "continue": true },
     { "src": "/manifest.webmanifest", "dest": "/assets/manifest.webmanifest" },
     { "src": "/apple-touch-icon.png", "dest": "/assets/icons/apple-touch-icon.png" },
     { "src": "/favicon.ico", "dest": "/assets/icons/favicon.ico" },

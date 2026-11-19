@@ -1,4 +1,5 @@
 /* Shared with the existing student page and the localhost preview. */
+.handwriting-retry[hidden]{display:none!important}.handwriting-tools .handwriting-retry{border-color:#ddbdcf;background:#fff4f9;color:#a37b93}
 .handwriting-candidate{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}.handwriting-candidate small{font:500 8px/1.4 var(--font-body,system-ui);color:#a58ab8}.handwriting-count-mode{grid-column:1/-1;min-height:36px;padding:7px;border:1px solid #dfcdeb;border-radius:10px;background:#faf4ff;color:#9672ae;font:600 10px/1.6 var(--font-body,system-ui);cursor:pointer}.handwriting-count-mode:hover{background:#f1e5fb}
 .chinese-dictionary{border:2px solid #fff;border-radius:26px;background:#fffdfd;box-shadow:0 7px 0 #d9c8e78c,0 26px 85px #38254729}
 .chinese-dictionary::backdrop{background:#34244366;backdrop-filter:blur(3px)}

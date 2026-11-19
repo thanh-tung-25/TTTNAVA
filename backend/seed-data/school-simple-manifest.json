@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "guideCount": 1622,
+  "newQuestionCount": 17202,
+  "privateAssets": true,
+  "files": [
+    {
+      "name": "primary-math.json",
+      "sha256": "ca6eb5f67ef552264048f031dc7d95d46e1f20078e8b2df2d12208ec49cb6fd9",
+      "guides": 345,
+      "questions": 48
+    },
+    {
+      "name": "math-foundations.json",
+      "sha256": "a20fc0f8e741d2a13b952d7c97ca732bec00190316b087ba4cb014187897af73",
+      "guides": 30,
+      "questions": 750
+    },
+    {
+      "name": "languages.json",
+      "sha256": "b89acf45109f1f81053d989d2316d440816a69fe8e6aa4e9cc8d2903ed5bf350",
+      "guides": 655,
+      "questions": 3384
+    },
+    {
+      "name": "stem.json",
+      "sha256": "c19156ff2a7e134483940a09757a28bcac1e2dcda9440503b67ed361e8c98eb9",
+      "guides": 295,
+      "questions": 7080
+    },
+    {
+      "name": "science-social.json",
+      "sha256": "01762c970c75b617cffa0da79975950bcc2a1c7051dd21d1e1f8daba786043ef",
+      "guides": 297,
+      "questions": 5940
+    }
+  ]
+}

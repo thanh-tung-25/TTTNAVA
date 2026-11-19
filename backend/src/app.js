@@ -50,6 +50,7 @@ export function createApp() {
   app.use('/api/v1/chinese', express.json({ limit: '2mb' }));
   app.use('/api/v1/worksheets', express.json({ limit: '2mb' }));
   app.use('/api/v1/school-lessons', express.json({ limit: '1mb' }));
+  app.use('/api/v1/school-study', express.json({ limit: '1mb' }));
   app.use('/api/v1/admin/questions/import', express.json({ limit: '2mb' }));
   app.use(express.json({ limit: '100kb' }));
   app.use(express.urlencoded({ extended: false, limit: '100kb' }));

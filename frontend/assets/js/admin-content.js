@@ -8,6 +8,7 @@ import {openImport} from './admin-questions-import.js';
 import {openWordHistory} from './admin-word-history.js';
 import {subjectName} from './primary-subjects.js';
 import {previewSchoolLesson} from './school-lesson-view.js';
+import {editSchoolGuide} from './admin-school-guide.js';
 const root=document.querySelector('#content-list'),notice=document.querySelector('#content-hub-error'),editor=document.querySelector('#content-worksheets'),filters=document.querySelector('#content-filters');
 let page=1,pages=1,requestNumber=0,openedLesson=null;
 const status={draft:'Nháp',published:'Đã đăng',hidden:'Đang ẩn'};
@@ -30,7 +31,7 @@ function lessonCards(scope){
  cards.push(el('article',{class:'content-lesson-card','data-content-lesson':lesson.id},[
  el('p',{class:'muted',text:[grade.name,semester.name,subject.name,chapter.name].join(' · ')}),el('h2',{text:lesson.name}),
  el('p',{text:lesson.questionCount+' câu hỏi · '+lesson.worksheetCount+' bộ bài tập'}),
- ...(lesson.hasMaterial?[button('Xem lý thuyết và ví dụ',()=>previewSchoolLesson(lesson.id))]:[]),
+ ...(lesson.hasStudyGuide?[button('Cần nhớ, công thức và ví dụ',()=>editSchoolGuide(grade.grade,lesson.studyGroupId))]:lesson.hasMaterial?[button('Xem lý thuyết và ví dụ',()=>previewSchoolLesson(lesson.id))]:[]),
  button('Xem bộ câu hỏi',()=>{if(!closeWorksheet())return;editor.hidden=true;openedLesson=lesson.id;page=1;filters.reset();selectContentLesson(target);}),
  ]));
  }}}}}

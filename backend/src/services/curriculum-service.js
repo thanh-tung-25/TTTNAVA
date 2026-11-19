@@ -36,12 +36,14 @@ export async function getCurriculumTree(yearId = null, program = null) {
             s.name AS subject_name, s.color AS subject_color, s.sort_order AS subject_sort,
             l.id AS lesson_id, l.name AS lesson_name, l.topic_id, l.sort_order AS lesson_sort,
             MAX(CASE WHEN m.status='published' THEN 1 ELSE 0 END) AS material_ready,
+            MAX(CASE WHEN g.status='published' THEN 1 ELSE 0 END) AS guide_ready,
             COUNT(q.id) AS question_count,
             COALESCE(SUM(CASE WHEN q.status = 'published' THEN 1 ELSE 0 END), 0) AS published_count
      FROM curriculum_chapters c
      JOIN subjects s ON s.id = c.subject_id
      LEFT JOIN curriculum_lessons l ON l.chapter_id = c.id
      LEFT JOIN school_lesson_materials m ON m.lesson_id=l.id
+     LEFT JOIN school_study_guides g ON g.group_id=CASE WHEN c.grade>=6 AND c.subject_id IN ('tieng-anh','tieng-viet') THEN c.id ELSE l.id END
      LEFT JOIN questions q ON q.topic_id = l.topic_id
      WHERE c.school_year_id = ? AND ${gradeCondition}
      GROUP BY c.id, c.name, c.grade, c.semester,c.is_legacy,c.book_label, c.subject_id, c.sort_order,
@@ -59,7 +61,7 @@ export async function getCurriculumTree(yearId = null, program = null) {
     semesters: [
       emptySemester('hk1', 'Học kỳ 1'),
       emptySemester('hk2', 'Học kỳ 2'),
-      ...(grade>=10?[emptySemester('year','Cả năm')]:[]),
+      ...(rows.some(row=>Number(row.grade)===grade&&row.semester==='year')?[emptySemester('year','Cả năm')]:[]),
     ],
   }]));
 
@@ -96,6 +98,8 @@ export async function getCurriculumTree(yearId = null, program = null) {
         id: row.lesson_id,
         name: row.lesson_name,
         hasMaterial:Boolean(Number(row.material_ready)),
+        hasStudyGuide:Boolean(Number(row.guide_ready)),
+        studyGroupId:Number(row.grade)>=6&&['tieng-anh','tieng-viet'].includes(row.subject_id)?row.chapter_id:row.lesson_id,
         topicId: row.topic_id,
         questionCount: number(row.question_count),
         publishedCount: number(row.published_count),

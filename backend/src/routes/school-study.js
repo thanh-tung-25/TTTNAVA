@@ -1,0 +1,15 @@
+import {Router} from 'express';
+import {z} from 'zod';
+import {authenticateToken,requireStudent,requireAdmin,requirePlayer} from '../middlewares/auth.js';
+import {asyncHandler} from '../utils/errors.js';
+import {rateLimit} from '../middlewares/rate-limit.js';
+import {schoolStudyCatalog,schoolStudyGuide,startSchoolQuiz,schoolQuizState,updateSchoolGuide} from '../services/school-study.js';
+const router=Router(),course=req=>z.string().regex(/^grade-(?:[1-9]|1[0-2])$/u).parse(req.get('X-Course-Id')||req.cookies?.ttnava_course||req.query.courseId||''),id=req=>z.string().min(1).max(90).regex(/^[a-zA-Z0-9_-]+$/u).parse(req.params.id);
+const respond=fn=>asyncHandler(async(req,res)=>res.set('Cache-Control','private, no-store').json({data:await fn(req)}));
+router.use(authenticateToken);
+router.get('/catalog',respond(req=>schoolStudyCatalog(req.user,course(req))));
+router.get('/guides/:id',respond(req=>schoolStudyGuide(req.user,course(req),id(req))));
+router.put('/guides/:id',requireAdmin,respond(req=>updateSchoolGuide(req.user,course(req),id(req),req.body)));
+router.post('/groups/:id/quiz',requireStudent,requirePlayer,rateLimit({max:20,keyPrefix:'school-quiz-start'}),respond(req=>startSchoolQuiz(req.user,course(req),id(req),req.body)));
+router.get('/quizzes/:id',requireStudent,respond(req=>schoolQuizState(req.user,course(req),z.uuid().parse(req.params.id))));
+export default router;

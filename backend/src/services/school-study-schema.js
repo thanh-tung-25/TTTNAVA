@@ -1,0 +1,2 @@
+import {z} from 'zod';
+export const schoolGuideSchema=z.object({summary:z.array(z.object({heading:z.string().trim().min(1).max(180),body:z.string().trim().min(1).max(20000)})).min(1).max(30),formulas:z.array(z.object({name:z.string().trim().min(1).max(180),expression:z.string().trim().min(1).max(3000),conditions:z.string().trim().max(3000).default('')})).max(40),mistakes:z.array(z.string().trim().min(1).max(1000)).max(20),examples:z.array(z.object({prompt:z.string().trim().min(1).max(10000),solution:z.string().trim().min(1).max(20000)})).min(1).max(15)}).strict();

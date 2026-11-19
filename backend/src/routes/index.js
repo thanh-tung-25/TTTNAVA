@@ -16,9 +16,11 @@ import learningSupportRouter from './learning-support.js';
 import learningFeedbackRouter from './learning-feedback.js';
 import studentExperienceRouter from './student-experience.js';
 import schoolLessonRouter from './school-lessons.js';
+import schoolStudyRouter from './school-study.js';
 
 const router = Router();
 router.use('/school-lessons',schoolLessonRouter);
+router.use('/school-study',schoolStudyRouter);
 router.use('/experience',studentExperienceRouter);
 router.use('/feedback',learningFeedbackRouter);
 router.use('/learning',learningSupportRouter);

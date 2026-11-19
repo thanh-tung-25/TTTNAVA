@@ -27,10 +27,7 @@ document.getElementById('quit-button').addEventListener('click', async () => {
     confirmText: 'Rời đi',
   });
   if (!leave) return;
-  store.session = null;
-  store.current = 0;
-  show(elements.setupView);
-  loadTopics();
+  location.assign('/pages/student/learning/?subject='+encodeURIComponent(store.subjectId));
 });
 
 elements.subjectTabs.addEventListener('click', (event) => {

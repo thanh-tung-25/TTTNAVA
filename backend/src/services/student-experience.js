@@ -116,7 +116,7 @@ export async function ownedLearningRun(user,id,run=query,lock=false){
 function publicRun(row){
  const items=json(row.items_json),answers=json(row.answers_json),done=Object.keys(answers).length,index=items.findIndex(q=>!Object.hasOwn(answers,q.id));
  const correct=Object.values(answers).filter(a=>a.correct).length;
- const clean=q=>({id:q.id,type:q.type,prompt:q.subject==='chinese'?chineseQuestionPrompt(q.prompt):q.prompt,options:q.options,subject:q.subject,skill:q.skill,label:q.label});
+ const clean=q=>({id:q.id,type:q.type,prompt:q.subject==='chinese'?chineseQuestionPrompt(q.prompt):q.prompt,...(q.imageUrl?{imageUrl:q.imageUrl}:{}),options:q.options,subject:q.subject,skill:q.skill,label:q.label});
  return {id:row.id,courseId:row.course_id,title:row.title,kind:row.run_kind,status:row.status,total:items.length,answered:done,correct,percent:items.length?Math.round(correct/items.length*100):0,index:index<0?items.length:index,revision:Number(row.revision||0),draft:json(row.draft_json),question:index<0?null:clean(items[index]),finishedAt:row.finished_at,
   feedback:items.filter(q=>answers[q.id]).map(q=>({...clean(q),selected:answers[q.id].answer,correct:answers[q.id].correct,expected:q.answer,explanation:q.explanation})),next:row.status==='finished'?{review:'/pages/student/study-hub/?view=wrong',progress:'/pages/student/progress/'}:null};
 }

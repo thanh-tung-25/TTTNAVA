@@ -56,7 +56,7 @@ export async function api(path, options = {}) {
     ...(options.cache?{cache:options.cache}:{}),
   };
   const courseId=localStorage.getItem('ttnava-course');
-  if(courseId)init.headers['X-Course-Id']=courseId;
+  if(courseId&&!init.headers['X-Course-Id'])init.headers['X-Course-Id']=courseId;
   if(path==='/api/v1/auth/logout'){
     const device=localStorage.getItem('ttnava-chat-device');
     if(device)init.headers['X-Chat-Device']=device;

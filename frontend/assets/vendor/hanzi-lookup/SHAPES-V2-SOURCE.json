@@ -1,0 +1,18 @@
+{
+  "upstream": "https://github.com/skishore/makemeahanzi",
+  "revision": "bddc96d41bef78427ed0e034e9f7e31d71fd1b92",
+  "source": "graphics.txt",
+  "license": "Arphic Public License; see LICENSE-APL",
+  "format": 2,
+  "characters": 9574,
+  "grid": 24,
+  "features": [
+    "stroke_count",
+    "horizontal_vertical_diagonal_directions",
+    "dots",
+    "turns_hooks",
+    "per_stroke_geometry"
+  ],
+  "bytes": 6747497,
+  "sha256": "97d9ed4d19ced9aa293d3ad75dc4746ffa4ff509029df726cc90636ac435e23c"
+}

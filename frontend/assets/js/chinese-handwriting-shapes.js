@@ -1,5 +1,6 @@
 // Order-independent character silhouettes complement the stroke recognizer.
 // This module is also used by the local data builder; it has no network calls.
+import {strokeEvidence,decodeStrokeFeatures,directionCounts,directionDifference,assignedStrokeDistance,STROKE_BYTES} from './chinese-handwriting-strokes.js';
 export const SHAPE_GRID=24;
 export function strokeShape(strokes){
  const size=SHAPE_GRID,points=strokes.flat().filter(point=>Array.isArray(point)&&point.length===2&&point.every(Number.isFinite));
@@ -34,31 +35,40 @@ export function strokeShape(strokes){
 export class HandwritingShapes{
  constructor(buffer){
   const view=new DataView(buffer),magic=new TextDecoder().decode(new Uint8Array(buffer,0,8));
-  if(magic!=='TTNHW1\0\0'||view.getUint8(12)!==SHAPE_GRID)throw Error('INVALID_SHAPE_MODEL');
+  const featureModel=magic==='TTNHW2\0\0';
+  if(!featureModel&&magic!=='TTNHW1\0\0'||view.getUint8(12)!==SHAPE_GRID)throw Error('INVALID_SHAPE_MODEL');
   const count=view.getUint32(8,true);if(count<1||count>20000)throw Error('INVALID_SHAPE_COUNT');
   this.entries=[];let offset=16;
   for(let i=0;i<count;i++){
    const hanzi=String.fromCodePoint(view.getUint32(offset,true)),strokes=view.getUint8(offset+4),aspect=view.getUint8(offset+5),length=view.getUint16(offset+6,true);offset+=8;
    if(!length||length>SHAPE_GRID*SHAPE_GRID)throw Error('INVALID_SHAPE_POINTS');
+   const featureBytes=featureModel?new Uint8Array(buffer,offset,strokes*STROKE_BYTES):null;if(featureModel)offset+=strokes*STROKE_BYTES;
    const points=new Uint16Array(length);for(let p=0;p<length;p++)points[p]=view.getUint16(offset+p*2,true);offset+=length*2;
    const packed=new Uint8Array(buffer,offset,SHAPE_GRID*SHAPE_GRID/2);offset+=packed.length;
-   this.entries.push({hanzi,strokes,aspect,points,packed});
+   this.entries.push({hanzi,strokes,aspect,points,packed,featureBytes,features:null,directions:null});
   }
   if(offset!==buffer.byteLength)throw Error('INVALID_SHAPE_LENGTH');
  }
- match(strokes,{characters=[],strokeMatches=[],limit=20}={}){
+ match(strokes,{characters=[],strokeMatches=[],limit=20,near=false}={}){
   const input=strokeShape(strokes);if(!input)return [];
+  const features=strokeEvidence(strokes),directions=directionCounts(features);
   const known=new Set(characters),prior=new Map(strokeMatches.map((match,i)=>[match.hanzi,i]));
   const matches=[];
   for(const entry of this.entries){
+   const difference=Math.abs(entry.strokes-input.strokes);
+   if(near?difference!==1:difference!==0)continue;
+   if(entry.featureBytes&&!entry.features){entry.features=decodeStrokeFeatures(entry.featureBytes,entry.strokes);entry.directions=directionCounts(entry.features);}
    let forward=0,reverse=0;
    for(const point of entry.points)forward+=input.distance[point];
    for(const point of input.points)reverse+=(entry.packed[point>>1]>>((point&1)*4))&15;
    const shapeDistance=(forward/entry.points.length+reverse/input.points.length)/2;
-   let score=shapeDistance+Math.abs(entry.aspect-input.aspect)/255*1.2+Math.min(1,Math.abs(entry.strokes-input.strokes)/Math.max(3,entry.strokes))*.12;
-   if(known.has(entry.hanzi))score-=.18;
-   if(prior.has(entry.hanzi))score-=.18*(1-prior.get(entry.hanzi)/Math.max(1,strokeMatches.length));
-   matches.push({hanzi:entry.hanzi,score,shapeDistance});
+   const directionDistance=entry.directions?directionDifference(directions,entry.directions,Math.max(input.strokes,entry.strokes)):0;
+   const strokeDistance=entry.features?assignedStrokeDistance(features,entry.features):0;
+   let score=entry.features?shapeDistance*.16+strokeDistance*2.5+directionDistance*.55:shapeDistance;
+   score+=Math.abs(entry.aspect-input.aspect)/255*.30;
+   if(known.has(entry.hanzi))score-=.12;
+   if(prior.has(entry.hanzi))score-=.10*(1-prior.get(entry.hanzi)/Math.max(1,strokeMatches.length));
+   matches.push({hanzi:entry.hanzi,strokes:entry.strokes,score,shapeDistance,strokeDistance,directionDistance});
   }
   return matches.sort((a,b)=>a.score-b.score||a.hanzi.codePointAt(0)-b.hanzi.codePointAt(0)).slice(0,limit);
  }

@@ -2,7 +2,7 @@ import {el} from './api.js';
 
 // The canvas collects pen strokes only in memory. No upload or analytics calls.
 export function createChineseHandwriting(onSelect,onClear=()=>{},{characters=()=>[]}={}){
- let strokes=[],current=null,pointer=null,worker=null,loaded=false,timer,timeout,version=0,paused=false;
+ let strokes=[],current=null,pointer=null,worker=null,loaded=false,timer,timeout,version=0,paused=false,near=false;
  const node=el('section',{class:'dictionary-handwriting','aria-label':'Viết tay để tra chữ'});
  const canvas=el('canvas',{class:'handwriting-canvas',width:768,height:768,tabindex:0,'aria-label':'Ô viết một chữ Hán bằng ngón tay, bút hoặc chuột'}),ctx=canvas.getContext('2d');
  const status=el('p',{class:'handwriting-status',role:'status','aria-live':'polite',text:'Viết một chữ vào ô bên dưới.'});
@@ -13,7 +13,7 @@ export function createChineseHandwriting(onSelect,onClear=()=>{},{characters=()=
  const recognize=el('button',{type:'button',class:'handwriting-recognize',text:'Nhận dạng'});
  const another=el('button',{type:'button',class:'handwriting-new',text:'Tra từ khác',onclick:()=>{reset();onClear();canvas.focus({preventScroll:true});}});
  node.append(el('div',{class:'handwriting-heading'},[el('div',{},[el('strong',{text:'Viết 1 chữ bạn nhớ'}),el('p',{text:'Chọn chữ gợi ý, rồi viết tiếp để ghép thành từ.'})]),el('div',{class:'handwriting-heading-actions'},[count,another])]),el('div',{class:'handwriting-pad'},[canvas]),el('div',{class:'handwriting-tools'},[undo,clear,recognize]),status,candidates,el('p',{class:'handwriting-note',text:'Nhận dạng ngay trên thiết bị của bạn.'}));
- function invalidate(){clearTimeout(timer);clearTimeout(timeout);version++;status.classList.remove('is-selection');candidates.replaceChildren();}
+ function invalidate(){clearTimeout(timer);clearTimeout(timeout);version++;near=false;status.classList.remove('is-selection');candidates.replaceChildren();}
  function controls(){count.textContent=strokes.length+' nét';undo.disabled=clear.disabled=!strokes.length&&!current;recognize.disabled=!strokes.length||Boolean(current);}
  function paint(){
   ctx.setTransform(canvas.width/256,0,0,canvas.height/256,0,0);ctx.clearRect(0,0,256,256);
@@ -34,7 +34,7 @@ export function createChineseHandwriting(onSelect,onClear=()=>{},{characters=()=
   if(worker||paused)return;
   if(!window.Worker){status.textContent='Trình duyệt chưa hỗ trợ viết tay. Bạn vẫn có thể nhập chữ, pinyin hoặc tiếng Việt để tra.';return;}
   try{
-   const instance=new Worker('/assets/js/chinese-handwriting-worker.js',{type:'module'});worker=instance;
+   const instance=new Worker('/assets/js/chinese-handwriting-worker.js?v=20261119-stroke-evidence',{type:'module'});worker=instance;
    instance.onerror=instance.onmessageerror=()=>{if(worker===instance)fail();};
    instance.onmessage=({data})=>{
     if(worker!==instance||paused)return;
@@ -44,11 +44,15 @@ export function createChineseHandwriting(onSelect,onClear=()=>{},{characters=()=
     clearTimeout(timeout);
     if(data.type==='error'){fail();return;}
     loaded=true;
-    const chars=[...new Set(data.matches||[])];
-    status.textContent=chars.length?'Chọn chữ giống nét bạn viết:':'Chưa nhận ra chữ. Bạn thử tách rõ từng nét rồi nhận dạng lại nhé.';
-    const choice=char=>el('button',{type:'button',class:'handwriting-candidate',lang:'zh-CN',text:char,'aria-label':'Chọn chữ '+char,onclick:()=>{const selected=onSelect(char);reset();if(selected){status.textContent=selected;status.classList.add('is-selection');}canvas.focus({preventScroll:true});}});
-    candidates.replaceChildren(...chars.slice(0,8).map(choice));
-    if(chars.length>8)candidates.append(el('button',{type:'button',class:'handwriting-more',text:'Chưa đúng chữ? Xem thêm gợi ý',onclick:event=>{event.currentTarget.remove();candidates.append(...chars.slice(8).map(choice));}}));
+    const matches=[...new Map((data.matches||[]).map(match=>[match.hanzi,match])).values()];near=Boolean(data.near);
+    const n=data.inputStrokes||strokes.length,neighborCounts=[n-1,n+1].filter(count=>count>0).join(' / ');
+    status.textContent=matches.length?(near?'Các chữ lệch 1 nét so với '+n+' nét bạn viết:':'Gợi ý chữ có đúng '+n+' nét. Chọn chữ giống nét bạn viết:'):'Chưa tìm được chữ phù hợp với '+n+' nét. Bạn có thể xem nhóm lệch 1 nét.';
+    const choice=match=>el('button',{type:'button',class:'handwriting-candidate',lang:'zh-CN','aria-label':'Chọn chữ '+match.hanzi+', '+match.strokes+' nét',onclick:()=>{const selected=onSelect(match.hanzi);reset();if(selected){status.textContent=selected;status.classList.add('is-selection');}canvas.focus({preventScroll:true});}},[el('span',{text:match.hanzi}),el('small',{lang:'vi',text:match.strokes+' nét'})]);
+    const show=amount=>{
+     candidates.replaceChildren(...matches.slice(0,amount).map(choice));
+     if(matches.length>amount)candidates.append(el('button',{type:'button',class:'handwriting-more',text:'Xem thêm chữ '+(near?neighborCounts:n)+' nét',onclick:()=>show(matches.length)}));
+     candidates.append(el('button',{type:'button',class:'handwriting-count-mode',text:near?'Quay lại chữ đúng '+n+' nét':'Thử nhóm '+neighborCounts+' nét',onclick:()=>{near=!near;lookup();}}));
+    };show(8);
    };
    worker.postMessage({type:'init',id:-1});
   }catch{fail();}
@@ -58,7 +62,7 @@ export function createChineseHandwriting(onSelect,onClear=()=>{},{characters=()=
   start();if(!worker)return;
   clearTimeout(timeout);const id=++version;
   status.textContent=loaded?'Đang nhận dạng chữ…':'Đang mở bộ nhận dạng trên thiết bị…';
-  worker.postMessage({type:'recognize',id,strokes,characters:characters()});
+  worker.postMessage({type:'recognize',id,strokes,characters:characters(),near,evidence:true});
   timeout=setTimeout(()=>{if(id===version)fail();},15000);
  }
  function schedule(){clearTimeout(timer);if(strokes.length)timer=setTimeout(lookup,350);else status.textContent='Viết một chữ để nhận gợi ý.';}

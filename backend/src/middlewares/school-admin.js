@@ -1,12 +1,13 @@
 import { query } from '../config/db.js';
 import { AppError, asyncHandler } from '../utils/errors.js';
 import { adminScopeOf } from '../utils/admin-permissions.js';
+import {SCHOOL_PROGRAMS,SCHOOL_RANGES,schoolProgramForGrade} from '../utils/school-programs.js';
 
-export const schoolPrograms = ['primary', 'secondary'];
-export const schoolProgramForGrade = grade => Number(grade) >= 6 ? 'secondary' : 'primary';
+export const schoolPrograms = SCHOOL_PROGRAMS;
+export {schoolProgramForGrade};
 export function schoolGradeCondition(program, column = 'grade') {
   if (!schoolPrograms.includes(program)) return '1=1';
-  return `${column} BETWEEN ${program === 'primary' ? '1 AND 5' : '6 AND 9'}`;
+  return `${column} BETWEEN ${SCHOOL_RANGES[program].join(' AND ')}`;
 }
 export function assertSchoolGrade(req, grade) {
   if (grade == null || grade === '') return;

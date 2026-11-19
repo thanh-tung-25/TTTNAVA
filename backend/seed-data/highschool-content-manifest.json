@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "privatePackage": "learning-content-private.zip",
+  "lessons": 1082,
+  "questions": 3246,
+  "files": [
+    {
+      "file": "toan.json",
+      "sha256": "37c2e18f5a5f4d8d454765d4995c7483085b8de8276cef4de50be1e5e7550ee6",
+      "lessons": 93,
+      "questions": 279
+    },
+    {
+      "file": "tieng-anh.json",
+      "sha256": "4558e6f808fe0fdbb18dc5443bec930f4b6a80b9444eb071178a39b062cc4b0d",
+      "lessons": 294,
+      "questions": 882
+    },
+    {
+      "file": "tieng-viet.json",
+      "sha256": "fed270e8a9670861c85926226f22a79d1649c4abf2fb7bb492509da2cf568a8c",
+      "lessons": 235,
+      "questions": 705
+    },
+    {
+      "file": "vat-li.json",
+      "sha256": "5d97b3ee030565d22f48ee784e5509c22da2cea74cb9d46113a66c338fe13a25",
+      "lessons": 85,
+      "questions": 255
+    },
+    {
+      "file": "hoa-hoc.json",
+      "sha256": "47cafae03a0310835ee6621dde9bacb13191c461fabf3cc10e86671cac0e170a",
+      "lessons": 78,
+      "questions": 234
+    },
+    {
+      "file": "sinh-hoc.json",
+      "sha256": "b09d8d60c372aad36884a72be8653781c3ecfa1a66a7b390aed9d5705c0be35c",
+      "lessons": 90,
+      "questions": 270
+    },
+    {
+      "file": "lich-su.json",
+      "sha256": "73e8778a336cbee14b3a1a616ecf527c2a95bdfe424f0a975be35c2d0098f8c3",
+      "lessons": 43,
+      "questions": 129
+    },
+    {
+      "file": "dia-li.json",
+      "sha256": "8662268defa19343f79efb15c58fd9872acd30d7f111a09df178e306cf1e489e",
+      "lessons": 106,
+      "questions": 318
+    },
+    {
+      "file": "kinh-te-phap-luat.json",
+      "sha256": "bb570c62e49cafb7604ff3f252aca61bd424365ecc4e5fab6081ecfde2a52c88",
+      "lessons": 58,
+      "questions": 174
+    }
+  ]
+}

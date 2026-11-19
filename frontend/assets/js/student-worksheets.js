@@ -2,7 +2,7 @@ import {api,el,formatDate} from './api.js';
 import {initPage} from './ui-core.js';
 import {renderItem,resultBlock} from './worksheet-player.js';
 import {animalPath} from './animal-path.js';
-import {subjectsFor,subjectName} from './primary-subjects.js';
+import {subjectsFor,subjectName,semesterName} from './primary-subjects.js';
 import {rewardNotice} from './study-reward.js';
 const base='/api/v1/worksheets',root=document.querySelector('#ws-content'),notice=document.querySelector('#ws-notice');
 let current,index=0,timer,queue=Promise.resolve(),profile;
@@ -18,12 +18,12 @@ async function catalog(){
  history.replaceState(null,'',location.pathname);
  const [catalog,historyData]=await Promise.all([api(base),api(base+'/history')]);
  const grid=el('div',{class:'worksheet-student-grid'});
- const subject=profile.course?.kind==='secondary'?el('select',{id:'worksheet-subject',class:'select','aria-label':'Môn học'},[el('option',{value:'',text:'Tất cả môn học'}),...subjectsFor(profile).map(([value,text])=>el('option',{value,text}))]):null;
- function draw(){grid.replaceChildren();for(const sheet of catalog.data.filter(s=>(!semester.value||s.semester===semester.value)&&(!subject?.value||s.subject_id===subject.value)&&(!topic.value||s.chapter_id===topic.value)))grid.append(el('article',{class:'card'},[el('img',{src:'/assets/images/mascot-lion.svg',alt:'',width:70,height:76}),el('h2',{text:sheet.title}),...(sheet.lesson_name?[el('p',{class:'muted',text:(sheet.semester==='hk1'?'Học kì 1':'Học kì 2')+' · '+sheet.chapter_name+' · '+sheet.lesson_name})]:[]),el('p',{class:'muted',text:sheet.item_count+' câu · '+subjectName(sheet.subject_id,profile)}),button(sheet.active_attempt?'Tiếp tục':'Bắt đầu',()=>open(sheet.id,sheet.active_attempt))]));
+ const subject=['secondary','highschool'].includes(profile.course?.kind)?el('select',{id:'worksheet-subject',class:'select','aria-label':'Môn học'},[el('option',{value:'',text:'Tất cả môn học'}),...subjectsFor(profile).map(([value,text])=>el('option',{value,text}))]):null;
+ function draw(){grid.replaceChildren();for(const sheet of catalog.data.filter(s=>(!semester.value||s.semester===semester.value)&&(!subject?.value||s.subject_id===subject.value)&&(!topic.value||s.chapter_id===topic.value)))grid.append(el('article',{class:'card'},[el('img',{src:'/assets/images/mascot-lion.svg',alt:'',width:70,height:76}),el('h2',{text:sheet.title}),...(sheet.lesson_name?[el('p',{class:'muted',text:semesterName(sheet.semester)+' · '+sheet.chapter_name+' · '+sheet.lesson_name})]:[]),el('p',{class:'muted',text:sheet.item_count+' câu · '+subjectName(sheet.subject_id,profile)}),button(sheet.active_attempt?'Tiếp tục':'Bắt đầu',()=>open(sheet.id,sheet.active_attempt))]));
  if(!grid.children.length)grid.append(el('section',{class:'card'},[el('h2',{text:'Cô giáo đang chuẩn bị bài'}),el('p',{text:'Khi bài tập được đăng cho lớp của con, bài sẽ xuất hiện ở đây.'})]));
  animalPath(grid,{selector:':scope > article',title:'Luyện bài tập',hint:'Chọn bộ bài phù hợp với nội dung đã học. Bài đang làm có thể tiếp tục.'});
  }
- const semester=el('select',{class:'select','aria-label':'Học kì'},[el('option',{value:'',text:'Cả năm học'}),el('option',{value:'hk1',text:'Học kì 1'}),el('option',{value:'hk2',text:'Học kì 2'})]);
+ const semester=el('select',{class:'select','aria-label':'Học kì'},[el('option',{value:'',text:'Cả năm học'}),el('option',{value:'hk1',text:'Học kì 1'}),el('option',{value:'hk2',text:'Học kì 2'}),...(profile.grade>=10?[el('option',{value:'year',text:'Cả năm'})]:[])]);
  const topic=el('select',{class:'select','aria-label':'Chủ đề'});
  function topics(){const selected=topic.value;topic.replaceChildren(el('option',{value:'',text:'Tất cả chủ đề'}));const chapters=new Map(catalog.data.filter(s=>s.chapter_id&&(!semester.value||s.semester===semester.value)&&(!subject?.value||s.subject_id===subject.value)).map(s=>[s.chapter_id,s.chapter_name]));for(const [value,text]of chapters)topic.append(el('option',{value,text}));if(chapters.has(selected))topic.value=selected;draw();}
  semester.onchange=topics;topic.onchange=draw;if(subject)subject.onchange=topics;topics();
@@ -54,7 +54,7 @@ function render(){
  if(current.reward)root.append(rewardNotice(current.reward));
 }
 initPage('student','worksheets').then(async user=>{
- profile=user;if(!['primary','secondary'].includes(user.course?.kind)){root.replaceChildren(el('div',{class:'worksheet-locked'},[el('p',{text:'Chọn một khóa Tiểu học hoặc THCS để làm bài tập này nhé.'}),el('a',{class:'btn',href:'/pages/student/courses/',text:'Chọn khóa học'})]));return;}
+ profile=user;if(!['primary','secondary','highschool'].includes(user.course?.kind)){root.replaceChildren(el('div',{class:'worksheet-locked'},[el('p',{text:'Chọn một khóa Tiểu học, THCS hoặc THPT để làm bài tập này nhé.'}),el('a',{class:'btn',href:'/pages/student/courses/',text:'Chọn khóa học'})]));return;}
  document.querySelector('#ws-grade').textContent='Bài tập của khóa Lớp '+user.grade+' · Bài làm được tự động lưu.';
  const id=new URLSearchParams(location.search).get('attempt');if(id)await open(null,id);else await catalog();
 }).catch(e=>{notice.textContent=e.message;root.replaceChildren();});

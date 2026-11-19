@@ -133,13 +133,13 @@ async function refresh(){
  if(next!=null)freeTimer=setTimeout(()=>refresh().catch(e=>notice.textContent=e.message),Math.min(next+500,2147483000));
 }
 function syncProgram(){setDiamondProgram(filter);const url=new URL(location.href);if(filter)url.searchParams.set('program',filter);else url.searchParams.delete('program');history.replaceState(null,'',url.pathname+url.search+url.hash);}
-document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{filter=b.dataset.kind;syncProgram();document.querySelectorAll('[data-kind]').forEach(other=>other.setAttribute('aria-pressed',String(other===b)));document.querySelector('#course-heading').textContent='Khóa học '+({primary:'Tiểu học',secondary:'THCS',chinese:'Tiếng Trung'}[filter]);renderCourses();});
+document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{filter=b.dataset.kind;syncProgram();document.querySelectorAll('[data-kind]').forEach(other=>other.setAttribute('aria-pressed',String(other===b)));document.querySelector('#course-heading').textContent='Khóa học '+({primary:'Tiểu học',secondary:'THCS',highschool:'THPT',chinese:'Tiếng Trung'}[filter]);renderCourses();});
 document.querySelector('#all-courses').onclick=()=>{filter='';syncProgram();document.querySelectorAll('[data-kind]').forEach(b=>b.setAttribute('aria-pressed','false'));document.querySelector('#course-heading').textContent='Tất cả khóa học';renderCourses();};
 document.querySelector('.dialog-close').onclick=()=>dialog.close();document.querySelector('#refresh-orders').onclick=()=>refresh().catch(e=>notice.textContent=e.message);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden){if(watchId)checkPayment(watchId);refresh().catch(()=>{});}});
 window.addEventListener('pagehide',()=>{stopWatch();clearTimeout(freeTimer);},{once:true});
 initPage('student','courses').then(async()=>{
  const params=new URLSearchParams(location.search);if(params.has('locked'))notice.textContent='Quyền học đã hết hạn hoặc khóa học chưa được mở. Bạn có thể xem lịch miễn phí và học phí bên dưới.';
- await refresh();const kind=params.get('program');if(['primary','secondary','chinese'].includes(kind))document.querySelector('[data-kind='+kind+']').click();
+ await refresh();const kind=params.get('program');if(['primary','secondary','highschool','chinese'].includes(kind))document.querySelector('[data-kind='+kind+']').click();
  const id=params.get('payment');if(id&&/^[0-9a-f-]{36}$/iu.test(id)){notice.textContent='Đang xác nhận kết quả thanh toán MoMo…';watchPayment(id);}
 }).catch(e=>notice.textContent=e.message);

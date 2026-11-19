@@ -14,6 +14,7 @@ e2e/.auth/
 .DS_Store
 Thumbs.db
 backend/backups/
+backend/seed-data/highschool-content/
 __pycache__/
 public/
 .vercel/

@@ -5,7 +5,7 @@ import {answerFields,collectFields} from './worksheet-fields.js';
 import {loadReviews} from './admin-worksheet-reviews.js';
 import {store} from './admin-questions-context.js';
 import {selectedScope} from './admin-content-curriculum.js';
-import {SUBJECTS,subjectName} from './primary-subjects.js';
+import {subjectsFor,subjectName} from './primary-subjects.js';
 import {adminGrades} from './admin-permissions.js';
 const base='/api/v1/worksheets',workspace=document.querySelector('#ws-workspace'),notice=document.querySelector('#ws-notice'),dialog=document.querySelector('#ws-preview');
 let sheet=null,index=0,dirty=false,previewAnswer,previewItem,availableGrades=adminGrades();
@@ -43,7 +43,7 @@ function render(){
  const meta=el('div',{class:'worksheet-meta'},[field('Tên bộ bài','title',sheet.title),field('Lớp','grade','','select'),field('Môn học','subject_id','','select')]);
  const grades=meta.querySelector('[name=grade]');for(const n of store.tree?.grades.map(g=>g.grade)||availableGrades)grades.append(el('option',{value:n,text:'Lớp '+n}));grades.value=sheet.grade;
  const subjects=meta.querySelector('[name=subject_id]');
- const labelSubjects=()=>{const selected=subjects.value||sheet.subject_id;subjects.replaceChildren(...SUBJECTS.map(([id])=>el('option',{value:id,text:subjectName(id,grades.value)})));subjects.value=selected;};
+ const labelSubjects=()=>{const selected=subjects.value||sheet.subject_id;subjects.replaceChildren(...subjectsFor({grade:grades.value}).map(([id])=>el('option',{value:id,text:subjectName(id,grades.value)})));subjects.value=selected;if(!subjects.value)subjects.value='toan';};
  labelSubjects();grades.onchange=labelSubjects;
  if(sheet.lesson_id){grades.disabled=true;subjects.disabled=true;}
  const tabs=el('div',{class:'worksheet-question-tabs','aria-label':'Các câu hỏi'});

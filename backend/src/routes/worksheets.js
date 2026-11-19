@@ -36,7 +36,7 @@ router.put('/admin/:id',requireAdmin,handle(r=>service.save(r.user.id,r.params.i
 router.delete('/admin/:id',requireAdmin,handle(r=>deleteWorksheet(r.params.id,r.query.version)));
 router.get('/',requireStudent,handle(async r=>{
  const course=await requireCourse(r.user.id,r.get('X-Course-Id')||'grade-'+r.user.grade);
- if(!['primary','secondary'].includes(course.kind))throw badRequest('Bài tập này dành cho khóa Tiểu học hoặc THCS.');
+ if(!['primary','secondary','highschool'].includes(course.kind))throw badRequest('Bài tập này dành cho khóa Tiểu học, THCS hoặc THPT.');
  return query(`SELECT w.id,w.title,w.subject_id,c.semester,c.id chapter_id,c.name chapter_name,l.name lesson_name,${jsonArrayLength('w.items')} item_count,(SELECT a.id FROM worksheet_attempts a WHERE a.worksheet_id=w.id AND a.student_id=? AND a.status='in_progress' LIMIT 1) active_attempt FROM worksheets w LEFT JOIN curriculum_lessons l ON l.id=w.lesson_id LEFT JOIN curriculum_chapters c ON c.id=l.chapter_id WHERE w.grade=? AND w.status='published' ORDER BY c.semester,c.sort_order,l.sort_order,w.updated_at DESC`,[r.user.id,course.level]);
 }));
 router.get('/history',requireStudent,handle(r=>query(`SELECT id,worksheet_id,status,score,submitted_at,started_at,grade,${jsonText('snapshot','title')} title FROM worksheet_attempts WHERE student_id=? ORDER BY started_at DESC LIMIT 200`,[r.user.id])));

@@ -15,8 +15,10 @@ import chatRouter from './chat.js';
 import learningSupportRouter from './learning-support.js';
 import learningFeedbackRouter from './learning-feedback.js';
 import studentExperienceRouter from './student-experience.js';
+import schoolLessonRouter from './school-lessons.js';
 
 const router = Router();
+router.use('/school-lessons',schoolLessonRouter);
 router.use('/experience',studentExperienceRouter);
 router.use('/feedback',learningFeedbackRouter);
 router.use('/learning',learningSupportRouter);

@@ -5,17 +5,17 @@ import { schoolSubjectName } from '../utils/school-subjects.js';
 
 export async function listSubjects(grade=null) {
   const rows = await query('SELECT * FROM subjects ORDER BY sort_order ASC, name ASC');
-  return rows.map(row=>({...publicSubject(row),name:schoolSubjectName(row.id,grade,row.name)}));
+  return rows.filter(row=>Number(grade)>=10||['toan','tieng-viet','tieng-anh'].includes(row.id)).map(row=>({...publicSubject(row),name:schoolSubjectName(row.id,grade,row.name)}));
 }
 
 export async function listTopics(subjectId, grade) {
   const subjectRows = await query('SELECT id FROM subjects WHERE id = ? LIMIT 1', [subjectId]);
   if (!subjectRows[0]) throw new AppError(404, 'SUBJECT_NOT_FOUND', 'Môn học không tồn tại');
-  if (!Number.isInteger(grade) || grade < 1 || grade > 9) {
-    throw new AppError(400, 'GRADE_INVALID', 'Lớp phải từ 1 đến 9');
+  if (!Number.isInteger(grade) || grade < 1 || grade > 12) {
+    throw new AppError(400, 'GRADE_INVALID', 'Lớp phải từ 1 đến 12');
   }
   const rows = await query(
-    `SELECT t.*,c.id AS chapter_id,c.name AS chapter_name,c.semester,c.book_label,
+    `SELECT t.*,l.id AS lesson_id,m.status AS material_status,c.id AS chapter_id,c.name AS chapter_name,c.semester,c.book_label,
             (SELECT COUNT(*) FROM questions q
              WHERE q.topic_id = t.id AND q.status = 'published') AS question_count
      FROM topics t
@@ -23,6 +23,7 @@ export async function listTopics(subjectId, grade) {
        JOIN curriculum_chapters cc ON cc.id=chosen.chapter_id JOIN school_years yy ON yy.id=cc.school_year_id
        WHERE chosen.topic_id=t.id ORDER BY yy.is_active DESC,yy.sort_order,cc.sort_order,chosen.sort_order,chosen.id LIMIT 1)
      LEFT JOIN curriculum_chapters c ON c.id=l.chapter_id
+     LEFT JOIN school_lesson_materials m ON m.lesson_id=l.id
      WHERE t.subject_id = ? AND t.grade = ?
        AND (EXISTS (SELECT 1 FROM questions published WHERE published.topic_id=t.id AND published.status='published')
             OR NOT EXISTS (SELECT 1 FROM curriculum_lessons old_lesson
@@ -33,7 +34,7 @@ export async function listTopics(subjectId, grade) {
        CASE WHEN t.grade>=6 THEN l.sort_order ELSE t.sort_order END,t.name ASC`,
     [subjectId, grade],
   );
-  return rows.map(row=>({...publicTopic(row),chapterId:row.chapter_id||null,chapterName:row.chapter_name||null,semester:row.semester||null,bookLabel:row.book_label||null}));
+  return rows.map(row=>({...publicTopic(row),lessonId:row.lesson_id||null,hasMaterial:row.material_status==='published',chapterId:row.chapter_id||null,chapterName:row.chapter_name||null,semester:row.semester||null,bookLabel:row.book_label||null}));
 }
 
 export async function getTopicDetail(topicId) {

@@ -62,8 +62,8 @@ export function primaryCourseGuard(area) {
    if(id?.startsWith('grade-'))grade=Number(id.slice(6));else grade=r.user.grade;
   }
   if(grade==null&&(r.body?.topicId||parts[0]&&parts[0]!=='lobby'))return next();
-  if(area==='catalog'&&(!Number.isInteger(Number(grade))||Number(grade)<1||Number(grade)>9))return next();
-  if(!Number.isInteger(Number(grade))||Number(grade)<1||Number(grade)>9)throw new AppError(403,'COURSE_LOCKED','Con chọn khóa Lớp 1–9 trước khi vào học.');
+  if(area==='catalog'&&(!Number.isInteger(Number(grade))||Number(grade)<1||Number(grade)>12))return next();
+  if(!Number.isInteger(Number(grade))||Number(grade)<1||Number(grade)>12)throw new AppError(403,'COURSE_LOCKED','Con chọn khóa Lớp 1–12 trước khi vào học.');
   const course=await requireCourse(r.user.id,'grade-'+grade);
   if(course.kind!==schoolProgramForGrade(grade)||Number(course.level)!==Number(grade))throw new AppError(403,'COURSE_LOCKED','Khóa học không khớp với lớp đã chọn.');
   r.primaryGrade=Number(grade);

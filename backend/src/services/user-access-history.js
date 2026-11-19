@@ -31,14 +31,14 @@ export async function recordUserAccess(user,event,request){
  if(event==='page'&&(request.method!=='GET'||/prefetch/i.test(request.get?.('sec-purpose')||request.get?.('purpose')||'')))return;
  const page=event==='page'?accessPageKey(request.originalUrl):'';if(event==='page'&&!page)return;
  const {device,browser}=accessDevice(request.get?.('user-agent'));
- const cookieCourse=request.cookies?.ttnava_course,course=event==='page'&&user.role==='student'&&/^(hsk|grade)-[1-9]$/u.test(cookieCourse||'')?cookieCourse:null;
+ const cookieCourse=request.cookies?.ttnava_course,course=event==='page'&&user.role==='student'&&/^(?:hsk-[1-9]|grade-(?:[1-9]|1[0-2]))$/u.test(cookieCourse||'')?cookieCourse:null;
  const dedup=event==='page'?createHash('sha256').update(JSON.stringify([user.id,page,course,device,browser,Math.floor(Date.now()/60000)])).digest('hex'):null;
  try{
   await query(dialectSql('INSERT INTO user_access_events(id,profile_id,event_type,page_key,course_id,device_type,browser,dedup_key) VALUES (?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE last_seen_at=CURRENT_TIMESTAMP(3),visits_count=LEAST(visits_count+1,9999)','INSERT INTO user_access_events(id,profile_id,event_type,page_key,course_id,device_type,browser,dedup_key) VALUES (?,?,?,?,?,?,?,?) ON CONFLICT(dedup_key) DO UPDATE SET last_seen_at=CURRENT_TIMESTAMP(3),visits_count=LEAST(user_access_events.visits_count+1,9999)'),[randomUUID(),user.id,event,page,course,device,browser,dedup]);
   const day=new Date().toISOString().slice(0,10);if(cleanupDay!==day){cleanupDay=day;await pruneAccessHistory();}
  }catch{if(!warned){warned=true;console.warn('Access history recording unavailable; authentication and page access continue.');}}
 }
-const optionsSchema=z.object({page:z.coerce.number().int().min(1).max(10000).default(1),limit:z.coerce.number().int().min(1).max(50).default(20),q:z.string().trim().max(100).default(''),role:z.enum(['','student','admin']).default(''),program:z.enum(['','chinese','primary','secondary']).default('')});
+const optionsSchema=z.object({page:z.coerce.number().int().min(1).max(10000).default(1),limit:z.coerce.number().int().min(1).max(50).default(20),q:z.string().trim().max(100).default(''),role:z.enum(['','student','admin']).default(''),program:z.enum(['','chinese','primary','secondary','highschool']).default('')});
 function visibility(viewer){
  const scope=adminScopeOf(viewer);if(!scope)throw new AppError(403,'FORBIDDEN','Bạn không có quyền xem nhật ký.');
  return scope==='super'?"p.role IN ('student','admin')":`p.role='student' AND ${studentVisibleCondition(viewer,'p')} AND ${studentProgramCondition('p',scope)}`;

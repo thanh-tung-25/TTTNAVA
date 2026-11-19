@@ -32,10 +32,13 @@ export function parseMetadata(lines) {
       if (slug.includes('toán') || slug === 'toan') metadata.subjectId = 'toan';
       if (slug.includes('việt') || slug.includes('viet') || /ngữ\s*văn|ngu\s*van/.test(slug)) metadata.subjectId = 'tieng-viet';
       if (slug.includes('anh')) metadata.subjectId = 'tieng-anh';
+      const plain=slug.normalize('NFD').replace(/\p{M}/gu,'').replace(/đ/gu,'d');
+      const otherSubjects=[['vat li','vat-li'],['vat ly','vat-li'],['hoa hoc','hoa-hoc'],['sinh hoc','sinh-hoc'],['lich su','lich-su'],['dia li','dia-li'],['dia ly','dia-li'],['kinh te','kinh-te-phap-luat'],['giao duc cong dan','kinh-te-phap-luat'],['gdcd','kinh-te-phap-luat']];
+      for(const [label,id]of otherSubjects)if(plain.includes(label))metadata.subjectId=id;
     } else if (key.startsWith('chủ') || key.startsWith('chu') || key === 'topic') {
       metadata.topicName = value;
     } else {
-      const grade = Number(value.match(/\b([1-9])\b/)?.[1]);
+      const grade = Number(value.match(/\b(1[0-2]|[1-9])\b/)?.[1]);
       if (grade) metadata.grade = grade;
     }
   }

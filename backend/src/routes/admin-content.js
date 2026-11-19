@@ -1,3 +1,4 @@
+import {SCHOOL_SUBJECT_IDS} from '../utils/school-programs.js';
 import {Router} from 'express';
 import {z} from 'zod';
 import {authenticateToken} from '../middlewares/auth.js';
@@ -9,7 +10,7 @@ import {publishLessonQuestions} from '../services/question-bulk-publish.js';
 import {sendArchive,DOCX_MIME} from '../services/private-storage.js';
 const router=Router();router.use(authenticateToken,requireSchoolAdmin);
 router.get('/word-documents',asyncHandler(async(req,res)=>{
- const f=z.object({q:z.string().trim().max(100).default(''),grade:z.coerce.number().int().min(1).max(9).optional(),semester:z.enum(['hk1','hk2']).optional(),page:z.coerce.number().int().min(1).default(1)}).parse(req.query);
+ const f=z.object({q:z.string().trim().max(100).default(''),grade:z.coerce.number().int().min(1).max(12).optional(),semester:z.enum(['hk1','hk2','year']).optional(),page:z.coerce.number().int().min(1).default(1)}).parse(req.query);
  const where=[schoolGradeCondition(req.schoolProgram,'c.grade')],params=[];
  if(f.q){where.push('(d.filename LIKE ? OR l.name LIKE ?)');params.push('%'+f.q+'%','%'+f.q+'%');}
  if(f.grade){where.push('c.grade=?');params.push(f.grade);}if(f.semester){where.push('c.semester=?');params.push(f.semester);}
@@ -30,7 +31,7 @@ router.post('/publish-questions',asyncHandler(async(req,res)=>{
  res.json({data:await publishLessonQuestions(lessonId,req.user.id)});
 }));
 router.get('/',asyncHandler(async(req,res)=>{
- const filters=z.object({q:z.string().trim().max(100).default(''),kind:z.enum(['','worksheet','question']).default(''),grade:z.coerce.number().int().min(1).max(9).optional(),status:z.enum(['','draft','published','hidden']).default(''),page:z.coerce.number().int().min(1).default(1),yearId:z.string().max(20).optional(),semester:z.enum(['hk1','hk2']).optional(),subjectId:z.enum(['toan','tieng-viet','tieng-anh']).optional(),chapterId:z.string().max(90).optional(),lessonId:z.string().max(90).optional(),unassigned:z.enum(['1']).optional()}).parse(req.query);
+ const filters=z.object({q:z.string().trim().max(100).default(''),kind:z.enum(['','worksheet','question']).default(''),grade:z.coerce.number().int().min(1).max(12).optional(),status:z.enum(['','draft','published','hidden']).default(''),page:z.coerce.number().int().min(1).default(1),yearId:z.string().max(20).optional(),semester:z.enum(['hk1','hk2','year']).optional(),subjectId:z.enum(SCHOOL_SUBJECT_IDS).optional(),chapterId:z.string().max(90).optional(),lessonId:z.string().max(90).optional(),unassigned:z.enum(['1']).optional()}).parse(req.query);
  const scopeWhere=[],scopeParams=[];
  for(const [key,column]of Object.entries({yearId:'c.school_year_id',semester:'c.semester',subjectId:'c.subject_id',chapterId:'c.id',lessonId:'l.id'}))if(filters[key]){scopeWhere.push(column+'=?');scopeParams.push(filters[key]);}
  const scope=scopeWhere.length?' AND '+scopeWhere.join(' AND '):'';
@@ -47,14 +48,14 @@ router.get('/',asyncHandler(async(req,res)=>{
  res.json({data:rows,pagination:{page:filters.page,total:Number(count.total),limit:20}});
 }));
 router.post('/chapters',asyncHandler(async(req,res)=>{
- const d=z.object({yearId:z.string().min(1).max(20),grade:z.number().int().min(1).max(9),semester:z.enum(['hk1','hk2']),subjectId:z.enum(['toan','tieng-viet','tieng-anh']),name:z.string().trim().min(1).max(160)}).parse(req.body);
+ const d=z.object({yearId:z.string().min(1).max(20),grade:z.number().int().min(1).max(12),semester:z.enum(['hk1','hk2','year']),subjectId:z.enum(SCHOOL_SUBJECT_IDS),name:z.string().trim().min(1).max(160)}).parse(req.body);
  const id='custom-'+randomUUID();
  if(!(await query('SELECT id FROM school_years WHERE id=?',[d.yearId])).length)throw notFound();
  await query('INSERT INTO curriculum_chapters (id,school_year_id,grade,semester,subject_id,name,slug,sort_order) VALUES (?,?,?,?,?,?,?,200)',[id,d.yearId,d.grade,d.semester,d.subjectId,d.name,id]);
  res.json({data:{id}});
 }));
 router.post('/lessons',asyncHandler(async(req,res)=>{
- const d=z.object({chapterId:z.string().min(1).max(90),name:z.string().trim().min(1).max(120)}).parse(req.body);
+ const d=z.object({chapterId:z.string().min(1).max(90),name:z.string().trim().min(1).max(255)}).parse(req.body);
  const id='custom-'+randomUUID();
  await withTransaction(async c=>{
   const [rows]=await c.query('SELECT grade,subject_id FROM curriculum_chapters WHERE id=? FOR UPDATE',[d.chapterId]);if(!rows[0])throw notFound();

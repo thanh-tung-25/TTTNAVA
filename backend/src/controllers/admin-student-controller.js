@@ -15,7 +15,7 @@ import {getAccountDeletionPreview,issueAccountDeletionConfirmation,deleteAccount
 
 const listQuery = z.object({
   q: z.string().trim().max(120).optional(),
-  program: z.enum(['chinese', 'primary', 'secondary']).optional(),
+  program: z.enum(['chinese','primary','secondary','highschool']).optional(),
   status:z.enum(['active','deleted']).default('active'),
 });
 

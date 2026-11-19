@@ -2,7 +2,7 @@ import { listSubjects, listTopics, getTopicDetail } from '../services/catalog-se
 import { asyncHandler } from '../utils/errors.js';
 
 export const subjectsHandler = asyncHandler(async (request, response) => {
-  const selected=request.get('X-Course-Id')?.match(/^grade-([1-9])$/)?.[1];
+  const selected=request.get('X-Course-Id')?.match(/^grade-([1-9]|1[0-2])$/)?.[1];
   response.json({ data: await listSubjects(Number(request.query.grade||selected||request.user.grade)) });
 });
 

@@ -1,0 +1,12 @@
+import {Router} from 'express';
+import {z} from 'zod';
+import {authenticateToken,requireStudent,requirePlayer,requireAdmin} from '../middlewares/auth.js';
+import {asyncHandler} from '../utils/errors.js';
+import {rateLimit} from '../middlewares/rate-limit.js';
+import {schoolLesson,startSchoolLesson,updateSchoolLesson} from '../services/school-lessons.js';
+const router=Router(),id=request=>z.string().min(1).max(90).regex(/^[a-zA-Z0-9_-]+$/u).parse(request.params.id);
+router.use(authenticateToken);
+router.get('/:id',asyncHandler(async(request,response)=>response.set('Cache-Control','private, no-store').json({data:await schoolLesson(request.user,id(request))})));
+router.put('/:id',requireAdmin,asyncHandler(async(request,response)=>response.set('Cache-Control','private, no-store').json({data:await updateSchoolLesson(request.user,id(request),request.body)})));
+router.post('/:id/start',requireStudent,requirePlayer,rateLimit({max:20,keyPrefix:'school-lesson-start'}),asyncHandler(async(request,response)=>response.status(201).set('Cache-Control','private, no-store').json({data:await startSchoolLesson(request.user,id(request))})));
+export default router;

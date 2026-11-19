@@ -41,7 +41,7 @@ export async function getAdminStats(scope = 'super') {
     bank:{subjects:Number(bank.subjects),topics:Number(bank.topics),questions:Number(bank.questions),publishedQuestions:Number(bank.published_questions),draftQuestions:Number(bank.draft_questions),hiddenQuestions:Number(bank.hidden_questions)},
     practiceSessions:Number(practice.total),examAttempts:Number(exam.total),
     diamondsAwarded:Number(diamonds.total),
-    bySubject:bySubject.map(row=>({id:row.id,name:schoolSubjectName(row.id,scope==='secondary'?6:0,row.name),color:row.color,practices:Number(row.practices),exams:Number(row.exams)})),
+    bySubject:bySubject.map(row=>({id:row.id,name:schoolSubjectName(row.id,scope==='highschool'?10:scope==='secondary'?6:0,row.name),color:row.color,practices:Number(row.practices),exams:Number(row.exams)})),
     topStudents:topStudents.map(row=>({profileId:row.id,displayName:row.display_name,avatarKey:row.avatar_key,grade:Number(row.grade),diamonds:Number(row.diamonds)})),
   };
 }

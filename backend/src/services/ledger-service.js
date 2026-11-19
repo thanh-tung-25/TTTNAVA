@@ -50,6 +50,7 @@ export async function diamondProgramTotals(profileId) {
          WHEN dl.ref_type='quest' THEN qc.kind
          WHEN COALESCE(t.grade,ch.grade) BETWEEN 1 AND 5 THEN 'primary'
          WHEN COALESCE(t.grade,ch.grade) BETWEEN 6 AND 9 THEN 'secondary'
+         WHEN COALESCE(t.grade,ch.grade) BETWEEN 10 AND 12 THEN 'highschool'
          ELSE NULL END AS program
        FROM diamond_ledger dl
        LEFT JOIN student_quest_claims sq ON dl.ref_type='quest' AND sq.id=dl.ref_id AND sq.profile_id=dl.profile_id
@@ -60,10 +61,10 @@ export async function diamondProgramTotals(profileId) {
        LEFT JOIN challenges ch ON dl.ref_type='challenge' AND ch.id=dl.ref_id AND (ch.challenger_id=dl.profile_id OR ch.opponent_id=dl.profile_id)
        WHERE dl.profile_id=?
      ) earned
-     WHERE earned.program IN ('primary','secondary','chinese') GROUP BY earned.program`,
+     WHERE earned.program IN ('primary','secondary','highschool','chinese') GROUP BY earned.program`,
     [vnRange('week').start,vnRange('month').start,profileId],
   );
-  const programs=Object.fromEntries(['primary','secondary','chinese'].map(kind=>[kind,{total:0,week:0,month:0}]));
+  const programs=Object.fromEntries(['primary','secondary','highschool','chinese'].map(kind=>[kind,{total:0,week:0,month:0}]));
   for(const row of rows)programs[row.program]={total:Number(row.total),week:Number(row.week),month:Number(row.month)};
   return programs;
 }

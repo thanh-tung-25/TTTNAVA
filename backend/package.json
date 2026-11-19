@@ -23,7 +23,8 @@
     "questions:legacy": "node scripts/legacy-question-status.js",
     "seed:admin": "node scripts/create-admin-user.js",
     "test": "vitest run --config vitest.config.js",
-    "test:watch": "vitest --config vitest.config.js"
+    "test:watch": "vitest --config vitest.config.js",
+    "db:seed-highschool": "node scripts/release-highschool.mjs --target=local --apply"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.118.0",

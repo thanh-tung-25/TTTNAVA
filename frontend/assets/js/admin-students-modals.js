@@ -13,8 +13,8 @@ export function openCreate() {
   if (!store.canCreateAccounts) return;
   const chineseOnly = store.adminScope === 'chinese';
   const gradeOptions = '<option value="">Tiếng Trung — không theo khối lớp</option>'
-    + (chineseOnly ? '' : Array.from({ length: 9 }, (_, i) => i + 1)
-      .map((grade) => `<option value="${grade}">Lớp ${grade}${grade > 5 ? ' · THCS' : ''}</option>`).join(''));
+    + (chineseOnly ? '' : Array.from({ length: 12 }, (_, i) => i + 1)
+      .map((grade) => `<option value="${grade}">Lớp ${grade}${grade>=10?' · THPT':grade>=10?' · THPT':grade>5?' · THCS':''}</option>`).join(''));
   const form = document.createElement('form');
   form.innerHTML = `
     <div class="form-error hidden" data-error role="alert"></div>
@@ -32,7 +32,7 @@ export function openCreate() {
         <select class="select" id="new-avatar" name="avatarKey">${avatarOptions('meo')}</select></div>
     </div>`;
   setupPasswordToggle(form.querySelector('#new-password'));
-  form.querySelector('#new-grade').value = chineseOnly||store.program==='chinese'?'':store.program==='secondary'?'6':'1';
+  form.querySelector('#new-grade').value = chineseOnly||store.program==='chinese'?'':store.program==='highschool'?'10':store.program==='secondary'?'6':'1';
   const modal = openModal({
     title: 'Thêm học sinh',
     content: form,
@@ -82,7 +82,7 @@ export async function openEdit(id) {
         <input class="input" id="edit-name" name="displayName" maxlength="60" value="${escapeHtml(student.displayName)}" required></div>
       <div class="grid grid-2">
         <div class="field"><label for="edit-grade">Lớp</label>
-          <select class="select" id="edit-grade" name="grade"><option value="">Tiếng Trung — không theo khối lớp</option>${Array.from({length:9},(_,i)=>i+1).map((grade) => `<option value="${grade}"${grade === student.grade ? ' selected' : ''}>Lớp ${grade}${grade>5?' · THCS':''}</option>`).join('')}</select></div>
+          <select class="select" id="edit-grade" name="grade"><option value="">Tiếng Trung — không theo khối lớp</option>${Array.from({length:12},(_,i)=>i+1).map((grade) => `<option value="${grade}"${grade === student.grade ? ' selected' : ''}>Lớp ${grade}${grade>5?' · THCS':''}</option>`).join('')}</select></div>
         <div class="field"><label for="edit-avatar">Ảnh đại diện</label>
           <select class="select" id="edit-avatar" name="avatarKey">${avatarOptions(student.avatarKey)}</select></div>
       </div>

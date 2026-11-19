@@ -23,7 +23,7 @@ let diamondTotal = null;
 let diamondPrograms = null;
 let diamondProgram = null;
 let diamondRequest = 0;
-const programLabels = {primary:'Tiểu học',secondary:'THCS',chinese:'Tiếng Trung'};
+const programLabels = {primary:'Tiểu học',secondary:'THCS',highschool:'THPT',chinese:'Tiếng Trung'};
 const courseCatalogUrl = program => '/pages/student/courses/' + (program ? '?program=' + encodeURIComponent(program) : '');
 
 function renderHeader(profile, role, active) {

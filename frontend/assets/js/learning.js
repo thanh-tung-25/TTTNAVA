@@ -1,5 +1,6 @@
 import { el } from './api.js';
 import { initPage } from './ui-core.js';
+import {subjectsFor} from './primary-subjects.js';
 
 function subjectCard({ title, text, href, animal, symbol, tone, cta='Vào học →' }) {
   return el('a', { class: 'learning-subject '+tone, href }, [
@@ -15,6 +16,7 @@ async function load() {
   const profile = await initPage('student', 'learning');
   const chinese = profile.course?.kind === 'chinese';
   const secondary = profile.course?.kind === 'secondary';
+  const highschool = profile.course?.kind === 'highschool';
   document.body.dataset.program=profile.course?.kind||'';
   const title = profile.course?.title || (chinese ? 'Tiếng Trung HSK '+profile.course.level : 'Lớp '+profile.grade);
   document.getElementById('learning-course').textContent = title;
@@ -41,6 +43,13 @@ async function load() {
     subjects[1].title='Ngữ văn';
     subjects[1].text='Đọc hiểu, thực hành tiếng Việt, viết, nói và nghe theo từng bài học.';
     subjects[2].text='Từ vựng, ngữ pháp và ôn tập theo Unit, Review của Global Success.';
+  }
+  if(highschool){
+    document.getElementById('learning-description').textContent='9 môn THPT theo bộ Kết nối tri thức; Tiếng Anh Global Success. Chọn môn và bài đang học.';
+    document.getElementById('learning-subjects-title').textContent='Môn học THPT';
+    document.getElementById('learning-subjects-hint').textContent='Mục lục lớp '+profile.grade+' theo chương, chủ đề và bài học.';
+    const descriptions={toan:'Đại số, giải tích, hình học, thống kê và xác suất.','tieng-viet':'Văn bản, đọc hiểu, viết, nói và nghe theo từng chủ đề.','tieng-anh':'10 Unit và 4 Review, chia theo các tiết học Global Success.','vat-li':'Khám phá hiện tượng và quy luật vật lí qua từng bài.','hoa-hoc':'Chất, phản ứng và ứng dụng hóa học theo chương.','sinh-hoc':'Tìm hiểu thế giới sống và các quy luật sinh học.','lich-su':'Sự kiện, tiến trình và chủ đề lịch sử.','dia-li':'Địa lí tự nhiên, kinh tế, xã hội và các khu vực.','kinh-te-phap-luat':'Kiến thức kinh tế, quyền và nghĩa vụ công dân.'};
+    subjects.splice(0,subjects.length,...subjectsFor(profile).map(([id,title,symbol],i)=>({title,text:descriptions[id],href:'/pages/student/practice/?subject='+id,animal:['lion','bunny','panda'][i%3],symbol,tone:['learning-purple','learning-peach','learning-mint'][i%3]})));
   }
   document.getElementById('learning-subjects').replaceChildren(...subjects.map(subjectCard));
   const tools = chinese ? [

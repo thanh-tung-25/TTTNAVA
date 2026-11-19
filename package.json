@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "engines": { "node": "24.x" },
+  "engines": {
+    "node": "24.x"
+  },
   "description": "TTNAVA - web app trac nghiem cho hoc sinh tieu hoc (HTML/CSS/JS thuan + Express + MySQL)",
   "scripts": {
     "dev": "npm --prefix backend run dev",
@@ -25,7 +27,8 @@
     "db:seed-secondary": "npm --prefix backend run db:seed-secondary",
     "test:secondary": "playwright test --config playwright.secondary.config.js",
     "questions:legacy": "npm --prefix backend run questions:legacy",
-    "seed:admin": "npm --prefix backend run seed:admin"
+    "seed:admin": "npm --prefix backend run seed:admin",
+    "db:seed-highschool": "node backend/scripts/release-highschool.mjs --target=local --apply"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.1"

@@ -13,7 +13,7 @@ export const store = {
   totalPages: 1,
   search: '',
   status: 'active',
-  program: ['primary','secondary','chinese'].includes(new URLSearchParams(location.search).get('program')) ? new URLSearchParams(location.search).get('program') : '',
+  program: ['primary','secondary','highschool','chinese'].includes(new URLSearchParams(location.search).get('program')) ? new URLSearchParams(location.search).get('program') : '',
   studentsById: new Map(),
   canCreateAccounts: false,
   canManageAccounts: true,
@@ -49,7 +49,7 @@ export function row(student) {
         </div>
       </td>
       ${store.canViewStudentEmail ? emailCell(student) : ''}
-      <td>${store.adminScope==='chinese'?'Tiếng Trung':store.adminScope==='primary'?'Tiểu học':store.adminScope==='secondary'?'THCS':student.grade === null ? 'Tiếng Trung' : `Lớp ${student.grade}`}</td>
+      <td>${store.adminScope==='chinese'?'Tiếng Trung':store.adminScope==='primary'?'Tiểu học':store.adminScope==='secondary'?'THCS':store.adminScope==='highschool'?'THPT':student.grade === null ? 'Tiếng Trung' : `Lớp ${student.grade}`}</td>
       <td>${deleted ? '<span class="badge badge-danger">Đã xóa</span>' : locked ? '<span class="badge badge-danger">Đã khoá</span>' : '<span class="badge badge-success">Hoạt động</span>'}</td>
       <td>${formatDate(deleted ? student.deletedAt : student.createdAt, false)}</td>
       <td>

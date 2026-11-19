@@ -8,7 +8,7 @@ import {forbidden} from '../utils/errors.js';
 import {studentVisibleCondition} from '../utils/student-visibility.js';
 export const categories=['question','answer','audio','image','display','account','payment','suggestion','other'];
 export async function sendFeedback(user,body){
- const d=parse(z.object({category:z.enum(categories),message:z.string().trim().min(5).max(4000),page_url:z.string().max(1000).regex(/^\/(?!\/)/),context_text:z.string().max(2000).default(''),scope:z.enum(['general','primary','secondary','chinese']).default('general')}),body);
+ const d=parse(z.object({category:z.enum(categories),message:z.string().trim().min(5).max(4000),page_url:z.string().max(1000).regex(/^\/(?!\/)/),context_text:z.string().max(2000).default(''),scope:z.enum(['general','primary','secondary','highschool','chinese']).default('general')}),body);
  // Categories about accounts and payments go to the general administrator.
  const scope=['account','payment'].includes(d.category)?'general':d.scope;
  const id=randomUUID();await query('INSERT INTO learning_feedback(id,reporter_id,scope,category,message,page_url,context_text) VALUES (?,?,?,?,?,?,?)',[id,user.id,scope,d.category,d.message,d.page_url,d.context_text]);return {id};

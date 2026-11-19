@@ -8,11 +8,12 @@ let report;
 async function today(){
  const d=(await api('/api/v1/learning/today')).data;
  out.replaceChildren(el('div',{class:'support-hero'},[el('img',{src:'/assets/images/mascot-panda.svg',alt:'',width:100,height:100}),el('div',{},[el('h2',{text:d.course.title}),el('p',{text:d.reason})])]));
- if(['primary','secondary'].includes(d.kind)){
-  if(!d.topic){out.append(card('Đang chờ nội dung',[el('p',{text:'Khóa này chưa có chủ đề đủ 10 câu. Hãy quay lại mục Học tập để xem nội dung đã có.'}),link('Về học tập','/pages/student/learning/')]));return;}
-  const start=el('button',{class:'btn btn-primary',type:'button',text:d.recent?.status==='in_progress'?'Tiếp tục 10 câu':d.recent?.status==='finished'?'Luyện thêm 10 câu':'Bắt đầu 10 câu'});
+ if(['primary','secondary','highschool'].includes(d.kind)){
+  if(!d.topic){out.append(card('Đang chờ nội dung',[el('p',{text:'Khóa này chưa có bài phù hợp cho lượt học hôm nay. Hãy quay lại mục Học tập để xem nội dung đã có.'}),link('Về học tập','/pages/student/learning/')]));return;}
+  const count=d.kind==='highschool'?Math.min(10,Number(d.topic.total)):10;
+  const start=el('button',{class:'btn btn-primary',type:'button',text:(d.recent?.status==='in_progress'?'Tiếp tục ':d.recent?.status==='finished'?'Luyện thêm ':'Bắt đầu ')+count+' câu'});
   start.onclick=async()=>{start.disabled=true;try{location.assign((await api('/api/v1/learning/today/start',{method:'POST'})).data.href);}catch(e){notice.textContent=e.message;start.disabled=false;}};
-  out.append(card('1. Nghe và làm 10 câu',[el('p',{text:d.topic.subject+' · '+d.topic.name}),questionAudio('Hôm nay mình cùng luyện 10 câu. Con nghe đề, nghe từng lựa chọn rồi trả lời nhé.',{label:'Nghe hướng dẫn'}),start]),card('2. Xem lại sau khi làm',[el('p',{text:'Đọc hoặc nghe lại đề các câu sai, xem lời giải rồi thử lại.'}),...(d.recent?.status==='finished'?[el('p',{text:'Lượt gần nhất hôm nay: '+d.recent.correct_count+'/'+d.recent.total_questions+' câu đúng.'})]:[])]));
+  out.append(card('1. Nghe và làm '+count+' câu',[el('p',{text:d.topic.subject+' · '+d.topic.name}),...(d.kind==='highschool'&&d.topic.lesson_id?[link('Đọc kiến thức và ví dụ','/pages/student/lesson/?id='+encodeURIComponent(d.topic.lesson_id))]:[]),questionAudio('Hôm nay mình cùng luyện '+count+' câu. Con nghe đề, nghe từng lựa chọn rồi trả lời nhé.',{label:'Nghe hướng dẫn'}),start]),card('2. Xem lại sau khi làm',[el('p',{text:'Đọc hoặc nghe lại đề các câu sai, xem lời giải rồi thử lại.'}),...(d.recent?.status==='finished'?[el('p',{text:'Lượt gần nhất hôm nay: '+d.recent.correct_count+'/'+d.recent.total_questions+' câu đúng.'})]:[])]));
  }else{
   out.append(card('1. Ôn một nhóm từ nhỏ',[el('p',{text:d.words.length?'Bấm từng từ để mở thẻ, nghe mẫu và tự đánh giá đã nhớ hay cần ôn.':'Chưa có thẻ từ trong khóa này. Admin cần bổ sung mục từ vựng.'}),el('div',{class:'support-word-list'},d.words.map(w=>el('a',{class:'support-word',href:w.href},[el('strong',{text:w.hanzi}),el('small',{text:w.meaning})])))]));
   if(d.activity)out.append(card('2. Dùng từ trong câu',[el('p',{text:d.activity.title}),el('p',{text:d.activity.applied?'Chọn một dạng và luyện 10 câu; có thể nghe từng lựa chọn.':'Mở thẻ bài học để tiếp tục ôn.'}),link(d.activity.applied?'Luyện vận dụng 10 câu':'Mở bài học',d.activity.href)]));

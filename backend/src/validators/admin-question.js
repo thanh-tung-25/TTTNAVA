@@ -9,8 +9,8 @@ const questionTypeSchema = z.enum(['single_choice', 'multiple_choice', 'true_fal
 const questionStatusSchema = z.enum(['draft', 'published', 'hidden']);
 const scopeFields = {
   yearId: z.string().trim().max(20).optional(),
-  grade: z.coerce.number().int().min(1).max(9).optional(),
-  semester: z.enum(['hk1', 'hk2']).optional(),
+  grade: z.coerce.number().int().min(1).max(12).optional(),
+  semester: z.enum(['hk1','hk2','year']).optional(),
   subjectId: z.string().trim().max(20).optional(),
   chapterId: z.string().trim().max(90).optional(),
   lessonId: z.string().trim().max(90).optional(),

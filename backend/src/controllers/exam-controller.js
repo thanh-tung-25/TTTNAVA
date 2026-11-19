@@ -1,3 +1,4 @@
+import {SCHOOL_SUBJECT_IDS} from '../utils/school-programs.js';
 import { startTopicSchema, submitAnswerSchema } from '../validators/play.js';
 import {
   getExam,
@@ -20,7 +21,7 @@ export const startExamHandler = asyncHandler(async (request, response) => {
   response.status(201).json({ data: await startExam(request.user.id, topicId) });
 });
 export const examCatalogHandler=asyncHandler(async(request,response)=>{
- const subjectId=z.enum(['toan','tieng-viet','tieng-anh']).parse(request.query.subjectId);
+ const subjectId=z.enum(SCHOOL_SUBJECT_IDS).parse(request.query.subjectId);
  response.json({data:await examCatalog(request.primaryGrade,subjectId)});
 });
 

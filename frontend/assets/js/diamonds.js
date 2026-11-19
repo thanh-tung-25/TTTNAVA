@@ -39,7 +39,7 @@ async function main() {
   document.getElementById('diamond-week').textContent = `Kiếm tuần này: ${data.week.toLocaleString('vi-VN')}`;
   document.getElementById('diamond-month').textContent = `Kiếm tháng này: ${data.month.toLocaleString('vi-VN')}`;
   const programs=document.getElementById('diamond-programs');
-  programs.replaceChildren(...Object.entries({primary:'Tiểu học',secondary:'THCS',chinese:'Tiếng Trung'}).map(([key,label])=>{
+  programs.replaceChildren(...Object.entries({primary:'Tiểu học',secondary:'THCS',highschool:'THPT',chinese:'Tiếng Trung'}).map(([key,label])=>{
     const badge=document.createElement('span');badge.className='badge badge-warning';
     badge.textContent=label+': '+Number(data.programs?.[key]?.total||0).toLocaleString('vi-VN')+' 💎';return badge;
   }));

@@ -21,6 +21,15 @@ export async function todayPlan(user,courseId){
   const chosen=sets.find(s=>words.some(w=>w.set_id===s.id))||sets[0];
   return {day,course,kind:'chinese',minutes:10,words:words.map(w=>({id:w.id,hanzi:json(w.data).hanzi,meaning:json(w.data).meaning,href:'/pages/student/chinese/?'+new URLSearchParams({set:w.set_id,mode:'cards',word:w.id})})),activity:chosen?{title:chosen.lesson_title,href:'/pages/student/chinese/?'+new URLSearchParams({set:chosen.id,mode:chosen.applied?'apply':'cards'}),applied:!!chosen.applied}:null,reason:due.length?'Ôn các từ đã đến lịch, rồi vận dụng trong câu.':'Học một nhóm từ nhỏ, rồi luyện vận dụng.'};
  }
+ if(course.kind==='highschool'){
+  const topics=await query("SELECT t.id,t.name,t.subject_id,MIN(l.id) lesson_id,COUNT(DISTINCT q.id) total FROM topics t JOIN curriculum_lessons l ON l.topic_id=t.id JOIN school_lesson_materials m ON m.lesson_id=l.id AND m.status='published' JOIN questions q ON q.topic_id=t.id AND q.status='published' WHERE t.grade=? GROUP BY t.id,t.name,t.subject_id,t.sort_order HAVING COUNT(DISTINCT q.id)>=3 ORDER BY t.subject_id,t.sort_order,t.id",[course.level]);
+  const due=await query('SELECT skill_key FROM learning_skill_state WHERE profile_id=? AND course_id=? AND next_review_at<=CURRENT_TIMESTAMP ORDER BY next_review_at,skill_key LIMIT 30',[user,courseId]);
+  const revision=due.map(row=>topics.find(topic=>topic.id===row.skill_key)).find(Boolean),topic=revision||topics[Number(day.replaceAll('-',''))%Math.max(1,topics.length)]||null;
+  const runs=topic?await query('SELECT id,status,items_json,answers_json FROM learning_runs WHERE profile_id=? AND course_id=? AND created_at>=? ORDER BY created_at DESC LIMIT 20',[user,courseId,today]):[];
+  const previous=runs.find(row=>(json(row.items_json)||[])[0]?.skill===topic?.id);
+  const answers=previous?Object.values(json(previous.answers_json)||{}):[];
+  return {day,course,kind:course.kind,minutes:10,topic:topic?{...topic,subject:schoolSubjectName(topic.subject_id,course.level)}:null,reason:revision?'Ôn lại bài đã đến lịch, đọc ví dụ rồi luyện một nhóm câu ngắn.':'Đọc kiến thức và luyện một nhóm câu của bài học hôm nay.',recent:previous?{id:previous.id,status:previous.status==='finished'?'finished':'in_progress',correct_count:answers.filter(answer=>answer.correct).length,total_questions:(json(previous.items_json)||[]).length,answered_count:answers.length}:null};
+ }
  const wrong=await query("SELECT q.topic_id,COUNT(*) wrong FROM practice_answers a JOIN practice_sessions p ON p.id=a.session_id JOIN questions q ON q.id=a.question_id JOIN topics t ON t.id=q.topic_id WHERE p.student_id=? AND a.is_correct=0 AND t.grade=? AND q.status='published' GROUP BY q.topic_id ORDER BY wrong DESC,q.topic_id",[user,course.level]);
  const topics=await query("SELECT t.id,t.name,t.subject_id,COUNT(q.id) total FROM topics t JOIN questions q ON q.topic_id=t.id AND q.status='published' WHERE t.grade=? GROUP BY t.id,t.name,t.subject_id HAVING COUNT(q.id)>=10 ORDER BY t.subject_id,t.sort_order,t.id",[course.level]);
  const topic=wrong.map(w=>topics.find(t=>t.id===w.topic_id)).find(Boolean)||topics[Number(day.replaceAll('-',''))%Math.max(1,topics.length)]||null;
@@ -28,7 +37,11 @@ export async function todayPlan(user,courseId){
  return {day,course,kind:course.kind,minutes:10,topic:topic?{...topic,subject:schoolSubjectName(topic.subject_id,course.level)}:null,reason:topic&&wrong.some(w=>w.topic_id===topic.id)?'Ưu tiên chủ đề con từng làm sai; lượt luyện sẽ đưa câu cần ôn lên trước.':'Một lượt 10 câu vừa sức trong khóa đang học.',recent:recent[0]||null};
 }
 export async function startToday(user,courseId){
- const plan=await todayPlan(user,courseId);if(!['primary','secondary'].includes(plan.kind)||!plan.topic)throw badRequest('Chưa có đủ 10 câu trong khóa này để tạo lượt luyện.');
+ const plan=await todayPlan(user,courseId);if(!['primary','secondary','highschool'].includes(plan.kind)||!plan.topic)throw badRequest('Chưa có đủ câu phù hợp trong khóa này để tạo lượt luyện.');
+ if(plan.kind==='highschool'){
+  if(plan.recent?.status==='in_progress')return {href:'/pages/student/session/?run='+encodeURIComponent(plan.recent.id)};
+  const {startLearningRun}=await import('./student-experience.js');return startLearningRun(user,courseId,{kind:'daily',itemId:plan.topic.id,minutes:10});
+ }
  let session;
  if(plan.recent?.status==='in_progress')session=await getPracticeSession(user,plan.recent.id);
  else{
@@ -39,7 +52,7 @@ export async function startToday(user,courseId){
 }
 export async function familyReport(user,courseId,{days=7,includeRows=false}={}){
  const course=await requireCourse(user,courseId),{day,since}=dates(new Date(),days);let rows=[];
- if(['primary','secondary'].includes(course.kind)){
+ if(['primary','secondary','highschool'].includes(course.kind)){
   const [practice,exams,worksheets,challenges]=await Promise.all([
    query('SELECT p.id,p.status,p.started_at,p.finished_at completed_at,p.correct_count correct,p.total_questions total,t.name title,t.subject_id FROM practice_sessions p JOIN topics t ON t.id=p.topic_id WHERE p.student_id=? AND t.grade=? AND p.started_at>=? ORDER BY p.started_at DESC LIMIT 1000',[user,course.level,since]),
    query('SELECT p.id,p.status,p.started_at,p.submitted_at completed_at,p.correct_count correct,p.total_questions total,t.name title,t.subject_id FROM exam_attempts p JOIN topics t ON t.id=p.topic_id WHERE p.student_id=? AND t.grade=? AND p.started_at>=? ORDER BY p.started_at DESC LIMIT 1000',[user,course.level,since]),

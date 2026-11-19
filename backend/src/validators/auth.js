@@ -18,6 +18,6 @@ export const completeRegistrationSchema=z.object({
  username:usernameSchema,
  password:passwordSchema,
  displayName:displayNameSchema,
- grade:z.number().int().min(1).max(9).nullable().default(null),
+ grade:z.number().int().min(1).max(12).nullable().default(null),
  avatarKey:avatarSchema.optional(),
 });

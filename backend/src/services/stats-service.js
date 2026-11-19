@@ -30,7 +30,7 @@ export async function getAdminStats(scope = 'super') {
   const bySubject = await query(`SELECT s.id,s.name,s.color,
     (SELECT COUNT(*) FROM practice_sessions x JOIN topics t ON t.id=x.topic_id WHERE t.subject_id=s.id AND x.status='finished' AND ${grade}) practices,
     (SELECT COUNT(*) FROM exam_attempts x JOIN topics t ON t.id=x.topic_id WHERE t.subject_id=s.id AND x.status='submitted' AND ${grade}) exams
-    FROM subjects s ORDER BY s.sort_order`);
+    FROM subjects s ${['primary','secondary'].includes(scope)?"WHERE s.id IN ('toan','tieng-viet','tieng-anh')":''} ORDER BY s.sort_order`);
   const topStudents = await query(`SELECT p.id,p.display_name,p.avatar_key,p.grade,COALESCE(SUM(dl.amount),0) diamonds
     FROM diamond_ledger dl JOIN profiles p ON p.id=dl.profile_id
     WHERE dl.created_at>=${dialectSql('DATE_SUB(CURRENT_TIMESTAMP(3), INTERVAL 7 DAY)',"CURRENT_TIMESTAMP(3) - INTERVAL '7 days'")}

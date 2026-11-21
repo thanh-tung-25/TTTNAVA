@@ -11,7 +11,7 @@ test.beforeAll(async()=>{
 });
 test.afterAll(async()=>{server.closeAllConnections();await new Promise(resolve=>server.close(resolve));});
 async function mock(page,kind){
- const course={id:kind==='chinese'?'hsk-1':kind==='secondary'?'grade-6':'grade-1',kind,level:kind==='secondary'?6:1,title:kind==='chinese'?'Tiếng Trung HSK 1':kind==='secondary'?'Lớp 6':'Lớp 1'},errors=[],starts=[];
+ const level=kind==='highschool'?12:kind==='secondary'?6:1,course={id:kind==='chinese'?'hsk-1':'grade-'+level,kind,level,title:kind==='chinese'?'Tiếng Trung HSK 1':'Lớp '+level},errors=[],starts=[];
  page.on('pageerror',e=>errors.push(e.message));await page.addInitScript(id=>localStorage.setItem('ttnava-course',id),course.id);
  const attempt={id:'test-attempt',test_id:'test-1',title:'Kiểm tra Tiếng Trung',started_at:new Date().toISOString(),ends_at:new Date(Date.now()+3600000).toISOString(),items:[{id:'question-1',kind:'question',data:{type:'choice',prompt:'Chọn nghĩa của 你',options:['Bạn','Tôi']}}]};
  await page.route('**/api/v1/**',async route=>{
@@ -21,7 +21,8 @@ async function mock(page,kind){
   else if(p.endsWith('/diamonds/summary'))data={total:20,week:20,month:20,recent:[],programs:{primary:{total:5},secondary:{total:5},chinese:{total:10}}};
   else if(p.endsWith('/experience/preferences'))data={minutes:10,onboarding_at:'2026-11-01',companion:'lion'};
   else if(p.includes('/chat/'))data=p.endsWith('/calls/config')?{enabled:false}:[];
-  else if(p.endsWith('/exams/catalog'))data={year:{id:'2026-2027'},chapters:[{id:'chapter',name:'Chủ đề kiểm tra lớp '+course.level,semester:'hk1',count:30,questionCount:30,durationSeconds:1800}],semesters:[],annual:{count:60,questionCount:0,durationSeconds:3600}};
+  else if(p.endsWith('/school-study/catalog'))data={groups:[]};
+  else if(p.endsWith('/exams/catalog'))data={papers:kind==='highschool'&&new URL(req.url()).searchParams.get('subjectId')==='hoa-hoc'?Array.from({length:10},(_,n)=>({id:'paper-'+n,title:'Đề '+(n+1)+' · Hóa học 12',item_count:n===5?25:28,exam_config:{duration_minutes:50,semester:'hk1'}})):[],year:{id:'2026-2027'},chapters:[{id:'chapter',name:'Chủ đề kiểm tra lớp '+course.level,semester:'hk1',count:30,questionCount:30,durationSeconds:1800}],semesters:[],annual:{count:60,questionCount:0,durationSeconds:3600}};
   else if(p.endsWith('/chinese/catalog'))data={levels:[{id:1}],lessons:[],sets:[],counts:[],reviews:[],progress:[],completion:[]};
   else if(p.endsWith('/chinese/tests'))data=[{id:'test-1',title:'Kiểm tra Tiếng Trung',duration_seconds:1800,set_ids:[]}];
   else if(p.endsWith('/chinese/attempts')&&req.method()==='POST'){starts.push(req.postDataJSON());data=attempt;}
@@ -29,15 +30,16 @@ async function mock(page,kind){
   await route.fulfill({json:{data}});
  });return {errors,starts};
 }
-for(const kind of ['primary','secondary','chinese'])for(const width of [360,1280])test(`${kind}: exam tab replaces the removed game at ${width}px`,async({page})=>{
+for(const kind of ['primary','secondary','highschool','chinese'])for(const width of [360,1280])test(`${kind}: quiz and exam navigation at ${width}px`,async({page})=>{
  await page.setViewportSize({width,height:844});const state=await mock(page,kind);await page.goto(origin+'/pages/student/diamonds/');
- const nav=page.locator('.student-primary-nav');await expect(nav.getByRole('link',{name:'Bài kiểm tra',exact:true})).toBeVisible();await expect(nav).not.toContainText('Thử sức');await expect(page.locator('a[href*="/arena/"],a[href*="/challenge/"]')).toHaveCount(0);
- await nav.getByRole('link',{name:'Bài kiểm tra',exact:true}).click();
- await expect(page.locator('.student-primary-nav').getByRole('link',{name:'Bài kiểm tra',exact:true})).toHaveAttribute('aria-current','page');
+ const nav=page.locator('.student-primary-nav'),examLabel=kind==='chinese'?'Bài kiểm tra':'Bài thi';await expect(nav.getByRole('link',{name:examLabel,exact:true})).toBeVisible();await expect(nav).not.toContainText('Thử sức');await expect(page.locator('a[href*="/arena/"],a[href*="/challenge/"]')).toHaveCount(0);
+ if(kind!=='chinese'){await expect(nav.getByRole('link')).toHaveCount(5);await nav.getByRole('link',{name:'Quiz theo bài',exact:true}).click();await expect(nav.getByRole('link',{name:'Quiz theo bài',exact:true})).toHaveAttribute('aria-current','page');if(kind==='highschool')await page.getByRole('button',{name:'Hóa học',exact:true}).click();}
+ await nav.getByRole('link',{name:examLabel,exact:true}).click();
+ await expect(page.locator('.student-primary-nav').getByRole('link',{name:examLabel,exact:true})).toHaveAttribute('aria-current','page');
  if(kind==='chinese'){
   await expect(page).toHaveURL(/chinese\/\?view=tests/);await expect(page.locator('#content')).toContainText('Kiểm tra Tiếng Trung');await page.locator('#content').getByRole('button',{name:'Bắt đầu',exact:true}).click();
   await expect(page).toHaveURL(/view=tests&attempt=test-attempt/);await expect(page.locator('.quiz-prompt')).toHaveText('Chọn nghĩa của 你');expect(state.starts).toEqual([{test_id:'test-1'}]);
   await expect(page.locator('.student-primary-nav').getByRole('link',{name:'Bài kiểm tra',exact:true})).toHaveAttribute('aria-current','page');
- }else{await expect(page).toHaveURL(/student\/exam\/$/);await expect(page.locator('#topic-list')).toContainText('Chủ đề kiểm tra lớp '+(kind==='primary'?1:6));await expect(page.locator('[data-exam-kind=chapter]')).toBeEnabled();}
+ }else{await expect(page).toHaveURL(/student\/exam\/\?subject=/);await expect(page.locator('#topic-list')).toContainText('Chủ đề kiểm tra lớp '+(kind==='highschool'?12:kind==='primary'?1:6));await expect(page.locator('[data-exam-kind=chapter]')).toBeEnabled();if(kind==='highschool'){await expect(page).toHaveURL(/subject=hoa-hoc/);await expect(page.locator('.authored-exams a')).toHaveCount(10);await page.screenshot({path:'test-results/school-exam-nav-'+width+'.png',fullPage:true});}}
  expect(state.errors).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });

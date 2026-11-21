@@ -1,7 +1,8 @@
 import { escapeHtml } from '/assets/js/api.js';
 import { initPage } from '/assets/js/ui.js';
 import { startExam, submitExam } from './exam-actions.js';
-import { elements, show, store, subjectFromUrl } from './exam-context.js';
+import { elements, show, store } from './exam-context.js';
+import {schoolNavigationSubject,syncSchoolNavigationSubject} from './school-navigation-subject.js';
 import { loadTopics, renderPalette, renderQuestion } from './exam-render.js';
 import { flushSave } from './exam-save.js';
 import {renderExamCatalog} from './exam-catalog-view.js';
@@ -35,6 +36,7 @@ elements.subjectTabs.addEventListener('click', (event) => {
   const button = event.target.closest('[data-subject]');
   if (!button) return;
   store.subjectId = button.dataset.subject;
+  syncSchoolNavigationSubject(store.subjectId,store.profile);
   const url = new URL(window.location.href);
   url.searchParams.set('subject', store.subjectId);
   window.history.replaceState(null, '', url);
@@ -65,7 +67,7 @@ async function main() {
     window.location.replace('/pages/student/chinese/?view=tests');
     return;
   }
-  store.subjectId = subjectFromUrl();
+  store.subjectId = schoolNavigationSubject(store.profile);syncSchoolNavigationSubject(store.subjectId,store.profile);
   const requested=new URLSearchParams(location.search).get('attempt');
   if(requested){
     store.attempt=(await api('/api/v1/exams/'+encodeURIComponent(requested))).data;

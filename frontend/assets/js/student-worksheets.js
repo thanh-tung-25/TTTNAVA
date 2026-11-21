@@ -4,6 +4,7 @@ import {renderItem,resultBlock} from './worksheet-player.js';
 import {animalPath} from './animal-path.js';
 import {subjectsFor,subjectName,semesterName} from './primary-subjects.js';
 import {rewardNotice} from './study-reward.js';
+import {syncSchoolNavigationSubject} from './school-navigation-subject.js';
 const base='/api/v1/worksheets',root=document.querySelector('#ws-content'),notice=document.querySelector('#ws-notice');
 let current,index=0,timer,queue=Promise.resolve(),profile,examTimer,submitting=false;
 const button=(text,fn,ghost=false)=>el('button',{type:'button',class:'btn'+(ghost?' btn-ghost':''),text,onclick:async event=>{const b=event.currentTarget;b.disabled=true;try{await fn();}catch(e){notice.textContent=e.message;}finally{b.disabled=false;}}});
@@ -33,6 +34,7 @@ async function catalog(){
 }
 async function open(sheetId,attemptId){
  notice.textContent='';current=(await api(attemptId?base+'/attempts/'+attemptId:base+'/'+sheetId+'/start',{method:attemptId?'GET':'POST'})).data;index=0;
+ if(current.exam_config)syncSchoolNavigationSubject(current.subject_id||current.subjectId,profile);
  history.replaceState(null,'','?attempt='+current.id+(current.exam_config?'&exam=1':''));render();startExamClock();
 }
 async function submitCurrent(automatic=false){

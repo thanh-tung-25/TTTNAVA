@@ -2,6 +2,7 @@ import {api,el} from './api.js';
 import {subjectsFor,semesterName} from './primary-subjects.js';
 import {studyKnowledge,studyExamples} from './school-study-guide.js';
 import {schoolQuizPlayer} from './school-study-quiz.js';
+import {syncSchoolNavigationSubject,schoolDestination} from './school-navigation-subject.js';
 export async function mountSchoolStudy(profile){
  const root=document.querySelector('#school-study'),notice=document.querySelector('#learning-notice'),params=new URLSearchParams(location.search),{data}=await api('/api/v1/school-study/catalog');
  const guides=new Map(),rows=new Map(),subjects=subjectsFor(profile),saved=localStorage.getItem('ttnava-school-subject:'+profile.course.id);
@@ -11,7 +12,7 @@ export async function mountSchoolStudy(profile){
  const tabs=el('nav',{class:'school-subjects','aria-label':'Môn học'}),hero=el('section',{class:'school-study-hero'}),filters=el('div',{class:'school-study-filters'}),list=el('div',{class:'school-lesson-list'});
  const query=el('input',{class:'input',type:'search',placeholder:'Tìm tên bài học…','aria-label':'Tìm bài học'}),semesterPicker=el('select',{class:'select','aria-label':'Lọc học kì'});
  filters.append(query,semesterPicker);root.replaceChildren(heading,tabs,hero,filters,list,extras());notice.textContent='';notice.hidden=true;
- function sync(){const url=new URL(location.href);url.searchParams.set('subject',subject);history.replaceState(null,'',url);localStorage.setItem('ttnava-school-subject:'+profile.course.id,subject);}
+ function sync(){const url=new URL(location.href);url.searchParams.set('subject',subject);history.replaceState(null,'',url);syncSchoolNavigationSubject(subject,profile);const examLink=root.querySelector('[data-school-exam-link]');if(examLink)examLink.href=schoolDestination('exam',subject);}
  async function content(group){if(!guides.has(group.id)){const {data:guide}=await api('/api/v1/school-study/guides/'+encodeURIComponent(group.id));guides.set(group.id,guide.content);}return guides.get(group.id);}
  async function start(group,stage,panel){
   const sequence=panel.schoolLoad=(panel.schoolLoad||0)+1;
@@ -59,5 +60,5 @@ export async function mountSchoolStudy(profile){
  query.oninput=()=>{search=query.value;draw();};semesterPicker.onchange=()=>{semester=semesterPicker.value;draw();};sync();draw();
  const focus=params.get('group')||params.get('lesson')||params.get('topic'),selectedGroup=data.groups.find(group=>group.id===focus||group.parts.some(part=>part.id===focus||part.topicId===focus));
  if(selectedGroup){if(selectedGroup.subjectId!==subject){subject=selectedGroup.subjectId;sync();draw();}const row=rows.get(selectedGroup.id),key=params.get('panel')||'knowledge',button=row?.querySelector('[data-panel='+(['knowledge','examples','quiz'].includes(key)?key:'knowledge')+']');await button?.openPanel(true);if(params.get('quiz'))try{const {data:quiz}=await api('/api/v1/school-study/quizzes/'+encodeURIComponent(params.get('quiz')));if(quiz.groupId===selectedGroup.id)play(selectedGroup,quiz,row.querySelector('.school-lesson-panel'));}catch(error){notice.textContent=error.message;notice.hidden=false;}}
- function extras(){return el('details',{class:'school-extras'},[el('summary',{text:'Bài kiểm tra và tiện ích khác'}),el('nav',{},[['Thi thử tổng hợp','/pages/student/exam/?formal=1'],['Bài được giao','/pages/student/assignments/'],['Bài tập tương tác','/pages/student/worksheets/'],['Tiến bộ học tập','/pages/student/progress/'],['Sổ câu sai','/pages/student/study-hub/?view=wrong'],['Báo cáo học tập','/pages/student/family/']].map(([text,href])=>el('a',{class:'btn btn-ghost',href,text})))]);}
+ function extras(){return el('details',{class:'school-extras'},[el('summary',{text:'Bài kiểm tra và tiện ích khác'}),el('nav',{},[['Thi thử tổng hợp',schoolDestination('exam',subject)],['Bài được giao','/pages/student/assignments/'],['Bài tập tương tác','/pages/student/worksheets/'],['Tiến bộ học tập','/pages/student/progress/'],['Sổ câu sai','/pages/student/study-hub/?view=wrong'],['Báo cáo học tập','/pages/student/family/']].map(([text,href],index)=>el('a',{class:'btn btn-ghost',href,text,...(index===0?{'data-school-exam-link':'true'}:{})})))]);}
 }

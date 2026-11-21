@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="referrer" content="no-referrer">
+ <title>Quên mật khẩu — TTNAVA</title>
+ <link rel="icon" href="/assets/images/ttnava-logo.png" type="image/png">
+ <link rel="stylesheet" href="/assets/css/base.css">
+ <link rel="stylesheet" href="/assets/css/components.css">
+ <link rel="stylesheet" href="/assets/css/pages.css">
+ <link rel="stylesheet" href="/assets/css/password-reset.css">
+</head>
+<body class="login-body">
+ <main class="login-card reset-card">
+  <a class="reset-back" href="/pages/login/">Về đăng nhập</a>
+  <img class="login-logo" src="/assets/images/ttnava-logo.png" width="100" height="100" alt="TTNAVA">
+  <h1>Lấy lại mật khẩu</h1>
+  <p class="reset-intro">Xác minh Gmail của bạn để đặt mật khẩu mới.</p>
+  <p id="reset-availability" class="reset-notice" role="status">Đang mở phần lấy lại mật khẩu…</p>
+  <div id="reset-content" hidden>
+   <ol class="reset-steps" aria-label="Các bước lấy lại mật khẩu">
+    <li id="reset-step-email" aria-current="step"><span>1</span> Gmail</li>
+    <li id="reset-step-code"><span>2</span> Xác minh</li>
+    <li id="reset-step-password"><span>3</span> Mật khẩu mới</li>
+   </ol>
+   <p id="reset-error" class="form-error" role="alert" tabindex="-1" hidden></p>
+   <form id="reset-email-form" novalidate>
+    <div class="field">
+     <label for="reset-email">Gmail đã đăng ký</label>
+     <input id="reset-email" name="email" class="input" type="email" autocomplete="email" inputmode="email" placeholder="tenban@gmail.com" maxlength="120" required>
+     <small class="reset-hint">Dùng đúng Gmail bạn đã xác minh khi đăng ký tài khoản.</small>
+    </div>
+    <button id="reset-send" class="btn btn-block" type="submit">Gửi mã xác thực</button>
+   </form>
+   <section id="reset-code-step" hidden>
+    <p id="reset-sent-message" class="reset-notice" role="status"></p>
+    <p id="reset-recipient" class="reset-recipient"></p>
+    <form id="reset-code-form" novalidate>
+     <div class="field">
+      <label for="reset-code">Mã xác thực gồm 6 số</label>
+      <input id="reset-code" class="input reset-code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required aria-describedby="reset-code-expiry">
+      <small id="reset-code-expiry" class="reset-hint"></small>
+     </div>
+     <button id="reset-verify" class="btn btn-block" type="submit">Xác minh mã</button>
+    </form>
+    <div class="reset-secondary-actions">
+     <button id="reset-resend" class="btn btn-ghost" type="button">Gửi lại mã</button>
+     <button id="reset-change-email" class="btn btn-ghost" type="button">Đổi Gmail</button>
+    </div>
+    <p class="reset-hint">Nếu chưa thấy email, hãy kiểm tra cả mục thư rác. Mã mới sẽ thay thế mã trước.</p>
+   </section>
+   <section id="reset-password-step" hidden>
+    <p class="reset-notice">Gmail đã được xác minh. Bạn có thể đặt mật khẩu mới.</p>
+    <form id="reset-password-form" novalidate>
+     <div class="field"><label for="reset-password">Mật khẩu mới</label><input id="reset-password" class="input" type="password" autocomplete="new-password" minlength="6" maxlength="72" required><small class="reset-hint">Từ 6 đến 72 ký tự.</small></div>
+     <div class="field"><label for="reset-password-confirm">Nhập lại mật khẩu mới</label><input id="reset-password-confirm" class="input" type="password" autocomplete="new-password" minlength="6" maxlength="72" required></div>
+     <p id="reset-session-expiry" class="reset-hint"></p>
+     <button id="reset-save" class="btn btn-block" type="submit">Lưu mật khẩu mới</button>
+    </form>
+    <button id="reset-restart" class="btn btn-ghost reset-restart" type="button">Xác minh Gmail lại</button>
+   </section>
+   <section id="reset-success" class="reset-success" hidden>
+    <img src="/assets/images/mascot-panda.svg" width="88" height="94" alt="">
+    <h2>Đã đổi mật khẩu!</h2>
+    <p>Bạn hãy đăng nhập bằng mật khẩu mới. Khóa học và kết quả học tập vẫn được giữ nguyên.</p>
+    <p id="reset-login-name"></p>
+    <a class="btn btn-block" href="/pages/login/">Về đăng nhập</a>
+   </section>
+  </div>
+  <p class="reset-help">Nếu không còn truy cập được Gmail, bạn hãy nhờ quản trị viên hỗ trợ.</p>
+ </main>
+ <script type="module" src="/assets/js/password-reset.js"></script>
+</body>
+</html>

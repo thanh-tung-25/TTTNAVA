@@ -18,12 +18,15 @@ function gmailSettings() {
   }
 }
 
-export function registrationAvailable() {
-  if (process.env.REGISTRATION_ENABLED !== 'true') return false;
+export function emailDeliveryAvailable() {
   if (mailProvider() === 'gmail') return Boolean(gmailSettings());
   return mailProvider() === 'resend'
     && Boolean(process.env.RESEND_API_KEY?.trim())
     && Boolean(process.env.REGISTRATION_FROM_EMAIL?.trim());
+}
+
+export function registrationAvailable() {
+  return process.env.REGISTRATION_ENABLED === 'true' && emailDeliveryAvailable();
 }
 
 export async function sendRegistrationOtp({ email, otp }) {
@@ -37,6 +40,14 @@ export async function sendRegistrationOtp({ email, otp }) {
   const text = `Mã xác minh đăng ký TTNAVA của bạn là: ${otp}\n\nMã có hiệu lực trong 5 phút và chỉ dùng một lần. Không chia sẻ mã với người khác.\nNếu bạn không yêu cầu đăng ký, bạn có thể bỏ qua email này.`;
   const html = `<div lang="vi" style="font-family:Arial,sans-serif;line-height:1.6;color:#18312a;max-width:520px;margin:auto;padding:24px"><h1 style="font-size:24px">Xác minh đăng ký TTNAVA</h1><p>Nhập mã sau để hoàn tất đăng ký tài khoản:</p><p style="font-size:32px;font-weight:bold;letter-spacing:6px">${otp}</p><p>Mã có hiệu lực trong <strong>5 phút</strong> và chỉ dùng một lần. Không chia sẻ mã với người khác.</p><p>Nếu bạn không yêu cầu đăng ký, bạn có thể bỏ qua email này.</p></div>`;
   const message = { to: [destination], subject: 'Mã xác minh đăng ký TTNAVA', text, html };
+  return sendAccountEmail(message);
+}
+
+// Shared transport only; each flow supplies its own purpose and message.
+export async function sendAccountEmail(message) {
+  if (!emailDeliveryAvailable()) throw new AppError(503, 'MAIL_UNAVAILABLE', 'Dịch vụ gửi email đang tạm chưa khả dụng.');
+  const destination=normalizeGmail(message.to?.[0]).email;
+  message={...message,to:[destination]};
   try {
     if (mailProvider() === 'gmail') {
       const auth = gmailSettings();

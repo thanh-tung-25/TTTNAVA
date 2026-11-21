@@ -90,6 +90,11 @@ export function createApp() {
     await sendAppHtml(response,path.join(pagesRoot, 'login', 'index.html'));
   });
   app.get('/pages/register',(_request,response)=>response.redirect('/pages/register/'));
+  app.get('/pages/forgot-password',(_request,response)=>response.redirect('/pages/forgot-password/'));
+  app.get('/pages/forgot-password/',async(_request,response)=>{
+    response.set({'Cache-Control':'no-store','Referrer-Policy':'no-referrer'});
+    await sendAppHtml(response,path.join(pagesRoot,'forgot-password','index.html'));
+  });
   app.get('/pages/register/',redirectIfAuthenticated,async(_request,response)=>{
     response.set('Cache-Control','no-store');await sendAppHtml(response,path.join(pagesRoot,'register','index.html'));
   });

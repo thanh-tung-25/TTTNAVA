@@ -1,5 +1,5 @@
 import env from '../config/env.js';
-import { loginSchema,requestRegistrationOtpSchema,completeRegistrationSchema } from '../validators/auth.js';
+import { loginSchema,requestRegistrationOtpSchema,completeRegistrationSchema,requestPasswordResetSchema,verifyPasswordResetSchema,completePasswordResetSchema } from '../validators/auth.js';
 import { login } from '../services/auth-service.js';
 import {registrationAvailable} from '../services/registration-mail.js';
 import {requestRegistrationOtp,completeRegistration} from '../services/public-registration.js';
@@ -8,6 +8,9 @@ import { asyncHandler } from '../utils/errors.js';
 import {recordUserAccess} from '../services/user-access-history.js';
 import {forgetDevice} from '../services/chat-push.js';
 import {readToken} from '../middlewares/auth.js';
+import {passwordResetAvailable,sendPasswordChangedNotice} from '../services/password-reset-mail.js';
+import {requestPasswordReset,deliverPasswordReset,verifyPasswordReset,completePasswordReset} from '../services/password-reset.js';
+import {backgroundTask} from '../utils/background-task.js';
 
 const COOKIE_MAX_AGE = 7 * 24 * 60 * 60 * 1000;
 
@@ -41,6 +44,23 @@ export const meHandler = asyncHandler(async (request, response) => {
 
 export const registrationStatusHandler=asyncHandler(async(_request,response)=>{
  response.set('Cache-Control','no-store').json({data:{available:registrationAvailable()}});
+});
+export const passwordResetStatusHandler=asyncHandler(async(_request,response)=>{
+ response.set('Cache-Control','no-store').json({data:{available:passwordResetAvailable()}});
+});
+export const requestPasswordResetHandler=asyncHandler(async(request,response)=>{
+ const {email}=requestPasswordResetSchema.parse(request.body),{delivery,...data}=await requestPasswordReset(email);
+ backgroundTask(deliverPasswordReset(delivery),'password_reset_background_error');
+ response.set('Cache-Control','no-store').json({data});
+});
+export const verifyPasswordResetHandler=asyncHandler(async(request,response)=>{
+ response.set('Cache-Control','no-store').json({data:await verifyPasswordReset(verifyPasswordResetSchema.parse(request.body))});
+});
+export const completePasswordResetHandler=asyncHandler(async(request,response)=>{
+ const {notification,...data}=await completePasswordReset(completePasswordResetSchema.parse(request.body));
+ backgroundTask(sendPasswordChangedNotice(notification),'password_changed_notice_failed');
+ response.clearCookie(env.cookie.name,cookieOptions());
+ response.set('Cache-Control','no-store').json({data});
 });
 export const requestRegistrationOtpHandler=asyncHandler(async(request,response)=>{
  const {email}=requestRegistrationOtpSchema.parse(request.body);

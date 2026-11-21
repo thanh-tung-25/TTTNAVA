@@ -11,6 +11,9 @@ export const resetPasswordSchema = z.object({
 });
 
 export const requestRegistrationOtpSchema=z.object({email:z.string().trim().min(1).max(120)});
+export const requestPasswordResetSchema=z.object({email:z.string().trim().min(1).max(120)}).strict();
+export const verifyPasswordResetSchema=z.object({challengeId:z.uuid(),otp:z.string().regex(/^\d{6}$/u,'Mã xác thực phải gồm 6 chữ số.')}).strict();
+export const completePasswordResetSchema=z.object({resetId:z.uuid(),resetToken:z.string().regex(/^[A-Za-z0-9_-]{43}$/u),newPassword:passwordSchema.refine(value=>Buffer.byteLength(value,'utf8')<=72,'Mật khẩu quá dài. Bạn hãy dùng mật khẩu ngắn hơn.')}).strict();
 export const completeRegistrationSchema=z.object({
  accountKind:z.enum(['student','guardian']).default('student'),
  challengeId:z.uuid(),

@@ -27,6 +27,8 @@
 }
 .login-card .field { text-align: left; }
 .login-note { font-size: 0.78rem; color: var(--muted); margin-top: 0.8rem; }
+.login-recovery { font-size: .95rem; margin-top: .65rem; }
+.login-recovery a { display: inline-flex; align-items: center; min-height: 40px; padding: 4px 8px; font-weight: 700; }
 
 /* ===== Trang chủ ===== */
 .hero {

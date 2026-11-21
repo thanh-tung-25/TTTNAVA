@@ -1,0 +1,10 @@
+import env from '../config/env.js';
+import {query,withTransaction,dialectSql} from '../config/db.js';
+import {hashPassword} from './auth-service.js';
+import {passwordResetAvailable,sendPasswordResetOtp} from './password-reset-mail.js';
+import {createPasswordResetService} from './password-reset-core.js';
+const service=createPasswordResetService({query,withTransaction,dialectSql,secret:env.jwt.secret,hashPassword,sendOtp:sendPasswordResetOtp,available:passwordResetAvailable});
+export const requestPasswordReset=service.request;
+export const deliverPasswordReset=service.deliver;
+export const verifyPasswordReset=service.verify;
+export const completePasswordReset=service.complete;

@@ -46,6 +46,6 @@ export async function selectScopedExam(grade,body,seed){
  const chosen=[];while(chosen.length<count)for(const group of shuffled){const next=group.questions.pop();if(next)chosen.push(next);if(chosen.length===count)break;}
  const ordered=seededShuffle(chosen,seed+'|order');
  const subject=schoolSubjectName(scope.subjectId,grade);
- const title=(scope.mode==='chapter'?'Kiểm tra '+rows[0].chapter_name:scope.mode==='semester'?'Thi thử '+semesterName(scope.semester).toLowerCase():'Thi thử cả năm')+' · '+subject+' lớp '+grade;
+ const title=(scope.mode==='chapter'?'Kiểm tra '+rows[0].chapter_name:scope.mode==='semester'?'Kiểm tra '+semesterName(scope.semester).toLowerCase():'Kiểm tra cả năm')+' · '+subject+' lớp '+grade;
  return {questionIds:ordered.map(q=>q.id),topicId:ordered[0].topic_id,title,durationSeconds:scope.mode==='chapter'?1800:scope.mode==='semester'?3000:3600,scope:{...scope,grade,yearId:selectedYear.id}};
 }

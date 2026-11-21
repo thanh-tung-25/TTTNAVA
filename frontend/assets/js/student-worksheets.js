@@ -66,7 +66,7 @@ function render(){
  root.replaceChildren(heading,card,controls);
  if(current.reward)root.append(rewardNotice(current.reward));
 }
-initPage('student',new URLSearchParams(location.search).has('exam')?'exam':'worksheets').then(async user=>{
+initPage('student',new URLSearchParams(location.search).has('exam')?'papers':'worksheets').then(async user=>{
  profile=user;if(!['primary','secondary','highschool'].includes(user.course?.kind)){root.replaceChildren(el('div',{class:'worksheet-locked'},[el('p',{text:'Chọn một khóa Tiểu học, THCS hoặc THPT để làm bài tập này nhé.'}),el('a',{class:'btn',href:'/pages/student/courses/',text:'Chọn khóa học'})]));return;}
  document.querySelector('#ws-grade').textContent='Bài tập của khóa Lớp '+user.grade+' · Bài làm được tự động lưu.';
  if(new URLSearchParams(location.search).has('exam')){document.querySelector('main h1').textContent='Bài thi của bạn';document.title='Bài thi — TTNAVA';document.querySelector('#ws-grade').textContent='Lớp '+user.grade+' · Tự động lưu và nộp khi hết giờ.';}

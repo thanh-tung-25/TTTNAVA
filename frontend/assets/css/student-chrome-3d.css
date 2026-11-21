@@ -71,3 +71,4 @@ body[data-role=student].student-unified .student-primary-nav .nav-link[aria-curr
  body[data-role=student].student-unified .topbar #feedback-open,body[data-role=student].student-unified .topbar #chat-widget .chat-launcher{width:34px;height:34px;min-width:34px;min-height:34px}
 }
 @media(prefers-reduced-motion:reduce){body[data-role=student].student-unified .student-primary-nav .nav-link{transition:none}}
+@media(max-width:1099px){body[data-role=student].student-unified .student-primary-nav[data-count="6"]{grid-template-columns:repeat(6,minmax(0,1fr));gap:4px}body[data-role=student].student-unified .student-primary-nav[data-count="6"] .nav-link>span:last-child{font-size:9px}body[data-role=student].student-unified .student-primary-nav[data-count="6"] .student-nav-icon{width:27px;height:27px}}

@@ -7,6 +7,7 @@ import {store} from './admin-questions-context.js';
 import {selectedScope} from './admin-content-curriculum.js';
 import {subjectsFor,subjectName} from './primary-subjects.js';
 import {adminGrades} from './admin-permissions.js';
+import {paperPeriods} from './school-paper-periods.js';
 const base='/api/v1/worksheets',workspace=document.querySelector('#ws-workspace'),notice=document.querySelector('#ws-notice'),dialog=document.querySelector('#ws-preview');
 let sheet=null,index=0,dirty=false,previewAnswer,previewItem,availableGrades=adminGrades();
 if(new URLSearchParams(location.search).has('exams')){document.querySelector('main h1').textContent='Soạn và quản lý đề thi';document.querySelector('#ws-new').textContent='+ Tạo đề thi';document.querySelector('.worksheet-layout aside h2').textContent='Danh sách đề thi';}
@@ -32,7 +33,7 @@ function field(label,name,value,type='input'){
 }
 function commit(){
  if(!sheet)return;sheet.title=workspace.querySelector('[name=title]').value.trim();sheet.grade=Number(workspace.querySelector('[name=grade]').value);sheet.subject_id=workspace.querySelector('[name=subject_id]').value;
- const exam=workspace.querySelector('[name=exam-purpose]');if(exam?.checked)sheet.exam_config={...(sheet.exam_config||{}),duration_minutes:Number(workspace.querySelector('[name=exam-minutes]').value),semester:workspace.querySelector('[name=exam-semester]').value,short_points:Number(workspace.querySelector('[name=exam-short-points]').value),scoring:'thpt-2025'};else sheet.exam_config=null;
+ const exam=workspace.querySelector('[name=exam-purpose]');if(exam?.checked)sheet.exam_config={...(sheet.exam_config||{}),duration_minutes:Number(workspace.querySelector('[name=exam-minutes]').value),semester:workspace.querySelector('[name=exam-semester]').value,period:workspace.querySelector('[name=exam-period]').value,short_points:Number(workspace.querySelector('[name=exam-short-points]').value),scoring:'thpt-2025'};else sheet.exam_config=null;
  const item=sheet.items[index];if(!item)return;item.prompt=workspace.querySelector('[name=prompt]').value;item.explanation=workspace.querySelector('[name=explanation]').value;Object.assign(item,collectFields(item.type,workspace.querySelector('.worksheet-fields')));
  item.grading=workspace.querySelector('[name=grading]')?.value||'active';item.review_note=workspace.querySelector('[name=review-note]')?.value||'';
 }
@@ -60,8 +61,9 @@ function render(){
  const minutes=field('Thời gian làm bài (phút)','exam-minutes',sheet.exam_config?.duration_minutes||50),semester=field('Học kì của đề','exam-semester','','select'),shortPoints=field('Điểm mỗi câu trả lời ngắn','exam-short-points','','select');
  for(const [value,text]of [['hk1','Học kì 1'],['hk2','Học kì 2'],['year','Cả năm']])semester.lastChild.append(el('option',{value,text}));semester.lastChild.value=sheet.exam_config?.semester||'hk1';
  for(const value of [.25,.5])shortPoints.lastChild.append(el('option',{value,text:String(value)}));shortPoints.lastChild.value=sheet.exam_config?.short_points||.25;
- const settings=el('div',{class:'worksheet-toolbar'},[minutes,semester,shortPoints]);settings.hidden=!purpose.checked;purpose.onchange=()=>{settings.hidden=!purpose.checked;dirty=true;};
- workspace.prepend(el('section',{class:'card worksheet-exam-settings'},[el('label',{},[purpose,el('strong',{text:' Đăng trong Bài thi (đề cố định, có thời gian)'})]),settings,el('p',{class:'muted',text:'Nhập tay và đề từ tài liệu dùng cùng bộ soạn, lưu đáp án, xem thử và cách chấm. Phần chọn đáp án: 0,25 điểm/câu; đúng/sai bốn ý: 0,1 / 0,25 / 0,5 / 1 điểm.'})]));
+ const period=field('Đợt thi','exam-period','','select');for(const [value,text]of paperPeriods)period.lastChild.append(el('option',{value,text}));period.lastChild.value=sheet.exam_config?.period||'other';period.lastChild.onchange=()=>{const choice=paperPeriods.find(([id])=>id===period.lastChild.value);if(choice&&choice[0]!=='other')semester.lastChild.value=choice[2];dirty=true;};
+ const settings=el('div',{class:'worksheet-toolbar'},[period,minutes,semester,shortPoints]);settings.hidden=!purpose.checked;purpose.onchange=()=>{settings.hidden=!purpose.checked;dirty=true;};
+ workspace.prepend(el('section',{class:'card worksheet-exam-settings'},[el('label',{},[purpose,el('strong',{text:' Đăng trong Đề thi (đề do giáo viên soạn, có thời gian)'})]),settings,el('p',{class:'muted',text:'Nhập tay và đề từ tài liệu dùng cùng bộ soạn, lưu đáp án, xem thử và cách chấm. Phần chọn đáp án: 0,25 điểm/câu; đúng/sai bốn ý: 0,1 / 0,25 / 0,5 / 1 điểm.'})]));
  const item=sheet.items[index];if(item){
   const editor=el('div',{class:'worksheet-editor'},[el('h2',{text:'Câu '+(index+1)+' · '+ITEM_TYPES[item.type]}),field('Đề bài','prompt',item.prompt,'textarea'),answerFields(item),field('Lời giải / hướng dẫn sau khi làm','explanation',item.explanation,'textarea')]);
   const grading=field('Cách tính điểm câu này','grading','','select');for(const [value,text]of [['active','Tính điểm theo đáp án'],['excluded','Câu tham khảo, không tính điểm']])grading.lastChild.append(el('option',{value,text}));grading.lastChild.value=item.grading||'active';editor.append(grading,field('Ghi chú kiểm tra đề / lý do không tính điểm','review-note',item.review_note||'','textarea'));

@@ -16,6 +16,7 @@ export const store = {
   profile: null,
   subjectId: 'toan',
   mode:'chapter',
+  paperPeriod:'all',
   semester:'all',
   catalog:null,
   attempt: null,

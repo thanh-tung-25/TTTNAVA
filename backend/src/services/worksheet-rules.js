@@ -2,6 +2,7 @@ import {SCHOOL_SUBJECT_IDS} from '../utils/school-programs.js';
 import {z} from 'zod';
 import {badRequest} from '../utils/errors.js';
 import {randomInt} from 'node:crypto';
+import {paperPeriods} from '../../../frontend/assets/js/school-paper-periods.js';
 const text=z.string().trim().min(1).max(300);
 const list=z.array(text).min(1).max(20);
 const configs={
@@ -17,7 +18,7 @@ const answers={true_false_group:z.object({values:z.array(z.boolean()).length(4)}
 export const sheetSchema=z.object({title:z.string().trim().min(1).max(180),grade:z.number().int().min(1).max(12),subject_id:z.enum(SCHOOL_SUBJECT_IDS),status:z.enum(['draft','published','hidden']),version:z.number().int().min(1).optional(),items:z.array(z.object({id:z.string().uuid(),type:z.enum(Object.keys(configs)),prompt:z.string().trim().min(1).max(3000),explanation:z.string().trim().max(4000).default(''),imageId:z.string().uuid().nullable().default(null),config:z.any(),answer:z.any()})).max(50)});
 export function validateSheet(body){
  const d=sheetSchema.parse(body);
- d.exam_config=body.exam_config?z.object({duration_minutes:z.number().int().min(1).max(300),semester:z.enum(['hk1','hk2','year']),source:z.string().max(255).optional(),attribution:z.string().max(255).optional(),short_points:z.union([z.literal(.25),z.literal(.5)]).default(.25),scoring:z.literal('thpt-2025')}).parse(body.exam_config):null;
+ d.exam_config=body.exam_config?z.object({duration_minutes:z.number().int().min(1).max(300),semester:z.enum(['hk1','hk2','year']),period:z.enum(paperPeriods.map(([id])=>id)).default('other'),source:z.string().max(255).optional(),attribution:z.string().max(255).optional(),short_points:z.union([z.literal(.25),z.literal(.5)]).default(.25),scoring:z.literal('thpt-2025')}).parse(body.exam_config):null;
  d.lesson_id=z.string().trim().min(1).max(90).nullable().optional().parse(body.lesson_id)??null;
  if(d.status==='published'&&!d.items.length)throw badRequest('Thêm ít nhất một câu trước khi đăng bài.');
  if(new Set(d.items.map(i=>i.id)).size!==d.items.length)throw badRequest('Mã câu hỏi bị trùng.');

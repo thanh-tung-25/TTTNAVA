@@ -62,7 +62,10 @@ window.addEventListener('beforeunload', (event) => {
 });
 
 async function main() {
-  store.profile = await initPage('student', 'exam');
+  const papers=new URLSearchParams(location.search).get('view')==='papers';
+  store.profile = await initPage('student', papers?'papers':'exam');
+  document.body.dataset.examCatalog=papers?'papers':'checks';
+  if(papers){document.title='Đề thi — TTNAVA';document.querySelector('.practice-welcome h1').textContent='Đề thi của lớp bạn';document.querySelector('.practice-welcome p:last-child').textContent='Chọn môn học, đợt thi và bộ đề giáo viên đã đăng.';document.querySelector('.practice-welcome .eyebrow').firstChild.textContent='ĐỀ THI ';document.querySelector('.assessment-modes').hidden=true;document.querySelector('.assessment-help').textContent='Mỗi đề có thời gian, cấu trúc và đáp án do giáo viên thiết lập. Kết quả được chấm sau khi nộp bài.';}
   if (store.profile.grade === null) {
     window.location.replace('/pages/student/chinese/?view=tests');
     return;

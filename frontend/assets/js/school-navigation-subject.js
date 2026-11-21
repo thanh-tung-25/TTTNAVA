@@ -6,8 +6,8 @@ export function schoolNavigationSubject(profile){
  return [requested,saved].find(id=>allowed.includes(id))||allowed[0];
 }
 export function schoolDestination(key,subject){
- const params=new URLSearchParams(key==='quiz'?{view:'quiz',subject}:{subject});
- return (key==='exam'?'/pages/student/exam/':'/pages/student/learning/')+'?'+params;
+ const params=new URLSearchParams(key==='quiz'?{view:'quiz',subject}:key==='papers'?{view:'papers',subject}:{subject});
+ return (['exam','papers'].includes(key)?'/pages/student/exam/':'/pages/student/learning/')+'?'+params;
 }
 export function syncSchoolNavigationSubject(subject,profile){
  if(!subjectsFor(profile).some(([id])=>id===subject))return;

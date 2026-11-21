@@ -1,0 +1,10 @@
+.school-guide-editor{width:min(920px,94vw);max-height:90dvh;border:1px solid #decdeb;border-radius:22px;padding:24px;color:#59436c;background:#fff}
+.school-guide-editor::backdrop{background:#39234966}
+.school-guide-editor header{display:flex;justify-content:space-between;gap:18px;align-items:center}
+.school-guide-editor form{display:grid;gap:18px}
+.school-guide-editor label{display:grid;gap:7px;font-weight:700}
+.school-guide-editor textarea{width:100%;min-height:110px;font:inherit;line-height:1.7;padding:12px;border:1px solid #d9c5e8;border-radius:12px}
+.school-guide-editor h3{margin:18px 0 5px}
+.school-guide-editor .school-note,.school-guide-editor .school-rule,.school-guide-editor .school-example{padding:16px;border:1px solid #e2d1ee;border-radius:14px;margin:12px 0}
+.school-guide-editor p{white-space:pre-wrap;line-height:1.85}
+.school-guide-editor [hidden]{display:none!important}

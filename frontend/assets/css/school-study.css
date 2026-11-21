@@ -86,11 +86,11 @@
 .school-empty{padding:30px;border-radius:20px;border:1px dashed #d8c3ed;background:#fff;text-align:center;color:#9279a7}
 @media(max-width:650px){
  #school-study{gap:17px}.school-coursebar{padding:14px 16px;border-radius:22px}.school-coursebar h1{font-size:1rem}.school-coursebar .btn{padding:11px 13px;font-size:.85rem}
- .school-subjects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.school-subject{display:grid;justify-items:center;align-content:center;gap:3px;padding:10px 5px;font-size:.85rem;text-align:center}
+ .school-subjects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.school-subject{display:grid;justify-items:center;align-content:center;gap:3px;padding:10px 5px;font-size:.9rem;text-align:center}
  .school-study-hero{padding:20px;border-radius:25px;gap:10px}.school-study-hero h2{font-size:1.16rem}.school-study-hero img{width:73px;height:88px}.school-study-hero p{font-size:.86rem}
  .school-study-filters{gap:9px}.school-study-filters .select{max-width:138px;font-size:.86rem}.school-study-filters .input{font-size:.9rem}
  .school-lesson-row{padding:18px 14px;border-radius:25px}.school-lesson-heading{gap:10px}.school-lesson-heading h2{font-size:1.08rem}.school-lesson-heading img{width:47px;height:55px}
- .school-lesson-actions{gap:8px}.school-main-action{display:grid;gap:4px;padding:11px 5px;font-size:.78rem;border-radius:15px;min-height:85px}.school-main-action>span:first-child{font-size:1.2rem}
+ .school-lesson-actions{gap:8px}.school-main-action{display:grid;gap:4px;padding:11px 5px;font-size:.9rem;border-radius:15px;min-height:85px}.school-main-action>span:first-child{font-size:1.2rem}
  .school-lesson-panel{padding:17px 13px;border-radius:18px;margin-top:20px}.school-note,.school-rule,.school-example{padding:16px 14px}.school-rule-expression{font-size:1.03rem}
  .school-quiz-dots{gap:3px}.school-quiz-prompt{font-size:1.02rem}.school-quiz-choice{padding:13px 12px;gap:9px}.school-quiz-heading .btn{font-size:.8rem;padding:10px 12px}.school-quiz-stages{grid-template-columns:repeat(2,minmax(0,1fr))}
 }

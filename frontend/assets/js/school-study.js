@@ -14,16 +14,18 @@ export async function mountSchoolStudy(profile){
  function sync(){const url=new URL(location.href);url.searchParams.set('subject',subject);history.replaceState(null,'',url);localStorage.setItem('ttnava-school-subject:'+profile.course.id,subject);}
  async function content(group){if(!guides.has(group.id)){const {data:guide}=await api('/api/v1/school-study/guides/'+encodeURIComponent(group.id));guides.set(group.id,guide.content);}return guides.get(group.id);}
  async function start(group,stage,panel){
+  const sequence=panel.schoolLoad=(panel.schoolLoad||0)+1;
   panel.replaceChildren(el('p',{role:'status',text:'Đang mở Quiz 20 câu…'}));
-  try{const {data:quiz}=await api('/api/v1/school-study/groups/'+encodeURIComponent(group.id)+'/quiz',{method:'POST',body:{stage}});group.open={id:quiz.id,stage_index:stage};const url=new URL(location.href);url.searchParams.set('group',group.id);url.searchParams.set('quiz',quiz.id);url.searchParams.set('panel','quiz');history.replaceState(null,'',url);play(group,quiz,panel);}catch(error){panel.replaceChildren(el('p',{role:'alert',text:error.message}),el('button',{class:'btn btn-ghost',type:'button',text:'Về các chặng quiz',onclick:()=>quizStages(group,panel)}));}
+  try{const {data:quiz}=await api('/api/v1/school-study/groups/'+encodeURIComponent(group.id)+'/quiz',{method:'POST',body:{stage}});group.open={id:quiz.id,stage_index:stage};if(sequence!==panel.schoolLoad||panel.hidden||!panel.isConnected)return;const url=new URL(location.href);url.searchParams.set('group',group.id);url.searchParams.set('quiz',quiz.id);url.searchParams.set('panel','quiz');history.replaceState(null,'',url);play(group,quiz,panel);}catch(error){if(sequence===panel.schoolLoad&&!panel.hidden&&panel.isConnected)panel.replaceChildren(el('p',{role:'alert',text:error.message}),el('button',{class:'btn btn-ghost',type:'button',text:'Về các chặng quiz',onclick:()=>quizStages(group,panel)}));}
  }
  function play(group,quiz,panel){
   panel.replaceChildren(schoolQuizPlayer(quiz,{onExit:()=>{const url=new URL(location.href);url.searchParams.delete('quiz');history.replaceState(null,'',url);quizStages(group,panel);},onComplete:()=>{if(!group.completedStages.includes(quiz.stage))group.completedStages.push(quiz.stage);group.open=null;const summary=rows.get(group.id)?.querySelector('.school-lesson-summary');if(summary)summary.textContent=summaryText(group);},...(quiz.stage<group.stages?{onNext:()=>start(group,quiz.stage+1,panel)}:{})}));
  }
  function quizStages(group,panel){
+  const sequence=panel.schoolLoad=(panel.schoolLoad||0)+1;
   panel.replaceChildren(el('h3',{text:'Quiz 20 câu theo bài'}),el('p',{text:'Ngân hàng '+group.questionCount+' câu · Mỗi lượt 20 câu không trùng nhau.'}));
   if(group.questionCount<20){panel.append(el('p',{text:'Bài đang được bổ sung đủ 20 câu. Bạn có thể học kiến thức và ví dụ trước.'}));return;}
-  if(group.open){const resume=el('button',{class:'btn btn-primary',type:'button',text:'Tiếp tục quiz đang làm'});resume.onclick=async()=>{resume.disabled=true;try{const {data:quiz}=await api('/api/v1/school-study/quizzes/'+encodeURIComponent(group.open.id));play(group,quiz,panel);}catch(error){panel.append(el('p',{role:'alert',text:error.message}));resume.disabled=false;}};panel.append(resume);}
+  if(group.open){const resume=el('button',{class:'btn btn-primary',type:'button',text:'Tiếp tục quiz đang làm'});resume.onclick=async()=>{resume.disabled=true;try{const {data:quiz}=await api('/api/v1/school-study/quizzes/'+encodeURIComponent(group.open.id));if(sequence===panel.schoolLoad&&!panel.hidden&&panel.isConnected)play(group,quiz,panel);}catch(error){if(sequence===panel.schoolLoad)panel.append(el('p',{role:'alert',text:error.message}));resume.disabled=false;}};panel.append(resume);}
   const stages=el('div',{class:'school-quiz-stages'});for(let stage=1;stage<=group.stages;stage++){const completed=group.completedStages.includes(stage),button=el('button',{class:'school-stage'+(completed?' is-complete':''),type:'button'},[el('strong',{text:'Chặng '+stage}),el('span',{text:completed?'Đã hoàn thành · Làm lại':'20 câu'})]);button.onclick=()=>start(group,stage,panel);stages.append(button);}panel.append(stages);
  }
  const summaryText=group=>'Ngân hàng '+group.questionCount+' câu'+(group.completedStages.length?' · '+group.completedStages.length+'/'+group.stages+' chặng hoàn thành':group.legacyCompleted?' · Đã luyện '+group.legacyCompleted+' lượt':group.skillAttempts?' · Đã luyện '+group.skillAttempts+' câu':'');
@@ -33,21 +35,23 @@ export async function mountSchoolStudy(profile){
   for(const [key,title,icon]of [['knowledge','Cần nhớ / công thức','▤'],['examples','Ví dụ hướng dẫn','✎'],['quiz','Quiz 20 câu','★']]){
    const button=el('button',{type:'button',class:'school-main-action','aria-expanded':'false'},[el('span',{'aria-hidden':'true',text:icon}),el('span',{text:title})]);
    const open=async(force=false)=>{
+    panel.schoolLoad=(panel.schoolLoad||0)+1;
     if(!force&&button.getAttribute('aria-expanded')==='true'){button.setAttribute('aria-expanded','false');panel.hidden=true;return;}
     controls.forEach(item=>item.setAttribute('aria-expanded',String(item===button)));panel.hidden=false;panel.dataset.kind=key;
     const url=new URL(location.href);url.searchParams.set('group',group.id);url.searchParams.set('panel',key);url.searchParams.delete('quiz');history.replaceState(null,'',url);
     if(key==='quiz'){quizStages(group,panel);return;}
     panel.replaceChildren(el('p',{role:'status',text:'Đang mở nội dung bài…'}));
-    try{const guide=await content(group);if(button.getAttribute('aria-expanded')==='true')panel.replaceChildren(key==='knowledge'?studyKnowledge(guide):studyExamples(guide));}catch(error){panel.replaceChildren(el('p',{role:'alert',text:error.message}));}
+    try{const guide=await content(group);if(button.getAttribute('aria-expanded')==='true')panel.replaceChildren(key==='knowledge'?studyKnowledge(guide):studyExamples(guide));}catch(error){if(button.getAttribute('aria-expanded')==='true')panel.replaceChildren(el('p',{role:'alert',text:error.message}));}
    };
    button.onclick=()=>open();button.dataset.panel=key;controls.push(button);bar.append(button);button.openPanel=open;
   }
   rows.set(group.id,row);return row;
  }
  function draw(){
-  rows.clear();const selected=subjects.find(([id])=>id===subject),all=data.groups.filter(group=>group.subjectId===subject),normalized=search.normalize('NFD').replace(/\p{M}/gu,'').toLowerCase();
-  const visible=all.filter(group=>(!semester||group.semester===semester)&&(!search||(group.title+' '+group.chapterName).normalize('NFD').replace(/\p{M}/gu,'').toLowerCase().includes(normalized)));
-  tabs.replaceChildren(...subjects.map(([id,name,icon])=>el('button',{class:'school-subject',type:'button','aria-pressed':String(id===subject),onclick:()=>{subject=id;semester='';search='';query.value='';sync();draw();}},[el('span',{'aria-hidden':'true',text:icon}),el('span',{text:name})])));
+  const normalizeText=value=>value.normalize('NFD').replace(/\p{M}/gu,'').toLowerCase().replaceAll('đ','d');
+  rows.clear();const selected=subjects.find(([id])=>id===subject),all=data.groups.filter(group=>group.subjectId===subject),normalized=normalizeText(search);
+  const visible=all.filter(group=>(!semester||group.semester===semester)&&(!search||normalizeText(group.title+' '+group.chapterName).includes(normalized)));
+  tabs.replaceChildren(...subjects.map(([id,name,icon])=>el('button',{class:'school-subject',type:'button','aria-pressed':String(id===subject),onclick:()=>{subject=id;semester='';search='';query.value='';const url=new URL(location.href);for(const key of ['group','lesson','topic','panel','quiz'])url.searchParams.delete(key);history.replaceState(null,'',url);sync();draw();}},[el('span',{'aria-hidden':'true',text:icon}),el('span',{text:name})])));
   hero.replaceChildren(el('div',{},[el('span',{class:'school-eyebrow',text:params.get('view')==='quiz'?'QUIZ THEO BÀI':'HỌC GỌN · HIỂU RÕ · LUYỆN ĐỀU'}),el('h2',{text:selected[1]+' · '+profile.course.title}),el('p',{text:all.length+' bài học · Chọn một bài rồi mở phần muốn học.'})]),el('img',{src:'/assets/images/mascot-panda.svg',width:112,height:120,alt:''}));
   semesterPicker.replaceChildren(el('option',{value:'',text:'Tất cả bài học'}),...['hk1','hk2','year'].filter(id=>all.some(group=>group.semester===id)).map(id=>el('option',{value:id,text:semesterName(id)})));semesterPicker.value=semester;
   list.replaceChildren(...visible.map(lesson));if(!visible.length)list.append(el('div',{class:'school-empty',text:search?'Chưa có bài khớp tên bạn tìm.':'Nội dung môn này đang được bổ sung.'}));

@@ -1,11 +1,11 @@
 import {randomUUID} from 'node:crypto';
 import {z} from 'zod';
-import {query} from '../config/db.js';
-import {one} from '../repositories/chinese.js';
+import {query,withTransaction} from '../config/db.js';
 import {parse} from '../validators/chinese.js';
 import {adminScopeOf} from '../utils/admin-permissions.js';
 import {forbidden} from '../utils/errors.js';
 import {studentVisibleCondition} from '../utils/student-visibility.js';
+import {feedbackVersion,createFeedbackUpdater} from './feedback-reply.js';
 export const categories=['question','answer','audio','image','display','account','payment','suggestion','other'];
 export async function sendFeedback(user,body){
  const d=parse(z.object({category:z.enum(categories),message:z.string().trim().min(5).max(4000),page_url:z.string().max(1000).regex(/^\/(?!\/)/),context_text:z.string().max(2000).default(''),scope:z.enum(['general','primary','secondary','highschool','chinese']).default('general')}),body);
@@ -18,13 +18,7 @@ export async function listFeedback(user,manage=false){
  if(manage&&!scope)throw forbidden('Chỉ quản trị viên được xử lý phản ánh.');
  const where=manage?(scope==='super'?'1=1':'f.scope=?'):'f.reporter_id=?';
  const params=manage?(scope==='super'?[]:[scope]):[user.id];
- return query(`SELECT f.*,p.display_name FROM learning_feedback f JOIN profiles p ON p.id=f.reporter_id WHERE ${where} AND ${studentVisibleCondition(user,'p')} ORDER BY f.created_at DESC,f.id DESC LIMIT 200`,params);
+ const rows=await query(`SELECT f.*,p.display_name FROM learning_feedback f JOIN profiles p ON p.id=f.reporter_id WHERE ${where} AND ${studentVisibleCondition(user,'p')} ORDER BY f.created_at DESC,f.id DESC LIMIT 200`,params);
+ return rows.map(row=>({...row,reply_version:feedbackVersion(row)}));
 }
-export async function updateFeedback(user,id,body){
- id=parse(z.string().uuid(),id);const scope=adminScopeOf(user);
- if(!scope)throw forbidden('Chỉ quản trị viên được xử lý phản ánh.');
- const row=await one(`SELECT f.scope FROM learning_feedback f JOIN profiles p ON p.id=f.reporter_id WHERE f.id=? AND ${studentVisibleCondition(user,'p')}`,[id]);
- if(scope!=='super'&&scope!==row.scope)throw forbidden('Phản ánh thuộc phạm vi quản trị khác.');
- const d=parse(z.object({status:z.enum(['open','reviewing','resolved']),reply:z.string().trim().max(2000).default('')}),body);
- await query('UPDATE learning_feedback SET status=?,reply=?,updated_at=CURRENT_TIMESTAMP WHERE id=?',[d.status,d.reply,id]);return {id,...d};
-}
+export const updateFeedback=createFeedbackUpdater({withTransaction});

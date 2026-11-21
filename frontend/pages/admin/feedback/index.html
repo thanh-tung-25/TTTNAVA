@@ -1,1 +1,16 @@
-<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Phản ánh người dùng — TTNAVA</title><link rel="stylesheet" href="/assets/css/base.css"><link rel="stylesheet" href="/assets/css/components.css"><link rel="stylesheet" href="/assets/css/study-hub.css"></head><body><header id="app-header"></header><main class="page"><h1>Phản ánh người dùng</h1><p>Phân loại, phản hồi và cập nhật tiến độ xử lý. Chỉ hiển thị phản ánh trong phạm vi quản trị của bạn.</p><div class="hub-actions"><label>Trạng thái <select id="feedback-filter"><option value="">Tất cả</option><option value="open">Đã tiếp nhận</option><option value="reviewing">Đang xem xét</option><option value="resolved">Đã xử lý</option></select></label><label>Loại phản ánh <select id="feedback-category"><option value="">Tất cả loại</option></select></label></div><p id="feedback-notice" role="status"></p><div id="feedback-list"></div></main><script type="module" src="/assets/js/admin-feedback.js"></script></body></html>
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Phản ánh người dùng — TTNAVA</title>
+<link rel="icon" href="/assets/images/ttnava-logo.png">
+<link rel="stylesheet" href="/assets/css/base.css"><link rel="stylesheet" href="/assets/css/components.css"><link rel="stylesheet" href="/assets/css/study-hub.css"><link rel="stylesheet" href="/assets/css/admin-unified.css" data-admin-design="true"><link rel="stylesheet" href="/assets/css/admin-feedback.css">
+</head><body class="admin-unified feedback-admin" data-role="admin"><header id="app-header"></header>
+<main class="page feedback-page">
+ <header class="feedback-page-heading"><div><p class="eyebrow">LẮNG NGHE HỌC SINH</p><h1>Phản ánh &amp; phản hồi</h1><p>Theo dõi vấn đề, trả lời người gửi và cập nhật tiến độ xử lý.</p></div><button id="feedback-refresh" type="button" class="feedback-secondary">Làm mới</button></header>
+ <nav id="feedback-summary" class="feedback-summary" aria-label="Tổng quan phản ánh"></nav>
+ <section class="feedback-toolbar" aria-label="Tìm và lọc phản ánh">
+  <label class="feedback-search"><span>Tìm phản ánh</span><input id="feedback-search" type="search" placeholder="Tên học sinh hoặc nội dung…" autocomplete="off"></label>
+  <label><span>Trạng thái xử lý</span><select id="feedback-filter"><option value="">Tất cả trạng thái</option><option value="open">Đã tiếp nhận</option><option value="reviewing">Đang xem xét</option><option value="resolved">Đã xử lý</option></select></label>
+  <label><span>Loại phản ánh</span><select id="feedback-category"><option value="">Tất cả loại</option></select></label>
+ </section>
+ <p id="feedback-notice" class="feedback-page-notice" role="status" aria-live="polite">Đang tải phản ánh…</p>
+ <div id="feedback-list" class="feedback-list"></div>
+</main><script type="module" src="/assets/js/admin-feedback.js"></script></body></html>

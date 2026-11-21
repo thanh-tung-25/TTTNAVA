@@ -1,10 +1,11 @@
 import {SCHOOL_SUBJECT_IDS} from '../utils/school-programs.js';
 import {z} from 'zod';
-import {query} from '../config/db.js';
+import {query,jsonArrayLength} from '../config/db.js';
 import {AppError} from '../utils/errors.js';
 import {seededShuffle} from '../utils/hash.js';
 import {schoolSubjectName} from '../utils/school-subjects.js';
 import {semesterName} from '../utils/school-programs.js';
+import {worksheetExamsAvailable} from './worksheet-exam-schema.js';
 
 export const scopedExamSchema=z.object({mode:z.enum(['chapter','semester','annual']),subjectId:z.enum(SCHOOL_SUBJECT_IDS),yearId:z.string().trim().min(1).max(20).optional(),chapterId:z.string().trim().min(1).max(90).optional(),semester:z.enum(['hk1','hk2','year']).optional()}).superRefine((d,c)=>{
  if(d.mode==='chapter'&&!d.chapterId)c.addIssue({code:'custom',path:['chapterId'],message:'Chọn chủ đề kiểm tra.'});
@@ -25,7 +26,8 @@ export async function examCatalog(grade,subjectId){
  WHERE c.school_year_id=? AND c.grade=? AND c.subject_id=? AND c.is_legacy=0
  GROUP BY c.id,c.name,c.semester,c.sort_order ORDER BY c.semester,c.sort_order,c.id`,[selected.id,grade,subjectId]);
  const counts=await query(`SELECT c.semester,COUNT(DISTINCT ${questionKey}) question_count FROM curriculum_chapters c JOIN curriculum_lessons l ON l.chapter_id=c.id JOIN questions q ON q.topic_id=l.topic_id AND q.status='published' WHERE c.school_year_id=? AND c.grade=? AND c.subject_id=? AND c.is_legacy=0 GROUP BY c.semester`,[selected.id,grade,subjectId]);
- return {year:selected,grade,subjectId,chapters:chapters.map(c=>({...c,questionCount:Number(c.question_count),count:30,durationSeconds:1800})),semesters:['hk1','hk2'].filter(id=>Number(grade)<10||chapters.some(c=>c.semester===id)).map(id=>({id,name:semesterName(id),questionCount:Number(counts.find(c=>c.semester===id)?.question_count||0),count:50,durationSeconds:3000})),annual:{questionCount:counts.reduce((sum,c)=>sum+Number(c.question_count),0),count:50,durationSeconds:3600}};
+ const papers=await worksheetExamsAvailable()?await query(`SELECT id,title,exam_config,${jsonArrayLength('items')} item_count FROM worksheets WHERE grade=? AND subject_id=? AND status='published' AND exam_config IS NOT NULL ORDER BY title,id`,[grade,subjectId]):[];
+ return {papers:papers.map(row=>({...row,exam_config:typeof row.exam_config==='string'?JSON.parse(row.exam_config):row.exam_config})),year:selected,grade,subjectId,chapters:chapters.map(c=>({...c,questionCount:Number(c.question_count),count:30,durationSeconds:1800})),semesters:['hk1','hk2'].filter(id=>Number(grade)<10||chapters.some(c=>c.semester===id)).map(id=>({id,name:semesterName(id),questionCount:Number(counts.find(c=>c.semester===id)?.question_count||0),count:50,durationSeconds:3000})),annual:{questionCount:counts.reduce((sum,c)=>sum+Number(c.question_count),0),count:50,durationSeconds:3600}};
 }
 
 export async function selectScopedExam(grade,body,seed){

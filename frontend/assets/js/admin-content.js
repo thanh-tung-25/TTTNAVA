@@ -11,6 +11,8 @@ import {previewSchoolLesson} from './school-lesson-view.js';
 import {editSchoolGuide} from './admin-school-guide.js';
 const root=document.querySelector('#content-list'),notice=document.querySelector('#content-hub-error'),editor=document.querySelector('#content-worksheets'),filters=document.querySelector('#content-filters');
 let page=1,pages=1,requestNumber=0,openedLesson=null;
+document.querySelector('#content-create-kind').append(el('option',{value:'exam',text:'Đề thi có thời gian'}));
+document.querySelector('.content-create-bar').append(el('a',{class:'btn btn-ghost',href:'/pages/admin/worksheets/?exams=1',text:'Quản lý đề thi'}));
 const status={draft:'Nháp',published:'Đã đăng',hidden:'Đang ẩn'};
 const button=(text,fn)=>el('button',{type:'button',class:'btn btn-ghost btn-sm',text,onclick:async event=>{const b=event.currentTarget;b.disabled=true;try{await fn();}catch(e){notice.textContent=e.message;}finally{b.disabled=false;}}});
 function showEditor(){editor.hidden=false;document.querySelector('#ws-authoring').hidden=false;document.querySelector('#ws-reviews').hidden=true;editor.scrollIntoView({block:'start',behavior:'smooth'});}
@@ -64,7 +66,7 @@ async function load(){
 filters.onsubmit=e=>{e.preventDefault();page=1;load().catch(e=>notice.textContent=e.message);};
 filters.querySelectorAll('select').forEach(s=>s.onchange=()=>{page=1;load().catch(e=>notice.textContent=e.message);});
 document.querySelector('#content-create').onclick=async()=>{try{
- if(document.querySelector('#content-create-kind').value==='worksheet'){if(await createWorksheet(selectedScope()))showEditor();}
+ if(['worksheet','exam'].includes(document.querySelector('#content-create-kind').value)){if(await createWorksheet(selectedScope(),document.querySelector('#content-create-kind').value==='exam'))showEditor();}
  else{if(!closeWorksheet())return;editor.hidden=true;await openCreate();}
 }catch(e){notice.textContent=e.message;}};
 document.querySelector('#content-import').onclick=()=>openImport();

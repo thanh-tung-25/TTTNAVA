@@ -6,12 +6,16 @@ function field(form,label,name,value='',type='textarea'){
 }
 export function answerFields(item){
  const form=el('div',{class:'worksheet-fields'}),c=item.config||{},a=item.answer||{};
- if(['fill','word'].includes(item.type)){
+ if(item.type==='true_false_group'){
+  field(form,'Bốn ý a, b, c, d (mỗi dòng một ý)','statements',(c.statements||['a','b','c','d']).join('\n'));
+  for(let n=0;n<4;n++){const select=field(form,'Đáp án ý '+String.fromCharCode(97+n),'truth'+n,'','select');for(const [value,text]of [['','Chưa nhập đáp án'],['true','Đúng'],['false','Sai']])select.append(el('option',{value,text}));select.value=typeof a.values?.[n]==='boolean'?String(a.values[n]):'';}
+ }else if(['fill','word'].includes(item.type)){
   field(form,'Đáp án đúng (mỗi dòng một cách trả lời được chấp nhận)','accepted',(a.accepted||[]).join('\n'));
   if(item.type==='word')field(form,'Đơn vị (ví dụ: bông hoa, cm)','unit',c.unit||'','input');
  }else if(item.type==='choice'){
   field(form,'Các lựa chọn (mỗi dòng một lựa chọn)','options',(c.options||[]).join('\n'));
-  const correct=field(form,'Lựa chọn đúng','index','','select');for(let n=0;n<6;n++)correct.append(el('option',{value:n,text:'Lựa chọn '+(n+1)}));correct.value=a.index??0;
+  const correct=field(form,'Lựa chọn đúng','index','','select');correct.append(el('option',{value:'',text:'Chưa nhập đáp án'}));for(let n=0;n<6;n++)correct.append(el('option',{value:n,text:'Lựa chọn '+(n+1)}));correct.value=a.index??'';
+  field(form,'Đáp án khác cũng được chấp nhận (số lựa chọn, cách nhau bằng dấu phẩy; để trống nếu chỉ một đáp án)','accepted-indices',(a.acceptedIndices||[]).map(index=>index+1).join(','),'input');
  }else if(item.type==='compare'){
   const correct=field(form,'Dấu đúng','value','','select');['<','>','='].forEach(v=>correct.append(el('option',{value:v,text:v})));correct.value=a.value||'=';
  }else if(item.type==='blanks'){
@@ -28,8 +32,9 @@ export function answerFields(item){
 }
 export function collectFields(type,form){
  const get=name=>form.querySelector('[name='+name+']')?.value||'';
- if(['fill','word'].includes(type))return {config:type==='word'?{unit:get('unit')}:{},answer:{accepted:lines(get('accepted'))}};
- if(type==='choice')return {config:{options:lines(get('options'))},answer:{index:Number(get('index'))}};
+ if(type==='true_false_group'){const values=Array.from({length:4},(_,n)=>get('truth'+n));return {config:{statements:lines(get('statements'))},answer:{values:values.map(value=>value===''?null:value==='true')}};}
+ if(['fill','word'].includes(type))return {config:type==='word'?{unit:get('unit')}:{},answer:get('accepted').trim()?{accepted:lines(get('accepted'))}:null};
+ if(type==='choice'){const extra=get('accepted-indices').trim();return {config:{options:lines(get('options'))},answer:get('index')===''?null:{index:Number(get('index')),...(extra?{acceptedIndices:[...new Set([Number(get('index')),...extra.split(',').map(value=>Number(value.trim())-1)])]}:{})}};}
  if(type==='compare')return {config:{},answer:{value:get('value')}};
  if(type==='blanks')return {config:{labels:lines(get('labels'))},answer:{values:lines(get('values'))}};
  if(type==='ordering'){const values=lines(get('values'));return {config:{tokens:values},answer:{values}};}

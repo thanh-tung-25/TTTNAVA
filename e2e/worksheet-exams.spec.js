@@ -1,0 +1,33 @@
+import {test,expect} from '@playwright/test';
+import {createServer} from 'node:http';
+import {readFile} from 'node:fs/promises';
+import path from 'node:path';
+import {randomUUID} from 'node:crypto';
+import {validateSheet,gradeItem,validateResponses,publicItem} from '../backend/src/services/worksheet-rules.js';
+import {worksheetExamScore} from '../backend/src/services/worksheet-exam-scoring.js';
+let server,origin;
+test.beforeAll(async()=>{const root=path.resolve('frontend');server=createServer(async(req,res)=>{const pathname=new URL(req.url,'http://localhost').pathname;let file=path.resolve(root,'.'+pathname);if(pathname.endsWith('/'))file=path.join(file,'index.html');if(!file.startsWith(root+path.sep)){res.writeHead(403).end();return;}try{res.setHeader('Content-Type',({'.js':'text/javascript','.css':'text/css','.html':'text/html; charset=utf-8','.svg':'image/svg+xml'})[path.extname(file)]||'application/octet-stream');res.end(await readFile(file));}catch{res.writeHead(404).end();}});await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));origin=`http://127.0.0.1:${server.address().port}`;});
+test.afterAll(async()=>{await new Promise(resolve=>server.close(resolve));});
+async function shell(page,role){await page.route('**/assets/js/ui-core.js',route=>route.fulfill({contentType:'text/javascript',body:`export async function initPage(){document.body.dataset.role='${role}';return {id:'fixture',role:'${role}',adminScope:'super',grade:12,course:{kind:'highschool',level:12}}}export function syncDiamondTotal(){}` }));}
+async function learner(page,paper,{seconds=120}={}){
+ await shell(page,'student');let attempt;const attempts=[];
+ const exposed=()=>({...attempt,items:paper.items.map(publicItem),exam_config:paper.exam_config,title:paper.title,subject_id:paper.subject_id,grade:12});
+ await page.route('**/api/v1/worksheets/**',async route=>{const request=route.request(),p=new URL(request.url()).pathname;let data;
+  if(p.endsWith('/start')){attempt={id:randomUUID(),status:'in_progress',answers:{},results:null,ends_at:new Date(Date.now()+seconds*1000).toISOString()};data=exposed();}
+  else if(request.method()==='PUT'||p.endsWith('/submit')){attempt.answers=validateResponses(paper.items,request.postDataJSON().answers);if(p.endsWith('/submit')){attempt.results=paper.items.map(item=>({id:item.id,...gradeItem(item,attempt.answers[item.id])}));attempt.score=worksheetExamScore(paper.items,attempt.results,paper.exam_config).percent;attempt.status='completed';attempts.push(structuredClone(attempt));}data=exposed();}
+  else data=exposed();await route.fulfill({json:{data}});
+ });page.on('dialog',dialog=>dialog.accept());await page.goto(origin+'/pages/student/worksheets/?sheet='+paper.id+'&exam=1');return attempts;
+}
+test('a manually authored exam uses the same question structure and scoring as imported content',async({page,context})=>{
+ await shell(page,'admin');let paper,posted;
+ await page.route('**/api/v1/worksheets/admin**',async route=>{const request=route.request();let data;if(request.method()==='POST'){paper={id:randomUUID(),...request.postDataJSON(),version:1};data=paper;}else if(request.method()==='PUT'){posted=validateSheet(request.postDataJSON());paper={...paper,...posted,version:2};data=paper;}else data=paper?[{...paper,item_count:paper.items.length}]:[];await route.fulfill({json:{data}});});
+ await page.goto(origin+'/pages/admin/worksheets/?exams=1');await page.locator('#ws-new').click();await page.locator('[name=grade]').selectOption('12');await page.locator('[name=subject_id]').selectOption('hoa-hoc');await page.locator('[name=title]').fill('Đề Hóa nhập bằng tay');
+ await page.locator('#ws-add-type').selectOption('choice');await page.getByRole('button',{name:'+ Thêm câu',exact:true}).click();await page.locator('[name=prompt]').fill('Chọn ester');await page.locator('[name=options]').fill('CH3COOCH3\nC2H5OH\nCH3COOH\nCH4');await page.locator('[name=index]').selectOption('0');
+ await page.locator('#ws-add-type').selectOption('true_false_group');await page.getByRole('button',{name:'+ Thêm câu',exact:true}).click();await page.locator('[name=prompt]').fill('Xét bốn phát biểu');await page.locator('[name=statements]').fill('Phát biểu a\nPhát biểu b\nPhát biểu c\nPhát biểu d');for(let n=0;n<4;n++)await page.locator('[name=truth'+n+']').selectOption(n%2?'false':'true');
+ await page.locator('#ws-add-type').selectOption('fill');await page.getByRole('button',{name:'+ Thêm câu',exact:true}).click();await page.locator('[name=prompt]').fill('Tính khối lượng');await page.locator('[name=accepted]').fill('30,9');await page.getByRole('button',{name:'Đăng bài',exact:true}).click();await expect(page.locator('#ws-notice')).toContainText('Đã đăng');expect(posted.exam_config.duration_minutes).toBe(50);expect(posted.items.map(item=>item.type)).toEqual(['choice','true_false_group','fill']);
+ const student=await context.newPage(),attempts=await learner(student,paper);await student.locator('.worksheet-choices> .choice-with-audio >button').first().click();await student.getByRole('button',{name:'Câu tiếp theo →',exact:true}).click();const groups=student.locator('.worksheet-true-false .worksheet-choices');for(let n=0;n<4;n++)await groups.nth(n).getByRole('button',{name:n%2?'Sai':'Đúng',exact:true}).click();await student.getByRole('button',{name:'Câu tiếp theo →',exact:true}).click();await student.getByRole('textbox',{name:'Câu trả lời',exact:true}).fill('30.9');await student.getByRole('button',{name:'Nộp bài',exact:true}).click();await expect(student.locator('.worksheet-score')).toHaveText('10.00 / 10');expect(attempts[0].score).toBe(100);await student.close();
+});
+test('the paper clock auto-submits saved responses and excluded source errors stay unscored',async({page})=>{
+ const paper={id:randomUUID(),title:'Đề kiểm tra đồng hồ',subject_id:'hoa-hoc',exam_config:{duration_minutes:1,semester:'hk1',scoring:'thpt-2025',short_points:.25},items:[{id:randomUUID(),type:'fill',prompt:'Kết quả',config:{},answer:{accepted:['2']}},{id:randomUUID(),type:'fill',prompt:'Câu lỗi nguồn',config:{},answer:null,grading:'excluded',review_note:'Thiếu dữ kiện'}]};
+ const attempts=await learner(page,paper,{seconds:3});await page.getByRole('textbox',{name:'Câu trả lời',exact:true}).fill('2');await expect(page.locator('.worksheet-score')).toHaveText('10.00 / 10',{timeout:12000});expect(attempts).toHaveLength(1);await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});

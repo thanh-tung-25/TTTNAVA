@@ -9,6 +9,7 @@ import {validateSheet,gradeItem,validateResponses,publicItem} from '../services/
 import imageRouter from './worksheet-images.js';
 import {rateLimit} from '../middlewares/rate-limit.js';
 import {deleteWorksheet} from '../services/worksheet-delete.js';
+import {worksheetExamsAvailable} from '../services/worksheet-exam-schema.js';
 const router=Router();router.use(authenticateToken);
 router.use(asyncHandler(async(req,res,next)=>{
  if(req.user.role==='admin'){
@@ -22,7 +23,7 @@ router.use(asyncHandler(async(req,res,next)=>{
 }));
 router.use(imageRouter);
 const handle=fn=>asyncHandler(async(req,res)=>res.json({data:await fn(req)}));
-router.get('/admin',requireAdmin,handle(r=>query(`SELECT id,title,grade,subject_id,status,version,${jsonArrayLength('items')} item_count FROM worksheets WHERE ${schoolGradeCondition(r.schoolProgram)} ORDER BY updated_at DESC`)));
+router.get('/admin',requireAdmin,handle(async r=>query(`SELECT id,title,grade,subject_id,status,version,${await worksheetExamsAvailable()?'exam_config':'NULL AS exam_config'},${jsonArrayLength('items')} item_count FROM worksheets WHERE ${schoolGradeCondition(r.schoolProgram)} ORDER BY updated_at DESC`)));
 router.post('/admin',requireAdmin,handle(r=>service.save(r.user.id,null,r.body)));
 router.get('/admin/reviews',requireAdmin,handle(r=>query(`SELECT a.id,a.student_id,a.status,a.submitted_at,p.display_name,p.username,${jsonText('a.snapshot','title')} title FROM worksheet_attempts a JOIN profiles p ON p.id=a.student_id WHERE a.status='pending_review' AND ${schoolGradeCondition(r.schoolProgram,'a.grade')} ORDER BY a.submitted_at LIMIT 200`)));
 router.get('/admin/reviews/:id',requireAdmin,handle(async r=>{const [a]=await query('SELECT * FROM worksheet_attempts WHERE id=?',[r.params.id]);if(!a)throw notFound();return {...a,snapshot:service.json(a.snapshot),answers:service.json(a.answers),results:service.json(a.results)};}));
@@ -37,7 +38,7 @@ router.delete('/admin/:id',requireAdmin,handle(r=>deleteWorksheet(r.params.id,r.
 router.get('/',requireStudent,handle(async r=>{
  const course=await requireCourse(r.user.id,r.get('X-Course-Id')||'grade-'+r.user.grade);
  if(!['primary','secondary','highschool'].includes(course.kind))throw badRequest('Bài tập này dành cho khóa Tiểu học, THCS hoặc THPT.');
- return query(`SELECT w.id,w.title,w.subject_id,c.semester,c.id chapter_id,c.name chapter_name,l.name lesson_name,${jsonArrayLength('w.items')} item_count,(SELECT a.id FROM worksheet_attempts a WHERE a.worksheet_id=w.id AND a.student_id=? AND a.status='in_progress' LIMIT 1) active_attempt FROM worksheets w LEFT JOIN curriculum_lessons l ON l.id=w.lesson_id LEFT JOIN curriculum_chapters c ON c.id=l.chapter_id WHERE w.grade=? AND w.status='published' ORDER BY c.semester,c.sort_order,l.sort_order,w.updated_at DESC`,[r.user.id,course.level]);
+ return query(`SELECT w.id,w.title,w.subject_id,${await worksheetExamsAvailable()?'w.exam_config':'NULL AS exam_config'},c.semester,c.id chapter_id,c.name chapter_name,l.name lesson_name,${jsonArrayLength('w.items')} item_count,(SELECT a.id FROM worksheet_attempts a WHERE a.worksheet_id=w.id AND a.student_id=? AND a.status='in_progress' LIMIT 1) active_attempt FROM worksheets w LEFT JOIN curriculum_lessons l ON l.id=w.lesson_id LEFT JOIN curriculum_chapters c ON c.id=l.chapter_id WHERE w.grade=? AND w.status='published' ORDER BY c.semester,c.sort_order,l.sort_order,w.updated_at DESC`,[r.user.id,course.level]);
 }));
 router.get('/history',requireStudent,handle(r=>query(`SELECT id,worksheet_id,status,score,submitted_at,started_at,grade,${jsonText('snapshot','title')} title FROM worksheet_attempts WHERE student_id=? ORDER BY started_at DESC LIMIT 200`,[r.user.id])));
 router.get('/attempts/:id',requireStudent,handle(r=>service.attempt(r.user.id,r.params.id)));

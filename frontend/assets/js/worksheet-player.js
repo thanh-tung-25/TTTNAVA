@@ -1,16 +1,20 @@
 import {el} from './api.js';
 import {questionAudio,withChoiceAudio} from './question-audio.js';
-export const ITEM_TYPES={fill:'Điền đáp án',blanks:'Nhiều ô trống',choice:'Chọn đáp án',compare:'Chọn dấu > < =',ordering:'Sắp xếp',matching:'Nối cặp',column:'Đặt tính',word:'Toán có lời văn',drawing:'Tự luận / vẽ'};
+export const ITEM_TYPES={fill:'Điền đáp án',true_false_group:'Đúng / Sai (4 ý)',blanks:'Nhiều ô trống',choice:'Chọn đáp án',compare:'Chọn dấu > < =',ordering:'Sắp xếp',matching:'Nối cặp',column:'Đặt tính',word:'Toán có lời văn',drawing:'Tự luận / vẽ'};
 export const imageUrl=id=>'/api/v1/worksheets/images/'+encodeURIComponent(id);
 const btn=(text,fn)=>el('button',{type:'button',class:'btn btn-ghost',text,onclick:fn});
 export function renderItem(item,value,onChange){
  const box=el('section',{class:'worksheet-question'},[el('span',{class:'worksheet-type',text:ITEM_TYPES[item.type]}),el('h2',{class:'worksheet-prompt',text:item.prompt})]);
  box.append(questionAudio(item.prompt,{language:item.subjectId==='tieng-anh'?'en-US':'vi-VN'}));
  if(item.imageId)box.append(el('img',{class:'worksheet-illustration',src:imageUrl(item.imageId),alt:'Hình minh họa câu hỏi'}));
+ if(item.grading==='excluded')box.append(el('p',{class:'worksheet-source-note',text:'Câu tham khảo, không tính vào điểm bài thi. '+(item.review_note||'')}));
  const input=(label,current,fn,numeric=false)=>{
   const i=el('input',{class:'input',type:'text',value:current??'','aria-label':label,maxlength:300,...(numeric?{inputmode:'numeric'}:{})});i.oninput=()=>fn(i.value);return el('label',{class:'worksheet-answer'},[el('span',{text:label}),i]);
  };
- if(['fill','word'].includes(item.type))box.append(input(item.type==='word'?'Đáp số'+(item.config.unit?' ('+item.config.unit+')':''):'Câu trả lời',value,onChange,true));
+ if(item.type==='true_false_group'){
+  const values=Array.isArray(value)?[...value]:[null,null,null,null];
+  item.config.statements.forEach((statement,n)=>{const row=el('div',{class:'worksheet-true-false'},[el('p',{text:statement})]),group=el('div',{class:'worksheet-choices',role:'group','aria-label':'Ý '+String.fromCharCode(97+n)});for(const answer of [true,false]){const choice=btn(answer?'Đúng':'Sai',()=>{values[n]=answer;group.querySelectorAll('button').forEach(button=>button.setAttribute('aria-pressed',String(button===choice)));onChange([...values]);});choice.setAttribute('aria-pressed',String(values[n]===answer));group.append(choice);}row.append(group);box.append(row);});
+ }else if(['fill','word'].includes(item.type))box.append(input(item.type==='word'?'Đáp số'+(item.config.unit?' ('+item.config.unit+')':''):'Câu trả lời',value,onChange,true));
  else if(['choice','compare'].includes(item.type)){
   const choices=item.type==='compare'?['<','>','=']:item.config.options;
   const list=el('div',{class:'worksheet-choices',role:'group','aria-label':'Chọn đáp án'});
@@ -46,7 +50,7 @@ export function renderItem(item,value,onChange){
 }
 export function resultBlock(result){
  return el('div',{class:'worksheet-feedback '+(result.correct===null?'pending':result.correct?'correct':'incorrect'),role:'status'},[
-  el('strong',{text:result.correct===null?'Chờ giáo viên chấm':result.correct?'Đúng rồi!':'Mình xem lại nhé!'}),
+  el('strong',{text:result.excluded?'Câu tham khảo, không tính điểm':result.correct===null?'Chờ giáo viên chấm':result.correct?'Đúng rồi!':'Mình xem lại nhé!'}),
   ...(result.correct===null?[]:[el('p',{text:'Đáp án: '+result.expected})]),
   ...(result.checks?.length>1?[el('p',{text:result.checks.filter(Boolean).length+'/'+result.checks.length+' ô đúng'})]:[]),
   ...(result.explanation?[el('p',{text:result.explanation})]:[]),...(result.comment?[el('p',{text:'Giáo viên: '+result.comment})]:[]),

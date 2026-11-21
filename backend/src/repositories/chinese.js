@@ -2,6 +2,7 @@ import { query,jsonText } from '../config/db.js';
 import { notFound } from '../utils/errors.js';
 import { chineseQuestionPrompt } from '../../../frontend/assets/js/chinese-question-prompt.js';
 import {currentQuizProgress,attemptsForSet} from '../services/chinese-quiz-state.js';
+import {chineseProgressModels} from '../services/chinese-learning-progress.js';
 export const json = value => typeof value === 'string' ? JSON.parse(value) : value;
 export async function one(sql, params = [], run = query) { const rows = await run(sql,params); if (!rows[0]) throw notFound(); return rows[0]; }
 export const setSelect = `SELECT s.*, l.level_id, l.title lesson_title, l.status lesson_status, d.filename, d.created_at uploaded_at
@@ -30,13 +31,16 @@ export async function catalog(admin, student) {
  for(const set of sets){const row=counts.find(c=>c.set_id===set.id&&c.kind==='dialogue');set.speaking_count=Number(row?.speaking_configured)?Number(row.speaking_assigned):Math.min(3,Number(row?.speaking_total)||0);set.speaking_settings=json(set.speaking_settings)||null;}
  const reviews = admin ? [] : await query('SELECT r.* FROM chinese_reviews r WHERE student_id=?',[student]);
  const progress = admin ? [] : await query('SELECT * FROM chinese_progress WHERE student_id=? ORDER BY updated_at DESC',[student]);
- const completion=[];
+ const completion=[];let lesson_progress=[];
  if(!admin) {
   const reviewed=new Set(reviews.filter(r=>r.review_count>0).map(r=>r.item_id));
   const read=new Set(progress.flatMap(p=>json(p.read_items)));
   const attempts=await query('SELECT set_id,snapshot,answers,score,finished_at FROM chinese_attempts WHERE student_id=? AND abandoned_at IS NULL ORDER BY started_at DESC',[student]);
   const rows=(await query(`SELECT i.id,i.kind,i.set_id,i.data FROM chinese_items i JOIN chinese_sets s ON s.id=i.set_id JOIN chinese_lessons l ON l.id=s.lesson_id WHERE i.active=1 AND s.status='published' AND l.status='published'`)).map(item=>({...item,data:json(item.data)}));
   for(const s of sets){const content=rows.filter(item=>item.set_id===s.id),quiz=currentQuizProgress(content.filter(item=>item.kind==='question'&&item.data.approved),attemptsForSet(attempts,s.id)),words=content.filter(item=>item.kind==='vocabulary'&&reviewed.has(item.id)).length,passages=content.filter(item=>['reading','grammar','dialogue'].includes(item.kind)&&item.data.practice!=='speaking'&&read.has(item.id)).length;completion.push({set_id:s.id,done:words+passages+quiz.locked.size,words_done:words,read_done:passages,quiz_answered:quiz.locked.size,quiz_completed:quiz.blocks.filter(block=>block.completed).length,quiz_stages:quiz.blocks.length});}
+  const allItems=await query("SELECT i.* FROM chinese_items i JOIN chinese_sets s ON s.id=i.set_id JOIN chinese_lessons l ON l.id=s.lesson_id WHERE l.status='published' ORDER BY i.position,i.id"),sourceSets=await query("SELECT s.* FROM chinese_sets s JOIN chinese_lessons l ON l.id=s.lesson_id WHERE l.status='published'");
+  lesson_progress=await chineseProgressModels(student,{lessons,sets:sourceSets,items:allItems,activities:activities.map(row=>({...row,status:'published'})),base:{reviews,progress}});
+  for(const row of completion){const set=sets.find(set=>set.id===row.set_id);row.percent=lesson_progress.find(lesson=>lesson.lessonId===set?.lesson_id)?.percent??0;}
  }
- return {levels,lessons,sets,counts,reviews,progress,completion};
+ return {levels,lessons,sets,counts,reviews,progress,completion,lesson_progress};
 }

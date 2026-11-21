@@ -7,7 +7,7 @@ import * as study from '../services/student-experience.js';
 import * as rewards from '../services/student-rewards.js';
 import * as connections from '../services/student-connections.js';
 import * as assignments from '../services/study-assignments.js';
-import {startStudyActivity,finishStudyActivity} from '../services/study-activity.js';
+import {startStudyActivity,finishStudyActivity,saveStudyProgress} from '../services/study-activity.js';
 const router=Router();
 const course=req=>z.string().min(1).max(32).parse(req.get('X-Course-Id')||req.cookies?.ttnava_course||req.query.courseId||'');
 const handle=fn=>asyncHandler(async(req,res)=>{const data=await fn(req);res.set('Cache-Control','no-store').json({data});});
@@ -22,6 +22,7 @@ router.post('/assignments/manage/:id/review/:studentId',requireAdmin,handle(asyn
 router.use(requireStudent);
 router.post('/study-sessions',requirePlayer,rateLimit({max:30,keyPrefix:'study-start'}),handle(r=>startStudyActivity(r.user.id,course(r),r.body)));
 router.post('/study-sessions/:id/finish',requirePlayer,rateLimit({max:30,keyPrefix:'study-finish'}),handle(r=>finishStudyActivity(r.user.id,r.params.id,r.body)));
+router.post('/study-sessions/:id/progress',rateLimit({max:180,keyPrefix:'study-progress'}),handle(r=>saveStudyProgress(r.user.id,r.params.id,r.body)));
 router.get('/preferences',handle(r=>study.preferences(r.user.id)));
 router.put('/preferences',handle(r=>study.savePreferences(r.user.id,r.body)));
 router.get('/dashboard',handle(r=>study.experienceDashboard(r.user.id,course(r))));

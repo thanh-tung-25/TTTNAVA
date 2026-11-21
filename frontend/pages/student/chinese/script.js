@@ -55,7 +55,7 @@ async function learn(id){
  const mode=params.get('mode')||(words.length||questions.length?'cards':spoken?'speak':'read');
  const applied=activities?.tasks?.length?activities:null;
  if(mode==='speak'){mountSpeaking(root(),{set,activities:applied,items,profile:learner});return;}
- if(mode==='words'){wordTable(root(),words,id);return;}
+ if(mode==='words'){wordTable(root(),words,id,catalog.lesson_progress?.find(row=>row.lessonId===set.lesson_id)?.studiedWordIds||[]);return;}
  if(mode==='listen'){listeningPractice(root(),words,id);return;}
  if(mode==='review'){root().append(action('Ôn 20 câu đã học',()=>quiz(id,true),true));await quiz(id,true);return;}
  if(mode==='apply'){
@@ -65,18 +65,20 @@ async function learn(id){
  }
  if(mode==='read'){
   const reward=studyReward({activity:'reading',sourceId:id,required:reads.length});
+  if(reads.length)reward.begin();
   for(const i of reads)root().append(card(i.data.title||'Bài đọc',[el('p',{class:'read-text',text:i.data.text}),action(read.includes(i.id)?'Đã đọc':'Đánh dấu đã đọc',async()=>{if(!read.includes(i.id))read.push(i.id);await save(i.id);reward.item(i.id);notice('Đã lưu tiến độ đọc.');})]));
   if(reads.length)root().append(reward.node);
   if(!reads.length)root().append(el('p',{text:'Tài liệu này chưa có bài đọc.'}));
  }else if(words.length||questions.length){
   const cardReward=studyReward({activity:'cards',sourceId:id,required:Math.min(5,words.length)});
+  if(words.length)cardReward.begin();
   let vocab=words.length>0&&!questions.some(q=>q.id===(params.get('word')||last));
   let deckKey=id+':'+(vocab?'vocabulary':'question'),deck=sessionStudyDeck(vocab?words:questions,deckKey),current=Math.max(0,deck.findIndex(w=>w.id===(params.get('word')||last))),flipped=false,frontMode='hanzi';
   const answers=new Map(),area=el('div'),caption=el('p',{class:'learn-caption',text:vocab?'Thẻ từ vựng':'Thẻ câu hỏi'});
   root().append(caption);
   const flip=async()=>{
    const item=deck[current];if(!flipped&&item.kind==='question'&&!answers.has(item.id))answers.set(item.id,await request('/sets/'+id+'/study/'+item.id));
-   if(deck[current]?.id===item.id){flipped=!flipped;render();}
+   if(deck[current]?.id===item.id){flipped=!flipped;if(flipped&&item.kind==='vocabulary')cardReward.track(item.id);render();}
   };
   const move=async delta=>{current=(current+delta+deck.length)%deck.length;flipped=false;render();await save(deck[current].id);};
  const render=()=>{

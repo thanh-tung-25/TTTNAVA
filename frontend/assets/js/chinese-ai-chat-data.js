@@ -1,5 +1,6 @@
 // Shared curriculum defaults. Teacher settings override these per lesson.
 import {curriculumTemplates} from './chinese-curriculum-templates.js';
+export const CHAT_PRACTICE_TURNS=20;
 export const chatScenarios=[
  {id:'greeting',title:'Làm quen',icon:'👋',goal:'Chào hỏi và hỏi thăm sức khỏe.',opening:'你好！你今天好吗？',translation:'Chào bạn! Hôm nay bạn khỏe không?'},
  {id:'identity',title:'Người bạn mới',icon:'🤝',goal:'Giới thiệu tên và quốc tịch.',opening:'你好！你叫什么名字？',translation:'Chào bạn! Bạn tên là gì?'},

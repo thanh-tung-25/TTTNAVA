@@ -11,6 +11,7 @@ export async function studentCatalog(user,selected) {
  data.levels=data.levels.filter(l=>allowed.includes(l.id));data.lessons=data.lessons.filter(l=>allowed.includes(l.level_id));
  data.sets=data.sets.filter(s=>allowed.includes(s.level_id));const ids=new Set(data.sets.map(s=>s.id));
  for(const key of ['counts','progress','completion'])data[key]=data[key].filter(r=>ids.has(r.set_id));
+ data.lesson_progress=(data.lesson_progress||[]).filter(row=>data.lessons.some(lesson=>lesson.id===row.lessonId));
  return data;
 }
 export async function studentNotebook(user,filters,selected) {

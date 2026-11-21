@@ -1,5 +1,6 @@
-import {el,root,link,error,percentage} from './chinese-common.js';
+import {el,root,link,error} from './chinese-common.js';
 import {modeCounts} from './chinese-learning-modes.js';
+import {lessonProgressButton} from './chinese-lesson-progress.js';
 
 function action(label,fn){
  const button=el('button',{type:'button',class:'btn btn-secondary',text:label});
@@ -47,15 +48,12 @@ export function renderStudentChineseLessons({catalog,params,quiz}){
  for(const [lessonIndex,lesson]of lessons.entries()){
   const sets=catalog.sets.filter(set=>set.lesson_id===lesson.id);
   const row=el('section',{class:'chinese-lesson-row lesson-island',id:'lesson-'+lesson.id,'data-tone':['purple','peach','mint'][lessonIndex%3]},[
-   el('header',{class:'chinese-lesson-heading'},[el('span',{class:'chinese-lesson-number','aria-hidden':'true',text:String(lessonIndex+1).padStart(2,'0')}),el('h3',{text:lesson.title}),el('img',{class:'chinese-lesson-companion',src:'/assets/images/mascot-'+['panda','bunny','lion'][lessonIndex%3]+'.svg',width:58,height:62,alt:'',loading:'lazy'})]),
+   el('header',{class:'chinese-lesson-heading'},[el('span',{class:'chinese-lesson-number','aria-hidden':'true',text:String(lessonIndex+1).padStart(2,'0')}),el('h3',{text:lesson.title}),lessonProgressButton(lesson,catalog)]),
   ]);
   for(const set of sets){
-   const c=modeCounts(set,catalog.counts),progress=percentage(set.id,catalog),completion=catalog.completion?.find(p=>p.set_id===set.id);
-   const summary=[c.words?c.words+' từ':'',c.quiz?c.quiz+' câu hỏi':'',c.speak?c.speak+' câu luyện nói':'',progress?'Đã học '+progress+'%':''].filter(Boolean).join(' · ')||'Nội dung đang được bổ sung.';
+   const c=modeCounts(set,catalog.counts);
    row.append(el('div',{class:'chinese-lesson-entry learn-document','data-set':set.id},[
-    ...(sets.length>1?[el('strong',{text:set.title})]:[]),el('p',{class:'chinese-lesson-summary',text:summary}),
-    ...(c.quiz>0&&c.quiz<20?[el('p',{class:'chinese-lesson-summary',text:'Quiz đang được bổ sung; cần đủ 20 câu để bắt đầu.'})]:[]),
-    ...(completion?.quiz_stages?[el('p',{class:'chinese-lesson-summary',text:'Bài tập: '+(completion.quiz_completed||0)+'/'+completion.quiz_stages+' lượt hoàn thành'})]:[]),
+    ...(sets.length>1?[el('strong',{text:set.title})]:[]),
     lessonSections(set,c,lesson,quiz),
    ]));
   }

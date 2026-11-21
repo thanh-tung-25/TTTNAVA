@@ -45,6 +45,7 @@ export function mountSpeaking(host,{set,activities,items=[],profile}){
   ui.resultInfo.textContent=`Mã lượt ${snapshot.code} · ${snapshot.date} · ${(blob.size/1024/1024).toFixed(1)} MB · ${speakingFilename(snapshot,blob.type).split('.').at(-1).toUpperCase()}`;
   update((reason?reason+' ':'')+'Bản ghi đã sẵn sàng. Nghe lại, ghi âm lại nếu cần hoặc bấm AI chấm bài.');
   const seconds=(performance.now()-started)/1000;
+  if(study&&seconds>=5){study.evidence({duration:Math.min(120,seconds)});ui.result.querySelector('.study-reward-status')?.remove();ui.result.append(study.node);for(const part of snapshot.answer_segments||[])if(part.end-part.start>=1.5)study.track(String(part.index));}
   if(study&&snapshot.heard_count===snapshot.total&&snapshot.answer_segments?.length>=snapshot.total&&seconds>=5){study.evidence({duration:Math.min(120,seconds)});ui.result.querySelector('.study-reward-status')?.remove();ui.result.append(study.node);study.finish();}
   if(matchMedia('(max-width:680px)').matches)ui.result.scrollIntoView({block:'start'});
  }

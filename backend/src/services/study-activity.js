@@ -4,8 +4,9 @@ import {query,withTransaction} from '../config/db.js';
 import {json} from '../repositories/chinese.js';
 import {requireCourse} from './course-service.js';
 import {badRequest,notFound} from '../utils/errors.js';
-import {studyStartSchema,studySnapshot,evidenceSchema,validateStudyEvidence} from './study-activity-source.js';
+import {studyStartSchema,studySnapshot,evidenceSchema,validateStudyEvidence,validateStudyProgress} from './study-activity-source.js';
 import {awardLearningReward,STUDY_REWARD_LIMIT} from './learning-reward.js';
+import {createStudyProgressSaver} from './study-progress.js';
 
 export async function startStudyActivity(user,courseId,body){
  const input=studyStartSchema.parse(body);
@@ -25,6 +26,9 @@ export async function finishStudyActivity(user,id,body){
   if(row.completed_at)return {...json(row.result),reward:{earned:0,reason:'already_rewarded'}};
   if(Date.now()-new Date(row.created_at).getTime()>86400000)throw badRequest('Lượt học đã hết hạn. Bạn mở lại phần học nhé.');
   const result=validateStudyEvidence(json(row.snapshot),evidence,row.created_at),reward=await awardLearningReward(user,row.course_id,row.activity,row.source_id+'|'+row.unit_key,run);
-  const response={...result,reward};await run('UPDATE study_activity_sessions SET result=?,completed_at=CURRENT_TIMESTAMP(3) WHERE id=?',[JSON.stringify(response),id]);return response;
+  const previous=json(row.result)||{},ids=(evidence.items?.length&&['view','listening','application','recording'].includes(json(row.snapshot).kind))?validateStudyProgress(json(row.snapshot),evidence,row.created_at):[];
+  const response={...previous,...result,reward,studied_items:[...new Set([...(previous.studied_items||[]),...ids])]};await run('UPDATE study_activity_sessions SET result=?,completed_at=CURRENT_TIMESTAMP(3) WHERE id=?',[JSON.stringify(response),id]);return response;
  });
 }
+// Coverage is independent of claiming a reward, including after the daily cap.
+export const saveStudyProgress=createStudyProgressSaver({withTransaction,requireCourse});

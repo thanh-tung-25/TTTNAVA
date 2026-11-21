@@ -54,6 +54,7 @@ export async function api(path, options = {}) {
     headers: { Accept: 'application/json', ...headers },
     ...(options.signal?{signal:options.signal}:{}),
     ...(options.cache?{cache:options.cache}:{}),
+    ...(options.keepalive?{keepalive:true}:{}),
   };
   const courseId=localStorage.getItem('ttnava-course');
   if(courseId&&!init.headers['X-Course-Id'])init.headers['X-Course-Id']=courseId;

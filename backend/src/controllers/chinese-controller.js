@@ -2,7 +2,7 @@ import * as service from '../services/chinese.js';
 import { asyncHandler } from '../utils/errors.js';
 import { studentCatalog, studentNotebook, studentTests } from '../services/course-chinese-view.js';
 export const handler = fn => asyncHandler(async (req,res)=>res.json({data:await fn(req,res)}));
-export const catalog = handler(r=>r.user.role==='admin'?service.catalog(true,r.user.id):studentCatalog(r.user.id,r.get('X-Course-Id')));
+export const catalog = handler((r,res)=>{res.set('Cache-Control','private, no-store');return r.user.role==='admin'?service.catalog(true,r.user.id):studentCatalog(r.user.id,r.get('X-Course-Id'));});
 export const detail = handler(r=>service.detail(r.params.id,r.user.role==='admin',r.user.id));
 export const studyCard = handler(r=>service.studyCard(r.params.id,r.params.itemId));
 export const saveLesson = handler(r=>service.saveLesson(r.params.id,r.body));

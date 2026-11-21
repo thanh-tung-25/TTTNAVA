@@ -4,6 +4,33 @@ import {readFile} from 'node:fs/promises';
 import path from 'node:path';
 import {activityTemplate} from '../frontend/assets/js/chinese-activity-templates.js';
 
+test('reported teacher fill reads the visible input and includes it in an explicit feedback report',async({page})=>{
+ const activities={topic:'Chào hỏi',tasks:[{type:'fill',prompt:'我是___。 (Tôi là giáo viên.)',answer:'老师',explanation:'Câu hoàn chỉnh: 我是老师。 — Tôi là giáo viên.'}]};
+ await mock(page,0,1,titles[0],activities);
+ await page.route('**/api/v1/experience/study-sessions**',route=>route.fulfill({json:{data:{id:'session',required:1,reward:{earned:0,reason:'already_rewarded'}}}}));
+ let reported;await page.route('**/api/v1/feedback',route=>{reported=route.request().postDataJSON();return route.fulfill({json:{data:{id:'mock-feedback'}}});});
+ await page.goto(origin+'/pages/student/chinese/?set=sample&mode=apply');await page.getByRole('button',{name:'Điền từ',exact:true}).click();
+ // Autofill/keyboard integrations can update the control before dispatching
+ // input. Grading must use the actual displayed value at the time of checking.
+ await page.getByRole('textbox',{name:'Từ cần điền'}).evaluate(input=>{input.value='我 是 老 师。';});
+ await page.getByRole('button',{name:'Kiểm tra',exact:true}).click();await expect(page.locator('.applied-feedback')).toContainText('Đúng rồi!');
+ await page.evaluate(async()=>{const password=document.createElement('input');password.type='password';password.value='UNRELATED_PRIVATE_FIELD';document.body.append(password);const {setupFeedback}=await import('/assets/js/learning-feedback.js');setupFeedback({role:'student',course:{kind:'chinese'}});});
+ await page.locator('.applied-practice').getByRole('button',{name:'Phản ánh câu này',exact:true}).first().click();
+ const dialog=page.getByRole('dialog',{name:'Góp ý và phản ánh lỗi'});await expect(dialog).toContainText('Câu trả lời của học sinh: 我 是 老 师。');
+ await dialog.getByRole('textbox',{name:'Mô tả vấn đề',exact:true}).fill('Phản ánh thử trong bài kiểm tra cách chấm');await dialog.getByRole('button',{name:'Gửi phản ánh',exact:true}).click();
+ await expect.poll(()=>reported?.context_text).toContain('Câu trả lời của học sinh: 我 是 老 师。');expect(reported.context_text).not.toContain('UNRELATED_PRIVATE_FIELD');
+});
+
+test('teacher fill waits for Chinese IME composition and grades the committed word',async({page})=>{
+ await mock(page,0,1,titles[0],{topic:'Chào hỏi',tasks:[{type:'fill',prompt:'我是___。 (Tôi là giáo viên.)',answer:'老师',explanation:'我是老师。'}]});
+ await page.route('**/api/v1/experience/study-sessions**',route=>route.fulfill({json:{data:{id:'session',required:1,reward:{earned:0,reason:'already_rewarded'}}}}));
+ await page.goto(origin+'/pages/student/chinese/?set=sample&mode=apply');await page.getByRole('button',{name:'Điền từ',exact:true}).click();
+ const input=page.getByRole('textbox',{name:'Từ cần điền'});await input.evaluate(node=>{node.dispatchEvent(new CompositionEvent('compositionstart',{bubbles:true}));node.value='laoshi';node.dispatchEvent(new InputEvent('input',{bubbles:true,isComposing:true}));});
+ await page.getByRole('button',{name:'Kiểm tra',exact:true}).click();await expect(page.locator('.applied-feedback')).toContainText('chọn xong chữ Hán');await expect(input).toBeEnabled();
+ await input.evaluate(node=>{node.value='老师';node.dispatchEvent(new CompositionEvent('compositionend',{bubbles:true,data:'老师'}));});
+ await page.getByRole('button',{name:'Kiểm tra',exact:true}).click();await expect(page.locator('.applied-feedback')).toContainText('Đúng rồi!');
+});
+
 let server,origin;
 const titles=['你好','你叫什么名字','很高兴认识你','你去哪儿','你要吃什么','你在哪儿工作','中国银行在哪儿','你的生日是几月几号','你喜欢中国电影还是美国电影','你家有几口人'];
 test.beforeAll(async()=>{

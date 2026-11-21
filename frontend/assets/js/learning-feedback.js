@@ -1,4 +1,5 @@
 import {api,el} from './api.js';
+import {learningFeedbackContext} from './learning-feedback-context.js';
 export const feedbackLabels={question:'Sai hoặc khó hiểu nội dung câu hỏi',answer:'Đáp án hoặc lời giải chưa đúng',audio:'Không nghe được / đọc chưa đúng',image:'Hình ảnh thiếu hoặc chưa đúng',display:'Giao diện / nút bấm bị lỗi',account:'Đăng nhập / tài khoản',payment:'Khóa học / thanh toán',suggestion:'Đề xuất cải thiện',other:'Lỗi khác'};
 export const feedbackStatuses={open:'Đã tiếp nhận',reviewing:'Đang xem xét',resolved:'Đã xử lý'};
 export function setupFeedback(profile){
@@ -20,7 +21,7 @@ export function setupFeedback(profile){
  }
  trigger.onclick=()=>open();
  const prompts='.question-prompt,.quiz-prompt,.worksheet-prompt,.study-prompt,.applied-practice>h2,.applied-hanzi,.review-item>strong';
- const enhance=()=>{document.querySelectorAll(prompts).forEach(prompt=>{const anchor=prompt.closest('button,label')||prompt;if(anchor.parentElement.querySelector(':scope > .question-feedback'))return;const b=el('button',{type:'button',class:'question-feedback btn btn-ghost btn-sm',text:'Phản ánh câu này',onclick:()=>open((prompt.closest('.applied-practice')?.textContent||prompt.textContent).trim())});anchor.after(b);
+ const enhance=()=>{document.querySelectorAll(prompts).forEach(prompt=>{const anchor=prompt.closest('button,label')||prompt;if(anchor.parentElement.querySelector(':scope > .question-feedback'))return;const b=el('button',{type:'button',class:'question-feedback btn btn-ghost btn-sm',text:'Phản ánh câu này',onclick:()=>open(learningFeedbackContext(prompt))});anchor.after(b);
   if(!chinese&&!anchor.parentElement.querySelector('.hub-hint')&&!prompt.closest('.applied-practice')&&!anchor.classList.contains('flashcard'))b.after(el('details',{class:'hub-hint'},[el('summary',{text:'Gợi ý cách làm'}),el('p',{text:'Nghe hoặc đọc lại đề, tìm điều câu hỏi yêu cầu. Với câu dài, chia thành từng ý nhỏ; so sánh từng lựa chọn trước khi trả lời.'})]));
  });};
  const observer=new MutationObserver(enhance);observer.observe(document.querySelector('main')||document.body,{childList:true,subtree:true});enhance();window.addEventListener('pagehide',()=>observer.disconnect(),{once:true});

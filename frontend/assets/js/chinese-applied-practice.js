@@ -4,6 +4,7 @@ import {animalPath} from './animal-path.js';
 import {chineseQuestionPrompt} from './chinese-question-prompt.js';
 import {mixStudy,activityConcept} from './chinese-study-variety.js';
 import {studyReward} from './study-reward.js';
+import {chineseActivityMatches} from './chinese-activity-answer.js';
 
 // Only published activities supplied by the lesson API are rendered here.
 export function mountPractice(host,lesson,setId){
@@ -11,8 +12,6 @@ export function mountPractice(host,lesson,setId){
  const box=card('Luyện vận dụng',[]);box.classList.add('applied-practice');host.append(box);
  const tasks=lesson.tasks;
  const labels={order:'Xếp câu',fix:'Sửa lỗi',fill:'Điền từ',dialogue:'Hội thoại'};
- const normalized=value=>String(value).normalize('NFC').trim().replace(/\s+/gu,' ').toLocaleLowerCase('zh');
- const matches=(a,b)=>normalized(a)===normalized(b);
  const primary=(text,fn)=>{const b=button(text,fn);b.classList.add('btn-primary');return b;};
  const mix=arr=>{const copy=[...arr];for(let i=copy.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];}return copy;};
  let tokens=[],choices=[],currentType,reward;
@@ -33,8 +32,10 @@ export function mountPractice(host,lesson,setId){
   box.append(task.type==='dialogue'?questionAudio(task.speech,{language:'zh-CN'}):questionAudio((task.type==='fix'?'Chọn câu sửa đúng. ':task.type==='fill'?'Điền từ còn thiếu. ':'')+prompt));
   const check=primary('Kiểm tra',()=>{
    if(checked)return;
-   if(!selection){feedback.textContent='Hãy chọn câu trả lời trước nhé.';return;}
-   checked=true;const ok=matches(selection,task.answer);if(ok)correct++;reward.item(tasks.indexOf(task),selection);
+   const input=box.querySelector('input.quiz-text');
+   if(input){if(input.dataset.composing==='true'){feedback.textContent='Bạn chọn xong chữ Hán trên bàn phím rồi bấm Kiểm tra nhé.';return;}selection=input.value;}
+   if(!selection.trim()){feedback.textContent='Hãy chọn câu trả lời trước nhé.';return;}
+   checked=true;const ok=chineseActivityMatches(task,selection);if(ok)correct++;reward.item(tasks.indexOf(task),selection);
    render();const result=box.querySelector('.applied-feedback');result.tabIndex=-1;result.focus({preventScroll:true});
   });
   if(task.type==='order'){
@@ -45,7 +46,10 @@ export function mountPractice(host,lesson,setId){
    const reset=button('Xếp lại',()=>{chosen=[];update();});reset.disabled=checked;box.append(reset);
   }else if(task.type==='fill'){
    box.append(el('p',{class:'applied-hanzi',text:prompt}));
-   const input=el('input',{class:'quiz-text',type:'text','aria-label':'Từ cần điền',autocomplete:'off',value:selection});input.disabled=checked;input.oninput=()=>{selection=input.value;feedback.textContent='';};box.append(input);
+   const input=el('input',{class:'quiz-text',type:'text','aria-label':'Từ cần điền','aria-describedby':'applied-fill-help',autocomplete:'off',autocapitalize:'off',spellcheck:'false',placeholder:'Nhập chữ Hán còn thiếu…',value:selection});input.disabled=checked;input.oninput=()=>{selection=input.value;feedback.textContent='';};
+   input.addEventListener('compositionstart',()=>{input.dataset.composing='true';});input.addEventListener('compositionend',()=>{input.dataset.composing='false';selection=input.value;feedback.textContent='';});
+   input.onkeydown=event=>{if(event.key==='Enter'&&!event.isComposing&&event.keyCode!==229){event.preventDefault();check.click();}};
+   box.append(input,el('p',{id:'applied-fill-help',class:'muted',text:'Điền bằng chữ Hán. Bạn cũng có thể viết cả câu hoàn chỉnh.'}));
   }else{
    if(task.type==='fix')box.append(el('p',{class:'applied-error',text:prompt}));
    else box.append(el('p',{text:prompt}),el('div',{class:'applied-bubble'},[el('p',{class:'applied-hanzi',text:task.speech})]));
@@ -58,7 +62,7 @@ export function mountPractice(host,lesson,setId){
   }
   box.append(el('div',{class:'learn-actions'},[check]),feedback);
   if(checked){
-   const ok=matches(selection,task.answer);feedback.classList.add(ok?'answer-correct':'answer-wrong');
+   const ok=chineseActivityMatches(task,selection);feedback.classList.add(ok?'answer-correct':'answer-wrong');
    feedback.replaceChildren(el('strong',{text:ok?'Đúng rồi!':'Chưa đúng, xem cách dùng nhé.'}),el('p',{class:'applied-hanzi',text:task.answer}),...(['order','dialogue'].includes(task.type)&&task.pinyin?[el('p',{class:'pinyin',text:task.pinyin})]:[]),el('p',{text:task.explanation}));
    box.append(primary(index+1===queue.length?'Xem kết quả':'Tiếp tục →',()=>{index++;if(index===queue.length)finish();else nextTask();}));
   }

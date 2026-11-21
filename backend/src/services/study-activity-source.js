@@ -5,6 +5,7 @@ import {requireCourse} from './course-service.js';
 import {badRequest} from '../utils/errors.js';
 import {speakingQuestions} from '../../../frontend/assets/js/chinese-speaking-data.js';
 import {uniqueStudyWords} from '../../../frontend/assets/js/chinese-study-variety.js';
+import {chineseActivityMatches} from '../../../frontend/assets/js/chinese-activity-answer.js';
 
 export const studyStartSchema=z.object({activity:z.enum(['cards','words','listening','application','reading','writing','recording','lab']),source_id:z.string().min(1).max(80),unit:z.string().max(30).default('all')}).strict();
 export async function studySnapshot(user,courseId,input){
@@ -38,7 +39,6 @@ export async function studySnapshot(user,courseId,input){
  }
  return {required:Math.min(5,words.length),items:words.map(i=>({id:i.id})),kind:'view'};
 }
-const normalized=s=>String(s).normalize('NFC').trim().replace(/\s+/gu,' ').toLocaleLowerCase('zh');
 export const evidenceSchema=z.object({items:z.array(z.object({id:z.string().max(80),answer:z.string().max(3000).optional()}).strict()).max(100).optional(),strokes:z.array(z.array(z.tuple([z.number().min(0).max(1),z.number().min(0).max(1)])).min(2).max(200)).max(50).optional(),duration:z.number().min(0).max(120).optional(),actions:z.array(z.string().min(1).max(150)).max(100).optional()}).strict();
 export function validateStudyProgress(snapshot,evidence,createdAt){
  const rows=evidence.items||[],allowed=new Map((snapshot.items||[]).map(item=>[item.id,item]));
@@ -63,7 +63,7 @@ export function validateStudyEvidence(snapshot,evidence,createdAt){
  if(ids.size!==rows.length||rows.length<snapshot.required||rows.some(r=>!allowed.has(r.id)))fail();
  let correct=0;for(const row of rows){const source=allowed.get(row.id);
   if(snapshot.kind==='listening'){if(!snapshot.options.includes(row.answer))fail();if(row.answer===source.answer)correct++;}
-  if(snapshot.kind==='application'){if(!row.answer?.trim())fail();if(['fix','dialogue'].includes(source.data.type)&&!source.data.options.includes(row.answer))fail();if(normalized(row.answer)===normalized(source.data.answer))correct++;}
+  if(snapshot.kind==='application'){if(!row.answer?.trim())fail();if(['fix','dialogue'].includes(source.data.type)&&!source.data.options.includes(row.answer))fail();if(chineseActivityMatches(source.data,row.answer))correct++;}
  }
  return {completed:rows.length,...(['listening','application'].includes(snapshot.kind)?{correct}:{})};
 }

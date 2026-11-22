@@ -8,7 +8,7 @@ import {worksheetExamScore} from '../src/services/worksheet-exam-scoring.js';
 import {requireSolutionImageSubmission,snapshotIncludesSolution} from '../src/services/worksheet-solution-access.js';
 
 test('algebra answers accept exact equivalent notation and periodic solution families',()=>{
- for(const [left,right] of [['2sqrt(2)','sqrt(8)'],['x²+2x+1','(x+1)^2'],['\\frac{1}{2}','0.5'],['π/3+kπ','4π/3+kπ'],['π/3+kπ','π/3-kπ'],['√pi','sqrt(pi)']])assert(worksheetExpressionMatches(left,right),left);
+ for(const [left,right] of [['2sqrt(2)','sqrt(8)'],['x²+2x+1','(x+1)^2'],['(x+1)*(x-1)','x^2-1'],['(x^2-1)/(x-1)','x+1'],['\\frac{1}{2}','0.5'],['π/3+kπ','4π/3+kπ'],['π/3+kπ','π/3-kπ'],['(1+k)*pi','k*pi'],['√pi','sqrt(pi)']])assert(worksheetExpressionMatches(left,right),left);
  assert(!worksheetExpressionMatches('pi/3+k*pi','pi/3+2*k*pi'));
  assert(!worksheetExpressionMatches('x^2+1','x^2-1'));
  assert(worksheetAnswerMatches('{pi/3+k*pi;2*pi/3+k*pi}','{5*pi/3+k*pi;4*pi/3+k*pi}',{answer_format:'set'}));

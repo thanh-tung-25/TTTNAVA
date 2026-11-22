@@ -1,4 +1,7 @@
-import nerdamer from 'nerdamer';
+// Load the algebra and calculus helpers used for exact equivalence and k-families.
+// Nerdamer 2.x contains BigInt sentinel expressions that older Vercel tracers
+// evaluate while packaging, causing a build-time Division by zero error.
+import nerdamer from 'nerdamer/all.js';
 const superscripts={'⁰':'0','¹':'1','²':'2','³':'3','⁴':'4','⁵':'5','⁶':'6','⁷':'7','⁸':'8','⁹':'9','⁻':'-','⁺':'+'};
 const functions=new Set(['sqrt','sin','cos','tan','abs','log','ln']);
 const variables=new Set(['x','y','z','a','b','c','n','k','t','m','p','q']);
@@ -34,14 +37,15 @@ export function canonicalWorksheetExpression(value){
 export function worksheetExpressionMatches(value,expected,{periodic=true}={}){
  const a=canonicalWorksheetExpression(value),b=canonicalWorksheetExpression(expected);if(!a||!b)return false;if(a===b)return true;
  try{
-  const left=nerdamer(a),right=nerdamer(b);if(left.eq(right))return true;
+  const same=(left,right)=>left.eq(right)||nerdamer.simplify(left.subtract(right)).eq('0');
+  const left=nerdamer(a),right=nerdamer(b);if(same(left,right))return true;
   if(periodic&&left.variables().includes('k')&&right.variables().includes('k')){
    const stepLeft=nerdamer.diff(left,'k'),stepRight=nerdamer.diff(right,'k');
-   if(stepLeft.variables().length||stepRight.variables().length||stepLeft.eq('0')||!(stepLeft.eq(stepRight)||stepLeft.eq(nerdamer('-1').multiply(stepRight))))return false;
+   if(stepLeft.variables().length||stepRight.variables().length||stepLeft.eq('0')||!(same(stepLeft,stepRight)||same(stepLeft,nerdamer('-1').multiply(stepRight))))return false;
    const offsetLeft=left.sub('k','0'),offsetRight=right.sub('k','0');
-   if(!left.eq(stepLeft.multiply(nerdamer('k')).add(offsetLeft))||!right.eq(stepRight.multiply(nerdamer('k')).add(offsetRight)))return false;
+   if(!same(left,stepLeft.multiply(nerdamer('k')).add(offsetLeft))||!same(right,stepRight.multiply(nerdamer('k')).add(offsetRight)))return false;
    const offset=nerdamer.simplify(offsetLeft.subtract(offsetRight).divide(stepLeft)).toString();return /^[+-]?\d+$/u.test(offset);
   }
- }catch{return false;}
+ }catch{return false;}finally{nerdamer.clear('all');}
  return false;
 }

@@ -33,9 +33,10 @@ function field(label,name,value,type='input'){
 }
 function commit(){
  if(!sheet)return;sheet.title=workspace.querySelector('[name=title]').value.trim();sheet.grade=Number(workspace.querySelector('[name=grade]').value);sheet.subject_id=workspace.querySelector('[name=subject_id]').value;
- const exam=workspace.querySelector('[name=exam-purpose]');if(exam?.checked)sheet.exam_config={...(sheet.exam_config||{}),duration_minutes:Number(workspace.querySelector('[name=exam-minutes]').value),semester:workspace.querySelector('[name=exam-semester]').value,period:workspace.querySelector('[name=exam-period]').value,short_points:Number(workspace.querySelector('[name=exam-short-points]').value),scoring:'thpt-2025'};else sheet.exam_config=null;
+ const exam=workspace.querySelector('[name=exam-purpose]');if(exam?.checked)sheet.exam_config={...(sheet.exam_config||{}),duration_minutes:Number(workspace.querySelector('[name=exam-minutes]').value),semester:workspace.querySelector('[name=exam-semester]').value,period:workspace.querySelector('[name=exam-period]').value,short_points:Number(workspace.querySelector('[name=exam-short-points]').value),scoring:workspace.querySelector('[name=exam-scoring]').value};else sheet.exam_config=null;
  const item=sheet.items[index];if(!item)return;item.prompt=workspace.querySelector('[name=prompt]').value;item.explanation=workspace.querySelector('[name=explanation]').value;Object.assign(item,collectFields(item.type,workspace.querySelector('.worksheet-fields')));
  item.grading=workspace.querySelector('[name=grading]')?.value||'active';item.review_note=workspace.querySelector('[name=review-note]')?.value||'';
+ const points=workspace.querySelector('[name=item-points]');if(points){if(points.value.trim())item.points=Number(points.value.replace(',','.'));else delete item.points;}
 }
 function render(){
  const placement=el('div',{class:'worksheet-placement'}),scope=selectedScope();
@@ -49,7 +50,7 @@ function render(){
  const grades=meta.querySelector('[name=grade]');for(const n of store.tree?.grades.map(g=>g.grade)||availableGrades)grades.append(el('option',{value:n,text:'Lớp '+n}));grades.value=sheet.grade;
  const subjects=meta.querySelector('[name=subject_id]');
  const labelSubjects=()=>{const selected=subjects.value||sheet.subject_id;subjects.replaceChildren(...subjectsFor({grade:grades.value}).map(([id])=>el('option',{value:id,text:subjectName(id,grades.value)})));subjects.value=selected;if(!subjects.value)subjects.value='toan';};
- labelSubjects();grades.onchange=labelSubjects;
+ labelSubjects();grades.onchange=()=>{labelSubjects();if(!sheet.items.length){const mode=workspace.querySelector('[name=exam-scoring]');if(mode){mode.value=Number(grades.value)<10?'school-points':'thpt-2025';commit();render();}}};
  if(sheet.lesson_id){grades.disabled=true;subjects.disabled=true;}
  const tabs=el('div',{class:'worksheet-question-tabs','aria-label':'Các câu hỏi'});
  sheet.items.forEach((item,n)=>{const b=button('Câu '+(n+1),()=>{commit();index=n;render();},true);if(n===index)b.setAttribute('aria-current','true');tabs.append(b);});
@@ -62,11 +63,14 @@ function render(){
  for(const [value,text]of [['hk1','Học kì 1'],['hk2','Học kì 2'],['year','Cả năm']])semester.lastChild.append(el('option',{value,text}));semester.lastChild.value=sheet.exam_config?.semester||'hk1';
  for(const value of [.25,.5])shortPoints.lastChild.append(el('option',{value,text:String(value)}));shortPoints.lastChild.value=sheet.exam_config?.short_points||.25;
  const period=field('Đợt thi','exam-period','','select');for(const [value,text]of paperPeriods)period.lastChild.append(el('option',{value,text}));period.lastChild.value=sheet.exam_config?.period||'other';period.lastChild.onchange=()=>{const choice=paperPeriods.find(([id])=>id===period.lastChild.value);if(choice&&choice[0]!=='other')semester.lastChild.value=choice[2];dirty=true;};
- const settings=el('div',{class:'worksheet-toolbar'},[period,minutes,semester,shortPoints]);settings.hidden=!purpose.checked;purpose.onchange=()=>{settings.hidden=!purpose.checked;dirty=true;};
- workspace.prepend(el('section',{class:'card worksheet-exam-settings'},[el('label',{},[purpose,el('strong',{text:' Đăng trong Đề thi (đề do giáo viên soạn, có thời gian)'})]),settings,el('p',{class:'muted',text:'Nhập tay và đề từ tài liệu dùng cùng bộ soạn, lưu đáp án, xem thử và cách chấm. Phần chọn đáp án: 0,25 điểm/câu; đúng/sai bốn ý: 0,1 / 0,25 / 0,5 / 1 điểm.'})]));
+ const scoring=field('Cách tính điểm','exam-scoring','','select');for(const [value,text]of [['school-points','Điểm riêng cho từng câu / ý'],['thpt-2025','Đề THPT ba phần']])scoring.lastChild.append(el('option',{value,text}));scoring.lastChild.value=sheet.exam_config?.scoring||(sheet.grade<10?'school-points':'thpt-2025');scoring.lastChild.onchange=()=>{commit();dirty=true;render();};
+ shortPoints.hidden=scoring.lastChild.value==='school-points';
+ const settings=el('div',{class:'worksheet-toolbar'},[period,minutes,semester,scoring,shortPoints]);settings.hidden=!purpose.checked;purpose.onchange=()=>{commit();dirty=true;render();};
+ workspace.prepend(el('section',{class:'card worksheet-exam-settings'},[el('label',{},[purpose,el('strong',{text:' Đăng trong Đề thi (đề do giáo viên soạn, có thời gian)'})]),settings,el('p',{class:'muted',text:scoring.lastChild.value==='school-points'?'Nhập điểm tối đa cho từng câu hoặc ý, cộng đủ 10 điểm. Các ý đúng/sai được chia đều điểm của câu. Học sinh nhập đáp án, nộp bài rồi xem lời giải.':'Đề THPT: chọn đáp án 0,25 điểm/câu; đúng/sai bốn ý 0,1 / 0,25 / 0,5 / 1 điểm.'})]));
  const item=sheet.items[index];if(item){
   const editor=el('div',{class:'worksheet-editor'},[el('h2',{text:'Câu '+(index+1)+' · '+ITEM_TYPES[item.type]}),field('Đề bài','prompt',item.prompt,'textarea'),answerFields(item),field('Lời giải / hướng dẫn sau khi làm','explanation',item.explanation,'textarea')]);
   const grading=field('Cách tính điểm câu này','grading','','select');for(const [value,text]of [['active','Tính điểm theo đáp án'],['excluded','Câu tham khảo, không tính điểm']])grading.lastChild.append(el('option',{value,text}));grading.lastChild.value=item.grading||'active';editor.append(grading,field('Ghi chú kiểm tra đề / lý do không tính điểm','review-note',item.review_note||'','textarea'));
+  if(sheet.exam_config?.scoring==='school-points'){const points=field('Điểm tối đa của câu / ý này','item-points',item.points??'');points.lastChild.inputMode='decimal';editor.prepend(points);}
   const image=el('input',{type:'file',accept:'image/png,image/jpeg','aria-label':'Tải ảnh minh họa'});
   image.onchange=async()=>{try{commit();const file=image.files[0];if(!file)return;const body=new FormData();body.append('image',file);item.imageId=(await api(base+'/admin/'+sheet.id+'/images',{method:'POST',body})).data.id;dirty=true;render();}catch(e){fail(e);}};
   editor.append(el('label',{class:'field'},[el('span',{text:'Hình minh họa (không bắt buộc; PNG/JPEG, tối đa 2 MB)'}),image]));
@@ -84,10 +88,11 @@ function preview(){
  document.querySelector('#ws-preview-content').replaceChildren(renderItem(publicItem,undefined,v=>previewAnswer=v));document.querySelector('#ws-preview-feedback').replaceChildren();dialog.showModal();
 }
 document.querySelector('#ws-preview-close').onclick=()=>dialog.close();
-document.querySelector('#ws-preview-check').onclick=async()=>{try{const {data}=await api(base+'/admin/preview',{method:'POST',body:{item:previewItem,answer:previewAnswer}});document.querySelector('#ws-preview-feedback').replaceChildren(resultBlock(data));}catch(e){document.querySelector('#ws-preview-feedback').textContent=e.message+' — Nhập đủ đề bài, cấu hình và đáp án trước khi xem thử.';}};
+document.querySelector('#ws-preview-check').onclick=async()=>{try{const {data}=await api(base+'/admin/preview',{method:'POST',body:{item:previewItem,answer:previewAnswer,exam_config:sheet.exam_config}});document.querySelector('#ws-preview-feedback').replaceChildren(resultBlock(data));}catch(e){document.querySelector('#ws-preview-feedback').textContent=e.message+' — Nhập đủ đề bài, cấu hình và đáp án trước khi xem thử.';}};
 export async function createWorksheet(scope=selectedScope(),examMode=new URLSearchParams(location.search).has('exams')){
  if(dirty&&!confirm('Bỏ thay đổi chưa lưu để tạo bộ mới?'))return;
- sheet=(await api(base+'/admin',{method:'POST',body:{title:examMode?'Đề thi mới':'Bộ bài tập mới',grade:scope?.grade||store.tree?.grades[0]?.grade||availableGrades[0],subject_id:scope?.subjectId||'toan',lesson_id:scope?.lessonId||null,status:'draft',exam_config:examMode?{duration_minutes:50,semester:scope?.semester==='hk2'?'hk2':'hk1',scoring:'thpt-2025',short_points:.25}:null,items:[]}})).data;index=0;dirty=false;render();await list();
+ const grade=scope?.grade||store.tree?.grades[0]?.grade||availableGrades[0];
+ sheet=(await api(base+'/admin',{method:'POST',body:{title:examMode?'Đề thi mới':'Bộ bài tập mới',grade,subject_id:scope?.subjectId||'toan',lesson_id:scope?.lessonId||null,status:'draft',exam_config:examMode?{duration_minutes:50,semester:scope?.semester==='hk2'?'hk2':'hk1',scoring:grade<10?'school-points':'thpt-2025',short_points:.25}:null,items:[]}})).data;index=0;dirty=false;render();await list();
  return true;
 }
 document.querySelector('#ws-new').onclick=()=>createWorksheet().catch(fail);

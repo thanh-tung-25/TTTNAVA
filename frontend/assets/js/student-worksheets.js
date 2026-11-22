@@ -52,6 +52,8 @@ function render(){
  root.classList.toggle('worksheet-exam-player',Boolean(current.exam_config));
  const heading=el('div',{class:'card'},[el('h2',{text:current.title}),el('p',{class:'muted',text:'Câu '+(index+1)+' / '+current.items.length}),el('progress',{class:'worksheet-progress',max:current.items.length,value:index+1,'aria-label':'Tiến độ bài tập'})]);
  if(current.exam_config){heading.append(el('p',{class:'worksheet-exam-clock',role:'timer'}),...(current.exam_config.attribution?[el('p',{class:'muted',text:'Nguồn: '+current.exam_config.attribution})]:[]));if(!finished)heading.append(button('Nộp bài thi',()=>submitCurrent()));}
+ if(current.exam_config?.scoring==='school-points')heading.append(el('p',{class:'muted',text:finished?'Đáp án và hướng dẫn giải ở dưới từng câu.':'Nhập đáp án từng ý. Nộp bài để nhận điểm và xem hướng dẫn giải.'}));
+ if(item.points!==undefined&&current.exam_config?.scoring==='school-points')heading.append(el('p',{class:'muted',text:'Điểm câu / ý này: '+String(item.points).replace('.',',')}));
  if(current.exam_config&&current.items.some(item=>item.grading==='excluded'))heading.append(el('p',{class:'worksheet-source-note',text:'Đề gốc có câu cần kiểm tra lại. Các câu được ghi là tham khảo không tính điểm; tổng điểm các câu còn lại được quy về thang 10.'}));
  if(finished)heading.append(el('p',{class:'worksheet-score',text:current.status==='pending_review'?'Chờ giáo viên chấm':current.exam_config?(current.score/10).toFixed(2)+' / 10':current.score+'/100'}));
  const question=renderItem({...item,subjectId:current.subject_id||current.subjectId},current.answers[item.id],value=>{if(finished)return;current.answers[item.id]=value;schedule();});

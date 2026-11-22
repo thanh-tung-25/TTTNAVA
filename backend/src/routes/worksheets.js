@@ -29,7 +29,7 @@ router.get('/admin/reviews',requireAdmin,handle(r=>query(`SELECT a.id,a.student_
 router.get('/admin/reviews/:id',requireAdmin,handle(async r=>{const [a]=await query('SELECT * FROM worksheet_attempts WHERE id=?',[r.params.id]);if(!a)throw notFound();return {...a,snapshot:service.json(a.snapshot),answers:service.json(a.answers),results:service.json(a.results)};}));
 router.post('/admin/reviews/:id',requireAdmin,handle(r=>service.review(r.user.id,r.params.id,r.body)));
 router.post('/admin/preview',requireAdmin,handle(r=>{
- const item=validateSheet({title:'Xem thử',grade:1,subject_id:'toan',status:'draft',items:[r.body.item]}).items[0];
+ const item=validateSheet({title:'Xem thử',grade:1,subject_id:'toan',status:'draft',exam_config:r.body.exam_config||null,items:[r.body.item]}).items[0];
  const responses=validateResponses([item],{[item.id]:r.body.answer});return gradeItem(item,responses[item.id]);
 }));
 router.get('/admin/:id',requireAdmin,handle(r=>service.sheet(r.params.id,true)));

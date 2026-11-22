@@ -1,6 +1,6 @@
 import {el} from './api.js';
 import {questionAudio,withChoiceAudio} from './question-audio.js';
-export const ITEM_TYPES={fill:'Điền đáp án',true_false_group:'Đúng / Sai (4 ý)',blanks:'Nhiều ô trống',choice:'Chọn đáp án',compare:'Chọn dấu > < =',ordering:'Sắp xếp',matching:'Nối cặp',column:'Đặt tính',word:'Toán có lời văn',drawing:'Tự luận / vẽ'};
+export const ITEM_TYPES={fill:'Điền đáp án',true_false_group:'Đúng / Sai theo từng ý',blanks:'Nhiều ô trống',choice:'Chọn đáp án',compare:'Chọn dấu > < =',ordering:'Sắp xếp',matching:'Nối cặp',column:'Đặt tính',word:'Toán có lời văn',drawing:'Tự luận / vẽ'};
 export const imageUrl=id=>'/api/v1/worksheets/images/'+encodeURIComponent(id);
 const btn=(text,fn)=>el('button',{type:'button',class:'btn btn-ghost',text,onclick:fn});
 export function renderItem(item,value,onChange){
@@ -12,9 +12,12 @@ export function renderItem(item,value,onChange){
   const i=el('input',{class:'input',type:'text',value:current??'','aria-label':label,maxlength:300,...(numeric?{inputmode:'numeric'}:{})});i.oninput=()=>fn(i.value);return el('label',{class:'worksheet-answer'},[el('span',{text:label}),i]);
  };
  if(item.type==='true_false_group'){
-  const values=Array.isArray(value)?[...value]:[null,null,null,null];
+  const values=Array.isArray(value)?[...value]:item.config.statements.map(()=>null);
   item.config.statements.forEach((statement,n)=>{const row=el('div',{class:'worksheet-true-false'},[el('p',{text:statement})]),group=el('div',{class:'worksheet-choices',role:'group','aria-label':'Ý '+String.fromCharCode(97+n)});for(const answer of [true,false]){const choice=btn(answer?'Đúng':'Sai',()=>{values[n]=answer;group.querySelectorAll('button').forEach(button=>button.setAttribute('aria-pressed',String(button===choice)));onChange([...values]);});choice.setAttribute('aria-pressed',String(values[n]===answer));group.append(choice);}row.append(group);box.append(row);});
- }else if(['fill','word'].includes(item.type))box.append(input(item.type==='word'?'Đáp số'+(item.config.unit?' ('+item.config.unit+')':''):'Câu trả lời',value,onChange,true));
+ }else if(['fill','word'].includes(item.type)){
+  box.append(input(item.type==='word'?'Đáp số'+(item.config.unit?' ('+item.config.unit+')':''):'Câu trả lời',value,onChange,!item.config.answer_format));
+  if(item.config.answer_format==='number')box.append(el('p',{class:'muted',text:'Nhập kết quả cuối cùng; có thể viết phân số như -3/4.'}));
+ }
  else if(['choice','compare'].includes(item.type)){
   const choices=item.type==='compare'?['<','>','=']:item.config.options;
   const list=el('div',{class:'worksheet-choices',role:'group','aria-label':'Chọn đáp án'});

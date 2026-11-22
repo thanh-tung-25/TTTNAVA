@@ -7,11 +7,13 @@ function field(form,label,name,value='',type='textarea'){
 export function answerFields(item){
  const form=el('div',{class:'worksheet-fields'}),c=item.config||{},a=item.answer||{};
  if(item.type==='true_false_group'){
-  field(form,'Bốn ý a, b, c, d (mỗi dòng một ý)','statements',(c.statements||['a','b','c','d']).join('\n'));
-  for(let n=0;n<4;n++){const select=field(form,'Đáp án ý '+String.fromCharCode(97+n),'truth'+n,'','select');for(const [value,text]of [['','Chưa nhập đáp án'],['true','Đúng'],['false','Sai']])select.append(el('option',{value,text}));select.value=typeof a.values?.[n]==='boolean'?String(a.values[n]):'';}
+  const statements=field(form,'Các phát biểu (mỗi dòng một ý; đề THPT cần bốn ý)','statements',(c.statements||['a','b','c','d']).join('\n')),keys=el('div',{class:'worksheet-truth-keys'});form.append(keys);
+  const redraw=()=>{const previous=[...keys.querySelectorAll('select')].map(select=>select.value);keys.replaceChildren();for(let n=0;n<Math.min(8,lines(statements.value).length);n++){const select=field(keys,'Đáp án ý '+String.fromCharCode(97+n),'truth'+n,'','select');for(const [value,text]of [['','Chưa nhập đáp án'],['true','Đúng'],['false','Sai']])select.append(el('option',{value,text}));select.value=previous[n]??(typeof a.values?.[n]==='boolean'?String(a.values[n]):'');}};
+  statements.oninput=redraw;redraw();
  }else if(['fill','word'].includes(item.type)){
   field(form,'Đáp án đúng (mỗi dòng một cách trả lời được chấp nhận)','accepted',(a.accepted||[]).join('\n'));
   if(item.type==='word')field(form,'Đơn vị (ví dụ: bông hoa, cm)','unit',c.unit||'','input');
+  const format=field(form,'Cách đối chiếu đáp án','answer-format','','select');for(const [value,text]of [['text','Văn bản / cách ghi đã nhập'],['number','Số hoặc phân số (chấp nhận các cách viết tương đương)'],['set','Tập hợp (không phụ thuộc thứ tự phần tử)']])format.append(el('option',{value,text}));format.value=c.answer_format||'text';
  }else if(item.type==='choice'){
   field(form,'Các lựa chọn (mỗi dòng một lựa chọn)','options',(c.options||[]).join('\n'));
   const correct=field(form,'Lựa chọn đúng','index','','select');correct.append(el('option',{value:'',text:'Chưa nhập đáp án'}));for(let n=0;n<6;n++)correct.append(el('option',{value:n,text:'Lựa chọn '+(n+1)}));correct.value=a.index??'';
@@ -32,8 +34,8 @@ export function answerFields(item){
 }
 export function collectFields(type,form){
  const get=name=>form.querySelector('[name='+name+']')?.value||'';
- if(type==='true_false_group'){const values=Array.from({length:4},(_,n)=>get('truth'+n));return {config:{statements:lines(get('statements'))},answer:{values:values.map(value=>value===''?null:value==='true')}};}
- if(['fill','word'].includes(type))return {config:type==='word'?{unit:get('unit')}:{},answer:get('accepted').trim()?{accepted:lines(get('accepted'))}:null};
+ if(type==='true_false_group'){const statements=lines(get('statements')),values=Array.from({length:statements.length},(_,n)=>get('truth'+n));return {config:{statements},answer:{values:values.map(value=>value===''?null:value==='true')}};}
+ if(['fill','word'].includes(type))return {config:{...(type==='word'?{unit:get('unit')}:{}),...(get('answer-format')&&get('answer-format')!=='text'?{answer_format:get('answer-format')}:{})},answer:get('accepted').trim()?{accepted:lines(get('accepted'))}:null};
  if(type==='choice'){const extra=get('accepted-indices').trim();return {config:{options:lines(get('options'))},answer:get('index')===''?null:{index:Number(get('index')),...(extra?{acceptedIndices:[...new Set([Number(get('index')),...extra.split(',').map(value=>Number(value.trim())-1)])]}:{})}};}
  if(type==='compare')return {config:{},answer:{value:get('value')}};
  if(type==='blanks')return {config:{labels:lines(get('labels'))},answer:{values:lines(get('values'))}};

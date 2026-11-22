@@ -3,8 +3,7 @@ import {notFound,AppError} from '../utils/errors.js';
 import {parseJson} from '../utils/normalize.js';
 import {validateQuestionPayload,normalizeQuestionStatus} from './admin-question-validation.js';
 
-export async function publishLessonQuestions(lessonId,adminId){
- return withTransaction(async connection=>{
+async function publishInConnection(connection,lessonId,adminId){
   const [lessons]=await connection.query('SELECT topic_id FROM curriculum_lessons WHERE id=?',[lessonId]);
   if(!lessons[0])throw notFound();
   const [questions]=await connection.query("SELECT * FROM questions WHERE topic_id=? AND status IN ('draft','visible') ORDER BY id FOR UPDATE",[lessons[0].topic_id]);
@@ -20,5 +19,6 @@ export async function publishLessonQuestions(lessonId,adminId){
    await connection.query("INSERT INTO atomic_question_writes (question_id,admin_id,action,before_json,after_json) VALUES (?,?,'publish',?,?)",[question.id,adminId,JSON.stringify(before),JSON.stringify({...before,status:'published'})]);
   }
   return {published:questions.length};
- });
 }
+export async function publishLessonQuestions(lessonId,adminId){return withTransaction(connection=>publishInConnection(connection,lessonId,adminId));}
+export async function publishLessonsQuestions(lessonIds,adminId){return withTransaction(async connection=>{let published=0;for(const id of [...new Set(lessonIds)].sort())published+=(await publishInConnection(connection,id,adminId)).published;return {published};});}

@@ -4,6 +4,7 @@ import { AUDIT_LABELS, store } from './admin-questions-context.js';
 import { collectQuestionPayload, createQuestionForm } from './admin-question-form.js';
 import { loadQuestions } from './admin-questions-list.js';
 import { findScope, loadTree, showScope } from './admin-questions-tree.js';
+import {questionSaveReceipt,schoolSaveReceipt} from './admin-school-question-placement.js';
 
 function auditBlock(payload) {
   const audit = document.createElement('div');
@@ -74,11 +75,13 @@ export async function openDetail(id) {
             errorBox.classList.add('hidden');
             setBusy(button, true, 'Đang lưu…');
             try {
+              const submitted=collectQuestionPayload(form);
               const payload = await api(`/api/v1/admin/questions/${encodeURIComponent(id)}`, {
                 method: 'PATCH',
-                body: collectQuestionPayload(form),
+                body: submitted,
               });
               toast('Đã lưu câu hỏi.', 'success');
+              schoolSaveReceipt(questionSaveReceipt(tree,submitted,submitted.status));
               close();
               await afterSave(payload.data);
             } catch (error) {
@@ -112,11 +115,13 @@ export async function openCreate() {
             errorBox.classList.add('hidden');
             setBusy(button, true, 'Đang lưu…');
             try {
+              const submitted=collectQuestionPayload(form);
               const payload = await api('/api/v1/admin/questions', {
                 method: 'POST',
-                body: collectQuestionPayload(form),
+                body: submitted,
               });
               toast(payload.data.status === 'published' ? 'Đã thêm và đăng câu hỏi.' : 'Đã lưu câu hỏi nháp.', 'success');
+              schoolSaveReceipt(questionSaveReceipt(tree,submitted,submitted.status));
               close();
               await afterSave(payload.data);
             } catch (error) {

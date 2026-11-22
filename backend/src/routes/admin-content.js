@@ -6,9 +6,19 @@ import {requireSchoolAdmin,assertSchoolResource,schoolGradeCondition} from '../m
 import {query,withTransaction,jsonArrayLength} from '../config/db.js';
 import {asyncHandler,notFound} from '../utils/errors.js';
 import {randomUUID} from 'node:crypto';
-import {publishLessonQuestions} from '../services/question-bulk-publish.js';
+import {publishLessonQuestions,publishLessonsQuestions} from '../services/question-bulk-publish.js';
 import {sendArchive,DOCX_MIME} from '../services/private-storage.js';
+import {schoolStudyCatalog} from '../services/school-study.js';
+import {examCatalog} from '../services/exam-scope-service.js';
+import {worksheetExamsAvailable} from '../services/worksheet-exam-schema.js';
 const router=Router();router.use(authenticateToken,requireSchoolAdmin);
+const workspaceScope=z.object({grade:z.coerce.number().int().min(1).max(12),subjectId:z.enum(SCHOOL_SUBJECT_IDS).optional(),yearId:z.string().trim().min(1).max(20).optional()});
+router.get('/study-catalog',asyncHandler(async(req,res)=>{
+ const f=workspaceScope.parse(req.query);res.set('Cache-Control','private, no-store').json({data:await schoolStudyCatalog(req.user,'grade-'+f.grade,f.yearId)});
+}));
+router.get('/checks',asyncHandler(async(req,res)=>{
+ const f=workspaceScope.extend({subjectId:z.enum(SCHOOL_SUBJECT_IDS)}).parse(req.query),{papers,...data}=await examCatalog(f.grade,f.subjectId,f.yearId);res.set('Cache-Control','private, no-store').json({data});
+}));
 router.get('/word-documents',asyncHandler(async(req,res)=>{
  const f=z.object({q:z.string().trim().max(100).default(''),grade:z.coerce.number().int().min(1).max(12).optional(),semester:z.enum(['hk1','hk2','year']).optional(),page:z.coerce.number().int().min(1).default(1)}).parse(req.query);
  const where=[schoolGradeCondition(req.schoolProgram,'c.grade')],params=[];
@@ -27,19 +37,22 @@ router.get('/word-documents/:id/download',asyncHandler(async(req,res)=>{
  await sendArchive(res,'word_import_documents/'+id,document.original,DOCX_MIME,document.filename);
 }));
 router.post('/publish-questions',asyncHandler(async(req,res)=>{
- const {lessonId}=z.object({lessonId:z.string().trim().min(1).max(90)}).parse(req.body);
- res.json({data:await publishLessonQuestions(lessonId,req.user.id)});
+ const parsed=z.union([z.object({lessonId:z.string().trim().min(1).max(90)}),z.object({lessonIds:z.array(z.string().trim().min(1).max(90)).min(1).max(100)})]).parse(req.body);
+ for(const id of parsed.lessonIds||[parsed.lessonId])await assertSchoolResource(req,'lesson',id);
+ res.json({data:parsed.lessonIds?await publishLessonsQuestions(parsed.lessonIds,req.user.id):await publishLessonQuestions(parsed.lessonId,req.user.id)});
 }));
 router.get('/',asyncHandler(async(req,res)=>{
- const filters=z.object({q:z.string().trim().max(100).default(''),kind:z.enum(['','worksheet','question']).default(''),grade:z.coerce.number().int().min(1).max(12).optional(),status:z.enum(['','draft','published','hidden']).default(''),page:z.coerce.number().int().min(1).default(1),yearId:z.string().max(20).optional(),semester:z.enum(['hk1','hk2','year']).optional(),subjectId:z.enum(SCHOOL_SUBJECT_IDS).optional(),chapterId:z.string().max(90).optional(),lessonId:z.string().max(90).optional(),unassigned:z.enum(['1']).optional()}).parse(req.query);
+ const filters=z.object({q:z.string().trim().max(100).default(''),kind:z.enum(['','worksheet','question']).default(''),purpose:z.enum(['all','lesson']).default('all'),grade:z.coerce.number().int().min(1).max(12).optional(),status:z.enum(['','draft','published','hidden']).default(''),page:z.coerce.number().int().min(1).default(1),yearId:z.string().max(20).optional(),semester:z.enum(['hk1','hk2','year']).optional(),subjectId:z.enum(SCHOOL_SUBJECT_IDS).optional(),chapterId:z.string().max(90).optional(),lessonId:z.string().max(90).optional(),unassigned:z.enum(['1']).optional()}).parse(req.query);
  const scopeWhere=[],scopeParams=[];
  for(const [key,column]of Object.entries({yearId:'c.school_year_id',semester:'c.semester',subjectId:'c.subject_id',chapterId:'c.id',lessonId:'l.id'}))if(filters[key]){scopeWhere.push(column+'=?');scopeParams.push(filters[key]);}
  const scope=scopeWhere.length?' AND '+scopeWhere.join(' AND '):'';
  const wsCondition=filters.unassigned?' AND w.lesson_id IS NULL':scopeWhere.length?` AND EXISTS (SELECT 1 FROM curriculum_lessons l JOIN curriculum_chapters c ON c.id=l.chapter_id WHERE l.id=w.lesson_id${scope})`:'';
  const qCondition=filters.unassigned?' AND NOT EXISTS (SELECT 1 FROM curriculum_lessons l WHERE l.topic_id=q.topic_id)':scopeWhere.length?` AND EXISTS (SELECT 1 FROM curriculum_lessons l JOIN curriculum_chapters c ON c.id=l.chapter_id WHERE l.topic_id=q.topic_id${scope})`:'';
- const union=`SELECT w.id,w.title,w.grade,w.subject_id,w.status,w.updated_at,'worksheet' kind,${jsonArrayLength('w.items')} item_count,w.version,(SELECT COUNT(*) FROM worksheet_attempts a WHERE a.worksheet_id=w.id) attempt_count FROM worksheets w WHERE 1=1${wsCondition}
+ const lessonOnly=filters.purpose==='lesson'&&await worksheetExamsAvailable()?' AND w.exam_config IS NULL':'';
+ const union=`SELECT w.id,w.title,w.grade,w.subject_id,w.status,w.updated_at,'worksheet' kind,${jsonArrayLength('w.items')} item_count,w.version,(SELECT COUNT(*) FROM worksheet_attempts a WHERE a.worksheet_id=w.id) attempt_count FROM worksheets w WHERE 1=1${wsCondition}${lessonOnly}
  UNION ALL SELECT q.id,q.prompt title,t.grade,t.subject_id,CASE WHEN q.status='visible' THEN 'draft' ELSE q.status END status,q.updated_at,'question' kind,1 item_count,0 version,0 attempt_count FROM questions q JOIN topics t ON t.id=q.topic_id WHERE 1=1${qCondition}`;
  const where=[schoolGradeCondition(req.schoolProgram,'u.grade')],params=[];for(const key of ['kind','grade','status'])if(filters[key]){where.push('u.'+key+'=?');params.push(filters[key]);}
+ if(filters.unassigned&&filters.subjectId){where.push('u.subject_id=?');params.push(filters.subjectId);}
  if(filters.q){where.push('(u.title LIKE ? OR u.id LIKE ?)');params.push('%'+filters.q+'%','%'+filters.q+'%');}
  const from='FROM ('+union+') u'+(where.length?' WHERE '+where.join(' AND '):'');
  const allParams=[...(filters.unassigned?[]:[...scopeParams,...scopeParams]),...params];

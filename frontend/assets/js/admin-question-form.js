@@ -1,6 +1,7 @@
 import { escapeHtml } from '/assets/js/api.js';
 import { toast } from '/assets/js/ui.js';
 import { DIFFICULTY_LABELS, TYPE_LABELS } from './admin-questions-context.js';
+import {questionStudentPlacement} from './admin-school-question-placement.js';
 import {
   bindScopeControls,
   defaultScopeIds,
@@ -119,7 +120,9 @@ export function createQuestionForm(question, tree) {
       ${Object.entries(STATUS_LABELS).map(([value, label]) => `<option value="${value}"${value === data.status ? ' selected' : ''}>${label}</option>`).join('')}
     </select><p class="hint">Học sinh chỉ nhận câu hỏi “Đã đăng”.</p></div>`;
   bindDynamicFields(form);
-  bindScopeControls(form, tree, readScopeIds(form));
+  const placement=document.createElement('section');placement.className='school-destination';const label=document.createElement('span');label.className='school-eyebrow';label.textContent='HỌC SINH SẼ THẤY Ở';const destination=document.createElement('strong'),hint=document.createElement('p');hint.textContent='Câu hỏi đã đăng được dùng cho Quiz theo bài và Bài kiểm tra theo phạm vi.';placement.append(label,destination,hint);form.prepend(placement);
+  const update=ids=>destination.textContent=questionStudentPlacement(tree,ids);update(readScopeIds(form));
+  bindScopeControls(form, tree, readScopeIds(form),update);
   return form;
 }
 

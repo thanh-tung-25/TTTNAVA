@@ -8,8 +8,12 @@ import {selectedScope} from './admin-content-curriculum.js';
 import {subjectsFor,subjectName} from './primary-subjects.js';
 import {adminGrades} from './admin-permissions.js';
 import {paperPeriods} from './school-paper-periods.js';
+import {worksheetPlacement,schoolContentStatus} from './admin-school-context.js';
+import {previewSchoolPaper} from './admin-school-preview.js';
+import {importWorksheetWord} from './worksheet-word-import.js';
 const base='/api/v1/worksheets',workspace=document.querySelector('#ws-workspace'),notice=document.querySelector('#ws-notice'),dialog=document.querySelector('#ws-preview');
-let sheet=null,index=0,dirty=false,previewAnswer,previewItem,availableGrades=adminGrades();
+let sheet=null,index=0,dirty=false,previewAnswer,previewItem,availableGrades=adminGrades(),loadNumber=0;
+export function configureWorksheetGrades(profile){availableGrades=adminGrades(profile);}
 if(new URLSearchParams(location.search).has('exams')){document.querySelector('main h1').textContent='Soạn và quản lý đề thi';document.querySelector('#ws-new').textContent='+ Tạo đề thi';document.querySelector('.worksheet-layout aside h2').textContent='Danh sách đề thi';}
 const button=(text,fn,ghost=false)=>el('button',{type:'button',class:'btn'+(ghost?' btn-ghost':''),text,onclick:()=>Promise.resolve().then(fn).catch(fail)});
 function fail(e){notice.textContent=e.message+(e.details?.some?.(d=>d.path?.[0]==='items')?' — Kiểm tra đề bài và đáp án của từng câu.':'');}
@@ -18,9 +22,9 @@ async function list(){
  const {data}=await api(base+'/admin');const root=document.querySelector('#ws-list'),rows=new URLSearchParams(location.search).has('exams')?data.filter(row=>row.exam_config):data;
  root.replaceChildren(...(rows.length?rows.map(s=>{const b=button(s.title+' · Lớp '+s.grade+' · '+s.item_count+' câu · '+({draft:'Nháp',published:'Đã đăng',hidden:'Đang ẩn'}[s.status]),()=>open(s.id),true);if(s.id===sheet?.id)b.setAttribute('aria-current','true');return b;}):[el('p',{class:'muted',text:'Chưa có bộ bài. Nội dung sẽ do bạn tự nhập.'})]));
 }
-export async function openWorksheet(id){if(dirty&&!confirm('Bỏ các thay đổi chưa lưu để mở bộ khác?'))return false;sheet=(await api(base+'/admin/'+id)).data;index=0;dirty=false;render();await list();return true;}
+export async function openWorksheet(id){if(dirty&&!confirm('Bỏ các thay đổi chưa lưu để mở bộ khác?'))return false;const number=++loadNumber,{data}=await api(base+'/admin/'+id);if(number!==loadNumber)return false;sheet=data;notice.textContent='';index=0;dirty=false;render();await list();return true;}
 const open=openWorksheet;
-export function closeWorksheet(){if(dirty&&!confirm('Bỏ thay đổi chưa lưu?'))return false;sheet=null;dirty=false;workspace.replaceChildren();return true;}
+export function closeWorksheet(){if(dirty&&!confirm('Bỏ thay đổi chưa lưu?'))return false;loadNumber++;sheet=null;dirty=false;workspace.replaceChildren();notice.textContent='';return true;}
 export async function removeWorksheet(id,version){
  if(!confirm('Xóa bộ bài này? Nếu đã có học sinh làm, bộ bài sẽ được ẩn để giữ lịch sử.'))return;
  if(sheet?.id===id&&dirty&&!confirm('Bộ đang có thay đổi chưa lưu. Vẫn tiếp tục xóa?'))return;
@@ -40,14 +44,11 @@ function commit(){
 }
 function render(){
  const placement=el('div',{class:'worksheet-placement'}),scope=selectedScope();
- let path='Chưa xếp bài học';
- for(const grade of store.tree?.grades||[])for(const semester of grade.semesters)for(const subject of semester.subjects)for(const chapter of subject.chapters)for(const lesson of chapter.lessons)if(lesson.id===sheet.lesson_id)path=[grade.name,semester.name,subject.name,chapter.name,lesson.name].join(' › ');
- if(sheet.exam_config&&!sheet.lesson_id)path='Bài thi · Lớp '+sheet.grade+' · '+subjectName(sheet.subject_id,sheet.grade);
- placement.append(el('p',{text:path}));
- if(scope?.lessonId&&scope.lessonId!==sheet.lesson_id)placement.append(button('Xếp vào bài đang chọn',()=>{commit();sheet.lesson_id=scope.lessonId;sheet.grade=scope.grade;sheet.subject_id=scope.subjectId;dirty=true;render();},true));
- if(!sheet.lesson_id)placement.append(el('p',{class:'muted',text:'Chọn đến bài học trong chương trình ở trên, mở lại bộ bài và bấm Xếp vào bài đang chọn.'}));
+ placement.append(el('span',{class:'school-eyebrow',text:'HỌC SINH SẼ THẤY Ở'}),el('strong',{'data-sheet-destination':'true',text:worksheetPlacement(sheet,store.tree)}),el('p',{text:schoolContentStatus(sheet.status)}));
+ if(!sheet.exam_config&&scope?.lessonId&&scope.lessonId!==sheet.lesson_id)placement.append(button('Xếp vào bài đang chọn',()=>{commit();sheet.lesson_id=scope.lessonId;sheet.grade=scope.grade;sheet.subject_id=scope.subjectId;dirty=true;render();},true));
+ if(!sheet.lesson_id&&!sheet.exam_config)placement.append(el('p',{class:'muted',text:'Bộ bài tập này chưa được xếp vào một bài học.'}));
  const meta=el('div',{class:'worksheet-meta'},[field('Tên bộ bài','title',sheet.title),field('Lớp','grade','','select'),field('Môn học','subject_id','','select')]);
- const grades=meta.querySelector('[name=grade]');for(const n of store.tree?.grades.map(g=>g.grade)||availableGrades)grades.append(el('option',{value:n,text:'Lớp '+n}));grades.value=sheet.grade;
+ const grades=meta.querySelector('[name=grade]');for(const n of availableGrades)grades.append(el('option',{value:n,text:'Lớp '+n}));grades.value=sheet.grade;
  const subjects=meta.querySelector('[name=subject_id]');
  const labelSubjects=()=>{const selected=subjects.value||sheet.subject_id;subjects.replaceChildren(...subjectsFor({grade:grades.value}).map(([id])=>el('option',{value:id,text:subjectName(id,grades.value)})));subjects.value=selected;if(!subjects.value)subjects.value='toan';};
  labelSubjects();grades.onchange=()=>{labelSubjects();if(!sheet.items.length){const mode=workspace.querySelector('[name=exam-scoring]');if(mode){mode.value=Number(grades.value)<10?'school-points':'thpt-2025';commit();render();}}};
@@ -58,6 +59,7 @@ function render(){
  const add=button('+ Thêm câu',()=>{commit();sheet.items.push({id:crypto.randomUUID(),type:type.value,prompt:'',explanation:'',imageId:null,config:{},answer:{}});index=sheet.items.length-1;dirty=true;render();});
  workspace.replaceChildren(meta,el('p',{class:'worksheet-status',text:sheet.status==='published'?'Đã đăng cho học sinh':sheet.status==='hidden'?'Đang ẩn':'Bản nháp'}),el('div',{class:'worksheet-toolbar'},[button('Lưu nháp',()=>save('draft')),button('Đăng bài',()=>save('published')),button('Ẩn bài',()=>save('hidden'),true),button('Xóa bộ bài',()=>removeWorksheet(sheet.id,sheet.version),true)]),tabs,el('div',{class:'worksheet-toolbar'},[type,add]));
  workspace.prepend(placement);
+ workspace.querySelector('.worksheet-toolbar').append(button('Xem như học sinh',()=>{commit();return previewSchoolPaper(sheet,store.tree);},true),button('Nhập Word theo mẫu',()=>{commit();return importWorksheetWord(sheet,items=>{sheet.items.push(...items);index=sheet.items.length-items.length;dirty=true;render();notice.textContent='Đã thêm '+items.length+' câu vào bản đang soạn. Kiểm tra đáp án, điểm từng câu rồi lưu nháp hoặc đăng bài.';});},true));
  const purpose=el('input',{type:'checkbox',name:'exam-purpose'});purpose.checked=Boolean(sheet.exam_config);
  const minutes=field('Thời gian làm bài (phút)','exam-minutes',sheet.exam_config?.duration_minutes||50),semester=field('Học kì của đề','exam-semester','','select'),shortPoints=field('Điểm mỗi câu trả lời ngắn','exam-short-points','','select');
  for(const [value,text]of [['hk1','Học kì 1'],['hk2','Học kì 2'],['year','Cả năm']])semester.lastChild.append(el('option',{value,text}));semester.lastChild.value=sheet.exam_config?.semester||'hk1';
@@ -67,6 +69,7 @@ function render(){
  shortPoints.hidden=scoring.lastChild.value==='school-points';
  const settings=el('div',{class:'worksheet-toolbar'},[period,minutes,semester,scoring,shortPoints]);settings.hidden=!purpose.checked;purpose.onchange=()=>{commit();dirty=true;render();};
  workspace.prepend(el('section',{class:'card worksheet-exam-settings'},[el('label',{},[purpose,el('strong',{text:' Đăng trong Đề thi (đề do giáo viên soạn, có thời gian)'})]),settings,el('p',{class:'muted',text:scoring.lastChild.value==='school-points'?'Nhập điểm tối đa cho từng câu hoặc ý, cộng đủ 10 điểm. Với câu đúng/sai, chọn cách chia điểm trong từng câu. Học sinh nộp bài rồi xem lời giải.':'Đề THPT: chọn đáp án 0,25 điểm/câu; đúng/sai bốn ý 0,1 / 0,25 / 0,5 / 1 điểm.'})]));
+ if(document.body.dataset.contentHub==='unified'){purpose.disabled=true;purpose.hidden=true;purpose.nextSibling.textContent='Thiết lập đề thi';workspace.querySelector('.worksheet-exam-settings').hidden=!sheet.exam_config;}
  const item=sheet.items[index];if(item){
   const editor=el('div',{class:'worksheet-editor'},[el('h2',{text:'Câu '+(index+1)+' · '+ITEM_TYPES[item.type]}),field('Đề bài','prompt',item.prompt,'textarea'),answerFields(item,{schoolPoints:sheet.exam_config?.scoring==='school-points'}),field('Lời giải / hướng dẫn sau khi làm','explanation',item.explanation,'textarea')]);
   const grading=field('Cách tính điểm câu này','grading','','select');for(const [value,text]of [['active','Tính điểm theo đáp án'],['excluded','Câu tham khảo, không tính điểm']])grading.lastChild.append(el('option',{value,text}));grading.lastChild.value=item.grading||'active';editor.append(grading,field('Ghi chú kiểm tra đề / lý do không tính điểm','review-note',item.review_note||'','textarea'));
@@ -81,11 +84,11 @@ function render(){
   for(const [n,id]of (item.solutionImageIds||[]).entries())editor.append(el('img',{class:'worksheet-solution-image',src:imageUrl(id),alt:'Ảnh hướng dẫn giải '+(n+1)}),button('Bỏ ảnh hướng dẫn '+(n+1),()=>{commit();item.solutionImageIds.splice(n,1);dirty=true;render();},true));
   editor.append(el('div',{class:'worksheet-editor-actions'},[button('Xem thử câu này',preview,true),button('Xóa câu',()=>{if(!confirm('Xóa câu này khỏi bộ bài?'))return;sheet.items.splice(index,1);index=Math.max(0,index-1);dirty=true;render();},true)]));workspace.append(editor);
  }else workspace.append(el('p',{class:'muted',text:'Chọn dạng bài và bấm Thêm câu. Bạn có thể nhập nội dung từ tài liệu của mình sau.'}));
- workspace.oninput=workspace.onchange=()=>dirty=true;
+ workspace.oninput=workspace.onchange=()=>{dirty=true;const destination=workspace.querySelector('[data-sheet-destination]');if(destination){const mode=workspace.querySelector('[name=exam-purpose]')?.checked,period=workspace.querySelector('[name=exam-period]')?.value;destination.textContent=worksheetPlacement({...sheet,title:workspace.querySelector('[name=title]').value,grade:Number(workspace.querySelector('[name=grade]').value),subject_id:workspace.querySelector('[name=subject_id]').value,exam_config:mode?{...(sheet.exam_config||{}),period}:null},store.tree);}};
 }
 async function save(status){
  commit();notice.textContent='Đang lưu…';const data=structuredClone(sheet);data.status=status;
- sheet=(await api(base+'/admin/'+sheet.id,{method:'PUT',body:data})).data;dirty=false;render();await list();notice.textContent=status==='published'?'Đã đăng. Học sinh của khóa Lớp '+sheet.grade+' có thể vào làm.':'Đã lưu bộ bài.';
+ sheet=(await api(base+'/admin/'+sheet.id,{method:'PUT',body:data})).data;dirty=false;render();await list();notice.textContent=status==='published'?'Đã đăng tại '+worksheetPlacement(sheet,store.tree):status==='hidden'?'Đã ẩn với học sinh.':'Đã lưu nháp — học sinh chưa thấy.';
 }
 function preview(){
  commit();dialog.classList.toggle('worksheet-exam-player',Boolean(sheet.exam_config));previewItem=structuredClone(sheet.items[index]);previewAnswer=undefined;const publicItem=structuredClone(previewItem);if(publicItem.type==='ordering')publicItem.config.tokens=[...(publicItem.config.tokens||[])].reverse();
@@ -96,7 +99,8 @@ document.querySelector('#ws-preview-check').onclick=async()=>{try{const {data}=a
 export async function createWorksheet(scope=selectedScope(),examMode=new URLSearchParams(location.search).has('exams')){
  if(dirty&&!confirm('Bỏ thay đổi chưa lưu để tạo bộ mới?'))return;
  const grade=scope?.grade||store.tree?.grades[0]?.grade||availableGrades[0];
- sheet=(await api(base+'/admin',{method:'POST',body:{title:examMode?'Đề thi mới':'Bộ bài tập mới',grade,subject_id:scope?.subjectId||'toan',lesson_id:scope?.lessonId||null,status:'draft',exam_config:examMode?{duration_minutes:50,semester:scope?.semester==='hk2'?'hk2':'hk1',scoring:grade<10?'school-points':'thpt-2025',short_points:.25}:null,items:[]}})).data;index=0;dirty=false;render();await list();
+ const period=scope?.period&&scope.period!=='all'?scope.period:'other',term=paperPeriods.find(([id])=>id===period)?.[2]||scope?.semester||'year';
+ sheet=(await api(base+'/admin',{method:'POST',body:{title:examMode?'Đề thi mới':'Bộ bài tập mới',grade,subject_id:scope?.subjectId||'toan',lesson_id:examMode?null:scope?.lessonId||null,status:'draft',exam_config:examMode?{duration_minutes:50,period,semester:term,scoring:grade<10?'school-points':'thpt-2025',short_points:.25}:null,items:[]}})).data;index=0;dirty=false;render();await list();
  return true;
 }
 document.querySelector('#ws-new').onclick=()=>createWorksheet().catch(fail);

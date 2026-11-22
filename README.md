@@ -1,5 +1,9 @@
 # TTNAVA
 
+**Tổng hợp công việc và tiến độ:** đọc [TIEN_DO_DU_AN.md](TIEN_DO_DU_AN.md), cập nhật 23/11/2026, để biết phần đã làm, kết quả phát hành và việc còn chờ. Một số mô tả thiết kế ban đầu phía dưới đã được thay đổi; xem bản tổng hợp và phần cập nhật mới của từng tài liệu khi đối chiếu.
+
+**Quản trị cấp 1–2–3:** vào **Nội dung học tập**, chọn lớp và môn rồi mở **Bài học / Bài kiểm tra / Đề thi**. Mỗi bài có kiến thức, công thức, ví dụ, quiz và bộ bài tập; có lưu nháp, xem như học sinh và chỉ rõ nơi nội dung xuất hiện. Xem [hướng dẫn quản trị và nhập đề Word](docs/admin-school-workspace.md).
+
 **THPT lớp 10–12** có 9 môn theo mục lục người dùng cung cấp, 239 chương/chủ đề và 1.082 mục học; mỗi mục có kiến thức, ví dụ và câu hỏi tự biên soạn. Học sinh đọc bài và luyện qua hệ thống lưu tiến độ; admin có thể xem/sửa bài giảng và nhập thêm câu hỏi như các cấp hiện có. Xem [hướng dẫn THPT và phát hành dữ liệu an toàn](docs/high-school.md).
 
 Đã bổ sung **khối THCS (lớp 6–9)**, với mục lục Toán 9 gồm 2 tập, 10 chương,

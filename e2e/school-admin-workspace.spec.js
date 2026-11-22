@@ -1,0 +1,74 @@
+import {test,expect} from '@playwright/test';
+import {createServer} from 'node:http';import {readFile} from 'node:fs/promises';import path from 'node:path';import {randomUUID} from 'node:crypto';
+import {buildSchoolGroups} from '../backend/src/services/school-study-groups.js';
+import {validateSheet} from '../backend/src/services/worksheet-rules.js';
+import {visibleGuideContent,guideRevision,mergeGuideContent,parseGuideAuthoring} from '../backend/src/services/school-guide-authoring.js';
+import {extractDocxQuestions} from '../backend/src/services/docx-import-service.js';
+let server,origin,word;
+test.beforeAll(async()=>{const root=path.resolve('frontend');server=createServer(async(req,res)=>{const pathname=new URL(req.url,'http://localhost').pathname;let file=path.resolve(root,'.'+pathname);if(pathname.endsWith('/'))file=path.join(file,'index.html');if(!file.startsWith(root+path.sep)){res.writeHead(403).end();return;}try{res.setHeader('Content-Type',({'.js':'text/javascript','.css':'text/css','.html':'text/html; charset=utf-8','.svg':'image/svg+xml'})[path.extname(file)]||'application/octet-stream');res.end(await readFile(file));}catch{res.writeHead(404).end();}});await new Promise(r=>server.listen(0,'127.0.0.1',r));origin='http://127.0.0.1:'+server.address().port;word=await extractDocxQuestions(await readFile('frontend/assets/templates/mau-nhap-de-thi.docx'));});
+test.afterAll(async()=>new Promise(r=>server.close(r)));
+function treeFor(grades){return {years:[{id:'2026',name:'2026–2027'}],year:{id:'2026',name:'2026–2027'},grades:grades.map(grade=>({grade,name:'Lớp '+grade,semesters:[{id:'hk1',name:'Học kì I',subjects:['toan','tieng-anh'].map(subject=>({id:subject,name:subject==='toan'?'Toán':'Tiếng Anh',chapters:[{id:`c-${grade}-${subject}`,name:subject==='toan'?'Chương 1':'Unit 1. My world',lessons:[1,2].map(n=>({id:`l-${grade}-${subject}-${n}`,topicId:`t-${grade}-${subject}-${n}`,name:subject==='toan'?'Bài '+n+' · Toán':'Phần '+n,questionCount:n===1?24:0,publishedCount:n===1?24:0}))}]}))}]}))};}
+async function fixture(page,{scope='super',grade=12,mode='lessons'}={}){
+ const grades=scope==='primary'?[1,2,3,4,5]:scope==='secondary'?[6,7,8,9]:scope==='highschool'?[10,11,12]:[1,6,12],tree=treeFor(grades),sheets=new Map(),guides=new Map(),writes=[],reads=[],errors=[];
+ for(const g of grades){const id=randomUUID();sheets.set(id,{id,title:'Đề cũ lớp '+g,grade:g,subject_id:'toan',status:'published',version:1,lesson_id:null,exam_config:{period:'midterm1',semester:'hk1',scoring:'thpt-2025',duration_minutes:90,short_points:.5},items:[{id:randomUUID(),type:'fill',prompt:'Tính 1+1',config:{answer_format:'number'},answer:{accepted:['2']},explanation:'Lời giải riêng'}]});guides.set(`l-${g}-toan-1`,{content_json:{summary:[{heading:'Cần nhớ',body:'Kiến thức trong bài'}],formulas:[],examples:[{prompt:'Ví dụ',solution:'Cách làm'}],mistakes:[],questions:[{answer:'private'}]},status:'published'});}
+ const groups=selectedGrade=>{const rows=[];for(const g of tree.grades.filter(g=>g.grade===selectedGrade))for(const s of g.semesters)for(const subject of s.subjects)for(const c of subject.chapters)for(const l of c.lessons)rows.push({grade:g.grade,subject_id:subject.id,chapter_id:c.id,chapter_name:c.name,semester:s.id,lesson_id:l.id,lesson_name:l.name,topic_id:l.topicId});return buildSchoolGroups(rows).map(group=>{const row=guides.get(group.id),content=visibleGuideContent(row?.content_json);return {...group,questionCount:group.parts.some(p=>p.id.endsWith('-1'))?24:0,hasGuide:row?.status==='published',guideStatus:row?.status||null,knowledgeCount:content.summary.length+content.formulas.length,exampleCount:content.examples.length};});};
+ await page.route('**/assets/js/ui-core.js',route=>route.fulfill({contentType:'text/javascript',body:`export async function initPage(){document.body.dataset.role='admin';return {id:'fixture',role:'admin',adminScope:'${scope}'}}export function syncDiamondTotal(){}export function getProfile(){}export function setDiamondTotal(){}export function updateDiamondChip(){}` }));
+ page.on('pageerror',e=>{errors.push(e.message);console.error('Workspace page error:',e.message);});page.on('dialog',dialog=>dialog.accept());
+ await page.route('**/api/v1/**',async route=>{
+  const request=route.request(),url=new URL(request.url()),p=url.pathname,method=request.method();let data,pagination;
+  if(method==='GET')reads.push(url.pathname+url.search);else if(!p.endsWith('/import/docx'))writes.push({p,method,body:request.postDataJSON()});
+  if(p==='/api/v1/runtime')data={directWordUpload:false};
+  else if(p.endsWith('/admin/curriculum/tree'))data=tree;
+  else if(p.endsWith('/admin/content/study-catalog'))data={groups:groups(Number(url.searchParams.get('grade')))};
+  else if(p.endsWith('/admin/content/checks'))data={chapters:[{id:`c-${grade}-toan`,name:'Chương 1',semester:'hk1',questionCount:12,count:30,durationSeconds:1800}],semesters:[{id:'hk1',name:'Học kì I',questionCount:12,count:50,durationSeconds:3000}],annual:{questionCount:12,count:50,durationSeconds:3600}};
+  else if(p.endsWith('/admin/questions/import/docx'))data=word;
+  else if(p==='/api/v1/admin/questions'&&method==='POST')data={...request.postDataJSON(),id:randomUUID()};
+  else if(p.includes('/school-study/guides/')){
+   const id=p.split('/').at(-1),group=groups(Number(request.headers()['x-course-id'].replace('grade-',''))).find(g=>g.id===id),row=guides.get(id);
+   if(method==='PUT'){const body=request.postDataJSON(),{content}=parseGuideAuthoring(body,body.status);expect(body.expected_revision).toBe(guideRevision(row));const next={content_json:mergeGuideContent(row?.content_json,content),status:body.status};guides.set(id,next);data={saved:true,status:next.status,revision:guideRevision(next)};}
+   else data={group,content:visibleGuideContent(row?.content_json),status:row?.status||'draft',exists:Boolean(row),revision:guideRevision(row)};
+  }else if(p==='/api/v1/worksheets/admin'){
+   if(method==='POST'){const body=request.postDataJSON();data={...body,id:randomUUID(),version:1};sheets.set(data.id,data);}
+   else data=[...sheets.values()].map(s=>({...s,item_count:s.items.length}));
+  }else if(p.startsWith('/api/v1/worksheets/admin/')){
+   const id=p.split('/').at(-1),old=sheets.get(id);if(method==='PUT'){data={id,...validateSheet(request.postDataJSON()),version:old.version+1};sheets.set(id,data);}else data=old;
+  }else if(p==='/api/v1/admin/content'){
+   const count=url.searchParams.get('kind')==='question'?2:0;data=Array.from({length:count},(_,n)=>({id:'q'+n,title:'Câu ngân hàng '+n,kind:'question',status:n?'draft':'published',grade:Number(url.searchParams.get('grade')),subject_id:'toan'}));pagination={page:1,total:data.length,limit:20};
+  }else if(p.endsWith('/admin/content/publish-questions'))data={published:1};
+  else{await route.fulfill({status:404,json:{error:{message:'Unexpected fixture route '+p}}});return;}
+  await route.fulfill({json:{data,...(pagination?{pagination}:{})}});
+ });
+ await page.goto(origin+'/pages/admin/questions/?'+new URLSearchParams({grade,subjectId:'toan',mode}));await expect(page.locator('#content-hub-error')).toBeEmpty();return {tree,sheets,guides,writes,reads,errors};
+}
+test('one workspace mirrors all three school levels and groups English Units once',async({page})=>{
+ const state=await fixture(page,{grade:1});await expect(page.locator('.school-admin-lesson')).toHaveCount(2);
+ await page.getByRole('button',{name:'Cấp 2 · THCS',exact:true}).click();await expect(page).toHaveURL(/grade=6/);await expect(page.locator('.school-admin-lesson')).toHaveCount(2);
+ await page.getByRole('button',{name:'Cấp 3 · THPT',exact:true}).click();await expect(page).toHaveURL(/grade=12/);
+ await page.getByRole('navigation',{name:'Chọn môn học'}).getByRole('button',{name:'Tiếng Anh',exact:true}).click();await expect(page.locator('.school-admin-lesson')).toHaveCount(1);await expect(page.locator('.school-admin-lesson h3')).toHaveText('Unit 1. My world');expect(state.writes).toHaveLength(0);expect(state.errors).toEqual([]);
+ await page.screenshot({path:'test-results/school-admin-desktop.png',fullPage:true});await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:'test-results/school-admin-mobile.png',fullPage:true});
+});
+test('a missing guide opens without writes and saves draft then publishes one lesson section',async({page})=>{
+ const state=await fixture(page);await page.locator('[data-group="l-12-toan-2"]').getByRole('button',{name:/Cần nhớ/}).click();await page.getByRole('button',{name:'+ Thêm nội dung',exact:true}).click();const dialog=page.getByRole('dialog',{name:'Soạn kiến thức và ví dụ'});await expect(dialog).toBeVisible();expect(state.writes).toHaveLength(0);
+ await dialog.getByRole('button',{name:'+ Thêm mục kiến thức',exact:true}).click();await dialog.getByRole('textbox',{name:'Tiêu đề',exact:true}).fill('Công thức mới');await dialog.getByRole('textbox',{name:'Nội dung kiến thức',exact:true}).fill('Nội dung giáo viên tự soạn');await dialog.getByRole('button',{name:'Lưu nháp',exact:true}).click();await expect(dialog.locator('.school-save-receipt')).toContainText('Đã lưu nháp');
+ await dialog.getByRole('button',{name:'Cho học sinh xem',exact:true}).click();await expect(dialog.locator('.school-save-receipt')).toContainText('Đã đăng tại Lớp 12');expect(state.guides.get('l-12-toan-2').status).toBe('published');expect(state.errors).toEqual([]);
+});
+test('exam Word import stays in the selected grade subject period and never writes the question bank',async({page})=>{
+ const state=await fixture(page,{mode:'papers'});await expect(page.getByRole('button',{name:'+ Thêm đề thi',exact:true})).toBeDisabled();await page.getByRole('button',{name:/^Giữa kì I ·/}).click();await page.getByRole('button',{name:'+ Thêm đề thi',exact:true}).click();await expect(page.locator('[name=grade]')).toHaveValue('12');await expect(page.locator('[name=subject_id]')).toHaveValue('toan');await expect(page.locator('[name=exam-period]')).toHaveValue('midterm1');
+ await page.locator('[name=title]').fill('Đề trường tự nhập');await page.getByRole('button',{name:'Nhập Word theo mẫu',exact:true}).click();const dialog=page.getByRole('dialog',{name:'Nhập Word vào đề'});await dialog.getByLabel('Chọn Word của đề').setInputFiles('frontend/assets/templates/mau-nhap-de-thi.docx');await dialog.getByRole('button',{name:'Đọc và xem trước Word',exact:true}).click();await expect(dialog.locator('[role=status]')).toContainText('Đã đọc 2 câu');await dialog.getByRole('button',{name:'Thêm các câu vào bản đang soạn',exact:true}).click();
+ await page.getByRole('button',{name:'Lưu nháp',exact:true}).click();await expect(page.locator('#ws-notice')).toContainText('Đã lưu nháp');await page.getByRole('button',{name:'Đăng bài',exact:true}).click();await expect(page.locator('#ws-notice')).toContainText('Lớp 12 → Toán → Đề thi → Giữa kì I');
+ const sheet=[...state.sheets.values()].find(s=>s.title==='Đề trường tự nhập');expect(sheet.lesson_id).toBeNull();expect(sheet.items).toHaveLength(2);expect(sheet.status).toBe('published');expect(sheet.exam_config.period).toBe('midterm1');expect(state.writes.every(r=>r.p.startsWith('/api/v1/worksheets/admin'))).toBe(true);expect(state.errors).toEqual([]);
+});
+test('generated check readiness links back to lesson sources without changing data',async({page})=>{
+ const state=await fixture(page,{mode:'checks'});await expect(page.getByText('Cần thêm 18 câu',{exact:true})).toBeVisible();await page.getByRole('button',{name:'Quản lý câu hỏi',exact:true}).click();await expect(page.locator('.school-admin-lesson')).toHaveCount(2);await page.locator('[data-group="l-12-toan-1"]').getByRole('button',{name:/Quiz theo bài/}).click();await expect(page.getByText('Câu ngân hàng 0',{exact:true})).toBeVisible();expect(state.reads.some(r=>r.includes('purpose=lesson')&&r.includes('kind=question'))).toBe(true);expect(state.writes).toHaveLength(0);expect(state.errors).toEqual([]);
+});
+test('scoped admins see their grades and cancelled navigation preserves unsaved exam edits',async({page})=>{
+ const state=await fixture(page,{scope:'highschool',mode:'papers'});await expect(page.getByRole('navigation',{name:'Chọn cấp học'}).getByRole('button')).toHaveCount(1);await page.getByRole('button',{name:'Mở soạn đề',exact:true}).click();await page.locator('[name=title]').fill('Đang sửa chưa lưu');
+ page.removeAllListeners('dialog');page.on('dialog',dialog=>dialog.dismiss());await page.getByRole('navigation',{name:'Chọn lớp'}).getByRole('button',{name:'Lớp 10',exact:true}).click();await expect(page.locator('[name=title]')).toHaveValue('Đang sửa chưa lưu');await expect(page).toHaveURL(/grade=12/);expect(await page.locator('[name=grade] option').allTextContents()).toEqual(['Lớp 10','Lớp 11','Lớp 12']);expect(state.writes).toHaveLength(0);expect(state.errors).toEqual([]);
+});
+test('new question placement follows the selected part of a merged Unit and leaves a save receipt',async({page})=>{
+ const state=await fixture(page);await page.getByRole('navigation',{name:'Chọn môn học'}).getByRole('button',{name:'Tiếng Anh',exact:true}).click();await page.locator('[data-group="c-12-tieng-anh"]').getByRole('button',{name:/Quiz theo bài/}).click();await page.getByRole('combobox',{name:'Phần nhận câu hỏi mới',exact:true}).selectOption('l-12-tieng-anh-2');await page.getByRole('button',{name:'+ Thêm câu hỏi',exact:true}).click();
+ const dialog=page.getByRole('dialog');await expect(dialog.locator('[data-scope="lessonId"]')).toHaveValue('l-12-tieng-anh-2');await expect(dialog.locator('.school-destination')).toContainText('Unit 1. My world');await dialog.locator('[data-type]').selectOption('fill_in');await dialog.locator('[data-prompt]').fill('Điền từ tiếng Anh đúng');await dialog.locator('[data-answer-fill]').fill('hello');await dialog.locator('[data-explanation]').fill('Lời giải câu điền từ.');await dialog.getByRole('button',{name:'Lưu câu hỏi',exact:true}).click();await expect(page.locator('#school-save-receipt')).toContainText('Đã lưu nháp');await expect(page.locator('#school-save-receipt')).toContainText('Lớp 12 → Tiếng Anh → Quiz theo bài → Unit 1. My world');expect(state.writes[0].body.lessonId).toBe('l-12-tieng-anh-2');expect(state.errors).toEqual([]);
+});
+test('primary and secondary administrators retain only their assigned school levels',async({page})=>{
+ for(const [scope,grade,count]of [['primary',1,5],['secondary',6,4]]){const state=await fixture(page,{scope,grade});await expect(page.getByRole('navigation',{name:'Chọn cấp học'}).getByRole('button')).toHaveCount(1);await expect(page.getByRole('navigation',{name:'Chọn lớp'}).getByRole('button')).toHaveCount(count);await expect(page.locator('.school-admin-lesson')).toHaveCount(2);expect(state.writes).toHaveLength(0);expect(state.errors).toEqual([]);}
+});

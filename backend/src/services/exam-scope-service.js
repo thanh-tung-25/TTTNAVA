@@ -17,8 +17,8 @@ async function year(id){
  if(!rows[0])throw new AppError(404,'YEAR_NOT_FOUND','Không tìm thấy năm học.');return rows[0];
 }
 
-export async function examCatalog(grade,subjectId){
- const selected=await year();
+export async function examCatalog(grade,subjectId,yearId){
+ const selected=await year(yearId);
  const questionKey=Number(grade)>=10?"CASE WHEN q.image_url IS NULL OR q.image_url='' THEN LOWER(TRIM(q.prompt)) ELSE q.id END":'q.id';
  const chapters=await query(`SELECT c.id,c.name,c.semester,c.sort_order,COUNT(DISTINCT ${questionKey}) question_count
  FROM curriculum_chapters c LEFT JOIN curriculum_lessons l ON l.chapter_id=c.id
@@ -27,7 +27,8 @@ export async function examCatalog(grade,subjectId){
  GROUP BY c.id,c.name,c.semester,c.sort_order ORDER BY c.semester,c.sort_order,c.id`,[selected.id,grade,subjectId]);
  const counts=await query(`SELECT c.semester,COUNT(DISTINCT ${questionKey}) question_count FROM curriculum_chapters c JOIN curriculum_lessons l ON l.chapter_id=c.id JOIN questions q ON q.topic_id=l.topic_id AND q.status='published' WHERE c.school_year_id=? AND c.grade=? AND c.subject_id=? AND c.is_legacy=0 GROUP BY c.semester`,[selected.id,grade,subjectId]);
  const papers=await worksheetExamsAvailable()?await query(`SELECT id,title,exam_config,${jsonArrayLength('items')} item_count FROM worksheets WHERE grade=? AND subject_id=? AND status='published' AND exam_config IS NOT NULL ORDER BY title,id`,[grade,subjectId]):[];
- return {papers:papers.map(row=>({...row,exam_config:typeof row.exam_config==='string'?JSON.parse(row.exam_config):row.exam_config})),year:selected,grade,subjectId,chapters:chapters.map(c=>({...c,questionCount:Number(c.question_count),count:30,durationSeconds:1800})),semesters:['hk1','hk2'].filter(id=>Number(grade)<10||chapters.some(c=>c.semester===id)).map(id=>({id,name:semesterName(id),questionCount:Number(counts.find(c=>c.semester===id)?.question_count||0),count:50,durationSeconds:3000})),annual:{questionCount:counts.reduce((sum,c)=>sum+Number(c.question_count),0),count:50,durationSeconds:3600}};
+ const [annual]=await query(`SELECT COUNT(DISTINCT ${questionKey}) question_count FROM curriculum_chapters c JOIN curriculum_lessons l ON l.chapter_id=c.id JOIN questions q ON q.topic_id=l.topic_id AND q.status='published' WHERE c.school_year_id=? AND c.grade=? AND c.subject_id=? AND c.is_legacy=0`,[selected.id,grade,subjectId]);
+ return {papers:papers.map(row=>({...row,exam_config:typeof row.exam_config==='string'?JSON.parse(row.exam_config):row.exam_config})),year:selected,grade,subjectId,chapters:chapters.map(c=>({...c,questionCount:Number(c.question_count),count:30,durationSeconds:1800})),semesters:['hk1','hk2'].filter(id=>Number(grade)<10||chapters.some(c=>c.semester===id)).map(id=>({id,name:semesterName(id),questionCount:Number(counts.find(c=>c.semester===id)?.question_count||0),count:50,durationSeconds:3000})),annual:{questionCount:Number(annual.question_count),count:50,durationSeconds:3600}};
 }
 
 export async function selectScopedExam(grade,body,seed){

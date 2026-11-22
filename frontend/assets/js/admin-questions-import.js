@@ -13,6 +13,7 @@ import {
 import { renderImportPreview, syncImportPreview } from './admin-import-preview.js';
 import { findScope, loadTree, showScope } from './admin-questions-tree.js';
 import {store} from './admin-questions-context.js';
+import {questionStudentPlacement,schoolSaveReceipt} from './admin-school-question-placement.js';
 
 function statusLine(message) {
   const box = document.querySelector('[data-import-status]');
@@ -23,13 +24,13 @@ function statusLine(message) {
 
 function previewHtml(config, tree, selectedIds) {
   const labels=selectedIds?scopeLabels(tree,selectedIds):null;
-  const destination=labels?[tree.year.name,labels.grade,labels.semester,labels.subjectName,labels.chapterName,labels.lessonName].filter(Boolean).join(' › '):'';
+  const destination=labels?questionStudentPlacement(tree,selectedIds):'';
   return `
     <div class="form-error hidden" data-error role="alert"></div>
     <p class="muted" style="font-size:.84rem;margin:0 0 .75rem">
       ${selectedIds?'Câu hỏi sẽ được lưu vào bài đã chọn bên ngoài.':'Chọn đúng cấp chương trình trước khi lưu.'} Câu hỏi nhập từ Word luôn được lưu ở trạng thái <strong>Nháp</strong>.
     </p>
-    ${selectedIds?`<div class="worksheet-placement" data-import-destination><strong>Bài học nhận câu hỏi</strong><p>${escapeHtml(destination)}</p></div>`:scopeControlsHtml(tree, defaultScopeIds(tree))}
+    ${selectedIds?`<div class="school-destination" data-import-destination><span class="school-eyebrow">HỌC SINH SẼ THẤY Ở</span><strong>${escapeHtml(destination)}</strong><p>Câu hỏi nhập Word được lưu nháp để cô kiểm tra trước khi đăng.</p></div>`:scopeControlsHtml(tree, defaultScopeIds(tree))}
     <div class="field"><label for="docx-file">Tệp tài liệu .docx (tối đa 20 MB)</label>
       <input class="input" id="docx-file" type="file" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
       <p class="hint">Mẫu: <strong>Câu 1.</strong> … <strong>A.</strong> … <strong>Đáp án:</strong> A · <strong>Lời giải:</strong> …</p>
@@ -175,6 +176,7 @@ export async function openImport() {
           }));
         const result = await api('/api/v1/admin/questions/import/file', {method:'POST',body});
         toast(`Đã lưu ${result.data.created} câu hỏi nháp.`, 'success');
+        schoolSaveReceipt('Đã lưu '+result.data.created+' câu hỏi nháp — học sinh chưa thấy. Vị trí sau khi đăng: '+questionStudentPlacement(tree,ids));
         document.dispatchEvent(new Event('content:changed'));
         document.querySelector('[data-close]')?.click();
           if(document.body.dataset.contentHub==='unified')return;

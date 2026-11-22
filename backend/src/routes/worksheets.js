@@ -23,7 +23,7 @@ router.use(asyncHandler(async(req,res,next)=>{
 }));
 router.use(imageRouter);
 const handle=fn=>asyncHandler(async(req,res)=>res.json({data:await fn(req)}));
-router.get('/admin',requireAdmin,handle(async r=>query(`SELECT id,title,grade,subject_id,status,version,${await worksheetExamsAvailable()?'exam_config':'NULL AS exam_config'},${jsonArrayLength('items')} item_count FROM worksheets WHERE ${schoolGradeCondition(r.schoolProgram)} ORDER BY updated_at DESC`)));
+router.get('/admin',requireAdmin,handle(async r=>query(`SELECT id,title,grade,subject_id,status,version,lesson_id,${await worksheetExamsAvailable()?'exam_config':'NULL AS exam_config'},${jsonArrayLength('items')} item_count FROM worksheets WHERE ${schoolGradeCondition(r.schoolProgram)} ORDER BY updated_at DESC`)));
 router.post('/admin',requireAdmin,handle(r=>service.save(r.user.id,null,r.body)));
 router.get('/admin/reviews',requireAdmin,handle(r=>query(`SELECT a.id,a.student_id,a.status,a.submitted_at,p.display_name,p.username,${jsonText('a.snapshot','title')} title FROM worksheet_attempts a JOIN profiles p ON p.id=a.student_id WHERE a.status='pending_review' AND ${schoolGradeCondition(r.schoolProgram,'a.grade')} ORDER BY a.submitted_at LIMIT 200`)));
 router.get('/admin/reviews/:id',requireAdmin,handle(async r=>{const [a]=await query('SELECT * FROM worksheet_attempts WHERE id=?',[r.params.id]);if(!a)throw notFound();return {...a,snapshot:service.json(a.snapshot),answers:service.json(a.answers),results:service.json(a.results)};}));

@@ -1,6 +1,6 @@
 # Bài tập tương tác
 
-Admin vào **Nội dung học tập** (`/pages/admin/questions/`). Một danh sách chung hiển thị câu hỏi đơn và bộ bài, có tìm kiếm, lọc lớp/trạng thái và nút Sửa. Để tạo bộ bài, chọn **Bộ bài tập**, bấm **Tạo nội dung**, đặt tên, lớp và môn. Bộ mới là bản nháp trống.
+Admin vào **Nội dung học tập** (`/pages/admin/questions/`), chọn lớp, môn rồi mở **Bài học → bài cần soạn → Bộ bài tập → Tạo bộ bài tập**. Bộ mới là bản nháp trống, gắn sẵn với bài đã chọn. Đề cố định nằm riêng trong **Đề thi**, còn **Bài kiểm tra** sử dụng ngân hàng câu hỏi theo phạm vi. Xem [hướng dẫn quản trị cấp 1–2–3](admin-school-workspace.md) để soạn kiến thức, ví dụ, câu hỏi và nhập Word vào đề.
 
 ## Soạn bài
 

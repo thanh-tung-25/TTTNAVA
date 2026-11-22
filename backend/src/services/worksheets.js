@@ -8,6 +8,7 @@ import {resolveCurriculumScope} from './curriculum-scope.js';
 import {awardLearningReward} from './learning-reward.js';
 import {worksheetExamScore} from './worksheet-exam-scoring.js';
 import {worksheetExamsAvailable} from './worksheet-exam-schema.js';
+import {worksheetSolutionImagesAvailable} from './worksheet-solution-access.js';
 export const json=v=>typeof v==='string'?JSON.parse(v):v;
 export async function sheet(id,admin=false,user,run=query){
  const [row]=await run('SELECT * FROM worksheets WHERE id=?',[id]);if(!row||!admin&&row.status!=='published')throw notFound();
@@ -16,13 +17,17 @@ export async function sheet(id,admin=false,user,run=query){
 export async function save(admin,id,body){
  const d=validateSheet(body);id||=randomUUID();
  const supportsExams=await worksheetExamsAvailable();if(d.exam_config&&!supportsExams)throw new AppError(409,'EXAM_SETUP_REQUIRED','Cần chạy cập nhật dữ liệu 048_worksheet_exams trước khi đăng đề thi.');
+ const supportsSolutions=await worksheetSolutionImagesAvailable();if(d.items.some(item=>item.solutionImageIds?.length)&&!supportsSolutions)throw new AppError(409,'WORKSHEET_SOLUTION_SETUP','Cần cập nhật kho ảnh hướng dẫn giải trước khi lưu.');
  if(d.lesson_id)await resolveCurriculumScope({lessonId:d.lesson_id,grade:d.grade,subjectId:d.subject_id});
  return withTransaction(async c=>{
   const run=async(sql,p=[]) => (await c.query(sql,p))[0];
   const [old]=await run('SELECT * FROM worksheets WHERE id=? FOR UPDATE',[id]);
   if(old&&old.version!==d.version)throw new AppError(409,'WORKSHEET_CHANGED','Bộ bài đã thay đổi ở nơi khác. Tải lại trước khi sửa.');
   if(old&&old.grade!==d.grade&&(await run('SELECT id FROM worksheet_attempts WHERE worksheet_id=? LIMIT 1',[id])).length)throw badRequest('Bộ bài đã có học sinh làm. Tạo bộ mới để đổi lớp.');
-  for(const item of d.items)if(item.imageId&&!(await run('SELECT id FROM worksheet_images WHERE id=? AND worksheet_id=?',[item.imageId,id])).length)throw badRequest('Hình ảnh không thuộc bộ bài này.');
+  for(const item of d.items){
+   if(item.imageId&&!(await run('SELECT id FROM worksheet_images WHERE id=? AND worksheet_id=?'+(supportsSolutions?' AND id NOT IN (SELECT image_id FROM worksheet_solution_images)':''),[item.imageId,id])).length)throw badRequest('Hình đề bài không thuộc bộ bài này hoặc là ảnh lời giải.');
+   for(const solution of item.solutionImageIds||[])if(!(await run('SELECT i.id FROM worksheet_images i JOIN worksheet_solution_images s ON s.image_id=i.id WHERE i.id=? AND i.worksheet_id=?',[solution,id])).length)throw badRequest('Ảnh hướng dẫn giải không thuộc bộ bài này.');
+  }
   await run(dialectSql(`INSERT INTO worksheets(id,title,grade,subject_id,status,items,created_by,lesson_id) VALUES (?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE title=VALUES(title),grade=VALUES(grade),subject_id=VALUES(subject_id),status=VALUES(status),items=VALUES(items),lesson_id=VALUES(lesson_id),version=version+1`,
    `INSERT INTO worksheets(id,title,grade,subject_id,status,items,created_by,lesson_id) VALUES (?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=EXCLUDED.title,grade=EXCLUDED.grade,subject_id=EXCLUDED.subject_id,status=EXCLUDED.status,items=EXCLUDED.items,lesson_id=EXCLUDED.lesson_id,version=worksheets.version+1`),[id,d.title,d.grade,d.subject_id,d.status,JSON.stringify(d.items),admin,d.lesson_id]);
   if(supportsExams)await run('UPDATE worksheets SET exam_config=? WHERE id=?',[d.exam_config?JSON.stringify(d.exam_config):null,id]);

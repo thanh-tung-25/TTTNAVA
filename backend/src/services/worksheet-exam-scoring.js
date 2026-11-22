@@ -3,7 +3,7 @@
 export function worksheetExamScore(items,results,config={}){
  if(config.scoring==='school-points'){
   let points=0,total=0;
-  for(const item of items){if(item.grading==='excluded')continue;const maximum=item.points||0,result=results.find(row=>row.id===item.id);total+=maximum;points+=item.type==='true_false_group'?maximum*(result?.checks?.filter(Boolean).length||0)/item.config.statements.length:result?.correct===true?maximum:0;}
+  for(const item of items){if(item.grading==='excluded')continue;const maximum=item.points||0,result=results.find(row=>row.id===item.id);total+=maximum;const count=result?.checks?.filter(Boolean).length||0;points+=item.type==='true_false_group'?maximum*(item.config.scoring==='thpt-2025'?[0,.1,.25,.5,1][count]:count/item.config.statements.length):result?.correct===true?maximum:0;}
   return {points:Math.round(points*1000)/1000,maximum:Math.round(total*1000)/1000,percent:total?Math.round(points/total*10000)/100:0};
  }
  let points=0,total=0;

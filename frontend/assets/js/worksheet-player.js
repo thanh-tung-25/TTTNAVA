@@ -17,6 +17,7 @@ export function renderItem(item,value,onChange){
  }else if(['fill','word'].includes(item.type)){
   box.append(input(item.type==='word'?'Đáp số'+(item.config.unit?' ('+item.config.unit+')':''):'Câu trả lời',value,onChange,!item.config.answer_format));
   if(item.config.answer_format==='number')box.append(el('p',{class:'muted',text:'Nhập kết quả cuối cùng; có thể viết phân số như -3/4.'}));
+  if(['expression','set'].includes(item.config.answer_format))box.append(el('p',{class:'muted',text:'Có thể dùng pi cho π, sqrt(x) cho căn x và ^ để viết số mũ; các phần tử tập hợp ngăn bằng dấu ;.'}));
  }
  else if(['choice','compare'].includes(item.type)){
   const choices=item.type==='compare'?['<','>','=']:item.config.options;
@@ -57,5 +58,6 @@ export function resultBlock(result){
   ...(result.correct===null?[]:[el('p',{text:'Đáp án: '+result.expected})]),
   ...(result.checks?.length>1?[el('p',{text:result.checks.filter(Boolean).length+'/'+result.checks.length+' ô đúng'})]:[]),
   ...(result.explanation?[el('p',{text:result.explanation})]:[]),...(result.comment?[el('p',{text:'Giáo viên: '+result.comment})]:[]),
+  ...(result.solutionImageIds||[]).map((id,n)=>el('img',{class:'worksheet-solution-image',src:imageUrl(id),alt:'Hướng dẫn giải · Trang '+(n+1),loading:'lazy'})),
  ]);
 }

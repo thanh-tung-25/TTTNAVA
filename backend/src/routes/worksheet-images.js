@@ -6,6 +6,7 @@ import {archiveFile,sendArchive} from '../services/private-storage.js';
 import {requireAdmin} from '../middlewares/auth.js';
 import {requireCourse} from '../services/course-service.js';
 import {AppError,asyncHandler,notFound} from '../utils/errors.js';
+import {worksheetSolutionImagesAvailable,requireSolutionImageSubmission} from '../services/worksheet-solution-access.js';
 const router=Router(),upload=multer({storage:multer.memoryStorage(),limits:{fileSize:2*1024*1024,files:1,fields:0}}).single('image');
 router.post('/admin/:id/images',requireAdmin,(req,res,next)=>upload(req,res,error=>{
  if(error)return next(new AppError(400,'IMAGE_UPLOAD','Ảnh tối đa 2 MB.'));
@@ -13,19 +14,24 @@ router.post('/admin/:id/images',requireAdmin,(req,res,next)=>upload(req,res,erro
  next();
 }),asyncHandler(async(req,res)=>{
  const [sheet]=await query('SELECT id FROM worksheets WHERE id=?',[req.params.id]);if(!sheet)throw notFound();
+ const purpose=req.query.purpose||'question';if(!['question','solution'].includes(purpose))throw new AppError(400,'IMAGE_PURPOSE','Loại ảnh không hợp lệ.');
+ if(purpose==='solution'&&!await worksheetSolutionImagesAvailable())throw new AppError(409,'WORKSHEET_SOLUTION_SETUP','Cần cập nhật kho ảnh hướng dẫn giải.');
  const b=req.file.buffer,mime=b.length>=24&&b.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10]))?'image/png':b.length>=4&&b[0]===255&&b[1]===216&&b[2]===255&&b[b.length-2]===255&&b[b.length-1]===217?'image/jpeg':null;
  if(!mime)throw new AppError(415,'IMAGE_TYPE','Chỉ nhận ảnh PNG hoặc JPEG.');
  const id=randomUUID();await withTransaction(async connection=>{
   const run=async(sql,p=[]) => (await connection.query(sql,p))[0];
   await run('INSERT INTO worksheet_images(id,worksheet_id,image,mime_type) VALUES (?,?,?,?)',[id,sheet.id,b,mime]);
+  if(purpose==='solution')await run('INSERT INTO worksheet_solution_images(image_id) VALUES (?)',[id]);
   await archiveFile('worksheet_images/'+id,b,mime,'worksheet-image',run);
  });res.json({data:{id}});
 }));
 router.get('/images/:id',asyncHandler(async(req,res)=>{
- const [image]=await query('SELECT i.*,w.grade,w.status FROM worksheet_images i JOIN worksheets w ON w.id=i.worksheet_id WHERE i.id=?',[req.params.id]);if(!image)throw notFound();
+ const marker=await worksheetSolutionImagesAvailable()?'EXISTS(SELECT 1 FROM worksheet_solution_images s WHERE s.image_id=i.id)':'0';
+ const [image]=await query('SELECT i.*,w.grade,w.status,'+marker+' AS is_solution FROM worksheet_images i JOIN worksheets w ON w.id=i.worksheet_id WHERE i.id=?',[req.params.id]);if(!image)throw notFound();
  if(req.user.role!=='admin'){
   await requireCourse(req.user.id,'grade-'+image.grade);
   if(image.status!=='published'&&!(await query('SELECT id FROM worksheet_attempts WHERE worksheet_id=? AND student_id=? LIMIT 1',[image.worksheet_id,req.user.id])).length)throw notFound();
+  await requireSolutionImageSubmission(req.user,image);
  }
  await sendArchive(res,'worksheet_images/'+image.id,image.image,image.mime_type);
 }));

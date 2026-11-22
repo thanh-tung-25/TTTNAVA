@@ -1,3 +1,4 @@
+import {worksheetExpressionMatches} from './worksheet-expression-matching.js';
 const plain=value=>String(value??'').normalize('NFKC').trim().toLocaleLowerCase('vi').replace(/[−–]/gu,'-').replace(/[⁄∕]/gu,'/');
 const gcd=(a,b)=>{a=a<0n?-a:a;b=b<0n?-b:b;while(b){[a,b]=[b,a%b];}return a;};
 function rational(value){
@@ -38,13 +39,20 @@ function atom(text){
  return text?'t:'+text.replace(/\s/gu,''):null;
 }
 function set(value){
- let text=plain(value).replace(/^[\p{L}][\p{L}\p{N}_]*\s*(?:=|∈)\s*/u,'');
+ let text=plain(value).replace(/^[\p{L}][\p{L}\p{N}_]*\s*(?:=|∈)\s*/u,'').replace(/[,(;]?\s*[knm]\s*(?:∈|thuộc)\s*z\s*\)?$/u,'');
+ if(text==='∅'||text==='\\varnothing')return [];
  if(text.startsWith('{')&&text.endsWith('}'))text=text.slice(1,-1);else if(text.includes('{')||text.includes('}'))return null;
  if(!text.trim())return [];
  const parts=splitTop(text);if(!parts)return null;const values=parts.map(part=>atom(part.trim()));return values.every(v=>v!==null)?[...new Set(values)].sort():null;
 }
 export function worksheetAnswerMatches(value,expected,config={}){
+ if(config.answer_format==='expression')return worksheetExpressionMatches(value,expected);
  if(config.answer_format==='number')return numeric(value,expected,config.unit||'');
- if(config.answer_format==='set'){const left=set(value),right=set(expected);return left!==null&&right!==null&&JSON.stringify(left)===JSON.stringify(right);}
+ if(config.answer_format==='set'){
+  const left=set(value),right=set(expected);if(left===null||right===null)return false;
+  const same=(a,b)=>a===b||a.startsWith('t:')&&b.startsWith('t:')&&worksheetExpressionMatches(a.slice(2),b.slice(2));
+  const unique=values=>values.filter((item,n)=>!values.slice(0,n).some(other=>same(item,other))),a=unique(left),b=unique(right);
+  return a.length===b.length&&a.every(item=>b.some(other=>same(item,other)));
+ }
  return null;
 }

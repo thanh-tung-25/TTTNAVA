@@ -7,8 +7,8 @@ import {worksheetAnswerMatches} from './worksheet-answer-matching.js';
 const text=z.string().trim().min(1).max(300);
 const list=z.array(text).min(1).max(20);
 const configs={
- fill:z.object({answer_format:z.enum(['text','number','set']).optional()}),word:z.object({unit:z.string().trim().max(30).default(''),answer_format:z.enum(['text','number','set']).optional()}),
- true_false_group:z.object({statements:z.array(z.string().trim().min(1).max(2000)).min(1).max(8)}),
+ fill:z.object({answer_format:z.enum(['text','number','set','expression']).optional()}),word:z.object({unit:z.string().trim().max(30).default(''),answer_format:z.enum(['text','number','set','expression']).optional()}),
+ true_false_group:z.object({statements:z.array(z.string().trim().min(1).max(2000)).min(1).max(8),scoring:z.enum(['linear','thpt-2025']).optional()}),
  choice:z.object({options:list.min(2).max(6)}),compare:z.object({}),
  blanks:z.object({labels:list}),ordering:z.object({tokens:list.min(2)}),
  matching:z.object({left:list,targets:list}),
@@ -26,11 +26,14 @@ export function validateSheet(body){
  for(const [index,item]of d.items.entries()){
   item.grading=z.enum(['active','excluded']).parse(body.items[index].grading||'active');
   item.review_note=z.string().max(2000).parse(body.items[index].review_note||'');
+  const solutions=z.array(z.string().uuid()).max(8).optional().parse(body.items[index].solutionImageIds);
+  if(solutions?.length)item.solutionImageIds=[...new Set(solutions)];
   const points=z.number().finite().positive().max(10).optional().parse(body.items[index].points);
   if(points!==undefined)item.points=points;
   if(d.exam_config?.scoring==='school-points'&&d.status==='published'&&points===undefined)throw badRequest('Nhập điểm tối đa cho từng câu hoặc ý của đề.');
   item.config=configs[item.type].parse(item.config);
   if(item.type==='true_false_group'&&d.exam_config?.scoring!=='school-points'&&item.config.statements.length!==4)throw badRequest('Câu đúng/sai của đề THPT cần đủ bốn ý.');
+  if(item.type==='true_false_group'&&item.config.scoring==='thpt-2025'&&item.config.statements.length!==4)throw badRequest('Cách chấm đúng/sai THPT cần bốn ý.');
   if(item.grading==='excluded'){if(!item.review_note)throw badRequest('Câu không tính điểm cần ghi lý do.');item.answer=null;continue;}
   if(item.answer===null&&d.status!=='published')continue;
   if(item.answer===null)throw badRequest('Bổ sung đáp án cho tất cả các câu trước khi đăng đề.');
@@ -46,6 +49,7 @@ export function validateSheet(body){
   if(item.type==='matching'&&(c.left.length!==a.values.length||new Set(c.left).size!==c.left.length||a.values.some(v=>!c.targets.includes(v))))throw badRequest('Mỗi vế trái cần một đáp án trong vế phải.');
   if(item.type==='column'&&c.operator==='-'&&c.a<c.b)throw badRequest('Phép trừ đặt tính cần số thứ nhất lớn hơn hoặc bằng số thứ hai.');
  }
+ const questionImages=new Set(d.items.map(item=>item.imageId).filter(Boolean));if(d.items.some(item=>item.solutionImageIds?.some(id=>questionImages.has(id))))throw badRequest('Ảnh hướng dẫn giải cần tách khỏi ảnh đề bài.');
  if(d.exam_config?.scoring==='school-points'&&d.status==='published'&&Math.abs(d.items.reduce((sum,item)=>sum+(item.points||0),0)-10)>0.000001)throw badRequest('Điểm các câu và ý của đề phải cộng đủ 10 điểm.');
  return d;
 }
@@ -63,9 +67,9 @@ export function gradeItem(item,value){
  else if(item.type==='compare'){expected=a.value;checks=[value===a.value];}
  else if(['blanks','ordering','matching'].includes(item.type)){expected=a.values.join(' · ');checks=a.values.map((v,n)=>normalize(value?.[n])===normalize(v));}
  else{const result=c.operator==='+'?c.a+c.b:c.a-c.b;expected=String(result);checks=[normalize(value)===expected];}
- return {correct:checks.every(Boolean),checks,expected,explanation:item.explanation};
+ return {correct:checks.every(Boolean),checks,expected,explanation:item.explanation,...(item.solutionImageIds?.length?{solutionImageIds:item.solutionImageIds}:{})};
 }
-export function publicItem({answer,explanation,review_note,...item}){
+export function publicItem({answer,explanation,review_note,solutionImageIds,...item}){
  const copy=structuredClone(item);
  if(item.grading==='excluded')copy.review_note=review_note;
  if(copy.type==='ordering')for(let n=copy.config.tokens.length-1;n>0;n--){const k=randomInt(n+1);[copy.config.tokens[n],copy.config.tokens[k]]=[copy.config.tokens[k],copy.config.tokens[n]];}

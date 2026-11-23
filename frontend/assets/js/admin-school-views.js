@@ -1,10 +1,11 @@
 import {el} from './api.js';
 import {schoolParts,schoolContentStatus,schoolAdminDestination} from './admin-school-context.js';
 import {paperPeriods,paperPeriodLabel} from './school-paper-periods.js';
+import {lessonStatusLabel} from './admin-school-lesson-settings.js';
 export const schoolButton=(text,action,primary=false)=>el('button',{type:'button',class:'btn'+(primary?'':' btn-ghost'),text,onclick:async event=>{const b=event.currentTarget;b.disabled=true;try{await action();}catch(error){document.querySelector('#content-hub-error').textContent=error.message;}finally{b.disabled=false;}}});
 export function schoolEmpty(title,message){return el('div',{class:'school-empty'},[el('h3',{text:title}),el('p',{text:message})]);}
 const tag=(text,status)=>el('span',{class:'school-content-tag '+(status||''),text});
-export function lessonCards(groups,sheets,open){
+export function lessonCards(groups,sheets,open,manage){
  const grid=el('div',{class:'school-admin-lessons'});
  for(const [index,group]of groups.entries()){
   const related=sheets.filter(s=>!s.exam_config&&group.parts.some(p=>p.id===s.lesson_id)),card=el('article',{class:'school-admin-lesson','data-group':group.id});
@@ -15,7 +16,9 @@ export function lessonCards(groups,sheets,open){
    const state=id==='quiz'?(count>=20&&group.hasGuide?'Sẵn sàng':(count>=20?'Đủ câu':'Cần '+(20-count)+' câu nữa')+(!group.hasGuide?' · chưa đăng kiến thức':'')):id==='worksheets'?(count?related.filter(s=>s.status==='published').length+' bộ đã đăng':'Thêm bộ bài tập'):(count?count+' mục · '+schoolContentStatus(group.guideStatus):'Thêm nội dung');
    const b=schoolButton('',()=>open(group,id));b.setAttribute('aria-label',label+' · '+group.title);b.replaceChildren(el('span',{class:'school-part-icon',text:icon,'aria-hidden':'true'}),el('strong',{text:label}),el('small',{text:state}));parts.append(b);
   }
-  card.append(parts);grid.append(card);
+  if(group.management&&group.management.status!=='published')card.append(tag(lessonStatusLabel(group.management.status),group.management.status));
+  if(group.parentManagement?.status&&group.parentManagement.status!=='published')card.append(el('p',{class:'school-context-note',text:'Trạng thái chương: '+lessonStatusLabel(group.parentManagement.status)}));
+  card.append(parts);if(group.management&&manage)card.append(manage(group.management));grid.append(card);
  }
  return groups.length?grid:schoolEmpty('Chưa có bài học phù hợp','Chọn chương hoặc thêm bài học để bắt đầu soạn nội dung.');
 }

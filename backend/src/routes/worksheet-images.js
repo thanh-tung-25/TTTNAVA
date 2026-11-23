@@ -7,6 +7,7 @@ import {requireAdmin} from '../middlewares/auth.js';
 import {requireCourse} from '../services/course-service.js';
 import {AppError,asyncHandler,notFound} from '../utils/errors.js';
 import {worksheetSolutionImagesAvailable,requireSolutionImageSubmission} from '../services/worksheet-solution-access.js';
+import {assertCurriculumLessonVisible} from '../services/school-curriculum-state.js';
 const router=Router(),upload=multer({storage:multer.memoryStorage(),limits:{fileSize:2*1024*1024,files:1,fields:0}}).single('image');
 router.post('/admin/:id/images',requireAdmin,(req,res,next)=>upload(req,res,error=>{
  if(error)return next(new AppError(400,'IMAGE_UPLOAD','Ảnh tối đa 2 MB.'));
@@ -27,10 +28,18 @@ router.post('/admin/:id/images',requireAdmin,(req,res,next)=>upload(req,res,erro
 }));
 router.get('/images/:id',asyncHandler(async(req,res)=>{
  const marker=await worksheetSolutionImagesAvailable()?'EXISTS(SELECT 1 FROM worksheet_solution_images s WHERE s.image_id=i.id)':'0';
- const [image]=await query('SELECT i.*,w.grade,w.status,'+marker+' AS is_solution FROM worksheet_images i JOIN worksheets w ON w.id=i.worksheet_id WHERE i.id=?',[req.params.id]);if(!image)throw notFound();
+ const [image]=await query('SELECT i.*,w.grade,w.status,w.lesson_id,'+marker+' AS is_solution FROM worksheet_images i JOIN worksheets w ON w.id=i.worksheet_id WHERE i.id=?',[req.params.id]);if(!image)throw notFound();
  if(req.user.role!=='admin'){
   await requireCourse(req.user.id,'grade-'+image.grade);
   if(image.status!=='published'&&!(await query('SELECT id FROM worksheet_attempts WHERE worksheet_id=? AND student_id=? LIMIT 1',[image.worksheet_id,req.user.id])).length)throw notFound();
+  if(image.lesson_id){
+   const [sheet]=await query('SELECT * FROM worksheets WHERE id=?',[image.worksheet_id]);
+   if(!sheet.exam_config)try{await assertCurriculumLessonVisible(image.lesson_id);}catch(error){
+    if(error.status!==404)throw error;
+    const attempts=await query('SELECT snapshot FROM worksheet_attempts WHERE worksheet_id=? AND student_id=?',[image.worksheet_id,req.user.id]);
+    if(!attempts.some(a=>(typeof a.snapshot==='string'?JSON.parse(a.snapshot):a.snapshot).items.some(item=>item.imageId===image.id||item.solutionImageIds?.includes(image.id))))throw notFound();
+   }
+  }
   await requireSolutionImageSubmission(req.user,image);
  }
  await sendArchive(res,'worksheet_images/'+image.id,image.image,image.mime_type);

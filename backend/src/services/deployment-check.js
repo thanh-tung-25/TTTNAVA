@@ -13,6 +13,7 @@ requiredTables.push('course_free_registrations');
 requiredTables.push('school_lesson_materials');
 requiredTables.push('school_study_guides','school_quiz_links');
 requiredTables.push('password_reset_requests','password_reset_sessions');
+requiredTables.push('school_curriculum_state');
 export async function deploymentCheck(run=query){
  const expected=[...requiredTables,...(callConfig().enabled?['chat_call_control','chat_call_preferences','chat_calls','chat_call_reports','chat_push_subscriptions']:[])];
  const tables=await run(dialectSql('SELECT table_name FROM information_schema.tables WHERE table_schema=DATABASE()','SELECT table_name FROM information_schema.tables WHERE table_schema=current_schema()'));

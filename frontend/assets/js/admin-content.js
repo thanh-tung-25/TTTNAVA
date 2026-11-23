@@ -11,6 +11,7 @@ import {schoolModes,schoolParts,schoolAdminDestination,schoolContentStatus,scope
 import {schoolButton as button,schoolEmpty,lessonCards,partTabs,paperList,checkCatalog} from './admin-school-views.js';
 import {previewSchoolPaper,previewSchoolGroup} from './admin-school-preview.js';
 import {uploadSchoolPaperWord} from './admin-school-paper-word.js';
+import {schoolLessonSettings,deletedSchoolLessons} from './admin-school-lesson-settings.js';
 const root=document.querySelector('#content-list'),notice=document.querySelector('#content-hub-error'),editor=document.querySelector('#content-worksheets'),filters=document.querySelector('#content-filters'),heading=document.querySelector('#school-workspace-heading'),tools=document.querySelector('#school-workspace-tools'),pagination=document.querySelector('.content-pagination');
 const params=new URLSearchParams(location.search);store.workspace={mode:schoolModes.some(([id])=>id===params.get('mode'))?params.get('mode'):params.get('view')==='papers'?'papers':'lessons',part:schoolParts.some(([id])=>id===params.get('part'))?params.get('part'):'knowledge',period:params.get('period')||'all',checkKind:'chapter'};
 let sequence=0,page=1,pages=1,sheets=[],catalog={groups:[]},cache=new Map(),advanced=false;
@@ -44,7 +45,7 @@ async function load(){
  root.replaceChildren(el('p',{role:'status',text:'Đang mở nội dung của lớp và môn đã chọn…'}));destination(scope);
  try{
   const [data,documents]=await Promise.all([getCatalog(scope),api('/api/v1/worksheets/admin').then(p=>p.data)]);if(token!==sequence)return;catalog=data;sheets=documents;
-  const groups=catalog.groups.filter(g=>g.subjectId===scope.subjectId&&(!scope.semester||g.semester===scope.semester)&&(!scope.chapterId||g.chapterId===scope.chapterId)),group=groups.find(g=>g.id===scope.groupId||g.parts.some(p=>p.id===scope.lessonId));
+  const groups=catalog.groups.filter(g=>g.subjectId===scope.subjectId&&(!scope.semester||g.semester===scope.semester)&&(!scope.chapterId||g.chapterId===scope.chapterId)),group=groups.find(g=>(g.id===scope.groupId||g.parts.some(p=>p.id===scope.lessonId))&&g.management?.status!=='deleted'&&g.parentManagement?.status!=='deleted');
   if(advanced){heading.append(el('h2',{text:scope.unassigned?'Nội dung chưa xếp bài':'Toàn bộ nội dung môn học'}));tools.append(button('Về bài học',()=>{advanced=false;selectContentLesson({...scope,unassigned:undefined,lessonId:undefined,groupId:undefined});}));return listBank(scope,null,undefined,token);}
   if(workspace.mode==='papers'){
    heading.append(el('h2',{text:'Soạn và quản lý đề thi'}));const query=el('input',{class:'input',type:'search',placeholder:'Tìm tên đề, trường, mã đề…','aria-label':'Tìm đề thi'});tools.append(query);
@@ -57,9 +58,15 @@ async function load(){
   heading.append(el('h2',{text:group?group.title:'Bài học của môn'}));
   if(!group){
    const search=el('input',{class:'input',type:'search',placeholder:'Tìm tên bài học / Unit…','aria-label':'Tìm bài học'});tools.append(search,button('+ Thêm chương / chủ đề',()=>addCurriculum('chapters')),button('+ Thêm bài học',()=>addCurriculum('lessons')));tools.lastChild.disabled=!scope.chapterId;
-   const draw=()=>root.replaceChildren(lessonCards(groups.filter(g=>(g.title+' '+g.chapterName).toLocaleLowerCase('vi').includes(search.value.toLocaleLowerCase('vi'))),sheets,(g,part)=>{if(!guard())return;workspace.part=part;selectContentLesson(scopeForSchoolGroup(scope,g));}));search.oninput=draw;draw();return;
+   const chapters=store.tree.grades.find(g=>g.grade===scope.grade)?.semesters.filter(s=>!scope.semester||s.id===scope.semester).flatMap(s=>s.subjects.filter(s=>s.id===scope.subjectId).flatMap(s=>s.chapters.filter(c=>!scope.chapterId||c.id===scope.chapterId)))||[];
+   if(scope.chapterId&&chapters[0]?.management)tools.append(managementView(chapters[0].management,'chương / chủ đề'));
+   const draw=()=>{
+    const matching=groups.filter(g=>(g.title+' '+g.chapterName).toLocaleLowerCase('vi').includes(search.value.toLocaleLowerCase('vi'))),visible=matching.filter(g=>g.management?.status!=='deleted'&&g.parentManagement?.status!=='deleted');
+    root.replaceChildren(lessonCards(visible,sheets,(g,part)=>{if(!guard())return;workspace.part=part;selectContentLesson(scopeForSchoolGroup(scope,g));},value=>managementView(value)));
+    const deleted=deletedSchoolLessons([...matching.filter(g=>g.parentManagement?.status!=='deleted').map(g=>g.management),...chapters.map(c=>c.management)],{beforeChange:guard,onChanged:afterManagement});if(deleted)root.append(deleted);
+   };search.oninput=draw;draw();return;
   }
-  destination(scope,group);tools.append(button('Danh sách bài học',()=>selectContentLesson({grade:scope.grade,subjectId:scope.subjectId,semester:scope.semester,chapterId:scope.chapterId})),partTabs(workspace.part,part=>{if(!guard())return;workspace.part=part;persist();load();}));
+  destination(scope,group);tools.append(button('Danh sách bài học',()=>selectContentLesson({grade:scope.grade,subjectId:scope.subjectId,semester:scope.semester,chapterId:scope.chapterId})),partTabs(workspace.part,part=>{if(!guard())return;workspace.part=part;persist();load();}));if(group.management)tools.append(managementView(group.management));
   if(['knowledge','examples'].includes(workspace.part)){
    const count=workspace.part==='knowledge'?group.knowledgeCount:group.exampleCount;root.replaceChildren(el('section',{class:'school-section-intro'},[el('div',{},[el('h3',{text:schoolParts.find(([id])=>id===workspace.part)[1]}),el('p',{text:(count||0)+' mục · '+schoolContentStatus(group.guideStatus)})]),el('div',{class:'school-author-actions'},[button(count?'Mở chỉnh sửa':'+ Thêm nội dung',()=>editSchoolGuide(scope.grade,group.id,{section:workspace.part,yearId:scope.yearId}),true),button('Xem như học sinh',()=>previewSchoolGroup(scope,group,workspace.part))])]));return;
   }
@@ -70,6 +77,12 @@ async function load(){
  }catch(error){if(token===sequence){notice.textContent=error.message;root.replaceChildren(schoolEmpty('Chưa tải được nội dung','Bạn có thể thử mở lại mục vừa chọn.'));}}
 }
 async function refresh(){cache.clear();await loadCurriculum();await load();}
+function managementView(value,label){return schoolLessonSettings(value,{label,beforeChange:guard,onChanged:afterManagement});}
+async function afterManagement(value){
+ cache.clear();await loadCurriculum();const scope=selectedScope();
+ if(value.status==='deleted'&&[scope.groupId,scope.lessonId,scope.chapterId].includes(value.id))selectContentLesson({grade:scope.grade,subjectId:scope.subjectId,semester:scope.semester,...(value.kind==='chapter'?{}:{chapterId:scope.chapterId})});
+ else await load();
+}
 filters.onsubmit=event=>{event.preventDefault();page=1;load();};filters.querySelector('select').onchange=()=>{page=1;load();};
 document.querySelector('#content-prev').onclick=()=>{if(page>1){page--;load();}};document.querySelector('#content-next').onclick=()=>{if(page<pages){page++;load();}};
 document.querySelector('#content-word-history').onclick=openWordHistory;

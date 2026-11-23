@@ -3,6 +3,7 @@ import { AppError } from '../utils/errors.js';
 import { schoolGradeCondition } from '../middlewares/school-admin.js';
 import { schoolSubjectName } from '../utils/school-subjects.js';
 import {gradesForProgram} from '../utils/school-programs.js';
+import {curriculumSettings} from './school-curriculum-state.js';
 
 function number(value) {
   return Number(value ?? 0);
@@ -34,7 +35,7 @@ export async function getCurriculumTree(yearId = null, program = null) {
     `SELECT c.id AS chapter_id, c.name AS chapter_name, c.grade, c.semester,c.is_legacy,c.book_label,
             c.subject_id, c.sort_order AS chapter_sort,
             s.name AS subject_name, s.color AS subject_color, s.sort_order AS subject_sort,
-            l.id AS lesson_id, l.name AS lesson_name, l.topic_id, l.sort_order AS lesson_sort,
+            l.id AS lesson_id, l.name AS lesson_name, l.topic_id, l.sort_order AS lesson_sort,cs.status chapter_status,ls.status lesson_status,
             MAX(CASE WHEN m.status='published' THEN 1 ELSE 0 END) AS material_ready,
             MAX(CASE WHEN g.status='published' THEN 1 ELSE 0 END) AS guide_ready,
             COUNT(q.id) AS question_count,
@@ -42,12 +43,14 @@ export async function getCurriculumTree(yearId = null, program = null) {
      FROM curriculum_chapters c
      JOIN subjects s ON s.id = c.subject_id
      LEFT JOIN curriculum_lessons l ON l.chapter_id = c.id
+     LEFT JOIN school_curriculum_state cs ON cs.kind='chapter' AND cs.target_id=c.id
+     LEFT JOIN school_curriculum_state ls ON ls.kind='lesson' AND ls.target_id=l.id
      LEFT JOIN school_lesson_materials m ON m.lesson_id=l.id
      LEFT JOIN school_study_guides g ON g.group_id=CASE WHEN c.grade>=6 AND c.subject_id IN ('tieng-anh','tieng-viet') THEN c.id ELSE l.id END
      LEFT JOIN questions q ON q.topic_id = l.topic_id
      WHERE c.school_year_id = ? AND ${gradeCondition}
      GROUP BY c.id, c.name, c.grade, c.semester,c.is_legacy,c.book_label, c.subject_id, c.sort_order,
-              s.name, s.color, s.sort_order, l.id, l.name, l.topic_id, l.sort_order
+              s.name, s.color, s.sort_order, l.id, l.name, l.topic_id, l.sort_order,cs.status,ls.status
      ORDER BY c.grade ASC, c.semester ASC, s.sort_order ASC, c.sort_order ASC, l.sort_order ASC`,
     [selectedId],
   );
@@ -85,6 +88,7 @@ export async function getCurriculumTree(yearId = null, program = null) {
       chapter = {
         id: row.chapter_id,
         name: row.chapter_name,
+        management:curriculumSettings('chapter',row.chapter_id,row.chapter_name,row.chapter_sort,row.chapter_status),
         isLegacy: Boolean(row.is_legacy),
         bookLabel: row.book_label,
         questionCount: 0,
@@ -97,6 +101,7 @@ export async function getCurriculumTree(yearId = null, program = null) {
       chapter.lessons.push({
         id: row.lesson_id,
         name: row.lesson_name,
+        management:curriculumSettings('lesson',row.lesson_id,row.lesson_name,row.lesson_sort,row.lesson_status),
         hasMaterial:Boolean(Number(row.material_ready)),
         hasStudyGuide:Boolean(Number(row.guide_ready)),
         studyGroupId:Number(row.grade)>=6&&['tieng-anh','tieng-viet'].includes(row.subject_id)?row.chapter_id:row.lesson_id,

@@ -11,6 +11,7 @@ import {wrongNotebook} from './study-hub.js';
 import {familyReport} from './learning-support.js';
 import {chineseQuestionPrompt} from '../../../frontend/assets/js/chinese-question-prompt.js';
 import {awardLearningReward} from './learning-reward.js';
+import {topicVisibleSql} from './school-curriculum-state.js';
 
 export const json=value=>parseJson(value)||{};
 export const txRun=c=>async(sql,p=[])=>(await c.query(sql,p))[0];
@@ -44,7 +45,7 @@ export async function learningCatalog(user,courseId){
  const course=await requireCourse(user,courseId);
  let rows;
  if(course.kind==='chinese')rows=await query("SELECT s.id,s.title AS name,l.title AS section,COUNT(i.id) total FROM chinese_sets s JOIN chinese_lessons l ON l.id=s.lesson_id LEFT JOIN chinese_items i ON i.set_id=s.id AND i.active=1 AND i.kind IN ('question','vocabulary') WHERE l.level_id=? AND s.status='published' AND l.status='published' GROUP BY s.id,s.title,l.title,l.position,s.position ORDER BY l.position,s.position,s.id",[course.level]);
- else rows=await query("SELECT t.id,t.name,t.subject_id,COUNT(q.id) total FROM topics t LEFT JOIN questions q ON q.topic_id=t.id AND q.status='published' WHERE t.grade=? GROUP BY t.id,t.name,t.subject_id,t.sort_order ORDER BY t.subject_id,t.sort_order,t.id",[course.level]);
+ else rows=await query(`SELECT t.id,t.name,t.subject_id,COUNT(q.id) total FROM topics t LEFT JOIN questions q ON q.topic_id=t.id AND q.status='published' WHERE t.grade=? AND ${topicVisibleSql()} GROUP BY t.id,t.name,t.subject_id,t.sort_order ORDER BY t.subject_id,t.sort_order,t.id`,[course.level]);
  const [focus]=await query('SELECT topic_id,set_id FROM student_focus WHERE profile_id=? AND course_id=?',[user,courseId]);
  return {course,items:rows.map(r=>({...r,total:Number(r.total)})),focus:focus||{}};
 }
@@ -79,7 +80,7 @@ export async function sourceItems(user,courseId,{itemId=null,review=false,count=
    }
   }
  }else{
-  const rows=await query("SELECT q.id,t.id AS topic_id,t.name,t.subject_id FROM questions q JOIN topics t ON t.id=q.topic_id WHERE q.status='published' AND t.grade=?"+(itemId?' AND t.id=?':'')+(subject?' AND t.subject_id=?':'')+' ORDER BY '+dialectSql('RAND()','random()')+' LIMIT 100',[course.level,...(itemId?[itemId]:[]),...(subject?[subject]:[])]);
+  const rows=await query(`SELECT q.id,t.id AS topic_id,t.name,t.subject_id FROM questions q JOIN topics t ON t.id=q.topic_id WHERE q.status='published' AND t.grade=? AND ${topicVisibleSql()}`+(itemId?' AND t.id=?':'')+(subject?' AND t.subject_id=?':'')+' ORDER BY '+dialectSql('RAND()','random()')+' LIMIT 100',[course.level,...(itemId?[itemId]:[]),...(subject?[subject]:[])]);
   const chosen=seededShuffle(rows,randomUUID()).slice(0,Math.max(80,count*6)),questions=await loadQuestionsByIds(chosen.map(r=>r.id)),byId=new Map(chosen.map(r=>[r.id,r]));
   items=questions.map(q=>({id:q.id,type:q.type,prompt:q.prompt,options:q.options,answer:q.answer,explanation:q.explanation||'',skill:byId.get(q.id).topic_id,label:byId.get(q.id).name,subject:byId.get(q.id).subject_id}));
  }
@@ -88,7 +89,7 @@ export async function sourceItems(user,courseId,{itemId=null,review=false,count=
  if(review&&wrongIds.size){
   if(course.kind!=='chinese'){
    const preferred=await loadQuestionsByIds([...wrongIds].filter(id=>!id.includes(':')).slice(0,100));
-   const allowedTopics=await query('SELECT id,name,subject_id FROM topics WHERE grade=?',[course.level]);const topics=new Map(allowedTopics.map(t=>[t.id,t]));
+   const allowedTopics=await query(`SELECT t.id,t.name,t.subject_id FROM topics t WHERE t.grade=? AND ${topicVisibleSql()}`,[course.level]);const topics=new Map(allowedTopics.map(t=>[t.id,t]));
    for(const q of preferred){const topic=topics.get(q.topic_id);if(q.status!=='published'||!topic||itemId&&q.topic_id!==itemId)continue;items.unshift({id:q.id,type:q.type,prompt:q.prompt,options:q.options,answer:q.answer,explanation:q.explanation||'',skill:q.topic_id,label:topic.name,subject:topic.subject_id});}
   }
   items.sort((a,b)=>Number(wrongIds.has(b.id))-Number(wrongIds.has(a.id)));

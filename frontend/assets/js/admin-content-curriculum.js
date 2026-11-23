@@ -9,7 +9,7 @@ export function refreshCurriculumView(){render();}
 function persist(){const url=new URL(location.href);for(const key of ['grade','semester','subjectId','chapterId','lessonId','groupId','yearId','unassigned']){if(ids[key])url.searchParams.set(key,ids[key]);else url.searchParams.delete(key);}history.replaceState(null,'',url);}
 function choose(next){if(!beforeSelect()){render();return false;}ids={...next};persist();render();document.dispatchEvent(new Event('curriculum:selected'));onSelect();return true;}
 function picker(label,items,value,change,placeholder='Tất cả'){
- const input=el('select',{class:'select','aria-label':label},[...(placeholder?[el('option',{value:'',text:placeholder})]:[]),...items.map(i=>el('option',{value:i.id,text:i.name+(i.isLegacy?' · Nội dung cũ':'')}))]);input.value=value||'';input.onchange=()=>change(input.value);return el('label',{class:'field'},[el('span',{text:label}),input]);
+ const input=el('select',{class:'select','aria-label':label},[...(placeholder?[el('option',{value:'',text:placeholder})]:[]),...items.map(i=>el('option',{value:i.id,text:i.name+(i.isLegacy?' · Nội dung cũ':'')+(i.management?.status==='deleted'?' · Đã xóa':'')}))]);input.value=value||'';input.onchange=()=>change(input.value);return el('label',{class:'field'},[el('span',{text:label}),input]);
 }
 function render(){
  if(!tree)return;const grade=tree.grades.find(g=>g.grade===Number(ids.grade))||tree.grades[0];if(!grade)return;ids.grade=grade.grade;ids.yearId=tree.year.id;

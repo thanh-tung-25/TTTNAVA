@@ -21,6 +21,14 @@ Mở một bài chưa có kiến thức chỉ hiển thị trình soạn trống
 
 Chọn một chương rồi bấm **Thêm bài học** để tạo bài trong chương đó. **Thêm chương / chủ đề** cho phép chọn học kì trong lớp và môn đang mở.
 
+### Sửa, xóa và khôi phục
+
+Dưới mỗi thẻ có **Sửa tên, thứ tự & trạng thái bài học**: nhập tên, thứ tự 0–255, chọn Cho học sinh xem/Nháp/Ẩn rồi bấm **Lưu bài học**. Với thẻ Unit gộp Ngữ văn/Tiếng Anh, thay đổi áp dụng cho cả Unit. Muốn quản lý chương riêng, chọn chương trong bộ lọc rồi mở phần quản lý chương.
+
+**Xóa bài học** đưa bài khỏi danh mục vào **Bài đã xóa** bên dưới, có xác nhận và có khôi phục. Không xóa câu hỏi, bộ bài hay lượt làm. Khôi phục mặc định về nháp. Nháp/Ẩn/Đã xóa ngăn mở nội dung và tạo lượt mới; ID/snapshot các lượt đã bắt đầu vẫn đọc/nộp được. Đề thi cố định độc lập giữ nguyên.
+
+Lưu/xóa kiểm tra phiên bản để tránh ghi đè từ tab cũ; lỗi được báo cạnh form và giữ phần đang nhập. Cho học sinh xem bài không tự xuất bản kiến thức hoặc câu hỏi còn nháp.
+
 ## Bài kiểm tra
 
 Đây là bài tạo từ ngân hàng câu hỏi theo **chủ đề, học kì hoặc cả năm**. Màn hình hiển thị số câu đã đăng và số câu còn thiếu để đủ phạm vi:
@@ -62,7 +70,7 @@ Khung **HỌC SINH SẼ THẤY Ở** hiển thị đường dẫn lớp–môn�
 
 ## Dữ liệu và kiểm tra phát hành
 
-Bản cập nhật này không cần migration, seed hoặc nhập lại đề. Các bản ghi cũ được đọc tại chỗ. Không chuyển đổi hồ sơ, email, quyền học, bài làm, điểm hay kim cương. Trình sửa kiến thức giữ các trường nội bộ, câu hỏi riêng và mã nguồn nội dung đã có; chỉ thay các mục học và trạng thái khi admin bấm lưu.
+Phần quản trị/Word trước đây không cần migration, seed hoặc nhập lại đề. Chức năng sửa/xóa bổ sung migration `050_school_curriculum_state.sql`, tạo một bảng trạng thái trống và đối chiếu dữ liệu cũ; không seed/nhập lại nội dung. Không chuyển đổi hồ sơ, email, quyền học, bài làm, điểm hay kim cương. Khi admin chủ động sửa tên/thứ tự thì chỉ đổi mục chương trình được chọn; xóa chỉ ghi trạng thái. Trình sửa kiến thức giữ các trường nội bộ và câu hỏi riêng đã có.
 
 Kiểm tra ngày 23/11/2026:
 
@@ -74,3 +82,5 @@ Kiểm tra ngày 23/11/2026:
 Trạng thái bản phát hành thực tế đối chiếu bằng `/api/v1/health` và `/assets/build-info.json`. Hồ sơ phát hành cục bộ lưu tại `backend/backups/admin-school-workspace/`; không đưa khóa kết nối hay dữ liệu người dùng vào Git.
 
 Lượt bổ sung tải Word trực tiếp đã mở rộng kiểm tra thành **24 Node + 14 trình duyệt**, gồm mẫu trắc nghiệm thật, thang điểm 10, sửa bản xem trước, hủy không tạo đề, đáp án thiếu và thử lại khi lưu lỗi. Các kiểm tra này dùng dữ liệu tách biệt/API giả lập, không ghi dữ liệu học sinh thật. Hồ sơ riêng tại `backend/backups/exam-word-upload/`.
+
+Lượt sửa/xóa bài mở rộng thành **29 Node + 18 trình duyệt**, thêm kiểm tra phân quyền, đổi tên/thứ tự, ẩn/xóa/khôi phục, giữ nội dung cũ, từ chối phiên bản cũ và rollback khi lưu lỗi. SQL lọc trạng thái được kiểm tra trong SQLite bộ nhớ, không sửa dữ liệu học sinh. Hồ sơ schema/phát hành tại `backend/backups/school-lesson-management/`.

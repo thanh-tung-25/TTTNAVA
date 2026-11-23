@@ -6,6 +6,7 @@ import {familyReport} from './learning-support.js';
 import {z} from 'zod';
 import {parse} from '../validators/chinese.js';
 import {chineseQuestionPrompt} from '../../../frontend/assets/js/chinese-question-prompt.js';
+import {topicVisibleSql} from './school-curriculum-state.js';
 
 export async function searchLearning(user,courseId,value){
  const term=parse(z.string().trim().min(1).max(80),value).normalize('NFC').toLocaleLowerCase('vi');
@@ -17,9 +18,9 @@ export async function searchLearning(user,courseId,value){
   const normalize=s=>String(s||'').normalize('NFD').replace(/\p{M}/gu,'').toLocaleLowerCase('vi');
   for(const row of rows){const d=json(row.data);if([d.hanzi,d.pinyin,d.meaning].some(v=>normalize(v).includes(normalize(term))))results.push({title:d.hanzi+' · '+(d.pinyin||'')+' · '+d.meaning,detail:row.title,href:'/pages/student/chinese/?'+new URLSearchParams({set:row.set_id,mode:'words',word:row.id})});if(results.length>=100)break;}
  }else{
-  const rows=await query('SELECT id,name,subject_id FROM topics WHERE grade=? ORDER BY sort_order,id',[course.level]);
+  const rows=await query(`SELECT t.id,t.name,t.subject_id FROM topics t WHERE t.grade=? AND ${topicVisibleSql()} ORDER BY t.sort_order,t.id`,[course.level]);
   for(const row of rows)if(row.name.toLocaleLowerCase('vi').includes(term))results.push({title:row.name,detail:row.subject_id,href:'/pages/student/practice/?'+new URLSearchParams({topic:row.id,subject:row.subject_id})});
-  const questions=await query("SELECT q.prompt,t.id,t.name,t.subject_id FROM questions q JOIN topics t ON t.id=q.topic_id WHERE t.grade=? AND q.status='published' ORDER BY t.sort_order,q.id LIMIT 10000",[course.level]);
+  const questions=await query(`SELECT q.prompt,t.id,t.name,t.subject_id FROM questions q JOIN topics t ON t.id=q.topic_id WHERE t.grade=? AND q.status='published' AND ${topicVisibleSql()} ORDER BY t.sort_order,q.id LIMIT 10000`,[course.level]);
   for(const q of questions)if(q.prompt.toLocaleLowerCase('vi').includes(term))results.push({title:q.prompt,detail:q.name,href:'/pages/student/practice/?'+new URLSearchParams({topic:q.id,subject:q.subject_id})});
  }
  return results.slice(0,100);

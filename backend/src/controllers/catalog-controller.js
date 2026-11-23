@@ -9,9 +9,9 @@ export const subjectsHandler = asyncHandler(async (request, response) => {
 export const topicsHandler = asyncHandler(async (request, response) => {
   const grade = Number(request.query.grade);
   const subjectId = String(request.query.subjectId ?? '');
-  response.json({ data: await listTopics(subjectId, grade) });
+  response.json({ data: await listTopics(subjectId, grade,{admin:request.user.role==='admin'}) });
 });
 
 export const topicDetailHandler = asyncHandler(async (request, response) => {
-  response.json({ data: await getTopicDetail(request.params.id) });
+  response.json({ data: await getTopicDetail(request.params.id,{admin:request.user.role==='admin'}) });
 });

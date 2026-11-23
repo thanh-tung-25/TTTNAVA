@@ -10,7 +10,7 @@ Báo cáo này mô tả kết quả đã triển khai, cách dùng, số liệu 
 - **Mã nguồn:** GitHub `thanh-tung-25/TTTNAVA`, nhánh `main`.
 - **Quản trị nội dung:** `/pages/admin/questions/`.
 - **Đối chiếu bản đang chạy:** trường `release` trong `/api/v1/health` và `/assets/build-info.json` phải giống nhau.
-- **Cập nhật trong bản này:** tải đề Word ngay tại Đề thi, tự đọc sau khi chọn tệp, sửa bản xem trước rồi lưu thành đề nháp; viết lại README thành báo cáo.
+- **Cập nhật gần nhất:** sửa tên, thứ tự, trạng thái và xóa/khôi phục bài ngay trên thẻ bài; đã có tải đề Word trực tiếp và báo cáo README chi tiết.
 
 ## 1. Mục tiêu và phạm vi sản phẩm
 
@@ -112,6 +112,14 @@ Khung **HỌC SINH SẼ THẤY Ở** hiển thị lớp, môn và vị trí đí
 Chuyển phần khi bộ bài đang sửa chưa lưu có bước xác nhận. Kiến thức có mã phiên bản để từ chối ghi đè từ bản soạn cũ nếu nơi khác đã sửa bài. **Quản lý nâng cao** chứa năm học, lịch sử nhập Word, bài chờ chấm và nội dung chưa xếp bài.
 
 Hướng dẫn thao tác: [Quản trị cấp 1–2–3](docs/admin-school-workspace.md).
+
+### 4.3. Sửa, xóa và khôi phục bài học
+
+Dưới mỗi thẻ bài có **Sửa tên, thứ tự & trạng thái bài học** giống phần quản trị Tiếng Trung. Giáo viên đổi tên, thứ tự từ 0–255, chọn Cho học sinh xem/Nháp/Ẩn rồi bấm **Lưu bài học**. Thứ tự áp dụng trong phạm vi chương hoặc danh sách Unit; không đổi ID bài hay nội dung bài làm.
+
+**Xóa bài học** có xác nhận và đưa bài vào **Bài đã xóa** phía dưới danh sách. Đây là xóa khỏi danh mục học, có khôi phục; nội dung, câu hỏi, bộ bài và lịch sử được giữ. Khôi phục mặc định đưa về bản nháp, sau đó giáo viên chọn trạng thái phù hợp. Với Ngữ văn/Tiếng Anh đang gộp theo Unit, thao tác trên thẻ áp dụng cho toàn Unit và các phần bên trong. Khi chọn chương trong bộ lọc cũng có công cụ quản lý chương.
+
+Bài nháp, ẩn hoặc đã xóa bị loại khỏi danh mục/nguồn cho lượt học mới, kể cả mở trực tiếp. Lượt đã bắt đầu vẫn được đọc và nộp qua ID/snapshot cũ; đề thi cố định độc lập không bị xóa theo bài. Mỗi lần lưu/xóa có kiểm tra phiên bản, báo kết quả và từ chối bản sửa cũ ghi đè thay đổi mới.
 
 ## 5. Phân biệt Quiz, Bài kiểm tra và Đề thi
 
@@ -280,7 +288,7 @@ Mã HTML học sinh/admin được phục vụ qua Express có kiểm tra đăng
 - Lượt làm giữ snapshot. Sửa bài mới không được viết lại kết quả đã nộp.
 - Không dùng tài khoản thật của học sinh để tạo điểm/lịch sử thử.
 - Các đợt nhập hoặc chuyển đổi dữ liệu phải xác định phạm vi, sao lưu/đối chiếu; không seed đè toàn bộ production.
-- Bản quản trị và bản tải Word này không cần migration, không sửa hồ sơ, quyền học, điểm hay kim cương.
+- Bản tải Word không cần migration. Chức năng sửa/xóa bài bổ sung migration `050_school_curriculum_state.sql`, chỉ tạo bảng trạng thái trống; công cụ phát hành đối chiếu toàn bộ bản ghi cũ trước/sau. Không sửa hồ sơ, quyền học, điểm hay kim cương khi triển khai.
 
 Các biện pháp trên mô tả cơ chế đã có trong ứng dụng, không thay cho kết quả kiểm toán bảo mật độc lập.
 
@@ -288,16 +296,17 @@ Các biện pháp trên mô tả cơ chế đã có trong ứng dụng, không t
 
 | Nhóm | Kết quả và phạm vi |
 | --- | --- |
-| Node | 24 kiểm tra: lưu kiến thức, phiên bản đồng thời, nhập Word, bộ mẫu thật, điểm 10, đáp án thiếu và các cách chấm đề. |
-| Trình duyệt | 14 kiểm tra với API giả lập: ba cấp học, phân quyền, Unit, thêm câu, nhập Word trong đề và từ danh sách, sửa xem trước, lưu lỗi/thử lại, hủy không tạo đề và xuất bản. |
+| Node | 29 kiểm tra: các luồng nội dung/Word/chấm đề và sửa/xóa bài, phân quyền, phiên bản đồng thời, rollback, khôi phục; SQL trạng thái được chạy trên database SQLite trong bộ nhớ. |
+| Trình duyệt | 18 kiểm tra với API giả lập: ba cấp học, phân quyền, Unit, nhập Word, lưu lỗi/thử lại, sửa tên/thứ tự/trạng thái, hủy xóa, xóa và khôi phục bài. |
 | Điện thoại | Kiểm tra bố cục ở 390 px, gồm ô tải Word và cửa sổ xem trước. |
 | Dữ liệu thật của bản quản trị trước | Chỉ truy vấn READ ONLY danh mục lớp 1/6/12 và phạm vi Toán 12; không tạo lượt làm hoặc ghi dữ liệu thử. |
+| Schema sửa/xóa bài | Chỉ thêm bảng trạng thái rỗng; đối chiếu bảo toàn bản ghi cũ trong 92 bảng online và 95 bảng local. Truy vấn READ ONLY xác nhận danh mục lớp 1/6/12 và mã phiên bản cài đặt khớp giữa cây chương trình với thẻ bài. |
 | Build/phát hành | Dựng tài nguyên, kiểm tra đóng gói và đối chiếu release API/giao diện theo quy trình triển khai. |
 
 Lệnh chạy lại các kiểm tra không dùng database học sinh:
 
 ```powershell
-node --test backend/tests/school-admin-authoring.node-test.mjs backend/tests/school-exam-word.node-test.mjs backend/tests/worksheet-exams.node-test.mjs backend/tests/worksheet-school-exams.node-test.mjs backend/tests/worksheet-expression-solutions.node-test.mjs
+node --test backend/tests/school-curriculum-management.node-test.mjs backend/tests/school-admin-authoring.node-test.mjs backend/tests/school-exam-word.node-test.mjs backend/tests/worksheet-exams.node-test.mjs backend/tests/worksheet-school-exams.node-test.mjs backend/tests/worksheet-expression-solutions.node-test.mjs
 npx playwright test --config playwright.school-admin.config.js
 npm run build:vercel
 node backend/scripts/check-deployment.mjs --origin https://tttnava-backend.vercel.app
@@ -394,3 +403,5 @@ Các tài liệu bắt đầu nhanh:
 Mỗi đợt cần ghi rõ chức năng mới, phạm vi dữ liệu, kết quả kiểm tra, bản phát hành và phần còn chờ. Không đánh dấu hoàn tất chỉ vì có giao diện, script hoặc bản sao lưu trước thao tác. Số liệu nhập đề phải gắn với báo cáo của đợt; trạng thái mail, AI và thanh toán phải phân biệt giữa code đã có, cấu hình đã nhập và vận hành thực tế.
 
 Hồ sơ bản quản trị đã phát hành ở `backend/backups/admin-school-workspace/release.json`; hồ sơ bản tải Word ở `backend/backups/exam-word-upload/release.json` trên máy làm việc. Kiểm tra online bằng hai endpoint release để xác nhận giao diện và API cùng phiên bản.
+
+Schema và hồ sơ phát hành sửa/xóa bài nằm trong `backend/backups/school-lesson-management/`. Công cụ `backend/scripts/release-school-lesson-management.mjs --target=local|production` mặc định chỉ kiểm tra; chỉ `--apply` mới tạo bảng trạng thái và ghi migration, có đối chiếu bảo toàn các bản ghi cũ.

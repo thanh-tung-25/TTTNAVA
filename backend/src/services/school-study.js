@@ -10,6 +10,7 @@ import {loadQuestionsByIds} from './question-service.js';
 import {activeStudent,insertLearningRun,txRun,learningRunState} from './student-experience.js';
 import {z} from 'zod';
 import {guideRevision,visibleGuideContent,createSchoolGuideWriter} from './school-guide-authoring.js';
+import {curriculumVisibleSql,curriculumSettings} from './school-curriculum-state.js';
 
 const optionSignature=dialectSql("(SELECT GROUP_CONCAT(MD5(o.option_text) ORDER BY o.option_text SEPARATOR '|') FROM question_options o WHERE o.question_id=q.id)","(SELECT STRING_AGG(MD5(o.option_text),'|' ORDER BY o.option_text) FROM question_options o WHERE o.question_id=q.id)");
 const signature=`MD5(CONCAT_WS('|',q.type,TRIM(q.prompt),COALESCE(q.image_url,''),COALESCE(${optionSignature},'')))`;
@@ -19,14 +20,16 @@ async function courseFor(user,id,run=query){
  if(user.role==='admin'&&!['super',course.kind].includes(adminScopeOf(user)))throw new AppError(403,'ADMIN_SCOPE_FORBIDDEN','Khóa học thuộc khối khác.');
  return course;
 }
-export async function studyGroupRows(grade,run=query,yearId){
+export async function studyGroupRows(grade,run=query,yearId,{admin=false}={}){
  const [year]=await run('SELECT id FROM school_years'+(yearId?' WHERE id=?':'')+' ORDER BY is_active DESC,sort_order,id LIMIT 1',yearId?[yearId]:[]);if(!year)return [];
- return run(`SELECT c.school_year_id year_id,c.grade,c.subject_id,c.id chapter_id,c.name chapter_name,c.semester,l.id lesson_id,l.name lesson_name,l.topic_id
- FROM curriculum_chapters c JOIN curriculum_lessons l ON l.chapter_id=c.id WHERE c.school_year_id=? AND c.grade=? AND c.is_legacy=0
+ return run(`SELECT c.school_year_id year_id,c.grade,c.subject_id,c.id chapter_id,c.name chapter_name,c.semester,c.sort_order chapter_order,l.id lesson_id,l.name lesson_name,l.topic_id,l.sort_order lesson_order,cs.status chapter_status,ls.status lesson_status
+ FROM curriculum_chapters c JOIN curriculum_lessons l ON l.chapter_id=c.id
+ LEFT JOIN school_curriculum_state cs ON cs.kind='chapter' AND cs.target_id=c.id LEFT JOIN school_curriculum_state ls ON ls.kind='lesson' AND ls.target_id=l.id
+ WHERE c.school_year_id=? AND c.grade=? AND c.is_legacy=0 ${admin?'':'AND '+curriculumVisibleSql()}
  ORDER BY c.subject_id,c.semester,c.sort_order,l.sort_order,l.id`,[year.id,grade]);
 }
 async function groupFor(user,courseId,id,yearId){
- const course=await courseFor(user,courseId),groups=buildSchoolGroups(await studyGroupRows(course.level,query,user.role==='admin'?yearId:undefined)),group=groups.find(group=>group.id===id);
+ const course=await courseFor(user,courseId),groups=buildSchoolGroups(await studyGroupRows(course.level,query,user.role==='admin'?yearId:undefined,{admin:user.role==='admin'})),group=groups.find(group=>group.id===id);
  if(!group)throw notFound('Bài học không thuộc khóa đang chọn.');return {course,group};
 }
 async function bankFor(group,run=query){
@@ -35,11 +38,11 @@ async function bankFor(group,run=query){
  return [...new Map(rows.map(row=>[row.fingerprint,row])).values()];
 }
 export async function schoolStudyCatalog(user,courseId,yearId){
- const course=await courseFor(user,courseId),rows=await studyGroupRows(course.level,query,user.role==='admin'?yearId:undefined),groups=buildSchoolGroups(rows);
+ const course=await courseFor(user,courseId),rows=await studyGroupRows(course.level,query,user.role==='admin'?yearId:undefined,{admin:user.role==='admin'}),groups=buildSchoolGroups(rows);
  const groupedSql="CASE WHEN c.grade>=6 AND c.subject_id IN ('tieng-anh','tieng-viet') THEN c.id ELSE l.id END";
  const counts=await query(`SELECT ${groupedSql} group_id,COUNT(DISTINCT CASE WHEN q.id IS NOT NULL THEN ${signature} END) total
  FROM curriculum_chapters c JOIN curriculum_lessons l ON l.chapter_id=c.id
- LEFT JOIN questions q ON q.topic_id=l.topic_id AND q.status='published' WHERE c.grade=? AND c.school_year_id=? AND c.is_legacy=0 GROUP BY ${groupedSql}`,[course.level,rows[0]?.year_id||'']);
+ LEFT JOIN questions q ON q.topic_id=l.topic_id AND q.status='published' WHERE c.grade=? AND c.school_year_id=? AND c.is_legacy=0 ${user.role==='admin'?'':'AND '+curriculumVisibleSql()} GROUP BY ${groupedSql}`,[course.level,rows[0]?.year_id||'']);
  const sizes=['summary','formulas','examples'].map(key=>dialectSql(`COALESCE(JSON_LENGTH(JSON_EXTRACT(content_json,'$.${key}')),0) ${key}_count`,`COALESCE(jsonb_array_length(content_json->'${key}'),0) ${key}_count`)).join(',');
  const guides=await query('SELECT group_id,status,'+sizes+' FROM school_study_guides'),guideMap=new Map(guides.map(guide=>[guide.group_id,guide]));
  const totals=new Map(counts.map(row=>[row.group_id,Number(row.total)]));
@@ -51,7 +54,8 @@ export async function schoolStudyCatalog(user,courseId,yearId){
   const completed=[...new Set(history.filter(row=>row.status==='finished').map(row=>Number(row.stage_index)))];
   const questionCount=totals.get(group.id)||0,skillAttempts=skill.filter(row=>topics.has(row.skill_key)).reduce((n,row)=>n+Number(row.attempts),0);
   const guide=guideMap.get(group.id);
-  return {...group,questionCount,hasGuide:guide?.status==='published',...(user.role==='admin'?{guideStatus:guide?.status||null,knowledgeCount:Number(guide?.summary_count||0)+Number(guide?.formulas_count||0),exampleCount:Number(guide?.examples_count||0)}:{}),stages:questionCount>=20?Math.ceil(questionCount/20):0,completedStages:completed,open:history.find(row=>row.status==='open')||null,legacyCompleted:legacy.filter(row=>topics.has(row.topic_id)).reduce((n,row)=>n+Number(row.total),0),skillAttempts};
+  const row=rows.find(row=>row.lesson_id===group.parts[0].id),merged=group.id===group.chapterId,management=user.role==='admin'?curriculumSettings(merged?'chapter':'lesson',group.id,group.title,merged?row.chapter_order:row.lesson_order,merged?row.chapter_status:row.lesson_status):undefined;
+  return {...group,questionCount,hasGuide:guide?.status==='published',...(user.role==='admin'?{management,...(!merged?{parentManagement:curriculumSettings('chapter',row.chapter_id,row.chapter_name,row.chapter_order,row.chapter_status)}:{}),guideStatus:guide?.status||null,knowledgeCount:Number(guide?.summary_count||0)+Number(guide?.formulas_count||0),exampleCount:Number(guide?.examples_count||0)}:{}),stages:questionCount>=20?Math.ceil(questionCount/20):0,completedStages:completed,open:history.find(row=>row.status==='open')||null,legacyCompleted:legacy.filter(row=>topics.has(row.topic_id)).reduce((n,row)=>n+Number(row.total),0),skillAttempts};
  })};
 }
 export async function schoolStudyGuide(user,courseId,id,yearId){
@@ -60,7 +64,10 @@ export async function schoolStudyGuide(user,courseId,id,yearId){
  return {group,content:visibleGuideContent(row?.content_json),...(user.role==='admin'?{status:row?.status||'draft',exists:Boolean(row),revision:guideRevision(row)}:{})};
 }
 export async function startSchoolQuiz(user,courseId,id,body={}){
- const stage=z.number().int().min(1).max(5000).parse(body.stage??1),{course,group}=await groupFor(user,courseId,id),pool=await bankFor(group);
+ const stage=z.number().int().min(1).max(5000).parse(body.stage??1);await courseFor(user,courseId);
+ const [existing]=await query("SELECT r.id FROM school_quiz_links x JOIN learning_runs r ON r.id=x.run_id WHERE r.profile_id=? AND r.course_id=? AND x.group_id=? AND x.stage_index=? AND r.status='open' ORDER BY r.created_at DESC LIMIT 1",[user.id,courseId,id,stage]);
+ if(existing)return {id:existing.id,state:await learningRunState(user.id,existing.id),groupId:id,stage};
+ const {course,group}=await groupFor(user,courseId,id),pool=await bankFor(group);
  const [guide]=await query("SELECT group_id FROM school_study_guides WHERE group_id=? AND status='published'",[id]);if(!guide)throw notFound('Bài đang được bổ sung kiến thức.');
  if(pool.length<20)throw new AppError(409,'NOT_ENOUGH_QUESTIONS','Bài này chưa đủ 20 câu khác nhau. Bạn có thể học kiến thức và ví dụ trước.');
  const stages=Math.ceil(pool.length/20);if(stage>stages)throw badRequest('Chặng quiz không có trong bài này.');

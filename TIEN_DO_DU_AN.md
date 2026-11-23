@@ -13,9 +13,11 @@ Cập nhật tài liệu: **23/11/2026**, theo giờ Việt Nam.
 | Bản nhập đề đã đối chiếu API và giao diện | `0d7f7f3834638c656446892af6dea03d2b4ca83c`, ngày 22/11/2026; 69 đề Toán, 1.541 câu/ý, 2.337 ảnh |
 | Bản quản trị ngày 23/11/2026 | Mã đi cùng tài liệu này: giao diện chung cấp 1–2–3, tách Bài học/Bài kiểm tra/Đề thi; SHA đang chạy xem tại `/api/v1/health` và `/assets/build-info.json` |
 | Bổ sung tải Word và báo cáo | Có ô Tải đề thi từ Word ngay trong danh sách, tự đọc và sửa bản xem trước rồi lưu nháp; README đã viết lại thành báo cáo chi tiết. Kiểm tra mở rộng: 24 Node + 14 trình duyệt với API giả lập. |
+| Sửa/xóa bài học | Có mục sửa tên, thứ tự, trạng thái và xóa/khôi phục ngay trên thẻ bài; Unit gộp quản lý theo cả thẻ. Kiểm tra mở rộng: 29 Node + 18 trình duyệt. Schema mới chỉ tạo bảng trạng thái, có đối chiếu dữ liệu cũ. |
+| Đối chiếu schema 050 | Đã tạo bảng trạng thái rỗng ở local và online; giữ nguyên bản ghi cũ trong 95 bảng local và 92 bảng online. Danh mục online được kiểm tra READ ONLY, chưa có trạng thái nào tự áp lên bài cũ. |
 | Dữ liệu cũ trong đợt nhập 69 đề | Đã đối chiếu 92 bảng; bản ghi có sẵn giữ nguyên |
 | Thanh toán MoMo | Đã có chức năng và màn hình cấu hình; kiểm tra chỉ đọc khi lập tài liệu này xác nhận **chưa có cấu hình tài khoản MoMo đang dùng** |
-| Dữ liệu trong bản cập nhật quản trị | Không migration/seed; không sửa hồ sơ, quyền học, bài làm, điểm hay kim cương. Database thật chỉ kiểm tra bằng READ ONLY. |
+| Dữ liệu trong bản cập nhật quản trị | Bản giao diện/Word không migration/seed; bản sửa/xóa bài thêm riêng bảng trạng thái rỗng bằng migration 050. Không sửa hồ sơ, quyền học, bài làm, điểm hay kim cương khi triển khai. |
 
 Các kết quả triển khai nêu trên là lần xác minh đã lưu ngày 22/11, không phải một lần kiểm thử lại toàn bộ website vào ngày 23/11. Việc kiểm tra MoMo và hoàn kim cương trong lượt tổng hợp này chỉ dùng truy vấn đọc, không phát sinh giao dịch.
 
@@ -46,6 +48,7 @@ Riêng bản quản trị ngày 23/11 đã chạy 21 kiểm tra Node, 11 kiểm 
 | Cách vào học | Đã tổ chức lại theo môn và bài, có **Cần nhớ / công thức**, **Ví dụ hướng dẫn**, **Quiz 20 câu** để tiếp cận thuận tiện hơn. |
 | Tiến độ | Đã đồng bộ cách ghi nhận độ bao phủ bài học; bấm linh vật để mở chi tiết tiến độ từng phần. Số lượt hoàn thành không được dùng thay cho phần trăm kiến thức đã học. |
 | Quản trị | Đã tổ chức chung ba cấp theo lớp–môn, ba mục Bài học/Bài kiểm tra/Đề thi. Thẻ bài có kiến thức/công thức, ví dụ, quiz, bộ bài tập; có lưu nháp, xem trước và vị trí học sinh sẽ thấy. Đề thi phân theo giữa/cuối kì, nhập tay hoặc Word theo mẫu. |
+| Quản lý bài | Có sửa tên/thứ tự/trạng thái, xóa khỏi danh mục và khôi phục. Xóa là ghi trạng thái, giữ nội dung và lịch sử; trạng thái được kiểm tra cho lượt học mới, không chặn nộp/xem lại lượt cũ. |
 
 Nội dung tự biên soạn không phải toàn văn SGK. Phạm vi mục lục và chất lượng kiến thức cần được giáo viên tiếp tục rà soát trong quá trình sử dụng; việc đã nhập đủ mục không đồng nghĩa mọi bài đã được thẩm định thủ công.
 
@@ -219,6 +222,7 @@ Tài liệu: [Kiến trúc](docs/architecture.md), [API](docs/api.md), [Chuyển
 | Tổng quan và việc còn chờ | File `TIEN_DO_DU_AN.md` này |
 | Quản trị nội dung cấp 1–2–3 | [Hướng dẫn quản trị](docs/admin-school-workspace.md), hồ sơ `backend/backups/admin-school-workspace/` |
 | Tải đề Word trực tiếp | Hướng dẫn trong README và tài liệu quản trị; kiểm tra/phát hành `backend/backups/exam-word-upload/release.json` |
+| Sửa/xóa bài học | Migration 050 và `backend/backups/school-lesson-management/`; tên/thứ tự chỉ đổi khi admin bấm lưu, không tự sửa nội dung lúc triển khai |
 | Cách cài/chạy và mục lục tài liệu | [README.md](README.md) |
 | Hướng dẫn theo chức năng | Thư mục [docs](docs/) |
 | Lịch sử thay đổi mã | `git log`, đặc biệt các commit bên dưới |

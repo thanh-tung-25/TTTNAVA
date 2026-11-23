@@ -11,7 +11,13 @@ import {sendArchive,DOCX_MIME} from '../services/private-storage.js';
 import {schoolStudyCatalog} from '../services/school-study.js';
 import {examCatalog} from '../services/exam-scope-service.js';
 import {worksheetExamsAvailable} from '../services/worksheet-exam-schema.js';
+import {manageCurriculum} from '../services/school-curriculum-management.js';
 const router=Router();router.use(authenticateToken,requireSchoolAdmin);
+for(const [plural,kind]of [['lessons','lesson'],['chapters','chapter']]){
+ const target=req=>z.string().trim().min(1).max(90).parse(req.params.id);
+ router.put('/'+plural+'/:id',asyncHandler(async(req,res)=>{const id=target(req);await assertSchoolResource(req,kind,id);res.json({data:await manageCurriculum(req.user,kind,id,req.body)});}));
+ router.delete('/'+plural+'/:id',asyncHandler(async(req,res)=>{const id=target(req);await assertSchoolResource(req,kind,id);res.json({data:await manageCurriculum(req.user,kind,id,req.body,true)});}));
+}
 const workspaceScope=z.object({grade:z.coerce.number().int().min(1).max(12),subjectId:z.enum(SCHOOL_SUBJECT_IDS).optional(),yearId:z.string().trim().min(1).max(20).optional()});
 router.get('/study-catalog',asyncHandler(async(req,res)=>{
  const f=workspaceScope.parse(req.query);res.set('Cache-Control','private, no-store').json({data:await schoolStudyCatalog(req.user,'grade-'+f.grade,f.yearId)});

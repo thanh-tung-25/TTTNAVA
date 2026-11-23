@@ -2,6 +2,7 @@ import { query } from '../config/db.js';
 import { AppError } from '../utils/errors.js';
 import { seededShuffle } from '../utils/hash.js';
 import { parseJson } from '../utils/normalize.js';
+import {topicVisibleSql} from './school-curriculum-state.js';
 
 function chunk(items, size = 50) {
   const chunks = [];
@@ -101,6 +102,7 @@ async function recentQuestionIds(studentId, topicId, limitRefs = 3) {
 }
 
 export async function selectQuestionsForRound({ studentId, topicId, count, seed,preferredIds=[] }) {
+  if(!(await query(`SELECT t.id FROM topics t WHERE t.id=? AND ${topicVisibleSql()}`,[topicId])).length)throw new AppError(404,'TOPIC_NOT_FOUND','Bài học đang ẩn hoặc đã được chuyển khỏi danh sách học.');
   const topic = await getTopicWithSubject(topicId);
   const rows = await query(
     'SELECT id FROM questions WHERE topic_id = ? AND status = \'published\' ORDER BY id ASC',

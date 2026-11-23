@@ -9,10 +9,11 @@ import {awardLearningReward} from './learning-reward.js';
 import {worksheetExamScore} from './worksheet-exam-scoring.js';
 import {worksheetExamsAvailable} from './worksheet-exam-schema.js';
 import {worksheetSolutionImagesAvailable} from './worksheet-solution-access.js';
+import {assertCurriculumLessonVisible} from './school-curriculum-state.js';
 export const json=v=>typeof v==='string'?JSON.parse(v):v;
 export async function sheet(id,admin=false,user,run=query){
  const [row]=await run('SELECT * FROM worksheets WHERE id=?',[id]);if(!row||!admin&&row.status!=='published')throw notFound();
- row.items=json(row.items);row.exam_config=json(row.exam_config);if(!admin){await requireCourse(user,'grade-'+row.grade,run);row.items=row.items.map(publicItem);}return row;
+ row.items=json(row.items);row.exam_config=json(row.exam_config);if(!admin){await requireCourse(user,'grade-'+row.grade,run);if(row.lesson_id&&!row.exam_config)await assertCurriculumLessonVisible(row.lesson_id,run);row.items=row.items.map(publicItem);}return row;
 }
 export async function save(admin,id,body){
  const d=validateSheet(body);id||=randomUUID();
@@ -45,8 +46,9 @@ export async function start(user,id){
  return withTransaction(async c=>{
   const run=async(sql,p=[]) => (await c.query(sql,p))[0];await run('SELECT id FROM profiles WHERE id=? FOR UPDATE',[user]);
   await run('SELECT id FROM worksheets WHERE id=? FOR UPDATE',[id]);
-  await sheet(id,false,user,run);const data=await sheet(id,true,null,run);
   const [open]=await run("SELECT id FROM worksheet_attempts WHERE worksheet_id=? AND student_id=? AND status='in_progress' ORDER BY started_at DESC LIMIT 1",[id,user]);
+  if(open)return attempt(user,open.id,run);
+  await sheet(id,false,user,run);const data=await sheet(id,true,null,run);
   const attemptId=open?.id||randomUUID();
   if(!open)await run('INSERT INTO worksheet_attempts(id,worksheet_id,student_id,grade,snapshot,answers) VALUES (?,?,?,?,?,?)',[attemptId,id,user,data.grade,JSON.stringify({title:data.title,subject_id:data.subject_id,items:data.items,...(data.exam_config?{exam_config:data.exam_config,ends_at:new Date(Date.now()+data.exam_config.duration_minutes*60000).toISOString()}:{})}),'{}']);
   return attempt(user,attemptId,run);

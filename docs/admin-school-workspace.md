@@ -37,6 +37,10 @@ Nút **Quản lý câu hỏi** đưa về bài học/phạm vi nguồn để b�
 
 Chọn **Giữa kì I / Cuối kì I / Giữa kì II / Cuối kì II / Đề khác**, rồi bấm **Thêm đề thi**. Đề mới có sẵn lớp, môn, đợt thi và là bản nháp. Đề thi được quản lý theo lớp–môn–đợt thi, không tự gắn vào bài học đang chọn.
 
+Nếu đã có đề trắc nghiệm trong Word, bấm **Tải đề thi từ Word** ngay trên danh sách. Không cần tạo đề trống trước. Chọn tệp để tự đọc, sửa từng câu/lựa chọn/đáp án trong bản xem trước, đặt tên và thời gian rồi bấm **Lưu đề nháp**. Đợt thi được điền theo bộ lọc đang chọn; nếu đang xem tất cả thì chọn đợt ngay trong cửa sổ. Chọn tệp hoặc đóng cửa sổ chưa lưu không tạo đề. Lưu lỗi giữ bản xem trước để thử lại. Đề mới theo thang 10 điểm, chia điểm theo câu; có thể chỉnh điểm trong trình soạn trước khi đăng.
+
+Tải mẫu trắc nghiệm ở `frontend/assets/templates/mau-de-thi-trac-nghiem.docx`. Dùng bố cục giống nhập Quiz: `Câu 1. ...`, các dòng `A. ...`, `B. ...`, `C. ...`, `D. ...`, `Đáp án: B` và `Lời giải: ...` nếu có. Khi chưa có đáp án, hệ thống giữ trống để giáo viên nhập thêm.
+
 Nhập tên, thời gian, các câu, đáp án, lời giải và điểm theo cách chấm của đề. Có thể tải ảnh đề và ảnh lời giải riêng. Ảnh lời giải chỉ hiện cho học sinh sau khi nộp bài. Cách nhập tay dùng cùng cấu trúc câu hỏi và cách chấm với đề đã nhập bằng công cụ.
 
 **Nhập Word theo mẫu** có bước đọc và xem trước, sau đó mới thêm câu vào bản đang soạn. Tải mẫu ngay trong cửa sổ nhập hoặc tại `frontend/assets/templates/mau-nhap-de-thi.docx`.
@@ -68,3 +72,5 @@ Kiểm tra ngày 23/11/2026:
 - Dựng tài nguyên Vercel và kiểm tra schema chỉ đọc thành công; kiểm tra đóng gói bằng tracer cũ không gặp lại lỗi `Division by zero`.
 
 Trạng thái bản phát hành thực tế đối chiếu bằng `/api/v1/health` và `/assets/build-info.json`. Hồ sơ phát hành cục bộ lưu tại `backend/backups/admin-school-workspace/`; không đưa khóa kết nối hay dữ liệu người dùng vào Git.
+
+Lượt bổ sung tải Word trực tiếp đã mở rộng kiểm tra thành **24 Node + 14 trình duyệt**, gồm mẫu trắc nghiệm thật, thang điểm 10, sửa bản xem trước, hủy không tạo đề, đáp án thiếu và thử lại khi lưu lỗi. Các kiểm tra này dùng dữ liệu tách biệt/API giả lập, không ghi dữ liệu học sinh thật. Hồ sơ riêng tại `backend/backups/exam-word-upload/`.

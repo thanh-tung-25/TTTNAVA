@@ -12,6 +12,7 @@ Cập nhật tài liệu: **23/11/2026**, theo giờ Việt Nam.
 | Mã nguồn | GitHub `thanh-tung-25/TTTNAVA`, nhánh `main` |
 | Bản nhập đề đã đối chiếu API và giao diện | `0d7f7f3834638c656446892af6dea03d2b4ca83c`, ngày 22/11/2026; 69 đề Toán, 1.541 câu/ý, 2.337 ảnh |
 | Bản quản trị ngày 23/11/2026 | Mã đi cùng tài liệu này: giao diện chung cấp 1–2–3, tách Bài học/Bài kiểm tra/Đề thi; SHA đang chạy xem tại `/api/v1/health` và `/assets/build-info.json` |
+| Bổ sung tải Word và báo cáo | Có ô Tải đề thi từ Word ngay trong danh sách, tự đọc và sửa bản xem trước rồi lưu nháp; README đã viết lại thành báo cáo chi tiết. Kiểm tra mở rộng: 24 Node + 14 trình duyệt với API giả lập. |
 | Dữ liệu cũ trong đợt nhập 69 đề | Đã đối chiếu 92 bảng; bản ghi có sẵn giữ nguyên |
 | Thanh toán MoMo | Đã có chức năng và màn hình cấu hình; kiểm tra chỉ đọc khi lập tài liệu này xác nhận **chưa có cấu hình tài khoản MoMo đang dùng** |
 | Dữ liệu trong bản cập nhật quản trị | Không migration/seed; không sửa hồ sơ, quyền học, bài làm, điểm hay kim cương. Database thật chỉ kiểm tra bằng READ ONLY. |
@@ -107,6 +108,7 @@ Các chức năng chấm/soạn đề đã thêm:
 - Tự luận nhập đáp án vẫn được chấm tự động; cách làm/hướng dẫn hiện sau khi nộp. Bài yêu cầu viết/vẽ tự do là loại khác và có thể cần giáo viên chấm.
 - Ẩn đáp án, giải thích và tham chiếu ảnh lời giải trước khi nộp; truy cập ảnh lời giải cần bài nộp phù hợp.
 - Màn hình nhập tay dùng chung cấu trúc và cách chấm với đề được nhập bằng công cụ; admin có thể tải riêng ảnh đề và ảnh lời giải.
+- Có ô **Tải đề thi từ Word** ngay tại danh sách Đề thi. Đọc `.docx` theo bố cục Quiz, sửa câu/lựa chọn/đáp án trước khi lưu, chọn đúng đợt thi, thang 10 điểm cho đề mới. Không tạo đề khi chỉ đọc/hủy; không ghi vào ngân hàng Quiz; đáp án thiếu giữ trống trong nháp. Có mẫu trắc nghiệm tải xuống.
 - Lượt làm giữ snapshot nội dung để chỉnh sửa đề sau này không viết lại kết quả cũ.
 
 Bằng chứng đợt cuối: [Trạng thái hoàn tất](backend/backups/math-batches-2026/completion-state.json), [Đối chiếu online](backend/backups/math-batches-2026/production-verification.json), [Danh mục 69 đề](backend/backups/math-batches-2026/exam-catalog.csv). Các đường dẫn trong `backend/backups/` chỉ có trên máy làm việc, không được đưa vào Git hoặc nội dung công khai.
@@ -186,7 +188,7 @@ Tài liệu: [Kiến trúc](docs/architecture.md), [API](docs/api.md), [Chuyển
 | Chất lượng nhận dạng viết tay | Đã lên web; cần thêm phản hồi trên nét viết và điện thoại thực tế, không chỉ dữ liệu nét tham chiếu. |
 | Chất lượng nội dung học | Nội dung đã bổ sung; giáo viên tiếp tục rà soát theo bài, đặc biệt câu tự biên soạn và chỗ đã tự bổ sung đáp án. |
 | Micro, giọng đọc và giao diện điện thoại | Đã có xử lý trong ứng dụng; vẫn cần đánh giá trên các thiết bị thực tế. |
-| Tài liệu cũ | Đã tạo bản tổng hợp này và đặt liên kết ở README; chưa viết lại toàn bộ tài liệu theo chức năng. |
+| Tài liệu cũ | README đã được viết lại thành báo cáo chi tiết và liên kết bản tổng hợp này; các tài liệu chức năng cũ vẫn có phần lịch sử cần đối chiếu ngày. |
 
 **Không còn treo:** lỗi đóng gói Division by zero và đợt nhập 69 đề đã hoàn tất, không cần người dùng kết nối Vercel chỉ để tiếp tục hai việc này. Hướng dẫn kết nối trong trao đổi trước là tình trạng lúc chưa đọc được log, không phải việc còn thiếu hiện nay.
 
@@ -216,6 +218,7 @@ Tài liệu: [Kiến trúc](docs/architecture.md), [API](docs/api.md), [Chuyển
 | --- | --- |
 | Tổng quan và việc còn chờ | File `TIEN_DO_DU_AN.md` này |
 | Quản trị nội dung cấp 1–2–3 | [Hướng dẫn quản trị](docs/admin-school-workspace.md), hồ sơ `backend/backups/admin-school-workspace/` |
+| Tải đề Word trực tiếp | Hướng dẫn trong README và tài liệu quản trị; kiểm tra/phát hành `backend/backups/exam-word-upload/release.json` |
 | Cách cài/chạy và mục lục tài liệu | [README.md](README.md) |
 | Hướng dẫn theo chức năng | Thư mục [docs](docs/) |
 | Lịch sử thay đổi mã | `git log`, đặc biệt các commit bên dưới |
@@ -237,5 +240,6 @@ Các mốc mã nguồn giúp đối chiếu:
 | `821534b`, `73302cf` | Phân biệt Đề thi/Bài kiểm tra và chấm đáp án tự luận theo trọng số |
 | `58b3b07`, `32e9bb4` | Ảnh lời giải riêng tư, chấm biểu thức và giao diện nhập tay |
 | `0d7f7f3` | Sửa lỗi đóng gói Vercel; bản đã xác nhận đăng bộ 69 đề |
+| `cea9f2e` | Quản trị chung ba cấp; đã đối chiếu cùng release API và giao diện |
 
 Khi hoàn tất công việc mới, cập nhật ngày, kết quả, trạng thái phát hành, bằng chứng và mục còn chờ trong file này. Không chuyển một mục sang “đã xong” chỉ vì có code hoặc có backup trước thao tác; cần nêu rõ đã xác minh đến bước nào.

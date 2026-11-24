@@ -59,6 +59,7 @@ CREATE TABLE IF NOT EXISTS learning_feedback (
  context_text varchar(2000) NOT NULL DEFAULT '',
  status varchar(16) NOT NULL DEFAULT 'open' CHECK(status IN ('open','reviewing','resolved')),
  reply varchar(2000) NOT NULL DEFAULT '',
+ reply_admin_id char(36) REFERENCES profiles(id) ON DELETE SET NULL,
  created_at timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP,
  updated_at timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP
 );

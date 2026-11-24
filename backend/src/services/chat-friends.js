@@ -6,6 +6,11 @@ import {badRequest,forbidden,notFound} from '../utils/errors.js';
 import {assertProfilesCanInteract} from '../utils/student-visibility.js';
 import {chatProfile,chatProfileCondition} from './chat-visibility.js';
 const pair=(a,b)=>[a,b].sort();
+export async function ensureAcceptedFriendship(a,b,run){
+ const ids=pair(a,b),[row]=await run('SELECT status FROM chat_friendships WHERE user_a=? AND user_b=? FOR UPDATE',ids);
+ if(row)await run("UPDATE chat_friendships SET status='accepted' WHERE user_a=? AND user_b=?",ids);
+ else await run("INSERT INTO chat_friendships(user_a,user_b,requester_id,status) VALUES (?,?,?,'accepted')",[...ids,a]);
+}
 export async function friendship(a,b,run=query){
  await assertProfilesCanInteract(a,b,run);
  const [row]=await run('SELECT status,requester_id FROM chat_friendships WHERE user_a=? AND user_b=?',pair(a,b));

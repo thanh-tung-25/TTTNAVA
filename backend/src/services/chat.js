@@ -4,11 +4,11 @@ import {query,withTransaction,dialectSql} from '../config/db.js';
 import {one} from '../repositories/chinese.js';
 import {parse} from '../validators/chinese.js';
 import {badRequest,forbidden,notFound} from '../utils/errors.js';
-import {friends,friendship,requireFriend} from './chat-friends.js';
+import {friends,requireFriend,ensureAcceptedFriendship} from './chat-friends.js';
 import {assertProfilesCanInteract} from '../utils/student-visibility.js';
 import {chatProfile,chatProfileCondition,chatRoomCondition,assertChatParticipants,assertRoomVisibleTo} from './chat-visibility.js';
 const uuid=z.string().uuid(),runTx=c=>async(sql,p=[]) => (await c.query(sql,p))[0];
-async function student(id,run=query){return one("SELECT id,username,display_name FROM profiles WHERE id=? AND role IN ('student','admin') AND deleted_at IS NULL AND (banned_until IS NULL OR banned_until<CURRENT_TIMESTAMP)",[id],run);}
+async function student(id,run=query){return one("SELECT id,username,display_name,role FROM profiles WHERE id=? AND role IN ('student','admin') AND deleted_at IS NULL AND (banned_until IS NULL OR banned_until<CURRENT_TIMESTAMP)",[id],run);}
 async function member(user,id,run=query){const viewer=await chatProfile(user,run);if(viewer.deleted_at)throw notFound();return one(`SELECT r.* FROM chat_rooms r JOIN chat_members m ON m.room_id=r.id WHERE r.id=? AND m.student_id=? AND ${chatRoomCondition(viewer)}`,[parse(uuid,id),user],run);}
 async function blocked(a,b,run=query){return (await run('SELECT student_id FROM chat_blocks WHERE (student_id=? AND peer_id=?) OR (student_id=? AND peer_id=?)',[a,b,b,a])).length>0;}
 export async function search(user,q){
@@ -49,7 +49,11 @@ export async function createRoom(user,body){
   for(const id of [...ids].sort())await one('SELECT id FROM profiles WHERE id=? FOR UPDATE',[id],run);
   await assertChatParticipants(ids,run);
   for(const id of ids){await student(id,run);if(id!==user&&await blocked(user,id,run))throw forbidden('Không thể trò chuyện với người đang chặn hoặc đã bị chặn.');}
-  for(const id of ids)if(id!==user)await requireFriend(user,id,run);
+  if(d.kind==='direct'){
+   const peerId=ids.find(id=>id!==user),peer=await student(peerId,run);
+   if(peer.role==='admin'&&(await chatProfile(user,run)).role==='student')await ensureAcceptedFriendship(user,peerId,run);
+   else await requireFriend(user,peerId,run);
+  }else for(const id of ids)if(id!==user)await requireFriend(user,id,run);
   const key=d.kind==='direct'?[...ids].sort().join(':'):null;
   if(key){const [old]=await run('SELECT id FROM chat_rooms WHERE direct_key=?',[key]);if(old){await member(user,old.id,run);return old;}}
   const id=randomUUID();await run('INSERT INTO chat_rooms(id,kind,title,owner_id,direct_key) VALUES (?,?,?,?,?)',[id,d.kind,d.title,user,key]);

@@ -21,6 +21,10 @@ Báo cáo theo khóa trong 7 ngày: lượt hoàn thành, điểm trung bình c�
 
 Có **In / lưu PDF** qua chức năng in của trình duyệt và **Tải bảng kết quả** dạng CSV của các hoạt động gần đây (tối đa 30 dòng). CSV bảo vệ các ô bắt đầu bằng ký hiệu công thức. API luôn dùng ID từ phiên đăng nhập, không nhận ID học sinh để xem người khác.
 
+## Phản hồi góp ý trong chat
+
+Khi quản trị viên gửi hoặc sửa phản hồi cho góp ý, nội dung được lưu trong phản ánh và đồng thời gửi thành tin nhắn ở cuộc chat riêng với học sinh. Học sinh có thể bấm **Liên hệ admin qua chat** trong phản ánh để mở đúng cuộc trò chuyện. Nhắn riêng với quản trị viên không yêu cầu gửi lời mời kết bạn; chat với học sinh khác vẫn theo quy tắc kết bạn hiện tại. Migration `051_feedback_chat_replies.sql` thêm cột lưu admin đã phản hồi để nút mở đúng cuộc chat.
+
 ## Lời mời kết bạn
 
 Khung chat có thẻ lời mời mới kèm ảnh và nút chấp nhận/từ chối ngay ở danh sách trò chuyện, tối đa 3 lời mời xem nhanh. Có nút xem tất cả khi còn nhiều. Badge tính cả tin chưa đọc và lời mời đang chờ. Không tự phát âm thanh thông báo.

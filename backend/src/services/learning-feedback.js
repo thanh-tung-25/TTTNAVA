@@ -19,6 +19,6 @@ export async function listFeedback(user,manage=false){
  const where=manage?(scope==='super'?'1=1':'f.scope=?'):'f.reporter_id=?';
  const params=manage?(scope==='super'?[]:[scope]):[user.id];
  const rows=await query(`SELECT f.*,p.display_name FROM learning_feedback f JOIN profiles p ON p.id=f.reporter_id WHERE ${where} AND ${studentVisibleCondition(user,'p')} ORDER BY f.created_at DESC,f.id DESC LIMIT 200`,params);
- return rows.map(row=>({...row,reply_version:feedbackVersion(row)}));
+ return rows.map(({reply_admin_id,...row})=>({...row,reply_version:feedbackVersion(row)}));
 }
 export const updateFeedback=createFeedbackUpdater({withTransaction});

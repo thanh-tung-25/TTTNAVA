@@ -46,7 +46,7 @@ function reportCard(row){
   try{
    const {data}=await api('/api/v1/feedback/'+encodeURIComponent(row.id),{method:'PUT',body:payload,signal:controller.signal});
    Object.assign(row,data);draft.status=row.status;draft.reply=row.reply;reply.value=row.reply;status.value=row.status;state.dataset.state=row.status;state.textContent=feedbackStatuses[row.status];
-   localNotice.dataset.state='success';localNotice.textContent=row.reply?(hadReply?'✓ Đã cập nhật phản hồi. Người gửi đã có thể xem nội dung mới.':'✓ Đã gửi phản hồi cho '+name+'. Người gửi đã có thể xem trong Phản ánh của tôi.'):'✓ Đã lưu trạng thái xử lý.';
+   localNotice.dataset.state='success';localNotice.textContent=row.reply?(hadReply?'✓ Đã cập nhật phản hồi. Người gửi đã xem được nội dung mới trong Phản ánh của tôi và chat.':'✓ Đã gửi phản hồi cho '+name+'. Người gửi xem được trong Phản ánh của tôi và chat.'):'✓ Đã lưu trạng thái xử lý.';
    toast(row.reply?'Đã lưu phản hồi cho '+name+'.':'Đã lưu trạng thái.','success');totals();
   }catch(error){localNotice.dataset.state='error';localNotice.textContent=error.name==='AbortError'?'Máy chủ chưa xác nhận kết quả lưu. Nội dung đang soạn vẫn được giữ; bạn có thể bấm gửi lại.':'Chưa lưu được: '+error.message+' Nội dung đang soạn vẫn được giữ.';toast('Chưa xác nhận được phản hồi. Vui lòng thử lại.','error');}
   finally{clearTimeout(timeout);busy.delete(row.id);lockNavigation();update();}

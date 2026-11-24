@@ -3,6 +3,7 @@ import {z} from 'zod';
 import {adminScopeOf} from '../utils/admin-permissions.js';
 import {studentVisibleCondition} from '../utils/student-visibility.js';
 import {AppError,forbidden,notFound,badRequest} from '../utils/errors.js';
+import {appendFeedbackReply,ensureFeedbackRoom} from './chat-support.js';
 
 export const feedbackVersion=row=>createHash('sha256').update(JSON.stringify([row.status,row.reply||'',new Date(row.updated_at).toISOString()])).digest('hex');
 export const feedbackReceipt=row=>({id:row.id,status:row.status,reply:row.reply||'',updated_at:row.updated_at,reply_version:feedbackVersion(row)});
@@ -20,8 +21,13 @@ export function createFeedbackUpdater({withTransaction}){
    // A retry after a lost network response must confirm the already saved reply.
    if(row.status===input.status&&(row.reply||'')===input.reply)return feedbackReceipt(row);
    if(input.expected_version&&input.expected_version!==feedbackVersion(row))throw new AppError(409,'FEEDBACK_CONFLICT','Phản ánh đã được cập nhật ở nơi khác. Bản bạn đang soạn vẫn được giữ. Bấm Làm mới để xem phản hồi mới nhất.');
-   await run('UPDATE learning_feedback SET status=?,reply=?,updated_at=CURRENT_TIMESTAMP WHERE id=?',[input.status,input.reply,id]);
-   const [saved]=await run('SELECT id,status,reply,updated_at FROM learning_feedback WHERE id=?',[id]);return feedbackReceipt(saved);
+   const replyChanged=(row.reply||'')!==input.reply,replyAdminId=replyChanged?(input.reply?user.id:null):(row.reply_admin_id||null);
+   await run('UPDATE learning_feedback SET status=?,reply=?,reply_admin_id=?,updated_at=CURRENT_TIMESTAMP WHERE id=?',[input.status,input.reply,replyAdminId,id]);
+   if(replyChanged&&input.reply){
+    const room=await ensureFeedbackRoom(run,row.reporter_id,user.id);
+    await appendFeedbackReply(run,room.id,user.id,input.reply);
+   }
+   const [saved]=await run('SELECT id,status,reply,reply_admin_id,updated_at FROM learning_feedback WHERE id=?',[id]);return feedbackReceipt(saved);
   });
  };
 }

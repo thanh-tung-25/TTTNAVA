@@ -3,6 +3,7 @@ import {authenticateToken,requirePlayer,requireSuperAdmin} from '../middlewares/
 import {asyncHandler} from '../utils/errors.js';
 import {rateLimit} from '../middlewares/rate-limit.js';
 import * as service from '../services/chat.js';
+import {openFeedbackRoom} from '../services/chat-support.js';
 import {friends,changeFriend} from '../services/chat-friends.js';
 import callsRouter from './chat-calls.js';
 const router=Router(),h=fn=>asyncHandler(async(r,res)=>res.json({data:await fn(r)}));
@@ -14,6 +15,7 @@ router.use(requirePlayer);
 router.get('/friends',h(r=>friends(r.user.id)));
 router.put('/friends/:id',rateLimit({max:20,keyPrefix:'chat-friend'}),h(r=>changeFriend(r.user.id,r.params.id,r.body)));
 router.get('/students',rateLimit({max:30,keyPrefix:'chat-search'}),h(r=>service.search(r.user.id,r.query.q)));
+router.post('/support-room',rateLimit({max:10,keyPrefix:'chat-support-room'}),h(r=>openFeedbackRoom(r.user,r.body?.feedback_id)));
 router.get('/rooms',h(r=>service.rooms(r.user.id)));
 router.post('/rooms',rateLimit({max:10,keyPrefix:'chat-create'}),h(r=>service.createRoom(r.user.id,r.body)));
 router.get('/rooms/:id/messages',h(r=>service.messages(r.user.id,r.params.id,r.query.before)));

@@ -9,18 +9,14 @@
 .leaderboard-card .rank-number{flex:none;min-width:30px;font-size:1.2rem}
 .leaderboard-card .rank-diamonds{white-space:nowrap;flex:none;color:#8862b3;font-size:.9rem}
 .leaderboard-award-note{margin:-12px 0 18px;padding:11px 14px;border:1px solid #eadfc5;border-radius:13px;background:#fffaf0;color:#80643c;font-size:.82rem;line-height:1.6}
-.rank-avatar-wrap{position:relative;display:grid;place-items:center;flex:none;width:42px;height:42px;padding:3px;border-radius:50%;background:linear-gradient(145deg,#dceeff,#77bde8,#f4fbff);box-shadow:0 0 0 2px #fff,0 0 0 4px #8ac7e9,0 3px 10px #5c9ec544}
-.rank-avatar-wrap .avatar{width:100%;height:100%;border:2px solid #fff;box-shadow:none}
-.rank-avatar-wrap.award-1{background:linear-gradient(145deg,#fff5bb,#e7a51e,#fff2a1);box-shadow:0 0 0 2px #fff,0 0 0 4px #e5b63c,0 3px 12px #c8932b55}
-.rank-avatar-wrap.award-2{background:linear-gradient(145deg,#fff,#a9b6ca,#f5f8fc);box-shadow:0 0 0 2px #fff,0 0 0 4px #aab6c8,0 3px 12px #74849d44}
-.rank-avatar-wrap.award-3{background:linear-gradient(145deg,#ffe2c4,#bd7442,#ffeddb);box-shadow:0 0 0 2px #fff,0 0 0 4px #c47d4e,0 3px 12px #aa643944}
-.rank-avatar-wrap.award-month{background:linear-gradient(145deg,#d8fbff,#62c5d8,#c4b8ff);box-shadow:0 0 0 2px #fff,0 0 0 4px #60bccc,0 3px 12px #5c9ec544}
-.rank-avatar-trophy{position:absolute;top:-11px;left:50%;transform:translateX(-50%);z-index:1;font-size:15px;line-height:1;filter:drop-shadow(0 1px 1px #543b2b66)}
-.rank-avatar-trophy.award-2{filter:grayscale(1) brightness(1.18) drop-shadow(0 1px 1px #543b2b66)}
-.rank-avatar-trophy.award-3{filter:sepia(1) saturate(3) hue-rotate(340deg) drop-shadow(0 1px 1px #543b2b66)}
-.rank-avatar-wrap.has-two-awards .badge-week{left:-6px;top:-10px;transform:none}
-.rank-avatar-wrap.has-two-awards .badge-month{left:auto;right:-7px;top:-10px;transform:none}
-.rank-avatar-wrap:not(.has-two-awards) .badge-month{font-size:17px}
+.leaderboard-award-badge{display:inline-flex;align-items:center;justify-content:center;gap:3px;flex:none;padding:4px 6px;border:1px solid #ead9a5;border-radius:999px;background:linear-gradient(145deg,#fffdf5,#fff4d7);color:#8b692d;white-space:nowrap;line-height:1}
+.leaderboard-award-badge>span{font-size:.78rem;line-height:1}
+.leaderboard-award-badge small{font-size:.62rem;font-weight:800;line-height:1}
+.leaderboard-award-badge.award-2{border-color:#d8dee7;background:linear-gradient(145deg,#fff,#f0f3f8);color:#69768b}
+.leaderboard-award-badge.award-3{border-color:#efd3bc;background:linear-gradient(145deg,#fffaf5,#fcebdc);color:#9a633d}
+.leaderboard-award-badge.period-month{border-color:#cce6e8;background:linear-gradient(145deg,#f4ffff,#e5f8f7);color:#367d89}
+.leaderboard-award-badge.period-month.award-2{border-color:#d9deeb;background:linear-gradient(145deg,#fbfcff,#eceffa);color:#68779d}
+.leaderboard-award-badge.period-month.award-3{border-color:#e8d7e8;background:linear-gradient(145deg,#fffaff,#f7eaf6);color:#936895}
 .weekly-history-card{margin-top:20px}
 .weekly-history-card>h2{margin:0 0 16px;font-size:1.1rem;color:#302b4d}
 .weekly-award-history{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
@@ -50,7 +46,9 @@
  .leaderboard-my-rank{padding:8px 10px;font-size:.72rem!important}
  .leaderboard-card .rank-row{gap:8px;padding:12px 8px}
  .leaderboard-card .rank-row .avatar{width:32px;height:32px;flex:none}
- .rank-avatar-wrap{width:38px;height:38px}
+ .leaderboard-award-badge{gap:2px;padding:3px 5px}
+ .leaderboard-award-badge>span{font-size:.72rem}
+ .leaderboard-award-badge small{font-size:.58rem}
  .leaderboard-card .rank-row strong{font-size:.78rem}
  .leaderboard-card .rank-number{min-width:24px;width:24px;font-size:1rem}
  .leaderboard-card .rank-diamonds{font-size:.78rem}

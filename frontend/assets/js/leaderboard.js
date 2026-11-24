@@ -21,19 +21,12 @@ function row(item, index) {
   const monthly = range === 'month';
   const weeklyAward = Number(item.weeklyAward) || 0;
   const monthlyAward = Number(item.monthlyAward) || 0;
-  const primaryAward = monthly && monthlyAward ? { rank: monthlyAward, period: 'month' }
-    : weeklyAward ? { rank: weeklyAward, period: 'week' }
-      : monthlyAward ? { rank: monthlyAward, period: 'month' } : null;
-  const awardLabels = [];
-  if (weeklyAward) awardLabels.push(`Top ${weeklyAward} tuần trước`);
-  if (monthlyAward) awardLabels.push(`Top ${monthlyAward} tháng trước`);
-  const badges = [
-    ...(weeklyAward ? [`<span class="rank-avatar-trophy badge-week award-${weeklyAward}" aria-hidden="true">🏆</span>`] : []),
-    ...(monthlyAward ? [`<span class="rank-avatar-trophy badge-month award-${monthlyAward}" aria-hidden="true">👑</span>`] : []),
-  ].join('');
-  const avatar = primaryAward
-    ? `<span class="rank-avatar-wrap award-${primaryAward.rank} award-${primaryAward.period}${weeklyAward&&monthlyAward?' has-two-awards':''}" role="img" aria-label="${awardLabels.join(' · ')}" title="${awardLabels.join(' · ')}"><img class="avatar avatar-sm" src="${avatarUrl(item.avatarKey)}" alt="">${badges}</span>`
-    : `<img class="avatar avatar-sm" src="${avatarUrl(item.avatarKey)}" alt="">`;
+  const award = monthly ? monthlyAward : range === 'week' ? weeklyAward : 0;
+  const awardLabel = award ? `Top ${award} ${monthly ? 'tháng trước' : 'tuần trước'}` : '';
+  const badge = award
+    ? `<span class="leaderboard-award-badge award-${award} period-${monthly?'month':'week'}" role="img" aria-label="${awardLabel}" title="${awardLabel}"><span aria-hidden="true">${monthly?'👑':'🏆'}</span><small>Top ${award}</small></span>`
+    : '';
+  const avatar = `<img class="avatar avatar-sm" src="${avatarUrl(item.avatarKey)}" alt="">`;
   return `
     <div class="rank-row${item.profileId === myId ? ' is-me' : ''}">
       <span class="rank-number">${chinese&&item.diamonds===0?'#'+item.rank:medals(index)}</span>
@@ -42,7 +35,7 @@ function row(item, index) {
         <strong>${escapeHtml(item.displayName)}${item.profileId === myId ? ' (bạn)' : ''}</strong>
         <span>${chinese||item.grade===null?'Tiếng Trung':'Lớp '+item.grade}</span>
       </div>
-      <span class="rank-diamonds">💎 ${item.diamonds.toLocaleString('vi-VN')}</span>
+      ${badge}<span class="rank-diamonds">💎 ${item.diamonds.toLocaleString('vi-VN')}</span>
     </div>`;
 }
 

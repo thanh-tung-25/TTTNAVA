@@ -4,6 +4,9 @@ import { emptyState, initPage } from '/assets/js/ui.js';
 const rangeTabs = document.getElementById('range-tabs');
 const gradeFilter = document.getElementById('grade-filter');
 const listEl = document.getElementById('rank-list');
+const weeklyHistoryEl = document.getElementById('weekly-award-history');
+const weeklyHistoryTitle = document.getElementById('weekly-history-title');
+const awardNote = document.getElementById('leaderboard-award-note');
 let range = 'week';
 let myId = null;
 let chinese = false;
@@ -15,16 +18,47 @@ function medals(index) {
 }
 
 function row(item, index) {
+  const monthly = range === 'month';
+  const weeklyAward = Number(item.weeklyAward) || 0;
+  const monthlyAward = Number(item.monthlyAward) || 0;
+  const primaryAward = monthly && monthlyAward ? { rank: monthlyAward, period: 'month' }
+    : weeklyAward ? { rank: weeklyAward, period: 'week' }
+      : monthlyAward ? { rank: monthlyAward, period: 'month' } : null;
+  const awardLabels = [];
+  if (weeklyAward) awardLabels.push(`Top ${weeklyAward} tuần trước`);
+  if (monthlyAward) awardLabels.push(`Top ${monthlyAward} tháng trước`);
+  const badges = [
+    ...(weeklyAward ? [`<span class="rank-avatar-trophy badge-week award-${weeklyAward}" aria-hidden="true">🏆</span>`] : []),
+    ...(monthlyAward ? [`<span class="rank-avatar-trophy badge-month award-${monthlyAward}" aria-hidden="true">👑</span>`] : []),
+  ].join('');
+  const avatar = primaryAward
+    ? `<span class="rank-avatar-wrap award-${primaryAward.rank} award-${primaryAward.period}${weeklyAward&&monthlyAward?' has-two-awards':''}" role="img" aria-label="${awardLabels.join(' · ')}" title="${awardLabels.join(' · ')}"><img class="avatar avatar-sm" src="${avatarUrl(item.avatarKey)}" alt="">${badges}</span>`
+    : `<img class="avatar avatar-sm" src="${avatarUrl(item.avatarKey)}" alt="">`;
   return `
     <div class="rank-row${item.profileId === myId ? ' is-me' : ''}">
       <span class="rank-number">${chinese&&item.diamonds===0?'#'+item.rank:medals(index)}</span>
-      <img class="avatar avatar-sm" src="${avatarUrl(item.avatarKey)}" alt="">
+      ${avatar}
       <div class="rank-main">
         <strong>${escapeHtml(item.displayName)}${item.profileId === myId ? ' (bạn)' : ''}</strong>
         <span>${chinese||item.grade===null?'Tiếng Trung':'Lớp '+item.grade}</span>
       </div>
       <span class="rank-diamonds">💎 ${item.diamonds.toLocaleString('vi-VN')}</span>
     </div>`;
+}
+
+function renderAwardHistory(history = []) {
+  const monthly = range === 'month';
+  weeklyHistoryEl.dataset.period = monthly ? 'month' : 'week';
+  const date = value => new Intl.DateTimeFormat('vi-VN', { day: 'numeric', month: 'short', ...(monthly?{year:'numeric'}:{}), timeZone: 'Asia/Ho_Chi_Minh' }).format(new Date(value));
+  weeklyHistoryEl.innerHTML = history.map(week => {
+    const start = monthly ? week.monthStart : week.weekStart;
+    const end = monthly ? week.monthEnd : week.weekEnd;
+    const lastDay = new Date(new Date(end).getTime() - 1);
+    const winners = week.winners.length
+      ? `<ol>${week.winners.map(winner => `<li class="weekly-winner award-${winner.rank}"><span class="weekly-winner-trophy${monthly?' is-month':''}" aria-hidden="true">${monthly?'👑':'🏆'}</span><img class="avatar avatar-sm" src="${avatarUrl(winner.avatarKey)}" alt=""><span class="weekly-winner-name"><strong>${escapeHtml(winner.displayName)}</strong><small>Top ${winner.rank}</small></span><span class="weekly-winner-score">💎 ${winner.diamonds.toLocaleString('vi-VN')}</span></li>`).join('')}</ol>`
+      : `<p class="weekly-history-empty">${monthly?'Tháng này':'Tuần này'} chưa có kim cương được ghi nhận.</p>`;
+    return `<article class="weekly-history-week"><h3>${date(start)} – ${date(lastDay)}</h3>${winners}</article>`;
+  }).join('');
 }
 
 function syncTabs() {
@@ -36,12 +70,18 @@ function syncTabs() {
 async function load() {
   const current = ++requestId;
   syncTabs();
+  const monthly = range === 'month';
+  weeklyHistoryTitle.textContent = monthly ? 'Top tháng gần đây' : 'Top tuần gần đây';
+  awardNote.textContent = monthly
+    ? 'Huy hiệu top tháng trước hiển thị trong tháng này: Top 1 cúp vàng, Top 2 cúp bạc, Top 3 cúp đồng.'
+    : 'Huy hiệu top tuần trước hiển thị trong tuần này: Top 1 cúp vàng, Top 2 cúp bạc, Top 3 cúp đồng.';
   myRanking.hidden = true;
   listEl.innerHTML = '<div class="loading">Đang tải bảng xếp hạng…</div>';
   try {
     const query = queryString({ range, limit: 50, ...(chinese?{program:'chinese'}:{grade:gradeFilter.value}) });
     const payload = await api(`/api/v1/diamonds/leaderboard${query}`);
     if(current!==requestId)return;
+    renderAwardHistory(payload.awardHistory);
     listEl.innerHTML = payload.data.length
       ? payload.data.map(row).join('')
       : emptyState('🏆', 'Chưa có ai trên bảng', 'Hãy là người đầu tiên nhận kim cương nhé!');
@@ -52,6 +92,7 @@ async function load() {
     }
   } catch (error) {
     if(current!==requestId)return;
+    weeklyHistoryEl.innerHTML = `<p class="weekly-history-empty">Chưa tải được lịch sử cúp ${monthly?'tháng':'tuần'}.</p>`;
     listEl.innerHTML = emptyState('😿', 'Không tải được bảng xếp hạng', error.message)+'<button class="btn btn-ghost" type="button" data-retry-ranking>Thử lại</button>';
   }
 }

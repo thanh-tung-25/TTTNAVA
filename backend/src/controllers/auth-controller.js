@@ -1,5 +1,7 @@
 import env from '../config/env.js';
-import { loginSchema,requestRegistrationOtpSchema,completeRegistrationSchema,requestPasswordResetSchema,verifyPasswordResetSchema,completePasswordResetSchema } from '../validators/auth.js';
+import { loginSchema,requestRegistrationOtpSchema,completeRegistrationSchema,requestPasswordResetSchema,verifyPasswordResetSchema,completePasswordResetSchema,updateStudentProfileSchema } from '../validators/auth.js';
+import { query } from '../config/db.js';
+import { AppError } from '../utils/errors.js';
 import { login } from '../services/auth-service.js';
 import {registrationAvailable} from '../services/registration-mail.js';
 import {requestRegistrationOtp,completeRegistration} from '../services/public-registration.js';
@@ -40,6 +42,17 @@ export const logoutHandler = asyncHandler(async (request, response) => {
 
 export const meHandler = asyncHandler(async (request, response) => {
   response.json({ data: { profile: publicProfile(request.user) } });
+});
+
+export const updateStudentProfileHandler = asyncHandler(async (request, response) => {
+  if (request.user.role !== 'student' || (request.user.account_kind ?? 'student') !== 'student') {
+    throw new AppError(403, 'FORBIDDEN', 'Chỉ tài khoản học sinh mới có thể sửa thông tin cá nhân tại đây.');
+  }
+  const { displayName, avatarKey } = updateStudentProfileSchema.parse(request.body);
+  await query('UPDATE profiles SET display_name=?,avatar_key=? WHERE id=? AND role=\'student\' AND deleted_at IS NULL', [displayName, avatarKey, request.user.id]);
+  const [profile] = await query('SELECT * FROM profiles WHERE id=? AND deleted_at IS NULL', [request.user.id]);
+  if (!profile) throw new AppError(404, 'PROFILE_NOT_FOUND', 'Không tìm thấy tài khoản.');
+  response.set('Cache-Control', 'no-store').json({ data: { profile: publicProfile(profile) } });
 });
 
 export const registrationStatusHandler=asyncHandler(async(_request,response)=>{

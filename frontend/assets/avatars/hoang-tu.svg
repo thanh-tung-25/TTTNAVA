@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ho&#224;ng t&#7917;">
+  <title>Ho&#224;ng t&#7917;</title>
+  <defs>
+    <radialGradient id="bg" cx="28%" cy="18%" r="88%"><stop stop-color="#fff"/><stop offset=".5" stop-color="#e4f8ff"/><stop offset="1" stop-color="#c5d5ff"/></radialGradient>
+    <linearGradient id="hair" x1=".1" y1="0" x2=".9" y2="1"><stop stop-color="#9ba9e9"/><stop offset=".4" stop-color="#506aa9"/><stop offset="1" stop-color="#293b70"/></linearGradient>
+    <linearGradient id="skin" x1=".15" y1="0" x2=".8" y2="1"><stop stop-color="#fff1dc"/><stop offset=".62" stop-color="#ffd6ba"/><stop offset="1" stop-color="#efaaa0"/></linearGradient>
+    <linearGradient id="cape" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#68d7e7"/><stop offset=".48" stop-color="#367fc6"/><stop offset="1" stop-color="#344c9d"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff6ba"/><stop offset=".5" stop-color="#ffd35e"/><stop offset="1" stop-color="#d99035"/></linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feGaussianBlur in="SourceAlpha" stdDeviation="1.4"/><feOffset dy="1.5"/><feComponentTransfer><feFuncA type="linear" slope=".22"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <circle cx="32" cy="32" r="31" fill="url(#bg)" stroke="#fff" stroke-width="1.5"/>
+  <path d="m12 17 1.2 2.2 2.3 1.1-2.3 1.1L12 24l-1.1-2.6-2.3-1.1 2.3-1.1zM52 30l.8 1.7 1.8.8-1.8.9-.8 1.8-.9-1.8-1.7-.9 1.7-.8z" fill="#fff"/>
+  <ellipse cx="32" cy="59" rx="18" ry="3" fill="#40537e" opacity=".12"/>
+  <g filter="url(#shadow)">
+    <path d="M7 64q2-13 15-17h20q13 4 15 17z" fill="url(#cape)" stroke="#e7fbff" stroke-width="1.2"/>
+    <path d="m23 47 9 10 9-10-4-4H27z" fill="#f3fcff"/>
+    <path d="M13 34Q9 15 22 8q13-7 25 1 11 8 5 29l-6-6q1-15-13-17-13 1-14 15l-3 17q-7-2-3-13z" fill="url(#hair)" stroke="#394b83" stroke-width="1"/>
+    <path d="M18 28q3-14 16-15 11 1 15 12-10-6-17-5-8 1-14 8z" fill="url(#hair)"/>
+    <path d="M19 21q4-8 12-8m8 1q4 2 7 7" fill="none" stroke="#dce7ff" stroke-opacity=".65" stroke-width="1.8" stroke-linecap="round"/>
+    <ellipse cx="32" cy="35" rx="14" ry="17" fill="url(#skin)" stroke="#db918b" stroke-width=".7"/>
+    <path d="m18 19 3-10 10 7 10-7 5 11" fill="url(#gold)" stroke="#c98732" stroke-width="1.2" stroke-linejoin="round"/>
+    <path d="M19 20h26" stroke="#f8e29a" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="22" cy="18" r="1.7" fill="#fff"/><circle cx="32" cy="15" r="2.2" fill="#62d9ff"/><circle cx="42" cy="18" r="1.7" fill="#fff"/>
+    <path d="M21 31q4-3 8 0m6 0q4-3 8 0" fill="none" stroke="#394462" stroke-width="1.4" stroke-linecap="round"/>
+    <ellipse cx="25" cy="34" rx="2.5" ry="3.4" fill="#293b70"/><ellipse cx="39" cy="34" rx="2.5" ry="3.4" fill="#293b70"/>
+    <circle cx="24.2" cy="32.8" r="1" fill="#fff"/><circle cx="38.2" cy="32.8" r="1" fill="#fff"/>
+    <ellipse cx="21" cy="40" rx="3" ry="1.8" fill="#fa92ad" opacity=".5"/><ellipse cx="43" cy="40" rx="3" ry="1.8" fill="#fa92ad" opacity=".5"/>
+    <path d="M30 43q2 2 4 0" fill="none" stroke="#a65b76" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -10,6 +10,11 @@ export const resetPasswordSchema = z.object({
   newPassword: passwordSchema,
 });
 
+export const updateStudentProfileSchema = z.object({
+  displayName: displayNameSchema,
+  avatarKey: avatarSchema,
+}).strict();
+
 export const requestRegistrationOtpSchema=z.object({email:z.string().trim().min(1).max(120)});
 export const requestPasswordResetSchema=z.object({email:z.string().trim().min(1).max(120)}).strict();
 export const verifyPasswordResetSchema=z.object({challengeId:z.uuid(),otp:z.string().regex(/^\d{6}$/u,'Mã xác thực phải gồm 6 chữ số.')}).strict();

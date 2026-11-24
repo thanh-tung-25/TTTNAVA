@@ -90,7 +90,7 @@ export async function initPage(role, active) {
     window.location.replace(adminHome(profile));
     throw new Error('Bạn không có quyền quản lý phần này.');
   }
-  if(role==='student')await courseProfile(profile,active);
+  if(role==='student'&&active!=='personal')await courseProfile(profile,active);
   diamondProgram=Object.hasOwn(programLabels,profile.course?.kind)?profile.course.kind:null;
   if(active==='courses'){
     const program=new URLSearchParams(location.search).get('program');

@@ -91,11 +91,11 @@ export async function getDiamondSummary(profileId) {
   return {...totals,programs,recent};
 }
 
-export async function getLeaderboard(range = 'week', limit = 50, grade = null, program = null) {
-  const { start } = vnRange(range);
+async function leaderboardRows(start, end, limit, grade, program) {
   const params = [];
-  const dateFilter = start ? 'AND dl.created_at >= ?' : '';
-  if (start) params.push(start);
+  const dateFilters = [];
+  if (start) { dateFilters.push('AND dl.created_at >= ?'); params.push(start); }
+  if (end) { dateFilters.push('AND dl.created_at < ?'); params.push(end); }
   let gradeFilter = '';
   if (grade) {
     gradeFilter = 'AND p.grade = ?';
@@ -115,7 +115,7 @@ export async function getLeaderboard(range = 'week', limit = 50, grade = null, p
     `SELECT p.id, p.display_name, p.avatar_key, p.grade,
             COALESCE(SUM(CASE WHEN dl.amount>0 AND dl.reason<>'store_refund' THEN dl.amount ELSE 0 END), 0) AS diamonds
      FROM profiles p
-     LEFT JOIN diamond_ledger dl ON dl.profile_id = p.id ${dateFilter} ${ledgerFilter}
+     LEFT JOIN diamond_ledger dl ON dl.profile_id = p.id ${dateFilters.join(' ')} ${ledgerFilter}
      WHERE p.role = 'student' AND p.deleted_at IS NULL
        AND (p.banned_until IS NULL OR p.banned_until <= CURRENT_TIMESTAMP)
        ${gradeFilter} ${programFilter}
@@ -132,5 +132,53 @@ export async function getLeaderboard(range = 'week', limit = 50, grade = null, p
     avatarKey: row.avatar_key,
     grade: row.grade === null ? null : Number(row.grade),
     diamonds: Number(row.diamonds),
+  }));
+}
+
+export async function getLeaderboard(range = 'week', limit = 50, grade = null, program = null) {
+  const { start } = vnRange(range);
+  const currentWeekStart = vnRange('week').start;
+  const previousWeekStart = new Date(currentWeekStart.getTime() - 7 * 24 * 60 * 60 * 1000);
+  const currentMonthStart = vnRange('month').start;
+  const previousMonthStart = vnRange('month', new Date(currentMonthStart.getTime() - 1)).start;
+  const [rows, previousWeek, previousMonth] = await Promise.all([
+    leaderboardRows(start, null, limit, grade, program),
+    leaderboardRows(previousWeekStart, currentWeekStart, 3, null, program),
+    leaderboardRows(previousMonthStart, currentMonthStart, 3, null, program),
+  ]);
+  const weeklyAwards = new Map(previousWeek.filter(row => row.diamonds > 0).map(row => [row.profileId, row.rank]));
+  const monthlyAwards = new Map(previousMonth.filter(row => row.diamonds > 0).map(row => [row.profileId, row.rank]));
+  return rows.map(row => ({
+    ...row,
+    weeklyAward: weeklyAwards.get(row.profileId) ?? null,
+    monthlyAward: monthlyAwards.get(row.profileId) ?? null,
+  }));
+}
+
+export async function getWeeklyAwardHistory(weeks = 4, program = null) {
+  const currentWeekStart = vnRange('week').start;
+  return Promise.all(Array.from({ length: weeks }, async (_, index) => {
+    const weekEnd = new Date(currentWeekStart.getTime() - index * 7 * 24 * 60 * 60 * 1000);
+    const weekStart = new Date(weekEnd.getTime() - 7 * 24 * 60 * 60 * 1000);
+    const winners = await leaderboardRows(weekStart, weekEnd, 3, null, program);
+    return {
+      weekStart: weekStart.toISOString(),
+      weekEnd: weekEnd.toISOString(),
+      winners: winners.filter(row => row.diamonds > 0),
+    };
+  }));
+}
+
+export async function getMonthlyAwardHistory(months = 4, program = null) {
+  const currentMonthStart = vnRange('month').start;
+  return Promise.all(Array.from({ length: months }, async (_, index) => {
+    const monthEnd = vnRange('month', new Date(currentMonthStart.getTime() - index * 24 * 60 * 60 * 1000)).start;
+    const monthStart = vnRange('month', new Date(monthEnd.getTime() - 1)).start;
+    const winners = await leaderboardRows(monthStart, monthEnd, 3, null, program);
+    return {
+      monthStart: monthStart.toISOString(),
+      monthEnd: monthEnd.toISOString(),
+      winners: winners.filter(row => row.diamonds > 0),
+    };
   }));
 }

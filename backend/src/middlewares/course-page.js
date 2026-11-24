@@ -1,6 +1,6 @@
 import { requireCourse } from '../services/course-service.js';
 export async function coursePageGuard(req,res,next) {
- if(req.path.startsWith('/courses')||/\.[a-z0-9]+$/i.test(req.path)&&!req.path.endsWith('.html'))return next();
+ if(req.path==='/personal'||req.path.startsWith('/personal/')||req.path.startsWith('/courses')||/\.[a-z0-9]+$/i.test(req.path)&&!req.path.endsWith('.html'))return next();
  try{
   const course=await requireCourse(req.user.id,req.cookies.ttnava_course||'');
   if(['primary','secondary','highschool'].includes(course.kind)){

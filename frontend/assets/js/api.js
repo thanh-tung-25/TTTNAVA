@@ -11,12 +11,20 @@ export const AVATARS = [
   { key: 'khi', name: 'Khỉ nâu' },
   { key: 'gau-truc', name: 'Gấu trúc' },
   { key: 'ho', name: 'Hổ cam' },
+  { key: 'ky-lan', name: 'Kỳ lân cầu vồng' },
+  { key: 'khung-long', name: 'Khủng long xanh' },
+  { key: 'canh-cut', name: 'Chim cánh cụt' },
+  { key: 'gau-koala', name: 'Gấu koala' },
+  { key: 'vet', name: 'Vẹt nhiệt đới' },
+  { key: 'ca-voi', name: 'Cá voi xanh' },
+  { key: 'cong-chua', name: 'Công chúa' },
+  { key: 'hoang-tu', name: 'Hoàng tử' },
 ];
 
 export function avatarUrl(key) {
-  if(key==='cu'||key==='lion')return '/assets/avatars/lion.svg';
+  if(key==='cu'||key==='lion')return '/assets/avatars/lion.svg?v=20261125-avatar2';
   const known = AVATARS.some((avatar) => avatar.key === key);
-  return `/assets/avatars/${known ? key : 'meo'}.svg`;
+  return `/assets/avatars/${known ? key : 'meo'}.svg?v=20261125-avatar2`;
 }
 
 export function escapeHtml(value) {

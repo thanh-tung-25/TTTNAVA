@@ -22,6 +22,7 @@
       </div>
       <span class="leaderboard-gem" aria-hidden="true">💎</span>
     </div>
+    <p class="leaderboard-award-note" id="leaderboard-award-note">🏆 Huy hiệu top tuần trước hiển thị trong tuần này: Top 1 cúp vàng, Top 2 cúp bạc, Top 3 cúp đồng.</p>
     <div class="tabs" id="range-tabs" role="tablist" aria-label="Khoảng thời gian">
       <button class="tab" type="button" data-range="week">Tuần này</button>
       <button class="tab" type="button" data-range="month">Tháng này</button>
@@ -47,6 +48,10 @@
     <p class="muted leaderboard-note" id="ranking-note" hidden>Kim cương bài tập và thưởng nhiệm vụ Tiếng Trung · Mốc tuần/tháng theo giờ Việt Nam.</p>
     <section class="card leaderboard-card" aria-label="Danh sách xếp hạng">
       <div id="rank-list"><div class="loading">Đang tải bảng xếp hạng…</div></div>
+    </section>
+    <section class="card weekly-history-card" aria-labelledby="weekly-history-title">
+      <h2 id="weekly-history-title">Top tuần gần đây</h2>
+      <div id="weekly-award-history" class="weekly-award-history" aria-live="polite"><p class="loading">Đang tải lịch sử cúp tuần…</p></div>
     </section>
   </main>
   <script type="module" src="/assets/js/leaderboard.js"></script>

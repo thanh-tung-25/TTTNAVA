@@ -1,11 +1,17 @@
 .personal-page{max-width:780px;padding-top:24px}
 .personal-page>h1{font-size:1.5rem;margin:0 0 20px}
 .personal-page #experience-root{display:grid;gap:20px}
+.personal-edit-page{display:grid;gap:18px;padding:24px;border:1px solid #e5dced;border-radius:24px;background:#fff;box-shadow:0 4px 0 #e8e0ef}
+.personal-edit-page>h2{margin:0;font-size:1.15rem;color:#302b4d}
+.personal-edit-page>.btn{justify-self:start}
+.personal-edit-page .personal-profile-form>.personal-panel-intro{margin:0}
+.personal-edit-page .personal-profile-form{display:grid;gap:16px}
 .personal-page #experience-notice:empty{display:none}
 .personal-account{display:flex;align-items:center;gap:20px;padding:26px;border:1px solid #e6dcef;border-radius:24px;background:linear-gradient(120deg,#faf7ff,#fffdf6);box-shadow:0 4px 0 #e8e0f0}
 .personal-avatar{flex:none;width:76px;height:76px;border:4px solid white;border-radius:24px;background:#f5edff;box-shadow:0 3px 0 #e2d7ed}
 .personal-identity{min-width:0}
 .personal-identity h2{font-size:1.35rem;line-height:1.35;margin:0 0 4px;color:#24234d}
+.personal-identity>.btn{align-self:flex-start;margin-top:12px}
 .personal-username{margin:0 0 10px;color:var(--muted);font-size:.85rem}
 .personal-course{display:inline-block;padding:5px 10px;border-radius:9px;background:#eee7f8;color:#7755a5;font-size:.8rem;font-weight:600}
 .personal-menu{overflow:hidden;border:1px solid #e5dced;border-radius:24px;background:#fff;box-shadow:0 4px 0 #e8e0ef}
@@ -40,6 +46,16 @@ body.student-unified .personal-shortcuts .btn{min-height:42px;padding:8px 2px;bo
 .personal-dialog :is(button,input,select,textarea):focus-visible{outline:3px solid #c4a5e2;outline-offset:2px}
 .personal-panel-intro{margin:0 0 20px;color:var(--muted);font-size:.9rem;line-height:1.6}
 .personal-fields{display:grid;gap:18px;margin-bottom:20px}
+.personal-avatar-editor{display:grid;grid-template-columns:88px minmax(0,1fr);align-items:center;gap:18px;margin:0 0 20px}
+.personal-avatar-preview{width:88px;height:88px;border:4px solid white;border-radius:26px;background:#f5edff;box-shadow:0 3px 0 #e2d7ed;object-fit:cover}
+.personal-avatar-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;max-height:370px;overflow:auto;padding:3px}
+.personal-avatar-choice{display:grid;justify-items:center;align-content:start;gap:5px;min-width:0;min-height:88px;padding:7px 4px;border:1px solid #e8e0ef;border-radius:13px;background:linear-gradient(145deg,#fff,#faf6ff);color:#55496a;font:inherit;cursor:pointer;transition:transform .16s,border-color .16s,box-shadow .16s}
+.personal-avatar-choice:hover{transform:translateY(-2px);border-color:#c5a5e4;box-shadow:0 4px 10px #74539518}
+.personal-avatar-choice.is-selected{border:2px solid #9d6bc9;background:linear-gradient(145deg,#f4eaff,#fff);box-shadow:0 0 0 3px #dac3f144}
+.personal-avatar-choice img{width:56px;height:56px;object-fit:contain;filter:drop-shadow(0 2px 2px #51406624)}
+.personal-avatar-choice span{max-width:100%;font-size:.62rem;line-height:1.3;text-align:center;overflow-wrap:anywhere}
+.personal-avatar-choice:focus-visible{outline:3px solid #c4a5e2;outline-offset:2px}
+.personal-profile-form>.btn{display:block;width:100%;margin-top:12px}
 .personal-field{display:grid;gap:8px;font-size:.9rem;font-weight:600}
 .personal-settings>.btn{display:block;width:100%;margin-top:12px}
 .personal-local-status{font-size:.88rem;line-height:1.5;color:#785497;overflow-wrap:anywhere}
@@ -92,6 +108,11 @@ body.student-unified .personal-shortcuts .btn{min-height:42px;padding:8px 2px;bo
  .personal-identity h2{font-size:1.15rem}
  .personal-username{font-size:.78rem}
  .personal-course{font-size:.74rem}
+ .personal-avatar-editor{grid-template-columns:72px minmax(0,1fr);gap:13px}
+ .personal-avatar-preview{width:72px;height:72px;border-radius:22px}
+ .personal-avatar-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;max-height:330px}
+ .personal-avatar-choice{min-height:82px;padding:6px 3px}
+ .personal-avatar-choice img{width:48px;height:48px}
  .personal-menu{border-radius:21px}
  .personal-menu-row{grid-template-columns:42px minmax(0,1fr) 12px;gap:12px;padding:19px 17px}
  .personal-menu-text strong{font-size:.9rem}

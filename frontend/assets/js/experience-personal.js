@@ -1,12 +1,12 @@
 import {request,boot,el,link,input,message,applyPreferences,onboarding} from './experience-ui.js';
-import {avatarUrl} from './api.js';
+import {api,avatarUrl,AVATARS} from './api.js';
 import {companionVisual} from './companion-visual.js';
 import {galleryPanel,familyPanel} from './personal-panels.js';
 
 const root=document.getElementById('experience-root'),descriptions=new Map();
 let profile,prefs,prefsPromise,currentPanel,pendingRelease=Promise.resolve(),sequence=0,guardianRequest=0;
-const titles={settings:'Cài đặt học',appearance:'Thành tích & trang trí',gallery:'Bài viết đã lưu',family:'Liên kết phụ huynh'};
-const shapes={settings:'<path d="M5 7h14M5 17h14"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/>',appearance:'<path d="m12 3 2.8 5.8 6.4.9-4.6 4.5 1.1 6.4-5.7-3-5.7 3 1.1-6.4-4.6-4.5 6.4-.9Z"/>',gallery:'<path d="M4 4h7c2 0 3 1 3 3v14c0-2-1-3-3-3H4Zm16 0h-6v17c0-2 1-3 3-3h3Z"/>',family:'<circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2m1-16a3 3 0 0 1 0 6m2 4c2 1 3 3 3 6"/>'};
+const titles={profile:'Thông tin cá nhân',settings:'Cài đặt học',appearance:'Thành tích & trang trí',gallery:'Bài viết đã lưu',family:'Liên kết phụ huynh'};
+const shapes={profile:'<circle cx="12" cy="8" r="3.5"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0M19 4l1 2 2 .3-1.5 1.4.4 2.1L19 8.8l-1.9 1 .4-2.1L16 6.3l2-.3Z"/>',settings:'<path d="M5 7h14M5 17h14"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/>',appearance:'<path d="m12 3 2.8 5.8 6.4.9-4.6 4.5 1.1 6.4-5.7-3-5.7 3 1.1-6.4-4.6-4.5 6.4-.9Z"/>',gallery:'<path d="M4 4h7c2 0 3 1 3 3v14c0-2-1-3-3-3H4Zm16 0h-6v17c0-2 1-3 3-3h3Z"/>',family:'<circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2m1-16a3 3 0 0 1 0 6m2 4c2 1 3 3 3 6"/>'};
 function icon(key){return el('span',{class:'personal-menu-icon personal-icon-'+key,'aria-hidden':'true',html:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+shapes[key]+'</svg>'});}
 function describe(key,text){const node=descriptions.get(key);if(node)node.textContent=text;}
 function settingsDescription(){if(prefs)describe('settings',`${prefs.minutes} phút mỗi buổi · ${prefs.font_scale==='large'?'Chữ lớn':'Chữ tiêu chuẩn'}`);}
@@ -47,7 +47,8 @@ async function loadPanel(context){
  const version=++context.load;context.body.replaceChildren(el('p',{class:'personal-loading',role:'status',text:'Đang tải…'}));
  try{
   let node,release=async()=>{};
-  if(context.kind==='settings')node=await learningSettings(context);
+  if(context.kind==='profile')node=profileSettings();
+  else if(context.kind==='settings')node=await learningSettings(context);
   else if(context.kind==='appearance')node=await appearance(context);
   else if(context.kind==='gallery'){const panel=await galleryPanel(profile,()=>loadPanel(context),e=>panelError(context,e));node=panel.node;release=panel.release;}
   else node=await familyPanel(await guardians(),()=>loadPanel(context),e=>panelError(context,e));
@@ -56,6 +57,34 @@ async function loadPanel(context){
  }catch(e){if(!active(context)||version!==context.load)return;context.body.replaceChildren(el('p',{class:'personal-local-status',role:'alert',text:e.message}),button('Thử lại',()=>loadPanel(context)));}
 }
 function panelError(context,error){if(!active(context))return;let status=context.body.querySelector('.personal-panel-error');if(!status){status=el('p',{class:'personal-local-status personal-panel-error',role:'alert'});context.body.prepend(status);}status.textContent=error.message;status.scrollIntoView({block:'nearest'});}
+
+function profileSettings(){
+ const form=el('form',{class:'personal-profile-form'}),status=localStatus();
+ const name=input('Tên hiển thị',{value:profile.displayName,maxlength:60,required:''});
+ const preview=el('img',{class:'personal-avatar-preview',src:avatarUrl(profile.avatarKey),alt:'Ảnh đại diện xem trước',width:88,height:88});
+ let avatarKey=profile.avatarKey==='lion'?'cu':AVATARS.some(item=>item.key===profile.avatarKey)?profile.avatarKey:'meo';
+ const avatarButtons=[];
+ const avatarOptions=el('div',{class:'personal-avatar-grid',role:'radiogroup','aria-label':'Chọn ảnh đại diện'},AVATARS.map(item=>{
+  const selected=item.key===avatarKey,node=el('button',{type:'button',class:'personal-avatar-choice'+(selected?' is-selected':''),role:'radio','aria-checked':String(selected),tabindex:selected?'0':'-1',title:item.name},[el('img',{src:avatarUrl(item.key),alt:'',width:56,height:56,loading:'lazy'}),el('span',{text:item.name})]);
+  avatarButtons.push(node);node.onclick=()=>{avatarKey=item.key;preview.src=avatarUrl(avatarKey);avatarButtons.forEach((button,index)=>{const active=AVATARS[index].key===avatarKey;button.classList.toggle('is-selected',active);button.setAttribute('aria-checked',String(active));button.tabIndex=active?0:-1;});};return node;
+ }));
+ avatarOptions.onkeydown=event=>{if(!['ArrowRight','ArrowDown','ArrowLeft','ArrowUp','Home','End'].includes(event.key))return;event.preventDefault();const current=avatarButtons.findIndex(button=>button===document.activeElement);const next=event.key==='Home'?0:event.key==='End'?avatarButtons.length-1:(current+(event.key==='ArrowRight'||event.key==='ArrowDown'?1:-1)+avatarButtons.length)%avatarButtons.length;avatarButtons[next].focus();avatarButtons[next].click();};
+ const save=button('Lưu thông tin',async()=>{
+  if(!form.reportValidity())return;
+  const result=await api('/api/v1/auth/profile',{method:'PUT',body:{displayName:name.node.value,avatarKey}});
+  profile={...profile,...result.data.profile};
+  const personalAvatar=document.querySelector('.personal-avatar');if(personalAvatar)personalAvatar.src=avatarUrl(profile.avatarKey);
+  const personalName=document.querySelector('.personal-identity h2');if(personalName)personalName.textContent=profile.displayName;
+  for(const account of document.querySelectorAll('.student-account')){
+   account.querySelectorAll('strong').forEach(node=>node.textContent=profile.displayName);
+   account.querySelector('summary')?.setAttribute('aria-label','Tài khoản của '+profile.displayName);
+   const image=account.querySelector('img.avatar');if(image)image.src=avatarUrl(profile.avatarKey);
+  }
+  status.textContent='Đã lưu thông tin cá nhân.';
+ },status,true);
+ form.append(el('p',{class:'personal-panel-intro',text:'Đổi tên hiển thị và chọn một nhân vật làm ảnh đại diện.'}),el('div',{class:'personal-avatar-editor'},[preview,avatarOptions]),name.wrap,status,save);
+ form.onsubmit=event=>{event.preventDefault();save.click();};return form;
+}
 
 async function learningSettings(context){
  const saved=await preferences(),form=el('form',{class:'personal-settings'}),status=localStatus();
@@ -107,9 +136,14 @@ async function appearance(context){
 }
 async function main(){
  profile=await boot('personal');message('');
- const account=el('section',{class:'personal-account','aria-label':'Thông tin tài khoản'},[el('img',{class:'personal-avatar',src:avatarUrl(profile.avatarKey),alt:'',width:72,height:72}),el('div',{class:'personal-identity'},[el('h2',{text:profile.displayName}),...(profile.username?[el('p',{class:'personal-username',text:'@'+profile.username})]:[]),el('span',{class:'personal-course',text:profile.course.title})])]);
+ if(new URLSearchParams(location.search).get('edit')==='profile'){
+  document.querySelector('.personal-page>h1').textContent='Chỉnh sửa hồ sơ';
+  root.replaceChildren(el('section',{class:'personal-edit-page'},[link('← Quay lại Cá nhân','/pages/student/personal/'),el('h2',{text:'Thông tin cá nhân'}),profileSettings()]));
+  return;
+ }
+ const account=el('section',{class:'personal-account','aria-label':'Thông tin tài khoản'},[el('img',{class:'personal-avatar',src:avatarUrl(profile.avatarKey),alt:'',width:72,height:72}),el('div',{class:'personal-identity'},[el('h2',{text:profile.displayName}),...(profile.username?[el('p',{class:'personal-username',text:'@'+profile.username})]:[]),el('span',{class:'personal-course',text:profile.course?.title||'Chưa chọn khóa học'}),button('Sửa thông tin',()=>openPanel('profile').catch(e=>message(e.message,true)))])]);
  const menu=el('section',{class:'personal-menu','aria-label':'Quản lý cá nhân'});
- const hints={settings:'Thời lượng, cỡ chữ và tốc độ đọc',appearance:'Xem thành tích, tùy chỉnh góc học',gallery:'Những điều bạn muốn giữ lại',family:'Quản lý quyền xem báo cáo học tập'};
+ const hints={profile:'Đổi tên hiển thị và ảnh đại diện',settings:'Thời lượng, cỡ chữ và tốc độ đọc',appearance:'Xem thành tích, tùy chỉnh góc học',gallery:'Những điều bạn muốn giữ lại',family:'Quản lý quyền xem báo cáo học tập'};
  for(const kind of Object.keys(titles)){
   const description=el('small',{text:hints[kind]});descriptions.set(kind,description);
   menu.append(el('button',{type:'button',class:'personal-menu-row','data-personal-panel':kind,'aria-haspopup':'dialog',onclick:()=>openPanel(kind).catch(e=>message(e.message,true))},[icon(kind),el('span',{class:'personal-menu-text'},[el('strong',{text:titles[kind]}),description]),el('span',{class:'personal-menu-chevron','aria-hidden':'true',text:'›'})]));

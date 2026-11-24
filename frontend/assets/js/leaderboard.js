@@ -24,7 +24,7 @@ function row(item, index) {
   const award = monthly ? monthlyAward : range === 'week' ? weeklyAward : 0;
   const awardLabel = award ? `Top ${award} ${monthly ? 'tháng trước' : 'tuần trước'}` : '';
   const badge = award
-    ? `<span class="leaderboard-award-badge award-${award} period-${monthly?'month':'week'}" role="img" aria-label="${awardLabel}" title="${awardLabel}"><span aria-hidden="true">${monthly?'👑':'🏆'}</span><small>Top ${award}</small></span>`
+    ? `<span class="leaderboard-award-badge award-${award} period-${monthly?'month':'week'}" role="img" aria-label="${awardLabel}" title="${awardLabel}"><span aria-hidden="true">${monthly?'👑':'🏆'}</span><small>${awardLabel}</small></span>`
     : '';
   const avatar = `<img class="avatar avatar-sm" src="${avatarUrl(item.avatarKey)}" alt="">`;
   return `

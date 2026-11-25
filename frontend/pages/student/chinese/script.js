@@ -19,7 +19,7 @@ const json=v=>typeof v==='string'?JSON.parse(v):v;
 const extra=(title,children)=>el('details',{class:'learn-extra'},[el('summary',{text:title}),...children]);
 function action(text,fn,primary=false){const b=button(text,async()=>{b.disabled=true;try{await fn();}catch(e){error(e);}finally{b.disabled=false;}});if(primary)b.className='btn btn-primary';return b;}
 const markStudyEngagement=()=>{lastStudyEngagement=Date.now();};
-for(const event of ['pointerdown','keydown','touchstart','input'])document.addEventListener(event,markStudyEngagement,{passive:true});
+for(const event of ['pointerdown','keydown','touchstart','input','scroll'])document.addEventListener(event,markStudyEngagement,{passive:true});
 function stopActiveStudyClock(){clearInterval(activeStudyTimer);activeStudyTimer=null;activeStudyAttempt=null;activeStudyNode=null;}
 function startActiveStudyClock(id,node){
  activeStudyNode=node;
@@ -28,7 +28,7 @@ function startActiveStudyClock(id,node){
  const pulse=async()=>{
   if(activeStudyRequest||document.visibilityState!=='visible'||Date.now()-lastStudyEngagement>45000)return;
   activeStudyRequest=true;
-  try{const state=await request('/attempts/'+id+'/activity','POST',{active:true});if(activeStudyAttempt!==id)return;
+  try{const state=await request('/study-time/activity','POST',{active:true});if(activeStudyAttempt!==id)return;
    if(Number.isFinite(state.week_days))activeStudyWeekDays=state.week_days;
    const minutes=Math.floor((state.daily_seconds||0)/60),earnedLabels=[...(state.earned||[]).map(item=>`${item.minutes} phút +${item.amount}`),...(state.week_earned||[]).map(item=>`${item.days} ngày học +${item.amount}`)];
    activeStudyNode?.replaceChildren(el('span',{text:`⏱ Hôm nay: ${minutes} phút làm bài · Mốc ngày: 10 phút +1, 30 phút tổng +5, 60 phút tổng +10. Chuỗi tuần: ${activeStudyWeekDays||0}/7 ngày · 5 ngày +5, 7 ngày tổng +10 kim cương.`}),...(state.earned_now?[el('strong',{class:'answer-correct',text:` Vừa nhận +${state.earned_now} kim cương${earnedLabels.length?' · '+earnedLabels.join(', '):''}.`})]:[]));
@@ -76,6 +76,7 @@ async function learn(id){
    link('Sổ từ',{view:'notebook'}),link('Kết quả',{view:'history'}),el('p',{class:'study-source',text:set.title})
   ])])
  ]));
+ const clock=el('p',{class:'muted',text:'⏱ Thời gian học hôm nay sẽ được ghi nhận khi con đang học.'});root().append(clock);startActiveStudyClock('lesson-'+id,clock);
  const words=uniqueStudyWords(items.filter(i=>i.kind==='vocabulary')),questions=items.filter(i=>i.kind==='question'),reads=items.filter(i=>['grammar','reading','dialogue'].includes(i.kind)&&i.data.practice!=='speaking'),spoken=items.some(i=>i.kind==='dialogue'&&i.data.practice==='speaking');
  const mode=params.get('mode')||(words.length||questions.length?'cards':spoken?'speak':'read');
  const applied=activities?.tasks?.length?activities:null;
@@ -207,5 +208,5 @@ async function showAttempt(a,index){
  const tools=[];
  tools.push(action('Nộp bài sớm',async()=>{if(confirm('Nộp bài ngay? Câu chưa kiểm tra sẽ được tính sai.'))await showAttempt(await request('/attempts/'+a.id+'/finish','POST'));}));root().append(extra('Tùy chọn quiz',tools));
 }
-window.addEventListener('pagehide',()=>clearInterval(timer));
+window.addEventListener('pagehide',()=>{clearInterval(timer);stopActiveStudyClock();});
 boot().catch(error);

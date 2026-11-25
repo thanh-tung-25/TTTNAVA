@@ -36,6 +36,7 @@ router.put('/reviews/:id',requireStudent,c.review);
 router.put('/sets/:id/progress',requireStudent,c.progress);
 router.get('/history',requireStudent,c.history);
 router.get('/study-time',requireStudent,c.studyTime);
+router.post('/study-time/activity',requireStudent,rateLimit({windowMs:60000,max:40,keyPrefix:'chinese-study-time'}),c.studyActivity);
 router.post('/attempts',requireStudent,rateLimit({windowMs:60000,max:20,keyPrefix:'chinese-start'}),c.start);
 router.get('/attempts/:id',requireStudent,c.attempt);
 router.post('/attempts/:id/answers',requireStudent,c.answer);

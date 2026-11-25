@@ -14,7 +14,7 @@ assert(process.env.PGHOST.endsWith('.pooler.supabase.com'));
 assert(process.env.PGUSER.endsWith('.njaasgcfgjismpmzoncb'));
 assert.equal(process.env.PGSCHEMA,'ttnava_stage');
 const [{query,withTransaction,closePool},{createHash}]=await Promise.all([import('../src/config/db.js'),import('node:crypto')]);
-const migrations=['053_chinese_hsk1_test_rewards.sql','054_chinese_active_study_time.sql'];
+const migrations=['053_chinese_hsk1_test_rewards.sql','054_chinese_active_study_time.sql','055_chinese_daily_activity_ping.sql'];
 const protectedTables={
  profiles:'SELECT id,role,deleted_at FROM profiles ORDER BY id',
  chinese_tests:'SELECT id,title,set_ids,duration_seconds,pass_percent,status FROM chinese_tests ORDER BY id',
@@ -25,7 +25,7 @@ const protectedTables={
 const digest=rows=>createHash('sha256').update(JSON.stringify(rows)).digest('hex');
 async function snapshot(run){const out={};for(const [name,sql]of Object.entries(protectedTables)){const rows=await run(sql);out[name]={count:rows.length,sha256:digest(rows)};}return out;}
 async function schemaState(run){
- const columns=await run("SELECT table_name,column_name FROM information_schema.columns WHERE table_schema=current_schema() AND ((table_name='chinese_tests' AND column_name IN ('question_count','reward_policy')) OR (table_name='chinese_attempts' AND column_name IN ('active_seconds','activity_ping_at')))"),tables=await run("SELECT table_name FROM information_schema.tables WHERE table_schema=current_schema() AND table_name='chinese_daily_study'"),applied=await run("SELECT name FROM schema_migrations WHERE name IN (?,?)",migrations);
+ const columns=await run("SELECT table_name,column_name FROM information_schema.columns WHERE table_schema=current_schema() AND ((table_name='chinese_tests' AND column_name IN ('question_count','reward_policy')) OR (table_name='chinese_attempts' AND column_name IN ('active_seconds','activity_ping_at')) OR (table_name='chinese_daily_study' AND column_name='activity_ping_at'))"),tables=await run("SELECT table_name FROM information_schema.tables WHERE table_schema=current_schema() AND table_name='chinese_daily_study'"),applied=await run("SELECT name FROM schema_migrations WHERE name IN (?,?,?)",migrations);
  return {columns:columns.map(x=>x.table_name+'.'+x.column_name).sort(),dailyTable:tables.length===1,applied:applied.map(x=>x.name).sort()};
 }
 try{
@@ -46,11 +46,11 @@ try{
    }
    const afterState=await schemaState(run),after=await snapshot(run);
    assert(afterState.dailyTable,'chinese_daily_study was not created');
-   assert.deepEqual(afterState.columns,['chinese_attempts.active_seconds','chinese_attempts.activity_ping_at','chinese_tests.question_count','chinese_tests.reward_policy']);
+   assert.deepEqual(afterState.columns,['chinese_attempts.active_seconds','chinese_attempts.activity_ping_at','chinese_daily_study.activity_ping_at','chinese_tests.question_count','chinese_tests.reward_policy']);
    for(const table of Object.keys(protectedBefore))assert.deepEqual(after[table],protectedBefore[table],`Existing ${table} data changed`);
    return {applied:migrations.filter(name=>!current.applied.includes(name)),schemaReady:true,protectedDataUnchanged:true};
   });
   console.log(JSON.stringify({ok:true,mode:'applied',...migrationResult}));
- }else console.log(JSON.stringify({ok:true,mode:'read-only-preview',schemaReady:state.dailyTable&&state.columns.length===4,missingColumns:['chinese_tests.question_count','chinese_tests.reward_policy','chinese_attempts.active_seconds','chinese_attempts.activity_ping_at'].filter(name=>!state.columns.includes(name)),dailyTable:state.dailyTable,applied:state.applied,protected:before}));
+ }else console.log(JSON.stringify({ok:true,mode:'read-only-preview',schemaReady:state.dailyTable&&state.columns.length===5,missingColumns:['chinese_tests.question_count','chinese_tests.reward_policy','chinese_attempts.active_seconds','chinese_attempts.activity_ping_at','chinese_daily_study.activity_ping_at'].filter(name=>!state.columns.includes(name)),dailyTable:state.dailyTable,applied:state.applied,protected:before}));
 }catch(error){console.error(JSON.stringify({ok:false,code:error.code||error.name,message:error.name==='AssertionError'?error.message:'Chinese study schema preparation failed; private connection details omitted.'}));process.exitCode=1;}
 finally{await closePool();}

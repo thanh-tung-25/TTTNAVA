@@ -14,7 +14,7 @@ import {renderChineseAiChat} from '/assets/js/chinese-ai-chat.js';
 import {renderChineseStreet} from '/assets/js/chinese-street.js';
 import {configureChinesePage} from '/assets/js/chinese-student-navigation.js';
 import {studyReward} from '/assets/js/study-reward.js';
-const params=new URLSearchParams(location.search);let catalog,timer,learner,activeStudyTimer,activeStudyAttempt,activeStudyNode,lastStudyEngagement=Date.now(),activeStudyRequest=false;
+const params=new URLSearchParams(location.search);let catalog,timer,learner,activeStudyTimer,activeStudyAttempt,activeStudyNode,activeStudyWeekDays,lastStudyEngagement=Date.now(),activeStudyRequest=false;
 const json=v=>typeof v==='string'?JSON.parse(v):v;
 const extra=(title,children)=>el('details',{class:'learn-extra'},[el('summary',{text:title}),...children]);
 function action(text,fn,primary=false){const b=button(text,async()=>{b.disabled=true;try{await fn();}catch(e){error(e);}finally{b.disabled=false;}});if(primary)b.className='btn btn-primary';return b;}
@@ -24,13 +24,14 @@ function stopActiveStudyClock(){clearInterval(activeStudyTimer);activeStudyTimer
 function startActiveStudyClock(id,node){
  activeStudyNode=node;
  if(activeStudyAttempt===id&&activeStudyTimer)return;
- stopActiveStudyClock();activeStudyAttempt=id;lastStudyEngagement=Date.now();
+ stopActiveStudyClock();activeStudyAttempt=id;activeStudyWeekDays=undefined;lastStudyEngagement=Date.now();
  const pulse=async()=>{
   if(activeStudyRequest||document.visibilityState!=='visible'||Date.now()-lastStudyEngagement>45000)return;
   activeStudyRequest=true;
   try{const state=await request('/attempts/'+id+'/activity','POST',{active:true});if(activeStudyAttempt!==id)return;
+   if(Number.isFinite(state.week_days))activeStudyWeekDays=state.week_days;
    const minutes=Math.floor((state.daily_seconds||0)/60),earnedLabels=[...(state.earned||[]).map(item=>`${item.minutes} phút +${item.amount}`),...(state.week_earned||[]).map(item=>`${item.days} ngày học +${item.amount}`)];
-   activeStudyNode?.replaceChildren(el('span',{text:`⏱ Hôm nay: ${minutes} phút làm bài · Mốc ngày: 10 phút +1, 30 phút tổng +5, 60 phút tổng +10. Chuỗi tuần: ${state.week_days||0}/7 ngày · 5 ngày +5, 7 ngày tổng +10 kim cương.`}),...(state.earned_now?[el('strong',{class:'answer-correct',text:` Vừa nhận +${state.earned_now} kim cương${earnedLabels.length?' · '+earnedLabels.join(', '):''}.`})]:[]));
+   activeStudyNode?.replaceChildren(el('span',{text:`⏱ Hôm nay: ${minutes} phút làm bài · Mốc ngày: 10 phút +1, 30 phút tổng +5, 60 phút tổng +10. Chuỗi tuần: ${activeStudyWeekDays||0}/7 ngày · 5 ngày +5, 7 ngày tổng +10 kim cương.`}),...(state.earned_now?[el('strong',{class:'answer-correct',text:` Vừa nhận +${state.earned_now} kim cương${earnedLabels.length?' · '+earnedLabels.join(', '):''}.`})]:[]));
    if(state.earned_now)syncDiamondTotal();
   }catch{}
   finally{activeStudyRequest=false;}
@@ -56,12 +57,12 @@ async function boot(){
  configureChinesePage(profile,params);
  if(aiChat){notice('');return renderChineseAiChat(root(),{level:profile.course.level});}
  if(street){notice('');return renderChineseStreet(root(),{level:profile.course.level});}
- catalog=await request('/catalog');notice('');
- if(params.has('attempt'))return showAttempt(await request('/attempts/'+params.get('attempt')));
+ notice('');if(params.has('attempt'))return showAttempt(await request('/attempts/'+params.get('attempt')));
+ if(params.get('view')==='tests')return tests();
+ catalog=await request('/catalog');
  if(params.has('set'))return learn(params.get('set'));
  if(params.get('view')==='notebook')return notebook();
  if(params.get('view')==='history')return renderHistory(catalog);
- if(params.get('view')==='tests')return tests();
  lessons();
 }
 function lessons(){renderChineseLessons({catalog,params,quiz});void showStudyStreak();}

@@ -13,6 +13,7 @@ import {studentVisibleCondition} from '../utils/student-visibility.js';
 import {mixStudy,shuffleStudy} from '../../../frontend/assets/js/chinese-study-variety.js';
 import {vnDateKey,vnRange} from '../utils/time.js';
 import {insertLedger} from './ledger-service.js';
+import {requireCourse} from './course-service.js';
 export { catalog };
 const txRun = c => async (sql,p=[]) => (await c.query(sql,p))[0];
 export async function saveLesson(id, body) {
@@ -159,8 +160,12 @@ async function ensureHsk1Tests(){
 }
 export async function tests(admin) {
  if(!admin)await ensureHsk1Tests();
- const rows=await query(`SELECT * FROM chinese_tests ${admin?'':"WHERE status='published'"}`), result=[];
- for(const row of rows) { row.set_ids=json(row.set_ids); if(!admin) { try { for(const s of row.set_ids) await getSet(s); } catch { continue; } } result.push(row); } return result;
+ const rows=await query(`SELECT * FROM chinese_tests ${admin?'':"WHERE status='published'"}`);
+ for(const row of rows)row.set_ids=json(row.set_ids);
+ if(admin)return rows;
+ const ids=[...new Set(rows.flatMap(row=>row.set_ids))];if(!ids.length)return [];
+ const published=await query(`SELECT s.id FROM chinese_sets s JOIN chinese_lessons l ON l.id=s.lesson_id WHERE s.id IN (${ids.map(()=>'?').join(',')}) AND s.status='published' AND l.status='published'`,ids),available=new Set(published.map(row=>row.id));
+ return rows.filter(row=>row.set_ids.every(id=>available.has(id)));
 }
 export async function start(user,body) {
  const d=parse(z.object({test_id:z.string().uuid().optional(),set_id:z.string().uuid().optional(),count:z.number().int().min(1).max(20).optional(),selection:z.enum(['mixed','sequential','review']).default('mixed'),block:z.number().int().min(0).max(100).default(0)}),body);
@@ -281,25 +286,29 @@ export async function attempt(user,id,action=null,body={}) {
  });
 }
 async function qualifyingChineseStudyDays(run,user,courseId,weekStart,weekEnd,range){
- const studyDays=new Set(),dateKey=value=>value instanceof Date?vnDateKey(value):/^\d{4}-\d{2}-\d{2}$/.test(String(value))?String(value):vnDateKey(new Date(value));
- const dailyRows=await run('SELECT study_day,active_seconds FROM chinese_daily_study WHERE profile_id=? AND study_day>=? AND study_day<=?',[user,weekStart,weekEnd]);
- for(const row of dailyRows)if(Number(row.active_seconds)>=600)studyDays.add(dateKey(row.study_day));
- const sessions=await run('SELECT completed_at FROM study_activity_sessions WHERE profile_id=? AND course_id=? AND completed_at>=? AND completed_at<=?',[user,courseId,range.start,range.end]);
- for(const row of sessions)if(row.completed_at)studyDays.add(dateKey(row.completed_at));
- const attempts=await run('SELECT finished_at,snapshot FROM chinese_attempts WHERE student_id=? AND finished_at>=? AND finished_at<=? AND abandoned_at IS NULL',[user,range.start,range.end]);
- for(const row of attempts)if(row.finished_at&&(json(row.snapshot).course_ids||[]).includes(courseId))studyDays.add(dateKey(row.finished_at));
- const events=await run("SELECT event_day FROM learning_events WHERE profile_id=? AND course_id=? AND event_kind='study_completed' AND event_day>=? AND event_day<=?",[user,courseId,weekStart,weekEnd]);
- for(const row of events)studyDays.add(dateKey(row.event_day));
- return studyDays;
+ const sql=dialectSql(
+  `SELECT study_day FROM chinese_daily_study WHERE profile_id=? AND study_day>=? AND study_day<=? AND active_seconds>=600
+   UNION SELECT DATE(DATE_ADD(completed_at,INTERVAL 7 HOUR)) FROM study_activity_sessions WHERE profile_id=? AND course_id=? AND completed_at>=? AND completed_at<=?
+   UNION SELECT DATE(DATE_ADD(finished_at,INTERVAL 7 HOUR)) FROM chinese_attempts WHERE student_id=? AND finished_at>=? AND finished_at<=? AND abandoned_at IS NULL AND JSON_CONTAINS(snapshot,JSON_QUOTE(?),'$.course_ids')
+   UNION SELECT event_day FROM learning_events WHERE profile_id=? AND course_id=? AND event_kind='study_completed' AND event_day>=? AND event_day<=?`,
+  `SELECT study_day FROM chinese_daily_study WHERE profile_id=? AND study_day>=? AND study_day<=? AND active_seconds>=600
+   UNION SELECT (completed_at AT TIME ZONE 'Asia/Ho_Chi_Minh')::date FROM study_activity_sessions WHERE profile_id=? AND course_id=? AND completed_at>=? AND completed_at<=?
+   UNION SELECT (finished_at AT TIME ZONE 'Asia/Ho_Chi_Minh')::date FROM chinese_attempts WHERE student_id=? AND finished_at>=? AND finished_at<=? AND abandoned_at IS NULL AND EXISTS(SELECT 1 FROM jsonb_array_elements_text(snapshot->'course_ids') AS item(value) WHERE item.value=?)
+   UNION SELECT event_day FROM learning_events WHERE profile_id=? AND course_id=? AND event_kind='study_completed' AND event_day>=? AND event_day<=?`);
+ const rows=await run(sql,[user,weekStart,weekEnd,user,courseId,range.start,range.end,user,range.start,range.end,courseId,user,courseId,weekStart,weekEnd]);
+ return new Set(rows.map(row=>row.study_day instanceof Date?vnDateKey(row.study_day):/^\d{4}-\d{2}-\d{2}$/.test(String(row.study_day))?String(row.study_day):vnDateKey(new Date(row.study_day))));
 }
 export async function studyTimeProgress(user,courseId='hsk-1'){
- await requireCourse(user,courseId);const now=new Date(),day=vnDateKey(now),range=vnRange('week'),weekStart=vnDateKey(range.start);
- const [daily]=await query('SELECT active_seconds FROM chinese_daily_study WHERE profile_id=? AND study_day=?',[user,day]);
- const studyDays=await qualifyingChineseStudyDays(query,user,courseId,weekStart,day,range);
- const dailyClaims=await query("SELECT task_key FROM student_quest_claims WHERE profile_id=? AND course_id=? AND claim_day=? AND task_key IN ('studytime:10','studytime:30','studytime:60')",[user,courseId,day]);
- const weekClaims=await query("SELECT task_key FROM student_quest_claims WHERE profile_id=? AND course_id=? AND claim_day=? AND task_key IN ('studyweek:5','studyweek:7')",[user,courseId,weekStart]);
- const claimed=new Set(dailyClaims.map(row=>row.task_key)),weeklyClaimed=new Set(weekClaims.map(row=>row.task_key));
- return {daily_seconds:Number(daily?.active_seconds)||0,week_days:studyDays.size,week_start:weekStart,milestones:[{minutes:10,total:1,claimed:claimed.has('studytime:10')},{minutes:30,total:5,claimed:claimed.has('studytime:30')},{minutes:60,total:10,claimed:claimed.has('studytime:60')}],weekly_milestones:[{days:5,total:5,claimed:weeklyClaimed.has('studyweek:5')},{days:7,total:10,claimed:weeklyClaimed.has('studyweek:7')}]};
+ return withTransaction(async c=>{
+  const run=txRun(c),now=new Date(),day=vnDateKey(now),range=vnRange('week'),weekStart=vnDateKey(range.start);
+  await requireCourse(user,courseId,run);
+  const [daily]=await run('SELECT active_seconds FROM chinese_daily_study WHERE profile_id=? AND study_day=?',[user,day]);
+  const studyDays=await qualifyingChineseStudyDays(run,user,courseId,weekStart,day,range);
+  const dailyClaims=await run("SELECT task_key FROM student_quest_claims WHERE profile_id=? AND course_id=? AND claim_day=? AND task_key IN ('studytime:10','studytime:30','studytime:60')",[user,courseId,day]);
+  const weekClaims=await run("SELECT task_key FROM student_quest_claims WHERE profile_id=? AND course_id=? AND claim_day=? AND task_key IN ('studyweek:5','studyweek:7')",[user,courseId,weekStart]);
+  const claimed=new Set(dailyClaims.map(row=>row.task_key)),weeklyClaimed=new Set(weekClaims.map(row=>row.task_key));
+  return {daily_seconds:Number(daily?.active_seconds)||0,week_days:studyDays.size,week_start:weekStart,milestones:[{minutes:10,total:1,claimed:claimed.has('studytime:10')},{minutes:30,total:5,claimed:claimed.has('studytime:30')},{minutes:60,total:10,claimed:claimed.has('studytime:60')}],weekly_milestones:[{days:5,total:5,claimed:weeklyClaimed.has('studyweek:5')},{days:7,total:10,claimed:weeklyClaimed.has('studyweek:7')}]};
+ });
 }
 export async function trackActiveTime(user,id,body={}){
  const d=parse(z.object({active:z.boolean()}),body),day=vnDateKey(new Date()),milestones=[{minutes:10,seconds:600,total:1},{minutes:30,seconds:1800,total:5},{minutes:60,seconds:3600,total:10}];
@@ -308,28 +317,33 @@ export async function trackActiveTime(user,id,body={}){
   const a=await one('SELECT * FROM chinese_attempts WHERE id=? AND student_id=? FOR UPDATE',[id,user],run);
   if(a.abandoned_at)throw new AppError(409,'ATTEMPT_CLOSED','Lượt học này đã đóng.');
   if(a.finished_at)return {active_seconds:Number(a.active_seconds)||0,daily_seconds:null,earned_now:0,milestones:[]};
-  const now=new Date(),last=a.activity_ping_at?new Date(a.activity_ping_at):new Date(a.started_at),gap=(now-last)/1000;
+  const firstPing=!a.activity_ping_at,now=new Date(),last=a.activity_ping_at?new Date(a.activity_ping_at):new Date(a.started_at),gap=(now-last)/1000;
   const elapsed=gap>=0&&gap<=25?Math.floor(gap):0;
   await run('UPDATE chinese_attempts SET active_seconds=active_seconds+?,activity_ping_at=? WHERE id=?',[elapsed,d.active?now:null,id]);
-  const snapshot=json(a.snapshot),courseId=(snapshot.course_ids||[]).find(value=>String(value).startsWith('hsk-'))||'hsk-1';
-  await requireCourse(user,courseId,run);
-  await run(dialectSql('INSERT INTO chinese_daily_study(profile_id,study_day,active_seconds) VALUES (?,?,0) ON DUPLICATE KEY UPDATE profile_id=VALUES(profile_id)','INSERT INTO chinese_daily_study(profile_id,study_day,active_seconds) VALUES (?,?,0) ON CONFLICT(profile_id,study_day) DO NOTHING'),[user,day]);
-  if(elapsed)await run('UPDATE chinese_daily_study SET active_seconds=active_seconds+?,updated_at=CURRENT_TIMESTAMP(3) WHERE profile_id=? AND study_day=?',[elapsed,user,day]);
-  const daily=await one('SELECT active_seconds FROM chinese_daily_study WHERE profile_id=? AND study_day=? FOR UPDATE',[user,day],run),seconds=Number(daily.active_seconds)||0;
-  const claims=await run('SELECT task_key FROM student_quest_claims WHERE profile_id=? AND course_id=? AND claim_day=? AND task_key IN (\'studytime:10\',\'studytime:30\',\'studytime:60\')',[user,courseId,day]),claimed=new Set(claims.map(row=>row.task_key)),earned=[];
-  for(const milestone of milestones){const key=`studytime:${milestone.minutes}`;if(seconds<milestone.seconds||claimed.has(key))continue;
-   const id=randomUUID();await run('INSERT INTO student_quest_claims(id,profile_id,course_id,claim_day,task_key) VALUES (?,?,?,?,?)',[id,user,courseId,day,key]);
-   const amount=milestone.total-(milestones.filter(value=>value.minutes<milestone.minutes).at(-1)?.total||0);
-   await insertLedger(c,{profileId:user,amount,reason:'quest_reward',refType:'quest',refId:id});earned.push({minutes:milestone.minutes,amount});
+  let [daily]=await run('SELECT active_seconds FROM chinese_daily_study WHERE profile_id=? AND study_day=? FOR UPDATE',[user,day]);
+  if(!daily){await run('INSERT INTO chinese_daily_study(profile_id,study_day,active_seconds) VALUES (?,?,0)',[user,day]);daily={active_seconds:0};}
+  const beforeSeconds=Number(daily.active_seconds)||0;
+  if(elapsed){await run('UPDATE chinese_daily_study SET active_seconds=active_seconds+?,updated_at=CURRENT_TIMESTAMP(3) WHERE profile_id=? AND study_day=?',[elapsed,user,day]);daily.active_seconds=beforeSeconds+elapsed;}
+  const seconds=Number(daily.active_seconds)||0,earned=[],weeklyEarned=[];let weekDays;
+  const checkDaily=firstPing||milestones.some(value=>beforeSeconds<value.seconds&&seconds>=value.seconds);
+  if(checkDaily){
+   const claims=await run('SELECT task_key FROM student_quest_claims WHERE profile_id=? AND course_id=? AND claim_day=? AND task_key IN (\'studytime:10\',\'studytime:30\',\'studytime:60\')',[user,courseId,day]),claimed=new Set(claims.map(row=>row.task_key));
+   for(const milestone of milestones){const key=`studytime:${milestone.minutes}`;if(seconds<milestone.seconds||claimed.has(key))continue;
+    const claimId=randomUUID();await run('INSERT INTO student_quest_claims(id,profile_id,course_id,claim_day,task_key) VALUES (?,?,?,?,?)',[claimId,user,courseId,day,key]);
+    const amount=milestone.total-(milestones.filter(value=>value.minutes<milestone.minutes).at(-1)?.total||0);
+    await insertLedger(c,{profileId:user,amount,reason:'quest_reward',refType:'quest',refId:claimId});earned.push({minutes:milestone.minutes,amount});
+   }
   }
-  const weekStart=vnDateKey(vnRange('week').start),weekEnd=day,weekClaims=await run('SELECT task_key FROM student_quest_claims WHERE profile_id=? AND course_id=? AND claim_day=? AND task_key IN (\'studyweek:5\',\'studyweek:7\')',[user,courseId,weekStart]),weekClaimed=new Set(weekClaims.map(row=>row.task_key));
-  const range=vnRange('week'),studyDays=await qualifyingChineseStudyDays(run,user,courseId,weekStart,weekEnd,range);
-  const weekDays=studyDays.size,weeklyEarned=[];
-  for(const milestone of [{days:5,key:'studyweek:5',amount:5},{days:7,key:'studyweek:7',amount:5}])if(weekDays>=milestone.days&&!weekClaimed.has(milestone.key)){
-   const claimId=randomUUID();await run('INSERT INTO student_quest_claims(id,profile_id,course_id,claim_day,task_key) VALUES (?,?,?,?,?)',[claimId,user,courseId,weekStart,milestone.key]);
-   await insertLedger(c,{profileId:user,amount:milestone.amount,reason:'quest_reward',refType:'quest',refId:claimId});weeklyEarned.push({days:milestone.days,amount:milestone.amount});
+  const checkWeek=firstPing||beforeSeconds<600&&seconds>=600,weekStart=vnDateKey(vnRange('week').start);
+  if(checkWeek){
+   const weekClaims=await run('SELECT task_key FROM student_quest_claims WHERE profile_id=? AND course_id=? AND claim_day=? AND task_key IN (\'studyweek:5\',\'studyweek:7\')',[user,courseId,weekStart]),weekClaimed=new Set(weekClaims.map(row=>row.task_key));
+   const studyDays=await qualifyingChineseStudyDays(run,user,courseId,weekStart,day,vnRange('week'));weekDays=studyDays.size;
+   for(const milestone of [{days:5,key:'studyweek:5',amount:5},{days:7,key:'studyweek:7',amount:5}])if(weekDays>=milestone.days&&!weekClaimed.has(milestone.key)){
+    const claimId=randomUUID();await run('INSERT INTO student_quest_claims(id,profile_id,course_id,claim_day,task_key) VALUES (?,?,?,?,?)',[claimId,user,courseId,weekStart,milestone.key]);
+    await insertLedger(c,{profileId:user,amount:milestone.amount,reason:'quest_reward',refType:'quest',refId:claimId});weeklyEarned.push({days:milestone.days,amount:milestone.amount});
+   }
   }
-  return {active_seconds:Number(a.active_seconds||0)+elapsed,daily_seconds:seconds,week_days:weekDays,week_earned:weeklyEarned,earned_now:[...earned,...weeklyEarned].reduce((sum,item)=>sum+item.amount,0),earned,milestones:milestones.map(value=>({minutes:value.minutes,total:value.total,claimed:claimed.has(`studytime:${value.minutes}`)||earned.some(item=>item.minutes===value.minutes)})),weekly_milestones:[{days:5,total:5,claimed:weekClaimed.has('studyweek:5')||weeklyEarned.some(item=>item.days===5)},{days:7,total:10,claimed:weekClaimed.has('studyweek:7')||weeklyEarned.some(item=>item.days===7)}]};
+  return {active_seconds:Number(a.active_seconds||0)+elapsed,daily_seconds:seconds,...(weekDays===undefined?{}:{week_days:weekDays}),week_earned:weeklyEarned,earned_now:[...earned,...weeklyEarned].reduce((sum,item)=>sum+item.amount,0),earned};
  });
 }
 export async function history(user) {return query('SELECT id,test_id,set_id,started_at,ends_at,finished_at,score,diamonds_delta FROM chinese_attempts WHERE student_id=? AND abandoned_at IS NULL ORDER BY started_at DESC LIMIT 200',[user]);}

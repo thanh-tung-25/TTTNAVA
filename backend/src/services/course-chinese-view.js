@@ -1,4 +1,5 @@
 import { listCourses, requireCourse } from './course-service.js';
+import { query } from '../config/db.js';
 import * as chinese from './chinese.js';
 
 async function levelsFor(user,selected) {
@@ -19,7 +20,8 @@ export async function studentNotebook(user,filters,selected) {
  return (await chinese.notebook(user,filters)).filter(row=>allowed.includes(row.level_id));
 }
 export async function studentTests(user,selected) {
- const allowed=await levelsFor(user,selected),catalog=await chinese.catalog(false,user);
- const ids=new Set(catalog.sets.filter(s=>allowed.includes(s.level_id)).map(s=>s.id));
+ const allowed=await levelsFor(user,selected);if(!allowed.length)return [];
+ const sets=await query(`SELECT s.id FROM chinese_sets s JOIN chinese_lessons l ON l.id=s.lesson_id WHERE s.status='published' AND l.status='published' AND l.level_id IN (${allowed.map(()=>'?').join(',')})`,allowed);
+ const ids=new Set(sets.map(s=>s.id));
  return (await chinese.tests(false)).filter(test=>test.set_ids.every(id=>ids.has(id)));
 }

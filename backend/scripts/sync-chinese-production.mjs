@@ -25,7 +25,7 @@ const hash=v=>createHash('sha256').update(JSON.stringify(stable(v))).digest('hex
 const semanticData=data=>{const {vocabulary_id,...rest}=data;return rest;};
 const identity=i=>i.kind==='vocabulary'?'vocabulary:'+i.data.hanzi.normalize('NFC').trim():i.kind==='question'?'question:'+hash(semanticData(i.data)):i.kind+':'+(i.data.practice||'')+':'+(i.data.text||i.data.title||'');
 const parseItems=rows=>rows.map(i=>({...i,data:json(i.data)}));
-const protectedNames=['profiles','courses','course_enrollments','course_orders','course_access_audit','diamond_ledger','chinese_reviews','chinese_review_events','chinese_progress','chinese_attempts','chinese_tests','chinese_speaking_submissions','chinese_speaking_clips','chinese_ai_chat_sessions','chinese_street_progress'];
+const protectedNames=['profiles','courses','course_enrollments','course_orders','course_access_audit','diamond_ledger','chinese_reviews','chinese_review_events','chinese_progress','chinese_attempts','chinese_daily_study','chinese_tests','chinese_speaking_submissions','chinese_speaking_clips','chinese_ai_chat_sessions','chinese_street_progress'];
 const newTables=['chinese_ai_chat_settings','chinese_ai_chat_sessions','chinese_street_lessons','chinese_street_progress'];
 let stage='source',backup;
 try{

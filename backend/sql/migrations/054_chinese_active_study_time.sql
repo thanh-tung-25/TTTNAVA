@@ -1,0 +1,12 @@
+ALTER TABLE chinese_attempts
+ ADD COLUMN active_seconds INT UNSIGNED NOT NULL DEFAULT 0,
+ ADD COLUMN activity_ping_at DATETIME(3) NULL;
+
+CREATE TABLE chinese_daily_study (
+ profile_id CHAR(36) NOT NULL,
+ study_day DATE NOT NULL,
+ active_seconds INT UNSIGNED NOT NULL DEFAULT 0,
+ updated_at DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3),
+ PRIMARY KEY(profile_id,study_day),
+ FOREIGN KEY(profile_id) REFERENCES profiles(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

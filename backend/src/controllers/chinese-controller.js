@@ -18,5 +18,6 @@ export const start = handler(r=>service.start(r.user.id,r.body));
 export const attempt = handler(r=>service.attempt(r.user.id,r.params.id));
 export const answer = handler(r=>service.attempt(r.user.id,r.params.id,'answer',r.body));
 export const finish = handler(r=>service.attempt(r.user.id,r.params.id,'finish'));
+export const activity = handler(r=>service.trackActiveTime(r.user.id,r.params.id,r.body));
 export const history = handler(r=>service.history(r.user.id));
 export const stats = handler(r=>service.stats(r.query,r.user));

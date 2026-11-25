@@ -47,7 +47,7 @@ try{
   if(!apply)return {mode:'preview',target:remote?'production':'local',fingerprint,changed_lessons:changed.length,lessons:report};
   assert.equal(fingerprint,expected,'Content changed since preview; no writes applied');
   if(!changed.length)return {mode:'unchanged',target:remote?'production':'local',fingerprint,changed_lessons:0};
-  const protectedTables=['profiles','courses','course_enrollments','course_orders','course_access_audit','diamond_ledger','chinese_reviews','chinese_review_events','chinese_progress','chinese_attempts','chinese_tests','chinese_speaking_submissions','chinese_speaking_clips','chinese_ai_chat_sessions','chinese_street_progress'];
+  const protectedTables=['profiles','courses','course_enrollments','course_orders','course_access_audit','diamond_ledger','chinese_reviews','chinese_review_events','chinese_progress','chinese_attempts','chinese_daily_study','chinese_tests','chinese_speaking_submissions','chinese_speaking_clips','chinese_ai_chat_sessions','chinese_street_progress'];
   const protectedHash=async()=>{
    const result={};for(const table of protectedTables){
     if(remote){const [r]=await run(`SELECT count(*) total,md5(coalesce(string_agg(to_jsonb(t)::text,'' ORDER BY to_jsonb(t)::text),'')) digest FROM ${table} t`);result[table]=r;}

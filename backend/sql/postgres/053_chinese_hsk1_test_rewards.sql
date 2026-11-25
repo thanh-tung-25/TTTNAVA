@@ -1,0 +1,3 @@
+ALTER TABLE chinese_tests
+ ADD COLUMN IF NOT EXISTS question_count INTEGER NULL,
+ ADD COLUMN IF NOT EXISTS reward_policy VARCHAR(30) NULL;

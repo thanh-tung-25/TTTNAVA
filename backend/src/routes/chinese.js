@@ -39,6 +39,7 @@ router.post('/attempts',requireStudent,rateLimit({windowMs:60000,max:20,keyPrefi
 router.get('/attempts/:id',requireStudent,c.attempt);
 router.post('/attempts/:id/answers',requireStudent,c.answer);
 router.post('/attempts/:id/finish',requireStudent,c.finish);
+router.post('/attempts/:id/activity',requireStudent,rateLimit({windowMs:60000,max:40,keyPrefix:'chinese-active-time'}),c.activity);
 router.use(requireAdmin);
 router.get('/lessons/:id/activities',c.handler(r=>adminActivities(r.params.id)));
 router.put('/lessons/:id/activities',c.handler(r=>saveActivities(r.params.id,r.body)));

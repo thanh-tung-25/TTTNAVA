@@ -39,7 +39,7 @@ try{
   const fingerprint=hash(source),report=plans.map(p=>p.report),changes=plans.reduce((total,p)=>total+p.removed.length+p.taskRemovals.length+p.items.filter(item=>{const old=source.find(s=>s.set.id===p.set.id).items.find(i=>i.id===item.id);return old.position!==item.position||hash(old.data)!==hash(item.data);}).length,0);
   if(!apply)return {ready:true,target:remote?'production-postgres':'local-mysql',mode:'preview',fingerprint,changes,lessons:report};
   assert.equal(fingerprint,expected,'Curriculum changed since preview; no writes applied');
-  const protectedTables=['profiles','courses','course_enrollments','course_orders','course_access_audit','diamond_ledger','chinese_reviews','chinese_review_events','chinese_progress','chinese_attempts','chinese_tests','chinese_speaking_submissions','chinese_speaking_clips','chinese_ai_chat_sessions','chinese_street_progress'];
+  const protectedTables=['profiles','courses','course_enrollments','course_orders','course_access_audit','diamond_ledger','chinese_reviews','chinese_review_events','chinese_progress','chinese_attempts','chinese_daily_study','chinese_tests','chinese_speaking_submissions','chinese_speaking_clips','chinese_ai_chat_sessions','chinese_street_progress'];
   const protectedHash=async()=>{const result={};for(const table of protectedTables){const rows=await run('SELECT * FROM '+table);result[table]={count:rows.length,hash:hash(rows.map(row=>JSON.stringify(stable(row))).sort())};}return result;};
   const before=await protectedHash();stage='backup';
   const directory=new URL('backend/backups/chinese-curation/',root);await mkdir(directory,{recursive:true});const backup='backend/backups/chinese-curation/'+(remote?'production-':'local-')+new Date().toISOString().replace(/[:.]/g,'-')+'.json';

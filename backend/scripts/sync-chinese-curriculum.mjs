@@ -51,7 +51,7 @@ try{
   const report=banks.map(b=>({...b.plan.report,retired:b.retired.length,item_updates:b.changed.length,activities_changed:b.activityChanged,chat_changed:b.chatChanged,street_changed:b.streetChanged,word_changed:b.documentChanged}));
   if(!apply&&!exportFiles)return {mode:'preview',target:production?'production':'local',fingerprint,lessons:report};
   if(apply)assert.equal(fingerprint,expected,'Dữ liệu đã đổi sau xem trước.');
-  const protectedNames=['chinese_attempts','chinese_reviews','chinese_progress','diamond_ledger','chinese_speaking_submissions','chinese_speaking_clips','chinese_ai_chat_sessions','chinese_street_progress'];
+  const protectedNames=['chinese_attempts','chinese_daily_study','chinese_reviews','chinese_progress','diamond_ledger','chinese_speaking_submissions','chinese_speaking_clips','chinese_ai_chat_sessions','chinese_street_progress'];
   const protectedHash=async()=>{const out={};for(const table of protectedNames){if(isPostgres){const [r]=await run(`SELECT count(*) total,md5(coalesce(string_agg(to_jsonb(t)::text,'' ORDER BY to_jsonb(t)::text),'')) digest FROM ${table} t`);out[table]=r;}else out[table]=hash((await run(`SELECT * FROM ${table}`)).map(canonical).sort((a,b)=>JSON.stringify(a).localeCompare(JSON.stringify(b))));}return out;};
   const before=await protectedHash(),directory=new URL(new Date().toISOString().replace(/[:.]/g,'-')+'-'+(production?'production':'local')+'/',backupRoot);await mkdir(directory,{recursive:true});
   const backups=[];

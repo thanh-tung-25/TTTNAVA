@@ -11,6 +11,8 @@ import {reviewedQuestions,sequentialQuestions,journeyProgress} from './chinese-q
 import {compatibleQuiz,currentQuizProgress,attemptsForSet} from './chinese-quiz-state.js';
 import {studentVisibleCondition} from '../utils/student-visibility.js';
 import {mixStudy,shuffleStudy} from '../../../frontend/assets/js/chinese-study-variety.js';
+import {vnDateKey,vnRange} from '../utils/time.js';
+import {insertLedger} from './ledger-service.js';
 export { catalog };
 const txRun = c => async (sql,p=[]) => (await c.query(sql,p))[0];
 export async function saveLesson(id, body) {
@@ -130,10 +132,33 @@ export async function saveTest(id,body) {
  const d=parse(testSchema,body); for(const setId of d.set_ids) await getSet(setId,true);
  const all=(await Promise.all(d.set_ids.map(s=>getItems(s)))).flat().filter(i=>i.kind==='question');
  if(d.status==='published' && (!all.length || issues(all).length)) throw badRequest('Bài kiểm tra cần câu hỏi hợp lệ, đã duyệt');
- id ||= randomUUID(); await query(dialectSql(`INSERT INTO chinese_tests (id,title,set_ids,duration_seconds,pass_percent,status) VALUES (?,?,?,?,?,?) ON DUPLICATE KEY UPDATE title=VALUES(title),set_ids=VALUES(set_ids),duration_seconds=VALUES(duration_seconds),pass_percent=VALUES(pass_percent),status=VALUES(status)`,
-  `INSERT INTO chinese_tests(id,title,set_ids,duration_seconds,pass_percent,status) VALUES (?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=EXCLUDED.title,set_ids=EXCLUDED.set_ids,duration_seconds=EXCLUDED.duration_seconds,pass_percent=EXCLUDED.pass_percent,status=EXCLUDED.status`),[id,d.title,JSON.stringify([...new Set(d.set_ids)]),d.duration_seconds,d.pass_percent,d.status]);return {id};
+ id ||= randomUUID(); await query(dialectSql(`INSERT INTO chinese_tests (id,title,set_ids,duration_seconds,pass_percent,status,question_count,reward_policy) VALUES (?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE title=VALUES(title),set_ids=VALUES(set_ids),duration_seconds=VALUES(duration_seconds),pass_percent=VALUES(pass_percent),status=VALUES(status),question_count=VALUES(question_count),reward_policy=VALUES(reward_policy)`,
+  `INSERT INTO chinese_tests(id,title,set_ids,duration_seconds,pass_percent,status,question_count,reward_policy) VALUES (?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=EXCLUDED.title,set_ids=EXCLUDED.set_ids,duration_seconds=EXCLUDED.duration_seconds,pass_percent=EXCLUDED.pass_percent,status=EXCLUDED.status,question_count=EXCLUDED.question_count,reward_policy=EXCLUDED.reward_policy`),[id,d.title,JSON.stringify([...new Set(d.set_ids)]),d.duration_seconds,d.pass_percent,d.status,d.question_count,d.reward_policy]);return {id};
+}
+const hsk1TestId=n=>`00000000-0000-4000-8000-${String(n).padStart(12,'0')}`;
+const hsk1ChoiceQuestion=i=>i.kind==='question'&&i.data.approved&&i.data.type==='choice'&&i.data.options?.length>=2&&i.data.accepted?.some(a=>i.data.options.includes(a))&&!issues([i]).length;
+const uniqueHsk1Questions=items=>{const seen=new Set();return items.filter(i=>{const key=JSON.stringify([i.data.prompt,i.data.options,i.data.accepted]);if(seen.has(key))return false;seen.add(key);return true;});};
+async function ensureHsk1Tests(){
+ const ids=Array.from({length:11},(_,i)=>hsk1TestId(i+1));
+ if((await query(`SELECT id FROM chinese_tests WHERE id IN (${ids.map(()=>'?').join(',')})`,ids)).length===11)return;
+ const lessons=await query("SELECT id FROM chinese_lessons WHERE level_id=1 AND status='published' ORDER BY position,id LIMIT 10");
+ if(lessons.length!==10)return;
+ const sets=await query(`SELECT s.id,s.lesson_id FROM chinese_sets s JOIN chinese_lessons l ON l.id=s.lesson_id WHERE s.status='published' AND l.status='published' AND l.level_id=1 ORDER BY l.position,s.position,s.created_at`);
+ const lessonIds=new Set(lessons.map(l=>l.id)),sources=sets.filter(s=>lessonIds.has(s.lesson_id));
+ if(!sources.length)return;
+ const bank=uniqueHsk1Questions((await Promise.all(sources.map(s=>getItems(s.id)))).flat().filter(hsk1ChoiceQuestion));
+ if(bank.length<30)return;
+ const sourceIds=[...new Set(sources.map(s=>s.id))];
+ for(let n=1;n<=11;n++){
+  const daily=n===11,title=daily?'HSK1 · Thử thách hằng ngày':`HSK1 · Kiểm tra ${n}`,policy=daily?'daily_3':'record_best';
+  await query(dialectSql(
+   'INSERT INTO chinese_tests(id,title,set_ids,duration_seconds,pass_percent,status,question_count,reward_policy) VALUES (?,?,?,NULL,70,\'published\',30,?) ON DUPLICATE KEY UPDATE title=VALUES(title),set_ids=VALUES(set_ids),question_count=VALUES(question_count),reward_policy=VALUES(reward_policy),status=VALUES(status)',
+   'INSERT INTO chinese_tests(id,title,set_ids,duration_seconds,pass_percent,status,question_count,reward_policy) VALUES (?,?,?,NULL,70,\'published\',30,?) ON CONFLICT(id) DO UPDATE SET title=EXCLUDED.title,set_ids=EXCLUDED.set_ids,question_count=EXCLUDED.question_count,reward_policy=EXCLUDED.reward_policy,status=EXCLUDED.status'),
+   [hsk1TestId(n),title,JSON.stringify(sourceIds),policy]);
+ }
 }
 export async function tests(admin) {
+ if(!admin)await ensureHsk1Tests();
  const rows=await query(`SELECT * FROM chinese_tests ${admin?'':"WHERE status='published'"}`), result=[];
  for(const row of rows) { row.set_ids=json(row.set_ids); if(!admin) { try { for(const s of row.set_ids) await getSet(s); } catch { continue; } } result.push(row); } return result;
 }
@@ -143,12 +168,14 @@ export async function start(user,body) {
  if(d.test_id&&d.count)throw badRequest('Không thay đổi số câu của bài kiểm tra');
  if(d.test_id&&d.selection!=='mixed')throw badRequest('Không thay đổi nguồn của bài kiểm tra.');
  if(d.count&&d.count!==20)throw badRequest('Mỗi quiz phải có đúng 20 câu');
- let sources, duration=null, title='Luyện tập', pass=70;
- if(d.test_id) { const t=await one("SELECT * FROM chinese_tests WHERE id=? AND status='published'",[d.test_id]); sources=json(t.set_ids);duration=t.duration_seconds;title=t.title;pass=t.pass_percent; } else sources=[d.set_id];
+ let sources, duration=null, title='Luyện tập', pass=70,questionCount=null,rewardPolicy=null;
+ if(d.test_id) { const t=await one("SELECT * FROM chinese_tests WHERE id=? AND status='published'",[d.test_id]); sources=json(t.set_ids);duration=t.duration_seconds;title=t.title;pass=t.pass_percent;questionCount=t.question_count?Number(t.question_count):null;rewardPolicy=t.reward_policy||null; } else sources=[d.set_id];
  const course_ids=[];
  let items=[]; for(const s of sources) {const set=await getSet(s);course_ids.push('hsk-'+set.level_id);items.push(...(await getItems(s)).filter(i=>i.kind==='question'&&i.data.approved));}
  const sourceItems=[...items];
- if(!items.length||items.length>1000||issues(items).length) throw badRequest('Chưa đủ câu hỏi hợp lệ');
+ if(questionCount){items=uniqueHsk1Questions(items.filter(hsk1ChoiceQuestion));if(items.length<questionCount)throw badRequest(`Ngân hàng cần ít nhất ${questionCount} câu trắc nghiệm hợp lệ.`);}
+ if(!items.length||(!questionCount&&items.length>1000)||issues(items).length) throw badRequest('Chưa đủ câu hỏi hợp lệ');
+ if(questionCount){for(let n=items.length-1;n>0;n--){const j=randomInt(n+1);[items[n],items[j]]=[items[j],items[n]];}items=items.slice(0,questionCount);}
  if(d.count){
   if(items.length<20)throw badRequest('Tài liệu chưa đủ 20 câu hỏi để làm quiz. Con có thể học thẻ lật trước.');
   if(d.selection==='sequential')items=sequentialQuestions(items,d.block);
@@ -180,7 +207,7 @@ export async function start(user,body) {
    }
   }
   if(existingId)return;
-  const diamonds_policy=d.test_id||d.count===20?'v1':null;
+  const diamonds_policy=rewardPolicy==='record_best'?'hsk1_record':rewardPolicy==='daily_3'?'hsk1_daily':rewardPolicy==='step_10_percent'?'hsk1_steps':d.test_id||d.count===20?'v1':null;
   await run('INSERT INTO chinese_attempts (id,student_id,test_id,set_id,snapshot,answers,ends_at) VALUES (?,?,?,?,?,?,?)',[id,user,d.test_id??null,d.set_id??null,JSON.stringify({title,pass,items,diamonds_policy,selection:d.selection,block:d.block,course_ids:[...new Set(course_ids)]}),JSON.stringify({}),duration?new Date(Date.now()+duration*1000):null]);
   for(const source of sources)await run(dialectSql(`INSERT INTO chinese_progress (student_id,set_id,last_item,read_items) VALUES (?,?,NULL,'[]') ON DUPLICATE KEY UPDATE updated_at=CURRENT_TIMESTAMP(3)`,
    `INSERT INTO chinese_progress(student_id,set_id,last_item,read_items) VALUES (?,?,NULL,'[]') ON CONFLICT(student_id,set_id) DO UPDATE SET updated_at=CURRENT_TIMESTAMP(3)`),[user,source]);
@@ -190,19 +217,37 @@ function state(a) {
  const snapshot=json(a.snapshot), answers=json(a.answers), items=snapshot.items.map(i=>{
   const answer=answers[i.id]; return {...publicItem(i),result:answer?.locked||a.finished_at?{...answer,accepted:i.data.accepted,explanation:i.data.explanation}:undefined,selection:answer?.value};
  });
- return {id:a.id,set_id:a.set_id,test_id:a.test_id,title:snapshot.selection==='sequential'?'Quiz '+items.length+' câu · Chặng '+(snapshot.block+1):snapshot.title,selection:snapshot.selection||'mixed',block:snapshot.block||0,started_at:a.started_at,ends_at:a.ends_at,finished_at:a.finished_at,score:a.score,pass_percent:snapshot.pass,diamonds_policy:snapshot.diamonds_policy||null,diamonds_delta:a.diamonds_delta,items};
+ return {id:a.id,set_id:a.set_id,test_id:a.test_id,title:snapshot.selection==='sequential'?'Quiz '+items.length+' câu · Chặng '+(snapshot.block+1):snapshot.title,selection:snapshot.selection||'mixed',block:snapshot.block||0,started_at:a.started_at,ends_at:a.ends_at,finished_at:a.finished_at,score:a.score,pass_percent:snapshot.pass,diamonds_policy:snapshot.diamonds_policy||null,diamonds_delta:a.diamonds_delta,reward_note:snapshot.reward_note||null,items};
 }
 async function finalize(a,run) {
  const snap=json(a.snapshot), answers=json(a.answers);
  for(const i of snap.items) { if(!answers[i.id]?.locked) answers[i.id]={value:answers[i.id]?.value??'',locked:true,correct:false}; }
  const score=Math.round(snap.items.filter(i=>answers[i.id].correct).length/snap.items.length*10000)/100;
  let delta=null;
- if(snap.diamonds_policy==='v1'){
+ if(snap.diamonds_policy==='hsk1_record'){
+  const correct=snap.items.filter(i=>answers[i.id].correct).length,currentTier=Math.min(10,Math.floor(correct/3));
+  const previous=await run('SELECT score FROM chinese_attempts WHERE student_id=? AND test_id=? AND finished_at IS NOT NULL AND id<>?',[a.student_id,a.test_id,a.id]);
+  const bestTier=previous.reduce((best,row)=>Math.max(best,Math.min(10,Math.floor(Number(row.score||0)/10))),0);
+  delta=Math.max(0,currentTier-bestTier);
+  snap.reward_note=delta?'Kỷ lục mới! Kim cương được cộng theo các mốc điểm vừa vượt.':currentTier===0?'Cần đạt ít nhất 10% để nhận kim cương.':'Chưa vượt mốc kỷ lục kim cương của đề này.';
+  if(delta)await run('INSERT INTO diamond_ledger (profile_id,amount,reason,ref_type,ref_id) VALUES (?,?,?,?,?)',[a.student_id,delta,score===100?'chinese_perfect':'chinese_complete','chinese',a.id]);
+ }else if(snap.diamonds_policy==='hsk1_daily'){
+  const history=await run('SELECT started_at,snapshot FROM chinese_attempts WHERE student_id=? AND test_id=? AND finished_at IS NOT NULL AND id<>?',[a.student_id,a.test_id,a.id]);
+  const today=vnDateKey(new Date(a.started_at)),dailyCount=history.filter(row=>json(row.snapshot).diamonds_policy==='hsk1_daily'&&vnDateKey(new Date(row.started_at))===today).length;
+  const correct=snap.items.filter(i=>answers[i.id].correct).length;
+  delta=dailyCount<3?Math.min(10,Math.floor(correct/3)):0;
+  snap.reward_note=dailyCount>=3?'Đã hết 3 lượt nhận thưởng hôm nay. Điểm vẫn được lưu.':delta?'Thử thách được tính vào 3 lượt thưởng hôm nay.':'Cần đạt ít nhất 10% để nhận kim cương.';
+  if(delta)await run('INSERT INTO diamond_ledger (profile_id,amount,reason,ref_type,ref_id) VALUES (?,?,?,?,?)',[a.student_id,delta,score===100?'chinese_perfect':'chinese_complete','chinese',a.id]);
+ }else if(snap.diamonds_policy==='hsk1_steps'){
+  const correct=snap.items.filter(i=>answers[i.id].correct).length;
+  delta=Math.min(10,Math.floor(correct/3));
+  if(delta)await run('INSERT INTO diamond_ledger (profile_id,amount,reason,ref_type,ref_id) VALUES (?,?,?,?,?)',[a.student_id,delta,score===100?'chinese_perfect':'chinese_complete','chinese',a.id]);
+ }else if(snap.diamonds_policy==='v1'){
   const balance=(await run('SELECT COALESCE(SUM(amount),0) total FROM diamond_ledger WHERE profile_id=?',[a.student_id]))[0].total;
   delta=score===100?3:score>=70?1:Math.max(0,Number(balance))>=1?-1:0;
   if(delta)await run('INSERT INTO diamond_ledger (profile_id,amount,reason,ref_type,ref_id) VALUES (?,?,?,?,?)',[a.student_id,delta,score===100?'chinese_perfect':score>=70?'chinese_complete':'chinese_low','chinese',a.id]);
  }
- await run('UPDATE chinese_attempts SET answers=?,score=?,diamonds_delta=?,finished_at=CURRENT_TIMESTAMP(3) WHERE id=?',[JSON.stringify(answers),score,delta,a.id]);
+ await run('UPDATE chinese_attempts SET snapshot=?,answers=?,score=?,diamonds_delta=?,finished_at=CURRENT_TIMESTAMP(3) WHERE id=?',[JSON.stringify(snap),JSON.stringify(answers),score,delta,a.id]);
  return one('SELECT * FROM chinese_attempts WHERE id=?',[a.id],run);
 }
 export async function attempt(user,id,action=null,body={}) {
@@ -231,8 +276,48 @@ export async function attempt(user,id,action=null,body={}) {
    if(v.length) await run(dialectSql(`INSERT INTO chinese_reviews (student_id,item_id,memory,wrong_count,next_review) VALUES (?,?,'review',1,CURRENT_TIMESTAMP(3)) ON DUPLICATE KEY UPDATE memory='review',wrong_count=wrong_count+1,next_review=CURRENT_TIMESTAMP(3)`,
     `INSERT INTO chinese_reviews(student_id,item_id,memory,wrong_count,next_review) VALUES (?,?,'review',1,CURRENT_TIMESTAMP(3)) ON CONFLICT(student_id,item_id) DO UPDATE SET memory='review',wrong_count=chinese_reviews.wrong_count+1,next_review=CURRENT_TIMESTAMP(3)`),[user,q.data.vocabulary_id]);
   }
-  if(json(a.snapshot).diamonds_policy==='v1'&&snap.items.every(i=>answers[i.id]?.locked))return state(await finalize(a,run));
+  if(['v1','hsk1_record','hsk1_daily'].includes(json(a.snapshot).diamonds_policy)&&snap.items.every(i=>answers[i.id]?.locked))return state(await finalize(a,run));
   return state(a);
+ });
+}
+export async function trackActiveTime(user,id,body={}){
+ const d=parse(z.object({active:z.boolean()}),body),day=vnDateKey(new Date()),milestones=[{minutes:10,seconds:600,total:1},{minutes:30,seconds:1800,total:5},{minutes:60,seconds:3600,total:10}];
+ return withTransaction(async c=>{
+  const run=txRun(c);await one('SELECT id FROM profiles WHERE id=? FOR UPDATE',[user],run);
+  const a=await one('SELECT * FROM chinese_attempts WHERE id=? AND student_id=? FOR UPDATE',[id,user],run);
+  if(a.abandoned_at)throw new AppError(409,'ATTEMPT_CLOSED','Lượt học này đã đóng.');
+  if(a.finished_at)return {active_seconds:Number(a.active_seconds)||0,daily_seconds:null,earned_now:0,milestones:[]};
+  const now=new Date(),last=a.activity_ping_at?new Date(a.activity_ping_at):new Date(a.started_at),gap=(now-last)/1000;
+  const elapsed=gap>=0&&gap<=25?Math.floor(gap):0;
+  await run('UPDATE chinese_attempts SET active_seconds=active_seconds+?,activity_ping_at=? WHERE id=?',[elapsed,d.active?now:null,id]);
+  const snapshot=json(a.snapshot),courseId=(snapshot.course_ids||[]).find(value=>String(value).startsWith('hsk-'))||'hsk-1';
+  await requireCourse(user,courseId,run);
+  await run(dialectSql('INSERT INTO chinese_daily_study(profile_id,study_day,active_seconds) VALUES (?,?,0) ON DUPLICATE KEY UPDATE profile_id=VALUES(profile_id)','INSERT INTO chinese_daily_study(profile_id,study_day,active_seconds) VALUES (?,?,0) ON CONFLICT(profile_id,study_day) DO NOTHING'),[user,day]);
+  if(elapsed)await run('UPDATE chinese_daily_study SET active_seconds=active_seconds+?,updated_at=CURRENT_TIMESTAMP(3) WHERE profile_id=? AND study_day=?',[elapsed,user,day]);
+  const daily=await one('SELECT active_seconds FROM chinese_daily_study WHERE profile_id=? AND study_day=? FOR UPDATE',[user,day],run),seconds=Number(daily.active_seconds)||0;
+  const claims=await run('SELECT task_key FROM student_quest_claims WHERE profile_id=? AND course_id=? AND claim_day=? AND task_key IN (\'studytime:10\',\'studytime:30\',\'studytime:60\')',[user,courseId,day]),claimed=new Set(claims.map(row=>row.task_key)),earned=[];
+  for(const milestone of milestones){const key=`studytime:${milestone.minutes}`;if(seconds<milestone.seconds||claimed.has(key))continue;
+   const id=randomUUID();await run('INSERT INTO student_quest_claims(id,profile_id,course_id,claim_day,task_key) VALUES (?,?,?,?,?)',[id,user,courseId,day,key]);
+   const amount=milestone.total-(milestones.filter(value=>value.minutes<milestone.minutes).at(-1)?.total||0);
+   await insertLedger(c,{profileId:user,amount,reason:'quest_reward',refType:'quest',refId:id});earned.push({minutes:milestone.minutes,amount});
+  }
+  const weekStart=vnDateKey(vnRange('week').start),weekEnd=day,weekClaims=await run('SELECT task_key FROM student_quest_claims WHERE profile_id=? AND course_id=? AND claim_day=? AND task_key IN (\'studyweek:5\',\'studyweek:7\')',[user,courseId,weekStart]),weekClaimed=new Set(weekClaims.map(row=>row.task_key));
+  const studyDays=new Set();
+  const dailyRows=await run('SELECT study_day,active_seconds FROM chinese_daily_study WHERE profile_id=? AND study_day>=? AND study_day<=?',[user,weekStart,weekEnd]);
+  const dateKey=value=>value instanceof Date?vnDateKey(value):/^\d{4}-\d{2}-\d{2}$/.test(String(value))?String(value):vnDateKey(new Date(value));
+  for(const row of dailyRows)if(Number(row.active_seconds)>=600)studyDays.add(dateKey(row.study_day));
+  const range=vnRange('week'),sessions=await run('SELECT completed_at FROM study_activity_sessions WHERE profile_id=? AND course_id=? AND completed_at>=? AND completed_at<=?', [user,courseId,range.start,range.end]);
+  for(const row of sessions)if(row.completed_at)studyDays.add(dateKey(row.completed_at));
+  const attempts=await run('SELECT finished_at,snapshot FROM chinese_attempts WHERE student_id=? AND finished_at>=? AND finished_at<=? AND abandoned_at IS NULL',[user,range.start,range.end]);
+  for(const row of attempts)if(row.finished_at&&(json(row.snapshot).course_ids||[]).includes(courseId))studyDays.add(dateKey(row.finished_at));
+  const events=await run("SELECT event_day FROM learning_events WHERE profile_id=? AND course_id=? AND event_kind='study_completed' AND event_day>=? AND event_day<=?",[user,courseId,weekStart,weekEnd]);
+  for(const row of events)studyDays.add(dateKey(row.event_day));
+  const weekDays=studyDays.size,weeklyEarned=[];
+  for(const milestone of [{days:5,key:'studyweek:5',amount:5},{days:7,key:'studyweek:7',amount:5}])if(weekDays>=milestone.days&&!weekClaimed.has(milestone.key)){
+   const claimId=randomUUID();await run('INSERT INTO student_quest_claims(id,profile_id,course_id,claim_day,task_key) VALUES (?,?,?,?,?)',[claimId,user,courseId,weekStart,milestone.key]);
+   await insertLedger(c,{profileId:user,amount:milestone.amount,reason:'quest_reward',refType:'quest',refId:claimId});weeklyEarned.push({days:milestone.days,amount:milestone.amount});
+  }
+  return {active_seconds:Number(a.active_seconds||0)+elapsed,daily_seconds:seconds,week_days:weekDays,week_earned:weeklyEarned,earned_now:[...earned,...weeklyEarned].reduce((sum,item)=>sum+item.amount,0),earned,milestones:milestones.map(value=>({minutes:value.minutes,total:value.total,claimed:claimed.has(`studytime:${value.minutes}`)||earned.some(item=>item.minutes===value.minutes)})),weekly_milestones:[{days:5,total:5,claimed:weekClaimed.has('studyweek:5')||weeklyEarned.some(item=>item.days===5)},{days:7,total:10,claimed:weekClaimed.has('studyweek:7')||weeklyEarned.some(item=>item.days===7)}]};
  });
 }
 export async function history(user) {return query('SELECT id,test_id,set_id,started_at,ends_at,finished_at,score,diamonds_delta FROM chinese_attempts WHERE student_id=? AND abandoned_at IS NULL ORDER BY started_at DESC LIMIT 200',[user]);}

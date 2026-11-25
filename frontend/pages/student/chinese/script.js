@@ -14,10 +14,29 @@ import {renderChineseAiChat} from '/assets/js/chinese-ai-chat.js';
 import {renderChineseStreet} from '/assets/js/chinese-street.js';
 import {configureChinesePage} from '/assets/js/chinese-student-navigation.js';
 import {studyReward} from '/assets/js/study-reward.js';
-const params=new URLSearchParams(location.search);let catalog,timer,learner;
+const params=new URLSearchParams(location.search);let catalog,timer,learner,activeStudyTimer,activeStudyAttempt,activeStudyNode,lastStudyEngagement=Date.now(),activeStudyRequest=false;
 const json=v=>typeof v==='string'?JSON.parse(v):v;
 const extra=(title,children)=>el('details',{class:'learn-extra'},[el('summary',{text:title}),...children]);
 function action(text,fn,primary=false){const b=button(text,async()=>{b.disabled=true;try{await fn();}catch(e){error(e);}finally{b.disabled=false;}});if(primary)b.className='btn btn-primary';return b;}
+const markStudyEngagement=()=>{lastStudyEngagement=Date.now();};
+for(const event of ['pointerdown','keydown','touchstart','input'])document.addEventListener(event,markStudyEngagement,{passive:true});
+function stopActiveStudyClock(){clearInterval(activeStudyTimer);activeStudyTimer=null;activeStudyAttempt=null;activeStudyNode=null;}
+function startActiveStudyClock(id,node){
+ activeStudyNode=node;
+ if(activeStudyAttempt===id&&activeStudyTimer)return;
+ stopActiveStudyClock();activeStudyAttempt=id;lastStudyEngagement=Date.now();
+ const pulse=async()=>{
+  if(activeStudyRequest||document.visibilityState!=='visible'||Date.now()-lastStudyEngagement>45000)return;
+  activeStudyRequest=true;
+  try{const state=await request('/attempts/'+id+'/activity','POST',{active:true});if(activeStudyAttempt!==id)return;
+   const minutes=Math.floor((state.daily_seconds||0)/60),earnedLabels=[...(state.earned||[]).map(item=>`${item.minutes} phút +${item.amount}`),...(state.week_earned||[]).map(item=>`${item.days} ngày học +${item.amount}`)];
+   activeStudyNode?.replaceChildren(el('span',{text:`⏱ Hôm nay: ${minutes} phút làm bài · Mốc ngày: 10 phút +1, 30 phút tổng +5, 60 phút tổng +10. Chuỗi tuần: ${state.week_days||0}/7 ngày · 5 ngày +5, 7 ngày tổng +10 kim cương.`}),...(state.earned_now?[el('strong',{class:'answer-correct',text:` Vừa nhận +${state.earned_now} kim cương${earnedLabels.length?' · '+earnedLabels.join(', '):''}.`})]:[]));
+   if(state.earned_now)syncDiamondTotal();
+  }catch{}
+  finally{activeStudyRequest=false;}
+ };
+ void pulse();activeStudyTimer=setInterval(pulse,15000);
+}
 const quiz=async(id,review=false)=>chooseQuiz(id,async body=>{const a=await request('/attempts','POST',body);location.href='?attempt='+a.id;},review);
 async function boot(){
  if(params.get('view')==='practice'){params.delete('view');window.history.replaceState(null,'',location.pathname+(params.size?'?'+params:''));}
@@ -126,14 +145,23 @@ async function notebook(){
  const f=el('form',{},[field('Từ cần ôn','filter',params.get('filter')||'','text',[['','Tất cả'],['favorite','Yêu thích'],['new','Chưa nhớ'],['wrong','Thường nhầm'],['due','Đến hạn ôn']])]),list=el('div');
  const load=async()=>{const rows=await request('/notebook?'+new URLSearchParams(new FormData(f)));list.replaceChildren(...(rows.length?rows.map(w=>card(w.data.hanzi,[el('p',{class:'pinyin',text:w.data.pinyin||''}),el('p',{text:w.data.meaning}),link('Ôn từ này',{set:w.set_id,word:w.id})])):[el('p',{text:'Chưa có từ trong danh sách này.'})]));animalPath(list,{selector:':scope > .card',title:'Ôn từ',hint:''});};f.onchange=()=>load().catch(error);root().append(f,list);await load();
 }
-async function tests(){const rows=await request('/tests');root().append(...rows.map(t=>card(t.title,[el('p',{text:t.duration_seconds?`${Math.round(t.duration_seconds/60)} phút`:'Không giới hạn thời gian'}),action('Bắt đầu',async()=>{const a=await request('/attempts','POST',{test_id:t.id});location.href='?view=tests&attempt='+a.id;},true)])));animalPath(root(),{selector:':scope > .card',title:'Bài kiểm tra',hint:'Xem thời gian trước khi bắt đầu bài kiểm tra.'});if(!rows.length)root().append(el('p',{text:'Chưa có bài kiểm tra. Con có thể làm quiz ngay trong bài học.'}));}
+async function tests(){
+ const rows=await request('/tests'),main=rows.filter(t=>t.reward_policy==='record_best'),daily=rows.filter(t=>t.reward_policy==='daily_3');
+ const makeCard=t=>card(t.title,[el('p',{text:`${t.question_count||30} câu trắc nghiệm · Lấy ngẫu nhiên từ 10 bài HSK1.`}),el('p',{class:'muted',text:t.reward_policy==='daily_3'?'Ba lượt đầu mỗi ngày được thưởng theo điểm, tối đa 10 kim cương mỗi lượt. Các lượt sau vẫn lưu điểm.':'Lần đầu nhận kim cương theo điểm. Làm lại chỉ nhận phần chênh lệch khi vượt kỷ lục; mỗi mốc 10% tương ứng 1 kim cương.'}),action('Bắt đầu',async()=>{const a=await request('/attempts','POST',{test_id:t.id});location.href='?view=tests&attempt='+a.id;},true)]);
+ root().append(el('h2',{text:'10 đề HSK1 chính'}),...main.map(makeCard));
+ if(daily.length)root().append(el('h2',{text:'Thử thách hằng ngày'}),...daily.map(makeCard));
+ const board=el('a',{class:'btn btn-ghost',href:'/pages/student/leaderboard/?program=chinese&range=week',text:'🏆 Xem bảng xếp hạng Tiếng Trung tuần này'});root().append(board);
+ animalPath(root(),{selector:':scope > .card',title:'Bài kiểm tra',hint:'Đề chính ghi nhận kỷ lục cá nhân; thử thách hằng ngày giúp con tiếp tục đua top.'});
+ if(!rows.length)root().append(el('p',{text:'Chưa có bài kiểm tra. Con có thể làm quiz ngay trong bài học.'}));
+}
 async function showAttempt(a,index){
  clearInterval(timer);notice('');root().replaceChildren(link('← Bài học',{}),el('h2',{text:a.title}));
+ if(a.finished_at)stopActiveStudyClock();
  if(a.source_updated){root().append(card('Bộ câu hỏi đã được cập nhật',[el('p',{text:'Lượt cũ dùng bộ câu hỏi trước khi rút gọn. Mở bản đồ để học đúng chặng và tránh các câu lặp đã bỏ.'}),el('p',{text:'Lượt chưa hoàn thành này không bị tính điểm hay trừ Kim Cương.'}),action('Mở chặng hiện tại →',()=>quiz(a.set_id),true)]));return;}
  if(a.finished_at){
   syncDiamondTotal();
   const correct=a.items.filter(i=>i.result?.correct).length;
-  root().append(card('Đã hoàn thành!',[el('p',{class:'quiz-score',text:a.score+'/100'}),el('p',{text:`${correct} / ${a.items.length} câu đúng · ${Math.max(0,Math.round((new Date(a.finished_at)-new Date(a.started_at))/1000))} giây`}),...(a.diamonds_delta!==null&&a.diamonds_delta!==undefined?[el('p',{class:a.diamonds_delta<0?'answer-wrong':'answer-correct',text:a.diamonds_delta>0?`+${a.diamonds_delta} Kim Cương`:a.diamonds_delta<0?`${a.diamonds_delta} Kim Cương`:'Không trừ Kim Cương vì số dư đã bằng 0.'})]:[]),action('Làm lại',async()=>{const body=a.test_id?{test_id:a.test_id}:{set_id:a.set_id,count:20,selection:a.selection==='review'?'review':'sequential',block:a.block};const next=await request('/attempts','POST',body);location.href=(a.test_id?'?view=tests&attempt=':'?attempt=')+next.id;},true)]));
+  root().append(card('Đã hoàn thành!',[el('p',{class:'quiz-score',text:a.score+'/100'}),el('p',{text:`${correct} / ${a.items.length} câu đúng · ${Math.max(0,Math.round((new Date(a.finished_at)-new Date(a.started_at))/1000))} giây`}),...(a.diamonds_delta!==null&&a.diamonds_delta!==undefined?[el('p',{class:a.diamonds_delta<0?'answer-wrong':'answer-correct',text:a.diamonds_delta>0?`+${a.diamonds_delta} Kim Cương`:a.diamonds_delta<0?`${a.diamonds_delta} Kim Cương`:a.reward_note||'Lượt này không nhận thêm kim cương.'})]:[]),action('Làm lại',async()=>{const body=a.test_id?{test_id:a.test_id}:{set_id:a.set_id,count:20,selection:a.selection==='review'?'review':'sequential',block:a.block};const next=await request('/attempts','POST',body);location.href=(a.test_id?'?view=tests&attempt=':'?attempt=')+next.id;},true)]));
   if(a.set_id&&!a.test_id)root().append(action('Về bản đồ khám phá →',()=>quiz(a.set_id),true));
   const reviews=el('div');const render=wrong=>{reviews.replaceChildren(...a.items.filter(i=>!wrong||!i.result?.correct).map((i,n)=>card((i.result?.correct?'✓ ':'✕ ')+chineseQuestionPrompt(i.data.prompt),[questionAudio(chineseQuestionPrompt(i.data.prompt)),el('p',{text:'Con chọn: '+(i.result?.value||'Chưa trả lời')}),el('p',{class:'answer-correct',text:'Đáp án: '+i.result.accepted.join(' / ')}),el('p',{text:i.result.explanation||''})])));reviews.querySelectorAll('h2').forEach(h=>h.classList.add('study-prompt'));};
   root().append(action('Ôn câu sai',()=>render(true)),action('Xem tất cả',()=>render(false)),reviews);render(true);return;
@@ -142,6 +170,7 @@ async function showAttempt(a,index){
  const i=a.items[index],q=i.data;let selection=i.selection||'';
  const navigate=async n=>{let current=a;if(!i.result&&selection.trim())current=await request('/attempts/'+a.id+'/answers','POST',{item_id:i.id,value:selection,lock:false});await showAttempt(current,n);};
  const completed=a.items.filter(i=>i.result).length;
+ if(!a.finished_at){const clock=el('p',{class:'muted',text:'⏱ Đang tính thời gian làm bài · Mốc ngày: 10 phút +1, 30 phút tổng +5, 60 phút tổng +10 kim cương. Đạt 5 ngày học trong tuần +5, đủ 7 ngày tổng +10.'});root().append(clock);startActiveStudyClock(a.id,clock);}
  const navigation=el('nav',{class:'quiz-jump','aria-label':'Danh sách câu hỏi'});
  const firstOpen=a.items.findIndex(i=>!i.result);
  for(const [n,item]of a.items.entries()){

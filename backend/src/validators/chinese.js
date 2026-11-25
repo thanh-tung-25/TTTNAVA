@@ -11,7 +11,7 @@ export const itemSchema = z.object({ id: z.string().uuid().optional(), kind: z.e
  }) });
 export const speakingSettingsSchema=z.object({duration_seconds:z.number().int().min(30).max(300).multipleOf(30),order:z.enum(['sequential','free']),ai_assessment:z.boolean().optional()});
 export const setSchema = z.object({ title: text.min(1).max(255), status, speaking_settings:speakingSettingsSchema.nullable().optional(),items: z.array(itemSchema).max(1000) });
-export const testSchema = z.object({ title: text.min(1).max(255), set_ids: z.array(z.string().uuid()).min(1).max(100), duration_seconds: z.coerce.number().int().min(30).max(86400).nullable(), pass_percent: z.coerce.number().int().min(1).max(100), status });
+export const testSchema = z.object({ title: text.min(1).max(255), set_ids: z.array(z.string().uuid()).min(1).max(100), duration_seconds: z.coerce.number().int().min(30).max(86400).nullable(), pass_percent: z.coerce.number().int().min(1).max(100), question_count:z.preprocess(v=>v==null||v===''?null:Number(v),z.number().int().min(1).max(100).nullable()).default(null),reward_policy:z.enum(['step_10_percent','record_best','daily_3']).nullable().default(null),status });
 export function parse(schema, value) { const r = schema.safeParse(value); if (!r.success) throw badRequest('Dữ liệu chưa hợp lệ', r.error.flatten()); return r.data; }
 export function normalizeAnswer(value) { return String(value ?? '').normalize('NFC').trim().replace(/\s+/gu, ' ').toLocaleLowerCase('zh'); }
 export function issues(items) {

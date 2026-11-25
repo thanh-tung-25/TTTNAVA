@@ -6,6 +6,7 @@ requiredTables.push('chinese_ai_chat_settings','chinese_ai_chat_sessions');
 requiredTables.push('chinese_street_lessons','chinese_street_progress');
 requiredTables.push('user_access_tracking','user_access_events');
 requiredTables.push('study_activity_sessions');
+requiredTables.push('chinese_daily_study');
 requiredTables.push('course_paid_access','course_payment_migrations','course_free_periods','course_momo_settings','course_momo_payments');
 requiredTables.push('course_free_grants');
 requiredTables.push('course_registration_free');

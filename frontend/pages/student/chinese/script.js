@@ -38,6 +38,11 @@ function startActiveStudyClock(id,node){
  void pulse();activeStudyTimer=setInterval(pulse,15000);
 }
 const quiz=async(id,review=false)=>chooseQuiz(id,async body=>{const a=await request('/attempts','POST',body);location.href='?attempt='+a.id;},review);
+function studyStreakCard(progress){
+ const minutes=Math.floor((progress.daily_seconds||0)/60),days=progress.week_days||0;
+ return card('Chuỗi học tuần',[el('p',{class:'quiz-position',text:`🔥 ${days}/7 ngày học có ghi nhận trong tuần này`}),el('p',{text:`Hôm nay đã làm bài ${minutes} phút. Mốc thời gian: 10 phút nhận 1 kim cương, 30 phút tổng 5, 60 phút tổng 10.`}),el('p',{class:'muted',text:'Đạt mục tiêu 5 ngày trong tuần nhận 5 kim cương; đủ 7 ngày nhận thêm 5. Các ngày học đã lưu từ đầu tuần cũng được tính.'}),el('a',{class:'btn btn-ghost',href:'/pages/student/leaderboard/?program=chinese&range=week',text:'🏆 Bảng xếp hạng tuần'})]);
+}
+async function showStudyStreak(){try{const progress=await request('/study-time');root().prepend(studyStreakCard(progress));}catch{}}
 async function boot(){
  if(params.get('view')==='practice'){params.delete('view');window.history.replaceState(null,'',location.pathname+(params.size?'?'+params:''));}
  const aiChat=params.get('view')==='ai-chat',street=params.get('view')==='street';
@@ -59,7 +64,7 @@ async function boot(){
  if(params.get('view')==='tests')return tests();
  lessons();
 }
-function lessons(){renderChineseLessons({catalog,params,quiz});}
+function lessons(){renderChineseLessons({catalog,params,quiz});void showStudyStreak();}
 async function learn(id){
  const {set,items,progress,activities}=await request('/sets/'+id);let read=json(progress?.read_items||[]),last=progress?.last_item||null,displayed=null;
  const save=async item=>{await request('/sets/'+id+'/progress','PUT',{last_item:item,read_items:read});last=item;};
@@ -146,7 +151,8 @@ async function notebook(){
  const load=async()=>{const rows=await request('/notebook?'+new URLSearchParams(new FormData(f)));list.replaceChildren(...(rows.length?rows.map(w=>card(w.data.hanzi,[el('p',{class:'pinyin',text:w.data.pinyin||''}),el('p',{text:w.data.meaning}),link('Ôn từ này',{set:w.set_id,word:w.id})])):[el('p',{text:'Chưa có từ trong danh sách này.'})]));animalPath(list,{selector:':scope > .card',title:'Ôn từ',hint:''});};f.onchange=()=>load().catch(error);root().append(f,list);await load();
 }
 async function tests(){
- const rows=await request('/tests'),main=rows.filter(t=>t.reward_policy==='record_best'),daily=rows.filter(t=>t.reward_policy==='daily_3');
+ const [rows,progress]=await Promise.all([request('/tests'),request('/study-time')]),main=rows.filter(t=>t.reward_policy==='record_best'),daily=rows.filter(t=>t.reward_policy==='daily_3');
+ root().append(studyStreakCard(progress));
  const makeCard=t=>card(t.title,[el('p',{text:`${t.question_count||30} câu trắc nghiệm · Lấy ngẫu nhiên từ 10 bài HSK1.`}),el('p',{class:'muted',text:t.reward_policy==='daily_3'?'Ba lượt đầu mỗi ngày được thưởng theo điểm, tối đa 10 kim cương mỗi lượt. Các lượt sau vẫn lưu điểm.':'Lần đầu nhận kim cương theo điểm. Làm lại chỉ nhận phần chênh lệch khi vượt kỷ lục; mỗi mốc 10% tương ứng 1 kim cương.'}),action('Bắt đầu',async()=>{const a=await request('/attempts','POST',{test_id:t.id});location.href='?view=tests&attempt='+a.id;},true)]);
  root().append(el('h2',{text:'10 đề HSK1 chính'}),...main.map(makeCard));
  if(daily.length)root().append(el('h2',{text:'Thử thách hằng ngày'}),...daily.map(makeCard));

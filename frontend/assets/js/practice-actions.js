@@ -11,6 +11,7 @@ import {
   store,
 } from './practice-context.js';
 import { renderQuestion } from './practice-render.js';
+import {prepareAnswerSound,playAnswerSound} from './answer-sound.js';
 
 export async function startPractice(topicId, button) {
   button.disabled = true;
@@ -47,6 +48,7 @@ export async function checkAnswer() {
   }
 
   store.busy = true;
+  prepareAnswerSound();
   elements.checkButton.disabled = true;
   elements.checkButton.textContent = 'Đang chấm…';
   try {
@@ -55,6 +57,8 @@ export async function checkAnswer() {
       body: { questionId: question.id, answer },
     });
     store.session = payload.data.state;
+    const correctness=store.session.questions[store.current]?.isCorrect;
+    if(typeof correctness==='boolean')playAnswerSound(correctness);
     renderQuestion();
   } catch (error) {
     window.alert(error.message);

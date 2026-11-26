@@ -5,6 +5,7 @@ import {chineseQuestionPrompt} from './chinese-question-prompt.js';
 import {mixStudy,activityConcept} from './chinese-study-variety.js';
 import {studyReward} from './study-reward.js';
 import {chineseActivityMatches} from './chinese-activity-answer.js';
+import {prepareAnswerSound,playAnswerSound} from './answer-sound.js';
 
 // Only published activities supplied by the lesson API are rendered here.
 export function mountPractice(host,lesson,setId){
@@ -35,7 +36,7 @@ export function mountPractice(host,lesson,setId){
    const input=box.querySelector('input.quiz-text');
    if(input){if(input.dataset.composing==='true'){feedback.textContent='Bạn chọn xong chữ Hán trên bàn phím rồi bấm Kiểm tra nhé.';return;}selection=input.value;}
    if(!selection.trim()){feedback.textContent='Hãy chọn câu trả lời trước nhé.';return;}
-   checked=true;const ok=chineseActivityMatches(task,selection);if(ok)correct++;reward.item(tasks.indexOf(task),selection);
+   prepareAnswerSound();checked=true;const ok=chineseActivityMatches(task,selection);playAnswerSound(ok);if(ok)correct++;reward.item(tasks.indexOf(task),selection);
    render();const result=box.querySelector('.applied-feedback');result.tabIndex=-1;result.focus({preventScroll:true});
   });
   if(task.type==='order'){

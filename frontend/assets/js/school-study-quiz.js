@@ -1,5 +1,6 @@
 import {api,el} from './api.js';
 import {questionAudio} from './question-audio.js';
+import {prepareAnswerSound,playAnswerSound} from './answer-sound.js';
 export function schoolQuizPlayer(quiz,{onExit,onComplete,onNext}={}){
  let state=quiz.state,busy=false,feedback=null;const root=el('section',{class:'school-quiz-player','aria-label':'Quiz 20 câu'}),message=el('p',{class:'school-quiz-status',role:'status','aria-live':'polite'});
  const action=(text,fn,primary=false)=>el('button',{type:'button',class:'btn '+(primary?'btn-primary':'btn-ghost'),text,onclick:async event=>{if(busy)return;const button=event.currentTarget;busy=true;button.disabled=true;message.textContent='';try{await fn();}catch(error){message.textContent=error.message;button.disabled=false;}finally{busy=false;}}});
@@ -28,8 +29,9 @@ export function schoolQuizPlayer(quiz,{onExit,onComplete,onNext}={}){
   if(!state.question){root.append(action('Hoàn thành và lưu kết quả',async()=>{await finish();draw();},true));return;}
   const question=state.question,{form,collect}=choices(question);
   root.append(el('p',{class:'school-quiz-prompt',text:question.prompt}),...(question.imageUrl?[el('img',{class:'school-quiz-image',src:question.imageUrl,alt:'Hình minh họa câu hỏi'})]:[]),questionAudio(question.prompt,{language:question.subject==='tieng-anh'?'en-US':'vi-VN'}),form,action('Chốt đáp án',async()=>{
+   prepareAnswerSound();
    state=(await api('/api/v1/experience/runs/'+state.id+'/answer',{method:'POST',body:{questionId:question.id,answer:collect(),revision:state.revision}})).data;
-   feedback=state.feedback.find(item=>item.id===question.id);if(state.answered===20)await finish();draw();
+   feedback=state.feedback.find(item=>item.id===question.id);if(feedback)playAnswerSound(Boolean(feedback.correct));if(state.answered===20)await finish();draw();
   },true),el('p',{class:'school-quiz-save-hint',text:'Đã lưu '+state.answered+'/20 câu đã chốt. Bạn có thể quay lại bài đang làm.'}));
  }
  draw();return root;

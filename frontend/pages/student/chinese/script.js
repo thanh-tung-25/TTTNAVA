@@ -14,6 +14,7 @@ import {renderChineseAiChat} from '/assets/js/chinese-ai-chat.js';
 import {renderChineseStreet} from '/assets/js/chinese-street.js';
 import {configureChinesePage} from '/assets/js/chinese-student-navigation.js';
 import {studyReward} from '/assets/js/study-reward.js';
+import {prepareAnswerSound,playAnswerSound} from '/assets/js/answer-sound.js';
 const params=new URLSearchParams(location.search);let catalog,timer,learner,activeStudyTimer,activeStudyAttempt,activeStudyNode,activeStudyWeekDays,lastStudyEngagement=Date.now(),activeStudyRequest=false;
 const json=v=>typeof v==='string'?JSON.parse(v):v;
 const extra=(title,children)=>el('details',{class:'learn-extra'},[el('summary',{text:title}),...children]);
@@ -201,7 +202,7 @@ async function showAttempt(a,index){
   }else if(q.type==='ordering'&&q.options?.length){let chosen=[];const output=el('p',{text:selection});controls.append(output,...q.options.map((o,n)=>{const b=action(o,()=>{chosen.push(o);selection=chosen.join(' ');output.textContent=selection;row.hidden=true;}),row=withChoiceAudio(b,o,n+1);return row;}),action('Chọn lại',()=>{chosen=[];selection='';output.textContent='';controls.querySelectorAll('.choice-with-audio').forEach(row=>row.hidden=false);}));}
   else if(q.type==='matching'&&q.options?.length){const pairs=new Map();for(const [n,left]of q.options.entries()){const f=field(left,left,'','text',[['','Chọn nghĩa'],...q.targets.map(t=>[t,t])]);f.onchange=()=>{pairs.set(left,f.querySelector('select').value);selection=q.options.map(l=>l+'='+(pairs.get(l)||'')).join(' | ');};controls.append(withChoiceAudio(f,left,n+1));}controls.append(extra('Nghe các lựa chọn',q.targets.map((t,n)=>withChoiceAudio(el('span',{text:t}),t,n+1))));}
   else{const input=el('input',{type:'text',class:'quiz-text','aria-label':'Câu trả lời',value:selection});input.oninput=()=>selection=input.value;controls.append(input);if(q.type==='pinyin')controls.append(el('p',{class:'muted',text:'Nhớ nhập đúng dấu thanh.'}));}
-  box.append(controls,action('Kiểm tra',async()=>{if(!selection.trim()){notice('Con chọn hoặc nhập một câu trả lời trước nhé.');return;}await showAttempt(await request('/attempts/'+a.id+'/answers','POST',{item_id:i.id,value:selection,lock:true}),index);},true));
+  box.append(controls,action('Kiểm tra',async()=>{if(!selection.trim()){notice('Con chọn hoặc nhập một câu trả lời trước nhé.');return;}prepareAnswerSound();const checked=await request('/attempts/'+a.id+'/answers','POST',{item_id:i.id,value:selection,lock:true});const answerResult=checked.items.find(item=>item.id===i.id)?.result;if(answerResult&&typeof answerResult.correct==='boolean')playAnswerSound(answerResult.correct);await showAttempt(checked,index);},true));
  }
  root().append(box);
  const backActions=el('div',{class:'hub-actions'});if(index>0)backActions.append(action('← Câu trước',()=>navigate(index-1)));if(index<firstOpen)backActions.append(action('Về câu đang làm →',()=>navigate(firstOpen),true));root().append(backActions);

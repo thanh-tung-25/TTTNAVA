@@ -2,6 +2,7 @@ import { Router } from 'express';
 import {
   createStudentHandler,
   listStudentsHandler,
+  studentLearningProgressHandler,
   lockStudentHandler,
   resetPasswordHandler,
   updateStudentHandler,
@@ -20,7 +21,7 @@ import {
   questionDetailHandler,
   updateQuestionHandler,
 } from '../controllers/admin-question-controller.js';
-import { adminStatsHandler } from '../controllers/admin-stats-controller.js';
+import { adminStatsHandler,adminDiamondLeadersHandler } from '../controllers/admin-stats-controller.js';
 import { authenticateToken, requireAdmin, requireAdminScope, requireSuperAdmin } from '../middlewares/auth.js';
 import adminTeamRouter from './admin-team.js';
 import { uploadDocx } from '../middlewares/upload-docx.js';
@@ -39,8 +40,10 @@ router.get('/deployment-check',requireSuperAdmin,asyncHandler(async(_r,res)=>res
 
 router.use('/team',adminTeamRouter);
 router.get('/stats', requireSchoolAdmin, adminStatsHandler);
+router.get('/diamond-leaderboard',adminDiamondLeadersHandler);
 
 router.get('/students', listStudentsHandler);
+router.get('/students/:id/learning-progress',studentLearningProgressHandler);
 router.post('/students', requireAdminScope('chinese'), createStudentHandler);
 router.patch('/students/:id', requireSuperAdmin, updateStudentHandler);
 router.post('/students/:id/password', requireSuperAdmin, resetPasswordHandler);

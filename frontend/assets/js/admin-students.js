@@ -4,6 +4,7 @@ import { load, toggleLock } from './admin-students-load.js';
 import { openCreate, openEdit, openPassword } from './admin-students-modals.js';
 import { adminScope, isSuperAdmin,canViewStudentEmail } from './admin-permissions.js';
 import { openDeleteStudent, restoreStudent } from './admin-students-deletion.js';
+import { openStudentProgress } from './admin-student-progress.js';
 
 elements.table.addEventListener('click', (event) => {
   const edit = event.target.closest('[data-edit]');
@@ -11,7 +12,9 @@ elements.table.addEventListener('click', (event) => {
   const lock = event.target.closest('[data-lock]');
   const remove = event.target.closest('[data-delete-student]');
   const restore = event.target.closest('[data-restore-student]');
-  if (edit) openEdit(edit.dataset.edit);
+  const progress = event.target.closest('[data-progress]');
+  if (progress) openStudentProgress(progress.dataset.progress,progress.dataset.program);
+  else if (edit) openEdit(edit.dataset.edit);
   else if (password) openPassword(password.dataset.password);
   else if (lock) {
     const name = lock.closest('tr').querySelector('strong')?.textContent ?? 'học sinh';

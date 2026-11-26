@@ -1,4 +1,34 @@
 .student-deletion-reason { max-width: 28rem; margin: .35rem 0 0; font-size: .8rem; overflow-wrap: anywhere; }
+.student-progress-dialog { width:min(920px,calc(100% - 28px)); max-width:920px; max-height:90vh; padding:0; border:1px solid #e5d8ef; border-radius:22px; color:var(--ink); background:#fffdfb; box-shadow:0 24px 80px #30204035; }
+.student-name-link { padding:0; border:0; background:none; color:var(--ink); font:inherit; font-weight:700; text-align:left; cursor:pointer; }
+.student-name-link:hover { color:#684399; text-decoration:underline; }
+.student-progress-dialog::backdrop { background:#2f214080; }
+.student-progress-dialog-body { padding:clamp(18px,4vw,32px); }
+.student-progress-head,.student-progress-lesson-head,.student-progress-mode-head { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.student-progress-head { margin-bottom:18px; }
+.student-progress-head h2,.student-progress-lesson h3 { margin:.15rem 0; }
+.student-progress-overall { padding:16px 18px; border-radius:16px; background:#f5effb; margin-bottom:18px; }
+.student-progress-overall>div:first-child,.student-progress-value { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.student-progress-overall strong { font-size:1.45rem; color:#6942a1; }
+.student-progress-lessons { display:grid; gap:14px; }
+.student-progress-lesson { padding:18px; border:1px solid #e9e1ef; border-radius:17px; background:#fff; }
+.student-progress-level { color:#8565a6; font-size:.76rem; font-weight:700; text-transform:uppercase; letter-spacing:.04em; }
+.student-progress-percent { color:#684399; font-size:1.2rem; }
+.student-progress-groups { display:grid; gap:12px; margin-top:14px; }
+.student-progress-group { padding-top:10px; border-top:1px solid #eee7f3; }
+.student-progress-group-head { display:flex; justify-content:space-between; gap:12px; margin-bottom:8px; color:#684399; font-size:.88rem; }
+.student-progress-group-head span { font-weight:700; }
+.student-progress-group .student-progress-mode { display:inline-block; vertical-align:top; width:calc(50% - 6px); margin:0 10px 10px 0; }
+.student-progress-group .student-progress-mode:nth-child(2n) { margin-right:0; }
+.student-progress-mode { min-width:0; padding:12px; border-radius:12px; background:#faf8fc; }
+.student-progress-mode-head { font-weight:650; font-size:.9rem; }
+.student-progress-value { flex-shrink:0; gap:5px; flex-direction:column; align-items:flex-end; font-size:.82rem; }
+.student-progress-value strong { color:#684399; font-size:1rem; }
+.student-progress-value span,.student-progress-child { color:#766b81; font-size:.75rem; }
+.student-progress-meter { height:8px; overflow:hidden; border-radius:99px; background:#e9e1ef; margin-top:9px; }
+.student-progress-meter span { display:block; height:100%; border-radius:inherit; background:linear-gradient(90deg,#9a70d2,#6c49a6); }
+.student-progress-child { display:flex; justify-content:space-between; gap:8px; padding-top:8px; }
+@media(max-width:620px) { .student-progress-group .student-progress-mode { width:100%; margin-right:0; }.student-progress-head { align-items:flex-start; } }
 .student-deletion-identity { padding: .8rem; border: 2px solid var(--danger); border-radius: var(--radius-sm); margin: .7rem 0 1rem; overflow-wrap: anywhere; }
 .student-deletion-identity strong, .student-deletion-identity span { display: block; }
 .student-deletion-summary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; padding: 0; list-style: none; margin: .7rem 0 1rem; }

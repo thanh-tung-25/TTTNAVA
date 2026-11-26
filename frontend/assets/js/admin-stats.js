@@ -20,7 +20,7 @@ function render(data) {
       <div class="rank-row">
         <span class="rank-number">${index + 1}</span>
         <img class="avatar avatar-sm" src="${avatarUrl(student.avatarKey)}" alt="">
-        <div class="rank-main"><strong>${escapeHtml(student.displayName)}</strong><span>Lớp ${student.grade}</span></div>
+        <div class="rank-main"><strong>${escapeHtml(student.displayName)}</strong><span>${student.grade===null?'Tiếng Trung':`Lớp ${student.grade}`}</span></div>
         <span class="rank-diamonds">💎 ${student.diamonds.toLocaleString('vi-VN')}</span>
       </div>`).join('')
     : emptyState('🌱', 'Chưa có dữ liệu tuần này');
@@ -68,7 +68,7 @@ function render(data) {
     </section>
 
     <section class="card">
-      <div class="card-head"><h2>Top 5 tuần này</h2></div>
+      <div class="card-head"><h2>Top 5 kim cương · 7 ngày qua</h2></div>
       <div>${topRows}</div>
     </section>`;
 }

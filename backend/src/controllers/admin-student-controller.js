@@ -12,6 +12,7 @@ import {
 import { createChineseStudentSchema, createStudentSchema, lockStudentSchema, updateStudentSchema } from '../validators/student.js';
 import { resetPasswordSchema } from '../validators/auth.js';
 import {getAccountDeletionPreview,issueAccountDeletionConfirmation,deleteAccountSafely,restoreAccount} from '../services/admin-account-deletion.js';
+import {getAdminStudentLearningProgress} from '../services/admin-student-progress.js';
 
 const listQuery = z.object({
   q: z.string().trim().max(120).optional(),
@@ -28,6 +29,11 @@ export const listStudentsHandler = asyncHandler(async (request, response) => {
   const result = await listStudents(page, limit, q ?? '', scope==='super' ? program ?? '' : scope,request.user,status);
   if (scope!=='super') result.items = result.items.map(student=>({...student,...(!canViewStudentEmail(request.user)?{email:undefined}:{}),...(scope==='chinese'?{grade:null}:{})}));
   response.set('Cache-Control','private, no-store').json({ data: result.items, pagination: { page, limit, total: result.total } });
+});
+
+export const studentLearningProgressHandler = asyncHandler(async (request, response) => {
+  const program=z.enum(['chinese','primary','secondary','highschool']).parse(request.query.program||'chinese');
+  response.set('Cache-Control','private, no-store').json({data:await getAdminStudentLearningProgress(request.user,request.params.id,program)});
 });
 
 export const createStudentHandler = asyncHandler(async (request, response) => {

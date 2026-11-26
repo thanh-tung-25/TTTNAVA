@@ -40,12 +40,15 @@ function emailCell(student) {
 export function row(student) {
   const locked = student.locked;
   const deleted = store.status === 'deleted';
+  const grade=Number(student.grade),gradeProgram=!student.grade?'chinese':grade<=5?'primary':grade<=9?'secondary':'highschool';
+  const progressProgram=store.adminScope==='super'?(store.program||gradeProgram):store.adminScope;
+  const canViewProgress=['chinese','primary','secondary','highschool'].includes(progressProgram)&&!deleted;
   return `
     <tr>
       <td>
         <div style="display:flex;align-items:center;gap:.5rem">
           <img class="avatar avatar-sm" src="${avatarUrl(student.avatarKey)}" alt="">
-          <div><strong>${escapeHtml(student.displayName)}</strong><br><span class="muted">@${escapeHtml(student.username)}</span>${deleted&&student.deletionReason?`<p class="muted student-deletion-reason">Lý do: ${escapeHtml(student.deletionReason)}</p>`:''}</div>
+          <div>${canViewProgress?`<button class="student-name-link" data-progress="${student.id}" data-program="${progressProgram}" type="button">${escapeHtml(student.displayName)}</button>`:`<strong>${escapeHtml(student.displayName)}</strong>`}<br><span class="muted">@${escapeHtml(student.username)}</span>${deleted&&student.deletionReason?`<p class="muted student-deletion-reason">Lý do: ${escapeHtml(student.deletionReason)}</p>`:''}</div>
         </div>
       </td>
       ${store.canViewStudentEmail ? emailCell(student) : ''}
@@ -54,6 +57,7 @@ export function row(student) {
       <td>${formatDate(deleted ? student.deletedAt : student.createdAt, false)}</td>
       <td>
         <a class="btn btn-ghost btn-sm" href="/pages/admin/access-history/?account=${encodeURIComponent(student.id)}">Lịch sử truy cập</a>
+        ${canViewProgress?`<button class="btn btn-ghost btn-sm" data-progress="${student.id}" data-program="${progressProgram}" type="button">Tiến độ</button>`:''}
         ${store.canManageAccounts?deleted?`<button class="btn btn-ghost btn-sm" data-restore-student="${student.id}" type="button">Khôi phục</button>`:`<div class="actions">
           <button class="btn btn-ghost btn-sm" data-edit="${student.id}" type="button">Sửa</button>
           <button class="btn btn-ghost btn-sm" data-password="${student.id}" type="button">Mật khẩu</button>

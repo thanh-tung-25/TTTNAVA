@@ -22,6 +22,10 @@
       <button class="btn" id="create-button" type="button">+ Thêm học sinh</button>
     </div>
 
+    <section class="card" aria-labelledby="diamond-leaderboard-title">
+      <div class="card-head"><h2 id="diamond-leaderboard-title">Top 5 kim cương · 7 ngày qua</h2></div>
+      <div id="admin-diamond-leaderboard"><div class="loading">Đang tải bảng xếp hạng…</div></div>
+    </section>
     <section class="card">
       <div id="student-status-tabs" class="tabs hidden" role="tablist" aria-label="Trạng thái tài khoản học sinh" hidden>
         <button id="active-students-tab" class="tab" type="button" role="tab" aria-controls="students-table" aria-selected="true" data-student-status="active">Đang sử dụng</button>
@@ -47,6 +51,8 @@
       </div>
     </section>
   </main>
+  <dialog id="student-progress-dialog" class="student-progress-dialog" aria-labelledby="student-progress-title"></dialog>
+  <script type="module" src="/assets/js/admin-diamond-leaderboard.js"></script>
   <script type="module" src="/assets/js/admin-students.js"></script>
 </body>
 </html>
